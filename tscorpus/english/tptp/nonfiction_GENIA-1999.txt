@@ -1,0 +1,4623 @@
+% ::id 1_nonfiction_GENIA-1999;99101510,1;NE
+% ::snt Regulation of IL-6 synthesis in human peripheral blood mononuclear cells by C3a and C3a_desArg .
+fof(ex1414051921916,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( is_il_6_synthesis_in_2(s0,X1,G3)
+      & is_regulation_by_2(s0,X2,G4)
+      & is_regulation_of_2(s0,X2,X1)
+      & human_1(s0,G3)
+      & peripheral_blood_mononuclear_cells_1(s0,G3)
+      & is_of_2(s0,c3a,G4)
+      & is_of_2(s0,c3a_desarg,G4)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X2) ) )).
+
+% ::id 2_nonfiction_GENIA-1999;99101510,2;NE
+% ::snt The anaphylatoxin C3a has been reported to have immunomodulatory effects on a number of different cell types .
+fof(ex1414051922306,axiom,(
+    ? [X1,X2,G3,G4,E5,E6] :
+      ( anaphylatoxin_1(s0,X1)
+      & is_number_of_2(s0,X2,G3)
+      & c3a = X1
+      & different_1(s0,G3)
+      & cell_types_1(s0,G3)
+      & immunomodulatory_1(s0,G4)
+      & is_effects_on_2(s0,G4,X2)
+      & ? [S7] :
+          ( has_reported_4(s0,E6,unspecified,c3a,S7)
+          & have_3(S7,E5,c3a,G4) ) ) )).
+
+% ::id 3_nonfiction_GENIA-1999;99101510,3;NE
+% ::snt In this study we investigated the effects of C3a and C3a_desArg on gene expression and protein secretion of IL-6 in human PBMCs , either alone or in combination with LPS or IL-1beta .
+fof(ex1414051922724,axiom,(
+    ? [X1,X2,X3,X12,G4,G5,G6,G7,G8,X9,G10,E11] :
+      ( study_1(s0,X3)
+      & gene_expression_1(s0,X1)
+      & protein_secretion_1(s0,X2)
+      & is_of_2(s0,c3a,G7)
+      & is_of_2(s0,c3a_desarg,G7)
+      & is_of_2(s0,G6,il_6)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & G6 = G4
+      & human_1(s0,G5)
+      & pbmcs_1(s0,G5)
+      & is_effects_in_2(s0,G8,G5)
+      & is_effects_on_2(s0,G8,G6)
+      & is_effects_of__2(s0,G8,G7)
+      & is_combination_with_2(s0,X9,G10)
+      & is_of_2(s0,lps_,G10)
+      & is_of_2(s0,il_1beta,G10)
+      & is_before_2(s0,E11,e0)
+      & alone_1(s0,G8)
+      & is_in_2(s0,G8,X9)
+      & investigated_3(s0,E11,X12,G8)
+      & in__2(s0,E11,X3) ) )).
+
+% ::id 4_nonfiction_GENIA-1999;99101510,4;NE
+% ::snt C3a or C3a_desArg alone exhibited no effect on the expression or secretion of IL-6 .
+fof(ex1414051923115,axiom,(
+    ? [X1,X2,G3,G4,G5] :
+      ( expression_1(s0,X1)
+      & secretion_1(s0,X2)
+      & is_of_2(s0,G4,il_6)
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,X2,G3)
+      & G4 = G3
+      & is_of_2(s0,c3a,G5)
+      & is_of_2(s0,c3a_desarg,G5)
+      & ? [X6,E7] :
+          ( is_effect_on_2(s0,X6,G4)
+          & is_before_2(s0,E7,e0)
+          & alone_exhibited_3(s0,E7,G5,X6) ) ) )).
+
+% ::id 5_nonfiction_GENIA-1999;99101510,5;NE
+% ::snt However , when PBMC were stimulated with LPS or IL-1beta , both C3a and C3a_desArg were found to enhance IL-6 release by PBMC in a dose-dependent manner .
+fof(ex1414051923519,axiom,(
+    ? [G1,G2,S3] :
+      ( is_of_2(s0,c3a,G2)
+      & is_of_2(s0,c3a_desarg,G2)
+      & G1 = G2
+      & however_1(s0,S3)
+      & ? [S10] :
+          ( fact_2(s0,S3,S10)
+          & ! [G4,E5] :
+              ( ( is_of_2(S10,lps_,G4)
+                & is_of_2(S10,il_1beta,G4)
+                & is_before_2(S10,E5,e0) )
+             => ( stimulated_3(S10,E5,unspecified,pbmc_)
+                & with_2(S10,E5,G4)
+                & ? [X6,X7,E8,E9] :
+                    ( is_il_6_release_by_2(S10,X7,pbmc_)
+                    & dose_dependent_1(S10,X6)
+                    & manner_1(S10,X6)
+                    & is_before_2(S10,E9,e0)
+                    & ? [S11] :
+                        ( found_4(S10,E9,unspecified,G1,S11)
+                        & enhance_3(S11,E8,G1,X7)
+                        & in_2(S11,E8,X6) ) ) ) ) ) ) )).
+
+% ::id 6_nonfiction_GENIA-1999;99101510,6;NE
+% ::snt Since C3a has been shown to induce PGE2 production by monocytes , and PGE2 has been shown to influence cytokine production , we investigated the potential role of PGE2 in C3a-mediated enhancement of LPS- and IL-1beta- induced IL-6 production .
+fof(ex1414051923951,axiom,(
+    ? [X1,X2,X3,X14,G4,E5,S16,X6,X7,G8,E9,E10,E11,E12,E13,S15] :
+      ( il_6_production_1(s0,X1)
+      & c3a_mediated_1(s0,X2)
+      & is_enhancement_of_2(s0,X2,S16)
+      & potential_1(s0,X3)
+      & is_role_in_2(s0,X3,X2)
+      & is_role_of__2(s0,X3,pge2)
+      & is_of_2(s0,lps_,G4)
+      & is_of_2(s0,il_1beta_,G4)
+      & ? [S17] :
+          ( fact_2(s0,S16,S17)
+          & induced_3(S17,E5,G4,X1) )
+      & pge2_production_1(s0,X6)
+      & cytokine_production_1(s0,X7)
+      & monocytes_1(s0,G8)
+      & is_before_2(s0,E13,e0)
+      & ? [S18] :
+          ( fact_2(s0,S15,S18)
+          & ? [S19] :
+              ( has_shown_4(S18,E10,unspecified,c3a,S19)
+              & induce_3(S19,E9,c3a,X6) )
+          & by_2(S18,E10,G8)
+          & ? [S20] :
+              ( has_shown_4(S18,E12,unspecified,pge2,S20)
+              & influence_3(S20,E11,pge2,X7) ) )
+      & investigated_3(s0,E13,X14,X3)
+      & since_2(s0,E13,S15) ) )).
+
+% ::id 7_nonfiction_GENIA-1999;99101510,7;NE
+% ::snt Indomethacin blocked PGE2 release , but had no influence on the observed effects of C3a , suggesting that the effects of C3a on IL-6 production are independent of PGE2 formation by monocytes .
+fof(ex1414051924360,axiom,(
+    ? [X1,G2,G3,X4,X5,G6,A10,E7,E8,E9] :
+      ( il_6_production_1(s0,X1)
+      & is_effects_of_2(s0,G2,c3a)
+      & is_effects_on_2(s0,G2,X1)
+      & observed_1(s0,G3)
+      & is_effects_of_2(s0,G3,c3a)
+      & is_pge2_formation_by_2(s0,X4,G6)
+      & pge2_release_1(s0,X5)
+      & monocytes_1(s0,G6)
+      & is_independent_of_2(s0,A10,X4)
+      & is_before_2(s0,E9,e0)
+      & ? [S13] :
+          ( suggesting_3(s0,E8,indomethacin,S13)
+          & are_3(S13,E7,G2,A10) )
+      & blocked_3(s0,E9,indomethacin,X5)
+      & ? [X11,E12] :
+          ( is_influence_on_2(s0,X11,G3)
+          & is_before_2(s0,E12,e0)
+          & had_3(s0,E12,indomethacin,X11) ) ) )).
+
+% ::id 8_nonfiction_GENIA-1999;99101510,8;NE
+% ::snt Northern blot analysis showed that C3a as well as C3a_desArg enhanced LPS-induced mRNA levels for IL-6 .
+fof(ex1414051924748,axiom,(
+    ? [X1,G2,G3,E4,E5] :
+      ( northern_blot_analysis_1(s0,X1)
+      & is_of_2(s0,c3a,G3)
+      & is_of_2(s0,c3a_desarg,G3)
+      & lps_induced_1(s0,G2)
+      & mrna__levels_1(s0,G2)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S6] :
+          ( showed_3(s0,E5,X1,S6)
+          & enhanced_3(S6,E4,G3,G2)
+          & for_2(S6,E4,il_6) ) ) )).
+
+% ::id 9_nonfiction_GENIA-1999;99101510,9;NE
+% ::snt Pretreatment of PBMCs with pertussis toxin blocked the functions of C3a and C3a_desArg , indicating that the actions of these two molecules are mediated by a G protein-coupled pathway .
+fof(ex1414051925153,axiom,(
+    ? [G1,G2,G3,G4,X5,X6,X7,G8,E9,E10,E11] :
+      ( is_of_2(s0,c3a,G1)
+      & is_of_2(s0,c3a_desarg,G1)
+      & is_functions_of_2(s0,G4,G1)
+      & two_1(s0,G2)
+      & molecules_1(s0,G2)
+      & is_actions_of_2(s0,G3,G2)
+      & pertussis_toxin_1(s0,X5)
+      & is_pretreatment_of_2(s0,X7,G8)
+      & is_protein_coupled_of_2(s0,X6,g)
+      & pathway_1(s0,X6)
+      & is_pbmcs_with_2(s0,G8,X5)
+      & is_before_2(s0,E11,e0)
+      & ? [S12] :
+          ( indicating_3(s0,E10,G4,S12)
+          & mediated_3(S12,E9,X6,G3) )
+      & blocked_3(s0,E11,X7,G4) ) )).
+
+% ::id 10_nonfiction_GENIA-1999;99101510,10;NE
+% ::snt Furthermore , we investigated the effects of C3a and C3a_desArg on induction of NF-kappaB and activating protein-1 binding .
+fof(ex1414051925550,axiom,(
+    ? [X1,X2,X3,X9,G4,G5,G6,E7,E8] :
+      ( is_induction_of_2(s0,X1,nf_kappab)
+      & protein_1_binding_1(s0,X2)
+      & activating_3(s0,E7,X3,X2)
+      & is_of_2(s0,c3a,G5)
+      & is_of_2(s0,c3a_desarg,G5)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X3,G4)
+      & is_effects_on_2(s0,G6,G4)
+      & is_effects_of__2(s0,G6,G5)
+      & furthermore_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & investigated_3(s0,E8,X9,G6) ) )).
+
+% ::id 11_nonfiction_GENIA-1999;99101510,11;NE
+% ::snt Both molecules enhanced LPS-induced NF-kappaB and activating protein-1 binding activity .
+fof(ex1414051925948,axiom,(
+    ? [G1,E2] :
+      ( lps_induced_1(s0,nf_kappab)
+      & is_of_2(s0,nf_kappab,G1)
+      & ? [X4,X5,E6] :
+          ( protein_1_binding_activity_1(s0,X4)
+          & activating_3(s0,E6,X5,X4)
+          & is_of_2(s0,X5,G1) )
+      & is_before_2(s0,E2,e0)
+      & ? [G3] :
+          ( molecules_1(s0,G3)
+          & enhanced_3(s0,E2,G3,G1) ) ) )).
+
+% ::id 12_nonfiction_GENIA-1999;99101510,12;NE
+% ::snt These results demonstrate the capacity of intact C3a and its circulating des-Arg form to exert immunmodulatory effects in vitro .
+fof(ex1414051926340,axiom,(
+    ? [X8,X1,X2,G3,G4,G5,E6,E7] :
+      ( choose1(X8,intact_c3a)
+      & circulating_1(s0,X1)
+      & is_des_arg_form_of_2(s0,X1,X8)
+      & is_capacity_of_2(s0,X2,G4)
+      & results_1(s0,G5)
+      & is_of_2(s0,intact_c3a,G4)
+      & is_of_2(s0,X1,G4)
+      & immunmodulatory_1(s0,G3)
+      & effects_1(s0,G3)
+      & in_vitro_1(s0,E6)
+      & demonstrate_3(s0,E7,G5,X2) ) )).
+
+% ::id 13_nonfiction_GENIA-1999;99101524,1;NE
+% ::snt Comparison of primary sensitization of naive human T cells to varicella-zoster virus peptides by dendritic cells in vitro with responses elicited in vivo by varicella vaccination .
+fof(ex1414051926743,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,E8,E9] :
+      ( primary_1(s0,X2)
+      & in_vitro_1(s0,X2)
+      & is_sensitization_by_2(s0,X2,G4)
+      & is_sensitization_to_2(s0,X2,G5)
+      & is_sensitization_of_2(s0,X2,G6)
+      & varicella_vaccination_1(s0,X1)
+      & is_comparison_with_2(s0,X3,G7)
+      & is_comparison_of_2(s0,X3,X2)
+      & naive_1(s0,G6)
+      & human_t_cells_1(s0,G6)
+      & varicella_zoster_virus_peptides_1(s0,G5)
+      & dendritic_1(s0,G4)
+      & cells_1(s0,G4)
+      & elicited_2(s0,E8,G7)
+      & by_2(s0,E8,X1)
+      & responses_1(s0,G7)
+      & in_vivo_1(s0,E8)
+      & xxx_1(s0,E9)
+      & link_2(s0,E9,X3) ) )).
+
+% ::id 14_nonfiction_GENIA-1999;99101524,2;NE
+% ::snt Dendritic cells -LRB- DC -RRB- are potent APC during primary and secondary immune responses .
+fof(ex1414051927140,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( potent_1(s0,X1)
+      & apc__1(s0,X1)
+      & dendritic_1(s0,G3)
+      & cells_1(s0,G3)
+      & G3 = dc_
+      & ? [G5] :
+          ( primary_1(s0,G5)
+          & immune_1(s0,G5)
+          & responses_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G6] :
+          ( secondary_1(s0,G6)
+          & immune_1(s0,G6)
+          & responses_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & are_3(s0,E4,G3,X1)
+      & during_2(s0,E4,G2) ) )).
+
+% ::id 15_nonfiction_GENIA-1999;99101524,3;NE
+% ::snt The first objective of this study was to determine whether human DC mediate in vitro sensitization of naive CD4+ T cells to epitopes of the immediate early 62 -LRB- IE62 -RRB- protein of varicella zoster virus -LRB- VZV -RRB- .
+fof(ex1414051927552,axiom,(
+    ? [X1,X2,X3,X4,E5,E6] :
+      ( study_1(s0,X1)
+      & first_1(s0,X4)
+      & is_objective_of_2(s0,X4,X1)
+      & varicella_zoster_virus_1(s0,X2)
+      & immediate_early_1(s0,X3)
+      & is_62_protein_of_2(s0,X3,X2)
+      & X2 = vzv_
+      & X3 = ie62
+      & is_before_2(s0,E6,e0)
+      & ? [S12] :
+          ( was_3(s0,E6,X4,S12)
+          & ? [S13] :
+              ( determine_3(S12,E5,X4,S13)
+              & ? [X7,G8,G9,G10,E11] :
+                  ( in_vitro_1(S13,X7)
+                  & is_sensitization_to_2(S13,X7,G8)
+                  & is_sensitization_of__2(S13,X7,G9)
+                  & human_1(S13,G10)
+                  & dc__1(S13,G10)
+                  & naive_cd4__t_cells_1(S13,G9)
+                  & is_epitopes_of_2(S13,G8,X3)
+                  & mediate_3(S13,E11,G10,X7) ) ) ) ) )).
+
+% ::id 16_nonfiction_GENIA-1999;99101524,4;NE
+% ::snt The induction of CD4+ T cell proliferative responses to eight synthetic peptides representing amino acid sequences of the VZV IE62 protein was assessed using T cells and DC from VZV-susceptible donors .
+fof(ex1414051927958,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,G7,G8,G9,E10,E11] :
+      ( vzv__ie62_protein_1(s0,X1)
+      & is_induction_of_2(s0,X2,G5)
+      & is_amino_acid_sequences_of_2(s0,G3,X1)
+      & eight_1(s0,G4)
+      & synthetic_1(s0,G4)
+      & representing_3(s0,E6,G4,G3)
+      & peptides_1(s0,G4)
+      & is_cd4__t_cell_proliferative_responses_to_2(s0,G5,G4)
+      & vzv_susceptible_1(s0,G7)
+      & donors_1(s0,G7)
+      & is_from_2(s0,G9,G7)
+      & ? [G12] :
+          ( t_cells_1(s0,G12)
+          & is_of_2(s0,G12,G8) )
+      & ? [G13] :
+          ( dc__1(s0,G13)
+          & is_of_2(s0,G13,G8) )
+      & G9 = G8
+      & is_before_2(s0,E11,e0)
+      & using_3(s0,E10,X2,G9)
+      & assessed_3(s0,E11,unspecified,X2) ) )).
+
+% ::id 17_nonfiction_GENIA-1999;99101524,5;NE
+% ::snt The second objective was to compare in vitro responses of naive T cells with responses to VZV peptides induced in vivo after immunization with varicella vaccine .
+fof(ex1414051928365,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,E8,E9,E10] :
+      ( second_1(s0,X1)
+      & objective_1(s0,X1)
+      & varicella_vaccine_1(s0,X2)
+      & is_immunization_with_2(s0,X3,X2)
+      & naive_t_cells_1(s0,G4)
+      & in_vitro_1(s0,G7)
+      & is_responses_of_2(s0,G7,G4)
+      & vzv__peptides_1(s0,G5)
+      & induced_2(s0,E8,G6)
+      & after_2(s0,E8,X3)
+      & is_responses_to_2(s0,G6,G5)
+      & in_vivo_1(s0,E8)
+      & is_before_2(s0,E10,e0)
+      & ? [S11] :
+          ( was_3(s0,E10,X1,S11)
+          & compare_3(S11,E9,X1,G7)
+          & with_2(S11,E9,G6) ) ) )).
+
+% ::id 18_nonfiction_GENIA-1999;99101524,6;NE
+% ::snt T cell proliferation was induced by three peptides , P1 , P4 , and P7 , in 71-100 % of the donors tested before and after vaccination using DC as APC .
+ERROR: Line 20 Char 26 Token "is_before_2" continuing with "s0, E16, e0) &
+"
+
+% ::id 19_nonfiction_GENIA-1999;99101524,7;NE
+% ::snt Monocytes were effective APC for VZV peptides only after immunization .
+fof(ex1414051929172,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( effective_1(s0,X2)
+      & apc__1(s0,X2)
+      & immunization_1(s0,X1)
+      & monocytes_1(s0,G4)
+      & vzv__peptides_1(s0,G3)
+      & is_before_2(s0,E5,e0)
+      & ? [X6] :
+          ( is_of_2(s0,X6,X1)
+          & were_3(s0,E5,G4,X2)
+          & for_2(s0,E5,G3)
+          & after_2(s0,E5,X6) ) ) )).
+
+% ::id 20_nonfiction_GENIA-1999;99101524,8;NE
+% ::snt Two peptides , P2 and P8 , induced naive T cell proliferation less effectively and were also less immunogenic for T cells from vaccinated or naturally immune donors .
+fof(ex1414051929573,axiom,(
+    ? [X1,G2,G3,G4,G5,A8,E6,E7] :
+      ( naive_t_cell_proliferation_1(s0,X1)
+      & two_1(s0,G5)
+      & peptides_1(s0,G5)
+      & is_of_2(s0,p2,G2)
+      & is_of_2(s0,p8,G2)
+      & G5 = G2
+      & ? [G9] :
+          ( vaccinated_1(s0,G9)
+          & donors_1(s0,G9)
+          & is_of_2(s0,G9,G3) )
+      & ? [G10] :
+          ( naturally_immune_1(s0,G10)
+          & donors_1(s0,G10)
+          & is_of_2(s0,G10,G3) )
+      & is_t_cells_from_2(s0,G4,G3)
+      & is_less_immunogenic_for_2(s0,A8,G4)
+      & less_effectively_1(s0,E6)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & induced_3(s0,E6,G5,X1)
+      & were_also_3(s0,E7,G5,A8) ) )).
+
+% ::id 21_nonfiction_GENIA-1999;99101524,9;NE
+% ::snt T cell recognition of specific peptides was concordant between naive , DC-mediated responses , and postvaccine responses using monocytes as APC in 69 % of comparisons -LRB- p = 0.05 ; chi2 -RRB- ;
+ERROR: Line 14 Char 33 Token "is_concordant_between_2" continuing with "s0, A10, G4) &
+"
+
+% ::id 22_nonfiction_GENIA-1999;99101524,9;NE
+% ::snt the predictive value of a positive response to an IE62 peptide before immunization for T cell sensitization in vivo was 82 % .
+ERROR: Line 11 Char 20 Token "is_before_2" continuing with "s0, E7, e0) & was_3"
+
+% ::id 23_nonfiction_GENIA-1999;99101524,10;NE
+% ::snt These observations indicate that primary T cell responses detected in vitro using DC as APC may be useful to characterize the potential immunogenicity of viral protein epitopes in vivo .
+fof(ex1414051930783,axiom,(
+    ? [X1,G2,G3,X4,G5,G6,E7,E8] :
+      ( potential_1(s0,X1)
+      & in_vivo_1(s0,X1)
+      & is_immunogenicity_of_2(s0,X1,G2)
+      & observations_1(s0,G3)
+      & viral_1(s0,G2)
+      & protein_epitopes_1(s0,G2)
+      & apc__1(s0,X4)
+      & dc__1(s0,G5)
+      & using_detected_3(s0,E7,G6,G5)
+      & as_2(s0,E7,X4)
+      & primary_t_cell_responses_1(s0,G6)
+      & in_vitro_1(s0,E7)
+      & ? [S12] :
+          ( indicate_3(s0,E8,G3,S12)
+          & ? [A11,E9,E10] :
+              ( ? [S13] :
+                  ( useful_2(S12,A11,S13)
+                  & characterize_3(S13,E9,unspecified,X1) )
+              & be_3(S12,E10,G6,A11) ) ) ) )).
+
+% ::id 24_nonfiction_GENIA-1999;99102085,1;NE
+% ::snt Mildly oxidized low-density lipoproteins decrease early production of interleukin 2 and nuclear factor kappaB binding to DNA in activated T-lymphocytes .
+fof(ex1414051931178,axiom,(
+    ? [G1,G2,E3] :
+      ( mildly_oxidized_1(s0,G2)
+      & low_density_1(s0,G2)
+      & lipoproteins_1(s0,G2)
+      & ? [X4] :
+          ( early_1(s0,X4)
+          & is_production_of_2(s0,X4,interleukin_2)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5,X6,G7] :
+          ( dna__1(s0,X5)
+          & nuclear_1(s0,X6)
+          & is_factor_kappab_binding_in_2(s0,X6,G7)
+          & is_factor_kappab_binding_to_2(s0,X6,X5)
+          & activated_1(s0,G7)
+          & t_lymphocytes_1(s0,G7)
+          & is_of_2(s0,X6,G1) )
+      & decrease_3(s0,E3,G2,G1) ) )).
+
+% ::id 25_nonfiction_GENIA-1999;99102085,2;NE
+% ::snt Activated T-lymphocytes are found early in atherosclerosis lesions ,
+fof(ex1414051931558,axiom,(
+    ? [G1,G2,E3] :
+      ( activated_1(s0,G2)
+      & t_lymphocytes_1(s0,G2)
+      & atherosclerosis_lesions_1(s0,G1)
+      & early_1(s0,E3)
+      & found_3(s0,E3,unspecified,G2)
+      & in_2(s0,E3,G1) ) )).
+
+% ::id 26_nonfiction_GENIA-1999;99102085,2;NE
+% ::snt but little is known about their role .
+fof(ex1414051931940,axiom,(
+    ? [X1,G4,E2] :
+      ( is_role_of_2(s0,X1,G4)
+      & ? [X3] :
+          ( known_3(s0,E2,unspecified,X3)
+          & about_2(s0,E2,X1) ) ) )).
+
+% ::id 27_nonfiction_GENIA-1999;99102085,3;NE
+% ::snt Oxidized low-density lipoproteins -LRB- oxLDLs -RRB- are considered to be involved in the pathogenesis of the lesions ,
+fof(ex1414051932326,axiom,(
+    ? [X1,G2,G3,G4,E5,E6] :
+      ( is_pathogenesis_of_2(s0,X1,G2)
+      & lesions_1(s0,G2)
+      & oxidized_1(s0,G4)
+      & low_density_1(s0,G4)
+      & lipoproteins_1(s0,G4)
+      & oxldls_1(s0,G3)
+      & G4 = G3
+      & ? [S7] :
+          ( considered_4(s0,E6,unspecified,G4,S7)
+          & involved_3(S7,E5,unspecified,G4)
+          & in_2(S7,E5,X1) ) ) )).
+
+% ::id 28_nonfiction_GENIA-1999;99102085,3;NE
+% ::snt and we have previously demonstrated that oxLDLs inhibit not only interleukin -LRB- IL -RRB- -2 -receptor expression on the surface of in vitro-activated T-lymphocytes but also their proliferation .
+fof(ex1414051932724,axiom,(
+    ? [X1,X7,G2,G3,G4,S8,E5,E6] :
+      ( is_surface_of_2(s0,X1,G2)
+      & in_1(s0,G2)
+      & vitro_activated_1(s0,G2)
+      & t_lymphocytes_1(s0,G2)
+      & oxldls_1(s0,G4)
+      & ? [X9] :
+          ( is_interleukin_2_receptor_expression_on_2(s0,X9,X1)
+          & ? [X10] :
+              ( is_of_2(s0,X10,X9)
+              & ? [X11] :
+                  ( il__1(s0,X11)
+                  & X10 = X11
+                  & is_of_2(s0,X10,G3) ) ) )
+      & ? [G13] :
+          ( choose2(G13,G2,G4)
+          & ? [X12] :
+              ( is_proliferation_of_2(s0,X12,G13)
+              & is_of_2(s0,X12,G3) ) )
+      & previously_1(s0,S8)
+      & ? [S14] :
+          ( fact_2(s0,S8,S14)
+          & ? [S15] :
+              ( have_demonstrated_3(S14,E6,X7,S15)
+              & inhibit_3(S15,E5,G4,G3) ) ) ) )).
+
+% ::id 29_nonfiction_GENIA-1999;99102085,4;NE
+% ::snt We have now investigated the effect of oxLDLs on blast differentiation , on IL-2 synthesis and on the activation of the nuclear factor kappaB -LRB- NF-kappaB -RRB- system in activated lymphocytes .
+fof(ex1414051933126,axiom,(
+    ? [X1,X2,X3,X4,X5,X9,G6,G7,E8] :
+      ( blast_differentiation_1(s0,X1)
+      & il_2_synthesis_1(s0,X2)
+      & nuclear_1(s0,X3)
+      & factor_kappab_system_1(s0,X3)
+      & is_activation_in_2(s0,X4,G6)
+      & is_activation_of_2(s0,X4,X3)
+      & is_effect_on_2(s0,X5,X1)
+      & is_effect_of__2(s0,X5,G7)
+      & is_effect_on_2(s0,X5,X2)
+      & is_effect_of__2(s0,X5,G7)
+      & is_effect_on_2(s0,X5,X4)
+      & is_effect_of__2(s0,X5,G7)
+      & oxldls_1(s0,G7)
+      & X3 = nf_kappab
+      & activated_1(s0,G6)
+      & lymphocytes_1(s0,G6)
+      & now_1(s0,E8)
+      & have_investigated_3(s0,E8,X9,X5) ) )).
+
+% ::id 30_nonfiction_GENIA-1999;99102085,5;NE
+% ::snt Mildly oxLDLs -LRB- 50 and 100 microgram/ml -RRB- decreased the number of lymphoblasts and the level of IL-2 concentration in the culture supernatants after activation of lymphocytes by phytohaemagglutinin and PMA+ionomycin .
+fof(ex1414051933527,axiom,(
+    ? [X1,X2,X3,G4,G5,X6,G7,G8,G9,G10,G11,E12] :
+      ( is_number_of_2(s0,X1,G4)
+      & il_2_concentration_1(s0,X2)
+      & is_level_of_2(s0,X3,X2)
+      & lymphoblasts_1(s0,G4)
+      & culture_supernatants_1(s0,G5)
+      & is_activation_by_2(s0,X6,G8)
+      & is_activation_of_2(s0,X6,G9)
+      & mildly_1(s0,G11)
+      & oxldls_1(s0,G11)
+      & predicate__50_and_100_1(s0,G7)
+      & microgram__slash__ml_1(s0,G7)
+      & G11 = G7
+      & is_of_2(s0,X1,G10)
+      & is_of_2(s0,X3,G10)
+      & lymphocytes_1(s0,G9)
+      & is_of_2(s0,phytohaemagglutinin,G8)
+      & is_of_2(s0,pma_ionomycin,G8)
+      & is_before_2(s0,E12,e0)
+      & decreased_3(s0,E12,G11,G10)
+      & in_2(s0,E12,G5)
+      & after_2(s0,E12,X6) ) )).
+
+% ::id 31_nonfiction_GENIA-1999;99102085,6;NE
+% ::snt The inhibition of IL-2 production was observed in the CD3 T-lymphocyte cytoplasm as early as 4 h after activation by PMA+ionomycin .
+fof(ex1414051933920,axiom,(
+    ? [X1,X2,X3,X4,G5,E6] :
+      ( il_2_production_1(s0,X1)
+      & is_inhibition_of_2(s0,X3,X1)
+      & cd3_t_lymphocyte_cytoplasm_1(s0,X2)
+      & is_activation_by_2(s0,X4,pma_ionomycin)
+      & predicate__4_1(s0,G5)
+      & is_h_after_2(s0,G5,X4)
+      & is_as_early_as_2(s0,E6,G5)
+      & is_before_2(s0,E6,e0)
+      & observed_3(s0,E6,unspecified,X3)
+      & in_2(s0,E6,X2) ) )).
+
+% ::id 32_nonfiction_GENIA-1999;99102085,7;NE
+% ::snt The study of NF-kappaB showed that oxLDLs led to a decrease of activation-induced p65/p50 NF-kappaB heterodimer binding to DNA , whereas the presence of the constitutive nuclear form of p50 dimer was unchanged .
+fof(ex1414051934334,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,A13,E9,E10,E11,S12] :
+      ( is_study_of_2(s0,X4,nf_kappab)
+      & p50_dimer_1(s0,X1)
+      & constitutive_1(s0,X2)
+      & nuclear_1(s0,X2)
+      & is_form_of_2(s0,X2,X1)
+      & is_presence_of_2(s0,X3,X2)
+      & dna__1(s0,X5)
+      & is_activation_induced_p65__slash__p50_nf_kappab_heterodimer_binding_to_2(s0,X6,X5)
+      & is_decrease_of_2(s0,X7,X6)
+      & oxldls_1(s0,G8)
+      & unchanged_1(s0,A13)
+      & is_before_2(s0,E9,E11)
+      & is_before_2(s0,E10,E11)
+      & is_before_2(s0,E11,e0)
+      & ? [S14] :
+          ( fact_2(s0,S12,S14)
+          & was_3(S14,E9,X3,A13) )
+      & ? [S15] :
+          ( showed_3(s0,E11,X4,S15)
+          & led_2(S15,E10,G8)
+          & to_2(S15,E10,X7)
+          & whereas_2(S15,E10,S12) ) ) )).
+
+% ::id 33_nonfiction_GENIA-1999;99102085,8;NE
+% ::snt This was correlated with an unchanged level of the active form of the cytosolic inhibitor protein IkappaB-alpha .
+fof(ex1414051934726,axiom,(
+    ? [X1,X2,X5,X3,E4] :
+      ( cytosolic_1(s0,X1)
+      & inhibitor_protein_1(s0,X1)
+      & active_1(s0,X2)
+      & is_form_of_2(s0,X2,ikappab_alpha)
+      & ikappab_alpha = X1
+      & unchanged_1(s0,X3)
+      & is_level_of_2(s0,X3,X2)
+      & is_before_2(s0,E4,e0)
+      & was_correlated_2(s0,E4,X5)
+      & with_2(s0,E4,X3) ) )).
+
+% ::id 34_nonfiction_GENIA-1999;99102085,9;NE
+% ::snt Taken together , these observations suggest that the immunosuppressive effect of oxLDLs might operate via a dysregulation of the T-lymphocyte activation mechanisms .
+fof(ex1414051935125,axiom,(
+    ? [X1,G2,G3,G4,E5,E6] :
+      ( immunosuppressive_1(s0,X1)
+      & is_effect_of_2(s0,X1,G2)
+      & observations_1(s0,G4)
+      & oxldls_1(s0,G2)
+      & t_lymphocyte_activation_mechanisms_1(s0,G3)
+      & together_1(s0,E5)
+      & taken_2(s0,E5,G4)
+      & ? [S9] :
+          ( suggest_3(s0,E6,G4,S9)
+          & ? [X7,E8] :
+              ( is_dysregulation_of_2(S9,X7,G3)
+              & operate_2(S9,E8,X1)
+              & via_2(S9,E8,X7) ) ) ) )).
+
+% ::id 35_nonfiction_GENIA-1999;99102381,1;NE
+% ::snt The activity of the CCAAT -box binding factor NF-Y is modulated through the regulated expression of its A subunit during monocyte to macrophage differentiation :
+fof(ex1414051935518,axiom,(
+    ? [X8,X1,X2,X3,X4,X5,X6,E7] :
+      ( ccaat_box_binding_factor_1(s0,X1)
+      & is_activity_of_2(s0,X4,nf_y_)
+      & choose3(X8,X4,nf_y_,X1)
+      & is_a_subunit_of_2(s0,X2,X8)
+      & regulated_1(s0,X3)
+      & is_expression_of_2(s0,X3,X2)
+      & nf_y_ = X1
+      & monocyte_1(s0,X6)
+      & macrophage_differentiation_1(s0,X5)
+      & modulated_3(s0,E7,unspecified,X4)
+      & through_2(s0,E7,X3)
+      & during_2(s0,E7,X6)
+      & to_2(s0,E7,X5) ) )).
+
+% ::id 36_nonfiction_GENIA-1999;99102381,1;NE
+% ::snt regulation of tissue-specific genes through a ubiquitous transcription factor .
+fof(ex1414051935906,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( ubiquitous_1(s0,X1)
+      & transcription_factor_1(s0,X1)
+      & is_regulation_through_2(s0,X2,X1)
+      & is_regulation_of_2(s0,X2,G3)
+      & tissue_specific_1(s0,G3)
+      & genes_1(s0,G3)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X2) ) )).
+
+% ::id 37_nonfiction_GENIA-1999;99102381,2;NE
+% ::snt In this study , we analyzed the regulation of NF-Y expression during human monocyte to macrophage maturation .
+fof(ex1414051936295,axiom,(
+    ? [X1,X2,X3,X4,X5,X7,E6] :
+      ( study_1(s0,X5)
+      & nf_y__expression_1(s0,X3)
+      & macrophage_maturation_1(s0,X1)
+      & human_1(s0,X2)
+      & is_monocyte_to_2(s0,X2,X1)
+      & is_regulation_during_2(s0,X4,X2)
+      & is_regulation_of_2(s0,X4,X3)
+      & is_before_2(s0,E6,e0)
+      & analyzed_3(s0,E6,X7,X4)
+      & in_2(s0,E6,X5) ) )).
+
+% ::id 38_nonfiction_GENIA-1999;99102381,3;NE
+% ::snt NF-Y is a ubiquitous and evolutionarily conserved transcription factor that binds specifically to the CCAAT motif present in the 5' promoter region of a wide variety of genes .
+fof(ex1414051936703,axiom,(
+    ? [X1,X2,X3,G4,X5,E6,E7] :
+      ( wide_1(s0,X1)
+      & is_variety_of_2(s0,X1,G4)
+      & predicate__5_1(s0,X2)
+      & is_promoter_region_of_2(s0,X2,X1)
+      & is_present_in_2(s0,X3,X2)
+      & ccaat__motif_1(s0,X3)
+      & genes_1(s0,G4)
+      & ubiquitous_1(s0,X5)
+      & evolutionarily_conserved_1(s0,X5)
+      & binds_2(s0,E6,X5)
+      & to_2(s0,E6,X3)
+      & transcription_factor_1(s0,X5)
+      & specifically_1(s0,E6)
+      & is_3(s0,E7,nf_y_,X5) ) )).
+
+% ::id 39_nonfiction_GENIA-1999;99102381,4;NE
+% ::snt We show here that in circulating monocytes , NF-Y binding activity is not detected on the CCAAT motif present in the promoters of genes such as major histocompatibility complex -LRB- MHC -RRB- class II , gp91-phox , mig , and fibronectin , whereas during macrophage differentiation , a progressive increase in NF-Y binding activity is observed on these promoters .
+fof(ex1414051937149,axiom,(
+    ? [X1,X2,X3,X14,G4,G5,G6,G7,X8,X9,X10,X11,S15,E12,E13,S16] :
+      ( major_1(s0,X2)
+      & histocompatibility_complex_class_ii__1(s0,X2)
+      & mhc__1(s0,X1)
+      & is_present_in_2(s0,X3,G7)
+      & ccaat__motif_1(s0,X3)
+      & promoters_1(s0,G4)
+      & genes_1(s0,G6)
+      & X2 = X1
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,gp91_phox,G5)
+      & is_of_2(s0,mig,G5)
+      & is_of_2(s0,fibronectin,G5)
+      & is_promoters_such_as_2(s0,G7,G5)
+      & is_promoters_of_2(s0,G7,G6)
+      & nf_y__binding_activity_1(s0,X8)
+      & progressive_1(s0,X10)
+      & is_increase_in_2(s0,X10,X8)
+      & macrophage_differentiation_1(s0,X9)
+      & nf_y__binding_activity_1(s0,X11)
+      & here_1(s0,S15)
+      & ? [S19] :
+          ( fact_2(s0,S16,S19)
+          & observed_3(S19,E12,unspecified,X10)
+          & during_2(S19,E12,X9)
+          & on_2(S19,E12,G4) )
+      & ? [S20] :
+          ( fact_2(s0,S15,S20)
+          & ? [S21] :
+              ( show_3(S20,E13,X14,S21)
+              & ? [G17,E18] :
+                  ( circulating_1(S21,G17)
+                  & monocytes_1(S21,G17)
+                  & detected_3(S21,E18,unspecified,X11)
+                  & in__2(S21,E18,G17)
+                  & on_2(S21,E18,X3)
+                  & whereas_2(S21,E18,S16) ) ) ) ) )).
+
+% ::id 40_nonfiction_GENIA-1999;99102381,5;NE
+% ::snt Analysis of NF-Y subunit expression indicates that the absence of NF-Y activity in circulating monocytes is caused by a lack of the A subunit .
+fof(ex1414051937553,axiom,(
+    ? [X1,X2,X3,G4,X5,X6,X7,E8,E9] :
+      ( is_nf_y__activity_in_2(s0,X1,G4)
+      & is_absence_of_2(s0,X3,X1)
+      & a_subunit_1(s0,X2)
+      & circulating_1(s0,G4)
+      & monocytes_1(s0,G4)
+      & nf_y__subunit_expression_1(s0,X5)
+      & is_analysis_of_2(s0,X7,X5)
+      & is_lack_of_2(s0,X6,X2)
+      & ? [S10] :
+          ( indicates_3(s0,E9,X7,S10)
+          & caused_3(S10,E8,X6,X3) ) ) )).
+
+% ::id 41_nonfiction_GENIA-1999;99102381,6;NE
+% ::snt Furthermore , addition of the recombinant NF-YA subunit restores NF-Y binding .
+fof(ex1414051937940,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( recombinant_nf_ya__subunit_1(s0,X1)
+      & is_addition_of_2(s0,X3,X1)
+      & nf_y__binding_1(s0,X2)
+      & furthermore_1(s0,E4)
+      & restores_3(s0,E4,X3,X2) ) )).
+
+% ::id 42_nonfiction_GENIA-1999;99102381,7;NE
+% ::snt We show that the lack of NF-YA protein is due to posttranscriptional regulation and not to a specific proteolytic activity .
+fof(ex1414051938334,axiom,(
+    ? [X1,X2,X7,X3,X4,A8,E5,E6] :
+      ( nf_ya__protein_1(s0,X1)
+      & is_lack_of_2(s0,X2,X1)
+      & posttranscriptional_1(s0,X3)
+      & regulation_1(s0,X3)
+      & specific_1(s0,X4)
+      & proteolytic_1(s0,X4)
+      & activity_1(s0,X4)
+      & is_due_to_2(s0,A8,X3)
+      & ? [X9] :
+          ( is_of_2(s0,X9,X4)
+          & is_due_to_2(s0,A8,X9) )
+      & ? [S10] :
+          ( show_3(s0,E6,X7,S10)
+          & is_3(S10,E5,X2,A8) ) ) )).
+
+% ::id 43_nonfiction_GENIA-1999;99102381,8;NE
+% ::snt In fact , NF-YA mRNA is present at the same level at all days of monocyte cultivation , whereas the protein is absent in freshly isolated monocytes but is progressively synthesized during the maturation process .
+fof(ex1414051938744,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,A14,A11,E8,E9,E10,S13] :
+      ( same_1(s0,X1)
+      & level_1(s0,X1)
+      & protein_1(s0,X3)
+      & maturation_process_1(s0,X2)
+      & nf_ya__mrna__1(s0,X6)
+      & fact_1(s0,X5)
+      & monocyte_cultivation_1(s0,X4)
+      & freshly_1(s0,G7)
+      & isolated_1(s0,G7)
+      & monocytes_1(s0,G7)
+      & ? [G12] :
+          ( is_days_of_2(s0,G12,X4)
+          & is_present_at_2(s0,A11,G12)
+          & is_present_at__2(s0,A11,X1) )
+      & is_absent_in_2(s0,A14,G7)
+      & progressively_1(s0,E9)
+      & ? [S15] :
+          ( fact_2(s0,S13,S15)
+          & is_3(S15,E8,X3,A14)
+          & is_synthesized_2(S15,E9,X3)
+          & during_2(S15,E9,X2) )
+      & is_3(s0,E10,X6,A11)
+      & in_2(s0,E10,X5)
+      & whereas_2(s0,E10,S13) ) )).
+
+% ::id 44_nonfiction_GENIA-1999;99102381,9;NE
+% ::snt We thus conclude that the NF-YA subunit plays a relevant role in activating transcription of genes highly expressed in mature monocytes .
+fof(ex1414051939144,axiom,(
+    ? [X1,X8,X2,X3,G4,G5,S9,E6,E7] :
+      ( nf_ya__subunit_1(s0,X1)
+      & is_transcription_of_2(s0,X2,G5)
+      & relevant_1(s0,X3)
+      & is_role_in_activating_2(s0,X3,X2)
+      & mature_1(s0,G4)
+      & monocytes_1(s0,G4)
+      & is_highly_expressed_in_2(s0,G5,G4)
+      & genes_1(s0,G5)
+      & thus_1(s0,S9)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & ? [S11] :
+              ( conclude_3(S10,E7,X8,S11)
+              & plays_3(S11,E6,X1,X3) ) ) ) )).
+
+% ::id 45_nonfiction_GENIA-1999;99102381,10;NE
+% ::snt In line with this conclusion , we show that the cut/CDP protein , a transcriptional repressor that inhibits gpc91-phox gene expression by preventing NF-Y binding to the CAAT box , is absent in monocytes .
+fof(ex1414051939574,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X13,E7,E8,X9,G10,A14,E11,E12] :
+      ( conclusion_1(s0,X1)
+      & cut__slash__cdp__protein_1(s0,X6)
+      & gpc91_phox_gene_expression_1(s0,X4)
+      & caat__box_1(s0,X2)
+      & is_nf_y__binding_to_2(s0,X3,X2)
+      & transcriptional_1(s0,X5)
+      & preventing_3(s0,E7,X4,X3)
+      & inhibits_3(s0,E8,X5,X4)
+      & repressor_1(s0,X5)
+      & X6 = X5
+      & is_line_with_2(s0,X9,X1)
+      & monocytes_1(s0,G10)
+      & is_absent_in_2(s0,A14,G10)
+      & ? [S15] :
+          ( show_3(s0,E12,X13,S15)
+          & is_3(S15,E11,X6,A14) )
+      & in_2(s0,E12,X9) ) )).
+
+% ::id 46_nonfiction_GENIA-1999;99102590,1;NE
+% ::snt Accessing Epstein-Barr virus-specific T-cell memory with peptide-loaded dendritic cells .
+fof(ex1414051939963,axiom,(
+    ? [X1,G2,E3] :
+      ( epstein_barr_virus_specific_t_cell_memory_1(s0,X1)
+      & peptide_loaded_1(s0,G2)
+      & dendritic_1(s0,G2)
+      & cells_1(s0,G2)
+      & accessing_3(s0,E3,unspecified,X1)
+      & with_2(s0,E3,G2) ) )).
+
+% ::id 47_nonfiction_GENIA-1999;99102590,2;NE
+% ::snt The conventional means of studying Epstein-Barr virus -LRB- EBV -RRB- -induced cytotoxic T-lymphocyte -LRB- CTL -RRB- memory , by in vitro stimulation with the latently infected autologous lymphoblastoid cell line -LRB- LCL -RRB- , has important limitations .
+fof(ex1414051940371,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,E9,S12,G10,E11] :
+      ( epstein_barr_virus_1(s0,X2)
+      & ebv__1(s0,X1)
+      & is_induced_of_2(s0,X7,X2)
+      & cytotoxic_1(s0,X7)
+      & t_lymphocyte_memory_1(s0,X7)
+      & ctl__1(s0,X3)
+      & latently_infected_1(s0,X5)
+      & autologous_lymphoblastoid_cell_line_1(s0,X5)
+      & lcl__1(s0,X4)
+      & in_vitro_1(s0,X6)
+      & is_stimulation_with_2(s0,X6,X5)
+      & X2 = X1
+      & X7 = X3
+      & X5 = X4
+      & conventional_1(s0,G8)
+      & is_means_of_2(s0,G8,S12)
+      & ? [S13] :
+          ( fact_2(s0,S12,S13)
+          & studying_3(S13,E9,unspecified,X7)
+          & by_2(S13,E9,X6) )
+      & important_1(s0,G10)
+      & limitations_1(s0,G10)
+      & has_3(s0,E11,G8,G10) ) )).
+
+% ::id 48_nonfiction_GENIA-1999;99102590,3;NE
+% ::snt First , it gives no information on memory to lytic cycle antigens ;
+fof(ex1414051940766,axiom,(
+    ? [X1,S2] :
+      ( first_1(s0,S2)
+      & ? [S7] :
+          ( fact_2(s0,S2,S7)
+          & ? [X3,X4,G5,E6] :
+              ( memory_1(S7,X3)
+              & is_information_on_2(S7,X4,X3)
+              & lytic_1(S7,G5)
+              & cycle_antigens_1(S7,G5)
+              & gives_4(S7,E6,X1,X4,G5) ) ) ) )).
+
+% ::id 49_nonfiction_GENIA-1999;99102590,3;NE
+% ::snt second , it preferentially amplifies the dominant components of latent antigen-specific memory at the expense of key subdominant reactivities .
+fof(ex1414051941164,axiom,(
+    ? [X1,X2,G3,G4,X6,E5] :
+      ( latent_1(s0,X1)
+      & antigen_specific_1(s0,X1)
+      & memory_1(s0,X1)
+      & is_expense_of_2(s0,X2,G3)
+      & dominant_1(s0,G4)
+      & is_components_of_2(s0,G4,X1)
+      & key_1(s0,G3)
+      & subdominant_1(s0,G3)
+      & reactivities_1(s0,G3)
+      & second_1(s0,E5)
+      & preferentially_1(s0,E5)
+      & amplifies_3(s0,E5,X6,G4)
+      & at_2(s0,E5,X2) ) )).
+
+% ::id 50_nonfiction_GENIA-1999;99102590,4;NE
+% ::snt Here we describe an alternative approach , based on in vitro stimulation with epitope peptide-loaded dendritic cells -LRB- DCs -RRB- , which allows one to probe the CTL repertoire for any individual reactivity of choice ;
+fof(ex1414051941592,axiom,(
+    ? [X1,X11,X13,X2,X3,X4,G5,G6,S12,E7,E8,E9,E10] :
+      ( ctl__repertoire_1(s0,X1)
+      & in_vitro_1(s0,X2)
+      & is_stimulation_with_2(s0,X2,G6)
+      & choose1(X13,X2)
+      & choice_1(s0,X3)
+      & alternative_1(s0,X4)
+      & based_3(s0,E7,unspecified,X4)
+      & on_2(s0,E7,X2)
+      & ? [S15] :
+          ( allows_4(s0,E9,X4,X13,S15)
+          & ? [X14] :
+              ( individual_1(S15,X14)
+              & is_reactivity_of_2(S15,X14,X3)
+              & probe_3(S15,E8,X13,X1)
+              & for_2(S15,E8,X14) ) )
+      & approach_1(s0,X4)
+      & epitope_1(s0,G6)
+      & peptide_loaded_1(s0,G6)
+      & dendritic_1(s0,G6)
+      & cells_1(s0,G6)
+      & dcs_1(s0,G5)
+      & G6 = G5
+      & here_1(s0,S12)
+      & ? [S16] :
+          ( fact_2(s0,S12,S16)
+          & describe_3(S16,E10,X11,X4) ) ) )).
+
+% ::id 51_nonfiction_GENIA-1999;99102590,4;NE
+% ::snt this method proved significantly more efficient than stimulation with peptide alone .
+fof(ex1414051941981,axiom,(
+    ? [X1,X2,X3,A5,E4] :
+      ( method_1(s0,X1)
+      & peptide_1(s0,X2)
+      & ? [X6] :
+          ( is_of_2(s0,X6,X2)
+          & is_stimulation_with_2(s0,X3,X6) )
+      & is_significantly_more_efficient_than_2(s0,A5,X3)
+      & is_before_2(s0,E4,e0)
+      & proved_3(s0,E4,X1,A5) ) )).
+
+% ::id 52_nonfiction_GENIA-1999;99102590,5;NE
+% ::snt Using this approach we first show that reactivities to the immunodominant and subdominant lytic cycle epitopes identified by T cells during primary EBV infection are regularly detectable in the CTL memory of virus carriers ;
+fof(ex1414051942413,axiom,(
+    ? [X1,X2,X3,X15,G4,G5,G6,G7,G8,G9,E10,G11,A17,S16,E12,E13,E14] :
+      ( approach_1(s0,X1)
+      & primary_1(s0,X2)
+      & ebv__infection_1(s0,X2)
+      & is_ctl__memory_of_2(s0,X3,G9)
+      & t_cells_1(s0,G4)
+      & identified_3(s0,E10,G4,G8)
+      & during_2(s0,E10,X2)
+      & immunodominant_1(s0,G5)
+      & lytic_cycle_epitopes_1(s0,G5)
+      & subdominant_1(s0,G6)
+      & lytic_cycle_epitopes_1(s0,G6)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & G8 = G7
+      & virus_carriers_1(s0,G9)
+      & is_reactivities_to_2(s0,G11,G8)
+      & is_regularly_detectable_in_2(s0,A17,X3)
+      & first_1(s0,S16)
+      & using_3(s0,E12,X15,X1)
+      & ? [S18] :
+          ( fact_2(s0,S16,S18)
+          & ? [S19] :
+              ( show_3(S18,E14,X15,S19)
+              & are_3(S19,E13,G11,A17) ) ) ) )).
+
+% ::id 53_nonfiction_GENIA-1999;99102590,5;NE
+% ::snt this implies that in such carriers chronic virus replication remains under direct T-cell control .
+fof(ex1414051942807,axiom,(
+    ? [X5,X1,X2,E3,E4] :
+      ( chronic_1(s0,X2)
+      & virus_replication_1(s0,X2)
+      & direct_1(s0,X1)
+      & t_cell_control_1(s0,X1)
+      & ? [S7] :
+          ( implies_3(s0,E4,X5,S7)
+          & ? [G6] :
+              ( carriers_1(S7,G6)
+              & remains_2(S7,E3,X2)
+              & in_2(S7,E3,G6)
+              & under_2(S7,E3,X1) ) ) ) )).
+
+% ::id 54_nonfiction_GENIA-1999;99102590,6;NE
+% ::snt We further show that subdominant latent cycle reactivities to epitopes in the latent membrane protein LMP2 , though rarely undetectable in LCL-stimulated populations , can be reactivated by DC stimulation and selectively expanded as polyclonal CTL lines ;
+fof(ex1414051943221,axiom,(
+    ? [X1,X5,G2,G3,E4] :
+      ( latent_1(s0,X1)
+      & membrane_protein_1(s0,X1)
+      & lmp2 = X1
+      & is_epitopes_in_2(s0,G2,lmp2)
+      & subdominant_1(s0,G3)
+      & latent_1(s0,G3)
+      & cycle_1(s0,G3)
+      & is_reactivities_to_2(s0,G3,G2)
+      & further_1(s0,E4)
+      & ? [S12] :
+          ( show_3(s0,E4,X5,S12)
+          & ? [X6,G7,G8,A11,E9,E10] :
+              ( dc__stimulation_1(S12,X6)
+              & lcl_stimulated_1(S12,G7)
+              & populations_1(S12,G7)
+              & polyclonal_1(S12,G8)
+              & ctl__lines_1(S12,G8)
+              & is_rarely_undetectable_in_2(S12,A11,G7)
+              & selectively_1(S12,E10)
+              & reactivated_3(S12,E9,X6,G3)
+              & though_2(S12,E9,A11)
+              & be_expanded_2(S12,E10,G3)
+              & as_2(S12,E10,G8)
+              & though_2(S12,E10,A11) ) ) ) )).
+
+% ::id 55_nonfiction_GENIA-1999;99102590,6;NE
+% ::snt the adoptive transfer of such preparations may be of value in targeting certain EBV-positive malignancies .
+fof(ex1414051943612,axiom,(
+    ? [X1] :
+      ( adoptive_1(s0,X1)
+      & ? [G2] :
+          ( preparations_1(s0,G2)
+          & is_transfer_of_2(s0,X1,G2) )
+      & ? [X3,G4,E5] :
+          ( value_1(s0,X3)
+          & certain_1(s0,G4)
+          & ebv_positive_1(s0,G4)
+          & malignancies_1(s0,G4)
+          & be_2(s0,E5,X1)
+          & of_2(s0,E5,X3)
+          & in_targeting_2(s0,E5,G4) ) ) )).
+
+% ::id 56_nonfiction_GENIA-1999;99103960,1;NE
+% ::snt Differential monocyte adhesion and adhesion molecule expression in venous and arterial endothelial cells .
+fof(ex1414051944010,axiom,(
+    ? [G1,G2,G3,E4] :
+      ( ? [G5] :
+          ( venous_1(s0,G5)
+          & endothelial_1(s0,G5)
+          & cells_1(s0,G5)
+          & is_of_2(s0,G5,G1) )
+      & ? [G6] :
+          ( arterial_1(s0,G6)
+          & endothelial_1(s0,G6)
+          & cells_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & is_in_2(s0,G3,G1)
+      & ? [X7] :
+          ( differential_1(s0,X7)
+          & monocyte_adhesion_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & ? [X8] :
+          ( adhesion_molecule_expression_1(s0,X8)
+          & is_of_2(s0,X8,G2) )
+      & G3 = G2
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,G3) ) )).
+
+% ::id 57_nonfiction_GENIA-1999;99103960,2;NE
+% ::snt We compared U-937 cell adhesion and adhesion molecule expression in human umbilical venous -LRB- HUVECs -RRB- and arterial -LRB- HUAECs -RRB- endothelial cells exposed to tumor necrosis factor -LRB- TNF -RRB- , interleukin-1 , and lipopolysaccharide -LRB- LPS -RRB- .
+fof(ex1414051944436,axiom,(
+    ? [X7,G1,G2,G3,G4,E5,E6] :
+      ( ? [X8] :
+          ( u_937_cell_adhesion_1(s0,X8)
+          & is_of_2(s0,X8,G4) )
+      & ? [X9] :
+          ( adhesion_molecule_expression_1(s0,X9)
+          & is_of_2(s0,X9,G4) )
+      & ? [X10] :
+          ( tumor_necrosis_factor_1(s0,X10)
+          & X10 = tnf_
+          & is_of_2(s0,X10,G1) )
+      & is_of_2(s0,interleukin_1,G1)
+      & ? [X11] :
+          ( lipopolysaccharide_1(s0,X11)
+          & X11 = lps_
+          & is_of_2(s0,X11,G1) )
+      & exposed_3(s0,E5,unspecified,G3)
+      & to_2(s0,E5,G1)
+      & cells_1(s0,G3)
+      & ? [X12,G13] :
+          ( human_1(s0,X12)
+          & umbilical_1(s0,X12)
+          & venous_1(s0,X12)
+          & huvecs_1(s0,G13)
+          & X12 = G13
+          & is_of_2(s0,X12,G2) )
+      & ? [X14,G15] :
+          ( arterial_1(s0,X14)
+          & endothelial_1(s0,X14)
+          & huaecs_1(s0,G15)
+          & X14 = G15
+          & is_of_2(s0,X14,G2) )
+      & G3 = G2
+      & is_before_2(s0,E6,e0)
+      & compared_3(s0,E6,X7,G4)
+      & in_2(s0,E6,G3) ) )).
+
+% ::id 58_nonfiction_GENIA-1999;99103960,3;NE
+% ::snt TNF and LPS stimulated vascular cell adhesion molecule -LRB- VCAM -RRB- -1 surface expression and adhesion of U-937 monocyte-like cells to HUVECs but not to HUAECs .
+fof(ex1414051944833,axiom,(
+    ? [G1,G2,E3] :
+      ( is_of_2(s0,tnf_,G2)
+      & is_of_2(s0,lps_,G2)
+      & ? [X4,X5] :
+          ( vascular_1(s0,X5)
+          & cell_adhesion_molecule_1_surface_expression_1(s0,X5)
+          & vcam__1(s0,X4)
+          & X5 = X4
+          & is_of_2(s0,X5,G1) )
+      & ? [X6,G7,G8,G9] :
+          ( is_adhesion_to_2(s0,X6,G7)
+          & is_adhesion_of_2(s0,X6,G9)
+          & ? [X10] :
+              ( is_of_2(s0,X10,G8)
+              & is_adhesion_to_2(s0,X6,X10)
+              & is_adhesion_of_2(s0,X6,G9) )
+          & u_937_monocyte_like_cells_1(s0,G9)
+          & huvecs_1(s0,G7)
+          & huaecs_1(s0,G8)
+          & is_of_2(s0,X6,G1) )
+      & is_before_2(s0,E3,e0)
+      & stimulated_3(s0,E3,G2,G1) ) )).
+
+% ::id 59_nonfiction_GENIA-1999;99103960,4;NE
+% ::snt Antibody studies demonstrated that in HUVECs at least 75 % of the adhesion response is VCAM-1 mediated .
+ERROR: Line 7 Char 14 Token "huvecs_1" continuing with "s0, G2) &
+"
+
+% ::id 60_nonfiction_GENIA-1999;99103960,5;NE
+% ::snt Interleukin-1 stimulated U-937 cell adhesion to and VCAM-1 surface expression in both HUVECs and HUAECs .
+fof(ex1414051945613,axiom,(
+    ? [G1,E2] :
+      ( ? [X3] :
+          ( u_937_cell_adhesion_1(s0,X3)
+          & is_of_2(s0,X3,G1) )
+      & ? [X4] :
+          ( surface_expression_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & is_before_2(s0,E2,e0)
+      & stimulated_3(s0,E2,interleukin_1,G1) ) )).
+
+% ::id 61_nonfiction_GENIA-1999;99103960,6;NE
+% ::snt Pyrrolidinedithiocarbamate and the proteasome inhibitor MG-132 blocked TNF- and LPS- stimulated U-937 cell adhesion to HUVECs .
+fof(ex1414051946011,axiom,(
+    ? [X1,X2,G3,G4,G5,E6] :
+      ( proteasome_inhibitor_1(s0,X1)
+      & is_stimulated_of_2(s0,X2,G3)
+      & is_u_937_cell_adhesion_to_2(s0,X2,G4)
+      & is_of_2(s0,pyrrolidinedithiocarbamate,G5)
+      & mg_132 = X1
+      & is_of_2(s0,mg_132,G5)
+      & is_of_2(s0,tnf_,G3)
+      & is_of_2(s0,lps_,G3)
+      & huvecs_1(s0,G4)
+      & is_before_2(s0,E6,e0)
+      & blocked_3(s0,E6,G5,X2) ) )).
+
+% ::id 62_nonfiction_GENIA-1999;99103960,7;NE
+% ::snt These agents also significantly decreased TNF- and LPS- stimulated increases in HUVEC surface VCAM-1 .
+fof(ex1414051946402,axiom,(
+    ? [G1,X2,G3,G4,E5] :
+      ( agents_1(s0,G1)
+      & huvec__surface_1(s0,X2)
+      & is_of_2(s0,tnf_,G3)
+      & is_of_2(s0,lps_,G3)
+      & vcam_1 = X2
+      & is_stimulated_of_2(s0,G4,G3)
+      & is_increases_in_2(s0,G4,vcam_1)
+      & significantly_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & also_decreased_3(s0,E5,G1,G4) ) )).
+
+% ::id 63_nonfiction_GENIA-1999;99103960,8;NE
+% ::snt TNF increased VCAM-1 protein and mRNA in HUVECs that was blocked by pyrrolidinedithiocarbamate .
+fof(ex1414051946796,axiom,(
+    ? [G1,G2,E3,E4] :
+      ( ? [X5] :
+          ( vcam_1_protein_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & is_of_2(s0,mrna_,G2)
+      & blocked_3(s0,E3,pyrrolidinedithiocarbamate,G1)
+      & huvecs_1(s0,G1)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & increased_3(s0,E4,tnf_,G2)
+      & in_2(s0,E4,G1) ) )).
+
+% ::id 64_nonfiction_GENIA-1999;99103960,9;NE
+% ::snt However , neither TNF or LPS stimulated VCAM-1 expression in HUAECs .
+fof(ex1414051947182,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( is_vcam_1_expression_in_2(s0,X1,G2)
+      & is_of_2(s0,tnf_,G3)
+      & is_of_2(s0,lps_,G3)
+      & huaecs_1(s0,G2)
+      & however_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & stimulated_3(s0,E4,G3,X1) ) )).
+
+% ::id 65_nonfiction_GENIA-1999;99103960,10;NE
+% ::snt TNF stimulated expression of both intercellular adhesion molecule-1 and E-selectin in HUVECs ,
+fof(ex1414051947600,axiom,(
+    ? [X1,E2] :
+      ( ? [G3,G4,G5] :
+          ( ? [X6] :
+              ( intercellular_1(s0,X6)
+              & adhesion_molecule_1_1(s0,X6)
+              & is_of_2(s0,X6,G4) )
+          & is_of_2(s0,e_selectin,G4)
+          & G3 = G4
+          & huvecs_1(s0,G5)
+          & is_expression_in_2(s0,X1,G5)
+          & is_expression_of_2(s0,X1,G3) )
+      & is_before_2(s0,E2,e0)
+      & stimulated_3(s0,E2,tnf_,X1) ) )).
+
+% ::id 66_nonfiction_GENIA-1999;99103960,10;NE
+% ::snt but in HUAECs , only intercellular adhesion molecule-1 was increased .
+fof(ex1414051947981,axiom,(
+    ? [X1] :
+      ( intercellular_1(s0,X1)
+      & adhesion_molecule_1_1(s0,X1)
+      & ? [X2] :
+          ( is_of_2(s0,X2,X1)
+          & ? [G3,E4] :
+              ( huaecs_1(s0,G3)
+              & is_before_2(s0,E4,e0)
+              & increased_3(s0,E4,unspecified,X2)
+              & in_2(s0,E4,G3) ) ) ) )).
+
+% ::id 67_nonfiction_GENIA-1999;99103960,11;NE
+% ::snt Electrophoretic mobility shift assays demonstrated no difference in the pattern of TNF- stimulated nuclear factor -kappaB activation between HUVECs and HUAECs .
+fof(ex1414051948375,axiom,(
+    ? [X1,X2,G3] :
+      ( is_stimulated_of_2(s0,X1,tnf_)
+      & nuclear_1(s0,X1)
+      & factor_kappab_activation_1(s0,X1)
+      & is_pattern_of_2(s0,X2,X1)
+      & electrophoretic_1(s0,G3)
+      & mobility_shift_assays_1(s0,G3)
+      & ? [X4,G5,E6] :
+          ( is_difference_between_2(s0,X4,G5)
+          & is_difference_in_2(s0,X4,X2)
+          & ? [G7] :
+              ( huvecs_1(s0,G7)
+              & is_of_2(s0,G7,G5) )
+          & ? [G8] :
+              ( huaecs_1(s0,G8)
+              & is_of_2(s0,G8,G5) )
+          & is_before_2(s0,E6,e0)
+          & demonstrated_3(s0,E6,G3,X4) ) ) )).
+
+% ::id 68_nonfiction_GENIA-1999;99103960,12;NE
+% ::snt These studies demonstrate a novel and striking insensitivity of arterial endothelium to the effects of TNF and LPS and indicate a dissociation between the ability of HUAECs to upregulate nuclear factor -kappaB and VCAM-1 .
+fof(ex1414051948791,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,E8,X9,X10,X11,E12,E13] :
+      ( nuclear_1(s0,X1)
+      & factor_kappab_1(s0,X1)
+      & is_ability_of_2(s0,X2,G6)
+      & studies_1(s0,G7)
+      & is_of_2(s0,tnf_,G3)
+      & is_of_2(s0,lps_,G3)
+      & is_effects_of_2(s0,G4,G3)
+      & huaecs_1(s0,G6)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,vcam_1,G5)
+      & arterial_1(s0,X9)
+      & endothelium_1(s0,X9)
+      & novel_1(s0,X10)
+      & striking_1(s0,X10)
+      & is_insensitivity_to_2(s0,X10,G4)
+      & is_insensitivity_of__2(s0,X10,X9)
+      & is_dissociation_between_2(s0,X11,X2)
+      & demonstrate_3(s0,E12,G7,X10)
+      & indicate_3(s0,E13,G7,X11) ) )).
+
+% ::id 69_nonfiction_GENIA-1999;99106021,1;NE
+% ::snt Tissue factor expression of human monocytes is suppressed by lysophosphatidylcholine .
+fof(ex1414051949176,axiom,(
+    ? [X1,G2,E3] :
+      ( is_tissue_factor_expression_of_2(s0,X1,G2)
+      & human_1(s0,G2)
+      & monocytes_1(s0,G2)
+      & suppressed_3(s0,E3,lysophosphatidylcholine,X1) ) )).
+
+% ::id 70_nonfiction_GENIA-1999;99106021,2;NE
+% ::snt The expression of tissue factor -LRB- TF -RRB- , the principal initiator of coagulation , is increased during inflammation and atherosclerosis .
+fof(ex1414051949572,axiom,(
+    ? [X1,X2,X3,X4,G5,E6] :
+      ( tissue_factor_1(s0,X3)
+      & coagulation_1(s0,X1)
+      & principal_1(s0,X2)
+      & is_initiator_of_2(s0,X2,X1)
+      & is_expression_of_2(s0,X4,X3)
+      & X3 = tf_
+      & X3 = X2
+      & ? [X7] :
+          ( inflammation_1(s0,X7)
+          & is_of_2(s0,X7,G5) )
+      & ? [X8] :
+          ( atherosclerosis_1(s0,X8)
+          & is_of_2(s0,X8,G5) )
+      & increased_3(s0,E6,unspecified,X4)
+      & during_2(s0,E6,G5) ) )).
+
+% ::id 71_nonfiction_GENIA-1999;99106021,3;NE
+% ::snt Both conditions are promoted by lysophosphatidylcholine -LRB- lysoPC -RRB- .
+fof(ex1414051949957,axiom,(
+    ? [E1] :
+      ( lysophosphatidylcholine = lysopc_
+      & ? [G2] :
+          ( conditions_1(s0,G2)
+          & promoted_3(s0,E1,lysophosphatidylcholine,G2) ) ) )).
+
+% ::id 72_nonfiction_GENIA-1999;99106021,4;NE
+% ::snt We observed in the present study that lysoPC -LRB- 1 to 10 micromol/L -RRB- dose-dependently reduced TF activity in human monocytes , as elicited by lipopolysaccharide -LRB- LPS -RRB- .
+fof(ex1414051950361,axiom,(
+    ? [X1,X8,X2,G3,X4,S9,E5,E6,E7,S10] :
+      ( present_1(s0,X1)
+      & study_1(s0,X1)
+      & is_tf__activity_in_2(s0,X2,G3)
+      & human_1(s0,G3)
+      & monocytes_1(s0,G3)
+      & lipopolysaccharide = lps_
+      & predicate__1_to_10_1(s0,X4)
+      & micromol__slash__l__1(s0,X4)
+      & dose_dependently_1(s0,S9)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & elicited_3(S11,E5,lipopolysaccharide,X2) )
+      & ? [S12] :
+          ( observed_3(s0,E7,X8,S12)
+          & ? [S13] :
+              ( fact_2(S12,S9,S13)
+              & reduced_3(S13,E6,lysopc_,X2)
+              & msr_2(S13,E6,X4)
+              & as_2(S13,E6,S10) ) )
+      & in_2(s0,E7,X1) ) )).
+
+% ::id 73_nonfiction_GENIA-1999;99106021,5;NE
+% ::snt Lysophosphatidylethanolamine -LRB- lysoPE -RRB- and other lysophospholipids did not affect LPS-induced TF activity of human monocytes .
+fof(ex1414051950752,axiom,(
+    ? [G1] :
+      ( ? [X2] :
+          ( lysope__1(s0,X2)
+          & lysophosphatidylethanolamine = X2
+          & is_of_2(s0,lysophosphatidylethanolamine,G1) )
+      & ? [G3] :
+          ( lysophospholipids_1(s0,G3)
+          & is_of_2(s0,G3,G1) )
+      & ? [X4,G5,E6] :
+          ( lps_induced_1(s0,X4)
+          & is_tf__activity_of_2(s0,X4,G5)
+          & human_1(s0,G5)
+          & monocytes_1(s0,G5)
+          & is_before_2(s0,E6,e0)
+          & did_affect_3(s0,E6,G1,X4) ) ) )).
+
+% ::id 74_nonfiction_GENIA-1999;99106021,6;NE
+% ::snt TF antigen expression as elicited by LPS was also lowered by lysoPC .
+fof(ex1414051951142,axiom,(
+    ? [X1,E2,E3,S4] :
+      ( tf__antigen_expression_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [S5] :
+          ( fact_2(s0,S4,S5)
+          & elicited_3(S5,E2,lps_,X1) )
+      & also_lowered_3(s0,E3,lysopc_,X1)
+      & as_2(s0,E3,S4) ) )).
+
+% ::id 75_nonfiction_GENIA-1999;99106021,7;NE
+% ::snt Phospholipid analyses indicated a selective increase in the lysoPC content of the monocytes after preincubation with the lysophospholipid .
+fof(ex1414051951532,axiom,(
+    ? [X1,X2,G3,X4,X5,G6,E7] :
+      ( is_lysopc__content_of_2(s0,X2,G3)
+      & lysophospholipid_1(s0,X1)
+      & monocytes_1(s0,G3)
+      & is_preincubation_with_2(s0,X4,X1)
+      & selective_1(s0,X5)
+      & is_increase_after_2(s0,X5,X4)
+      & is_increase_in_2(s0,X5,X2)
+      & phospholipid_analyses_1(s0,G6)
+      & is_before_2(s0,E7,e0)
+      & indicated_3(s0,E7,G6,X5) ) )).
+
+% ::id 76_nonfiction_GENIA-1999;99106021,8;NE
+% ::snt LysoPC inhibited the TF activity of Mono Mac-6 cells to a similar extent as in the monocytes .
+fof(ex1414051951918,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( similar_1(s0,X1)
+      & extent_1(s0,X1)
+      & is_tf__activity_as_in_2(s0,X2,G3)
+      & is_tf__activity_to_2(s0,X2,X1)
+      & is_tf__activity_of_2(s0,X2,G4)
+      & mono_mac_6_cells_1(s0,G4)
+      & monocytes_1(s0,G3)
+      & is_before_2(s0,E5,e0)
+      & inhibited_3(s0,E5,lysopc_,X2) ) )).
+
+% ::id 77_nonfiction_GENIA-1999;99106021,9;NE
+% ::snt LPS binding to plasma membrane receptors and internalization of LPS into monocytes were not affected by lysoPC .
+fof(ex1414051952309,axiom,(
+    ? [G1] :
+      ( ? [X2,G3] :
+          ( is_lps__binding_to_2(s0,X2,G3)
+          & plasma_membrane_receptors_1(s0,G3)
+          & is_of_2(s0,X2,G1) )
+      & ? [X4,G5] :
+          ( is_internalization_into_2(s0,X4,G5)
+          & is_internalization_of_2(s0,X4,lps_)
+          & monocytes_1(s0,G5)
+          & is_of_2(s0,X4,G1) )
+      & ? [E6] :
+          ( is_before_2(s0,E6,e0)
+          & affected_3(s0,E6,lysopc_,G1) ) ) )).
+
+% ::id 78_nonfiction_GENIA-1999;99106021,10;NE
+% ::snt In contrast , LPS-mediated nuclear binding of nuclear factor -kappaB/Rel to a TF-specific kappaB site was inhibited by lysoPC .
+fof(ex1414051952703,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( nuclear_1(s0,X2)
+      & factor_kappab__slash__rel_1(s0,X2)
+      & tf_specific_1(s0,X1)
+      & kappab_site_1(s0,X1)
+      & lps_mediated_1(s0,X4)
+      & nuclear_1(s0,X4)
+      & is_binding_to_2(s0,X4,X1)
+      & is_binding_of_2(s0,X4,X2)
+      & contrast_1(s0,X3)
+      & is_before_2(s0,E5,e0)
+      & inhibited_3(s0,E5,lysopc_,X4)
+      & in_2(s0,E5,X3) ) )).
+
+% ::id 79_nonfiction_GENIA-1999;99106021,11;NE
+% ::snt Induction of TF mRNA expression by LPS tended to be partially reduced by the lysophospholipid .
+fof(ex1414051953104,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( tf__mrna__expression_1(s0,X1)
+      & is_induction_by_2(s0,X2,lps_)
+      & is_induction_of_2(s0,X2,X1)
+      & partially_1(s0,E3)
+      & is_before_2(s0,E4,e0)
+      & ? [S5] :
+          ( tended_3(s0,E4,X2,S5)
+          & reduced_3(S5,E3,lysophospholipid,X2) ) ) )).
+
+% ::id 80_nonfiction_GENIA-1999;99106021,12;NE
+% ::snt Preincubation with lysoPC increased monocytic cAMP levels .
+fof(ex1414051953485,axiom,(
+    ? [X1,G2,E3] :
+      ( is_preincubation_with_2(s0,X1,lysopc_)
+      & monocytic_1(s0,G2)
+      & camp__levels_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & increased_3(s0,E3,X1,G2) ) )).
+
+% ::id 81_nonfiction_GENIA-1999;99106021,13;NE
+% ::snt Inhibition of adenylyl cyclase by pretreatment with 2'-deoxy-3'-adenosine monophosphate partially reversed the inhibition of TF activity promoted by lysoPC .
+fof(ex1414051955392,axiom,(
+    ? [X1,X2,E3,X4,X5,X6,X7,E8] :
+      ( promoted_3(s0,E3,lysopc_,X1)
+      & tf__activity_1(s0,X1)
+      & is_inhibition_of_2(s0,X2,X1)
+      & adenylyl_1(s0,X6)
+      & cyclase_1(s0,X6)
+      & predicate__2_deoxy_3_adenosine_1(s0,X4)
+      & monophosphate_1(s0,X4)
+      & is_pretreatment_with_2(s0,X5,X4)
+      & is_inhibition_by_2(s0,X7,X5)
+      & is_inhibition_of_2(s0,X7,X6)
+      & partially_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & reversed_3(s0,E8,X7,X2) ) )).
+
+% ::id 82_nonfiction_GENIA-1999;99106021,14;NE
+% ::snt In conclusion , lysoPC markedly decreases LPS-mediated TF expression of human monocytes , the effect probably being mediated by both transcriptional and posttranscriptional mechanisms .
+fof(ex1414051955792,axiom,(
+    ? [X1,X2,X3,G4,G5,S8,E6,E7] :
+      ( effect_1(s0,X1)
+      & conclusion_1(s0,X3)
+      & lps_mediated_1(s0,X2)
+      & is_tf__expression_of_2(s0,X2,G4)
+      & human_1(s0,G4)
+      & monocytes_1(s0,G4)
+      & ? [G9] :
+          ( transcriptional_1(s0,G9)
+          & mechanisms_1(s0,G9)
+          & is_of_2(s0,G9,G5) )
+      & ? [G10] :
+          ( posttranscriptional_1(s0,G10)
+          & mechanisms_1(s0,G10)
+          & is_of_2(s0,G10,G5) )
+      & markedly_1(s0,S8)
+      & probably_1(s0,E6)
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & being_mediated_2(S11,E6,X1)
+          & by_2(S11,E6,G5)
+          & decreases_3(S11,E7,lysopc_,X2)
+          & in_2(S11,E7,X3) ) ) )).
+
+% ::id 83_nonfiction_GENIA-1999;99106021,15;NE
+% ::snt LysoPC may thus attenuate activation of coagulation during inflammation and atherosclerosis .
+fof(ex1414051956182,axiom,(
+    ? [X1] :
+      ( lysopc__1(s0,X1)
+      & ? [X2,X3,G4,E5] :
+          ( coagulation_1(s0,X2)
+          & is_activation_of_2(s0,X3,X2)
+          & ? [X6] :
+              ( inflammation_1(s0,X6)
+              & is_of_2(s0,X6,G4) )
+          & ? [X7] :
+              ( atherosclerosis_1(s0,X7)
+              & is_of_2(s0,X7,G4) )
+          & thus_1(s0,E5)
+          & attenuate_3(s0,E5,X1,X3)
+          & during_2(s0,E5,G4) ) ) )).
+
+% ::id 84_nonfiction_GENIA-1999;99107757,1;NE
+% ::snt Intranuclear targeted delivery of functional NF-kappaB by 70 kDa heat shock protein .
+fof(ex1414051956568,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( functional_1(s0,X2)
+      & nf_kappab_1(s0,X2)
+      & predicate__70_kda_heat_shock_protein_1(s0,X1)
+      & intranuclear_1(s0,X3)
+      & targeted_1(s0,X3)
+      & is_delivery_by_2(s0,X3,X1)
+      & is_delivery_of_2(s0,X3,X2)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X3) ) )).
+
+% ::id 85_nonfiction_GENIA-1999;99107757,2;NE
+% ::snt The 70 kDa heat shock protein -LRB- Hsp70 -RRB- is a highly conserved , ubiquitous protein involved in chaperoning proteins to various cellular organelles .
+fof(ex1414051956964,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7,S8] :
+      ( predicate__70_kda_heat_shock_protein_1(s0,X1)
+      & X1 = hsp70
+      & highly_conserved_1(s0,X2)
+      & ubiquitous_1(s0,X2)
+      & involved_2(s0,E6,X2)
+      & in_2(s0,E6,S8)
+      & protein_1(s0,X2)
+      & proteins_1(s0,G4)
+      & various_1(s0,G3)
+      & cellular_1(s0,G3)
+      & organelles_1(s0,G3)
+      & is_before_2(s0,E6,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & chaperoning_3(S9,E5,X2,G4)
+          & to_2(S9,E5,G3) )
+      & is_3(s0,E7,X1,X2) ) )).
+
+% ::id 86_nonfiction_GENIA-1999;99107757,3;NE
+% ::snt Here we show that when added exogenously to cells , Hsp70 is readily imported into both cytoplasmic and nuclear compartments in a cell-type-specific fashion .
+fof(ex1414051957368,axiom,(
+    ? [X2,E1] :
+      ( here_1(s0,E1)
+      & ? [S10] :
+          ( show_3(s0,E1,X2,S10)
+          & ! [G3,E4] :
+              ( ( cells_1(S10,G3)
+                & exogenously_1(S10,E4) )
+             => ( added_2(S10,E4,hsp70)
+                & to_2(S10,E4,G3)
+                & ? [X5,G6,E7] :
+                    ( cell_type_specific_1(S10,X5)
+                    & fashion_1(S10,X5)
+                    & ? [G8] :
+                        ( cytoplasmic_1(S10,G8)
+                        & compartments_1(S10,G8)
+                        & is_of_2(S10,G8,G6) )
+                    & ? [G9] :
+                        ( nuclear_1(S10,G9)
+                        & compartments_1(S10,G9)
+                        & is_of_2(S10,G9,G6) )
+                    & readily_1(S10,E7)
+                    & is_imported_2(S10,E7,hsp70)
+                    & into_2(S10,E7,G6)
+                    & in_2(S10,E7,X5) ) ) ) ) ) )).
+
+% ::id 87_nonfiction_GENIA-1999;99107757,4;NE
+% ::snt We exploited this ability of Hsp70 to deliver NF-kappaB , a key transcriptional regulator of inflammatory responses .
+fof(ex1414051957766,axiom,(
+    ? [X1,X2,X6,G3,E4,E5] :
+      ( key_1(s0,X1)
+      & transcriptional_1(s0,X1)
+      & is_regulator_of_2(s0,X1,G3)
+      & is_ability_of_2(s0,X2,hsp70)
+      & inflammatory_1(s0,G3)
+      & responses_1(s0,G3)
+      & nf_kappab = X1
+      & is_before_2(s0,E5,e0)
+      & exploited_3(s0,E5,X6,X2) ) )).
+
+% ::id 88_nonfiction_GENIA-1999;99107757,5;NE
+% ::snt We demonstrate that a fusion protein composed of a C-terminal Hsp70 peptide and the p50 subunit of NF-kappaB was directed into the nucleus of cells , could bind DNA specifically , and activated Igkappa expression and TNFalpha production .
+fof(ex1414051958191,axiom,(
+    ? [X1,X2,X11,G3,X4,G5,G6,E7,E8,E9,E10] :
+      ( is_p50_subunit_of_2(s0,X1,nf_kappab)
+      & is_nucleus_of_2(s0,X2,G3)
+      & cells_1(s0,G3)
+      & composed_3(s0,E7,unspecified,X4)
+      & of_2(s0,E7,G5)
+      & fusion_protein_1(s0,X4)
+      & ? [X12] :
+          ( c_terminal_hsp70_peptide_1(s0,X12)
+          & is_of_2(s0,X12,G5) )
+      & is_of_2(s0,X1,G5)
+      & ? [X15] :
+          ( igkappa_expression_1(s0,X15)
+          & is_of_2(s0,X15,G6) )
+      & ? [X16] :
+          ( tnfalpha_production_1(s0,X16)
+          & is_of_2(s0,X16,G6) )
+      & is_before_2(s0,E8,E10)
+      & is_before_2(s0,E9,E10)
+      & ? [S17] :
+          ( demonstrate_3(s0,E10,X11,S17)
+          & directed_3(S17,E8,unspecified,X4)
+          & into_2(S17,E8,X2)
+          & ? [X13,E14] :
+              ( dna__1(S17,X13)
+              & specifically_1(S17,E14)
+              & bind_3(S17,E14,X4,X13) )
+          & activated_3(S17,E9,X4,G6) ) ) )).
+
+% ::id 89_nonfiction_GENIA-1999;99107757,6;NE
+% ::snt We therefore propose that Hsp70 can be used as a vehicle for intracytoplasmic and intranuclear delivery of proteins or DNA to modulate gene expression and thereby control immune responses .
+fof(ex1414051958616,axiom,(
+    ? [X2,E1] :
+      ( therefore_1(s0,E1)
+      & ? [S16] :
+          ( propose_3(s0,E1,X2,S16)
+          & ? [X3,X4,G5,G6,G7,G8,E9,E10,E11] :
+              ( is_vehicle_for_2(S16,X4,G7)
+              & gene_expression_1(S16,X3)
+              & ? [G12] :
+                  ( proteins_1(S16,G12)
+                  & is_of_2(S16,G12,G5) )
+              & ? [X13] :
+                  ( dna__1(S16,X13)
+                  & is_of_2(S16,X13,G5) )
+              & is_of_2(S16,G7,G5)
+              & ? [X14] :
+                  ( intracytoplasmic_1(S16,X14)
+                  & delivery_1(S16,X14)
+                  & is_of_2(S16,X14,G6) )
+              & ? [X15] :
+                  ( intranuclear_1(S16,X15)
+                  & delivery_1(S16,X15)
+                  & is_of_2(S16,X15,G6) )
+              & G7 = G6
+              & immune_1(S16,G8)
+              & responses_1(S16,G8)
+              & thereby_1(S16,E10)
+              & ? [S17] :
+                  ( used_4(S16,E11,unspecified,hsp70,S17)
+                  & modulate_3(S17,E9,hsp70,X3)
+                  & control_3(S17,E10,hsp70,G8) )
+              & as_2(S16,E11,X4) ) ) ) )).
+
+% ::id 90_nonfiction_GENIA-1999;99107758,1;NE
+% ::snt Regulation of IL-4 expression by the transcription factor JunB during T helper cell differentiation .
+fof(ex1414051959007,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( transcription_factor_1(s0,X1)
+      & il_4_expression_1(s0,X3)
+      & t_helper_cell_differentiation_1(s0,X2)
+      & is_regulation_during_2(s0,X4,X2)
+      & is_regulation_by_2(s0,X4,junb)
+      & is_regulation_of_2(s0,X4,X3)
+      & junb = X1
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X4) ) )).
+
+% ::id 91_nonfiction_GENIA-1999;99107758,2;NE
+% ::snt The molecular basis for restricted cytokine expression by T helper 1 -LRB- Th1 -RRB- and T helper 2 -LRB- Th2 -RRB- cells is unclear .
+fof(ex1414051959397,axiom,(
+    ? [X1,X2,G3,G4,A6,E5] :
+      ( restricted_1(s0,X1)
+      & is_cytokine_expression_by_2(s0,X1,G4)
+      & molecular_1(s0,X2)
+      & is_basis_for_2(s0,X2,X1)
+      & cells_1(s0,G4)
+      & t_helper_1 = th1
+      & t_helper_2 = th2
+      & is_of_2(s0,t_helper_1,G3)
+      & is_of_2(s0,t_helper_2,G3)
+      & G4 = G3
+      & unclear_1(s0,A6)
+      & is_3(s0,E5,X2,A6) ) )).
+
+% ::id 92_nonfiction_GENIA-1999;99107758,3;NE
+% ::snt Previous studies found that P1 , an element of the interleukin 4 -LRB- IL-4 -RRB- promoter that binds AP-1 , is important for Th2-restricted IL-4 expression .
+fof(ex1414051959811,axiom,(
+    ? [X1,E2,X3,X4,G5,A8,E6,E7] :
+      ( binds_3(s0,E2,X1,ap_1)
+      & interleukin_4_promoter_1(s0,X1)
+      & X1 = il_4
+      & is_element_of_2(s0,X3,X1)
+      & th2_restricted_1(s0,X4)
+      & il_4_expression_1(s0,X4)
+      & previous_1(s0,G5)
+      & studies_1(s0,G5)
+      & p1 = X3
+      & is_important_for_2(s0,A8,X4)
+      & is_before_2(s0,E7,e0)
+      & ? [S9] :
+          ( found_3(s0,E7,G5,S9)
+          & is_3(S9,E6,p1,A8) ) ) )).
+
+% ::id 93_nonfiction_GENIA-1999;99107758,4;NE
+% ::snt Here we show that JunB , but not the other Jun family members , was selectively induced in Th2 cells and not in Th1 cells during differentiation .
+fof(ex1414051960211,axiom,(
+    ? [X9,X1,X2,G3,G4,G5,S12,S10,E6,E7,E8] :
+      ( differentiation_1(s0,X1)
+      & differentiation_1(s0,X2)
+      & is_of_2(s0,junb,G5)
+      & ? [G11] :
+          ( jun_family_members_1(s0,G11)
+          & is_of_2(s0,G11,G5) )
+      & th2_cells_1(s0,G3)
+      & th1_cells_1(s0,G4)
+      & here_1(s0,S10)
+      & selectively_1(s0,S12)
+      & is_before_2(s0,E6,E8)
+      & is_before_2(s0,E7,E8)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & ? [S15] :
+              ( show_3(S14,E8,X9,S15)
+              & ? [S16] :
+                  ( fact_2(S15,S12,S16)
+                  & induced_3(S16,E6,unspecified,G5)
+                  & during_2(S16,E6,X1)
+                  & in_2(S16,E6,G3)
+                  & ? [X13] :
+                      ( is_of_2(S16,X13,G4)
+                      & induced_3(S16,E7,unspecified,G5)
+                      & during_2(S16,E7,X2)
+                      & in_2(S16,E7,X13) ) ) ) ) ) )).
+
+% ::id 94_nonfiction_GENIA-1999;99107758,5;NE
+% ::snt JunB has previously been considered to be a negative regulator of transcription .
+fof(ex1414051960596,axiom,(
+    ? [X1,X2,S5,E3,E4] :
+      ( transcription_1(s0,X1)
+      & negative_1(s0,X2)
+      & is_regulator_of_2(s0,X2,X1)
+      & previously_1(s0,S5)
+      & ? [S6] :
+          ( fact_2(s0,S5,S6)
+          & ? [S7] :
+              ( has_considered_4(S6,E4,unspecified,junb,S7)
+              & be_3(S7,E3,junb,X2) ) ) ) )).
+
+% ::id 95_nonfiction_GENIA-1999;99107758,6;NE
+% ::snt However , we show that JunB binds directly to the P1 site and synergizes with c-Maf to activate an IL-4 luciferase reporter gene .
+fof(ex1414051960992,axiom,(
+    ? [X1,X7,X2,S8,E3,E4,E5,E6,S9] :
+      ( p1_site_1(s0,X1)
+      & il_4_luciferase_reporter_gene_1(s0,X2)
+      & however_1(s0,S8)
+      & directly_1(s0,E3)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & activate_3(S10,E4,junb,X2) )
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & ? [S12] :
+              ( show_3(S11,E6,X7,S12)
+              & binds_2(S12,E3,junb)
+              & to_2(S12,E3,X1)
+              & synergizes_2(S12,E5,junb)
+              & with_2(S12,E5,c_maf)
+              & prp_2(S12,E5,S9) ) ) ) )).
+
+% ::id 96_nonfiction_GENIA-1999;99107758,7;NE
+% ::snt JunB -control of IL-4 expression is mediated by the phosphorylation of JunB at Thr102 and -104 by JNK MAP kinase .
+fof(ex1414051961385,axiom,(
+    ? [X1,X2,G3,X4,X5,E6] :
+      ( jnk__map__kinase_1(s0,X1)
+      & is_phosphorylation_by_2(s0,X2,X1)
+      & is_phosphorylation_at_2(s0,X2,G3)
+      & is_phosphorylation_of_2(s0,X2,junb)
+      & is_of_2(s0,thr102,G3)
+      & is_of_2(s0,constant___104,G3)
+      & il_4_expression_1(s0,X4)
+      & is_junb_control_of_2(s0,X5,X4)
+      & is_mediated_2(s0,E6,X5)
+      & by_2(s0,E6,X2) ) )).
+
+% ::id 97_nonfiction_GENIA-1999;99107758,8;NE
+% ::snt The synergy between c-Maf and JunB can be attributed to cooperative DNA binding , which is facilitated by JunB phosphorylation .
+fof(ex1414051961785,axiom,(
+    ? [X1,G2] :
+      ( is_synergy_between_2(s0,X1,G2)
+      & is_of_2(s0,c_maf,G2)
+      & is_of_2(s0,junb,G2)
+      & ? [X3,X4,E5,E6] :
+          ( junb_phosphorylation_1(s0,X3)
+          & cooperative_1(s0,X4)
+          & is_facilitated_2(s0,E5,X4)
+          & by_2(s0,E5,X3)
+          & dna__binding_1(s0,X4)
+          & attributed_3(s0,E6,unspecified,X1)
+          & to_2(s0,E6,X4) ) ) )).
+
+% ::id 98_nonfiction_GENIA-1999;99107758,9;NE
+% ::snt In transgenic mice , elevated JunB levels caused increased expression of several Th2 cytokines in developing Th1 cells .
+fof(ex1414051962173,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( increased_1(s0,X1)
+      & ? [G6] :
+          ( th2_cytokines_1(s0,G6)
+          & is_expression_in_2(s0,X1,G2)
+          & is_expression_of_2(s0,X1,G6) )
+      & elevated_junb_levels_1(s0,G4)
+      & transgenic_1(s0,G3)
+      & mice_1(s0,G3)
+      & developing_th1_cells_1(s0,G2)
+      & is_before_2(s0,E5,e0)
+      & caused_3(s0,E5,G4,X1)
+      & in__2(s0,E5,G3) ) )).
+
+% ::id 99_nonfiction_GENIA-1999;99107758,10;NE
+% ::snt JunB also upregulated IL-4 expression in response to immunization .
+fof(ex1414051962560,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( immunization_1(s0,X1)
+      & is_response_to_2(s0,X2,X1)
+      & is_il_4_expression_in_2(s0,X3,X2)
+      & is_before_2(s0,E4,e0)
+      & also_upregulated_3(s0,E4,junb,X3) ) )).
+
+% ::id 100_nonfiction_GENIA-1999;99107758,11;NE
+% ::snt Thus , the early increase of JunB protein in Th2 cells can provide the specificity for c-Maf in IL-4 expression during T cell development and directs thereby Th2 differentiation .
+fof(ex1414051962974,axiom,(
+    ? [X1,X2,X3,X4,G5,X6,E7] :
+      ( junb_protein_1(s0,X1)
+      & early_1(s0,X4)
+      & is_increase_in_2(s0,X4,G5)
+      & is_increase_of_2(s0,X4,X1)
+      & il_4_expression_1(s0,X2)
+      & is_specificity_in_2(s0,X3,X2)
+      & is_specificity_for_2(s0,X3,c_maf)
+      & th2_cells_1(s0,G5)
+      & th2_differentiation_1(s0,X6)
+      & thus_1(s0,E7)
+      & thereby_1(s0,E7)
+      & ? [X8,E9] :
+          ( t_cell_development_1(s0,X8)
+          & provide_3(s0,E9,X4,X3)
+          & during_2(s0,E9,X8) )
+      & directs_3(s0,E7,X4,X6) ) )).
+
+% ::id 101_nonfiction_GENIA-1999;99111186,1;NE
+% ::snt Immunohistochemical study of c-fos-positive lymphocytes infiltrated into human squamous cell carcinomas of the head and neck during radiation therapy and its clinical significance .
+fof(ex1414051963388,axiom,(
+    ? [X1,X2,G3,G4,G5,E6] :
+      ( head_1(s0,X1)
+      & neck_1(s0,X2)
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,X2,G3)
+      & G4 = G3
+      & ? [X7,X8,G9,G10,E11] :
+          ( radiation_therapy_1(s0,X7)
+          & immunohistochemical_1(s0,X8)
+          & is_study_of_2(s0,X8,G10)
+          & human_1(s0,G9)
+          & squamous_1(s0,G9)
+          & is_cell_carcinomas_of_2(s0,G9,G4)
+          & c_fos_positive_1(s0,G10)
+          & infiltrated_2(s0,E11,G10)
+          & into_2(s0,E11,G9)
+          & during_2(s0,E11,X7)
+          & lymphocytes_1(s0,G10)
+          & is_of_2(s0,X8,G5) )
+      & ? [X13,X12] :
+          ( choose2(X13,X2,X1)
+          & clinical_1(s0,X12)
+          & is_significance_of_2(s0,X12,X13)
+          & is_of_2(s0,X12,G5) )
+      & xxx_1(s0,E6)
+      & link_2(s0,E6,G5) ) )).
+
+% ::id 102_nonfiction_GENIA-1999;99111186,2;NE
+% ::snt C-fos has been reported to be one of the immediate early genes in signal transduction systems after many kinds of stresses , including ionizing radiation .
+fof(ex1414051963790,axiom,(
+    ? [G1,G2,X3,X4,G5,E6,E7,E8] :
+      ( signal_transduction_systems_1(s0,G1)
+      & immediate_1(s0,G2)
+      & early_1(s0,G2)
+      & is_genes_in_2(s0,G2,G1)
+      & is_one_of_2(s0,X4,G2)
+      & ionizing_1(s0,X3)
+      & radiation_1(s0,X3)
+      & stresses_1(s0,G5)
+      & ? [S10] :
+          ( has_reported_4(s0,E8,unspecified,c_fos,S10)
+          & ? [G9] :
+              ( including_3(S10,E6,G9,X3)
+              & is_kinds_of_2(S10,G9,G5)
+              & be_3(S10,E7,c_fos,X4)
+              & after_2(S10,E7,G9) ) ) ) )).
+
+% ::id 103_nonfiction_GENIA-1999;99111186,3;NE
+% ::snt Changes in c-fos expression induced by radiation therapy in tumor tissues have not yet been reported .
+fof(ex1414051964178,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( radiation_therapy_1(s0,X1)
+      & induced_2(s0,E5,X2)
+      & by_2(s0,E5,X1)
+      & in_2(s0,E5,G3)
+      & c_fos_expression_1(s0,X2)
+      & tumor_tissues_1(s0,G3)
+      & is_changes_in_2(s0,G4,X2)
+      & ? [E6] :
+          ( yet_1(s0,E6)
+          & have_reported_3(s0,E6,unspecified,G4) ) ) )).
+
+% ::id 104_nonfiction_GENIA-1999;99111186,4;NE
+% ::snt In this study , we have attempted to determine whether c-fos expression is induced by radiotherapy in human squamous cell carcinomas of the head and neck and to establish a possible correlation between c-fos expression and the therapeutic effects of radiation therapy .
+fof(ex1414051964605,axiom,(
+    ? [X1,X2,X3,X4,X13,G5,G6,G7,X8,G9,E10,E11,E12] :
+      ( study_1(s0,X4)
+      & head_1(s0,X1)
+      & neck_1(s0,X2)
+      & radiation_therapy_1(s0,X3)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & G6 = G5
+      & therapeutic_1(s0,G7)
+      & is_effects_of_2(s0,G7,X3)
+      & possible_1(s0,X8)
+      & is_correlation_between_2(s0,X8,G9)
+      & ? [X18] :
+          ( c_fos_expression_1(s0,X18)
+          & is_of_2(s0,X18,G9) )
+      & is_of_2(s0,G7,G9)
+      & ? [S19] :
+          ( have_attempted_3(s0,E12,X13,S19)
+          & ? [S20] :
+              ( determine_3(S19,E10,X13,S20)
+              & ? [X14,X15,G16,E17] :
+                  ( c_fos_expression_1(S20,X15)
+                  & radiotherapy_1(S20,X14)
+                  & human_1(S20,G16)
+                  & squamous_1(S20,G16)
+                  & is_cell_carcinomas_of_2(S20,G16,G6)
+                  & is_induced_2(S20,E17,X15)
+                  & by_2(S20,E17,X14)
+                  & in_2(S20,E17,G16) ) )
+          & establish_3(S19,E11,X13,X8) )
+      & in_2(s0,E12,X4) ) )).
+
+% ::id 105_nonfiction_GENIA-1999;99111186,5;NE
+% ::snt Twenty-seven patients with tumors of the oral cavity , oropharynx , and maxillary sinus were examined , all of which were confirmed as squamous cell carcinomas .
+fof(ex1414051965028,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,E9,E10] :
+      ( oral_1(s0,X1)
+      & cavity_1(s0,X1)
+      & oropharynx_1(s0,X2)
+      & maxillary_1(s0,X3)
+      & sinus_1(s0,X3)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & is_of_2(s0,X3,G4)
+      & G5 = G4
+      & squamous_1(s0,G6)
+      & cell_carcinomas_1(s0,G6)
+      & ? [X11] :
+          ( is_of_2(s0,X11,G7)
+          & confirmed_3(s0,E9,unspecified,X11)
+          & as_2(s0,E9,G6) )
+      & is_tumors_of__2(s0,G7,G5)
+      & twenty_seven_1(s0,G8)
+      & is_patients_with_2(s0,G8,G7)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & examined_3(s0,E10,unspecified,G8) ) )).
+
+% ::id 106_nonfiction_GENIA-1999;99111186,6;NE
+% ::snt After obtaining the patients ' informed consent , biopsies were performed before treatment and at doses of 4 , 10 , and 20 Gy of radiotherapy .
+fof(ex1414051965434,axiom,(
+    ? [G1,X2,X3,X4,G5,G6,G7,E8,E9,E10] :
+      ( patients_1(s0,G1)
+      & informed_1(s0,X2)
+      & is_consent_of_2(s0,X2,G1)
+      & treatment_1(s0,X3)
+      & radiotherapy_1(s0,X4)
+      & biopsies_1(s0,G7)
+      & predicate__4_10_and_20_1(s0,G5)
+      & is_gy_of_2(s0,G5,X4)
+      & is_doses_of_2(s0,G6,G5)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & obtaining_3(s0,E8,G7,X2)
+      & performed_3(s0,E9,unspecified,G7)
+      & before_2(s0,E9,X3)
+      & performed_3(s0,E10,unspecified,G7)
+      & at_2(s0,E10,G6) ) )).
+
+% ::id 107_nonfiction_GENIA-1999;99111186,6;NE
+% ::snt and the specimens were preserved in liquid nitrogen for further examination ,
+fof(ex1414051965843,axiom,(
+    ? [G1,X2,X3,E4] :
+      ( specimens_1(s0,G1)
+      & liquid_1(s0,X3)
+      & nitrogen_1(s0,X3)
+      & further_1(s0,X2)
+      & examination_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & preserved_3(s0,E4,unspecified,G1)
+      & in_2(s0,E4,X3)
+      & for_2(s0,E4,X2) ) )).
+
+% ::id 108_nonfiction_GENIA-1999;99111186,7;NE
+% ::snt Serial sectioning of 6 micrometer was performed using a cryostat ,
+fof(ex1414051966228,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( serial_1(s0,X2)
+      & is_sectioning_of_2(s0,X2,G3)
+      & cryostat_1(s0,X1)
+      & predicate__6_1(s0,G3)
+      & micrometer_1(s0,G3)
+      & is_before_2(s0,E5,e0)
+      & using_3(s0,E4,X2,X1)
+      & performed_3(s0,E5,unspecified,X2) ) )).
+
+% ::id 109_nonfiction_GENIA-1999;99111186,7;NE
+% ::snt and samples were immunohistochemically stained using the streptoavidin-biotin peroxidase method and a monoclonal antibody against c-fos .
+fof(ex1414051966616,axiom,(
+    ? [X1,G2,G3,S6,E4,E5] :
+      ( streptoavidin_biotin_1(s0,X1)
+      & peroxidase_method_1(s0,X1)
+      & samples_1(s0,G3)
+      & is_of_2(s0,X1,G2)
+      & ? [X7] :
+          ( monoclonal_1(s0,X7)
+          & is_antibody_against_2(s0,X7,c_fos)
+          & is_of_2(s0,X7,G2) )
+      & immunohistochemically_1(s0,S6)
+      & is_before_2(s0,E5,e0)
+      & ? [S8] :
+          ( fact_2(s0,S6,S8)
+          & using_3(S8,E4,G3,G2)
+          & stained_3(S8,E5,unspecified,G3) ) ) )).
+
+% ::id 110_nonfiction_GENIA-1999;99111186,8;NE
+% ::snt Three of the 27 patients with squamous cell carcinoma showed slight expression of c-fos in their tumor cells before and/or at 4 or 10 Gy of radiotherapy .
+fof(ex1414051967015,axiom,(
+    ? [G1,X2,X3,X4,G11,G5,G6,G7,G8,E9,E10] :
+      ( predicate__27_1(s0,G1)
+      & patients_1(s0,G1)
+      & slight_1(s0,X4)
+      & is_expression_of_2(s0,X4,c_fos)
+      & radiotherapy_1(s0,X2)
+      & radiotherapy_1(s0,X3)
+      & three_1(s0,G8)
+      & is_of_2(s0,G8,G1)
+      & is_with_2(s0,G8,squamous_cell_carcinoma)
+      & choose2(G11,G8,G1)
+      & is_tumor_cells_of_2(s0,G7,G11)
+      & predicate__4_or_10_1(s0,G5)
+      & is_gy_of_2(s0,G5,X2)
+      & predicate__4_or_10_1(s0,G6)
+      & is_gy_of_2(s0,G6,X3)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & showed_3(s0,E9,G8,X4)
+      & in_2(s0,E9,G7)
+      & before_2(s0,E9,G5)
+      & showed_3(s0,E10,G8,X4)
+      & in_2(s0,E10,G7)
+      & at_2(s0,E10,G6) ) )).
+
+% ::id 111_nonfiction_GENIA-1999;99111186,9;NE
+% ::snt The tumors showed high radiosensitivity .
+fof(ex1414051967398,axiom,(
+    ? [G1,X2,E3] :
+      ( tumors_1(s0,G1)
+      & high_1(s0,X2)
+      & radiosensitivity_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & showed_3(s0,E3,G1,X2) ) )).
+
+% ::id 112_nonfiction_GENIA-1999;99111186,10;NE
+% ::snt Concerning tumor-infiltrating lymphocytes , the rate of moderate or remarkable grades of c-fos-positive lymphocytes before radiotherapy and at radiation doses of 4 , 10 , and 20 Gy was 8.0 , 29.2 , 4.8 , and 0 % , respectively .
+ERROR: Line 21 Char 26 Token "is_of_2" continuing with "s0, G17, G14)) &
+"
+
+% ::id 113_nonfiction_GENIA-1999;99111186,11;NE
+% ::snt The relationship between the immunohistochemical findings and the antitumor effect at a radiation dose of 20 Gy was examined on the corresponding H & E -stained sections .
+fof(ex1414051968230,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,E9] :
+      ( is_radiation_dose_of_2(s0,X1,G5)
+      & is_antitumor_effect_at_2(s0,X2,X1)
+      & is_relationship_between_2(s0,X3,G6)
+      & immunohistochemical_1(s0,G4)
+      & findings_1(s0,G4)
+      & predicate__20_1(s0,G5)
+      & gy_1(s0,G5)
+      & is_of_2(s0,G4,G6)
+      & is_of_2(s0,X2,G6)
+      & is_of_2(s0,h_,G7)
+      & is_of_2(s0,e,G7)
+      & corresponding_1(s0,G8)
+      & is_stained_of_2(s0,G8,G7)
+      & sections_1(s0,G8)
+      & is_before_2(s0,E9,e0)
+      & examined_3(s0,E9,unspecified,X3)
+      & on_2(s0,E9,G8) ) )).
+
+% ::id 114_nonfiction_GENIA-1999;99111186,12;NE
+% ::snt In patients whose infiltration of c-fos-positive lymphocytes into tumor tissues were moderate or remarkable at 4 Gy of radiotherapy , the tumors responded significantly well to radiation therapy -LRB- P < 0.025 , chi2 test -RRB- ,
+fof(ex1414051968646,axiom,(
+    ? [G1,X2,X3,X4,G5,G6,G7,G8,A11,E9,E10] :
+      ( tumors_1(s0,G1)
+      & is_infiltration_of_2(s0,X3,G6)
+      & is_infiltration_into_2(s0,X3,G5)
+      & is_infiltration_of__2(s0,X3,G8)
+      & radiotherapy_1(s0,X2)
+      & radiation_therapy_1(s0,X4)
+      & c_fos_positive_1(s0,G6)
+      & lymphocytes_1(s0,G6)
+      & tumor_tissues_1(s0,G5)
+      & predicate__4_1(s0,G7)
+      & is_gy_of_2(s0,G7,X2)
+      & were_3(s0,E9,X3,A11)
+      & at_2(s0,E9,G7)
+      & patients_1(s0,G8)
+      & moderate_1(s0,A11)
+      & remarkable_1(s0,A11)
+      & is_before_2(s0,E9,e0)
+      & significantly_well_1(s0,E10)
+      & is_before_2(s0,E10,e0)
+      & responded_2(s0,E10,G1)
+      & in_2(s0,E10,G8)
+      & to_2(s0,E10,X4) ) )).
+
+% ::id 115_nonfiction_GENIA-1999;99111186,12;NE
+% ::snt and the patients took a significantly favorable clinical course -LRB- P < 0.05 , chi2 test -RRB- .
+fof(ex1414051969030,axiom,(
+    ? [G1,X2,E3] :
+      ( patients_1(s0,G1)
+      & significantly_favorable_1(s0,X2)
+      & clinical_1(s0,X2)
+      & course_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & took_3(s0,E3,G1,X2) ) )).
+
+% ::id 116_nonfiction_GENIA-1999;99111186,13;NE
+% ::snt In a sample from one of the patients , c-fos-positive lymphocytes were identified as CD4 positive and CD8 negative .
+fof(ex1414051969427,axiom,(
+    ? [G1,X2,X3,G4,G5,E6] :
+      ( patients_1(s0,G1)
+      & is_one_of_2(s0,X2,G1)
+      & is_sample_from_2(s0,X3,X2)
+      & c_fos_positive_1(s0,G5)
+      & lymphocytes_1(s0,G5)
+      & is_of_2(s0,cd4_positive,G4)
+      & is_of_2(s0,cd8_negative,G4)
+      & is_before_2(s0,E6,e0)
+      & identified_3(s0,E6,unspecified,G5)
+      & in_2(s0,E6,X3)
+      & as_2(s0,E6,G4) ) )).
+
+% ::id 117_nonfiction_GENIA-1999;99111186,14;NE
+% ::snt Therefore , the high radiosensitivity of squamous cell carcinomas in our samples could be explained by an overexpression of c-fos in the tumor-infiltrating lymphocytes induced by small doses of radiation therapy ,
+fof(ex1414051969839,axiom,(
+    ? [X1,X5,G2,G3,G4] :
+      ( high_1(s0,X1)
+      & is_radiosensitivity_of_2(s0,X1,G3)
+      & is_samples_of_2(s0,G2,X5)
+      & squamous_1(s0,G3)
+      & is_cell_carcinomas_in_2(s0,G3,G2)
+      & tumor_infiltrating_1(s0,G4)
+      & lymphocytes_1(s0,G4)
+      & ? [X6,X7,G8,S11,E9,E10] :
+          ( radiation_therapy_1(s0,X6)
+          & induced_2(s0,E9,X7)
+          & by_2(s0,E9,G8)
+          & is_overexpression_in_2(s0,X7,G4)
+          & is_overexpression_of__2(s0,X7,c_fos)
+          & small_1(s0,G8)
+          & is_doses_of_2(s0,G8,X6)
+          & therefore_1(s0,S11)
+          & ? [S12] :
+              ( fact_2(s0,S11,S12)
+              & explained_3(S12,E10,X7,X1) ) ) ) )).
+
+% ::id 118_nonfiction_GENIA-1999;99111186,14;NE
+% ::snt and these activated lymphocytes exerted a cytotoxic effect against the cancer cells .
+fof(ex1414051970227,axiom,(
+    ? [G1,G2,X3,E4] :
+      ( activated_1(s0,G2)
+      & lymphocytes_1(s0,G2)
+      & cancer_cells_1(s0,G1)
+      & cytotoxic_1(s0,X3)
+      & effect_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & exerted_3(s0,E4,G2,X3)
+      & against_2(s0,E4,G1) ) )).
+
+% ::id 119_nonfiction_GENIA-1999;99111421,1;NE
+% ::snt CD2 signalling induces phosphorylation of CREB in primary lymphocytes .
+fof(ex1414051970610,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( cd2_signalling_1(s0,X2)
+      & is_phosphorylation_of_2(s0,X1,creb_)
+      & primary_1(s0,G3)
+      & lymphocytes_1(s0,G3)
+      & induces_3(s0,E4,X2,X1)
+      & in_2(s0,E4,G3) ) )).
+
+% ::id 120_nonfiction_GENIA-1999;99111421,2;NE
+% ::snt Promoter sequences responsive to cyclic AMP -LRB- cAMP -RRB- are found in a number of cellular genes , and bind transcription factors of the cAMP response element binding protein -LRB- CREB -RRB- / activating transcription factor-1 -LRB- ATF-1 -RRB- family .
+fof(ex1414051971022,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,G9,G10,E11,E12] :
+      ( camp__response_element_binding_protein_1(s0,X4)
+      & activating_1(s0,X3)
+      & transcription_factor_1_1(s0,X3)
+      & atf_1_1(s0,X1)
+      & family_1(s0,X2)
+      & X4 = creb_
+      & X1 = X1
+      & X2 = X2
+      & X4 = X3
+      & cyclic_1(s0,X6)
+      & amp__1(s0,X6)
+      & camp__1(s0,X5)
+      & is_number_of_2(s0,X7,G8)
+      & X6 = X5
+      & is_responsive_to_2(s0,G10,X6)
+      & promoter_sequences_1(s0,G10)
+      & cellular_1(s0,G8)
+      & genes_1(s0,G8)
+      & is_transcription_factors_of_2(s0,G9,X4)
+      & are_found_2(s0,E11,G10)
+      & in_2(s0,E11,X7)
+      & bind_3(s0,E12,G10,G9) ) )).
+
+% ::id 121_nonfiction_GENIA-1999;99111421,3;NE
+% ::snt We have used a human T-lymphotropic virus type 1 -LRB- HTLV-1 -RRB- model of cAMP response element -LRB- CRE -RRB- transcription to investigate the influence of lymphocyte activation on transcription from homologous regions in the viral promoter .
+fof(ex1414051971427,axiom,(
+    ? [X1,X2,X3,X4,X12,G5,X6,X7,X8,X9,E10,E11] :
+      ( lymphocyte_activation_1(s0,X3)
+      & viral_1(s0,X1)
+      & promoter_1(s0,X1)
+      & is_transcription_from_2(s0,X2,G5)
+      & is_influence_on_2(s0,X4,X2)
+      & is_influence_of_2(s0,X4,X3)
+      & homologous_1(s0,G5)
+      & is_regions_in_2(s0,G5,X1)
+      & camp__response_element_transcription_1(s0,X7)
+      & cre__1(s0,X6)
+      & human_1(s0,X9)
+      & t_lymphotropic_1(s0,X9)
+      & is_virus_type_1_model_of_2(s0,X9,X7)
+      & htlv_1_1(s0,X8)
+      & X7 = X6
+      & X9 = X8
+      & ? [S13] :
+          ( have_used_4(s0,E11,X12,X9,S13)
+          & investigate_3(S13,E10,X9,X4) ) ) )).
+
+% ::id 122_nonfiction_GENIA-1999;99111421,4;NE
+% ::snt We previously demonstrated increased HTLV-1 transcription following CD2 but not CD3 receptor cross-linking .
+fof(ex1414051971817,axiom,(
+    ? [X6,X1,X2,G3,S7,E4,E5] :
+      ( receptor_cross_linking_1(s0,X1)
+      & following_3(s0,E4,X2,X1)
+      & increased_htlv_1_transcription_1(s0,X2)
+      & is_of_2(s0,cd2,G3)
+      & is_of_2(s0,cd3,G3)
+      & X1 = G3
+      & previously_1(s0,S7)
+      & is_before_2(s0,E5,e0)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & demonstrated_4(S8,E5,X6,unspecified,X2) ) ) )).
+
+% ::id 123_nonfiction_GENIA-1999;99111421,5;NE
+% ::snt We hypothesized that this increased viral transcription was mediated , in part , through the phosphorylation of CREB .
+fof(ex1414051972209,axiom,(
+    ? [X1,X2,X6,X3,E4,E5] :
+      ( increased_1(s0,X2)
+      & viral_1(s0,X2)
+      & transcription_1(s0,X2)
+      & is_phosphorylation_of_2(s0,X1,creb_)
+      & part_1(s0,X3)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S7] :
+          ( hypothesized_3(s0,E5,X6,S7)
+          & was_mediated_2(S7,E4,X2)
+          & in_2(S7,E4,X3)
+          & through_2(S7,E4,X1) ) ) )).
+
+% ::id 124_nonfiction_GENIA-1999;99111421,6;NE
+% ::snt Therefore , we investigated CD2 and CD3 receptor-mediated signalling in primary human peripheral blood mononuclear cells -LRB- PBMC -RRB- .
+fof(ex1414051972600,axiom,(
+    ? [X5,X1,G2,G3,E4] :
+      ( receptor_mediated_1(s0,X1)
+      & signalling_1(s0,X1)
+      & is_of_2(s0,cd2,G2)
+      & is_of_2(s0,cd3,G2)
+      & X1 = G2
+      & primary_1(s0,G3)
+      & human_1(s0,G3)
+      & peripheral_blood_mononuclear_cells_1(s0,G3)
+      & G3 = pbmc_
+      & therefore_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & investigated_3(s0,E4,X5,X1)
+      & in_2(s0,E4,G3) ) )).
+
+% ::id 125_nonfiction_GENIA-1999;99111421,7;NE
+% ::snt CD2 , but not CD3 , cross-linking increased cAMP detected by competitive enzyme-linked immunosorbent assay -LRB- ELISA -RRB- approximately fourfold .
+fof(ex1414051973002,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( cross_linking_1(s0,X2)
+      & competitive_1(s0,X1)
+      & enzyme_linked_1(s0,X1)
+      & immunosorbent_assay_1(s0,X1)
+      & detected_3(s0,E4,X1,camp_)
+      & is_of_2(s0,cd2,G3)
+      & is_of_2(s0,cd3,G3)
+      & X2 = G3
+      & X1 = elisa_
+      & fourfold_1(s0,E5)
+      & approximately_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & increased_3(s0,E5,X2,camp_) ) )).
+
+% ::id 126_nonfiction_GENIA-1999;99111421,8;NE
+% ::snt CD2 cross-linking concurrently increased phosphorylation of CREB detected by immunoblot assay eightfold .
+fof(ex1414051973397,axiom,(
+    ? [X1,X2,X3,S6,E4,E5] :
+      ( cd2_cross_linking_1(s0,X3)
+      & immunoblot_assay_1(s0,X1)
+      & detected_3(s0,E4,X1,X2)
+      & is_phosphorylation_of_2(s0,X2,creb_)
+      & concurrently_1(s0,S6)
+      & is_before_2(s0,E5,e0)
+      & ? [S7] :
+          ( fact_2(s0,S6,S7)
+          & eightfold_1(S7,E5)
+          & increased_3(S7,E5,X3,X2) ) ) )).
+
+% ::id 127_nonfiction_GENIA-1999;99111421,9;NE
+% ::snt Consistent with post-translational regulation , no change in total level of CREB protein was observed .
+fof(ex1414051973787,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( creb__protein_1(s0,X1)
+      & total_1(s0,X2)
+      & is_level_of_2(s0,X2,X1)
+      & is_change_in_2(s0,X4,X2)
+      & post_translational_1(s0,X3)
+      & regulation_1(s0,X3)
+      & is_before_2(s0,E5,e0)
+      & is_consistent_with_2(s0,X4,X3)
+      & observed_3(s0,E5,unspecified,X4) ) )).
+
+% ::id 128_nonfiction_GENIA-1999;99111421,10;NE
+% ::snt Phosphorylation of CREB occurred through a herbimycin A and Rp-cAMP -sensitive pathway , suggesting phosphorylation required antecedent activation of both protein tyrosine kinases -LRB- PTK -RRB- and protein kinase A -LRB- PKA -RRB- .
+fof(ex1414051974213,axiom,(
+    ? [X1,X2,X3,X4,G5,E6,E7,E8] :
+      ( is_phosphorylation_of_2(s0,X4,creb_)
+      & is_sensitive_of_2(s0,X3,G5)
+      & pathway_1(s0,X3)
+      & phosphorylation_1(s0,X2)
+      & antecedent_1(s0,X1)
+      & ? [G9,G10] :
+          ( ? [G11,G12] :
+              ( protein_tyrosine_kinases_1(s0,G12)
+              & ptk__1(s0,G11)
+              & G12 = G11
+              & is_of_2(s0,G12,G10) )
+          & protein_kinase_a = pka_
+          & is_of_2(s0,protein_kinase_a,G10)
+          & G9 = G10
+          & is_activation_of_2(s0,X1,G9) )
+      & is_of_2(s0,herbimycin_a,G5)
+      & is_of_2(s0,rp_camp_,G5)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E8,e0)
+      & ? [S13] :
+          ( suggesting_3(s0,E7,X4,S13)
+          & required_3(S13,E6,X2,X1) )
+      & occurred_2(s0,E8,X4)
+      & through_2(s0,E8,X3) ) )).
+
+% ::id 129_nonfiction_GENIA-1999;99111421,11;NE
+% ::snt Both CD2 and CD3 cross-linking increased binding of nuclear proteins to a radiolabelled CRE oligonucleotide probe in electrophoretic mobility shift assays suggesting that lymphocyte activation enhances binding independently of phosphorylation of CREB at serine 133 .
+fof(ex1414051974621,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,G9,E10,E11,E12] :
+      ( cross_linking_1(s0,X6)
+      & radiolabelled_1(s0,X1)
+      & cre__oligonucleotide_probe_1(s0,X1)
+      & is_binding_in_2(s0,X5,G8)
+      & is_binding_to_2(s0,X5,X1)
+      & is_binding_of_2(s0,X5,G9)
+      & lymphocyte_activation_1(s0,X4)
+      & binding_1(s0,X3)
+      & is_phosphorylation_at_2(s0,X2,serine_133)
+      & is_phosphorylation_of_2(s0,X2,creb_)
+      & is_of_2(s0,cd2,G7)
+      & is_of_2(s0,cd3,G7)
+      & X6 = G7
+      & nuclear_1(s0,G9)
+      & proteins_1(s0,G9)
+      & electrophoretic_1(s0,G8)
+      & mobility_shift_assays_1(s0,G8)
+      & is_independently_of_2(s0,E10,X2)
+      & is_before_2(s0,E12,e0)
+      & ? [S13] :
+          ( suggesting_3(s0,E11,X5,S13)
+          & enhances_3(S13,E10,X4,X3) )
+      & increased_3(s0,E12,X6,X5) ) )).
+
+% ::id 130_nonfiction_GENIA-1999;99111421,12;NE
+% ::snt These data indicate specific modulation of the CREB/ATF-1 family of transcription factors by the CD2 signalling pathway and suggest CD2 receptor modulation of CRE-mediated transcription following ligand engagement -LRB- e.g. cell-to-cell contact -RRB- .
+fof(ex1414051975027,axiom,(
+    ? [X1,X2,G3,G4,X5,X6,X7,X8,X9,E10,E11,E12] :
+      ( is_creb__slash__atf_1_family_of_2(s0,X2,G3)
+      & cd2_signalling_pathway_1(s0,X1)
+      & data_1(s0,G4)
+      & transcription_factors_1(s0,G3)
+      & specific_1(s0,X5)
+      & is_modulation_by_2(s0,X5,X1)
+      & is_modulation_of_2(s0,X5,X2)
+      & cre_mediated_1(s0,X8)
+      & transcription_1(s0,X8)
+      & ligand_engagement_1(s0,X6)
+      & cell_to_cell_1(s0,X7)
+      & contact_1(s0,X7)
+      & following_3(s0,E11,X9,X6)
+      & is_cd2_receptor_modulation_of_2(s0,X9,X8)
+      & is_cd2_receptor_modulation_e_g_2(s0,X9,X7)
+      & indicate_3(s0,E10,G4,X5)
+      & suggest_3(s0,E12,G4,X9) ) )).
+
+% ::id 131_nonfiction_GENIA-1999;99113717,1;NE
+% ::snt Protective effects of notch-1 on TCR-induced apoptosis .
+fof(ex1414051975411,axiom,(
+    ? [X1,G2,E3] :
+      ( tcr_induced_1(s0,X1)
+      & apoptosis_1(s0,X1)
+      & protective_1(s0,G2)
+      & is_effects_on_2(s0,G2,X1)
+      & is_effects_of_2(s0,G2,notch_1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,G2) ) )).
+
+% ::id 132_nonfiction_GENIA-1999;99113717,2;NE
+% ::snt The Notch receptor protein was originally identified in Drosophila and is known to mediate cell to cell communication and influence cell fate decisions .
+fof(ex1414051975808,axiom,(
+    ? [X1,X2,G3,E4,E5,E6,E7] :
+      ( notch_receptor_protein_1(s0,X1)
+      & to_1(s0,X2)
+      & cell_cell_1(s0,X2)
+      & communication_1(s0,X2)
+      & cell_fate_decisions_1(s0,G3)
+      & originally_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & identified_3(s0,E4,unspecified,X1)
+      & in_2(s0,E4,drosophila)
+      & ? [S8] :
+          ( is_known_3(s0,E7,X1,S8)
+          & mediate_3(S8,E5,X1,X2)
+          & influence_3(S8,E6,X1,G3) ) ) )).
+
+% ::id 133_nonfiction_GENIA-1999;99113717,3;NE
+% ::snt Members of this family have been isolated from invertebrates as well as vertebrates .
+fof(ex1414051976198,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( family_1(s0,X1)
+      & is_members_of_2(s0,G4,X1)
+      & invertebrates_1(s0,G3)
+      & vertebrates_1(s0,G2)
+      & is_as_well_as_2(s0,E5,G2)
+      & have_isolated_3(s0,E5,unspecified,G4)
+      & from_2(s0,E5,G3) ) )).
+
+% ::id 134_nonfiction_GENIA-1999;99113717,4;NE
+% ::snt We isolated mouse Notch-1 in a yeast two-hybrid screen with Nur77 , which is a protein that has been shown previously to be required for apoptosis in T cell lines .
+fof(ex1414051976620,axiom,(
+    ? [X9,X1,X2,X3,G4,S10,E5,E6,E7,E8] :
+      ( yeast_two_hybrid_screen_1(s0,X3)
+      & is_apoptosis_in_2(s0,X1,G4)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & ? [S12] :
+              ( has_shown_4(S11,E6,unspecified,X2,S12)
+              & required_3(S12,E5,unspecified,X2)
+              & for_2(S12,E5,X1) ) )
+      & protein_1(s0,X2)
+      & is_3(s0,E7,nur77,X2)
+      & t_cell_lines_1(s0,G4)
+      & previously_1(s0,S10)
+      & is_before_2(s0,E8,e0)
+      & isolated_3(s0,E8,X9,mouse_notch_1)
+      & in__2(s0,E8,X3)
+      & with_2(s0,E8,nur77) ) )).
+
+% ::id 135_nonfiction_GENIA-1999;99113717,5;NE
+% ::snt The data presented below indicate that Notch-1 expression provides significant protection to T cell lines from TCR-mediated apoptosis .
+fof(ex1414051977013,axiom,(
+    ? [G1,E2,X3,X4,X5,G6,E7,E8] :
+      ( presented_3(s0,E2,unspecified,G1)
+      & data_1(s0,G1)
+      & notch_1_expression_1(s0,X5)
+      & significant_1(s0,X4)
+      & protection_1(s0,X4)
+      & tcr_mediated_1(s0,X3)
+      & apoptosis_1(s0,X3)
+      & t_cell_lines_1(s0,G6)
+      & ? [S9] :
+          ( indicate_3(s0,E8,G1,S9)
+          & provides_3(S9,E7,X5,X4)
+          & to_2(S9,E7,G6)
+          & from_2(S9,E7,X3) ) ) )).
+
+% ::id 136_nonfiction_GENIA-1999;99113717,6;NE
+% ::snt These data demonstrate a new antiapoptotic role for Notch-1 , providing evidence that , in addition to regulating cell fate decisions , Notch-1 can play a critical role in controlling levels of cell death in T cells .
+fof(ex1414051977427,axiom,(
+    ? [G1,X2,X3,E4,E5] :
+      ( data_1(s0,G1)
+      & new_1(s0,X3)
+      & antiapoptotic_1(s0,X3)
+      & is_role_for_2(s0,X3,notch_1)
+      & ? [S17] :
+          ( evidence_2(s0,X2,S17)
+          & ? [X6,X7,X8,G9,G10,G11,E12,E13,E14,S16,S15] :
+              ( is_addition_to_2(S17,X8,S15)
+              & cell_death_1(S17,X6)
+              & critical_1(S17,X7)
+              & is_role_in_2(S17,X7,S16)
+              & cell_fate_decisions_1(S17,G9)
+              & t_cells_1(S17,G10)
+              & is_levels_in_2(S17,G11,G10)
+              & is_levels_of_2(S17,G11,X6)
+              & ? [S18] :
+                  ( fact_2(S17,S15,S18)
+                  & regulating_3(S18,E12,unspecified,G9) )
+              & ? [S19] :
+                  ( fact_2(S17,S16,S19)
+                  & controlling_3(S19,E13,unspecified,G11) )
+              & play_3(S17,E14,notch_1,X7)
+              & in__2(S17,E14,X8) ) )
+      & providing_3(s0,E4,X3,X2)
+      & demonstrate_3(s0,E5,G1,X3) ) )).
+
+% ::id 137_nonfiction_GENIA-1999;99113747,1;NE
+% ::snt T cell priming enhances IL-4 gene expression by increasing nuclear factor of activated T cells .
+fof(ex1414051977820,axiom,(
+    ? [X1,X2,X3,G4,E5,E6] :
+      ( t_cell_priming_1(s0,X3)
+      & il_4_gene_expression_1(s0,X2)
+      & nuclear_1(s0,X1)
+      & is_factor_of_2(s0,X1,G4)
+      & activated_t_cells_1(s0,G4)
+      & increasing_3(s0,E5,X2,X1)
+      & enhances_3(s0,E6,X3,X2) ) )).
+
+% ::id 138_nonfiction_GENIA-1999;99113747,2;NE
+% ::snt The repetitive activation of T cells -LRB- priming -RRB- enhances the expression of many cytokines , such as IL-4 , but not others , such as IL-2 .
+fof(ex1414051978214,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( repetitive_1(s0,X3)
+      & is_activation_of_2(s0,X3,G4)
+      & priming_1(s0,X1)
+      & ? [G6] :
+          ( ? [G7] :
+              ( is_such_as_2(s0,G7,il_2)
+              & is_cytokines_but_2(s0,G6,G7)
+              & is_cytokines_such_as__2(s0,G6,il_4) )
+          & is_expression_of_2(s0,X2,G6) )
+      & t_cells_1(s0,G4)
+      & X3 = X1
+      & enhances_3(s0,E5,X3,X2) ) )).
+
+% ::id 139_nonfiction_GENIA-1999;99113747,3;NE
+% ::snt Molecular mechanisms underlying selective expression of cytokines by T cells remain poorly understood .
+fof(ex1414051978601,axiom,(
+    ? [X1,G2,G3,G4,A7,E5,E6] :
+      ( selective_1(s0,X1)
+      & is_expression_by_2(s0,X1,G2)
+      & is_expression_of_2(s0,X1,G3)
+      & cytokines_1(s0,G3)
+      & t_cells_1(s0,G2)
+      & molecular_1(s0,G4)
+      & underlying_3(s0,E5,G4,X1)
+      & mechanisms_1(s0,G4)
+      & poorly_understood_1(s0,A7)
+      & remain_3(s0,E6,G4,A7) ) )).
+
+% ::id 140_nonfiction_GENIA-1999;99113747,4;NE
+% ::snt Here we show that priming of CD4 T cells selectively enhances IL-4 expression relative to IL-2 expression by a transcriptional mechanism involving nuclear factor of activated T cells -LRB- NFAT -RRB- proteins .
+fof(ex1414051979011,axiom,(
+    ? [X12,X1,X2,X3,X4,X5,G6,G7,G8,S14,S13,E9,E10,E11] :
+      ( is_priming_of_2(s0,X5,G6)
+      & il_2_expression_1(s0,X1)
+      & is_relative_to_2(s0,X4,X1)
+      & il_4_expression_1(s0,X4)
+      & nfat__1(s0,X2)
+      & transcriptional_1(s0,X3)
+      & involving_3(s0,E9,X3,G8)
+      & mechanism_1(s0,X3)
+      & cd4_t_cells_1(s0,G6)
+      & activated_t_cells_1(s0,G7)
+      & nuclear_1(s0,G8)
+      & is_factor_of_2(s0,G8,G7)
+      & is_proteins_of_2(s0,G8,G7)
+      & G8 = X2
+      & here_1(s0,S13)
+      & selectively_1(s0,S14)
+      & ? [S15] :
+          ( fact_2(s0,S13,S15)
+          & ? [S16] :
+              ( show_3(S15,E11,X12,S16)
+              & ? [S17] :
+                  ( fact_2(S16,S14,S17)
+                  & enhances_3(S17,E10,X5,X4)
+                  & by_2(S17,E10,X3) ) ) ) ) )).
+
+% ::id 141_nonfiction_GENIA-1999;99113747,5;NE
+% ::snt As detected by in vivo footprinting , priming markedly increases the activation-dependent engagement of the P0 and P1 NFAT -binding elements of the IL-4 promoter .
+fof(ex1414051979417,axiom,(
+    ? [X1,X2,X3,G4,G5,X6,X7,E8,E9] :
+      ( nfat__1(s0,X1)
+      & il_4_promoter_1(s0,X2)
+      & activation_dependent_1(s0,X3)
+      & is_engagement_of_2(s0,X3,G5)
+      & is_of_2(s0,p0,G4)
+      & is_of_2(s0,p1,G4)
+      & X1 = G4
+      & is_binding_of_2(s0,G5,X1)
+      & is_elements_of_2(s0,G5,X2)
+      & priming_1(s0,X7)
+      & in_vivo_1(s0,X6)
+      & footprinting_1(s0,X6)
+      & markedly_1(s0,E9)
+      & detected_3(s0,E8,X6,X7)
+      & increases_3(s0,E9,X7,X3) ) )).
+
+% ::id 142_nonfiction_GENIA-1999;99113747,6;NE
+% ::snt Moreover , each proximal P element is essential for optimal IL-4 promoter activity .
+fof(ex1414051979802,axiom,(
+    ? [X1,A4,E2] :
+      ( optimal_il_4_promoter_activity_1(s0,X1)
+      & is_essential_for_2(s0,A4,X1)
+      & moreover_1(s0,E2)
+      & ? [X3] :
+          ( proximal_p__element_1(s0,X3)
+          & is_3(s0,E2,X3,A4) ) ) )).
+
+% ::id 143_nonfiction_GENIA-1999;99113747,7;NE
+% ::snt Activated primed CD4 T cells contain more NFAT1 and support greater NFAT-directed transcription than unprimed CD4 T cells , while activator protein 1 binding and activator protein 1-mediated transcription by both cell types is similar .
+fof(ex1414051980218,axiom,(
+    ? [X1,G2,G3,G4,A14,A12,E5,E6,E7] :
+      ( nfat_directed_1(s0,X1)
+      & transcription_1(s0,X1)
+      & activated_primed_1(s0,G4)
+      & cd4_t_cells_1(s0,G4)
+      & ? [X8] :
+          ( ? [G9] :
+              ( cell_types_1(s0,G9)
+              & is_activator_protein_1_binding_by_2(s0,X8,G9) )
+          & is_of_2(s0,X8,G2) )
+      & ? [X10] :
+          ( ? [G11] :
+              ( cell_types_1(s0,G11)
+              & is_activator_protein_1_mediated_transcription_by_2(s0,X10,G11) )
+          & is_of_2(s0,X10,G2) )
+      & unprimed_cd4_t_cells_1(s0,G3)
+      & similar_1(s0,A12)
+      & is_greater_of_2(s0,A14,X1)
+      & is_3(s0,E5,G2,A12)
+      & ? [X13] :
+          ( is_nfat1_than_2(s0,X13,G3)
+          & contain_3(s0,E6,G4,X13) )
+      & support_3(s0,E7,G4,A14) ) )).
+
+% ::id 144_nonfiction_GENIA-1999;99113747,8;NE
+% ::snt Increased expression of wild-type NFAT1 substantially increases IL-4 promoter activity in unprimed CD4 T cells , suggesting NFAT1 may be limiting for IL-4 gene expression in this cell type .
+fof(ex1414051980623,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,S9,E7,E8] :
+      ( cell_type_1(s0,X1)
+      & wild_type_1(s0,X2)
+      & nfat1_1(s0,X2)
+      & increased_1(s0,X5)
+      & is_expression_of_2(s0,X5,X2)
+      & il_4_promoter_activity_1(s0,X4)
+      & nfat1_1(s0,X3)
+      & unprimed_cd4_t_cells_1(s0,G6)
+      & substantially_1(s0,S9)
+      & ? [S12] :
+          ( fact_2(s0,S9,S12)
+          & ? [S13] :
+              ( suggesting_3(S12,E7,X4,S13)
+              & ? [X10,E11] :
+                  ( is_il_4_gene_expression_in_2(S13,X10,X1)
+                  & be_limiting_2(S13,E11,X3)
+                  & for_2(S13,E11,X10) ) )
+          & increases_3(S12,E8,X5,X4)
+          & in_2(S12,E8,G6) ) ) )).
+
+% ::id 145_nonfiction_GENIA-1999;99113747,9;NE
+% ::snt Furthermore , a truncated form of NFAT1 acts as a dominant-negative , reducing IL-4 promoter activity in primed CD4 T cells and confirming the importance of endogenous NFAT to increased IL-4 gene expression by effector T cells .
+fof(ex1414051981034,axiom,(
+    ? [X1,X2,X3,G4,X5,X6,X7,X8,G9,S13,E10,E11,E12] :
+      ( endogenous_1(s0,X2)
+      & nfat__1(s0,X2)
+      & is_increased_il_4_gene_expression_by_2(s0,X1,G4)
+      & is_importance_to_2(s0,X3,X1)
+      & is_importance_of_2(s0,X3,X2)
+      & effector_t_cells_1(s0,G4)
+      & nfat1_1(s0,X5)
+      & truncated_1(s0,X8)
+      & is_form_of_2(s0,X8,X5)
+      & dominant_negative_1(s0,X7)
+      & il_4_promoter_activity_1(s0,X6)
+      & primed_cd4_t_cells_1(s0,G9)
+      & furthermore_1(s0,S13)
+      & ? [S14] :
+          ( fact_2(s0,S13,S14)
+          & reducing_3(S14,E10,X8,X6)
+          & in_2(S14,E10,G9)
+          & confirming_3(S14,E11,X8,X3)
+          & acts_2(S14,E12,X8)
+          & as_2(S14,E12,X7) ) ) )).
+
+% ::id 146_nonfiction_GENIA-1999;99113747,10;NE
+% ::snt NFAT1 appears to be the major NFAT family member responsible for the initial increased expression of IL-4 by primed CD4 T cells .
+fof(ex1414051981427,axiom,(
+    ? [X1,X2,G3,X4,E5,E6] :
+      ( initial_1(s0,X1)
+      & increased_1(s0,X1)
+      & is_expression_by_2(s0,X1,G3)
+      & is_expression_of_2(s0,X1,il_4)
+      & is_responsible_for_2(s0,X2,X1)
+      & major_nfat__family_member_1(s0,X2)
+      & primed_cd4_t_cells_1(s0,G3)
+      & nfat1_1(s0,X4)
+      & ? [S7] :
+          ( appears_2(s0,E6,S7)
+          & be_3(S7,E5,X4,X2) ) ) )).
+
+% ::id 147_nonfiction_GENIA-1999;99115412,1;NE
+% ::snt Anoxia/reoxygenation-induced tolerance with respect to polymorphonuclear leukocyte adhesion to cultured endothelial cells .
+fof(ex1414051981818,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( polymorphonuclear_1(s0,X1)
+      & is_leukocyte_adhesion_to_2(s0,X1,G4)
+      & is_respect_to_2(s0,X2,X1)
+      & anoxia__slash__reoxygenation_induced_1(s0,X3)
+      & is_tolerance_with_2(s0,X3,X2)
+      & cultured_1(s0,G4)
+      & endothelial_1(s0,G4)
+      & cells_1(s0,G4)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 148_nonfiction_GENIA-1999;99115412,2;NE
+% ::snt A nuclear factor -kappaB -mediated phenomenon .
+fof(ex1414051982211,axiom,(
+    ? [X1,X2,E3] :
+      ( nuclear_1(s0,X1)
+      & factor_kappab_1(s0,X1)
+      & is_mediated_of_2(s0,X2,X1)
+      & phenomenon_1(s0,X2)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,X2) ) )).
+
+% ::id 149_nonfiction_GENIA-1999;99115412,3;NE
+% ::snt Exposing human umbilical vein endothelial cells -LRB- HUVECs -RRB- to anoxia/reoxygenation -LRB- A/R -RRB- results in an increase in polymorphonuclear leukocyte -LRB- PMN -RRB- adhesion to HUVECs .
+fof(ex1414051982608,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,E7,E8,S9] :
+      ( polymorphonuclear_1(s0,X1)
+      & is_leukocyte_adhesion_to_2(s0,X1,G5)
+      & is_increase_in_2(s0,X2,X1)
+      & human_1(s0,G4)
+      & umbilical_1(s0,G4)
+      & vein_endothelial_cells_1(s0,G4)
+      & huvecs_1(s0,G3)
+      & G4 = G3
+      & anoxia__slash__reoxygenation = a__slash__r_
+      & huvecs_1(s0,G5)
+      & pmn__1(s0,G6)
+      & X1 = G6
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & exposing_3(S10,E7,unspecified,G4)
+          & to_2(S10,E7,anoxia__slash__reoxygenation) )
+      & results_2(s0,E8,S9)
+      & in_2(s0,E8,X2) ) )).
+
+% ::id 150_nonfiction_GENIA-1999;99115412,4;NE
+% ::snt This A/R-induced hyperadhesion is completely prevented by a previous -LRB- 24 hours earlier -RRB- exposure of HUVECs to A/R .
+fof(ex1414051983007,axiom,(
+    ? [X1,G2,T3,T4,E5] :
+      ( a__slash__r_induced_1(s0,X1)
+      & hyperadhesion_1(s0,X1)
+      & huvecs_1(s0,G2)
+      & predicate__24_1(s0,T3)
+      & hours_1(s0,T3)
+      & previous_1(s0,T4)
+      & is_earlier_tmp_2(s0,T4,T3)
+      & is_exposure_to_2(s0,T4,a__slash__r_)
+      & is_exposure_of_2(s0,T4,G2)
+      & completely_1(s0,E5)
+      & prevented_3(s0,E5,T4,X1) ) )).
+
+% ::id 151_nonfiction_GENIA-1999;99115412,5;NE
+% ::snt This phenomenon has been termed " A/R tolerance . "
+fof(ex1414051983383,axiom,(
+    ? [X1,X2,E3] :
+      ( phenomenon_1(s0,X1)
+      & a__slash__r__tolerance_1(s0,X2)
+      & has_termed_4(s0,E3,unspecified,X2,X1) ) )).
+
+% ::id 152_nonfiction_GENIA-1999;99115412,6;NE
+% ::snt Exposing HUVECs to A/R induces an increase in nuclear factor kappaB -LRB- NF-kappaB -RRB- in HUVEC nuclei within 4 hours .
+fof(ex1414051983779,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,S8] :
+      ( nuclear_1(s0,X1)
+      & factor_kappab_1(s0,X1)
+      & is_increase_in_2(s0,X2,G4)
+      & is_increase_in__2(s0,X2,X1)
+      & huvecs_1(s0,G3)
+      & X1 = nf_kappab
+      & huvec__nuclei_1(s0,G4)
+      & predicate__4_1(s0,G5)
+      & hours_1(s0,G5)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & exposing_3(S9,E6,unspecified,G3)
+          & to_2(S9,E6,a__slash__r_) )
+      & induces_3(s0,E7,S8,X2)
+      & within_2(s0,E7,G5) ) )).
+
+% ::id 153_nonfiction_GENIA-1999;99115412,7;NE
+% ::snt Interfering with either NF-kappaB activation -LRB- proteasome inhibitor -RRB- or translocation -LRB- double-stranded oligonucleotides containing NF-kappaB binding sequence -RRB- prevents the development of A/R tolerance
+fof(ex1414051984179,axiom,(
+    ? [X1,X2,G3,E4,E5,S6] :
+      ( a__slash__r__tolerance_1(s0,X1)
+      & is_development_of_2(s0,X2,X1)
+      & ? [X7,X8] :
+          ( nf_kappab_activation_1(s0,X8)
+          & proteasome_inhibitor_1(s0,X7)
+          & X8 = X7
+          & is_of_2(s0,X8,G3) )
+      & ? [X9,X10,G11,E12] :
+          ( translocation_1(s0,X10)
+          & nf_kappab_binding_sequence_1(s0,X9)
+          & double_stranded_1(s0,G11)
+          & containing_3(s0,E12,G11,X9)
+          & oligonucleotides_1(s0,G11)
+          & X10 = G11
+          & is_of_2(s0,X10,G3) )
+      & ? [S13] :
+          ( fact_2(s0,S6,S13)
+          & interfering_1(S13,E4)
+          & with_2(S13,E4,G3) )
+      & prevents_3(s0,E5,S6,X2) ) )).
+
+% ::id 154_nonfiction_GENIA-1999;99115412,7;NE
+% ::snt -LRB- ie , the increase in A/R-induced PMN adhesion to HUVECs is the same after the first and second A/R challenges -RRB- .
+fof(ex1414051984579,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,E9] :
+      ( a__slash__r_induced_1(s0,X1)
+      & is_pmn__adhesion_to_2(s0,X1,G4)
+      & is_increase_in_2(s0,X3,X1)
+      & same_1(s0,X2)
+      & is_after_2(s0,X2,G8)
+      & huvecs_1(s0,G4)
+      & first_a__slash__r__challenges_1(s0,G5)
+      & second_a__slash__r__challenges_1(s0,G6)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & G8 = G7
+      & is_3(s0,E9,X3,X2) ) )).
+
+% ::id 155_nonfiction_GENIA-1999;99115412,8;NE
+% ::snt NO production by HUVECs is increased after the second A/R challenge , but not after the first A/R challenge .
+fof(ex1414051984970,axiom,(
+    ? [X1,X2,X3,G4,E5,E6] :
+      ( second_a__slash__r__challenge_1(s0,X1)
+      & first_a__slash__r__challenge_1(s0,X2)
+      & is_no__production_by_2(s0,X3,G4)
+      & huvecs_1(s0,G4)
+      & is_increased_2(s0,E5,X3)
+      & after_2(s0,E5,X1)
+      & ? [X7] :
+          ( is_of_2(s0,X7,X2)
+          & is_increased_2(s0,E6,X3)
+          & after_2(s0,E6,X7) ) ) )).
+
+% ::id 156_nonfiction_GENIA-1999;99115412,9;NE
+% ::snt Inhibition of NO synthase -LRB- NOS -RRB- during the second A/R challenge prevents the development of A/R tolerance with respect to PMN adhesion .
+fof(ex1414051985367,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,E9] :
+      ( second_a__slash__r__challenge_1(s0,X1)
+      & a__slash__r__tolerance_1(s0,X2)
+      & is_development_of_2(s0,X3,X2)
+      & no__synthase_1(s0,X5)
+      & nos__1(s0,X4)
+      & is_inhibition_of_2(s0,X8,X5)
+      & is_inhibition_during_2(s0,X8,X1)
+      & pmn__adhesion_1(s0,X6)
+      & is_respect_to_2(s0,X7,X6)
+      & X5 = X4
+      & prevents_3(s0,E9,X8,X3)
+      & with_2(s0,E9,X7) ) )).
+
+% ::id 157_nonfiction_GENIA-1999;99115412,10;NE
+% ::snt However , while HUVECs contained endothelial NOS protein , no inducible NOS was detected in either tolerant or nontolerant cells .
+fof(ex1414051985774,axiom,(
+    ? [X1,X2,G3,G4,S7,E5,E6] :
+      ( inducible_1(s0,X2)
+      & nos__1(s0,X2)
+      & endothelial_1(s0,X1)
+      & nos__protein_1(s0,X1)
+      & huvecs_1(s0,G3)
+      & ? [G8] :
+          ( tolerant_1(s0,G8)
+          & cells_1(s0,G8)
+          & is_of_2(s0,G8,G4) )
+      & ? [G9] :
+          ( nontolerant_1(s0,G9)
+          & cells_1(s0,G9)
+          & is_of_2(s0,G9,G4) )
+      & however_1(s0,S7)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S10] :
+          ( fact_2(s0,S7,S10)
+          & contained_3(S10,E5,G3,X1)
+          & detected_3(S10,E6,unspecified,X2)
+          & in_2(S10,E6,G4) ) ) )).
+
+% ::id 158_nonfiction_GENIA-1999;99115412,11;NE
+% ::snt Further studies indicated that inhibition of GTP-cyclohydrolase I -LRB- an enzyme involved in de novo synthesis of an important cofactor for NOS activity , tetrahydrobiopterin -RRB- prevented the generation of NO in A/R-tolerant cells .
+fof(ex1414051986183,axiom,(
+    ? [X1,X2,G3,X4,X5,X6,X7,X8,G9,E10,E11,E12] :
+      ( no__1(s0,X1)
+      & is_generation_in_2(s0,X2,G3)
+      & is_generation_of_2(s0,X2,X1)
+      & a__slash__r_tolerant_1(s0,G3)
+      & cells_1(s0,G3)
+      & nos__activity_1(s0,X4)
+      & important_1(s0,X5)
+      & is_cofactor_for_2(s0,X5,X4)
+      & de_novo_1(s0,X6)
+      & is_synthesis_of_2(s0,X6,tetrahydrobiopterin)
+      & involved_3(s0,E10,unspecified,X7)
+      & in_2(s0,E10,X6)
+      & enzyme_1(s0,X7)
+      & is_inhibition_of_2(s0,X8,gtp_cyclohydrolase_i)
+      & further_1(s0,G9)
+      & studies_1(s0,G9)
+      & tetrahydrobiopterin = X5
+      & gtp_cyclohydrolase_i = X7
+      & is_before_2(s0,E11,E12)
+      & is_before_2(s0,E12,e0)
+      & ? [S13] :
+          ( indicated_3(s0,E12,G9,S13)
+          & prevented_3(S13,E11,X8,X2) ) ) )).
+
+% ::id 159_nonfiction_GENIA-1999;99115412,12;NE
+% ::snt Extracellular generation of NO -LRB- NO donor -RRB- did not effect the hyperadhesion response induced by the initial A/R challenge .
+fof(ex1414051986575,axiom,(
+    ? [X1,X2,E3,X4,X5,X6] :
+      ( initial_a__slash__r__challenge_1(s0,X1)
+      & induced_2(s0,E3,X2)
+      & by_2(s0,E3,X1)
+      & hyperadhesion_response_1(s0,X2)
+      & no__1(s0,X5)
+      & no__donor_1(s0,X4)
+      & extracellular_1(s0,X6)
+      & is_generation_of_2(s0,X6,X5)
+      & X5 = X4
+      & ? [E7] :
+          ( is_before_2(s0,E7,e0)
+          & did_effect_3(s0,E7,X6,X2) ) ) )).
+
+% ::id 160_nonfiction_GENIA-1999;99115412,13;NE
+% ::snt A/R also induced an oxidant stress in naive HUVECs , but not in A/R-tolerant HUVECs .
+fof(ex1414051986959,axiom,(
+    ? [X1,G2,G3,E4,E5] :
+      ( oxidant_1(s0,X1)
+      & stress_1(s0,X1)
+      & naive_1(s0,G2)
+      & huvecs_1(s0,G2)
+      & a__slash__r_tolerant_1(s0,G3)
+      & huvecs_1(s0,G3)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & also_induced_3(s0,E4,a__slash__r_,X1)
+      & in_2(s0,E4,G2)
+      & ? [X6] :
+          ( is_of_2(s0,X6,G3)
+          & also_induced_3(s0,E5,a__slash__r_,X1)
+          & in_2(s0,E5,X6) ) ) )).
+
+% ::id 161_nonfiction_GENIA-1999;99115412,14;NE
+% ::snt Inhibition of NOS during the second A/R insult results in the generation of an oxidant stress similar to that observed after the first A/R challenge .
+fof(ex1414051987357,axiom,(
+    ? [X1,X2,X3,X4,X5,E6,X7,X8,E9] :
+      ( second_a__slash__r__insult_1(s0,X1)
+      & first_a__slash__r__challenge_1(s0,X2)
+      & observed_2(s0,E6,X3)
+      & after_2(s0,E6,X2)
+      & oxidant_1(s0,X4)
+      & is_similar_to_2(s0,X4,X3)
+      & stress_1(s0,X4)
+      & is_generation_of_2(s0,X5,X4)
+      & nos__1(s0,X7)
+      & is_inhibition_of_2(s0,X8,X7)
+      & is_inhibition_during_2(s0,X8,X1)
+      & results_2(s0,E9,X8)
+      & in_2(s0,E9,X5) ) )).
+
+% ::id 162_nonfiction_GENIA-1999;99115412,15;NE
+% ::snt Taken together , the findings of the present study are consistent with a role for NF-kappaB in the development of A/R tolerance -LRB- with respect to PMN adhesion -RRB- , perhaps by transcriptional regulation of GTP-cyclohydrolase .
+fof(ex1414051987763,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,X8,A11,E9,E10] :
+      ( present_1(s0,X1)
+      & study_1(s0,X1)
+      & pmn__adhesion_1(s0,X2)
+      & is_respect_to_2(s0,X4,X2)
+      & transcriptional_1(s0,X3)
+      & is_regulation_of_2(s0,X3,gtp_cyclohydrolase)
+      & is_a__slash__r__tolerance_perhaps_by_2(s0,X5,X3)
+      & is_a__slash__r__tolerance_with_2(s0,X5,X4)
+      & is_development_of_2(s0,X6,X5)
+      & is_findings_of_2(s0,G7,X1)
+      & is_role_in_2(s0,X8,X6)
+      & is_role_for_2(s0,X8,nf_kappab)
+      & is_consistent_with_2(s0,A11,X8)
+      & together_1(s0,E9)
+      & taken_2(s0,E9,G7)
+      & are_3(s0,E10,G7,A11) ) )).
+
+% ::id 163_nonfiction_GENIA-1999;99115412,16;NE
+% ::snt The increased NO production during the second A/R insult reduces PMN adhesion most likely by reducing the intracellular oxidant stress induced by A/R .
+fof(ex1414051988165,axiom,(
+    ? [X1,X2,X3,E4,X5,S8,E6,E7,S9] :
+      ( second_a__slash__r__insult_1(s0,X1)
+      & increased_1(s0,X3)
+      & is_no__production_during_2(s0,X3,X1)
+      & intracellular_1(s0,X2)
+      & oxidant_1(s0,X2)
+      & induced_2(s0,E4,X2)
+      & by_2(s0,E4,a__slash__r_)
+      & stress_1(s0,X2)
+      & pmn__adhesion_1(s0,X5)
+      & is_most_likely_by_2(s0,S8,S9)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & reducing_3(S10,E6,unspecified,X2) )
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & reduces_3(S11,E7,X3,X5) ) ) )).
+
+% ::id 164_nonfiction_GENIA-1999;99115544,1;NE
+% ::snt Involvement of mitogen-activated protein kinase pathways in interleukin-8 production by human monocytes and polymorphonuclear cells stimulated with lipopolysaccharide or Mycoplasma fermentans membrane lipoproteins .
+fof(ex1414051988567,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( is_interleukin_8_production_by_2(s0,X1,G3)
+      & is_involvement_in_2(s0,X2,X1)
+      & is_involvement_of_2(s0,X2,G4)
+      & mitogen_activated_1(s0,G4)
+      & protein_kinase_pathways_1(s0,G4)
+      & ? [G6] :
+          ( human_1(s0,G6)
+          & monocytes_1(s0,G6)
+          & is_of_2(s0,G6,G3) )
+      & ? [G7,G8,E9] :
+          ( ? [X10] :
+              ( lipopolysaccharide_1(s0,X10)
+              & is_of_2(s0,X10,G7) )
+          & ? [G11] :
+              ( mycoplasma_fermentans_membrane_lipoproteins_1(s0,G11)
+              & is_of_2(s0,G11,G7) )
+          & polymorphonuclear_1(s0,G8)
+          & stimulated_3(s0,E9,unspecified,G8)
+          & with_2(s0,E9,G7)
+          & cells_1(s0,G8)
+          & is_of_2(s0,G8,G3) )
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X2) ) )).
+
+% ::id 165_nonfiction_GENIA-1999;99115544,2;NE
+% ::snt Interleukin-8 -LRB- IL-8 -RRB- is a chemokine that belongs to the alpha-chemokine or CXC subfamily and is produced by a wide variety of human cells , including monocytes and polymorphonuclear cells -LRB- PMN -RRB- .
+fof(ex1414051989009,axiom,(
+    ? [X1,X2,G3,G4,X5,X6,G7,G8,E9,E10,E11,E12] :
+      ( alpha_chemokine_subfamily_1(s0,X1)
+      & cxc__subfamily_1(s0,X2)
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,X2,G3)
+      & G4 = G3
+      & belongs_2(s0,E9,X5)
+      & to_2(s0,E9,G4)
+      & chemokine_1(s0,X5)
+      & wide_1(s0,X6)
+      & is_variety_of_2(s0,X6,G8)
+      & interleukin_8 = il_8
+      & ? [G13] :
+          ( monocytes_1(s0,G13)
+          & is_of_2(s0,G13,G7) )
+      & ? [G14,G15] :
+          ( polymorphonuclear_1(s0,G15)
+          & cells_1(s0,G15)
+          & pmn__1(s0,G14)
+          & G15 = G14
+          & is_of_2(s0,G15,G7) )
+      & human_1(s0,G8)
+      & including_3(s0,E11,G8,G7)
+      & cells_1(s0,G8)
+      & is_3(s0,E10,interleukin_8,X5)
+      & produced_3(s0,E12,X6,interleukin_8) ) )).
+
+% ::id 166_nonfiction_GENIA-1999;99115544,3;NE
+% ::snt IL-8 is secreted in response to inflammatory stimuli , notably bacterial products such as lipopolysaccharide -LRB- LPS -RRB- ,
+fof(ex1414051989406,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( is_response_to_2(s0,X1,G3)
+      & inflammatory_1(s0,G3)
+      & stimuli_1(s0,G3)
+      & lipopolysaccharide = lps_
+      & notably_1(s0,G2)
+      & bacterial_1(s0,G2)
+      & is_products_such_as_2(s0,G2,lipopolysaccharide)
+      & G3 = G2
+      & is_secreted_2(s0,E4,il_8)
+      & in_2(s0,E4,X1) ) )).
+
+% ::id 167_nonfiction_GENIA-1999;99115544,3;NE
+% ::snt but little is known about the mechanisms by which these agents mediate IL-8 induction .
+fof(ex1414051989800,axiom,(
+    ? [X1,G2,G3,E4,E5] :
+      ( il_8_induction_1(s0,X1)
+      & agents_1(s0,G2)
+      & mediate_3(s0,E4,G2,X1)
+      & by_2(s0,E4,G3)
+      & mechanisms_1(s0,G3)
+      & ? [X6] :
+          ( known_3(s0,E5,unspecified,X6)
+          & about_2(s0,E5,G3) ) ) )).
+
+% ::id 168_nonfiction_GENIA-1999;99115544,4;NE
+% ::snt In this report , we show that Mycoplasma fermentans lipid-associated membrane proteins -LRB- LAMPf -RRB- induce the production of high levels of IL-8 by THP-1 -LRB- human monocyte -RRB- cells and PMN at the same extent as LPS .
+fof(ex1414051990211,axiom,(
+    ? [X1,X2,X3,X4,X12,G5,G6,G7,G8,G9,E10,E11] :
+      ( report_1(s0,X4)
+      & human_1(s0,X1)
+      & monocyte_1(s0,X1)
+      & is_production_by_2(s0,X3,G7)
+      & is_production_of_2(s0,X3,G8)
+      & same_1(s0,X2)
+      & is_extent_as_2(s0,X2,lps_)
+      & high_1(s0,G8)
+      & is_levels_of_2(s0,G8,il_8)
+      & thp_1_cells_1(s0,G5)
+      & G5 = X1
+      & pmn__1(s0,G6)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & mycoplasma_fermentans_lipid_associated_membrane_proteins_1(s0,G9)
+      & G9 = lampf
+      & ? [S13] :
+          ( show_3(s0,E11,X12,S13)
+          & induce_3(S13,E10,G9,X3)
+          & at_2(S13,E10,X2) )
+      & in_2(s0,E11,X4) ) )).
+
+% ::id 169_nonfiction_GENIA-1999;99115544,5;NE
+% ::snt It was previously demonstrated that stimulation of monocytic cells with either LPS or LAMPf led to a series of common downstream signaling events , including the activation of protein tyrosine kinase and of mitogen-activated protein kinase cascades .
+fof(ex1414051990625,axiom,(
+    ? [X1,X2,G3,X4,X5,G6,G7,G8,E9,E10,E11,S12] :
+      ( protein_tyrosine_kinase_1(s0,X1)
+      & is_activation_of_2(s0,X2,X1)
+      & is_activation_of_2(s0,X2,G3)
+      & mitogen_activated_1(s0,G3)
+      & protein_kinase_cascades_1(s0,G3)
+      & is_stimulation_of_2(s0,X5,G7)
+      & is_stimulation_with_2(s0,X5,G6)
+      & is_series_of_2(s0,X4,G8)
+      & monocytic_1(s0,G7)
+      & cells_1(s0,G7)
+      & is_of_2(s0,lps_,G6)
+      & is_of_2(s0,lampf,G6)
+      & common_1(s0,G8)
+      & downstream_1(s0,G8)
+      & signaling_1(s0,G8)
+      & including_3(s0,E9,G8,X2)
+      & events_1(s0,G8)
+      & is_before_2(s0,E10,e0)
+      & previously_1(s0,E11)
+      & is_before_2(s0,E11,e0)
+      & ? [S13] :
+          ( fact_2(s0,S12,S13)
+          & led_2(S13,E10,X5)
+          & to_2(S13,E10,X4) )
+      & demonstrated_3(s0,E11,unspecified,S12) ) )).
+
+% ::id 170_nonfiction_GENIA-1999;99115544,6;NE
+% ::snt By using PD-98059 and SB203580 , two potent and selective inhibitors of MEK1 -LRB- a kinase upstream of ERK1/2 -RRB- and p38 , respectively , we have demonstrated that both ERK1/2 and p38 cascades play a key role in the production of IL-8 by monocytes and PMN stimulated with bacterial fractions .
+fof(ex1414051991067,axiom,(
+    ? [X1,X14,G2,G3,G4,G5,G6,E7,G8,G9,G10,G11,E12,E13,S15] :
+      ( is_production_by_2(s0,X1,G6)
+      & is_production_of_2(s0,X1,il_8)
+      & bacterial_1(s0,G2)
+      & fractions_1(s0,G2)
+      & stimulated_3(s0,E7,unspecified,G6)
+      & with_2(s0,E7,G2)
+      & monocytes_1(s0,G3)
+      & pmn__1(s0,G4)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & G6 = G5
+      & is_of_2(s0,pd_98059,G8)
+      & is_of_2(s0,sb203580,G8)
+      & G11 = G8
+      & ? [X16] :
+          ( is_upstream_of_2(s0,X16,erk1__slash__2)
+          & kinase_1(s0,X16)
+          & mek1 = X16
+          & is_of_2(s0,mek1,G9) )
+      & is_of_2(s0,p38,G9)
+      & two_1(s0,G10)
+      & potent_1(s0,G10)
+      & selective_1(s0,G10)
+      & is_inhibitors_of_2(s0,G10,G9)
+      & G11 = G10
+      & respectively_1(s0,E12)
+      & ? [S21] :
+          ( fact_2(s0,S15,S21)
+          & using_3(S21,E12,X14,G11) )
+      & ? [S22] :
+          ( have_demonstrated_3(s0,E13,X14,S22)
+          & ? [G17] :
+              ( cascades_1(S22,G17)
+              & ? [X18,G19,E20] :
+                  ( key_1(S22,X18)
+                  & is_role_in_2(S22,X18,X1)
+                  & is_of_2(S22,erk1__slash__2,G19)
+                  & is_of_2(S22,p38,G19)
+                  & G17 = G19
+                  & play_3(S22,E20,G17,X18) ) ) )
+      & by_2(s0,E13,S15) ) )).
+
+% ::id 171_nonfiction_GENIA-1999;99115659,1;NE
+% ::snt CD80 and CD86 are not equivalent in their ability to induce the tyrosine phosphorylation of CD28 .
+fof(ex1414051991464,axiom,(
+    ? [X1,G2] :
+      ( is_tyrosine_phosphorylation_of_2(s0,X1,cd28)
+      & is_of_2(s0,cd80,G2)
+      & is_of_2(s0,cd86,G2)
+      & ? [X3,G7,A6,E4,E5] :
+          ( is_ability_of_2(s0,X3,G7)
+          & choose1(G7,G2)
+          & is_equivalent_in_2(s0,A6,X3)
+          & are_3(s0,E5,G2,A6) ) ) )).
+
+% ::id 172_nonfiction_GENIA-1999;99115659,2;NE
+% ::snt Ligation of either CD80 -LRB- B7-1 -RRB- or CD86 -LRB- B7-2 -RRB- , two principal ligands for CD28 , is thought to skew the immune response toward Th1 or Th2 differentiation .
+fof(ex1414051991868,axiom,(
+    ? [X1,X2,G3,X4,G5,G6,G7,E8,E9] :
+      ( differentiation_1(s0,X1)
+      & immune_1(s0,X2)
+      & is_response_toward_2(s0,X2,X1)
+      & is_of_2(s0,th1,G3)
+      & is_of_2(s0,th2,G3)
+      & X1 = G3
+      & is_ligation_of_2(s0,X4,G7)
+      & cd80 = b7_1
+      & is_of_2(s0,cd80,G5)
+      & cd86 = b7_2
+      & is_of_2(s0,cd86,G5)
+      & G7 = G5
+      & two_1(s0,G6)
+      & principal_1(s0,G6)
+      & is_ligands_for_2(s0,G6,cd28)
+      & G7 = G6
+      & ? [S10] :
+          ( thought_4(s0,E9,unspecified,X4,S10)
+          & skew_3(S10,E8,X4,X2) ) ) )).
+
+% ::id 173_nonfiction_GENIA-1999;99115659,3;NE
+% ::snt We have examined early signal transduction pathways recruited following T cell stimulation with either CD80 or CD86 .
+fof(ex1414051992256,axiom,(
+    ? [X7,X1,G2,G3,E4,E5,E6] :
+      ( is_t_cell_stimulation_with_2(s0,X1,G2)
+      & is_of_2(s0,cd80,G2)
+      & is_of_2(s0,cd86,G2)
+      & early_1(s0,G3)
+      & recruited_3(s0,E4,unspecified,G3)
+      & following_3(s0,E5,G3,X1)
+      & signal_transduction_pathways_1(s0,G3)
+      & have_examined_3(s0,E6,X7,G3) ) )).
+
+% ::id 174_nonfiction_GENIA-1999;99115659,4;NE
+% ::snt Purified human peripheral T cells or Jurkat T cells were stimulated with Chinese hamster ovary -LRB- CHO -RRB- cells expressing either human CD80 -LRB- CHO-CD80 -RRB- or human CD86 -LRB- CHO-CD86 -RRB- or with anti-CD28 monoclonal antibody -LRB- mAb -RRB- .
+fof(ex1414051992665,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,E7,E8,E9] :
+      ( cho__1(s0,X1)
+      & anti_cd28_1(s0,X3)
+      & monoclonal_1(s0,X3)
+      & antibody_1(s0,X3)
+      & mab_1(s0,X2)
+      & ? [G10] :
+          ( human_peripheral_1(s0,G10)
+          & purified_1(s0,G10)
+          & t_cells_1(s0,G10)
+          & is_of_2(s0,G10,G6) )
+      & ? [G11] :
+          ( jurkat_t_cells_1(s0,G11)
+          & is_of_2(s0,G11,G6) )
+      & human_cd80 = cho_cd80
+      & is_of_2(s0,human_cd80,G4)
+      & human_cd86 = cho_cd86
+      & is_of_2(s0,human_cd86,G4)
+      & chinese_1(s0,G5)
+      & expressing_3(s0,E7,G5,G4)
+      & hamster_ovary_cells_1(s0,G5)
+      & G5 = X1
+      & X3 = X2
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & stimulated_3(s0,E8,unspecified,G6)
+      & with_2(s0,E8,G5)
+      & stimulated_3(s0,E9,unspecified,G6)
+      & with_2(s0,E9,X3) ) )).
+
+% ::id 175_nonfiction_GENIA-1999;99115659,5;NE
+% ::snt In the presence of phorbol 12-myristate 13-acetate , both CHO-CD80 and CHO-CD86 , like anti-CD28 mAb , were capable of stimulating cytokine production from both human peripheral T cells and Jurkat T cells .
+fof(ex1414051993077,axiom,(
+    ? [X1,X2] :
+      ( phorbol_12_myristate_13_acetate_1(s0,X1)
+      & is_presence_of_2(s0,X2,X1)
+      & ? [G3,X4,X5,G6,A8,E7,S9] :
+          ( anti_cd28_1(s0,X4)
+          & mab_1(s0,X4)
+          & cytokine_production_1(s0,X5)
+          & is_of_2(s0,cho_cd80,G6)
+          & is_of_2(s0,cho_cd86,G6)
+          & G3 = G6
+          & is_capable_of_2(s0,A8,S9)
+          & is_before_2(s0,E7,e0)
+          & ? [S15] :
+              ( fact_2(s0,S9,S15)
+              & ? [G10,G11,E12] :
+                  ( ? [G13] :
+                      ( human_peripheral_t_cells_1(S15,G13)
+                      & is_of_2(S15,G13,G11) )
+                  & ? [G14] :
+                      ( jurkat_t_cells_1(S15,G14)
+                      & is_of_2(S15,G14,G11) )
+                  & G10 = G11
+                  & stimulating_3(S15,E12,unspecified,X5)
+                  & from_2(S15,E12,G10) ) )
+          & is_like_of_2(s0,G3,X4)
+          & were_3(s0,E7,G3,A8)
+          & in_2(s0,E7,X2) ) ) )).
+
+% ::id 176_nonfiction_GENIA-1999;99115659,6;NE
+% ::snt Both CHO-CD80 and CHO-CD86 , in the presence of anti-CD3 mAb , costimulated NFAT-dependent transcriptional activation .
+fof(ex1414051993468,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( anti_cd3_1(s0,X1)
+      & mab_1(s0,X1)
+      & is_presence_of_2(s0,X2,X1)
+      & nfat_dependent_1(s0,X3)
+      & transcriptional_1(s0,X3)
+      & activation_1(s0,X3)
+      & is_of_2(s0,cho_cd80,G4)
+      & ? [X6] :
+          ( cho_cd86_1(s0,X6)
+          & is_of_2(s0,X6,G4) )
+      & is_before_2(s0,E5,e0)
+      & costimulated_3(s0,E5,G4,X3)
+      & in_2(s0,E5,X2) ) )).
+
+% ::id 177_nonfiction_GENIA-1999;99115659,7;NE
+% ::snt Several intracellular signaling proteins , such as CBL and VAV , were phosphorylated on tyrosine in response to CD80 , CD86 , and anti-CD28 mAb .
+fof(ex1414051993863,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( tyrosine_1(s0,X2)
+      & is_response_to_2(s0,X1,G4)
+      & is_of_2(s0,cbl_,G3)
+      & is_of_2(s0,vav_,G3)
+      & is_of_2(s0,cd80,G4)
+      & is_of_2(s0,cd86,G4)
+      & ? [X7] :
+          ( anti_cd28_1(s0,X7)
+          & mab_1(s0,X7)
+          & is_of_2(s0,X7,G4) )
+      & is_before_2(s0,E5,e0)
+      & ? [G6] :
+          ( intracellular_1(s0,G6)
+          & signaling_1(s0,G6)
+          & is_proteins_such_as_2(s0,G6,G3)
+          & were_phosphorylated_2(s0,E5,G6)
+          & on_2(s0,E5,X2)
+          & in_2(s0,E5,X1) ) ) )).
+
+% ::id 178_nonfiction_GENIA-1999;99115659,8;NE
+% ::snt Surprisingly , although stimulation of Jurkat T cells with either CHO-CD80 or anti-CD28 mAb resulted in robust tyrosine phosphorylation of CD28 itself , ligation with CHO-CD86 was unable to induce detectable CD28 tyrosyl phosphorylation over a range of stimulation conditions .
+fof(ex1414051994291,axiom,(
+    ? [X15,X1,X2,X3,X4,X5,G6,G7,G8,A16,S12,E9,E10,E11,S13] :
+      ( is_ligation_with_2(s0,X5,cho_cd86)
+      & is_stimulation_of_2(s0,X2,G7)
+      & is_stimulation_with_2(s0,X2,G6)
+      & choose2(X15,cd28,X1)
+      & robust_1(s0,X1)
+      & is_tyrosine_phosphorylation_of_2(s0,X1,cd28)
+      & detectable_cd28_tyrosyl_phosphorylation_1(s0,X4)
+      & is_range_of_2(s0,X3,G8)
+      & jurkat_t_cells_1(s0,G7)
+      & is_of_2(s0,cho_cd80,G6)
+      & ? [X14] :
+          ( anti_cd28_1(s0,X14)
+          & mab_1(s0,X14)
+          & is_of_2(s0,X14,G6) )
+      & is_of_2(s0,cd28,X15)
+      & stimulation_conditions_1(s0,G8)
+      & ? [S17] :
+          ( unable_2(s0,A16,S17)
+          & induce_3(S17,E10,unspecified,X4)
+          & over_2(S17,E10,X3) )
+      & surprisingly_1(s0,S12)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E11,e0)
+      & ? [S18] :
+          ( fact_2(s0,S13,S18)
+          & resulted_2(S18,E9,X2)
+          & in_2(S18,E9,X1) )
+      & ? [S19] :
+          ( fact_2(s0,S12,S19)
+          & was_3(S19,E11,X5,A16)
+          & although_2(S19,E11,S13) ) ) )).
+
+% ::id 179_nonfiction_GENIA-1999;99115659,9;NE
+% ::snt In addition , the association of phosphoinositide 3-kinase with CD28 and enhanced tyrosine phosphorylation of phospholipase Cgamma were seen after anti-CD28 mAb and CHO-CD80 stimulation but to a much lesser extent after CHO-CD86 stimulation .
+fof(ex1414051994710,axiom,(
+    ? [X1,G2,G3,X4,X5,X6,X7,G8,E9,E10] :
+      ( enhanced_1(s0,X1)
+      & is_tyrosine_phosphorylation_of_2(s0,X1,phospholipase_cgamma)
+      & is_of_2(s0,cd28,G2)
+      & is_of_2(s0,X1,G2)
+      & is_association_with_2(s0,G3,G2)
+      & is_association_of__2(s0,G3,phosphoinositide_3_kinase)
+      & addition_1(s0,X7)
+      & stimulation_1(s0,X4)
+      & much_lesser_1(s0,X6)
+      & extent_1(s0,X6)
+      & cho_cd86_stimulation_1(s0,X5)
+      & ? [X11] :
+          ( anti_cd28_1(s0,X11)
+          & mab_1(s0,X11)
+          & is_of_2(s0,X11,G8) )
+      & is_of_2(s0,cho_cd80,G8)
+      & X4 = G8
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & seen_3(s0,E9,unspecified,G3)
+      & after_2(s0,E9,X4)
+      & in_2(s0,E9,X7)
+      & seen_3(s0,E10,unspecified,G3)
+      & to_2(s0,E10,X6)
+      & after_2(s0,E10,X5)
+      & in_2(s0,E10,X7) ) )).
+
+% ::id 180_nonfiction_GENIA-1999;99115659,10;NE
+% ::snt Thus , ligation of CD28 with either CD80 or CD86 leads to shared early signal transduction events such as the tyrosine phosphorylation of CBL and VAV , to NFAT-mediated transcriptional activation , and to the costimulation of interleukin-2 and granulocyte-macrophage colony-stimulating factor production .
+fof(ex1414051995121,axiom,(
+    ? [X1,X2,X3,G4,G5,X6,X7,G8,G9,S13,E10,E11,E12] :
+      ( is_tyrosine_phosphorylation_of_2(s0,X1,G4)
+      & is_colony_stimulating_of_2(s0,X2,G5)
+      & factor_production_1(s0,X2)
+      & is_costimulation_of_2(s0,X3,X2)
+      & is_of_2(s0,cbl_,G4)
+      & is_of_2(s0,vav_,G4)
+      & is_of_2(s0,interleukin_2,G5)
+      & is_of_2(s0,granulocyte_macrophage,G5)
+      & is_ligation_of_2(s0,X7,cd28)
+      & is_ligation_with_2(s0,X7,G8)
+      & nfat_mediated_1(s0,X6)
+      & transcriptional_1(s0,X6)
+      & activation_1(s0,X6)
+      & is_of_2(s0,cd80,G8)
+      & is_of_2(s0,cd86,G8)
+      & shared_1(s0,G9)
+      & early_1(s0,G9)
+      & is_signal_transduction_events_such_as_2(s0,G9,X1)
+      & thus_1(s0,S13)
+      & ? [S14] :
+          ( fact_2(s0,S13,S14)
+          & leads_2(S14,E10,X7)
+          & to_2(S14,E10,G9)
+          & leads_2(S14,E11,X7)
+          & to_2(S14,E11,X6)
+          & leads_2(S14,E12,X7)
+          & to_2(S14,E12,X3) ) ) )).
+
+% ::id 181_nonfiction_GENIA-1999;99115659,11;NE
+% ::snt However , CD80 and CD86 also induce distinct signal transduction pathways including the tyrosine phosphorylation of CD28 and phospholipase Cgamma1 and the SH2-dependent association of phosphoinositide 3-kinase with CD28 .
+fof(ex1414051995526,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,S9,E7,E8] :
+      ( is_tyrosine_phosphorylation_of_2(s0,X1,G3)
+      & sh2_dependent_1(s0,X2)
+      & is_association_of_2(s0,X2,phosphoinositide_3_kinase)
+      & is_association_with_2(s0,X2,cd28)
+      & is_of_2(s0,cd28,G3)
+      & is_of_2(s0,phospholipase_cgamma1,G3)
+      & is_of_2(s0,cd80,G6)
+      & is_of_2(s0,cd86,G6)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & distinct_1(s0,G5)
+      & including_3(s0,E7,G5,G4)
+      & signal_transduction_pathways_1(s0,G5)
+      & however_1(s0,S9)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & also_induce_3(S10,E8,G6,G5) ) ) )).
+
+% ::id 182_nonfiction_GENIA-1999;99115659,12;NE
+% ::snt These quantitative , if not qualitative , differences between signaling initiated by these two ligands for CD28 may contribute to functional differences -LRB- e.g. Th1 or Th2 differentiation -RRB- in T cell responses .
+fof(ex1414051995937,axiom,(
+    ? [X1,G2,G3,A5,E4] :
+      ( initiated_3(s0,E4,G2,X1)
+      & for_2(s0,E4,cd28)
+      & signaling_1(s0,X1)
+      & two_1(s0,G2)
+      & ligands_1(s0,G2)
+      & ? [X6] :
+          ( is_of_2(s0,X6,A5)
+          & is_quantitative_if_2(s0,G3,X6) )
+      & is_differences_between_2(s0,G3,X1)
+      & qualitative_1(s0,A5)
+      & ? [X7,G8,G9,G10,E11] :
+          ( differentiation_1(s0,X7)
+          & is_of_2(s0,th1,G8)
+          & is_of_2(s0,th2,G8)
+          & X7 = G8
+          & functional_1(s0,G10)
+          & is_differences_e_g_2(s0,G10,X7)
+          & t_cell_responses_1(s0,G9)
+          & contribute_2(s0,E11,G3)
+          & to_2(s0,E11,G10)
+          & in_2(s0,E11,G9) ) ) )).
+
+% ::id 183_nonfiction_GENIA-1999;99115672,1;NE
+% ::snt Role of Egr-2 in up-regulation of Fas ligand in normal T cells and aberrant double-negative lpr and gld T cells .
+fof(ex1414051996335,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( fas_ligand_1(s0,X1)
+      & is_up_regulation_in_2(s0,X2,G4)
+      & is_up_regulation_of_2(s0,X2,X1)
+      & is_role_in_2(s0,X3,X2)
+      & is_role_of__2(s0,X3,egr_2)
+      & ? [G6] :
+          ( normal_t_cells_1(s0,G6)
+          & is_of_2(s0,G6,G4) )
+      & ? [G7,G8] :
+          ( cells_1(s0,G8)
+          & ? [X9] :
+              ( aberrant_1(s0,X9)
+              & double_negative_1(s0,X9)
+              & lpr_1(s0,X9)
+              & is_of_2(s0,X9,G7) )
+          & is_of_2(s0,gld_t,G7)
+          & G8 = G7
+          & is_of_2(s0,G8,G4) )
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 184_nonfiction_GENIA-1999;99115672,2;NE
+% ::snt We previously identified a Fas ligand regulatory element -LRB- FLRE -RRB- in the Fas ligand -LRB- fasL -RRB- promoter that binds Egr family proteins and demonstrated that Egr-3 -LRB- PILOT -RRB- but not Egr-1 -LRB- NGFI-A , Krox-24 , Tis-8 , and Zif-268 -RRB- induces transcription of fasL .
+fof(ex1414051996757,axiom,(
+    ? [X1,X2,X13,G3,E4,X5,X6,X7,X8,G9,E10,E11,E12] :
+      ( binds_3(s0,E4,X2,G3)
+      & fas_ligand_promoter_1(s0,X2)
+      & fasl_1(s0,X1)
+      & egr_family_proteins_1(s0,G3)
+      & X2 = X1
+      & is_fas_ligand_regulatory_element_in_2(s0,X6,X2)
+      & flre__1(s0,X5)
+      & fasl_1(s0,X7)
+      & is_transcription_of_2(s0,X8,X7)
+      & X6 = X5
+      & egr_3 = pilot_
+      & is_of_2(s0,egr_3,G9)
+      & ? [G14] :
+          ( is_of_2(s0,ngfi_a_,G14)
+          & is_of_2(s0,krox_24,G14)
+          & is_of_2(s0,tis_8,G14)
+          & is_of_2(s0,zif_268,G14)
+          & egr_1 = G14
+          & is_of_2(s0,egr_1,G9) )
+      & previously_1(s0,E10)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E12,e0)
+      & identified_3(s0,E10,X13,X6)
+      & ? [S15] :
+          ( demonstrated_3(s0,E12,X13,S15)
+          & induces_3(S15,E11,G9,X8) ) ) )).
+
+% ::id 185_nonfiction_GENIA-1999;99115672,3;NE
+% ::snt The aberrant CD4 CD8 T cells from lpr/lpr and gld/gld mice , which have mutations in the genes encoding Fas and FasL , respectively , have an activated phenotype and constitutively express high levels of fasL mRNA , prompting us to ask what role if any the FLRE and Egr family proteins have in this aberrant expression of fasL .
+fof(ex1414051997209,axiom,(
+    ? [X1,X2,X3,X4,X25,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,G15,E16,E17,X18,X19,G20,E21,E22,E23,E24] :
+      ( fas_1(s0,X1)
+      & fasl_1(s0,X2)
+      & fasl_1(s0,X3)
+      & aberrant_1(s0,X4)
+      & is_expression_of_2(s0,X4,X3)
+      & lpr__slash__lpr_mice_1(s0,G5)
+      & gld__slash__gld_mice_1(s0,G6)
+      & is_of_2(s0,G5,G10)
+      & is_of_2(s0,G6,G10)
+      & is_of_2(s0,X1,G7)
+      & is_of_2(s0,X2,G7)
+      & encoding_3(s0,E16,G8,G7)
+      & genes_1(s0,G8)
+      & is_mutations_in_2(s0,G9,G8)
+      & have_3(s0,E17,G15,G9)
+      & is_aberrant_cd4_cd8_t_cells_from_2(s0,G15,G10)
+      & flre__family_proteins_1(s0,G11)
+      & egr_family_proteins_1(s0,G12)
+      & is_of_2(s0,G11,G13)
+      & is_of_2(s0,G12,G13)
+      & G14 = G13
+      & respectively_1(s0,E16)
+      & activated_1(s0,X18)
+      & phenotype_1(s0,X18)
+      & fasl_mrna__1(s0,X19)
+      & high_1(s0,G20)
+      & is_levels_of_2(s0,G20,X19)
+      & constitutively_1(s0,E24)
+      & ? [S29] :
+          ( prompting_4(s0,E22,G15,X25,S29)
+          & ? [S30] :
+              ( ask_3(S29,E21,X25,S30)
+              & ? [X26] :
+                  ( ? [X28] : is_role_if_2(S30,X26,X28)
+                  & ? [E27] :
+                      ( have_3(S30,E27,G14,X26)
+                      & in_2(S30,E27,X4) ) ) ) )
+      & have_3(s0,E23,G15,X18)
+      & express_3(s0,E24,G15,G20) ) )).
+
+% ::id 186_nonfiction_GENIA-1999;99115672,4;NE
+% ::snt Unstimulated MRL-lpr/lpr and C3H-gld/gld CD4 CD8 T cells constitutively contained high levels of two proteins that bound to the FLRE .
+fof(ex1414051997614,axiom,(
+    ? [X1,G2,G3,G4,G5,S8,E6,E7] :
+      ( flre__1(s0,X1)
+      & unstimulated_cd4_cd8_t_cells_1(s0,G5)
+      & is_of_2(s0,mrl_lpr__slash__lpr,G2)
+      & is_of_2(s0,c3h_gld__slash__gld,G2)
+      & G5 = G2
+      & two_1(s0,G3)
+      & bound_2(s0,E6,G3)
+      & to_2(s0,E6,X1)
+      & proteins_1(s0,G3)
+      & high_1(s0,G4)
+      & is_levels_of_2(s0,G4,G3)
+      & constitutively_1(s0,S8)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & contained_3(S9,E7,G5,G4) ) ) )).
+
+% ::id 187_nonfiction_GENIA-1999;99115672,5;NE
+% ::snt Supershift analysis revealed these proteins to be Egr-1 and Egr-2 -LRB- Krox-20 -RRB- ;
+fof(ex1414051998005,axiom,(
+    ? [G1,X2,G3,E4,E5] :
+      ( proteins_1(s0,G1)
+      & supershift_analysis_1(s0,X2)
+      & is_of_2(s0,egr_1,G3)
+      & egr_2 = krox_20
+      & is_of_2(s0,egr_2,G3)
+      & is_before_2(s0,E5,e0)
+      & ? [S6] :
+          ( revealed_4(s0,E5,X2,G1,S6)
+          & be_3(S6,E4,G1,G3) ) ) )).
+
+% ::id 188_nonfiction_GENIA-1999;99115672,5;NE
+% ::snt Egr-3 was not detected .
+fof(ex1414051998379,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & detected_3(s0,E1,unspecified,egr_3) ) )).
+
+% ::id 189_nonfiction_GENIA-1999;99115672,6;NE
+% ::snt Activation of normal lymph node cells resulted in increased expression of Egr-1 , -2 , and -3 .
+fof(ex1414051998772,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( is_activation_of_2(s0,X2,G3)
+      & increased_1(s0,X1)
+      & is_expression_of_2(s0,X1,G4)
+      & normal_1(s0,G3)
+      & lymph_node_cells_1(s0,G3)
+      & is_of_2(s0,egr_1,G4)
+      & is_of_2(s0,constant___2,G4)
+      & is_of_2(s0,constant___3,G4)
+      & is_before_2(s0,E5,e0)
+      & resulted_2(s0,E5,X2)
+      & in_2(s0,E5,X1) ) )).
+
+% ::id 190_nonfiction_GENIA-1999;99115672,7;NE
+% ::snt As with egr-3 , expression of egr-2 was blocked by cyclosporin A .
+fof(ex1414051999160,axiom,(
+    ? [X1,E2] :
+      ( is_expression_of_2(s0,X1,egr_2)
+      & is_before_2(s0,E2,e0)
+      & blocked_3(s0,E2,cyclosporin_a,X1)
+      & as_with_2(s0,E2,egr_3) ) )).
+
+% ::id 191_nonfiction_GENIA-1999;99115672,8;NE
+% ::snt Although overexpressed Egr-1 was ineffective , overexpressed Egr-2 was as potent as Egr-3 in inducing fasL promoter-dependent reporter constructs in T cell hybridomas and HeLa cells ,
+fof(ex1414051999574,axiom,(
+    ? [G1,G2,A8,A7,E3,E4,E5,S9,S6] :
+      ( fasl_promoter_dependent_reporter_constructs_1(s0,G2)
+      & ? [G10] :
+          ( t_cell_hybridomas_1(s0,G10)
+          & is_of_2(s0,G10,G1) )
+      & ? [G11] :
+          ( hela_cells_1(s0,G11)
+          & is_of_2(s0,G11,G1) )
+      & ineffective_1(s0,A7)
+      & is_as_potent_as_2(s0,A8,egr_3)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E5,e0)
+      & ? [S12] :
+          ( fact_2(s0,S6,S12)
+          & was_3(S12,E3,overexpressed_egr_1,A7) )
+      & ? [S13] :
+          ( fact_2(s0,S9,S13)
+          & inducing_3(S13,E4,overexpressed_egr_2,G2)
+          & in_2(S13,E4,G1) )
+      & was_3(s0,E5,overexpressed_egr_2,A8)
+      & although_2(s0,E5,S6)
+      & in_2(s0,E5,S9) ) )).
+
+% ::id 192_nonfiction_GENIA-1999;99115672,8;NE
+% ::snt and both up-regulated endogenous fasL mRNA in HeLa cells .
+fof(ex1414052000204,axiom,(
+    ? [X1,G2,E3] :
+      ( endogenous_1(s0,X1)
+      & fasl_mrna__1(s0,X1)
+      & hela_cells_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & ? [X4] :
+          ( up_regulated_3(s0,E3,X4,X1)
+          & in_2(s0,E3,G2) ) ) )).
+
+% ::id 193_nonfiction_GENIA-1999;99115672,9;NE
+% ::snt FasL-dependent reporter constructs in MRL-lpr/lpr and C3H-gld/gld CD4 CD8 T cells were constitutively active ,
+fof(ex1414052001146,axiom,(
+    ? [G1,G2,G3,A5,E4] :
+      ( cd4_cd8_t_cells_1(s0,G2)
+      & is_of_2(s0,mrl_lpr__slash__lpr,G1)
+      & is_of_2(s0,c3h_gld__slash__gld,G1)
+      & G2 = G1
+      & fasl_dependent_1(s0,G3)
+      & is_reporter_constructs_in_2(s0,G3,G2)
+      & constitutively_active_1(s0,A5)
+      & is_before_2(s0,E4,e0)
+      & were_3(s0,E4,G3,A5) ) )).
+
+% ::id 194_nonfiction_GENIA-1999;99115672,9;NE
+% ::snt and this activity was largely prevented by mutation of the critical Egr family binding element .
+fof(ex1414052005988,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( activity_1(s0,X2)
+      & critical_1(s0,X1)
+      & egr_family_binding_element_1(s0,X1)
+      & is_mutation_of_2(s0,X3,X1)
+      & largely_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & prevented_3(s0,E4,X3,X2) ) )).
+
+% ::id 195_nonfiction_GENIA-1999;99115672,10;NE
+% ::snt Thus , Egr-2 , in addition to Egr-3 , regulates FasL expression in activated normal T cells ,
+fof(ex1414052006375,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( is_addition_to_2(s0,X2,egr_3)
+      & is_fasl_expression_in_2(s0,X1,G3)
+      & activated_normal_t_cells_1(s0,G3)
+      & thus_1(s0,E4)
+      & regulates_3(s0,E4,egr_2,X1)
+      & in__2(s0,E4,X2) ) )).
+
+% ::id 196_nonfiction_GENIA-1999;99115672,10;NE
+% ::snt and Egr-2 is likely to play a direct role in aberrant fasL up-regulation in lpr/lpr and gld/gld CD4 CD8 T cells .
+fof(ex1414052006767,axiom,(
+    ? [X1,X2,G3,G4,A7,E5,E6] :
+      ( direct_1(s0,X2)
+      & role_1(s0,X2)
+      & is_aberrant_fasl_up_regulation_in_2(s0,X1,G4)
+      & cd4_cd8_t_cells_1(s0,G4)
+      & is_of_2(s0,lpr__slash__lpr,G3)
+      & is_of_2(s0,gld__slash__gld,G3)
+      & G4 = G3
+      & ? [S8] :
+          ( likely_2(s0,A7,S8)
+          & play_3(S8,E5,unspecified,X2)
+          & in_2(S8,E5,X1) )
+      & is_3(s0,E6,egr_2,A7) ) )).
+
+% ::id 197_nonfiction_GENIA-1999;99118181,1;NE
+% ::snt Inhibition of NF-kappaB activation in vitro and in vivo : role of 26S proteasome .
+fof(ex1414052007154,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( in_vitro_1(s0,X1)
+      & in_vivo_1(s0,X1)
+      & nf_kappab_activation_1(s0,X1)
+      & is_inhibition_of_2(s0,X4,X1)
+      & predicate__26s__proteasome_1(s0,X2)
+      & is_role_of_2(s0,X3,X2)
+      & X4 = X3
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X4) ) )).
+
+% ::id 198_nonfiction_GENIA-1999;99118181,2;NE
+% ::snt It is becoming increasingly apparent that NF-kappaB plays a critical role in regulating the inflammatory response .
+fof(ex1414052007551,axiom,(
+    ? [X1,X2,A8,E3,E4,E5,S7,S6] :
+      ( inflammatory_1(s0,X1)
+      & response_1(s0,X1)
+      & critical_1(s0,X2)
+      & is_role_in_2(s0,X2,S7)
+      & increasingly_apparent_1(s0,A8)
+      & ? [S9] :
+          ( fact_2(s0,S7,S9)
+          & regulating_3(S9,E3,unspecified,X1) )
+      & ? [S10] :
+          ( fact_2(s0,S6,S10)
+          & plays_3(S10,E4,nf_kappab,X2) )
+      & is_becoming_3(s0,E5,S6,A8) ) )).
+
+% ::id 199_nonfiction_GENIA-1999;99118181,3;NE
+% ::snt Data obtained from studies in our laboratories demonstrate that the proteasome plays an important role in the inflammatory cascade by regulating the activation of NF-kappaB .
+fof(ex1414052007956,axiom,(
+    ? [X1,X2,X3,X12,X4,G5,G6,G7,E8,E9,E10,E11,S13] :
+      ( proteasome_1(s0,X3)
+      & inflammatory_1(s0,X2)
+      & cascade_1(s0,X2)
+      & is_activation_of_2(s0,X1,nf_kappab)
+      & important_1(s0,X4)
+      & is_role_by_2(s0,X4,S13)
+      & is_role_in_2(s0,X4,X2)
+      & is_laboratories_of_2(s0,G5,X12)
+      & is_studies_in_2(s0,G6,G5)
+      & obtained_3(s0,E8,unspecified,G7)
+      & from_2(s0,E8,G6)
+      & data_1(s0,G7)
+      & ? [S14] :
+          ( fact_2(s0,S13,S14)
+          & regulating_3(S14,E9,unspecified,X1) )
+      & ? [S15] :
+          ( demonstrate_3(s0,E11,G7,S15)
+          & plays_3(S15,E10,X3,X4) ) ) )).
+
+% ::id 200_nonfiction_GENIA-1999;99118181,4;NE
+% ::snt Indeed , the availability of selective and orally active proteasome inhibitors should prove useful in delineating the roles of the proteasome and NF-kappaB in other pathophysiological conditions such as cancer and heart disease .
+fof(ex1414052008380,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,G7,G8,G9,G10] :
+      ( is_availability_of_2(s0,X4,G7)
+      & proteasome_1(s0,X1)
+      & cancer_1(s0,X2)
+      & heart_disease_1(s0,X3)
+      & selective_1(s0,G5)
+      & proteasome_inhibitors_1(s0,G5)
+      & orally_active_1(s0,G6)
+      & proteasome_inhibitors_1(s0,G6)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & is_of_2(s0,X1,G9)
+      & is_of_2(s0,nf_kappab,G9)
+      & is_of_2(s0,X2,G8)
+      & is_of_2(s0,X3,G8)
+      & ? [G16] :
+          ( pathophysiological_1(s0,G16)
+          & is_conditions_such_as_2(s0,G16,G8)
+          & is_roles_in_2(s0,G10,G16)
+          & is_roles_of_2(s0,G10,G9) )
+      & ? [X11,A14,E12,E13,S15] :
+          ( deed_1(s0,X11)
+          & is_useful_in_2(s0,A14,S15)
+          & ? [S17] :
+              ( fact_2(s0,S15,S17)
+              & delineating_3(S17,E12,unspecified,G10) )
+          & prove_3(s0,E13,X4,A14)
+          & in__2(s0,E13,X11) ) ) )).
+
+% ::id 201_nonfiction_GENIA-1999;99119105,1;NE
+% ::snt Requirement of GATA-1 and p45 NF-E2 expression in butyric acid -induced erythroid differentiation .
+fof(ex1414052008774,axiom,(
+    ? [X1,X2,X3,X4,G5,E6] :
+      ( butyric_acid_1(s0,X1)
+      & is_induced_of_2(s0,X2,X1)
+      & erythroid_1(s0,X2)
+      & differentiation_1(s0,X2)
+      & is_nf_e2_expression_in_2(s0,X3,X2)
+      & is_requirement_of_2(s0,X4,X3)
+      & is_of_2(s0,gata_1,G5)
+      & is_of_2(s0,p45,G5)
+      & X3 = G5
+      & xxx_1(s0,E6)
+      & link_2(s0,E6,X4) ) )).
+
+% ::id 202_nonfiction_GENIA-1999;99119105,2;NE
+% ::snt Butyric acid -LRB- BA -RRB- is known to induce overexpression of fetal hemoglobin and then erythroid differentiation .
+fof(ex1414052009166,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( butyric_acid_1(s0,X2)
+      & is_overexpression_of_2(s0,X1,G3)
+      & X2 = ba_
+      & ? [X6] :
+          ( fetal_1(s0,X6)
+          & hemoglobin_1(s0,X6)
+          & is_of_2(s0,X6,G3) )
+      & ? [X7] :
+          ( erythroid_1(s0,X7)
+          & differentiation_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & ? [S8] :
+          ( is_known_3(s0,E5,X2,S8)
+          & induce_3(S8,E4,X2,X1) ) ) )).
+
+% ::id 203_nonfiction_GENIA-1999;99119105,3;NE
+% ::snt Therefore , BA is currently under clinical investigation as a potential therapy for the treatment of sickle cell disease and cancer .
+fof(ex1414052009563,axiom,(
+    ? [X1,X2,X3,G4,X5,X6,E7] :
+      ( sickle_1(s0,X1)
+      & cell_disease_1(s0,X1)
+      & cancer_1(s0,X2)
+      & is_treatment_of_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & potential_1(s0,X5)
+      & is_therapy_for_2(s0,X5,X3)
+      & clinical_1(s0,X6)
+      & is_investigation_as_2(s0,X6,X5)
+      & therefore_1(s0,E7)
+      & currently_1(s0,E7)
+      & is_2(s0,E7,ba_)
+      & under_2(s0,E7,X6) ) )).
+
+% ::id 204_nonfiction_GENIA-1999;99119105,4;NE
+% ::snt Nevertheless , the molecular mechanisms involved in BA-induced differentiation remain largely unknown .
+fof(ex1414052009951,axiom,(
+    ? [X1,G2,E3,A5,E4] :
+      ( ba_induced_1(s0,X1)
+      & differentiation_1(s0,X1)
+      & molecular_1(s0,G2)
+      & involved_3(s0,E3,unspecified,G2)
+      & in_2(s0,E3,X1)
+      & mechanisms_1(s0,G2)
+      & largely_unknown_1(s0,A5)
+      & nevertheless_1(s0,E4)
+      & remain_3(s0,E4,G2,A5) ) )).
+
+% ::id 205_nonfiction_GENIA-1999;99119105,5;NE
+% ::snt Previous reports have shown that BA-induced overexpression of erythroid genes occurred at the transcriptional level , suggesting the involvement of erythroid transcription factors .
+fof(ex1414052010354,axiom,(
+    ? [X1,X2,G3,X4,G5,G6,E7,E8,E9] :
+      ( is_involvement_of_2(s0,X1,G3)
+      & transcriptional_1(s0,X2)
+      & level_1(s0,X2)
+      & erythroid_1(s0,G3)
+      & transcription_factors_1(s0,G3)
+      & ba_induced_1(s0,X4)
+      & is_overexpression_of_2(s0,X4,G5)
+      & previous_1(s0,G6)
+      & reports_1(s0,G6)
+      & erythroid_1(s0,G5)
+      & genes_1(s0,G5)
+      & is_before_2(s0,E8,E9)
+      & suggesting_3(s0,E7,G6,X1)
+      & ? [S10] :
+          ( have_shown_3(s0,E9,G6,S10)
+          & occurred_2(S10,E8,X4)
+          & at_2(S10,E8,X2) ) ) )).
+
+% ::id 206_nonfiction_GENIA-1999;99119105,6;NE
+% ::snt Here , we intend to demonstrate the requirement of GATA-1 and NF-E2 transcription factors in the BA-induced erythroid differentiation of human leukemic K562 cells .
+fof(ex1414052010753,axiom,(
+    ? [X1,X2,X3,X4,X10,G5,G6,G7,S11,E8,E9] :
+      ( gata_1_1(s0,X1)
+      & nf_e2_1(s0,X2)
+      & ba_induced_1(s0,X3)
+      & erythroid_1(s0,X3)
+      & is_differentiation_of_2(s0,X3,G6)
+      & is_requirement_in_2(s0,X4,X3)
+      & is_requirement_of__2(s0,X4,G7)
+      & transcription_factors_1(s0,G7)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & G7 = G5
+      & human_leukemic_k562_cells_1(s0,G6)
+      & here_1(s0,S11)
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & ? [S13] :
+              ( intend_3(S12,E9,X10,S13)
+              & demonstrate_3(S13,E8,X10,X4) ) ) ) )).
+
+% ::id 207_nonfiction_GENIA-1999;99119105,7;NE
+% ::snt Time-course experiments showed that nuclear levels of GATA-1 and p45 NF-E2 proteins increased during BA treatment .
+fof(ex1414052011161,axiom,(
+    ? [X1,G2,G3,G4,G5,E6,E7] :
+      ( ba__treatment_1(s0,X1)
+      & time_course_1(s0,G5)
+      & experiments_1(s0,G5)
+      & nf_e2_proteins_1(s0,G3)
+      & is_of_2(s0,gata_1,G2)
+      & is_of_2(s0,p45,G2)
+      & G3 = G2
+      & nuclear_1(s0,G4)
+      & is_levels_of_2(s0,G4,G3)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S8] :
+          ( showed_3(s0,E7,G5,S8)
+          & increased_2(S8,E6,G4)
+          & during_2(S8,E6,X1) ) ) )).
+
+% ::id 208_nonfiction_GENIA-1999;99119105,8;NE
+% ::snt Moreover , antisense oligodeoxynucleotides targeting either GATA-1 or p45 NF-E2 proteins inhibited both protein expression and BA-induced differentiation .
+fof(ex1414052011556,axiom,(
+    ? [G1,G2,G3,S5,E4] :
+      ( nf_e2_proteins_1(s0,G2)
+      & is_of_2(s0,gata_1,G1)
+      & is_of_2(s0,p45,G1)
+      & G2 = G1
+      & antisense_1(s0,G3)
+      & targeting_3(s0,E4,G3,G2)
+      & oligodeoxynucleotides_1(s0,G3)
+      & moreover_1(s0,S5)
+      & ? [S11] :
+          ( fact_2(s0,S5,S11)
+          & ? [G6,G7,E8] :
+              ( ? [X9] :
+                  ( protein_expression_1(S11,X9)
+                  & is_of_2(S11,X9,G7) )
+              & ? [X10] :
+                  ( ba_induced_1(S11,X10)
+                  & differentiation_1(S11,X10)
+                  & is_of_2(S11,X10,G7) )
+              & G6 = G7
+              & is_before_2(S11,E8,e0)
+              & inhibited_3(S11,E8,G3,G6) ) ) ) )).
+
+% ::id 209_nonfiction_GENIA-1999;99119105,9;NE
+% ::snt In contrast , BA-induced cell growth inhibition was not affected .
+fof(ex1414052011937,axiom,(
+    ? [X1] :
+      ( ba_induced_1(s0,X1)
+      & cell_growth_inhibition_1(s0,X1)
+      & ? [X2,E3] :
+          ( contrast_1(s0,X2)
+          & is_before_2(s0,E3,e0)
+          & affected_3(s0,E3,unspecified,X1)
+          & in_2(s0,E3,X2) ) ) )).
+
+% ::id 210_nonfiction_GENIA-1999;99119105,10;NE
+% ::snt These results provide the first direct evidence for the requirement of GATA-1 and NF-E2 in BA-induced differentiation process .
+fof(ex1414052012326,axiom,(
+    ? [X1,X2,X3,G4,G5,E6] :
+      ( ba_induced_1(s0,X1)
+      & differentiation_process_1(s0,X1)
+      & is_requirement_in_2(s0,X2,X1)
+      & is_requirement_of_2(s0,X2,G4)
+      & first_1(s0,X3)
+      & direct_1(s0,X3)
+      & is_evidence_for_2(s0,X3,X2)
+      & results_1(s0,G5)
+      & is_of_2(s0,gata_1,G4)
+      & is_of_2(s0,nf_e2,G4)
+      & provide_3(s0,E6,G5,X3) ) )).
+
+% ::id 211_nonfiction_GENIA-1999;99120322,1;NE
+% ::snt A novel growth-factor-dependent myeloid cell line derived from mouse bone marrow cells contains progenitors endowed with high proliferative potential .
+fof(ex1414052012718,axiom,(
+    ? [X1,X2,G3,G4,E5,E6] :
+      ( novel_1(s0,X2)
+      & growth_factor_dependent_1(s0,X2)
+      & myeloid_1(s0,X2)
+      & derived_3(s0,E5,unspecified,X2)
+      & from_2(s0,E5,G3)
+      & cell_line_1(s0,X2)
+      & high_1(s0,X1)
+      & proliferative_1(s0,X1)
+      & potential_1(s0,X1)
+      & mouse_bone_marrow_cells_1(s0,G3)
+      & is_endowed_with_2(s0,G4,X1)
+      & progenitors_1(s0,G4)
+      & contains_3(s0,E6,X2,G4) ) )).
+
+% ::id 212_nonfiction_GENIA-1999;99120322,2;NE
+% ::snt Constitutive expression of human colony-stimulating factor-1 receptor -LRB- CSF-1R -RRB- confers long-lasting CSF-1-dependent proliferation to mouse myeloid cell lines .
+fof(ex1414052013111,axiom,(
+    ? [X1,X2,X3,X4,G5,E6] :
+      ( human_colony_stimulating_factor_1_receptor_1(s0,X2)
+      & csf_1r__1(s0,X1)
+      & constitutive_1(s0,X4)
+      & is_expression_of_2(s0,X4,X2)
+      & long_lasting_1(s0,X3)
+      & csf_1_dependent_1(s0,X3)
+      & is_proliferation_to_2(s0,X3,G5)
+      & X2 = X1
+      & mouse_myeloid_cell_lines_1(s0,G5)
+      & confers_3(s0,E6,X4,X3) ) )).
+
+% ::id 213_nonfiction_GENIA-1999;99120322,3;NE
+% ::snt We developed mice transgenic for human CSF-1R because mouse CSF-1 can not activate human CSF-1R .
+fof(ex1414052013504,axiom,(
+    ? [X5,X1,X2,G3,E4] :
+      ( human_1(s0,X1)
+      & csf_1r__1(s0,X1)
+      & mouse_csf_1_1(s0,X2)
+      & is_transgenic_for_2(s0,G3,X1)
+      & mice_1(s0,G3)
+      & is_before_2(s0,E4,e0)
+      & ? [X6,E7] :
+          ( human_1(s0,X6)
+          & csf_1r__1(s0,X6)
+          & activate_3(s0,E7,X2,X6) )
+      & developed_3(s0,E4,X5,G3) ) )).
+
+% ::id 214_nonfiction_GENIA-1999;99120322,4;NE
+% ::snt Then bone marrow cells from transgenic mice were plated onto MS-5 stromal cells expressing the membrane form of human CSF-1 -LRB- 2M-1 cells -RRB- in order to combine the hematopoietic supporting properties of stromal cells and the proliferative effects of CSF-1 .
+fof(ex1414052013928,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,X8,G9,G10,G11,G12,S16,E13,E14,E15] :
+      ( human_1(s0,X1)
+      & csf_1_1(s0,X1)
+      & is_membrane_form_of_2(s0,X2,X1)
+      & csf_1_1(s0,X3)
+      & predicate__2m_1_cells_1(s0,G4)
+      & X1 = G4
+      & stromal_1(s0,G5)
+      & cells_1(s0,G5)
+      & hematopoietic_1(s0,G6)
+      & is_supporting_properties_of_2(s0,G6,G5)
+      & proliferative_1(s0,G7)
+      & is_effects_of_2(s0,G7,X3)
+      & ? [S17] :
+          ( order_2(s0,X8,S17)
+          & combine_3(S17,E14,unspecified,G10) )
+      & transgenic_1(s0,G9)
+      & mice_1(s0,G9)
+      & is_bone_marrow_cells_from_2(s0,G12,G9)
+      & expressing_3(s0,E13,G11,X2)
+      & ms_5_stromal_cells_1(s0,G11)
+      & is_of_2(s0,G6,G10)
+      & is_of_2(s0,G7,G10)
+      & then_1(s0,S16)
+      & is_before_2(s0,E15,e0)
+      & ? [S18] :
+          ( fact_2(s0,S16,S18)
+          & plated_3(S18,E15,unspecified,G12)
+          & onto_2(S18,E15,G11)
+          & in_2(S18,E15,X8) ) ) )).
+
+% ::id 215_nonfiction_GENIA-1999;99120322,5;NE
+% ::snt Thus , we were able to derive a hematopoietic cell line , called 47.10 , that grew indefinitely under these conditions , whereas no cell line could be developed from nontransgenic mice .
+fof(ex1414052014359,axiom,(
+    ? [X7,G1,X2,A9,S8,E3,E4,E5,E6,S10] :
+      ( conditions_1(s0,G1)
+      & hematopoietic_1(s0,X2)
+      & called_3(s0,E3,X2,constant__47_10)
+      & grew_2(s0,E4,X2)
+      & under_2(s0,E4,G1)
+      & cell_line_1(s0,X2)
+      & ? [S14] :
+          ( able_2(s0,A9,S14)
+          & derive_3(S14,E5,unspecified,X2) )
+      & thus_1(s0,S8)
+      & indefinitely_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S15] :
+          ( fact_2(s0,S10,S15)
+          & ? [X11] :
+              ( cell_line_1(S15,X11)
+              & ? [G12,E13] :
+                  ( nontransgenic_1(S15,G12)
+                  & mice_1(S15,G12)
+                  & developed_3(S15,E13,unspecified,X11)
+                  & from_2(S15,E13,G12) ) ) )
+      & ? [S16] :
+          ( fact_2(s0,S8,S16)
+          & were_3(S16,E6,X7,A9)
+          & whereas_2(S16,E6,S10) ) ) )).
+
+% ::id 216_nonfiction_GENIA-1999;99120322,6;NE
+% ::snt Proliferation of 47.10 cells is severely affected by neutralizing anti-CSF-1R monoclonal antibodies .
+fof(ex1414052014757,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( is_proliferation_of_2(s0,X1,G2)
+      & predicate__47_10_cells_1(s0,G2)
+      & neutralizing_1(s0,G3)
+      & anti_csf_1r__1(s0,G3)
+      & monoclonal_1(s0,G3)
+      & antibodies_1(s0,G3)
+      & severely_1(s0,E4)
+      & affected_3(s0,E4,G3,X1) ) )).
+
+% ::id 217_nonfiction_GENIA-1999;99120322,7;NE
+% ::snt Morphologic and cytofluorometry analysis established that most 47.10 cells are immature myelomonocytic cells .
+fof(ex1414052015144,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( morphologic_1(s0,X1)
+      & cytofluorometry_1(s0,X1)
+      & analysis_1(s0,X1)
+      & immature_1(s0,G2)
+      & myelomonocytic_1(s0,G2)
+      & cells_1(s0,G2)
+      & is_before_2(s0,E4,e0)
+      & ? [S6] :
+          ( established_3(s0,E4,X1,S6)
+          & ? [G5] :
+              ( predicate__47_10_cells_1(S6,G5)
+              & are_3(S6,E3,G5,G2) ) ) ) )).
+
+% ::id 218_nonfiction_GENIA-1999;99120322,8;NE
+% ::snt Consistent with this phenotype , the myeloid transcription factor PU.1 , but not the erythroid transcription factor GATA-1 , is expressed in 47.10 cells .
+fof(ex1414052015537,axiom,(
+    ? [X1,X2,X3,G4,G5,E6] :
+      ( myeloid_1(s0,X1)
+      & transcription_factor_1(s0,X1)
+      & erythroid_1(s0,X2)
+      & transcription_factor_1(s0,X2)
+      & phenotype_1(s0,X3)
+      & X1 = pu_1
+      & X2 = gata_1
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & predicate__47_10_cells_1(s0,G4)
+      & is_consistent_with_2(s0,G5,X3)
+      & expressed_3(s0,E6,unspecified,G5)
+      & in_2(s0,E6,G4) ) )).
+
+% ::id 219_nonfiction_GENIA-1999;99120322,9;NE
+% ::snt A few 47.10 cells -LRB- 3-5 % -RRB- do not express lineage specific markers ;
+ERROR: Line 4 Char 5 Token "?" continuing with "G2]:(
+"
+
+% ::id 220_nonfiction_GENIA-1999;99120322,9;NE
+% ::snt they differentiate spontaneously to lineage-positive cells after replating on 2M-1 cells .
+fof(ex1414052016308,axiom,(
+    ? [G5,G1,G2,S6,E3,E4] :
+      ( lineage_positive_1(s0,G2)
+      & cells_1(s0,G2)
+      & predicate__2m_1_cells_1(s0,G1)
+      & spontaneously_1(s0,S6)
+      & ? [S7] :
+          ( fact_2(s0,S6,S7)
+          & replating_2(S7,E3,G5)
+          & on_2(S7,E3,G1)
+          & differentiate_2(S7,E4,G5)
+          & to_2(S7,E4,G2) ) ) )).
+
+% ::id 221_nonfiction_GENIA-1999;99120322,10;NE
+% ::snt In agar cultures , 47.10 cells form 7- and 14 -day colonies in response to a cocktail of granulocyte/macrophage colony-stimulating factor -LRB- 2.5 ng/mL -RRB- , interleukin-3 -LRB- 1 ng/mL -RRB- , and mouse CSF-1 -LRB- 10 ng/mL -RRB- .
+fof(ex1414052016715,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,T7,E8] :
+      ( is_cocktail_of_2(s0,X1,G3)
+      & is_response_to_2(s0,X2,X1)
+      & predicate__47_10_cells_1(s0,G6)
+      & agar_cultures_1(s0,G5)
+      & is_colonies_tmp_2(s0,G4,T7)
+      & ? [X9,X10] :
+          ( is_granulocyte__slash__macrophage_colony_stimulating_factor_msr_2(s0,X9,X10)
+          & predicate__2_5_1(s0,X10)
+          & ng__slash__ml_1(s0,X10)
+          & is_of_2(s0,X9,G3) )
+      & ? [X11] :
+          ( predicate__1_1(s0,X11)
+          & ng__slash__ml_1(s0,X11)
+          & is_msr_of_2(s0,interleukin_3,X11)
+          & is_of_2(s0,interleukin_3,G3) )
+      & ? [X12,X13] :
+          ( is_mouse_csf_1_msr_2(s0,X12,X13)
+          & predicate__10_1(s0,X13)
+          & ng__slash__ml_1(s0,X13)
+          & is_of_2(s0,X12,G3) )
+      & predicate__7_and_14_1(s0,T7)
+      & predicate___day_1(s0,T7)
+      & form_3(s0,E8,G6,G4)
+      & in__2(s0,E8,G5)
+      & in_2(s0,E8,X2) ) )).
+
+% ::id 222_nonfiction_GENIA-1999;99120322,11;NE
+% ::snt Under these conditions , about 0.5 % of 47.10 cells formed large 14 -day colonies -LRB- > 1 mm -RRB- composed of mature monocytes and granulocytes , reflecting the presence of progenitors endowed with high proliferative potential -LRB- HPP-47.10 cells -RRB- .
+ERROR: Line 11 Char 19 Token "mature_1" continuing with "s0, G8) &
+"
+
+% ::id 223_nonfiction_GENIA-1999;99120322,12;NE
+% ::snt In conclusion , we have characterized a novel continuous myeloid cell line presenting a hierarchical structure similar to that of the bone marrow progenitor cell compartment .
+fof(ex1414052017538,axiom,(
+    ? [X1,X2,X8,X3,X4,X5,E6,E7] :
+      ( bone_marrow_progenitor_cell_compartment_1(s0,X1)
+      & is_of_2(s0,X2,X1)
+      & conclusion_1(s0,X5)
+      & hierarchical_1(s0,X3)
+      & is_similar_to_2(s0,X3,X2)
+      & structure_1(s0,X3)
+      & novel_continuous_myeloid_1(s0,X4)
+      & presenting_3(s0,E6,X4,X3)
+      & cell_line_1(s0,X4)
+      & have_characterized_3(s0,E7,X8,X4)
+      & in_2(s0,E7,X5) ) )).
+
+% ::id 224_nonfiction_GENIA-1999;99120900,1;NE
+% ::snt Imbalanced expression of the glucocorticoid receptor isoforms in cultured lymphocytes from a patient with systemic glucocorticoid resistance and chronic lymphocytic leukemia .
+fof(ex1414052017936,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,X7,E8] :
+      ( systemic_1(s0,X1)
+      & glucocorticoid_resistance_1(s0,X1)
+      & chronic_1(s0,X2)
+      & lymphocytic_1(s0,X2)
+      & leukemia_1(s0,X2)
+      & is_patient_with_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & cultured_1(s0,G5)
+      & is_lymphocytes_from_2(s0,G5,X3)
+      & is_glucocorticoid_receptor_isoforms_in_2(s0,G6,G5)
+      & imbalanced_1(s0,X7)
+      & is_expression_of_2(s0,X7,G6)
+      & xxx_1(s0,E8)
+      & link_2(s0,E8,X7) ) )).
+
+% ::id 225_nonfiction_GENIA-1999;99120900,2;NE
+% ::snt The human glucocorticoid receptor -LRB- GR -RRB- is expressed as two alternatively spliced isoforms , GRalpha and GRbeta .
+fof(ex1414052018327,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( human_1(s0,X2)
+      & glucocorticoid_receptor_1(s0,X2)
+      & gr__1(s0,X1)
+      & X2 = X1
+      & two_1(s0,G4)
+      & alternatively_spliced_1(s0,G4)
+      & isoforms_1(s0,G4)
+      & is_of_2(s0,gralpha,G3)
+      & is_of_2(s0,grbeta,G3)
+      & G4 = G3
+      & expressed_3(s0,E5,unspecified,X2)
+      & as_2(s0,E5,G4) ) )).
+
+% ::id 226_nonfiction_GENIA-1999;99120900,3;NE
+% ::snt Whereas GRalpha is a hormone-activated transcription factor , GRbeta does not bind glucocorticoids -LRB- GCs -RRB- , is transcriptionally inactive , and is a potential inhibitor of activated GRalpha .
+fof(ex1414052018728,axiom,(
+    ? [X1,X2,A10,E3,E4,E5,S6] :
+      ( hormone_activated_1(s0,X1)
+      & transcription_factor_1(s0,X1)
+      & potential_1(s0,X2)
+      & is_inhibitor_of_2(s0,X2,activated_gralpha)
+      & transcriptionally_inactive_1(s0,A10)
+      & ? [S11] :
+          ( fact_2(s0,S6,S11)
+          & is_3(S11,E3,gralpha,X1) )
+      & ? [G7,G8,E9] :
+          ( glucocorticoids_1(s0,G8)
+          & gcs_1(s0,G7)
+          & G8 = G7
+          & does_bind_3(s0,E9,grbeta,G8)
+          & whereas_2(s0,E9,S6) )
+      & is_3(s0,E4,grbeta,A10)
+      & whereas_2(s0,E4,S6)
+      & is_3(s0,E5,grbeta,X2)
+      & whereas_2(s0,E5,S6) ) )).
+
+% ::id 227_nonfiction_GENIA-1999;99120900,4;NE
+% ::snt Differential expression of GR isoforms may play a role in generalized or tissue-specific GC resistance .
+fof(ex1414052019121,axiom,(
+    ? [X1,G2] :
+      ( differential_1(s0,X1)
+      & is_expression_of_2(s0,X1,G2)
+      & gr__isoforms_1(s0,G2)
+      & ? [X3,G4,E5] :
+          ( is_role_in_2(s0,X3,G4)
+          & ? [X6] :
+              ( generalized_1(s0,X6)
+              & gc__resistance_1(s0,X6)
+              & is_of_2(s0,X6,G4) )
+          & ? [X7] :
+              ( tissue_specific_1(s0,X7)
+              & gc__resistance_1(s0,X7)
+              & is_of_2(s0,X7,G4) )
+          & play_3(s0,E5,X1,X3) ) ) )).
+
+% ::id 228_nonfiction_GENIA-1999;99120900,5;NE
+% ::snt GCs induce apoptosis in neoplastic lymphoid cells ;
+fof(ex1414052019500,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( is_apoptosis_in_2(s0,X1,G2)
+      & gcs_1(s0,G3)
+      & neoplastic_1(s0,G2)
+      & lymphoid_1(s0,G2)
+      & cells_1(s0,G2)
+      & induce_3(s0,E4,G3,X1) ) )).
+
+% ::id 229_nonfiction_GENIA-1999;99120900,5;NE
+% ::snt and , defective apoptosis is implicated in the genesis of chronic lymphocytic leukemia -LRB- CLL -RRB- .
+fof(ex1414052019888,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( chronic_1(s0,X1)
+      & lymphocytic_1(s0,X1)
+      & leukemia_1(s0,X1)
+      & is_genesis_of_2(s0,X2,X1)
+      & X1 = cll_
+      & defective_1(s0,X3)
+      & apoptosis_1(s0,X3)
+      & implicated_3(s0,E4,unspecified,X3)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 230_nonfiction_GENIA-1999;99120900,6;NE
+% ::snt We studied a patient with generalized GC resistance and CLL .
+fof(ex1414052020271,axiom,(
+    ? [X4,X1,G2,E3] :
+      ( is_patient_with_2(s0,X1,G2)
+      & ? [X5] :
+          ( generalized_1(s0,X5)
+          & gc__resistance_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & is_of_2(s0,cll_,G2)
+      & is_before_2(s0,E3,e0)
+      & studied_3(s0,E3,X4,X1) ) )).
+
+% ::id 231_nonfiction_GENIA-1999;99120900,7;NE
+% ::snt GR number in the patient's transformed lymphocytes was approximately one half that of control cells with a approximately 10-fold reduction in binding affinity for dexamethasone .
+fof(ex1414052020667,axiom,(
+    ? [X1,G2,G3,X4,X5,X6,G7,E8] :
+      ( patient_1(s0,X1)
+      & control_1(s0,G2)
+      & cells_1(s0,G2)
+      & approximately_one_half_1(s0,G3)
+      & is_of_2(s0,G3,G2)
+      & is_gr__number_in_2(s0,X6,G7)
+      & is_binding_affinity_for_2(s0,X4,dexamethasone)
+      & approximately_10_fold_1(s0,X5)
+      & is_reduction_in_2(s0,X5,X4)
+      & transformed_1(s0,G7)
+      & is_lymphocytes_of_2(s0,G7,X1)
+      & is_before_2(s0,E8,e0)
+      & was_3(s0,E8,X6,G3)
+      & with_2(s0,E8,X5) ) )).
+
+% ::id 232_nonfiction_GENIA-1999;99120900,8;NE
+% ::snt In vitro apoptosis induction in CLL cells was delayed in response to GCs , but not to other apoptosis inducers .
+fof(ex1414052021060,axiom,(
+    ? [X1,X2,G3,G4,E5,E6] :
+      ( in_vitro_1(s0,X2)
+      & is_apoptosis_induction_in_2(s0,X2,G3)
+      & is_response_to_2(s0,X1,G4)
+      & cll__cells_1(s0,G3)
+      & gcs_1(s0,G4)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & delayed_3(s0,E5,unspecified,X2)
+      & in_2(s0,E5,X1)
+      & ? [G7] :
+          ( apoptosis_inducers_1(s0,G7)
+          & ? [X8] :
+              ( is_of_2(s0,X8,G7)
+              & delayed_3(s0,E6,unspecified,X2)
+              & to_2(s0,E6,X8) ) ) ) )).
+
+% ::id 233_nonfiction_GENIA-1999;99120900,9;NE
+% ::snt Sequencing of the GR cDNA and gene including the 2.3-kb coding region , the intron/exon junctions , the known 5'-regulatory region , and approximately 300 bp of the 3'-region revealed no alterations .
+fof(ex1414052021467,axiom,(
+    ? [X1,X2,X3,X4,G5,X6,G7,G8,G9,E10] :
+      ( predicate__2_3_kb_1(s0,X1)
+      & coding_region_1(s0,X1)
+      & known_1(s0,X2)
+      & predicate__5_regulatory_1(s0,X2)
+      & region_1(s0,X2)
+      & predicate__3_region_1(s0,X3)
+      & gr__cdna__1(s0,X4)
+      & intron__slash__exon_junctions_1(s0,G5)
+      & is_sequencing_of_2(s0,X6,G9)
+      & is_of_2(s0,X1,G7)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,X2,G7)
+      & ? [G11] :
+          ( approximately_300_1(s0,G11)
+          & is_bp_of_2(s0,G11,X3)
+          & is_of_2(s0,G11,G7) )
+      & including_3(s0,E10,G9,G7)
+      & is_of_2(s0,X4,G8)
+      & ? [X12] :
+          ( gene_1(s0,X12)
+          & is_of_2(s0,X12,G8) )
+      & G9 = G8
+      & ? [G13,E14] :
+          ( alterations_1(s0,G13)
+          & is_before_2(s0,E14,e0)
+          & revealed_3(s0,E14,X6,G13) ) ) )).
+
+% ::id 234_nonfiction_GENIA-1999;99120900,10;NE
+% ::snt Western blot with an N-terminal antibody showed normal levels of immunoreactive GR ,
+fof(ex1414052021855,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( n_terminal_1(s0,X1)
+      & antibody_1(s0,X1)
+      & is_western_blot_with_2(s0,X3,X1)
+      & immunoreactive_1(s0,X2)
+      & gr__1(s0,X2)
+      & normal_1(s0,G4)
+      & is_levels_of_2(s0,G4,X2)
+      & is_before_2(s0,E5,e0)
+      & showed_3(s0,E5,X3,G4) ) )).
+
+% ::id 235_nonfiction_GENIA-1999;99120900,10;NE
+% ::snt but quantitative analysis with isoform-specific C-terminal antibodies revealed a markedly reduced GRalpha expression , and high GRbeta expression .
+fof(ex1414052022243,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( quantitative_1(s0,X1)
+      & is_analysis_with_2(s0,X1,G2)
+      & isoform_specific_1(s0,G2)
+      & c_terminal_1(s0,G2)
+      & antibodies_1(s0,G2)
+      & ? [X5] :
+          ( markedly_reduced_1(s0,X5)
+          & gralpha_expression_1(s0,X5)
+          & is_of_2(s0,X5,G3) )
+      & ? [X6] :
+          ( high_grbeta_expression_1(s0,X6)
+          & is_of_2(s0,X6,G3) )
+      & is_before_2(s0,E4,e0)
+      & revealed_3(s0,E4,X1,G3) ) )).
+
+% ::id 236_nonfiction_GENIA-1999;99120900,11;NE
+% ::snt These findings indicate that imbalanced expression of the GR isoforms may be a mechanism of GC resistance , and may have implications for tumorigenesis by enhancing cell survival .
+fof(ex1414052022648,axiom,(
+    ? [G1,G2,X3,E4] :
+      ( findings_1(s0,G2)
+      & gr__isoforms_1(s0,G1)
+      & imbalanced_1(s0,X3)
+      & is_expression_of_2(s0,X3,G1)
+      & ? [S13] :
+          ( indicate_3(s0,E4,G2,S13)
+          & ? [X5,X6,E7] :
+              ( gc__resistance_1(S13,X5)
+              & is_mechanism_of_2(S13,X6,X5)
+              & be_3(S13,E7,X3,X6) )
+          & ? [X8,X9,G10,E11,E12] :
+              ( tumorigenesis_1(S13,X8)
+              & cell_survival_1(S13,X9)
+              & is_implications_for_2(S13,G10,X8)
+              & enhancing_3(S13,E11,G10,X9)
+              & have_3(S13,E12,X3,G10) ) ) ) )).
+
+% ::id 237_nonfiction_GENIA-1999;99120900,12;NE
+% ::snt Copyright 1999 Academic Press .
+fof(ex1414052023027,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link__2(s0,E1,copyright_1999)
+      & link_2(s0,E1,academic_press) ) )).
+

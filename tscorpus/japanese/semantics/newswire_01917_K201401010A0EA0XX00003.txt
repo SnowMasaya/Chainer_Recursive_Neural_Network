@@ -1,0 +1,404 @@
+# ::id 1_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 盛り上がれ２０１４東北（１）
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[盛り上がれ２０１４東北（１）])
+
+# ::id 2_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ／ 岩手
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[岩手])
+
+# ::id 3_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ／ ＳＬ銀河運行
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[ＳＬ銀河運行])
+
+# ::id 4_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ／ 復興 の 起爆剤 、
+∃ EVENT[3] ENTITY[2] ENTITY[1] (復興(ENTITY[2]) ∧ の_起爆剤(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 5_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 雄姿復活
+∃ EVENT[2] ENTITY[1] (雄姿復活(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ＪＲ釜石線 （ 花巻－釜石駅 、 ９０．２ キロ ） に ４ 月 、 蒸気機関車 （ ＳＬ ） が 復活 する 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] TIME[1] (
+ namely_-ENTITY-(ENTITY[花巻－釜石駅_９０．２_キロ], ENTITY[ＪＲ釜石線]) ∧
+  CD_４_月(TIME[1]) ∧
+   蒸気機関車(ENTITY[3]) ∧
+    ＳＬ(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      復活する.0(EVENT[4], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]) ∧ に(EVENT[4]) = ENTITY[ＪＲ釜石線])
+
+# ::id 7_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 東日本大震災 の 復興支援 を 目的 に 、 ＪＲ東日本 が 企画 し た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ の_復興支援(ENTITY[東日本大震災], ENTITY[2]) ∧
+  を_目的(ENTITY[2], ENTITY[1]) ∧
+   past(EVENT[3]) ∧ 企画する.0_た(EVENT[3], ENTITY[ＪＲ東日本]) ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 8_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 釜石線 を モデル に し た 宮沢賢治 の 代表作「銀河鉄道の夜」 に ちなみ 「 ＳＬ銀河 」 と 名付け られ 、 多く の 県民 や 観光客 に 雄姿 を 披露 する 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[8] EVENT[13] ENTITY[5] ENTITY[4] ENTITY[12] GROUP[9] (
+ ENTITY[1] = *pro* ∧
+  釜石線(ENTITY[4]) ∧
+   モデル(ENTITY[5]) ∧
+    し_た(EVENT[6], ENTITY[代表作「銀河鉄道の夜」], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+     の_xxx(ENTITY[宮沢賢治], ENTITY[代表作「銀河鉄道の夜」]) ∧
+      ちなみ(EVENT[7], ENTITY[ＳＬ銀河]) ∧ に(EVENT[7]) = ENTITY[代表作「銀河鉄道の夜」] ∧
+       CONJ_や(多く_の ENTITY[10] (県民(ENTITY[10]), is_element_of(ENTITY[10], GROUP[9])),
+        ∃ ENTITY[11] (観光客(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+        雄姿(ENTITY[12]) ∧
+         past(EVENT[6]) ∧
+          名付け(EVENT[8], _, ENTITY[1]) ∧ と(EVENT[8]) = ENTITY[ＳＬ銀河] ∧
+           披露する.0(EVENT[13], ENTITY[1], ENTITY[12]) ∧ に(EVENT[13]) = GROUP[9])
+
+# ::id 9_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ＳＬ銀河 は １９４３ 年 、 山田線 に 導入 さ れ た Ｃ５８形機関車 。
+∃ EVENT[3] EVENT[4] TIME[1] (
+ CD_１９４３_年(TIME[1]) ∧
+  導入する.0_た(EVENT[3], _, ENTITY[Ｃ５８形機関車]) ∧ に(EVENT[3]) = ENTITY[山田線] ∧
+   past(EVENT[3]) ∧ xxx(EVENT[4], ENTITY[ＳＬ銀河], ENTITY[Ｃ５８形機関車]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 10_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ７０ 年 まで 盛岡－宮古駅間 の 起伏 の ある 路線 を 走り続け た 。
+∃ ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_７０_年(ENTITY[2]) ∧
+   の_起伏(ENTITY[盛岡－宮古駅間], ENTITY[5]) ∧
+    ある(EVENT[6], ENTITY[5]) ∧ LOC(EVENT[6]) = ENTITY[3] ∧ 路線(ENTITY[3]) ∧
+     past(EVENT[7]) ∧ 走り続け_た(EVENT[7], ENTITY[1], ENTITY[3]) ∧ まで(EVENT[7]) = ENTITY[2])
+
+# ::id 11_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 当時 機関士 として 運転 し た 盛岡市 の 佐藤武志さん （ ７４ ） は 「 蒸気機関車 として は 小型 だっ た が 、 小回り が 利い て 馬力 も あり 、 上り坂 も 苦 に し なかっ た 」 と 懐かしむ 。
+∃ ENTITY[11] ENTITY[7] EVENT[10] EVENT[6] ENTITY[9] EVENT[5] ENTITY[4] TIME[3] ENTITY[1] ENTITY[8] (
+ 当時(TIME[3]) ∧
+  機関士(ENTITY[4]) ∧
+   運転する.0_た(EVENT[5], ENTITY[佐藤武志さん]) ∧ として(EVENT[5]) = ENTITY[4] ∧ is_contained_in(時間(EVENT[5]), TIME[3]) ∧
+    の_xxx(ENTITY[盛岡市], ENTITY[佐藤武志さん]) ∧
+     CD_７４(ENTITY[1]) ∧
+      namely_-ENTITY-(ENTITY[1], ENTITY[佐藤武志さん]) ∧
+       蒸気機関車(ENTITY[8]) ∧
+        past(EVENT[5]) ∧
+         ENTITY[7] = *pro*{ENTITY[佐藤武志さん], ENTITY[1], ENTITY[盛岡市], ENTITY[4]} ∧
+          小型(ENTITY[9]) ∧
+           ENTITY[11] = *pro*{ENTITY[9], ENTITY[8], ENTITY[佐藤武志さん], ENTITY[1], ENTITY[盛岡市], ENTITY[4]} ∧
+            before(EVENT[6], EVENT[10]) ∧
+             懐かしむ(EVENT[6], ENTITY[佐藤武志さん],
+              CONJ_が(だっ_た(EVENT[10], ENTITY[7], ENTITY[9]) ∧ として(EVENT[10]) = ENTITY[8],
+               ¬ ∃ EVENT[13] EVENT[15] EVENT[18] ENTITY[12] ENTITY[14] ENTITY[17] ENTITY[16] (
+                     小回り(ENTITY[12]) ∧
+                      馬力(ENTITY[14]) ∧
+                       上り坂(ENTITY[16]) ∧
+                        苦(ENTITY[17]) ∧
+                         before(EVENT[6], EVENT[18]) ∧
+                          CONJ_te(利い_て(EVENT[13], ENTITY[12]), あり(EVENT[15], ENTITY[14])) ∧
+                           し_た(EVENT[18], ENTITY[11], ENTITY[16], ENTITY[17])))))
+
+# ::id 12_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 引退 し た Ｃ５８ は ７３ 年 から 、 盛岡市 の 岩手県営運動公園 に 展示保存 さ れ て い た 。
+∃ EVENT[4] ENTITY[3] EVENT[2] (
+ past(EVENT[2]) ∧
+  引退する.0_た(EVENT[2], ENTITY[Ｃ５８]) ∧
+   CD_７３_年(ENTITY[3]) ∧
+    の_xxx(ENTITY[盛岡市], ENTITY[岩手県営運動公園]) ∧
+     past(EVENT[4]) ∧
+      展示保存する.0_て_い_た(EVENT[4], _, ENTITY[Ｃ５８]) ∧ に(EVENT[4]) = ENTITY[岩手県営運動公園] ∧ から(EVENT[4]) = ENTITY[3])
+
+# ::id 13_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 佐藤さんら鉄道マン を 中心 に 設立 さ れ た 「 盛岡ＳＬ等保存会 」 が 、 春 と 秋 の 年 ２ 回 、 地域住民 と 一緒 に 清掃 や 整備 を 続け て き た 。
+∃ ENTITY[1] EVENT[4] EVENT[14] ENTITY[3] GROUP[6] GROUP[11] ENTITY[10] ENTITY[9] TIME[5] (
+ ENTITY[1] = *pro* ∧
+  中心(ENTITY[3]) ∧
+   設立する.0_た(EVENT[4], _, ENTITY[佐藤さんら鉄道マン], ENTITY[盛岡ＳＬ等保存会]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+    CONJ_と(∃ ENTITY[7] (春(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[8] (秋(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+     (CD_年_２_回(TIME[5]), の(GROUP[6], TIME[5])) ∧
+      地域住民(ENTITY[9]) ∧
+       一緒(ENTITY[10]) ∧
+        CONJ_や(∃ ENTITY[12] (清掃(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+         ∃ ENTITY[13] (整備(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+         past(EVENT[4]) ∧
+          past(EVENT[14]) ∧
+           続け_て_き_た(EVENT[14], ENTITY[1], GROUP[11]) ∧ に(EVENT[14]) = ENTITY[10] ∧
+            と(EVENT[14]) = ENTITY[9] ∧ is_contained_in(時間(EVENT[14]), TIME[5]) ∧
+            が(EVENT[14]) = ENTITY[盛岡ＳＬ等保存会])
+
+# ::id 14_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ２０１２ 年秋 、 観光面 で も 復興 と 地域活性化 を 後押し しよう と 、 復活 さ せる こと が 決まっ た 。
+∃ ENTITY[1] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２０１２_年秋(TIME[2]) ∧
+   ∀ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] CND_と(
+       観光面(ENTITY[3]) ∧ 復興(ENTITY[4]) ∧ 地域活性化(ENTITY[5]) ∧
+        後押しする.0(EVENT[6], ENTITY[1], ENTITY[5]) ∧ と(EVENT[6]) = ENTITY[4] ∧ で(EVENT[6]) = ENTITY[3],
+       ∃ SITUATION[7] EVENT[9] EVENT[8] EVENT[10] (
+        こと(SITUATION[7], せる(EVENT[8], 復活する.0(EVENT[9]))) ∧
+         past(EVENT[10]) ∧ 決まっ_た(EVENT[10], SITUATION[7]) ∧ is_contained_in(時間(EVENT[10]), TIME[2]))))
+
+# ::id 15_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 修理 の ため 同年 １２ 月 に さいたま市 の ＪＲ東日本大宮総合車両センター に 運び出す 際に は 、 保存会 の 会員ら 約１００ 人 が 最後 の 清掃 を し て 見送っ た 。
+∃ SITUATION[3] EVENT[7] EVENT[10] EVENT[11] ENTITY[2] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[9] ENTITY[8] ENTITY[1] (
+ 保存会(ENTITY[2]) ∧
+  (CD_約１００_人(ENTITY[1]), の_会員ら(ENTITY[2], ENTITY[1])) ∧
+   修理(ENTITY[5]) ∧
+    の_ため(ENTITY[5], ENTITY[4]) ∧
+     (CD_１２_月(ENTITY[6]), 同年(ENTITY[6])) ∧
+      の_xxx(ENTITY[さいたま市], ENTITY[ＪＲ東日本大宮総合車両センター]) ∧
+       際に(SITUATION[3],
+        運び出す(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[ＪＲ東日本大宮総合車両センター] ∧ に(EVENT[7]) = ENTITY[6] ∧
+         ADV(EVENT[7]) = ENTITY[4]) ∧
+        最後(ENTITY[9]) ∧
+         の_清掃(ENTITY[9], ENTITY[8]) ∧
+          past(EVENT[11]) ∧
+           CONJ_te(し_て(EVENT[10], ENTITY[1], ENTITY[8]) ∧ 時間(EVENT[10]) = SITUATION[3],
+            見送っ_た(EVENT[11], ENTITY[1]) ∧ 時間(EVENT[11]) = SITUATION[3]))
+
+# ::id 16_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 車両センター で は 、 ボイラー や 煙管 を 交換 。
+∃ ENTITY[1] EVENT[5] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[3] (ボイラー(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (煙管(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   交換(EVENT[5], ENTITY[1], GROUP[2]) ∧ で(EVENT[5]) = ENTITY[車両センター])
+
+# ::id 17_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 古い 部品 を 作り直す など し た ため 復元 は 当初 の 予定 より 遅れ た が 、 昨年 １２ 月 に ボイラー に 点火 し 、 石炭 を くべる 火入れ が 行わ れ た 。
+∃ ENTITY[17] SITUATION[16] ENTITY[12] SITUATION[5] ATTRIB[4] ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[11] EVENT[15] EVENT[19] EVENT[20] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[14] ENTITY[13] ENTITY[18] ENTITY[8] (
+ 復元(ENTITY[8]) ∧
+  ENTITY[2] = *pro* ∧
+   古い(ATTRIB[4]) ∧
+    ATTRIBUTE_部品(ATTRIB[4], ENTITY[3]) ∧
+     FACT(SITUATION[5], 作り直す(EVENT[6], ENTITY[3])) ∧
+      FACT(SITUATION[1], し_た(EVENT[7], ENTITY[2], ENTITY[3]) ∧ など(EVENT[7]) = SITUATION[5]) ∧
+       当初(ENTITY[10]) ∧
+        の_予定(ENTITY[10], ENTITY[9]) ∧
+         ENTITY[12] = *pro*{ENTITY[8], ENTITY[9], ENTITY[10], ENTITY[3]} ∧
+          (CD_１２_月(ENTITY[13]), 昨年(ENTITY[13])) ∧
+           ボイラー(ENTITY[14]) ∧
+            ENTITY[17] = *pro*{ENTITY[13], ENTITY[14], ENTITY[8], ENTITY[9], ENTITY[10], ENTITY[3]} ∧
+             石炭(ENTITY[18]) ∧
+              火入れ(SITUATION[16], くべる(EVENT[19], ENTITY[17], ENTITY[18])) ∧
+               past(EVENT[7]) ∧
+                past(EVENT[11]) ∧
+                 past(EVENT[20]) ∧
+                  CONJ_が(遅れ_た(EVENT[11], ENTITY[8]) ∧ より(EVENT[11]) = ENTITY[9] ∧
+                        ため(EVENT[11]) = SITUATION[1],
+                   点火する.0(EVENT[15], ENTITY[12]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+                    に(EVENT[15]) = ENTITY[13] ∧ 行わ_た(EVENT[20], _, SITUATION[16])))
+
+# ::id 18_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt １２ 月 ２０ 日 の 構内試運転 を 見守っ た 同センター の 山本哲也技術科長 は 「 盛岡 の 保存会 の 管理 が 良かっ た こと も あり 、 動き は 滑らか 。 東北復興 の 起爆剤 に なれ ば 」 と 話す 。
+∃ SITUATION[7] EVENT[10] EVENT[11] EVENT[13] EVENT[6] ENTITY[9] ENTITY[8] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[12] (
+ CD_１２_月_２０_日(ENTITY[4]) ∧
+  の_構内試運転(ENTITY[4], ENTITY[3]) ∧
+   見守っ_た(EVENT[5], ENTITY[山本哲也技術科長], ENTITY[3]) ∧
+    同センター(ENTITY[1]) ∧
+     の_xxx(ENTITY[1], ENTITY[山本哲也技術科長]) ∧
+      動き(ENTITY[12]) ∧
+       past(EVENT[5]) ∧
+        の_保存会(ENTITY[盛岡], ENTITY[9]) ∧
+         の_管理(ENTITY[9], ENTITY[8]) ∧
+          こと(SITUATION[7], 良かっ_た(EVENT[10], ENTITY[8])) ∧
+           before(EVENT[6], EVENT[10]) ∧
+            話す(EVENT[6], ENTITY[山本哲也技術科長],
+             あり(EVENT[11], SITUATION[7]) ∧ 滑らか(EVENT[13], ENTITY[12]) ∧
+              ∀ ENTITY[14] EVENT[17] ENTITY[16] ENTITY[15] CND_ば(
+                  ENTITY[14] = *pro*{ENTITY[8], ENTITY[9], ENTITY[12], ENTITY[盛岡], ENTITY[山本哲也技術科長], ENTITY[1], ENTITY[3], ENTITY[4]} ∧ 東北復興(ENTITY[16]) ∧ の_起爆剤(ENTITY[16], ENTITY[15]) ∧
+                   なれ(EVENT[17], ENTITY[14]) ∧ に(EVENT[17]) = ENTITY[15], ∃ EVENT[18] xxx(EVENT[18]))))
+
+# ::id 19_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ＪＲ東日本盛岡支社 は 幅広い 世代 に アピール し よう と 、 ＳＬ を テーマ に し た 物語 の アイデア を 公募 し 、 絵本 を 作っ た 。
+∃ EVENT[6] EVENT[7] EVENT[13] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] ENTITY[12] (
+ ＳＬ(ENTITY[4]) ∧
+  テーマ(ENTITY[5]) ∧
+   し_た(EVENT[6], ENTITY[2], ENTITY[4], ENTITY[5]) ∧ 物語(ENTITY[2]) ∧
+    の_アイデア(ENTITY[2], ENTITY[1]) ∧
+     絵本(ENTITY[12]) ∧
+      past(EVENT[6]) ∧
+       past(EVENT[13]) ∧
+        公募する.0(EVENT[7], ENTITY[ＪＲ東日本盛岡支社], ENTITY[1],
+         IMPERATIVE(∃ ATTRIB[10] ENTITY[8] EVENT[11] ENTITY[9] (
+               ENTITY[8] = *pro*{ENTITY[ＪＲ東日本盛岡支社], ENTITY[1], ENTITY[2], ENTITY[4], ENTITY[5]} ∧
+                幅広い(ATTRIB[10]) ∧
+                 ATTRIBUTE_世代(ATTRIB[10], ENTITY[9]) ∧
+                  アピールする.0_よう(EVENT[11], ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[9]))) ∧
+         作っ_た(EVENT[13], ENTITY[ＪＲ東日本盛岡支社], ENTITY[12]))
+
+# ::id 20_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 釜石線沿線 で も 、 観光振興策 を 練っ て 受け入れ に 万全 を 期す 。
+∃ ENTITY[1] EVENT[2] EVENT[5] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  受け入れ(ENTITY[3]) ∧
+   万全(ENTITY[4]) ∧
+    CONJ_te(練っ_て(EVENT[2], ENTITY[1], ENTITY[観光振興策]) ∧ で(EVENT[2]) = ENTITY[釜石線沿線],
+     期す(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3] ∧ で(EVENT[5]) = ENTITY[釜石線沿線]))
+
+# ::id 21_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 釜石市 は 特産品 を 使っ た 弁当 や 菓子 を 開発 し 、 食 の 魅力発信 に 努める 。
+∃ EVENT[4] EVENT[8] EVENT[11] ENTITY[3] GROUP[5] ENTITY[1] ENTITY[10] ENTITY[9] (
+ 特産品(ENTITY[3]) ∧
+  CONJ_や(∃ ENTITY[6] (弁当(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+   ∃ ENTITY[7] (菓子(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+   使っ_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ equals(GROUP[5], ENTITY[1]) ∧
+    食(ENTITY[10]) ∧
+     の_魅力発信(ENTITY[10], ENTITY[9]) ∧
+      past(EVENT[4]) ∧
+       開発する.0(EVENT[8], ENTITY[釜石市], ENTITY[1]) ∧ 努める(EVENT[11], ENTITY[釜石市]) ∧ に(EVENT[11]) = ENTITY[9])
+
+# ::id 22_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 遠野市 で は 観光団体 と 連携 し 「 ＳＬ停車場プロジェクト本部 」 を 発足 さ せ て ＰＲ活動 を する 。
+∃ ENTITY[1] EVENT[3] EVENT[5] EVENT[4] EVENT[7] ENTITY[2] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  観光団体(ENTITY[2]) ∧
+   ＰＲ活動(ENTITY[6]) ∧
+    連携する.0(EVENT[3], ENTITY[1]) ∧ と(EVENT[3]) = ENTITY[2] ∧
+     CONJ_te(せ_て(EVENT[4], ENTITY[1], 発足する.0(EVENT[5], ENTITY[1], ENTITY[ＳＬ停車場プロジェクト本部])) ∧ で(EVENT[4]) = ENTITY[遠野市],
+      する(EVENT[7], ENTITY[1], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[遠野市]))
+
+# ::id 23_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 佐藤さん は 「 入社当時 から 一緒 だっ た Ｃ５８ と は 一心同体 。 再び 走る 姿 を 見 られる なんて 夢 の よう だ 」 と 復活 を 楽しみ に し て いる 。
+∃ ENTITY[15] SITUATION[14] ENTITY[13] SITUATION[12] ENTITY[4] EVENT[10] EVENT[16] EVENT[18] EVENT[3] ENTITY[9] ENTITY[2] ENTITY[1] EVENT[8] ENTITY[7] ENTITY[6] (
+ 入社当時(ENTITY[6]) ∧
+  一緒(ENTITY[7]) ∧
+   だっ_た(EVENT[8], ENTITY[Ｃ５８], ENTITY[7]) ∧ から(EVENT[8]) = ENTITY[6] ∧
+    before(EVENT[3], EVENT[8]) ∧
+     復活(ENTITY[1]) ∧
+      楽しみ(ENTITY[2]) ∧
+       ENTITY[4] = *pro*{ENTITY[佐藤さん], ENTITY[1], ENTITY[2]} ∧
+        一心同体(ENTITY[9]) ∧
+         ENTITY[13] = *pro*{ENTITY[9], ENTITY[Ｃ５８], ENTITY[6], ENTITY[7], ENTITY[佐藤さん], ENTITY[1], ENTITY[2]} ∧
+          ENTITY[15] = *pro*{ENTITY[13], ENTITY[9], ENTITY[Ｃ５８], ENTITY[6], ENTITY[7], ENTITY[佐藤さん], ENTITY[1], ENTITY[2]} ∧
+           姿(SITUATION[14], 走る(EVENT[16], ENTITY[15])) ∧
+            FACT(SITUATION[12], 見(EVENT[18], _, SITUATION[14], ENTITY[13])) ∧
+             ADV_再び(EVENT[16]) ∧
+              し_て_いる(EVENT[3], ENTITY[佐藤さん], ENTITY[1],
+               xxx(EVENT[10], ENTITY[4], ENTITY[9]) ∧ と(EVENT[10]) = ENTITY[Ｃ５８] ∧
+                なんて SITUATION[11] (SITUATION[11] = SITUATION[12],
+                 ∃ EVENT[21] ENTITY[20] ENTITY[19] (
+                  夢(ENTITY[20]) ∧
+                   の_よう(ENTITY[20], ENTITY[19]) ∧ だ(EVENT[21], SITUATION[11], ENTITY[19])))) ∧
+               に(EVENT[3]) = ENTITY[2])
+
+# ::id 24_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ２０１４ 年 が 明け た 。
+∃ EVENT[2] ENTITY[1] (CD_２０１４_年(ENTITY[1]) ∧ past(EVENT[2]) ∧ 明け_た(EVENT[2], ENTITY[1]))
+
+# ::id 25_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 東日本大震災 で 傷つい た 東北 は 少し ずつ 元気 を 取り戻し て いる 。
+∃ EVENT[6] ENTITY[3] EVENT[2] (
+ 傷つい_た(EVENT[2], ENTITY[東北]) ∧ で(EVENT[2]) = ENTITY[東日本大震災] ∧
+  past(EVENT[2]) ∧
+   少し ENTITY[5] ずつ ENTITY[4] (ENTITY[4] = ENTITY[5], LINK_元気(ENTITY[4], ENTITY[3])) ∧ 取り戻し_て_いる(EVENT[6], ENTITY[東北], ENTITY[3]))
+
+# ::id 26_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 住む 人 が 地域 の 魅力 を 実感 し 、 内外 に 発信 する １ 年 で あっ て ほしい 。
+∃ ENTITY[2] ENTITY[1] EVENT[8] EVENT[11] EVENT[13] EVENT[14] EVENT[3] ENTITY[10] ENTITY[9] ENTITY[12] ENTITY[6] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   住む(EVENT[8], ENTITY[6]) ∧ 人(ENTITY[6]) ∧
+    地域(ENTITY[10]) ∧
+     の_魅力(ENTITY[10], ENTITY[9]) ∧
+      内外(ENTITY[12]) ∧
+       (CD_１_年(ENTITY[4]),
+        実感する.0(EVENT[11], ENTITY[6], ENTITY[9]) ∧
+         発信する.0(EVENT[13], ENTITY[6]) ∧ に(EVENT[13]) = ENTITY[12] ∧ 時間(EVENT[13]) = ENTITY[4]) ∧
+        ほしい(EVENT[3], ENTITY[1], ENTITY[2], あっ_て(EVENT[14], ENTITY[2]) ∧ で(EVENT[14]) = ENTITY[4]))
+
+# ::id 27_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 各県 で は ことし 、 そんな きっかけ に なり そう な イベント や ユニーク な まちづくり の 試み が めじろ押し だ 。
+∃ ENTITY[6] (
+ きっかけ(ENTITY[6]) ∧
+  各 ENTITY[1] (県(ENTITY[1]),
+   ∃ EVENT[11] GROUP[3] TIME[2] (
+    ことし(TIME[2]) ∧
+     CONJ_や(∃ ENTITY[4] (
+           MD_そう(∃ EVENT[7] なり_な(EVENT[7], ENTITY[4], ENTITY[6])) ∧ イベント(ENTITY[4]) ∧
+            is_element_of(ENTITY[4], GROUP[3])),
+      ∃ ATTRIB[10] ENTITY[9] ENTITY[8] (
+       ユニーク_な(ATTRIB[10]) ∧
+        ATTRIBUTE_まちづくり(ATTRIB[10], ENTITY[9]) ∧ の_試み(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3]))) ∧
+      めじろ押し_だ(EVENT[11], GROUP[3]) ∧ is_contained_in(時間(EVENT[11]), TIME[2]) ∧
+       で(EVENT[11]) = ENTITY[1])))
+
+# ::id 28_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 東北 を 盛り上げ て くれ そう な 各地 の 動き を 紹介 する 。
+∃ ENTITY[1] EVENT[6] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  MD_そう(∃ EVENT[4] 盛り上げ_て_くれ_な(EVENT[4], ENTITY[2], ENTITY[東北])) ∧ 各 ENTITY[5] (地(ENTITY[5]), の_動き(ENTITY[5], ENTITY[2])) ∧
+   紹介する.0(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 29_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt （ ６ 回 続き ）
+∃ EVENT[2] ENTITY[1] ((CD_６_回(ENTITY[1]), 続き(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 30_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt ＜ ＳＬ銀河 ＞ 客車 は ４ 両 編成 で 、 定員 １８０ 人 を 予定 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 客車(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[ＳＬ銀河], ENTITY[1]) ∧
+   (CD_４_両(ENTITY[2]), 編成(ENTITY[2])) ∧
+    (CD_１８０_人(ENTITY[4]), 定員(ENTITY[4])) ∧
+     CONJ_te(で(EVENT[3], ENTITY[1], ENTITY[2]), 予定(EVENT[5], ENTITY[1], ENTITY[4])))
+
+# ::id 31_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 外観 は 夜空 の 青 を ベース に 星座 や 動物 を ちりばめる 。
+∃ EVENT[5] EVENT[9] ENTITY[3] ENTITY[4] ENTITY[2] GROUP[6] ENTITY[1] (
+ 外観(ENTITY[1]) ∧
+  夜空(ENTITY[3]) ∧
+   の_青(ENTITY[3], ENTITY[2]) ∧
+    ベース(ENTITY[4]) ∧
+     CONJ_や(∃ ENTITY[7] (星座(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+      ∃ ENTITY[8] (動物(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+      xxx(EVENT[5], ENTITY[1], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+       ちりばめる(EVENT[9], ENTITY[1], GROUP[6]))
+
+# ::id 32_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 内装 は ガス灯風 の 照明 や ステンドグラス など 、 大正 から 昭和 の 雰囲気 を 醸し出す 。
+∃ EVENT[7] GROUP[2] ENTITY[6] ENTITY[1] (
+ CONJ_や(∃ ENTITY[4] ENTITY[3] (ガス灯風(ENTITY[4]) ∧ の_照明(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[5] (ステンドグラス(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+  など(GROUP[2], ENTITY[1]) ∧
+   から_xxx(ENTITY[大正], ENTITY[昭和]) ∧
+    の_雰囲気(ENTITY[昭和], ENTITY[6]) ∧ 醸し出す(EVENT[7], (ENTITY[内装], ENTITY[1]), ENTITY[6]))
+
+# ::id 33_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 南部鉄器風 の 鋳肌 の 荷棚 など 、 岩手らしさ を 打ち出す 工夫 も し た 。
+∃ ENTITY[4] SITUATION[3] EVENT[6] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[1] (
+ の_xxx(ENTITY[南部鉄器風], ENTITY[鋳肌]) ∧
+  の_荷棚(ENTITY[鋳肌], ENTITY[2]) ∧
+   など(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[4] = *pro*{ENTITY[1], ENTITY[2], ENTITY[鋳肌], ENTITY[南部鉄器風]} ∧
+     岩手らしさ(ENTITY[5]) ∧
+      工夫(SITUATION[3], 打ち出す(EVENT[6], ENTITY[4], ENTITY[5])) ∧
+       past(EVENT[7]) ∧ し_た(EVENT[7], ENTITY[1], SITUATION[3]))
+
+# ::id 34_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 車内 で は 小型プラネタリウム の 投影 や 、 月 や 星 に まつわる 展示 も する 。
+∃ ENTITY[1] EVENT[12] GROUP[3] ENTITY[2] (
+ 車内(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ ENTITY[5] ENTITY[4] (小型プラネタリウム(ENTITY[5]) ∧ の_投影(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ EVENT[11] GROUP[8] ENTITY[6] (
+     CONJ_や(∃ ENTITY[9] (月(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+      ∃ ENTITY[10] (星(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+      まつわる(EVENT[11], ENTITY[6]) ∧ に(EVENT[11]) = GROUP[8] ∧ 展示(ENTITY[6]) ∧
+       is_element_of(ENTITY[6], GROUP[3]))) ∧
+    する(EVENT[12], ENTITY[1], GROUP[3]) ∧ で(EVENT[12]) = ENTITY[2])
+
+# ::id 35_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 土日 祝日 を 中心 に 年間 ８０ 日 程度 運行 する 。
+∃ ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] DEGREE[6] TIME[5] (
+ ENTITY[1] = *pro* ∧
+  土日_祝日(ENTITY[2]) ∧
+   中心(ENTITY[3]) ∧
+    年間(TIME[5]) ∧
+     (CD_８０_日(DEGREE[6]), 程度(DEGREE[6])) ∧
+      xxx(EVENT[4], ENTITY[1], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+       運行する.0(EVENT[7], ENTITY[1]) ∧ MSR(EVENT[7]) = DEGREE[6] ∧ is_contained_in(時間(EVENT[7]), TIME[5]))
+
+# ::id 36_newswire_01917_K201401010A0EA0XX00003;NJ
+# ::snt 釜石、盛岡両駅 に 専用車庫 を 設け 、 公開 も 予定 し て いる 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  専用車庫(ENTITY[2]) ∧
+   公開(ENTITY[4]) ∧
+    設け(EVENT[3], ENTITY[1], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[釜石、盛岡両駅] ∧ 予定する.0_て_いる(EVENT[5], ENTITY[1], ENTITY[4]))

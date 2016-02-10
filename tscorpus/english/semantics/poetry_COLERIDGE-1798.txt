@@ -1,0 +1,316 @@
+# ::id 1_poetry_COLERIDGE-1798;AT1-1;NE
+# ::snt KUBLA KHAN
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[KUBLA_KHAN])
+
+# ::id 2_poetry_COLERIDGE-1798;AT2-1;NE
+# ::snt In Xanadu did Kubla Khan A stately pleasure dome decree : Where Alph , the sacred river , ran Through caverns measureless to man Down to a sunless sea .
+∃ SITUATION[14] ATTRIB[10] ATTRIB[7] ATTRIB[5] ATTRIB[2] EVENT[11] EVENT[13] ENTITY[4] ENTITY[8] ENTITY[9] GROUP[6] DOME[1] (
+ stately(ATTRIB[2]) ∧
+  is_pleasure_dome_ATTRIBUTE(DOME[1], ATTRIB[2]) ∧
+   sacred(ATTRIB[5]) ∧
+    is_river_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     is_-ENTITY-_namely(ENTITY[Alph], ENTITY[4]) ∧
+      man(ENTITY[8]) ∧
+       is_measureless_to(ATTRIB[7], ENTITY[8]) ∧
+        is_caverns_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+         sunless(ATTRIB[10]) ∧
+          is_sea_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+           is_LOC(EVENT[11], SITUATION[14]) ∧
+            past(EVENT[11]) ∧
+             ran_down(EVENT[11], ENTITY[Alph]) ∧ to(EVENT[11]) = ENTITY[9] ∧
+              Through(EVENT[11]) = GROUP[6] ∧
+              past(EVENT[13]) ∧
+               is_FACT_THAT(SITUATION[14], did_decree(EVENT[13], PERSON[Kubla_Khan], DOME[1]) ∧ In(EVENT[13]) = LOC[Xanadu]))
+
+# ::id 3_poetry_COLERIDGE-1798;AT2-2;NE
+# ::snt So twice five miles of fertile ground With walls and towers were girdled round :
+∃ ATTRIB[3] EVENT[7] GROUP[4] ENTITY[2] GROUP[1] (
+ fertile(ATTRIB[3]) ∧
+  is_ground_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   ∃ GROUP[5] (walls(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ GROUP[6] (towers(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+    (CD_twice_five(GROUP[1]), is_miles_With(GROUP[1], GROUP[4]) ∧ is_miles_of(GROUP[1], ENTITY[2])) ∧
+     ADV_so(EVENT[7]) ∧ past(EVENT[7]) ∧ were_girdled_round(EVENT[7], GROUP[1]))
+
+# ::id 4_poetry_COLERIDGE-1798;AT2-3;NE
+# ::snt And there were gardens bright with sinuous rills , Where blossomed many an incense-bearing tree ;
+∃ SITUATION[9] ATTRIB[4] ATTRIB[2] EVENT[10] GROUP[3] GROUP[1] (
+ sinuous(ATTRIB[4]) ∧
+  is_rills_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+   is_bright_with(ATTRIB[2], GROUP[3]) ∧
+    is_FACT_THAT(SITUATION[9],
+     MANY ATTRIB[7] ENTITY[6] ((incense-bearing(ATTRIB[7]) ∧ is_tree_ATTRIBUTE(ENTITY[6], ATTRIB[7])),
+      ∃ EVENT[8] (past(EVENT[8]) ∧ blossomed(EVENT[8], ENTITY[6])))) ∧ is_gardens_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     is_LOC(SITUATION[9], GROUP[1]) ∧ past(EVENT[10]) ∧ copula(EVENT[10], GROUP[1]))
+
+# ::id 5_poetry_COLERIDGE-1798;AT2-4;NE
+# ::snt And here were forests ancient as the hills , Enfolding sunny spots of greenery .
+∃ SITUATION[10] ATTRIB[2] ATTRIB[6] EVENT[9] EVENT[8] EVENT[4] ENTITY[7] GROUP[5] GROUP[1] GROUP[3] (
+ hills(GROUP[3]) ∧
+  forests(GROUP[1]) ∧
+   sunny(ATTRIB[6]) ∧
+    greenery(ENTITY[7]) ∧
+     is_spots_of(GROUP[5], ENTITY[7]) ∧ is_spots_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+      is_ancient_as(ATTRIB[2], GROUP[3]) ∧
+       LOC_here(SITUATION[10]) ∧
+        past(EVENT[9]) ∧
+         past(EVENT[8]) ∧
+          is_FACT_THAT(SITUATION[10],
+           CONJ_and(CONJ_and(copula(EVENT[9], GROUP[1]), enfolding(EVENT[8], GROUP[1], GROUP[5])),
+            xxx(EVENT[4], GROUP[1], ATTRIB[2]))))
+
+# ::id 6_poetry_COLERIDGE-1798;AT3-1;NE
+# ::snt But oh ! that deep romantic chasm which slanted Down the green hill athwart a cedarn cover !
+∃ ATTRIB[8] ATTRIB[6] ATTRIB[3] ATTRIB[2] EVENT[10] EVENT[9] ENTITY[7] ENTITY[5] ENTITY[1] (
+ deep(ATTRIB[2]) ∧
+  romantic(ATTRIB[3]) ∧
+   green(ATTRIB[6]) ∧
+    is_hill_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     cedarn(ATTRIB[8]) ∧
+      is_cover_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       slanted(EVENT[9], ENTITY[1]) ∧ athwart(EVENT[9]) = ENTITY[7] ∧ Down(EVENT[9]) = ENTITY[5] ∧
+        is_chasm_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_chasm_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+        past(EVENT[9]) ∧ xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 7_poetry_COLERIDGE-1798;AT3-2;NE
+# ::snt A savage place ! as holy and enchanted As e'er beneath a waning moon was haunted By woman wailing for her demon-lover !
+∃ PERSON[10] ATTRIB[6] ATTRIB[4] ATTRIB[3] ATTRIB[2] EVENT[11] EVENT[12] ENTITY[5] ENTITY[9] PERSON[7] ENTITY[1] (
+ savage(ATTRIB[2]) ∧
+  waning(ATTRIB[6]) ∧
+   is_moon_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_ADV_e'er_beneath(ATTRIB[4], ENTITY[5]) ∧
+     is_as_holy_and_enchanted_As(ATTRIB[3], ATTRIB[4]) ∧
+      is_place_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_place_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       PERSON[10] = her{PERSON[7]} ∧
+        is_demon-lover_POS(ENTITY[9], PERSON[10]) ∧
+         wailing(EVENT[11], PERSON[7]) ∧ for(EVENT[11]) = ENTITY[9] ∧ woman(PERSON[7]) ∧
+          past(EVENT[12]) ∧ haunted(EVENT[12], PERSON[7], ENTITY[1]))
+
+# ::id 8_poetry_COLERIDGE-1798;AT4-1;NE
+# ::snt And from this chasm , with ceaseless turmoil seething , As if this earth in fast thick pants were breathing , A mighty fountain momently was forced : Amid whose swift half-intermitted burst Huge fragments vaulted like rebounding hail , Or chaffy grain beneath the thresher 's flail :
+∃ ATTRIB[26] ATTRIB[15] ATTRIB[14] ATTRIB[12] ATTRIB[11] ATTRIB[8] ATTRIB[5] ATTRIB[4] GROUP[16] GROUP[13] ENTITY[9] ENTITY[25] FOUNTAIN[7] EVENT[6] EVENT[24] EVENT[23] EVENT[27] EVENT[28] GROUP[3] ENTITY[2] ENTITY[22] ENTITY[1] (
+ chasm(ENTITY[1]) ∧
+  fast(ATTRIB[4]) ∧
+   thick(ATTRIB[5]) ∧
+    is_pants_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_pants_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     is_earth_in(ENTITY[2], GROUP[3]) ∧
+      thresher(ENTITY[22]) ∧
+       past(EVENT[6]) ∧
+        ADV_momently(EVENT[28]) ∧
+         past(EVENT[28]) ∧
+          mighty(ATTRIB[8]) ∧
+           swift(ATTRIB[11]) ∧
+            half-intermitted(ATTRIB[12]) ∧
+             is_burst_ATTRIBUTE(ENTITY[9], ATTRIB[12]) ∧ is_burst_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_burst_POS(ENTITY[9], FOUNTAIN[7]) ∧
+              huge(ATTRIB[14]) ∧
+               is_fragments_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+                CONJ_or(∃ ATTRIB[18] ENTITY[17] (
+                      rebounding(ATTRIB[18]) ∧ is_hail_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+                 ∃ ATTRIB[20] ENTITY[21] ENTITY[19] (
+                  chaffy(ATTRIB[20]) ∧
+                   is_flail_POS(ENTITY[21], ENTITY[22]) ∧
+                    is_grain_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧ is_grain_beneath(ENTITY[19], ENTITY[21]) ∧
+                     is_element_of(ENTITY[19], GROUP[16]))) ∧
+                 is_like_comp(ATTRIB[15], GROUP[16]) ∧
+                  CONJ_and(vaulted(EVENT[24], _, GROUP[13]) ∧ Amid(EVENT[24]) = ENTITY[9],
+                   xxx(EVENT[23], GROUP[13]) ∧ ATTRIBUTE(EVENT[23]) = ATTRIB[15]) ∧
+                   is_fountain_ATTRIBUTE(FOUNTAIN[7], ATTRIB[8]) ∧
+                   ceaseless(ATTRIB[26]) ∧
+                    is_turmoil_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+                     CRD_As_if(were_breathing(EVENT[6], ENTITY[2]),
+                      CONJ_and(seething(EVENT[27], FOUNTAIN[7]) ∧ with(EVENT[27]) = ENTITY[25],
+                       forced(EVENT[28], _, FOUNTAIN[7]) ∧ from(EVENT[28]) = ENTITY[1])))
+
+# ::id 9_poetry_COLERIDGE-1798;AT4-2;NE
+# ::snt And 'mid these dancing rocks at once and ever It flung up momently the sacred river .
+∃ FOUNTAIN[3] ATTRIB[2] ATTRIB[5] EVENT[6] ENTITY[4] GROUP[1] (
+ dancing_rocks(GROUP[1]) ∧
+  sacred(ATTRIB[5]) ∧
+   is_river_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    ADV_once_ever(ATTRIB[2]) ∧
+     FOUNTAIN[3] = it ∧
+      ADV_momently(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        flung_up(EVENT[6], FOUNTAIN[3], ENTITY[4]) ∧ at(EVENT[6]) = ATTRIB[2] ∧ 'mid(EVENT[6]) = GROUP[1])
+
+# ::id 10_poetry_COLERIDGE-1798;AT5-1;NE
+# ::snt Five miles meandering with a mazy motion Through wood and dale the sacred river ran , Then reached the caverns measureless to man , And sank in tumult to a lifeless ocean :
+∃ ATTRIB[18] ATTRIB[5] ATTRIB[12] ATTRIB[2] EVENT[9] EVENT[10] EVENT[14] EVENT[19] GROUP[6] ENTITY[4] GROUP[3] ENTITY[17] ENTITY[16] ENTITY[13] GROUP[11] ENTITY[1] (
+ sacred(ATTRIB[2]) ∧
+  is_river_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   man(ENTITY[13]) ∧
+    is_measureless_to(ATTRIB[12], ENTITY[13]) ∧
+     is_caverns_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+      (CD_five(GROUP[3]), miles(GROUP[3])) ∧
+       mazy(ATTRIB[5]) ∧
+        is_motion_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+         ∃ ENTITY[7] (wood(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+          ∃ ENTITY[8] (dale(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+          tumult(ENTITY[16]) ∧
+           lifeless(ATTRIB[18]) ∧
+            is_ocean_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧
+             past(EVENT[10]) ∧
+              TMP_then(EVENT[14]) ∧
+               past(EVENT[14]) ∧
+                past(EVENT[19]) ∧
+                 CONJ_and(meandering(EVENT[9], ENTITY[1]) ∧ Through(EVENT[9]) = GROUP[6] ∧
+                       with(EVENT[9]) = ENTITY[4] ∧ MSR(EVENT[9]) = GROUP[3],
+                  CONJ_and(ran(EVENT[10], ENTITY[1]), reached(EVENT[14], ENTITY[1], GROUP[11]),
+                   sank(EVENT[19], ENTITY[1]) ∧ to(EVENT[19]) = ENTITY[17] ∧
+                    in(EVENT[19]) = ENTITY[16])))
+
+# ::id 11_poetry_COLERIDGE-1798;AT5-2;NE
+# ::snt And 'mid this tumult Kubla heard from far Ancestral voices prophesying war !
+∃ ATTRIB[3] EVENT[6] EVENT[7] ENTITY[5] GROUP[2] ENTITY[1] (
+ tumult(ENTITY[1]) ∧
+  far_ancestral(ATTRIB[3]) ∧
+   war(ENTITY[5]) ∧
+    prophesying(EVENT[6], GROUP[2], ENTITY[5]) ∧ is_voices_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+     past(EVENT[7]) ∧
+      heard(EVENT[7], ENTITY[Kubla]) ∧ from(EVENT[7]) = GROUP[2] ∧ 'mid(EVENT[7]) = ENTITY[1])
+
+# ::id 12_poetry_COLERIDGE-1798;AT6-1;NE
+# ::snt The shadow of the dome of pleasure Floated midway on the waves ; Where was heard the mingled measure From the fountain and the caves .
+∃ SITUATION[15] ATTRIB[8] EVENT[12] EVENT[14] GROUP[9] ENTITY[4] ENTITY[3] DOME[2] ENTITY[10] GROUP[11] ENTITY[7] GROUP[5] ENTITY[1] (
+ pleasure(ENTITY[3]) ∧
+  is_dome_of(DOME[2], ENTITY[3]) ∧
+   is_shadow_of(ENTITY[1], DOME[2]) ∧
+    waves(GROUP[5]) ∧
+     mingled(ATTRIB[8]) ∧
+      is_measure_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       fountain(ENTITY[10]) ∧
+        caves(GROUP[11]) ∧
+         midway(ENTITY[4]) ∧
+          is_element_of(ENTITY[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9]) ∧
+           is_LOC(EVENT[12], SITUATION[15]) ∧
+            past(EVENT[12]) ∧
+             heard(EVENT[12], _, ENTITY[7]) ∧ From(EVENT[12]) = GROUP[9] ∧
+              past(EVENT[14]) ∧
+               is_FACT_THAT(SITUATION[15],
+                floated(EVENT[14], ENTITY[1]) ∧ on(EVENT[14]) = GROUP[5] ∧
+                 LOC(EVENT[14]) = ENTITY[4]))
+
+# ::id 13_poetry_COLERIDGE-1798;AT6-2;NE
+# ::snt It was a miracle of rare device ,
+∃ ATTRIB[4] DOME[1] EVENT[5] ENTITY[3] ENTITY[2] (
+ DOME[1] = it ∧
+  rare(ATTRIB[4]) ∧
+   is_device_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_miracle_of(ENTITY[2], ENTITY[3]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], DOME[1], ENTITY[2]))
+
+# ::id 14_poetry_COLERIDGE-1798;AT6-2;NE
+# ::snt A sunny pleasure-dome with caves of ice !
+∃ ATTRIB[2] EVENT[5] ENTITY[4] GROUP[3] DOME[1] (
+ sunny(ATTRIB[2]) ∧
+  ice(ENTITY[4]) ∧
+   is_caves_of(GROUP[3], ENTITY[4]) ∧
+    is_pleasure-dome_with(DOME[1], GROUP[3]) ∧ is_pleasure-dome_ATTRIBUTE(DOME[1], ATTRIB[2]) ∧ xxx(EVENT[5], _, DOME[1]))
+
+# ::id 15_poetry_COLERIDGE-1798;AT7-1;NE
+# ::snt A damsel with a dulcimer In a vision once I saw :
+∃ NARRATOR[4] EVENT[5] ENTITY[2] ENTITY[3] PERSON[1] (
+ dulcimer(ENTITY[2]) ∧
+  is_damsel_with(PERSON[1], ENTITY[2]) ∧
+   vision(ENTITY[3]) ∧
+    NARRATOR[4] = i ∧
+     ADV_once(EVENT[5]) ∧
+      past(EVENT[5]) ∧ saw(EVENT[5], NARRATOR[4], PERSON[1]) ∧ In(EVENT[5]) = ENTITY[3])
+
+# ::id 16_poetry_COLERIDGE-1798;AT7-2;NE
+# ::snt It was an Abyssinian maid ,
+∃ PERSON[1] EVENT[3] ENTITY[2] (PERSON[1] = it ∧ Abyssinian_maid(ENTITY[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], PERSON[1], ENTITY[2]))
+
+# ::id 17_poetry_COLERIDGE-1798;AT7-3;NE
+# ::snt And on her dulcimer she played , Singing of Mount Abora .
+∃ PERSON[3] PERSON[2] EVENT[5] EVENT[4] ENTITY[1] (
+ PERSON[2] = her ∧
+  is_dulcimer_POS(ENTITY[1], PERSON[2]) ∧
+   PERSON[3] = she ∧
+    past(EVENT[5]) ∧
+     CONJ_and(played(EVENT[5], PERSON[3]) ∧ on(EVENT[5]) = ENTITY[1],
+      singing(EVENT[4], PERSON[3]) ∧ of(EVENT[4]) = ENTITY[Mount_Abora]))
+
+# ::id 18_poetry_COLERIDGE-1798;AT8-1;NE
+# ::snt Could I revive within me Her symphony and song , To such a deep delight 't would win me , That with music loud and long , I would build that dome in air , That sunny dome ! those caves of ice !
+∃ ATTRIB[20] ENTITY[24] ENTITY[19] ENTITY[22] GROUP[21] GROUP[18] DOME[23] (
+ air(ENTITY[24]) ∧
+  is_dome_in(DOME[23], ENTITY[24]) ∧
+   sunny(ATTRIB[20]) ∧
+    is_dome_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+     ice(ENTITY[22]) ∧
+      is_caves_of(GROUP[21], ENTITY[22]) ∧
+       is_element_of(ENTITY[19], GROUP[18]) ∧ is_subset_of_or_equal_to(GROUP[21], GROUP[18]) ∧
+        is_-DOME-_namely(DOME[23], GROUP[18]) ∧
+         ∀ PERSON[4] NARRATOR[2] NARRATOR[1] GROUP[5] MUSIC[3] (
+          (NARRATOR[1] = i ∧ NARRATOR[2] = me ∧ PERSON[4] = her ∧
+           ∃ ENTITY[6] (symphony(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+            ∃ ENTITY[7] (song(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+           is_equals(MUSIC[3], GROUP[5]) ∧ is_POS(MUSIC[3], PERSON[4]) ∧
+           MD_could(∃ EVENT[8] (revive(EVENT[8], NARRATOR[1], MUSIC[3]) ∧ within(EVENT[8]) = NARRATOR[2]))) →
+          ∃ NARRATOR[27] MUSIC[26] NARRATOR[17] ATTRIB[15] ATTRIB[14] ATTRIB[11] ATTRIB[10] EVENT[16] EVENT[16] ENTITY[12] ENTITY[9] (
+           such(ATTRIB[10]) ∧
+            deep(ATTRIB[11]) ∧
+             loud(ATTRIB[14]) ∧
+              long(ATTRIB[15]) ∧
+               CONJ_and(xxx(EVENT[16], ENTITY[12], ATTRIB[14]), xxx(EVENT[16], ENTITY[12], ATTRIB[15])) ∧
+                music(ENTITY[12]) ∧
+                NARRATOR[17] = i ∧
+                 is_delight_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_delight_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+                  is_delight_THAT(ENTITY[9],
+                   MD_would(∃ EVENT[25] (
+                         build(EVENT[25], NARRATOR[17], DOME[23]) ∧
+                          with(EVENT[25]) = ENTITY[12]))) ∧
+                  MUSIC[26] = 't{MUSIC[3]} ∧
+                   NARRATOR[27] = me ∧
+                    MD_would(∃ EVENT[28] (
+                          win(EVENT[28], MUSIC[26], NARRATOR[27]) ∧
+                           To(EVENT[28]) = ENTITY[9])))))
+
+# ::id 19_poetry_COLERIDGE-1798;AT8-2;NE
+# ::snt And all who heard should see them there ,
+ALL EVENT[3] ENTITY[1] ((heard(EVENT[3], ENTITY[1]) ∧ past(EVENT[3])),
+ MD_should(∃ DOME[4] EVENT[5] (LOC_there(EVENT[5]) ∧ DOME[4] = them ∧ see(EVENT[5], ENTITY[1], DOME[4]))))
+
+# ::id 20_poetry_COLERIDGE-1798;AT8-3;NE
+# ::snt And all should cry , Beware ! Beware ! His flashing eyes , his floating hair !
+ALL ENTITY[1] MD_should(∃ EVENT[2] cry(EVENT[2], ENTITY[1],
+      IMPERATIVE(∃ GROUP[3] EVENT[10] EVENT[11] (
+            ∃ ATTRIB[6] PERSON[5] GROUP[4] (
+             PERSON[5] = his ∧
+              flashing(ATTRIB[6]) ∧
+               is_eyes_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_eyes_POS(GROUP[4], PERSON[5]) ∧
+                is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+             ∃ ATTRIB[9] PERSON[8] ENTITY[7] (
+              PERSON[8] = his ∧
+               floating(ATTRIB[9]) ∧
+                is_hair_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_hair_POS(ENTITY[7], PERSON[8]) ∧
+                 is_element_of(ENTITY[7], GROUP[3])) ∧
+             beware(EVENT[10], _, GROUP[3]) ∧ beware(EVENT[11], _, GROUP[3])))))
+
+# ::id 21_poetry_COLERIDGE-1798;AT9-1;NE
+# ::snt Weave a circle round him thrice ,
+IMPERATIVE(∃ PERSON[2] EVENT[4] TIME[3] ENTITY[1] (
+      circle(ENTITY[1]) ∧
+       PERSON[2] = him ∧
+        CD_thrice(TIME[3]) ∧
+         weave(EVENT[4], _, ENTITY[1]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3]) ∧
+          round(EVENT[4]) = PERSON[2]))
+
+# ::id 22_poetry_COLERIDGE-1798;AT9-2;NE
+# ::snt And close your eyes with holy dread For he on honey-dew hath fed , And drunk the milk of Paradise .
+∃ ENTITY[8] (
+ is_milk_of(ENTITY[8], ENTITY[Paradise]) ∧
+  IMPERATIVE(∃ PERSON[5] ATTRIB[4] PERSONS[2] EVENT[7] EVENT[9] EVENT[10] ENTITY[6] ENTITY[3] GROUP[1] (
+        PERSONS[2] = your ∧
+         is_eyes_POS(GROUP[1], PERSONS[2]) ∧
+          holy(ATTRIB[4]) ∧
+           is_dread_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+            PERSON[5] = he ∧
+             honey-dew(ENTITY[6]) ∧
+              CRD_For(CONJ_and(hath_fed(EVENT[7], PERSON[5]) ∧ on(EVENT[7]) = ENTITY[6],
+                    drunk(EVENT[9], PERSON[5], ENTITY[8])),
+               close(EVENT[10], _, GROUP[1]) ∧ with(EVENT[10]) = ENTITY[3]))))
+
+# ::id 23_poetry_COLERIDGE-1798;AT10-1;NE
+# ::snt 1798
+∃ EVENT[2] DATE[1] (CD_1798(DATE[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = DATE[1])

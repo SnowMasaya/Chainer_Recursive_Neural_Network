@@ -1,0 +1,3021 @@
+# ::id 1_fiction_JOYCE-1914;AT1-1;NE
+# ::snt THE SISTERS
+∃ EVENT[2] GROUP[1] (SISTERS(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 2_fiction_JOYCE-1914;AT2-1;NE
+# ::snt There was no hope for him this time :
+∃ TIME[3] (
+ time(TIME[3]) ∧
+  ¬ ∃ PRIEST[2] EVENT[4] ENTITY[1] (
+        PRIEST[2] = him ∧
+         is_hope_for(ENTITY[1], PRIEST[2]) ∧
+          past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3])))
+
+# ::id 3_fiction_JOYCE-1914;AT2-2;NE
+# ::snt it was the third stroke .
+∃ REF1[1] ATTRIB[3] EVENT[4] ENTITY[2] (
+ third(ATTRIB[3]) ∧
+  is_stroke_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ REF1[1] = it ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 4_fiction_JOYCE-1914;AT2-3;NE
+# ::snt Night after night I had passed the house -LRB- it was vacation time -RRB- and studied the lighted square of window :
+∃ NARRATOR[3] ATTRIB[7] EVENT[5] EVENT[9] TIME[2] TIME[1] ENTITY[4] WINDOW[8] ENTITY[6] (
+ house(ENTITY[4]) ∧
+  lighted(ATTRIB[7]) ∧
+   window(WINDOW[8]) ∧
+    is_square_of(ENTITY[6], WINDOW[8]) ∧ is_square_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     night(TIME[2]) ∧
+      is_Night_after(TIME[1], TIME[2]) ∧
+       NARRATOR[3] = i ∧
+        past(EVENT[5]) ∧
+         past(EVENT[9]) ∧
+          CONJ_and(had_passed(EVENT[5], NARRATOR[3], ENTITY[4]) ∧ is_contained_in(TMP(EVENT[5]), TIME[1]),
+           studied(EVENT[9], NARRATOR[3], ENTITY[6]) ∧ is_contained_in(TMP(EVENT[9]), TIME[1])))
+
+# ::id 5_fiction_JOYCE-1914;AT2-4;NE
+# ::snt and night after night I had found it lighted in the same way , faintly and evenly .
+∃ WINDOW[5] NARRATOR[3] ATTRIB[7] EVENT[8] EVENT[4] TIME[2] TIME[1] ENTITY[6] (
+ same(ATTRIB[7]) ∧
+  is_way_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   night(TIME[2]) ∧
+    is_night_after(TIME[1], TIME[2]) ∧
+     NARRATOR[3] = i ∧
+      WINDOW[5] = it ∧
+       CONJ_and(ADV_faintly(EVENT[8]), ADV_evenly(EVENT[8])) ∧
+        past(EVENT[4]) ∧
+         had_found(EVENT[4], NARRATOR[3], lighted(EVENT[8], _, WINDOW[5]) ∧ in(EVENT[8]) = ENTITY[6]) ∧
+          is_contained_in(TMP(EVENT[4]), TIME[1]))
+
+# ::id 6_fiction_JOYCE-1914;AT2-5;NE
+# ::snt If he was dead , I thought I would see the reflection of candles on the darkened blind for I knew that two candles must be set at the head of a corpse .
+∃ ATTRIB[17] ENTITY[10] ENTITY[9] ENTITY[16] GROUP[15] ENTITY[14] (
+ corpse(ENTITY[10]) ∧
+  is_head_of(ENTITY[9], ENTITY[10]) ∧
+   darkened(ATTRIB[17]) ∧
+    is_blind_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+     is_candles_on(GROUP[15], ENTITY[16]) ∧
+      is_reflection_of(ENTITY[14], GROUP[15]) ∧
+       ∀ ATTRIB[2] PRIEST[1] EVENT[3] CND_If(
+           PRIEST[1] = he ∧ dead(ATTRIB[2]) ∧ past(EVENT[3]) ∧
+            copula(EVENT[3], PRIEST[1], ATTRIB[2]),
+           ∃ NARRATOR[13] NARRATOR[6] SITUATION[5] NARRATOR[4] EVENT[7] EVENT[12] GROUP[8] (
+            NARRATOR[4] = i ∧
+             NARRATOR[6] = i{NARRATOR[4]} ∧
+              (CD_two(GROUP[8]), candles(GROUP[8])) ∧
+               is_FACT_THAT(SITUATION[5],
+                knew(EVENT[7], NARRATOR[6],
+                 MD_must(∃ EVENT[11] (
+                       set(EVENT[11], _, GROUP[8]) ∧
+                        at(EVENT[11]) = ENTITY[9])))) ∧
+                NARRATOR[13] = i{NARRATOR[4]} ∧
+                 past(EVENT[7]) ∧
+                  past(EVENT[12]) ∧
+                   thought(EVENT[12], NARRATOR[4], MD_would(∃ EVENT[18] see(EVENT[18], NARRATOR[13], ENTITY[14]))) ∧
+                    for(EVENT[12]) = SITUATION[5])))
+
+# ::id 7_fiction_JOYCE-1914;AT2-6;NE
+# ::snt He had often said to me : " I am not long for this world , "
+∃ PRIEST[4] NARRATOR[2] PRIEST[1] EVENT[3] ENTITY[6] (
+ world(ENTITY[6]) ∧
+  PRIEST[1] = he ∧
+   NARRATOR[2] = me ∧
+    PRIEST[4] = i{PRIEST[1]} ∧
+     TMP_often(EVENT[3]) ∧
+      past(EVENT[3]) ∧
+       had_said(EVENT[3], PRIEST[1],
+        ¬ ∃ ATTRIB[5] EVENT[7] (is_long_for(ATTRIB[5], ENTITY[6]) ∧ copula(EVENT[7], PRIEST[4], ATTRIB[5]))) ∧
+        to(EVENT[3]) = NARRATOR[2])
+
+# ::id 8_fiction_JOYCE-1914;AT2-7;NE
+# ::snt and I had thought his words idle .
+∃ ATTRIB[5] PRIEST[4] NARRATOR[1] EVENT[6] EVENT[2] WORDS[3] (
+ NARRATOR[1] = i ∧
+  PRIEST[4] = his ∧
+   is_words_POS(WORDS[3], PRIEST[4]) ∧
+    idle(ATTRIB[5]) ∧ past(EVENT[2]) ∧ had_thought(EVENT[2], NARRATOR[1], xxx(EVENT[6], WORDS[3], ATTRIB[5])))
+
+# ::id 9_fiction_JOYCE-1914;AT2-8;NE
+# ::snt Now I knew they were true .
+∃ SITUATION[6] ATTRIB[4] WORDS[3] NARRATOR[1] EVENT[5] EVENT[2] (
+ NARRATOR[1] = i ∧
+  WORDS[3] = they ∧
+   true(ATTRIB[4]) ∧
+    TMP_now(SITUATION[6]) ∧
+     is_before(EVENT[5], EVENT[2]) ∧
+      past(EVENT[2]) ∧ is_FACT_THAT(SITUATION[6], knew(EVENT[2], NARRATOR[1], copula(EVENT[5], WORDS[3], ATTRIB[4]))))
+
+# ::id 10_fiction_JOYCE-1914;AT2-9;NE
+# ::snt Every night as I gazed up at the window I said softly to myself the word paralysis .
+∃ ENTITY[3] WORD[7] (
+ window(ENTITY[3]) ∧
+  word_paralysis(WORD[7]) ∧
+   ∀ TIME[1] (night(TIME[1]) →
+    ∃ NARRATOR[6] NARRATOR[5] NARRATOR[2] EVENT[4] EVENT[8] (
+     NARRATOR[2] = i ∧
+      NARRATOR[5] = i ∧
+       NARRATOR[6] = myself{NARRATOR[5]} ∧
+        past(EVENT[4]) ∧
+         ADV_softly(EVENT[8]) ∧
+          past(EVENT[8]) ∧
+           CRD_as(gazed_up(EVENT[4], NARRATOR[2]) ∧ at(EVENT[4]) = ENTITY[3],
+            said(EVENT[8], NARRATOR[5], WORD[7]) ∧ to(EVENT[8]) = NARRATOR[6] ∧
+             is_contained_in(TMP(EVENT[8]), TIME[1])))))
+
+# ::id 11_fiction_JOYCE-1914;AT2-10;NE
+# ::snt It had always sounded strangely in my ears , like the word gnomon in the Euclid and the word simony in the Catechism .
+∃ SITUATION[10] SITUATION[11] ATTRIB[4] NARRATOR[3] WORD[1] EVENT[9] EVENT[8] GROUP[5] GROUP[2] ENTITY[6] ENTITY[7] (
+ is_word_gnomon_in(ENTITY[6], ENTITY[Euclid]) ∧
+  is_word_simony_in(ENTITY[7], ENTITY[Catechism]) ∧
+   WORD[1] = it ∧
+    NARRATOR[3] = my ∧
+     is_ears_POS(GROUP[2], NARRATOR[3]) ∧
+      is_element_of(ENTITY[6], GROUP[5]) ∧ is_element_of(ENTITY[7], GROUP[5]) ∧
+       is_like_comp(ATTRIB[4], GROUP[5]) ∧
+        TMP_always(SITUATION[11]) ∧
+         ADV_strangely(SITUATION[10]) ∧
+          past(EVENT[9]) ∧
+           is_FACT_THAT(SITUATION[11],
+            is_FACT_THAT(SITUATION[10],
+             CONJ_and(had_sounded(EVENT[9], WORD[1]) ∧ in(EVENT[9]) = GROUP[2],
+              xxx(EVENT[8], WORD[1], ATTRIB[4])))))
+
+# ::id 12_fiction_JOYCE-1914;AT2-11;NE
+# ::snt But now it sounded to me like the name of some maleficent and sinful being .
+∃ ATTRIB[3] NARRATOR[2] WORD[1] ATTRIB[9] EVENT[10] ENTITY[8] GROUP[5] ENTITY[4] (
+ sinful(ATTRIB[9]) ∧
+  is_being_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   SOME ATTRIB[7] ENTITY[6] ((maleficent(ATTRIB[7]) ∧ is_being_ATTRIBUTE(ENTITY[6], ATTRIB[7])), is_element_of(ENTITY[6], GROUP[5])) ∧
+    is_element_of(ENTITY[8], GROUP[5]) ∧
+    is_name_of(ENTITY[4], GROUP[5]) ∧
+     WORD[1] = it ∧
+      NARRATOR[2] = me ∧
+       is_like_comp(ATTRIB[3], ENTITY[4]) ∧
+        TMP_now(EVENT[10]) ∧
+         past(EVENT[10]) ∧
+          sounded(EVENT[10], WORD[1]) ∧ ATTRIBUTE(EVENT[10]) = ATTRIB[3] ∧ to(EVENT[10]) = NARRATOR[2])
+
+# ::id 13_fiction_JOYCE-1914;AT2-12;NE
+# ::snt It filled me with fear ,
+∃ NARRATOR[2] WORD[1] EVENT[4] ENTITY[3] (
+ WORD[1] = it ∧
+  NARRATOR[2] = me ∧
+   fear(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ filled(EVENT[4], WORD[1], NARRATOR[2]) ∧ with(EVENT[4]) = ENTITY[3])
+
+# ::id 14_fiction_JOYCE-1914;AT2-13;NE
+# ::snt and yet I longed to be nearer to it and to look upon its deadly work .
+∃ SITUATION[11] ATTRIB[8] WORD[7] WORD[4] ATTRIB[3] PRP[2] NARRATOR[1] EVENT[5] EVENT[9] EVENT[10] ENTITY[6] (
+ NARRATOR[1] = i ∧
+  WORD[4] = it ∧
+   is_nearer_to(ATTRIB[3], WORD[4]) ∧
+    WORD[7] = its ∧
+     deadly(ATTRIB[8]) ∧
+      is_work_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_work_POS(ENTITY[6], WORD[7]) ∧
+       is_FACT_THAT(PRP[2],
+        CONJ_and(copula(EVENT[5], NARRATOR[1]) ∧ DIR(EVENT[5]) = ATTRIB[3],
+         look(EVENT[9], NARRATOR[1]) ∧ upon(EVENT[9]) = ENTITY[6])) ∧
+        TMP_yet(SITUATION[11]) ∧
+         past(EVENT[10]) ∧ is_FACT_THAT(SITUATION[11], longed(EVENT[10], NARRATOR[1]) ∧ PRP(EVENT[10]) = PRP[2]))
+
+# ::id 15_fiction_JOYCE-1914;AT3-1;NE
+# ::snt Old Cotter was sitting at the fire , smoking , when I came downstairs to supper .
+∃ NARRATOR[4] SITUATION[10] ENTITY[6] ENTITY[5] EVENT[7] EVENT[9] EVENT[2] ENTITY[1] (
+ fire(ENTITY[1]) ∧
+  is_TMP(EVENT[7], SITUATION[10]) ∧
+   past(EVENT[7]) ∧
+    came(EVENT[7], NARRATOR[4]) ∧ to(EVENT[7]) = ENTITY[6] ∧ down(EVENT[7]) = ENTITY[5] ∧
+     past(EVENT[9]) ∧
+      NARRATOR[4] = i ∧
+       supper(ENTITY[6]) ∧
+        CONJ_and(is_FACT_THAT(SITUATION[10], was_sitting(EVENT[9], COTTER[Old_Cotter]) ∧ at(EVENT[9]) = ENTITY[1]),
+         smoking(EVENT[2], COTTER[Old_Cotter])))
+
+# ::id 16_fiction_JOYCE-1914;AT3-2;NE
+# ::snt While my aunt was ladling out my stirabout he said , as if returning to some former remark of his :
+∃ SITUATION[7] COTTER[6] NARRATOR[4] NARRATOR[2] EVENT[5] EVENT[12] ENTITY[3] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   NARRATOR[4] = my ∧
+    is_stirabout_POS(ENTITY[3], NARRATOR[4]) ∧
+     COTTER[6] = he ∧
+      is_FACT_THAT(SITUATION[7],
+       SOME COTTER[10] ATTRIB[9] ENTITY[8] (
+        (former(ATTRIB[9]) ∧ COTTER[10] = his{COTTER[6]} ∧
+         is_remark_of(ENTITY[8], COTTER[10]) ∧ is_remark_ATTRIBUTE(ENTITY[8], ATTRIB[9])),
+        ∃ EVENT[11] (returning(EVENT[11], COTTER[6]) ∧ to(EVENT[11]) = ENTITY[8]))) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[12]) ∧
+         CRD_While(was_ladling_out(EVENT[5], AUNT[1], ENTITY[3]),
+          said(EVENT[12], COTTER[6]) ∧ as_if(EVENT[12]) = SITUATION[7]))
+
+# ::id 17_fiction_JOYCE-1914;AT4-1;NE
+# ::snt " No , I would n't say he was exactly .. .
+∃ COTTER[1] (
+ COTTER[1] = i ∧
+  MD_would(¬ ∃ ATTRIB[4] PRIEST[3] EVENT[5] EVENT[2] (
+             PRIEST[3] = he ∧
+              exactly(ATTRIB[4]) ∧
+               is_before(EVENT[5], EVENT[2]) ∧
+                say(EVENT[2], COTTER[1], copula(EVENT[5], PRIEST[3], ATTRIB[4])))))
+
+# ::id 18_fiction_JOYCE-1914;AT4-2;NE
+# ::snt but there was something queer .. .
+SOME ATTRIB[2] ENTITY[1] ((queer(ATTRIB[2]) ∧ is_thing_ATTRIBUTE(ENTITY[1], ATTRIB[2])), ∃ EVENT[3] (past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1])))
+
+# ::id 19_fiction_JOYCE-1914;AT4-3;NE
+# ::snt there was something uncanny about him .
+SOME PRIEST[3] ATTRIB[2] ENTITY[1] ((PRIEST[3] = him ∧ is_uncanny_about(ATTRIB[2], PRIEST[3]) ∧ is_thing_ATTRIBUTE(ENTITY[1], ATTRIB[2])), ∃ EVENT[4] (past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1])))
+
+# ::id 20_fiction_JOYCE-1914;AT4-4;NE
+# ::snt I 'll tell you my opinion .... "
+∃ COTTER[1] (
+ COTTER[1] = i ∧
+  MD'll(∃ COTTER[4] NARRATOR+AUNT+UNCLE[2] EVENT[5] ENTITY[3] (
+        NARRATOR+AUNT+UNCLE[2] = you ∧
+         COTTER[4] = my{COTTER[1]} ∧
+          is_opinion_POS(ENTITY[3], COTTER[4]) ∧ tell(EVENT[5], COTTER[1], ENTITY[3], NARRATOR+AUNT+UNCLE[2]))))
+
+# ::id 21_fiction_JOYCE-1914;AT5-1;NE
+# ::snt He began to puff at his pipe , no doubt arranging his opinion in his mind .
+∃ COTTER[10] COTTER[1] EVENT[11] EVENT[8] ENTITY[9] (
+ COTTER[1] = he ∧
+  COTTER[10] = his{COTTER[1]} ∧
+   is_pipe_POS(ENTITY[9], COTTER[10]) ∧
+    past(EVENT[8]) ∧
+     CONJ_and(began(EVENT[8], COTTER[1], puff(EVENT[11], COTTER[1]) ∧ at(EVENT[11]) = ENTITY[9]),
+      ¬ ∃ COTTER[6] COTTER[4] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+            doubt(ENTITY[2]) ∧
+             COTTER[4] = his{COTTER[1]} ∧
+              is_opinion_POS(ENTITY[3], COTTER[4]) ∧
+               COTTER[6] = his{COTTER[1]} ∧
+                is_mind_POS(ENTITY[5], COTTER[6]) ∧
+                 arranging(EVENT[7], COTTER[1], ENTITY[3]) ∧ in(EVENT[7]) = ENTITY[5] ∧
+                  ADV(EVENT[7]) = ENTITY[2])))
+
+# ::id 22_fiction_JOYCE-1914;AT5-2;NE
+# ::snt Tiresome old fool !
+∃ ATTRIB[3] ATTRIB[2] EVENT[4] ENTITY[1] (
+ tiresome(ATTRIB[2]) ∧
+  old(ATTRIB[3]) ∧
+   is_fool_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_fool_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 23_fiction_JOYCE-1914;AT5-3;NE
+# ::snt When we knew him first he used to be rather interesting , talking of faints and worms ;
+∃ SITUATION[15] ATTRIB[13] COTTER[7] COTTER[3] NARRATOR+AUNT+UNCLE[2] EVENT[4] EVENT[14] EVENT[12] EVENT[11] GROUP[8] (
+ NARRATOR+AUNT+UNCLE[2] = we ∧
+  COTTER[3] = him ∧
+   COTTER[7] = he ∧
+    rather_interesting(ATTRIB[13]) ∧
+     ∃ GROUP[9] (faints(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[8])) ∧
+      ∃ GROUP[10] (worms(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8])) ∧
+      is_TMP(EVENT[4], SITUATION[15]) ∧
+       ADV_first(EVENT[4]) ∧
+        past(EVENT[4]) ∧
+         knew(EVENT[4], NARRATOR+AUNT+UNCLE[2], COTTER[3]) ∧
+          past(EVENT[12]) ∧
+           is_FACT_THAT(SITUATION[15],
+            CONJ_and(used(EVENT[12], COTTER[7], copula(EVENT[14], COTTER[7], ATTRIB[13])),
+             talking(EVENT[11], COTTER[7]) ∧ of(EVENT[11]) = GROUP[8])))
+
+# ::id 24_fiction_JOYCE-1914;AT5-4;NE
+# ::snt but I soon grew tired of him and his endless stories about the distillery .
+∃ ATTRIB[2] NARRATOR[1] EVENT[9] GROUP[3] ENTITY[8] (
+ distillery(ENTITY[8]) ∧
+  NARRATOR[1] = i ∧
+   ∃ COTTER[4] (COTTER[4] = him ∧ is_element_of(COTTER[4], GROUP[3])) ∧
+    ∃ ATTRIB[7] COTTER[6] GROUP[5] (
+     COTTER[6] = his ∧
+      endless(ATTRIB[7]) ∧
+       is_stories_about(GROUP[5], ENTITY[8]) ∧ is_stories_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_stories_POS(GROUP[5], COTTER[6]) ∧
+        is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+    is_tired_of(ATTRIB[2], GROUP[3]) ∧
+     TMP_soon(EVENT[9]) ∧ past(EVENT[9]) ∧ grew(EVENT[9], NARRATOR[1]) ∧ ATTRIBUTE(EVENT[9]) = ATTRIB[2])
+
+# ::id 25_fiction_JOYCE-1914;AT6-1;NE
+# ::snt " I have my own theory about it , " he said .
+∃ REF1[7] ATTRIB[6] NARRATOR[5] COTTER[3] COTTER[1] EVENT[8] EVENT[2] ENTITY[4] (
+ COTTER[1] = he ∧
+  COTTER[3] = i{COTTER[1]} ∧
+   NARRATOR[5] = my ∧
+    own(ATTRIB[6]) ∧
+     REF1[7] = it ∧
+      is_theory_about(ENTITY[4], REF1[7]) ∧ is_theory_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_theory_POS(ENTITY[4], NARRATOR[5]) ∧
+       past(EVENT[2]) ∧ said(EVENT[2], COTTER[1], have(EVENT[8], COTTER[3], ENTITY[4])))
+
+# ::id 26_fiction_JOYCE-1914;AT6-2;NE
+# ::snt " I think it was one of those .. . peculiar cases ... .
+∃ REF1[3] COTTER[1] ATTRIB[6] EVENT[7] EVENT[2] ENTITY[4] GROUP[5] (
+ peculiar(ATTRIB[6]) ∧
+  is_cases_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+   COTTER[1] = i ∧
+    REF1[3] = it ∧
+     (CD_one(ENTITY[4]), is_element_of(ENTITY[4], GROUP[5])) ∧
+      is_before(EVENT[7], EVENT[2]) ∧ think(EVENT[2], COTTER[1], copula(EVENT[7], REF1[3], ENTITY[4])))
+
+# ::id 27_fiction_JOYCE-1914;AT6-3;NE
+# ::snt But it 's hard to say .... "
+∃ ATTRIB[3] SITUATION[1] EVENT[2] EVENT[4] (is_FACT_THAT(SITUATION[1], say(EVENT[2])) ∧ hard(ATTRIB[3]) ∧ copula(EVENT[4], SITUATION[1], ATTRIB[3]))
+
+# ::id 28_fiction_JOYCE-1914;AT7-1;NE
+# ::snt He began to puff again at his pipe without giving us his theory .
+∃ SITUATION[11] COTTER[8] NARRATOR+AUNT+UNCLE[6] SITUATION[5] COTTER[4] COTTER[1] EVENT[9] EVENT[10] EVENT[2] ENTITY[7] ENTITY[3] (
+ COTTER[1] = he ∧
+  COTTER[4] = his{COTTER[1]} ∧
+   is_pipe_POS(ENTITY[3], COTTER[4]) ∧
+    NARRATOR+AUNT+UNCLE[6] = us ∧
+     COTTER[8] = his{COTTER[1]} ∧
+      is_theory_POS(ENTITY[7], COTTER[8]) ∧
+       is_FACT_THAT(SITUATION[5], giving(EVENT[9], COTTER[1], ENTITY[7], NARRATOR+AUNT+UNCLE[6])) ∧
+        TMP_again(SITUATION[11]) ∧
+         past(EVENT[2]) ∧
+          began(EVENT[2], COTTER[1],
+           is_FACT_THAT(SITUATION[11],
+            puff(EVENT[10], COTTER[1]) ∧ without(EVENT[10]) = SITUATION[5] ∧
+             at(EVENT[10]) = ENTITY[3])))
+
+# ::id 29_fiction_JOYCE-1914;AT7-2;NE
+# ::snt My uncle saw me staring and said to me : " Well , so your old friend is gone , you 'll be sorry to hear . "
+∃ NARRATOR[14] ATTRIB[12] NARRATOR[11] SITUATION[9] NARRATOR[7] NARRATOR[4] SITUATION[3] NARRATOR[2] EVENT[5] EVENT[6] EVENT[13] EVENT[8] PRIEST[10] UNCLE[1] (
+ NARRATOR[2] = my ∧
+  is_uncle_POS(UNCLE[1], NARRATOR[2]) ∧
+   NARRATOR[4] = me ∧
+    is_FACT_THAT(SITUATION[3], staring(EVENT[5], NARRATOR[4])) ∧
+     NARRATOR[7] = me ∧
+      NARRATOR[11] = your{NARRATOR[7]} ∧
+       old(ATTRIB[12]) ∧
+        is_friend_ATTRIBUTE(PRIEST[10], ATTRIB[12]) ∧ is_friend_POS(PRIEST[10], NARRATOR[11]) ∧
+         is_FACT_THAT(SITUATION[9], is_gone(EVENT[13], PRIEST[10])) ∧
+          NARRATOR[14] = you{NARRATOR[7]} ∧
+           past(EVENT[6]) ∧
+            past(EVENT[8]) ∧
+             CONJ_and(saw(EVENT[6], UNCLE[1], SITUATION[3]),
+              said(EVENT[8], UNCLE[1],
+               MD'll(∃ ATTRIB[15] EVENT[16] EVENT[17] (
+                     is_sorry_to(ATTRIB[15], hear(EVENT[16])) ∧
+                      copula(EVENT[17], NARRATOR[14], ATTRIB[15]) ∧ so(EVENT[17]) = SITUATION[9]))) ∧
+               to(EVENT[8]) = NARRATOR[7]))
+
+# ::id 30_fiction_JOYCE-1914;AT8-1;NE
+# ::snt " Who ? " said I .
+∃ NARRATOR[1] EVENT[2] (
+ NARRATOR[1] = i ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], NARRATOR[1], QUEST(∃ ENTITY[4] ? ENTITY[3] (xxx(ENTITY[4]) ∧ T(ENTITY[4]) = ENTITY[3]))))
+
+# ::id 31_fiction_JOYCE-1914;AT9-1;NE
+# ::snt " Father Flynn . "
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PRIEST[Father_Flynn])
+
+# ::id 32_fiction_JOYCE-1914;AT10-1;NE
+# ::snt " Is he dead ? "
+QUEST(∃ ATTRIB[2] PRIEST[1] EVENT[3] (PRIEST[1] = he ∧ dead(ATTRIB[2]) ∧ copula(EVENT[3], PRIEST[1], ATTRIB[2])))
+
+# ::id 33_fiction_JOYCE-1914;AT11-1;NE
+# ::snt " Mr. Cotter there has just told us .
+∃ NARRATOR+AUNT+UNCLE[1] EVENT[2] (NARRATOR+AUNT+UNCLE[1] = us ∧ LOC_there(EVENT[2]) ∧ ADV_just(EVENT[2]) ∧ has_told(EVENT[2], COTTER[Mr.Cotter], NARRATOR+AUNT+UNCLE[1]))
+
+# ::id 34_fiction_JOYCE-1914;AT11-2;NE
+# ::snt He was passing by the house . "
+∃ COTTER[1] EVENT[3] ENTITY[2] (
+ house(ENTITY[2]) ∧
+  COTTER[1] = he ∧ past(EVENT[3]) ∧ was_passing(EVENT[3], COTTER[1]) ∧ by(EVENT[3]) = ENTITY[2])
+
+# ::id 35_fiction_JOYCE-1914;AT12-1;NE
+# ::snt I knew that I was under observation so I continued eating as if the news had not interested me .
+∃ NARRATOR[11] SITUATION[5] SITUATION[3] NARRATOR[2] NARRATOR[1] EVENT[4] EVENT[9] EVENT[13] EVENT[10] ENTITY[12] ENTITY[6] (
+ news(ENTITY[6]) ∧
+  NARRATOR[1] = i ∧
+   NARRATOR[2] = i{NARRATOR[1]} ∧
+    is_FACT_THAT(SITUATION[3], eating(EVENT[4], NARRATOR[2])) ∧
+     is_FACT_THAT(SITUATION[5],
+      ¬ ∃ NARRATOR[7] EVENT[8] (
+            NARRATOR[7] = me{NARRATOR[2], NARRATOR[1]} ∧
+             past(EVENT[8]) ∧ had_interested(EVENT[8], ENTITY[6], NARRATOR[7]))) ∧
+      NARRATOR[11] = i{NARRATOR[1]} ∧
+       observation(ENTITY[12]) ∧
+        past(EVENT[9]) ∧
+         is_before(EVENT[13], EVENT[10]) ∧
+          past(EVENT[10]) ∧
+           CRD_so(continued(EVENT[9], NARRATOR[2], SITUATION[3]) ∧ as_if(EVENT[9]) = SITUATION[5],
+            knew(EVENT[10], NARRATOR[1], copula(EVENT[13], NARRATOR[11]) ∧ under(EVENT[13]) = ENTITY[12])))
+
+# ::id 36_fiction_JOYCE-1914;AT12-2;NE
+# ::snt My uncle explained to old Cotter .
+∃ NARRATOR[2] EVENT[3] UNCLE[1] (
+ NARRATOR[2] = my ∧
+  is_uncle_POS(UNCLE[1], NARRATOR[2]) ∧
+   past(EVENT[3]) ∧ explained(EVENT[3], UNCLE[1]) ∧ to(EVENT[3]) = COTTER[old_Cotter])
+
+# ::id 37_fiction_JOYCE-1914;AT13-1;NE
+# ::snt " The youngster and he were great friends .
+∃ ATTRIB[5] EVENT[6] GROUP[4] GROUP[1] NARRATOR[2] (
+ youngster(NARRATOR[2]) ∧
+  is_element_of(NARRATOR[2], GROUP[1]) ∧ ∃ PRIEST[3] (PRIEST[3] = he ∧ is_element_of(PRIEST[3], GROUP[1])) ∧
+   great(ATTRIB[5]) ∧
+    is_friends_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ past(EVENT[6]) ∧ copula(EVENT[6], GROUP[1], GROUP[4]))
+
+# ::id 38_fiction_JOYCE-1914;AT13-2;NE
+# ::snt The old chap taught him a great deal , mind you ;
+∃ ATTRIB[5] NARRATOR[3] ATTRIB[2] EVENT[6] ENTITY[4] PRIEST[1] (
+ old(ATTRIB[2]) ∧
+  is_chap_ATTRIBUTE(PRIEST[1], ATTRIB[2]) ∧
+   NARRATOR[3] = him ∧
+    great(ATTRIB[5]) ∧
+     is_deal_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ past(EVENT[6]) ∧ taught(EVENT[6], PRIEST[1], ENTITY[4], NARRATOR[3]))
+
+# ::id 39_fiction_JOYCE-1914;AT13-3;NE
+# ::snt and they say he had a great wish for him . "
+∃ NARRATOR[6] ATTRIB[5] PRIEST[3] PERSONS[1] EVENT[7] EVENT[2] ENTITY[4] (
+ PERSONS[1] = they ∧
+  PRIEST[3] = he ∧
+   great(ATTRIB[5]) ∧
+    is_wish_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     NARRATOR[6] = him ∧
+      is_before(EVENT[7], EVENT[2]) ∧
+       say(EVENT[2], PERSONS[1], had(EVENT[7], PRIEST[3], ENTITY[4]) ∧ for(EVENT[7]) = NARRATOR[6]))
+
+# ::id 40_fiction_JOYCE-1914;AT14-1;NE
+# ::snt " God have mercy on his soul , " said my aunt piously .
+∃ SITUATION[8] PRIEST[6] NARRATOR[2] EVENT[7] EVENT[3] ENTITY[5] ENTITY[4] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   PRIEST[6] = his ∧
+    is_soul_POS(ENTITY[5], PRIEST[6]) ∧
+     is_mercy_on(ENTITY[4], ENTITY[5]) ∧
+      ADV_piously(SITUATION[8]) ∧
+       past(EVENT[3]) ∧ is_FACT_THAT(SITUATION[8], said(EVENT[3], AUNT[1], have(EVENT[7], ENTITY[God], ENTITY[4]))))
+
+# ::id 41_fiction_JOYCE-1914;AT15-1;NE
+# ::snt Old Cotter looked at me for a while .
+∃ NARRATOR[1] EVENT[3] TIME[2] (
+ NARRATOR[1] = me ∧
+  while(TIME[2]) ∧
+   past(EVENT[3]) ∧
+    looked(EVENT[3], COTTER[Old_Cotter]) ∧ for(EVENT[3]) = TIME[2] ∧ at(EVENT[3]) = NARRATOR[1])
+
+# ::id 42_fiction_JOYCE-1914;AT15-2;NE
+# ::snt I felt that his little beady black eyes were examining me
+∃ NARRATOR[6] ATTRIB[5] COTTER[4] NARRATOR[1] EVENT[7] EVENT[2] GROUP[3] (
+ NARRATOR[1] = i ∧
+  COTTER[4] = his ∧
+   little_beady_black(ATTRIB[5]) ∧
+    is_eyes_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_eyes_POS(GROUP[3], COTTER[4]) ∧
+     NARRATOR[6] = me{NARRATOR[1]} ∧
+      is_before(EVENT[7], EVENT[2]) ∧
+       past(EVENT[2]) ∧ felt(EVENT[2], NARRATOR[1], were_examining(EVENT[7], GROUP[3], NARRATOR[6])))
+
+# ::id 43_fiction_JOYCE-1914;AT15-3;NE
+# ::snt but I would not satisfy him by looking up from my plate .
+∃ NARRATOR[1] (
+ NARRATOR[1] = i ∧
+  MD_would(¬ ∃ NARRATOR[5] SITUATION[3] COTTER[2] EVENT[6] EVENT[7] ENTITY[4] (
+             COTTER[2] = him ∧
+              NARRATOR[5] = my{NARRATOR[1]} ∧
+               is_plate_POS(ENTITY[4], NARRATOR[5]) ∧
+                is_FACT_THAT(SITUATION[3], looking_up(EVENT[6], COTTER[2]) ∧ from(EVENT[6]) = ENTITY[4]) ∧
+                 satisfy(EVENT[7], NARRATOR[1], COTTER[2]) ∧ by(EVENT[7]) = SITUATION[3])))
+
+# ::id 44_fiction_JOYCE-1914;AT15-4;NE
+# ::snt He returned to his pipe and finally spat rudely into the grate .
+∃ COTTER[3] COTTER[1] EVENT[4] EVENT[6] ENTITY[2] ENTITY[5] (
+ grate(ENTITY[5]) ∧
+  COTTER[1] = he ∧
+   COTTER[3] = his{COTTER[1]} ∧
+    is_pipe_POS(ENTITY[2], COTTER[3]) ∧
+     past(EVENT[4]) ∧
+      TMP_finally(EVENT[6]) ∧
+       ADV_rudely(EVENT[6]) ∧
+        past(EVENT[6]) ∧
+         CONJ_and(returned(EVENT[4], COTTER[1]) ∧ to(EVENT[4]) = ENTITY[2],
+          spat(EVENT[6], COTTER[1]) ∧ into(EVENT[6]) = ENTITY[5]))
+
+# ::id 45_fiction_JOYCE-1914;AT16-1;NE
+# ::snt " I would n't like children of mine , " he said , " to have too much to say to a man like that . "
+∃ COTTER[3] COTTER[1] EVENT[2] ENTITY[10] (
+ COTTER[1] = he ∧
+  COTTER[3] = i{COTTER[1]} ∧
+   past(EVENT[2]) ∧
+    said(EVENT[2], COTTER[1],
+     MD_would(¬ ∃ COTTER[5] EVENT[6] CHILDRENS[4] (
+                COTTER[5] = mine{COTTER[3], COTTER[1]} ∧
+                 is_children_of(CHILDRENS[4], COTTER[5]) ∧
+                  like(EVENT[6], COTTER[3], CHILDRENS[4],
+                   TOO_MUCH ATTRIB[9] EVENT[11] ENTITY[8] ENTITY[7] (
+                    (is_like_comp(ATTRIB[9], ENTITY[10]) ∧ is_man_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+                     is_to(ENTITY[7], say(EVENT[11]) ∧ to(EVENT[11]) = ENTITY[8])),
+                    ∃ EVENT[12] have(EVENT[12], CHILDRENS[4], ENTITY[7])))))))
+
+# ::id 46_fiction_JOYCE-1914;AT17-1;NE
+# ::snt " How do you mean Mr. Cotter ? " asked my aunt .
+∃ NARRATOR[2] EVENT[3] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   past(EVENT[3]) ∧
+    asked(EVENT[3], AUNT[1],
+     QUEST(∃ COTTER[5] EVENT[6] ? ENTITY[4] (
+           COTTER[5] = you ∧
+            is_ADV(EVENT[6], ENTITY[4]) ∧
+             do_mean(EVENT[6], COTTER[5]) ∧ VOC(EVENT[6]) = COTTER[Mr.Cotter]))))
+
+# ::id 47_fiction_JOYCE-1914;AT18-1;NE
+# ::snt " What I mean is , " said old Cotter , " it 's bad for children .
+∃ ATTRIB[8] REF1[7] COTTER[4] EVENT[5] EVENT[10] EVENT[6] EVENT[1] CHILDRENS[9] ENTITY[2] (
+ COTTER[4] = i{COTTER[old_Cotter]} ∧
+  mean(EVENT[5], COTTER[4], ENTITY[2]) ∧
+   REF1[7] = it ∧
+    children(CHILDRENS[9]) ∧
+     is_bad_for(ATTRIB[8], CHILDRENS[9]) ∧
+      past(EVENT[1]) ∧
+       said(EVENT[1], COTTER[old_Cotter], copula(EVENT[6], ENTITY[2], copula(EVENT[10], REF1[7], ATTRIB[8]))))
+
+# ::id 48_fiction_JOYCE-1914;AT18-2;NE
+# ::snt My idea is : let a young lad run about and play with young lads of his own age and not be .. .
+∃ COTTER[2] EVENT[3] ENTITY[1] (
+ COTTER[2] = my ∧
+  is_idea_POS(ENTITY[1], COTTER[2]) ∧
+   copula(EVENT[3], ENTITY[1],
+    IMPERATIVE(∃ ATTRIB[12] PERSON[11] ATTRIB[9] ATTRIB[6] EVENT[7] EVENT[13] EVENT[4] ENTITY[10] PERSONS[8] PERSON[5] (
+          young(ATTRIB[6]) ∧
+           is_lad_ATTRIBUTE(PERSON[5], ATTRIB[6]) ∧
+            young(ATTRIB[9]) ∧
+             PERSON[11] = his{PERSON[5]} ∧
+              own(ATTRIB[12]) ∧
+               is_age_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_age_POS(ENTITY[10], PERSON[11]) ∧
+                is_lads_of(PERSONS[8], ENTITY[10]) ∧ is_lads_ATTRIBUTE(PERSONS[8], ATTRIB[9]) ∧
+                 let(EVENT[4],
+                  CONJ_and(run_about(EVENT[7], PERSON[5]),
+                   play(EVENT[13], PERSON[5]) ∧ with(EVENT[13]) = PERSONS[8],
+                   ¬ ∃ EVENT[14] copula(EVENT[14], PERSON[5])))))))
+
+# ::id 49_fiction_JOYCE-1914;AT18-3;NE
+# ::snt Am I right , Jack ? "
+QUEST(∃ ATTRIB[2] COTTER[1] EVENT[3] (
+      COTTER[1] = i ∧
+       right(ATTRIB[2]) ∧ copula(EVENT[3], COTTER[1], ATTRIB[2]) ∧ VOC(EVENT[3]) = UNCLE[Jack]))
+
+# ::id 50_fiction_JOYCE-1914;AT19-1;NE
+# ::snt " That 's my principle , too , " said my uncle .
+∃ UNCLE[6] NARRATOR[2] EVENT[7] EVENT[3] ENTITY[5] UNCLE[1] ENTITY[4] (
+ NARRATOR[2] = my ∧
+  is_uncle_POS(UNCLE[1], NARRATOR[2]) ∧
+   UNCLE[6] = my{UNCLE[1]} ∧
+    is_principle_POS(ENTITY[5], UNCLE[6]) ∧
+     ADV_too(EVENT[7]) ∧ past(EVENT[3]) ∧ said(EVENT[3], UNCLE[1], copula(EVENT[7], ENTITY[4], ENTITY[5])))
+
+# ::id 51_fiction_JOYCE-1914;AT19-2;NE
+# ::snt " Let him learn to box his corner .
+IMPERATIVE(∃ PERSON[5] PERSON[2] EVENT[6] EVENT[3] EVENT[1] ENTITY[4] (
+      PERSON[2] = him ∧
+       PERSON[5] = his{PERSON[2]} ∧
+        is_corner_POS(ENTITY[4], PERSON[5]) ∧
+         let(EVENT[1], learn(EVENT[3], PERSON[2], box(EVENT[6], PERSON[2], ENTITY[4])))))
+
+# ::id 52_fiction_JOYCE-1914;AT19-3;NE
+# ::snt That 's what I 'm always saying to that Rosicrucian there :
+∃ UNCLE[4] EVENT[5] EVENT[8] ENTITY[2] ENTITY[1] (
+ UNCLE[4] = i ∧
+  'm_saying(EVENT[5], UNCLE[4], ENTITY[2]) ∧ to(EVENT[5]) = ENTITY[Rosicrucian] ∧
+   TMP_always(EVENT[5]) ∧ LOC_there(EVENT[5]) ∧ copula(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 53_fiction_JOYCE-1914;AT19-4;NE
+# ::snt take exercise .
+IMPERATIVE(∃ EVENT[2] ENTITY[1] (exercise(ENTITY[1]) ∧ take(EVENT[2], _, ENTITY[1])))
+
+# ::id 54_fiction_JOYCE-1914;AT19-5;NE
+# ::snt Why , when I was a nipper every morning of my life I had a cold bath , winter and summer .
+∀ UNCLE[1] ENTITY[2] CND_when(
+    UNCLE[1] = i ∧ nipper(ENTITY[2]) ∧
+     ∀ UNCLE[5] ENTITY[4] TIME[3] ((UNCLE[5] = my{UNCLE[1]} ∧ is_life_POS(ENTITY[4], UNCLE[5]) ∧ is_morning_of(TIME[3], ENTITY[4])) →
+      ∃ EVENT[6] (
+       past(EVENT[6]) ∧ copula(EVENT[6], UNCLE[1], ENTITY[2]) ∧ is_contained_in(TMP(EVENT[6]), TIME[3]))),
+    ∃ ATTRIB[9] UNCLE[7] EVENT[13] GROUP[10] ENTITY[8] (
+     UNCLE[7] = i ∧
+      cold(ATTRIB[9]) ∧
+       is_bath_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+        ∃ ENTITY[11] (winter(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+         ∃ ENTITY[12] (summer(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+         past(EVENT[13]) ∧ had(EVENT[13], UNCLE[7], ENTITY[8]) ∧ TMP(EVENT[13]) = GROUP[10]))
+
+# ::id 55_fiction_JOYCE-1914;AT19-6;NE
+# ::snt And that 's what stands to me now .
+∃ UNCLE[4] EVENT[5] EVENT[7] ENTITY[2] ENTITY[1] (
+ UNCLE[4] = me ∧
+  stands(EVENT[5], ENTITY[2]) ∧ to(EVENT[5]) = UNCLE[4] ∧
+   TMP_now(EVENT[5]) ∧ copula(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 56_fiction_JOYCE-1914;AT19-7;NE
+# ::snt Education is all very fine and large ... .
+∃ ATTRIB[3] ATTRIB[2] EVENT[4] EVENT[4] ENTITY[1] (
+ Education(ENTITY[1]) ∧
+  all_very_fine(ATTRIB[2]) ∧
+   large(ATTRIB[3]) ∧ CONJ_and(copula(EVENT[4], ENTITY[1], ATTRIB[2]), copula(EVENT[4], ENTITY[1], ATTRIB[3])))
+
+# ::id 57_fiction_JOYCE-1914;AT19-8;NE
+# ::snt Mr. Cotter might take a pick of that leg mutton , " he added to my aunt .
+∃ NARRATOR[3] UNCLE[1] EVENT[4] AUNT[2] ENTITY[6] (
+ leg_mutton(ENTITY[6]) ∧
+  UNCLE[1] = he ∧
+   NARRATOR[3] = my ∧
+    is_aunt_POS(AUNT[2], NARRATOR[3]) ∧
+     past(EVENT[4]) ∧
+      added(EVENT[4], UNCLE[1],
+       MD_might(∃ EVENT[7] ENTITY[5] (is_pick_of(ENTITY[5], ENTITY[6]) ∧ take(EVENT[7], COTTER[Mr.Cotter], ENTITY[5])))) ∧
+       to(EVENT[4]) = AUNT[2])
+
+# ::id 58_fiction_JOYCE-1914;AT20-1;NE
+# ::snt " No , no , not for me , " said old Cotter .
+∃ EVENT[1] (
+ past(EVENT[1]) ∧
+  said(EVENT[1], COTTER[old_Cotter],
+   ¬ ∃ COTTER[2] EVENT[3] (COTTER[2] = me{COTTER[old_Cotter]} ∧ xxx(EVENT[3]) ∧ for(EVENT[3]) = COTTER[2])))
+
+# ::id 59_fiction_JOYCE-1914;AT21-1;NE
+# ::snt My aunt brought the dish from the safe and put it on the table .
+∃ REF1[7] NARRATOR[2] ATTRIB[5] EVENT[6] EVENT[9] AUNT[1] ENTITY[4] ENTITY[3] ENTITY[8] (
+ dish(ENTITY[3]) ∧
+  safe(ATTRIB[5]) ∧
+   is_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    table(ENTITY[8]) ∧
+     NARRATOR[2] = my ∧
+      is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+       REF1[7] = it ∧
+        past(EVENT[6]) ∧
+         past(EVENT[9]) ∧
+          CONJ_and(brought(EVENT[6], AUNT[1], ENTITY[3]) ∧ from(EVENT[6]) = ENTITY[4],
+           put(EVENT[9], AUNT[1], REF1[7]) ∧ on(EVENT[9]) = ENTITY[8]))
+
+# ::id 60_fiction_JOYCE-1914;AT22-1;NE
+# ::snt " But why do you think it 's not good for children , Mr. Cotter ? " she asked .
+∃ AUNT[1] EVENT[2] (
+ AUNT[1] = she ∧
+  past(EVENT[2]) ∧
+   asked(EVENT[2], AUNT[1],
+    QUEST(∃ REF1[6] COTTER[4] EVENT[5] ? ENTITY[3] (
+          COTTER[4] = you ∧
+           REF1[6] = it ∧
+            is_ADV(EVENT[5], ENTITY[3]) ∧
+             do_think(EVENT[5], COTTER[4],
+              ¬ ∃ ATTRIB[7] EVENT[9] CHILDRENS[8] (
+                    children(CHILDRENS[8]) ∧
+                     is_good_for(ATTRIB[7], CHILDRENS[8]) ∧ copula(EVENT[9], REF1[6], ATTRIB[7]))) ∧
+              VOC(EVENT[5]) = COTTER[Mr.Cotter]))))
+
+# ::id 61_fiction_JOYCE-1914;AT23-1;NE
+# ::snt " It 's bad for children , " said old Cotter , " because their minds are so impressionable .
+∃ ATTRIB[7] CHILDRENS[6] ATTRIB[3] REF1[2] EVENT[8] EVENT[9] EVENT[1] CHILDRENS[4] GROUP[5] (
+ REF1[2] = it ∧
+  children(CHILDRENS[4]) ∧
+   is_bad_for(ATTRIB[3], CHILDRENS[4]) ∧
+    CHILDRENS[6] = their{CHILDRENS[4]} ∧
+     is_minds_POS(GROUP[5], CHILDRENS[6]) ∧
+      so_impressionable(ATTRIB[7]) ∧
+       past(EVENT[1]) ∧
+        said(EVENT[1], COTTER[old_Cotter],
+         CRD_because(copula(EVENT[8], GROUP[5], ATTRIB[7]), copula(EVENT[9], REF1[2], ATTRIB[3]))))
+
+# ::id 62_fiction_JOYCE-1914;AT23-2;NE
+# ::snt When children see things like that , you know , it has an effect .... "
+∃ ENTITY[4] ∀ ATTRIB[3] EVENT[5] GROUP[2] CHILDRENS[1] CND_When(
+    children(CHILDRENS[1]) ∧ things(GROUP[2]) ∧ is_like_comp(ATTRIB[3], ENTITY[4]) ∧
+     see(EVENT[5], CHILDRENS[1], GROUP[2]) ∧ ATTRIBUTE(EVENT[5]) = ATTRIB[3],
+    ∃ REF2[6] EVENT[8] ENTITY[7] (REF2[6] = it ∧ effect(ENTITY[7]) ∧ has(EVENT[8], REF2[6], ENTITY[7])))
+
+# ::id 63_fiction_JOYCE-1914;AT24-1;NE
+# ::snt I crammed my mouth with stirabout for fear I might give utterance to my anger .
+∃ NARRATOR[6] NARRATOR[3] NARRATOR[1] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[2] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = my{NARRATOR[1]} ∧
+   is_mouth_POS(ENTITY[2], NARRATOR[3]) ∧
+    stirabout(ENTITY[4]) ∧
+     NARRATOR[6] = i{NARRATOR[1]} ∧
+      is_fear_THAT(ENTITY[5],
+       MD_might(∃ NARRATOR[9] EVENT[10] ENTITY[8] ENTITY[7] (
+             NARRATOR[9] = my{NARRATOR[6], NARRATOR[1]} ∧
+              is_anger_POS(ENTITY[8], NARRATOR[9]) ∧
+               is_utterance_to(ENTITY[7], ENTITY[8]) ∧ give(EVENT[10], NARRATOR[6], ENTITY[7])))) ∧
+       past(EVENT[11]) ∧
+        crammed(EVENT[11], NARRATOR[1], ENTITY[2]) ∧ for(EVENT[11]) = ENTITY[5] ∧ with(EVENT[11]) = ENTITY[4])
+
+# ::id 64_fiction_JOYCE-1914;AT24-2;NE
+# ::snt Tiresome old red-nosed imbecile !
+∃ ATTRIB[4] ATTRIB[3] ATTRIB[2] EVENT[5] ENTITY[1] (
+ tiresome(ATTRIB[2]) ∧
+  old(ATTRIB[3]) ∧
+   red-nosed(ATTRIB[4]) ∧
+    is_imbecile_ATTRIBUTE(ENTITY[1], ATTRIB[4]) ∧ is_imbecile_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_imbecile_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 65_fiction_JOYCE-1914;AT25-1;NE
+# ::snt It was late when I fell asleep .
+∃ SITUATION[9] NARRATOR[4] ATTRIB[2] REF1[1] EVENT[6] EVENT[8] ENTITY[5] (
+ REF1[1] = it ∧
+  late(ATTRIB[2]) ∧
+   NARRATOR[4] = i ∧
+    sleep(ENTITY[5]) ∧
+     is_TMP(EVENT[6], SITUATION[9]) ∧
+      past(EVENT[6]) ∧
+       fell(EVENT[6], NARRATOR[4]) ∧ a(EVENT[6]) = ENTITY[5] ∧
+        past(EVENT[8]) ∧ is_FACT_THAT(SITUATION[9], copula(EVENT[8], REF1[1], ATTRIB[2])))
+
+# ::id 66_fiction_JOYCE-1914;AT25-2;NE
+# ::snt Though I was angry with old Cotter for alluding to me as a child , I puzzled my head to extract meaning from his unfinished sentences .
+∃ ATTRIB[16] REF1[15] PRP[12] NARRATOR[11] NARRATOR[9] NARRATOR[5] SITUATION[4] ATTRIB[3] NARRATOR[2] SITUATION[1] EVENT[7] EVENT[8] EVENT[17] EVENT[18] CHILD[6] GROUP[14] ENTITY[13] ENTITY[10] (
+ NARRATOR[2] = i ∧
+  NARRATOR[5] = me{NARRATOR[2]} ∧
+   child(CHILD[6]) ∧
+    is_FACT_THAT(SITUATION[4], alluding(EVENT[7]) ∧ as(EVENT[7]) = CHILD[6] ∧ to(EVENT[7]) = NARRATOR[5]) ∧
+     is_angry_for(ATTRIB[3], SITUATION[4]) ∧ is_angry_with(ATTRIB[3], ENTITY[old_Cotter]) ∧
+      is_FACT_THAT(SITUATION[1], copula(EVENT[8], NARRATOR[2], ATTRIB[3])) ∧
+       NARRATOR[9] = i ∧
+        NARRATOR[11] = my{NARRATOR[9]} ∧
+         is_head_POS(ENTITY[10], NARRATOR[11]) ∧
+          meaning(ENTITY[13]) ∧
+           REF1[15] = his ∧
+            unfinished(ATTRIB[16]) ∧
+             is_sentences_ATTRIBUTE(GROUP[14], ATTRIB[16]) ∧ is_sentences_POS(GROUP[14], REF1[15]) ∧
+              is_FACT_THAT(PRP[12], extract(EVENT[17], ENTITY[10], ENTITY[13]) ∧ from(EVENT[17]) = GROUP[14]) ∧
+               past(EVENT[8]) ∧
+                past(EVENT[18]) ∧
+                 puzzled(EVENT[18], NARRATOR[9], ENTITY[10]) ∧ PRP(EVENT[18]) = PRP[12] ∧
+                  Though(EVENT[18]) = SITUATION[1])
+
+# ::id 67_fiction_JOYCE-1914;AT25-3;NE
+# ::snt In the dark of my room I imagined that I saw again the heavy grey face of the paralytic .
+∃ NARRATOR[7] NARRATOR[5] ATTRIB[12] ATTRIB[10] ATTRIB[9] NARRATOR[4] ATTRIB[2] EVENT[13] EVENT[6] ENTITY[3] ENTITY[11] ENTITY[8] ENTITY[1] (
+ dark(ATTRIB[2]) ∧
+  NARRATOR[4] = my ∧
+   is_room_POS(ENTITY[3], NARRATOR[4]) ∧
+    is_of(ENTITY[1], ENTITY[3]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     heavy(ATTRIB[9]) ∧
+      grey(ATTRIB[10]) ∧
+       paralytic(ATTRIB[12]) ∧
+        is_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+         is_face_of(ENTITY[8], ENTITY[11]) ∧ is_face_ATTRIBUTE(ENTITY[8], ATTRIB[10]) ∧ is_face_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+          NARRATOR[5] = i ∧
+           NARRATOR[7] = i{NARRATOR[5]} ∧
+            ADV_again(EVENT[13]) ∧
+             is_before(EVENT[13], EVENT[6]) ∧
+              past(EVENT[6]) ∧
+               imagined(EVENT[6], NARRATOR[5], saw(EVENT[13], NARRATOR[7], ENTITY[8])) ∧
+                In(EVENT[6]) = ENTITY[1])
+
+# ::id 68_fiction_JOYCE-1914;AT25-4;NE
+# ::snt I drew the blankets over my head and tried to think of Christmas .
+∃ NARRATOR[4] NARRATOR[1] EVENT[5] EVENT[7] EVENT[6] ENTITY[3] GROUP[2] (
+ blankets(GROUP[2]) ∧
+  NARRATOR[1] = i ∧
+   NARRATOR[4] = my{NARRATOR[1]} ∧
+    is_head_POS(ENTITY[3], NARRATOR[4]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(drew(EVENT[5], NARRATOR[1], GROUP[2]) ∧ over(EVENT[5]) = ENTITY[3],
+        tried(EVENT[6], NARRATOR[1], think(EVENT[7], NARRATOR[1]) ∧ of(EVENT[7]) = ENTITY[Christmas])))
+
+# ::id 69_fiction_JOYCE-1914;AT25-5;NE
+# ::snt But the grey face still followed me .
+∃ NARRATOR[3] ATTRIB[2] EVENT[4] ENTITY[1] (
+ grey(ATTRIB[2]) ∧
+  is_face_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   NARRATOR[3] = me ∧ TMP_still(EVENT[4]) ∧ past(EVENT[4]) ∧ followed(EVENT[4], ENTITY[1], NARRATOR[3]))
+
+# ::id 70_fiction_JOYCE-1914;AT25-6;NE
+# ::snt It murmured ;
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ past(EVENT[2]) ∧ murmured(EVENT[2], REF1[1]))
+
+# ::id 71_fiction_JOYCE-1914;AT25-7;NE
+# ::snt and I understood that it desired to confess something .
+∃ REF1[3] NARRATOR[1] EVENT[4] EVENT[2] (
+ NARRATOR[1] = i ∧
+  REF1[3] = it ∧
+   is_before(EVENT[4], EVENT[2]) ∧
+    past(EVENT[2]) ∧
+     understood(EVENT[2], NARRATOR[1],
+      desired(EVENT[4], REF1[3], SOME ENTITY[5] (thing(ENTITY[5]), ∃ EVENT[6] confess(EVENT[6], REF1[3], ENTITY[5])))))
+
+# ::id 72_fiction_JOYCE-1914;AT25-8;NE
+# ::snt I felt my soul receding into some pleasant and vicious region ;
+∃ NARRATOR[4] SITUATION[2] NARRATOR[1] EVENT[10] EVENT[11] GROUP[5] ENTITY[3] (
+ NARRATOR[1] = i ∧
+  NARRATOR[4] = my{NARRATOR[1]} ∧
+   is_soul_POS(ENTITY[3], NARRATOR[4]) ∧
+    SOME ATTRIB[7] ENTITY[6] ((pleasant(ATTRIB[7]) ∧ is_region_ATTRIBUTE(ENTITY[6], ATTRIB[7])), is_element_of(ENTITY[6], GROUP[5])) ∧
+     ∃ ATTRIB[9] ENTITY[8] (vicious(ATTRIB[9]) ∧ is_region_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[5])) ∧
+     is_FACT_THAT(SITUATION[2], receding(EVENT[10], ENTITY[3]) ∧ into(EVENT[10]) = GROUP[5]) ∧
+      past(EVENT[11]) ∧ felt(EVENT[11], NARRATOR[1], SITUATION[2]))
+
+# ::id 73_fiction_JOYCE-1914;AT25-9;NE
+# ::snt and there again I found it waiting for me .
+∃ SITUATION[7] SITUATION[8] NARRATOR[4] REF1[3] SITUATION[2] NARRATOR[1] EVENT[5] EVENT[6] (
+ NARRATOR[1] = i ∧
+  REF1[3] = it ∧
+   NARRATOR[4] = me{NARRATOR[1]} ∧
+    is_FACT_THAT(SITUATION[2], waiting(EVENT[5], REF1[3]) ∧ for(EVENT[5]) = NARRATOR[4]) ∧
+     LOC_there(SITUATION[8]) ∧
+      ADV_again(SITUATION[7]) ∧
+       past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[8], is_FACT_THAT(SITUATION[7], found(EVENT[6], NARRATOR[1], SITUATION[2]))))
+
+# ::id 74_fiction_JOYCE-1914;AT25-10;NE
+# ::snt It began to confess to me in a murmuring voice
+∃ ATTRIB[5] NARRATOR[3] REF1[1] EVENT[6] EVENT[2] ENTITY[4] (
+ REF1[1] = it ∧
+  NARRATOR[3] = me ∧
+   murmuring(ATTRIB[5]) ∧
+    is_voice_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     past(EVENT[2]) ∧
+      began(EVENT[2], REF1[1],
+       confess(EVENT[6], REF1[1]) ∧ in(EVENT[6]) = ENTITY[4] ∧ to(EVENT[6]) = NARRATOR[3]))
+
+# ::id 75_fiction_JOYCE-1914;AT25-11;NE
+# ::snt and I wondered why it smiled continually and why the lips were so moist with spittle .
+∃ NARRATOR[1] EVENT[2] GROUP[9] (
+ lips(GROUP[9]) ∧
+  NARRATOR[1] = i ∧
+   past(EVENT[2]) ∧
+    wondered(EVENT[2], NARRATOR[1],
+     CONJ_and(QUEST(∃ REF1[4] EVENT[5] ? ENTITY[3] (
+                REF1[4] = it ∧
+                 is_ADV(EVENT[5], ENTITY[3]) ∧
+                  TMP_continually(EVENT[5]) ∧ is_before(EVENT[5], EVENT[2]) ∧ smiled(EVENT[5], REF1[4]))),
+      QUEST(∃ ATTRIB[10] EVENT[12] ENTITY[11] ? ENTITY[8] (
+            spittle(ENTITY[11]) ∧
+             is_so_moist_with(ATTRIB[10], ENTITY[11]) ∧
+              is_ADV(EVENT[12], ENTITY[8]) ∧
+               is_before(EVENT[12], EVENT[2]) ∧ copula(EVENT[12], GROUP[9], ATTRIB[10]))))))
+
+# ::id 76_fiction_JOYCE-1914;AT25-12;NE
+# ::snt But then I remembered that it had died of paralysis
+∃ SITUATION[6] REF1[3] NARRATOR[1] EVENT[5] EVENT[2] ENTITY[4] (
+ NARRATOR[1] = i ∧
+  REF1[3] = it ∧
+   paralysis(ENTITY[4]) ∧
+    TMP_then(SITUATION[6]) ∧
+     is_before(EVENT[5], EVENT[2]) ∧
+      past(EVENT[2]) ∧
+       is_FACT_THAT(SITUATION[6],
+        remembered(EVENT[2], NARRATOR[1], had_died(EVENT[5], REF1[3]) ∧ of(EVENT[5]) = ENTITY[4])))
+
+# ::id 77_fiction_JOYCE-1914;AT25-13;NE
+# ::snt and I felt that I too was smiling feebly as if to absolve the simoniac of his sin .
+∃ NARRATOR[8] SITUATION[2] NARRATOR[1] REF1[5] EVENT[6] EVENT[9] EVENT[7] ENTITY[4] ENTITY[3] (
+ REF1[5] = his ∧
+  is_sin_POS(ENTITY[4], REF1[5]) ∧
+   is_simoniac_of(ENTITY[3], ENTITY[4]) ∧
+    NARRATOR[1] = i ∧
+     is_FACT_THAT(SITUATION[2], absolve(EVENT[6], NARRATOR[1], ENTITY[3])) ∧
+      NARRATOR[8] = i{NARRATOR[1]} ∧
+       ADV_too(EVENT[9]) ∧
+        ADV_feebly(EVENT[9]) ∧
+         is_before(EVENT[9], EVENT[7]) ∧
+          past(EVENT[7]) ∧
+           felt(EVENT[7], NARRATOR[1], was_smiling(EVENT[9], NARRATOR[8])) ∧ as_if(EVENT[7]) = SITUATION[2])
+
+# ::id 78_fiction_JOYCE-1914;AT26-1;NE
+# ::snt The next morning after breakfast I went down to look at the little house in Great Britain Street .
+∃ SITUATION[10] PRP[5] NARRATOR[4] ATTRIB[7] ATTRIB[2] EVENT[8] EVENT[9] ENTITY[3] ENTITY[6] TIME[1] (
+ next(ATTRIB[2]) ∧
+  is_morning_ATTRIBUTE(TIME[1], ATTRIB[2]) ∧
+   little(ATTRIB[7]) ∧
+    is_house_in(ENTITY[6], ENTITY[Great_Britain_Street]) ∧ is_house_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     breakfast(ENTITY[3]) ∧
+      NARRATOR[4] = i ∧
+       is_FACT_THAT(PRP[5], look(EVENT[8], NARRATOR[4]) ∧ at(EVENT[8]) = ENTITY[6]) ∧
+        DIR_down(SITUATION[10]) ∧
+         past(EVENT[9]) ∧
+          is_FACT_THAT(SITUATION[10],
+           went(EVENT[9], NARRATOR[4]) ∧ PRP(EVENT[9]) = PRP[5] ∧ after(EVENT[9]) = ENTITY[3] ∧
+            is_contained_in(TMP(EVENT[9]), TIME[1])))
+
+# ::id 79_fiction_JOYCE-1914;AT26-2;NE
+# ::snt It was an unassuming shop , registered under the vague name of Drapery .
+∃ ATTRIB[3] REF1[1] ATTRIB[5] EVENT[7] EVENT[6] ENTITY[2] ENTITY[4] (
+ vague(ATTRIB[5]) ∧
+  is_name_of(ENTITY[4], ENTITY[Drapery]) ∧ is_name_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   REF1[1] = it ∧
+    unassuming(ATTRIB[3]) ∧
+     is_shop_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      past(EVENT[7]) ∧
+       CONJ_and(copula(EVENT[7], REF1[1], ENTITY[2]),
+        registered(EVENT[6], _, ENTITY[2]) ∧ under(EVENT[6]) = ENTITY[4]))
+
+# ::id 80_fiction_JOYCE-1914;AT26-3;NE
+# ::snt The drapery consisted mainly of children 's bootees and umbrellas ;
+∃ EVENT[7] GROUP[4] GROUP[3] ENTITY[2] ENTITY[1] (
+ drapery(ENTITY[1]) ∧
+  children(GROUP[3]) ∧
+   ∃ GROUP[5] (bootees(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ GROUP[6] (umbrellas(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+    is_equals(ENTITY[2], GROUP[4]) ∧ is_POS(ENTITY[2], GROUP[3]) ∧
+     past(EVENT[7]) ∧ consisted(EVENT[7], ENTITY[1]) ∧ mainly_of(EVENT[7]) = ENTITY[2])
+
+# ::id 81_fiction_JOYCE-1914;AT26-4;NE
+# ::snt and on ordinary days a notice used to hang in the window , saying : Umbrellas Re-covered .
+∃ ATTRIB[2] EVENT[9] EVENT[7] EVENT[6] EVENT[4] GROUP[5] ENTITY[3] GROUP[1] ENTITY[8] (
+ window(ENTITY[8]) ∧
+  ordinary(ATTRIB[2]) ∧
+   is_days_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    notice(ENTITY[3]) ∧
+     Umbrellas(GROUP[5]) ∧
+      past(EVENT[7]) ∧
+       is_before(EVENT[6], EVENT[4]) ∧
+        CONJ_and(used(EVENT[7], ENTITY[3], hang(EVENT[9], ENTITY[3]) ∧ in(EVENT[9]) = ENTITY[8]) ∧
+              on(EVENT[7]) = GROUP[1], saying(EVENT[4], ENTITY[3], re-covered(EVENT[6], GROUP[5]))))
+
+# ::id 82_fiction_JOYCE-1914;AT26-5;NE
+# ::snt No notice was visible now for the shutters were up .
+∃ GROUP[4] (
+ shutters(GROUP[4]) ∧
+  ¬ ∃ SITUATION[7] SITUATION[3] ATTRIB[2] EVENT[5] EVENT[6] ENTITY[1] (
+        notice(ENTITY[1]) ∧
+         visible(ATTRIB[2]) ∧
+          is_FACT_THAT(SITUATION[3], copula_up(EVENT[5], GROUP[4])) ∧
+           TMP_now(SITUATION[7]) ∧
+            past(EVENT[5]) ∧
+             past(EVENT[6]) ∧
+              is_FACT_THAT(SITUATION[7], copula(EVENT[6], ENTITY[1], ATTRIB[2]) ∧ for(EVENT[6]) = SITUATION[3])))
+
+# ::id 83_fiction_JOYCE-1914;AT26-6;NE
+# ::snt A crape bouquet was tied to the doork-nocker with ribbon .
+∃ EVENT[4] ENTITY[1] ENTITY[3] ENTITY[2] (
+ ribbon(ENTITY[3]) ∧
+  is_doork-nocker_with(ENTITY[2], ENTITY[3]) ∧
+   crape_bouquet(ENTITY[1]) ∧
+    past(EVENT[4]) ∧ tied(EVENT[4], _, ENTITY[1]) ∧ to(EVENT[4]) = ENTITY[2])
+
+# ::id 84_fiction_JOYCE-1914;AT26-7;NE
+# ::snt Two poor women and a telegram boy were reading the card pinned on the crape .
+∃ EVENT[9] GROUP[1] EVENT[8] ENTITY[7] ENTITY[5] (
+ crape(ENTITY[7]) ∧
+  pinned(EVENT[8], _, ENTITY[5]) ∧ on(EVENT[8]) = ENTITY[7] ∧ card(ENTITY[5]) ∧
+   ∃ ATTRIB[3] GROUP[2] (
+    poor(ATTRIB[3]) ∧
+     (CD_two(GROUP[2]), is_women_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+    ∃ ENTITY[4] (telegram_boy(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+    past(EVENT[9]) ∧ were_reading(EVENT[9], GROUP[1], ENTITY[5]))
+
+# ::id 85_fiction_JOYCE-1914;AT26-8;NE
+# ::snt I also approached and read :
+∃ NARRATOR[1] EVENT[2] EVENT[4] (
+ NARRATOR[1] = i ∧
+  ADV_also(EVENT[2]) ∧
+   past(EVENT[2]) ∧ past(EVENT[4]) ∧ CONJ_and(approached(EVENT[2], NARRATOR[1]), read(EVENT[4], NARRATOR[1])))
+
+# ::id 86_fiction_JOYCE-1914;AT27-1;NE
+# ::snt July 1st , 1895 The Rev. James Flynn -LRB- formerly of S. Catherine's Church , Meath Street -RRB- , aged sixty-five years . R.I.P.
+∃ ATTRIB[2] ATTRIB[1] EVENT[5] EVENT[4] GROUP[3] (
+ is_formerly_of(PRIEST[Rev.James_Flynn], ENTITY[S.Catherine's_Church_Meath_Street]) ∧
+  1st(ATTRIB[1]) ∧
+   is_ATTRIBUTE(TIME[July], ATTRIB[1]) ∧
+    1895(TIME[July]) ∧
+     (CD_sixty-five(GROUP[3]), years(GROUP[3])) ∧
+      is_aged_comp(ATTRIB[2], GROUP[3]) ∧
+       CONJ_and(r.i.p.(EVENT[5], PRIEST[Rev.James_Flynn]) ∧ is_contained_in(TMP(EVENT[5]), TIME[July]),
+        xxx(EVENT[4], PRIEST[Rev.James_Flynn], ATTRIB[2])))
+
+# ::id 87_fiction_JOYCE-1914;AT28-1;NE
+# ::snt The reading of the card persuaded me that he was dead
+∃ ATTRIB[6] REF1[5] NARRATOR[3] EVENT[7] EVENT[4] ENTITY[2] ENTITY[1] (
+ card(ENTITY[2]) ∧
+  is_reading_of(ENTITY[1], ENTITY[2]) ∧
+   NARRATOR[3] = me ∧
+    REF1[5] = he ∧
+     dead(ATTRIB[6]) ∧
+      is_before(EVENT[7], EVENT[4]) ∧
+       past(EVENT[4]) ∧ persuaded(EVENT[4], ENTITY[1], NARRATOR[3], copula(EVENT[7], REF1[5], ATTRIB[6])))
+
+# ::id 88_fiction_JOYCE-1914;AT28-2;NE
+# ::snt and I was disturbed to find myself at check .
+∃ NARRATOR[3] NARRATOR[1] EVENT[5] EVENT[2] ENTITY[4] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = myself{NARRATOR[1]} ∧
+   check(ENTITY[4]) ∧
+    past(EVENT[2]) ∧
+     disturbed(EVENT[2], _, NARRATOR[1], find(EVENT[5], NARRATOR[1], NARRATOR[3]) ∧ at(EVENT[5]) = ENTITY[4]))
+
+# ::id 89_fiction_JOYCE-1914;AT28-3;NE
+# ::snt Had he not been dead I would have gone into the little dark room behind the shop to find him sitting in his arm-chair by the fire , nearly smothered in his great-coat .
+∃ ATTRIB[7] ATTRIB[6] ENTITY[8] ENTITY[14] ENTITY[5] (
+ little(ATTRIB[6]) ∧
+  dark(ATTRIB[7]) ∧
+   shop(ENTITY[8]) ∧
+    is_room_behind(ENTITY[5], ENTITY[8]) ∧ is_room_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_room_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     fire(ENTITY[14]) ∧
+      ∀ REF1[1] (
+       (REF1[1] = he ∧
+        ¬ ∃ ATTRIB[2] EVENT[3] (dead(ATTRIB[2]) ∧ past(EVENT[3]) ∧ had_copula(EVENT[3], REF1[1], ATTRIB[2]))) →
+       ∃ NARRATOR[4] (
+        NARRATOR[4] = i ∧
+         MD_would(∃ REF4[16] REF3[13] REF2[11] SITUATION[10] PRP[9] EVENT[19] EVENT[17] EVENT[20] EVENT[21] ENTITY[15] ENTITY[12] (
+               REF2[11] = him ∧
+                REF3[13] = his ∧
+                 is_arm-chair_POS(ENTITY[12], REF3[13]) ∧
+                  REF4[16] = his ∧
+                   is_great-coat_POS(ENTITY[15], REF4[16]) ∧
+                    is_FACT_THAT(SITUATION[10],
+                     CONJ_and(sitting(EVENT[19], REF2[11]) ∧ by(EVENT[19]) = ENTITY[14] ∧
+                           in(EVENT[19]) = ENTITY[12],
+                      smothered(EVENT[17], _, REF2[11]) ∧ in(EVENT[17]) = ENTITY[15])) ∧
+                     is_FACT_THAT(PRP[9], find(EVENT[20], NARRATOR[4], SITUATION[10])) ∧
+                      ADV_nearly(EVENT[17]) ∧
+                       have_gone(EVENT[21], NARRATOR[4]) ∧ PRP(EVENT[21]) = PRP[9] ∧
+                        into(EVENT[21]) = ENTITY[5])))))
+
+# ::id 90_fiction_JOYCE-1914;AT28-4;NE
+# ::snt Perhaps my aunt would have given me a packet of High Toast for him
+∃ SITUATION[7] NARRATOR[2] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   ADV_perhaps(SITUATION[7]) ∧
+    is_FACT_THAT(SITUATION[7],
+     MD_would(∃ REF1[5] NARRATOR[3] EVENT[6] ENTITY[4] (
+           NARRATOR[3] = me ∧
+            is_packet_of(ENTITY[4], ENTITY[High_Toast]) ∧
+             REF1[5] = him ∧
+              have_given(EVENT[6], AUNT[1], ENTITY[4], NARRATOR[3]) ∧ for(EVENT[6]) = REF1[5]))))
+
+# ::id 91_fiction_JOYCE-1914;AT28-5;NE
+# ::snt and this present would have roused him from his stupefied doze .
+∃ ENTITY[1] (
+ present(ENTITY[1]) ∧
+  MD_would(∃ ATTRIB[5] REF2[4] REF1[2] EVENT[6] ENTITY[3] (
+        REF1[2] = him ∧
+         REF2[4] = his ∧
+          stupefied(ATTRIB[5]) ∧
+           is_doze_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_doze_POS(ENTITY[3], REF2[4]) ∧
+            have_roused(EVENT[6], ENTITY[1], REF1[2]) ∧ from(EVENT[6]) = ENTITY[3])))
+
+# ::id 92_fiction_JOYCE-1914;AT28-6;NE
+# ::snt It was always I who emptied the packet into his black snuff-box for his hands trembled too much to allow him to do this without spilling half the snuff about the floor .
+∃ REF2[11] SITUATION[9] ATTRIB[7] REF1[6] NARRATOR[1] EVENT[8] EVENT[22] ENTITY[5] GROUP[10] ENTITY[2] ENTITY[4] ENTITY[16] ENTITY[19] (
+ packet(ENTITY[4]) ∧
+  floor(ENTITY[16]) ∧
+   NARRATOR[1] = i ∧
+    REF1[6] = his ∧
+     black(ATTRIB[7]) ∧
+      is_snuff-box_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_snuff-box_POS(ENTITY[5], REF1[6]) ∧
+       emptied(EVENT[8], ENTITY[2], ENTITY[4]) ∧ into(EVENT[8]) = ENTITY[5] ∧
+        REF2[11] = his ∧
+         is_hands_POS(GROUP[10], REF2[11]) ∧
+          is_FACT_THAT(SITUATION[9],
+           TOO_MUCH SITUATION[14] REF3[13] EVENT[20] EVENT[18] DEGREE[12] (
+            (REF3[13] = him ∧
+             is_FACT_THAT(SITUATION[14],
+              HALF ENTITY[15] (snuff(ENTITY[15]),
+               ∃ EVENT[17] (spilling(EVENT[17], REF3[13], ENTITY[15]) ∧ about(EVENT[17]) = ENTITY[16]))) ∧
+             is_to(DEGREE[12],
+              allow(EVENT[18], _, REF3[13], do(EVENT[20], REF3[13], ENTITY[19])) ∧
+               without(EVENT[18]) = SITUATION[14])),
+            ∃ EVENT[21] (
+             past(EVENT[21]) ∧ trembled(EVENT[21], GROUP[10]) ∧ MSR(EVENT[21]) = DEGREE[12]))) ∧
+           past(EVENT[8]) ∧
+            TMP_always(EVENT[22]) ∧
+             past(EVENT[22]) ∧ copula(EVENT[22], ENTITY[2], NARRATOR[1]) ∧ for(EVENT[22]) = SITUATION[9])
+
+# ::id 93_fiction_JOYCE-1914;AT28-7;NE
+# ::snt Even as he raised his large trembling hand to his nose little clouds of smoke dribbled through his fingers over the front of his coat .
+∃ REF4[14] ATTRIB[11] REF3[8] ATTRIB[6] ATTRIB[5] REF2[4] REF1[2] SITUATION[1] REF5[17] EVENT[9] EVENT[18] ENTITY[7] ENTITY[3] ENTITY[12] GROUP[13] GROUP[10] ENTITY[16] ENTITY[15] (
+ REF5[17] = his ∧
+  is_coat_POS(ENTITY[16], REF5[17]) ∧
+   is_front_of(ENTITY[15], ENTITY[16]) ∧
+    REF1[2] = he ∧
+     REF2[4] = his ∧
+      large(ATTRIB[5]) ∧
+       trembling(ATTRIB[6]) ∧
+        is_hand_POS(ENTITY[3], REF2[4]) ∧ is_hand_ATTRIBUTE(ENTITY[3], ATTRIB[6]) ∧ is_hand_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧
+         REF3[8] = his ∧
+          is_nose_POS(ENTITY[7], REF3[8]) ∧
+           is_FACT_THAT(SITUATION[1], raised(EVENT[9], REF1[2], ENTITY[3]) ∧ to(EVENT[9]) = ENTITY[7]) ∧
+            little(ATTRIB[11]) ∧
+             smoke(ENTITY[12]) ∧
+              is_clouds_of(GROUP[10], ENTITY[12]) ∧ is_clouds_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+               REF4[14] = his ∧
+                is_fingers_POS(GROUP[13], REF4[14]) ∧
+                 past(EVENT[9]) ∧
+                  past(EVENT[18]) ∧
+                   dribbled(EVENT[18], GROUP[10]) ∧ over(EVENT[18]) = ENTITY[15] ∧
+                    through(EVENT[18]) = GROUP[13] ∧ even_as(EVENT[18]) = SITUATION[1])
+
+# ::id 94_fiction_JOYCE-1914;AT28-8;NE
+# ::snt It may have been these constant showers of snuff which gave his ancient priestly garments their green faded look for the red handkerchief , blackened , as it always was , with the snuff-stains of a week , with which he tried to brush away the fallen grains , was quite inefficacious .
+∃ ATTRIB[12] ATTRIB[11] REF2[10] ATTRIB[8] REF1[7] ATTRIB[29] REF4[25] REF3[19] SITUATION[18] ATTRIB[16] ATTRIB[2] EVENT[13] ENTITY[9] GROUP[6] ENTITY[4] EVENT[20] EVENT[24] EVENT[30] EVENT[26] ENTITY[3] ENTITY[23] GROUP[22] GROUP[28] ENTITY[15] GROUP[1] (
+ constant(ATTRIB[2]) ∧
+  snuff(ENTITY[3]) ∧
+   is_showers_of(GROUP[1], ENTITY[3]) ∧ is_showers_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    red(ATTRIB[16]) ∧
+     REF3[19] = it ∧
+      is_FACT_THAT(SITUATION[18], copula(EVENT[20], REF3[19])) ∧
+       week(ENTITY[23]) ∧
+        is_snuff-stains_of(GROUP[22], ENTITY[23]) ∧
+         REF4[25] = he ∧
+          fallen(ATTRIB[29]) ∧
+           is_grains_ATTRIBUTE(GROUP[28], ATTRIB[29]) ∧
+            blackened(EVENT[24], _, ENTITY[15]) ∧ with(EVENT[24]) = GROUP[22] ∧
+             as(EVENT[24]) = SITUATION[18] ∧
+             tried(EVENT[26], REF4[25],
+              brush(EVENT[30], REF4[25], GROUP[28]) ∧ with(EVENT[30]) = ENTITY[15]) ∧
+              is_handkerchief_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+             TMP_always(EVENT[20]) ∧
+              past(EVENT[20]) ∧
+               DIR_away(EVENT[30]) ∧
+                past(EVENT[26]) ∧
+                 REF1[7] = his ∧
+                  ancient(ATTRIB[8]) ∧
+                   is_priestly_garments_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_priestly_garments_POS(GROUP[6], REF1[7]) ∧
+                    REF2[10] = their ∧
+                     green(ATTRIB[11]) ∧
+                      faded(ATTRIB[12]) ∧
+                       is_look_ATTRIBUTE(ENTITY[9], ATTRIB[12]) ∧ is_look_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧
+                        is_look_POS(ENTITY[9], REF2[10]) ∧
+                        gave(EVENT[13], ENTITY[4], ENTITY[9], GROUP[6]) ∧
+                         past(EVENT[13]) ∧
+                          MD_may(∃ ATTRIB[32] SITUATION[14] EVENT[33] EVENT[34] (
+                                quite_inefficacious(ATTRIB[32]) ∧
+                                 is_FACT_THAT(SITUATION[14], copula(EVENT[33], ENTITY[15], ATTRIB[32])) ∧
+                                  past(EVENT[33]) ∧
+                                   have_copula(EVENT[34], ENTITY[4], GROUP[1]) ∧
+                                    for(EVENT[34]) = SITUATION[14])))
+
+# ::id 95_fiction_JOYCE-1914;AT29-1;NE
+# ::snt I wished to go in and look at him
+∃ REF1[4] NARRATOR[1] EVENT[3] EVENT[5] EVENT[2] (
+ NARRATOR[1] = i ∧
+  REF1[4] = him ∧
+   past(EVENT[2]) ∧
+    wished(EVENT[2], NARRATOR[1],
+     CONJ_and(go_in(EVENT[3], NARRATOR[1]), look(EVENT[5], NARRATOR[1]) ∧ at(EVENT[5]) = REF1[4])))
+
+# ::id 96_fiction_JOYCE-1914;AT29-2;NE
+# ::snt but I had not the courage to knock .
+∃ NARRATOR[1] ENTITY[2] EVENT[3] (
+ is_courage_to(ENTITY[2], knock(EVENT[3])) ∧
+  NARRATOR[1] = i ∧ ¬ ∃ EVENT[4] (past(EVENT[4]) ∧ had(EVENT[4], NARRATOR[1], ENTITY[2])))
+
+# ::id 97_fiction_JOYCE-1914;AT29-3;NE
+# ::snt I walked away slowly along the sunny side of the street , reading all the theatrical advertisements in the shopwindows as I went .
+∃ NARRATOR[1] ATTRIB[6] ATTRIB[3] EVENT[12] ENTITY[4] GROUP[7] ENTITY[2] (
+ sunny(ATTRIB[3]) ∧
+  street(ENTITY[4]) ∧
+   is_side_of(ENTITY[2], ENTITY[4]) ∧ is_side_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    theatrical(ATTRIB[6]) ∧
+     shopwindows(GROUP[7]) ∧
+      NARRATOR[1] = i ∧
+       DIR_away(EVENT[12]) ∧
+        ADV_slowly(EVENT[12]) ∧
+         past(EVENT[12]) ∧
+          CONJ_and(walked(EVENT[12], NARRATOR[1]) ∧ along(EVENT[12]) = ENTITY[2],
+           ALL GROUP[5] (is_advertisements_ATTRIBUTE(GROUP[5], ATTRIB[6]),
+            ∃ NARRATOR[9] SITUATION[8] EVENT[10] EVENT[11] (
+             NARRATOR[9] = i{NARRATOR[1]} ∧
+              is_FACT_THAT(SITUATION[8], went(EVENT[10], NARRATOR[9])) ∧
+               past(EVENT[10]) ∧
+                reading(EVENT[11], NARRATOR[1], GROUP[5]) ∧ as(EVENT[11]) = SITUATION[8] ∧
+                 in(EVENT[11]) = GROUP[7]))))
+
+# ::id 98_fiction_JOYCE-1914;AT29-4;NE
+# ::snt I found it strange that neither I nor the day seemed in a mourning mood
+∃ ATTRIB[10] ATTRIB[8] SITUATION[3] NARRATOR[1] EVENT[9] EVENT[11] EVENT[2] ENTITY[7] GROUP[4] ENTITY[6] (
+ day(ENTITY[6]) ∧
+  NARRATOR[1] = i ∧
+   CONJ_neither_nor(∃ NARRATOR[5] (NARRATOR[5] = i{NARRATOR[1]} ∧ is_element_of(NARRATOR[5], GROUP[4])), is_element_of(ENTITY[6], GROUP[4])) ∧
+    mourning(ATTRIB[8]) ∧
+     is_mood_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      is_FACT_THAT(SITUATION[3], seemed(EVENT[9], GROUP[4]) ∧ in(EVENT[9]) = ENTITY[7]) ∧
+       strange(ATTRIB[10]) ∧
+        is_before(EVENT[9], EVENT[2]) ∧
+         past(EVENT[2]) ∧ found(EVENT[2], NARRATOR[1], xxx(EVENT[11], SITUATION[3], ATTRIB[10])))
+
+# ::id 99_fiction_JOYCE-1914;AT29-5;NE
+# ::snt and I felt even annoyed at discovering in myself a sensation of freedom as if I had been freed from something by his death .
+∃ NARRATOR[8] SITUATION[7] NARRATOR[4] SITUATION[3] ATTRIB[2] NARRATOR[1] EVENT[13] EVENT[14] ENTITY[6] ENTITY[5] (
+ NARRATOR[1] = i ∧
+  NARRATOR[4] = myself ∧
+   freedom(ENTITY[6]) ∧
+    NARRATOR[8] = i{NARRATOR[4], NARRATOR[1]} ∧
+     is_FACT_THAT(SITUATION[7],
+      SOME ENTITY[9] (thing(ENTITY[9]),
+       ∃ REF1[11] EVENT[12] ENTITY[10] (
+        REF1[11] = his ∧
+         is_death_POS(ENTITY[10], REF1[11]) ∧
+          past(EVENT[12]) ∧
+           had_freed(EVENT[12], ENTITY[10], NARRATOR[8]) ∧ from(EVENT[12]) = ENTITY[9]))) ∧
+      is_sensation_as_if(ENTITY[5], SITUATION[7]) ∧ is_sensation_of(ENTITY[5], ENTITY[6]) ∧
+       is_FACT_THAT(SITUATION[3], discovering(EVENT[13], _, ENTITY[5]) ∧ in(EVENT[13]) = NARRATOR[4]) ∧
+        is_even_annoyed_at(ATTRIB[2], SITUATION[3]) ∧ past(EVENT[14]) ∧ felt(EVENT[14], NARRATOR[1], ATTRIB[2]))
+
+# ::id 100_fiction_JOYCE-1914;AT29-6;NE
+# ::snt I wondered at this for , as my uncle had said the night before , he had taught me a great deal .
+∃ ATTRIB[12] NARRATOR[10] PRIEST[9] NARRATOR[6] SITUATION[4] SITUATION[3] NARRATOR[1] EVENT[8] EVENT[13] EVENT[14] UNCLE[5] ENTITY[11] TIME[7] ENTITY[2] (
+ ADV_before(TIME[7]) ∧ night(TIME[7]) ∧
+  NARRATOR[1] = i ∧
+   NARRATOR[6] = my{NARRATOR[1]} ∧
+    is_uncle_POS(UNCLE[5], NARRATOR[6]) ∧
+     is_FACT_THAT(SITUATION[4], had_said(EVENT[8], UNCLE[5]) ∧ is_contained_in(TMP(EVENT[8]), TIME[7])) ∧
+      PRIEST[9] = he ∧
+       NARRATOR[10] = me{NARRATOR[1]} ∧
+        great(ATTRIB[12]) ∧
+         is_deal_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+          is_FACT_THAT(SITUATION[3], had_taught(EVENT[13], PRIEST[9], ENTITY[11], NARRATOR[10]) ∧ as(EVENT[13]) = SITUATION[4]) ∧
+           past(EVENT[8]) ∧
+            past(EVENT[13]) ∧
+             past(EVENT[14]) ∧
+              wondered(EVENT[14], NARRATOR[1]) ∧ for(EVENT[14]) = SITUATION[3] ∧ at(EVENT[14]) = ENTITY[2])
+
+# ::id 101_fiction_JOYCE-1914;AT29-7;NE
+# ::snt He had studied in the Irish college in Rome
+∃ PRIEST[1] ATTRIB[3] EVENT[4] FAC[2] (
+ irish(ATTRIB[3]) ∧
+  is_college_in(FAC[2], LOC[Rome]) ∧ is_college_ATTRIBUTE(FAC[2], ATTRIB[3]) ∧
+   PRIEST[1] = he ∧ past(EVENT[4]) ∧ had_studied(EVENT[4], PRIEST[1]) ∧ in(EVENT[4]) = FAC[2])
+
+# ::id 102_fiction_JOYCE-1914;AT29-8;NE
+# ::snt and he had taught me to pronounce Latin properly .
+∃ NARRATOR[2] PRIEST[1] EVENT[4] EVENT[3] (
+ PRIEST[1] = he ∧
+  NARRATOR[2] = me ∧
+   ADV_properly(EVENT[4]) ∧
+    past(EVENT[3]) ∧ had_taught(EVENT[3], PRIEST[1], NARRATOR[2], pronounce(EVENT[4], NARRATOR[2], ENTITY[Latin])))
+
+# ::id 103_fiction_JOYCE-1914;AT29-9;NE
+# ::snt He had told me stories about the catacombs and about Napoleon Bonaparte ,
+∃ NARRATOR[2] PRIEST[1] EVENT[5] GROUP[3] GROUP[4] (
+ catacombs(GROUP[4]) ∧
+  PRIEST[1] = he ∧
+   NARRATOR[2] = me ∧
+    CONJ_and(is_stories_about(GROUP[3], GROUP[4]), is_stories_about(GROUP[3], ENTITY[Napoleon_Bonaparte])) ∧
+     past(EVENT[5]) ∧ had_told(EVENT[5], PRIEST[1], GROUP[3], NARRATOR[2]))
+
+# ::id 104_fiction_JOYCE-1914;AT29-10;NE
+# ::snt and he had explained to me the meaning of the different ceremonies of the Mass and of the different vestments worn by the priest .
+∃ NARRATOR[2] PRIEST[1] ATTRIB[8] ATTRIB[5] EVENT[12] EVENT[11] ENTITY[6] GROUP[4] ENTITY[10] GROUP[7] ENTITY[3] (
+ different(ATTRIB[5]) ∧
+  Mass(ENTITY[6]) ∧
+   is_ceremonies_of(GROUP[4], ENTITY[6]) ∧ is_ceremonies_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    different(ATTRIB[8]) ∧
+     priest(ENTITY[10]) ∧
+      worn(EVENT[11], ENTITY[10], GROUP[7]) ∧ is_vestments_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+       CONJ_and(is_meaning_of(ENTITY[3], GROUP[4]), is_meaning_of(ENTITY[3], GROUP[7])) ∧
+        PRIEST[1] = he ∧
+         NARRATOR[2] = me ∧
+          past(EVENT[12]) ∧ had_explained(EVENT[12], PRIEST[1], ENTITY[3]) ∧ to(EVENT[12]) = NARRATOR[2])
+
+# ::id 105_fiction_JOYCE-1914;AT29-11;NE
+# ::snt Sometimes he had amused himself by putting difficult questions to me , asking me what one should do in certain circumstances or whether such and such sins were mortal or venial or only imperfections .
+SOME TIME[1] (times(TIME[1]),
+ ∃ NARRATOR[7] NARRATOR[6] ATTRIB[5] REF1[3] PRIEST[2] EVENT[20] EVENT[8] EVENT[21] GROUP[4] (
+  PRIEST[2] = he ∧
+   REF1[3] = himself ∧
+    difficult(ATTRIB[5]) ∧
+     is_questions_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+      NARRATOR[6] = me ∧
+       NARRATOR[7] = me{NARRATOR[6]} ∧
+        past(EVENT[21]) ∧
+         CRD_by(CONJ_and(putting(EVENT[20], REF1[3], GROUP[4]) ∧ to(EVENT[20]) = NARRATOR[6],
+               asking(EVENT[8], GROUP[4], NARRATOR[7],
+                CONJ_or(QUEST(∃ ENTITY[10] ? ENTITY[9] (
+                           CD_one(ENTITY[10]) ∧
+                            MD_should(∃ ATTRIB[12] EVENT[13] GROUP[11] (
+                                  certain(ATTRIB[12]) ∧
+                                   is_circumstances_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+                                    do(EVENT[13], ENTITY[10], ENTITY[9]) ∧
+                                     in(EVENT[13]) = GROUP[11])))),
+                 QUEST(∃ ATTRIB[18] ATTRIB[17] ATTRIB[16] ATTRIB[15] EVENT[19] EVENT[19] EVENT[19] GROUP[14] (
+                       such_and_such(ATTRIB[15]) ∧
+                        is_sins_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+                         mortal(ATTRIB[16]) ∧
+                          venial(ATTRIB[17]) ∧
+                           only(ATTRIB[18]) ∧ imperfections(ATTRIB[18]) ∧
+                            is_before(EVENT[19], EVENT[8]) ∧
+                             is_before(EVENT[19], EVENT[8]) ∧
+                              is_before(EVENT[19], EVENT[8]) ∧
+                               CONJ_or(copula(EVENT[19], GROUP[14], ATTRIB[16]),
+                                copula(EVENT[19], GROUP[14], ATTRIB[17]),
+                                copula(EVENT[19], GROUP[14], ATTRIB[18]))))))),
+          had_amused(EVENT[21], PRIEST[2], REF1[3]) ∧ is_contained_in(TMP(EVENT[21]), TIME[1]))))
+
+# ::id 106_fiction_JOYCE-1914;AT29-12;NE
+# ::snt His questions showed me how complex and mysterious were certain institutions of the Church which I had always regarded as the simplest acts .
+∃ NARRATOR[3] PRIEST[2] ATTRIB[14] EVENT[4] GROUP[1] GROUP[13] ENTITY[10] (
+ Church(ENTITY[10]) ∧
+  simplest(ATTRIB[14]) ∧
+   is_acts_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+    PRIEST[2] = his ∧
+     is_questions_POS(GROUP[1], PRIEST[2]) ∧
+      NARRATOR[3] = me ∧
+       past(EVENT[4]) ∧
+        showed(EVENT[4], GROUP[1], NARRATOR[3],
+         QUEST(∃ NARRATOR[12] ATTRIB[9] ATTRIB[7] ATTRIB[6] EVENT[15] EVENT[17] GROUP[8] ? ATTRIB[5] (
+               CONJ_and(is_ATTRIBUTE(ATTRIB[5], ATTRIB[6]), is_ATTRIBUTE(ATTRIB[5], ATTRIB[7])) ∧
+                complex(ATTRIB[6]) ∧
+                 mysterious(ATTRIB[7]) ∧
+                  certain(ATTRIB[9]) ∧
+                   NARRATOR[12] = i{NARRATOR[3]} ∧
+                    had_regarded(EVENT[15], NARRATOR[12], GROUP[8]) ∧ as(EVENT[15]) = GROUP[13] ∧
+                     is_institutions_of(GROUP[8], ENTITY[10]) ∧ is_institutions_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+                     TMP_always(EVENT[15]) ∧
+                      is_before(EVENT[15], EVENT[4]) ∧
+                       is_before(EVENT[17], EVENT[4]) ∧
+                        copula(EVENT[17], GROUP[8]) ∧ ATTRIBUTE(EVENT[17]) = ATTRIB[5]))))
+
+# ::id 107_fiction_JOYCE-1914;AT29-13;NE
+# ::snt The duties of the priest towards the Eucharist and towards the secrecy of the confessional seemed so grave to me that I wondered how anybody had ever found in himself the courage to undertake them ;
+∃ NARRATOR[7] NARRATOR[6] ATTRIB[5] REF2[13] EVENT[8] EVENT[18] EVENT[14] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[12] GROUP[1] (
+ confessional(ENTITY[4]) ∧
+  is_secrecy_of(ENTITY[3], ENTITY[4]) ∧
+   CONJ_and(is_priest_towards(ENTITY[2], ENTITY[Eucharist]), is_priest_towards(ENTITY[2], ENTITY[3])) ∧
+    is_duties_of(GROUP[1], ENTITY[2]) ∧
+     REF2[13] = them ∧
+      is_courage_to(ENTITY[12], undertake(EVENT[14], _, REF2[13])) ∧
+       NARRATOR[6] = me ∧
+        NARRATOR[7] = i{NARRATOR[6]} ∧
+         is_so_grave_to(ATTRIB[5], NARRATOR[6]) ∧
+          is_so_grave_THAT(ATTRIB[5],
+           wondered(EVENT[8], NARRATOR[7],
+            QUEST(∃ SITUATION[17] ? ENTITY[9] (
+                  is_ADV(SITUATION[17], ENTITY[9]) ∧
+                   is_FACT_THAT(SITUATION[17],
+                    ANY ENTITY[10] (body(ENTITY[10]),
+                     ∃ REF1[11] EVENT[15] (
+                      REF1[11] = himself ∧
+                       TMP_ever(EVENT[15]) ∧
+                        is_before(EVENT[15], EVENT[8]) ∧
+                         had_found(EVENT[15], ENTITY[10], ENTITY[12]) ∧
+                          in(EVENT[15]) = REF1[11]))))))) ∧
+          past(EVENT[8]) ∧ past(EVENT[18]) ∧ seemed(EVENT[18], GROUP[1], ATTRIB[5]))
+
+# ::id 108_fiction_JOYCE-1914;AT29-14;NE
+# ::snt and I was not surprised when he told me that the fathers of the Church had written books as thick as the Post Office Directory and as closely printed as the law notices in the newspaper , elucidating all these intricate questions .
+∃ SITUATION[19] SITUATION[21] ATTRIB[11] ATTRIB[9] NARRATOR[5] REF1[4] ATTRIB[2] NARRATOR[1] ATTRIB[16] ATTRIB[16] EVENT[18] EVENT[6] GROUP[8] ENTITY[10] ENTITY[13] GROUP[12] GROUP[7] (
+ is_fathers_of(GROUP[7], ENTITY[Church]) ∧
+  Post_Office_Directory(ENTITY[10]) ∧
+   intricate(ATTRIB[16]) ∧
+    newspaper(ENTITY[13]) ∧
+     is_law_notices_in(GROUP[12], ENTITY[13]) ∧
+      intricate(ATTRIB[16]) ∧
+       NARRATOR[1] = i ∧
+        surprised(ATTRIB[2]) ∧
+         REF1[4] = he ∧
+          NARRATOR[5] = me{NARRATOR[1]} ∧
+           is_as_thick_as(ATTRIB[9], ENTITY[10]) ∧
+            is_as_closely_printed_as(ATTRIB[11], GROUP[12]) ∧
+             CONJ_and(ALL GROUP[15] (is_questions_ATTRIBUTE(GROUP[15], ATTRIB[16]), ∃ EVENT[17] elucidating(EVENT[17], GROUP[8], GROUP[15])) ∧
+                   is_books_ATTRIBUTE(GROUP[8], ATTRIB[9]),
+              ALL GROUP[15] (is_questions_ATTRIBUTE(GROUP[15], ATTRIB[16]), ∃ EVENT[17] elucidating(EVENT[17], GROUP[8], GROUP[15])) ∧
+               is_books_ATTRIBUTE(GROUP[8], ATTRIB[11])) ∧
+              is_TMP(SITUATION[19], SITUATION[21]) ∧
+               is_before(EVENT[18], EVENT[6]) ∧
+                past(EVENT[6]) ∧
+                 is_FACT_THAT(SITUATION[19],
+                  told(EVENT[6], REF1[4], NARRATOR[5], had_written(EVENT[18], GROUP[7], GROUP[8]))) ∧
+                  is_FACT_THAT(SITUATION[21], ¬ ∃ EVENT[20] (past(EVENT[20]) ∧ copula(EVENT[20], NARRATOR[1], ATTRIB[2]))))
+
+# ::id 109_fiction_JOYCE-1914;AT29-15;NE
+# ::snt Often when I thought of this I could make no answer or only a very foolish and halting one upon which he used to smile and nod his head twice or thrice .
+∃ SITUATION[24] NARRATOR[6] NARRATOR[2] EVENT[4] ENTITY[3] (
+ NARRATOR[2] = i ∧
+  NARRATOR[6] = i ∧
+   is_TMP(EVENT[4], SITUATION[24]) ∧
+    past(EVENT[4]) ∧
+     thought(EVENT[4], NARRATOR[2]) ∧ of(EVENT[4]) = ENTITY[3] ∧ TMP_often(SITUATION[24]) ∧
+      is_FACT_THAT(SITUATION[24],
+       MD_could(∃ EVENT[23] GROUP[7] (
+             CONJ_or(¬ ∃ ENTITY[8] (answer(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+              ∃ REF2[18] REF1[13] ATTRIB[12] REF2[18] REF1[13] ATTRIB[11] EVENT[16] EVENT[22] EVENT[14] EVENT[16] EVENT[22] EVENT[14] GROUP[19] ENTITY[17] GROUP[19] ENTITY[17] ENTITY[10] (
+               very_foolish(ATTRIB[11]) ∧
+                REF1[13] = he ∧
+                 REF2[18] = his ∧
+                  is_head_POS(ENTITY[17], REF2[18]) ∧
+                   CONJ_or(∃ ENTITY[20] (CD_twice(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[19])),
+                    ∃ ENTITY[21] (CD_thrice(ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[19]))) ∧
+                    halting(ATTRIB[12]) ∧
+                     REF1[13] = he ∧
+                      REF2[18] = his ∧
+                       is_head_POS(ENTITY[17], REF2[18]) ∧
+                        CONJ_or(∃ ENTITY[20] (CD_twice(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[19])),
+                         ∃ ENTITY[21] (CD_thrice(ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[19]))) ∧
+                         CONJ_and(used(EVENT[14], REF1[13],
+                               CONJ_and(smile(EVENT[16], REF1[13]) ∧ upon(EVENT[16]) = ENTITY[10],
+                                nod(EVENT[22], REF1[13], ENTITY[17]) ∧
+                                 MSR(EVENT[22]) = GROUP[19] ∧
+                                 upon(EVENT[22]) = ENTITY[10])) ∧ is_one_ATTRIBUTE(ENTITY[10], ATTRIB[11]),
+                          used(EVENT[14], REF1[13],
+                           CONJ_and(smile(EVENT[16], REF1[13]) ∧ upon(EVENT[16]) = ENTITY[10],
+                            nod(EVENT[22], REF1[13], ENTITY[17]) ∧ MSR(EVENT[22]) = GROUP[19] ∧
+                             upon(EVENT[22]) = ENTITY[10])) ∧ is_one_ATTRIBUTE(ENTITY[10], ATTRIB[12])) ∧
+                          past(EVENT[14]) ∧
+                           past(EVENT[14]) ∧
+                            ONLY ENTITY[9] (is_of(ENTITY[9], ENTITY[10]), is_element_of(ENTITY[9], GROUP[7])))) ∧
+              make(EVENT[23], NARRATOR[6], GROUP[7])))))
+
+# ::id 110_fiction_JOYCE-1914;AT29-16;NE
+# ::snt Sometimes he used to put me through the responses of the Mass which he had made me learn by heart ;
+∃ NARRATOR[10] REF2[8] EVENT[12] EVENT[9] ENTITY[11] ENTITY[6] GROUP[5] (
+ Mass(ENTITY[6]) ∧
+  REF2[8] = he ∧
+   NARRATOR[10] = me ∧
+    heart(ENTITY[11]) ∧
+     had_made(EVENT[9], REF2[8], learn(EVENT[12], NARRATOR[10], GROUP[5]) ∧ by(EVENT[12]) = ENTITY[11]) ∧
+      is_responses_of(GROUP[5], ENTITY[6]) ∧
+      is_before(EVENT[9]) ∧
+       SOME TIME[1] (times(TIME[1]),
+        ∃ NARRATOR[4] REF1[2] EVENT[13] EVENT[3] (
+         REF1[2] = he ∧
+          NARRATOR[4] = me ∧
+           past(EVENT[3]) ∧
+            used(EVENT[3], REF1[2],
+             put(EVENT[13], REF1[2], NARRATOR[4]) ∧ through(EVENT[13]) = GROUP[5]) ∧
+             is_contained_in(TMP(EVENT[3]), TIME[1]))))
+
+# ::id 111_fiction_JOYCE-1914;AT29-17;NE
+# ::snt and , as I pattered , he used to smile pensively and nod his head , now and then pushing huge pinches of snuff up each nostril alternately .
+∃ SITUATION[11] ATTRIB[6] REF2[17] ATTRIB[13] REF1[4] NARRATOR[2] SITUATION[1] EVENT[3] EVENT[15] EVENT[14] EVENT[18] EVENT[12] ENTITY[16] ENTITY[7] GROUP[5] (
+ NARRATOR[2] = i ∧
+  is_FACT_THAT(SITUATION[1], pattered(EVENT[3], NARRATOR[2])) ∧
+   REF1[4] = he ∧
+    pensively(ATTRIB[13]) ∧
+     REF2[17] = his ∧
+      is_head_POS(ENTITY[16], REF2[17]) ∧
+       huge(ATTRIB[6]) ∧
+        snuff(ENTITY[7]) ∧
+         is_pinches_of(GROUP[5], ENTITY[7]) ∧ is_pinches_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+          past(EVENT[3]) ∧
+           past(EVENT[12]) ∧
+            CONJ_and(TMP_now(SITUATION[11]), TMP_then(SITUATION[11])) ∧
+             CONJ_and(used(EVENT[12], REF1[4],
+                   CONJ_and(CONJ_and(smile(EVENT[15], REF1[4]), xxx(EVENT[14], REF1[4], ATTRIB[13])),
+                    nod(EVENT[18], REF1[4], ENTITY[16]))) ∧ as(EVENT[12]) = SITUATION[1],
+              is_FACT_THAT(SITUATION[11],
+               EACH ENTITY[8] (nostril(ENTITY[8]),
+                ∃ EVENT[9] (
+                 ADV_alternately(EVENT[9]) ∧
+                  pushing(EVENT[9], REF1[4], GROUP[5]) ∧ up(EVENT[9]) = ENTITY[8])))))
+
+# ::id 112_fiction_JOYCE-1914;AT29-18;NE
+# ::snt When he smiled he used to uncover his big discoloured teeth and let his tongue lie upon his lower lip -- a habit which had made me feel uneasy in the beginning of our acquaintance before I knew him well .
+∃ REF7[14] NARRATOR[13] SITUATION[12] REF6[11] EVENT[15] ENTITY[10] ENTITY[9] (
+ REF6[11] = our ∧
+  is_acquaintance_POS(ENTITY[10], REF6[11]) ∧
+   NARRATOR[13] = i ∧
+    REF7[14] = him ∧
+     is_FACT_THAT(SITUATION[12], knew(EVENT[15], NARRATOR[13], REF7[14])) ∧
+      is_beginning_before(ENTITY[9], SITUATION[12]) ∧ is_beginning_of(ENTITY[9], ENTITY[10]) ∧
+       ADV_well(EVENT[15]) ∧
+        is_before(EVENT[15]) ∧
+         ∀ REF1[1] EVENT[2] CND_When(REF1[1] = he ∧ past(EVENT[2]) ∧ smiled(EVENT[2], REF1[1]), ∃ ATTRIB[29] REF5[28] REF4[26] ATTRIB[22] ATTRIB[21] REF3[20] ATTRIB[8] NARRATOR[7] REF2[3] EVENT[17] EVENT[6] EVENT[23] EVENT[30] EVENT[24] EVENT[18] GROUP[19] ENTITY[27] ENTITY[25] ENTITY[4] (
+              REF2[3] = he ∧
+               NARRATOR[7] = me ∧
+                is_uneasy_in(ATTRIB[8], ENTITY[9]) ∧
+                 had_made(EVENT[6], ENTITY[4], feel(EVENT[17], NARRATOR[7], ATTRIB[8])) ∧ habit(ENTITY[4]) ∧
+                  REF3[20] = his ∧
+                   big(ATTRIB[21]) ∧
+                    discoloured(ATTRIB[22]) ∧
+                     is_teeth_ATTRIBUTE(GROUP[19], ATTRIB[22]) ∧ is_teeth_ATTRIBUTE(GROUP[19], ATTRIB[21]) ∧
+                      is_teeth_POS(GROUP[19], REF3[20]) ∧
+                      REF4[26] = his ∧
+                       is_tongue_POS(ENTITY[25], REF4[26]) ∧
+                        REF5[28] = his ∧
+                         lower(ATTRIB[29]) ∧
+                          is_lip_ATTRIBUTE(ENTITY[27], ATTRIB[29]) ∧ is_lip_POS(ENTITY[27], REF5[28]) ∧
+                           past(EVENT[6]) ∧
+                            past(EVENT[18]) ∧
+                             used(EVENT[18], REF2[3],
+                              CONJ_and(uncover(EVENT[23], REF2[3], GROUP[19]),
+                               let(EVENT[24], REF2[3],
+                                lie(EVENT[30], ENTITY[25]) ∧
+                                 upon(EVENT[30]) = ENTITY[27]))) ∧
+                              ADV(EVENT[18]) = ENTITY[4])))
+
+# ::id 113_fiction_JOYCE-1914;AT30-1;NE
+# ::snt As I walked along in the sun I remembered old Cotter 's words and tried to remember what had happened afterwards in the dream .
+∃ NARRATOR[4] NARRATOR[1] EVENT[3] EVENT[6] EVENT[8] EVENT[7] GROUP[5] ENTITY[2] ENTITY[10] (
+ sun(ENTITY[2]) ∧
+  dream(ENTITY[10]) ∧
+   NARRATOR[1] = i ∧
+    NARRATOR[4] = i ∧
+     is_words_POS(GROUP[5], ENTITY[old_Cotter]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[7]) ∧
+         CRD_As(walked(EVENT[3], NARRATOR[1]) ∧ along_in(EVENT[3]) = ENTITY[2],
+          CONJ_and(remembered(EVENT[6], NARRATOR[4], GROUP[5]),
+           tried(EVENT[7], NARRATOR[4],
+            remember(EVENT[8], NARRATOR[4],
+             QUEST(∃ EVENT[11] ? ENTITY[9] (
+                   TMP_afterwards(EVENT[11]) ∧
+                    is_before(EVENT[11], EVENT[8]) ∧
+                     had_happened(EVENT[11], ENTITY[9]) ∧ in(EVENT[11]) = ENTITY[10])))))))
+
+# ::id 114_fiction_JOYCE-1914;AT30-2;NE
+# ::snt I remembered that I had noticed long velvet curtains and a swinging lamp of antique fashion .
+∃ NARRATOR[3] NARRATOR[1] EVENT[11] EVENT[2] GROUP[4] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = i{NARRATOR[1]} ∧
+   ∃ ATTRIB[6] GROUP[5] (long(ATTRIB[6]) ∧ is_velvet_curtains_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ ATTRIB[10] ATTRIB[8] ENTITY[9] ENTITY[7] (
+     swinging(ATTRIB[8]) ∧
+      antique(ATTRIB[10]) ∧
+       is_fashion_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+        is_lamp_of(ENTITY[7], ENTITY[9]) ∧ is_lamp_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+    is_before(EVENT[11], EVENT[2]) ∧
+     past(EVENT[2]) ∧ remembered(EVENT[2], NARRATOR[1], had_noticed(EVENT[11], NARRATOR[3], GROUP[4])))
+
+# ::id 115_fiction_JOYCE-1914;AT30-3;NE
+# ::snt I felt that I had been very far away , in some land where the customs were strange --
+∃ SITUATION[11] SITUATION[12] NARRATOR[3] NARRATOR[1] EVENT[2] GROUP[6] (
+ customs(GROUP[6]) ∧
+  NARRATOR[1] = i ∧
+   NARRATOR[3] = i{NARRATOR[1]} ∧
+    ADV_very_far(SITUATION[12]) ∧
+     LOC_away(SITUATION[11]) ∧
+      past(EVENT[2]) ∧
+       felt(EVENT[2], NARRATOR[1],
+        is_FACT_THAT(SITUATION[12],
+         is_FACT_THAT(SITUATION[11],
+          SOME ATTRIB[7] EVENT[8] ENTITY[4] (
+           (strange(ATTRIB[7]) ∧ copula(EVENT[8], GROUP[6], ATTRIB[7]) ∧ land(ENTITY[4]) ∧
+            is_LOC(EVENT[8], ENTITY[4]) ∧ is_before(EVENT[8], EVENT[2])),
+           ∃ EVENT[10] (
+            is_before(EVENT[10], EVENT[2]) ∧
+             had_copula(EVENT[10], NARRATOR[3]) ∧ in(EVENT[10]) = ENTITY[4]))))))
+
+# ::id 116_fiction_JOYCE-1914;AT30-4;NE
+# ::snt in Persia , I thought ... .
+∃ NARRATOR[1] EVENT[3] EVENT[2] (
+ NARRATOR[1] = i ∧
+  past(EVENT[2]) ∧ thought(EVENT[2], NARRATOR[1], xxx(EVENT[3]) ∧ in(EVENT[3]) = ENTITY[Persia]))
+
+# ::id 117_fiction_JOYCE-1914;AT30-5;NE
+# ::snt But I could not remember the end of the dream .
+∃ NARRATOR[1] ENTITY[3] ENTITY[2] (
+ dream(ENTITY[3]) ∧
+  is_end_of(ENTITY[2], ENTITY[3]) ∧ NARRATOR[1] = i ∧ MD_could(¬ ∃ EVENT[4] remember(EVENT[4], NARRATOR[1], ENTITY[2])))
+
+# ::id 118_fiction_JOYCE-1914;AT31-1;NE
+# ::snt In the evening my aunt took me with her to visit the house of mourning .
+∃ PRP[6] REF1[5] NARRATOR[4] NARRATOR[3] EVENT[9] EVENT[10] AUNT[2] ENTITY[8] ENTITY[7] ENTITY[1] (
+ evening(ENTITY[1]) ∧
+  mourning(ENTITY[8]) ∧
+   is_house_of(ENTITY[7], ENTITY[8]) ∧
+    NARRATOR[3] = my ∧
+     is_aunt_POS(AUNT[2], NARRATOR[3]) ∧
+      NARRATOR[4] = me ∧
+       REF1[5] = her ∧
+        is_FACT_THAT(PRP[6], visit(EVENT[9], NARRATOR[4], ENTITY[7])) ∧
+         past(EVENT[10]) ∧
+          took(EVENT[10], AUNT[2], NARRATOR[4]) ∧ PRP(EVENT[10]) = PRP[6] ∧
+           with(EVENT[10]) = REF1[5] ∧ In(EVENT[10]) = ENTITY[1])
+
+# ::id 119_fiction_JOYCE-1914;AT31-2;NE
+# ::snt It was after sunset ;
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = it ∧
+  sunset(ENTITY[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], REF1[1]) ∧ after(EVENT[3]) = ENTITY[2])
+
+# ::id 120_fiction_JOYCE-1914;AT31-3;NE
+# ::snt but the window-panes of the houses that looked to the west reflected the tawny gold of a great bank of clouds .
+∃ ATTRIB[9] ATTRIB[7] EVENT[11] EVENT[5] ENTITY[4] GROUP[2] GROUP[10] ENTITY[8] ENTITY[6] GROUP[1] (
+ west(ENTITY[4]) ∧
+  looked(EVENT[5], GROUP[2]) ∧ to(EVENT[5]) = ENTITY[4] ∧ houses(GROUP[2]) ∧
+   is_window-panes_of(GROUP[1], GROUP[2]) ∧
+    tawny(ATTRIB[7]) ∧
+     great(ATTRIB[9]) ∧
+      clouds(GROUP[10]) ∧
+       is_bank_of(ENTITY[8], GROUP[10]) ∧ is_bank_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+        is_gold_of(ENTITY[6], ENTITY[8]) ∧ is_gold_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         past(EVENT[5]) ∧ past(EVENT[11]) ∧ reflected(EVENT[11], GROUP[1], ENTITY[6]))
+
+# ::id 121_fiction_JOYCE-1914;AT31-4;NE
+# ::snt Nannie received us in the hall ;
+∃ NARRATOR+AUNT[1] EVENT[3] ENTITY[2] (
+ hall(ENTITY[2]) ∧
+  NARRATOR+AUNT[1] = us ∧
+   past(EVENT[3]) ∧ received(EVENT[3], NANNIE[Nannie], NARRATOR+AUNT[1]) ∧ in(EVENT[3]) = ENTITY[2])
+
+# ::id 122_fiction_JOYCE-1914;AT31-5;NE
+# ::snt and , as it would have been unseemly to have shouted at her , my aunt shook hands with her for all .
+∃ NANNIE[10] NARRATOR[8] NANNIE[3] SITUATION[2] SITUATION[1] EVENT[4] GROUP[9] AUNT[7] (
+ NANNIE[3] = her ∧
+  is_FACT_THAT(SITUATION[2], have_shouted(EVENT[4]) ∧ at(EVENT[4]) = NANNIE[3]) ∧
+   is_FACT_THAT(SITUATION[1], MD_would(∃ ATTRIB[5] EVENT[6] (unseemly(ATTRIB[5]) ∧ have_copula(EVENT[6], SITUATION[2], ATTRIB[5])))) ∧
+    NARRATOR[8] = my ∧
+     is_aunt_POS(AUNT[7], NARRATOR[8]) ∧
+      hands(GROUP[9]) ∧
+       NANNIE[10] = her ∧
+        ALL ENTITY[11] ∃ EVENT[12] (
+         past(EVENT[12]) ∧
+          shook(EVENT[12], AUNT[7], GROUP[9]) ∧ for(EVENT[12]) = ENTITY[11] ∧
+           with(EVENT[12]) = NANNIE[10] ∧ as(EVENT[12]) = SITUATION[1]))
+
+# ::id 123_fiction_JOYCE-1914;AT31-6;NE
+# ::snt The old woman pointed upwards interrogatively and , on my aunt 's nodding , proceeded to toil up the narrow staircase before us , her bowed head being scarcely above the level of the banister-rail .
+∃ ATTRIB[14] NANNIE[13] REF1[11] NARRATOR[7] ATTRIB[10] ATTRIB[2] AUNT[6] ENTITY[12] ENTITY[5] EVENT[3] EVENT[18] EVENT[17] EVENT[8] ENTITY[16] ENTITY[15] ENTITY[9] NANNIE[1] (
+ old(ATTRIB[2]) ∧
+  is_woman_ATTRIBUTE(NANNIE[1], ATTRIB[2]) ∧
+   narrow(ATTRIB[10]) ∧
+    is_staircase_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+     banister-rail(ENTITY[16]) ∧
+      is_level_of(ENTITY[15], ENTITY[16]) ∧
+       ADV_interrogatively(EVENT[3]) ∧
+        past(EVENT[3]) ∧
+         past(EVENT[8]) ∧
+          NARRATOR[7] = my ∧
+           is_aunt_POS(AUNT[6], NARRATOR[7]) ∧
+            is_nodding_POS(ENTITY[5], AUNT[6]) ∧
+             REF1[11] = us ∧
+              NANNIE[13] = her{NANNIE[1]} ∧
+               bowed(ATTRIB[14]) ∧
+                is_head_ATTRIBUTE(ENTITY[12], ATTRIB[14]) ∧ is_head_POS(ENTITY[12], NANNIE[13]) ∧
+                 CONJ_and(pointed_upwards(EVENT[3], NANNIE[1]),
+                  proceeded(EVENT[8], NANNIE[1],
+                   CONJ_and(toil(EVENT[18], NANNIE[1]) ∧ before(EVENT[18]) = REF1[11] ∧
+                         up(EVENT[18]) = ENTITY[9],
+                    being(EVENT[17], ENTITY[12]) ∧ scarcely_above(EVENT[17]) = ENTITY[15])) ∧
+                   on(EVENT[8]) = ENTITY[5]))
+
+# ::id 124_fiction_JOYCE-1914;AT31-7;NE
+# ::snt At the first landing she stopped and beckoned us forward encouragingly towards the open door of the dead-room .
+∃ REF1[5] NANNIE[3] ATTRIB[7] ATTRIB[2] EVENT[4] EVENT[9] ENTITY[8] ENTITY[6] ENTITY[1] (
+ first(ATTRIB[2]) ∧
+  is_landing_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   open(ATTRIB[7]) ∧
+    dead-room(ENTITY[8]) ∧
+     is_door_of(ENTITY[6], ENTITY[8]) ∧ is_door_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      NANNIE[3] = she ∧
+       REF1[5] = us ∧
+        past(EVENT[4]) ∧
+         DIR_forward(EVENT[9]) ∧
+          ADV_encouragingly(EVENT[9]) ∧
+           past(EVENT[9]) ∧
+            CONJ_and(stopped(EVENT[4], NANNIE[3]) ∧ At(EVENT[4]) = ENTITY[1],
+             beckoned(EVENT[9], NANNIE[3], REF1[5]) ∧ towards(EVENT[9]) = ENTITY[6] ∧
+              At(EVENT[9]) = ENTITY[1]))
+
+# ::id 125_fiction_JOYCE-1914;AT31-8;NE
+# ::snt My aunt went in
+∃ NARRATOR[2] EVENT[3] AUNT[1] (NARRATOR[2] = my ∧ is_aunt_POS(AUNT[1], NARRATOR[2]) ∧ past(EVENT[3]) ∧ went_in(EVENT[3], AUNT[1]))
+
+# ::id 126_fiction_JOYCE-1914;AT31-9;NE
+# ::snt and the old woman , seeing that I hesitated to enter , began to beckon to me again repeatedly with her hand .
+∃ NANNIE[11] NARRATOR[9] PRP[5] NARRATOR[4] ATTRIB[2] EVENT[6] EVENT[7] EVENT[3] EVENT[12] EVENT[8] ENTITY[10] NANNIE[1] (
+ old(ATTRIB[2]) ∧
+  is_woman_ATTRIBUTE(NANNIE[1], ATTRIB[2]) ∧
+   NARRATOR[4] = i ∧
+    is_FACT_THAT(PRP[5], enter(EVENT[6], NARRATOR[4])) ∧
+     NARRATOR[9] = me ∧
+      NANNIE[11] = her{NANNIE[1]} ∧
+       is_hand_POS(ENTITY[10], NANNIE[11]) ∧
+        is_before(EVENT[7], EVENT[3]) ∧
+         ADV_again(EVENT[12]) ∧
+          ADV_repeatedly(EVENT[12]) ∧
+           past(EVENT[8]) ∧
+            CONJ_and(seeing(EVENT[3], NANNIE[1], hesitated(EVENT[7], NARRATOR[4]) ∧ PRP(EVENT[7]) = PRP[5]),
+             began(EVENT[8], NANNIE[1],
+              beckon(EVENT[12], NANNIE[1]) ∧ with(EVENT[12]) = ENTITY[10] ∧
+               to(EVENT[12]) = NARRATOR[9])))
+
+# ::id 127_fiction_JOYCE-1914;AT32-1;NE
+# ::snt I went in on tiptoe .
+∃ NARRATOR[1] EVENT[3] ENTITY[2] (
+ NARRATOR[1] = i ∧
+  tiptoe(ENTITY[2]) ∧ past(EVENT[3]) ∧ went_in(EVENT[3], NARRATOR[1]) ∧ on(EVENT[3]) = ENTITY[2])
+
+# ::id 128_fiction_JOYCE-1914;AT32-2;NE
+# ::snt The room through the lace end of the blind was suffused with dusky golden light amid which the candles looked like pale thin flames .
+∃ ATTRIB[13] ATTRIB[12] ATTRIB[10] ATTRIB[7] ATTRIB[6] ATTRIB[4] EVENT[14] EVENT[15] GROUP[11] ENTITY[5] ENTITY[3] ENTITY[2] GROUP[9] ENTITY[1] (
+ blind(ATTRIB[4]) ∧
+  is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_lace_end_of(ENTITY[2], ENTITY[3]) ∧
+    is_room_through(ENTITY[1], ENTITY[2]) ∧
+     candles(GROUP[9]) ∧
+      dusky(ATTRIB[6]) ∧
+       golden(ATTRIB[7]) ∧
+        pale(ATTRIB[12]) ∧
+         thin(ATTRIB[13]) ∧
+          is_flames_ATTRIBUTE(GROUP[11], ATTRIB[13]) ∧ is_flames_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+           is_like_comp(ATTRIB[10], GROUP[11]) ∧
+            looked(EVENT[14], GROUP[9]) ∧ ATTRIBUTE(EVENT[14]) = ATTRIB[10] ∧
+             amid(EVENT[14]) = ENTITY[5] ∧ is_light_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_light_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+             past(EVENT[14]) ∧
+              past(EVENT[15]) ∧ suffused(EVENT[15], _, ENTITY[1]) ∧ with(EVENT[15]) = ENTITY[5])
+
+# ::id 129_fiction_JOYCE-1914;AT32-3;NE
+# ::snt He had been coffined .
+∃ PRIEST[1] EVENT[2] (PRIEST[1] = he ∧ past(EVENT[2]) ∧ had_coffined(EVENT[2], _, PRIEST[1]))
+
+# ::id 130_fiction_JOYCE-1914;AT32-4;NE
+# ::snt Nannie gave the lead
+∃ EVENT[2] ENTITY[1] (lead(ENTITY[1]) ∧ past(EVENT[2]) ∧ gave(EVENT[2], NANNIE[Nannie], ENTITY[1]))
+
+# ::id 131_fiction_JOYCE-1914;AT32-4;NE
+# ::snt and we three knelt down at the foot of the bed .
+∃ NARRATOR+AUNT+NANNIE[2] EVENT[5] DEGREE[1] ENTITY[4] ENTITY[3] (
+ bed(ENTITY[4]) ∧
+  is_foot_of(ENTITY[3], ENTITY[4]) ∧
+   NARRATOR+AUNT+NANNIE[2] = we ∧
+    CD_three(DEGREE[1]) ∧
+     is_MSR(NARRATOR+AUNT+NANNIE[2], DEGREE[1]) ∧
+      past(EVENT[5]) ∧ knelt_down(EVENT[5], NARRATOR+AUNT+NANNIE[2]) ∧ at(EVENT[5]) = ENTITY[3])
+
+# ::id 132_fiction_JOYCE-1914;AT32-5;NE
+# ::snt I pretended to pray but I could not gather my thoughts because the old woman 's mutterings distracted me .
+∃ NARRATOR[10] NARRATOR[6] NARRATOR[4] NARRATOR[1] ATTRIB[9] EVENT[3] EVENT[2] EVENT[11] GROUP[7] GROUP[5] NANNIE[8] (
+ old(ATTRIB[9]) ∧
+  is_woman_ATTRIBUTE(NANNIE[8], ATTRIB[9]) ∧
+   NARRATOR[1] = i ∧
+    NARRATOR[4] = i ∧
+     NARRATOR[6] = my{NARRATOR[4]} ∧
+      is_thoughts_POS(GROUP[5], NARRATOR[6]) ∧
+       is_mutterings_POS(GROUP[7], NANNIE[8]) ∧
+        NARRATOR[10] = me{NARRATOR[4]} ∧
+         past(EVENT[2]) ∧
+          past(EVENT[11]) ∧
+           CONJ_but(pretended(EVENT[2], NARRATOR[1], pray(EVENT[3], NARRATOR[1])),
+            CRD_because(distracted(EVENT[11], GROUP[7], NARRATOR[10]),
+             MD_could(¬ ∃ EVENT[12] gather(EVENT[12], NARRATOR[4], GROUP[5])))))
+
+# ::id 133_fiction_JOYCE-1914;AT32-6;NE
+# ::snt I noticed how clumsily her skirt was hooked at the back and how the heels of her cloth boots were trodden down all to one side .
+∃ NARRATOR[1] NANNIE[12] EVENT[2] ENTITY[6] GROUP[11] GROUP[10] (
+ back(ENTITY[6]) ∧
+  NANNIE[12] = her ∧
+   is_cloth_boots_POS(GROUP[11], NANNIE[12]) ∧
+    is_heels_of(GROUP[10], GROUP[11]) ∧
+     NARRATOR[1] = i ∧
+      past(EVENT[2]) ∧
+       noticed(EVENT[2], NARRATOR[1],
+        CONJ_and(QUEST(∃ NANNIE[5] EVENT[7] ENTITY[4] ? ENTITY[3] (
+                   NANNIE[5] = her ∧
+                    is_skirt_POS(ENTITY[4], NANNIE[5]) ∧
+                     is_ADV_clumsily_ADV(EVENT[7], ENTITY[3]) ∧
+                      is_before(EVENT[7], EVENT[2]) ∧
+                       hooked(EVENT[7], _, ENTITY[4]) ∧ at(EVENT[7]) = ENTITY[6])),
+         QUEST(∃ SITUATION[16] ? ENTITY[9] (
+               is_ADV(SITUATION[16], ENTITY[9]) ∧
+                is_FACT_THAT(SITUATION[16],
+                 ALL ENTITY[14] ENTITY[13] (((CD_one(ENTITY[14]), side(ENTITY[14])) ∧ is_to(ENTITY[13], ENTITY[14])),
+                  ∃ EVENT[15] (
+                   is_before(EVENT[15], EVENT[2]) ∧
+                    trodden_down(EVENT[15], _, GROUP[10]) ∧
+                     ADV(EVENT[15]) = ENTITY[13]))))))))
+
+# ::id 134_fiction_JOYCE-1914;AT32-7;NE
+# ::snt The fancy came to me that the old priest was smiling as he lay there in his coffin .
+∃ NARRATOR[11] PRIEST[7] PRIEST[5] SITUATION[4] ATTRIB[3] EVENT[12] EVENT[8] EVENT[10] ENTITY[6] PRIEST[2] ENTITY[1] (
+ old(ATTRIB[3]) ∧
+  is_priest_ATTRIBUTE(PRIEST[2], ATTRIB[3]) ∧
+   PRIEST[5] = he{PRIEST[2]} ∧
+    PRIEST[7] = his{PRIEST[5], PRIEST[2]} ∧
+     is_coffin_POS(ENTITY[6], PRIEST[7]) ∧
+      is_FACT_THAT(SITUATION[4], lay(EVENT[8], PRIEST[5]) ∧ in(EVENT[8]) = ENTITY[6]) ∧
+       is_fancy_THAT(ENTITY[1], was_smiling(EVENT[10], PRIEST[2]) ∧ as(EVENT[10]) = SITUATION[4]) ∧
+        LOC_there(EVENT[8]) ∧
+         past(EVENT[8]) ∧
+          past(EVENT[10]) ∧
+           NARRATOR[11] = me ∧
+            past(EVENT[12]) ∧ came(EVENT[12], ENTITY[1]) ∧ to(EVENT[12]) = NARRATOR[11])
+
+# ::id 135_fiction_JOYCE-1914;AT33-1;NE
+# ::snt But no . When we rose and went up to the head of the bed I saw that he was not smiling .
+∃ SITUATION[7] SITUATION[12] PRIEST[10] NARRATOR[8] NARRATOR+AUNT+NANNIE[2] EVENT[3] EVENT[6] EVENT[9] ENTITY[5] ENTITY[4] (
+ bed(ENTITY[5]) ∧
+  is_head_of(ENTITY[4], ENTITY[5]) ∧
+   NARRATOR+AUNT+NANNIE[2] = we ∧
+    NARRATOR[8] = i ∧
+     PRIEST[10] = he ∧
+      is_TMP(SITUATION[7], SITUATION[12]) ∧
+       past(EVENT[3]) ∧
+        past(EVENT[6]) ∧
+         is_FACT_THAT(SITUATION[7],
+          CONJ_and(rose(EVENT[3], NARRATOR+AUNT+NANNIE[2]),
+           went_up(EVENT[6], NARRATOR+AUNT+NANNIE[2]) ∧ to(EVENT[6]) = ENTITY[4])) ∧
+          past(EVENT[9]) ∧
+           is_FACT_THAT(SITUATION[12],
+            saw(EVENT[9], NARRATOR[8],
+             ¬ ∃ EVENT[11] (is_before(EVENT[11], EVENT[9]) ∧ was_smiling(EVENT[11], PRIEST[10])))))
+
+# ::id 136_fiction_JOYCE-1914;AT33-2;NE
+# ::snt There he lay , solemn and copious , vested as for the altar , his large hands loosely retaining a chalice .
+∃ SITUATION[14] ATTRIB[3] ATTRIB[2] ATTRIB[9] PRIEST[8] PRIEST[1] EVENT[13] EVENT[11] EVENT[6] EVENT[4] EVENT[4] ENTITY[10] GROUP[7] ENTITY[5] (
+ altar(ENTITY[5]) ∧
+  PRIEST[1] = he ∧
+   PRIEST[8] = his{PRIEST[1]} ∧
+    large(ATTRIB[9]) ∧
+     is_hands_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_hands_POS(GROUP[7], PRIEST[8]) ∧
+      chalice(ENTITY[10]) ∧
+       solemn(ATTRIB[2]) ∧
+        copious(ATTRIB[3]) ∧
+         LOC_there(SITUATION[14]) ∧
+          past(EVENT[13]) ∧
+           ADV_loosely(EVENT[11]) ∧
+            is_FACT_THAT(SITUATION[14],
+             CONJ_and(CONJ_and(CONJ_and(lay(EVENT[13], PRIEST[1]), retaining(EVENT[11], GROUP[7], ENTITY[10])),
+                   vested(EVENT[6], _, PRIEST[1]) ∧ as_for(EVENT[6]) = ENTITY[5]),
+              CONJ_and(xxx(EVENT[4], PRIEST[1], ATTRIB[2]), xxx(EVENT[4], PRIEST[1], ATTRIB[3])))))
+
+# ::id 137_fiction_JOYCE-1914;AT33-3;NE
+# ::snt His face was very truculent , grey and massive , with black cavernous nostrils and circled by a scanty white fur .
+∃ ATTRIB[12] ATTRIB[11] ATTRIB[8] ATTRIB[7] ATTRIB[5] ATTRIB[8] ATTRIB[7] ATTRIB[4] ATTRIB[8] ATTRIB[7] ATTRIB[3] PRIEST[2] EVENT[9] EVENT[9] EVENT[9] EVENT[13] GROUP[6] GROUP[6] GROUP[6] ENTITY[10] ENTITY[1] (
+ PRIEST[2] = his ∧
+  is_face_POS(ENTITY[1], PRIEST[2]) ∧
+   very_truculent(ATTRIB[3]) ∧
+    black(ATTRIB[7]) ∧
+     cavernous(ATTRIB[8]) ∧
+      is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+       grey(ATTRIB[4]) ∧
+        black(ATTRIB[7]) ∧
+         cavernous(ATTRIB[8]) ∧
+          is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+           massive(ATTRIB[5]) ∧
+            black(ATTRIB[7]) ∧
+             cavernous(ATTRIB[8]) ∧
+              is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_nostrils_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+               scanty(ATTRIB[11]) ∧
+                white(ATTRIB[12]) ∧
+                 is_fur_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_fur_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+                  past(EVENT[9]) ∧
+                   past(EVENT[9]) ∧
+                    past(EVENT[9]) ∧
+                     past(EVENT[13]) ∧
+                      CONJ_and(CONJ_and(copula(EVENT[9], ENTITY[1], ATTRIB[3]) ∧ with(EVENT[9]) = GROUP[6],
+                            copula(EVENT[9], ENTITY[1], ATTRIB[4]) ∧ with(EVENT[9]) = GROUP[6],
+                            copula(EVENT[9], ENTITY[1], ATTRIB[5]) ∧ with(EVENT[9]) = GROUP[6]),
+                       circled(EVENT[13], ENTITY[10], ENTITY[1])))
+
+# ::id 138_fiction_JOYCE-1914;AT33-4;NE
+# ::snt There was a heavy odour in the room -- the flowers .
+∃ ATTRIB[3] EVENT[5] ENTITY[1] ENTITY[2] ENTITY[4] (
+ room(ENTITY[4]) ∧
+  heavy(ATTRIB[3]) ∧
+   is_odour_in(ENTITY[2], ENTITY[4]) ∧ is_odour_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    flowers(ENTITY[1]) ∧ is_-ENTITY-_namely(ENTITY[2], ENTITY[1]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], ENTITY[2]))
+
+# ::id 139_fiction_JOYCE-1914;AT34-1;NE
+# ::snt We blessed ourselves and came away .
+∃ NARRATOR+AUNT+NANNIE[2] NARRATOR+AUNT+NANNIE[1] EVENT[3] EVENT[4] (
+ NARRATOR+AUNT+NANNIE[1] = we ∧
+  NARRATOR+AUNT+NANNIE[2] = ourselves{NARRATOR+AUNT+NANNIE[1]} ∧
+   past(EVENT[3]) ∧
+    DIR_away(EVENT[4]) ∧
+     past(EVENT[4]) ∧ CONJ_and(blessed(EVENT[3], NARRATOR+AUNT+NANNIE[1], NARRATOR+AUNT+NANNIE[2]), came(EVENT[4], NARRATOR+AUNT+NANNIE[1])))
+
+# ::id 140_fiction_JOYCE-1914;AT34-2;NE
+# ::snt In the little room downstairs we found Eliza seated in his arm-chair in state .
+∃ PRIEST[7] REF1[4] ATTRIB[2] EVENT[9] EVENT[5] ENTITY[8] ENTITY[6] ENTITY[3] ENTITY[1] (
+ little(ATTRIB[2]) ∧
+  is_room_down(ENTITY[1], ENTITY[3]) ∧ is_room_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[4] = we ∧
+    PRIEST[7] = his ∧
+     is_arm-chair_POS(ENTITY[6], PRIEST[7]) ∧
+      state(ENTITY[8]) ∧
+       past(EVENT[5]) ∧
+        found(EVENT[5], REF1[4],
+         seated(EVENT[9], ELIZA[Eliza]) ∧ in(EVENT[9]) = ENTITY[8] ∧ in(EVENT[9]) = ENTITY[6]) ∧
+         In(EVENT[5]) = ENTITY[1])
+
+# ::id 141_fiction_JOYCE-1914;AT34-3;NE
+# ::snt I groped my way towards my usual chair in the corner while Nannie went to the sideboard and brought out a decanter of sherry and some wine-glasses .
+∃ ATTRIB[6] NARRATOR[5] NARRATOR[3] NARRATOR[1] EVENT[9] EVENT[14] EVENT[15] GROUP[10] ENTITY[4] ENTITY[2] ENTITY[8] ENTITY[7] (
+ corner(ENTITY[7]) ∧
+  sideboard(ENTITY[8]) ∧
+   NARRATOR[1] = i ∧
+    NARRATOR[3] = my{NARRATOR[1]} ∧
+     is_way_POS(ENTITY[2], NARRATOR[3]) ∧
+      NARRATOR[5] = my{NARRATOR[1]} ∧
+       usual(ATTRIB[6]) ∧
+        is_chair_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_chair_POS(ENTITY[4], NARRATOR[5]) ∧
+         ∃ ENTITY[12] ENTITY[11] (sherry(ENTITY[12]) ∧ is_decanter_of(ENTITY[11], ENTITY[12]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+          SOME GROUP[13] (wine-glasses(GROUP[13]), is_subset_of_or_equal_to(GROUP[13], GROUP[10])) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[14]) ∧
+            past(EVENT[15]) ∧
+             CRD_while(CONJ_and(went(EVENT[9], NANNIE[Nannie]) ∧ to(EVENT[9]) = ENTITY[8],
+                   brought_out(EVENT[14], NANNIE[Nannie], GROUP[10])),
+              groped(EVENT[15], NARRATOR[1], ENTITY[2]) ∧ in(EVENT[15]) = ENTITY[7] ∧
+               towards(EVENT[15]) = ENTITY[4]))
+
+# ::id 142_fiction_JOYCE-1914;AT34-4;NE
+# ::snt She set these on the table and invited us to take a little glass of wine .
+∃ ATTRIB[8] NARRATOR+AUNT[5] NANNIE[1] EVENT[4] EVENT[10] EVENT[6] ENTITY[9] ENTITY[7] ENTITY[3] GROUP[2] (
+ table(ENTITY[3]) ∧
+  NANNIE[1] = she ∧
+   NARRATOR+AUNT[5] = us ∧
+    little(ATTRIB[8]) ∧
+     wine(ENTITY[9]) ∧
+      is_glass_of(ENTITY[7], ENTITY[9]) ∧ is_glass_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[6]) ∧
+         CONJ_and(set(EVENT[4], NANNIE[1], GROUP[2]) ∧ on(EVENT[4]) = ENTITY[3],
+          invited(EVENT[6], NANNIE[1], NARRATOR+AUNT[5], take(EVENT[10], NARRATOR+AUNT[5], ENTITY[7]))))
+
+# ::id 143_fiction_JOYCE-1914;AT34-5;NE
+# ::snt Then , at her sister 's bidding , she filled out the sherry into the glasses and passed them to us .
+∃ SITUATION[11] NARRATOR+AUNT[9] GLASSES[8] NANNIE[4] NANNIE[3] EVENT[7] EVENT[10] ELIZA[2] ENTITY[1] GLASSES[6] ENTITY[5] (
+ sherry(ENTITY[5]) ∧
+  glasses(GLASSES[6]) ∧
+   NANNIE[3] = her ∧
+    is_sister_POS(ELIZA[2], NANNIE[3]) ∧
+     is_bidding_POS(ENTITY[1], ELIZA[2]) ∧
+      NANNIE[4] = she ∧
+       GLASSES[8] = them{GLASSES[6]} ∧
+        NARRATOR+AUNT[9] = us ∧
+         TMP_then(SITUATION[11]) ∧
+          past(EVENT[7]) ∧
+           past(EVENT[10]) ∧
+            is_FACT_THAT(SITUATION[11],
+             CONJ_and(filled_out(EVENT[7], NANNIE[4], ENTITY[5]) ∧ into(EVENT[7]) = GLASSES[6] ∧
+                   at(EVENT[7]) = ENTITY[1],
+              passed(EVENT[10], NANNIE[4], GLASSES[8]) ∧ to(EVENT[10]) = NARRATOR+AUNT[9] ∧
+               at(EVENT[10]) = ENTITY[1])))
+
+# ::id 144_fiction_JOYCE-1914;AT34-6;NE
+# ::snt She pressed me to take some cream crackers also but I declined because I thought I would make too much noise eating them .
+∃ NARRATOR[11] NARRATOR[9] NARRATOR[8] PRP[3] NARRATOR[2] NANNIE[1] EVENT[7] EVENT[10] EVENT[16] (
+ NANNIE[1] = she ∧
+  NARRATOR[2] = me ∧
+   is_FACT_THAT(PRP[3], SOME FOOD[4] (cream_crackers(FOOD[4]), ∃ EVENT[5] (ADV_also(EVENT[5]) ∧ take(EVENT[5], NARRATOR[2], FOOD[4])))) ∧
+    NARRATOR[8] = i ∧
+     NARRATOR[9] = i{NARRATOR[8]} ∧
+      NARRATOR[11] = i{NARRATOR[9], NARRATOR[8]} ∧
+       past(EVENT[7]) ∧
+        past(EVENT[10]) ∧
+         past(EVENT[16]) ∧
+          CONJ_but(pressed(EVENT[7], NANNIE[1], NARRATOR[2]) ∧ PRP(EVENT[7]) = PRP[3],
+           CRD_because(thought(EVENT[10], NARRATOR[9],
+                 MD_would(TOO_MUCH ENTITY[12] (noise(ENTITY[12]),
+                       ∃ FOOD[13] EVENT[15] EVENT[14] (
+                        FOOD[13] = them ∧
+                         CONJ_and(make(EVENT[15], NARRATOR[11], ENTITY[12]),
+                          eating(EVENT[14], ENTITY[12], FOOD[13])))))),
+            declined(EVENT[16], NARRATOR[8]))))
+
+# ::id 145_fiction_JOYCE-1914;AT34-7;NE
+# ::snt She seemed to be somewhat disappointed at my refusal and went over quietly to the sofa where she sat down behind her sister .
+∃ SITUATION[15] SITUATION[16] NANNIE[11] NANNIE[9] NARRATOR[5] ATTRIB[3] NANNIE[1] EVENT[6] EVENT[2] EVENT[12] EVENT[14] ENTITY[4] ELIZA[10] ENTITY[7] (
+ sofa(ENTITY[7]) ∧
+  NANNIE[1] = she ∧
+   NARRATOR[5] = my ∧
+    is_refusal_POS(ENTITY[4], NARRATOR[5]) ∧
+     is_somewhat_disappointed_at(ATTRIB[3], ENTITY[4]) ∧
+      NANNIE[9] = she{NANNIE[1]} ∧
+       NANNIE[11] = her{NANNIE[9], NANNIE[1]} ∧
+        is_sister_POS(ELIZA[10], NANNIE[11]) ∧
+         past(EVENT[2]) ∧
+          ADV_quietly(SITUATION[16]) ∧
+           is_LOC(EVENT[12], SITUATION[15]) ∧
+            past(EVENT[12]) ∧
+             sat_down(EVENT[12], NANNIE[9]) ∧ behind(EVENT[12]) = ELIZA[10] ∧
+              past(EVENT[14]) ∧
+               CONJ_and(seemed(EVENT[2], copula(EVENT[6], NANNIE[1], ATTRIB[3])),
+                is_FACT_THAT(SITUATION[16],
+                 is_FACT_THAT(SITUATION[15], went_over(EVENT[14], NANNIE[1]) ∧ to(EVENT[14]) = ENTITY[7]))))
+
+# ::id 146_fiction_JOYCE-1914;AT34-8;NE
+# ::snt No one spoke :
+¬ ∃ EVENT[2] PERSONS[1] (one(PERSONS[1]) ∧ past(EVENT[2]) ∧ spoke(EVENT[2], PERSONS[1]))
+
+# ::id 147_fiction_JOYCE-1914;AT34-9;NE
+# ::snt we all gazed at the empty fireplace .
+∃ NARRATOR+AUNT+ELIZA+NANNIE[1] ATTRIB[3] EVENT[4] ENTITY[2] (
+ empty(ATTRIB[3]) ∧
+  is_fireplace_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   NARRATOR+AUNT+ELIZA+NANNIE[1] = we ∧ past(EVENT[4]) ∧ gazed(EVENT[4], NARRATOR+AUNT+ELIZA+NANNIE[1]) ∧ at(EVENT[4]) = ENTITY[2])
+
+# ::id 148_fiction_JOYCE-1914;AT35-1;NE
+# ::snt My aunt waited until Eliza sighed and then said : " Ah , well , he 's gone to a better world . "
+∃ SITUATION[11] ATTRIB[9] PRIEST[7] SITUATION[3] NARRATOR[2] EVENT[4] EVENT[5] EVENT[10] EVENT[6] ENTITY[8] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   is_FACT_THAT(SITUATION[3], sighed(EVENT[4], ELIZA[Eliza])) ∧
+    PRIEST[7] = he ∧
+     better(ATTRIB[9]) ∧
+      is_world_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[5]) ∧
+         TMP_then(SITUATION[11]) ∧
+          past(EVENT[6]) ∧
+           CONJ_and(waited(EVENT[5], AUNT[1]) ∧ until(EVENT[5]) = SITUATION[3],
+            is_FACT_THAT(SITUATION[11],
+             said(EVENT[6], AUNT[1], 's_gone(EVENT[10], PRIEST[7]) ∧ to(EVENT[10]) = ENTITY[8]))))
+
+# ::id 149_fiction_JOYCE-1914;AT36-1;NE
+# ::snt Eliza sighed again and bowed her head in assent .
+∃ ELIZA[4] ENTITY[5] ENTITY[3] EVENT[1] EVENT[6] (
+ ADV_again(EVENT[1]) ∧
+  past(EVENT[1]) ∧
+   past(EVENT[6]) ∧
+    ELIZA[4] = her{ELIZA[Eliza]} ∧
+     is_head_POS(ENTITY[3], ELIZA[4]) ∧
+      assent(ENTITY[5]) ∧
+       CONJ_and(sighed(EVENT[1], ELIZA[Eliza]),
+        bowed(EVENT[6], ELIZA[Eliza], ENTITY[3]) ∧ in(EVENT[6]) = ENTITY[5]))
+
+# ::id 150_fiction_JOYCE-1914;AT36-2;NE
+# ::snt My aunt fingered the stem of her wine-glass before sipping a little .
+∃ ATTRIB[7] NARRATOR[2] AUNT[5] EVENT[8] EVENT[9] ENTITY[6] AUNT[1] ENTITY[4] ENTITY[3] (
+ AUNT[5] = her{AUNT[1]} ∧
+  is_wine-glass_POS(ENTITY[4], AUNT[5]) ∧
+   is_stem_of(ENTITY[3], ENTITY[4]) ∧
+    NARRATOR[2] = my ∧
+     is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+      little(ATTRIB[7]) ∧
+       is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+        past(EVENT[9]) ∧ CRD_before(sipping(EVENT[8], ENTITY[3], ENTITY[6]), fingered(EVENT[9], AUNT[1], ENTITY[3])))
+
+# ::id 151_fiction_JOYCE-1914;AT37-1;NE
+# ::snt " Did he .. . peacefully ? " she asked .
+∃ AUNT[1] EVENT[2] (
+ AUNT[1] = she ∧
+  past(EVENT[2]) ∧
+   asked(EVENT[2], AUNT[1],
+    QUEST(∃ PRIEST[3] EVENT[4] (
+          PRIEST[3] = he ∧
+           ADV_peacefully(EVENT[4]) ∧ is_before(EVENT[4], EVENT[2]) ∧ did(EVENT[4], PRIEST[3])))))
+
+# ::id 152_fiction_JOYCE-1914;AT38-1;NE
+# ::snt " Oh , quite peacefully , ma'am , " said Eliza . " You could n't tell when the breath went out of him .
+∃ SITUATION[10] PERSONS[3] EVENT[1] AUNT[2] ENTITY[6] (
+ breath(ENTITY[6]) ∧
+  ma'am(AUNT[2]) ∧
+   PERSONS[3] = you ∧
+    ADV_quite_peacefully(SITUATION[10]) ∧
+     past(EVENT[1]) ∧
+      said(EVENT[1], ELIZA[Eliza],
+       is_FACT_THAT(SITUATION[10],
+        MD_could(¬ ∃ EVENT[4] (
+                   tell(EVENT[4], PERSONS[3],
+                    QUEST(∃ PRIEST[7] EVENT[8] ? TIME[5] (
+                          PRIEST[7] = him ∧
+                           is_TMP(EVENT[8], TIME[5]) ∧
+                            is_before(EVENT[8], EVENT[4]) ∧
+                             went_out(EVENT[8], ENTITY[6]) ∧ of(EVENT[8]) = PRIEST[7]))) ∧
+                    VOC(EVENT[4]) = AUNT[2])))))
+
+# ::id 153_fiction_JOYCE-1914;AT38-2;NE
+# ::snt He had a beautiful death ,
+∃ ATTRIB[3] PRIEST[1] EVENT[4] ENTITY[2] (
+ PRIEST[1] = he ∧
+  beautiful(ATTRIB[3]) ∧ is_death_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ had(EVENT[4], PRIEST[1], ENTITY[2]))
+
+# ::id 154_fiction_JOYCE-1914;AT38-3;NE
+# ::snt God be praised . "
+∃ EVENT[1] praised(EVENT[1], _, ENTITY[God])
+
+# ::id 155_fiction_JOYCE-1914;AT39-1;NE
+# ::snt " And everything ... ? "
+∀ ENTITY[1] (thing(ENTITY[1]) → ∃ EVENT[2] (xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1]))
+
+# ::id 156_fiction_JOYCE-1914;AT40-1;NE
+# ::snt " Father O' Rourke was in with him a Tuesday and anointed him and prepared him and all . "
+∃ PRIEST[5] PRIEST[3] PRIEST[1] EVENT[2] EVENT[4] EVENT[6] EVENT[7] (
+ PRIEST[1] = him ∧
+  PRIEST[3] = him ∧
+   PRIEST[5] = him ∧
+    past(EVENT[2]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[6]) ∧
+       ADV_all(EVENT[7]) ∧
+        CONJ_and(copula(EVENT[2], ROURKE[Father_O'Rourke]) ∧ a(EVENT[2]) = DATE[Tuesday] ∧ in_with(EVENT[2]) = PRIEST[1],
+         anointed(EVENT[4], ROURKE[Father_O'Rourke], PRIEST[3]), prepared(EVENT[6], ROURKE[Father_O'Rourke], PRIEST[5]), xxx(EVENT[7], ROURKE[Father_O'Rourke])))
+
+# ::id 157_fiction_JOYCE-1914;AT41-1;NE
+# ::snt " He knew then ? "
+QUEST(∃ PRIEST[1] EVENT[2] (PRIEST[1] = he ∧ TMP_then(EVENT[2]) ∧ past(EVENT[2]) ∧ knew(EVENT[2], PRIEST[1])))
+
+# ::id 158_fiction_JOYCE-1914;AT42-1;NE
+# ::snt " He was quite resigned . "
+∃ ATTRIB[2] PRIEST[1] EVENT[3] (PRIEST[1] = he ∧ quite_resigned(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], PRIEST[1], ATTRIB[2]))
+
+# ::id 159_fiction_JOYCE-1914;AT43-1;NE
+# ::snt " He looks quite resigned , " said my aunt .
+∃ ATTRIB[5] PRIEST[4] NARRATOR[2] EVENT[6] EVENT[3] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   PRIEST[4] = he ∧
+    quite_resigned(ATTRIB[5]) ∧ past(EVENT[3]) ∧ said(EVENT[3], AUNT[1], looks(EVENT[6], PRIEST[4], ATTRIB[5])))
+
+# ::id 160_fiction_JOYCE-1914;AT44-1;NE
+# ::snt " That 's what the woman we had in to wash him said .
+∃ PRIEST[8] PRP[7] SISTERS[6] ENTITY[2] EVENT[11] EVENT[12] EVENT[9] EVENT[10] WOMAN[4] ENTITY[1] (
+ SISTERS[6] = we ∧
+  PRIEST[8] = him ∧
+   is_FACT_THAT(PRP[7], wash(EVENT[9], WOMAN[4], PRIEST[8])) ∧
+    had_in(EVENT[10], SISTERS[6], WOMAN[4]) ∧ PRP(EVENT[10]) = PRP[7] ∧ woman(WOMAN[4]) ∧
+     past(EVENT[10]) ∧ said(EVENT[11], WOMAN[4], ENTITY[2]) ∧ copula(EVENT[12], ENTITY[1], ENTITY[2]))
+
+# ::id 161_fiction_JOYCE-1914;AT44-2;NE
+# ::snt She said he just looked as if he was asleep ,
+∃ SITUATION[9] PRIEST[5] SITUATION[4] PRIEST[3] WOMAN[1] EVENT[7] EVENT[8] EVENT[2] ENTITY[6] (
+ WOMAN[1] = she ∧
+  PRIEST[3] = he ∧
+   PRIEST[5] = he{PRIEST[3]} ∧
+    sleep(ENTITY[6]) ∧
+     is_FACT_THAT(SITUATION[4], copula(EVENT[7], PRIEST[5]) ∧ a(EVENT[7]) = ENTITY[6]) ∧
+      ADV_just(SITUATION[9]) ∧
+       is_before(EVENT[7], EVENT[2]) ∧
+        is_before(EVENT[8], EVENT[2]) ∧
+         past(EVENT[2]) ∧
+          said(EVENT[2], WOMAN[1],
+           is_FACT_THAT(SITUATION[9], looked(EVENT[8], PRIEST[3]) ∧ as_if(EVENT[8]) = SITUATION[4])))
+
+# ::id 162_fiction_JOYCE-1914;AT44-2;NE
+# ::snt he looked that peaceful and resigned .
+∃ PRIEST[1] ATTRIB[4] ATTRIB[3] EVENT[5] ENTITY[2] (
+ peaceful(ATTRIB[3]) ∧
+  resigned(ATTRIB[4]) ∧
+   CONJ_and(is_ATTRIBUTE(ENTITY[2], ATTRIB[3]), is_ATTRIBUTE(ENTITY[2], ATTRIB[4])) ∧
+    PRIEST[1] = he ∧ past(EVENT[5]) ∧ looked(EVENT[5], PRIEST[1], ENTITY[2]))
+
+# ::id 163_fiction_JOYCE-1914;AT44-3;NE
+# ::snt No one would think he 'd make such a beautiful corpse . "
+¬ ∃ PERSONS[1] (
+      one(PERSONS[1]) ∧
+       MD_would(∃ PRIEST[3] EVENT[2] (
+             PRIEST[3] = he ∧
+              think(EVENT[2], PERSONS[1],
+               MD'd(∃ ATTRIB[6] ATTRIB[5] EVENT[7] ENTITY[4] (
+                     such(ATTRIB[5]) ∧
+                      beautiful(ATTRIB[6]) ∧
+                       is_corpse_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_corpse_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+                        make(EVENT[7], PRIEST[3], ENTITY[4])))))))
+
+# ::id 164_fiction_JOYCE-1914;AT45-1;NE
+# ::snt " Yes , indeed , " said my aunt .
+∃ NARRATOR[2] EVENT[5] EVENT[3] ENTITY[4] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   deed(ENTITY[4]) ∧
+    past(EVENT[3]) ∧ said(EVENT[3], AUNT[1], xxx(EVENT[5]) ∧ in(EVENT[5]) = ENTITY[4]))
+
+# ::id 165_fiction_JOYCE-1914;AT46-1;NE
+# ::snt She sipped a little more from her glass and said : " Well , Miss Flynn , at any rate it must be a great comfort for you to know that you did all you could for him .
+∃ AUNT[3] AUNT[1] EVENT[4] EVENT[5] ENTITY[2] (
+ AUNT[1] = she ∧
+  AUNT[3] = her{AUNT[1]} ∧
+   is_glass_POS(ENTITY[2], AUNT[3]) ∧
+    past(EVENT[4]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(sipped(EVENT[4], AUNT[1]) ∧ a_little_more_from(EVENT[4]) = ENTITY[2],
+       said(EVENT[5], AUNT[1],
+        ANY ENTITY[6] (rate(ENTITY[6]),
+         ∃ SISTERS[11] SISTERS[9] ATTRIB[8] EVENT[10] ENTITY[7] (
+          great(ATTRIB[8]) ∧
+           SISTERS[9] = you ∧
+            SISTERS[11] = you{SISTERS[9]} ∧
+             is_comfort_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+              is_comfort_to(ENTITY[7],
+               know(EVENT[10], SISTERS[9],
+                ALL SISTERS[14] ENTITY[12] (
+                 (SISTERS[14] = you{SISTERS[11], SISTERS[9]} ∧
+                  MD_could(∃ PRIEST[15] EVENT[16] (
+                        PRIEST[15] = him ∧
+                         xxx(EVENT[16], SISTERS[14], ENTITY[12]) ∧ for(EVENT[16]) = PRIEST[15]))),
+                 ∃ EVENT[17] (is_before(EVENT[17], EVENT[10]) ∧ did(EVENT[17], SISTERS[11], ENTITY[12]))))) ∧
+              MD_must(∃ EVENT[18] (
+                    copula(EVENT[18], ENTITY[7]) ∧
+                     at(EVENT[18]) = ENTITY[6] ∧ VOC(EVENT[18]) = ELIZA[Miss_Flynn])))))))
+
+# ::id 166_fiction_JOYCE-1914;AT46-2;NE
+# ::snt You were both very kind to him , I must say . "
+∃ AUNT[1] (
+ AUNT[1] = i ∧
+  MD_must(∃ PRIEST[6] ATTRIB[5] SISTERS[3] EVENT[7] EVENT[2] (
+        SISTERS[3] = you ∧
+         PRIEST[6] = him ∧
+          is_very_kind_to(ATTRIB[5], PRIEST[6]) ∧
+           is_before(EVENT[7], EVENT[2]) ∧
+            say(EVENT[2], AUNT[1],
+             BOTH ENTITY[4] (is_element_of(ENTITY[4], SISTERS[3]), copula(EVENT[7], ENTITY[4], ATTRIB[5]))))))
+
+# ::id 167_fiction_JOYCE-1914;AT47-1;NE
+# ::snt Eliza smoothed her dress over her knees .
+∃ ELIZA[4] ELIZA[2] EVENT[5] GROUP[3] ENTITY[1] (
+ ELIZA[2] = her{ELIZA[Eliza]} ∧
+  is_dress_POS(ENTITY[1], ELIZA[2]) ∧
+   ELIZA[4] = her{ELIZA[Eliza]} ∧
+    is_knees_POS(GROUP[3], ELIZA[4]) ∧
+     past(EVENT[5]) ∧ smoothed(EVENT[5], ELIZA[Eliza], ENTITY[1]) ∧ over(EVENT[5]) = GROUP[3])
+
+# ::id 168_fiction_JOYCE-1914;AT48-1;NE
+# ::snt " Ah , poor James ! " she said . " God knows we done all we could ,
+∃ SISTERS[4] ELIZA[1] EVENT[3] EVENT[2] (
+ ELIZA[1] = she ∧
+  SISTERS[4] = we ∧
+   past(EVENT[2]) ∧
+    said(EVENT[2], ELIZA[1],
+     knows(EVENT[3], ENTITY[God],
+      ALL SISTERS[7] ENTITY[5] ((SISTERS[7] = we{SISTERS[4]} ∧ MD_could(∃ EVENT[8] xxx(EVENT[8], SISTERS[7], ENTITY[5]))), ∃ EVENT[9] done(EVENT[9], SISTERS[4], ENTITY[5]))) ∧ ADV(EVENT[3]) = PRIEST[poor_James]))
+
+# ::id 169_fiction_JOYCE-1914;AT48-2;NE
+# ::snt as poor as we are -- we would n't see him want anything while he was in it . "
+∃ SISTERS[5] ATTRIB[2] REF1[9] PRIEST[8] SISTERS[1] EVENT[10] EVENT[6] EVENT[7] DEGREE[3] (
+ SISTERS[1] = we ∧
+  PRIEST[8] = he ∧
+   REF1[9] = it ∧
+    SISTERS[5] = we{SISTERS[1]} ∧
+     copula(EVENT[6], SISTERS[5], DEGREE[3]) ∧
+      is_as_poor_as(ATTRIB[2], DEGREE[3]) ∧
+       past(EVENT[10]) ∧
+        CONJ_and(CRD_while(copula(EVENT[10], PRIEST[8]) ∧ in(EVENT[10]) = REF1[9],
+              MD_would(¬ ∃ PRIEST[12] EVENT[11] (
+                         PRIEST[12] = him ∧
+                          see(EVENT[11], SISTERS[1],
+                           ANY ENTITY[13] (thing(ENTITY[13]), ∃ EVENT[14] want(EVENT[14], PRIEST[12], ENTITY[13])))))),
+         xxx(EVENT[7], SISTERS[1], ATTRIB[2])))
+
+# ::id 170_fiction_JOYCE-1914;AT49-1;NE
+# ::snt Nannie had leaned her head against the sofa-pillow and seemed about to fall asleep .
+∃ NANNIE[2] EVENT[4] EVENT[7] EVENT[5] ENTITY[1] ENTITY[6] ENTITY[3] (
+ sofa-pillow(ENTITY[3]) ∧
+  NANNIE[2] = her{NANNIE[Nannie]} ∧
+   is_head_POS(ENTITY[1], NANNIE[2]) ∧
+    sleep(ENTITY[6]) ∧
+     past(EVENT[4]) ∧
+      ADV_about(EVENT[7]) ∧
+       past(EVENT[5]) ∧
+        CONJ_and(had_leaned(EVENT[4], NANNIE[Nannie], ENTITY[1]) ∧ against(EVENT[4]) = ENTITY[3],
+         seemed(EVENT[5], fall(EVENT[7], NANNIE[Nannie]) ∧ a(EVENT[7]) = ENTITY[6])))
+
+# ::id 171_fiction_JOYCE-1914;AT50-1;NE
+# ::snt " There 's poor Nannie , " said Eliza , looking at her ,
+∃ NANNIE[1] EVENT[4] EVENT[3] EVENT[2] (
+ NANNIE[1] = her{NANNIE[poor_Nannie]} ∧
+  past(EVENT[3]) ∧
+   CONJ_and(said(EVENT[3], ELIZA[Eliza], copula(EVENT[4], NANNIE[poor_Nannie])),
+    looking(EVENT[2], ELIZA[Eliza]) ∧ at(EVENT[2]) = NANNIE[1]))
+
+# ::id 172_fiction_JOYCE-1914;AT50-2;NE
+# ::snt " she 's wore out .
+∃ NANNIE[1] EVENT[2] (NANNIE[1] = she ∧ wore_out(EVENT[2], _, NANNIE[1]))
+
+# ::id 173_fiction_JOYCE-1914;AT50-3;NE
+# ::snt All the work we had , she and me , getting in the woman to wash him and then laying him out and then the coffin and then arranging about the Mass in the chapel .
+∃ WOMAN[7] ENTITY[13] ENTITY[17] ENTITY[16] (
+ woman(WOMAN[7]) ∧
+  coffin(ENTITY[13]) ∧
+   chapel(ENTITY[17]) ∧
+    is_Mass_in(ENTITY[16], ENTITY[17]) ∧
+     ALL ENTITY[1] (work(ENTITY[1]),
+      ∃ PRIEST[10] PRIEST[8] SISTERS[5] EVENT[9] EVENT[6] EVENT[11] EVENT[14] EVENT[18] GROUP[2] (
+       SISTERS[5] = we ∧
+        ∃ NANNIE[3] (NANNIE[3] = she ∧ is_element_of(NANNIE[3], GROUP[2])) ∧
+         ∃ ELIZA[4] (ELIZA[4] = me ∧ is_element_of(ELIZA[4], GROUP[2])) ∧
+         is_-SISTERS-_namely(SISTERS[5], GROUP[2]) ∧
+          PRIEST[8] = him ∧
+           PRIEST[10] = him ∧
+            past(EVENT[6]) ∧
+             TMP_then(EVENT[11]) ∧
+              past(EVENT[11]) ∧
+               TMP_then(EVENT[14]) ∧
+                past(EVENT[14]) ∧
+                 TMP_then(EVENT[18]) ∧
+                  past(EVENT[18]) ∧
+                   CONJ_and(had_getting_in(EVENT[6], SISTERS[5], ENTITY[1], wash(EVENT[9], WOMAN[7], PRIEST[8])),
+                    had_laying_out(EVENT[11], SISTERS[5], PRIEST[10]), had(EVENT[14], SISTERS[5], ENTITY[13]),
+                    had_arranging(EVENT[18], SISTERS[5], ENTITY[1]) ∧ about(EVENT[18]) = ENTITY[16]))))
+
+# ::id 174_fiction_JOYCE-1914;AT50-4;NE
+# ::snt Only for Father O' Rourke I do n't know what we 'd have done at all .
+ONLY ENTITY[1] (is_of(ENTITY[1], ROURKE[Father_O'Rourke]),
+ ∃ NARRATOR[2] (
+  NARRATOR[2] = i ∧
+   ¬ ∃ EVENT[3] (
+         do_know(EVENT[3], NARRATOR[2],
+          QUEST(∃ SISTERS[5] ? ENTITY[4] (
+                SISTERS[5] = we ∧
+                 MD'd(ALL ENTITY[6] ∃ EVENT[7] (
+                       have_done(EVENT[7], SISTERS[5], ENTITY[4]) ∧
+                        at(EVENT[7]) = ENTITY[6]))))) ∧
+          for(EVENT[3]) = ENTITY[1])))
+
+# ::id 175_fiction_JOYCE-1914;AT50-5;NE
+# ::snt It was him brought us all them flowers and them two candlesticks out of the chapel and wrote out the notice for the Freeman's General and took charge of all the papers for the cemetery and poor James 's insurance . "
+∃ SISTERS[4] ROURKE[1] EVENT[9] EVENT[11] EVENT[17] EVENT[18] GROUP[5] ENTITY[12] ENTITY[2] ENTITY[8] GROUP[7] ENTITY[10] ENTITY[15] ENTITY[16] GROUP[14] (
+ chapel(ENTITY[8]) ∧
+  (CD_two(GROUP[7]), is_candlesticks_out_of(GROUP[7], ENTITY[8])) ∧
+   is_notice_for(ENTITY[10], ENTITY[Freeman's_General]) ∧
+    cemetery(ENTITY[15]) ∧
+     is_insurance_POS(ENTITY[16], PRIEST[poor_James]) ∧
+      is_element_of(ENTITY[15], GROUP[14]) ∧ is_element_of(ENTITY[16], GROUP[14]) ∧
+       ROURKE[1] = him ∧
+        SISTERS[4] = us ∧
+         ALL GROUP[6] (flowers(GROUP[6]), is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+          ALL GROUP[13] (is_papers_for(GROUP[13], GROUP[14]), is_charge_of(ENTITY[12], GROUP[13])) ∧
+           CONJ_and(brought(EVENT[9], ENTITY[2], GROUP[5], SISTERS[4]), wrote_out(EVENT[11], ENTITY[2], ENTITY[10]),
+            took(EVENT[17], ENTITY[2], ENTITY[12])) ∧
+            past(EVENT[9]) ∧
+             past(EVENT[11]) ∧
+              past(EVENT[17]) ∧ past(EVENT[18]) ∧ copula(EVENT[18], ENTITY[2], ROURKE[1]))
+
+# ::id 176_fiction_JOYCE-1914;AT51-1;NE
+# ::snt " Was n't that good of him ? " said my aunt
+∃ NARRATOR[2] EVENT[3] AUNT[1] ENTITY[4] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   past(EVENT[3]) ∧
+    said(EVENT[3], AUNT[1],
+     QUEST(¬ ∃ ROURKE[6] ATTRIB[5] EVENT[7] (
+                ROURKE[6] = him ∧
+                 is_good_of(ATTRIB[5], ROURKE[6]) ∧
+                  is_before(EVENT[7], EVENT[3]) ∧ copula(EVENT[7], ENTITY[4], ATTRIB[5])))))
+
+# ::id 177_fiction_JOYCE-1914;AT52-1;NE
+# ::snt Eliza closed her eyes and shook her head slowly .
+∃ ELIZA[5] ELIZA[2] EVENT[3] EVENT[6] GROUP[1] ENTITY[4] (
+ ELIZA[2] = her{ELIZA[Eliza]} ∧
+  is_eyes_POS(GROUP[1], ELIZA[2]) ∧
+   ELIZA[5] = her{ELIZA[Eliza]} ∧
+    is_head_POS(ENTITY[4], ELIZA[5]) ∧
+     past(EVENT[3]) ∧
+      ADV_slowly(EVENT[6]) ∧
+       past(EVENT[6]) ∧ CONJ_and(closed(EVENT[3], ELIZA[Eliza], GROUP[1]), shook(EVENT[6], ELIZA[Eliza], ENTITY[4])))
+
+# ::id 178_fiction_JOYCE-1914;AT53-1;NE
+# ::snt " Ah , there 's no friends like the old friends , " she said ,
+∃ ELIZA[1] ATTRIB[6] EVENT[2] GROUP[5] (
+ old(ATTRIB[6]) ∧
+  is_friends_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+   ELIZA[1] = she ∧
+    past(EVENT[2]) ∧
+     said(EVENT[2], ELIZA[1],
+      ¬ ∃ ATTRIB[4] EVENT[7] GROUP[3] (is_like_comp(ATTRIB[4], GROUP[5]) ∧ is_friends_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ copula(EVENT[7], GROUP[3]))))
+
+# ::id 179_fiction_JOYCE-1914;AT53-2;NE
+# ::snt " when all is said and done , no friends that a body can trust . "
+CND_when(ALL ENTITY[1] ∃ EVENT[2] EVENT[3] CONJ_and(said(EVENT[2], _, ENTITY[1]), done(EVENT[3], _, ENTITY[1])),
+ ¬ ∃ PERSON[6] PERSONS[4] EVENT[8] (
+       body(PERSON[6]) ∧
+        MD_can(∃ EVENT[7] trust(EVENT[7], PERSON[6], PERSONS[4])) ∧ friends(PERSONS[4]) ∧
+         xxx(EVENT[8], _, PERSONS[4])))
+
+# ::id 180_fiction_JOYCE-1914;AT54-1;NE
+# ::snt " Indeed , that 's true , " said my aunt .
+∃ ATTRIB[6] NARRATOR[2] EVENT[7] EVENT[3] ENTITY[4] AUNT[1] ENTITY[5] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   deed(ENTITY[4]) ∧
+    true(ATTRIB[6]) ∧
+     past(EVENT[3]) ∧
+      said(EVENT[3], AUNT[1], copula(EVENT[7], ENTITY[5], ATTRIB[6]) ∧ In(EVENT[7]) = ENTITY[4]))
+
+# ::id 181_fiction_JOYCE-1914;AT54-2;NE
+# ::snt " And I 'm sure now that he 's gone to his eternal reward he wo n't forget you and all your kindness to him . "
+∃ SITUATION[16] ATTRIB[13] PRIEST[12] PRIEST[10] PRIEST[3] ATTRIB[2] AUNT[1] EVENT[14] EVENT[15] ENTITY[11] (
+ AUNT[1] = i ∧
+  PRIEST[3] = he ∧
+   is_sure_THAT(ATTRIB[2],
+    MD_wo(¬ ∃ EVENT[9] GROUP[4] (
+               ∃ SISTERS[5] (SISTERS[5] = you ∧ is_subset_of_or_equal_to(SISTERS[5], GROUP[4])) ∧
+                ALL PRIEST[8] SISTERS[7] ENTITY[6] (
+                 (SISTERS[7] = your ∧ PRIEST[8] = him{PRIEST[3]} ∧
+                  is_kindness_to(ENTITY[6], PRIEST[8]) ∧ is_kindness_POS(ENTITY[6], SISTERS[7])),
+                 is_element_of(ENTITY[6], GROUP[4])) ∧ forget(EVENT[9], PRIEST[3], GROUP[4])))) ∧
+    PRIEST[10] = he ∧
+     PRIEST[12] = his{PRIEST[10]} ∧
+      eternal(ATTRIB[13]) ∧
+       is_reward_ATTRIBUTE(ENTITY[11], ATTRIB[13]) ∧ is_reward_POS(ENTITY[11], PRIEST[12]) ∧
+        is_TMP_now_THAT(SITUATION[16], 's_gone(EVENT[14], PRIEST[10]) ∧ to(EVENT[14]) = ENTITY[11]) ∧
+         is_FACT_THAT(SITUATION[16], copula(EVENT[15], AUNT[1], ATTRIB[2])))
+
+# ::id 182_fiction_JOYCE-1914;AT55-1;NE
+# ::snt " Ah , poor James ! " said Eliza . " He was no great trouble to us .
+∃ PRIEST[2] EVENT[1] (
+ PRIEST[2] = he ∧
+  past(EVENT[1]) ∧
+   said(EVENT[1], ELIZA[Eliza],
+    ¬ ∃ SISTERS[5] ATTRIB[4] EVENT[6] ENTITY[3] (
+          great(ATTRIB[4]) ∧
+           SISTERS[5] = us ∧
+            is_trouble_to(ENTITY[3], SISTERS[5]) ∧ is_trouble_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+             is_before(EVENT[6], EVENT[1]) ∧
+              copula(EVENT[6], PRIEST[2], ENTITY[3]) ∧ ADV(EVENT[6]) = PRIEST[poor_James])))
+
+# ::id 183_fiction_JOYCE-1914;AT55-2;NE
+# ::snt You would n't hear him in the house any more than now .
+∃ PERSONS[1] ENTITY[3] (
+ house(ENTITY[3]) ∧
+  PERSONS[1] = you ∧
+   MD_would(¬ ∃ PRIEST[2] (
+              PRIEST[2] = him ∧
+               ANY_MORE ATTRIB[5] DEGREE[4] ((ADV_now(ATTRIB[5]) ∧ is_than(DEGREE[4], ATTRIB[5])),
+                ∃ EVENT[6] (
+                 hear(EVENT[6], PERSONS[1], PRIEST[2]) ∧
+                  MSR(EVENT[6]) = DEGREE[4] ∧ in(EVENT[6]) = ENTITY[3])))))
+
+# ::id 184_fiction_JOYCE-1914;AT55-3;NE
+# ::snt Still , I know he 's gone and all to that .... "
+∃ SITUATION[7] PRIEST[3] AUNT[1] EVENT[5] EVENT[2] ENTITY[4] (
+ AUNT[1] = i ∧
+  PRIEST[3] = he ∧
+   ADV_still(SITUATION[7]) ∧
+    ADV_all(EVENT[5]) ∧
+     is_FACT_THAT(SITUATION[7], know(EVENT[2], AUNT[1], 's_gone(EVENT[5], PRIEST[3]) ∧ to(EVENT[5]) = ENTITY[4])))
+
+# ::id 185_fiction_JOYCE-1914;AT56-1;NE
+# ::snt " It 's when it 's all over that you 'll miss him , " said my aunt .
+∃ REF1[8] SISTERS[5] SITUATION[4] NARRATOR[2] EVENT[9] EVENT[11] EVENT[3] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   SISTERS[5] = you ∧
+    is_FACT_THAT(SITUATION[4], MD'll(∃ PRIEST[6] EVENT[7] (PRIEST[6] = him ∧ miss(EVENT[7], SISTERS[5], PRIEST[6])))) ∧
+     REF1[8] = it ∧
+      ADV_all_over(EVENT[9]) ∧
+       past(EVENT[3]) ∧
+        said(EVENT[3], AUNT[1], CRD_when(copula(EVENT[9], REF1[8]), copula(EVENT[11], SITUATION[4]))))
+
+# ::id 186_fiction_JOYCE-1914;AT57-1;NE
+# ::snt " I know that , " said Eliza .
+∃ ELIZA[2] EVENT[4] EVENT[1] ENTITY[3] (
+ ELIZA[2] = i{ELIZA[Eliza]} ∧
+  past(EVENT[1]) ∧ said(EVENT[1], ELIZA[Eliza], know(EVENT[4], ELIZA[2], ENTITY[3])))
+
+# ::id 187_fiction_JOYCE-1914;AT57-2;NE
+# ::snt " I wo n't be bringing him in his cup of beef-tea any more , nor you , ma'am , sending him his snuff .
+∃ ELIZA[1] (
+ ELIZA[1] = i ∧
+  MD_wo(¬ ∃ PRIEST[4] PRIEST[2] ENTITY[5] ENTITY[3] (
+             PRIEST[2] = him ∧
+              PRIEST[4] = his{PRIEST[2]} ∧
+               beef-tea(ENTITY[5]) ∧
+                is_cup_of(ENTITY[3], ENTITY[5]) ∧ is_cup_POS(ENTITY[3], PRIEST[4]) ∧
+                 ANY_MORE DEGREE[6] ∃ PRIEST[12] PRIEST[10] AUNT[9] SITUATION[7] EVENT[13] EVENT[14] ENTITY[8] ENTITY[11] (
+                  AUNT[9] = you ∧
+                   ma'am(ENTITY[8]) ∧
+                    is_-AUNT-_namely(AUNT[9], ENTITY[8]) ∧
+                     PRIEST[10] = him{PRIEST[2]} ∧
+                      PRIEST[12] = his{PRIEST[10], PRIEST[2]} ∧
+                       is_snuff_POS(ENTITY[11], PRIEST[12]) ∧
+                        is_FACT_THAT(SITUATION[7], sending(EVENT[13], AUNT[9], ENTITY[11], PRIEST[10])) ∧
+                         be_bringing(EVENT[14], ELIZA[1], PRIEST[2]) ∧ nor(EVENT[14]) = SITUATION[7] ∧
+                          MSR(EVENT[14]) = DEGREE[6] ∧ in(EVENT[14]) = ENTITY[3]))))
+
+# ::id 188_fiction_JOYCE-1914;AT57-3;NE
+# ::snt Ah , poor James ! "
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PRIEST[poor_James])
+
+# ::id 189_fiction_JOYCE-1914;AT58-1;NE
+# ::snt She stopped , as if she were communing with the past and then said shrewdly : " Mind you , I noticed there was something queer coming over him latterly .
+∃ SITUATION[15] SITUATION[16] ELIZA[8] ELIZA[3] SITUATION[2] ELIZA[1] EVENT[5] EVENT[6] EVENT[9] EVENT[7] ENTITY[4] (
+ past(ENTITY[4]) ∧
+  ELIZA[1] = she ∧
+   ELIZA[3] = she{ELIZA[1]} ∧
+    is_FACT_THAT(SITUATION[2], were_communing(EVENT[5], ELIZA[3]) ∧ with(EVENT[5]) = ENTITY[4]) ∧
+     ELIZA[8] = i{ELIZA[1]} ∧
+      past(EVENT[5]) ∧
+       past(EVENT[6]) ∧
+        TMP_then(SITUATION[16]) ∧
+         ADV_shrewdly(SITUATION[15]) ∧
+          is_before(EVENT[9], EVENT[7]) ∧
+           past(EVENT[7]) ∧
+            CONJ_and(stopped(EVENT[6], ELIZA[1]) ∧ as_if(EVENT[6]) = SITUATION[2],
+             is_FACT_THAT(SITUATION[16],
+              is_FACT_THAT(SITUATION[15],
+               said(EVENT[7], ELIZA[1],
+                noticed(EVENT[9], ELIZA[8],
+                 SOME ENTITY[10] (thing(ENTITY[10]),
+                  ∃ PRIEST[11] EVENT[12] (
+                   PRIEST[11] = him ∧
+                    ADV_queer(EVENT[12]) ∧
+                     ADV_latterly(EVENT[12]) ∧
+                      is_before(EVENT[12], EVENT[9]) ∧
+                       was_coming(EVENT[12], ENTITY[10]) ∧ over(EVENT[12]) = PRIEST[11]))))))))
+
+# ::id 190_fiction_JOYCE-1914;AT58-2;NE
+# ::snt Whenever I 'd bring in his soup to him there I 'd find him with his breviary fallen to the floor , lying back in the chair and his mouth open . "
+∃ SITUATION[20] ELIZA[7] ELIZA[2] SITUATION[1] ENTITY[12] ENTITY[14] (
+ floor(ENTITY[12]) ∧
+  chair(ENTITY[14]) ∧
+   ELIZA[2] = i ∧
+    is_FACT_THAT(SITUATION[1],
+     MD'd(∃ PRIEST[5] PRIEST[4] EVENT[6] ENTITY[3] (
+           PRIEST[4] = his ∧
+            is_soup_POS(ENTITY[3], PRIEST[4]) ∧
+             PRIEST[5] = him ∧
+              bring(EVENT[6], ELIZA[2]) ∧ to(EVENT[6]) = PRIEST[5] ∧
+               in(EVENT[6]) = ENTITY[3]))) ∧
+     ELIZA[7] = i ∧
+      LOC_there(SITUATION[20]) ∧
+       is_FACT_THAT(SITUATION[20],
+        MD'd(∃ ATTRIB[17] PRIEST[16] PRIEST[11] SITUATION[9] PRIEST[8] EVENT[13] EVENT[19] EVENT[18] EVENT[18] ENTITY[10] ENTITY[15] (
+              PRIEST[8] = him ∧
+               PRIEST[11] = his{PRIEST[8]} ∧
+                is_breviary_POS(ENTITY[10], PRIEST[11]) ∧
+                 is_SMC-FACT_THAT(SITUATION[9], fallen(EVENT[13], ENTITY[10]) ∧ to(EVENT[13]) = ENTITY[12]) ∧
+                  PRIEST[16] = his{PRIEST[8]} ∧
+                   open(ATTRIB[17]) ∧
+                    is_mouth_ATTRIBUTE(ENTITY[15], ATTRIB[17]) ∧ is_mouth_POS(ENTITY[15], PRIEST[16]) ∧
+                     CONJ_and(find(EVENT[19], ELIZA[7], PRIEST[8]) ∧ with(EVENT[19]) = SITUATION[9] ∧
+                           Whenever(EVENT[19]) = SITUATION[1],
+                      CONJ_and(lying_back(EVENT[18], PRIEST[8]) ∧ in(EVENT[18]) = ENTITY[14],
+                       lying_back(EVENT[18], PRIEST[8]) ∧ LINK(EVENT[18]) = ENTITY[15]))))))
+
+# ::id 191_fiction_JOYCE-1914;AT59-1;NE
+# ::snt She laid a finger against her nose and frowned :
+∃ ELIZA[4] ELIZA[1] EVENT[5] EVENT[6] ENTITY[3] ENTITY[2] (
+ ELIZA[1] = she ∧
+  finger(ENTITY[2]) ∧
+   ELIZA[4] = her{ELIZA[1]} ∧
+    is_nose_POS(ENTITY[3], ELIZA[4]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(laid(EVENT[5], ELIZA[1], ENTITY[2]) ∧ against(EVENT[5]) = ENTITY[3],
+        frowned(EVENT[6], ELIZA[1])))
+
+# ::id 192_fiction_JOYCE-1914;AT60-1;NE
+# ::snt then she continued : " But still and all he kept on saying that before the summer was over he 'd go out for a drive one fine day just to see the old house again where we were all born down in Irishtown and take me and Nannie with him .
+∃ SITUATION[31] SITUATION[32] PRIEST[9] ATTRIB[7] SITUATION[5] PRIEST[3] ELIZA[1] ATTRIB[15] EVENT[30] EVENT[8] EVENT[4] EVENT[2] ENTITY[6] ENTITY[14] (
+ summer(ENTITY[6]) ∧
+  old(ATTRIB[15]) ∧
+   is_house_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+    ELIZA[1] = she ∧
+     PRIEST[3] = he ∧
+      over(ATTRIB[7]) ∧
+       is_FACT_THAT(SITUATION[5], copula(EVENT[8], ENTITY[6], ATTRIB[7])) ∧
+        PRIEST[9] = he{PRIEST[3]} ∧
+         TMP_then(SITUATION[32]) ∧
+          ADV_still_all(SITUATION[31]) ∧
+           is_before(EVENT[30], EVENT[2]) ∧
+            is_before(EVENT[8], EVENT[4]) ∧
+             past(EVENT[2]) ∧
+              is_FACT_THAT(SITUATION[32],
+               continued(EVENT[2], ELIZA[1],
+                is_FACT_THAT(SITUATION[31],
+                 CONJ_and(kept_on(EVENT[30], PRIEST[3]),
+                  saying(EVENT[4], PRIEST[3],
+                   MD'd(∃ SITUATION[22] SITUATION[23] SITUATION[24] PRIEST[27] SISTERS+PRIEST[17] PRP[13] ATTRIB[12] EVENT[19] EVENT[21] EVENT[28] EVENT[29] GROUP[25] TIME[11] ENTITY[10] (
+                         drive(ENTITY[10]) ∧
+                          fine(ATTRIB[12]) ∧
+                           (CD_one(TIME[11]), is_day_ATTRIBUTE(TIME[11], ATTRIB[12])) ∧
+                            SISTERS+PRIEST[17] = we ∧
+                             ∃ ELIZA[26] (ELIZA[26] = me{ELIZA[1]} ∧ is_element_of(ELIZA[26], GROUP[25])) ∧
+                              is_element_of(NANNIE[Nannie], GROUP[25]) ∧
+                              PRIEST[27] = him{PRIEST[3]} ∧
+                               is_FACT_THAT(PRP[13],
+                                CONJ_and(is_FACT_THAT(SITUATION[24],
+                                      is_FACT_THAT(SITUATION[23],
+                                       is_FACT_THAT(SITUATION[22], see(EVENT[21], PRIEST[9], ENTITY[14])))),
+                                 take(EVENT[28], PRIEST[9], GROUP[25]) ∧
+                                  with(EVENT[28]) = PRIEST[27])) ∧
+                                ADV_just(SITUATION[24]) ∧
+                                 TMP_again(SITUATION[23]) ∧
+                                  is_LOC(EVENT[19], SITUATION[22]) ∧
+                                   is_before(EVENT[19], EVENT[4]) ∧
+                                    ALL ENTITY[18] (is_of(ENTITY[18], SISTERS+PRIEST[17]),
+                                     born_down(EVENT[19], _, ENTITY[18]) ∧
+                                      in(EVENT[19]) = LOC[Irishtown]) ∧
+                                     go_out(EVENT[29], PRIEST[9]) ∧
+                                      PRP(EVENT[29]) = PRP[13] ∧
+                                      is_contained_in(TMP(EVENT[29]), TIME[11]) ∧
+                                      for(EVENT[29]) = ENTITY[10] ∧
+                                      before(EVENT[29]) = SITUATION[5]))))))))
+
+# ::id 193_fiction_JOYCE-1914;AT60-2;NE
+# ::snt If we could only get one of them new-fangled carriages that makes no noise that Father O' Rourke told him about -- them with the rheumatic wheels -- for the day cheap -- he said , at Johnny Rush 's over the way there and drive out the three of us together of a Sunday evening .
+∃ PRIEST[1] REF2[23] ATTRIB[17] ATTRIB[6] REF1[7] PRIEST[14] ATTRIB[9] EVENT[2] EVENT[12] EVENT[15] GROUP[5] GROUP[8] ENTITY[19] ENTITY[16] ENTITY[22] (
+ new-fangled(ATTRIB[9]) ∧
+  PRIEST[14] = him{PRIEST[1]} ∧
+   ¬ ∃ ENTITY[11] (noise(ENTITY[11]) ∧ makes(EVENT[12], GROUP[8], ENTITY[11])) ∧
+    told(EVENT[15], ROURKE[Father_O'Rourke], PRIEST[14]) ∧ about(EVENT[15]) = GROUP[8] ∧ is_carriages_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+    REF1[7] = them ∧
+     rheumatic(ATTRIB[6]) ∧
+      is_wheels_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       is_with(REF1[7], GROUP[5]) ∧
+        is_-GROUP-_namely(GROUP[8], REF1[7]) ∧
+         cheap(ATTRIB[17]) ∧
+          is_day_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+           LOC_there(ENTITY[19]) ∧ way(ENTITY[19]) ∧
+            REF2[23] = us ∧
+             (CD_three(ENTITY[22]), is_of(ENTITY[22], REF2[23])) ∧
+              is_before(EVENT[15], EVENT[2]) ∧
+               PRIEST[1] = he ∧
+                past(EVENT[2]) ∧
+                 said(EVENT[2], PRIEST[1],
+                  ∀ SISTERS+PRIEST[3] CND_If(
+                      SISTERS+PRIEST[3] = we ∧
+                       MD_could(∃ EVENT[20] EVENT[25] ENTITY[18] ENTITY[4] ENTITY[24] (
+                             (CD_one(ENTITY[4]), is_element_of(ENTITY[4], GROUP[8])) ∧
+                              is_over(ENTITY[18], ENTITY[19]) ∧ is_POS(ENTITY[18], PERSON[Johnny_Rush]) ∧
+                               Sunday_evening(ENTITY[24]) ∧
+                                only(EVENT[20]) ∧
+                                 ADV_together(EVENT[25]) ∧
+                                  CONJ_and(get(EVENT[20], SISTERS+PRIEST[3], ENTITY[4]) ∧
+                                        at(EVENT[20]) = ENTITY[18] ∧
+                                        for(EVENT[20]) = ENTITY[16],
+                                   drive_out(EVENT[25], SISTERS+PRIEST[3], ENTITY[22]) ∧
+                                    of(EVENT[25]) = ENTITY[24]))), ∃ EVENT[27] xxx(EVENT[27]))))
+
+# ::id 194_fiction_JOYCE-1914;AT60-3;NE
+# ::snt He had his mind set on that ... .
+∃ PRIEST[4] PRIEST[1] EVENT[6] EVENT[2] ENTITY[3] ENTITY[5] (
+ PRIEST[1] = he ∧
+  PRIEST[4] = his{PRIEST[1]} ∧
+   is_mind_POS(ENTITY[3], PRIEST[4]) ∧
+    past(EVENT[2]) ∧
+     had(EVENT[2], PRIEST[1], set(EVENT[6], ENTITY[3]) ∧ on(EVENT[6]) = ENTITY[5]))
+
+# ::id 195_fiction_JOYCE-1914;AT60-4;NE
+# ::snt Poor James ! "
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PRIEST[Poor_James])
+
+# ::id 196_fiction_JOYCE-1914;AT61-1;NE
+# ::snt " The Lord have mercy on his soul ! " said my aunt .
+∃ PRIEST[6] NARRATOR[2] EVENT[7] EVENT[3] ENTITY[5] ENTITY[4] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   PRIEST[6] = his ∧
+    is_soul_POS(ENTITY[5], PRIEST[6]) ∧
+     is_mercy_on(ENTITY[4], ENTITY[5]) ∧
+      past(EVENT[3]) ∧ said(EVENT[3], AUNT[1], have(EVENT[7], ENTITY[Lord], ENTITY[4])))
+
+# ::id 197_fiction_JOYCE-1914;AT62-1;NE
+# ::snt Eliza took out her handkerchief and wiped her eyes with it .
+∃ HANDKERCHIEF[6] ELIZA[5] ELIZA[2] EVENT[3] EVENT[7] HANDKERCHIEF[1] GROUP[4] (
+ ELIZA[2] = her{ELIZA[Eliza]} ∧
+  is_handkerchief_POS(HANDKERCHIEF[1], ELIZA[2]) ∧
+   ELIZA[5] = her{ELIZA[Eliza]} ∧
+    is_eyes_POS(GROUP[4], ELIZA[5]) ∧
+     HANDKERCHIEF[6] = it{HANDKERCHIEF[1]} ∧
+      past(EVENT[3]) ∧
+       past(EVENT[7]) ∧
+        CONJ_and(took_out(EVENT[3], ELIZA[Eliza], HANDKERCHIEF[1]),
+         wiped(EVENT[7], ELIZA[Eliza], GROUP[4]) ∧ with(EVENT[7]) = HANDKERCHIEF[6]))
+
+# ::id 198_fiction_JOYCE-1914;AT62-2;NE
+# ::snt Then she put it back again in her pocket and gazed into the empty grate for some time without speaking .
+∃ ELIZA[4] HANDKERCHIEF[2] ELIZA[1] ATTRIB[8] EVENT[5] ENTITY[3] ENTITY[7] (
+ empty(ATTRIB[8]) ∧
+  is_grate_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   ELIZA[1] = she ∧
+    HANDKERCHIEF[2] = it ∧
+     ELIZA[4] = her{ELIZA[1]} ∧
+      is_pocket_POS(ENTITY[3], ELIZA[4]) ∧
+       TMP_then(EVENT[5]) ∧
+        ADV_back_again(EVENT[5]) ∧
+         past(EVENT[5]) ∧
+          CONJ_and(put(EVENT[5], ELIZA[1], HANDKERCHIEF[2]) ∧ in(EVENT[5]) = ENTITY[3],
+           SOME ENTITY[9] (time(ENTITY[9]),
+            ∃ SITUATION[10] EVENT[11] EVENT[12] (
+             is_FACT_THAT(SITUATION[10], speaking(EVENT[11], ELIZA[1])) ∧
+              past(EVENT[12]) ∧
+               gazed(EVENT[12], ELIZA[1]) ∧ without(EVENT[12]) = SITUATION[10] ∧
+                for(EVENT[12]) = ENTITY[9] ∧ into(EVENT[12]) = ENTITY[7]))))
+
+# ::id 199_fiction_JOYCE-1914;AT63-1;NE
+# ::snt " He was too scrupulous always , " she said .
+∃ ATTRIB[4] PRIEST[3] ELIZA[1] EVENT[5] EVENT[2] (
+ ELIZA[1] = she ∧
+  PRIEST[3] = he ∧
+   too_scrupulous(ATTRIB[4]) ∧
+    TMP_always(EVENT[5]) ∧
+     is_before(EVENT[5], EVENT[2]) ∧
+      past(EVENT[2]) ∧ said(EVENT[2], ELIZA[1], copula(EVENT[5], PRIEST[3], ATTRIB[4])))
+
+# ::id 200_fiction_JOYCE-1914;AT63-2;NE
+# ::snt " The duties of the priesthood was too much for him .
+∃ ENTITY[2] GROUP[1] (
+ priesthood(ENTITY[2]) ∧
+  is_duties_of(GROUP[1], ENTITY[2]) ∧
+   TOO_MUCH PRIEST[4] ENTITY[3] ((PRIEST[4] = him ∧ is_for(ENTITY[3], PRIEST[4])), ∃ EVENT[5] (past(EVENT[5]) ∧ copula(EVENT[5], GROUP[1], ENTITY[3]))))
+
+# ::id 201_fiction_JOYCE-1914;AT63-3;NE
+# ::snt And then his life was , you might say , crossed . "
+∃ PRIEST[2] EVENT[3] ENTITY[1] (
+ PRIEST[2] = his ∧
+  is_life_POS(ENTITY[1], PRIEST[2]) ∧ TMP_then(EVENT[3]) ∧ past(EVENT[3]) ∧ crossed(EVENT[3], _, ENTITY[1]))
+
+# ::id 202_fiction_JOYCE-1914;AT64-1;NE
+# ::snt " Yes , " said my aunt . " He was a disappointed man .
+∃ ATTRIB[6] PRIEST[4] NARRATOR[2] EVENT[7] EVENT[3] ENTITY[5] AUNT[1] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   PRIEST[4] = he ∧
+    disappointed(ATTRIB[6]) ∧
+     is_man_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+      is_before(EVENT[7], EVENT[3]) ∧
+       past(EVENT[3]) ∧ said(EVENT[3], AUNT[1], copula(EVENT[7], PRIEST[4], ENTITY[5])))
+
+# ::id 203_fiction_JOYCE-1914;AT64-2;NE
+# ::snt You could see that . "
+∃ PERSONS[1] ENTITY[2] (PERSONS[1] = you ∧ MD_could(∃ EVENT[3] see(EVENT[3], PERSONS[1], ENTITY[2])))
+
+# ::id 204_fiction_JOYCE-1914;AT65-1;NE
+# ::snt A silence took possession of the little room
+∃ ATTRIB[4] EVENT[5] ENTITY[2] ENTITY[1] ENTITY[3] (
+ little(ATTRIB[4]) ∧
+  is_room_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   silence(ENTITY[1]) ∧
+    is_possession_of(ENTITY[2], ENTITY[3]) ∧ past(EVENT[5]) ∧ took(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 205_fiction_JOYCE-1914;AT65-2;NE
+# ::snt and , under cover of it , I approached the table and tasted my sherry and then returned quietly to my chair in the comer .
+∃ NARRATOR[10] NARRATOR[7] NARRATOR[3] REF1[2] EVENT[5] EVENT[8] EVENT[12] ENTITY[6] ENTITY[9] ENTITY[1] ENTITY[4] ENTITY[11] (
+ table(ENTITY[4]) ∧
+  comer(ENTITY[11]) ∧
+   REF1[2] = it ∧
+    is_cover_of(ENTITY[1], REF1[2]) ∧
+     NARRATOR[3] = i ∧
+      NARRATOR[7] = my{NARRATOR[3]} ∧
+       is_sherry_POS(ENTITY[6], NARRATOR[7]) ∧
+        NARRATOR[10] = my{NARRATOR[3]} ∧
+         is_chair_POS(ENTITY[9], NARRATOR[10]) ∧
+          past(EVENT[5]) ∧
+           past(EVENT[8]) ∧
+            TMP_then(EVENT[12]) ∧
+             ADV_quietly(EVENT[12]) ∧
+              past(EVENT[12]) ∧
+               CONJ_and(approached(EVENT[5], NARRATOR[3], ENTITY[4]) ∧ under(EVENT[5]) = ENTITY[1],
+                tasted(EVENT[8], NARRATOR[3], ENTITY[6]) ∧ under(EVENT[8]) = ENTITY[1],
+                returned(EVENT[12], NARRATOR[3]) ∧ in(EVENT[12]) = ENTITY[11] ∧
+                 to(EVENT[12]) = ENTITY[9] ∧ under(EVENT[12]) = ENTITY[1]))
+
+# ::id 206_fiction_JOYCE-1914;AT65-3;NE
+# ::snt Eliza seemed to have fallen into a deep revery .
+∃ ATTRIB[3] EVENT[4] EVENT[1] ENTITY[2] (
+ deep(ATTRIB[3]) ∧
+  is_revery_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   past(EVENT[1]) ∧ seemed(EVENT[1], have_fallen(EVENT[4], ELIZA[Eliza]) ∧ into(EVENT[4]) = ENTITY[2]))
+
+# ::id 207_fiction_JOYCE-1914;AT65-4;NE
+# ::snt We waited respectfully for her to break the silence :
+∃ SITUATION[7] ELIZA[3] PRP[2] NARRATOR+AUNT[1] EVENT[5] EVENT[6] ENTITY[4] (
+ silence(ENTITY[4]) ∧
+  NARRATOR+AUNT[1] = we ∧
+   ELIZA[3] = her ∧
+    is_FACT_THAT(PRP[2], break(EVENT[5], ELIZA[3], ENTITY[4])) ∧
+     ADV_respectfully(SITUATION[7]) ∧
+      past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[7], waited(EVENT[6], NARRATOR+AUNT[1]) ∧ PRP(EVENT[6]) = PRP[2]))
+
+# ::id 208_fiction_JOYCE-1914;AT65-5;NE
+# ::snt and after a long pause she said slowly :
+∃ ELIZA[3] ATTRIB[2] EVENT[4] ENTITY[1] (
+ long(ATTRIB[2]) ∧
+  is_pause_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ELIZA[3] = she ∧
+    ADV_slowly(EVENT[4]) ∧ past(EVENT[4]) ∧ said(EVENT[4], ELIZA[3]) ∧ after(EVENT[4]) = ENTITY[1])
+
+# ::id 209_fiction_JOYCE-1914;AT66-1;NE
+# ::snt " It was that chalice he broke ... .
+∃ PRIEST[4] EVENT[5] EVENT[6] ENTITY[2] ENTITY[1] (
+ chalice(ENTITY[1]) ∧
+  PRIEST[4] = he ∧
+   broke(EVENT[5], PRIEST[4], ENTITY[2]) ∧
+    past(EVENT[5]) ∧ past(EVENT[6]) ∧ copula(EVENT[6], ENTITY[2], ENTITY[1]))
+
+# ::id 210_fiction_JOYCE-1914;AT66-2;NE
+# ::snt That was the beginning of it .
+∃ REF1[3] EVENT[4] ENTITY[2] ENTITY[1] (REF1[3] = it ∧ is_beginning_of(ENTITY[2], REF1[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 211_fiction_JOYCE-1914;AT66-3;NE
+# ::snt Of course , they say it was all right ,
+∃ ATTRIB[5] REF1[4] PERSONS[2] EVENT[6] EVENT[3] ENTITY[1] (
+ course(ENTITY[1]) ∧
+  PERSONS[2] = they ∧
+   REF1[4] = it ∧
+    all_right(ATTRIB[5]) ∧
+     is_before(EVENT[6], EVENT[3]) ∧
+      say(EVENT[3], PERSONS[2], copula(EVENT[6], REF1[4], ATTRIB[5])) ∧ Of(EVENT[3]) = ENTITY[1])
+
+# ::id 212_fiction_JOYCE-1914;AT66-4;NE
+# ::snt that it contained nothing , I mean .
+∃ REF1[3] ELIZA[1] EVENT[2] (
+ ELIZA[1] = i ∧
+  REF1[3] = it ∧
+   mean(EVENT[2], ELIZA[1],
+    ¬ ∃ EVENT[5] ENTITY[4] (thing(ENTITY[4]) ∧ is_before(EVENT[5], EVENT[2]) ∧ contained(EVENT[5], REF1[3], ENTITY[4]))))
+
+# ::id 213_fiction_JOYCE-1914;AT66-5;NE
+# ::snt But still ... .
+∃ EVENT[1] (ADV_still(EVENT[1]) ∧ xxx(EVENT[1]))
+
+# ::id 214_fiction_JOYCE-1914;AT66-6;NE
+# ::snt They say it was the boy 's fault .
+∃ REF1[3] PERSONS[1] EVENT[6] EVENT[2] ENTITY[4] PERSON[5] (
+ boy(PERSON[5]) ∧
+  PERSONS[1] = they ∧
+   REF1[3] = it ∧
+    is_fault_POS(ENTITY[4], PERSON[5]) ∧
+     is_before(EVENT[6], EVENT[2]) ∧ say(EVENT[2], PERSONS[1], copula(EVENT[6], REF1[3], ENTITY[4])))
+
+# ::id 215_fiction_JOYCE-1914;AT66-7;NE
+# ::snt But poor James was so nervous ,
+∃ ATTRIB[1] EVENT[2] (so_nervous(ATTRIB[1]) ∧ past(EVENT[2]) ∧ copula(EVENT[2], PRIEST[poor_James], ATTRIB[1]))
+
+# ::id 216_fiction_JOYCE-1914;AT66-8;NE
+# ::snt God be merciful to him ! "
+∃ PRIEST[2] ATTRIB[1] EVENT[3] (PRIEST[2] = him ∧ is_merciful_to(ATTRIB[1], PRIEST[2]) ∧ copula(EVENT[3], ENTITY[God], ATTRIB[1]))
+
+# ::id 217_fiction_JOYCE-1914;AT67-1;NE
+# ::snt " And was that it ? " said my aunt .
+∃ NARRATOR[2] EVENT[3] AUNT[1] ENTITY[4] (
+ NARRATOR[2] = my ∧
+  is_aunt_POS(AUNT[1], NARRATOR[2]) ∧
+   past(EVENT[3]) ∧
+    said(EVENT[3], AUNT[1],
+     QUEST(∃ REF1[5] EVENT[6] (REF1[5] = it ∧ is_before(EVENT[6], EVENT[3]) ∧ copula(EVENT[6], ENTITY[4], REF1[5])))))
+
+# ::id 218_fiction_JOYCE-1914;AT67-2;NE
+# ::snt " I heard something .... "
+∃ NARRATOR[1] (NARRATOR[1] = i ∧ SOME ENTITY[2] (thing(ENTITY[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ heard(EVENT[3], NARRATOR[1], ENTITY[2]))))
+
+# ::id 219_fiction_JOYCE-1914;AT68-1;NE
+# ::snt Eliza nodded .
+∃ EVENT[1] (past(EVENT[1]) ∧ nodded(EVENT[1], ELIZA[Eliza]))
+
+# ::id 220_fiction_JOYCE-1914;AT69-1;NE
+# ::snt " That affected his mind , " she said .
+∃ PRIEST[5] ELIZA[1] EVENT[6] EVENT[2] ENTITY[4] ENTITY[3] (
+ ELIZA[1] = she ∧
+  PRIEST[5] = his ∧
+   is_mind_POS(ENTITY[4], PRIEST[5]) ∧
+    is_before(EVENT[6], EVENT[2]) ∧
+     past(EVENT[2]) ∧ said(EVENT[2], ELIZA[1], affected(EVENT[6], ENTITY[3], ENTITY[4])))
+
+# ::id 221_fiction_JOYCE-1914;AT69-2;NE
+# ::snt " After that he began to mope by himself , talking to no one and wandering about by himself .
+∃ PRIEST[5] PRIEST[8] PRIEST[2] EVENT[9] EVENT[7] EVENT[6] ENTITY[1] (
+ PRIEST[2] = he ∧
+  PRIEST[8] = himself{PRIEST[2]} ∧
+   PRIEST[5] = himself{PRIEST[2]} ∧
+    past(EVENT[7]) ∧
+     CONJ_and(began(EVENT[7], PRIEST[2], mope(EVENT[9], PRIEST[2]) ∧ by(EVENT[9]) = PRIEST[8]) ∧
+           After(EVENT[7]) = ENTITY[1],
+      CONJ_and(¬ ∃ EVENT[4] PERSON[3] (one(PERSON[3]) ∧ talking(EVENT[4], PRIEST[2]) ∧ to(EVENT[4]) = PERSON[3]),
+       wandering_about(EVENT[6], PRIEST[2]) ∧ by(EVENT[6]) = PRIEST[5])))
+
+# ::id 222_fiction_JOYCE-1914;AT69-3;NE
+# ::snt So one night he was wanted for to go on a call
+∃ SITUATION[7] PRP[3] PRIEST[2] EVENT[5] EVENT[6] ENTITY[4] TIME[1] (
+ (CD_one(TIME[1]), night(TIME[1])) ∧
+  PRIEST[2] = he ∧
+   call(ENTITY[4]) ∧
+    is_FACT_THAT(PRP[3], go(EVENT[5], PRIEST[2]) ∧ on(EVENT[5]) = ENTITY[4]) ∧
+     ADV_so(SITUATION[7]) ∧
+      past(EVENT[6]) ∧
+       is_FACT_THAT(SITUATION[7],
+        wanted_for(EVENT[6], _, PRIEST[2]) ∧ PRP(EVENT[6]) = PRP[3] ∧
+         is_contained_in(TMP(EVENT[6]), TIME[1])))
+
+# ::id 223_fiction_JOYCE-1914;AT69-4;NE
+# ::snt and they could n't find him anywhere .
+∃ PERSONS[1] (
+ PERSONS[1] = they ∧
+  MD_could(¬ ∃ PRIEST[2] EVENT[3] (PRIEST[2] = him ∧ LOC_anywhere(EVENT[3]) ∧ find(EVENT[3], PERSONS[1], PRIEST[2]))))
+
+# ::id 224_fiction_JOYCE-1914;AT69-5;NE
+# ::snt They looked high up and low down ;
+∃ REF1[1] EVENT[2] (
+ REF1[1] = they ∧
+  CONJ_and(ADV_high_up(EVENT[2]), ADV_low_down(EVENT[2])) ∧ past(EVENT[2]) ∧ looked(EVENT[2], REF1[1]))
+
+# ::id 225_fiction_JOYCE-1914;AT69-6;NE
+# ::snt and still they could n't see a sight of him anywhere .
+∃ SITUATION[6] PERSONS[1] (
+ PERSONS[1] = they ∧
+  ADV_still(SITUATION[6]) ∧
+   is_FACT_THAT(SITUATION[6],
+    MD_could(¬ ∃ PRIEST[3] EVENT[4] ENTITY[2] (
+               PRIEST[3] = him ∧
+                is_sight_of(ENTITY[2], PRIEST[3]) ∧
+                 LOC_anywhere(EVENT[4]) ∧ see(EVENT[4], PERSONS[1], ENTITY[2])))))
+
+# ::id 226_fiction_JOYCE-1914;AT69-7;NE
+# ::snt So then the clerk suggested to try the chapel .
+∃ SITUATION[5] SITUATION[6] EVENT[4] EVENT[2] ENTITY[3] CLERK[1] (
+ clerk(CLERK[1]) ∧
+  chapel(ENTITY[3]) ∧
+   ADV_so(SITUATION[6]) ∧
+    TMP_then(SITUATION[5]) ∧
+     past(EVENT[2]) ∧
+      is_FACT_THAT(SITUATION[6], is_FACT_THAT(SITUATION[5], suggested(EVENT[2], CLERK[1], try(EVENT[4], CLERK[1], ENTITY[3])))))
+
+# ::id 227_fiction_JOYCE-1914;AT69-8;NE
+# ::snt So then they got the keys and opened the chapel
+∃ SITUATION[6] SITUATION[7] PERSONS[1] EVENT[3] EVENT[5] GROUP[2] ENTITY[4] (
+ keys(GROUP[2]) ∧
+  chapel(ENTITY[4]) ∧
+   PERSONS[1] = they ∧
+    ADV_so(SITUATION[7]) ∧
+     ADV_then(SITUATION[6]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[5]) ∧
+        is_FACT_THAT(SITUATION[7],
+         is_FACT_THAT(SITUATION[6], CONJ_and(got(EVENT[3], PERSONS[1], GROUP[2]), opened(EVENT[5], PERSONS[1], ENTITY[4])))))
+
+# ::id 228_fiction_JOYCE-1914;AT69-9;NE
+# ::snt and the clerk and Father O' Rourke and another priest that was there brought in a light for to look for him ... .
+∃ REF1[9] SITUATION[8] ENTITY[7] GROUP[1] EVENT[10] EVENT[11] CLERK[2] (
+ clerk(CLERK[2]) ∧
+  past(EVENT[11]) ∧
+   is_element_of(CLERK[2], GROUP[1]) ∧ is_element_of(ROURKE[Father_O'Rourke], GROUP[1]) ∧
+    ANOTHER EVENT[5] PERSON[3] ((copula(EVENT[5], PERSON[3]) ∧ priest(PERSON[3]) ∧ LOC_there(EVENT[5]) ∧ past(EVENT[5])),
+     is_element_of(PERSON[3], GROUP[1])) ∧
+    light(ENTITY[7]) ∧
+     REF1[9] = him ∧
+      is_FACT_THAT(SITUATION[8], look(EVENT[10], GROUP[1]) ∧ for(EVENT[10]) = REF1[9]) ∧
+       brought(EVENT[11], GROUP[1]) ∧ for(EVENT[11]) = SITUATION[8] ∧ in(EVENT[11]) = ENTITY[7])
+
+# ::id 229_fiction_JOYCE-1914;AT69-10;NE
+# ::snt And what do you think but there he was , sitting up by himself in the dark in his confession-box , wide-awake and laughing-like softly to himself ? "
+∃ ATTRIB[7] ENTITY[6] (
+ dark(ATTRIB[7]) ∧
+  is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   QUEST(∃ SITUATION[16] PRIEST[9] PRIEST[5] PRIEST[13] ATTRIB[12] ATTRIB[11] PRIEST[4] SITUATION[3] PERSONS[2] EVENT[15] EVENT[14] EVENT[14] EVENT[10] EVENT[17] ENTITY[8] ? ENTITY[1] (
+         PERSONS[2] = you ∧
+          PRIEST[4] = he ∧
+           wide-awake(ATTRIB[11]) ∧
+            PRIEST[13] = himself ∧
+             ADV_softly(ATTRIB[12]) ∧ is_laughing-like_to(ATTRIB[12], PRIEST[13]) ∧
+              PRIEST[5] = himself{PRIEST[4]} ∧
+               PRIEST[9] = his{PRIEST[4], PRIEST[5]} ∧
+                is_confession-box_POS(ENTITY[8], PRIEST[9]) ∧
+                 is_FACT_THAT(SITUATION[3],
+                  is_FACT_THAT(SITUATION[16],
+                   CONJ_and(CONJ_and(copula(EVENT[15], PRIEST[4]),
+                         CONJ_and(xxx(EVENT[14], PRIEST[4], ATTRIB[11]),
+                          xxx(EVENT[14], PRIEST[4], ATTRIB[12]))),
+                    sitting_up(EVENT[10], PRIEST[4]) ∧ in(EVENT[10]) = ENTITY[8] ∧
+                     in(EVENT[10]) = ENTITY[6] ∧ by(EVENT[10]) = PRIEST[5]))) ∧
+                  LOC_there(SITUATION[16]) ∧
+                   past(EVENT[15]) ∧
+                    do_think(EVENT[17], PERSONS[2], ENTITY[1]) ∧ but(EVENT[17]) = SITUATION[3])))
+
+# ::id 230_fiction_JOYCE-1914;AT70-1;NE
+# ::snt She stopped suddenly as if to listen .
+∃ SITUATION[5] SITUATION[2] ELIZA[1] EVENT[3] EVENT[4] (
+ ELIZA[1] = she ∧
+  is_FACT_THAT(SITUATION[2], listen(EVENT[3], ELIZA[1])) ∧
+   ADV_suddenly(SITUATION[5]) ∧
+    past(EVENT[4]) ∧ is_FACT_THAT(SITUATION[5], stopped(EVENT[4], ELIZA[1]) ∧ as_if(EVENT[4]) = SITUATION[2]))
+
+# ::id 231_fiction_JOYCE-1914;AT70-2;NE
+# ::snt I too listened ;
+∃ NARRATOR[1] EVENT[2] (NARRATOR[1] = i ∧ ADV_too(EVENT[2]) ∧ past(EVENT[2]) ∧ listened(EVENT[2], NARRATOR[1]))
+
+# ::id 232_fiction_JOYCE-1914;AT70-3;NE
+# ::snt but there was no sound in the house :
+∃ ENTITY[2] (
+ house(ENTITY[2]) ∧
+  ¬ ∃ EVENT[3] ENTITY[1] (is_sound_in(ENTITY[1], ENTITY[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1])))
+
+# ::id 233_fiction_JOYCE-1914;AT70-4;NE
+# ::snt and I knew that the old priest was lying still in his coffin as we had seen him , solemn and truculent in death , an idle chalice on his breast .
+∃ SITUATION[19] ATTRIB[10] ATTRIB[9] PRIEST[16] ATTRIB[14] PRIEST[8] NARRATOR+AUNT[7] PRIEST[6] NARRATOR[1] ATTRIB[4] EVENT[17] EVENT[11] EVENT[11] EVENT[18] EVENT[2] ENTITY[15] ENTITY[13] ENTITY[12] ENTITY[5] PRIEST[3] (
+ old(ATTRIB[4]) ∧
+  is_priest_ATTRIBUTE(PRIEST[3], ATTRIB[4]) ∧
+   NARRATOR[1] = i ∧
+    PRIEST[6] = his{PRIEST[3]} ∧
+     is_coffin_POS(ENTITY[5], PRIEST[6]) ∧
+      NARRATOR+AUNT[7] = we ∧
+       PRIEST[8] = him{PRIEST[3]} ∧
+        death(ENTITY[12]) ∧
+         idle(ATTRIB[14]) ∧
+          PRIEST[16] = his{PRIEST[8], PRIEST[3]} ∧
+           is_breast_POS(ENTITY[15], PRIEST[16]) ∧
+            is_chalice_on(ENTITY[13], ENTITY[15]) ∧ is_chalice_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+             solemn(ATTRIB[9]) ∧
+              truculent(ATTRIB[10]) ∧
+               ADV_still(SITUATION[19]) ∧
+                is_before(EVENT[17], EVENT[2]) ∧
+                 is_before(EVENT[18], EVENT[2]) ∧
+                  past(EVENT[2]) ∧
+                   knew(EVENT[2], NARRATOR[1],
+                    is_FACT_THAT(SITUATION[19],
+                     CRD_as(CONJ_and(had_seen(EVENT[17], NARRATOR+AUNT[7], PRIEST[8]) ∧
+                                ADV(EVENT[17]) = ENTITY[13] ∧ in(EVENT[17]) = ENTITY[12],
+                           CONJ_and(xxx(EVENT[11], PRIEST[8], ATTRIB[9]),
+                            xxx(EVENT[11], PRIEST[8], ATTRIB[10]))),
+                      was_lying(EVENT[18], PRIEST[3]) ∧ in(EVENT[18]) = ENTITY[5]))))
+
+# ::id 234_fiction_JOYCE-1914;AT71-1;NE
+# ::snt Eliza resumed :
+∃ EVENT[1] (past(EVENT[1]) ∧ resumed(EVENT[1], ELIZA[Eliza]))
+
+# ::id 235_fiction_JOYCE-1914;AT72-1;NE
+# ::snt " Wide-awake and laughing-like to himself ... .
+∃ PRIEST[3] ATTRIB[2] ATTRIB[1] EVENT[4] EVENT[4] (
+ wide-awake(ATTRIB[1]) ∧
+  PRIEST[3] = himself ∧
+   is_laughing-like_to(ATTRIB[2], PRIEST[3]) ∧
+    CONJ_and(xxx(EVENT[4], _, ATTRIB[1]), xxx(EVENT[4], _, ATTRIB[2])))
+
+# ::id 236_fiction_JOYCE-1914;AT72-2;NE
+# ::snt So then , of course , when they saw that , that made them think that there was something gone wrong with him .... "
+∃ SITUATION[15] SITUATION[16] SITUATION[17] PERSONS[9] PERSONS[3] EVENT[5] EVENT[10] EVENT[8] ENTITY[1] ENTITY[4] ENTITY[7] (
+ course(ENTITY[1]) ∧
+  PERSONS[3] = they ∧
+   PERSONS[9] = them ∧
+    ADV_so(SITUATION[17]) ∧
+     ADV_then(SITUATION[16]) ∧
+      is_TMP(EVENT[5], SITUATION[15]) ∧
+       past(EVENT[5]) ∧
+        saw(EVENT[5], PERSONS[3], ENTITY[4]) ∧
+         past(EVENT[8]) ∧
+          is_FACT_THAT(SITUATION[17],
+           is_FACT_THAT(SITUATION[16],
+            is_FACT_THAT(SITUATION[15],
+             made(EVENT[8], ENTITY[7],
+              think(EVENT[10], PERSONS[9],
+               SOME ENTITY[11] (thing(ENTITY[11]),
+                ∃ PRIEST[13] ATTRIB[12] EVENT[14] (
+                 PRIEST[13] = him ∧
+                  is_wrong_with(ATTRIB[12], PRIEST[13]) ∧
+                   is_before(EVENT[14], EVENT[10]) ∧ was_gone(EVENT[14], ENTITY[11], ATTRIB[12]))))) ∧
+              of(EVENT[8]) = ENTITY[1]))))

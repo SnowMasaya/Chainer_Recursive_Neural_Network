@@ -1,0 +1,233 @@
+# ::id 1_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 東日本大震災
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-東日本大震災 / ENTITY
+             :name ( n-2 / name
+                    :op1 "東日本大震災")))
+
+# ::id 2_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ／ 復興応援職員 、 派遣継続 訴え
+( EVENT-3 / EVENT
+      :LINK ( GROUP-1 / AND
+             :op1 ( ENTITY-復興応援職員 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "復興応援職員"))
+             :op2 ( GROUP-1 / AND
+                    :op1 ( ENTITY-2 / 派遣継続_訴え)
+                    :op2 ENTITY-5)))
+
+# ::id 3_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ／ 岩手県 と 県教委 、
+( EVENT-2 / EVENT
+      :LINK ( GROUP-1 / CONJ_と
+             :op1 ( ENTITY-岩手県 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "岩手県"))
+             :op2 ( ENTITY-県教委 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "県教委"))))
+
+# ::id 4_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 盛岡で２月シンポジウム
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-盛岡で２月シンポジウム / ENTITY
+             :name ( n-2 / name
+                    :op1 "盛岡で２月シンポジウム")))
+
+# ::id 5_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 岩手県 と 県教委 は ２ 月 ６、７ の 両日 、 盛岡市 で 、 震災 から の 復旧・復興 の ため に 全国 から 派遣 さ れ て いる 自治体職員 が 、 自ら の 仕事 の 成果 や 仕事 を 通し て 見え た 復興 の 課題 を 報告 する シンポジウム を 開く 。
+( EVENT-23 / 開く
+      :ARG0 ( GROUP-1 / CONJ_と
+             :op1 ( ENTITY-岩手県 / ENTITY
+                    :name ( n-29 / name
+                           :op1 "岩手県"))
+             :op2 ( ENTITY-県教委 / ENTITY
+                    :name ( n-30 / name
+                           :op1 "県教委")))
+      :ARG1 ( SITUATION-4 / シンポジウム
+             :THAT ( EVENT-22 / 報告する.0
+                    :ARG0 ( ENTITY-5 / 自治体職員
+                           :ARG1-of ( EVENT-11 / 派遣する.0_て_いる
+                                  :から ( ENTITY-10 / 国)
+                                  :に ( ENTITY-7 / ため
+                                         :の ( ENTITY-8 / 復旧.復興
+                                                :から_の ( ENTITY-9 / 震災)))))
+                    :ARG1 ( CONJ-28 / CONJ_や
+                           :op1 ( GROUP-12 / AND
+                                  :op3 ( ENTITY-13 / 成果
+                                         :の ( ENTITY-14 / 仕事
+                                                :の ( ENTITY-15 / ENTITY
+                                                       :namely ( PICK-25 / or
+                                                              :op1 ENTITY-13
+                                                              :op2 ENTITY-5
+                                                              :op3 ENTITY-7
+                                                              :op4 ENTITY-8
+                                                              :op5 ENTITY-9
+                                                              :op6 ENTITY-盛岡市
+                                                              :op7 ENTITY-3
+                                                              :op8 ENTITY-県教委
+                                                              :op9 ENTITY-岩手県))))
+                                  :op4 ENTITY-33
+                                  :op1 ENTITY-15
+                                  :op2 ENTITY-14)
+                           :op2 ( GROUP-32 / AND
+                                  :op5 ( ENTITY-16 / 課題
+                                         :の ( ENTITY-21 / 復興))
+                                  :op1 ( ENTITY-18 / 仕事)
+                                  :op2 ENTITY-21
+                                  :op3 ( CONJ-27 / CONJ_te
+                                         :op1 ( EVENT-19 / 通し_て
+                                                :ARG0 ENTITY-16
+                                                :ARG1 ENTITY-18)
+                                         :op2 ( EVENT-20 / 見え_た
+                                                :ARG0 ENTITY-16))
+                                  :op4 ( EVENT-20 / past)))))
+      :で ( ENTITY-盛岡市 / ENTITY
+             :name ( n-31 / name
+                    :op1 "盛岡市"))
+      :TMP ( TIME-2 / 日
+             :の ( ENTITY-3 / CD_２_月_６ 、 ７)))
+
+# ::id 6_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 震災 から 間もなく ３ 年 に なる の を 前 に 、 応援職員 の 必要性 を 確認 し 、 継続的 な 支援 を 訴える の が 狙い 。
+( CONJ-20 / AND
+      :op1 ( EVENT-8 / EVENT
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( SITUATION-2 / の
+                    :THAT ( EVENT-5 / なる
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-4 / CD_３_年)
+                           :から ( ENTITY-3 / 震災)
+                           :MOD ( mod-19 / 間もなく)))
+             :に ( ENTITY-7 / 前))
+      :op2 ( EVENT-17 / 狙い
+             :ARG0 ( SITUATION-9 / の
+                    :THAT ( EVENT-16 / 訴える
+                           :ARG0 ( ENTITY-10 / ENTITY
+                                  :namely ( PICK-18 / or
+                                         :op1 ENTITY-7
+                                         :op2 ENTITY-3
+                                         :op3 ENTITY-4)
+                                  :ARG0-of ( EVENT-13 / 確認する.0
+                                         :ARG1 ( ENTITY-11 / 必要性
+                                                :の ( ENTITY-12 / 応援職員))))
+                           :ARG1 ( ENTITY-14 / 支援
+                                  :ATTRIBUTE ( ATTRIB-15 / 継続的_な))))))
+
+# ::id 7_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ６ 日 は 県民会館 など 市内 ５ カ所 で 、 ５０～２００ 人 に 分かれ 五 つ の 分科会 を 開く 。
+( EVENT-11 / 開く
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( CONJ-12 / CONJ_te
+                    :op1 ( EVENT-6 / で
+                           :ARG1 ( ENTITY-3 / 市内
+                                  :MSR ( DEGREE-5 / CD_５_カ所)
+                                  :など ( ENTITY-4 / 県民会館)))
+                    :op2 ( EVENT-8 / 分かれ
+                           :に ( ENTITY-7 / CD_５０ ～ ２００_人))))
+      :ARG1 ( ENTITY-9 / 分科会
+             :の ( ENTITY-10 / CD_五_つ))
+      :TMP ( ENTITY-2 / CD_６_日))
+
+# ::id 8_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 応援職員 が 防潮堤 の 整備 や 埋蔵文化財調査 など を 報告 する 。
+( EVENT-7 / 報告する.0
+      :ARG0 ( ENTITY-1 / 応援職員)
+      :ARG1 ( ENTITY-2 / ENTITY
+             :など ( CONJ-8 / CONJ_や
+                    :op1 ( GROUP-3 / AND
+                           :op1 ( ENTITY-5 / 防潮堤)
+                           :op2 ( ENTITY-4 / 整備
+                                  :の ENTITY-5)
+                           :op3 ENTITY-10)
+                    :op2 ( GROUP-9 / AND
+                           :op1 ( ENTITY-6 / 埋蔵文化財調査)
+                           :op2 ENTITY-11))))
+
+# ::id 9_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ７ 日 は 岩手教育会館 で 、 派遣 を 終え た 大阪府職員 が 、 その 経験 を 府 の 危機管理 に どの よう に 生かし て いる か を 紹介 する 。
+( EVENT-14 / 紹介する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :を ( SITUATION-4 / か
+             :THAT ( EVENT-13 / 生かし_て_いる
+                    :ARG0 ( ENTITY-5 / 大阪府職員
+                           :ARG0-of ( EVENT-8 / 終え_た
+                                  :ARG1 ( ENTITY-7 / 派遣)
+                                  :MOD ( mod-17 / past)))
+                    :ARG1 ( ENTITY-9 / 経験)
+                    :に ( ENTITY-12 / よう)
+                    :に ( ENTITY-10 / 危機管理
+                           :の ( ENTITY-11 / 府))
+                    :domain-of ( QUEST-16 / QUEST)))
+      :で ( ENTITY-3 / 岩手教育会館)
+      :TMP ( ENTITY-2 / CD_７_日))
+
+# ::id 10_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 達増拓也知事 は 「 応援職員 なく し て 復興 は 進ま ない 。 復興事業 は これ から ピーク を 迎える 。 あらためて 全国 に 支援 を お願い し たい 」 と 話し た 。
+( EVENT-1 / 話し_た
+      :ARG0 ( ENTITY-達増拓也知事 / ENTITY
+             :name ( n-22 / name
+                    :op1 "達増拓也知事"))
+      :THAT ( CONJ-24 / AND
+             :op1 ( CONJ-18 / CONJ_te
+                    :op1 ( EVENT-3 / し_て
+                           :ARG0 ( ENTITY-2 / 応援職員)
+                           :MOD ( mod-19 / なく))
+                    :op2 ( EVENT-6 / 進ま
+                           :ARG0 ( ENTITY-5 / 復興)
+                           :domain-of ( NEG-17 / NEG)))
+             :op2 ( EVENT-9 / 迎える
+                    :ARG0 ( ENTITY-復興事業 / ENTITY
+                           :name ( n-23 / name
+                                  :op1 "復興事業"))
+                    :ARG1 ( ENTITY-8 / ピーク)
+                    :から ( PICK-14 / or
+                           :op1 ENTITY-2
+                           :op2 ENTITY-5
+                           :op3 ENTITY-達増拓也知事))
+             :op3 ( EVENT-12 / お願いする.0_たい
+                    :ARG1 ( ENTITY-10 / 支援
+                           :に ( ENTITY-11 / 国))
+                    :MOD ( mod-20 / あらためて)))
+      :MOD ( mod-21 / past))
+
+# ::id 11_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 定員 ６００ 人 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 定員)
+      :ARG1 ( ENTITY-2 / CD_６００_人))
+
+# ::id 12_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 参加無料 だ が 、 事前申し込み が 必要 。
+( CONJ-6 / CONJ_が
+      :op1 ( EVENT-3 / だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 参加無料))
+      :op2 ( EVENT-5 / 必要
+             :ARG0 ( ENTITY-4 / 事前申し込み)))
+
+# ::id 13_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 県 の ホームページ から 申込書 を ダウンロード し 、 １ 月 ３１ 日 まで に メール か ファクス で 申し込む 。
+( EVENT-10 / 申し込む
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / ダウンロードする.0
+                    :ARG1 ( ENTITY-4 / 申込書)
+                    :から ( ENTITY-2 / ホームページ
+                           :の ( ENTITY-3 / 県))))
+      :で ( ENTITY-7 / ファクス
+             :LINK ( ENTITY-8 / ENTITY
+                    :OF ( ENTITY-9 / メール)))
+      :まで_に ( ENTITY-6 / CD_１_月_３１_日))
+
+# ::id 14_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 連絡先 は 県秘書広報室調査監 ０１９（６２９）５５０３ 。
+( EVENT-2 / EVENT
+      :ARG0 ( ENTITY-1 / 連絡先)
+      :ARG1 ( ENTITY-県秘書広報室調査監_０１９ （ ６２９ ） ５５０３ / ENTITY
+             :name ( n-3 / name
+                    :op1 "県秘書広報室調査監_０１９ （ ６２９ ） ５５０３")))

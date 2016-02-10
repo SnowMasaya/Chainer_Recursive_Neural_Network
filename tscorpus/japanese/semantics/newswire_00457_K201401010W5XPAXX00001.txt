@@ -1,0 +1,662 @@
+# ::id 1_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ご当地バンザイ
+∃ EVENT[2] ENTITY[1] (ご当地バンザイ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ／ 食べる
+∃ EVENT[1] 食べる(EVENT[1])
+
+# ::id 3_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ／ 郷土 の 味 うまい 物 ばかり
+∃ EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[1] (
+ 郷土(ENTITY[6]) ∧
+  の_味(ENTITY[6], ENTITY[5]) ∧
+   うまい(EVENT[7], ENTITY[3], ENTITY[5]) ∧ 物(ENTITY[3]) ∧
+    ばかり ENTITY[2] (ENTITY[2] = ENTITY[3], LINK(ENTITY[2], ENTITY[1])) ∧ xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 4_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 東北 ６ 県 の 各地 に 根 を 張る 「 ご当地 の 味 」 は 、 競い合う よう に し て 広がり を 見せ て いる 。
+∃ SITUATION[7] ENTITY[10] EVENT[8] EVENT[9] EVENT[11] EVENT[5] ENTITY[4] ENTITY[6] ENTITY[1] (
+ 根(ENTITY[4]) ∧
+  ご当地(ENTITY[6]) ∧
+   各 ENTITY[3] (の_地(ENTITY[東北_６_県], ENTITY[3]), 張る(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+    の_味(ENTITY[6], ENTITY[1]) ∧
+    よう(SITUATION[7], 競い合う(EVENT[8], ENTITY[1])) ∧
+     広がり(ENTITY[10]) ∧ CONJ_te(し_て(EVENT[9], ENTITY[1], SITUATION[7]), 見せ_て_いる(EVENT[11], ENTITY[1], ENTITY[10])))
+
+# ::id 5_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt この ページ で は 数ある 郷土料理 や 名物食品 の 中 から 取材班 が 厳選 し た ユニーク で 、 愛す べき お薦め の 味 ２０ 品 を マップ に 載せ 、 紹介 する 。
+∃ ENTITY[14] ENTITY[1] EVENT[12] EVENT[15] EVENT[16] EVENT[19] EVENT[20] GROUP[6] ENTITY[11] ENTITY[5] ENTITY[17] ENTITY[18] ENTITY[3] ENTITY[2] (
+ ページ(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ EVENT[9] ENTITY[7] (数ある(EVENT[9], ENTITY[7]) ∧ 郷土料理(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ENTITY[10] (名物食品(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[6]))) ∧
+    の_中(GROUP[6], ENTITY[5]) ∧
+     取材班(ENTITY[11]) ∧
+      ENTITY[14] = *pro*{ENTITY[5], ENTITY[11], ENTITY[1], ENTITY[2]} ∧
+       お薦め(ENTITY[17]) ∧
+        (CD_２０_品(ENTITY[3]),
+         厳選する.0_た(EVENT[12], ENTITY[11], ENTITY[3]) ∧ から(EVENT[12]) = ENTITY[5] ∧
+          CONJ_te(ユニーク_で(EVENT[15], ENTITY[14], ENTITY[3]), 愛す_べき(EVENT[16], ENTITY[14], ENTITY[3])) ∧
+           の_味(ENTITY[17], ENTITY[3])) ∧
+         マップ(ENTITY[18]) ∧
+          past(EVENT[12]) ∧
+           載せ(EVENT[19], ENTITY[3]) ∧ に(EVENT[19]) = ENTITY[18] ∧
+            紹介する.0(EVENT[20], ENTITY[1], ENTITY[3]) ∧ で(EVENT[20]) = ENTITY[2])
+
+# ::id 6_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ◎ 「 ご当地 」 の 逸品探訪
+∃ EVENT[2] ENTITY[1] (の_逸品探訪(ENTITY[ご当地], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 7_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ／ 地域性 、 意外性 に 舌鼓
+∃ ENTITY[1] EVENT[5] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[3] (地域性(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (意外性(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   舌鼓(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = GROUP[2])
+
+# ::id 8_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 河北新報社生活文化部 の 記者 ３ 人 は 、 究極 の 「 ご当地 の 味 」 を 探し 、 各地 を 歩き 、 食べ比べ た 。
+∃ EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ (CD_３_人(ENTITY[1]), の_記者(ENTITY[河北新報社生活文化部], ENTITY[1])) ∧
+  究極(ENTITY[3]) ∧
+   ご当地(ENTITY[4]) ∧
+    の_味(ENTITY[4], ENTITY[2]) ∧ の__味(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[8]) ∧
+      探し(EVENT[5], ENTITY[1], ENTITY[2]) ∧
+       各 ENTITY[6] (地(ENTITY[6]), ∃ EVENT[7] 歩き(EVENT[7], ENTITY[1], ENTITY[6])) ∧ 食べ比べ_た(EVENT[8], ENTITY[1]))
+
+# ::id 9_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt Ｙ記者 は 「 どんこボール （ 相馬市 ） の すまし汁 に は 物語 が ある 」 と 、 ひとくさり 。
+∃ EVENT[4] EVENT[1] ENTITY[3] ENTITY[2] (
+ namely_-ENTITY-(ENTITY[相馬市], ENTITY[どんこボール]) ∧
+  の_すまし汁(ENTITY[どんこボール], ENTITY[2]) ∧
+   物語(ENTITY[3]) ∧ ひとくさり(EVENT[1], ENTITY[Ｙ記者], ある(EVENT[4], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2]))
+
+# ::id 10_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 朝 の ドラマ で 有名 に なっ た 久慈市 の まめぶ汁 も 「 やはり 外せ ない 」 と 推す 。
+∃ ENTITY[1] EVENT[7] EVENT[2] ENTITY[6] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  朝(ENTITY[6]) ∧
+   の_ドラマ(ENTITY[6], ENTITY[5]) ∧
+    なっ_た(EVENT[7], ENTITY[3]) ∧ で(EVENT[7]) = ENTITY[5] ∧ の_まめぶ汁(ENTITY[久慈市], ENTITY[3]) ∧
+     ADV_有名_に(EVENT[7]) ∧
+      before(EVENT[2], EVENT[7]) ∧
+       推す(EVENT[2], ENTITY[1], ¬ ∃ EVENT[9] (ADV_やはり(EVENT[9]) ∧ 外せ(EVENT[9], ENTITY[3]))))
+
+# ::id 11_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 黒糖 の 甘み と スープ の 塩味 が 調和 し 、 意外性 も 楽しめる 。 おいしく 食べ よう と 工夫 し た 人たち の 思い が 伝わっ て くる 」 と 評価 する 。
+∃ ENTITY[16] ENTITY[3] ENTITY[1] EVENT[9] EVENT[11] EVENT[15] EVENT[19] EVENT[2] GROUP[4] ENTITY[10] ENTITY[13] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   CONJ_と(∃ ENTITY[6] ENTITY[5] (黒糖(ENTITY[6]) ∧ の_甘み(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[8] ENTITY[7] (スープ(ENTITY[8]) ∧ の_塩味(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+    意外性(ENTITY[10]) ∧
+     ENTITY[16] = *pro*{ENTITY[13], ENTITY[12], ENTITY[10], ENTITY[1]} ∧
+      工夫する.0_た(EVENT[15], ENTITY[13], MD_よう(∃ EVENT[17] (ADV_おいしく(EVENT[17]) ∧ 食べ(EVENT[17], ENTITY[16])))) ∧
+       人たち(ENTITY[13]) ∧
+       の_思い(ENTITY[13], ENTITY[12]) ∧
+        before(EVENT[2], EVENT[15]) ∧
+         評価する.0(EVENT[2], ENTITY[1],
+          調和する.0(EVENT[9], GROUP[4]) ∧ 楽しめる(EVENT[11], ENTITY[3], ENTITY[10]) ∧ 伝わっ_て_くる(EVENT[19], ENTITY[12])))
+
+# ::id 12_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt お好み焼き を 割り箸 に 巻き付け て 食べやすく し た 山形県 の 「 どんどん焼き 」 に ハマっ た の は Ｋ記者 。
+∃ ENTITY[4] ENTITY[2] SITUATION[1] EVENT[7] EVENT[8] EVENT[9] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[10] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2]} ∧
+   お好み焼き(ENTITY[5]) ∧
+    割り箸(ENTITY[6]) ∧
+     CONJ_te(巻き付け_て(EVENT[7], ENTITY[4], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6],
+      食べやすくする.0_た(EVENT[8], ENTITY[4], ENTITY[どんどん焼き])) ∧
+      の_xxx(ENTITY[山形県], ENTITY[どんどん焼き]) ∧
+       の(SITUATION[1], ハマっ_た(EVENT[9], ENTITY[2]) ∧ に(EVENT[9]) = ENTITY[どんどん焼き]) ∧
+        Ｋ記者(ENTITY[10]) ∧ past(EVENT[8]) ∧ past(EVENT[9]) ∧ xxx(EVENT[11], SITUATION[1], ENTITY[10]))
+
+# ::id 13_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 子ども の ころ 、 駄菓子屋 で 食べ た よう な ほっと する 味 」 と 懐かしむ 。
+∃ ENTITY[7] SITUATION[6] ENTITY[3] ENTITY[1] EVENT[11] EVENT[12] EVENT[14] EVENT[15] EVENT[2] ENTITY[9] ENTITY[10] TIME[8] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ENTITY[7] = *pro*{ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+    子ども(ENTITY[9]) ∧
+     の_ころ(ENTITY[9], TIME[8]) ∧
+      駄菓子屋(ENTITY[10]) ∧
+       よう(SITUATION[6],
+        食べ_た(EVENT[11], ENTITY[7]) ∧ で(EVENT[11]) = ENTITY[10] ∧
+         is_contained_in(時間(EVENT[11]), TIME[8])) ∧
+        な(EVENT[12], ENTITY[4], SITUATION[6]) ∧ ほっとする.0(EVENT[14], ENTITY[4]) ∧ 味(ENTITY[4]) ∧
+         before(EVENT[2], EVENT[11]) ∧ 懐かしむ(EVENT[2], ENTITY[1], xxx(EVENT[15], ENTITY[3], ENTITY[4])))
+
+# ::id 14_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 高価 な 食材 は 使っ て おら ず 、 「 家庭 で 気軽 に 作れる の も いい です ね 」 。
+∃ ENTITY[6] SITUATION[5] ENTITY[1] ATTRIB[3] EVENT[8] EVENT[10] ENTITY[7] ENTITY[2] (
+ 高価_な(ATTRIB[3]) ∧
+  ATTRIBUTE_食材(ATTRIB[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[2]} ∧
+     家庭(ENTITY[7]) ∧
+      の(SITUATION[5], 作れる(EVENT[8], ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[7]) ∧
+       ADV_気軽_に(EVENT[8]) ∧ CONJ_te(¬ ∃ EVENT[4] 使っ_て_おら(EVENT[4], ENTITY[2]), いい_です(EVENT[10], SITUATION[5])))
+
+# ::id 15_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt Ｍ記者 の お気に入り は 仙台市 の 「 マーボー焼きそば 」 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ Ｍ記者(ENTITY[2]) ∧
+  の_お気に入り(ENTITY[2], ENTITY[1]) ∧ の_xxx(ENTITY[仙台市], ENTITY[マーボー焼きそば]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[マーボー焼きそば]))
+
+# ::id 16_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 焼き目 が 付き 、 ぱりぱり と し た 歯触り の めん に マーボー豆腐 を かけ た 。
+∃ ATTRIB[7] ENTITY[1] EVENT[6] EVENT[8] EVENT[10] ENTITY[5] ENTITY[3] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  焼き目(ENTITY[5]) ∧
+   ADV_ぱりぱり(ATTRIB[7]) ∧
+    付き(EVENT[6], ENTITY[5]) ∧ し_た(EVENT[8], ENTITY[3]) ∧ と(EVENT[8]) = ATTRIB[7] ∧
+     歯触り(ENTITY[3]) ∧
+     の_めん(ENTITY[3], ENTITY[2]) ∧
+      マーボー豆腐(ENTITY[9]) ∧
+       past(EVENT[8]) ∧
+        past(EVENT[10]) ∧ かけ_た(EVENT[10], ENTITY[1], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[2])
+
+# ::id 17_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 マーボー が からん だ 麺 は 絶品 。 豆腐 を 使っ て ヘルシー な の も ありがたい 」 と 話し た 。
+∃ ENTITY[11] ENTITY[10] SITUATION[9] ENTITY[1] EVENT[8] EVENT[13] EVENT[14] EVENT[15] EVENT[2] ENTITY[7] ENTITY[12] EVENT[6] ENTITY[5] ENTITY[3] (
+ マーボー(ENTITY[5]) ∧
+  からん_だ(EVENT[6], ENTITY[5], ENTITY[3]) ∧ 麺(ENTITY[3]) ∧
+   before(EVENT[2], EVENT[6]) ∧
+    ENTITY[1] = *pro* ∧
+     絶品(ENTITY[7]) ∧
+      ENTITY[10] = *pro*{ENTITY[3], ENTITY[5], ENTITY[7], ENTITY[1]} ∧
+       ENTITY[11] = *pro*{ENTITY[10], ENTITY[3], ENTITY[5], ENTITY[7], ENTITY[1]} ∧
+        豆腐(ENTITY[12]) ∧
+         の(SITUATION[9], CONJ_te(使っ_て(EVENT[13], ENTITY[11], ENTITY[12]), ヘルシー_な(EVENT[14], ENTITY[10]))) ∧
+          past(EVENT[2]) ∧
+           話し_た(EVENT[2], ENTITY[1], xxx(EVENT[8], ENTITY[3], ENTITY[7]) ∧ ありがたい(EVENT[15], SITUATION[9])))
+
+# ::id 18_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 全国 の 地域グルメ の 決戦 の 場 「 Ｂ－１グランプリ 」 で も 昨年 、 東北 から の 出品料理 が 上位 に 多数 食い込む など 勢い は 止まら ない 。
+∃ SITUATION[5] EVENT[10] ENTITY[4] ENTITY[2] ENTITY[8] ENTITY[7] TIME[6] ENTITY[1] ENTITY[11] (
+ 勢い(ENTITY[11]) ∧
+  全 ENTITY[3] (国(ENTITY[3]), の_地域グルメ(ENTITY[3], ENTITY[2])) ∧
+   決戦(ENTITY[4]) ∧
+    の_Ｂ－１グランプリ(ENTITY[4], ENTITY[1]) ∧ の__Ｂ－１グランプリ(ENTITY[2], ENTITY[1]) ∧
+     の_場(ENTITY[4], ENTITY[1]) ∧ の__場(ENTITY[2], ENTITY[1]) ∧
+     昨年(TIME[6]) ∧
+      から_の_出品料理(ENTITY[東北], ENTITY[7]) ∧
+       上位(ENTITY[8]) ∧
+        FACT(SITUATION[5],
+         多数 ENTITY[9] (ENTITY[9] = ENTITY[7],
+          食い込む(EVENT[10], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[8] ∧
+           is_contained_in(時間(EVENT[10]), TIME[6]))) ∧
+         ¬ ∃ EVENT[12] (
+               止まら(EVENT[12], ENTITY[11]) ∧
+                など(EVENT[12]) = SITUATION[5] ∧ で(EVENT[12]) = ENTITY[1]))
+
+# ::id 19_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ６ 県 の 名物 を 集め て 販売 する 仙台市青葉区 の 「 東北ろっけんパーク 」 に は 、 各地 の 団体 が 積極的 に 出店 し 、 にぎわい を 見せる 。
+∃ EVENT[8] EVENT[11] ENTITY[10] ENTITY[6] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ CD_６_県(ENTITY[3]) ∧
+  の_名物(ENTITY[3], ENTITY[2]) ∧
+   CONJ_te(集め_て(EVENT[4], ENTITY[東北ろっけんパーク], ENTITY[2]), 販売する.0(EVENT[5], ENTITY[東北ろっけんパーク])) ∧
+    の_xxx(ENTITY[仙台市青葉区], ENTITY[東北ろっけんパーク]) ∧
+     各 ENTITY[7] (地(ENTITY[7]), の_団体(ENTITY[7], ENTITY[6])) ∧
+      にぎわい(ENTITY[10]) ∧
+       ADV_積極的_に(EVENT[8]) ∧
+        出店する.0(EVENT[8], ENTITY[6]) ∧ 見せる(EVENT[11], ENTITY[6], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[東北ろっけんパーク])
+
+# ::id 20_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt パーク の 営業 を 統括 する 氏家正臣さん （ ５０ ） は 「 すぐ 食べ られる 秋田 の バター餅 など が 大ヒット し て いる 」 と 紹介 。
+∃ ENTITY[8] ENTITY[7] EVENT[10] EVENT[12] EVENT[6] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ パーク(ENTITY[4]) ∧
+  の_営業(ENTITY[4], ENTITY[3]) ∧
+   統括する.0(EVENT[5], ENTITY[氏家正臣さん], ENTITY[3]) ∧
+    CD_５０(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[氏家正臣さん]) ∧
+      ADV_すぐ(EVENT[10]) ∧
+       食べ_られる(EVENT[10], ENTITY[8]) ∧ の_バター餅(ENTITY[秋田], ENTITY[8]) ∧
+        など(ENTITY[8], ENTITY[7]) ∧ 紹介(EVENT[6], ENTITY[氏家正臣さん], 大ヒットする.0_て_いる(EVENT[12], ENTITY[7])))
+
+# ::id 21_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 人気 が 出 そう な 物産 は たくさん ある 。 まだまだ 隠れ て いる 東北 の 食 の 魅力 を もっと 発信 し て いき たい 」 と 意気 込ん で いる 。
+∃ ENTITY[9] ENTITY[1] EVENT[8] EVENT[12] EVENT[15] EVENT[2] ENTITY[14] ENTITY[10] ENTITY[5] ENTITY[3] (
+ 人気(ENTITY[5]) ∧
+  MD_そう(∃ EVENT[6] 出_な(EVENT[6], ENTITY[5], ENTITY[3])) ∧ 物産(ENTITY[3]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[9] = *pro*{ENTITY[3], ENTITY[5], ENTITY[1]} ∧
+     の_食(ENTITY[東北], ENTITY[14]) ∧
+      隠れ_て_いる(EVENT[12], ENTITY[10]) ∧ の_魅力(ENTITY[14], ENTITY[10]) ∧
+       ADV_まだまだ(EVENT[12]) ∧
+        ADV_もっと(EVENT[15]) ∧
+         意気_込ん_で_いる(EVENT[2], ENTITY[1],
+          たくさん ENTITY[7] (ENTITY[7] = ENTITY[3], ある(EVENT[8], ENTITY[7])) ∧ 発信する.0_て_いき_たい(EVENT[15], ENTITY[9], ENTITY[10])))
+
+# ::id 22_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 週末 は 人並み が 絶え ない ＝ 昨年 １１ 月
+∃ ENTITY[2] ENTITY[1] (
+ 週末(ENTITY[1]) ∧
+  人並み(ENTITY[2]) ∧ ¬ ∃ EVENT[3] (絶え(EVENT[3], ENTITY[2]) ∧ 時間(EVENT[3]) = ENTITY[1]))
+
+# ::id 23_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ◎ どんこボール （ 相馬 ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[相馬], ENTITY[どんこボール]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[どんこボール])
+
+# ::id 24_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ／ 漁師 の 賄い 、 身・肝一体
+∃ EVENT[4] ENTITY[3] ENTITY[1] ENTITY[2] (
+ 漁師(ENTITY[3]) ∧
+  の_賄い(ENTITY[3], ENTITY[2]) ∧
+   身.肝一体(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[2])
+
+# ::id 25_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 三陸沖 で とれる ドンコ （ エゾイソアイナメ ） は 、 淡泊 な 身 と 濃厚 な 肝 が おいしい 。
+∃ EVENT[9] GROUP[4] EVENT[3] ENTITY[2] (
+ 三陸沖(ENTITY[2]) ∧
+  とれる(EVENT[3], ENTITY[ドンコ]) ∧ で(EVENT[3]) = ENTITY[2] ∧
+   namely_-ENTITY-(ENTITY[エゾイソアイナメ], ENTITY[ドンコ]) ∧
+    CONJ_と(∃ ATTRIB[6] ENTITY[5] (淡泊_な(ATTRIB[6]) ∧ ATTRIBUTE_身(ATTRIB[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ ATTRIB[8] ENTITY[7] (濃厚_な(ATTRIB[8]) ∧ ATTRIBUTE_肝(ATTRIB[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+     おいしい(EVENT[9], GROUP[4]) ∧ TPC(EVENT[9]) = ENTITY[ドンコ])
+
+# ::id 26_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 相馬市 の 漁師ら が 東日本大震災 後 、 「 どんこボール 」 を 開発 し た 。
+∃ EVENT[3] TIME[2] ENTITY[1] (
+ の_漁師ら(ENTITY[相馬市], ENTITY[1]) ∧
+  東日本大震災_後(TIME[2]) ∧
+   past(EVENT[3]) ∧ 開発する.0_た(EVENT[3], ENTITY[1], ENTITY[どんこボール]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 27_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 身 と 肝 を たたき 、 球状 に 丸め て つみれ に し た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] EVENT[9] GROUP[2] ENTITY[6] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ENTITY[3] (身(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (肝(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   球状(ENTITY[6]) ∧
+    つみれ(ENTITY[8]) ∧
+     past(EVENT[9]) ∧
+      たたき(EVENT[5], ENTITY[1], GROUP[2]) ∧
+       CONJ_te(丸め_て(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6],
+        し_た(EVENT[9], ENTITY[1], ENTITY[8])))
+
+# ::id 28_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 サンマ など の すり身 と 違い 、 ふわふわ し た 食感 と 肝 から 出る うま味 が 特長 。 もと は 漁師 の 賄い料理 です 」 と 発案者 の 清昭丸船主菊地基文さん （ ３７ ） は 語る 。
+∃ ENTITY[4] EVENT[8] EVENT[13] EVENT[16] EVENT[18] EVENT[22] EVENT[3] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[15] ENTITY[11] ENTITY[17] ENTITY[9] ENTITY[21] ENTITY[20] ENTITY[2] ENTITY[1] ENTITY[19] (
+ 発案者(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[清昭丸船主菊地基文さん]) ∧
+   CD_３７(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[清昭丸船主菊地基文さん]) ∧
+     もと(ENTITY[19]) ∧
+      ENTITY[4] = *pro*{ENTITY[清昭丸船主菊地基文さん], ENTITY[1], ENTITY[2]} ∧
+       サンマ(ENTITY[7]) ∧
+        など(ENTITY[7], ENTITY[6]) ∧
+         の_すり身(ENTITY[6], ENTITY[5]) ∧
+          し_た(EVENT[13], ENTITY[11]) ∧ 食感(ENTITY[11]) ∧
+           肝(ENTITY[15]) ∧
+            出る(EVENT[16], ENTITY[9]) ∧ から(EVENT[16]) = ENTITY[15] ∧
+             と(EVENT[16]) = ENTITY[11] ∧ うま味(ENTITY[9]) ∧
+             特長(ENTITY[17]) ∧
+              漁師(ENTITY[21]) ∧
+               の_賄い料理(ENTITY[21], ENTITY[20]) ∧
+                ADV_ふわふわ(EVENT[13]) ∧
+                 before(EVENT[3], EVENT[13]) ∧
+                  語る(EVENT[3], ENTITY[清昭丸船主菊地基文さん],
+                   違い(EVENT[8], ENTITY[4]) ∧ と(EVENT[8]) = ENTITY[5] ∧
+                    xxx(EVENT[18], ENTITY[9], ENTITY[17]) ∧ です(EVENT[22], ENTITY[19], ENTITY[20])))
+
+# ::id 29_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 船 で 食事作り を １０ 年 務め た 下積み時代 、 先輩 に 教わっ た 。
+∃ SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] TIME[5] ENTITY[4] ENTITY[3] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  船(ENTITY[3]) ∧
+   食事作り(ENTITY[4]) ∧
+    CD_１０_年(TIME[5]) ∧
+     下積み時代(SITUATION[2],
+      務め_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ is_contained_in(時間(EVENT[6]), TIME[5]) ∧
+       で(EVENT[6]) = ENTITY[3]) ∧
+      先輩(ENTITY[7]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[8]) ∧
+         教わっ_た(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7] ∧ 時間(EVENT[8]) = SITUATION[2])
+
+# ::id 30_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 「 初めて 食べ た 時 、 別 の 魚 か と 思う ほど うまかっ た 」 と 振り返る 。
+∃ ENTITY[9] SITUATION[8] ENTITY[5] SITUATION[4] ENTITY[3] ENTITY[1] EVENT[6] EVENT[10] EVENT[15] EVENT[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ENTITY[5] = *pro*{ENTITY[3], ENTITY[1]} ∧
+    時(SITUATION[4], 食べ_た(EVENT[6], ENTITY[5])) ∧
+     ENTITY[9] = *pro*{ENTITY[3], ENTITY[1]} ∧
+      FACT(SITUATION[8],
+       思う(EVENT[10], ENTITY[9],
+        QUEST(∃ ENTITY[11] EVENT[14] ENTITY[13] ENTITY[12] (
+              ENTITY[11] = *pro*{ENTITY[9], ENTITY[3], ENTITY[1]} ∧
+               別(ENTITY[13]) ∧
+                の_魚(ENTITY[13], ENTITY[12]) ∧ xxx(EVENT[14], ENTITY[11], ENTITY[12]))))) ∧
+       ADV_初めて(EVENT[6]) ∧
+        before(EVENT[2], EVENT[6]) ∧
+         before(EVENT[2], EVENT[15]) ∧
+          振り返る(EVENT[2], ENTITY[1],
+           うまかっ_た(EVENT[15], ENTITY[3]) ∧ ほど(EVENT[15]) = SITUATION[8] ∧ 時間(EVENT[15]) = SITUATION[4]))
+
+# ::id 31_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 福島第１原発事故 の 影響 で 漁 の 自粛 が 続い て い た 昨年 １ 月 、 「 ただ 再開 を 待つ だけでなく 、 被災地 の 負 の イメージ を 払しょく し 、 まちおこし に なる もの を 作ろう 」 と 、 旧知 の 水産仲卸業飯塚哲生さん （ ３０ ） に 製品化 を 提案 。
+∃ SITUATION[23] ENTITY[11] ENTITY[1] EVENT[6] EVENT[13] EVENT[19] EVENT[21] EVENT[22] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[7] ENTITY[12] ENTITY[18] ENTITY[17] ENTITY[16] ENTITY[20] ENTITY[14] ENTITY[9] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  の_影響(ENTITY[福島第１原発事故], ENTITY[3]) ∧
+   漁(ENTITY[5]) ∧
+    の_自粛(ENTITY[5], ENTITY[4]) ∧
+     (CD_１_月(TIME[2]), THAT_昨年(続い_て_い_た(EVENT[6], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[3], TIME[2])) ∧
+      旧知(ENTITY[8]) ∧
+       の_xxx(ENTITY[8], ENTITY[水産仲卸業飯塚哲生さん]) ∧
+        CD_３０(ENTITY[7]) ∧
+         namely_-ENTITY-(ENTITY[7], ENTITY[水産仲卸業飯塚哲生さん]) ∧
+          製品化(ENTITY[9]) ∧
+           ENTITY[11] = *pro*{ENTITY[1], ENTITY[水産仲卸業飯塚哲生さん], ENTITY[9], ENTITY[7], ENTITY[8], ENTITY[福島第１原発事故], ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+            再開(ENTITY[12]) ∧
+             被災地(ENTITY[18]) ∧
+              の_負(ENTITY[18], ENTITY[17]) ∧
+               の_イメージ(ENTITY[17], ENTITY[16]) ∧
+                まちおこし(ENTITY[20]) ∧
+                 払しょくする.0(EVENT[19], ENTITY[14], ENTITY[16]) ∧ なる(EVENT[21], ENTITY[14], ENTITY[20]) ∧
+                  もの(ENTITY[14]) ∧
+                  past(EVENT[6]) ∧
+                   ADV_ただ(SITUATION[23]) ∧
+                    提案(EVENT[10], ENTITY[1], ENTITY[9],
+                     FACT(SITUATION[23],
+                      CONJ_だけでなく(待つ(EVENT[13], ENTITY[11], ENTITY[12]),
+                       作ろう(EVENT[22], ENTITY[11], ENTITY[14])))) ∧ に(EVENT[10]) = ENTITY[水産仲卸業飯塚哲生さん] ∧
+                     is_contained_in(時間(EVENT[10]), TIME[2]))
+
+# ::id 32_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 試行錯誤 の 末 、 ３ 月 から 地元 の 催し など で 提供 し て いる 。
+∃ ENTITY[1] EVENT[8] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  試行錯誤(ENTITY[3]) ∧
+   の_末(ENTITY[3], ENTITY[2]) ∧
+    CD_３_月(ENTITY[4]) ∧
+     地元(ENTITY[7]) ∧
+      の_催し(ENTITY[7], ENTITY[6]) ∧
+       など(ENTITY[6], ENTITY[5]) ∧
+        提供する.0_て_いる(EVENT[8], ENTITY[1]) ∧ で(EVENT[8]) = ENTITY[5] ∧ から(EVENT[8]) = ENTITY[4] ∧
+         ADV(EVENT[8]) = ENTITY[2])
+
+# ::id 33_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ドンコ は 福島 で 水揚げ でき ない ため 、 青森 や 北海道 から 仕入れ て 飯塚さん の 店 で 加工 する 。
+∃ SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] GROUP[5] ENTITY[7] ENTITY[3] (
+ ドンコ(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   FACT(SITUATION[2], ¬ ∃ EVENT[4] (水揚げする.0(EVENT[4], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[福島])) ∧
+    CONJ_や(is_element_of(ENTITY[青森], GROUP[5]), is_element_of(ENTITY[北海道], GROUP[5])) ∧
+     の_店(ENTITY[飯塚さん], ENTITY[7]) ∧
+      CONJ_te(仕入れ_て(EVENT[6], ENTITY[1]) ∧ から(EVENT[6]) = GROUP[5] ∧ ため(EVENT[6]) = SITUATION[2],
+       加工する.0(EVENT[8], ENTITY[1]) ∧ で(EVENT[8]) = ENTITY[7] ∧ ため(EVENT[8]) = SITUATION[2]))
+
+# ::id 34_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 菊地さん が 代表 を 務める ＮＰＯ法人 「 そうまグリーンアーク 」 の メンバー が イベント で ＰＲ 。
+∃ EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[1] (
+ 菊地さん(ENTITY[3]) ∧
+  代表(ENTITY[4]) ∧
+   THAT_ＮＰＯ法人(務める(EVENT[5], ENTITY[3], ENTITY[4]), ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[そうまグリーンアーク], ENTITY[2]) ∧
+     の_メンバー(ENTITY[2], ENTITY[1]) ∧
+      イベント(ENTITY[6]) ∧ ｐｒ(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = ENTITY[6])
+
+# ::id 35_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 地元 の 宿泊施設 の メニュー に 取り入れ られ 、 インターネット販売 も 一部 始め た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  地元(ENTITY[4]) ∧
+   の_宿泊施設(ENTITY[4], ENTITY[3]) ∧
+    の_メニュー(ENTITY[3], ENTITY[2]) ∧
+     インターネット販売(ENTITY[6]) ∧
+      ADV_一部(EVENT[7]) ∧
+       past(EVENT[7]) ∧
+        取り入れ(EVENT[5], _, ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[2] ∧
+         始め_た(EVENT[7], ENTITY[1], ENTITY[6]))
+
+# ::id 36_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 先日 市内 で あっ た 催し で は 、 どんこボール の すまし汁 が 振る舞わ れ 、 来場者 は なじみ の 味 を 堪能 し た 。
+∃ EVENT[8] EVENT[12] ENTITY[7] ENTITY[6] ENTITY[11] ENTITY[10] EVENT[5] ENTITY[4] TIME[3] ENTITY[9] ENTITY[1] (
+ 先日(TIME[3]) ∧
+  市内(ENTITY[4]) ∧
+   あっ_た(EVENT[5], ENTITY[1]) ∧ で(EVENT[5]) = ENTITY[4] ∧ is_contained_in(時間(EVENT[5]), TIME[3]) ∧
+    催し(ENTITY[1]) ∧
+    来場者(ENTITY[9]) ∧
+     past(EVENT[5]) ∧
+      どんこボール(ENTITY[7]) ∧
+       の_すまし汁(ENTITY[7], ENTITY[6]) ∧
+        なじみ(ENTITY[11]) ∧
+         の_味(ENTITY[11], ENTITY[10]) ∧
+          past(EVENT[12]) ∧
+           振る舞わ(EVENT[8], _, ENTITY[6]) ∧
+            堪能する.0_た(EVENT[12], ENTITY[9], ENTITY[10]) ∧ で(EVENT[12]) = ENTITY[1])
+
+# ::id 37_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 菊地さん は 「 ここ で 取れる 魚 で 加工技術 を 磨け ば 、 水産業 の 幅 も 広がる 。 いつか 漁 が 元通り に なる 日 の ため に 、 相馬 の 味 と 食文化 を 伝え たい 」 と 話し て いる 。
+∃ SITUATION[14] ENTITY[12] EVENT[17] EVENT[21] EVENT[1] ENTITY[16] ENTITY[15] ENTITY[20] ENTITY[19] ENTITY[13] (
+ ENTITY[12] = *pro*{ENTITY[菊地さん]} ∧
+  漁(ENTITY[15]) ∧
+   元通り(ENTITY[16]) ∧
+    日(SITUATION[14], なる(EVENT[17], ENTITY[15], ENTITY[16])) ∧
+     の_ため(SITUATION[14], ENTITY[13]) ∧
+      の_味(ENTITY[相馬], ENTITY[19]) ∧
+       食文化(ENTITY[20]) ∧
+        ADV_いつか(EVENT[17]) ∧
+         話し_て_いる(EVENT[1], ENTITY[菊地さん],
+          ∀ ENTITY[5] ENTITY[2] EVENT[6] EVENT[8] ENTITY[7] ENTITY[3] CND_ば(
+              ENTITY[2] = *pro*{ENTITY[菊地さん]} ∧ ENTITY[5] = ここ{ENTITY[2], ENTITY[菊地さん]} ∧
+               取れる(EVENT[6], ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[5] ∧ 魚(ENTITY[3]) ∧
+               加工技術(ENTITY[7]) ∧ 磨け(EVENT[8], ENTITY[2], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[3],
+              ∃ EVENT[11] ENTITY[10] ENTITY[9] (水産業(ENTITY[10]) ∧ の_幅(ENTITY[10], ENTITY[9]) ∧ 広がる(EVENT[11], ENTITY[9]))) ∧
+           伝え_たい(EVENT[21], ENTITY[12], ENTITY[20]) ∧ と(EVENT[21]) = ENTITY[19] ∧
+            に(EVENT[21]) = ENTITY[13]))
+
+# ::id 38_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ◎ バター餅 （ 北秋田 ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[北秋田], ENTITY[バター餅]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[バター餅])
+
+# ::id 39_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ／ こく や 甘さ 、 とろける
+∃ EVENT[4] GROUP[1] (
+ CONJ_や(∃ ENTITY[2] (こく(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (甘さ(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧ とろける(EVENT[4], GROUP[1]))
+
+# ::id 40_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 冷蔵庫 に 入れ て も 硬く なら ない 不思議 な 「 バター餅 」 。
+∃ ATTRIB[2] ENTITY[1] EVENT[9] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ENTITY[5] SITUATION[4] EVENT[7] EVENT[8] ENTITY[6] (
+        ENTITY[5] = *pro*{ENTITY[バター餅], ENTITY[1]} ∧
+         冷蔵庫(ENTITY[6]) ∧
+          FACT(SITUATION[4], 入れ_て(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+           なら(EVENT[8], ENTITY[バター餅]) ∧ te(EVENT[8]) = SITUATION[4]) ∧
+   不思議_な(ATTRIB[2]) ∧ ATTRIBUTE_xxx(ATTRIB[2], ENTITY[バター餅]) ∧ xxx(EVENT[9], ENTITY[1], ENTITY[バター餅]))
+
+# ::id 41_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 北秋田市 の この 伝統食 が 、 ご当地グルメ として 大ヒット中 だ 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_伝統食(ENTITY[北秋田市], ENTITY[1]) ∧
+  ご当地グルメ(ENTITY[3]) ∧ として_大ヒット中(ENTITY[3], ENTITY[2]) ∧ だ(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 42_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 材料 は 県産もち米 と バター 、 卵黄 、 小麦粉 、 砂糖 、 塩 、 かたくり粉 と シンプル 。
+∃ EVENT[10] GROUP[2] ENTITY[1] (
+ 材料(ENTITY[1]) ∧
+  CONJ_と(∃ ENTITY[3] (県産もち米(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (バター(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])), ∃ ENTITY[5] (卵黄(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])),
+   ∃ ENTITY[6] (小麦粉(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[2])), ∃ ENTITY[7] (砂糖(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2])),
+   ∃ ENTITY[8] (塩(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[2])),
+   ∃ ENTITY[9] (かたくり粉(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[2]))) ∧
+   シンプル(EVENT[10], ENTITY[1]) ∧ と(EVENT[10]) = GROUP[2])
+
+# ::id 43_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt こく と 風味 、 程良い 甘さ が 、 とろける 食感 と 相まっ て 美食家 を うなら せる 。
+∃ EVENT[8] EVENT[9] EVENT[12] EVENT[11] ENTITY[6] ENTITY[10] GROUP[1] (
+ CONJ_と(∃ ENTITY[2] (こく(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (風味(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])),
+  ∃ ATTRIB[5] ENTITY[4] (程良い(ATTRIB[5]) ∧ ATTRIBUTE_甘さ(ATTRIB[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+  とろける(EVENT[8], ENTITY[6]) ∧ 食感(ENTITY[6]) ∧
+   美食家(ENTITY[10]) ∧
+    CONJ_te(相まっ_て(EVENT[9], GROUP[1]) ∧ と(EVENT[9]) = ENTITY[6],
+     せる(EVENT[11], GROUP[1], ENTITY[10], うなら(EVENT[12], ENTITY[10]))))
+
+# ::id 44_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ２０１２ 年 ４ 月 に テレビ番組 で 紹介 さ れ て ブレーク 。
+∃ ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２０１２_年_４_月(ENTITY[2]) ∧
+   テレビ番組(ENTITY[3]) ∧
+    CONJ_te(紹介する.0_て(EVENT[4], _, ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3] ∧
+          に(EVENT[4]) = ENTITY[2], ブレーク(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[2]))
+
+# ::id 45_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ２ 業者 だっ た 生産者 は 同市内 だけ で も １７ 業者 に 増え た 。
+∃ ENTITY[6] EVENT[4] ENTITY[3] ENTITY[1] (
+ CD_２_業者(ENTITY[3]) ∧
+  だっ_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 生産者(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    同市内(ENTITY[6]) ∧
+     だけ_も ENTITY[5] (ENTITY[5] = ENTITY[6],
+      ∃ EVENT[8] ENTITY[7] (
+       CD_１７_業者(ENTITY[7]) ∧
+        past(EVENT[8]) ∧
+         増え_た(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7] ∧ で(EVENT[8]) = ENTITY[5])))
+
+# ::id 46_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 発祥 の 経緯 は 諸説 あり はっきり し ない 。
+∃ ENTITY[2] ENTITY[1] (
+ 発祥(ENTITY[2]) ∧
+  の_経緯(ENTITY[2], ENTITY[1]) ∧
+   ¬ ∃ EVENT[4] EVENT[5] ENTITY[3] (諸説(ENTITY[3]) ∧ あり(EVENT[4], ENTITY[3]) ∧ はっきりする.0(EVENT[5], ENTITY[1])))
+
+# ::id 47_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 商品化 が 最も 早かっ た 阿仁地区 の 柴田悦子さん （ ６５ ） は 地元 の 婦人会 の 集まり や 運動会 など で ごちそう に なり 、 二十数 年 前 に 家庭用 に 作り 始め た と いう 。
+∃ ENTITY[7] EVENT[15] EVENT[18] EVENT[6] GROUP[9] ENTITY[14] ENTITY[8] ENTITY[17] ENTITY[16] EVENT[4] ENTITY[3] ENTITY[1] (
+ 商品化(ENTITY[3]) ∧
+  早かっ_た(EVENT[4], ENTITY[3]) ∧ LOC(EVENT[4]) = ENTITY[阿仁地区] ∧
+   の_xxx(ENTITY[阿仁地区], ENTITY[柴田悦子さん]) ∧
+    CD_６５(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[柴田悦子さん]) ∧
+      ADV_最も(EVENT[4]) ∧
+       past(EVENT[4]) ∧
+        ENTITY[7] = *pro*{ENTITY[柴田悦子さん], ENTITY[1], ENTITY[阿仁地区], ENTITY[3]} ∧
+         CONJ_や(∃ ENTITY[12] ENTITY[11] ENTITY[10] (
+               地元(ENTITY[12]) ∧
+                の_婦人会(ENTITY[12], ENTITY[11]) ∧ の_集まり(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+          ∃ ENTITY[13] (運動会(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[9]))) ∧
+          など(GROUP[9], ENTITY[8]) ∧
+           ごちそう(ENTITY[14]) ∧
+            (CD_二十数_年(ENTITY[16]), 前(ENTITY[16])) ∧
+             家庭用(ENTITY[17]) ∧
+              before(EVENT[6], EVENT[18]) ∧
+               いう(EVENT[6], ENTITY[柴田悦子さん],
+                なり(EVENT[15], ENTITY[7], ENTITY[14]) ∧ で(EVENT[15]) = ENTITY[8] ∧
+                 作り_始め_た(EVENT[18], ENTITY[7]) ∧ に(EVENT[18]) = ENTITY[17] ∧
+                  に(EVENT[18]) = ENTITY[16]))
+
+# ::id 48_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ３ 年 前 に 亡くなっ た マタギ の 夫 誠さん の 大好物 だっ た 。
+∃ ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_３_年(ENTITY[5]), 前(ENTITY[5])) ∧
+   亡くなっ_た(EVENT[6], ENTITY[夫_誠さん]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+    マタギ(ENTITY[3]) ∧
+     の_xxx(ENTITY[3], ENTITY[夫_誠さん]) ∧
+      の_大好物(ENTITY[夫_誠さん], ENTITY[2]) ∧
+       past(EVENT[6]) ∧ past(EVENT[7]) ∧ だっ_た(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 49_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 硬く なら ず 高カロリー の ため 携行食 として 猟 に 持た せ たり 、 マタギ の 語り の 時 に 観光客 に 振る舞っ たり し た 。
+∃ ENTITY[8] SITUATION[7] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[12] EVENT[10] EVENT[17] EVENT[18] ENTITY[5] ENTITY[11] ENTITY[9] ENTITY[15] ENTITY[14] ENTITY[16] ENTITY[13] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   高カロリー(ENTITY[5]) ∧
+    FACT(SITUATION[2], CONJ_te(¬ ∃ EVENT[4] 硬く_なら(EVENT[4], ENTITY[3]), の(EVENT[6], ENTITY[3], ENTITY[5]))) ∧
+     ENTITY[8] = *pro*{ENTITY[5]} ∧
+      携行食(ENTITY[9]) ∧
+       猟(ENTITY[11]) ∧
+        マタギ(ENTITY[15]) ∧
+         の_語り(ENTITY[15], ENTITY[14]) ∧
+          の_時(ENTITY[14], ENTITY[13]) ∧
+           観光客(ENTITY[16]) ∧
+            FACT(SITUATION[7],
+             CONJ_たり(せ(EVENT[10], ENTITY[1], ENTITY[8],
+                   持た(EVENT[12], ENTITY[8]) ∧ に(EVENT[12]) = ENTITY[11]) ∧
+                   として(EVENT[10]) = ENTITY[9],
+              振る舞っ(EVENT[17], ENTITY[1]) ∧ に(EVENT[17]) = ENTITY[16] ∧
+               に(EVENT[17]) = ENTITY[13])) ∧
+             past(EVENT[18]) ∧
+              し_た(EVENT[18], ENTITY[1]) ∧ たり(EVENT[18]) = SITUATION[7] ∧ ため(EVENT[18]) = SITUATION[2])
+
+# ::id 50_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 味 の チェック は 誠さん が 担当 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 味(ENTITY[2]) ∧
+  の_チェック(ENTITY[2], ENTITY[1]) ∧ 担当(EVENT[3], ENTITY[誠さん]) ∧ TPC(EVENT[3]) = ENTITY[1])
+
+# ::id 51_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 濃厚 な 味 は 、 調理師 の 三 女 の 力 も 借り 家族みんな で 実現 し た 。
+∃ ATTRIB[2] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[1] (
+ 濃厚_な(ATTRIB[2]) ∧
+  ATTRIBUTE_味(ATTRIB[2], ENTITY[1]) ∧
+   調理師(ENTITY[5]) ∧
+    (CD_三_女(ENTITY[4]), の(ENTITY[5], ENTITY[4])) ∧
+     の_力(ENTITY[4], ENTITY[3]) ∧
+      家族みんな(ENTITY[7]) ∧
+       past(EVENT[8]) ∧
+        借り(EVENT[6], ENTITY[1], ENTITY[3]) ∧ 実現する.0_た(EVENT[8], ENTITY[1]) ∧ で(EVENT[8]) = ENTITY[7])
+
+# ::id 52_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 北秋田市 は １２ 年 ７ 月 、 日本バター餅協会 を 設立 し 「 バター餅 の 里 」 を 宣言 。
+∃ EVENT[2] EVENT[5] ENTITY[4] ENTITY[3] TIME[1] (
+ CD_１２_年_７_月(TIME[1]) ∧
+  バター餅(ENTITY[4]) ∧
+   の_里(ENTITY[4], ENTITY[3]) ∧
+    設立する.0(EVENT[2], ENTITY[北秋田市], ENTITY[日本バター餅協会]) ∧
+     宣言(EVENT[5], ENTITY[北秋田市], ENTITY[3]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]))
+
+# ::id 53_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 同協会 が 味 や 材料 を 審査 し て 製造 する 業者 を 認定登録 、 品質維持 に 努め て いる 。
+∃ SITUATION[6] EVENT[5] EVENT[7] EVENT[8] EVENT[10] GROUP[2] ENTITY[9] ENTITY[1] (
+ 同協会(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[3] (味(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (材料(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   業者(SITUATION[6], 製造する.0(EVENT[7], ENTITY[1])) ∧
+    品質維持(ENTITY[9]) ∧
+     CONJ_te(審査する.0_て(EVENT[5], ENTITY[1], GROUP[2]),
+      認定登録(EVENT[8], ENTITY[1], SITUATION[6]) ∧ 努め_て_いる(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[9]))
+
+# ::id 54_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt ゆるキャラ や 応援ソング が でき 、 手作りバター餅 の コンテスト 「 ＢＭ－１グランプリ 」 も 開催 さ れ 盛り上がる 。
+∃ ENTITY[1] EVENT[5] EVENT[8] EVENT[9] GROUP[2] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[3] (ゆるキャラ(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (応援ソング(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   手作りバター餅(ENTITY[7]) ∧
+    の_コンテスト(ENTITY[7], ENTITY[6]) ∧
+     namely_-ENTITY-(ENTITY[ＢＭ－１グランプリ], ENTITY[6]) ∧
+      でき(EVENT[5], GROUP[2]) ∧ 開催する.0(EVENT[8], _, ENTITY[6]) ∧ 盛り上がる(EVENT[9], ENTITY[1]))
+
+# ::id 55_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 今 も 各家庭 で は 冬 の おやつ として 作ら れ 、 家庭ごと の 味 が ある と いう 。
+∃ ENTITY[4] ENTITY[1] EVENT[8] EVENT[11] EVENT[2] ENTITY[7] ENTITY[6] ENTITY[10] ENTITY[9] ENTITY[3] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  今(ENTITY[3]) ∧
+   ENTITY[4] = *pro*{ENTITY[3], ENTITY[1]} ∧
+    冬(ENTITY[7]) ∧
+     の_おやつ(ENTITY[7], ENTITY[6]) ∧
+      家庭ごと(ENTITY[10]) ∧
+       の_味(ENTITY[10], ENTITY[9]) ∧
+        いう(EVENT[2], ENTITY[1],
+         作ら(EVENT[8], _, ENTITY[4]) ∧ として(EVENT[8]) = ENTITY[6] ∧
+          で(EVENT[8]) = ENTITY[5] ∧ ある(EVENT[11], ENTITY[9]) ∧ 時間(EVENT[11]) = ENTITY[3]))
+
+# ::id 56_newswire_00457_K201401010W5XPAXX00001;NJ
+# ::snt 北秋田市 の おふくろ の 味 と も 言え そう だ 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_そう(∃ ENTITY[3] SITUATION[2] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] (
+        ENTITY[3] = *pro*{ENTITY[1]} ∧
+         の_おふくろ(ENTITY[北秋田市], ENTITY[5]) ∧
+          の_味(ENTITY[5], ENTITY[4]) ∧
+           FACT(SITUATION[2], xxx(EVENT[6], ENTITY[3], ENTITY[4])) ∧ 言え_だ(EVENT[7], ENTITY[1], SITUATION[2]))))

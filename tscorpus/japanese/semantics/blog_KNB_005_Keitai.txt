@@ -1,0 +1,62 @@
+# ::id 1_blog_KNB_005_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+∃ EVENT[2] ENTITY[1] (携帯_電話(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_005_Keitai_1-1-1-01;NJ
+# ::snt 予想ＧＵＹ ・・・
+∃ EVENT[2] ENTITY[1] (予想ＧＵＹ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 3_blog_KNB_005_Keitai_1-1-10-01;NJ
+# ::snt 結局 何 も 変わら ん の ちゃう ？？
+∃ SITUATION[3] (ADV_結局(SITUATION[3]) ∧ FACT(SITUATION[3], も ENTITY[1] ¬ ∃ EVENT[2] 変わら_の(EVENT[2], ENTITY[1])))
+
+# ::id 4_blog_KNB_005_Keitai_1-1-2-01;NJ
+# ::snt いよいよ 今日 から 番号ポータビリティー が 始まっ た 。
+∃ EVENT[2] ENTITY[1] (
+ 今日(ENTITY[1]) ∧
+  ADV_いよいよ(EVENT[2]) ∧ past(EVENT[2]) ∧ 始まっ_た(EVENT[2], ENTITY[番号ポータビリティー]) ∧ から(EVENT[2]) = ENTITY[1])
+
+# ::id 5_blog_KNB_005_Keitai_1-1-3-01;NJ
+# ::snt 最近 ソフトバンク が ボーダフォン を 買い取っ て 、 あの 孫 社長 が 携帯 業界 に 参入 し て き た 。
+∃ EVENT[2] EVENT[5] ENTITY[4] TIME[1] ENTITY[3] (
+ 孫_社長(ENTITY[3]) ∧
+  最近(TIME[1]) ∧
+   携帯_業界(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CONJ_te(買い取っ_て(EVENT[2], ENTITY[ソフトバンク], ENTITY[ボーダフォン]) ∧ is_contained_in(時間(EVENT[2]), TIME[1]),
+      参入する.0_て_き_た(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ is_contained_in(時間(EVENT[5]), TIME[1])))
+
+# ::id 6_blog_KNB_005_Keitai_1-1-4-01;NJ
+# ::snt なんか ソフトバンク は 激安 路線 で いく らしい 。
+∃ SITUATION[3] (
+ ADV_なんか(SITUATION[3]) ∧
+  FACT(SITUATION[3],
+   MD_らしい(∃ EVENT[2] ENTITY[1] (激安_路線(ENTITY[1]) ∧ いく(EVENT[2], ENTITY[ソフトバンク]) ∧ で(EVENT[2]) = ENTITY[1]))))
+
+# ::id 7_blog_KNB_005_Keitai_1-1-5-01;NJ
+# ::snt 僕 は 正直 まったく どー でも いい 感じ です 。
+∃ SITUATION[2] ENTITY[1] EVENT[6] (
+ ENTITY[1] = 僕 ∧
+  感じ(SITUATION[2], でも ENTITY[4] ENTITY[3] (ADV(ENTITY[4], ENTITY[3]), ∃ EVENT[5] いい(EVENT[5], ENTITY[3]))) ∧
+   ADV_正直(EVENT[6]) ∧ ADV_まったく(EVENT[6]) ∧ です(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 8_blog_KNB_005_Keitai_1-1-6-01;NJ
+# ::snt だって 携帯 の 会社 変え たら アドレス とか 全部 変わる もん ね 。
+MD_ね(MD_もん(∀ ARB[1] EVENT[4] ENTITY[3] ENTITY[2] CND_たら(
+              ARB[1] = *arb* ∧ 携帯(ENTITY[3]) ∧ の_会社(ENTITY[3], ENTITY[2]) ∧
+               変え(EVENT[4], ARB[1], ENTITY[2]),
+              ∃ EVENT[8] ENTITY[6] ENTITY[5] (
+               アドレス(ENTITY[6]) ∧
+                とか(ENTITY[6], ENTITY[5]) ∧ 全部 ENTITY[7] (ENTITY[7] = ENTITY[5], 変わる(EVENT[8], ENTITY[7]))))))
+
+# ::id 9_blog_KNB_005_Keitai_1-1-7-01;NJ
+# ::snt 面倒 やん 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 面倒(ENTITY[2]) ∧ やん(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 10_blog_KNB_005_Keitai_1-1-8-01;NJ
+# ::snt こーいう 人 が 大多数 らしい 。
+∃ ENTITY[1] (人(ENTITY[1]) ∧ MD_らしい(∃ EVENT[3] ENTITY[2] (大多数(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 11_blog_KNB_005_Keitai_1-1-9-01;NJ
+# ::snt （ とくダネ 調べ ）
+∃ EVENT[2] ENTITY[1] (とくダネ_調べ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

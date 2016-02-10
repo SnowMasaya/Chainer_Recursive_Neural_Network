@@ -1,0 +1,3867 @@
+% ::id 1_fiction_JOYCE-1914;AT1-1;NE
+% ::snt THE SISTERS
+fof(ex1414051418196,axiom,(
+    ? [G1,E2] :
+      ( sisters__1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 2_fiction_JOYCE-1914;AT2-1;NE
+% ::snt There was no hope for him this time :
+fof(ex1414051418543,axiom,(
+    ? [T1] :
+      ( time_1(s0,T1)
+      & ? [X4,X2,E3] :
+          ( is_hope_for_2(s0,X2,X4)
+          & is_before_2(s0,E3,e0)
+          & was_2(s0,E3,X2)
+          & tmp_2(s0,E3,T1) ) ) )).
+
+% ::id 3_fiction_JOYCE-1914;AT2-2;NE
+% ::snt it was the third stroke .
+fof(ex1414051418889,axiom,(
+    ? [X1,X3,E2] :
+      ( third_1(s0,X1)
+      & stroke_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_3(s0,E2,X3,X1) ) )).
+
+% ::id 4_fiction_JOYCE-1914;AT2-3;NE
+% ::snt Night after night I had passed the house -LRB- it was vacation time -RRB- and studied the lighted square of window :
+fof(ex1414051419257,axiom,(
+    ? [X10,X1,X2,X3,X4,X5,T6,E7,E8,E9] :
+      ( house_1(s0,X1)
+      & window_1(s0,X2)
+      & lighted_1(s0,X3)
+      & is_square_of_2(s0,X3,X2)
+      & night_1(s0,X4)
+      & vacation_time_1(s0,X5)
+      & is_night_after_2(s0,T6,X4)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & had_passed_3(s0,E7,X10,X1)
+      & tmp_2(s0,E7,T6)
+      & studied_3(s0,E8,X10,X3)
+      & tmp_2(s0,E8,T6)
+      & was_3(s0,E9,unspecified,X5) ) )).
+
+% ::id 5_fiction_JOYCE-1914;AT2-4;NE
+% ::snt and night after night I had found it lighted in the same way , faintly and evenly .
+fof(ex1414051419618,axiom,(
+    ? [X6,X1,X7,X2,T3,E4,E5] :
+      ( same_1(s0,X1)
+      & way_1(s0,X1)
+      & night_1(s0,X2)
+      & choose1(X7,X2)
+      & is_night_after_2(s0,T3,X2)
+      & faintly_evenly_1(s0,E4)
+      & is_before_2(s0,E5,e0)
+      & ? [S8] :
+          ( had_found_3(s0,E5,X6,S8)
+          & lighted_3(S8,E4,unspecified,X7)
+          & in_2(S8,E4,X1) )
+      & tmp_2(s0,E5,T3) ) )).
+
+% ::id 6_fiction_JOYCE-1914;AT2-5;NE
+% ::snt If he was dead , I thought I would see the reflection of candles on the darkened blind for I knew that two candles must be set at the head of a corpse .
+fof(ex1414051420015,axiom,(
+    ? [X16,X14,X6,X1,X2,X3,X4,G5] :
+      ( corpse_1(s0,X1)
+      & is_head_of_2(s0,X2,X1)
+      & darkened_1(s0,X3)
+      & blind_1(s0,X3)
+      & is_reflection_of_2(s0,X4,G5)
+      & is_candles_on_2(s0,G5,X3)
+      & ! [X8,A9,E7] :
+          ( ( dead_1(s0,A9)
+            & is_before_2(s0,E7,e0) )
+         => ( was_3(s0,E7,X8,A9)
+            & ? [G10,E11,E12,S13] :
+                ( two_1(s0,G10)
+                & candles_1(s0,G10)
+                & is_before_2(s0,E11,e0)
+                & is_before_2(s0,E12,e0)
+                & ? [S18] :
+                    ( fact_2(s0,S13,S18)
+                    & ? [S19] :
+                        ( knew_3(S18,E11,X14,S19)
+                        & ? [E15] :
+                            ( set_3(S19,E15,unspecified,G10)
+                            & at_2(S19,E15,X2) ) ) )
+                & ? [S20] :
+                    ( thought_3(s0,E12,X6,S20)
+                    & ? [E17] : see_3(S20,E17,X16,X4) )
+                & for_2(s0,E12,S13) ) ) ) ) )).
+
+% ::id 7_fiction_JOYCE-1914;AT2-6;NE
+% ::snt He had often said to me : " I am not long for this world , "
+fof(ex1414051420379,axiom,(
+    ? [X5,X4,X1,X3,E2] :
+      ( world_1(s0,X1)
+      & often_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( had_said_3(s0,E2,X3,S8)
+          & ? [A7,E6] :
+              ( is_long_for_2(S8,A7,X1)
+              & am_3(S8,E6,X5,A7) ) )
+      & to_2(s0,E2,X4) ) )).
+
+% ::id 8_fiction_JOYCE-1914;AT2-7;NE
+% ::snt and I had thought his words idle .
+fof(ex1414051420733,axiom,(
+    ? [X4,X5,G1,A6,E2,E3] :
+      ( is_words_of_2(s0,G1,X5)
+      & idle_1(s0,A6)
+      & is_before_2(s0,E3,e0)
+      & ? [S7] :
+          ( had_thought_3(s0,E3,X4,S7)
+          & is_3(S7,E2,G1,A6) ) ) )).
+
+% ::id 9_fiction_JOYCE-1914;AT2-8;NE
+% ::snt Now I knew they were true .
+fof(ex1414051421085,axiom,(
+    ? [X3,G5,A6,S4,E1,E2] :
+      ( true_1(s0,A6)
+      & now_1(s0,S4)
+      & is_before_2(s0,E1,E2)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( fact_2(s0,S4,S7)
+          & ? [S8] :
+              ( knew_3(S7,E2,X3,S8)
+              & were_3(S8,E1,G5,A6) ) ) ) )).
+
+% ::id 10_fiction_JOYCE-1914;AT2-9;NE
+% ::snt Every night as I gazed up at the window I said softly to myself the word paralysis .
+fof(ex1414051421445,axiom,(
+    ? [X9,X8,X3,X1,X2] :
+      ( window_1(s0,X1)
+      & choose1(X9,X3)
+      & word_paralysis_1(s0,X2)
+      & ! [T4] :
+          ( night_1(s0,T4)
+         => ? [E5,E6,S7] :
+              ( is_before_2(s0,E5,e0)
+              & softly_1(s0,E6)
+              & is_before_2(s0,E6,e0)
+              & ? [S10] :
+                  ( fact_2(s0,S7,S10)
+                  & gazed_up_2(S10,E5,X8)
+                  & at_2(S10,E5,X1) )
+              & said_3(s0,E6,X3,X2)
+              & tmp_2(s0,E6,T4)
+              & as_2(s0,E6,S7)
+              & to_2(s0,E6,X9) ) ) ) )).
+
+% ::id 11_fiction_JOYCE-1914;AT2-10;NE
+% ::snt It had always sounded strangely in my ears , like the word gnomon in the Euclid and the word simony in the Catechism .
+fof(ex1414051421810,axiom,(
+    ? [X7,X1,X2,X6,G3,G4,E5] :
+      ( is_word_gnomon_in_2(s0,X1,euclid)
+      & is_word_simony_in_2(s0,X2,catechism)
+      & is_ears_of_2(s0,G4,X7)
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,X2,G3)
+      & always_1(s0,E5)
+      & strangely_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & is_like_of_2(s0,X6,G3)
+      & had_sounded_2(s0,E5,X6)
+      & in__2(s0,E5,G4) ) )).
+
+% ::id 12_fiction_JOYCE-1914;AT2-11;NE
+% ::snt But now it sounded to me like the name of some maleficent and sinful being .
+fof(ex1414051422169,axiom,(
+    ? [X7,X1,X2,X3,G4,X6,A8,E5] :
+      ( maleficent_1(s0,X1)
+      & being_1(s0,X1)
+      & sinful_1(s0,X2)
+      & being_1(s0,X2)
+      & is_name_of_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & is_like_of_2(s0,A8,X3)
+      & now_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & sounded_3(s0,E5,X6,A8)
+      & to_2(s0,E5,X7) ) )).
+
+% ::id 13_fiction_JOYCE-1914;AT2-12;NE
+% ::snt It filled me with fear ,
+fof(ex1414051422518,axiom,(
+    ? [X4,X3,X1,E2] :
+      ( fear_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & filled_3(s0,E2,X3,X4)
+      & with_2(s0,E2,X1) ) )).
+
+% ::id 14_fiction_JOYCE-1914;AT2-13;NE
+% ::snt and yet I longed to be nearer to it and to look upon its deadly work .
+fof(ex1414051422878,axiom,(
+    ? [X5,X10,X9,X1,A8,S6,E2,E3,E4,S7] :
+      ( deadly_1(s0,X1)
+      & is_work_of_2(s0,X1,X10)
+      & is_nearer_to_2(s0,A8,X9)
+      & yet_1(s0,S6)
+      & is_before_2(s0,E4,e0)
+      & ? [S11] :
+          ( fact_2(s0,S7,S11)
+          & be_2(S11,E2,X5)
+          & dir_2(S11,E2,A8)
+          & look_2(S11,E3,X5)
+          & upon_2(S11,E3,X1) )
+      & ? [S12] :
+          ( fact_2(s0,S6,S12)
+          & longed_2(S12,E4,X5)
+          & prp_2(S12,E4,S7) ) ) )).
+
+% ::id 15_fiction_JOYCE-1914;AT3-1;NE
+% ::snt Old Cotter was sitting at the fire , smoking , when I came downstairs to supper .
+fof(ex1414051423245,axiom,(
+    ? [X8,X1,E2,E3] :
+      ( fire_1(s0,X1)
+      & ? [X4,X5,T6,E7] :
+          ( stairs_1(s0,X5)
+          & supper_1(s0,X4)
+          & came_2(s0,E7,X8)
+          & down_2(s0,E7,X5)
+          & to_2(s0,E7,X4)
+          & is_when_2(s0,E7,T6)
+          & is_before_2(s0,E7,e0)
+          & is_tmp_2(s0,E3,T6) )
+      & is_before_2(s0,E3,e0)
+      & smoking_2(s0,E2,old_cotter)
+      & was_sitting_2(s0,E3,old_cotter)
+      & at_2(s0,E3,X1) ) )).
+
+% ::id 16_fiction_JOYCE-1914;AT3-2;NE
+% ::snt While my aunt was ladling out my stirabout he said , as if returning to some former remark of his :
+fof(ex1414051423612,axiom,(
+    ? [X9,X8,X11,X7,X1,X2,X3,E4,E5,E6,S10] :
+      ( is_aunt_of_2(s0,X2,X8)
+      & is_stirabout_of_2(s0,X1,X9)
+      & choose3(X11,X7,X2,X1)
+      & former_1(s0,X3)
+      & is_remark_of_2(s0,X3,X11)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S12] :
+          ( fact_2(s0,S10,S12)
+          & returning_2(S12,E5,X7)
+          & to_2(S12,E5,X3) )
+      & was_ladling_out_3(s0,E4,X2,X1)
+      & said_2(s0,E6,X7)
+      & as_if_2(s0,E6,S10) ) )).
+
+% ::id 17_fiction_JOYCE-1914;AT4-1;NE
+% ::snt " No , I wouldn't say he was exactly .. .
+fof(ex1414051423968,axiom,(
+    ? [X1,X4,A5,E2,E3] :
+      ( exactly_1(s0,A5)
+      & is_before_2(s0,E2,E3)
+      & ? [S6] :
+          ( say_3(s0,E3,X1,S6)
+          & was_3(S6,E2,X4,A5) ) ) )).
+
+% ::id 18_fiction_JOYCE-1914;AT4-2;NE
+% ::snt but there was something queer .. .
+fof(ex1414051424334,axiom,(
+    ? [X1,E2] :
+      ( queer_1(s0,X1)
+      & thing_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_2(s0,E2,X1) ) )).
+
+% ::id 19_fiction_JOYCE-1914;AT4-3;NE
+% ::snt there was something uncanny about him .
+fof(ex1414051424680,axiom,(
+    ? [X3,X1,E2] :
+      ( is_uncanny_about_2(s0,X1,X3)
+      & thing_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_2(s0,E2,X1) ) )).
+
+% ::id 20_fiction_JOYCE-1914;AT4-4;NE
+% ::snt I'll tell you my opinion .... "
+fof(ex1414051425030,axiom,(
+    ? [X5,X4,X1,X2,E3] :
+      ( is_opinion_of_2(s0,X2,X5)
+      & tell_4(s0,E3,X1,X2,X4) ) )).
+
+% ::id 21_fiction_JOYCE-1914;AT5-1;NE
+% ::snt He began to puff at his pipe , no doubt arranging his opinion in his mind .
+fof(ex1414051425392,axiom,(
+    ? [X11,X4,X1,E2,E3] :
+      ( choose1(X11,X4)
+      & is_pipe_of_2(s0,X1,X11)
+      & is_before_2(s0,E3,e0)
+      & ? [X10,X9,X5,X6,X7,E8] :
+          ( doubt_1(s0,X7)
+          & choose2(X9,X4,X7)
+          & is_opinion_of_2(s0,X6,X9)
+          & choose3(X10,X4,X7,X6)
+          & is_mind_of_2(s0,X5,X10)
+          & arranging_3(s0,E8,X4,X6)
+          & circumstance_2(s0,E8,X7)
+          & in_2(s0,E8,X5) )
+      & ? [S12] :
+          ( began_3(s0,E3,X4,S12)
+          & puff_2(S12,E2,X4)
+          & at_2(S12,E2,X1) ) ) )).
+
+% ::id 22_fiction_JOYCE-1914;AT5-2;NE
+% ::snt Tiresome old fool !
+fof(ex1414051425742,axiom,(
+    ? [X1,E2] :
+      ( tiresome_1(s0,X1)
+      & old_1(s0,X1)
+      & fool_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 23_fiction_JOYCE-1914;AT5-3;NE
+% ::snt When we knew him first he used to be rather interesting , talking of faints and worms ;
+fof(ex1414051426110,axiom,(
+    ? [X9,X5,G1,A13,S6,E2,E3,E4] :
+      ( ? [G11] :
+          ( faints_1(s0,G11)
+          & is_of_2(s0,G11,G1) )
+      & ? [G12] :
+          ( worms_1(s0,G12)
+          & is_of_2(s0,G12,G1) )
+      & rather_interesting_1(s0,A13)
+      & ? [X10,T7,E8] :
+          ( choose1(X10,X5)
+          & knew_3(s0,E8,X9,X10)
+          & is_when_2(s0,E8,T7)
+          & first_1(s0,E8)
+          & is_before_2(s0,E8,e0)
+          & is_tmp_2(s0,S6,T7) )
+      & is_before_2(s0,E4,e0)
+      & ? [S14] :
+          ( fact_2(s0,S6,S14)
+          & talking_2(S14,E2,X5)
+          & of_2(S14,E2,G1)
+          & ? [S15] :
+              ( used_3(S14,E4,X5,S15)
+              & be_3(S15,E3,X5,A13) ) ) ) )).
+
+% ::id 24_fiction_JOYCE-1914;AT5-4;NE
+% ::snt but I soon grew tired of him and his endless stories about the distillery .
+fof(ex1414051426471,axiom,(
+    ? [X4,X1,G2,A5,E3] :
+      ( distillery_1(s0,X1)
+      & ? [X6] : is_of_2(s0,X6,G2)
+      & ? [X8,G7] :
+          ( endless_1(s0,G7)
+          & is_stories_about_2(s0,G7,X1)
+          & is_stories_of_2(s0,G7,X8)
+          & is_of_2(s0,G7,G2) )
+      & is_tired_of_2(s0,A5,G2)
+      & soon_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & grew_3(s0,E3,X4,A5) ) )).
+
+% ::id 25_fiction_JOYCE-1914;AT6-1;NE
+% ::snt " I have my own theory about it , " he said .
+fof(ex1414051426827,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S8] :
+          ( said_3(s0,E1,X2,S8)
+          & ? [X6,X5,X7,X3,E4] :
+              ( choose1(X5,X2)
+              & choose1(X6,X2)
+              & own_1(S8,X3)
+              & is_theory_of_2(S8,X3,X6)
+              & have_3(S8,E4,X5,X3)
+              & about_2(S8,E4,X7) ) ) ) )).
+
+% ::id 26_fiction_JOYCE-1914;AT6-2;NE
+% ::snt " I think it was one of those .. . peculiar cases ... .
+fof(ex1414051427185,axiom,(
+    ? [X5,G1,X6,X2,E3,E4] :
+      ( peculiar_1(s0,G1)
+      & cases_1(s0,G1)
+      & is_one_of_2(s0,X2,G1)
+      & is_before_2(s0,E3,E4)
+      & ? [S7] :
+          ( think_3(s0,E4,X5,S7)
+          & was_3(S7,E3,X6,X2) ) ) )).
+
+% ::id 27_fiction_JOYCE-1914;AT6-3;NE
+% ::snt But it's hard to say .... "
+fof(ex1414051427534,axiom,(
+    ? [A4,E1,E2,S3] :
+      ( hard_1(s0,A4)
+      & ? [S5] :
+          ( fact_2(s0,S3,S5)
+          & say_1(S5,E1) )
+      & is_3(s0,E2,S3,A4) ) )).
+
+% ::id 28_fiction_JOYCE-1914;AT7-1;NE
+% ::snt He began to puff again at his pipe without giving us his theory .
+fof(ex1414051427890,axiom,(
+    ? [X10,X11,X8,X6,X1,X2,S7,E3,E4,E5,S9] :
+      ( choose1(X8,X6)
+      & is_pipe_of_2(s0,X2,X8)
+      & choose2(X11,X6,X2)
+      & is_theory_of_2(s0,X1,X11)
+      & again_1(s0,S7)
+      & is_before_2(s0,E5,e0)
+      & ? [S12] :
+          ( fact_2(s0,S9,S12)
+          & giving_4(S12,E3,X6,X1,X10) )
+      & ? [S13] :
+          ( began_3(s0,E5,X6,S13)
+          & ? [S14] :
+              ( fact_2(S13,S7,S14)
+              & puff_2(S14,E4,X6)
+              & at_2(S14,E4,X2)
+              & without_2(S14,E4,S9) ) ) ) )).
+
+% ::id 29_fiction_JOYCE-1914;AT7-2;NE
+% ::snt My uncle saw me staring and said to me : " Well , so your old friend is gone , you'll be sorry to hear . "
+fof(ex1414051428267,axiom,(
+    ? [X15,X9,X8,X7,X5,X1,E2,E3,E4,S6] :
+      ( is_uncle_of_2(s0,X1,X5)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & ? [S17] :
+          ( fact_2(s0,S6,S17)
+          & staring_2(S17,E2,X7) )
+      & saw_3(s0,E3,X1,S6)
+      & ? [S18] :
+          ( said_3(s0,E4,X1,S18)
+          & ? [X10,A16,E11,E12,E13,S14] :
+              ( old_1(S18,X10)
+              & is_friend_of_2(S18,X10,X15)
+              & ? [S19] :
+                  ( sorry_2(S18,A16,S19)
+                  & hear_1(S19,E12) )
+              & ? [S20] :
+                  ( fact_2(S18,S14,S20)
+                  & is_gone_2(S20,E11,X10) )
+              & be_3(S18,E13,X9,A16)
+              & so_2(S18,E13,S14) ) )
+      & to_2(s0,E4,X8) ) )).
+
+% ::id 30_fiction_JOYCE-1914;AT8-1;NE
+% ::snt " Who ? " said I .
+fof(ex1414051428619,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S5] :
+          ( said_3(s0,E1,X2,S5)
+          & ? [X3,E4] : xxx_1(S5,E4) ) ) )).
+
+% ::id 31_fiction_JOYCE-1914;AT9-1;NE
+% ::snt " Father Flynn . "
+fof(ex1414051428963,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,father_flynn) ) )).
+
+% ::id 32_fiction_JOYCE-1914;AT10-1;NE
+% ::snt " Is he dead ? "
+fof(ex1414051429309,axiom,(
+    ? [X2,A3,E1] :
+      ( dead_1(s0,A3)
+      & is_3(s0,E1,X2,A3) ) )).
+
+% ::id 33_fiction_JOYCE-1914;AT11-1;NE
+% ::snt " Mr. Cotter there has just told us .
+fof(ex1414051429659,axiom,(
+    ? [X3,X2,E1] :
+      ( just_1(s0,E1)
+      & has_told_3(s0,E1,mr_cotter,X3)
+      & loc_2(s0,E1,X2) ) )).
+
+% ::id 34_fiction_JOYCE-1914;AT11-2;NE
+% ::snt He was passing by the house . "
+fof(ex1414051430005,axiom,(
+    ? [X1,X3,E2] :
+      ( house_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_passing_2(s0,E2,X3)
+      & by_2(s0,E2,X1) ) )).
+
+% ::id 35_fiction_JOYCE-1914;AT12-1;NE
+% ::snt I knew that I was under observation so I continued eating as if the news had not interested me .
+fof(ex1414051430374,axiom,(
+    ? [X14,X13,X9,X7,X1,X2,E3,E4,E5,E6,S11,S10,S8] :
+      ( news_1(s0,X1)
+      & observation_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S15] :
+          ( fact_2(s0,S10,S15)
+          & eating_2(S15,E3,X9) )
+      & ? [S16] :
+          ( fact_2(s0,S11,S16)
+          & ? [E12] :
+              ( is_before_2(S16,E12,e0)
+              & had_interested_3(S16,E12,X1,X13) ) )
+      & ? [S17] :
+          ( fact_2(s0,S8,S17)
+          & continued_3(S17,E4,X9,S10)
+          & as_if_2(S17,E4,S11) )
+      & ? [S18] :
+          ( knew_3(s0,E6,X7,S18)
+          & was_2(S18,E5,X14)
+          & under_2(S18,E5,X2) )
+      & so_2(s0,E6,S8) ) )).
+
+% ::id 36_fiction_JOYCE-1914;AT12-2;NE
+% ::snt My uncle explained to old Cotter .
+fof(ex1414051430727,axiom,(
+    ? [X3,X1,E2] :
+      ( is_uncle_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & explained_2(s0,E2,X1)
+      & to_2(s0,E2,old_cotter) ) )).
+
+% ::id 37_fiction_JOYCE-1914;AT13-1;NE
+% ::snt " The youngster and he were great friends .
+fof(ex1414051431075,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( youngster_1(s0,X1)
+      & is_of_2(s0,X1,G3)
+      & ? [X5] :
+          ( choose1(X5,X1)
+          & is_of_2(s0,X5,G3) )
+      & great_1(s0,G2)
+      & friends_1(s0,G2)
+      & is_before_2(s0,E4,e0)
+      & were_3(s0,E4,G3,G2) ) )).
+
+% ::id 38_fiction_JOYCE-1914;AT13-2;NE
+% ::snt The old chap taught him a great deal , mind you ;
+fof(ex1414051431441,axiom,(
+    ? [X1,X4,X2,E3] :
+      ( old_1(s0,X1)
+      & chap_1(s0,X1)
+      & great_1(s0,X2)
+      & deal_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & taught_4(s0,E3,X1,X2,X4) ) )).
+
+% ::id 39_fiction_JOYCE-1914;AT13-3;NE
+% ::snt and they say he had a great wish for him . "
+fof(ex1414051431795,axiom,(
+    ? [X6,X5,X1,G4,E2,E3] :
+      ( great_1(s0,X1)
+      & wish_1(s0,X1)
+      & is_before_2(s0,E2,E3)
+      & ? [S7] :
+          ( say_3(s0,E3,G4,S7)
+          & had_3(S7,E2,X5,X1)
+          & for_2(S7,E2,X6) ) ) )).
+
+% ::id 40_fiction_JOYCE-1914;AT14-1;NE
+% ::snt " God have mercy on his soul , " said my aunt piously .
+fof(ex1414051432151,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & piously_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,X1,S8)
+          & ? [X7,X4,X5,E6] :
+              ( choose1(X7,god)
+              & is_soul_of_2(S8,X4,X7)
+              & is_mercy_on_2(S8,X5,X4)
+              & have_3(S8,E6,god,X5) ) ) ) )).
+
+% ::id 41_fiction_JOYCE-1914;AT15-1;NE
+% ::snt Old Cotter looked at me for a while .
+fof(ex1414051432500,axiom,(
+    ? [X3,X1,E2] :
+      ( while_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & looked_2(s0,E2,old_cotter)
+      & at_2(s0,E2,X3)
+      & for_2(s0,E2,X1) ) )).
+
+% ::id 42_fiction_JOYCE-1914;AT15-2;NE
+% ::snt I felt that his little beady black eyes were examining me
+fof(ex1414051432852,axiom,(
+    ? [X6,X4,X5,G1,E2,E3] :
+      ( little_beady_black_1(s0,G1)
+      & is_eyes_of_2(s0,G1,X5)
+      & is_before_2(s0,E2,E3)
+      & is_before_2(s0,E3,e0)
+      & ? [S7] :
+          ( felt_3(s0,E3,X4,S7)
+          & were_examining_3(S7,E2,G1,X6) ) ) )).
+
+% ::id 43_fiction_JOYCE-1914;AT15-3;NE
+% ::snt but I would not satisfy him by looking up from my plate .
+fof(ex1414051433211,axiom,(
+    ? [X4,X3,X1,E2] :
+      ( is_plate_of_2(s0,X1,X4)
+      & looking_up_2(s0,E2,X3)
+      & from_2(s0,E2,X1)
+      & ? [X6,E5] :
+          ( choose1(X6,X1)
+          & satisfy_3(s0,E5,X3,X6) ) ) )).
+
+% ::id 44_fiction_JOYCE-1914;AT15-4;NE
+% ::snt He returned to his pipe and finally spat rudely into the grate .
+fof(ex1414051433568,axiom,(
+    ? [X1,X6,X5,X2,E3,E4] :
+      ( grate_1(s0,X1)
+      & choose1(X6,X5)
+      & is_pipe_of_2(s0,X2,X6)
+      & is_before_2(s0,E3,e0)
+      & finally_1(s0,E4)
+      & rudely_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & returned_2(s0,E3,X5)
+      & to_2(s0,E3,X2)
+      & spat_2(s0,E4,X5)
+      & into_2(s0,E4,X1) ) )).
+
+% ::id 45_fiction_JOYCE-1914;AT16-1;NE
+% ::snt " I wouldn't like children of mine , " he said , " to have too much to say to a man like that . "
+fof(ex1414051433934,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S12] :
+          ( said_3(s0,E1,X2,S12)
+          & ? [X3] :
+              ( choose1(X3,X2)
+              & ? [X11,X9,X4,G5,E6,E7,E8] :
+                  ( is_like_of_2(S12,X4,X11)
+                  & man_1(S12,X4)
+                  & is_children_of_2(S12,G5,X9)
+                  & ? [S13] :
+                      ( like_4(S12,E8,X3,G5,S13)
+                      & ? [X10] :
+                          ( ? [S14] :
+                              ( predicate___2(S13,X10,S14)
+                              & say_1(S14,E6)
+                              & to_2(S14,E6,X4) )
+                          & have_3(S13,E7,G5,X10) ) ) ) ) ) ) )).
+
+% ::id 46_fiction_JOYCE-1914;AT17-1;NE
+% ::snt " How do you mean Mr. Cotter ? " asked my aunt .
+fof(ex1414051434303,axiom,(
+    ? [X6,X3,X1,E2] :
+      ( choose1(X6,mr_cotter)
+      & is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( asked_3(s0,E2,X1,S7)
+          & ? [X4,E5] :
+              ( is_how_2(S7,E5,X4)
+              & do_mean_2(S7,E5,X6) ) ) ) )).
+
+% ::id 47_fiction_JOYCE-1914;AT18-1;NE
+% ::snt " What I mean is , " said old Cotter , " it's bad for children .
+fof(ex1414051434674,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S10] :
+          ( said_3(s0,E1,old_cotter,S10)
+          & ? [X4] :
+              ( choose1(X4,old_cotter)
+              & ? [X2,E3] :
+                  ( mean_3(S10,E3,X4,X2)
+                  & ? [X8,G5,A9,E6,E7] :
+                      ( choose1(X8,X2)
+                      & children_1(S10,G5)
+                      & is_bad_for_2(S10,A9,G5)
+                      & ? [S11] :
+                          ( is_3(S10,E7,X2,S11)
+                          & is_3(S11,E6,X8,A9) ) ) ) ) ) ) )).
+
+% ::id 48_fiction_JOYCE-1914;AT18-2;NE
+% ::snt My idea is : let a young lad run about and play with young lads of his own age and not be .. .
+fof(ex1414051435043,axiom,(
+    ? [X9,X10,X1,X2,X3,G4,E5,E6,E7,E8] :
+      ( is_idea_of_2(s0,X3,X9)
+      & young_1(s0,X2)
+      & lad_1(s0,X2)
+      & choose2(X10,X2,X3)
+      & own_1(s0,X1)
+      & is_age_of_2(s0,X1,X10)
+      & young_1(s0,G4)
+      & is_lads_of_2(s0,G4,X1)
+      & ? [S12] :
+          ( is_3(s0,E8,X3,S12)
+          & ? [S13] :
+              ( let_2(S12,E7,S13)
+              & run_about_2(S13,E5,X2)
+              & play_2(S13,E6,X2)
+              & with_2(S13,E6,G4)
+              & ? [E11] : be_2(S13,E11,X2) ) ) ) )).
+
+% ::id 49_fiction_JOYCE-1914;AT18-3;NE
+% ::snt Am I right , Jack ? "
+fof(ex1414051435393,axiom,(
+    ? [X2] :
+      ( choose1(X2,jack)
+      & ? [A3,E1] :
+          ( right_1(s0,A3)
+          & am_3(s0,E1,X2,A3) ) ) )).
+
+% ::id 50_fiction_JOYCE-1914;AT19-1;NE
+% ::snt " That's my principle , too , " said my uncle .
+fof(ex1414051435752,axiom,(
+    ? [X3,X1,E2] :
+      ( is_uncle_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,X1,S8)
+          & ? [X7,X6,X4,E5] :
+              ( choose1(X7,X1)
+              & is_principle_of_2(S8,X4,X7)
+              & too_1(S8,E5)
+              & is_3(S8,E5,X6,X4) ) ) ) )).
+
+% ::id 51_fiction_JOYCE-1914;AT19-2;NE
+% ::snt " Let him learn to box his corner .
+fof(ex1414051436101,axiom,(
+    ? [X6,X5,X1,E2,E3,E4] :
+      ( choose1(X6,X5)
+      & is_corner_of_2(s0,X1,X6)
+      & ? [S7] :
+          ( let_2(s0,E4,S7)
+          & ? [S8] :
+              ( learn_4(S7,E3,unspecified,X5,S8)
+              & box_3(S8,E2,X5,X1) ) ) ) )).
+
+% ::id 52_fiction_JOYCE-1914;AT19-3;NE
+% ::snt That's what I'm always saying to that Rosicrucian there :
+fof(ex1414051436464,axiom,(
+    ? [X4,X1,X5,X2,E3] :
+      ( choose1(X5,X1)
+      & am_saying_3(s0,E3,X4,X2)
+      & to_2(s0,E3,rosicrucian)
+      & loc_2(s0,E3,X5)
+      & always_1(s0,E3)
+      & ? [E6] : is_3(s0,E6,X1,X2) ) )).
+
+% ::id 53_fiction_JOYCE-1914;AT19-4;NE
+% ::snt take exercise .
+fof(ex1414051436809,axiom,(
+    ? [X1,E2] :
+      ( exercise_1(s0,X1)
+      & take_3(s0,E2,unspecified,X1) ) )).
+
+% ::id 54_fiction_JOYCE-1914;AT19-5;NE
+% ::snt Why , when I was a nipper every morning of my life I had a cold bath , winter and summer .
+fof(ex1414051437182,axiom,(
+    ? [X6,X3,X1] :
+    ! [X2] :
+      ( nipper_1(s0,X2)
+     => ( ! [X4,T5] :
+            ( ( is_life_of_2(s0,X4,X6)
+              & is_morning_of_2(s0,T5,X4) )
+           => ? [E7] :
+                ( is_before_2(s0,E7,e0)
+                & was_3(s0,E7,X3,X2)
+                & tmp_2(s0,E7,T5) ) )
+        & ? [X8,G9,E10] :
+            ( cold_1(s0,X8)
+            & bath_1(s0,X8)
+            & ? [X11] :
+                ( winter_1(s0,X11)
+                & is_of_2(s0,X11,G9) )
+            & ? [X12] :
+                ( summer_1(s0,X12)
+                & is_of_2(s0,X12,G9) )
+            & is_before_2(s0,E10,e0)
+            & had_3(s0,E10,X1,X8)
+            & tmp_2(s0,E10,G9) ) ) ) )).
+
+% ::id 55_fiction_JOYCE-1914;AT19-6;NE
+% ::snt And that's what stands to me now .
+fof(ex1414051437541,axiom,(
+    ? [X4,X1,X2,E3] :
+      ( stands_2(s0,E3,X2)
+      & to_2(s0,E3,X4)
+      & now_1(s0,E3)
+      & ? [E5] : is_3(s0,E5,X1,X2) ) )).
+
+% ::id 56_fiction_JOYCE-1914;AT19-7;NE
+% ::snt Education is all very fine and large ... .
+fof(ex1414051437897,axiom,(
+    ? [X1,A3,E2] :
+      ( education_1(s0,X1)
+      & all_very_fine_1(s0,A3)
+      & large_1(s0,A3)
+      & is_3(s0,E2,X1,A3) ) )).
+
+% ::id 57_fiction_JOYCE-1914;AT19-8;NE
+% ::snt Mr. Cotter might take a pick of that leg mutton , " he added to my aunt .
+fof(ex1414051438254,axiom,(
+    ? [X4,X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X4)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( added_3(s0,E2,X3,S8)
+          & ? [X5] :
+              ( leg_mutton_1(S8,X5)
+              & ? [X6,E7] :
+                  ( is_pick_of_2(S8,X6,X5)
+                  & take_3(S8,E7,mr_cotter,X6) ) ) )
+      & to_2(s0,E2,X1) ) )).
+
+% ::id 58_fiction_JOYCE-1914;AT20-1;NE
+% ::snt " No , no , not for me , " said old Cotter .
+fof(ex1414051438612,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S4] :
+          ( said_3(s0,E1,old_cotter,S4)
+          & ? [X3] :
+              ( choose1(X3,old_cotter)
+              & ? [E2] :
+                  ( xxx_1(S4,E2)
+                  & for_2(S4,E2,X3) ) ) ) ) )).
+
+% ::id 59_fiction_JOYCE-1914;AT21-1;NE
+% ::snt My aunt brought the dish from the safe and put it on the table .
+fof(ex1414051438973,axiom,(
+    ? [X7,X1,X2,X3,X8,X4,E5,E6] :
+      ( dish_1(s0,X2)
+      & safe_1(s0,X1)
+      & table_1(s0,X3)
+      & is_aunt_of_2(s0,X4,X7)
+      & choose2(X8,X2,X1)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & brought_3(s0,E5,X4,X2)
+      & from_2(s0,E5,X1)
+      & put_3(s0,E6,X4,X8)
+      & on_2(s0,E6,X3) ) )).
+
+% ::id 60_fiction_JOYCE-1914;AT22-1;NE
+% ::snt " But why do you think it's not good for children , Mr. Cotter ? " she asked .
+fof(ex1414051439362,axiom,(
+    ? [X5,X2,E1] :
+      ( choose1(X5,mr_cotter)
+      & is_before_2(s0,E1,e0)
+      & ? [S10] :
+          ( asked_3(s0,E1,X2,S10)
+          & ? [X3,X6,E4] :
+              ( choose2(X6,X3,X2)
+              & is_why_2(S10,E4,X3)
+              & ? [S11] :
+                  ( do_think_3(S10,E4,X5,S11)
+                  & ? [G7,A9,E8] :
+                      ( children_1(S11,G7)
+                      & is_good_for_2(S11,A9,G7)
+                      & is_3(S11,E8,X6,A9) ) ) ) ) ) )).
+
+% ::id 61_fiction_JOYCE-1914;AT23-1;NE
+% ::snt " It's bad for children , " said old Cotter , " because their minds are so impressionable .
+fof(ex1414051439731,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S10] :
+          ( said_3(s0,E1,old_cotter,S10)
+          & ? [X6,G8,G2,G3,A9,A7,E4,E5] :
+              ( children_1(S10,G2)
+              & choose1(G8,G2)
+              & is_minds_of_2(S10,G3,G8)
+              & is_bad_for_2(S10,A7,G2)
+              & so_impressionable_1(S10,A9)
+              & are_3(S10,E4,G3,A9)
+              & is_3(S10,E5,X6,A7) ) ) ) )).
+
+% ::id 62_fiction_JOYCE-1914;AT23-2;NE
+% ::snt When children see things like that , you know , it has an effect .... "
+fof(ex1414051440094,axiom,(
+    ? [X9] :
+    ! [X5,G1,G2,A4,E3] :
+      ( ( children_1(s0,G2)
+        & things_1(s0,G1)
+        & is_like_of_2(s0,A4,X5) )
+     => ( see_3(s0,E3,G2,G1)
+        & attribute_2(s0,E3,A4)
+        & ? [X10,X6,E7,E8] :
+            ( effect_1(s0,X6)
+            & ? [S11] :
+                ( know_3(s0,E8,X9,S11)
+                & has_3(S11,E7,X10,X6) ) ) ) ) )).
+
+% ::id 63_fiction_JOYCE-1914;AT24-1;NE
+% ::snt I crammed my mouth with stirabout for fear I might give utterance to my anger .
+fof(ex1414051440456,axiom,(
+    ? [X11,X7,X6,X5,X1,X2,X3,E4] :
+      ( is_mouth_of_2(s0,X3,X6)
+      & stirabout_1(s0,X2)
+      & ? [S12] :
+          ( fear_2(s0,X1,S12)
+          & ? [X8,X9,E10] :
+              ( utterance_1(S12,X9)
+              & is_anger_of_2(S12,X8,X11)
+              & give_4(S12,E10,X7,X9,X8) ) )
+      & is_before_2(s0,E4,e0)
+      & crammed_3(s0,E4,X5,X3)
+      & with_2(s0,E4,X2)
+      & for_2(s0,E4,X1) ) )).
+
+% ::id 64_fiction_JOYCE-1914;AT24-2;NE
+% ::snt Tiresome old red-nosed imbecile !
+fof(ex1414051440807,axiom,(
+    ? [X1,E2] :
+      ( tiresome_1(s0,X1)
+      & old_1(s0,X1)
+      & red_nosed_1(s0,X1)
+      & imbecile_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 65_fiction_JOYCE-1914;AT25-1;NE
+% ::snt It was late when I fell asleep .
+fof(ex1414051441163,axiom,(
+    ? [X4,X1,T2,E3] :
+      ( sleep_1(s0,X1)
+      & fell_2(s0,E3,X4)
+      & a_2(s0,E3,X1)
+      & is_when_2(s0,E3,T2)
+      & is_before_2(s0,E3,e0)
+      & ? [A6,E5] :
+          ( late_1(s0,A6)
+          & is_before_2(s0,E5,e0)
+          & was_3(s0,E5,T2,A6) ) ) )).
+
+% ::id 66_fiction_JOYCE-1914;AT25-2;NE
+% ::snt Though I was angry with old Cotter for alluding to me as a child , I puzzled my head to extract meaning from his unfinished sentences .
+fof(ex1414051441538,axiom,(
+    ? [X15,X14,X11,X9,X17,X1,X2,X3,G4,A12,E5,E6,E7,E8,S16,S13,S10] :
+      ( child_1(s0,X1)
+      & is_head_of_2(s0,X3,X15)
+      & meaning_1(s0,X2)
+      & choose4(X17,X3,X2,X1,old_cotter)
+      & unfinished_1(s0,G4)
+      & is_sentences_of_2(s0,G4,X17)
+      & is_angry_for_2(s0,A12,S13)
+      & is_angry_with_2(s0,A12,old_cotter)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [S18] :
+          ( fact_2(s0,S13,S18)
+          & alluding_1(S18,E5)
+          & to_2(S18,E5,X14)
+          & as_2(S18,E5,X1) )
+      & ? [S19] :
+          ( fact_2(s0,S10,S19)
+          & was_3(S19,E6,X11,A12) )
+      & ? [S20] :
+          ( fact_2(s0,S16,S20)
+          & extract_3(S20,E7,X3,X2)
+          & from_2(S20,E7,G4) )
+      & puzzled_3(s0,E8,X9,X3)
+      & though_2(s0,E8,S10)
+      & prp_2(s0,E8,S16) ) )).
+
+% ::id 67_fiction_JOYCE-1914;AT25-3;NE
+% ::snt In the dark of my room I imagined that I saw again the heavy grey face of the paralytic .
+fof(ex1414051441914,axiom,(
+    ? [X9,X8,X7,X1,X2,X3,X4,E5,E6] :
+      ( is_room_of_2(s0,X1,X8)
+      & dark_1(s0,X4)
+      & is_of_2(s0,X4,X1)
+      & paralytic_1(s0,X2)
+      & heavy_1(s0,X3)
+      & grey_1(s0,X3)
+      & is_face_of_2(s0,X3,X2)
+      & again_1(s0,E5)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S10] :
+          ( imagined_3(s0,E6,X7,S10)
+          & saw_3(S10,E5,X9,X3) )
+      & in_2(s0,E6,X4) ) )).
+
+% ::id 68_fiction_JOYCE-1914;AT25-4;NE
+% ::snt I drew the blankets over my head and tried to think of Christmas .
+fof(ex1414051442273,axiom,(
+    ? [X7,X6,G1,X2,E3,E4,E5] :
+      ( blankets_1(s0,G1)
+      & is_head_of_2(s0,X2,X7)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E5,e0)
+      & drew_3(s0,E3,X6,G1)
+      & over_2(s0,E3,X2)
+      & ? [S8] :
+          ( tried_3(s0,E5,X6,S8)
+          & think_2(S8,E4,X6)
+          & of_2(S8,E4,christmas) ) ) )).
+
+% ::id 69_fiction_JOYCE-1914;AT25-5;NE
+% ::snt But the grey face still followed me .
+fof(ex1414051442640,axiom,(
+    ? [X3,X1,E2] :
+      ( grey_1(s0,X1)
+      & face_1(s0,X1)
+      & still_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & followed_3(s0,E2,X1,X3) ) )).
+
+% ::id 70_fiction_JOYCE-1914;AT25-6;NE
+% ::snt It murmured ;
+fof(ex1414051443003,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & murmured_2(s0,E1,X2) ) )).
+
+% ::id 71_fiction_JOYCE-1914;AT25-7;NE
+% ::snt and I understood that it desired to confess something .
+fof(ex1414051443354,axiom,(
+    ? [X5,X6,X1,E2,E3,E4] :
+      ( thing_1(s0,X1)
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E4,e0)
+      & ? [S7] :
+          ( understood_3(s0,E4,X5,S7)
+          & ? [S8] :
+              ( desired_3(S7,E3,X6,S8)
+              & confess_3(S8,E2,X6,X1) ) ) ) )).
+
+% ::id 72_fiction_JOYCE-1914;AT25-8;NE
+% ::snt I felt my soul receding into some pleasant and vicious region ;
+fof(ex1414051443720,axiom,(
+    ? [X7,X5,X1,G2,E3,E4,S6] :
+      ( is_soul_of_2(s0,X1,X7)
+      & ? [X8] :
+          ( pleasant_1(s0,X8)
+          & region_1(s0,X8)
+          & is_of_2(s0,X8,G2) )
+      & ? [X9] :
+          ( vicious_1(s0,X9)
+          & region_1(s0,X9)
+          & is_of_2(s0,X9,G2) )
+      & is_before_2(s0,E4,e0)
+      & ? [S10] :
+          ( fact_2(s0,S6,S10)
+          & receding_2(S10,E3,X1)
+          & into_2(S10,E3,G2) )
+      & felt_3(s0,E4,X5,S6) ) )).
+
+% ::id 73_fiction_JOYCE-1914;AT25-9;NE
+% ::snt and there again I found it waiting for me .
+fof(ex1414051444085,axiom,(
+    ? [X8,X3,X7,X4,S5,E1,E2,S6] :
+      ( choose1(X7,X4)
+      & again_1(s0,S5)
+      & is_before_2(s0,E2,e0)
+      & ? [S9] :
+          ( fact_2(s0,S6,S9)
+          & waiting_2(S9,E1,X7)
+          & for_2(S9,E1,X8) )
+      & ? [S10] :
+          ( fact_2(s0,S5,S10)
+          & found_3(S10,E2,X3,S6)
+          & loc_2(S10,E2,X4) ) ) )).
+
+% ::id 74_fiction_JOYCE-1914;AT25-10;NE
+% ::snt It began to confess to me in a murmuring voice
+fof(ex1414051444444,axiom,(
+    ? [X5,X4,X1,E2,E3] :
+      ( murmuring_1(s0,X1)
+      & voice_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [S6] :
+          ( began_3(s0,E3,X4,S6)
+          & confess_2(S6,E2,X4)
+          & to_2(S6,E2,X5)
+          & in_2(S6,E2,X1) ) ) )).
+
+% ::id 75_fiction_JOYCE-1914;AT25-11;NE
+% ::snt and I wondered why it smiled continually and why the lips were so moist with spittle .
+fof(ex1414051444809,axiom,(
+    ? [X3,G1,E2] :
+      ( lips_1(s0,G1)
+      & is_before_2(s0,E2,e0)
+      & ? [S11] :
+          ( wondered_3(s0,E2,X3,S11)
+          & ? [X4,X5,X9,X6,A10,E7,E8] :
+              ( choose1(X9,X4)
+              & spittle_1(S11,X6)
+              & is_so_moist_with_2(S11,A10,X6)
+              & is_why_2(S11,E7,X4)
+              & continually_1(S11,E7)
+              & is_before_2(S11,E7,E2)
+              & is_why_2(S11,E8,X5)
+              & is_before_2(S11,E8,E2)
+              & smiled_2(S11,E7,X9)
+              & were_3(S11,E8,G1,A10) ) ) ) )).
+
+% ::id 76_fiction_JOYCE-1914;AT25-12;NE
+% ::snt But then I remembered that it had died of paralysis
+fof(ex1414051445162,axiom,(
+    ? [X4,X6,X1,S5,E2,E3] :
+      ( paralysis_1(s0,X1)
+      & then_1(s0,S5)
+      & is_before_2(s0,E2,E3)
+      & is_before_2(s0,E3,e0)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & ? [S8] :
+              ( remembered_3(S7,E3,X4,S8)
+              & had_died_2(S8,E2,X6)
+              & of_2(S8,E2,X1) ) ) ) )).
+
+% ::id 77_fiction_JOYCE-1914;AT25-13;NE
+% ::snt and I felt that I too was smiling feebly as if to absolve the simoniac of his sin .
+fof(ex1414051446717,axiom,(
+    ? [X9,X8,X6,X1,X2,E3,E4,E5,S7] :
+      ( is_sin_of_2(s0,X1,X8)
+      & is_simoniac_of_2(s0,X2,X1)
+      & too_1(s0,E4)
+      & feebly_1(s0,E4)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S10] :
+          ( fact_2(s0,S7,S10)
+          & absolve_3(S10,E3,X6,X2) )
+      & ? [S11] :
+          ( felt_3(s0,E5,X6,S11)
+          & was_smiling_2(S11,E4,X9) )
+      & as_if_2(s0,E5,S7) ) )).
+
+% ::id 78_fiction_JOYCE-1914;AT26-1;NE
+% ::snt The next morning after breakfast I went down to look at the little house in Great Britain Street .
+fof(ex1414051447090,axiom,(
+    ? [X6,X1,T2,X3,S7,E4,E5,S8] :
+      ( little_1(s0,X1)
+      & is_house_in_2(s0,X1,great_britain_street)
+      & next_1(s0,T2)
+      & morning_1(s0,T2)
+      & breakfast_1(s0,X3)
+      & down_1(s0,S7)
+      & is_before_2(s0,E5,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & look_2(S9,E4,X6)
+          & at_2(S9,E4,X1) )
+      & ? [S10] :
+          ( fact_2(s0,S7,S10)
+          & went_2(S10,E5,X6)
+          & tmp_2(S10,E5,T2)
+          & after_2(S10,E5,X3)
+          & prp_2(S10,E5,S8) ) ) )).
+
+% ::id 79_fiction_JOYCE-1914;AT26-2;NE
+% ::snt It was an unassuming shop , registered under the vague name of Drapery .
+fof(ex1414051447462,axiom,(
+    ? [X1,X5,X2,E3,E4] :
+      ( vague_1(s0,X1)
+      & is_name_of_2(s0,X1,drapery)
+      & unassuming_1(s0,X2)
+      & shop_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & registered_3(s0,E3,unspecified,X2)
+      & under_2(s0,E3,X1)
+      & was_3(s0,E4,X5,X2) ) )).
+
+% ::id 80_fiction_JOYCE-1914;AT26-3;NE
+% ::snt The drapery consisted mainly of children's bootees and umbrellas ;
+fof(ex1414051447821,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( drapery_1(s0,X1)
+      & children_1(s0,G2)
+      & is_of_2(s0,G4,G2)
+      & ? [G6] :
+          ( bootees_1(s0,G6)
+          & is_of_2(s0,G6,G3) )
+      & ? [G7] :
+          ( umbrellas_1(s0,G7)
+          & is_of_2(s0,G7,G3) )
+      & G4 = G3
+      & is_before_2(s0,E5,e0)
+      & consisted_2(s0,E5,X1)
+      & mainly_of_2(s0,E5,G4) ) )).
+
+% ::id 81_fiction_JOYCE-1914;AT26-4;NE
+% ::snt and on ordinary days a notice used to hang in the window , saying : Umbrellas Re-covered .
+fof(ex1414051448186,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7,E8] :
+      ( window_1(s0,X1)
+      & notice_1(s0,X2)
+      & ordinary_1(s0,G4)
+      & days_1(s0,G4)
+      & umbrellas_1(s0,G3)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E8,e0)
+      & ? [S9] :
+          ( saying_3(s0,E6,X2,S9)
+          & is_re_covered_2(S9,E5,G3) )
+      & ? [S10] :
+          ( used_3(s0,E8,X2,S10)
+          & hang_2(S10,E7,X2)
+          & in_2(S10,E7,X1) )
+      & on_2(s0,E8,G4) ) )).
+
+% ::id 82_fiction_JOYCE-1914;AT26-5;NE
+% ::snt No notice was visible now for the shutters were up .
+fof(ex1414051448543,axiom,(
+    ? [G1] :
+      ( shutters_1(s0,G1)
+      & ? [X2,A5,S6,E3,E4,S7] :
+          ( notice_1(s0,X2)
+          & visible_1(s0,A5)
+          & now_1(s0,S6)
+          & is_before_2(s0,E3,e0)
+          & is_before_2(s0,E4,e0)
+          & ? [S8] :
+              ( fact_2(s0,S7,S8)
+              & were_up_2(S8,E3,G1) )
+          & ? [S9] :
+              ( fact_2(s0,S6,S9)
+              & was_3(S9,E4,X2,A5)
+              & for_2(S9,E4,S7) ) ) ) )).
+
+% ::id 83_fiction_JOYCE-1914;AT26-6;NE
+% ::snt A crape bouquet was tied to the doork-nocker with ribbon .
+fof(ex1414051448895,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( ribbon_1(s0,X1)
+      & is_doork_nocker_with_2(s0,X2,X1)
+      & crape_bouquet_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & tied_3(s0,E4,unspecified,X3)
+      & to_2(s0,E4,X2) ) )).
+
+% ::id 84_fiction_JOYCE-1914;AT26-7;NE
+% ::snt Two poor women and a telegram boy were reading the card pinned on the crape .
+fof(ex1414051449250,axiom,(
+    ? [X1,X2,E3,G4,E5] :
+      ( crape_1(s0,X1)
+      & pinned_3(s0,E3,unspecified,X2)
+      & on_2(s0,E3,X1)
+      & card_1(s0,X2)
+      & ? [G6] :
+          ( two_1(s0,G6)
+          & poor_1(s0,G6)
+          & women_1(s0,G6)
+          & is_of_2(s0,G6,G4) )
+      & ? [X7] :
+          ( telegram_boy_1(s0,X7)
+          & is_of_2(s0,X7,G4) )
+      & is_before_2(s0,E5,e0)
+      & were_reading_3(s0,E5,G4,X2) ) )).
+
+% ::id 85_fiction_JOYCE-1914;AT26-8;NE
+% ::snt I also approached and read :
+fof(ex1414051449601,axiom,(
+    ? [X3,E1,E2] :
+      ( is_before_2(s0,E1,e0)
+      & is_before_2(s0,E2,e0)
+      & also_approached_2(s0,E1,X3)
+      & read_2(s0,E2,X3) ) )).
+
+% ::id 86_fiction_JOYCE-1914;AT27-1;NE
+% ::snt July 1st , 1895 The Rev. James Flynn -LRB- formerly of S. Catherine's Church , Meath Street -RRB- , aged sixty-five years . R.I.P.
+fof(ex1414051449956,axiom,(
+    ? [G1,E2] :
+      ( is_formerly_of_2(s0,rev_james_flynn,s_catherine_s_church_meath_street)
+      & sixty_five_1(s0,G1)
+      & years_1(s0,G1)
+      & predicate__1st_1(s0,july)
+      & predicate__1895_1(s0,july)
+      & is_aged_of_2(s0,rev_james_flynn,G1)
+      & r_i_p_2(s0,E2,rev_james_flynn)
+      & tmp_2(s0,E2,july) ) )).
+
+% ::id 87_fiction_JOYCE-1914;AT28-1;NE
+% ::snt The reading of the card persuaded me that he was dead
+fof(ex1414051450314,axiom,(
+    ? [X5,X1,X2,X6,A7,E3,E4] :
+      ( card_1(s0,X1)
+      & is_reading_of_2(s0,X2,X1)
+      & choose2(X6,X2,X1)
+      & dead_1(s0,A7)
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E4,e0)
+      & ? [S8] :
+          ( persuaded_4(s0,E4,X2,X5,S8)
+          & was_3(S8,E3,X6,A7) ) ) )).
+
+% ::id 88_fiction_JOYCE-1914;AT28-2;NE
+% ::snt and I was disturbed to find myself at check .
+fof(ex1414051450682,axiom,(
+    ? [X5,X4,X1,E2,E3] :
+      ( choose1(X5,X4)
+      & check_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [S6] :
+          ( disturbed_4(s0,E3,unspecified,X4,S6)
+          & find_3(S6,E2,X4,X5)
+          & at_2(S6,E2,X1) ) ) )).
+
+% ::id 89_fiction_JOYCE-1914;AT28-3;NE
+% ::snt Had he not been dead I would have gone into the little dark room behind the shop to find him sitting in his arm-chair by the fire , nearly smothered in his great-coat .
+fof(ex1414051451062,axiom,(
+    ? [X4,X1,X2,X3] :
+      ( shop_1(s0,X1)
+      & little_1(s0,X3)
+      & dark_1(s0,X3)
+      & is_room_behind_2(s0,X3,X1)
+      & fire_1(s0,X2)
+      & ! [X5] :
+          ( ? [A7,E6] :
+              ( dead_1(s0,A7)
+              & is_before_2(s0,E6,e0)
+              & had_been_3(s0,E6,X5,A7) )
+         => ? [X18,X17,X16,X8,X9,E10,E11,E12,E13,S15,S14] :
+              ( choose2(X16,X3,X1)
+              & choose3(X17,X16,X3,X1)
+              & is_arm_chair_of_2(s0,X9,X17)
+              & choose5(X18,X16,X9,X2,X3,X1)
+              & is_great_coat_of_2(s0,X8,X18)
+              & nearly_1(s0,E10)
+              & ? [S19] :
+                  ( fact_2(s0,S15,S19)
+                  & smothered_3(S19,E10,unspecified,X16)
+                  & in_2(S19,E10,X8)
+                  & sitting_2(S19,E11,X16)
+                  & in_2(S19,E11,X9)
+                  & by_2(S19,E11,X2) )
+              & ? [S20] :
+                  ( fact_2(s0,S14,S20)
+                  & find_3(S20,E12,X4,S15) )
+              & have_gone_2(s0,E13,X4)
+              & into_2(s0,E13,X3)
+              & prp_2(s0,E13,S14) ) ) ) )).
+
+% ::id 90_fiction_JOYCE-1914;AT28-4;NE
+% ::snt Perhaps my aunt would have given me a packet of High Toast for him
+fof(ex1414051451424,axiom,(
+    ? [X5,X2,X1] :
+      ( is_aunt_of_2(s0,X1,X2)
+      & ? [X6,X3,E4] :
+          ( is_packet_of_2(s0,X3,high_toast)
+          & choose1(X6,high_toast)
+          & perhaps_1(s0,E4)
+          & have_given_4(s0,E4,X1,X3,X5)
+          & for_2(s0,E4,X6) ) ) )).
+
+% ::id 91_fiction_JOYCE-1914;AT28-5;NE
+% ::snt and this present would have roused him from his stupefied doze .
+fof(ex1414051451777,axiom,(
+    ? [X1] :
+      ( present_1(s0,X1)
+      & ? [X5,X4,X2,E3] :
+          ( choose2(X5,X1,X4)
+          & stupefied_1(s0,X2)
+          & is_doze_of_2(s0,X2,X5)
+          & have_roused_3(s0,E3,X1,X4)
+          & from_2(s0,E3,X2) ) ) )).
+
+% ::id 92_fiction_JOYCE-1914;AT28-6;NE
+% ::snt It was always I who emptied the packet into his black snuff-box for his hands trembled too much to allow him to do this without spilling half the snuff about the floor .
+fof(ex1414051452164,axiom,(
+    ? [X3,X1,X2] :
+      ( packet_1(s0,X1)
+      & floor_1(s0,X2)
+      & ? [X7,X4,X5,E6] :
+          ( choose2(X7,X5,X1)
+          & black_1(s0,X4)
+          & is_snuff_box_of_2(s0,X4,X7)
+          & emptied_3(s0,E6,X5,X1)
+          & into_2(s0,E6,X4)
+          & is_before_2(s0,E6,e0)
+          & ? [X21,X18,X16,G8,S14,E9,E10,E11,E12,E13,S19,S15] :
+              ( choose3(X16,X5,X4,X1)
+              & choose3(X18,X5,X4,X1)
+              & choose4(X21,X2,X5,X4,X1)
+              & is_hands_of_2(s0,G8,X16)
+              & always_1(s0,S14)
+              & is_before_2(s0,E12,e0)
+              & is_before_2(s0,E13,e0)
+              & ? [S22] :
+                  ( fact_2(s0,S19,S22)
+                  & ? [X20] :
+                      ( snuff_1(S22,X20)
+                      & spilling_3(S22,E9,X18,X20)
+                      & about_2(S22,E9,X2) ) )
+              & ? [S23] :
+                  ( fact_2(s0,S15,S23)
+                  & ? [X17] :
+                      ( ? [S24] :
+                          ( predicate___2(S23,X17,S24)
+                          & ? [S25] :
+                              ( allow_4(S24,E11,unspecified,X18,S25)
+                              & do_3(S25,E10,X18,X21) )
+                          & without_2(S24,E11,S19) )
+                      & trembled_2(S23,E12,G8)
+                      & msr_2(S23,E12,X17) ) )
+              & ? [S26] :
+                  ( fact_2(s0,S14,S26)
+                  & was_3(S26,E13,X5,X3)
+                  & for_2(S26,E13,S15) ) ) ) ) )).
+
+% ::id 93_fiction_JOYCE-1914;AT28-7;NE
+% ::snt Even as he raised his large trembling hand to his nose little clouds of smoke dribbled through his fingers over the front of his coat .
+fof(ex1414051452560,axiom,(
+    ? [X15,X1,X2,X14,X13,X12,X11,X3,X4,X5,G6,G7,E8,E9,S10] :
+      ( choose3(X15,X5,X4,X3)
+      & is_coat_of_2(s0,X1,X15)
+      & is_front_of_2(s0,X2,X1)
+      & smoke_1(s0,X3)
+      & choose1(X11,X3)
+      & choose2(X12,X11,X3)
+      & large_1(s0,X5)
+      & trembling_1(s0,X5)
+      & is_hand_of_2(s0,X5,X12)
+      & choose3(X13,X11,X5,X3)
+      & is_nose_of_2(s0,X4,X13)
+      & choose3(X14,X5,X4,X3)
+      & little_1(s0,G7)
+      & is_clouds_of_2(s0,G7,X3)
+      & is_fingers_of_2(s0,G6,X14)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & ? [S16] :
+          ( fact_2(s0,S10,S16)
+          & raised_3(S16,E8,X11,X5)
+          & to_2(S16,E8,X4) )
+      & dribbled_2(s0,E9,G7)
+      & even_as_2(s0,E9,S10)
+      & through_2(s0,E9,G6)
+      & over_2(s0,E9,X2) ) )).
+
+% ::id 94_fiction_JOYCE-1914;AT28-8;NE
+% ::snt It may have been these constant showers of snuff which gave his ancient priestly garments their green faded look for the red handkerchief , blackened , as it always was , with the snuff-stains of a week , with which he tried to brush away the fallen grains , was quite inefficacious .
+fof(ex1414051452985,axiom,(
+    ? [X22,X21,X1,X2,G3,G4,G5,T6,E7,E8,E9,E10,S20] :
+      ( snuff_1(s0,X1)
+      & choose4(X21,X2,X1)
+      & choose3(X22,X1)
+      & red_1(s0,X2)
+      & blackened_3(s0,E8,unspecified,X2)
+      & as_2(s0,E8,S20)
+      & with_2(s0,E8,G3)
+      & ? [S24] :
+          ( tried_3(s0,E10,X22,S24)
+          & brush_3(S24,E9,X22,G4)
+          & with_2(S24,E9,X2) )
+      & handkerchief_1(s0,X2)
+      & constant_1(s0,G5)
+      & is_showers_of_2(s0,G5,X1)
+      & is_snuff_stains_of_2(s0,G3,T6)
+      & fallen_1(s0,G4)
+      & grains_1(s0,G4)
+      & week_1(s0,T6)
+      & always_1(s0,E7)
+      & is_before_2(s0,E7,e0)
+      & away_1(s0,E9)
+      & is_before_2(s0,E10,e0)
+      & ? [S25] :
+          ( fact_2(s0,S20,S25)
+          & was_2(S25,E7,X21) )
+      & ? [X15,X11,X12,G16,G13,E14] :
+          ( choose2(X15,X12,X1)
+          & green_1(s0,X11)
+          & faded_1(s0,X11)
+          & is_look_of_2(s0,X11,G16)
+          & gave_4(s0,E14,X12,X11,G13)
+          & ancient_1(s0,G13)
+          & is_priestly_garments_of_2(s0,G13,X15)
+          & choose2(G16,G13,G5)
+          & is_before_2(s0,E14,e0)
+          & ? [A23,E17,E18,S19] :
+              ( quite_inefficacious_1(s0,A23)
+              & is_before_2(s0,E17,e0)
+              & ? [S26] :
+                  ( fact_2(s0,S19,S26)
+                  & was_3(S26,E17,X2,A23) )
+              & have_been_3(s0,E18,X12,G5)
+              & for_2(s0,E18,S19) ) ) ) )).
+
+% ::id 95_fiction_JOYCE-1914;AT29-1;NE
+% ::snt I wished to go in and look at him
+fof(ex1414051453353,axiom,(
+    ? [X4,X5,E1,E2,E3] :
+      ( is_before_2(s0,E3,e0)
+      & ? [S6] :
+          ( wished_3(s0,E3,X4,S6)
+          & go_in_2(S6,E1,X4)
+          & look_2(S6,E2,X4)
+          & at_2(S6,E2,X5) ) ) )).
+
+% ::id 96_fiction_JOYCE-1914;AT29-2;NE
+% ::snt but I had not the courage to knock .
+fof(ex1414051453703,axiom,(
+    ? [X3,X1,E2] :
+      ( ? [S5] :
+          ( courage_2(s0,X1,S5)
+          & knock_1(S5,E2) )
+      & ? [E4] :
+          ( is_before_2(s0,E4,e0)
+          & had_3(s0,E4,X3,X1) ) ) )).
+
+% ::id 97_fiction_JOYCE-1914;AT29-3;NE
+% ::snt I walked away slowly along the sunny side of the street , reading all the theatrical advertisements in the shopwindows as I went .
+fof(ex1414051454074,axiom,(
+    ? [X12,X7,X1,X2,G3,S9,S8,E4,E5,E6,S11] :
+      ( street_1(s0,X1)
+      & sunny_1(s0,X2)
+      & is_side_of_2(s0,X2,X1)
+      & shopwindows_1(s0,G3)
+      & away_1(s0,S8)
+      & slowly_1(s0,S9)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S13] :
+          ( fact_2(s0,S11,S13)
+          & went_2(S13,E4,X12) )
+      & ? [S14] :
+          ( fact_2(s0,S8,S14)
+          & ? [S15] :
+              ( fact_2(S14,S9,S15)
+              & ? [G10] :
+                  ( theatrical_1(S15,G10)
+                  & advertisements_1(S15,G10)
+                  & reading_3(S15,E5,X7,G10)
+                  & in_2(S15,E5,G3)
+                  & as_2(S15,E5,S11) )
+              & walked_2(S15,E6,X7)
+              & along_2(S15,E6,X2) ) ) ) )).
+
+% ::id 98_fiction_JOYCE-1914;AT29-4;NE
+% ::snt I found it strange that neither I nor the day seemed in a mourning mood
+fof(ex1414051454438,axiom,(
+    ? [X8,X6,X1,G2,A10,E3,E4,E5,S7] :
+      ( mourning_1(s0,X1)
+      & mood_1(s0,X1)
+      & is_of_2(s0,X8,G2)
+      & ? [T9] :
+          ( day_1(s0,T9)
+          & is_of_2(s0,T9,G2) )
+      & strange_1(s0,A10)
+      & is_before_2(s0,E3,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S11] :
+          ( fact_2(s0,S7,S11)
+          & seemed_2(S11,E3,G2)
+          & in_2(S11,E3,X1) )
+      & ? [S12] :
+          ( found_3(s0,E5,X6,S12)
+          & is_3(S12,E4,S7,A10) ) ) )).
+
+% ::id 99_fiction_JOYCE-1914;AT29-5;NE
+% ::snt and I felt even annoyed at discovering in myself a sensation of freedom as if I had been freed from something by his death .
+fof(ex1414051454840,axiom,(
+    ? [X13,X11,X8,X14,X1,X2,X3,X4,A9,E5,E6,E7,S12,S10] :
+      ( freedom_1(s0,X3)
+      & thing_1(s0,X2)
+      & choose3(X14,X2,X4,X3)
+      & is_death_of_2(s0,X1,X14)
+      & is_sensation_as_if_2(s0,X4,S12)
+      & is_sensation_of_2(s0,X4,X3)
+      & is_even_annoyed_at_2(s0,A9,S10)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & ? [S15] :
+          ( fact_2(s0,S12,S15)
+          & had_freed_3(S15,E5,X1,X13)
+          & from_2(S15,E5,X2) )
+      & ? [S16] :
+          ( fact_2(s0,S10,S16)
+          & discovering_3(S16,E6,unspecified,X4)
+          & in_2(S16,E6,X11) )
+      & felt_3(s0,E7,X8,A9) ) )).
+
+% ::id 100_fiction_JOYCE-1914;AT29-6;NE
+% ::snt I wondered at this for , as my uncle had said the night before , he had taught me a great deal .
+fof(ex1414051455222,axiom,(
+    ? [X13,X12,X7,T1,X10,X8,X2,X3,E4,E5,E6,S11,S9] :
+      ( before_1(s0,T1)
+      & night_1(s0,T1)
+      & choose1(X10,X8)
+      & is_uncle_of_2(s0,X2,X12)
+      & great_1(s0,X3)
+      & deal_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S14] :
+          ( fact_2(s0,S11,S14)
+          & had_said_2(S14,E4,X2)
+          & tmp_2(S14,E4,T1) )
+      & ? [S15] :
+          ( fact_2(s0,S9,S15)
+          & had_taught_4(S15,E5,X10,X3,X13)
+          & as_2(S15,E5,S11) )
+      & wondered_2(s0,E6,X7)
+      & at_2(s0,E6,X8)
+      & for_2(s0,E6,S9) ) )).
+
+% ::id 101_fiction_JOYCE-1914;AT29-7;NE
+% ::snt He had studied in the Irish college in Rome
+fof(ex1414051455576,axiom,(
+    ? [X1,X3,E2] :
+      ( irish_1(s0,X1)
+      & is_college_in_2(s0,X1,rome)
+      & is_before_2(s0,E2,e0)
+      & had_studied_2(s0,E2,X3)
+      & in_2(s0,E2,X1) ) )).
+
+% ::id 102_fiction_JOYCE-1914;AT29-8;NE
+% ::snt and he had taught me to pronounce Latin properly .
+fof(ex1414051455930,axiom,(
+    ? [X4,X3,E1,E2] :
+      ( properly_1(s0,E1)
+      & is_before_2(s0,E2,e0)
+      & ? [S5] :
+          ( had_taught_4(s0,E2,X3,X4,S5)
+          & pronounce_3(S5,E1,X4,latin) ) ) )).
+
+% ::id 103_fiction_JOYCE-1914;AT29-9;NE
+% ::snt He had told me stories about the catacombs and about Napoleon Bonaparte ,
+fof(ex1414051456286,axiom,(
+    ? [X5,G1,X4,G2,E3] :
+      ( catacombs_1(s0,G1)
+      & is_stories_about_2(s0,G2,G1)
+      & is_stories_about_2(s0,G2,napoleon_bonaparte)
+      & is_before_2(s0,E3,e0)
+      & had_told_4(s0,E3,X4,G2,X5) ) )).
+
+% ::id 104_fiction_JOYCE-1914;AT29-10;NE
+% ::snt and he had explained to me the meaning of the different ceremonies of the Mass and of the different vestments worn by the priest .
+fof(ex1414051456655,axiom,(
+    ? [X9,X1,X2,X3,G4,G5,E6,X8,E7] :
+      ( mass_1(s0,X1)
+      & priest_1(s0,X2)
+      & is_meaning_of_2(s0,X3,G4)
+      & is_meaning_of_2(s0,X3,G5)
+      & different_1(s0,G4)
+      & is_ceremonies_of_2(s0,G4,X1)
+      & different_1(s0,G5)
+      & worn_3(s0,E6,X2,G5)
+      & vestments_1(s0,G5)
+      & is_before_2(s0,E7,e0)
+      & had_explained_3(s0,E7,X8,X3)
+      & to_2(s0,E7,X9) ) )).
+
+% ::id 105_fiction_JOYCE-1914;AT29-11;NE
+% ::snt Sometimes he had amused himself by putting difficult questions to me , asking me what one should do in certain circumstances or whether such and such sins were mortal or venial or only imperfections .
+fof(ex1414051457061,axiom,(
+    ? [X9,X8,X7,X6,G1,T2,E3,E4,E5] :
+      ( choose1(X7,X6)
+      & difficult_1(s0,G1)
+      & questions_1(s0,G1)
+      & times_1(s0,T2)
+      & is_before_2(s0,E5,e0)
+      & ? [S17] :
+          ( asking_4(s0,E3,G1,X9,S17)
+          & ? [X10,X11,G12,A16,E13] :
+              ( one_1(S17,X11)
+              & such_1(S17,G12)
+              & such_1(S17,G12)
+              & sins_1(S17,G12)
+              & mortal_1(S17,A16)
+              & venial_1(S17,A16)
+              & only_1(S17,A16)
+              & imperfections_1(S17,A16)
+              & is_before_2(S17,E13,E3)
+              & ? [G14,E15] :
+                  ( certain_1(S17,G14)
+                  & circumstances_1(S17,G14)
+                  & do_3(S17,E15,X11,X10)
+                  & in_2(S17,E15,G14) )
+              & were_3(S17,E13,G12,A16) ) )
+      & putting_3(s0,E4,X7,G1)
+      & to_2(s0,E4,X8)
+      & had_amused_3(s0,E5,X6,X7)
+      & tmp_2(s0,E5,T2) ) )).
+
+% ::id 106_fiction_JOYCE-1914;AT29-12;NE
+% ::snt His questions showed me how complex and mysterious were certain institutions of the Church which I had always regarded as the simplest acts .
+fof(ex1414051457444,axiom,(
+    ? [X12,X6,X1,G2,X5,G3,E4] :
+      ( church_1(s0,X1)
+      & simplest_1(s0,G2)
+      & acts_1(s0,G2)
+      & is_questions_of_2(s0,G3,X5)
+      & is_before_2(s0,E4,e0)
+      & ? [S13] :
+          ( showed_4(s0,E4,G3,X6,S13)
+          & ? [X7,G8,A11,E9,E10] :
+              ( certain_1(S13,G8)
+              & had_regarded_3(S13,E9,X12,G8)
+              & as_2(S13,E9,G2)
+              & is_institutions_of_2(S13,G8,X1)
+              & is_how_2(S13,A11,X7)
+              & complex_1(S13,A11)
+              & mysterious_1(S13,A11)
+              & always_1(S13,E9)
+              & is_before_2(S13,E9,E4)
+              & is_before_2(S13,E10,E4)
+              & were_3(S13,E10,G8,A11) ) ) ) )).
+
+% ::id 107_fiction_JOYCE-1914;AT29-13;NE
+% ::snt The duties of the priest towards the Eucharist and towards the secrecy of the confessional seemed so grave to me that I wondered how anybody had ever found in himself the courage to undertake them ;
+fof(ex1414051457838,axiom,(
+    ? [X11,X10,X1,X2,X3,X4,G16,G5,E6,A9,E7,E8] :
+      ( is_priest_towards_2(s0,X1,eucharist)
+      & confessional_1(s0,X2)
+      & is_secrecy_of_2(s0,X3,X2)
+      & ? [S17] :
+          ( courage_2(s0,X4,S17)
+          & undertake_3(S17,E6,unspecified,G16) )
+      & is_duties_of_2(s0,G5,X1)
+      & is_duties_towards_2(s0,G5,X3)
+      & choose1(G16,G5)
+      & is_so_grave_to_2(s0,A9,X10)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [S18] :
+          ( wondered_3(s0,E7,X11,S18)
+          & ? [X12,X15,E13] :
+              ( choose1(X15)
+              & is_how_2(S18,E13,X12)
+              & ever_1(S18,E13)
+              & is_before_2(S18,E13,E7)
+              & ? [X14] :
+                  ( body_1(S18,X14)
+                  & had_found_3(S18,E13,X14,X4)
+                  & in_2(S18,E13,X15) ) ) )
+      & seemed_3(s0,E8,G5,A9) ) )).
+
+% ::id 108_fiction_JOYCE-1914;AT29-14;NE
+% ::snt and I was not surprised when he told me that the fathers of the Church had written books as thick as the Post Office Directory and as closely printed as the law notices in the newspaper , elucidating all these intricate questions .
+fof(ex1414051458230,axiom,(
+    ? [X15,X5,X1,X2,G3,G4,A6,S7] :
+      ( post_office_directory_1(s0,X1)
+      & newspaper_1(s0,X2)
+      & is_fathers_of_2(s0,G4,church)
+      & is_law_notices_in_2(s0,G3,X2)
+      & surprised_1(s0,A6)
+      & ? [X14,G8,T9,S13,E10,E11,E12] :
+          ( is_as_thick_as_2(s0,G8,X1)
+          & is_as_closely_printed_as_2(s0,G8,G3)
+          & ? [G16] :
+              ( intricate_1(s0,G16)
+              & questions_1(s0,G16)
+              & elucidating_3(s0,E10,G8,G16) )
+          & books_1(s0,G8)
+          & ? [S18] :
+              ( fact_2(s0,S13,S18)
+              & ? [S19] :
+                  ( told_4(S18,E12,X14,X15,S19)
+                  & had_written_3(S19,E11,G4,G8) ) )
+          & is_when_2(s0,S13,T9)
+          & is_before_2(s0,E11,E12)
+          & is_before_2(s0,E12,e0)
+          & is_tmp_2(s0,S7,T9) )
+      & ? [S20] :
+          ( fact_2(s0,S7,S20)
+          & ? [E17] :
+              ( is_before_2(S20,E17,e0)
+              & was_3(S20,E17,X5,A6) ) ) ) )).
+
+% ::id 109_fiction_JOYCE-1914;AT29-15;NE
+% ::snt Often when I thought of this I could make no answer or only a very foolish and halting one upon which he used to smile and nod his head twice or thrice .
+fof(ex1414051458634,axiom,(
+    ? [X4,X1,S2] :
+      ( often_1(s0,S2)
+      & ? [S21] :
+          ( fact_2(s0,S2,S21)
+          & ! [X5,E3] :
+              ( is_before_2(S21,E3,e0)
+             => ( thought_2(S21,E3,X4)
+                & of_2(S21,E3,X5)
+                & ? [G6,E7] :
+                    ( ? [X8] :
+                        ( answer_1(S21,X8)
+                        & is_of_2(S21,X8,G6) )
+                    & ? [X17,X16,X9,X10,G11,E12,E13,E14] :
+                        ( choose2(X17,X16,X10)
+                        & is_head_of_2(S21,X9,X17)
+                        & very_foolish_1(S21,X10)
+                        & halting_1(S21,X10)
+                        & ? [X15,S22] :
+                            ( used_3(S21,E14,X16,S22)
+                            & smile_2(S22,E12,X16)
+                            & upon_2(S22,E12,X15)
+                            & nod_3(S22,E13,X16,X9)
+                            & upon_2(S22,E13,X10)
+                            & tmp_2(S22,E13,G11) )
+                        & one_1(S21,X10)
+                        & ? [G18] :
+                            ( twice_1(S21,G18)
+                            & is_of_2(S21,G18,G11) )
+                        & ? [G19] :
+                            ( thrice_1(S21,G19)
+                            & is_of_2(S21,G19,G11) )
+                        & is_before_2(S21,E14,e0)
+                        & ? [X20] :
+                            ( is_of_2(S21,X20,X10)
+                            & is_of_2(S21,X20,G6) ) )
+                    & make_3(S21,E7,X1,G6) ) ) ) ) ) )).
+
+% ::id 110_fiction_JOYCE-1914;AT29-16;NE
+% ::snt Sometimes he used to put me through the responses of the Mass which he had made me learn by heart ;
+fof(ex1414051459010,axiom,(
+    ? [X12,X11,X10,X1,X2,G3,E4,E5,X9,T6,E7,E8] :
+      ( mass_1(s0,X2)
+      & choose2(X11,X2,X9)
+      & heart_1(s0,X1)
+      & ? [S13] :
+          ( had_made_3(s0,E5,X11,S13)
+          & is_learn_3(S13,E4,X12,G3)
+          & by_2(S13,E4,X1) )
+      & is_responses_of_2(s0,G3,X2)
+      & is_before_2(s0,E5,E8)
+      & times_1(s0,T6)
+      & is_before_2(s0,E8,e0)
+      & ? [S14] :
+          ( used_3(s0,E8,X9,S14)
+          & put_3(S14,E7,X9,X10)
+          & through_2(S14,E7,G3) )
+      & tmp_2(s0,E8,T6) ) )).
+
+% ::id 111_fiction_JOYCE-1914;AT29-17;NE
+% ::snt and , as I pattered , he used to smile pensively and nod his head , now and then pushing huge pinches of snuff up each nostril alternately .
+fof(ex1414051459391,axiom,(
+    ? [X11,X13,X9,X1,X2,G3,E4,E5,E6,E7,E8,S10] :
+      ( snuff_1(s0,X1)
+      & choose2(X13,X9,X1)
+      & is_head_of_2(s0,X2,X13)
+      & huge_1(s0,G3)
+      & is_pinches_of_2(s0,G3,X1)
+      & is_before_2(s0,E4,e0)
+      & now_1(s0,E5)
+      & then_1(s0,E5)
+      & alternately_1(s0,E5)
+      & is_before_2(s0,E8,e0)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & pattered_2(S14,E4,X11) )
+      & ? [X12] :
+          ( nostril_1(s0,X12)
+          & pushing_4(s0,E5,X9,unspecified,G3)
+          & up_2(s0,E5,X12) )
+      & ? [S15] :
+          ( used_3(s0,E8,X9,S15)
+          & pensively_1(S15,X9)
+          & smile_2(S15,E6,X9)
+          & nod_3(S15,E7,X9,X2) )
+      & as_2(s0,E8,S10) ) )).
+
+% ::id 112_fiction_JOYCE-1914;AT29-18;NE
+% ::snt When he smiled he used to uncover his big discoloured teeth and let his tongue lie upon his lower lip -- a habit which had made me feel uneasy in the beginning of our acquaintance before I knew him well .
+fof(ex1414051459796,axiom,(
+    ? [X22,X21,X17,X1,X2,X19,E3,S20,X4] :
+      ( is_acquaintance_of_2(s0,X1,X19)
+      & choose4(X22,X2,X1,X4)
+      & is_beginning_of_2(s0,X2,X1)
+      & is_beginning_before_2(s0,X2,S20)
+      & well_1(s0,E3)
+      & is_before_2(s0,E3)
+      & ? [S26] :
+          ( fact_2(s0,S20,S26)
+          & knew_3(S26,E3,X21,X22) )
+      & ! [X6,E5] :
+          ( ( choose1(X6,X4)
+            & is_before_2(s0,E5,e0) )
+         => ( smiled_2(s0,E5,X6)
+            & ? [X25,X24,X23,X7,X8,X9,G10,A18,E11,E12,E13,E14,E15,E16] :
+                ( ? [S27] :
+                    ( had_made_3(s0,E12,X9,S27)
+                    & is_feel_3(S27,E11,X17,A18) )
+                & habit_1(s0,X9)
+                & choose4(X23,X4,X9,X2,X1)
+                & choose4(X24,X4,X9,X2,X1)
+                & is_tongue_of_2(s0,X8,X24)
+                & choose5(X25,X8,X4,X9,X2,X1)
+                & lower_1(s0,X7)
+                & is_lip_of_2(s0,X7,X25)
+                & big_1(s0,G10)
+                & discoloured_1(s0,G10)
+                & is_teeth_of_2(s0,G10,X23)
+                & is_uneasy_in_2(s0,A18,X2)
+                & is_before_2(s0,E12,e0)
+                & is_before_2(s0,E16,e0)
+                & ? [S28] :
+                    ( used_3(s0,E16,X4,S28)
+                    & uncover_3(S28,E13,X4,G10)
+                    & ? [S29] :
+                        ( let_3(S28,E15,X4,S29)
+                        & lie_2(S29,E14,X8)
+                        & upon_2(S29,E14,X7) ) )
+                & circumstance_2(s0,E16,X9) ) ) ) ) )).
+
+% ::id 113_fiction_JOYCE-1914;AT30-1;NE
+% ::snt As I walked along in the sun I remembered old Cotter's words and tried to remember what had happened afterwards in the dream .
+fof(ex1414051460177,axiom,(
+    ? [X9,X8,X1,X2,G3,E4,E5,E6,E7] :
+      ( sun_1(s0,X1)
+      & dream_1(s0,X2)
+      & is_words_of_2(s0,G3,old_cotter)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & walked_2(s0,E4,X9)
+      & along_in_2(s0,E4,X1)
+      & remembered_3(s0,E5,X8,G3)
+      & ? [S12] :
+          ( tried_3(s0,E7,X8,S12)
+          & ? [S13] :
+              ( remember_3(S12,E6,X8,S13)
+              & ? [X10,E11] :
+                  ( afterwards_1(S13,E11)
+                  & is_before_2(S13,E11,E6)
+                  & had_happened_2(S13,E11,X10)
+                  & in_2(S13,E11,X2) ) ) ) ) )).
+
+% ::id 114_fiction_JOYCE-1914;AT30-2;NE
+% ::snt I remembered that I had noticed long velvet curtains and a swinging lamp of antique fashion .
+fof(ex1414051460577,axiom,(
+    ? [X5,X4,G1,E2,E3] :
+      ( ? [G6] :
+          ( long_1(s0,G6)
+          & velvet_curtains_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & ? [X7,X8] :
+          ( antique_1(s0,X7)
+          & fashion_1(s0,X7)
+          & swinging_1(s0,X8)
+          & is_lamp_of_2(s0,X8,X7)
+          & is_of_2(s0,X8,G1) )
+      & is_before_2(s0,E2,E3)
+      & is_before_2(s0,E3,e0)
+      & ? [S9] :
+          ( remembered_3(s0,E3,X4,S9)
+          & had_noticed_3(S9,E2,X5,G1) ) ) )).
+
+% ::id 115_fiction_JOYCE-1914;AT30-3;NE
+% ::snt I felt that I had been very far away , in some land where the customs were strange --
+fof(ex1414051460946,axiom,(
+    ? [X7,X6,G1,X2,A10,S9,S8,E3,E4,E5] :
+      ( customs_1(s0,G1)
+      & were_3(s0,E3,G1,A10)
+      & land_1(s0,X2)
+      & strange_1(s0,A10)
+      & very_far_1(s0,S8)
+      & away_1(s0,S9)
+      & is_where_2(s0,E3,X2)
+      & is_before_2(s0,E3,E5)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S11] :
+          ( felt_3(s0,E5,X6,S11)
+          & ? [S12] :
+              ( fact_2(S11,S8,S12)
+              & ? [S13] :
+                  ( fact_2(S12,S9,S13)
+                  & had_been_2(S13,E4,X7)
+                  & in_2(S13,E4,X2) ) ) ) ) )).
+
+% ::id 116_fiction_JOYCE-1914;AT30-4;NE
+% ::snt in Persia , I thought ... .
+fof(ex1414051461299,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S4] :
+          ( thought_3(s0,E1,X2,S4)
+          & ? [E3] :
+              ( xxx_1(S4,E3)
+              & in_2(S4,E3,persia) ) ) ) )).
+
+% ::id 117_fiction_JOYCE-1914;AT30-5;NE
+% ::snt But I could not remember the end of the dream .
+fof(ex1414051461657,axiom,(
+    ? [X3,X1,X2] :
+      ( dream_1(s0,X1)
+      & is_end_of_2(s0,X2,X1)
+      & ? [E4] : remember_3(s0,E4,X3,X2) ) )).
+
+% ::id 118_fiction_JOYCE-1914;AT31-1;NE
+% ::snt In the evening my aunt took me with her to visit the house of mourning .
+fof(ex1414051462012,axiom,(
+    ? [X8,X7,X1,X2,X9,X3,T4,E5,E6,S10] :
+      ( mourning_1(s0,X1)
+      & is_house_of_2(s0,X2,X1)
+      & is_aunt_of_2(s0,X3,X7)
+      & evening_1(s0,T4)
+      & is_before_2(s0,E6,e0)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & visit_3(S11,E5,X8,X2) )
+      & took_3(s0,E6,X3,X8)
+      & in_2(s0,E6,T4)
+      & with_2(s0,E6,X9)
+      & prp_2(s0,E6,S10) ) )).
+
+% ::id 119_fiction_JOYCE-1914;AT31-2;NE
+% ::snt It was after sunset ;
+fof(ex1414051462357,axiom,(
+    ? [X3,X1,E2] :
+      ( sunset_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_2(s0,E2,X3)
+      & after_2(s0,E2,X1) ) )).
+
+% ::id 120_fiction_JOYCE-1914;AT31-3;NE
+% ::snt but the window-panes of the houses that looked to the west reflected the tawny gold of a great bank of clouds .
+fof(ex1414051462725,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,E7,E8] :
+      ( west_1(s0,X1)
+      & great_1(s0,X2)
+      & is_bank_of_2(s0,X2,G5)
+      & tawny_1(s0,X3)
+      & is_gold_of_2(s0,X3,X2)
+      & looked_2(s0,E7,G4)
+      & to_2(s0,E7,X1)
+      & houses_1(s0,G4)
+      & is_window_panes_of_2(s0,G6,G4)
+      & clouds_1(s0,G5)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & reflected_3(s0,E8,G6,X3) ) )).
+
+% ::id 121_fiction_JOYCE-1914;AT31-4;NE
+% ::snt Nannie received us in the hall ;
+fof(ex1414051463076,axiom,(
+    ? [X1,X3,E2] :
+      ( hall_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & received_3(s0,E2,nannie,X3)
+      & in_2(s0,E2,X1) ) )).
+
+% ::id 122_fiction_JOYCE-1914;AT31-5;NE
+% ::snt and , as it would have been unseemly to have shouted at her , my aunt shook hands with her for all .
+fof(ex1414051463440,axiom,(
+    ? [X5,X11,X8,X1,G2,E3,E4,S7,S6] :
+      ( is_aunt_of_2(s0,X1,X5)
+      & choose1(X8,X1)
+      & hands_1(s0,G2)
+      & is_before_2(s0,E4,e0)
+      & ? [S13] :
+          ( fact_2(s0,S7,S13)
+          & have_shouted_1(S13,E3)
+          & at_2(S13,E3,X8) )
+      & ? [S14] :
+          ( fact_2(s0,S6,S14)
+          & ? [A10,E9] :
+              ( unseemly_1(S14,A10)
+              & have_been_3(S14,E9,S7,A10) ) )
+      & ? [X12] :
+          ( shook_3(s0,E4,X1,G2)
+          & as_2(s0,E4,S6)
+          & with_2(s0,E4,X11)
+          & for_2(s0,E4,X12) ) ) )).
+
+% ::id 123_fiction_JOYCE-1914;AT31-6;NE
+% ::snt The old woman pointed upwards interrogatively and , on my aunt's nodding , proceeded to toil up the narrow staircase before us , her bowed head being scarcely above the level of the banister-rail .
+fof(ex1414051463822,axiom,(
+    ? [X12,X1,X2,X3,X4,X13,X14,X5,X6,X7,E8,E9,E10,E11] :
+      ( old_1(s0,X4)
+      & woman_1(s0,X4)
+      & narrow_1(s0,X3)
+      & staircase_1(s0,X3)
+      & banister_rail_1(s0,X1)
+      & is_level_of_2(s0,X2,X1)
+      & is_aunt_of_2(s0,X5,X12)
+      & is_nodding_of__2(s0,X7,X5)
+      & choose4(X14,X4,X3,X7,X5)
+      & bowed_1(s0,X6)
+      & is_head_of_2(s0,X6,X14)
+      & interrogatively_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E11,e0)
+      & pointed_upwards_2(s0,E8,X4)
+      & ? [S15] :
+          ( proceeded_3(s0,E11,X4,S15)
+          & being_2(S15,E9,X6)
+          & scarcely_above_2(S15,E9,X2)
+          & toil_2(S15,E10,X4)
+          & up_2(S15,E10,X3)
+          & before_2(S15,E10,X13) )
+      & on_2(s0,E11,X7) ) )).
+
+% ::id 124_fiction_JOYCE-1914;AT31-7;NE
+% ::snt At the first landing she stopped and beckoned us forward encouragingly towards the open door of the dead-room .
+fof(ex1414051464188,axiom,(
+    ? [X1,X2,X3,X7,X6,E4,E5] :
+      ( first_1(s0,X3)
+      & landing_1(s0,X3)
+      & dead_room_1(s0,X1)
+      & open_1(s0,X2)
+      & is_door_of_2(s0,X2,X1)
+      & is_before_2(s0,E4,e0)
+      & forward_1(s0,E5)
+      & encouragingly_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & stopped_2(s0,E4,X6)
+      & at_2(s0,E4,X3)
+      & beckoned_3(s0,E5,X6,X7)
+      & towards_2(s0,E5,X2)
+      & at_2(s0,E5,X3) ) )).
+
+% ::id 125_fiction_JOYCE-1914;AT31-8;NE
+% ::snt My aunt went in
+fof(ex1414051464541,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & went_in_2(s0,E2,X1) ) )).
+
+% ::id 126_fiction_JOYCE-1914;AT31-9;NE
+% ::snt and the old woman , seeing that I hesitated to enter , began to beckon to me again repeatedly with her hand .
+fof(ex1414051464918,axiom,(
+    ? [X10,X8,X1,X11,X2,E3,E4,E5,E6,E7,S9] :
+      ( old_1(s0,X1)
+      & woman_1(s0,X1)
+      & choose1(X11,X1)
+      & is_hand_of_2(s0,X2,X11)
+      & is_before_2(s0,E4,E5)
+      & again_1(s0,E6)
+      & repeatedly_1(s0,E6)
+      & is_before_2(s0,E7,e0)
+      & ? [S12] :
+          ( fact_2(s0,S9,S12)
+          & enter_2(S12,E3,X8) )
+      & ? [S13] :
+          ( seeing_3(s0,E5,X1,S13)
+          & hesitated_2(S13,E4,X8)
+          & prp_2(S13,E4,S9) )
+      & ? [S14] :
+          ( began_3(s0,E7,X1,S14)
+          & beckon_2(S14,E6,X1)
+          & to_2(S14,E6,X10)
+          & with_2(S14,E6,X2) ) ) )).
+
+% ::id 127_fiction_JOYCE-1914;AT32-1;NE
+% ::snt I went in on tiptoe .
+fof(ex1414051465266,axiom,(
+    ? [X3,X1,E2] :
+      ( tiptoe_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & went_in_2(s0,E2,X3)
+      & on_2(s0,E2,X1) ) )).
+
+% ::id 128_fiction_JOYCE-1914;AT32-2;NE
+% ::snt The room through the lace end of the blind was suffused with dusky golden light amid which the candles looked like pale thin flames .
+fof(ex1414051465639,axiom,(
+    ? [X1,X2,X3,G4,X5,G6,A9,E7,E8] :
+      ( blind_1(s0,X1)
+      & is_lace_end_of_2(s0,X2,X1)
+      & is_room_through_2(s0,X3,X2)
+      & candles_1(s0,G4)
+      & dusky_1(s0,X5)
+      & golden_1(s0,X5)
+      & looked_3(s0,E7,G4,A9)
+      & amid_2(s0,E7,X5)
+      & light_1(s0,X5)
+      & pale_1(s0,G6)
+      & thin_1(s0,G6)
+      & flames_1(s0,G6)
+      & is_like_of_2(s0,A9,G6)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & suffused_3(s0,E8,unspecified,X3)
+      & with_2(s0,E8,X5) ) )).
+
+% ::id 129_fiction_JOYCE-1914;AT32-3;NE
+% ::snt He had been coffined .
+fof(ex1414051465986,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & had_coffined_3(s0,E1,unspecified,X2) ) )).
+
+% ::id 130_fiction_JOYCE-1914;AT32-4;NE
+% ::snt Nannie gave the lead and we three knelt down at the foot of the bed .
+fof(ex1414051466341,axiom,(
+    ? [X1,X2,X3,X7,X4,E5,E6] :
+      ( lead_1(s0,X1)
+      & bed_1(s0,X2)
+      & is_foot_of_2(s0,X3,X2)
+      & three_1(s0,X4)
+      & is_msr_of_2(s0,X7,X4)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & gave_3(s0,E5,nannie,X1)
+      & knelt_down_2(s0,E6,X7)
+      & at_2(s0,E6,X3) ) )).
+
+% ::id 131_fiction_JOYCE-1914;AT32-5;NE
+% ::snt I pretended to pray but I could not gather my thoughts because the old woman's mutterings distracted me .
+fof(ex1414051466715,axiom,(
+    ? [X10,X9,X8,X7,X1,G2,G3,E4,E5,E6] :
+      ( old_1(s0,X1)
+      & woman_1(s0,X1)
+      & is_thoughts_of_2(s0,G3,X9)
+      & is_mutterings_of_2(s0,G2,X1)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S12] :
+          ( pretended_3(s0,E5,X7,S12)
+          & pray_2(S12,E4,X7) )
+      & distracted_3(s0,E6,G2,X10)
+      & ? [E11] : gather_3(s0,E11,X8,G3) ) )).
+
+% ::id 132_fiction_JOYCE-1914;AT32-6;NE
+% ::snt I noticed how clumsily her skirt was hooked at the back and how the heels of her cloth boots were trodden down all to one side .
+fof(ex1414051467101,axiom,(
+    ? [X13,X5,X1,G2,G3,E4] :
+      ( back_1(s0,X1)
+      & choose4(X13,X1)
+      & is_cloth_boots_of_2(s0,G2,X13)
+      & is_heels_of_2(s0,G3,G2)
+      & is_before_2(s0,E4,e0)
+      & ? [S15] :
+          ( noticed_3(s0,E4,X5,S15)
+          & ? [X6,X7,X12,X8,X9,E10,E11] :
+              ( choose1(X12,X6)
+              & is_skirt_of_2(S15,X8,X12)
+              & one_1(S15,X9)
+              & side_1(S15,X9)
+              & is_clumsily_how_2(S15,E10,X6)
+              & is_before_2(S15,E10,E4)
+              & is_how_2(S15,E11,X7)
+              & is_before_2(S15,E11,E4)
+              & hooked_3(S15,E10,unspecified,X8)
+              & at_2(S15,E10,X1)
+              & ? [X14] :
+                  ( is_to_2(S15,X14,X9)
+                  & trodden_down_3(S15,E11,unspecified,G3)
+                  & circumstance_2(S15,E11,X14) ) ) ) ) )).
+
+% ::id 133_fiction_JOYCE-1914;AT32-7;NE
+% ::snt The fancy came to me that the old priest was smiling as he lay there in his coffin .
+fof(ex1414051467475,axiom,(
+    ? [X11,X10,X9,X8,X1,X2,X3,E4,E5,S7,E6] :
+      ( old_1(s0,X2)
+      & priest_1(s0,X2)
+      & choose1(X8,X2)
+      & choose1(X9,X2)
+      & choose3(X10,X8,X9,X2)
+      & is_coffin_of_2(s0,X1,X10)
+      & ? [S12] :
+          ( fancy_2(s0,X3,S12)
+          & was_smiling_2(S12,E5,X2)
+          & as_2(S12,E5,S7) )
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & ? [S13] :
+          ( fact_2(s0,S7,S13)
+          & lay_2(S13,E4,X8)
+          & loc_2(S13,E4,X9)
+          & in_2(S13,E4,X1) )
+      & is_before_2(s0,E6,e0)
+      & came_2(s0,E6,X3)
+      & to_2(s0,E6,X11) ) )).
+
+% ::id 134_fiction_JOYCE-1914;AT33-1;NE
+% ::snt But no . When we rose and went up to the head of the bed I saw that he was not smiling .
+fof(ex1414051467852,axiom,(
+    ? [X4,X1,X2,X9,X10,E3] :
+      ( bed_1(s0,X1)
+      & is_head_of_2(s0,X2,X1)
+      & choose2(X10,X2,X1)
+      & ? [T5,S8,E6,E7] :
+          ( ? [S12] :
+              ( fact_2(s0,S8,S12)
+              & rose_2(S12,E6,X9)
+              & went_up_2(S12,E7,X9)
+              & to_2(S12,E7,X2) )
+          & is_when_2(s0,S8,T5)
+          & is_before_2(s0,E6,e0)
+          & is_before_2(s0,E7,e0)
+          & is_tmp_2(s0,E3,T5) )
+      & is_before_2(s0,E3,e0)
+      & ? [S13] :
+          ( saw_3(s0,E3,X4,S13)
+          & ? [E11] :
+              ( is_before_2(S13,E11,E3)
+              & was_smiling_2(S13,E11,X10) ) ) ) )).
+
+% ::id 135_fiction_JOYCE-1914;AT33-2;NE
+% ::snt There he lay , solemn and copious , vested as for the altar , his large hands loosely retaining a chalice .
+fof(ex1414051468231,axiom,(
+    ? [X1,X9,X8,X7,X2,G3,E4,E5,E6] :
+      ( altar_1(s0,X1)
+      & choose3(X9,X8,X7,X1)
+      & chalice_1(s0,X2)
+      & large_1(s0,G3)
+      & is_hands_of_2(s0,G3,X9)
+      & loosely_1(s0,E5)
+      & is_before_2(s0,E6,e0)
+      & solemn_1(s0,X8)
+      & copious_1(s0,X8)
+      & vested_3(s0,E4,unspecified,X8)
+      & as_for_2(s0,E4,X1)
+      & retaining_3(s0,E5,G3,X2)
+      & lay_2(s0,E6,X8)
+      & loc_2(s0,E6,X7) ) )).
+
+% ::id 136_fiction_JOYCE-1914;AT33-3;NE
+% ::snt His face was very truculent , grey and massive , with black cavernous nostrils and circled by a scanty white fur .
+fof(ex1414051468597,axiom,(
+    ? [X6,X1,X2,G3,A7,E4,E5] :
+      ( is_face_of_2(s0,X2,X6)
+      & scanty_1(s0,X1)
+      & white_1(s0,X1)
+      & fur_1(s0,X1)
+      & black_1(s0,G3)
+      & cavernous_1(s0,G3)
+      & nostrils_1(s0,G3)
+      & very_truculent_1(s0,A7)
+      & grey_1(s0,A7)
+      & massive_1(s0,A7)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & was_3(s0,E4,X2,A7)
+      & with_2(s0,E4,G3)
+      & circled_3(s0,E5,X1,X2) ) )).
+
+% ::id 137_fiction_JOYCE-1914;AT33-4;NE
+% ::snt There was a heavy odour in the room -- the flowers .
+fof(ex1414051468951,axiom,(
+    ? [X1,G2,X3,E4] :
+      ( room_1(s0,X1)
+      & flowers_1(s0,G2)
+      & heavy_1(s0,X3)
+      & odour_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & was_2(s0,E4,X3)
+      & in_2(s0,E4,X1)
+      & circumstance_2(s0,E4,G2) ) )).
+
+% ::id 138_fiction_JOYCE-1914;AT34-1;NE
+% ::snt We blessed ourselves and came away .
+fof(ex1414051469301,axiom,(
+    ? [X4,X3,E1,E2] :
+      ( choose1(X4,X3)
+      & is_before_2(s0,E1,e0)
+      & away_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & blessed_3(s0,E1,X3,X4)
+      & came_2(s0,E2,X3) ) )).
+
+% ::id 139_fiction_JOYCE-1914;AT34-2;NE
+% ::snt In the little room downstairs we found Eliza seated in his arm-chair in state .
+fof(ex1414051469682,axiom,(
+    ? [X1,X2,X7,X8,X3,X4,E5,E6] :
+      ( stairs_1(s0,X1)
+      & little_1(s0,X2)
+      & is_room_down_2(s0,X2,X1)
+      & choose3(X8,eliza,X2,X1)
+      & state_1(s0,X3)
+      & is_arm_chair_in_2(s0,X4,X3)
+      & is_arm_chair_of_2(s0,X4,X8)
+      & is_before_2(s0,E6,e0)
+      & ? [S9] :
+          ( found_3(s0,E6,X7,S9)
+          & is_seated_2(S9,E5,eliza)
+          & in_2(S9,E5,X4) )
+      & in_2(s0,E6,X2) ) )).
+
+% ::id 140_fiction_JOYCE-1914;AT34-3;NE
+% ::snt I groped my way towards my usual chair in the corner while Nannie went to the sideboard and brought out a decanter of sherry and some wine-glasses .
+fof(ex1414051470059,axiom,(
+    ? [X11,X10,X9,X1,X2,X3,X4,G5,E6,E7,E8] :
+      ( corner_1(s0,X2)
+      & sideboard_1(s0,X1)
+      & is_way_of_2(s0,X4,X10)
+      & usual_1(s0,X3)
+      & is_chair_of_2(s0,X3,X11)
+      & ? [X12,X13] :
+          ( sherry_1(s0,X12)
+          & is_decanter_of_2(s0,X13,X12)
+          & is_of_2(s0,X13,G5) )
+      & ? [G14] :
+          ( wine_glasses_1(s0,G14)
+          & is_of_2(s0,G14,G5) )
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & went_2(s0,E6,nannie)
+      & to_2(s0,E6,X1)
+      & brought_out_3(s0,E7,nannie,G5)
+      & groped_3(s0,E8,X9,X4)
+      & towards_2(s0,E8,X3)
+      & in_2(s0,E8,X2) ) )).
+
+% ::id 141_fiction_JOYCE-1914;AT34-4;NE
+% ::snt She set these on the table and invited us to take a little glass of wine .
+fof(ex1414051470421,axiom,(
+    ? [X1,X9,X7,X2,X3,G8,E4,E5,E6] :
+      ( table_1(s0,X1)
+      & wine_1(s0,X2)
+      & little_1(s0,X3)
+      & is_glass_of_2(s0,X3,X2)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E6,e0)
+      & set_3(s0,E4,X7,G8)
+      & on_2(s0,E4,X1)
+      & ? [S10] :
+          ( invited_4(s0,E6,X7,X9,S10)
+          & take_3(S10,E5,X9,X3) ) ) )).
+
+% ::id 142_fiction_JOYCE-1914;AT34-5;NE
+% ::snt Then , at her sister's bidding , she filled out the sherry into the glasses and passed them to us .
+fof(ex1414051470789,axiom,(
+    ? [X1,X11,G2,X9,X7,X3,X4,G10,S8,E5,E6] :
+      ( sherry_1(s0,X1)
+      & glasses_1(s0,G2)
+      & choose1(X9,X7)
+      & is_sister_of_2(s0,X3,X9)
+      & is_bidding_of__2(s0,X4,X3)
+      & choose1(G10,G2)
+      & then_1(s0,S8)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S12] :
+          ( fact_2(s0,S8,S12)
+          & filled_out_3(S12,E5,X7,X1)
+          & into_2(S12,E5,G2)
+          & at_2(S12,E5,X4)
+          & passed_3(S12,E6,X7,G10)
+          & to_2(S12,E6,X11)
+          & at_2(S12,E6,X4) ) ) )).
+
+% ::id 143_fiction_JOYCE-1914;AT34-6;NE
+% ::snt She pressed me to take some cream crackers also but I declined because I thought I would make too much noise eating them .
+fof(ex1414051471165,axiom,(
+    ? [X11,X10,X9,X7,X6,G1,E2,E3,E4,E5,S8] :
+      ( cream_crackers_1(s0,G1)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & ? [S16] :
+          ( fact_2(s0,S8,S16)
+          & take_also_3(S16,E2,X7,G1) )
+      & pressed_3(s0,E3,X6,X7)
+      & prp_2(s0,E3,S8)
+      & ? [S17] :
+          ( thought_3(s0,E4,X10,S17)
+          & ? [G15,E12,E13] :
+              ( choose1(G15,G1)
+              & ? [X14] :
+                  ( noise_1(S17,X14)
+                  & eating_3(S17,E12,X14,G15)
+                  & make_3(S17,E13,X11,X14) ) ) )
+      & declined_2(s0,E5,X9) ) )).
+
+% ::id 144_fiction_JOYCE-1914;AT34-7;NE
+% ::snt She seemed to be somewhat disappointed at my refusal and went over quietly to the sofa where she sat down behind her sister .
+fof(ex1414051471560,axiom,(
+    ? [X8,X1,X5,X2,A6,S9,E3,E4] :
+      ( sofa_1(s0,X1)
+      & is_refusal_of_2(s0,X2,X8)
+      & ? [X7] :
+          ( is_disappointed_at_2(s0,A6,X2)
+          & is_disappointed_msr_2(s0,A6,X7) )
+      & is_before_2(s0,E4,e0)
+      & quietly_1(s0,S9)
+      & ? [S16] :
+          ( seemed_2(s0,E4,S16)
+          & be_3(S16,E3,X5,A6) )
+      & ? [S17] :
+          ( fact_2(s0,S9,S17)
+          & ? [X14,X13,X10,X11,E12] :
+              ( choose4(X13,X11,X1,X5,X2)
+              & choose5(X14,X13,X11,X1,X5,X2)
+              & is_sister_of_2(S17,X10,X14)
+              & sat_down_2(S17,E12,X13)
+              & behind_2(S17,E12,X10)
+              & is_where_2(S17,E12,X11)
+              & is_before_2(S17,E12,e0)
+              & ? [E15] :
+                  ( is_before_2(S17,E15,e0)
+                  & went_over_2(S17,E15,X5)
+                  & to_2(S17,E15,X1)
+                  & loc_2(S17,E15,X11) ) ) ) ) )).
+
+% ::id 145_fiction_JOYCE-1914;AT34-8;NE
+% ::snt No one spoke :
+fof(ex1414051471908,axiom,(
+    ? [X1,E2] :
+      ( is_before_2(s0,E2,e0)
+      & spoke_2(s0,E2,X1) ) )).
+
+% ::id 146_fiction_JOYCE-1914;AT34-9;NE
+% ::snt we all gazed at the empty fireplace .
+fof(ex1414051472258,axiom,(
+    ? [X1,X3,E2] :
+      ( empty_1(s0,X1)
+      & fireplace_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & gazed_2(s0,E2,X3)
+      & at_2(s0,E2,X1) ) )).
+
+% ::id 147_fiction_JOYCE-1914;AT35-1;NE
+% ::snt My aunt waited until Eliza sighed and then said : " Ah , well , he's gone to a better world . "
+fof(ex1414051472627,axiom,(
+    ? [X7,X10,X1,X2,S9,E3,E4,E5,E6,S8] :
+      ( is_aunt_of_2(s0,X2,X7)
+      & choose2(X10,X2,eliza)
+      & better_1(s0,X1)
+      & world_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & then_1(s0,S9)
+      & is_before_2(s0,E6,e0)
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & sighed_2(S11,E3,eliza) )
+      & waited_2(s0,E4,X2)
+      & until_2(s0,E4,S8)
+      & ? [S12] :
+          ( fact_2(s0,S9,S12)
+          & ? [S13] :
+              ( said_3(S12,E6,X2,S13)
+              & is_gone_2(S13,E5,X10)
+              & to_2(S13,E5,X1) ) ) ) )).
+
+% ::id 148_fiction_JOYCE-1914;AT36-1;NE
+% ::snt Eliza sighed again and bowed her head in assent .
+fof(ex1414051472984,axiom,(
+    ? [X5,X1,X2,E3,E4] :
+      ( choose1(X5,eliza)
+      & is_head_of_2(s0,X2,X5)
+      & assent_1(s0,X1)
+      & again_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & sighed_2(s0,E3,eliza)
+      & bowed_3(s0,E4,eliza,X2)
+      & in_2(s0,E4,X1) ) )).
+
+% ::id 149_fiction_JOYCE-1914;AT36-2;NE
+% ::snt My aunt fingered the stem of her wine-glass before sipping a little .
+fof(ex1414051473342,axiom,(
+    ? [X8,X7,X1,X2,X3,X4,E5,E6] :
+      ( choose1(X8,X4)
+      & is_wine_glass_of_2(s0,X1,X8)
+      & is_stem_of_2(s0,X2,X1)
+      & is_aunt_of_2(s0,X4,X7)
+      & little_1(s0,X3)
+      & is_before_2(s0,E6,e0)
+      & sipping_3(s0,E5,X2,X3)
+      & fingered_3(s0,E6,X4,X2) ) )).
+
+% ::id 150_fiction_JOYCE-1914;AT37-1;NE
+% ::snt " Did he .. . peacefully ? " she asked .
+fof(ex1414051473692,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S5] :
+          ( asked_3(s0,E1,X2,S5)
+          & ? [X4,E3] :
+              ( peacefully_1(S5,E3)
+              & is_before_2(S5,E3,E1)
+              & did_2(S5,E3,X4) ) ) ) )).
+
+% ::id 151_fiction_JOYCE-1914;AT38-1;NE
+% ::snt " Oh , quite peacefully , ma'am , " said Eliza . " You couldn't tell when the breath went out of him .
+fof(ex1414051474060,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S9] :
+          ( said_3(s0,E1,eliza,S9)
+          & ? [X4,X2,X3] :
+              ( ma_am_1(S9,X3)
+              & choose1(X4,X3)
+              & breath_1(S9,X2)
+              & ? [E5] :
+                  ( quite_peacefully_1(S9,E5)
+                  & ? [S10] :
+                      ( tell_3(S9,E5,X4,S10)
+                      & ? [T6,X8,E7] :
+                          ( choose1(X8,eliza)
+                          & is_when_2(S10,E7,T6)
+                          & is_before_2(S10,E7,E5)
+                          & went_out_2(S10,E7,X2)
+                          & of_2(S10,E7,X8) ) ) ) ) ) ) )).
+
+% ::id 152_fiction_JOYCE-1914;AT38-2;NE
+% ::snt He had a beautiful death ,
+fof(ex1414051474414,axiom,(
+    ? [X3,X1,E2] :
+      ( beautiful_1(s0,X1)
+      & death_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & had_3(s0,E2,X3,X1) ) )).
+
+% ::id 153_fiction_JOYCE-1914;AT38-3;NE
+% ::snt God be praised . "
+fof(ex1414051474759,axiom,(
+    ? [E1] : praised_3(s0,E1,unspecified,god) )).
+
+% ::id 154_fiction_JOYCE-1914;AT39-1;NE
+% ::snt " And everything ... ? "
+fof(ex1414051475102,axiom,(
+    ! [X1] :
+      ( thing_1(s0,X1)
+     => ? [E2] :
+          ( xxx_1(s0,E2)
+          & link_2(s0,E2,X1) ) ) )).
+
+% ::id 155_fiction_JOYCE-1914;AT40-1;NE
+% ::snt " Father O' Rourke was in with him a Tuesday and anointed him and prepared him and all . "
+fof(ex1414051475458,axiom,(
+    ? [X6,X5,G1,E2,E3,E4] :
+      ( choose1(X6,tuesday)
+      & ? [X7] :
+          ( choose2(X7,father_o_rourke,tuesday)
+          & is_of_2(s0,X7,G1) )
+      & ? [X8] : is_of_2(s0,X8,G1)
+      & is_before_2(s0,E2,e0)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & was_2(s0,E2,father_o_rourke)
+      & in_with_2(s0,E2,X5)
+      & a_2(s0,E2,tuesday)
+      & anointed_3(s0,E3,father_o_rourke,X6)
+      & prepared_3(s0,E4,father_o_rourke,G1) ) )).
+
+% ::id 156_fiction_JOYCE-1914;AT41-1;NE
+% ::snt " He knew then ? "
+fof(ex1414051475805,axiom,(
+    ? [X2,E1] :
+      ( then_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & knew_2(s0,E1,X2) ) )).
+
+% ::id 157_fiction_JOYCE-1914;AT42-1;NE
+% ::snt " He was quite resigned . "
+fof(ex1414051476150,axiom,(
+    ? [X2,A3,E1] :
+      ( quite_resigned_1(s0,A3)
+      & is_before_2(s0,E1,e0)
+      & was_3(s0,E1,X2,A3) ) )).
+
+% ::id 158_fiction_JOYCE-1914;AT43-1;NE
+% ::snt " He looks quite resigned , " said my aunt .
+fof(ex1414051476505,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( said_3(s0,E2,X1,S7)
+          & ? [X5,A6,E4] :
+              ( quite_resigned_1(S7,A6)
+              & looks_3(S7,E4,X5,A6) ) ) ) )).
+
+% ::id 159_fiction_JOYCE-1914;AT44-1;NE
+% ::snt " That's what the woman we had in to wash him said .
+fof(ex1414051476879,axiom,(
+    ? [X9,X1,X7,E2,E3,S8,X4] :
+      ( choose1(X9,X4)
+      & had_in_3(s0,E3,X7,X1)
+      & prp_2(s0,E3,S8)
+      & woman_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & wash_3(S11,E2,X1,X9) )
+      & ? [X5,E6] :
+          ( said_3(s0,E6,X1,X5)
+          & ? [E10] : is_3(s0,E10,X4,X5) ) ) )).
+
+% ::id 160_fiction_JOYCE-1914;AT44-2;NE
+% ::snt She said he just looked as if he was asleep , he looked that peaceful and resigned .
+fof(ex1414051477251,axiom,(
+    ? [X1,X12,X11,X8,X7,X2,S9,E3,E4,E5,E6,S10] :
+      ( peaceful_1(s0,X1)
+      & resigned_1(s0,X1)
+      & choose1(X8,X7)
+      & choose2(X11,X8,X7)
+      & sleep_1(s0,X2)
+      & choose3(X12,X8,X2,X7)
+      & just_1(s0,S9)
+      & is_before_2(s0,E3,E6)
+      & is_before_2(s0,E4,E6)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S13] :
+          ( fact_2(s0,S10,S13)
+          & was_2(S13,E3,X11)
+          & a_2(S13,E3,X2) )
+      & ? [S14] :
+          ( said_3(s0,E6,X7,S14)
+          & ? [S15] :
+              ( fact_2(S14,S9,S15)
+              & looked_3(S15,E4,X12,X1)
+              & looked_2(S15,E5,X8)
+              & as_if_2(S15,E5,S10) ) ) ) )).
+
+% ::id 161_fiction_JOYCE-1914;AT44-3;NE
+% ::snt No one would think he'd make such a beautiful corpse . "
+fof(ex1414051477610,axiom,(
+    ? [X1,X3,E2] :
+      ( choose1(X3,X1)
+      & ? [S6] :
+          ( think_3(s0,E2,X1,S6)
+          & ? [E4,X5] :
+              ( beautiful_1(S6,X5)
+              & corpse_1(S6,X5)
+              & make_3(S6,E4,X3,X5) ) ) ) )).
+
+% ::id 162_fiction_JOYCE-1914;AT45-1;NE
+% ::snt " Yes , indeed , " said my aunt .
+fof(ex1414051477962,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S6] :
+          ( said_3(s0,E2,X1,S6)
+          & ? [X4,E5] :
+              ( deed_1(S6,X4)
+              & xxx_1(S6,E5)
+              & in_2(S6,E5,X4) ) ) ) )).
+
+% ::id 163_fiction_JOYCE-1914;AT46-1;NE
+% ::snt She sipped a little more from her glass and said : " Well , Miss Flynn , at any rate it must be a great comfort for you to know that you did all you could for him .
+fof(ex1414051478347,axiom,(
+    ? [X17,X10,X8,X6,X5,X1,E2,E3,E4,S7] :
+      ( choose1(X8,miss_flynn)
+      & choose1(X10,miss_flynn)
+      & choose1(X17,miss_flynn)
+      & choose1(X6,X5)
+      & is_glass_of_2(s0,X1,X6)
+      & is_before_2(s0,E2,e0)
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E4,e0)
+      & ? [S18] :
+          ( fact_2(s0,S7,S18)
+          & ? [X9] :
+              ( ? [X12,E11] :
+                  ( choose2(X12,X5,X1)
+                  & xxx_3(S18,E11,X10,X9)
+                  & for_2(S18,E11,X12) )
+              & did_3(S18,E3,X8,X9) ) )
+      & sipped_2(s0,E2,X5)
+      & a_little_more_from_2(s0,E2,X1)
+      & ? [S19] :
+          ( said_3(s0,E4,X5,S19)
+          & ? [X13,E14,E15] :
+              ( great_1(S19,X13)
+              & ? [S20] :
+                  ( comfort_2(S19,X13,S20)
+                  & know_2(S20,E14,X17) )
+              & ? [X16] :
+                  ( rate_1(S19,X16)
+                  & be_3(S19,E15,S7,X13)
+                  & at_2(S19,E15,X16) ) ) ) ) )).
+
+% ::id 164_fiction_JOYCE-1914;AT46-2;NE
+% ::snt You were both very kind to him , I must say . "
+fof(ex1414051478706,axiom,(
+    ? [X4,X1,X7,A6,E2,E3] :
+      ( choose1(X7)
+      & is_very_kind_to_2(s0,A6,X7)
+      & is_before_2(s0,E2,E3)
+      & ? [S8] :
+          ( say_3(s0,E3,X1,S8)
+          & ? [X5] :
+              ( is_of_2(S8,X5,X4)
+              & were_3(S8,E2,X5,A6) ) ) ) )).
+
+% ::id 165_fiction_JOYCE-1914;AT47-1;NE
+% ::snt Eliza smoothed her dress over her knees .
+fof(ex1414051479055,axiom,(
+    ? [X5,X4,X1,G2,E3] :
+      ( choose1(X4,eliza)
+      & is_dress_of_2(s0,X1,X4)
+      & choose2(X5,eliza,X1)
+      & is_knees_of_2(s0,G2,X5)
+      & is_before_2(s0,E3,e0)
+      & smoothed_3(s0,E3,eliza,X1)
+      & over_2(s0,E3,G2) ) )).
+
+% ::id 166_fiction_JOYCE-1914;AT48-1;NE
+% ::snt " Ah , poor James ! " she said . " God knows we done all we could ,
+fof(ex1414051479422,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S9] :
+          ( said_3(s0,E1,X2,S9)
+          & ? [X7,X5,E3,E4] :
+              ( ? [S10] :
+                  ( knows_3(S9,E4,god,S10)
+                  & ? [X6] :
+                      ( ? [E8] : xxx_3(S10,E8,X7,X6)
+                      & done_3(S10,E3,X5,X6) ) )
+              & circumstance_2(S9,E4,poor_james) ) ) ) )).
+
+% ::id 167_fiction_JOYCE-1914;AT48-2;NE
+% ::snt as poor as we are -- we wouldn't see him want anything while he was in it . "
+fof(ex1414051479795,axiom,(
+    ? [X6,X2,X8,X7,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [A5,A3,E4] :
+          ( are_3(s0,E4,X6,A5)
+          & is_as_poor_as_2(s0,X2,A3) )
+      & was_2(s0,E1,X7)
+      & in_2(s0,E1,X8)
+      & ? [X11,E9,E10,S13] :
+          ( see_3(s0,E10,X2,S13)
+          & ? [X12] :
+              ( thing_1(S13,X12)
+              & want_3(S13,E9,X11,X12) ) ) ) )).
+
+% ::id 168_fiction_JOYCE-1914;AT49-1;NE
+% ::snt Nannie had leaned her head against the sofa-pillow and seemed about to fall asleep .
+fof(ex1414051480159,axiom,(
+    ? [X1,X7,X2,X3,E4,E5,E6] :
+      ( sofa_pillow_1(s0,X1)
+      & choose1(X7,nannie)
+      & is_head_of_2(s0,X2,X7)
+      & sleep_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & about_1(s0,E5)
+      & is_before_2(s0,E6,e0)
+      & had_leaned_3(s0,E4,nannie,X2)
+      & against_2(s0,E4,X1)
+      & ? [S8] :
+          ( seemed_2(s0,E6,S8)
+          & fall_2(S8,E5,nannie)
+          & a_2(S8,E5,X3) ) ) )).
+
+% ::id 169_fiction_JOYCE-1914;AT50-1;NE
+% ::snt " There's poor Nannie , " said Eliza , looking at her ,
+fof(ex1414051480513,axiom,(
+    ? [X3,E1,E2] :
+      ( is_before_2(s0,E2,e0)
+      & looking_2(s0,E1,eliza)
+      & at_2(s0,E1,X3)
+      & ? [S5] :
+          ( said_3(s0,E2,eliza,S5)
+          & ? [E4] : is_2(S5,E4,poor_nannie) ) ) )).
+
+% ::id 170_fiction_JOYCE-1914;AT50-2;NE
+% ::snt " she's wore out .
+fof(ex1414051480862,axiom,(
+    ? [X2,E1] : wore_out_3(s0,E1,unspecified,X2) )).
+
+% ::id 171_fiction_JOYCE-1914;AT50-3;NE
+% ::snt All the work we had , she and me , getting in the woman to wash him and then laying him out and then the coffin and then arranging about the Mass in the chapel .
+fof(ex1414051481238,axiom,(
+    ? [X13,X1,X2,X3,X4,X11,X16,X15,G5,E6,E7,E8,E9,E10] :
+      ( woman_1(s0,X1)
+      & coffin_1(s0,X2)
+      & chapel_1(s0,X3)
+      & is_mass_in_2(s0,X4,X3)
+      & choose1(X15)
+      & choose2(X16,X1)
+      & ? [X12] : is_of_2(s0,X12,G5)
+      & is_of_2(s0,X13,G5)
+      & X11 = G5
+      & is_before_2(s0,E7,e0)
+      & then_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & then_1(s0,E9)
+      & is_before_2(s0,E9,e0)
+      & then_1(s0,E10)
+      & is_before_2(s0,E10,e0)
+      & ? [X14] :
+          ( work_1(s0,X14)
+          & ? [S17] :
+              ( had_getting_in_4(s0,E7,X11,X14,S17)
+              & wash_3(S17,E6,X1,X15) )
+          & had_laying_out_3(s0,E8,X11,X16)
+          & had_3(s0,E9,X11,X2)
+          & had_arranging_3(s0,E10,X11,X14)
+          & about_2(s0,E10,X4) ) ) )).
+
+% ::id 172_fiction_JOYCE-1914;AT50-4;NE
+% ::snt Only for Father O' Rourke I don't know what we'd have done at all .
+fof(ex1414051481603,axiom,(
+    ? [X1,E2,X3] :
+      ( is_of_2(s0,X3,father_o_rourke)
+      & ? [S8] :
+          ( do_know_3(s0,E2,X1,S8)
+          & ? [X4,X5] :
+              ( choose1(X5,X3)
+              & ? [E6,X7] :
+                  ( have_done_3(S8,E6,X5,X4)
+                  & at_2(S8,E6,X7) ) ) )
+      & for_2(s0,E2,X3) ) )).
+
+% ::id 173_fiction_JOYCE-1914;AT50-5;NE
+% ::snt It was him brought us all them flowers and them two candlesticks out of the chapel and wrote out the notice for the Freeman's General and took charge of all the papers for the cemetery and poor James's insurance . "
+fof(ex1414051481998,axiom,(
+    ? [X1,X2,X3,X4,X14,G5,G6,X7] :
+      ( chapel_1(s0,X1)
+      & is_notice_for_2(s0,X2,freeman_s_general)
+      & cemetery_1(s0,X3)
+      & is_insurance_of_2(s0,X4,poor_james)
+      & two_1(s0,G5)
+      & is_candlesticks_out_of_2(s0,G5,X1)
+      & is_of_2(s0,X3,G6)
+      & is_of_2(s0,X4,G6)
+      & ? [X8,X9,G10,E11,E12,E13] :
+          ( ? [G16] :
+              ( is_papers_for_2(s0,G16,G6)
+              & is_charge_of_2(s0,X8,G16) )
+          & brought_4(s0,E11,X9,G10,X14)
+          & wrote_out_3(s0,E12,X9,X2)
+          & took_3(s0,E13,X9,X8)
+          & ? [G15] :
+              ( flowers_1(s0,G15)
+              & is_of_2(s0,G15,G10) )
+          & is_of_2(s0,G5,G10)
+          & is_before_2(s0,E11,e0)
+          & is_before_2(s0,E12,e0)
+          & is_before_2(s0,E13,e0)
+          & ? [E17] :
+              ( is_before_2(s0,E17,e0)
+              & was_3(s0,E17,X9,X7) ) ) ) )).
+
+% ::id 174_fiction_JOYCE-1914;AT51-1;NE
+% ::snt " Wasn't that good of him ? " said my aunt
+fof(ex1414051482356,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,X1,S8)
+          & ? [X4] :
+              ( choose1(X4,X1)
+              & ? [X7,A6,E5] :
+                  ( choose2(X7,X4,X1)
+                  & is_good_of_2(S8,A6,X7)
+                  & is_before_2(S8,E5,E2)
+                  & was_3(S8,E5,X4,A6) ) ) ) ) )).
+
+% ::id 175_fiction_JOYCE-1914;AT52-1;NE
+% ::snt Eliza closed her eyes and shook her head slowly .
+fof(ex1414051482713,axiom,(
+    ? [X6,X5,X1,G2,E3,E4] :
+      ( choose1(X5,eliza)
+      & choose1(X6,eliza)
+      & is_head_of_2(s0,X1,X6)
+      & is_eyes_of_2(s0,G2,X5)
+      & is_before_2(s0,E3,e0)
+      & slowly_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & closed_3(s0,E3,eliza,G2)
+      & shook_3(s0,E4,eliza,X1) ) )).
+
+% ::id 176_fiction_JOYCE-1914;AT53-1;NE
+% ::snt " Ah , there's no friends like the old friends , " she said ,
+fof(ex1414051483076,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S6] :
+          ( said_3(s0,E1,X2,S6)
+          & ? [G3] :
+              ( old_1(S6,G3)
+              & friends_1(S6,G3)
+              & ? [G4,E5] :
+                  ( is_like_of_2(S6,G4,G3)
+                  & friends_1(S6,G4)
+                  & is_2(S6,E5,G4) ) ) ) ) )).
+
+% ::id 177_fiction_JOYCE-1914;AT53-2;NE
+% ::snt " when all is said and done , no friends that a body can trust . "
+fof(ex1414051483448,axiom,(
+    ! [E1,E2] :
+      ( ? [X3] :
+          ( said_3(s0,E1,unspecified,X3)
+          & done_3(s0,E2,unspecified,X3) )
+      & ? [X4,G5,E6] :
+          ( body_1(s0,X4)
+          & ? [E7] : trust_3(s0,E7,X4,G5)
+          & friends_1(s0,G5)
+          & xxx_3(s0,E6,unspecified,G5) ) ) )).
+
+% ::id 178_fiction_JOYCE-1914;AT54-1;NE
+% ::snt " Indeed , that's true , " said my aunt .
+fof(ex1414051483818,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,X1,S8)
+          & ? [X6,X4,A7,E5] :
+              ( deed_1(S8,X4)
+              & true_1(S8,A7)
+              & is_3(S8,E5,X6,A7)
+              & in_2(S8,E5,X4) ) ) ) )).
+
+% ::id 179_fiction_JOYCE-1914;AT54-2;NE
+% ::snt " And I'm sure now that he's gone to his eternal reward he won't forget you and all your kindness to him . "
+fof(ex1414051484190,axiom,(
+    ? [X14,X12,X4,X9,X8,X7,X1,A5,S6,E2,E3] :
+      ( choose1(X8,X7)
+      & eternal_1(s0,X1)
+      & is_reward_of_2(s0,X1,X8)
+      & choose1(X9,X1)
+      & sure_1(s0,A5)
+      & ? [S16] :
+          ( now_2(s0,S6,S16)
+          & has_gone_2(S16,E2,X7)
+          & to_2(S16,E2,X1) )
+      & ? [S17] :
+          ( fact_2(s0,S6,S17)
+          & ? [S18] :
+              ( am_4(S17,E3,X4,A5,S18)
+              & ? [G10,E11] :
+                  ( is_of_2(S18,X12,G10)
+                  & ? [X15] :
+                      ( choose2(X15,X9,X1)
+                      & ? [X13] :
+                          ( is_kindness_to_2(S18,X13,X15)
+                          & is_kindness_of_2(S18,X13,X14)
+                          & is_of_2(S18,X13,G10) ) )
+                  & forget_3(S18,E11,X9,G10) ) ) ) ) )).
+
+% ::id 180_fiction_JOYCE-1914;AT55-1;NE
+% ::snt " Ah , poor James ! " said Eliza . " He was no great trouble to us .
+fof(ex1414051484549,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S6] :
+          ( said_3(s0,E1,eliza,S6)
+          & ? [X5,X2,X3,E4] :
+              ( great_1(S6,X3)
+              & is_trouble_to_2(S6,X3,X5)
+              & is_before_2(S6,E4,E1)
+              & was_3(S6,E4,X2,X3)
+              & circumstance_2(S6,E4,poor_james) ) ) ) )).
+
+% ::id 181_fiction_JOYCE-1914;AT55-2;NE
+% ::snt You wouldn't hear him in the house any more than now .
+fof(ex1414051484905,axiom,(
+    ? [X2,X1] :
+      ( house_1(s0,X1)
+      & ? [X4,E6,E3] :
+          ( now_1(s0,E6)
+          & ? [X5] :
+              ( is_than_2(s0,X5,E6)
+              & hear_3(s0,E3,X2,X4)
+              & in_2(s0,E3,X1)
+              & msr_2(s0,E3,X5) ) ) ) )).
+
+% ::id 182_fiction_JOYCE-1914;AT55-3;NE
+% ::snt Still , I know he's gone and all to that .... "
+fof(ex1414051485263,axiom,(
+    ? [X4,X1,X6,S5,E2,E3] :
+      ( still_1(s0,S5)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & ? [S8] :
+              ( know_3(S7,E3,X4,S8)
+              & all_1(S8,E2)
+              & is_gone_2(S8,E2,X6)
+              & to_2(S8,E2,X1) ) ) ) )).
+
+% ::id 183_fiction_JOYCE-1914;AT56-1;NE
+% ::snt " It's when it's all over that you'll miss him , " said my aunt .
+fof(ex1414051485631,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S11] :
+          ( said_3(s0,E2,X1,S11)
+          & ? [X7,X10,E4,E5,S6] :
+              ( choose1(X7,X1)
+              & all_over_1(S11,E4)
+              & ? [S12] :
+                  ( fact_2(S11,S6,S12)
+                  & ? [X9,E8] : miss_3(S12,E8,X7,X9) )
+              & is_2(S11,E4,X10)
+              & is_2(S11,E5,S6) ) ) ) )).
+
+% ::id 184_fiction_JOYCE-1914;AT57-1;NE
+% ::snt " I know that , " said Eliza .
+fof(ex1414051485980,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S5] :
+          ( said_3(s0,E1,eliza,S5)
+          & ? [X3,X4,E2] :
+              ( choose1(X3,eliza)
+              & know_3(S5,E2,X3,X4) ) ) ) )).
+
+% ::id 185_fiction_JOYCE-1914;AT57-2;NE
+% ::snt " I won't be bringing him in his cup of beef-tea any more , nor you , ma'am , sending him his snuff .
+fof(ex1414051486346,axiom,(
+    ? [X12,X1,X14,X13,X9,X8,X2,X3,X4,X5,E6,E7,S11] :
+      ( choose1(X9,X8)
+      & beef_tea_1(s0,X2)
+      & is_cup_of_2(s0,X5,X2)
+      & is_cup_of__2(s0,X5,X9)
+      & ma_am_1(s0,X3)
+      & choose4(X13,X3,X8,X5,X2)
+      & choose5(X14,X13,X3,X8,X5,X2)
+      & is_snuff_of_2(s0,X4,X14)
+      & X12 = X3
+      & ? [S15] :
+          ( fact_2(s0,S11,S15)
+          & sending_4(S15,E6,X12,X4,X13) )
+      & ? [X10] :
+          ( be_bringing_3(s0,E7,X1,X8)
+          & in_2(s0,E7,X5)
+          & msr_2(s0,E7,X10)
+          & nor_2(s0,E7,S11) ) ) )).
+
+% ::id 186_fiction_JOYCE-1914;AT57-3;NE
+% ::snt Ah , poor James ! "
+fof(ex1414051486695,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,poor_james) ) )).
+
+% ::id 187_fiction_JOYCE-1914;AT58-1;NE
+% ::snt She stopped , as if she were communing with the past and then said shrewdly : " Mind you , I noticed there was something queer coming over him latterly .
+fof(ex1414051487070,axiom,(
+    ? [X13,X1,X14,X10,X8,X2,S12,S11,E3,E4,E5,E6,E7,S9] :
+      ( past_1(s0,X1)
+      & choose1(X10,X8)
+      & thing_1(s0,X2)
+      & choose2(X14,X8,X1)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & then_1(s0,S11)
+      & shrewdly_1(s0,S12)
+      & queer_1(s0,E5)
+      & latterly_1(s0,E5)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S15] :
+          ( fact_2(s0,S9,S15)
+          & were_communing_2(S15,E3,X10)
+          & with_2(S15,E3,X1) )
+      & stopped_2(s0,E4,X8)
+      & as_if_2(s0,E4,S9)
+      & ? [S16] :
+          ( fact_2(s0,S11,S16)
+          & ? [S17] :
+              ( fact_2(S16,S12,S17)
+              & ? [S18] :
+                  ( said_3(S17,E7,X8,S18)
+                  & ? [S19] :
+                      ( noticed_3(S18,E6,X13,S19)
+                      & was_coming_2(S19,E5,X2)
+                      & over_2(S19,E5,X14) ) ) ) ) ) )).
+
+% ::id 188_fiction_JOYCE-1914;AT58-2;NE
+% ::snt Whenever I'd bring in his soup to him there I'd find him with his breviary fallen to the floor , lying back in the chair and his mouth open . "
+fof(ex1414051487461,axiom,(
+    ? [X11,X3,X1,X2] :
+      ( floor_1(s0,X1)
+      & chair_1(s0,X2)
+      & ? [X20,X19,X17,X16,X4,X5,E6,E7,E8,E9,S18,S10] :
+          ( choose2(X19,X17,X16)
+          & is_breviary_of_2(s0,X4,X19)
+          & choose5(X20,X17,X2,X16,X4,X1)
+          & open_1(s0,X5)
+          & is_mouth_of_2(s0,X5,X20)
+          & lying_back_2(s0,E7,X17)
+          & in_2(s0,E7,X2)
+          & lying_back_2(s0,E8,X17)
+          & link_2(s0,E8,X5)
+          & is_with_2(s0,X17,S18)
+          & ? [S21] :
+              ( fact_2(s0,S10,S21)
+              & ? [X15,X14,X12,E13] :
+                  ( is_soup_of_2(S21,X12,X14)
+                  & bring_2(S21,E13,X11)
+                  & in_2(S21,E13,X12)
+                  & to_2(S21,E13,X15) ) )
+          & ? [S22] :
+              ( fact_2(s0,S18,S22)
+              & is_fallen_2(S22,E6,X4)
+              & to_2(S22,E6,X1) )
+          & find_3(s0,E9,X3,X17)
+          & whenever_2(s0,E9,S10)
+          & loc_2(s0,E9,X16) ) ) )).
+
+% ::id 189_fiction_JOYCE-1914;AT59-1;NE
+% ::snt She laid a finger against her nose and frowned :
+fof(ex1414051487827,axiom,(
+    ? [X6,X5,X1,X2,E3,E4] :
+      ( finger_1(s0,X2)
+      & choose2(X6,X5,X2)
+      & is_nose_of_2(s0,X1,X6)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & laid_3(s0,E3,X5,X2)
+      & against_2(s0,E3,X1)
+      & frowned_2(s0,E4,X5) ) )).
+
+% ::id 190_fiction_JOYCE-1914;AT60-1;NE
+% ::snt then she continued : " But still and all he kept on saying that before the summer was over he'd go out for a drive one fine day just to see the old house again where we were all born down in Irishtown and take me and Nannie with him .
+fof(ex1414051488234,axiom,(
+    ? [X2,E1] :
+      ( then_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & ? [S28] :
+          ( continued_3(s0,E1,X2,S28)
+          & ? [X26,X3,X4,X23,X9,X7,S8,E5,E6] :
+              ( summer_1(S28,X3)
+              & old_1(S28,X4)
+              & house_1(S28,X4)
+              & choose1(X26,X2)
+              & choose1(X9,X7)
+              & still_all_1(S28,S8)
+              & is_before_2(S28,E6,E1)
+              & ? [S29] :
+                  ( fact_2(S28,S8,S29)
+                  & ? [S30] :
+                      ( saying_3(S29,E5,X7,S30)
+                      & ? [X27,X10,G11,A17,T12,S20,S19,E13,E14,E15,S18,S16] :
+                          ( drive_1(S30,X10)
+                          & choose6(X27,nannie,irishtown,X4,X10,X3,X7)
+                          & is_of_2(S30,X26,G11)
+                          & is_of_2(S30,nannie,G11)
+                          & over_1(S30,A17)
+                          & one_1(S30,T12)
+                          & fine_1(S30,T12)
+                          & day_1(S30,T12)
+                          & is_before_2(S30,E13,E5)
+                          & just_1(S30,S19)
+                          & again_1(S30,S20)
+                          & ? [S31] :
+                              ( fact_2(S30,S16,S31)
+                              & was_3(S31,E13,X3,A17) )
+                          & ? [S32] :
+                              ( fact_2(S30,S18,S32)
+                              & ? [S33] :
+                                  ( fact_2(S32,S19,S33)
+                                  & ? [S34] :
+                                      ( fact_2(S33,S20,S34)
+                                      & ? [X21,E22] :
+                                          ( ? [X24] :
+                                              ( is_of_2(S34,X24,X23)
+                                              & born_down_3(S34,E22,unspecified,X24)
+                                              & in_2(S34,E22,irishtown) )
+                                          & is_where_2(S34,E22,X21)
+                                          & is_before_2(S34,E22,E5)
+                                          & ? [E25] :
+                                              ( see_3(S34,E25,X9,X4)
+                                              & loc_2(S34,E25,X21) ) ) ) )
+                              & take_3(S32,E14,X9,G11)
+                              & with_2(S32,E14,X27) )
+                          & go_out_2(S30,E15,X9)
+                          & before_2(S30,E15,S16)
+                          & for_2(S30,E15,X10)
+                          & tmp_2(S30,E15,T12)
+                          & prp_2(S30,E15,S18) ) )
+                  & kept_on_2(S29,E6,X7) ) ) ) ) )).
+
+% ::id 191_fiction_JOYCE-1914;AT60-2;NE
+% ::snt If we could only get one of them new-fangled carriages that makes no noise that Father O' Rourke told him about -- them with the rheumatic wheels -- for the day cheap -- he said , at Johnny Rush's over the way there and drive out the three of us together of a Sunday evening .
+fof(ex1414051488674,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S22] :
+          ( said_3(s0,E1,X2,S22)
+          & ? [X19,X17,X3,X20,G18,X9,G4,G5,G6,E7,E8] :
+              ( choose3(X19,johnny_rush,father_o_rourke)
+              & is_way_location_2(S22,X3,X19)
+              & new_fangled_1(S22,G5)
+              & ? [X16] :
+                  ( noise_1(S22,X16)
+                  & makes_3(S22,E7,G5,X16) )
+              & told_3(S22,E8,father_o_rourke,X17)
+              & about_2(S22,E8,G5)
+              & carriages_1(S22,G5)
+              & rheumatic_1(S22,G4)
+              & wheels_1(S22,G4)
+              & is_with_2(S22,G18,G4)
+              & G5 = G18
+              & three_1(S22,G6)
+              & is_of_2(S22,G6,X20)
+              & is_before_2(S22,E8,E1)
+              & ? [X10,X11,T12,T13,E14,E15] :
+                  ( is_one_of_2(S22,X11,G5)
+                  & is_over_2(S22,X10,X3)
+                  & is_of_2(S22,X10,johnny_rush)
+                  & cheap_1(S22,T12)
+                  & day_1(S22,T12)
+                  & sunday_evening_1(S22,T13)
+                  & together_1(S22,E15)
+                  & only_get_3(S22,E14,X9,X11)
+                  & for_2(S22,E14,T12)
+                  & at_2(S22,E14,X10)
+                  & drive_out_3(S22,E15,X9,G6)
+                  & of_2(S22,E15,T13) )
+              & ? [E21] : xxx_1(S22,E21) ) ) ) )).
+
+% ::id 192_fiction_JOYCE-1914;AT60-3;NE
+% ::snt He had his mind set on that ... .
+fof(ex1414051489032,axiom,(
+    ? [X5,X4,X3,X1,E2] :
+      ( choose1(X4,X3)
+      & is_mind_of_2(s0,X1,X4)
+      & is_before_2(s0,E2,e0)
+      & had_set_3(s0,E2,X3,X1)
+      & on_2(s0,E2,X5) ) )).
+
+% ::id 193_fiction_JOYCE-1914;AT60-4;NE
+% ::snt Poor James ! "
+fof(ex1414051489378,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,poor_james) ) )).
+
+% ::id 194_fiction_JOYCE-1914;AT61-1;NE
+% ::snt " The Lord have mercy on his soul ! " said my aunt .
+fof(ex1414051489731,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,X1,S8)
+          & ? [X7,X4,X5,E6] :
+              ( choose1(X7,lord)
+              & is_soul_of_2(S8,X4,X7)
+              & is_mercy_on_2(S8,X5,X4)
+              & have_3(S8,E6,lord,X5) ) ) ) )).
+
+% ::id 195_fiction_JOYCE-1914;AT62-1;NE
+% ::snt Eliza took out her handkerchief and wiped her eyes with it .
+fof(ex1414051490085,axiom,(
+    ? [X7,X6,X5,X1,G2,E3,E4] :
+      ( choose1(X5,eliza)
+      & is_handkerchief_of_2(s0,X1,X5)
+      & choose2(X6,eliza,X1)
+      & choose1(X7,X1)
+      & is_eyes_of_2(s0,G2,X6)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & took_out_3(s0,E3,eliza,X1)
+      & wiped_3(s0,E4,eliza,G2)
+      & with_2(s0,E4,X7) ) )).
+
+% ::id 196_fiction_JOYCE-1914;AT62-2;NE
+% ::snt Then she put it back again in her pocket and gazed into the empty grate for some time without speaking .
+fof(ex1414051490450,axiom,(
+    ? [X1,X10,X9,X7,X2,X3,S8,E4,E5,E6,S11] :
+      ( empty_1(s0,X1)
+      & grate_1(s0,X1)
+      & choose2(X10,X7,X9)
+      & is_pocket_of_2(s0,X2,X10)
+      & time_1(s0,X3)
+      & then_1(s0,S8)
+      & back_again_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & speaking_2(S12,E5,X7) )
+      & ? [S13] :
+          ( fact_2(s0,S8,S13)
+          & put_3(S13,E4,X7,X9)
+          & in_2(S13,E4,X2)
+          & gazed_2(S13,E6,X7)
+          & into_2(S13,E6,X1)
+          & for_2(S13,E6,X3)
+          & without_2(S13,E6,S11) ) ) )).
+
+% ::id 197_fiction_JOYCE-1914;AT63-1;NE
+% ::snt " He was too scrupulous always , " she said .
+fof(ex1414051490804,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S6] :
+          ( said_3(s0,E1,X2,S6)
+          & ? [X4,A5,E3] :
+              ( too_scrupulous_1(S6,A5)
+              & always_1(S6,E3)
+              & is_before_2(S6,E3,E1)
+              & was_3(S6,E3,X4,A5) ) ) ) )).
+
+% ::id 198_fiction_JOYCE-1914;AT63-2;NE
+% ::snt " The duties of the priesthood was too much for him .
+fof(ex1414051491157,axiom,(
+    ? [X1,G2,X5,E3] :
+      ( priesthood_1(s0,X1)
+      & is_duties_of_2(s0,G2,X1)
+      & choose1(X5,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [X4] :
+          ( is_for_2(s0,X4,X5)
+          & was_3(s0,E3,G2,X4) ) ) )).
+
+% ::id 199_fiction_JOYCE-1914;AT63-3;NE
+% ::snt And then his life was , you might say , crossed . "
+fof(ex1414051491519,axiom,(
+    ? [X1,E2,S6] :
+      ( say_3(s0,E2,X1,S6)
+      & ? [X5,X3,E4] :
+          ( is_life_of_2(S6,X3,X5)
+          & then_1(S6,E4)
+          & is_before_2(S6,E4,E2)
+          & crossed_3(S6,E4,unspecified,X3) ) ) )).
+
+% ::id 200_fiction_JOYCE-1914;AT64-1;NE
+% ::snt " Yes , " said my aunt . " He was a disappointed man .
+fof(ex1414051491878,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( said_3(s0,E2,X1,S7)
+          & ? [X6,X4,E5] :
+              ( disappointed_1(S7,X4)
+              & man_1(S7,X4)
+              & is_before_2(S7,E5,E2)
+              & was_3(S7,E5,X6,X4) ) ) ) )).
+
+% ::id 201_fiction_JOYCE-1914;AT64-2;NE
+% ::snt You could see that . "
+fof(ex1414051492226,axiom,(
+    ? [X1,X3,E2] : see_3(s0,E2,X1,X3) )).
+
+% ::id 202_fiction_JOYCE-1914;AT65-1;NE
+% ::snt A silence took possession of the little room
+fof(ex1414051492574,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( little_1(s0,X1)
+      & room_1(s0,X1)
+      & silence_1(s0,X3)
+      & is_possession_of_2(s0,X2,X1)
+      & is_before_2(s0,E4,e0)
+      & took_3(s0,E4,X3,X2) ) )).
+
+% ::id 203_fiction_JOYCE-1914;AT65-2;NE
+% ::snt and , under cover of it , I approached the table and tasted my sherry and then returned quietly to my chair in the comer .
+fof(ex1414051492941,axiom,(
+    ? [X12,X11,X9,X1,X2,X10,X3,X4,X5,E6,E7,E8] :
+      ( table_1(s0,X1)
+      & comer_1(s0,X2)
+      & is_cover_of_2(s0,X5,X10)
+      & is_sherry_of_2(s0,X3,X11)
+      & is_chair_of_2(s0,X4,X12)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & then_1(s0,E8)
+      & quietly_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & approached_3(s0,E6,X9,X1)
+      & under_2(s0,E6,X5)
+      & tasted_3(s0,E7,X9,X3)
+      & under_2(s0,E7,X5)
+      & returned_2(s0,E8,X9)
+      & to_2(s0,E8,X4)
+      & in_2(s0,E8,X2)
+      & under_2(s0,E8,X5) ) )).
+
+% ::id 204_fiction_JOYCE-1914;AT65-3;NE
+% ::snt Eliza seemed to have fallen into a deep revery .
+fof(ex1414051493293,axiom,(
+    ? [X1,E2,E3] :
+      ( deep_1(s0,X1)
+      & revery_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & ? [S4] :
+          ( seemed_2(s0,E3,S4)
+          & have_fallen_2(S4,E2,eliza)
+          & into_2(S4,E2,X1) ) ) )).
+
+% ::id 205_fiction_JOYCE-1914;AT65-4;NE
+% ::snt We waited respectfully for her to break the silence :
+fof(ex1414051493645,axiom,(
+    ? [X1,X4,X7,S5,E2,E3,S6] :
+      ( silence_1(s0,X1)
+      & respectfully_1(s0,S5)
+      & is_before_2(s0,E3,e0)
+      & ? [S8] :
+          ( fact_2(s0,S6,S8)
+          & break_3(S8,E2,X7,X1) )
+      & ? [S9] :
+          ( fact_2(s0,S5,S9)
+          & waited_2(S9,E3,X4)
+          & prp_2(S9,E3,S6) ) ) )).
+
+% ::id 206_fiction_JOYCE-1914;AT65-5;NE
+% ::snt and after a long pause she said slowly :
+fof(ex1414051493995,axiom,(
+    ? [X3,X1,E2] :
+      ( long_1(s0,X1)
+      & pause_1(s0,X1)
+      & slowly_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & said_2(s0,E2,X3)
+      & after_2(s0,E2,X1) ) )).
+
+% ::id 207_fiction_JOYCE-1914;AT66-1;NE
+% ::snt " It was that chalice he broke ... .
+fof(ex1414051494358,axiom,(
+    ? [X1] :
+      ( chalice_1(s0,X1)
+      & ? [X4,X2,E3] :
+          ( choose1(X4,X1)
+          & broke_3(s0,E3,X4,X2)
+          & is_before_2(s0,E3,e0)
+          & ? [E5] :
+              ( is_before_2(s0,E5,e0)
+              & was_3(s0,E5,X2,X1) ) ) ) )).
+
+% ::id 208_fiction_JOYCE-1914;AT66-2;NE
+% ::snt That was the beginning of it .
+fof(ex1414051494707,axiom,(
+    ? [X4,X1,X3,E2] :
+      ( choose1(X4,X3)
+      & is_beginning_of_2(s0,X1,X4)
+      & is_before_2(s0,E2,e0)
+      & was_3(s0,E2,X3,X1) ) )).
+
+% ::id 209_fiction_JOYCE-1914;AT66-3;NE
+% ::snt Of course , they say it was all right ,
+fof(ex1414051495072,axiom,(
+    ? [X5,X1,G4,A6,E2,E3] :
+      ( course_1(s0,X1)
+      & choose1(X5,X1)
+      & all_right_1(s0,A6)
+      & is_before_2(s0,E2,E3)
+      & ? [S7] :
+          ( say_3(s0,E3,G4,S7)
+          & was_3(S7,E2,X5,A6) )
+      & of_2(s0,E3,X1) ) )).
+
+% ::id 210_fiction_JOYCE-1914;AT66-4;NE
+% ::snt that it contained nothing , I mean .
+fof(ex1414051495421,axiom,(
+    ? [X2,X3,E1,S6] :
+      ( mean_3(s0,E1,X2,S6)
+      & ? [X4,E5] :
+          ( thing_1(S6,X4)
+          & is_before_2(S6,E5,E1)
+          & contained_3(S6,E5,X3,X4) ) ) )).
+
+% ::id 211_fiction_JOYCE-1914;AT66-5;NE
+% ::snt But still ... .
+fof(ex1414051495767,axiom,(
+    ? [E1] :
+      ( still_1(s0,E1)
+      & xxx_1(s0,E1) ) )).
+
+% ::id 212_fiction_JOYCE-1914;AT66-6;NE
+% ::snt They say it was the boy's fault .
+fof(ex1414051496117,axiom,(
+    ? [X1,X6,X2,G5,E3,E4] :
+      ( boy_1(s0,X1)
+      & is_fault_of_2(s0,X2,X1)
+      & is_before_2(s0,E3,E4)
+      & ? [S7] :
+          ( say_3(s0,E4,G5,S7)
+          & was_3(S7,E3,X6,X2) ) ) )).
+
+% ::id 213_fiction_JOYCE-1914;AT66-7;NE
+% ::snt But poor James was so nervous ,
+fof(ex1414051496465,axiom,(
+    ? [A2,E1] :
+      ( so_nervous_1(s0,A2)
+      & is_before_2(s0,E1,e0)
+      & was_3(s0,E1,poor_james,A2) ) )).
+
+% ::id 214_fiction_JOYCE-1914;AT66-8;NE
+% ::snt God be merciful to him ! "
+fof(ex1414051496814,axiom,(
+    ? [X3,A2,E1] :
+      ( choose1(X3,god)
+      & is_merciful_to_2(s0,A2,X3)
+      & be_3(s0,E1,god,A2) ) )).
+
+% ::id 215_fiction_JOYCE-1914;AT67-1;NE
+% ::snt " And was that it ? " said my aunt .
+fof(ex1414051497167,axiom,(
+    ? [X3,X1,E2] :
+      ( is_aunt_of_2(s0,X1,X3)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( said_3(s0,E2,X1,S7)
+          & ? [X6,X5,E4] :
+              ( is_before_2(S7,E4,E2)
+              & was_3(S7,E4,X5,X6) ) ) ) )).
+
+% ::id 216_fiction_JOYCE-1914;AT67-2;NE
+% ::snt " I heard something .... "
+fof(ex1414051497517,axiom,(
+    ? [X3,X1,E2] :
+      ( thing_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & heard_3(s0,E2,X3,X1) ) )).
+
+% ::id 217_fiction_JOYCE-1914;AT68-1;NE
+% ::snt Eliza nodded .
+fof(ex1414051497859,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & nodded_2(s0,E1,eliza) ) )).
+
+% ::id 218_fiction_JOYCE-1914;AT69-1;NE
+% ::snt " That affected his mind , " she said .
+fof(ex1414051498209,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S7] :
+          ( said_3(s0,E1,X2,S7)
+          & ? [X6,X5,X3,E4] :
+              ( choose1(X6,X5)
+              & is_mind_of_2(S7,X3,X6)
+              & is_before_2(S7,E4,E1)
+              & affected_3(S7,E4,X5,X3) ) ) ) )).
+
+% ::id 219_fiction_JOYCE-1914;AT69-2;NE
+% ::snt " After that he began to mope by himself , talking to no one and wandering about by himself .
+fof(ex1414051498569,axiom,(
+    ? [X9,X8,X5,X4,E1,E2,E3] :
+      ( choose1(X8,X4)
+      & choose1(X9,X4)
+      & is_before_2(s0,E3,e0)
+      & ? [X6,E7] :
+          ( talking_2(s0,E7,X4)
+          & to_2(s0,E7,X6) )
+      & wandering_about_2(s0,E1,X4)
+      & by_2(s0,E1,X8)
+      & ? [S10] :
+          ( began_3(s0,E3,X4,S10)
+          & mope_2(S10,E2,X4)
+          & by_2(S10,E2,X9) )
+      & after_2(s0,E3,X5) ) )).
+
+% ::id 220_fiction_JOYCE-1914;AT69-3;NE
+% ::snt So one night he was wanted for to go on a call
+fof(ex1414051498924,axiom,(
+    ? [X5,X1,T2,S6,E3,E4,S7] :
+      ( call_1(s0,X1)
+      & one_1(s0,T2)
+      & night_1(s0,T2)
+      & so_1(s0,S6)
+      & is_before_2(s0,E4,e0)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & go_2(S8,E3,X5)
+          & on_2(S8,E3,X1) )
+      & ? [S9] :
+          ( fact_2(s0,S6,S9)
+          & wanted_for_3(S9,E4,unspecified,X5)
+          & tmp_2(S9,E4,T2)
+          & prp_2(S9,E4,S7) ) ) )).
+
+% ::id 221_fiction_JOYCE-1914;AT69-4;NE
+% ::snt and they couldn't find him anywhere .
+fof(ex1414051499273,axiom,(
+    ? [G1,X3,E2] :
+      ( any_where_1(s0,E2)
+      & find_3(s0,E2,G1,X3) ) )).
+
+% ::id 222_fiction_JOYCE-1914;AT69-5;NE
+% ::snt They looked high up and low down ;
+fof(ex1414051499625,axiom,(
+    ? [G2,E1] :
+      ( high_up_1(s0,E1)
+      & low_down_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & looked_2(s0,E1,G2) ) )).
+
+% ::id 223_fiction_JOYCE-1914;AT69-6;NE
+% ::snt and still they couldn't see a sight of him anywhere .
+fof(ex1414051499980,axiom,(
+    ? [G1,X4,X2,E3] :
+      ( is_sight_of_2(s0,X2,X4)
+      & still_1(s0,E3)
+      & any_where_1(s0,E3)
+      & see_3(s0,E3,G1,X2) ) )).
+
+% ::id 224_fiction_JOYCE-1914;AT69-7;NE
+% ::snt So then the clerk suggested to try the chapel .
+fof(ex1414051500327,axiom,(
+    ? [X1,X2,S6,S5,E3,E4] :
+      ( clerk_1(s0,X2)
+      & chapel_1(s0,X1)
+      & so_1(s0,S5)
+      & then_1(s0,S6)
+      & is_before_2(s0,E4,e0)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & ? [S8] :
+              ( fact_2(S7,S6,S8)
+              & ? [S9] :
+                  ( suggested_3(S8,E4,X2,S9)
+                  & try_3(S9,E3,X2,X1) ) ) ) ) )).
+
+% ::id 225_fiction_JOYCE-1914;AT69-8;NE
+% ::snt So then they got the keys and opened the chapel
+fof(ex1414051500684,axiom,(
+    ? [X1,G2,G5,S7,S6,E3,E4] :
+      ( chapel_1(s0,X1)
+      & keys_1(s0,G2)
+      & so_1(s0,S6)
+      & then_1(s0,S7)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & ? [S8] :
+          ( fact_2(s0,S6,S8)
+          & ? [S9] :
+              ( fact_2(S8,S7,S9)
+              & got_3(S9,E3,G5,G2)
+              & opened_3(S9,E4,G5,X1) ) ) ) )).
+
+% ::id 226_fiction_JOYCE-1914;AT69-9;NE
+% ::snt and the clerk and Father O' Rourke and another priest that was there brought in a light \[ for \+ to look for \] him ... .
+fof(ex1414051501056,axiom,(
+    ? [X1,X10,X2,G3,E4,E5,S9] :
+      ( clerk_1(s0,X1)
+      & light_1(s0,X2)
+      & choose3(X10,X2,father_o_rourke,X1)
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,father_o_rourke,G3)
+      & ? [X8,E6] :
+          ( choose2(X8,father_o_rourke,X1)
+          & is_before_2(s0,E6,e0)
+          & ? [X7] :
+              ( was_2(s0,E6,X7)
+              & loc_2(s0,E6,X8)
+              & priest_1(s0,X7)
+              & is_of_2(s0,X7,G3) ) )
+      & is_before_2(s0,E5,e0)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & look_2(S11,E4,G3)
+          & for_2(S11,E4,X10) )
+      & brought_2(s0,E5,G3)
+      & in_2(s0,E5,X2)
+      & prp_2(s0,E5,S9) ) )).
+
+% ::id 227_fiction_JOYCE-1914;AT69-10;NE
+% ::snt And what do you think but there he was , sitting up by himself in the dark in his confession-box , wide-awake and laughing-like softly to himself ? "
+fof(ex1414051501440,axiom,(
+    ? [X7,X1] :
+      ( dark_1(s0,X1)
+      & ? [X2,X13,X12,X11,X10,X9,X3,E4,E5,E6,S8] :
+          ( choose1(X10,X2)
+          & choose1(X11,X10)
+          & choose5(X12,X10,X11,X1,X9,X2)
+          & is_confession_box_of_2(s0,X3,X12)
+          & choose1(X13,X10)
+          & is_before_2(s0,E5,e0)
+          & ? [S14] :
+              ( fact_2(s0,S8,S14)
+              & sitting_up_2(S14,E4,X10)
+              & by_2(S14,E4,X11)
+              & in__2(S14,E4,X1)
+              & in_2(S14,E4,X3)
+              & wide_awake_1(S14,X10)
+              & softly_1(S14,X10)
+              & is_laughing_like_to_2(S14,X10,X13)
+              & was_2(S14,E5,X10)
+              & loc_2(S14,E5,X9) )
+          & do_think_3(s0,E6,X7,X2)
+          & but_2(s0,E6,S8) ) ) )).
+
+% ::id 228_fiction_JOYCE-1914;AT70-1;NE
+% ::snt She stopped suddenly as if to listen .
+fof(ex1414051501789,axiom,(
+    ? [X3,S4,E1,E2,S5] :
+      ( suddenly_1(s0,S4)
+      & is_before_2(s0,E2,e0)
+      & ? [S6] :
+          ( fact_2(s0,S5,S6)
+          & listen_2(S6,E1,X3) )
+      & ? [S7] :
+          ( fact_2(s0,S4,S7)
+          & stopped_2(S7,E2,X3)
+          & as_if_2(S7,E2,S5) ) ) )).
+
+% ::id 229_fiction_JOYCE-1914;AT70-2;NE
+% ::snt I too listened ;
+fof(ex1414051502133,axiom,(
+    ? [X2,E1] :
+      ( too_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & listened_2(s0,E1,X2) ) )).
+
+% ::id 230_fiction_JOYCE-1914;AT70-3;NE
+% ::snt but there was no sound in the house :
+fof(ex1414051502486,axiom,(
+    ? [X1] :
+      ( house_1(s0,X1)
+      & ? [X2,E3] :
+          ( is_sound_in_2(s0,X2,X1)
+          & is_before_2(s0,E3,e0)
+          & was_2(s0,E3,X2) ) ) )).
+
+% ::id 231_fiction_JOYCE-1914;AT70-4;NE
+% ::snt and I knew that the old priest was lying still in his coffin as we had seen him , solemn and truculent in death , an idle chalice on his breast .
+fof(ex1414051502868,axiom,(
+    ? [X9,X1,X13,X15,X14,X11,X2,X3,X4,X5,S10,E6,E7,E8,S12] :
+      ( old_1(s0,X1)
+      & priest_1(s0,X1)
+      & choose1(X11,X1)
+      & is_coffin_of_2(s0,X5,X11)
+      & choose2(X14,X1,X5)
+      & solemn_1(s0,X14)
+      & truculent_1(s0,X14)
+      & death_1(s0,X4)
+      & choose4(X15,X14,X4,X1,X5)
+      & is_breast_of_2(s0,X2,X15)
+      & idle_1(s0,X3)
+      & is_chalice_on_2(s0,X3,X2)
+      & still_1(s0,S10)
+      & is_before_2(s0,E6,E8)
+      & is_before_2(s0,E7,E8)
+      & is_before_2(s0,E8,e0)
+      & ? [S16] :
+          ( fact_2(s0,S12,S16)
+          & had_seen_4(S16,E6,X13,unspecified,X14)
+          & in_2(S16,E6,X4)
+          & circumstance_2(S16,E6,X3) )
+      & ? [S17] :
+          ( knew_3(s0,E8,X9,S17)
+          & ? [S18] :
+              ( fact_2(S17,S10,S18)
+              & was_lying_2(S18,E7,X1)
+              & in_2(S18,E7,X5)
+              & as_2(S18,E7,S12) ) ) ) )).
+
+% ::id 232_fiction_JOYCE-1914;AT71-1;NE
+% ::snt Eliza resumed :
+fof(ex1414051503217,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & resumed_2(s0,E1,eliza) ) )).
+
+% ::id 233_fiction_JOYCE-1914;AT72-1;NE
+% ::snt " Wide-awake and laughing-like to himself ... .
+fof(ex1414051503576,axiom,(
+    ? [X3,A2,E1] :
+      ( wide_awake_1(s0,A2)
+      & is_laughing_like_to_2(s0,A2,X3)
+      & xxx_3(s0,E1,unspecified,A2) ) )).
+
+% ::id 234_fiction_JOYCE-1914;AT72-2;NE
+% ::snt So then , of course , when they saw that , that made them think that there was something gone wrong with him .... "
+fof(ex1414051503957,axiom,(
+    ? [X16,X6,X1,X2,G14,A15,S9,S8,S7,E3,E4,E5] :
+      ( course_1(s0,X2)
+      & thing_1(s0,X1)
+      & choose3(X16,X1,X6,X2)
+      & is_wrong_with_2(s0,A15,X16)
+      & so_1(s0,S7)
+      & then_1(s0,S8)
+      & ? [X13,G12,T10,E11] :
+          ( choose2(X13,X2,X6)
+          & saw_3(s0,E11,G12,X13)
+          & is_when_2(s0,E11,T10)
+          & is_before_2(s0,E11,e0)
+          & is_tmp_2(s0,S9,T10) )
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E5,e0)
+      & ? [S17] :
+          ( fact_2(s0,S7,S17)
+          & ? [S18] :
+              ( fact_2(S17,S8,S18)
+              & ? [S19] :
+                  ( fact_2(S18,S9,S19)
+                  & ? [S20] :
+                      ( made_3(S19,E5,X6,S20)
+                      & ? [S21] :
+                          ( is_think_3(S20,E4,G14,S21)
+                          & was_gone_3(S21,E3,X1,A15) ) )
+                  & of_2(S19,E5,X2) ) ) ) ) )).
+

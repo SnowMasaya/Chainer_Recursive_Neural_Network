@@ -1,0 +1,486 @@
+# ::id 1_letters_MASC;110CYL067;AT1-1;NE
+# ::snt December 1998
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = DATE[December_1998])
+
+# ::id 2_letters_MASC;110CYL067;AT2-1;NE
+# ::snt Your contribution to Goodwill will mean more than you may know .
+∃ READER[2] ENTITY[1] (
+ READER[2] = your ∧
+  is_contribution_to(ENTITY[1], ENTITY[Goodwill]) ∧ is_contribution_POS(ENTITY[1], READER[2]) ∧
+   MD_will(MORE READER[6] DEGREE[4] ENTITY[3] (
+         (READER[6] = you ∧ MD_may(∃ EVENT[7] know.01(EVENT[7], READER[6], DEGREE[4])) ∧
+          is_than(ENTITY[3], DEGREE[4])), ∃ EVENT[8] mean.01(EVENT[8], ENTITY[1], ENTITY[3]))))
+
+# ::id 3_letters_MASC;110CYL067;AT3-1;NE
+# ::snt To help you see how much your contribution means , I 'm sharing with you The words of people who have lived Goodwill 's mission .
+∃ READER[10] JAMES[9] READER[3] PRP[1] EVENT[4] EVENT[2] EVENT[16] EVENT[15] ENTITY[14] GROUP[12] GROUP[11] (
+ is_mission_POS(ENTITY[14], ENTITY[Goodwill]) ∧
+  live.01(EVENT[15], GROUP[12], ENTITY[14]) ∧ people(GROUP[12]) ∧
+   is_words_of(GROUP[11], GROUP[12]) ∧
+    READER[3] = you ∧
+     is_FACT_THAT(PRP[1],
+      help.01(EVENT[2],
+       see.01(EVENT[4], READER[3],
+        QUEST(∃ READER[7] EVENT[8] ENTITY[6] ? ENTITY[5] (
+              how_much(ENTITY[5]) ∧
+               READER[7] = your{READER[3]} ∧
+                is_contribution_POS(ENTITY[6], READER[7]) ∧ mean.01(EVENT[8], ENTITY[6], ENTITY[5])))))) ∧
+      JAMES[9] = i ∧
+       READER[10] = you ∧
+        share.01(EVENT[16], JAMES[9], GROUP[11]) ∧ with(EVENT[16]) = READER[10] ∧ PRP(EVENT[16]) = PRP[1])
+
+# ::id 4_letters_MASC;110CYL067;AT4-1;NE
+# ::snt We want you to Know why your support of Goodwill is so important .
+∃ READER[3] GOODWILL[1] EVENT[4] EVENT[2] (
+ GOODWILL[1] = we ∧
+  READER[3] = you ∧
+   want.01(EVENT[2], GOODWILL[1],
+    know.01(EVENT[4], READER[3],
+     QUEST(∃ ATTRIB[8] READER[7] EVENT[9] ENTITY[6] ? ENTITY[5] (
+           READER[7] = your{READER[3]} ∧
+            is_support_of(ENTITY[6], ENTITY[Goodwill]) ∧ is_support_POS(ENTITY[6], READER[7]) ∧
+             so_important(ATTRIB[8]) ∧
+              is_ADV(EVENT[9], ENTITY[5]) ∧ be.01(EVENT[9], ENTITY[6], ATTRIB[8]))))))
+
+# ::id 5_letters_MASC;110CYL067;AT5-1;NE
+# ::snt Your gift to Goodwill is important because people with physical and Mental disabilities sometimes need an extra hand to know the pride that comes with work .
+∃ SITUATION[20] PRP[13] ATTRIB[12] SITUATION[4] ATTRIB[3] READER[2] EVENT[18] EVENT[19] EVENT[21] GROUP[6] ENTITY[11] GROUP[5] ENTITY[1] EVENT[17] ENTITY[16] ENTITY[14] (
+ work(ENTITY[16]) ∧
+  come.03(EVENT[17], ENTITY[14]) ∧ with(EVENT[17]) = ENTITY[16] ∧ pride(ENTITY[14]) ∧
+   READER[2] = your ∧
+    is_gift_to(ENTITY[1], ENTITY[Goodwill]) ∧ is_gift_POS(ENTITY[1], READER[2]) ∧
+     important(ATTRIB[3]) ∧
+      ∃ ATTRIB[8] GROUP[7] (physical(ATTRIB[8]) ∧ is_disabilities_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+       ∃ ATTRIB[10] GROUP[9] (mental(ATTRIB[10]) ∧ is_disabilities_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[6])) ∧
+       is_people_with(GROUP[5], GROUP[6]) ∧
+        extra(ATTRIB[12]) ∧
+         is_hand_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+          is_FACT_THAT(PRP[13], know.01(EVENT[18], ENTITY[11], ENTITY[14])) ∧
+           is_FACT_THAT(SITUATION[4],
+            is_FACT_THAT(SITUATION[20], need.01(EVENT[19], GROUP[5], ENTITY[11]) ∧ PRP(EVENT[19]) = PRP[13])) ∧
+            some(SITUATION[20]) ∧ TMP_times(SITUATION[20]) ∧
+             be.01(EVENT[21], ENTITY[1], ATTRIB[3]) ∧ because(EVENT[21]) = SITUATION[4])
+
+# ::id 6_letters_MASC;110CYL067;AT6-1;NE
+# ::snt " I was sad when I could n't go to the snack bar to buy a soda .
+∃ SITUATION[10] MAUREEN[4] ATTRIB[2] MAUREEN[1] EVENT[11] ENTITY[5] (
+ snack_bar(ENTITY[5]) ∧
+  MAUREEN[1] = i ∧
+   sad(ATTRIB[2]) ∧
+    MAUREEN[4] = i{MAUREEN[1]} ∧
+     is_TMP(SITUATION[10], EVENT[11]) ∧
+      is_FACT_THAT(SITUATION[10],
+       MD_could(¬ ∃ PRP[6] EVENT[8] EVENT[9] ENTITY[7] (
+                  soda(ENTITY[7]) ∧
+                   is_FACT_THAT(PRP[6], buy.01(EVENT[8], MAUREEN[4], ENTITY[7])) ∧
+                    go.02(EVENT[9], MAUREEN[4]) ∧ PRP(EVENT[9]) = PRP[6] ∧
+                     to(EVENT[9]) = ENTITY[5]))) ∧
+       past(EVENT[11]) ∧ be.01(EVENT[11], MAUREEN[1], ATTRIB[2]))
+
+# ::id 7_letters_MASC;110CYL067;AT6-2;NE
+# ::snt Now I can buy a soda and spend money .
+∃ SITUATION[6] MAUREEN[1] (
+ MAUREEN[1] = i ∧
+  TMP_now(SITUATION[6]) ∧
+   is_FACT_THAT(SITUATION[6],
+    MD_can(∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+          soda(ENTITY[2]) ∧
+           money(ENTITY[4]) ∧
+            CONJ_and(buy.01(EVENT[3], MAUREEN[1], ENTITY[2]), spend.01(EVENT[5], MAUREEN[1], ENTITY[4]))))))
+
+# ::id 8_letters_MASC;110CYL067;AT6-3;NE
+# ::snt I like working and making money .
+∃ SITUATION[2] MAUREEN[1] EVENT[3] EVENT[5] EVENT[6] ENTITY[4] (
+ MAUREEN[1] = i ∧
+  money(ENTITY[4]) ∧
+   is_FACT_THAT(SITUATION[2], CONJ_and(work.er(EVENT[3], MAUREEN[1]), make.05(EVENT[5], MAUREEN[1], ENTITY[4]))) ∧
+    like.01(EVENT[6], MAUREEN[1], SITUATION[2]))
+
+# ::id 9_letters_MASC;110CYL067;AT6-4;NE
+# ::snt I have a savings account .
+∃ MAUREEN[1] EVENT[3] ENTITY[2] (MAUREEN[1] = i ∧ savings_account(ENTITY[2]) ∧ have.03(EVENT[3], MAUREEN[1], ENTITY[2]))
+
+# ::id 10_letters_MASC;110CYL067;AT6-5;NE
+# ::snt I can write my name on the deposit slip .
+∃ MAUREEN[1] ENTITY[4] (
+ deposit_slip(ENTITY[4]) ∧
+  MAUREEN[1] = i ∧
+   MD_can(∃ MAUREEN[3] EVENT[5] ENTITY[2] (
+         MAUREEN[3] = my{MAUREEN[1]} ∧
+          is_name_POS(ENTITY[2], MAUREEN[3]) ∧
+           write.01(EVENT[5], MAUREEN[1], ENTITY[2]) ∧ on(EVENT[5]) = ENTITY[4])))
+
+# ::id 11_letters_MASC;110CYL067;AT6-6;NE
+# ::snt If I was n't working here ... I would be sad ... "
+∀ MAUREEN[1] CND_If(MAUREEN[1] = i ∧ ¬ ∃ EVENT[2] (LOC_here(EVENT[2]) ∧ past(EVENT[2]) ∧ be.03(EVENT[2], MAUREEN[1])), ∃ MAUREEN[4] (MAUREEN[4] = i ∧ MD_would(∃ ATTRIB[5] EVENT[6] (sad(ATTRIB[5]) ∧ be.01(EVENT[6], MAUREEN[4], ATTRIB[5])))))
+
+# ::id 12_letters_MASC;110CYL067;AT6-7;NE
+# ::snt -- Maureen
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Maureen])
+
+# ::id 13_letters_MASC;110CYL067;AT7-1;NE
+# ::snt Because turning welfare recipients into tax payers just makes sense .
+∃ SITUATION[2] SITUATION[1] EVENT[5] EVENT[7] EVENT[9] GROUP[4] GROUP[3] ENTITY[6] (
+ welfare_recipients(GROUP[3]) ∧
+  tax_payers(GROUP[4]) ∧
+   is_FACT_THAT(SITUATION[2], turn.02(EVENT[5], _, GROUP[3]) ∧ into(EVENT[5]) = GROUP[4]) ∧
+    sense(ENTITY[6]) ∧
+     is_FACT_THAT(SITUATION[1], make.06(EVENT[7], SITUATION[2], ENTITY[6])) ∧
+      ADV_just(EVENT[7]) ∧ xxx(EVENT[9]) ∧ Because(EVENT[9]) = SITUATION[1])
+
+# ::id 14_letters_MASC;110CYL067;AT8-1;NE
+# ::snt " When I first came to Goodwill I was a single parent with little or no self-esteem .
+∃ SITUATION[10] SHERRY[6] SHERRY[2] EVENT[3] EVENT[9] ENTITY[7] (
+ SHERRY[2] = i ∧
+  SHERRY[6] = i ∧
+   LITTLE_OR_NO ENTITY[8] (self-esteem(ENTITY[8]), is_single_parent_with(ENTITY[7], ENTITY[8])) ∧
+    is_TMP(EVENT[3], SITUATION[10]) ∧
+     TMP_first(EVENT[3]) ∧
+      past(EVENT[3]) ∧
+       come.01(EVENT[3], SHERRY[2]) ∧ to(EVENT[3]) = ENTITY[Goodwill] ∧
+        past(EVENT[9]) ∧ is_FACT_THAT(SITUATION[10], be.01(EVENT[9], SHERRY[6], ENTITY[7])))
+
+# ::id 15_letters_MASC;110CYL067;AT8-2;NE
+# ::snt I was on welfare and without my diploma .
+∃ SHERRY[4] SHERRY[1] EVENT[5] EVENT[5] ENTITY[2] ENTITY[3] (
+ SHERRY[1] = i ∧
+  welfare(ENTITY[2]) ∧
+   SHERRY[4] = my{SHERRY[1]} ∧
+    is_diploma_POS(ENTITY[3], SHERRY[4]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[5]) ∧
+       CONJ_and(be.01(EVENT[5], SHERRY[1]) ∧ on(EVENT[5]) = ENTITY[2],
+        be.01(EVENT[5], SHERRY[1]) ∧ without(EVENT[5]) = ENTITY[3]))
+
+# ::id 16_letters_MASC;110CYL067;AT8-3;NE
+# ::snt Coming to Goodwill was the first step toward my becoming totally independent .
+∃ SITUATION[1] ATTRIB[8] SHERRY[7] SITUATION[5] ATTRIB[4] EVENT[2] EVENT[10] EVENT[9] ENTITY[6] ENTITY[3] (
+ first(ATTRIB[4]) ∧
+  SHERRY[7] = my ∧
+   is_POS(ENTITY[6], SHERRY[7]) ∧
+    totally_independent(ATTRIB[8]) ∧
+     is_FACT_THAT(SITUATION[5], become.01(EVENT[9], ENTITY[6], ATTRIB[8])) ∧
+      is_step_toward(ENTITY[3], SITUATION[5]) ∧ is_step_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       past(EVENT[10]) ∧
+        is_FACT_THAT(SITUATION[1], come.01(EVENT[2]) ∧ to(EVENT[2]) = ENTITY[Goodwill]) ∧
+         be.01(EVENT[10], SITUATION[1], ENTITY[3]))
+
+# ::id 17_letters_MASC;110CYL067;AT8-4;NE
+# ::snt I am now ... totally off of welfare .
+∃ ATTRIB[2] SHERRY[1] EVENT[4] ENTITY[3] (
+ SHERRY[1] = i ∧
+  welfare(ENTITY[3]) ∧ is_totally_off_of(ATTRIB[2], ENTITY[3]) ∧ TMP_now(EVENT[4]) ∧ be.01(EVENT[4], SHERRY[1], ATTRIB[2]))
+
+# ::id 18_letters_MASC;110CYL067;AT8-5;NE
+# ::snt I really like my job . "
+∃ SHERRY[3] SHERRY[1] EVENT[4] ENTITY[2] (
+ SHERRY[1] = i ∧
+  SHERRY[3] = my{SHERRY[1]} ∧
+   is_job_POS(ENTITY[2], SHERRY[3]) ∧ ADV_really(EVENT[4]) ∧ like.01(EVENT[4], SHERRY[1], ENTITY[2]))
+
+# ::id 19_letters_MASC;110CYL067;AT8-6;NE
+# ::snt -- Sherry
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Sherry])
+
+# ::id 20_letters_MASC;110CYL067;AT9-1;NE
+# ::snt Because people want to work .
+∃ SITUATION[1] EVENT[4] EVENT[3] EVENT[5] GROUP[2] (
+ people(GROUP[2]) ∧
+  is_FACT_THAT(SITUATION[1], want.01(EVENT[3], GROUP[2], work.01(EVENT[4], GROUP[2]))) ∧
+   xxx(EVENT[5]) ∧ Because(EVENT[5]) = SITUATION[1])
+
+# ::id 21_letters_MASC;110CYL067;AT10-1;NE
+# ::snt " I 'd never finished high school .
+∃ ATTRIB[3] DONNA[1] EVENT[4] ENTITY[2] (
+ DONNA[1] = i ∧
+  high(ATTRIB[3]) ∧
+   is_school_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    TMP_never(EVENT[4]) ∧ past(EVENT[4]) ∧ have.01(EVENT[4], DONNA[1], ENTITY[2]))
+
+# ::id 22_letters_MASC;110CYL067;AT10-2;NE
+# ::snt I had no experience or skills ...
+∃ DONNA[1] (
+ DONNA[1] = i ∧
+  ¬ ∃ EVENT[6] GROUP[3] ENTITY[2] (
+        CONJ_or(∃ ENTITY[4] (experience(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ GROUP[5] (skills(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3]))) ∧
+         is_equals(ENTITY[2], GROUP[3]) ∧ past(EVENT[6]) ∧ have.03(EVENT[6], DONNA[1], ENTITY[2])))
+
+# ::id 23_letters_MASC;110CYL067;AT10-3;NE
+# ::snt The only thing I did know for sure was here 's a chance to change things for me and my children ...
+∃ ATTRIB[5] DONNA[4] EVENT[6] ENTITY[2] (
+ DONNA[4] = i ∧
+  sure(ATTRIB[5]) ∧
+   know.01(EVENT[6], DONNA[4], ENTITY[2]) ∧ for(EVENT[6]) = ATTRIB[5] ∧ thing(ENTITY[2]) ∧
+    past(EVENT[6]) ∧
+     ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+      ∃ EVENT[15] EVENT[16] EVENT[7] GROUP[11] GROUP[10] ENTITY[9] ENTITY[8] (
+       ADV_here(ENTITY[8]) ∧
+        things(GROUP[10]) ∧
+         ∃ DONNA[12] (DONNA[12] = me ∧ is_element_of(DONNA[12], GROUP[11])) ∧
+          ∃ DONNA[14] GROUP[13] (DONNA[14] = my ∧ is_children_POS(GROUP[13], DONNA[14]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11])) ∧
+          is_chance_to(ENTITY[9], change.01(EVENT[15], _, GROUP[10]) ∧ for(EVENT[15]) = GROUP[11]) ∧
+           past(EVENT[7]) ∧ be.01(EVENT[7], ENTITY[1], be.01(EVENT[16], ENTITY[8], ENTITY[9])))))
+
+# ::id 24_letters_MASC;110CYL067;AT10-4;NE
+# ::snt I rode a bike to Goodwill in the rain and snow .
+∃ DONNA[1] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[6] GROUP[4] ENTITY[3] (
+ rain(ENTITY[5]) ∧
+  snow(ENTITY[6]) ∧
+   is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧
+    is_equals(ENTITY[3], GROUP[4]) ∧
+     DONNA[1] = i ∧
+      bike(ENTITY[2]) ∧
+       past(EVENT[7]) ∧
+        ride.01(EVENT[7], DONNA[1], ENTITY[2]) ∧ in(EVENT[7]) = ENTITY[3] ∧ to(EVENT[7]) = ENTITY[Goodwill])
+
+# ::id 25_letters_MASC;110CYL067;AT10-5;NE
+# ::snt I wanted to be there ...
+∃ DONNA[1] EVENT[3] EVENT[2] (
+ DONNA[1] = i ∧
+  LOC_there(EVENT[3]) ∧ past(EVENT[2]) ∧ want.01(EVENT[2], DONNA[1], be.01(EVENT[3], DONNA[1])))
+
+# ::id 26_letters_MASC;110CYL067;AT10-6;NE
+# ::snt I had my second chance to change my life . "
+∃ DONNA[6] ATTRIB[4] DONNA[3] DONNA[1] EVENT[7] EVENT[8] ENTITY[5] ENTITY[2] (
+ DONNA[1] = i ∧
+  DONNA[3] = my{DONNA[1]} ∧
+   second(ATTRIB[4]) ∧
+    DONNA[6] = my{DONNA[3], DONNA[1]} ∧
+     is_life_POS(ENTITY[5], DONNA[6]) ∧
+      is_chance_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_chance_POS(ENTITY[2], DONNA[3]) ∧
+       is_chance_to(ENTITY[2], change.01(EVENT[7], _, ENTITY[5])) ∧
+       past(EVENT[8]) ∧ have.03(EVENT[8], DONNA[1], ENTITY[2]))
+
+# ::id 27_letters_MASC;110CYL067;AT10-7;NE
+# ::snt -- Donna
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Donna])
+
+# ::id 28_letters_MASC;110CYL067;AT11-1;NE
+# ::snt Because teaching a man to fish will keep him fed for his entire life .
+∃ SITUATION[2] SITUATION[1] EVENT[5] EVENT[4] EVENT[12] PERSON[3] (
+ man(PERSON[3]) ∧
+  is_FACT_THAT(SITUATION[2], teach.01(EVENT[4], _, PERSON[3], fish.01(EVENT[5], PERSON[3]))) ∧
+   is_FACT_THAT(SITUATION[1],
+    MD_will(∃ ATTRIB[10] PERSON[9] PERSON[7] EVENT[11] EVENT[6] ENTITY[8] (
+          PERSON[7] = him{PERSON[3]} ∧
+           PERSON[9] = his{PERSON[7], PERSON[3]} ∧
+            entire(ATTRIB[10]) ∧
+             is_life_ATTRIBUTE(ENTITY[8], ATTRIB[10]) ∧ is_life_POS(ENTITY[8], PERSON[9]) ∧
+              keep.02(EVENT[6], SITUATION[2],
+               feed.01(EVENT[11], _, PERSON[7]) ∧ for(EVENT[11]) = ENTITY[8])))) ∧
+    xxx(EVENT[12]) ∧ Because(EVENT[12]) = SITUATION[1])
+
+# ::id 29_letters_MASC;110CYL067;AT12-1;NE
+# ::snt " Before I got to Goodwill , I was on a mission .
+∃ CORNELL[3] CORNELL[1] EVENT[2] EVENT[5] ENTITY[4] (
+ CORNELL[1] = i ∧
+  CORNELL[3] = i ∧
+   mission(ENTITY[4]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      CRD_Before(get.05(EVENT[2], CORNELL[1]) ∧ to(EVENT[2]) = ENTITY[Goodwill],
+       be.01(EVENT[5], CORNELL[3]) ∧ on(EVENT[5]) = ENTITY[4]))
+
+# ::id 30_letters_MASC;110CYL067;AT12-2;NE
+# ::snt I just wanted a job .
+∃ CORNELL[1] EVENT[3] ENTITY[2] (
+ CORNELL[1] = i ∧
+  job(ENTITY[2]) ∧ ADV_just(EVENT[3]) ∧ past(EVENT[3]) ∧ want.01(EVENT[3], CORNELL[1], ENTITY[2]))
+
+# ::id 31_letters_MASC;110CYL067;AT12-3;NE
+# ::snt It did n't matter what the job was ,
+∃ SITUATION[1] ENTITY[3] (
+ job(ENTITY[3]) ∧
+  is_FACT_THAT(SITUATION[1], QUEST(∃ EVENT[4] ? ENTITY[2] (past(EVENT[4]) ∧ be.01(EVENT[4], ENTITY[3], ENTITY[2])))) ∧
+   ¬ ∃ EVENT[5] (past(EVENT[5]) ∧ do.01(EVENT[5], SITUATION[1])))
+
+# ::id 32_letters_MASC;110CYL067;AT12-3;NE
+# ::snt I just wanted one .
+∃ CORNELL[1] EVENT[3] ENTITY[2] (
+ CORNELL[1] = i ∧
+  CD_one(ENTITY[2]) ∧ ADV_just(EVENT[3]) ∧ past(EVENT[3]) ∧ want.01(EVENT[3], CORNELL[1], ENTITY[2]))
+
+# ::id 33_letters_MASC;110CYL067;AT12-4;NE
+# ::snt Now , I 'm on a journey .
+∃ CORNELL[1] EVENT[3] ENTITY[2] (
+ CORNELL[1] = i ∧
+  journey(ENTITY[2]) ∧ TMP_now(EVENT[3]) ∧ be.01(EVENT[3], CORNELL[1]) ∧ on(EVENT[3]) = ENTITY[2])
+
+# ::id 34_letters_MASC;110CYL067;AT12-5;NE
+# ::snt I 've got more than a job ;
+∃ CORNELL[1] (
+ CORNELL[1] = i ∧
+  MORE ENTITY[3] ENTITY[2] ((job(ENTITY[3]) ∧ is_than(ENTITY[2], ENTITY[3])), ∃ EVENT[4] get.02(EVENT[4], CORNELL[1], ENTITY[2])))
+
+# ::id 35_letters_MASC;110CYL067;AT12-5;NE
+# ::snt I 've got a career .
+∃ CORNELL[1] EVENT[3] ENTITY[2] (CORNELL[1] = i ∧ career(ENTITY[2]) ∧ get.02(EVENT[3], CORNELL[1], ENTITY[2]))
+
+# ::id 36_letters_MASC;110CYL067;AT12-6;NE
+# ::snt My instructor played a role like no other instructor I 've ever had
+∃ ATTRIB[4] CORNELL[2] EVENT[12] EVENT[11] ENTITY[3] ENTITY[1] (
+ CORNELL[2] = my ∧
+  is_instructor_POS(ENTITY[1], CORNELL[2]) ∧
+   role(ENTITY[3]) ∧
+    ¬ ∃ CORNELL[8] ATTRIB[6] EVENT[9] ENTITY[5] (
+          other(ATTRIB[6]) ∧
+           CORNELL[8] = i ∧
+            have.01(EVENT[9], CORNELL[8], ENTITY[5]) ∧ is_instructor_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+             TMP_ever(EVENT[9]) ∧ is_like_comp(ATTRIB[4], ENTITY[5])) ∧
+     past(EVENT[12]) ∧
+      CONJ_and(play.02(EVENT[12], ENTITY[1], ENTITY[3]), xxx(EVENT[11], ENTITY[3]) ∧ ATTRIBUTE(EVENT[11]) = ATTRIB[4]))
+
+# ::id 37_letters_MASC;110CYL067;AT12-7;NE
+# ::snt I appreciate everything that Goodwill has done for me . "
+∃ CORNELL[1] (
+ CORNELL[1] = i ∧
+  ∀ CORNELL[4] EVENT[5] ENTITY[2] (
+   (CORNELL[4] = me{CORNELL[1]} ∧
+    do.02(EVENT[5], ENTITY[Goodwill], ENTITY[2]) ∧ for(EVENT[5]) = CORNELL[4] ∧ thing(ENTITY[2])) →
+   ∃ EVENT[6] appreciate.02(EVENT[6], CORNELL[1], ENTITY[2])))
+
+# ::id 38_letters_MASC;110CYL067;AT12-8;NE
+# ::snt -- Cornell
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Cornell])
+
+# ::id 39_letters_MASC;110CYL067;AT13-1;NE
+# ::snt Each year , we help thousands of people who face tremendous obstacles .
+EACH TIME[1] (year(TIME[1]),
+ ∃ ATTRIB[7] GOODWILL[2] EVENT[8] EVENT[9] GROUP[6] PERSONS[4] GROUP[3] (
+  GOODWILL[2] = we ∧
+   people(PERSONS[4]) ∧
+    tremendous(ATTRIB[7]) ∧
+     is_obstacles_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+      face.01(EVENT[8], GROUP[3], GROUP[6]) ∧ is_thousands_of(GROUP[3], PERSONS[4]) ∧
+       help.01(EVENT[9], GOODWILL[2], GROUP[3]) ∧ is_contained_in(TMP(EVENT[9]), TIME[1])))
+
+# ::id 40_letters_MASC;110CYL067;AT13-2;NE
+# ::snt Their one common goal : they all want to work .
+∃ PERSONS[4] ATTRIB[3] PERSONS[2] EVENT[6] EVENT[5] ENTITY[1] (
+ PERSONS[2] = their ∧
+  common(ATTRIB[3]) ∧
+   (CD_one(ENTITY[1]), is_goal_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_goal_POS(ENTITY[1], PERSONS[2])) ∧
+    PERSONS[4] = they ∧
+     want.01(EVENT[5], PERSONS[4], work.01(EVENT[6], PERSONS[4])) ∧ TPC(EVENT[5]) = ENTITY[1])
+
+# ::id 41_letters_MASC;110CYL067;AT14-1;NE
+# ::snt A robust economy helps by providing job opportunities , but to be honest , most of the people who are n't working today are quite simply the ones who face the greatest obstacles .
+∃ ATTRIB[9] ARB[8] ADT[7] SITUATION[3] ATTRIB[2] ATTRIB[19] EVENT[5] EVENT[6] EVENT[10] GROUP[4] ENTITY[1] GROUP[12] GROUP[18] GROUP[16] EVENT[20] (
+ ¬ ∃ EVENT[15] TIME[14] (today(TIME[14]) ∧ be.03(EVENT[15], GROUP[12]) ∧ is_contained_in(TMP(EVENT[15]), TIME[14])) ∧
+  people(GROUP[12]) ∧
+  greatest(ATTRIB[19]) ∧
+   is_obstacles_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧
+    face.01(EVENT[20], GROUP[16], GROUP[18]) ∧ ones(GROUP[16]) ∧
+     robust(ATTRIB[2]) ∧
+      is_economy_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       job_opportunities(GROUP[4]) ∧
+        is_FACT_THAT(SITUATION[3], provide.01(EVENT[5], ENTITY[1], GROUP[4])) ∧
+         ARB[8] = *arb* ∧
+          honest(ATTRIB[9]) ∧
+           is_FACT_THAT(ADT[7], be.01(EVENT[10], ARB[8], ATTRIB[9])) ∧
+            CONJ_but(help.01(EVENT[6], ENTITY[1]) ∧ by(EVENT[6]) = SITUATION[3],
+             MOST ENTITY[11] (is_element_of(ENTITY[11], GROUP[12]),
+              ∃ EVENT[21] (
+               ADV_quite_simply(EVENT[21]) ∧
+                be.01(EVENT[21], ENTITY[11], GROUP[16]) ∧ ADT(EVENT[21]) = ADT[7]))))
+
+# ::id 42_letters_MASC;110CYL067;AT14-2;NE
+# ::snt The kinds of services we provide help people deal with obstacles like health care , transportation and child care - problems that are big enough on their own without being compounded by factors like physical and mental disabilities , illiteracy and lack of job skills .
+∃ ATTRIB[16] SITUATION[14] ATTRIB[13] PROBLEMS[12] ATTRIB[10] ATTRIB[29] GOODWILL[4] EVENT[26] EVENT[27] EVENT[34] EVENT[6] GROUP[30] GROUP[17] GROUP[15] ENTITY[11] PROBLEMS[8] GROUP[28] PERSONS[7] EVENT[5] GROUP[2] GROUP[1] (
+ GOODWILL[4] = we ∧
+  provide.01(EVENT[5], GOODWILL[4], GROUP[2]) ∧ services(GROUP[2]) ∧
+   is_kinds_of(GROUP[1], GROUP[2]) ∧
+    people(PERSONS[7]) ∧
+     ∃ ENTITY[31] (health_care(ENTITY[31]) ∧ is_element_of(ENTITY[31], GROUP[30])) ∧
+      ∃ ENTITY[32] (transportation(ENTITY[32]) ∧ is_element_of(ENTITY[32], GROUP[30])) ∧
+      ∃ ENTITY[33] (child_care(ENTITY[33]) ∧ is_element_of(ENTITY[33], GROUP[30])) ∧
+      is_like_comp(ATTRIB[29], GROUP[30]) ∧
+       is_obstacles_ATTRIBUTE(GROUP[28], ATTRIB[29]) ∧
+        PROBLEMS[12] = their{PROBLEMS[8]} ∧
+         own(ATTRIB[13]) ∧
+          is_ATTRIBUTE(ENTITY[11], ATTRIB[13]) ∧ is_POS(ENTITY[11], PROBLEMS[12]) ∧
+           ∃ GROUP[18] (
+            ∃ ATTRIB[20] GROUP[19] (physical(ATTRIB[20]) ∧ is_disabilities_ATTRIBUTE(GROUP[19], ATTRIB[20]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[18])) ∧
+             ∃ ATTRIB[22] GROUP[21] (mental(ATTRIB[22]) ∧ is_disabilities_ATTRIBUTE(GROUP[21], ATTRIB[22]) ∧ is_subset_of_or_equal_to(GROUP[21], GROUP[18])) ∧
+             is_subset_of_or_equal_to(GROUP[18], GROUP[17])) ∧ ∃ ENTITY[23] (illiteracy(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[17])) ∧
+            ∃ GROUP[25] ENTITY[24] (job_skills(GROUP[25]) ∧ is_lack_of(ENTITY[24], GROUP[25]) ∧ is_element_of(ENTITY[24], GROUP[17])) ∧
+            is_like_comp(ATTRIB[16], GROUP[17]) ∧
+             is_factors_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧
+              is_FACT_THAT(SITUATION[14],   compound.01(EVENT[26], GROUP[15], [_])) ∧
+               ADV_enough(ATTRIB[10]) ∧ is_big_without(ATTRIB[10], SITUATION[14]) ∧ is_big_on(ATTRIB[10], ENTITY[11]) ∧
+                be.01(EVENT[27], PROBLEMS[8]) ∧ ATTRIBUTE(EVENT[27]) = ATTRIB[10] ∧ problems(PROBLEMS[8]) ∧
+                 is_-GROUP-_namely(GROUP[28], PROBLEMS[8]) ∧
+                  help.01(EVENT[6], GROUP[1], deal.01(EVENT[34], PERSONS[7]) ∧ with(EVENT[34]) = GROUP[28]))
+
+# ::id 43_letters_MASC;110CYL067;AT15-1;NE
+# ::snt Last year , Goodwill helped 3,300 people find jobs that increased their self-sufficiency .
+∃ PERSONS[8] ATTRIB[2] EVENT[9] EVENT[10] EVENT[4] ENTITY[7] GROUP[5] PERSONS[3] TIME[1] (
+ last(ATTRIB[2]) ∧
+  is_year_ATTRIBUTE(TIME[1], ATTRIB[2]) ∧
+   (CD_3,300(PERSONS[3]), people(PERSONS[3])) ∧
+    PERSONS[8] = their{PERSONS[3]} ∧
+     is_self-sufficiency_POS(ENTITY[7], PERSONS[8]) ∧
+      increase.01(EVENT[9], GROUP[5], ENTITY[7]) ∧ jobs(GROUP[5]) ∧
+       is_before(EVENT[9], EVENT[4]) ∧
+        past(EVENT[4]) ∧
+         help.01(EVENT[4], ENTITY[Goodwill], PERSONS[3], find.01(EVENT[10], PERSONS[3], GROUP[5])) ∧
+          is_contained_in(TMP(EVENT[4]), TIME[1]))
+
+# ::id 44_letters_MASC;110CYL067;AT16-1;NE
+# ::snt Your gift to Goodwill will be used directly to support services that will help even more find jobs .
+∃ READER[2] ENTITY[1] (
+ READER[2] = your ∧
+  is_gift_to(ENTITY[1], ENTITY[Goodwill]) ∧ is_gift_POS(ENTITY[1], READER[2]) ∧
+   MD_will(∃ SITUATION[13] PRP[3] EVENT[11] EVENT[12] GROUP[4] (
+         MD_will(MORE ENTITY[7] EVEN ENTITY[6] (is_of(ENTITY[6], ENTITY[7]),
+               ∃ EVENT[10] EVENT[8] GROUP[9] (
+                jobs(GROUP[9]) ∧
+                 help.01(EVENT[8], GROUP[4], ENTITY[6], find.01(EVENT[10], ENTITY[6], GROUP[9]))))) ∧
+          services(GROUP[4]) ∧
+          is_FACT_THAT(PRP[3], support.01(EVENT[11], ENTITY[1], GROUP[4])) ∧
+           ADV_directly(SITUATION[13]) ∧
+            is_FACT_THAT(SITUATION[13], use.01(EVENT[12], _, ENTITY[1]) ∧ PRP(EVENT[12]) = PRP[3]))))
+
+# ::id 45_letters_MASC;110CYL067;AT17-1;NE
+# ::snt Right now , there are thousands of people who do not know what it feels like to support themselves .
+∃ EVENT[11] PERSONS[2] GROUP[1] (
+ ¬ ∃ EVENT[4] do.01(EVENT[4], PERSONS[2],
+       QUEST(∃ ATTRIB[9] PERSONS[7] SITUATION[6] EVENT[8] EVENT[10] ? ENTITY[5] (
+             PERSONS[7] = themselves ∧
+              is_FACT_THAT(SITUATION[6], support.01(EVENT[8], _, PERSONS[7])) ∧
+               is_like_comp(ATTRIB[9], ENTITY[5]) ∧ feel.05(EVENT[10], SITUATION[6], ATTRIB[9])))) ∧
+  people(PERSONS[2]) ∧ is_thousands_of(GROUP[1], PERSONS[2]) ∧ TMP_right_now(EVENT[11]) ∧ be.02(EVENT[11], GROUP[1]))
+
+# ::id 46_letters_MASC;110CYL067;AT17-2;NE
+# ::snt You can help them to know that feeling .
+∃ READER[1] ENTITY[4] (
+ feeling(ENTITY[4]) ∧
+  READER[1] = you ∧
+   MD_can(∃ PERSONS[2] EVENT[5] EVENT[3] (PERSONS[2] = them ∧ help.01(EVENT[3], READER[1], PERSONS[2], know.01(EVENT[5], PERSONS[2], ENTITY[4])))))
+
+# ::id 47_letters_MASC;110CYL067;AT18-1;NE
+# ::snt Please help Goodwill and help people find jobs .
+∃ EVENT[1] please(EVENT[1],
+ CONJ_and(IMPERATIVE(∃ EVENT[2] help.01(EVENT[2], _, ENTITY[Goodwill])),
+  IMPERATIVE(∃ GROUP[5] GROUP[3] EVENT[6] EVENT[4] (
+        people(GROUP[3]) ∧
+         jobs(GROUP[5]) ∧ help.01(EVENT[4], _, GROUP[3], find.01(EVENT[6], GROUP[3], GROUP[5]))))))
+
+# ::id 48_letters_MASC;110CYL067;AT18-2;NE
+# ::snt Use the enclosed card and give a generous gift to Goodwill today !
+∃ ATTRIB[2] ENTITY[1] (
+ enclose.01(ATTRIB[2]) ∧
+  is_card_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   CONJ_and(IMPERATIVE(∃ EVENT[3] use.01(EVENT[3], _, ENTITY[1])),
+    IMPERATIVE(∃ ATTRIB[5] TIME[6] ENTITY[4] EVENT[7] (
+          generous(ATTRIB[5]) ∧
+           is_gift_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+            today(TIME[6]) ∧
+             give.01(EVENT[7], _, ENTITY[4], ENTITY[Goodwill]) ∧ is_contained_in(TMP(EVENT[7]), TIME[6])))))
+
+# ::id 49_letters_MASC;110CYL067;AT19-1;NE
+# ::snt Sincerely , James M. McClelland President
+∃ EVENT[2] ENTITY[1] (
+ President(ENTITY[1]) ∧
+  is_-ENTITY-_namely(ENTITY[James_M.McClelland], ENTITY[1]) ∧ ADV_sincerely(EVENT[2]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[James_M.McClelland])

@@ -1,0 +1,1607 @@
+# ::id 1_nonfiction_GMB;p00d0030;AT1-1;NE
+# ::snt Suspected Islamist rebels have fired mortar shells at the palace used by Somalia 's interim President Abdullahi Yusuf Ahmad .
+∃ ATTRIB[2] ATTRIB[7] EVENT[9] GROUP[3] PERSONS[1] EVENT[8] TTL[6] ENTITY[4] (
+ interim(ATTRIB[7]) ∧
+  is_President_ATTRIBUTE(TTL[6], ATTRIB[7]) ∧ is_President_POS(TTL[6], GPE[Somalia]) ∧
+   is_-PERSON-_namely(PERSON[Abdullahi_Yusuf_Ahmad], TTL[6]) ∧
+    used(EVENT[8], PERSON[Abdullahi_Yusuf_Ahmad], ENTITY[4]) ∧ palace(ENTITY[4]) ∧
+     suspected(ATTRIB[2]) ∧
+      is_Islamist_rebels_ATTRIBUTE(PERSONS[1], ATTRIB[2]) ∧
+       mortar_shells(GROUP[3]) ∧ have_fired(EVENT[9], PERSONS[1], GROUP[3]) ∧ at(EVENT[9]) = ENTITY[4])
+
+# ::id 2_nonfiction_GMB;p00d0030;AT1-2;NE
+# ::snt It was not immediately clear if the president was in the palace in Mogadishu when the attack occurred or if anyone was hurt .
+∃ SITUATION[1] ENTITY[5] ENTITY[3] ENTITY[2] (
+ president(ENTITY[2]) ∧
+  is_palace_in(ENTITY[3], ENTITY[Mogadishu]) ∧
+   attack(ENTITY[5]) ∧
+    is_FACT_THAT(SITUATION[1],
+     CONJ_or(QUEST(∃ SITUATION[9] EVENT[6] EVENT[8] (
+                is_TMP(EVENT[6], SITUATION[9]) ∧
+                 past(EVENT[6]) ∧
+                  occurred(EVENT[6], ENTITY[5]) ∧
+                   past(EVENT[8]) ∧
+                    is_FACT_THAT(SITUATION[9], copula(EVENT[8], ENTITY[2]) ∧ in(EVENT[8]) = ENTITY[3]))),
+      QUEST(ANY ENTITY[10] (one(ENTITY[10]),
+            ∃ EVENT[11] (past(EVENT[11]) ∧ hurt(EVENT[11], _, ENTITY[10])))))) ∧
+     ¬ ∃ ATTRIB[12] EVENT[13] (past(EVENT[13]) ∧ immediately_clear(ATTRIB[12]) ∧ copula(EVENT[13], SITUATION[1], ATTRIB[12])))
+
+# ::id 3_nonfiction_GMB;p00d0030;AT1-3;NE
+# ::snt Local news reports said at least five mortar shells hit the palace compound and other mortars were fired elsewhere in Mogadishu Wednesday .
+∃ ATTRIB[7] EVENT[5] EVENT[8] EVENT[2] GROUP[3] GROUP[6] GROUP[1] ENTITY[4] (
+ palace_compound(ENTITY[4]) ∧
+  Local_news_reports(GROUP[1]) ∧
+   (CD_at_least_five(GROUP[3]), mortar_shells(GROUP[3])) ∧
+    other(ATTRIB[7]) ∧
+     is_mortars_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+      is_before(EVENT[5], EVENT[2]) ∧
+       is_LOC_elsewhere_in(EVENT[8], ENTITY[Mogadishu]) ∧
+        is_before(EVENT[8], EVENT[2]) ∧
+         past(EVENT[2]) ∧
+          said(EVENT[2], GROUP[1],
+           CONJ_and(hit(EVENT[5], GROUP[3], ENTITY[4]),
+            fired(EVENT[8], _, GROUP[6]) ∧ is_contained_in(TMP(EVENT[8]), TIME[Wednesday]))))
+
+# ::id 4_nonfiction_GMB;p00d0030;AT1-4;NE
+# ::snt The attacks occurred after the government said it will go ahead with a reconciliation conference to which more than 1,300 Somali elders , warlords and politicians are invited .
+∃ GPE[4] EVENT[3] EVENT[16] GPE[2] GROUP[1] (
+ attacks(GROUP[1]) ∧
+  government(GPE[2]) ∧
+   GPE[4] = it{GPE[2]} ∧
+    past(EVENT[3]) ∧
+     past(EVENT[16]) ∧
+      CRD_after(said(EVENT[3], GPE[2],
+            MD_will(∃ SITUATION[15] ATTRIB[8] EVENT[13] EVENT[14] GROUP[9] PERSONS[7] ENTITY[5] (
+                  somali(ATTRIB[8]) ∧
+                   ∃ GROUP[10] (elders(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])) ∧
+                    ∃ GROUP[11] (warlords(GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9])) ∧
+                    ∃ GROUP[12] (politicians(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[9])) ∧
+                    (CD_more_than_1,300(PERSONS[7]), is_equals(PERSONS[7], GROUP[9]) ∧ is_ATTRIBUTE(PERSONS[7], ATTRIB[8])) ∧
+                     invited(EVENT[13], _, PERSONS[7]) ∧ to(EVENT[13]) = ENTITY[5] ∧
+                      reconciliation_conference(ENTITY[5]) ∧
+                      ADV_ahead(SITUATION[15]) ∧
+                       is_FACT_THAT(SITUATION[15],
+                        go(EVENT[14], GPE[4]) ∧ with(EVENT[14]) = ENTITY[5])))),
+       occurred(EVENT[16], GROUP[1])))
+
+# ::id 5_nonfiction_GMB;p00d0060;AT2-1;NE
+# ::snt Pakistani officials say unidentified gunmen have killed three people , including a former government minister , in a semi-autonomous tribal region bordering Afghanistan .
+∃ ATTRIB[8] ATTRIB[11] ATTRIB[5] ATTRIB[2] EVENT[13] EVENT[14] EVENT[9] EVENT[3] ENTITY[10] ENTITY[7] GROUP[6] GROUP[4] GROUP[1] (
+ pakistani(ATTRIB[2]) ∧
+  is_officials_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   unidentified(ATTRIB[5]) ∧
+    is_gunmen_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     (CD_three(GROUP[6]), people(GROUP[6])) ∧
+      semi-autonomous(ATTRIB[11]) ∧
+       bordering(EVENT[13], ENTITY[10], ENTITY[Afghanistan]) ∧ is_tribal_region_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+        former(ATTRIB[8]) ∧
+         is_government_minister_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+          say(EVENT[3], GROUP[1],
+           CONJ_and(have_killed(EVENT[14], GROUP[4], GROUP[6]) ∧ in(EVENT[14]) = ENTITY[10],
+            including(EVENT[9], GROUP[6], ENTITY[7]))))
+
+# ::id 6_nonfiction_GMB;p00d0060;AT2-2;NE
+# ::snt The officials say prominent tribal leader Malik Faridullah Khan was traveling in South Waziristan Sunday when his vehicle was ambushed in the Kani Wam area .
+∃ PERSON[6] ATTRIB[4] EVENT[8] EVENT[9] EVENT[2] ENTITY[3] ENTITY[5] LOC[7] PERSONS[1] (
+ officials(PERSONS[1]) ∧
+  Kani_Wam_area(LOC[7]) ∧
+   prominent(ATTRIB[4]) ∧
+    is_tribal_leader_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     is_-PERSON-_namely(PERSON[Malik_Faridullah_Khan], ENTITY[3]) ∧
+      PERSON[6] = his{PERSON[Malik_Faridullah_Khan]} ∧
+       is_vehicle_POS(ENTITY[5], PERSON[6]) ∧
+        is_before(EVENT[8], EVENT[2]) ∧
+         is_before(EVENT[9], EVENT[2]) ∧
+          say(EVENT[2], PERSONS[1],
+           CRD_when(ambushed(EVENT[8], _, ENTITY[5]) ∧ in(EVENT[8]) = LOC[7],
+            was_traveling(EVENT[9], PERSON[Malik_Faridullah_Khan]) ∧ is_contained_in(TMP(EVENT[9]), TIME[Sunday]) ∧
+             in(EVENT[9]) = GPE[South_Waziristan])))
+
+# ::id 7_nonfiction_GMB;p00d0060;AT2-3;NE
+# ::snt His driver and a tribal elder were also killed .
+∃ EVENT[6] GROUP[1] (
+ ∃ PERSON[3] ENTITY[2] (PERSON[3] = his ∧ is_driver_POS(ENTITY[2], PERSON[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ATTRIB[5] ENTITY[4] (tribal(ATTRIB[5]) ∧ is_elder_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  ADV_also(EVENT[6]) ∧ past(EVENT[6]) ∧ killed(EVENT[6], _, GROUP[1]))
+
+# ::id 8_nonfiction_GMB;p00d0060;AT2-4;NE
+# ::snt No one has claimed responsibility for the killings .
+∃ GROUP[3] (
+ killings(GROUP[3]) ∧
+  ¬ ∃ EVENT[4] ENTITY[2] ENTITY[1] (one(ENTITY[1]) ∧ is_responsibility_for(ENTITY[2], GROUP[3]) ∧ has_claimed(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 9_nonfiction_GMB;p00d0060;AT2-5;NE
+# ::snt The ambush came a day after a commander of Pakistani troops said the army has almost completely eliminated militants in South Waziristan .
+∃ ATTRIB[6] SITUATION[3] EVENT[10] EVENT[7] EVENT[12] GROUP[5] GROUP[9] ENTITY[4] TIME[2] ENTITY[8] ENTITY[1] (
+ ambush(ENTITY[1]) ∧
+  army(ENTITY[8]) ∧
+   pakistani(ATTRIB[6]) ∧
+    is_troops_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     is_commander_of(ENTITY[4], GROUP[5]) ∧
+      militants(GROUP[9]) ∧
+       is_FACT_THAT(SITUATION[3],
+        said(EVENT[7], ENTITY[4], has_eliminated(EVENT[10], ENTITY[8], GROUP[9]) ∧ in(EVENT[10]) = ENTITY[South_Waziristan])) ∧
+        is_day_after(TIME[2], SITUATION[3]) ∧
+         ADV_almost_completely(EVENT[10]) ∧
+          past(EVENT[7]) ∧
+           past(EVENT[12]) ∧ came(EVENT[12], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[12]), TIME[2]))
+
+# ::id 10_nonfiction_GMB;p00d0060;AT2-6;NE
+# ::snt The area became a refuge for many al-Qaida and Taleban fighters after the Taleban government was ousted in Afghanistan in 2001 .
+∃ ATTRIB[10] EVENT[12] EVENT[13] DATE[11] ENTITY[2] ENTITY[9] ENTITY[1] (
+ area(ENTITY[1]) ∧
+  taleban(ATTRIB[10]) ∧
+   is_government_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+    MANY GROUP[4] PERSONS[3] (
+     (∃ ATTRIB[6] GROUP[5] (al-qaida(ATTRIB[6]) ∧ is_fighters_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+        ∃ ATTRIB[8] GROUP[7] (taleban(ATTRIB[8]) ∧ is_fighters_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4])) ∧
+      is_equals(PERSONS[3], GROUP[4])), is_refuge_for(ENTITY[2], PERSONS[3])) ∧
+     CD_2001(DATE[11]) ∧
+      past(EVENT[12]) ∧
+       past(EVENT[13]) ∧
+        CRD_after(ousted(EVENT[12], _, ENTITY[9]) ∧ in(EVENT[12]) = DATE[11] ∧
+              in(EVENT[12]) = ENTITY[Afghanistan], became(EVENT[13], ENTITY[1], ENTITY[2])))
+
+# ::id 11_nonfiction_GMB;p00d0086;AT3-1;NE
+# ::snt U.S. Army officials said Wednesday that they will not renew a controversial multi-billion dollar contract with the Halliburton company to provide logistical support to U.S. troops in Iraq and elsewhere .
+∃ ATTRIB[10] ATTRIB[8] ATTRIB[5] PERSONS[3] EVENT[13] EVENT[2] GROUP[11] GROUP[9] ENTITY[7] ENTITY[4] PERSONS[1] ENTITY[6] (
+ Halliburton_company(ENTITY[6]) ∧
+  U.S.Army_officials(PERSONS[1]) ∧
+   PERSONS[3] = they{PERSONS[1]} ∧
+    controversial(ATTRIB[5]) ∧
+     logistical(ATTRIB[8]) ∧
+      u.s.(ATTRIB[10]) ∧
+       is_element_of(ENTITY[Iraq], GROUP[11]) ∧ ∃ ENTITY[12] (ADV_elsewhere(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+        is_troops_in(GROUP[9], GROUP[11]) ∧ is_troops_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+         is_support_to(ENTITY[7], GROUP[9]) ∧ is_support_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+          (CD_multi-billion$(ENTITY[4]),
+           is_contract_with(ENTITY[4], ENTITY[6]) ∧ is_contract_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+            is_contract_to(ENTITY[4], provide(EVENT[13], _, ENTITY[7]))) ∧
+           past(EVENT[2]) ∧
+            said(EVENT[2], PERSONS[1], MD_will(¬ ∃ EVENT[14] renew(EVENT[14], PERSONS[3], ENTITY[4]))) ∧
+             is_contained_in(TMP(EVENT[2]), TIME[Wednesday]))
+
+# ::id 12_nonfiction_GMB;p00d0086;AT3-2;NE
+# ::snt Halliburton has been providing a long list of services , from meals to communication , for the military for several years .
+∃ ATTRIB[2] ENTITY[5] GROUP[4] GROUP[3] ENTITY[1] ENTITY[6] (
+ military(ENTITY[6]) ∧
+  long(ATTRIB[2]) ∧
+   meals(GROUP[4]) ∧
+    communication(ENTITY[5]) ∧
+     is_services_to(GROUP[3], ENTITY[5]) ∧ is_services_from(GROUP[3], GROUP[4]) ∧
+      is_list_of(ENTITY[1], GROUP[3]) ∧ is_list_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       SEVERAL TIME[7] (years(TIME[7]),
+        ∃ EVENT[8] (
+         has_been_providing(EVENT[8], ENTITY[Halliburton], ENTITY[1]) ∧
+          for(EVENT[8]) = TIME[7] ∧ for(EVENT[8]) = ENTITY[6])))
+
+# ::id 13_nonfiction_GMB;p00d0086;AT3-3;NE
+# ::snt Critics of Halliburton include auditors and congressional Democrats .
+∃ EVENT[6] GROUP[2] CRITICS[1] (
+ is_Critics_of(CRITICS[1], ENTITY[Halliburton]) ∧
+  ∃ GROUP[3] (auditors(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+   ∃ ATTRIB[5] GROUP[4] (congressional(ATTRIB[5]) ∧ is_Democrats_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[2])) ∧
+   include(EVENT[6], CRITICS[1], GROUP[2]))
+
+# ::id 14_nonfiction_GMB;p00d0086;AT3-4;NE
+# ::snt They say the company has produced some shoddy work and charges too much money .
+∃ CRITICS[1] EVENT[8] EVENT[2] ENTITY[7] ENTITY[3] (
+ company(ENTITY[3]) ∧
+  CRITICS[1] = they ∧
+   (CD_too_much(ENTITY[7]), money(ENTITY[7])) ∧
+    say(EVENT[2], CRITICS[1],
+     CONJ_and(SOME ATTRIB[5] ENTITY[4] ((shoddy(ATTRIB[5]) ∧ is_work_ATTRIBUTE(ENTITY[4], ATTRIB[5])), ∃ EVENT[6] has_produced(EVENT[6], ENTITY[3], ENTITY[4])),
+      charges(EVENT[8], ENTITY[3], ENTITY[7]))))
+
+# ::id 15_nonfiction_GMB;p00d0086;AT3-5;NE
+# ::snt The company strongly denies the allegations .
+∃ EVENT[3] GROUP[2] ENTITY[1] (company(ENTITY[1]) ∧ allegations(GROUP[2]) ∧ ADV_strongly(EVENT[3]) ∧ denies(EVENT[3], ENTITY[1], GROUP[2]))
+
+# ::id 16_nonfiction_GMB;p00d0086;AT3-6;NE
+# ::snt When the huge contract is put out for re-bidding , several companies will get a chance to compete for portions of the work .
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] ENTITY[8] (
+ huge(ATTRIB[2]) ∧
+  is_contract_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   work(ENTITY[8]) ∧
+    re-bidding(ENTITY[3]) ∧
+     CRD_When(put_out(EVENT[4], _, ENTITY[1]) ∧ for(EVENT[4]) = ENTITY[3],
+      SEVERAL GROUP[5] (companies(GROUP[5]),
+       MD_will(∃ EVENT[9] EVENT[10] GROUP[7] ENTITY[6] (
+             is_portions_of(GROUP[7], ENTITY[8]) ∧
+              is_chance_to(ENTITY[6], compete(EVENT[9]) ∧ for(EVENT[9]) = GROUP[7]) ∧
+               get(EVENT[10], GROUP[5], ENTITY[6]))))))
+
+# ::id 17_nonfiction_GMB;p00d0100;AT4-1;NE
+# ::snt Indonesian police have arrested three men in connection with the October 1 Bali bombings that left 23 people dead .
+∃ ATTRIB[2] ATTRIB[10] ATTRIB[6] EVENT[12] ENTITY[4] GROUP[3] GROUP[1] EVENT[11] EVENT[8] GROUP[9] GROUP[5] (
+ bali(ATTRIB[6]) ∧
+  (CD_23(GROUP[9]), people(GROUP[9])) ∧
+   dead(ATTRIB[10]) ∧
+    left(EVENT[8], GROUP[5], xxx(EVENT[11], GROUP[9], ATTRIB[10])) ∧
+     is_bombings_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_bombings_TMP(GROUP[5], TIME[October_1]) ∧
+     past(EVENT[8]) ∧
+      indonesian(ATTRIB[2]) ∧
+       is_police_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+        (CD_three(GROUP[3]), men(GROUP[3])) ∧
+         is_connection_with(ENTITY[4], GROUP[5]) ∧ have_arrested(EVENT[12], GROUP[1], GROUP[3]) ∧ in(EVENT[12]) = ENTITY[4])
+
+# ::id 18_nonfiction_GMB;p00d0100;AT4-2;NE
+# ::snt Indonesian police said Wednesday the men were flown to Bali from neighboring Java island for questioning at Bali police headquarters .
+∃ SITUATION[7] ATTRIB[6] ATTRIB[2] EVENT[9] EVENT[10] EVENT[3] ENTITY[8] ENTITY[5] GROUP[1] GROUP[4] (
+ men(GROUP[4]) ∧
+  indonesian(ATTRIB[2]) ∧
+   is_police_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    neighboring(ATTRIB[6]) ∧
+     is_Java_island_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+      Bali_police_headquarters(ENTITY[8]) ∧
+       is_FACT_THAT(SITUATION[7], questioning(EVENT[9], GROUP[4]) ∧ at(EVENT[9]) = ENTITY[8]) ∧
+        is_before(EVENT[10], EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          said(EVENT[3], GROUP[1],
+           flown(EVENT[10], _, GROUP[4]) ∧ for(EVENT[10]) = SITUATION[7] ∧
+            from(EVENT[10]) = ENTITY[5] ∧ to(EVENT[10]) = ENTITY[Bali]) ∧
+           is_contained_in(TMP(EVENT[3]), TIME[Wednesday]))
+
+# ::id 19_nonfiction_GMB;p00d0100;AT4-3;NE
+# ::snt Australian and French news agencies say at least one of the men arrested -LRB- Cholily -RRB- was captured during a series of counter-terrorism raids last week in Indonesia .
+∃ ATTRIB[14] EVENT[15] EVENT[6] GROUP[12] TIME[13] ENTITY[11] ENTITY[7] GROUP[1] GROUP[8] EVENT[10] (
+ arrested(EVENT[10], _, GROUP[8]) ∧ men(GROUP[8]) ∧
+  ∃ ATTRIB[3] GROUP[2] (australian(ATTRIB[3]) ∧ is_news_agencies_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+   ∃ ATTRIB[5] GROUP[4] (french(ATTRIB[5]) ∧ is_news_agencies_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[1])) ∧
+   (CD_at_least_one(ENTITY[7]), is_element_of(ENTITY[7], GROUP[8])) ∧
+    is_-ENTITY-_namely(ENTITY[7], ENTITY[Cholily]) ∧
+     counter-terrorism_raids(GROUP[12]) ∧
+      is_series_of(ENTITY[11], GROUP[12]) ∧
+       last(ATTRIB[14]) ∧
+        is_week_ATTRIBUTE(TIME[13], ATTRIB[14]) ∧
+         is_before(EVENT[15], EVENT[6]) ∧
+          say(EVENT[6], GROUP[1],
+           captured(EVENT[15], _, ENTITY[7]) ∧ in(EVENT[15]) = ENTITY[Indonesia] ∧
+            is_contained_in(TMP(EVENT[15]), TIME[13]) ∧ during(EVENT[15]) = ENTITY[11]))
+
+# ::id 20_nonfiction_GMB;p00d0100;AT4-4;NE
+# ::snt The raids ended with the death of alleged extremist bombmaker Azahari bin Husin .
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] GROUP[1] (
+ raids(GROUP[1]) ∧
+  alleged(ATTRIB[4]) ∧
+   is_extremist_bombmaker_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_-ENTITY-_namely(ENTITY[Azahari_bin_Husin], ENTITY[3]) ∧
+     is_death_of(ENTITY[2], ENTITY[Azahari_bin_Husin]) ∧
+      past(EVENT[5]) ∧ ended(EVENT[5], GROUP[1]) ∧ with(EVENT[5]) = ENTITY[2])
+
+# ::id 21_nonfiction_GMB;p00d0100;AT4-5;NE
+# ::snt Indonesian authorities blame Azahari bin Husin for orchestrating last month 's attacks in Bali as well as the 2002 Bali bombings that killed more than 200 people .
+∃ ATTRIB[6] SITUATION[3] ATTRIB[2] EVENT[12] EVENT[14] DATE[5] GROUP[4] GROUP[1] EVENT[11] GROUP[7] (
+ MORE GROUP[10] ENTITY[9] (((CD_200(GROUP[10]), people(GROUP[10])) ∧ is_than(ENTITY[9], GROUP[10])),
+  killed(EVENT[11], GROUP[7], ENTITY[9])) ∧ 2002_Bali_bombings(GROUP[7]) ∧
+  past(EVENT[11]) ∧
+   indonesian(ATTRIB[2]) ∧
+    is_authorities_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     last(ATTRIB[6]) ∧
+      is_month_ATTRIBUTE(DATE[5], ATTRIB[6]) ∧
+       is_attacks_in(GROUP[4], ENTITY[Bali]) ∧ is_attacks_POS(GROUP[4], DATE[5]) ∧
+        is_FACT_THAT(SITUATION[3], orchestrating(EVENT[12], ENTITY[Azahari_bin_Husin], GROUP[4])) ∧
+         is_ADV_as_well_as(EVENT[12], GROUP[7]) ∧ blame(EVENT[14], GROUP[1], ENTITY[Azahari_bin_Husin]) ∧ for(EVENT[14]) = SITUATION[3])
+
+# ::id 22_nonfiction_GMB;p00d0184;AT5-1;NE
+# ::snt The American Diabetes Association reports the disease is the leading cause of new cases of blindness among adults .
+∃ ATTRIB[6] ATTRIB[4] EVENT[9] EVENT[1] GROUP[8] ENTITY[7] GROUP[5] ENTITY[3] DISEASE[2] (
+ disease(DISEASE[2]) ∧
+  leading(ATTRIB[4]) ∧
+   new(ATTRIB[6]) ∧
+    blindness(ENTITY[7]) ∧
+     adults(GROUP[8]) ∧
+      is_cases_among(GROUP[5], GROUP[8]) ∧ is_cases_of(GROUP[5], ENTITY[7]) ∧ is_cases_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       is_cause_of(ENTITY[3], GROUP[5]) ∧ is_cause_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+        reports(EVENT[1], ENTITY[American_Diabetes_Association], copula(EVENT[9], DISEASE[2], ENTITY[3])))
+
+# ::id 23_nonfiction_GMB;p00d0184;AT5-2;NE
+# ::snt It is the leading cause of kidney failure .
+∃ DISEASE[1] ATTRIB[3] EVENT[5] ENTITY[4] ENTITY[2] (
+ leading(ATTRIB[3]) ∧
+  kidney_failure(ENTITY[4]) ∧
+   is_cause_of(ENTITY[2], ENTITY[4]) ∧ is_cause_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    DISEASE[1] = it ∧ copula(EVENT[5], DISEASE[1], ENTITY[2]))
+
+# ::id 24_nonfiction_GMB;p00d0184;AT5-3;NE
+# ::snt The rate of amputation is 10 times higher among those who suffer from the disease .
+∃ ATTRIB[3] EVENT[9] GROUP[4] EVENT[8] ENTITY[2] ENTITY[7] GROUP[5] ENTITY[1] (
+ amputation(ENTITY[2]) ∧
+  is_rate_of(ENTITY[1], ENTITY[2]) ∧
+   disease(ENTITY[7]) ∧
+    suffer(EVENT[8], GROUP[5]) ∧ from(EVENT[8]) = ENTITY[7] ∧
+     (CD_10(GROUP[4]), times(GROUP[4])) ∧
+      is_higher_among(ATTRIB[3], GROUP[5]) ∧ is_higher_MSR(ATTRIB[3], GROUP[4]) ∧ copula(EVENT[9], ENTITY[1], ATTRIB[3]))
+
+# ::id 25_nonfiction_GMB;p00d0184;AT5-4;NE
+# ::snt Experts say those who learn how to manage the disease early , can live healthier and more normal lives .
+∃ EVENT[2] GROUP[1] EVENT[8] EVENT[5] ENTITY[7] GROUP[3] (
+ disease(ENTITY[7]) ∧
+  learn(EVENT[5], GROUP[3], QUEST(? ENTITY[6] manage(EVENT[8], GROUP[3], ENTITY[7]))) ∧
+   is_ADV(EVENT[8]) ∧
+    TMP_early(EVENT[8]) ∧
+     Experts(GROUP[1]) ∧
+      say(EVENT[2], GROUP[1],
+       MD_can(∃ ATTRIB[13] ATTRIB[12] EVENT[14] GROUP[11] (
+             healthier(ATTRIB[12]) ∧
+              more_normal(ATTRIB[13]) ∧
+               CONJ_and(is_lives_ATTRIBUTE(GROUP[11], ATTRIB[12]), is_lives_ATTRIBUTE(GROUP[11], ATTRIB[13])) ∧
+                live(EVENT[14], GROUP[3], GROUP[11])))))
+
+# ::id 26_nonfiction_GMB;p00d0184;AT5-5;NE
+# ::snt VOA 's June Soh found camps that provide children with this chronic disease a positive approach to living with diabetes while letting them just be kids .
+∃ PERSONS[12] SITUATION[8] ATTRIB[7] ATTRIB[5] EVENT[10] EVENT[14] EVENT[11] EVENT[16] EVENT[17] ENTITY[9] GROUP[13] ENTITY[6] PERSONS[3] GROUP[1] ENTITY[4] (
+ chronic(ATTRIB[5]) ∧
+  is_disease_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   is_POS(ENTITY[June_Soh], ENTITY[VOA]) ∧
+    is_children_with(PERSONS[3], ENTITY[4]) ∧
+     positive(ATTRIB[7]) ∧
+      diabetes(ENTITY[9]) ∧
+       is_FACT_THAT(SITUATION[8], living(EVENT[10]) ∧ with(EVENT[10]) = ENTITY[9]) ∧
+        is_approach_to(ENTITY[6], SITUATION[8]) ∧ is_approach_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         PERSONS[12] = them{PERSONS[3]} ∧
+          kids(GROUP[13]) ∧
+           CRD_while(letting(EVENT[11], PERSONS[3], copula(EVENT[14], PERSONS[12], GROUP[13])),
+            provide(EVENT[16], GROUP[1], ENTITY[6], PERSONS[3])) ∧ camps(GROUP[1]) ∧
+            ADV_just(EVENT[14]) ∧ past(EVENT[17]) ∧ found(EVENT[17], ENTITY[June_Soh], GROUP[1]))
+
+# ::id 27_nonfiction_GMB;p00d0184;AT5-6;NE
+# ::snt Amy Katz Narrates .
+∃ EVENT[1] narrates(EVENT[1], ENTITY[Amy_Katz])
+
+# ::id 28_nonfiction_GMB;p00d0190;AT6-1;NE
+# ::snt U.S. automaker Chrysler has opened a 570 million engine plant in northern Mexico .
+∃ ATTRIB[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ u.s.(ATTRIB[2]) ∧
+  is_automaker_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   is_-ENTITY-_namely(ENTITY[Chrysler], ENTITY[1]) ∧
+    (CD_570_million(ENTITY[3]), engine_plant(ENTITY[3])) ∧
+     has_opened(EVENT[4], ENTITY[Chrysler], ENTITY[3]) ∧ in(EVENT[4]) = ENTITY[northern_Mexico])
+
+# ::id 29_nonfiction_GMB;p00d0190;AT6-2;NE
+# ::snt During the ceremonial startup of the Saltillo plant Friday , Mexican President Felipe Calderon said Chrysler 's sixth plant in Mexico will create 700 jobs .
+∃ ATTRIB[8] ATTRIB[5] ATTRIB[2] EVENT[6] ENTITY[4] ENTITY[7] ENTITY[3] ENTITY[1] (
+ ceremonial(ATTRIB[2]) ∧
+  Saltillo_plant(ENTITY[3]) ∧
+   is_startup_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_startup_of(ENTITY[1], ENTITY[3]) ∧
+    mexican(ATTRIB[5]) ∧
+     is_President_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      is_-ENTITY-_namely(ENTITY[Felipe_Calderon], ENTITY[4]) ∧
+       sixth(ATTRIB[8]) ∧
+        is_plant_in(ENTITY[7], ENTITY[Mexico]) ∧ is_plant_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_plant_POS(ENTITY[7], ENTITY[Chrysler]) ∧
+         past(EVENT[6]) ∧
+          said(EVENT[6], ENTITY[Felipe_Calderon],
+           MD_will(∃ EVENT[10] GROUP[9] (
+                 (CD_700(GROUP[9]), jobs(GROUP[9])) ∧
+                  create(EVENT[10], ENTITY[7], GROUP[9])))) ∧ is_contained_in(TMP(EVENT[6]), TIME[Friday]) ∧
+           During(EVENT[6]) = ENTITY[1])
+
+# ::id 30_nonfiction_GMB;p00d0190;AT6-3;NE
+# ::snt Mr. Calderon said Mexico has become a worldwide leader in the auto industry .
+∃ ATTRIB[3] EVENT[5] EVENT[1] ENTITY[2] ENTITY[4] (
+ auto_industry(ENTITY[4]) ∧
+  worldwide(ATTRIB[3]) ∧
+   is_leader_in(ENTITY[2], ENTITY[4]) ∧ is_leader_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[1]) ∧ said(EVENT[1], ENTITY[Mr.Calderon], has_become(EVENT[5], ENTITY[Mexico], ENTITY[2])))
+
+# ::id 31_nonfiction_GMB;p00d0190;AT6-4;NE
+# ::snt Chrysler plans to build its new fuel-efficient Pentastar V-6 engine for Chrysler , Dodge , Jeep and Ram vehicles .
+∃ ATTRIB[4] ORG[3] EVENT[10] EVENT[1] GROUP[5] ENTITY[2] (
+ ORG[3] = its{ORG[Chrysler]} ∧
+  new(ATTRIB[4]) ∧
+   ∃ GROUP[6] (Chrysler_vehicles(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+    ∃ GROUP[7] (Dodge_vehicles(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5])) ∧
+    ∃ GROUP[8] (Jeep_vehicles(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[5])) ∧
+    ∃ GROUP[9] (Ram_vehicles(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[5])) ∧
+    is_fuel-efficient_Pentastar_V-6_engine_for(ENTITY[2], GROUP[5]) ∧ is_fuel-efficient_Pentastar_V-6_engine_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_fuel-efficient_Pentastar_V-6_engine_POS(ENTITY[2], ORG[3]) ∧
+     plans(EVENT[1], ORG[Chrysler], build(EVENT[10], ORG[Chrysler], ENTITY[2])))
+
+# ::id 32_nonfiction_GMB;p00d0190;AT6-5;NE
+# ::snt Mexican officials say the new plant will have the capacity to build 440,000 engines per year .
+∃ ATTRIB[2] ATTRIB[5] EVENT[3] GROUP[1] EVENT[9] TIME[8] GROUP[7] ENTITY[6] ENTITY[4] (
+ new(ATTRIB[5]) ∧
+  is_plant_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   (CD_440,000(GROUP[7]), engines(GROUP[7])) ∧
+    year(TIME[8]) ∧
+     is_capacity_to(ENTITY[6], build(EVENT[9], _, GROUP[7]) ∧ per(EVENT[9]) = TIME[8]) ∧
+      mexican(ATTRIB[2]) ∧
+       is_officials_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ say(EVENT[3], GROUP[1], MD_will(∃ EVENT[10] have(EVENT[10], ENTITY[4], ENTITY[6]))))
+
+# ::id 33_nonfiction_GMB;p00d0215;AT7-1;NE
+# ::snt The United Nations says December 's Indian Ocean tsunami caused around 520 million in damage to fishing industries in seven of the worst hit countries .
+∃ ATTRIB[8] EVENT[9] EVENT[1] ENTITY[6] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[2] GROUP[7] (
+ worst_hit(ATTRIB[8]) ∧
+  is_countries_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   is_Indian_Ocean_tsunami_POS(ENTITY[2], DATE[December]) ∧
+    (CD_seven(ENTITY[6]), is_element_of(ENTITY[6], GROUP[7])) ∧
+     is_fishing_industries_in(GROUP[5], ENTITY[6]) ∧
+      is_damage_to(ENTITY[4], GROUP[5]) ∧
+       (CD_around_520_million(ENTITY[3]), is_in(ENTITY[3], ENTITY[4])) ∧
+        is_before(EVENT[9], EVENT[1]) ∧ says(EVENT[1], GROUP[United_Nations], caused(EVENT[9], ENTITY[2], ENTITY[3])))
+
+# ::id 34_nonfiction_GMB;p00d0215;AT7-2;NE
+# ::snt The U.N. 's Food and Agricultural Organization -LRB- FAO -RRB- said the tsunami destroyed or damaged more than 111,000 fishing vessels in the region .
+∃ EVENT[3] EVENT[6] EVENT[1] GROUP[4] ENTITY[5] ENTITY[2] (
+ tsunami(ENTITY[2]) ∧
+  region(ENTITY[5]) ∧
+   is_POS(ORG[Food_and_Agricultural_Organization], ENTITY[U.N.]) ∧
+    is_-ORG-_namely(ORG[Food_and_Agricultural_Organization], ENTITY[FAO]) ∧
+     (CD_more_than_111,000(GROUP[4]), fishing_vessels(GROUP[4])) ∧
+      is_before(EVENT[3], EVENT[1]) ∧
+       is_before(EVENT[6], EVENT[1]) ∧
+        past(EVENT[1]) ∧
+         said(EVENT[1], ORG[Food_and_Agricultural_Organization],
+          CONJ_or(destroyed(EVENT[3], ENTITY[2]),
+           damaged(EVENT[6], ENTITY[2], GROUP[4]) ∧ in(EVENT[6]) = ENTITY[5])))
+
+# ::id 35_nonfiction_GMB;p00d0215;AT7-3;NE
+# ::snt It said the loss was significant in a region where fishing provides a vital source of food .
+∃ ATTRIB[9] ATTRIB[4] ORG[1] EVENT[11] EVENT[13] EVENT[2] ENTITY[10] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[3] (
+ loss(ENTITY[3]) ∧
+  ORG[1] = it ∧
+   fishing(ENTITY[7]) ∧
+    vital(ATTRIB[9]) ∧
+     food(ENTITY[10]) ∧
+      is_source_of(ENTITY[8], ENTITY[10]) ∧ is_source_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       provides(EVENT[11], ENTITY[7], ENTITY[8]) ∧ region(ENTITY[5]) ∧
+        is_significant_in(ATTRIB[4], ENTITY[5]) ∧
+         is_LOC(EVENT[11], ENTITY[5]) ∧
+          is_before(EVENT[13], EVENT[2]) ∧
+           past(EVENT[2]) ∧ said(EVENT[2], ORG[1], copula(EVENT[13], ENTITY[3], ATTRIB[4])))
+
+# ::id 36_nonfiction_GMB;p00d0215;AT7-4;NE
+# ::snt The FAO 's estimate includes damage to fishing industries in Indonesia , Maldives , Somalia , Sri Lanka and Thailand .
+∃ EVENT[5] GROUP[4] GROUP[3] ENTITY[2] ENTITY[1] (
+ is_estimate_POS(ENTITY[1], ENTITY[FAO]) ∧
+  is_element_of(ENTITY[Indonesia], GROUP[4]) ∧ is_element_of(ENTITY[Maldives], GROUP[4]) ∧ is_element_of(ENTITY[Somalia], GROUP[4]) ∧
+   is_element_of(ENTITY[Sri_Lanka], GROUP[4]) ∧ is_element_of(ENTITY[Thailand], GROUP[4]) ∧
+   is_fishing_industries_in(GROUP[3], GROUP[4]) ∧ is_damage_to(ENTITY[2], GROUP[3]) ∧ includes(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 37_nonfiction_GMB;p00d0215;AT7-5;NE
+# ::snt The agency says it has sent experts to help rebuild fishing industry infrastructure lost in the disaster and is developing strategies for long-term recovery in the region .
+∃ ATTRIB[14] ORG[3] EVENT[10] EVENT[11] EVENT[6] EVENT[5] EVENT[16] EVENT[2] ENTITY[7] GROUP[4] ENTITY[13] GROUP[12] ENTITY[9] ENTITY[15] ORG[1] (
+ agency(ORG[1]) ∧
+  disaster(ENTITY[9]) ∧
+   region(ENTITY[15]) ∧
+    ORG[3] = it{ORG[1]} ∧
+     experts(GROUP[4]) ∧
+      lost(EVENT[10], _, ENTITY[7]) ∧ in(EVENT[10]) = ENTITY[9] ∧ fishing_industry_infrastructure(ENTITY[7]) ∧
+       long-term(ATTRIB[14]) ∧
+        is_recovery_in(ENTITY[13], ENTITY[15]) ∧ is_recovery_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+         is_strategies_for(GROUP[12], ENTITY[13]) ∧
+          says(EVENT[2], ORG[1],
+           CONJ_and(has_sent(EVENT[5], ORG[3], GROUP[4],
+                 help(EVENT[6], GROUP[4], rebuild(EVENT[11], GROUP[4], ENTITY[7]))),
+            is_developing(EVENT[16], ORG[3], GROUP[12]))))
+
+# ::id 38_nonfiction_GMB;p00d0252;AT8-1;NE
+# ::snt China 's giant pandas have been on endangered species lists for nearly 30 years .
+∃ ATTRIB[2] EVENT[5] TIME[4] GROUP[3] GROUP[1] (
+ giant(ATTRIB[2]) ∧
+  is_pandas_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_pandas_POS(GROUP[1], ENTITY[China]) ∧
+   endangered_species_lists(GROUP[3]) ∧
+    (CD_nearly_30(TIME[4]), years(TIME[4])) ∧
+     have_copula(EVENT[5], GROUP[1]) ∧ for(EVENT[5]) = TIME[4] ∧ on(EVENT[5]) = GROUP[3])
+
+# ::id 39_nonfiction_GMB;p00d0252;AT8-2;NE
+# ::snt There are only about 1,600 pandas still living in the wild in China .
+∃ GROUP[2] ENTITY[3] (
+ wild(ENTITY[3]) ∧
+  (CD_about_1,600(GROUP[2]), pandas(GROUP[2])) ∧
+   ONLY GROUP[1] (is_subset_of_or_equal_to(GROUP[1], GROUP[2]),
+    ∃ EVENT[4] (
+     ADV_still(EVENT[4]) ∧
+      are_living(EVENT[4], GROUP[1]) ∧ in(EVENT[4]) = ENTITY[China] ∧ in(EVENT[4]) = ENTITY[3])))
+
+# ::id 40_nonfiction_GMB;p00d0252;AT8-3;NE
+# ::snt One of the 2008 Olympic mascots is modeled on a panda called Jing Jing .
+∃ EVENT[5] EVENT[6] ENTITY[3] ENTITY[1] GROUP[2] (
+ 2008_Olympic_mascots(GROUP[2]) ∧
+  (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+   called(EVENT[5], ENTITY[3], PANDA[Jing_Jing]) ∧ panda(ENTITY[3]) ∧
+    past(EVENT[5]) ∧ modeled(EVENT[6], _, ENTITY[1]) ∧ on(EVENT[6]) = ENTITY[3])
+
+# ::id 41_nonfiction_GMB;p00d0252;AT8-4;NE
+# ::snt Conservationists hope she will help draw attention to the threats facing the giant panda -- one of China 's national symbols .
+∃ PANDA[3] ATTRIB[10] ATTRIB[12] EVENT[2] GROUP[1] EVENT[13] GROUP[9] ENTITY[8] ENTITY[11] GROUP[6] (
+ giant(ATTRIB[12]) ∧
+  is_panda_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+   national(ATTRIB[10]) ∧
+    is_symbols_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧ is_symbols_POS(GROUP[9], ENTITY[China]) ∧
+     (CD_one(ENTITY[8]), is_element_of(ENTITY[8], GROUP[9])) ∧
+      is_-ENTITY-_namely(ENTITY[11], ENTITY[8]) ∧
+       facing(EVENT[13], GROUP[6], ENTITY[11]) ∧ threats(GROUP[6]) ∧
+        Conservationists(GROUP[1]) ∧
+         PANDA[3] = she ∧
+          hope(EVENT[2], GROUP[1],
+           MD_will(∃ EVENT[14] EVENT[4] ENTITY[5] (
+                 is_attention_to(ENTITY[5], GROUP[6]) ∧
+                  help(EVENT[4], PANDA[3], draw(EVENT[14], PANDA[3], ENTITY[5]))))))
+
+# ::id 42_nonfiction_GMB;p00d0252;AT8-5;NE
+# ::snt Sam Beattie reports from Jing Jing 's home in Sichuan province .
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ sichuan(ATTRIB[3]) ∧
+  is_province_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_home_in(ENTITY[1], ENTITY[2]) ∧ is_home_POS(ENTITY[1], ENTITY[Jing_Jing]) ∧
+    reports(EVENT[4], ENTITY[Sam_Beattie]) ∧ from(EVENT[4]) = ENTITY[1])
+
+# ::id 43_nonfiction_GMB;p00d0255;AT9-1;NE
+# ::snt British defense officials say 14 British military personnel have been killed in a crash of a NATO aircraft in southern Afghanistan .
+∃ ATTRIB[6] EVENT[7] EVENT[2] ENTITY[5] ENTITY[4] GROUP[3] GROUP[1] (
+ British_defense_officials(GROUP[1]) ∧
+  (CD_14(GROUP[3]), British_military_personnel(GROUP[3])) ∧
+   nato(ATTRIB[6]) ∧
+    is_aircraft_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     is_crash_of(ENTITY[4], ENTITY[5]) ∧
+      say(EVENT[2], GROUP[1],
+       have_killed(EVENT[7], _, GROUP[3]) ∧ in(EVENT[7]) = ENTITY[southern_Afghanistan] ∧
+        in(EVENT[7]) = ENTITY[4]))
+
+# ::id 44_nonfiction_GMB;p00d0255;AT9-2;NE
+# ::snt A NATO spokesman says the aircraft went off the radar and crashed in an open area near Kandahar Saturday .
+∃ ATTRIB[9] ATTRIB[8] ATTRIB[2] EVENT[6] EVENT[10] EVENT[3] ENTITY[7] ENTITY[1] ENTITY[5] ENTITY[4] (
+ aircraft(ENTITY[4]) ∧
+  radar(ENTITY[5]) ∧
+   nato(ATTRIB[2]) ∧
+    is_spokesman_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     open(ATTRIB[8]) ∧
+      is_near_comp(ATTRIB[9], ENTITY[Kandahar]) ∧
+       is_area_LOC(ENTITY[7], ATTRIB[9]) ∧ is_area_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+        is_before(EVENT[6], EVENT[3]) ∧
+         is_before(EVENT[10], EVENT[3]) ∧
+          says(EVENT[3], ENTITY[1],
+           CONJ_and(went(EVENT[6], ENTITY[4]) ∧ off(EVENT[6]) = ENTITY[5] ∧
+                 is_contained_in(TMP(EVENT[6]), TIME[Saturday]),
+            crashed(EVENT[10], ENTITY[4]) ∧ in(EVENT[10]) = ENTITY[7] ∧
+             is_contained_in(TMP(EVENT[10]), TIME[Saturday]))))
+
+# ::id 45_nonfiction_GMB;p00d0255;AT9-3;NE
+# ::snt Officials say the aircraft was supporting a NATO mission in the country 's south , but there is no indication of enemy action causing the crash .
+∃ ATTRIB[5] EVENT[8] EVENT[2] ENTITY[6] ENTITY[4] GROUP[1] ENTITY[7] ENTITY[3] ENTITY[12] (
+ aircraft(ENTITY[3]) ∧
+  country(ENTITY[7]) ∧
+   crash(ENTITY[12]) ∧
+    Officials(GROUP[1]) ∧
+     nato(ATTRIB[5]) ∧
+      is_mission_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+       is_south_POS(ENTITY[6], ENTITY[7]) ∧
+        is_before(EVENT[8], EVENT[2]) ∧
+         CONJ_but(say(EVENT[2], GROUP[1],
+               was_supporting(EVENT[8], ENTITY[3], ENTITY[4]) ∧ in(EVENT[8]) = ENTITY[6]),
+          ¬ ∃ EVENT[13] EVENT[14] ENTITY[10] ENTITY[9] (
+                causing(EVENT[13], ENTITY[10], ENTITY[12]) ∧ enemy_action(ENTITY[10]) ∧
+                 is_indication_of(ENTITY[9], ENTITY[10]) ∧ copula(EVENT[14], ENTITY[9]))))
+
+# ::id 46_nonfiction_GMB;p00d0255;AT9-4;NE
+# ::snt The crash comes as NATO forces launched an offensive to drive Taleban remnants out of Kandahar .
+∃ ATTRIB[6] ATTRIB[3] EVENT[7] EVENT[8] EVENT[9] GROUP[5] ENTITY[4] GROUP[2] ENTITY[1] (
+ crash(ENTITY[1]) ∧
+  nato(ATTRIB[3]) ∧
+   is_forces_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    taleban(ATTRIB[6]) ∧
+     is_remnants_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+      is_offensive_to(ENTITY[4], drive_out(EVENT[7], _, GROUP[5]) ∧ of(EVENT[7]) = ENTITY[Kandahar]) ∧
+       past(EVENT[8]) ∧ CRD_as(launched(EVENT[8], GROUP[2], ENTITY[4]), comes(EVENT[9], ENTITY[1])))
+
+# ::id 47_nonfiction_GMB;p00d0255;AT9-5;NE
+# ::snt Officials say " Operation Medusa " is aimed at removing the Taleban threat so that stability , reconstruction and development can be achieved in the area .
+∃ SITUATION[6] SITUATION[3] ATTRIB[5] EVENT[13] EVENT[14] EVENT[2] GROUP[7] GROUP[1] ENTITY[11] ENTITY[4] (
+ taleban(ATTRIB[5]) ∧
+  is_threat_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   area(ENTITY[11]) ∧
+    Officials(GROUP[1]) ∧
+     ∃ ENTITY[8] (stability(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+      ∃ ENTITY[9] (reconstruction(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+      ∃ ENTITY[10] (development(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7])) ∧
+      is_FACT_THAT(SITUATION[6],
+       MD_can(∃ EVENT[12] (achieved(EVENT[12], _, GROUP[7]) ∧ in(EVENT[12]) = ENTITY[11]))) ∧
+       is_FACT_THAT(SITUATION[3], removing(EVENT[13], ENTITY[Operation_Medusa], ENTITY[4]) ∧ so(EVENT[13]) = SITUATION[6]) ∧
+        say(EVENT[2], GROUP[1], aimed(EVENT[14], _, ENTITY[Operation_Medusa]) ∧ at(EVENT[14]) = SITUATION[3]))
+
+# ::id 48_nonfiction_GMB;p00d0256;AT10-1;NE
+# ::snt Sri Lankan authorities say a prominent Tamil journalist was found shot dead Friday in Colombo , hours after he was abducted by several attackers as he left a restaurant .
+∃ ATTRIB[5] PERSON[10] SITUATION[9] ATTRIB[4] EVENT[16] EVENT[7] EVENT[6] EVENT[2] GROUP[8] PERSON[3] GROUP[1] (
+ Sri_Lankan_authorities(GROUP[1]) ∧
+  prominent(ATTRIB[4]) ∧
+   is_Tamil_journalist_ATTRIBUTE(PERSON[3], ATTRIB[4]) ∧
+    PERSON[10] = he{PERSON[3]} ∧
+     is_FACT_THAT(SITUATION[9],
+      SEVERAL GROUP[11] (attackers(GROUP[11]),
+       ∃ PERSON[12] EVENT[14] EVENT[15] ENTITY[13] (
+        PERSON[12] = he{PERSON[10], PERSON[3]} ∧
+         restaurant(ENTITY[13]) ∧
+          is_before(EVENT[14], EVENT[2]) ∧
+           is_before(EVENT[15], EVENT[2]) ∧
+            CRD_as(left(EVENT[14], PERSON[12], ENTITY[13]), abducted(EVENT[15], GROUP[11], PERSON[10]))))) ∧
+      is_hours_after(GROUP[8], SITUATION[9]) ∧
+       dead(ATTRIB[5]) ∧
+        is_before(EVENT[16], EVENT[2]) ∧
+         say(EVENT[2], GROUP[1],
+          CONJ_and(found(EVENT[16], _, PERSON[3]) ∧ TMP(EVENT[16]) = GROUP[8],
+           CONJ_and(shot(EVENT[7], _, PERSON[3]) ∧ in(EVENT[7]) = ENTITY[Colombo] ∧
+                 is_contained_in(TMP(EVENT[7]), TIME[Friday]), xxx(EVENT[6], PERSON[3], ATTRIB[5])))))
+
+# ::id 49_nonfiction_GMB;p00d0256;AT10-2;NE
+# ::snt Dharmeratnam Sivaram was a board member of the pro-rebel TamilNet Web site and a columnist for Sri Lanka 's english newspaper , the Daily Mirror .
+∃ EVENT[7] GROUP[1] ENTITY[3] (
+ pro-rebel_TamilNet_Web_site(ENTITY[3]) ∧
+  ∃ ENTITY[2] (is_board_member_of(ENTITY[2], ENTITY[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+   ∃ ATTRIB[6] ENTITY[5] ENTITY[4] (
+    english(ATTRIB[6]) ∧
+     is_newspaper_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_newspaper_POS(ENTITY[5], ENTITY[Sri_Lanka]) ∧
+      is_-ENTITY-_namely(ENTITY[5], ENTITY[Daily_Mirror]) ∧ is_columnist_for(ENTITY[4], ENTITY[5]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+   past(EVENT[7]) ∧ copula(EVENT[7], ENTITY[Dharmeratnam_Sivaram], GROUP[1]))
+
+# ::id 50_nonfiction_GMB;p00d0256;AT10-3;NE
+# ::snt Mr. Sivaram 's Web site became popular for ongoing reports on the Sri Lankan civil war and was a prominent supporter of the Tamil Tiger rebel movement .
+∃ ATTRIB[8] ATTRIB[4] ATTRIB[2] EVENT[6] EVENT[10] GROUP[3] ENTITY[7] ENTITY[1] ENTITY[5] ENTITY[9] (
+ Sri_Lankan_civil_war(ENTITY[5]) ∧
+  Tamil_Tiger_rebel_movement(ENTITY[9]) ∧
+   is_Web_site_POS(ENTITY[1], ENTITY[Mr.Sivaram]) ∧
+    popular(ATTRIB[2]) ∧
+     ongoing(ATTRIB[4]) ∧
+      is_reports_on(GROUP[3], ENTITY[5]) ∧ is_reports_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+       prominent(ATTRIB[8]) ∧
+        is_supporter_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_supporter_of(ENTITY[7], ENTITY[9]) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[10]) ∧
+           CONJ_and(became(EVENT[6], ENTITY[1]) ∧ for(EVENT[6]) = GROUP[3] ∧
+                 ATTRIBUTE(EVENT[6]) = ATTRIB[2], copula(EVENT[10], ENTITY[1], ENTITY[7])))
+
+# ::id 51_nonfiction_GMB;p00d0256;AT10-4;NE
+# ::snt Mr. Sivaram , who was also brutally attacked in 2001 , was found near a lake gagged with gunshot wounds to the head .
+∃ ATTRIB[6] EVENT[3] EVENT[11] EVENT[10] DATE[2] ENTITY[7] GROUP[8] ENTITY[9] (
+ head(ENTITY[9]) ∧
+  CD_2001(DATE[2]) ∧
+   attacked(EVENT[3], _, ENTITY[Mr.Sivaram]) ∧ in(EVENT[3]) = DATE[2] ∧
+    lake(ENTITY[7]) ∧
+     is_near_comp(ATTRIB[6], ENTITY[7]) ∧
+      is_gunshot_wounds_to(GROUP[8], ENTITY[9]) ∧
+       ADV_also(EVENT[3]) ∧
+        ADV_brutally(EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          past(EVENT[11]) ∧
+           CONJ_and(found(EVENT[11], _, ENTITY[Mr.Sivaram]) ∧ LOC(EVENT[11]) = ATTRIB[6],
+            gagged(EVENT[10], _, ENTITY[Mr.Sivaram]) ∧ with(EVENT[10]) = GROUP[8]))
+
+# ::id 52_nonfiction_GMB;p00d0256;AT10-5;NE
+# ::snt No one claimed responsibility for the killing .
+∃ ENTITY[3] (
+ killing(ENTITY[3]) ∧
+  ¬ ∃ EVENT[4] ENTITY[2] ENTITY[1] (
+        one(ENTITY[1]) ∧
+         is_responsibility_for(ENTITY[2], ENTITY[3]) ∧ past(EVENT[4]) ∧ claimed(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 53_nonfiction_GMB;p00d0262;AT11-1;NE
+# ::snt Japan and North Korea say they are considering a resumption of bilateral talks as part of efforts to normalize relations .
+∃ ATTRIB[6] GPES[3] EVENT[10] EVENT[11] EVENT[2] GROUP[5] GROUP[9] GROUP[8] ENTITY[7] ENTITY[4] GPES[1] (
+ is_element_of(ENTITY[Japan], GPES[1]) ∧ is_element_of(ENTITY[North_Korea], GPES[1]) ∧
+  GPES[3] = they{GPES[1]} ∧
+   bilateral(ATTRIB[6]) ∧
+    is_talks_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     is_resumption_of(ENTITY[4], GROUP[5]) ∧
+      relations(GROUP[9]) ∧
+       is_efforts_to(GROUP[8], normalize(EVENT[10], _, GROUP[9])) ∧
+        is_part_of(ENTITY[7], GROUP[8]) ∧
+         say(EVENT[2], GPES[1], are_considering(EVENT[11], GPES[3], ENTITY[4]) ∧ as(EVENT[11]) = ENTITY[7]))
+
+# ::id 54_nonfiction_GMB;p00d0262;AT11-2;NE
+# ::snt Japanese media reported Monday that the two countries hope to arrange to hold the talks in Beijing in early November .
+∃ ATTRIB[2] EVENT[8] EVENT[6] EVENT[5] EVENT[3] GROUP[1] GROUP[7] GROUP[4] (
+ (CD_two(GROUP[4]), countries(GROUP[4])) ∧
+  talks(GROUP[7]) ∧
+   japanese(ATTRIB[2]) ∧
+    is_media_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     past(EVENT[3]) ∧
+      reported(EVENT[3], GROUP[1],
+       hope(EVENT[5], GROUP[4],
+        arrange(EVENT[6], GROUP[4],
+         hold(EVENT[8], GROUP[4], GROUP[7]) ∧ in(EVENT[8]) = ENTITY[early_November] ∧
+          in(EVENT[8]) = ENTITY[Beijing]))) ∧ is_contained_in(TMP(EVENT[3]), TIME[Monday]))
+
+# ::id 55_nonfiction_GMB;p00d0262;AT11-3;NE
+# ::snt The talks could come before six-party talks on North Korea 's nuclear ambitions resume .
+∃ GROUP[1] (
+ talks(GROUP[1]) ∧
+  MD_could(∃ ATTRIB[5] ATTRIB[3] EVENT[6] EVENT[7] GROUP[4] GROUP[2] (
+        six-party(ATTRIB[3]) ∧
+         nuclear(ATTRIB[5]) ∧
+          is_ambitions_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_ambitions_POS(GROUP[4], ENTITY[North_Korea]) ∧
+           is_talks_on(GROUP[2], GROUP[4]) ∧ is_talks_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+            CRD_before(resume(EVENT[6], GROUP[2]), come(EVENT[7], GROUP[1])))))
+
+# ::id 56_nonfiction_GMB;p00d0262;AT11-4;NE
+# ::snt Japan and North Korea have not had formal bilateral talks for about a year .
+∃ GROUP[1] (
+ is_element_of(ENTITY[Japan], GROUP[1]) ∧ is_element_of(ENTITY[North_Korea], GROUP[1]) ∧
+  ¬ ∃ ATTRIB[3] EVENT[5] TIME[4] GROUP[2] (
+        formal(ATTRIB[3]) ∧
+         is_bilateral_talks_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+          ADV_about(TIME[4]) ∧ year(TIME[4]) ∧
+           have_had(EVENT[5], GROUP[1], GROUP[2]) ∧ for(EVENT[5]) = TIME[4]))
+
+# ::id 57_nonfiction_GMB;p00d0262;AT11-5;NE
+# ::snt Tokyo and Pyongyang are at odds over North Korea 's nuclear weapons program and the North 's kidnapping of Japanese citizens in the 1970s and 1980s .
+∃ EVENT[10] GROUP[3] GROUP[2] GROUP[1] (
+ is_element_of(ENTITY[Tokyo], GROUP[1]) ∧ is_element_of(ENTITY[Pyongyang], GROUP[1]) ∧
+  ∃ ATTRIB[5] ENTITY[4] (
+   nuclear(ATTRIB[5]) ∧
+    is_weapons_program_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_weapons_program_POS(ENTITY[4], ENTITY[North_Korea]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ATTRIB[8] GROUP[9] GROUP[7] ENTITY[6] (
+    japanese(ATTRIB[8]) ∧
+     is_citizens_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      is_subset_of_or_equal_to(GROUP[1970s], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[1980s], GROUP[9]) ∧
+       is_kidnapping_POS(ENTITY[6], ENTITY[North]) ∧ is_kidnapping_in(ENTITY[6], GROUP[9]) ∧ is_kidnapping_of(ENTITY[6], GROUP[7]) ∧
+        is_element_of(ENTITY[6], GROUP[3])) ∧
+   is_odds_over(GROUP[2], GROUP[3]) ∧ copula(EVENT[10], GROUP[1]) ∧ at(EVENT[10]) = GROUP[2])
+
+# ::id 58_nonfiction_GMB;p00d0269;AT12-1;NE
+# ::snt Egypt 's government and the World Health Organization say three Egyptian children have been hospitalized with the deadly form of avian flu .
+∃ ATTRIB[5] ATTRIB[9] ATTRIB[7] EVENT[10] EVENT[3] GROUP[4] GROUP[1] ENTITY[8] ENTITY[6] (
+ deadly(ATTRIB[7]) ∧
+  avian(ATTRIB[9]) ∧
+   is_flu_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+    is_form_of(ENTITY[6], ENTITY[8]) ∧ is_form_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     ∃ ENTITY[2] (is_government_POS(ENTITY[2], ENTITY[Egypt]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧ is_element_of(ENTITY[World_Health_Organization], GROUP[1]) ∧
+      egyptian(ATTRIB[5]) ∧
+       (CD_three(GROUP[4]), is_children_ATTRIBUTE(GROUP[4], ATTRIB[5])) ∧
+        say(EVENT[3], GROUP[1], have_hospitalized(EVENT[10], _, GROUP[4]) ∧ with(EVENT[10]) = ENTITY[6]))
+
+# ::id 59_nonfiction_GMB;p00d0269;AT12-2;NE
+# ::snt The children come from different parts of the country .
+∃ ATTRIB[3] EVENT[5] GROUP[2] ENTITY[4] PERSONS[1] (
+ children(PERSONS[1]) ∧
+  country(ENTITY[4]) ∧
+   different(ATTRIB[3]) ∧
+    is_parts_of(GROUP[2], ENTITY[4]) ∧ is_parts_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+     come(EVENT[5], PERSONS[1]) ∧ from(EVENT[5]) = GROUP[2])
+
+# ::id 60_nonfiction_GMB;p00d0269;AT12-3;NE
+# ::snt WHO says they are receiving treatment and are in stable condition .
+∃ ATTRIB[6] PERSONS[2] EVENT[4] EVENT[7] EVENT[1] ENTITY[3] ENTITY[5] (
+ PERSONS[2] = they ∧
+  treatment(ENTITY[3]) ∧
+   stable(ATTRIB[6]) ∧
+    is_condition_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     says(EVENT[1], ENTITY[WHO],
+      CONJ_and(are_receiving(EVENT[4], PERSONS[2], ENTITY[3]),
+       copula(EVENT[7], PERSONS[2]) ∧ in(EVENT[7]) = ENTITY[5])))
+
+# ::id 61_nonfiction_GMB;p00d0269;AT12-4;NE
+# ::snt The organization says the children had a history of contact with dead birds .
+∃ ATTRIB[7] EVENT[8] EVENT[2] GROUP[6] ENTITY[5] ENTITY[4] GROUP[3] ENTITY[1] (
+ organization(ENTITY[1]) ∧
+  children(GROUP[3]) ∧
+   dead(ATTRIB[7]) ∧
+    is_birds_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+     is_contact_with(ENTITY[5], GROUP[6]) ∧
+      is_history_of(ENTITY[4], ENTITY[5]) ∧
+       is_before(EVENT[8], EVENT[2]) ∧ says(EVENT[2], ENTITY[1], had(EVENT[8], GROUP[3], ENTITY[4])))
+
+# ::id 62_nonfiction_GMB;p00d0269;AT12-5;NE
+# ::snt Thirty two Egyptians have contracted the H5N1 form of avian flu .
+∃ ATTRIB[4] EVENT[5] PERSONS[1] ENTITY[3] ENTITY[2] (
+ avian(ATTRIB[4]) ∧
+  is_flu_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_H5N1_form_of(ENTITY[2], ENTITY[3]) ∧
+    (CD_thirty_two(PERSONS[1]), Egyptians(PERSONS[1])) ∧ have_contracted(EVENT[5], PERSONS[1], ENTITY[2]))
+
+# ::id 63_nonfiction_GMB;p00d0269;AT12-6;NE
+# ::snt Thirteen of them have died .
+∃ PERSONS[2] EVENT[3] ENTITY[1] (PERSONS[2] = them ∧ (CD_thirteen(ENTITY[1]), is_element_of(ENTITY[1], PERSONS[2])) ∧ have_died(EVENT[3], ENTITY[1]))
+
+# ::id 64_nonfiction_GMB;p00d0269;AT12-7;NE
+# ::snt Egypt has had the largest number of human bird flu cases outside of Asia .
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] GROUP[3] ENTITY[1] (
+ largest(ATTRIB[2]) ∧
+  human(ATTRIB[4]) ∧
+   is_bird_flu_cases_outside_of(GROUP[3], ENTITY[Asia]) ∧ is_bird_flu_cases_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    is_number_of(ENTITY[1], GROUP[3]) ∧ is_number_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ has_had(EVENT[5], ENTITY[Egypt], ENTITY[1]))
+
+# ::id 65_nonfiction_GMB;p00d0283;AT13-1;NE
+# ::snt Kyrgyzstan 's Justice Ministry says four people , including parliament member Tynychbek Akmatbayev , have been killed at a prison near Bishkek after inmates took them hostage .
+∃ PERSONS[10] ATTRIB[8] ATTRIB[2] EVENT[6] EVENT[12] EVENT[13] EVENT[3] ENTITY[5] ENTITY[11] GROUP[9] ENTITY[7] PERSONS[4] ENTITY[1] (
+ justice(ATTRIB[2]) ∧
+  is_Ministry_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_Ministry_POS(ENTITY[1], ENTITY[Kyrgyzstan]) ∧
+   (CD_four(PERSONS[4]), people(PERSONS[4])) ∧
+    parliament_member(ENTITY[5]) ∧
+     is_-PERSON-_namely(PERSON[Tynychbek_Akmatbayev], ENTITY[5]) ∧
+      is_near_comp(ATTRIB[8], ENTITY[Bishkek]) ∧
+       is_prison_LOC(ENTITY[7], ATTRIB[8]) ∧
+        inmates(GROUP[9]) ∧
+         PERSONS[10] = them{PERSONS[4]} ∧
+          hostage(ENTITY[11]) ∧
+           is_before(EVENT[12], EVENT[3]) ∧
+            says(EVENT[3], ENTITY[1],
+             CONJ_and(including(EVENT[6], PERSONS[4], PERSON[Tynychbek_Akmatbayev]),
+              CRD_after(took(EVENT[12], GROUP[9], ENTITY[11], PERSONS[10]),
+               have_killed(EVENT[13], _, PERSONS[4]) ∧ at(EVENT[13]) = ENTITY[7]))))
+
+# ::id 66_nonfiction_GMB;p00d0283;AT13-2;NE
+# ::snt Interior Minister Murat Sutalinov is at the prison to head negotiations with the inmates .
+∃ EVENT[6] EVENT[3] ENTITY[1] GROUP[4] GROUP[5] ENTITY[2] (
+ prison(ENTITY[2]) ∧
+  inmates(GROUP[5]) ∧
+   Interior_Minister(ENTITY[1]) ∧
+    is_-ENTITY-_namely(ENTITY[Murat_Sutalinov], ENTITY[1]) ∧
+     is_negotiations_with(GROUP[4], GROUP[5]) ∧
+      copula(EVENT[3], ENTITY[Murat_Sutalinov], head(EVENT[6], ENTITY[Murat_Sutalinov], GROUP[4])) ∧ at(EVENT[3]) = ENTITY[2])
+
+# ::id 67_nonfiction_GMB;p00d0283;AT13-3;NE
+# ::snt The ministry gave no other details .
+∃ ENTITY[1] (
+ ministry(ENTITY[1]) ∧
+  ¬ ∃ ATTRIB[3] EVENT[4] GROUP[2] (
+        other(ATTRIB[3]) ∧
+         is_details_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ gave(EVENT[4], ENTITY[1], GROUP[2])))
+
+# ::id 68_nonfiction_GMB;p00d0283;AT13-4;NE
+# ::snt It is not clear if the hostage-takers made any demands .
+∃ SITUATION[1] GROUP[2] (
+ hostage-takers(GROUP[2]) ∧
+  is_FACT_THAT(SITUATION[1],
+   QUEST(ANY GROUP[3] (demands(GROUP[3]), ∃ EVENT[4] (past(EVENT[4]) ∧ made(EVENT[4], GROUP[2], GROUP[3]))))) ∧
+   ¬ ∃ ATTRIB[5] EVENT[6] (clear(ATTRIB[5]) ∧ copula(EVENT[6], SITUATION[1], ATTRIB[5])))
+
+# ::id 69_nonfiction_GMB;p00d0283;AT13-5;NE
+# ::snt Mr. Akmatbayev was involved in negotiations on Wednesday at another Kyrgyz prison where a riot over poor living conditions forced the staff to evacuate earlier this week .
+∃ GROUP[1] TIME[11] ENTITY[9] (
+ staff(ENTITY[9]) ∧
+  week(TIME[11]) ∧
+   is_negotiations_on(GROUP[1], DATE[Wednesday]) ∧
+    ANOTHER SITUATION[14] ATTRIB[8] ATTRIB[7] ATTRIB[3] EVENT[12] EVENT[10] GROUP[6] ENTITY[5] ENTITY[2] (
+     (kyrgyz(ATTRIB[3]) ∧ poor(ATTRIB[7]) ∧ living(ATTRIB[8]) ∧
+      is_conditions_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_conditions_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧ is_riot_over(ENTITY[5], GROUP[6]) ∧
+      is_FACT_THAT(SITUATION[14], forced(EVENT[10], ENTITY[5], ENTITY[9], evacuate(EVENT[12], ENTITY[9]))) ∧
+       is_prison_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_LOC(SITUATION[14], ENTITY[2]) ∧ is_TMP_earlier_TMP(EVENT[12], TIME[11]) ∧
+      past(EVENT[10])),
+     ∃ EVENT[15] (
+      past(EVENT[15]) ∧
+       was_involved(EVENT[15], ENTITY[Mr.Akmatbayev]) ∧ at(EVENT[15]) = ENTITY[2] ∧ in(EVENT[15]) = GROUP[1])))
+
+# ::id 70_nonfiction_GMB;p00d0283;AT13-6;NE
+# ::snt That prison , also near Bishkek , remained surrounded by security forces on Thursday .
+∃ ATTRIB[2] EVENT[4] GROUP[3] ENTITY[1] (
+ is_also_near_comp(ATTRIB[2], ENTITY[Bishkek]) ∧
+  is_prison_LOC(ENTITY[1], ATTRIB[2]) ∧
+   security_forces(GROUP[3]) ∧
+    past(EVENT[4]) ∧ remained_surrounded(EVENT[4], GROUP[3], ENTITY[1]) ∧ on(EVENT[4]) = DATE[Thursday])
+
+# ::id 71_nonfiction_GMB;p00d0287;AT14-1;NE
+# ::snt A new government report shows U.S. businesses added a moderate 111,000 new jobs in January .
+∃ ATTRIB[8] ATTRIB[7] ATTRIB[5] ATTRIB[2] EVENT[9] EVENT[3] GROUP[6] GROUP[4] ENTITY[1] (
+ new(ATTRIB[2]) ∧
+  is_government_report_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   u.s.(ATTRIB[5]) ∧
+    is_businesses_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     moderate(ATTRIB[7]) ∧
+      new(ATTRIB[8]) ∧
+       (CD_111,000(GROUP[6]), is_jobs_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_jobs_ATTRIBUTE(GROUP[6], ATTRIB[7])) ∧
+        shows(EVENT[3], ENTITY[1], added(EVENT[9], GROUP[4], GROUP[6]) ∧ in(EVENT[9]) = ENTITY[January]))
+
+# ::id 72_nonfiction_GMB;p00d0287;AT14-2;NE
+# ::snt The Labor Department Friday issued a report that also showed the U.S. unemployment rate increased for the first time in three months - to 4.6 percent .
+∃ SITUATION[11] ATTRIB[7] ATTRIB[5] EVENT[10] EVENT[3] EVENT[12] ENTITY[9] TIME[8] ENTITY[1] ENTITY[6] ENTITY[4] (
+ u.s.(ATTRIB[5]) ∧
+  is_unemployment_rate_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   first(ATTRIB[7]) ∧
+    is_time_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     (CD_three(TIME[8]), months(TIME[8])) ∧
+      (CD_4.6(ENTITY[9]), percent(ENTITY[9])) ∧
+       is_FACT_THAT(SITUATION[11],
+        showed(EVENT[3], ENTITY[1],
+         increased(EVENT[10], ENTITY[4]) ∧ to(EVENT[10]) = ENTITY[9] ∧ in(EVENT[10]) = TIME[8] ∧
+          for(EVENT[10]) = ENTITY[6])) ∧ report(ENTITY[1]) ∧
+        ADV_also(SITUATION[11]) ∧
+         is_before(EVENT[10], EVENT[3]) ∧
+          past(EVENT[3]) ∧
+           past(EVENT[12]) ∧ issued(EVENT[12], ENTITY[Labor_Department], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[12]), TIME[Friday]))
+
+# ::id 73_nonfiction_GMB;p00d0287;AT14-3;NE
+# ::snt According to the report , American workers earned an average of 17.09 an hour in January -
+∃ ATTRIB[3] EVENT[7] DEGREE[6] ENTITY[5] ENTITY[4] GROUP[2] ENTITY[1] (
+ report(ENTITY[1]) ∧
+  american(ATTRIB[3]) ∧
+   is_workers_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    CD_17.09(ENTITY[5]) ∧
+     hour(DEGREE[6]) ∧
+      is_average_MSR(ENTITY[4], DEGREE[6]) ∧ is_average_of(ENTITY[4], ENTITY[5]) ∧
+       past(EVENT[7]) ∧
+        earned(EVENT[7], GROUP[2], ENTITY[4]) ∧ in(EVENT[7]) = ENTITY[January] ∧ according_to(EVENT[7]) = ENTITY[1])
+
+# ::id 74_nonfiction_GMB;p00d0287;AT14-3;NE
+# ::snt a slight increase from the previous month .
+∃ ATTRIB[2] ATTRIB[4] EVENT[5] ENTITY[1] ENTITY[3] (
+ previous(ATTRIB[4]) ∧
+  is_month_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   slight(ATTRIB[2]) ∧
+    is_increase_from(ENTITY[1], ENTITY[3]) ∧ is_increase_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 75_nonfiction_GMB;p00d0287;AT14-4;NE
+# ::snt Analysts say the Department of Labor report will help ease worries that a tight labor market will significantly inflate wages and costs .
+∃ EVENT[2] GROUP[1] ENTITY[3] (
+ Department_of_Labor_report(ENTITY[3]) ∧
+  Analysts(GROUP[1]) ∧
+   say(EVENT[2], GROUP[1],
+    MD_will(∃ ATTRIB[7] EVENT[13] EVENT[4] ENTITY[6] GROUP[5] (
+          tight(ATTRIB[7]) ∧
+           is_labor_market_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+            is_worries_THAT(GROUP[5],
+             MD_will(∃ EVENT[11] GROUP[8] (
+                   ∃ GROUP[9] (wages(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[8])) ∧
+                    ∃ GROUP[10] (costs(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8])) ∧
+                    ADV_significantly(EVENT[11]) ∧ inflate(EVENT[11], ENTITY[6], GROUP[8])))) ∧
+             help(EVENT[4], ENTITY[3], ease(EVENT[13], ENTITY[3], GROUP[5]))))))
+
+# ::id 76_nonfiction_GMB;p00d0287;AT14-5;NE
+# ::snt Earlier this week , the U.S. central bank decided to maintain a key interest rate , despite the risk of inflation .
+∃ SITUATION[10] ATTRIB[8] ATTRIB[3] EVENT[9] EVENT[6] ENTITY[7] TIME[1] ENTITY[5] ENTITY[4] ENTITY[2] (
+ week(TIME[1]) ∧
+  u.s.(ATTRIB[3]) ∧
+   is_central_bank_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    inflation(ENTITY[5]) ∧
+     is_risk_of(ENTITY[4], ENTITY[5]) ∧
+      key(ATTRIB[8]) ∧
+       is_interest_rate_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+        is_TMP_earlier_TMP(SITUATION[10], TIME[1]) ∧
+         past(EVENT[6]) ∧
+          is_FACT_THAT(SITUATION[10],
+           decided(EVENT[6], ENTITY[2], maintain(EVENT[9], ENTITY[2], ENTITY[7])) ∧ despite(EVENT[6]) = ENTITY[4]))
+
+# ::id 77_nonfiction_GMB;p00d0309;AT15-1;NE
+# ::snt The European Space Agency says it has received the first images and scientific readings from the surface of Saturn 's moon Titan .
+∃ ORG[2] ATTRIB[8] ATTRIB[4] EVENT[11] EVENT[1] GROUP[6] GROUP[7] GROUP[5] ENTITY[10] ENTITY[9] ENTITY[3] (
+ first(ATTRIB[4]) ∧
+  images(GROUP[6]) ∧
+   scientific(ATTRIB[8]) ∧
+    is_readings_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+     is_subset_of_or_equal_to(GROUP[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+      is_equals(ENTITY[3], GROUP[5]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_moon_POS(ENTITY[10], ENTITY[Saturn]) ∧
+        is_-ENTITY-_namely(ENTITY[Titan], ENTITY[10]) ∧
+         is_surface_of(ENTITY[9], ENTITY[Titan]) ∧
+          ORG[2] = it{ORG[European_Space_Agency]} ∧
+           says(EVENT[1], ORG[European_Space_Agency], has_received(EVENT[11], ORG[2], ENTITY[3]) ∧ from(EVENT[11]) = ENTITY[9]))
+
+# ::id 78_nonfiction_GMB;p00d0309;AT15-2;NE
+# ::snt Officials at agency headquarters in Germany Friday say information taken from the Huygens space probe show what looks like drainage channels on the moon .
+∃ ATTRIB[10] EVENT[7] EVENT[13] EVENT[14] EVENT[3] GROUP[2] GROUP[11] ENTITY[8] ENTITY[4] PERSONS[1] ENTITY[6] ENTITY[12] (
+ Huygens_space_probe(ENTITY[6]) ∧
+  moon(ENTITY[12]) ∧
+   is_agency_headquarters_in(GROUP[2], ENTITY[Germany]) ∧
+    is_Officials_at(PERSONS[1], GROUP[2]) ∧
+     taken(EVENT[7], _, ENTITY[4]) ∧ from(EVENT[7]) = ENTITY[6] ∧ information(ENTITY[4]) ∧
+      is_drainage_channels_on(GROUP[11], ENTITY[12]) ∧
+       is_like_comp(ATTRIB[10], GROUP[11]) ∧
+        looks(EVENT[13], ENTITY[8], ATTRIB[10]) ∧
+         say(EVENT[3], PERSONS[1], show(EVENT[14], ENTITY[4], ENTITY[8])) ∧
+          is_contained_in(TMP(EVENT[3]), TIME[Friday]))
+
+# ::id 79_nonfiction_GMB;p00d0309;AT15-3;NE
+# ::snt They say the surface has canyons that were most likely caused by some type of liquid .
+∃ SITUATION[9] PERSONS[1] EVENT[10] EVENT[2] GROUP[4] ENTITY[3] (
+ surface(ENTITY[3]) ∧
+  PERSONS[1] = they ∧
+   is_FACT_THAT(SITUATION[9],
+    SOME ENTITY[7] ENTITY[6] ((liquid(ENTITY[7]) ∧ is_type_of(ENTITY[6], ENTITY[7])),
+     ∃ EVENT[8] (is_before(EVENT[8], EVENT[2]) ∧ caused(EVENT[8], ENTITY[6], GROUP[4])))) ∧ canyons(GROUP[4]) ∧
+    ADV_most_likely(SITUATION[9]) ∧ say(EVENT[2], PERSONS[1], has(EVENT[10], ENTITY[3], GROUP[4])))
+
+# ::id 80_nonfiction_GMB;p00d0309;AT15-4;NE
+# ::snt The space probe began transmitting data to the Cassini spacecraft while landing on Saturn 's largest moon earlier Friday .
+∃ ATTRIB[7] SITUATION[2] EVENT[5] EVENT[8] EVENT[9] GROUP[3] ENTITY[6] ENTITY[4] ENTITY[1] (
+ space_probe(ENTITY[1]) ∧
+  Cassini_spacecraft(ENTITY[4]) ∧
+   data(GROUP[3]) ∧
+    is_FACT_THAT(SITUATION[2], transmitting(EVENT[5], ENTITY[1], GROUP[3]) ∧ to(EVENT[5]) = ENTITY[4]) ∧
+     largest(ATTRIB[7]) ∧
+      is_moon_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_moon_POS(ENTITY[6], ENTITY[Saturn]) ∧
+       past(EVENT[9]) ∧
+        CRD_while(landing(EVENT[8], SITUATION[2]) ∧ is_contained_in(TMP(EVENT[8]), TIME[earlier_Friday]) ∧
+              on(EVENT[8]) = ENTITY[6], began(EVENT[9], ENTITY[1], SITUATION[2])))
+
+# ::id 81_nonfiction_GMB;p00d0309;AT15-5;NE
+# ::snt Scientists say the information from Huygens - operated jointly by the American , European and Italian space agencies - may provide clues about how primitive Earth evolved into a life-bearing planet .
+∃ ATTRIB[12] ATTRIB[10] ATTRIB[8] EVENT[2] GROUP[1] EVENT[13] GROUP[7] GROUP[9] GROUP[11] GROUP[6] ENTITY[5] ENTITY[3] (
+ american(ATTRIB[8]) ∧
+  is_space_agencies_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   european(ATTRIB[10]) ∧
+    is_space_agencies_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+     italian(ATTRIB[12]) ∧
+      is_space_agencies_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+       is_subset_of_or_equal_to(GROUP[7], GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[6]) ∧
+        is_equals(ENTITY[5], GROUP[6]) ∧
+         operated(EVENT[13], ENTITY[5], ENTITY[3]) ∧ is_information_from(ENTITY[3], ENTITY[Huygens]) ∧
+          ADV_jointly(EVENT[13]) ∧
+           Scientists(GROUP[1]) ∧
+            say(EVENT[2], GROUP[1],
+             MD_may(∃ ATTRIB[21] ATTRIB[19] EVENT[22] EVENT[24] ENTITY[20] ENTITY[18] ENTITY[16] GROUP[15] (
+                   primitive(ATTRIB[19]) ∧
+                    is_Earth_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧
+                     life-bearing(ATTRIB[21]) ∧
+                      is_planet_ATTRIBUTE(ENTITY[20], ATTRIB[21]) ∧
+                       evolved(EVENT[22], ENTITY[18]) ∧ into(EVENT[22]) = ENTITY[20] ∧
+                        is_clues_about(GROUP[15], ENTITY[16]) ∧
+                         is_ADV(EVENT[22], ENTITY[16]) ∧ provide(EVENT[24], ENTITY[3], GROUP[15])))))
+
+# ::id 82_nonfiction_GMB;p00d0356;AT16-1;NE
+# ::snt Indonesian officials say they have signed an initial agreement with Russia to build a space launch center on the remote island of Biak off the coast of Papua New Guinea .
+∃ ATTRIB[6] PERSONS[4] ATTRIB[2] ATTRIB[9] EVENT[11] EVENT[12] EVENT[3] ENTITY[7] ENTITY[5] PERSONS[1] ENTITY[10] ENTITY[8] (
+ remote(ATTRIB[9]) ∧
+  is_island_of(ENTITY[8], ENTITY[Biak]) ∧ is_island_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   is_coast_of(ENTITY[10], ENTITY[Papua_New_Guinea]) ∧
+    indonesian(ATTRIB[2]) ∧
+     is_officials_ATTRIBUTE(PERSONS[1], ATTRIB[2]) ∧
+      PERSONS[4] = they{PERSONS[1]} ∧
+       initial(ATTRIB[6]) ∧
+        space_launch_center(ENTITY[7]) ∧
+         is_agreement_with(ENTITY[5], ENTITY[Russia]) ∧ is_agreement_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+          is_agreement_to(ENTITY[5],
+           build(EVENT[11], _, ENTITY[7]) ∧ off(EVENT[11]) = ENTITY[10] ∧
+            on(EVENT[11]) = ENTITY[8]) ∧
+          say(EVENT[3], PERSONS[1], have_signed(EVENT[12], PERSONS[4], ENTITY[5])))
+
+# ::id 83_nonfiction_GMB;p00d0356;AT16-2;NE
+# ::snt An Indonesian foreign ministry spokesman says senior officials from both countries reached the preliminary agreement last week .
+∃ ATTRIB[9] ATTRIB[4] ATTRIB[7] EVENT[10] EVENT[2] TIME[8] PERSONS[3] PERSON[1] ENTITY[6] (
+ preliminary(ATTRIB[7]) ∧
+  is_agreement_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   Indonesian_foreign_ministry_spokesman(PERSON[1]) ∧
+    senior(ATTRIB[4]) ∧
+     BOTH GROUP[5] (countries(GROUP[5]), is_officials_ATTRIBUTE(PERSONS[3], ATTRIB[4]) ∧ is_officials_from(PERSONS[3], GROUP[5])) ∧
+      last(ATTRIB[9]) ∧
+       is_week_ATTRIBUTE(TIME[8], ATTRIB[9]) ∧
+        is_before(EVENT[10], EVENT[2]) ∧
+         says(EVENT[2], PERSON[1],
+          reached(EVENT[10], PERSONS[3], ENTITY[6]) ∧ is_contained_in(TMP(EVENT[10]), TIME[8])))
+
+# ::id 84_nonfiction_GMB;p00d0356;AT16-3;NE
+# ::snt They say the island is well-suited for the project because of its proximity to the equator , which makes it easier to launch satellites into some Earth orbits .
+∃ ATTRIB[14] SITUATION[10] ISLAND[6] PERSONS[1] EVENT[15] EVENT[9] EVENT[16] EVENT[2] GROUP[11] ENTITY[5] ENTITY[7] ENTITY[4] ISLAND[3] (
+ island(ISLAND[3]) ∧
+  project(ENTITY[4]) ∧
+   equator(ENTITY[7]) ∧
+    PERSONS[1] = they ∧
+     ISLAND[6] = its{ISLAND[3]} ∧
+      satellites(GROUP[11]) ∧
+       is_FACT_THAT(SITUATION[10],
+        SOME GROUP[12] (Earth_orbits(GROUP[12]),
+         ∃ EVENT[13] (launch(EVENT[13], _, GROUP[11]) ∧ into(EVENT[13]) = GROUP[12]))) ∧
+        easier(ATTRIB[14]) ∧
+         makes(EVENT[9], ENTITY[5], xxx(EVENT[15], SITUATION[10], ATTRIB[14])) ∧
+          is_proximity_to(ENTITY[5], ENTITY[7]) ∧ is_proximity_POS(ENTITY[5], ISLAND[6]) ∧
+          say(EVENT[2], PERSONS[1],
+           is_well-suited(EVENT[16], ISLAND[3]) ∧ because_of(EVENT[16]) = ENTITY[5] ∧ for(EVENT[16]) = ENTITY[4]))
+
+# ::id 85_nonfiction_GMB;p00d0356;AT16-4;NE
+# ::snt The spokesman says a formal agreement on the project will be signed in June when Indonesian President Susilo Bambang Yudhoyono is scheduled to visit Moscow .
+∃ ATTRIB[4] EVENT[2] ENTITY[3] ENTITY[5] ENTITY[1] (
+ spokesman(ENTITY[1]) ∧
+  project(ENTITY[5]) ∧
+   formal(ATTRIB[4]) ∧
+    is_agreement_on(ENTITY[3], ENTITY[5]) ∧ is_agreement_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     says(EVENT[2], ENTITY[1],
+      MD_will(∃ SITUATION[11] SITUATION[13] ATTRIB[8] EVENT[10] EVENT[9] EVENT[12] ENTITY[7] (
+            indonesian(ATTRIB[8]) ∧
+             is_President_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+              is_-ENTITY-_namely(ENTITY[Susilo_Bambang_Yudhoyono], ENTITY[7]) ∧
+               is_TMP(SITUATION[11], SITUATION[13]) ∧
+                is_FACT_THAT(SITUATION[11],
+                 scheduled(EVENT[9], _, ENTITY[Susilo_Bambang_Yudhoyono], visit(EVENT[10], ENTITY[Susilo_Bambang_Yudhoyono], ENTITY[Moscow]))) ∧
+                 is_FACT_THAT(SITUATION[13],
+                  signed(EVENT[12], _, ENTITY[3]) ∧ in(EVENT[12]) = ENTITY[June])))))
+
+# ::id 86_nonfiction_GMB;p00d0402;AT17-1;NE
+# ::snt Police in Japan say a teacher stabbed to death a 12 -year -old girl Saturday in the country 's third killing of a school girl in less than three weeks .
+∃ ATTRIB[10] ATTRIB[6] EVENT[13] EVENT[2] TIME[7] TIME[12] ENTITY[11] ENTITY[8] ENTITY[5] ENTITY[4] ENTITY[3] GROUP[1] ENTITY[9] (
+ country(ENTITY[9]) ∧
+  is_Police_in(GROUP[1], ENTITY[Japan]) ∧
+   teacher(ENTITY[3]) ∧
+    death(ENTITY[4]) ∧
+     (CD_12(TIME[7]), -year(TIME[7])) ∧
+      is-old_TMP(ATTRIB[6], TIME[7]) ∧
+       is_girl_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+        third(ATTRIB[10]) ∧
+         school_girl(ENTITY[11]) ∧
+          (CD_less_than_three(TIME[12]), weeks(TIME[12])) ∧
+           is_killing_in(ENTITY[8], TIME[12]) ∧ is_killing_of(ENTITY[8], ENTITY[11]) ∧ is_killing_ATTRIBUTE(ENTITY[8], ATTRIB[10]) ∧
+            is_killing_POS(ENTITY[8], ENTITY[9]) ∧
+            is_before(EVENT[13], EVENT[2]) ∧
+             say(EVENT[2], GROUP[1],
+              stabbed(EVENT[13], ENTITY[3], ENTITY[5]) ∧ in(EVENT[13]) = ENTITY[8] ∧
+               is_contained_in(TMP(EVENT[13]), TIME[Saturday]) ∧ to(EVENT[13]) = ENTITY[4]))
+
+# ::id 87_nonfiction_GMB;p00d0402;AT17-2;NE
+# ::snt Yu Hagino , 23 , was arrested at the murder scene , a school in the western city of Uji .
+∃ ATTRIB[4] EVENT[6] TIME[1] ENTITY[3] ENTITY[2] ENTITY[5] (
+ murder_scene(ENTITY[5]) ∧
+  western(ATTRIB[4]) ∧
+   is_city_of(ENTITY[3], ENTITY[Uji]) ∧ is_city_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_school_in(ENTITY[2], ENTITY[3]) ∧
+     is_-ENTITY-_namely(ENTITY[5], ENTITY[2]) ∧
+      CD_23(TIME[1]) ∧
+       is_TMP(ENTITY[Yu_Hagino], TIME[1]) ∧
+        past(EVENT[6]) ∧ arrested(EVENT[6], _, ENTITY[Yu_Hagino]) ∧ at(EVENT[6]) = ENTITY[5])
+
+# ::id 88_nonfiction_GMB;p00d0402;AT17-3;NE
+# ::snt Police say the suspect confessed to stabbing the girl with a knife after arguing with her .
+∃ PERSON[7] SITUATION[4] EVENT[8] EVENT[9] EVENT[10] EVENT[2] ENTITY[6] GROUP[1] ENTITY[5] PERSON[3] (
+ suspect(PERSON[3]) ∧
+  girl(ENTITY[5]) ∧
+   Police(GROUP[1]) ∧
+    knife(ENTITY[6]) ∧
+     PERSON[7] = her{PERSON[3]} ∧
+      is_FACT_THAT(SITUATION[4],
+       CRD_after(arguing(EVENT[8], ENTITY[5]) ∧ with(EVENT[8]) = PERSON[7],
+        stabbing(EVENT[9], PERSON[3], ENTITY[5]) ∧ with(EVENT[9]) = ENTITY[6])) ∧
+       is_before(EVENT[10], EVENT[2]) ∧
+        say(EVENT[2], GROUP[1], confessed(EVENT[10], PERSON[3]) ∧ to(EVENT[10]) = SITUATION[4]))
+
+# ::id 89_nonfiction_GMB;p00d0402;AT17-4;NE
+# ::snt The killing follows the recent murders of two school girls in the space of just over a week .
+∃ ATTRIB[3] EVENT[7] ENTITY[6] ENTITY[5] GROUP[4] GROUP[2] ENTITY[1] (
+ killing(ENTITY[1]) ∧
+  recent(ATTRIB[3]) ∧
+   (CD_two(GROUP[4]), school_girls(GROUP[4])) ∧
+    week(ENTITY[6]) ∧
+     is_space_of_just_over(ENTITY[5], ENTITY[6]) ∧
+      is_murders_in(GROUP[2], ENTITY[5]) ∧ is_murders_of(GROUP[2], GROUP[4]) ∧ is_murders_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+       follows(EVENT[7], ENTITY[1], GROUP[2]))
+
+# ::id 90_nonfiction_GMB;p00d0402;AT17-5;NE
+# ::snt The two were killed in separate incidents as they walked home alone from elementary school along deserted roads .
+∃ ATTRIB[8] ATTRIB[6] PERSONS[4] ATTRIB[3] EVENT[9] EVENT[12] GROUP[7] ENTITY[5] GROUP[2] PERSONS[1] (
+ CD_two(PERSONS[1]) ∧
+  separate(ATTRIB[3]) ∧
+   is_incidents_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    PERSONS[4] = they{PERSONS[1]} ∧
+     elementary(ATTRIB[6]) ∧
+      is_school_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       deserted(ATTRIB[8]) ∧
+        is_roads_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+         DIR_home(EVENT[9]) ∧
+          ADV_alone(EVENT[9]) ∧
+           past(EVENT[9]) ∧
+            past(EVENT[12]) ∧
+             CRD_as(walked(EVENT[9], PERSONS[4]) ∧ along(EVENT[9]) = GROUP[7] ∧
+                   from(EVENT[9]) = ENTITY[5],
+              killed(EVENT[12], _, PERSONS[1]) ∧ in(EVENT[12]) = GROUP[2]))
+
+# ::id 91_nonfiction_GMB;p00d0443;AT18-1;NE
+# ::snt The British Embassy in Sudan 's capital has re-opened to the public , four days after it was closed because of a possible terrorist threat .
+∃ ATTRIB[9] FAC[7] SITUATION[6] ATTRIB[2] EVENT[10] EVENT[11] ENTITY[8] GROUP[5] ENTITY[3] ENTITY[4] FAC[1] (
+ british(ATTRIB[2]) ∧
+  is_capital_POS(ENTITY[3], ENTITY[Sudan]) ∧
+   is_Embassy_in(FAC[1], ENTITY[3]) ∧ is_Embassy_ATTRIBUTE(FAC[1], ATTRIB[2]) ∧
+    public(ENTITY[4]) ∧
+     FAC[7] = it{FAC[1]} ∧
+      possible(ATTRIB[9]) ∧
+       is_terrorist_threat_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+        is_FACT_THAT(SITUATION[6], closed(EVENT[10], _, FAC[7]) ∧ because_of(EVENT[10]) = ENTITY[8]) ∧
+         (CD_four(GROUP[5]), is_days_after(GROUP[5], SITUATION[6])) ∧
+          past(EVENT[10]) ∧
+           has_re-opened(EVENT[11], FAC[1]) ∧ TMP(EVENT[11]) = GROUP[5] ∧ to(EVENT[11]) = ENTITY[4])
+
+# ::id 92_nonfiction_GMB;p00d0443;AT18-2;NE
+# ::snt The embassy said in a statement Thursday that " additional security " has allowed it to resume normal consular and visa services .
+∃ ATTRIB[9] FAC[7] ATTRIB[5] EVENT[13] EVENT[6] EVENT[3] GROUP[10] ENTITY[8] ENTITY[4] ENTITY[2] FAC[1] (
+ embassy(FAC[1]) ∧
+  statement(ENTITY[2]) ∧
+   additional(ATTRIB[5]) ∧
+    is_security_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     FAC[7] = it{FAC[1]} ∧
+      normal(ATTRIB[9]) ∧
+       ∃ ENTITY[11] (consular(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ GROUP[12] (visa_services(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[10])) ∧
+        is_equals(ENTITY[8], GROUP[10]) ∧ is_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+         past(EVENT[3]) ∧
+          said(EVENT[3], FAC[1], has_allowed(EVENT[6], ENTITY[4], resume(EVENT[13], FAC[7], ENTITY[8]))) ∧
+           is_contained_in(TMP(EVENT[3]), TIME[Thursday]) ∧ in(EVENT[3]) = ENTITY[2])
+
+# ::id 93_nonfiction_GMB;p00d0443;AT18-3;NE
+# ::snt The statement also thanked the Sudanese government for its cooperation .
+∃ GPE[5] ATTRIB[3] EVENT[6] ENTITY[4] GPE[2] ENTITY[1] (
+ statement(ENTITY[1]) ∧
+  sudanese(ATTRIB[3]) ∧
+   is_government_ATTRIBUTE(GPE[2], ATTRIB[3]) ∧
+    GPE[5] = its{GPE[2]} ∧
+     is_cooperation_POS(ENTITY[4], GPE[5]) ∧
+      ADV_also(EVENT[6]) ∧
+       past(EVENT[6]) ∧ thanked(EVENT[6], ENTITY[1], GPE[2]) ∧ for(EVENT[6]) = ENTITY[4])
+
+# ::id 94_nonfiction_GMB;p00d0443;AT18-4;NE
+# ::snt Earlier this week , the government said it had broken up a plot to attack several Western diplomatic missions in the capital , Khartoum .
+∃ SITUATION[11] ORG[4] EVENT[10] EVENT[3] ENTITY[5] TIME[1] ENTITY[8] ORG[2] (
+ week(TIME[1]) ∧
+  government(ORG[2]) ∧
+   capital(ENTITY[8]) ∧
+    is_-ENTITY-_namely(ENTITY[8], ENTITY[Khartoum]) ∧
+     ORG[4] = it{ORG[2]} ∧
+      is_plot_to(ENTITY[5],
+       SEVERAL ATTRIB[7] GROUP[6] ((western(ATTRIB[7]) ∧ is_diplomatic_missions_ATTRIBUTE(GROUP[6], ATTRIB[7])),
+        ∃ EVENT[9] (attack(EVENT[9], _, GROUP[6]) ∧ in(EVENT[9]) = ENTITY[8]))) ∧
+       is_TMP_earlier_TMP(SITUATION[11], TIME[1]) ∧
+        is_before(EVENT[10], EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          is_FACT_THAT(SITUATION[11], said(EVENT[3], ORG[2], had_broken_up(EVENT[10], ORG[4], ENTITY[5]))))
+
+# ::id 95_nonfiction_GMB;p00d0443;AT18-5;NE
+# ::snt The state news agency reported that police had arrested eight Sudanese men and confiscated arms and explosives .
+∃ ATTRIB[5] EVENT[6] EVENT[10] EVENT[2] GROUP[4] GROUP[7] GROUP[3] ENTITY[1] (
+ state_news_agency(ENTITY[1]) ∧
+  police(GROUP[3]) ∧
+   sudanese(ATTRIB[5]) ∧
+    (CD_eight(GROUP[4]), is_men_ATTRIBUTE(GROUP[4], ATTRIB[5])) ∧
+     ∃ GROUP[8] (arms(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[7])) ∧
+      ∃ GROUP[9] (explosives(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[7])) ∧
+      is_before(EVENT[6], EVENT[2]) ∧
+       is_before(EVENT[10], EVENT[2]) ∧
+        past(EVENT[2]) ∧
+         reported(EVENT[2], ENTITY[1],
+          CONJ_and(had_arrested(EVENT[6], GROUP[3], GROUP[4]), had_confiscated(EVENT[10], GROUP[3], GROUP[7]))))
+
+# ::id 96_nonfiction_GMB;p00d0443;AT18-6;NE
+# ::snt The British Embassy has advised British citizens to avoid travel to Khartoum .
+∃ ATTRIB[2] EVENT[5] EVENT[3] ENTITY[4] GROUP[1] (
+ british(ATTRIB[2]) ∧
+  is_citizens_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   is_travel_to(ENTITY[4], ENTITY[Khartoum]) ∧ has_advised(EVENT[3], ENTITY[British_Embassy], GROUP[1], avoid(EVENT[5], GROUP[1], ENTITY[4])))
+
+# ::id 97_nonfiction_GMB;p00d0457;AT19-1;NE
+# ::snt The death toll from a coal mining accident in northwestern China rose to 32 Wednesday after searchers recovered the body of the last missing miner .
+∃ ATTRIB[8] ATTRIB[7] EVENT[9] EVENT[10] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[1] (
+ is_coal_mining_in(ENTITY[2], ENTITY[northwestern_China]) ∧ is_accident_in(ENTITY[2], ENTITY[northwestern_China]) ∧
+  is_death_toll_from(ENTITY[1], ENTITY[2]) ∧
+   last(ATTRIB[7]) ∧
+    missing(ATTRIB[8]) ∧
+     is_miner_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_miner_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      is_body_of(ENTITY[5], ENTITY[6]) ∧
+       CD_32(ENTITY[3]) ∧
+        searchers(GROUP[4]) ∧
+         past(EVENT[9]) ∧
+          past(EVENT[10]) ∧
+           CRD_after(recovered(EVENT[9], GROUP[4], ENTITY[5]),
+            rose(EVENT[10], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[10]), TIME[Wednesday]) ∧
+             to(EVENT[10]) = ENTITY[3]))
+
+# ::id 98_nonfiction_GMB;p00d0457;AT19-2;NE
+# ::snt China 's state-run media say 39 people were working at the privately-owned coal mine in Shaanxi province on Saturday when a gas explosion occurred .
+∃ SITUATION[14] ATTRIB[2] ATTRIB[8] ATTRIB[6] EVENT[11] EVENT[13] EVENT[3] ENTITY[10] GROUP[4] GROUP[1] ENTITY[7] ENTITY[5] (
+ privately-owned(ATTRIB[6]) ∧
+  shaanxi(ATTRIB[8]) ∧
+   is_province_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    is_coal_mine_in(ENTITY[5], ENTITY[7]) ∧ is_coal_mine_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     state-run(ATTRIB[2]) ∧
+      is_media_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_media_POS(GROUP[1], ENTITY[China]) ∧
+       (CD_39(GROUP[4]), people(GROUP[4])) ∧
+        gas_explosion(ENTITY[10]) ∧
+         is_TMP(EVENT[11], SITUATION[14]) ∧
+          is_before(EVENT[11], EVENT[3]) ∧
+           occurred(EVENT[11], ENTITY[10]) ∧
+            is_before(EVENT[13], EVENT[3]) ∧
+             say(EVENT[3], GROUP[1],
+              is_FACT_THAT(SITUATION[14],
+               were_working(EVENT[13], GROUP[4]) ∧ on(EVENT[13]) = DATE[Saturday] ∧
+                at(EVENT[13]) = ENTITY[5])))
+
+# ::id 99_nonfiction_GMB;p00d0457;AT19-3;NE
+# ::snt Seven miners managed to reach the surface , but the others were trapped .
+∃ EVENT[4] EVENT[2] EVENT[6] GROUP[1] ENTITY[3] GROUP[5] (
+ surface(ENTITY[3]) ∧
+  others(GROUP[5]) ∧
+   (CD_seven(GROUP[1]), miners(GROUP[1])) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[6]) ∧
+      CONJ_but(managed(EVENT[2], GROUP[1], reach(EVENT[4], GROUP[1], ENTITY[3])),
+       trapped(EVENT[6], _, GROUP[5])))
+
+# ::id 100_nonfiction_GMB;p00d0457;AT19-4;NE
+# ::snt The Xinhua news agency says police have detained the owner and managers of the mine , but provided no other details .
+∃ EVENT[9] EVENT[2] GROUP[3] ENTITY[6] GROUP[7] ENTITY[8] GROUP[5] ENTITY[4] ENTITY[1] (
+ Xinhua_news_agency(ENTITY[1]) ∧
+  owner(ENTITY[6]) ∧
+   managers(GROUP[7]) ∧
+    is_element_of(ENTITY[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+     mine(ENTITY[8]) ∧
+      is_of(ENTITY[4], ENTITY[8]) ∧ is_equals(ENTITY[4], GROUP[5]) ∧
+       police(GROUP[3]) ∧
+        CONJ_but(says(EVENT[2], ENTITY[1], have_detained(EVENT[9], GROUP[3], ENTITY[4])),
+         ¬ ∃ ATTRIB[11] EVENT[12] GROUP[10] (
+               other(ATTRIB[11]) ∧
+                is_details_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ provided(EVENT[12], ENTITY[1], GROUP[10]))))
+
+# ::id 101_nonfiction_GMB;p00d0457;AT19-5;NE
+# ::snt Chinese mines are among the most dangerous in the world .
+∃ ATTRIB[2] ATTRIB[4] EVENT[6] GROUP[1] ENTITY[5] ENTITY[3] (
+ most_dangerous(ATTRIB[4]) ∧
+  world(ENTITY[5]) ∧
+   is_in(ENTITY[3], ENTITY[5]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    chinese(ATTRIB[2]) ∧
+     is_mines_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ copula(EVENT[6], GROUP[1]) ∧ among(EVENT[6]) = ENTITY[3])
+
+# ::id 102_nonfiction_GMB;p00d0457;AT19-6;NE
+# ::snt Thousands of people are killed every year in explosions , cave-ins and floods , despite government crackdowns on safety violations .
+∃ GROUP[2] GROUP[1] (
+ people(GROUP[2]) ∧
+  is_Thousands_of(GROUP[1], GROUP[2]) ∧
+   ∀ TIME[3] (year(TIME[3]) →
+    ∃ EVENT[10] GROUP[9] GROUP[8] GROUP[4] (
+     ∃ GROUP[5] (explosions(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+      ∃ GROUP[6] (cave-ins(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+      ∃ GROUP[7] (floods(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4])) ∧
+      safety_violations(GROUP[9]) ∧
+       is_government_crackdowns_on(GROUP[8], GROUP[9]) ∧
+        killed(EVENT[10], _, GROUP[1]) ∧ despite(EVENT[10]) = GROUP[8] ∧
+         in(EVENT[10]) = GROUP[4] ∧ is_contained_in(TMP(EVENT[10]), TIME[3]))))
+
+# ::id 103_nonfiction_GMB;p00d0498;AT20-1;NE
+# ::snt Latvia 's President Vaira Vike-Freiberga
+∃ EVENT[2] ENTITY[1] (
+ is_President_POS(ENTITY[1], ENTITY[Latvia]) ∧
+  is_-ENTITY-_namely(ENTITY[Vaira_Vike-Freiberga], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[Vaira_Vike-Freiberga])
+
+# ::id 104_nonfiction_GMB;p00d0498;AT20-2;NE
+# ::snt Latvia 's parliament has extended the stay of the country 's troops serving in Iraq until the end of the year .
+∃ EVENT[9] ENTITY[1] EVENT[6] ENTITY[4] GROUP[3] DATE[8] ENTITY[7] ENTITY[2] (
+ country(ENTITY[4]) ∧
+  serving(EVENT[6], GROUP[3]) ∧ in(EVENT[6]) = ENTITY[Iraq] ∧ is_troops_POS(GROUP[3], ENTITY[4]) ∧
+   is_stay_of(ENTITY[2], GROUP[3]) ∧
+    year(DATE[8]) ∧
+     is_end_of(ENTITY[7], DATE[8]) ∧
+      is_parliament_POS(ENTITY[1], ENTITY[Latvia]) ∧ has_extended(EVENT[9], ENTITY[1], ENTITY[2]) ∧ until(EVENT[9]) = ENTITY[7])
+
+# ::id 105_nonfiction_GMB;p00d0498;AT20-3;NE
+# ::snt Sixty seven of the 100 lawmakers Thursday in Riga voted in favor of extending the mission by six months .
+∃ SITUATION[4] EVENT[7] EVENT[8] TIME[6] ENTITY[3] ENTITY[1] GROUP[2] ENTITY[5] (
+ (CD_100(GROUP[2]), lawmakers(GROUP[2])) ∧
+  mission(ENTITY[5]) ∧
+   (CD_sixty_seven(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+    (CD_six(TIME[6]), months(TIME[6])) ∧
+     is_FACT_THAT(SITUATION[4], extending(EVENT[7], _, ENTITY[5]) ∧ by(EVENT[7]) = TIME[6]) ∧
+      is_favor_of(ENTITY[3], SITUATION[4]) ∧
+       past(EVENT[8]) ∧
+        voted(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = ENTITY[3] ∧ in(EVENT[8]) = ENTITY[Riga] ∧
+         is_contained_in(TMP(EVENT[8]), TIME[Thursday]))
+
+# ::id 106_nonfiction_GMB;p00d0498;AT20-4;NE
+# ::snt Latvia , which joined NATO last year , has more than 100 troops in Iraq supporting the U.S efforts there .
+∃ ATTRIB[3] ATTRIB[8] EVENT[4] EVENT[9] EVENT[11] TIME[2] GROUP[5] GROUP[7] (
+ u.s(ATTRIB[8]) ∧
+  is_efforts_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   last(ATTRIB[3]) ∧
+    is_year_ATTRIBUTE(TIME[2], ATTRIB[3]) ∧
+     joined(EVENT[4], ENTITY[Latvia], ENTITY[NATO]) ∧ is_contained_in(TMP(EVENT[4]), TIME[2]) ∧
+      (CD_more_than_100(GROUP[5]), supporting(EVENT[9], GROUP[5], GROUP[7]) ∧ is_troops_in(GROUP[5], ENTITY[Iraq])) ∧
+       past(EVENT[4]) ∧ LOC_there(EVENT[9]) ∧ has(EVENT[11], ENTITY[Latvia], GROUP[5]))
+
+# ::id 107_nonfiction_GMB;p00d0498;AT20-5;NE
+# ::snt Latvia has also contributed troops to multinational forces in Afghanistan and the Balkans .
+∃ ATTRIB[3] EVENT[5] GROUP[4] GROUP[2] GROUP[1] (
+ troops(GROUP[1]) ∧
+  multinational(ATTRIB[3]) ∧
+   is_element_of(ENTITY[Afghanistan], GROUP[4]) ∧ is_element_of(ENTITY[Balkans], GROUP[4]) ∧
+    is_forces_in(GROUP[2], GROUP[4]) ∧ is_forces_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+     ADV_also(EVENT[5]) ∧ has_contributed(EVENT[5], ENTITY[Latvia], GROUP[1]) ∧ to(EVENT[5]) = GROUP[2])
+
+# ::id 108_nonfiction_GMB;p00d0606;AT21-1;NE
+# ::snt A landmine blast in southern Afghanistan has killed nine Afghan soldiers .
+∃ ATTRIB[3] EVENT[4] GROUP[2] ENTITY[1] (
+ is_landmine_blast_in(ENTITY[1], ENTITY[southern_Afghanistan]) ∧
+  afghan(ATTRIB[3]) ∧
+   (CD_nine(GROUP[2]), is_soldiers_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧ has_killed(EVENT[4], ENTITY[1], GROUP[2]))
+
+# ::id 109_nonfiction_GMB;p00d0606;AT21-2;NE
+# ::snt The Taleban later claimed responsibility for the blast in Kandahar province .
+∃ ATTRIB[4] EVENT[5] ENTITY[1] ENTITY[3] ENTITY[2] (
+ kandahar(ATTRIB[4]) ∧
+  is_province_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_blast_in(ENTITY[2], ENTITY[3]) ∧
+    is_responsibility_for(ENTITY[1], ENTITY[2]) ∧
+     TMP_later(EVENT[5]) ∧ past(EVENT[5]) ∧ claimed(EVENT[5], ENTITY[Taleban], ENTITY[1]))
+
+# ::id 110_nonfiction_GMB;p00d0606;AT21-3;NE
+# ::snt An Afghan Army spokesman said the troops were traveling towards the nearby Pakistani border when their vehicle hit the mine .
+∃ SITUATION[13] PERSONS[8] ATTRIB[5] EVENT[10] EVENT[12] EVENT[2] ENTITY[7] PERSON[1] ENTITY[9] ENTITY[4] PERSONS[3] (
+ troops(PERSONS[3]) ∧
+  nearby(ATTRIB[5]) ∧
+   is_Pakistani_border_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    mine(ENTITY[9]) ∧
+     Afghan_Army_spokesman(PERSON[1]) ∧
+      PERSONS[8] = their{PERSONS[3]} ∧
+       is_vehicle_POS(ENTITY[7], PERSONS[8]) ∧
+        is_TMP(EVENT[10], SITUATION[13]) ∧
+         is_before(EVENT[10], EVENT[2]) ∧
+          hit(EVENT[10], ENTITY[7], ENTITY[9]) ∧
+           is_before(EVENT[12], EVENT[2]) ∧
+            past(EVENT[2]) ∧
+             said(EVENT[2], PERSON[1],
+              is_FACT_THAT(SITUATION[13], were_traveling(EVENT[12], PERSONS[3]) ∧ towards(EVENT[12]) = ENTITY[4])))
+
+# ::id 111_nonfiction_GMB;p00d0606;AT21-4;NE
+# ::snt U.S.-led forces are hunting down remnants of Afghanistan 's ousted Taleban regime who frequently carry out hit and run attacks on coalition and Afghan government forces , mainly in the country 's eastern and southern regions .
+∃ ATTRIB[10] ATTRIB[9] ATTRIB[6] ATTRIB[5] ATTRIB[2] EVENT[22] EVENT[24] GROUP[11] GROUP[11] GROUP[17] ENTITY[15] GROUP[8] ENTITY[4] GROUP[3] GROUP[1] ENTITY[16] (
+ country(ENTITY[16]) ∧
+  u.s.dash__led(ATTRIB[2]) ∧
+   is_forces_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    ousted(ATTRIB[5]) ∧
+     taleban(ATTRIB[6]) ∧
+      hit(ATTRIB[9]) ∧
+       ∃ GROUP[12] (coalition_forces(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[11])) ∧
+        ∃ ATTRIB[14] GROUP[13] (afghan(ATTRIB[14]) ∧ is_government_forces_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11])) ∧
+        run(ATTRIB[10]) ∧
+         ∃ GROUP[12] (coalition_forces(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[11])) ∧
+          ∃ ATTRIB[14] GROUP[13] (afghan(ATTRIB[14]) ∧ is_government_forces_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11])) ∧
+          CONJ_and(is_attacks_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧ is_attacks_on(GROUP[8], GROUP[11]),
+           is_attacks_ATTRIBUTE(GROUP[8], ATTRIB[10]) ∧ is_attacks_on(GROUP[8], GROUP[11])) ∧
+           ∃ ATTRIB[19] GROUP[18] (eastern(ATTRIB[19]) ∧ is_regions_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧ is_subset_of_or_equal_to(GROUP[18], GROUP[17])) ∧
+            ∃ ATTRIB[21] GROUP[20] (southern(ATTRIB[21]) ∧ is_regions_ATTRIBUTE(GROUP[20], ATTRIB[21]) ∧ is_subset_of_or_equal_to(GROUP[20], GROUP[17])) ∧
+            is_equals(ENTITY[15], GROUP[17]) ∧ is_POS(ENTITY[15], ENTITY[16]) ∧
+             carry_out(EVENT[22], ENTITY[4], GROUP[8]) ∧ mainly_in(EVENT[22]) = ENTITY[15] ∧
+              is_regime_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_regime_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_regime_POS(ENTITY[4], ENTITY[Afghanistan]) ∧
+              is_remnants_of(GROUP[3], ENTITY[4]) ∧ ADV_frequently(EVENT[22]) ∧ are_hunting_down(EVENT[24], GROUP[1], GROUP[3]))
+
+# ::id 112_nonfiction_GMB;p00d0630;AT22-1;NE
+# ::snt The U.S. military says the Iraqi army has captured three suspected al-Qaida in Iraq leaders involved in roadside bomb attacks .
+∃ ATTRIB[7] ATTRIB[5] ATTRIB[2] EVENT[10] EVENT[11] EVENT[3] GROUP[9] GROUP[6] ENTITY[4] ENTITY[1] (
+ u.s.(ATTRIB[2]) ∧
+  is_military_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   iraqi(ATTRIB[5]) ∧
+    is_army_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     suspected(ATTRIB[7]) ∧
+      roadside_bomb_attacks(GROUP[9]) ∧
+       (CD_three(GROUP[6]),
+        involved(EVENT[10], GROUP[6]) ∧ in(EVENT[10]) = GROUP[9] ∧
+         is_al-Qaida_leaders_in(GROUP[6], ENTITY[Iraq]) ∧ is_al-Qaida_leaders_ATTRIBUTE(GROUP[6], ATTRIB[7])) ∧
+        says(EVENT[3], ENTITY[1], has_captured(EVENT[11], ENTITY[4], GROUP[6])))
+
+# ::id 113_nonfiction_GMB;p00d0630;AT22-2;NE
+# ::snt Statements Wednesday say the suspects were detained in separate operations north of Baghdad in Kirkuk province , and in the towns of Tarmiyah and Judaidah .
+∃ ATTRIB[7] ATTRIB[5] EVENT[10] EVENT[10] EVENT[2] ENTITY[6] GROUP[4] GROUP[1] GROUP[9] GROUP[8] GROUP[3] (
+ suspects(GROUP[3]) ∧
+  is_element_of(ENTITY[Tarmiyah], GROUP[9]) ∧ is_element_of(ENTITY[Judaidah], GROUP[9]) ∧
+   is_towns_of(GROUP[8], GROUP[9]) ∧
+    Statements(GROUP[1]) ∧
+     separate(ATTRIB[5]) ∧
+      is_DIR_north_of(GROUP[4], ENTITY[Baghdad]) ∧ is_operations_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+       kirkuk(ATTRIB[7]) ∧
+        is_province_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         is_before(EVENT[10], EVENT[2]) ∧
+          is_before(EVENT[10], EVENT[2]) ∧
+           say(EVENT[2], GROUP[1],
+            CONJ_and(detained(EVENT[10], _, GROUP[3]) ∧ in(EVENT[10]) = ENTITY[6] ∧
+                  in(EVENT[10]) = GROUP[4],
+             detained(EVENT[10], _, GROUP[3]) ∧ in(EVENT[10]) = GROUP[8] ∧
+              in(EVENT[10]) = GROUP[4])) ∧ is_contained_in(TMP(EVENT[2]), TIME[Wednesday]))
+
+# ::id 114_nonfiction_GMB;p00d0630;AT22-3;NE
+# ::snt The military says U.S. Special Forces advised the Iraqi army in all three operations .
+∃ ATTRIB[4] EVENT[6] EVENT[2] GROUP[5] ENTITY[3] ENTITY[1] (
+ military(ENTITY[1]) ∧
+  iraqi(ATTRIB[4]) ∧
+   is_army_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    (CD_all_three(GROUP[5]), operations(GROUP[5])) ∧
+     is_before(EVENT[6], EVENT[2]) ∧
+      says(EVENT[2], ENTITY[1], advised(EVENT[6], ENTITY[U.S.Special_Forces], ENTITY[3]) ∧ in(EVENT[6]) = GROUP[5]))
+
+# ::id 115_nonfiction_GMB;p00d0630;AT22-4;NE
+# ::snt The U.S. military also says Iraqi special operations forces detained seven suspected criminals in and around Baghdad 's Sadr City district , a stronghold of radical Shi'ite cleric Moqtada al-Sadr .
+∃ SITUATION[13] ATTRIB[10] ATTRIB[7] ATTRIB[5] ATTRIB[2] EVENT[12] EVENT[3] ENTITY[9] ENTITY[8] ENTITY[11] GROUP[6] GROUP[4] ENTITY[1] (
+ u.s.(ATTRIB[2]) ∧
+  is_military_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   iraqi(ATTRIB[5]) ∧
+    is_special_operations_forces_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     suspected(ATTRIB[7]) ∧
+      (CD_seven(GROUP[6]), is_criminals_ATTRIBUTE(GROUP[6], ATTRIB[7])) ∧
+       is_Sadr_City_district_POS(ENTITY[11], ENTITY[Baghdad]) ∧
+        radical(ATTRIB[10]) ∧
+         is_Shi'ite_cleric_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+          is_-ENTITY-_namely(ENTITY[Moqtada_al-Sadr], ENTITY[9]) ∧
+           is_stronghold_of(ENTITY[8], ENTITY[Moqtada_al-Sadr]) ∧
+            is_-ENTITY-_namely(ENTITY[11], ENTITY[8]) ∧
+             ADV_also(SITUATION[13]) ∧
+              is_before(EVENT[12], EVENT[3]) ∧
+               is_FACT_THAT(SITUATION[13],
+                says(EVENT[3], ENTITY[1],
+                 detained(EVENT[12], GROUP[4], GROUP[6]) ∧ in_and_around(EVENT[12]) = ENTITY[11])))
+
+# ::id 116_nonfiction_GMB;p00d0630;AT22-5;NE
+# ::snt U.S. and Iraqi soldiers have been fighting Shi'ite militants in Sadr City in recent weeks as part of a crackdown on illegal militias .
+∃ ATTRIB[13] ATTRIB[9] ATTRIB[7] EVENT[14] GROUP[12] ENTITY[11] ENTITY[10] GROUP[8] GROUP[6] GROUP[1] (
+ ∃ ATTRIB[3] GROUP[2] (u.s.(ATTRIB[3]) ∧ is_soldiers_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ ATTRIB[5] GROUP[4] (iraqi(ATTRIB[5]) ∧ is_soldiers_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[1])) ∧
+  shi'ite(ATTRIB[7]) ∧
+   is_militants_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+    recent(ATTRIB[9]) ∧
+     is_weeks_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+      illegal(ATTRIB[13]) ∧
+       is_militias_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+        is_crackdown_on(ENTITY[11], GROUP[12]) ∧
+         is_part_of(ENTITY[10], ENTITY[11]) ∧
+          have_been_fighting(EVENT[14], GROUP[1], GROUP[6]) ∧ as(EVENT[14]) = ENTITY[10] ∧
+           in(EVENT[14]) = GROUP[8] ∧ in(EVENT[14]) = ENTITY[Sadr_City])
+
+# ::id 117_nonfiction_GMB;p00d0653;AT23-1;NE
+# ::snt A U.S. immigration judge has denied bail for Luis Posada Carriles , an asylum-seeking former CIA operative from Cuba .
+∃ ATTRIB[5] ATTRIB[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ U.S.immigration_judge(ENTITY[1]) ∧
+  asylum-seeking(ATTRIB[4]) ∧
+   is_former_comp(ATTRIB[5], ENTITY[CIA]) ∧
+    is_operative_from(ENTITY[3], ENTITY[Cuba]) ∧ is_operative_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_operative_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     is_-ENTITY-_namely(ENTITY[Luis_Posada_Carriles], ENTITY[3]) ∧ is_bail_for(ENTITY[2], ENTITY[Luis_Posada_Carriles]) ∧ has_denied(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 118_nonfiction_GMB;p00d0653;AT23-2;NE
+# ::snt U.S. authorities arrested the 77 -year -old Posada Carriles in May after he illegally entered the country through Mexico .
+∃ PERSON[6] ATTRIB[4] ATTRIB[2] EVENT[8] EVENT[10] TIME[5] ENTITY[3] GROUP[1] ENTITY[7] (
+ country(ENTITY[7]) ∧
+  u.s.(ATTRIB[2]) ∧
+   is_authorities_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    (CD_77(TIME[5]), -year(TIME[5])) ∧
+     is-old_TMP(ATTRIB[4], TIME[5]) ∧
+      is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_-PERSON-_namely(PERSON[Posada_Carriles], ENTITY[3]) ∧
+        PERSON[6] = he{PERSON[Posada_Carriles]} ∧
+         ADV_illegally(EVENT[8]) ∧
+          past(EVENT[8]) ∧
+           past(EVENT[10]) ∧
+            CRD_after(entered(EVENT[8], PERSON[6], ENTITY[7]) ∧ through(EVENT[8]) = ENTITY[Mexico],
+             arrested(EVENT[10], GROUP[1], PERSON[Posada_Carriles]) ∧ in(EVENT[10]) = ENTITY[May]))
+
+# ::id 119_nonfiction_GMB;p00d0653;AT23-3;NE
+# ::snt Posada Carriles is wanted in Venezuela for his alleged role in a 1976 Cuban airliner bombing that killed 73 people .
+∃ ATTRIB[6] ATTRIB[3] PERSON[2] EVENT[9] EVENT[10] GROUP[8] DATE[5] ENTITY[4] ENTITY[1] (
+ PERSON[2] = his{PERSON[Posada_Carriles]} ∧
+  alleged(ATTRIB[3]) ∧
+   CD_1976(DATE[5]) ∧
+    cuban(ATTRIB[6]) ∧
+     (CD_73(GROUP[8]), people(GROUP[8])) ∧
+      killed(EVENT[9], ENTITY[4], GROUP[8]) ∧ is_airliner_bombing_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_airliner_bombing_TMP(ENTITY[4], DATE[5]) ∧
+       is_role_in(ENTITY[1], ENTITY[4]) ∧ is_role_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_role_POS(ENTITY[1], PERSON[2]) ∧
+        past(EVENT[9]) ∧
+         wanted(EVENT[10], _, PERSON[Posada_Carriles]) ∧ for(EVENT[10]) = ENTITY[1] ∧
+          in(EVENT[10]) = ENTITY[Venezuela])
+
+# ::id 120_nonfiction_GMB;p00d0653;AT23-4;NE
+# ::snt Some 20 years ago , a Venezuelan court acquitted him of a role in the bombing .
+∃ PERSON[4] ATTRIB[3] EVENT[7] GROUP[1] ENTITY[5] ENTITY[2] ENTITY[6] (
+ bombing(ENTITY[6]) ∧
+  (CD_some_20(GROUP[1]), years(GROUP[1])) ∧
+   venezuelan(ATTRIB[3]) ∧
+    is_court_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     PERSON[4] = him ∧
+      is_role_in(ENTITY[5], ENTITY[6]) ∧
+       is_TMP_ago_TMP(EVENT[7], GROUP[1]) ∧
+        past(EVENT[7]) ∧ acquitted(EVENT[7], ENTITY[2], PERSON[4]) ∧ of(EVENT[7]) = ENTITY[5])
+
+# ::id 121_nonfiction_GMB;p00d0653;AT23-5;NE
+# ::snt He later escaped from prison while awaiting a new trial .
+∃ SITUATION[7] ATTRIB[4] PERSON[1] EVENT[5] EVENT[6] ENTITY[3] ENTITY[2] (
+ PERSON[1] = he ∧
+  prison(ENTITY[2]) ∧
+   new(ATTRIB[4]) ∧
+    is_trial_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     TMP_later(SITUATION[7]) ∧
+      past(EVENT[6]) ∧
+       is_FACT_THAT(SITUATION[7],
+        CRD_while(awaiting(EVENT[5], PERSON[1], ENTITY[3]),
+         escaped(EVENT[6], PERSON[1]) ∧ from(EVENT[6]) = ENTITY[2])))
+
+# ::id 122_nonfiction_GMB;p00d0653;AT23-6;NE
+# ::snt In May , U.S. officials rejected a Venezuelan request for his arrest , citing a lack of evidence against the Cuban exile who holds Venezuelan citizenship .
+∃ PERSON[15] ATTRIB[13] ATTRIB[2] ATTRIB[9] ATTRIB[6] EVENT[16] EVENT[11] ENTITY[14] ENTITY[12] ENTITY[4] ENTITY[3] GROUP[1] EVENT[10] ENTITY[8] ENTITY[5] (
+ cuban(ATTRIB[6]) ∧
+  venezuelan(ATTRIB[9]) ∧
+   is_citizenship_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+    holds(EVENT[10], ENTITY[5], ENTITY[8]) ∧ is_exile_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     u.s.(ATTRIB[2]) ∧
+      is_officials_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+       venezuelan(ATTRIB[13]) ∧
+        PERSON[15] = his ∧
+         is_arrest_POS(ENTITY[14], PERSON[15]) ∧
+          is_request_for(ENTITY[12], ENTITY[14]) ∧ is_request_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+           evidence(ENTITY[4]) ∧
+            is_lack_against(ENTITY[3], ENTITY[5]) ∧ is_lack_of(ENTITY[3], ENTITY[4]) ∧
+             past(EVENT[16]) ∧
+              CONJ_and(rejected(EVENT[16], GROUP[1], ENTITY[12]) ∧ In(EVENT[16]) = ENTITY[May],
+               citing(EVENT[11], GROUP[1], ENTITY[3])))

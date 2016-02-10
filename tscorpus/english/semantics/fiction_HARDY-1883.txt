@@ -1,0 +1,2129 @@
+# ::id 1_fiction_HARDY-1883;AT1-1;NE
+# ::snt THE THREE STRANGERS
+∃ EVENT[2] GROUP[1] ((CD_three(GROUP[1]), STRANGERS(GROUP[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 2_fiction_HARDY-1883;AT2-1;NE
+# ::snt Among the few features of agricultural England which retain an appearance but little modified by the lapse of centuries , may be reckoned the high , grassy and furzy downs , coombs , or ewe-leases , as they are indifferently called , that fill a large area of certain counties in the south and south-west .
+∃ ATTRIB[18] ATTRIB[16] ATTRIB[14] EVENT[7] EVENT[9] GROUP[6] ENTITY[5] ENTITY[3] GROUP[13] GROUP[15] GROUP[17] GROUP[12] ENTITY[11] ENTITY[32] ENTITY[33] GROUP[31] ENTITY[30] (
+ centuries(GROUP[6]) ∧
+  is_lapse_of(ENTITY[5], GROUP[6]) ∧
+   modified(EVENT[7], ENTITY[5], ENTITY[3]) ∧ appearance(ENTITY[3]) ∧
+    high(ATTRIB[14]) ∧
+     is_downs_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+      grassy(ATTRIB[16]) ∧
+       is_downs_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧
+        furzy(ATTRIB[18]) ∧
+         is_downs_ATTRIBUTE(GROUP[17], ATTRIB[18]) ∧
+          is_subset_of_or_equal_to(GROUP[13], GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[15], GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[17], GROUP[12]) ∧
+           is_equals(ENTITY[11], GROUP[12]) ∧
+            south(ENTITY[32]) ∧
+             south-west(ENTITY[33]) ∧
+              is_element_of(ENTITY[32], GROUP[31]) ∧ is_element_of(ENTITY[33], GROUP[31]) ∧
+               is_equals(ENTITY[30], GROUP[31]) ∧
+                ADV_little(EVENT[7]) ∧
+                 FEW GROUP[1] (retain(EVENT[9], GROUP[1], ENTITY[3]) ∧ is_features_of(GROUP[1], ENTITY[agricultural_England]),
+                  MD_may(∃ EVENT[35] GROUP[10] (
+                        CONJ_or(is_element_of(ENTITY[11], GROUP[10]),
+                         ∃ GROUP[19] (coombs(GROUP[19]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[10])),
+                         ∃ ATTRIB[29] ATTRIB[27] REF1[22] SITUATION[21] EVENT[23] EVENT[34] GROUP[28] ENTITY[26] GROUP[20] (
+                          REF1[22] = they ∧
+                           is_FACT_THAT(SITUATION[21], called(EVENT[23], _, REF1[22])) ∧
+                            large(ATTRIB[27]) ∧
+                             certain(ATTRIB[29]) ∧
+                              is_counties_in(GROUP[28], ENTITY[30]) ∧ is_counties_ATTRIBUTE(GROUP[28], ATTRIB[29]) ∧
+                               is_area_of(ENTITY[26], GROUP[28]) ∧ is_area_ATTRIBUTE(ENTITY[26], ATTRIB[27]) ∧
+                                fill(EVENT[34], GROUP[20], ENTITY[26]) ∧
+                                 is_ewe-leases_as(GROUP[20], SITUATION[21]) ∧
+                                 ADV_indifferently(EVENT[23]) ∧ is_subset_of_or_equal_to(GROUP[20], GROUP[10]))) ∧
+                         reckoned(EVENT[35], _, GROUP[10]) ∧ Among(EVENT[35]) = GROUP[1]))))
+
+# ::id 3_fiction_HARDY-1883;AT2-2;NE
+# ::snt If any mark of human occupation is met with hereon , it usually takes the form of the solitary cottage of some shepherd .
+∃ ATTRIB[9] ENTITY[8] ENTITY[7] (
+ solitary(ATTRIB[9]) ∧
+  SOME PERSON[10] (shepherd(PERSON[10]), is_cottage_of(ENTITY[8], PERSON[10]) ∧ is_cottage_ATTRIBUTE(ENTITY[8], ATTRIB[9])) ∧
+   is_form_of(ENTITY[7], ENTITY[8]) ∧
+    ∀ ATTRIB[3] EVENT[5] ENTITY[2] LOC[4] MARK[1] CND_If(
+        human(ATTRIB[3]) ∧ is_occupation_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_mark_of(MARK[1], ENTITY[2]) ∧
+         hereon(LOC[4]) ∧ met(EVENT[5], _, MARK[1]) ∧ with(EVENT[5]) = LOC[4],
+        ∃ MARK[6] EVENT[11] (MARK[6] = it{MARK[1]} ∧ ADV_usually(EVENT[11]) ∧ takes(EVENT[11], MARK[6], ENTITY[7]))))
+
+# ::id 4_fiction_HARDY-1883;AT3-1;NE
+# ::snt Fifty years ago such a lonely cottage stood on such a down , and may possibly be standing there now .
+∃ ATTRIB[6] ATTRIB[4] ATTRIB[3] EVENT[7] GROUP[1] ENTITY[5] ENTITY[2] (
+ (CD_fifty(GROUP[1]), years(GROUP[1])) ∧
+  such(ATTRIB[3]) ∧
+   lonely(ATTRIB[4]) ∧
+    is_cottage_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_cottage_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     such(ATTRIB[6]) ∧
+      is_down_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       is_TMP_ago_TMP(EVENT[7], GROUP[1]) ∧
+        past(EVENT[7]) ∧
+         CONJ_and(stood(EVENT[7], ENTITY[2]) ∧ on(EVENT[7]) = ENTITY[5],
+          MD_may(∃ EVENT[8] (
+                ADV_possibly(EVENT[8]) ∧
+                 LOC_there(EVENT[8]) ∧ TMP_now(EVENT[8]) ∧ be_standing(EVENT[8], ENTITY[2])))))
+
+# ::id 5_fiction_HARDY-1883;AT3-2;NE
+# ::snt In spite of its loneliness , however , the spot , by actual measurement , was not more than five miles from a county-town .
+∃ SITUATION[11] ATTRIB[6] REF1[3] ENTITY[2] ENTITY[5] ENTITY[1] ENTITY[4] (
+ spot(ENTITY[4]) ∧
+  REF1[3] = its ∧
+   is_loneliness_POS(ENTITY[2], REF1[3]) ∧
+    is_spite_of(ENTITY[1], ENTITY[2]) ∧
+     actual(ATTRIB[6]) ∧
+      is_measurement_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       ADV_however(SITUATION[11]) ∧
+        is_FACT_THAT(SITUATION[11],
+         ¬ MORE GROUP[8] DEGREE[7] (((CD_five(GROUP[8]), miles(GROUP[8])) ∧ is_than(DEGREE[7], GROUP[8])),
+               ∃ EVENT[10] ENTITY[9] (
+                county-town(ENTITY[9]) ∧
+                 past(EVENT[10]) ∧
+                  copula(EVENT[10], ENTITY[4]) ∧ from(EVENT[10]) = ENTITY[9] ∧
+                   MSR(EVENT[10]) = DEGREE[7] ∧ by(EVENT[10]) = ENTITY[5] ∧
+                   In(EVENT[10]) = ENTITY[1]))))
+
+# ::id 6_fiction_HARDY-1883;AT3-3;NE
+# ::snt Yet that affected it little .
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ REF1[2] = it ∧
+  ADV_yet(EVENT[3]) ∧ ADV_little(EVENT[3]) ∧ past(EVENT[3]) ∧ affected(EVENT[3], ENTITY[1], REF1[2]))
+
+# ::id 7_fiction_HARDY-1883;AT3-4;NE
+# ::snt Five miles of irregular upland , during the long inimical seasons , with their sleets , snows , rains , and mists , afford withdrawing space enough to isolate a Timon or a Nebuchadnezzar ; much less , in fair weather , to please that less repellent tribe , the poets , philosophers , artists , and others who ' conceive and meditate of pleasant things . '
+∃ ATTRIB[20] ATTRIB[18] ATTRIB[15] SITUATION[13] ATTRIB[3] ATTRIB[32] ATTRIB[22] REF1[7] ATTRIB[5] EVENT[17] EVENT[34] EVENT[35] EVENT[36] ENTITY[2] GROUP[16] ENTITY[19] ENTITY[14] GROUP[1] EVENT[30] EVENT[33] GROUP[9] GROUP[10] GROUP[11] GROUP[12] GROUP[8] ENTITY[6] GROUP[25] GROUP[26] GROUP[27] GROUP[31] GROUP[28] GROUP[24] ENTITY[23] ENTITY[21] GROUP[4] (
+ long_inimical(ATTRIB[5]) ∧
+  REF1[7] = their ∧
+   sleets(GROUP[9]) ∧
+    snows(GROUP[10]) ∧
+     rains(GROUP[11]) ∧
+      mists(GROUP[12]) ∧
+       is_subset_of_or_equal_to(GROUP[9], GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[8]) ∧
+        is_subset_of_or_equal_to(GROUP[12], GROUP[8]) ∧
+        is_equals(ENTITY[6], GROUP[8]) ∧ is_POS(ENTITY[6], REF1[7]) ∧
+         is_seasons_with(GROUP[4], ENTITY[6]) ∧ is_seasons_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+          less_repellent(ATTRIB[22]) ∧
+           poets(GROUP[25]) ∧
+            philosophers(GROUP[26]) ∧
+             artists(GROUP[27]) ∧
+              pleasant(ATTRIB[32]) ∧
+               is_things_ATTRIBUTE(GROUP[31], ATTRIB[32]) ∧
+                CONJ_and(conceive(EVENT[30], GROUP[28]),
+                 meditate(EVENT[33], GROUP[28]) ∧ of(EVENT[33]) = GROUP[31]) ∧ others(GROUP[28]) ∧
+                 is_subset_of_or_equal_to(GROUP[25], GROUP[24]) ∧ is_subset_of_or_equal_to(GROUP[26], GROUP[24]) ∧
+                  is_subset_of_or_equal_to(GROUP[27], GROUP[24]) ∧ is_subset_of_or_equal_to(GROUP[28], GROUP[24]) ∧
+                  is_equals(ENTITY[23], GROUP[24]) ∧
+                   is_tribe_ATR(ENTITY[21], ENTITY[23]) ∧ is_tribe_ATTRIBUTE(ENTITY[21], ATTRIB[22]) ∧
+                    irregular(ATTRIB[3]) ∧
+                     is_upland_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+                      (CD_five(GROUP[1]), is_miles_of(GROUP[1], ENTITY[2])) ∧
+                       CONJ_or(is_element_of(ENTITY[Timon], GROUP[16]), is_element_of(ENTITY[Nebuchadnezzar], GROUP[16])) ∧
+                        is_enough_to(ATTRIB[15], isolate(EVENT[17], _, GROUP[16])) ∧
+                         fair(ATTRIB[20]) ∧
+                          is_weather_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                           much_less(ATTRIB[18]) ∧
+                            is_in(ATTRIB[18], ENTITY[19]) ∧
+                             is_to(ATTRIB[18], please(EVENT[34], _, ENTITY[21])) ∧
+                            is_space_ATTRIBUTE(ENTITY[14], ATTRIB[18]) ∧ is_space_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+                             is_FACT_THAT(SITUATION[13], withdrawing(EVENT[35], GROUP[1], ENTITY[14])) ∧
+                              afford(EVENT[36], GROUP[1], SITUATION[13]) ∧ during(EVENT[36]) = GROUP[4])
+
+# ::id 8_fiction_HARDY-1883;AT4-1;NE
+# ::snt Some old earthen camp or barrow , some clump of trees , at least some starved fragment of ancient hedge is usually taken advantage of in the erection of these forlorn dwellings .
+∃ ATTRIB[15] EVENT[16] ENTITY[12] GROUP[1] GROUP[14] ENTITY[13] (
+ forlorn(ATTRIB[15]) ∧
+  is_dwellings_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+   is_erection_of(ENTITY[13], GROUP[14]) ∧
+    CONJ_or(SOME ATTRIB[3] ENTITY[2] ((old(ATTRIB[3]) ∧ is_earthen_camp_ATTRIBUTE(ENTITY[2], ATTRIB[3])), is_element_of(ENTITY[2], GROUP[1])),
+     ∃ ENTITY[4] (barrow(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])),
+     SOME GROUP[6] ENTITY[5] ((trees(GROUP[6]) ∧ is_clump_of(ENTITY[5], GROUP[6])), is_element_of(ENTITY[5], GROUP[1])),
+     SOME ENTITY[7] (
+      LEAST ENTITY[8] ∃ ATTRIB[11] ATTRIB[9] ENTITY[10] (
+       starved(ATTRIB[9]) ∧
+        ancient(ATTRIB[11]) ∧
+         is_hedge_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+          is_fragment_of(ENTITY[7], ENTITY[10]) ∧ is_fragment_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_fragment_at(ENTITY[7], ENTITY[8])),
+      is_element_of(ENTITY[7], GROUP[1]))) ∧
+     is_advantage_of_in(ENTITY[12], ENTITY[13]) ∧ ADV_usually(EVENT[16]) ∧ taken(EVENT[16], _, ENTITY[12], GROUP[1]))
+
+# ::id 9_fiction_HARDY-1883;AT4-2;NE
+# ::snt But , in the present case , such a kind of shelter had been disregarded .
+∃ ATTRIB[4] ATTRIB[2] EVENT[6] ENTITY[5] ENTITY[3] ENTITY[1] (
+ present(ATTRIB[2]) ∧
+  is_case_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   such(ATTRIB[4]) ∧
+    shelter(ENTITY[5]) ∧
+     is_kind_of(ENTITY[3], ENTITY[5]) ∧ is_kind_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      past(EVENT[6]) ∧ had_disregarded(EVENT[6], _, ENTITY[3]) ∧ in(EVENT[6]) = ENTITY[1])
+
+# ::id 10_fiction_HARDY-1883;AT4-3;NE
+# ::snt Higher Crowstairs , as the house was called , stood quite detached and undefended .
+∃ ATTRIB[5] ATTRIB[4] SITUATION[1] EVENT[3] EVENT[7] EVENT[6] EVENT[6] ENTITY[2] (
+ house(ENTITY[2]) ∧
+  past(EVENT[3]) ∧
+   past(EVENT[7]) ∧
+    is_FACT_THAT(SITUATION[1], called(EVENT[3], _, ENTITY[2])) ∧
+     is_as(ENTITY[Higher_Crowstairs], SITUATION[1]) ∧
+      quite_detached(ATTRIB[4]) ∧
+       undefended(ATTRIB[5]) ∧
+        CONJ_and(stood(EVENT[7], ENTITY[Higher_Crowstairs]),
+         CONJ_and(xxx(EVENT[6], ENTITY[Higher_Crowstairs], ATTRIB[4]), xxx(EVENT[6], ENTITY[Higher_Crowstairs], ATTRIB[5]))))
+
+# ::id 11_fiction_HARDY-1883;AT4-4;NE
+# ::snt The only reason for its precise situation seemed to be the crossing of two footpaths at right angles hard by , which may have crossed there and thus for a good five hundred years .
+∃ ATTRIB[5] REF1[4] ENTITY[3] ENTITY[2] (
+ REF1[4] = its ∧
+  precise(ATTRIB[5]) ∧
+   is_situation_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_situation_POS(ENTITY[3], REF1[4]) ∧
+    is_reason_for(ENTITY[2], ENTITY[3]) ∧
+     ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+      ∃ ATTRIB[10] EVENT[16] EVENT[6] GROUP[9] GROUP[8] ENTITY[7] (
+       (CD_two(GROUP[8]), footpaths(GROUP[8])) ∧
+        right(ATTRIB[10]) ∧
+         is_angles_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+          LOC_hard_by(ENTITY[7]) ∧
+           MD_may(∃ ATTRIB[13] EVENT[14] GROUP[12] (
+                 good(ATTRIB[13]) ∧
+                  (CD_five_hundred(GROUP[12]), is_years_ATTRIBUTE(GROUP[12], ATTRIB[13])) ∧
+                   CONJ_and(LOC_there(EVENT[14]), LOC_thus(EVENT[14])) ∧
+                    have_crossed(EVENT[14], ENTITY[7]) ∧ for(EVENT[14]) = GROUP[12])) ∧
+            is_crossing_at(ENTITY[7], GROUP[9]) ∧ is_crossing_of(ENTITY[7], GROUP[8]) ∧
+           past(EVENT[6]) ∧ seemed(EVENT[6], copula(EVENT[16], ENTITY[1], ENTITY[7])))))
+
+# ::id 12_fiction_HARDY-1883;AT4-5;NE
+# ::snt Hence the house was exposed to the elements on all sides .
+∃ SITUATION[5] GROUP[2] ENTITY[1] (
+ house(ENTITY[1]) ∧
+  elements(GROUP[2]) ∧
+   ADV_hence(SITUATION[5]) ∧
+    is_FACT_THAT(SITUATION[5],
+     ALL GROUP[3] (sides(GROUP[3]),
+      ∃ EVENT[4] (
+       past(EVENT[4]) ∧
+        exposed(EVENT[4], _, ENTITY[1]) ∧ on(EVENT[4]) = GROUP[3] ∧
+         to(EVENT[4]) = GROUP[2]))))
+
+# ::id 13_fiction_HARDY-1883;AT4-6;NE
+# ::snt But , though the wind up here blew unmistakably when it did blow , and the rain hit hard whenever it fell , the various weathers of the winter season were not quite so formidable on the coomb as they were imagined to be by dwellers on low ground .
+∃ SITUATION[21] SITUATION[12] SITUATION[13] REF2[17] REF1[8] SITUATION[4] ATTRIB[6] ATTRIB[2] EVENT[9] EVENT[11] EVENT[18] EVENT[20] TIME[15] ENTITY[3] ENTITY[5] ENTITY[14] ENTITY[23] GROUP[1] (
+ various(ATTRIB[2]) ∧
+  winter_season(ENTITY[3]) ∧
+   is_weathers_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_weathers_of(GROUP[1], ENTITY[3]) ∧
+    ADV_here(ATTRIB[6]) ∧
+     is_wind_up(ENTITY[5], ATTRIB[6]) ∧
+      rain(ENTITY[14]) ∧
+       coomb(ENTITY[23]) ∧
+        REF1[8] = it ∧
+         REF2[17] = it ∧
+          fell(EVENT[18], REF2[17]) ∧
+           is_FACT_THAT(SITUATION[4],
+            CONJ_and(is_FACT_THAT(SITUATION[13], is_FACT_THAT(SITUATION[12], blew(EVENT[11], ENTITY[5]))),
+             is_FACT_THAT(SITUATION[21], hit(EVENT[20], ENTITY[14]) ∧ is_contained_in(TMP(EVENT[20]), TIME[15])))) ∧
+            ADV_unmistakably(SITUATION[13]) ∧
+             is_TMP(EVENT[9], SITUATION[12]) ∧
+              past(EVENT[9]) ∧
+               did_blow(EVENT[9], REF1[8]) ∧
+                past(EVENT[11]) ∧
+                 ADV_hard(SITUATION[21]) ∧
+                  is_TMP(EVENT[18], TIME[15]) ∧
+                   past(EVENT[18]) ∧
+                    past(EVENT[20]) ∧
+                     ¬ ∃ ATTRIB[28] REF3[25] SITUATION[24] ATTRIB[22] EVENT[30] EVENT[29] EVENT[31] ENTITY[27] GROUP[26] (
+                           REF3[25] = they ∧
+                            low(ATTRIB[28]) ∧
+                             is_ground_ATTRIBUTE(ENTITY[27], ATTRIB[28]) ∧
+                              is_dwellers_on(GROUP[26], ENTITY[27]) ∧
+                               is_FACT_THAT(SITUATION[24],
+                                imagined(EVENT[29], GROUP[26], REF3[25], copula(EVENT[30], REF3[25]))) ∧
+                                is_quite_so_formidable_as(ATTRIB[22], SITUATION[24]) ∧ is_quite_so_formidable_on(ATTRIB[22], ENTITY[23]) ∧
+                                 past(EVENT[29]) ∧
+                                  past(EVENT[31]) ∧
+                                   copula(EVENT[31], GROUP[1], ATTRIB[22]) ∧
+                                    though(EVENT[31]) = SITUATION[4]))
+
+# ::id 14_fiction_HARDY-1883;AT4-7;NE
+# ::snt The raw rimes were not so pernicious as in the hollows ,
+∃ ATTRIB[2] GROUP[4] GROUP[1] (
+ raw(ATTRIB[2]) ∧
+  is_rimes_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   hollows(GROUP[4]) ∧
+    ¬ ∃ ATTRIB[3] EVENT[5] (is_so_pernicious_as_in(ATTRIB[3], GROUP[4]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], GROUP[1], ATTRIB[3])))
+
+# ::id 15_fiction_HARDY-1883;AT4-7;NE
+# ::snt and the frosts were scarcely so severe .
+∃ ATTRIB[2] EVENT[3] GROUP[1] (frosts(GROUP[1]) ∧ scarcely_so_severe(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], GROUP[1], ATTRIB[2]))
+
+# ::id 16_fiction_HARDY-1883;AT4-8;NE
+# ::snt When the shepherd and his family who tenanted the house were pitied for their sufferings from the exposure , they said that upon the whole they were less inconvenienced by ' wuzzes and flames ' -LRB- hoarses and phlegms -RRB- than when they had lived by the stream of a snug neighbouring valley .
+∃ ATTRIB[31] ATTRIB[30] ENTITY[3] ENTITY[7] ENTITY[11] ENTITY[29] ENTITY[28] ENTITY[15] (
+ shepherd(ENTITY[3]) ∧
+  house(ENTITY[7]) ∧
+   exposure(ENTITY[11]) ∧
+    whole(ENTITY[15]) ∧
+     snug(ATTRIB[30]) ∧
+      neighbouring(ATTRIB[31]) ∧
+       is_valley_ATTRIBUTE(ENTITY[29], ATTRIB[31]) ∧ is_valley_ATTRIBUTE(ENTITY[29], ATTRIB[30]) ∧
+        is_stream_of(ENTITY[28], ENTITY[29]) ∧
+         ∀ REF2[10] EVENT[8] EVENT[12] GROUP[2] GROUP[9] ENTITY[1] CND_When(
+             is_element_of(ENTITY[3], GROUP[2]) ∧
+              ∃ REF1[5] ENTITY[4] (REF1[5] = his ∧ is_family_POS(ENTITY[4], REF1[5]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+              tenanted(EVENT[8], ENTITY[1], ENTITY[7]) ∧ is_equals(ENTITY[1], GROUP[2]) ∧ REF2[10] = their ∧
+              is_sufferings_POS(GROUP[9], REF2[10]) ∧ past(EVENT[8]) ∧ past(EVENT[12]) ∧
+              pitied(EVENT[12], _, ENTITY[1]) ∧ from(EVENT[12]) = ENTITY[11] ∧
+               for(EVENT[12]) = GROUP[9],
+             ∃ REF5[27] ATTRIB[17] REF4[16] REF3[13] EVENT[32] EVENT[34] EVENT[14] GROUP[22] GROUP[18] TIME[25] ENTITY[21] (
+              REF3[13] = they ∧
+               REF4[16] = they ∧
+                ∃ GROUP[23] (wuzzes(GROUP[23]) ∧ is_subset_of_or_equal_to(GROUP[23], GROUP[22])) ∧
+                 ∃ GROUP[24] (flames(GROUP[24]) ∧ is_subset_of_or_equal_to(GROUP[24], GROUP[22])) ∧
+                 is_equals(ENTITY[21], GROUP[22]) ∧
+                  ∃ GROUP[19] (hoarses(GROUP[19]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[18])) ∧
+                   ∃ GROUP[20] (phlegms(GROUP[20]) ∧ is_subset_of_or_equal_to(GROUP[20], GROUP[18])) ∧
+                   is_-ENTITY-_namely(ENTITY[21], GROUP[18]) ∧
+                    REF5[27] = they ∧
+                     had_lived(EVENT[32], REF5[27]) ∧ by(EVENT[32]) = ENTITY[28] ∧
+                      is_less_inconvenienced_than(ATTRIB[17], TIME[25]) ∧ is_less_inconvenienced_by(ATTRIB[17], ENTITY[21]) ∧
+                       is_TMP(EVENT[32], TIME[25]) ∧
+                        is_before(EVENT[32], EVENT[14]) ∧
+                         is_before(EVENT[34], EVENT[14]) ∧
+                          past(EVENT[14]) ∧
+                           said(EVENT[14], REF3[13],
+                            copula(EVENT[34], REF4[16], ATTRIB[17]) ∧
+                             upon(EVENT[34]) = ENTITY[15]))))
+
+# ::id 17_fiction_HARDY-1883;AT5-1;NE
+# ::snt The night of March 28 , 182- , was precisely one of the nights that were wont to call forth these expressions of commiseration .
+∃ EVENT[10] ENTITY[3] EVENT[9] EVENT[6] ENTITY[2] ENTITY[8] GROUP[7] GROUP[4] ENTITY[1] (
+ CD_march_28,182__dash(ENTITY[2]) ∧
+  is_night_of(ENTITY[1], ENTITY[2]) ∧
+   commiseration(ENTITY[8]) ∧
+    is_expressions_of(GROUP[7], ENTITY[8]) ∧
+     were_wont(EVENT[6], GROUP[4], call_forth(EVENT[9], GROUP[4], GROUP[7])) ∧ nights(GROUP[4]) ∧
+      past(EVENT[6]) ∧
+       (CD_one(ENTITY[3]), is_element_of(ENTITY[3], GROUP[4])) ∧
+        ADV_precisely(EVENT[10]) ∧ past(EVENT[10]) ∧ copula(EVENT[10], ENTITY[1], ENTITY[3]))
+
+# ::id 18_fiction_HARDY-1883;AT5-2;NE
+# ::snt The level rainstorm smote walls , slopes , and hedges like the clothyard shafts of Senlac and Crecy .
+∃ ATTRIB[7] ATTRIB[9] ATTRIB[2] EVENT[12] EVENT[11] GROUP[3] GROUP[10] GROUP[8] ENTITY[1] (
+ level(ATTRIB[2]) ∧
+  is_rainstorm_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   clothyard(ATTRIB[9]) ∧
+    is_element_of(ENTITY[Senlac], GROUP[10]) ∧ is_element_of(ENTITY[Crecy], GROUP[10]) ∧
+     is_shafts_of(GROUP[8], GROUP[10]) ∧ is_shafts_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+      ∃ GROUP[4] (walls(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+       ∃ GROUP[5] (slopes(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+       ∃ GROUP[6] (hedges(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+       is_like_comp(ATTRIB[7], GROUP[8]) ∧
+        past(EVENT[12]) ∧
+         CONJ_and(smote(EVENT[12], ENTITY[1], GROUP[3]),
+          xxx(EVENT[11], GROUP[3]) ∧ ATTRIBUTE(EVENT[11]) = ATTRIB[7]))
+
+# ::id 19_fiction_HARDY-1883;AT5-3;NE
+# ::snt Such sheep and outdoor animals as had no shelter stood with their buttocks to the winds ; while the tails of little birds trying to roost on some scraggy thorn were blown inside-out like umbrellas .
+∃ SITUATION[25] ATTRIB[21] REF1[11] SITUATION[3] ATTRIB[2] ATTRIB[15] EVENT[24] EVENT[23] EVENT[26] GROUP[6] GROUP[22] GROUP[10] ENTITY[1] EVENT[20] EVENT[17] GROUP[12] GROUP[14] GROUP[13] (
+ winds(GROUP[12]) ∧
+  little(ATTRIB[15]) ∧
+   trying(EVENT[17], GROUP[14],
+    SOME ATTRIB[19] ENTITY[18] ((scraggy(ATTRIB[19]) ∧ is_thorn_ATTRIBUTE(ENTITY[18], ATTRIB[19])),
+     roost(EVENT[20], GROUP[14]) ∧ on(EVENT[20]) = ENTITY[18])) ∧ is_birds_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+    is_tails_of(GROUP[13], GROUP[14]) ∧
+     is_FACT_THAT(SITUATION[3],
+      ¬ ∃ EVENT[5] ENTITY[4] (shelter(ENTITY[4]) ∧ past(EVENT[5]) ∧ had(EVENT[5], _, ENTITY[4]))) ∧
+      is_such_as(ATTRIB[2], SITUATION[3]) ∧
+       ∃ GROUP[7] (sheep(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+        ∃ ATTRIB[9] GROUP[8] (outdoor(ATTRIB[9]) ∧ is_animals_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6])) ∧
+        is_equals(ENTITY[1], GROUP[6]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+         REF1[11] = their ∧
+          is_buttocks_to(GROUP[10], GROUP[12]) ∧ is_buttocks_POS(GROUP[10], REF1[11]) ∧
+           umbrellas(GROUP[22]) ∧
+            is_like_comp(ATTRIB[21], GROUP[22]) ∧
+             ADV_inside-out(SITUATION[25]) ∧
+              past(EVENT[24]) ∧
+               past(EVENT[26]) ∧
+                CRD_while(is_FACT_THAT(SITUATION[25],
+                      CONJ_and(blown(EVENT[24], _, GROUP[13]), xxx(EVENT[23], GROUP[13], ATTRIB[21]))),
+                 stood(EVENT[26], ENTITY[1]) ∧ with(EVENT[26]) = GROUP[10]))
+
+# ::id 20_fiction_HARDY-1883;AT5-4;NE
+# ::snt The gable-end of the cottage was stained with wet ,
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ cottage(ENTITY[2]) ∧
+  is_gable-end_of(ENTITY[1], ENTITY[2]) ∧
+   wet(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ stained(EVENT[4], _, ENTITY[1]) ∧ with(EVENT[4]) = ENTITY[3])
+
+# ::id 21_fiction_HARDY-1883;AT5-4;NE
+# ::snt and the eavesdroppings flapped against the wall .
+∃ EVENT[3] ENTITY[2] GROUP[1] (
+ eavesdroppings(GROUP[1]) ∧
+  wall(ENTITY[2]) ∧ past(EVENT[3]) ∧ flapped(EVENT[3], GROUP[1]) ∧ against(EVENT[3]) = ENTITY[2])
+
+# ::id 22_fiction_HARDY-1883;AT5-5;NE
+# ::snt Yet never was commiseration for the shepherd more misplaced .
+∃ ATTRIB[3] EVENT[4] ENTITY[1] ENTITY[2] (
+ shepherd(ENTITY[2]) ∧
+  is_commiseration_for(ENTITY[1], ENTITY[2]) ∧
+   more_misplaced(ATTRIB[3]) ∧
+    ADV_yet(EVENT[4]) ∧ TMP_never(EVENT[4]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ATTRIB[3]))
+
+# ::id 23_fiction_HARDY-1883;AT5-6;NE
+# ::snt For that cheerful rustic was entertaining a large party in glorification of the christening of his second girl .
+∃ ATTRIB[4] ATTRIB[9] REF1[8] ATTRIB[2] EVENT[10] ENTITY[5] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[1] (
+ cheerful(ATTRIB[2]) ∧
+  is_rustic_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[8] = his ∧
+    second(ATTRIB[9]) ∧
+     is_girl_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_girl_POS(ENTITY[7], REF1[8]) ∧
+      is_christening_of(ENTITY[6], ENTITY[7]) ∧
+       large(ATTRIB[4]) ∧
+        is_glorification_of(ENTITY[5], ENTITY[6]) ∧
+         is_party_in(ENTITY[3], ENTITY[5]) ∧ is_party_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+          past(EVENT[10]) ∧ was_entertaining(EVENT[10], ENTITY[1], ENTITY[3]))
+
+# ::id 24_fiction_HARDY-1883;AT6-1;NE
+# ::snt The guests had arrived before the rain began to fall ,
+∃ SITUATION[2] EVENT[5] EVENT[4] EVENT[6] ENTITY[3] GROUP[1] (
+ guests(GROUP[1]) ∧
+  rain(ENTITY[3]) ∧
+   past(EVENT[4]) ∧
+    past(EVENT[6]) ∧
+     is_FACT_THAT(SITUATION[2], began(EVENT[4], ENTITY[3], fall(EVENT[5], ENTITY[3]))) ∧
+      had_arrived(EVENT[6], GROUP[1]) ∧ before(EVENT[6]) = SITUATION[2])
+
+# ::id 25_fiction_HARDY-1883;AT6-1;NE
+# ::snt and they were all now assembled in the chief or living room of the dwelling .
+∃ REF1[1] ATTRIB[8] ATTRIB[6] EVENT[10] ENTITY[5] ENTITY[7] ENTITY[9] GROUP[4] ENTITY[3] (
+ chief(ATTRIB[6]) ∧
+  is_room_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   living(ATTRIB[8]) ∧
+    is_room_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+     CONJ_or(is_element_of(ENTITY[5], GROUP[4]), is_element_of(ENTITY[7], GROUP[4])) ∧
+      dwelling(ENTITY[9]) ∧
+       is_of(ENTITY[3], ENTITY[9]) ∧ is_equals(ENTITY[3], GROUP[4]) ∧
+        REF1[1] = they ∧
+         TMP_now(EVENT[10]) ∧
+          past(EVENT[10]) ∧
+           ALL ENTITY[2] (is_of(ENTITY[2], REF1[1]),
+            assembled(EVENT[10], _, ENTITY[2]) ∧ in(EVENT[10]) = ENTITY[3]))
+
+# ::id 26_fiction_HARDY-1883;AT6-2;NE
+# ::snt A glance into the apartment at eight o'clock on this eventful evening would have resulted in the opinion that it was as cosy and comfortable a nook as could be wished for in boisterous weather .
+∃ ATTRIB[8] REF1[7] ATTRIB[5] ENTITY[3] ENTITY[1] EVENT[15] ENTITY[4] ENTITY[2] DEGREE[10] ENTITY[9] ENTITY[6] (
+ apartment(ENTITY[2]) ∧
+  eventful(ATTRIB[5]) ∧
+   is_evening_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    REF1[7] = it ∧
+     nook(ENTITY[9]) ∧
+      MD_could(∃ ATTRIB[13] EVENT[14] ENTITY[12] (
+            boisterous(ATTRIB[13]) ∧
+             is_weather_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+              be_wished_for(EVENT[14]) ∧ in(EVENT[14]) = ENTITY[12] ∧
+               ATTRIBUTE(EVENT[14]) = DEGREE[10])) ∧
+       is_as_cosy_and_comfortable_as(ATTRIB[8], DEGREE[10]) ∧ is_as_cosy_and_comfortable_comp(ATTRIB[8], ENTITY[9]) ∧
+        is_opinion_THAT(ENTITY[6], copula(EVENT[15], REF1[7], ATTRIB[8])) ∧
+         past(EVENT[15]) ∧
+          CD_eight(ENTITY[3]) ∧
+           is_glance_on(ENTITY[1], ENTITY[4]) ∧ is_glance_at(ENTITY[1], ENTITY[3]) ∧ is_glance_into(ENTITY[1], ENTITY[2]) ∧
+            MD_would(∃ EVENT[16] (have_resulted(EVENT[16], ENTITY[1]) ∧ in(EVENT[16]) = ENTITY[6])))
+
+# ::id 27_fiction_HARDY-1883;AT6-3;NE
+# ::snt The calling of its inhabitant was proclaimed by a number of highly-polished sheep-crooks without stems that were hung ornamentally over the fireplace , the curl of each shining crook varying from the antiquated type engraved in the patriarchal pictures of old family Bibles to the most approved fashion of the last local sheep-fair .
+∃ ATTRIB[6] ATTRIB[26] ATTRIB[24] ATTRIB[21] ATTRIB[19] ATTRIB[16] REF1[3] EVENT[10] EVENT[28] EVENT[27] GROUP[7] GROUP[5] ENTITY[4] EVENT[22] ENTITY[2] ENTITY[9] GROUP[20] GROUP[18] ENTITY[25] ENTITY[23] ENTITY[15] ENTITY[12] ENTITY[1] (
+ REF1[3] = its ∧
+  is_inhabitant_POS(ENTITY[2], REF1[3]) ∧
+   is_calling_of(ENTITY[1], ENTITY[2]) ∧
+    fireplace(ENTITY[9]) ∧
+     EACH ATTRIB[14] ENTITY[13] ((shining(ATTRIB[14]) ∧ is_crook_ATTRIBUTE(ENTITY[13], ATTRIB[14])), is_curl_of(ENTITY[12], ENTITY[13])) ∧
+      antiquated(ATTRIB[16]) ∧
+       patriarchal(ATTRIB[19]) ∧
+        old(ATTRIB[21]) ∧
+         is_family_Bibles_ATTRIBUTE(GROUP[20], ATTRIB[21]) ∧
+          is_pictures_of(GROUP[18], GROUP[20]) ∧ is_pictures_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧
+           engraved(EVENT[22], _, ENTITY[15]) ∧ in(EVENT[22]) = GROUP[18] ∧
+            is_type_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+            most_approved(ATTRIB[24]) ∧
+             last(ATTRIB[26]) ∧
+              is_local_sheep-fair_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+               is_fashion_of(ENTITY[23], ENTITY[25]) ∧ is_fashion_ATTRIBUTE(ENTITY[23], ATTRIB[24]) ∧
+                highly-polished(ATTRIB[6]) ∧
+                 stems(GROUP[7]) ∧
+                  hung(EVENT[10], _, GROUP[5]) ∧ over(EVENT[10]) = ENTITY[9] ∧
+                   is_sheep-crooks_without(GROUP[5], GROUP[7]) ∧ is_sheep-crooks_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+                   is_number_of(ENTITY[4], GROUP[5]) ∧
+                    ADV_ornamentally(EVENT[10]) ∧
+                     past(EVENT[10]) ∧
+                      past(EVENT[28]) ∧
+                       CONJ_and(proclaimed(EVENT[28], ENTITY[4], ENTITY[1]),
+                        varying(EVENT[27], ENTITY[12]) ∧ to(EVENT[27]) = ENTITY[23] ∧
+                         from(EVENT[27]) = ENTITY[15]))
+
+# ::id 28_fiction_HARDY-1883;AT6-4;NE
+# ::snt The room was lighted by half-a-dozen candles , having wicks only a trifle smaller than the grease which enveloped them , in candlesticks that were never used but at high-days , holy-days , and family feasts .
+∃ ATTRIB[13] REF1[18] EVENT[9] EVENT[20] EVENT[21] GROUP[5] DEGREE[15] GROUP[12] GROUP[3] GROUP[2] EVENT[19] ENTITY[16] ENTITY[1] (
+ room(ENTITY[1]) ∧
+  REF1[18] = them ∧
+   enveloped(EVENT[19], ENTITY[16], REF1[18]) ∧ grease(ENTITY[16]) ∧
+    past(EVENT[19]) ∧
+     ∃ GROUP[6] (high-days(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+      ∃ GROUP[7] (holy-days(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5])) ∧
+      ∃ GROUP[8] (family_feasts(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[5])) ∧
+      used(EVENT[9], _, GROUP[3]) ∧ but_at(EVENT[9]) = GROUP[5] ∧ candlesticks(GROUP[3]) ∧
+       wicks(GROUP[12]) ∧
+        trifle(DEGREE[15]) ∧
+         ONLY DEGREE[14] (is_of(DEGREE[14], DEGREE[15]), is_smaller_than(ATTRIB[13], ENTITY[16]) ∧ is_smaller_MSR(ATTRIB[13], DEGREE[14])) ∧
+          (CD_half-a-dozen(GROUP[2]),
+           having(EVENT[20], GROUP[2], GROUP[12]) ∧ ATTRIBUTE(EVENT[20]) = ATTRIB[13] ∧
+            is_candles_in(GROUP[2], GROUP[3])) ∧
+           TMP_never(EVENT[9]) ∧
+            past(EVENT[9]) ∧ past(EVENT[21]) ∧ lighted(EVENT[21], GROUP[2], ENTITY[1]))
+
+# ::id 29_fiction_HARDY-1883;AT6-5;NE
+# ::snt The lights were scattered about the room , two of them standing on the chimney-piece .
+∃ REF1[4] EVENT[7] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[2] GROUP[1] (
+ lights(GROUP[1]) ∧
+  room(ENTITY[2]) ∧
+   chimney-piece(ENTITY[5]) ∧
+    REF1[4] = them ∧
+     (CD_two(ENTITY[3]), is_of(ENTITY[3], REF1[4])) ∧
+      past(EVENT[7]) ∧
+       CONJ_and(scattered(EVENT[7], _, GROUP[1]) ∧ about(EVENT[7]) = ENTITY[2],
+        standing(EVENT[6], ENTITY[3]) ∧ on(EVENT[6]) = ENTITY[5]))
+
+# ::id 30_fiction_HARDY-1883;AT6-6;NE
+# ::snt This position of candles was in itself significant .
+∃ ATTRIB[4] REF1[3] EVENT[5] GROUP[2] ENTITY[1] (
+ candles(GROUP[2]) ∧
+  is_position_of(ENTITY[1], GROUP[2]) ∧
+   REF1[3] = itself ∧
+    significant(ATTRIB[4]) ∧
+     past(EVENT[5]) ∧ copula(EVENT[5], ENTITY[1], ATTRIB[4]) ∧ in(EVENT[5]) = REF1[3])
+
+# ::id 31_fiction_HARDY-1883;AT6-7;NE
+# ::snt Candles on the chimney-piece always meant a party .
+∃ EVENT[4] ENTITY[3] GROUP[1] ENTITY[2] (
+ chimney-piece(ENTITY[2]) ∧
+  is_Candles_on(GROUP[1], ENTITY[2]) ∧
+   party(ENTITY[3]) ∧ TMP_always(EVENT[4]) ∧ past(EVENT[4]) ∧ meant(EVENT[4], GROUP[1], ENTITY[3]))
+
+# ::id 32_fiction_HARDY-1883;AT7-1;NE
+# ::snt On the hearth , in front of a back-brand to give substance , blazed a fire of thorns , that crackled ' like the laughter of the fool . '
+∃ ATTRIB[10] EVENT[6] EVENT[13] EVENT[14] ENTITY[5] ENTITY[3] GROUP[8] ENTITY[7] ENTITY[2] ENTITY[12] ENTITY[11] ENTITY[1] (
+ hearth(ENTITY[1]) ∧
+  fool(ENTITY[12]) ∧
+   is_laughter_of(ENTITY[11], ENTITY[12]) ∧
+    substance(ENTITY[5]) ∧
+     give(EVENT[6], ENTITY[3], ENTITY[5]) ∧ back-brand(ENTITY[3]) ∧
+      is_front_of(ENTITY[2], ENTITY[3]) ∧
+       thorns(GROUP[8]) ∧
+        is_like_comp(ATTRIB[10], ENTITY[11]) ∧
+         crackled(EVENT[13], ENTITY[7], ATTRIB[10]) ∧ is_fire_of(ENTITY[7], GROUP[8]) ∧
+          past(EVENT[13]) ∧
+           past(EVENT[14]) ∧
+            blazed(EVENT[14], ENTITY[7]) ∧ in(EVENT[14]) = ENTITY[2] ∧ On(EVENT[14]) = ENTITY[1])
+
+# ::id 33_fiction_HARDY-1883;AT8-1;NE
+# ::snt Nineteen persons were gathered here .
+∃ EVENT[2] GROUP[1] (
+ (CD_nineteen(GROUP[1]), persons(GROUP[1])) ∧
+  LOC_here(EVENT[2]) ∧ past(EVENT[2]) ∧ gathered(EVENT[2], _, GROUP[1]))
+
+# ::id 34_fiction_HARDY-1883;AT8-2;NE
+# ::snt Of these , five women , wearing gowns of various bright hues , sat in chairs along the wall ;
+∃ ATTRIB[6] EVENT[7] EVENT[10] GROUP[5] GROUP[4] GROUP[8] GROUP[2] ENTITY[9] GROUP[1] (
+ wall(ENTITY[9]) ∧
+  various(ATTRIB[6]) ∧
+   is_bright_hues_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+    is_gowns_of(GROUP[4], GROUP[5]) ∧
+     (CD_five(GROUP[2]), wearing(EVENT[7], GROUP[2], GROUP[4]) ∧ women(GROUP[2])) ∧
+      is_chairs_along(GROUP[8], ENTITY[9]) ∧
+       past(EVENT[10]) ∧
+        sat(EVENT[10], GROUP[2]) ∧ in(EVENT[10]) = GROUP[8] ∧ Of(EVENT[10]) = GROUP[1])
+
+# ::id 35_fiction_HARDY-1883;AT8-3;NE
+# ::snt girls shy and not shy filled the window-bench ;
+∃ ATTRIB[3] ATTRIB[2] EVENT[5] GROUP[1] ENTITY[4] (
+ window-bench(ENTITY[4]) ∧
+  shy(ATTRIB[2]) ∧
+   ¬ shy(ATTRIB[3]) ∧
+    CONJ_and(is_girls_ATTRIBUTE(GROUP[1], ATTRIB[2]), is_girls_ATTRIBUTE(GROUP[1], ATTRIB[3])) ∧
+     past(EVENT[5]) ∧ filled(EVENT[5], GROUP[1], ENTITY[4]))
+
+# ::id 36_fiction_HARDY-1883;AT8-4;NE
+# ::snt four men , including Charley Jake the hedge-carpenter , Elijah New the parish-clerk , and John Pitcher , a neighbouring dairyman , the shepherd 's father-in-law , lolled in the settle ;
+∃ EVENT[10] EVENT[12] GROUP[3] GROUP[1] ENTITY[7] ENTITY[11] (
+ shepherd(ENTITY[7]) ∧
+  settle(ENTITY[11]) ∧
+   ∃ ENTITY[4] (hedge-carpenter(ENTITY[4]) ∧ is_-ENTITY-_namely(ENTITY[Charley_Jake], ENTITY[4]) ∧ is_element_of(ENTITY[Charley_Jake], GROUP[3])) ∧
+    ∃ ENTITY[5] (parish-clerk(ENTITY[5]) ∧ is_-ENTITY-_namely(ENTITY[Elijah_New], ENTITY[5]) ∧ is_element_of(ENTITY[Elijah_New], GROUP[3])) ∧
+    ∃ ATTRIB[9] ENTITY[8] ENTITY[6] (
+     neighbouring(ATTRIB[9]) ∧
+      is_dairyman_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       is_-ENTITY-_namely(ENTITY[John_Pitcher], ENTITY[8]) ∧
+        is_father-in-law_POS(ENTITY[6], ENTITY[7]) ∧ is_-ENTITY-_namely(ENTITY[John_Pitcher], ENTITY[6]) ∧ is_element_of(ENTITY[John_Pitcher], GROUP[3])) ∧
+    (CD_four(GROUP[1]), including(EVENT[10], GROUP[1], GROUP[3]) ∧ men(GROUP[1])) ∧
+     past(EVENT[12]) ∧ lolled(EVENT[12], GROUP[1]) ∧ in(EVENT[12]) = ENTITY[11])
+
+# ::id 37_fiction_HARDY-1883;AT8-5;NE
+# ::snt a young man and maid , who were blushing over tentative pourparlers on a life-companionship , sat beneath the corner-cupboard ;
+∃ ATTRIB[8] EVENT[10] EVENT[12] ENTITY[9] GROUP[7] GROUP[2] ENTITY[1] ENTITY[11] (
+ corner-cupboard(ENTITY[11]) ∧
+  ∃ ATTRIB[4] ENTITY[3] (young(ATTRIB[4]) ∧ is_man_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[5] (maid(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   tentative(ATTRIB[8]) ∧
+    life-companionship(ENTITY[9]) ∧
+     is_pourparlers_on(GROUP[7], ENTITY[9]) ∧ is_pourparlers_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      were_blushing(EVENT[10], ENTITY[1]) ∧ over(EVENT[10]) = GROUP[7] ∧ is_equals(ENTITY[1], GROUP[2]) ∧
+       past(EVENT[10]) ∧
+        past(EVENT[12]) ∧ sat(EVENT[12], ENTITY[1]) ∧ beneath(EVENT[12]) = ENTITY[11])
+
+# ::id 38_fiction_HARDY-1883;AT8-6;NE
+# ::snt and an elderly engaged man of fifty or upward moved restlessly about from spots where his betrothed was not to the spot where she was .
+∃ SITUATION[10] ATTRIB[8] REF1[7] ATTRIB[2] REF2[13] EVENT[16] ENTITY[3] ENTITY[6] GROUP[4] ENTITY[1] EVENT[14] ENTITY[11] (
+ REF2[13] = she ∧
+  copula(EVENT[14], REF2[13]) ∧ spot(ENTITY[11]) ∧
+   is_LOC(EVENT[14], ENTITY[11]) ∧
+    past(EVENT[14]) ∧
+     elderly(ATTRIB[2]) ∧
+      CD_fifty_or_upward(ENTITY[3]) ∧
+       is_engaged_man_of(ENTITY[1], ENTITY[3]) ∧ is_engaged_man_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+        REF1[7] = his ∧
+         betrothed(ATTRIB[8]) ∧
+          is_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_POS(ENTITY[6], REF1[7]) ∧
+           is_FACT_THAT(SITUATION[10], ¬ ∃ EVENT[9] (past(EVENT[9]) ∧ copula(EVENT[9], ENTITY[6]))) ∧
+            spots(GROUP[4]) ∧
+            ADV_restlessly_about(EVENT[16]) ∧
+             is_LOC(SITUATION[10], GROUP[4]) ∧
+              past(EVENT[16]) ∧
+               moved(EVENT[16], ENTITY[1]) ∧ to(EVENT[16]) = ENTITY[11] ∧
+                from(EVENT[16]) = GROUP[4])
+
+# ::id 39_fiction_HARDY-1883;AT8-7;NE
+# ::snt Enjoyment was pretty general , and so much the more prevailed in being unhampered by conventional restrictions .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ Enjoyment(ENTITY[1]) ∧
+  pretty_general(ATTRIB[2]) ∧
+   past(EVENT[3]) ∧
+    CONJ_and(copula(EVENT[3], ENTITY[1], ATTRIB[2]),
+     SO_MUCH_THE_MORE DEGREE[4] ∃ ATTRIB[7] SITUATION[5] EVENT[8] EVENT[9] GROUP[6] (
+      conventional(ATTRIB[7]) ∧
+       is_restrictions_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+        is_FACT_THAT(SITUATION[5], being_unhampered(EVENT[8], GROUP[6], ENTITY[1])) ∧
+         past(EVENT[9]) ∧
+          prevailed(EVENT[9], ENTITY[1]) ∧ in(EVENT[9]) = SITUATION[5] ∧ MSR(EVENT[9]) = DEGREE[4])))
+
+# ::id 40_fiction_HARDY-1883;AT8-8;NE
+# ::snt Absolute confidence in each other 's good opinion begat perfect ease , while the finishing stroke of manner , amounting to a truly princely serenity , was lent to the majority by the absence of any expression or trait denoting that they wished to get on in the world , enlarge their minds , or do any eclipsing thing whatever -- which nowadays so generally nips the bloom and bonhomie of all except the two extremes of the social scale .
+∃ ATTRIB[13] ATTRIB[8] ATTRIB[2] ATTRIB[40] ATTRIB[10] EVENT[14] EVENT[45] EVENT[46] ENTITY[3] ENTITY[12] ENTITY[7] ENTITY[1] ENTITY[11] ENTITY[25] ENTITY[35] ENTITY[36] ENTITY[39] GROUP[38] GROUP[34] ENTITY[33] ENTITY[16] ENTITY[15] ENTITY[9] (
+ finishing(ATTRIB[10]) ∧
+  manner(ENTITY[11]) ∧
+   is_stroke_of(ENTITY[9], ENTITY[11]) ∧ is_stroke_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+    majority(ENTITY[15]) ∧
+     world(ENTITY[25]) ∧
+      bloom(ENTITY[35]) ∧
+       bonhomie(ENTITY[36]) ∧
+        is_element_of(ENTITY[35], GROUP[34]) ∧ is_element_of(ENTITY[36], GROUP[34]) ∧
+         social(ATTRIB[40]) ∧
+          is_scale_ATTRIBUTE(ENTITY[39], ATTRIB[40]) ∧
+           (CD_two(GROUP[38]), is_extremes_of(GROUP[38], ENTITY[39])) ∧
+            ALL ENTITY[37] (is_except(ENTITY[37], GROUP[38]), is_of(ENTITY[33], ENTITY[37]) ∧ is_equals(ENTITY[33], GROUP[34])) ∧
+             ANY REF2[28] REF1[23] EVENT[26] EVENT[29] EVENT[24] EVENT[22] GROUP[27] GROUP[18] ENTITY[17] (
+              (CONJ_or(∃ ENTITY[19] (expression(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[18])),
+                 ∃ ENTITY[20] (trait(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[18]))) ∧ REF1[23] = they ∧
+               REF2[28] = their ∧ is_minds_POS(GROUP[27], REF2[28]) ∧
+               denoting(EVENT[22], ENTITY[17],
+                wished(EVENT[24], REF1[23],
+                 CONJ_or(get_on(EVENT[26], REF1[23]) ∧ in(EVENT[26]) = ENTITY[25],
+                  enlarge(EVENT[29], REF1[23], GROUP[27]),
+                  ANY ATTRIB[31] EVENT[41] ENTITY[30] (
+                   (eclipsing(ATTRIB[31]) ∧
+                    ADV_whatever(ENTITY[30]) ∧
+                     nips(EVENT[41], ENTITY[30], ENTITY[33]) ∧ is_thing_ATTRIBUTE(ENTITY[30], ATTRIB[31]) ∧
+                    ADV_nowadays(EVENT[41]) ∧ ADV_so_generally(EVENT[41])),
+                   ∃ EVENT[44] do(EVENT[44], REF1[23], ENTITY[30]))))) ∧ is_equals(ENTITY[17], GROUP[18]) ∧
+               is_before(EVENT[24], EVENT[22])), is_absence_of(ENTITY[16], ENTITY[17])) ∧
+              absolute(ATTRIB[2]) ∧
+               EACH ATTRIB[5] ENTITY[4] ((other(ATTRIB[5]) ∧ is_ATTRIBUTE(ENTITY[4], ATTRIB[5])),
+                ∃ ATTRIB[6] (
+                 good(ATTRIB[6]) ∧ is_opinion_ATTRIBUTE(ENTITY[3], ATTRIB[6]) ∧ is_opinion_POS(ENTITY[3], ENTITY[4]))) ∧
+                is_confidence_in(ENTITY[1], ENTITY[3]) ∧ is_confidence_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+                 perfect(ATTRIB[8]) ∧
+                  is_ease_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+                   truly_princely(ATTRIB[13]) ∧
+                    is_serenity_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+                     past(EVENT[45]) ∧
+                      past(EVENT[46]) ∧
+                       CRD_while(CONJ_and(amounting(EVENT[14], ENTITY[9]) ∧ to(EVENT[14]) = ENTITY[12],
+                             lent(EVENT[45], ENTITY[16], ENTITY[9], ENTITY[15])),
+                        begat(EVENT[46], ENTITY[1], ENTITY[7])))
+
+# ::id 41_fiction_HARDY-1883;AT9-1;NE
+# ::snt Shepherd Fennel had married well , his wife being a dairyman 's daughter from a vale at a distance , who brought fifty guineas in her pocket -- and kept them there , till they should be required for ministering to the needs of a coming family .
+∃ SITUATION[26] ATTRIB[21] REF4[10] SITUATION[9] REF3[8] REF2[6] REF1[2] ATTRIB[14] EVENT[25] EVENT[7] EVENT[17] EVENT[24] ENTITY[5] GROUP[4] ENTITY[20] ENTITY[23] ENTITY[22] ENTITY[19] ENTITY[1] ENTITY[13] GROUP[12] (
+ coming(ATTRIB[14]) ∧
+  is_family_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+   is_needs_of(GROUP[12], ENTITY[13]) ∧
+    REF1[2] = his ∧
+     (CD_fifty(GROUP[4]), guineas(GROUP[4])) ∧
+      REF2[6] = her ∧
+       is_pocket_POS(ENTITY[5], REF2[6]) ∧
+        REF3[8] = them ∧
+         REF4[10] = they ∧
+          is_FACT_THAT(SITUATION[9],
+           MD_should(∃ SITUATION[11] EVENT[15] EVENT[16] (
+                 is_FACT_THAT(SITUATION[11], ministering(EVENT[15], REF4[10]) ∧ to(EVENT[15]) = GROUP[12]) ∧
+                  required(EVENT[16], _, REF4[10]) ∧ for(EVENT[16]) = SITUATION[11]))) ∧
+           CONJ_and(brought(EVENT[7], ENTITY[1], GROUP[4]) ∧ in(EVENT[7]) = ENTITY[5],
+            kept(EVENT[17], ENTITY[1], REF3[8]) ∧ till(EVENT[17]) = SITUATION[9]) ∧
+            is_wife_POS(ENTITY[1], REF1[2]) ∧
+            dairyman(ATTRIB[21]) ∧
+             is_ATTRIBUTE(ENTITY[20], ATTRIB[21]) ∧
+              is_daughter_POS(ENTITY[19], ENTITY[20]) ∧
+               distance(ENTITY[23]) ∧
+                is_vale_at(ENTITY[22], ENTITY[23]) ∧
+                 ADV_well(SITUATION[26]) ∧
+                  past(EVENT[25]) ∧
+                   past(EVENT[7]) ∧
+                    ADV_there(EVENT[17]) ∧
+                     past(EVENT[17]) ∧
+                      is_FACT_THAT(SITUATION[26],
+                       CONJ_and(had_married(EVENT[25], ENTITY[Shepherd_Fennel]),
+                        being(EVENT[24], ENTITY[1], ENTITY[19]) ∧ from(EVENT[24]) = ENTITY[22])))
+
+# ::id 42_fiction_HARDY-1883;AT9-2;NE
+# ::snt This frugal woman had been somewhat exercised as to the character that should be given to the gathering .
+∃ ATTRIB[2] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[1] (
+ frugal(ATTRIB[2]) ∧
+  is_woman_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   gathering(ENTITY[5]) ∧
+    MD_should(∃ EVENT[6] given(EVENT[6], _, ENTITY[3], ENTITY[5])) ∧ character(ENTITY[3]) ∧
+     ADV_somewhat(EVENT[7]) ∧
+      past(EVENT[7]) ∧ had_exercised(EVENT[7], _, ENTITY[1]) ∧ as_to(EVENT[7]) = ENTITY[3])
+
+# ::id 43_fiction_HARDY-1883;AT9-3;NE
+# ::snt A sit-still party had its advantages ;
+∃ REF1[4] ATTRIB[2] EVENT[5] GROUP[3] ENTITY[1] (
+ sit-still(ATTRIB[2]) ∧
+  is_party_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[4] = its ∧
+    is_advantages_POS(GROUP[3], REF1[4]) ∧ past(EVENT[5]) ∧ had(EVENT[5], ENTITY[1], GROUP[3]))
+
+# ::id 44_fiction_HARDY-1883;AT9-4;NE
+# ::snt but an undisturbed position of ease in chairs and settles was apt to lead on the men to such an unconscionable deal of toping that they would sometimes fairly drink the house dry .
+∃ REF1[14] ATTRIB[11] ATTRIB[10] ATTRIB[7] ATTRIB[2] EVENT[13] EVENT[21] GROUP[4] ENTITY[3] ENTITY[12] ENTITY[9] ENTITY[1] ENTITY[17] GROUP[8] (
+ men(GROUP[8]) ∧
+  house(ENTITY[17]) ∧
+   undisturbed(ATTRIB[2]) ∧
+    ease(ENTITY[3]) ∧
+     ∃ GROUP[5] (chairs(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+      ∃ GROUP[6] (settles(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+      is_position_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_position_in(ENTITY[1], GROUP[4]) ∧ is_position_of(ENTITY[1], ENTITY[3]) ∧
+       such(ATTRIB[10]) ∧
+        unconscionable(ATTRIB[11]) ∧
+         toping(ENTITY[12]) ∧
+          is_deal_of(ENTITY[9], ENTITY[12]) ∧ is_deal_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_deal_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+           REF1[14] = they ∧
+            is_apt_to(ATTRIB[7],
+             lead(EVENT[13],
+              MD_would(SOME TIME[15] (times(TIME[15]),
+                    ∃ SITUATION[20] ATTRIB[18] EVENT[19] EVENT[16] (
+                     dry(ATTRIB[18]) ∧
+                      ADV_fairly(SITUATION[20]) ∧
+                       is_FACT_THAT(SITUATION[20],
+                        drink(EVENT[16], REF1[14], xxx(EVENT[19], ENTITY[17], ATTRIB[18])) ∧
+                         is_contained_in(TMP(EVENT[16]), TIME[15])))))) ∧
+              to(EVENT[13]) = ENTITY[9] ∧ on(EVENT[13]) = GROUP[8]) ∧
+             past(EVENT[21]) ∧ copula(EVENT[21], ENTITY[1], ATTRIB[7]))
+
+# ::id 45_fiction_HARDY-1883;AT9-5;NE
+# ::snt A dancing-party was the alternative ;
+∃ EVENT[3] ENTITY[1] ENTITY[2] (alternative(ENTITY[2]) ∧ dancing-party(ENTITY[1]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 46_fiction_HARDY-1883;AT9-6;NE
+# ::snt but this , while avoiding the foregoing objection on the score of good drink , had a counterbalancing disadvantage in the matter of good victuals , the ravenous appetites engendered by the exercise causing immense havoc in the buttery .
+∃ ATTRIB[19] ATTRIB[9] ATTRIB[14] ATTRIB[12] ATTRIB[6] ATTRIB[3] ENTITY[18] ENTITY[8] EVENT[7] EVENT[22] EVENT[21] EVENT[17] ENTITY[5] ENTITY[4] ENTITY[2] GROUP[11] ENTITY[16] ENTITY[20] GROUP[13] ENTITY[10] ENTITY[1] (
+ foregoing(ATTRIB[3]) ∧
+  good(ATTRIB[6]) ∧
+   is_drink_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_score_of(ENTITY[4], ENTITY[5]) ∧
+     is_objection_on(ENTITY[2], ENTITY[4]) ∧ is_objection_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      good(ATTRIB[12]) ∧
+       is_victuals_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+        is_matter_of(ENTITY[10], GROUP[11]) ∧
+         ravenous(ATTRIB[14]) ∧
+          exercise(ENTITY[16]) ∧
+           engendered(EVENT[17], ENTITY[16], GROUP[13]) ∧ is_appetites_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+            buttery(ENTITY[20]) ∧
+             past(EVENT[22]) ∧
+              counterbalancing(ATTRIB[9]) ∧
+               is_disadvantage_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+                immense(ATTRIB[19]) ∧
+                 is_havoc_in(ENTITY[18], ENTITY[20]) ∧ is_havoc_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧
+                  CRD_while(avoiding(EVENT[7], ENTITY[1], ENTITY[2]),
+                   CONJ_and(had(EVENT[22], ENTITY[1], ENTITY[8]) ∧ in(EVENT[22]) = ENTITY[10],
+                    causing(EVENT[21], GROUP[13], ENTITY[18]))))
+
+# ::id 47_fiction_HARDY-1883;AT9-7;NE
+# ::snt Shepherdess Fennel fell back upon the intermediate plan of mingling short dances with short periods of talk and singing , so as to hinder any ungovernable rage in either .
+∃ SITUATION[12] ATTRIB[7] ATTRIB[5] SITUATION[3] ATTRIB[2] EVENT[17] EVENT[11] ENTITY[9] ENTITY[10] GROUP[8] GROUP[6] GROUP[4] ENTITY[1] (
+ intermediate(ATTRIB[2]) ∧
+  short(ATTRIB[5]) ∧
+   is_dances_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    short(ATTRIB[7]) ∧
+     talk(ENTITY[9]) ∧
+      singing(ENTITY[10]) ∧
+       is_element_of(ENTITY[9], GROUP[8]) ∧ is_element_of(ENTITY[10], GROUP[8]) ∧
+        is_periods_of(GROUP[6], GROUP[8]) ∧ is_periods_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+         is_FACT_THAT(SITUATION[3], mingling(EVENT[11], _, GROUP[4]) ∧ with(EVENT[11]) = GROUP[6]) ∧
+          is_plan_of(ENTITY[1], SITUATION[3]) ∧ is_plan_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+           is_FACT_THAT(SITUATION[12],
+            ANY ATTRIB[14] ENTITY[13] ((ungovernable(ATTRIB[14]) ∧ EITHER ENTITY[15] (is_rage_in(ENTITY[13], ENTITY[15]) ∧ is_rage_ATTRIBUTE(ENTITY[13], ATTRIB[14]))),
+             ∃ EVENT[16] hinder(EVENT[16], ENTITY[Shepherdess_Fennel], ENTITY[13]))) ∧
+            past(EVENT[17]) ∧
+             fell_back(EVENT[17], ENTITY[Shepherdess_Fennel]) ∧ so_as(EVENT[17]) = SITUATION[12] ∧ upon(EVENT[17]) = ENTITY[1])
+
+# ::id 48_fiction_HARDY-1883;AT9-8;NE
+# ::snt But this scheme was entirely confined to her own gentle mind :
+∃ ATTRIB[4] REF1[3] EVENT[5] ENTITY[2] ENTITY[1] (
+ scheme(ENTITY[1]) ∧
+  REF1[3] = her ∧
+   own(ATTRIB[4]) ∧
+    is_gentle_mind_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_gentle_mind_POS(ENTITY[2], REF1[3]) ∧
+     ADV_entirely(EVENT[5]) ∧
+      past(EVENT[5]) ∧ confined(EVENT[5], _, ENTITY[1]) ∧ to(EVENT[5]) = ENTITY[2])
+
+# ::id 49_fiction_HARDY-1883;AT9-9;NE
+# ::snt the shepherd himself was in the mood to exhibit the most reckless phases of hospitality .
+∃ ATTRIB[6] REF1[2] EVENT[8] EVENT[4] ENTITY[7] GROUP[5] ENTITY[3] ENTITY[1] (
+ REF1[2] = himself ∧
+  is_shepherd_RFL(ENTITY[1], REF1[2]) ∧
+   mood(ENTITY[3]) ∧
+    most_reckless(ATTRIB[6]) ∧
+     hospitality(ENTITY[7]) ∧
+      is_phases_of(GROUP[5], ENTITY[7]) ∧ is_phases_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       past(EVENT[4]) ∧
+        copula(EVENT[4], ENTITY[1], exhibit(EVENT[8], ENTITY[1], GROUP[5])) ∧ in(EVENT[4]) = ENTITY[3])
+
+# ::id 50_fiction_HARDY-1883;AT10-1;NE
+# ::snt The fiddler was a boy of those parts , about twelve years of age , who had a wonderful dexterity in jigs and reels , though his fingers were so small and short as to necessitate a constant shifting for the high notes , from which he scrambled back to the first position with sounds not of unmixed purity of tone .
+∃ ATTRIB[30] REF2[24] ATTRIB[20] SITUATION[18] ATTRIB[17] ATTRIB[30] REF2[24] ATTRIB[20] SITUATION[18] ATTRIB[16] ATTRIB[15] REF1[14] SITUATION[12] ATTRIB[8] ATTRIB[26] ATTRIB[22] ATTRIB[26] ATTRIB[22] EVENT[32] EVENT[33] EVENT[32] EVENT[33] EVENT[34] EVENT[35] EVENT[36] ENTITY[5] ENTITY[31] ENTITY[29] GROUP[27] ENTITY[19] ENTITY[31] ENTITY[29] GROUP[27] ENTITY[19] GROUP[13] GROUP[9] ENTITY[7] GROUP[4] ENTITY[2] ENTITY[25] GROUP[21] ENTITY[25] GROUP[21] GROUP[3] ENTITY[1] (
+ fiddler(ENTITY[1]) ∧
+  parts(GROUP[3]) ∧
+   high(ATTRIB[22]) ∧
+    is_notes_ATTRIBUTE(GROUP[21], ATTRIB[22]) ∧
+     first(ATTRIB[26]) ∧
+      is_position_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+       high(ATTRIB[22]) ∧
+        is_notes_ATTRIBUTE(GROUP[21], ATTRIB[22]) ∧
+         first(ATTRIB[26]) ∧
+          is_position_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+           age(ENTITY[5]) ∧
+            (CD_twelve(GROUP[4]), ADV_about(GROUP[4]) ∧ is_years_of(GROUP[4], ENTITY[5])) ∧
+             wonderful(ATTRIB[8]) ∧
+              is_dexterity_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+               ∃ GROUP[10] (jigs(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])) ∧
+                ∃ GROUP[11] (reels(GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9])) ∧
+                REF1[14] = his ∧
+                 is_fingers_POS(GROUP[13], REF1[14]) ∧
+                  small(ATTRIB[16]) ∧
+                   constant(ATTRIB[20]) ∧
+                    REF2[24] = he ∧
+                     unmixed(ATTRIB[30]) ∧
+                      tone(ENTITY[31]) ∧
+                       is_purity_of(ENTITY[29], ENTITY[31]) ∧ is_purity_ATTRIBUTE(ENTITY[29], ATTRIB[30]) ∧
+                        NOT ENTITY[28] (is_of(ENTITY[28], ENTITY[29]), is_sounds_of(GROUP[27], ENTITY[28])) ∧
+                         scrambled_back(EVENT[32], REF2[24]) ∧ with(EVENT[32]) = GROUP[27] ∧
+                          to(EVENT[32]) = ENTITY[25] ∧ from(EVENT[32]) = ENTITY[19] ∧
+                          is_shifting_for(ENTITY[19], GROUP[21]) ∧ is_shifting_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                          is_FACT_THAT(SITUATION[18], necessitate(EVENT[33], _, ENTITY[19])) ∧
+                           short(ATTRIB[17]) ∧
+                            constant(ATTRIB[20]) ∧
+                             REF2[24] = he ∧
+                              unmixed(ATTRIB[30]) ∧
+                               tone(ENTITY[31]) ∧
+                                is_purity_of(ENTITY[29], ENTITY[31]) ∧ is_purity_ATTRIBUTE(ENTITY[29], ATTRIB[30]) ∧
+                                 NOT ENTITY[28] (is_of(ENTITY[28], ENTITY[29]), is_sounds_of(GROUP[27], ENTITY[28])) ∧
+                                  scrambled_back(EVENT[32], REF2[24]) ∧ with(EVENT[32]) = GROUP[27] ∧
+                                   to(EVENT[32]) = ENTITY[25] ∧
+                                   from(EVENT[32]) = ENTITY[19] ∧
+                                   is_shifting_for(ENTITY[19], GROUP[21]) ∧ is_shifting_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                                   is_FACT_THAT(SITUATION[18], necessitate(EVENT[33], _, ENTITY[19])) ∧
+                                    so(ATTRIB[15]) ∧
+                                     CONJ_and(is_as(ATTRIB[15], SITUATION[18]) ∧
+                                           is_ATTRIBUTE(ATTRIB[15], ATTRIB[16]),
+                                      is_as(ATTRIB[15], SITUATION[18]) ∧
+                                       is_ATTRIBUTE(ATTRIB[15], ATTRIB[17])) ∧
+                                     is_FACT_THAT(SITUATION[12],
+                                      copula(EVENT[34], GROUP[13]) ∧
+                                       ATTRIBUTE(EVENT[34]) = ATTRIB[15]) ∧
+                                      had(EVENT[35], ENTITY[2], ENTITY[7]) ∧
+                                       though(EVENT[35]) = SITUATION[12] ∧
+                                       in(EVENT[35]) = GROUP[9] ∧
+                                       is_boy_TMP(ENTITY[2], GROUP[4]) ∧
+                                        is_boy_of(ENTITY[2], GROUP[3]) ∧
+                                       past(EVENT[32]) ∧
+                                        past(EVENT[32]) ∧
+                                         past(EVENT[34]) ∧
+                                          past(EVENT[35]) ∧
+                                           past(EVENT[36]) ∧
+                                            copula(EVENT[36], ENTITY[1], ENTITY[2]))
+
+# ::id 51_fiction_HARDY-1883;AT10-2;NE
+# ::snt At seven the shrill tweedle-dee of this youngster had begun , accompanied by a booming ground-bass from Elijah New , the parish-clerk , who had thoughtfully brought with him his favourite musical instrument , the serpent .
+∃ ATTRIB[13] REF2[12] REF1[9] ATTRIB[6] ATTRIB[3] EVENT[17] EVENT[14] EVENT[16] ENTITY[10] ENTITY[11] ENTITY[7] ENTITY[5] ENTITY[1] ENTITY[4] ENTITY[2] (
+ shrill(ATTRIB[3]) ∧
+  youngster(ENTITY[4]) ∧
+   is_tweedle-dee_of(ENTITY[2], ENTITY[4]) ∧ is_tweedle-dee_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    CD_seven(ENTITY[1]) ∧
+     booming(ATTRIB[6]) ∧
+      REF1[9] = him ∧
+       REF2[12] = his ∧
+        favourite(ATTRIB[13]) ∧
+         is_musical_instrument_ATTRIBUTE(ENTITY[11], ATTRIB[13]) ∧ is_musical_instrument_POS(ENTITY[11], REF2[12]) ∧
+          serpent(ENTITY[10]) ∧
+           is_-ENTITY-_namely(ENTITY[11], ENTITY[10]) ∧
+            had_brought(EVENT[14], ENTITY[Elijah_New], ENTITY[11]) ∧ with(EVENT[14]) = REF1[9] ∧
+             parish-clerk(ENTITY[7]) ∧
+              is_-ENTITY-_namely(ENTITY[Elijah_New], ENTITY[7]) ∧
+               is_ground-bass_from(ENTITY[5], ENTITY[Elijah_New]) ∧ is_ground-bass_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+                past(EVENT[17]) ∧
+                 ADV_thoughtfully(EVENT[14]) ∧
+                  past(EVENT[14]) ∧
+                   CONJ_and(had_begun(EVENT[17], ENTITY[2]) ∧ At(EVENT[17]) = ENTITY[1],
+                    accompanied(EVENT[16], ENTITY[5], ENTITY[2])))
+
+# ::id 52_fiction_HARDY-1883;AT10-3;NE
+# ::snt Dancing was instantaneous , Mrs. Fennel privately enjoining the players on no account to let the dance exceed the length of a quarter of an hour .
+∃ SITUATION[12] ATTRIB[2] EVENT[13] ENTITY[1] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[7] GROUP[3] (
+ players(GROUP[3]) ∧
+  dance(ENTITY[7]) ∧
+   hour(ENTITY[10]) ∧
+    is_quarter_of(ENTITY[9], ENTITY[10]) ∧
+     is_length_of(ENTITY[8], ENTITY[9]) ∧
+      Dancing(ENTITY[1]) ∧
+       instantaneous(ATTRIB[2]) ∧
+        past(EVENT[13]) ∧
+         ADV_privately(SITUATION[12]) ∧
+          CONJ_and(copula(EVENT[13], ENTITY[1], ATTRIB[2]),
+           is_FACT_THAT(SITUATION[12],
+            ¬ ∃ EVENT[11] EVENT[6] EVENT[5] ENTITY[4] (
+                  account(ENTITY[4]) ∧
+                   enjoining(EVENT[5], ENTITY[Mrs.Fennel], GROUP[3],
+                    let(EVENT[6], GROUP[3], exceed(EVENT[11], ENTITY[7], ENTITY[8]))) ∧
+                    on(EVENT[5]) = ENTITY[4]))))
+
+# ::id 53_fiction_HARDY-1883;AT11-1;NE
+# ::snt But Elijah and the boy , in the excitement of their position , quite forgot the injunction .
+∃ REF1[5] EVENT[7] GROUP[1] ENTITY[2] ENTITY[4] ENTITY[6] ENTITY[3] (
+ boy(ENTITY[2]) ∧
+  REF1[5] = their ∧
+   is_position_POS(ENTITY[4], REF1[5]) ∧
+    is_excitement_of(ENTITY[3], ENTITY[4]) ∧
+     injunction(ENTITY[6]) ∧
+      is_element_of(ENTITY[Elijah], GROUP[1]) ∧ is_element_of(ENTITY[2], GROUP[1]) ∧
+       ADV_quite(EVENT[7]) ∧
+        past(EVENT[7]) ∧ forgot(EVENT[7], GROUP[1], ENTITY[6]) ∧ in(EVENT[7]) = ENTITY[3])
+
+# ::id 54_fiction_HARDY-1883;AT11-2;NE
+# ::snt Moreover , Oliver Giles , a man of seventeen , one of the dancers , who was enamoured of his partner , a fair girl of thirty-three rolling years , had recklessly handed a new crown-piece to the musicians , as a bribe to keep going as long as they had muscle and wind .
+∃ SITUATION[30] SITUATION[31] REF2[22] ATTRIB[19] SITUATION[17] ATTRIB[14] ATTRIB[9] ATTRIB[7] REF1[11] EVENT[12] EVENT[26] EVENT[27] EVENT[28] EVENT[29] GROUP[8] ENTITY[6] ENTITY[10] ENTITY[4] ENTITY[3] ENTITY[1] GROUP[23] DEGREE[20] DEGREE[18] ENTITY[16] ENTITY[13] GROUP[2] GROUP[15] (
+ dancers(GROUP[2]) ∧
+  musicians(GROUP[15]) ∧
+   REF1[11] = his ∧
+    is_partner_POS(ENTITY[10], REF1[11]) ∧
+     fair(ATTRIB[7]) ∧
+      rolling(ATTRIB[9]) ∧
+       (CD_thirty-three(GROUP[8]), is_years_ATTRIBUTE(GROUP[8], ATTRIB[9])) ∧
+        is_girl_of(ENTITY[6], GROUP[8]) ∧ is_girl_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         is_-ENTITY-_namely(ENTITY[10], ENTITY[6]) ∧
+          enamoured(EVENT[12], _, ENTITY[Oliver_Giles]) ∧ of(EVENT[12]) = ENTITY[10] ∧
+           CD_seventeen(ENTITY[4]) ∧
+            is_man_of(ENTITY[3], ENTITY[4]) ∧
+             is_-ENTITY-_namely(ENTITY[Oliver_Giles], ENTITY[3]) ∧
+              (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+               is_-ENTITY-_namely(ENTITY[Oliver_Giles], ENTITY[1]) ∧
+                new(ATTRIB[14]) ∧
+                 is_crown-piece_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+                  as_long(ATTRIB[19]) ∧
+                   REF2[22] = they ∧
+                    ∃ ENTITY[24] (muscle(ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[23])) ∧
+                     ∃ ENTITY[25] (wind(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[23])) ∧
+                     had(EVENT[26], REF2[22], GROUP[23]) ∧ MSR(EVENT[26]) = DEGREE[20] ∧
+                      is_as(DEGREE[18], DEGREE[20]) ∧ is_ATTRIBUTE(DEGREE[18], ATTRIB[19]) ∧
+                       is_FACT_THAT(SITUATION[17], going(EVENT[27]) ∧ MSR(EVENT[27]) = DEGREE[18]) ∧
+                        is_bribe_to(ENTITY[16], keep(EVENT[28], _, SITUATION[17])) ∧
+                         ADV_moreover(SITUATION[31]) ∧
+                          past(EVENT[12]) ∧
+                           ADV_recklessly(SITUATION[30]) ∧
+                            past(EVENT[26]) ∧
+                             past(EVENT[29]) ∧
+                              is_FACT_THAT(SITUATION[31],
+                               is_FACT_THAT(SITUATION[30],
+                                had_handed(EVENT[29], ENTITY[Oliver_Giles], ENTITY[13]) ∧
+                                 as(EVENT[29]) = ENTITY[16] ∧
+                                 to(EVENT[29]) = GROUP[15])))
+
+# ::id 55_fiction_HARDY-1883;AT11-3;NE
+# ::snt Mrs. Fennel , seeing the steam begin to generate on the countenances of her guests , crossed over and touched the fiddler 's elbow and put her hand on the serpent 's mouth .
+∃ REF2[13] REF1[6] ENTITY[9] ENTITY[14] ENTITY[12] EVENT[7] EVENT[3] EVENT[1] EVENT[8] EVENT[11] EVENT[16] GROUP[5] GROUP[4] ENTITY[2] ENTITY[10] ENTITY[15] (
+ steam(ENTITY[2]) ∧
+  REF1[6] = her ∧
+   is_guests_POS(GROUP[5], REF1[6]) ∧
+    is_countenances_of(GROUP[4], GROUP[5]) ∧
+     fiddler(ENTITY[10]) ∧
+      serpent(ENTITY[15]) ∧
+       past(EVENT[8]) ∧
+        past(EVENT[11]) ∧
+         past(EVENT[16]) ∧
+          is_elbow_POS(ENTITY[9], ENTITY[10]) ∧
+           REF2[13] = her ∧
+            is_hand_POS(ENTITY[12], REF2[13]) ∧
+             is_mouth_POS(ENTITY[14], ENTITY[15]) ∧
+              CONJ_and(seeing(EVENT[1], ENTITY[Mrs.Fennel],
+                    begin(EVENT[3], ENTITY[2],
+                     generate(EVENT[7], ENTITY[2]) ∧ on(EVENT[7]) = GROUP[4])),
+               CONJ_and(crossed_over(EVENT[8], ENTITY[Mrs.Fennel]), touched(EVENT[11], ENTITY[Mrs.Fennel], ENTITY[9]),
+                put(EVENT[16], ENTITY[Mrs.Fennel], ENTITY[12]) ∧ on(EVENT[16]) = ENTITY[14])))
+
+# ::id 56_fiction_HARDY-1883;AT11-4;NE
+# ::snt But they took no notice ,
+∃ REF1[1] (
+ REF1[1] = they ∧
+  ¬ ∃ EVENT[3] ENTITY[2] (notice(ENTITY[2]) ∧ past(EVENT[3]) ∧ took(EVENT[3], REF1[1], ENTITY[2])))
+
+# ::id 57_fiction_HARDY-1883;AT11-5;NE
+# ::snt and fearing she might lose her character of genial hostess if she were to interfere too markedly , she retired and sat down helpless .
+∃ ATTRIB[14] ATTRIB[7] REF3[5] REF2[3] REF1[1] EVENT[2] EVENT[13] EVENT[15] ENTITY[6] ENTITY[4] (
+ REF1[1] = she ∧
+  REF2[3] = she ∧
+   REF3[5] = her ∧
+    genial(ATTRIB[7]) ∧
+     is_hostess_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      is_character_of(ENTITY[4], ENTITY[6]) ∧ is_character_POS(ENTITY[4], REF3[5]) ∧
+       helpless(ATTRIB[14]) ∧
+        past(EVENT[13]) ∧
+         past(EVENT[15]) ∧
+          CONJ_and(fearing(EVENT[2], REF1[1],
+                ∀ REF4[8] EVENT[10] EVENT[9] CND_if(
+                 (REF4[8] = she ∧ ADV_too_markedly(EVENT[10]) ∧ is_before(EVENT[9], EVENT[2]) ∧
+                  copula(EVENT[9], REF4[8], interfere(EVENT[10], REF4[8]))),
+                 MD_might(∃ EVENT[12] lose(EVENT[12], REF2[3], ENTITY[4])))),
+           CONJ_and(retired(EVENT[13], REF1[1]), sat_down(EVENT[15], REF1[1], ATTRIB[14]))))
+
+# ::id 58_fiction_HARDY-1883;AT11-6;NE
+# ::snt And so the dance whizzed on with cumulative fury , the performers moving in their planet-like courses , direct and retrograde , from apogee to perigee , till the hand of the well-kicked clock at the bottom of the room had travelled over the circumference of an hour .
+∃ SITUATION[23] SITUATION[12] ATTRIB[9] ATTRIB[8] ATTRIB[7] REF1[6] ATTRIB[3] ATTRIB[15] EVENT[22] EVENT[20] EVENT[21] ENTITY[11] ENTITY[10] ENTITY[11] ENTITY[10] GROUP[5] ENTITY[2] ENTITY[17] ENTITY[16] ENTITY[14] ENTITY[19] ENTITY[18] ENTITY[13] GROUP[4] ENTITY[1] (
+ dance(ENTITY[1]) ∧
+  performers(GROUP[4]) ∧
+   well-kicked(ATTRIB[15]) ∧
+    room(ENTITY[17]) ∧
+     is_bottom_of(ENTITY[16], ENTITY[17]) ∧
+      is_clock_at(ENTITY[14], ENTITY[16]) ∧ is_clock_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+       is_hand_of(ENTITY[13], ENTITY[14]) ∧
+        hour(ENTITY[19]) ∧
+         is_circumference_of(ENTITY[18], ENTITY[19]) ∧
+          cumulative(ATTRIB[3]) ∧
+           is_fury_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+            REF1[6] = their ∧
+             planet-like(ATTRIB[7]) ∧
+              direct(ATTRIB[8]) ∧
+               apogee(ENTITY[10]) ∧
+                perigee(ENTITY[11]) ∧
+                 retrograde(ATTRIB[9]) ∧
+                  apogee(ENTITY[10]) ∧
+                   perigee(ENTITY[11]) ∧
+                    CONJ_and(is_courses_to(GROUP[5], ENTITY[11]) ∧ is_courses_from(GROUP[5], ENTITY[10]) ∧
+                          is_courses_ATTRIBUTE(GROUP[5], ATTRIB[8]) ∧ is_courses_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧
+                          is_courses_POS(GROUP[5], REF1[6]),
+                     is_courses_to(GROUP[5], ENTITY[11]) ∧ is_courses_from(GROUP[5], ENTITY[10]) ∧
+                      is_courses_ATTRIBUTE(GROUP[5], ATTRIB[9]) ∧ is_courses_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧
+                      is_courses_POS(GROUP[5], REF1[6])) ∧
+                     is_FACT_THAT(SITUATION[12], had_travelled_over(EVENT[20], ENTITY[13], ENTITY[18])) ∧
+                      ADV_so(SITUATION[23]) ∧
+                       past(EVENT[22]) ∧
+                        past(EVENT[20]) ∧
+                         is_FACT_THAT(SITUATION[23],
+                          CONJ_and(whizzed_on(EVENT[22], ENTITY[1]) ∧ with(EVENT[22]) = ENTITY[2],
+                           moving(EVENT[21], GROUP[4]) ∧ till(EVENT[21]) = SITUATION[12] ∧
+                            in(EVENT[21]) = GROUP[5])))
+
+# ::id 59_fiction_HARDY-1883;AT12-1;NE
+# ::snt While these cheerful events were in course of enactment within Fennel 's pastoral dwelling , an incident having considerable bearing on the party had occurred in the gloomy night without .
+∃ ATTRIB[11] ATTRIB[6] ATTRIB[15] ATTRIB[2] EVENT[7] EVENT[13] EVENT[16] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[10] ENTITY[8] GROUP[1] ENTITY[12] ENTITY[14] (
+ cheerful(ATTRIB[2]) ∧
+  is_events_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   party(ENTITY[12]) ∧
+    gloomy(ATTRIB[15]) ∧
+     LOC_without(ENTITY[14]) ∧ is_night_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+      enactment(ENTITY[4]) ∧
+       is_course_of(ENTITY[3], ENTITY[4]) ∧
+        pastoral(ATTRIB[6]) ∧
+         is_dwelling_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_dwelling_POS(ENTITY[5], ENTITY[Fennel]) ∧
+          considerable(ATTRIB[11]) ∧
+           is_bearing_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+            having(EVENT[13], ENTITY[8], ENTITY[10]) ∧ on(EVENT[13]) = ENTITY[12] ∧ incident(ENTITY[8]) ∧
+             past(EVENT[7]) ∧
+              past(EVENT[16]) ∧
+               CRD_While(copula(EVENT[7], GROUP[1]) ∧ within(EVENT[7]) = ENTITY[5] ∧
+                     in(EVENT[7]) = ENTITY[3],
+                had_occurred(EVENT[16], ENTITY[8]) ∧ in(EVENT[16]) = ENTITY[14]))
+
+# ::id 60_fiction_HARDY-1883;AT12-2;NE
+# ::snt Mrs. Fennel 's concern about the growing fierceness of the dance corresponded in point of time with the ascent of a human figure to the solitary hill of Higher Crowstairs from the direction of the distant town .
+∃ ATTRIB[14] ATTRIB[11] ATTRIB[9] ATTRIB[3] EVENT[15] ENTITY[6] ENTITY[5] ENTITY[1] ENTITY[4] ENTITY[2] ENTITY[13] ENTITY[12] ENTITY[10] ENTITY[8] ENTITY[7] (
+ growing(ATTRIB[3]) ∧
+  dance(ENTITY[4]) ∧
+   is_fierceness_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_fierceness_of(ENTITY[2], ENTITY[4]) ∧
+    human(ATTRIB[9]) ∧
+     is_figure_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+      solitary(ATTRIB[11]) ∧
+       is_hill_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_hill_of(ENTITY[10], ENTITY[Higher_Crowstairs]) ∧
+        distant(ATTRIB[14]) ∧
+         is_town_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+          is_direction_of(ENTITY[12], ENTITY[13]) ∧
+           is_ascent_from(ENTITY[7], ENTITY[12]) ∧ is_ascent_to(ENTITY[7], ENTITY[10]) ∧ is_ascent_of(ENTITY[7], ENTITY[8]) ∧
+            is_concern_about(ENTITY[1], ENTITY[2]) ∧ is_concern_POS(ENTITY[1], ENTITY[Mrs.Fennel]) ∧
+             time(ENTITY[6]) ∧
+              is_point_of(ENTITY[5], ENTITY[6]) ∧
+               past(EVENT[15]) ∧
+                corresponded(EVENT[15], ENTITY[1]) ∧ with(EVENT[15]) = ENTITY[7] ∧
+                 in(EVENT[15]) = ENTITY[5])
+
+# ::id 61_fiction_HARDY-1883;AT12-3;NE
+# ::snt This personage strode on through the rain without a pause , following the little-worn path which , further on in its course , skirted the shepherd 's cottage .
+∃ REF1[9] ATTRIB[7] ATTRIB[5] EVENT[15] EVENT[14] ENTITY[3] EVENT[13] EVENT[10] ENTITY[12] ENTITY[11] ENTITY[8] ENTITY[4] ENTITY[2] ENTITY[1] (
+ personage(ENTITY[1]) ∧
+  rain(ENTITY[2]) ∧
+   little-worn(ATTRIB[5]) ∧
+    shepherd(ENTITY[12]) ∧
+     is_cottage_POS(ENTITY[11], ENTITY[12]) ∧
+      REF1[9] = its ∧
+       is_course_POS(ENTITY[8], REF1[9]) ∧
+        is_further_on_in(ATTRIB[7], ENTITY[8]) ∧
+         CONJ_and(skirted(EVENT[13], ENTITY[4], ENTITY[11]), xxx(EVENT[10], ENTITY[4], ATTRIB[7])) ∧
+          is_path_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+          past(EVENT[13]) ∧
+           pause(ENTITY[3]) ∧
+            past(EVENT[15]) ∧
+             CONJ_and(strode_on(EVENT[15], ENTITY[1]) ∧ without(EVENT[15]) = ENTITY[3] ∧
+                   through(EVENT[15]) = ENTITY[2], following(EVENT[14], ENTITY[1], ENTITY[4])))
+
+# ::id 62_fiction_HARDY-1883;AT13-1;NE
+# ::snt It was nearly the time of full moon ,
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ full(ATTRIB[3]) ∧
+  is_moon_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_time_of(ENTITY[1], ENTITY[2]) ∧ ADV_nearly(EVENT[4]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1]))
+
+# ::id 63_fiction_HARDY-1883;AT13-2;NE
+# ::snt and on this account , though the sky was lined with a uniform sheet of dripping cloud , ordinary objects out of doors were readily visible .
+∃ ATTRIB[12] ATTRIB[10] ATTRIB[7] ATTRIB[5] SITUATION[2] EVENT[8] EVENT[13] ENTITY[6] ENTITY[4] GROUP[11] GROUP[9] ENTITY[3] ENTITY[1] (
+ account(ENTITY[1]) ∧
+  sky(ENTITY[3]) ∧
+   uniform(ATTRIB[5]) ∧
+    dripping(ATTRIB[7]) ∧
+     is_cloud_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      is_sheet_of(ENTITY[4], ENTITY[6]) ∧ is_sheet_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+       is_FACT_THAT(SITUATION[2], was_lined(EVENT[8], ENTITY[3]) ∧ with(EVENT[8]) = ENTITY[4]) ∧
+        ordinary(ATTRIB[10]) ∧
+         doors(GROUP[11]) ∧
+          is_objects_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧ is_objects_out_of(GROUP[9], GROUP[11]) ∧
+           readily_visible(ATTRIB[12]) ∧
+            past(EVENT[8]) ∧
+             past(EVENT[13]) ∧
+              copula(EVENT[13], GROUP[9], ATTRIB[12]) ∧ though(EVENT[13]) = SITUATION[2] ∧
+               on(EVENT[13]) = ENTITY[1])
+
+# ::id 64_fiction_HARDY-1883;AT13-3;NE
+# ::snt The sad wan light revealed the lonely pedestrian to be a man of supple frame ;
+∃ ATTRIB[9] ATTRIB[5] ATTRIB[3] ATTRIB[2] EVENT[10] EVENT[6] ENTITY[8] ENTITY[7] ENTITY[4] ENTITY[1] (
+ sad(ATTRIB[2]) ∧
+  wan(ATTRIB[3]) ∧
+   is_light_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_light_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    lonely(ATTRIB[5]) ∧
+     is_pedestrian_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      supple(ATTRIB[9]) ∧
+       is_frame_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+        is_man_of(ENTITY[7], ENTITY[8]) ∧
+         past(EVENT[6]) ∧ revealed(EVENT[6], ENTITY[1], ENTITY[4], copula(EVENT[10], ENTITY[4], ENTITY[7])))
+
+# ::id 65_fiction_HARDY-1883;AT13-4;NE
+# ::snt his gait suggested that he had somewhat passed the period of perfect and instinctive agility , though not so far as to be otherwise than rapid of motion when occasion required .
+∃ ATTRIB[11] REF2[4] REF1[2] ATTRIB[10] ATTRIB[8] EVENT[20] EVENT[3] ENTITY[1] ENTITY[7] ENTITY[9] GROUP[6] ENTITY[5] (
+ perfect(ATTRIB[8]) ∧
+  is_agility_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   instinctive(ATTRIB[10]) ∧
+    is_agility_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+     is_element_of(ENTITY[7], GROUP[6]) ∧ is_element_of(ENTITY[9], GROUP[6]) ∧
+      is_period_of(ENTITY[5], GROUP[6]) ∧
+       REF1[2] = his ∧
+        is_gait_POS(ENTITY[1], REF1[2]) ∧
+         REF2[4] = he ∧
+          ¬ ∃ SITUATION[19] ATTRIB[14] SITUATION[12] ENTITY[15] ENTITY[13] (
+                rapid(ATTRIB[14]) ∧
+                 motion(ENTITY[15]) ∧
+                  is_of(ENTITY[13], ENTITY[15]) ∧ is_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+                   is_FACT_THAT(SITUATION[12],
+                    is_FACT_THAT(SITUATION[19],
+                     ∀ EVENT[17] ENTITY[16] CND_when(
+                         occasion(ENTITY[16]) ∧ is_before(EVENT[17], EVENT[3]) ∧
+                          required(EVENT[17], ENTITY[16]),
+                         ∃ EVENT[18] (copula(EVENT[18]) ∧ than(EVENT[18]) = ENTITY[13])))) ∧
+                    ADV_otherwise(SITUATION[19]) ∧ is_so_far_as(ATTRIB[11], SITUATION[12])) ∧
+           ADV_somewhat(EVENT[20]) ∧
+            is_before(EVENT[20], EVENT[3]) ∧
+             past(EVENT[3]) ∧
+              suggested(EVENT[3], ENTITY[1],
+               had_passed(EVENT[20], REF2[4], ENTITY[5]) ∧ though(EVENT[20]) = ATTRIB[11]))
+
+# ::id 66_fiction_HARDY-1883;AT13-5;NE
+# ::snt At a rough guess , he might have been about forty years of age .
+∃ REF1[3] ATTRIB[2] ENTITY[1] (
+ rough(ATTRIB[2]) ∧
+  is_guess_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[3] = he ∧
+    MD_might(∃ EVENT[6] ENTITY[5] GROUP[4] (
+          age(ENTITY[5]) ∧
+           (CD_about_forty(GROUP[4]), is_years_of(GROUP[4], ENTITY[5])) ∧
+            have_copula(EVENT[6], REF1[3], GROUP[4]) ∧ At(EVENT[6]) = ENTITY[1])))
+
+# ::id 67_fiction_HARDY-1883;AT13-6;NE
+# ::snt He appeared tall ,
+∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = he ∧ tall(ATTRIB[2]) ∧ past(EVENT[3]) ∧ appeared(EVENT[3], REF1[1], ATTRIB[2]))
+
+# ::id 68_fiction_HARDY-1883;AT13-7;NE
+# ::snt but a recruiting sergeant , or other person accustomed to the judging of men 's heights by the eye , would have discerned that this was chiefly owing to his gauntness , and that he was not more than five-feet-eight or nine .
+∃ ATTRIB[7] GROUP[1] GROUP[9] ENTITY[10] GROUP[8] ENTITY[6] ENTITY[13] (
+ judging(ATTRIB[7]) ∧
+  men(GROUP[9]) ∧
+   is_heights_POS(GROUP[8], GROUP[9]) ∧
+    eye(ENTITY[10]) ∧
+     is_by(ENTITY[6], ENTITY[10]) ∧ is_element_of(ENTITY[6], GROUP[8]) ∧ is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      CONJ_or(∃ ENTITY[2] (recruiting_sergeant(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+       ∃ ATTRIB[4] EVENT[11] ENTITY[3] (
+        other(ATTRIB[4]) ∧
+         accustomed(EVENT[11], ENTITY[3]) ∧ to(EVENT[11]) = ENTITY[6] ∧ is_person_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+          past(EVENT[11]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+       MD_would(∃ REF2[18] REF1[15] EVENT[16] EVENT[12] ENTITY[14] (
+             REF1[15] = his ∧
+              is_gauntness_POS(ENTITY[14], REF1[15]) ∧
+               REF2[18] = he ∧
+                ADV_chiefly(EVENT[16]) ∧
+                 is_before(EVENT[16], EVENT[12]) ∧
+                  have_discerned(EVENT[12], GROUP[1],
+                   CONJ_and(was_owing(EVENT[16], ENTITY[13]) ∧ to(EVENT[16]) = ENTITY[14],
+                    NOT_MORE ENTITY[20] ENTITY[19] ((CD_five-feet-eight_or_nine(ENTITY[20]) ∧ is_than(ENTITY[19], ENTITY[20])),
+                     ∃ EVENT[21] (
+                      is_before(EVENT[21], EVENT[12]) ∧ copula(EVENT[21], REF2[18], ENTITY[19]))))))))
+
+# ::id 69_fiction_HARDY-1883;AT14-1;NE
+# ::snt Notwithstanding the regularity of his tread , there was caution in it , as in that of one who mentally feels his way ;
+∃ REF2[5] REF3[10] REF1[3] EVENT[13] ENTITY[4] EVENT[11] ENTITY[2] ENTITY[9] ENTITY[7] ENTITY[6] ENTITY[1] (
+ REF1[3] = his ∧
+  is_tread_POS(ENTITY[2], REF1[3]) ∧
+   is_regularity_of(ENTITY[1], ENTITY[2]) ∧
+    REF3[10] = his ∧
+     is_way_POS(ENTITY[9], REF3[10]) ∧
+      (CD_one(ENTITY[7]), feels(EVENT[11], ENTITY[7], ENTITY[9])) ∧
+       is_of(ENTITY[6], ENTITY[7]) ∧
+        ADV_mentally(EVENT[11]) ∧
+         caution(ENTITY[4]) ∧
+          REF2[5] = it ∧
+           past(EVENT[13]) ∧
+            copula(EVENT[13], ENTITY[4]) ∧ as_in(EVENT[13]) = ENTITY[6] ∧
+             in(EVENT[13]) = REF2[5] ∧ Notwithstanding(EVENT[13]) = ENTITY[1])
+
+# ::id 70_fiction_HARDY-1883;AT14-2;NE
+# ::snt and despite the fact that it was not a black coat nor a dark garment of any sort that he wore , there was something about him which suggested that he naturally belonged to the black-coated tribes of men .
+∃ ATTRIB[19] REF1[4] EVENT[5] ENTITY[2] GROUP[20] GROUP[18] ENTITY[1] (
+ REF1[4] = he ∧
+  wore(EVENT[5], REF1[4], ENTITY[2]) ∧
+   is_fact_THAT(ENTITY[1],
+    ¬ ∃ EVENT[12] GROUP[6] (
+          CONJ_nor(∃ ATTRIB[8] ENTITY[7] (black(ATTRIB[8]) ∧ is_coat_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+           ∃ ATTRIB[10] ENTITY[9] (
+            dark(ATTRIB[10]) ∧
+             ANY ENTITY[11] (sort(ENTITY[11]), is_garment_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧ is_garment_of(ENTITY[9], ENTITY[11])) ∧
+              is_element_of(ENTITY[9], GROUP[6]))) ∧
+           past(EVENT[12]) ∧ copula(EVENT[12], ENTITY[2], GROUP[6]))) ∧
+    black-coated(ATTRIB[19]) ∧
+     men(GROUP[20]) ∧
+      is_tribes_of(GROUP[18], GROUP[20]) ∧ is_tribes_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧
+       past(EVENT[5]) ∧
+        SOME REF3[17] REF2[14] EVENT[21] EVENT[16] ENTITY[13] (
+         (REF2[14] = him ∧ REF3[17] = he ∧
+          suggested(EVENT[16], ENTITY[13], belonged(EVENT[21], REF3[17]) ∧ to(EVENT[21]) = GROUP[18]) ∧
+           is_thing_about(ENTITY[13], REF2[14]) ∧ ADV_naturally(EVENT[21]) ∧ is_before(EVENT[21], EVENT[16]) ∧
+          past(EVENT[16])),
+         ∃ EVENT[23] (past(EVENT[23]) ∧ copula(EVENT[23], ENTITY[13]) ∧ despite(EVENT[23]) = ENTITY[1])))
+
+# ::id 71_fiction_HARDY-1883;AT14-3;NE
+# ::snt His clothes were of fustian ,
+∃ REF1[2] EVENT[4] ENTITY[3] GROUP[1] (
+ REF1[2] = his ∧
+  is_clothes_POS(GROUP[1], REF1[2]) ∧
+   fustian(ENTITY[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], GROUP[1]) ∧ of(EVENT[4]) = ENTITY[3])
+
+# ::id 72_fiction_HARDY-1883;AT14-3;NE
+# ::snt and his boots hobnailed ,
+∃ REF1[2] EVENT[3] GROUP[1] (REF1[2] = his ∧ is_boots_POS(GROUP[1], REF1[2]) ∧ past(EVENT[3]) ∧ hobnailed(EVENT[3], _, GROUP[1]))
+
+# ::id 73_fiction_HARDY-1883;AT14-4;NE
+# ::snt yet in his progress he showed not the mud-accustomed bearing of hobnailed and fustianed peasantry .
+∃ REF2[3] REF1[2] ATTRIB[10] ATTRIB[8] ATTRIB[5] ENTITY[1] ENTITY[7] ENTITY[9] GROUP[6] ENTITY[4] (
+ mud-accustomed(ATTRIB[5]) ∧
+  hobnailed(ATTRIB[8]) ∧
+   is_peasantry_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    fustianed(ATTRIB[10]) ∧
+     is_peasantry_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+      is_element_of(ENTITY[7], GROUP[6]) ∧ is_element_of(ENTITY[9], GROUP[6]) ∧
+       is_bearing_of(ENTITY[4], GROUP[6]) ∧ is_bearing_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+        REF1[2] = his ∧
+         is_progress_POS(ENTITY[1], REF1[2]) ∧
+          REF2[3] = he ∧
+           ¬ ∃ EVENT[11] (
+                 past(EVENT[11]) ∧
+                  showed(EVENT[11], REF2[3], ENTITY[4]) ∧ in(EVENT[11]) = ENTITY[1]))
+
+# ::id 74_fiction_HARDY-1883;AT15-1;NE
+# ::snt By the time that he had arrived abreast of the shepherd 's premises the rain came down , or rather came along , with yet more determined violence .
+∃ ATTRIB[9] REF1[3] ENTITY[8] EVENT[10] EVENT[11] EVENT[6] ENTITY[5] GROUP[4] ENTITY[7] ENTITY[1] (
+ REF1[3] = he ∧
+  shepherd(ENTITY[5]) ∧
+   is_premises_POS(GROUP[4], ENTITY[5]) ∧
+    had_arrived(EVENT[6], REF1[3], ENTITY[1]) ∧ abreast_of(EVENT[6]) = GROUP[4] ∧ time(ENTITY[1]) ∧
+     rain(ENTITY[7]) ∧
+      past(EVENT[6]) ∧
+       past(EVENT[10]) ∧
+        ADV_rather(EVENT[11]) ∧
+         DIR_along(EVENT[11]) ∧
+          past(EVENT[11]) ∧
+           yet_more_determined(ATTRIB[9]) ∧
+            is_violence_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+             CONJ_or(came_down(EVENT[10], ENTITY[7]) ∧ with(EVENT[10]) = ENTITY[8] ∧
+                   By(EVENT[10]) = ENTITY[1],
+              came(EVENT[11], ENTITY[7]) ∧ with(EVENT[11]) = ENTITY[8] ∧
+               By(EVENT[11]) = ENTITY[1]))
+
+# ::id 75_fiction_HARDY-1883;AT15-2;NE
+# ::snt The outskirts of the little settlement partially broke the force of wind and rain ,
+∃ ATTRIB[3] EVENT[8] ENTITY[2] ENTITY[6] ENTITY[7] GROUP[5] ENTITY[4] GROUP[1] (
+ little(ATTRIB[3]) ∧
+  is_settlement_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_outskirts_of(GROUP[1], ENTITY[2]) ∧
+    wind(ENTITY[6]) ∧
+     rain(ENTITY[7]) ∧
+      is_element_of(ENTITY[6], GROUP[5]) ∧ is_element_of(ENTITY[7], GROUP[5]) ∧
+       is_force_of(ENTITY[4], GROUP[5]) ∧
+        ADV_partially(EVENT[8]) ∧ past(EVENT[8]) ∧ broke(EVENT[8], GROUP[1], ENTITY[4]))
+
+# ::id 76_fiction_HARDY-1883;AT15-3;NE
+# ::snt and this induced him to stand still .
+∃ REF1[2] EVENT[4] EVENT[3] ENTITY[1] (
+ REF1[2] = him ∧
+  ADV_still(EVENT[4]) ∧ past(EVENT[3]) ∧ induced(EVENT[3], ENTITY[1], REF1[2], stand(EVENT[4], REF1[2])))
+
+# ::id 77_fiction_HARDY-1883;AT15-4;NE
+# ::snt The most salient of the shepherd 's domestic erections was an empty sty at the forward corner of his hedgeless garden , for in these latitudes the principle of masking the homelier features of your establishment by a conventional frontage was unknown .
+∃ ATTRIB[24] SITUATION[13] ATTRIB[7] ATTRIB[22] REF2[20] ATTRIB[18] SITUATION[16] ATTRIB[12] REF1[11] ATTRIB[9] ATTRIB[5] ATTRIB[2] EVENT[25] EVENT[26] ENTITY[6] EVENT[23] ENTITY[4] GROUP[3] ENTITY[10] ENTITY[19] ENTITY[21] GROUP[17] ENTITY[15] GROUP[14] ENTITY[8] ENTITY[1] (
+ most_salient(ATTRIB[2]) ∧
+  shepherd(ENTITY[4]) ∧
+   domestic(ATTRIB[5]) ∧
+    is_erections_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_erections_POS(GROUP[3], ENTITY[4]) ∧
+     is_element_of(ENTITY[1], GROUP[3]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      forward(ATTRIB[9]) ∧
+       REF1[11] = his ∧
+        hedgeless(ATTRIB[12]) ∧
+         is_garden_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_garden_POS(ENTITY[10], REF1[11]) ∧
+          is_corner_of(ENTITY[8], ENTITY[10]) ∧ is_corner_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+           latitudes(GROUP[14]) ∧
+            homelier(ATTRIB[18]) ∧
+             REF2[20] = your ∧
+              is_establishment_POS(ENTITY[19], REF2[20]) ∧
+               is_features_ATTRIBUTE(GROUP[17], ATTRIB[18]) ∧ is_features_of(GROUP[17], ENTITY[19]) ∧
+                conventional(ATTRIB[22]) ∧
+                 is_frontage_ATTRIBUTE(ENTITY[21], ATTRIB[22]) ∧
+                  is_FACT_THAT(SITUATION[16],
+                   masking(EVENT[23], _, GROUP[17]) ∧ by(EVENT[23]) = ENTITY[21]) ∧
+                   is_principle_of(ENTITY[15], SITUATION[16]) ∧
+                    empty(ATTRIB[7]) ∧
+                     is_sty_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+                      unknown(ATTRIB[24]) ∧
+                       is_FACT_THAT(SITUATION[13],
+                        copula(EVENT[25], ENTITY[15], ATTRIB[24]) ∧ in(EVENT[25]) = GROUP[14]) ∧
+                        past(EVENT[25]) ∧
+                         past(EVENT[26]) ∧
+                          copula(EVENT[26], ENTITY[1], ENTITY[6]) ∧ for(EVENT[26]) = SITUATION[13] ∧
+                           at(EVENT[26]) = ENTITY[8])
+
+# ::id 78_fiction_HARDY-1883;AT15-5;NE
+# ::snt The traveller 's eye was attracted to this small building by the pallid shine of the wet slates that covered it .
+∃ REF1[10] ATTRIB[8] ATTRIB[6] ATTRIB[4] EVENT[12] ENTITY[1] EVENT[11] ENTITY[2] GROUP[7] ENTITY[5] ENTITY[3] (
+ traveller(ENTITY[2]) ∧
+  small(ATTRIB[4]) ∧
+   is_building_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    pallid(ATTRIB[6]) ∧
+     wet(ATTRIB[8]) ∧
+      REF1[10] = it ∧
+       covered(EVENT[11], GROUP[7], REF1[10]) ∧ is_slates_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+        is_shine_of(ENTITY[5], GROUP[7]) ∧ is_shine_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+         past(EVENT[11]) ∧
+          is_eye_POS(ENTITY[1], ENTITY[2]) ∧
+           past(EVENT[12]) ∧ attracted(EVENT[12], ENTITY[5], ENTITY[1]) ∧ to(EVENT[12]) = ENTITY[3])
+
+# ::id 79_fiction_HARDY-1883;AT15-6;NE
+# ::snt He turned aside , and , finding it empty , stood under the pent-roof for shelter .
+∃ ATTRIB[5] REF2[4] REF1[1] EVENT[2] EVENT[6] EVENT[3] EVENT[9] ENTITY[8] ENTITY[7] (
+ pent-roof(ENTITY[7]) ∧
+  REF1[1] = he ∧
+   REF2[4] = it ∧
+    empty(ATTRIB[5]) ∧
+     shelter(ENTITY[8]) ∧
+      past(EVENT[2]) ∧
+       past(EVENT[9]) ∧
+        CONJ_and(turned_aside(EVENT[2], REF1[1]),
+         CONJ_and(finding(EVENT[3], REF1[1], xxx(EVENT[6], REF2[4], ATTRIB[5])),
+          stood(EVENT[9], REF1[1]) ∧ for(EVENT[9]) = ENTITY[8] ∧ under(EVENT[9]) = ENTITY[7])))
+
+# ::id 80_fiction_HARDY-1883;AT16-1;NE
+# ::snt While he stood , the boom of the serpent within the adjacent house , and the lesser strains of the fiddler , reached the spot as an accompaniment to the surging hiss of the flying rain on the sod , its louder beating on the cabbage-leaves of the garden , on the eight or ten beehives just discernible by the path , and its dripping from the eaves into a row of buckets and pans that had been placed under the walls of the cottage .
+∃ REF1[1] ATTRIB[25] ATTRIB[17] ATTRIB[15] ATTRIB[9] ATTRIB[7] EVENT[2] EVENT[39] GROUP[13] ENTITY[12] GROUP[3] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[10] GROUP[8] ENTITY[18] ENTITY[16] ENTITY[14] ENTITY[23] GROUP[22] ENTITY[26] GROUP[24] ENTITY[37] GROUP[36] GROUP[29] ENTITY[11] (
+ adjacent(ATTRIB[7]) ∧
+  is_house_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   is_serpent_within(ENTITY[5], ENTITY[6]) ∧
+    is_boom_of(ENTITY[4], ENTITY[5]) ∧
+     lesser(ATTRIB[9]) ∧
+      fiddler(ENTITY[10]) ∧
+       is_strains_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧ is_strains_of(GROUP[8], ENTITY[10]) ∧
+        spot(ENTITY[11]) ∧
+         surging(ATTRIB[15]) ∧
+          flying(ATTRIB[17]) ∧
+           is_rain_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+            sod(ENTITY[18]) ∧
+             is_hiss_on(ENTITY[14], ENTITY[18]) ∧ is_hiss_of(ENTITY[14], ENTITY[16]) ∧ is_hiss_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+              garden(ENTITY[23]) ∧
+               is_cabbage-leaves_of(GROUP[22], ENTITY[23]) ∧
+                just_discernible(ATTRIB[25]) ∧
+                 path(ENTITY[26]) ∧
+                  (CD_eight_or_ten(GROUP[24]), is_beehives_ATTRIBUTE(GROUP[24], ATTRIB[25]) ∧ is_beehives_by(GROUP[24], ENTITY[26])) ∧
+                   eaves(GROUP[29]) ∧
+                    cottage(ENTITY[37]) ∧
+                     is_walls_of(GROUP[36], ENTITY[37]) ∧
+                      REF1[1] = he ∧
+                       is_element_of(ENTITY[4], GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[3]) ∧
+                        is_element_of(ENTITY[14], GROUP[13]) ∧
+                         ∃ ATTRIB[21] REF2[20] ENTITY[19] (
+                          REF2[20] = its ∧
+                           louder(ATTRIB[21]) ∧
+                            is_beating_on(ENTITY[19], GROUP[22]) ∧ is_beating_ATTRIBUTE(ENTITY[19], ATTRIB[21]) ∧
+                             is_beating_POS(ENTITY[19], REF2[20]) ∧
+                             is_beating_on(ENTITY[19], GROUP[24]) ∧ is_beating_ATTRIBUTE(ENTITY[19], ATTRIB[21]) ∧
+                              is_beating_POS(ENTITY[19], REF2[20]) ∧ is_element_of(ENTITY[19], GROUP[13])) ∧
+                         ∃ REF3[28] EVENT[38] GROUP[32] ENTITY[31] ENTITY[30] ENTITY[27] (
+                          REF3[28] = its ∧
+                           ∃ GROUP[33] (buckets(GROUP[33]) ∧ is_subset_of_or_equal_to(GROUP[33], GROUP[32])) ∧
+                            ∃ GROUP[34] (pans(GROUP[34]) ∧ is_subset_of_or_equal_to(GROUP[34], GROUP[32])) ∧
+                            had_placed(EVENT[38], _, ENTITY[31]) ∧ under(EVENT[38]) = GROUP[36] ∧
+                             is_equals(ENTITY[31], GROUP[32]) ∧
+                             is_row_of(ENTITY[30], ENTITY[31]) ∧
+                              is_dripping_POS(ENTITY[27], REF3[28]) ∧ is_dripping_into(ENTITY[27], ENTITY[30]) ∧
+                               is_dripping_from(ENTITY[27], GROUP[29]) ∧
+                               past(EVENT[38]) ∧ is_element_of(ENTITY[27], GROUP[13])) ∧
+                         is_accompaniment_to(ENTITY[12], GROUP[13]) ∧
+                          past(EVENT[2]) ∧
+                           past(EVENT[39]) ∧
+                            CRD_While(stood(EVENT[2], REF1[1]),
+                             reached(EVENT[39], GROUP[3], ENTITY[11]) ∧ as(EVENT[39]) = ENTITY[12]))
+
+# ::id 81_fiction_HARDY-1883;AT16-2;NE
+# ::snt For at Higher Crowstairs , as at all such elevated domiciles , the grand difficulty of housekeeping was an insufficiency of water ;
+∃ ATTRIB[5] ENTITY[6] ENTITY[4] (
+ grand(ATTRIB[5]) ∧
+  housekeeping(ENTITY[6]) ∧
+   is_difficulty_of(ENTITY[4], ENTITY[6]) ∧ is_difficulty_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    ALL ATTRIB[3] ATTRIB[2] GROUP[1] (
+     (such(ATTRIB[2]) ∧ elevated(ATTRIB[3]) ∧
+      is_domiciles_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_domiciles_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+     ∃ EVENT[9] ENTITY[8] ENTITY[7] (
+      water(ENTITY[8]) ∧
+       is_insufficiency_of(ENTITY[7], ENTITY[8]) ∧
+        past(EVENT[9]) ∧
+         copula(EVENT[9], ENTITY[4], ENTITY[7]) ∧ as_at(EVENT[9]) = GROUP[1] ∧
+          at(EVENT[9]) = ENTITY[Higher_Crowstairs])))
+
+# ::id 82_fiction_HARDY-1883;AT16-3;NE
+# ::snt and a casual rainfall was utilized by turning out , as catchers , every utensil that the house contained .
+∃ LGS[3] ATTRIB[2] EVENT[10] GROUP[4] ENTITY[1] ENTITY[7] (
+ house(ENTITY[7]) ∧
+  casual(ATTRIB[2]) ∧
+   is_rainfall_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    catchers(GROUP[4]) ∧
+     is_FACT_THAT(LGS[3],
+      ∀ EVENT[8] ENTITY[5] ((contained(EVENT[8], ENTITY[7], ENTITY[5]) ∧ utensil(ENTITY[5]) ∧ past(EVENT[8])) →
+       ∃ EVENT[9] (turning_out(EVENT[9], ENTITY[1], ENTITY[5]) ∧ as(EVENT[9]) = GROUP[4]))) ∧
+      past(EVENT[10]) ∧ utilized(EVENT[10], LGS[3], ENTITY[1]))
+
+# ::id 83_fiction_HARDY-1883;AT16-4;NE
+# ::snt Some queer stories might be told of the contrivances for economy in suds and dish-waters that are absolutely necessitated in upland habitations during the droughts of summer .
+∃ ATTRIB[10] EVENT[13] GROUP[6] GROUP[7] GROUP[5] ENTITY[12] GROUP[11] GROUP[9] ENTITY[4] GROUP[3] (
+ suds(GROUP[6]) ∧
+  dish-waters(GROUP[7]) ∧
+   is_subset_of_or_equal_to(GROUP[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+    is_economy_in(ENTITY[4], GROUP[5]) ∧
+     upland(ATTRIB[10]) ∧
+      is_habitations_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+       summer(ENTITY[12]) ∧
+        is_droughts_of(GROUP[11], ENTITY[12]) ∧
+         necessitated(EVENT[13], _, GROUP[3]) ∧ during(EVENT[13]) = GROUP[11] ∧
+          in(EVENT[13]) = GROUP[9] ∧ is_contrivances_for(GROUP[3], ENTITY[4]) ∧
+          ADV_absolutely(EVENT[13]) ∧
+           SOME ATTRIB[2] GROUP[1] ((queer(ATTRIB[2]) ∧ is_stories_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+            MD_might(∃ EVENT[15] (told(EVENT[15], _, GROUP[1]) ∧ of(EVENT[15]) = GROUP[3]))))
+
+# ::id 84_fiction_HARDY-1883;AT16-5;NE
+# ::snt But at this season there were no such exigencies ;
+∃ ENTITY[1] (
+ season(ENTITY[1]) ∧
+  ¬ ∃ ATTRIB[3] EVENT[4] GROUP[2] (
+        such(ATTRIB[3]) ∧
+         is_exigencies_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+          past(EVENT[4]) ∧ copula(EVENT[4], GROUP[2]) ∧ at(EVENT[4]) = ENTITY[1]))
+
+# ::id 85_fiction_HARDY-1883;AT16-6;NE
+# ::snt a mere acceptance of what the skies bestowed was sufficient for an abundant store .
+∃ ATTRIB[9] ATTRIB[7] ATTRIB[2] EVENT[6] EVENT[10] ENTITY[3] ENTITY[8] ENTITY[1] GROUP[5] (
+ skies(GROUP[5]) ∧
+  mere(ATTRIB[2]) ∧
+   bestowed(EVENT[6], GROUP[5], ENTITY[3]) ∧
+    is_acceptance_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_acceptance_of(ENTITY[1], ENTITY[3]) ∧
+     abundant(ATTRIB[9]) ∧
+      is_store_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       is_sufficient_for(ATTRIB[7], ENTITY[8]) ∧
+        past(EVENT[6]) ∧
+         past(EVENT[10]) ∧ copula(EVENT[10], ENTITY[1]) ∧ ATTRIBUTE(EVENT[10]) = ATTRIB[7])
+
+# ::id 86_fiction_HARDY-1883;AT17-1;NE
+# ::snt At last the notes of the serpent ceased
+∃ ATTRIB[2] EVENT[5] ENTITY[1] ENTITY[4] GROUP[3] (
+ serpent(ENTITY[4]) ∧
+  is_notes_of(GROUP[3], ENTITY[4]) ∧
+   last(ATTRIB[2]) ∧
+    is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     past(EVENT[5]) ∧ ceased(EVENT[5], GROUP[3]) ∧ At(EVENT[5]) = ENTITY[1])
+
+# ::id 87_fiction_HARDY-1883;AT17-1;NE
+# ::snt and the house was silent .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (house(ENTITY[1]) ∧ silent(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 88_fiction_HARDY-1883;AT17-2;NE
+# ::snt This cessation of activity aroused the solitary pedestrian from the reverie into which he had lapsed ,
+∃ REF1[7] ATTRIB[4] EVENT[9] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[3] ENTITY[1] (
+ activity(ENTITY[2]) ∧
+  is_cessation_of(ENTITY[1], ENTITY[2]) ∧
+   solitary(ATTRIB[4]) ∧
+    is_pedestrian_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     REF1[7] = he ∧
+      had_lapsed(EVENT[8], REF1[7]) ∧ into(EVENT[8]) = ENTITY[5] ∧ reverie(ENTITY[5]) ∧
+       past(EVENT[8]) ∧
+        past(EVENT[9]) ∧ aroused(EVENT[9], ENTITY[1], ENTITY[3]) ∧ from(EVENT[9]) = ENTITY[5])
+
+# ::id 89_fiction_HARDY-1883;AT17-3;NE
+# ::snt and , emerging from the shed , with an apparently new intention , he walked up the path to the house-door .
+∃ ATTRIB[4] REF1[1] EVENT[5] EVENT[8] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] (
+ shed(ENTITY[2]) ∧
+  house-door(ENTITY[7]) ∧
+   is_path_to(ENTITY[6], ENTITY[7]) ∧
+    REF1[1] = he ∧
+     apparently_new(ATTRIB[4]) ∧
+      is_intention_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       past(EVENT[8]) ∧
+        CONJ_and(emerging(EVENT[5], REF1[1]) ∧ with(EVENT[5]) = ENTITY[3] ∧ from(EVENT[5]) = ENTITY[2],
+         walked(EVENT[8], REF1[1]) ∧ up(EVENT[8]) = ENTITY[6]))
+
+# ::id 90_fiction_HARDY-1883;AT17-4;NE
+# ::snt Arrived here , his first act was to kneel down on a large stone beside the row of vessels , and to drink a copious draught from one of them .
+∃ REF2[15] ATTRIB[13] ATTRIB[8] ATTRIB[3] REF1[2] EVENT[4] EVENT[11] EVENT[16] EVENT[6] ENTITY[7] ENTITY[14] ENTITY[12] ENTITY[1] GROUP[10] ENTITY[9] (
+ vessels(GROUP[10]) ∧
+  is_row_of(ENTITY[9], GROUP[10]) ∧
+   REF1[2] = his ∧
+    first(ATTRIB[3]) ∧
+     is_act_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_act_POS(ENTITY[1], REF1[2]) ∧
+      large(ATTRIB[8]) ∧
+       is_stone_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+        copious(ATTRIB[13]) ∧
+         is_draught_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+          REF2[15] = them ∧
+           (CD_one(ENTITY[14]), is_of(ENTITY[14], REF2[15])) ∧
+            LOC_here(EVENT[4]) ∧
+             past(EVENT[6]) ∧
+              CONJ_and(arrived(EVENT[4], ENTITY[1]),
+               copula(EVENT[6], ENTITY[1],
+                CONJ_and(kneel_down(EVENT[11], ENTITY[1]) ∧ beside(EVENT[11]) = ENTITY[9] ∧
+                      on(EVENT[11]) = ENTITY[7],
+                 drink(EVENT[16], ENTITY[1], ENTITY[12]) ∧ from(EVENT[16]) = ENTITY[14]))))
+
+# ::id 91_fiction_HARDY-1883;AT17-5;NE
+# ::snt Having quenched his thirst he rose and lifted his hand to knock , but paused with his eye upon the panel .
+∃ REF4[11] REF3[7] REF2[3] REF1[1] EVENT[4] EVENT[5] EVENT[9] EVENT[8] EVENT[13] ENTITY[2] ENTITY[6] ENTITY[10] ENTITY[12] (
+ panel(ENTITY[12]) ∧
+  REF1[1] = he ∧
+   REF2[3] = his ∧
+    is_thirst_POS(ENTITY[2], REF2[3]) ∧
+     REF3[7] = his ∧
+      is_hand_POS(ENTITY[6], REF3[7]) ∧
+       REF4[11] = his ∧
+        is_eye_POS(ENTITY[10], REF4[11]) ∧
+         past(EVENT[5]) ∧
+          past(EVENT[8]) ∧
+           past(EVENT[13]) ∧
+            CONJ_and(having_quenched(EVENT[4], REF1[1], ENTITY[2]),
+             CONJ_but(CONJ_and(rose(EVENT[5], REF1[1]),
+                   lifted(EVENT[8], REF1[1], ENTITY[6], knock(EVENT[9], ENTITY[6]))),
+              paused(EVENT[13], REF1[1]) ∧ upon(EVENT[13]) = ENTITY[12] ∧
+               with(EVENT[13]) = ENTITY[10])))
+
+# ::id 92_fiction_HARDY-1883;AT17-6;NE
+# ::snt Since the dark surface of the wood revealed absolutely nothing , it was evident that he must be mentally looking through the door , as if he wished to measure thereby all the possibilities that a house of this sort might include , and how they might bear upon the question of his entry .
+∃ REF2[14] SITUATION[13] ATTRIB[12] REF1[8] SITUATION[7] SITUATION[1] REF4[26] ATTRIB[3] EVENT[29] EVENT[15] EVENT[31] GROUP[16] ENTITY[4] ENTITY[2] ENTITY[9] ENTITY[19] ENTITY[18] ENTITY[25] ENTITY[24] (
+ dark(ATTRIB[3]) ∧
+  wood(ENTITY[4]) ∧
+   is_surface_of(ENTITY[2], ENTITY[4]) ∧ is_surface_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    door(ENTITY[9]) ∧
+     sort(ENTITY[19]) ∧
+      is_house_of(ENTITY[18], ENTITY[19]) ∧
+       REF4[26] = his ∧
+        is_entry_POS(ENTITY[25], REF4[26]) ∧
+         is_question_of(ENTITY[24], ENTITY[25]) ∧
+          is_FACT_THAT(SITUATION[1],
+           ¬ ∃ EVENT[6] ENTITY[5] (
+                 ADV_absolutely(ENTITY[5]) ∧ thing(ENTITY[5]) ∧
+                  past(EVENT[6]) ∧ revealed(EVENT[6], ENTITY[2], ENTITY[5]))) ∧
+           REF1[8] = he ∧
+            is_FACT_THAT(SITUATION[7],
+             MD_must(∃ EVENT[10] (
+                   ADV_mentally(EVENT[10]) ∧
+                    be_looking(EVENT[10], REF1[8]) ∧ through(EVENT[10]) = ENTITY[9]))) ∧
+             evident(ATTRIB[12]) ∧
+              REF2[14] = he ∧
+               ALL GROUP[17] (is_possibilities_THAT(GROUP[17], MD_might(∃ EVENT[20] include(EVENT[20], ENTITY[18]))), is_subset_of_or_equal_to(GROUP[17], GROUP[16])) ∧
+                ∃ SITUATION[28] REF3[23] ENTITY[21] (
+                 REF3[23] = they ∧
+                  is_FACT_THAT(SITUATION[28],
+                   MD_might(∃ EVENT[27] (bear(EVENT[27], REF3[23]) ∧ upon(EVENT[27]) = ENTITY[24]))) ∧
+                   is_ADV(SITUATION[28], ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[16])) ∧
+                is_FACT_THAT(SITUATION[13], wished(EVENT[15], REF2[14], measure(EVENT[29], REF2[14], GROUP[16]))) ∧
+                 ADV_thereby(EVENT[29]) ∧
+                  past(EVENT[15]) ∧
+                   past(EVENT[31]) ∧
+                    copula(EVENT[31], SITUATION[7], ATTRIB[12]) ∧ as_if(EVENT[31]) = SITUATION[13] ∧
+                     Since(EVENT[31]) = SITUATION[1])
+
+# ::id 93_fiction_HARDY-1883;AT18-1;NE
+# ::snt In his indecision he turned and surveyed the scene around .
+∃ REF2[3] REF1[2] EVENT[4] EVENT[6] ENTITY[1] ENTITY[5] (
+ scene(ENTITY[5]) ∧
+  REF1[2] = his ∧
+   is_indecision_POS(ENTITY[1], REF1[2]) ∧
+    REF2[3] = he ∧
+     past(EVENT[4]) ∧
+      ADV_around(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        CONJ_and(turned(EVENT[4], REF2[3]) ∧ In(EVENT[4]) = ENTITY[1],
+         surveyed(EVENT[6], REF2[3], ENTITY[5]) ∧ In(EVENT[6]) = ENTITY[1]))
+
+# ::id 94_fiction_HARDY-1883;AT18-2;NE
+# ::snt Not a soul was anywhere visible .
+NOT ENTITY[1] (soul(ENTITY[1]), ∃ ATTRIB[2] EVENT[3] (anywhere_visible(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1], ATTRIB[2])))
+
+# ::id 95_fiction_HARDY-1883;AT18-3;NE
+# ::snt The garden-path stretched downward from his feet , gleaming like the track of a snail ;
+∃ ATTRIB[4] REF1[3] EVENT[9] EVENT[8] EVENT[7] GROUP[2] ENTITY[6] ENTITY[5] ENTITY[1] (
+ garden-path(ENTITY[1]) ∧
+  snail(ENTITY[6]) ∧
+   is_track_of(ENTITY[5], ENTITY[6]) ∧
+    REF1[3] = his ∧
+     is_feet_POS(GROUP[2], REF1[3]) ∧
+      is_like_comp(ATTRIB[4], ENTITY[5]) ∧
+       past(EVENT[9]) ∧
+        CONJ_and(stretched_downward(EVENT[9], ENTITY[1]) ∧ from(EVENT[9]) = GROUP[2],
+         CONJ_and(gleaming(EVENT[8], ENTITY[1]), xxx(EVENT[7], ENTITY[1], ATTRIB[4]))))
+
+# ::id 96_fiction_HARDY-1883;AT18-4;NE
+# ::snt the roof of the little well -LRB- mostly dry -RRB- , the well-cover , the top rail of the garden-gate , were varnished with the same dull liquid glaze ; while , far away in the vale , a faint whiteness of more than usual extent showed that the rivers were high in the meads .
+∃ SITUATION[24] ATTRIB[21] ATTRIB[15] ATTRIB[12] ATTRIB[11] ATTRIB[8] ATTRIB[5] ATTRIB[4] EVENT[23] EVENT[19] EVENT[25] ENTITY[14] GROUP[1] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[9] ENTITY[7] ENTITY[13] GROUP[22] GROUP[20] ENTITY[10] (
+ little(ATTRIB[4]) ∧
+  mostly_dry(ATTRIB[5]) ∧
+   is_well_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_well_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_roof_of(ENTITY[2], ENTITY[3]) ∧
+     well-cover(ENTITY[6]) ∧
+      top(ATTRIB[8]) ∧
+       garden-gate(ENTITY[9]) ∧
+        is_rail_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_rail_of(ENTITY[7], ENTITY[9]) ∧
+         same(ATTRIB[11]) ∧
+          dull(ATTRIB[12]) ∧
+           is_liquid_glaze_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_liquid_glaze_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+            vale(ENTITY[13]) ∧
+             rivers(GROUP[20]) ∧
+              meads(GROUP[22]) ∧
+               is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[6], GROUP[1]) ∧ is_element_of(ENTITY[7], GROUP[1]) ∧
+                faint(ATTRIB[15]) ∧
+                 MORE ATTRIB[18] ENTITY[17] ENTITY[16] ((usual(ATTRIB[18]) ∧ is_extent_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧ is_than(ENTITY[16], ENTITY[17])),
+                  is_whiteness_of(ENTITY[14], ENTITY[16]) ∧ is_whiteness_ATTRIBUTE(ENTITY[14], ATTRIB[15])) ∧
+                  is_high_in(ATTRIB[21], GROUP[22]) ∧
+                   is_LOC_far_away_in(SITUATION[24], ENTITY[13]) ∧
+                    is_before(EVENT[23], EVENT[19]) ∧
+                     past(EVENT[19]) ∧
+                      past(EVENT[25]) ∧
+                       CRD_while(is_FACT_THAT(SITUATION[24],
+                             showed(EVENT[19], ENTITY[14], copula(EVENT[23], GROUP[20], ATTRIB[21]))),
+                        varnished(EVENT[25], _, GROUP[1]) ∧ with(EVENT[25]) = ENTITY[10]))
+
+# ::id 97_fiction_HARDY-1883;AT18-5;NE
+# ::snt Beyond all this winked a few bleared lamplights through the beating drops -- lights that denoted the situation of the county-town from which he had appeared to come .
+∃ ATTRIB[14] REF1[7] EVENT[9] EVENT[8] ENTITY[5] ENTITY[4] GROUP[13] (
+ REF1[7] = he ∧
+  had_appeared(EVENT[8], REF1[7], come(EVENT[9], REF1[7])) ∧ from(EVENT[8]) = ENTITY[5] ∧
+   county-town(ENTITY[5]) ∧
+   is_situation_of(ENTITY[4], ENTITY[5]) ∧
+    beating(ATTRIB[14]) ∧
+     is_drops_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+      past(EVENT[8]) ∧
+       ALL ENTITY[1] FEW ATTRIB[12] GROUP[11] ((bleared(ATTRIB[12]) ∧ is_lamplights_ATTRIBUTE(GROUP[11], ATTRIB[12])),
+        ∃ EVENT[10] EVENT[15] ENTITY[2] (
+         denoted(EVENT[10], ENTITY[2], ENTITY[4]) ∧ lights(ENTITY[2]) ∧
+          is_-GROUP-_namely(GROUP[11], ENTITY[2]) ∧
+           past(EVENT[10]) ∧
+            past(EVENT[15]) ∧
+             winked(EVENT[15], GROUP[11]) ∧ through(EVENT[15]) = GROUP[13] ∧
+              Beyond(EVENT[15]) = ENTITY[1])))
+
+# ::id 98_fiction_HARDY-1883;AT18-6;NE
+# ::snt The absence of all notes of life in that direction seemed to clinch his intentions ,
+∃ REF1[7] EVENT[8] EVENT[5] GROUP[6] ENTITY[4] ENTITY[1] (
+ direction(ENTITY[4]) ∧
+  ALL ENTITY[3] GROUP[2] ((life(ENTITY[3]) ∧ is_notes_of(GROUP[2], ENTITY[3])),
+   is_absence_in(ENTITY[1], ENTITY[4]) ∧ is_absence_of(ENTITY[1], GROUP[2])) ∧
+   REF1[7] = his ∧
+    is_intentions_POS(GROUP[6], REF1[7]) ∧ past(EVENT[5]) ∧ seemed(EVENT[5], clinch(EVENT[8], ENTITY[1], GROUP[6])))
+
+# ::id 99_fiction_HARDY-1883;AT18-6;NE
+# ::snt and he knocked at the door .
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ door(ENTITY[2]) ∧
+  REF1[1] = he ∧ past(EVENT[3]) ∧ knocked(EVENT[3], REF1[1]) ∧ at(EVENT[3]) = ENTITY[2])
+
+# ::id 100_fiction_HARDY-1883;AT19-1;NE
+# ::snt Within , a desultory chat had taken the place of movement and musical sound .
+∃ ATTRIB[2] ATTRIB[7] EVENT[8] ENTITY[1] ENTITY[5] ENTITY[6] GROUP[4] ENTITY[3] (
+ movement(ENTITY[5]) ∧
+  musical(ATTRIB[7]) ∧
+   is_sound_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+    is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧
+     is_place_of(ENTITY[3], GROUP[4]) ∧
+      desultory(ATTRIB[2]) ∧
+       is_chat_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+        LOC_within(EVENT[8]) ∧ past(EVENT[8]) ∧ had_taken(EVENT[8], ENTITY[1], ENTITY[3]))
+
+# ::id 101_fiction_HARDY-1883;AT19-2;NE
+# ::snt The hedge-carpenter was suggesting a song to the company , which nobody just then was inclined to undertake , so that the knock afforded a not unwelcome diversion .
+∃ ATTRIB[12] SITUATION[9] EVENT[13] EVENT[14] ENTITY[11] ENTITY[2] ENTITY[10] ENTITY[8] ENTITY[1] (
+ hedge-carpenter(ENTITY[1]) ∧
+  company(ENTITY[8]) ∧
+   knock(ENTITY[10]) ∧
+    ¬ ∃ SITUATION[7] EVENT[6] EVENT[5] ENTITY[4] (
+          body(ENTITY[4]) ∧
+           TMP_just_then(SITUATION[7]) ∧
+            past(EVENT[5]) ∧
+             is_FACT_THAT(SITUATION[7], was_inclined(EVENT[5], ENTITY[4], undertake(EVENT[6], ENTITY[4], ENTITY[2])))) ∧
+     song(ENTITY[2]) ∧
+     ¬ unwelcome(ATTRIB[12]) ∧
+      is_diversion_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+       is_FACT_THAT(SITUATION[9], afforded(EVENT[13], ENTITY[10], ENTITY[11])) ∧
+        past(EVENT[13]) ∧
+         past(EVENT[14]) ∧ was_suggesting(EVENT[14], ENTITY[1], ENTITY[2], ENTITY[8]) ∧ so(EVENT[14]) = SITUATION[9])
+
+# ::id 102_fiction_HARDY-1883;AT20-1;NE
+# ::snt ' Walk in ! ' said the shepherd promptly .
+∃ EVENT[2] ENTITY[1] (
+ shepherd(ENTITY[1]) ∧
+  ADV_promptly(EVENT[2]) ∧ past(EVENT[2]) ∧ said(EVENT[2], ENTITY[1], IMPERATIVE(∃ EVENT[3] walk_in(EVENT[3]))))
+
+# ::id 103_fiction_HARDY-1883;AT21-1;NE
+# ::snt The latch clicked upward ,
+∃ EVENT[2] ENTITY[1] (latch(ENTITY[1]) ∧ past(EVENT[2]) ∧ clicked_upward(EVENT[2], ENTITY[1]))
+
+# ::id 104_fiction_HARDY-1883;AT21-1;NE
+# ::snt and out of the night our pedestrian appeared upon the door-mat .
+∃ REF1[3] EVENT[5] ENTITY[2] ENTITY[4] ENTITY[1] (
+ night(ENTITY[1]) ∧
+  door-mat(ENTITY[4]) ∧
+   REF1[3] = our ∧
+    is_pedestrian_POS(ENTITY[2], REF1[3]) ∧
+     past(EVENT[5]) ∧
+      appeared(EVENT[5], ENTITY[2]) ∧ upon(EVENT[5]) = ENTITY[4] ∧ out_of(EVENT[5]) = ENTITY[1])
+
+# ::id 105_fiction_HARDY-1883;AT21-2;NE
+# ::snt The shepherd arose , snuffed two of the nearest candles , and turned to look at him .
+∃ REF1[8] ATTRIB[5] ENTITY[3] EVENT[2] EVENT[6] EVENT[9] EVENT[7] GROUP[4] ENTITY[1] (
+ shepherd(ENTITY[1]) ∧
+  nearest(ATTRIB[5]) ∧
+   is_candles_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[6]) ∧
+      past(EVENT[7]) ∧
+       (CD_two(ENTITY[3]), is_element_of(ENTITY[3], GROUP[4])) ∧
+        REF1[8] = him ∧
+         CONJ_and(arose(EVENT[2], ENTITY[1]), snuffed(EVENT[6], ENTITY[1], ENTITY[3]),
+          turned(EVENT[7], ENTITY[1], look(EVENT[9], ENTITY[1]) ∧ at(EVENT[9]) = REF1[8])))
+
+# ::id 106_fiction_HARDY-1883;AT22-1;NE
+# ::snt Their light disclosed that the stranger was dark in complexion and not unprepossessing as to feature .
+∃ ATTRIB[7] ATTRIB[5] REF1[2] EVENT[9] EVENT[9] EVENT[3] ENTITY[6] ENTITY[1] ENTITY[4] (
+ stranger(ENTITY[4]) ∧
+  REF1[2] = their ∧
+   is_light_POS(ENTITY[1], REF1[2]) ∧
+    complexion(ENTITY[6]) ∧
+     is_dark_in(ATTRIB[5], ENTITY[6]) ∧
+      ¬ ∃ ENTITY[8] (feature(ENTITY[8]) ∧ is_unprepossessing_as_to(ATTRIB[7], ENTITY[8])) ∧
+       is_before(EVENT[9], EVENT[3]) ∧
+        is_before(EVENT[9], EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          disclosed(EVENT[3], ENTITY[1],
+           CONJ_and(copula(EVENT[9], ENTITY[4], ATTRIB[5]), copula(EVENT[9], ENTITY[4], ATTRIB[7]))))
+
+# ::id 107_fiction_HARDY-1883;AT22-2;NE
+# ::snt His hat , which for a moment he did not remove , hung low over his eyes , without concealing that they were large , open , and determined , moving with a flash rather than a glance round the room .
+∃ ATTRIB[15] ATTRIB[14] ATTRIB[13] REF4[12] SITUATION[10] REF3[9] ATTRIB[7] REF2[5] REF1[2] EVENT[21] EVENT[19] EVENT[21] EVENT[19] EVENT[21] EVENT[19] EVENT[11] EVENT[22] ENTITY[4] ENTITY[17] ENTITY[16] ENTITY[17] ENTITY[16] ENTITY[17] ENTITY[16] GROUP[8] ENTITY[1] ENTITY[18] ENTITY[18] ENTITY[18] (
+ room(ENTITY[18]) ∧
+  room(ENTITY[18]) ∧
+   room(ENTITY[18]) ∧
+    REF1[2] = his ∧
+     moment(ENTITY[4]) ∧
+      REF2[5] = he ∧
+       ¬ ∃ EVENT[6] (
+             past(EVENT[6]) ∧
+              did_remove(EVENT[6], REF2[5], ENTITY[1]) ∧ for(EVENT[6]) = ENTITY[4]) ∧
+        is_hat_POS(ENTITY[1], REF1[2]) ∧
+        low(ATTRIB[7]) ∧
+         REF3[9] = his ∧
+          is_eyes_POS(GROUP[8], REF3[9]) ∧
+           REF4[12] = they ∧
+            large(ATTRIB[13]) ∧
+             flash(ENTITY[16]) ∧
+              is_glance_round(ENTITY[17], ENTITY[18]) ∧
+               open(ATTRIB[14]) ∧
+                flash(ENTITY[16]) ∧
+                 is_glance_round(ENTITY[17], ENTITY[18]) ∧
+                  determined(ATTRIB[15]) ∧
+                   flash(ENTITY[16]) ∧
+                    is_glance_round(ENTITY[17], ENTITY[18]) ∧
+                     is_FACT_THAT(SITUATION[10],
+                      concealing(EVENT[11], ENTITY[1],
+                       CONJ_and(CONJ_and(copula(EVENT[21], REF4[12], ATTRIB[13]),
+                             moving(EVENT[19], REF4[12]) ∧ with(EVENT[19]) = ENTITY[16]),
+                        CONJ_and(copula(EVENT[21], REF4[12], ATTRIB[14]),
+                         moving(EVENT[19], REF4[12]) ∧ with(EVENT[19]) = ENTITY[16]),
+                        CONJ_and(copula(EVENT[21], REF4[12], ATTRIB[15]),
+                         moving(EVENT[19], REF4[12]) ∧ with(EVENT[19]) = ENTITY[16])))) ∧
+                      is_before(EVENT[21], EVENT[11]) ∧
+                       is_ADV_rather_than(EVENT[19], ENTITY[17]) ∧
+                        is_before(EVENT[21], EVENT[11]) ∧
+                         is_ADV_rather_than(EVENT[19], ENTITY[17]) ∧
+                          is_before(EVENT[21], EVENT[11]) ∧
+                           is_ADV_rather_than(EVENT[19], ENTITY[17]) ∧
+                            past(EVENT[22]) ∧
+                             hung(EVENT[22], ENTITY[1], ATTRIB[7]) ∧ without(EVENT[22]) = SITUATION[10] ∧
+                              over(EVENT[22]) = GROUP[8])
+
+# ::id 108_fiction_HARDY-1883;AT22-3;NE
+# ::snt He seemed pleased with his survey , and , baring his shaggy head , said , in a rich deep voice , ' The rain is so heavy , friends , that I ask leave to come in and rest awhile . '
+∃ REF4[16] ATTRIB[15] ATTRIB[11] ATTRIB[8] REF3[7] REF2[4] ATTRIB[2] REF1[1] EVENT[5] EVENT[9] EVENT[19] EVENT[20] EVENT[18] EVENT[17] EVENT[22] EVENT[12] ENTITY[3] ENTITY[6] GROUP[13] ENTITY[10] ENTITY[14] (
+ rain(ENTITY[14]) ∧
+  REF1[1] = he ∧
+   REF2[4] = his ∧
+    is_survey_POS(ENTITY[3], REF2[4]) ∧
+     is_pleased_with(ATTRIB[2], ENTITY[3]) ∧
+      REF3[7] = his ∧
+       shaggy(ATTRIB[8]) ∧
+        is_head_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_head_POS(ENTITY[6], REF3[7]) ∧
+         rich(ATTRIB[11]) ∧
+          is_deep_voice_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+           friends(GROUP[13]) ∧
+            REF4[16] = i ∧
+             is_so_heavy_THAT(ATTRIB[15],
+              ask(EVENT[17], REF4[16],
+               leave(EVENT[18], REF4[16],
+                CONJ_and(come_in(EVENT[19], REF4[16]), rest(EVENT[20], REF4[16]))))) ∧
+              past(EVENT[5]) ∧
+               TMP_awhile(EVENT[20]) ∧
+                past(EVENT[12]) ∧
+                 CONJ_and(seemed(EVENT[5], REF1[1], ATTRIB[2]),
+                  CONJ_and(baring(EVENT[9], REF1[1], ENTITY[6]),
+                   said(EVENT[12], REF1[1],
+                    copula(EVENT[22], ENTITY[14], ATTRIB[15]) ∧ VOC(EVENT[22]) = GROUP[13]) ∧
+                    in(EVENT[12]) = ENTITY[10])))
+
+# ::id 109_fiction_HARDY-1883;AT23-1;NE
+# ::snt ' To be sure , stranger , ' said the shepherd .
+∃ ATTRIB[4] EVENT[5] EVENT[2] ENTITY[3] ENTITY[1] (
+ shepherd(ENTITY[1]) ∧
+  stranger(ENTITY[3]) ∧
+   sure(ATTRIB[4]) ∧
+    past(EVENT[2]) ∧
+     said(EVENT[2], ENTITY[1], copula(EVENT[5], ENTITY[1], ATTRIB[4]) ∧ VOC(EVENT[5]) = ENTITY[3]))
+
+# ::id 110_fiction_HARDY-1883;AT23-2;NE
+# ::snt ' And faith , you 've been lucky in choosing your time , for we are having a bit of a fling for a glad cause --
+∃ ATTRIB[12] REF3[8] SITUATION[7] REF2[5] SITUATION[3] ATTRIB[2] REF1[1] EVENT[6] EVENT[13] EVENT[14] ENTITY[4] ENTITY[11] ENTITY[10] ENTITY[9] (
+ REF1[1] = you ∧
+  lucky(ATTRIB[2]) ∧
+   REF2[5] = your ∧
+    is_time_POS(ENTITY[4], REF2[5]) ∧
+     is_FACT_THAT(SITUATION[3], choosing(EVENT[6], REF1[1], ENTITY[4])) ∧
+      REF3[8] = we ∧
+       glad(ATTRIB[12]) ∧
+        is_cause_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+         is_fling_for(ENTITY[10], ENTITY[11]) ∧
+          is_bit_of(ENTITY[9], ENTITY[10]) ∧
+           is_FACT_THAT(SITUATION[7], copula_having(EVENT[13], REF3[8], ENTITY[9])) ∧
+            've_copula(EVENT[14], REF1[1], ATTRIB[2]) ∧ for(EVENT[14]) = SITUATION[7] ∧
+             in(EVENT[14]) = SITUATION[3])
+
+# ::id 111_fiction_HARDY-1883;AT23-3;NE
+# ::snt though , to be sure , a man could hardly wish that glad cause to happen more than once a year . '
+∃ SITUATION[10] ATTRIB[1] ATTRIB[5] EVENT[2] ENTITY[3] ENTITY[4] (
+ glad(ATTRIB[5]) ∧
+  is_cause_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   sure(ATTRIB[1]) ∧
+    man(ENTITY[3]) ∧
+     is_ADV_though_to(SITUATION[10], copula(EVENT[2], _, ATTRIB[1])) ∧
+      is_FACT_THAT(SITUATION[10],
+       MD_could(∃ SITUATION[9] EVENT[8] EVENT[6] TIME[7] (
+             (CD_more_than_once(TIME[7]), year(TIME[7])) ∧
+              ADV_hardly(SITUATION[9]) ∧
+               is_FACT_THAT(SITUATION[9],
+                wish(EVENT[6], ENTITY[3], ENTITY[4],
+                 happen(EVENT[8], ENTITY[4]) ∧ is_contained_in(TMP(EVENT[8]), TIME[7])))))))
+
+# ::id 112_fiction_HARDY-1883;AT24-1;NE
+# ::snt ' Nor less , ' spoke up a woman . ' For 't is best to get your family over and done with , as soon as you can , so as to be all the earlier out of the fag o 't . '
+∃ SITUATION[15] SITUATION[22] SITUATION[24] SITUATION[16] REF3[13] REF2[9] REF1[7] ATTRIB[5] SITUATION[3] REF4[18] EVENT[10] EVENT[10] EVENT[19] EVENT[21] EVENT[23] EVENT[2] ENTITY[6] ENTITY[8] TIME[11] GROUP[4] ENTITY[1] ENTITY[17] (
+ REF4[18] = 't ∧
+  is_fag_o(ENTITY[17], REF4[18]) ∧
+   woman(ENTITY[1]) ∧
+    't(GROUP[4]) ∧
+     REF1[7] = your ∧
+      is_family_POS(ENTITY[6], REF1[7]) ∧
+       REF2[9] = your ∧
+        is_family_POS(ENTITY[8], REF2[9]) ∧
+         is_best_to(ATTRIB[5],
+          CONJ_and(get(EVENT[10]) ∧ over(EVENT[10]) = ENTITY[6],
+           get(EVENT[10]) ∧ done_with(EVENT[10]) = ENTITY[8])) ∧
+          REF3[13] = you ∧
+           is_FACT_THAT(SITUATION[15], MD_can(∃ EVENT[14] xxx(EVENT[14], REF3[13]))) ∧
+            is_FACT_THAT(SITUATION[16], copula(EVENT[19], GROUP[4]) ∧ out_of(EVENT[19]) = ENTITY[17]) ∧
+             is_FACT_THAT(SITUATION[3],
+              is_FACT_THAT(SITUATION[22], copula(EVENT[21], GROUP[4], ATTRIB[5]) ∧ so_as(EVENT[21]) = SITUATION[16])) ∧
+              ADV_nor_less(SITUATION[24]) ∧
+               is_TMP(SITUATION[15], TIME[11]) ∧
+                is_TMP_as_soon_as(SITUATION[22], TIME[11]) ∧
+                 all(EVENT[19]) ∧ the(EVENT[19]) ∧ ADV_earlier(EVENT[19]) ∧
+                  past(EVENT[2]) ∧
+                   spoke_up(EVENT[2], ENTITY[1],
+                    is_FACT_THAT(SITUATION[24], xxx(EVENT[23]) ∧ For(EVENT[23]) = SITUATION[3])))
+
+# ::id 113_fiction_HARDY-1883;AT25-1;NE
+# ::snt ' And what may be this glad cause ? ' asked the stranger .
+∃ ATTRIB[5] EVENT[2] ENTITY[4] ENTITY[1] (
+ stranger(ENTITY[1]) ∧
+  glad(ATTRIB[5]) ∧
+   is_cause_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    past(EVENT[2]) ∧ asked(EVENT[2], ENTITY[1], QUEST(? ENTITY[3] MD_may(∃ EVENT[6] copula(EVENT[6], ENTITY[3], ENTITY[4])))))
+
+# ::id 114_fiction_HARDY-1883;AT26-1;NE
+# ::snt ' A birth and christening , ' said the shepherd .
+∃ EVENT[6] EVENT[2] GROUP[3] ENTITY[1] (
+ shepherd(ENTITY[1]) ∧
+  ∃ ENTITY[4] (birth(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (christening(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   past(EVENT[2]) ∧ said(EVENT[2], ENTITY[1], xxx(EVENT[6]) ∧ LINK(EVENT[6]) = GROUP[3]))
+
+# ::id 115_fiction_HARDY-1883;AT27-1;NE
+# ::snt The stranger hoped his host might not be made unhappy either by too many or too few of such episodes ,
+∃ REF1[4] EVENT[2] ENTITY[3] ENTITY[1] (
+ stranger(ENTITY[1]) ∧
+  REF1[4] = his ∧
+   is_host_POS(ENTITY[3], REF1[4]) ∧
+    past(EVENT[2]) ∧
+     hoped(EVENT[2], ENTITY[1],
+      MD_might(¬ ∃ SITUATION[10] ATTRIB[5] (
+                 unhappy(ATTRIB[5]) ∧
+                  ADV_either(SITUATION[10]) ∧
+                   is_FACT_THAT(SITUATION[10],
+                    TOO_MANY_OR_TOO_FEW ATTRIB[8] GROUP[7] ENTITY[6] (
+                     (such(ATTRIB[8]) ∧ is_episodes_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+                      is_element_of(ENTITY[6], GROUP[7])),
+                     ∃ EVENT[9] (
+                      made(EVENT[9], ENTITY[6], ENTITY[3]) ∧
+                       ATTRIBUTE(EVENT[9]) = ATTRIB[5])))))))
+
+# ::id 116_fiction_HARDY-1883;AT27-2;NE
+# ::snt and being invited by a gesture to a pull at the mug , he readily acquiesced .
+∃ REF1[1] EVENT[5] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[4] (
+ mug(ENTITY[4]) ∧
+  REF1[1] = he ∧
+   gesture(ENTITY[2]) ∧
+    is_pull_at(ENTITY[3], ENTITY[4]) ∧
+     ADV_readily(EVENT[6]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(being_invited(EVENT[5], ENTITY[2], REF1[1]) ∧ to(EVENT[5]) = ENTITY[3],
+        acquiesced(EVENT[6], REF1[1])))
+
+# ::id 117_fiction_HARDY-1883;AT27-3;NE
+# ::snt His manner , which , before entering , had been so dubious , was now altogether that of a careless and candid man .
+∃ ATTRIB[6] REF2[4] REF1[2] ATTRIB[11] EVENT[5] EVENT[7] EVENT[12] ENTITY[1] ENTITY[10] GROUP[9] ENTITY[8] (
+ candid(ATTRIB[11]) ∧
+  is_man_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+   is_element_of(ENTITY[10], GROUP[9]) ∧
+    is_element_of(ENTITY[8], GROUP[9]) ∧
+     REF1[2] = his ∧
+      REF2[4] = *pro* ∧
+       so_dubious(ATTRIB[6]) ∧
+        CRD_before(entering(EVENT[5], REF2[4]), had_copula(EVENT[7], ENTITY[1], ATTRIB[6])) ∧
+         is_manner_POS(ENTITY[1], REF1[2]) ∧
+         past(EVENT[7]) ∧
+          TMP_now(EVENT[12]) ∧
+           ADV_altogether(EVENT[12]) ∧ past(EVENT[12]) ∧ copula(EVENT[12], ENTITY[1], ENTITY[8]))
+
+# ::id 118_fiction_HARDY-1883;AT28-1;NE
+# ::snt ' Late to be traipsing athwart this coomb -- hey ? ' said the engaged man of fifty .
+∃ ATTRIB[5] ATTRIB[2] EVENT[7] EVENT[8] EVENT[4] ENTITY[3] ENTITY[6] ENTITY[1] (
+ engaged(ATTRIB[2]) ∧
+  CD_fifty(ENTITY[3]) ∧
+   is_man_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_man_of(ENTITY[1], ENTITY[3]) ∧
+    coomb(ENTITY[6]) ∧
+     past(EVENT[4]) ∧
+      is_late_to(ATTRIB[5], be_traipsing_athwart(EVENT[7], _, ENTITY[6])) ∧
+       said(EVENT[4], ENTITY[1], xxx(EVENT[8], _, ATTRIB[5])))
+
+# ::id 119_fiction_HARDY-1883;AT29-1;NE
+# ::snt ' Late it is , master , as you say . --
+∃ SITUATION[6] REF2[3] SITUATION[2] REF1[1] EVENT[4] EVENT[5] (
+ REF1[1] = it ∧
+  REF2[3] = you ∧
+   is_FACT_THAT(SITUATION[2], say(EVENT[4], REF2[3])) ∧
+    ADV_late(SITUATION[6]) ∧
+     is_FACT_THAT(SITUATION[6],
+      copula(EVENT[5], REF1[1]) ∧ as(EVENT[5]) = SITUATION[2] ∧ VOC(EVENT[5]) = ENTITY[master]))
+
+# ::id 120_fiction_HARDY-1883;AT29-2;NE
+# ::snt I 'll take a seat in the chimney-corner , if you have nothing to urge against it , ma'am ; for I am a little moist on the side that was next the rain . '
+∃ REF1[2] ENTITY[1] EVENT[18] ENTITY[4] ENTITY[17] ENTITY[15] (
+ chimney-corner(ENTITY[4]) ∧
+  rain(ENTITY[17]) ∧
+   copula(EVENT[18], ENTITY[15], ENTITY[17]) ∧ side(ENTITY[15]) ∧
+    ADV_next(EVENT[18]) ∧
+     past(EVENT[18]) ∧
+      ma'am(ENTITY[1]) ∧
+       REF1[2] = i ∧
+        MD'll(∃ ENTITY[3] (
+              is_seat_in(ENTITY[3], ENTITY[4]) ∧
+               ∀ REF2[5] CND_if(
+                   REF2[5] = you ∧
+                    ¬ ∃ REF3[8] EVENT[9] EVENT[10] ENTITY[6] (
+                          REF3[8] = it ∧
+                           urge(EVENT[9], ENTITY[6]) ∧ against(EVENT[9]) = REF3[8] ∧
+                            thing(ENTITY[6]) ∧ have(EVENT[10], REF2[5], ENTITY[6])),
+                   ∃ ATTRIB[14] REF4[12] SITUATION[11] EVENT[20] EVENT[21] ENTITY[13] (
+                    REF4[12] = i ∧
+                     little(ATTRIB[14]) ∧
+                      is_moist_on(ENTITY[13], ENTITY[15]) ∧ is_moist_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+                       is_FACT_THAT(SITUATION[11], copula(EVENT[20], REF4[12], ENTITY[13])) ∧
+                        take(EVENT[21], REF1[2], ENTITY[3]) ∧ for(EVENT[21]) = SITUATION[11] ∧
+                         VOC(EVENT[21]) = ENTITY[1])))))
+
+# ::id 121_fiction_HARDY-1883;AT30-1;NE
+# ::snt Mrs. Shepherd Fennel assented , and made room for the self-invited comer , who , having got completely inside the chimney-corner , stretched out his legs and his arms with the expansiveness of a person quite at home .
+∃ REF2[13] REF1[11] ATTRIB[4] ENTITY[2] EVENT[1] EVENT[18] EVENT[7] EVENT[17] ENTITY[6] GROUP[10] GROUP[12] ENTITY[16] ENTITY[15] ENTITY[14] GROUP[9] ENTITY[3] (
+ self-invited(ATTRIB[4]) ∧
+  chimney-corner(ENTITY[6]) ∧
+   REF1[11] = his ∧
+    is_legs_POS(GROUP[10], REF1[11]) ∧
+     REF2[13] = his ∧
+      is_arms_POS(GROUP[12], REF2[13]) ∧
+       is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[9]) ∧
+        home(ENTITY[16]) ∧
+         is_ADV_quite_at(ENTITY[15], ENTITY[16]) ∧ person(ENTITY[15]) ∧
+          is_expansiveness_of(ENTITY[14], ENTITY[15]) ∧
+           CONJ_and(having_got(EVENT[7], ENTITY[3]) ∧ inside(EVENT[7]) = ENTITY[6],
+            stretched_out(EVENT[17], ENTITY[3], GROUP[9]) ∧ with(EVENT[17]) = ENTITY[14]) ∧
+            is_comer_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+            ADV_completely(EVENT[7]) ∧
+             past(EVENT[17]) ∧
+              past(EVENT[1]) ∧
+               past(EVENT[18]) ∧
+                room(ENTITY[2]) ∧
+                 CONJ_and(assented(EVENT[1], ENTITY[Mrs.Shepherd_Fennel]),
+                  made(EVENT[18], ENTITY[Mrs.Shepherd_Fennel], ENTITY[2]) ∧ for(EVENT[18]) = ENTITY[3]))
+
+# ::id 122_fiction_HARDY-1883;AT31-1;NE
+# ::snt ' Yes , I am rather cracked in the vamp , ' he said freely , seeing that the eyes of the shepherd 's wife fell upon his boots ,
+∃ SITUATION[14] REF2[7] REF3[10] REF1[1] EVENT[12] EVENT[9] EVENT[8] EVENT[2] GROUP[6] ENTITY[11] ENTITY[5] ENTITY[4] GROUP[3] (
+ vamp(ENTITY[11]) ∧
+  shepherd(ENTITY[5]) ∧
+   is_wife_POS(ENTITY[4], ENTITY[5]) ∧
+    is_eyes_of(GROUP[3], ENTITY[4]) ∧
+     REF1[1] = he ∧
+      REF3[10] = i ∧
+       REF2[7] = his ∧
+        is_boots_POS(GROUP[6], REF2[7]) ∧
+         ADV_freely(SITUATION[14]) ∧
+          ADV_rather(EVENT[12]) ∧
+           past(EVENT[9]) ∧
+            is_before(EVENT[8], EVENT[2]) ∧
+             is_FACT_THAT(SITUATION[14],
+              CONJ_and(said(EVENT[9], REF1[1],
+                    cracked(EVENT[12], _, REF3[10]) ∧ in(EVENT[12]) = ENTITY[11]),
+               seeing(EVENT[2], REF1[1], fell(EVENT[8], GROUP[3]) ∧ upon(EVENT[8]) = GROUP[6]))))
+
+# ::id 123_fiction_HARDY-1883;AT31-1;NE
+# ::snt ' and I am not well fitted either .
+∃ REF1[1] (REF1[1] = i ∧ ¬ ∃ EVENT[2] (ADV_well(EVENT[2]) ∧ ADV_either(EVENT[2]) ∧ am_fitted(EVENT[2], REF1[1])))
+
+# ::id 124_fiction_HARDY-1883;AT31-2;NE
+# ::snt I have had some rough times lately , and have been forced to pick up what I can get in the way of wearing , but I must find a suit better fit for working-days when I reach home . '
+∃ REF3[15] REF2[9] REF1[1] ATTRIB[12] EVENT[14] EVENT[6] ENTITY[7] ENTITY[11] ENTITY[10] (
+ wearing(ATTRIB[12]) ∧
+  is_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+   is_way_of(ENTITY[10], ENTITY[11]) ∧
+    REF1[1] = i ∧
+     REF2[9] = i ∧
+      MD_can(∃ EVENT[13] (get(EVENT[13], REF2[9], ENTITY[7]) ∧ in(EVENT[13]) = ENTITY[10])) ∧
+       REF3[15] = i ∧
+        CONJ_but(CONJ_and(SOME ATTRIB[3] GROUP[2] ((rough(ATTRIB[3]) ∧ is_times_ATTRIBUTE(GROUP[2], ATTRIB[3])),
+                   ∃ EVENT[4] (ADV_lately(EVENT[4]) ∧ have_had(EVENT[4], REF1[1], GROUP[2]))),
+              have_forced(EVENT[6], _, REF1[1], pick_up(EVENT[14], ENTITY[7]))), MD_must(∃ SITUATION[27] REF4[22] EVENT[19] EVENT[23] EVENT[26] GROUP[18] ENTITY[16] (
+               working-days(GROUP[18]) ∧
+                fit(EVENT[19], ENTITY[16]) ∧ for(EVENT[19]) = GROUP[18] ∧ suit(ENTITY[16]) ∧
+                 REF4[22] = i ∧
+                  ADV_better(EVENT[19]) ∧
+                   is_TMP(EVENT[23], SITUATION[27]) ∧
+                    ADV_home(EVENT[23]) ∧
+                     reach(EVENT[23], REF4[22]) ∧
+                      is_FACT_THAT(SITUATION[27], find(EVENT[26], REF3[15], ENTITY[16]))))))
+
+# ::id 125_fiction_HARDY-1883;AT32-1;NE
+# ::snt ' One of hereabouts ? ' she inquired .
+∃ ATTRIB[4] REF1[1] EVENT[5] EVENT[2] ENTITY[3] (
+ REF1[1] = she ∧
+  ADV_hereabouts(ATTRIB[4]) ∧
+   (CD_one(ENTITY[3]), is_of(ENTITY[3], ATTRIB[4])) ∧
+    past(EVENT[2]) ∧ inquired(EVENT[2], REF1[1], xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[3]))
+
+# ::id 126_fiction_HARDY-1883;AT33-1;NE
+# ::snt ' Not quite that --
+∃ EVENT[2] ENTITY[1] (¬ ADV_quite(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 127_fiction_HARDY-1883;AT33-1;NE
+# ::snt further up the country . '
+∃ ATTRIB[1] EVENT[3] ENTITY[2] (country(ENTITY[2]) ∧ is_further_up(ATTRIB[1], ENTITY[2]) ∧ xxx(EVENT[3], _, ATTRIB[1]))

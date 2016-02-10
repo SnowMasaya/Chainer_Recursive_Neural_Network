@@ -1,0 +1,784 @@
+# ::id 1_wikipedia_KYOTO_BDS_00005,1;NJ
+# ::snt 一休 宗純
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[一休_宗純])
+
+# ::id 2_wikipedia_KYOTO_BDS_00005,2;NJ
+# ::snt 一休 宗純 （ いっきゅう そうじゅん ） は 、 室町 時代 の 臨済宗 大徳寺派 の 禅僧 で ある 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[いっきゅう_そうじゅん], ENTITY[一休_宗純]) ∧
+  室町_時代(ENTITY[2]) ∧
+   の_禅僧(ENTITY[臨済宗_大徳寺派], ENTITY[1]) ∧ の__禅僧(ENTITY[2], ENTITY[1]) ∧ で_ある(EVENT[3], ENTITY[一休_宗純], ENTITY[1]))
+
+# ::id 3_wikipedia_KYOTO_BDS_00005,3;NJ
+# ::snt 説話 の モデル として 知ら れる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  説話(ENTITY[3]) ∧
+   の_モデル(ENTITY[3], ENTITY[2]) ∧ 知ら(EVENT[4], _, ENTITY[1]) ∧ として(EVENT[4]) = ENTITY[2])
+
+# ::id 4_wikipedia_KYOTO_BDS_00005,4;NJ
+# ::snt 「 一休さんの頓知咄 」 について は 『 一休咄 』 の 項目 （ この ページ に も 若干 の 記述 あり ） を 、 テレビ アニメ 『 一休さん 』 について は 「 一休さん 」 の 項目 を 参照 。
+∃ ENTITY[3] (
+ テレビ_アニメ(ENTITY[3]) ∧
+  namely_-ENTITY-(ENTITY[3], ENTITY[一休さん]) ∧
+   IMPERATIVE(∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+         の_項目(ENTITY[一休咄], ENTITY[1]) ∧
+          の_項目(ENTITY[一休さん], ENTITY[4]) ∧
+           xxx(EVENT[2], _, ENTITY[1]) ∧ について(EVENT[2]) = ENTITY[一休さんの頓知咄] ∧
+            参照(EVENT[5], _, ENTITY[4]) ∧ について(EVENT[5]) = ENTITY[一休さん])))
+
+# ::id 5_wikipedia_KYOTO_BDS_00005,5;NJ
+# ::snt 生涯
+∃ EVENT[2] ENTITY[1] (生涯(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_BDS_00005,6;NJ
+# ::snt 京都 の 生まれ で 後小松天皇 の 落胤 と いう 。
+∃ ENTITY[2] EVENT[4] EVENT[6] EVENT[1] ENTITY[3] ENTITY[5] (
+ ENTITY[2] = *pro* ∧
+  の_生まれ(ENTITY[京都], ENTITY[3]) ∧
+   の_落胤(ENTITY[後小松天皇], ENTITY[5]) ∧
+    いう(EVENT[1], CONJ_te(で(EVENT[4], ENTITY[2], ENTITY[3]), xxx(EVENT[6], ENTITY[2], ENTITY[5]))))
+
+# ::id 7_wikipedia_KYOTO_BDS_00005,9;NJ
+# ::snt 幼名 は 、 後世 史料 によると 千菊丸 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 幼名(ENTITY[1]) ∧
+  後世_史料(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[千菊丸]) ∧ によると(EVENT[3]) = ENTITY[2])
+
+# ::id 8_wikipedia_KYOTO_BDS_00005,10;NJ
+# ::snt 長じて 周建 の 名 で 呼ば れ 、 狂雲子 、 瞎驢 （ かつろ ） 、 夢閨 （ むけい ） など と 号 し た 。
+∃ ENTITY[1] EVENT[3] EVENT[7] ENTITY[2] GROUP[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  の_名(ENTITY[周建], ENTITY[2]) ∧
+   is_element_of(ENTITY[狂雲子], GROUP[6]) ∧ namely_-ENTITY-(ENTITY[かつろ], ENTITY[瞎驢]) ∧ is_element_of(ENTITY[瞎驢], GROUP[6]) ∧
+    namely_-ENTITY-(ENTITY[むけい], ENTITY[夢閨]) ∧ is_element_of(ENTITY[夢閨], GROUP[6]) ∧
+    など(GROUP[6], ENTITY[5]) ∧
+     ADV_長じて(EVENT[3]) ∧
+      past(EVENT[7]) ∧
+       呼ば(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2] ∧
+        号する.0_た(EVENT[7], ENTITY[1], _, ENTITY[5]))
+
+# ::id 9_wikipedia_KYOTO_BDS_00005,11;NJ
+# ::snt 戒名 は 宗純 で 、 宗順 と も 書く 。
+∃ ENTITY[4] ARB[1] EVENT[3] EVENT[5] ENTITY[2] (
+ 戒名(ENTITY[2]) ∧
+  ARB[1] = *arb* ∧
+   ENTITY[4] = *pro*{ENTITY[2], ENTITY[宗純]} ∧
+    CONJ_te(で(EVENT[3], ENTITY[2], ENTITY[宗純]), 書く(EVENT[5], ARB[1], ENTITY[4], ENTITY[宗順])))
+
+# ::id 10_wikipedia_KYOTO_BDS_00005,12;NJ
+# ::snt 一休 は 道号 で ある 。
+∃ EVENT[2] ENTITY[1] (道号(ENTITY[1]) ∧ で_ある(EVENT[2], ENTITY[一休], ENTITY[1]))
+
+# ::id 11_wikipedia_KYOTO_BDS_00005,13;NJ
+# ::snt （ 戒名 と 道号 について は 「 戒名 」 の 項目 を 参照 の こと 。 ）
+∃ SITUATION[2] EVENT[9] ENTITY[1] ENTITY[4] ENTITY[5] GROUP[3] (
+ 戒名(ENTITY[4]) ∧
+  道号(ENTITY[5]) ∧
+   CONJ_と(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+    IMP-FACT(SITUATION[2],
+     IMPERATIVE(∃ EVENT[8] ENTITY[7] ENTITY[6] (
+           戒名(ENTITY[7]) ∧
+            の_項目(ENTITY[7], ENTITY[6]) ∧
+             参照(EVENT[8], _, ENTITY[6]) ∧ について(EVENT[8]) = GROUP[3]))) ∧
+     の_こと(SITUATION[2], ENTITY[1]) ∧ xxx(EVENT[9], _, ENTITY[1]))
+
+# ::id 12_wikipedia_KYOTO_BDS_00005,14;NJ
+# ::snt 6 歳 で 京都 の 安国寺 の 像外集鑑 に 入門 · 受戒 し 、 周建 と 名付け られる 。
+∃ ENTITY[1] EVENT[3] EVENT[4] EVENT[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_6_歳(ENTITY[2]) ∧
+   の_xxx(ENTITY[京都], ENTITY[安国寺]) ∧
+    の_xxx(ENTITY[安国寺], ENTITY[像外集鑑]) ∧
+     入門(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[像外集鑑] ∧
+      受戒する.0(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[2] ∧
+      名付け(EVENT[5], _, ENTITY[1], ENTITY[周建]))
+
+# ::id 13_wikipedia_KYOTO_BDS_00005,15;NJ
+# ::snt 早くから 詩才 に 優れ 、 13 歳 の 時 に 作っ た 漢詩 「 長門春草 」 、 15 歳 の 時 に 作っ た 漢詩 「 春衣宿花 」 は 洛中 の 評判 と なり 賞賛 さ れ た 。
+∃ ENTITY[1] ENTITY[14] ENTITY[8] EVENT[3] EVENT[19] EVENT[20] ENTITY[2] ENTITY[18] EVENT[11] EVENT[17] ENTITY[10] ENTITY[9] ENTITY[6] ENTITY[16] ENTITY[15] ENTITY[12] GROUP[5] (
+ ENTITY[8] = *pro*{ENTITY[2]} ∧
+  CD_13_歳(ENTITY[10]) ∧
+   の_時(ENTITY[10], ENTITY[9]) ∧
+    作っ_た(EVENT[11], ENTITY[8], ENTITY[長門春草]) ∧ に(EVENT[11]) = ENTITY[9] ∧
+     漢詩(ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[長門春草]) ∧
+       ENTITY[14] = *pro*{ENTITY[長門春草], ENTITY[6], ENTITY[9], ENTITY[10], ENTITY[2]} ∧
+        CD_15_歳(ENTITY[16]) ∧
+         の_時(ENTITY[16], ENTITY[15]) ∧
+          作っ_た(EVENT[17], ENTITY[14], ENTITY[春衣宿花]) ∧ に(EVENT[17]) = ENTITY[15] ∧
+           漢詩(ENTITY[12]) ∧
+            namely_-ENTITY-(ENTITY[12], ENTITY[春衣宿花]) ∧
+             is_element_of(ENTITY[長門春草], GROUP[5]) ∧ is_element_of(ENTITY[春衣宿花], GROUP[5]) ∧
+              past(EVENT[11]) ∧
+               past(EVENT[17]) ∧
+                ENTITY[1] = *pro* ∧
+                 詩才(ENTITY[2]) ∧
+                  の_評判(ENTITY[洛中], ENTITY[18]) ∧
+                   ADV_早くから(EVENT[3]) ∧
+                    past(EVENT[20]) ∧
+                     優れ(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+                      なり(EVENT[19], GROUP[5]) ∧ と(EVENT[19]) = ENTITY[18] ∧
+                       賞賛する.0_た(EVENT[20], _, GROUP[5]))
+
+# ::id 14_wikipedia_KYOTO_BDS_00005,16;NJ
+# ::snt 応永 17 年 （ 1410 年 ） 、 17 歳 で 謙翁 宗為 （ けんおう そうい ） の 弟子 と なり 、 戒名 を 宗純 と 改める 。
+∃ ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[6] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_応永_17_年_（_1410_年_）(TIME[2]) ∧
+   CD_17_歳(ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[けんおう_そうい], ENTITY[謙翁_宗為]) ∧
+     の_弟子(ENTITY[謙翁_宗為], ENTITY[4]) ∧
+      戒名(ENTITY[6]) ∧
+       なり(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[3] ∧
+        改める(EVENT[7], ENTITY[1], ENTITY[6], ENTITY[宗純]) ∧ is_contained_in(時間(EVENT[7]), TIME[2]))
+
+# ::id 15_wikipedia_KYOTO_BDS_00005,17;NJ
+# ::snt 謙翁 は 応永 21 年 （ 1414 年 ） に 没し た 。
+∃ EVENT[2] ENTITY[1] (CD_応永_21_年_（_1414_年_）(ENTITY[1]) ∧ past(EVENT[2]) ∧ 没し_た(EVENT[2], ENTITY[謙翁]) ∧ に(EVENT[2]) = ENTITY[1])
+
+# ::id 16_wikipedia_KYOTO_BDS_00005,18;NJ
+# ::snt この 時 、 一休 は 師 の 遷化 による もの か は 断定 でき ない が 、 自殺 未遂 を 起こし て いる 。
+∃ ENTITY[2] EVENT[9] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[4] TIME[1] (
+ 時(TIME[1]) ∧
+  師(ENTITY[6]) ∧
+   の_遷化(ENTITY[6], ENTITY[5]) ∧
+    による_もの(ENTITY[5], ENTITY[4]) ∧
+     ENTITY[2] = *pro*{ENTITY[一休]} ∧
+      自殺_未遂(ENTITY[8]) ∧
+       CONJ_が(¬ か_は ENTITY[3] (ENTITY[3] = ENTITY[4],
+                  ∃ EVENT[7] (
+                   断定する.0(EVENT[7], ENTITY[2]) ∧
+                    LINK(EVENT[7]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[7]), TIME[1]))),
+        起こし_て_いる(EVENT[9], ENTITY[一休], ENTITY[8]) ∧ is_contained_in(時間(EVENT[9]), TIME[1])))
+
+# ::id 17_wikipedia_KYOTO_BDS_00005,19;NJ
+# ::snt 応永 22 年 （ 1415 年 ） に 京都 の 大徳寺 の 高僧 、 華叟宗曇 （ かそうそうどん ） の 弟子 と なる 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_応永_22_年_（_1415_年_）(ENTITY[2]) ∧
+   の_xxx(ENTITY[京都], ENTITY[大徳寺]) ∧
+    の_高僧(ENTITY[大徳寺], ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[華叟宗曇]) ∧
+      namely_-ENTITY-(ENTITY[かそうそうどん], ENTITY[華叟宗曇]) ∧
+       の_弟子(ENTITY[華叟宗曇], ENTITY[3]) ∧
+        なる(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[3] ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 18_wikipedia_KYOTO_BDS_00005,21;NJ
+# ::snt なお 「 有ろじ （ 有漏路 ） 」 と は 迷い （ 煩悩 ） の 世界 、 「 無ろじ （ 無漏路 ） 」 と は 悟り （ 仏 ） の 世界 を 指す 。
+∃ SITUATION[8] EVENT[4] EVENT[7] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[6] ENTITY[5] (
+ namely_-ENTITY-(ENTITY[有漏路], ENTITY[有ろじ]) ∧
+  namely_-ENTITY-(ENTITY[無漏路], ENTITY[無ろじ]) ∧
+   迷い(ENTITY[3]) ∧
+    煩悩(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      の_世界(ENTITY[3], ENTITY[1]) ∧
+       悟り(ENTITY[6]) ∧
+        namely_-ENTITY-(ENTITY[仏], ENTITY[6]) ∧
+         の_世界(ENTITY[6], ENTITY[5]) ∧
+          ADV_なお(SITUATION[8]) ∧
+           FACT(SITUATION[8], xxx(EVENT[4], ENTITY[有ろじ], ENTITY[1]) ∧ 指す(EVENT[7], ENTITY[無ろじ], ENTITY[5])))
+
+# ::id 19_wikipedia_KYOTO_BDS_00005,22;NJ
+# ::snt 応永 27 年 （ 1420 年 ） の ある 夜 、 カラス の 鳴き声 を 聞い て 、 俄か に 大悟 する 。
+∃ ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[3] TIME[2] (
+ CD_応永_27_年_（_1420_年_）(ENTITY[3]) ∧
+  の_夜(ENTITY[3], TIME[2]) ∧
+   ENTITY[1] = *pro* ∧
+    カラス(ENTITY[5]) ∧
+     の_鳴き声(ENTITY[5], ENTITY[4]) ∧
+      ADV_俄か_に(EVENT[7]) ∧
+       CONJ_te(聞い_て(EVENT[6], ENTITY[1], ENTITY[4]) ∧ is_contained_in(時間(EVENT[6]), TIME[2]),
+        大悟する.0(EVENT[7], ENTITY[1]) ∧ is_contained_in(時間(EVENT[7]), TIME[2])))
+
+# ::id 20_wikipedia_KYOTO_BDS_00005,23;NJ
+# ::snt 華叟 は 印可状 を 与え ようとする が 、 一休 は 辞退 し た 。
+∃ EVENT[3] (
+ past(EVENT[3]) ∧
+  CONJ_が(MD_ようとする(∃ EVENT[2] ENTITY[1] (印可状(ENTITY[1]) ∧ past(EVENT[2]) ∧ 与え(EVENT[2], ENTITY[華叟], ENTITY[1]))),
+   辞退する.0_た(EVENT[3], ENTITY[一休])))
+
+# ::id 21_wikipedia_KYOTO_BDS_00005,24;NJ
+# ::snt 華叟 は ばか 者 と 笑い ながら 送り出し た と いう 。
+∃ ATTRIB[6] ENTITY[4] ENTITY[2] EVENT[7] EVENT[3] EVENT[8] EVENT[1] ENTITY[5] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[華叟]} ∧
+   ばか(ATTRIB[6]) ∧
+    ATTRIBUTE_者(ATTRIB[6], ENTITY[5]) ∧
+     before(EVENT[1], EVENT[8]) ∧
+      いう(EVENT[1],
+       CRD_ながら(笑い(EVENT[3], ENTITY[2], xxx(EVENT[7], ENTITY[4], ENTITY[5])),
+        送り出し_た(EVENT[8], ENTITY[華叟], ENTITY[2]))))
+
+# ::id 22_wikipedia_KYOTO_BDS_00005,25;NJ
+# ::snt 以後 は 詩 · 狂歌 · 書画 と 風狂 の 生活 を 送っ た 。
+∃ ENTITY[1] EVENT[9] ENTITY[8] ENTITY[7] GROUP[3] ENTITY[2] (
+ 以後(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] (詩(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (狂歌(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ∃ ENTITY[6] (書画(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    風狂(ENTITY[8]) ∧
+     の_生活(ENTITY[8], ENTITY[7]) ∧
+      past(EVENT[9]) ∧
+       送っ_た(EVENT[9], ENTITY[1], ENTITY[7]) ∧ と(EVENT[9]) = GROUP[3] ∧ 時間(EVENT[9]) = ENTITY[2])
+
+# ::id 23_wikipedia_KYOTO_BDS_00005,26;NJ
+# ::snt 正長 元 年 （ 1428 年 ） 、 称光天皇 が 男子 を 残さ ず 崩御 し 、 伏見宮家 より 後花園天皇 が 迎え られ て 即位 し た 。
+∃ EVENT[4] EVENT[5] EVENT[6] ENTITY[2] TIME[1] (
+ CD_正長_元_年_（_1428_年_）(TIME[1]) ∧
+  男子(ENTITY[2]) ∧
+   past(EVENT[6]) ∧
+    CONJ_te(¬ ∃ EVENT[3] 残さ(EVENT[3], ENTITY[称光天皇], ENTITY[2]), 崩御する.0(EVENT[4], ENTITY[称光天皇])) ∧
+     CONJ_te(迎え_て(EVENT[5], _, ENTITY[後花園天皇]) ∧ より(EVENT[5]) = ENTITY[伏見宮家] ∧
+           is_contained_in(時間(EVENT[5]), TIME[1]),
+      即位する.0_た(EVENT[6], ENTITY[後花園天皇]) ∧ より(EVENT[6]) = ENTITY[伏見宮家] ∧ is_contained_in(時間(EVENT[6]), TIME[1])))
+
+# ::id 24_wikipedia_KYOTO_BDS_00005,27;NJ
+# ::snt 後花園天皇 の 即位 に は 一休 の 推挙 が あっ た と いう 。
+∃ EVENT[4] EVENT[1] ENTITY[3] ENTITY[2] (
+ の_即位(ENTITY[後花園天皇], ENTITY[2]) ∧
+  の_推挙(ENTITY[一休], ENTITY[3]) ∧
+   before(EVENT[1], EVENT[4]) ∧ いう(EVENT[1], あっ_た(EVENT[4], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2]))
+
+# ::id 25_wikipedia_KYOTO_BDS_00005,29;NJ
+# ::snt ただし 、 今泉 淑夫 は 後花園天皇 の 即位 は 幕府 の 賛成 による もの で 一休 の 推挙 は 無関係 だ と し て いる 。
+∃ EVENT[6] EVENT[8] EVENT[1] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[7] (
+ の_即位(ENTITY[後花園天皇], ENTITY[2]) ∧
+  の_推挙(ENTITY[一休], ENTITY[7]) ∧
+   幕府(ENTITY[5]) ∧
+    の_賛成(ENTITY[5], ENTITY[4]) ∧
+     による_もの(ENTITY[4], ENTITY[3]) ∧
+      し_て_いる(EVENT[1], ENTITY[今泉_淑夫], CONJ_te(で(EVENT[6], ENTITY[2], ENTITY[3]), 無関係_だ(EVENT[8], ENTITY[7]))))
+
+# ::id 26_wikipedia_KYOTO_BDS_00005,30;NJ
+# ::snt 応仁の乱 後 の 文明 6 年 （ 1474 年 ） 、 後土御門天皇 の 勅命 により 大徳寺 の 住持 （ 第 47 代 ） に 任 ぜ られ 、 寺 に は 住ま なかっ た が 、 再興 に 尽力 し た 。
+∃ ENTITY[1] EVENT[7] EVENT[11] ENTITY[3] ENTITY[5] ENTITY[6] ENTITY[4] TIME[2] ENTITY[10] ENTITY[8] (
+ 寺(ENTITY[8]) ∧
+  ENTITY[1] = *pro* ∧
+   応仁の乱_後(ENTITY[3]) ∧
+    (CD_文明_6_年_（_1474_年_）(TIME[2]), の(ENTITY[3], TIME[2])) ∧
+     の_勅命(ENTITY[後土御門天皇], ENTITY[4]) ∧
+      の_住持(ENTITY[大徳寺], ENTITY[6]) ∧
+       (CD_第_47(ENTITY[5]), 代(ENTITY[5])) ∧
+        namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+         再興(ENTITY[10]) ∧
+          past(EVENT[11]) ∧
+           任する.0(EVENT[7], ENTITY[4], ENTITY[1], ENTITY[6]) ∧ is_contained_in(時間(EVENT[7]), TIME[2]) ∧
+            CONJ_が(¬ ∃ EVENT[9] (
+                       past(EVENT[9]) ∧
+                        住ま_た(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[8]),
+             尽力する.0_た(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = ENTITY[10]))
+
+# ::id 27_wikipedia_KYOTO_BDS_00005,31;NJ
+# ::snt 塔頭 の 真珠庵 は 一休 を 開祖 と し て 創建 さ れ た 。
+∃ EVENT[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 塔頭(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[真珠庵]) ∧
+   開祖(ENTITY[2]) ∧
+    past(EVENT[4]) ∧
+     CONJ_te(し_て(EVENT[3], ENTITY[真珠庵], ENTITY[一休], ENTITY[2]), 創建する.0_た(EVENT[4], _, ENTITY[真珠庵])))
+
+# ::id 28_wikipedia_KYOTO_BDS_00005,32;NJ
+# ::snt 天皇 に 親しく 接せ られ 、 民衆 に も 慕わ れ た と いう 。
+∃ ENTITY[2] EVENT[3] EVENT[6] EVENT[1] ENTITY[5] (
+ ENTITY[2] = *pro* ∧
+  民衆(ENTITY[5]) ∧
+   ADV_親しく(EVENT[3]) ∧
+    before(EVENT[1], EVENT[6]) ∧
+     いう(EVENT[1], 接せ(EVENT[3], ENTITY[天皇], ENTITY[2]) ∧ 慕わ_た(EVENT[6], ENTITY[5], ENTITY[2])))
+
+# ::id 29_wikipedia_KYOTO_BDS_00005,33;NJ
+# ::snt 1481 年 、 88 歳 で 酬恩庵 に 没し た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_1481_年(TIME[2]) ∧
+   CD_88_歳(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     没し_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[酬恩庵] ∧ で(EVENT[4]) = ENTITY[3] ∧
+      is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 30_wikipedia_KYOTO_BDS_00005,34;NJ
+# ::snt 臨終 に際し 、 「 死に とう ない 」 と 述べ た と 伝わる 。
+∃ ENTITY[2] EVENT[4] EVENT[1] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  臨終(ENTITY[3]) ∧
+   before(EVENT[1], EVENT[4]) ∧
+    伝わる(EVENT[1], 述べ_た(EVENT[4], ENTITY[2], ¬ ∃ EVENT[5] 死に_とう(EVENT[5])) ∧ に際し(EVENT[4]) = ENTITY[3]))
+
+# ::id 31_wikipedia_KYOTO_BDS_00005,35;NJ
+# ::snt 酬恩庵 は 通称 「 一休寺 」 と 言い 、 京都府 京田辺市 の 薪地区 に ある 。
+∃ ENTITY[4] ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  通称(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[酬恩庵], ENTITY[一休寺], ENTITY[2]} ∧
+    の_xxx(ENTITY[京都府_京田辺市], ENTITY[薪地区]) ∧
+     言い(EVENT[3], ENTITY[1], ENTITY[酬恩庵], ENTITY[一休寺]) ∧ ADV(EVENT[3]) = ENTITY[2] ∧
+      ある(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[薪地区])
+
+# ::id 32_wikipedia_KYOTO_BDS_00005,36;NJ
+# ::snt 康正 2 年 1456 年 に 荒廃 し て い た 妙勝寺 を 一休 が 再興 し た もの で ある 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_康正_2_年_1456_年(ENTITY[4]) ∧
+   荒廃する.0_て_い_た(EVENT[6], ENTITY[妙勝寺]) ∧
+    再興する.0_た(EVENT[7], ENTITY[一休], ENTITY[妙勝寺], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[4] ∧ もの(ENTITY[2]) ∧
+     past(EVENT[6]) ∧ past(EVENT[7]) ∧ で_ある(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 33_wikipedia_KYOTO_BDS_00005,37;NJ
+# ::snt 墓 は 酬恩庵 に あり 、 「 慈揚塔 」 と 呼ば れる が 、 宮内庁 が 御廟所 として 管理 し て いる 陵墓 で ある 宮内庁 で は 落胤説 に もとづい て 「 後小松天皇皇子宗純王墓 」 と し て いる 。
+∃ ENTITY[4] EVENT[2] EVENT[3] EVENT[10] EVENT[11] EVENT[8] EVENT[9] ENTITY[1] ENTITY[6] (
+ 墓(ENTITY[1]) ∧
+  管理する.0_て_いる(EVENT[8], ENTITY[宮内庁], ENTITY[6]) ∧ として(EVENT[8]) = ENTITY[御廟所] ∧ 陵墓(ENTITY[6]) ∧
+   で_ある(EVENT[9], ENTITY[宮内庁], ENTITY[6]) ∧
+    ENTITY[4] = *pro*{ENTITY[1], ENTITY[慈揚塔], ENTITY[酬恩庵]} ∧
+     CONJ_が(あり(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[酬恩庵] ∧
+           呼ば(EVENT[3], _, ENTITY[1], ENTITY[慈揚塔]),
+      CONJ_te(もとづい_て(EVENT[10], ENTITY[宮内庁], ENTITY[4]) ∧ に(EVENT[10]) = ENTITY[落胤説],
+       し_て_いる(EVENT[11], ENTITY[宮内庁], ENTITY[4], ENTITY[後小松天皇皇子宗純王墓]))))
+
+# ::id 34_wikipedia_KYOTO_BDS_00005,39;NJ
+# ::snt 人柄
+∃ EVENT[2] ENTITY[1] (人柄(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 35_wikipedia_KYOTO_BDS_00005,40;NJ
+# ::snt 自由奔放 で 、 奇行 が 多かっ た と 言わ れる 。
+∃ ENTITY[2] SITUATION[1] EVENT[3] EVENT[5] EVENT[6] ENTITY[4] (
+ ENTITY[2] = *pro* ∧
+  奇行(ENTITY[4]) ∧
+   と(SITUATION[1], CONJ_te(自由奔放_で(EVENT[3], ENTITY[2]), 多かっ_た(EVENT[5], (ENTITY[2], ENTITY[4])))) ∧
+    past(EVENT[5]) ∧ 言わ(EVENT[6], _, SITUATION[1]))
+
+# ::id 36_wikipedia_KYOTO_BDS_00005,41;NJ
+# ::snt 以下 の よう な 逸話 が 伝わっ て いる 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 以下(ENTITY[4]) ∧
+  の_よう(ENTITY[4], ENTITY[3]) ∧
+   な(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 逸話(ENTITY[1]) ∧ 伝わっ_て_いる(EVENT[6], ENTITY[1]))
+
+# ::id 37_wikipedia_KYOTO_BDS_00005,42;NJ
+# ::snt 印可 の 証明書 や 由来 ある 文書 を 火中 に 投じ た 。
+∃ ENTITY[1] EVENT[10] ENTITY[9] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[4] ENTITY[3] (印可(ENTITY[4]) ∧ の_証明書(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ EVENT[8] ENTITY[7] ENTITY[5] (
+    由来(ENTITY[7]) ∧
+     ある(EVENT[8], (ENTITY[5], ENTITY[7])) ∧ 文書(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+   火中(ENTITY[9]) ∧
+    past(EVENT[10]) ∧ 投じ_た(EVENT[10], ENTITY[1], GROUP[2]) ∧ に(EVENT[10]) = ENTITY[9])
+
+# ::id 38_wikipedia_KYOTO_BDS_00005,43;NJ
+# ::snt 男色 はもとより 、 仏教 の 戒律 で 禁じ られ て い た 飲酒 · 肉食 や 女犯 を 行い 、 盲目 の 「 森侍者 」 （ しんじしゃ ） という 側女 が い たり 、 「 岐翁 紹禎 」 という 実子 の 弟子 が い た 。
+∃ SITUATION[2] ENTITY[1] EVENT[14] EVENT[17] EVENT[20] GROUP[3] ENTITY[16] ENTITY[15] ENTITY[19] ENTITY[18] (
+ ENTITY[1] = *pro* ∧
+  CONJ_はもとより(∃ ENTITY[4] (男色(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ EVENT[9] ENTITY[8] ENTITY[7] GROUP[10] ENTITY[5] (
+    仏教(ENTITY[8]) ∧
+     の_戒律(ENTITY[8], ENTITY[7]) ∧
+      CONJ_や(∃ ENTITY[11] (飲酒(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+       ∃ ENTITY[12] (肉食(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])),
+       ∃ ENTITY[13] (女犯(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10]))) ∧
+       禁じ_て_い_た(EVENT[9], _, ENTITY[5]) ∧ で(EVENT[9]) = ENTITY[7] ∧ equals(GROUP[10], ENTITY[5]) ∧
+        past(EVENT[9]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   盲目(ENTITY[16]) ∧
+    namely_-ENTITY-(ENTITY[しんじしゃ], ENTITY[森侍者]) ∧
+     という_側女(ENTITY[森侍者], ENTITY[15]) ∧ の_側女(ENTITY[16], ENTITY[15]) ∧
+      FACT(SITUATION[2], 行い(EVENT[14], ENTITY[1], GROUP[3]) ∧ い(EVENT[17], ENTITY[1], ENTITY[15])) ∧
+       実子(ENTITY[19]) ∧
+        の_弟子(ENTITY[19], ENTITY[18]) ∧ という_弟子(ENTITY[岐翁_紹禎], ENTITY[18]) ∧
+         past(EVENT[20]) ∧ い_た(EVENT[20], ENTITY[1], ENTITY[18]) ∧ たり(EVENT[20]) = SITUATION[2])
+
+# ::id 39_wikipedia_KYOTO_BDS_00005,44;NJ
+# ::snt 朱鞘 の 木刀 を 差す など 、 風変わり な 格好 を し て 街 を 歩き まわっ た 。
+∃ ATTRIB[7] SITUATION[3] ENTITY[1] EVENT[6] EVENT[8] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  朱鞘(ENTITY[5]) ∧
+   の_木刀(ENTITY[5], ENTITY[4]) ∧
+    FACT(SITUATION[3], 差す(EVENT[6], _, ENTITY[4])) ∧
+     風変わり_な(ATTRIB[7]) ∧
+      ATTRIBUTE_格好(ATTRIB[7], ENTITY[2]) ∧ など_格好(SITUATION[3], ENTITY[2]) ∧
+       街(ENTITY[9]) ∧
+        past(EVENT[10]) ∧ CONJ_te(し_て(EVENT[8], ENTITY[1], ENTITY[2]), 歩き_まわっ_た(EVENT[10], ENTITY[1], ENTITY[9])))
+
+# ::id 40_wikipedia_KYOTO_BDS_00005,45;NJ
+# ::snt 親交 の あっ た 本願寺 門主 蓮如 の 留守 中 に 居室 に 上がり こみ 、 蓮如 の 持念仏 の 阿弥陀如来像 を 枕 に 昼寝 を し た 。
+∃ ENTITY[1] EVENT[7] EVENT[8] EVENT[10] EVENT[13] EVENT[15] ENTITY[6] ENTITY[4] ENTITY[9] ENTITY[2] ENTITY[11] ENTITY[12] ENTITY[14] (
+ ENTITY[1] = *pro* ∧
+  親交(ENTITY[6]) ∧
+   あっ_た(EVENT[7], (_, ENTITY[6]), _, ENTITY[蓮如]) ∧
+    本願寺_門主(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[蓮如]) ∧
+      留守(EVENT[8], ENTITY[蓮如]) ∧ MSR(EVENT[8]) = ENTITY[2] ∧ 中(ENTITY[2]) ∧
+       居室(ENTITY[9]) ∧
+        の_持念仏(ENTITY[蓮如], ENTITY[11]) ∧
+         の_xxx(ENTITY[11], ENTITY[阿弥陀如来像]) ∧
+          枕(ENTITY[12]) ∧
+           昼寝(ENTITY[14]) ∧
+            past(EVENT[7]) ∧
+             past(EVENT[15]) ∧
+              上がり_こみ(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+               に(EVENT[10]) = ENTITY[2] ∧
+               xxx(EVENT[13], ENTITY[1], ENTITY[阿弥陀如来像], ENTITY[12]) ∧ し_た(EVENT[15], ENTITY[1], ENTITY[14]))
+
+# ::id 41_wikipedia_KYOTO_BDS_00005,46;NJ
+# ::snt その 時 に 帰宅 し た 蓮如 上人 は 『 俺 の 商売 道具 に 何 を する 』 と言う 発言 を 残し て いる 。
+∃ EVENT[10] ENTITY[4] EVENT[3] ENTITY[2] (
+ 時(ENTITY[2]) ∧
+  帰宅する.0_た(EVENT[3], ENTITY[蓮如]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+   namely_-ENTITY-(ENTITY[上人], ENTITY[蓮如]) ∧
+    past(EVENT[3]) ∧
+     THAT_発言(QUEST(∃ ENTITY[7] ENTITY[5] EVENT[9] ENTITY[6] ? ENTITY[8] (
+                ENTITY[5] = *pro*{ENTITY[蓮如], ENTITY[上人], ENTITY[2]} ∧
+                 ENTITY[7] = 俺{ENTITY[5], ENTITY[蓮如], ENTITY[上人], ENTITY[2]} ∧
+                  の_商売_道具(ENTITY[7], ENTITY[6]) ∧
+                   する(EVENT[9], ENTITY[5], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[6])),
+      ENTITY[4]) ∧ 残し_て_いる(EVENT[10], ENTITY[蓮如], ENTITY[4]))
+
+# ::id 42_wikipedia_KYOTO_BDS_00005,47;NJ
+# ::snt 正月 に 、 杖 の 頭 に ドクロ を しつらえ 、 「 ご用心 、 ご用心 」 と 叫び ながら 練り歩い た 。
+∃ ENTITY[1] EVENT[6] EVENT[8] EVENT[7] EVENT[9] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  正月(ENTITY[2]) ∧
+   杖(ENTITY[4]) ∧
+    の_頭(ENTITY[4], ENTITY[3]) ∧
+     ドクロ(ENTITY[5]) ∧
+      past(EVENT[9]) ∧
+       しつらえ(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[3] ∧
+        CRD_ながら(叫び(EVENT[7], ENTITY[1], xxx(EVENT[8])),
+         練り歩い_た(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[2]))
+
+# ::id 43_wikipedia_KYOTO_BDS_00005,48;NJ
+# ::snt こうした 一見 奇抜 な 言動 は 、 中国 臨済宗 の 高僧 として 知ら れる 普化 など 唐代 の 禅者 と 通じる もの が あり 、 教義 の 面 で は 禅宗 の 風狂 の 精神 の 表れ と さ れる 。
+∃ ATTRIB[2] EVENT[8] EVENT[9] EVENT[10] EVENT[17] ENTITY[7] ENTITY[5] ENTITY[3] ENTITY[16] ENTITY[15] ENTITY[14] ENTITY[13] ENTITY[12] ENTITY[11] ENTITY[1] (
+ 一見_奇抜_な(ATTRIB[2]) ∧
+  ATTRIBUTE_言動(ATTRIB[2], ENTITY[1]) ∧
+   教義(ENTITY[12]) ∧
+    の_面(ENTITY[12], ENTITY[11]) ∧
+     の_高僧(ENTITY[中国_臨済宗], ENTITY[7]) ∧
+      知ら(EVENT[8], _, ENTITY[普化]) ∧ として(EVENT[8]) = ENTITY[7] ∧
+       の_禅者(ENTITY[唐代], ENTITY[5]) ∧ など_禅者(ENTITY[普化], ENTITY[5]) ∧
+        通じる(EVENT[9], ENTITY[3]) ∧ と(EVENT[9]) = ENTITY[5] ∧ もの(ENTITY[3]) ∧
+         禅宗(ENTITY[15]) ∧
+          風狂(ENTITY[16]) ∧
+           の_精神(ENTITY[16], ENTITY[14]) ∧ の__精神(ENTITY[15], ENTITY[14]) ∧
+            の_表れ(ENTITY[14], ENTITY[13]) ∧
+             あり(EVENT[10], (ENTITY[1], ENTITY[3])) ∧
+              さ(EVENT[17], _, ENTITY[1], ENTITY[13]) ∧ で(EVENT[17]) = ENTITY[11])
+
+# ::id 44_wikipedia_KYOTO_BDS_00005,49;NJ
+# ::snt と同時に 、 こうした 行動 を通して 、 仏教 の 権威 や 形骸化 を 批判・風刺 し 、 仏教 の 伝統化 や 風化 に 警鐘 を 鳴らす もの で も あっ た 。
+∃ ENTITY[1] EVENT[9] EVENT[15] EVENT[16] GROUP[5] ENTITY[14] GROUP[10] ENTITY[3] ENTITY[2] (
+ 行動(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ ENTITY[7] ENTITY[6] (仏教(ENTITY[7]) ∧ の_権威(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[8] (形骸化(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5]))) ∧
+    CONJ_や(∃ ENTITY[12] ENTITY[11] (仏教(ENTITY[12]) ∧ の_伝統化(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+     ∃ ENTITY[13] (風化(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10]))) ∧
+     警鐘(ENTITY[14]) ∧
+      批判.風刺する.0(EVENT[9], ENTITY[3], GROUP[5]) ∧
+       鳴らす(EVENT[15], ENTITY[3], ENTITY[14]) ∧ に(EVENT[15]) = GROUP[10] ∧ もの(ENTITY[3]) ∧
+       past(EVENT[16]) ∧ で_も_あっ_た(EVENT[16], ENTITY[1], ENTITY[3]) ∧ を通して(EVENT[16]) = ENTITY[2])
+
+# ::id 45_wikipedia_KYOTO_BDS_00005,50;NJ
+# ::snt 彼 の 禅風 は 、 直筆 の 法語 として 「 七仏通誡偈 」 が 残さ れ て いる こと から も 伺える 。
+∃ SITUATION[3] ENTITY[2] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ ENTITY[2] = 彼 ∧
+  の_禅風(ENTITY[2], ENTITY[1]) ∧
+   直筆(ENTITY[5]) ∧
+    の_法語(ENTITY[5], ENTITY[4]) ∧
+     こと(SITUATION[3], 残さ_て_いる(EVENT[6], _, ENTITY[七仏通誡偈]) ∧ として(EVENT[6]) = ENTITY[4]) ∧
+      伺える(EVENT[7], ENTITY[1]) ∧ から(EVENT[7]) = SITUATION[3])
+
+# ::id 46_wikipedia_KYOTO_BDS_00005,51;NJ
+# ::snt この 戒律 や 形式 に とらわれ ない 人間臭い 生き方 は 民衆 の 共感 を 呼び 、 江戸 時代 に 彼 を モデル と し て 一休咄 に 代表 さ れる 頓知咄 （ とんち ばなし ） を 生み出す 元 と なっ た 。
+∃ ENTITY[14] ENTITY[12] SITUATION[11] ATTRIB[7] ENTITY[9] ENTITY[8] ENTITY[15] ENTITY[13] EVENT[10] EVENT[16] EVENT[18] EVENT[19] EVENT[20] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[1] (
+ 戒律(ENTITY[4]) ∧
+  形式(ENTITY[5]) ∧
+   CONJ_や(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+    人間臭い(ATTRIB[7]) ∧
+     ¬ ∃ EVENT[6] (とらわれ(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = GROUP[3]) ∧
+      ATTRIBUTE_生き方(ATTRIB[7], ENTITY[1]) ∧
+      past(EVENT[20]) ∧
+       民衆(ENTITY[9]) ∧
+        の_共感(ENTITY[9], ENTITY[8]) ∧
+         ENTITY[12] = *pro*{ENTITY[1], ENTITY[8], ENTITY[9], ENTITY[5], ENTITY[4]} ∧
+          江戸_時代(ENTITY[13]) ∧
+           ENTITY[14] = 彼{ENTITY[1], ENTITY[8], ENTITY[9], ENTITY[5], ENTITY[4]} ∧
+            モデル(ENTITY[15]) ∧
+             代表する.0(EVENT[18], ENTITY[一休咄], ENTITY[頓知咄]) ∧
+              namely_-ENTITY-(ENTITY[とんち_ばなし], ENTITY[頓知咄]) ∧
+               元(SITUATION[11],
+                CONJ_te(し_て(EVENT[16], ENTITY[12], ENTITY[14], ENTITY[15]) ∧ に(EVENT[16]) = ENTITY[13],
+                 生み出す(EVENT[19], ENTITY[12], ENTITY[頓知咄]) ∧ に(EVENT[19]) = ENTITY[13])) ∧
+                呼び(EVENT[10], ENTITY[1], ENTITY[8]) ∧
+                 なっ_た(EVENT[20], ENTITY[1]) ∧ と(EVENT[20]) = SITUATION[11])
+
+# ::id 47_wikipedia_KYOTO_BDS_00005,52;NJ
+# ::snt 一休 は 能筆 で 知ら れる 。
+∃ EVENT[2] ENTITY[1] (能筆(ENTITY[1]) ∧ 知ら(EVENT[2], _, ENTITY[一休]) ∧ で(EVENT[2]) = ENTITY[1])
+
+# ::id 48_wikipedia_KYOTO_BDS_00005,53;NJ
+# ::snt 一休 が 村田 珠光 の 師 で ある という 伝承 が あり 、 茶人 の 間 で 墨蹟 が 極めて 珍重 さ れ た 。
+∃ EVENT[3] EVENT[4] EVENT[8] ENTITY[2] ENTITY[1] ENTITY[6] ENTITY[7] ENTITY[5] (
+ の_師(ENTITY[村田_珠光], ENTITY[2]) ∧
+  THAT_伝承(で_ある(EVENT[3], ENTITY[一休], ENTITY[2]), ENTITY[1]) ∧
+   茶人(ENTITY[6]) ∧
+    の_間(ENTITY[6], ENTITY[5]) ∧
+     墨蹟(ENTITY[7]) ∧
+      ADV_極めて(EVENT[8]) ∧
+       past(EVENT[8]) ∧
+        あり(EVENT[4], ENTITY[1]) ∧ 珍重する.0_た(EVENT[8], _, ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[5])
+
+# ::id 49_wikipedia_KYOTO_BDS_00005,54;NJ
+# ::snt （ なお 、 珠光 の 師 という 説 は 現在 の 研究 で は やや 疑わしい と さ れる 。 ）
+∃ SITUATION[3] SITUATION[9] EVENT[6] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ の_師(ENTITY[珠光], ENTITY[2]) ∧
+  という_説(ENTITY[2], ENTITY[1]) ∧
+   現在(ENTITY[5]) ∧
+    の_研究(ENTITY[5], ENTITY[4]) ∧
+     ADV_なお(SITUATION[9]) ∧
+      ADV_やや(EVENT[6]) ∧
+       FACT(SITUATION[3], 疑わしい(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = ENTITY[4]) ∧
+        FACT(SITUATION[9], さ(EVENT[8], _, ENTITY[1], SITUATION[3])))
+
+# ::id 50_wikipedia_KYOTO_BDS_00005,55;NJ
+# ::snt 著書 （ 詩集 ） は 「 狂雲集 」 、 「 続狂雲集 」 、 「 自戒集 」 、 「 骸骨 」 など 。
+∃ EVENT[4] GROUP[3] ENTITY[1] ENTITY[2] (
+ 著書(ENTITY[2]) ∧
+  詩集(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧
+    is_element_of(ENTITY[狂雲集], GROUP[3]) ∧ is_element_of(ENTITY[続狂雲集], GROUP[3]) ∧ is_element_of(ENTITY[自戒集], GROUP[3]) ∧
+     is_element_of(ENTITY[骸骨], GROUP[3]) ∧ xxx(EVENT[4], ENTITY[2]) ∧ など(EVENT[4]) = GROUP[3])
+
+# ::id 51_wikipedia_KYOTO_BDS_00005,56;NJ
+# ::snt 東山 文化 を 代表 する 人物 で も ある 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  東山_文化(ENTITY[4]) ∧
+   代表する.0(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 人物(ENTITY[2]) ∧ で_も_ある(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 52_wikipedia_KYOTO_BDS_00005,57;NJ
+# ::snt 足利 義政 と その 夫人 日野 富子 の 幕政 を 批判 し た こと も 知ら れる 。
+∃ ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] GROUP[4] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  CONJ_と(is_element_of(ENTITY[足利_義政], GROUP[4]),
+   ∃ ENTITY[5] (夫人(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[5], ENTITY[日野_富子]) ∧ is_element_of(ENTITY[日野_富子], GROUP[4]))) ∧
+   の_幕政(GROUP[4], ENTITY[3]) ∧
+    こと(SITUATION[1], 批判する.0_た(EVENT[6], ENTITY[2], ENTITY[3])) ∧
+     past(EVENT[6]) ∧ 知ら(EVENT[7], _, SITUATION[1]))
+
+# ::id 53_wikipedia_KYOTO_BDS_00005,65;NJ
+# ::snt なお 、 アントニオ猪木ら によって 、 『 一休 の 言葉 』 として 流布 さ れ て い た 「 この 道 を 行け ば どう なる もの か ・・・ 」 に 始まる 言葉 は 実際 に は 一休 の 言葉 で は なく 、 文言 に 多少 の 相違 は ある ものの 、 もとは 清沢 哲夫 の 「 道 」 という 詩 で あっ た と 見 られる 。
+∃ SITUATION[1] EVENT[24] ENTITY[9] ENTITY[15] (
+ 道(ENTITY[9]) ∧
+  実際(ENTITY[15]) ∧
+   と(SITUATION[1],
+    は SITUATION[7] EVENT[5] EVENT[14] ENTITY[4] ENTITY[2] (
+     (流布する.0_て_い_た(EVENT[5], ENTITY[アントニオ猪木ら], ENTITY[2]) ∧ として(EVENT[5]) = ENTITY[4] ∧
+        始まる(EVENT[14], ENTITY[2]) ∧ に(EVENT[14]) = SITUATION[7] ∧ 言葉(ENTITY[2]) ∧
+      の_言葉(ENTITY[一休], ENTITY[4]) ∧
+      か(SITUATION[7],
+       QUEST(∃ ENTITY[8] ? ENTITY[11] (
+             ENTITY[8] = *pro*{ENTITY[2], ENTITY[4], ENTITY[アントニオ猪木ら], ENTITY[一休]} ∧
+              ∀ EVENT[10] CND_ば(行け(EVENT[10], ENTITY[8], ENTITY[9]),
+                  ∃ EVENT[12] (ADV(ENTITY[11], EVENT[12]) ∧ なる_もの(EVENT[12], ENTITY[8])))))) ∧
+      past(EVENT[5])),
+     ∃ EVENT[22] ENTITY[16] ENTITY[18] ENTITY[21] (
+      の_言葉(ENTITY[一休], ENTITY[16]) ∧
+       文言(ENTITY[18]) ∧
+        の_xxx(ENTITY[清沢_哲夫], ENTITY[道]) ∧
+         という_詩(ENTITY[道], ENTITY[21]) ∧
+          ADV_もとは(EVENT[22]) ∧
+           past(EVENT[22]) ∧
+            ¬ ∃ EVENT[17] (で_は(EVENT[17], ENTITY[2], ENTITY[16]) ∧ に(EVENT[17]) = ENTITY[15]) ∧
+             CRD_ものの(多少_の ENTITY[19] (相違(ENTITY[19]),
+                   ∃ EVENT[20] (ある(EVENT[20], ENTITY[19]) ∧ に(EVENT[20]) = ENTITY[18])),
+              で_あっ_た(EVENT[22], ENTITY[2], ENTITY[21]))))) ∧
+    ADV_なお(EVENT[24]) ∧ 見(EVENT[24], _, SITUATION[1]))
+
+# ::id 54_wikipedia_KYOTO_BDS_00005,66;NJ
+# ::snt （ 『 無常断章 』 に 収録 ； 一部 、 抜け ・ 間違い あり ） 。
+∃ ENTITY[1] EVENT[2] EVENT[7] GROUP[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  一部(ENTITY[3]) ∧
+   ∃ ENTITY[5] (抜け(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (間違い(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    収録(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[無常断章] ∧
+     あり(EVENT[7], (ENTITY[1], GROUP[4])) ∧ ADV(EVENT[7]) = ENTITY[3])
+
+# ::id 55_wikipedia_KYOTO_BDS_00005,91;NJ
+# ::snt 伝記
+∃ EVENT[2] ENTITY[1] (伝記(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 56_wikipedia_KYOTO_BDS_00005,92;NJ
+# ::snt 幼少期 は 頓知 小僧 で 、 青年 期 に 厳しい 修行 を 積ん で 名僧 と なっ た という 逸話 が 多い 。
+∃ ATTRIB[8] ENTITY[2] EVENT[5] EVENT[9] EVENT[11] EVENT[12] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[10] ENTITY[1] ENTITY[3] (
+ 幼少期(ENTITY[3]) ∧
+  ENTITY[2] = *pro* ∧
+   頓知_小僧(ENTITY[4]) ∧
+    青年_期(ENTITY[6]) ∧
+     厳しい(ATTRIB[8]) ∧
+      ATTRIBUTE_修行(ATTRIB[8], ENTITY[7]) ∧
+       名僧(ENTITY[10]) ∧
+        THAT_逸話(CONJ_te(で(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 時間(EVENT[5]) = ENTITY[3],
+              積ん_で(EVENT[9], ENTITY[2], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[6],
+              なっ_た(EVENT[11], ENTITY[2]) ∧ と(EVENT[11]) = ENTITY[10]), ENTITY[1]) ∧
+         past(EVENT[11]) ∧ 多い(EVENT[12], ENTITY[1]))
+
+# ::id 57_wikipedia_KYOTO_BDS_00005,93;NJ
+# ::snt 子供 向け の 物語 で は 、 特に この 傾向 が 強い 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] ENTITY[1] (
+ 子供_向け(ENTITY[2]) ∧
+  の_物語(ENTITY[2], ENTITY[1]) ∧
+   傾向(ENTITY[3]) ∧ ADV_特に(EVENT[4]) ∧ 強い(EVENT[4], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[1])
+
+# ::id 58_wikipedia_KYOTO_BDS_00005,94;NJ
+# ::snt また 、 幼少期 の 逸話 に は 、 頓知 で 和尚 や 足利 義満 を やり込める 話 が 添え られる こと が 多い 。
+∃ ENTITY[5] SITUATION[4] SITUATION[1] EVENT[9] EVENT[10] EVENT[11] GROUP[7] ENTITY[6] ENTITY[3] ENTITY[2] (
+ 幼少期(ENTITY[3]) ∧
+  の_逸話(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[5] = *pro*{ENTITY[2], ENTITY[3]} ∧
+    頓知(ENTITY[6]) ∧
+     CONJ_や(∃ ENTITY[8] (和尚(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])), is_element_of(ENTITY[足利_義満], GROUP[7])) ∧
+      話(SITUATION[4], やり込める(EVENT[9], ENTITY[5], GROUP[7]) ∧ で(EVENT[9]) = ENTITY[6]) ∧
+       こと(SITUATION[1], 添え(EVENT[10], _, SITUATION[4]) ∧ に(EVENT[10]) = ENTITY[2]) ∧
+        多い(EVENT[11], SITUATION[1]))
+
+# ::id 59_wikipedia_KYOTO_BDS_00005,95;NJ
+# ::snt これ は 『 一休咄 』 と 史実 の 一休宗純 を 一 つ の 物語 に し て おり 、 幼少期 について は 史実 から 遠い と 言える が 、 青年 期 以降 の エピソード のみ で は 堅い 話 と なる ので 、 親しみ を 持た せる ため に この よう に し た と 思わ れる 。
+∃ ENTITY[22] SITUATION[21] ENTITY[9] ENTITY[8] SITUATION[7] ENTITY[1] EVENT[6] EVENT[14] EVENT[10] EVENT[25] EVENT[23] EVENT[27] EVENT[28] ENTITY[5] ENTITY[4] GROUP[2] ENTITY[13] ENTITY[24] ENTITY[12] ENTITY[11] ENTITY[17] ENTITY[16] ENTITY[26] (
+ ENTITY[1] = これ ∧
+  幼少期(ENTITY[12]) ∧
+   について(ENTITY[12], ENTITY[11]) ∧
+    青年_期_以降(ENTITY[17]) ∧
+     の_エピソード(ENTITY[17], ENTITY[16]) ∧
+      よう(ENTITY[26]) ∧
+       CONJ_と(is_element_of(ENTITY[一休咄], GROUP[2]),
+        ∃ ENTITY[3] (史実(ENTITY[3]) ∧ の_xxx(ENTITY[3], ENTITY[一休宗純]) ∧ is_element_of(ENTITY[一休宗純], GROUP[2]))) ∧
+        CD_一_つ(ENTITY[5]) ∧
+         の_物語(ENTITY[5], ENTITY[4]) ∧
+          ENTITY[8] = *pro*{ENTITY[4], ENTITY[5], ENTITY[一休宗純], ENTITY[一休咄]} ∧
+           ENTITY[9] = *pro*{ENTITY[8], ENTITY[4], ENTITY[5], ENTITY[一休宗純], ENTITY[一休咄]} ∧
+            史実(ENTITY[13]) ∧
+             ENTITY[22] = *pro*{ENTITY[13], ENTITY[16], ENTITY[17], ENTITY[11], ENTITY[12], ENTITY[4], ENTITY[5], ENTITY[一休宗純], ENTITY[一休咄]} ∧
+              親しみ(ENTITY[24]) ∧
+               ため(SITUATION[21], せる(EVENT[23], ENTITY[8], ENTITY[22], 持た(EVENT[25], ENTITY[22], ENTITY[24]))) ∧
+                と(SITUATION[7],
+                 CRD_ので(CONJ_が(言える(EVENT[10], ENTITY[9],
+                            遠い(EVENT[14], ENTITY[11]) ∧ から(EVENT[14]) = ENTITY[13]),
+                       のみ_は ENTITY[15] (ENTITY[15] = ENTITY[16],
+                        ∃ ATTRIB[19] EVENT[20] ENTITY[18] (
+                         堅い(ATTRIB[19]) ∧
+                          ATTRIBUTE_話(ATTRIB[19], ENTITY[18]) ∧
+                           なる(EVENT[20], ENTITY[9], ENTITY[18]) ∧
+                            で(EVENT[20]) = ENTITY[15]))),
+                  し_た(EVENT[27], ENTITY[8]) ∧ に(EVENT[27]) = ENTITY[26] ∧
+                   に(EVENT[27]) = SITUATION[21])) ∧
+                 past(EVENT[27]) ∧
+                  し_て_おり(EVENT[6], ENTITY[1], GROUP[2], ENTITY[4]) ∧ 思わ(EVENT[28], _, SITUATION[7]))
+
+# ::id 60_wikipedia_KYOTO_BDS_00005,96;NJ
+# ::snt なお 、 幼少期 の 一休 の 名前 や 、 寺 の 名前 、 生まれ について は 明示 する もの と し ない もの が ある 。
+∃ GROUP[7] EVENT[15] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[6] GROUP[1] (
+ 幼少期(ENTITY[3]) ∧
+  の_xxx(ENTITY[3], ENTITY[一休]) ∧
+   の_名前(ENTITY[一休], ENTITY[2]) ∧
+    寺(ENTITY[5]) ∧
+     の_名前(ENTITY[5], ENTITY[4]) ∧
+      生まれ(ENTITY[6]) ∧
+       CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[4], GROUP[1]), is_element_of(ENTITY[6], GROUP[1])) ∧
+        ADV_なお(EVENT[15]) ∧
+         CONJ_と(∃ ENTITY[8] EVENT[10] (明示する.0(EVENT[10], ENTITY[8]) ∧ もの(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+          ∃ ENTITY[11] (
+           ¬ ∃ ENTITY[13] EVENT[14] (
+                 ENTITY[13] = *pro*{ENTITY[6], ENTITY[4], ENTITY[5], ENTITY[2], ENTITY[一休], ENTITY[3]} ∧
+                  し(EVENT[14], ENTITY[11], ENTITY[13])) ∧ もの(ENTITY[11]) ∧
+            is_element_of(ENTITY[11], GROUP[7]))) ∧ ある(EVENT[15], GROUP[7]) ∧ について(EVENT[15]) = GROUP[1])
+
+# ::id 61_wikipedia_KYOTO_BDS_00005,97;NJ
+# ::snt 『 一休咄 』
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[一休咄])
+
+# ::id 62_wikipedia_KYOTO_BDS_00005,98;NJ
+# ::snt 「 一休さん の 頓知 話 」 として 知ら れる 『 一休咄 』 は 、 一休 の 遷化 から 200 年 余り 後 の 元禄年間 （ 江戸 時代 前期 ） に 世 に 現れ た 。
+∃ EVENT[8] ENTITY[6] ENTITY[5] ENTITY[7] ENTITY[4] EVENT[3] ENTITY[2] (
+ の_頓知_話(ENTITY[一休さん], ENTITY[2]) ∧
+  知ら(EVENT[3], _, ENTITY[一休咄]) ∧ として(EVENT[3]) = ENTITY[2] ∧
+   の_遷化(ENTITY[一休], ENTITY[4]) ∧
+    (CD_200_年_余り(ENTITY[6]), 後(ENTITY[6])) ∧
+     の_xxx(ENTITY[6], ENTITY[元禄年間]) ∧
+      江戸_時代_前期(ENTITY[5]) ∧
+       namely_-ENTITY-(ENTITY[5], ENTITY[元禄年間]) ∧
+        世(ENTITY[7]) ∧
+         past(EVENT[8]) ∧
+          現れ_た(EVENT[8], ENTITY[一休咄]) ∧ に(EVENT[8]) = ENTITY[7] ∧ に(EVENT[8]) = ENTITY[元禄年間] ∧
+           から(EVENT[8]) = ENTITY[4])
+
+# ::id 63_wikipedia_KYOTO_BDS_00005,99;NJ
+# ::snt 作者 は 不明 で ある 。
+∃ EVENT[2] ENTITY[1] (作者(ENTITY[1]) ∧ 不明_で_ある(EVENT[2], ENTITY[1]))
+
+# ::id 64_wikipedia_KYOTO_BDS_00005,100;NJ
+# ::snt 『 一休咄 』 は 、 一休 の 事績 の 他 に 、 一休 に なぞらえ た 民間 説話 や 登場 人物 を 他 の 高僧 から 一休 に 置き換え た 伝説 が 数多く 含む ため 、 史実 と は 言い 難い 。
+∃ SITUATION[5] SITUATION[2] ARB[1] EVENT[17] EVENT[19] EVENT[20] ENTITY[4] GROUP[6] ENTITY[18] ENTITY[3] (
+ ARB[1] = *arb* ∧
+  の_事績(ENTITY[一休], ENTITY[4]) ∧
+   の_他(ENTITY[4], ENTITY[3]) ∧
+    CONJ_や(∃ ENTITY[8] EVENT[9] ENTITY[7] (
+          ENTITY[8] = *pro*{ENTITY[一休咄], ENTITY[3], ENTITY[一休], ENTITY[4]} ∧
+           THAT_民間_説話(なぞらえ_た(EVENT[9], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[一休], ENTITY[7]) ∧
+            past(EVENT[9]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[11] EVENT[15] ENTITY[14] ENTITY[13] ENTITY[12] ENTITY[10] (
+      ENTITY[11] = *pro*{ENTITY[一休], ENTITY[一休咄], ENTITY[3], ENTITY[4]} ∧
+       登場_人物(ENTITY[12]) ∧
+        他(ENTITY[14]) ∧
+         の_高僧(ENTITY[14], ENTITY[13]) ∧
+          THAT_伝説(置き換え_た(EVENT[15], ENTITY[11], ENTITY[12]) ∧ に(EVENT[15]) = ENTITY[一休] ∧
+                から(EVENT[15]) = ENTITY[13], ENTITY[10]) ∧
+           past(EVENT[15]) ∧ is_element_of(ENTITY[10], GROUP[6]))) ∧
+     FACT(SITUATION[5], 数多く ENTITY[16] (is_element_of(ENTITY[16], GROUP[6]), 含む(EVENT[17], ENTITY[一休咄], ENTITY[16]))) ∧
+      史実(ENTITY[18]) ∧
+       FACT(SITUATION[2],
+        xxx(EVENT[19], ENTITY[一休咄], ENTITY[18]) ∧ ため(EVENT[19]) = SITUATION[5] ∧
+         に(EVENT[19]) = ENTITY[3]) ∧ 言い_難い(EVENT[20], ARB[1], SITUATION[2]))
+
+# ::id 65_wikipedia_KYOTO_BDS_00005,101;NJ
+# ::snt 民衆 の 願い を 歴史 上 の 人物 に 仮託 し た 読物 で ある 。
+∃ ENTITY[1] EVENT[8] EVENT[9] ENTITY[5] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  民衆(ENTITY[5]) ∧
+   の_願い(ENTITY[5], ENTITY[4]) ∧
+    歴史_上(ENTITY[7]) ∧
+     の_人物(ENTITY[7], ENTITY[6]) ∧
+      仮託する.0_た(EVENT[8], ENTITY[2], ENTITY[4], ENTITY[6]) ∧ 読物(ENTITY[2]) ∧
+       past(EVENT[8]) ∧ で_ある(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 66_wikipedia_KYOTO_BDS_00005,102;NJ
+# ::snt 『 一休咄 』 は 、 現在 も 子ども 向け の 読物 として 親しま れ て おり 、 これ を 翻案 し た TV アニメ 『 一休さん 』 も 製作 さ れ た 。
+∃ ENTITY[7] EVENT[4] EVENT[8] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[5] (
+ 現在(ENTITY[1]) ∧
+  子ども_向け(ENTITY[3]) ∧
+   の_読物(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[7] = これ{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[一休咄]} ∧
+     翻案する.0_た(EVENT[8], ENTITY[一休さん], ENTITY[7]) ∧
+      TV_アニメ(ENTITY[5]) ∧
+       namely_-ENTITY-(ENTITY[5], ENTITY[一休さん]) ∧
+        past(EVENT[8]) ∧
+         past(EVENT[9]) ∧
+          親しま_て_おり(EVENT[4], _, ENTITY[一休咄]) ∧ として(EVENT[4]) = ENTITY[2] ∧
+           時間(EVENT[4]) = ENTITY[1] ∧ 製作する.0_た(EVENT[9], _, ENTITY[一休さん]))
+
+# ::id 67_wikipedia_KYOTO_BDS_00005,103;NJ
+# ::snt この 物語 を通じて 、 歴史 の 授業 以前 に 、 一休 の 名 はもとより 、 足利 義満 や 鹿苑寺 など 室町 時代 について の 知識 を 得 た 人 は 多い 。
+∃ EVENT[12] ENTITY[3] ENTITY[2] EVENT[11] ENTITY[7] ENTITY[10] GROUP[9] ENTITY[8] GROUP[6] ENTITY[4] ENTITY[1] (
+ 物語(ENTITY[1]) ∧
+  の_名(ENTITY[一休], ENTITY[7]) ∧
+   CONJ_や(is_element_of(ENTITY[足利_義満], GROUP[9]), is_element_of(ENTITY[鹿苑寺], GROUP[9])) ∧
+    室町_時代(ENTITY[10]) ∧
+     について_の_知識(ENTITY[10], ENTITY[8]) ∧ など_知識(GROUP[9], ENTITY[8]) ∧
+      CONJ_はもとより(is_element_of(ENTITY[7], GROUP[6]), is_element_of(ENTITY[8], GROUP[6])) ∧
+       得_た(EVENT[11], ENTITY[4], GROUP[6]) ∧ 人(ENTITY[4]) ∧
+        past(EVENT[11]) ∧
+         歴史(ENTITY[3]) ∧
+          の_授業_以前(ENTITY[3], ENTITY[2]) ∧
+           多い(EVENT[12], ENTITY[4]) ∧ に(EVENT[12]) = ENTITY[2] ∧ を通じて(EVENT[12]) = ENTITY[1])

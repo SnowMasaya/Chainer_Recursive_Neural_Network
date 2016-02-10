@@ -1,0 +1,290 @@
+# ::id 1_blog_KNB_004_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 携帯_電話))
+
+# ::id 2_blog_KNB_004_Keitai_1-1-1-01;NJ
+# ::snt お金 が かかる ん です 。
+( EVENT-2 / かかる_ん_です
+      :ARG0 ( ENTITY-1 / お金))
+
+# ::id 3_blog_KNB_004_Keitai_1-1-10-01;NJ
+# ::snt 著作権 保護 か 何 か よく わから ない けれども ｍｐ３ ファイル を 直接 取り込む の は 不可能 みたい で 、 これ が 不便 で ある 。
+( CONJ-19 / CONJ_te
+      :op1 ( CRD-18 / けれども
+             :op1 ( NEG-16 / NEG (
+                           :domain ( is
+                                  :LINK ENTITY-3 ( ENTITY-3 ( ENTITY
+                                                :OF ( ENTITY-4 / 著作権_保護))) ENTITY-2) ( EVENT-5 ( わから
+                                         :ARG0 ( ENTITY-1 / pro
+                                                :pick0)
+                                         :ARG1 ENTITY-2
+                                         :MOD ( mod-20 / よく)))))
+             :op2 ( EVENT-12 / 不可能_で
+                    :ARG0 ( SITUATION-7 / の
+                           :THAT ( EVENT-11 / 取り込む
+                                  :ARG0 ( ENTITY-8 / pro
+                                         :pick0)
+                                  :ARG1 ( ENTITY-9 / ｍｐ３_ファイル)
+                                  :ADV ( ENTITY-10 / 直接)))
+                    :domain-of ( MD-17 / MD_みたい)))
+      :op2 ( EVENT-14 / 不便_で_ある
+             :ARG0 ( PICK-15 / or
+                    :op1 ENTITY-9
+                    :op2 ENTITY-10)))
+
+# ::id 4_blog_KNB_004_Keitai_1-1-11-01;NJ
+# ::snt たとえば 、 昔 パソコン に 保存 し た ＣＤ の データ を 携帯 に 取り込も う と 思っ たら 、 いったん ＣＤ−Ｒ もしくは ＲＷ に 出力 し て から で ないといけない 。
+( CRD-27 / たら
+      :op1 ( EVENT-2 / 思っ
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :THAT ( EVENT-12 / 取り込も
+                    :ARG0 ( ENTITY-3 / ENTITY
+                           :namely ENTITY-1)
+                    :ARG1 ( ENTITY-4 / データ
+                           :の ( ENTITY-10 / ＣＤ)
+                           :ARG1-of ( EVENT-9 / 保存する.0_た
+                                  :ARG0 ( PICK-23 / or
+                                         :op1 ENTITY-3
+                                         :op2 ENTITY-1)
+                                  :に ( ENTITY-8 / パソコン)
+                                  :TMP ( TIME-7 / 昔)
+                                  :MOD ( mod-28 / past)))
+                    :に ( ENTITY-11 / 携帯)
+                    :domain-of ( MD-24 / MD_う)))
+      :op2 ( EVENT-20 / で
+             :ARG0 ( ENTITY-13 / pro
+                    :pick0)
+             :TE_から ( EVENT-18 / 出力する.0_て
+                    :ARG0 ENTITY-13
+                    :に ( CONJ-25 / CONJ_もしくは
+                           :op1 ( GROUP-15 / AND
+                                  :op1 ( ENTITY-16 / ＣＤ − Ｒ)
+                                  :op2 ENTITY-31)
+                           :op2 ( GROUP-30 / AND
+                                  :op1 ( ENTITY-17 / ＲＷ)
+                                  :op2 ENTITY-32))
+                    :MOD ( mod-29 / いったん))
+             :domain-of ( MD-26 / MD_ないといけない)))
+
+# ::id 5_blog_KNB_004_Keitai_1-1-12-01;NJ
+# ::snt 音楽 用 の ＲＷ は 高い し Ｒ にしても いったん 記録 し たら もう 使え ない ので たくさん の 無駄 な ＣＤ−Ｒ が 発生 し て しまう の だ 。
+( CRD-18 / ので
+      :op1 ( CONJ-17 / CONJ_し
+             :op1 ( EVENT-5 / 高い
+                    :ARG0 ( ENTITY-3 / ＲＷ
+                           :の ( ENTITY-4 / 音楽_用)))
+             :op2 ( CND-15 / たら (
+                           :op1 ( EVENT-9 いったん) ( EVENT-9 ( 記録する.0
+                                         :ARG0 ( ENTITY-7 / ENTITY
+                                                :OF ( ENTITY-8 / Ｒ)))))
+                    :op2 ( EVENT-11 / 使え
+                           :ARG0 ( ARB-6 / arb
+                                  :pick0)
+                           :ARG1 ENTITY-7
+                           :MOD ( mod-19 / もう)
+                           :domain-of ( NEG-16 / NEG))))
+      :op2 ( EVENT-13 / 発生する.0_て_しまう_の_だ
+             :ARG0 ( ENTITY-1 / ＣＤ − Ｒ
+                    :ATTRIBUTE ( ATTRIB-2 / 無駄_な))))
+
+# ::id 6_blog_KNB_004_Keitai_1-1-13-01;NJ
+# ::snt 何とか なら ない もの か 。
+( EVENT-6 / EVENT
+      :LINK ( SITUATION-1 / SITUATION
+             :OF ( SITUATION-2 / もの
+                    :THAT ( EVENT-4 / なら
+                           :ARG0 ( ENTITY-3 / pro
+                                  :pick0)
+                           :MOD ( mod-9 / 何とか)
+                           :domain-of ( NEG-8 / NEG)))))
+
+# ::id 7_blog_KNB_004_Keitai_1-1-2-01;NJ
+# ::snt 私 の 携帯 料金 を 払っ て いる 親 いわく 「 そろそろ 料金 プラン の 変更 も 検討 せよ 」 と の こと 。
+( EVENT-12 / EVENT
+      :LINK ( ENTITY-1 / こと
+             :の ( SITUATION-2 / と
+                    :THAT ( EVENT-10 / 検討する.0
+                           :ARG0 ( ENTITY-3 / 親_いわく
+                                  :ARG0-of ( EVENT-7 / 払っ_て_いる
+                                         :ARG1 ( ENTITY-5 / 携帯_料金
+                                                :の ( PICK-13 / or
+                                                       :op1 ENTITY-3
+                                                       :op2 ENTITY-1))))
+                           :ARG1 ( ENTITY-8 / 変更
+                                  :の ( ENTITY-9 / 料金_プラン))
+                           :MOD ( mod-16 / そろそろ)
+                           :domain-of ( IMPERATIVE-15 / IMPERATIVE)))))
+
+# ::id 8_blog_KNB_004_Keitai_1-1-3-01;NJ
+# ::snt 請求書 によれば 通話 料金 は 無料 通話 分 より 少し 高い ぐらい だ けど 、 パケット 代 が １０万 円 分 くらい 。
+( CRD-13 / けど (
+             :op1 ( SITUATION-3 ( SITUATION
+                           :OF ( EVENT-6 / 高い
+                                  :ARG0 ( ENTITY-2 / 通話_料金)
+                                  :より ( ENTITY-5 / 無料_通話_分)
+                                  :MOD ( mod-14 / 少し)))) ( EVENT-8 ( だ
+                           :ARG0 ENTITY-2
+                           :ARG1 SITUATION-3))) (
+             :op2 / ENTITY-10 ( ENTITY
+                    :OF ( ENTITY-11 / CD_１０万_円
+                           :MOD ( mod-15 / 分))) ( EVENT-12 ( EVENT
+                           :ARG0 ( ENTITY-9 / パケット_代)
+                           :ARG1 ENTITY-10
+                           :によれば ( ENTITY-1 / 請求書)))))
+
+# ::id 9_blog_KNB_004_Keitai_1-1-3-02;NJ
+# ::snt もちろん 定額 で 使っ て いる ので そんな に も 請求 さ れ て ない
+( CRD-8 / ので
+      :op1 ( EVENT-3 / 使っ_て_いる
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :で ( ENTITY-2 / 定額))
+      :op2 ( EVENT-4 / 請求する.0_て
+             :ARG1 ENTITY-1
+             :MOD ( mod-10 / そんな_に_も))
+      :MOD ( mod-11 / もちろん)
+      :domain-of ( NEG-9 / NEG))
+
+# ::id 10_blog_KNB_004_Keitai_1-1-4-01;NJ
+# ::snt パケ 代 を 定額 に する と 実質 メール も ウェブ も 使い放題 に なる から 、 と 考え て 、 ウェブ で 検索 し たり 音楽 ダウンロード し たり と 好き放題 し て しまっ て こんな 料金 に なっ て しまう よう だ 。
+( CONJ-39 / CONJ_te
+      :op1 ( CONJ-37 / CONJ_te
+             :op1 ( EVENT-3 / 考え_て
+                    :ARG0 ( ENTITY-2 / ENTITY
+                           :namely ENTITY-1)
+                    :THAT ( CND-35 / と (
+                                  :op1 ( ARB-4 arb
+                                         :pick0) ( ENTITY-5 パケ_代) ( ENTITY-6 定額) ( EVENT-7 ( する
+                                                :ARG0 ARB-4
+                                                :ARG1 ENTITY-5
+                                                :に ENTITY-6)))
+                           :op2 ( EVENT-13 / なる
+                                  :ARG0 ( CONJ-34 / CONJ_も
+                                         :op1 ( GROUP-9 / AND
+                                                :op1 ( ENTITY-10 / メール)
+                                                :op2 ENTITY-41)
+                                         :op2 ( GROUP-40 / AND
+                                                :op1 ( ENTITY-11 / ウェブ)
+                                                :op2 ENTITY-42))
+                                  :に ( ENTITY-12 / 使い放題)
+                                  :ADV ( ENTITY-8 / 実質)
+                                  :domain-of ( MD-36 / MD_から))))
+             :op2 ( EVENT-14 / 好き放題する.0_て_しまっ
+                    :ARG0 ENTITY-2
+                    :THAT ( EVENT-21 / EVENT
+                           :ARG0 ( ENTITY-15 / ENTITY
+                                  :namely ( PICK-24 / or
+                                         :op1 ENTITY-2
+                                         :op2 ENTITY-1))
+                           :たり ( CONJ-26 / CONJ_たり
+                                  :op1 ( EVENT-18 / 検索する.0
+                                         :ARG0 ENTITY-15
+                                         :で ( ENTITY-17 / ウェブ))
+                                  :op2 ( EVENT-20 / ダウンロードする.0
+                                         :ARG0 ENTITY-15
+                                         :ARG1 ( ENTITY-19 / 音楽))))))
+      :op2 ( EVENT-23 / なっ_て_しまう_だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-22 / 料金)
+             :domain-of ( MD-38 / MD_よう)))
+
+# ::id 11_blog_KNB_004_Keitai_1-1-5-01;NJ
+# ::snt でも 定額 料金 そのもの が 高い ・・・
+( EVENT-3 / 高い
+      :ARG0 ( ENTITY-1 / 定額_料金
+             :RFL ( ENTITY-2 / そのもの
+                    :pick0)))
+
+# ::id 12_blog_KNB_004_Keitai_1-1-6-01;NJ
+# ::snt 携帯屋さん に 相談 に 行け ば いい の だろ う が 、 どうも 騙さ れ やすい 性分 な ので 、 向こう の 思う壺 に なら ない か 心配 だ 。
+( CONJ-28 / CONJ_が
+      :op1 ( EVENT-7 / いい_の_だろ
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :ば ( EVENT-6 / 行け
+                           :ARG0 ENTITY-1
+                           :に ( ENTITY-5 / 相談)
+                           :に ( ENTITY-4 / 携帯屋さん)))
+             :domain-of ( MD-26 / MD_う))
+      :op2 ( CRD-27 / ので
+             :op1 ( EVENT-13 / な
+                    :ARG0 ( ENTITY-8 / ENTITY
+                           :namely ( PICK-21 / or
+                                  :op1 ENTITY-4
+                                  :op2 ENTITY-5))
+                    :ARG1 ( SITUATION-9 / 性分
+                           :THAT ( EVENT-11 / 騙さ_やすい
+                                  :ARG1 ( PICK-22 / or
+                                         :op1 ENTITY-8
+                                         :op2 ENTITY-4
+                                         :op3 ENTITY-5)
+                                  :MOD ( mod-29 / どうも)))) (
+                    :op2 ( SITUATION-14 ( SITUATION
+                                  :OF ( EVENT-19 / なら
+                                         :ARG0 ( PICK-23 / or
+                                                :op1 ENTITY-4
+                                                :op2 ENTITY-5)
+                                         :に ( ENTITY-17 / 思う壺
+                                                :の ( ENTITY-18 / 向こう))
+                                         :domain-of ( NEG-25 / NEG)))) ( EVENT-20 ( 心配_だ
+                                  :ARG0 SITUATION-14)))))
+
+# ::id 13_blog_KNB_004_Keitai_1-1-7-01;NJ
+# ::snt 自分 で ある程度 調べ て 、 携帯屋さん の 意見 も 参考 に し て 考え て み よう 。
+( CONJ-10 / CONJ_te
+      :op1 ( EVENT-3 / 調べ_て
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :で ( ENTITY-2 / 自分
+                    :pick0)
+             :MOD ( mod-12 / ある程度))
+      :op2 ( EVENT-8 / し_て
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-5 / 意見
+                    :の ( ENTITY-6 / 携帯屋さん))
+             :ARG2 ( ENTITY-7 / 参考))
+      :op3 ( EVENT-9 / 考え_て_み_よう
+             :ARG0 ENTITY-1)
+      :domain-of ( IMPERATIVE-11 / IMPERATIVE))
+
+# ::id 14_blog_KNB_004_Keitai_1-1-8-01;NJ
+# ::snt 新しい 機種 も 気 に なる し 。
+( EVENT-4 / なる
+      :ARG0 ( ENTITY-1 / 機種
+             :ATTRIBUTE ( ATTRIB-2 / 新しい))
+      :ARG1 ( ENTITY-3 / 気)
+      :domain-of ( MD-5 / MD_し))
+
+# ::id 15_blog_KNB_004_Keitai_1-1-9-01;NJ
+# ::snt 音楽 ダウンロード といえば 、 ａｕ は 内臓 さ れ て いる 専用 の ミュージック プレーヤー で 音楽 を 聴こ う と 思っ たら 、 音楽 の データ を サイト から 購入 する か ＣＤ から 取り込ま ねばならない 。
+( CND-26 / たら (
+             :op1 ( ENTITY-4 ( ENTITY
+                           :namely ( PICK-22 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-2
+                                  :op3 ENTITY-ａｕ))) ( EVENT-3 ( 思っ
+                           :ARG0 ( ENTITY-1 / pro
+                                  :pick0)
+                           :THAT ( EVENT-10 / 聴こ
+                                  :ARG0 ENTITY-4
+                                  :ARG1 ( ENTITY-9 / 音楽)
+                                  :で ( ENTITY-5 / ミュージック_プレーヤー
+                                         :の ( ENTITY-8 / 専用)
+                                         :ARG1-of ( EVENT-7 / 内臓する.0_て_いる))
+                                  :domain-of ( MD-24 / MD_う)))))
+      :op2 ( CRD-25 / か
+             :op1 ( EVENT-14 / 購入する.0
+                    :ARG0 ENTITY-11
+                    :から ( ENTITY-13 / サイト))
+             :op2 ( EVENT-16 / 取り込ま
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-11 / データ
+                           :の ( ENTITY-12 / 音楽))
+                    :から ( ENTITY-15 / ＣＤ)
+                    :TPC ( ENTITY-ａｕ / ENTITY
+                           :name ( n-28 / name
+                                  :op1 "ａｕ"))
+                    :といえば ( ENTITY-2 / 音楽_ダウンロード)))
+      :domain-of ( MD-27 / MD_ねばならない))

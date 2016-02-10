@@ -1,0 +1,1892 @@
+# ::id 1_fiction_TWAIN-1880;NE
+# ::snt BAKER 'S BLUEJAY YARN
+∃ EVENT[2] ENTITY[1] (is_BLUEJAY_YARN_POS(ENTITY[1], ENTITY[BAKER]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_fiction_TWAIN-1880;NE
+# ::snt BY MARK TWAIN
+∃ EVENT[1] (xxx(EVENT[1]) ∧ BY(EVENT[1]) = ENTITY[MARK_TWAIN])
+
+# ::id 3_fiction_TWAIN-1880;NE
+# ::snt Animals talk to each other , of course .
+∃ GROUP[1] (
+ Animals(GROUP[1]) ∧
+  EACH ATTRIB[3] ENTITY[2] ((other(ATTRIB[3]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3])),
+   ∃ EVENT[5] ENTITY[4] (
+    course(ENTITY[4]) ∧
+     talk(EVENT[5], GROUP[1]) ∧ of(EVENT[5]) = ENTITY[4] ∧ to(EVENT[5]) = ENTITY[2])))
+
+# ::id 4_fiction_TWAIN-1880;NE
+# ::snt There can be no question about that ;
+∃ ENTITY[2] ¬ ∃ ENTITY[1] (is_question_about(ENTITY[1], ENTITY[2]) ∧ MD_can(∃ EVENT[3] copula(EVENT[3], ENTITY[1])))
+
+# ::id 5_fiction_TWAIN-1880;NE
+# ::snt but I suppose there are very few people who can understand them .
+∃ REF1[1] EVENT[2] (
+ REF1[1] = i ∧
+  suppose(EVENT[2], REF1[1],
+   VERY_FEW GROUP[3] (MD_can(∃ REF2[5] EVENT[6] (REF2[5] = them ∧ understand(EVENT[6], GROUP[3], REF2[5]))) ∧ people(GROUP[3]), ∃ EVENT[7] copula(EVENT[7], GROUP[3]))))
+
+# ::id 6_fiction_TWAIN-1880;NE
+# ::snt I never knew but one man who could .
+∃ SITUATION[7] REF1[1] ENTITY[3] (
+ REF1[1] = i ∧
+  (CD_one(ENTITY[3]), MD_could(∃ EVENT[5] xxx(EVENT[5], ENTITY[3])) ∧ man(ENTITY[3])) ∧
+   ADV_never(SITUATION[7]) ∧
+    is_FACT_THAT(SITUATION[7],
+     BUT ENTITY[2] (is_of(ENTITY[2], ENTITY[3]), ∃ EVENT[6] (past(EVENT[6]) ∧ knew(EVENT[6], REF1[1], ENTITY[2])))))
+
+# ::id 7_fiction_TWAIN-1880;NE
+# ::snt I knew he could , however , because he told me so himself .
+∃ SITUATION[10] REF2[8] REF5[4] REF4[2] REF3[3] REF1[1] EVENT[5] EVENT[7] (
+ REF1[1] = i ∧
+  REF3[3] = he ∧
+   REF4[2] = himself ∧
+    is_RFL(REF3[3], REF4[2]) ∧
+     REF5[4] = me ∧
+      REF2[8] = he ∧
+       ADV_however(SITUATION[10]) ∧
+        ADV_so(EVENT[5]) ∧
+         past(EVENT[5]) ∧
+          past(EVENT[7]) ∧
+           is_FACT_THAT(SITUATION[10],
+            CRD_because(told(EVENT[5], REF3[3], REF5[4]),
+             knew(EVENT[7], REF1[1], MD_could(∃ EVENT[9] xxx(EVENT[9], REF2[8]))))))
+
+# ::id 8_fiction_TWAIN-1880;NE
+# ::snt He was a middle-aged , simple-hearted miner who had lived in a lonely corner of California , among the woods and mountains , a good many years , and had studied the ways of his only neighbors , the beasts and the birds , until he believed he could accurately translate any remark which they made .
+∃ 749[24] 749[22] ATTRIB[7] ATTRIB[4] ATTRIB[3] 749[1] 749[21] EVENT[23] EVENT[31] EVENT[32] ENTITY[6] ENTITY[2] GROUP[10] GROUP[11] GROUP[9] ENTITY[8] 900[20] GROUP[15] (
+ woods(GROUP[10]) ∧
+  mountains(GROUP[11]) ∧
+   is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9]) ∧
+    is_equals(ENTITY[8], GROUP[9]) ∧
+     749[21] = his{749[1]} ∧
+      is_neighbors_POS(900[20], 749[21]) ∧
+       ONLY 900[19] (is_of(900[19], 900[20]),
+        ∃ GROUP[17] GROUP[18] GROUP[16] (
+         beasts(GROUP[17]) ∧
+          birds(GROUP[18]) ∧
+           is_subset_of_or_equal_to(GROUP[17], GROUP[16]) ∧ is_subset_of_or_equal_to(GROUP[18], GROUP[16]) ∧
+            is_-900-_namely(900[19], GROUP[16]) ∧ is_ways_of(GROUP[15], 900[19]))) ∧
+        749[1] = he ∧
+         middle-aged(ATTRIB[3]) ∧
+          simple-hearted(ATTRIB[4]) ∧
+           lonely(ATTRIB[7]) ∧
+            is_corner_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_corner_of(ENTITY[6], ENTITY[California]) ∧
+             749[22] = he{749[1]} ∧
+              749[24] = he{749[22], 749[1]} ∧
+               CONJ_and(MANY ATTRIB[13] GROUP[12] ((good(ATTRIB[13]) ∧ is_years_ATTRIBUTE(GROUP[12], ATTRIB[13])),
+                     ∃ EVENT[14] (
+                      past(EVENT[14]) ∧
+                       had_lived(EVENT[14], ENTITY[2]) ∧ TMP(EVENT[14]) = GROUP[12] ∧
+                        among(EVENT[14]) = ENTITY[8] ∧ in(EVENT[14]) = ENTITY[6])),
+                CRD_until(believed(EVENT[23], 749[22],
+                      MD_could(∃ SITUATION[30] (
+                            ADV_accurately(SITUATION[30]) ∧
+                             is_FACT_THAT(SITUATION[30],
+                              ANY 900[27] EVENT[28] ENTITY[25] (
+                               (900[27] = they{900[20]} ∧
+                                made(EVENT[28], 900[27], ENTITY[25]) ∧ remark(ENTITY[25]) ∧
+                                is_before(EVENT[28], EVENT[23])),
+                               ∃ EVENT[29] translate(EVENT[29], 749[24], ENTITY[25])))))),
+                 had_studied(EVENT[31], ENTITY[2], GROUP[15]))) ∧
+                is_miner_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_miner_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+                past(EVENT[23]) ∧
+                 past(EVENT[31]) ∧ past(EVENT[32]) ∧ copula(EVENT[32], 749[1], ENTITY[2]))
+
+# ::id 9_fiction_TWAIN-1880;NE
+# ::snt This was Jim Baker .
+∃ EVENT[2] ENTITY[1] (past(EVENT[2]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Jim_Baker]))
+
+# ::id 10_fiction_TWAIN-1880;NE
+# ::snt According to Jim Baker , some animals have only a limited education ,
+SOME GROUP[1] (animals(GROUP[1]),
+ ∃ ATTRIB[4] ENTITY[3] (
+  limited(ATTRIB[4]) ∧
+   is_education_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    ONLY ENTITY[2] (is_of(ENTITY[2], ENTITY[3]),
+     ∃ EVENT[5] (have(EVENT[5], GROUP[1], ENTITY[2]) ∧ according_to(EVENT[5]) = ENTITY[Jim_Baker]))))
+
+# ::id 11_fiction_TWAIN-1880;NE
+# ::snt and some use only simple words , and scarcely ever a comparison or a flowery figure ;
+SOME ENTITY[1] ∃ ATTRIB[4] EVENT[10] GROUP[3] GROUP[6] (
+ simple(ATTRIB[4]) ∧
+  is_words_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+   CONJ_or(∃ ENTITY[7] (comparison(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ATTRIB[9] ENTITY[8] (flowery(ATTRIB[9]) ∧ is_figure_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    ADV_scarcely_ever(EVENT[10]) ∧
+     CONJ_and(ONLY GROUP[2] (is_subset_of_or_equal_to(GROUP[2], GROUP[3]), ∃ EVENT[5] use(EVENT[5], ENTITY[1], GROUP[2])),
+      use(EVENT[10], ENTITY[1], GROUP[6])))
+
+# ::id 12_fiction_TWAIN-1880;NE
+# ::snt whereas , certain other animals have a large vocabulary , a fine command of language and a ready and fluent delivery ;
+∃ ATTRIB[3] ATTRIB[2] EVENT[13] GROUP[4] GROUP[1] (
+ certain(ATTRIB[2]) ∧
+  other(ATTRIB[3]) ∧
+   is_animals_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_animals_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    ∃ ATTRIB[6] ENTITY[5] (large(ATTRIB[6]) ∧ is_vocabulary_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ATTRIB[8] ENTITY[9] ENTITY[7] (
+      fine(ATTRIB[8]) ∧
+       language(ENTITY[9]) ∧
+        is_command_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_command_of(ENTITY[7], ENTITY[9]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+     ∃ ATTRIB[12] ATTRIB[11] ENTITY[10] (
+      ready(ATTRIB[11]) ∧
+       fluent(ATTRIB[12]) ∧
+        CONJ_and(is_delivery_ATTRIBUTE(ENTITY[10], ATTRIB[11]), is_delivery_ATTRIBUTE(ENTITY[10], ATTRIB[12])) ∧ is_element_of(ENTITY[10], GROUP[4])) ∧
+     ADV_whereas(EVENT[13]) ∧ have(EVENT[13], GROUP[1], GROUP[4]))
+
+# ::id 13_fiction_TWAIN-1880;NE
+# ::snt consequently these latter talk a great deal ;
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] ENTITY[3] GROUP[1] (
+ latter(ATTRIB[2]) ∧
+  is_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   great(ATTRIB[4]) ∧
+    is_deal_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ ADV_consequently(EVENT[5]) ∧ talk(EVENT[5], GROUP[1], ENTITY[3]))
+
+# ::id 14_fiction_TWAIN-1880;NE
+# ::snt they like it ;
+∃ REF2[2] REF1[1] EVENT[3] (REF1[1] = they ∧ REF2[2] = it ∧ like(EVENT[3], REF1[1], REF2[2]))
+
+# ::id 15_fiction_TWAIN-1880;NE
+# ::snt they are so conscious of their talent ,
+∃ REF2[4] ATTRIB[2] REF1[1] EVENT[5] ENTITY[3] (
+ REF1[1] = they ∧
+  REF2[4] = their ∧
+   is_talent_POS(ENTITY[3], REF2[4]) ∧ is_so_conscious_of(ATTRIB[2], ENTITY[3]) ∧ copula(EVENT[5], REF1[1], ATTRIB[2]))
+
+# ::id 16_fiction_TWAIN-1880;NE
+# ::snt and they enjoy " showing off . "
+∃ SITUATION[2] REF1[1] EVENT[3] EVENT[4] (REF1[1] = they ∧ is_FACT_THAT(SITUATION[2], showing_off(EVENT[3], REF1[1])) ∧ enjoy(EVENT[4], REF1[1], SITUATION[2]))
+
+# ::id 17_fiction_TWAIN-1880;NE
+# ::snt Baker said , that after long and careful observation , he had come to the conclusion that the bluejays were the best talkers he had found among birds and beasts .
+∃ REF1[5] ATTRIB[4] ATTRIB[3] REF2[10] ATTRIB[9] EVENT[16] EVENT[1] ENTITY[2] EVENT[14] EVENT[15] GROUP[12] GROUP[13] GROUP[11] GROUP[8] GROUP[7] ENTITY[6] (
+ bluejays(GROUP[7]) ∧
+  best(ATTRIB[9]) ∧
+   REF2[10] = he ∧
+    birds(GROUP[12]) ∧
+     beasts(GROUP[13]) ∧
+      is_subset_of_or_equal_to(GROUP[12], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11]) ∧
+       is_talkers_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+        is_talkers_THAT(GROUP[8], had_found(EVENT[14], REF2[10]) ∧ among(EVENT[14]) = GROUP[11]) ∧
+        is_conclusion_THAT(ENTITY[6], copula(EVENT[15], GROUP[7], GROUP[8])) ∧
+         is_before(EVENT[14], EVENT[1]) ∧
+          is_before(EVENT[15], EVENT[1]) ∧
+           long(ATTRIB[3]) ∧
+            careful(ATTRIB[4]) ∧
+             CONJ_and(is_observation_ATTRIBUTE(ENTITY[2], ATTRIB[3]), is_observation_ATTRIBUTE(ENTITY[2], ATTRIB[4])) ∧
+              REF1[5] = he ∧
+               is_before(EVENT[16], EVENT[1]) ∧
+                past(EVENT[1]) ∧
+                 said(EVENT[1], ENTITY[Baker],
+                  had_come(EVENT[16], REF1[5]) ∧ to(EVENT[16]) = ENTITY[6] ∧
+                   after(EVENT[16]) = ENTITY[2]))
+
+# ::id 18_fiction_TWAIN-1880;NE
+# ::snt Said he : " There 's more _to_ a bluejay than any other creature .
+∃ REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], REF1[1],
+    MORE ENTITY[4] ENTITY[3] (
+     (bluejay(ENTITY[4]) ∧
+      ANY ATTRIB[6] ENTITY[5] ((other(ATTRIB[6]) ∧ is_creature_ATTRIBUTE(ENTITY[5], ATTRIB[6])),
+       is_than(ENTITY[3], ENTITY[5]) ∧ is__to(ENTITY[3], ENTITY[4]))), ∃ EVENT[7] copula(EVENT[7], ENTITY[3]))))
+
+# ::id 19_fiction_TWAIN-1880;NE
+# ::snt He has got more moods , and more different kinds of feelings than other creatures ;
+∃ REF1[1] EVENT[11] GROUP[2] (
+ REF1[1] = he ∧
+  MORE ATTRIB[5] GROUP[4] GROUP[3] ((other(ATTRIB[5]) ∧ is_creatures_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_moods_than(GROUP[3], GROUP[4])),
+   is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+   MORE ATTRIB[10] ATTRIB[7] GROUP[9] GROUP[8] GROUP[6] (
+    (different(ATTRIB[7]) ∧ feelings(GROUP[8]) ∧ other(ATTRIB[10]) ∧ is_creatures_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+     is_kinds_than(GROUP[6], GROUP[9]) ∧ is_kinds_of(GROUP[6], GROUP[8]) ∧ is_kinds_ATTRIBUTE(GROUP[6], ATTRIB[7])),
+    is_subset_of_or_equal_to(GROUP[6], GROUP[2])) ∧ has_got(EVENT[11], REF1[1], GROUP[2]))
+
+# ::id 20_fiction_TWAIN-1880;NE
+# ::snt and mind you , whatever a bluejay feels , he can put into language .
+∃ REF2[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ bluejay(ENTITY[3]) ∧
+  feels(EVENT[4], ENTITY[3], ENTITY[1]) ∧
+   REF2[5] = he ∧
+    MD_can(∃ EVENT[7] ENTITY[6] (language(ENTITY[6]) ∧ put(EVENT[7], REF2[5], ENTITY[1]) ∧ into(EVENT[7]) = ENTITY[6])))
+
+# ::id 21_fiction_TWAIN-1880;NE
+# ::snt And no mere commonplace language , either , but rattling , out-and-out book-talk -- and bristling with metaphor , too -- just bristling !
+∃ EVENT[10] EVENT[12] EVENT[14] ENTITY[9] GROUP[1] (
+ CONJ_but(¬ ∃ ATTRIB[5] ATTRIB[4] ENTITY[3] (
+            mere(ATTRIB[4]) ∧
+             commonplace(ATTRIB[5]) ∧
+              is_language_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_language_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+               EITHER ENTITY[2] is_-ENTITY-_namely(ENTITY[3], ENTITY[2]) ∧ is_element_of(ENTITY[3], GROUP[1])),
+  ∃ ATTRIB[8] ATTRIB[7] ENTITY[6] (
+   rattling(ATTRIB[7]) ∧
+    out-and-out(ATTRIB[8]) ∧
+     is_book-talk_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_book-talk_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[1]))) ∧
+  metaphor(ENTITY[9]) ∧
+   ADV_too(EVENT[10]) ∧
+    ADV_just(EVENT[12]) ∧
+     CONJ_and(bristling(EVENT[10], GROUP[1]) ∧ with(EVENT[10]) = ENTITY[9],
+      CONJ_and(bristling(EVENT[12], GROUP[1]), xxx(EVENT[14], _, GROUP[1]))))
+
+# ::id 22_fiction_TWAIN-1880;NE
+# ::snt And as for command of language -- why _you_ never see a bluejay get stuck for a word .
+∃ SITUATION[9] ATTRIB[6] REF1[3] EVENT[8] EVENT[4] ENTITY[2] ENTITY[7] ENTITY[5] ENTITY[1] (
+ language(ENTITY[2]) ∧
+  is_command_of(ENTITY[1], ENTITY[2]) ∧
+   REF1[3] = _you_ ∧
+    bluejay(ENTITY[5]) ∧
+     word(ENTITY[7]) ∧
+      is_stuck_for(ATTRIB[6], ENTITY[7]) ∧
+       ADV_never(SITUATION[9]) ∧
+        is_FACT_THAT(SITUATION[9],
+         see(EVENT[4], REF1[3], get(EVENT[8], ENTITY[5], ATTRIB[6])) ∧ as_for(EVENT[4]) = ENTITY[1]))
+
+# ::id 23_fiction_TWAIN-1880;NE
+# ::snt No man ever did .
+¬ ∃ EVENT[2] ENTITY[1] (man(ENTITY[1]) ∧ ADV_ever(EVENT[2]) ∧ past(EVENT[2]) ∧ did(EVENT[2], ENTITY[1]))
+
+# ::id 24_fiction_TWAIN-1880;NE
+# ::snt They just boil out of him !
+∃ REF2[2] REF1[1] EVENT[3] (
+ REF1[1] = they ∧
+  REF2[2] = him ∧ ADV_just(EVENT[3]) ∧ boil_out(EVENT[3], REF1[1]) ∧ of(EVENT[3]) = REF2[2])
+
+# ::id 25_fiction_TWAIN-1880;NE
+# ::snt And another thing :
+ANOTHER ENTITY[1] (thing(ENTITY[1]), ∃ EVENT[2] (xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1]))
+
+# ::id 26_fiction_TWAIN-1880;NE
+# ::snt I 've noticed a good deal ,
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (REF1[1] = i ∧ good(ATTRIB[3]) ∧ is_deal_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ 've_noticed(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 27_fiction_TWAIN-1880;NE
+# ::snt and there 's no bird , or cow , or anything that uses as good grammar as a bluejay .
+¬ ∃ ATTRIB[8] EVENT[10] EVENT[11] ENTITY[9] ENTITY[7] GROUP[2] ENTITY[1] (
+      CONJ_or(∃ ENTITY[3] (bird(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+       ∃ ENTITY[4] (cow(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])),
+       ANY ENTITY[5] (thing(ENTITY[5]), is_element_of(ENTITY[5], GROUP[2]))) ∧
+       bluejay(ENTITY[9]) ∧
+        is_as_good_as(ATTRIB[8], ENTITY[9]) ∧
+         is_grammar_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+          uses(EVENT[10], ENTITY[1], ENTITY[7]) ∧ is_equals(ENTITY[1], GROUP[2]) ∧ copula(EVENT[11], ENTITY[1]))
+
+# ::id 28_fiction_TWAIN-1880;NE
+# ::snt You may say a cat uses good grammar .
+∃ REF1[1] (
+ REF1[1] = you ∧
+  MD_may(∃ ATTRIB[5] EVENT[6] EVENT[2] ENTITY[4] ENTITY[3] (
+        cat(ENTITY[3]) ∧
+         good(ATTRIB[5]) ∧
+          is_grammar_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ say(EVENT[2], REF1[1], uses(EVENT[6], ENTITY[3], ENTITY[4])))))
+
+# ::id 29_fiction_TWAIN-1880;NE
+# ::snt Well , a cat does --
+∃ EVENT[2] ENTITY[1] (cat(ENTITY[1]) ∧ does(EVENT[2], ENTITY[1]))
+
+# ::id 30_fiction_TWAIN-1880;NE
+# ::snt but you let a cat get excited once ;
+∃ REF1[1] EVENT[4] EVENT[2] ENTITY[3] (
+ REF1[1] = you ∧
+  cat(ENTITY[3]) ∧ ADV_once(EVENT[4]) ∧ let(EVENT[2], REF1[1], get_excited(EVENT[4], ENTITY[3])))
+
+# ::id 31_fiction_TWAIN-1880;NE
+# ::snt you let a cat get to pulling fur with another cat on a shed , nights ,
+∃ SITUATION[4] REF1[1] EVENT[10] EVENT[2] ENTITY[5] ENTITY[3] (
+ REF1[1] = you ∧
+  cat(ENTITY[3]) ∧
+   fur(ENTITY[5]) ∧
+    is_FACT_THAT(SITUATION[4],
+     ANOTHER ENTITY[6] (cat(ENTITY[6]),
+      ∃ EVENT[9] GROUP[8] ENTITY[7] (
+       shed(ENTITY[7]) ∧
+        nights(GROUP[8]) ∧
+         pulling(EVENT[9], ENTITY[3], ENTITY[5]) ∧ TMP(EVENT[9]) = GROUP[8] ∧
+          on(EVENT[9]) = ENTITY[7] ∧ with(EVENT[9]) = ENTITY[6]))) ∧
+     let(EVENT[2], REF1[1], get(EVENT[10], ENTITY[3]) ∧ to(EVENT[10]) = SITUATION[4]))
+
+# ::id 32_fiction_TWAIN-1880;NE
+# ::snt and you 'll hear grammar that will give you the lockjaw .
+∃ REF1[1] ENTITY[5] (
+ lockjaw(ENTITY[5]) ∧
+  REF1[1] = you ∧
+   MD'll(∃ EVENT[7] ENTITY[2] (
+         MD_will(∃ REF2[4] EVENT[6] (REF2[4] = you ∧ give(EVENT[6], ENTITY[2], ENTITY[5], REF2[4]))) ∧
+          grammar(ENTITY[2]) ∧ hear(EVENT[7], REF1[1], ENTITY[2]))))
+
+# ::id 33_fiction_TWAIN-1880;NE
+# ::snt Ignorant people think it 's the _noise_ which fighting cats make that is so aggravating ,
+∃ ATTRIB[11] ATTRIB[2] ATTRIB[7] EVENT[12] EVENT[13] EVENT[3] ENTITY[9] GROUP[1] EVENT[8] GROUP[6] ENTITY[4] (
+ fighting(ATTRIB[7]) ∧
+  is_cats_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+   make(EVENT[8], GROUP[6], ENTITY[4]) ∧ _noise(ENTITY[4]) ∧
+    ignorant(ATTRIB[2]) ∧
+     is_people_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      so_aggravating(ATTRIB[11]) ∧
+       copula(EVENT[12], ENTITY[9], ATTRIB[11]) ∧ think(EVENT[3], GROUP[1], copula(EVENT[13], ENTITY[9], ENTITY[4])))
+
+# ::id 34_fiction_TWAIN-1880;NE
+# ::snt but it ai n't so ;
+∃ REF1[1] (REF1[1] = it ∧ ¬ ∃ EVENT[2] (ADV_so(EVENT[2]) ∧ copula(EVENT[2], REF1[1])))
+
+# ::id 35_fiction_TWAIN-1880;NE
+# ::snt it 's the sickening grammar that they use .
+∃ REF1[5] ATTRIB[2] EVENT[6] EVENT[7] ENTITY[3] ENTITY[1] (
+ sickening(ATTRIB[2]) ∧
+  is_grammar_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[5] = they ∧ use(EVENT[6], REF1[5], ENTITY[3]) ∧ copula(EVENT[7], ENTITY[3], ENTITY[1]))
+
+# ::id 36_fiction_TWAIN-1880;NE
+# ::snt Now I 've never heard a jay use bad grammar but very seldom ;
+∃ SITUATION[7] SITUATION[10] ATTRIB[5] REF1[1] EVENT[6] EVENT[2] EVENT[8] ENTITY[4] ENTITY[3] (
+ REF1[1] = i ∧
+  jay(ENTITY[3]) ∧
+   bad(ATTRIB[5]) ∧
+    is_grammar_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     ADV_now(SITUATION[10]) ∧
+      ADV_never(SITUATION[7]) ∧
+       ADV_very_seldom(EVENT[8]) ∧
+        is_FACT_THAT(SITUATION[10],
+         CONJ_but(is_FACT_THAT(SITUATION[7], 've_heard(EVENT[2], REF1[1], use(EVENT[6], ENTITY[3], ENTITY[4]))),
+          xxx(EVENT[8], REF1[1]))))
+
+# ::id 37_fiction_TWAIN-1880;NE
+# ::snt and when they do , they are as ashamed as a human ;
+∃ ATTRIB[2] REF2[1] EVENT[4] ENTITY[3] (REF2[1] = they ∧ human(ENTITY[3]) ∧ is_as_ashamed_as(ATTRIB[2], ENTITY[3]) ∧ copula(EVENT[4], REF2[1], ATTRIB[2]))
+
+# ::id 38_fiction_TWAIN-1880;NE
+# ::snt they shut right down and leave .
+∃ REF1[1] EVENT[2] EVENT[4] (REF1[1] = they ∧ ADV_right_down(EVENT[2]) ∧ CONJ_and(shut(EVENT[2], REF1[1]), leave(EVENT[4], REF1[1])))
+
+# ::id 39_fiction_TWAIN-1880;NE
+# ::snt " You may call a jay a bird .
+∃ REF1[1] (
+ REF1[1] = you ∧
+  MD_may(∃ EVENT[5] EVENT[2] ENTITY[4] ENTITY[3] (
+        jay(ENTITY[3]) ∧
+         bird(ENTITY[4]) ∧ call(EVENT[2], REF1[1], xxx(EVENT[5], ENTITY[3], ENTITY[4])))))
+
+# ::id 40_fiction_TWAIN-1880;NE
+# ::snt Well , so he is , in a measure --
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = he ∧
+  measure(ENTITY[2]) ∧ ADV_so(EVENT[3]) ∧ copula(EVENT[3], REF1[1]) ∧ in(EVENT[3]) = ENTITY[2])
+
+# ::id 41_fiction_TWAIN-1880;NE
+# ::snt but he 's got feathers on him , and do n't belong to no church , perhaps ;
+∃ REF2[3] REF1[1] EVENT[4] GROUP[2] (
+ REF1[1] = he ∧
+  feathers(GROUP[2]) ∧
+   REF2[3] = him ∧
+    CONJ_and('s_got(EVENT[4], REF1[1], GROUP[2]) ∧ on(EVENT[4]) = REF2[3],
+     ¬ ¬ ∃ EVENT[6] ENTITY[5] (
+                church(ENTITY[5]) ∧
+                 ADV_perhaps(EVENT[6]) ∧ do_belong(EVENT[6], REF1[1]) ∧ to(EVENT[6]) = ENTITY[5])))
+
+# ::id 42_fiction_TWAIN-1880;NE
+# ::snt but otherwise he is just as much human as you be .
+∃ SITUATION[8] REF2[5] ATTRIB[2] REF1[1] EVENT[6] EVENT[7] DEGREE[3] (
+ REF1[1] = he ∧
+  REF2[5] = you ∧
+   copula(EVENT[6], REF2[5], DEGREE[3]) ∧
+    is_just_as_much_human_as(ATTRIB[2], DEGREE[3]) ∧ ADV_otherwise(SITUATION[8]) ∧ is_FACT_THAT(SITUATION[8], copula(EVENT[7], REF1[1], ATTRIB[2])))
+
+# ::id 43_fiction_TWAIN-1880;NE
+# ::snt And I 'll tell you for why .
+∃ REF1[1] (
+ REF1[1] = i ∧
+  MD'll(∃ SITUATION[3] REF2[2] EVENT[7] (
+        REF2[2] = you ∧
+         is_FACT_THAT(SITUATION[3], QUEST(∃ ENTITY[5] ? ENTITY[4] (is_ADV(ENTITY[5], ENTITY[4]) ∧ xxx(ENTITY[5], REF2[2])))) ∧
+          tell(EVENT[7], REF1[1], REF2[2]) ∧ for(EVENT[7]) = SITUATION[3])))
+
+# ::id 44_fiction_TWAIN-1880;NE
+# ::snt A jay 's gifts , and instincts , and feelings , and interests , cover the whole ground .
+∃ ATTRIB[9] EVENT[10] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[8] (
+ whole(ATTRIB[9]) ∧
+  is_ground_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   jay(ENTITY[2]) ∧
+    ∃ GROUP[4] (gifts(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+     ∃ GROUP[5] (instincts(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+     ∃ GROUP[6] (feelings(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+     ∃ GROUP[7] (interests(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3])) ∧
+     is_equals(ENTITY[1], GROUP[3]) ∧ is_POS(ENTITY[1], ENTITY[2]) ∧ cover(EVENT[10], ENTITY[1], ENTITY[8]))
+
+# ::id 45_fiction_TWAIN-1880;NE
+# ::snt A jay has n't got any more principle than a Congressman .
+∃ ENTITY[1] (
+ jay(ENTITY[1]) ∧
+  ¬ ANY_MORE ENTITY[3] ENTITY[2] ((Congressman(ENTITY[3]) ∧ is_principle_than(ENTITY[2], ENTITY[3])), ∃ EVENT[4] has_got(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 46_fiction_TWAIN-1880;NE
+# ::snt A jay will lie ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_will(∃ EVENT[2] lie(EVENT[2], ENTITY[1])))
+
+# ::id 47_fiction_TWAIN-1880;NE
+# ::snt a jay will steal ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_will(∃ EVENT[2] steal(EVENT[2], ENTITY[1])))
+
+# ::id 48_fiction_TWAIN-1880;NE
+# ::snt a jay will deceive ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_will(∃ EVENT[2] deceive(EVENT[2], ENTITY[1])))
+
+# ::id 49_fiction_TWAIN-1880;NE
+# ::snt a jay will betray ;
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_will(∃ EVENT[2] betray(EVENT[2], ENTITY[1])))
+
+# ::id 50_fiction_TWAIN-1880;NE
+# ::snt and four times out of five , a jay will go back on his solemnest promise .
+∃ ENTITY[2] ENTITY[3] GROUP[1] (
+ CD_five(ENTITY[2]) ∧
+  (CD_four(GROUP[1]), is_times_out_of(GROUP[1], ENTITY[2])) ∧
+   jay(ENTITY[3]) ∧
+    MD_will(∃ ATTRIB[6] REF1[5] EVENT[7] ENTITY[4] (
+          REF1[5] = his ∧
+           solemnest(ATTRIB[6]) ∧
+            is_promise_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_promise_POS(ENTITY[4], REF1[5]) ∧
+             go_back(EVENT[7], ENTITY[3]) ∧ on(EVENT[7]) = ENTITY[4] ∧
+              TMP(EVENT[7]) = GROUP[1])))
+
+# ::id 51_fiction_TWAIN-1880;NE
+# ::snt The sacredness of an obligation is such a thing which you ca n't cram into no bluejay 's head .
+∃ REF1[6] ATTRIB[4] EVENT[10] ENTITY[3] ENTITY[2] ENTITY[1] (
+ obligation(ENTITY[2]) ∧
+  is_sacredness_of(ENTITY[1], ENTITY[2]) ∧
+   such(ATTRIB[4]) ∧
+    REF1[6] = you ∧
+     MD_ca(¬ ∃ EVENT[9] ENTITY[7] (
+                ¬ ∃ ENTITY[8] (bluejay(ENTITY[8]) ∧ is_head_POS(ENTITY[7], ENTITY[8])) ∧
+                 cram(EVENT[9], REF1[6], ENTITY[3]) ∧ into(EVENT[9]) = ENTITY[7])) ∧
+      is_thing_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ copula(EVENT[10], ENTITY[1], ENTITY[3]))
+
+# ::id 52_fiction_TWAIN-1880;NE
+# ::snt Now , on top of all this , there 's another thing ;
+∃ SITUATION[5] ENTITY[1] (
+ ALL ENTITY[2] is_top_of(ENTITY[1], ENTITY[2]) ∧
+  ADV_now(SITUATION[5]) ∧
+   is_FACT_THAT(SITUATION[5], ANOTHER ENTITY[3] (thing(ENTITY[3]), ∃ EVENT[4] (copula(EVENT[4], ENTITY[3]) ∧ on(EVENT[4]) = ENTITY[1]))))
+
+# ::id 53_fiction_TWAIN-1880;NE
+# ::snt a jay can out-swear any gentleman in the mines .
+∃ ENTITY[1] GROUP[3] (
+ mines(GROUP[3]) ∧
+  jay(ENTITY[1]) ∧
+   MD_can(ANY ENTITY[2] (gentleman(ENTITY[2]), ∃ EVENT[4] (out-swear(EVENT[4], ENTITY[1], ENTITY[2]) ∧ in(EVENT[4]) = GROUP[3]))))
+
+# ::id 54_fiction_TWAIN-1880;NE
+# ::snt You think a cat can swear .
+∃ REF1[1] EVENT[2] ENTITY[3] (REF1[1] = you ∧ cat(ENTITY[3]) ∧ think(EVENT[2], REF1[1], MD_can(∃ EVENT[4] swear(EVENT[4], ENTITY[3]))))
+
+# ::id 55_fiction_TWAIN-1880;NE
+# ::snt Well , a cat can ;
+∃ ENTITY[1] (cat(ENTITY[1]) ∧ MD_can(∃ EVENT[2] xxx(EVENT[2], ENTITY[1])))
+
+# ::id 56_fiction_TWAIN-1880;NE
+# ::snt but you give a bluejay a subject that calls for his reserve-powers ,
+∃ REF2[6] REF1[1] EVENT[7] EVENT[8] GROUP[5] ENTITY[3] ENTITY[2] (
+ REF1[1] = you ∧
+  bluejay(ENTITY[2]) ∧
+   REF2[6] = his ∧
+    is_reserve-powers_POS(GROUP[5], REF2[6]) ∧
+     calls(EVENT[7], ENTITY[3]) ∧ for(EVENT[7]) = GROUP[5] ∧ subject(ENTITY[3]) ∧
+      give(EVENT[8], REF1[1], ENTITY[3], ENTITY[2]))
+
+# ::id 57_fiction_TWAIN-1880;NE
+# ::snt and where is your cat ?
+QUEST(∃ REF1[3] EVENT[4] ENTITY[2] ? ENTITY[1] (
+      REF1[3] = your ∧
+       is_cat_POS(ENTITY[2], REF1[3]) ∧ is_ADV(EVENT[4], ENTITY[1]) ∧ copula(EVENT[4], ENTITY[2])))
+
+# ::id 58_fiction_TWAIN-1880;NE
+# ::snt Do n't talk to _me_ --
+IMPERATIVE(¬ ∃ REF2[3] REF1[2] EVENT[4] EVENT[1] (
+           REF1[2] = *hearer* ∧
+            REF2[3] = _me_ ∧
+             do(EVENT[1], talk(EVENT[4], REF1[2]) ∧ to(EVENT[4]) = REF2[3])))
+
+# ::id 59_fiction_TWAIN-1880;NE
+# ::snt I know too much about this thing ;
+∃ REF1[1] ENTITY[3] (
+ thing(ENTITY[3]) ∧ REF1[1] = i ∧ TOO_MUCH ENTITY[2] (is_about(ENTITY[2], ENTITY[3]), ∃ EVENT[4] know(EVENT[4], REF1[1], ENTITY[2])))
+
+# ::id 60_fiction_TWAIN-1880;NE
+# ::snt in the one little particular of scolding -- just good , clean , out-and-out scolding -- a bluejay can lay over anything , human or divine .
+∃ ATTRIB[6] ATTRIB[5] ATTRIB[4] ATTRIB[2] ENTITY[8] ENTITY[3] ENTITY[7] ENTITY[1] (
+ little(ATTRIB[2]) ∧
+  scolding(ENTITY[7]) ∧
+   just_good(ATTRIB[4]) ∧
+    clean(ATTRIB[5]) ∧
+     out-and-out(ATTRIB[6]) ∧
+      is_scolding_ATTRIBUTE(ENTITY[3], ATTRIB[6]) ∧ is_scolding_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_scolding_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_-ENTITY-_namely(ENTITY[7], ENTITY[3]) ∧
+        (CD_one(ENTITY[1]), is_particular_of(ENTITY[1], ENTITY[7]) ∧ is_particular_ATTRIBUTE(ENTITY[1], ATTRIB[2])) ∧
+         bluejay(ENTITY[8]) ∧
+          MD_can(ANY ATTRIB[11] ATTRIB[10] ENTITY[9] (
+                (human(ATTRIB[10]) ∧ divine(ATTRIB[11]) ∧
+                 CONJ_or(is_thing_ATTRIBUTE(ENTITY[9], ATTRIB[10]), is_thing_ATTRIBUTE(ENTITY[9], ATTRIB[11]))),
+                ∃ EVENT[12] (
+                 lay(EVENT[12], ENTITY[8]) ∧
+                  over(EVENT[12]) = ENTITY[9] ∧ in(EVENT[12]) = ENTITY[1]))))
+
+# ::id 61_fiction_TWAIN-1880;NE
+# ::snt Yes , sir , a jay is everything that a man is .
+∃ ENTITY[1] (
+ jay(ENTITY[1]) ∧
+  ∀ EVENT[5] ENTITY[4] ENTITY[2] ((man(ENTITY[4]) ∧ copula(EVENT[5], ENTITY[4], ENTITY[2]) ∧ thing(ENTITY[2])) →
+   ∃ EVENT[6] copula(EVENT[6], ENTITY[1], ENTITY[2])))
+
+# ::id 62_fiction_TWAIN-1880;NE
+# ::snt A jay can cry ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_can(∃ EVENT[2] cry(EVENT[2], ENTITY[1])))
+
+# ::id 63_fiction_TWAIN-1880;NE
+# ::snt a jay can laugh ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_can(∃ EVENT[2] laugh(EVENT[2], ENTITY[1])))
+
+# ::id 64_fiction_TWAIN-1880;NE
+# ::snt a jay can feel shame ,
+∃ ENTITY[1] (jay(ENTITY[1]) ∧ MD_can(∃ EVENT[3] ENTITY[2] (shame(ENTITY[2]) ∧ feel(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 65_fiction_TWAIN-1880;NE
+# ::snt a jay can reason and plan and discuss ,
+∃ ENTITY[1] (
+ jay(ENTITY[1]) ∧
+  MD_can(∃ EVENT[2] EVENT[3] EVENT[4] CONJ_and(reason(EVENT[2], ENTITY[1]), plan(EVENT[3], ENTITY[1]), discuss(EVENT[4], ENTITY[1]))))
+
+# ::id 66_fiction_TWAIN-1880;NE
+# ::snt a jay likes gossip and scandal ,
+∃ EVENT[5] GROUP[2] ENTITY[1] (
+ jay(ENTITY[1]) ∧
+  ∃ ENTITY[3] (gossip(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (scandal(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧ likes(EVENT[5], ENTITY[1], GROUP[2]))
+
+# ::id 67_fiction_TWAIN-1880;NE
+# ::snt a jay has got a sense of humor ,
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (jay(ENTITY[1]) ∧ humor(ENTITY[3]) ∧ is_sense_of(ENTITY[2], ENTITY[3]) ∧ has_got(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 68_fiction_TWAIN-1880;NE
+# ::snt a jay knows when he is an ass just as well as you do -- maybe better .
+∃ EVENT[2] ENTITY[1] (
+ jay(ENTITY[1]) ∧
+  knows(EVENT[2], ENTITY[1],
+   QUEST(∃ SITUATION[12] SITUATION[13] REF2[8] REF1[4] EVENT[9] EVENT[11] DEGREE[6] ENTITY[5] ? TIME[3] (
+         REF1[4] = he ∧
+          ass(ENTITY[5]) ∧
+           REF2[8] = you ∧
+            do(EVENT[9], REF2[8]) ∧
+             is_TMP(SITUATION[13], TIME[3]) ∧
+              is_ADV(EVENT[9], DEGREE[6]) ∧
+               is_ADV_just_as_well_as(SITUATION[12], DEGREE[6]) ∧ ADV_maybe_better(SITUATION[12]) ∧
+                is_FACT_THAT(SITUATION[13], is_FACT_THAT(SITUATION[12], copula(EVENT[11], REF1[4], ENTITY[5])))))))
+
+# ::id 69_fiction_TWAIN-1880;NE
+# ::snt If a jay ai n't human , he better take in his sign ,
+∀ ENTITY[1] CND_If(jay(ENTITY[1]) ∧ ¬ ∃ ATTRIB[2] EVENT[3] (human(ATTRIB[2]) ∧ copula(EVENT[3], ENTITY[1], ATTRIB[2])),
+    ∃ REF2[6] REF1[4] EVENT[7] ENTITY[5] (
+     REF1[4] = he ∧
+      REF2[6] = his ∧
+       is_sign_POS(ENTITY[5], REF2[6]) ∧
+        ADV_better(EVENT[7]) ∧ take(EVENT[7], REF1[4]) ∧ in(EVENT[7]) = ENTITY[5]))
+
+# ::id 70_fiction_TWAIN-1880;NE
+# ::snt that 's all .
+∃ ENTITY[1] ALL ENTITY[2] ∃ EVENT[3] copula(EVENT[3], ENTITY[1], ENTITY[2])
+
+# ::id 71_fiction_TWAIN-1880;NE
+# ::snt Now I 'm going to tell you a perfectly true fact about some bluejays . "
+∃ SITUATION[8] ATTRIB[5] REF2[3] REF1[1] EVENT[7] EVENT[2] ENTITY[4] (
+ REF1[1] = i ∧
+  REF2[3] = you ∧
+   perfectly_true(ATTRIB[5]) ∧
+    SOME GROUP[6] (bluejays(GROUP[6]), is_fact_about(ENTITY[4], GROUP[6]) ∧ is_fact_ATTRIBUTE(ENTITY[4], ATTRIB[5])) ∧
+     ADV_now(SITUATION[8]) ∧
+      is_FACT_THAT(SITUATION[8], 'm_going(EVENT[2], REF1[1], tell(EVENT[7], REF1[1], ENTITY[4], REF2[3]))))
+
+# ::id 72_fiction_TWAIN-1880;NE
+# ::snt " When I first begun to understand jay language correctly , there was a little incident happened here .
+∃ SITUATION[7] SITUATION[8] SITUATION[15] ATTRIB[10] REF1[2] EVENT[5] EVENT[3] EVENT[12] EVENT[14] ENTITY[4] ENTITY[9] (
+ REF1[2] = i ∧
+  jay_language(ENTITY[4]) ∧
+   little(ATTRIB[10]) ∧
+    happened(EVENT[12], ENTITY[9]) ∧ is_incident_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+     is_TMP(SITUATION[8], SITUATION[15]) ∧
+      ADV_first(SITUATION[7]) ∧
+       ADV_correctly(EVENT[5]) ∧
+        past(EVENT[3]) ∧
+         is_FACT_THAT(SITUATION[8],
+          is_FACT_THAT(SITUATION[7], begun(EVENT[3], REF1[2], understand(EVENT[5], REF1[2], ENTITY[4])))) ∧
+          ADV_here(EVENT[12]) ∧
+           past(EVENT[12]) ∧ past(EVENT[14]) ∧ is_FACT_THAT(SITUATION[15], copula(EVENT[14], ENTITY[9])))
+
+# ::id 73_fiction_TWAIN-1880;NE
+# ::snt Seven years ago , the last man in this region but me moved away .
+∃ ATTRIB[4] EVENT[7] GROUP[1] GROUP[2] ENTITY[5] ENTITY[3] (
+ last(ATTRIB[4]) ∧
+  region(ENTITY[5]) ∧
+   is_man_in(ENTITY[3], ENTITY[5]) ∧ is_man_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    (CD_seven(GROUP[1]), years(GROUP[1])) ∧
+     CONJ_but(is_element_of(ENTITY[3], GROUP[2]), ∃ REF1[6] (REF1[6] = me ∧ is_element_of(REF1[6], GROUP[2]))) ∧
+      is_TMP_ago_TMP(EVENT[7], GROUP[1]) ∧ DIR_away(EVENT[7]) ∧ past(EVENT[7]) ∧ moved(EVENT[7], GROUP[2]))
+
+# ::id 74_fiction_TWAIN-1880;NE
+# ::snt There stands his house --
+∃ REF1[2] EVENT[3] ENTITY[1] (REF1[2] = his ∧ is_house_POS(ENTITY[1], REF1[2]) ∧ LOC_there(EVENT[3]) ∧ stands(EVENT[3], ENTITY[1]))
+
+# ::id 75_fiction_TWAIN-1880;NE
+# ::snt been empty ever since ;
+∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = *con* ∧ empty(ATTRIB[2]) ∧ TMP_ever_since(EVENT[3]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2]))
+
+# ::id 76_fiction_TWAIN-1880;NE
+# ::snt a log house , with a plank roof --
+∃ EVENT[3] ENTITY[2] ENTITY[1] (plank_roof(ENTITY[2]) ∧ is_log_house_with(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 77_fiction_TWAIN-1880;NE
+# ::snt just one big room , and no more ;
+∃ EVENT[5] GROUP[1] (
+ ∃ ATTRIB[3] ENTITY[2] (
+  big(ATTRIB[3]) ∧
+   (CD_one(ENTITY[2]), ADV_just(ENTITY[2]) ∧ is_room_ATTRIBUTE(ENTITY[2], ATTRIB[3])) ∧
+    is_element_of(ENTITY[2], GROUP[1])) ∧ NO_MORE ENTITY[4] is_element_of(ENTITY[4], GROUP[1]) ∧
+  xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[1])
+
+# ::id 78_fiction_TWAIN-1880;NE
+# ::snt no ceiling -- nothing between the rafters and the floor .
+∃ GROUP[3] ENTITY[4] (
+ rafters(GROUP[3]) ∧
+  floor(ENTITY[4]) ∧
+   ¬ ∃ EVENT[6] ENTITY[5] (
+         ceiling(ENTITY[5]) ∧
+          ¬ ∃ GROUP[2] ENTITY[1] (
+                is_subset_of_or_equal_to(GROUP[3], GROUP[2]) ∧ is_element_of(ENTITY[4], GROUP[2]) ∧
+                 is_thing_between(ENTITY[1], GROUP[2]) ∧ is_-ENTITY-_namely(ENTITY[5], ENTITY[1])) ∧
+           xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[5]))
+
+# ::id 79_fiction_TWAIN-1880;NE
+# ::snt Well , one Sunday morning I was sitting out here in front of my cabin , with my cat , taking the sun , and looking at the blue hills , and listening to the leaves rustling so lonely in the trees , and thinking of the home away yonder in the states , that I had n't heard from in thirteen years , when a bluejay lit on that house , with an acorn in his mouth , and says , " Hello , I reckon I 've struck something . "
+∃ SITUATION[40] SITUATION[42] SITUATION[43] REF7[37] REF6[35] REF5[32] REF3[7] REF2[5] REF1[2] REF4[23] ATTRIB[15] ATTRIB[11] EVENT[33] EVENT[36] EVENT[34] EVENT[41] EVENT[9] EVENT[12] EVENT[19] EVENT[26] ENTITY[4] ENTITY[31] ENTITY[30] ENTITY[28] ENTITY[6] ENTITY[3] TIME[1] EVENT[18] EVENT[16] ENTITY[29] ENTITY[8] GROUP[10] GROUP[17] GROUP[13] GROUP[21] ENTITY[20] (
+ house(ENTITY[29]) ∧
+  sun(ENTITY[8]) ∧
+   blue(ATTRIB[11]) ∧
+    is_hills_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+     trees(GROUP[17]) ∧
+      so_lonely(ATTRIB[15]) ∧
+       CONJ_and(rustling(EVENT[18], GROUP[13]) ∧ in(EVENT[18]) = GROUP[17],
+        xxx(EVENT[16], GROUP[13], ATTRIB[15])) ∧ leaves(GROUP[13]) ∧
+        states(GROUP[21]) ∧
+         REF4[23] = i ∧
+          DIR_away_yonder(ENTITY[20]) ∧
+           ¬ ∃ EVENT[25] TIME[24] (
+                 (CD_thirteen(TIME[24]), years(TIME[24])) ∧
+                  past(EVENT[25]) ∧
+                   had_heard(EVENT[25], REF4[23], ENTITY[20]) ∧ from_in(EVENT[25]) = TIME[24]) ∧
+            is_home_in(ENTITY[20], GROUP[21]) ∧
+           one_Sunday_morning(TIME[1]) ∧
+            REF1[2] = i ∧
+             REF2[5] = my ∧
+              is_cabin_POS(ENTITY[4], REF2[5]) ∧
+               is_front_of(ENTITY[3], ENTITY[4]) ∧
+                REF3[7] = my ∧
+                 is_cat_POS(ENTITY[6], REF3[7]) ∧
+                  bluejay(ENTITY[28]) ∧
+                   REF5[32] = his ∧
+                    is_mouth_POS(ENTITY[31], REF5[32]) ∧
+                     is_acorn_in(ENTITY[30], ENTITY[31]) ∧
+                      REF6[35] = i ∧
+                       REF7[37] = i ∧
+                        LOC_here(SITUATION[43]) ∧
+                         is_TMP(SITUATION[40], SITUATION[42]) ∧
+                          is_FACT_THAT(SITUATION[40],
+                           CONJ_and(lit(EVENT[33], ENTITY[28]) ∧ with(EVENT[33]) = ENTITY[30] ∧
+                                 on(EVENT[33]) = ENTITY[29],
+                            says(EVENT[34], ENTITY[28],
+                             reckon(EVENT[36], REF6[35],
+                              SOME ENTITY[38] (thing(ENTITY[38]),
+                               ∃ EVENT[39] 've_struck(EVENT[39], REF7[37], ENTITY[38])))))) ∧
+                           past(EVENT[41]) ∧
+                            is_FACT_THAT(SITUATION[43],
+                             CONJ_and(is_FACT_THAT(SITUATION[42],
+                                   was_sitting_out(EVENT[41], REF1[2]) ∧ with(EVENT[41]) = ENTITY[6] ∧
+                                    in(EVENT[41]) = ENTITY[3] ∧
+                                    is_contained_in(TMP(EVENT[41]), TIME[1])),
+                              CONJ_and(taking(EVENT[9], REF1[2], ENTITY[8]),
+                               looking(EVENT[12], REF1[2]) ∧ at(EVENT[12]) = GROUP[10],
+                               listening(EVENT[19], REF1[2]) ∧ to(EVENT[19]) = GROUP[13],
+                               thinking(EVENT[26], REF1[2]) ∧ of(EVENT[26]) = ENTITY[20]))))
+
+# ::id 80_fiction_TWAIN-1880;NE
+# ::snt When he spoke , the acorn dropped out of his mouth and rolled down the roof , of course ,
+∃ SITUATION[12] REF2[8] REF1[2] EVENT[3] EVENT[9] EVENT[11] ENTITY[7] ENTITY[6] ENTITY[10] ENTITY[5] (
+ acorn(ENTITY[5]) ∧
+  roof(ENTITY[10]) ∧
+   REF1[2] = he ∧
+    course(ENTITY[6]) ∧
+     REF2[8] = his ∧
+      is_mouth_POS(ENTITY[7], REF2[8]) ∧
+       is_TMP(EVENT[3], SITUATION[12]) ∧
+        past(EVENT[3]) ∧
+         spoke(EVENT[3], REF1[2]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[11]) ∧
+            is_FACT_THAT(SITUATION[12],
+             CONJ_and(dropped_out(EVENT[9], ENTITY[5]) ∧ of(EVENT[9]) = ENTITY[7] ∧
+                   of(EVENT[9]) = ENTITY[6],
+              rolled_down(EVENT[11], ENTITY[5], ENTITY[10]) ∧ of(EVENT[11]) = ENTITY[6])))
+
+# ::id 81_fiction_TWAIN-1880;NE
+# ::snt but he did n't care ;
+∃ REF1[1] (REF1[1] = he ∧ ¬ ∃ EVENT[2] (past(EVENT[2]) ∧ did_care(EVENT[2], REF1[1])))
+
+# ::id 82_fiction_TWAIN-1880;NE
+# ::snt his mind was all on the thing he had struck .
+∃ REF1[2] REF2[5] EVENT[7] ENTITY[1] EVENT[6] ENTITY[3] (
+ REF2[5] = he ∧
+  had_struck(EVENT[6], REF2[5], ENTITY[3]) ∧ thing(ENTITY[3]) ∧
+   past(EVENT[6]) ∧
+    REF1[2] = his ∧
+     is_mind_POS(ENTITY[1], REF1[2]) ∧
+      ADV_all(EVENT[7]) ∧ past(EVENT[7]) ∧ copula(EVENT[7], ENTITY[1]) ∧ on(EVENT[7]) = ENTITY[3])
+
+# ::id 83_fiction_TWAIN-1880;NE
+# ::snt It was a knot-hole in the roof .
+∃ REF1[1] EVENT[4] ENTITY[2] ENTITY[3] (
+ roof(ENTITY[3]) ∧
+  REF1[1] = it ∧ is_knot-hole_in(ENTITY[2], ENTITY[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 84_fiction_TWAIN-1880;NE
+# ::snt He cocked his head to one side , shut one eye and put the other one to the hole , like a possum looking down a jug ;
+∃ ATTRIB[11] REF2[3] REF1[1] ATTRIB[9] EVENT[5] EVENT[7] EVENT[17] EVENT[15] EVENT[16] ENTITY[4] ENTITY[2] ENTITY[6] ENTITY[14] ENTITY[12] ENTITY[10] ENTITY[8] (
+ other(ATTRIB[9]) ∧
+  is_one_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   hole(ENTITY[10]) ∧
+    REF1[1] = he ∧
+     REF2[3] = his ∧
+      is_head_POS(ENTITY[2], REF2[3]) ∧
+       (CD_one(ENTITY[4]), side(ENTITY[4])) ∧
+        (CD_one(ENTITY[6]), eye(ENTITY[6])) ∧
+         jug(ENTITY[14]) ∧
+          looking(EVENT[15], ENTITY[12]) ∧ down(EVENT[15]) = ENTITY[14] ∧ possum(ENTITY[12]) ∧
+           is_like_comp(ATTRIB[11], ENTITY[12]) ∧
+            past(EVENT[5]) ∧
+             past(EVENT[7]) ∧
+              past(EVENT[17]) ∧
+               CONJ_and(cocked(EVENT[5], REF1[1], ENTITY[2]) ∧ to(EVENT[5]) = ENTITY[4],
+                shut(EVENT[7], REF1[1], ENTITY[6]),
+                CONJ_and(put(EVENT[17], REF1[1], ENTITY[8]) ∧ to(EVENT[17]) = ENTITY[10],
+                 xxx(EVENT[16], ENTITY[8], ATTRIB[11]))))
+
+# ::id 85_fiction_TWAIN-1880;NE
+# ::snt then he glanced up with his bright eyes , gave a wink or two with his wings -- which signifies gratification , you understand -- and says , " It looks like a hole ,
+∃ SITUATION[15] SITUATION[21] ATTRIB[18] REF5[17] REF3[10] ATTRIB[4] REF2[3] REF1[1] EVENT[5] EVENT[13] EVENT[14] EVENT[20] EVENT[16] GROUP[2] ENTITY[12] GROUP[9] GROUP[6] ENTITY[19] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   bright(ATTRIB[4]) ∧
+    is_eyes_ATTRIBUTE(GROUP[2], ATTRIB[4]) ∧ is_eyes_POS(GROUP[2], REF2[3]) ∧
+     CONJ_or(∃ ENTITY[7] (wink(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+      ∃ ENTITY[8] (CD_two(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+      REF3[10] = his ∧
+       is_wings_POS(GROUP[9], REF3[10]) ∧
+        gratification(ENTITY[12]) ∧
+         REF5[17] = it ∧
+          hole(ENTITY[19]) ∧
+           is_like_comp(ATTRIB[18], ENTITY[19]) ∧
+            TMP_then(SITUATION[21]) ∧
+             past(EVENT[5]) ∧
+              signifies(EVENT[13], SITUATION[15], ENTITY[12]) ∧
+               past(EVENT[14]) ∧
+                is_FACT_THAT(SITUATION[21],
+                 CONJ_and(glanced_up(EVENT[5], REF1[1]) ∧ with(EVENT[5]) = GROUP[2],
+                  is_FACT_THAT(SITUATION[15], gave(EVENT[14], REF1[1], GROUP[6]) ∧ with(EVENT[14]) = GROUP[9]),
+                  says(EVENT[16], REF1[1], looks(EVENT[20], REF5[17], ATTRIB[18])))))
+
+# ::id 86_fiction_TWAIN-1880;NE
+# ::snt it 's located like a hole --
+∃ ATTRIB[2] REF1[1] EVENT[4] ENTITY[3] (REF1[1] = it ∧ hole(ENTITY[3]) ∧ is_like_comp(ATTRIB[2], ENTITY[3]) ∧ 's_located(EVENT[4], REF1[1], ATTRIB[2]))
+
+# ::id 87_fiction_TWAIN-1880;NE
+# ::snt blamed if I do n't believe
+∃ REF1[1] (
+ REF1[1] = *speaker* ∧
+  ∀ REF2[2] CND_if(REF2[2] = i ∧ ¬ ∃ EVENT[3] do_believe(EVENT[3], REF2[2]), ∃ EVENT[4] blamed(EVENT[4], _, REF1[1])))
+
+# ::id 88_fiction_TWAIN-1880;NE
+# ::snt it _is_ a hole ! "
+∃ REF1[1] EVENT[3] ENTITY[2] (REF1[1] = it ∧ hole(ENTITY[2]) ∧ copula(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 89_fiction_TWAIN-1880;NE
+# ::snt " Then he cocked his head down and took another look ;
+∃ REF2[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   is_head_POS(ENTITY[2], REF2[3]) ∧
+    ADV_then(EVENT[4]) ∧
+     past(EVENT[4]) ∧
+      CONJ_and(cocked_down(EVENT[4], REF1[1], ENTITY[2]),
+       ANOTHER ENTITY[5] (look(ENTITY[5]), ∃ EVENT[6] (past(EVENT[6]) ∧ took(EVENT[6], REF1[1], ENTITY[5])))))
+
+# ::id 90_fiction_TWAIN-1880;NE
+# ::snt he glances up perfectly joyful , this time ; winks his wings and his tail both , and says , " Oh , no , this ai n't no fat thing , I reckon !
+∃ REF4[14] ATTRIB[2] REF1[1] EVENT[5] EVENT[4] EVENT[12] EVENT[15] EVENT[13] GROUP[6] TIME[3] ENTITY[16] (
+ time(TIME[3]) ∧
+  REF1[1] = he ∧
+   is_perfectly_joyful_TMP(ATTRIB[2], TIME[3]) ∧
+    ∃ REF2[8] GROUP[7] (REF2[8] = his ∧ is_wings_POS(GROUP[7], REF2[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+     ∃ REF3[10] ENTITY[9] (REF3[10] = his ∧ is_tail_POS(ENTITY[9], REF3[10]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+     REF4[14] = i ∧
+      CONJ_and(CONJ_and(glances_up(EVENT[5], REF1[1]), xxx(EVENT[4], REF1[1], ATTRIB[2])),
+       BOTH ENTITY[11] (is_element_of(ENTITY[11], GROUP[6]), winks(EVENT[12], REF1[1], ENTITY[11])),
+       says(EVENT[13], REF1[1],
+        reckon(EVENT[15], REF4[14],
+         ¬ ¬ ∃ ATTRIB[18] EVENT[19] ENTITY[17] (
+                    fat(ATTRIB[18]) ∧
+                     is_thing_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧ copula(EVENT[19], ENTITY[16], ENTITY[17]))))))
+
+# ::id 91_fiction_TWAIN-1880;NE
+# ::snt If I ai n't in luck -- Why it 's a perfectly elegant hole ! "
+∀ REF1[1] CND_If(
+    REF1[1] = i ∧
+     ¬ ∃ EVENT[3] ENTITY[2] (luck(ENTITY[2]) ∧ copula(EVENT[3], REF1[1]) ∧ in(EVENT[3]) = ENTITY[2]),
+    ∃ ATTRIB[6] REF2[4] EVENT[7] ENTITY[5] (
+     REF2[4] = it ∧
+      perfectly_elegant(ATTRIB[6]) ∧ is_hole_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ copula(EVENT[7], REF2[4], ENTITY[5])))
+
+# ::id 92_fiction_TWAIN-1880;NE
+# ::snt So he flew down and got that acorn , and fetched it up and dropped it in , and was just tilting his head back , with the heavenliest smile on his face , when all of a sudden he was paralyzed into a listening attitude and smile faded gradually out of his countenance like breath off'n a razor , and the queerest look of surprise took its place .
+∃ SITUATION[37] SITUATION[38] SITUATION[39] SITUATION[40] REF8[34] ATTRIB[25] REF7[24] ATTRIB[20] REF6[18] ATTRIB[17] REF4[10] REF3[7] REF2[5] REF1[1] ATTRIB[31] REF5[14] ATTRIB[12] EVENT[2] EVENT[4] EVENT[6] EVENT[8] EVENT[21] EVENT[28] EVENT[35] EVENT[36] ENTITY[19] ENTITY[16] ENTITY[27] ENTITY[26] ENTITY[23] ENTITY[22] ENTITY[33] ENTITY[9] ENTITY[3] ENTITY[13] ENTITY[32] ENTITY[30] ENTITY[11] (
+ acorn(ENTITY[3]) ∧
+  heavenliest(ATTRIB[12]) ∧
+   REF5[14] = his ∧
+    is_face_POS(ENTITY[13], REF5[14]) ∧
+     is_smile_on(ENTITY[11], ENTITY[13]) ∧ is_smile_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+      queerest(ATTRIB[31]) ∧
+       surprise(ENTITY[32]) ∧
+        is_look_of(ENTITY[30], ENTITY[32]) ∧ is_look_ATTRIBUTE(ENTITY[30], ATTRIB[31]) ∧
+         REF1[1] = he ∧
+          REF2[5] = it ∧
+           REF3[7] = it ∧
+            REF4[10] = his ∧
+             is_head_POS(ENTITY[9], REF4[10]) ∧
+              sudden(ATTRIB[17]) ∧
+               is_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+                REF6[18] = he ∧
+                 listening(ATTRIB[20]) ∧
+                  is_attitude_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                   smile(ENTITY[22]) ∧
+                    REF7[24] = his ∧
+                     razor(ENTITY[27]) ∧
+                      is_breath_off'n(ENTITY[26], ENTITY[27]) ∧
+                       is_like_comp(ATTRIB[25], ENTITY[26]) ∧
+                        is_countenance_ATTRIBUTE(ENTITY[23], ATTRIB[25]) ∧ is_countenance_POS(ENTITY[23], REF7[24]) ∧
+                         REF8[34] = its ∧
+                          is_place_POS(ENTITY[33], REF8[34]) ∧
+                           ADV_so(SITUATION[40]) ∧
+                            past(EVENT[2]) ∧
+                             past(EVENT[4]) ∧
+                              past(EVENT[6]) ∧
+                               past(EVENT[8]) ∧
+                                ADV_just(SITUATION[39]) ∧
+                                 ADV_back(SITUATION[38]) ∧
+                                  past(EVENT[21]) ∧
+                                   ADV_gradually(EVENT[28]) ∧
+                                    past(EVENT[28]) ∧
+                                     past(EVENT[35]) ∧
+                                      CONJ_and(paralyzed(EVENT[21], _, REF6[18]) ∧
+                                            into(EVENT[21]) = ENTITY[19] ∧
+                                            all_of(EVENT[21]) = ENTITY[16],
+                                       faded_out(EVENT[28], ENTITY[22]) ∧
+                                        of(EVENT[28]) = ENTITY[23],
+                                       took(EVENT[35], ENTITY[30], ENTITY[33])) ∧
+                                       past(EVENT[36]) ∧
+                                        is_FACT_THAT(SITUATION[40],
+                                         CONJ_and(flew_down(EVENT[2], REF1[1]),
+                                          got(EVENT[4], REF1[1], ENTITY[3]),
+                                          fetched_up(EVENT[6], REF1[1], REF2[5]),
+                                          dropped_in(EVENT[8], REF1[1], REF3[7]),
+                                          is_FACT_THAT(SITUATION[39],
+                                           is_FACT_THAT(SITUATION[38],
+                                            is_FACT_THAT(SITUATION[37],
+                                             was_tilting(EVENT[36], REF1[1], ENTITY[9]) ∧
+                                              with(EVENT[36]) = ENTITY[11]))))))
+
+# ::id 93_fiction_TWAIN-1880;NE
+# ::snt Then he says , " Why , I did n't hear it fall ! "
+∃ REF2[3] REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  REF2[3] = i ∧
+   TMP_then(EVENT[2]) ∧
+    says(EVENT[2], REF1[1],
+     ¬ ∃ REF3[5] EVENT[6] EVENT[4] (
+           REF3[5] = it ∧
+            is_before(EVENT[4], EVENT[2]) ∧ did_hear(EVENT[4], REF2[3], fall(EVENT[6], REF3[5])))))
+
+# ::id 94_fiction_TWAIN-1880;NE
+# ::snt He cocked his eye at the hole again , and took a long look ; raised up and shook his head ; stepped around to the other side of the hole and took another look from that side ; shook his head again .
+∃ REF4[22] REF3[12] ATTRIB[8] REF2[3] REF1[1] ATTRIB[15] EVENT[5] EVENT[9] EVENT[10] EVENT[13] EVENT[17] EVENT[23] ENTITY[2] ENTITY[7] ENTITY[11] ENTITY[21] ENTITY[4] ENTITY[16] ENTITY[14] ENTITY[19] (
+ hole(ENTITY[4]) ∧
+  other(ATTRIB[15]) ∧
+   hole(ENTITY[16]) ∧
+    is_side_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧ is_side_of(ENTITY[14], ENTITY[16]) ∧
+     side(ENTITY[19]) ∧
+      REF1[1] = he ∧
+       REF2[3] = his ∧
+        is_eye_POS(ENTITY[2], REF2[3]) ∧
+         long(ATTRIB[8]) ∧
+          is_look_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+           REF3[12] = his ∧
+            is_head_POS(ENTITY[11], REF3[12]) ∧
+             REF4[22] = his ∧
+              is_head_POS(ENTITY[21], REF4[22]) ∧
+               ADV_again(EVENT[5]) ∧
+                past(EVENT[5]) ∧
+                 past(EVENT[9]) ∧
+                  past(EVENT[10]) ∧
+                   past(EVENT[13]) ∧
+                    past(EVENT[17]) ∧
+                     ADV_again(EVENT[23]) ∧
+                      past(EVENT[23]) ∧
+                       CONJ_and(cocked(EVENT[5], REF1[1], ENTITY[2]) ∧ at(EVENT[5]) = ENTITY[4],
+                        took(EVENT[9], REF1[1], ENTITY[7])) ∧
+                        CONJ_and(raised_up(EVENT[10], REF1[1]), shook(EVENT[13], REF1[1], ENTITY[11])) ∧
+                        CONJ_and(stepped_around(EVENT[17], REF1[1]) ∧ to(EVENT[17]) = ENTITY[14],
+                         ANOTHER ENTITY[18] (look(ENTITY[18]),
+                          ∃ EVENT[20] (
+                           past(EVENT[20]) ∧
+                            took(EVENT[20], REF1[1], ENTITY[18]) ∧
+                             from(EVENT[20]) = ENTITY[19]))) ∧
+                        shook(EVENT[23], REF1[1], ENTITY[21]))
+
+# ::id 95_fiction_TWAIN-1880;NE
+# ::snt He studied a while ,
+∃ REF1[1] EVENT[3] ENTITY[2] (REF1[1] = he ∧ while(ENTITY[2]) ∧ past(EVENT[3]) ∧ studied(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 96_fiction_TWAIN-1880;NE
+# ::snt then he just went into the Details -- walked round and round the hole and spied into it from every point of the compass .
+∃ SITUATION[13] REF2[9] ATTRIB[5] REF1[1] EVENT[3] EVENT[8] EVENT[7] GROUP[2] ENTITY[6] ENTITY[11] (
+ Details(GROUP[2]) ∧
+  hole(ENTITY[6]) ∧
+   compass(ENTITY[11]) ∧
+    REF1[1] = he ∧
+     is_round_and_round_comp(ATTRIB[5], ENTITY[6]) ∧
+      REF2[9] = it ∧
+       TMP_then(SITUATION[13]) ∧
+        ADV_just(EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          past(EVENT[8]) ∧
+           is_FACT_THAT(SITUATION[13],
+            CONJ_and(went(EVENT[3], REF1[1]) ∧ into(EVENT[3]) = GROUP[2],
+             CONJ_and(walked(EVENT[8], REF1[1]), xxx(EVENT[7], REF1[1], ATTRIB[5])),
+             ∀ ENTITY[10] (is_point_of(ENTITY[10], ENTITY[11]) →
+              ∃ EVENT[12] (
+               past(EVENT[12]) ∧
+                spied(EVENT[12], REF1[1]) ∧ into(EVENT[12]) = REF2[9] ∧
+                 from(EVENT[12]) = ENTITY[10])))))
+
+# ::id 97_fiction_TWAIN-1880;NE
+# ::snt No use .
+¬ ∃ EVENT[2] ENTITY[1] (use(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 98_fiction_TWAIN-1880;NE
+# ::snt Now he took a thinking attitude on the comb of the roof and scratched the back of his head with his right foot a minute , and finally says ,
+∃ SITUATION[17] ATTRIB[12] REF3[11] ATTRIB[3] REF1[1] REF2[9] EVENT[6] EVENT[14] EVENT[15] ENTITY[2] TIME[13] ENTITY[10] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[7] (
+ roof(ENTITY[5]) ∧
+  is_comb_of(ENTITY[4], ENTITY[5]) ∧
+   REF2[9] = his ∧
+    is_head_POS(ENTITY[8], REF2[9]) ∧
+     is_back_of(ENTITY[7], ENTITY[8]) ∧
+      REF1[1] = he ∧
+       thinking(ATTRIB[3]) ∧
+        is_attitude_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+         REF3[11] = his ∧
+          right(ATTRIB[12]) ∧
+           is_foot_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_foot_POS(ENTITY[10], REF3[11]) ∧
+            minute(TIME[13]) ∧
+             ADV_now(SITUATION[17]) ∧
+              past(EVENT[6]) ∧
+               ADV_finally(EVENT[15]) ∧
+                is_FACT_THAT(SITUATION[17],
+                 CONJ_and(took(EVENT[6], REF1[1], ENTITY[2]) ∧ on(EVENT[6]) = ENTITY[4],
+                  scratched(EVENT[14], REF1[1], ENTITY[7]) ∧ is_contained_in(TMP(EVENT[14]), TIME[13]) ∧
+                   with(EVENT[14]) = ENTITY[10], says(EVENT[15], REF1[1]))))
+
+# ::id 99_fiction_TWAIN-1880;NE
+# ::snt " Well , it 's too many for _me_ ,
+∃ REF2[3] ATTRIB[2] REF1[1] EVENT[4] (
+ REF1[1] = it ∧
+  REF2[3] = _me_ ∧
+   too(ATTRIB[2]) ∧ many(ATTRIB[2]) ∧ is_for(ATTRIB[2], REF2[3]) ∧
+    copula(EVENT[4], REF1[1], ATTRIB[2]))
+
+# ::id 100_fiction_TWAIN-1880;NE
+# ::snt that 's certain ;
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (certain(ATTRIB[2]) ∧ copula(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 101_fiction_TWAIN-1880;NE
+# ::snt must be a mighty long hole ;
+MD_must(∃ ATTRIB[2] EVENT[3] ENTITY[1] (mighty_long(ATTRIB[2]) ∧ is_hole_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[3], ENTITY[1])))
+
+# ::id 102_fiction_TWAIN-1880;NE
+# ::snt however , I ai n't got no time to fool around here ,
+∃ SITUATION[6] REF1[1] (
+ REF1[1] = i ∧
+  ADV_however(SITUATION[6]) ∧
+   is_FACT_THAT(SITUATION[6],
+    ¬ ¬ ∃ EVENT[3] EVENT[5] ENTITY[2] (
+               is_time_to(ENTITY[2], fool_around(EVENT[3])) ∧
+                LOC_here(EVENT[3]) ∧ ai_got(EVENT[5], REF1[1], ENTITY[2]))))
+
+# ::id 103_fiction_TWAIN-1880;NE
+# ::snt I got to " tend to business " ;
+∃ REF1[1] EVENT[4] EVENT[2] ENTITY[3] (
+ REF1[1] = i ∧
+  business(ENTITY[3]) ∧
+   past(EVENT[2]) ∧ got(EVENT[2], REF1[1], tend(EVENT[4], REF1[1]) ∧ to(EVENT[4]) = ENTITY[3]))
+
+# ::id 104_fiction_TWAIN-1880;NE
+# ::snt I reckon it 's all right --
+∃ ATTRIB[4] REF2[3] REF1[1] EVENT[5] EVENT[2] (
+ REF1[1] = i ∧
+  REF2[3] = it ∧ all_right(ATTRIB[4]) ∧ reckon(EVENT[2], REF1[1], copula(EVENT[5], REF2[3], ATTRIB[4])))
+
+# ::id 105_fiction_TWAIN-1880;NE
+# ::snt chance it , anyway . "
+∃ REF2[2] REF1[1] EVENT[3] (REF1[1] = *con* ∧ REF2[2] = it ∧ ADV_anyway(EVENT[3]) ∧ chance(EVENT[3], REF1[1], REF2[2]))
+
+# ::id 106_fiction_TWAIN-1880;NE
+# ::snt " So he flew off and fetched another acorn and dropped it in , and tried to flirt his eye to the hole quick enough to see what become of it ,
+∃ SITUATION[16] SITUATION[17] REF3[9] REF2[5] REF1[1] EVENT[2] EVENT[6] EVENT[11] EVENT[15] EVENT[7] ENTITY[8] ENTITY[10] (
+ hole(ENTITY[10]) ∧
+  REF1[1] = he ∧
+   REF2[5] = it ∧
+    REF3[9] = his ∧
+     is_eye_POS(ENTITY[8], REF3[9]) ∧
+      ADV_so(SITUATION[17]) ∧
+       past(EVENT[2]) ∧
+        past(EVENT[6]) ∧
+         is_ADV_quick_enough_to(SITUATION[16],
+          see(EVENT[11],
+           QUEST(∃ REF4[13] EVENT[14] ? ENTITY[12] (
+                 REF4[13] = it ∧
+                  is_before(EVENT[14], EVENT[11]) ∧
+                   become(EVENT[14], ENTITY[12]) ∧ of(EVENT[14]) = REF4[13])))) ∧
+          past(EVENT[7]) ∧
+           is_FACT_THAT(SITUATION[17],
+            CONJ_and(flew_off(EVENT[2], REF1[1]),
+             ANOTHER ENTITY[3] (acorn(ENTITY[3]), ∃ EVENT[4] (past(EVENT[4]) ∧ fetched(EVENT[4], REF1[1], ENTITY[3]))),
+             dropped_in(EVENT[6], REF1[1], REF2[5]),
+             tried(EVENT[7], REF1[1],
+              is_FACT_THAT(SITUATION[16],
+               flirt(EVENT[15], REF1[1], ENTITY[8]) ∧ to(EVENT[15]) = ENTITY[10])))))
+
+# ::id 107_fiction_TWAIN-1880;NE
+# ::snt but he was too late .
+∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = he ∧ too_late(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2]))
+
+# ::id 108_fiction_TWAIN-1880;NE
+# ::snt He held his eye there as much as a minute ;
+∃ SITUATION[7] REF2[3] REF1[1] ENTITY[2] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   is_eye_POS(ENTITY[2], REF2[3]) ∧
+    LOC_there(SITUATION[7]) ∧
+     is_FACT_THAT(SITUATION[7],
+      AS_MUCH ENTITY[5] TIME[4] ((minute(ENTITY[5]) ∧ is_as(TIME[4], ENTITY[5])),
+       ∃ EVENT[6] (
+        past(EVENT[6]) ∧
+         held(EVENT[6], REF1[1], ENTITY[2]) ∧ is_contained_in(TMP(EVENT[6]), TIME[4])))))
+
+# ::id 109_fiction_TWAIN-1880;NE
+# ::snt then he raised up and sighed , and says ,
+∃ SITUATION[5] REF1[1] EVENT[2] EVENT[3] EVENT[4] (
+ REF1[1] = he ∧
+  ADV_then(SITUATION[5]) ∧
+   past(EVENT[2]) ∧
+    past(EVENT[3]) ∧
+     is_FACT_THAT(SITUATION[5],
+      CONJ_and(raised_up(EVENT[2], REF1[1]), sighed(EVENT[3], REF1[1]), says(EVENT[4], REF1[1]))))
+
+# ::id 110_fiction_TWAIN-1880;NE
+# ::snt " Confound it , I do n't seem to understand this thing , no way ;
+∃ REF2[1] ENTITY[3] (
+ thing(ENTITY[3]) ∧
+  REF2[1] = i ∧
+   ¬ ∃ EVENT[4] EVENT[2] (
+         no(EVENT[4]) ∧ ADV_way(EVENT[4]) ∧
+          do_seem(EVENT[2], REF2[1], understand(EVENT[4], REF2[1], ENTITY[3]))))
+
+# ::id 111_fiction_TWAIN-1880;NE
+# ::snt however , I 'll tackle her again . "
+∃ SITUATION[5] REF1[1] (
+ REF1[1] = i ∧
+  ADV_however(SITUATION[5]) ∧
+   is_FACT_THAT(SITUATION[5],
+    MD'll(∃ REF2[2] EVENT[3] (REF2[2] = her ∧ ADV_again(EVENT[3]) ∧ tackle(EVENT[3], REF1[1], REF2[2])))))
+
+# ::id 112_fiction_TWAIN-1880;NE
+# ::snt He fetched another acorn , and done his level best to see what become of it ,
+∃ REF1[1] (
+ REF1[1] = he ∧
+  ANOTHER ENTITY[2] (acorn(ENTITY[2]),
+   ∃ REF2[5] ATTRIB[3] EVENT[11] EVENT[6] EVENT[10] ENTITY[4] (
+    REF2[5] = his ∧
+     is_level_POS(ENTITY[4], REF2[5]) ∧
+      is_best_comp(ATTRIB[3], ENTITY[4]) ∧
+       is_best_to(ATTRIB[3],
+        see(EVENT[6],
+         QUEST(∃ REF3[8] EVENT[9] ? ENTITY[7] (
+               REF3[8] = it ∧
+                is_before(EVENT[9], EVENT[6]) ∧
+                 become(EVENT[9], ENTITY[7]) ∧ of(EVENT[9]) = REF3[8])))) ∧
+       past(EVENT[11]) ∧
+        CONJ_and(fetched(EVENT[11], REF1[1], ENTITY[2]),
+         done(EVENT[10], _, ENTITY[2]) ∧ ATTRIBUTE(EVENT[10]) = ATTRIB[3]))))
+
+# ::id 113_fiction_TWAIN-1880;NE
+# ::snt but he could n't .
+∃ REF1[1] (REF1[1] = he ∧ MD_could(¬ ∃ EVENT[2] xxx(EVENT[2], REF1[1])))
+
+# ::id 114_fiction_TWAIN-1880;NE
+# ::snt He says ,
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ says(EVENT[2], REF1[1]))
+
+# ::id 115_fiction_TWAIN-1880;NE
+# ::snt " Well , I never struck no such a hole as this before ;
+∃ SITUATION[6] REF1[1] ENTITY[4] (
+ REF1[1] = i ∧
+  ADV_never(SITUATION[6]) ∧
+   is_FACT_THAT(SITUATION[6],
+    ¬ ∃ ATTRIB[3] EVENT[5] ENTITY[2] (
+          such(ATTRIB[3]) ∧
+           ADV_before(ENTITY[2]) ∧ is_hole_as(ENTITY[2], ENTITY[4]) ∧ is_hole_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+            past(EVENT[5]) ∧ struck(EVENT[5], REF1[1], ENTITY[2]))))
+
+# ::id 116_fiction_TWAIN-1880;NE
+# ::snt I 'm of the opinion it 's a totally new kind of a hole . "
+∃ REF1[1] ATTRIB[5] REF2[3] EVENT[8] EVENT[7] ENTITY[6] ENTITY[4] ENTITY[2] (
+ REF2[3] = it ∧
+  totally_new(ATTRIB[5]) ∧
+   hole(ENTITY[6]) ∧
+    is_kind_of(ENTITY[4], ENTITY[6]) ∧ is_kind_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     is_opinion_THAT(ENTITY[2], copula(EVENT[7], REF2[3], ENTITY[4])) ∧
+      REF1[1] = i ∧ copula(EVENT[8], REF1[1]) ∧ of(EVENT[8]) = ENTITY[2])
+
+# ::id 117_fiction_TWAIN-1880;NE
+# ::snt Then he begun to get mad .
+∃ SITUATION[5] ATTRIB[3] REF1[1] EVENT[4] EVENT[2] (
+ REF1[1] = he ∧
+  mad(ATTRIB[3]) ∧
+   ADV_then(SITUATION[5]) ∧
+    past(EVENT[2]) ∧ is_FACT_THAT(SITUATION[5], begun(EVENT[2], REF1[1], get(EVENT[4], REF1[1], ATTRIB[3]))))
+
+# ::id 118_fiction_TWAIN-1880;NE
+# ::snt He held in for a spell , walking up and down the comb of the roof and shaking his head and muttering to himself ;
+∃ REF3[9] REF2[7] REF1[1] EVENT[11] EVENT[5] EVENT[8] EVENT[10] ENTITY[6] ENTITY[2] ENTITY[4] ENTITY[3] (
+ roof(ENTITY[4]) ∧
+  is_comb_of(ENTITY[3], ENTITY[4]) ∧
+   REF1[1] = he ∧
+    spell(ENTITY[2]) ∧
+     REF2[7] = his ∧
+      is_head_POS(ENTITY[6], REF2[7]) ∧
+       REF3[9] = himself ∧
+        past(EVENT[11]) ∧
+         CONJ_and(held_in(EVENT[11], REF1[1]) ∧ for(EVENT[11]) = ENTITY[2],
+          CONJ_and(walking(EVENT[5], REF1[1]) ∧ up_and_down(EVENT[5]) = ENTITY[3],
+           shaking(EVENT[8], REF1[1], ENTITY[6]),
+           muttering(EVENT[10], REF1[1]) ∧ to(EVENT[10]) = REF3[9])))
+
+# ::id 119_fiction_TWAIN-1880;NE
+# ::snt but his feelings got the upper hand of him , presently ,
+∃ REF1[2] REF2[5] ATTRIB[4] EVENT[6] GROUP[1] ENTITY[3] (
+ upper(ATTRIB[4]) ∧
+  REF2[5] = him ∧
+   is_hand_of(ENTITY[3], REF2[5]) ∧ is_hand_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    REF1[2] = his ∧
+     is_feelings_POS(GROUP[1], REF1[2]) ∧
+      ADV_presently(EVENT[6]) ∧ past(EVENT[6]) ∧ got(EVENT[6], GROUP[1], ENTITY[3]))
+
+# ::id 120_fiction_TWAIN-1880;NE
+# ::snt and he broke loose and cussed himself black in the face .
+∃ ATTRIB[5] REF2[4] ATTRIB[2] REF1[1] EVENT[3] EVENT[8] EVENT[7] ENTITY[6] (
+ face(ENTITY[6]) ∧
+  REF1[1] = he ∧
+   loose(ATTRIB[2]) ∧
+    REF2[4] = himself ∧
+     is_black_in(ATTRIB[5], ENTITY[6]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[8]) ∧
+        CONJ_and(broke(EVENT[3], REF1[1], ATTRIB[2]),
+         CONJ_and(cussed(EVENT[8], REF1[1], REF2[4]), xxx(EVENT[7], REF2[4], ATTRIB[5]))))
+
+# ::id 121_fiction_TWAIN-1880;NE
+# ::snt I never see a bird take on so about a little thing .
+∃ SITUATION[8] ATTRIB[5] REF1[1] EVENT[6] EVENT[2] ENTITY[4] ENTITY[3] (
+ REF1[1] = i ∧
+  bird(ENTITY[3]) ∧
+   little(ATTRIB[5]) ∧
+    is_thing_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     ADV_never(SITUATION[8]) ∧
+      ADV_so(EVENT[6]) ∧
+       past(EVENT[2]) ∧
+        is_FACT_THAT(SITUATION[8],
+         see(EVENT[2], REF1[1], take_on(EVENT[6], ENTITY[3]) ∧ about(EVENT[6]) = ENTITY[4])))
+
+# ::id 122_fiction_TWAIN-1880;NE
+# ::snt When he got through he walks to the hole and looks in again for half a minute ;
+∃ SITUATION[10] SITUATION[11] REF2[5] REF1[2] EVENT[3] EVENT[7] ENTITY[6] (
+ hole(ENTITY[6]) ∧
+  REF1[2] = he ∧
+   REF2[5] = he ∧
+    is_TMP(EVENT[3], SITUATION[11]) ∧
+     past(EVENT[3]) ∧
+      got_through(EVENT[3], REF1[2]) ∧
+       ADV_again(SITUATION[10]) ∧
+        is_FACT_THAT(SITUATION[11],
+         CONJ_and(walks(EVENT[7], REF2[5]) ∧ to(EVENT[7]) = ENTITY[6],
+          is_FACT_THAT(SITUATION[10],
+           HALF ENTITY[8] (minute(ENTITY[8]), ∃ EVENT[9] (looks_in(EVENT[9], REF2[5]) ∧ for(EVENT[9]) = ENTITY[8]))))))
+
+# ::id 123_fiction_TWAIN-1880;NE
+# ::snt then he says ,
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ TMP_then(EVENT[2]) ∧ says(EVENT[2], REF1[1]))
+
+# ::id 124_fiction_TWAIN-1880;NE
+# ::snt " Well , you 're a long hole , and a deep hole , and a mighty singular hole altogether --
+∃ REF1[1] EVENT[10] GROUP[2] (
+ REF1[1] = you ∧
+  ∃ ATTRIB[4] ENTITY[3] (long(ATTRIB[4]) ∧ is_hole_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ATTRIB[6] ENTITY[5] (deep(ATTRIB[6]) ∧ is_hole_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ∃ ATTRIB[9] ATTRIB[8] ENTITY[7] (
+    mighty(ATTRIB[8]) ∧
+     singular(ATTRIB[9]) ∧
+      is_hole_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_hole_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   ADV_altogether(EVENT[10]) ∧ copula(EVENT[10], REF1[1], GROUP[2]))
+
+# ::id 125_fiction_TWAIN-1880;NE
+# ::snt but I 've started in to fill you ,
+∃ REF2[3] REF1[1] EVENT[4] EVENT[2] (REF1[1] = i ∧ REF2[3] = you ∧ 've_started(EVENT[2], REF1[1], fill_in(EVENT[4], REF1[1], REF2[3])))
+
+# ::id 126_fiction_TWAIN-1880;NE
+# ::snt and I 'm damned if I _do n't_ fill you , if it takes a hundred years ! "
+∃ REF1[1] (
+ REF1[1] = i ∧
+  ∀ REF2[2] CND_if(REF2[2] = i ∧ ¬ ∃ REF3[3] EVENT[4] (REF3[3] = you ∧ _do_fill(EVENT[4], REF2[2], REF3[3])), ∀ REF4[5] EVENT[7] TIME[6] CND_if(
+          REF4[5] = it ∧ (CD_hundred(TIME[6]), years(TIME[6])) ∧
+           takes(EVENT[7], REF4[5], TIME[6]), ∃ EVENT[8] damned(EVENT[8], _, REF1[1]))))
+
+# ::id 127_fiction_TWAIN-1880;NE
+# ::snt " And with that , away he went .
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ REF1[2] = he ∧
+  DIR_away(EVENT[3]) ∧ past(EVENT[3]) ∧ went(EVENT[3], REF1[2]) ∧ with(EVENT[3]) = ENTITY[1])
+
+# ::id 128_fiction_TWAIN-1880;NE
+# ::snt You never see a bird work so since you was born .
+∃ SITUATION[8] REF2[2] REF1[1] EVENT[3] EVENT[6] EVENT[4] ENTITY[5] (
+ REF1[1] = you ∧
+  REF2[2] = you ∧
+   bird(ENTITY[5]) ∧
+    ADV_never(SITUATION[8]) ∧
+     past(EVENT[3]) ∧
+      ADV_so(EVENT[6]) ∧
+       is_FACT_THAT(SITUATION[8],
+        CRD_since(born(EVENT[3], _, REF2[2]),
+         see(EVENT[4], REF1[1], work(EVENT[6], REF1[1], ENTITY[5])))))
+
+# ::id 129_fiction_TWAIN-1880;NE
+# ::snt He laid into his work like a nigger ,
+∃ ATTRIB[4] REF2[3] REF1[1] EVENT[6] ENTITY[5] ENTITY[2] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   nigger(ENTITY[5]) ∧
+    is_like_comp(ATTRIB[4], ENTITY[5]) ∧
+     is_work_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_work_POS(ENTITY[2], REF2[3]) ∧
+      past(EVENT[6]) ∧ laid(EVENT[6], REF1[1]) ∧ into(EVENT[6]) = ENTITY[2])
+
+# ::id 130_fiction_TWAIN-1880;NE
+# ::snt and the way he hove acorns into that hole for about two hours and a half was one of the most exciting and astonishing spectacles I ever struck .
+∃ REF2[12] ATTRIB[11] REF1[2] EVENT[15] ENTITY[9] EVENT[8] EVENT[13] GROUP[6] GROUP[5] ENTITY[4] GROUP[3] GROUP[10] ENTITY[1] (
+ REF1[2] = he ∧
+  acorns(GROUP[3]) ∧
+   hole(ENTITY[4]) ∧
+    (CD_about_two(GROUP[6]), hours(GROUP[6])) ∧
+     is_subset_of_or_equal_to(GROUP[6], GROUP[5]) ∧ HALF ENTITY[7] is_element_of(ENTITY[7], GROUP[5]) ∧
+      is_way_THAT(ENTITY[1],
+       hove(EVENT[8], REF1[2], GROUP[3]) ∧ for(EVENT[8]) = GROUP[5] ∧
+        into(EVENT[8]) = ENTITY[4]) ∧
+       REF2[12] = i ∧
+        is_most_exciting_and_astonishing_THAT(ATTRIB[11], struck(EVENT[13], REF2[12])) ∧
+         is_spectacles_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+          past(EVENT[8]) ∧
+           ADV_ever(EVENT[13]) ∧
+            past(EVENT[13]) ∧
+             (CD_one(ENTITY[9]), is_element_of(ENTITY[9], GROUP[10])) ∧
+              past(EVENT[15]) ∧ copula(EVENT[15], ENTITY[1], ENTITY[9]))
+
+# ::id 131_fiction_TWAIN-1880;NE
+# ::snt He never stopped to take a look anymore --
+∃ SITUATION[6] REF1[1] EVENT[4] EVENT[2] ENTITY[3] (
+ REF1[1] = he ∧
+  look(ENTITY[3]) ∧
+   ADV_never(SITUATION[6]) ∧
+    ADV_anymore(EVENT[4]) ∧
+     past(EVENT[2]) ∧ is_FACT_THAT(SITUATION[6], stopped(EVENT[2], REF1[1], take(EVENT[4], REF1[1], ENTITY[3]))))
+
+# ::id 132_fiction_TWAIN-1880;NE
+# ::snt he just hove 'em in and went for more .
+∃ REF2[2] REF1[1] EVENT[3] (
+ REF1[1] = he ∧
+  REF2[2] = 'em ∧
+   ADV_just(EVENT[3]) ∧
+    past(EVENT[3]) ∧
+     CONJ_and(hove_in(EVENT[3], REF1[1], REF2[2]),
+      MORE ENTITY[5] ∃ EVENT[6] (past(EVENT[6]) ∧ went(EVENT[6], REF1[1]) ∧ for(EVENT[6]) = ENTITY[5])))
+
+# ::id 133_fiction_TWAIN-1880;NE
+# ::snt Well , at last he could hardly flop his wings ,
+∃ REF1[2] ATTRIB[1] (
+ ADV_last(ATTRIB[1]) ∧
+  REF1[2] = he ∧
+   MD_could(∃ REF2[4] EVENT[5] GROUP[3] (
+         REF2[4] = his ∧
+          is_wings_POS(GROUP[3], REF2[4]) ∧
+           ADV_hardly(EVENT[5]) ∧ flop(EVENT[5], REF1[2], GROUP[3]) ∧ at(EVENT[5]) = ATTRIB[1])))
+
+# ::id 134_fiction_TWAIN-1880;NE
+# ::snt he was so tuckered out .
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ ADV_so(EVENT[2]) ∧ past(EVENT[2]) ∧ was_tuckered_out(EVENT[2], REF1[1]))
+
+# ::id 135_fiction_TWAIN-1880;NE
+# ::snt He comes a-dropping down , once more , sweating like an ice-pitcher , dropped his acorn in and says ,
+∃ REF2[10] REF1[1] EVENT[2] EVENT[11] EVENT[12] ENTITY[9] (
+ REF1[1] = he ∧
+  REF2[10] = his ∧
+   is_acorn_POS(ENTITY[9], REF2[10]) ∧
+    DIR_down(EVENT[2]) ∧
+     past(EVENT[11]) ∧
+      CONJ_and(CONJ_and(MORE TIME[4] (ADV_once(TIME[4]),
+                 ∃ ATTRIB[5] EVENT[8] EVENT[7] ENTITY[6] (
+                  ice-pitcher(ENTITY[6]) ∧
+                   is_like_comp(ATTRIB[5], ENTITY[6]) ∧
+                    CONJ_and(comes(EVENT[8], REF1[1]) ∧ is_contained_in(TMP(EVENT[8]), TIME[4]),
+                     sweating(EVENT[7], REF1[1], ATTRIB[5])))), a-dropping(EVENT[2], REF1[1])),
+       dropped_in(EVENT[11], REF1[1], ENTITY[9]), says(EVENT[12], REF1[1])))
+
+# ::id 136_fiction_TWAIN-1880;NE
+# ::snt ' _Now_ I guess I 've got the bulge on you by this time ! '
+∃ SITUATION[8] REF2[3] REF1[1] REF3[5] EVENT[7] EVENT[2] ENTITY[6] ENTITY[4] (
+ REF3[5] = you ∧
+  is_bulge_on(ENTITY[4], REF3[5]) ∧
+   time(ENTITY[6]) ∧
+    REF1[1] = i ∧
+     REF2[3] = i ∧
+      ADV__now(SITUATION[8]) ∧
+       is_FACT_THAT(SITUATION[8],
+        guess(EVENT[2], REF1[1], 've_got(EVENT[7], REF2[3], ENTITY[4]) ∧ by(EVENT[7]) = ENTITY[6])))
+
+# ::id 137_fiction_TWAIN-1880;NE
+# ::snt So he bent down for a look .
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = he ∧
+  look(ENTITY[2]) ∧
+   ADV_so(EVENT[3]) ∧ past(EVENT[3]) ∧ bent_down(EVENT[3], REF1[1]) ∧ for(EVENT[3]) = ENTITY[2])
+
+# ::id 138_fiction_TWAIN-1880;NE
+# ::snt If you 'll believe me , when his head come up again he was just pale with rage .
+∀ REF1[1] CND_If(REF1[1] = you ∧ MD'll(∃ REF2[2] EVENT[3] (REF2[2] = me ∧ believe(EVENT[3], REF1[1], REF2[2]))), ∃ SITUATION[14] ATTRIB[11] REF4[10] REF3[6] EVENT[7] EVENT[13] ENTITY[5] ENTITY[12] (
+     REF3[6] = his ∧
+      is_head_POS(ENTITY[5], REF3[6]) ∧
+       REF4[10] = he ∧
+        rage(ENTITY[12]) ∧
+         is_just_pale_with(ATTRIB[11], ENTITY[12]) ∧
+          is_TMP(EVENT[7], SITUATION[14]) ∧
+           ADV_again(EVENT[7]) ∧
+            past(EVENT[7]) ∧
+             come_up(EVENT[7], ENTITY[5]) ∧
+              past(EVENT[13]) ∧ is_FACT_THAT(SITUATION[14], copula(EVENT[13], REF4[10], ATTRIB[11]))))
+
+# ::id 139_fiction_TWAIN-1880;NE
+# ::snt He says ,
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ says(EVENT[2], REF1[1]))
+
+# ::id 140_fiction_TWAIN-1880;NE
+# ::snt " I 've shoveled acorns enough in there to keep the family thirty years ,
+∃ PRP[4] ATTRIB[3] REF1[1] EVENT[7] EVENT[8] GROUP[6] GROUP[2] ENTITY[5] (
+ family(ENTITY[5]) ∧
+  REF1[1] = i ∧
+   ADV_enough(GROUP[2]) ∧ acorns(GROUP[2]) ∧
+    ADV_there(ATTRIB[3]) ∧
+     (CD_thirty(GROUP[6]), years(GROUP[6])) ∧
+      is_FACT_THAT(PRP[4], keep(EVENT[7], GROUP[2], ENTITY[5]) ∧ TMP(EVENT[7]) = GROUP[6]) ∧
+       've_shoveled(EVENT[8], REF1[1], GROUP[2]) ∧ PRP(EVENT[8]) = PRP[4] ∧ in(EVENT[8]) = ATTRIB[3])
+
+# ::id 141_fiction_TWAIN-1880;NE
+# ::snt and if I can see a sign of one of 'em I wish I may land in a museum with a belly full of sawdust in two minutes ! "
+∀ REF1[1] CND_if(
+    REF1[1] = i ∧
+     MD_can(∃ REF2[4] EVENT[5] ENTITY[3] ENTITY[2] (
+           REF2[4] = 'em ∧
+            (CD_one(ENTITY[3]), is_of(ENTITY[3], REF2[4])) ∧
+             is_sign_of(ENTITY[2], ENTITY[3]) ∧ see(EVENT[5], REF1[1], ENTITY[2]))),
+    ∃ REF4[8] REF3[6] EVENT[7] (
+     REF3[6] = i ∧
+      REF4[8] = i ∧
+       wish(EVENT[7], REF3[6],
+        MD_may(∃ ATTRIB[11] EVENT[14] ENTITY[12] GROUP[13] ENTITY[10] ENTITY[9] (
+              museum(ENTITY[9]) ∧
+               sawdust(ENTITY[12]) ∧
+                is_full_of(ATTRIB[11], ENTITY[12]) ∧
+                 is_belly_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+                  (CD_two(GROUP[13]), minutes(GROUP[13])) ∧
+                   land(EVENT[14], REF4[8]) ∧ in(EVENT[14]) = GROUP[13] ∧
+                    with(EVENT[14]) = ENTITY[10] ∧ in(EVENT[14]) = ENTITY[9])))))
+
+# ::id 142_fiction_TWAIN-1880;NE
+# ::snt " He just had strength enough to crawl up on to the comb and lean his back agin the chimbly ,
+∃ SITUATION[10] REF2[6] REF1[1] EVENT[4] EVENT[8] EVENT[9] ENTITY[5] ENTITY[2] ENTITY[3] ENTITY[7] (
+ comb(ENTITY[3]) ∧
+  chimbly(ENTITY[7]) ∧
+   REF1[1] = he ∧
+    REF2[6] = his ∧
+     is_back_POS(ENTITY[5], REF2[6]) ∧
+      ADV_enough(ENTITY[2]) ∧
+       is_strength_to(ENTITY[2],
+        CONJ_and(crawl_up(EVENT[4]) ∧ on_to(EVENT[4]) = ENTITY[3],
+         lean(EVENT[8], _, ENTITY[5]) ∧ agin(EVENT[8]) = ENTITY[7])) ∧
+       ADV_just(SITUATION[10]) ∧ past(EVENT[9]) ∧ is_FACT_THAT(SITUATION[10], had(EVENT[9], REF1[1], ENTITY[2])))
+
+# ::id 143_fiction_TWAIN-1880;NE
+# ::snt and then he collected his impressions and begun to free his mind .
+∃ SITUATION[9] REF3[7] REF2[3] REF1[1] EVENT[4] EVENT[8] EVENT[5] GROUP[2] ENTITY[6] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   is_impressions_POS(GROUP[2], REF2[3]) ∧
+    REF3[7] = his ∧
+     is_mind_POS(ENTITY[6], REF3[7]) ∧
+      TMP_then(SITUATION[9]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[5]) ∧
+         is_FACT_THAT(SITUATION[9],
+          CONJ_and(collected(EVENT[4], REF1[1], GROUP[2]),
+           begun(EVENT[5], REF1[1], free(EVENT[8], REF1[1], ENTITY[6])))))
+
+# ::id 144_fiction_TWAIN-1880;NE
+# ::snt I see in a second that what I had mistook for profanity in the mines was only just the rudiments , as you may say .
+∃ REF2[6] REF1[1] REF3[13] SITUATION[12] EVENT[9] EVENT[3] ENTITY[7] ENTITY[4] ENTITY[2] GROUP[8] GROUP[11] (
+ mines(GROUP[8]) ∧
+  REF3[13] = you ∧
+   is_FACT_THAT(SITUATION[12], MD_may(∃ EVENT[14] say(EVENT[14], REF3[13]))) ∧
+    ADV_just(GROUP[11]) ∧ is_rudiments_as(GROUP[11], SITUATION[12]) ∧
+     REF1[1] = i ∧
+      second(ENTITY[2]) ∧
+       REF2[6] = i ∧
+        profanity(ENTITY[7]) ∧
+         had_mistook(EVENT[9], REF2[6], ENTITY[4]) ∧ in(EVENT[9]) = GROUP[8] ∧
+          for(EVENT[9]) = ENTITY[7] ∧
+          is_before(EVENT[9], EVENT[3]) ∧
+           see(EVENT[3], REF1[1],
+            ONLY GROUP[10] (is_subset_of_or_equal_to(GROUP[10], GROUP[11]),
+             ∃ EVENT[15] (is_before(EVENT[15], EVENT[3]) ∧ copula(EVENT[15], ENTITY[4], GROUP[10])))) ∧
+            in(EVENT[3]) = ENTITY[2])
+
+# ::id 145_fiction_TWAIN-1880;NE
+# ::snt " Another jay was going by , and heard him doing his devotions , and stops to inquire what was up .
+ANOTHER ENTITY[1] (jay(ENTITY[1]),
+ ∃ REF2[5] REF1[3] GROUP[4] EVENT[2] EVENT[7] EVENT[6] EVENT[9] EVENT[8] (
+  past(EVENT[2]) ∧
+   past(EVENT[7]) ∧
+    REF1[3] = him ∧
+     REF2[5] = his ∧
+      is_devotions_POS(GROUP[4], REF2[5]) ∧
+       CONJ_and(was_going_by(EVENT[2], ENTITY[1]),
+        CONJ_and(heard(EVENT[7], ENTITY[1], REF1[3]), doing(EVENT[6], REF1[3], GROUP[4])),
+        stops(EVENT[8], ENTITY[1],
+         inquire(EVENT[9], ENTITY[1],
+          QUEST(∃ EVENT[11] ? ENTITY[10] (is_before(EVENT[11], EVENT[9]) ∧ copula_up(EVENT[11], ENTITY[10]))))))))
+
+# ::id 146_fiction_TWAIN-1880;NE
+# ::snt The sufferer told him the whole circumstance , and says ,
+∃ REF1[2] ATTRIB[4] EVENT[5] EVENT[6] ENTITY[3] ENTITY[1] (
+ sufferer(ENTITY[1]) ∧
+  whole(ATTRIB[4]) ∧
+   is_circumstance_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    REF1[2] = him ∧
+     past(EVENT[5]) ∧ CONJ_and(told(EVENT[5], ENTITY[1], ENTITY[3], REF1[2]), says(EVENT[6], ENTITY[1])))
+
+# ::id 147_fiction_TWAIN-1880;NE
+# ::snt " Now yonder 's the hole ,
+∃ EVENT[2] ENTITY[1] (hole(ENTITY[1]) ∧ TMP_now(EVENT[2]) ∧ LOC_yonder(EVENT[2]) ∧ copula(EVENT[2], ENTITY[1]))
+
+# ::id 148_fiction_TWAIN-1880;NE
+# ::snt and if you do n't believe me , go and look for yourself . "
+IMPERATIVE(∀ REF1[1] CND_if(REF1[1] = you ∧ ¬ ∃ REF2[2] EVENT[3] (REF2[2] = me ∧ do_believe(EVENT[3], REF1[1], REF2[2])), ∃ REF3[5] EVENT[4] EVENT[6] (
+          REF3[5] = yourself ∧
+           CONJ_and(go(EVENT[4]), look(EVENT[6]) ∧ for(EVENT[6]) = REF3[5]))))
+
+# ::id 149_fiction_TWAIN-1880;NE
+# ::snt So this fellow went and looked , and comes back and says ,
+∃ SITUATION[6] EVENT[2] EVENT[3] EVENT[4] EVENT[5] ENTITY[1] (
+ fellow(ENTITY[1]) ∧
+  ADV_so(SITUATION[6]) ∧
+   past(EVENT[2]) ∧
+    past(EVENT[3]) ∧
+     is_FACT_THAT(SITUATION[6],
+      CONJ_and(CONJ_and(went(EVENT[2], ENTITY[1]), looked(EVENT[3], ENTITY[1])),
+       CONJ_and(comes_back(EVENT[4], ENTITY[1]), says(EVENT[5], ENTITY[1])))))
+
+# ::id 150_fiction_TWAIN-1880;NE
+# ::snt " How many did you say you put in there ? "
+QUEST(∃ ATTRIB[5] REF2[4] REF1[2] EVENT[6] EVENT[3] ? ENTITY[1] (
+      how_many(ENTITY[1]) ∧
+       REF1[2] = you ∧
+        REF2[4] = you ∧
+         ADV_there(ATTRIB[5]) ∧
+          past(EVENT[3]) ∧
+           did_say(EVENT[3], REF1[2], ENTITY[1], put(EVENT[6], REF2[4]) ∧ in(EVENT[6]) = ATTRIB[5])))
+
+# ::id 151_fiction_TWAIN-1880;NE
+# ::snt " Not any less than two tons , " says the sufferer .
+∃ EVENT[2] ENTITY[1] (
+ sufferer(ENTITY[1]) ∧
+  says(EVENT[2], ENTITY[1],
+   NOT_ANY_LESS GROUP[4] ENTITY[3] (((CD_two(GROUP[4]), tons(GROUP[4])) ∧ is_than(ENTITY[3], GROUP[4])),
+    ∃ EVENT[5] xxx(EVENT[5], ENTITY[3]))))
+
+# ::id 152_fiction_TWAIN-1880;NE
+# ::snt The other jay went and looked again .
+∃ SITUATION[5] ATTRIB[2] EVENT[3] EVENT[4] ENTITY[1] (
+ other(ATTRIB[2]) ∧
+  is_jay_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ADV_again(SITUATION[5]) ∧
+    past(EVENT[3]) ∧
+     past(EVENT[4]) ∧ is_FACT_THAT(SITUATION[5], CONJ_and(went(EVENT[3], ENTITY[1]), looked(EVENT[4], ENTITY[1]))))
+
+# ::id 153_fiction_TWAIN-1880;NE
+# ::snt He could n't seem to make it out ,
+∃ REF1[1] (
+ REF1[1] = he ∧
+  MD_could(¬ ∃ REF2[3] EVENT[4] EVENT[2] (REF2[3] = it ∧ seem(EVENT[2], REF1[1], make_out(EVENT[4], REF1[1], REF2[3])))))
+
+# ::id 154_fiction_TWAIN-1880;NE
+# ::snt so he raised a yell ,
+∃ REF1[1] EVENT[3] ENTITY[2] (REF1[1] = he ∧ yell(ENTITY[2]) ∧ past(EVENT[3]) ∧ raised(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 155_fiction_TWAIN-1880;NE
+# ::snt and three more jays come .
+THREE_MORE GROUP[1] (jays(GROUP[1]), ∃ EVENT[2] come(EVENT[2], GROUP[1]))
+
+# ::id 156_fiction_TWAIN-1880;NE
+# ::snt They all examined the hole ,
+∃ REF1[1] EVENT[3] ENTITY[2] (hole(ENTITY[2]) ∧ REF1[1] = they ∧ past(EVENT[3]) ∧ examined(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 157_fiction_TWAIN-1880;NE
+# ::snt they all made the sufferer tell it over again ,
+∃ REF2[4] REF1[1] EVENT[5] EVENT[2] ENTITY[3] (
+ sufferer(ENTITY[3]) ∧
+  REF1[1] = they ∧
+   REF2[4] = it ∧
+    ADV_again(EVENT[5]) ∧ past(EVENT[2]) ∧ made(EVENT[2], REF1[1], tell_over(EVENT[5], ENTITY[3], REF2[4])))
+
+# ::id 158_fiction_TWAIN-1880;NE
+# ::snt then they all discussed it , and got off as many leather-headed opinions about it as an average crowd of humans could have done .
+∃ REF2[2] REF1[1] EVENT[3] (
+ REF1[1] = they ∧
+  REF2[2] = it ∧
+   ADV_then(EVENT[3]) ∧
+    past(EVENT[3]) ∧
+     CONJ_and(discussed(EVENT[3], REF1[1], REF2[2]),
+      MANY ATTRIB[10] REF3[6] ATTRIB[5] GROUP[11] ENTITY[9] DEGREE[7] GROUP[4] (
+       (leather-headed(ATTRIB[5]) ∧ REF3[6] = it ∧ average(ATTRIB[10]) ∧ humans(GROUP[11]) ∧
+        is_crowd_of(ENTITY[9], GROUP[11]) ∧ is_crowd_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+        MD_could(∃ EVENT[12] have_done(EVENT[12], ENTITY[9], DEGREE[7])) ∧
+        ADV_as(GROUP[4]) ∧
+         is_opinions_as(GROUP[4], DEGREE[7]) ∧ is_opinions_about(GROUP[4], REF3[6]) ∧ is_opinions_ATTRIBUTE(GROUP[4], ATTRIB[5])),
+       ∃ EVENT[13] (past(EVENT[13]) ∧ got_off(EVENT[13], REF1[1], GROUP[4])))))
+
+# ::id 159_fiction_TWAIN-1880;NE
+# ::snt " They called in more jays ;
+∃ REF1[1] (
+ REF1[1] = they ∧
+  MORE GROUP[2] (jays(GROUP[2]),
+   ∃ EVENT[3] (past(EVENT[3]) ∧ called(EVENT[3], REF1[1]) ∧ in(EVENT[3]) = GROUP[2])))
+
+# ::id 160_fiction_TWAIN-1880;NE
+# ::snt then more and more , till pretty soon this whole region 'peared to have a blue flush about it .
+∃ SITUATION[10] ATTRIB[4] ENTITY[3] (
+ whole(ATTRIB[4]) ∧
+  is_region_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   ADV_then(SITUATION[10]) ∧
+    is_FACT_THAT(SITUATION[10],
+     MORE_AND_MORE DEGREE[1] ∃ REF1[8] ATTRIB[7] ATTRIB[2] EVENT[9] EVENT[5] ENTITY[6] (
+      ADV_pretty_soon(ATTRIB[2]) ∧
+       blue(ATTRIB[7]) ∧
+        is_flush_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         REF1[8] = it ∧
+          past(EVENT[5]) ∧
+           'peared(EVENT[5], ENTITY[3],
+            have(EVENT[9], ENTITY[3], ENTITY[6]) ∧ about(EVENT[9]) = REF1[8]) ∧
+            till(EVENT[5]) = ATTRIB[2] ∧ MSR(EVENT[5]) = DEGREE[1])))
+
+# ::id 161_fiction_TWAIN-1880;NE
+# ::snt There must have been five thousand of them ;
+∃ REF1[2] ENTITY[1] (
+ REF1[2] = them ∧
+  (CD_five_thousand(ENTITY[1]), is_of(ENTITY[1], REF1[2])) ∧ MD_must(∃ EVENT[3] have_copula(EVENT[3], ENTITY[1])))
+
+# ::id 162_fiction_TWAIN-1880;NE
+# ::snt and such another jawing and disputing and ripping and cussing , you never heard .
+ANOTHER ATTRIB[2] GROUP[3] ENTITY[1] (
+ (such(ATTRIB[2]) ∧
+  ∃ ATTRIB[5] ENTITY[4] (jawing(ATTRIB[5]) ∧ is_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ATTRIB[7] ENTITY[6] (disputing(ATTRIB[7]) ∧ is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+   ∃ ATTRIB[9] ENTITY[8] (ripping(ATTRIB[9]) ∧ is_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+   ∃ ATTRIB[11] ENTITY[10] (cussing(ATTRIB[11]) ∧ is_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+  is_equals(ENTITY[1], GROUP[3]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2])),
+ ∃ REF1[12] EVENT[13] (REF1[12] = you ∧ ADV_never(EVENT[13]) ∧ past(EVENT[13]) ∧ heard(EVENT[13], REF1[12], ENTITY[1])))
+
+# ::id 163_fiction_TWAIN-1880;NE
+# ::snt Every jay in the whole lot put his eye to the hole and delivered a more chuckle-headed opinion about the mystery than the jay that went there before him .
+∃ REF2[13] ATTRIB[3] EVENT[14] ENTITY[2] ENTITY[6] ENTITY[11] ENTITY[10] (
+ whole(ATTRIB[3]) ∧
+  is_lot_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   hole(ENTITY[6]) ∧
+    mystery(ENTITY[10]) ∧
+     REF2[13] = him ∧
+      went(EVENT[14], ENTITY[11]) ∧ before(EVENT[14]) = REF2[13] ∧ jay(ENTITY[11]) ∧
+       ADV_there(EVENT[14]) ∧
+        past(EVENT[14]) ∧
+         ∀ ENTITY[1] (is_jay_in(ENTITY[1], ENTITY[2]) →
+          ∃ REF1[5] EVENT[7] ENTITY[4] (
+           REF1[5] = his ∧
+            is_eye_POS(ENTITY[4], REF1[5]) ∧
+             past(EVENT[7]) ∧
+              CONJ_and(put(EVENT[7], ENTITY[1], ENTITY[4]) ∧ to(EVENT[7]) = ENTITY[6],
+               MORE ATTRIB[9] ENTITY[8] (
+                (chuckle-headed(ATTRIB[9]) ∧
+                 is_opinion_than(ENTITY[8], ENTITY[11]) ∧ is_opinion_about(ENTITY[8], ENTITY[10]) ∧
+                  is_opinion_ATTRIBUTE(ENTITY[8], ATTRIB[9])),
+                ∃ EVENT[16] (past(EVENT[16]) ∧ delivered(EVENT[16], ENTITY[1], ENTITY[8])))))))
+
+# ::id 164_fiction_TWAIN-1880;NE
+# ::snt They examined the house all over , too .
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ house(ENTITY[2]) ∧
+  REF1[1] = they ∧
+   ADV_all_over(EVENT[3]) ∧ ADV_too(EVENT[3]) ∧ past(EVENT[3]) ∧ examined(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 165_fiction_TWAIN-1880;NE
+# ::snt The door was standing half open ,
+∃ EVENT[2] ENTITY[1] (door(ENTITY[1]) ∧ ADV_half_open(EVENT[2]) ∧ past(EVENT[2]) ∧ was_standing(EVENT[2], ENTITY[1]))
+
+# ::id 166_fiction_TWAIN-1880;NE
+# ::snt and at last one old jay happened to go and light on it and look in .
+∃ REF1[5] ATTRIB[3] ATTRIB[1] EVENT[6] EVENT[7] EVENT[4] ENTITY[2] (
+ ADV_last(ATTRIB[1]) ∧
+  old(ATTRIB[3]) ∧
+   (CD_one(ENTITY[2]), is_jay_ATTRIBUTE(ENTITY[2], ATTRIB[3])) ∧
+    REF1[5] = it ∧
+     past(EVENT[4]) ∧
+      happened(EVENT[4], ENTITY[2],
+       CONJ_and(go_and_light(EVENT[6], ENTITY[2]) ∧ on(EVENT[6]) = REF1[5], look_in(EVENT[7], ENTITY[2]))) ∧
+       at(EVENT[4]) = ATTRIB[1])
+
+# ::id 167_fiction_TWAIN-1880;NE
+# ::snt Of course , that knocked the mystery galley-west in a second .
+∃ EVENT[5] ENTITY[4] ENTITY[1] ENTITY[3] ENTITY[2] (
+ mystery_galley-west(ENTITY[3]) ∧
+  course(ENTITY[1]) ∧
+   second(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     knocked(EVENT[5], ENTITY[2], ENTITY[3]) ∧ in(EVENT[5]) = ENTITY[4] ∧ Of(EVENT[5]) = ENTITY[1])
+
+# ::id 168_fiction_TWAIN-1880;NE
+# ::snt There lay the acorns , scattered all over the floor .
+∃ EVENT[4] EVENT[3] ENTITY[2] GROUP[1] (
+ acorns(GROUP[1]) ∧
+  floor(ENTITY[2]) ∧
+   past(EVENT[4]) ∧
+    CONJ_and(lay(EVENT[4], GROUP[1]), scattered(EVENT[3], GROUP[1]) ∧ all_over(EVENT[3]) = ENTITY[2]))
+
+# ::id 169_fiction_TWAIN-1880;NE
+# ::snt He flopped his wings and raised a whoop .
+∃ REF2[3] REF1[1] EVENT[4] EVENT[6] GROUP[2] ENTITY[5] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   is_wings_POS(GROUP[2], REF2[3]) ∧
+    whoop(ENTITY[5]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[6]) ∧ CONJ_and(flopped(EVENT[4], REF1[1], GROUP[2]), raised(EVENT[6], REF1[1], ENTITY[5])))
+
+# ::id 170_fiction_TWAIN-1880;NE
+# ::snt " Come here ! " he says ,
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ says(EVENT[2], REF1[1], IMPERATIVE(∃ EVENT[3] (ADV_here(EVENT[3]) ∧ come(EVENT[3])))))
+
+# ::id 171_fiction_TWAIN-1880;NE
+# ::snt " Come here , everybody ;
+IMPERATIVE(∀ ENTITY[1] (body(ENTITY[1]) →
+      ∃ EVENT[2] (ADV_here(EVENT[2]) ∧ come(EVENT[2]) ∧ VOC(EVENT[2]) = ENTITY[1])))
+
+# ::id 172_fiction_TWAIN-1880;NE
+# ::snt hang'd if this fool has n't been trying to fill up a house with acorns ! "
+∃ ENTITY[1] (
+ fool(ENTITY[1]) ∧
+  CND_if(
+      ¬ ∃ EVENT[5] EVENT[2] GROUP[4] ENTITY[3] (
+            house(ENTITY[3]) ∧
+             acorns(GROUP[4]) ∧
+              has_been_trying(EVENT[2], ENTITY[1],
+               fill_up(EVENT[5], ENTITY[1], ENTITY[3]) ∧ with(EVENT[5]) = GROUP[4])),
+      ∃ EVENT[6] (past(EVENT[6]) ∧ hang'd(EVENT[6]))))
+
+# ::id 173_fiction_TWAIN-1880;NE
+# ::snt They all came a-swooping down like a blue cloud ,
+∃ ATTRIB[4] ATTRIB[2] REF1[1] EVENT[6] EVENT[5] ENTITY[3] (
+ REF1[1] = they ∧
+  blue(ATTRIB[4]) ∧
+   is_cloud_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_like_comp(ATTRIB[2], ENTITY[3]) ∧
+     past(EVENT[6]) ∧
+      CONJ_and(came(EVENT[6], REF1[1]), a-swooping_down(EVENT[5], REF1[1]) ∧ ATTRIBUTE(EVENT[5]) = ATTRIB[2]))
+
+# ::id 174_fiction_TWAIN-1880;NE
+# ::snt and as each fellow lit on the door and took a glance , the whole absurdity of the contract that that first jay had tackled hit him home
+∃ REF1[12] ATTRIB[10] ATTRIB[7] EVENT[13] EVENT[11] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[6] (
+ door(ENTITY[2]) ∧
+  whole(ATTRIB[7]) ∧
+   first(ATTRIB[10]) ∧
+    is_jay_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+     is_contract_THAT(ENTITY[8], had_tackled(EVENT[11], ENTITY[9])) ∧
+      is_absurdity_of(ENTITY[6], ENTITY[8]) ∧ is_absurdity_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+       past(EVENT[11]) ∧
+        ADV_home(EVENT[13]) ∧
+         REF1[12] = him ∧
+          CRD_as(EACH ENTITY[1] (fellow(ENTITY[1]),
+                ∃ ENTITY[4] EVENT[3] EVENT[5] (
+                 past(EVENT[3]) ∧
+                  past(EVENT[5]) ∧
+                   glance(ENTITY[4]) ∧
+                    CONJ_and(lit(EVENT[3], ENTITY[1]) ∧ on(EVENT[3]) = ENTITY[2],
+                     took(EVENT[5], ENTITY[1], ENTITY[4])))), hit(EVENT[13], ENTITY[6], REF1[12])))
+
+# ::id 175_fiction_TWAIN-1880;NE
+# ::snt and he fell over backward suffocating with laughter ,
+∃ SITUATION[5] REF1[1] EVENT[4] EVENT[3] ENTITY[2] (
+ REF1[1] = he ∧
+  laughter(ENTITY[2]) ∧
+   DIR_backward(SITUATION[5]) ∧
+    past(EVENT[4]) ∧
+     is_FACT_THAT(SITUATION[5],
+      CONJ_and(fell_over(EVENT[4], REF1[1]), suffocating(EVENT[3], REF1[1]) ∧ with(EVENT[3]) = ENTITY[2])))
+
+# ::id 176_fiction_TWAIN-1880;NE
+# ::snt and the next jay took his place and done the same .
+∃ REF1[4] ATTRIB[7] ATTRIB[2] EVENT[5] EVENT[8] ENTITY[3] ENTITY[6] ENTITY[1] (
+ next(ATTRIB[2]) ∧
+  is_jay_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   same(ATTRIB[7]) ∧
+    is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     REF1[4] = his ∧
+      is_place_POS(ENTITY[3], REF1[4]) ∧
+       past(EVENT[5]) ∧
+        CONJ_and(took(EVENT[5], ENTITY[1], ENTITY[3]), done(EVENT[8], _, ENTITY[6], ENTITY[1])))
+
+# ::id 177_fiction_TWAIN-1880;NE
+# ::snt " Well , sir , they roosted around here on the housetop and the trees for an hour , and guffawed over that thing like human beings .
+∃ REF1[2] ATTRIB[12] ATTRIB[10] EVENT[7] EVENT[13] GROUP[3] ENTITY[1] ENTITY[4] ENTITY[6] GROUP[5] GROUP[11] ENTITY[9] (
+ housetop(ENTITY[4]) ∧
+  hour(ENTITY[6]) ∧
+   is_trees_for(GROUP[5], ENTITY[6]) ∧
+    human(ATTRIB[12]) ∧
+     is_beings_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+      is_like_comp(ATTRIB[10], GROUP[11]) ∧
+       is_thing_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+        sir(ENTITY[1]) ∧
+         REF1[2] = they ∧
+          is_element_of(ENTITY[4], GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3]) ∧
+           ADV_here(EVENT[7]) ∧
+            past(EVENT[7]) ∧
+             past(EVENT[13]) ∧
+              CONJ_and(roosted_around(EVENT[7], REF1[2]) ∧ on(EVENT[7]) = GROUP[3] ∧
+                    VOC(EVENT[7]) = ENTITY[1],
+               guffawed_over(EVENT[13], REF1[2], ENTITY[9]) ∧ VOC(EVENT[13]) = ENTITY[1]))
+
+# ::id 178_fiction_TWAIN-1880;NE
+# ::snt It ai n't any use to tell me a bluejay has n't got a sense of humor , because I know better .
+∃ REF1[1] (
+ REF1[1] = it ∧
+  ¬ ANY REF2[3] EVENT[4] ENTITY[5] ENTITY[2] (
+        (REF2[3] = me ∧ bluejay(ENTITY[5]) ∧
+         is_use_to(ENTITY[2],
+          tell(EVENT[4], _, REF2[3],
+           ¬ ∃ EVENT[8] ENTITY[7] ENTITY[6] (
+                 humor(ENTITY[7]) ∧
+                  is_sense_of(ENTITY[6], ENTITY[7]) ∧ has_got(EVENT[8], ENTITY[5], ENTITY[6]))))),
+        ∃ REF3[9] EVENT[10] EVENT[12] (
+         REF3[9] = i ∧
+          ADV_better(EVENT[10]) ∧ CRD_because(know(EVENT[10], REF3[9]), copula(EVENT[12], REF1[1], ENTITY[2])))))
+
+# ::id 179_fiction_TWAIN-1880;NE
+# ::snt And memory , too .
+∃ EVENT[2] ENTITY[1] (memory(ENTITY[1]) ∧ ADV_too(EVENT[2]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 180_fiction_TWAIN-1880;NE
+# ::snt They brought jays here from all over the United States to look down that hole , every summer for three years .
+∃ SITUATION[10] REF1[1] GROUP[2] ENTITY[5] (
+ hole(ENTITY[5]) ∧
+  REF1[1] = they ∧
+   jays(GROUP[2]) ∧
+    ADV_here(SITUATION[10]) ∧
+     is_FACT_THAT(SITUATION[10],
+      ALL ENTITY[3] (is_over(ENTITY[3], GROUP[United_States]),
+       ∃ PRP[4] EVENT[9] (
+        is_FACT_THAT(PRP[4],
+         ∀ TIME[7] TIME[6] (((CD_three(TIME[7]), years(TIME[7])) ∧ is_summer_for(TIME[6], TIME[7])) →
+          ∃ EVENT[8] (
+           look(EVENT[8], GROUP[2]) ∧
+            is_contained_in(TMP(EVENT[8]), TIME[6]) ∧ down(EVENT[8]) = ENTITY[5]))) ∧
+         past(EVENT[9]) ∧
+          brought(EVENT[9], REF1[1], GROUP[2]) ∧ PRP(EVENT[9]) = PRP[4] ∧
+           from(EVENT[9]) = ENTITY[3]))))
+
+# ::id 181_fiction_TWAIN-1880;NE
+# ::snt Other birds , too .
+∃ ATTRIB[2] EVENT[3] GROUP[1] (
+ other(ATTRIB[2]) ∧
+  is_birds_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ ADV_too(EVENT[3]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 182_fiction_TWAIN-1880;NE
+# ::snt And they could all see the point except an owl that come from Nova Scotia to visit the Yo Semite ,
+∃ REF1[1] ENTITY[3] (
+ point(ENTITY[3]) ∧
+  REF1[1] = they ∧
+   MD_could(∃ PRP[6] EVENT[7] EVENT[8] EVENT[9] ENTITY[4] (
+         is_FACT_THAT(PRP[6], visit(EVENT[7], ENTITY[4], ENTITY[Yo_Semite])) ∧
+          come(EVENT[8], ENTITY[4]) ∧ PRP(EVENT[8]) = PRP[6] ∧ from(EVENT[8]) = ENTITY[Nova_Scotia] ∧
+           owl(ENTITY[4]) ∧
+           past(EVENT[8]) ∧
+            ALL ENTITY[2] (is_of(ENTITY[2], REF1[1]),
+             see(EVENT[9], ENTITY[2], ENTITY[3]) ∧ except(EVENT[9]) = ENTITY[4]))))
+
+# ::id 183_fiction_TWAIN-1880;NE
+# ::snt and he took this thing in on his way back .
+∃ REF2[4] REF1[1] EVENT[5] ENTITY[3] ENTITY[2] (
+ thing(ENTITY[2]) ∧
+  REF1[1] = he ∧
+   REF2[4] = his ∧
+    DIR_back(ENTITY[3]) ∧ is_way_POS(ENTITY[3], REF2[4]) ∧
+     past(EVENT[5]) ∧ took_in(EVENT[5], REF1[1], ENTITY[2]) ∧ on(EVENT[5]) = ENTITY[3])
+
+# ::id 184_fiction_TWAIN-1880;NE
+# ::snt He said he could n't see anything funny in it .
+∃ REF2[3] REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  REF2[3] = he ∧
+   past(EVENT[2]) ∧
+    said(EVENT[2], REF1[1],
+     MD_could(¬ ANY REF3[6] ATTRIB[5] ENTITY[4] ((REF3[6] = it ∧ is_funny_in(ATTRIB[5], REF3[6]) ∧ is_thing_ATTRIBUTE(ENTITY[4], ATTRIB[5])), ∃ EVENT[7] see(EVENT[7], REF2[3], ENTITY[4])))))
+
+# ::id 185_fiction_TWAIN-1880;NE
+# ::snt But then he was a good deal disappointed about Yo Semite , too . "
+∃ SITUATION[8] ATTRIB[3] REF1[1] EVENT[5] EVENT[6] ENTITY[2] (
+ REF1[1] = he ∧
+  good(ATTRIB[3]) ∧
+   disappointed(EVENT[5], _, ENTITY[2]) ∧ about(EVENT[5]) = ENTITY[Yo_Semite] ∧ is_deal_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    ADV_then(SITUATION[8]) ∧
+     ADV_too(EVENT[6]) ∧ past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[8], copula(EVENT[6], REF1[1], ENTITY[2])))

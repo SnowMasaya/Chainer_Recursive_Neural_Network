@@ -1,0 +1,1242 @@
+# ::id 1_childrens_POTTER-1902;AT1-1;NE
+# ::snt THE TALE OF PETER RABBIT BY BEATRIX POTTER
+( EVENT-3 / EVENT
+      :LINK ( TTL-1 / TALE
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( PETER.RABBIT.PERSON-PETER_RABBIT / PETER.RABBIT.PERSON
+                    :name ( n-1 / name
+                           :op1 "PETER_RABBIT")))
+      :BY ( AUTHOR-BEATRIX_POTTER / AUTHOR
+             :name ( n-2 / name
+                    :op1 "BEATRIX_POTTER")))
+
+# ::id 2_childrens_POTTER-1902;AT2-1;NE
+# ::snt Once upon a time there were four little Rabbits ,
+( EVENT-5 / be.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( RABBIT.PERSONS-2 / Rabbits
+             :ATTRIBUTE ( ATTRIB-4 / little)
+             :CARDINAL ( ATTRIB-3 / four))
+      :TMP ( TIME-2 / once
+             :UPON ( TIME-1 / time)))
+
+# ::id 3_childrens_POTTER-1902;AT2-2;NE
+# ::snt and their names were -- Flopsy , Mopsy , Cotton-tail , and Peter .
+( EVENT-4 / be.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( GROUP-1 / names
+             :POS ( RABBIT.PERSONS-2 / their))
+      :ARG1 ( GROUP-3 / AND
+             :op1 ( FLOPSY.RABBIT.PERSON-Flopsy / FLOPSY.RABBIT.PERSON
+                    :name ( n-2 / name
+                           :op1 "Flopsy"))
+             :op2 ( MOPSY.RABBIT.PERSON-Mopsy / MOPSY.RABBIT.PERSON
+                    :name ( n-3 / name
+                           :op1 "Mopsy"))
+             :op3 ( COTTONTAIL.RABBIT.PERSON-Cotton-tail / COTTONTAIL.RABBIT.PERSON
+                    :name ( n-4 / name
+                           :op1 "Cotton-tail"))
+             :op4 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                    :name ( n-5 / name
+                           :op1 "Peter"))))
+
+# ::id 4_childrens_POTTER-1902;AT2-3;NE
+# ::snt They lived with their Mother in a sand-bank , underneath the root of a very big fir-tree .
+( EVENT-9 / live.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( RABBIT.PERSONS-1 / they)
+      :IN ( ENTITY-4 / sand-bank
+             :UNDERNEATH ( ENTITY-5 / root
+                    :DEFINITE ( ATTRIB-6 / the)
+                    :OF ( ENTITY-7 / fir-tree
+                           :ATTRIBUTE ( ATTRIB-8 / very_big))))
+      :WITH ( MOTHER.RABBIT.PERSON-2 / Mother
+             :POS RABBIT.PERSONS-1))
+
+# ::id 5_childrens_POTTER-1902;AT3-1;NE
+# ::snt ' Now my dears , ' said old Mrs. Rabbit one morning ,
+( EVENT-3 / say.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( MOTHER.RABBIT.PERSON-old_Mrs.Rabbit / MOTHER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "old_Mrs.Rabbit"))
+      :TMP ( TIME-1 / morning
+             :CARDINAL ( ATTRIB-2 / one))
+      :THAT ( EVENT-6 / EVENT
+             :VOC ( RABBIT.PERSONS-4 / dears
+                    :POS MOTHER.RABBIT.PERSON-old_Mrs.Rabbit)))
+
+# ::id 6_childrens_POTTER-1902;AT3-1;NE
+# ::snt ' you may go into the fields or down the lane ,
+( CONJ-7 / or
+      :domain-of ( MD-8 / may)
+      :op1 ( EVENT-6 / go.01
+             :ARG0 ( RABBIT.PERSONS-1 / you)
+             :INTO ( LOC-2 / fields
+                    :DEFINITE ( ATTRIB-3 / the)))
+      :op2 ( EVENT-6 / go.01
+             :ARG0 RABBIT.PERSONS-1
+             :DOWN ( LOC-4 / lane
+                    :DEFINITE ( ATTRIB-5 / the))))
+
+# ::id 7_childrens_POTTER-1902;AT3-1;NE
+# ::snt but do n't go into Mr. McGregor 's garden :
+( EVENT-3 / do_go
+      :domain-of ( NEG-4 / NEG)
+      :ARG0 ( RABBIT.PERSONS-1 / xxx)
+      :INTO ( GARDEN.LOC-2 / garden
+             :POS ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                    :name ( n-6 / name
+                           :op1 "Mr.McGregor")))
+      :domain-of ( IMPERATIVE-5 / IMPERATIVE))
+
+# ::id 8_childrens_POTTER-1902;AT3-3;NE
+# ::snt your Father had an accident there ;
+( EVENT-5 / have.03
+      :MOD ( mod-1 / past)
+      :ARG0 ( FATHER.RABBIT.PERSON-1 / Father
+             :POS ( RABBIT.PERSONS-2 / your))
+      :ARG1 ( ACCCOREF.EVENT-3 / accident)
+      :LOC ( GARDEN.LOC-4 / there))
+
+# ::id 9_childrens_POTTER-1902;AT3-3;NE
+# ::snt he was put in a pie by Mrs. McGregor . '
+( EVENT-3 / put.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( MRSMCGREGOR.PERSON-Mrs.McGregor / MRSMCGREGOR.PERSON
+             :name ( n-2 / name
+                    :op1 "Mrs.McGregor"))
+      :ARG1 ( FATHER.RABBIT.PERSON-1 / he)
+      :IN ( FOOD.PRODUCT-2 / pie))
+
+# ::id 10_childrens_POTTER-1902;AT3-4;NE
+# ::snt ' Now run along ,
+( EVENT-2 / run_along
+      :ARG0 ( RABBIT.PERSONS-1 / xxx)
+      :TMP ( TIME-5 / now)
+      :domain-of ( IMPERATIVE-4 / IMPERATIVE))
+
+# ::id 11_childrens_POTTER-1902;AT3-4;NE
+# ::snt and do n't get into mischief .
+( EVENT-3 / do_get
+      :domain-of ( NEG-4 / NEG)
+      :ARG0 ( RABBIT.PERSONS-1 / xxx)
+      :INTO ( ENTITY-2 / mischief)
+      :domain-of ( IMPERATIVE-5 / IMPERATIVE))
+
+# ::id 12_childrens_POTTER-1902;AT3-5;NE
+# ::snt I am going out . '
+( EVENT-2 / am_going_out
+      :ARG0 ( MOTHER.RABBIT.PERSON-1 / i))
+
+# ::id 13_childrens_POTTER-1902;AT4-1;NE
+# ::snt Then old Mrs. Rabbit took a basket and her umbrella , and went through the wood to the baker 's .
+( CONJ-14 / and
+      :op1 ( EVENT-5 / took
+             :MOD ( mod-15 / past)
+             :ARG0 ( MOTHER.RABBIT.PERSON-old_Mrs.Rabbit / MOTHER.RABBIT.PERSON
+                    :name ( n-18 / name
+                           :op1 "old_Mrs.Rabbit"))
+             :ARG1 ( GROUP-1 / AND
+                    :op1 ( ENTITY-2 / basket)
+                    :op2 ( ENTITY-3 / umbrella
+                           :POS MOTHER.RABBIT.PERSON-old_Mrs.Rabbit)))
+      :op2 ( EVENT-11 / went
+             :MOD ( mod-16 / past)
+             :ARG0 MOTHER.RABBIT.PERSON-old_Mrs.Rabbit
+             :TO ( ENTITY-8 / ENTITY
+                    :POS ( BAKER.PERSON-9 / baker
+                           :DEFINITE ( ATTRIB-10 / the)))
+             :THROUGH ( WOOD.LOC-6 / wood
+                    :DEFINITE ( ATTRIB-7 / the)))
+      :TMP ( TIME-17 / then))
+
+# ::id 14_childrens_POTTER-1902;AT4-2;NE
+# ::snt She bought a loaf of brown bread and five currant buns .
+( EVENT-8 / bought
+      :MOD ( mod-1 / past)
+      :ARG0 ( MOTHER.RABBIT.PERSON-1 / she)
+      :ARG1 ( FOOD.PRODUCTS-2 / AND
+             :op1 ( ENTITY-3 / loaf
+                    :OF ( FOOD.PRODUCT-4 / bread
+                           :ATTRIBUTE ( ATTRIB-5 / brown)))
+             :op2 ( GROUP-6 / currant_buns
+                    :CARDINAL ( ATTRIB-7 / five))))
+
+# ::id 15_childrens_POTTER-1902;AT5-1;NE
+# ::snt Flopsy , Mopsy , and Cotton-tail , who were good little bunnies , went down the lane to gather blackberries :
+( EVENT-13 / went
+      :MOD ( mod-2 / past)
+      :ARG0 ( RABBIT.PERSONS-1 / AND
+             :op1 ( FLOPSY.RABBIT.PERSON-Flopsy / FLOPSY.RABBIT.PERSON
+                    :name ( n-3 / name
+                           :op1 "Flopsy"))
+             :op2 ( MOPSY.RABBIT.PERSON-Mopsy / MOPSY.RABBIT.PERSON
+                    :name ( n-4 / name
+                           :op1 "Mopsy"))
+             :op3 ( COTTONTAIL.RABBIT.PERSON-Cotton-tail / COTTONTAIL.RABBIT.PERSON
+                    :name ( n-5 / name
+                           :op1 "Cotton-tail"))
+             :ARG0-of ( EVENT-7 / copula
+                    :MOD ( mod-1 / past)
+                    :ARG1 ( GROUP-4 / bunnies
+                           :ATTRIBUTE ( ATTRIB-6 / little)
+                           :ATTRIBUTE ( ATTRIB-5 / good))))
+      :PRP ( EVENT-12 / gather
+             :ARG0 RABBIT.PERSONS-1
+             :ARG1 ( FOOD.PRODUCTS-11 / blackberries))
+      :DOWN ( ENTITY-8 / lane
+             :DEFINITE ( ATTRIB-9 / the)))
+
+# ::id 16_childrens_POTTER-1902;AT6-1;NE
+# ::snt But Peter , who was very naughty , ran straight away to Mr. McGregor 's garden , and squeezed under the gate !
+( CONJ-10 / and
+      :op1 ( EVENT-5 / ran
+             :MOD ( mod-13 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                    :name ( n-15 / name
+                           :op1 "Peter")
+                    :ARG0-of ( EVENT-3 / be.01
+                           :MOD ( mod-11 / past)
+                           :ATTRIBUTE ( ATTRIB-2 / very_naughty)))
+             :TO ( GARDEN.LOC-4 / garden
+                    :POS ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                           :name ( n-16 / name
+                                  :op1 "Mr.McGregor")))
+             :DIR ( DIR-12 / straight_away))
+      :op2 ( EVENT-9 / squeezed
+             :MOD ( mod-14 / past)
+             :ARG0 PETER.RABBIT.PERSON-Peter
+             :UNDER ( GATE.GARDEN.LOC-7 / gate
+                    :DEFINITE ( ATTRIB-8 / the))))
+
+# ::id 17_childrens_POTTER-1902;AT6-3;NE
+# ::snt First he ate some lettuces and some French beans ;
+( EVENT-8 / ate
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :ARG1 ( FOOD.PRODUCTS-2 / AND
+             :op1 ( LETTUCE.FOOD.PRODUCTS-3 / lettuces
+                    :QUANTIFIER ( ATTRIB-4 / some))
+             :op2 ( FRENCHBEAN.FOOD.PRODUCTS-5 / beans
+                    :ATTRIBUTE ( ATTRIB-7 / french)
+                    :QUANTIFIER ( ATTRIB-6 / some)))
+      :TMP ( TIME-1 / first))
+
+# ::id 18_childrens_POTTER-1902;AT6-3;NE
+# ::snt and then he ate some radishes ;
+( EVENT-4 / ate
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :ARG1 ( RADISH.FOOD.PRODUCTS-2 / radishes
+             :QUANTIFIER ( ATTRIB-3 / some))
+      :TMP ( TIME-1 / then))
+
+# ::id 19_childrens_POTTER-1902;AT6-4;NE
+# ::snt And then , feeling rather sick , he went to look for some parsley .
+( CONJ-11 / and
+      :op1 ( EVENT-3 / feeling
+             :ATTRIBUTE ( ATTRIB-2 / rather_sick)
+             :ARG0 ( PETER.RABBIT.PERSON-1 / he))
+      :op2 ( EVENT-8 / went
+             :MOD ( mod-12 / past)
+             :ARG0 PETER.RABBIT.PERSON-1
+             :PRP ( EVENT-7 / look
+                    :ARG0 PETER.RABBIT.PERSON-1
+                    :FOR ( PARSLEY.FOOD.PRODUCT-5 / parsley
+                           :QUANTIFIER ( ATTRIB-6 / some))))
+      :TMP ( TIME-13 / then))
+
+# ::id 20_childrens_POTTER-1902;AT6-6;NE
+# ::snt But round the end of a cucumber frame , whom should he meet but Mr. McGregor !
+( EVENT-8 / EVENT
+      :ARG0 ( PERSON-4 / PERSON
+             :ARG1-of ( EVENT-7 / meet
+                    :domain-of ( MD-9 / should)
+                    :ARG0 ( PETER.RABBIT.PERSON-6 / he)))
+      :ARG1 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-10 / name
+                    :op1 "Mr.McGregor"))
+      :ROUND ( ENTITY-1 / end
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( ENTITY-3 / cucumber_frame)))
+
+# ::id 21_childrens_POTTER-1902;AT7-1;NE
+# ::snt Mr. McGregor was on his hands and knees planting out young cabbages ,
+( CONJ-10 / and
+      :op1 ( EVENT-9 / be.02
+             :MOD ( mod-11 / past)
+             :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                    :name ( n-12 / name
+                           :op1 "Mr.McGregor"))
+             :ON ( ENTITY-1 / AND
+                    :op1 ( GROUP-4 / hands)
+                    :op2 ( GROUP-5 / knees)
+                    :POS MRMCGREGOR.PERSON-Mr.McGregor))
+      :op2 ( EVENT-8 / planting_out
+             :ARG0 MRMCGREGOR.PERSON-Mr.McGregor
+             :ARG1 ( CABBAGE.FOOD.PRODUCTS-6 / cabbages
+                    :ATTRIBUTE ( ATTRIB-7 / young))))
+
+# ::id 22_childrens_POTTER-1902;AT7-2;NE
+# ::snt but he jumped up and ran after Peter , waving a rake and calling out , ' Stop thief ! '
+( CONJ-13 / and
+      :op1 ( EVENT-2 / jumped_up
+             :MOD ( mod-14 / past)
+             :ARG0 ( MRMCGREGOR.PERSON-1 / he))
+      :op2 ( CONJ-12 / and
+             :op1 ( EVENT-8 / ran
+                    :MOD ( mod-15 / past)
+                    :ARG0 MRMCGREGOR.PERSON-1
+                    :AFTER ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                           :name ( n-16 / name
+                                  :op1 "Peter")))
+             :op2 ( CONJ-11 / and
+                    :op1 ( EVENT-4 / waving
+                           :ARG0 MRMCGREGOR.PERSON-1
+                           :ARG1 ( ENTITY-3 / rake))
+                    :op2 ( EVENT-5 / calling_out
+                           :ARG0 MRMCGREGOR.PERSON-1
+                           :THAT ( EVENT-7 / stop
+                                  :ARG1 ( ENTITY-6 / thief)
+                                  :domain-of ( IMPERATIVE-10 / IMPERATIVE))))))
+
+# ::id 23_childrens_POTTER-1902;AT8-1;NE
+# ::snt Peter was most dreadfully frightened ;
+( EVENT-1 / frightened
+      :MOD ( mod-2 / past)
+      :ARG1 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-3 / name
+                    :op1 "Peter"))
+      :MOD ( mod-1 / most_dreadfully))
+
+# ::id 24_childrens_POTTER-1902;AT8-1;NE
+# ::snt he rushed all over the garden ,
+( EVENT-4 / rushed
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :OVER ( GARDEN.LOC-2 / garden
+             :DEFINITE ( ATTRIB-3 / the)))
+
+# ::id 25_childrens_POTTER-1902;AT8-2;NE
+# ::snt for he had forgotten the way back to the gate .
+( EVENT-6 / had_forgotten
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :ARG1 ( ENTITY-2 / DIR_back
+             :TO ( GATE.GARDEN.LOC-4 / gate
+                    :DEFINITE ( ATTRIB-5 / the))
+             :MOD ( mod-1 / way
+                    :DEFINITE ( ATTRIB-3 / the))))
+
+# ::id 26_childrens_POTTER-1902;AT8-3;NE
+# ::snt He lost one of his shoes among the cabbages , and the other shoe amongst the potatoes .
+( CONJ-15 / and
+      :op1 ( EVENT-8 / lost
+             :MOD ( mod-16 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+             :ARG1 ( SHOE.PRODUCT-2 / SHOE.PRODUCT
+                    :OF ( SHOE.PRODUCTS-4 / shoes
+                           :POS PETER.RABBIT.PERSON-1)
+                    :CARDINAL ( ATTRIB-3 / one))
+             :AMONG ( CABBAGE.FOOD.LOC-6 / cabbages
+                    :DEFINITE ( ATTRIB-7 / the)))
+      :op2 ( EVENT-14 / lost
+             :MOD ( mod-17 / past)
+             :ARG0 PETER.RABBIT.PERSON-1
+             :ARG1 ( SHOE.PRODUCT-9 / shoe
+                    :DEFINITE ( ATTRIB-10 / the)
+                    :ATTRIBUTE ( ATTRIB-11 / other))
+             :AMONGST ( FOOD.PRODUCTS-12 / potatoes
+                    :DEFINITE ( ATTRIB-13 / the))))
+
+# ::id 27_childrens_POTTER-1902;AT8-4;NE
+# ::snt After losing them , he ran on four legs and went faster , so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net , and got caught by the large buttons on his jacket .
+( CRD-39 / After
+      :op1 ( EVENT-3 / losing
+             :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+             :ARG1 ( SHOE.PRODUCTS-2 / them))
+      :op2 ( CRD-38 / so
+             :op1 ( EVENT-5 / think
+                    :ARG0 ( NARRATOR.PERSON-4 / i)
+                    :THAT ( CND-36 / if
+                           :op1 ( CONJ-34 / and
+                                  :op1 ( EVENT-8 / had_run
+                                         :domain-of ( NEG-32 / NEG)
+                                         :MOD ( mod-41 / past)
+                                         :ARG0 ( PETER.RABBIT.PERSON-6 / PETER.RABBIT.PERSON
+                                                :namely PETER.RABBIT.PERSON-1)
+                                         :INTO ( ENTITY-7 / gooseberry_net)
+                                         :MOD ( mod-40 / unfortunately))
+                                  :op2 ( EVENT-16 / got
+                                         :domain-of ( NEG-33 / NEG)
+                                         :ATTRIBUTE ( ATTRIB-10 / caught
+                                                :BY ( BUTTON.JACKET.PRODUCTS-11 / buttons
+                                                       :DEFINITE ( ATTRIB-12 / the)
+                                                       :ATTRIBUTE ( ATTRIB-13 / large)
+                                                       :ON ( JACKET.PRODUCT-14 / jacket
+                                                              :POS PETER.RABBIT.PERSON-6)))
+                                         :ARG0 PETER.RABBIT.PERSON-6))
+                           :op2 ( EVENT-18 / have_got
+                                  :domain-of ( MD-35 / might)
+                                  :ARG0 PETER.RABBIT.PERSON-1
+                                  :DIR ( DIR-42 / away)
+                                  :MOD ( mod-43 / altogether))))
+             :op2 ( CONJ-37 / and
+                    :op1 ( EVENT-23 / ran
+                           :MOD ( mod-44 / past)
+                           :ARG0 PETER.RABBIT.PERSON-1
+                           :ON ( GROUP-21 / legs
+                                  :CARDINAL ( ATTRIB-22 / four)))
+                    :op2 ( EVENT-24 / went
+                           :MOD ( mod-46 / past)
+                           :ARG0 PETER.RABBIT.PERSON-1
+                           :MOD ( mod-45 / faster)))))
+
+# ::id 28_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 29_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 30_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 31_childrens_POTTER-1902;AT8-5;NE
+# ::snt It was a blue jacket with brass buttons , quite new .
+( EVENT-6 / be.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( JACKET.PRODUCT-1 / it)
+      :ARG1 ( BLUE.JACKET.PRODUCT-2 / jacket
+             :ATTRIBUTE ( ATTRIB-5 / quite_new)
+             :ATTRIBUTE ( ATTRIB-3 / blue)
+             :WITH ( BUTTON.JACKET.PRODUCTS-4 / brass_buttons)))
+
+# ::id 32_childrens_POTTER-1902;AT9-1;NE
+# ::snt Peter gave himself up for lost , and shed big tears ;
+( CONJ-7 / and
+      :op1 ( EVENT-3 / gave_up
+             :MOD ( mod-8 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                    :name ( n-10 / name
+                           :op1 "Peter"))
+             :ARG1 PETER.RABBIT.PERSON-Peter
+             :FOR ( ATTRIB-2 / lost))
+      :op2 ( EVENT-6 / shed
+             :MOD ( mod-9 / past)
+             :ARG0 PETER.RABBIT.PERSON-Peter
+             :ARG1 ( GROUP-4 / tears
+                    :ATTRIBUTE ( ATTRIB-5 / big))))
+
+# ::id 33_childrens_POTTER-1902;AT9-2;NE
+# ::snt but his sobs were overheard by some friendly sparrows , who flew to him in great excitement , and implored him to exert himself .
+( EVENT-15 / overheard
+      :MOD ( mod-19 / past)
+      :ARG0 ( SPARROW.PERSONS-3 / sparrows
+             :ATTRIBUTE ( ATTRIB-5 / friendly)
+             :QUANTIFIER ( ATTRIB-4 / some)
+             :ARG0-of ( CONJ-16 / and
+                    :op1 ( EVENT-10 / flew
+                           :MOD ( mod-18 / past)
+                           :IN ( ENTITY-8 / excitement
+                                  :ATTRIBUTE ( ATTRIB-9 / great))
+                           :TO ( PETER.RABBIT.PERSON-7 / him))
+                    :op2 ( EVENT-12 / implored
+                           :MOD ( mod-17 / past)
+                           :ARG1 ( PETER.RABBIT.PERSON-11 / him)
+                           :TOCOMP ( EVENT-14 / exert
+                                  :ARG0 PETER.RABBIT.PERSON-11
+                                  :ARG1 PETER.RABBIT.PERSON-11))))
+      :ARG1 ( GROUP-1 / sobs
+             :POS ( PETER.RABBIT.PERSON-2 / his)))
+
+# ::id 34_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 35_childrens_POTTER-1902;AT10-1;NE
+# ::snt Mr. McGregor came up with a sieve , which he intended to pop upon the top of Peter ;
+( EVENT-8 / came_up
+      :MOD ( mod-2 / past)
+      :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-3 / name
+                    :op1 "Mr.McGregor"))
+      :WITH ( SIEVE.PRODUCT-1 / sieve
+             :ARG1-of ( EVENT-7 / pop
+                    :ARG0 ( MRMCGREGOR.PERSON-3 / MRMCGREGOR.PERSON
+                           :namely MRMCGREGOR.PERSON-Mr.McGregor)
+                    :UPON ( ENTITY-5 / top
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :OF ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                                  :name ( n-4 / name
+                                         :op1 "Peter")))
+                    :TOCOMP-of ( EVENT-4 / intended
+                           :MOD ( mod-1 / past)
+                           :ARG0 MRMCGREGOR.PERSON-3))))
+
+# ::id 36_childrens_POTTER-1902;AT11-1;NE
+# ::snt but Peter wriggled out just in time , leaving his jacket behind him .
+( CONJ-8 / and
+      :op1 ( EVENT-7 / wriggled_out
+             :MOD ( mod-9 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                    :name ( n-10 / name
+                           :op1 "Peter"))
+             :JUST_IN ( TIME-1 / time))
+      :op2 ( EVENT-2 / leaving
+             :ARG0 PETER.RABBIT.PERSON-Peter
+             :TOCOMP ( EVENT-6 / EVENT
+                    :ARG0 ( JACKET.PRODUCT-3 / jacket
+                           :POS PETER.RABBIT.PERSON-Peter)
+                    :BEHIND PETER.RABBIT.PERSON-Peter)))
+
+# ::id 37_childrens_POTTER-1902;AT11-2;NE
+# ::snt And rushed into the tool-shed , and jumped into a can .
+( CONJ-7 / and
+      :op1 ( EVENT-4 / rushed
+             :MOD ( mod-8 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-1 / xxx)
+             :INTO ( ENTITY-2 / tool-shed
+                    :DEFINITE ( ATTRIB-3 / the)))
+      :op2 ( EVENT-6 / jumped
+             :MOD ( mod-9 / past)
+             :ARG0 PETER.RABBIT.PERSON-1
+             :INTO ( WATER.CAN.CONTAINER.PRODUCT-5 / can)))
+
+# ::id 38_childrens_POTTER-1902;AT11-3;NE
+# ::snt It would have been a beautiful thing to hide in , if it had not had so much water in it .
+( CND-14 / if
+      :op1 ( EVENT-5 / had_had
+             :domain-of ( NEG-12 / NEG)
+             :MOD ( mod-15 / past)
+             :ARG0 ( WATER.CAN.CONTAINER.PRODUCT-1 / it)
+             :ARG1 ( ENTITY-2 / water
+                    :QUANTIFIER ( ATTRIB-3 / so_much))
+             :IN ( WATER.CAN.CONTAINER.PRODUCT-4 / it))
+      :op2 ( EVENT-11 / have_copula
+             :domain-of ( MD-13 / would)
+             :ARG0 ( WATER.CAN.CONTAINER.PRODUCT-6 / it)
+             :ARG1 ( ENTITY-7 / thing
+                    :ATTRIBUTE ( ATTRIB-8 / beautiful)
+                    :IN-of ( EVENT-10 / hide))))
+
+# ::id 39_childrens_POTTER-1902;AT12-1;NE
+# ::snt Mr. McGregor was quite sure that Peter was somewhere in the tool-shed , perhaps hidden underneath a flower-pot .
+( EVENT-9 / be.01
+      :MOD ( mod-17 / past)
+      :ATTRIBUTE ( ATTRIB-1 / quite_sure
+             :THAT ( CONJ-13 / and
+                    :op1 ( EVENT-7 / be.02
+                           :MOD ( mod-14 / past)
+                           :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                                  :name ( n-19 / name
+                                         :op1 "Peter"))
+                           :IN ( ENTITY-2 / tool-shed
+                                  :DEFINITE ( ATTRIB-3 / the)))
+                    :op2 ( EVENT-5 / hidden
+                           :ARG1 PETER.RABBIT.PERSON-Peter
+                           :UNDERNEATH ( FLOWER.POT.CONTAINER.PRODUCT-4 / flower-pot)
+                           :MOD ( mod-15 / perhaps))
+                    :LOC ( LOC-16 / somewhere)))
+      :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-18 / name
+                    :op1 "Mr.McGregor")))
+
+# ::id 40_childrens_POTTER-1902;AT12-2;NE
+# ::snt He began to turn them over carefully , looking under each .
+( CONJ-9 / and
+      :op1 ( EVENT-5 / began
+             :MOD ( mod-11 / past)
+             :ARG0 ( MRMCGREGOR.PERSON-1 / he)
+             :TOCOMP ( EVENT-7 / turn_over
+                    :ARG0 MRMCGREGOR.PERSON-1
+                    :ARG1 ( FLOWER.POT.CONTAINER.PRODUCTS-6 / them)
+                    :MOD ( mod-10 / carefully)))
+      :op2 ( EVENT-4 / looking
+             :ARG0 MRMCGREGOR.PERSON-1
+             :UNDER ( FLOWER.POT.CONTAINER.PRODUCTS-2 / FLOWER.POT.CONTAINER.PRODUCTS
+                    :QUANTIFIER ( ATTRIB-3 / each))))
+
+# ::id 41_childrens_POTTER-1902;AT13-1;NE
+# ::snt Presently Peter sneezed -- ' Kertyschoo ! '
+( EVENT-1 / sneezed
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-3 / name
+                    :op1 "Peter"))
+      :TMP ( TIME-1 / presently))
+
+# ::id 42_childrens_POTTER-1902;AT13-2;NE
+# ::snt Mr. McGregor was after him in no time .
+( EVENT-4 / be.02
+      :MOD ( mod-1 / past)
+      :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-2 / name
+                    :op1 "Mr.McGregor"))
+      :IN ( TIME-2 / time
+             :QUANTIFIER ( ATTRIB-3 / no))
+      :AFTER ( PETER.RABBIT.PERSON-1 / him))
+
+# ::id 43_childrens_POTTER-1902;AT13-3;NE
+# ::snt And tried to put his foot upon Peter , who jumped out of a window , upsetting three plants .
+( CONJ-16 / AND
+      :op1 ( CONJ-12 / and
+             :op1 ( EVENT-10 / jumped_out
+                    :MOD ( mod-13 / past)
+                    :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                           :name ( n-15 / name
+                                  :op1 "Peter"))
+                    :OF ( ENTITY-6 / window))
+             :op2 ( EVENT-9 / upsetting
+                    :ARG0 PETER.RABBIT.PERSON-Peter
+                    :ARG1 ( GROUP-7 / plants
+                           :CARDINAL ( ATTRIB-8 / three))))
+      :op2 ( EVENT-2 / tried
+             :MOD ( mod-14 / past)
+             :ARG0 ( MRMCGREGOR.PERSON-1 / xxx)
+             :TOCOMP ( EVENT-11 / put
+                    :ARG0 MRMCGREGOR.PERSON-1
+                    :ARG1 ( ENTITY-3 / foot
+                           :POS MRMCGREGOR.PERSON-1)
+                    :UPON PETER.RABBIT.PERSON-Peter)))
+
+# ::id 44_childrens_POTTER-1902;AT14-1;NE
+# ::snt The window was too small for Mr. McGregor ,
+( EVENT-4 / be.01
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-3 / too_small
+             :FOR ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                    :name ( n-2 / name
+                           :op1 "Mr.McGregor")))
+      :ARG0 ( ENTITY-1 / window
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 45_childrens_POTTER-1902;AT14-2;NE
+# ::snt and he was tired of running after Peter .
+( EVENT-6 / be.01
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-2 / tired
+             :OF ( EVENT-5 / running
+                    :ARG0 MRMCGREGOR.PERSON-1
+                    :AFTER ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                           :name ( n-2 / name
+                                  :op1 "Peter"))))
+      :ARG0 ( MRMCGREGOR.PERSON-1 / he))
+
+# ::id 46_childrens_POTTER-1902;AT14-3;NE
+# ::snt He went back to his work .
+( EVENT-4 / went_back
+      :MOD ( mod-1 / past)
+      :ARG0 ( MRMCGREGOR.PERSON-1 / he)
+      :TO ( ENTITY-2 / work
+             :POS MRMCGREGOR.PERSON-1))
+
+# ::id 47_childrens_POTTER-1902;AT15-1;NE
+# ::snt Peter sat down to rest ;
+( EVENT-3 / sat_down
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter"))
+      :PRP ( EVENT-2 / rest
+             :ARG0 PETER.RABBIT.PERSON-Peter))
+
+# ::id 48_childrens_POTTER-1902;AT15-2;NE
+# ::snt he was out of breath trembling with fright ,
+( CONJ-6 / and
+      :op1 ( EVENT-5 / be.02
+             :MOD ( mod-7 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+             :OUT_OF ( ENTITY-2 / breath))
+      :op2 ( EVENT-4 / trembling
+             :ARG0 PETER.RABBIT.PERSON-1
+             :WITH ( ENTITY-3 / fright)))
+
+# ::id 49_childrens_POTTER-1902;AT15-3;NE
+# ::snt and he had not the least idea which way to go .
+( EVENT-7 / have.03
+      :domain-of ( NEG-10 / NEG)
+      :MOD ( mod-11 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :ARG1 ( ENTITY-2 / idea
+             :DEFINITE ( ATTRIB-3 / the)
+             :QUANTIFIER ( ATTRIB-4 / least)
+             :THAT ( EVENT-6 / go
+                    :domain-of ( QUEST-9 / QUEST)
+                    :DIR ( ENTITY-5 / way
+                           :QUANTIFIER ( ENTITY_UNK-2 / penman-unknown)))))
+
+# ::id 50_childrens_POTTER-1902;AT15-4;NE
+# ::snt Also he was very damp with sitting in that can .
+( EVENT-7 / be.01
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-2 / very_damp
+             :WITH ( EVENT-6 / sitting
+                    :IN ( WATER.CAN.CONTAINER.PRODUCT-4 / can
+                           :DETERMINER ( ATTRIB-5 / that))))
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :MOD ( mod-2 / also))
+
+# ::id 51_childrens_POTTER-1902;AT15-5;NE
+# ::snt After a time he began to wander about , going lippity -- lippity -- not very fast , and looking all round .
+( EVENT-3 / began
+      :MOD ( mod-17 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-2 / he)
+      :AFTER ( TIME-1 / time)
+      :TOCOMP ( CONJ-15 / and
+             :op1 ( EVENT-11 / wander_about
+                    :ARG0 PETER.RABBIT.PERSON-2)
+             :op2 ( CONJ-14 / and
+                    :op1 ( EVENT-8 / going
+                           :ARG0 PETER.RABBIT.PERSON-2
+                           :ARG1 ( ENTITY-4 / lippity_lippity)
+                           :MSR ( DEGREE-5 / DEGREE
+                                  :ATTRIBUTE ( ATTRIB-7 / very_fast)
+                                  :QUANTIFIER ( ATTRIB-6 / not)))
+                    :op2 ( EVENT-9 / looking
+                           :ARG0 PETER.RABBIT.PERSON-2
+                           :MOD ( mod-16 / all_round)))))
+
+# ::id 52_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 53_childrens_POTTER-1902;AT15-6;NE
+# ::snt He found a door in a wall ;
+( EVENT-4 / found
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :ARG1 ( DOOR.LOC-2 / door
+             :IN ( WALL.LOC-3 / wall)))
+
+# ::id 54_childrens_POTTER-1902;AT15-7;NE
+# ::snt but it was locked ,
+( EVENT-2 / locked
+      :MOD ( mod-1 / past)
+      :ARG1 ( DOOR.LOC-1 / it))
+
+# ::id 55_childrens_POTTER-1902;AT15-8;NE
+# ::snt and there was no room for a fat little rabbit to squeeze underneath .
+( EVENT-8 / be.02
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / room
+             :QUANTIFIER ( ATTRIB-2 / no)
+             :UNDERNEATH-of ( EVENT-7 / squeeze
+                    :ARG0 ( PETER.RABBIT.PERSON-4 / rabbit
+                           :ATTRIBUTE ( ATTRIB-6 / little)
+                           :ATTRIBUTE ( ATTRIB-5 / fat)))))
+
+# ::id 56_childrens_POTTER-1902;AT16-1;NE
+# ::snt An old mouse was running in and out over the stone doorstep , carrying peas and beans to her family in the wood .
+( CONJ-14 / and
+      :op1 ( EVENT-13 / was_running_in_and_out
+             :MOD ( mod-15 / past)
+             :ARG0 ( MOUSE.PERSON-1 / mouse
+                    :ATTRIBUTE ( ATTRIB-2 / old))
+             :OVER ( ENTITY-3 / stone_doorstep
+                    :DEFINITE ( ATTRIB-4 / the)))
+      :op2 ( EVENT-12 / carrying
+             :ARG0 MOUSE.PERSON-1
+             :ARG1 ( FOOD.PRODUCTS-5 / AND
+                    :op1 ( GROUP-6 / peas)
+                    :op2 ( GROUP-7 / beans))
+             :TO ( ENTITY-8 / family
+                    :IN ( WOOD.LOC-10 / wood
+                           :DEFINITE ( ATTRIB-11 / the))
+                    :POS MOUSE.PERSON-1)))
+
+# ::id 57_childrens_POTTER-1902;AT16-2;NE
+# ::snt Peter asked her the way to the gate ,
+( EVENT-6 / asked
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter"))
+      :ARG1 ( ENTITY-2 / way
+             :DEFINITE ( ATTRIB-3 / the)
+             :TO ( GATE.GARDEN.LOC-4 / gate
+                    :DEFINITE ( ATTRIB-5 / the)))
+      :ARG2 ( MOUSE.PERSON-1 / her))
+
+# ::id 58_childrens_POTTER-1902;AT16-3;NE
+# ::snt but she had such a large pea in her mouth that she could not answer .
+( EVENT-9 / have.03
+      :MOD ( mod-14 / past)
+      :ARG0 ( MOUSE.PERSON-1 / she)
+      :ARG1 ( FOOD.PRODUCT-2 / pea
+             :ATTRIBUTE ( ATTRIB-6 / large)
+             :ATTRIBUTE ( ATTRIB-3 / such
+                    :THAT ( EVENT-5 / answer
+                           :domain-of ( MD-13 / could)
+                           :domain-of ( NEG-12 / NEG)
+                           :ARG0 MOUSE.PERSON-1)))
+      :IN ( ENTITY-7 / mouth
+             :POS MOUSE.PERSON-1))
+
+# ::id 59_childrens_POTTER-1902;AT16-4;NE
+# ::snt She only shook her head at him .
+( EVENT-5 / shook
+      :MOD ( mod-2 / past)
+      :ARG0 ( MOUSE.PERSON-1 / she)
+      :ARG1 ( ENTITY-2 / head
+             :POS MOUSE.PERSON-1)
+      :AT ( PETER.RABBIT.PERSON-4 / him)
+      :MOD ( mod-1 / only))
+
+# ::id 60_childrens_POTTER-1902;AT17-1;NE
+# ::snt Peter began to cry .
+( EVENT-1 / began
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter"))
+      :TOCOMP ( EVENT-2 / cry
+             :ARG0 PETER.RABBIT.PERSON-Peter))
+
+# ::id 61_childrens_POTTER-1902;AT17-2;NE
+# ::snt Then he tried to find his way straight across the garden ,
+( EVENT-2 / tried
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :TOCOMP ( EVENT-7 / find
+             :ARG0 PETER.RABBIT.PERSON-1
+             :ARG1 ( ENTITY-3 / way
+                    :POS PETER.RABBIT.PERSON-1)
+             :STRAIGHT_ACROSS ( GARDEN.LOC-5 / garden
+                    :DEFINITE ( ATTRIB-6 / the)))
+      :TMP ( TIME-2 / then))
+
+# ::id 62_childrens_POTTER-1902;AT17-3;NE
+# ::snt but he became more and more puzzled .
+( EVENT-3 / became
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-2 / more_and_more_puzzled)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he))
+
+# ::id 63_childrens_POTTER-1902;AT17-4;NE
+# ::snt Presently , he came to a pond where Mr. McGregor filled his water-cans .
+( EVENT-8 / came
+      :MOD ( mod-3 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :TO ( POND.LOC-2 / pond
+             :LOC-of ( EVENT-6 / filled
+                    :MOD ( mod-2 / past)
+                    :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                           :name ( n-5 / name
+                                  :op1 "Mr.McGregor"))
+                    :ARG1 ( CONTAINER.PRODUCTS-4 / water-cans
+                           :POS MRMCGREGOR.PERSON-Mr.McGregor)))
+      :TMP ( TIME-4 / presently))
+
+# ::id 64_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+( EVENT-1 / EVENT)
+
+# ::id 65_childrens_POTTER-1902;AT18-1;NE
+# ::snt A white cat was staring at some gold-fish ,
+( EVENT-5 / was * ing
+      :MOD ( mod-1 / past)
+      :ARG0 ( CAT.PERSON-1 / cat
+             :ATTRIBUTE ( ATTRIB-2 / white))
+      :AT ( GOLDFISH.PERSONS-3 / gold-fish
+             :QUANTIFIER ( ATTRIB-4 / some)))
+
+# ::id 66_childrens_POTTER-1902;AT18-2;NE
+# ::snt she sat very , very still ,
+( CONJ-5 / and
+      :op1 ( EVENT-4 / sat
+             :MOD ( mod-6 / past)
+             :ARG0 ( CAT.PERSON-1 / she))
+      :op2 ( EVENT-3 / EVENT
+             :ATTRIBUTE ( ATTRIB-2 / very
+                    :MOD ( mod-7 / very_still))
+             :ARG0 CAT.PERSON-1))
+
+# ::id 67_childrens_POTTER-1902;AT18-3;NE
+# ::snt but now and then the tip of her tail twitched as if it were alive .
+( CND-12 / as_if
+      :op1 ( EVENT-7 / copula
+             :MOD ( mod-13 / past)
+             :ATTRIBUTE ( ATTRIB-6 / alive)
+             :ARG0 TAIL.CAT.PERSON-3)
+      :op2 ( EVENT-8 / twitched
+             :MOD ( mod-14 / past)
+             :ARG0 ( ENTITY-1 / tip
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :OF ( TAIL.CAT.PERSON-3 / tail
+                           :POS ( CAT.PERSON-4 / her)))
+             :MOD ( CONJ-10 / and
+                    :op1 ( mod-15 / TMP_now)
+                    :op2 ( mod-16 / TMP_then))))
+
+# ::id 68_childrens_POTTER-1902;AT18-4;NE
+# ::snt Peter thought it best to go away without speaking to her ;
+( EVENT-1 / thought
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-3 / name
+                    :op1 "Peter"))
+      :TOCOMP ( EVENT-9 / EVENT
+             :ATTRIBUTE ( ATTRIB-8 / best)
+             :ARG0 ( EVENT-6 / go
+                    :WITHOUT ( EVENT-5 / speaking
+                           :TO ( CAT.PERSON-4 / her))
+                    :DIR ( DIR-1 / away))))
+
+# ::id 69_childrens_POTTER-1902;AT18-5;NE
+# ::snt he had heard about cats from his cousin , little Benjamin Bunny .
+( EVENT-5 / had_heard
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :FROM ( BENJAMIN.RABBIT.PERSON-3 / cousin
+             :POS PETER.RABBIT.PERSON-1
+             :NAMELY ( ENTITY-little_Benjamin_Bunny / ENTITY
+                    :name ( n-2 / name
+                           :op1 "little_Benjamin_Bunny")))
+      :ABOUT ( CAT.PERSONS-2 / cats))
+
+# ::id 70_childrens_POTTER-1902;AT18-6;NE
+# ::snt He went back towards the tool-shed ,
+( EVENT-4 / went_back
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+      :TOWARDS ( SHED.LOC-2 / tool-shed
+             :DEFINITE ( ATTRIB-3 / the)))
+
+# ::id 71_childrens_POTTER-1902;AT18-7;NE
+# ::snt but suddenly , quite close to him , he heard the noise of a hoe -- scr-r-ritch , scratch , scratch , scritch .
+( EVENT-12 / heard
+      :MOD ( mod-2 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-3 / he)
+      :ARG1 ( ENTITY-9 / noise
+             :DEFINITE ( ATTRIB-10 / the)
+             :OF ( HOE.PRODUCT-11 / hoe)
+             :NAMELY ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / scr-r-ritch)
+                    :op2 ( ENTITY-6 / scratch)
+                    :op3 ( ENTITY-7 / scratch)
+                    :op4 ( ENTITY-8 / scritch)))
+      :LOC ( ATTRIB-1 / quite_close
+             :TO ( PETER.RABBIT.PERSON-2 / him))
+      :MOD ( mod-1 / suddenly))
+
+# ::id 72_childrens_POTTER-1902;AT19-1;NE
+# ::snt Peter scuttered underneath the bushes .
+( EVENT-3 / scuttered
+      :MOD ( mod-1 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter"))
+      :UNDERNEATH ( GROUP-1 / bushes
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 73_childrens_POTTER-1902;AT19-2;NE
+# ::snt But presently , as nothing happened , he came out , and climbed upon a wheelbarrow and peeped over .
+( CONJ-14 / and
+      :op1 ( EVENT-6 / came_out
+             :MOD ( mod-16 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-5 / he)
+             :AS ( SITUATION-1 / FACT
+                    :THAT ( EVENT-4 / happened
+                           :MOD ( mod-15 / past)
+                           :ARG0 ( ENTITY-2 / ENTITY
+                                  :QUANTIFIER ( ATTRIB-3 / nothing)))))
+      :op2 ( CONJ-13 / and
+             :op1 ( EVENT-8 / climbed
+                    :MOD ( mod-17 / past)
+                    :ARG0 PETER.RABBIT.PERSON-5
+                    :UPON ( ENTITY-7 / wheelbarrow)
+                    :AS SITUATION-1)
+             :op2 ( EVENT-9 / peeped_over
+                    :MOD ( mod-18 / past)
+                    :ARG0 PETER.RABBIT.PERSON-5
+                    :AS SITUATION-1))
+      :TMP ( TIME-19 / presently))
+
+# ::id 74_childrens_POTTER-1902;AT19-3;NE
+# ::snt The first thing he saw was Mr. McGregor hoeing onions .
+( EVENT-10 / be.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-1 / thing
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / first)
+             :ARG1-of ( EVENT-6 / saw
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( PETER.RABBIT.PERSON-5 / he)))
+      :ARG1 ( EVENT-9 / hoeing
+             :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+                    :name ( n-3 / name
+                           :op1 "Mr.McGregor"))
+             :ARG1 ( ONION.FOOD.PRODUCTS-8 / onions)))
+
+# ::id 75_childrens_POTTER-1902;AT19-4;NE
+# ::snt His back was turned towards Peter ,
+( EVENT-3 / turned
+      :MOD ( mod-1 / past)
+      :ARG1 ( ENTITY-1 / back
+             :POS ( MRMCGREGOR.PERSON-2 / his))
+      :TOWARDS ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter")))
+
+# ::id 76_childrens_POTTER-1902;AT19-4;NE
+# ::snt and beyond him was the gate !
+( EVENT-4 / be.02
+      :MOD ( mod-1 / past)
+      :ARG0 ( GATE.GARDEN.LOC-2 / gate
+             :DEFINITE ( ATTRIB-3 / the))
+      :BEYOND ( MRMCGREGOR.PERSON-1 / him))
+
+# ::id 77_childrens_POTTER-1902;AT20-1;NE
+# ::snt Peter got down very quietly off the wheelbarrow ; and started running as fast as he could go , along a straight walk behind some black-currant bushes .
+( CONJ-17 / and
+      :op1 ( EVENT-3 / got_down
+             :MOD ( mod-19 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                    :name ( n-22 / name
+                           :op1 "Peter"))
+             :OFF ( ENTITY-1 / wheelbarrow
+                    :DEFINITE ( ATTRIB-2 / the))
+             :MOD ( mod-18 / very_quietly))
+      :op2 ( EVENT-14 / started_running
+             :MOD ( mod-20 / past)
+             :ARG0 PETER.RABBIT.PERSON-Peter
+             :ALONG ( ENTITY-10 / walk
+                    :ATTRIBUTE ( ATTRIB-11 / straight)
+                    :BEHIND ( GROUP-12 / black-currant_bushes
+                           :QUANTIFIER ( ATTRIB-13 / some)))
+             :MOD ( mod-21 / as_fast
+                    :AS ( DEGREE-5 / DEGREE
+                           :MSR-of ( EVENT-8 / go
+                                  :domain-of ( MD-16 / could)
+                                  :ARG0 PETER.RABBIT.PERSON-Peter)))))
+
+# ::id 78_childrens_POTTER-1902;AT20-2;NE
+# ::snt Mr. McGregor caught sight of him at the corner ,
+( EVENT-5 / caught
+      :MOD ( mod-1 / past)
+      :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-2 / name
+                    :op1 "Mr.McGregor"))
+      :ARG1 ( ENTITY-1 / sight
+             :OF ( PETER.RABBIT.PERSON-2 / him))
+      :AT ( ENTITY-3 / corner
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 79_childrens_POTTER-1902;AT21-1;NE
+# ::snt but Peter did not care .
+( EVENT-1 / did_care
+      :domain-of ( NEG-2 / NEG)
+      :MOD ( mod-3 / past)
+      :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-4 / name
+                    :op1 "Peter")))
+
+# ::id 80_childrens_POTTER-1902;AT21-2;NE
+# ::snt He slipped underneath the gate , and was safe at last in the wood outside the garden .
+( CONJ-12 / and
+      :op1 ( EVENT-4 / slipped
+             :MOD ( mod-13 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-1 / he)
+             :UNDERNEATH ( GATE.GARDEN.LOC-2 / gate
+                    :DEFINITE ( ATTRIB-3 / the)))
+      :op2 ( EVENT-11 / be.01
+             :MOD ( mod-14 / past)
+             :ATTRIBUTE ( ATTRIB-5 / safe
+                    :IN ( WOOD.LOC-7 / wood
+                           :DEFINITE ( ATTRIB-8 / the)
+                           :OUTSIDE ( GARDEN.LOC-9 / garden
+                                  :DEFINITE ( ATTRIB-10 / the)))
+                    :AT ( ATTRIB-6 / last))
+             :ARG0 PETER.RABBIT.PERSON-1))
+
+# ::id 81_childrens_POTTER-1902;AT22-1;NE
+# ::snt Mr. McGregor hung up the little jacket and the shoes for a scare-crow to frighten the blackbirds .
+( EVENT-12 / hung_up
+      :MOD ( mod-1 / past)
+      :ARG0 ( MRMCGREGOR.PERSON-Mr.McGregor / MRMCGREGOR.PERSON
+             :name ( n-2 / name
+                    :op1 "Mr.McGregor"))
+      :ARG1 ( GROUP-1 / AND
+             :op1 ( JACKET.PRODUCT-2 / jacket
+                    :DEFINITE ( ATTRIB-3 / the)
+                    :ATTRIBUTE ( ATTRIB-4 / little))
+             :op2 ( SHOE.PRODUCTS-5 / shoes
+                    :DEFINITE ( ATTRIB-6 / the)))
+      :PRP ( EVENT-11 / frighten
+             :ARG0 ( ENTITY-8 / scare-crow)
+             :ARG1 ( BLACKBIRD.PERSONS-9 / blackbirds
+                    :DEFINITE ( ATTRIB-10 / the))))
+
+# ::id 82_childrens_POTTER-1902;AT23-1;NE
+# ::snt Peter never stopped running or looked behind him till he got home to the big fir-tree .
+( CONJ-16 / or
+      :op1 ( CONJ-15 / and
+             :op1 ( EVENT-9 / stopped
+                    :MOD ( mod-18 / past)
+                    :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                           :name ( n-21 / name
+                                  :op1 "Peter"))
+                    :TILL ( SITUATION-1 / FACT
+                           :THAT ( EVENT-7 / got
+                                  :MOD ( mod-17 / past)
+                                  :ARG0 PETER.RABBIT.PERSON-Peter
+                                  :ARG1 ( ENTITY-3 / home)
+                                  :TO ( ENTITY-4 / fir-tree
+                                         :DEFINITE ( ATTRIB-5 / the)
+                                         :ATTRIBUTE ( ATTRIB-6 / big)))))
+             :op2 ( EVENT-8 / running
+                    :ARG0 PETER.RABBIT.PERSON-Peter))
+      :op2 ( EVENT-11 / looked
+             :MOD ( mod-19 / past)
+             :ARG0 PETER.RABBIT.PERSON-Peter
+             :BEHIND ( PETER.RABBIT.PERSON-10 / him)
+             :TILL SITUATION-1)
+      :TMP ( TIME-20 / never))
+
+# ::id 83_childrens_POTTER-1902;AT23-2;NE
+# ::snt He was so tired that he flopped down upon the nice soft sand on the floor of the rabbit-hole and shut his eyes .
+( EVENT-16 / be.01
+      :MOD ( mod-22 / past)
+      :ATTRIBUTE ( ATTRIB-2 / so_tired
+             :THAT ( CONJ-19 / and
+                    :op1 ( EVENT-12 / flopped_down
+                           :MOD ( mod-20 / past)
+                           :ARG0 ( PETER.RABBIT.PERSON-3 / PETER.RABBIT.PERSON
+                                  :namely PETER.RABBIT.PERSON-1)
+                           :UPON ( ENTITY-4 / sand
+                                  :DEFINITE ( ATTRIB-5 / the)
+                                  :ATTRIBUTE ( ATTRIB-7 / soft)
+                                  :ATTRIBUTE ( ATTRIB-6 / nice)
+                                  :ON ( ENTITY-8 / floor
+                                         :DEFINITE ( ATTRIB-9 / the)
+                                         :OF ( ENTITY-10 / rabbit-hole
+                                                :DEFINITE ( ATTRIB-11 / the)))))
+                    :op2 ( EVENT-15 / shut
+                           :MOD ( mod-21 / past)
+                           :ARG0 PETER.RABBIT.PERSON-3
+                           :ARG1 ( GROUP-13 / eyes
+                                  :POS PETER.RABBIT.PERSON-3))))
+      :ARG0 ( PETER.RABBIT.PERSON-1 / he))
+
+# ::id 84_childrens_POTTER-1902;AT23-3;NE
+# ::snt His mother was busy cooking ;
+( CONJ-6 / and
+      :op1 ( EVENT-5 / be.01
+             :MOD ( mod-7 / past)
+             :ATTRIBUTE ( ATTRIB-3 / busy)
+             :ARG0 ( MOTHER.RABBIT.PERSON-1 / mother
+                    :POS ( PETER.RABBIT.PERSON-2 / his)))
+      :op2 ( EVENT-4 / cooking
+             :ARG0 MOTHER.RABBIT.PERSON-1))
+
+# ::id 85_childrens_POTTER-1902;AT23-4;NE
+# ::snt she wondered what he had done with his clothes .
+( EVENT-2 / wondered
+      :MOD ( mod-10 / past)
+      :ARG0 ( MOTHER.RABBIT.PERSON-1 / she)
+      :THAT ( EVENT-6 / had_done
+             :domain-of ( QUEST-8 / QUEST)
+             :MOD ( mod-9 / past)
+             :ARG0 ( PETER.RABBIT.PERSON-3 / he)
+             :ARG1 ( ENTITY_UNK-2 / penman-unknown)
+             :WITH ( GROUP-4 / clothes
+                    :POS PETER.RABBIT.PERSON-3)))
+
+# ::id 86_childrens_POTTER-1902;AT24-1;NE
+# ::snt It was the second little jacket and pair of shoes that Peter had lost in a fortnight !
+( EVENT-13 / be.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-9 / ENTITY
+             :ARG1-of ( EVENT-12 / had_lost
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                           :name ( n-3 / name
+                                  :op1 "Peter"))
+                    :IN ( TIME-11 / fortnight)))
+      :ARG1 ( ENTITY-1 / AND
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / second)
+             :op1 ( JACKET.PRODUCT-5 / jacket
+                    :ATTRIBUTE ( ATTRIB-6 / little))
+             :op2 ( ENTITY-7 / pair
+                    :OF ( SHOE.PRODUCTS-8 / shoes))))
+
+# ::id 87_childrens_POTTER-1902;AT25-1;NE
+# ::snt I am sorry to say that Peter was not very well during the evening .
+( EVENT-8 / copula
+      :ATTRIBUTE ( ATTRIB-2 / sorry
+             :TOCOMP ( EVENT-3 / say
+                    :THAT ( EVENT-6 / be.02
+                           :domain-of ( NEG-12 / NEG)
+                           :MOD ( mod-14 / past)
+                           :ARG0 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+                                  :name ( n-15 / name
+                                         :op1 "Peter"))
+                           :DURING ( TIME-4 / evening
+                                  :DEFINITE ( ATTRIB-5 / the))
+                           :MOD ( mod-13 / very_well))))
+      :ARG0 ( NARRATOR.PERSON-1 / i))
+
+# ::id 88_childrens_POTTER-1902;AT25-2;NE
+# ::snt His mother put him to bed , and made some camomile tea ;
+( CONJ-9 / and
+      :op1 ( EVENT-5 / put
+             :MOD ( mod-10 / past)
+             :ARG0 ( MOTHER.RABBIT.PERSON-1 / mother
+                    :POS ( PETER.RABBIT.PERSON-2 / his))
+             :ARG1 ( PETER.RABBIT.PERSON-3 / him)
+             :TO ( ENTITY-4 / bed))
+      :op2 ( EVENT-8 / made
+             :MOD ( mod-11 / past)
+             :ARG0 MOTHER.RABBIT.PERSON-1
+             :ARG1 ( DRINK.PRODUCT-6 / camomile_tea
+                    :QUANTIFIER ( ATTRIB-7 / some))))
+
+# ::id 89_childrens_POTTER-1902;AT25-3;NE
+# ::snt and she gave a dose of it to Peter !
+( EVENT-4 / gave
+      :MOD ( mod-1 / past)
+      :ARG0 ( MOTHER.RABBIT.PERSON-1 / she)
+      :ARG1 ( ENTITY-2 / dose
+             :OF ( DRINK.PRODUCT-3 / it))
+      :ARG2 ( PETER.RABBIT.PERSON-Peter / PETER.RABBIT.PERSON
+             :name ( n-2 / name
+                    :op1 "Peter")))
+
+# ::id 90_childrens_POTTER-1902;AT26-1;NE
+# ::snt ' One table-spoonful to be taken at bed-time . '
+( EVENT-3 / copula
+      :ARG0 ( AMOUNT-1 / table-spoonful
+             :CARDINAL ( ATTRIB-2 / one))
+      :TOCOMP ( EVENT-5 / taken
+             :ARG1 AMOUNT-1
+             :AT ( TIME-4 / bed-time)))
+
+# ::id 91_childrens_POTTER-1902;AT27-1;NE
+# ::snt But Flopsy , Mopsy , and Cotton-tail had bread and milk and blackberries for supper .
+( EVENT-7 / have.03
+      :MOD ( mod-1 / past)
+      :ARG0 ( RABBIT.PERSONS-1 / AND
+             :op1 ( FLOPSY.RABBIT.PERSON-Flopsy / FLOPSY.RABBIT.PERSON
+                    :name ( n-2 / name
+                           :op1 "Flopsy"))
+             :op2 ( MOPSY.RABBIT.PERSON-Mopsy / MOPSY.RABBIT.PERSON
+                    :name ( n-3 / name
+                           :op1 "Mopsy"))
+             :op3 ( COTTONTAIL.RABBIT.PERSON-Cotton-tail / COTTONTAIL.RABBIT.PERSON
+                    :name ( n-4 / name
+                           :op1 "Cotton-tail")))
+      :ARG1 ( PRODUCTS-2 / AND
+             :op1 ( FOOD.PRODUCTS-3 / bread)
+             :op2 ( DRINK.PRODUCTS-4 / milk)
+             :op3 ( FOOD.PRODUCTS-5 / blackberries))
+      :FOR ( ENTITY-6 / supper))
+
+# ::id 92_childrens_POTTER-1902;AT34-1;NE
+# ::snt THE END
+( ENTITY-1 / END
+      :DEFINITE ( ATTRIB-2 / the))

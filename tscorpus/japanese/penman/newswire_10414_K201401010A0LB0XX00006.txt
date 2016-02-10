@@ -1,0 +1,268 @@
+# ::id 1_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt ティータイム
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ティータイム))
+
+# ::id 2_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt ／ 元日生まれ ＜ 菊田千賀子 ＞
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-元日生まれ / ENTITY
+             :name ( n-2 / name
+                    :op1 "元日生まれ")
+             :NAMELY ( ENTITY-菊田千賀子 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "菊田千賀子"))))
+
+# ::id 3_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 誕生日 と 親 は 選べ ない 。
+( EVENT-5 / 選べ
+      :ARG0 ( ARB-1 / arb
+             :pick0)
+      :ARG1 ( GROUP-2 / CONJ_と
+             :op1 ( ENTITY-3 / 誕生日)
+             :op2 ( ENTITY-4 / 親))
+      :domain-of ( NEG-6 / NEG))
+
+# ::id 4_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 私 は 元日 に 生まれ た 。
+( EVENT-3 / 生まれ_た
+      :ARG0 ( ENTITY-1 / 私
+             :pick0)
+      :に ( ENTITY-2 / 元日)
+      :MOD ( mod-4 / past))
+
+# ::id 5_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt お正月 が 来る たび に 年齢 を 重ねる 。
+( EVENT-6 / 重ねる
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-5 / 年齢)
+      :に ( SITUATION-2 / たび
+             :THAT ( EVENT-4 / 来る
+                    :ARG0 ( ENTITY-3 / お正月))))
+
+# ::id 6_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 数字 に めっぽう 弱い 私 に 、 神様 が くれ た 切りのいい 日 と 思う こと に し て いる 。
+( EVENT-14 / し_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-7 / こと
+             :THAT ( EVENT-13 / 思う
+                    :ARG0 ENTITY-1
+                    :と ( ENTITY-8 / 日
+                           :ATTRIBUTE ( ATTRIB-12 / 切りのいい)
+                           :ARG1-of ( EVENT-11 / くれ_た
+                                  :ARG0 ( ENTITY-10 / 神様)
+                                  :MOD ( mod-15 / past)))))
+      :に ( ENTITY-6 / 私
+             :pick0
+             :ARG0-of ( EVENT-4 / 弱い
+                    :に ( ENTITY-3 / 数字)
+                    :MOD ( mod-16 / めっぽう))))
+
+# ::id 7_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 子ども の ころ から 独身時代 まで 、 元日 の 夕食 は 大好物 の おすし を 作っ て もらっ て い た 。
+( EVENT-8 / もらっ_て_い_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-2 / pro
+             :pick0)
+      :TPC ( ENTITY-6 / 夕食
+             :の ( ENTITY-7 / 元日))
+      :まで ( ENTITY-5 / 独身時代)
+      :から ( ENTITY-3 / ころ
+             :の ( ENTITY-4 / 子ども))
+      :TOCOMP ( EVENT-11 / 作っ_て
+             :ARG0 ENTITY-2
+             :ARG1 ( ENTITY-9 / おすし
+                    :の ( ENTITY-10 / 大好物)))
+      :MOD ( mod-12 / past))
+
+# ::id 8_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 親 の 苦労 など 考え ず に 幸せ な 時 を 過ごし た もの だ 。
+( EVENT-10 / だ
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( SITUATION-2 / もの
+             :THAT ( EVENT-9 / 過ごし_た
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-3 / 時
+                           :ATTRIBUTE ( ATTRIB-4 / 幸せ_な))
+                    :TE_に ( EVENT-8 / 考え
+                           :ARG0 ENTITY-3
+                           :など ( ENTITY-6 / 苦労
+                                  :の ( ENTITY-7 / 親))
+                           :domain-of ( NEG-12 / NEG))
+                    :MOD ( mod-13 / past))))
+
+# ::id 9_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 結婚 し て 、 正月 を 迎える 主婦 の 忙しさ を 身 を もっ て 知っ た 。
+( CONJ-12 / CONJ_te
+      :op1 ( EVENT-2 / 結婚する.0_て
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0))
+      :op2 ( CONJ-11 / CONJ_te
+             :op1 ( EVENT-9 / もっ_て
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-8 / 身))
+             :op2 ( EVENT-10 / 知っ_た
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-3 / 忙しさ
+                           :の ( ENTITY-4 / 主婦
+                                  :ARG0-of ( EVENT-7 / 迎える
+                                         :ARG1 ( ENTITY-6 / 正月))))
+                    :MOD ( mod-13 / past))))
+
+# ::id 10_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt ごちそう を 作る 側 に 回っ て ５０ 年 余り 。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-5 / 回っ_て
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( SITUATION-2 / 側
+                    :THAT ( EVENT-4 / 作る
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-3 / ごちそう))))
+      :op2 ( EVENT-7 / EVENT
+             :ARG1 ( ENTITY-6 / CD_５０_年
+                    :MOD ( mod-9 / 余り))))
+
+# ::id 11_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 大家族 で にぎやか だっ た 正月 は 、 いつ の 間 に か 夫 と 二 人 きり に なっ て い た 。
+( CONJ-15 / AND
+      :op1 ( is / : LINK ENTITY-9 ( ENTITY-9 ( ENTITY
+                           :OF ( ENTITY-10 / ENTITY ( ENTITY-10 CD_二_人)
+                                  :と ( ENTITY-11 / 夫)))) ENTITY-8)
+      :op2 ( EVENT-12 / なっ_て_い_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :ARG1 ENTITY-8
+             :に ( ENTITY-6 / 間
+                    :の ENTITY-7)
+             :TMP ( ENTITY-2 / 正月
+                    :ARG0-of ( EVENT-5 / にぎやか_だっ_た
+                           :で ( ENTITY-4 / 大家族)
+                           :MOD ( mod-13 / past)))
+             :MOD ( mod-14 / past)))
+
+# ::id 12_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 新年 の 「 おめでとう 」 と ダブル で 「 おめでとう 」 と 言っ て くれる 心 優しい 友人 も いる 。
+( EVENT-11 / いる
+      :ARG0 ( ENTITY-1 / 友人
+             :ARG0-of ( EVENT-7 / 言っ_て_くれる
+                    :と ( ENTITY-6 / おめでとう)
+                    :で ( ENTITY-3 / ダブル
+                           :と ( ENTITY-4 / おめでとう
+                                  :の ( ENTITY-5 / 新年))))
+             :ARG0-of ( EVENT-10 / 優しい
+                    :ARG0 ( ENTITY-9 / 心))))
+
+# ::id 13_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt でも 、 国中 が 新年 の 祝賀ムード に 染まり 、 めでたさ の 中 で 慌ただしく 過ぎる の が 元日 な の だ 。
+( CONJ-14 / AND
+      :op1 ( EVENT-6 / 染まり
+             :ARG0 ( ENTITY-3 / 国中)
+             :に ( ENTITY-4 / 祝賀ムード
+                    :の ( ENTITY-5 / 新年)))
+      :op2 ( EVENT-12 / な_の_だ
+             :ARG0 ( ENTITY-1 / の
+                    :ARG0-of ( EVENT-9 / 過ぎる
+                           :で ( ENTITY-7 / 中
+                                  :の ( ENTITY-8 / めでたさ))
+                           :MOD ( mod-13 / 慌ただしく)))
+             :ARG1 ( ENTITY-11 / 元日)))
+
+# ::id 14_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 元日 に当たって の 私 の 願い は シンプル だ 。
+( EVENT-4 / シンプル_だ
+      :ARG0 ( ENTITY-1 / 願い
+             :の ( ENTITY-3 / 私
+                    :pick0)
+             :に当たって_の ( ENTITY-2 / 元日)))
+
+# ::id 15_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 家事 一切 に 関わら ず 、 のんびり と 心 の ぜいたく を する 。
+( CONJ-9 / CONJ_te (
+             :op1 ( ENTITY-2 家事) ( EVENT-3 ( 関わら
+                           :ARG0 ( ENTITY-1 / speaker
+                                  :pick0)
+                           :に ENTITY-2
+                           :domain-of ( NEG-8 / NEG))))
+      :op2 ( EVENT-7 / する
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-5 / ぜいたく
+                    :の ( ENTITY-6 / 心))
+             :と ( ATTRIB-4 / のんびり)))
+
+# ::id 16_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt ごちそう も プレゼント も いら ない 。
+( EVENT-5 / いら
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( CONJ-6 / CONJ_も
+             :op1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / ごちそう)
+                    :op2 ENTITY-9)
+             :op2 ( GROUP-8 / AND
+                    :op1 ( ENTITY-4 / プレゼント)
+                    :op2 ENTITY-10))
+      :domain-of ( NEG-7 / NEG))
+
+# ::id 17_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt そんな 誕生日 を 迎え て み たい の だ 。
+( EVENT-3 / 迎え_て_み_たい_の_だ
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-2 / 誕生日))
+
+# ::id 18_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt そんな こと を 夫 に こぼし て も 、 馬耳東風 で 平然 と し て いる 。
+( EVENT-10 / し_て_いる
+      :ARG0 ( PICK-11 / or
+             :op1 ENTITY-3
+             :op2 ENTITY-4)
+      :と ( ENTITY-8 / ENTITY
+             :ATTRIBUTE ( ATTRIB-9 / 平然))
+      :で ( ENTITY-7 / 馬耳東風)
+      :TE ( EVENT-5 / こぼし_て
+             :ARG0 ( ENTITY-2 / speaker
+                    :pick0)
+             :ARG1 ( ENTITY-3 / こと)
+             :に ( ENTITY-4 / 夫)))
+
+# ::id 19_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 「 おーい 、 お茶 」 なんて 私 が 言っ たら 、 びっくり し て 大笑い さ れる だろう 。
+( CND-18 / たら (
+             :op1 ( ENTITY-2 ( ENTITY
+                           :namely ENTITY-1)) ( EVENT-3 ( 言っ
+                           :ARG0 ENTITY-2
+                           :THAT ( EVENT-5 / EVENT
+                                  :ARG1 ( ENTITY-4 / お茶)
+                                  :domain-of ( IMPERATIVE-15 / IMPERATIVE)))))
+      :op2 ( CONJ-17 / CONJ_te
+             :op1 ( EVENT-7 / びっくりする.0_て
+                    :ARG0 ENTITY-1)
+             :op2 ( EVENT-8 / 大笑いする.0
+                    :ARG1 ( ENTITY-1 / speaker
+                           :pick0)
+                    :domain-of ( MD-16 / MD_だろう))))
+
+# ::id 20_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt 元日生まれ って 損 ？
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / ENTITY
+             :って ( ENTITY-2 / 元日生まれ))
+      :ARG1 ( ENTITY-3 / 損)
+      :domain-of ( QUEST-5 / QUEST))
+
+# ::id 21_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt そんな こと も ない です か ？
+( EVENT-2 / ない_です
+      :ARG0 ( ENTITY-1 / こと)
+      :domain-of ( QUEST-3 / QUEST))
+
+# ::id 22_newswire_10414_K201401010A0LB0XX00006;NJ
+# ::snt （ 仙台市 泉区 ・ 主婦 ・７９ 歳 ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / CD_.７９_歳
+             :MOD ( mod-3 / 仙台市_泉区_主婦)))

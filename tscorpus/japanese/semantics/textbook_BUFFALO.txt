@@ -1,0 +1,551 @@
+# ::id 1_textbook_BUFFALO;TSOGD_1a;NJ
+# ::snt 誰 が 何 を 書い た か ？
+QUEST(∃ EVENT[3] ? ENTITY[2] ENTITY[1] (past(EVENT[3]) ∧ 書い_た(EVENT[3], ENTITY[1], ENTITY[2])))
+
+# ::id 2_textbook_BUFFALO;TSOGD_1b;NJ
+# ::snt どの 本 が 面白い か ？
+QUEST(∃ EVENT[2] ? ENTITY[1] (本(ENTITY[1]) ∧ 面白い(EVENT[2], ENTITY[1])))
+
+# ::id 3_textbook_BUFFALO;TSOGD_2a;NJ
+# ::snt 誰 も が 何 か を 書い た 。
+も ENTITY[1] か ENTITY[2] ∃ EVENT[3] (past(EVENT[3]) ∧ 書い_た(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 4_textbook_BUFFALO;TSOGD_2b;NJ
+# ::snt どの 本 も が 面白い 。
+も ENTITY[1] (本(ENTITY[1]), ∃ EVENT[2] 面白い(EVENT[2], ENTITY[1]))
+
+# ::id 5_textbook_BUFFALO;TSOGD_18a;NJ
+# ::snt 誰 も が 買っ た チョコレート が おいしい 。
+∃ ENTITY[1] EVENT[5] (
+ も ENTITY[3] ∃ EVENT[4] (past(EVENT[4]) ∧ 買っ_た(EVENT[4], ENTITY[3], ENTITY[1])) ∧ チョコレート(ENTITY[1]) ∧
+  おいしい(EVENT[5], ENTITY[1]))
+
+# ::id 6_textbook_BUFFALO;TSOGD_18b;NJ
+# ::snt 誰 が 買っ た チョコレート も おいしい 。
+も ENTITY[3] EVENT[4] ENTITY[1] ((買っ_た(EVENT[4], ENTITY[3], ENTITY[1]) ∧ チョコレート(ENTITY[1]) ∧ past(EVENT[4])),
+ ∃ EVENT[5] おいしい(EVENT[5], ENTITY[1]))
+
+# ::id 7_textbook_BUFFALO;TSOGD_24a;NJ
+# ::snt 誰 を 花子 が 愛し て いる という 噂 も 本当 だ 。
+も ENTITY[2] EVENT[3] ENTITY[1] (THAT_噂(愛し_て_いる(EVENT[3], ENTITY[花子], ENTITY[2]), ENTITY[1]), ∃ EVENT[4] 本当_だ(EVENT[4], ENTITY[1]))
+
+# ::id 8_textbook_BUFFALO;TSOGD_24b;NJ
+# ::snt 誰 の コンピューター も 故障 し て いる 。
+も ENTITY[2] ENTITY[1] (の_コンピューター(ENTITY[2], ENTITY[1]), ∃ EVENT[3] 故障する.0_て_いる(EVENT[3], ENTITY[1]))
+
+# ::id 9_textbook_BUFFALO;TSOGD_34;NJ
+# ::snt 誰 が 来 て も 、 報告 し て ください 。
+IMPERATIVE(∃ ENTITY[2] ENTITY[1] (
+      ENTITY[1] = *hearer* ∧
+       ENTITY[2] = *speaker* ∧
+        ∀ ENTITY[3] EVENT[4] CND_も(来_て(EVENT[4], ENTITY[3]),
+            ∃ ENTITY[5] EVENT[6] (ENTITY[5] = *pro*{ENTITY[3]} ∧ 報告する.0_て_ください(EVENT[6], ENTITY[1], ENTITY[5], ENTITY[2])))))
+
+# ::id 10_textbook_BUFFALO;TSOGD_38;NJ
+# ::snt 誰 が 書い た 本 を 読ん で も 、 一 つ 批評 を 書い て 送っ て 下さい 。
+IMPERATIVE(∃ ENTITY[1] (
+      ENTITY[1] = *hearer* ∧
+       ∀ ENTITY[4] EVENT[5] EVENT[6] ENTITY[2] CND_も(
+           書い_た(EVENT[5], ENTITY[4], ENTITY[2]) ∧ 本(ENTITY[2]) ∧ past(EVENT[5]) ∧
+            読ん_で(EVENT[6], ENTITY[1], ENTITY[2]),
+           ∃ ENTITY[10] EVENT[9] EVENT[11] DEGREE[8] ENTITY[7] (
+            CD_一_つ(DEGREE[8]) ∧
+             MSR_批評(DEGREE[8], ENTITY[7]) ∧
+              ENTITY[10] = *pro*{ENTITY[4], ENTITY[2]} ∧
+               CONJ_te(書い_て(EVENT[9], ENTITY[1], ENTITY[7]),
+                送っ_て_下さい(EVENT[11], ENTITY[1], ENTITY[7], ENTITY[10]))))))
+
+# ::id 11_textbook_BUFFALO;NJ
+# ::snt はは は ははは 、 はは の はは は ははは と わらう 。
+∃ ATTRIB[6] ATTRIB[2] EVENT[3] EVENT[7] ENTITY[1] ENTITY[5] ENTITY[4] (
+ はは(ENTITY[1]) ∧
+  はは(ENTITY[5]) ∧
+   の_はは(ENTITY[5], ENTITY[4]) ∧
+    ADV_ははは(ATTRIB[2]) ∧
+     ADV_ははは(ATTRIB[6]) ∧
+      xxx(EVENT[3], ENTITY[1]) ∧ と(EVENT[3]) = ATTRIB[2] ∧
+       わらう(EVENT[7], ENTITY[4]) ∧ と(EVENT[7]) = ATTRIB[6])
+
+# ::id 12_textbook_BUFFALO;NJ
+# ::snt すもも も もも も もも の うち 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] GROUP[1] (
+ CONJ_も(∃ ENTITY[2] (すもも(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (もも(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  もも(ENTITY[5]) ∧ の_うち(ENTITY[5], ENTITY[4]) ∧ xxx(EVENT[6], GROUP[1], ENTITY[4]))
+
+# ::id 13_textbook_BUFFALO;NJ
+# ::snt にわ に は に わ の にわとり が いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ にわ(ENTITY[1]) ∧
+  CD_に_わ(ENTITY[3]) ∧
+   の_にわとり(ENTITY[3], ENTITY[2]) ∧ いる(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 14_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 落とす 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  はし(ENTITY[3]) ∧
+   の_はし(ENTITY[3], ENTITY[2]) ∧
+    はし(ENTITY[4]) ∧ 落とす(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2])
+
+# ::id 15_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 使う 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  はし(ENTITY[3]) ∧
+   の_はし(ENTITY[3], ENTITY[2]) ∧
+    はし(ENTITY[4]) ∧ 使う(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2])
+
+# ::id 16_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 見つける 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  はし(ENTITY[3]) ∧
+   の_はし(ENTITY[3], ENTITY[2]) ∧
+    はし(ENTITY[4]) ∧ 見つける(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2])
+
+# ::id 17_textbook_BUFFALO;NJ
+# ::snt 情報 を 検索 する こと が できる よう に 構成 し た
+∃ ARB[5] SITUATION[4] ARB[3] SITUATION[2] ENTITY[1] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  ARB[3] = *arb* ∧
+   ARB[5] = *arb*{ARB[3]} ∧
+    情報(ENTITY[6]) ∧
+     こと(SITUATION[4], 検索する.0(EVENT[7], ARB[5], ENTITY[6])) ∧
+      よう(SITUATION[2], できる(EVENT[8], ARB[3], SITUATION[4])) ∧
+       past(EVENT[9]) ∧ 構成する.0_た(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = SITUATION[2])
+
+# ::id 18_textbook_BUFFALO;IJ
+# ::snt 無制約 の 日本語 および 英語 の 自然 言語 テクスト から 高精度 の 形式的 意味 表示 を 自動的 に 得る ため の 一般的 な 手法 の 確立 と 、 その 結果 を データベース として 推論 の ため の 世界 知識 の 構築 に 生かす 方法 を 開発 し ます 。
+∃ ENTITY[1] EVENT[29] GROUP[2] ENTITY[22] (
+ 結果(ENTITY[22]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_と(∃ ATTRIB[19] ATTRIB[16] ATTRIB[13] ARB[6] SITUATION[5] EVENT[17] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[15] ENTITY[14] ENTITY[7] ENTITY[4] ENTITY[3] (
+         ARB[6] = *arb* ∧
+          無制約(ENTITY[9]) ∧
+           CONJ_および(∃ ENTITY[11] (日本語(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+            ∃ ENTITY[12] (英語(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+            の(ENTITY[9], ENTITY[8]) ∧ equals(GROUP[10], ENTITY[8]) ∧
+             自然(ATTRIB[13]) ∧
+              ATTRIBUTE_言語_テクスト(ATTRIB[13], ENTITY[7]) ∧ の_言語_テクスト(ENTITY[8], ENTITY[7]) ∧
+               高精度(ENTITY[15]) ∧
+                形式的(ATTRIB[16]) ∧
+                 ATTRIBUTE_意味_表示(ATTRIB[16], ENTITY[14]) ∧ の_意味_表示(ENTITY[15], ENTITY[14]) ∧
+                  ため(SITUATION[5],
+                   得る(EVENT[17], ARB[6], ENTITY[14]) ∧ から(EVENT[17]) = ENTITY[7]) ∧
+                   一般的_な(ATTRIB[19]) ∧
+                    ATTRIBUTE_手法(ATTRIB[19], ENTITY[4]) ∧ の_手法(SITUATION[5], ENTITY[4]) ∧
+                     の_確立(ENTITY[4], ENTITY[3]) ∧ ADV_自動的_に(EVENT[17]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+    ∃ ARB[21] EVENT[28] ENTITY[27] ENTITY[26] ENTITY[25] ENTITY[24] ENTITY[23] ENTITY[20] (
+     ARB[21] = *arb* ∧
+      データベース(ENTITY[23]) ∧
+       推論(ENTITY[27]) ∧
+        の_ため(ENTITY[27], ENTITY[26]) ∧
+         の_世界_知識(ENTITY[26], ENTITY[25]) ∧
+          の_構築(ENTITY[25], ENTITY[24]) ∧
+           THAT_方法(生かす(EVENT[28], ARB[21], ENTITY[22]) ∧ に(EVENT[28]) = ENTITY[24] ∧
+                 として(EVENT[28]) = ENTITY[23], ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[2]))) ∧
+    開発する.0_ます(EVENT[29], ENTITY[1], GROUP[2]))
+
+# ::id 19_textbook_BUFFALO;IJ
+# ::snt 頑強 で 正確 な 文 の 意味 の 解析 により 、 テクスト の 含意 の 認識 、 検索 、 テクスト 要約 、 自動 応答 、 機械 翻訳 等 、 自然 言語 処理 の すべて の 課題 へ の 貢献 を 目指し ます 。
+∃ ENTITY[1] EVENT[4] EVENT[5] EVENT[21] ENTITY[7] ENTITY[6] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  文(ENTITY[7]) ∧
+   の_意味(ENTITY[7], ENTITY[6]) ∧
+    CONJ_te(頑強_で(EVENT[4], ENTITY[2]), 正確_な(EVENT[5], ENTITY[2])) ∧ の_解析(ENTITY[6], ENTITY[2]) ∧
+     ∃ ENTITY[13] ENTITY[12] ENTITY[11] (
+      テクスト(ENTITY[13]) ∧
+       の_含意(ENTITY[13], ENTITY[12]) ∧ の_認識(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+      ∃ ENTITY[14] (検索(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[10])) ∧
+      ∃ ENTITY[15] (テクスト_要約(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[10])) ∧
+      ∃ ENTITY[16] (自動_応答(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[10])) ∧
+      ∃ ENTITY[17] (機械_翻訳(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[10])) ∧
+      すべて ATTRIB[20] ENTITY[19] ENTITY[18] ((自然(ATTRIB[20]) ∧ ATTRIBUTE_言語_処理(ATTRIB[20], ENTITY[19]) ∧ の(ENTITY[19], ENTITY[18])),
+       の_課題(ENTITY[18], ENTITY[9]) ∧ 等_課題(GROUP[10], ENTITY[9])) ∧
+       へ_の_貢献(ENTITY[9], ENTITY[8]) ∧ 目指し_ます(EVENT[21], ENTITY[1], ENTITY[8]) ∧ により(EVENT[21]) = ENTITY[2])
+
+# ::id 20_textbook_BUFFALO;IJ
+# ::snt ゴスタック は ドッシュ を ディスティム し ます 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (ゴスタック(ENTITY[1]) ∧ ドッシュ(ENTITY[2]) ∧ ディスティムする.0_ます(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 21_textbook_BUFFALO;NJ
+# ::snt 先生 は ジョン を しかっ た 。
+∃ EVENT[2] ENTITY[1] (先生(ENTITY[1]) ∧ past(EVENT[2]) ∧ しかっ_た(EVENT[2], ENTITY[1], ENTITY[ジョン]))
+
+# ::id 22_textbook_BUFFALO;NJ
+# ::snt ジョン は 先生 に しから れ た 。
+∃ EVENT[2] ENTITY[1] (先生(ENTITY[1]) ∧ past(EVENT[2]) ∧ しから_た(EVENT[2], ENTITY[1], ENTITY[ジョン]))
+
+# ::id 23_textbook_BUFFALO;NJ
+# ::snt 私 の 母 と 父 は 友達 と 一緒 に 東京 の レストラン で 夕食 を 食べ まし た 。
+∃ ENTITY[2] EVENT[10] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[1] (
+ ENTITY[2] = 私 ∧
+  母(ENTITY[4]) ∧
+   父(ENTITY[5]) ∧
+    CONJ_と(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+     の(ENTITY[2], ENTITY[1]) ∧ equals(GROUP[3], ENTITY[1]) ∧
+      友達(ENTITY[7]) ∧
+       と_一緒(ENTITY[7], ENTITY[6]) ∧
+        の_レストラン(ENTITY[東京], ENTITY[8]) ∧
+         夕食(ENTITY[9]) ∧
+          past(EVENT[10]) ∧
+           食べ_まし_た(EVENT[10], ENTITY[1], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[8] ∧
+            に(EVENT[10]) = ENTITY[6])
+
+# ::id 24_textbook_BUFFALO;NJ
+# ::snt 基礎 研究 なし で は 科学 は 発展 し ない 。
+∃ ENTITY[2] ENTITY[1] (
+ 基礎_研究_なし(ENTITY[1]) ∧
+  科学(ENTITY[2]) ∧ ¬ ∃ EVENT[3] (発展する.0(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1]))
+
+# ::id 25_textbook_BUFFALO;NJ
+# ::snt 昨日 とっ た 写真 が かかっ て い た 。
+∃ ENTITY[3] EVENT[4] EVENT[5] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  とっ_た(EVENT[4], ENTITY[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[4]), TIME[昨日]) ∧ 写真(ENTITY[1]) ∧
+   past(EVENT[4]) ∧ past(EVENT[5]) ∧ かかっ_て_い_た(EVENT[5], ENTITY[1]))
+
+# ::id 26_textbook_BUFFALO;NJ
+# ::snt 子供 が 泳い で いる 写真 が かかっ て い た 。
+∃ SITUATION[1] EVENT[3] EVENT[4] ENTITY[2] (
+ 子供(ENTITY[2]) ∧
+  写真(SITUATION[1], 泳い_で_いる(EVENT[3], ENTITY[2])) ∧ past(EVENT[4]) ∧ かかっ_て_い_た(EVENT[4], SITUATION[1]))
+
+# ::id 27_textbook_BUFFALO;TOPTEN_1a;NJ
+# ::snt 太郎 が 新聞 を 読み ながら ご飯 を 食べ て いる 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ 新聞(ENTITY[1]) ∧
+  ご飯(ENTITY[3]) ∧ CRD_ながら(読み(EVENT[2], ENTITY[太郎], ENTITY[1]), 食べ_て_いる(EVENT[4], ENTITY[太郎], ENTITY[3])))
+
+# ::id 28_textbook_BUFFALO;TOPTEN_1b;NJ
+# ::snt 太郎 が 新聞 を 読み つつ ご飯 を 食べ て いる 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ 新聞(ENTITY[1]) ∧
+  ご飯(ENTITY[3]) ∧ CRD_つつ(読み(EVENT[2], ENTITY[太郎], ENTITY[1]), 食べ_て_いる(EVENT[4], ENTITY[太郎], ENTITY[3])))
+
+# ::id 29_textbook_BUFFALO;TOPTEN_3;NJ
+# ::snt 太郎 が ギター を 弾く と 春子 が 歌っ た 。
+∃ EVENT[2] EVENT[3] ENTITY[1] (
+ ギター(ENTITY[1]) ∧
+  past(EVENT[3]) ∧ CRD_と(弾く(EVENT[2], ENTITY[太郎], ENTITY[1]), 歌っ_た(EVENT[3], ENTITY[春子])))
+
+# ::id 30_textbook_BUFFALO;TOPTEN_4;NJ
+# ::snt 春子 は スペイン へ 行く だろう が 秋子 は イタリア へ 行く だろう 。
+CONJ_が(MD_だろう(∃ EVENT[1] (行く(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン])),
+ MD_だろう(∃ EVENT[2] (行く(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア])))
+
+# ::id 31_textbook_BUFFALO;TOPTEN_27a;NJ
+# ::snt ジョン が 来 た 。
+∃ EVENT[1] (past(EVENT[1]) ∧ 来_た(EVENT[1], ENTITY[ジョン]))
+
+# ::id 32_textbook_BUFFALO;TOPTEN_27b;NJ
+# ::snt ジョン は 来 た 。
+∃ EVENT[1] (past(EVENT[1]) ∧ 来_た(EVENT[1], ENTITY[ジョン]))
+
+# ::id 33_textbook_BUFFALO;TOPTEN_34a;NJ
+# ::snt 太郎 が 上着 を 脱い で ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CONJ_te(脱い_で(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 34_textbook_BUFFALO;TOPTEN_34b;NJ
+# ::snt 太郎 は 上着 を 脱い で ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CONJ_te(脱い_で(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 35_textbook_BUFFALO;TOPTEN_35a;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と ハンガー に 掛け た 。
+∃ ENTITY[4] ENTITY[3] EVENT[2] EVENT[6] ENTITY[1] ENTITY[5] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1], ENTITY[太郎]} ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[太郎]} ∧
+    ハンガー(ENTITY[5]) ∧
+     past(EVENT[6]) ∧
+      CRD_と(脱ぐ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+       掛け_た(EVENT[6], ENTITY[3], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]))
+
+# ::id 36_textbook_BUFFALO;TOPTEN_35b;NJ
+# ::snt 太郎 は 上着 を 脱ぐ と ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CRD_と(脱ぐ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 37_textbook_BUFFALO;TOPTEN_36a;NJ
+# ::snt 太郎 は 殴る と すぐ 泣く 。
+∀ ENTITY[2] ARB[1] EVENT[3] CND_と(ARB[1] = *arb* ∧ ENTITY[2] = *pro*{ENTITY[太郎]} ∧ 殴る(EVENT[3], ARB[1], ENTITY[2]), ∃ EVENT[4] (ADV_すぐ(EVENT[4]) ∧ 泣く(EVENT[4], ENTITY[太郎])))
+
+# ::id 38_textbook_BUFFALO;TOPTEN_36b;NJ
+# ::snt 春子 は 寒く なる と 学校 に 来 なく なる 。
+¬ ∀ EVENT[1] CND_と(寒く_なる(EVENT[1]),
+         ∃ ENTITY[2] EVENT[3] (学校(ENTITY[2]) ∧ 来_なる(EVENT[3], ENTITY[春子]) ∧ に(EVENT[3]) = ENTITY[2]))
+
+# ::id 39_textbook_BUFFALO;TOPTEN_37a;NJ
+# ::snt 太郎 が 上着 を 脱い だ から ハンガー に 掛け た 。
+∃ ENTITY[4] ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  上着(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[太郎], ENTITY[2]} ∧
+    ハンガー(ENTITY[5]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[6]) ∧
+       CRD_から(脱い_だ(EVENT[3], ENTITY[太郎], ENTITY[2]),
+        掛け_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]))
+
+# ::id 40_textbook_BUFFALO;TOPTEN_37b;NJ
+# ::snt 太郎 は 上着 を 脱い だ から ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      CRD_から(脱い_だ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+       掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 41_textbook_BUFFALO;TOPTEN_44;NJ
+# ::snt 太郎 が 上着 を 脱い で ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CONJ_te(脱い_で(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 42_textbook_BUFFALO;TOPTEN_48;NJ
+# ::snt 太郎 は 上着 を 脱い で ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CONJ_te(脱い_で(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 43_textbook_BUFFALO;TOPTEN_53;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と 春子 が ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1], ENTITY[太郎]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CRD_と(脱ぐ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[春子], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 44_textbook_BUFFALO;TOPTEN_57;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と ハンガー に 掛け た 。
+∃ ENTITY[4] ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  上着(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[太郎], ENTITY[2]} ∧
+    ハンガー(ENTITY[5]) ∧
+     past(EVENT[6]) ∧
+      CRD_と(脱ぐ(EVENT[3], ENTITY[太郎], ENTITY[2]),
+       掛け_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]))
+
+# ::id 45_textbook_BUFFALO;TOPTEN_61;NJ
+# ::snt 太郎 は 上着 を 脱ぐ と ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     CRD_と(脱ぐ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+      掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 46_textbook_BUFFALO;TOPTEN_70;NJ
+# ::snt 太郎 が 上着 を 脱い だ から ハンガー に 掛け た 。
+∃ ENTITY[4] ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  上着(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[太郎], ENTITY[2]} ∧
+    ハンガー(ENTITY[5]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[6]) ∧
+       CRD_から(脱い_だ(EVENT[3], ENTITY[太郎], ENTITY[2]),
+        掛け_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]))
+
+# ::id 47_textbook_BUFFALO;TOPTEN_74;NJ
+# ::snt 太郎 は 上着 を 脱い だ から ハンガー に 掛け た 。
+∃ ENTITY[3] EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 上着(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ハンガー(ENTITY[4]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      CRD_から(脱い_だ(EVENT[2], ENTITY[太郎], ENTITY[1]),
+       掛け_た(EVENT[5], ENTITY[太郎], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 48_textbook_BUFFALO;TOPTEN_78a;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌っ た 。
+∃ EVENT[2] EVENT[3] ENTITY[1] (
+ ギター(ENTITY[1]) ∧
+  past(EVENT[3]) ∧ CRD_ながら(弾き(EVENT[2], ENTITY[太郎], ENTITY[1]), 歌っ_た(EVENT[3], ENTITY[太郎])))
+
+# ::id 49_textbook_BUFFALO;TOPTEN_78b;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌う 。
+∃ EVENT[2] EVENT[3] ENTITY[1] (ギター(ENTITY[1]) ∧ CRD_ながら(弾き(EVENT[2], ENTITY[太郎], ENTITY[1]), 歌う(EVENT[3], ENTITY[太郎])))
+
+# ::id 50_textbook_BUFFALO;TOPTEN_80a;NJ
+# ::snt 春子 が 卒業 し た ので 一緒 に 旅行 し た 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  一緒(ENTITY[3]) ∧
+   past(EVENT[2]) ∧
+    past(EVENT[4]) ∧
+     CRD_ので(卒業する.0_た(EVENT[2], ENTITY[春子]), 旅行する.0_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 51_textbook_BUFFALO;TOPTEN_80b;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 し た 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  一緒(ENTITY[3]) ∧
+   past(EVENT[4]) ∧
+    CRD_ので(卒業する.0(EVENT[2], ENTITY[春子]), 旅行する.0_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 52_textbook_BUFFALO;TOPTEN_80c;NJ
+# ::snt 春子 が 卒業 し た ので 一緒 に 旅行 する 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  一緒(ENTITY[3]) ∧
+   past(EVENT[2]) ∧
+    CRD_ので(卒業する.0_た(EVENT[2], ENTITY[春子]), 旅行する.0(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 53_textbook_BUFFALO;TOPTEN_80d;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 する 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  一緒(ENTITY[3]) ∧
+   CRD_ので(卒業する.0(EVENT[2], ENTITY[春子]), 旅行する.0(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 54_textbook_BUFFALO;TOPTEN_81a;NJ
+# ::snt 春子 が 卒業 し た ので 悲しかっ た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (
+ ENTITY[1] = *speaker* ∧
+  past(EVENT[2]) ∧ past(EVENT[3]) ∧ CRD_ので(卒業する.0_た(EVENT[2], ENTITY[春子]), 悲しかっ_た(EVENT[3], ENTITY[1])))
+
+# ::id 55_textbook_BUFFALO;TOPTEN_81b;NJ
+# ::snt 春子 が 卒業 する ので 悲しかっ た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[3]) ∧ CRD_ので(卒業する.0(EVENT[2], ENTITY[春子]), 悲しかっ_た(EVENT[3], ENTITY[1])))
+
+# ::id 56_textbook_BUFFALO;TOPTEN_81c;NJ
+# ::snt 春子 が 卒業 し た ので 悲しい 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[2]) ∧ CRD_ので(卒業する.0_た(EVENT[2], ENTITY[春子]), 悲しい(EVENT[3], ENTITY[1])))
+
+# ::id 57_textbook_BUFFALO;TOPTEN_81d;NJ
+# ::snt 春子 が 卒業 する ので 悲しい 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ CRD_ので(卒業する.0(EVENT[2], ENTITY[春子]), 悲しい(EVENT[3], ENTITY[1])))
+
+# ::id 58_textbook_BUFFALO;TOPTEN_82a;NJ
+# ::snt 春子 が 休ん で い た ので 電話 し た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (
+ ENTITY[1] = *speaker* ∧
+  past(EVENT[2]) ∧ past(EVENT[3]) ∧ CRD_ので(休ん_で_い_た(EVENT[2], ENTITY[春子]), 電話する.0_た(EVENT[3], ENTITY[1])))
+
+# ::id 59_textbook_BUFFALO;TOPTEN_82b;NJ
+# ::snt 春子 が 休ん で いる ので 電話 し た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[3]) ∧ CRD_ので(休ん_で_いる(EVENT[2], ENTITY[春子]), 電話する.0_た(EVENT[3], ENTITY[1])))
+
+# ::id 60_textbook_BUFFALO;TOPTEN_82c;NJ
+# ::snt 春子 が 休ん で い た ので 電話 する 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[2]) ∧ CRD_ので(休ん_で_い_た(EVENT[2], ENTITY[春子]), 電話する.0(EVENT[3], ENTITY[1])))
+
+# ::id 61_textbook_BUFFALO;TOPTEN_82d;NJ
+# ::snt 春子 が 休ん で いる ので 電話 する 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ CRD_ので(休ん_で_いる(EVENT[2], ENTITY[春子]), 電話する.0(EVENT[3], ENTITY[1])))
+
+# ::id 62_textbook_BUFFALO;TOPTEN_83a;NJ
+# ::snt 春子 が 休ん で い た ので 悲しかっ た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (
+ ENTITY[1] = *speaker* ∧
+  past(EVENT[2]) ∧ past(EVENT[3]) ∧ CRD_ので(休ん_で_い_た(EVENT[2], ENTITY[春子]), 悲しかっ_た(EVENT[3], ENTITY[1])))
+
+# ::id 63_textbook_BUFFALO;TOPTEN_83b;NJ
+# ::snt 春子 が 休ん で いる ので 悲しかっ た 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[3]) ∧ CRD_ので(休ん_で_いる(EVENT[2], ENTITY[春子]), 悲しかっ_た(EVENT[3], ENTITY[1])))
+
+# ::id 64_textbook_BUFFALO;TOPTEN_83c;NJ
+# ::snt 春子 が 休ん で い た ので 悲しい 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ past(EVENT[2]) ∧ CRD_ので(休ん_で_い_た(EVENT[2], ENTITY[春子]), 悲しい(EVENT[3], ENTITY[1])))
+
+# ::id 65_textbook_BUFFALO;TOPTEN_83d;NJ
+# ::snt 春子 が 休ん で いる ので 悲しい 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ CRD_ので(休ん_で_いる(EVENT[2], ENTITY[春子]), 悲しい(EVENT[3], ENTITY[1])))
+
+# ::id 66_textbook_BUFFALO;TOPTEN_84a;NJ
+# ::snt 春子 は スペイン へ 行っ た が 秋子 は イタリア へ 行っ た 。
+∃ EVENT[1] EVENT[2] (
+ past(EVENT[1]) ∧
+  past(EVENT[2]) ∧
+   CONJ_が(行っ_た(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン],
+    行っ_た(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア]))
+
+# ::id 67_textbook_BUFFALO;TOPTEN_84b;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行っ た 。
+∃ EVENT[1] EVENT[2] (
+ past(EVENT[1]) ∧
+  past(EVENT[2]) ∧
+   CONJ_が(行く(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン],
+    行っ_た(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア]))
+
+# ::id 68_textbook_BUFFALO;TOPTEN_84c;NJ
+# ::snt 春子 は スペイン へ 行っ た が 秋子 は イタリア へ 行く 。
+∃ EVENT[1] EVENT[2] (
+ past(EVENT[1]) ∧
+  CONJ_が(行っ_た(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン],
+   行く(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア]))
+
+# ::id 69_textbook_BUFFALO;TOPTEN_84d;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行く 。
+∃ EVENT[1] EVENT[2] CONJ_が(行く(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン],
+ 行く(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア])
+
+# ::id 70_textbook_BUFFALO;TOPTEN_93;NJ
+# ::snt ジョン が 来 た 。
+∃ EVENT[1] (past(EVENT[1]) ∧ 来_た(EVENT[1], ENTITY[ジョン]))
+
+# ::id 71_textbook_BUFFALO;TOPTEN_102;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌う 。
+∃ EVENT[2] EVENT[3] ENTITY[1] (ギター(ENTITY[1]) ∧ CRD_ながら(弾き(EVENT[2], ENTITY[太郎], ENTITY[1]), 歌う(EVENT[3], ENTITY[太郎])))
+
+# ::id 72_textbook_BUFFALO;TOPTEN_106;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 し た 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  一緒(ENTITY[3]) ∧
+   past(EVENT[4]) ∧
+    CRD_ので(卒業する.0(EVENT[2], ENTITY[春子]), 旅行する.0_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 73_textbook_BUFFALO;TOPTEN_110;NJ
+# ::snt 春子 が 休ん で いる ので 悲しい 。
+∃ ENTITY[1] EVENT[2] EVENT[3] (ENTITY[1] = *speaker* ∧ CRD_ので(休ん_で_いる(EVENT[2], ENTITY[春子]), 悲しい(EVENT[3], ENTITY[1])))
+
+# ::id 74_textbook_BUFFALO;TOPTEN_115;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行っ た 。
+∃ EVENT[1] EVENT[2] (
+ past(EVENT[1]) ∧
+  past(EVENT[2]) ∧
+   CONJ_が(行く(EVENT[1], ENTITY[春子]) ∧ へ(EVENT[1]) = ENTITY[スペイン],
+    行っ_た(EVENT[2], ENTITY[秋子]) ∧ へ(EVENT[2]) = ENTITY[イタリア]))
+
+# ::id 75_textbook_BUFFALO;NJ
+# ::snt この いちご は 甘く て おいしい です 。
+∃ EVENT[2] EVENT[3] ENTITY[1] (いちご(ENTITY[1]) ∧ CONJ_te(甘く_て(EVENT[2], ENTITY[1]), おいしい_です(EVENT[3], ENTITY[1])))
+
+# ::id 76_textbook_BUFFALO;NJ
+# ::snt O王 を 追お う
+∃ ENTITY[1] (ENTITY[1] = *pro* ∧ MD_う(∃ EVENT[2] (追お(EVENT[2], ENTITY[1]) ∧ を(EVENT[2]) = ENTITY[O王])))

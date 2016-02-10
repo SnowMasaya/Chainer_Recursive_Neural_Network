@@ -1,0 +1,414 @@
+# ::id 1_wikipedia_KYOTO_BDS_00004,1;NJ
+# ::snt 道元
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[道元])
+
+# ::id 2_wikipedia_KYOTO_BDS_00004,3;NJ
+# ::snt 道元 （ どうげん ） は 、 鎌倉 時代 初期 の 禅僧 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[どうげん], ENTITY[道元]) ∧
+  鎌倉_時代_初期(ENTITY[2]) ∧ の_禅僧(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[道元], ENTITY[1]))
+
+# ::id 3_wikipedia_KYOTO_BDS_00004,4;NJ
+# ::snt 曹洞宗 の 開祖 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ の_開祖(ENTITY[曹洞宗], ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_BDS_00004,5;NJ
+# ::snt 晩年 に 希玄 という 異称 も 用い た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  晩年(ENTITY[2]) ∧
+   という_異称(ENTITY[希玄], ENTITY[3]) ∧
+    past(EVENT[4]) ∧ 用い_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 5_wikipedia_KYOTO_BDS_00004,6;NJ
+# ::snt 同宗旨 で は 高祖 と 尊称 さ れる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ 同宗旨(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   高祖(ENTITY[3]) ∧ 尊称する.0(EVENT[4], _, ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 6_wikipedia_KYOTO_BDS_00004,7;NJ
+# ::snt 諡 は 、 仏性伝東国師 、 承陽大師 （ 僧 ） 。
+∃ EVENT[4] GROUP[2] ENTITY[1] (
+ 諡(ENTITY[1]) ∧
+  is_element_of(ENTITY[仏性伝東国師], GROUP[2]) ∧
+   ∃ ENTITY[3] (僧(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[承陽大師]) ∧ is_element_of(ENTITY[承陽大師], GROUP[2])) ∧
+   xxx(EVENT[4], ENTITY[1], GROUP[2]))
+
+# ::id 7_wikipedia_KYOTO_BDS_00004,8;NJ
+# ::snt 一般 に は 道元 禅師 と 呼ば れる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ 一般(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   禅師(ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[3], ENTITY[道元]) ∧ 呼ば(EVENT[4], _, ENTITY[1], ENTITY[道元]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 8_wikipedia_KYOTO_BDS_00004,9;NJ
+# ::snt 日本 に 歯磨き 洗面 、 食事 の 際 の 作法 や 掃除 の 習慣 を 広め た と いわ れる 。
+∃ ENTITY[2] SITUATION[1] EVENT[11] EVENT[12] GROUP[3] (
+ ENTITY[2] = *pro* ∧
+  CONJ_や(∃ ENTITY[4] (歯磨き(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (洗面(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])),
+   ∃ ENTITY[8] ENTITY[7] ENTITY[6] (
+    食事(ENTITY[8]) ∧
+     の_際(ENTITY[8], ENTITY[7]) ∧ の_作法(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])),
+   ∃ ENTITY[10] ENTITY[9] (掃除(ENTITY[10]) ∧ の_習慣(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[3]))) ∧
+   と(SITUATION[1], 広め_た(EVENT[11], ENTITY[2], GROUP[3]) ∧ に(EVENT[11]) = ENTITY[日本]) ∧
+    past(EVENT[11]) ∧ いわ(EVENT[12], _, SITUATION[1]))
+
+# ::id 9_wikipedia_KYOTO_BDS_00004,10;NJ
+# ::snt 最初 に モウソウチク （ 孟宗竹 ） を 持ち帰っ た とする 説 も ある 。
+∃ ENTITY[2] EVENT[6] EVENT[7] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *pro* ∧
+  最初(ENTITY[3]) ∧
+   モウソウチク(ENTITY[5]) ∧
+    孟宗竹(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+      THAT_説(持ち帰っ_た(EVENT[6], ENTITY[2], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[3], ENTITY[1]) ∧
+       past(EVENT[6]) ∧ ある(EVENT[7], ENTITY[1]))
+
+# ::id 10_wikipedia_KYOTO_BDS_00004,11;NJ
+# ::snt 生い立ち
+∃ EVENT[2] ENTITY[1] (生い立ち(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 11_wikipedia_KYOTO_BDS_00004,12;NJ
+# ::snt 道元 の 出生 に は 不明 の 点 が 多い が 、 内大臣 土御門 通親 （ 源 通親 あるいは 久我 通親 ） の 嫡流 に 生まれ た とする 点 で は 諸説 が 一致 し て いる 。
+∃ ENTITY[6] EVENT[4] EVENT[12] ENTITY[3] ENTITY[2] ENTITY[11] EVENT[10] ENTITY[1] ENTITY[9] GROUP[8] ENTITY[7] ENTITY[5] (
+ の_出生(ENTITY[道元], ENTITY[1]) ∧
+  ENTITY[6] = *pro*{ENTITY[2], ENTITY[3], ENTITY[1], ENTITY[道元]} ∧
+   内大臣(ENTITY[9]) ∧
+    namely_-ENTITY-(ENTITY[9], ENTITY[土御門_通親]) ∧
+     CONJ_あるいは(is_element_of(ENTITY[源_通親], GROUP[8]), is_element_of(ENTITY[久我_通親], GROUP[8])) ∧
+      namely_-ENTITY-(GROUP[8], ENTITY[土御門_通親]) ∧
+       の_嫡流(ENTITY[土御門_通親], ENTITY[7]) ∧
+        THAT_点(生まれ_た(EVENT[10], ENTITY[6]) ∧ に(EVENT[10]) = ENTITY[7], ENTITY[5]) ∧
+         past(EVENT[10]) ∧
+          不明(ENTITY[3]) ∧
+           の_点(ENTITY[3], ENTITY[2]) ∧
+            諸説(ENTITY[11]) ∧
+             CONJ_が(多い(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1],
+              一致する.0_て_いる(EVENT[12], ENTITY[11]) ∧ で(EVENT[12]) = ENTITY[5]))
+
+# ::id 12_wikipedia_KYOTO_BDS_00004,13;NJ
+# ::snt 定説 で は 京都 木幡 の 松殿山荘 で 通親 と 太政大臣 松殿 基房 （ 藤原 基房 ） の 娘 藤原 伊子 の 子 として 生まれ た と さ れ て いる が 、 近年 の 研究 で は 定説 で は 養父 と さ れ て いる 堀川 通具 の 実子 と する 説 が 有力 に なり つつある 。
+∃ ENTITY[15] SITUATION[3] ENTITY[1] EVENT[8] EVENT[9] EVENT[19] EVENT[20] EVENT[21] GROUP[5] ENTITY[4] ENTITY[18] ENTITY[16] ENTITY[13] ENTITY[2] ENTITY[11] ENTITY[12] ENTITY[10] (
+ 定説(ENTITY[2]) ∧
+  近年(ENTITY[11]) ∧
+   の_研究(ENTITY[11], ENTITY[10]) ∧
+    定説(ENTITY[12]) ∧
+     ENTITY[1] = *pro* ∧
+      の_xxx(ENTITY[京都_木幡], ENTITY[松殿山荘]) ∧
+       CONJ_と(is_element_of(ENTITY[通親], GROUP[5]),
+        ∃ ENTITY[7] ENTITY[6] (
+         太政大臣(ENTITY[7]) ∧
+          namely_-ENTITY-(ENTITY[7], ENTITY[松殿_基房]) ∧
+           namely_-ENTITY-(ENTITY[藤原_基房], ENTITY[松殿_基房]) ∧
+            の_娘(ENTITY[松殿_基房], ENTITY[6]) ∧
+             namely_-ENTITY-(ENTITY[6], ENTITY[藤原_伊子]) ∧ is_element_of(ENTITY[藤原_伊子], GROUP[5]))) ∧
+        の_子(GROUP[5], ENTITY[4]) ∧
+         FACT(SITUATION[3],
+          生まれ_た(EVENT[8], ENTITY[1]) ∧ として(EVENT[8]) = ENTITY[4] ∧
+           で(EVENT[8]) = ENTITY[松殿山荘]) ∧
+          ENTITY[15] = *pro*{ENTITY[10], ENTITY[12], ENTITY[11], ENTITY[2], ENTITY[松殿山荘], ENTITY[藤原_伊子], ENTITY[松殿_基房], ENTITY[藤原_基房], ENTITY[通親], ENTITY[京都_木幡], ENTITY[4]} ∧
+           養父(ENTITY[18]) ∧
+            さ_て_いる(EVENT[19], _, ENTITY[堀川_通具], ENTITY[18]) ∧
+             の_実子(ENTITY[堀川_通具], ENTITY[16]) ∧
+              する(EVENT[20], ENTITY[13], ENTITY[15], ENTITY[16]) ∧ 説(ENTITY[13]) ∧
+               past(EVENT[8]) ∧
+                CONJ_が(さ_て_いる(EVENT[9], _, ENTITY[1], SITUATION[3]) ∧ で(EVENT[9]) = ENTITY[2],
+                 有力_に_なり_つつある(EVENT[21], ENTITY[13]) ∧ で(EVENT[21]) = ENTITY[12] ∧
+                  で(EVENT[21]) = ENTITY[10]))
+
+# ::id 13_wikipedia_KYOTO_BDS_00004,14;NJ
+# ::snt また 、 通親 の 子 、 源 通宗 または 久我 通光 を 父親 と する 説 も ある 。
+∃ EVENT[7] EVENT[8] GROUP[5] ENTITY[3] ENTITY[6] ENTITY[4] ENTITY[1] (
+ CONJ_または(is_element_of(ENTITY[源_通宗], GROUP[5]), is_element_of(ENTITY[久我_通光], GROUP[5])) ∧
+  equals(GROUP[5], ENTITY[4]) ∧
+   の_子(ENTITY[通親], ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧
+     父親(ENTITY[6]) ∧
+      する(EVENT[7], ENTITY[1], ENTITY[4], ENTITY[6]) ∧ 説(ENTITY[1]) ∧ ある(EVENT[8], ENTITY[1]))
+
+# ::id 14_wikipedia_KYOTO_BDS_00004,15;NJ
+# ::snt 伝記 で ある 『 建撕記 』 によれば 、 3 歳 で 父 （ 通親 ） を 、 8 歳 で 母 を 失っ て 、 異母兄 で ある 堀川 通具 の 養子 に なっ た 。
+∃ ENTITY[4] EVENT[3] EVENT[9] EVENT[10] EVENT[14] EVENT[15] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[13] ENTITY[11] (
+ 伝記(ENTITY[2]) ∧
+  で_ある(EVENT[3], ENTITY[建撕記], ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[2]} ∧
+    CD_8_歳(ENTITY[5]) ∧
+     母(ENTITY[6]) ∧
+      CD_3_歳(ENTITY[7]) ∧
+       父(ENTITY[8]) ∧
+        namely_-ENTITY-(ENTITY[通親], ENTITY[8]) ∧
+         異母兄(ENTITY[13]) ∧
+          で_ある(EVENT[14], ENTITY[堀川_通具], ENTITY[13]) ∧
+           の_養子(ENTITY[堀川_通具], ENTITY[11]) ∧
+            past(EVENT[15]) ∧
+             CONJ_te(xxx(EVENT[9], ENTITY[6], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7] ∧
+                   失っ_て(EVENT[10], ENTITY[4], ENTITY[6]) ∧ で(EVENT[10]) = ENTITY[5] ∧
+                    によれば(EVENT[10]) = ENTITY[建撕記],
+              なっ_た(EVENT[15], ENTITY[4]) ∧ に(EVENT[15]) = ENTITY[11] ∧
+               によれば(EVENT[15]) = ENTITY[建撕記]))
+
+# ::id 15_wikipedia_KYOTO_BDS_00004,16;NJ
+# ::snt また 、 一説 によれば 両親 の 死後 に 母方 の 叔父 で ある 松殿 師家 （ 元摂政内大臣 ） から 松殿 家 の 養嗣子 に し たい という 話 が あっ た が 、 世 の 無常 を 感じ て い た 道元 が 断っ た と も 言わ れ て いる 。
+∃ ENTITY[21] SITUATION[16] ENTITY[11] ENTITY[10] EVENT[8] EVENT[14] EVENT[15] EVENT[20] EVENT[22] EVENT[23] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[13] ENTITY[12] ENTITY[9] ENTITY[2] ENTITY[1] ENTITY[19] ENTITY[18] (
+ 一説(ENTITY[1]) ∧
+  両親(ENTITY[3]) ∧
+   の_死後(ENTITY[3], ENTITY[2]) ∧
+    母方(ENTITY[7]) ∧
+     の_叔父(ENTITY[7], ENTITY[6]) ∧
+      で_ある(EVENT[8], ENTITY[松殿_師家], ENTITY[6]) ∧
+       元摂政内大臣(ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[4], ENTITY[松殿_師家]) ∧
+         ENTITY[10] = *pro*{ENTITY[1], ENTITY[2], ENTITY[松殿_師家], ENTITY[4], ENTITY[6], ENTITY[7], ENTITY[3]} ∧
+          ENTITY[11] = *pro*{ENTITY[1], ENTITY[2], ENTITY[松殿_師家], ENTITY[4], ENTITY[6], ENTITY[7], ENTITY[3]} ∧
+           松殿_家(ENTITY[13]) ∧
+            の_養嗣子(ENTITY[13], ENTITY[12]) ∧
+             THAT_話(し_たい(EVENT[14], ENTITY[10], ENTITY[11]) ∧ に(EVENT[14]) = ENTITY[12], ENTITY[9]) ∧
+              世(ENTITY[19]) ∧
+               の_無常(ENTITY[19], ENTITY[18]) ∧
+                感じ_て_い_た(EVENT[20], ENTITY[道元], ENTITY[18]) ∧
+                 ENTITY[21] = *pro*{ENTITY[18], ENTITY[19], ENTITY[松殿_師家], ENTITY[1], ENTITY[2], ENTITY[9], ENTITY[12], ENTITY[13], ENTITY[4], ENTITY[6], ENTITY[7], ENTITY[3]} ∧
+                  と(SITUATION[16], 断っ_た(EVENT[22], ENTITY[道元], ENTITY[21])) ∧
+                   past(EVENT[15]) ∧
+                    past(EVENT[20]) ∧
+                     past(EVENT[22]) ∧
+                      CONJ_が(あっ_た(EVENT[15], ENTITY[9]) ∧ から(EVENT[15]) = ENTITY[松殿_師家] ∧
+                            に(EVENT[15]) = ENTITY[2] ∧ によれば(EVENT[15]) = ENTITY[1],
+                         (言わ_て_いる(EVENT[23], _, [_]) ∧ LINK(EVENT[23]) = SITUATION[16])))
+
+# ::id 16_wikipedia_KYOTO_BDS_00004,17;NJ
+# ::snt 浄土真宗 の 開祖 親鸞 と は 、 互い に 母方 の 縁戚 に あたり 面識 が あっ た とする 説 が ある が 確証 は ない 。
+∃ ENTITY[4] ENTITY[2] EVENT[7] EVENT[9] EVENT[10] EVENT[12] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[1] ENTITY[3] ENTITY[11] (
+ の_開祖(ENTITY[浄土真宗], ENTITY[3]) ∧
+  namely_-ENTITY-(ENTITY[3], ENTITY[親鸞]) ∧
+   確証(ENTITY[11]) ∧
+    ENTITY[2] = *pro* ∧
+     ENTITY[4] = 互い{ENTITY[親鸞], ENTITY[3], ENTITY[浄土真宗]} ∧
+      母方(ENTITY[6]) ∧
+       の_縁戚(ENTITY[6], ENTITY[5]) ∧
+        面識(ENTITY[8]) ∧
+         THAT_説(あたり(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[5] ∧
+               に(EVENT[7]) = ENTITY[4] ∧
+               あっ_た(EVENT[9], ENTITY[2], ENTITY[8]) ∧ と(EVENT[9]) = ENTITY[親鸞], ENTITY[1]) ∧
+          past(EVENT[9]) ∧ CONJ_が(ある(EVENT[10], ENTITY[1]), ない(EVENT[12], ENTITY[11])))
+
+# ::id 17_wikipedia_KYOTO_BDS_00004,18;NJ
+# ::snt 著作 『 正法眼蔵 』 の 「 生死 」 の 巻 は 、 親鸞 に向けて 書か れ た もの で ある とする 説 が ある 。
+∃ ENTITY[4] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[3] ENTITY[2] (
+ 正法眼蔵(ENTITY[3]) ∧ 著作(ENTITY[3]) ∧
+  の_巻(ENTITY[生死], ENTITY[2]) ∧ の__巻(ENTITY[3], ENTITY[2]) ∧
+   past(EVENT[6]) ∧
+    書か_た(EVENT[6], _, ENTITY[4]) ∧ に向けて(EVENT[6]) = ENTITY[親鸞] ∧ もの(ENTITY[4]) ∧
+     THAT_説(で_ある(EVENT[7], ENTITY[2], ENTITY[4]), ENTITY[1]) ∧ ある(EVENT[8], ENTITY[1]))
+
+# ::id 18_wikipedia_KYOTO_BDS_00004,19;NJ
+# ::snt 活動
+∃ EVENT[2] ENTITY[1] (活動(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 19_wikipedia_KYOTO_BDS_00004,20;NJ
+# ::snt 建暦 3 年 （ 1213 年 ） 比叡山 の 母方 の 叔父 良顕 を 訪ねる 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_建暦_3_年_（_1213_年_）(TIME[2]) ∧
+   の_xxx(ENTITY[比叡山], ENTITY[良顕]) ∧
+    母方(ENTITY[4]) ∧
+     の_叔父(ENTITY[4], ENTITY[3]) ∧
+      namely_-ENTITY-(ENTITY[3], ENTITY[良顕]) ∧
+       訪ねる(EVENT[5], ENTITY[1], ENTITY[良顕]) ∧ is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 20_wikipedia_KYOTO_BDS_00004,21;NJ
+# ::snt 建保 2 年 （ 1214 年 ） 天台座主 公円 に つい て 出家 し 、 仏法房 道元 と 名乗る 。
+∃ ENTITY[1] EVENT[3] EVENT[4] EVENT[5] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_建保_2_年_（_1214_年_）(TIME[2]) ∧
+   namely_-ENTITY-(ENTITY[天台座主], ENTITY[公円]) ∧
+    CONJ_te(つい_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[公円], 出家する.0(EVENT[4], ENTITY[1])) ∧
+     名乗る(EVENT[5], ENTITY[1], ENTITY[仏法房_道元]) ∧ is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 21_wikipedia_KYOTO_BDS_00004,22;NJ
+# ::snt 建保 3 年 （ 1215 年 ） 園城寺 の 公胤 の 元 で 天台宗 教学 を 修める 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_建保_3_年_（_1215_年_）(TIME[2]) ∧
+   の_xxx(ENTITY[園城寺], ENTITY[公胤]) ∧
+    の_元(ENTITY[公胤], ENTITY[3]) ∧
+     天台宗_教学(ENTITY[4]) ∧
+      修める(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧
+       is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 22_wikipedia_KYOTO_BDS_00004,23;NJ
+# ::snt 建保 5 年 （ 1217 年 ） 建仁寺 にて 栄西 の 弟子 明全 に 師事 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_建保_5_年_（_1217_年_）(TIME[2]) ∧
+   の_弟子(ENTITY[栄西], ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[3], ENTITY[明全]) ∧
+     師事(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[明全] ∧ にて(EVENT[4]) = ENTITY[建仁寺] ∧
+      is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 23_wikipedia_KYOTO_BDS_00004,24;NJ
+# ::snt 貞応 2 年 （ 1223 年 ） 明全 とともに 博多 から 南宋 に 渡っ て 諸山 を 巡り 、 曹洞宗 の 天童 如浄 より 印可 を 受ける 。
+∃ ENTITY[1] EVENT[3] EVENT[5] EVENT[7] ENTITY[4] ENTITY[6] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_貞応_2_年_（_1223_年_）(TIME[2]) ∧
+   諸山(ENTITY[4]) ∧
+    の_xxx(ENTITY[曹洞宗], ENTITY[天童_如浄]) ∧
+     印可(ENTITY[6]) ∧
+      CONJ_te(渡っ_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[南宋] ∧ から(EVENT[3]) = ENTITY[博多] ∧
+            とともに(EVENT[3]) = ENTITY[明全],
+       巡り(EVENT[5], ENTITY[1], ENTITY[4]) ∧ とともに(EVENT[5]) = ENTITY[明全]) ∧
+       受ける(EVENT[7], ENTITY[1], ENTITY[6]) ∧ より(EVENT[7]) = ENTITY[天童_如浄] ∧
+        is_contained_in(時間(EVENT[7]), TIME[2]))
+
+# ::id 24_wikipedia_KYOTO_BDS_00004,25;NJ
+# ::snt 安貞 2 年 （ 1228 年 ） 帰国 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_安貞_2_年_（_1228_年_）(TIME[2]) ∧ 帰国(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 25_wikipedia_KYOTO_BDS_00004,26;NJ
+# ::snt 天福 （ 日本 ） 元 年 （ 1233 年 ） 京都 深草 に 興聖寺 を 開く 。
+∃ ENTITY[1] EVENT[2] (
+ ENTITY[1] = *pro* ∧
+  namely_-TIME-(TIME[天福], TIME[日本]) ∧
+   元_年_（_1233_年_）(TIME[日本]) ∧
+    開く(EVENT[2], ENTITY[1], ENTITY[興聖寺]) ∧ に(EVENT[2]) = ENTITY[京都_深草] ∧
+     is_contained_in(時間(EVENT[2]), TIME[日本]))
+
+# ::id 26_wikipedia_KYOTO_BDS_00004,27;NJ
+# ::snt この 頃 、 比叡山 から の 弾圧 を 受ける 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ 頃(TIME[2]) ∧
+  ENTITY[1] = *pro* ∧
+   から_の_弾圧(ENTITY[比叡山], ENTITY[3]) ∧ 受ける(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 27_wikipedia_KYOTO_BDS_00004,28;NJ
+# ::snt 寛元 元 年 （ 1243 年 ） 7 月 越前国 の 地頭 波多野 義重 の 招き で 越前 志比荘 に 移転 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_寛元_元_年_（_1243_年_）_7_月(TIME[2]) ∧
+   の_地頭(ENTITY[越前国], ENTITY[4]) ∧
+    namely_-ENTITY-(ENTITY[4], ENTITY[波多野_義重]) ∧
+     の_招き(ENTITY[波多野_義重], ENTITY[3]) ∧
+      移転(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[越前_志比荘] ∧ で(EVENT[5]) = ENTITY[3] ∧
+       is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 28_wikipedia_KYOTO_BDS_00004,29;NJ
+# ::snt 途中 、 朽木村 の 領主 佐々木 信綱 の 招き に 応じ 、 朽木村 に 立ち寄る （ 興聖寺 （ 高島市 ） の 由来 ）
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  途中(ENTITY[2]) ∧
+   の_領主(ENTITY[朽木村], ENTITY[4]) ∧
+    namely_-ENTITY-(ENTITY[4], ENTITY[佐々木_信綱]) ∧
+     の_招き(ENTITY[佐々木_信綱], ENTITY[3]) ∧
+      応じ(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+       立ち寄る(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[朽木村] ∧ LOC(EVENT[6]) = ENTITY[2])
+
+# ::id 29_wikipedia_KYOTO_BDS_00004,30;NJ
+# ::snt 寛元 2 年 （ 1244 年 ） 傘松 に 大佛寺 を 開く 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_寛元_2_年_（_1244_年_）(TIME[2]) ∧
+   開く(EVENT[3], ENTITY[1], ENTITY[大佛寺]) ∧ に(EVENT[3]) = ENTITY[傘松] ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 30_wikipedia_KYOTO_BDS_00004,31;NJ
+# ::snt 寛元 4 年 （ 1246 年 ） 大佛寺 を 永平寺 に 改め 、 号 も 希玄 と 改める 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[4] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_寛元_4_年_（_1246_年_）(TIME[2]) ∧
+   号(ENTITY[4]) ∧
+    改め(EVENT[3], ENTITY[1], ENTITY[大佛寺], ENTITY[永平寺]) ∧
+     改める(EVENT[5], ENTITY[1], ENTITY[4], ENTITY[希玄]) ∧ is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 31_wikipedia_KYOTO_BDS_00004,32;NJ
+# ::snt この 頃 、 執権 北条 時頼 、 波多野 義重 ら の 招請 により 教化 の ため 鎌倉 に 下向 する 。
+∃ ENTITY[1] EVENT[9] GROUP[5] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[3] TIME[2] (
+ 頃(TIME[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[6] (執権(ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[6], ENTITY[北条_時頼]) ∧ is_element_of(ENTITY[北条_時頼], GROUP[5])) ∧
+    is_element_of(ENTITY[波多野_義重], GROUP[5]) ∧
+    equals_ら(GROUP[5], ENTITY[4]) ∧
+     の_招請(ENTITY[4], ENTITY[3]) ∧
+      教化(ENTITY[8]) ∧
+       の_ため(ENTITY[8], ENTITY[7]) ∧
+        下向する.0(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[鎌倉] ∧ ADV(EVENT[9]) = ENTITY[7] ∧
+         により(EVENT[9]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[9]), TIME[2]))
+
+# ::id 32_wikipedia_KYOTO_BDS_00004,33;NJ
+# ::snt 鎌倉 で の 教化 期間 は 半 年間 で あっ た が 、 関東 における 純粋禅 興隆 の 嚆矢 と なっ た 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ で_の_教化_期間(ENTITY[鎌倉], ENTITY[1]) ∧
+  CD_半_年間(ENTITY[2]) ∧
+   における_純粋禅_興隆(ENTITY[関東], ENTITY[5]) ∧
+    の_嚆矢(ENTITY[5], ENTITY[4]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[6]) ∧
+       CONJ_が(で_あっ_た(EVENT[3], ENTITY[1], ENTITY[2]),
+        なっ_た(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[4]))
+
+# ::id 33_wikipedia_KYOTO_BDS_00004,34;NJ
+# ::snt 建長 5 年 （ 1253 年 ） 病 の ため 永平寺 を 弟子 の 孤雲 懐奘 に 譲り 、 俗弟子 覚念 の 屋敷 （ 京都市 高辻通 西洞院通 ） で 死去 、 享年 54 （ 満53 歳 没 ） 。
+∃ ENTITY[2] EVENT[7] EVENT[10] ENTITY[5] ENTITY[6] ENTITY[4] TIME[3] ENTITY[9] ENTITY[8] ENTITY[1] (
+ (CD_54_（_満53_歳_没_）(ENTITY[1]), 享年(ENTITY[1])) ∧
+  ENTITY[2] = *pro* ∧
+   CD_建長_5_年_（_1253_年_）(TIME[3]) ∧
+    病(ENTITY[5]) ∧
+     の_ため(ENTITY[5], ENTITY[4]) ∧
+      弟子(ENTITY[6]) ∧
+       の_xxx(ENTITY[6], ENTITY[孤雲_懐奘]) ∧
+        俗弟子(ENTITY[9]) ∧
+         namely_-ENTITY-(ENTITY[9], ENTITY[覚念]) ∧
+          の_屋敷(ENTITY[覚念], ENTITY[8]) ∧
+           namely_-ENTITY-(ENTITY[京都市_高辻通_西洞院通], ENTITY[8]) ∧
+            譲り(EVENT[7], ENTITY[2], ENTITY[永平寺], ENTITY[孤雲_懐奘]) ∧ ADV(EVENT[7]) = ENTITY[4] ∧
+             is_contained_in(時間(EVENT[7]), TIME[3]) ∧
+             死去(EVENT[10], ENTITY[2]) ∧ で(EVENT[10]) = ENTITY[8] ∧ ADV(EVENT[10]) = ENTITY[1])
+
+# ::id 34_wikipedia_KYOTO_BDS_00004,35;NJ
+# ::snt 死因 は 瘍 と さ れる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (死因(ENTITY[1]) ∧ 瘍(ENTITY[2]) ∧ さ(EVENT[3], _, ENTITY[1], ENTITY[2]))
+
+# ::id 35_wikipedia_KYOTO_BDS_00004,36;NJ
+# ::snt 思想
+∃ EVENT[2] ENTITY[1] (思想(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 36_wikipedia_KYOTO_BDS_00004,37;NJ
+# ::snt 成仏 と は 一定 の レベル に 達する こと で 完成 する もの で は なく 、 たとえ 成仏 し た として も 、 さらなる 成仏 を 求め て 無限 の 修行 を 続ける こと こそ が 成仏 の 本質 で あり （ 修証一如 ） 、 釈迦 に 倣い 、 ただ 坐禅 に うちこむ こと が 最高 の 修行 で ある （ 只管打坐 ） と 主張 し た 。
+∃ ENTITY[29] SITUATION[28] ATTRIB[20] SITUATION[16] ENTITY[15] SITUATION[14] ENTITY[1] EVENT[17] EVENT[21] EVENT[24] EVENT[30] EVENT[32] EVENT[36] EVENT[2] ENTITY[19] ENTITY[23] ENTITY[22] ENTITY[31] ENTITY[35] ENTITY[34] ENTITY[3] (
+ 成仏(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[15] = *pro*{ENTITY[3], ENTITY[1]} ∧
+    FACT(SITUATION[16], 成仏する.0_た(EVENT[17], ENTITY[15])) ∧
+     さらなる(ATTRIB[20]) ∧
+      ATTRIBUTE_成仏(ATTRIB[20], ENTITY[19]) ∧
+       無限(ENTITY[23]) ∧
+        の_修行(ENTITY[23], ENTITY[22]) ∧
+         こと(SITUATION[14],
+          CONJ_te(求め_て(EVENT[21], ENTITY[15], ENTITY[19]) ∧ として(EVENT[21]) = SITUATION[16],
+           続ける(EVENT[24], ENTITY[15], ENTITY[22]) ∧ として(EVENT[24]) = SITUATION[16])) ∧
+          ENTITY[29] = *pro*{ENTITY[22], ENTITY[23], ENTITY[19], ENTITY[3], ENTITY[1]} ∧
+           坐禅(ENTITY[31]) ∧
+            こと(SITUATION[28],
+             倣い(EVENT[30], ENTITY[29]) ∧ に(EVENT[30]) = ENTITY[釈迦] ∧
+              うちこむ(EVENT[32], ENTITY[29]) ∧ に(EVENT[32]) = ENTITY[31]) ∧
+             最高(ENTITY[35]) ∧
+              の_修行(ENTITY[35], ENTITY[34]) ∧
+               ADV_たとえ(EVENT[17]) ∧
+                before(EVENT[2], EVENT[17]) ∧
+                 ADV_ただ(EVENT[32]) ∧
+                  past(EVENT[2]) ∧
+                   主張する.0_た(EVENT[2], ENTITY[1],
+                    ¬ ∃ ENTITY[7] SITUATION[6] EVENT[10] EVENT[11] EVENT[12] ENTITY[9] ENTITY[8] ENTITY[4] (
+                          ENTITY[7] = *pro*{ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+                           一定(ENTITY[9]) ∧
+                            の_レベル(ENTITY[9], ENTITY[8]) ∧
+                             こと(SITUATION[6],
+                              達する(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[8]) ∧
+                              完成する.0(EVENT[11], ENTITY[4]) ∧ で(EVENT[11]) = SITUATION[6] ∧
+                               もの(ENTITY[4]) ∧ で_は(EVENT[12], ENTITY[3], ENTITY[4])) ∧
+                     こそ SITUATION[13] (SITUATION[13] = SITUATION[14],
+                      ∃ EVENT[27] ENTITY[26] ENTITY[25] (
+                       成仏(ENTITY[26]) ∧
+                        の_本質(ENTITY[26], ENTITY[25]) ∧ で_あり(EVENT[27], SITUATION[13], ENTITY[25]))) ∧
+                      で_ある(EVENT[36], SITUATION[28], ENTITY[34])))

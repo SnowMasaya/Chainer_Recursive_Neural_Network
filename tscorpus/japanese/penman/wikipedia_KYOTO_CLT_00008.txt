@@ -1,0 +1,235 @@
+# ::id 1_wikipedia_KYOTO_CLT_00008,1;NJ
+# ::snt 七味唐辛子
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 七味唐辛子))
+
+# ::id 2_wikipedia_KYOTO_CLT_00008,2;NJ
+# ::snt 七味唐辛子 （ しちみとうがらし ） は 日本 の 調味料 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / しちみとうがらし
+             :MOD ( mod-4 / 七味唐辛子))
+      :ARG1 ( ENTITY-2 / 調味料
+             :の ( ENTITY-日本 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "日本"))))
+
+# ::id 3_wikipedia_KYOTO_CLT_00008,3;NJ
+# ::snt しばしば 「 七味 」 と 略さ れる 。
+( EVENT-3 / 略さ
+      :ARG1 ( ENTITY-1 / pro
+             :pick0)
+      :ARG2 ( ENTITY-2 / 七味)
+      :MOD ( mod-4 / しばしば))
+
+# ::id 4_wikipedia_KYOTO_CLT_00008,4;NJ
+# ::snt 七味唐辛子 という の は 上方 風 の 名前 で あり 、 江戸 で は 七種唐辛子 、 七色唐辛子 （ なないろとうがらし ） と 呼ば れ て い た 。
+( EVENT-9 / 呼ば_て_い_た
+      :ARG1 ( ENTITY-1 / の
+             :という ( ENTITY-2 / 七味唐辛子)
+             :ARG0-of ( EVENT-5 / で_あり
+                    :ARG1 ( ENTITY-3 / 名前
+                           :の ( ENTITY-4 / 上方_風))))
+      :ARG2 ( GROUP-6 / AND
+             :op1 ( ENTITY-7 / 七種唐辛子)
+             :op2 ENTITY-14
+             :MOD ( mod-10 / AND
+                    :op1 ( ENTITY-8 / ENTITY
+                           :NAMELY ( ENTITY-なないろとうがらし / ENTITY
+                                  :name ( n-12 / name
+                                         :op1 "なないろとうがらし")))
+                    :op2 ( ENTITY-15 / 七色唐辛子)
+                    :op3 ENTITY-16))
+      :で ( ENTITY-江戸 / ENTITY
+             :name ( n-13 / name
+                    :op1 "江戸"))
+      :MOD ( mod-11 / past))
+
+# ::id 5_wikipedia_KYOTO_CLT_00008,5;NJ
+# ::snt しばしば 、 なないろとんがらし 、 とき に 略し て なないろ 、 と 言う 。
+( CONJ-12 / CONJ_te
+      :op1 ( EVENT-8 / 略し_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-4 / EVENT
+                           :ARG1 ( ENTITY-2 / pro
+                                  :pick0)
+                           :ARG2 ( ENTITY-3 / なないろとんがらし)
+                           :MOD ( mod-13 / しばしば)))
+             :ARG1 ( PICK-11 / or
+                    :op1 ENTITY-2
+                    :op2 ENTITY-3)
+             :に ( ENTITY-7 / とき))
+      :op2 ( EVENT-10 / 言う
+             :ARG0 ENTITY-1
+             :ARG1 ENTITY-2
+             :ARG2 ( ENTITY-9 / なないろ)))
+
+# ::id 6_wikipedia_KYOTO_CLT_00008,6;NJ
+# ::snt 原料
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 原料))
+
+# ::id 7_wikipedia_KYOTO_CLT_00008,7;NJ
+# ::snt 唐辛子 を 主 原料 と し 、 七 種類 の 原料 から 作ら れる こと から その 名 が ある 。
+( EVENT-11 / ある
+      :ARG0 ( ENTITY-10 / 名)
+      :から ( SITUATION-1 / こと
+             :THAT ( EVENT-9 / 作ら
+                    :ARG1 ( ENTITY-2 / pro
+                           :pick0
+                           :ARG0-of ( EVENT-6 / し
+                                  :ARG1 ( ENTITY-3 / 唐辛子)
+                                  :ARG2 ( ENTITY-4 / 原料
+                                         :ATTRIBUTE ( ATTRIB-5 / 主))))
+                    :から ( ENTITY-7 / 原料
+                           :の ( ENTITY-8 / CD_七_種類)))))
+
+# ::id 8_wikipedia_KYOTO_CLT_00008,8;NJ
+# ::snt 各種 の 副材料 で 風味 を つける とともに 、 辛味 を ほどよく 抑え て いる 。
+( CONJ-9 / CONJ_とともに
+      :op1 ( EVENT-5 / つける
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-4 / 風味)
+             :で ( ENTITY-2 / 副材料
+                    :の ( ENTITY-3 / 種)))
+      :op2 ( EVENT-7 / 抑え_て_いる
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-6 / 辛味)
+             :で ENTITY-2
+             :MOD ( mod-10 / ほどよく)))
+
+# ::id 9_wikipedia_KYOTO_CLT_00008,9;NJ
+# ::snt 内容 は 生産者 によって 異なる が 、 唐辛子 以外 で は 以下 が よく 使用 さ れる 。
+( CONJ-8 / CONJ_が
+      :op1 ( EVENT-3 / 異なる
+             :ARG0 ( ENTITY-1 / 内容)
+             :によって ( ENTITY-2 / 生産者))
+      :op2 ( EVENT-6 / 使用する.0
+             :ARG1 ( ENTITY-5 / 以下)
+             :で ( ENTITY-4 / 唐辛子_以外)
+             :MOD ( mod-9 / よく)))
+
+# ::id 10_wikipedia_KYOTO_CLT_00008,20;NJ
+# ::snt 用途 や 歴史
+( EVENT-4 / EVENT
+      :LINK ( CONJ-5 / CONJ_や
+             :op1 ( GROUP-1 / AND
+                    :op1 ( ENTITY-2 / 用途)
+                    :op2 ENTITY-7)
+             :op2 ( GROUP-6 / AND
+                    :op1 ( ENTITY-3 / 歴史)
+                    :op2 ENTITY-8)))
+
+# ::id 11_wikipedia_KYOTO_CLT_00008,21;NJ
+# ::snt うどん ・ 蕎麦 など の 麺類 や 、 牛丼 など の 薬味 として 使わ れる こと が 多い 。
+( EVENT-13 / 多い
+      :ARG0 ( SITUATION-1 / こと
+             :THAT ( EVENT-12 / 使わ
+                    :ARG1 ( ENTITY-2 / pro
+                           :pick0)
+                    :として ( ENTITY-3 / 薬味
+                           :の ( ENTITY-4 / ENTITY
+                                  :など ( CONJ-14 / CONJ_や
+                                         :op1 ( GROUP-5 / AND
+                                                :op3 ( ENTITY-6 / 麺類
+                                                       :の ( ENTITY-7 / ENTITY
+                                                              :など GROUP-8))
+                                                :op4 ENTITY-16
+                                                :op1 ( CONJ-20 / AND
+                                                       :op1 ( GROUP-8 / AND
+                                                              :op1 ( ENTITY-9 / うどん)
+                                                              :op2 ENTITY-17)
+                                                       :op2 ( GROUP-8 / AND
+                                                              :op1 ( ENTITY-10 / 蕎麦)
+                                                              :op2 ENTITY-18))
+                                                :op2 ENTITY-7)
+                                         :op2 ( GROUP-15 / AND
+                                                :op1 ( ENTITY-11 / 牛丼)
+                                                :op2 ENTITY-19)))))))
+
+# ::id 12_wikipedia_KYOTO_CLT_00008,22;NJ
+# ::snt 七味唐辛子 は 別名 薬研堀 （ やげんぼり ） と も 呼ば れる 。
+( EVENT-3 / 呼ば
+      :ARG1 ( ENTITY-1 / 七味唐辛子)
+      :ARG2 ( ENTITY-2 / 別名_薬研堀
+             :NAMELY ( ENTITY-やげんぼり / ENTITY
+                    :name ( n-4 / name
+                           :op1 "やげんぼり"))))
+
+# ::id 13_wikipedia_KYOTO_CLT_00008,23;NJ
+# ::snt この 名 は 、 江戸 時代 に 両国 薬研堀 で 漢方薬 から ヒント を 得 て 作ら れ 江戸 名物 に なっ た こと に 由来 する 。
+( EVENT-11 / 由来する.0
+      :ARG0 ( ENTITY-1 / 名)
+      :に ( SITUATION-2 / こと
+             :THAT ( EVENT-10 / なっ_た
+                    :ARG0 ( ENTITY-3 / ENTITY
+                           :namely ENTITY-1
+                           :ARG0-of ( CONJ-13 / CONJ_te
+                                  :op1 ( EVENT-7 / 得_て
+                                         :ARG1 ( ENTITY-6 / ヒント)
+                                         :から ( ENTITY-5 / 漢方薬)
+                                         :で ( ENTITY-両国_薬研堀 / ENTITY
+                                                :name ( n-15 / name
+                                                       :op1 "両国_薬研堀"))
+                                         :に ( ENTITY-4 / 江戸_時代))
+                                  :op2 ( EVENT-8 / 作ら
+                                         :ARG1 ENTITY-3
+                                         :で ENTITY-両国_薬研堀
+                                         :に ENTITY-4)))
+                    :に ( ENTITY-9 / 江戸_名物)
+                    :MOD ( mod-14 / past))))
+
+# ::id 14_wikipedia_KYOTO_CLT_00008,24;NJ
+# ::snt 現在 、 東京 ・ 浅草寺 門前 「 やげん堀 」 、 京都 ・ 清水寺 門前 「 七味家 」 、 長野 ・ 善光寺 門前 「 八幡屋礒五郎 」 など の オーソドックス な もの の ほか 、 新潟 ・ 上越 の かんずり など 七味 から 発展 し た 調味料 も 存在 する 。
+( EVENT-15 / 存在する.0
+      :ARG0 ( ENTITY-10 / 調味料
+             :など ( ENTITY-11 / かんずり
+                    :の ( ENTITY-新潟_上越 / ENTITY
+                           :name ( n-22 / name
+                                  :op1 "新潟_上越")))
+             :ARG0-of ( EVENT-14 / 発展する.0_た
+                    :から ( ENTITY-13 / 七味)
+                    :MOD ( mod-16 / past)))
+      :ADV ( ENTITY-2 / ほか
+             :の ( ENTITY-3 / もの
+                    :の ( ENTITY-4 / ENTITY
+                           :など ( GROUP-5 / AND
+                                  :op1 ( ENTITY-6 / 東京_浅草寺_門前)
+                                  :op2 ( ENTITY-やげん堀 / ENTITY
+                                         :name ( n-19 / name
+                                                :op1 "やげん堀")
+                                         :NAMELY ENTITY-6)
+                                  :op3 ENTITY-やげん堀
+                                  :MOD ( mod-17 / AND
+                                         :op1 ( ENTITY-7 / 京都_清水寺_門前)
+                                         :op2 ( ENTITY-七味家 / ENTITY
+                                                :name ( n-20 / name
+                                                       :op1 "七味家")
+                                                :NAMELY ENTITY-7)
+                                         :op3 ENTITY-七味家)
+                                  :MOD ( mod-18 / AND
+                                         :op1 ( ENTITY-8 / 長野_善光寺_門前)
+                                         :op2 ( ENTITY-八幡屋礒五郎 / ENTITY
+                                                :name ( n-21 / name
+                                                       :op1 "八幡屋礒五郎")
+                                                :NAMELY ENTITY-8)
+                                         :op3 ENTITY-八幡屋礒五郎)))
+                    :ATTRIBUTE ( ATTRIB-9 / オーソドックス_な)))
+      :TMP ( TIME-1 / 現在))
+
+# ::id 15_wikipedia_KYOTO_CLT_00008,25;NJ
+# ::snt なお 、 やげん堀 ・ 七味家 ・ 八幡屋磯五郎 の 三 者 は 、 日本 三 大 七味唐辛子 と 称さ れ て いる 。
+( EVENT-4 / 称さ_て_いる
+      :ARG1 ( ENTITY-1 / ENTITY ( ENTITY-1 CD_三_者)
+             :の ( GROUP-2 / AND
+                    :op1 ( ENTITY-やげん堀 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "やげん堀"))
+                    :op2 ( ENTITY-七味家 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "七味家"))
+                    :op3 ( ENTITY-八幡屋磯五郎 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "八幡屋磯五郎"))))
+      :ARG2 ( ENTITY-3 / 日本_三_大_七味唐辛子))

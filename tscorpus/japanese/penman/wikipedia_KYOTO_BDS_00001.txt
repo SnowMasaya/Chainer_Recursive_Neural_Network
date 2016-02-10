@@ -1,0 +1,685 @@
+# ::id 1_wikipedia_KYOTO_BDS_00001,1;NJ
+# ::snt 雪舟
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-雪舟 / ENTITY
+             :name ( n-2 / name
+                    :op1 "雪舟")))
+
+# ::id 2_wikipedia_KYOTO_BDS_00001,2;NJ
+# ::snt 雪舟 （ せっしゅう 、 1420 年 （ 応永 27 年 ） - 1506 年 （ 永正 3 年 ） ） は 号 で 、 15 世紀 後半 室町 時代 に 活躍 し た 水墨画家 ・ 禅僧 で 、 画聖 と も 称え られる 。
+( CONJ-14 / CONJ_te
+      :op1 ( EVENT-2 / で
+             :ARG0 ( ENTITY-雪舟 / ENTITY
+                    :name ( n-18 / name
+                           :op1 "雪舟")
+                    :NAMELY ( ENTITY-せっしゅう_1420_年_ （ 応永_27_年_ ） 1506_年_ （ 永正_3_年_ ） / ENTITY
+                           :name ( n-19 / name
+                                  :op1 "せっしゅう_1420_年_ （ 応永_27_年_ ） 1506_年_ （ 永正_3_年_ ） ")))
+             :ARG1 ( ENTITY-1 / 号))
+      :op2 ( EVENT-11 / で
+             :ARG0 ENTITY-雪舟
+             :ARG1 ( ENTITY-3 / AND
+                    :op1 ( ENTITY-9 / 水墨画家)
+                    :op2 ENTITY-20
+                    :MOD ( mod-15 / AND
+                           :op1 ( ENTITY-10 / 禅僧)
+                           :op2 ENTITY-21)
+                    :ARG0-of ( EVENT-7 / 活躍する.0_た
+                           :に ( ENTITY-6 / 室町_時代)
+                           :TMP ( TIME-5 / CD_15_世紀
+                                  :MOD ( mod-16 / 後半))
+                           :MOD ( mod-17 / past))))
+      :op3 ( EVENT-13 / 称え
+             :ARG1 ENTITY-雪舟
+             :ARG2 ( ENTITY-12 / 画聖)))
+
+# ::id 3_wikipedia_KYOTO_BDS_00001,3;NJ
+# ::snt 日本 の 水墨画 を 一変 さ せ た 。
+( EVENT-3 / せ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 水墨画
+             :の ( ENTITY-日本 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "日本")))
+      :TOCOMP ( EVENT-4 / 一変する.0
+             :ARG0 ENTITY-2)
+      :MOD ( mod-5 / past))
+
+# ::id 4_wikipedia_KYOTO_BDS_00001,4;NJ
+# ::snt 諱 は 「 等楊 （ とうよう ） 」 、 もしくは 「 拙宗 （ せっしゅう ） 」 と 号 し た 。
+( EVENT-3 / 号する.0_た
+      :ARG0 ( ENTITY-1 / 諱)
+      :ARG1 ( CONJ-4 / CONJ_もしくは
+             :op1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-等楊 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "等楊")
+                           :NAMELY ( ENTITY-とうよう / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "とうよう")))
+                    :op2 ENTITY-等楊)
+             :op2 ( GROUP-10 / AND
+                    :op1 ( ENTITY-拙宗 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "拙宗")
+                           :NAMELY ( ENTITY-せっしゅう / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "せっしゅう")))
+                    :op2 ENTITY-拙宗))
+      :MOD ( mod-5 / past))
+
+# ::id 5_wikipedia_KYOTO_BDS_00001,5;NJ
+# ::snt 備中国 に 生まれ 、 京都 ・ 相国寺 に 入っ て から 周防国 に 移る 。
+( CRD-5 / te_から
+      :op1 ( EVENT-3 / 入っ_て
+             :ARG0 ENTITY-1
+             :に ( ENTITY-京都_相国寺 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "京都_相国寺")))
+      :op2 ( EVENT-4 / 移る
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-2 / 生まれ
+                           :に ( ENTITY-備中国 / ENTITY
+                                  :name ( n-6 / name
+                                         :op1 "備中国"))))
+             :に ( ENTITY-周防国 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "周防国"))))
+
+# ::id 6_wikipedia_KYOTO_BDS_00001,6;NJ
+# ::snt その 後 遣明使 に 随行 し て 中国 （ 明 ） に 渡っ て 中国 の 水墨画 を 学ん だ 。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-4 / 随行する.0_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-3 / 遣明使)
+             :TMP ( TIME-2 / 後))
+      :op2 ( EVENT-5 / 渡っ_て
+             :ARG0 ENTITY-1
+             :に ( ENTITY-中国 / ENTITY
+                    :name ( n-10 / name
+                           :op1 "中国")
+                    :NAMELY ( ENTITY-明 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "明")))
+             :TMP TIME-2)
+      :op3 ( EVENT-7 / 学ん_だ
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-6 / 水墨画
+                    :の ENTITY-中国)
+             :TMP TIME-2
+             :MOD ( mod-9 / past)))
+
+# ::id 7_wikipedia_KYOTO_BDS_00001,7;NJ
+# ::snt 作品 は 数多く 、 中国風 の 山水画 だけでなく 人物画 や 花鳥画 も よく し た 。
+( CONJ-23 / AND
+      :op1 ( EVENT-4 / EVENT
+             :ARG0 ( ENTITY-3 / ENTITY
+                    :OF ( ENTITY-2 / 作品)))
+      :op2 ( EVENT-10 / し_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( CONJ-14 / CONJ_だけでなく
+                    :op1 ( GROUP-5 / AND
+                           :op1 ( ENTITY-6 / 山水画
+                                  :の ( ENTITY-中国風 / ENTITY
+                                         :name ( n-17 / name
+                                                :op1 "中国風")))
+                           :op2 ENTITY-19)
+                    :op2 ( GROUP-18 / AND
+                           :op1 ( CONJ-13 / CONJ_や
+                                  :op1 ( GROUP-7 / AND
+                                         :op1 ( ENTITY-8 / 人物画)
+                                         :op2 ENTITY-21)
+                                  :op2 ( GROUP-20 / AND
+                                         :op1 ( ENTITY-9 / 花鳥画)
+                                         :op2 ENTITY-22))
+                           :op2 GROUP-7))
+             :MOD ( mod-15 / よく)
+             :MOD ( mod-16 / past)))
+
+# ::id 8_wikipedia_KYOTO_BDS_00001,8;NJ
+# ::snt 大胆 な 構図 と 力強い 筆線 は 非常に 個性的 な 画風 を 作り出し て いる 。
+( EVENT-8 / 作り出し_て_いる
+      :ARG0 ( GROUP-1 / CONJ_と
+             :op1 ( ENTITY-2 / 構図
+                    :ATTRIBUTE ( ATTRIB-3 / 大胆_な))
+             :op2 ( ENTITY-4 / 筆線
+                    :ATTRIBUTE ( ATTRIB-5 / 力強い)))
+      :ARG1 ( ENTITY-6 / 画風
+             :ATTRIBUTE ( ATTRIB-7 / 非常に_個性的_な)))
+
+# ::id 9_wikipedia_KYOTO_BDS_00001,9;NJ
+# ::snt 現存 する 作品 の うち 6 点 が 国宝 に 指定 さ れ て おり 、 日本 の 画家 の なか で も 別格 の 評価 を 受け て いる と いえる 。
+( CONJ-15 / AND
+      :op1 ( EVENT-7 / 指定する.0_て_おり
+             :ARG1 ( ENTITY-5 / CD_6_点)
+             :ARG2 ( ENTITY-6 / 国宝)
+             :ADV ( ENTITY-1 / うち
+                    :の ( ENTITY-2 / 作品
+                           :ARG0-of ( EVENT-4 / 現存する.0))))
+      :op2 ( EVENT-8 / いえる
+             :THAT ( EVENT-13 / 受け_て_いる
+                    :ARG1 ( ENTITY-11 / 評価
+                           :の ( ENTITY-12 / 別格))
+                    :で ( ENTITY-9 / なか
+                           :の ( ENTITY-10 / 画家
+                                  :の ( ENTITY-日本 / ENTITY
+                                         :name ( n-14 / name
+                                                :op1 "日本")))))))
+
+# ::id 10_wikipedia_KYOTO_BDS_00001,10;NJ
+# ::snt この ため 、 花鳥図屏風 など に 「伝雪舟筆」 さ れる 作品 は 大変 多い 。
+( EVENT-6 / 多い
+      :ARG0 ( ENTITY-3 / 作品
+             :ARG1-of ( EVENT-5 / 「 伝雪舟筆 」 する.0))
+      :に ( ENTITY-2 / ENTITY
+             :など ( ENTITY-花鳥図屏風 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "花鳥図屏風")))
+      :ADV ( ENTITY-1 / ため)
+      :MOD ( mod-7 / 大変))
+
+# ::id 11_wikipedia_KYOTO_BDS_00001,11;NJ
+# ::snt 真筆 で ある か 専門家 の 間 で も 意見 の 分かれる もの も 多々 ある 。
+( EVENT-9 / ある
+      :ARG0 ( ENTITY-1 / もの
+             :ARG0-of ( EVENT-6 / 分かれる
+                    :ARG0 ( ENTITY-5 / 意見)
+                    :THAT ( EVENT-8 / で_ある
+                           :ARG1 ( ENTITY-7 / 真筆)
+                           :domain-of ( QUEST-12 / QUEST))
+                    :で ( ENTITY-3 / 間
+                           :の ( ENTITY-4 / 専門家))))
+      :MOD ( mod-13 / 多々))
+
+# ::id 12_wikipedia_KYOTO_BDS_00001,12;NJ
+# ::snt 代表作 は 、 「 山水長巻 」 「 夏冬山水図 」 「 天橋立図 」 「 破墨山水 」 「 慧可断臂の図 」 「 秋冬山水 」 「 花鳥屏風 」 など 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 代表作)
+      :など ( GROUP-2 / AND
+             :op1 ( ENTITY-山水長巻 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "山水長巻"))
+             :op2 ( ENTITY-夏冬山水図 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "夏冬山水図"))
+             :op3 ( ENTITY-天橋立図 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "天橋立図"))
+             :op4 ( ENTITY-破墨山水 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "破墨山水"))
+             :op5 ( ENTITY-慧可断臂の図 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "慧可断臂の図"))
+             :op6 ( ENTITY-秋冬山水 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "秋冬山水"))
+             :op7 ( ENTITY-花鳥屏風 / ENTITY
+                    :name ( n-10 / name
+                           :op1 "花鳥屏風"))))
+
+# ::id 13_wikipedia_KYOTO_BDS_00001,13;NJ
+# ::snt 弟子 に 、 秋月 、 宗淵 、 等春 ら が いる 。
+( EVENT-4 / いる
+      :ARG0 ( ENTITY-2 / ら
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-秋月 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "秋月"))
+                    :op2 ( ENTITY-宗淵 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "宗淵"))
+                    :op3 ( ENTITY-等春 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "等春"))))
+      :に ( ENTITY-1 / 弟子))
+
+# ::id 14_wikipedia_KYOTO_BDS_00001,14;NJ
+# ::snt 生涯
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 生涯))
+
+# ::id 15_wikipedia_KYOTO_BDS_00001,15;NJ
+# ::snt 1420 年 備中国 赤浜 （ 現在 の 岡山県 総社市 ） に 生まれる 。
+( EVENT-4 / 生まれる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-備中国_赤浜 / ENTITY
+             :name ( n-5 / name
+                    :op1 "備中国_赤浜")
+             :NAMELY ( ENTITY-岡山県_総社市 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "岡山県_総社市")
+                    :の ( ENTITY-3 / 現在)))
+      :TMP ( TIME-2 / CD_1420_年))
+
+# ::id 16_wikipedia_KYOTO_BDS_00001,16;NJ
+# ::snt 生家 は 小田氏 という 武家 と さ れ て いる 。
+( EVENT-3 / さ_て_いる
+      :ARG1 ( ENTITY-1 / 生家)
+      :ARG2 ( ENTITY-2 / 武家
+             :という ( ENTITY-小田氏 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "小田氏"))))
+
+# ::id 17_wikipedia_KYOTO_BDS_00001,17;NJ
+# ::snt 幼い頃 近く の 宝福寺 （ 総社市 ） に 入る 。
+( EVENT-4 / 入る
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-宝福寺 / ENTITY
+             :name ( n-5 / name
+                    :op1 "宝福寺")
+             :の ( ENTITY-3 / 近く)
+             :NAMELY ( ENTITY-総社市 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "総社市")))
+      :TMP ( TIME-2 / 幼い頃))
+
+# ::id 18_wikipedia_KYOTO_BDS_00001,18;NJ
+# ::snt 10 歳 頃 京都 の 相国寺 に 移り 、 春林 周藤 に 師事 、 禅 の 修行 を 積む とともに 、 天章 周文 に 絵 を 学ん だ 。
+( CONJ-10 / CONJ_とともに
+      :op1 ( EVENT-3 / 移り
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-相国寺 / ENTITY
+                    :name ( n-16 / name
+                           :op1 "相国寺")
+                    :の ( ENTITY-京都 / ENTITY
+                           :name ( n-17 / name
+                                  :op1 "京都")))
+             :TMP ( TIME-2 / CD_10_歳
+                    :MOD ( mod-11 / 頃))
+             :MOD ( mod-12 / past))
+      :op2 ( EVENT-4 / 師事
+             :ARG0 ENTITY-1
+             :に ( ENTITY-春林_周藤 / ENTITY
+                    :name ( n-18 / name
+                           :op1 "春林_周藤"))
+             :MOD ( mod-13 / past))
+      :op3 ( EVENT-7 / 積む
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-5 / 修行
+                    :の ( ENTITY-6 / 禅))
+             :MOD ( mod-14 / past))
+      :op4 ( EVENT-9 / 学ん_だ
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-8 / 絵)
+             :に ( ENTITY-天章_周文 / ENTITY
+                    :name ( n-19 / name
+                           :op1 "天章_周文"))
+             :MOD ( mod-15 / past)))
+
+# ::id 19_wikipedia_KYOTO_BDS_00001,19;NJ
+# ::snt 1454 年 （ 応永 28 年 ） ごろ 周防国 に 移り 、 守護大名 大内氏 の 庇護 を 受け 、 画室 雲谷庵 （ 山口県 山口市 ） を 構える 。
+( EVENT-8 / 構える
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-3 / 移り
+                    :に ( ENTITY-周防国 / ENTITY
+                           :name ( n-12 / name
+                                  :op1 "周防国"))
+                    :TMP ( TIME-2 / CD_1454_年_ （ 応永_28_年_ ）
+                           :MOD ( mod-9 / ごろ)))
+             :ARG0-of ( EVENT-6 / 受け
+                    :ARG1 ( ENTITY-4 / 庇護
+                           :の ( ENTITY-大内氏 / ENTITY
+                                  :name ( n-10 / name
+                                         :op1 "大内氏")
+                                  :NAMELY ( ENTITY-5 / 守護大名)))))
+      :ARG1 ( ENTITY-雲谷庵 / ENTITY
+             :name ( n-11 / name
+                    :op1 "雲谷庵")
+             :NAMELY ( ENTITY-7 / 画室)
+             :NAMELY ( ENTITY-山口県_山口市 / ENTITY
+                    :name ( n-13 / name
+                           :op1 "山口県_山口市"))))
+
+# ::id 20_wikipedia_KYOTO_BDS_00001,20;NJ
+# ::snt 1465 年 （ 寛正 6 年 ） ごろ 、 楚石 梵29734 （ そせき ぼんき ） による 雪舟二大字 を 入手 し 、 龍崗 真圭 に 字説 を 請 。
+( EVENT-5 / 請
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-3 / 入手する.0
+                    :ARG1 ( ENTITY-雪舟二大字 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "雪舟二大字")
+                           :による ( ENTITY-楚石_梵29734 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "楚石_梵29734")
+                                  :NAMELY ( ENTITY-そせき_ぼんき / ENTITY
+                                         :name ( n-9 / name
+                                                :op1 "そせき_ぼんき"))))))
+      :ARG1 ( ENTITY-4 / 字説)
+      :に ( ENTITY-龍崗_真圭 / ENTITY
+             :name ( n-10 / name
+                    :op1 "龍崗_真圭"))
+      :TMP ( TIME-2 / CD_1465_年_ （ 寛正_6_年_ ）
+             :MOD ( mod-6 / ごろ)))
+
+# ::id 21_wikipedia_KYOTO_BDS_00001,21;NJ
+# ::snt 以後 、 雪舟 を 名乗っ た もの と 思わ れる 。
+( EVENT-5 / 思わ
+      :ARG1 ( ENTITY-1 / pro
+             :pick0)
+      :と ( SITUATION-2 / もの
+             :THAT ( EVENT-4 / 名乗っ_た
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-雪舟 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "雪舟"))
+                    :TMP ( TIME-3 / 以後)
+                    :MOD ( mod-6 / past))))
+
+# ::id 22_wikipedia_KYOTO_BDS_00001,22;NJ
+# ::snt これ 以前 は 拙宗 等楊 と 名乗っ て い た と 思わ れる が 、 拙宗 と 雪舟 が 同一 人物 で ある こと を 示す 確実 な 史料 は ない 。
+( CONJ-16 / CONJ_が
+      :op1 ( EVENT-5 / 思わ
+             :ARG1 ( SITUATION-1 / と
+                    :THAT ( EVENT-4 / 名乗っ_て_い_た
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :ARG1 ( ENTITY-拙宗_等楊 / ENTITY
+                                  :name ( n-19 / name
+                                         :op1 "拙宗_等楊"))
+                           :TMP ( ENTITY-3 / これ
+                                  :pick0
+                                  :MOD ( mod-17 / 以前))
+                           :MOD ( mod-18 / past))))
+      :op2 ( EVENT-15 / ない
+             :ARG0 ( ENTITY-6 / 史料
+                    :ATTRIBUTE ( ATTRIB-14 / 確実_な)
+                    :ARG0-of ( EVENT-13 / 示す
+                           :ARG1 ( SITUATION-8 / こと
+                                  :THAT ( EVENT-12 / で_ある
+                                         :ARG0 ( GROUP-9 / CONJ_と
+                                                :op1 ( ENTITY-拙宗 / ENTITY
+                                                       :name ( n-20 / name
+                                                              :op1 "拙宗"))
+                                                :op2 ( ENTITY-雪舟 / ENTITY
+                                                       :name ( n-21 / name
+                                                              :op1 "雪舟")))
+                                         :ARG1 ( ENTITY-10 / 人物
+                                                :ATTRIBUTE ( ATTRIB-11 / 同一))))))))
+
+# ::id 23_wikipedia_KYOTO_BDS_00001,23;NJ
+# ::snt 1468 年 （ 応仁 2 年 ） に 遣明使船 で 明 へ 渡航 。
+( EVENT-3 / 渡航
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :へ ( ENTITY-明 / ENTITY
+             :name ( n-4 / name
+                    :op1 "明"))
+      :で ( ENTITY-遣明使船 / ENTITY
+             :name ( n-5 / name
+                    :op1 "遣明使船"))
+      :に ( ENTITY-2 / CD_1468_年_ （ 応仁_2_年_ ）))
+
+# ::id 24_wikipedia_KYOTO_BDS_00001,24;NJ
+# ::snt 約2 年間 中国 で 本格的 な 水墨画 に 触れ 、 研究 し た 。
+( EVENT-7 / 研究する.0_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / 触れ
+                    :ARG1 ( ENTITY-3 / 水墨画
+                           :ATTRIBUTE ( ATTRIB-4 / 本格的_な))))
+      :ARG1 ENTITY-3
+      :で ( ENTITY-中国 / ENTITY
+             :name ( n-9 / name
+                    :op1 "中国"))
+      :MSR ( DEGREE-2 / CD_約2_年間)
+      :MOD ( mod-8 / past))
+
+# ::id 25_wikipedia_KYOTO_BDS_00001,25;NJ
+# ::snt 1481 年 （ 文明 13 ） 秋 から 美濃国 へ 旅行 。
+( EVENT-3 / 旅行
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :へ ( ENTITY-美濃国 / ENTITY
+             :name ( n-5 / name
+                    :op1 "美濃国"))
+      :から ( ENTITY-2 / CD_1481_年_ （ 文明_13_ ）
+             :MOD ( mod-4 / 秋)))
+
+# ::id 26_wikipedia_KYOTO_BDS_00001,26;NJ
+# ::snt 没年 は 、 確実 な 記録 は ない が 1506 年 と する もの が 多い 。
+( CONJ-12 / CONJ_が
+      :op1 ( EVENT-4 / ない
+             :ARG0 ( ENTITY-1 / 没年)
+             :ARG0 ( ENTITY-2 / 記録
+                    :ATTRIBUTE ( ATTRIB-3 / 確実_な)))
+      :op2 ( EVENT-10 / 多い
+             :ARG0 ( ENTITY-5 / もの
+                    :ARG0-of ( EVENT-9 / する
+                           :ARG1 ( PICK-11 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-2)
+                           :ARG2 ( ENTITY-8 / CD_1506_年)))))
+
+# ::id 27_wikipedia_KYOTO_BDS_00001,27;NJ
+# ::snt 1502 年 と する 説 も ある 。
+( EVENT-6 / ある
+      :ARG0 ( ENTITY-1 / 説
+             :ARG0-of ( EVENT-5 / する
+                    :ARG1 ( ENTITY-3 / pro
+                           :pick0)
+                    :ARG2 ( ENTITY-4 / CD_1502_年))))
+
+# ::id 28_wikipedia_KYOTO_BDS_00001,28;NJ
+# ::snt 雪舟 の 生涯 に は 没年 以外 に も 謎 と さ れる 部分 が 多い 。
+( EVENT-7 / 多い
+      :ARG0 ( ENTITY-3 / 部分
+             :ARG1-of ( EVENT-6 / さ
+                    :ARG2 ( ENTITY-5 / 謎)))
+      :に ( ENTITY-2 / 没年_以外)
+      :に ( ENTITY-1 / 生涯
+             :の ( ENTITY-雪舟 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "雪舟"))))
+
+# ::id 29_wikipedia_KYOTO_BDS_00001,29;NJ
+# ::snt 涙 で 描い た 鼠
+( EVENT-5 / EVENT
+      :LINK ( ENTITY-1 / 鼠
+             :ARG1-of ( EVENT-4 / 描い_た
+                    :で ( ENTITY-3 / 涙)
+                    :MOD ( mod-6 / past))))
+
+# ::id 30_wikipedia_KYOTO_BDS_00001,30;NJ
+# ::snt 雪舟 について こんな 伝説 が 残っ て いる 。
+( EVENT-2 / 残っ_て_いる
+      :ARG0 ( ENTITY-1 / 伝説)
+      :について ( ENTITY-雪舟 / ENTITY
+             :name ( n-3 / name
+                    :op1 "雪舟")))
+
+# ::id 31_wikipedia_KYOTO_BDS_00001,31;NJ
+# ::snt 宝福寺 に 入っ た 幼い 日 の 雪舟 が 、 絵 ばかり 好ん で 経 を 読も うとしない ので 、 寺 の 僧 は 雪舟 を 仏堂 の 柱 に しばりつけ て しまい まし た 。
+( CRD-19 / ので
+      :op1 ( CONJ-18 / CONJ_te (
+                    :op1 ( ENTITY-6 ( ENTITY
+                                  :OF ( ENTITY-7 / 絵))) ( EVENT-8 ( 好ん_で
+                                  :ARG0 ( ENTITY-雪舟 / ENTITY
+                                         :name ( n-22 / name
+                                                :op1 "雪舟")
+                                         :の ( SITUATION-1 / 日
+                                                :THAT ( EVENT-3 / 幼い
+                                                       :ARG0 ( PICK-16 / or
+                                                              :op1 ENTITY-雪舟
+                                                              :op2 ENTITY-宝福寺)))
+                                         :ARG0-of ( EVENT-5 / 入っ_た
+                                                :に ( ENTITY-宝福寺 / ENTITY
+                                                       :name ( n-23 / name
+                                                              :op1 "宝福寺"))
+                                                :MOD ( mod-20 / past)))
+                                  :ARG1 ENTITY-6)))
+             :op2 ( EVENT-10 / 読も
+                    :ARG0 ENTITY-雪舟
+                    :ARG1 ( ENTITY-9 / 経)
+                    :domain-of ( MD-17 / MD_うとしない)))
+      :op2 ( EVENT-15 / しばりつけ_て_しまい_まし_た
+             :ARG0 ( ENTITY-11 / 僧
+                    :の ( ENTITY-12 / 寺))
+             :ARG1 ENTITY-雪舟
+             :に ( ENTITY-13 / 柱
+                    :の ( ENTITY-14 / 仏堂))
+             :MOD ( mod-21 / past)))
+
+# ::id 32_wikipedia_KYOTO_BDS_00001,32;NJ
+# ::snt しかし 床 に 落ち た 涙 を 足 の 親指 に つけ 、 床 に ねずみ を 描い た ところ 、 僧 は その 見事さ に 感心 し 、 雪舟 が 絵 を 描く こと を 許し まし た 。
+( EVENT-19 / 許し_まし_た
+      :ARG0 ( ENTITY-13 / 僧
+             :ARG0-of ( EVENT-15 / 感心する.0
+                    :に ( ENTITY-14 / 見事さ)))
+      :ARG1 ( SITUATION-16 / こと
+             :THAT ( EVENT-18 / 描く
+                    :ARG0 ( ENTITY-雪舟 / ENTITY
+                           :name ( n-23 / name
+                                  :op1 "雪舟"))
+                    :ARG1 ( ENTITY-17 / 絵)))
+      :ところ ( EVENT-12 / 描い_た
+             :ARG0 ( ENTITY-2 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-9 / つけ
+                           :ARG1 ( ENTITY-3 / 涙
+                                  :ARG0-of ( EVENT-6 / 落ち_た
+                                         :に ( ENTITY-5 / 床)
+                                         :MOD ( mod-20 / past)))
+                           :に ( ENTITY-7 / 親指
+                                  :の ( ENTITY-8 / 足))))
+             :ARG1 ( ENTITY-11 / ねずみ)
+             :に ( ENTITY-10 / 床)
+             :MOD ( mod-21 / past))
+      :MOD ( mod-22 / past))
+
+# ::id 33_wikipedia_KYOTO_BDS_00001,33;NJ
+# ::snt これ は 雪舟 について 最も よく 知ら れ た 話 で ある と 思わ れる 。
+( EVENT-8 / 思わ
+      :ARG1 ( SITUATION-1 / と
+             :THAT ( EVENT-7 / で_ある
+                    :ARG0 ( ENTITY-2 / これ
+                           :pick0)
+                    :ARG1 ( ENTITY-3 / 話
+                           :ARG1-of ( EVENT-5 / 知ら_た
+                                  :について ( ENTITY-雪舟 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "雪舟"))
+                                  :MOD ( mod-9 / 最も_よく)
+                                  :MOD ( mod-10 / past))))))
+
+# ::id 34_wikipedia_KYOTO_BDS_00001,34;NJ
+# ::snt 初出 は 江戸 時代 に 狩野 永納 が 編纂 し た 『 本朝画史 』 （ 1693 年 刊 ） で ある 。
+( EVENT-6 / で_ある
+      :ARG0 ( ENTITY-1 / 初出)
+      :ARG1 ( ENTITY-本朝画史 / ENTITY
+             :name ( n-9 / name
+                    :op1 "本朝画史")
+             :ARG1-of ( EVENT-5 / 編纂する.0_た
+                    :ARG0 ( ENTITY-狩野_永納 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "狩野_永納"))
+                    :に ( ENTITY-4 / 江戸_時代)
+                    :MOD ( mod-7 / past))
+             :NAMELY ( ENTITY-2 / CD_1693_年
+                    :MOD ( mod-8 / 刊))))
+
+# ::id 35_wikipedia_KYOTO_BDS_00001,35;NJ
+# ::snt 神格化
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 神格化))
+
+# ::id 36_wikipedia_KYOTO_BDS_00001,36;NJ
+# ::snt 雪舟 の 神格化 は 江戸 時代 から 始まっ た 。
+( EVENT-3 / 始まっ_た
+      :ARG0 ( ENTITY-1 / 神格化
+             :の ( ENTITY-雪舟 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "雪舟")))
+      :から ( ENTITY-2 / 江戸_時代)
+      :MOD ( mod-4 / past))
+
+# ::id 37_wikipedia_KYOTO_BDS_00001,37;NJ
+# ::snt 狩野派 が 当時 画壇 を 支配 し て い た が 、 雪舟 を 師 と 仰ぎ 、 諸大名 が 雪舟 の 作品 を 求め た から で ある と さ れる 。
+( CONJ-19 / CONJ_が
+      :op1 ( EVENT-3 / 支配する.0_て_い_た
+             :ARG0 ( ENTITY-狩野派 / ENTITY
+                    :name ( n-23 / name
+                           :op1 "狩野派"))
+             :ARG1 ( ENTITY-2 / 画壇)
+             :TMP ( TIME-1 / 当時)
+             :MOD ( mod-20 / past))
+      :op2 ( EVENT-15 / さ
+             :ARG1 ( ENTITY-4 / ENTITY
+                    :namely ( PICK-16 / or
+                           :op1 ENTITY-2
+                           :op2 ENTITY-狩野派))
+             :ARG2 ( EVENT-14 / で_ある
+                    :ARG0 ( ENTITY-6 / ENTITY
+                           :namely ( PICK-17 / or
+                                  :op1 ENTITY-4
+                                  :op2 ENTITY-2
+                                  :op3 ENTITY-狩野派))
+                    :から ( EVENT-13 / 求め_た
+                           :ARG0 ( ENTITY-11 / 諸大名)
+                           :ARG1 ( ENTITY-12 / 作品
+                                  :の ( ENTITY-雪舟 / ENTITY
+                                         :name ( n-22 / name
+                                                :op1 "雪舟")
+                                         :ARG1-of ( EVENT-10 / 仰ぎ
+                                                :ARG0 ( PICK-18 / or
+                                                       :op1 ENTITY-6
+                                                       :op2 ENTITY-4
+                                                       :op3 ENTITY-2
+                                                       :op4 ENTITY-狩野派)
+                                                :ARG2 ( ENTITY-9 / 師))))
+                           :MOD ( mod-21 / past)))))
+
+# ::id 38_wikipedia_KYOTO_BDS_00001,38;NJ
+# ::snt その ため に 雪舟 作 と さ れる 作品 が 増え た と 言わ れる 。
+( EVENT-8 / 言わ
+      :ARG1 ( SITUATION-1 / と
+             :THAT ( EVENT-7 / 増え_た
+                    :ARG0 ( ENTITY-3 / 作品
+                           :ARG1-of ( EVENT-6 / さ
+                                  :ARG2 ( ENTITY-5 / 雪舟_作)))
+                    :に ( ENTITY-2 / ため)
+                    :MOD ( mod-9 / past))))
+
+# ::id 39_wikipedia_KYOTO_BDS_00001,39;NJ
+# ::snt 雪舟 の 人気 を 反映 し て 、 『 信仰祇園祭礼記 』 （ 人形浄瑠璃 ・ 歌舞伎 作品 。 宝暦 7 年 12 月 （ 1758 年 1 月 ） 初演 。 雪舟 の 孫娘 、 雪姫 が 活躍 する 「 金閣寺 」 の 場 が 有名 ） の よう な 作品 が 上演 さ れ た 。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-2 / 反映する.0_て
+             :ARG1 ( ENTITY-1 / 人気
+                    :の ( ENTITY-雪舟 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "雪舟"))))
+      :op2 ( EVENT-7 / 上演する.0_た
+             :ARG1 ( ENTITY-3 / 作品
+                    :ARG0-of ( EVENT-6 / な
+                           :ARG1 ( ENTITY-5 / よう
+                                  :の ( ENTITY-信仰祇園祭礼記 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "信仰祇園祭礼記")))))
+             :MOD ( mod-9 / past)))
+
+# ::id 40_wikipedia_KYOTO_BDS_00001,42;NJ
+# ::snt 日本 文化 の 一 つ を 生ん だ 雪舟 は 、 今や 日本 を 代表 する 歴史 人物 の 一 人 と なっ て いる 。
+( EVENT-9 / なっ_て_いる
+      :ARG0 ( ENTITY-雪舟 / ENTITY
+             :name ( n-13 / name
+                    :op1 "雪舟")
+             :ARG0-of ( EVENT-4 / 生ん_だ
+                    :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_一_つ)
+                           :の ( ENTITY-3 / 日本_文化))
+                    :MOD ( mod-11 / past)))
+      :と ( ENTITY-5 / ENTITY ( ENTITY-5 CD_一_人)
+             :の ( ENTITY-6 / 歴史_人物
+                    :ARG0-of ( EVENT-8 / 代表する.0
+                           :ARG1 ( ENTITY-日本 / ENTITY
+                                  :name ( n-14 / name
+                                         :op1 "日本")))))
+      :MOD ( mod-12 / 今や))

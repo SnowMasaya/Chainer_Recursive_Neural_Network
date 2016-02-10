@@ -1,0 +1,802 @@
+# ::id 1_newswire_MASC;20000410_nyt;AT1-1;NE
+# ::snt Iraq clears visit by Ohio official
+∃ NORP[3] EVENT[4] PERSON[2] ENTITY[1] (
+ ohio(NORP[3]) ∧
+  is_official_ATTRIBUTE(PERSON[2], NORP[3]) ∧ is_visit_by(ENTITY[1], PERSON[2]) ∧ clear.02(EVENT[4], ORG[Iraq], ENTITY[1]))
+
+# ::id 2_newswire_MASC;20000410_nyt;AT2-2;NE
+# ::snt By Scott Montgomery Washington
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LOC(EVENT[1]) = GPE[Washington] ∧ By(EVENT[1]) = PERSON[Scott_Montgomery])
+
+# ::id 3_newswire_MASC;20000410_nyt;AT3-1;NE
+# ::snt The Iraqi government has agreed to let U.S. Rep. Tony Hall visit the country next week to assess a humanitarian crisis that has festered since the Gulf War of 1990 , Hall 's office said Monday .
+∃ ATTRIB[13] PRP[11] ATTRIB[10] NORP[7] NORP[4] EVENT[16] EVENT[17] EVENT[18] EVENT[6] EVENT[5] EVENT[2] ENTITY[12] DATE[9] ORG[1] DATE[15] GPE[8] ORG[3] (
+ iraqi(NORP[4]) ∧
+  is_government_ATTRIBUTE(ORG[3], NORP[4]) ∧
+   country(GPE[8]) ∧
+    CD_1990(DATE[15]) ∧
+     is_of(GULF.WAR.EVENT[Gulf_War], DATE[15]) ∧
+      is_office_POS(ORG[1], PERSON[Hall]) ∧
+       u.s.rep.(NORP[7]) ∧
+        is_ATTRIBUTE(PERSON[Tony_Hall], NORP[7]) ∧
+         next(ATTRIB[10]) ∧
+          is_week_ATTRIBUTE(DATE[9], ATTRIB[10]) ∧
+           humanitarian(ATTRIB[13]) ∧
+            fester.01(EVENT[16], ENTITY[12]) ∧ since(EVENT[16]) = GULF.WAR.EVENT[Gulf_War] ∧ is_crisis_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+             is_FACT_THAT(PRP[11], assess.01(EVENT[17], GPE[8], ENTITY[12])) ∧
+              past(EVENT[2]) ∧
+               say.01(EVENT[2], ORG[1],
+                agree.01(EVENT[5], ORG[3],
+                 let.01(EVENT[6], ORG[3],
+                  visit.01(EVENT[18], PERSON[Tony_Hall], GPE[8]) ∧ PRP(EVENT[18]) = PRP[11] ∧
+                   is_contained_in(TMP(EVENT[18]), DATE[9])))) ∧ is_contained_in(TMP(EVENT[2]), DATE[Monday]))
+
+# ::id 4_newswire_MASC;20000410_nyt;AT3-2;NE
+# ::snt The Dayton Democrat , who has traveled to other crisis points including Sierra Leone and North Korea , will spend three days visiting hospitals and other facilities to seek understanding why aid has been ineffective in stemming malnourishment and other medical problems .
+∃ ATTRIB[4] EVENT[7] EVENT[8] GPE[6] LOC[3] PERSON[1] (
+ other(ATTRIB[4]) ∧
+  is_element_of(ENTITY[Sierra_Leone], GPE[6]) ∧ is_element_of(ENTITY[North_Korea], GPE[6]) ∧
+   include.01(EVENT[7], LOC[3], GPE[6]) ∧ is_crisis_points_ATTRIBUTE(LOC[3], ATTRIB[4]) ∧
+    travel.01(EVENT[8], PERSON[1]) ∧ to(EVENT[8]) = LOC[3] ∧ Dayton_Democrat(PERSON[1]) ∧
+     MD_will(∃ SITUATION[12] PRP[11] SITUATION[10] EVENT[13] EVENT[26] EVENT[31] EVENT[32] FAC[27] DATE[9] (
+           (CD_three(DATE[9]), days(DATE[9])) ∧
+            is_FACT_THAT(SITUATION[12],
+             understanding(EVENT[13], PERSON[1],
+              QUEST(∃ SITUATION[25] SITUATION[17] ATTRIB[16] EVENT[23] EVENT[24] GROUP[18] ENTITY[15] ? ENTITY[14] (
+                    aid(ENTITY[15]) ∧
+                     ∃ ENTITY[19] (malnourishment(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[18])) ∧
+                      ∃ ATTRIB[22] ATTRIB[21] GROUP[20] (
+                       other(ATTRIB[21]) ∧
+                        medical(ATTRIB[22]) ∧
+                         is_problems_ATTRIBUTE(GROUP[20], ATTRIB[22]) ∧ is_problems_ATTRIBUTE(GROUP[20], ATTRIB[21]) ∧
+                          is_subset_of_or_equal_to(GROUP[20], GROUP[18])) ∧
+                      is_FACT_THAT(SITUATION[17], stem.02(EVENT[23], _, GROUP[18])) ∧
+                       is_ineffective_in(ATTRIB[16], SITUATION[17]) ∧
+                        is_ADV(SITUATION[25], ENTITY[14]) ∧
+                         is_FACT_THAT(SITUATION[25], be.01(EVENT[24], ENTITY[15], ATTRIB[16])))))) ∧
+             is_FACT_THAT(PRP[11], seek.01(EVENT[26], PERSON[1], SITUATION[12])) ∧
+              ∃ GROUP[28] (hospitals(GROUP[28]) ∧ is_subset_of_or_equal_to(GROUP[28], FAC[27])) ∧
+               ∃ ATTRIB[30] GROUP[29] (other(ATTRIB[30]) ∧ is_facilities_ATTRIBUTE(GROUP[29], ATTRIB[30]) ∧ is_subset_of_or_equal_to(GROUP[29], FAC[27])) ∧
+               is_FACT_THAT(SITUATION[10], visit.01(EVENT[31], PERSON[1], FAC[27]) ∧ PRP(EVENT[31]) = PRP[11]) ∧
+                spend.02(EVENT[32], PERSON[1], SITUATION[10]) ∧ is_contained_in(TMP(EVENT[32]), DATE[9]))))
+
+# ::id 5_newswire_MASC;20000410_nyt;AT4-1;NE
+# ::snt Iraq has been under economic sanctions since the war ended , which some say have thwarted the country 's ability to recover from the devastation of the bombing campaign .
+∃ ATTRIB[2] ATTRIB[10] EVENT[14] EVENT[15] GROUP[1] BOMBING.EVENT[9] ENTITY[8] GPE[7] GULF.WAR.EVENT[13] (
+ country(GPE[7]) ∧
+  bombing(ATTRIB[10]) ∧
+   is_campaign_ATTRIBUTE(BOMBING.EVENT[9], ATTRIB[10]) ∧
+    is_devastation_of(ENTITY[8], BOMBING.EVENT[9]) ∧
+     war(GULF.WAR.EVENT[13]) ∧
+      economic(ATTRIB[2]) ∧
+       SOME PERSONS[4] ∃ EVENT[11] EVENT[12] EVENT[5] ENTITY[6] (
+        is_ability_POS(ENTITY[6], GPE[7]) ∧
+         is_ability_to(ENTITY[6], recover.01(EVENT[11]) ∧ from(EVENT[11]) = ENTITY[8]) ∧
+         say.01(EVENT[5], PERSONS[4], thwart.01(EVENT[12], GROUP[1], ENTITY[6]))) ∧ is_sanctions_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+        past(EVENT[14]) ∧
+         CRD_since(end.01(EVENT[14], GULF.WAR.EVENT[13]), be.01(EVENT[15], GPE[Iraq]) ∧ under(EVENT[15]) = GROUP[1]))
+
+# ::id 6_newswire_MASC;20000410_nyt;AT4-2;NE
+# ::snt The Persian Gulf War destroyed much of the country 's medical infrastructure , according to a report by the World Health Organization .
+∃ GPE[3] (
+ country(GPE[3]) ∧
+  MUCH ATTRIB[4] FAC[2] FAC[1] (
+   (medical(ATTRIB[4]) ∧ is_infrastructure_ATTRIBUTE(FAC[2], ATTRIB[4]) ∧ is_infrastructure_POS(FAC[2], GPE[3]) ∧
+    is_subset_of_or_equal_to(FAC[1], FAC[2])),
+   ∃ EVENT[7] EVENT[6] ENTITY[5] (
+    is_report_by(ENTITY[5], ORG[World_Health_Organization]) ∧
+     past(EVENT[7]) ∧
+      CONJ_and(destroy.01(EVENT[7], GULF.WAR.EVENT[Persian_Gulf_War], FAC[1]),
+       accord.er(EVENT[6], FAC[1]) ∧ to(EVENT[6]) = ENTITY[5]))))
+
+# ::id 7_newswire_MASC;20000410_nyt;AT4-3;NE
+# ::snt In 1996 the WHO found that much of the population existed in a state of " semi starvation . "
+∃ EVENT[2] DATE[1] PERSONS[4] (
+ population(PERSONS[4]) ∧
+  CD_1996(DATE[1]) ∧
+   past(EVENT[2]) ∧
+    find.01(EVENT[2], ORG[WHO],
+     MUCH PERSONS[3] (is_subset_of_or_equal_to(PERSONS[3], PERSONS[4]),
+      ∃ ATTRIB[7] EVENT[8] ENTITY[6] ENTITY[5] (
+       semi(ATTRIB[7]) ∧
+        is_starvation_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         is_state_of(ENTITY[5], ENTITY[6]) ∧
+          is_before(EVENT[8], EVENT[2]) ∧
+           exist.01(EVENT[8], PERSONS[3]) ∧ in(EVENT[8]) = ENTITY[5]))) ∧
+     In(EVENT[2]) = DATE[1])
+
+# ::id 8_newswire_MASC;20000410_nyt;AT5-1;NE
+# ::snt Hall will be only the second member of Congress to travel in Iraq since the war , according to Hall 's office .
+∃ ATTRIB[3] EVENT[6] GULF.EVENT[5] PERSON[2] (
+ second(ATTRIB[3]) ∧
+  war(GULF.EVENT[5]) ∧
+   travel.01(EVENT[6], PERSON[2]) ∧ since(EVENT[6]) = GULF.EVENT[5] ∧ in(EVENT[6]) = GPE[Iraq] ∧
+    is_member_of(PERSON[2], ORG[Congress]) ∧ is_member_ATTRIBUTE(PERSON[2], ATTRIB[3]) ∧
+    MD_will(ONLY PERSON[1] (is_of(PERSON[1], PERSON[2]),
+          ∃ EVENT[8] ORG[7] (
+           is_office_POS(ORG[7], PERSON[Hall]) ∧
+            be.01(EVENT[8], PERSON[Hall], PERSON[1]) ∧ according_to(EVENT[8]) = ORG[7]))))
+
+# ::id 9_newswire_MASC;20000410_nyt;AT5-2;NE
+# ::snt The last visitor was then - U.S. Rep. Bill Richardson of New Mexico , who went to help a pair of U.S. oilmen in diplomatic trouble .
+∃ ATTRIB[9] NORP[7] PRP[4] NORP[12] ATTRIB[2] EVENT[10] EVENT[11] EVENT[13] ENTITY[8] PERSONS[6] PERSONS[5] PERSON[1] (
+ last(ATTRIB[2]) ∧
+  is_visitor_ATTRIBUTE(PERSON[1], ATTRIB[2]) ∧
+   TMP_then(NORP[12]) ∧ u.s.rep.(NORP[12]) ∧
+    is_ATTRIBUTE(PERSON[Bill_Richardson], NORP[12]) ∧
+     is_element_of(PERSON[Bill_Richardson], GPE[New_Mexico]) ∧
+      u.s.(NORP[7]) ∧
+       is_oilmen_ATTRIBUTE(PERSONS[6], NORP[7]) ∧
+        diplomatic(ATTRIB[9]) ∧
+         is_trouble_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+          is_pair_in(PERSONS[5], ENTITY[8]) ∧ is_pair_of(PERSONS[5], PERSONS[6]) ∧
+           is_FACT_THAT(PRP[4], help.01(EVENT[10], PERSON[Bill_Richardson], PERSONS[5])) ∧
+            go.01(EVENT[11], PERSON[Bill_Richardson]) ∧ PRP(EVENT[11]) = PRP[4] ∧
+             past(EVENT[11]) ∧ past(EVENT[13]) ∧ be.01(EVENT[13], PERSON[1], PERSON[Bill_Richardson]))
+
+# ::id 10_newswire_MASC;20000410_nyt;AT6-1;NE
+# ::snt Hall flies to Amman , Jordan , on Friday , where he 'll spend the night before driving to Iraq .
+∃ SITUATION[6] PERSON[2] EVENT[7] TIME[4] (
+ night(TIME[4]) ∧
+  PERSON[2] = he{PERSON[Hall]} ∧
+   is_FACT_THAT(SITUATION[6],
+    MD'll(∃ EVENT[3] EVENT[5] CRD_before(drive.01(EVENT[3], PERSON[2]) ∧ to(EVENT[3]) = GPE[Iraq],
+          spend.02(EVENT[5], PERSON[2], TIME[4])))) ∧
+    is_LOC(SITUATION[6], GPE[Amman_Jordan]) ∧
+     fly.01(EVENT[7], PERSON[Hall]) ∧ on(EVENT[7]) = DATE[Friday] ∧ to(EVENT[7]) = GPE[Amman_Jordan])
+
+# ::id 11_newswire_MASC;20000410_nyt;AT6-2;NE
+# ::snt Flights are not permitted into Iraq .
+∃ GROUP[1] (Flights(GROUP[1]) ∧ ¬ ∃ EVENT[2] (permit.01(EVENT[2], _, GROUP[1]) ∧ into(EVENT[2]) = GPE[Iraq]))
+
+# ::id 12_newswire_MASC;20000410_nyt;AT6-3;NE
+# ::snt Hall is to return to Washington on April 22 .
+∃ EVENT[2] EVENT[1] be.01(EVENT[1], PERSON[Hall],
+ return.01(EVENT[2], PERSON[Hall]) ∧ on(EVENT[2]) = DATE[April_22] ∧ to(EVENT[2]) = GPE[Washington])
+
+# ::id 13_newswire_MASC;20000410_nyt;AT7-1;NE
+# ::snt Story Filed By Cox Newspapers
+∃ EVENT[2] ENTITY[1] (Story(ENTITY[1]) ∧ file.01(EVENT[2], ORG[Cox_Newspapers], ENTITY[1]))
+
+# ::id 14_newswire_MASC;A1.E1;AT1-1;NE
+# ::snt Inauguration of free zone in Dubai for e-commerce
+∃ ATTRIB[3] EVENT[5] ENTITY[4] FAC[2] INAUGURATION.EVENT[1] (
+ free(ATTRIB[3]) ∧
+  is_zone_in(FAC[2], GPE[Dubai]) ∧ is_zone_ATTRIBUTE(FAC[2], ATTRIB[3]) ∧
+   e-commerce(ENTITY[4]) ∧
+    is_Inauguration_for(INAUGURATION.EVENT[1], ENTITY[4]) ∧ is_Inauguration_of(INAUGURATION.EVENT[1], FAC[2]) ∧
+     xxx(EVENT[5]) ∧ LINK(EVENT[5]) = INAUGURATION.EVENT[1])
+
+# ::id 15_newswire_MASC;A1.E1;AT2-1;NE
+# ::snt Dubai 10-28 -LRB- FP -RRB- -
+∃ EVENT[2] DATE[1] (
+ CD_10-28(DATE[1]) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[FP_] ∧ is_contained_in(TMP(EVENT[2]), DATE[1]) ∧
+   LOC(EVENT[2]) = GPE[Dubai])
+
+# ::id 16_newswire_MASC;A1.E1;AT3-1;NE
+# ::snt Dubai 's Crown Prince Sheikh Mohamed Bin Rashid Al Maktoum inaugurated a free zone for e-commerce today , called Dubai Internet City .
+∃ ATTRIB[4] ATTRIB[2] EVENT[6] EVENT[8] ENTITY[3] DATE[7] FAC[1] (
+ is_POS(PERSON[Crown_Prince_Sheikh_Mohamed_Bin_Rashid_Al_Maktoum], GPE[Dubai]) ∧
+  free(ATTRIB[2]) ∧
+   e-commerce(ATTRIB[4]) ∧
+    is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     call.01(EVENT[6], FAC[1], FAC[Dubai_Internet_City]) ∧ is_zone_for(FAC[1], ENTITY[3]) ∧ is_zone_ATTRIBUTE(FAC[1], ATTRIB[2]) ∧
+      today(DATE[7]) ∧
+       past(EVENT[8]) ∧ inaugurate.02(EVENT[8], PERSON[Crown_Prince_Sheikh_Mohamed_Bin_Rashid_Al_Maktoum], FAC[1]) ∧ is_contained_in(TMP(EVENT[8]), DATE[7]))
+
+# ::id 17_newswire_MASC;A1.E1;AT3-2;NE
+# ::snt The preliminary stages of the project , the only one of its kind according to its designers , are estimated at $200 million .
+∃ REF2[8] REF1[6] ATTRIB[2] EVENT[11] MONEY[10] GROUP[7] ENTITY[5] ENTITY[4] ENTITY[9] GROUP[1] (
+ preliminary(ATTRIB[2]) ∧
+  project(ENTITY[9]) ∧
+   REF1[6] = its ∧
+    is_kind_POS(ENTITY[5], REF1[6]) ∧
+     REF2[8] = its ∧
+      is_designers_POS(GROUP[7], REF2[8]) ∧
+       (CD_one(ENTITY[4]), is_according_to(ENTITY[4], GROUP[7]) ∧ is_of(ENTITY[4], ENTITY[5])) ∧
+        ONLY ENTITY[3] (is_of(ENTITY[3], ENTITY[4]), is_-ENTITY-_namely(ENTITY[9], ENTITY[3])) ∧
+         is_stages_of(GROUP[1], ENTITY[9]) ∧ is_stages_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+          CD$200_million(MONEY[10]) ∧ estimate.01(EVENT[11], _, GROUP[1]) ∧ at(EVENT[11]) = MONEY[10])
+
+# ::id 18_newswire_MASC;A1.E1;AT4-1;NE
+# ::snt Sheikh Mohamed , who is also the Defense Minister of the United Arab Emirates , announced at the inauguration ceremony that " we want to make Dubai a new trading center . "
+∃ ATTRIB[11] PERSONS[7] FAC[10] EVENT[3] EVENT[12] EVENT[9] EVENT[8] EVENT[6] PERSON[2] INAUGURATION.EVENT[5] (
+ is_Defense_Minister_of(PERSON[2], GPE[United_Arab_Emirates]) ∧
+  inauguration_ceremony(INAUGURATION.EVENT[5]) ∧
+   ADV_also(EVENT[3]) ∧
+    past(EVENT[6]) ∧
+     be.01(EVENT[3], PERSON[Sheikh_Mohamed], PERSON[2]) ∧
+      PERSONS[7] = we ∧
+       new(ATTRIB[11]) ∧
+        is_trading_center_ATTRIBUTE(FAC[10], ATTRIB[11]) ∧
+         announce.01(EVENT[6], PERSON[Sheikh_Mohamed],
+          want.01(EVENT[8], PERSONS[7], make.02(EVENT[9], PERSONS[7], xxx(EVENT[12], GPE[Dubai], FAC[10])))) ∧
+          at(EVENT[6]) = INAUGURATION.EVENT[5])
+
+# ::id 19_newswire_MASC;A1.E1;AT4-2;NE
+# ::snt The minister , who has his own website , also said : " I want Dubai to be the best place in the world for state-of-the-art technology companies . "
+∃ SITUATION[16] PERSONAL[8] ATTRIB[14] ATTRIB[11] ATTRIB[5] PERSON[4] EVENT[15] EVENT[9] EVENT[7] EVENT[6] ENTITY[3] ORG[13] LOC[12] LOC[10] PERSON[1] (
+ PERSON[4] = his{PERSON[1]} ∧
+  own(ATTRIB[5]) ∧
+   is_website_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_website_POS(ENTITY[3], PERSON[4]) ∧
+    have.03(EVENT[6], PERSON[1], ENTITY[3]) ∧ minister(PERSON[1]) ∧
+     best(ATTRIB[11]) ∧
+      world(LOC[12]) ∧
+       state-of-the-art(ATTRIB[14]) ∧
+        is_technology_companies_ATTRIBUTE(ORG[13], ATTRIB[14]) ∧
+         is_place_for(LOC[10], ORG[13]) ∧ is_place_in(LOC[10], LOC[12]) ∧ is_place_ATTRIBUTE(LOC[10], ATTRIB[11]) ∧
+          PERSONAL[8] = i ∧
+           ADV_also(SITUATION[16]) ∧
+            past(EVENT[7]) ∧
+             is_FACT_THAT(SITUATION[16],
+              say.01(EVENT[7], PERSON[1], want.01(EVENT[9], PERSONAL[8], be.01(EVENT[15], GPE[Dubai], LOC[10])))))
+
+# ::id 20_newswire_MASC;A1.E1;AT4-3;NE
+# ::snt He said companies engaged in e-commerce would be able to set up offices , employ staff and own equipment in the open zone , including fully-owned foreign companies .
+∃ ATTRIB[18] ATTRIB[17] ATTRIB[7] PERSON[1] ATTRIB[9] EVENT[6] EVENT[11] EVENT[13] EVENT[15] EVENT[19] EVENT[2] ENTITY[5] FAC[10] PERSONS[12] ENTITY[14] ORG[16] ORG[3] FAC[8] (
+ open(ATTRIB[9]) ∧
+  is_zone_ATTRIBUTE(FAC[8], ATTRIB[9]) ∧
+   PERSON[1] = he ∧
+    e-commerce(ENTITY[5]) ∧
+     engage.01(EVENT[6], _, ORG[3]) ∧ in(EVENT[6]) = ENTITY[5] ∧ companies(ORG[3]) ∧
+      offices(FAC[10]) ∧
+       staff(PERSONS[12]) ∧
+        equipment(ENTITY[14]) ∧
+         is_able_in(ATTRIB[7], FAC[8]) ∧
+          is_able_to(ATTRIB[7],
+           CONJ_and(set.03(EVENT[11], _, FAC[10]), employ.01(EVENT[13], _, PERSONS[12]),
+            own.01(EVENT[15], _, ENTITY[14]))) ∧
+          own.01(ATTRIB[17]) ∧
+           foreign(ATTRIB[18]) ∧
+            is_companies_ATTRIBUTE(ORG[16], ATTRIB[18]) ∧ is_companies_ATTRIBUTE(ORG[16], ATTRIB[17]) ∧
+             past(EVENT[2]) ∧
+              say.01(EVENT[2], PERSON[1],
+               CONJ_and(MD_would(∃ EVENT[20] (be.01(EVENT[20], ORG[3]) ∧ ATTRIBUTE(EVENT[20]) = ATTRIB[7])),
+                include.01(EVENT[19], ORG[3], ORG[16]))))
+
+# ::id 21_newswire_MASC;A1.E1;AT5-1;NE
+# ::snt The e-commerce free zone is situated in north Dubai , near the industrial free zone in Jebel Ali , the top regional and tenth international leading area in container transit .
+∃ ATTRIB[2] ATTRIB[6] ATTRIB[5] ATTRIB[6] ATTRIB[4] ATTRIB[9] EVENT[10] ENTITY[7] ENTITY[7] FAC[3] FAC[8] FAC[1] (
+ free_zone_e-commerce(FAC[1]) ∧
+  industrial(ATTRIB[9]) ∧
+   is_free_zone_in(FAC[8], LOC[Jebel_Ali]) ∧ is_free_zone_ATTRIBUTE(FAC[8], ATTRIB[9]) ∧
+    top_regional(ATTRIB[4]) ∧
+     leading(ATTRIB[6]) ∧
+      container_transit(ENTITY[7]) ∧
+       tenth_international(ATTRIB[5]) ∧
+        leading(ATTRIB[6]) ∧
+         container_transit(ENTITY[7]) ∧
+          CONJ_and(is_area_in(FAC[3], ENTITY[7]) ∧ is_area_ATTRIBUTE(FAC[3], ATTRIB[6]),
+           is_area_in(FAC[3], ENTITY[7]) ∧ is_area_ATTRIBUTE(FAC[3], ATTRIB[6])) ∧
+           is_-FAC-_namely(FAC[8], FAC[3]) ∧
+            is_near_comp(ATTRIB[2], FAC[8]) ∧
+             is_LOC(LOC[north_Dubai], ATTRIB[2]) ∧
+              situate.01(EVENT[10], _, FAC[1]) ∧ in(EVENT[10]) = LOC[north_Dubai])
+
+# ::id 22_newswire_MASC;A1.E1;AT6-1;NE
+# ::snt The inauguration of Dubai Internet City coincides with the opening of an annual IT show in Dubai , the Gulf Information Technology Exhibition -LRB- Gitex -RRB- , the biggest in the Middle East .
+∃ ATTRIB[4] EVENT[6] ENTITY[3] SHOW.EVENT[5] OPENING.EVENT[2] INAUGURATION.EVENT[1] (
+ is_inauguration_of(INAUGURATION.EVENT[1], FAC[Dubai_Internet_City]) ∧
+  is_annual_IT_show_in(SHOW.EVENT[5], GPE[Dubai]) ∧
+   is_-SHOW.EVENT-_namely(SHOW.EVENT[5], ENTITY[Gulf_Information_Technology_Exhibition]) ∧
+    is_-SHOW.EVENT-_namely(SHOW.EVENT[5], ENTITY[Gitex]) ∧
+     biggest(ATTRIB[4]) ∧
+      is_in(ENTITY[3], GPE[Middle_East]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_-SHOW.EVENT-_namely(SHOW.EVENT[5], ENTITY[3]) ∧
+        is_opening_of(OPENING.EVENT[2], SHOW.EVENT[5]) ∧ coincide.01(EVENT[6], INAUGURATION.EVENT[1]) ∧ with(EVENT[6]) = OPENING.EVENT[2])
+
+# ::id 23_newswire_MASC;A1.E2;AT1-1;NE
+# ::snt Launching the Electronics Free Trade Zone in Dubai
+∃ EVENT[1] (is_in(FAC[Electronics_Free_Trade_Zone], GPE[Dubai]) ∧ launch.01(EVENT[1], _, FAC[Electronics_Free_Trade_Zone]))
+
+# ::id 24_newswire_MASC;A1.E2;AT2-1;NE
+# ::snt Dubai 01-82 -LRB- AFP -RRB- -
+∃ EVENT[2] DATE[1] (
+ CD_01-82(DATE[1]) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[AFP] ∧ is_contained_in(TMP(EVENT[2]), DATE[1]) ∧
+   LOC(EVENT[2]) = GPE[Dubai])
+
+# ::id 25_newswire_MASC;A1.E2;AT3-1;NE
+# ::snt Crown Prince of Dubai Al Sheikh Mohammed bin Rashid Al Maktoom crown prince of Dubai launched today , i.e. on Saturday , an electronics free e-trade zone which has been named " Dubai Internet City "
+∃ EVENT[6] EVENT[5] EVENT[7] PERSON[1] FAC[3] DATE[2] (
+ is_crown_prince_of(PERSON[1], GPE[Dubai]) ∧
+  is_-PERSON-_namely(PERSON[Al_Sheikh_Mohammed_bin_Rashid_Al_Maktoom], PERSON[1]) ∧
+   is_today_i.e.on(DATE[2], DATE[Saturday]) ∧
+    name.01(EVENT[5], _, FAC[3], xxx(EVENT[6], FAC[3], FAC[Dubai_Internet_City])) ∧ free_e-trade_electronics_zone(FAC[3]) ∧
+     past(EVENT[7]) ∧ launch.01(EVENT[7], PERSON[Al_Sheikh_Mohammed_bin_Rashid_Al_Maktoom], FAC[3]) ∧ is_contained_in(TMP(EVENT[7]), DATE[2]))
+
+# ::id 26_newswire_MASC;A1.E2;AT3-2;NE
+# ::snt The cost in the first stage of this unique project is estimated at 200 million dollars .
+∃ ATTRIB[5] ATTRIB[3] EVENT[7] MONEY[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ first(ATTRIB[3]) ∧
+  unique(ATTRIB[5]) ∧
+   is_project_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    is_stage_of(ENTITY[2], ENTITY[4]) ∧ is_stage_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     is_cost_in(ENTITY[1], ENTITY[2]) ∧
+      (CD_200_million(MONEY[6]), dollars(MONEY[6])) ∧
+       estimate.01(EVENT[7], _, ENTITY[1]) ∧ at(EVENT[7]) = MONEY[6])
+
+# ::id 27_newswire_MASC;A1.E2;AT4-1;NE
+# ::snt Sheikh Mohammed , who is also the UAE Defence Minister , said during the launching ceremony " we wish to make Dubai a center of modern economy " .
+∃ ATTRIB[12] PERSONS[7] ATTRIB[5] ENTITY[11] ENTITY[10] EVENT[2] EVENT[13] EVENT[9] EVENT[8] EVENT[6] CEREMONY.EVENT[4] (
+ launch.er(ATTRIB[5]) ∧
+  is_ceremony_ATTRIBUTE(CEREMONY.EVENT[4], ATTRIB[5]) ∧
+   ADV_also(EVENT[2]) ∧
+    past(EVENT[6]) ∧
+     be.01(EVENT[2], PERSON[Sheikh_Mohammed], TTL[UAE_Defence_Minister]) ∧
+      PERSONS[7] = we ∧
+       modern(ATTRIB[12]) ∧
+        is_economy_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+         is_center_of(ENTITY[10], ENTITY[11]) ∧
+          say.01(EVENT[6], PERSON[Sheikh_Mohammed],
+           wish.01(EVENT[8], PERSONS[7], make.02(EVENT[9], PERSONS[7], xxx(EVENT[13], GPE[Dubai], ENTITY[10])))) ∧
+           during(EVENT[6]) = CEREMONY.EVENT[4])
+
+# ::id 28_newswire_MASC;A1.E2;AT4-2;NE
+# ::snt The minister who has a personal website on the internet , further said that he wanted Dubai to become the best place in the world for the advanced -LRB- hitech -RRB- technological companies .
+∃ SITUATION[16] PERSON[8] ATTRIB[14] ATTRIB[11] ATTRIB[4] EVENT[15] EVENT[9] EVENT[7] EVENT[6] ENTITY[5] ENTITY[3] ORG[13] LOC[12] LOC[10] PERSON[1] (
+ personal(ATTRIB[4]) ∧
+  internet(ENTITY[5]) ∧
+   is_website_on(ENTITY[3], ENTITY[5]) ∧ is_website_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    have.03(EVENT[6], PERSON[1], ENTITY[3]) ∧ minister(PERSON[1]) ∧
+     best(ATTRIB[11]) ∧
+      world(LOC[12]) ∧
+       technological(ATTRIB[14]) ∧
+        is_advanced_ATTRIBUTE(ORG[13], ATTRIB[14]) ∧ is_hitech_ATTRIBUTE(ORG[13], ATTRIB[14]) ∧ is_companies_ATTRIBUTE(ORG[13], ATTRIB[14]) ∧
+         is_place_for(LOC[10], ORG[13]) ∧ is_place_in(LOC[10], LOC[12]) ∧ is_place_ATTRIBUTE(LOC[10], ATTRIB[11]) ∧
+          PERSON[8] = he{PERSON[1]} ∧
+           ADV_further(SITUATION[16]) ∧
+            is_before(EVENT[9], EVENT[7]) ∧
+             past(EVENT[7]) ∧
+              is_FACT_THAT(SITUATION[16],
+               say.01(EVENT[7], PERSON[1], want.01(EVENT[9], PERSON[8], become.01(EVENT[15], GPE[Dubai], LOC[10])))))
+
+# ::id 29_newswire_MASC;A1.E2;AT4-3;NE
+# ::snt He said that it would be possible for the companies working in the electronic trade sector to make Dubai their headquarters , and to establish offices here and provide employment and own machinery in the zone opened to companies fully owned by the foreigners .
+∃ ORG[18] SITUATION[3] PERSON[1] EVENT[19] EVENT[16] EVENT[21] EVENT[24] EVENT[26] EVENT[2] ENTITY[17] FAC[20] ENTITY[23] ENTITY[25] EVENT[7] EVENT[13] EVENT[15] ENTITY[6] PERSONS[12] ORG[10] FAC[8] ORG[4] (
+ electronic_trade_sector(ENTITY[6]) ∧
+  work.01(EVENT[7], ORG[4]) ∧ in(EVENT[7]) = ENTITY[6] ∧ companies(ORG[4]) ∧
+   foreigners(PERSONS[12]) ∧
+    own.01(EVENT[13], PERSONS[12], ORG[10]) ∧ companies(ORG[10]) ∧
+     open.01(EVENT[15], _, FAC[8]) ∧ to(EVENT[15]) = ORG[10] ∧ zone(FAC[8]) ∧
+      ADV_fully(EVENT[13]) ∧
+       PERSON[1] = he ∧
+        ORG[18] = their{ORG[4], ORG[10]} ∧
+         is_headquarters_POS(ENTITY[17], ORG[18]) ∧
+          offices(FAC[20]) ∧
+           employment(ENTITY[23]) ∧
+            machinery(ENTITY[25]) ∧
+             is_FACT_THAT(SITUATION[3],
+              CONJ_and(make.02(EVENT[16], ORG[4], xxx(EVENT[19], GPE[Dubai], ENTITY[17])) ∧
+                    in(EVENT[16]) = FAC[8],
+               CONJ_and(establish.01(EVENT[21], ORG[4], FAC[20]) ∧ in(EVENT[21]) = FAC[8],
+                provide.01(EVENT[24], ORG[4], ENTITY[23]) ∧ in(EVENT[24]) = FAC[8],
+                own.01(EVENT[26], ORG[4], ENTITY[25]) ∧ in(EVENT[26]) = FAC[8]))) ∧
+              LOC_here(EVENT[21]) ∧
+               past(EVENT[2]) ∧
+                say.01(EVENT[2], PERSON[1],
+                 MD_would(∃ ATTRIB[27] EVENT[28] (possible(ATTRIB[27]) ∧ be.01(EVENT[28], SITUATION[3], ATTRIB[27])))))
+
+# ::id 30_newswire_MASC;A1.E2;AT5-1;NE
+# ::snt The electronic trade free trade zone is situated in the north of Dubai , close to the free industrial zone in Jabal Ali Mountain , an area which is considered to be the first in the country , and tenth in the world for transit movement .
+∃ ATTRIB[13] ATTRIB[10] ATTRIB[19] ATTRIB[18] ATTRIB[3] EVENT[20] EVENT[16] EVENT[6] GPE[11] ENTITY[9] LOC[14] ENTITY[12] GROUP[8] ENTITY[15] ENTITY[7] LOC[4] FAC[17] LOC[2] FAC[1] (
+ electronic_trade_free_trade_zone(FAC[1]) ∧
+  free(ATTRIB[18]) ∧
+   industrial(ATTRIB[19]) ∧
+    is_zone_in(FAC[17], LOC[Jabal_Ali_Mountain]) ∧ is_zone_ATTRIBUTE(FAC[17], ATTRIB[19]) ∧ is_zone_ATTRIBUTE(FAC[17], ATTRIB[18]) ∧
+     first(ATTRIB[10]) ∧
+      country(GPE[11]) ∧
+       is_in(ENTITY[9], GPE[11]) ∧ is_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+        tenth(ATTRIB[13]) ∧
+         world(LOC[14]) ∧
+          is_in(ENTITY[12], LOC[14]) ∧ is_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+           is_element_of(ENTITY[9], GROUP[8]) ∧ is_element_of(ENTITY[12], GROUP[8]) ∧
+            is_equals(ENTITY[7], GROUP[8]) ∧
+             transit_movement(ENTITY[15]) ∧
+              consider.01(EVENT[6], _, LOC[4],
+               be.01(EVENT[16], LOC[4], ENTITY[7]) ∧ for(EVENT[16]) = ENTITY[15]) ∧
+               area(LOC[4]) ∧
+               is_-FAC-_namely(FAC[17], LOC[4]) ∧
+                is_close_to(ATTRIB[3], FAC[17]) ∧
+                 is_north_LOC(LOC[2], ATTRIB[3]) ∧ is_north_of(LOC[2], GPE[Dubai]) ∧
+                  situate.01(EVENT[20], _, FAC[1]) ∧ in(EVENT[20]) = LOC[2])
+
+# ::id 31_newswire_MASC;A1.E2;AT6-1;NE
+# ::snt Launching ' Dubai Internet city ' coincided with the opening of the annual information fair in Dubai which is considered to be the biggest in the Middle East - Gulf Information Technology Getix . '
+∃ SITUATION[1] ATTRIB[10] ATTRIB[6] EVENT[3] EVENT[12] FAC[2] EVENT[11] EVENT[8] ENTITY[9] FAIR.EVENT[5] OPENING.EVENT[4] (
+ annual(ATTRIB[6]) ∧
+  biggest(ATTRIB[10]) ∧
+   is_in(ENTITY[9], GPE[Middle_East]) ∧ is_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+    consider.01(EVENT[8], _, FAIR.EVENT[5], be.01(EVENT[11], FAIR.EVENT[5], ENTITY[9])) ∧
+     is_information_fair_in(FAIR.EVENT[5], GPE[Dubai]) ∧ is_information_fair_ATTRIBUTE(FAIR.EVENT[5], ATTRIB[6]) ∧
+     is_-FAIR.EVENT-_namely(FAIR.EVENT[5], ENTITY[Gulf_Information_Technology_Getix]) ∧
+      is_opening_of(OPENING.EVENT[4], FAIR.EVENT[5]) ∧
+       Dubai_Internet_city(FAC[2]) ∧
+        is_FACT_THAT(SITUATION[1], launch.01(EVENT[3], _, FAC[2])) ∧
+         past(EVENT[12]) ∧ coincide.01(EVENT[12], SITUATION[1]) ∧ with(EVENT[12]) = OPENING.EVENT[4])
+
+# ::id 32_newswire_MASC;wsj_1640;AT1-1;NE
+# ::snt Electronic theft by foreign and industrial spies and disgruntled employees is costing U.S. companies billions and eroding their international competitive advantage .
+∃ ATTRIB[18] ATTRIB[17] ORG[16] NORP[12] ATTRIB[2] EVENT[14] EVENT[19] PERSONS[3] MONEY[13] ORG[11] ENTITY[15] ENTITY[1] (
+ electronic(ATTRIB[2]) ∧
+  ∃ GROUP[4] (
+   ∃ ATTRIB[6] GROUP[5] (foreign(ATTRIB[6]) ∧ is_spies_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ ATTRIB[8] GROUP[7] (industrial(ATTRIB[8]) ∧ is_spies_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4])) ∧
+    is_subset_of_or_equal_to(GROUP[4], PERSONS[3])) ∧
+   ∃ ATTRIB[10] GROUP[9] (disgruntled(ATTRIB[10]) ∧ is_employees_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧ is_subset_of_or_equal_to(GROUP[9], PERSONS[3])) ∧
+   is_theft_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_theft_by(ENTITY[1], PERSONS[3]) ∧
+    u.s.(NORP[12]) ∧
+     is_companies_ATTRIBUTE(ORG[11], NORP[12]) ∧
+      billions(MONEY[13]) ∧
+       ORG[16] = their{ORG[11]} ∧
+        international(ATTRIB[17]) ∧
+         competitive(ATTRIB[18]) ∧
+          is_advantage_ATTRIBUTE(ENTITY[15], ATTRIB[18]) ∧ is_advantage_ATTRIBUTE(ENTITY[15], ATTRIB[17]) ∧ is_advantage_POS(ENTITY[15], ORG[16]) ∧
+           CONJ_and(cost.01(EVENT[14], ENTITY[1], MONEY[13], ORG[11]), erode.01(EVENT[19], ENTITY[1], ENTITY[15])))
+
+# ::id 33_newswire_MASC;wsj_1640;AT1-2;NE
+# ::snt That was the message delivered by government and private security experts at an all-day conference on corporate electronic espionage .
+∃ ATTRIB[12] ATTRIB[11] ATTRIB[7] EVENT[14] TIME[9] EVENT[13] ORG[5] PERSONS[6] ENTITY[10] CONFERENCE.EVENT[8] GROUP[4] ENTITY[2] ENTITY[1] (
+ government_security_experts(ORG[5]) ∧
+  private(ATTRIB[7]) ∧
+   is_security_experts_ATTRIBUTE(PERSONS[6], ATTRIB[7]) ∧
+    is_subset_of_or_equal_to(ORG[5], GROUP[4]) ∧ is_subset_of_or_equal_to(PERSONS[6], GROUP[4]) ∧
+     corporate(ATTRIB[11]) ∧
+      electronic(ATTRIB[12]) ∧
+       is_espionage_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_espionage_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+        is_conference_on(CONFERENCE.EVENT[8], ENTITY[10]) ∧ is_conference_MSR(CONFERENCE.EVENT[8], TIME[9]) ∧
+         deliver.01(EVENT[13], GROUP[4], ENTITY[2]) ∧ at(EVENT[13]) = CONFERENCE.EVENT[8] ∧ message(ENTITY[2]) ∧
+          past(EVENT[14]) ∧ be.01(EVENT[14], ENTITY[1], ENTITY[2]))
+
+# ::id 34_newswire_MASC;wsj_1640;AT2-1;NE
+# ::snt " Hostile and even friendly nations routinely steal information from U.S. companies and share it with their own companies , " said Noel D. Matchett , a former staffer at the federal National Security Agency and now president of Information Security Inc. , Silver Spring , Md .
+∃ SITUATION[21] ATTRIB[19] GPE[18] REF1[16] NORP[14] EVENT[15] EVENT[20] EVENT[5] PERSON[1] ORG[13] ENTITY[12] GROUP[17] GPE[6] (
+ ∃ ATTRIB[3] ENTITY[2] (
+  former(ATTRIB[3]) ∧
+   is_staffer_at(ENTITY[2], ORG[federal_National_Security_Agency]) ∧ is_staffer_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_of(ENTITY[2], PERSON[1])) ∧
+  ∃ TTL[4] (ADV_now(TTL[4]) ∧ is_president_of(TTL[4], ORG[Information_Security_Inc.Silver_Spring_Md]) ∧ is_of(TTL[4], PERSON[1])) ∧
+  is_-PERSON-_namely(PERSON[Noel_D.Matchett], PERSON[1]) ∧
+   ∃ ATTRIB[8] GROUP[7] (hostile(ATTRIB[8]) ∧ is_nations_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GPE[6])) ∧
+    ∃ ATTRIB[11] GROUP[10] (
+     friendly(ATTRIB[11]) ∧
+      is_nations_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ EVEN GROUP[9] (is_subset_of_or_equal_to(GROUP[9], GROUP[10]), is_subset_of_or_equal_to(GROUP[9], GPE[6]))) ∧
+    information(ENTITY[12]) ∧
+     u.s.(NORP[14]) ∧
+      is_companies_ATTRIBUTE(ORG[13], NORP[14]) ∧
+       REF1[16] = it ∧
+        GPE[18] = their{GPE[6]} ∧
+         own(ATTRIB[19]) ∧
+          is_companies_ATTRIBUTE(GROUP[17], ATTRIB[19]) ∧ is_companies_POS(GROUP[17], GPE[18]) ∧
+           ADV_routinely(SITUATION[21]) ∧
+            past(EVENT[5]) ∧
+             say.01(EVENT[5], PERSON[Noel_D.Matchett],
+              is_FACT_THAT(SITUATION[21],
+               CONJ_and(steal.01(EVENT[15], GPE[6], ENTITY[12]) ∧ from(EVENT[15]) = ORG[13],
+                share.01(EVENT[20], GPE[6], REF1[16]) ∧ with(EVENT[20]) = GROUP[17]))))
+
+# ::id 35_newswire_MASC;wsj_1640;AT2-2;NE
+# ::snt It " may well be " that theft of business data is " as serious a strategic threat to national security " as it is a threat to the survival of victimized U.S. firms , said Michelle Van Cleave , the White House 's assistant director for National Security Affairs .
+∃ ATTRIB[19] ATTRIB[17] REF1[10] ATTRIB[7] SITUATION[3] NORP[15] ATTRIB[14] EVENT[16] EVENT[20] EVENT[2] TTL[1] GROUP[5] ENTITY[11] DEGREE[8] ENTITY[18] ENTITY[6] ENTITY[4] GROUP[13] ENTITY[12] (
+ victimize.01(ATTRIB[14]) ∧
+  u.s.(NORP[15]) ∧
+   is_firms_ATTRIBUTE(GROUP[13], NORP[15]) ∧ is_firms_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+    is_survival_of(ENTITY[12], GROUP[13]) ∧
+     is_assistant_director_for(TTL[1], ENTITY[National_Security_Affairs]) ∧ is_assistant_director_POS(TTL[1], ORG[White_House]) ∧
+      is_-PERSON-_namely(PERSON[Michelle_Van_Cleave], TTL[1]) ∧
+       business_data(GROUP[5]) ∧
+        is_theft_of(ENTITY[4], GROUP[5]) ∧
+         REF1[10] = it ∧
+          is_threat_to(ENTITY[11], ENTITY[12]) ∧
+           be.01(EVENT[16], REF1[10], ENTITY[11]) ∧ MSR(EVENT[16]) = DEGREE[8] ∧
+            is_as_serious_as(ATTRIB[7], DEGREE[8]) ∧
+             strategic(ATTRIB[17]) ∧
+              national(ATTRIB[19]) ∧
+               is_security_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧
+                is_threat_to(ENTITY[6], ENTITY[18]) ∧ is_threat_ATTRIBUTE(ENTITY[6], ATTRIB[17]) ∧
+                 is_threat_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+                 is_FACT_THAT(SITUATION[3], be.01(EVENT[20], ENTITY[4], ENTITY[6])) ∧
+                  past(EVENT[2]) ∧
+                   say.01(EVENT[2], PERSON[Michelle_Van_Cleave],
+                    MD_may(∃ EVENT[21] (ADV_well(EVENT[21]) ∧ be.01(EVENT[21], SITUATION[3])))))
+
+# ::id 36_newswire_MASC;wsj_1640;AT3-1;NE
+# ::snt The conference was jointly sponsored by the New York Institute of Technology School of Management and the Armed Forces Communications and Electronics Association , a joint industry-government trade group .
+∃ ATTRIB[4] EVENT[5] ORG[2] ORG[3] CONFERENCE.EVENT[1] (
+ conference(CONFERENCE.EVENT[1]) ∧
+  joint(ATTRIB[4]) ∧
+   is_industry-government_trade_group_ATTRIBUTE(ORG[3], ATTRIB[4]) ∧
+    is_-ENTITY-_namely(ENTITY[Armed_Forces_Communications_and_Electronics_Association], ORG[3]) ∧
+     is_element_of(ENTITY[New_York_Institute_of_Technology_School_of_Management], ORG[2]) ∧ is_element_of(ENTITY[Armed_Forces_Communications_and_Electronics_Association], ORG[2]) ∧
+      ADV_jointly(EVENT[5]) ∧ past(EVENT[5]) ∧ sponsor.01(EVENT[5], ORG[2], CONFERENCE.EVENT[1]))
+
+# ::id 37_newswire_MASC;wsj_1640;AT4-1;NE
+# ::snt Any secret can be pirated , the experts said , if it is transmitted over the air .
+∃ EVENT[2] ENTITY[5] PERSONS[1] (
+ experts(PERSONS[1]) ∧
+  air(ENTITY[5]) ∧
+   past(EVENT[2]) ∧
+    say.01(EVENT[2], PERSONS[1],
+     ANY ENTITY[3] (secret(ENTITY[3]),
+      MD_can(∀ REF1[4] EVENT[6] CND_if(REF1[4] = it ∧ transmit.01(EVENT[6], _, REF1[4]) ∧ over(EVENT[6]) = ENTITY[5], ∃ EVENT[7] pirate.01(EVENT[7], _, ENTITY[3]))))))
+
+# ::id 38_newswire_MASC;wsj_1640;AT4-2;NE
+# ::snt Even rank amateurs can do it if they spend a few thousand dollars for a commercially available microwave receiver with amplifier and a VCR recorder .
+∃ ATTRIB[3] PERSONS[2] (
+ rank(ATTRIB[3]) ∧
+  is_amateurs_ATTRIBUTE(PERSONS[2], ATTRIB[3]) ∧
+   EVEN PERSONS[1] (is_subset_of_or_equal_to(PERSONS[1], PERSONS[2]),
+    ∀ PERSONS[4] EVENT[11] GROUP[6] MONEY[5] CND_if(
+     (PERSONS[4] = they{PERSONS[1]} ∧ (CD_a_few_thousand(MONEY[5]), dollars(MONEY[5])) ∧
+      ∃ ATTRIB[8] ENTITY[9] ENTITY[7] (
+       commercially_available(ATTRIB[8]) ∧
+        amplifier(ENTITY[9]) ∧
+         is_microwave_receiver_with(ENTITY[7], ENTITY[9]) ∧ is_microwave_receiver_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+       ∃ ENTITY[10] (VCR_recorder(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[6])) ∧
+      spend.01(EVENT[11], PERSONS[4], MONEY[5]) ∧ for(EVENT[11]) = GROUP[6]),
+     MD_can(∃ REF1[12] EVENT[13] (REF1[12] = it ∧ do.02(EVENT[13], PERSONS[1], REF1[12]))))))
+
+# ::id 39_newswire_MASC;wsj_1640;AT4-3;NE
+# ::snt They need only position themselves near a company 's satellite dish and wait .
+∃ SITUATION[9] ATTRIB[4] PERSONS[3] PERSONS[1] EVENT[7] EVENT[8] EVENT[2] ORG[6] ENTITY[5] (
+ PERSONS[1] = they ∧
+  PERSONS[3] = themselves{PERSONS[1]} ∧
+   company(ORG[6]) ∧
+    is_satellite_dish_POS(ENTITY[5], ORG[6]) ∧
+     is_near_comp(ATTRIB[4], ENTITY[5]) ∧
+      only(SITUATION[9]) ∧
+       is_FACT_THAT(SITUATION[9],
+        need.01(EVENT[2], PERSONS[1],
+         CONJ_and(position.01(EVENT[7], PERSONS[1], PERSONS[3]) ∧ LOC(EVENT[7]) = ATTRIB[4],
+          wait.01(EVENT[8], PERSONS[1])))))
+
+# ::id 40_newswire_MASC;wsj_1640;AT5-1;NE
+# ::snt You can have a dozen competitors stealing your secrets at the same time , " Mr. Matchett said , adding : " It 's a pretty good bet they wo n't get caught . "
+∃ ATTRIB[7] ORG[3] SITUATION[2] GENERIC[10] ATTRIB[16] EVENT[9] EVENT[8] EVENT[1] ENTITY[6] ENTITY[15] ORG[12] (
+ (CD_a_dozen(ORG[12]), competitors(ORG[12])) ∧
+  same(ATTRIB[16]) ∧
+   is_time_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+    GENERIC[10] = you ∧
+     ORG[3] = they{ORG[12]} ∧
+      is_FACT_THAT(SITUATION[2], MD_wo(¬ ∃ ATTRIB[4] EVENT[5] (catch.03(ATTRIB[4]) ∧ get.03(EVENT[5], ORG[3], ATTRIB[4])))) ∧
+       pretty_good(ATTRIB[7]) ∧
+        is_bet_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         past(EVENT[9]) ∧
+          CONJ_and(say.01(EVENT[9], PERSON[Mr.Matchett],
+                MD_can(∃ GENERIC[14] SITUATION[11] EVENT[17] EVENT[18] GROUP[13] (
+                      GENERIC[14] = your{GENERIC[10]} ∧
+                       is_secrets_POS(GROUP[13], GENERIC[14]) ∧
+                        is_FACT_THAT(SITUATION[11],
+                         steal.01(EVENT[17], ORG[12], GROUP[13]) ∧ at(EVENT[17]) = ENTITY[15]) ∧
+                         have.06(EVENT[18], GENERIC[10], SITUATION[11])))),
+           add.01(EVENT[1], PERSON[Mr.Matchett], be.01(EVENT[8], SITUATION[2], ENTITY[6]))))
+
+# ::id 41_newswire_MASC;wsj_1640;AT5-2;NE
+# ::snt The only way to catch an electronic thief , he said , is to set him up with erroneous information .
+∃ PERSON[1] ATTRIB[6] EVENT[2] EVENT[7] THIEF[5] ENTITY[4] (
+ electronic(ATTRIB[6]) ∧
+  is_thief_ATTRIBUTE(THIEF[5], ATTRIB[6]) ∧
+   is_way_to(ENTITY[4], catch.03(EVENT[7], _, THIEF[5])) ∧
+    PERSON[1] = he ∧
+     past(EVENT[2]) ∧
+      say.01(EVENT[2], PERSON[1],
+       ONLY ENTITY[3] (is_of(ENTITY[3], ENTITY[4]),
+        ∃ ATTRIB[11] THIEF[9] EVENT[12] EVENT[8] ENTITY[10] (
+         THIEF[9] = him{THIEF[5]} ∧
+          erroneous(ATTRIB[11]) ∧
+           is_information_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+            be.01(EVENT[8], ENTITY[3],
+             set.03(EVENT[12], ENTITY[3], THIEF[9]) ∧ with(EVENT[12]) = ENTITY[10])))))
+
+# ::id 42_newswire_MASC;wsj_1640;AT6-1;NE
+# ::snt Even though electronic espionage may cost U.S. firms billions of dollars a year , most are n't yet taking precautions , the experts said .
+∃ ATTRIB[4] EVENT[2] ENTITY[3] PERSONS[1] (
+ experts(PERSONS[1]) ∧
+  electronic(ATTRIB[4]) ∧
+   is_espionage_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    past(EVENT[2]) ∧
+     say.01(EVENT[2], PERSONS[1],
+      CRD_Even_though(MD_may(∃ ATTRIB[6] EVENT[10] TIME[9] GROUP[8] MONEY[7] ORG[5] (
+                 u.s.(ATTRIB[6]) ∧
+                  is_firms_ATTRIBUTE(ORG[5], ATTRIB[6]) ∧
+                   dollars(GROUP[8]) ∧
+                    year(TIME[9]) ∧
+                     is_billions_MSR(MONEY[7], TIME[9]) ∧ is_billions_of(MONEY[7], GROUP[8]) ∧
+                      cost.01(EVENT[10], ENTITY[3], MONEY[7], ORG[5]))),
+       MOST ORG[11] ¬ ∃ EVENT[13] GROUP[12] (precautions(GROUP[12]) ∧ TMP_yet(EVENT[13]) ∧ be.03(EVENT[13], ORG[11], GROUP[12])))))
+
+# ::id 43_newswire_MASC;wsj_1640;AT6-2;NE
+# ::snt By contrast , European firms will spend $150 million this year on electronic security , and are expected to spend $1 billion by 1992 .
+∃ NORP[3] EVENT[12] EVENT[9] DATE[11] MONEY[10] ORG[2] ENTITY[1] DATE[5] (
+ year(DATE[5]) ∧
+  contrast(ENTITY[1]) ∧
+   european(NORP[3]) ∧
+    is_firms_ATTRIBUTE(ORG[2], NORP[3]) ∧
+     CD$1_billion(MONEY[10]) ∧
+      CD_1992(DATE[11]) ∧
+       CONJ_and(MD_will(∃ ATTRIB[7] EVENT[8] ENTITY[6] MONEY[4] (
+                  CD$150_million(MONEY[4]) ∧
+                   electronic(ATTRIB[7]) ∧
+                    is_security_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+                     spend.01(EVENT[8], ORG[2], MONEY[4]) ∧ on(EVENT[8]) = ENTITY[6] ∧
+                      is_contained_in(TMP(EVENT[8]), DATE[5]) ∧ By(EVENT[8]) = ENTITY[1])),
+        expect.01(EVENT[9], _, ORG[2],
+         spend.01(EVENT[12], ORG[2], MONEY[10]) ∧ by(EVENT[12]) = DATE[11]) ∧
+         By(EVENT[9]) = ENTITY[1]))
+
+# ::id 44_newswire_MASC;wsj_1640;AT6-3;NE
+# ::snt Already many foreign firms , especially banks , have their own cryptographers , conference speakers reported .
+∃ SITUATION[10] EVENT[2] PERSONS[1] (
+ conference_speakers(PERSONS[1]) ∧
+  TMP_already(SITUATION[10]) ∧
+   past(EVENT[2]) ∧
+    report.01(EVENT[2], PERSONS[1],
+     is_FACT_THAT(SITUATION[10],
+      MANY ATTRIB[4] ORG[5] ORG[3] (
+       (foreign(ATTRIB[4]) ∧ banks(ORG[5]) ∧
+        is_ADV_especially_of(ORG[3], ORG[5]) ∧ is_firms_ATTRIBUTE(ORG[3], ATTRIB[4])),
+       ∃ ATTRIB[8] ORG[7] EVENT[9] PERSONS[6] (
+        ORG[7] = their{ORG[3], ORG[5]} ∧
+         own(ATTRIB[8]) ∧
+          is_cryptographers_ATTRIBUTE(PERSONS[6], ATTRIB[8]) ∧ is_cryptographers_POS(PERSONS[6], ORG[7]) ∧
+           have.03(EVENT[9], ORG[3], PERSONS[6]))))))
+
+# ::id 45_newswire_MASC;wsj_1640;AT7-1;NE
+# ::snt Still , encrypting corporate communications is only a partial remedy .
+∃ ATTRIB[7] ATTRIB[3] SITUATION[1] EVENT[4] GROUP[2] ENTITY[6] (
+ corporate(ATTRIB[3]) ∧
+  is_communications_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_FACT_THAT(SITUATION[1], encrypt.01(EVENT[4], _, GROUP[2])) ∧
+    partial(ATTRIB[7]) ∧
+     is_remedy_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      ADV_still(EVENT[4]) ∧ ONLY ENTITY[5] (is_of(ENTITY[5], ENTITY[6]), ∃ EVENT[8] be.01(EVENT[8], SITUATION[1], ENTITY[5])))
+
+# ::id 46_newswire_MASC;wsj_1640;AT7-2;NE
+# ::snt One expert , whose job is so politically sensitive that he spoke on condition that he would n't be named or quoted , said the expected influx of East European refugees over the next few years will greatly increase the chances of computer-maintenance workers , for example , doubling as foreign spies .
+∃ PERSON[7] PERSON[5] ATTRIB[4] ATTRIB[23] SITUATION[19] NORP[16] ATTRIB[14] EVENT[10] EVENT[11] EVENT[12] ENTITY[6] ENTITY[2] PERSON[1] EVENT[24] GROUP[15] PERSONS[22] ENTITY[21] PERSONS[20] GROUP[18] ENTITY[13] (
+ expect.01(ATTRIB[14]) ∧
+  east_european(NORP[16]) ∧
+   is_refugees_ATTRIBUTE(GROUP[15], NORP[16]) ∧
+    NEXT_FEW DATE[17] (years(DATE[17]),
+     is_influx_of(ENTITY[13], GROUP[15]) ∧ is_influx_over(ENTITY[13], DATE[17]) ∧ is_influx_ATTRIBUTE(ENTITY[13], ATTRIB[14])) ∧
+     computer-maintenance_workers(PERSONS[20]) ∧
+      example(ENTITY[21]) ∧
+       foreign(ATTRIB[23]) ∧
+        is_spies_ATTRIBUTE(PERSONS[22], ATTRIB[23]) ∧
+         is_FACT_THAT(SITUATION[19],
+          double.02(EVENT[24], PERSONS[20]) ∧ as(EVENT[24]) = PERSONS[22] ∧
+           for(EVENT[24]) = ENTITY[21]) ∧
+          is_chances_of(GROUP[18], SITUATION[19]) ∧
+           is_job_POS(ENTITY[2], PERSON[1]) ∧
+            PERSON[5] = he{PERSON[1]} ∧
+             PERSON[7] = he{PERSON[5], PERSON[1]} ∧
+              is_condition_THAT(ENTITY[6],
+               MD_would(¬ ∃ EVENT[8] EVENT[9] CONJ_or(name.01(EVENT[8], _, PERSON[7]),
+                          be.03(EVENT[9], _, PERSON[7])))) ∧
+               is_so_politically_sensitive_THAT(ATTRIB[4], speak.01(EVENT[10], PERSON[5]) ∧ on(EVENT[10]) = ENTITY[6]) ∧
+                (CD_one(PERSON[1]), be.01(EVENT[11], ENTITY[2], ATTRIB[4]) ∧ expert(PERSON[1])) ∧
+                 past(EVENT[10]) ∧
+                  past(EVENT[12]) ∧
+                   say.01(EVENT[12], PERSON[1],
+                    MD_will(∃ EVENT[25] (ADV_greatly(EVENT[25]) ∧ increase.01(EVENT[25], ENTITY[13], GROUP[18])))))
+
+# ::id 47_newswire_MASC;wsj_1640;AT7-3;NE
+# ::snt Moreover , he said , technology now exists for stealing corporate secrets after they 've been " erased " from a computer 's memory .
+∃ SITUATION[14] SECRETS[7] ATTRIB[6] SITUATION[4] PERSON[1] EVENT[10] EVENT[11] EVENT[12] EVENT[2] ENTITY[9] ENTITY[8] SECRETS[5] ENTITY[3] (
+ PERSON[1] = he ∧
+  corporate(ATTRIB[6]) ∧
+   is_secrets_ATTRIBUTE(SECRETS[5], ATTRIB[6]) ∧
+    SECRETS[7] = they{SECRETS[5]} ∧
+     computer(ENTITY[9]) ∧
+      is_memory_POS(ENTITY[8], ENTITY[9]) ∧
+       is_FACT_THAT(SITUATION[4],
+        CRD_after(be.03(EVENT[10], _, SECRETS[7]) ∧ from(EVENT[10]) = ENTITY[8],
+         steal.01(EVENT[11], _, SECRETS[5]))) ∧
+        is_technology_for(ENTITY[3], SITUATION[4]) ∧
+         ADV_moreover(SITUATION[14]) ∧
+          TMP_now(EVENT[12]) ∧
+           past(EVENT[2]) ∧ say.01(EVENT[2], PERSON[1], is_FACT_THAT(SITUATION[14], exist.01(EVENT[12], ENTITY[3]))))
+
+# ::id 48_newswire_MASC;wsj_1640;AT7-4;NE
+# ::snt He said that Oliver North of Iran-Contra notoriety thought he had erased his computer but that the information was later retrieved for congressional committees to read .
+∃ SITUATION[15] ATTRIB[12] SITUATION[10] PERSON[7] PERSON[5] PERSON[1] EVENT[8] EVENT[4] EVENT[13] EVENT[14] EVENT[2] ENTITY[3] ENTITY[6] ORG[11] ENTITY[9] (
+ information(ENTITY[9]) ∧
+  PERSON[1] = he ∧
+   Iran-Contra_notoriety(ENTITY[3]) ∧
+    is_of(PERSON[Oliver_North], ENTITY[3]) ∧
+     PERSON[5] = he{PERSON[Oliver_North], PERSON[1]} ∧
+      PERSON[7] = his{PERSON[5], PERSON[Oliver_North], PERSON[1]} ∧
+       is_computer_POS(ENTITY[6], PERSON[7]) ∧
+        congressional(ATTRIB[12]) ∧
+         is_committees_ATTRIBUTE(ORG[11], ATTRIB[12]) ∧
+          is_FACT_THAT(SITUATION[10], read.01(EVENT[13], ORG[11])) ∧
+           is_before(EVENT[8], EVENT[4]) ∧
+            is_before(EVENT[4], EVENT[2]) ∧
+             TMP_later(SITUATION[15]) ∧
+              is_before(EVENT[14], EVENT[2]) ∧
+               past(EVENT[2]) ∧
+                say.01(EVENT[2], PERSON[1],
+                 CONJ_but(think.01(EVENT[4], PERSON[Oliver_North], erase.01(EVENT[8], PERSON[5], ENTITY[6])),
+                  is_FACT_THAT(SITUATION[15],
+                   retrieve.01(EVENT[14], _, ENTITY[9]) ∧ for(EVENT[14]) = SITUATION[10]))))
+
+# ::id 49_newswire_MASC;wsj_1640;AT7-5;NE
+# ::snt No personal computer , not even the one on a chief executive 's desk , is safe , this speaker noted .
+∃ ATTRIB[11] ATTRIB[10] EVENT[12] EVENT[2] GROUP[3] PERSON[9] ENTITY[8] ENTITY[7] PERSON[1] (
+ speaker(PERSON[1]) ∧
+  chief(ATTRIB[10]) ∧
+   is_executive_ATTRIBUTE(PERSON[9], ATTRIB[10]) ∧
+    is_desk_POS(ENTITY[8], PERSON[9]) ∧
+     (CD_not_one(ENTITY[7]), is_on(ENTITY[7], ENTITY[8])) ∧
+      ¬ ∃ ATTRIB[5] ENTITY[4] (personal(ATTRIB[5]) ∧ is_computer_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+       EVEN ENTITY[6] (is_of(ENTITY[6], ENTITY[7]), is_element_of(ENTITY[6], GROUP[3])) ∧
+       safe(ATTRIB[11]) ∧
+        past(EVENT[2]) ∧ note.01(EVENT[2], PERSON[1], be.01(EVENT[12], GROUP[3], ATTRIB[11])))
+
+# ::id 50_newswire_MASC;wsj_1640;AT8-1;NE
+# ::snt W. Mark Goode , president of Micronyx Inc. , a Richardson , Texas , firm that makes computer-security products , provided a new definition for Mikhail Gorbachev 's campaign for greater openness , known commonly as glasnost .
+∃ ATTRIB[10] ATTRIB[7] EVENT[5] EVENT[12] EVENT[14] PRODUCT[4] ORG[2] TTL[1] ENTITY[9] ENTITY[8] ENTITY[6] (
+ computer-security_products(PRODUCT[4]) ∧
+  make.01(EVENT[5], ORG[2], PRODUCT[4]) ∧ is_firm_LOC(ORG[2], ENTITY[Richardson_Texas]) ∧
+   is_-ORG-_namely(ORG[Micronyx_Inc.], ORG[2]) ∧
+    is_president_of(TTL[1], ORG[Micronyx_Inc.]) ∧
+     is_-PERSON-_namely(PERSON[W.Mark_Goode], TTL[1]) ∧
+      new(ATTRIB[7]) ∧
+       greater(ATTRIB[10]) ∧
+        is_openness_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+         know.01(EVENT[12], _, ENTITY[8]) ∧ as(EVENT[12]) = ENTITY[glasnost] ∧
+          is_campaign_for(ENTITY[8], ENTITY[9]) ∧ is_campaign_POS(ENTITY[8], PERSON[Mikhail_Gorbachev]) ∧
+          is_definition_for(ENTITY[6], ENTITY[8]) ∧ is_definition_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+           ADV_commonly(EVENT[12]) ∧ past(EVENT[14]) ∧ provide.01(EVENT[14], PERSON[W.Mark_Goode], ENTITY[6]))
+
+# ::id 51_newswire_MASC;wsj_1640;AT8-2;NE
+# ::snt Under Mr. Gorbachev , Mr. Goode said , the Soviets are openly stealing Western corporate communications .
+∃ NORP[3] EVENT[4] EVENT[1] GROUP[2] (
+ western(NORP[3]) ∧
+  is_corporate_communications_ATTRIBUTE(GROUP[2], NORP[3]) ∧
+   ADV_openly(EVENT[4]) ∧
+    past(EVENT[1]) ∧
+     say.01(EVENT[1], PERSON[Mr.Goode], be.03(EVENT[4], GPE[Soviets], GROUP[2]) ∧ Under(EVENT[4]) = PERSON[Mr.Gorbachev]))
+
+# ::id 52_newswire_MASC;wsj_1640;AT8-3;NE
+# ::snt He cited the case of a Swiss oil trader who recently put out bids via telex for an oil tanker to pick up a cargo of crude in the Middle East .
+∃ PERSON[1] SITUATION[14] NORP[4] EVENT[15] EVENT[11] EVENT[13] ENTITY[10] ENTITY[9] ENTITY[7] ENTITY[12] GROUP[6] PERSON[3] ENTITY[2] (
+ swiss(NORP[4]) ∧
+  crude(ENTITY[10]) ∧
+   is_cargo_of(ENTITY[9], ENTITY[10]) ∧
+    pick.04(EVENT[11], ENTITY[7], ENTITY[9]) ∧ in(EVENT[11]) = GPE[Middle_East] ∧ oil_tanker(ENTITY[7]) ∧
+     is_bids_for(GROUP[6], ENTITY[7]) ∧
+      telex(ENTITY[12]) ∧
+       is_FACT_THAT(SITUATION[14], put.10(EVENT[13], PERSON[3], GROUP[6]) ∧ via(EVENT[13]) = ENTITY[12]) ∧
+        is_oil_trader_ATTRIBUTE(PERSON[3], NORP[4]) ∧
+        is_case_of(ENTITY[2], PERSON[3]) ∧
+         TMP_recently(SITUATION[14]) ∧
+          past(EVENT[13]) ∧
+           PERSON[1] = he ∧ past(EVENT[15]) ∧ cite.01(EVENT[15], PERSON[1], ENTITY[2]))
+
+# ::id 53_newswire_MASC;wsj_1640;AT8-4;NE
+# ::snt Among the responses the Swiss trader got was one from the Soviet national shipping company , which had n't been invited to submit a bid .
+∃ ATTRIB[8] ATTRIB[4] EVENT[13] ENTITY[6] EVENT[5] PERSON[3] ORG[7] GROUP[1] (
+ swiss(ATTRIB[4]) ∧
+  is_trader_ATTRIBUTE(PERSON[3], ATTRIB[4]) ∧
+   get.01(EVENT[5], PERSON[3], GROUP[1]) ∧ responses(GROUP[1]) ∧
+    soviet(ATTRIB[8]) ∧
+     ¬ ∃ EVENT[12] EVENT[10] ENTITY[11] (
+           bid(ENTITY[11]) ∧
+            past(EVENT[10]) ∧
+             have.01(EVENT[10], _, ORG[7], submit.01(EVENT[12], ORG[7], ENTITY[11]))) ∧
+      is_national_shipping_company_ATTRIBUTE(ORG[7], ATTRIB[8]) ∧
+      past(EVENT[5]) ∧
+       (CD_one(ENTITY[6]), is_from(ENTITY[6], ORG[7])) ∧
+        past(EVENT[13]) ∧ be.01(EVENT[13], ENTITY[6]) ∧ Among(EVENT[13]) = GROUP[1])
+
+# ::id 54_newswire_MASC;wsj_1640;AT8-5;NE
+# ::snt The Soviets ' eavesdropping paid off , however , because they got the contract .
+∃ SITUATION[6] GPE[2] EVENT[4] EVENT[5] ENTITY[1] ENTITY[3] (
+ contract(ENTITY[3]) ∧
+  is_eavesdropping_POS(ENTITY[1], GPE[Soviets]) ∧
+   GPE[2] = they{GPE[Soviets]} ∧
+    ADV_however(SITUATION[6]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[5]) ∧
+       is_FACT_THAT(SITUATION[6], CRD_because(get.01(EVENT[4], GPE[2], ENTITY[3]), pay.05(EVENT[5], ENTITY[1]))))

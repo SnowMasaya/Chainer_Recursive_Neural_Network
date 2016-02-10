@@ -1,0 +1,2458 @@
+# ::id 1_fiction_TWAIN-1880;NE
+# ::snt BAKER 'S BLUEJAY YARN
+( ENTITY-1 / BLUEJAY_YARN
+      :POS ( ENTITY-BAKER / ENTITY
+             :name ( n-1 / name
+                    :op1 "BAKER")))
+
+# ::id 2_fiction_TWAIN-1880;NE
+# ::snt BY MARK TWAIN
+( EVENT-1 / EVENT
+      :BY ( ENTITY-MARK_TWAIN / ENTITY
+             :name ( n-1 / name
+                    :op1 "MARK_TWAIN")))
+
+# ::id 3_fiction_TWAIN-1880;NE
+# ::snt Animals talk to each other , of course .
+( EVENT-6 / talk
+      :ARG0 ( GROUP-1 / Animals)
+      :OF ( ENTITY-5 / course)
+      :TO ( ENTITY-2 / ENTITY
+             :ATTRIBUTE ( ATTRIB-4 / other)
+             :QUANTIFIER ( ATTRIB-3 / each)))
+
+# ::id 4_fiction_TWAIN-1880;NE
+# ::snt There can be no question about that ;
+( EVENT-5 / copula
+      :domain-of ( MD-6 / can)
+      :ARG0 ( ENTITY-1 / question
+             :ABOUT ( ENTITY-3 / ENTITY
+                    :DETERMINER ( ATTRIB-4 / that))
+             :QUANTIFIER ( ATTRIB-2 / no)))
+
+# ::id 5_fiction_TWAIN-1880;NE
+# ::snt but I suppose there are very few people who can understand them .
+( EVENT-2 / suppose
+      :ARG0 ( REF1-1 / i)
+      :THAT ( EVENT-8 / copula
+             :ARG0 ( GROUP-3 / people
+                    :QUANTIFIER ( ATTRIB-4 / very_few)
+                    :ARG0-of ( EVENT-7 / understand
+                           :domain-of ( MD-9 / can)
+                           :ARG1 ( REF2-6 / them)))))
+
+# ::id 6_fiction_TWAIN-1880;NE
+# ::snt I never knew but one man who could .
+( EVENT-7 / knew
+      :MOD ( mod-10 / past)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / man
+             :CARDINAL ( ATTRIB-4 / one)
+             :QUANTIFIER ( ATTRIB-3 / but)
+             :ARG0-of ( EVENT-6 / EVENT
+                    :domain-of ( MD-9 / could)))
+      :MOD ( mod-11 / never))
+
+# ::id 7_fiction_TWAIN-1880;NE
+# ::snt I knew he could , however , because he told me so himself .
+( CRD-16 / because
+      :op1 ( EVENT-5 / told
+             :MOD ( mod-18 / past)
+             :ARG0 ( REF3-3 / he
+                    :RFL ( REF4-2 / himself))
+             :ARG1 ( REF5-4 / me)
+             :MOD ( mod-17 / so))
+      :op2 ( EVENT-7 / knew
+             :MOD ( mod-19 / past)
+             :ARG0 ( REF1-1 / i)
+             :THAT ( EVENT-9 / EVENT
+                    :domain-of ( MD-15 / could)
+                    :ARG0 ( REF2-8 / he)))
+      :MOD ( mod-20 / however))
+
+# ::id 8_fiction_TWAIN-1880;NE
+# ::snt He was a middle-aged , simple-hearted miner who had lived in a lonely corner of California , among the woods and mountains , a good many years , and had studied the ways of his only neighbors , the beasts and the birds , until he believed he could accurately translate any remark which they made .
+( EVENT-38 / copula
+      :MOD ( mod-49 / past)
+      :ARG0 ( 749-1 / he)
+      :ARG1 ( ENTITY-2 / miner
+             :ATTRIBUTE ( ATTRIB-4 / simple-hearted)
+             :ATTRIBUTE ( ATTRIB-3 / middle-aged)
+             :ARG0-of ( CONJ-43 / and
+                    :op1 ( EVENT-16 / had_lived
+                           :MOD ( mod-48 / past)
+                           :TMP ( GROUP-13 / years
+                                  :ATTRIBUTE ( ATTRIB-14 / good)
+                                  :QUANTIFIER ( ATTRIB-15 / many))
+                           :AMONG ( ENTITY-8 / AND
+                                  :DEFINITE ( ATTRIB-9 / the)
+                                  :op1 ( GROUP-11 / woods)
+                                  :op2 ( GROUP-12 / mountains))
+                           :IN ( ENTITY-6 / corner
+                                  :ATTRIBUTE ( ATTRIB-7 / lonely)
+                                  :OF ( ENTITY-California / ENTITY
+                                         :name ( n-50 / name
+                                                :op1 "California"))))
+                    :op2 ( CRD-42 / until
+                           :op1 ( EVENT-28 / believed
+                                  :MOD ( mod-46 / past)
+                                  :ARG0 ( 749-27 / 749
+                                         :namely 749-1)
+                                  :THAT ( EVENT-35 / translate
+                                         :domain-of ( MD-41 / could)
+                                         :ARG0 749-27
+                                         :ARG1 ( ENTITY-30 / remark
+                                                :QUANTIFIER ( ATTRIB-31 / any)
+                                                :ARG1-of ( EVENT-34 / made
+                                                       :MOD ( mod-44 / past)
+                                                       :ARG0 900-24))
+                                         :MOD ( mod-45 / accurately)))
+                           :op2 ( EVENT-37 / had_studied
+                                  :MOD ( mod-47 / past)
+                                  :ARG0 ENTITY-2
+                                  :ARG1 ( GROUP-17 / ways
+                                         :DEFINITE ( ATTRIB-18 / the)
+                                         :OF ( 900-24 / neighbors
+                                                :QUANTIFIER ( ATTRIB-26 / only)
+                                                :POS 749-1
+                                                :NAMELY ( GROUP-19 / AND
+                                                       :op1 ( GROUP-20 / beasts
+                                                              :DEFINITE ( ATTRIB-21 / the))
+                                                       :op2 ( GROUP-22 / birds
+                                                              :DEFINITE ( ATTRIB-23 / the))))))))))
+
+# ::id 9_fiction_TWAIN-1880;NE
+# ::snt This was Jim Baker .
+( EVENT-3 / copula
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-Jim_Baker / ENTITY
+             :name ( n-2 / name
+                    :op1 "Jim_Baker")))
+
+# ::id 10_fiction_TWAIN-1880;NE
+# ::snt According to Jim Baker , some animals have only a limited education ,
+( EVENT-6 / have
+      :ARG0 ( GROUP-1 / animals
+             :QUANTIFIER ( ATTRIB-2 / some))
+      :ARG1 ( ENTITY-3 / education
+             :ATTRIBUTE ( ATTRIB-5 / limited)
+             :QUANTIFIER ( ATTRIB-4 / only))
+      :ACCORDING_TO ( ENTITY-Jim_Baker / ENTITY
+             :name ( n-1 / name
+                    :op1 "Jim_Baker")))
+
+# ::id 11_fiction_TWAIN-1880;NE
+# ::snt and some use only simple words , and scarcely ever a comparison or a flowery figure ;
+( CONJ-13 / and
+      :op1 ( EVENT-6 / use
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :QUANTIFIER ( ATTRIB-2 / some))
+             :ARG1 ( GROUP-3 / words
+                    :ATTRIBUTE ( ATTRIB-5 / simple)
+                    :QUANTIFIER ( ATTRIB-4 / only)))
+      :op2 ( EVENT-11 / use
+             :ARG0 ENTITY-1
+             :ARG1 ( GROUP-7 / or
+                    :op1 ( ENTITY-8 / comparison)
+                    :op2 ( ENTITY-9 / figure
+                           :ATTRIBUTE ( ATTRIB-10 / flowery)))
+             :MOD ( mod-14 / scarcely_ever)))
+
+# ::id 12_fiction_TWAIN-1880;NE
+# ::snt whereas , certain other animals have a large vocabulary , a fine command of language and a ready and fluent delivery ;
+( EVENT-13 / have
+      :ARG0 ( GROUP-1 / animals
+             :ATTRIBUTE ( ATTRIB-3 / other)
+             :ATTRIBUTE ( ATTRIB-2 / certain))
+      :ARG1 ( GROUP-4 / AND
+             :op1 ( ENTITY-5 / vocabulary
+                    :ATTRIBUTE ( ATTRIB-6 / large))
+             :op2 ( ENTITY-7 / command
+                    :ATTRIBUTE ( ATTRIB-8 / fine)
+                    :OF ( ENTITY-9 / language))
+             :op3 ( CONJ-15 / and
+                    :op1 ( ENTITY-10 / delivery
+                           :ATTRIBUTE ( ATTRIB-11 / ready))
+                    :op2 ( ENTITY-10 / delivery
+                           :ATTRIBUTE ( ATTRIB-12 / fluent))))
+      :MOD ( mod-16 / whereas))
+
+# ::id 13_fiction_TWAIN-1880;NE
+# ::snt consequently these latter talk a great deal ;
+( EVENT-6 / talk
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these)
+             :ATTRIBUTE ( ATTRIB-3 / latter))
+      :ARG1 ( ENTITY-4 / deal
+             :ATTRIBUTE ( ATTRIB-5 / great))
+      :MOD ( mod-1 / consequently))
+
+# ::id 14_fiction_TWAIN-1880;NE
+# ::snt they like it ;
+( EVENT-3 / like
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( REF2-2 / it))
+
+# ::id 15_fiction_TWAIN-1880;NE
+# ::snt they are so conscious of their talent ,
+( EVENT-5 / copula
+      :ATTRIBUTE ( ATTRIB-2 / so_conscious
+             :OF ( ENTITY-3 / talent
+                    :POS ( REF2-4 / their)))
+      :ARG0 ( REF1-1 / they))
+
+# ::id 16_fiction_TWAIN-1880;NE
+# ::snt and they enjoy " showing off . "
+( EVENT-4 / enjoy
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( EVENT-3 / showing_off
+             :ARG0 REF1-1))
+
+# ::id 17_fiction_TWAIN-1880;NE
+# ::snt Baker said , that after long and careful observation , he had come to the conclusion that the bluejays were the best talkers he had found among birds and beasts .
+( EVENT-1 / said
+      :MOD ( mod-24 / past)
+      :ARG0 ( ENTITY-Baker / ENTITY
+             :name ( n-25 / name
+                    :op1 "Baker"))
+      :THAT ( EVENT-19 / had_come
+             :MOD ( mod-23 / past)
+             :ARG0 ( REF1-5 / he)
+             :TO ( ENTITY-6 / conclusion
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :THAT ( EVENT-18 / copula
+                           :MOD ( mod-22 / past)
+                           :ARG0 ( GROUP-8 / bluejays
+                                  :DEFINITE ( ATTRIB-9 / the))
+                           :ARG1 ( GROUP-10 / talkers
+                                  :DEFINITE ( ATTRIB-11 / the)
+                                  :ATTRIBUTE ( ATTRIB-12 / best)
+                                  :THAT ( EVENT-17 / had_found
+                                         :MOD ( mod-21 / past)
+                                         :ARG0 ( REF2-13 / he)
+                                         :AMONG ( GROUP-14 / AND
+                                                :op1 ( GROUP-15 / birds)
+                                                :op2 ( GROUP-16 / beasts))))))
+             :AFTER ( CONJ-20 / and
+                    :op1 ( ENTITY-2 / observation
+                           :ATTRIBUTE ( ATTRIB-3 / long))
+                    :op2 ( ENTITY-2 / observation
+                           :ATTRIBUTE ( ATTRIB-4 / careful)))))
+
+# ::id 18_fiction_TWAIN-1880;NE
+# ::snt Said he : " There 's more _to_ a bluejay than any other creature .
+( EVENT-2 / said
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / he)
+      :THAT ( EVENT-9 / copula
+             :ARG0 ( ENTITY-3 / ENTITY
+                    :QUANTIFIER ( ATTRIB-4 / more)
+                    :THAN ( ENTITY-6 / creature
+                           :ATTRIBUTE ( ATTRIB-8 / other)
+                           :QUANTIFIER ( ATTRIB-7 / any))
+                    :TO ( ENTITY-5 / bluejay))))
+
+# ::id 19_fiction_TWAIN-1880;NE
+# ::snt He has got more moods , and more different kinds of feelings than other creatures ;
+( EVENT-13 / has_got
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( GROUP-3 / moods
+                    :THAN ( GROUP-5 / creatures
+                           :ATTRIBUTE ( ATTRIB-6 / other))
+                    :QUANTIFIER ( ATTRIB-4 / more))
+             :op2 ( GROUP-7 / kinds
+                    :ATTRIBUTE ( ATTRIB-9 / different)
+                    :THAN ( GROUP-11 / creatures
+                           :ATTRIBUTE ( ATTRIB-12 / other))
+                    :QUANTIFIER ( ATTRIB-8 / more)
+                    :OF ( GROUP-10 / feelings))))
+
+# ::id 20_fiction_TWAIN-1880;NE
+# ::snt and mind you , whatever a bluejay feels , he can put into language .
+( EVENT-7 / put
+      :domain-of ( MD-8 / can)
+      :ARG0 ( REF2-5 / he)
+      :ARG1 ( ENTITY-1 / ENTITY
+             :ARG1-of ( EVENT-4 / feels
+                    :ARG0 ( ENTITY-3 / bluejay)))
+      :INTO ( ENTITY-6 / language))
+
+# ::id 21_fiction_TWAIN-1880;NE
+# ::snt And no mere commonplace language , either , but rattling , out-and-out book-talk -- and bristling with metaphor , too -- just bristling !
+( CONJ-17 / and
+      :op1 ( EVENT-11 / bristling
+             :ARG0 ( GROUP-1 / but
+                    :op1 ( ENTITY-3 / language
+                           :ATTRIBUTE ( ATTRIB-6 / commonplace)
+                           :ATTRIBUTE ( ATTRIB-5 / mere)
+                           :QUANTIFIER ( ATTRIB-4 / no)
+                           :NAMELY ENTITY-2)
+                    :op2 ( ENTITY-7 / book-talk
+                           :ATTRIBUTE ( ATTRIB-9 / out-and-out)
+                           :ATTRIBUTE ( ATTRIB-8 / rattling)))
+             :WITH ( ENTITY-10 / metaphor)
+             :MOD ( mod-18 / too))
+      :op2 ( CONJ-16 / and
+             :op1 ( EVENT-13 / bristling
+                    :ARG0 GROUP-1
+                    :MOD ( mod-19 / just))
+             :op2 ( EVENT-15 / EVENT
+                    :ARG1 GROUP-1)))
+
+# ::id 22_fiction_TWAIN-1880;NE
+# ::snt And as for command of language -- why _you_ never see a bluejay get stuck for a word .
+( EVENT-4 / see
+      :ARG0 ( REF1-3 / you_)
+      :AS_FOR ( ENTITY-1 / command
+             :OF ( ENTITY-2 / language))
+      :TOCOMP ( EVENT-8 / get
+             :ATTRIBUTE ( ATTRIB-6 / stuck
+                    :FOR ( ENTITY-7 / word))
+             :ARG0 ( ENTITY-5 / bluejay))
+      :MOD ( mod-1 / never))
+
+# ::id 23_fiction_TWAIN-1880;NE
+# ::snt No man ever did .
+( EVENT-3 / did
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-1 / man
+             :QUANTIFIER ( ATTRIB-2 / no))
+      :MOD ( mod-1 / ever))
+
+# ::id 24_fiction_TWAIN-1880;NE
+# ::snt They just boil out of him !
+( EVENT-3 / boil_out
+      :ARG0 ( REF1-1 / they)
+      :OF ( REF2-2 / him)
+      :MOD ( mod-1 / just))
+
+# ::id 25_fiction_TWAIN-1880;NE
+# ::snt And another thing :
+( ENTITY-1 / thing
+      :QUANTIFIER ( ATTRIB-2 / another))
+
+# ::id 26_fiction_TWAIN-1880;NE
+# ::snt I 've noticed a good deal ,
+( EVENT-4 / ' ve_noticed
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / deal
+             :ATTRIBUTE ( ATTRIB-3 / good)))
+
+# ::id 27_fiction_TWAIN-1880;NE
+# ::snt and there 's no bird , or cow , or anything that uses as good grammar as a bluejay .
+( EVENT-13 / copula
+      :ARG0 ( ENTITY-1 / or
+             :op1 ( ENTITY-4 / bird)
+             :op2 ( ENTITY-5 / cow)
+             :op3 ( ENTITY-6 / ENTITY
+                    :QUANTIFIER ( ATTRIB-7 / anything))
+             :QUANTIFIER ( ATTRIB-2 / no)
+             :ARG0-of ( EVENT-12 / uses
+                    :ARG1 ( ENTITY-9 / grammar
+                           :ATTRIBUTE ( ATTRIB-10 / as_good
+                                  :AS ( ENTITY-11 / bluejay))))))
+
+# ::id 28_fiction_TWAIN-1880;NE
+# ::snt You may say a cat uses good grammar .
+( EVENT-2 / say
+      :domain-of ( MD-7 / may)
+      :ARG0 ( REF1-1 / you)
+      :THAT ( EVENT-6 / uses
+             :ARG0 ( ENTITY-3 / cat)
+             :ARG1 ( ENTITY-4 / grammar
+                    :ATTRIBUTE ( ATTRIB-5 / good))))
+
+# ::id 29_fiction_TWAIN-1880;NE
+# ::snt Well , a cat does --
+( EVENT-2 / does
+      :ARG0 ( ENTITY-1 / cat))
+
+# ::id 30_fiction_TWAIN-1880;NE
+# ::snt but you let a cat get excited once ;
+( EVENT-2 / let
+      :ARG0 ( REF1-1 / you)
+      :TOCOMP ( EVENT-4 / get_excited
+             :ARG0 ( ENTITY-3 / cat)
+             :MOD ( mod-1 / once)))
+
+# ::id 31_fiction_TWAIN-1880;NE
+# ::snt you let a cat get to pulling fur with another cat on a shed , nights ,
+( EVENT-2 / let
+      :ARG0 ( REF1-1 / you)
+      :TOCOMP ( EVENT-11 / get
+             :ARG0 ( ENTITY-3 / cat)
+             :TO ( EVENT-10 / pulling
+                    :ARG0 ENTITY-3
+                    :ARG1 ( ENTITY-5 / fur)
+                    :TMP ( GROUP-9 / nights)
+                    :ON ( ENTITY-8 / shed)
+                    :WITH ( ENTITY-6 / cat
+                           :QUANTIFIER ( ATTRIB-7 / another)))))
+
+# ::id 32_fiction_TWAIN-1880;NE
+# ::snt and you 'll hear grammar that will give you the lockjaw .
+( EVENT-8 / hear
+      :domain-of ( MD-10 / ' ll)
+      :ARG0 ( REF1-1 / you)
+      :ARG1 ( ENTITY-2 / grammar
+             :ARG0-of ( EVENT-7 / give
+                    :domain-of ( MD-9 / will)
+                    :ARG1 ( ENTITY-5 / lockjaw
+                           :DEFINITE ( ATTRIB-6 / the))
+                    :ARG2 ( REF2-4 / you))))
+
+# ::id 33_fiction_TWAIN-1880;NE
+# ::snt Ignorant people think it 's the _noise_ which fighting cats make that is so aggravating ,
+( EVENT-3 / think
+      :ARG0 ( GROUP-1 / people
+             :ATTRIBUTE ( ATTRIB-2 / ignorant))
+      :THAT ( EVENT-14 / copula
+             :ARG0 ( ENTITY-10 / ENTITY
+                    :ARG0-of ( EVENT-13 / copula
+                           :ATTRIBUTE ( ATTRIB-12 / so_aggravating)))
+             :ARG1 ( ENTITY-4 / noise
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :ARG1-of ( EVENT-9 / make
+                           :ARG0 ( GROUP-7 / cats
+                                  :ATTRIBUTE ( ATTRIB-8 / fighting))))))
+
+# ::id 34_fiction_TWAIN-1880;NE
+# ::snt but it ai n't so ;
+( EVENT-2 / copula
+      :domain-of ( NEG-4 / NEG)
+      :ARG0 ( REF1-1 / it)
+      :MOD ( mod-5 / so))
+
+# ::id 35_fiction_TWAIN-1880;NE
+# ::snt it 's the sickening grammar that they use .
+( EVENT-8 / copula
+      :ARG0 ( ENTITY-4 / ENTITY
+             :ARG1-of ( EVENT-7 / use
+                    :ARG0 ( REF1-6 / they)))
+      :ARG1 ( ENTITY-1 / grammar
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / sickening)))
+
+# ::id 36_fiction_TWAIN-1880;NE
+# ::snt Now I 've never heard a jay use bad grammar but very seldom ;
+( CONJ-12 / but
+      :op1 ( EVENT-2 / ' ve_heard
+             :ARG0 ( REF1-1 / i)
+             :TOCOMP ( EVENT-6 / use
+                    :ARG0 ( ENTITY-3 / jay)
+                    :ARG1 ( ENTITY-4 / grammar
+                           :ATTRIBUTE ( ATTRIB-5 / bad)))
+             :MOD ( mod-13 / never))
+      :op2 ( EVENT-8 / EVENT
+             :ARG0 REF1-1
+             :MOD ( mod-14 / very_seldom))
+      :MOD ( mod-15 / now))
+
+# ::id 37_fiction_TWAIN-1880;NE
+# ::snt and when they do , they are as ashamed as a human ;
+( EVENT-4 / copula
+      :ATTRIBUTE ( ATTRIB-2 / as_ashamed
+             :AS ( ENTITY-3 / human))
+      :ARG0 ( REF2-1 / they))
+
+# ::id 38_fiction_TWAIN-1880;NE
+# ::snt they shut right down and leave .
+( CONJ-5 / and
+      :op1 ( EVENT-2 / shut
+             :ARG0 ( REF1-1 / they)
+             :MOD ( mod-6 / right_down))
+      :op2 ( EVENT-4 / leave
+             :ARG0 REF1-1))
+
+# ::id 39_fiction_TWAIN-1880;NE
+# ::snt " You may call a jay a bird .
+( EVENT-2 / call
+      :domain-of ( MD-6 / may)
+      :ARG0 ( REF1-1 / you)
+      :TOCOMP ( EVENT-5 / EVENT
+             :ARG0 ( ENTITY-3 / jay)
+             :ARG1 ( ENTITY-4 / bird)))
+
+# ::id 40_fiction_TWAIN-1880;NE
+# ::snt Well , so he is , in a measure --
+( EVENT-3 / copula
+      :ARG0 ( REF1-1 / he)
+      :IN ( ENTITY-2 / measure)
+      :MOD ( mod-1 / so))
+
+# ::id 41_fiction_TWAIN-1880;NE
+# ::snt but he 's got feathers on him , and do n't belong to no church , perhaps ;
+( CONJ-10 / and
+      :op1 ( EVENT-4 / ' s_got
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( GROUP-2 / feathers)
+             :ON ( REF2-3 / him))
+      :op2 ( EVENT-7 / do_belong
+             :domain-of ( NEG-9 / NEG)
+             :ARG0 REF1-1
+             :TO ( ENTITY-5 / church
+                    :QUANTIFIER ( ATTRIB-6 / no))
+             :MOD ( mod-11 / perhaps)))
+
+# ::id 42_fiction_TWAIN-1880;NE
+# ::snt but otherwise he is just as much human as you be .
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-2 / just_as_much_human
+             :AS ( DEGREE-3 / DEGREE
+                    :ATTRIBUTE-of ( EVENT-6 / copula
+                           :ARG0 ( REF2-5 / you))))
+      :ARG0 ( REF1-1 / he)
+      :MOD ( mod-1 / otherwise))
+
+# ::id 43_fiction_TWAIN-1880;NE
+# ::snt And I 'll tell you for why .
+( EVENT-6 / tell
+      :domain-of ( MD-9 / ' ll)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( REF2-2 / you)
+      :FOR ( ENTITY-4 / ENTITY
+             :domain-of ( QUEST-8 / QUEST)
+             :ARG0 REF2-2
+             :MOD ( mod-10 / penman1-unknown)))
+
+# ::id 44_fiction_TWAIN-1880;NE
+# ::snt A jay 's gifts , and instincts , and feelings , and interests , cover the whole ground .
+( EVENT-11 / cover
+      :ARG0 ( ENTITY-1 / AND
+             :op1 ( GROUP-4 / gifts)
+             :op2 ( GROUP-5 / instincts)
+             :op3 ( GROUP-6 / feelings)
+             :op4 ( GROUP-7 / interests)
+             :POS ( ENTITY-2 / jay))
+      :ARG1 ( ENTITY-8 / ground
+             :DEFINITE ( ATTRIB-9 / the)
+             :ATTRIBUTE ( ATTRIB-10 / whole)))
+
+# ::id 45_fiction_TWAIN-1880;NE
+# ::snt A jay has n't got any more principle than a Congressman .
+( EVENT-5 / has_got
+      :domain-of ( NEG-6 / NEG)
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( ENTITY-2 / principle
+             :THAN ( ENTITY-4 / Congressman)
+             :QUANTIFIER ( ATTRIB-3 / any_more)))
+
+# ::id 46_fiction_TWAIN-1880;NE
+# ::snt A jay will lie ,
+( EVENT-2 / lie
+      :domain-of ( MD-3 / will)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 47_fiction_TWAIN-1880;NE
+# ::snt a jay will steal ,
+( EVENT-2 / steal
+      :domain-of ( MD-3 / will)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 48_fiction_TWAIN-1880;NE
+# ::snt a jay will deceive ,
+( EVENT-2 / deceive
+      :domain-of ( MD-3 / will)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 49_fiction_TWAIN-1880;NE
+# ::snt a jay will betray ;
+( EVENT-2 / betray
+      :domain-of ( MD-3 / will)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 50_fiction_TWAIN-1880;NE
+# ::snt and four times out of five , a jay will go back on his solemnest promise .
+( EVENT-9 / go_back
+      :domain-of ( MD-10 / will)
+      :ARG0 ( ENTITY-5 / jay)
+      :ON ( ENTITY-6 / promise
+             :ATTRIBUTE ( ATTRIB-8 / solemnest)
+             :POS ( REF1-7 / his))
+      :TMP ( GROUP-1 / times
+             :OUT_OF ( ENTITY-3 / ENTITY
+                    :CARDINAL ( ATTRIB-4 / five))
+             :CARDINAL ( ATTRIB-2 / four)))
+
+# ::id 51_fiction_TWAIN-1880;NE
+# ::snt The sacredness of an obligation is such a thing which you ca n't cram into no bluejay 's head .
+( EVENT-12 / copula
+      :ARG0 ( ENTITY-1 / sacredness
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( ENTITY-3 / obligation))
+      :ARG1 ( ENTITY-4 / thing
+             :ATTRIBUTE ( ATTRIB-5 / such)
+             :ARG1-of ( EVENT-11 / cram
+                    :domain-of ( MD-14 / ca)
+                    :domain-of ( NEG-13 / NEG)
+                    :ARG0 ( REF1-7 / you)
+                    :INTO ( ENTITY-8 / head
+                           :POS ( ENTITY-9 / bluejay
+                                  :QUANTIFIER ( ATTRIB-10 / no))))))
+
+# ::id 52_fiction_TWAIN-1880;NE
+# ::snt Now , on top of all this , there 's another thing ;
+( EVENT-7 / copula
+      :ARG0 ( ENTITY-5 / thing
+             :QUANTIFIER ( ATTRIB-6 / another))
+      :ON ( ENTITY-1 / top
+             :OF ( ENTITY-2 / ENTITY
+                    :DETERMINER ( ATTRIB-4 / this)
+                    :QUANTIFIER ( ATTRIB-3 / all)))
+      :MOD ( mod-1 / now))
+
+# ::id 53_fiction_TWAIN-1880;NE
+# ::snt a jay can out-swear any gentleman in the mines .
+( EVENT-6 / out-swear
+      :domain-of ( MD-7 / can)
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( ENTITY-2 / gentleman
+             :QUANTIFIER ( ATTRIB-3 / any))
+      :IN ( GROUP-4 / mines
+             :DEFINITE ( ATTRIB-5 / the)))
+
+# ::id 54_fiction_TWAIN-1880;NE
+# ::snt You think a cat can swear .
+( EVENT-2 / think
+      :ARG0 ( REF1-1 / you)
+      :THAT ( EVENT-4 / swear
+             :domain-of ( MD-6 / can)
+             :ARG0 ( ENTITY-3 / cat)))
+
+# ::id 55_fiction_TWAIN-1880;NE
+# ::snt Well , a cat can ;
+( EVENT-2 / EVENT
+      :domain-of ( MD-3 / can)
+      :ARG0 ( ENTITY-1 / cat))
+
+# ::id 56_fiction_TWAIN-1880;NE
+# ::snt but you give a bluejay a subject that calls for his reserve-powers ,
+( EVENT-8 / give
+      :ARG0 ( REF1-1 / you)
+      :ARG1 ( ENTITY-3 / subject
+             :ARG0-of ( EVENT-7 / calls
+                    :FOR ( GROUP-5 / reserve-powers
+                           :POS ( REF2-6 / his))))
+      :ARG2 ( ENTITY-2 / bluejay))
+
+# ::id 57_fiction_TWAIN-1880;NE
+# ::snt and where is your cat ?
+( EVENT-3 / copula
+      :domain-of ( QUEST-5 / QUEST)
+      :ARG0 ( ENTITY-1 / cat
+             :POS ( REF1-2 / your))
+      :MOD ( mod-6 / penman1-unknown))
+
+# ::id 58_fiction_TWAIN-1880;NE
+# ::snt Do n't talk to _me_ --
+( EVENT-1 / do
+      :domain-of ( NEG-5 / NEG)
+      :TOCOMP ( EVENT-4 / talk
+             :ARG0 ( REF1-2 / hearer)
+             :TO ( REF2-3 / me_))
+      :domain-of ( IMPERATIVE-6 / IMPERATIVE))
+
+# ::id 59_fiction_TWAIN-1880;NE
+# ::snt I know too much about this thing ;
+( EVENT-6 / know
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / ENTITY
+             :ABOUT ( ENTITY-4 / thing
+                    :DETERMINER ( ATTRIB-5 / this))
+             :QUANTIFIER ( ATTRIB-3 / too_much)))
+
+# ::id 60_fiction_TWAIN-1880;NE
+# ::snt in the one little particular of scolding -- just good , clean , out-and-out scolding -- a bluejay can lay over anything , human or divine .
+( EVENT-15 / lay
+      :domain-of ( MD-17 / can)
+      :ARG0 ( ENTITY-10 / bluejay)
+      :OVER ( CONJ-16 / or
+             :op1 ( ENTITY-11 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-13 / human)
+                    :QUANTIFIER ( ATTRIB-12 / anything))
+             :op2 ( ENTITY-11 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-14 / divine)
+                    :QUANTIFIER ATTRIB-12))
+      :IN ( ENTITY-1 / particular
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-4 / little)
+             :OF ( ENTITY-9 / scolding
+                    :NAMELY ( ENTITY-5 / scolding
+                           :ATTRIBUTE ( ATTRIB-8 / out-and-out)
+                           :ATTRIBUTE ( ATTRIB-7 / clean)
+                           :ATTRIBUTE ( ATTRIB-6 / just_good)))
+             :CARDINAL ( ATTRIB-3 / one)))
+
+# ::id 61_fiction_TWAIN-1880;NE
+# ::snt Yes , sir , a jay is everything that a man is .
+( EVENT-7 / copula
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( ENTITY-2 / ENTITY
+             :QUANTIFIER ( ATTRIB-3 / everything)
+             :ARG1-of ( EVENT-6 / copula
+                    :ARG0 ( ENTITY-5 / man))))
+
+# ::id 62_fiction_TWAIN-1880;NE
+# ::snt A jay can cry ,
+( EVENT-2 / cry
+      :domain-of ( MD-3 / can)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 63_fiction_TWAIN-1880;NE
+# ::snt a jay can laugh ,
+( EVENT-2 / laugh
+      :domain-of ( MD-3 / can)
+      :ARG0 ( ENTITY-1 / jay))
+
+# ::id 64_fiction_TWAIN-1880;NE
+# ::snt a jay can feel shame ,
+( EVENT-3 / feel
+      :domain-of ( MD-4 / can)
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( ENTITY-2 / shame))
+
+# ::id 65_fiction_TWAIN-1880;NE
+# ::snt a jay can reason and plan and discuss ,
+( CONJ-5 / and
+      :domain-of ( MD-6 / can)
+      :op1 ( EVENT-2 / reason
+             :ARG0 ( ENTITY-1 / jay))
+      :op2 ( EVENT-3 / plan
+             :ARG0 ENTITY-1)
+      :op3 ( EVENT-4 / discuss
+             :ARG0 ENTITY-1))
+
+# ::id 66_fiction_TWAIN-1880;NE
+# ::snt a jay likes gossip and scandal ,
+( EVENT-5 / likes
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / gossip)
+             :op2 ( ENTITY-4 / scandal)))
+
+# ::id 67_fiction_TWAIN-1880;NE
+# ::snt a jay has got a sense of humor ,
+( EVENT-4 / has_got
+      :ARG0 ( ENTITY-1 / jay)
+      :ARG1 ( ENTITY-2 / sense
+             :OF ( ENTITY-3 / humor)))
+
+# ::id 68_fiction_TWAIN-1880;NE
+# ::snt a jay knows when he is an ass just as well as you do -- maybe better .
+( EVENT-2 / knows
+      :ARG0 ( ENTITY-1 / jay)
+      :THAT ( EVENT-10 / copula
+             :domain-of ( QUEST-14 / QUEST)
+             :ARG0 ( REF1-3 / he)
+             :ARG1 ( ENTITY-4 / ass)
+             :MOD ( mod-15 / maybe_better)
+             :MOD ( mod-16 / just_as_well
+                    :AS ( DEGREE-5 / DEGREE
+                           :ADV-of ( EVENT-8 / do
+                                  :ARG0 ( REF2-7 / you))))
+             :TMP ( TIME-18 / penman1-unknown)))
+
+# ::id 69_fiction_TWAIN-1880;NE
+# ::snt If a jay ai n't human , he better take in his sign ,
+( CND-10 / If
+      :op1 ( EVENT-3 / copula
+             :domain-of ( NEG-9 / NEG)
+             :ATTRIBUTE ( ATTRIB-2 / human)
+             :ARG0 ( ENTITY-1 / jay))
+      :op2 ( EVENT-7 / take
+             :ARG0 ( REF1-4 / he)
+             :IN ( ENTITY-5 / sign
+                    :POS ( REF2-6 / his))
+             :MOD ( mod-11 / better)))
+
+# ::id 70_fiction_TWAIN-1880;NE
+# ::snt that 's all .
+( EVENT-5 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / that))
+      :ARG1 ( ENTITY-3 / ENTITY
+             :QUANTIFIER ( ATTRIB-4 / all)))
+
+# ::id 71_fiction_TWAIN-1880;NE
+# ::snt Now I 'm going to tell you a perfectly true fact about some bluejays . "
+( EVENT-2 / ' m_going
+      :ARG0 ( REF1-1 / i)
+      :TOCOMP ( EVENT-8 / tell
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-4 / fact
+                    :ATTRIBUTE ( ATTRIB-5 / perfectly_true)
+                    :ABOUT ( GROUP-6 / bluejays
+                           :QUANTIFIER ( ATTRIB-7 / some)))
+             :ARG2 ( REF2-3 / you))
+      :MOD ( mod-1 / now))
+
+# ::id 72_fiction_TWAIN-1880;NE
+# ::snt " When I first begun to understand jay language correctly , there was a little incident happened here .
+( SITUATION-8 / FACT
+      :THAT ( EVENT-3 / begun
+             :MOD ( mod-2 / past)
+             :ARG0 ( REF1-2 / i)
+             :TOCOMP ( EVENT-5 / understand
+                    :ARG0 REF1-2
+                    :ARG1 ( ENTITY-4 / jay_language)
+                    :MOD ( mod-1 / correctly))
+             :MOD ( mod-3 / first))
+      :TMP ( EVENT-14 / copula
+             :MOD ( mod-6 / past)
+             :ARG0 ( ENTITY-9 / incident
+                    :ATTRIBUTE ( ATTRIB-10 / little)
+                    :ARG0-of ( EVENT-12 / happened
+                           :MOD ( mod-5 / past)
+                           :MOD ( mod-4 / here)))))
+
+# ::id 73_fiction_TWAIN-1880;NE
+# ::snt Seven years ago , the last man in this region but me moved away .
+( EVENT-10 / moved
+      :MOD ( mod-2 / past)
+      :ARG0 ( GROUP-3 / but
+             :op1 ( ENTITY-4 / man
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :ATTRIBUTE ( ATTRIB-6 / last)
+                    :IN ( ENTITY-7 / region
+                           :DETERMINER ( ATTRIB-8 / this)))
+             :op2 ( REF1-9 / me))
+      :DIR ( DIR-1 / away)
+      :TMP ( TIME-3 / ago
+             :TMP ( GROUP-1 / years
+                    :CARDINAL ( ATTRIB-2 / seven))))
+
+# ::id 74_fiction_TWAIN-1880;NE
+# ::snt There stands his house --
+( EVENT-3 / stands
+      :ARG0 ( ENTITY-1 / house
+             :POS ( REF1-2 / his))
+      :LOC ( LOC-1 / there))
+
+# ::id 75_fiction_TWAIN-1880;NE
+# ::snt been empty ever since ;
+( EVENT-3 / copula
+      :ATTRIBUTE ( ATTRIB-2 / empty)
+      :ARG0 ( REF1-1 / con)
+      :TMP ( TIME-1 / ever_since))
+
+# ::id 76_fiction_TWAIN-1880;NE
+# ::snt a log house , with a plank roof --
+( ENTITY-1 / log_house
+      :WITH ( ENTITY-2 / plank_roof))
+
+# ::id 77_fiction_TWAIN-1880;NE
+# ::snt just one big room , and no more ;
+( GROUP-1 / AND
+      :op1 ( ENTITY-2 / room
+             :ATTRIBUTE ( ATTRIB-5 / big)
+             :ATTRIBUTE ( ATTRIB-3 / just)
+             :CARDINAL ( ATTRIB-4 / one))
+      :op2 ( ENTITY-6 / ENTITY
+             :QUANTIFIER ( ATTRIB-7 / no_more)))
+
+# ::id 78_fiction_TWAIN-1880;NE
+# ::snt no ceiling -- nothing between the rafters and the floor .
+( ENTITY-7 / ceiling
+      :QUANTIFIER ( ATTRIB-8 / no)
+      :MOD ( mod-11 / thing
+             :domain-of ( NEG-10 / NEG)
+             :BETWEEN ( GROUP-2 / AND
+                    :op1 ( GROUP-3 / rafters
+                           :DEFINITE ( ATTRIB-4 / the))
+                    :op2 ( ENTITY-5 / floor
+                           :DEFINITE ( ATTRIB-6 / the)))))
+
+# ::id 79_fiction_TWAIN-1880;NE
+# ::snt Well , one Sunday morning I was sitting out here in front of my cabin , with my cat , taking the sun , and looking at the blue hills , and listening to the leaves rustling so lonely in the trees , and thinking of the home away yonder in the states , that I had n't heard from in thirteen years , when a bluejay lit on that house , with an acorn in his mouth , and says , " Hello , I reckon I 've struck something . "
+( CONJ-61 / and
+      :op1 ( EVENT-51 / was_sitting_out
+             :MOD ( mod-63 / past)
+             :ARG0 ( REF1-3 / i)
+             :WITH ( ENTITY-7 / cat
+                    :POS ( REF3-8 / my))
+             :IN ( ENTITY-4 / front
+                    :OF ( ENTITY-5 / cabin
+                           :POS ( REF2-6 / my)))
+             :TMP ( TIME-1 / Sunday_morning
+                    :CARDINAL ( ATTRIB-2 / one))
+             :TMP-of ( CONJ-57 / and
+                    :op1 ( EVENT-42 / lit
+                           :ARG0 ( ENTITY-36 / bluejay)
+                           :WITH ( ENTITY-39 / acorn
+                                  :IN ( ENTITY-40 / mouth
+                                         :POS ( REF5-41 / his)))
+                           :ON ( ENTITY-37 / house
+                                  :DETERMINER ( ATTRIB-38 / that)))
+                    :op2 ( EVENT-43 / says
+                           :ARG0 ENTITY-36
+                           :THAT ( EVENT-45 / reckon
+                                  :ARG0 ( REF6-44 / i)
+                                  :THAT ( EVENT-49 / ' ve_struck
+                                         :ARG0 ( REF7-46 / i)
+                                         :ARG1 ( ENTITY-47 / ENTITY
+                                                :QUANTIFIER ( ATTRIB-48 / something)))))))
+      :op2 ( CONJ-60 / and
+             :op1 ( EVENT-11 / taking
+                    :ARG0 REF1-3
+                    :ARG1 ( ENTITY-9 / sun
+                           :DEFINITE ( ATTRIB-10 / the)))
+             :op2 ( EVENT-15 / looking
+                    :ARG0 REF1-3
+                    :AT ( GROUP-12 / hills
+                           :DEFINITE ( ATTRIB-13 / the)
+                           :ATTRIBUTE ( ATTRIB-14 / blue)))
+             :op3 ( EVENT-24 / listening
+                    :ARG0 REF1-3
+                    :TO ( GROUP-16 / leaves
+                           :DEFINITE ( ATTRIB-17 / the)
+                           :ARG0-of ( CONJ-54 / and
+                                  :op1 ( EVENT-23 / rustling
+                                         :IN ( GROUP-21 / trees
+                                                :DEFINITE ( ATTRIB-22 / the)))
+                                  :op2 ( EVENT-20 / EVENT
+                                         :ATTRIBUTE ( ATTRIB-19 / so_lonely)))))
+             :op4 ( EVENT-34 / thinking
+                    :ARG0 REF1-3
+                    :OF ( ENTITY-25 / home
+                           :DEFINITE ( ATTRIB-26 / the)
+                           :IN ( GROUP-27 / states
+                                  :DEFINITE ( ATTRIB-28 / the))
+                           :DIR ( DIR-65 / away_yonder
+                                  :ARG1-of ( EVENT-33 / had_heard
+                                         :domain-of ( NEG-55 / NEG)
+                                         :MOD ( mod-62 / past)
+                                         :ARG0 ( REF4-30 / i)
+                                         :FROM_IN ( TIME-31 / years
+                                                :CARDINAL ( ATTRIB-32 / thirteen)))))))
+      :LOC ( LOC-64 / here))
+
+# ::id 80_fiction_TWAIN-1880;NE
+# ::snt When he spoke , the acorn dropped out of his mouth and rolled down the roof , of course ,
+( EVENT-3 / spoke
+      :MOD ( mod-19 / past)
+      :ARG0 ( REF1-2 / he)
+      :TMP ( CONJ-16 / and
+             :op1 ( EVENT-10 / dropped_out
+                    :MOD ( mod-17 / past)
+                    :ARG0 ( ENTITY-5 / acorn
+                           :DEFINITE ( ATTRIB-6 / the))
+                    :OF ( ENTITY-8 / mouth
+                           :POS ( REF2-9 / his))
+                    :OF ( ENTITY-7 / course))
+             :op2 ( EVENT-13 / rolled_down
+                    :MOD ( mod-18 / past)
+                    :ARG0 ENTITY-5
+                    :ARG1 ( ENTITY-11 / roof
+                           :DEFINITE ( ATTRIB-12 / the))
+                    :OF ENTITY-7)))
+
+# ::id 81_fiction_TWAIN-1880;NE
+# ::snt but he did n't care ;
+( EVENT-2 / did_care
+      :domain-of ( NEG-3 / NEG)
+      :MOD ( mod-4 / past)
+      :ARG0 ( REF1-1 / he))
+
+# ::id 82_fiction_TWAIN-1880;NE
+# ::snt his mind was all on the thing he had struck .
+( EVENT-8 / copula
+      :MOD ( mod-3 / past)
+      :ARG0 ( ENTITY-1 / mind
+             :POS ( REF1-2 / his))
+      :ON ( ENTITY-3 / thing
+             :DEFINITE ( ATTRIB-4 / the)
+             :ARG1-of ( EVENT-7 / had_struck
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( REF2-6 / he)))
+      :MOD ( mod-2 / all))
+
+# ::id 83_fiction_TWAIN-1880;NE
+# ::snt It was a knot-hole in the roof .
+( EVENT-5 / copula
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / it)
+      :ARG1 ( ENTITY-2 / knot-hole
+             :IN ( ENTITY-3 / roof
+                    :DEFINITE ( ATTRIB-4 / the))))
+
+# ::id 84_fiction_TWAIN-1880;NE
+# ::snt He cocked his head to one side , shut one eye and put the other one to the hole , like a possum looking down a jug ;
+( CONJ-23 / and
+      :op1 ( EVENT-6 / cocked
+             :MOD ( mod-24 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( ENTITY-2 / head
+                    :POS ( REF2-3 / his))
+             :TO ( ENTITY-4 / side
+                    :CARDINAL ( ATTRIB-5 / one)))
+      :op2 ( EVENT-9 / shut
+             :MOD ( mod-25 / past)
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-7 / eye
+                    :CARDINAL ( ATTRIB-8 / one)))
+      :op3 ( CONJ-22 / and
+             :op1 ( EVENT-21 / put
+                    :MOD ( mod-26 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-10 / one
+                           :DEFINITE ( ATTRIB-11 / the)
+                           :ATTRIBUTE ( ATTRIB-12 / other))
+                    :TO ( ENTITY-13 / hole
+                           :DEFINITE ( ATTRIB-14 / the)))
+             :op2 ( EVENT-20 / EVENT
+                    :ATTRIBUTE ( ATTRIB-15 / like
+                           :COMP ( ENTITY-16 / possum
+                                  :ARG0-of ( EVENT-19 / looking
+                                         :DOWN ( ENTITY-18 / jug))))
+                    :ARG0 ENTITY-10)))
+
+# ::id 85_fiction_TWAIN-1880;NE
+# ::snt then he glanced up with his bright eyes , gave a wink or two with his wings -- which signifies gratification , you understand -- and says , " It looks like a hole ,
+( CONJ-24 / and
+      :op1 ( EVENT-5 / glanced_up
+             :MOD ( mod-25 / past)
+             :ARG0 ( REF1-1 / he)
+             :WITH ( GROUP-2 / eyes
+                    :ATTRIBUTE ( ATTRIB-4 / bright)
+                    :POS ( REF2-3 / his)))
+      :op2 ( EVENT-15 / gave
+             :MOD ( mod-26 / past)
+             :ARG0 REF1-1
+             :ARG1 ( GROUP-6 / or
+                    :op1 ( ENTITY-7 / wink)
+                    :op2 ( ENTITY-8 / ENTITY
+                           :CARDINAL ( ATTRIB-9 / two)))
+             :WITH ( GROUP-10 / wings
+                    :POS ( REF3-11 / his))
+             :ARG0-of ( EVENT-14 / signifies
+                    :ARG1 ( ENTITY-13 / gratification)))
+      :op3 ( EVENT-17 / says
+             :ARG0 REF1-1
+             :THAT ( EVENT-21 / looks
+                    :ATTRIBUTE ( ATTRIB-19 / like
+                           :COMP ( ENTITY-20 / hole))
+                    :ARG0 ( REF5-18 / it)))
+      :TMP ( TIME-27 / then))
+
+# ::id 86_fiction_TWAIN-1880;NE
+# ::snt it 's located like a hole --
+( EVENT-4 / ' s_located
+      :ATTRIBUTE ( ATTRIB-2 / like
+             :COMP ( ENTITY-3 / hole))
+      :ARG0 ( REF1-1 / it))
+
+# ::id 87_fiction_TWAIN-1880;NE
+# ::snt blamed if I do n't believe
+( CND-6 / if
+      :op1 ( EVENT-3 / do_believe
+             :domain-of ( NEG-5 / NEG)
+             :ARG0 ( REF2-2 / i))
+      :op2 ( EVENT-4 / blamed
+             :ARG1 ( REF1-1 / speaker)))
+
+# ::id 88_fiction_TWAIN-1880;NE
+# ::snt it _is_ a hole ! "
+( EVENT-3 / copula
+      :ARG0 ( REF1-1 / it)
+      :ARG1 ( ENTITY-2 / hole))
+
+# ::id 89_fiction_TWAIN-1880;NE
+# ::snt " Then he cocked his head down and took another look ;
+( CONJ-10 / and
+      :op1 ( EVENT-4 / cocked_down
+             :MOD ( mod-11 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( ENTITY-2 / head
+                    :POS ( REF2-3 / his)))
+      :op2 ( EVENT-7 / took
+             :MOD ( mod-12 / past)
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-5 / look
+                    :QUANTIFIER ( ATTRIB-6 / another)))
+      :MOD ( mod-13 / then))
+
+# ::id 90_fiction_TWAIN-1880;NE
+# ::snt he glances up perfectly joyful , this time ; winks his wings and his tail both , and says , " Oh , no , this ai n't no fat thing , I reckon !
+( CONJ-28 / and
+      :op1 ( CONJ-23 / and
+             :op1 ( EVENT-6 / glances_up
+                    :ARG0 ( REF1-1 / he))
+             :op2 ( EVENT-5 / EVENT
+                    :ATTRIBUTE ( ATTRIB-2 / perfectly_joyful
+                           :TMP ( TIME-3 / time
+                                  :DETERMINER ( ATTRIB-4 / this)))
+                    :ARG0 REF1-1))
+      :op2 ( EVENT-12 / winks
+             :ARG0 REF1-1
+             :ARG1 ( GROUP-7 / AND
+                    :op1 ( GROUP-8 / wings
+                           :POS ( REF2-9 / his))
+                    :op2 ( ENTITY-10 / tail
+                           :POS ( REF3-11 / his)))
+             :MOD ( mod-29 / both))
+      :op3 ( EVENT-14 / says
+             :ARG0 REF1-1
+             :THAT ( EVENT-16 / reckon
+                    :ARG0 ( REF4-15 / i)
+                    :THAT ( EVENT-22 / copula
+                           :domain-of ( NEG-27 / NEG)
+                           :ARG0 ( ENTITY-17 / ENTITY
+                                  :DETERMINER ( ATTRIB-18 / this))
+                           :ARG1 ( ENTITY-19 / thing
+                                  :ATTRIBUTE ( ATTRIB-21 / fat)
+                                  :QUANTIFIER ( ATTRIB-20 / no))))))
+
+# ::id 91_fiction_TWAIN-1880;NE
+# ::snt If I ai n't in luck -- Why it 's a perfectly elegant hole ! "
+( CND-9 / If
+      :op1 ( EVENT-3 / copula
+             :domain-of ( NEG-8 / NEG)
+             :ARG0 ( REF1-1 / i)
+             :IN ( ENTITY-2 / luck))
+      :op2 ( EVENT-7 / copula
+             :ARG0 ( REF2-4 / it)
+             :ARG1 ( ENTITY-5 / hole
+                    :ATTRIBUTE ( ATTRIB-6 / perfectly_elegant))))
+
+# ::id 92_fiction_TWAIN-1880;NE
+# ::snt So he flew down and got that acorn , and fetched it up and dropped it in , and was just tilting his head back , with the heavenliest smile on his face , when all of a sudden he was paralyzed into a listening attitude and smile faded gradually out of his countenance like breath off'n a razor , and the queerest look of surprise took its place .
+( CONJ-59 / AND
+      :op1 ( CONJ-44 / and
+             :op1 ( EVENT-23 / paralyzed
+                    :MOD ( mod-47 / past)
+                    :ARG1 ( REF6-20 / he)
+                    :INTO ( ENTITY-21 / attitude
+                           :ATTRIBUTE ( ATTRIB-22 / listening))
+                    :OF ( ENTITY-18 / ENTITY
+                           :ATTRIBUTE ( ATTRIB-19 / sudden)))
+             :op2 ( EVENT-30 / faded_out
+                    :MOD ( mod-49 / past)
+                    :ARG0 ( ENTITY-24 / smile)
+                    :OF ( ENTITY-25 / countenance
+                           :ATTRIBUTE ( ATTRIB-27 / like
+                                  :COMP ( ENTITY-28 / breath
+                                         :OFF_QUOTE_N ( ENTITY-29 / razor)))
+                           :POS ( REF7-26 / his))
+                    :MOD ( mod-48 / gradually))
+             :op3 ( EVENT-38 / took
+                    :MOD ( mod-50 / past)
+                    :ARG0 ( ENTITY-32 / look
+                           :DEFINITE ( ATTRIB-33 / the)
+                           :ATTRIBUTE ( ATTRIB-34 / queerest)
+                           :OF ( ENTITY-35 / surprise))
+                    :ARG1 ( ENTITY-36 / place
+                           :POS ( REF8-37 / its))))
+      :op2 ( CONJ-46 / and
+             :op1 ( EVENT-2 / flew_down
+                    :MOD ( mod-51 / past)
+                    :ARG0 ( REF1-1 / he))
+             :op2 ( EVENT-5 / got
+                    :MOD ( mod-52 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-3 / acorn
+                           :DETERMINER ( ATTRIB-4 / that)))
+             :op3 ( EVENT-7 / fetched_up
+                    :MOD ( mod-53 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( REF2-6 / it))
+             :op4 ( EVENT-9 / dropped_in
+                    :MOD ( mod-54 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( REF3-8 / it))
+             :op5 ( EVENT-39 / was_tilting
+                    :MOD ( mod-55 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-10 / head
+                           :POS ( REF4-11 / his))
+                    :WITH ( ENTITY-12 / smile
+                           :DEFINITE ( ATTRIB-13 / the)
+                           :ATTRIBUTE ( ATTRIB-14 / heavenliest)
+                           :ON ( ENTITY-15 / face
+                                  :POS ( REF5-16 / his)))
+                    :MOD ( mod-56 / back)
+                    :MOD ( mod-57 / just))
+             :MOD ( mod-58 / so)))
+
+# ::id 93_fiction_TWAIN-1880;NE
+# ::snt Then he says , " Why , I did n't hear it fall ! "
+( EVENT-2 / says
+      :ARG0 ( REF1-1 / he)
+      :THAT ( EVENT-4 / did_hear
+             :domain-of ( NEG-11 / NEG)
+             :MOD ( mod-12 / past)
+             :ARG0 ( REF2-3 / i)
+             :TOCOMP ( EVENT-6 / fall
+                    :ARG0 ( REF3-5 / it)))
+      :TMP ( TIME-13 / then))
+
+# ::id 94_fiction_TWAIN-1880;NE
+# ::snt He cocked his eye at the hole again , and took a long look ; raised up and shook his head ; stepped around to the other side of the hole and took another look from that side ; shook his head again .
+( EVENT-28 / shook
+      :MOD ( mod-41 / past)
+      :ARG0 ( REF1-1 / he
+             :ARG0-of ( CONJ-30 / and
+                    :op1 ( EVENT-6 / cocked
+                           :MOD ( mod-35 / past)
+                           :ARG1 ( ENTITY-2 / eye
+                                  :POS ( REF2-3 / his))
+                           :AT ( ENTITY-4 / hole
+                                  :DEFINITE ( ATTRIB-5 / the))
+                           :MOD ( mod-34 / again))
+                    :op2 ( EVENT-10 / took
+                           :MOD ( mod-33 / past)
+                           :ARG1 ( ENTITY-8 / look
+                                  :ATTRIBUTE ( ATTRIB-9 / long))))
+             :ARG0-of ( CONJ-31 / and
+                    :op1 ( EVENT-11 / raised_up
+                           :MOD ( mod-36 / past))
+                    :op2 ( EVENT-14 / shook
+                           :MOD ( mod-37 / past)
+                           :ARG1 ( ENTITY-12 / head
+                                  :POS ( REF3-13 / his))))
+             :ARG0-of ( CONJ-32 / and
+                    :op1 ( EVENT-20 / stepped_around
+                           :MOD ( mod-38 / past)
+                           :TO ( ENTITY-15 / side
+                                  :DEFINITE ( ATTRIB-16 / the)
+                                  :ATTRIBUTE ( ATTRIB-17 / other)
+                                  :OF ( ENTITY-18 / hole
+                                         :DEFINITE ( ATTRIB-19 / the))))
+                    :op2 ( EVENT-25 / took
+                           :MOD ( mod-39 / past)
+                           :ARG1 ( ENTITY-21 / look
+                                  :QUANTIFIER ( ATTRIB-22 / another))
+                           :FROM ( ENTITY-23 / side
+                                  :DETERMINER ( ATTRIB-24 / that)))))
+      :ARG1 ( ENTITY-26 / head
+             :POS ( REF4-27 / his))
+      :MOD ( mod-40 / again))
+
+# ::id 95_fiction_TWAIN-1880;NE
+# ::snt He studied a while ,
+( EVENT-3 / studied
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / while))
+
+# ::id 96_fiction_TWAIN-1880;NE
+# ::snt then he just went into the Details -- walked round and round the hole and spied into it from every point of the compass .
+( CONJ-21 / and
+      :op1 ( EVENT-4 / went
+             :MOD ( mod-23 / past)
+             :ARG0 ( REF1-1 / he)
+             :INTO ( GROUP-2 / Details
+                    :DEFINITE ( ATTRIB-3 / the))
+             :MOD ( mod-22 / just))
+      :op2 ( CONJ-20 / and
+             :op1 ( EVENT-10 / walked
+                    :MOD ( mod-24 / past)
+                    :ARG0 REF1-1)
+             :op2 ( EVENT-9 / EVENT
+                    :ATTRIBUTE ( ATTRIB-6 / round_and_round
+                           :COMP ( ENTITY-7 / hole
+                                  :DEFINITE ( ATTRIB-8 / the)))
+                    :ARG0 REF1-1))
+      :op3 ( EVENT-16 / spied
+             :MOD ( mod-25 / past)
+             :ARG0 REF1-1
+             :INTO ( REF2-11 / it)
+             :FROM ( ENTITY-12 / point
+                    :OF ( ENTITY-14 / compass
+                           :DEFINITE ( ATTRIB-15 / the))
+                    :QUANTIFIER ( ATTRIB-13 / every)))
+      :TMP ( TIME-26 / then))
+
+# ::id 97_fiction_TWAIN-1880;NE
+# ::snt No use .
+( ENTITY-1 / use
+      :QUANTIFIER ( ATTRIB-2 / no))
+
+# ::id 98_fiction_TWAIN-1880;NE
+# ::snt Now he took a thinking attitude on the comb of the roof and scratched the back of his head with his right foot a minute , and finally says ,
+( CONJ-22 / and
+      :op1 ( EVENT-8 / took
+             :MOD ( mod-23 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( ENTITY-2 / attitude
+                    :ATTRIBUTE ( ATTRIB-3 / thinking))
+             :ON ( ENTITY-4 / comb
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :OF ( ENTITY-6 / roof
+                           :DEFINITE ( ATTRIB-7 / the))))
+      :op2 ( EVENT-17 / scratched
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-9 / back
+                    :DEFINITE ( ATTRIB-10 / the)
+                    :OF ( ENTITY-11 / head
+                           :POS ( REF2-12 / his)))
+             :TMP ( TIME-16 / minute)
+             :WITH ( ENTITY-13 / foot
+                    :ATTRIBUTE ( ATTRIB-15 / right)
+                    :POS ( REF3-14 / his)))
+      :op3 ( EVENT-18 / says
+             :ARG0 REF1-1
+             :MOD ( mod-24 / finally))
+      :MOD ( mod-25 / now))
+
+# ::id 99_fiction_TWAIN-1880;NE
+# ::snt " Well , it 's too many for _me_ ,
+( EVENT-4 / copula
+      :ATTRIBUTE ( ATTRIB-2 / too_many
+             :FOR ( REF2-3 / me_))
+      :ARG0 ( REF1-1 / it))
+
+# ::id 100_fiction_TWAIN-1880;NE
+# ::snt that 's certain ;
+( EVENT-4 / copula
+      :ATTRIBUTE ( ATTRIB-3 / certain)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / that)))
+
+# ::id 101_fiction_TWAIN-1880;NE
+# ::snt must be a mighty long hole ;
+( EVENT-3 / copula
+      :domain-of ( MD-4 / must)
+      :ARG0 ( ENTITY-1 / hole
+             :ATTRIBUTE ( ATTRIB-2 / mighty_long)))
+
+# ::id 102_fiction_TWAIN-1880;NE
+# ::snt however , I ai n't got no time to fool around here ,
+( EVENT-6 / ai_got
+      :domain-of ( NEG-9 / NEG)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / time
+             :QUANTIFIER ( ATTRIB-3 / no)
+             :TOCOMP ( EVENT-4 / fool_around
+                    :LOC ( LOC-10 / here)))
+      :MOD ( mod-11 / however))
+
+# ::id 103_fiction_TWAIN-1880;NE
+# ::snt I got to " tend to business " ;
+( EVENT-2 / got
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / i)
+      :TOCOMP ( EVENT-4 / tend
+             :ARG0 REF1-1
+             :TO ( ENTITY-3 / business)))
+
+# ::id 104_fiction_TWAIN-1880;NE
+# ::snt I reckon it 's all right --
+( EVENT-2 / reckon
+      :ARG0 ( REF1-1 / i)
+      :THAT ( EVENT-5 / copula
+             :ATTRIBUTE ( ATTRIB-4 / all_right)
+             :ARG0 ( REF2-3 / it)))
+
+# ::id 105_fiction_TWAIN-1880;NE
+# ::snt chance it , anyway . "
+( EVENT-3 / chance
+      :ARG0 ( REF1-1 / con)
+      :ARG1 ( REF2-2 / it)
+      :MOD ( mod-1 / anyway))
+
+# ::id 106_fiction_TWAIN-1880;NE
+# ::snt " So he flew off and fetched another acorn and dropped it in , and tried to flirt his eye to the hole quick enough to see what become of it ,
+( CONJ-24 / and
+      :op1 ( EVENT-2 / flew_off
+             :MOD ( mod-25 / past)
+             :ARG0 ( REF1-1 / he))
+      :op2 ( EVENT-5 / fetched
+             :MOD ( mod-26 / past)
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-3 / acorn
+                    :QUANTIFIER ( ATTRIB-4 / another)))
+      :op3 ( EVENT-7 / dropped_in
+             :MOD ( mod-27 / past)
+             :ARG0 REF1-1
+             :ARG1 ( REF2-6 / it))
+      :op4 ( EVENT-8 / tried
+             :MOD ( mod-30 / past)
+             :ARG0 REF1-1
+             :TOCOMP ( EVENT-16 / flirt
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-9 / eye
+                           :POS ( REF3-10 / his))
+                    :TO ( ENTITY-11 / hole
+                           :DEFINITE ( ATTRIB-12 / the))
+                    :MOD ( mod-28 / quick_enough
+                           :TOCOMP ( EVENT-13 / see
+                                  :THAT ( EVENT-15 / become
+                                         :domain-of ( QUEST-22 / QUEST)
+                                         :MOD ( mod-29 / past)
+                                         :ARG0 ( ENTITY_UNK-2 / penman-unknown)
+                                         :OF ( REF4-14 / it))))))
+      :MOD ( mod-31 / so))
+
+# ::id 107_fiction_TWAIN-1880;NE
+# ::snt but he was too late .
+( EVENT-3 / copula
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-2 / too_late)
+      :ARG0 ( REF1-1 / he))
+
+# ::id 108_fiction_TWAIN-1880;NE
+# ::snt He held his eye there as much as a minute ;
+( EVENT-7 / held
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / eye
+             :POS ( REF2-3 / his))
+      :TMP ( TIME-4 / TIME
+             :AS ( ENTITY-6 / minute)
+             :QUANTIFIER ( ATTRIB-5 / as_much))
+      :LOC ( LOC-1 / there))
+
+# ::id 109_fiction_TWAIN-1880;NE
+# ::snt then he raised up and sighed , and says ,
+( CONJ-7 / and
+      :op1 ( EVENT-2 / raised_up
+             :MOD ( mod-8 / past)
+             :ARG0 ( REF1-1 / he))
+      :op2 ( EVENT-3 / sighed
+             :MOD ( mod-9 / past)
+             :ARG0 REF1-1)
+      :op3 ( EVENT-4 / says
+             :ARG0 REF1-1)
+      :MOD ( mod-10 / then))
+
+# ::id 110_fiction_TWAIN-1880;NE
+# ::snt " Confound it , I do n't seem to understand this thing , no way ;
+( EVENT-2 / do_seem
+      :domain-of ( NEG-7 / NEG)
+      :ARG0 ( REF2-1 / i)
+      :TOCOMP ( EVENT-5 / understand
+             :ARG0 REF2-1
+             :ARG1 ( ENTITY-3 / thing
+                    :DETERMINER ( ATTRIB-4 / this))
+             :MOD ( mod-8 / no_way)))
+
+# ::id 111_fiction_TWAIN-1880;NE
+# ::snt however , I 'll tackle her again . "
+( EVENT-3 / tackle
+      :domain-of ( MD-6 / ' ll)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( REF2-2 / her)
+      :MOD ( mod-7 / however)
+      :MOD ( mod-8 / again))
+
+# ::id 112_fiction_TWAIN-1880;NE
+# ::snt He fetched another acorn , and done his level best to see what become of it ,
+( CONJ-16 / and
+      :op1 ( EVENT-11 / fetched
+             :MOD ( mod-17 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( ENTITY-2 / acorn
+                    :QUANTIFIER ( ATTRIB-3 / another)))
+      :op2 ( EVENT-10 / done
+             :ATTRIBUTE ( ATTRIB-4 / best
+                    :COMP ( ENTITY-5 / level
+                           :POS ( REF2-6 / his))
+                    :TOCOMP ( EVENT-7 / see
+                           :THAT ( EVENT-9 / become
+                                  :domain-of ( QUEST-15 / QUEST)
+                                  :MOD ( mod-18 / past)
+                                  :ARG0 ( ENTITY_UNK-2 / penman-unknown)
+                                  :OF ( REF3-8 / it))))
+             :ARG1 ENTITY-2))
+
+# ::id 113_fiction_TWAIN-1880;NE
+# ::snt but he could n't .
+( EVENT-2 / EVENT
+      :domain-of ( MD-4 / could)
+      :domain-of ( NEG-3 / NEG)
+      :ARG0 ( REF1-1 / he))
+
+# ::id 114_fiction_TWAIN-1880;NE
+# ::snt He says ,
+( EVENT-2 / says
+      :ARG0 ( REF1-1 / he))
+
+# ::id 115_fiction_TWAIN-1880;NE
+# ::snt " Well , I never struck no such a hole as this before ;
+( EVENT-7 / struck
+      :MOD ( mod-3 / past)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / before
+             :MOD ( mod-1 / hole
+                    :ATTRIBUTE ( ATTRIB-4 / such)
+                    :AS ( ENTITY-5 / ENTITY
+                           :DETERMINER ( ATTRIB-6 / this))
+                    :QUANTIFIER ( ATTRIB-3 / no)))
+      :MOD ( mod-2 / never))
+
+# ::id 116_fiction_TWAIN-1880;NE
+# ::snt I 'm of the opinion it 's a totally new kind of a hole . "
+( EVENT-9 / copula
+      :ARG0 ( REF1-1 / i)
+      :OF ( ENTITY-2 / opinion
+             :DEFINITE ( ATTRIB-3 / the)
+             :THAT ( EVENT-8 / copula
+                    :ARG0 ( REF2-4 / it)
+                    :ARG1 ( ENTITY-5 / kind
+                           :ATTRIBUTE ( ATTRIB-6 / totally_new)
+                           :OF ( ENTITY-7 / hole)))))
+
+# ::id 117_fiction_TWAIN-1880;NE
+# ::snt Then he begun to get mad .
+( EVENT-2 / begun
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / he)
+      :TOCOMP ( EVENT-4 / get
+             :ATTRIBUTE ( ATTRIB-3 / mad)
+             :ARG0 REF1-1)
+      :MOD ( mod-2 / then))
+
+# ::id 118_fiction_TWAIN-1880;NE
+# ::snt He held in for a spell , walking up and down the comb of the roof and shaking his head and muttering to himself ;
+( CONJ-15 / and
+      :op1 ( EVENT-13 / held_in
+             :MOD ( mod-16 / past)
+             :ARG0 ( REF1-1 / he)
+             :FOR ( ENTITY-2 / spell))
+      :op2 ( CONJ-14 / and
+             :op1 ( EVENT-7 / walking
+                    :ARG0 REF1-1
+                    :UP_AND_DOWN ( ENTITY-3 / comb
+                           :DEFINITE ( ATTRIB-4 / the)
+                           :OF ( ENTITY-5 / roof
+                                  :DEFINITE ( ATTRIB-6 / the))))
+             :op2 ( EVENT-10 / shaking
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-8 / head
+                           :POS ( REF2-9 / his)))
+             :op3 ( EVENT-12 / muttering
+                    :ARG0 REF1-1
+                    :TO ( REF3-11 / himself))))
+
+# ::id 119_fiction_TWAIN-1880;NE
+# ::snt but his feelings got the upper hand of him , presently ,
+( EVENT-7 / got
+      :MOD ( mod-2 / past)
+      :ARG0 ( GROUP-1 / feelings
+             :POS ( REF1-2 / his))
+      :ARG1 ( ENTITY-3 / hand
+             :DEFINITE ( ATTRIB-4 / the)
+             :ATTRIBUTE ( ATTRIB-5 / upper)
+             :OF ( REF2-6 / him))
+      :MOD ( mod-1 / presently))
+
+# ::id 120_fiction_TWAIN-1880;NE
+# ::snt and he broke loose and cussed himself black in the face .
+( CONJ-11 / and
+      :op1 ( EVENT-3 / broke
+             :MOD ( mod-12 / past)
+             :ATTRIBUTE ( ATTRIB-2 / loose)
+             :ARG0 ( REF1-1 / he))
+      :op2 ( CONJ-10 / and
+             :op1 ( EVENT-9 / cussed
+                    :MOD ( mod-13 / past)
+                    :ARG0 REF1-1
+                    :ARG1 ( REF2-4 / himself))
+             :op2 ( EVENT-8 / EVENT
+                    :ATTRIBUTE ( ATTRIB-5 / black
+                           :IN ( ENTITY-6 / face
+                                  :DEFINITE ( ATTRIB-7 / the)))
+                    :ARG0 REF2-4)))
+
+# ::id 121_fiction_TWAIN-1880;NE
+# ::snt I never see a bird take on so about a little thing .
+( EVENT-2 / see
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / i)
+      :TOCOMP ( EVENT-6 / take_on
+             :ARG0 ( ENTITY-3 / bird)
+             :ABOUT ( ENTITY-4 / thing
+                    :ATTRIBUTE ( ATTRIB-5 / little))
+             :MOD ( mod-1 / so))
+      :MOD ( mod-3 / never))
+
+# ::id 122_fiction_TWAIN-1880;NE
+# ::snt When he got through he walks to the hole and looks in again for half a minute ;
+( EVENT-3 / got_through
+      :MOD ( mod-17 / past)
+      :ARG0 ( REF1-2 / he)
+      :TMP ( CONJ-15 / and
+             :op1 ( EVENT-8 / walks
+                    :ARG0 ( REF2-5 / he)
+                    :TO ( ENTITY-6 / hole
+                           :DEFINITE ( ATTRIB-7 / the)))
+             :op2 ( EVENT-11 / looks_in
+                    :ARG0 REF2-5
+                    :FOR ( ENTITY-9 / minute
+                           :QUANTIFIER ( ATTRIB-10 / half))
+                    :MOD ( mod-16 / again))))
+
+# ::id 123_fiction_TWAIN-1880;NE
+# ::snt then he says ,
+( EVENT-2 / says
+      :ARG0 ( REF1-1 / he)
+      :TMP ( TIME-1 / then))
+
+# ::id 124_fiction_TWAIN-1880;NE
+# ::snt " Well , you 're a long hole , and a deep hole , and a mighty singular hole altogether --
+( EVENT-10 / copula
+      :ARG0 ( REF1-1 / you)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / hole
+                    :ATTRIBUTE ( ATTRIB-4 / long))
+             :op2 ( ENTITY-5 / hole
+                    :ATTRIBUTE ( ATTRIB-6 / deep))
+             :op3 ( ENTITY-7 / hole
+                    :ATTRIBUTE ( ATTRIB-9 / singular)
+                    :ATTRIBUTE ( ATTRIB-8 / mighty)))
+      :MOD ( mod-1 / altogether))
+
+# ::id 125_fiction_TWAIN-1880;NE
+# ::snt but I 've started in to fill you ,
+( EVENT-2 / ' ve * ted
+      :ARG0 ( REF1-1 / i)
+      :TOCOMP ( EVENT-4 / fill_in
+             :ARG0 REF1-1
+             :ARG1 ( REF2-3 / you)))
+
+# ::id 126_fiction_TWAIN-1880;NE
+# ::snt and I 'm damned if I _do n't_ fill you , if it takes a hundred years ! "
+( CND-13 / if
+      :op1 ( CONJ-14 / AND
+             :op1 ( EVENT-4 / do_fill
+                    :domain-of ( NEG-12 / NEG)
+                    :ARG0 ( REF2-2 / i)
+                    :ARG1 ( REF3-3 / you))
+             :op2 ( EVENT-8 / takes
+                    :ARG0 ( REF4-5 / it)
+                    :ARG1 ( TIME-6 / years
+                           :CARDINAL ( ATTRIB-7 / hundred))))
+      :op2 ( EVENT-9 / damned
+             :ARG1 ( REF1-1 / i)))
+
+# ::id 127_fiction_TWAIN-1880;NE
+# ::snt " And with that , away he went .
+( EVENT-4 / went
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-3 / he)
+      :WITH ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / that))
+      :DIR ( DIR-1 / away))
+
+# ::id 128_fiction_TWAIN-1880;NE
+# ::snt You never see a bird work so since you was born .
+( CRD-10 / since
+      :op1 ( EVENT-3 / born
+             :MOD ( mod-11 / past)
+             :ARG1 ( REF2-2 / you))
+      :op2 ( EVENT-4 / see
+             :ARG0 ( REF1-1 / you)
+             :TOCOMP ( EVENT-6 / work
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-5 / bird)
+                    :MOD ( mod-12 / so)))
+      :MOD ( mod-13 / never))
+
+# ::id 129_fiction_TWAIN-1880;NE
+# ::snt He laid into his work like a nigger ,
+( EVENT-6 / laid
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / he)
+      :INTO ( ENTITY-2 / work
+             :ATTRIBUTE ( ATTRIB-4 / like
+                    :COMP ( ENTITY-5 / nigger))
+             :POS ( REF2-3 / his)))
+
+# ::id 130_fiction_TWAIN-1880;NE
+# ::snt and the way he hove acorns into that hole for about two hours and a half was one of the most exciting and astonishing spectacles I ever struck .
+( EVENT-21 / copula
+      :MOD ( mod-4 / past)
+      :ARG0 ( ENTITY-1 / way
+             :DEFINITE ( ATTRIB-2 / the)
+             :THAT ( EVENT-12 / hove
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( REF1-3 / he)
+                    :ARG1 ( GROUP-4 / acorns)
+                    :FOR ( GROUP-7 / AND
+                           :op1 ( GROUP-8 / hours
+                                  :CARDINAL ( ATTRIB-9 / about_two))
+                           :op2 ( ENTITY-10 / ENTITY
+                                  :QUANTIFIER ( ATTRIB-11 / half)))
+                    :INTO ( ENTITY-5 / hole
+                           :DETERMINER ( ATTRIB-6 / that))))
+      :ARG1 ( ENTITY-13 / ENTITY
+             :OF ( GROUP-15 / spectacles
+                    :DEFINITE ( ATTRIB-16 / the)
+                    :ATTRIBUTE ( ATTRIB-17 / most_exciting_and_astonishing
+                           :THAT ( EVENT-19 / struck
+                                  :MOD ( mod-3 / past)
+                                  :ARG0 ( REF2-18 / i)
+                                  :MOD ( mod-2 / ever))))
+             :CARDINAL ( ATTRIB-14 / one)))
+
+# ::id 131_fiction_TWAIN-1880;NE
+# ::snt He never stopped to take a look anymore --
+( EVENT-2 / stopped
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :TOCOMP ( EVENT-4 / take
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-3 / look)
+             :MOD ( mod-1 / anymore))
+      :MOD ( mod-3 / never))
+
+# ::id 132_fiction_TWAIN-1880;NE
+# ::snt he just hove 'em in and went for more .
+( CONJ-8 / and
+      :op1 ( EVENT-3 / hove_in
+             :MOD ( mod-10 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( REF2-2 / ' em)
+             :MOD ( mod-9 / just))
+      :op2 ( EVENT-7 / went
+             :MOD ( mod-11 / past)
+             :ARG0 REF1-1
+             :FOR ( ENTITY-5 / ENTITY
+                    :QUANTIFIER ( ATTRIB-6 / more))))
+
+# ::id 133_fiction_TWAIN-1880;NE
+# ::snt Well , at last he could hardly flop his wings ,
+( EVENT-5 / flop
+      :domain-of ( MD-7 / could)
+      :ARG0 ( REF1-2 / he)
+      :ARG1 ( GROUP-3 / wings
+             :POS ( REF2-4 / his))
+      :AT ( ATTRIB-1 / last)
+      :MOD ( mod-8 / hardly))
+
+# ::id 134_fiction_TWAIN-1880;NE
+# ::snt he was so tuckered out .
+( EVENT-2 / was_tuckered_out
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :MOD ( mod-1 / so))
+
+# ::id 135_fiction_TWAIN-1880;NE
+# ::snt He comes a-dropping down , once more , sweating like an ice-pitcher , dropped his acorn in and says ,
+( CONJ-17 / and
+      :op1 ( CONJ-16 / and
+             :op1 ( CONJ-15 / and
+                    :op1 ( EVENT-10 / comes
+                           :ARG0 ( REF1-1 / he)
+                           :TMP ( TIME-4 / TIME
+                                  :ATTRIBUTE ( ATTRIB-5 / once)
+                                  :QUANTIFIER ( ATTRIB-6 / more)))
+                    :op2 ( EVENT-9 / sweating
+                           :ATTRIBUTE ( ATTRIB-7 / like
+                                  :COMP ( ENTITY-8 / ice-pitcher))
+                           :ARG0 REF1-1))
+             :op2 ( EVENT-2 / a-dropping
+                    :ARG0 REF1-1
+                    :DIR ( DIR-18 / down)))
+      :op2 ( EVENT-13 / dropped_in
+             :MOD ( mod-19 / past)
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-11 / acorn
+                    :POS ( REF2-12 / his)))
+      :op3 ( EVENT-14 / says
+             :ARG0 REF1-1))
+
+# ::id 136_fiction_TWAIN-1880;NE
+# ::snt ' _Now_ I guess I 've got the bulge on you by this time ! '
+( EVENT-2 / guess
+      :ARG0 ( REF1-1 / i)
+      :THAT ( EVENT-9 / ' ve_got
+             :ARG0 ( REF2-3 / i)
+             :ARG1 ( ENTITY-4 / bulge
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :ON ( REF3-6 / you))
+             :BY ( ENTITY-7 / time
+                    :DETERMINER ( ATTRIB-8 / this)))
+      :MOD ( mod-1 / now))
+
+# ::id 137_fiction_TWAIN-1880;NE
+# ::snt So he bent down for a look .
+( EVENT-3 / bent_down
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :FOR ( ENTITY-2 / look)
+      :MOD ( mod-1 / so))
+
+# ::id 138_fiction_TWAIN-1880;NE
+# ::snt If you 'll believe me , when his head come up again he was just pale with rage .
+( CND-16 / If
+      :op1 ( EVENT-3 / believe
+             :domain-of ( MD-15 / ' ll)
+             :ARG0 ( REF1-1 / you)
+             :ARG1 ( REF2-2 / me))
+      :op2 ( EVENT-13 / copula
+             :MOD ( mod-17 / past)
+             :ATTRIBUTE ( ATTRIB-11 / just_pale
+                    :WITH ( ENTITY-12 / rage))
+             :ARG0 ( REF4-10 / he)
+             :TMP-of ( EVENT-7 / come_up
+                    :MOD ( mod-20 / past)
+                    :ARG0 ( ENTITY-5 / head
+                           :POS ( REF3-6 / his))
+                    :MOD ( mod-19 / again))))
+
+# ::id 139_fiction_TWAIN-1880;NE
+# ::snt He says ,
+( EVENT-2 / says
+      :ARG0 ( REF1-1 / he))
+
+# ::id 140_fiction_TWAIN-1880;NE
+# ::snt " I 've shoveled acorns enough in there to keep the family thirty years ,
+( EVENT-10 / ' ve_shoveled
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( GROUP-2 / acorns)
+      :PRP ( EVENT-9 / keep
+             :ARG0 ( GROUP-2 / enough)
+             :ARG1 ( ENTITY-5 / family
+                    :DEFINITE ( ATTRIB-6 / the))
+             :TMP ( GROUP-7 / years
+                    :CARDINAL ( ATTRIB-8 / thirty)))
+      :IN ( ATTRIB-3 / there))
+
+# ::id 141_fiction_TWAIN-1880;NE
+# ::snt and if I can see a sign of one of 'em I wish I may land in a museum with a belly full of sawdust in two minutes ! "
+( CND-20 / if
+      :op1 ( EVENT-6 / see
+             :domain-of ( MD-17 / can)
+             :ARG0 ( REF1-1 / i)
+             :ARG1 ( ENTITY-2 / sign
+                    :OF ( ENTITY-3 / ENTITY
+                           :OF ( REF2-5 / ' em)
+                           :CARDINAL ( ATTRIB-4 / one))))
+      :op2 ( EVENT-8 / wish
+             :ARG0 ( REF3-7 / i)
+             :THAT ( EVENT-16 / land
+                    :domain-of ( MD-19 / may)
+                    :ARG0 ( REF4-9 / i)
+                    :IN ( GROUP-14 / minutes
+                           :CARDINAL ( ATTRIB-15 / two))
+                    :WITH ( ENTITY-11 / belly
+                           :ATTRIBUTE ( ATTRIB-12 / full
+                                  :OF ( ENTITY-13 / sawdust)))
+                    :IN ( ENTITY-10 / museum))))
+
+# ::id 142_fiction_TWAIN-1880;NE
+# ::snt " He just had strength enough to crawl up on to the comb and lean his back agin the chimbly ,
+( EVENT-11 / had
+      :MOD ( mod-16 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / enough
+             :MOD ( mod-15 / strength
+                    :TOCOMP ( CONJ-14 / and
+                           :op1 ( EVENT-5 / crawl_up
+                                  :ON_TO ( ENTITY-3 / comb
+                                         :DEFINITE ( ATTRIB-4 / the)))
+                           :op2 ( EVENT-10 / lean
+                                  :ARG1 ( ENTITY-6 / back
+                                         :POS ( REF2-7 / his))
+                                  :AGIN ( ENTITY-8 / chimbly
+                                         :DEFINITE ( ATTRIB-9 / the))))))
+      :MOD ( mod-17 / just))
+
+# ::id 143_fiction_TWAIN-1880;NE
+# ::snt and then he collected his impressions and begun to free his mind .
+( CONJ-11 / and
+      :op1 ( EVENT-4 / collected
+             :MOD ( mod-12 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( GROUP-2 / impressions
+                    :POS ( REF2-3 / his)))
+      :op2 ( EVENT-5 / begun
+             :MOD ( mod-13 / past)
+             :ARG0 REF1-1
+             :TOCOMP ( EVENT-8 / free
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-6 / mind
+                           :POS ( REF3-7 / his))))
+      :TMP ( TIME-14 / then))
+
+# ::id 144_fiction_TWAIN-1880;NE
+# ::snt I see in a second that what I had mistook for profanity in the mines was only just the rudiments , as you may say .
+( EVENT-3 / see
+      :ARG0 ( REF1-1 / i)
+      :IN ( ENTITY-2 / second)
+      :THAT ( EVENT-18 / copula
+             :MOD ( mod-22 / past)
+             :ARG0 ( ENTITY-4 / ENTITY
+                    :ARG1-of ( EVENT-10 / had_mistook
+                           :MOD ( mod-21 / past)
+                           :ARG0 ( REF2-6 / i)
+                           :IN ( GROUP-8 / mines
+                                  :DEFINITE ( ATTRIB-9 / the))
+                           :FOR ( ENTITY-7 / profanity)))
+             :ARG1 ( GROUP-11 / rudiments
+                    :DEFINITE ( ATTRIB-14 / the)
+                    :ATTRIBUTE ( ATTRIB-13 / just)
+                    :AS ( EVENT-17 / say
+                           :domain-of ( MD-20 / may)
+                           :ARG0 ( REF3-16 / you))
+                    :QUANTIFIER ( ATTRIB-12 / only))))
+
+# ::id 145_fiction_TWAIN-1880;NE
+# ::snt " Another jay was going by , and heard him doing his devotions , and stops to inquire what was up .
+( CONJ-17 / and
+      :op1 ( EVENT-3 / was_going_by
+             :MOD ( mod-18 / past)
+             :ARG0 ( ENTITY-1 / jay
+                    :QUANTIFIER ( ATTRIB-2 / another)))
+      :op2 ( CONJ-12 / and
+             :op1 ( EVENT-8 / heard
+                    :MOD ( mod-19 / past)
+                    :ARG0 ENTITY-1
+                    :ARG1 ( REF1-4 / him))
+             :op2 ( EVENT-7 / doing
+                    :ARG0 REF1-4
+                    :ARG1 ( GROUP-5 / devotions
+                           :POS ( REF2-6 / his))))
+      :op3 ( EVENT-9 / stops
+             :ARG0 ENTITY-1
+             :TOCOMP ( EVENT-10 / inquire
+                    :ARG0 ENTITY-1
+                    :THAT ( EVENT-11 / copula_up
+                           :domain-of ( QUEST-16 / QUEST)
+                           :MOD ( mod-20 / past)
+                           :ARG0 ( ENTITY_UNK-2 / penman-unknown)))))
+
+# ::id 146_fiction_TWAIN-1880;NE
+# ::snt The sufferer told him the whole circumstance , and says ,
+( CONJ-9 / and
+      :op1 ( EVENT-7 / told
+             :MOD ( mod-10 / past)
+             :ARG0 ( ENTITY-1 / sufferer
+                    :DEFINITE ( ATTRIB-2 / the))
+             :ARG1 ( ENTITY-4 / circumstance
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :ATTRIBUTE ( ATTRIB-6 / whole))
+             :ARG2 ( REF1-3 / him))
+      :op2 ( EVENT-8 / says
+             :ARG0 ENTITY-1))
+
+# ::id 147_fiction_TWAIN-1880;NE
+# ::snt " Now yonder 's the hole ,
+( EVENT-3 / copula
+      :ARG0 ( ENTITY-1 / hole
+             :DEFINITE ( ATTRIB-2 / the))
+      :TMP ( TIME-1 / now)
+      :LOC ( LOC-2 / yonder))
+
+# ::id 148_fiction_TWAIN-1880;NE
+# ::snt and if you do n't believe me , go and look for yourself . "
+( CND-9 / if
+      :op1 ( EVENT-3 / do_believe
+             :domain-of ( NEG-7 / NEG)
+             :ARG0 ( REF1-1 / you)
+             :ARG1 ( REF2-2 / me))
+      :op2 ( CONJ-8 / and
+             :op1 ( EVENT-4 / go)
+             :op2 ( EVENT-6 / look
+                    :FOR ( REF3-5 / yourself)))
+      :domain-of ( IMPERATIVE-10 / IMPERATIVE))
+
+# ::id 149_fiction_TWAIN-1880;NE
+# ::snt So this fellow went and looked , and comes back and says ,
+( CONJ-13 / and
+      :op1 ( CONJ-11 / and
+             :op1 ( EVENT-3 / went
+                    :MOD ( mod-14 / past)
+                    :ARG0 ( ENTITY-1 / fellow
+                           :DETERMINER ( ATTRIB-2 / this)))
+             :op2 ( EVENT-4 / looked
+                    :MOD ( mod-15 / past)
+                    :ARG0 ENTITY-1))
+      :op2 ( CONJ-12 / and
+             :op1 ( EVENT-5 / comes_back
+                    :ARG0 ENTITY-1)
+             :op2 ( EVENT-6 / says
+                    :ARG0 ENTITY-1))
+      :MOD ( mod-16 / so))
+
+# ::id 150_fiction_TWAIN-1880;NE
+# ::snt " How many did you say you put in there ? "
+( EVENT-3 / did_say
+      :domain-of ( QUEST-7 / QUEST)
+      :MOD ( mod-8 / past)
+      :ARG0 ( REF1-2 / you)
+      :ARG1 ( ENTITY-1 / ENTITY
+             :QUANTIFIER ( ENTITY_UNK-2 / penman-unknown
+                    :ATTRIBUTE ( ATTRIB / many)))
+      :THAT ( EVENT-6 / put
+             :ARG0 ( REF2-4 / you)
+             :IN ( ATTRIB-5 / there)))
+
+# ::id 151_fiction_TWAIN-1880;NE
+# ::snt " Not any less than two tons , " says the sufferer .
+( EVENT-3 / says
+      :ARG0 ( ENTITY-1 / sufferer
+             :DEFINITE ( ATTRIB-2 / the))
+      :THAT ( EVENT-8 / EVENT
+             :ARG0 ( ENTITY-4 / ENTITY
+                    :THAN ( GROUP-6 / tons
+                           :CARDINAL ( ATTRIB-7 / two))
+                    :QUANTIFIER ( ATTRIB-5 / not_any_less))))
+
+# ::id 152_fiction_TWAIN-1880;NE
+# ::snt The other jay went and looked again .
+( CONJ-8 / and
+      :op1 ( EVENT-4 / went
+             :MOD ( mod-9 / past)
+             :ARG0 ( ENTITY-1 / jay
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :ATTRIBUTE ( ATTRIB-3 / other)))
+      :op2 ( EVENT-5 / looked
+             :MOD ( mod-10 / past)
+             :ARG0 ENTITY-1)
+      :MOD ( mod-11 / again))
+
+# ::id 153_fiction_TWAIN-1880;NE
+# ::snt He could n't seem to make it out ,
+( EVENT-2 / seem
+      :domain-of ( MD-6 / could)
+      :domain-of ( NEG-5 / NEG)
+      :ARG0 ( REF1-1 / he)
+      :TOCOMP ( EVENT-4 / make_out
+             :ARG0 REF1-1
+             :ARG1 ( REF2-3 / it)))
+
+# ::id 154_fiction_TWAIN-1880;NE
+# ::snt so he raised a yell ,
+( EVENT-3 / raised
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / yell))
+
+# ::id 155_fiction_TWAIN-1880;NE
+# ::snt and three more jays come .
+( EVENT-3 / come
+      :ARG0 ( GROUP-1 / jays
+             :QUANTIFIER ( ATTRIB-2 / three_more)))
+
+# ::id 156_fiction_TWAIN-1880;NE
+# ::snt They all examined the hole ,
+( EVENT-5 / examined
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-2 / they
+             :QUANTIFIER ( ATTRIB-1 / all))
+      :ARG1 ( ENTITY-3 / hole
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 157_fiction_TWAIN-1880;NE
+# ::snt they all made the sufferer tell it over again ,
+( EVENT-3 / made
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-2 / they
+             :QUANTIFIER ( ATTRIB-1 / all))
+      :TOCOMP ( EVENT-7 / tell_over
+             :ARG0 ( ENTITY-4 / sufferer
+                    :DEFINITE ( ATTRIB-5 / the))
+             :ARG1 ( REF2-6 / it)
+             :MOD ( mod-1 / again)))
+
+# ::id 158_fiction_TWAIN-1880;NE
+# ::snt then they all discussed it , and got off as many leather-headed opinions about it as an average crowd of humans could have done .
+( CONJ-20 / and
+      :op1 ( EVENT-4 / discussed
+             :MOD ( mod-21 / past)
+             :ARG0 ( REF1-2 / they)
+             :ARG1 ( REF2-3 / it))
+      :op2 ( EVENT-16 / got_off
+             :MOD ( mod-22 / past)
+             :ARG0 ( REF1-2 / REF1
+                    :QUANTIFIER ( ATTRIB-1 / all))
+             :ARG1 ( GROUP-5 / opinions
+                    :ATTRIBUTE ( ATTRIB-8 / leather-headed)
+                    :ATTRIBUTE ( ATTRIB-6 / as)
+                    :AS ( DEGREE-10 / DEGREE
+                           :ARG1-of ( EVENT-15 / have_done
+                                  :domain-of ( MD-18 / could)
+                                  :ARG0 ( ENTITY-12 / crowd
+                                         :ATTRIBUTE ( ATTRIB-13 / average)
+                                         :OF ( GROUP-14 / humans))))
+                    :ABOUT ( REF3-9 / it)
+                    :QUANTIFIER ( ATTRIB-7 / many)))
+      :MOD ( mod-23 / then))
+
+# ::id 159_fiction_TWAIN-1880;NE
+# ::snt " They called in more jays ;
+( EVENT-4 / called
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / they)
+      :IN ( GROUP-2 / jays
+             :QUANTIFIER ( ATTRIB-3 / more)))
+
+# ::id 160_fiction_TWAIN-1880;NE
+# ::snt then more and more , till pretty soon this whole region 'peared to have a blue flush about it .
+( EVENT-7 / ' peared
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-4 / region
+             :DETERMINER ( ATTRIB-5 / this)
+             :ATTRIBUTE ( ATTRIB-6 / whole))
+      :TILL ( ATTRIB-3 / pretty_soon)
+      :MSR ( DEGREE-1 / DEGREE
+             :QUANTIFIER ( ATTRIB-2 / more_and_more))
+      :TOCOMP ( EVENT-11 / have
+             :ARG0 ENTITY-4
+             :ARG1 ( ENTITY-8 / flush
+                    :ATTRIBUTE ( ATTRIB-9 / blue))
+             :ABOUT ( REF1-10 / it))
+      :MOD ( mod-2 / then))
+
+# ::id 161_fiction_TWAIN-1880;NE
+# ::snt There must have been five thousand of them ;
+( EVENT-4 / have_copula
+      :domain-of ( MD-5 / must)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :OF ( REF1-3 / them)
+             :CARDINAL ( ATTRIB-2 / five_thousand)))
+
+# ::id 162_fiction_TWAIN-1880;NE
+# ::snt and such another jawing and disputing and ripping and cussing , you never heard .
+( EVENT-14 / heard
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-13 / you)
+      :ARG1 ( ENTITY-1 / AND
+             :ATTRIBUTE ( ATTRIB-2 / such)
+             :op1 ( ENTITY-5 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-6 / jawing))
+             :op2 ( ENTITY-7 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-8 / disputing))
+             :op3 ( ENTITY-9 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-10 / ripping))
+             :op4 ( ENTITY-11 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-12 / cussing))
+             :QUANTIFIER ( ATTRIB-3 / another))
+      :MOD ( mod-1 / never))
+
+# ::id 163_fiction_TWAIN-1880;NE
+# ::snt Every jay in the whole lot put his eye to the hole and delivered a more chuckle-headed opinion about the mystery than the jay that went there before him .
+( CONJ-23 / and
+      :op1 ( EVENT-10 / put
+             :MOD ( mod-24 / past)
+             :ARG0 ( ENTITY-1 / jay
+                    :QUANTIFIER ( ATTRIB-2 / every)
+                    :IN ( ENTITY-3 / lot
+                           :DEFINITE ( ATTRIB-4 / the)
+                           :ATTRIBUTE ( ATTRIB-5 / whole)))
+             :ARG1 ( ENTITY-6 / eye
+                    :POS ( REF1-7 / his))
+             :TO ( ENTITY-8 / hole
+                    :DEFINITE ( ATTRIB-9 / the)))
+      :op2 ( EVENT-22 / delivered
+             :MOD ( mod-27 / past)
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-11 / opinion
+                    :ATTRIBUTE ( ATTRIB-13 / chuckle-headed)
+                    :THAN ( ENTITY-16 / jay
+                           :DEFINITE ( ATTRIB-17 / the)
+                           :ARG0-of ( EVENT-20 / went
+                                  :MOD ( mod-26 / past)
+                                  :BEFORE ( REF2-19 / him)
+                                  :MOD ( mod-25 / there)))
+                    :ABOUT ( ENTITY-14 / mystery
+                           :DEFINITE ( ATTRIB-15 / the))
+                    :QUANTIFIER ( ATTRIB-12 / more))))
+
+# ::id 164_fiction_TWAIN-1880;NE
+# ::snt They examined the house all over , too .
+( EVENT-4 / examined
+      :MOD ( mod-3 / past)
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( ENTITY-2 / house
+             :DEFINITE ( ATTRIB-3 / the))
+      :MOD ( mod-1 / all_over)
+      :MOD ( mod-2 / too))
+
+# ::id 165_fiction_TWAIN-1880;NE
+# ::snt The door was standing half open ,
+( EVENT-3 / was_standing
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-1 / door
+             :DEFINITE ( ATTRIB-2 / the))
+      :MOD ( mod-1 / half_open))
+
+# ::id 166_fiction_TWAIN-1880;NE
+# ::snt and at last one old jay happened to go and light on it and look in .
+( EVENT-5 / happened
+      :MOD ( mod-11 / past)
+      :ARG0 ( ENTITY-2 / jay
+             :ATTRIBUTE ( ATTRIB-4 / old)
+             :CARDINAL ( ATTRIB-3 / one))
+      :AT ( ATTRIB-1 / last)
+      :TOCOMP ( CONJ-10 / and
+             :op1 ( EVENT-7 / go_and_light
+                    :ARG0 ENTITY-2
+                    :ON ( REF1-6 / it))
+             :op2 ( EVENT-8 / look_in
+                    :ARG0 ENTITY-2)))
+
+# ::id 167_fiction_TWAIN-1880;NE
+# ::snt Of course , that knocked the mystery galley-west in a second .
+( EVENT-7 / knocked
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-2 / ENTITY
+             :DETERMINER ( ATTRIB-3 / that))
+      :ARG1 ( ENTITY-4 / mystery_galley-west
+             :DEFINITE ( ATTRIB-5 / the))
+      :IN ( ENTITY-6 / second)
+      :OF ( ENTITY-1 / course))
+
+# ::id 168_fiction_TWAIN-1880;NE
+# ::snt There lay the acorns , scattered all over the floor .
+( CONJ-7 / and
+      :op1 ( EVENT-6 / lay
+             :MOD ( mod-8 / past)
+             :ARG0 ( GROUP-1 / acorns
+                    :DEFINITE ( ATTRIB-2 / the)))
+      :op2 ( EVENT-5 / scattered
+             :ARG0 GROUP-1
+             :OVER ( ENTITY-3 / floor
+                    :DEFINITE ( ATTRIB-4 / the))))
+
+# ::id 169_fiction_TWAIN-1880;NE
+# ::snt He flopped his wings and raised a whoop .
+( CONJ-7 / and
+      :op1 ( EVENT-4 / flopped
+             :MOD ( mod-8 / past)
+             :ARG0 ( REF1-1 / he)
+             :ARG1 ( GROUP-2 / wings
+                    :POS ( REF2-3 / his)))
+      :op2 ( EVENT-6 / raised
+             :MOD ( mod-9 / past)
+             :ARG0 REF1-1
+             :ARG1 ( ENTITY-5 / whoop)))
+
+# ::id 170_fiction_TWAIN-1880;NE
+# ::snt " Come here ! " he says ,
+( EVENT-2 / says
+      :ARG0 ( REF1-1 / he)
+      :THAT ( EVENT-3 / come
+             :MOD ( mod-7 / here)
+             :domain-of ( IMPERATIVE-6 / IMPERATIVE)))
+
+# ::id 171_fiction_TWAIN-1880;NE
+# ::snt " Come here , everybody ;
+( EVENT-3 / come
+      :VOC ( ENTITY-1 / ENTITY
+             :QUANTIFIER ( ATTRIB-2 / everybody))
+      :MOD ( mod-6 / here)
+      :domain-of ( IMPERATIVE-5 / IMPERATIVE))
+
+# ::id 172_fiction_TWAIN-1880;NE
+# ::snt hang'd if this fool has n't been trying to fill up a house with acorns ! "
+( CND-9 / if
+      :op1 ( EVENT-3 / has_been_trying
+             :domain-of ( NEG-8 / NEG)
+             :ARG0 ( ENTITY-1 / fool
+                    :DETERMINER ( ATTRIB-2 / this))
+             :TOCOMP ( EVENT-6 / fill_up
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-4 / house)
+                    :WITH ( GROUP-5 / acorns)))
+      :op2 ( EVENT-7 / hang ' d
+             :MOD ( mod-10 / past)))
+
+# ::id 173_fiction_TWAIN-1880;NE
+# ::snt They all came a-swooping down like a blue cloud ,
+( CONJ-8 / and
+      :op1 ( EVENT-7 / came
+             :MOD ( mod-9 / past)
+             :ARG0 ( REF1-2 / they))
+      :op2 ( EVENT-6 / a-swooping_down
+             :ATTRIBUTE ( ATTRIB-3 / like
+                    :COMP ( ENTITY-4 / cloud
+                           :ATTRIBUTE ( ATTRIB-5 / blue)))
+             :ARG0 ( REF1-2 / REF1
+                    :QUANTIFIER ( ATTRIB-1 / all))))
+
+# ::id 174_fiction_TWAIN-1880;NE
+# ::snt and as each fellow lit on the door and took a glance , the whole absurdity of the contract that that first jay had tackled hit him home
+( CRD-21 / as
+      :op1 ( CONJ-20 / and
+             :op1 ( EVENT-5 / lit
+                    :MOD ( mod-22 / past)
+                    :ARG0 ( ENTITY-1 / fellow
+                           :QUANTIFIER ( ATTRIB-2 / each))
+                    :ON ( ENTITY-3 / door
+                           :DEFINITE ( ATTRIB-4 / the)))
+             :op2 ( EVENT-7 / took
+                    :MOD ( mod-23 / past)
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-6 / glance)))
+      :op2 ( EVENT-18 / hit
+             :ARG0 ( ENTITY-8 / absurdity
+                    :DEFINITE ( ATTRIB-9 / the)
+                    :ATTRIBUTE ( ATTRIB-10 / whole)
+                    :OF ( ENTITY-11 / contract
+                           :DEFINITE ( ATTRIB-12 / the)
+                           :THAT ( EVENT-16 / had_tackled
+                                  :MOD ( mod-24 / past)
+                                  :ARG0 ( ENTITY-13 / jay
+                                         :DETERMINER ( ATTRIB-14 / that)
+                                         :ATTRIBUTE ( ATTRIB-15 / first)))))
+             :ARG1 ( REF1-17 / him)
+             :MOD ( mod-25 / home)))
+
+# ::id 175_fiction_TWAIN-1880;NE
+# ::snt and he fell over backward suffocating with laughter ,
+( CONJ-7 / and
+      :op1 ( EVENT-4 / fell_over
+             :MOD ( mod-8 / past)
+             :ARG0 ( REF1-1 / he))
+      :op2 ( EVENT-3 / suffocating
+             :ARG0 REF1-1
+             :WITH ( ENTITY-2 / laughter))
+      :DIR ( DIR-9 / backward))
+
+# ::id 176_fiction_TWAIN-1880;NE
+# ::snt and the next jay took his place and done the same .
+( CONJ-11 / and
+      :op1 ( EVENT-6 / took
+             :MOD ( mod-12 / past)
+             :ARG0 ( ENTITY-1 / jay
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :ATTRIBUTE ( ATTRIB-3 / next))
+             :ARG1 ( ENTITY-4 / place
+                    :POS ( REF1-5 / his)))
+      :op2 ( EVENT-10 / done
+             :ARG1 ( ENTITY-7 / ENTITY
+                    :DEFINITE ( ATTRIB-8 / the)
+                    :ATTRIBUTE ( ATTRIB-9 / same))
+             :ARG2 ENTITY-1))
+
+# ::id 177_fiction_TWAIN-1880;NE
+# ::snt " Well , sir , they roosted around here on the housetop and the trees for an hour , and guffawed over that thing like human beings .
+( CONJ-17 / and
+      :op1 ( EVENT-9 / roosted_around
+             :MOD ( mod-19 / past)
+             :ARG0 ( REF1-2 / they)
+             :ON ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / housetop
+                           :DEFINITE ( ATTRIB-5 / the))
+                    :op2 ( GROUP-6 / trees
+                           :DEFINITE ( ATTRIB-7 / the)
+                           :FOR ( ENTITY-8 / hour)))
+             :VOC ( ENTITY-1 / sir)
+             :MOD ( mod-18 / here))
+      :op2 ( EVENT-16 / guffawed_over
+             :MOD ( mod-20 / past)
+             :ARG0 REF1-2
+             :ARG1 ( ENTITY-11 / thing
+                    :DETERMINER ( ATTRIB-12 / that)
+                    :ATTRIBUTE ( ATTRIB-13 / like
+                           :COMP ( GROUP-14 / beings
+                                  :ATTRIBUTE ( ATTRIB-15 / human))))
+             :VOC ENTITY-1))
+
+# ::id 178_fiction_TWAIN-1880;NE
+# ::snt It ai n't any use to tell me a bluejay has n't got a sense of humor , because I know better .
+( CRD-18 / because
+      :domain-of ( NEG-19 / NEG)
+      :op1 ( EVENT-11 / know
+             :ARG0 ( REF3-10 / i)
+             :MOD ( mod-20 / better))
+      :op2 ( EVENT-13 / copula
+             :ARG0 ( REF1-1 / it)
+             :ARG1 ( ENTITY-2 / use
+                    :QUANTIFIER ( ATTRIB-3 / any)
+                    :TOCOMP ( EVENT-5 / tell
+                           :ARG1 ( REF2-4 / me)
+                           :THAT ( EVENT-9 / has_got
+                                  :domain-of ( NEG-17 / NEG)
+                                  :ARG0 ( ENTITY-6 / bluejay)
+                                  :ARG1 ( ENTITY-7 / sense
+                                         :OF ( ENTITY-8 / humor)))))))
+
+# ::id 179_fiction_TWAIN-1880;NE
+# ::snt And memory , too .
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / memory)
+      :MOD ( mod-1 / too))
+
+# ::id 180_fiction_TWAIN-1880;NE
+# ::snt They brought jays here from all over the United States to look down that hole , every summer for three years .
+( EVENT-13 / brought
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( GROUP-2 / jays)
+      :PRP ( EVENT-12 / look
+             :ARG0 GROUP-2
+             :TMP ( TIME-8 / summer
+                    :FOR ( TIME-10 / years
+                           :CARDINAL ( ATTRIB-11 / three))
+                    :QUANTIFIER ( ATTRIB-9 / every))
+             :DOWN ( ENTITY-6 / hole
+                    :DETERMINER ( ATTRIB-7 / that)))
+      :FROM ( ENTITY-3 / ENTITY
+             :OVER ( GROUP-United_States / GROUP
+                    :name ( n-3 / name
+                           :op1 "United_States"))
+             :QUANTIFIER ( ATTRIB-4 / all))
+      :MOD ( mod-2 / here))
+
+# ::id 181_fiction_TWAIN-1880;NE
+# ::snt Other birds , too .
+( EVENT-3 / EVENT
+      :LINK ( GROUP-1 / birds
+             :ATTRIBUTE ( ATTRIB-2 / other))
+      :MOD ( mod-1 / too))
+
+# ::id 182_fiction_TWAIN-1880;NE
+# ::snt And they could all see the point except an owl that come from Nova Scotia to visit the Yo Semite ,
+( EVENT-9 / see
+      :domain-of ( MD-11 / could)
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( ENTITY-2 / point
+             :DEFINITE ( ATTRIB-3 / the))
+      :EXCEPT ( ENTITY-4 / owl
+             :ARG0-of ( EVENT-8 / come
+                    :MOD ( mod-12 / past)
+                    :PRP ( EVENT-7 / visit
+                           :ARG0 ENTITY-4
+                           :ARG1 ( ENTITY-Yo_Semite / ENTITY
+                                  :name ( n-14 / name
+                                         :op1 "Yo_Semite")))
+                    :FROM ( ENTITY-Nova_Scotia / ENTITY
+                           :name ( n-15 / name
+                                  :op1 "Nova_Scotia"))))
+      :MOD ( mod-13 / all))
+
+# ::id 183_fiction_TWAIN-1880;NE
+# ::snt and he took this thing in on his way back .
+( EVENT-6 / took_in
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / thing
+             :DETERMINER ( ATTRIB-3 / this))
+      :ON ( ENTITY-4 / DIR_back
+             :MOD ( mod-1 / way
+                    :POS ( REF2-5 / his))))
+
+# ::id 184_fiction_TWAIN-1880;NE
+# ::snt He said he could n't see anything funny in it .
+( EVENT-2 / said
+      :MOD ( mod-13 / past)
+      :ARG0 ( REF1-1 / he)
+      :THAT ( EVENT-8 / see
+             :domain-of ( MD-12 / could)
+             :domain-of ( NEG-11 / NEG)
+             :ARG0 ( REF2-3 / he)
+             :ARG1 ( ENTITY-4 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-6 / funny
+                           :IN ( REF3-7 / it))
+                    :QUANTIFIER ( ATTRIB-5 / anything))))
+
+# ::id 185_fiction_TWAIN-1880;NE
+# ::snt But then he was a good deal disappointed about Yo Semite , too . "
+( EVENT-6 / copula
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / he)
+      :ARG1 ( ENTITY-2 / deal
+             :ATTRIBUTE ( ATTRIB-3 / good)
+             :ARG1-of ( EVENT-5 / disappointed
+                    :ABOUT ( ENTITY-Yo_Semite / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "Yo_Semite"))))
+      :MOD ( mod-1 / too)
+      :MOD ( mod-3 / then))

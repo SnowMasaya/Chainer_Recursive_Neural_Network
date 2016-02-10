@@ -1,0 +1,1957 @@
+# ::id 1_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ２０１４ 年 東北 の 知事選・市長選
+∃ EVENT[2] ENTITY[1] ((CD_２０１４_年(ENTITY[1]), の_知事選.市長選(NORP[東北], ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 震災 や 原発事故 、 地域再生 誰 に 託す
+QUEST(∃ ENTITY[1] EVENT[7] GROUP[2] ? ENTITY[6] (
+      ENTITY[1] = *pro* ∧
+       CONJ_や(∃ ENTITY[3] (震災(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+        ∃ ENTITY[4] (原発事故(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])),
+        ∃ ENTITY[5] (地域再生(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+        託す.0(EVENT[7], ENTITY[1], GROUP[2], ENTITY[6])))
+
+# ::id 3_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 地方自治 、 発信力 を 問う
+∃ ENTITY[1] EVENT[5] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[3] (地方自治(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (発信力(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧ 問う.0(EVENT[5], ENTITY[1], GROUP[2]))
+
+# ::id 4_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 東北 の ２０１４ 年 の 大型選挙 は 、 任期満了 に 伴う 福島県知事選 が 秋 に 予定 さ れる 。
+∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[7] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_２０１４_年(ENTITY[2]) ∧
+  の_大型選挙(ENTITY[2], ENTITY[1]) ∧ の__大型選挙(NORP[東北], ENTITY[1]) ∧
+   任期満了(ENTITY[5]) ∧
+    伴う.0(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 福島県知事選(ENTITY[3]) ∧
+     秋(ENTITY[7]) ∧
+      予定する.0(EVENT[8], _, ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[7] ∧ TPC(EVENT[8]) = ENTITY[1])
+
+# ::id 5_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 、 南相馬市 （ １ 月 １９ 日 投票 ） を 皮切り に ２２ 市 で 市長選 が 行わ れる 見通し 。
+∃ SITUATION[2] ENTITY[1] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  ほか(ENTITY[3]) ∧
+   (CD_２２(ENTITY[4]), 市(ENTITY[4])) ∧
+    市長選(ENTITY[5]) ∧
+     皮切り(ENTITY[6]) ∧
+      見通し(SITUATION[2],
+       xxx(EVENT[7], ENTITY[5], LOC[南相馬市], ENTITY[6]) ∧
+        行う.0(EVENT[8], _, ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[4] ∧
+         に(EVENT[8]) = ENTITY[3]) ∧ xxx(EVENT[9], ENTITY[1], SITUATION[2]))
+
+# ::id 6_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 福島県 と 各市 で 、 それぞれ の 行政運営 に対する 有権者 の 判断 が 下さ れる 。
+∃ EVENT[6] ENTITY[3] GROUP[1] (
+ CONJ_と(is_element_of(LOC[福島県], GROUP[1]), 各 ENTITY[2] (市(ENTITY[2]), is_element_of(ENTITY[2], GROUP[1]))) ∧
+  それぞれ_の ENTITY[4] (行政運営(ENTITY[4]),
+   ∃ ENTITY[5] (有権者(ENTITY[5]) ∧ の_判断(ENTITY[5], ENTITY[3]) ∧ に対する_判断(ENTITY[4], ENTITY[3]))) ∧
+   下す.0(EVENT[6], _, ENTITY[3]) ∧ で(EVENT[6]) = GROUP[1])
+
+# ::id 7_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 当面 、 国政選挙 は ない と み られる 政治状況 の 中 、 地方自治 の 発信力 も 試さ れる 。
+∃ EVENT[7] EVENT[5] EVENT[10] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[2] TIME[1] ENTITY[6] (
+ 国政選挙(ENTITY[6]) ∧
+  当面(TIME[1]) ∧
+   みる.0(EVENT[5], _, ENTITY[3], ない(EVENT[7], ENTITY[6])) ∧ 政治状況(ENTITY[3]) ∧
+    の_中(ENTITY[3], ENTITY[2]) ∧
+     地方自治(ENTITY[9]) ∧
+      の_発信力(ENTITY[9], ENTITY[8]) ∧
+       試す.0(EVENT[10], _, ENTITY[8]) ∧ ADV(EVENT[10]) = ENTITY[2] ∧
+        is_contained_in(時間(EVENT[10]), TIME[1]))
+
+# ::id 8_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 福島県知事選
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[福島県知事選])
+
+# ::id 9_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １１ 月 １１ 日 任期 満了
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１１_月_１１_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 10_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 佐藤氏 の 動向焦点
+∃ EVENT[2] ENTITY[1] (佐藤氏(ENTITY[1]) ∧ の_xxx(ENTITY[1], ENTITY[動向焦点]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[動向焦点])
+
+# ::id 11_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 自民 、 独自候補 を 擁立 か
+QUEST(∃ ENTITY[1] EVENT[4] GROUP[2] (
+      ENTITY[1] = *pro* ∧
+       is_subset_of_or_equal_to(ORG[自民], GROUP[2]) ∧ ∃ ENTITY[3] (独自候補(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+        する.0(EVENT[4], ENTITY[1], GROUP[2])))
+
+# ::id 12_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 民主 、 主導権確保 へ 躍起
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 民主(ENTITY[1]) ∧
+  主導権確保(ENTITY[2]) ∧
+   躍起(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[3]) ∧ へ(EVENT[4]) = ENTITY[2])
+
+# ::id 13_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 佐藤雄平氏 （ ６６ ） は 、 １１ 月 １１ 日 に ２ 期 目 の 任期 が 満了 する 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[佐藤雄平氏]) ∧
+   CD_６６(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[佐藤雄平氏]) ∧
+     CD_１１_月_１１_日(ENTITY[3]) ∧
+      (CD_２_期(ENTITY[5]), 目(ENTITY[5])) ∧
+       の_任期(ENTITY[5], ENTITY[4]) ∧
+        満了する.0(EVENT[6], (PERSON[佐藤雄平氏], ENTITY[4])) ∧ に(EVENT[6]) = ENTITY[3])
+
+# ::id 14_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 「 福島第１原発 事故 から の 復興 に まい進 する 」 と だけ 述べ 、 ３ 選 を 目指す か どう か について は 明言 を 避け て いる 。
+∃ ENTITY[4] SITUATION[3] ENTITY[1] EVENT[7] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   福島第１原発_事故(ENTITY[6]) ∧
+    から_の_復興(ENTITY[6], ENTITY[5]) ∧
+     と(SITUATION[3], 邁進する.0(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[5]) ∧
+      だけ SITUATION[2] (SITUATION[2] = SITUATION[3], ∃ EVENT[8] (述べ(EVENT[8], ENTITY[1]) ∧ LINK(EVENT[8]) = SITUATION[2])) ∧
+       は SITUATION[9] (
+        FACT(SITUATION[9],
+         QUEST(∃ ENTITY[10] EVENT[12] ENTITY[11] (
+               ENTITY[10] = *pro*{ENTITY[1], ENTITY[5], ENTITY[6]} ∧
+                CD_３_選(ENTITY[11]) ∧ 目指す.0(EVENT[12], ENTITY[10], ENTITY[11])))),
+        ∃ EVENT[14] ENTITY[13] (明言(ENTITY[13]) ∧ 避ける.0_て_いる(EVENT[14], ENTITY[1], ENTITY[13]) ∧ について(EVENT[14]) = SITUATION[9])))
+
+# ::id 15_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 地元政界関係者 によると 、 現段階 で は 佐藤氏立候補 の 環境 は 厳しさ を 増し て いる 。
+∃ EVENT[6] ENTITY[5] ENTITY[1] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 現段階(ENTITY[2]) ∧
+  佐藤氏立候補(ENTITY[4]) ∧
+   の_環境(ENTITY[4], ENTITY[3]) ∧
+    地元政界関係者(ENTITY[1]) ∧
+     厳しさ(ENTITY[5]) ∧
+      増す.0_て_いる(EVENT[6], ENTITY[3], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[2] ∧ によると(EVENT[6]) = ENTITY[1])
+
+# ::id 16_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 昨年 は 郡山 （ ４ 月 ） 、 いわき （ ９ 月 ） 、 福島 、 二本松 （ １１ 月 ） の 県内市長選 で 現職 が 相次い で 落選 する 現象 が あっ た 。
+∃ SITUATION[2] EVENT[11] EVENT[12] EVENT[13] GROUP[4] ENTITY[10] ENTITY[3] ENTITY[1] (
+ 昨年(ENTITY[1]) ∧
+  ∃ ENTITY[5] (CD_４_月(ENTITY[5]) ∧ namely_-LOC-(ENTITY[5], LOC[郡山]) ∧ is_element_of(LOC[郡山], GROUP[4])) ∧
+   ∃ ENTITY[6] (CD_９_月(ENTITY[6]) ∧ namely_-LOC-(ENTITY[6], LOC[いわき]) ∧ is_element_of(LOC[いわき], GROUP[4])) ∧
+   ∃ GROUP[9] ENTITY[7] ENTITY[8] (
+    is_element_of(LOC[福島], GROUP[9]) ∧ is_element_of(LOC[二本松], GROUP[9]) ∧
+     equals(GROUP[9], ENTITY[8]) ∧
+      CD_１１_月(ENTITY[7]) ∧ namely_-ENTITY-(ENTITY[7], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[4])) ∧
+   の_県内市長選(GROUP[4], ENTITY[3]) ∧
+    現職(ENTITY[10]) ∧
+     現象(SITUATION[2],
+      CONJ_te(相次ぐ.0_で(EVENT[11], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[3],
+       落選する.0(EVENT[12], ENTITY[10]) ∧ で(EVENT[12]) = ENTITY[3])) ∧
+      past(EVENT[13]) ∧ ある.0_た(EVENT[13], SITUATION[2]) ∧ 時間(EVENT[13]) = ENTITY[1])
+
+# ::id 17_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 福島県 は 津波被災 が メーン の 宮城 、 岩手 両県 と 異なり 、 原子力災害 を 受け て 復興 の 歩み が 遅い 。
+∃ EVENT[9] EVENT[11] EVENT[14] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[10] ENTITY[13] ENTITY[12] (
+ 津波被災(ENTITY[1]) ∧
+  メーン(ENTITY[3]) ∧
+   ∃ GROUP[5] (
+    ∃ ENTITY[6] (宮城(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+     ∃ ENTITY[7] (岩手(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    両 ENTITY[8] (県(ENTITY[8]), is_element_of(ENTITY[8], GROUP[4])) ∧
+    equals(GROUP[4], ENTITY[2]) ∧ の(ENTITY[3], ENTITY[2]) ∧
+     原子力災害(ENTITY[10]) ∧
+      復興(ENTITY[13]) ∧
+       の_歩み(ENTITY[13], ENTITY[12]) ∧
+        異なる.0(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = ENTITY[2] ∧
+         CONJ_te(受ける.0_て(EVENT[11], LOC[福島県], ENTITY[10]), 遅い(EVENT[14], (LOC[福島県], ENTITY[12]))))
+
+# ::id 18_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 県民 の 不満 が 現職 に 向け られ 、 選挙 で 苦戦 が 続く 。
+∃ EVENT[4] EVENT[7] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[6] ENTITY[5] (
+ 県民(ENTITY[2]) ∧
+  の_不満(ENTITY[2], ENTITY[1]) ∧
+   現職(ENTITY[3]) ∧
+    選挙(ENTITY[5]) ∧
+     苦戦(ENTITY[6]) ∧
+      向ける.0(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+       続く.0(EVENT[7], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[5])
+
+# ::id 19_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 「 現職落選ドミノ の 最終章 は 知事選 か 」 と も ささやか れ て いる 。
+∃ SITUATION[1] EVENT[6] ENTITY[3] ENTITY[2] (
+ 現職落選ドミノ(ENTITY[3]) ∧
+  の_最終章(ENTITY[3], ENTITY[2]) ∧
+   と(SITUATION[1], QUEST(∃ EVENT[5] ENTITY[4] (知事選(ENTITY[4]) ∧ xxx(EVENT[5], ENTITY[2], ENTITY[4])))) ∧
+      (ささやく.0_て_いる(EVENT[6], _, [_]) ∧ LINK(EVENT[6]) = SITUATION[1]))
+
+# ::id 20_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 佐藤氏 は ２００６ 年 、 汚職事件 で 逮捕 さ れ た 前知事 の 辞職 に 伴う 出直し知事選 に 民主 社民 、 両党 の 推薦 を 受け て 立候補 。
+∃ EVENT[8] EVENT[9] EVENT[13] EVENT[14] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[2] TIME[1] (
+ CD_２００６_年(TIME[1]) ∧
+  汚職事件(ENTITY[7]) ∧
+   逮捕する.0_た(EVENT[8], _, ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[7] ∧ 前知事(ENTITY[5]) ∧
+    の_辞職(ENTITY[5], ENTITY[4]) ∧
+     伴う.0(EVENT[9], ENTITY[2]) ∧ に(EVENT[9]) = ENTITY[4] ∧ 出直し知事選(ENTITY[2]) ∧
+      両 GROUP[12] ENTITY[11] ((is_subset_of_or_equal_to(ORG[民主], GROUP[12]) ∧ is_subset_of_or_equal_to(ORG[社民], GROUP[12]) ∧ equals_党(GROUP[12], ENTITY[11])),
+       の_推薦(ENTITY[11], ENTITY[10])) ∧
+       past(EVENT[8]) ∧
+        CONJ_te(受ける.0_て(EVENT[13], PERSON[佐藤氏], ENTITY[10]) ∧ に(EVENT[13]) = ENTITY[2] ∧
+              is_contained_in(時間(EVENT[13]), TIME[1]),
+         立候補(EVENT[14], PERSON[佐藤氏]) ∧ に(EVENT[14]) = ENTITY[2] ∧
+          is_contained_in(時間(EVENT[14]), TIME[1])))
+
+# ::id 21_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 自民 、 公明 両党 が 推薦 し た 新人ら を 退け て 初当選 し た 。
+∃ ENTITY[1] EVENT[7] EVENT[8] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  両 GROUP[5] ENTITY[4] ((is_subset_of_or_equal_to(ORG[自民], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[公明], GROUP[5]) ∧ equals_党(GROUP[5], ENTITY[4])),
+   ∃ EVENT[6] (past(EVENT[6]) ∧ 推薦する.0_た(EVENT[6], ENTITY[4], ENTITY[2]))) ∧ 新人ら(ENTITY[2]) ∧
+   past(EVENT[8]) ∧ CONJ_te(避ける.0_て(EVENT[7], ENTITY[1], ENTITY[2]), 当選する.0_た(EVENT[8], ENTITY[1])))
+
+# ::id 22_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt １０ 年 の 前回 は 「 県民党 」 を 掲げ 、 政党 の 推薦 を 受け ず に 臨み 、 ６１万 票 を 獲得 し て 共産党推薦候補 に 圧勝 し た 。
+∃ SITUATION[5] ENTITY[1] EVENT[4] EVENT[9] EVENT[11] EVENT[13] ENTITY[7] ENTITY[6] ENTITY[10] ENTITY[12] ENTITY[3] ENTITY[2] (
+ CD_１０_年(ENTITY[3]) ∧
+  の_前回(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    政党(ENTITY[7]) ∧
+     の_推薦(ENTITY[7], ENTITY[6]) ∧
+      FACT(SITUATION[5], ¬ ∃ EVENT[8] 受ける.0(EVENT[8], ENTITY[1], ENTITY[6])) ∧
+       CD_６１万_票(ENTITY[10]) ∧
+        共産党推薦候補(ENTITY[12]) ∧
+         past(EVENT[13]) ∧
+          掲げる.0(EVENT[4], ENTITY[1], ORG[県民党]) ∧
+           臨む.0(EVENT[9], ENTITY[1]) ∧ te_に(EVENT[9]) = SITUATION[5] ∧
+            CONJ_te(獲得する.0_て(EVENT[11], ENTITY[1], ENTITY[10]) ∧ 時間(EVENT[11]) = ENTITY[2],
+             圧勝する.0_た(EVENT[13], ENTITY[1]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+              時間(EVENT[13]) = ENTITY[2]))
+
+# ::id 23_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 渡部恒三 元衆院副議長 の 秘書 を 長く 務め た 経験 を 生かし 、 選挙巧者ぶり を 発揮 し た 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[7] EVENT[9] ENTITY[4] ENTITY[3] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  元衆院副議長(ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[渡部恒三]) ∧
+    の_秘書(ENTITY[渡部恒三], ENTITY[3]) ∧
+     経験(SITUATION[2], 務める.0_た(EVENT[5], ENTITY[1], ENTITY[3])) ∧
+      選挙巧者ぶり(ENTITY[8]) ∧
+       ADV_長く(EVENT[5]) ∧
+        past(EVENT[5]) ∧
+         past(EVENT[9]) ∧ 生かす.0(EVENT[7], ENTITY[1], SITUATION[2]) ∧ 発揮する.0_た(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 24_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 県政与党 を 自任 する 民主党 は 、 １２ 年 の 衆院選 で 県内 ５ 選挙区 で １ 勝 ４ 敗 と 惨敗 し た 。
+∃ EVENT[8] ENTITY[5] ENTITY[7] ENTITY[6] ENTITY[4] EVENT[3] ENTITY[2] (
+ 県政与党(ENTITY[2]) ∧
+  自任する.0(EVENT[3], ORG[民主党], ENTITY[2]) ∧
+   CD_１２_年(ENTITY[5]) ∧
+    の_衆院選(ENTITY[5], ENTITY[4]) ∧
+     (CD_５_選挙区(ENTITY[6]), 県内(ENTITY[6])) ∧
+      CD_１_勝_４_敗(ENTITY[7]) ∧
+       past(EVENT[8]) ∧
+        惨敗する.0_た(EVENT[8], ORG[民主党]) ∧ と(EVENT[8]) = ENTITY[7] ∧ で(EVENT[8]) = ENTITY[6] ∧
+         で(EVENT[8]) = ENTITY[4])
+
+# ::id 25_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 改選数 が ２ から １ に 減っ た 昨年 ７ 月 の 参院選福島選挙区 で も 現職 の 議席 を 失っ た 。
+∃ ENTITY[1] EVENT[7] EVENT[10] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_７_月(ENTITY[3]), 昨年(ENTITY[3])) ∧
+   改選数(ENTITY[4]) ∧
+    CD_２(ENTITY[5]) ∧
+     CD_１(ENTITY[6]) ∧
+      の_参院選福島選挙区(ENTITY[3], ENTITY[2]) ∧
+       THAT_参院選福島選挙区(減る.0_た(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ から(EVENT[7]) = ENTITY[5],
+        ENTITY[2]) ∧
+       現職(ENTITY[9]) ∧
+        の_議席(ENTITY[9], ENTITY[8]) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[10]) ∧ 失う.0_た(EVENT[10], ENTITY[1], ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[2])
+
+# ::id 26_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 次期知事選 に 向け て は 、 県政 の 主導権 を 維持 し よう と 躍起 に なっ て いる 。
+∃ ENTITY[1] EVENT[3] EVENT[8] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  次期知事選(ENTITY[2]) ∧
+   躍起(ENTITY[4]) ∧
+    県政(ENTITY[6]) ∧
+     の_主導権(ENTITY[6], ENTITY[5]) ∧
+      CONJ_te_は(向ける.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2],
+       CRD_と(MD_よう(∃ EVENT[7] 維持する.0(EVENT[7], ENTITY[4], ENTITY[5])), なる.0_て_いる(EVENT[8], ENTITY[1], ENTITY[4]))))
+
+# ::id 27_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 佐藤氏 の 動向 次第 で は 、 水面下 で 新た な 候補 擁立 を 模索 する 動き が 出る 可能性 も ある 。
+∃ ATTRIB[8] ENTITY[5] SITUATION[4] SITUATION[3] EVENT[9] EVENT[10] EVENT[11] ENTITY[7] ENTITY[6] ENTITY[2] ENTITY[1] (
+ 佐藤氏(ENTITY[2]) ∧
+  の_動向_次第(ENTITY[2], ENTITY[1]) ∧
+   ENTITY[5] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    水面下(ENTITY[6]) ∧
+     新た_な(ATTRIB[8]) ∧
+      ATTRIBUTE_候補_擁立(ATTRIB[8], ENTITY[7]) ∧
+       動き(SITUATION[4], 模索する.0(EVENT[9], ENTITY[5], ENTITY[7]) ∧ で(EVENT[9]) = ENTITY[6]) ∧
+        可能性(SITUATION[3], 出る.0(EVENT[10], SITUATION[4])) ∧
+         ある.0(EVENT[11], SITUATION[3]) ∧ で(EVENT[11]) = ENTITY[1])
+
+# ::id 28_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 国会 で 圧倒的多数 を 占める 「 １ 強 」 と なり 、 勢い に 乗る 自民党 は 独自候補 の 擁立 が 確実視 さ れる 。
+∃ EVENT[12] ENTITY[11] ENTITY[10] EVENT[6] EVENT[7] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[8] (
+ 国会(ENTITY[4]) ∧
+  圧倒的多数(ENTITY[5]) ∧
+   (CD_１_強(ENTITY[2]), 占める.0(EVENT[6], ENTITY[2], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4]) ∧
+    勢い(ENTITY[8]) ∧
+     なる.0(EVENT[7], ORG[自民党]) ∧ と(EVENT[7]) = ENTITY[2] ∧
+      乗る.0(EVENT[9], ORG[自民党]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+      独自候補(ENTITY[11]) ∧ の_擁立(ENTITY[11], ENTITY[10]) ∧ 確実視する.0(EVENT[12], (_, ENTITY[10]), ORG[自民党]))
+
+# ::id 29_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ０６ 年 知事 選 で 佐藤氏 と 戦っ て 敗れ た 内閣府特命担当相 の 森雅子参院議員 （ ４９ ） ＝ 福島選挙区 ＝ 、 岩城光英参院議員 （ ６４ ） ＝ 同 ＝ら 複数 の 名前 が 浮上 し て いる 。
+∃ EVENT[14] ENTITY[1] (
+ 複数 GROUP[3] ENTITY[2] (
+  (∃ EVENT[10] EVENT[11] ENTITY[9] ENTITY[8] TIME[7] ENTITY[5] ENTITY[4] (
+     CD_０６_年(TIME[7]) ∧
+      知事_選(ENTITY[8]) ∧
+       佐藤氏(ENTITY[9]) ∧
+        CONJ_te(戦う.0_て(EVENT[10], PERSON[森雅子参院議員]) ∧ と(EVENT[10]) = ENTITY[9] ∧
+              で(EVENT[10]) = ENTITY[8] ∧ is_contained_in(時間(EVENT[10]), TIME[7]),
+         敗れる.0_た(EVENT[11], PERSON[森雅子参院議員]) ∧ で(EVENT[11]) = ENTITY[8] ∧
+          is_contained_in(時間(EVENT[11]), TIME[7])) ∧
+         内閣府特命担当相(ENTITY[5]) ∧
+          の_xxx(ENTITY[5], PERSON[森雅子参院議員]) ∧
+           CD_４９(ENTITY[4]) ∧
+            namely_-PERSON-(ENTITY[4], PERSON[森雅子参院議員]) ∧
+             namely_-PERSON-(LOC[福島選挙区], PERSON[森雅子参院議員]) ∧ past(EVENT[11]) ∧ is_element_of(PERSON[森雅子参院議員], GROUP[3])) ∧
+     ∃ ENTITY[13] ENTITY[12] (
+      CD_６４(ENTITY[13]) ∧
+       namely_-PERSON-(ENTITY[13], PERSON[岩城光英参院議員]) ∧
+        同_＝ら(ENTITY[12]) ∧ namely_-PERSON-(ENTITY[12], PERSON[岩城光英参院議員]) ∧ is_element_of(PERSON[岩城光英参院議員], GROUP[3])) ∧
+   equals(GROUP[3], ENTITY[2])), の_名前(ENTITY[2], ENTITY[1])) ∧ 浮上する.0_て_いる(EVENT[14], ENTITY[1]))
+
+# ::id 30_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 共産党 は 独自候補 の 擁立 を 視野 に 準備 を 進め て いる 。
+∃ EVENT[4] EVENT[6] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[5] (
+ 独自候補(ENTITY[2]) ∧
+  の_擁立(ENTITY[2], ENTITY[1]) ∧
+   視野(ENTITY[3]) ∧
+    準備(ENTITY[5]) ∧
+     xxx(EVENT[4], ORG[共産党], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+      進める.0_て_いる(EVENT[6], ORG[共産党], ENTITY[5]))
+
+# ::id 31_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 宮城 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[宮城], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 32_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 気仙沼 現職 の 立候補 確実視
+∃ EVENT[3] ENTITY[2] ENTITY[1] (現職(ENTITY[2]) ∧ の_立候補(ENTITY[2], ENTITY[1]) ∧ する(EVENT[3], LOC[気仙沼], ENTITY[1]))
+
+# ::id 33_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 大崎 擁立 探る 動き
+∃ SITUATION[1] EVENT[3] EVENT[4] ENTITY[2] (
+ 擁立(ENTITY[2]) ∧
+  動き(SITUATION[1], 探る.0(EVENT[3], LOC[大崎], ENTITY[2])) ∧ xxx(EVENT[4], LOC[大崎], SITUATION[1]))
+
+# ::id 34_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 岩沼 現職 の 動向 うかがう
+∃ EVENT[3] ENTITY[2] ENTITY[1] (現職(ENTITY[2]) ∧ の_動向(ENTITY[2], ENTITY[1]) ∧ うかがう.0(EVENT[3], LOC[岩沼], ENTITY[1]))
+
+# ::id 35_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 多賀城 市政継続 へ 意欲
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 市政継続(ENTITY[1]) ∧
+  意欲(ENTITY[2]) ∧ xxx(EVENT[3], LOC[多賀城], ENTITY[2]) ∧ へ(EVENT[3]) = ENTITY[1])
+
+# ::id 36_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 気仙沼
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[気仙沼])
+
+# ::id 37_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ４ 月 １３ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_４_月_１３_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 38_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 菅原茂氏 （ ５５ ） は 態度 を 表明 し て い ない が 、 東日本大震災 から の 復興 が 道半ば で も あり 、 再選 を 目指し て 立候補 する の が 確実視 さ れ て いる 。
+∃ ENTITY[9] SITUATION[8] EVENT[7] EVENT[11] EVENT[12] EVENT[13] ENTITY[6] ENTITY[5] ENTITY[10] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[菅原茂氏]) ∧
+   CD_５５(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[菅原茂氏]) ∧
+     から_の_復興(EVENT[東日本大震災], ENTITY[5]) ∧
+      道半ば(ENTITY[6]) ∧
+       ENTITY[9] = *pro*{ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[2]} ∧
+        再選(ENTITY[10]) ∧
+         の(SITUATION[8], CONJ_te(目指す.0_て(EVENT[11], ENTITY[9], ENTITY[10]), 立候補する.0(EVENT[12], ENTITY[9]))) ∧
+          CONJ_が(¬ ∃ EVENT[4] ENTITY[3] (態度(ENTITY[3]) ∧ 表明する.0_て_い(EVENT[4], PERSON[菅原茂氏], ENTITY[3])),
+           ある.0(EVENT[7], ENTITY[5], ENTITY[6]) ∧ 確実視する.0_て_いる(EVENT[13], _, SITUATION[8])))
+
+# ::id 39_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 新人同士 の 争い を 制し た 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 前回(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   新人同士(ENTITY[4]) ∧
+    の_争い(ENTITY[4], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ 制する.0_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 時間(EVENT[5]) = ENTITY[2])
+
+# ::id 40_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 候補擁立 の 具体的 な 動き は ない 。
+∃ ATTRIB[4] EVENT[5] ENTITY[1] ENTITY[3] ENTITY[2] (
+ 候補擁立(ENTITY[3]) ∧
+  具体的_な(ATTRIB[4]) ∧
+   ATTRIBUTE_動き(ATTRIB[4], ENTITY[2]) ∧ の_動き(ENTITY[3], ENTITY[2]) ∧
+    ほか(ENTITY[1]) ∧ ない(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[1])
+
+# ::id 41_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 大崎 ／
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[大崎])
+
+# ::id 42_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ４ 月 ２０ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_４_月_２０_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 43_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 伊藤康志氏 （ ６４ ） は 「 東日本大震災 から の 復旧・復興 が 道半ば だ 」 と 強調 し て 態度 を 明らか に し て い ない が 、 ３ 選 を 目指し て 立候補 する の が 濃厚 だ 。
+∃ SITUATION[9] ENTITY[11] SITUATION[10] EVENT[6] EVENT[3] EVENT[13] EVENT[14] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[12] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[伊藤康志氏]) ∧
+   CD_６４(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[伊藤康志氏]) ∧
+     から_の_復旧.復興(EVENT[東日本大震災], ENTITY[4]) ∧
+      道半ば(ENTITY[5]) ∧
+       態度(ENTITY[7]) ∧
+        ENTITY[11] = *pro*{ENTITY[7], ENTITY[4], ENTITY[5], ENTITY[1], ENTITY[2]} ∧
+         CD_３_選(ENTITY[12]) ∧
+          の(SITUATION[10], CONJ_te(目指す.0_て(EVENT[13], ENTITY[11], ENTITY[12]), 立候補する.0(EVENT[14], ENTITY[11]))) ∧
+           ADV_明らか_に(SITUATION[9]) ∧
+            CONJ_が(CONJ_te(強調する.0_て(EVENT[3], PERSON[伊藤康志氏], だ(EVENT[6], ENTITY[4], ENTITY[5])),
+                  FACT(SITUATION[9], ¬ ∃ EVENT[8] する.0_て_い(EVENT[8], PERSON[伊藤康志氏], ENTITY[7]))),
+             濃厚_だ(EVENT[15], SITUATION[10])))
+
+# ::id 44_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 伊藤氏 は 移転建設 を 推進 し た 市民病院本院 が ことし ３ 月 末 に 完成 する こと や 、 災害公営住宅 １７０ 戸 の 建設 に 道筋 を 付け た こと など を 実績 に 掲げる と み られる 。
+∃ ENTITY[2] EVENT[17] EVENT[1] GROUP[4] ENTITY[16] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  CONJ_や(∃ EVENT[8] EVENT[10] ENTITY[7] ENTITY[9] ENTITY[5] (
+        移転建設(ENTITY[7]) ∧
+         推進する.0_た(EVENT[8], FAC[市民病院本院], ENTITY[7]) ∧
+          (CD_３_月(ENTITY[9]), 末_ことし(ENTITY[9])) ∧
+           THAT_こと(完成する.0(EVENT[10], FAC[市民病院本院]) ∧ に(EVENT[10]) = ENTITY[9], ENTITY[5]) ∧
+            before(EVENT[1], EVENT[8]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ EVENT[15] ENTITY[13] ENTITY[14] ENTITY[12] ENTITY[11] (
+    (CD_１７０_戸(ENTITY[13]), 災害公営住宅(ENTITY[13])) ∧
+     の_建設(ENTITY[13], ENTITY[12]) ∧
+      道筋(ENTITY[14]) ∧
+       THAT_こと(付ける.0_た(EVENT[15], _, ENTITY[14]) ∧ に(EVENT[15]) = ENTITY[12], ENTITY[11]) ∧
+        before(EVENT[1], EVENT[15]) ∧ is_element_of(ENTITY[11], GROUP[4]))) ∧
+   など(GROUP[4], ENTITY[3]) ∧
+    実績(ENTITY[16]) ∧
+     みる.0(EVENT[1], _, PERSON[伊藤氏], 掲げる.0(EVENT[17], ENTITY[2], ENTITY[3]) ∧ に(EVENT[17]) = ENTITY[16]))
+
+# ::id 45_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は ３ 人 の 争い を 制し た 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 前回(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_３_人(ENTITY[4]) ∧
+    の_争い(ENTITY[4], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ 制する.0_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 時間(EVENT[5]) = ENTITY[2])
+
+# ::id 46_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 一部 に 対立候補 の 擁立 を 探る 動き は ある が 、 具体化 し て い ない 。
+∃ ENTITY[8] ENTITY[3] SITUATION[2] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 一部(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   対立候補(ENTITY[5]) ∧
+    の_擁立(ENTITY[5], ENTITY[4]) ∧
+     動き(SITUATION[2], 探る.0(EVENT[6], ENTITY[3], ENTITY[4])) ∧
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[4], ENTITY[5]} ∧
+       CONJ_が(ある.0(EVENT[7], SITUATION[2]) ∧ に(EVENT[7]) = ENTITY[1], ¬ ∃ EVENT[9] 具体化する.0_て_い(EVENT[9], ENTITY[8])))
+
+# ::id 47_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 岩沼
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[岩沼])
+
+# ::id 48_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ６ 月 ２２ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_６_月_２２_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 49_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 で ４ 期 目 の 井口経明氏 （ ６８ ） は 態度 を 明らか に し て おら ず 、 動向 が 注視 さ れ て いる 。
+∃ SITUATION[9] EVENT[11] ENTITY[7] ENTITY[10] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  (CD_４_期(ENTITY[5]), 目(ENTITY[5])) ∧
+   CONJ_te(で(EVENT[4], PERSON[井口経明氏], ENTITY[3]), の(EVENT[6], PERSON[井口経明氏], ENTITY[5])) ∧
+    CD_６８(ENTITY[1]) ∧
+     namely_-PERSON-(ENTITY[1], PERSON[井口経明氏]) ∧
+      態度(ENTITY[7]) ∧
+       動向(ENTITY[10]) ∧
+        ADV_明らか_に(SITUATION[9]) ∧
+         CONJ_te(FACT(SITUATION[9], ¬ ∃ EVENT[8] する.0_て_おら(EVENT[8], PERSON[井口経明氏], ENTITY[7])),
+          注視する.0_て_いる(EVENT[11], (_, ENTITY[10]), PERSON[井口経明氏])))
+
+# ::id 50_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 井口氏 は 前回 、 新人 と の 争い を 制し た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] TIME[1] (
+ 前回(TIME[1]) ∧
+  新人(ENTITY[3]) ∧
+   と_の_争い(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ 制する.0_た(EVENT[4], PERSON[井口氏], ENTITY[2]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 51_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 東日本大震災 から の 復興事業 で は 手堅い 行政手腕 を 見せ て いる が 、 多選 の 弊害 を 指摘 する 声 も くすぶっ て いる 。
+∃ ATTRIB[4] ENTITY[1] EVENT[5] EVENT[10] EVENT[11] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[2] (
+ から_の_復興事業(EVENT[東日本大震災], ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   手堅い(ATTRIB[4]) ∧
+    ATTRIBUTE_行政手腕(ATTRIB[4], ENTITY[3]) ∧
+     多選(ENTITY[9]) ∧
+      の_弊害(ENTITY[9], ENTITY[8]) ∧
+       指摘する.0(EVENT[10], ENTITY[6], ENTITY[8]) ∧ 声(ENTITY[6]) ∧
+        CONJ_が(見せる.0_て_いる(EVENT[5], ENTITY[1], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[2],
+         くすぶる.0_て_いる(EVENT[11], ENTITY[6])))
+
+# ::id 52_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 水面下 で は 新た な 候補擁立 へ の 臆測 も ある が 、 井口氏 の 言動 を うかがっ て いる 状況 だ 。
+∃ ENTITY[6] ATTRIB[4] EVENT[5] EVENT[10] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[7] ENTITY[1] (
+ 水面下(ENTITY[1]) ∧
+  新た_な(ATTRIB[4]) ∧
+   ATTRIBUTE_候補擁立(ATTRIB[4], ENTITY[3]) ∧
+    へ_の_臆測(ENTITY[3], ENTITY[2]) ∧
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[3], ENTITY[1]} ∧
+      の_言動(PERSON[井口氏], ENTITY[9]) ∧
+       うかがう.0_て_いる(EVENT[10], ENTITY[7], ENTITY[9]) ∧ 状況(ENTITY[7]) ∧
+        CONJ_が(ある.0(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[1],
+         だ(EVENT[11], ENTITY[6], ENTITY[7])))
+
+# ::id 53_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 多賀城
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[多賀城])
+
+# ::id 54_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ８ 月 ２７ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_８_月_２７_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 55_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 菊地健次郎氏 （ ６６ ） は 態度 を 明らか に し て い ない が 、 ３ 選 を 目指し て 立候補 する の は 確実 と み られる 。
+∃ ENTITY[9] SITUATION[8] ENTITY[6] EVENT[11] EVENT[12] EVENT[13] EVENT[7] ENTITY[10] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[菊地健次郎氏]) ∧
+   CD_６６(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[菊地健次郎氏]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[2]} ∧
+      ENTITY[9] = *pro*{ENTITY[6], ENTITY[1], ENTITY[2]} ∧
+       CD_３_選(ENTITY[10]) ∧
+        の(SITUATION[8], CONJ_te(目指す.0_て(EVENT[11], ENTITY[9], ENTITY[10]), 立候補する.0(EVENT[12], ENTITY[9]))) ∧
+         CONJ_が(¬ ∃ EVENT[4] ENTITY[3] (態度(ENTITY[3]) ∧ ADV_明らか_に(EVENT[4]) ∧ する.0_て_い(EVENT[4], PERSON[菊地健次郎氏], ENTITY[3])),
+          みる.0(EVENT[7], _, ENTITY[6], 確実(EVENT[13], SITUATION[8]))))
+
+# ::id 56_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 目鼻 が 付い た 東日本大震災 から の 復興事業 の 実現 へ 向け 、 「 震災 の 後始末 が ある 」 と 継続 へ 意欲 を にじま せる 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[10] EVENT[14] EVENT[13] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[12] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  目鼻(ENTITY[5]) ∧
+   付く.0_た(EVENT[6], (EVENT[東日本大震災], ENTITY[5])) ∧
+    から_の_復興事業(EVENT[東日本大震災], ENTITY[3]) ∧
+     の_実現(ENTITY[3], ENTITY[2]) ∧
+      震災(ENTITY[9]) ∧
+       の_後始末(ENTITY[9], ENTITY[8]) ∧
+        継続(ENTITY[11]) ∧
+         意欲(ENTITY[12]) ∧
+          past(EVENT[6]) ∧
+           向ける.0(EVENT[7], ENTITY[1]) ∧ へ(EVENT[7]) = ENTITY[2] ∧
+            CRD_と(ある.0(EVENT[10], ENTITY[8]),
+             せる(EVENT[13], ENTITY[1], ENTITY[12], にじむ.0(EVENT[14], ENTITY[12])) ∧
+              へ(EVENT[13]) = ENTITY[11]))
+
+# ::id 57_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 今 の ところ 、 ほか に 候補擁立 の 動き は ない 。
+∃ EVENT[6] ENTITY[2] ENTITY[3] TIME[1] ENTITY[5] ENTITY[4] (
+ 候補擁立(ENTITY[5]) ∧
+  の_動き(ENTITY[5], ENTITY[4]) ∧
+   今(ENTITY[2]) ∧
+    の_ところ(ENTITY[2], TIME[1]) ∧
+     ほか(ENTITY[3]) ∧
+      ない(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 58_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 無投票 だっ た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ 前回(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   無投票(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ だっ_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 時間(EVENT[4]) = ENTITY[2])
+
+# ::id 59_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 福島 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[福島], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 60_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 南相馬 現元新 ３ 氏 名乗り
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ (CD_３_氏(ENTITY[1]), 現元新(ENTITY[1])) ∧
+  名乗り(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[3]) = LOC[南相馬])
+
+# ::id 61_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 喜多方 現新 ２ 氏 出馬 へ
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ (CD_２_氏(ENTITY[1]), 現新(ENTITY[1])) ∧
+  出馬(ENTITY[2]) ∧
+   xxx(EVENT[3], ENTITY[1]) ∧ へ(EVENT[3]) = ENTITY[2] ∧ LOC(EVENT[3]) = LOC[喜多方])
+
+# ::id 62_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 伊達 現職 ＶＳ ４ 新人 の 構図
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  namely_-LOC-(ENTITY[3], LOC[伊達]) ∧
+   (CD_４_新人(ENTITY[2]), ＶＳ(LOC[伊達], ENTITY[2])) ∧
+    の_構図(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 63_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 南相馬
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[南相馬])
+
+# ::id 64_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 １９ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_１９_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 65_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 再選 を 目指す 現職 の 桜井勝延氏 （ ５７ ） 、 元市長 の 渡辺一成氏 （ ６９ ） 、 元市議会 議長 の 横山元栄氏 （ ６５ ） の ３ 人 が 立候補 を 表明 し て いる 。
+∃ EVENT[13] GROUP[2] ENTITY[12] ENTITY[1] (
+ ∃ EVENT[7] ENTITY[6] ENTITY[4] ENTITY[3] (
+  再選(ENTITY[6]) ∧
+   目指す.0(EVENT[7], PERSON[桜井勝延氏], ENTITY[6]) ∧
+    現職(ENTITY[4]) ∧
+     の_xxx(ENTITY[4], PERSON[桜井勝延氏]) ∧
+      CD_５７(ENTITY[3]) ∧ namely_-PERSON-(ENTITY[3], PERSON[桜井勝延氏]) ∧ is_element_of(PERSON[桜井勝延氏], GROUP[2])) ∧
+  ∃ ENTITY[9] ENTITY[8] (
+   元市長(ENTITY[9]) ∧
+    の_xxx(ENTITY[9], PERSON[渡辺一成氏]) ∧
+     CD_６９(ENTITY[8]) ∧ namely_-PERSON-(ENTITY[8], PERSON[渡辺一成氏]) ∧ is_element_of(PERSON[渡辺一成氏], GROUP[2])) ∧
+  ∃ ENTITY[11] ENTITY[10] (
+   元市議会_議長(ENTITY[11]) ∧
+    の_xxx(ENTITY[11], PERSON[横山元栄氏]) ∧
+     CD_６５(ENTITY[10]) ∧ namely_-PERSON-(ENTITY[10], PERSON[横山元栄氏]) ∧ is_element_of(PERSON[横山元栄氏], GROUP[2])) ∧
+  (CD_３_人(ENTITY[1]), の(GROUP[2], ENTITY[1])) ∧
+   立候補(ENTITY[12]) ∧ 表明する.0_て_いる(EVENT[13], ENTITY[1], ENTITY[12]))
+
+# ::id 66_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 桜井氏 は 福島第１原発 事故 対応 の 指揮 を 執っ た 実績 を 強調 し 、 除染 や 健康管理対策 の 推進 を 掲げ て 市政継続 を 訴える 。
+∃ SITUATION[1] EVENT[4] EVENT[5] EVENT[10] EVENT[12] EVENT[3] ENTITY[2] GROUP[7] ENTITY[6] ENTITY[11] (
+ 福島第１原発_事故_対応(EVENT[3]) ∧
+  の_指揮(EVENT[3], ENTITY[2]) ∧
+   実績(SITUATION[1], 執る.0_た(EVENT[4], PERSON[桜井氏], ENTITY[2])) ∧
+    CONJ_や(∃ ENTITY[8] (除染(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+     ∃ ENTITY[9] (健康管理対策(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+     の_推進(GROUP[7], ENTITY[6]) ∧
+      市政継続(ENTITY[11]) ∧
+       past(EVENT[4]) ∧
+        強調する.0(EVENT[5], PERSON[桜井氏], SITUATION[1]) ∧
+         CONJ_te(掲げる.0_て(EVENT[10], PERSON[桜井氏], ENTITY[6]), 訴える.0(EVENT[12], PERSON[桜井氏], ENTITY[11])))
+
+# ::id 67_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 渡辺 、 横山 両氏 は 「 現市長 は 国 や 福島県 に パイプ が なく 、 復興 が 遅れ て いる 」 と 桜井氏 の 市政運営 に 異 を 唱え 批判票 の 取り込み を 図る 。
+∃ GROUP[2] ENTITY[6] (
+ is_element_of(PERSON[渡辺], GROUP[2]) ∧ is_element_of(PERSON[横山], GROUP[2]) ∧
+  現市長(ENTITY[6]) ∧
+   両 ENTITY[1] (equals_氏(GROUP[2], ENTITY[1]),
+    ∃ EVENT[10] EVENT[12] EVENT[5] EVENT[15] ENTITY[9] GROUP[7] ENTITY[11] ENTITY[4] ENTITY[3] ENTITY[14] ENTITY[13] (
+     の_市政運営(PERSON[桜井氏], ENTITY[3]) ∧
+      異(ENTITY[4]) ∧
+       CONJ_や(∃ ENTITY[8] (国(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])), is_element_of(LOC[福島県], GROUP[7])) ∧
+        パイプ(ENTITY[9]) ∧
+         復興(ENTITY[11]) ∧
+          批判票(ENTITY[14]) ∧
+           の_取り込み(ENTITY[14], ENTITY[13]) ∧
+            唱える.0(EVENT[5], ENTITY[1], ENTITY[4],
+             なく(EVENT[10], (ENTITY[6], ENTITY[9])) ∧ に(EVENT[10]) = GROUP[7] ∧
+              遅れる.0_て_いる(EVENT[12], ENTITY[11])) ∧ に(EVENT[5]) = ENTITY[3] ∧
+             図る.0(EVENT[15], ENTITY[1], ENTITY[13]))))
+
+# ::id 68_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 喜多方
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[喜多方])
+
+# ::id 69_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 ２６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_２６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 70_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 で 再選 を 目指す 山口信也氏 （ ７３ ） と 、 新人 の 農業浅見彰宏氏 （ ４４ ） が 立候補 を 表明 し て いる 。
+∃ EVENT[10] ENTITY[9] GROUP[1] (
+ CONJ_と(∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] (
+       現職(ENTITY[4]) ∧
+        再選(ENTITY[5]) ∧
+         目指す.0(EVENT[6], PERSON[山口信也氏], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4] ∧
+          CD_７３(ENTITY[2]) ∧ namely_-PERSON-(ENTITY[2], PERSON[山口信也氏]) ∧ is_element_of(PERSON[山口信也氏], GROUP[1])),
+  ∃ ENTITY[8] ENTITY[7] (
+   新人(ENTITY[8]) ∧
+    の_xxx(ENTITY[8], PERSON[農業浅見彰宏氏]) ∧
+     CD_４４(ENTITY[7]) ∧ namely_-PERSON-(ENTITY[7], PERSON[農業浅見彰宏氏]) ∧ is_element_of(PERSON[農業浅見彰宏氏], GROUP[1]))) ∧
+  立候補(ENTITY[9]) ∧ 表明する.0_て_いる(EVENT[10], GROUP[1], ENTITY[9]))
+
+# ::id 71_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 山口氏 は 企業誘致 など １ 期 目 の 実績 を 強調 し 、 「 福島第１原発 事故 の 風評被害 を 受け た 農業 、 観光 の 回復 に 全力 を 挙げる 」 と 訴える 。
+∃ ENTITY[6] EVENT[4] EVENT[12] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] FAC[11] ENTITY[10] GROUP[13] ENTITY[8] ENTITY[7] (
+ 企業誘致(ENTITY[2]) ∧
+  (CD_１_期(ENTITY[3]), 目(ENTITY[3])) ∧
+   の_実績(ENTITY[3], ENTITY[1]) ∧ など_実績(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[6] = *speaker*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     福島第１原発_事故(FAC[11]) ∧
+      の_風評被害(FAC[11], ENTITY[10]) ∧
+       ∃ ENTITY[14] (農業(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])) ∧
+        ∃ ENTITY[15] (観光(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13])) ∧
+        受ける.0_た(EVENT[12], ENTITY[8], ENTITY[10]) ∧ equals(GROUP[13], ENTITY[8]) ∧
+         の_回復(ENTITY[8], ENTITY[7]) ∧
+          before(EVENT[5], EVENT[12]) ∧
+           強調する.0(EVENT[4], PERSON[山口氏], ENTITY[1]) ∧
+            訴える.0(EVENT[5], PERSON[山口氏],
+             全 ENTITY[16] (力(ENTITY[16]),
+              ∃ EVENT[17] (挙げる.0(EVENT[17], ENTITY[6], ENTITY[16]) ∧ に(EVENT[17]) = ENTITY[7]))))
+
+# ::id 72_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 浅見氏 は 「 喜多方 の 美しい 田園 を 未来 に 引き継ぐ 仕組み を 市民 と 協働 で 考え たい 」 と アピール する 。
+∃ ATTRIB[5] SITUATION[3] ENTITY[2] EVENT[7] EVENT[10] EVENT[1] ENTITY[6] ENTITY[4] ENTITY[9] ENTITY[8] (
+ ENTITY[2] = *speaker* ∧
+  美しい(ATTRIB[5]) ∧
+   ATTRIBUTE_田園(ATTRIB[5], ENTITY[4]) ∧ の_田園(NORP[喜多方], ENTITY[4]) ∧
+    未来(ENTITY[6]) ∧
+     仕組み(SITUATION[3], 引き継ぐ.0(EVENT[7], ENTITY[2], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+      市民(ENTITY[8]) ∧
+       協働(ENTITY[9]) ∧
+        アピールする.0(EVENT[1], PERSON[浅見氏],
+         考える.0_たい(EVENT[10], ENTITY[2], SITUATION[3]) ∧ で(EVENT[10]) = ENTITY[9] ∧
+          と(EVENT[10]) = ENTITY[8]))
+
+# ::id 73_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 伊達
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[伊達])
+
+# ::id 74_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 ２６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_２６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 75_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ３ 選 を 目指す 現職 仁志田昇司氏 （ ６９ ） に 、 市議 高橋一由氏 （ ６１ ） 、 会社役員 橘典雄氏 （ ６４ ） 、 農業 佐藤易広氏 （ ７２ ） 、 旧伊達町長 冨田健一郎氏 （ ７３ ） の ４ 新人 が 挑む 。
+∃ EVENT[5] EVENT[16] ENTITY[4] ENTITY[2] ENTITY[1] GROUP[7] ENTITY[6] (
+ CD_３_選(ENTITY[4]) ∧
+  目指す.0(EVENT[5], PERSON[仁志田昇司氏], ENTITY[4]) ∧
+   現職(ENTITY[2]) ∧
+    namely_-PERSON-(ENTITY[2], PERSON[仁志田昇司氏]) ∧
+     CD_６９(ENTITY[1]) ∧
+      namely_-PERSON-(ENTITY[1], PERSON[仁志田昇司氏]) ∧
+       ∃ ENTITY[9] ENTITY[8] (
+        市議(ENTITY[9]) ∧
+         namely_-PERSON-(ENTITY[9], PERSON[高橋一由氏]) ∧
+          CD_６１(ENTITY[8]) ∧ namely_-PERSON-(ENTITY[8], PERSON[高橋一由氏]) ∧ is_element_of(PERSON[高橋一由氏], GROUP[7])) ∧
+        ∃ ENTITY[11] ENTITY[10] (
+         会社役員(ENTITY[11]) ∧
+          namely_-PERSON-(ENTITY[11], PERSON[橘典雄氏]) ∧
+           CD_６４(ENTITY[10]) ∧ namely_-PERSON-(ENTITY[10], PERSON[橘典雄氏]) ∧ is_element_of(PERSON[橘典雄氏], GROUP[7])) ∧
+        ∃ ENTITY[13] ENTITY[12] (
+         農業(ENTITY[13]) ∧
+          namely_-PERSON-(ENTITY[13], PERSON[佐藤易広氏]) ∧
+           CD_７２(ENTITY[12]) ∧ namely_-PERSON-(ENTITY[12], PERSON[佐藤易広氏]) ∧ is_element_of(PERSON[佐藤易広氏], GROUP[7])) ∧
+        ∃ ENTITY[15] ENTITY[14] (
+         旧伊達町長(ENTITY[15]) ∧
+          namely_-PERSON-(ENTITY[15], PERSON[冨田健一郎氏]) ∧
+           CD_７３(ENTITY[14]) ∧ namely_-PERSON-(ENTITY[14], PERSON[冨田健一郎氏]) ∧ is_element_of(PERSON[冨田健一郎氏], GROUP[7])) ∧
+        (CD_４_新人(ENTITY[6]), の(GROUP[7], ENTITY[6])) ∧
+         挑む.0(EVENT[16], ENTITY[6]) ∧ に(EVENT[16]) = PERSON[仁志田昇司氏])
+
+# ::id 76_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 福島第１原発 事故 の 除染対策 が 争点 。
+∃ EVENT[4] FAC[2] ENTITY[3] ENTITY[1] (福島第１原発_事故(FAC[2]) ∧ の_除染対策(FAC[2], ENTITY[1]) ∧ 争点(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[3]))
+
+# ::id 77_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 仁志田氏 は 「 効率性重視 」 を 掲げ 、 放射線量 に 応じ て 、 全面 部分 除染 に 分け て いる 。
+∃ ENTITY[2] EVENT[1] EVENT[3] (
+ 放射線量(ENTITY[2]) ∧
+  掲げる.0(EVENT[1], PERSON[仁志田氏], ENTITY[効率性重視]) ∧
+   CONJ_te(応じる.0_て(EVENT[3], PERSON[仁志田氏]) ∧ に(EVENT[3]) = ENTITY[2],
+    全 ENTITY[4] (面(ENTITY[4]) ∧ 部分_除染(ENTITY[4]),
+     ∃ EVENT[5] (分ける.0_て_いる(EVENT[5], PERSON[仁志田氏]) ∧ に(EVENT[5]) = ENTITY[4]))))
+
+# ::id 78_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 高橋氏 は 「 住民不安 を 軽減 する 除染計画 を 立てる 」 と 主張 。
+∃ ENTITY[4] SITUATION[3] ENTITY[2] EVENT[6] EVENT[7] EVENT[1] ENTITY[5] (
+ ENTITY[2] = *speaker* ∧
+  ENTITY[4] = *pro*{ENTITY[2]} ∧
+   住民不安(ENTITY[5]) ∧
+    除染計画(SITUATION[3], 軽減する.0(EVENT[6], ENTITY[4], ENTITY[5])) ∧
+     する.0(EVENT[1], PERSON[高橋氏], 立てる.0(EVENT[7], ENTITY[2], SITUATION[3])))
+
+# ::id 79_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 橘氏 と 佐藤氏 、 冨田氏 は とも に 一律全面除染 を 訴える 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] GROUP[1] (
+ CONJ_と(is_element_of(PERSON[橘氏], GROUP[1]), is_element_of(PERSON[佐藤氏], GROUP[1]), is_element_of(PERSON[冨田氏], GROUP[1])) ∧
+  とも(ENTITY[2]) ∧
+   一律全面除染(ENTITY[3]) ∧ 訴える.0(EVENT[4], GROUP[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 80_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ７００ 人 近い 自主避難者対策 、 線量 が 局地的 に 高い 旧特定避難勧奨地点 の 居住者支援策 も 焦点 。
+∃ EVENT[13] ENTITY[12] GROUP[1] (
+ ∃ EVENT[5] ENTITY[4] ENTITY[2] (
+  CD_７００_人(ENTITY[4]) ∧
+   近い(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 自主避難者対策(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ EVENT[10] ENTITY[9] ENTITY[7] ENTITY[6] (
+   線量(ENTITY[9]) ∧
+    高い(EVENT[10], (ENTITY[7], ENTITY[9])) ∧ 旧特定避難勧奨地点(ENTITY[7]) ∧
+     の_居住者支援策(ENTITY[7], ENTITY[6]) ∧ ADV_局地的_に(EVENT[10]) ∧ is_element_of(ENTITY[6], GROUP[1])) ∧
+  焦点(ENTITY[12]) ∧ xxx(EVENT[13], GROUP[1], ENTITY[12]))
+
+# ::id 81_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 仁志田氏 が 冨田氏 に 競り勝っ た 。
+∃ EVENT[2] ENTITY[1] (
+ 前回(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   競り勝つ.0_た(EVENT[2], PERSON[仁志田氏]) ∧ に(EVENT[2]) = PERSON[冨田氏] ∧ 時間(EVENT[2]) = ENTITY[1])
+
+# ::id 82_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 青森 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[青森], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 83_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 平川 自民 県連 巻き込み 前哨戦
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ 県連(ENTITY[1]) ∧
+  前哨戦(ENTITY[3]) ∧
+   巻き込む.0(EVENT[2], ORG[自民], ENTITY[1]) ∧ xxx(EVENT[4], ORG[自民], ENTITY[3]) ∧ LOC(EVENT[4]) = LOC[平川])
+
+# ::id 84_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 弘前・五所川原 現職 が 立候補 の 意思
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[1]) ∧
+  立候補(ENTITY[3]) ∧
+   の_意思(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[4]) = LOC[弘前.五所川原])
+
+# ::id 85_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 黒石 現職 、 年齢 理由 に 不出馬 か
+QUEST(∃ EVENT[4] ENTITY[1] ENTITY[3] ENTITY[2] (
+      現職(ENTITY[1]) ∧
+       namely_-LOC-(ENTITY[1], LOC[黒石]) ∧
+        年齢(ENTITY[3]) ∧
+         を_理由(ENTITY[3], ENTITY[2]) ∧ する.0(EVENT[4], LOC[黒石]) ∧ に(EVENT[4]) = ENTITY[2]))
+
+# ::id 86_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 平川
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[平川])
+
+# ::id 87_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 ２６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_２６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 88_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 大川喜代治氏 （ ６８ ） と 、 前回市長選 で 大川氏 を 支え た 前県議 の 長尾忠行氏 （ ６４ ） が 、 とも に 自民党 に 推薦願 を 出し 、 党県連 を 巻き込ん だ 激しい 戦い を 繰り広げる 。
+∃ ATTRIB[13] EVENT[11] EVENT[15] EVENT[16] ENTITY[10] ENTITY[9] ENTITY[14] ENTITY[12] GROUP[1] (
+ CONJ_と(∃ ENTITY[3] ENTITY[2] (
+       現職(ENTITY[3]) ∧
+        の_xxx(ENTITY[3], PERSON[大川喜代治氏]) ∧
+         CD_６８(ENTITY[2]) ∧ namely_-PERSON-(ENTITY[2], PERSON[大川喜代治氏]) ∧ is_element_of(PERSON[大川喜代治氏], GROUP[1])),
+  ∃ EVENT[8] ENTITY[7] ENTITY[5] ENTITY[4] (
+   前回市長選(ENTITY[7]) ∧
+    支える.0_た(EVENT[8], PERSON[長尾忠行氏], PERSON[大川氏]) ∧ で(EVENT[8]) = ENTITY[7] ∧
+     前県議(ENTITY[5]) ∧
+      の_xxx(ENTITY[5], PERSON[長尾忠行氏]) ∧
+       CD_６４(ENTITY[4]) ∧
+        namely_-PERSON-(ENTITY[4], PERSON[長尾忠行氏]) ∧ past(EVENT[8]) ∧ is_element_of(PERSON[長尾忠行氏], GROUP[1]))) ∧
+  とも(ENTITY[9]) ∧
+   推薦願(ENTITY[10]) ∧
+    激しい(ATTRIB[13]) ∧
+     党県連(ENTITY[14]) ∧
+      ATTRIBUTE_戦い(ATTRIB[13], ENTITY[12]) ∧ THAT_戦い(巻き込む.0_だ(EVENT[15], _, ENTITY[14]), ENTITY[12]) ∧
+       出す.0(EVENT[11], GROUP[1], ENTITY[10]) ∧ に(EVENT[11]) = ORG[自民党] ∧
+        に(EVENT[11]) = ENTITY[9] ∧ 繰り広げる.0(EVENT[16], GROUP[1], ENTITY[12]))
+
+# ::id 89_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 合併前 の ２ 町 １ 村 の 各党支部 が 、 別々 の 候補 へ の 支持 を 表明 し た の が 争い の 発端 。
+∃ SITUATION[1] EVENT[8] EVENT[11] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[10] ENTITY[9] (
+ 合併前(ENTITY[3]) ∧
+  CD_２_町_１_村(ENTITY[4]) ∧
+   の_各党支部(ENTITY[4], ENTITY[2]) ∧ の__各党支部(ENTITY[3], ENTITY[2]) ∧
+    別々(ENTITY[7]) ∧
+     の_候補(ENTITY[7], ENTITY[6]) ∧
+      へ_の_支持(ENTITY[6], ENTITY[5]) ∧
+       の(SITUATION[1], 表明する.0_た(EVENT[8], ENTITY[2], ENTITY[5])) ∧
+        争い(ENTITY[10]) ∧
+         の_発端(ENTITY[10], ENTITY[9]) ∧ past(EVENT[8]) ∧ xxx(EVENT[11], SITUATION[1], ENTITY[9]))
+
+# ::id 90_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt どちら が 県連 の 推薦 を 受ける か で もめ 、 木村太郎 衆院議員 が 県連 会長 を 辞任 する 騒動 に まで 発展 し た 。
+∃ SITUATION[9] SITUATION[2] ENTITY[1] EVENT[7] EVENT[12] ENTITY[10] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  か(SITUATION[2],
+   QUEST(∃ EVENT[6] ENTITY[5] ENTITY[4] ? ENTITY[3] (
+         県連(ENTITY[5]) ∧ の_推薦(ENTITY[5], ENTITY[4]) ∧ 受ける.0(EVENT[6], ENTITY[3], ENTITY[4])))) ∧
+   衆院議員(ENTITY[10]) ∧
+    namely_-ENTITY-(ENTITY[10], ENTITY[木村太郎]) ∧
+     県連_会長(ENTITY[11]) ∧
+      騒動(SITUATION[9], 辞任する.0(EVENT[12], ENTITY[木村太郎], ENTITY[11])) ∧
+       もめる.0(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = SITUATION[2] ∧
+        まで SITUATION[8] (SITUATION[8] = SITUATION[9],
+         ∃ EVENT[13] (past(EVENT[13]) ∧ 発展する.0_た(EVENT[13], ENTITY[1]) ∧ に(EVENT[13]) = SITUATION[8])))
+
+# ::id 91_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 結局 、 県連 は どちら も 推薦 し ない 自主投票 と し た 。
+∃ SITUATION[2] EVENT[5] ENTITY[1] (
+ 県連(ENTITY[1]) ∧
+  ADV_結局(EVENT[5]) ∧
+   past(EVENT[5]) ∧
+    自主投票(SITUATION[2], も ENTITY[3] ¬ ∃ EVENT[4] 推薦する.0(EVENT[4], ENTITY[1], ENTITY[3])) ∧
+     する.0_た(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = SITUATION[2])
+
+# ::id 92_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt その 後 、 両陣営 が 同じ 日 に 決起集会 を ぶつける など 、 対決姿勢 は 強まる ばかり だ 。
+∃ ATTRIB[5] SITUATION[3] EVENT[8] EVENT[7] ENTITY[6] ENTITY[4] ENTITY[2] TIME[1] (
+ 後(TIME[1]) ∧
+  同じ(ATTRIB[5]) ∧
+   ATTRIBUTE_日(ATTRIB[5], ENTITY[4]) ∧
+    決起集会(ENTITY[6]) ∧
+     FACT(SITUATION[3], ぶつける.0(EVENT[7], ORG[両陣営], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[4]) ∧
+      など_対決姿勢(SITUATION[3], ENTITY[2]) ∧ 強まる.0_ばかり_だ(EVENT[8], ENTITY[2]) ∧ is_contained_in(時間(EVENT[8]), TIME[1]))
+
+# ::id 93_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 弘前
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[弘前])
+
+# ::id 94_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ４ 月 １３ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_４_月_１３_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 95_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職葛西憲之氏 （ ６７ ） は 昨年 １２ 月 の 市議会 で 、 「 経営型行政 の 成果 が 出始め て いる 。 高まっ た 市民力 を 結集 し 、 さらなる 発展 に つなげ て いこう 」 と 述べ 、 再選 を 目指し て 立候補 する 意思 を 表明 し た 。
+∃ SITUATION[16] ENTITY[8] EVENT[7] EVENT[11] EVENT[12] EVENT[14] EVENT[15] EVENT[4] EVENT[18] EVENT[19] EVENT[20] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[13] ENTITY[17] ENTITY[2] ENTITY[1] (
+ CD_６７(ENTITY[1]) ∧
+  namely_-PERSON-(ENTITY[1], PERSON[現職葛西憲之氏]) ∧
+   (CD_１２_月(ENTITY[3]), 昨年(ENTITY[3])) ∧
+    の_市議会(ENTITY[3], ENTITY[2]) ∧
+     経営型行政(ENTITY[6]) ∧
+      の_成果(ENTITY[6], ENTITY[5]) ∧
+       ENTITY[8] = *speaker*{ENTITY[5], ENTITY[6], ENTITY[2], ENTITY[3], ENTITY[1]} ∧
+        高まる.0_た(EVENT[11], ENTITY[9]) ∧ 市民力(ENTITY[9]) ∧
+         発展(ENTITY[13]) ∧
+          再選(ENTITY[17]) ∧
+           意思(SITUATION[16], CONJ_te(目指す.0_て(EVENT[18], PERSON[現職葛西憲之氏], ENTITY[17]), 立候補する.0(EVENT[19], PERSON[現職葛西憲之氏]))) ∧
+            before(EVENT[4], EVENT[11]) ∧
+             past(EVENT[20]) ∧
+              述べる.0(EVENT[4], PERSON[現職葛西憲之氏],
+               出始める.0_て_いる(EVENT[7], ENTITY[5]) ∧
+                集結する.0(EVENT[12], ENTITY[8], ENTITY[9]) ∧
+                 CONJ_te(つなげる.0_て(EVENT[14], ENTITY[8]) ∧ に(EVENT[14]) = ENTITY[13],
+                  いく.0(EVENT[15], ENTITY[8]))) ∧
+               表明する.0_た(EVENT[20], PERSON[現職葛西憲之氏], SITUATION[16]) ∧ で(EVENT[20]) = ENTITY[2])
+
+# ::id 96_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 元県幹部 の 葛西氏 は 弘前市副市長 を 経 て 、 ２０１０ 年 の 市長選 に 立候補 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 元県幹部(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], PERSON[葛西氏]) ∧
+   弘前市副市長(ENTITY[2]) ∧
+    CD_２０１０_年(ENTITY[5]) ∧
+     の_市長選(ENTITY[5], ENTITY[4]) ∧
+      CONJ_te(経る.0_て(EVENT[3], PERSON[葛西氏], ENTITY[2]), する.0(EVENT[6], PERSON[葛西氏]) ∧ に(EVENT[6]) = ENTITY[4]))
+
+# ::id 97_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt たもと を 分かっ た 前市長 と の 一騎打ち と なっ た が 、 大差 で 破っ た 。
+∃ ENTITY[8] ENTITY[7] ENTITY[1] EVENT[5] EVENT[6] EVENT[10] ENTITY[4] ENTITY[2] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  たもと(ENTITY[4]) ∧
+   分かつ.0_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ と_の_一騎打ち(PERSON[前市長], ENTITY[2]) ∧
+    ENTITY[7] = *pro*{ENTITY[2], ENTITY[4]} ∧
+     ENTITY[8] = *pro*{ENTITY[2], ENTITY[4]} ∧
+      大差(ENTITY[9]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[6]) ∧
+         past(EVENT[10]) ∧
+          CONJ_が(なる.0_た(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[2],
+           破る.0_た(EVENT[10], ENTITY[7], ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[9]))
+
+# ::id 98_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 既に 市議会与党会派 の 憲政公明 など ５ 会派 が 葛西氏支持 を 表明 。
+∃ EVENT[5] ENTITY[3] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 市議会与党会派(ENTITY[3]) ∧
+  の_憲政公明(ENTITY[3], ENTITY[2]) ∧
+   (CD_５_会派(ENTITY[1]), など(ENTITY[2], ENTITY[1])) ∧
+    葛西氏支持(ENTITY[4]) ∧ ADV_既に(EVENT[5]) ∧ する.0(EVENT[5], ENTITY[1], ENTITY[4]))
+
+# ::id 99_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 共産党 は 独自候補 の 擁立 を 模索 し て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (独自候補(ENTITY[2]) ∧ の_擁立(ENTITY[2], ENTITY[1]) ∧ 模索する.0_て_いる(EVENT[3], ORG[共産党], ENTITY[1]))
+
+# ::id 100_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に も 立候補 の 動き が ある 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ ほか(ENTITY[1]) ∧
+  立候補(ENTITY[3]) ∧
+   の_動き(ENTITY[3], ENTITY[2]) ∧ ある.0(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 101_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 五所川原
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[五所川原])
+
+# ::id 102_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ６ 月 ２９ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_６_月_２９_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 103_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 平山誠敏氏 （ ７３ ） は 昨年 １２ 月 の 市議会 で 「 最大 の 課題 で ある 市財政 の 健全化 は まだ 道半ば 」 など と 述べ 、 ３ 選 へ 向け て 立候補 する こと を 明らか に し た 。
+∃ SITUATION[15] EVENT[13] EVENT[5] EVENT[17] EVENT[18] EVENT[19] ENTITY[4] ENTITY[12] ENTITY[3] ENTITY[16] EVENT[10] ENTITY[2] ENTITY[1] ENTITY[9] ENTITY[8] ENTITY[11] ENTITY[6] (
+ 現職(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[平山誠敏氏]) ∧
+   CD_７３(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[平山誠敏氏]) ∧
+     最大(ENTITY[9]) ∧
+      の_課題(ENTITY[9], ENTITY[8]) ∧
+       市財政(ENTITY[11]) ∧
+        で_ある(EVENT[10], ENTITY[6], ENTITY[8]) ∧ の_健全化(ENTITY[11], ENTITY[6]) ∧
+         (CD_１２_月(ENTITY[4]), 昨年(ENTITY[4])) ∧
+          の_市議会(ENTITY[4], ENTITY[3]) ∧
+           道半ば(ENTITY[12]) ∧
+            CD_３_選(ENTITY[16]) ∧
+             こと(SITUATION[15],
+              CONJ_te(向ける.0_て(EVENT[17], PERSON[平山誠敏氏]) ∧ へ(EVENT[17]) = ENTITY[16],
+               立候補する.0(EVENT[18], PERSON[平山誠敏氏]))) ∧
+              ADV_まだ(EVENT[13]) ∧
+               ADV_明らか_に(EVENT[19]) ∧
+                past(EVENT[19]) ∧
+                 述べる.0(EVENT[5], PERSON[平山誠敏氏], xxx(EVENT[13], ENTITY[6], ENTITY[12])) ∧
+                  で(EVENT[5]) = ENTITY[3] ∧ する.0_た(EVENT[19], PERSON[平山誠敏氏], SITUATION[15]))
+
+# ::id 104_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 任期満了 まで 半年 以上 ある 時期 で の 態度表明 は 、 中核病院 「 つがる総合病院 」 の ４ 月 開院 に めど が 立っ た こと を 受け て の 判断 。
+∃ SITUATION[7] SITUATION[6] SITUATION[2] EVENT[11] EVENT[12] EVENT[13] ENTITY[9] ENTITY[10] ENTITY[8] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 任期満了(ENTITY[3]) ∧
+  半年_以上(ENTITY[4]) ∧
+   時期(SITUATION[2], ある.0(EVENT[5], ENTITY[4]) ∧ まで(EVENT[5]) = ENTITY[3]) ∧
+    で_の_態度表明(SITUATION[2], ENTITY[1]) ∧
+     中核病院(ENTITY[9]) ∧
+      namely_-FAC-(ENTITY[9], FAC[つがる総合病院]) ∧
+       (CD_４_月(ENTITY[8]), の_開院(FAC[つがる総合病院], ENTITY[8])) ∧
+        めど(ENTITY[10]) ∧
+         こと(SITUATION[7], 立つ.0_た(EVENT[11], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[8]) ∧
+          判断(SITUATION[6], 受ける.0_て_の(EVENT[12], ENTITY[1], SITUATION[7])) ∧
+           past(EVENT[11]) ∧ xxx(EVENT[13], ENTITY[1], SITUATION[6]))
+
+# ::id 105_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 悲願 だっ た 広域医療 の 整備 を 達成 し た 上で 、 より 幅広い 支持 を 訴える 構え だ 。
+∃ ATTRIB[4] SITUATION[2] ENTITY[1] EVENT[8] EVENT[10] EVENT[11] EVENT[12] ENTITY[7] ENTITY[9] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  より_幅広い(ATTRIB[4]) ∧
+   ATTRIBUTE_支持(ATTRIB[4], ENTITY[3]) ∧
+    悲願(ENTITY[7]) ∧
+     広域医療(ENTITY[9]) ∧
+      だっ_た(EVENT[8], ENTITY[5], ENTITY[7]) ∧ の_整備(ENTITY[9], ENTITY[5]) ∧
+       構え(SITUATION[2], CRD_上で(達成する.0_た(EVENT[10], ENTITY[3], ENTITY[5]), 訴える.0(EVENT[11], ENTITY[1], ENTITY[3]))) ∧
+        past(EVENT[8]) ∧ past(EVENT[10]) ∧ past(EVENT[12]) ∧ だ(EVENT[12], ENTITY[1], SITUATION[2]))
+
+# ::id 106_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 市議会最大会派 の 至誠公明会 は 、 平山氏 支持 を 明確 に し て いる 。
+∃ EVENT[5] PERSON[4] EVENT[3] ENTITY[2] (
+ 市議会最大会派(ENTITY[2]) ∧
+  の(EVENT[3], ORG[至誠公明会], ENTITY[2]) ∧
+   平山氏_支持(PERSON[4]) ∧ ADV_明確_に(EVENT[5]) ∧ する.0_て_いる(EVENT[5], ORG[至誠公明会], PERSON[4]))
+
+# ::id 107_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 立候補 の 動き は 見 られ ない 。
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ 立候補(ENTITY[3]) ∧
+  の_動き(ENTITY[3], ENTITY[2]) ∧
+   ほか(ENTITY[1]) ∧ ¬ ∃ EVENT[4] (見る.0(EVENT[4], _, ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 108_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 黒石
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[黒石])
+
+# ::id 109_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ７ 月 １７ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_７_月_１７_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 110_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ４ 期 目 の 現職 鳴海広道氏 （ ７２ ） は 、 態度 を 明らか に し て い ない 。
+∃ EVENT[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ (CD_４_期(ENTITY[4]), 目(ENTITY[4])) ∧
+  の(EVENT[5], PERSON[鳴海広道氏], ENTITY[4]) ∧
+   現職(ENTITY[2]) ∧
+    namely_-PERSON-(ENTITY[2], PERSON[鳴海広道氏]) ∧
+     CD_７２(ENTITY[1]) ∧
+      namely_-PERSON-(ENTITY[1], PERSON[鳴海広道氏]) ∧
+       ¬ ∃ EVENT[7] ENTITY[6] (態度(ENTITY[6]) ∧ ADV_明らか_に(EVENT[7]) ∧ する.0_て_い(EVENT[7], PERSON[鳴海広道氏], ENTITY[6])))
+
+# ::id 111_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 周囲 によると 、 年齢 や 健康状態 など を 理由 に 、 立候補 し ない 意向 と み られる 。
+∃ SITUATION[9] ENTITY[1] EVENT[8] EVENT[11] GROUP[4] ENTITY[7] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  周囲(ENTITY[2]) ∧
+   CONJ_や(∃ ENTITY[5] (年齢(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (健康状態(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    など(GROUP[4], ENTITY[3]) ∧
+     理由(ENTITY[7]) ∧
+      意向(SITUATION[9], ¬ ∃ EVENT[10] 立候補する.0(EVENT[10], ENTITY[1])) ∧
+       xxx(EVENT[8], ENTITY[1], ENTITY[3], ENTITY[7]) ∧
+        みる.0(EVENT[11], _, ENTITY[1]) ∧ と(EVENT[11]) = SITUATION[9] ∧ によると(EVENT[11]) = ENTITY[2])
+
+# ::id 112_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 鳴海氏 は 、 県議会 議長 など を 経 て １９９８ 年 の 市長選 で 初当選 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[1] ENTITY[5] ENTITY[4] (
+ 県議会_議長(ENTITY[2]) ∧
+  など(ENTITY[2], ENTITY[1]) ∧
+   CD_１９９８_年(ENTITY[5]) ∧
+    の_市長選(ENTITY[5], ENTITY[4]) ∧
+     CONJ_te(経る.0_て(EVENT[3], PERSON[鳴海氏], ENTITY[1]), する.0(EVENT[6], PERSON[鳴海氏]) ∧ で(EVENT[6]) = ENTITY[4]))
+
+# ::id 113_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 ２０１０ 年 は 無投票 だっ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ (CD_２０１０_年(ENTITY[1]), 前回(ENTITY[1])) ∧
+  無投票(ENTITY[2]) ∧ past(EVENT[3]) ∧ だっ_た(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 114_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 鳴海氏 が 退任 する 場合 、 後継 に は 市選出 の 自民党県議 の 名前 が 挙がっ て いる 。
+∃ SITUATION[1] ENTITY[6] ENTITY[5] ENTITY[4] EVENT[2] EVENT[7] ENTITY[3] (
+ 後継(ENTITY[3]) ∧
+  FACT(SITUATION[1], 退任する.0(EVENT[2], PERSON[鳴海氏])) ∧
+   市選出(ENTITY[6]) ∧
+    の_自民党県議(ENTITY[6], ENTITY[5]) ∧
+     の_名前(ENTITY[5], ENTITY[4]) ∧
+      挙がる.0_て_いる(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[3] ∧ 場合(EVENT[7]) = SITUATION[1])
+
+# ::id 115_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 立候補 の 動き は 出 て い ない 。
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ 立候補(ENTITY[3]) ∧
+  の_動き(ENTITY[3], ENTITY[2]) ∧
+   ほか(ENTITY[1]) ∧ ¬ ∃ EVENT[4] (出る.0_て_い(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 116_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 岩手 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[岩手], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 117_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 二戸 現職 急逝 、 側近 出馬 へ
+∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] ENTITY[3] (
+ 現職(ENTITY[1]) ∧
+  側近(ENTITY[3]) ∧
+   出馬(ENTITY[4]) ∧
+    する.0(EVENT[2], ENTITY[1]) ∧
+     xxx(EVENT[5], ENTITY[3]) ∧ へ(EVENT[5]) = ENTITY[4] ∧ LOC(EVENT[5]) = LOC[二戸])
+
+# ::id 118_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 花巻 現新 一騎打ち か
+QUEST(∃ EVENT[3] ENTITY[2] ENTITY[1] (
+      現新(ENTITY[1]) ∧
+       一騎打ち(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[3]) = LOC[花巻]))
+
+# ::id 119_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 奥州 現職 、 再選 目指す
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 現職(ENTITY[1]) ∧
+  再選(ENTITY[2]) ∧ 目指す.0(EVENT[3], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[3]) = LOC[奥州])
+
+# ::id 120_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 久慈 前回 と 同じ 顔触れ か
+QUEST(∃ ATTRIB[3] ENTITY[1] EVENT[5] ENTITY[4] ENTITY[2] (
+      ENTITY[1] = *pro* ∧
+       前回(ENTITY[4]) ∧
+        と_同じ(ENTITY[4], ATTRIB[3]) ∧
+         ATTRIBUTE_顔触れ(ATTRIB[3], ENTITY[2]) ∧
+          xxx(EVENT[5], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[5]) = LOC[久慈]))
+
+# ::id 121_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 滝沢 市 に 昇格 、 初 の 選挙
+∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] ENTITY[3] (
+ 市(ENTITY[1]) ∧
+  初(ENTITY[4]) ∧
+   の_選挙(ENTITY[4], ENTITY[3]) ∧
+    する.0(EVENT[2], LOC[滝沢]) ∧ に(EVENT[2]) = ENTITY[1] ∧ xxx(EVENT[5], LOC[滝沢], ENTITY[3]))
+
+# ::id 122_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 大船渡 再選 へ 出馬意向
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 再選(ENTITY[1]) ∧
+  出馬意向(ENTITY[2]) ∧ xxx(EVENT[3], LOC[大船渡], ENTITY[2]) ∧ へ(EVENT[3]) = ENTITY[1])
+
+# ::id 123_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 二戸
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[二戸])
+
+# ::id 124_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 ２６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_２６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 125_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 再選 を 目指す 意思 を 表明 し て い た 小保内敏幸氏 が 昨年 １２ 月 に 急逝 し た 。
+∃ SITUATION[2] EVENT[4] EVENT[5] EVENT[7] ENTITY[3] ENTITY[6] (
+ 再選(ENTITY[3]) ∧
+  意思(SITUATION[2], 目指す.0(EVENT[4], PERSON[小保内敏幸氏], ENTITY[3])) ∧
+   表明する.0_て_い_た(EVENT[5], PERSON[小保内敏幸氏], SITUATION[2]) ∧
+    (CD_１２_月(ENTITY[6]), 昨年(ENTITY[6])) ∧
+     past(EVENT[5]) ∧ past(EVENT[7]) ∧ 急逝する.0_た(EVENT[7], PERSON[小保内敏幸氏]) ∧ に(EVENT[7]) = ENTITY[6])
+
+# ::id 126_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 元市総合政策部長 の 藤原淳氏 （ ６１ ） が １２ 月 ２７ 日 、 小保内市政 の 継承 を 目指し て 立候補 する 意思 を 表明 し た 。
+∃ SITUATION[4] EVENT[7] EVENT[8] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[6] ENTITY[5] TIME[3] (
+ 元市総合政策部長(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], PERSON[藤原淳氏]) ∧
+   CD_６１(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[藤原淳氏]) ∧
+     CD_１２_月_２７_日(TIME[3]) ∧
+      小保内市政(ENTITY[6]) ∧
+       の_継承(ENTITY[6], ENTITY[5]) ∧
+        意思(SITUATION[4], CONJ_te(目指す.0_て(EVENT[7], PERSON[藤原淳氏], ENTITY[5]), 立候補する.0(EVENT[8], PERSON[藤原淳氏]))) ∧
+         past(EVENT[9]) ∧ 表明する.0_た(EVENT[9], PERSON[藤原淳氏], SITUATION[4]) ∧ is_contained_in(時間(EVENT[9]), TIME[3]))
+
+# ::id 127_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 藤原氏 は 小保内氏 の 側近 で 、 昨年 ３ 月 に 退任 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ の_側近(PERSON[小保内氏], ENTITY[1]) ∧
+  (CD_３_月(ENTITY[3]), 昨年(ENTITY[3])) ∧
+   CONJ_te(で(EVENT[2], PERSON[藤原氏], ENTITY[1]), する.0(EVENT[4], PERSON[藤原氏]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 128_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 小保内氏 の 義理 の 弟 に も 当たり 、 後援会 の 一部 を 引き継ぐ 。
+∃ ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  義理(ENTITY[3]) ∧
+   の_弟(ENTITY[3], ENTITY[2]) ∧ の__弟(PERSON[小保内氏], ENTITY[2]) ∧
+    後援会(ENTITY[6]) ∧
+     の_一部(ENTITY[6], ENTITY[5]) ∧
+      当たる.0(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2] ∧ 引き継ぐ.0(EVENT[7], ENTITY[1], ENTITY[5]))
+
+# ::id 129_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 小保内市政 が 取り組ん で き た 産業振興 や 雇用確保 など の 推進 を 訴える 。
+∃ ENTITY[1] EVENT[7] EVENT[11] ENTITY[6] GROUP[8] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  小保内市政(ENTITY[6]) ∧
+   CONJ_や(∃ ENTITY[9] (産業振興(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+    ∃ ENTITY[10] (雇用確保(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+    取り組む.0_で_き_た(EVENT[7], ENTITY[6], ENTITY[4]) ∧ equals(GROUP[8], ENTITY[4]) ∧
+     など(ENTITY[4], ENTITY[3]) ∧
+      の_推進(ENTITY[3], ENTITY[2]) ∧ past(EVENT[7]) ∧ 訴える.0(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 130_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 立候補 の 動き は 出 て い ない 。
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ 立候補(ENTITY[3]) ∧
+  の_動き(ENTITY[3], ENTITY[2]) ∧
+   ほか(ENTITY[1]) ∧ ¬ ∃ EVENT[4] (出る.0_て_い(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 131_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 花巻
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[花巻])
+
+# ::id 132_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １ 月 ２６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_１_月_２６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 133_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 で ３ 選 を 目指す 大石満雄氏 （ ５５ ） と 、 新人 で 会社役員 の 上田東一氏 （ ５９ ） による 一騎打ち と なる 公算 が 大きく 、 激しい 選挙戦 が 予想 さ れる 。
+∃ ATTRIB[20] ENTITY[2] SITUATION[1] EVENT[17] EVENT[18] EVENT[21] GROUP[4] ENTITY[3] ENTITY[19] (
+ ENTITY[2] = *pro* ∧
+  CONJ_と(∃ EVENT[8] EVENT[10] ENTITY[7] ENTITY[9] ENTITY[5] (
+        現職(ENTITY[7]) ∧
+         CD_３_選(ENTITY[9]) ∧
+          CONJ_te(で(EVENT[8], PERSON[大石満雄氏], ENTITY[7]), 目指す.0(EVENT[10], PERSON[大石満雄氏], ENTITY[9])) ∧
+           CD_５５(ENTITY[5]) ∧ namely_-PERSON-(ENTITY[5], PERSON[大石満雄氏]) ∧ is_element_of(PERSON[大石満雄氏], GROUP[4])),
+   ∃ EVENT[14] EVENT[16] ENTITY[13] ENTITY[15] ENTITY[11] (
+    新人(ENTITY[13]) ∧
+     会社役員(ENTITY[15]) ∧
+      CONJ_te(xxx(EVENT[14], PERSON[上田東一氏], ENTITY[13]), の(EVENT[16], PERSON[上田東一氏], ENTITY[15])) ∧
+       CD_５９(ENTITY[11]) ∧ namely_-PERSON-(ENTITY[11], PERSON[上田東一氏]) ∧ is_element_of(PERSON[上田東一氏], GROUP[4]))) ∧
+   による_一騎打ち(GROUP[4], ENTITY[3]) ∧
+    公算(SITUATION[1], なる.0(EVENT[17], ENTITY[2]) ∧ と(EVENT[17]) = ENTITY[3]) ∧
+     激しい(ATTRIB[20]) ∧
+      ATTRIBUTE_選挙戦(ATTRIB[20], ENTITY[19]) ∧ 大きく(EVENT[18], SITUATION[1]) ∧ 予想する.0(EVENT[21], _, ENTITY[19]))
+
+# ::id 134_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 大石氏 は 財政 の 健全化 や 企業誘致 の 実績 を アピール する 。
+∃ EVENT[6] GROUP[1] (
+ CONJ_や(∃ ENTITY[3] ENTITY[2] (財政(ENTITY[3]) ∧ の_健全化(ENTITY[3], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[5] ENTITY[4] (企業誘致(ENTITY[5]) ∧ の_実績(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+  アピールする.0(EVENT[6], PERSON[大石氏], GROUP[1]))
+
+# ::id 135_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 民主党 の 推薦 を 受け 大勝 し た が 、 今回 は 市民党 の 立場 で 戦う 。
+∃ ENTITY[6] ENTITY[1] EVENT[4] EVENT[5] EVENT[10] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[2] ENTITY[7] (
+ 前回(ENTITY[2]) ∧
+  今回(ENTITY[7]) ∧
+   ENTITY[1] = *pro* ∧
+    の_推薦(ORG[民主党], ENTITY[3]) ∧
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[3]} ∧
+      市民党(ENTITY[9]) ∧
+       の_立場(ENTITY[9], ENTITY[8]) ∧
+        past(EVENT[5]) ∧
+         CONJ_が(受ける.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧
+               大勝する.0_た(EVENT[5], ENTITY[1]) ∧ 時間(EVENT[5]) = ENTITY[2],
+          戦う.0(EVENT[10], ENTITY[6]) ∧ 時間(EVENT[10]) = ENTITY[7] ∧ で(EVENT[10]) = ENTITY[8]))
+
+# ::id 136_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 陣営 は 「 初当選 の 時以来 の 厳しい 選挙 」 と 危機感 を あらわ に し 、 後援会 の 再構築 を 急ぐ 。
+∃ SITUATION[10] ATTRIB[8] ENTITY[4] EVENT[9] EVENT[3] EVENT[13] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[12] ENTITY[11] ENTITY[1] (
+ 陣営(ENTITY[1]) ∧
+  危機感(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    初当選(ENTITY[7]) ∧
+     の_時以来(ENTITY[7], ENTITY[6]) ∧
+      厳しい(ATTRIB[8]) ∧
+       ATTRIBUTE_選挙(ATTRIB[8], ENTITY[5]) ∧ の_選挙(ENTITY[6], ENTITY[5]) ∧
+        後援会(ENTITY[12]) ∧
+         の_再構築(ENTITY[12], ENTITY[11]) ∧
+          ADV_あらわ_に(SITUATION[10]) ∧
+           FACT(SITUATION[10], する.0(EVENT[3], ENTITY[1], ENTITY[2], xxx(EVENT[9], ENTITY[4], ENTITY[5]))) ∧
+            急ぐ.0(EVENT[13], ENTITY[1], ENTITY[11]))
+
+# ::id 137_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 上田氏 は 大手商社 や 米大手電機メーカー など に 勤め て い た が 、 ８ 年 前 に 古里 に 戻っ た 。
+∃ ENTITY[6] EVENT[5] EVENT[8] GROUP[2] ENTITY[1] ENTITY[7] (
+ CONJ_や(∃ ENTITY[3] (大手商社(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[4] (米大手電機メーカー(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+  など(GROUP[2], ENTITY[1]) ∧
+   ENTITY[6] = *pro*{ENTITY[1]} ∧
+    (CD_８_年(ENTITY[7]), 前(ENTITY[7])) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[8]) ∧
+       CONJ_が(勤める.0_て_い_た(EVENT[5], PERSON[上田氏]) ∧ に(EVENT[5]) = ENTITY[1],
+        戻る.0_た(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = LOC[古里] ∧ に(EVENT[8]) = ENTITY[7]))
+
+# ::id 138_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 自民 、 社民 両党 の 花巻支部 が 支持 を 決め 、 共産党系 の 市民団体 も 自主支援 する 意向 。
+∃ ENTITY[9] SITUATION[8] EVENT[5] EVENT[10] EVENT[11] ENTITY[4] ENTITY[1] ENTITY[7] ENTITY[6] (
+ 両 GROUP[3] ENTITY[2] ((is_subset_of_or_equal_to(ORG[自民], GROUP[3]) ∧ is_subset_of_or_equal_to(ORG[社民], GROUP[3]) ∧ equals_党(GROUP[3], ENTITY[2])),
+  の_花巻支部(ENTITY[2], ENTITY[1])) ∧
+  支持(ENTITY[4]) ∧
+   共産党系(ENTITY[7]) ∧
+    の_市民団体(ENTITY[7], ENTITY[6]) ∧
+     ENTITY[9] = *pro*{ENTITY[7], ENTITY[1], ENTITY[4]} ∧
+      意向(SITUATION[8], 支援する.0(EVENT[10], ENTITY[6], ENTITY[9])) ∧
+       決める.0(EVENT[5], ENTITY[1], ENTITY[4]) ∧ xxx(EVENT[11], ENTITY[6], SITUATION[8]))
+
+# ::id 139_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 知名度不足 の 解消 へ 全力 を 注ぐ 。
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  知名度不足(ENTITY[3]) ∧
+   の_解消(ENTITY[3], ENTITY[2]) ∧
+    全 ENTITY[4] (力(ENTITY[4]), ∃ EVENT[5] (注ぐ.0(EVENT[5], ENTITY[1], ENTITY[4]) ∧ へ(EVENT[5]) = ENTITY[2])))
+
+# ::id 140_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 奥州
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[奥州])
+
+# ::id 141_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ３ 月 ９ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_３_月_９_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 142_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 小沢昌記氏 （ ５５ ） は 昨年末 、 再選 を 目指し て 立候補 する 意思 を 表明 し た 。
+∃ SITUATION[6] EVENT[8] EVENT[9] EVENT[10] ENTITY[7] TIME[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  の(EVENT[4], PERSON[小沢昌記氏], ENTITY[3]) ∧
+   CD_５５(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[小沢昌記氏]) ∧
+     昨年末(TIME[5]) ∧
+      再選(ENTITY[7]) ∧
+       意思(SITUATION[6], CONJ_te(目指す.0_て(EVENT[8], PERSON[小沢昌記氏], ENTITY[7]), 立候補する.0(EVENT[9], PERSON[小沢昌記氏]))) ∧
+        past(EVENT[10]) ∧ 表明する.0_た(EVENT[10], PERSON[小沢昌記氏], SITUATION[6]) ∧ is_contained_in(時間(EVENT[10]), TIME[5]))
+
+# ::id 143_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 「 多く の 課題 が 残っ て おり 、 解決 へ の 道筋 を つけ たい 」 と 強調 し 、 行財政改革 や 少子高齢化 や 人口減少 に 対応 し た 市政運営 など を 掲げる 。
+∃ ENTITY[3] ENTITY[1] EVENT[8] EVENT[2] EVENT[16] EVENT[17] ENTITY[7] ENTITY[6] GROUP[12] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *speaker*{ENTITY[1]} ∧
+   解決(ENTITY[7]) ∧
+    へ_の_道筋(ENTITY[7], ENTITY[6]) ∧
+     CONJ_や(∃ ENTITY[13] (行財政改革(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+      ∃ ENTITY[14] (少子高齢化(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])),
+      ∃ ENTITY[15] (人口減少(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[12]))) ∧
+      対応する.0_た(EVENT[16], ENTITY[10]) ∧ に(EVENT[16]) = GROUP[12] ∧ 市政運営(ENTITY[10]) ∧
+       など(ENTITY[10], ENTITY[9]) ∧
+        past(EVENT[16]) ∧
+         強調する.0(EVENT[2], ENTITY[1],
+          多く_の ENTITY[4] (課題(ENTITY[4]), ∃ EVENT[5] 残る.0_て_おり(EVENT[5], ENTITY[4])) ∧ つける.0_たい(EVENT[8], ENTITY[3], ENTITY[6])) ∧
+          掲げる.0(EVENT[17], ENTITY[1], ENTITY[9]))
+
+# ::id 144_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 元市議会 議長 の 小沢氏 は 前回市長選 で 、 現職 と の 一騎打ち を 制し た 。
+∃ EVENT[7] ENTITY[6] ENTITY[5] ENTITY[4] EVENT[3] ENTITY[2] (
+ 元市議会_議長(ENTITY[2]) ∧
+  の(EVENT[3], PERSON[小沢氏], ENTITY[2]) ∧
+   前回市長選(ENTITY[4]) ∧
+    現職(ENTITY[6]) ∧
+     と_の_一騎打ち(ENTITY[6], ENTITY[5]) ∧
+      past(EVENT[7]) ∧ 制する.0_た(EVENT[7], PERSON[小沢氏], ENTITY[5]) ∧ で(EVENT[7]) = ENTITY[4])
+
+# ::id 145_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 候補者擁立 の 動き は 表面化 し て い ない 。
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ 候補者擁立(ENTITY[3]) ∧
+  の_動き(ENTITY[3], ENTITY[2]) ∧
+   ほか(ENTITY[1]) ∧ ¬ ∃ EVENT[4] (表面化する.0_て_い(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 146_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 久慈
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[久慈])
+
+# ::id 147_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ３ 月 １６ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_３_月_１６_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 148_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 で ３ 選 を 目指す 山内隆文氏 （ ６２ ） と 、 新人 で ＮＰＯ法人役員 の 遠藤譲一氏 （ ６０ ） が 立候補 する 。
+∃ EVENT[13] GROUP[1] (
+ CONJ_と(∃ EVENT[5] EVENT[7] ENTITY[4] ENTITY[6] ENTITY[2] (
+       現職(ENTITY[4]) ∧
+        CD_３_選(ENTITY[6]) ∧
+         CONJ_te(で(EVENT[5], PERSON[山内隆文氏], ENTITY[4]), 目指す.0(EVENT[7], PERSON[山内隆文氏], ENTITY[6])) ∧
+          CD_６２(ENTITY[2]) ∧ namely_-PERSON-(ENTITY[2], PERSON[山内隆文氏]) ∧ is_element_of(PERSON[山内隆文氏], GROUP[1])),
+  ∃ EVENT[11] EVENT[12] ENTITY[10] ENTITY[8] (
+   新人(ENTITY[10]) ∧
+    CONJ_te(で(EVENT[11], PERSON[遠藤譲一氏], ENTITY[10]), の(EVENT[12], PERSON[遠藤譲一氏], NORP[ＮＰＯ法人役員])) ∧
+     CD_６０(ENTITY[8]) ∧ namely_-PERSON-(ENTITY[8], PERSON[遠藤譲一氏]) ∧ is_element_of(PERSON[遠藤譲一氏], GROUP[1]))) ∧
+  立候補する.0(EVENT[13], GROUP[1]))
+
+# ::id 149_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 と 同じ 顔触れ による 一騎打ち と なる 見通し 。
+∃ ATTRIB[6] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[8] EVENT[9] ENTITY[7] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   前回(ENTITY[7]) ∧
+    と_同じ(ENTITY[7], ATTRIB[6]) ∧
+     ATTRIBUTE_顔触れ(ATTRIB[6], ENTITY[5]) ∧
+      による_一騎打ち(ENTITY[5], ENTITY[4]) ∧
+       見通し(SITUATION[2], なる.0(EVENT[8], ENTITY[3]) ∧ と(EVENT[8]) = ENTITY[4]) ∧
+        xxx(EVENT[9], ENTITY[1], SITUATION[2]))
+
+# ::id 150_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 山内氏 が ５３ 票 差 で 逃げ切っ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 前回(ENTITY[1]) ∧
+  (CD_５３_票(ENTITY[2]), 差(ENTITY[2])) ∧
+   past(EVENT[3]) ∧
+    逃げ切る.0_た(EVENT[3], PERSON[山内氏]) ∧ で(EVENT[3]) = ENTITY[2] ∧ 時間(EVENT[3]) = ENTITY[1])
+
+# ::id 151_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 山内氏 は 小まめ に 市政報告会 を 開い て 後援会組織 を 固め 、 東日本大震災後 の 復興施策 など 実績 を 訴える 。
+∃ EVENT[3] EVENT[5] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[6] (
+ 小まめ(ENTITY[1]) ∧
+  市政報告会(ENTITY[2]) ∧
+   後援会組織(ENTITY[4]) ∧
+    東日本大震災後(ENTITY[8]) ∧
+     の_復興施策(ENTITY[8], ENTITY[7]) ∧
+      など_実績(ENTITY[7], ENTITY[6]) ∧
+       CONJ_te(開く.0_て(EVENT[3], PERSON[山内氏], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1],
+        固める.0(EVENT[5], PERSON[山内氏], ENTITY[4])) ∧ 訴える.0(EVENT[9], PERSON[山内氏], ENTITY[6]))
+
+# ::id 152_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 市議 の 過半数 が 支持 に 回る 見込み だ 。
+∃ SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] ENTITY[4] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  市議(ENTITY[4]) ∧
+   の_過半数(ENTITY[4], ENTITY[3]) ∧
+    支持(ENTITY[5]) ∧
+     見込み(SITUATION[2], 回る.0(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5]) ∧
+      だ(EVENT[7], ENTITY[1], SITUATION[2]))
+
+# ::id 153_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 、 民主 、 社民 両党 の 推薦 を 受け た 遠藤氏 は 政党 へ の 推薦要請 を し ない 。
+∃ EVENT[6] ENTITY[3] TIME[2] (
+ 前回(TIME[2]) ∧
+  両 GROUP[5] ENTITY[4] ((is_subset_of_or_equal_to(ORG[民主], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[社民], GROUP[5]) ∧ equals_党(GROUP[5], ENTITY[4])),
+   の_推薦(ENTITY[4], ENTITY[3])) ∧
+   受ける.0_た(EVENT[6], PERSON[遠藤氏], ENTITY[3]) ∧ is_contained_in(時間(EVENT[6]), TIME[2]) ∧
+    past(EVENT[6]) ∧
+     ¬ ∃ EVENT[9] ENTITY[8] ENTITY[7] (政党(ENTITY[8]) ∧ へ_の_推薦要請(ENTITY[8], ENTITY[7]) ∧ する.0(EVENT[9], PERSON[遠藤氏], ENTITY[7])))
+
+# ::id 154_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 市民党 を 前面 に 出し て 現職 の 批判票 を 掘り起こし 、 雪辱 を 期す 。
+∃ ENTITY[1] EVENT[4] EVENT[7] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  市民党(ENTITY[2]) ∧
+   前面(ENTITY[3]) ∧
+    現職(ENTITY[6]) ∧
+     の_批判票(ENTITY[6], ENTITY[5]) ∧
+      雪辱(ENTITY[8]) ∧
+       CONJ_te(出す.0_て(EVENT[4], ENTITY[1], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3],
+        掘り起こす.0(EVENT[7], ENTITY[1], ENTITY[5])) ∧ 期す.0(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 155_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 滝沢
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[滝沢])
+
+# ::id 156_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １１ 月 １９ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１１_月_１９_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 157_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 旧 滝沢村 が １ 日 に 単独市制 を 敷い た ため 、 初 の 市長選 と なる 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  CD_１_日(ENTITY[3]) ∧
+   単独市制(ENTITY[4]) ∧
+    FACT(SITUATION[2], 敷く.0_た(EVENT[5], LOC[旧_滝沢村], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+     初(ENTITY[7]) ∧
+      の_市長選(ENTITY[7], ENTITY[6]) ∧
+       past(EVENT[5]) ∧
+        なる.0(EVENT[8], ENTITY[1]) ∧ と(EVENT[8]) = ENTITY[6] ∧ ため(EVENT[8]) = SITUATION[2])
+
+# ::id 158_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 旧 滝沢村長 時代 から ２ 期 務める 現職 の 柳村典秀氏 （ ５８ ） は 態度 を 明らか に し て い ない が 、 立候補 する こと が 確実視 さ れ て いる 。
+∃ ENTITY[13] SITUATION[12] EVENT[14] EVENT[15] EVENT[8] EVENT[4] LOC[7] TIME[6] ENTITY[3] ENTITY[1] (
+ 旧_滝沢村長_時代(LOC[7]) ∧
+  (CD_２_期(TIME[6]), から(LOC[7], TIME[6])) ∧
+   務める.0(EVENT[8], PERSON[柳村典秀氏]) ∧ is_contained_in(時間(EVENT[8]), TIME[6]) ∧
+    現職(ENTITY[3]) ∧
+     の(EVENT[4], PERSON[柳村典秀氏], ENTITY[3]) ∧
+      CD_５８(ENTITY[1]) ∧
+       namely_-PERSON-(ENTITY[1], PERSON[柳村典秀氏]) ∧
+        ENTITY[13] = *pro*{ENTITY[1], ENTITY[3]} ∧
+         こと(SITUATION[12], 立候補する.0(EVENT[14], ENTITY[13])) ∧
+          CONJ_が(¬ ∃ EVENT[10] ENTITY[9] (態度(ENTITY[9]) ∧ ADV_明らか_に(EVENT[10]) ∧ する.0_て_い(EVENT[10], PERSON[柳村典秀氏], ENTITY[9])),
+           確実視する.0_て_いる(EVENT[15], _, SITUATION[12])))
+
+# ::id 159_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 柳村氏 は ２０１１ 年 に 単独市制 へ の 移行 を 決断、主導 し て き た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_２０１１_年(ENTITY[1]) ∧
+  単独市制(ENTITY[3]) ∧
+   へ_の_移行(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ 決断、主導する.0_て_き_た(EVENT[4], PERSON[柳村氏], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 160_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 新市 を 軌道 に 乗せる 意欲 は 強い 。
+∃ EVENT[6] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 新市(ENTITY[3]) ∧
+  軌道(ENTITY[4]) ∧
+   乗せる.0(EVENT[5], ENTITY[1], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 意欲(ENTITY[1]) ∧
+    強い(EVENT[6], ENTITY[1]))
+
+# ::id 161_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ０６ 年 に 県議 から 転身 し て 初当選 。
+∃ ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_０６_年(ENTITY[2]) ∧
+   県議(ENTITY[3]) ∧
+    CONJ_te(転身する.0_て(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[3] ∧ に(EVENT[4]) = ENTITY[2],
+     する.0(EVENT[5], ENTITY[1])))
+
+# ::id 162_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt １０ 年 は 無投票 だっ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (CD_１０_年(ENTITY[1]) ∧ 無投票(ENTITY[2]) ∧ past(EVENT[3]) ∧ だっ_た(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 163_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 大船渡
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[大船渡])
+
+# ::id 164_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １２ 月 ２ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１２_月_２_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 165_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 戸田公明氏 （ ６４ ） は 昨年 １２ 月 の 市議会 で 「 （ 自ら が ） 東日本大震災 の 復興計画 を 作っ た 以上 、 結論 が 出る まで やっ て いか ねばならない 」 と 述べ 、 再選 を 目指し て 立候補 する 意向 を 明らか に し た 。
+∃ SITUATION[15] ENTITY[8] EVENT[7] EVENT[17] EVENT[18] EVENT[19] ENTITY[6] ENTITY[5] ENTITY[16] EVENT[4] ENTITY[3] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  の(EVENT[4], PERSON[戸田公明氏], ENTITY[3]) ∧
+   CD_６４(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[戸田公明氏]) ∧
+     (CD_１２_月(ENTITY[6]), 昨年(ENTITY[6])) ∧
+      の_市議会(ENTITY[6], ENTITY[5]) ∧
+       ENTITY[8] = 自ら{ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[3]} ∧
+        再選(ENTITY[16]) ∧
+         意向(SITUATION[15], CONJ_te(目指す.0_て(EVENT[17], PERSON[戸田公明氏], ENTITY[16]), 立候補する.0(EVENT[18], PERSON[戸田公明氏]))) ∧
+          ADV_明らか_に(EVENT[19]) ∧
+           past(EVENT[19]) ∧
+            述べる.0(EVENT[7], PERSON[戸田公明氏],
+             MD_ねばならない(∃ SITUATION[11] EVENT[10] EVENT[13] EVENT[14] ENTITY[9] ENTITY[12] (
+                   の_復興計画(EVENT[東日本大震災], ENTITY[9]) ∧
+                    結論(ENTITY[12]) ∧
+                     FACT(SITUATION[11], 出る.0(EVENT[13], ENTITY[12])) ∧
+                      before(EVENT[7], EVENT[10]) ∧
+                       CRD_以上(作る.0_た(EVENT[10], ENTITY[8], ENTITY[9]),
+                        する.0_て_いか(EVENT[14], ENTITY[8]) ∧ まで(EVENT[14]) = SITUATION[11])))) ∧
+             で(EVENT[7]) = ENTITY[5] ∧ する.0_た(EVENT[19], PERSON[戸田公明氏], SITUATION[15]))
+
+# ::id 166_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 戸田氏 は 大手建設会社勤務 を 経 て 、 ２００６ 年 の 市長選 に 初挑戦 し た が 敗れ た 。
+∃ ENTITY[6] EVENT[2] EVENT[5] EVENT[7] ENTITY[1] ENTITY[4] ENTITY[3] (
+ 大手建設会社勤務(ENTITY[1]) ∧
+  CD_２００６_年(ENTITY[4]) ∧
+   の_市長選(ENTITY[4], ENTITY[3]) ∧
+    ENTITY[6] = *pro*{ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+     past(EVENT[5]) ∧
+      past(EVENT[7]) ∧
+       CONJ_が(CONJ_te(経る.0_て(EVENT[2], PERSON[戸田氏], ENTITY[1]),
+             初挑戦する.0_た(EVENT[5], PERSON[戸田氏]) ∧ に(EVENT[5]) = ENTITY[3]), 敗れる.0_た(EVENT[7], ENTITY[6])))
+
+# ::id 167_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt １０ 年 に 新人 ３ 人 による 戦い を 制し 、 初当選 を 果たし た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  CD_１０_年(ENTITY[2]) ∧
+   (CD_３_人(ENTITY[4]), 新人(ENTITY[4])) ∧
+    による_戦い(ENTITY[4], ENTITY[3]) ∧
+     初当選(ENTITY[6]) ∧
+      past(EVENT[7]) ∧
+       制する.0(EVENT[5], ENTITY[1], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[2] ∧
+        果たす.0_た(EVENT[7], ENTITY[1], ENTITY[6]))
+
+# ::id 168_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 今 の ところ 、 ほか に 立候補 の 動き は ない 。
+∃ EVENT[6] ENTITY[2] ENTITY[3] TIME[1] ENTITY[5] ENTITY[4] (
+ 立候補(ENTITY[5]) ∧
+  の_動き(ENTITY[5], ENTITY[4]) ∧
+   今(ENTITY[2]) ∧
+    の_ところ(ENTITY[2], TIME[1]) ∧
+     ほか(ENTITY[3]) ∧
+      ない(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 169_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 秋田 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[秋田], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 170_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 前回 に 続き 無投票公算大
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  前回(ENTITY[2]) ∧
+   無投票公算大(ENTITY[4]) ∧
+    続く.0(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧ xxx(EVENT[5], ENTITY[1], ENTITY[4]))
+
+# ::id 171_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 能代
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[能代])
+
+# ::id 172_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ４ 月 ２０ 日 投票 ＞
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_４_月_２０_日(TIME[2]) ∧ する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 173_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 斉藤滋宣氏 （ ６０ ） は 態度 を 明らか に し て い ない が 、 関係者 によると 、 ３ 選 を 目指し て 立候補 する の が 確実視 さ れ て いる 。
+∃ ENTITY[10] SITUATION[9] EVENT[12] EVENT[13] EVENT[14] ENTITY[11] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  の(EVENT[4], PERSON[斉藤滋宣氏], ENTITY[3]) ∧
+   CD_６０(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[斉藤滋宣氏]) ∧
+     関係者(ENTITY[8]) ∧
+      ENTITY[10] = *pro*{ENTITY[8], ENTITY[1], ENTITY[3]} ∧
+       CD_３_選(ENTITY[11]) ∧
+        の(SITUATION[9], CONJ_te(目指す.0_て(EVENT[12], ENTITY[10], ENTITY[11]), 立候補する.0(EVENT[13], ENTITY[10]))) ∧
+         CONJ_が(¬ ∃ EVENT[6] ENTITY[5] (態度(ENTITY[5]) ∧ ADV_明らか_に(EVENT[6]) ∧ する.0_て_い(EVENT[6], PERSON[斉藤滋宣氏], ENTITY[5])),
+          確実視する.0_て_いる(EVENT[14], _, SITUATION[9]) ∧ によると(EVENT[14]) = ENTITY[8]))
+
+# ::id 174_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現時点 で ほか に 立候補 の 動き は 具体化 し て おら ず 、 前回 に 続き 無投票 と なる 公算 が 大きい 。
+∃ ENTITY[7] SITUATION[6] EVENT[9] EVENT[11] EVENT[12] ENTITY[8] ENTITY[10] ENTITY[2] ENTITY[1] ENTITY[4] ENTITY[3] (
+ 立候補(ENTITY[4]) ∧
+  の_動き(ENTITY[4], ENTITY[3]) ∧
+   現時点(ENTITY[1]) ∧
+    ほか(ENTITY[2]) ∧
+     ENTITY[7] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+      前回(ENTITY[8]) ∧
+       無投票(ENTITY[10]) ∧
+        公算(SITUATION[6],
+         続く.0(EVENT[9], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+          なる.0(EVENT[11], ENTITY[7]) ∧ と(EVENT[11]) = ENTITY[10]) ∧
+         CONJ_te(¬ ∃ EVENT[5] (
+                    具体化する.0_て_おら(EVENT[5], ENTITY[3]) ∧
+                     に(EVENT[5]) = ENTITY[2] ∧ で(EVENT[5]) = ENTITY[1]),
+          大きい(EVENT[12], SITUATION[6]) ∧ に(EVENT[12]) = ENTITY[2] ∧ で(EVENT[12]) = ENTITY[1]))
+
+# ::id 175_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 正式 な 立候補表明 は １ 月中 に なる と み られる 。
+∃ SITUATION[1] ATTRIB[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+ 正式_な(ATTRIB[3]) ∧
+  ATTRIBUTE_立候補表明(ATTRIB[3], ENTITY[2]) ∧
+   CD_１_月中(ENTITY[4]) ∧
+    と(SITUATION[1], なる.0(EVENT[5], ENTITY[2], ENTITY[4])) ∧ みる.0(EVENT[6], _, SITUATION[1]))
+
+# ::id 176_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ◎ 山形 の 市長選
+∃ EVENT[2] ENTITY[1] (の_市長選(NORP[山形], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 177_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 南陽 ・ 尾花沢 現職 、 態度 明確 に せ ず
+∃ SITUATION[4] ENTITY[1] ENTITY[2] (
+ 現職(ENTITY[1]) ∧
+  namely_-LOC-(ENTITY[1], LOC[尾花沢]) ∧
+   態度(ENTITY[2]) ∧
+    ADV_明確_に(SITUATION[4]) ∧
+     CONJ_te(FACT(SITUATION[4],
+           ¬ ∃ EVENT[3] (する.0(EVENT[3], LOC[尾花沢], ENTITY[2]) ∧ LOC(EVENT[3]) = LOC[南陽]))))
+
+# ::id 178_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ 東根 現職 、 ５ 選 意欲 か
+QUEST(∃ EVENT[3] ENTITY[1] ENTITY[2] (
+      現職(ENTITY[1]) ∧
+       namely_-LOC-(ENTITY[1], LOC[東根]) ∧
+        (CD_５_選(ENTITY[2]), 意欲(ENTITY[2])) ∧ xxx(EVENT[3], LOC[東根], ENTITY[2])))
+
+# ::id 179_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 長井 水面下 で 複数市議 の 名
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 水面下(ENTITY[1]) ∧
+  複数市議(ENTITY[3]) ∧
+   の_名(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], LOC[長井], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[1])
+
+# ::id 180_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 南陽
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[南陽])
+
+# ::id 181_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ７ 月 ２９ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_７_月_２９_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 182_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ２ 期 目 の 現職塩田秀雄氏 （ ６１ ） は 「 任期中 は 全力 を 挙げ て 市政課題 に 取り組む 」 と 態度 を 明らか に し て い ない 。
+∃ EVENT[4] ENTITY[3] ENTITY[1] ENTITY[8] (
+ (CD_２_期(ENTITY[3]), 目(ENTITY[3])) ∧
+  の(EVENT[4], PERSON[現職塩田秀雄氏], ENTITY[3]) ∧
+   CD_６１(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[現職塩田秀雄氏]) ∧
+     任期中(ENTITY[8]) ∧
+      ¬ ∃ SITUATION[13] ENTITY[7] EVENT[12] EVENT[6] ENTITY[11] ENTITY[5] (
+            態度(ENTITY[5]) ∧
+             ENTITY[7] = *speaker*{ENTITY[5], ENTITY[1], ENTITY[3]} ∧
+              市政課題(ENTITY[11]) ∧
+               ADV_明らか_に(SITUATION[13]) ∧
+                FACT(SITUATION[13],
+                 する.0_て_い(EVENT[6], PERSON[現職塩田秀雄氏], ENTITY[5],
+                  CONJ_te(全 ENTITY[9] (力(ENTITY[9]),
+                        ∃ EVENT[10] (挙げる.0_て(EVENT[10], ENTITY[7], ENTITY[9]) ∧ 時間(EVENT[10]) = ENTITY[8])),
+                   取り組む.0(EVENT[12], ENTITY[7]) ∧ に(EVENT[12]) = ENTITY[11] ∧
+                    時間(EVENT[12]) = ENTITY[8])))))
+
+# ::id 183_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 周囲 は ３ 選 へ の 意欲 は 強い と み て いる 。
+∃ EVENT[5] EVENT[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 周囲(ENTITY[1]) ∧
+  CD_３_選(ENTITY[4]) ∧ へ_の_意欲(ENTITY[4], ENTITY[3]) ∧ みる.0_て_いる(EVENT[2], ENTITY[1], 強い(EVENT[5], ENTITY[3])))
+
+# ::id 184_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 今 の ところ 、 ほか に 立候補 に 向け た 動き は 出 て い ない 。
+∃ ENTITY[5] SITUATION[4] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[3] TIME[1] (
+ 今(ENTITY[2]) ∧
+  の_ところ(ENTITY[2], TIME[1]) ∧
+   ほか(ENTITY[3]) ∧
+    ENTITY[5] = *pro*{ENTITY[3], ENTITY[2]} ∧
+     立候補(ENTITY[6]) ∧
+      動き(SITUATION[4], 向け_た(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+       past(EVENT[7]) ∧
+        ¬ ∃ EVENT[8] (
+              出る.0_て_い(EVENT[8], SITUATION[4]) ∧
+               に(EVENT[8]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[8]), TIME[1])))
+
+# ::id 185_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 塩田氏 は ２００６ 年 、 現職 を 破り 初当選 。
+∃ EVENT[3] EVENT[4] ENTITY[2] TIME[1] (
+ CD_２００６_年(TIME[1]) ∧
+  現職(ENTITY[2]) ∧
+   破る.0(EVENT[3], PERSON[塩田氏], ENTITY[2]) ∧ する.0(EVENT[4], PERSON[塩田氏]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 186_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 の １０ 年 は 無投票 だっ た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 前回(ENTITY[2]) ∧
+  (CD_１０_年(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧
+   無投票(ENTITY[3]) ∧ past(EVENT[4]) ∧ だっ_た(EVENT[4], ENTITY[1], ENTITY[3]))
+
+# ::id 187_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 尾花沢
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[尾花沢])
+
+# ::id 188_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ８ 月 １１ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_８_月_１１_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 189_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 加藤国洋氏 （ ６７ ） は 態度 を 明らか に し て い ない が 、 再選 を 目指し て 立候補 する の が 確実視 さ れ て いる 。
+∃ ENTITY[9] SITUATION[8] EVENT[11] EVENT[12] EVENT[13] ENTITY[10] EVENT[4] ENTITY[3] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  の(EVENT[4], PERSON[加藤国洋氏], ENTITY[3]) ∧
+   CD_６７(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[加藤国洋氏]) ∧
+     ENTITY[9] = *pro*{ENTITY[1], ENTITY[3]} ∧
+      再選(ENTITY[10]) ∧
+       の(SITUATION[8], CONJ_te(目指す.0_て(EVENT[11], ENTITY[9], ENTITY[10]), 立候補する.0(EVENT[12], ENTITY[9]))) ∧
+        CONJ_が(¬ ∃ EVENT[6] ENTITY[5] (態度(ENTITY[5]) ∧ ADV_明らか_に(EVENT[6]) ∧ する.0_て_い(EVENT[6], PERSON[加藤国洋氏], ENTITY[5])),
+         確実視する.0_て_いる(EVENT[13], _, SITUATION[8])))
+
+# ::id 190_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 立候補 の 具体的 な 動き は ない 。
+∃ ATTRIB[4] EVENT[5] ENTITY[1] ENTITY[3] ENTITY[2] (
+ 立候補(ENTITY[3]) ∧
+  具体的_な(ATTRIB[4]) ∧
+   ATTRIBUTE_動き(ATTRIB[4], ENTITY[2]) ∧ の_動き(ENTITY[3], ENTITY[2]) ∧
+    ほか(ENTITY[1]) ∧ ない(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[1])
+
+# ::id 191_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 新人同士 の 対決 を 制し た 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 前回(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   新人同士(ENTITY[4]) ∧
+    の_対決(ENTITY[4], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ 制する.0_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 時間(EVENT[5]) = ENTITY[2])
+
+# ::id 192_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 市政運営 で は 、 特産 の スイカ や 牛肉 など を 生かし た 産業振興策 に 力 を 入れ て いる 。
+∃ SITUATION[3] ENTITY[1] EVENT[10] EVENT[12] GROUP[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[11] ENTITY[2] (
+ 市政運営(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   特産(ENTITY[6]) ∧
+    CONJ_や(∃ ENTITY[8] (スイカ(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+     ∃ ENTITY[9] (牛肉(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+     equals(GROUP[7], ENTITY[5]) ∧ の(ENTITY[6], ENTITY[5]) ∧
+      など(ENTITY[5], ENTITY[4]) ∧
+       産業振興策(SITUATION[3], 生かす.0_た(EVENT[10], ENTITY[1], ENTITY[4])) ∧
+        力(ENTITY[11]) ∧
+         past(EVENT[10]) ∧
+          入れる.0_て_いる(EVENT[12], ENTITY[1], ENTITY[11]) ∧ に(EVENT[12]) = SITUATION[3] ∧
+           で(EVENT[12]) = ENTITY[2])
+
+# ::id 193_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 東根
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[東根])
+
+# ::id 194_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ ９ 月 ４ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_９_月_４_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 195_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ４ 期 目 の 現職 土田正剛氏 （ ７０ ） は 態度 を 明らか に し て い ない 。
+∃ EVENT[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ (CD_４_期(ENTITY[4]), 目(ENTITY[4])) ∧
+  の(EVENT[5], PERSON[土田正剛氏], ENTITY[4]) ∧
+   現職(ENTITY[2]) ∧
+    namely_-PERSON-(ENTITY[2], PERSON[土田正剛氏]) ∧
+     CD_７０(ENTITY[1]) ∧
+      namely_-PERSON-(ENTITY[1], PERSON[土田正剛氏]) ∧
+       ¬ ∃ EVENT[7] ENTITY[6] (態度(ENTITY[6]) ∧ ADV_明らか_に(EVENT[7]) ∧ する.0_て_い(EVENT[7], PERSON[土田正剛氏], ENTITY[6])))
+
+# ::id 196_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 周辺 は ５ 選 に 向け て 立候補 する 意欲 は 十分 と み て いる 。
+∃ ENTITY[4] SITUATION[3] EVENT[6] EVENT[7] EVENT[8] EVENT[2] ENTITY[5] ENTITY[1] (
+ 周辺(ENTITY[1]) ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   CD_５_選(ENTITY[5]) ∧
+    意欲(SITUATION[3],
+     CONJ_te(向ける.0_て(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5], 立候補する.0(EVENT[7], ENTITY[4]))) ∧
+     みる.0_て_いる(EVENT[2], ENTITY[1], 十分(EVENT[8], SITUATION[3])))
+
+# ::id 197_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ほか に 具体的 な 動き は 出 て い ない 。
+∃ ATTRIB[3] ENTITY[1] ENTITY[2] (
+ 具体的_な(ATTRIB[3]) ∧
+  ATTRIBUTE_動き(ATTRIB[3], ENTITY[2]) ∧
+   ほか(ENTITY[1]) ∧ ¬ ∃ EVENT[4] (出る.0_て_い(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 198_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 土田氏 は ４ 回 連続 で 無投票当選 を 重ね て き た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ (CD_４_回(ENTITY[1]), 連続(ENTITY[1])) ∧
+  無投票当選(ENTITY[2]) ∧
+   past(EVENT[3]) ∧ 重ねる.0_て_き_た(EVENT[3], PERSON[土田氏], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1])
+
+# ::id 199_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 「 子育て する なら 東根市 」 を キャッチフレーズ に 関連施策 の 充実 、 山形空港 の 利便性向上 など を 重点施策 に 掲げ て き た 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[8] EVENT[15] ENTITY[7] GROUP[10] ENTITY[14] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   FACT(SITUATION[2],
+    ∀ ENTITY[4] EVENT[5] CND_なら(ENTITY[4] = *pro*{ENTITY[3], ENTITY[1]} ∧ 子育てする.0(EVENT[5], ENTITY[4]), ∃ EVENT[6] xxx(EVENT[6], ENTITY[3], LOC[東根市]))) ∧
+    キャッチフレーズ(ENTITY[7]) ∧
+     ∃ ENTITY[12] ENTITY[11] (関連施策(ENTITY[12]) ∧ の_充実(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+      ∃ ENTITY[13] (の_利便性向上(FAC[山形空港], ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+      など(GROUP[10], ENTITY[9]) ∧
+       重点施策(ENTITY[14]) ∧
+        past(EVENT[15]) ∧
+         xxx(EVENT[8], ENTITY[1], SITUATION[2], ENTITY[7]) ∧
+          掲げる.0_て_き_た(EVENT[15], ENTITY[1], ENTITY[9]) ∧ に(EVENT[15]) = ENTITY[14])
+
+# ::id 200_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ＜ 長井
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[長井])
+
+# ::id 201_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt ／ １２ 月 １４ 日 任期 満了 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１２_月_１４_日(TIME[2]) ∧
+   任期(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 202_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 現職 の 内谷重治氏 （ ５７ ） は ３ 選 を 目指す か どう か 態度 を 明らか に し て い ない が 、 関係者 によると 立候補 に 前向き と み られる 。
+∃ ENTITY[11] EVENT[15] ENTITY[14] ENTITY[13] ENTITY[12] EVENT[4] ENTITY[3] ENTITY[1] (
+ 現職(ENTITY[3]) ∧
+  の(EVENT[4], PERSON[内谷重治氏], ENTITY[3]) ∧
+   CD_５７(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[内谷重治氏]) ∧
+     ENTITY[11] = *pro*{ENTITY[1], ENTITY[3]} ∧
+      関係者(ENTITY[12]) ∧
+       立候補(ENTITY[13]) ∧
+        前向き(ENTITY[14]) ∧
+         CONJ_が(¬ ∃ EVENT[6] ENTITY[5] (
+                    態度(ENTITY[5]) ∧
+                     ADV_明らか_に(EVENT[6]) ∧
+                      する.0_て_い(EVENT[6], PERSON[内谷重治氏], ENTITY[5],
+                       QUEST(∃ ENTITY[7] EVENT[9] ENTITY[8] (
+                             ENTITY[7] = *pro*{ENTITY[5], ENTITY[1], ENTITY[3]} ∧
+                              CD_３_選(ENTITY[8]) ∧ 目指す.0(EVENT[9], ENTITY[7], ENTITY[8]))))),
+          みる.0(EVENT[15], _, ENTITY[11]) ∧ と(EVENT[15]) = ENTITY[14] ∧
+           に(EVENT[15]) = ENTITY[13] ∧ によると(EVENT[15]) = ENTITY[12]))
+
+# ::id 203_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 新た な 候補 擁立 へ 向け た 表立っ た 動き は ない が 、 水面下 で は 複数 の 市議 の 名前 が 挙がっ て いる 。
+∃ ATTRIB[4] ENTITY[12] ENTITY[11] ENTITY[10] EVENT[8] EVENT[13] EVENT[5] EVENT[7] ENTITY[3] ENTITY[1] ENTITY[9] (
+ 新た_な(ATTRIB[4]) ∧
+  ATTRIBUTE_候補_擁立(ATTRIB[4], ENTITY[3]) ∧
+   向ける.0_た(EVENT[5], ENTITY[1]) ∧ へ(EVENT[5]) = ENTITY[3] ∧
+    表立つ.0_た(EVENT[7], ENTITY[1]) ∧ 動き(ENTITY[1]) ∧
+    水面下(ENTITY[9]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[7]) ∧
+       複数(ENTITY[12]) ∧
+        の_市議(ENTITY[12], ENTITY[11]) ∧
+         の_名前(ENTITY[11], ENTITY[10]) ∧
+          CONJ_が(ない(EVENT[8], ENTITY[1]), 挙がる.0_て_いる(EVENT[13], ENTITY[10]) ∧ で(EVENT[13]) = ENTITY[9]))
+
+# ::id 204_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 内谷氏 は ２００６ 年 、 新人 ４ 人 による 争い を 制し 初当選 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] TIME[1] (
+ CD_２００６_年(TIME[1]) ∧
+  (CD_４_人(ENTITY[3]), 新人(ENTITY[3])) ∧
+   による_争い(ENTITY[3], ENTITY[2]) ∧
+    制する.0(EVENT[4], PERSON[内谷氏], ENTITY[2]) ∧ 初当選(EVENT[5], PERSON[内谷氏]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]))
+
+# ::id 205_newswire_00028_K201401010A0F30XX00001;NJ
+# ::snt 前回 は 無投票 だっ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (前回(ENTITY[1]) ∧ 無投票(ENTITY[2]) ∧ past(EVENT[3]) ∧ だっ_た(EVENT[3], ENTITY[1], ENTITY[2]))

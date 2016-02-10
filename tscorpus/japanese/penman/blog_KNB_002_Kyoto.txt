@@ -1,0 +1,179 @@
+# ::id 1_blog_KNB_002_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］ 丹波 マンガン 記念 館
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-2 / 丹波_マンガン_記念_館
+             :NAMELY ( ENTITY-1 / 京都_観光)))
+
+# ::id 2_blog_KNB_002_Kyoto_1-1-10-01;NJ
+# ::snt 実際 、 かなり 苦しい 経済 状況 を やりくり し て 運営 さ れ て いる らしい …。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-4 / やりくりする.0_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 経済_状況
+                    :ATTRIBUTE ( ATTRIB-3 / かなり_苦しい))
+             :MOD ( mod-9 / 実際))
+      :op2 ( EVENT-5 / 運営する.0_て_いる
+             :ARG1 ENTITY-1
+             :domain-of ( MD-7 / MD_らしい)))
+
+# ::id 3_blog_KNB_002_Kyoto_1-1-11-01;NJ
+# ::snt 良い スポット な ので 、 少し で も 多く の 人 が 訪れ て くれれ ば いい と 思う 。
+( EVENT-2 / 思う
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :THAT ( CRD-14 / ので
+             :op1 ( EVENT-6 / な
+                    :ARG0 ( ENTITY-3 / ENTITY
+                           :namely ENTITY-1)
+                    :ARG1 ( ENTITY-4 / スポット
+                           :ATTRIBUTE ( ATTRIB-5 / 良い)))
+             :op2 ( CND-13 / ば (
+                           :op1 ( ENTITY-8 人) ( EVENT-9 ( 訪れ_て_くれれ
+                                         :ARG0 ENTITY-8
+                                         :で ENTITY-7)))
+                    :op2 ( EVENT-10 / いい
+                           :ARG0 ENTITY-3))))
+
+# ::id 4_blog_KNB_002_Kyoto_1-1-2-01;NJ
+# ::snt 京都市 中心 部 から 車 で １ 時間 、 旧 京北町 に 丹波マンガン記念館 という 施設 が ある 。
+( EVENT-5 / ある
+      :ARG0 ( ENTITY-4 / 施設
+             :という ( ENTITY-丹波マンガン記念館 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "丹波マンガン記念館")))
+      :に ( ENTITY-旧_京北町 / ENTITY
+             :name ( n-7 / name
+                    :op1 "旧_京北町"))
+      :MSR ( DEGREE-1 / DEGREE ( DEGREE-1 CD_１_時間)
+             :で ( ENTITY-3 / 車)
+             :から ( ENTITY-2 / 京都市_中心_部)))
+
+# ::id 5_blog_KNB_002_Kyoto_1-1-2-02;NJ
+# ::snt 現在 は 京都市 右京区
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-京都市_右京区 / ENTITY
+             :name ( n-4 / name
+                    :op1 "京都市_右京区"))
+      :TMP ( ENTITY-2 / 現在))
+
+# ::id 6_blog_KNB_002_Kyoto_1-1-3-01;NJ
+# ::snt その 名 の 通り 、 マンガン の 鉱山 跡 を 売り に し た スポット で あり 、 その 歴史 案内 や 採掘 現場 で ある 坑内 の 見学 、 飯場 の 模型 展示 など が 行わ れ て いる 。
+( EVENT-20 / 行わ_て_いる
+      :ARG1 ( ENTITY-1 / ENTITY
+             :など ( GROUP-2 / CONJ_や
+                    :op1 ( ENTITY-3 / 歴史_案内)
+                    :op2 ( GROUP-2 / AND
+                           :op3 ( ENTITY-4 / 見学
+                                  :の ( ENTITY-5 / 坑内))
+                           :op4 ENTITY-23
+                           :op1 ( ENTITY-7 / 採掘_現場)
+                           :op2 ( EVENT-8 / で_ある
+                                  :ARG0 ENTITY-5
+                                  :ARG1 ENTITY-7))
+                    :op3 ( GROUP-22 / AND
+                           :op1 ( ENTITY-10 / 飯場)
+                           :op2 ( ENTITY-9 / 模型_展示
+                                  :の ENTITY-10)
+                           :op3 ENTITY-24))
+             :ARG0-of ( EVENT-19 / で_あり
+                    :ARG1 ( ENTITY-13 / スポット
+                           :ARG0-of ( EVENT-18 / し_た
+                                  :ARG1 ( ENTITY-15 / 鉱山_跡
+                                         :の ( ENTITY-16 / マンガン))
+                                  :に ( ENTITY-17 / 売り)
+                                  :MOD ( mod-21 / past)))
+                    :ADV ( ENTITY-11 / 通り
+                           :の ( ENTITY-12 / 名)))))
+
+# ::id 7_blog_KNB_002_Kyoto_1-1-4-01;NJ
+# ::snt 戦時 中 において は 、 動員 さ れ た 朝鮮人 労働者 が 多く 大変 な 採掘 作業 に 従事 し て い た という この 鉱山 の 歴史性 から 、 人権 教育 の 研修 の 一環 として 訪れる 団体 も 多い と いう 。
+( EVENT-12 / いう
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :から ( ENTITY-2 / 歴史性
+             :の ( ENTITY-3 / 鉱山
+                    :THAT ( EVENT-11 / 従事する.0_て_い_た
+                           :ARG0 ( ENTITY-5 / 朝鮮人_労働者
+                                  :ARG1-of ( EVENT-7 / 動員する.0_た
+                                         :MOD ( mod-20 / past))
+                                  :ARG0-of ( EVENT-8 / 多く))
+                           :に ( ENTITY-9 / 採掘_作業
+                                  :ATTRIBUTE ( ATTRIB-10 / 大変_な))
+                           :において ( ENTITY-4 / 戦時_中)
+                           :MOD ( mod-21 / past))))
+      :THAT ( EVENT-19 / 多い
+             :ARG0 ( ENTITY-13 / 団体
+                    :ARG0-of ( EVENT-18 / 訪れる
+                           :として ( ENTITY-15 / 一環
+                                  :の ( ENTITY-16 / 研修
+                                         :の ( ENTITY-17 / 人権_教育)))))))
+
+# ::id 8_blog_KNB_002_Kyoto_1-1-5-01;NJ
+# ::snt その 一方 で 、 鉱物 の 研究者 など も 見学 に 訪れ て い たり する 。
+( EVENT-8 / する
+      :ARG0 ( ENTITY-2 / ENTITY
+             :など ( ENTITY-3 / 研究者
+                    :の ( ENTITY-4 / 鉱物)))
+      :たり ( EVENT-7 / 訪れ_て_い
+             :ARG0 ENTITY-2
+             :に ( ENTITY-6 / 見学))
+      :で ( ENTITY-1 / 一方))
+
+# ::id 9_blog_KNB_002_Kyoto_1-1-6-01;NJ
+# ::snt 教養的 な 関心 で は なく 、 純粋 に 洞窟 の 雰囲気 が 好き な 人 など も 来 て いる の かもしれない 。
+( CONJ-17 / AND
+      :op1 ( EVENT-7 / で_は
+             :ARG0 ( PICK-13 / or
+                    :op1 ENTITY-2
+                    :op2 ENTITY-1)
+             :ARG1 ( ENTITY-5 / 関心
+                    :ATTRIBUTE ( ATTRIB-6 / 教養的_な))
+             :domain-of ( NEG-14 / NEG))
+      :op2 ( EVENT-12 / 来_て_いる_の
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :など ( ENTITY-2 / 人
+                           :ARG0-of ( EVENT-10 / 好き_な
+                                  :ARG1 ( ENTITY-8 / 雰囲気
+                                         :の ( ENTITY-9 / 洞窟))
+                                  :MOD ( mod-16 / 純粋_に))))
+             :domain-of ( MD-15 / MD_かもしれない)))
+
+# ::id 10_blog_KNB_002_Kyoto_1-1-7-01;NJ
+# ::snt 問題 は やはり 交通 の 便 の 悪さ か 。
+( EVENT-5 / EVENT
+      :ARG0 ( ENTITY-1 / 問題)
+      :ARG1 ( ENTITY-2 / 悪さ
+             :の ( ENTITY-3 / 便
+                    :の ( ENTITY-4 / 交通)))
+      :MOD ( mod-8 / やはり)
+      :domain-of ( MD-7 / MD_か))
+
+# ::id 11_blog_KNB_002_Kyoto_1-1-8-01;NJ
+# ::snt 同じ 京都市 と は 思え ない ほど の 遠さ を 感じ て しまう 。
+( EVENT-6 / 感じ_て_しまう
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-2 / 遠さ
+             :の ( ENTITY-3 / ENTITY
+                    :ほど ( EVENT-5 / 思え
+                           :と ( ENTITY-同じ_京都市 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "同じ_京都市"))
+                           :domain-of ( NEG-8 / NEG)))))
+
+# ::id 12_blog_KNB_002_Kyoto_1-1-9-01;NJ
+# ::snt 「 隠れ スポット 」 と いえ ば 聞こえ は いい が 、 やはり 知名度 は 低い 。
+( CONJ-11 / CONJ_が
+      :op1 ( CND-10 / ば (
+                    :op1 ( ARB-1 arb
+                           :pick0) ( ENTITY-2 隠れ_スポット) ( EVENT-3 ( いえ
+                                  :ARG0 ARB-1
+                                  :と ENTITY-2)))
+             :op2 ( EVENT-5 / いい
+                    :ARG0 ( ENTITY-4 / 聞こえ)))
+      :op2 ( EVENT-7 / 低い
+             :ARG0 ( ENTITY-6 / 知名度)
+             :MOD ( mod-12 / やはり)))

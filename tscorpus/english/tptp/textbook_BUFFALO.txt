@@ -1,0 +1,1580 @@
+% ::id 1_textbook_BUFFALO;TSOGD_1a;IE
+% ::snt Who wrote what ?
+fof(ex1414052110703,axiom,(
+    ? [X1,X2,E3] :
+      ( is_before_2(s0,E3,e0)
+      & wrote_3(s0,E3,X2,X1) ) )).
+
+% ::id 2_textbook_BUFFALO;TSOGD_1b;IE
+% ::snt Which book is interesting ?
+fof(ex1414052111005,axiom,(
+    ? [X1] :
+      ( book_1(s0,X1)
+      & ? [E2] : is_interesting_2(s0,E2,X1) ) )).
+
+% ::id 3_textbook_BUFFALO;TSOGD_2a;IE
+% ::snt Everyone wrote something .
+fof(ex1414052111307,axiom,(
+    ! [X1] :
+    ? [X2,E3] :
+      ( thing_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & wrote_3(s0,E3,X1,X2) ) )).
+
+% ::id 4_textbook_BUFFALO;TSOGD_2b;IE
+% ::snt Every book is interesting .
+fof(ex1414052111609,axiom,(
+    ! [X1] :
+      ( book_1(s0,X1)
+     => ? [E2] : is_interesting_2(s0,E2,X1) ) )).
+
+% ::id 5_textbook_BUFFALO;TSOGD_18a;IE
+% ::snt The chocolate that everyone bought is delicious .
+fof(ex1414052111920,axiom,(
+    ? [X1,E2,A5,E3] :
+      ( ! [X4] : bought_3(s0,E2,X4,X1)
+      & chocolate_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & delicious_1(s0,A5)
+      & is_3(s0,E3,X1,A5) ) )).
+
+% ::id 6_textbook_BUFFALO;TSOGD_18b;IE
+% ::snt Every chocolate that a person bought is delicious .
+fof(ex1414052112234,axiom,(
+    ! [X1,X2,E3] :
+      ( ( person_1(s0,X1)
+        & bought_3(s0,E3,X1,X2)
+        & chocolate_1(s0,X2)
+        & is_before_2(s0,E3,e0) )
+     => ? [A5,E4] :
+          ( delicious_1(s0,A5)
+          & is_3(s0,E4,X2,A5) ) ) )).
+
+% ::id 7_textbook_BUFFALO;TSOGD_24a;IE
+% ::snt Every rumor that Hanako loves a person is true .
+fof(ex1414052112541,axiom,(
+    ! [X1,X2,E3] :
+      ( ( person_1(s0,X1)
+        & ? [S6] :
+            ( rumor_2(s0,X2,S6)
+            & loves_3(S6,E3,hanako,X1) ) )
+     => ? [A5,E4] :
+          ( true_1(s0,A5)
+          & is_3(s0,E4,X2,A5) ) ) )).
+
+% ::id 8_textbook_BUFFALO;TSOGD_24b;IE
+% ::snt Everyone $'s computer is out of order .
+fof(ex1414052112852,axiom,(
+    ! [X1,X2] :
+      ( ( one_1(s0,X1)
+        & is_computer_of_2(s0,X2,X1) )
+     => ? [X3,E4] :
+          ( order_1(s0,X3)
+          & is_out_2(s0,E4,X2)
+          & of_2(s0,E4,X3) ) ) )).
+
+% ::id 9_textbook_BUFFALO;TSOGD_34;IE
+% ::snt If someone comes in , please report that to me .
+fof(ex1414052113168,axiom,(
+    ? [X7,X5] :
+    ! [X1,E2] :
+      ( one_1(s0,X1)
+     => ( comes_in_2(s0,E2,X1)
+        & ? [X6,E3,E4] :
+            ( choose1(X6,X1)
+            & ? [S8] :
+                ( please_2(s0,E4,S8)
+                & report_4(S8,E3,X5,X6,X7) ) ) ) ) )).
+
+% ::id 10_textbook_BUFFALO;TSOGD_38;IE
+% ::snt If a book that someone wrote has been read , please write a review of it and send it to him .
+fof(ex1414052113512,axiom,(
+    ? [X9] :
+    ! [X1,X2,E3,E4] :
+      ( ( one_1(s0,X1)
+        & wrote_3(s0,E3,X1,X2)
+        & book_1(s0,X2)
+        & is_before_2(s0,E3,e0) )
+     => ( has_read_3(s0,E4,unspecified,X2)
+        & ? [X12,X11,X10,X5,E6,E7,E8] :
+            ( choose2(X10,X2,X1)
+            & is_review_of_2(s0,X5,X10)
+            & choose3(X11,X5,X2,X1)
+            & choose3(X12,X5,X2,X1)
+            & ? [S13] :
+                ( please_2(s0,E8,S13)
+                & write_3(S13,E6,X9,X5)
+                & send_4(S13,E7,X9,X11,X12) ) ) ) ) )).
+
+% ::id 11_textbook_BUFFALO;NE
+% ::snt arranged in such a way that information can be retrieved
+fof(ex1414052113824,axiom,(
+    ? [X1,E2] :
+      ( information_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [X3] :
+          ( ? [S5] :
+              ( way_2(s0,X3,S5)
+              & ? [E4] : retrieved_3(S5,E4,unspecified,X1) )
+          & arranged_1(s0,E2)
+          & in_2(s0,E2,X3) ) ) )).
+
+% ::id 12_textbook_BUFFALO;NE
+% ::snt The project involves developing a general method for transforming unrestricted natural language texts -LRB- Japanese and English -RRB- into high precision formal semantic representations and then linking such representations to application tasks , with a focus on recovering information from text for entry into databases and linking to world knowledge for reasoning .
+fof(ex1414052114182,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,G9,G10,G11,G12,S21,E13,E14,E15,E16,E17,E18,S23,S20,S19] :
+      ( project_1(s0,X1)
+      & general_1(s0,X2)
+      & is_method_for_2(s0,X2,S20)
+      & information_1(s0,X5)
+      & text_1(s0,X4)
+      & is_entry_into_2(s0,X3,G11)
+      & world_knowledge_1(s0,X7)
+      & reasoning_1(s0,X6)
+      & is_focus_on_2(s0,X8,S23)
+      & japanese_1(s0,G10)
+      & english_1(s0,G10)
+      & unrestricted_natural_language_texts_1(s0,G10)
+      & formal_1(s0,G9)
+      & semantic_1(s0,G9)
+      & high_precision_1(s0,G9)
+      & representations_1(s0,G9)
+      & databases_1(s0,G11)
+      & is_application_tasks_with_2(s0,G12,X8)
+      & then_1(s0,S21)
+      & ? [S24] :
+          ( fact_2(s0,S20,S24)
+          & transforming_3(S24,E13,unspecified,G10)
+          & into_2(S24,E13,G9) )
+      & ? [S25] :
+          ( fact_2(s0,S23,S25)
+          & recovering_3(S25,E15,unspecified,X5)
+          & from_2(S25,E15,X4)
+          & for_2(S25,E15,X3)
+          & linking_1(S25,E16)
+          & to_2(S25,E16,X7)
+          & for_2(S25,E16,X6) )
+      & ? [S26] :
+          ( fact_2(s0,S19,S26)
+          & developing_3(S26,E14,X1,X2)
+          & ? [S27] :
+              ( fact_2(S26,S21,S27)
+              & ? [G22] :
+                  ( representations_1(S27,G22)
+                  & linking_3(S27,E17,X1,G22)
+                  & to_2(S27,E17,G12) ) ) )
+      & involves_3(s0,E18,X1,S19) ) )).
+
+% ::id 13_textbook_BUFFALO;NE
+% ::snt Robust , accurate semantic analysis will improve all natural language processing tasks : recognising textual entailment , search , summarisation , automatic reply , machine translation and so on .
+fof(ex1414052114513,axiom,(
+    ? [X1] :
+      ( robust_accurate_1(s0,X1)
+      & semantic_1(s0,X1)
+      & analysis_1(s0,X1)
+      & ? [G2] :
+          ( natural_language_processing_tasks_1(s0,G2)
+          & ? [G3] :
+              ( ? [X4] :
+                  ( recognising_1(s0,X4)
+                  & textual_1(s0,X4)
+                  & entailment_1(s0,X4)
+                  & is_of_2(s0,X4,G3) )
+              & ? [X5] :
+                  ( search_1(s0,X5)
+                  & is_of_2(s0,X5,G3) )
+              & ? [X6] :
+                  ( summarisation_1(s0,X6)
+                  & is_of_2(s0,X6,G3) )
+              & ? [X7] :
+                  ( automatic_1(s0,X7)
+                  & reply_1(s0,X7)
+                  & is_of_2(s0,X7,G3) )
+              & ? [X8] :
+                  ( machine_translation_1(s0,X8)
+                  & is_of_2(s0,X8,G3) )
+              & ? [X9] :
+                  ( so_on_1(s0,X9)
+                  & is_of_2(s0,X9,G3) )
+              & G2 = G3
+              & ? [E10] : improve_3(s0,E10,X1,G2) ) ) ) )).
+
+% ::id 14_textbook_BUFFALO;NE
+% ::snt The gostak distims the doshes .
+fof(ex1414052114819,axiom,(
+    ? [X1,G2,E3] :
+      ( gostak_1(s0,X1)
+      & doshes_1(s0,G2)
+      & distims_3(s0,E3,X1,G2) ) )).
+
+% ::id 15_textbook_BUFFALO;NE
+% ::snt The teacher scolded John .
+fof(ex1414052115120,axiom,(
+    ? [X1,E2] :
+      ( teacher_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & scolded_3(s0,E2,X1,john) ) )).
+
+% ::id 16_textbook_BUFFALO;NE
+% ::snt John was scolded by the teacher .
+fof(ex1414052115437,axiom,(
+    ? [X1,E2] :
+      ( teacher_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & scolded_3(s0,E2,X1,john) ) )).
+
+% ::id 17_textbook_BUFFALO;NE
+% ::snt My mother and my father had dinner at a restaurant in Tokyo with a friend .
+fof(ex1414052115750,axiom,(
+    ? [X9,X7,X1,X2,X3,G4,E5] :
+      ( dinner_1(s0,X3)
+      & is_restaurant_in_2(s0,X2,tokyo)
+      & friend_1(s0,X1)
+      & ? [X6] :
+          ( is_mother_of_2(s0,X6,X7)
+          & is_of_2(s0,X6,G4) )
+      & ? [X8] :
+          ( is_father_of_2(s0,X8,X9)
+          & is_of_2(s0,X8,G4) )
+      & is_before_2(s0,E5,e0)
+      & had_3(s0,E5,G4,X3)
+      & at_2(s0,E5,X2)
+      & with_2(s0,E5,X1) ) )).
+
+% ::id 18_textbook_BUFFALO;NE
+% ::snt Science would not develop without basic research .
+fof(ex1414052116057,axiom,(
+    ? [X1] :
+      ( science_1(s0,X1)
+      & ? [X2,E3] :
+          ( basic_1(s0,X2)
+          & research_1(s0,X2)
+          & develop_2(s0,E3,X1)
+          & without_2(s0,E3,X2) ) ) )).
+
+% ::id 19_textbook_BUFFALO;NE
+% ::snt Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo .
+fof(ex1414052116373,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( is_buffalo_of_2(s0,X1,buffalo)
+      & buffalo_3(s0,E4,X1,X3)
+      & is_buffalo_of__2(s0,X3,buffalo)
+      & is_buffalo_of_2(s0,X2,buffalo)
+      & buffalo_3(s0,E5,X3,X2) ) )).
+
+% ::id 20_textbook_BUFFALO;CLARK-1853;NE
+% ::snt But they that fight for freedom , undertake The noblest cause mankind can have at stake
+fof(ex1414052116703,axiom,(
+    ? [X1,X2,X3,G6,E4,E5] :
+      ( mankind_1(s0,X1)
+      & noblest_1(s0,X2)
+      & ? [X7,E8] :
+          ( stake_1(s0,X7)
+          & have_3(s0,E8,X1,X2)
+          & at_2(s0,E8,X7) )
+      & cause_1(s0,X2)
+      & freedom_1(s0,X3)
+      & fight_2(s0,E4,G6)
+      & for_2(s0,E4,X3)
+      & undertake_3(s0,E5,G6,X2) ) )).
+
+% ::id 21_textbook_BUFFALO;NE
+% ::snt Rose rose to put rose roes on her rows of roses .
+fof(ex1414052117014,axiom,(
+    ? [X6,G1,G2,E3,E4,S5] :
+      ( choose1(X6,rose)
+      & rose_1(s0,G2)
+      & roes_1(s0,G2)
+      & is_rows_of_2(s0,G1,X6)
+      & is_before_2(s0,E4,e0)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & put_3(S7,E3,rose,G2)
+          & on_2(S7,E3,G1) )
+      & rose_2(s0,E4,rose)
+      & prp_2(s0,E4,S5) ) )).
+
+% ::id 22_textbook_BUFFALO;NE
+% ::snt The rat the cat the dog bit chased escaped .
+fof(ex1414052117336,axiom,(
+    ? [X1,X2,X3,E4,E5,E6] :
+      ( dog_1(s0,X1)
+      & bit_3(s0,E4,X1,X2)
+      & cat_1(s0,X2)
+      & chased_3(s0,E5,X2,X3)
+      & rat_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & escaped_2(s0,E6,X3) ) )).
+
+% ::id 23_textbook_BUFFALO;NE
+% ::snt The quick brown fox jumped over the lazy dog .
+fof(ex1414052117644,axiom,(
+    ? [X1,X2,E3] :
+      ( quick_1(s0,X2)
+      & brown_1(s0,X2)
+      & fox_1(s0,X2)
+      & lazy_1(s0,X1)
+      & dog_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & jumped_2(s0,E3,X2)
+      & over_2(s0,E3,X1) ) )).
+
+% ::id 24_textbook_BUFFALO;NE
+% ::snt very many very happy girls on the beach with the big dunes
+fof(ex1414052117952,axiom,(
+    ? [X1,G2,E3] :
+      ( is_beach_with_2(s0,X1,G2)
+      & big_1(s0,G2)
+      & dunes_1(s0,G2)
+      & ? [G4] :
+          ( very_happy_1(s0,G4)
+          & is_girls_on_2(s0,G4,X1)
+          & xxx_1(s0,E3)
+          & link_2(s0,E3,G4) ) ) )).
+
+% ::id 25_textbook_BUFFALO;NE
+% ::snt Bell , based in Los Angeles , makes and distributes electronic , computer and building products .
+fof(ex1414052118270,axiom,(
+    ? [G1,E2,E3,E4] :
+      ( based_2(s0,E2,bell)
+      & in_2(s0,E2,los_angeles)
+      & ? [G5] :
+          ( electronic_1(s0,G5)
+          & products_1(s0,G5)
+          & is_of_2(s0,G5,G1) )
+      & ? [G6] :
+          ( computer_products_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & ? [G7] :
+          ( building_1(s0,G7)
+          & products_1(s0,G7)
+          & is_of_2(s0,G7,G1) )
+      & makes_3(s0,E3,bell,G1)
+      & distributes_3(s0,E4,bell,G1) ) )).
+
+% ::id 26_textbook_BUFFALO;NE
+% ::snt If the police police police police , who polices the police police ?
+fof(ex1414052118589,axiom,(
+    ? [G1,G2,G3,G4] :
+      ( police_1(s0,G1)
+      & is_police_of_2(s0,G2,G1)
+      & police_1(s0,G3)
+      & is_police_of_2(s0,G4,G3)
+      & ? [X5] :
+        ! [G6,E7] :
+          ( police_1(s0,G6)
+         => ( police_3(s0,E7,G2,G6)
+            & ? [E8] : polices_3(s0,E8,X5,G4) ) ) ) )).
+
+% ::id 27_textbook_BUFFALO;NE
+% ::snt Police police police police police police !
+fof(ex1414052118896,axiom,(
+    ? [G1,G2,G3,G4,G5,E6] :
+      ( police_1(s0,G1)
+      & is_police_of_2(s0,G2,G1)
+      & is_police_of__2(s0,G5,G2)
+      & police_1(s0,G3)
+      & is_police_of_2(s0,G4,G3)
+      & police_3(s0,E6,G5,G4) ) )).
+
+% ::id 28_textbook_BUFFALO;NE
+% ::snt Mary carefully analysed the issues .
+fof(ex1414052119201,axiom,(
+    ? [G1,E2] :
+      ( issues_1(s0,G1)
+      & carefully_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & analysed_3(s0,E2,mary,G1) ) )).
+
+% ::id 29_textbook_BUFFALO;NE
+% ::snt Mary's careful analysis of the issues
+fof(ex1414052119506,axiom,(
+    ? [G1,X2,E3] :
+      ( issues_1(s0,G1)
+      & careful_1(s0,X2)
+      & is_analysis_of_2(s0,X2,G1)
+      & is_analysis_of__2(s0,X2,mary)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,X2) ) )).
+
+% ::id 30_textbook_BUFFALO;NE
+% ::snt Time flies like an arrow ;
+fof(ex1414052119807,axiom,(
+    ? [X1,X2,E3] :
+      ( time_1(s0,X2)
+      & arrow_1(s0,X1)
+      & is_like_of_2(s0,X2,X1)
+      & flies_2(s0,E3,X2) ) )).
+
+% ::id 31_textbook_BUFFALO;NE
+% ::snt fruit flies like a banana .
+fof(ex1414052120112,axiom,(
+    ? [X1,G2,E3] :
+      ( banana_1(s0,X1)
+      & fruit_flies_1(s0,G2)
+      & like_3(s0,E3,G2,X1) ) )).
+
+% ::id 32_textbook_BUFFALO;NE
+% ::snt The man saw the boy on the hill with the telescope .
+fof(ex1414052120460,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( man_1(s0,X4)
+      & hill_1(s0,X1)
+      & is_boy_on_2(s0,X3,X1)
+      & telescope_1(s0,X2)
+      & is_before_2(s0,E5,e0)
+      & saw_3(s0,E5,X4,X3)
+      & with_2(s0,E5,X2) ) )).
+
+% ::id 33_textbook_BUFFALO;NE
+% ::snt The man saw the boy on the hill with the telescope .
+fof(ex1414052120770,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( man_1(s0,X4)
+      & telescope_1(s0,X1)
+      & is_hill_with_2(s0,X2,X1)
+      & is_boy_on_2(s0,X3,X2)
+      & is_before_2(s0,E5,e0)
+      & saw_3(s0,E5,X4,X3) ) )).
+
+% ::id 34_textbook_BUFFALO;NE
+% ::snt The man saw the boy on the hill with the telescope .
+fof(ex1414052121081,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( man_1(s0,X4)
+      & hill_1(s0,X2)
+      & telescope_1(s0,X1)
+      & is_boy_with_2(s0,X3,X1)
+      & is_boy_on_2(s0,X3,X2)
+      & is_before_2(s0,E5,e0)
+      & saw_3(s0,E5,X4,X3) ) )).
+
+% ::id 35_textbook_BUFFALO;NE
+% ::snt A cat -LRB- namely Bunthorne -RRB- entered .
+fof(ex1414052121387,axiom,(
+    ? [X1,E2] :
+      ( is_cat_namely_2(s0,X1,bunthorne)
+      & is_before_2(s0,E2,e0)
+      & entered_2(s0,E2,X1) ) )).
+
+% ::id 36_textbook_BUFFALO;NE
+% ::snt It -LRB- namely Bunthorne -RRB- purred .
+fof(ex1414052121691,axiom,(
+    ? [X2,E1] :
+      ( is_namely_2(s0,X2,bunthorne)
+      & is_before_2(s0,E1,e0)
+      & purred_2(s0,E1,X2) ) )).
+
+% ::id 37_textbook_BUFFALO;NE
+% ::snt A cat entered and it purred and it departed .
+fof(ex1414052121995,axiom,(
+    ? [X6,X5,X1,E2,E3,E4] :
+      ( cat_1(s0,X1)
+      & choose1(X5,X1)
+      & choose1(X6,X1)
+      & is_before_2(s0,E2,e0)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & entered_2(s0,E2,X1)
+      & purred_2(s0,E3,X5)
+      & departed_2(s0,E4,X6) ) )).
+
+% ::id 38_textbook_BUFFALO;NE
+% ::snt A cat entered .
+fof(ex1414052122298,axiom,(
+    ? [X1,E2] :
+      ( cat_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & entered_2(s0,E2,X1) ) )).
+
+% ::id 39_textbook_BUFFALO;NE
+% ::snt it purred .
+fof(ex1414052122599,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & purred_2(s0,E1,X2) ) )).
+
+% ::id 40_textbook_BUFFALO;NE
+% ::snt it departed .
+fof(ex1414052122895,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & departed_2(s0,E1,X2) ) )).
+
+% ::id 41_textbook_BUFFALO;NE
+% ::snt The cat -LRB- namely Bruce -RRB- is chasing the cat -LRB- namely Albert -RRB- .
+fof(ex1414052123217,axiom,(
+    ? [X1,X2,E3] :
+      ( is_cat_namely_2(s0,X2,bruce)
+      & is_cat_namely_2(s0,X1,albert)
+      & is_chasing_3(s0,E3,X2,X1) ) )).
+
+% ::id 42_textbook_BUFFALO;NE
+% ::snt If a farmer owns a donkey he beats it .
+fof(ex1414052123526,axiom,(
+    ! [X1,X2,E3] :
+      ( ( farmer_1(s0,X2)
+        & donkey_1(s0,X1) )
+     => ( owns_3(s0,E3,X2,X1)
+        & ? [X6,X5,E4] :
+            ( choose2(X5,X2,X1)
+            & choose2(X6,X2,X1)
+            & beats_3(s0,E4,X5,X6) ) ) ) )).
+
+% ::id 43_textbook_BUFFALO;NE
+% ::snt Every farmer who owns a donkey beats it .
+fof(ex1414052123837,axiom,(
+    ! [X1,X2,E3] :
+      ( ( donkey_1(s0,X1)
+        & owns_3(s0,E3,X2,X1)
+        & farmer_1(s0,X2) )
+     => ? [X5,E4] :
+          ( choose1(X5,X1)
+          & beats_3(s0,E4,X2,X5) ) ) )).
+
+% ::id 44_textbook_BUFFALO;NE
+% ::snt If we invite some philosopher , Max will be offended .
+fof(ex1414052124152,axiom,(
+    ? [X3] :
+    ! [X1,E2] :
+      ( philosopher_1(s0,X1)
+     => ( invite_3(s0,E2,X3,X1)
+        & ? [E4] : be_offended_2(s0,E4,max) ) ) )).
+
+% ::id 45_textbook_BUFFALO;NE
+% ::snt If we invite the philosopher , Max will be offended .
+fof(ex1414052124461,axiom,(
+    ? [X1,X3] :
+      ( philosopher_1(s0,X1)
+      & ! [E2] :
+          ( invite_3(s0,E2,X3,X1)
+          & ? [E4] : be_offended_2(s0,E4,max) ) ) )).
+
+% ::id 46_textbook_BUFFALO;NE
+% ::snt Only John expects that he will win .
+fof(ex1414052124765,axiom,(
+    ? [X1] :
+      ( is_of_2(s0,X1,john)
+      & ? [X3,E2] :
+          ( choose1(X3,X1)
+          & ? [S5] :
+              ( expects_3(s0,E2,X1,S5)
+              & ? [E4] : win_2(S5,E4,X3) ) ) ) )).
+
+% ::id 47_textbook_BUFFALO;NE
+% ::snt Only John expects to win .
+fof(ex1414052125067,axiom,(
+    ? [X1] :
+      ( is_of_2(s0,X1,john)
+      & ? [E2,E3,S4] :
+          ( expects_3(s0,E3,X1,S4)
+          & win_2(S4,E2,X1) ) ) )).
+
+% ::id 48_textbook_BUFFALO;NE
+% ::snt Only John expects himself to win .
+fof(ex1414052125371,axiom,(
+    ? [X1] :
+      ( is_of_2(s0,X1,john)
+      & ? [X4,E2,E3] :
+          ( choose1(X4,X1)
+          & ? [S5] :
+              ( expects_4(s0,E3,X1,X4,S5)
+              & win_2(S5,E2,X4) ) ) ) )).
+
+% ::id 49_textbook_BUFFALO;NE
+% ::snt Only John expects him to win .
+fof(ex1414052125675,axiom,(
+    ? [X1] :
+      ( is_of_2(s0,X1,john)
+      & ? [X4,E2,E3,S5] :
+          ( expects_4(s0,E3,X1,X4,S5)
+          & win_2(S5,E2,X4) ) ) )).
+
+% ::id 50_textbook_BUFFALO;NE
+% ::snt Every wife thinks that only she respects her husband .
+fof(ex1414052125984,axiom,(
+    ! [X1] :
+      ( wife_1(s0,X1)
+     => ? [X3,E2] :
+          ( choose1(X3,X1)
+          & ? [S8] :
+              ( thinks_3(s0,E2,X1,S8)
+              & ? [X4] :
+                  ( is_of_2(S8,X4,X3)
+                  & ? [X7,X5,E6] :
+                      ( choose2(X7,X4,X1)
+                      & is_husband_of_2(S8,X5,X7)
+                      & respects_3(S8,E6,X4,X5) ) ) ) ) ) )).
+
+% ::id 51_textbook_BUFFALO;NE
+% ::snt A collector didn't buy because she was influenced .
+fof(ex1414052126293,axiom,(
+    ? [X1] :
+      ( collector_1(s0,X1)
+      & ? [X4,E2,E3] :
+          ( choose1(X4,X1)
+          & is_before_2(s0,E2,e0)
+          & is_before_2(s0,E3,e0)
+          & influenced_3(s0,E2,unspecified,X4)
+          & did_buy_2(s0,E3,X1) ) ) )).
+
+% ::id 52_textbook_BUFFALO;NE
+% ::snt A collector didn't buy because she was influenced .
+fof(ex1414052126603,axiom,(
+    ? [X3,X1,E2] :
+      ( collector_1(s0,X1)
+      & choose1(X3,X1)
+      & is_before_2(s0,E2,e0)
+      & influenced_3(s0,E2,unspecified,X3)
+      & ? [E4] :
+          ( is_before_2(s0,E4,e0)
+          & did_buy_2(s0,E4,X1) ) ) )).
+
+% ::id 53_textbook_BUFFALO;NE
+% ::snt Because a collector was influenced she didn't buy .
+fof(ex1414052126914,axiom,(
+    ? [X3,X1,E2] :
+      ( collector_1(s0,X1)
+      & choose1(X3,X1)
+      & is_before_2(s0,E2,e0)
+      & influenced_3(s0,E2,unspecified,X1)
+      & ? [E4] :
+          ( is_before_2(s0,E4,e0)
+          & did_buy_2(s0,E4,X3) ) ) )).
+
+% ::id 54_textbook_BUFFALO;NE
+% ::snt Who did Kim assure her that you would ask about her brother ?
+fof(ex1414052127229,axiom,(
+    ? [X4,X1,X3,E2] :
+      ( is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( did_assure_4(s0,E2,kim,X3,S8)
+          & ? [X7,X5,E6] :
+              ( choose3(X7,X1,kim,X3)
+              & is_brother_of_2(S8,X5,X7)
+              & ask_3(S8,E6,X4,X1)
+              & about_2(S8,E6,X5) ) ) ) )).
+
+% ::id 55_textbook_BUFFALO;NE
+% ::snt More students flunked than thought they would flunk .
+fof(ex1414052127546,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [G2] :
+          ( ? [X3,G5,E4] :
+              ( ? [S7] :
+                  ( thought_3(s0,E4,X3,S7)
+                  & ? [E6] : flunk_2(S7,E6,G5) )
+              & is_before_2(s0,E4,e0)
+              & is_students_than_2(s0,G2,X3) )
+          & flunked_2(s0,E1,G2) ) ) )).
+
+% ::id 56_textbook_BUFFALO;NE
+% ::snt More students flunked than they thought would flunk .
+fof(ex1414052127863,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [G2] :
+          ( ? [X3,G5,E4] :
+              ( ? [S7] :
+                  ( thought_3(s0,E4,G5,S7)
+                  & ? [E6] : flunk_2(S7,E6,X3) )
+              & is_before_2(s0,E4,e0)
+              & is_students_than_2(s0,G2,X3) )
+          & flunked_2(s0,E1,G2) ) ) )).
+
+% ::id 57_textbook_BUFFALO;NE
+% ::snt Who did what to whom ?
+fof(ex1414052128172,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( is_before_2(s0,E4,e0)
+      & did_3(s0,E4,X3,X2)
+      & to_2(s0,E4,X1) ) )).
+
+% ::id 58_textbook_BUFFALO;NE
+% ::snt This is the man .
+fof(ex1414052128473,axiom,(
+    ? [X1,X3,E2] :
+      ( man_1(s0,X1)
+      & is_3(s0,E2,X3,X1) ) )).
+
+% ::id 59_textbook_BUFFALO;NE
+% ::snt This is the man whom the girl met .
+fof(ex1414052128784,axiom,(
+    ? [X1,X2,E3,X5,E4] :
+      ( girl_1(s0,X1)
+      & met_3(s0,E3,X1,X2)
+      & man_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & is_3(s0,E4,X5,X2) ) )).
+
+% ::id 60_textbook_BUFFALO;NE
+% ::snt This is the man whom the police said the girl met .
+fof(ex1414052129123,axiom,(
+    ? [X1,X2,X3,E4,E5,X7,E6] :
+      ( police_1(s0,X2)
+      & girl_1(s0,X1)
+      & ? [S8] :
+          ( said_3(s0,E5,X2,S8)
+          & met_3(S8,E4,X1,X3) )
+      & man_1(s0,X3)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & is_3(s0,E6,X7,X3) ) )).
+
+% ::id 61_textbook_BUFFALO;NE
+% ::snt This is the man whom the police said Bill believes the girl met .
+fof(ex1414052129448,axiom,(
+    ? [X1,X2,X3,E4,E5,E6,X8,E7] :
+      ( police_1(s0,X2)
+      & girl_1(s0,X1)
+      & ? [S9] :
+          ( said_3(s0,E6,X2,S9)
+          & ? [S10] :
+              ( believes_3(S9,E5,bill,S10)
+              & met_3(S10,E4,X1,X3) ) )
+      & man_1(s0,X3)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E6,e0)
+      & is_3(s0,E7,X8,X3) ) )).
+
+% ::id 62_textbook_BUFFALO;NE
+% ::snt This is the man whom John said Bill believes Mary told Sam that I thought I had met .
+fof(ex1414052129780,axiom,(
+    ? [X10,X9,X1,E2,E3,E4,E5,E6,X8,E7] :
+      ( ? [S11] :
+          ( said_3(s0,E6,john,S11)
+          & ? [S12] :
+              ( believes_3(S11,E5,bill,S12)
+              & ? [S13] :
+                  ( told_4(S12,E4,mary,sam,S13)
+                  & ? [S14] :
+                      ( thought_3(S13,E3,X9,S14)
+                      & had_met_3(S14,E2,X10,X1) ) ) ) )
+      & man_1(s0,X1)
+      & is_before_2(s0,E2,E3)
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E6,e0)
+      & is_3(s0,E7,X8,X1) ) )).
+
+% ::id 63_textbook_BUFFALO;NE
+% ::snt John wrote the book a chapter of which Mary proofread .
+fof(ex1414052130098,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( is_chapter_of_2(s0,X1,X2)
+      & proofread_3(s0,E3,mary,X1)
+      & book_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & wrote_3(s0,E4,john,X2) ) )).
+
+% ::id 64_textbook_BUFFALO;NE
+% ::snt John wrote the book which Mary proofread a chapter of .
+fof(ex1414052131951,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( is_chapter_of_2(s0,X1,X2)
+      & proofread_3(s0,E3,mary,X1)
+      & book_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & wrote_3(s0,E4,john,X2) ) )).
+
+% ::id 65_textbook_BUFFALO;NE
+% ::snt John wrote the book of which Mary proofread a chapter .
+fof(ex1414052132268,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( is_chapter_of_2(s0,X1,X2)
+      & proofread_3(s0,E3,mary,X1)
+      & book_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & wrote_3(s0,E4,john,X2) ) )).
+
+% ::id 66_textbook_BUFFALO;NE
+% ::snt This book , I asked Bill to get his students to read .
+fof(ex1414052132584,axiom,(
+    ? [X6,X1,X7,G2,E3,E4,E5] :
+      ( book_1(s0,X1)
+      & choose1(X7,bill)
+      & is_students_of_2(s0,G2,X7)
+      & is_before_2(s0,E5,e0)
+      & ? [S8] :
+          ( asked_4(s0,E5,X6,bill,S8)
+          & ? [S9] :
+              ( get_4(S8,E4,bill,G2,S9)
+              & read_3(S9,E3,G2,X1) ) ) ) )).
+
+% ::id 67_textbook_BUFFALO;NE
+% ::snt As for this book , I think you should read it .
+fof(ex1414052132894,axiom,(
+    ? [X4,X3,X1,E2] :
+      ( book_1(s0,X1)
+      & ? [S7] :
+          ( think_3(s0,E2,X3,S7)
+          & ? [X6,E5] :
+              ( choose1(X6,X1)
+              & read_3(S7,E5,X4,X6) ) )
+      & as_for_2(s0,E2,X1) ) )).
+
+% ::id 68_textbook_BUFFALO;NE
+% ::snt It is this book that I asked Bill to get his students to read .
+fof(ex1414052133216,axiom,(
+    ? [X7,X1] :
+      ( book_1(s0,X1)
+      & ? [X8,X2,G3,E4,E5,E6] :
+          ( choose2(X8,bill,X1)
+          & ? [S10] :
+              ( asked_4(s0,E6,X7,bill,S10)
+              & ? [S11] :
+                  ( get_4(S10,E5,bill,G3,S11)
+                  & read_3(S11,E4,G3,X2) ) )
+          & is_students_of_2(s0,G3,X8)
+          & is_before_2(s0,E6,e0)
+          & ? [E9] : is_3(s0,E9,X2,X1) ) ) )).
+
+% ::id 69_textbook_BUFFALO;NE
+% ::snt John deliberately didn't touch Bob .
+fof(ex1414052133519,axiom,(
+    ? [S1] :
+      ( deliberately_1(s0,S1)
+      & ? [S3] :
+          ( fact_2(s0,S1,S3)
+          & ? [E2] :
+              ( is_before_2(S3,E2,e0)
+              & did_touch_3(S3,E2,john,bob) ) ) ) )).
+
+% ::id 70_textbook_BUFFALO;NE
+% ::snt John didn't deliberately touch Bob .
+fof(ex1414052133825,axiom,(
+    ? [E1] :
+      ( deliberately_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & did_touch_3(s0,E1,john,bob) ) )).
+
+% ::id 71_textbook_BUFFALO;NE
+% ::snt I don't like enchiladas .
+fof(ex1414052134128,axiom,(
+    ? [X1,G2,E3] :
+      ( enchiladas_1(s0,G2)
+      & do_like_3(s0,E3,X1,G2) ) )).
+
+% ::id 72_textbook_BUFFALO;NE
+% ::snt I don't like the taste of enchiladas .
+fof(ex1414052134430,axiom,(
+    ? [X3,X1,G2] :
+      ( is_taste_of_2(s0,X1,G2)
+      & enchiladas_1(s0,G2)
+      & ? [E4] : do_like_3(s0,E4,X3,X1) ) )).
+
+% ::id 73_textbook_BUFFALO;NE
+% ::snt Every afternoon Mr. Vinken and a lawyer sign papers .
+fof(ex1414052134736,axiom,(
+    ! [T1] :
+      ( afternoon_1(s0,T1)
+     => ? [G2,G3,E4] :
+          ( is_of_2(s0,mr_vinken,G3)
+          & ? [X5] :
+              ( lawyer_1(s0,X5)
+              & is_of_2(s0,X5,G3) )
+          & papers_1(s0,G2)
+          & sign_3(s0,E4,G3,G2)
+          & tmp_2(s0,E4,T1) ) ) )).
+
+% ::id 74_textbook_BUFFALO;NE
+% ::snt Every afternoon Mr. Vinken and the lawyer sign papers .
+fof(ex1414052135042,axiom,(
+    ? [X1] :
+      ( lawyer_1(s0,X1)
+      & ! [T2] :
+          ( afternoon_1(s0,T2)
+         => ? [G3,G4,E5] :
+              ( is_of_2(s0,mr_vinken,G4)
+              & is_of_2(s0,X1,G4)
+              & papers_1(s0,G3)
+              & sign_3(s0,E5,G4,G3)
+              & tmp_2(s0,E5,T2) ) ) ) )).
+
+% ::id 75_textbook_BUFFALO;NE
+% ::snt A doctor will make sure that every patient recovers .
+fof(ex1414052135358,axiom,(
+    ? [X1] :
+      ( doctor_1(s0,X1)
+      & ? [A3,E2] :
+          ( ? [S6] :
+              ( sure_2(s0,A3,S6)
+              & ! [X4] :
+                  ( patient_1(S6,X4)
+                 => ? [E5] : recovers_2(S6,E5,X4) ) )
+          & make_3(s0,E2,X1,A3) ) ) )).
+
+% ::id 76_textbook_BUFFALO;NE
+% ::snt A doctor will make sure that every patient recovers .
+fof(ex1414052135705,axiom,(
+    ! [X1] :
+      ( patient_1(s0,X1)
+     => ? [X2] :
+          ( doctor_1(s0,X2)
+          & ? [A5,E3,E4] :
+              ( ? [S6] :
+                  ( sure_2(s0,A5,S6)
+                  & recovers_2(S6,E3,X1) )
+              & make_3(s0,E4,X2,A5) ) ) ) )).
+
+% ::id 77_textbook_BUFFALO;NE
+% ::snt " Come on , " Nasha said . " Up beside me . "
+fof(ex1414052136015,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S4] :
+          ( said_3(s0,E1,nasha,S4)
+          & ? [X3,E2] :
+              ( choose1(X3,nasha)
+              & come_on_1(S4,E2)
+              & up_beside_2(S4,E2,X3) ) ) ) )).
+
+% ::id 78_textbook_BUFFALO;NE
+% ::snt Had Mary but known she would never have trusted Jane .
+fof(ex1414052136323,axiom,(
+    ! [E1] :
+      ( ( is_before_2(s0,E1,e0)
+        & had_but_known_2(s0,E1,mary) )
+     => ? [X2] :
+          ( choose1(X2,mary)
+          & ? [E3] :
+              ( never_1(s0,E3)
+              & have_trusted_3(s0,E3,X2,jane) ) ) ) )).
+
+% ::id 79_textbook_BUFFALO;NE
+% ::snt Had she but known Mary would never have trusted Jane .
+fof(ex1414052136633,axiom,(
+    ! [X2,E1] :
+      ( ( choose1(X2,mary)
+        & is_before_2(s0,E1,e0)
+        & had_but_known_2(s0,E1,X2) )
+     => ? [E3] :
+          ( never_1(s0,E3)
+          & have_trusted_3(s0,E3,mary,jane) ) ) )).
+
+% ::id 80_textbook_BUFFALO;NE
+% ::snt Mary is easy to please .
+fof(ex1414052136941,axiom,(
+    ? [A3,E1,E2] :
+      ( please_3(s0,E1,unspecified,A3)
+      & is_3(s0,E2,mary,A3) ) )).
+
+% ::id 81_textbook_BUFFALO;NE
+% ::snt The sonata is easy to play on this violin .
+fof(ex1414052137247,axiom,(
+    ? [X1,X2,A5,E3,E4] :
+      ( sonata_1(s0,X2)
+      & violin_1(s0,X1)
+      & ? [S6] :
+          ( easy_2(s0,A5,S6)
+          & play_1(S6,E3)
+          & on_2(S6,E3,X1) )
+      & is_3(s0,E4,X2,A5) ) )).
+
+% ::id 82_textbook_BUFFALO;NE
+% ::snt The violin is easy to play sonatas on .
+fof(ex1414052137562,axiom,(
+    ? [X1,G2,A5,E3,E4] :
+      ( violin_1(s0,X1)
+      & sonatas_1(s0,G2)
+      & play_3(s0,E3,unspecified,G2)
+      & on_2(s0,E3,A5)
+      & is_3(s0,E4,X1,A5) ) )).
+
+% ::id 83_textbook_BUFFALO;NE
+% ::snt What violin is the sonata easy to play on .
+fof(ex1414052137882,axiom,(
+    ? [X1] :
+      ( sonata_1(s0,X1)
+      & ? [X2] :
+          ( violin_1(s0,X2)
+          & ? [A5,E3,E4] :
+              ( ? [S6] :
+                  ( easy_2(s0,A5,S6)
+                  & play_1(S6,E3)
+                  & on_2(S6,E3,X2) )
+              & is_3(s0,E4,X1,A5) ) ) ) )).
+
+% ::id 84_textbook_BUFFALO;NE
+% ::snt John left in his car , and so did Bill .
+fof(ex1414052138197,axiom,(
+    ? [X6,X5,X1,X2,E3,E4] :
+      ( choose1(X5,john)
+      & is_car_of_2(s0,X1,X5)
+      & choose3(X6,bill,X1,john)
+      & is_car_of_2(s0,X2,X6)
+      & is_before_2(s0,E3,e0)
+      & so_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & left_2(s0,E3,john)
+      & in_2(s0,E3,X1)
+      & did_left_2(s0,E4,bill)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 85_textbook_BUFFALO;NE
+% ::snt The officers hadn't stationed a man with a weapon in the one spot where it could be fired .
+fof(ex1414052138524,axiom,(
+    ? [X7,X1,G2,S6] :
+      ( choose3(X7,X1)
+      & one_1(s0,X1)
+      & ? [S9] :
+          ( fact_2(s0,S6,S9)
+          & ? [E8] : fired_3(S9,E8,unspecified,X7) )
+      & spot_1(s0,X1)
+      & officers_1(s0,G2)
+      & is_where_2(s0,S6,X1)
+      & ? [X3,X4,E5] :
+          ( weapon_1(s0,X3)
+          & is_man_with_2(s0,X4,X3)
+          & is_before_2(s0,E5,e0)
+          & had_stationed_3(s0,E5,G2,X4)
+          & in_2(s0,E5,X1) ) ) )).
+
+% ::id 86_textbook_BUFFALO;NE
+% ::snt Every woman who leaves her husband eventually gives him a second chance .
+fof(ex1414052138841,axiom,(
+    ! [X4,X1,X2,E3] :
+      ( ( choose1(X4,X2)
+        & is_husband_of_2(s0,X1,X4)
+        & leaves_3(s0,E3,X2,X1)
+        & woman_1(s0,X2) )
+     => ? [X7,X5,E6] :
+          ( choose1(X7,X1)
+          & second_1(s0,X5)
+          & chance_1(s0,X5)
+          & eventually_1(s0,E6)
+          & gives_4(s0,E6,X2,X5,X7) ) ) )).
+
+% ::id 87_textbook_BUFFALO;NE
+% ::snt The pilot that shot at it hit the MIG that chased him .
+fof(ex1414052139173,axiom,(
+    ? [X5,X1,E2,X7,X6,E3,E4] :
+      ( shot_2(s0,E2,X1)
+      & at_2(s0,E2,X5)
+      & pilot_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & mig__1(s0,X6)
+      & choose1(X7,X1)
+      & chased_3(s0,E3,X6,X7)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & hit_3(s0,E4,X1,X6) ) )).
+
+% ::id 88_textbook_BUFFALO;NE
+% ::snt John wants it to become sunny tomorrow .
+fof(ex1414052139476,axiom,(
+    ? [A4,T1,E2,E3] :
+      ( sunny_1(s0,A4)
+      & tomorrow_1(s0,T1)
+      & ? [S5] :
+          ( wants_3(s0,E3,john,S5)
+          & become_3(S5,E2,unspecified,A4)
+          & tmp_2(S5,E2,T1) ) ) )).
+
+% ::id 89_textbook_BUFFALO;NE
+% ::snt John wants to become sunny tomorrow .
+fof(ex1414052139779,axiom,(
+    ? [A4,T1,E2,E3] :
+      ( sunny_1(s0,A4)
+      & tomorrow_1(s0,T1)
+      & ? [S5] :
+          ( wants_3(s0,E3,john,S5)
+          & become_3(S5,E2,john,A4)
+          & tmp_2(S5,E2,T1) ) ) )).
+
+% ::id 90_textbook_BUFFALO;NE
+% ::snt There's a bank that they all bank with .
+fof(ex1414052140091,axiom,(
+    ? [X1,G4,E2,E3] :
+      ( bank_2(s0,E2,G4)
+      & with_2(s0,E2,X1)
+      & bank_1(s0,X1)
+      & is_2(s0,E3,X1) ) )).
+
+% ::id 91_textbook_BUFFALO;SHELLS;NE
+% ::snt She sells sea-shells on the sea shore ;
+fof(ex1414052140397,axiom,(
+    ? [X1,X4,G2,E3] :
+      ( sea_shore_1(s0,X1)
+      & sea_shells_1(s0,G2)
+      & sells_3(s0,E3,X4,G2)
+      & on_2(s0,E3,X1) ) )).
+
+% ::id 92_textbook_BUFFALO;SHELLS;NE
+% ::snt The shells that she sells are sea-shells
+fof(ex1414052140709,axiom,(
+    ? [X5,G1,E2,G3,E4] :
+      ( sells_3(s0,E2,X5,G1)
+      & shells_1(s0,G1)
+      & sea_shells_1(s0,G3)
+      & are_3(s0,E4,G1,G3) ) )).
+
+% ::id 93_textbook_BUFFALO;SHELLS;NE
+% ::snt I'm sure .
+fof(ex1414052141009,axiom,(
+    ? [X2,A3,E1] :
+      ( sure_1(s0,A3)
+      & am_3(s0,E1,X2,A3) ) )).
+
+% ::id 94_textbook_BUFFALO;SHELLS;NE
+% ::snt So if she sells sea-shells on the sea shore , I'm sure that the shells are sea-shore shells .
+fof(ex1414052141330,axiom,(
+    ? [X9,X1,G2] :
+      ( sea_shore_1(s0,X1)
+      & shells_1(s0,G2)
+      & ! [X5,G3,E4] :
+          ( sea_shells_1(s0,G3)
+         => ( sells_3(s0,E4,X5,G3)
+            & on_2(s0,E4,X1)
+            & ? [G6,A11,S10,E7,E8] :
+                ( sea_shore_shells_1(s0,G6)
+                & ? [S12] :
+                    ( sure_2(s0,A11,S12)
+                    & are_3(S12,E7,G2,G6) )
+                & so_1(s0,S10)
+                & ? [S13] :
+                    ( fact_2(s0,S10,S13)
+                    & am_3(S13,E8,X9,A11) ) ) ) ) ) )).
+
+% ::id 95_textbook_BUFFALO;BETTY;NE
+% ::snt Betty Botter bought some butter ,
+fof(ex1414052141633,axiom,(
+    ? [X1,E2] :
+      ( butter_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & bought_3(s0,E2,betty_botter,X1) ) )).
+
+% ::id 96_textbook_BUFFALO;BETTY;NE
+% ::snt But , she said , this butter's bitter ;
+fof(ex1414052141939,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S6] :
+          ( said_3(s0,E1,X2,S6)
+          & ? [X3,A5,E4] :
+              ( butter_1(S6,X3)
+              & bitter_1(S6,A5)
+              & is_3(S6,E4,X3,A5) ) ) ) )).
+
+% ::id 97_textbook_BUFFALO;BETTY;NE
+% ::snt If I put it in my batter , It will make my batter bitter ,
+fof(ex1414052142258,axiom,(
+    ? [X10,X6,X4,X1] :
+    ! [X5,X2,E3] :
+      ( ( choose1(X5,X1)
+        & is_batter_of_2(s0,X2,X6)
+        & is_before_2(s0,E3,e0) )
+     => ( put_3(s0,E3,X4,X5)
+        & in_2(s0,E3,X2)
+        & ? [X7,A11,E8,E9] :
+            ( is_batter_of_2(s0,X7,X10)
+            & bitter_1(s0,A11)
+            & ? [S12] :
+                ( make_3(s0,E9,X1,S12)
+                & is_3(S12,E8,X7,A11) ) ) ) ) )).
+
+% ::id 98_textbook_BUFFALO;BETTY;NE
+% ::snt But a bit of better butter Will make my batter better .
+fof(ex1414052142570,axiom,(
+    ? [X6,X1,X2] :
+      ( better_1(s0,X1)
+      & butter_1(s0,X1)
+      & is_bit_of_2(s0,X2,X1)
+      & ? [X3,A7,E4,E5] :
+          ( is_batter_of_2(s0,X3,X6)
+          & better_1(s0,A7)
+          & ? [S8] :
+              ( make_3(s0,E5,X2,S8)
+              & is_3(S8,E4,X3,A7) ) ) ) )).
+
+% ::id 99_textbook_BUFFALO;BETTY;NE
+% ::snt So she bought a bit of butter Better than her bitter butter ,
+fof(ex1414052142882,axiom,(
+    ? [X6,X5,X1,X2,X3,E4] :
+      ( butter_1(s0,X2)
+      & choose2(X6,X2,X5)
+      & bitter_1(s0,X1)
+      & is_butter_of_2(s0,X1,X6)
+      & is_better_than_2(s0,X3,X1)
+      & is_bit_of__2(s0,X3,X2)
+      & so_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & bought_3(s0,E4,X5,X3) ) )).
+
+% ::id 100_textbook_BUFFALO;BETTY;NE
+% ::snt And she put it in her batter ,
+fof(ex1414052143189,axiom,(
+    ? [X5,X4,X3,X1,E2] :
+      ( choose2(X5,X3,X4)
+      & is_batter_of_2(s0,X1,X5)
+      & is_before_2(s0,E2,e0)
+      & put_3(s0,E2,X3,X4)
+      & in_2(s0,E2,X1) ) )).
+
+% ::id 101_textbook_BUFFALO;BETTY;NE
+% ::snt And it made her batter better ,
+fof(ex1414052143493,axiom,(
+    ? [X5,X4,X1,A6,E2,E3] :
+      ( choose1(X5,X4)
+      & is_batter_of_2(s0,X1,X5)
+      & better_1(s0,A6)
+      & is_before_2(s0,E3,e0)
+      & ? [S7] :
+          ( made_3(s0,E3,X4,S7)
+          & is_3(S7,E2,X1,A6) ) ) )).
+
+% ::id 102_textbook_BUFFALO;BETTY;NE
+% ::snt So 'twas better Betty Botter Bought a bit of better butter .
+fof(ex1414052143808,axiom,(
+    ? [X5,X1,X2,A7,S6,E3,E4] :
+      ( better_1(s0,X1)
+      & butter_1(s0,X1)
+      & is_bit_of_2(s0,X2,X1)
+      & ? [S8] :
+          ( better_2(s0,A7,S8)
+          & bought_3(S8,E3,betty_botter,X2) )
+      & so_1(s0,S6)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & ? [S9] :
+          ( fact_2(s0,S6,S9)
+          & was_3(S9,E4,X5,A7) ) ) )).
+
+% ::id 103_textbook_BUFFALO;postal_edge_chap1_ex65a;NE
+% ::snt Rhonda may praise herself and Claudia certainly will praise herself .
+fof(ex1414052144117,axiom,(
+    ? [S3] :
+      ( certainly_1(s0,S3)
+      & ? [X2,E1] :
+          ( choose1(X2,rhonda)
+          & praise_3(s0,E1,rhonda,X2) )
+      & ? [S6] :
+          ( fact_2(s0,S3,S6)
+          & ? [X5,E4] :
+              ( choose1(X5,claudia)
+              & praise_3(S6,E4,claudia,X5) ) ) ) )).
+
+% ::id 104_textbook_BUFFALO;postal_edge_chap1_ex65b;NE
+% ::snt Rhonda may praise herself and Claudia certainly will .
+fof(ex1414052144429,axiom,(
+    ? [S3] :
+      ( certainly_1(s0,S3)
+      & ? [X2,E1] :
+          ( choose1(X2,rhonda)
+          & praise_3(s0,E1,rhonda,X2) )
+      & ? [S6] :
+          ( fact_2(s0,S3,S6)
+          & ? [X5,E4] :
+              ( choose1(X5,claudia)
+              & praise_3(S6,E4,claudia,X5) ) ) ) )).
+
+% ::id 105_textbook_BUFFALO;postal_edge_chap1_ex65c;NE
+% ::snt Rhonda may and Claudia certainly will praise herself .
+fof(ex1414052144737,axiom,(
+    ? [S3] :
+      ( certainly_1(s0,S3)
+      & ? [X2,E1] :
+          ( choose1(X2,rhonda)
+          & praise_3(s0,E1,rhonda,X2) )
+      & ? [S6] :
+          ( fact_2(s0,S3,S6)
+          & ? [X5,E4] :
+              ( choose1(X5,claudia)
+              & praise_3(S6,E4,claudia,X5) ) ) ) )).
+
+% ::id 106_textbook_BUFFALO;postal_edge_chap1_ex66a;NE
+% ::snt Rhonda may get Tom to praise her and Claudia certainly will get Tom to praise her .
+fof(ex1414052145052,axiom,(
+    ? [S4] :
+      ( certainly_1(s0,S4)
+      & ? [X3,E1,E2] :
+          ( choose1(X3,rhonda)
+          & ? [S8] :
+              ( get_4(s0,E2,rhonda,tom,S8)
+              & praise_3(S8,E1,tom,X3) ) )
+      & ? [S9] :
+          ( fact_2(s0,S4,S9)
+          & ? [X7,E5,E6] :
+              ( choose3(X7,claudia,rhonda,tom)
+              & ? [S10] :
+                  ( get_4(S9,E6,claudia,tom,S10)
+                  & praise_3(S10,E5,tom,X7) ) ) ) ) )).
+
+% ::id 107_textbook_BUFFALO;postal_edge_chap1_ex66b;NE
+% ::snt Rhonda may get Tom to praise her and Claudia certainly will .
+fof(ex1414052145368,axiom,(
+    ? [S4] :
+      ( certainly_1(s0,S4)
+      & ? [X3,E1,E2] :
+          ( choose1(X3,rhonda)
+          & ? [S8] :
+              ( get_4(s0,E2,rhonda,tom,S8)
+              & praise_3(S8,E1,tom,X3) ) )
+      & ? [S9] :
+          ( fact_2(s0,S4,S9)
+          & ? [X7,E5,E6] :
+              ( choose3(X7,claudia,rhonda,tom)
+              & ? [S10] :
+                  ( get_4(S9,E6,claudia,tom,S10)
+                  & praise_3(S10,E5,tom,X7) ) ) ) ) )).
+
+% ::id 108_textbook_BUFFALO;postal_edge_chap1_ex66c;NE
+% ::snt Rhonda may and Claudia certainly will get Tom to praise her .
+fof(ex1414052145688,axiom,(
+    ? [S4] :
+      ( certainly_1(s0,S4)
+      & ? [X3,E1,E2] :
+          ( choose1(X3,rhonda)
+          & ? [S8] :
+              ( get_4(s0,E2,rhonda,tom,S8)
+              & praise_3(S8,E1,tom,X3) ) )
+      & ? [S9] :
+          ( fact_2(s0,S4,S9)
+          & ? [X7,E5,E6] :
+              ( choose3(X7,claudia,rhonda,tom)
+              & ? [S10] :
+                  ( get_4(S9,E6,claudia,tom,S10)
+                  & praise_3(S10,E5,tom,X7) ) ) ) ) )).
+
+% ::id 109_textbook_BUFFALO;takmi;NE
+% ::snt The straw was peeled off from the juice pack .
+fof(ex1414052145995,axiom,(
+    ? [X1,X2,E3] :
+      ( straw_1(s0,X2)
+      & juice_pack_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & peeled_off_3(s0,E3,unspecified,X2)
+      & from_2(s0,E3,X1) ) )).
+
+% ::id 110_textbook_BUFFALO;takmi;NE
+% ::snt I got some ice cream for my children , but there was something like a piece of thread inside the cup .
+fof(ex1414052146315,axiom,(
+    ? [X10,X9,X1,X2,X3,X4,X5,G6,E7,E8] :
+      ( cup_1(s0,X1)
+      & ice_cream_1(s0,X2)
+      & thread_1(s0,X3)
+      & is_piece_of_2(s0,X4,X3)
+      & is_like_of_2(s0,X5,X4)
+      & thing_1(s0,X5)
+      & is_children_of_2(s0,G6,X10)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & got_3(s0,E7,X9,X2)
+      & for_2(s0,E7,G6)
+      & was_2(s0,E8,X5)
+      & inside_2(s0,E8,X1) ) )).
+
+% ::id 111_textbook_BUFFALO;takmi;NE
+% ::snt I could only find 11 cups in the 12-pack .
+fof(ex1414052146625,axiom,(
+    ? [X3,X1,G2] :
+      ( predicate__12_pack_1(s0,X1)
+      & predicate__11_1(s0,G2)
+      & cups_1(s0,G2)
+      & ? [E4,X5] :
+          ( is_of_2(s0,X5,G2)
+          & find_3(s0,E4,X3,X5)
+          & in_2(s0,E4,X1) ) ) )).
+
+% ::id 112_textbook_BUFFALO;takmi;NE
+% ::snt There was a stain on the package that seemed to be caused by a leak .
+fof(ex1414052146949,axiom,(
+    ? [X1,X2,X3,E4,E5,E6] :
+      ( package_1(s0,X1)
+      & leak_1(s0,X2)
+      & ? [S7] :
+          ( seemed_3(s0,E5,X3,S7)
+          & caused_3(S7,E4,X2,X3) )
+      & is_stain_on_2(s0,X3,X1)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & was_2(s0,E6,X3) ) )).
+
+% ::id 113_textbook_BUFFALO;takmi;NE
+% ::snt Is it safe to drink ?
+fof(ex1414052147253,axiom,(
+    ? [A4,E1,E2,S3] :
+      ( safe_1(s0,A4)
+      & ? [S5] :
+          ( fact_2(s0,S3,S5)
+          & drink_1(S5,E1) )
+      & is_3(s0,E2,S3,A4) ) )).
+
+% ::id 114_textbook_BUFFALO;takmi;NE
+% ::snt I love the ads for the new milk chocolate .
+fof(ex1414052147561,axiom,(
+    ? [X4,X1,G2,E3] :
+      ( new_1(s0,X1)
+      & milk_chocolate_1(s0,X1)
+      & is_ads_for_2(s0,G2,X1)
+      & love_3(s0,E3,X4,G2) ) )).
+
+% ::id 115_textbook_BUFFALO;takmi;NE
+% ::snt Could you tell me the name of the actor in the commercial ?
+fof(ex1414052147871,axiom,(
+    ? [X6,X5,X1,X2,X3] :
+      ( commercial_1(s0,X1)
+      & is_actor_in_2(s0,X2,X1)
+      & is_name_of_2(s0,X3,X2)
+      & ? [E4] : tell_4(s0,E4,X5,X3,X6) ) )).
+
+% ::id 116_textbook_BUFFALO;takmi;NE
+% ::snt The cup looked like it was already opened .
+fof(ex1414052148180,axiom,(
+    ? [X1,X4,E2,E3] :
+      ( cup_1(s0,X1)
+      & choose1(X4,X1)
+      & already_1(s0,E2)
+      & is_before_2(s0,E2,E3)
+      & is_before_2(s0,E3,e0)
+      & ? [S5] :
+          ( looked_like_3(s0,E3,X1,S5)
+          & opened_3(S5,E2,unspecified,X4) ) ) )).
+
+% ::id 117_textbook_BUFFALO;takmi;NE
+% ::snt Is it safe ?
+fof(ex1414052148480,axiom,(
+    ? [X2,A3,E1] :
+      ( safe_1(s0,A3)
+      & is_3(s0,E1,X2,A3) ) )).
+
+% ::id 118_textbook_BUFFALO;takmi;NE
+% ::snt It was a little more sour than when I ate it before .
+fof(ex1414052148801,axiom,(
+    ? [X5,X1,A2] :
+      ( a_little_more_sour_1(s0,A2)
+      & ? [X6,T3,E4] :
+          ( choose1(X6,X1)
+          & ate_3(s0,E4,X5,X6)
+          & tmp_2(s0,E4,T3)
+          & before_1(s0,E4)
+          & is_before_2(s0,E4,e0)
+          & ? [E7] :
+              ( is_before_2(s0,E7,e0)
+              & was_3(s0,E7,X1,A2)
+              & than_2(s0,E7,T3) ) ) ) )).
+
+% ::id 119_textbook_BUFFALO;takmi;NE
+% ::snt I like to buy juice made by ABCDE confectionary company , but this time there was some juice leaking from the bottom .
+fof(ex1414052149126,axiom,(
+    ? [X11,X1,T2,X3,X4,X5,E6,E7,E8,E9,E10] :
+      ( bottom_1(s0,X1)
+      & time_1(s0,T2)
+      & abcde__confectionary_company_1(s0,X3)
+      & made_3(s0,E6,X3,X4)
+      & juice_1(s0,X4)
+      & leaking_2(s0,E9,X5)
+      & from_2(s0,E9,X1)
+      & juice_1(s0,X5)
+      & is_before_2(s0,E10,e0)
+      & ? [S12] :
+          ( like_3(s0,E8,X11,S12)
+          & buy_3(S12,E7,X11,X4) )
+      & was_2(s0,E10,X5)
+      & tmp_2(s0,E10,T2) ) )).
+
+% ::id 120_textbook_BUFFALO;takmi;NE
+% ::snt I bought some ice cream today , but it had a strange odor .
+fof(ex1414052149441,axiom,(
+    ? [X6,X7,X1,X2,T3,E4,E5] :
+      ( ice_cream_1(s0,X1)
+      & choose1(X7,X1)
+      & strange_1(s0,X2)
+      & odor_1(s0,X2)
+      & today_1(s0,T3)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & bought_4(s0,E4,X6,unspecified,X1)
+      & tmp_2(s0,E4,T3)
+      & had_3(s0,E5,X7,X2) ) )).
+
+% ::id 121_textbook_BUFFALO;takmi;NE
+% ::snt The vanilla ice cream tasted bitter .
+fof(ex1414052149744,axiom,(
+    ? [X1,A3,E2] :
+      ( vanilla_ice_cream_1(s0,X1)
+      & bitter_1(s0,A3)
+      & is_before_2(s0,E2,e0)
+      & tasted_3(s0,E2,X1,A3) ) )).
+
+% ::id 122_textbook_BUFFALO;takmi;NE
+% ::snt I bought it the day before yesterday , and the date hasn't expired yet .
+fof(ex1414052150059,axiom,(
+    ? [X5,X1,T2,T3,X6,E4] :
+      ( date_1(s0,X1)
+      & yesterday_1(s0,T2)
+      & is_day_before_2(s0,T3,T2)
+      & is_before_2(s0,E4,e0)
+      & bought_4(s0,E4,X5,unspecified,X6)
+      & tmp_2(s0,E4,T3)
+      & ? [E7] :
+          ( yet_1(s0,E7)
+          & has_expired_2(s0,E7,X1) ) ) )).
+
+% ::id 123_textbook_BUFFALO;takmi;NE
+% ::snt When I was holding an unopened pack , the contents leaked from the bottom of the juice pack .
+fof(ex1414052150378,axiom,(
+    ? [X6,X1,X2,G3] :
+      ( juice_pack_1(s0,X1)
+      & is_bottom_of_2(s0,X2,X1)
+      & contents_1(s0,G3)
+      & ! [X4,E5] :
+          ( ( unopened_1(s0,X4)
+            & pack_1(s0,X4)
+            & is_before_2(s0,E5,e0) )
+         => ( was_holding_3(s0,E5,X6,X4)
+            & ? [E7] :
+                ( is_before_2(s0,E7,e0)
+                & leaked_2(s0,E7,G3)
+                & from_2(s0,E7,X2) ) ) ) ) )).
+
+% ::id 124_textbook_BUFFALO;chap4;NE
+% ::snt Cyrus was mentioned by name by Isaiah .
+fof(ex1414052150686,axiom,(
+    ? [X1,E2] :
+      ( name_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & mentioned_3(s0,E2,isaiah,cyrus)
+      & by__2(s0,E2,X1) ) )).
+
+% ::id 125_textbook_BUFFALO;chap4;NE
+% ::snt Cyrus was mentioned by Isaiah by name .
+fof(ex1414052150992,axiom,(
+    ? [X1,E2] :
+      ( name_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & mentioned_3(s0,E2,isaiah,cyrus)
+      & by_2(s0,E2,X1) ) )).
+
+% ::id 126_textbook_BUFFALO;1411694268;NE
+% ::snt Last year , John smiled every day .
+fof(ex1414052151304,axiom,(
+    ? [T1] :
+      ( last_1(s0,T1)
+      & year_1(s0,T1)
+      & ! [T2] :
+          ( is_day_of_2(s0,T2,T1)
+         => ? [E3] :
+              ( is_before_2(s0,E3,e0)
+              & smiled_2(s0,E3,john)
+              & tmp_2(s0,E3,T2) ) ) ) )).
+
+% ::id 127_textbook_BUFFALO;1411694268;NE
+% ::snt It rains .
+fof(ex1414052151605,axiom,(
+    ? [E1] : rains_1(s0,E1) )).
+
+% ::id 128_textbook_BUFFALO;LSA-2013-06-28,42
+% ::snt Thank you for your attention !
+fof(ex1414052151914,axiom,(
+    ? [X5,X4,X3,X1,E2] :
+      ( is_attention_of_2(s0,X1,X5)
+      & thank_4(s0,E2,X3,unspecified,X4)
+      & for_2(s0,E2,X1) ) )).
+

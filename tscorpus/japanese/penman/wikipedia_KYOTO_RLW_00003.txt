@@ -1,0 +1,230 @@
+# ::id 1_wikipedia_KYOTO_RLW_00003,1;NJ
+# ::snt 三条京阪駅
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-三条京阪駅 / ENTITY
+             :name ( n-2 / name
+                    :op1 "三条京阪駅")))
+
+# ::id 2_wikipedia_KYOTO_RLW_00003,2;NJ
+# ::snt 駅 情報
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 駅_情報))
+
+# ::id 3_wikipedia_KYOTO_RLW_00003,3;NJ
+# ::snt 三条京阪駅 （ さんじょうけいはんえき ） は 、 京都市 東山区 に ある 、 京都 市営 地下鉄 東西線 の 鉄道駅 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-三条京阪駅 / ENTITY
+             :name ( n-5 / name
+                    :op1 "三条京阪駅")
+             :NAMELY ( ENTITY-さんじょうけいはんえき / ENTITY
+                    :name ( n-6 / name
+                           :op1 "さんじょうけいはんえき")))
+      :ARG1 ( ENTITY-1 / 鉄道駅
+             :の ( ENTITY-京都_市営_地下鉄_東西線 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "京都_市営_地下鉄_東西線"))
+             :ARG0-of ( EVENT-3 / ある
+                    :に ( ENTITY-京都市_東山区 / ENTITY
+                           :name ( n-8 / name
+                                  :op1 "京都市_東山区")))))
+
+# ::id 4_wikipedia_KYOTO_RLW_00003,4;NJ
+# ::snt 駅 番号 は T11 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 駅_番号)
+      :ARG1 ( ENTITY-2 / T11))
+
+# ::id 5_wikipedia_KYOTO_RLW_00003,5;NJ
+# ::snt 接続 する 鉄道 路線
+( EVENT-4 / EVENT
+      :LINK ( ENTITY-1 / 鉄道_路線
+             :ARG0-of ( EVENT-3 / 接続する.0)))
+
+# ::id 6_wikipedia_KYOTO_RLW_00003,6;NJ
+# ::snt 京阪電気鉄道
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-京阪電気鉄道 / ENTITY
+             :name ( n-2 / name
+                    :op1 "京阪電気鉄道")))
+
+# ::id 7_wikipedia_KYOTO_RLW_00003,8;NJ
+# ::snt 地下 の 改札 外 コンコース を通じて 繋がっ て いる 。
+( EVENT-4 / 繋がっ_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :を通じて ( ENTITY-2 / 改札_外_コンコース
+             :の ( ENTITY-3 / 地下)))
+
+# ::id 8_wikipedia_KYOTO_RLW_00003,9;NJ
+# ::snt 駅 構造
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 駅_構造))
+
+# ::id 9_wikipedia_KYOTO_RLW_00003,10;NJ
+# ::snt ホーム は 地下 4 層 に あり 、 他 の 東西線 の 駅 と 同様 、 複線島式 ホーム （ 1 面 2 線 ） で 、 プラットホーム 安全 対策 が 設置 さ れ て いる 。
+( CONJ-12 / CONJ_te
+      :op1 ( EVENT-8 / で
+             :ARG0 ( ENTITY-1 / ホーム
+                    :ARG0-of ( EVENT-3 / あり
+                           :に ( ENTITY-2 / CD_4_層
+                                  :MOD ( mod-13 / 地下))))
+             :ARG1 ( ENTITY-7 / 複線島式_ホーム
+                    :NAMELY ( ENTITY-6 / CD_1_面_2_線))
+             :MOD ( mod-14 / 同様)
+             :と ( ENTITY-4 / 駅
+                    :の ( ENTITY-東西線 / ENTITY
+                           :name ( n-15 / name
+                                  :op1 "東西線"))
+                    :の ( ENTITY-5 / 他)))
+      :op2 ( EVENT-11 / 設置する.0_て_いる
+             :ARG0 ( ENTITY-10 / プラットホーム_安全_対策)
+             :ARG1 ENTITY-1))
+
+# ::id 10_wikipedia_KYOTO_RLW_00003,11;NJ
+# ::snt 東西線 の 駅 は 駅 ごと に ステーション カラー が 制定 さ れ て いる が 、 三条京阪駅 の ステーション カラー は 牡丹色 。
+( CONJ-9 / CONJ_が (
+             :op1 ( ENTITY-2 ( ENTITY
+                           :OF ( ENTITY-3 / 駅))) ( EVENT-5 ( 制定する.0_て_いる
+                           :ARG0 ( ENTITY-4 / ステーション_カラー)
+                           :ARG1 ( ENTITY-1 / 駅
+                                  :の ( ENTITY-東西線 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "東西線")))
+                           :に ENTITY-2)))
+      :op2 ( EVENT-8 / EVENT
+             :ARG0 ( ENTITY-6 / ステーション_カラー
+                    :の ( ENTITY-三条京阪駅 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "三条京阪駅")))
+             :ARG1 ( ENTITY-7 / 牡丹色)))
+
+# ::id 11_wikipedia_KYOTO_RLW_00003,12;NJ
+# ::snt 駅 周辺
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 駅_周辺))
+
+# ::id 12_wikipedia_KYOTO_RLW_00003,13;NJ
+# ::snt 駅 の 周辺 および バス のりば について は 三条京阪 を 参照 。
+( EVENT-5 / 参照
+      :ARG1 ( ENTITY-三条京阪 / ENTITY
+             :name ( n-7 / name
+                    :op1 "三条京阪"))
+      :について ( GROUP-1 / CONJ_および
+             :op1 ( ENTITY-2 / 周辺
+                    :の ( ENTITY-3 / 駅))
+             :op2 ( ENTITY-4 / バス_のりば))
+      :domain-of ( IMPERATIVE-6 / IMPERATIVE))
+
+# ::id 13_wikipedia_KYOTO_RLW_00003,14;NJ
+# ::snt 駅名
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 駅名))
+
+# ::id 14_wikipedia_KYOTO_RLW_00003,15;NJ
+# ::snt 地下鉄 開業 以前 から 、 京都 市営 バス 等 で は この 地点名 を 「 三条京阪 」 と 呼ん で いる 。
+( EVENT-6 / 呼ん_で_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-5 / 地点名)
+      :ARG2 ( ENTITY-三条京阪 / ENTITY
+             :name ( n-7 / name
+                    :op1 "三条京阪"))
+      :で ( ENTITY-3 / ENTITY
+             :等 ( ENTITY-4 / 京都_市営_バス))
+      :から ( ENTITY-2 / 地下鉄_開業_以前))
+
+# ::id 15_wikipedia_KYOTO_RLW_00003,16;NJ
+# ::snt 京阪電気鉄道 の 三条駅 （ 京都府 ） ではなく 市営 地下鉄 の ほう が 三条京阪駅 と 他 社 の 名前 を 名乗っ て いる 。
+( EVENT-6 / 名乗っ_て_いる
+      :ARG0 ( ENTITY-1 / ほう
+             :の ( CONJ-7 / CONJ_ではなく
+                    :op1 ( GROUP-2 / AND
+                           :op1 ( ENTITY-三条駅 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "三条駅")
+                                  :NAMELY ( ENTITY-京都府 / ENTITY
+                                         :name ( n-9 / name
+                                                :op1 "京都府")))
+                           :op2 ( ENTITY-三条駅 / ENTITY
+                                  :の ( ENTITY-京阪電気鉄道 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "京阪電気鉄道")))
+                           :op3 ENTITY-三条駅)
+                    :op2 ( GROUP-12 / AND
+                           :op1 ( ENTITY-3 / 市営_地下鉄)
+                           :op2 ENTITY-13)))
+      :ARG1 ( ENTITY-4 / 名前
+             :の ( ENTITY-5 / 他_社))
+      :と ( ENTITY-三条京阪駅 / ENTITY
+             :name ( n-11 / name
+                    :op1 "三条京阪駅")))
+
+# ::id 16_wikipedia_KYOTO_RLW_00003,20;NJ
+# ::snt その 他
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 他))
+
+# ::id 17_wikipedia_KYOTO_RLW_00003,21;NJ
+# ::snt 駅 施設 は 第 三 セクター で ある 京都市営地下鉄東西線歴史株式会社 が 建設 。
+( EVENT-5 / 建設
+      :ARG0 ( ENTITY-京都市営地下鉄東西線歴史株式会社 / ENTITY
+             :name ( n-7 / name
+                    :op1 "京都市営地下鉄東西線歴史株式会社")
+             :ARG0-of ( EVENT-4 / で_ある
+                    :ARG1 ( ENTITY-3 / CD_第_三
+                           :MOD ( mod-6 / セクター))))
+      :ARG1 ( ENTITY-1 / 駅_施設))
+
+# ::id 18_wikipedia_KYOTO_RLW_00003,22;NJ
+# ::snt なお 、 東西線 に 乗り入れ て いる 京阪京津線 は 元々 御陵駅 より この 駅 の 地上 を 走っ て い た こと から 、 当初 は この 駅 まで の 乗り入れ を 予定 し て い た が 、 この 付近 で は 折返し 運転 を する の に 必要 な スペース が 確保 でき なかっ た ため 、 開業 時 は 一 つ 先 の 京都市役所前駅 まで の 乗り入れ と なっ た （ その 後 、 2008 年 に 東西線 が 太秦天神川駅 へ 延長 さ れ た 時 に 、 同駅 まで 乗り入れ 区間 が 延長 さ れ て いる ） 。
+( CONJ-30 / CONJ_が
+      :op1 ( EVENT-11 / 予定する.0_て_い_た
+             :ARG0 ( ENTITY-京阪京津線 / ENTITY
+                    :name ( n-37 / name
+                           :op1 "京阪京津線")
+                    :ARG0-of ( EVENT-2 / 乗り入れ_て_いる
+                           :に ( ENTITY-東西線 / ENTITY
+                                  :name ( n-38 / name
+                                         :op1 "東西線"))))
+             :ARG1 ( ENTITY-4 / 乗り入れ
+                    :まで_の ( ENTITY-5 / 駅))
+             :から ( SITUATION-6 / こと
+                    :THAT ( EVENT-9 / 走っ_て_い_た
+                           :ARG0 ENTITY-4
+                           :ARG1 ( ENTITY-7 / 地上
+                                  :の ( ENTITY-8 / 駅))
+                           :より ( ENTITY-御陵駅 / ENTITY
+                                  :name ( n-39 / name
+                                         :op1 "御陵駅"))
+                           :MOD ( mod-31 / 元々)
+                           :MOD ( mod-32 / past)))
+             :ADV ( ENTITY-3 / 当初)
+             :MOD ( mod-33 / past))
+      :op2 ( EVENT-26 / なっ_た
+             :ARG0 ENTITY-京阪京津線
+             :と ( ENTITY-23 / 乗り入れ
+                    :まで_の ( ENTITY-24 / 京都市役所前駅
+                           :の ( ENTITY-25 / CD_一_つ
+                                  :MOD ( mod-34 / 先))))
+             :TMP ( ENTITY-22 / 開業_時)
+             :ため ( EVENT-21 / 確保する.0_た
+                    :ARG0 ( PICK-27 / or
+                           :op1 ENTITY-京阪京津線
+                           :op2 ENTITY-12
+                           :op3 ENTITY-4
+                           :op4 ENTITY-7
+                           :op5 ENTITY-3
+                           :op6 ENTITY-御陵駅
+                           :op7 ENTITY-8
+                           :op8 ENTITY-5
+                           :op9 ENTITY-東西線)
+                    :ARG1 ( ENTITY-15 / スペース
+                           :ARG0-of ( EVENT-20 / 必要_な
+                                  :に ( SITUATION-17 / の
+                                         :THAT ( EVENT-19 / する
+                                                :ARG0 ENTITY-15
+                                                :ARG1 ( ENTITY-18 / 折返し_運転)))))
+                    :MOD ( mod-35 / past)
+                    :domain-of ( NEG-29 / NEG))
+             :で ( ENTITY-12 / 付近)
+             :MOD ( mod-36 / past)))

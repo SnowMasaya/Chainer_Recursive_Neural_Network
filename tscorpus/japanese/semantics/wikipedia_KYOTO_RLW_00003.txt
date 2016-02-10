@@ -1,0 +1,146 @@
+# ::id 1_wikipedia_KYOTO_RLW_00003,1;NJ
+# ::snt 三条京阪駅
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[三条京阪駅])
+
+# ::id 2_wikipedia_KYOTO_RLW_00003,2;NJ
+# ::snt 駅 情報
+∃ EVENT[2] ENTITY[1] (駅_情報(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 3_wikipedia_KYOTO_RLW_00003,3;NJ
+# ::snt 三条京阪駅 （ さんじょうけいはんえき ） は 、 京都市 東山区 に ある 、 京都 市営 地下鉄 東西線 の 鉄道駅 。
+∃ ENTITY[1] EVENT[3] EVENT[4] (
+ namely_-ENTITY-(ENTITY[さんじょうけいはんえき], ENTITY[三条京阪駅]) ∧
+  ある(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[京都市_東山区] ∧ の_鉄道駅(ENTITY[京都_市営_地下鉄_東西線], ENTITY[1]) ∧
+   xxx(EVENT[4], ENTITY[三条京阪駅], ENTITY[1]))
+
+# ::id 4_wikipedia_KYOTO_RLW_00003,4;NJ
+# ::snt 駅 番号 は T11 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (駅_番号(ENTITY[1]) ∧ T11(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 5_wikipedia_KYOTO_RLW_00003,5;NJ
+# ::snt 接続 する 鉄道 路線
+∃ ENTITY[1] EVENT[3] EVENT[4] (接続する.0(EVENT[3], ENTITY[1]) ∧ 鉄道_路線(ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_RLW_00003,6;NJ
+# ::snt 京阪電気鉄道
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[京阪電気鉄道])
+
+# ::id 7_wikipedia_KYOTO_RLW_00003,8;NJ
+# ::snt 地下 の 改札 外 コンコース を通じて 繋がっ て いる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  地下(ENTITY[3]) ∧
+   の_改札_外_コンコース(ENTITY[3], ENTITY[2]) ∧ 繋がっ_て_いる(EVENT[4], ENTITY[1]) ∧ を通じて(EVENT[4]) = ENTITY[2])
+
+# ::id 8_wikipedia_KYOTO_RLW_00003,9;NJ
+# ::snt 駅 構造
+∃ EVENT[2] ENTITY[1] (駅_構造(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 9_wikipedia_KYOTO_RLW_00003,10;NJ
+# ::snt ホーム は 地下 4 層 に あり 、 他 の 東西線 の 駅 と 同様 、 複線島式 ホーム （ 1 面 2 線 ） で 、 プラットホーム 安全 対策 が 設置 さ れ て いる 。
+∃ EVENT[3] EVENT[8] EVENT[11] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[7] ENTITY[10] ENTITY[1] (
+ ホーム(ENTITY[1]) ∧
+  (CD_4_層(ENTITY[2]), 地下(ENTITY[2])) ∧
+   他(ENTITY[5]) ∧
+    の_駅(ENTITY[東西線], ENTITY[4]) ∧ の__駅(ENTITY[5], ENTITY[4]) ∧
+     複線島式_ホーム(ENTITY[7]) ∧
+      CD_1_面_2_線(ENTITY[6]) ∧
+       namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+        プラットホーム_安全_対策(ENTITY[10]) ∧
+         同様(EVENT[8]) ∧ と(ENTITY[4], EVENT[8]) ∧
+          あり(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+           CONJ_te(で(EVENT[8], ENTITY[1], ENTITY[7]), 設置する.0_て_いる(EVENT[11], (_, ENTITY[10]), ENTITY[1])))
+
+# ::id 10_wikipedia_KYOTO_RLW_00003,11;NJ
+# ::snt 東西線 の 駅 は 駅 ごと に ステーション カラー が 制定 さ れ て いる が 、 三条京阪駅 の ステーション カラー は 牡丹色 。
+∃ EVENT[8] ENTITY[3] ENTITY[7] ENTITY[1] ENTITY[6] (
+ の_駅(ENTITY[東西線], ENTITY[1]) ∧
+  の_ステーション_カラー(ENTITY[三条京阪駅], ENTITY[6]) ∧
+   駅(ENTITY[3]) ∧
+    牡丹色(ENTITY[7]) ∧
+     CONJ_が(ごと ENTITY[2] (ENTITY[2] = ENTITY[3],
+           ∃ EVENT[5] ENTITY[4] (
+            ステーション_カラー(ENTITY[4]) ∧
+             制定する.0_て_いる(EVENT[5], (_, ENTITY[4]), ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[2])),
+      xxx(EVENT[8], ENTITY[6], ENTITY[7])))
+
+# ::id 11_wikipedia_KYOTO_RLW_00003,12;NJ
+# ::snt 駅 周辺
+∃ EVENT[2] ENTITY[1] (駅_周辺(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 12_wikipedia_KYOTO_RLW_00003,13;NJ
+# ::snt 駅 の 周辺 および バス のりば について は 三条京阪 を 参照 。
+∃ ENTITY[3] ENTITY[2] ENTITY[4] GROUP[1] (
+ 駅(ENTITY[3]) ∧
+  の_周辺(ENTITY[3], ENTITY[2]) ∧
+   バス_のりば(ENTITY[4]) ∧
+    CONJ_および(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[4], GROUP[1])) ∧
+     IMPERATIVE(∃ EVENT[5] (参照(EVENT[5], _, ENTITY[三条京阪]) ∧ について(EVENT[5]) = GROUP[1])))
+
+# ::id 13_wikipedia_KYOTO_RLW_00003,14;NJ
+# ::snt 駅名
+∃ EVENT[2] ENTITY[1] (駅名(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 14_wikipedia_KYOTO_RLW_00003,15;NJ
+# ::snt 地下鉄 開業 以前 から 、 京都 市営 バス 等 で は この 地点名 を 「 三条京阪 」 と 呼ん で いる 。
+∃ ENTITY[1] EVENT[6] ENTITY[2] ENTITY[4] ENTITY[5] ENTITY[3] (
+ 京都_市営_バス(ENTITY[4]) ∧
+  等(ENTITY[4], ENTITY[3]) ∧
+   地点名(ENTITY[5]) ∧
+    ENTITY[1] = *pro* ∧
+     地下鉄_開業_以前(ENTITY[2]) ∧
+      呼ん_で_いる(EVENT[6], ENTITY[1], ENTITY[5], ENTITY[三条京阪]) ∧ で(EVENT[6]) = ENTITY[3] ∧
+       から(EVENT[6]) = ENTITY[2])
+
+# ::id 15_wikipedia_KYOTO_RLW_00003,16;NJ
+# ::snt 京阪電気鉄道 の 三条駅 （ 京都府 ） ではなく 市営 地下鉄 の ほう が 三条京阪駅 と 他 社 の 名前 を 名乗っ て いる 。
+∃ EVENT[6] GROUP[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ CONJ_ではなく(の_xxx(ENTITY[京阪電気鉄道], ENTITY[三条駅]) ∧ namely_-ENTITY-(ENTITY[京都府], ENTITY[三条駅]) ∧ is_element_of(ENTITY[三条駅], GROUP[2]),
+  ∃ ENTITY[3] (市営_地下鉄(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2]))) ∧
+  の_ほう(GROUP[2], ENTITY[1]) ∧
+   他_社(ENTITY[5]) ∧
+    の_名前(ENTITY[5], ENTITY[4]) ∧ 名乗っ_て_いる(EVENT[6], ENTITY[1], ENTITY[4]) ∧ と(EVENT[6]) = ENTITY[三条京阪駅])
+
+# ::id 16_wikipedia_KYOTO_RLW_00003,20;NJ
+# ::snt その 他
+∃ EVENT[2] ENTITY[1] (他(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 17_wikipedia_KYOTO_RLW_00003,21;NJ
+# ::snt 駅 施設 は 第 三 セクター で ある 京都市営地下鉄東西線歴史株式会社 が 建設 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 駅_施設(ENTITY[1]) ∧
+  (CD_第_三(ENTITY[3]), セクター(ENTITY[3])) ∧
+   で_ある(EVENT[4], ENTITY[京都市営地下鉄東西線歴史株式会社], ENTITY[3]) ∧ 建設(EVENT[5], ENTITY[京都市営地下鉄東西線歴史株式会社], ENTITY[1]))
+
+# ::id 18_wikipedia_KYOTO_RLW_00003,22;NJ
+# ::snt なお 、 東西線 に 乗り入れ て いる 京阪京津線 は 元々 御陵駅 より この 駅 の 地上 を 走っ て い た こと から 、 当初 は この 駅 まで の 乗り入れ を 予定 し て い た が 、 この 付近 で は 折返し 運転 を する の に 必要 な スペース が 確保 でき なかっ た ため 、 開業 時 は 一 つ 先 の 京都市役所前駅 まで の 乗り入れ と なっ た （ その 後 、 2008 年 に 東西線 が 太秦天神川駅 へ 延長 さ れ た 時 に 、 同駅 まで 乗り入れ 区間 が 延長 さ れ て いる ） 。
+∃ ENTITY[14] SITUATION[13] SITUATION[6] EVENT[9] EVENT[11] EVENT[26] ENTITY[7] ENTITY[4] ENTITY[25] ENTITY[24] ENTITY[23] EVENT[2] ENTITY[5] ENTITY[8] ENTITY[3] ENTITY[22] ENTITY[12] (
+ 乗り入れ_て_いる(EVENT[2], ENTITY[京阪京津線]) ∧ に(EVENT[2]) = ENTITY[東西線] ∧
+  当初(ENTITY[3]) ∧
+   駅(ENTITY[5]) ∧
+    駅(ENTITY[8]) ∧
+     付近(ENTITY[12]) ∧
+      開業_時(ENTITY[22]) ∧
+       まで_の_乗り入れ(ENTITY[5], ENTITY[4]) ∧
+        の_地上(ENTITY[8], ENTITY[7]) ∧
+         こと(SITUATION[6], 走っ_て_い_た(EVENT[9], ENTITY[4], ENTITY[7]) ∧ より(EVENT[9]) = ENTITY[御陵駅]) ∧
+          ENTITY[14] = *pro*{ENTITY[京阪京津線], ENTITY[12], ENTITY[4], ENTITY[7], ENTITY[3], ENTITY[御陵駅], ENTITY[8], ENTITY[5], ENTITY[東西線]} ∧
+           FACT(SITUATION[13],
+            ¬ ∃ SITUATION[17] EVENT[19] EVENT[20] EVENT[21] ENTITY[18] ENTITY[15] (
+                  折返し_運転(ENTITY[18]) ∧
+                   の(SITUATION[17], する(EVENT[19], ENTITY[15], ENTITY[18])) ∧
+                    必要_な(EVENT[20], ENTITY[15]) ∧ に(EVENT[20]) = SITUATION[17] ∧
+                     スペース(ENTITY[15]) ∧
+                     past(EVENT[21]) ∧ 確保する.0_た(EVENT[21], ENTITY[14], ENTITY[15]))) ∧
+            (CD_一_つ(ENTITY[25]), 先(ENTITY[25])) ∧
+             の_京都市役所前駅(ENTITY[25], ENTITY[24]) ∧
+              まで_の_乗り入れ(ENTITY[24], ENTITY[23]) ∧
+               ADV_元々(EVENT[9]) ∧
+                past(EVENT[9]) ∧
+                 past(EVENT[11]) ∧
+                  past(EVENT[26]) ∧
+                   CONJ_が(予定する.0_て_い_た(EVENT[11], ENTITY[京阪京津線], ENTITY[4]) ∧ から(EVENT[11]) = SITUATION[6] ∧
+                         ADV(EVENT[11]) = ENTITY[3],
+                    なっ_た(EVENT[26], ENTITY[京阪京津線]) ∧ と(EVENT[26]) = ENTITY[23] ∧
+                     時間(EVENT[26]) = ENTITY[22] ∧ ため(EVENT[26]) = SITUATION[13] ∧
+                     で(EVENT[26]) = ENTITY[12]))

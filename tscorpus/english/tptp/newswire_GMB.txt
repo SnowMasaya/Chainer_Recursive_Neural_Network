@@ -1,0 +1,2236 @@
+% ::id 1_nonfiction_GMB;p00d0030;AT1-1;NE
+% ::snt Suspected Islamist rebels have fired mortar shells at the palace used by Somalia's interim President Abdullahi Yusuf Ahmad .
+fof(ex1414051746064,axiom,(
+    ? [X1,X2,E3,G4,G5,E6] :
+      ( somalia_1(s0,X1)
+      & interim_president_1(s0,X1)
+      & used_3(s0,E3,abdullahi_yusuf_ahmad,X2)
+      & palace_1(s0,X2)
+      & abdullahi_yusuf_ahmad = X1
+      & suspected_1(s0,G5)
+      & islamist_rebels_1(s0,G5)
+      & mortar_shells_1(s0,G4)
+      & have_fired_3(s0,E6,G5,G4)
+      & at_2(s0,E6,X2) ) )).
+
+% ::id 2_nonfiction_GMB;p00d0030;AT1-2;NE
+% ::snt It was not immediately clear if the president was in the palace in Mogadishu when the attack occurred or if anyone was hurt .
+fof(ex1414051746418,axiom,(
+    ? [X1,X2,X3] :
+      ( president_1(s0,X3)
+      & is_palace_in_2(s0,X2,mogadishu)
+      & attack_1(s0,X1)
+      & ? [A11,E4,S5] :
+          ( immediately_clear_1(s0,A11)
+          & is_before_2(s0,E4,e0)
+          & ? [S12] :
+              ( fact_2(s0,S5,S12)
+              & ? [E6,E7] :
+                  ( ? [T8,E9] :
+                      ( occurred_2(S12,E9,X1)
+                      & is_when_2(S12,E9,T8)
+                      & is_before_2(S12,E9,e0)
+                      & is_tmp_2(S12,E6,T8) )
+                  & is_before_2(S12,E6,e0)
+                  & is_before_2(S12,E7,e0)
+                  & was_2(S12,E6,X3)
+                  & in_2(S12,E6,X2)
+                  & ? [X10] : hurt_3(S12,E7,unspecified,X10) ) )
+          & was_3(s0,E4,S5,A11) ) ) )).
+
+% ::id 3_nonfiction_GMB;p00d0030;AT1-3;NE
+% ::snt Local news reports said at least five mortar shells hit the palace compound and other mortars were fired elsewhere in Mogadishu Wednesday .
+fof(ex1414051746760,axiom,(
+    ? [X1,G2,G3,E4,E5,E6] :
+      ( palace_compound_1(s0,X1)
+      & local_news_reports_1(s0,G3)
+      & at_least_five_1(s0,G2)
+      & mortar_shells_1(s0,G2)
+      & is_before_2(s0,E4,E6)
+      & is_elsewhere_in_2(s0,E5,mogadishu)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S8] :
+          ( said_3(s0,E6,G3,S8)
+          & hit_3(S8,E4,G2,X1)
+          & ? [G7] :
+              ( mortars_1(S8,G7)
+              & fired_3(S8,E5,unspecified,G7)
+              & tmp_2(S8,E5,wednesday) ) ) ) )).
+
+% ::id 4_nonfiction_GMB;p00d0030;AT1-4;NE
+% ::snt The attacks occurred after the government said it will go ahead with a reconciliation conference to which more than 1,300 Somali elders , warlords and politicians are invited .
+fof(ex1414051747129,axiom,(
+    ? [X1,G2,X5,E3,E4] :
+      ( government_1(s0,X1)
+      & attacks_1(s0,G2)
+      & choose1(X5,X1)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & ? [S15] :
+          ( said_3(s0,E3,X1,S15)
+          & ? [X6,G7,G8,S11,E9,E10] :
+              ( invited_3(S15,E9,unspecified,G8)
+              & to_2(S15,E9,X6)
+              & reconciliation_conference_1(S15,X6)
+              & more_than_1_300_1(S15,G8)
+              & somali_1(S15,G8)
+              & ? [G12] :
+                  ( elders_1(S15,G12)
+                  & is_of_2(S15,G12,G7) )
+              & ? [G13] :
+                  ( warlords_1(S15,G13)
+                  & is_of_2(S15,G13,G7) )
+              & ? [G14] :
+                  ( politicians_1(S15,G14)
+                  & is_of_2(S15,G14,G7) )
+              & G8 = G7
+              & ahead_1(S15,S11)
+              & ? [S16] :
+                  ( fact_2(S15,S11,S16)
+                  & go_2(S16,E10,X5)
+                  & with_2(S16,E10,X6) ) ) )
+      & occurred_2(s0,E4,G2) ) )).
+
+% ::id 5_nonfiction_GMB;p00d0060;AT2-1;NE
+% ::snt Pakistani officials say unidentified gunmen have killed three people , including a former government minister , in a semi-autonomous tribal region bordering Afghanistan .
+fof(ex1414051747478,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,E8,E9] :
+      ( former_1(s0,X1)
+      & government_minister_1(s0,X1)
+      & semi_autonomous_1(s0,X2)
+      & bordering_3(s0,E7,X2,afghanistan)
+      & tribal_region_1(s0,X2)
+      & pakistani_1(s0,G5)
+      & officials_1(s0,G5)
+      & unidentified_1(s0,G4)
+      & gunmen_1(s0,G4)
+      & three_1(s0,G3)
+      & people_1(s0,G3)
+      & ? [S10] :
+          ( say_3(s0,E9,G5,S10)
+          & including_2(S10,E6,G3)
+          & link_2(S10,E6,X1)
+          & have_killed_3(S10,E8,G4,G3)
+          & in_2(S10,E8,X2) ) ) )).
+
+% ::id 6_nonfiction_GMB;p00d0060;AT2-2;NE
+% ::snt The officials say prominent tribal leader Malik Faridullah Khan was traveling in South Waziristan Sunday when his vehicle was ambushed in the Kani Wam area .
+fof(ex1414051747827,axiom,(
+    ? [X1,G2,X8,X3,X4,E5,E6,E7] :
+      ( kani_wam_area_1(s0,X1)
+      & officials_1(s0,G2)
+      & prominent_1(s0,X3)
+      & tribal_leader_1(s0,X3)
+      & choose3(X8,malik_faridullah_khan,south_waziristan,X3)
+      & is_vehicle_of_2(s0,X4,X8)
+      & malik_faridullah_khan = X3
+      & is_before_2(s0,E5,E7)
+      & is_before_2(s0,E6,E7)
+      & ? [S9] :
+          ( say_3(s0,E7,G2,S9)
+          & ambushed_3(S9,E5,unspecified,X4)
+          & in_2(S9,E5,X1)
+          & was_traveling_2(S9,E6,malik_faridullah_khan)
+          & in_2(S9,E6,south_waziristan)
+          & tmp_2(S9,E6,sunday) ) ) )).
+
+% ::id 7_nonfiction_GMB;p00d0060;AT2-3;NE
+% ::snt His driver and a tribal elder were also killed .
+fof(ex1414051748157,axiom,(
+    ? [G1,E2] :
+      ( ? [X4,X3] :
+          ( is_driver_of_2(s0,X3,X4)
+          & is_of_2(s0,X3,G1) )
+      & ? [X5] :
+          ( tribal_1(s0,X5)
+          & elder_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & is_before_2(s0,E2,e0)
+      & also_killed_3(s0,E2,unspecified,G1) ) )).
+
+% ::id 8_nonfiction_GMB;p00d0060;AT2-4;NE
+% ::snt No one has claimed responsibility for the killings .
+fof(ex1414051748482,axiom,(
+    ? [G1] :
+      ( killings_1(s0,G1)
+      & ? [X2,X3,E4] :
+          ( is_responsibility_for_2(s0,X2,G1)
+          & has_claimed_3(s0,E4,X3,X2) ) ) )).
+
+% ::id 9_nonfiction_GMB;p00d0060;AT2-5;NE
+% ::snt The ambush came a day after a commander of Pakistani troops said the army has almost completely eliminated militants in South Waziristan .
+fof(ex1414051748827,axiom,(
+    ? [X1,X2,X3,G4,G5,T6,E7,E8,E9,S10] :
+      ( ambush_1(s0,X2)
+      & army_1(s0,X1)
+      & is_commander_of_2(s0,X3,G4)
+      & pakistani_1(s0,G4)
+      & troops_1(s0,G4)
+      & militants_1(s0,G5)
+      & is_day_after_2(s0,T6,S10)
+      & almost_completely_1(s0,E7)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & ? [S12] :
+              ( said_3(S11,E8,X3,S12)
+              & has_eliminated_3(S12,E7,X1,G5)
+              & in_2(S12,E7,south_waziristan) ) )
+      & came_2(s0,E9,X2)
+      & tmp_2(s0,E9,T6) ) )).
+
+% ::id 10_nonfiction_GMB;p00d0060;AT2-6;NE
+% ::snt The area became a refuge for many al-Qaida and Taleban fighters after the Taleban government was ousted in Afghanistan in 2001 .
+fof(ex1414051749189,axiom,(
+    ? [X1,X2,T3,X4,E5,E6] :
+      ( area_1(s0,X2)
+      & taleban_1(s0,X1)
+      & government_1(s0,X1)
+      & predicate__2001_1(s0,T3)
+      & ? [G7,G8] :
+          ( ? [G9] :
+              ( al_qaida_1(s0,G9)
+              & fighters_1(s0,G9)
+              & is_of_2(s0,G9,G8) )
+          & ? [G10] :
+              ( taleban_1(s0,G10)
+              & fighters_1(s0,G10)
+              & is_of_2(s0,G10,G8) )
+          & G7 = G8
+          & is_refuge_for_2(s0,X4,G7) )
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ousted_3(s0,E5,unspecified,X1)
+      & in__2(s0,E5,afghanistan)
+      & in_2(s0,E5,T3)
+      & became_3(s0,E6,X2,X4) ) )).
+
+% ::id 11_nonfiction_GMB;p00d0086;AT3-1;NE
+% ::snt U.S. Army officials said Wednesday that they will not renew a controversial multi-billion dollar contract with the Halliburton company to provide logistical support to U.S. troops in Iraq and elsewhere .
+fof(ex1414051749540,axiom,(
+    ? [X1,X2,G9,G3,G4,G5,G6,E7,E8] :
+      ( halliburton_company_1(s0,X1)
+      & logistical_1(s0,X2)
+      & is_support_to_2(s0,X2,G4)
+      & u_s_army_officials_1(s0,G6)
+      & choose1(G9,G6)
+      & is_of_2(s0,iraq,G3)
+      & ? [X10] :
+          ( elsewhere_1(s0,X10)
+          & is_of_2(s0,X10,G3) )
+      & u_s_1(s0,G4)
+      & is_troops_in_2(s0,G4,G3)
+      & multi_billion_dollar_1(s0,G5)
+      & controversial_1(s0,G5)
+      & is_contract_with_2(s0,G5,X1)
+      & is_before_2(s0,E8,e0)
+      & ? [S13] :
+          ( said_3(s0,E8,G6,S13)
+          & ? [E11] : renew_3(S13,E11,G9,G5) )
+      & tmp_2(s0,E8,wednesday) ) )).
+
+% ::id 12_nonfiction_GMB;p00d0086;AT3-2;NE
+% ::snt Halliburton has been providing a long list of services , from meals to communication , for the military for several years .
+fof(ex1414051749877,axiom,(
+    ? [X1,X2,X3,G4,G5] :
+      ( military_1(s0,X1)
+      & communication_1(s0,X2)
+      & long_1(s0,X3)
+      & is_list_of_2(s0,X3,G5)
+      & meals_1(s0,G4)
+      & is_services_to_2(s0,G5,X2)
+      & is_services_from_2(s0,G5,G4)
+      & ? [T6] :
+          ( years_1(s0,T6)
+          & ? [E7] :
+              ( has_been_providing_3(s0,E7,halliburton,X3)
+              & for__2(s0,E7,X1)
+              & for_2(s0,E7,T6) ) ) ) )).
+
+% ::id 13_nonfiction_GMB;p00d0086;AT3-3;NE
+% ::snt Critics of Halliburton include auditors and congressional Democrats .
+fof(ex1414051750204,axiom,(
+    ? [G1,G2,E3] :
+      ( is_critics_of_2(s0,G2,halliburton)
+      & ? [G4] :
+          ( auditors_1(s0,G4)
+          & is_of_2(s0,G4,G1) )
+      & ? [G5] :
+          ( congressional_1(s0,G5)
+          & democrats_1(s0,G5)
+          & is_of_2(s0,G5,G1) )
+      & include_3(s0,E3,G2,G1) ) )).
+
+% ::id 14_nonfiction_GMB;p00d0086;AT3-4;NE
+% ::snt They say the company has produced some shoddy work and charges too much money .
+fof(ex1414051750537,axiom,(
+    ? [X1,X2,G7,G3,E4,E5,E6] :
+      ( company_1(s0,X1)
+      & shoddy_1(s0,X2)
+      & work_1(s0,X2)
+      & too_much_1(s0,G3)
+      & money_1(s0,G3)
+      & ? [S8] :
+          ( say_3(s0,E6,G7,S8)
+          & has_produced_3(S8,E4,X1,X2)
+          & charges_3(S8,E5,X1,G3) ) ) )).
+
+% ::id 15_nonfiction_GMB;p00d0086;AT3-5;NE
+% ::snt The company strongly denies the allegations .
+fof(ex1414051750861,axiom,(
+    ? [X1,G2,E3] :
+      ( company_1(s0,X1)
+      & allegations_1(s0,G2)
+      & strongly_1(s0,E3)
+      & denies_3(s0,E3,X1,G2) ) )).
+
+% ::id 16_nonfiction_GMB;p00d0086;AT3-6;NE
+% ::snt When the huge contract is put out for re-bidding , several companies will get a chance to compete for portions of the work .
+fof(ex1414051751201,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( huge_1(s0,X1)
+      & contract_1(s0,X1)
+      & work_1(s0,X2)
+      & re_bidding_1(s0,X3)
+      & put_out_3(s0,E4,unspecified,X1)
+      & for_2(s0,E4,X3)
+      & ? [G5] :
+          ( companies_1(s0,G5)
+          & ? [X6,G7,E8,E9] :
+              ( ? [S10] :
+                  ( chance_2(s0,X6,S10)
+                  & compete_1(S10,E8)
+                  & for_2(S10,E8,G7) )
+              & is_portions_of_2(s0,G7,X2)
+              & get_3(s0,E9,G5,X6) ) ) ) )).
+
+% ::id 17_nonfiction_GMB;p00d0100;AT4-1;NE
+% ::snt Indonesian police have arrested three men in connection with the October 1 Bali bombings that left 23 people dead .
+fof(ex1414051751547,axiom,(
+    ? [G1,G2,A9,E3,E4,X5,G6,G7,E8] :
+      ( predicate__23_1(s0,G1)
+      & people_1(s0,G1)
+      & bali_1(s0,G2)
+      & ? [S10] :
+          ( left_3(s0,E4,G2,S10)
+          & is_3(S10,E3,G1,A9) )
+      & is_bombings_tmp_2(s0,G2,october)
+      & dead_1(s0,A9)
+      & predicate__1_1(s0,october)
+      & is_before_2(s0,E4,e0)
+      & is_connection_with_2(s0,X5,G2)
+      & indonesian_1(s0,G7)
+      & police_1(s0,G7)
+      & three_1(s0,G6)
+      & men_1(s0,G6)
+      & have_arrested_3(s0,E8,G7,G6)
+      & in_2(s0,E8,X5) ) )).
+
+% ::id 18_nonfiction_GMB;p00d0100;AT4-2;NE
+% ::snt Indonesian police said Wednesday the men were flown to Bali from neighboring Java island for questioning at Bali police headquarters .
+fof(ex1414051751889,axiom,(
+    ? [G1,X2,X3,G4,E5,E6,E7] :
+      ( men_1(s0,G1)
+      & neighboring_1(s0,X3)
+      & java_island_1(s0,X3)
+      & bali_police_headquarters_1(s0,X2)
+      & indonesian_1(s0,G4)
+      & police_1(s0,G4)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S8] :
+          ( said_3(s0,E7,G4,S8)
+          & questioning_2(S8,E5,G1)
+          & at_2(S8,E5,X2)
+          & flown_3(S8,E6,unspecified,G1)
+          & to_2(S8,E6,bali)
+          & from_2(S8,E6,X3) )
+      & tmp_2(s0,E7,wednesday) ) )).
+
+% ::id 19_nonfiction_GMB;p00d0100;AT4-3;NE
+% ::snt Australian and French news agencies say at least one of the men arrested -LRB- Cholily -RRB- was captured during a series of counter-terrorism raids last week in Indonesia .
+fof(ex1414051752242,axiom,(
+    ? [G1,E2,X3,G4,G5,G6,T7,E8,E9] :
+      ( arrested_3(s0,E2,unspecified,G1)
+      & men_1(s0,G1)
+      & is_series_of_2(s0,X3,G4)
+      & ? [G10] :
+          ( australian_1(s0,G10)
+          & news_agencies_1(s0,G10)
+          & is_of_2(s0,G10,G6) )
+      & ? [G11] :
+          ( french_1(s0,G11)
+          & news_agencies_1(s0,G11)
+          & is_of_2(s0,G11,G6) )
+      & at_least_one_1(s0,G5)
+      & is_of_2(s0,G5,G1)
+      & G5 = cholily
+      & counter_terrorism_raids_1(s0,G4)
+      & last_1(s0,T7)
+      & week_1(s0,T7)
+      & is_before_2(s0,E8,E9)
+      & ? [S12] :
+          ( say_3(s0,E9,G6,S12)
+          & captured_3(S12,E8,unspecified,G5)
+          & during_2(S12,E8,X3)
+          & tmp_2(S12,E8,T7)
+          & in_2(S12,E8,indonesia) ) ) )).
+
+% ::id 20_nonfiction_GMB;p00d0100;AT4-4;NE
+% ::snt The raids ended with the death of alleged extremist bombmaker Azahari bin Husin .
+fof(ex1414051752574,axiom,(
+    ? [X1,G2,E3] :
+      ( is_death_of_2(s0,X1,azahari_bin_husin)
+      & raids_1(s0,G2)
+      & ? [X4] :
+          ( extremist_bombmaker_1(s0,X4)
+          & azahari_bin_husin = X4 )
+      & is_before_2(s0,E3,e0)
+      & ended_2(s0,E3,G2)
+      & with_2(s0,E3,X1) ) )).
+
+% ::id 21_nonfiction_GMB;p00d0100;AT4-5;NE
+% ::snt Indonesian authorities blame Azahari bin Husin for orchestrating last month's attacks in Bali as well as the 2002 Bali bombings that killed more than 200 people .
+fof(ex1414051752931,axiom,(
+    ? [G1,T2,E3,G4,G5,G6,E7,E8,S9] :
+      ( ? [X10] :
+          ( is_than_2(s0,X10,G4)
+          & killed_3(s0,E3,G1,X10) )
+      & predicate__2002_bali_bombings_1(s0,G1)
+      & last_1(s0,T2)
+      & month_1(s0,T2)
+      & is_before_2(s0,E3,e0)
+      & indonesian_1(s0,G6)
+      & authorities_1(s0,G6)
+      & predicate__200_1(s0,G4)
+      & people_1(s0,G4)
+      & is_as_well_as_2(s0,G5,G1)
+      & is_attacks_in_2(s0,G5,bali)
+      & is_attacks_of_2(s0,G5,T2)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & orchestrating_3(S11,E7,azahari_bin_husin,G5) )
+      & blame_3(s0,E8,G6,azahari_bin_husin)
+      & for_2(s0,E8,S9) ) )).
+
+% ::id 22_nonfiction_GMB;p00d0184;AT5-1;NE
+% ::snt The American Diabetes Association reports the disease is the leading cause of new cases of blindness among adults .
+fof(ex1414051753274,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7] :
+      ( disease_1(s0,X3)
+      & blindness_1(s0,X1)
+      & leading_1(s0,X2)
+      & is_cause_of_2(s0,X2,G5)
+      & adults_1(s0,G4)
+      & new_1(s0,G5)
+      & is_cases_among_2(s0,G5,G4)
+      & is_cases_of_2(s0,G5,X1)
+      & ? [S8] :
+          ( reports_3(s0,E7,american_diabetes_association,S8)
+          & is_3(S8,E6,X3,X2) ) ) )).
+
+% ::id 23_nonfiction_GMB;p00d0184;AT5-2;NE
+% ::snt It is the leading cause of kidney failure .
+fof(ex1414051753599,axiom,(
+    ? [X1,X2,X4,E3] :
+      ( kidney_failure_1(s0,X1)
+      & leading_1(s0,X2)
+      & is_cause_of_2(s0,X2,X1)
+      & is_3(s0,E3,X4,X2) ) )).
+
+% ::id 24_nonfiction_GMB;p00d0184;AT5-3;NE
+% ::snt The rate of amputation is 10 times higher among those who suffer from the disease .
+fof(ex1414051753939,axiom,(
+    ? [X1,X2,X3,X4,E5,A8,T6,E7] :
+      ( amputation_1(s0,X1)
+      & is_rate_of_2(s0,X4,X1)
+      & disease_1(s0,X2)
+      & suffer_2(s0,E5,X3)
+      & from_2(s0,E5,X2)
+      & is_higher_among_2(s0,A8,X3)
+      & is_higher_tmp_2(s0,A8,T6)
+      & predicate__10_1(s0,T6)
+      & times_1(s0,T6)
+      & is_3(s0,E7,X4,A8) ) )).
+
+% ::id 25_nonfiction_GMB;p00d0184;AT5-4;NE
+% ::snt Experts say those who learn how to manage the disease early , can live healthier and more normal lives .
+fof(ex1414051754294,axiom,(
+    ? [X1,X2,E3,E4,G5,E6] :
+      ( disease_1(s0,X1)
+      & ? [S10] :
+          ( learn_3(s0,E4,X2,S10)
+          & ? [X7] : manage_3(S10,E3,X2,X1) )
+      & is_how_2(s0,E3)
+      & early_1(s0,E3)
+      & experts_1(s0,G5)
+      & ? [S11] :
+          ( say_3(s0,E6,G5,S11)
+          & ? [G8,E9] :
+              ( healthier_1(S11,G8)
+              & more_normal_1(S11,G8)
+              & lives_1(S11,G8)
+              & live_3(S11,E9,X2,G8) ) ) ) )).
+
+% ::id 26_nonfiction_GMB;p00d0184;AT5-5;NE
+% ::snt VOA's June Soh found camps that provide children with this chronic disease a positive approach to living with diabetes while letting them just be kids .
+fof(ex1414051754655,axiom,(
+    ? [X1,X2,X3,G13,G4,G5,G6,E7,E8,E9,E10,E11,S12] :
+      ( chronic_1(s0,X1)
+      & disease_1(s0,X1)
+      & diabetes_1(s0,X2)
+      & positive_1(s0,X3)
+      & is_approach_to_2(s0,X3,S12)
+      & is_of_2(s0,june_soh,voa_)
+      & is_children_with_2(s0,G5,X1)
+      & choose2(G13,G5,G6)
+      & kids_1(s0,G4)
+      & ? [S14] :
+          ( letting_3(s0,E9,G5,S14)
+          & be_3(S14,E8,G13,G4) )
+      & provide_4(s0,E10,G6,X3,G5)
+      & camps_1(s0,G6)
+      & just_1(s0,E8)
+      & is_before_2(s0,E11,e0)
+      & ? [S15] :
+          ( fact_2(s0,S12,S15)
+          & living_1(S15,E7)
+          & with_2(S15,E7,X2) )
+      & found_3(s0,E11,june_soh,G6) ) )).
+
+% ::id 27_nonfiction_GMB;p00d0184;AT5-6;NE
+% ::snt Amy Katz Narrates .
+fof(ex1414051754977,axiom,(
+    ? [E1] : narrates_2(s0,E1,amy_katz) )).
+
+% ::id 28_nonfiction_GMB;p00d0190;AT6-1;NE
+% ::snt U.S. automaker Chrysler has opened a $570 million engine plant in northern Mexico .
+fof(ex1414051755303,axiom,(
+    ? [X1,G2,E3] :
+      ( u_s_1(s0,X1)
+      & automaker_1(s0,X1)
+      & chrysler = X1
+      & predicate____dollar__570_million_1(s0,G2)
+      & engine_plant_1(s0,G2)
+      & has_opened_3(s0,E3,chrysler,G2)
+      & in_2(s0,E3,northern_mexico) ) )).
+
+% ::id 29_nonfiction_GMB;p00d0190;AT6-2;NE
+% ::snt During the ceremonial startup of the Saltillo plant Friday , Mexican President Felipe Calderon said Chrysler's sixth plant in Mexico will create 700 jobs .
+fof(ex1414051755649,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( saltillo_plant_1(s0,X1)
+      & ceremonial_1(s0,X2)
+      & is_startup_of_2(s0,X2,X1)
+      & mexican_1(s0,X3)
+      & president_1(s0,X3)
+      & sixth_1(s0,X4)
+      & is_plant_in_2(s0,X4,mexico)
+      & is_plant_of_2(s0,X4,chrysler)
+      & felipe_calderon = X3
+      & is_before_2(s0,E5,e0)
+      & ? [S8] :
+          ( said_3(s0,E5,felipe_calderon,S8)
+          & ? [G6,E7] :
+              ( predicate__700_1(S8,G6)
+              & jobs_1(S8,G6)
+              & create_3(S8,E7,X4,G6) ) )
+      & during_2(s0,E5,X2)
+      & tmp_2(s0,E5,friday) ) )).
+
+% ::id 30_nonfiction_GMB;p00d0190;AT6-3;NE
+% ::snt Mr. Calderon said Mexico has become a worldwide leader in the auto industry .
+fof(ex1414051757123,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( auto_industry_1(s0,X1)
+      & worldwide_1(s0,X2)
+      & is_leader_in_2(s0,X2,X1)
+      & is_before_2(s0,E4,e0)
+      & ? [S5] :
+          ( said_3(s0,E4,mr_calderon,S5)
+          & has_become_3(S5,E3,mexico,X2) ) ) )).
+
+% ::id 31_nonfiction_GMB;p00d0190;AT6-4;NE
+% ::snt Chrysler plans to build its new fuel-efficient Pentastar V-6 engine for Chrysler , Dodge , Jeep and Ram vehicles .
+fof(ex1414051757459,axiom,(
+    ? [X6,X1,G2,G3,E4,E5] :
+      ( choose1(X6,chrysler)
+      & new_1(s0,X1)
+      & is_fuel_efficient_pentastar_v_6_engine_for_2(s0,X1,G3)
+      & is_fuel_efficient_pentastar_v_6_engine_of_2(s0,X1,X6)
+      & vehicles_1(s0,G3)
+      & is_of_2(s0,chrysler,G2)
+      & is_of_2(s0,dodge,G2)
+      & is_of_2(s0,jeep,G2)
+      & is_of_2(s0,ram,G2)
+      & G3 = G2
+      & ? [S7] :
+          ( plans_3(s0,E5,chrysler,S7)
+          & build_3(S7,E4,chrysler,X1) ) ) )).
+
+% ::id 32_nonfiction_GMB;p00d0190;AT6-5;NE
+% ::snt Mexican officials say the new plant will have the capacity to build 440,000 engines per year .
+fof(ex1414051757801,axiom,(
+    ? [X1,X2,G3,T4,E5,G6,E7] :
+      ( new_1(s0,X2)
+      & plant_1(s0,X2)
+      & ? [S9] :
+          ( capacity_2(s0,X1,S9)
+          & build_3(S9,E5,unspecified,G3)
+          & per_2(S9,E5,T4) )
+      & predicate__440_000_1(s0,G3)
+      & engines_1(s0,G3)
+      & year_1(s0,T4)
+      & mexican_1(s0,G6)
+      & officials_1(s0,G6)
+      & ? [S10] :
+          ( say_3(s0,E7,G6,S10)
+          & ? [E8] : have_3(S10,E8,X2,X1) ) ) )).
+
+% ::id 33_nonfiction_GMB;p00d0215;AT7-1;NE
+% ::snt The United Nations says December's Indian Ocean tsunami caused around $520 million in damage to fishing industries in seven of the worst hit countries .
+fof(ex1414051758145,axiom,(
+    ? [G1,X2,X3,G4,G5,G6,E7,E8] :
+      ( worst_hit_1(s0,G1)
+      & countries_1(s0,G1)
+      & is_indian_ocean_tsunami_of_2(s0,X3,december)
+      & is_damage_to_2(s0,X2,G5)
+      & seven_1(s0,G4)
+      & is_of_2(s0,G4,G1)
+      & is_fishing_industries_in_2(s0,G5,G4)
+      & around___dollar__520_million_1(s0,G6)
+      & is_in_2(s0,G6,X2)
+      & is_before_2(s0,E7,E8)
+      & ? [S9] :
+          ( says_3(s0,E8,united_nations,S9)
+          & caused_3(S9,E7,X3,G6) ) ) )).
+
+% ::id 34_nonfiction_GMB;p00d0215;AT7-2;NE
+% ::snt The U.N.'s Food and Agricultural Organization -LRB- FAO -RRB- said the tsunami destroyed or damaged more than 111,000 fishing vessels in the region .
+fof(ex1414051758486,axiom,(
+    ? [X1,X2,G3,E4,E5,E6] :
+      ( tsunami_1(s0,X2)
+      & region_1(s0,X1)
+      & is_of_2(s0,food_and_agricultural_organization,u_n_)
+      & food_and_agricultural_organization = fao_
+      & more_than_111_000_1(s0,G3)
+      & fishing_vessels_1(s0,G3)
+      & is_before_2(s0,E4,E6)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S7] :
+          ( said_3(s0,E6,food_and_agricultural_organization,S7)
+          & destroyed_2(S7,E4,X2)
+          & damaged_3(S7,E5,X2,G3)
+          & in_2(S7,E5,X1) ) ) )).
+
+% ::id 35_nonfiction_GMB;p00d0215;AT7-3;NE
+% ::snt It said the loss was significant in a region where fishing provides a vital source of food .
+fof(ex1414051758832,axiom,(
+    ? [X1,X9,X2,X3,X4,X5,A10,E6,E7,E8] :
+      ( loss_1(s0,X1)
+      & fishing_1(s0,X4)
+      & food_1(s0,X2)
+      & vital_1(s0,X3)
+      & is_source_of_2(s0,X3,X2)
+      & provides_3(s0,E6,X4,X3)
+      & region_1(s0,X5)
+      & is_significant_in_2(s0,A10,X5)
+      & is_where_2(s0,E6,X5)
+      & is_before_2(s0,E7,E8)
+      & is_before_2(s0,E8,e0)
+      & ? [S11] :
+          ( said_3(s0,E8,X9,S11)
+          & was_3(S11,E7,X1,A10) ) ) )).
+
+% ::id 36_nonfiction_GMB;p00d0215;AT7-4;NE
+% ::snt The FAO's estimate includes damage to fishing industries in Indonesia , Maldives , Somalia , Sri Lanka and Thailand .
+fof(ex1414051759168,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( is_estimate_of_2(s0,X2,fao_)
+      & is_damage_to_2(s0,X1,G4)
+      & is_of_2(s0,indonesia,G3)
+      & is_of_2(s0,maldives,G3)
+      & is_of_2(s0,somalia,G3)
+      & is_of_2(s0,sri_lanka,G3)
+      & is_of_2(s0,thailand,G3)
+      & is_fishing_industries_in_2(s0,G4,G3)
+      & includes_3(s0,E5,X2,X1) ) )).
+
+% ::id 37_nonfiction_GMB;p00d0215;AT7-5;NE
+% ::snt The agency says it has sent experts to help rebuild fishing industry infrastructure lost in the disaster and is developing strategies for long-term recovery in the region .
+fof(ex1414051759521,axiom,(
+    ? [X1,X2,X3,X14,X4,X5,G6,G7,E8,E9,E10,E11,E12,E13] :
+      ( agency_1(s0,X3)
+      & disaster_1(s0,X1)
+      & region_1(s0,X2)
+      & choose1(X14,X3)
+      & lost_3(s0,E8,unspecified,X4)
+      & in_2(s0,E8,X1)
+      & fishing_industry_infrastructure_1(s0,X4)
+      & long_term_1(s0,X5)
+      & is_recovery_in_2(s0,X5,X2)
+      & experts_1(s0,G6)
+      & is_strategies_for_2(s0,G7,X5)
+      & ? [S15] :
+          ( says_3(s0,E13,X3,S15)
+          & ? [S16] :
+              ( has_sent_4(S15,E11,X14,G6,S16)
+              & ? [S17] :
+                  ( help_3(S16,E10,G6,S17)
+                  & rebuild_3(S17,E9,G6,X4) ) )
+          & is_developing_3(S15,E12,X14,G7) ) ) )).
+
+% ::id 38_nonfiction_GMB;p00d0252;AT8-1;NE
+% ::snt China's giant pandas have been on endangered species lists for nearly 30 years .
+fof(ex1414051759866,axiom,(
+    ? [G1,T2,E3] :
+      ( giant_1(s0,G1)
+      & is_pandas_of_2(s0,G1,china)
+      & nearly_30_1(s0,T2)
+      & years_1(s0,T2)
+      & ? [G4] :
+          ( species_lists_1(s0,G4)
+          & have_been_2(s0,E3,G1)
+          & on_2(s0,E3,G4)
+          & for_2(s0,E3,T2) ) ) )).
+
+% ::id 39_nonfiction_GMB;p00d0252;AT8-2;NE
+% ::snt There are only about 1,600 pandas still living in the wild in China .
+fof(ex1414051760193,axiom,(
+    ? [X1,G2] :
+      ( wild_1(s0,X1)
+      & about_1_600_1(s0,G2)
+      & pandas_1(s0,G2)
+      & ? [G3] :
+          ( is_of_2(s0,G3,G2)
+          & ? [E4] :
+              ( still_1(s0,E4)
+              & are_living_2(s0,E4,G3)
+              & in__2(s0,E4,X1)
+              & in_2(s0,E4,china) ) ) ) )).
+
+% ::id 40_nonfiction_GMB;p00d0252;AT8-3;NE
+% ::snt One of the 2008 Olympic mascots is modeled on a panda called Jing Jing .
+fof(ex1414051760526,axiom,(
+    ? [G1,X2,X3,E4,E5] :
+      ( predicate__2008_olympic_mascots_1(s0,G1)
+      & is_one_of_2(s0,X3,G1)
+      & called_3(s0,E4,X2,jing_jing)
+      & panda_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & modeled_3(s0,E5,unspecified,X3)
+      & on_2(s0,E5,X2) ) )).
+
+% ::id 41_nonfiction_GMB;p00d0252;AT8-4;NE
+% ::snt Conservationists hope she will help draw attention to the threats facing the giant panda -- one of China's national symbols .
+fof(ex1414051760874,axiom,(
+    ? [X1,X2,G3,G4,E5,X8,G6,E7] :
+      ( giant_1(s0,X2)
+      & panda_1(s0,X2)
+      & is_one_of_2(s0,X1,G3)
+      & national_1(s0,G3)
+      & is_symbols_of_2(s0,G3,china)
+      & X2 = X1
+      & facing_3(s0,E5,G4,X2)
+      & threats_1(s0,G4)
+      & conservationists_1(s0,G6)
+      & ? [S12] :
+          ( hope_3(s0,E7,G6,S12)
+          & ? [X9,E10,E11] :
+              ( is_attention_to_2(S12,X9,G4)
+              & ? [S13] :
+                  ( help_3(S12,E11,X8,S13)
+                  & draw_3(S13,E10,X8,X9) ) ) ) ) )).
+
+% ::id 42_nonfiction_GMB;p00d0252;AT8-5;NE
+% ::snt Sam Beattie reports from Jing Jing's home in Sichuan province .
+fof(ex1414051761201,axiom,(
+    ? [X1,X2,E3] :
+      ( sichuan_1(s0,X1)
+      & province_1(s0,X1)
+      & is_home_in_2(s0,X2,X1)
+      & is_home_of_2(s0,X2,jing_jing)
+      & reports_2(s0,E3,sam_beattie)
+      & from_2(s0,E3,X2) ) )).
+
+% ::id 43_nonfiction_GMB;p00d0255;AT9-1;NE
+% ::snt British defense officials say 14 British military personnel have been killed in a crash of a NATO aircraft in southern Afghanistan .
+fof(ex1414051761539,axiom,(
+    ? [X1,G2,G3,G4,E5,E6] :
+      ( is_crash_of_2(s0,X1,G2)
+      & british_defense_officials_1(s0,G4)
+      & predicate__14_1(s0,G3)
+      & british_military_personnel_1(s0,G3)
+      & nato__1(s0,G2)
+      & aircraft_1(s0,G2)
+      & ? [S7] :
+          ( say_3(s0,E6,G4,S7)
+          & have_killed_3(S7,E5,unspecified,G3)
+          & in__2(S7,E5,X1)
+          & in_2(S7,E5,southern_afghanistan) ) ) )).
+
+% ::id 44_nonfiction_GMB;p00d0255;AT9-2;NE
+% ::snt A NATO spokesman says the aircraft went off the radar and crashed in an open area near Kandahar Saturday .
+fof(ex1414051761880,axiom,(
+    ? [X1,X2,X3,X4,E5,E6,E7] :
+      ( aircraft_1(s0,X2)
+      & radar_1(s0,X1)
+      & nato__1(s0,X4)
+      & spokesman_1(s0,X4)
+      & open_1(s0,X3)
+      & is_near_of_2(s0,X3,kandahar)
+      & area_1(s0,X3)
+      & is_before_2(s0,E5,E7)
+      & is_before_2(s0,E6,E7)
+      & ? [S8] :
+          ( says_3(s0,E7,X4,S8)
+          & went_2(S8,E5,X2)
+          & off_2(S8,E5,X1)
+          & tmp_2(S8,E5,saturday)
+          & crashed_2(S8,E6,X2)
+          & in_2(S8,E6,X3)
+          & tmp_2(S8,E6,saturday) ) ) )).
+
+% ::id 45_nonfiction_GMB;p00d0255;AT9-3;NE
+% ::snt Officials say the aircraft was supporting a NATO mission in the country's south , but there is no indication of enemy action causing the crash .
+fof(ex1414051762227,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,E7,E8] :
+      ( aircraft_1(s0,X2)
+      & country_1(s0,X1)
+      & crash_1(s0,X3)
+      & nato__1(s0,X5)
+      & mission_1(s0,X5)
+      & is_south_of_2(s0,X4,X1)
+      & officials_1(s0,G6)
+      & is_before_2(s0,E7,E8)
+      & ? [S13] :
+          ( say_3(s0,E8,G6,S13)
+          & was_supporting_3(S13,E7,X2,X5)
+          & in_2(S13,E7,X4) )
+      & ? [X9,X10,E11,E12] :
+          ( causing_3(s0,E11,X9,X3)
+          & enemy_action_1(s0,X9)
+          & is_indication_of_2(s0,X10,X9)
+          & is_2(s0,E12,X10) ) ) )).
+
+% ::id 46_nonfiction_GMB;p00d0255;AT9-4;NE
+% ::snt The crash comes as NATO forces launched an offensive to drive Taleban remnants out of Kandahar .
+fof(ex1414051762594,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7] :
+      ( crash_1(s0,X1)
+      & ? [S8] :
+          ( offensive_2(s0,X2,S8)
+          & drive_out_3(S8,E5,unspecified,G3)
+          & of_2(S8,E5,kandahar) )
+      & nato__1(s0,G4)
+      & forces_1(s0,G4)
+      & taleban_1(s0,G3)
+      & remnants_1(s0,G3)
+      & is_before_2(s0,E6,e0)
+      & launched_3(s0,E6,G4,X2)
+      & comes_2(s0,E7,X1) ) )).
+
+% ::id 47_nonfiction_GMB;p00d0255;AT9-5;NE
+% ::snt Officials say " Operation Medusa " is aimed at removing the Taleban threat so that stability , reconstruction and development can be achieved in the area .
+fof(ex1414051762948,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7,S9,S8] :
+      ( taleban_1(s0,X2)
+      & threat_1(s0,X2)
+      & area_1(s0,X1)
+      & officials_1(s0,G4)
+      & ? [X10] :
+          ( stability_1(s0,X10)
+          & is_of_2(s0,X10,G3) )
+      & ? [X11] :
+          ( reconstruction_1(s0,X11)
+          & is_of_2(s0,X11,G3) )
+      & ? [X12] :
+          ( development_1(s0,X12)
+          & is_of_2(s0,X12,G3) )
+      & ? [S14] :
+          ( fact_2(s0,S9,S14)
+          & ? [E13] :
+              ( achieved_3(S14,E13,unspecified,G3)
+              & in_2(S14,E13,X1) ) )
+      & ? [S15] :
+          ( fact_2(s0,S8,S15)
+          & removing_3(S15,E5,operation_medusa,X2)
+          & so_2(S15,E5,S9) )
+      & ? [S16] :
+          ( say_3(s0,E7,G4,S16)
+          & aimed_3(S16,E6,unspecified,operation_medusa)
+          & at_2(S16,E6,S8) ) ) )).
+
+% ::id 48_nonfiction_GMB;p00d0256;AT10-1;NE
+% ::snt Sri Lankan authorities say a prominent Tamil journalist was found shot dead Friday in Colombo , hours after he was abducted by several attackers as he left a restaurant .
+fof(ex1414051763309,axiom,(
+    ? [X13,X11,X1,X2,G3,T4,E5,E6,E7,E8,E9,S10] :
+      ( prominent_1(s0,X2)
+      & tamil_journalist_1(s0,X2)
+      & choose2(X11,X2,colombo)
+      & choose3(X13,X11,X2,colombo)
+      & restaurant_1(s0,X1)
+      & sri_lankan_authorities_1(s0,G3)
+      & is_hours_after_2(s0,T4,S10)
+      & is_before_2(s0,E6,E9)
+      & is_before_2(s0,E7,E9)
+      & is_before_2(s0,E8,E9)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & ? [G12] :
+              ( attackers_1(S14,G12)
+              & left_3(S14,E6,X13,X1)
+              & abducted_3(S14,E7,G12,X11) ) )
+      & ? [S15] :
+          ( say_3(s0,E9,G3,S15)
+          & dead_1(S15,X2)
+          & shot_3(S15,E5,unspecified,X2)
+          & tmp_2(S15,E5,friday)
+          & in_2(S15,E5,colombo)
+          & found_3(S15,E8,unspecified,X2)
+          & tmp_2(S15,E8,T4) ) ) )).
+
+% ::id 49_nonfiction_GMB;p00d0256;AT10-2;NE
+% ::snt Dharmeratnam Sivaram was a board member of the pro-rebel TamilNet Web site and a columnist for Sri Lanka's english newspaper , the Daily Mirror .
+fof(ex1414051763651,axiom,(
+    ? [X1,G2,E3] :
+      ( pro_rebel_tamilnet_web_site_1(s0,X1)
+      & ? [X4] :
+          ( is_board_member_of_2(s0,X4,X1)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5,X6] :
+          ( english_1(s0,X5)
+          & is_newspaper_of_2(s0,X5,sri_lanka)
+          & is_columnist_for_2(s0,X6,X5)
+          & X5 = daily_mirror
+          & is_of_2(s0,X6,G2) )
+      & is_before_2(s0,E3,e0)
+      & was_3(s0,E3,dharmeratnam_sivaram,G2) ) )).
+
+% ::id 50_nonfiction_GMB;p00d0256;AT10-3;NE
+% ::snt Mr. Sivaram's Web site became popular for ongoing reports on the Sri Lankan civil war and was a prominent supporter of the Tamil Tiger rebel movement .
+fof(ex1414051763996,axiom,(
+    ? [X1,X2,X3,X4,G5,A8,E6,E7] :
+      ( civil_1(s0,X1)
+      & sri_lankan_1(s0,X1)
+      & war_1(s0,X1)
+      & rebel_1(s0,X2)
+      & tamil_tiger_1(s0,X2)
+      & movement_1(s0,X2)
+      & is_web_site_of_2(s0,X4,mr_sivaram)
+      & prominent_1(s0,X3)
+      & is_supporter_of_2(s0,X3,X2)
+      & ongoing_1(s0,G5)
+      & is_reports_on_2(s0,G5,X1)
+      & popular_1(s0,A8)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & became_3(s0,E6,X4,A8)
+      & for_2(s0,E6,G5)
+      & was_3(s0,E7,X4,X3) ) )).
+
+% ::id 51_nonfiction_GMB;p00d0256;AT10-4;NE
+% ::snt Mr. Sivaram , who was also brutally attacked in 2001 , was found near a lake gagged with gunshot wounds to the head .
+fof(ex1414051764342,axiom,(
+    ? [X1,T2,X3,G4,E5,E6,E7] :
+      ( head_1(s0,X1)
+      & predicate__2001_1(s0,T2)
+      & also_attacked_3(s0,E5,unspecified,mr_sivaram)
+      & in_2(s0,E5,T2)
+      & lake_1(s0,X3)
+      & is_gunshot_wounds_to_2(s0,G4,X1)
+      & brutally_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & is_near_of_2(s0,mr_sivaram,X3)
+      & gagged_3(s0,E6,unspecified,mr_sivaram)
+      & with_2(s0,E6,G4)
+      & found_3(s0,E7,unspecified,mr_sivaram) ) )).
+
+% ::id 52_nonfiction_GMB;p00d0256;AT10-5;NE
+% ::snt No one claimed responsibility for the killing .
+fof(ex1414051764671,axiom,(
+    ? [X1] :
+      ( killing_1(s0,X1)
+      & ? [X2,X3,E4] :
+          ( is_responsibility_for_2(s0,X2,X1)
+          & is_before_2(s0,E4,e0)
+          & claimed_3(s0,E4,X3,X2) ) ) )).
+
+% ::id 53_nonfiction_GMB;p00d0262;AT11-1;NE
+% ::snt Japan and North Korea say they are considering a resumption of bilateral talks as part of efforts to normalize relations .
+fof(ex1414051765012,axiom,(
+    ? [X1,X2,G10,G3,G4,G5,G6,E7,E8,E9] :
+      ( is_resumption_of_2(s0,X2,G3)
+      & is_part_of_2(s0,X1,G5)
+      & is_of_2(s0,japan,G6)
+      & is_of_2(s0,north_korea,G6)
+      & choose1(G10,G6)
+      & bilateral_1(s0,G3)
+      & talks_1(s0,G3)
+      & relations_1(s0,G4)
+      & ? [S11] :
+          ( efforts_2(s0,G5,S11)
+          & normalize_3(S11,E7,unspecified,G4) )
+      & ? [S12] :
+          ( say_3(s0,E9,G6,S12)
+          & are_considering_3(S12,E8,G10,X2)
+          & as_2(S12,E8,X1) ) ) )).
+
+% ::id 54_nonfiction_GMB;p00d0262;AT11-2;NE
+% ::snt Japanese media reported Monday that the two countries hope to arrange to hold the talks in Beijing in early November .
+fof(ex1414051765351,axiom,(
+    ? [G1,G2,G3,E4,E5,E6,E7] :
+      ( two_1(s0,G2)
+      & countries_1(s0,G2)
+      & talks_1(s0,G1)
+      & japanese_1(s0,G3)
+      & media_1(s0,G3)
+      & is_before_2(s0,E7,e0)
+      & ? [S8] :
+          ( reported_3(s0,E7,G3,S8)
+          & ? [S9] :
+              ( hope_3(S8,E6,G2,S9)
+              & ? [S10] :
+                  ( arrange_3(S9,E5,G2,S10)
+                  & hold_3(S10,E4,G2,G1)
+                  & in__2(S10,E4,beijing)
+                  & in_2(S10,E4,early_november) ) ) )
+      & tmp_2(s0,E7,monday) ) )).
+
+% ::id 55_nonfiction_GMB;p00d0262;AT11-3;NE
+% ::snt The talks could come before six-party talks on North Korea's nuclear ambitions resume .
+fof(ex1414051765690,axiom,(
+    ? [G1] :
+      ( talks_1(s0,G1)
+      & ? [G2,G3,E4,E5] :
+          ( nuclear_1(s0,G2)
+          & is_ambitions_of_2(s0,G2,north_korea)
+          & six_party_1(s0,G3)
+          & is_talks_on_2(s0,G3,G2)
+          & resume_2(s0,E4,G3)
+          & come_2(s0,E5,G1) ) ) )).
+
+% ::id 56_nonfiction_GMB;p00d0262;AT11-4;NE
+% ::snt Japan and North Korea have not had formal bilateral talks for about a year .
+fof(ex1414051766023,axiom,(
+    ? [G1,T2] :
+      ( is_of_2(s0,japan,G1)
+      & is_of_2(s0,north_korea,G1)
+      & about_1(s0,T2)
+      & year_1(s0,T2)
+      & ? [G3,E4] :
+          ( formal_1(s0,G3)
+          & bilateral_talks_1(s0,G3)
+          & have_had_3(s0,E4,G1,G3)
+          & for_2(s0,E4,T2) ) ) )).
+
+% ::id 57_nonfiction_GMB;p00d0262;AT11-5;NE
+% ::snt Tokyo and Pyongyang are at odds over North Korea's nuclear weapons program and the North's kidnapping of Japanese citizens in the 1970s and 1980s .
+fof(ex1414051766367,axiom,(
+    ? [G1,G2,G3,E4] :
+      ( is_of_2(s0,tokyo,G3)
+      & is_of_2(s0,pyongyang,G3)
+      & ? [X5] :
+          ( nuclear_1(s0,X5)
+          & is_weapons_program_of_2(s0,X5,north_korea)
+          & is_of_2(s0,X5,G1) )
+      & ? [X6,G7,G8] :
+          ( is_kidnapping_of_2(s0,X6,G8)
+          & is_kidnapping_of__2(s0,X6,north)
+          & is_of_2(s0,constant__1970s,G7)
+          & is_of_2(s0,constant__1980s,G7)
+          & japanese_1(s0,G8)
+          & is_citizens_in_2(s0,G8,G7)
+          & is_of_2(s0,X6,G1) )
+      & is_odds_over_2(s0,G2,G1)
+      & are_2(s0,E4,G3)
+      & at_2(s0,E4,G2) ) )).
+
+% ::id 58_nonfiction_GMB;p00d0269;AT12-1;NE
+% ::snt Egypt's government and the World Health Organization say three Egyptian children have been hospitalized with the deadly form of avian flu .
+fof(ex1414051766710,axiom,(
+    ? [X1,X2,G3,G4,E5,E6] :
+      ( avian_flu_1(s0,X1)
+      & deadly_1(s0,X2)
+      & is_form_of_2(s0,X2,X1)
+      & ? [X7] :
+          ( is_government_of_2(s0,X7,egypt)
+          & is_of_2(s0,X7,G4) )
+      & is_of_2(s0,world_health_organization,G4)
+      & three_1(s0,G3)
+      & egyptian_1(s0,G3)
+      & children_1(s0,G3)
+      & ? [S8] :
+          ( say_3(s0,E6,G4,S8)
+          & have_hospitalized_3(S8,E5,unspecified,G3)
+          & with_2(S8,E5,X2) ) ) )).
+
+% ::id 59_nonfiction_GMB;p00d0269;AT12-2;NE
+% ::snt The children come from different parts of the country .
+fof(ex1414051767035,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( country_1(s0,X1)
+      & children_1(s0,G2)
+      & different_1(s0,G3)
+      & is_parts_of_2(s0,G3,X1)
+      & come_2(s0,E4,G2)
+      & from_2(s0,E4,G3) ) )).
+
+% ::id 60_nonfiction_GMB;p00d0269;AT12-3;NE
+% ::snt WHO says they are receiving treatment and are in stable condition .
+fof(ex1414051767366,axiom,(
+    ? [X1,X2,G6,E3,E4,E5] :
+      ( treatment_1(s0,X1)
+      & stable_1(s0,X2)
+      & condition_1(s0,X2)
+      & ? [S7] :
+          ( says_3(s0,E5,who_,S7)
+          & are_receiving_3(S7,E3,G6,X1)
+          & are_2(S7,E4,G6)
+          & in_2(S7,E4,X2) ) ) )).
+
+% ::id 61_nonfiction_GMB;p00d0269;AT12-4;NE
+% ::snt The organization says the children had a history of contact with dead birds .
+fof(ex1414051767701,axiom,(
+    ? [X1,G2,X3,X4,G5,E6,E7] :
+      ( organization_1(s0,X1)
+      & children_1(s0,G2)
+      & is_contact_with_2(s0,X3,G5)
+      & is_history_of_2(s0,X4,X3)
+      & dead_1(s0,G5)
+      & birds_1(s0,G5)
+      & is_before_2(s0,E6,E7)
+      & ? [S8] :
+          ( says_3(s0,E7,X1,S8)
+          & had_3(S8,E6,G2,X4) ) ) )).
+
+% ::id 62_nonfiction_GMB;p00d0269;AT12-5;NE
+% ::snt Thirty two Egyptians have contracted the H5N1 form of avian flu .
+fof(ex1414051768039,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( avian_flu_1(s0,X1)
+      & is_h5n1_form_of_2(s0,X2,X1)
+      & thirty_two_1(s0,G3)
+      & egyptians_1(s0,G3)
+      & have_contracted_3(s0,E4,G3,X2) ) )).
+
+% ::id 63_nonfiction_GMB;p00d0269;AT12-6;NE
+% ::snt Thirteen of them have died .
+fof(ex1414051768359,axiom,(
+    ? [G3,G1,E2] :
+      ( thirteen_1(s0,G1)
+      & is_of_2(s0,G1,G3)
+      & have_died_2(s0,E2,G1) ) )).
+
+% ::id 64_nonfiction_GMB;p00d0269;AT12-7;NE
+% ::snt Egypt has had the largest number of human bird flu cases outside of Asia .
+fof(ex1414051768687,axiom,(
+    ? [X1,G2,E3] :
+      ( largest_1(s0,X1)
+      & is_number_of_2(s0,X1,G2)
+      & human_1(s0,G2)
+      & is_bird_flu_cases_outside_of_2(s0,G2,asia)
+      & has_had_3(s0,E3,egypt,X1) ) )).
+
+% ::id 65_nonfiction_GMB;p00d0283;AT13-1;NE
+% ::snt Kyrgyzstan's Justice Ministry says four people , including parliament member Tynychbek Akmatbayev , have been killed at a prison near Bishkek after inmates took them hostage .
+fof(ex1414051769038,axiom,(
+    ? [X1,X2,X3,X4,G11,G5,G6,E7,E8,E9,E10] :
+      ( justice_1(s0,X4)
+      & is_ministry_of_2(s0,X4,kyrgyzstan)
+      & parliament_member_1(s0,X1)
+      & is_near_of_2(s0,X3,bishkek)
+      & prison_1(s0,X3)
+      & hostage_1(s0,X2)
+      & four_1(s0,G6)
+      & people_1(s0,G6)
+      & tynychbek_akmatbayev = X1
+      & inmates_1(s0,G5)
+      & choose1(G11,G6)
+      & is_before_2(s0,E8,E10)
+      & ? [S12] :
+          ( says_3(s0,E10,X4,S12)
+          & including_2(S12,E7,G6)
+          & link_2(S12,E7,tynychbek_akmatbayev)
+          & took_4(S12,E8,G5,X2,G11)
+          & have_killed_3(S12,E9,unspecified,G6)
+          & at_2(S12,E9,X3) ) ) )).
+
+% ::id 66_nonfiction_GMB;p00d0283;AT13-2;NE
+% ::snt Interior Minister Murat Sutalinov is at the prison to head negotiations with the inmates .
+fof(ex1414051769373,axiom,(
+    ? [X1,G2,X3,G4,E5,E6] :
+      ( prison_1(s0,X1)
+      & inmates_1(s0,G2)
+      & interior_minister_1(s0,X3)
+      & murat_sutalinov = X3
+      & is_negotiations_with_2(s0,G4,G2)
+      & ? [S7] :
+          ( is_3(s0,E6,murat_sutalinov,S7)
+          & head_3(S7,E5,murat_sutalinov,G4) )
+      & at_2(s0,E6,X1) ) )).
+
+% ::id 67_nonfiction_GMB;p00d0283;AT13-3;NE
+% ::snt The ministry gave no other details .
+fof(ex1414051769694,axiom,(
+    ? [X1,E2] :
+      ( ministry_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [G3] :
+          ( details_1(s0,G3)
+          & gave_3(s0,E2,X1,G3) ) ) )).
+
+% ::id 68_nonfiction_GMB;p00d0283;AT13-4;NE
+% ::snt It is not clear if the hostage-takers made any demands .
+fof(ex1414051770025,axiom,(
+    ? [G1] :
+      ( hostage_takers_1(s0,G1)
+      & ? [A6,E2,S3] :
+          ( clear_1(s0,A6)
+          & ? [S7] :
+              ( fact_2(s0,S3,S7)
+              & ? [E4] :
+                  ( is_before_2(S7,E4,e0)
+                  & ? [G5] :
+                      ( demands_1(S7,G5)
+                      & made_3(S7,E4,G1,G5) ) ) )
+          & is_3(s0,E2,S3,A6) ) ) )).
+
+% ::id 69_nonfiction_GMB;p00d0283;AT13-5;NE
+% ::snt Mr. Akmatbayev was involved in negotiations on Wednesday at another Kyrgyz prison where a riot over poor living conditions forced the staff to evacuate earlier this week .
+fof(ex1414051770383,axiom,(
+    ? [X1,T2,X3,G4,G5,S10,E6,E7,E8] :
+      ( staff_1(s0,X1)
+      & week_1(s0,T2)
+      & is_riot_over_2(s0,X3,G4)
+      & is_negotiations_on_2(s0,G5,wednesday)
+      & poor_1(s0,G4)
+      & living_1(s0,G4)
+      & conditions_1(s0,G4)
+      & is_where_2(s0,S10)
+      & is_earlier_tmp_2(s0,E6,T2)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [X9] :
+          ( kyrgyz_1(s0,X9)
+          & ? [S11] :
+              ( fact_2(s0,S10,S11)
+              & ? [S12] :
+                  ( forced_4(S11,E7,X3,X1,S12)
+                  & evacuate_2(S12,E6,X1) ) )
+          & prison_1(s0,X9)
+          & was_involved_2(s0,E8,mr_akmatbayev)
+          & in_2(s0,E8,G5)
+          & at_2(s0,E8,X9) ) ) )).
+
+% ::id 70_nonfiction_GMB;p00d0283;AT13-6;NE
+% ::snt That prison , also near Bishkek , remained surrounded by security forces on Thursday .
+fof(ex1414051770720,axiom,(
+    ? [X1,G2,E3] :
+      ( also_1(s0,X1)
+      & is_near_of_2(s0,X1,bishkek)
+      & prison_1(s0,X1)
+      & security_forces_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & remained_surrounded_3(s0,E3,G2,X1)
+      & on_2(s0,E3,thursday) ) )).
+
+% ::id 71_nonfiction_GMB;p00d0287;AT14-1;NE
+% ::snt A new government report shows U.S. businesses added a moderate 111,000 new jobs in January .
+fof(ex1414051771054,axiom,(
+    ? [X1,G2,G3,E4,E5] :
+      ( new_1(s0,X1)
+      & government_report_1(s0,X1)
+      & u_s_1(s0,G3)
+      & businesses_1(s0,G3)
+      & predicate__111_000_1(s0,G2)
+      & moderate_1(s0,G2)
+      & new_1(s0,G2)
+      & jobs_1(s0,G2)
+      & ? [S6] :
+          ( shows_3(s0,E5,X1,S6)
+          & added_3(S6,E4,G3,G2)
+          & in_2(S6,E4,january) ) ) )).
+
+% ::id 72_nonfiction_GMB;p00d0287;AT14-2;NE
+% ::snt The Labor Department Friday issued a report that also showed the U.S. unemployment rate increased for the first time in three months - to 4.6 percent .
+fof(ex1414051771402,axiom,(
+    ? [X1,X2,X3,G4,T5,E6,E7,E8] :
+      ( u_s_1(s0,X2)
+      & unemployment_rate_1(s0,X2)
+      & first_1(s0,X1)
+      & time_1(s0,X1)
+      & ? [S9] :
+          ( also_showed_3(s0,E7,X3,S9)
+          & increased_2(S9,E6,X2)
+          & for_2(S9,E6,X1)
+          & in_2(S9,E6,T5)
+          & to_2(S9,E6,G4) )
+      & report_1(s0,X3)
+      & predicate__4_6_1(s0,G4)
+      & percent_1(s0,G4)
+      & three_1(s0,T5)
+      & months_1(s0,T5)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & issued_3(s0,E8,labor_department,X3)
+      & tmp_2(s0,E8,friday) ) )).
+
+% ::id 73_nonfiction_GMB;p00d0287;AT14-3;NE
+% ::snt According to the report , American workers earned an average of $17.09 an hour in January - a slight increase from the previous month .
+fof(ex1414051771746,axiom,(
+    ? [X1,X2,X3,G4,G5,X6,T7,E8,E9] :
+      ( report_1(s0,X1)
+      & is_average_of_2(s0,X3,G4)
+      & is_hour_in_2(s0,X2,january)
+      & american_1(s0,G5)
+      & workers_1(s0,G5)
+      & predicate____dollar__17_09_1(s0,G4)
+      & slight_1(s0,X6)
+      & is_increase_from_2(s0,X6,T7)
+      & previous_1(s0,T7)
+      & month_1(s0,T7)
+      & is_before_2(s0,E9,e0)
+      & according_1(s0,E8)
+      & to_2(s0,E8,X1)
+      & earned_4(s0,E9,G5,X2,X3)
+      & msr_2(s0,E9,X6) ) )).
+
+% ::id 74_nonfiction_GMB;p00d0287;AT14-4;NE
+% ::snt Analysts say the Department of Labor report will help ease worries that a tight labor market will significantly inflate wages and costs .
+fof(ex1414051772096,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( labor_1(s0,X1)
+      & is_department_of_2(s0,X2,X1)
+      & is_report_of_2(s0,X2,X1)
+      & analysts_1(s0,G3)
+      & ? [S11] :
+          ( say_3(s0,E4,G3,S11)
+          & ? [X5,G6,E7,E8] :
+              ( tight_1(S11,X5)
+              & labor_market_1(S11,X5)
+              & ? [G9,E10] :
+                  ( wages_1(S11,G9)
+                  & costs_1(S11,G9)
+                  & significantly_1(S11,E10)
+                  & inflate_3(S11,E10,X5,G9) )
+              & worries_1(S11,G6)
+              & ? [S12] :
+                  ( help_3(S11,E8,X2,S12)
+                  & ease_3(S12,E7,X2,G6) ) ) ) ) )).
+
+% ::id 75_nonfiction_GMB;p00d0287;AT14-5;NE
+% ::snt Earlier this week , the U.S. central bank decided to maintain a key interest rate , despite the risk of inflation .
+fof(ex1414051772436,axiom,(
+    ? [X1,X2,X3,T4,X5,S8,E6,E7] :
+      ( u_s_1(s0,X3)
+      & central_bank_1(s0,X3)
+      & inflation_1(s0,X1)
+      & is_risk_of_2(s0,X2,X1)
+      & week_1(s0,T4)
+      & key_1(s0,X5)
+      & interest_rate_1(s0,X5)
+      & is_earlier_tmp_2(s0,S8,T4)
+      & is_before_2(s0,E7,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & ? [S10] :
+              ( decided_3(S9,E7,X3,S10)
+              & maintain_3(S10,E6,X3,X5) )
+          & despite_2(S9,E7,X2) ) ) )).
+
+% ::id 76_nonfiction_GMB;p00d0309;AT15-1;NE
+% ::snt The European Space Agency says it has received the first images and scientific readings from the surface of Saturn's moon Titan .
+fof(ex1414051772781,axiom,(
+    ? [X1,G2,G3,G4,G5,X8,E6,E7] :
+      ( is_surface_of_2(s0,X1,titan)
+      & first_1(s0,G5)
+      & images_1(s0,G2)
+      & scientific_1(s0,G3)
+      & readings_1(s0,G3)
+      & is_of_2(s0,G2,G4)
+      & is_of_2(s0,G3,G4)
+      & G5 = G4
+      & is_of_2(s0,moon,moon)
+      & titan = saturn
+      & choose1(X8,european_space_agency)
+      & ? [S9] :
+          ( says_3(s0,E7,european_space_agency,S9)
+          & has_received_3(S9,E6,X8,G5)
+          & from_2(S9,E6,X1) ) ) )).
+
+% ::id 77_nonfiction_GMB;p00d0309;AT15-2;NE
+% ::snt Officials at agency headquarters in Germany Friday say information taken from the Huygens space probe show what looks like drainage channels on the moon .
+fof(ex1414051773134,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7] :
+      ( huygens_space_probe_1(s0,X1)
+      & moon_1(s0,X2)
+      & taken_3(s0,E6,unspecified,X3)
+      & from_2(s0,E6,X1)
+      & information_1(s0,X3)
+      & is_agency_headquarters_in_2(s0,G4,germany)
+      & is_officials_at_2(s0,G5,G4)
+      & ? [S13] :
+          ( say_3(s0,E7,G5,S13)
+          & ? [X8,G9,A11,E10] :
+              ( looks_3(S13,E10,X8,A11)
+              & is_drainage_channels_on_2(S13,G9,X2)
+              & is_like_of_2(S13,A11,G9)
+              & ? [E12] : show_3(S13,E12,X3,X8) ) )
+      & tmp_2(s0,E7,friday) ) )).
+
+% ::id 78_nonfiction_GMB;p00d0309;AT15-3;NE
+% ::snt They say the surface has canyons that were most likely caused by some type of liquid .
+fof(ex1414051773482,axiom,(
+    ? [X1,X2,X3,G8,G4,E5,E6,E7] :
+      ( surface_1(s0,X1)
+      & liquid_1(s0,X2)
+      & is_type_of_2(s0,X3,X2)
+      & caused_3(s0,E5,X3,G4)
+      & canyons_1(s0,G4)
+      & most_likely_1(s0,E5)
+      & is_before_2(s0,E5,E7)
+      & ? [S9] :
+          ( say_3(s0,E7,G8,S9)
+          & has_3(S9,E6,X1,G4) ) ) )).
+
+% ::id 79_nonfiction_GMB;p00d0309;AT15-4;NE
+% ::snt The space probe began transmitting data to the Cassini spacecraft while landing on Saturn's largest moon earlier Friday .
+fof(ex1414051773821,axiom,(
+    ? [X1,X2,X3,G4,E5,E6,E7,S8] :
+      ( space_probe_1(s0,X2)
+      & cassini_spacecraft_1(s0,X1)
+      & largest_1(s0,X3)
+      & is_moon_of_2(s0,X3,saturn)
+      & data_1(s0,G4)
+      & is_before_2(s0,E7,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & transmitting_3(S9,E5,X2,G4)
+          & to_2(S9,E5,X1) )
+      & landing_2(s0,E6,S8)
+      & on_2(s0,E6,X3)
+      & tmp_2(s0,E6,earlier_friday)
+      & began_3(s0,E7,X2,S8) ) )).
+
+% ::id 80_nonfiction_GMB;p00d0309;AT15-5;NE
+% ::snt Scientists say the information from Huygens - operated jointly by the American , European and Italian space agencies - may provide clues about how primitive Earth evolved into a life-bearing planet .
+fof(ex1414051774204,axiom,(
+    ? [X1,G2,G3,G4,G5,G6,E7,G8,E9] :
+      ( operated_3(s0,E7,G6,X1)
+      & is_information_from_2(s0,X1,huygens)
+      & american_1(s0,G2)
+      & space_agencies_1(s0,G2)
+      & european_1(s0,G3)
+      & space_agencies_1(s0,G3)
+      & italian_1(s0,G4)
+      & space_agencies_1(s0,G4)
+      & is_of_2(s0,G2,G5)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & G6 = G5
+      & jointly_1(s0,E7)
+      & scientists_1(s0,G8)
+      & ? [S16] :
+          ( say_3(s0,E9,G8,S16)
+          & ? [G10,E11] :
+              ( ? [X12,X13,X14,E15] :
+                  ( primitive_1(S16,X13)
+                  & earth_1(S16,X13)
+                  & life_bearing_1(S16,X12)
+                  & planet_1(S16,X12)
+                  & evolved_2(S16,E15,X13)
+                  & into_2(S16,E15,X12)
+                  & is_how_2(S16,E15,X14)
+                  & is_clues_about_2(S16,G10,X14) )
+              & provide_3(S16,E11,X1,G10) ) ) ) )).
+
+% ::id 81_nonfiction_GMB;p00d0356;AT16-1;NE
+% ::snt Indonesian officials say they have signed an initial agreement with Russia to build a space launch center on the remote island of Biak off the coast of Papua New Guinea .
+fof(ex1414051774554,axiom,(
+    ? [X1,X2,X3,X4,G9,G5,E6,E7,E8] :
+      ( remote_1(s0,X2)
+      & is_island_of_2(s0,X2,biak)
+      & is_coast_of_2(s0,X1,papua_new_guinea)
+      & space_launch_center_1(s0,X3)
+      & initial_1(s0,X4)
+      & is_agreement_with_2(s0,X4,russia)
+      & indonesian_1(s0,G5)
+      & officials_1(s0,G5)
+      & choose1(G9,G5)
+      & ? [S11] :
+          ( say_3(s0,E8,G5,S11)
+          & have_signed_3(S11,E7,G9,X4) ) ) )).
+
+% ::id 82_nonfiction_GMB;p00d0356;AT16-2;NE
+% ::snt An Indonesian foreign ministry spokesman says senior officials from both countries reached the preliminary agreement last week .
+fof(ex1414051774894,axiom,(
+    ? [X1,X2,G3,T4,E5,E6] :
+      ( preliminary_1(s0,X1)
+      & agreement_1(s0,X1)
+      & indonesian_foreign_ministry_spokesman_1(s0,X2)
+      & senior_1(s0,G3)
+      & ? [G7] :
+          ( countries_1(s0,G7)
+          & is_officials_from_2(s0,G3,G7) )
+      & last_1(s0,T4)
+      & week_1(s0,T4)
+      & is_before_2(s0,E5,E6)
+      & ? [S8] :
+          ( says_3(s0,E6,X2,S8)
+          & reached_3(S8,E5,G3,X1)
+          & tmp_2(S8,E5,T4) ) ) )).
+
+% ::id 83_nonfiction_GMB;p00d0356;AT16-3;NE
+% ::snt They say the island is well-suited for the project because of its proximity to the equator , which makes it easier to launch satellites into some Earth orbits .
+fof(ex1414051775251,axiom,(
+    ? [X1,X2,X3,X13,X4,G12,G5,G6,A15,E7,E8,E9,E10,E11,S14] :
+      ( island_1(s0,X3)
+      & project_1(s0,X2)
+      & equator_1(s0,X1)
+      & choose2(X13,X2,X3)
+      & ? [S16] :
+          ( makes_3(s0,E9,X4,S16)
+          & is_3(S16,E8,S14,A15) )
+      & is_proximity_to_2(s0,X4,X1)
+      & is_proximity_of_2(s0,X4,X13)
+      & satellites_1(s0,G6)
+      & earth_orbits_1(s0,G5)
+      & easier_1(s0,A15)
+      & ? [S17] :
+          ( fact_2(s0,S14,S17)
+          & launch_3(S17,E7,unspecified,G6)
+          & into_2(S17,E7,G5) )
+      & ? [S18] :
+          ( say_3(s0,E11,G12,S18)
+          & is_well_suited_2(S18,E10,X3)
+          & for_2(S18,E10,X2)
+          & because_of_2(S18,E10,X4) ) ) )).
+
+% ::id 84_nonfiction_GMB;p00d0356;AT16-4;NE
+% ::snt The spokesman says a formal agreement on the project will be signed in June when Indonesian President Susilo Bambang Yudhoyono is scheduled to visit Moscow .
+fof(ex1414051775610,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( spokesman_1(s0,X2)
+      & project_1(s0,X1)
+      & formal_1(s0,X3)
+      & is_agreement_on_2(s0,X3,X1)
+      & ? [S11] :
+          ( says_3(s0,E4,X2,S11)
+          & ? [E5] :
+              ( ? [X6,T7,S10,E8,E9] :
+                  ( indonesian_1(S11,X6)
+                  & president_1(S11,X6)
+                  & susilo_bambang_yudhoyono = X6
+                  & ? [S12] :
+                      ( fact_2(S11,S10,S12)
+                      & ? [S13] :
+                          ( scheduled_4(S12,E9,unspecified,susilo_bambang_yudhoyono,S13)
+                          & visit_3(S13,E8,susilo_bambang_yudhoyono,moscow) ) )
+                  & is_when_2(S11,S10,T7)
+                  & is_tmp_2(S11,E5,T7) )
+              & signed_3(S11,E5,unspecified,X3)
+              & in_2(S11,E5,june) ) ) ) )).
+
+% ::id 85_nonfiction_GMB;p00d0402;AT17-1;NE
+% ::snt Police in Japan say a teacher stabbed to death a 12 -year -old girl Saturday in the country's third killing of a school girl in less than three weeks .
+fof(ex1414051775961,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,T8,T9,E10,E11] :
+      ( country_1(s0,X1)
+      & teacher_1(s0,X6)
+      & death_1(s0,X5)
+      & is_old_tmp_2(s0,X4,T8)
+      & girl_1(s0,X4)
+      & is_school_girl_in_2(s0,X2,T9)
+      & third_1(s0,X3)
+      & is_killing_of_2(s0,X3,X2)
+      & is_killing_of__2(s0,X3,X1)
+      & is_police_in_2(s0,G7,japan)
+      & predicate__12_1(s0,T8)
+      & predicate___year_1(s0,T8)
+      & less_than_three_1(s0,T9)
+      & weeks_1(s0,T9)
+      & is_before_2(s0,E10,E11)
+      & ? [S12] :
+          ( say_3(s0,E11,G7,S12)
+          & stabbed_3(S12,E10,X6,X4)
+          & to_2(S12,E10,X5)
+          & tmp_2(S12,E10,saturday)
+          & in_2(S12,E10,X3) ) ) )).
+
+% ::id 86_nonfiction_GMB;p00d0402;AT17-2;NE
+% ::snt Yu Hagino , 23 , was arrested at the murder scene , a school in the western city of Uji .
+fof(ex1414051776302,axiom,(
+    ? [X1,X2,X3,T4,E5] :
+      ( murder_scene_1(s0,X3)
+      & western_1(s0,X1)
+      & is_city_of_2(s0,X1,uji)
+      & is_school_in_2(s0,X2,X1)
+      & X3 = X2
+      & predicate__23_1(s0,T4)
+      & is_time_of_2(s0,yu_hagino,T4)
+      & is_before_2(s0,E5,e0)
+      & arrested_3(s0,E5,unspecified,yu_hagino)
+      & at_2(s0,E5,X3) ) )).
+
+% ::id 87_nonfiction_GMB;p00d0402;AT17-3;NE
+% ::snt Police say the suspect confessed to stabbing the girl with a knife after arguing with her .
+fof(ex1414051776640,axiom,(
+    ? [X1,X2,X10,X3,G4,E5,E6,E7,E8,S9] :
+      ( suspect_1(s0,X2)
+      & girl_1(s0,X1)
+      & knife_1(s0,X3)
+      & choose2(X10,X2,X3)
+      & police_1(s0,G4)
+      & is_before_2(s0,E7,E8)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & arguing_2(S11,E5,X1)
+          & with_2(S11,E5,X10)
+          & stabbing_3(S11,E6,X2,X1)
+          & with_2(S11,E6,X3) )
+      & ? [S12] :
+          ( say_3(s0,E8,G4,S12)
+          & confessed_2(S12,E7,X2)
+          & to_2(S12,E7,S9) ) ) )).
+
+% ::id 88_nonfiction_GMB;p00d0402;AT17-4;NE
+% ::snt The killing follows the recent murders of two school girls in the space of just over a week .
+fof(ex1414051776973,axiom,(
+    ? [X1,X2,G3,G4,T5,E6] :
+      ( killing_1(s0,X2)
+      & is_space_of_just_over_2(s0,X1,T5)
+      & two_1(s0,G3)
+      & school_girls_1(s0,G3)
+      & recent_1(s0,G4)
+      & is_murders_in_2(s0,G4,X1)
+      & is_murders_of_2(s0,G4,G3)
+      & week_1(s0,T5)
+      & follows_3(s0,E6,X2,G4) ) )).
+
+% ::id 89_nonfiction_GMB;p00d0402;AT17-5;NE
+% ::snt The two were killed in separate incidents as they walked home alone from elementary school along deserted roads .
+fof(ex1414051777316,axiom,(
+    ? [G1,X2,G7,G3,G4,E5,E6] :
+      ( two_1(s0,G1)
+      & elementary_1(s0,X2)
+      & school_1(s0,X2)
+      & separate_1(s0,G4)
+      & incidents_1(s0,G4)
+      & choose2(G7,G1,G4)
+      & deserted_1(s0,G3)
+      & roads_1(s0,G3)
+      & home_1(s0,E5)
+      & alone_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & walked_2(s0,E5,G7)
+      & from_2(s0,E5,X2)
+      & along_2(s0,E5,G3)
+      & killed_3(s0,E6,unspecified,G1)
+      & in_2(s0,E6,G4) ) )).
+
+% ::id 90_nonfiction_GMB;p00d0443;AT18-1;NE
+% ::snt The British Embassy in Sudan's capital has re-opened to the public , four days after it was closed because of a possible terrorist threat .
+fof(ex1414051777664,axiom,(
+    ? [X1,X2,X3,X9,X4,T5,E6,E7,S8] :
+      ( is_capital_of_2(s0,X1,sudan)
+      & british_1(s0,X3)
+      & is_embassy_in_2(s0,X3,X1)
+      & public_1(s0,X2)
+      & choose4(X9,X3,X2,X1,sudan)
+      & possible_1(s0,X4)
+      & terrorist_threat_1(s0,X4)
+      & four_1(s0,T5)
+      & is_days_after_2(s0,T5,S8)
+      & is_before_2(s0,E6,e0)
+      & ? [S10] :
+          ( fact_2(s0,S8,S10)
+          & closed_3(S10,E6,unspecified,X9)
+          & because_of_2(S10,E6,X4) )
+      & has_re_opened_2(s0,E7,X3)
+      & to_2(s0,E7,X2)
+      & tmp_2(s0,E7,T5) ) )).
+
+% ::id 91_nonfiction_GMB;p00d0443;AT18-2;NE
+% ::snt The embassy said in a statement Thursday that " additional security " has allowed it to resume normal consular and visa services .
+fof(ex1414051778007,axiom,(
+    ? [X1,X9,X2,X3,G4,G5,E6,E7,E8] :
+      ( embassy_1(s0,X1)
+      & statement_1(s0,X3)
+      & additional_1(s0,X2)
+      & security_1(s0,X2)
+      & choose3(X9,X2,X3,X1)
+      & normal_1(s0,G5)
+      & ? [X10] :
+          ( consular_1(s0,X10)
+          & is_of_2(s0,X10,G4) )
+      & ? [G11] :
+          ( visa_services_1(s0,G11)
+          & is_of_2(s0,G11,G4) )
+      & G5 = G4
+      & is_before_2(s0,E8,e0)
+      & ? [S12] :
+          ( said_3(s0,E8,X1,S12)
+          & ? [S13] :
+              ( has_allowed_3(S12,E7,X2,S13)
+              & resume_3(S13,E6,X9,G5) ) )
+      & in_2(s0,E8,X3)
+      & tmp_2(s0,E8,thursday) ) )).
+
+% ::id 92_nonfiction_GMB;p00d0443;AT18-3;NE
+% ::snt The statement also thanked the Sudanese government for its cooperation .
+fof(ex1414051778336,axiom,(
+    ? [X1,X2,X5,X3,E4] :
+      ( statement_1(s0,X2)
+      & sudanese_1(s0,X1)
+      & government_1(s0,X1)
+      & choose2(X5,X2,X1)
+      & is_cooperation_of_2(s0,X3,X5)
+      & is_before_2(s0,E4,e0)
+      & also_thanked_3(s0,E4,X2,X1)
+      & for_2(s0,E4,X3) ) )).
+
+% ::id 93_nonfiction_GMB;p00d0443;AT18-4;NE
+% ::snt Earlier this week , the government said it had broken up a plot to attack several Western diplomatic missions in the capital , Khartoum .
+fof(ex1414051778678,axiom,(
+    ? [X1,X2,T3,X9,X4,S8,E5,E6,E7] :
+      ( government_1(s0,X2)
+      & capital_1(s0,X1)
+      & X1 = khartoum
+      & week_1(s0,T3)
+      & choose1(X9,X2)
+      & ? [S11] :
+          ( plot_2(s0,X4,S11)
+          & ? [G10] :
+              ( western_1(S11,G10)
+              & diplomatic_missions_1(S11,G10)
+              & attack_3(S11,E5,unspecified,G10)
+              & in_2(S11,E5,X1) ) )
+      & is_earlier_tmp_2(s0,S8,T3)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S12] :
+          ( fact_2(s0,S8,S12)
+          & ? [S13] :
+              ( said_3(S12,E7,X2,S13)
+              & had_broken_up_3(S13,E6,X9,X4) ) ) ) )).
+
+% ::id 94_nonfiction_GMB;p00d0443;AT18-5;NE
+% ::snt The state news agency reported that police had arrested eight Sudanese men and confiscated arms and explosives .
+fof(ex1414051779014,axiom,(
+    ? [X1,G2,G3,G4,E5,E6,E7] :
+      ( state_news_agency_1(s0,X1)
+      & police_1(s0,G4)
+      & eight_1(s0,G2)
+      & sudanese_1(s0,G2)
+      & men_1(s0,G2)
+      & arms_1(s0,G3)
+      & explosives_1(s0,G3)
+      & is_before_2(s0,E5,E7)
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S8] :
+          ( reported_3(s0,E7,X1,S8)
+          & had_arrested_3(S8,E5,G4,G2)
+          & had_confiscated_3(S8,E6,G4,G3) ) ) )).
+
+% ::id 95_nonfiction_GMB;p00d0443;AT18-6;NE
+% ::snt The British Embassy has advised British citizens to avoid travel to Khartoum .
+fof(ex1414051779341,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( is_travel_to_2(s0,X1,khartoum)
+      & british_1(s0,G2)
+      & citizens_1(s0,G2)
+      & ? [S5] :
+          ( has_advised_4(s0,E4,british_embassy,G2,S5)
+          & avoid_3(S5,E3,G2,X1) ) ) )).
+
+% ::id 96_nonfiction_GMB;p00d0457;AT19-1;NE
+% ::snt The death toll from a coal mining accident in northwestern China rose to 32 Wednesday after searchers recovered the body of the last missing miner .
+fof(ex1414051779689,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,E7,E8] :
+      ( is_coal_mining_accident_in_2(s0,X1,northwestern_china)
+      & is_death_toll_from_2(s0,X4,X1)
+      & last_1(s0,X2)
+      & missing_1(s0,X2)
+      & miner_1(s0,X2)
+      & is_body_of_2(s0,X3,X2)
+      & predicate__32_1(s0,G6)
+      & searchers_1(s0,G5)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & recovered_3(s0,E7,G5,X3)
+      & rose_2(s0,E8,X4)
+      & to_2(s0,E8,G6)
+      & tmp_2(s0,E8,wednesday) ) )).
+
+% ::id 97_nonfiction_GMB;p00d0457;AT19-2;NE
+% ::snt China's state-run media say 39 people were working at the privately-owned coal mine in Shaanxi province on Saturday when a gas explosion occurred .
+fof(ex1414051780043,axiom,(
+    ? [X1,X2,G3,G4,E5,E6] :
+      ( shaanxi_1(s0,X1)
+      & province_1(s0,X1)
+      & privately_owned_1(s0,X2)
+      & is_coal_mine_in_2(s0,X2,X1)
+      & state_run_1(s0,G4)
+      & is_media_of_2(s0,G4,china)
+      & predicate__39_1(s0,G3)
+      & people_1(s0,G3)
+      & ? [X7,T8,E9] :
+          ( gas_explosion_1(s0,X7)
+          & occurred_2(s0,E9,X7)
+          & is_when_2(s0,E9,T8)
+          & is_before_2(s0,E9,E6)
+          & is_tmp_2(s0,E5,T8) )
+      & is_before_2(s0,E5,E6)
+      & ? [S10] :
+          ( say_3(s0,E6,G4,S10)
+          & were_working_2(S10,E5,G3)
+          & at_2(S10,E5,X2)
+          & on_2(S10,E5,saturday) ) ) )).
+
+% ::id 98_nonfiction_GMB;p00d0457;AT19-3;NE
+% ::snt Seven miners managed to reach the surface , but the others were trapped .
+fof(ex1414051780375,axiom,(
+    ? [X1,G2,E3,E4,E5] :
+      ( surface_1(s0,X1)
+      & seven_1(s0,G2)
+      & miners_1(s0,G2)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & ? [S7] :
+          ( managed_3(s0,E4,G2,S7)
+          & reach_3(S7,E3,G2,X1) )
+      & ? [G6] : trapped_3(s0,E5,unspecified,G6) ) )).
+
+% ::id 99_nonfiction_GMB;p00d0457;AT19-4;NE
+% ::snt The Xinhua news agency says police have detained the owner and managers of the mine , but provided no other details .
+fof(ex1414051780716,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,E8,E9,E10] :
+      ( xinhua_news_agency_1(s0,X3)
+      & mine_1(s0,X1)
+      & owner_1(s0,X2)
+      & is_of_2(s0,G6,X1)
+      & managers_1(s0,G4)
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,G4,G5)
+      & G6 = G5
+      & police_1(s0,G7)
+      & ? [S12] :
+          ( says_3(s0,E9,X3,S12)
+          & have_detained_3(S12,E8,G7,G6) )
+      & ? [G11] :
+          ( details_1(s0,G11)
+          & provided_3(s0,E10,X3,G11) ) ) )).
+
+% ::id 100_nonfiction_GMB;p00d0457;AT19-5;NE
+% ::snt Chinese mines are among the most dangerous in the world .
+fof(ex1414051781049,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( world_1(s0,X1)
+      & most_dangerous_1(s0,X2)
+      & is_in_2(s0,X2,X1)
+      & chinese_1(s0,G3)
+      & mines_1(s0,G3)
+      & are_2(s0,E4,G3)
+      & among_2(s0,E4,X2) ) )).
+
+% ::id 101_nonfiction_GMB;p00d0457;AT19-6;NE
+% ::snt Thousands of people are killed every year in explosions , cave-ins and floods , despite government crackdowns on safety violations .
+fof(ex1414051781389,axiom,(
+    ? [G1,G2] :
+      ( people_1(s0,G1)
+      & is_thousands_of_2(s0,G2,G1)
+      & ! [T3] :
+          ( year_1(s0,T3)
+         => ? [G4,G5,G6,E7] :
+              ( ? [G8] :
+                  ( explosions_1(s0,G8)
+                  & is_of_2(s0,G8,G6) )
+              & ? [G9] :
+                  ( cave_ins_1(s0,G9)
+                  & is_of_2(s0,G9,G6) )
+              & ? [G10] :
+                  ( floods_1(s0,G10)
+                  & is_of_2(s0,G10,G6) )
+              & safety_violations_1(s0,G4)
+              & is_government_crackdowns_on_2(s0,G5,G4)
+              & killed_3(s0,E7,unspecified,G2)
+              & tmp_2(s0,E7,T3)
+              & in_2(s0,E7,G6)
+              & despite_2(s0,E7,G5) ) ) ) )).
+
+% ::id 102_nonfiction_GMB;p00d0498;AT20-1;NE
+% ::snt Latvia's President Vaira Vike-Freiberga
+fof(ex1414051781712,axiom,(
+    ? [X1,E2] :
+      ( latvia_1(s0,X1)
+      & president_1(s0,X1)
+      & vaira_vike_freiberga = X1
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,vaira_vike_freiberga) ) )).
+
+% ::id 103_nonfiction_GMB;p00d0498;AT20-2;NE
+% ::snt Latvia's parliament has extended the stay of the country's troops serving in Iraq until the end of the year .
+fof(ex1414051782053,axiom,(
+    ? [X1,X2,X3,G4,T5,E6,X7,E8] :
+      ( country_1(s0,X1)
+      & is_stay_of_2(s0,X3,G4)
+      & is_end_of_2(s0,X2,T5)
+      & serving_2(s0,E6,G4)
+      & in_2(s0,E6,iraq)
+      & is_troops_of_2(s0,G4,X1)
+      & year_1(s0,T5)
+      & is_parliament_of_2(s0,X7,latvia)
+      & has_extended_3(s0,E8,X7,X3)
+      & until_2(s0,E8,X2) ) )).
+
+% ::id 104_nonfiction_GMB;p00d0498;AT20-3;NE
+% ::snt Sixty seven of the 100 lawmakers Thursday in Riga voted in favor of extending the mission by six months .
+fof(ex1414051782392,axiom,(
+    ? [X1,G2,X3,G4,T5,E6,E7,S8] :
+      ( mission_1(s0,X1)
+      & predicate__100_1(s0,G2)
+      & lawmakers_1(s0,G2)
+      & is_favor_of_2(s0,X3,S8)
+      & sixty_seven_1(s0,G4)
+      & is_of_2(s0,G4,G2)
+      & six_1(s0,T5)
+      & months_1(s0,T5)
+      & is_before_2(s0,E7,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & extending_3(S9,E6,unspecified,X1)
+          & by_2(S9,E6,T5) )
+      & voted_2(s0,E7,G4)
+      & tmp_2(s0,E7,thursday)
+      & in__2(s0,E7,riga)
+      & in_2(s0,E7,X3) ) )).
+
+% ::id 105_nonfiction_GMB;p00d0498;AT20-4;NE
+% ::snt Latvia , which joined NATO last year , has more than 100 troops in Iraq supporting the U.S efforts there .
+fof(ex1414051782738,axiom,(
+    ? [G1,X7,G2,T3,E4,E5,E6] :
+      ( u_s__1(s0,G1)
+      & efforts_1(s0,G1)
+      & joined_3(s0,E4,latvia,nato_)
+      & tmp_2(s0,E4,T3)
+      & choose3(X7,iraq,latvia,nato_)
+      & more_than_100_1(s0,G2)
+      & supporting_3(s0,E5,G2,G1)
+      & loc_2(s0,E5,X7)
+      & is_troops_in_2(s0,G2,iraq)
+      & last_1(s0,T3)
+      & year_1(s0,T3)
+      & is_before_2(s0,E4,e0)
+      & has_3(s0,E6,latvia,G2) ) )).
+
+% ::id 106_nonfiction_GMB;p00d0498;AT20-5;NE
+% ::snt Latvia has also contributed troops to multinational forces in Afghanistan and the Balkans .
+fof(ex1414051783072,axiom,(
+    ? [G1,G2,G3,E4] :
+      ( troops_1(s0,G3)
+      & is_of_2(s0,afghanistan,G1)
+      & is_of_2(s0,balkans,G1)
+      & multinational_1(s0,G2)
+      & is_forces_in_2(s0,G2,G1)
+      & has_also_contributed_3(s0,E4,latvia,G3)
+      & to_2(s0,E4,G2) ) )).
+
+% ::id 107_nonfiction_GMB;p00d0606;AT21-1;NE
+% ::snt A landmine blast in southern Afghanistan has killed nine Afghan soldiers .
+fof(ex1414051783397,axiom,(
+    ? [X1,G2,E3] :
+      ( is_landmine_blast_in_2(s0,X1,southern_afghanistan)
+      & nine_1(s0,G2)
+      & afghan_1(s0,G2)
+      & soldiers_1(s0,G2)
+      & has_killed_3(s0,E3,X1,G2) ) )).
+
+% ::id 108_nonfiction_GMB;p00d0606;AT21-2;NE
+% ::snt The Taleban later claimed responsibility for the blast in Kandahar province .
+fof(ex1414051783726,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( kandahar_1(s0,X1)
+      & province_1(s0,X1)
+      & is_blast_in_2(s0,X2,X1)
+      & is_responsibility_for_2(s0,X3,X2)
+      & later_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & claimed_3(s0,E4,taleban,X3) ) )).
+
+% ::id 109_nonfiction_GMB;p00d0606;AT21-3;NE
+% ::snt An Afghan Army spokesman said the troops were traveling towards the nearby Pakistani border when their vehicle hit the mine .
+fof(ex1414051784075,axiom,(
+    ? [X1,X2,G3,X4,E5,E6] :
+      ( nearby_1(s0,X2)
+      & pakistani_border_1(s0,X2)
+      & mine_1(s0,X1)
+      & troops_1(s0,G3)
+      & afghan_army_spokesman_1(s0,X4)
+      & ? [X7,G10,T8,E9] :
+          ( is_vehicle_of_2(s0,X7,G10)
+          & choose1(G10,G3)
+          & hit_3(s0,E9,X7,X1)
+          & is_when_2(s0,E9,T8)
+          & is_before_2(s0,E9,E6)
+          & is_tmp_2(s0,E5,T8) )
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,e0)
+      & ? [S11] :
+          ( said_3(s0,E6,X4,S11)
+          & were_traveling_2(S11,E5,G3)
+          & towards_2(S11,E5,X2) ) ) )).
+
+% ::id 110_nonfiction_GMB;p00d0606;AT21-4;NE
+% ::snt U.S.-led forces are hunting down remnants of Afghanistan's ousted Taleban regime who frequently carry out hit and run attacks on coalition and Afghan government forces , mainly in the country's eastern and southern regions .
+fof(ex1414051784453,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,G8,E9,E10] :
+      ( country_1(s0,X1)
+      & ousted_1(s0,X2)
+      & carry_out_3(s0,E9,X2,G6)
+      & mainly_in_2(s0,E9,G5)
+      & is_taleban_regime_of__2(s0,X2,afghanistan)
+      & u_s_led_1(s0,G8)
+      & forces_1(s0,G8)
+      & ? [X11] :
+          ( coalition_1(s0,X11)
+          & is_of_2(s0,X11,G3) )
+      & ? [G12] :
+          ( afghan_government_forces_1(s0,G12)
+          & is_of_2(s0,G12,G3) )
+      & hit_1(s0,G6)
+      & run_1(s0,G6)
+      & is_attacks_on_2(s0,G6,G3)
+      & is_of_2(s0,G5,X1)
+      & ? [G13] :
+          ( eastern_1(s0,G13)
+          & regions_1(s0,G13)
+          & is_of_2(s0,G13,G4) )
+      & ? [G14] :
+          ( southern_1(s0,G14)
+          & regions_1(s0,G14)
+          & is_of_2(s0,G14,G4) )
+      & G5 = G4
+      & is_remnants_of_2(s0,G7,X2)
+      & frequently_1(s0,E9)
+      & are_hunting_down_3(s0,E10,G8,G7) ) )).
+
+% ::id 111_nonfiction_GMB;p00d0630;AT22-1;NE
+% ::snt The U.S. military says the Iraqi army has captured three suspected al-Qaida in Iraq leaders involved in roadside bomb attacks .
+fof(ex1414051784797,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7] :
+      ( u_s_1(s0,X2)
+      & military_1(s0,X2)
+      & iraqi_1(s0,X1)
+      & army_1(s0,X1)
+      & roadside_bomb_attacks_1(s0,G3)
+      & three_1(s0,G4)
+      & suspected_1(s0,G4)
+      & involved_2(s0,E5,G4)
+      & in_2(s0,E5,G3)
+      & is_al_qaida_in__2(s0,G4,iraq)
+      & is_leaders_in__2(s0,G4,iraq)
+      & ? [S8] :
+          ( says_3(s0,E7,X2,S8)
+          & has_captured_3(S8,E6,X1,G4) ) ) )).
+
+% ::id 112_nonfiction_GMB;p00d0630;AT22-2;NE
+% ::snt Statements Wednesday say the suspects were detained in separate operations north of Baghdad in Kirkuk province , and in the towns of Tarmiyah and Judaidah .
+fof(ex1414051785154,axiom,(
+    ? [G1,G2,G3,X4,G5,G6,E7,E8,E9] :
+      ( suspects_1(s0,G3)
+      & is_of_2(s0,tarmiyah,G1)
+      & is_of_2(s0,judaidah,G1)
+      & is_towns_of_2(s0,G2,G1)
+      & kirkuk_1(s0,X4)
+      & province_1(s0,X4)
+      & statements_1(s0,G6)
+      & separate_1(s0,G5)
+      & is_north_of_2(s0,G5,baghdad)
+      & operations_1(s0,G5)
+      & is_before_2(s0,E7,E9)
+      & is_before_2(s0,E8,E9)
+      & ? [S10] :
+          ( say_3(s0,E9,G6,S10)
+          & detained_3(S10,E7,unspecified,G3)
+          & in__2(S10,E7,G5)
+          & in_2(S10,E7,X4)
+          & detained_3(S10,E8,unspecified,G3)
+          & in__2(S10,E8,G5)
+          & in_2(S10,E8,G2) )
+      & tmp_2(s0,E9,wednesday) ) )).
+
+% ::id 113_nonfiction_GMB;p00d0630;AT22-3;NE
+% ::snt The military says U.S. Special Forces advised the Iraqi army in all three operations .
+fof(ex1414051785490,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( military_1(s0,X2)
+      & iraqi_1(s0,X1)
+      & army_1(s0,X1)
+      & all_three_1(s0,G3)
+      & operations_1(s0,G3)
+      & is_before_2(s0,E4,E5)
+      & ? [S6] :
+          ( says_3(s0,E5,X2,S6)
+          & advised_3(S6,E4,u_s_special_forces,X1)
+          & in_2(S6,E4,G3) ) ) )).
+
+% ::id 114_nonfiction_GMB;p00d0630;AT22-4;NE
+% ::snt The U.S. military also says Iraqi special operations forces detained seven suspected criminals in and around Baghdad's Sadr City district , a stronghold of radical Shi'ite cleric Moqtada al-Sadr .
+fof(ex1414051785840,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,E7,E8] :
+      ( u_s_1(s0,X1)
+      & military_1(s0,X1)
+      & is_sadr_city_district_of_2(s0,X4,baghdad)
+      & radical_1(s0,X2)
+      & shi_ite_cleric_1(s0,X2)
+      & is_stronghold_of_2(s0,X3,moqtada_al_sadr)
+      & iraqi_1(s0,G6)
+      & special_operations_forces_1(s0,G6)
+      & seven_1(s0,G5)
+      & suspected_1(s0,G5)
+      & criminals_1(s0,G5)
+      & moqtada_al_sadr = X2
+      & X4 = X3
+      & is_before_2(s0,E7,E8)
+      & ? [S9] :
+          ( also_says_3(s0,E8,X1,S9)
+          & detained_3(S9,E7,G6,G5)
+          & in_and_around_2(S9,E7,X4) ) ) )).
+
+% ::id 115_nonfiction_GMB;p00d0630;AT22-5;NE
+% ::snt U.S. and Iraqi soldiers have been fighting Shi'ite militants in Sadr City in recent weeks as part of a crackdown on illegal militias .
+fof(ex1414051786185,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,E7] :
+      ( is_crackdown_on_2(s0,X1,G3)
+      & is_part_of_2(s0,X2,X1)
+      & ? [G8] :
+          ( u_s_1(s0,G8)
+          & soldiers_1(s0,G8)
+          & is_of_2(s0,G8,G6) )
+      & ? [G9] :
+          ( iraqi_1(s0,G9)
+          & soldiers_1(s0,G9)
+          & is_of_2(s0,G9,G6) )
+      & shi_ite_1(s0,G5)
+      & militants_1(s0,G5)
+      & recent_1(s0,G4)
+      & weeks_1(s0,G4)
+      & illegal_1(s0,G3)
+      & militias_1(s0,G3)
+      & have_been_fighting_3(s0,E7,G6,G5)
+      & in__2(s0,E7,sadr_city)
+      & in_2(s0,E7,G4)
+      & as_2(s0,E7,X2) ) )).
+
+% ::id 116_nonfiction_GMB;p00d0653;AT23-1;NE
+% ::snt A U.S. immigration judge has denied bail for Luis Posada Carriles , an asylum-seeking former CIA operative from Cuba .
+fof(ex1414051786525,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( u_s_immigration_judge_1(s0,X3)
+      & asylum_seeking_1(s0,X1)
+      & is_former_of_2(s0,X1,cia_)
+      & is_operative_from_2(s0,X1,cuba)
+      & is_bail_for_2(s0,X2,luis_posada_carriles)
+      & luis_posada_carriles = X1
+      & has_denied_3(s0,E4,X3,X2) ) )).
+
+% ::id 117_nonfiction_GMB;p00d0653;AT23-2;NE
+% ::snt U.S. authorities arrested the 77 -year -old Posada Carriles in May after he illegally entered the country through Mexico .
+fof(ex1414051786868,axiom,(
+    ? [X1,X2,T3,X7,G4,E5,E6] :
+      ( is_old_tmp_2(s0,X1,T3)
+      & country_1(s0,X2)
+      & predicate__77_1(s0,T3)
+      & predicate___year_1(s0,T3)
+      & choose3(X7,posada_carriles,may,X1)
+      & u_s_1(s0,G4)
+      & authorities_1(s0,G4)
+      & posada_carriles = X1
+      & illegally_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & entered_3(s0,E5,X7,X2)
+      & through_2(s0,E5,mexico)
+      & arrested_3(s0,E6,G4,posada_carriles)
+      & in_2(s0,E6,may) ) )).
+
+% ::id 118_nonfiction_GMB;p00d0653;AT23-3;NE
+% ::snt Posada Carriles is wanted in Venezuela for his alleged role in a 1976 Cuban airliner bombing that killed 73 people .
+fof(ex1414051787215,axiom,(
+    ? [X7,X1,X2,G3,T4,E5,E6] :
+      ( choose2(X7,venezuela,posada_carriles)
+      & cuban_1(s0,X1)
+      & killed_3(s0,E5,X1,G3)
+      & is_airliner_bombing_tmp_2(s0,X1,T4)
+      & alleged_1(s0,X2)
+      & is_role_in_2(s0,X2,X1)
+      & is_role_of_2(s0,X2,X7)
+      & predicate__73_1(s0,G3)
+      & people_1(s0,G3)
+      & predicate__1976_1(s0,T4)
+      & is_before_2(s0,E5,e0)
+      & wanted_3(s0,E6,unspecified,posada_carriles)
+      & in__2(s0,E6,venezuela)
+      & for_2(s0,E6,X2) ) )).
+
+% ::id 119_nonfiction_GMB;p00d0653;AT23-4;NE
+% ::snt Some 20 years ago , a Venezuelan court acquitted him of a role in the bombing .
+fof(ex1414051787548,axiom,(
+    ? [X1,X6,X2,X3,T4,E5] :
+      ( bombing_1(s0,X1)
+      & venezuelan_1(s0,X3)
+      & court_1(s0,X3)
+      & is_role_in_2(s0,X2,X1)
+      & predicate__20_1(s0,T4)
+      & years_1(s0,T4)
+      & is_ago_tmp_2(s0,E5,T4)
+      & is_before_2(s0,E5,e0)
+      & acquitted_3(s0,E5,X3,X6)
+      & of_2(s0,E5,X2) ) )).
+
+% ::id 120_nonfiction_GMB;p00d0653;AT23-5;NE
+% ::snt He later escaped from prison while awaiting a new trial .
+fof(ex1414051787886,axiom,(
+    ? [X5,X1,X2,S6,E3,E4] :
+      ( prison_1(s0,X2)
+      & new_1(s0,X1)
+      & trial_1(s0,X1)
+      & later_1(s0,S6)
+      & is_before_2(s0,E4,e0)
+      & ? [S7] :
+          ( fact_2(s0,S6,S7)
+          & awaiting_3(S7,E3,X5,X1)
+          & escaped_2(S7,E4,X5)
+          & from_2(S7,E4,X2) ) ) )).
+
+% ::id 121_nonfiction_GMB;p00d0653;AT23-6;NE
+% ::snt In May , U.S. officials rejected a Venezuelan request for his arrest , citing a lack of evidence against the Cuban exile who holds Venezuelan citizenship .
+fof(ex1414051788244,axiom,(
+    ? [X1,X2,E3,X11,X4,X5,X6,X7,G8,E9,E10] :
+      ( venezuelan_1(s0,X1)
+      & citizenship_1(s0,X1)
+      & cuban_1(s0,X2)
+      & holds_3(s0,E3,X2,X1)
+      & exile_1(s0,X2)
+      & evidence_1(s0,X4)
+      & is_lack_against_2(s0,X5,X2)
+      & is_lack_of_2(s0,X5,X4)
+      & choose5(X11,may,X2,X1,X5,X4)
+      & is_arrest_of_2(s0,X6,X11)
+      & venezuelan_1(s0,X7)
+      & is_request_for_2(s0,X7,X6)
+      & u_s_1(s0,G8)
+      & officials_1(s0,G8)
+      & is_before_2(s0,E10,e0)
+      & citing_3(s0,E9,G8,X5)
+      & rejected_3(s0,E10,G8,X7)
+      & in_2(s0,E10,may) ) )).
+

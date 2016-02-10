@@ -1,0 +1,289 @@
+# ::id 1_wikipedia_KYOTO_BDS_00003,1;IE
+# ::snt Jodo Shinshu
+( ENTITY-Jodo_Shinshu / ENTITY
+      :name ( n-1 / name
+             :op1 "Jodo_Shinshu"))
+
+# ::id 2_wikipedia_KYOTO_BDS_00003,2;IE
+# ::snt Jodo Shinshu -LRB- Shin-Buddhism / True Pure Land Sect -RRB- is one of the sects of Japanese Buddhism , and a religious community that Shinran , an apprentice of Honen , succeeded and which developed Honen 's doctrine -LRB- Jodo Shu / Pure Land Buddhism -RRB- in the early Kamakura period .
+( EVENT-16 / copula
+      :ARG0 ( ENTITY-Jodo_Shinshu / ENTITY
+             :name ( n-22 / name
+                    :op1 "Shin-Buddhism_True_Pure_Land_Sect")
+             :name ( n-20 / name
+                    :op1 "Jodo_Shinshu"))
+      :ARG1 ( GROUP-1 / AND
+             :op1 ( ENTITY-2 / ENTITY
+                    :OF ( GROUP-4 / sects
+                           :DEFINITE ( ATTRIB-5 / the)
+                           :OF ( ENTITY-Japanese_Buddhism / ENTITY
+                                  :name ( n-23 / name
+                                         :op1 "Japanese_Buddhism")))
+                    :CARDINAL ( ATTRIB-3 / one))
+             :op2 ( ENTITY-6 / community
+                    :ATTRIBUTE ( ATTRIB-7 / religious)
+                    :ARG1-of ( CONJ-17 / and
+                           :op1 ( EVENT-10 / succeeded
+                                  :MOD ( mod-19 / past)
+                                  :ARG0 ( ENTITY-Shinran / apprentice
+                                         :OF ( ENTITY-Honen / ENTITY
+                                                :name ( n-24 / name
+                                                       :op1 "Honen"))
+                                         :name ( n-21 / name
+                                                :op1 "Shinran")))
+                           :op2 ( EVENT-15 / developed
+                                  :MOD ( mod-18 / past)
+                                  :ARG0 ENTITY-6
+                                  :ARG1 ( ENTITY-12 / doctrine
+                                         :POS ENTITY-Honen
+                                         :NAMELY ( ENTITY-Jodo_Shu_Pure_Land_Buddhism / ENTITY
+                                                :name ( n-25 / name
+                                                       :op1 "Jodo_Shu_Pure_Land_Buddhism")))
+                                  :IN ( ENTITY-13 / early_Kamakura_period
+                                         :DEFINITE ( ATTRIB-14 / the)))))))
+
+# ::id 3_wikipedia_KYOTO_BDS_00003,3;IE
+# ::snt Due to the historical background of the origin of the sect name , most sects belonging to this religion call themselves Shinshu as a sect name .
+( EVENT-14 / call
+      :ARG0 ( GROUP-8 / sects
+             :QUANTIFIER ( ATTRIB-9 / most)
+             :ARG0-of ( EVENT-13 / belonging
+                    :TO ( ENTITY-11 / religion
+                           :DETERMINER ( ATTRIB-12 / this))))
+      :TOCOMP ( EVENT-18 / EVENT
+             :ARG0 ( REF1-15 / themselves)
+             :ARG1 ( ENTITY-Shinshu / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Shinshu")
+                    :AS ( ENTITY-16 / name
+                           :ATTRIBUTE ( ATTRIB-17 / sect))))
+      :MOD ( mod-1 / due
+             :TO ( ENTITY-1 / background
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :ATTRIBUTE ( ATTRIB-3 / historical)
+                    :OF ( ENTITY-4 / origin
+                           :DEFINITE ( ATTRIB-5 / the)
+                           :OF ( ENTITY-6 / sect_name
+                                  :DEFINITE ( ATTRIB-7 / the))))))
+
+# ::id 4_wikipedia_KYOTO_BDS_00003,4;IE
+# ::snt It used to also be called Ikko Shu and Monto Shu .
+( EVENT-2 / used
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / it)
+      :TOCOMP ( EVENT-3 / called
+             :ARG1 REF1-1
+             :TOCOMP ( EVENT-5 / EVENT
+                    :ARG0 REF1-1
+                    :ARG1 ( GROUP-4 / AND
+                           :op1 ( ENTITY-Ikko_Shu / ENTITY
+                                  :name ( n-3 / name
+                                         :op1 "Ikko_Shu"))
+                           :op2 ( ENTITY-Monto_Shu / ENTITY
+                                  :name ( n-4 / name
+                                         :op1 "Monto_Shu"))))
+             :MOD ( mod-1 / also)))
+
+# ::id 5_wikipedia_KYOTO_BDS_00003,5;IE
+# ::snt Doctrine
+( ENTITY-1 / Doctrine)
+
+# ::id 6_wikipedia_KYOTO_BDS_00003,6;IE
+# ::snt By saying a prayer -LRB- Shomyo nenbutsu -RRB- to the Buddha -LRB- Namu Amida Butsu , Namo Amida Butsu by Hongan-ji School -RRB- , practitioners can believe in the mercy of Amida Nyorai -LRB- hereinafter called " Nyorai " -RRB- , and trust in Tariki -LRB- Buddha 's power -RRB- , which makes everyone , including the bad , go to Jodo -LRB- Pure Land -RRB- after death and become Buddha .
+( CONJ-43 / AND
+      :op1 ( EVENT-9 / called
+             :ARG1 ENTITY-7
+             :TOCOMP ( EVENT-10 / EVENT
+                    :ARG0 ENTITY-7
+                    :ARG1 ( ENTITY-Nyorai / ENTITY
+                           :name ( n-38 / name
+                                  :op1 "Nyorai")))
+             :MOD ( mod-33 / hereinafter))
+      :op2 ( CONJ-31 / and
+             :domain-of ( MD-32 / can)
+             :op1 ( EVENT-12 / believe
+                    :ARG0 ( GROUP-1 / practitioners)
+                    :IN ( ENTITY-5 / mercy
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :OF ( ENTITY-Amida_Nyorai / ENTITY
+                                  :name ( n-34 / name
+                                         :op1 "Amida_Nyorai")
+                                  :NAMELY ENTITY-7))
+                    :BY ( SITUATION-2 / FACT
+                           :THAT ( EVENT-4 / saying
+                                  :ARG0 GROUP-1
+                                  :ARG1 ( ENTITY-3 / prayer
+                                         :NAMELY ( ENTITY-Shomyo_nenbutsu / ENTITY
+                                                :name ( n-39 / name
+                                                       :op1 "Shomyo_nenbutsu")))
+                                  :TO ( ENTITY-Buddha / ENTITY
+                                         :name ( n-40 / name
+                                                :op1 "Namu_Amida_Butsu")
+                                         :name ( n-35 / name
+                                                :op1 "Buddha")
+                                         :name ( n-36 / name
+                                                :op1 "Namo_Amida_Butsu")
+                                         :BY ( ENTITY-Hongan-ji_School / ENTITY
+                                                :name ( n-41 / name
+                                                       :op1 "Hongan-ji_School"))))))
+             :op2 ( EVENT-26 / trust
+                    :ARG0 GROUP-1
+                    :IN ( ENTITY-Tariki / power
+                           :POS ENTITY-Buddha
+                           :name ( n-37 / name
+                                  :op1 "Tariki")
+                           :ARG0-of ( EVENT-15 / makes
+                                  :TOCOMP ( CONJ-30 / and
+                                         :op1 ( EVENT-21 / including
+                                                :ARG0 ( ENTITY-16 / ENTITY
+                                                       :QUANTIFIER ( ATTRIB-17 / everyone))
+                                                :ARG1 ( ENTITY-18 / ENTITY
+                                                       :DEFINITE ( ATTRIB-19 / the)
+                                                       :ATTRIBUTE ( ATTRIB-20 / bad)))
+                                         :op2 ( CONJ-29 / and
+                                                :op1 ( EVENT-24 / go
+                                                       :ARG0 ENTITY-16
+                                                       :AFTER ( ENTITY-23 / death)
+                                                       :TO ( ENTITY-22 / Jodo
+                                                              :NAMELY ( ENTITY-Pure_Land / ENTITY
+                                                                     :name ( n-42 / name
+                                                                            :op1 "Pure_Land"))))
+                                                :op2 ( EVENT-25 / become
+                                                       :ARG0 ENTITY-16
+                                                       :ARG1 ENTITY-Buddha)))))
+                    :BY SITUATION-2)))
+
+# ::id 7_wikipedia_KYOTO_BDS_00003,7;IE
+# ::snt Through this , the doctrine of Shinshu is called " Shinjin Shoin , Shomyo Ho-on " -LRB- Faith makes it happen , and praying is for gratitude -RRB- .
+( EVENT-5 / called
+      :ARG1 ( ENTITY-3 / doctrine
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( ENTITY-Shinshu / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Shinshu")))
+      :THROUGH ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :TOCOMP ( EVENT-6 / EVENT
+             :ARG0 ENTITY-3
+             :ARG1 ( ENTITY-Shinjin_Shoin / ENTITY
+                    :name ( n-3 / name
+                           :op1 "Shomyo_Ho-on")
+                    :name ( n-1 / name
+                           :op1 "Shinjin_Shoin"))))
+
+# ::id 8_wikipedia_KYOTO_BDS_00003,8;IE
+# ::snt Rennyo , the 8th head-priest of Hongan-ji Temple , stated in " Ofumi " as follows .
+( EVENT-6 / stated
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Rennyo / head-priest
+             :DETERMINER ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / 8th)
+             :OF ( ENTITY-Hongan-ji_Temple / ENTITY
+                    :name ( n-3 / name
+                           :op1 "Hongan-ji_Temple"))
+             :name ( n-2 / name
+                    :op1 "Rennyo"))
+      :AS ( EVENT-5 / follows)
+      :IN ( ENTITY-Ofumi / ENTITY
+             :name ( n-4 / name
+                    :op1 "Ofumi")))
+
+# ::id 9_wikipedia_KYOTO_BDS_00003,13;IE
+# ::snt This is based on Forty-eight Vows of " Infinite Life Sutra -LRB- Bussetsu Muryojukyo -RRB- " , especially the Eighteenth Vow -LRB- Senjaku Hongan -RRB- called " O'Hongan .
+( CONJ-7 / AND
+      :op1 ( EVENT-5 / is_based
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :DETERMINER ( ATTRIB-2 / this))
+             :ON ( GROUP-3 / Vows
+                    :OF ( ENTITY-Infinite_Life_Sutra / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "Bussetsu_Muryojukyo")
+                           :name ( n-2 / name
+                                  :op1 "Infinite_Life_Sutra"))
+                    :CARDINAL ( ATTRIB-4 / forty-eight)))
+      :op2 ( EVENT-8 / EVENT
+             :ARG1 ( ENTITY-Eighteenth_Vow / ENTITY
+                    :name ( n-6 / name
+                           :op1 "Senjaku_Hongan")
+                    :name ( n-3 / name
+                           :op1 "Eighteenth_Vow")
+                    :ARG0-of ( EVENT-7 / called
+                           :ARG1 ( ENTITY-O ' Hongan / ENTITY
+                                  :name ( n-5 / name
+                                         :op1 "O ' Hongan"))))
+             :MOD ( mod-1 / especially)))
+
+# ::id 10_wikipedia_KYOTO_BDS_00003,14;IE
+# ::snt The principal image -LRB- Honzon -RRB- is only Amida Nyorai .
+( EVENT-5 / copula
+      :ARG0 ( ENTITY-1 / image
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / principal)
+             :NAMELY ( ENTITY-Honzon / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Honzon")))
+      :ARG1 ( ENTITY-Amida_Nyorai / ENTITY
+             :name ( n-1 / name
+                    :op1 "Amida_Nyorai")
+             :QUANTIFIER ( ATTRIB-4 / only)))
+
+# ::id 11_wikipedia_KYOTO_BDS_00003,15;IE
+# ::snt However , Takada School and a part of the sect have Amida Nyorai , Kanzeon Bosatsu and Seishi Bosatsu as their principal images , in Zenko-ji Amida Sanson style .
+( EVENT-10 / have
+      :ARG0 ( GROUP-1 / AND
+             :op1 ( ENTITY-Takada_School / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Takada_School"))
+             :op2 ( ENTITY-2 / part
+                    :OF ( ENTITY-3 / sect
+                           :DEFINITE ( ATTRIB-4 / the))))
+      :ARG1 ( GROUP-5 / AND
+             :op1 ( ENTITY-Amida_Nyorai / ENTITY
+                    :name ( n-3 / name
+                           :op1 "Amida_Nyorai"))
+             :op2 ( ENTITY-Kanzeon_Bosatsu / ENTITY
+                    :name ( n-4 / name
+                           :op1 "Kanzeon_Bosatsu"))
+             :op3 ( ENTITY-Seishi_Bosatsu / ENTITY
+                    :name ( n-5 / name
+                           :op1 "Seishi_Bosatsu")))
+      :IN ( ENTITY-9 / Zenko-ji_Amida_Sanson_style)
+      :AS ( GROUP-6 / images
+             :ATTRIBUTE ( ATTRIB-8 / principal)
+             :POS ( REF1-7 / their))
+      :MOD ( mod-1 / however))
+
+# ::id 12_wikipedia_KYOTO_BDS_00003,16;IE
+# ::snt Misunderstanding of nenbutsu
+( EVENT-2 / misunderstanding
+      :OF ( GROUP-1 / nenbutsu))
+
+# ::id 13_wikipedia_KYOTO_BDS_00003,17;IE
+# ::snt Generally , the idea " that the vow of Amida Nyorai is offered to us even at this moment and we are saved " -LRB- Gensho shojoju -RRB- was misunderstood by a number of people , and repeatedly corrected .
+( CONJ-20 / and
+      :op1 ( EVENT-13 / misunderstood
+             :MOD ( mod-21 / past)
+             :ARG0 ( ENTITY-11 / number
+                    :OF ( GROUP-12 / people))
+             :ARG1 ( ENTITY-1 / idea
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :THAT ( CONJ-18 / and
+                           :op1 ( EVENT-8 / offered
+                                  :ARG1 ( ENTITY-3 / vow
+                                         :DEFINITE ( ATTRIB-4 / the)
+                                         :OF ( ENTITY-Amida_Nyorai / ENTITY
+                                                :name ( n-25 / name
+                                                       :op1 "Amida_Nyorai")))
+                                  :AT ( ENTITY-6 / moment
+                                         :DETERMINER ( ATTRIB-7 / this))
+                                  :TO ( REF1-5 / us))
+                           :op2 ( EVENT-10 / saved
+                                  :ARG1 ( REF2-9 / we)))
+                    :NAMELY ( ENTITY-Gensho_shojoju / ENTITY
+                           :name ( n-26 / name
+                                  :op1 "Gensho_shojoju"))))
+      :op2 ( EVENT-14 / corrected
+             :MOD ( mod-23 / past)
+             :ARG1 ENTITY-1
+             :MOD ( mod-22 / repeatedly))
+      :MOD ( mod-24 / generally))

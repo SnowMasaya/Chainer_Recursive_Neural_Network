@@ -1,0 +1,126 @@
+# ::id 1_wikipedia_KYOTO_BDS_00006,1;NJ
+# ::snt 阿弥陀三尊
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[阿弥陀三尊])
+
+# ::id 2_wikipedia_KYOTO_BDS_00006,2;NJ
+# ::snt 阿弥陀三尊 （ あみださんぞん ） は 、 仏教 における 仏像 安置 形式 の 一 つ 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[あみださんぞん], ENTITY[阿弥陀三尊]) ∧
+  仏教(ENTITY[3]) ∧
+   における_仏像_安置_形式(ENTITY[3], ENTITY[2]) ∧
+    (CD_一_つ(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧ xxx(EVENT[4], ENTITY[阿弥陀三尊], ENTITY[1]))
+
+# ::id 3_wikipedia_KYOTO_BDS_00006,3;NJ
+# ::snt 阿弥陀如来 を 中尊 と し 、 観音菩薩 を 左脇侍 、 勢至菩薩 を 右脇侍 と する 三尊形式 で ある 。
+∃ ENTITY[1] EVENT[3] EVENT[4] EVENT[5] EVENT[6] (
+ ENTITY[1] = *pro* ∧
+  し(EVENT[3], ENTITY[三尊形式], ENTITY[阿弥陀如来], ENTITY[中尊]) ∧
+   xxx(EVENT[4], ENTITY[三尊形式], ENTITY[観音菩薩], ENTITY[左脇侍]) ∧ する(EVENT[5], ENTITY[三尊形式], ENTITY[勢至菩薩], ENTITY[右脇侍]) ∧
+   で_ある(EVENT[6], ENTITY[1], ENTITY[三尊形式]))
+
+# ::id 4_wikipedia_KYOTO_BDS_00006,4;NJ
+# ::snt （ なお 、 この 場合 の 「 左 」 「 右 」 と は 中尊 から 見 た 「 左 」 「 右 」 を 指す 。 ）
+∃ SITUATION[14] ENTITY[8] EVENT[9] EVENT[13] GROUP[10] ENTITY[6] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ 場合(ENTITY[2]) ∧
+  左(ENTITY[4]) ∧
+   右(ENTITY[5]) ∧
+    is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧
+     equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[2], ENTITY[5], ENTITY[4]} ∧
+       ∃ ENTITY[11] (左(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (右(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+        見_た(EVENT[9], ENTITY[8], ENTITY[6]) ∧ から(EVENT[9]) = ENTITY[中尊] ∧
+         equals(GROUP[10], ENTITY[6]) ∧
+         ADV_なお(SITUATION[14]) ∧ past(EVENT[9]) ∧ FACT(SITUATION[14], 指す(EVENT[13], ENTITY[1], ENTITY[6])))
+
+# ::id 5_wikipedia_KYOTO_BDS_00006,5;NJ
+# ::snt 観音菩薩 は 阿弥陀如来 の 慈悲 を あらわす 化身 で あり 、 勢至菩薩 は 知恵 を あらわす 化身 と さ れる 。
+∃ EVENT[4] EVENT[5] EVENT[9] EVENT[10] ENTITY[3] ENTITY[1] ENTITY[8] ENTITY[6] (
+ の_慈悲(ENTITY[阿弥陀如来], ENTITY[3]) ∧
+  あらわす(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 化身(ENTITY[1]) ∧
+   知恵(ENTITY[8]) ∧
+    あらわす(EVENT[9], ENTITY[6], ENTITY[8]) ∧ 化身(ENTITY[6]) ∧
+     で_あり(EVENT[5], ENTITY[観音菩薩], ENTITY[1]) ∧ さ(EVENT[10], _, ENTITY[勢至菩薩], ENTITY[6]))
+
+# ::id 6_wikipedia_KYOTO_BDS_00006,6;NJ
+# ::snt 脇侍 の 観音菩薩 は 、 宝冠 の 上 に 阿弥陀 の 化仏 を 表す し 、 勢至菩薩 は 水瓶 を 持つ ので 、 両脇侍 は 比較的 区別 が つけ やすい 。
+∃ EVENT[5] EVENT[7] EVENT[9] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[6] ENTITY[8] ENTITY[1] (
+ の_xxx(ENTITY[脇侍], ENTITY[観音菩薩]) ∧
+  宝冠(ENTITY[3]) ∧
+   の_上(ENTITY[3], ENTITY[2]) ∧
+    の_化仏(ENTITY[阿弥陀], ENTITY[4]) ∧
+     水瓶(ENTITY[6]) ∧
+      区別(ENTITY[8]) ∧
+       ADV_比較的(EVENT[9]) ∧
+        CRD_ので(CONJ_し(表す(EVENT[5], ENTITY[観音菩薩], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2],
+              持つ(EVENT[7], ENTITY[勢至菩薩], ENTITY[6])), つけ_やすい(EVENT[9], (ENTITY[1], ENTITY[8]))))
+
+# ::id 7_wikipedia_KYOTO_BDS_00006,7;NJ
+# ::snt 日本 で は 、 法隆寺 献納 宝物 ・ 四十八体仏 （ 東京国立博物館 蔵 ） 中 の 銅造阿弥陀三尊像 （ 重文 ） 、 法隆寺 の 橘夫人厨子 内 に 安置 の 銅造阿弥陀三尊像 （ 国宝 ） など が 古い 作例 で ある 。
+∃ ATTRIB[12] EVENT[13] GROUP[2] ENTITY[11] ENTITY[1] (
+ ∃ ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] (
+  四十八体仏_中(ENTITY[6]) ∧
+   法隆寺_献納_宝物(ENTITY[5]) ∧
+    namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+     東京国立博物館_蔵(ENTITY[4]) ∧
+      namely_-ENTITY-(ENTITY[4], ENTITY[6]) ∧
+       の_xxx(ENTITY[6], ENTITY[銅造阿弥陀三尊像]) ∧
+        重文(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[銅造阿弥陀三尊像]) ∧ is_element_of(ENTITY[銅造阿弥陀三尊像], GROUP[2])) ∧
+  ∃ EVENT[10] ENTITY[9] ENTITY[7] (
+   の_橘夫人厨子_内(ENTITY[法隆寺], ENTITY[9]) ∧
+    安置_の(EVENT[10], _, ENTITY[銅造阿弥陀三尊像]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+     国宝(ENTITY[7]) ∧ namely_-ENTITY-(ENTITY[7], ENTITY[銅造阿弥陀三尊像]) ∧ is_element_of(ENTITY[銅造阿弥陀三尊像], GROUP[2])) ∧
+  など(GROUP[2], ENTITY[1]) ∧
+   古い(ATTRIB[12]) ∧
+    ATTRIBUTE_作例(ATTRIB[12], ENTITY[11]) ∧ で_ある(EVENT[13], ENTITY[1], ENTITY[11]) ∧ で(EVENT[13]) = ENTITY[日本])
+
+# ::id 8_wikipedia_KYOTO_BDS_00006,8;NJ
+# ::snt 中尊 を 坐像 、 脇侍 を 立像 （ りゅうぞう ） と する もの （ 例 ： 京都 ・ 仁和寺像 ） 、 中尊 ・ 脇侍 とも 立像 と する もの （ 例 ： 兵庫 ・ 浄土寺像 ） 、 中尊 ・ 脇侍 とも 坐像 と する もの （ 例 ： 京都 ・ 清凉寺像 ） 、 中尊 は 坐像 、 脇侍 は 跪坐（ひざまずく） する もの （ 例 ： 京都 ・ 三千院像 ） など 、 形式 は 各種 ある 。
+∃ EVENT[27] EVENT[6] EVENT[8] EVENT[20] EVENT[24] EVENT[25] ENTITY[5] ENTITY[7] ENTITY[3] GROUP[12] ENTITY[9] ENTITY[19] ENTITY[15] ENTITY[23] ENTITY[21] GROUP[2] ENTITY[1] (
+ 坐像(ENTITY[5]) ∧
+  立像(ENTITY[7]) ∧
+   namely_-ENTITY-(ENTITY[りゅうぞう], ENTITY[7]) ∧
+    xxx(EVENT[6], ENTITY[3], ENTITY[中尊], ENTITY[5]) ∧ する(EVENT[8], ENTITY[3], ENTITY[脇侍], ENTITY[7]) ∧
+     もの(ENTITY[3]) ∧
+     namely_-ENTITY-(ENTITY[例_京都_仁和寺像], ENTITY[3]) ∧
+      is_element_of(ENTITY[中尊], GROUP[12]) ∧ is_element_of(ENTITY[脇侍], GROUP[12]) ∧
+       とも ENTITY[11] (is_element_of(ENTITY[11], GROUP[12]),
+        ∃ EVENT[14] ENTITY[13] (立像(ENTITY[13]) ∧ する(EVENT[14], ENTITY[9], ENTITY[11], ENTITY[13]))) ∧ もの(ENTITY[9]) ∧
+        namely_-ENTITY-(ENTITY[例_兵庫_浄土寺像], ENTITY[9]) ∧
+         坐像(ENTITY[19]) ∧
+          とも GROUP[18] ENTITY[17] ((is_element_of(ENTITY[中尊], GROUP[18]) ∧ is_element_of(ENTITY[脇侍], GROUP[18]) ∧ equals(GROUP[18], ENTITY[17])),
+           する(EVENT[20], ENTITY[15], ENTITY[17], ENTITY[19])) ∧ もの(ENTITY[15]) ∧
+           namely_-ENTITY-(ENTITY[例_京都_清凉寺像], ENTITY[15]) ∧
+            坐像(ENTITY[23]) ∧
+             xxx(EVENT[24], (ENTITY[21], ENTITY[中尊]), _, ENTITY[23]) ∧
+              跪坐（ひざまずく）する.0(EVENT[25], (ENTITY[21], ENTITY[脇侍])) ∧ もの(ENTITY[21]) ∧
+              namely_-ENTITY-(ENTITY[例_京都_三千院像], ENTITY[21]) ∧
+               is_element_of(ENTITY[3], GROUP[2]) ∧ is_element_of(ENTITY[9], GROUP[2]) ∧ is_element_of(ENTITY[15], GROUP[2]) ∧
+                is_element_of(ENTITY[21], GROUP[2]) ∧
+                など_形式(GROUP[2], ENTITY[1]) ∧ 各種 ENTITY[26] (ENTITY[26] = ENTITY[1], ある(EVENT[27], ENTITY[26])))
+
+# ::id 9_wikipedia_KYOTO_BDS_00006,9;NJ
+# ::snt 中尊 は 坐像 、 脇侍 は 跪坐 と する もの は 来迎 形式 の 阿弥陀三尊像 で あり 、 この 場合 、 左脇侍 の 観音菩薩 は 往生者 を 迎え 取る ため の 蓮台 を 捧げ 持つ の が 普通 で ある 。
+∃ SITUATION[12] SITUATION[10] EVENT[8] EVENT[14] EVENT[15] EVENT[16] ENTITY[7] ENTITY[13] ENTITY[11] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] ENTITY[9] (
+ 坐像(ENTITY[3]) ∧
+  跪坐(ENTITY[5]) ∧
+   xxx(EVENT[4], ENTITY[1], ENTITY[中尊], ENTITY[3]) ∧ する(EVENT[6], ENTITY[1], ENTITY[脇侍], ENTITY[5]) ∧
+    もの(ENTITY[1]) ∧
+    場合(ENTITY[9]) ∧
+     の_xxx(ENTITY[左脇侍], ENTITY[観音菩薩]) ∧
+      来迎_形式(ENTITY[7]) ∧
+       の_xxx(ENTITY[7], ENTITY[阿弥陀三尊像]) ∧
+        往生者(ENTITY[13]) ∧
+         ため(SITUATION[12], 迎え_取る(EVENT[14], _, ENTITY[13])) ∧
+          の_蓮台(SITUATION[12], ENTITY[11]) ∧
+           の(SITUATION[10], 捧げ_持つ(EVENT[15], ENTITY[観音菩薩], ENTITY[11])) ∧
+            で_あり(EVENT[8], ENTITY[1], ENTITY[阿弥陀三尊像]) ∧
+             普通_で_ある(EVENT[16], (ENTITY[観音菩薩], SITUATION[10])) ∧ ADV(EVENT[16]) = ENTITY[9])
+
+# ::id 10_wikipedia_KYOTO_BDS_00006,10;NJ
+# ::snt また 、 地蔵菩薩 と 龍樹菩薩 を 含め て 五尊像 と し た 作例 も み られる 。
+∃ ENTITY[3] EVENT[5] EVENT[6] EVENT[7] GROUP[4] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  CONJ_と(is_element_of(ENTITY[地蔵菩薩], GROUP[4]), is_element_of(ENTITY[龍樹菩薩], GROUP[4])) ∧
+   CONJ_te(含め_て(EVENT[5], ENTITY[1], GROUP[4]), し_た(EVENT[6], ENTITY[1], ENTITY[3], ENTITY[五尊像])) ∧
+    作例(ENTITY[1]) ∧ past(EVENT[6]) ∧ み(EVENT[7], _, ENTITY[1]))

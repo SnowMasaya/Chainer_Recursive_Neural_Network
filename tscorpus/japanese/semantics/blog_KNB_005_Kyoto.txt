@@ -1,0 +1,134 @@
+# ::id 1_blog_KNB_005_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+∃ EVENT[2] ENTITY[1] (京都_観光(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_005_Kyoto_1-1-1-01;NJ
+# ::snt 銀閣寺 。
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[銀閣寺])
+
+# ::id 3_blog_KNB_005_Kyoto_1-1-10-01;NJ
+# ::snt あ 、 そう そう 。
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 4_blog_KNB_005_Kyoto_1-1-11-01;NJ
+# ::snt そもそも 銀閣寺 とか 金閣寺 なんて 言葉 は 存在 し ない 。
+∃ GROUP[3] ENTITY[1] (
+ CONJ_とか(is_element_of(ENTITY[銀閣寺], GROUP[3]), is_element_of(ENTITY[金閣寺], GROUP[3])) ∧
+  なんて ENTITY[2] (is_element_of(ENTITY[2], GROUP[3]), LINK_言葉(ENTITY[2], ENTITY[1])) ∧ ¬ ∃ EVENT[4] 存在する.0(EVENT[4], ENTITY[1]))
+
+# ::id 5_blog_KNB_005_Kyoto_1-1-12-01;NJ
+# ::snt 慈照寺 と 鹿苑寺 。
+∃ EVENT[2] GROUP[1] (
+ CONJ_と(is_element_of(ENTITY[慈照寺], GROUP[1]), is_element_of(ENTITY[鹿苑寺], GROUP[1])) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 6_blog_KNB_005_Kyoto_1-1-13-01;NJ
+# ::snt これ が 正解 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = これ ∧ 正解(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 7_blog_KNB_005_Kyoto_1-1-14-01;NJ
+# ::snt でも 京都市 バス に でかでか と 銀閣寺 って 書い て あっ た し 。
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ 京都市_バス(ENTITY[1]) ∧
+  ADV_でかでか(ATTRIB[2]) ∧
+   って(ENTITY[銀閣寺], ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     MD_し(書い_て_あっ_た(EVENT[4], ENTITY[3]) ∧ と(EVENT[4]) = ATTRIB[2] ∧ に(EVENT[4]) = ENTITY[1]))
+
+# ::id 8_blog_KNB_005_Kyoto_1-1-15-01;NJ
+# ::snt まあ ええ か 。
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ MD_か(ええ(EVENT[2], ENTITY[1])))
+
+# ::id 9_blog_KNB_005_Kyoto_1-1-2-01;NJ
+# ::snt 京大 から 自転車 を こぐ こと わずか １０ 分 。
+∃ ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] (
+ ENTITY[2] = *speaker* ∧
+  自転車(ENTITY[3]) ∧
+   FACT(SITUATION[1], こぐ(EVENT[4], ENTITY[2], ENTITY[3]) ∧ から(EVENT[4]) = ENTITY[京大]) ∧
+    CD_１０_分(ENTITY[5]) ∧
+     ADV_わずか(EVENT[6]) ∧ xxx(EVENT[6], _, ENTITY[5]) ∧ こと(EVENT[6]) = SITUATION[1])
+
+# ::id 10_blog_KNB_005_Kyoto_1-1-3-01;NJ
+# ::snt ３・４ 時間目 が 休講 だっ た ので 、 ふらり と 銀閣寺 まで いっ て き まし た 。
+∃ ATTRIB[5] ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  CD_３.４_時間目(ENTITY[2]) ∧
+   休講(ENTITY[3]) ∧
+    ADV_ふらり(ATTRIB[5]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[6]) ∧
+       CRD_ので(だっ_た(EVENT[4], ENTITY[2], ENTITY[3]),
+        いっ_て_き_まし_た(EVENT[6], ENTITY[1]) ∧ まで(EVENT[6]) = ENTITY[銀閣寺] ∧ と(EVENT[6]) = ATTRIB[5]))
+
+# ::id 11_blog_KNB_005_Kyoto_1-1-3-02;NJ
+# ::snt 自主 ？
+∃ EVENT[2] ENTITY[1] (自主(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 12_blog_KNB_005_Kyoto_1-1-4-01;NJ
+# ::snt かつて 小学校 の とき に 見 た 銀閣寺 は 、 その すぐ 前 に 金閣寺 を 見 て き て た こと も あっ て か 、 僕 の 目 に は 結構 しょぼく 写っ て まし た 。
+∃ ENTITY[11] SITUATION[10] SITUATION[9] ENTITY[16] ENTITY[3] EVENT[13] EVENT[14] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[12] ENTITY[15] ENTITY[1] (
+ ENTITY[3] = *speaker* ∧
+  小学校(ENTITY[5]) ∧
+   の_とき(ENTITY[5], ENTITY[4]) ∧
+    見_た(EVENT[6], ENTITY[3], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[4] ∧ 銀閣寺(ENTITY[1]) ∧
+     ADV_すぐ(ENTITY[12]) ∧ 前(ENTITY[12]) ∧
+      ENTITY[16] = 僕{ENTITY[1], ENTITY[12], ENTITY[金閣寺], ENTITY[4], ENTITY[5]} ∧
+       の_目(ENTITY[16], ENTITY[15]) ∧
+        ADV_かつて(EVENT[6]) ∧
+         past(EVENT[6]) ∧
+          ENTITY[11] = *speaker*{ENTITY[1], ENTITY[4], ENTITY[5]} ∧
+           こと(SITUATION[10], 見_て_き_た(EVENT[13], ENTITY[11], ENTITY[金閣寺]) ∧ に(EVENT[13]) = ENTITY[12]) ∧
+            FACT(SITUATION[9], あっ_て(EVENT[14], SITUATION[10])) ∧
+             past(EVENT[13]) ∧
+              か SITUATION[8] (SITUATION[8] = SITUATION[9],
+               ∃ EVENT[17] EVENT[19] (
+                ADV_結構(EVENT[17]) ∧
+                 past(EVENT[19]) ∧
+                  しょぼく(EVENT[17], ENTITY[1]) ∧
+                   写っ_て_まし_た(EVENT[19], ENTITY[1]) ∧ に(EVENT[19]) = ENTITY[15] ∧
+                    te(EVENT[19]) = SITUATION[8])))
+
+# ::id 13_blog_KNB_005_Kyoto_1-1-5-01;NJ
+# ::snt 前 に だれ か が いっ て た けど 、 外国人 に は やっぱ 金閣寺 の ほう が 感激 の 度合い が 大きい らしい です 。
+∃ SITUATION[9] ENTITY[1] ENTITY[5] ENTITY[4] (
+ 外国人(ENTITY[4]) ∧
+  前(ENTITY[1]) ∧
+   の_ほう(ENTITY[金閣寺], ENTITY[5]) ∧
+    ADV_やっぱ(SITUATION[9]) ∧
+     CRD_けど(か ENTITY[2] ∃ EVENT[3] (past(EVENT[3]) ∧ いっ_て_た(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1]),
+      FACT(SITUATION[9],
+       MD_らしい(∃ EVENT[8] ENTITY[7] ENTITY[6] (
+             感激(ENTITY[7]) ∧
+              の_度合い(ENTITY[7], ENTITY[6]) ∧
+               大きい_です(EVENT[8], (ENTITY[5], ENTITY[6])) ∧ に(EVENT[8]) = ENTITY[4])))))
+
+# ::id 14_blog_KNB_005_Kyoto_1-1-6-01;NJ
+# ::snt 確か に 銀閣寺 は しょぼい 。
+∃ EVENT[1] (ADV_確か_に(EVENT[1]) ∧ しょぼい(EVENT[1], ENTITY[銀閣寺]))
+
+# ::id 15_blog_KNB_005_Kyoto_1-1-7-01;NJ
+# ::snt 金閣寺 より も 小さい し 、 てか そもそも 銀色 じゃ ない し 。
+∃ SITUATION[5] SITUATION[6] ENTITY[1] EVENT[2] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  銀色(ENTITY[3]) ∧
+   ADV_てか(SITUATION[6]) ∧
+    ADV_そもそも(SITUATION[5]) ∧
+     MD_し(CONJ_し(小さい(EVENT[2], ENTITY[1]) ∧ より(EVENT[2]) = ENTITY[金閣寺],
+           FACT(SITUATION[6], FACT(SITUATION[5], ¬ ∃ EVENT[4] じゃ(EVENT[4], ENTITY[1], ENTITY[3]))))))
+
+# ::id 16_blog_KNB_005_Kyoto_1-1-8-01;NJ
+# ::snt でも 実際 行っ て み て 、 この こじんまり し た 感じ が いい なあ って 思っ た 。
+∃ ENTITY[1] ENTITY[6] EVENT[3] EVENT[9] EVENT[4] ENTITY[2] EVENT[7] ENTITY[5] (
+ ENTITY[6] = *pro*{ENTITY[1], ENTITY[2]} ∧
+  THAT_感じ(し_た(EVENT[7], ENTITY[6]), ENTITY[5]) ∧
+   ADV_こじんまり(EVENT[7]) ∧
+    before(EVENT[4], EVENT[7]) ∧
+     ENTITY[1] = *speaker* ∧
+      実際(ENTITY[2]) ∧
+       past(EVENT[4]) ∧
+        CONJ_te(行っ_て_み(EVENT[3], ENTITY[1]) ∧ ADV(EVENT[3]) = ENTITY[2],
+         思っ_た(EVENT[4], ENTITY[1], MD_なあ(いい(EVENT[9], ENTITY[5])))))
+
+# ::id 17_blog_KNB_005_Kyoto_1-1-9-01;NJ
+# ::snt なんか 落ち着く し 。
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *speaker* ∧ ADV_なんか(EVENT[2]) ∧ MD_し(落ち着く(EVENT[2], ENTITY[1])))

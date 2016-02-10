@@ -1,0 +1,2008 @@
+# ::id 1_nonfiction_MASC;HistoryGreek;AT1-1;NE
+# ::snt A Brief History
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (brief(ATTRIB[2]) ∧ is_History_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 2_nonfiction_MASC;HistoryGreek;AT2-1;NE
+# ::snt Prehistoric man in Asia Minor -LRB- now modern Turkey -RRB- or Greece could look out across the Aegean toward the horizon and see the faint silhouette of land .
+∃ ATTRIB[2] ATTRIB[7] GROUP[3] ENTITY[1] ENTITY[4] ENTITY[8] ENTITY[6] (
+ horizon(ENTITY[4]) ∧
+  faint(ATTRIB[7]) ∧
+   land(ENTITY[8]) ∧
+    is_silhouette_of(ENTITY[6], ENTITY[8]) ∧ is_silhouette_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     prehistoric(ATTRIB[2]) ∧
+      CONJ_or(is_-ENTITY-_namely(ENTITY[Asia_Minor], ENTITY[now_modern_Turkey]) ∧ is_element_of(ENTITY[Asia_Minor], GROUP[3]), is_element_of(ENTITY[Greece], GROUP[3])) ∧
+       is_man_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_man_in(ENTITY[1], GROUP[3]) ∧
+        MD_could(∃ EVENT[5] EVENT[9] CONJ_and(look.01(EVENT[5], ENTITY[1]) ∧ toward(EVENT[5]) = ENTITY[4] ∧
+                   across(EVENT[5]) = ENTITY[Aegean], see.01(EVENT[9], ENTITY[1], ENTITY[6]))))
+
+# ::id 3_nonfiction_MASC;HistoryGreek;AT2-2;NE
+# ::snt Their curiosity pushed them to build vessels that were strong enough to ford the open seas and reach these islands , marking the start of the long legacy of Mediterranean seafaring .
+∃ ATTRIB[7] REF2[3] REF1[2] ATTRIB[18] ATTRIB[16] ATTRIB[9] EVENT[10] EVENT[12] EVENT[13] EVENT[20] EVENT[19] EVENT[4] GROUP[5] ENTITY[1] GROUP[8] GROUP[11] ENTITY[17] ENTITY[15] ENTITY[14] (
+ open(ATTRIB[9]) ∧
+  is_seas_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+   islands(GROUP[11]) ∧
+    long(ATTRIB[16]) ∧
+     mediterranean(ATTRIB[18]) ∧
+      is_seafaring_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧
+       is_legacy_of(ENTITY[15], ENTITY[17]) ∧ is_legacy_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+        is_start_of(ENTITY[14], ENTITY[15]) ∧
+         REF1[2] = their ∧
+          is_curiosity_POS(ENTITY[1], REF1[2]) ∧
+           REF2[3] = them ∧
+            enough(ATTRIB[7]) ∧
+             is_strong_to(ATTRIB[7],
+              CONJ_and(ford.01(EVENT[10], _, GROUP[8]), reach.01(EVENT[12], _, GROUP[11]))) ∧
+             be.01(EVENT[13], GROUP[5], ATTRIB[7]) ∧ vessels(GROUP[5]) ∧
+              is_before(EVENT[13], EVENT[4]) ∧
+               past(EVENT[4]) ∧
+                push.02(EVENT[4], ENTITY[1], REF2[3],
+                 CONJ_and(build.01(EVENT[20], REF2[3], GROUP[5]), mark.01(EVENT[19], GROUP[5], ENTITY[14]))))
+
+# ::id 4_nonfiction_MASC;HistoryGreek;AT3-1;NE
+# ::snt Around 7000 b.c. , the Phoenicians set out from what is now Iran to explore their surroundings .
+∃ REF1[8] PRP[6] EVENT[4] EVENT[9] EVENT[10] GROUP[7] ENTITY[2] DATE[1] (
+ (CD_7000(DATE[1]), ADV_around(DATE[1]) ∧ b.c.(DATE[1])) ∧
+  be.01(EVENT[4], ENTITY[2], ENTITY[Iran]) ∧
+   REF1[8] = their ∧
+    is_surroundings_POS(GROUP[7], REF1[8]) ∧
+     is_FACT_THAT(PRP[6], explore.01(EVENT[9], GROUP[Phoenicians], GROUP[7])) ∧
+      TMP_now(EVENT[4]) ∧
+       past(EVENT[10]) ∧
+        set.07(EVENT[10], GROUP[Phoenicians]) ∧ PRP(EVENT[10]) = PRP[6] ∧ from(EVENT[10]) = ENTITY[2] ∧
+         is_contained_in(TMP(EVENT[10]), DATE[1]))
+
+# ::id 5_nonfiction_MASC;HistoryGreek;AT3-2;NE
+# ::snt They eventually reached the islands , and founded colonies on the islands in the northernmost part of the Aegean Sea .
+∃ REF1[1] ATTRIB[8] EVENT[3] EVENT[9] GROUP[5] GROUP[2] ENTITY[7] GROUP[6] (
+ islands(GROUP[2]) ∧
+  northernmost(ATTRIB[8]) ∧
+   is_part_of(ENTITY[7], ENTITY[Aegean_Sea]) ∧ is_part_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    is_islands_in(GROUP[6], ENTITY[7]) ∧
+     REF1[1] = they ∧
+      colonies(GROUP[5]) ∧
+       TMP_eventually(EVENT[3]) ∧
+        past(EVENT[3]) ∧
+         past(EVENT[9]) ∧
+          CONJ_and(reach.01(EVENT[3], REF1[1], GROUP[2]),
+           found.01(EVENT[9], REF1[1], GROUP[5]) ∧ on(EVENT[9]) = GROUP[6]))
+
+# ::id 6_nonfiction_MASC;HistoryGreek;AT4-1;NE
+# ::snt An important early material , obsidian , was discovered on the island of Milos .
+∃ ATTRIB[3] EVENT[5] ENTITY[1] ENTITY[2] ENTITY[4] (
+ is_island_of(ENTITY[4], ENTITY[Milos]) ∧
+  important(ATTRIB[3]) ∧
+   is_early_material_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    obsidian(ENTITY[1]) ∧
+     is_-ENTITY-_namely(ENTITY[2], ENTITY[1]) ∧
+      past(EVENT[5]) ∧ discover.01(EVENT[5], _, ENTITY[2]) ∧ on(EVENT[5]) = ENTITY[4])
+
+# ::id 7_nonfiction_MASC;HistoryGreek;AT4-2;NE
+# ::snt Obsidian is a hard , vitreous volcanic rock , which could be fashioned into tools for cutting and stabbing .
+∃ ATTRIB[4] ATTRIB[3] EVENT[11] ENTITY[2] ENTITY[1] (
+ Obsidian(ENTITY[1]) ∧
+  hard(ATTRIB[3]) ∧
+   vitreous(ATTRIB[4]) ∧
+    MD_could(∃ SITUATION[7] EVENT[8] EVENT[9] EVENT[10] GROUP[6] (
+          is_FACT_THAT(SITUATION[7], CONJ_and(cutting(EVENT[8]), stabbing(EVENT[9]))) ∧
+           is_tools_for(GROUP[6], SITUATION[7]) ∧
+            fashion.01(EVENT[10], _, ENTITY[2]) ∧ into(EVENT[10]) = GROUP[6])) ∧
+     is_volcanic_rock_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_volcanic_rock_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ be.01(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 8_nonfiction_MASC;HistoryGreek;AT4-3;NE
+# ::snt The high quality of the seam on Milos ensured that the area remained popular with early travelers .
+∃ ATTRIB[8] ATTRIB[6] ATTRIB[2] EVENT[9] EVENT[4] GROUP[7] ENTITY[3] ENTITY[5] ENTITY[1] (
+ high(ATTRIB[2]) ∧
+  is_seam_on(ENTITY[3], ENTITY[Milos]) ∧
+   is_quality_of(ENTITY[1], ENTITY[3]) ∧ is_quality_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    area(ENTITY[5]) ∧
+     early(ATTRIB[8]) ∧
+      is_travelers_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+       is_popular_with(ATTRIB[6], GROUP[7]) ∧
+        is_before(EVENT[9], EVENT[4]) ∧
+         past(EVENT[4]) ∧
+          ensure.01(EVENT[4], ENTITY[1], remain.01(EVENT[9], ENTITY[5]) ∧ ATTRIBUTE(EVENT[9]) = ATTRIB[6]))
+
+# ::id 9_nonfiction_MASC;HistoryGreek;AT5-1;NE
+# ::snt The basic elements of life in the Aegean began to come together as early as 5000 b.c. , and were already in place by the late Bronze Age -LRB- c. 2700 b.c. -RRB- .
+∃ ATTRIB[2] EVENT[6] EVENT[4] EVENT[11] DATE[5] ENTITY[9] ENTITY[3] DATE[10] GROUP[1] (
+ basic(ATTRIB[2]) ∧
+  is_life_in(ENTITY[3], ENTITY[Aegean]) ∧
+   is_elements_of(GROUP[1], ENTITY[3]) ∧ is_elements_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    (CD_2700(DATE[10]), ADV_c.(DATE[10]) ∧ b.c.(DATE[10])) ∧
+     is_-DATE-_namely(DATE[late_Bronze_Age], DATE[10]) ∧
+      (CD_5000(DATE[5]), b.c.(DATE[5])) ∧
+       place(ENTITY[9]) ∧
+        ADV_together(EVENT[6]) ∧
+         is_TMP_as_early_as(EVENT[6], DATE[5]) ∧
+          past(EVENT[4]) ∧
+           TMP_already(EVENT[11]) ∧
+            past(EVENT[11]) ∧
+             CONJ_and(begin.01(EVENT[4], GROUP[1], come.01(EVENT[6], GROUP[1])),
+              be.01(EVENT[11], GROUP[1]) ∧ by(EVENT[11]) = DATE[late_Bronze_Age] ∧
+               in(EVENT[11]) = ENTITY[9]))
+
+# ::id 10_nonfiction_MASC;HistoryGreek;AT5-2;NE
+# ::snt The major changes were not to daily tasks and routines , but to the political power base , which changed regularly and not necessarily peacefully throughout the ages .
+∃ ATTRIB[10] ATTRIB[2] EVENT[17] EVENT[13] GROUP[12] ENTITY[9] GROUP[1] (
+ major(ATTRIB[2]) ∧
+  is_changes_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   political(ATTRIB[10]) ∧
+    ages(GROUP[12]) ∧
+     CONJ_and(change.01(EVENT[13], ENTITY[9]) ∧ throughout(EVENT[13]) = GROUP[12],
+      ¬ ∃ EVENT[15] (ADV_necessarily_peacefully(EVENT[15]) ∧ xxx(EVENT[15], ENTITY[9]) ∧ throughout(EVENT[15]) = GROUP[12])) ∧
+      is_power_base_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+      ADV_regularly(EVENT[13]) ∧
+       past(EVENT[13]) ∧
+        CONJ_but(¬ ∃ ATTRIB[4] EVENT[8] GROUP[5] ENTITY[3] (
+                   daily(ATTRIB[4]) ∧
+                    ∃ GROUP[6] (tasks(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+                     ∃ GROUP[7] (routines(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5])) ∧
+                     is_equals(ENTITY[3], GROUP[5]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+                      past(EVENT[8]) ∧
+                       be.01(EVENT[8], GROUP[1]) ∧ to(EVENT[8]) = ENTITY[3]),
+         xxx(EVENT[17], GROUP[1]) ∧ to(EVENT[17]) = ENTITY[9]))
+
+# ::id 11_nonfiction_MASC;HistoryGreek;AT6-1;NE
+# ::snt Cycladic Culture
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (cycladic(ATTRIB[2]) ∧ is_Culture_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 12_nonfiction_MASC;HistoryGreek;AT7-1;NE
+# ::snt At around 3500 b.c. , a sophisticated culture evolved in the Cyclades islands .
+∃ ATTRIB[3] EVENT[5] ENTITY[2] DATE[1] GROUP[4] (
+ Cyclades_islands(GROUP[4]) ∧
+  (CD_3500(DATE[1]), ADV_around(DATE[1]) ∧ b.c.(DATE[1])) ∧
+   sophisticated(ATTRIB[3]) ∧
+    is_culture_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     past(EVENT[5]) ∧
+      evolve.01(EVENT[5], ENTITY[2]) ∧ in(EVENT[5]) = GROUP[4] ∧ At(EVENT[5]) = DATE[1])
+
+# ::id 13_nonfiction_MASC;HistoryGreek;AT7-2;NE
+# ::snt The distinctive , sculpted marble figures of the era are now being reproduced in vast quantities as souvenirs .
+∃ ATTRIB[6] ATTRIB[3] ATTRIB[2] EVENT[8] GROUP[7] GROUP[5] ENTITY[4] GROUP[1] (
+ distinctive(ATTRIB[2]) ∧
+  sculpt.01(ATTRIB[3]) ∧
+   era(ENTITY[4]) ∧
+    is_marble_figures_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_marble_figures_of(GROUP[1], ENTITY[4]) ∧ is_marble_figures_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     vast(ATTRIB[6]) ∧
+      is_quantities_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       souvenirs(GROUP[7]) ∧
+        TMP_now(EVENT[8]) ∧
+         reproduce.01(EVENT[8], _, GROUP[1]) ∧ as(EVENT[8]) = GROUP[7] ∧
+          in(EVENT[8]) = GROUP[5])
+
+# ::id 14_nonfiction_MASC;HistoryGreek;AT7-3;NE
+# ::snt You will find original examples in the archaeological museums throughout the Cyclades , although one of the earliest examples is in the museum on Paros .
+∃ REF1[1] ATTRIB[8] ATTRIB[5] GROUP[7] ENTITY[9] GROUP[4] (
+ archaeological(ATTRIB[5]) ∧
+  is_museums_throughout(GROUP[4], GROUP[Cyclades]) ∧ is_museums_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+   earliest(ATTRIB[8]) ∧
+    is_examples_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+     is_museum_on(ENTITY[9], ENTITY[Paros]) ∧
+      REF1[1] = you ∧
+       MD_will(∃ ATTRIB[3] EVENT[10] EVENT[11] ENTITY[6] GROUP[2] (
+             original(ATTRIB[3]) ∧
+              is_examples_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+               (CD_one(ENTITY[6]), is_element_of(ENTITY[6], GROUP[7])) ∧
+                CRD_although(be.01(EVENT[10], ENTITY[6]) ∧ in(EVENT[10]) = ENTITY[9],
+                 find.01(EVENT[11], REF1[1], GROUP[2]) ∧ in(EVENT[11]) = GROUP[4]))))
+
+# ::id 15_nonfiction_MASC;HistoryGreek;AT7-4;NE
+# ::snt The people farmed and fished ;
+∃ EVENT[2] EVENT[3] GROUP[1] (
+ people(GROUP[1]) ∧
+  past(EVENT[2]) ∧ past(EVENT[3]) ∧ CONJ_and(farm.01(EVENT[2], GROUP[1]), fish.01(EVENT[3], GROUP[1])))
+
+# ::id 16_nonfiction_MASC;HistoryGreek;AT7-5;NE
+# ::snt on the dawning of the Bronze Age in 2700 b.c. , they began to work with metals .
+∃ REF1[3] EVENT[6] EVENT[4] GROUP[5] DATE[2] ENTITY[1] (
+ (CD_2700(DATE[2]), b.c.(DATE[2])) ∧
+  is_dawning_in(ENTITY[1], DATE[2]) ∧ is_dawning_of(ENTITY[1], DATE[Bronze_Age]) ∧
+   REF1[3] = they ∧
+    metals(GROUP[5]) ∧
+     past(EVENT[4]) ∧
+      begin.01(EVENT[4], REF1[3], work.01(EVENT[6], REF1[3]) ∧ with(EVENT[6]) = GROUP[5]) ∧
+       on(EVENT[4]) = ENTITY[1])
+
+# ::id 17_nonfiction_MASC;HistoryGreek;AT7-6;NE
+# ::snt The Cycladic culture was influenced by societies in the east , importing the pottery wheel from Mesopotamia .
+∃ ATTRIB[2] EVENT[7] EVENT[6] GROUP[3] ENTITY[4] ENTITY[5] ENTITY[1] (
+ cycladic(ATTRIB[2]) ∧
+  is_culture_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   east(ENTITY[4]) ∧
+    pottery_wheel(ENTITY[5]) ∧
+     is_societies_in(GROUP[3], ENTITY[4]) ∧
+      past(EVENT[7]) ∧
+       CONJ_and(influence.01(EVENT[7], GROUP[3], ENTITY[1]),
+        import.01(EVENT[6], GROUP[3], ENTITY[5]) ∧ from(EVENT[6]) = ENTITY[Mesopotamia]))
+
+# ::id 18_nonfiction_MASC;HistoryGreek;AT7-7;NE
+# ::snt They also continued to trade in obsidian and the local marble .
+∃ SITUATION[8] REF1[1] ATTRIB[6] EVENT[7] EVENT[2] GROUP[3] ENTITY[5] (
+ local(ATTRIB[6]) ∧
+  is_marble_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   REF1[1] = they ∧
+    ∃ ENTITY[4] (obsidian(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧
+     ADV_also(SITUATION[8]) ∧
+      past(EVENT[2]) ∧
+       is_FACT_THAT(SITUATION[8],
+        continue.01(EVENT[2], REF1[1], trade.01(EVENT[7], REF1[1]) ∧ in(EVENT[7]) = GROUP[3])))
+
+# ::id 19_nonfiction_MASC;HistoryGreek;AT8-1;NE
+# ::snt The Minoans and the Myceneans
+∃ EVENT[2] GROUP[1] (
+ is_subset_of_or_equal_to(GROUP[Minoans], GROUP[1]) ∧ is_subset_of_or_equal_to(GROUP[Myceneans], GROUP[1]) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 20_nonfiction_MASC;HistoryGreek;AT9-1;NE
+# ::snt Farther south in Crete , the Minoan culture developed after 2000 b.c. into the most significant of its age , spreading its influence throughout the region by trade and diplomacy .
+∃ SITUATION[15] REF2[8] REF1[6] ATTRIB[4] EVENT[14] EVENT[13] GROUP[10] ENTITY[7] DATE[2] ENTITY[5] ENTITY[9] ENTITY[3] ENTITY[1] (
+ Minoan_culture(ENTITY[1]) ∧
+  most_significant(ATTRIB[4]) ∧
+   REF1[6] = its ∧
+    is_age_POS(ENTITY[5], REF1[6]) ∧
+     is_of(ENTITY[3], ENTITY[5]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      region(ENTITY[9]) ∧
+       (CD_2000(DATE[2]), b.c.(DATE[2])) ∧
+        REF2[8] = its ∧
+         is_influence_POS(ENTITY[7], REF2[8]) ∧
+          ∃ ENTITY[11] (trade(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+           ∃ ENTITY[12] (diplomacy(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+           is_LOC_farther_south_in(SITUATION[15], ENTITY[Crete]) ∧
+            past(EVENT[14]) ∧
+             is_FACT_THAT(SITUATION[15],
+              CONJ_and(develop.01(EVENT[14], ENTITY[1]) ∧ into(EVENT[14]) = ENTITY[3] ∧
+                    after(EVENT[14]) = DATE[2],
+               spread.03(EVENT[13], ENTITY[1], ENTITY[7]) ∧ by(EVENT[13]) = GROUP[10] ∧
+                throughout(EVENT[13]) = ENTITY[9])))
+
+# ::id 21_nonfiction_MASC;HistoryGreek;AT9-2;NE
+# ::snt Santorini -LRB- Thira -RRB- , the next major island north , was heavily influenced by Crete ,
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ is_-ENTITY-_namely(ENTITY[Santorini], ENTITY[Thira]) ∧
+  next(ATTRIB[2]) ∧
+   LOC_north(ENTITY[1]) ∧ is_major_island_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    is_-ENTITY-_namely(ENTITY[Santorini], ENTITY[1]) ∧
+     ADV_heavily(EVENT[3]) ∧ past(EVENT[3]) ∧ influence.01(EVENT[3], ENTITY[Crete], ENTITY[Santorini]))
+
+# ::id 22_nonfiction_MASC;HistoryGreek;AT9-2;NE
+# ::snt and the settlements of Thira and Akrotiri thrived at this time .
+∃ EVENT[4] GROUP[2] ENTITY[3] GROUP[1] (
+ is_element_of(ENTITY[Thira], GROUP[2]) ∧ is_element_of(ENTITY[Akrotiri], GROUP[2]) ∧
+  is_settlements_of(GROUP[1], GROUP[2]) ∧
+   time(ENTITY[3]) ∧ past(EVENT[4]) ∧ thrive.01(EVENT[4], GROUP[1]) ∧ at(EVENT[4]) = ENTITY[3])
+
+# ::id 23_nonfiction_MASC;HistoryGreek;AT9-3;NE
+# ::snt The magnificent frescoes and mosaics found at Akrotiri are in Athens at present , but the remains of the buildings at the site provide ample evidence of the sophistication of the culture here .
+∃ ATTRIB[14] ATTRIB[8] ATTRIB[2] EVENT[9] EVENT[17] ENTITY[13] EVENT[7] GROUP[4] GROUP[5] GROUP[3] ENTITY[1] ENTITY[12] GROUP[11] ENTITY[16] ENTITY[15] GROUP[10] (
+ magnificent(ATTRIB[2]) ∧
+  frescoes(GROUP[4]) ∧
+   mosaics(GROUP[5]) ∧
+    is_subset_of_or_equal_to(GROUP[4], GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3]) ∧
+     find.01(EVENT[7], _, ENTITY[1]) ∧ at(EVENT[7]) = ENTITY[Akrotiri] ∧
+      is_equals(ENTITY[1], GROUP[3]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      site(ENTITY[12]) ∧
+       is_buildings_at(GROUP[11], ENTITY[12]) ∧
+        is_remains_of(GROUP[10], GROUP[11]) ∧
+         LOC_here(ENTITY[16]) ∧ culture(ENTITY[16]) ∧
+          is_sophistication_of(ENTITY[15], ENTITY[16]) ∧
+           present(ATTRIB[8]) ∧
+            ample(ATTRIB[14]) ∧
+             is_evidence_of(ENTITY[13], ENTITY[15]) ∧ is_evidence_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+              CONJ_but(be.01(EVENT[9], ENTITY[1]) ∧ at(EVENT[9]) = ATTRIB[8] ∧
+                    in(EVENT[9]) = ENTITY[Athens], provide.01(EVENT[17], GROUP[10], ENTITY[13])))
+
+# ::id 24_nonfiction_MASC;HistoryGreek;AT10-1;NE
+# ::snt Around 1500 b.c. , a massive volcanic eruption at Santorini destroyed not only Akrotiri — under feet of ash and pumice — but the whole Minoan civilization .
+∃ ATTRIB[3] ATTRIB[12] ATTRIB[11] EVENT[13] GROUP[4] ENTITY[2] DATE[1] ENTITY[10] (
+ whole(ATTRIB[11]) ∧
+  minoan(ATTRIB[12]) ∧
+   is_civilization_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_civilization_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+    (CD_1500(DATE[1]), ADV_around(DATE[1]) ∧ b.c.(DATE[1])) ∧
+     massive(ATTRIB[3]) ∧
+      is_volcanic_eruption_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_volcanic_eruption_at(ENTITY[2], ENTITY[Santorini]) ∧
+       CONJ_but(¬ ONLY ENTITY[9] (is_of(ENTITY[9], ENTITY[Akrotiri]),
+                  ∃ GROUP[6] GROUP[5] (
+                   ∃ ENTITY[7] (ash(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+                    ∃ ENTITY[8] (pumice(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+                    is_feet_of(GROUP[5], GROUP[6]) ∧
+                     is_under(ENTITY[9], GROUP[5]) ∧ is_element_of(ENTITY[9], GROUP[4]))),
+        is_element_of(ENTITY[10], GROUP[4])) ∧
+        past(EVENT[13]) ∧ destroy.01(EVENT[13], ENTITY[2], GROUP[4]) ∧ is_contained_in(TMP(EVENT[13]), DATE[1]))
+
+# ::id 25_nonfiction_MASC;HistoryGreek;AT10-2;NE
+# ::snt Massive tidal waves swept over Crete , and other parts of the Mediterranean , smashing buildings and drowning many thousands of people .
+∃ ATTRIB[2] EVENT[11] EVENT[7] EVENT[10] GROUP[6] GROUP[9] ENTITY[8] GROUP[3] GROUP[1] (
+ massive(ATTRIB[2]) ∧
+  is_tidal_waves_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   is_element_of(ENTITY[Crete], GROUP[3]) ∧
+    ∃ ATTRIB[5] GROUP[4] (
+     other(ATTRIB[5]) ∧
+      is_parts_of(GROUP[4], ENTITY[Mediterranean]) ∧ is_parts_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+    buildings(GROUP[6]) ∧
+     people(GROUP[9]) ∧
+      (CD_many_thousands(ENTITY[8]), is_element_of(ENTITY[8], GROUP[9])) ∧
+       past(EVENT[11]) ∧
+        CONJ_and(sweep.02(EVENT[11], GROUP[1]) ∧ over(EVENT[11]) = GROUP[3],
+         CONJ_and(smash.01(EVENT[7], GROUP[1], GROUP[6]), drown.02(EVENT[10], GROUP[1], ENTITY[8]))))
+
+# ::id 26_nonfiction_MASC;HistoryGreek;AT10-3;NE
+# ::snt In the wake of this tremendous natural upheaval , the Aegean Islands next came under the influence of the Mycenaeans -LRB- at around 1300 b.c. -RRB- , who had a base in the Peloponnese region of the Greek mainland .
+∃ ATTRIB[10] ATTRIB[8] ATTRIB[3] EVENT[13] EVENT[11] ENTITY[2] DATE[12] ENTITY[9] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[1] (
+ tremendous(ATTRIB[3]) ∧
+  is_natural_upheaval_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_wake_of(ENTITY[1], ENTITY[2]) ∧
+    (CD_1300(DATE[12]), ADV_around(DATE[12]) ∧ b.c.(DATE[12])) ∧
+     is_at(GROUP[Mycenaeans], DATE[12]) ∧
+      peloponnese(ATTRIB[8]) ∧
+       greek(ATTRIB[10]) ∧
+        is_mainland_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+         is_region_of(ENTITY[7], ENTITY[9]) ∧ is_region_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+          is_base_in(ENTITY[6], ENTITY[7]) ∧
+           have.03(EVENT[11], GROUP[Mycenaeans], ENTITY[6]) ∧
+            is_influence_of(ENTITY[4], GROUP[Mycenaeans]) ∧
+             past(EVENT[11]) ∧
+              TMP_next(EVENT[13]) ∧
+               past(EVENT[13]) ∧
+                come.04(EVENT[13], GROUP[Aegean_Islands]) ∧ under(EVENT[13]) = ENTITY[4] ∧
+                 In(EVENT[13]) = ENTITY[1])
+
+# ::id 27_nonfiction_MASC;HistoryGreek;AT10-4;NE
+# ::snt The Mycenaeans were an acquisitive race who came to conquer , not to trade .
+∃ PRP[4] ATTRIB[2] EVENT[5] EVENT[7] EVENT[8] ENTITY[1] (
+ acquisitive(ATTRIB[2]) ∧
+  is_FACT_THAT(PRP[4], conquer.01(EVENT[5], ENTITY[1]) ∧ ¬ ∃ EVENT[6] trade.01(EVENT[6], ENTITY[1])) ∧
+   come.01(EVENT[7], ENTITY[1]) ∧ PRP(EVENT[7]) = PRP[4] ∧ is_race_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[7]) ∧ past(EVENT[8]) ∧ be.01(EVENT[8], GROUP[Mycenaeans], ENTITY[1]))
+
+# ::id 28_nonfiction_MASC;HistoryGreek;AT10-5;NE
+# ::snt Their extensive military campaigns were later chronicled by Homer in his epic poems The Odyssey and The Iliad .
+∃ ATTRIB[7] REF2[6] ATTRIB[3] REF1[2] EVENT[8] GROUP[4] GROUP[5] GROUP[1] (
+ REF1[2] = their ∧
+  extensive(ATTRIB[3]) ∧
+   is_military_campaigns_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_military_campaigns_POS(GROUP[1], REF1[2]) ∧
+    REF2[6] = his ∧
+     epic(ATTRIB[7]) ∧
+      is_poems_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_poems_POS(GROUP[5], REF2[6]) ∧
+       is_element_of(ENTITY[Odyssey], GROUP[4]) ∧ is_element_of(ENTITY[Iliad], GROUP[4]) ∧
+        is_-GROUP-_namely(GROUP[5], GROUP[4]) ∧
+         TMP_later(EVENT[8]) ∧
+          past(EVENT[8]) ∧ chronicle.01(EVENT[8], ENTITY[Homer], GROUP[1]) ∧ in(EVENT[8]) = GROUP[5])
+
+# ::id 29_nonfiction_MASC;HistoryGreek;AT11-1;NE
+# ::snt The Rise of Athens
+∃ EVENT[2] ENTITY[1] (is_Rise_of(ENTITY[1], ENTITY[Athens]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 30_nonfiction_MASC;HistoryGreek;AT11-2;NE
+# ::snt The Dorians , who came overland from northern Europe , conquered the Mycenaeans .
+∃ EVENT[4] EVENT[3] ENTITY[2] (
+ land(ENTITY[2]) ∧
+  come.01(EVENT[3], GROUP[Dorians]) ∧ from(EVENT[3]) = ENTITY[northern_Europe] ∧ over(EVENT[3]) = ENTITY[2] ∧
+   past(EVENT[3]) ∧ past(EVENT[4]) ∧ conquer.01(EVENT[4], GROUP[Dorians], GROUP[Mycenaeans]))
+
+# ::id 31_nonfiction_MASC;HistoryGreek;AT11-3;NE
+# ::snt They were a barbaric race ,
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = they ∧
+  barbaric(ATTRIB[3]) ∧ is_race_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ be.01(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 32_nonfiction_MASC;HistoryGreek;AT11-3;NE
+# ::snt and their custody of the area brought about a dark period during which the written word was forgotten and art disappeared .
+∃ ATTRIB[5] REF1[2] ATTRIB[8] EVENT[9] EVENT[11] EVENT[12] ENTITY[10] ENTITY[4] ENTITY[1] ENTITY[3] ENTITY[7] (
+ area(ENTITY[3]) ∧
+  written(ATTRIB[8]) ∧
+   is_word_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    REF1[2] = their ∧
+     is_custody_of(ENTITY[1], ENTITY[3]) ∧ is_custody_POS(ENTITY[1], REF1[2]) ∧
+      dark(ATTRIB[5]) ∧
+       art(ENTITY[10]) ∧
+        CONJ_and(forget.01(EVENT[9], _, ENTITY[7]), disappear.01(EVENT[11], ENTITY[10])) ∧
+         is_period_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+         past(EVENT[9]) ∧
+          past(EVENT[11]) ∧ past(EVENT[12]) ∧ bring.05(EVENT[12], ENTITY[1], ENTITY[4]))
+
+# ::id 33_nonfiction_MASC;HistoryGreek;AT11-4;NE
+# ::snt They held sway over islands off the northern Greek coast , but the Phoenicians kept control of the main sea routes ;
+∃ REF1[1] ATTRIB[9] ATTRIB[5] EVENT[6] EVENT[10] GROUP[3] ENTITY[2] ENTITY[7] ENTITY[4] GROUP[8] (
+ northern(ATTRIB[5]) ∧
+  is_Greek_coast_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   main(ATTRIB[9]) ∧
+    is_sea_routes_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+     REF1[1] = they ∧
+      sway(ENTITY[2]) ∧
+       is_islands_off(GROUP[3], ENTITY[4]) ∧
+        is_control_of(ENTITY[7], GROUP[8]) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[10]) ∧
+           CONJ_but(hold.01(EVENT[6], REF1[1], ENTITY[2]) ∧ over(EVENT[6]) = GROUP[3],
+            keep.01(EVENT[10], GROUP[Phoenicians], ENTITY[7])))
+
+# ::id 34_nonfiction_MASC;HistoryGreek;AT11-5;NE
+# ::snt south of the area , trade continued as usual .
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ area(ENTITY[1]) ∧
+  trade(ENTITY[2]) ∧
+   usual(ATTRIB[3]) ∧
+    is_LOC_south_of(EVENT[4], ENTITY[1]) ∧
+     past(EVENT[4]) ∧ continue.01(EVENT[4], ENTITY[2]) ∧ as(EVENT[4]) = ATTRIB[3])
+
+# ::id 35_nonfiction_MASC;HistoryGreek;AT12-1;NE
+# ::snt At the same time , city-states began to grow in influence on the southern Greek mainland .
+∃ ATTRIB[7] ATTRIB[2] EVENT[8] EVENT[4] ENTITY[5] GROUP[3] ENTITY[6] ENTITY[1] (
+ same(ATTRIB[2]) ∧
+  is_time_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   southern(ATTRIB[7]) ∧
+    is_Greek_mainland_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     city-states(GROUP[3]) ∧
+      influence(ENTITY[5]) ∧
+       past(EVENT[4]) ∧
+        begin.01(EVENT[4], GROUP[3],
+         grow.01(EVENT[8], GROUP[3]) ∧ on(EVENT[8]) = ENTITY[6] ∧ in(EVENT[8]) = ENTITY[5]) ∧
+         At(EVENT[4]) = ENTITY[1])
+
+# ::id 36_nonfiction_MASC;HistoryGreek;AT12-2;NE
+# ::snt Athens became the most powerful , heralding the start of the classical Greek period .
+∃ ATTRIB[5] ATTRIB[2] EVENT[7] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ most_powerful(ATTRIB[2]) ∧
+  is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   classical(ATTRIB[5]) ∧
+    is_Greek_period_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     is_start_of(ENTITY[3], ENTITY[4]) ∧
+      past(EVENT[7]) ∧ CONJ_and(become.01(EVENT[7], ENTITY[Athens], ENTITY[1]), herald.01(EVENT[6], ENTITY[1], ENTITY[3])))
+
+# ::id 37_nonfiction_MASC;HistoryGreek;AT12-3;NE
+# ::snt However , Greece was not yet a country ;
+∃ SITUATION[4] (
+ ADV_however(SITUATION[4]) ∧
+  is_FACT_THAT(SITUATION[4],
+   ¬ ∃ EVENT[2] ENTITY[1] (
+         country(ENTITY[1]) ∧
+          TMP_yet(EVENT[2]) ∧ past(EVENT[2]) ∧ be.01(EVENT[2], ENTITY[Greece], ENTITY[1]))))
+
+# ::id 38_nonfiction_MASC;HistoryGreek;AT12-3;NE
+# ::snt each city-state was self-governing and autonomous .
+EACH ENTITY[1] (city-state(ENTITY[1]),
+ ∃ ATTRIB[3] ATTRIB[2] EVENT[4] EVENT[4] (
+  govern.01(ATTRIB[2]) ∧
+   autonomous(ATTRIB[3]) ∧
+    past(EVENT[4]) ∧
+     past(EVENT[4]) ∧ CONJ_and(be.01(EVENT[4], ENTITY[1], ATTRIB[2]), be.01(EVENT[4], ENTITY[1], ATTRIB[3]))))
+
+# ::id 39_nonfiction_MASC;HistoryGreek;AT13-1;NE
+# ::snt The new culture spread throughout the Mediterranean , helped by a huge increase in migration from the mainland to new settlements such as Carthage , a Greek city on the African coast of the Mediterranean .
+∃ ATTRIB[11] ATTRIB[9] ATTRIB[8] ATTRIB[4] ATTRIB[13] ATTRIB[2] EVENT[15] EVENT[14] ENTITY[10] GROUP[7] ENTITY[5] ENTITY[3] ENTITY[12] ENTITY[6] ENTITY[1] (
+ new(ATTRIB[2]) ∧
+  is_culture_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   mainland(ENTITY[6]) ∧
+    african(ATTRIB[13]) ∧
+     is_coast_of(ENTITY[12], ENTITY[Mediterranean]) ∧ is_coast_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+      huge(ATTRIB[4]) ∧
+       new(ATTRIB[8]) ∧
+        greek(ATTRIB[11]) ∧
+         is_city_on(ENTITY[10], ENTITY[12]) ∧ is_city_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+          is_-ENTITY-_namely(ENTITY[Carthage], ENTITY[10]) ∧
+           is_such_as(ATTRIB[9], ENTITY[Carthage]) ∧
+            is_settlements_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_settlements_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+             is_migration_to(ENTITY[5], GROUP[7]) ∧ is_migration_from(ENTITY[5], ENTITY[6]) ∧
+              is_increase_in(ENTITY[3], ENTITY[5]) ∧ is_increase_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+               past(EVENT[15]) ∧
+                CONJ_and(spread.02(EVENT[15], ENTITY[1]) ∧ throughout(EVENT[15]) = ENTITY[Mediterranean],
+                 help.01(EVENT[14], ENTITY[3], ENTITY[1])))
+
+# ::id 40_nonfiction_MASC;HistoryGreek;AT13-2;NE
+# ::snt Culture and the arts flourished once again .
+∃ EVENT[4] GROUP[1] GROUP[3] (
+ arts(GROUP[3]) ∧
+  ∃ ENTITY[2] (Culture(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1]) ∧
+   TMP_once_again(EVENT[4]) ∧ past(EVENT[4]) ∧ flourish.01(EVENT[4], GROUP[1]))
+
+# ::id 41_nonfiction_MASC;HistoryGreek;AT13-3;NE
+# ::snt Athletic prowess was admired
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (athletic(ATTRIB[2]) ∧ is_prowess_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ past(EVENT[3]) ∧ admire.01(EVENT[3], _, ENTITY[1]))
+
+# ::id 42_nonfiction_MASC;HistoryGreek;AT13-3;NE
+# ::snt and the Olympic games were constituted in 776 b.c. , to promote friendly competition .
+∃ ATTRIB[6] PRP[4] ATTRIB[2] EVENT[7] EVENT[8] ENTITY[5] DATE[3] GROUP[1] (
+ olympic(ATTRIB[2]) ∧
+  is_games_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   (CD_776(DATE[3]), b.c.(DATE[3])) ∧
+    friendly(ATTRIB[6]) ∧
+     is_competition_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+      is_FACT_THAT(PRP[4], promote.02(EVENT[7], GROUP[1], ENTITY[5])) ∧
+       past(EVENT[8]) ∧
+        constitute.01(EVENT[8], _, GROUP[1]) ∧ PRP(EVENT[8]) = PRP[4] ∧ in(EVENT[8]) = DATE[3])
+
+# ::id 43_nonfiction_MASC;HistoryGreek;AT13-4;NE
+# ::snt Homer wrote his epic works on Chios ;
+∃ ATTRIB[3] REF1[2] EVENT[4] GROUP[1] (
+ REF1[2] = his ∧
+  epic(ATTRIB[3]) ∧
+   is_works_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_works_POS(GROUP[1], REF1[2]) ∧
+    past(EVENT[4]) ∧ write.01(EVENT[4], ENTITY[Homer], GROUP[1]) ∧ on(EVENT[4]) = ENTITY[Chios])
+
+# ::id 44_nonfiction_MASC;HistoryGreek;AT13-4;NE
+# ::snt and lyrical poetry was much admired , particularly the work of the poets Archilochos on Paros and Sappho on Lesvos .
+∃ ATTRIB[6] ATTRIB[5] EVENT[8] ENTITY[1] ENTITY[4] GROUP[2] GROUP[3] (
+ poets(GROUP[3]) ∧
+  is_on(ENTITY[Archilochos], ENTITY[Paros]) ∧
+   is_on(ENTITY[Sappho], ENTITY[Lesvos]) ∧
+    is_element_of(ENTITY[Archilochos], GROUP[2]) ∧ is_element_of(ENTITY[Sappho], GROUP[2]) ∧
+     is_-GROUP-_namely(GROUP[3], GROUP[2]) ∧
+      lyrical(ATTRIB[5]) ∧
+       is_poetry_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+        ADV_particularly(ENTITY[1]) ∧ is_work_of(ENTITY[1], GROUP[3]) ∧
+         is_-ENTITY-_namely(ENTITY[4], ENTITY[1]) ∧
+          MUCH DEGREE[7] is_admire.01_MSR(ATTRIB[6], DEGREE[7]) ∧ past(EVENT[8]) ∧ be.03(EVENT[8], ENTITY[4], ATTRIB[6]))
+
+# ::id 45_nonfiction_MASC;HistoryGreek;AT13-5;NE
+# ::snt The preeminent islands of this era were Delos , a sacred island and center of religion ruled by Athens ; Samos , ruled by the tyrant Polycrates ; and Naxos , whose ruler Lygdamis undertook some major building projects .
+∃ ATTRIB[2] EVENT[21] GROUP[4] ENTITY[3] ENTITY[14] GROUP[1] (
+ preeminent(ATTRIB[2]) ∧
+  era(ENTITY[3]) ∧
+   is_islands_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_islands_of(GROUP[1], ENTITY[3]) ∧
+    tyrant(ENTITY[14]) ∧
+     is_-ENTITY-_namely(ENTITY[14], ENTITY[Polycrates]) ∧
+      ∃ EVENT[12] GROUP[6] ENTITY[5] (
+       ∃ ATTRIB[8] ENTITY[7] (sacred(ATTRIB[8]) ∧ is_island_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+        ∃ ENTITY[10] ENTITY[9] (religion(ENTITY[10]) ∧ is_center_of(ENTITY[9], ENTITY[10]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+        rule.03(EVENT[12], ENTITY[Athens], ENTITY[5]) ∧ is_equals(ENTITY[5], GROUP[6]) ∧
+         is_-ENTITY-_namely(ENTITY[Delos], ENTITY[5]) ∧ is_element_of(ENTITY[Delos], GROUP[4])) ∧
+       ∃ EVENT[15] (rule.03(EVENT[15], ENTITY[14], ENTITY[Samos]) ∧ is_element_of(ENTITY[Samos], GROUP[4])) ∧
+       ∃ ENTITY[16] (
+        is_ruler_POS(ENTITY[16], ENTITY[Naxos]) ∧
+         is_-ENTITY-_namely(ENTITY[16], ENTITY[Lygdamis]) ∧
+          SOME ATTRIB[19] GROUP[18] ((major(ATTRIB[19]) ∧ is_building_projects_ATTRIBUTE(GROUP[18], ATTRIB[19])),
+           ∃ EVENT[20] (past(EVENT[20]) ∧ undertake.01(EVENT[20], ENTITY[16], GROUP[18]))) ∧
+           is_element_of(ENTITY[Naxos], GROUP[4])) ∧ past(EVENT[21]) ∧ be.01(EVENT[21], GROUP[1], GROUP[4]))
+
+# ::id 46_nonfiction_MASC;HistoryGreek;AT13-6;NE
+# ::snt Archaeology shows that , during this time , societies lived mainly in coastal trading towns with little settlement inland .
+∃ ATTRIB[10] SITUATION[8] ATTRIB[7] ATTRIB[6] EVENT[11] EVENT[13] EVENT[2] ENTITY[9] GROUP[5] GROUP[4] ENTITY[1] ENTITY[3] (
+ time(ENTITY[3]) ∧
+  Archaeology(ENTITY[1]) ∧
+   societies(GROUP[4]) ∧
+    coastal(ATTRIB[6]) ∧
+     trading(ATTRIB[7]) ∧
+      is_towns_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_towns_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       little(ATTRIB[10]) ∧
+        is_settlement_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+         is_SMC-FACT_THAT(SITUATION[8], xxx(EVENT[11], ENTITY[9])) ∧
+          LOC_inland(EVENT[11]) ∧
+           is_before(EVENT[13], EVENT[2]) ∧
+            show.01(EVENT[2], ENTITY[1],
+             live.01(EVENT[13], GROUP[4]) ∧ with(EVENT[13]) = SITUATION[8] ∧
+              mainly_in(EVENT[13]) = GROUP[5] ∧ during(EVENT[13]) = ENTITY[3]))
+
+# ::id 47_nonfiction_MASC;HistoryGreek;AT14-1;NE
+# ::snt The Persian Wars
+∃ ATTRIB[2] EVENT[3] GROUP[1] (persian(ATTRIB[2]) ∧ is_Wars_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 48_nonfiction_MASC;HistoryGreek;AT14-2;NE
+# ::snt As Athens rose in influence and power in the West , it was matched in the East by the rise of the Persian Empire .
+∃ REF1[5] ATTRIB[8] EVENT[4] EVENT[9] GROUP[1] ENTITY[7] ENTITY[6] (
+ persian(ATTRIB[8]) ∧
+  is_Empire_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   is_rise_of(ENTITY[6], ENTITY[7]) ∧
+    ∃ ENTITY[2] (influence(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+     ∃ ENTITY[3] (power(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+     REF1[5] = it ∧
+      past(EVENT[4]) ∧
+       past(EVENT[9]) ∧
+        CRD_As(rise.01(EVENT[4], ENTITY[Athens]) ∧ in(EVENT[4]) = ENTITY[West] ∧ in(EVENT[4]) = GROUP[1],
+         match.01(EVENT[9], ENTITY[6], REF1[5]) ∧ in(EVENT[9]) = ENTITY[East]))
+
+# ::id 49_nonfiction_MASC;HistoryGreek;AT14-3;NE
+# ::snt From a power base in Anatolia , the Persians overran the eastern Aegean Islands and set their sights on the Cyclades .
+∃ REF1[4] EVENT[2] EVENT[5] GROUP[3] ENTITY[1] (
+ is_power_base_in(ENTITY[1], ENTITY[Anatolia]) ∧
+  REF1[4] = their ∧
+   is_sights_POS(GROUP[3], REF1[4]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(overrun.01(EVENT[2], GROUP[Persians], GROUP[eastern_Aegean_Islands]) ∧ From(EVENT[2]) = ENTITY[1],
+       set.02(EVENT[5], GROUP[Persians], GROUP[3]) ∧ on(EVENT[5]) = GROUP[Cyclades] ∧
+        From(EVENT[5]) = ENTITY[1]))
+
+# ::id 50_nonfiction_MASC;HistoryGreek;AT14-4;NE
+# ::snt In 490 b.c. , they captured sacred Delos and razed the settlements on Naxos .
+∃ REF1[2] EVENT[3] EVENT[5] DATE[1] GROUP[4] (
+ is_settlements_on(GROUP[4], ENTITY[Naxos]) ∧
+  (CD_490(DATE[1]), b.c.(DATE[1])) ∧
+   REF1[2] = they ∧
+    past(EVENT[3]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(capture.01(EVENT[3], REF1[2], ENTITY[sacred_Delos]) ∧ In(EVENT[3]) = DATE[1],
+       raze.01(EVENT[5], REF1[2], GROUP[4]) ∧ In(EVENT[5]) = DATE[1]))
+
+# ::id 51_nonfiction_MASC;HistoryGreek;AT15-1;NE
+# ::snt The island communities were undecided about which side to back for a time .
+∃ ATTRIB[2] ENTITY[3] ENTITY[6] EVENT[5] EVENT[7] GROUP[1] (
+ island_communities(GROUP[1]) ∧
+  past(EVENT[7]) ∧
+   back.01(EVENT[5], _, ENTITY[3]) ∧
+    is_undecided_about(ATTRIB[2], ENTITY[3]) ∧
+     time(ENTITY[6]) ∧ be.01(EVENT[7], GROUP[1], ATTRIB[2]) ∧ for(EVENT[7]) = ENTITY[6])
+
+# ::id 52_nonfiction_MASC;HistoryGreek;AT15-2;NE
+# ::snt Paros and Andros contributed to the Persian armory , while others supported Athens .
+∃ ATTRIB[3] EVENT[5] EVENT[6] GROUP[4] GROUP[1] ENTITY[2] (
+ persian(ATTRIB[3]) ∧
+  is_armory_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_element_of(ENTITY[Paros], GROUP[1]) ∧ is_element_of(ENTITY[Andros], GROUP[1]) ∧
+    others(GROUP[4]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[6]) ∧
+       CRD_while(support.01(EVENT[5], GROUP[4], ENTITY[Athens]),
+        contribute.01(EVENT[6], GROUP[1]) ∧ to(EVENT[6]) = ENTITY[2]))
+
+# ::id 53_nonfiction_MASC;HistoryGreek;AT15-3;NE
+# ::snt The two superpowers finally clashed at the epic battles of Marathon and Salamis in 480 b.c .
+∃ ATTRIB[3] EVENT[6] DATE[5] GROUP[4] GROUP[2] GROUP[1] (
+ (CD_two(GROUP[1]), superpowers(GROUP[1])) ∧
+  epic(ATTRIB[3]) ∧
+   is_element_of(ENTITY[Marathon], GROUP[4]) ∧ is_element_of(ENTITY[Salamis], GROUP[4]) ∧
+    is_battles_of(GROUP[2], GROUP[4]) ∧ is_battles_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+     (CD_480(DATE[5]), b.c(DATE[5])) ∧
+      TMP_finally(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        clash.01(EVENT[6], GROUP[1]) ∧ in(EVENT[6]) = DATE[5] ∧ at(EVENT[6]) = GROUP[2])
+
+# ::id 54_nonfiction_MASC;HistoryGreek;AT16-1;NE
+# ::snt The Persians were defeated ,
+∃ EVENT[1] (past(EVENT[1]) ∧ defeat.01(EVENT[1], _, GROUP[Persians]))
+
+# ::id 55_nonfiction_MASC;HistoryGreek;AT16-1;NE
+# ::snt and Athens duly punished the islands that had turned against it .
+∃ REF1[3] EVENT[5] EVENT[4] GROUP[1] (
+ REF1[3] = it ∧
+  turn.01(EVENT[4], GROUP[1]) ∧ against(EVENT[4]) = REF1[3] ∧ islands(GROUP[1]) ∧
+   past(EVENT[4]) ∧ ADV_duly(EVENT[5]) ∧ past(EVENT[5]) ∧ punish.01(EVENT[5], ENTITY[Athens], GROUP[1]))
+
+# ::id 56_nonfiction_MASC;HistoryGreek;AT16-2;NE
+# ::snt Following its victory , Athens introduced the concept of a mutual protection alliance -LRB- a kind of NATO of the ancient world -RRB- .
+∃ REF1[2] ATTRIB[6] EVENT[8] ENTITY[1] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[3] (
+ mutual_protection_alliance(ENTITY[7]) ∧
+  ancient(ATTRIB[6]) ∧
+   is_world_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_of(ENTITY[NATO], ENTITY[5]) ∧
+     is_kind_of(ENTITY[4], ENTITY[NATO]) ∧
+      is_-ENTITY-_namely(ENTITY[7], ENTITY[4]) ∧
+       is_concept_of(ENTITY[3], ENTITY[7]) ∧
+        REF1[2] = its ∧
+         is_victory_POS(ENTITY[1], REF1[2]) ∧
+          past(EVENT[8]) ∧ introduce.02(EVENT[8], ENTITY[Athens], ENTITY[3]) ∧ following(EVENT[8]) = ENTITY[1])
+
+# ::id 57_nonfiction_MASC;HistoryGreek;AT16-3;NE
+# ::snt Several islands and Greek city-states agreed to work together , and created a treasury to fund their plans , which was held on the island of Delos .
+∃ REF1[11] EVENT[6] EVENT[5] EVENT[12] EVENT[15] EVENT[16] GROUP[10] ENTITY[8] GROUP[1] ENTITY[14] (
+ is_island_of(ENTITY[14], ENTITY[Delos]) ∧
+  SEVERAL GROUP[2] (islands(GROUP[2]), is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+   ∃ ATTRIB[4] GROUP[3] (greek(ATTRIB[4]) ∧ is_city-states_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧
+   REF1[11] = their ∧
+    is_plans_POS(GROUP[10], REF1[11]) ∧
+     fund.01(EVENT[12], ENTITY[8], GROUP[10]) ∧
+      hold.04(EVENT[15], _, ENTITY[8]) ∧ on(EVENT[15]) = ENTITY[14] ∧ treasury(ENTITY[8]) ∧
+      ADV_together(EVENT[6]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[15]) ∧
+         past(EVENT[16]) ∧
+          CONJ_and(agree.01(EVENT[5], GROUP[1], work.01(EVENT[6], GROUP[1])), create.01(EVENT[16], GROUP[1], ENTITY[8])))
+
+# ::id 58_nonfiction_MASC;HistoryGreek;AT16-4;NE
+# ::snt The alliance became known as the Delian League .
+∃ EVENT[2] ENTITY[1] (
+ alliance(ENTITY[1]) ∧
+  past(EVENT[2]) ∧ know.01(EVENT[2], _, ENTITY[1]) ∧ as(EVENT[2]) = ENTITY[Delian_League])
+
+# ::id 59_nonfiction_MASC;HistoryGreek;AT16-5;NE
+# ::snt Although there were minor internal wrangles , the league controlled the Aegean and the greater Athenian Empire for most of the fifth century b.c .
+∃ ATTRIB[2] ATTRIB[8] EVENT[3] GROUP[1] GROUP[5] DATE[7] ENTITY[4] (
+ league(ENTITY[4]) ∧
+  fifth(ATTRIB[8]) ∧
+   is_century_b.c_ATTRIBUTE(DATE[7], ATTRIB[8]) ∧
+    minor(ATTRIB[2]) ∧
+     is_internal_wrangles_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      is_element_of(ENTITY[Aegean], GROUP[5]) ∧ is_element_of(ENTITY[greater_Athenian_Empire], GROUP[5]) ∧
+       past(EVENT[3]) ∧
+        CRD_Although(be.02(EVENT[3], GROUP[1]),
+         MOST ENTITY[6] (is_of(ENTITY[6], DATE[7]),
+          ∃ EVENT[9] (
+           past(EVENT[9]) ∧
+            control.01(EVENT[9], ENTITY[4], GROUP[5]) ∧ for(EVENT[9]) = ENTITY[6]))))
+
+# ::id 60_nonfiction_MASC;HistoryGreek;AT17-1;NE
+# ::snt Later , in 454 b.c. , the treasury was transferred to Athens and its deposits were used to finance the construction of many of the major buildings and temples of the Classical Age .
+∃ SITUATION[15] REF1[5] ATTRIB[10] EVENT[3] EVENT[14] EVENT[6] DATE[1] GROUP[4] ENTITY[2] GROUP[12] GROUP[13] GROUP[11] ENTITY[9] ENTITY[7] (
+ treasury(ENTITY[2]) ∧
+  major(ATTRIB[10]) ∧
+   buildings(GROUP[12]) ∧
+    temples(GROUP[13]) ∧
+     is_subset_of_or_equal_to(GROUP[12], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11]) ∧
+      is_of(ENTITY[9], DATE[Classical_Age]) ∧ is_equals(ENTITY[9], GROUP[11]) ∧ is_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+       MANY ENTITY[8] (is_of(ENTITY[8], ENTITY[9]), is_construction_of(ENTITY[7], ENTITY[8])) ∧
+        (CD_454(DATE[1]), b.c.(DATE[1])) ∧
+         REF1[5] = its ∧
+          is_deposits_POS(GROUP[4], REF1[5]) ∧
+           is_TMP_later_in(SITUATION[15], DATE[1]) ∧
+            past(EVENT[3]) ∧
+             past(EVENT[6]) ∧
+              is_FACT_THAT(SITUATION[15],
+               CONJ_and(transfer.01(EVENT[3], _, ENTITY[2]) ∧ to(EVENT[3]) = ENTITY[Athens],
+                use.01(EVENT[6], _, GROUP[4], finance.01(EVENT[14], GROUP[4], ENTITY[7])))))
+
+# ::id 61_nonfiction_MASC;HistoryGreek;AT17-2;NE
+# ::snt In 431 b.c. , Athens began a war with its neighbor and league member Sparta .
+∃ EVENT[7] GROUP[3] ENTITY[2] DATE[1] (
+ (CD_431(DATE[1]), b.c.(DATE[1])) ∧
+  ∃ REF1[5] ENTITY[4] (REF1[5] = its ∧ is_neighbor_POS(ENTITY[4], REF1[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[6] (league_member(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+   is_-ENTITY-_namely(ENTITY[Sparta], GROUP[3]) ∧
+    is_war_with(ENTITY[2], ENTITY[Sparta]) ∧
+     past(EVENT[7]) ∧ begin.01(EVENT[7], ENTITY[Athens], ENTITY[2]) ∧ In(EVENT[7]) = DATE[1])
+
+# ::id 62_nonfiction_MASC;HistoryGreek;AT17-3;NE
+# ::snt Although the islands saw little action , as the war went on they could see that Athens was slowly losing its power .
+∃ REF1[6] EVENT[5] GROUP[1] ENTITY[4] (
+ islands(GROUP[1]) ∧
+  war(ENTITY[4]) ∧
+   past(EVENT[5]) ∧
+    REF1[6] = they ∧
+     CRD_Although(LITTLE ENTITY[2] (action(ENTITY[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ see.01(EVENT[3], GROUP[1], ENTITY[2]))),
+      CRD_as(go.15(EVENT[5], ENTITY[4]),
+       MD_could(∃ REF2[9] ENTITY[8] EVENT[10] EVENT[7] (
+             ADV_slowly(EVENT[10]) ∧
+              is_before(EVENT[10], EVENT[7]) ∧
+               REF2[9] = its ∧
+                is_power_POS(ENTITY[8], REF2[9]) ∧
+                 see.01(EVENT[7], REF1[6], be.03(EVENT[10], ENTITY[Athens], ENTITY[8])))))))
+
+# ::id 63_nonfiction_MASC;HistoryGreek;AT17-4;NE
+# ::snt Before the end of the war in 401 b.c. , many islands had already transferred their allegiance to the victors , who were led by Philip II of Macedon .
+∃ EVENT[9] DATE[3] ENTITY[2] GROUP[7] ENTITY[1] (
+ war(ENTITY[2]) ∧
+  (CD_401(DATE[3]), b.c.(DATE[3])) ∧
+   is_end_in(ENTITY[1], DATE[3]) ∧ is_end_of(ENTITY[1], ENTITY[2]) ∧
+    is_of(ENTITY[Philip_II], ENTITY[Macedon]) ∧
+     lead.02(EVENT[9], ENTITY[Philip_II], GROUP[7]) ∧ victors(GROUP[7]) ∧
+      past(EVENT[9]) ∧
+       MANY GROUP[4] (islands(GROUP[4]),
+        ∃ REF1[6] EVENT[10] ENTITY[5] (
+         REF1[6] = their ∧
+          is_allegiance_POS(ENTITY[5], REF1[6]) ∧
+           TMP_already(EVENT[10]) ∧
+            past(EVENT[10]) ∧
+             have.01(EVENT[10], GROUP[4], ENTITY[5]) ∧ to(EVENT[10]) = GROUP[7] ∧
+              Before(EVENT[10]) = ENTITY[1])))
+
+# ::id 64_nonfiction_MASC;HistoryGreek;AT17-5;NE
+# ::snt He was followed in 336 b.c. by his son Alexander the Great , one of the most remarkable leaders in history .
+∃ REF2[8] REF1[1] ATTRIB[5] EVENT[9] ENTITY[3] ENTITY[7] DATE[2] ENTITY[6] GROUP[4] (
+ most_remarkable(ATTRIB[5]) ∧
+  history(ENTITY[6]) ∧
+   is_leaders_in(GROUP[4], ENTITY[6]) ∧ is_leaders_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    REF1[1] = he ∧
+     (CD_336(DATE[2]), b.c.(DATE[2])) ∧
+      REF2[8] = his ∧
+       is_son_POS(ENTITY[7], REF2[8]) ∧
+        is_-ENTITY-_namely(ENTITY[7], ENTITY[Alexander_the_Great]) ∧
+         (CD_one(ENTITY[3]), is_element_of(ENTITY[3], GROUP[4])) ∧
+          is_-ENTITY-_namely(ENTITY[7], ENTITY[3]) ∧
+           past(EVENT[9]) ∧ follow.01(EVENT[9], ENTITY[7], REF1[1]) ∧ in(EVENT[9]) = DATE[2])
+
+# ::id 65_nonfiction_MASC;HistoryGreek;AT17-6;NE
+# ::snt His rise to power ushered in the Hellenistic period .
+∃ REF1[2] ATTRIB[5] EVENT[6] ENTITY[3] ENTITY[1] ENTITY[4] (
+ hellenistic(ATTRIB[5]) ∧
+  is_period_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   REF1[2] = his ∧
+    power(ENTITY[3]) ∧
+     is_rise_to(ENTITY[1], ENTITY[3]) ∧ is_rise_POS(ENTITY[1], REF1[2]) ∧
+      past(EVENT[6]) ∧ usher.01(EVENT[6], ENTITY[1], ENTITY[4]))
+
+# ::id 66_nonfiction_MASC;HistoryGreek;AT18-1;NE
+# ::snt Hellenistic and Roman Periods
+∃ EVENT[6] GROUP[1] (
+ ∃ ATTRIB[3] GROUP[2] (hellenistic(ATTRIB[3]) ∧ is_Periods_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ ATTRIB[5] GROUP[4] (roman(ATTRIB[5]) ∧ is_Periods_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[1])) ∧
+  xxx(EVENT[6]) ∧ LINK(EVENT[6]) = GROUP[1])
+
+# ::id 67_nonfiction_MASC;HistoryGreek;AT19-1;NE
+# ::snt When Alexander went on to conquer lands as far to the N as India , the Aegean became a crossroads for the long trading routes .
+∃ SITUATION[8] SITUATION[13] ATTRIB[4] ATTRIB[11] ATTRIB[6] EVENT[7] EVENT[2] EVENT[12] GROUP[3] GROUP[9] ENTITY[5] GROUP[10] (
+ n(ATTRIB[6]) ∧
+  is_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   long(ATTRIB[11]) ∧
+    is_trading_routes_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+     is_as_far_as(ATTRIB[4], ENTITY[India]) ∧ is_as_far_to(ATTRIB[4], ENTITY[5]) ∧
+      is_lands_LOC(GROUP[3], ATTRIB[4]) ∧
+       is_crossroads_for(GROUP[9], GROUP[10]) ∧
+        is_TMP(SITUATION[8], SITUATION[13]) ∧
+         past(EVENT[2]) ∧
+          is_FACT_THAT(SITUATION[8], go.15(EVENT[2], ENTITY[Alexander], conquer.01(EVENT[7], ENTITY[Alexander], GROUP[3]))) ∧
+           past(EVENT[12]) ∧ is_FACT_THAT(SITUATION[13], become.01(EVENT[12], ENTITY[Aegean], GROUP[9])))
+
+# ::id 68_nonfiction_MASC;HistoryGreek;AT19-2;NE
+# ::snt Delos became one of the largest marketplaces in the empire .
+∃ ATTRIB[3] EVENT[5] ENTITY[1] ENTITY[4] GROUP[2] (
+ largest(ATTRIB[3]) ∧
+  empire(ENTITY[4]) ∧
+   is_marketplaces_in(GROUP[2], ENTITY[4]) ∧ is_marketplaces_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+     past(EVENT[5]) ∧ become.01(EVENT[5], ENTITY[Delos], ENTITY[1]))
+
+# ::id 69_nonfiction_MASC;HistoryGreek;AT20-1;NE
+# ::snt Following Alexander 's death , his lands were divided among his generals .
+∃ REF2[5] REF1[3] EVENT[6] GROUP[4] GROUP[2] ENTITY[1] (
+ is_death_POS(ENTITY[1], ENTITY[Alexander]) ∧
+  REF1[3] = his ∧
+   is_lands_POS(GROUP[2], REF1[3]) ∧
+    REF2[5] = his ∧
+     is_generals_POS(GROUP[4], REF2[5]) ∧
+      past(EVENT[6]) ∧
+       divide.02(EVENT[6], _, GROUP[2]) ∧ among(EVENT[6]) = GROUP[4] ∧ following(EVENT[6]) = ENTITY[1])
+
+# ::id 70_nonfiction_MASC;HistoryGreek;AT20-2;NE
+# ::snt Much of the Aegean came under the rule of the Ptolemies , along with Egypt .
+∃ ENTITY[2] (
+ is_rule_of(ENTITY[2], GROUP[Ptolemies]) ∧
+  MUCH ENTITY[1] (is_of(ENTITY[1], ENTITY[Aegean]) ∧ is_along_with(ENTITY[1], ENTITY[Egypt]),
+   ∃ EVENT[3] (past(EVENT[3]) ∧ come.01(EVENT[3], ENTITY[1]) ∧ under(EVENT[3]) = ENTITY[2])))
+
+# ::id 71_nonfiction_MASC;HistoryGreek;AT20-3;NE
+# ::snt Cleopatra was a member of this famous ruling clan .
+∃ ATTRIB[4] ATTRIB[3] EVENT[5] ENTITY[1] ENTITY[2] (
+ famous(ATTRIB[3]) ∧
+  rule.03(ATTRIB[4]) ∧
+   is_clan_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_clan_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    is_member_of(ENTITY[1], ENTITY[2]) ∧ past(EVENT[5]) ∧ be.01(EVENT[5], ENTITY[Cleopatra], ENTITY[1]))
+
+# ::id 72_nonfiction_MASC;HistoryGreek;AT21-1;NE
+# ::snt Although in 88 b.c. , Mithradates made a swift and successful raid from the East across Asia Minor and the Aegean Islands , the next major power change brought influence from the West .
+∃ ATTRIB[4] ATTRIB[3] ATTRIB[8] EVENT[6] EVENT[10] GROUP[5] GROUP[5] ENTITY[2] DATE[1] ENTITY[9] ENTITY[7] (
+ next(ATTRIB[8]) ∧
+  is_major_power_change_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   (CD_88(DATE[1]), b.c.(DATE[1])) ∧
+    swift(ATTRIB[3]) ∧
+     is_element_of(ENTITY[Asia_Minor], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[Aegean_Islands], GROUP[5]) ∧
+      successful(ATTRIB[4]) ∧
+       is_element_of(ENTITY[Asia_Minor], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[Aegean_Islands], GROUP[5]) ∧
+        CONJ_and(is_raid_across(ENTITY[2], GROUP[5]) ∧ is_raid_from(ENTITY[2], ENTITY[East]) ∧ is_raid_ATTRIBUTE(ENTITY[2], ATTRIB[3]),
+         is_raid_across(ENTITY[2], GROUP[5]) ∧ is_raid_from(ENTITY[2], ENTITY[East]) ∧ is_raid_ATTRIBUTE(ENTITY[2], ATTRIB[4])) ∧
+         is_influence_from(ENTITY[9], ENTITY[West]) ∧
+          past(EVENT[6]) ∧
+           past(EVENT[10]) ∧
+            CRD_Although(make.04(EVENT[6], ENTITY[Mithradates], ENTITY[2]) ∧ in(EVENT[6]) = DATE[1],
+             bring.01(EVENT[10], ENTITY[7], ENTITY[9])))
+
+# ::id 73_nonfiction_MASC;HistoryGreek;AT21-2;NE
+# ::snt The Greek Hellenistic Empire was gradually , and peacefully , absorbed into the Roman Empire .
+∃ EVENT[1] (
+ ADV_gradually_peacefully(EVENT[1]) ∧
+  past(EVENT[1]) ∧ absorb.01(EVENT[1], _, ENTITY[Greek_Hellenistic_Empire]) ∧ into(EVENT[1]) = ENTITY[Roman_Empire])
+
+# ::id 74_nonfiction_MASC;HistoryGreek;AT22-1;NE
+# ::snt The Byzantine Empire and the Coming of Christianity
+∃ ATTRIB[3] EVENT[4] GROUP[1] ENTITY[2] (
+ coming(ATTRIB[3]) ∧
+  is_of(ENTITY[2], ENTITY[Christianity]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_element_of(ENTITY[Byzantine_Empire], GROUP[1]) ∧ is_element_of(ENTITY[2], GROUP[1]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 75_nonfiction_MASC;HistoryGreek;AT23-1;NE
+# ::snt The Romans ruled a pagan empire , but the Aegean had an important influence on the early development of Christianity .
+∃ ATTRIB[4] ATTRIB[6] EVENT[2] EVENT[7] ENTITY[1] ENTITY[3] ENTITY[5] (
+ early(ATTRIB[6]) ∧
+  is_development_of(ENTITY[5], ENTITY[Christianity]) ∧ is_development_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   pagan_empire(ENTITY[1]) ∧
+    important(ATTRIB[4]) ∧
+     is_influence_on(ENTITY[3], ENTITY[5]) ∧ is_influence_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      past(EVENT[2]) ∧
+       past(EVENT[7]) ∧ CONJ_but(rule.03(EVENT[2], GROUP[Romans], ENTITY[1]), have.06(EVENT[7], ENTITY[Aegean], ENTITY[3])))
+
+# ::id 76_nonfiction_MASC;HistoryGreek;AT23-2;NE
+# ::snt In a.d. 95 , St. John arrived on Patmos , a small rocky island in the Dodecanese , as a political prisoner .
+∃ ATTRIB[5] ATTRIB[3] EVENT[6] ENTITY[2] ENTITY[4] DATE[1] (
+ (CD_95(DATE[1]), a.d.(DATE[1])) ∧
+  small(ATTRIB[3]) ∧
+   is_rocky_island_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_rocky_island_in(ENTITY[2], ENTITY[Dodecanese]) ∧
+    is_-ENTITY-_namely(ENTITY[Patmos], ENTITY[2]) ∧
+     political(ATTRIB[5]) ∧
+      is_prisoner_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+       past(EVENT[6]) ∧
+        arrive.01(EVENT[6], ENTITY[St.John]) ∧ as(EVENT[6]) = ENTITY[4] ∧ on(EVENT[6]) = ENTITY[Patmos] ∧
+         In(EVENT[6]) = DATE[1])
+
+# ::id 77_nonfiction_MASC;HistoryGreek;AT23-3;NE
+# ::snt It was here that he wrote what was to become the final book of the New Testament , the Book of Revelation .
+∃ REF1[2] SITUATION[1] ATTRIB[8] EVENT[9] EVENT[5] EVENT[10] EVENT[11] ENTITY[3] ENTITY[6] ENTITY[7] (
+ final(ATTRIB[8]) ∧
+  is_book_of(ENTITY[7], ENTITY[New_Testament]) ∧ is_book_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   is_Book_of(ENTITY[6], ENTITY[Revelation]) ∧
+    is_-ENTITY-_namely(ENTITY[7], ENTITY[6]) ∧
+     REF1[2] = he ∧
+      be.03(EVENT[5], ENTITY[3], become.01(EVENT[9], ENTITY[3], ENTITY[7])) ∧
+       is_FACT_THAT(SITUATION[1], write.01(EVENT[10], REF1[2], ENTITY[3])) ∧
+        past(EVENT[5]) ∧
+         past(EVENT[10]) ∧ LOC_here(EVENT[11]) ∧ past(EVENT[11]) ∧ be.01(EVENT[11], SITUATION[1]))
+
+# ::id 78_nonfiction_MASC;HistoryGreek;AT23-4;NE
+# ::snt It was n't until a.d. 330 , however , when the newly converted Emperor Constantine made Byzantium , renamed Constantinople , capital of his Eastern Empire that Christianity was assured of its dominant role in future Greek life .
+∃ ATTRIB[6] ATTRIB[4] REF1[3] SITUATION[1] ATTRIB[10] EVENT[7] ENTITY[5] ENTITY[2] (
+ newly_convert.01(ATTRIB[10]) ∧
+  is_ATTRIBUTE(ENTITY[Emperor_Constantine], ATTRIB[10]) ∧
+   REF1[3] = its ∧
+    dominant(ATTRIB[4]) ∧
+     future(ATTRIB[6]) ∧
+      is_Greek_life_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       is_role_in(ENTITY[2], ENTITY[5]) ∧ is_role_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_role_POS(ENTITY[2], REF1[3]) ∧
+        is_FACT_THAT(SITUATION[1], assure.01(EVENT[7], _, ENTITY[Christianity]) ∧ of(EVENT[7]) = ENTITY[2]) ∧
+         past(EVENT[7]) ∧
+          ¬ ∃ SITUATION[18] SITUATION[20] SITUATION[21] REF2[16] EVENT[14] EVENT[13] EVENT[17] EVENT[11] EVENT[19] ENTITY[15] DATE[8] (
+                (CD_330(DATE[8]), a.d.(DATE[8])) ∧
+                 rename.01(EVENT[13], _, ENTITY[Byzantium], xxx(EVENT[14], ENTITY[Byzantium], ENTITY[Constantinople])) ∧
+                  REF2[16] = his ∧
+                   is_POS(ENTITY[Eastern_Empire], REF2[16]) ∧
+                    is_capital_of(ENTITY[15], ENTITY[Eastern_Empire]) ∧
+                     ADV_however(SITUATION[21]) ∧
+                      is_TMP(SITUATION[18], SITUATION[20]) ∧
+                       past(EVENT[11]) ∧
+                        is_FACT_THAT(SITUATION[18],
+                         make.02(EVENT[11], ENTITY[Emperor_Constantine], xxx(EVENT[17], ENTITY[Byzantium], ENTITY[15]))) ∧
+                         past(EVENT[19]) ∧
+                          is_FACT_THAT(SITUATION[21],
+                           is_FACT_THAT(SITUATION[20],
+                            be.01(EVENT[19], SITUATION[1]) ∧ until(EVENT[19]) = DATE[8]))))
+
+# ::id 79_nonfiction_MASC;HistoryGreek;AT24-1;NE
+# ::snt The Byzantine Empire had powerful and well-fortified cities , but the countryside and the outlying islands were ravaged by waves of invaders .
+∃ ATTRIB[3] ATTRIB[2] ATTRIB[8] EVENT[4] EVENT[11] GROUP[1] GROUP[10] GROUP[9] GROUP[5] ENTITY[6] GROUP[7] (
+ countryside(ENTITY[6]) ∧
+  outlying(ATTRIB[8]) ∧
+   is_islands_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+    powerful(ATTRIB[2]) ∧
+     fortify.01(ATTRIB[3]) ∧
+      CONJ_and(is_cities_ATTRIBUTE(GROUP[1], ATTRIB[2]), is_cities_ATTRIBUTE(GROUP[1], ATTRIB[3])) ∧
+       is_element_of(ENTITY[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+        invaders(GROUP[10]) ∧
+         is_waves_of(GROUP[9], GROUP[10]) ∧
+          past(EVENT[4]) ∧
+           past(EVENT[11]) ∧
+            CONJ_but(have.03(EVENT[4], ENTITY[Byzantine_Empire], GROUP[1]), ravage.01(EVENT[11], GROUP[9], GROUP[5])))
+
+# ::id 80_nonfiction_MASC;HistoryGreek;AT24-2;NE
+# ::snt In an attempt to counter a threat from the Saracen Muslims , a new potent religious force from the East , the Byzantine army forcefully enlisted the men of the islands .
+∃ ATTRIB[8] ATTRIB[5] ATTRIB[4] EVENT[6] EVENT[11] ENTITY[2] ENTITY[1] ENTITY[3] GROUP[10] GROUP[9] ENTITY[7] (
+ new(ATTRIB[4]) ∧
+  potent(ATTRIB[5]) ∧
+   is_religious_force_from(ENTITY[3], ENTITY[East]) ∧ is_religious_force_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_religious_force_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_-GROUP-_namely(GROUP[Saracen_Muslims], ENTITY[3]) ∧
+     byzantine(ATTRIB[8]) ∧
+      is_army_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       islands(GROUP[10]) ∧
+        is_men_of(GROUP[9], GROUP[10]) ∧
+         is_threat_from(ENTITY[2], GROUP[Saracen_Muslims]) ∧
+          is_attempt_to(ENTITY[1], counter.01(EVENT[6], _, ENTITY[2])) ∧
+           ADV_forcefully(EVENT[11]) ∧
+            past(EVENT[11]) ∧ enlist.01(EVENT[11], ENTITY[7], GROUP[9]) ∧ In(EVENT[11]) = ENTITY[1])
+
+# ::id 81_nonfiction_MASC;HistoryGreek;AT25-1;NE
+# ::snt Disease took a further toll .
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ Disease(ENTITY[1]) ∧
+  further(ATTRIB[3]) ∧ is_toll_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ take.01(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 82_nonfiction_MASC;HistoryGreek;AT25-2;NE
+# ::snt By the time of the Crusades , many of the Aegean islands had been practically depopulated .
+∃ ATTRIB[4] GROUP[3] ENTITY[1] (
+ is_time_of(ENTITY[1], GROUP[Crusades]) ∧
+  aegean(ATTRIB[4]) ∧
+   is_islands_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    MANY ENTITY[2] (is_element_of(ENTITY[2], GROUP[3]),
+     ∃ EVENT[5] (ADV_practically(EVENT[5]) ∧ past(EVENT[5]) ∧ be.03(EVENT[5], ENTITY[1], ENTITY[2]))))
+
+# ::id 83_nonfiction_MASC;HistoryGreek;AT26-1;NE
+# ::snt As the Byzantine Empire weakened at the end of the first millennium , Crusader forces were sent from Western Europe to counter the Muslim forces and retake Jerusalem for the Christian faith .
+∃ PRP[6] ATTRIB[11] ATTRIB[8] ATTRIB[3] GROUP[5] EVENT[4] EVENT[9] EVENT[12] EVENT[13] ENTITY[2] ENTITY[1] GROUP[7] ENTITY[10] (
+ first(ATTRIB[3]) ∧
+  is_millennium_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_end_of(ENTITY[1], ENTITY[2]) ∧
+    muslim(ATTRIB[8]) ∧
+     is_forces_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      christian(ATTRIB[11]) ∧
+       is_faith_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+        past(EVENT[4]) ∧
+         past(EVENT[13]) ∧
+          Crusader_forces(GROUP[5]) ∧
+           is_FACT_THAT(PRP[6],
+            CONJ_and(counter.01(EVENT[9], GROUP[5], GROUP[7]),
+             retake.01(EVENT[12], GROUP[5], ENTITY[Jerusalem]) ∧ for(EVENT[12]) = ENTITY[10])) ∧
+            CRD_As(weaken.01(EVENT[4], ENTITY[Byzantine_Empire]) ∧ at(EVENT[4]) = ENTITY[1],
+             send.03(EVENT[13], _, GROUP[5]) ∧ PRP(EVENT[13]) = PRP[6] ∧
+              from(EVENT[13]) = ENTITY[Western_Europe]))
+
+# ::id 84_nonfiction_MASC;HistoryGreek;AT26-2;NE
+# ::snt Unfortunately , their zeal was not matched by their discrimination .
+∃ SITUATION[6] REF1[2] ENTITY[1] (
+ REF1[2] = their ∧
+  is_zeal_POS(ENTITY[1], REF1[2]) ∧
+   ADV_unfortunately(SITUATION[6]) ∧
+    is_FACT_THAT(SITUATION[6],
+     ¬ ∃ REF2[4] EVENT[5] ENTITY[3] (
+           REF2[4] = their ∧
+            is_discrimination_POS(ENTITY[3], REF2[4]) ∧ past(EVENT[5]) ∧ match.01(EVENT[5], ENTITY[3], ENTITY[1]))))
+
+# ::id 85_nonfiction_MASC;HistoryGreek;AT26-3;NE
+# ::snt The crusaders swept through the land of Byzantium slaughtering Christians as well as Muslims , civilians as well as soldiers .
+∃ EVENT[9] EVENT[8] GROUP[3] ENTITY[2] GROUP[1] (
+ crusaders(GROUP[1]) ∧
+  is_land_of(ENTITY[2], ENTITY[Byzantium]) ∧
+   ∃ GROUP[4] (CONJ_as_well(is_subset_of_or_equal_to(GROUP[Christians], GROUP[4]), is_subset_of_or_equal_to(GROUP[Muslims], GROUP[4])) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+    ∃ GROUP[5] (
+     CONJ_as_well(∃ GROUP[6] (civilians(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])),
+      ∃ GROUP[7] (soldiers(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]))) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+    past(EVENT[9]) ∧
+     CONJ_and(sweep.02(EVENT[9], GROUP[1]) ∧ through(EVENT[9]) = ENTITY[2], slaughter.01(EVENT[8], GROUP[1], GROUP[3])))
+
+# ::id 86_nonfiction_MASC;HistoryGreek;AT26-4;NE
+# ::snt Constantinople was taken by Crusader forces in 1204 ,
+∃ EVENT[3] DATE[2] GROUP[1] (
+ Crusader_forces(GROUP[1]) ∧
+  CD_1204(DATE[2]) ∧
+   past(EVENT[3]) ∧ take.01(EVENT[3], GROUP[1], ENTITY[Constantinople]) ∧ in(EVENT[3]) = DATE[2])
+
+# ::id 87_nonfiction_MASC;HistoryGreek;AT26-4;NE
+# ::snt and they stripped the city of many of its finest treasures — which now grace the public buildings of Venice — although a large consignment of books and manuscripts was transferred to the monastery at Patmos before the city fell .
+∃ REF1[1] ATTRIB[9] GROUP[8] ENTITY[18] ENTITY[17] ENTITY[2] (
+ city(ENTITY[2]) ∧
+  public(ATTRIB[9]) ∧
+   is_buildings_of(GROUP[8], ENTITY[Venice]) ∧ is_buildings_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+    is_monastery_at(ENTITY[17], ENTITY[Patmos]) ∧
+     city(ENTITY[18]) ∧
+      REF1[1] = they ∧
+       MANY ATTRIB[6] REF2[5] EVENT[10] GROUP[4] ENTITY[3] (
+        (REF2[5] = its ∧ finest(ATTRIB[6]) ∧
+         grace.01(EVENT[10], GROUP[4], GROUP[8]) ∧ is_treasures_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_treasures_POS(GROUP[4], REF2[5]) ∧
+         is_element_of(ENTITY[3], GROUP[4]) ∧ TMP_now(EVENT[10])),
+        ∃ ATTRIB[13] EVENT[19] EVENT[20] EVENT[21] GROUP[14] ENTITY[12] (
+         large(ATTRIB[13]) ∧
+          ∃ GROUP[15] (books(GROUP[15]) ∧ is_subset_of_or_equal_to(GROUP[15], GROUP[14])) ∧
+           ∃ GROUP[16] (manuscripts(GROUP[16]) ∧ is_subset_of_or_equal_to(GROUP[16], GROUP[14])) ∧
+           is_consignment_of(ENTITY[12], GROUP[14]) ∧ is_consignment_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+            past(EVENT[19]) ∧
+             past(EVENT[20]) ∧
+              past(EVENT[21]) ∧
+               CRD_although(CRD_before(fall.05(EVENT[19], ENTITY[18]),
+                     transfer.01(EVENT[20], _, ENTITY[12]) ∧ to(EVENT[20]) = ENTITY[17]),
+                strip.01(EVENT[21], REF1[1], ENTITY[2]) ∧ of(EVENT[21]) = ENTITY[3]))))
+
+# ::id 88_nonfiction_MASC;HistoryGreek;AT27-1;NE
+# ::snt While Byzantine land was being divided , there was no one in control of the seas ,
+∃ ATTRIB[2] EVENT[3] ENTITY[1] GROUP[6] (
+ seas(GROUP[6]) ∧
+  byzantine(ATTRIB[2]) ∧
+   is_land_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[3]) ∧
+     CRD_While(divide.02(EVENT[3], _, ENTITY[1]),
+      ¬ ∃ EVENT[7] ENTITY[5] ENTITY[4] (
+            is_control_of(ENTITY[5], GROUP[6]) ∧
+             is_one_in(ENTITY[4], ENTITY[5]) ∧ past(EVENT[7]) ∧ be.02(EVENT[7], ENTITY[4]))))
+
+# ::id 89_nonfiction_MASC;HistoryGreek;AT27-1;NE
+# ::snt so pirates raided towns on many of the islands .
+∃ EVENT[5] GROUP[2] GROUP[1] GROUP[4] (
+ islands(GROUP[4]) ∧
+  pirates(GROUP[1]) ∧
+   MANY ENTITY[3] (is_element_of(ENTITY[3], GROUP[4]), is_towns_on(GROUP[2], ENTITY[3])) ∧
+    past(EVENT[5]) ∧ raid.01(EVENT[5], GROUP[1], GROUP[2]))
+
+# ::id 90_nonfiction_MASC;HistoryGreek;AT27-2;NE
+# ::snt To counter this , the populations moved from their homes on the coast and built settlements inland , out of sight of the raiding parties .
+∃ REF1[6] PRP[1] ATTRIB[12] GROUP[5] ENTITY[10] GROUP[9] EVENT[3] EVENT[8] EVENT[13] ENTITY[2] ENTITY[7] GROUP[11] GROUP[4] (
+ populations(GROUP[4]) ∧
+  coast(ENTITY[7]) ∧
+   raiding(ATTRIB[12]) ∧
+    is_parties_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+     past(EVENT[8]) ∧
+      LOC_inland(EVENT[13]) ∧
+       is_LOC_out_of(EVENT[13], ENTITY[10]) ∧
+        past(EVENT[13]) ∧
+         is_FACT_THAT(PRP[1], counter.01(EVENT[3], _, ENTITY[2])) ∧
+          REF1[6] = their ∧
+           is_homes_on(GROUP[5], ENTITY[7]) ∧ is_homes_POS(GROUP[5], REF1[6]) ∧
+            settlements(GROUP[9]) ∧
+             is_sight_of(ENTITY[10], GROUP[11]) ∧
+              CONJ_and(move.01(EVENT[8], GROUP[4]) ∧ from(EVENT[8]) = GROUP[5] ∧
+                    PRP(EVENT[8]) = PRP[1],
+               build.01(EVENT[13], GROUP[4], GROUP[9]) ∧ PRP(EVENT[13]) = PRP[1]))
+
+# ::id 91_nonfiction_MASC;HistoryGreek;AT27-3;NE
+# ::snt This created a pattern seen today throughout the Aegean of a small port -LRB- skala -RRB- which serves an inland settlement or chora , making it easier to protect the island from attack .
+∃ ATTRIB[20] SITUATION[16] ATTRIB[5] EVENT[11] EVENT[14] EVENT[22] EVENT[19] EVENT[21] EVENT[15] GROUP[7] TIME[13] ENTITY[4] ENTITY[18] ENTITY[2] ENTITY[17] ENTITY[1] (
+ island(ENTITY[17]) ∧
+  small(ATTRIB[5]) ∧
+   CONJ_or(∃ ATTRIB[9] ENTITY[8] (inland(ATTRIB[9]) ∧ is_settlement_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+    ∃ ENTITY[10] (chora(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7]))) ∧
+    serve.01(EVENT[11], ENTITY[4], GROUP[7]) ∧ is_port_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     SKALA ENTITY[3] is_-ENTITY-_namely(ENTITY[4], ENTITY[3]) ∧
+      today(TIME[13]) ∧
+       see.01(EVENT[14], _, ENTITY[2]) ∧ throughout(EVENT[14]) = ENTITY[Aegean] ∧
+        is_contained_in(TMP(EVENT[14]), TIME[13]) ∧ is_pattern_of(ENTITY[2], ENTITY[4]) ∧
+        attack(ENTITY[18]) ∧
+         is_FACT_THAT(SITUATION[16], protect.01(EVENT[19], _, ENTITY[17]) ∧ from(EVENT[19]) = ENTITY[18]) ∧
+          easier(ATTRIB[20]) ∧
+           past(EVENT[22]) ∧
+            CONJ_and(create.01(EVENT[22], ENTITY[1], ENTITY[2]),
+             make.01(EVENT[15], ENTITY[2], xxx(EVENT[21], SITUATION[16], ATTRIB[20]))))
+
+# ::id 92_nonfiction_MASC;HistoryGreek;AT28-1;NE
+# ::snt The minor Aegean Islands were taken by various powerful European noblemen , many of whom were Genoese or Venetian , such as Marco Sanudo on Naxos .
+∃ ATTRIB[9] ATTRIB[3] ATTRIB[2] EVENT[10] GROUP[1] (
+ various(ATTRIB[2]) ∧
+  powerful(ATTRIB[3]) ∧
+   is_on(ENTITY[Marco_Sanudo], ENTITY[Naxos]) ∧
+    is_such_as(ATTRIB[9], ENTITY[Marco_Sanudo]) ∧
+     MANY ENTITY[4] (is_element_of(ENTITY[4], GROUP[1]),
+      ∃ ATTRIB[7] ATTRIB[6] EVENT[8] EVENT[8] (
+       genoese(ATTRIB[6]) ∧
+        venetian(ATTRIB[7]) ∧
+         past(EVENT[8]) ∧
+          past(EVENT[8]) ∧
+           CONJ_or(be.01(EVENT[8], ENTITY[4], ATTRIB[6]), be.01(EVENT[8], ENTITY[4], ATTRIB[7])))) ∧
+      is_European_noblemen_ATTRIBUTE(GROUP[1], ATTRIB[9]) ∧ is_European_noblemen_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_European_noblemen_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      past(EVENT[10]) ∧ take.01(EVENT[10], GROUP[1], GROUP[minor_Aegean_Islands]))
+
+# ::id 93_nonfiction_MASC;HistoryGreek;AT28-2;NE
+# ::snt The noblemen had free rein to create their own fiefdoms .
+∃ ATTRIB[7] REF1[6] PRP[4] ATTRIB[3] EVENT[8] EVENT[9] GROUP[5] ENTITY[2] GROUP[1] (
+ noblemen(GROUP[1]) ∧
+  free(ATTRIB[3]) ∧
+   is_rein_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    REF1[6] = their ∧
+     own(ATTRIB[7]) ∧
+      is_fiefdoms_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_fiefdoms_POS(GROUP[5], REF1[6]) ∧
+       is_FACT_THAT(PRP[4], create.01(EVENT[8], ENTITY[2], GROUP[5])) ∧
+        past(EVENT[9]) ∧ have.03(EVENT[9], GROUP[1], ENTITY[2]) ∧ PRP(EVENT[9]) = PRP[4])
+
+# ::id 94_nonfiction_MASC;HistoryGreek;AT28-3;NE
+# ::snt The Venetians fortified their main towns — Naxos Town and Antiparos Town are wonderful examples of this — creating labyrinths of narrow alleys and cul-de-sacs that were designed to confuse and to demoralize invaders .
+∃ ATTRIB[3] REF1[2] EVENT[15] EVENT[12] EVENT[13] EVENT[10] EVENT[14] GROUP[11] GROUP[5] GROUP[4] GROUP[1] (
+ REF1[2] = their ∧
+  main(ATTRIB[3]) ∧
+   is_towns_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_towns_POS(GROUP[1], REF1[2]) ∧
+    ∃ ATTRIB[7] GROUP[6] (narrow(ATTRIB[7]) ∧ is_alleys_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+     ∃ GROUP[8] (cul-de-sacs(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[5])) ∧
+     invaders(GROUP[11]) ∧
+      design.01(EVENT[10], _, GROUP[4],
+       CONJ_and(confuse.01(EVENT[12], GROUP[4], GROUP[11]), demoralize.01(EVENT[13], GROUP[4], GROUP[11]))) ∧
+       is_labyrinths_of(GROUP[4], GROUP[5]) ∧
+       past(EVENT[15]) ∧
+        past(EVENT[10]) ∧ CONJ_and(fortify.01(EVENT[15], GROUP[Venetians], GROUP[1]), create.01(EVENT[14], GROUP[1], GROUP[4])))
+
+# ::id 95_nonfiction_MASC;HistoryGreek;AT28-4;NE
+# ::snt The Genoese took control of the eastern Aegean Islands , which were considered the most valuable for agriculture and trade .
+∃ ATTRIB[7] ATTRIB[2] EVENT[12] ENTITY[3] EVENT[11] EVENT[5] ENTITY[9] ENTITY[10] GROUP[8] ENTITY[6] ENTITY[1] (
+ genoese(ATTRIB[2]) ∧
+  is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   most_valuable(ATTRIB[7]) ∧
+    agriculture(ENTITY[9]) ∧
+     trade(ENTITY[10]) ∧
+      is_element_of(ENTITY[9], GROUP[8]) ∧ is_element_of(ENTITY[10], GROUP[8]) ∧
+       is_for(ENTITY[6], GROUP[8]) ∧ is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+        consider.02(EVENT[5], _, GROUP[eastern_Aegean_Islands], xxx(EVENT[11], GROUP[eastern_Aegean_Islands], ENTITY[6])) ∧
+         past(EVENT[5]) ∧
+          is_control_of(ENTITY[3], GROUP[eastern_Aegean_Islands]) ∧ past(EVENT[12]) ∧ take.01(EVENT[12], ENTITY[1], ENTITY[3]))
+
+# ::id 96_nonfiction_MASC;HistoryGreek;AT29-1;NE
+# ::snt After a final bloody defeat by the Muslims in 1309 , Christian forces were forced from the Holy Land .
+∃ ATTRIB[5] ATTRIB[2] EVENT[6] DATE[3] GROUP[4] ENTITY[1] (
+ final(ATTRIB[2]) ∧
+  CD_1309(DATE[3]) ∧
+   is_bloody_defeat_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_bloody_defeat_in(ENTITY[1], DATE[3]) ∧ is_bloody_defeat_by(ENTITY[1], GROUP[Muslims]) ∧
+    christian(ATTRIB[5]) ∧
+     is_forces_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+      past(EVENT[6]) ∧
+       force.01(EVENT[6], _, GROUP[4]) ∧ from(EVENT[6]) = ENTITY[Holy_Land] ∧ After(EVENT[6]) = ENTITY[1])
+
+# ::id 97_nonfiction_MASC;HistoryGreek;AT29-2;NE
+# ::snt The Knights of St. John , a holy military force , made their way to Rhodes and Kos in the Dodecanese .
+∃ REF1[5] ATTRIB[2] EVENT[8] GROUP[7] ENTITY[6] ENTITY[4] ENTITY[1] GROUP[3] (
+ is_Knights_of(GROUP[3], ENTITY[St.John]) ∧
+  holy(ATTRIB[2]) ∧
+   is_military_force_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    is_-GROUP-_namely(GROUP[3], ENTITY[1]) ∧
+     REF1[5] = their ∧
+      is_way_POS(ENTITY[4], REF1[5]) ∧
+       is_element_of(ENTITY[Rhodes], GROUP[7]) ∧ is_element_of(ENTITY[Kos], GROUP[7]) ∧
+        is_in(ENTITY[6], ENTITY[Dodecanese]) ∧ is_equals(ENTITY[6], GROUP[7]) ∧
+         past(EVENT[8]) ∧ make.04(EVENT[8], GROUP[3], ENTITY[4]) ∧ to(EVENT[8]) = ENTITY[6])
+
+# ::id 98_nonfiction_MASC;HistoryGreek;AT29-3;NE
+# ::snt They began the process of building their strong citadels , and reinforcing the Christian faith on the islands .
+∃ REF1[1] ATTRIB[9] ATTRIB[6] REF2[5] SITUATION[3] EVENT[12] EVENT[7] EVENT[11] GROUP[4] GROUP[10] ENTITY[8] ENTITY[2] (
+ REF2[5] = their ∧
+  strong(ATTRIB[6]) ∧
+   is_citadels_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_citadels_POS(GROUP[4], REF2[5]) ∧
+    christian(ATTRIB[9]) ∧
+     islands(GROUP[10]) ∧
+      is_faith_on(ENTITY[8], GROUP[10]) ∧ is_faith_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       is_FACT_THAT(SITUATION[3], CONJ_and(build.01(EVENT[7], _, GROUP[4]), reinforce.01(EVENT[11], _, ENTITY[8]))) ∧
+        is_process_of(ENTITY[2], SITUATION[3]) ∧
+         REF1[1] = they ∧ past(EVENT[12]) ∧ begin.01(EVENT[12], REF1[1], ENTITY[2]))
+
+# ::id 99_nonfiction_MASC;HistoryGreek;AT29-4;NE
+# ::snt However , they had not seen the last of their Muslim foe .
+∃ SITUATION[8] REF1[1] ATTRIB[6] REF2[5] ATTRIB[3] ENTITY[4] ENTITY[2] (
+ last(ATTRIB[3]) ∧
+  REF2[5] = their ∧
+   muslim(ATTRIB[6]) ∧
+    is_foe_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_foe_POS(ENTITY[4], REF2[5]) ∧
+     is_of(ENTITY[2], ENTITY[4]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      REF1[1] = they ∧
+       ADV_however(SITUATION[8]) ∧
+        is_FACT_THAT(SITUATION[8], ¬ ∃ EVENT[7] (past(EVENT[7]) ∧ have.01(EVENT[7], REF1[1], ENTITY[2]))))
+
+# ::id 100_nonfiction_MASC;HistoryGreek;AT29-5;NE
+# ::snt A force was gaining strength in the east to threaten their new bases .
+∃ ATTRIB[5] REF1[4] EVENT[6] EVENT[9] GROUP[3] ENTITY[7] ENTITY[1] ENTITY[8] (
+ east(ENTITY[8]) ∧
+  REF1[4] = their ∧
+   new(ATTRIB[5]) ∧
+    is_bases_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_bases_POS(GROUP[3], REF1[4]) ∧
+     threaten.01(EVENT[6], ENTITY[1], GROUP[3]) ∧ force(ENTITY[1]) ∧
+      strength(ENTITY[7]) ∧
+       past(EVENT[9]) ∧ gain.02(EVENT[9], ENTITY[1], ENTITY[7]) ∧ in(EVENT[9]) = ENTITY[8])
+
+# ::id 101_nonfiction_MASC;HistoryGreek;AT30-1;NE
+# ::snt The Coming of the Ottoman Turks
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ coming(ATTRIB[2]) ∧
+  is_element_of(ENTITY[1], GROUP[Ottoman_Turks]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 102_nonfiction_MASC;HistoryGreek;AT31-1;NE
+# ::snt The Ottomans were roving invaders who came from the east , taking land in what is now Turkey .
+∃ ATTRIB[2] EVENT[11] EVENT[8] EVENT[10] EVENT[12] ENTITY[6] ENTITY[5] GROUP[1] ENTITY[4] (
+ east(ENTITY[4]) ∧
+  rove.01(ATTRIB[2]) ∧
+   be.01(EVENT[8], ENTITY[6], ENTITY[Turkey]) ∧
+    is_land_in(ENTITY[5], ENTITY[6]) ∧
+     CONJ_and(come.01(EVENT[11], GROUP[1]) ∧ from(EVENT[11]) = ENTITY[4],
+      take.01(EVENT[10], GROUP[1], ENTITY[5])) ∧ is_invaders_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      past(EVENT[11]) ∧ TMP_now(EVENT[8]) ∧ past(EVENT[12]) ∧ be.01(EVENT[12], GROUP[Ottomans], GROUP[1]))
+
+# ::id 103_nonfiction_MASC;HistoryGreek;AT31-2;NE
+# ::snt By the end of the 13th century , they began their first raids on the Aegean Islands .
+∃ ATTRIB[7] REF2[6] REF1[4] ATTRIB[3] EVENT[8] GROUP[5] DATE[2] ENTITY[1] (
+ 13th(ATTRIB[3]) ∧
+  is_century_ATTRIBUTE(DATE[2], ATTRIB[3]) ∧
+   is_end_of(ENTITY[1], DATE[2]) ∧
+    REF1[4] = they ∧
+     REF2[6] = their ∧
+      first(ATTRIB[7]) ∧
+       is_raids_on(GROUP[5], GROUP[Aegean_Islands]) ∧ is_raids_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_raids_POS(GROUP[5], REF2[6]) ∧
+        past(EVENT[8]) ∧ begin.01(EVENT[8], REF1[4], GROUP[5]) ∧ By(EVENT[8]) = ENTITY[1])
+
+# ::id 104_nonfiction_MASC;HistoryGreek;AT31-3;NE
+# ::snt In 1453 , they took Constantinople , and immediately made it their capital , renaming it Istanbul .
+∃ SITUATION[12] REF4[4] REF3[10] REF2[8] REF1[2] EVENT[3] EVENT[11] EVENT[7] EVENT[6] EVENT[5] ENTITY[9] DATE[1] (
+ CD_1453(DATE[1]) ∧
+  REF1[2] = they ∧
+   REF2[8] = it ∧
+    REF3[10] = their ∧
+     is_capital_POS(ENTITY[9], REF3[10]) ∧
+      REF4[4] = it ∧
+       past(EVENT[3]) ∧
+        TMP_immediately(SITUATION[12]) ∧
+         past(EVENT[7]) ∧
+          CONJ_and(take.01(EVENT[3], REF1[2], ENTITY[Constantinople]) ∧ In(EVENT[3]) = DATE[1],
+           is_FACT_THAT(SITUATION[12],
+            CONJ_and(make.02(EVENT[7], REF1[2], xxx(EVENT[11], REF2[8], ENTITY[9])) ∧
+                  In(EVENT[7]) = DATE[1],
+             rename.01(EVENT[5], REF1[2], REF4[4], xxx(EVENT[6], REF4[4], ENTITY[Istanbul]))))))
+
+# ::id 105_nonfiction_MASC;HistoryGreek;AT31-4;NE
+# ::snt They then set their sights on the islands of the Knights of St. John
+∃ REF2[3] REF1[1] EVENT[6] GROUP[2] GROUP[5] GROUP[4] (
+ is_Knights_of(GROUP[5], ENTITY[St.John]) ∧
+  is_islands_of(GROUP[4], GROUP[5]) ∧
+   REF1[1] = they ∧
+    REF2[3] = their ∧
+     is_sights_POS(GROUP[2], REF2[3]) ∧
+      TMP_then(EVENT[6]) ∧
+       past(EVENT[6]) ∧ set.02(EVENT[6], REF1[1], GROUP[2]) ∧ on(EVENT[6]) = GROUP[4])
+
+# ::id 106_nonfiction_MASC;HistoryGreek;AT31-4;NE
+# ::snt and , after an unsuccessful siege in 1480 , they finally ejected the knights from the Dodecanese in 1522 .
+∃ REF1[4] ATTRIB[2] EVENT[7] DATE[3] DATE[6] ENTITY[1] GROUP[5] (
+ knights(GROUP[5]) ∧
+  unsuccessful(ATTRIB[2]) ∧
+   CD_1480(DATE[3]) ∧
+    is_siege_in(ENTITY[1], DATE[3]) ∧ is_siege_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     REF1[4] = they ∧
+      CD_1522(DATE[6]) ∧
+       ADV_finally(EVENT[7]) ∧
+        past(EVENT[7]) ∧
+         eject.01(EVENT[7], REF1[4], GROUP[5]) ∧ in(EVENT[7]) = DATE[6] ∧
+          from(EVENT[7]) = ENTITY[Dodecanese] ∧ after(EVENT[7]) = ENTITY[1])
+
+# ::id 107_nonfiction_MASC;HistoryGreek;AT31-5;NE
+# ::snt In 1566 , they wrested Chios from the Genoese , bolstering their hold on the eastern Aegean Islands , but the Cyclades remained in Venetian hands for another generation or more — Tinos was the last to fall in 1715 .
+∃ ATTRIB[10] REF2[6] REF1[2] ATTRIB[16] ATTRIB[4] EVENT[8] EVENT[7] EVENT[14] EVENT[20] ENTITY[5] DATE[1] GROUP[11] GROUP[9] EVENT[19] ENTITY[3] DATE[18] ENTITY[15] (
+ genoese(ATTRIB[4]) ∧
+  is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   last(ATTRIB[16]) ∧
+    CD_1715(DATE[18]) ∧
+     fall.05(EVENT[19], ENTITY[15]) ∧ in(EVENT[19]) = DATE[18] ∧ is_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+      CD_1566(DATE[1]) ∧
+       REF1[2] = they ∧
+        REF2[6] = their ∧
+         is_hold_on(ENTITY[5], GROUP[eastern_Aegean_Islands]) ∧ is_hold_POS(ENTITY[5], REF2[6]) ∧
+          venetian(ATTRIB[10]) ∧
+           is_hands_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+            CONJ_or(ANOTHER ENTITY[12] (generation(ENTITY[12]), is_element_of(ENTITY[12], GROUP[11])), MORE ENTITY[13] is_element_of(ENTITY[13], GROUP[11])) ∧
+             past(EVENT[8]) ∧
+              past(EVENT[14]) ∧
+               past(EVENT[20]) ∧
+                CONJ_but(CONJ_and(wrest.01(EVENT[8], REF1[2], ENTITY[Chios]) ∧ from(EVENT[8]) = ENTITY[3] ∧
+                           In(EVENT[8]) = DATE[1], bolster.01(EVENT[7], ENTITY[Chios], ENTITY[5])),
+                 remain.01(EVENT[14], GROUP[Cyclades]) ∧ for(EVENT[14]) = GROUP[11] ∧
+                  in(EVENT[14]) = GROUP[9] ∧ be.01(EVENT[20], ENTITY[Tinos], ENTITY[15])))
+
+# ::id 108_nonfiction_MASC;HistoryGreek;AT31-6;NE
+# ::snt The Ottomans brought new influences to the islands that they controlled , forming a large empire that stretched around the eastern Mediterranean .
+∃ ATTRIB[8] ATTRIB[2] REF1[5] EVENT[12] EVENT[10] EVENT[11] ENTITY[7] GROUP[1] EVENT[6] GROUP[3] (
+ REF1[5] = they ∧
+  control.01(EVENT[6], REF1[5], GROUP[3]) ∧ islands(GROUP[3]) ∧
+   past(EVENT[6]) ∧
+    new(ATTRIB[2]) ∧
+     is_influences_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      large(ATTRIB[8]) ∧
+       stretch.01(EVENT[10], ENTITY[7]) ∧ around(EVENT[10]) = ENTITY[eastern_Mediterranean] ∧ is_empire_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+        past(EVENT[12]) ∧
+         past(EVENT[10]) ∧
+          CONJ_and(bring.01(EVENT[12], GROUP[Ottomans], GROUP[1]) ∧ to(EVENT[12]) = GROUP[3],
+           form.01(EVENT[11], GROUP[1], ENTITY[7])))
+
+# ::id 109_nonfiction_MASC;HistoryGreek;AT32-1;NE
+# ::snt Toward Greek Independence
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (greek(ATTRIB[2]) ∧ is_Independence_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ Toward(EVENT[3]) = ENTITY[1])
+
+# ::id 110_nonfiction_MASC;HistoryGreek;AT32-2;NE
+# ::snt However , a movement was growing on the Greek peninsula against Ottoman rule and for an independent Greek state .
+∃ ATTRIB[4] ATTRIB[6] EVENT[7] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[5] (
+ greek(ATTRIB[6]) ∧
+  is_peninsula_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   Ottoman_rule(ENTITY[2]) ∧
+    independent(ATTRIB[4]) ∧
+     is_Greek_state_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      CONJ_and(is_movement_against(ENTITY[1], ENTITY[2]), is_movement_for(ENTITY[1], ENTITY[3])) ∧
+       ADV_however(EVENT[7]) ∧
+        past(EVENT[7]) ∧ grow.01(EVENT[7], ENTITY[1]) ∧ on(EVENT[7]) = ENTITY[5])
+
+# ::id 111_nonfiction_MASC;HistoryGreek;AT32-3;NE
+# ::snt In 1770 , Russia came to aid the Greeks -LRB- defined by their Orthodox religion rather than by historical geographical boundaries -RRB- , declaring war on the Ottoman Empire and occupying several Aegean islands until 1774 .
+∃ PRP[2] ATTRIB[7] REF1[5] EVENT[9] EVENT[16] EVENT[11] ENTITY[10] DATE[1] EVENT[8] EVENT[8] ENTITY[4] GROUP[6] (
+ REF1[5] = their ∧
+  is_Orthodox_religion_POS(ENTITY[4], REF1[5]) ∧
+   historical(ATTRIB[7]) ∧
+    is_geographical_boundaries_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+     CONJ_rather_than(define.01(EVENT[8], _, GROUP[Greeks]) ∧ by(EVENT[8]) = ENTITY[4],
+      define.01(EVENT[8], _, GROUP[Greeks]) ∧ by(EVENT[8]) = GROUP[6]) ∧
+      CD_1770(DATE[1]) ∧
+       is_FACT_THAT(PRP[2], aid.01(EVENT[9], ENTITY[Russia], GROUP[Greeks])) ∧
+        is_war_on(ENTITY[10], ENTITY[Ottoman_Empire]) ∧
+         past(EVENT[16]) ∧
+          CONJ_and(come.01(EVENT[16], ENTITY[Russia]) ∧ PRP(EVENT[16]) = PRP[2] ∧
+                In(EVENT[16]) = DATE[1],
+           CONJ_and(declare.02(EVENT[11], ENTITY[Russia], ENTITY[10]),
+            SEVERAL ATTRIB[13] GROUP[12] ((aegean(ATTRIB[13]) ∧ is_islands_ATTRIBUTE(GROUP[12], ATTRIB[13])),
+             ∃ EVENT[15] DATE[14] (
+              CD_1774(DATE[14]) ∧
+               occupy.01(EVENT[15], ENTITY[Russia], GROUP[12]) ∧ until(EVENT[15]) = DATE[14])))))
+
+# ::id 112_nonfiction_MASC;HistoryGreek;AT32-4;NE
+# ::snt Graffiti written by Russian soldiers can be seen in the caves of Antiparos .
+∃ ATTRIB[4] EVENT[5] GROUP[3] ENTITY[1] GROUP[6] (
+ is_caves_of(GROUP[6], ENTITY[Antiparos]) ∧
+  russian(ATTRIB[4]) ∧
+   is_soldiers_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    write.01(EVENT[5], GROUP[3], ENTITY[1]) ∧ Graffiti(ENTITY[1]) ∧
+     MD_can(∃ EVENT[7] (see.01(EVENT[7], _, ENTITY[1]) ∧ in(EVENT[7]) = GROUP[6])))
+
+# ::id 113_nonfiction_MASC;HistoryGreek;AT32-5;NE
+# ::snt Although this attempt was unsuccessful , the campaign for a Greek state continued into the 19th century and began to grow in strength .
+∃ ATTRIB[2] ATTRIB[8] ATTRIB[6] EVENT[3] EVENT[9] EVENT[12] EVENT[10] ENTITY[11] ENTITY[1] ENTITY[5] DATE[7] ENTITY[4] (
+ attempt(ENTITY[1]) ∧
+  greek(ATTRIB[6]) ∧
+   is_state_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_campaign_for(ENTITY[4], ENTITY[5]) ∧
+     19th(ATTRIB[8]) ∧
+      is_century_ATTRIBUTE(DATE[7], ATTRIB[8]) ∧
+       unsuccessful(ATTRIB[2]) ∧
+        strength(ENTITY[11]) ∧
+         past(EVENT[3]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[10]) ∧
+            CRD_Although(be.01(EVENT[3], ENTITY[1], ATTRIB[2]),
+             CONJ_and(continue.01(EVENT[9], ENTITY[4]) ∧ into(EVENT[9]) = DATE[7],
+              begin.01(EVENT[10], ENTITY[4], grow.01(EVENT[12], ENTITY[4]) ∧ in(EVENT[12]) = ENTITY[11]))))
+
+# ::id 114_nonfiction_MASC;HistoryGreek;AT33-1;NE
+# ::snt The Aegean Islands played their part .
+∃ REF1[2] EVENT[3] ENTITY[1] (REF1[2] = their ∧ is_part_POS(ENTITY[1], REF1[2]) ∧ past(EVENT[3]) ∧ play.02(EVENT[3], GROUP[Aegean_Islands], ENTITY[1]))
+
+# ::id 115_nonfiction_MASC;HistoryGreek;AT33-2;NE
+# ::snt Lesvos , Chios , and Samos lay in the important shipping lanes ,
+∃ ATTRIB[3] EVENT[4] GROUP[1] GROUP[2] (
+ important(ATTRIB[3]) ∧
+  is_shipping_lanes_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_element_of(ENTITY[Lesvos], GROUP[1]) ∧ is_element_of(ENTITY[Chios], GROUP[1]) ∧ is_element_of(ENTITY[Samos], GROUP[1]) ∧
+    past(EVENT[4]) ∧ lie.01(EVENT[4], GROUP[1]) ∧ in(EVENT[4]) = GROUP[2])
+
+# ::id 116_nonfiction_MASC;HistoryGreek;AT33-2;NE
+# ::snt and patriots began disrupting Ottoman cargo traffic .
+∃ SITUATION[2] EVENT[4] EVENT[5] ENTITY[3] GROUP[1] (
+ patriots(GROUP[1]) ∧
+  Ottoman_cargo_traffic(ENTITY[3]) ∧
+   is_FACT_THAT(SITUATION[2], disrupt.01(EVENT[4], GROUP[1], ENTITY[3])) ∧
+    past(EVENT[5]) ∧ begin.01(EVENT[5], GROUP[1], SITUATION[2]))
+
+# ::id 117_nonfiction_MASC;HistoryGreek;AT33-3;NE
+# ::snt In return , the Turks violently put down every insurrection , including the massacre on Chios , when 22,000 people were slaughtered .
+∃ SITUATION[11] ENTITY[1] EVENT[7] GROUP[6] ENTITY[4] (
+ (CD_22,000(GROUP[6]), people(GROUP[6])) ∧
+  slaughter.01(EVENT[7], _, GROUP[6]) ∧ is_massacre_on(ENTITY[4], ENTITY[Chios]) ∧
+   is_TMP(EVENT[7], ENTITY[4]) ∧
+    past(EVENT[7]) ∧
+     return(ENTITY[1]) ∧
+      ADV_violently(SITUATION[11]) ∧
+       is_FACT_THAT(SITUATION[11],
+        ∀ EVENT[9] ENTITY[2] ((include.01(EVENT[9], ENTITY[2], ENTITY[4]) ∧ insurrection(ENTITY[2])) →
+         ∃ EVENT[10] (
+          past(EVENT[10]) ∧ put.03(EVENT[10], GROUP[Turks], ENTITY[2]) ∧ In(EVENT[10]) = ENTITY[1]))))
+
+# ::id 118_nonfiction_MASC;HistoryGreek;AT34-1;NE
+# ::snt The Ottoman Empire was weakening , however ,
+∃ EVENT[1] (ADV_however(EVENT[1]) ∧ past(EVENT[1]) ∧ weaken.01(EVENT[1], ENTITY[Ottoman_Empire]))
+
+# ::id 119_nonfiction_MASC;HistoryGreek;AT34-1;NE
+# ::snt and in 1821 , the peoples of the Greek mainland achieved nationhood for the first time .
+∃ ATTRIB[7] ATTRIB[4] EVENT[8] ENTITY[5] DATE[1] ENTITY[3] ENTITY[6] GROUP[2] (
+ greek(ATTRIB[4]) ∧
+  is_mainland_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_peoples_of(GROUP[2], ENTITY[3]) ∧
+    first(ATTRIB[7]) ∧
+     is_time_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      CD_1821(DATE[1]) ∧
+       is_nationhood_for(ENTITY[5], ENTITY[6]) ∧
+        past(EVENT[8]) ∧ achieve.01(EVENT[8], GROUP[2], ENTITY[5]) ∧ in(EVENT[8]) = DATE[1])
+
+# ::id 120_nonfiction_MASC;HistoryGreek;AT34-2;NE
+# ::snt The Cyclades and the Sporades island chains were also included in this new state .
+∃ ATTRIB[4] EVENT[5] GROUP[1] GROUP[2] ENTITY[3] (
+ Sporades_island_chains(GROUP[2]) ∧
+  new(ATTRIB[4]) ∧
+   is_state_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_subset_of_or_equal_to(GROUP[Cyclades], GROUP[1]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1]) ∧
+     ADV_also(EVENT[5]) ∧
+      past(EVENT[5]) ∧ include.01(EVENT[5], _, GROUP[1]) ∧ in(EVENT[5]) = ENTITY[3])
+
+# ::id 121_nonfiction_MASC;HistoryGreek;AT34-3;NE
+# ::snt A new sense of identity enveloped Greek peoples throughout the Aegean , thus commencing a movement to expand Greece and unify the disparate Orthodox populations .
+∃ SITUATION[13] ATTRIB[5] ATTRIB[2] ATTRIB[10] ATTRIB[9] EVENT[14] EVENT[7] EVENT[11] EVENT[12] ENTITY[3] ENTITY[6] GROUP[4] ENTITY[1] GROUP[8] (
+ disparate(ATTRIB[9]) ∧
+  orthodox(ATTRIB[10]) ∧
+   is_populations_ATTRIBUTE(GROUP[8], ATTRIB[10]) ∧ is_populations_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+    new(ATTRIB[2]) ∧
+     identity(ENTITY[3]) ∧
+      is_sense_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_sense_of(ENTITY[1], ENTITY[3]) ∧
+       greek(ATTRIB[5]) ∧
+        is_peoples_throughout(GROUP[4], ENTITY[Aegean]) ∧ is_peoples_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+         is_movement_to(ENTITY[6],
+          CONJ_and(expand.01(EVENT[7], _, ENTITY[Greece]), unify.01(EVENT[11], _, GROUP[8]))) ∧
+          past(EVENT[14]) ∧
+           ADV_thus(SITUATION[13]) ∧
+            CONJ_and(envelop.01(EVENT[14], ENTITY[1], GROUP[4]),
+             is_FACT_THAT(SITUATION[13], commence.01(EVENT[12], GROUP[4], ENTITY[6]))))
+
+# ::id 122_nonfiction_MASC;HistoryGreek;AT35-1;NE
+# ::snt The Twentieth Century
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (twentieth(ATTRIB[2]) ∧ is_Century_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 123_nonfiction_MASC;HistoryGreek;AT36-1;NE
+# ::snt A series of disastrous decisions at the beginning of the 20th century began to sound a death knell for the Ottoman Empire .
+∃ ATTRIB[3] ATTRIB[6] EVENT[9] EVENT[7] GROUP[2] ENTITY[8] ENTITY[1] DATE[5] ENTITY[4] (
+ 20th(ATTRIB[6]) ∧
+  is_century_ATTRIBUTE(DATE[5], ATTRIB[6]) ∧
+   is_beginning_of(ENTITY[4], DATE[5]) ∧
+    disastrous(ATTRIB[3]) ∧
+     is_decisions_at(GROUP[2], ENTITY[4]) ∧ is_decisions_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+      is_series_of(ENTITY[1], GROUP[2]) ∧
+       is_death_knell_for(ENTITY[8], ENTITY[Ottoman_Empire]) ∧
+        past(EVENT[7]) ∧ begin.01(EVENT[7], ENTITY[1], sound.02(EVENT[9], ENTITY[1], ENTITY[8])))
+
+# ::id 124_nonfiction_MASC;HistoryGreek;AT36-2;NE
+# ::snt The Turks lost a short war with Italy , and were forced to relinquish the Dodecanese islands to the Italians .
+∃ ATTRIB[2] ATTRIB[6] EVENT[3] EVENT[7] EVENT[4] ENTITY[1] GROUP[5] (
+ dodecanese(ATTRIB[6]) ∧
+  is_islands_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+   short(ATTRIB[2]) ∧
+    is_war_with(ENTITY[1], ENTITY[Italy]) ∧ is_war_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[4]) ∧
+       CONJ_and(lose.02(EVENT[3], GROUP[Turks], ENTITY[1]),
+        force.01(EVENT[4], _, GROUP[Turks],
+         relinquish.01(EVENT[7], GROUP[Turks], GROUP[5]) ∧ to(EVENT[7]) = GROUP[Italians])))
+
+# ::id 125_nonfiction_MASC;HistoryGreek;AT36-3;NE
+# ::snt Greece took this opportunity to absorb the islands of the northern and eastern Aegean and to add Macedonia to its mainland territories .
+∃ ATTRIB[9] REF1[8] PRP[2] GROUP[7] EVENT[6] EVENT[10] EVENT[11] GROUP[5] ENTITY[4] GROUP[3] ENTITY[1] (
+ opportunity(ENTITY[1]) ∧
+  is_element_of(ENTITY[northern_Aegean], GROUP[5]) ∧ is_element_of(ENTITY[eastern_Aegean], GROUP[5]) ∧
+   is_equals(ENTITY[4], GROUP[5]) ∧
+    is_islands_of(GROUP[3], ENTITY[4]) ∧
+     past(EVENT[11]) ∧
+      REF1[8] = its ∧
+       mainland(ATTRIB[9]) ∧
+        is_territories_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_territories_POS(GROUP[7], REF1[8]) ∧
+         is_FACT_THAT(PRP[2],
+          CONJ_and(absorb.01(EVENT[6], ENTITY[1], GROUP[3]),
+           add.02(EVENT[10], ENTITY[1], ENTITY[Macedonia]) ∧ to(EVENT[10]) = GROUP[7])) ∧
+          take.01(EVENT[11], ENTITY[Greece], ENTITY[1]) ∧ PRP(EVENT[11]) = PRP[2])
+
+# ::id 126_nonfiction_MASC;HistoryGreek;AT37-1;NE
+# ::snt Following this debacle , the Ottomans then allied themselves to Germany in the World War I , losing more territory with the defeat of the Germans in that war .
+∃ REF1[2] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ debacle(ENTITY[1]) ∧
+  war(ENTITY[5]) ∧
+   is_defeat_in(ENTITY[4], ENTITY[5]) ∧ is_defeat_of(ENTITY[4], GROUP[Germans]) ∧
+    REF1[2] = themselves ∧
+     TMP_then(EVENT[7]) ∧
+      past(EVENT[7]) ∧
+       CONJ_and(ally.01(EVENT[7], GROUP[Ottomans], REF1[2]) ∧ in(EVENT[7]) = ENTITY[World_War_I] ∧
+             to(EVENT[7]) = ENTITY[Germany] ∧ following(EVENT[7]) = ENTITY[1],
+        MORE ENTITY[3] (territory(ENTITY[3]), ∃ EVENT[6] (lose.02(EVENT[6], REF1[2], ENTITY[3]) ∧ with(EVENT[6]) = ENTITY[4]))))
+
+# ::id 127_nonfiction_MASC;HistoryGreek;AT37-2;NE
+# ::snt Greece was handed a strip of land along the western coast of Asia Minor , which for over ,00 years had had a substantial Greek population .
+∃ ATTRIB[4] EVENT[10] ENTITY[2] ENTITY[1] ENTITY[3] (
+ western(ATTRIB[4]) ∧
+  is_coast_of(ENTITY[3], ENTITY[Asia_Minor]) ∧ is_coast_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   land(ENTITY[2]) ∧
+    OVER,00 DATE[6] (years(DATE[6]),
+     ∃ ATTRIB[8] EVENT[9] ENTITY[7] (
+      substantial(ATTRIB[8]) ∧
+       is_Greek_population_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+        past(EVENT[9]) ∧ have.03(EVENT[9], ENTITY[1], ENTITY[7]) ∧ for(EVENT[9]) = DATE[6])) ∧
+     is_strip_along(ENTITY[1], ENTITY[3]) ∧ is_strip_of(ENTITY[1], ENTITY[2]) ∧
+     past(EVENT[10]) ∧ hand.01(EVENT[10], _, ENTITY[1], ENTITY[Greece]))
+
+# ::id 128_nonfiction_MASC;HistoryGreek;AT37-3;NE
+# ::snt Greece moved in to administer the land , but a new influence upset any grand dreams of making this region a part of greater Greece .
+∃ ATTRIB[6] PRP[1] ENTITY[5] EVENT[3] EVENT[4] ENTITY[2] ENTITY[11] (
+ land(ENTITY[2]) ∧
+  region(ENTITY[11]) ∧
+   past(EVENT[4]) ∧
+    is_FACT_THAT(PRP[1], administer.01(EVENT[3], ENTITY[Greece], ENTITY[2])) ∧
+     new(ATTRIB[6]) ∧
+      is_influence_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       CONJ_but(move.01(EVENT[4], ENTITY[Greece]) ∧ PRP(EVENT[4]) = PRP[1],
+        ANY SITUATION[9] ATTRIB[8] EVENT[13] EVENT[10] ENTITY[12] GROUP[7] (
+         (grand(ATTRIB[8]) ∧ is_part_of(ENTITY[12], ENTITY[greater_Greece]) ∧
+          is_FACT_THAT(SITUATION[9], make.01(EVENT[10], xxx(EVENT[13], ENTITY[11], ENTITY[12]))) ∧
+          is_dreams_of(GROUP[7], SITUATION[9]) ∧ is_dreams_ATTRIBUTE(GROUP[7], ATTRIB[8])),
+         ∃ EVENT[14] (past(EVENT[14]) ∧ upset.02(EVENT[14], ENTITY[5], GROUP[7])))))
+
+# ::id 129_nonfiction_MASC;HistoryGreek;AT38-1;NE
+# ::snt In 1923 , Turkey broke away from the tired Ottoman rulers ,
+∃ ATTRIB[3] EVENT[4] DATE[1] GROUP[2] (
+ tired(ATTRIB[3]) ∧
+  is_Ottoman_rulers_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   CD_1923(DATE[1]) ∧
+    is_DIR_away_from(EVENT[4], GROUP[2]) ∧
+     past(EVENT[4]) ∧ break.14(EVENT[4], ENTITY[Turkey]) ∧ In(EVENT[4]) = DATE[1])
+
+# ::id 130_nonfiction_MASC;HistoryGreek;AT38-1;NE
+# ::snt and Kemal Ataturk rose to power on a wave of popular support .
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ power(ENTITY[1]) ∧
+  popular(ATTRIB[4]) ∧
+   is_support_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_wave_of(ENTITY[2], ENTITY[3]) ∧
+     past(EVENT[5]) ∧
+      rise.01(EVENT[5], ENTITY[Kemal_Ataturk]) ∧ on(EVENT[5]) = ENTITY[2] ∧ to(EVENT[5]) = ENTITY[1])
+
+# ::id 131_nonfiction_MASC;HistoryGreek;AT38-2;NE
+# ::snt He promised a modern state for his people , but as the situation became volatile , civil strife broke out in Turkish cities , and those considered Greek were victims of threats and violence .
+∃ ATTRIB[13] ATTRIB[11] ATTRIB[8] REF2[5] ATTRIB[3] REF1[1] ATTRIB[18] EVENT[6] EVENT[9] EVENT[14] EVENT[24] GROUP[4] ENTITY[2] GROUP[12] ENTITY[10] GROUP[21] GROUP[20] EVENT[19] EVENT[17] ENTITY[7] GROUP[15] (
+ situation(ENTITY[7]) ∧
+  greek(ATTRIB[18]) ∧
+   consider.02(EVENT[17], _, GROUP[15], xxx(EVENT[19], GROUP[15], ATTRIB[18])) ∧
+    REF1[1] = he ∧
+     modern(ATTRIB[3]) ∧
+      REF2[5] = his ∧
+       is_people_POS(GROUP[4], REF2[5]) ∧
+        is_state_for(ENTITY[2], GROUP[4]) ∧ is_state_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+         volatile(ATTRIB[8]) ∧
+          civil(ATTRIB[11]) ∧
+           is_strife_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+            turkish(ATTRIB[13]) ∧
+             is_cities_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+              ∃ GROUP[22] (threats(GROUP[22]) ∧ is_subset_of_or_equal_to(GROUP[22], GROUP[21])) ∧
+               ∃ ENTITY[23] (violence(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[21])) ∧
+               is_victims_of(GROUP[20], GROUP[21]) ∧
+                past(EVENT[6]) ∧
+                 past(EVENT[9]) ∧
+                  past(EVENT[14]) ∧
+                   past(EVENT[24]) ∧
+                    CONJ_but(promise.01(EVENT[6], REF1[1], ENTITY[2]),
+                     CRD_as(become.01(EVENT[9], ENTITY[7], ATTRIB[8]),
+                      CONJ_and(break.06(EVENT[14], ENTITY[10]) ∧ in(EVENT[14]) = GROUP[12],
+                       be.01(EVENT[24], GROUP[15], GROUP[20])))))
+
+# ::id 132_nonfiction_MASC;HistoryGreek;AT38-3;NE
+# ::snt Many had to leave their birthplaces , fleeing to Lesvos , Chios , and Samos , the Greek-ruled islands just offshore .
+MANY ENTITY[1] ∃ ATTRIB[6] REF1[4] EVENT[10] EVENT[9] EVENT[2] GROUP[8] ENTITY[5] ENTITY[7] GROUP[3] (
+ REF1[4] = their ∧
+  is_birthplaces_POS(GROUP[3], REF1[4]) ∧
+   is_element_of(ENTITY[Lesvos], GROUP[8]) ∧ is_element_of(ENTITY[Chios], GROUP[8]) ∧ is_element_of(ENTITY[Samos], GROUP[8]) ∧
+    is_equals(ENTITY[7], GROUP[8]) ∧
+     greek-ruled(ATTRIB[6]) ∧
+      LOC_just_offshore(ENTITY[5]) ∧ is_islands_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       is_-ENTITY-_namely(ENTITY[7], ENTITY[5]) ∧
+        past(EVENT[2]) ∧
+         have.02(EVENT[2], ENTITY[1],
+          CONJ_and(leave.01(EVENT[10], ENTITY[1], GROUP[3]),
+           flee.01(EVENT[9], GROUP[3]) ∧ to(EVENT[9]) = ENTITY[7])))
+
+# ::id 133_nonfiction_MASC;HistoryGreek;AT38-4;NE
+# ::snt Thousands of people arrived with little more than the clothes they wore , putting great strain on the resources of the islands .
+∃ REF1[6] GROUP[2] GROUP[1] EVENT[7] GROUP[4] GROUP[11] GROUP[10] (
+ REF1[6] = they ∧
+  wear.01(EVENT[7], REF1[6], GROUP[4]) ∧ clothes(GROUP[4]) ∧
+   islands(GROUP[11]) ∧
+    is_resources_of(GROUP[10], GROUP[11]) ∧
+     past(EVENT[7]) ∧
+      people(GROUP[2]) ∧
+       is_Thousands_of(GROUP[1], GROUP[2]) ∧
+        LITTLE_MORE ENTITY[3] (is_than(ENTITY[3], GROUP[4]),
+         ∃ ATTRIB[9] EVENT[13] EVENT[12] ENTITY[8] (
+          great(ATTRIB[9]) ∧
+           is_strain_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+            past(EVENT[13]) ∧
+             CONJ_and(arrive.01(EVENT[13], GROUP[1]) ∧ with(EVENT[13]) = ENTITY[3],
+              put.01(EVENT[12], GROUP[1], ENTITY[8]) ∧ on(EVENT[12]) = GROUP[10]))))
+
+# ::id 134_nonfiction_MASC;HistoryGreek;AT39-1;NE
+# ::snt Finally , Greece was ousted from its new territory in Asia Minor , which became part of the new Turkish state .
+∃ SITUATION[10] ATTRIB[3] REF1[2] ATTRIB[7] EVENT[8] EVENT[9] ENTITY[5] ENTITY[1] ENTITY[6] (
+ new(ATTRIB[7]) ∧
+  is_Turkish_state_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   REF1[2] = its ∧
+    new(ATTRIB[3]) ∧
+     is_part_of(ENTITY[5], ENTITY[6]) ∧
+      become.01(EVENT[8], ENTITY[1], ENTITY[5]) ∧
+       is_territory_in(ENTITY[1], ENTITY[Asia_Minor]) ∧ is_territory_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_territory_POS(ENTITY[1], REF1[2]) ∧
+       TMP_finally(SITUATION[10]) ∧
+        past(EVENT[8]) ∧
+         past(EVENT[9]) ∧
+          is_FACT_THAT(SITUATION[10], oust.01(EVENT[9], _, ENTITY[Greece]) ∧ from(EVENT[9]) = ENTITY[1]))
+
+# ::id 135_nonfiction_MASC;HistoryGreek;AT39-2;NE
+# ::snt Greece attempted to stay out of World War II , but Mussolini saw Greece as an ideal addition to his Italian empire .
+∃ ATTRIB[8] REF1[7] ATTRIB[5] ENTITY[6] ENTITY[4] EVENT[2] EVENT[1] EVENT[9] (
+ is_LOC_out_of(EVENT[2], ENTITY[World_War_II]) ∧
+  past(EVENT[1]) ∧
+   past(EVENT[9]) ∧
+    ideal(ATTRIB[5]) ∧
+     REF1[7] = his ∧
+      italian(ATTRIB[8]) ∧
+       is_empire_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_empire_POS(ENTITY[6], REF1[7]) ∧
+        is_addition_to(ENTITY[4], ENTITY[6]) ∧ is_addition_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+         CONJ_but(attempt.01(EVENT[1], ENTITY[Greece], stay.01(EVENT[2], ENTITY[Greece])),
+          see.01(EVENT[9], ENTITY[Mussolini], ENTITY[Greece]) ∧ as(EVENT[9]) = ENTITY[4]))
+
+# ::id 136_nonfiction_MASC;HistoryGreek;AT39-3;NE
+# ::snt His forces made a series of attacks from their bases in the Dodecanese islands , including sinking a Greek naval vessel in the harbor of Tinos Town , but they only succeeded in strengthening the resolve of the population against them .
+∃ SITUATION[24] SITUATION[18] REF3[17] ATTRIB[12] SITUATION[10] REF2[6] REF1[2] REF4[21] ATTRIB[8] EVENT[14] EVENT[15] EVENT[16] EVENT[22] EVENT[23] ENTITY[11] GROUP[5] GROUP[4] ENTITY[3] GROUP[1] GROUP[7] ENTITY[13] ENTITY[20] ENTITY[19] (
+ dodecanese(ATTRIB[8]) ∧
+  is_islands_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   is_harbor_of(ENTITY[13], ENTITY[Tinos_Town]) ∧
+    population(ENTITY[20]) ∧
+     REF4[21] = them ∧
+      is_resolve_against(ENTITY[19], REF4[21]) ∧ is_resolve_of(ENTITY[19], ENTITY[20]) ∧
+       REF1[2] = his ∧
+        is_forces_POS(GROUP[1], REF1[2]) ∧
+         REF2[6] = their ∧
+          is_bases_in(GROUP[5], GROUP[7]) ∧ is_bases_POS(GROUP[5], REF2[6]) ∧
+           greek(ATTRIB[12]) ∧
+            is_naval_vessel_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+             is_FACT_THAT(SITUATION[10], sink.01(EVENT[14], GROUP[4], ENTITY[11]) ∧ in(EVENT[14]) = ENTITY[13]) ∧
+              include.01(EVENT[15], GROUP[4], SITUATION[10]) ∧ is_attacks_from(GROUP[4], GROUP[5]) ∧
+               is_series_of(ENTITY[3], GROUP[4]) ∧
+                REF3[17] = they ∧
+                 is_FACT_THAT(SITUATION[18], strengthen.01(EVENT[22], REF3[17], ENTITY[19])) ∧
+                  past(EVENT[16]) ∧
+                   only(SITUATION[24]) ∧
+                    past(EVENT[23]) ∧
+                     CONJ_but(make.04(EVENT[16], GROUP[1], ENTITY[3]),
+                      is_FACT_THAT(SITUATION[24], succeed.01(EVENT[23], REF3[17]) ∧ in(EVENT[23]) = SITUATION[18])))
+
+# ::id 137_nonfiction_MASC;HistoryGreek;AT39-4;NE
+# ::snt Later the Germans came in force and occupied many of the islands .
+∃ EVENT[2] ENTITY[1] GROUP[4] (
+ islands(GROUP[4]) ∧
+  force(ENTITY[1]) ∧
+   TMP_later(EVENT[2]) ∧
+    past(EVENT[2]) ∧
+     CONJ_and(come.01(EVENT[2], GROUP[Germans]) ∧ in(EVENT[2]) = ENTITY[1],
+      MANY ENTITY[3] (is_element_of(ENTITY[3], GROUP[4]), ∃ EVENT[5] (past(EVENT[5]) ∧ occupy.01(EVENT[5], GROUP[Germans], ENTITY[3])))))
+
+# ::id 138_nonfiction_MASC;HistoryGreek;AT40-1;NE
+# ::snt After the war , in 1949 , the Dodecanese islands finally became part of the Greek nation .
+∃ ATTRIB[7] ATTRIB[4] EVENT[8] ENTITY[5] DATE[2] ENTITY[6] GROUP[3] ENTITY[1] (
+ war(ENTITY[1]) ∧
+  dodecanese(ATTRIB[4]) ∧
+   is_islands_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    greek(ATTRIB[7]) ∧
+     is_nation_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      CD_1949(DATE[2]) ∧
+       is_part_of(ENTITY[5], ENTITY[6]) ∧
+        TMP_finally(EVENT[8]) ∧
+         past(EVENT[8]) ∧
+          become.01(EVENT[8], GROUP[3], ENTITY[5]) ∧ in(EVENT[8]) = DATE[2] ∧
+           After(EVENT[8]) = ENTITY[1])
+
+# ::id 139_nonfiction_MASC;HistoryGreek;AT40-2;NE
+# ::snt But the country was politically fragmented , with arguments between monarchists and republicans , right and left , and tension escalated into civil war .
+∃ ATTRIB[14] ATTRIB[2] EVENT[11] EVENT[15] GROUP[8] GROUP[4] ENTITY[7] GROUP[3] ENTITY[13] ENTITY[12] ENTITY[1] (
+ country(ENTITY[1]) ∧
+  politically_fragmented(ATTRIB[2]) ∧
+   ∃ GROUP[9] (monarchists(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[8])) ∧
+    ∃ GROUP[10] (republicans(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8])) ∧
+    is_equals(ENTITY[7], GROUP[8]) ∧
+     ∃ ENTITY[5] (right(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+      ∃ ENTITY[6] (left(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+      is_-ENTITY-_namely(ENTITY[7], GROUP[4]) ∧
+       is_arguments_between(GROUP[3], ENTITY[7]) ∧
+        tension(ENTITY[12]) ∧
+         civil(ATTRIB[14]) ∧
+          is_war_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+           past(EVENT[11]) ∧
+            past(EVENT[15]) ∧
+             CONJ_but_and(be.01(EVENT[11], ENTITY[1], ATTRIB[2]) ∧ with(EVENT[11]) = GROUP[3],
+              escalate.01(EVENT[15], ENTITY[12]) ∧ into(EVENT[15]) = ENTITY[13]))
+
+# ::id 140_nonfiction_MASC;HistoryGreek;AT40-3;NE
+# ::snt The struggle bypassed most of the islands , although there was fierce fighting on Samos .
+∃ GROUP[3] ENTITY[1] (
+ struggle(ENTITY[1]) ∧
+  islands(GROUP[3]) ∧
+   MOST ENTITY[2] (is_element_of(ENTITY[2], GROUP[3]),
+    ∃ ATTRIB[5] EVENT[6] EVENT[7] ENTITY[4] (
+     fierce(ATTRIB[5]) ∧
+      is_fighting_on(ENTITY[4], ENTITY[Samos]) ∧ is_fighting_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[7]) ∧ CRD_although(be.02(EVENT[6], ENTITY[4]), bypass.01(EVENT[7], ENTITY[1], ENTITY[2])))))
+
+# ::id 141_nonfiction_MASC;HistoryGreek;AT41-1;NE
+# ::snt Even after the fighting stopped more than a decade later , the country was not stable .
+∃ EVENT[4] ENTITY[1] ENTITY[6] (
+ fighting(ENTITY[1]) ∧
+  country(ENTITY[6]) ∧
+   MORE ENTITY[3] DEGREE[2] ((decade(ENTITY[3]) ∧ is_than(DEGREE[2], ENTITY[3])), is_TMP_later_MSR(EVENT[4], DEGREE[2])) ∧
+    past(EVENT[4]) ∧
+     CRD_Even_after(stop.01(EVENT[4], ENTITY[1]),
+      ¬ ∃ ATTRIB[7] EVENT[8] (stable(ATTRIB[7]) ∧ past(EVENT[8]) ∧ be.01(EVENT[8], ENTITY[6], ATTRIB[7]))))
+
+# ::id 142_nonfiction_MASC;HistoryGreek;AT41-2;NE
+# ::snt At the same time , the massive growth in air and road transport saw shipping decline in importance .
+∃ ATTRIB[4] ATTRIB[2] EVENT[11] EVENT[8] ENTITY[10] ENTITY[9] ENTITY[6] ENTITY[7] GROUP[5] ENTITY[3] ENTITY[1] (
+ same(ATTRIB[2]) ∧
+  is_time_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   massive(ATTRIB[4]) ∧
+    air_transport(ENTITY[6]) ∧
+     road_transport(ENTITY[7]) ∧
+      is_element_of(ENTITY[6], GROUP[5]) ∧ is_element_of(ENTITY[7], GROUP[5]) ∧
+       is_growth_in(ENTITY[3], GROUP[5]) ∧ is_growth_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+        shipping(ENTITY[9]) ∧
+         importance(ENTITY[10]) ∧
+          past(EVENT[8]) ∧
+           see.01(EVENT[8], ENTITY[3], decline.01(EVENT[11], ENTITY[9]) ∧ in(EVENT[11]) = ENTITY[10]) ∧
+            At(EVENT[8]) = ENTITY[1])
+
+# ::id 143_nonfiction_MASC;HistoryGreek;AT41-3;NE
+# ::snt The Aegean Islands , which for centuries had been important ports on the trading routes , became the backwaters of this new transport network
+∃ ATTRIB[9] ATTRIB[4] EVENT[10] EVENT[6] GROUP[5] GROUP[3] GROUP[2] ENTITY[8] GROUP[7] (
+ centuries(GROUP[2]) ∧
+  important(ATTRIB[4]) ∧
+   trading_routes(GROUP[5]) ∧
+    is_ports_on(GROUP[3], GROUP[5]) ∧ is_ports_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     be.01(EVENT[6], GROUP[Aegean_Islands], GROUP[3]) ∧ for(EVENT[6]) = GROUP[2] ∧
+      new(ATTRIB[9]) ∧
+       is_transport_network_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+        is_backwaters_of(GROUP[7], ENTITY[8]) ∧
+         past(EVENT[6]) ∧ past(EVENT[10]) ∧ become.01(EVENT[10], GROUP[Aegean_Islands], GROUP[7]))
+
+# ::id 144_nonfiction_MASC;HistoryGreek;AT41-3;NE
+# ::snt and the economies of several islands came close to collapse .
+∃ EVENT[4] ENTITY[3] GROUP[1] (
+ SEVERAL GROUP[2] (islands(GROUP[2]), is_economies_of(GROUP[1], GROUP[2])) ∧
+  collapse(ENTITY[3]) ∧ is_ADV_close_to(EVENT[4], ENTITY[3]) ∧ past(EVENT[4]) ∧ come.04(EVENT[4], GROUP[1]))
+
+# ::id 145_nonfiction_MASC;HistoryGreek;AT42-1;NE
+# ::snt In 1967 , the military took the reins of power in Athens ,
+∃ EVENT[5] DATE[1] ENTITY[4] GROUP[3] ENTITY[2] (
+ military(ENTITY[2]) ∧
+  power(ENTITY[4]) ∧
+   is_reins_of(GROUP[3], ENTITY[4]) ∧
+    CD_1967(DATE[1]) ∧
+     past(EVENT[5]) ∧
+      take.01(EVENT[5], ENTITY[2], GROUP[3]) ∧ in(EVENT[5]) = ENTITY[Athens] ∧ In(EVENT[5]) = DATE[1])
+
+# ::id 146_nonfiction_MASC;HistoryGreek;AT42-1;NE
+# ::snt and until 1974 , the “ Colonels " held sway with a repressive and brutal regime .
+∃ EVENT[9] GROUP[4] ENTITY[3] DATE[1] GROUP[2] (
+ Colonels(GROUP[2]) ∧
+  CD_1974(DATE[1]) ∧
+   sway(ENTITY[3]) ∧
+    ∃ ATTRIB[6] ENTITY[5] (repressive(ATTRIB[6]) ∧ is_regime_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ATTRIB[8] ENTITY[7] (brutal(ATTRIB[8]) ∧ is_regime_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+     past(EVENT[9]) ∧
+      hold.01(EVENT[9], GROUP[2], ENTITY[3]) ∧ with(EVENT[9]) = GROUP[4] ∧ until(EVENT[9]) = DATE[1])
+
+# ::id 147_nonfiction_MASC;HistoryGreek;AT42-2;NE
+# ::snt Many Greek islanders chose to leave rather than live in poverty and terror ,
+MANY ATTRIB[2] GROUP[1] ((greek(ATTRIB[2]) ∧ is_islanders_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+ ∃ EVENT[4] EVENT[8] EVENT[3] GROUP[5] (
+  ∃ ENTITY[6] (poverty(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+   ∃ ENTITY[7] (terror(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+   past(EVENT[3]) ∧
+    choose.01(EVENT[3], GROUP[1],
+     CONJ_rather_than(leave.01(EVENT[4], GROUP[1]), live.01(EVENT[8], GROUP[1]) ∧ in(EVENT[8]) = GROUP[5]))))
+
+# ::id 148_nonfiction_MASC;HistoryGreek;AT42-2;NE
+# ::snt and many made new homes in the United States and Australia .
+MANY ENTITY[1] ∃ ATTRIB[3] EVENT[5] GROUP[4] GROUP[2] (
+ new(ATTRIB[3]) ∧
+  is_homes_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_element_of(ENTITY[United_States], GROUP[4]) ∧ is_element_of(ENTITY[Australia], GROUP[4]) ∧
+    past(EVENT[5]) ∧ make.04(EVENT[5], ENTITY[1], GROUP[2]) ∧ in(EVENT[5]) = GROUP[4])
+
+# ::id 149_nonfiction_MASC;HistoryGreek;AT43-1;NE
+# ::snt The expansion of air travel began the age of mass tourism ,
+∃ ATTRIB[5] EVENT[6] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ air_travel(ENTITY[2]) ∧
+  is_expansion_of(ENTITY[1], ENTITY[2]) ∧
+   mass(ATTRIB[5]) ∧
+    is_tourism_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     is_age_of(ENTITY[3], ENTITY[4]) ∧ past(EVENT[6]) ∧ begin.01(EVENT[6], ENTITY[1], ENTITY[3]))
+
+# ::id 150_nonfiction_MASC;HistoryGreek;AT43-1;NE
+# ::snt and Greece along with the Aegean Islands became exciting destinations for northern Europeans escaping their damp , cool summers .
+∃ ATTRIB[7] ATTRIB[6] REF1[5] ATTRIB[2] EVENT[8] EVENT[9] GROUP[4] GROUP[1] (
+ is_along_with(ENTITY[Greece], GROUP[Aegean_Islands]) ∧
+  exciting(ATTRIB[2]) ∧
+   REF1[5] = their ∧
+    damp(ATTRIB[6]) ∧
+     cool(ATTRIB[7]) ∧
+      is_summers_ATTRIBUTE(GROUP[4], ATTRIB[7]) ∧ is_summers_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_summers_POS(GROUP[4], REF1[5]) ∧
+       escape.01(EVENT[8], GROUP[northern_Europeans], GROUP[4]) ∧
+        is_destinations_for(GROUP[1], GROUP[northern_Europeans]) ∧ is_destinations_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+         past(EVENT[9]) ∧ become.01(EVENT[9], ENTITY[Greece], GROUP[1]))
+
+# ::id 151_nonfiction_MASC;HistoryGreek;AT43-2;NE
+# ::snt In 1982 , Greece joined the European Common Market -LRB- now the European Union -RRB- .
+∃ EVENT[5] DATE[1] EVENT[3] (
+ xxx(EVENT[3], ENTITY[European_Common_Market], ENTITY[European_Union]) ∧
+  TMP_now(EVENT[3]) ∧
+   CD_1982(DATE[1]) ∧
+    past(EVENT[5]) ∧ join.01(EVENT[5], ENTITY[Greece], ENTITY[European_Common_Market]) ∧ In(EVENT[5]) = DATE[1])
+
+# ::id 152_nonfiction_MASC;HistoryGreek;AT43-3;NE
+# ::snt Since this time , membership has been of great monetary benefit to the country .
+∃ ATTRIB[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[1] (
+ time(ENTITY[1]) ∧
+  country(ENTITY[5]) ∧
+   membership(ENTITY[2]) ∧
+    great(ATTRIB[4]) ∧
+     is_monetary_benefit_to(ENTITY[3], ENTITY[5]) ∧ is_monetary_benefit_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      be.01(EVENT[6], ENTITY[2]) ∧ of(EVENT[6]) = ENTITY[3] ∧ Since(EVENT[6]) = ENTITY[1])
+
+# ::id 153_nonfiction_MASC;HistoryGreek;AT44-1;NE
+# ::snt The EU has given large subsidies to develop Greece 's infrastructure and grants to excavate and protect its ancient monuments .
+∃ EVENT[14] GROUP[1] (
+ ∃ ATTRIB[3] EVENT[6] ENTITY[5] GROUP[2] (
+  large(ATTRIB[3]) ∧
+   is_infrastructure_POS(ENTITY[5], ENTITY[Greece]) ∧
+    develop.02(EVENT[6], GROUP[2], ENTITY[5]) ∧ is_subsidies_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ ATTRIB[11] REF1[10] EVENT[12] EVENT[13] GROUP[9] GROUP[7] (
+   REF1[10] = its ∧
+    ancient(ATTRIB[11]) ∧
+     is_monuments_ATTRIBUTE(GROUP[9], ATTRIB[11]) ∧ is_monuments_POS(GROUP[9], REF1[10]) ∧
+      CONJ_and(excavate.01(EVENT[12], GROUP[7], GROUP[9]), protect.01(EVENT[13], GROUP[7], GROUP[9])) ∧
+       grants(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[1])) ∧ give.01(EVENT[14], ENTITY[EU], GROUP[1]))
+
+# ::id 154_nonfiction_MASC;HistoryGreek;AT44-2;NE
+# ::snt Airfields have been constructed on a number of the islands ,
+∃ EVENT[4] ENTITY[2] GROUP[1] GROUP[3] (
+ islands(GROUP[3]) ∧
+  Airfields(GROUP[1]) ∧
+   is_number_of(ENTITY[2], GROUP[3]) ∧ construct.01(EVENT[4], _, GROUP[1]) ∧ on(EVENT[4]) = ENTITY[2])
+
+# ::id 155_nonfiction_MASC;HistoryGreek;AT44-2;NE
+# ::snt and road systems have been expanded and improved .
+∃ EVENT[2] EVENT[3] GROUP[1] (road_systems(GROUP[1]) ∧ CONJ_and(expand.01(EVENT[2], _, GROUP[1]), improve.01(EVENT[3], _, GROUP[1])))
+
+# ::id 156_nonfiction_MASC;HistoryGreek;AT44-3;NE
+# ::snt Private investment has even made an increasingly modern ferry fleet possible .
+∃ SITUATION[8] ATTRIB[6] ATTRIB[5] ATTRIB[2] EVENT[7] EVENT[3] ENTITY[4] ENTITY[1] (
+ private(ATTRIB[2]) ∧
+  is_investment_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   increasingly_modern(ATTRIB[5]) ∧
+    is_ferry_fleet_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     possible(ATTRIB[6]) ∧
+      even(SITUATION[8]) ∧ is_FACT_THAT(SITUATION[8], have.01(EVENT[3], ENTITY[1], xxx(EVENT[7], ENTITY[4], ATTRIB[6]))))
+
+# ::id 157_nonfiction_MASC;HistoryGreek;AT44-4;NE
+# ::snt Politically , the 1990s have been relatively quiet times for the islands , although the divorce of Greek prime minister Andreas Papandreou and his subsequent marriage to a much younger woman caused consternation within conservative Greek society .
+∃ SITUATION[20] ATTRIB[17] ATTRIB[16] ATTRIB[3] ATTRIB[8] EVENT[18] EVENT[19] ENTITY[15] ENTITY[14] GROUP[5] GROUP[2] GROUP[4] ENTITY[7] ENTITY[6] GROUP[1] (
+ 1990s(GROUP[1]) ∧
+  islands(GROUP[4]) ∧
+   greek(ATTRIB[8]) ∧
+    is_prime_minister_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+     is_-ENTITY-_namely(ENTITY[Andreas_Papandreou], ENTITY[7]) ∧
+      is_divorce_of(ENTITY[6], ENTITY[Andreas_Papandreou]) ∧
+       relatively_quiet(ATTRIB[3]) ∧
+        is_times_for(GROUP[2], GROUP[4]) ∧ is_times_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+         is_element_of(ENTITY[6], GROUP[5]) ∧
+          ∃ ATTRIB[13] ATTRIB[11] REF1[10] ENTITY[12] ENTITY[9] (
+           REF1[10] = his ∧
+            subsequent(ATTRIB[11]) ∧
+             much_younger(ATTRIB[13]) ∧
+              is_woman_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+               is_marriage_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_marriage_to(ENTITY[9], ENTITY[12]) ∧ is_marriage_POS(ENTITY[9], REF1[10]) ∧
+                is_element_of(ENTITY[9], GROUP[5])) ∧
+          consternation(ENTITY[14]) ∧
+           conservative(ATTRIB[16]) ∧
+            greek(ATTRIB[17]) ∧
+             is_society_ATTRIBUTE(ENTITY[15], ATTRIB[17]) ∧ is_society_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+              ADV_politically(SITUATION[20]) ∧
+               past(EVENT[18]) ∧
+                is_FACT_THAT(SITUATION[20],
+                 CRD_although(cause.01(EVENT[18], GROUP[5], ENTITY[14]) ∧ within(EVENT[18]) = ENTITY[15],
+                  be.01(EVENT[19], GROUP[1], GROUP[2]))))
+
+# ::id 158_nonfiction_MASC;HistoryGreek;AT45-1;NE
+# ::snt As the Balkans flared to war once again , Greek nationalism has stirred , and there have been discussions in the kafeneion about the land of Macedonia returning to the fold of its forefathers .
+∃ SITUATION[9] ATTRIB[5] REF1[13] EVENT[2] EVENT[6] EVENT[14] EVENT[15] ENTITY[1] ENTITY[4] GROUP[7] GROUP[12] ENTITY[11] ENTITY[10] ENTITY[8] (
+ kafeneion(ENTITY[8]) ∧
+  is_land_of(ENTITY[10], ENTITY[Macedonia]) ∧
+   REF1[13] = its ∧
+    is_forefathers_POS(GROUP[12], REF1[13]) ∧
+     is_fold_of(ENTITY[11], GROUP[12]) ∧
+      war(ENTITY[1]) ∧
+       greek(ATTRIB[5]) ∧
+        is_nationalism_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+         is_FACT_THAT(SITUATION[9], return.01(EVENT[14], ENTITY[10]) ∧ to(EVENT[14]) = ENTITY[11]) ∧
+          is_discussions_about(GROUP[7], SITUATION[9]) ∧ is_discussions_in(GROUP[7], ENTITY[8]) ∧
+           TMP_once_again(EVENT[2]) ∧
+            past(EVENT[2]) ∧
+             CRD_As(flare.01(EVENT[2], GROUP[Balkans]) ∧ to(EVENT[2]) = ENTITY[1],
+              CONJ_and(stir.02(EVENT[6], ENTITY[4]), be.02(EVENT[15], GROUP[7]))))
+
+# ::id 159_nonfiction_MASC;HistoryGreek;AT45-2;NE
+# ::snt Whether this will ever happen remains to be seen , but perhaps the aid offered by Greece to Turkey after 1999 's devastating earthquake is a sign that the animosity between these two traditional enemies is beginning to diminish .
+∃ SITUATION[1] SITUATION[20] ATTRIB[16] ATTRIB[11] ENTITY[13] EVENT[6] EVENT[5] EVENT[18] EVENT[17] EVENT[19] EVENT[12] ENTITY[2] DATE[10] ENTITY[9] GROUP[15] ENTITY[14] ENTITY[7] (
+ CD_1999(DATE[10]) ∧
+  devastate.01(ATTRIB[11]) ∧
+   is_earthquake_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_earthquake_POS(ENTITY[9], DATE[10]) ∧
+    offer.01(EVENT[12], ENTITY[Greece], ENTITY[7]) ∧ after(EVENT[12]) = ENTITY[9] ∧ to(EVENT[12]) = ENTITY[Turkey] ∧
+     aid(ENTITY[7]) ∧
+     traditional(ATTRIB[16]) ∧
+      (CD_two(GROUP[15]), is_enemies_ATTRIBUTE(GROUP[15], ATTRIB[16])) ∧
+       is_animosity_between(ENTITY[14], GROUP[15]) ∧
+        ADV_perhaps(SITUATION[20]) ∧
+         is_FACT_THAT(SITUATION[1], QUEST(MD_will(∃ EVENT[3] (TMP_ever(EVENT[3]) ∧ happen.01(EVENT[3], ENTITY[2]))))) ∧
+          is_sign_THAT(ENTITY[13], begin.01(EVENT[17], ENTITY[14], diminish.01(EVENT[18], ENTITY[14]))) ∧
+           CONJ_but(remain.01(EVENT[5], SITUATION[1], see.01(EVENT[6], _, SITUATION[1])),
+            is_FACT_THAT(SITUATION[20], be.01(EVENT[19], ENTITY[7], ENTITY[13]))))

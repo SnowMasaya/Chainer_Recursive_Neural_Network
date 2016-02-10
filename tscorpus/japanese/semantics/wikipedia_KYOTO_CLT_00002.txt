@@ -1,0 +1,1987 @@
+# ::id 1_wikipedia_KYOTO_CLT_00002,1;NJ
+# ::snt 狩野派
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[狩野派])
+
+# ::id 2_wikipedia_KYOTO_CLT_00002,2;NJ
+# ::snt 狩野派 （ かのうは ） は 、 日本 絵画 史上 最大 の 画派 で あり 、 室町 時代 中期 （ 15 世紀 ） から 江戸 時代 末期 （ 19 世紀 ） まで 、 約400 年 にわたって 活動 し 、 常 に 画壇 の 中心 に あっ た 専門 画家 集団 で ある 。
+∃ EVENT[4] EVENT[10] EVENT[16] EVENT[17] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[15] ENTITY[14] ENTITY[13] ENTITY[11] ENTITY[1] (
+ かのうは(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[1], ENTITY[狩野派]) ∧
+   日本_絵画_史上_最大(ENTITY[3]) ∧
+    の_画派(ENTITY[3], ENTITY[2]) ∧
+     室町_時代_中期(ENTITY[6]) ∧
+      CD_15_世紀(ENTITY[5]) ∧
+       namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+        江戸_時代_末期(ENTITY[8]) ∧
+         CD_19_世紀(ENTITY[7]) ∧
+          namely_-ENTITY-(ENTITY[7], ENTITY[8]) ∧
+           CD_約400_年(ENTITY[9]) ∧
+            常(ENTITY[13]) ∧
+             画壇(ENTITY[15]) ∧
+              の_中心(ENTITY[15], ENTITY[14]) ∧
+               あっ_た(EVENT[16], ENTITY[11]) ∧ に(EVENT[16]) = ENTITY[14] ∧
+                に(EVENT[16]) = ENTITY[13] ∧ 専門_画家_集団(ENTITY[11]) ∧
+                past(EVENT[16]) ∧
+                 で_あり(EVENT[4], ENTITY[狩野派], ENTITY[2]) ∧
+                  活動する.0(EVENT[10], ENTITY[狩野派]) ∧ にわたって(EVENT[10]) = ENTITY[9] ∧
+                   まで(EVENT[10]) = ENTITY[8] ∧ から(EVENT[10]) = ENTITY[6] ∧
+                   で_ある(EVENT[17], ENTITY[狩野派], ENTITY[11]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00002,3;NJ
+# ::snt 室町 幕府 の 御用 絵師 と なっ た 狩野 正信 を 始祖 と し 、 その 子孫 は 、 室町 幕府 崩壊 後 は 織田 信長 、 豊臣 秀吉 、 徳川 将軍 など に 絵師 として 仕え 、 その 時々 の 権力者 と 結び付い て 常 に 画壇 の 中心 を 占め 、 内裏 、 城郭 、 大 寺院 など の 障壁画 から 扇 面 など の 小画面 に 至る まで 、 あらゆる ジャンル の 絵画 を 手掛ける 職業 画家 集団 として 、 日本 美術界 に 多大 な 影響 を 及ぼし た 。
+∃ ATTRIB[41] SITUATION[31] ENTITY[1] EVENT[5] EVENT[7] EVENT[14] EVENT[17] EVENT[21] EVENT[35] EVENT[38] EVENT[42] ENTITY[4] ENTITY[3] ENTITY[6] GROUP[11] ENTITY[13] ENTITY[10] ENTITY[15] ENTITY[20] ENTITY[19] ENTITY[18] GROUP[26] ENTITY[25] ENTITY[34] ENTITY[33] ENTITY[32] ENTITY[36] ENTITY[24] ENTITY[40] ENTITY[39] ENTITY[22] ENTITY[9] ENTITY[16] ENTITY[8] (
+ 子孫(ENTITY[8]) ∧
+  室町_幕府_崩壊_後(ENTITY[9]) ∧
+   時々(ENTITY[16]) ∧
+    ENTITY[1] = *pro* ∧
+     室町_幕府(ENTITY[4]) ∧
+      の_御用_絵師(ENTITY[4], ENTITY[3]) ∧
+       なっ_た(EVENT[5], ENTITY[狩野_正信]) ∧ と(EVENT[5]) = ENTITY[3] ∧
+        始祖(ENTITY[6]) ∧
+         is_element_of(ENTITY[織田_信長], GROUP[11]) ∧ is_element_of(ENTITY[豊臣_秀吉], GROUP[11]) ∧
+          ∃ ENTITY[12] (徳川_将軍(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+          など(GROUP[11], ENTITY[10]) ∧
+           絵師(ENTITY[13]) ∧
+            の_権力者(ENTITY[16], ENTITY[15]) ∧
+             常(ENTITY[18]) ∧
+              画壇(ENTITY[20]) ∧
+               の_中心(ENTITY[20], ENTITY[19]) ∧
+                ∃ ENTITY[27] (内裏(ENTITY[27]) ∧ is_element_of(ENTITY[27], GROUP[26])) ∧
+                 ∃ ENTITY[28] (城郭(ENTITY[28]) ∧ is_element_of(ENTITY[28], GROUP[26])) ∧
+                 ∃ ATTRIB[30] ENTITY[29] (大(ATTRIB[30]) ∧ ATTRIBUTE_寺院(ATTRIB[30], ENTITY[29]) ∧ is_element_of(ENTITY[29], GROUP[26])) ∧
+                 など(GROUP[26], ENTITY[25]) ∧
+                  の_障壁画(ENTITY[25], ENTITY[24]) ∧
+                   扇_面(ENTITY[34]) ∧
+                    など(ENTITY[34], ENTITY[33]) ∧
+                     の_小画面(ENTITY[33], ENTITY[32]) ∧
+                      FACT(SITUATION[31], 至る(EVENT[35], ENTITY[22]) ∧ に(EVENT[35]) = ENTITY[32]) ∧
+                       あらゆる ENTITY[37] (ジャンル(ENTITY[37]), の_絵画(ENTITY[37], ENTITY[36])) ∧
+                        手掛ける(EVENT[38], ENTITY[22], ENTITY[36]) ∧ まで(EVENT[38]) = SITUATION[31] ∧
+                         から(EVENT[38]) = ENTITY[24] ∧ 職業_画家_集団(ENTITY[22]) ∧
+                         日本_美術界(ENTITY[39]) ∧
+                          多大_な(ATTRIB[41]) ∧
+                           ATTRIBUTE_影響(ATTRIB[41], ENTITY[40]) ∧
+                            past(EVENT[5]) ∧
+                             past(EVENT[42]) ∧
+                              し(EVENT[7], ENTITY[1], ENTITY[狩野_正信], ENTITY[6]) ∧
+                               仕え(EVENT[14], ENTITY[8]) ∧ として(EVENT[14]) = ENTITY[13] ∧
+                                に(EVENT[14]) = ENTITY[10] ∧ 時間(EVENT[14]) = ENTITY[9] ∧
+                                CONJ_te(結び付い_て(EVENT[17], ENTITY[8]) ∧ と(EVENT[17]) = ENTITY[15],
+                                 占め(EVENT[21], ENTITY[8], ENTITY[19]) ∧
+                                  に(EVENT[21]) = ENTITY[18]) ∧
+                                 及ぼし_た(EVENT[42], ENTITY[8], ENTITY[40]) ∧
+                                  に(EVENT[42]) = ENTITY[39] ∧ として(EVENT[42]) = ENTITY[22])
+
+# ::id 4_wikipedia_KYOTO_CLT_00002,4;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 5_wikipedia_KYOTO_CLT_00002,5;NJ
+# ::snt 狩野派 は 、 親 ・ 兄弟 など の 血族 関係 を 主 軸 と し た 画家 集団 で 、 約4 世紀 間 の 長期 にわたって 一 国 の 画壇 に 君臨 し た という 点 で 、 世界的 に も 他 に ほとんど 例 を 見 ない もの で ある 。
+∃ ENTITY[13] SITUATION[12] ATTRIB[9] EVENT[10] EVENT[11] EVENT[25] GROUP[5] ENTITY[4] ENTITY[8] ENTITY[3] ENTITY[1] (
+ ∃ ENTITY[6] (親(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+  ∃ ENTITY[7] (兄弟(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+  など(GROUP[5], ENTITY[4]) ∧
+   の_血族_関係(ENTITY[4], ENTITY[3]) ∧
+    主(ATTRIB[9]) ∧
+     ATTRIBUTE_軸(ATTRIB[9], ENTITY[8]) ∧
+      し_た(EVENT[10], ENTITY[1], ENTITY[3], ENTITY[8]) ∧ 画家_集団(ENTITY[1]) ∧
+       ENTITY[13] = *pro*{ENTITY[狩野派], ENTITY[1], ENTITY[3], ENTITY[8], ENTITY[4]} ∧
+        もの(SITUATION[12],
+         ¬ ∃ SITUATION[24] ENTITY[15] EVENT[20] ENTITY[17] ENTITY[19] ENTITY[18] ENTITY[16] ENTITY[21] ENTITY[14] (
+               ENTITY[15] = *pro*{ENTITY[13], ENTITY[狩野派], ENTITY[1], ENTITY[3], ENTITY[8], ENTITY[4]} ∧
+                (CD_約4_世紀(ENTITY[17]), 間(ENTITY[17])) ∧
+                 の_長期(ENTITY[17], ENTITY[16]) ∧
+                  CD_一_国(ENTITY[19]) ∧
+                   の_画壇(ENTITY[19], ENTITY[18]) ∧
+                    THAT_点(君臨する.0_た(EVENT[20], ENTITY[15]) ∧ に(EVENT[20]) = ENTITY[18] ∧
+                          にわたって(EVENT[20]) = ENTITY[16], ENTITY[14]) ∧
+                     他(ENTITY[21]) ∧
+                      past(EVENT[20]) ∧
+                       ADV_世界的_に_も(SITUATION[24]) ∧
+                        FACT(SITUATION[24],
+                         ほとんど ENTITY[22] (例(ENTITY[22]),
+                          ∃ EVENT[23] (
+                           見(EVENT[23], ENTITY[13], ENTITY[22]) ∧
+                            に(EVENT[23]) = ENTITY[21] ∧
+                             で(EVENT[23]) = ENTITY[14]))))) ∧
+         past(EVENT[10]) ∧
+          CONJ_te(で(EVENT[11], ENTITY[狩野派], ENTITY[1]), で_ある(EVENT[25], ENTITY[狩野派], SITUATION[12])))
+
+# ::id 6_wikipedia_KYOTO_CLT_00002,6;NJ
+# ::snt 狩野派 の 代表的 な 絵師 として は 、 室町 幕府 8 代 将軍 足利 義政 に 仕え た 初 代 狩野 正信 と その 嫡男 ・ 狩野 元信 、 元信 の 孫 で 安土城 や 大坂城 の 障壁画 を 制作 し た 狩野 永徳 、 永徳 の 孫 で 京都 から 江戸 に 本拠 を 移し 、 江戸城 、 二条城 など の 障壁画 制作 を 指揮 し た 狩野 探幽 、 京都 に とどまっ て 「 京狩野 」 と 称さ れ た 一派 を 代表 する 狩野 山楽 など が 挙げ られる 。
+∃ ATTRIB[2] EVENT[33] GROUP[4] ENTITY[3] ENTITY[1] (
+ 代表的_な(ATTRIB[2]) ∧
+  ATTRIBUTE_絵師(ATTRIB[2], ENTITY[1]) ∧ の_絵師(ENTITY[狩野派], ENTITY[1]) ∧
+   ∃ EVENT[8] ENTITY[7] GROUP[9] ENTITY[5] (
+    (CD_8_代(ENTITY[7]), 室町_幕府(ENTITY[7]) ∧ 将軍(ENTITY[7])) ∧
+     namely_-ENTITY-(ENTITY[7], ENTITY[足利_義政]) ∧
+      CONJ_と(∃ ENTITY[10] (CD_初_代(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[狩野_正信]) ∧ is_element_of(ENTITY[狩野_正信], GROUP[9])),
+       ∃ ENTITY[11] (嫡男(ENTITY[11]) ∧ namely_-ENTITY-(ENTITY[11], ENTITY[狩野_元信]) ∧ is_element_of(ENTITY[狩野_元信], GROUP[9]))) ∧
+       仕え_た(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[足利_義政] ∧ equals(GROUP[9], ENTITY[5]) ∧
+        past(EVENT[8]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ EVENT[14] EVENT[17] ENTITY[13] GROUP[16] ENTITY[15] (
+     の_孫(ENTITY[元信], ENTITY[13]) ∧
+      CONJ_や(is_element_of(ENTITY[安土城], GROUP[16]), is_element_of(ENTITY[大坂城], GROUP[16])) ∧
+       の_障壁画(GROUP[16], ENTITY[15]) ∧
+        CONJ_te(で(EVENT[14], ENTITY[狩野_永徳], ENTITY[13]), 制作する.0_た(EVENT[17], ENTITY[狩野_永徳], ENTITY[15])) ∧
+         past(EVENT[17]) ∧ is_element_of(ENTITY[狩野_永徳], GROUP[4])) ∧
+    ∃ EVENT[20] EVENT[25] EVENT[26] ENTITY[19] GROUP[23] ENTITY[22] ENTITY[24] ENTITY[21] (
+     の_孫(ENTITY[永徳], ENTITY[19]) ∧
+      is_element_of(ENTITY[江戸城], GROUP[23]) ∧ is_element_of(ENTITY[二条城], GROUP[23]) ∧
+       など(GROUP[23], ENTITY[22]) ∧
+        の_障壁画_制作(ENTITY[22], ENTITY[21]) ∧
+         本拠(ENTITY[24]) ∧
+          CONJ_te(で(EVENT[20], ENTITY[狩野_探幽], ENTITY[19]),
+           移し(EVENT[25], ENTITY[21], ENTITY[24]) ∧ に(EVENT[25]) = ENTITY[江戸] ∧
+            から(EVENT[25]) = ENTITY[京都] ∧ 指揮する.0_た(EVENT[26], ENTITY[狩野_探幽], ENTITY[21])) ∧
+           past(EVENT[26]) ∧ is_element_of(ENTITY[狩野_探幽], GROUP[4])) ∧
+    ∃ EVENT[31] EVENT[32] EVENT[29] ENTITY[28] (
+     CONJ_te(とどまっ_て(EVENT[31], ENTITY[狩野_山楽]) ∧ に(EVENT[31]) = ENTITY[京都],
+      称さ_た(EVENT[32], _, ENTITY[狩野_山楽], ENTITY[京狩野])) ∧
+      一派(ENTITY[28]) ∧
+       代表する.0(EVENT[29], ENTITY[狩野_山楽], ENTITY[28]) ∧ past(EVENT[32]) ∧ is_element_of(ENTITY[狩野_山楽], GROUP[4])) ∧
+    など(GROUP[4], ENTITY[3]) ∧ 挙げ(EVENT[33], _, ENTITY[3]) ∧ として(EVENT[33]) = ENTITY[1])
+
+# ::id 7_wikipedia_KYOTO_CLT_00002,7;NJ
+# ::snt 江戸 幕府 の 体制 が 安定 し て 以後 の 狩野派 は 、 幕府 の 御用 絵師 として 、 内裏 、 城郭 など の 障壁画 の 大量 注文 を こなす 必要 に 迫ら れ た 。
+∃ ATTRIB[15] ENTITY[6] SITUATION[5] SITUATION[1] EVENT[16] EVENT[17] ENTITY[8] GROUP[12] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[7] EVENT[4] ENTITY[3] ENTITY[2] (
+ 江戸_幕府(ENTITY[3]) ∧
+  の_体制(ENTITY[3], ENTITY[2]) ∧
+   FACT(SITUATION[1], 安定_し_て(EVENT[4], ENTITY[2])) ∧
+    te_以後_の_xxx(SITUATION[1], ENTITY[狩野派]) ∧
+     ENTITY[6] = *pro*{ENTITY[狩野派], ENTITY[2], ENTITY[3]} ∧
+      幕府(ENTITY[8]) ∧
+       の_御用_絵師(ENTITY[8], ENTITY[7]) ∧
+        ∃ ENTITY[13] (内裏(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+         ∃ ENTITY[14] (城郭(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])) ∧
+         など(GROUP[12], ENTITY[11]) ∧
+          の_障壁画(ENTITY[11], ENTITY[10]) ∧
+           大量(ATTRIB[15]) ∧
+            ATTRIBUTE_注文(ATTRIB[15], ENTITY[9]) ∧ の_注文(ENTITY[10], ENTITY[9]) ∧
+             必要(SITUATION[5], こなす(EVENT[16], ENTITY[6], ENTITY[9]) ∧ として(EVENT[16]) = ENTITY[7]) ∧
+              past(EVENT[17]) ∧ 迫ら_た(EVENT[17], _, ENTITY[狩野派]) ∧ に(EVENT[17]) = SITUATION[5])
+
+# ::id 8_wikipedia_KYOTO_CLT_00002,8;NJ
+# ::snt 膨大 な 量 の 障壁画 の 注文 に 応える ため 、 狩野家 の 当主 は 、 一門 の 絵師たち を 率い て 集団 で 制作 に あたる 必要があっ た 。
+∃ ATTRIB[6] SITUATION[2] EVENT[7] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[12] ENTITY[11] ENTITY[1] (
+ の_当主(ENTITY[狩野家], ENTITY[1]) ∧
+  膨大_な(ATTRIB[6]) ∧
+   ATTRIBUTE_量(ATTRIB[6], ENTITY[5]) ∧
+    の_障壁画(ENTITY[5], ENTITY[4]) ∧
+     の_注文(ENTITY[4], ENTITY[3]) ∧
+      FACT(SITUATION[2], 応える(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[3]) ∧
+       一門(ENTITY[9]) ∧
+        の_絵師たち(ENTITY[9], ENTITY[8]) ∧
+         集団(ENTITY[11]) ∧
+          制作(ENTITY[12]) ∧
+           CONJ_te(率い_て(EVENT[10], ENTITY[1], ENTITY[8]) ∧ ため(EVENT[10]) = SITUATION[2],
+            MD_必要があっ(∃ EVENT[13] (
+                  past(EVENT[13]) ∧
+                   あたる_た(EVENT[13], ENTITY[1]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+                    で(EVENT[13]) = ENTITY[11] ∧ ため(EVENT[13]) = SITUATION[2]))))
+
+# ::id 9_wikipedia_KYOTO_CLT_00002,9;NJ
+# ::snt その ため 、 狩野派 の 絵師 に は 、 絵師 個人 の 個性 の 表出 ではなく 、 先祖 伝来 の 粉本 （ 絵手本 ） や 筆法 を 忠実 に 学ぶ こと が 求め られ た 。
+∃ EVENT[15] GROUP[3] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  の_絵師(ENTITY[狩野派], ENTITY[2]) ∧
+   CONJ_ではなく(∃ ENTITY[6] ENTITY[5] ENTITY[4] (
+         絵師_個人(ENTITY[6]) ∧
+          の_個性(ENTITY[6], ENTITY[5]) ∧ の_表出(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[8] EVENT[13] GROUP[9] ENTITY[7] (
+     ENTITY[8] = *pro*{ENTITY[1], ENTITY[狩野派]} ∧
+      CONJ_や(∃ ENTITY[11] ENTITY[10] (
+            先祖_伝来(ENTITY[11]) ∧
+             の_粉本(ENTITY[11], ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[絵手本], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+       ∃ ENTITY[12] (筆法(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9]))) ∧
+       THAT_こと(学ぶ(EVENT[13], ENTITY[8], GROUP[9]), ENTITY[7]) ∧
+        ADV_忠実_に(EVENT[13]) ∧ is_element_of(ENTITY[7], GROUP[3]))) ∧
+    past(EVENT[15]) ∧ 求め_た(EVENT[15], ENTITY[2], GROUP[3]) ∧ ADV(EVENT[15]) = ENTITY[1])
+
+# ::id 10_wikipedia_KYOTO_CLT_00002,10;NJ
+# ::snt こうした 時代 背景 から 、 狩野 探幽 以降 の 狩野派 は 伝統 の 維持 と 御用 絵師 として の 勢力 保持 に もっぱら 努め 、 芸術的 創造性 を 失っ て いっ た という 見方 も ある 。
+∃ ATTRIB[12] EVENT[9] EVENT[13] EVENT[14] GROUP[4] ENTITY[11] ENTITY[2] ENTITY[3] ENTITY[1] (
+ 時代_背景(ENTITY[1]) ∧
+  狩野_探幽_以降(ENTITY[3]) ∧
+   の_xxx(ENTITY[3], ENTITY[狩野派]) ∧
+    CONJ_と(∃ ENTITY[6] ENTITY[5] (伝統(ENTITY[6]) ∧ の_維持(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ ENTITY[8] ENTITY[7] (御用_絵師(ENTITY[8]) ∧ として_の_勢力_保持(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+     芸術的(ATTRIB[12]) ∧
+      ATTRIBUTE_創造性(ATTRIB[12], ENTITY[11]) ∧
+       THAT_見方(努め(EVENT[9], ENTITY[狩野派]) ∧ に(EVENT[9]) = GROUP[4] ∧
+             失っ_て_いっ_た(EVENT[13], ENTITY[狩野派], ENTITY[11]), ENTITY[2]) ∧
+        ADV_もっぱら(EVENT[9]) ∧
+         past(EVENT[13]) ∧ ある(EVENT[14], ENTITY[2]) ∧ から(EVENT[14]) = ENTITY[1])
+
+# ::id 11_wikipedia_KYOTO_CLT_00002,11;NJ
+# ::snt 芸術家 の 個性 の 表現 や 内面 の 表出 を 尊重 する 現代 において 、 狩野派 の 絵画 へ の 評価 は 必ずしも 高い と は 言え ない 。
+∃ ENTITY[4] SITUATION[1] EVENT[11] EVENT[14] GROUP[5] ENTITY[2] ENTITY[13] ENTITY[12] (
+ の_絵画(ENTITY[狩野派], ENTITY[13]) ∧
+  へ_の_評価(ENTITY[13], ENTITY[12]) ∧
+   ENTITY[4] = *pro* ∧
+    CONJ_や(∃ ENTITY[8] ENTITY[7] ENTITY[6] (
+          芸術家(ENTITY[8]) ∧
+           の_個性(ENTITY[8], ENTITY[7]) ∧ の_表現(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[10] ENTITY[9] (内面(ENTITY[10]) ∧ の_表出(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[5]))) ∧
+     尊重する.0(EVENT[11], ENTITY[4], GROUP[5]) ∧ 時間(EVENT[11]) = ENTITY[2] ∧ 現代(ENTITY[2]) ∧
+      FACT(SITUATION[1], 高い(EVENT[14], ENTITY[12]) ∧ において(EVENT[14]) = ENTITY[2]) ∧
+       ADV_必ずしも(EVENT[14]) ∧ ¬ ∃ EVENT[16] 言え(EVENT[16], _, SITUATION[1]))
+
+# ::id 12_wikipedia_KYOTO_CLT_00002,12;NJ
+# ::snt しかしながら 、 狩野派 が 約4 世紀 にわたって 日本 の 画壇 を リード し 、 そこ から 多く の 画家 が 育っ て いっ た こと も 事実 で あり 、 良き につけ 悪しき につけ 、 狩野派 を 抜き にして 日本 の 絵画史 を 語る こと は でき ない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ENTITY[6] SITUATION[2] EVENT[5] EVENT[10] ENTITY[4] ENTITY[3] ENTITY[9] (
+        CD_約4_世紀(ENTITY[3]) ∧
+         の_画壇(ENTITY[日本], ENTITY[4]) ∧
+          ENTITY[6] = そこ{ENTITY[狩野派], ENTITY[日本], ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+           こと(SITUATION[2],
+            リードする.0(EVENT[5], ENTITY[狩野派], ENTITY[4]) ∧ にわたって(EVENT[5]) = ENTITY[3] ∧
+             多く_の ENTITY[7] (画家(ENTITY[7]),
+              ∃ EVENT[8] (
+               past(EVENT[8]) ∧
+                育っ_て_いっ_た(EVENT[8], ENTITY[7]) ∧ から(EVENT[8]) = ENTITY[6]))) ∧
+            事実(ENTITY[9]) ∧
+             で_あり(EVENT[10], SITUATION[2], ENTITY[9]) ∧
+              ∀ EVENT[11] CND_につけ(良き(EVENT[11], ENTITY[1]),
+                  ∀ EVENT[12] CND_につけ(悪しき(EVENT[12], ENTITY[1]),
+                      ∃ SITUATION[15] SITUATION[13] EVENT[16] EVENT[17] EVENT[18] ENTITY[14] (
+                       の_絵画史(ENTITY[日本], ENTITY[14]) ∧
+                        FACT(SITUATION[15], 抜き(EVENT[16], ENTITY[14], ENTITY[狩野派])) ∧
+                         こと(SITUATION[13],
+                          語る(EVENT[17], ENTITY[1], ENTITY[14]) ∧ にして(EVENT[17]) = SITUATION[15]) ∧
+                          でき(EVENT[18], ENTITY[1], SITUATION[13]))))))
+
+# ::id 13_wikipedia_KYOTO_CLT_00002,13;NJ
+# ::snt 近世 以降 の 日本 の 画家 の 多く が 狩野派 の 影響 を 受け 、 狩野派 の 影響 から 出発 し た こと も 事実 で あり 、 琳派 の 尾形 光琳 、 写生派 の 円山 応挙 など も 初期 に は 狩野派 に 学ん で いる 。
+∃ SITUATION[1] EVENT[10] EVENT[14] ENTITY[9] GROUP[12] ENTITY[11] ENTITY[13] (
+ 初期(ENTITY[13]) ∧
+  こと(SITUATION[1],
+   多く ENTITY[4] ENTITY[3] ENTITY[2] (
+    (近世_以降(ENTITY[4]) ∧ の_画家(ENTITY[日本], ENTITY[3]) ∧ の__画家(ENTITY[4], ENTITY[3]) ∧
+     の(ENTITY[3], ENTITY[2])),
+    ∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[7] (
+     の_影響(ENTITY[狩野派], ENTITY[5]) ∧
+      の_影響(ENTITY[狩野派], ENTITY[7]) ∧
+       past(EVENT[8]) ∧
+        受け(EVENT[6], ENTITY[2], ENTITY[5]) ∧
+         出発する.0_た(EVENT[8], ENTITY[2]) ∧ から(EVENT[8]) = ENTITY[7]))) ∧
+   事実(ENTITY[9]) ∧
+    の_xxx(ENTITY[琳派], ENTITY[尾形_光琳]) ∧ is_element_of(ENTITY[尾形_光琳], GROUP[12]) ∧
+     の_xxx(ENTITY[写生派], ENTITY[円山_応挙]) ∧ is_element_of(ENTITY[円山_応挙], GROUP[12]) ∧
+     など(GROUP[12], ENTITY[11]) ∧
+      で_あり(EVENT[10], SITUATION[1], ENTITY[9]) ∧
+       学ん_で_いる(EVENT[14], ENTITY[11]) ∧ に(EVENT[14]) = ENTITY[狩野派] ∧ に(EVENT[14]) = ENTITY[13])
+
+# ::id 14_wikipedia_KYOTO_CLT_00002,14;NJ
+# ::snt 室町 時代
+∃ EVENT[2] ENTITY[1] (室町_時代(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 15_wikipedia_KYOTO_CLT_00002,15;NJ
+# ::snt 狩野派 の 祖 は 室町幕府 の 御用 絵師 として 活動 し た 狩野 正信 （ 1434？-1530 ） で ある 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ の_祖(ENTITY[狩野派], ENTITY[1]) ∧
+  の_御用_絵師(ENTITY[室町幕府], ENTITY[4]) ∧
+   活動する.0_た(EVENT[5], ENTITY[狩野_正信]) ∧ として(EVENT[5]) = ENTITY[4] ∧
+    CD_1434？-1530(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[狩野_正信]) ∧ past(EVENT[5]) ∧ で_ある(EVENT[6], ENTITY[1], ENTITY[狩野_正信]))
+
+# ::id 16_wikipedia_KYOTO_CLT_00002,16;NJ
+# ::snt 彼 は 当時 の 日本人 として は 長寿 を 保ち （ 通説 で は 97 歳 で 没 ） 、 15 世紀 半ば から 16 世紀 前半 まで 活動 し た 。
+∃ ENTITY[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = 彼 ∧
+  当時(ENTITY[3]) ∧
+   の_日本人(ENTITY[3], ENTITY[2]) ∧
+    長寿(ENTITY[4]) ∧
+     (CD_15_世紀(ENTITY[6]), 半ば(ENTITY[6])) ∧
+      (CD_16_世紀(ENTITY[7]), 前半(ENTITY[7])) ∧
+       past(EVENT[8]) ∧
+        保ち(EVENT[5], ENTITY[1], ENTITY[4]) ∧ として(EVENT[5]) = ENTITY[2] ∧
+         活動する.0_た(EVENT[8], ENTITY[1]) ∧ まで(EVENT[8]) = ENTITY[7] ∧ から(EVENT[8]) = ENTITY[6])
+
+# ::id 17_wikipedia_KYOTO_CLT_00002,17;NJ
+# ::snt 正信 の 出自 は 伊豆 方面 と さ れ て いる が 定か で は ない 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ の_出自(ENTITY[正信], ENTITY[1]) ∧
+  伊豆_方面(ENTITY[2]) ∧ CONJ_が(さ_て_いる(EVENT[3], _, ENTITY[1], ENTITY[2]), ¬ ∃ EVENT[4] 定か_で_は(EVENT[4], ENTITY[1])))
+
+# ::id 18_wikipedia_KYOTO_CLT_00002,18;NJ
+# ::snt 20 世紀 後半 以降 の 研究 の 進展 により 、 狩野家 は 下野国 足利 （ 栃木県 足利市 ） の 長尾氏 と 何らかの 関係 が あっ た もの と 推定 さ れ て おり 、 足利市 の 長林寺 に 残る 墨画 の 『 観瀑図 』 は 正信 の 比較的 初期 の 作品 と 考え られ て いる 。
+∃ ATTRIB[14] SITUATION[8] SITUATION[4] EVENT[6] EVENT[7] EVENT[15] EVENT[16] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[1] ENTITY[13] ENTITY[12] EVENT[11] ENTITY[9] (
+ の_xxx(ENTITY[足利市], ENTITY[長林寺]) ∧
+  残る(EVENT[11], ENTITY[観瀑図]) ∧ に(EVENT[11]) = ENTITY[長林寺] ∧
+   墨画(ENTITY[9]) ∧
+    の_xxx(ENTITY[9], ENTITY[観瀑図]) ∧
+     (CD_20_世紀(ENTITY[3]), 後半_以降(ENTITY[3])) ∧
+      の_研究(ENTITY[3], ENTITY[2]) ∧
+       の_進展(ENTITY[2], ENTITY[1]) ∧
+        namely_-ENTITY-(ENTITY[栃木県_足利市], ENTITY[下野国_足利]) ∧
+         の_xxx(ENTITY[下野国_足利], ENTITY[長尾氏]) ∧
+          関係(ENTITY[5]) ∧
+           もの(SITUATION[4], あっ_た(EVENT[6], (ENTITY[1], ENTITY[5])) ∧ と(EVENT[6]) = ENTITY[長尾氏]) ∧
+            比較的(ATTRIB[14]) ∧
+             ATTRIBUTE_初期(ATTRIB[14], ENTITY[13]) ∧
+              の_作品(ENTITY[13], ENTITY[12]) ∧ の__作品(ENTITY[正信], ENTITY[12]) ∧
+               と(SITUATION[8], xxx(EVENT[15], ENTITY[観瀑図], ENTITY[12])) ∧
+                past(EVENT[6]) ∧
+                 推定する.0_て_おり(EVENT[7], ENTITY[1], ENTITY[狩野家]) ∧ と(EVENT[7]) = SITUATION[4] ∧
+                  考え_て_いる(EVENT[16], _, SITUATION[8]))
+
+# ::id 19_wikipedia_KYOTO_CLT_00002,19;NJ
+# ::snt 正信 の 画業 として 記録 に 残る 最初 の 事例 は 、 応仁の乱 （ 1467-1477 ） の 直前 の 寛正 4 年 （ 1463 年 ） 、 30 歳 の 時 に 京都 の 雲頂院 （ 相国寺 塔頭 ） に 観音 と 羅漢図 の 壁画 を 制作 し た という もの で （ 『 蔭涼軒日録 』 所載 ） 、 この 時点 で 正信 が すでに 京都 において 画家 として 活動 し て い た こと が わかる 。
+∃ SITUATION[22] ENTITY[9] ENTITY[1] EVENT[20] EVENT[21] EVENT[25] EVENT[27] ENTITY[14] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[15] GROUP[17] ENTITY[16] ENTITY[13] ENTITY[8] ENTITY[24] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] ENTITY[23] (
+ の_画業(ENTITY[正信], ENTITY[4]) ∧
+  記録(ENTITY[5]) ∧
+   最初(ENTITY[7]) ∧
+    残る(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5] ∧ として(EVENT[6]) = ENTITY[4] ∧
+     の_事例(ENTITY[7], ENTITY[2]) ∧
+     時点(ENTITY[23]) ∧
+      ENTITY[1] = *pro* ∧
+       ENTITY[9] = *pro*{ENTITY[2], ENTITY[7], ENTITY[4], ENTITY[5], ENTITY[正信], ENTITY[1]} ∧
+        CD_30_歳(ENTITY[14]) ∧
+         の_時(ENTITY[14], ENTITY[13]) ∧
+          CD_1467-1477(ENTITY[12]) ∧
+           namely_-ENTITY-(ENTITY[12], ENTITY[応仁の乱]) ∧
+            の_直前(ENTITY[応仁の乱], ENTITY[11]) ∧
+             (CD_寛正_4_年_（_1463_年_）(ENTITY[10]), の(ENTITY[11], ENTITY[10])) ∧
+              namely_-ENTITY-(ENTITY[10], ENTITY[13]) ∧
+               の_xxx(ENTITY[京都], ENTITY[雲頂院]) ∧
+                相国寺_塔頭(ENTITY[15]) ∧
+                 namely_-ENTITY-(ENTITY[15], ENTITY[雲頂院]) ∧
+                  CONJ_と(∃ ENTITY[18] (観音(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[17])),
+                   ∃ ENTITY[19] (羅漢図(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[17]))) ∧
+                   の_壁画(GROUP[17], ENTITY[16]) ∧
+                    THAT_もの(制作する.0_た(EVENT[20], ENTITY[9], ENTITY[16]) ∧ に(EVENT[20]) = ENTITY[雲頂院] ∧
+                          に(EVENT[20]) = ENTITY[13], ENTITY[8]) ∧
+                     画家(ENTITY[24]) ∧
+                      こと(SITUATION[22],
+                       活動する.0_て_い_た(EVENT[25], ENTITY[正信]) ∧ として(EVENT[25]) = ENTITY[24] ∧
+                        において(EVENT[25]) = ENTITY[京都] ∧ で(EVENT[25]) = ENTITY[23]) ∧
+                       past(EVENT[20]) ∧
+                        ADV_すでに(EVENT[25]) ∧
+                         past(EVENT[25]) ∧
+                          CONJ_te(で(EVENT[21], ENTITY[2], ENTITY[8]),
+                           わかる(EVENT[27], ENTITY[1], SITUATION[22])))
+
+# ::id 20_wikipedia_KYOTO_CLT_00002,20;NJ
+# ::snt 正信 が 壁画 を 描い た 雲頂院 の 本寺 で ある 相国寺 は 室町幕府 3 代 将軍 足利 義満 創建 の 禅寺 で 、 如拙 、 周文 、 雪舟 ら の 画僧 を 輩出 し た 室町 画壇 の 中心的 存在 で あり 、 この 当時 は 周文 の 弟子 にあたる 画僧 ・ 宗湛 （ 小栗 宗湛 、 1413-1481 ） が 御用 絵師 として 活動 し て い た 。
+∃ ATTRIB[19] ENTITY[14] EVENT[10] EVENT[18] EVENT[20] EVENT[25] ENTITY[8] ENTITY[9] ENTITY[7] GROUP[17] ENTITY[16] ENTITY[15] ENTITY[12] ENTITY[11] ENTITY[23] ENTITY[22] ENTITY[24] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] ENTITY[21] (
+ 壁画(ENTITY[4]) ∧
+  描い_た(EVENT[5], ENTITY[正信], ENTITY[4]) ∧ LOC(EVENT[5]) = ENTITY[雲頂院] ∧
+   の_本寺(ENTITY[雲頂院], ENTITY[2]) ∧
+    で_ある(EVENT[6], ENTITY[相国寺], ENTITY[2]) ∧
+     当時(ENTITY[21]) ∧
+      past(EVENT[5]) ∧
+       足利_義満_創建(ENTITY[9]) ∧
+        室町幕府_3_代_将軍(ENTITY[8]) ∧
+         namely_-ENTITY-(ENTITY[8], ENTITY[9]) ∧
+          の_禅寺(ENTITY[9], ENTITY[7]) ∧
+           ENTITY[14] = *pro*{ENTITY[11], ENTITY[相国寺], ENTITY[7], ENTITY[9], ENTITY[8], ENTITY[2], ENTITY[雲頂院], ENTITY[正信], ENTITY[4]} ∧
+            is_element_of(ENTITY[如拙], GROUP[17]) ∧ is_element_of(ENTITY[周文], GROUP[17]) ∧ is_element_of(ENTITY[雪舟], GROUP[17]) ∧
+             equals_ら(GROUP[17], ENTITY[16]) ∧
+              の_画僧(ENTITY[16], ENTITY[15]) ∧
+               輩出する.0_た(EVENT[18], ENTITY[14], ENTITY[15]) ∧ LOC(EVENT[18]) = ENTITY[12] ∧
+                室町_画壇(ENTITY[12]) ∧
+                中心的(ATTRIB[19]) ∧
+                 の_存在(ENTITY[12], ENTITY[11]) ∧ ATTRIBUTE_存在(ATTRIB[19], ENTITY[11]) ∧
+                  の_弟子(ENTITY[周文], ENTITY[23]) ∧
+                   にあたる_画僧(ENTITY[23], ENTITY[22]) ∧
+                    namely_-ENTITY-(ENTITY[22], ENTITY[宗湛]) ∧
+                     namely_-ENTITY-(ENTITY[小栗_宗湛_1413-1481], ENTITY[宗湛]) ∧
+                      御用_絵師(ENTITY[24]) ∧
+                       past(EVENT[18]) ∧
+                        past(EVENT[25]) ∧
+                         CONJ_te(で(EVENT[10], ENTITY[相国寺], ENTITY[7]),
+                          で_あり(EVENT[20], ENTITY[相国寺], ENTITY[11])) ∧
+                          活動する.0_て_い_た(EVENT[25], ENTITY[宗湛]) ∧ として(EVENT[25]) = ENTITY[24] ∧
+                           時間(EVENT[25]) = ENTITY[21])
+
+# ::id 21_wikipedia_KYOTO_CLT_00002,21;NJ
+# ::snt 狩野 正信 が いつ 上京 し 、 誰 に 師事 し 、 いつ 室町幕府 の 御用 絵師 と なっ た か 、 正確 な ところ は 不明 で ある が 、 室町 幕府 8 代 将軍 ・ 足利 義政 に 重用 さ れ て い た こと は 諸記録 から 明らか で ある 。
+∃ ENTITY[12] SITUATION[11] ATTRIB[2] ENTITY[13] ENTITY[15] EVENT[3] EVENT[14] EVENT[16] ENTITY[1] (
+ 正確_な(ATTRIB[2]) ∧
+  ATTRIBUTE_ところ(ATTRIB[2], ENTITY[1]) ∧
+   past(EVENT[14]) ∧
+    ENTITY[12] = *pro*{ENTITY[1], ENTITY[狩野_正信], ENTITY[室町幕府]} ∧
+     (CD_8_代(ENTITY[13]), 室町_幕府(ENTITY[13]) ∧ 将軍(ENTITY[13])) ∧
+      namely_-ENTITY-(ENTITY[13], ENTITY[足利_義政]) ∧
+       こと(SITUATION[11], 重用する.0_て_い_た(EVENT[14], ENTITY[足利_義政], ENTITY[12])) ∧
+        諸記録(ENTITY[15]) ∧
+         CONJ_が(不明_で_ある(EVENT[3], ENTITY[1],
+               QUEST(∃ ENTITY[9] EVENT[5] EVENT[7] EVENT[10] ? TIME[4] ENTITY[6] TIME[8] (
+                     before(EVENT[3], EVENT[10]) ∧
+                      の_御用_絵師(ENTITY[室町幕府], ENTITY[9]) ∧
+                       上京する.0(EVENT[5], ENTITY[狩野_正信]) ∧ is_contained_in(時間(EVENT[5]), TIME[4]) ∧
+                        師事する.0(EVENT[7], ENTITY[狩野_正信]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+                         なっ_た(EVENT[10], ENTITY[狩野_正信]) ∧ と(EVENT[10]) = ENTITY[9] ∧
+                          is_contained_in(時間(EVENT[10]), TIME[8])))),
+          明らか_で_ある(EVENT[16], SITUATION[11]) ∧ から(EVENT[16]) = ENTITY[15]))
+
+# ::id 22_wikipedia_KYOTO_CLT_00002,22;NJ
+# ::snt 10 年 に わたっ た 応仁の乱 （ 1467-1477 ） 終結 の 数 年 後 の 文明 （ 日本 ） 13 年 （ 1481 年 ） 、 室町 幕府 の 御用 絵師 で あっ た 宗湛 が 死去 し て おり 、 狩野 正信 は 、 宗湛 の 跡 を 継い で 幕府 の 御用 絵師 に 任命 さ れ た もの と 思わ れる 。
+∃ SITUATION[15] EVENT[8] EVENT[13] EVENT[14] EVENT[17] EVENT[20] EVENT[21] ENTITY[7] ENTITY[4] DEGREE[9] ENTITY[5] ENTITY[3] ENTITY[1] ENTITY[12] ENTITY[11] TIME[2] ENTITY[16] ENTITY[19] ENTITY[18] (
+ CD_10_年(ENTITY[7]) ∧
+  わたっ_た(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[7] ∧ 応仁の乱_終結(ENTITY[5]) ∧
+   CD_1467-1477(ENTITY[4]) ∧
+    namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+     CD_数_年(DEGREE[9]) ∧
+      MSR_後(DEGREE[9], ENTITY[3]) ∧ の_後(ENTITY[5], ENTITY[3]) ∧
+       (CD_文明_日本_13_年(TIME[2]), の(ENTITY[3], TIME[2])) ∧
+        CD_1481_年(ENTITY[1]) ∧
+         namely_-TIME-(ENTITY[1], TIME[2]) ∧
+          室町_幕府(ENTITY[12]) ∧
+           の_御用_絵師(ENTITY[12], ENTITY[11]) ∧
+            で_あっ_た(EVENT[13], ENTITY[宗湛], ENTITY[11]) ∧
+             の_跡(ENTITY[宗湛], ENTITY[16]) ∧
+              幕府(ENTITY[19]) ∧
+               の_御用_絵師(ENTITY[19], ENTITY[18]) ∧
+                もの(SITUATION[15],
+                 CONJ_te(継い_で(EVENT[17], ENTITY[狩野_正信], ENTITY[16]),
+                  任命する.0_た(EVENT[20], _, ENTITY[狩野_正信], ENTITY[18]))) ∧
+                 past(EVENT[8]) ∧
+                  past(EVENT[13]) ∧
+                   past(EVENT[20]) ∧
+                    死去する.0_て_おり(EVENT[14], ENTITY[宗湛]) ∧ is_contained_in(時間(EVENT[14]), TIME[2]) ∧
+                     思わ(EVENT[21], _, ENTITY[狩野_正信]) ∧ と(EVENT[21]) = SITUATION[15])
+
+# ::id 23_wikipedia_KYOTO_CLT_00002,23;NJ
+# ::snt これ 以後 は 、 宮廷 の 絵所預 （ えどころあずかり ） の 職 に あっ た 大和絵 系 の 土佐 光信 と 、 漢画 系 の 狩野 正信 の 両者 が 画壇 の 二 大 勢力 と なっ た 。
+∃ ENTITY[1] (
+ ENTITY[1] = これ ∧
+  以後(ENTITY[1]) ∧
+   両 GROUP[3] ENTITY[2] (
+    (CONJ_と(∃ EVENT[8] ENTITY[7] ENTITY[6] ENTITY[4] (
+            宮廷(ENTITY[7]) ∧
+             の_xxx(ENTITY[7], ENTITY[絵所預]) ∧
+              namely_-ENTITY-(ENTITY[えどころあずかり], ENTITY[絵所預]) ∧
+               の_職(ENTITY[絵所預], ENTITY[6]) ∧
+                あっ_た(EVENT[8], ENTITY[土佐_光信]) ∧ に(EVENT[8]) = ENTITY[6] ∧
+                 大和絵_系(ENTITY[4]) ∧
+                  の_xxx(ENTITY[4], ENTITY[土佐_光信]) ∧ past(EVENT[8]) ∧ is_element_of(ENTITY[土佐_光信], GROUP[3])),
+       ∃ ENTITY[9] (漢画_系(ENTITY[9]) ∧ の_xxx(ENTITY[9], ENTITY[狩野_正信]) ∧ is_element_of(ENTITY[狩野_正信], GROUP[3]))) ∧
+     の_者(GROUP[3], ENTITY[2])),
+    ∃ EVENT[12] ENTITY[11] ENTITY[10] (
+     画壇(ENTITY[11]) ∧
+      (CD_二_大(ENTITY[10]), の_勢力(ENTITY[11], ENTITY[10])) ∧
+       past(EVENT[12]) ∧
+        なっ_た(EVENT[12], ENTITY[2]) ∧ と(EVENT[12]) = ENTITY[10] ∧ 時間(EVENT[12]) = ENTITY[1])))
+
+# ::id 24_wikipedia_KYOTO_CLT_00002,24;NJ
+# ::snt 文明 14 年 （ 1482 年 ） 、 前 将軍 ・ 足利 義政 は 、 東山殿 （ 銀閣寺 の 前身 ） の 造営 を 始め 、 正信 が その 障壁画 を 担当 する こと と なっ た 。
+∃ SITUATION[7] EVENT[6] EVENT[9] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[3] TIME[1] ENTITY[2] ENTITY[8] (
+ 前_将軍(ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[2], ENTITY[足利_義政]) ∧
+   障壁画(ENTITY[8]) ∧
+    CD_文明_14_年_（_1482_年_）(TIME[1]) ∧
+     銀閣寺(ENTITY[5]) ∧
+      の_前身(ENTITY[5], ENTITY[4]) ∧
+       namely_-ENTITY-(ENTITY[4], ENTITY[東山殿]) ∧
+        の_造営(ENTITY[東山殿], ENTITY[3]) ∧
+         こと(SITUATION[7], 担当する.0(EVENT[9], ENTITY[正信], ENTITY[8])) ∧
+          past(EVENT[10]) ∧
+           始め(EVENT[6], ENTITY[足利_義政], ENTITY[3]) ∧
+            なっ_た(EVENT[10], ENTITY[正信], SITUATION[7]) ∧ is_contained_in(時間(EVENT[10]), TIME[1]))
+
+# ::id 25_wikipedia_KYOTO_CLT_00002,25;NJ
+# ::snt 延徳 2 年 （ 1490 年 ） の 義政 の 没後 、 正信 は 当時 政治 の 実権 を 握っ て い た 細川氏 に 仕える よう に なる 。
+∃ SITUATION[3] EVENT[8] EVENT[9] EVENT[10] ENTITY[2] ENTITY[7] ENTITY[6] TIME[5] TIME[1] (
+ CD_延徳_2_年_（_1490_年_）(ENTITY[2]) ∧
+  の_没後(ENTITY[義政], TIME[1]) ∧ の__没後(ENTITY[2], TIME[1]) ∧
+   当時(TIME[5]) ∧
+    政治(ENTITY[7]) ∧
+     の_実権(ENTITY[7], ENTITY[6]) ∧
+      握っ_て_い_た(EVENT[8], ENTITY[細川氏], ENTITY[6]) ∧ is_contained_in(時間(EVENT[8]), TIME[5]) ∧
+       よう(SITUATION[3], 仕える(EVENT[9], ENTITY[正信]) ∧ に(EVENT[9]) = ENTITY[細川氏]) ∧
+        past(EVENT[8]) ∧ なる(EVENT[10], ENTITY[正信], SITUATION[3]) ∧ is_contained_in(時間(EVENT[10]), TIME[1]))
+
+# ::id 26_wikipedia_KYOTO_CLT_00002,26;NJ
+# ::snt 正信 は この よう に 、 時 の 権力者 と の 結び付き を 深め つつ 画壇 で の 地位 を 固め 、 後 の 狩野派 隆盛 の 基礎 を 築い た 。
+∃ EVENT[5] EVENT[8] EVENT[12] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[1] (
+ よう(ENTITY[1]) ∧
+  時(ENTITY[4]) ∧
+   の_権力者(ENTITY[4], ENTITY[3]) ∧
+    と_の_結び付き(ENTITY[3], ENTITY[2]) ∧
+     画壇(ENTITY[7]) ∧
+      で_の_地位(ENTITY[7], ENTITY[6]) ∧
+       後(ENTITY[11]) ∧
+        の_狩野派_隆盛(ENTITY[11], ENTITY[10]) ∧
+         の_基礎(ENTITY[10], ENTITY[9]) ∧
+          past(EVENT[12]) ∧
+           CRD_つつ(深め(EVENT[5], ENTITY[正信], ENTITY[2]),
+            固め(EVENT[8], ENTITY[正信], ENTITY[6]) ∧
+             築い_た(EVENT[12], ENTITY[正信], ENTITY[9]) ∧ に(EVENT[12]) = ENTITY[1]))
+
+# ::id 27_wikipedia_KYOTO_CLT_00002,27;NJ
+# ::snt 記録 によれば 、 正信 は 障壁画 、 仏画 を 含め 、 多様 な 形式 ・ 題材 の 作品 を 手掛け た こと が 知ら れる が 、 障壁画 は ことごとく 失わ れ 、 現存 する 確実 な 作品 は 掛軸 など の 小画面 に 限ら れ て いる 。
+∃ ATTRIB[9] SITUATION[2] ATTRIB[21] EVENT[6] EVENT[13] EVENT[14] EVENT[16] EVENT[25] GROUP[3] GROUP[10] ENTITY[8] ENTITY[7] ENTITY[1] ENTITY[24] ENTITY[23] ENTITY[22] EVENT[20] ENTITY[15] ENTITY[18] (
+ 障壁画(ENTITY[15]) ∧
+  確実_な(ATTRIB[21]) ∧
+   現存する.0(EVENT[20], ENTITY[18]) ∧ ATTRIBUTE_作品(ATTRIB[21], ENTITY[18]) ∧
+    記録(ENTITY[1]) ∧
+     ∃ ENTITY[4] (障壁画(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+      ∃ ENTITY[5] (仏画(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+      多様_な(ATTRIB[9]) ∧
+       ∃ ENTITY[11] (形式(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (題材(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+        equals(GROUP[10], ENTITY[8]) ∧ ATTRIBUTE(ATTRIB[9], ENTITY[8]) ∧
+         の_作品(ENTITY[8], ENTITY[7]) ∧
+          こと(SITUATION[2], 含め(EVENT[6], ENTITY[正信], GROUP[3]) ∧ 手掛け_た(EVENT[13], ENTITY[正信], ENTITY[7])) ∧
+           掛軸(ENTITY[24]) ∧
+            など(ENTITY[24], ENTITY[23]) ∧
+             の_小画面(ENTITY[23], ENTITY[22]) ∧
+              past(EVENT[13]) ∧
+               ADV_ことごとく(EVENT[16]) ∧
+                CONJ_が(知ら(EVENT[14], _, SITUATION[2]) ∧ によれば(EVENT[14]) = ENTITY[1],
+                 失わ(EVENT[16], _, ENTITY[15]) ∧
+                  限ら_て_いる(EVENT[25], _, ENTITY[18]) ∧ に(EVENT[25]) = ENTITY[22]))
+
+# ::id 28_wikipedia_KYOTO_CLT_00002,28;NJ
+# ::snt その 画風 は 、 同時代人 の 土佐 光信 の 伝統的 な 大和絵 風 と は 対照的 に 、 水墨 を 基調 と し 、 中国 宋 ・ 元 の 画法 を 元 に し た 「 漢画 」 で あっ た 。
+∃ SITUATION[14] ATTRIB[4] EVENT[8] EVENT[12] EVENT[13] ENTITY[7] ENTITY[6] GROUP[10] ENTITY[11] ENTITY[9] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 画風(ENTITY[1]) ∧
+  同時代人(ENTITY[3]) ∧
+   の_xxx(ENTITY[3], ENTITY[土佐_光信]) ∧
+    伝統的_な(ATTRIB[4]) ∧
+     ATTRIBUTE_大和絵_風(ATTRIB[4], ENTITY[2]) ∧ の_大和絵_風(ENTITY[土佐_光信], ENTITY[2]) ∧
+      水墨(ENTITY[6]) ∧
+       基調(ENTITY[7]) ∧
+        is_element_of(ENTITY[宋], GROUP[10]) ∧ is_element_of(ENTITY[元], GROUP[10]) ∧
+         namely_-ENTITY-(GROUP[10], ENTITY[中国]) ∧
+          の_画法(ENTITY[中国], ENTITY[9]) ∧
+           元(ENTITY[11]) ∧
+            し(EVENT[8], ENTITY[漢画], ENTITY[6], ENTITY[7]) ∧ し_た(EVENT[12], ENTITY[漢画], ENTITY[9], ENTITY[11]) ∧
+             ADV_対照的_に_と(SITUATION[14], ENTITY[2]) ∧
+              past(EVENT[12]) ∧
+               past(EVENT[13]) ∧ FACT(SITUATION[14], で_あっ_た(EVENT[13], ENTITY[1], ENTITY[漢画])))
+
+# ::id 29_wikipedia_KYOTO_CLT_00002,29;NJ
+# ::snt 正信 は 97 歳 の 長寿 を 保っ た が 、 晩年 の 約30 年間 の 事績 は 明らか で なく 、 嫡男 の 元信 に 画業 を 継が せ て 引退 生活 を 送っ て い た 模様 で ある 。
+∃ SITUATION[8] EVENT[3] EVENT[13] EVENT[11] EVENT[15] EVENT[16] ENTITY[2] ENTITY[1] ENTITY[10] ENTITY[12] ENTITY[9] ENTITY[14] ENTITY[6] ENTITY[5] ENTITY[4] (
+ 晩年(ENTITY[6]) ∧
+  (CD_約30_年間(ENTITY[5]), の(ENTITY[6], ENTITY[5])) ∧
+   の_事績(ENTITY[5], ENTITY[4]) ∧
+    CD_97_歳(ENTITY[2]) ∧
+     の_長寿(ENTITY[2], ENTITY[1]) ∧
+      嫡男(ENTITY[10]) ∧
+       の_元信(ENTITY[10], ENTITY[9]) ∧
+        画業(ENTITY[12]) ∧
+         引退_生活(ENTITY[14]) ∧
+          模様(SITUATION[8],
+           CONJ_te(せ_て(EVENT[11], ENTITY[正信], ENTITY[9], 継が(EVENT[13], ENTITY[9], ENTITY[12])),
+            送っ_て_い_た(EVENT[15], ENTITY[正信], ENTITY[14]))) ∧
+           past(EVENT[3]) ∧
+            past(EVENT[15]) ∧
+             CONJ_が(保っ_た(EVENT[3], ENTITY[正信], ENTITY[1]),
+              ¬ ∃ EVENT[7] 明らか_で(EVENT[7], ENTITY[4]) ∧ で_ある(EVENT[16], ENTITY[正信], SITUATION[8])))
+
+# ::id 30_wikipedia_KYOTO_CLT_00002,30;NJ
+# ::snt 狩野派 隆盛 の 基盤 を 築い た 、 2 代目 ・ 狩野 元信 （ 1476-1559 ） は 正信 の 嫡男 で 、 文明 8 年 （ 1476 年 ） に 生まれ た 。
+∃ EVENT[8] EVENT[10] ENTITY[7] ENTITY[9] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 狩野派_隆盛(ENTITY[5]) ∧
+  の_基盤(ENTITY[5], ENTITY[4]) ∧
+   築い_た(EVENT[6], ENTITY[狩野_元信], ENTITY[4]) ∧
+    CD_2_代目(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[狩野_元信]) ∧
+      CD_1476-1559(ENTITY[1]) ∧
+       namely_-ENTITY-(ENTITY[1], ENTITY[狩野_元信]) ∧
+        past(EVENT[6]) ∧
+         の_嫡男(ENTITY[正信], ENTITY[7]) ∧
+          CD_文明_8_年_（_1476_年_）(ENTITY[9]) ∧
+           past(EVENT[10]) ∧
+            CONJ_te(で(EVENT[8], ENTITY[狩野_元信], ENTITY[7]),
+             生まれ_た(EVENT[10], ENTITY[狩野_元信]) ∧ に(EVENT[10]) = ENTITY[9]))
+
+# ::id 31_wikipedia_KYOTO_CLT_00002,31;NJ
+# ::snt 現存 する 代表作 は 大徳寺 大仙院 方丈 の 障壁画 （ 方丈 は 永正 10 年 （ 1513 年 ） に 完成 ） 、 天文 （ 元号 ） 12 年 （ 1543 年 ） の 妙心寺 霊雲院 障壁画 など で ある （ 大仙院 障壁画 について は 、 方丈 竣工 時 の 作品 で は なく 、 やや 後 の 年代 の 作 と する 見方 が 有力 で ある ） 。
+∃ EVENT[8] GROUP[4] ENTITY[1] EVENT[3] (
+ 現存する.0(EVENT[3], ENTITY[1]) ∧ 代表作(ENTITY[1]) ∧
+  ∃ ENTITY[5] (の_障壁画(ENTITY[大徳寺_大仙院_方丈], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+   ∃ ENTITY[7] ENTITY[6] (CD_天文_（_元号_）_12_年_（_1543_年_）(ENTITY[7]) ∧ の_妙心寺_霊雲院_障壁画(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+   で_ある(EVENT[8], ENTITY[1]) ∧ など(EVENT[8]) = GROUP[4])
+
+# ::id 32_wikipedia_KYOTO_CLT_00002,32;NJ
+# ::snt 大仙院 方丈 障壁画 は 相阿弥 、 元信 と 弟 ・ 狩野 之信 が 部屋 ごと に 制作 を 分担 し て おり 、 元信 が 担当 し た の は 「 檀那の間 」 の 『 四季花鳥図 』 と 、 「 衣鉢の間 」 の 『 禅宗祖師図 』 など で あっ た 。
+∃ EVENT[12] ENTITY[5] GROUP[2] GROUP[11] EVENT[10] ENTITY[1] ENTITY[8] (
+ 大仙院_方丈_障壁画(ENTITY[1]) ∧
+  担当する.0_た(EVENT[10], ENTITY[元信], ENTITY[8]) ∧ の(ENTITY[8]) ∧
+   past(EVENT[10]) ∧
+    CONJ_と(is_element_of(ENTITY[相阿弥], GROUP[2]), is_element_of(ENTITY[元信], GROUP[2]),
+     ∃ ENTITY[3] (弟(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[狩野_之信]) ∧ is_element_of(ENTITY[狩野_之信], GROUP[2]))) ∧
+     部屋(ENTITY[5]) ∧
+      CONJ_と(の_xxx(ENTITY[檀那の間], ENTITY[四季花鳥図]) ∧ is_element_of(ENTITY[四季花鳥図], GROUP[11]),
+       の_xxx(ENTITY[衣鉢の間], ENTITY[禅宗祖師図]) ∧ is_element_of(ENTITY[禅宗祖師図], GROUP[11])) ∧
+       past(EVENT[12]) ∧
+        ごと ENTITY[4] (ENTITY[4] = ENTITY[5],
+         ∃ EVENT[7] ENTITY[6] (
+          制作(ENTITY[6]) ∧
+           分担する.0_て_おり(EVENT[7], GROUP[2], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[4] ∧
+            TPC(EVENT[7]) = ENTITY[1])) ∧
+         で_あっ_た(EVENT[12], ENTITY[8]) ∧ など(EVENT[12]) = GROUP[11])
+
+# ::id 33_wikipedia_KYOTO_CLT_00002,33;NJ
+# ::snt この うち 、 『 禅宗祖師図 』 は 典型的 な 水墨画 で ある が 、 『 四季花鳥図 』 は 水墨 を 基調 と し つつ 、 草花 や 鳥 の 部分 に のみ 濃彩 を 用い て 新しい 感覚 を 示し て いる 。
+∃ ATTRIB[16] ATTRIB[3] EVENT[4] EVENT[7] EVENT[17] ENTITY[2] ENTITY[6] ENTITY[5] GROUP[10] ENTITY[9] ENTITY[15] ENTITY[1] (
+ うち(ENTITY[1]) ∧
+  典型的_な(ATTRIB[3]) ∧
+   ATTRIBUTE_水墨画(ATTRIB[3], ENTITY[2]) ∧
+    水墨(ENTITY[5]) ∧
+     基調(ENTITY[6]) ∧
+      CONJ_や(∃ ENTITY[11] (草花(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+       ∃ ENTITY[12] (鳥(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+       の_部分(GROUP[10], ENTITY[9]) ∧
+        新しい(ATTRIB[16]) ∧
+         ATTRIBUTE_感覚(ATTRIB[16], ENTITY[15]) ∧
+          CONJ_が(で_ある(EVENT[4], ENTITY[禅宗祖師図], ENTITY[2]) ∧ ADV(EVENT[4]) = ENTITY[1],
+           CRD_つつ(し(EVENT[7], ENTITY[四季花鳥図], ENTITY[5], ENTITY[6]),
+            CONJ_te(のみ ENTITY[8] (ENTITY[8] = ENTITY[9],
+                  ∃ EVENT[14] ENTITY[13] (
+                   濃彩(ENTITY[13]) ∧
+                    用い_て(EVENT[14], ENTITY[四季花鳥図], ENTITY[13]) ∧ に(EVENT[14]) = ENTITY[8])),
+             示し_て_いる(EVENT[17], ENTITY[四季花鳥図], ENTITY[15])))))
+
+# ::id 34_wikipedia_KYOTO_CLT_00002,34;NJ
+# ::snt 元信 は 時 の 権力者 で あっ た 足利 将軍 や 細川家 と の 結び付き を 強め 、 多く の 門弟 を 抱え て 、 画家 集団 として の 狩野派 の 基盤 を 確か な もの に し た 。
+∃ ATTRIB[15] EVENT[6] EVENT[9] EVENT[16] ENTITY[5] ENTITY[4] GROUP[7] ENTITY[2] ENTITY[1] ENTITY[13] ENTITY[14] ENTITY[12] (
+ 時(ENTITY[5]) ∧
+  の_権力者(ENTITY[5], ENTITY[4]) ∧
+   CONJ_や(∃ ENTITY[8] (足利_将軍(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])), is_element_of(ENTITY[細川家], GROUP[7])) ∧
+    で_あっ_た(EVENT[6], ENTITY[2], ENTITY[4]) ∧ equals(GROUP[7], ENTITY[2]) ∧
+     と_の_結び付き(ENTITY[2], ENTITY[1]) ∧
+      画家_集団(ENTITY[13]) ∧
+       として_の_xxx(ENTITY[13], ENTITY[狩野派]) ∧
+        の_基盤(ENTITY[狩野派], ENTITY[12]) ∧
+         確か_な(ATTRIB[15]) ∧
+          ATTRIBUTE_もの(ATTRIB[15], ENTITY[14]) ∧
+           past(EVENT[6]) ∧
+            past(EVENT[16]) ∧
+             強め(EVENT[9], ENTITY[元信], ENTITY[1]) ∧
+              CONJ_te(多く_の ENTITY[10] (門弟(ENTITY[10]), ∃ EVENT[11] 抱え_て(EVENT[11], ENTITY[元信], ENTITY[10])),
+               し_た(EVENT[16], ENTITY[元信], ENTITY[12], ENTITY[14])))
+
+# ::id 35_wikipedia_KYOTO_CLT_00002,35;NJ
+# ::snt 武家 だけでなく 、 公家 、 寺社 など から の 注文 に も 応え 、 寺社 関係 で は 、 大坂 に あっ た 石山本願寺 の 障壁画 を 元信 が 手掛け た こと が 記録 から 分かっ て いる が 、 これ は 現存 し ない 。
+∃ SITUATION[10] ENTITY[1] ENTITY[18] EVENT[9] EVENT[14] EVENT[15] EVENT[17] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[12] ENTITY[16] ENTITY[11] (
+ 寺社_関係(ENTITY[11]) ∧
+  ENTITY[18] = これ{ENTITY[11], ENTITY[元信], ENTITY[石山本願寺], ENTITY[大坂], ENTITY[16], ENTITY[12], ENTITY[2], ENTITY[3]} ∧
+   ENTITY[1] = *pro* ∧
+    CONJ_だけでなく(∃ ENTITY[5] (武家(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ GROUP[6] (
+      ∃ ENTITY[7] (公家(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+       ∃ ENTITY[8] (寺社(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4]))) ∧
+     など(GROUP[4], ENTITY[3]) ∧
+      から_の_注文(ENTITY[3], ENTITY[2]) ∧
+       あっ_た(EVENT[14], ENTITY[石山本願寺]) ∧ に(EVENT[14]) = ENTITY[大坂] ∧
+        の_障壁画(ENTITY[石山本願寺], ENTITY[12]) ∧
+         こと(SITUATION[10], 手掛け_た(EVENT[15], ENTITY[元信], ENTITY[12]) ∧ で(EVENT[15]) = ENTITY[11]) ∧
+          記録(ENTITY[16]) ∧
+           past(EVENT[14]) ∧
+            past(EVENT[15]) ∧
+             CONJ_が(応え(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[2] ∧
+                   分かっ_て_いる(EVENT[17], SITUATION[10]) ∧ から(EVENT[17]) = ENTITY[16],
+              ¬ ∃ EVENT[19] 現存する.0(EVENT[19], ENTITY[18])))
+
+# ::id 36_wikipedia_KYOTO_CLT_00002,36;NJ
+# ::snt 元信 は 晩年 に は 「 越前守 」 を 名乗り 、 また 「 法眼 （ ほうげん ） 」 という 僧位 を 与え られ た こと から 、 後世 に は 「 古法眼 」 「 越前法眼 」 など と 称さ れ て いる 。
+∃ SITUATION[3] ENTITY[4] GROUP[8] ENTITY[7] EVENT[2] EVENT[5] EVENT[9] ENTITY[1] ENTITY[6] (
+ 晩年(ENTITY[1]) ∧
+  後世(ENTITY[6]) ∧
+   past(EVENT[5]) ∧
+    namely_-ENTITY-(ENTITY[ほうげん], ENTITY[法眼]) ∧
+     という_僧位(ENTITY[法眼], ENTITY[4]) ∧
+      こと(SITUATION[3], 与え_た(EVENT[5], _, ENTITY[4])) ∧
+       is_element_of(ENTITY[古法眼], GROUP[8]) ∧ is_element_of(ENTITY[越前法眼], GROUP[8]) ∧
+        など(GROUP[8], ENTITY[7]) ∧
+         CONJ_また(名乗り(EVENT[2], ENTITY[元信], ENTITY[越前守]) ∧ に(EVENT[2]) = ENTITY[1],
+          称さ_て_いる(EVENT[9], _, ENTITY[元信], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[6] ∧
+           から(EVENT[9]) = SITUATION[3]))
+
+# ::id 37_wikipedia_KYOTO_CLT_00002,37;NJ
+# ::snt 作品 の レパートリー は 幅広く 、 障壁画 の ほか 、 寺社 の 縁起 絵巻 、 絵馬 、 大和絵 風 の 金屏風 、 肖像画 など も 手掛け て いる 。
+∃ ENTITY[1] EVENT[4] EVENT[19] ENTITY[6] GROUP[8] ENTITY[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+ 作品(ENTITY[3]) ∧
+  の_レパートリー(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    障壁画(ENTITY[6]) ∧
+     の_ほか(ENTITY[6], ENTITY[5]) ∧
+      ∃ GROUP[11] ENTITY[10] ENTITY[9] (
+       寺社(ENTITY[10]) ∧
+        ∃ ENTITY[12] (縁起_絵巻(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+         ∃ ENTITY[13] (絵馬(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11])) ∧
+         equals(GROUP[11], ENTITY[9]) ∧ の(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+       ∃ GROUP[16] ENTITY[15] ENTITY[14] (
+        大和絵_風(ENTITY[15]) ∧
+         ∃ ENTITY[17] (金屏風(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])) ∧
+          ∃ ENTITY[18] (肖像画(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16])) ∧
+          equals(GROUP[16], ENTITY[14]) ∧ の(ENTITY[15], ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[8])) ∧
+       など(GROUP[8], ENTITY[7]) ∧
+        幅広く(EVENT[4], ENTITY[2]) ∧ 手掛け_て_いる(EVENT[19], ENTITY[1], ENTITY[7]) ∧ ADV(EVENT[19]) = ENTITY[5])
+
+# ::id 38_wikipedia_KYOTO_CLT_00002,38;NJ
+# ::snt 元信 は 父 正信 の 得意 と し た 漢画 、 水墨画 に 大和絵 の 画法 を 取り入れ 、 襖 、 屏風 など の 装飾的 な 大 画面 を 得意 と し 、 狩野派 様式 の 基礎 を 築い た 。
+∃ ATTRIB[18] ATTRIB[17] EVENT[5] EVENT[11] EVENT[20] EVENT[23] ENTITY[3] ENTITY[4] GROUP[6] ENTITY[10] ENTITY[9] ENTITY[1] GROUP[14] ENTITY[13] ENTITY[19] ENTITY[12] ENTITY[22] ENTITY[21] (
+ 父(ENTITY[3]) ∧
+  namely_-ENTITY-(ENTITY[3], ENTITY[正信]) ∧
+   得意(ENTITY[4]) ∧
+    ∃ ENTITY[7] (漢画(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+     ∃ ENTITY[8] (水墨画(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+     し_た(EVENT[5], ENTITY[正信], ENTITY[1], ENTITY[4]) ∧ equals(GROUP[6], ENTITY[1]) ∧
+      大和絵(ENTITY[10]) ∧
+       の_画法(ENTITY[10], ENTITY[9]) ∧
+        ∃ ENTITY[15] (襖(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])) ∧
+         ∃ ENTITY[16] (屏風(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14])) ∧
+         など(GROUP[14], ENTITY[13]) ∧
+          装飾的_な(ATTRIB[17]) ∧
+           大(ATTRIB[18]) ∧
+            ATTRIBUTE_画面(ATTRIB[18], ENTITY[12]) ∧ ATTRIBUTE__画面(ATTRIB[17], ENTITY[12]) ∧ の_画面(ENTITY[13], ENTITY[12]) ∧
+             得意(ENTITY[19]) ∧
+              狩野派_様式(ENTITY[22]) ∧
+               の_基礎(ENTITY[22], ENTITY[21]) ∧
+                past(EVENT[5]) ∧
+                 past(EVENT[23]) ∧
+                  取り入れ(EVENT[11], ENTITY[元信], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[1] ∧
+                   し(EVENT[20], ENTITY[元信], ENTITY[12], ENTITY[19]) ∧ 築い_た(EVENT[23], ENTITY[元信], ENTITY[21]))
+
+# ::id 39_wikipedia_KYOTO_CLT_00002,39;NJ
+# ::snt また 、 書道 の 楷書 、 行書 、 草書 に ならっ て 、 絵画 における 「 真体 、 行体 、 草体 」 という 画体 の 概念 を 確立 し 、 近世 障壁画 の 祖 と も 言わ れ て いる 。
+∃ ENTITY[1] EVENT[8] EVENT[15] EVENT[16] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[10] GROUP[14] ENTITY[13] ENTITY[12] ENTITY[11] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  書道(ENTITY[3]) ∧
+   ∃ ENTITY[5] (楷書(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (行書(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    ∃ ENTITY[7] (草書(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+    equals(GROUP[4], ENTITY[2]) ∧ の(ENTITY[3], ENTITY[2]) ∧
+     近世_障壁画(ENTITY[10]) ∧
+      の_祖(ENTITY[10], ENTITY[9]) ∧
+       絵画(ENTITY[13]) ∧
+        is_element_of(ENTITY[真体], GROUP[14]) ∧ is_element_of(ENTITY[行体], GROUP[14]) ∧ is_element_of(ENTITY[草体], GROUP[14]) ∧
+         という_画体(GROUP[14], ENTITY[12]) ∧ における_画体(ENTITY[13], ENTITY[12]) ∧
+          の_概念(ENTITY[12], ENTITY[11]) ∧
+           CONJ_te(ならっ_て(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[2],
+            確立する.0(EVENT[15], ENTITY[9], ENTITY[11]) ∧ 言わ_て_いる(EVENT[16], _, ENTITY[1], ENTITY[9])))
+
+# ::id 40_wikipedia_KYOTO_CLT_00002,40;NJ
+# ::snt 安土桃山 時代
+∃ EVENT[2] ENTITY[1] (安土桃山_時代(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 41_wikipedia_KYOTO_CLT_00002,41;NJ
+# ::snt 元信 に は 宗信 、 秀頼 、 直信 の 3 人 の 男子 が あっ た が 、 長男 の 宗信 は 早世 し た ため 、 宗家 を 継い だ の は 三男 の 直信 （ 1519-1592 ） で あっ た 。
+∃ SITUATION[5] EVENT[4] EVENT[7] EVENT[14] ENTITY[3] GROUP[2] ENTITY[1] ENTITY[13] ENTITY[12] EVENT[11] ENTITY[6] ENTITY[10] ENTITY[8] (
+ 長男(ENTITY[6]) ∧
+  の_xxx(ENTITY[6], ENTITY[宗信]) ∧
+   宗家(ENTITY[10]) ∧
+    継い_だ(EVENT[11], ENTITY[8], ENTITY[10]) ∧ の(ENTITY[8]) ∧
+     past(EVENT[11]) ∧
+      is_element_of(ENTITY[宗信], GROUP[2]) ∧ is_element_of(ENTITY[秀頼], GROUP[2]) ∧ is_element_of(ENTITY[直信], GROUP[2]) ∧
+       CD_3_人(ENTITY[3]) ∧
+        の_男子(ENTITY[3], ENTITY[1]) ∧ の__男子(GROUP[2], ENTITY[1]) ∧
+         FACT(SITUATION[5], 早世する.0_た(EVENT[7], ENTITY[宗信])) ∧
+          三男(ENTITY[13]) ∧
+           の_xxx(ENTITY[13], ENTITY[直信]) ∧
+            CD_1519-1592(ENTITY[12]) ∧
+             namely_-ENTITY-(ENTITY[12], ENTITY[直信]) ∧
+              past(EVENT[4]) ∧
+               past(EVENT[7]) ∧
+                past(EVENT[14]) ∧
+                 CONJ_が(あっ_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[元信],
+                  で_あっ_た(EVENT[14], ENTITY[8], ENTITY[直信]) ∧ ため(EVENT[14]) = SITUATION[5]))
+
+# ::id 42_wikipedia_KYOTO_CLT_00002,42;NJ
+# ::snt なぜ 二男 の 秀頼 でなく 三男 の 直信 に 家督 を 継が せ た の か は 定か で ない 。
+∃ SITUATION[1] (
+ か(SITUATION[1],
+  QUEST(∃ SITUATION[9] EVENT[8] EVENT[6] ENTITY[7] GROUP[3] ? ENTITY[2] (
+        CONJ_でなく(∃ ENTITY[4] (二男(ENTITY[4]) ∧ の_xxx(ENTITY[4], ENTITY[秀頼]) ∧ is_element_of(ENTITY[秀頼], GROUP[3])),
+         ∃ ENTITY[5] (三男(ENTITY[5]) ∧ の_xxx(ENTITY[5], ENTITY[直信]) ∧ is_element_of(ENTITY[直信], GROUP[3]))) ∧
+         家督(ENTITY[7]) ∧
+          is_ADV(SITUATION[9], ENTITY[2]) ∧
+           past(EVENT[6]) ∧
+            FACT(SITUATION[9],
+             せ_た_の(EVENT[6], _, GROUP[3], 継が(EVENT[8], GROUP[3], ENTITY[7])))))) ∧
+  ¬ ∃ EVENT[10] 定か_で(EVENT[10], SITUATION[1]))
+
+# ::id 43_wikipedia_KYOTO_CLT_00002,43;NJ
+# ::snt 直信 は 、 道名 の 狩野 松栄 の 名 で 広く 知ら れ 、 室町 から 桃山 に 至る 時代 に 活動 し た 。
+∃ EVENT[3] EVENT[7] EVENT[8] ENTITY[2] ENTITY[1] ENTITY[5] (
+ 道名(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[狩野_松栄]) ∧
+   の_名(ENTITY[狩野_松栄], ENTITY[1]) ∧
+    至る(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[桃山] ∧ から(EVENT[7]) = ENTITY[室町] ∧
+     時代(ENTITY[5]) ∧
+     ADV_広く(EVENT[3]) ∧
+      past(EVENT[8]) ∧
+       知ら(EVENT[3], _, ENTITY[直信]) ∧ で(EVENT[3]) = ENTITY[1] ∧
+        活動する.0_た(EVENT[8], ENTITY[直信]) ∧ に(EVENT[8]) = ENTITY[5])
+
+# ::id 44_wikipedia_KYOTO_CLT_00002,44;NJ
+# ::snt 代表作 として は 、 大徳寺 に 残る 巨大 な 『 涅槃図 』 （ 縦 約6 m ） が ある 。
+∃ ATTRIB[3] ENTITY[2] EVENT[5] EVENT[6] ENTITY[1] (
+ 代表作(ENTITY[1]) ∧
+  残る(EVENT[5], ENTITY[涅槃図]) ∧ に(EVENT[5]) = ENTITY[大徳寺] ∧
+   巨大_な(ATTRIB[3]) ∧
+    ATTRIBUTE_xxx(ATTRIB[3], ENTITY[涅槃図]) ∧
+     (CD_約6_m(ENTITY[2]), 縦(ENTITY[2])) ∧
+      namely_-ENTITY-(ENTITY[2], ENTITY[涅槃図]) ∧ ある(EVENT[6], ENTITY[涅槃図]) ∧ として(EVENT[6]) = ENTITY[1])
+
+# ::id 45_wikipedia_KYOTO_CLT_00002,45;NJ
+# ::snt また 、 父 ・ 元信 とともに 石山本願寺 障壁画 制作 に 参加 し て おり 、 大徳寺 聚光院 （ じゅこういん ） 障壁画 制作 に は 息子 の 永徳 とともに 参加 し て いる が 、 父 ・ 元信 と 息子 ・ 永徳 が それぞれに 高名 で ある ため に 、 やや 地味 な 存在 と なっ て いる 。
+∃ ATTRIB[15] SITUATION[8] ENTITY[1] EVENT[4] EVENT[7] EVENT[13] EVENT[16] ENTITY[2] ENTITY[3] ENTITY[6] GROUP[9] ENTITY[14] ENTITY[5] (
+ 大徳寺_聚光院_障壁画_制作(ENTITY[5]) ∧
+  namely_-ENTITY-(ENTITY[じゅこういん], ENTITY[5]) ∧
+   ENTITY[1] = *pro* ∧
+    父(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[元信]) ∧
+      石山本願寺_障壁画_制作(ENTITY[3]) ∧
+       息子(ENTITY[6]) ∧
+        の_xxx(ENTITY[6], ENTITY[永徳]) ∧
+         CONJ_と(∃ ENTITY[10] (父(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[元信]) ∧ is_element_of(ENTITY[元信], GROUP[9])),
+          ∃ ENTITY[11] (息子(ENTITY[11]) ∧ namely_-ENTITY-(ENTITY[11], ENTITY[永徳]) ∧ is_element_of(ENTITY[永徳], GROUP[9]))) ∧
+          ため(SITUATION[8], それぞれに ENTITY[12] (is_element_of(ENTITY[12], GROUP[9]), 高名_で_ある(EVENT[13], ENTITY[12]))) ∧
+           やや_地味_な(ATTRIB[15]) ∧
+            ATTRIBUTE_存在(ATTRIB[15], ENTITY[14]) ∧
+             CONJ_が(参加する.0_て_おり(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+                   とともに(EVENT[4]) = ENTITY[元信] ∧
+                   参加する.0_て_いる(EVENT[7], ENTITY[1]) ∧ とともに(EVENT[7]) = ENTITY[永徳] ∧
+                    に(EVENT[7]) = ENTITY[5],
+              なっ_て_いる(EVENT[16], ENTITY[1]) ∧ に(EVENT[16]) = SITUATION[8] ∧
+               と(EVENT[16]) = ENTITY[14]))
+
+# ::id 46_wikipedia_KYOTO_CLT_00002,46;NJ
+# ::snt 松栄 の 嫡男 ・ 狩野 永徳 （ 1543-1590 ） は 州信 （ くにのぶ ） と も 称し 、 桃山 時代 の 日本 画壇 を 代表 する 人物 で ある 。
+∃ EVENT[3] EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ の_嫡男(ENTITY[松栄], ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[2], ENTITY[狩野_永徳]) ∧
+   CD_1543-1590(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[狩野_永徳]) ∧
+     namely_-ENTITY-(ENTITY[くにのぶ], ENTITY[州信]) ∧
+      桃山_時代(ENTITY[7]) ∧
+       の_日本_画壇(ENTITY[7], ENTITY[6]) ∧
+        代表する.0(EVENT[8], ENTITY[4], ENTITY[6]) ∧ 人物(ENTITY[4]) ∧
+         称し(EVENT[3], ENTITY[狩野_永徳], ENTITY[州信]) ∧ で_ある(EVENT[9], ENTITY[狩野_永徳], ENTITY[4]))
+
+# ::id 47_wikipedia_KYOTO_CLT_00002,47;NJ
+# ::snt 織田 信長 、 豊臣 秀吉 といった 乱世 を 生き抜い た 権力者 の 意向 に 敏感 に 応え 、 多く の 障壁画 を 描い た が 、 これら 障壁画 は 建物 とともに 消滅 し 、 現存 する 永徳 の 作品 は 比較的 少ない 。
+∃ ENTITY[1] ENTITY[12] EVENT[7] EVENT[8] EVENT[14] EVENT[18] ENTITY[6] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[13] EVENT[17] ENTITY[15] (
+ ENTITY[12] = これら{ENTITY[豊臣_秀吉], ENTITY[織田_信長], ENTITY[2], ENTITY[3], ENTITY[6]} ∧
+  障壁画(ENTITY[12]) ∧
+   現存する.0(EVENT[17], ENTITY[15]) ∧ の_作品(ENTITY[永徳], ENTITY[15]) ∧
+    ENTITY[1] = *pro* ∧
+     is_element_of(ENTITY[織田_信長], GROUP[4]) ∧ is_element_of(ENTITY[豊臣_秀吉], GROUP[4]) ∧
+      乱世(ENTITY[6]) ∧
+       生き抜い_た(EVENT[7], ENTITY[3], ENTITY[6]) ∧ といった_権力者(GROUP[4], ENTITY[3]) ∧
+        の_意向(ENTITY[3], ENTITY[2]) ∧
+         建物(ENTITY[13]) ∧
+          past(EVENT[7]) ∧
+           ADV_敏感_に(EVENT[8]) ∧
+            ADV_比較的(EVENT[18]) ∧
+             CONJ_が(応え(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[2] ∧
+                   多く_の ENTITY[10] (障壁画(ENTITY[10]), ∃ EVENT[11] (past(EVENT[11]) ∧ 描い_た(EVENT[11], ENTITY[1], ENTITY[10]))),
+              消滅する.0(EVENT[14], ENTITY[12]) ∧ とともに(EVENT[14]) = ENTITY[13] ∧ 少ない(EVENT[18], ENTITY[15])))
+
+# ::id 48_wikipedia_KYOTO_CLT_00002,48;NJ
+# ::snt 現存 する 代表作 の 一 つ で ある 大徳寺 聚光院 方丈 障壁画 は 永徳 と 父 ・ 松栄 の 分担 制作 で ある が 、 父 ・ 松栄 は 方丈 南 側 正面 の 主要 な 部屋 の 襖絵 を 息子 の 永徳 に まかせ 、 自分 は 脇役 に 回っ て いる 。
+∃ ATTRIB[16] ENTITY[19] EVENT[11] EVENT[18] EVENT[21] GROUP[9] ENTITY[8] ENTITY[15] ENTITY[14] ENTITY[17] ENTITY[13] ENTITY[20] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[12] EVENT[6] EVENT[7] (
+ 現存する.0(EVENT[6], ENTITY[4]) ∧ 代表作(ENTITY[4]) ∧
+  (CD_一_つ(ENTITY[3]), の(ENTITY[4], ENTITY[3])) ∧
+   で_ある(EVENT[7], ENTITY[1], ENTITY[3]) ∧ 大徳寺_聚光院_方丈_障壁画(ENTITY[1]) ∧
+    父(ENTITY[12]) ∧
+     namely_-ENTITY-(ENTITY[12], ENTITY[松栄]) ∧
+      ENTITY[19] = 自分{ENTITY[13], ENTITY[17], ENTITY[14], ENTITY[15], ENTITY[松栄], ENTITY[永徳], ENTITY[12], ENTITY[8], ENTITY[1], ENTITY[3], ENTITY[4]} ∧
+       CONJ_と(is_element_of(ENTITY[永徳], GROUP[9]),
+        ∃ ENTITY[10] (父(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[松栄]) ∧ is_element_of(ENTITY[松栄], GROUP[9]))) ∧
+        の_分担_制作(GROUP[9], ENTITY[8]) ∧
+         方丈_南_側_正面(ENTITY[15]) ∧
+          主要_な(ATTRIB[16]) ∧
+           の_部屋(ENTITY[15], ENTITY[14]) ∧ ATTRIBUTE_部屋(ATTRIB[16], ENTITY[14]) ∧
+            の_襖絵(ENTITY[14], ENTITY[13]) ∧
+             息子(ENTITY[17]) ∧
+              の_xxx(ENTITY[17], ENTITY[永徳]) ∧
+               脇役(ENTITY[20]) ∧
+                CONJ_が(で_ある(EVENT[11], ENTITY[1], ENTITY[8]),
+                 まかせ(EVENT[18], ENTITY[松栄], ENTITY[13], ENTITY[永徳]) ∧
+                  回っ_て_いる(EVENT[21], ENTITY[19]) ∧ に(EVENT[21]) = ENTITY[20]))
+
+# ::id 49_wikipedia_KYOTO_CLT_00002,49;NJ
+# ::snt 封建 社会 の 当時 に あっ て は 、 家門 の 長 が 主要 な 部屋 の 襖絵 を 描く の が 常識 で あり 、 この 障壁画 制作 時 に は 松栄 は 才能 豊か な 永徳 に 家督 を 譲っ て 、 自身 は すでに 隠居 の 身 で あっ た と 考証 さ れ て いる 。
+∃ SITUATION[9] ATTRIB[7] SITUATION[2] ENTITY[1] ENTITY[22] EVENT[8] EVENT[12] EVENT[14] EVENT[19] EVENT[21] EVENT[25] EVENT[15] ENTITY[4] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[13] ENTITY[18] ENTITY[20] ENTITY[24] ENTITY[23] ENTITY[16] (
+ 障壁画_制作_時(ENTITY[16]) ∧
+  ENTITY[22] = 自身{ENTITY[松栄], ENTITY[永徳], ENTITY[20], ENTITY[18], ENTITY[1], ENTITY[13], ENTITY[10], ENTITY[11], ENTITY[3], ENTITY[5], ENTITY[6], ENTITY[4]} ∧
+   ENTITY[1] = *pro* ∧
+    家門(ENTITY[4]) ∧
+     の_長(ENTITY[4], ENTITY[3]) ∧
+      主要_な(ATTRIB[7]) ∧
+       ATTRIBUTE_部屋(ATTRIB[7], ENTITY[6]) ∧
+        の_襖絵(ENTITY[6], ENTITY[5]) ∧
+         の(SITUATION[2], 描く(EVENT[8], ENTITY[3], ENTITY[5])) ∧
+          封建_社会(ENTITY[11]) ∧
+           の_当時(ENTITY[11], ENTITY[10]) ∧
+            FACT(SITUATION[9], あっ_て(EVENT[12], SITUATION[2]) ∧ に(EVENT[12]) = ENTITY[10]) ∧
+             常識(ENTITY[13]) ∧
+              才能(ENTITY[18]) ∧
+               豊か_な(EVENT[19], (ENTITY[永徳], ENTITY[18])) ∧
+                家督(ENTITY[20]) ∧
+                 隠居(ENTITY[24]) ∧
+                  の_身(ENTITY[24], ENTITY[23]) ∧
+                   ADV_すでに(EVENT[25]) ∧
+                    before(EVENT[15], EVENT[25]) ∧
+                     で_あり(EVENT[14], SITUATION[2], ENTITY[13]) ∧ te(EVENT[14]) = SITUATION[9] ∧
+                      考証する.0_て_いる(EVENT[15], _, ENTITY[1],
+                       CONJ_te(譲っ_て(EVENT[21], ENTITY[松栄], ENTITY[20], ENTITY[永徳]) ∧
+                             に(EVENT[21]) = ENTITY[16],
+                        で_あっ_た(EVENT[25], ENTITY[22], ENTITY[23]) ∧ に(EVENT[25]) = ENTITY[16])))
+
+# ::id 50_wikipedia_KYOTO_CLT_00002,50;NJ
+# ::snt 聚光院 方丈 障壁画 の うち 、 室中 （ しっちゅう 、 方丈 正面 中央 の 部屋 ） を 飾る 『 花鳥図 』 は 特に 評価 が 高い 。
+∃ EVENT[8] ENTITY[7] EVENT[5] ENTITY[6] ENTITY[3] ENTITY[2] ENTITY[4] (
+ 聚光院_方丈_障壁画(ENTITY[6]) ∧
+  の_xxx(ENTITY[6], ENTITY[うち]) ∧
+   namely_-ENTITY-(ENTITY[花鳥図], ENTITY[うち]) ∧
+    室中(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[しっちゅう], ENTITY[4]) ∧
+      方丈_正面_中央(ENTITY[3]) ∧
+       の_部屋(ENTITY[3], ENTITY[2]) ∧
+        namely_-ENTITY-(ENTITY[2], ENTITY[4]) ∧
+         飾る(EVENT[5], ENTITY[うち], ENTITY[4]) ∧
+          評価(ENTITY[7]) ∧ ADV_特に(EVENT[8]) ∧ 高い(EVENT[8], (ENTITY[うち], ENTITY[7])))
+
+# ::id 51_wikipedia_KYOTO_CLT_00002,51;NJ
+# ::snt その 後 、 永徳 は 天正 4-7 年 （ 1576-1579 年 ） 、 織田 信長 が 建立 し た 安土城 天守 の 障壁画 制作 に 携わっ た 。
+∃ EVENT[7] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[4] TIME[3] TIME[1] (
+ 後(TIME[1]) ∧
+  CD_天正_4-7_年(TIME[3]) ∧
+   CD_1576-1579_年(ENTITY[2]) ∧
+    namely_-TIME-(ENTITY[2], TIME[3]) ∧
+     建立する.0_た(EVENT[7], ENTITY[織田_信長], ENTITY[5]) ∧ 安土城_天守(ENTITY[5]) ∧
+      の_障壁画_制作(ENTITY[5], ENTITY[4]) ∧
+       past(EVENT[7]) ∧
+        past(EVENT[8]) ∧
+         携わっ_た(EVENT[8], ENTITY[永徳]) ∧ に(EVENT[8]) = ENTITY[4] ∧
+          is_contained_in(時間(EVENT[8]), TIME[3]) ∧ 時間(EVENT[8]) = TIME[1])
+
+# ::id 52_wikipedia_KYOTO_CLT_00002,52;NJ
+# ::snt 信長 亡き 後 は 豊臣 秀吉 の 大坂城 や 聚楽第 の 障壁画 を 制作 し 、 晩年 に は 内裏 の 障壁画 制作 に も 携わっ た 。
+∃ SITUATION[2] ENTITY[1] EVENT[3] EVENT[6] EVENT[10] GROUP[5] ENTITY[4] ENTITY[9] ENTITY[8] ENTITY[7] (
+ 晩年(ENTITY[7]) ∧
+  ENTITY[1] = *pro* ∧
+   後(SITUATION[2], 亡き(EVENT[3], ENTITY[信長])) ∧
+    CONJ_や(の_xxx(ENTITY[豊臣_秀吉], ENTITY[大坂城]) ∧ is_element_of(ENTITY[大坂城], GROUP[5]), is_element_of(ENTITY[聚楽第], GROUP[5])) ∧
+     の_障壁画(GROUP[5], ENTITY[4]) ∧
+      内裏(ENTITY[9]) ∧
+       の_障壁画_制作(ENTITY[9], ENTITY[8]) ∧
+        past(EVENT[10]) ∧
+         制作する.0(EVENT[6], ENTITY[1], ENTITY[4]) ∧
+          携わっ_た(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[8] ∧ に(EVENT[10]) = ENTITY[7] ∧
+           時間(EVENT[10]) = SITUATION[2])
+
+# ::id 53_wikipedia_KYOTO_CLT_00002,53;NJ
+# ::snt これら の 作品群 は 、 当時 の 日記 や 記録類 に その 斬新さ を 高く 評価 さ れ て おり 、 現存 し て いれ ば 永徳 の 代表作 と なっ た であろう が 、 建物 とともに 障壁画 も 消滅 し て しまっ た 。
+∃ ENTITY[2] EVENT[16] ENTITY[15] ENTITY[14] ENTITY[8] ENTITY[1] (
+ ENTITY[2] = これら ∧
+  の_作品群(ENTITY[2], ENTITY[1]) ∧
+   斬新さ(ENTITY[8]) ∧
+    建物(ENTITY[14]) ∧
+     障壁画(ENTITY[15]) ∧
+      past(EVENT[16]) ∧
+       CONJ_が(MD_であろう(∃ EVENT[9] GROUP[5] ENTITY[4] ENTITY[3] (
+                  当時(ENTITY[4]) ∧
+                   CONJ_や(∃ ENTITY[6] (日記(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+                    ∃ ENTITY[7] (記録類(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+                    equals(GROUP[5], ENTITY[3]) ∧ の(ENTITY[4], ENTITY[3]) ∧
+                     ADV_高く(EVENT[9]) ∧
+                      評価する.0_て_おり(EVENT[9], (_, ENTITY[8]), ENTITY[1]) ∧
+                       に(EVENT[9]) = ENTITY[3] ∧
+                       ∀ EVENT[11] CND_ば(現存する.0_て_いれ(EVENT[11], ENTITY[1]),
+                           ∃ EVENT[13] ENTITY[12] (
+                            の_代表作(ENTITY[永徳], ENTITY[12]) ∧
+                             past(EVENT[13]) ∧
+                              なっ_た(EVENT[13], ENTITY[1]) ∧ と(EVENT[13]) = ENTITY[12])))),
+        消滅する.0_て_しまっ_た(EVENT[16], ENTITY[15]) ∧ とともに(EVENT[16]) = ENTITY[14]))
+
+# ::id 54_wikipedia_KYOTO_CLT_00002,54;NJ
+# ::snt 現存 する 永徳 の 代表作 として は 、 前述 の 聚光院 方丈 障壁画 の ほか 、 旧御物 の 『 唐獅子図屏風 』 、 上杉氏 伝来 の 『 洛中洛外図屏風 』 が 名高く 、 東京国立博物館 の 『 檜図屏風 』 も 古来 永徳筆 と 伝える もの で ある 。
+∃ SITUATION[11] EVENT[10] EVENT[13] EVENT[14] ENTITY[6] ENTITY[5] GROUP[7] ENTITY[4] ENTITY[12] ENTITY[1] EVENT[3] (
+ 現存する.0(EVENT[3], ENTITY[1]) ∧ の_代表作(ENTITY[永徳], ENTITY[1]) ∧
+  前述(ENTITY[6]) ∧
+   の_聚光院_方丈_障壁画(ENTITY[6], ENTITY[5]) ∧
+    の_ほか(ENTITY[5], ENTITY[4]) ∧
+     ∃ ENTITY[8] (旧御物(ENTITY[8]) ∧ の_xxx(ENTITY[8], ENTITY[唐獅子図屏風]) ∧ is_element_of(ENTITY[唐獅子図屏風], GROUP[7])) ∧
+      ∃ ENTITY[9] (上杉氏_伝来(ENTITY[9]) ∧ の_xxx(ENTITY[9], ENTITY[洛中洛外図屏風]) ∧ is_element_of(ENTITY[洛中洛外図屏風], GROUP[7])) ∧
+      の_xxx(ENTITY[東京国立博物館], ENTITY[檜図屏風]) ∧
+       古来(ENTITY[12]) ∧
+        もの(SITUATION[11],
+         伝える(EVENT[13], ENTITY[檜図屏風]) ∧ と(EVENT[13]) = ENTITY[永徳筆] ∧ ADV(EVENT[13]) = ENTITY[12]) ∧
+         名高く(EVENT[10], GROUP[7]) ∧ ADV(EVENT[10]) = ENTITY[4] ∧ として(EVENT[10]) = ENTITY[1] ∧
+          で_ある(EVENT[14], ENTITY[檜図屏風], SITUATION[11]))
+
+# ::id 55_wikipedia_KYOTO_CLT_00002,55;NJ
+# ::snt 永徳 は 細画 （ さいが ） と 大画 （ たいが ） の いずれ を も 得意 と し た が 、 大量 の 障壁画 の 注文 を こなす ため に 、 大画 様式 で 描か ざるをえなかっ た と いう 。
+∃ SITUATION[6] EVENT[10] EVENT[1] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[11] (
+ 大量(ENTITY[9]) ∧
+  の_障壁画(ENTITY[9], ENTITY[8]) ∧
+   の_注文(ENTITY[8], ENTITY[7]) ∧
+    ため(SITUATION[6], こなす(EVENT[10], ENTITY[永徳], ENTITY[7])) ∧
+     大画_様式(ENTITY[11]) ∧
+      いう(EVENT[1],
+       CONJ_が(も GROUP[3] ENTITY[2] (
+             (の(GROUP[3], ENTITY[2]) ∧
+              CONJ_と(namely_-ENTITY-(ENTITY[さいが], ENTITY[細画]) ∧ is_element_of(ENTITY[細画], GROUP[3]),
+               namely_-ENTITY-(ENTITY[たいが], ENTITY[大画]) ∧ is_element_of(ENTITY[大画], GROUP[3]))),
+             ∃ EVENT[5] ENTITY[4] (
+              得意(ENTITY[4]) ∧
+               before(EVENT[1], EVENT[5]) ∧ し_た(EVENT[5], ENTITY[永徳], ENTITY[2], ENTITY[4]))),
+        MD_ざるをえなかっ(∃ EVENT[12] (
+              before(EVENT[1], EVENT[12]) ∧
+               描か_た(EVENT[12], ENTITY[永徳]) ∧ で(EVENT[12]) = ENTITY[11] ∧
+                に(EVENT[12]) = SITUATION[6])))))
+
+# ::id 56_wikipedia_KYOTO_CLT_00002,56;NJ
+# ::snt 細画 と は 細部 まで 細かく 描き 込ん だ 絵 、 大画 は 豪放 な 作風 の 絵 と 解釈 さ れ て いる 。
+∃ ATTRIB[8] SITUATION[1] EVENT[3] EVENT[5] EVENT[9] ENTITY[2] ENTITY[7] ENTITY[6] (
+ 細部(ENTITY[2]) ∧
+  絵(SITUATION[1], 描き_込ん_だ(EVENT[3], ENTITY[細画]) ∧ まで(EVENT[3]) = ENTITY[2]) ∧
+   豪放_な(ATTRIB[8]) ∧
+    ATTRIBUTE_作風(ATTRIB[8], ENTITY[7]) ∧
+     の_絵(ENTITY[7], ENTITY[6]) ∧
+      ADV_細かく(EVENT[3]) ∧
+       xxx(EVENT[5], ENTITY[細画], SITUATION[1]) ∧
+        解釈する.0_て_いる(EVENT[9], _, ENTITY[大画]) ∧ と(EVENT[9]) = ENTITY[6])
+
+# ::id 57_wikipedia_KYOTO_CLT_00002,57;NJ
+# ::snt 近世 初期 の 狩野派 に は 他 に も 重要 な 画家 が 多い 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 近世_初期(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[狩野派]) ∧
+   他(ENTITY[2]) ∧
+    重要_な(ATTRIB[4]) ∧
+     ATTRIBUTE_画家(ATTRIB[4], ENTITY[3]) ∧
+      多い(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[2] ∧ に(EVENT[5]) = ENTITY[狩野派])
+
+# ::id 58_wikipedia_KYOTO_CLT_00002,58;NJ
+# ::snt 国宝 の 『 高雄観楓図 』 に は 「 秀頼 」 の 印 が あり 、 古来 、 狩野 元信 の 次男 ・ 狩野 秀頼 （ 生没年 未詳 ） の 作 と さ れ て いる が 、 『 高雄観楓図 』 の 筆者 の 「 秀頼 」 は 別人 で 、 元信 の 孫 にあたる 真笑 秀頼 という 絵師 だ と も 言わ れ て いる 。
+∃ SITUATION[9] ENTITY[4] EVENT[3] EVENT[8] EVENT[12] EVENT[15] EVENT[16] ENTITY[2] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[11] ENTITY[14] ENTITY[13] ENTITY[1] ENTITY[10] (
+ 国宝(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[高雄観楓図]) ∧
+   の_筆者(ENTITY[高雄観楓図], ENTITY[10]) ∧
+    の_xxx(ENTITY[10], ENTITY[秀頼]) ∧
+     の_印(ENTITY[秀頼], ENTITY[2]) ∧
+      ENTITY[4] = *pro*{ENTITY[2], ENTITY[高雄観楓図], ENTITY[秀頼], ENTITY[1]} ∧
+       古来(ENTITY[5]) ∧
+        の_次男(ENTITY[狩野_元信], ENTITY[7]) ∧
+         namely_-ENTITY-(ENTITY[7], ENTITY[狩野_秀頼]) ∧
+          の_作(ENTITY[狩野_秀頼], ENTITY[6]) ∧
+           別人(ENTITY[11]) ∧
+            の_孫(ENTITY[元信], ENTITY[14]) ∧
+             にあたる_xxx(ENTITY[14], ENTITY[真笑_秀頼]) ∧
+              という_絵師(ENTITY[真笑_秀頼], ENTITY[13]) ∧
+               と(SITUATION[9],
+                CONJ_te(で(EVENT[12], ENTITY[秀頼], ENTITY[11]), だ(EVENT[15], ENTITY[秀頼], ENTITY[13]))) ∧
+                CONJ_が(あり(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[高雄観楓図] ∧
+                      さ_て_いる(EVENT[8], _, ENTITY[4], ENTITY[6]) ∧ ADV(EVENT[8]) = ENTITY[5],
+                   (言わ_て_いる(EVENT[16], _, [_]) ∧ LINK(EVENT[16]) = SITUATION[9])))
+
+# ::id 59_wikipedia_KYOTO_CLT_00002,59;NJ
+# ::snt 狩野 宗秀 （ そうしゅう 、 1551-1601 ） は 元秀 （ もとひで ） と も 称し 永徳 の 弟 で 、 安土城 障壁画 制作 など で 永徳 の 助手 として 働い た 。
+∃ EVENT[1] EVENT[3] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[6] ENTITY[4] (
+ namely_-ENTITY-(ENTITY[そうしゅう_1551-1601], ENTITY[狩野_宗秀]) ∧
+  namely_-ENTITY-(ENTITY[もとひで], ENTITY[元秀]) ∧
+   の_弟(ENTITY[永徳], ENTITY[2]) ∧
+    安土城_障壁画_制作(ENTITY[5]) ∧
+     など(ENTITY[5], ENTITY[4]) ∧
+      の_助手(ENTITY[永徳], ENTITY[6]) ∧
+       past(EVENT[7]) ∧
+        称し(EVENT[1], ENTITY[狩野_宗秀], ENTITY[元秀]) ∧
+         CONJ_te(で(EVENT[3], ENTITY[狩野_宗秀], ENTITY[2]),
+          働い_た(EVENT[7], ENTITY[狩野_宗秀]) ∧ として(EVENT[7]) = ENTITY[6] ∧ で(EVENT[7]) = ENTITY[4]))
+
+# ::id 60_wikipedia_KYOTO_CLT_00002,60;NJ
+# ::snt 屏風 、 肖像画 など の 現存 作 が ある 。
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ ∃ ENTITY[4] (屏風(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[5] (肖像画(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+  など(GROUP[3], ENTITY[2]) ∧ の_現存_作(ENTITY[2], ENTITY[1]) ∧ ある(EVENT[6], ENTITY[1]))
+
+# ::id 61_wikipedia_KYOTO_CLT_00002,61;NJ
+# ::snt やはり 永徳 の 弟 で ある 狩野 長信 （ 1577-1654 ） は 『 花下遊楽図 』 （ 国宝 ） の 筆者 として 名高い 。
+∃ EVENT[7] ENTITY[6] ENTITY[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ の_弟(ENTITY[永徳], ENTITY[3]) ∧
+  で_ある(EVENT[4], ENTITY[狩野_長信], ENTITY[3]) ∧
+   CD_1577-1654(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[狩野_長信]) ∧
+     国宝(ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[花下遊楽図]) ∧
+       の_筆者(ENTITY[花下遊楽図], ENTITY[5]) ∧
+        ADV_やはり(EVENT[7]) ∧ 名高い(EVENT[7], ENTITY[狩野_長信]) ∧ として(EVENT[7]) = ENTITY[5])
+
+# ::id 62_wikipedia_KYOTO_CLT_00002,62;NJ
+# ::snt 狩野家 直系 以外 の 絵師 として は 、 川越 ・ 喜多院 の 『 職人尽図屏風 』 の 筆者 で ある 狩野 吉信 （ 1552-1640 ） 、 京都 ・ 豊国神社 （ 京都市 ） の 『 豊国祭図屏風 』 の 筆者 で ある 狩野 内膳 （ 1570-1616 ） ら が 知ら れる 。
+∃ EVENT[13] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 狩野家_直系_以外(ENTITY[2]) ∧
+  の_絵師(ENTITY[2], ENTITY[1]) ∧
+   ∃ EVENT[8] ENTITY[7] ENTITY[5] (
+    の_xxx(ENTITY[川越_喜多院], ENTITY[職人尽図屏風]) ∧
+     の_筆者(ENTITY[職人尽図屏風], ENTITY[7]) ∧
+      で_ある(EVENT[8], ENTITY[狩野_吉信], ENTITY[7]) ∧
+       CD_1552-1640(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[5], ENTITY[狩野_吉信]) ∧ is_element_of(ENTITY[狩野_吉信], GROUP[4])) ∧
+    ∃ EVENT[12] ENTITY[11] ENTITY[9] (
+     namely_-ENTITY-(ENTITY[京都市], ENTITY[京都_豊国神社]) ∧
+      の_xxx(ENTITY[京都_豊国神社], ENTITY[豊国祭図屏風]) ∧
+       の_筆者(ENTITY[豊国祭図屏風], ENTITY[11]) ∧
+        で_ある(EVENT[12], ENTITY[狩野_内膳], ENTITY[11]) ∧
+         CD_1570-1616(ENTITY[9]) ∧ namely_-ENTITY-(ENTITY[9], ENTITY[狩野_内膳]) ∧ is_element_of(ENTITY[狩野_内膳], GROUP[4])) ∧
+    equals_ら(GROUP[4], ENTITY[3]) ∧ 知ら(EVENT[13], _, ENTITY[3]) ∧ として(EVENT[13]) = ENTITY[1])
+
+# ::id 63_wikipedia_KYOTO_CLT_00002,63;NJ
+# ::snt 江戸 時代 前期
+∃ EVENT[2] ENTITY[1] (江戸_時代_前期(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 64_wikipedia_KYOTO_CLT_00002,64;NJ
+# ::snt 狩野 永徳 は 父 の 松栄 （ 直信 ） に 先立っ て 48 歳 で 没し た 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ 父(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[松栄]) ∧
+   namely_-ENTITY-(ENTITY[直信], ENTITY[松栄]) ∧
+    CD_48_歳(ENTITY[3]) ∧
+     past(EVENT[4]) ∧
+      CONJ_te(先立っ_て(EVENT[2], ENTITY[狩野_永徳]) ∧ に(EVENT[2]) = ENTITY[松栄],
+       没し_た(EVENT[4], ENTITY[狩野_永徳]) ∧ で(EVENT[4]) = ENTITY[3]))
+
+# ::id 65_wikipedia_KYOTO_CLT_00002,65;NJ
+# ::snt その 後 を 継い だ の は 永徳 の 長男 ・ 狩野 光信 （ 1565？-1608 ） と 次男 ・ 狩野 孝信 （ 1571-1618 ） で ある 。
+∃ EVENT[10] GROUP[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ 後(ENTITY[3]) ∧
+  継い_だ(EVENT[4], ENTITY[1], ENTITY[3]) ∧ の(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    CONJ_と(∃ ENTITY[7] ENTITY[6] (
+          の_長男(ENTITY[永徳], ENTITY[7]) ∧
+           namely_-ENTITY-(ENTITY[7], ENTITY[狩野_光信]) ∧
+            CD_1565？-1608(ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[6], ENTITY[狩野_光信]) ∧ is_element_of(ENTITY[狩野_光信], GROUP[5])),
+     ∃ ENTITY[9] ENTITY[8] (
+      次男(ENTITY[9]) ∧
+       namely_-ENTITY-(ENTITY[9], ENTITY[狩野_孝信]) ∧
+        CD_1571-1618(ENTITY[8]) ∧ namely_-ENTITY-(ENTITY[8], ENTITY[狩野_孝信]) ∧ is_element_of(ENTITY[狩野_孝信], GROUP[5]))) ∧
+     で_ある(EVENT[10], ENTITY[1], GROUP[5]))
+
+# ::id 66_wikipedia_KYOTO_CLT_00002,66;NJ
+# ::snt 光信 は 、 園城寺 勧学院 客殿 障壁画 など を 残し 、 永徳 と は 対照的 な 、 大和絵 風 の 繊細 な 画風 を 特色 と し た 。
+∃ ATTRIB[8] EVENT[3] EVENT[6] EVENT[10] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[9] ENTITY[4] (
+ 園城寺_勧学院_客殿_障壁画(ENTITY[2]) ∧
+  など(ENTITY[2], ENTITY[1]) ∧
+   大和絵_風(ENTITY[7]) ∧
+    繊細_な(ATTRIB[8]) ∧
+     対照的_な(EVENT[6], ENTITY[4]) ∧ と(EVENT[6]) = ENTITY[永徳] ∧
+      ATTRIBUTE_画風(ATTRIB[8], ENTITY[4]) ∧ の_画風(ENTITY[7], ENTITY[4]) ∧
+      特色(ENTITY[9]) ∧
+       past(EVENT[10]) ∧
+        残し(EVENT[3], ENTITY[光信], ENTITY[1]) ∧ し_た(EVENT[10], ENTITY[光信], ENTITY[4], ENTITY[9]))
+
+# ::id 67_wikipedia_KYOTO_CLT_00002,67;NJ
+# ::snt こうした 画風 が 制作 当時 の 一般的 な 好み に 合致 し なかっ た ため か 、 『 本朝画史 』 など の 近世 の 画論 は 一様 に 光信 を 低く 評価 し て いる 。
+∃ SITUATION[2] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[8] (
+ 画風(ENTITY[3]) ∧
+  など(ENTITY[本朝画史], ENTITY[9]) ∧
+   近世(ENTITY[10]) ∧
+    の_画論(ENTITY[10], ENTITY[8]) ∧ の__画論(ENTITY[9], ENTITY[8]) ∧
+     ため(SITUATION[2],
+      ¬ ∃ ATTRIB[6] EVENT[7] ENTITY[5] ENTITY[4] (
+            制作_当時(ENTITY[5]) ∧
+             一般的_な(ATTRIB[6]) ∧
+              ATTRIBUTE_好み(ATTRIB[6], ENTITY[4]) ∧ の_好み(ENTITY[5], ENTITY[4]) ∧
+               past(EVENT[7]) ∧ 合致する.0_た(EVENT[7], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[4])) ∧
+      か SITUATION[1] (SITUATION[1] = SITUATION[2],
+       ∃ EVENT[11] (
+        ADV_一様_に(EVENT[11]) ∧
+         ADV_低く(EVENT[11]) ∧ 評価する.0_て_いる(EVENT[11], ENTITY[8], ENTITY[光信]) ∧ LINK(EVENT[11]) = SITUATION[1])))
+
+# ::id 68_wikipedia_KYOTO_CLT_00002,68;NJ
+# ::snt 狩野家 の 頭領 で ある 光信 が 死去 し た 時 、 その 子 の 狩野 貞信 （ 1597-1623 ） は まだ 12 歳 の 若年 で あっ た ので 、 光信 の 弟 で ある 孝信 が 狩野派 を 率いる こと と なっ た 。
+∃ SITUATION[15] SITUATION[1] EVENT[4] EVENT[5] EVENT[10] EVENT[14] EVENT[16] EVENT[17] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[13] ENTITY[7] ENTITY[6] (
+ 子(ENTITY[7]) ∧
+  の_xxx(ENTITY[7], ENTITY[狩野_貞信]) ∧
+   CD_1597-1623(ENTITY[6]) ∧
+    namely_-ENTITY-(ENTITY[6], ENTITY[狩野_貞信]) ∧
+     の_頭領(ENTITY[狩野家], ENTITY[3]) ∧
+      で_ある(EVENT[4], ENTITY[光信], ENTITY[3]) ∧
+       時(SITUATION[1], 死去する.0_た(EVENT[5], ENTITY[光信])) ∧
+        CD_12_歳(ENTITY[9]) ∧
+         の_若年(ENTITY[9], ENTITY[8]) ∧
+          の_弟(ENTITY[光信], ENTITY[13]) ∧
+           で_ある(EVENT[14], ENTITY[孝信], ENTITY[13]) ∧
+            こと(SITUATION[15], 率いる(EVENT[16], ENTITY[孝信], ENTITY[狩野派])) ∧
+             past(EVENT[5]) ∧
+              ADV_まだ(EVENT[10]) ∧
+               past(EVENT[10]) ∧
+                past(EVENT[17]) ∧
+                 CRD_ので(で_あっ_た(EVENT[10], ENTITY[狩野_貞信], ENTITY[8]),
+                  なっ_た(EVENT[17], ENTITY[孝信], SITUATION[15]) ∧ 時間(EVENT[17]) = SITUATION[1]))
+
+# ::id 69_wikipedia_KYOTO_CLT_00002,69;NJ
+# ::snt 封建 制度 の 下 で は 、 光信 の 長男 で ある 貞信 の 家系 が 宗家 と なる はず で あっ た が 、 貞信 が 27 歳 で 早世 し 後継ぎ が なかっ た ため 、 以後 、 幕末 に 至る 狩野家 の 正系 は 孝信 の 子孫 と なっ て いる 。
+∃ SITUATION[11] SITUATION[7] EVENT[6] EVENT[9] EVENT[10] EVENT[13] EVENT[15] EVENT[22] ENTITY[5] ENTITY[8] ENTITY[3] ENTITY[12] ENTITY[14] ENTITY[21] TIME[16] EVENT[20] ENTITY[2] ENTITY[1] ENTITY[19] ENTITY[17] (
+ 封建_制度(ENTITY[2]) ∧
+  の_下(ENTITY[2], ENTITY[1]) ∧
+   幕末(ENTITY[19]) ∧
+    至る(EVENT[20], ENTITY[17]) ∧ に(EVENT[20]) = ENTITY[19] ∧ の_正系(ENTITY[狩野家], ENTITY[17]) ∧
+     の_長男(ENTITY[光信], ENTITY[5]) ∧
+      で_ある(EVENT[6], ENTITY[貞信], ENTITY[5]) ∧
+       の_家系(ENTITY[貞信], ENTITY[3]) ∧
+        宗家(ENTITY[8]) ∧
+         はず(SITUATION[7], なる(EVENT[9], ENTITY[3]) ∧ と(EVENT[9]) = ENTITY[8]) ∧
+          CD_27_歳(ENTITY[12]) ∧
+           後継ぎ(ENTITY[14]) ∧
+            FACT(SITUATION[11],
+             早世する.0(EVENT[13], ENTITY[貞信]) ∧ で(EVENT[13]) = ENTITY[12] ∧
+              なかっ_た(EVENT[15], ENTITY[14])) ∧
+             以後(TIME[16]) ∧
+              の_子孫(ENTITY[孝信], ENTITY[21]) ∧
+               past(EVENT[10]) ∧
+                past(EVENT[15]) ∧
+                 CONJ_が(で_あっ_た(EVENT[10], ENTITY[3], SITUATION[7]) ∧ で(EVENT[10]) = ENTITY[1],
+                  なっ_て_いる(EVENT[22], ENTITY[17]) ∧ と(EVENT[22]) = ENTITY[21] ∧
+                   is_contained_in(時間(EVENT[22]), TIME[16]) ∧ ため(EVENT[22]) = SITUATION[11]))
+
+# ::id 70_wikipedia_KYOTO_CLT_00002,70;NJ
+# ::snt 孝信 に は 守信 （ 探幽 、 1602-1674 ） 、 狩野 尚信 （ 1607-1650 ） 、 狩野 安信 （ 1613-1685 ） の 3 人 の 男子 が あり 、 この 3 人 は それぞれ 鍛冶橋 狩野家 、 木挽町 （ こびきちょう ） 狩野家 、 中橋 狩野家 （ 宗家 ） の 祖 と なっ た 。
+∃ EVENT[6] EVENT[12] ENTITY[5] GROUP[2] ENTITY[1] GROUP[10] ENTITY[9] ENTITY[7] (
+ CD_3_人(ENTITY[7]) ∧
+  namely_-ENTITY-(ENTITY[探幽_1602-1674], ENTITY[守信]) ∧ is_element_of(ENTITY[守信], GROUP[2]) ∧
+   ∃ ENTITY[3] (CD_1607-1650(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[狩野_尚信]) ∧ is_element_of(ENTITY[狩野_尚信], GROUP[2])) ∧
+   ∃ ENTITY[4] (CD_1613-1685(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[4], ENTITY[狩野_安信]) ∧ is_element_of(ENTITY[狩野_安信], GROUP[2])) ∧
+   CD_3_人(ENTITY[5]) ∧
+    の_男子(ENTITY[5], ENTITY[1]) ∧ の__男子(GROUP[2], ENTITY[1]) ∧
+     is_element_of(ENTITY[鍛冶橋_狩野家], GROUP[10]) ∧ namely_-ENTITY-(ENTITY[こびきちょう], ENTITY[木挽町_狩野家]) ∧ is_element_of(ENTITY[木挽町_狩野家], GROUP[10]) ∧
+      ∃ ENTITY[11] (宗家(ENTITY[11]) ∧ namely_-ENTITY-(ENTITY[11], ENTITY[中橋_狩野家]) ∧ is_element_of(ENTITY[中橋_狩野家], GROUP[10])) ∧
+      の_祖(GROUP[10], ENTITY[9]) ∧
+       past(EVENT[12]) ∧
+        あり(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[孝信] ∧
+         それぞれ ENTITY[8] (ENTITY[8] = ENTITY[7], なっ_た(EVENT[12], ENTITY[8]) ∧ と(EVENT[12]) = ENTITY[9]))
+
+# ::id 71_wikipedia_KYOTO_CLT_00002,71;NJ
+# ::snt 末弟 の 安信 は 前述 の 貞信 の 養子 という 扱い で 狩野 の 宗家 を 継ぐ こと に なっ た が 、 絵師 として 最も 名高い の は 探幽 こと 守信 で ある 。
+∃ SITUATION[2] EVENT[7] EVENT[8] EVENT[14] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] EVENT[12] ENTITY[1] ENTITY[11] ENTITY[9] (
+ 末弟(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[安信]) ∧
+   絵師(ENTITY[11]) ∧
+    名高い(EVENT[12], ENTITY[9]) ∧ として(EVENT[12]) = ENTITY[11] ∧ の(ENTITY[9]) ∧
+     ADV_最も(EVENT[12]) ∧
+      前述(ENTITY[5]) ∧
+       の_xxx(ENTITY[5], ENTITY[貞信]) ∧
+        の_養子(ENTITY[貞信], ENTITY[4]) ∧
+         という_扱い(ENTITY[4], ENTITY[3]) ∧
+          の_宗家(ENTITY[狩野], ENTITY[6]) ∧
+           こと(SITUATION[2], 継ぐ(EVENT[7], ENTITY[安信], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[3]) ∧
+            こと_xxx(ENTITY[探幽], ENTITY[守信]) ∧
+             past(EVENT[8]) ∧
+              CONJ_が(なっ_た(EVENT[8], ENTITY[安信], SITUATION[2]), で_ある(EVENT[14], ENTITY[9], ENTITY[守信])))
+
+# ::id 72_wikipedia_KYOTO_CLT_00002,72;NJ
+# ::snt 守信 は 、 後 に 出家 し て 探幽斎 と 称し 、 画家 として は 狩野 探幽 の 名 で 知ら れる 。
+∃ EVENT[2] EVENT[3] EVENT[6] ENTITY[1] ENTITY[5] ENTITY[4] (
+ 画家(ENTITY[4]) ∧
+  後(ENTITY[1]) ∧
+   の_名(ENTITY[狩野_探幽], ENTITY[5]) ∧
+    CONJ_te(出家する.0_て(EVENT[2], ENTITY[守信]) ∧ に(EVENT[2]) = ENTITY[1],
+     称し(EVENT[3], ENTITY[守信], ENTITY[探幽斎])) ∧
+     知ら(EVENT[6], _, ENTITY[守信]) ∧ で(EVENT[6]) = ENTITY[5] ∧ として(EVENT[6]) = ENTITY[4])
+
+# ::id 73_wikipedia_KYOTO_CLT_00002,73;NJ
+# ::snt 後 に 江戸 に 本拠 を 移し 、 江戸 幕府 の 御用 絵師 として 、 画壇 における 狩野派 の 地位 を ますます 不動 の もの と し た 。
+∃ ENTITY[1] EVENT[4] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[8] ENTITY[10] ENTITY[9] ENTITY[7] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  後(ENTITY[2]) ∧
+   本拠(ENTITY[3]) ∧
+    江戸_幕府(ENTITY[6]) ∧
+     の_御用_絵師(ENTITY[6], ENTITY[5]) ∧
+      画壇(ENTITY[8]) ∧
+       における_xxx(ENTITY[8], ENTITY[狩野派]) ∧
+        の_地位(ENTITY[狩野派], ENTITY[7]) ∧
+         不動(ENTITY[10]) ∧
+          の_もの(ENTITY[10], ENTITY[9]) ∧
+           ADV_ますます(EVENT[11]) ∧
+            past(EVENT[11]) ∧
+             移し(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[江戸] ∧
+              に(EVENT[4]) = ENTITY[2] ∧
+              し_た(EVENT[11], ENTITY[1], ENTITY[7], ENTITY[9]) ∧ として(EVENT[11]) = ENTITY[5])
+
+# ::id 74_wikipedia_KYOTO_CLT_00002,74;NJ
+# ::snt 探幽 は 幼少時 より 画才 を 発揮 し 、 慶長 17 年 （ 1612 年 ） 、 11 歳 の 時 に 駿府 で 徳川 家康 に 対面 、 元和 （ 日本 ） 7 年 （ 1621 年 ） に は 江戸 鍛冶橋門 外 に 屋敷 を 得 て 、 以後 江戸 を 拠点 に 活動 し 、 城郭 や 大 寺院 など の 障壁画 を 精力的 に 制作 し た 。
+∃ EVENT[3] EVENT[8] EVENT[13] EVENT[22] EVENT[23] EVENT[24] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[12] ENTITY[11] GROUP[16] ENTITY[15] ENTITY[21] TIME[20] ENTITY[14] ENTITY[9] ENTITY[10] (
+ CD_元和_（_日本_）_7_年(ENTITY[10]) ∧
+  CD_1621_年(ENTITY[9]) ∧
+   namely_-ENTITY-(ENTITY[9], ENTITY[10]) ∧
+    幼少時(ENTITY[1]) ∧
+     画才(ENTITY[2]) ∧
+      CD_11_歳(ENTITY[7]) ∧
+       の_時(ENTITY[7], ENTITY[6]) ∧
+        CD_慶長_17_年(ENTITY[5]) ∧
+         namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+          CD_1612_年(ENTITY[4]) ∧
+           namely_-ENTITY-(ENTITY[4], ENTITY[6]) ∧
+            江戸_鍛冶橋門_外(ENTITY[11]) ∧
+             屋敷(ENTITY[12]) ∧
+              CONJ_や(∃ ENTITY[17] (城郭(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+               ∃ ATTRIB[19] ENTITY[18] (大(ATTRIB[19]) ∧ ATTRIBUTE_寺院(ATTRIB[19], ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+               など(GROUP[16], ENTITY[15]) ∧
+                の_障壁画(ENTITY[15], ENTITY[14]) ∧
+                 以後(TIME[20]) ∧
+                  拠点(ENTITY[21]) ∧
+                   ADV_精力的_に(EVENT[24]) ∧
+                    past(EVENT[24]) ∧
+                     発揮する.0(EVENT[3], ENTITY[探幽], ENTITY[2]) ∧ より(EVENT[3]) = ENTITY[1] ∧
+                      対面(EVENT[8], ENTITY[探幽]) ∧ に(EVENT[8]) = ENTITY[徳川_家康] ∧
+                       で(EVENT[8]) = ENTITY[駿府] ∧ に(EVENT[8]) = ENTITY[6] ∧
+                       CONJ_te(得_て(EVENT[13], ENTITY[探幽], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[11] ∧
+                             に(EVENT[13]) = ENTITY[10],
+                        xxx(EVENT[22], ENTITY[14], ENTITY[江戸], ENTITY[21]) ∧
+                         活動する.0(EVENT[23], ENTITY[14]) ∧ is_contained_in(時間(EVENT[23]), TIME[20]) ∧
+                         制作する.0_た(EVENT[24], ENTITY[探幽], ENTITY[14])))
+
+# ::id 75_wikipedia_KYOTO_CLT_00002,75;NJ
+# ::snt 探幽 の 作品 の うち 、 江戸城 と 大坂城 の 障壁画 は 建物 とともに 消滅 し た が 、 名古屋城 上洛殿 の 障壁画 （ 水墨 ） は 第二次大戦 時 に は 建物 から 取り外し て 疎開 さ せ て あっ た ため 空襲 を まぬがれ て 現存 し て おり 、 他 に 二条城 二の丸御殿 や 大徳寺 方丈 の 障壁画 が 現存 する 代表作 で ある 。
+∃ ENTITY[11] SITUATION[10] EVENT[6] EVENT[13] EVENT[15] EVENT[14] EVENT[17] EVENT[18] EVENT[24] EVENT[25] ENTITY[2] ENTITY[5] ENTITY[1] ENTITY[12] ENTITY[16] GROUP[21] ENTITY[22] ENTITY[20] ENTITY[19] GROUP[4] ENTITY[3] ENTITY[7] ENTITY[9] ENTITY[8] (
+ CONJ_と(is_element_of(ENTITY[江戸城], GROUP[4]), is_element_of(ENTITY[大坂城], GROUP[4])) ∧
+  の_障壁画(GROUP[4], ENTITY[3]) ∧
+   の_障壁画(ENTITY[名古屋城_上洛殿], ENTITY[8]) ∧
+    水墨(ENTITY[7]) ∧
+     namely_-ENTITY-(ENTITY[7], ENTITY[8]) ∧
+      第二次大戦_時(ENTITY[9]) ∧
+       の_作品(ENTITY[探幽], ENTITY[2]) ∧
+        の_うち(ENTITY[2], ENTITY[1]) ∧
+         建物(ENTITY[5]) ∧
+          ENTITY[11] = *pro*{ENTITY[9], ENTITY[7], ENTITY[名古屋城_上洛殿], ENTITY[1], ENTITY[5], ENTITY[2], ENTITY[3], ENTITY[大坂城], ENTITY[江戸城], ENTITY[探幽]} ∧
+           建物(ENTITY[12]) ∧
+            FACT(SITUATION[10],
+             CONJ_te(取り外し_て(EVENT[13], ENTITY[8], ENTITY[11]) ∧ から(EVENT[13]) = ENTITY[12],
+              せ_て_あっ_た(EVENT[14], ENTITY[8], ENTITY[11], 疎開する.0(EVENT[15], ENTITY[11])))) ∧
+             空襲(ENTITY[16]) ∧
+              他(ENTITY[19]) ∧
+               CONJ_や(is_element_of(ENTITY[二条城_二の丸御殿], GROUP[21]), is_element_of(ENTITY[大徳寺_方丈], GROUP[21])) ∧
+                の_障壁画(GROUP[21], ENTITY[20]) ∧
+                 現存する.0(EVENT[24], ENTITY[22]) ∧ 代表作(ENTITY[22]) ∧
+                  past(EVENT[6]) ∧
+                   past(EVENT[14]) ∧
+                    CONJ_が(消滅する.0_た(EVENT[6], ENTITY[3]) ∧ とともに(EVENT[6]) = ENTITY[5] ∧
+                          ADV(EVENT[6]) = ENTITY[1],
+                     CONJ_te(まぬがれ_て(EVENT[17], ENTITY[8], ENTITY[16]) ∧ ため(EVENT[17]) = SITUATION[10] ∧
+                           に(EVENT[17]) = ENTITY[9],
+                      現存する.0_て_おり(EVENT[18], ENTITY[8]) ∧ ため(EVENT[18]) = SITUATION[10] ∧
+                       に(EVENT[18]) = ENTITY[9]) ∧
+                      で_ある(EVENT[25], ENTITY[20], ENTITY[22]) ∧ に(EVENT[25]) = ENTITY[19]))
+
+# ::id 76_wikipedia_KYOTO_CLT_00002,76;NJ
+# ::snt これら 大 画面 の ほか に も 、 掛軸 、 絵巻 、 屏風 など あらゆる ジャンル の 作品 を 残し て いる 。
+∃ ATTRIB[3] ENTITY[4] ENTITY[1] EVENT[11] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = これら{ENTITY[1]} ∧
+   画面(ENTITY[4]) ∧
+    大(ATTRIB[3]) ∧
+     ATTRIBUTE_xxx(ATTRIB[3], ENTITY[4]) ∧
+      の_ほか(ENTITY[4], ENTITY[2]) ∧
+       あらゆる GROUP[7] ENTITY[6] (
+        (∃ ENTITY[8] (掛軸(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+           ∃ ENTITY[9] (絵巻(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+           ∃ ENTITY[10] (屏風(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7])) ∧ など_ジャンル(GROUP[7], ENTITY[6])),
+        の_作品(ENTITY[6], ENTITY[5])) ∧ 残し_て_いる(EVENT[11], ENTITY[1], ENTITY[5]) ∧ に(EVENT[11]) = ENTITY[2])
+
+# ::id 77_wikipedia_KYOTO_CLT_00002,77;NJ
+# ::snt 二条城 二の丸御殿 障壁画 は 25 歳 の 若描き で 、 永徳風 の 豪壮 な 画風 を 示す が 、 後年 の 大徳寺 の 障壁画 は 水墨 を 主体 と し 、 余白 を たっぷり と 取っ た 穏やか な 画風 の もの で ある 。
+∃ ATTRIB[19] ATTRIB[6] EVENT[4] EVENT[7] EVENT[12] EVENT[20] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[11] ENTITY[10] ENTITY[16] ENTITY[14] ENTITY[13] ENTITY[1] ENTITY[9] ENTITY[8] (
+ 二条城_二の丸御殿_障壁画(ENTITY[1]) ∧
+  後年(ENTITY[9]) ∧
+   の_障壁画(ENTITY[大徳寺], ENTITY[8]) ∧ の__障壁画(ENTITY[9], ENTITY[8]) ∧
+    CD_25_歳(ENTITY[3]) ∧
+     の_若描き(ENTITY[3], ENTITY[2]) ∧
+      豪壮_な(ATTRIB[6]) ∧
+       の_画風(ENTITY[永徳風], ENTITY[5]) ∧ ATTRIBUTE_画風(ATTRIB[6], ENTITY[5]) ∧
+        水墨(ENTITY[10]) ∧
+         主体(ENTITY[11]) ∧
+          余白(ENTITY[16]) ∧
+           穏やか_な(ATTRIB[19]) ∧
+            たっぷり ENTITY[17] ∃ EVENT[18] (
+             past(EVENT[18]) ∧
+              取っ_た(EVENT[18], ENTITY[14], ENTITY[16]) ∧ と(EVENT[18]) = ENTITY[17]) ∧
+             ATTRIBUTE_画風(ATTRIB[19], ENTITY[14]) ∧
+             の_もの(ENTITY[14], ENTITY[13]) ∧
+              CONJ_が(CONJ_te(で(EVENT[4], ENTITY[1], ENTITY[2]), 示す(EVENT[7], ENTITY[1], ENTITY[5])),
+               し(EVENT[12], ENTITY[8], ENTITY[10], ENTITY[11]) ∧ で_ある(EVENT[20], ENTITY[8], ENTITY[13])))
+
+# ::id 78_wikipedia_KYOTO_CLT_00002,78;NJ
+# ::snt 絵巻 や 屏風 に は 大和絵 風 の 作品 も ある 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[3] GROUP[1] (
+ 絵巻(ENTITY[2]) ∧
+  屏風(ENTITY[3]) ∧
+   CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧
+    大和絵_風(ENTITY[5]) ∧
+     の_作品(ENTITY[5], ENTITY[4]) ∧ ある(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = GROUP[1])
+
+# ::id 79_wikipedia_KYOTO_CLT_00002,79;NJ
+# ::snt 探幽 は 写生 （ スケッチ ） や 古画 の 模写 を 重視 し 、 写生図集 や 模写画集 を 多数 残し て いる 。
+∃ EVENT[6] EVENT[11] GROUP[1] GROUP[7] (
+ CONJ_や(∃ ENTITY[2] ENTITY[3] (
+       写生(ENTITY[3]) ∧
+        スケッチ(ENTITY[2]) ∧ namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])),
+  ∃ ENTITY[5] ENTITY[4] (古画(ENTITY[5]) ∧ の_模写(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+  CONJ_や(∃ ENTITY[8] (写生図集(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+   ∃ ENTITY[9] (模写画集(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+   重視する.0(EVENT[6], ENTITY[探幽], GROUP[1]) ∧ 多数 ENTITY[10] (is_element_of(ENTITY[10], GROUP[7]), 残し_て_いる(EVENT[11], ENTITY[探幽], ENTITY[10])))
+
+# ::id 80_wikipedia_KYOTO_CLT_00002,80;NJ
+# ::snt 「 探幽縮図 」 と 称さ れる 探幽筆 の 古画模写 は 多数 現存 し て おり 、 各地 の 美術館 や 収集家 が 所蔵 し て いる が 、 これら に は 今日 で は 原画 が 失わ れ て しまっ た 古画 の 模写 も 多数 含ま れ て おり 、 日本 絵画史 研究 上 、 貴重 な 資料 と なっ て いる 。
+∃ ATTRIB[24] ENTITY[12] ENTITY[6] ENTITY[13] GROUP[7] ENTITY[18] ENTITY[15] ENTITY[14] ENTITY[23] ENTITY[22] EVENT[5] EVENT[11] EVENT[19] EVENT[21] EVENT[25] EVENT[3] ENTITY[1] ENTITY[17] (
+ 称さ(EVENT[3], _, ENTITY[1], ENTITY[探幽縮図]) ∧ の_古画模写(ENTITY[探幽筆], ENTITY[1]) ∧
+  ENTITY[13] = これら{ENTITY[1], ENTITY[探幽筆], ENTITY[探幽縮図]} ∧
+   今日(ENTITY[17]) ∧
+    past(EVENT[19]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[探幽筆], ENTITY[探幽縮図]} ∧
+      CONJ_や(∃ ENTITY[8] (各 ENTITY[9] (地(ENTITY[9]), の_美術館(ENTITY[9], ENTITY[8])) ∧ is_element_of(ENTITY[8], GROUP[7])),
+       ∃ ENTITY[10] (収集家(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7]))) ∧
+       ENTITY[12] = *pro*{ENTITY[1], ENTITY[探幽筆], ENTITY[探幽縮図]} ∧
+        原画(ENTITY[18]) ∧
+         失わ_て_しまっ_た(EVENT[19], (_, ENTITY[18]), ENTITY[15]) ∧ で(EVENT[19]) = ENTITY[17] ∧
+          古画(ENTITY[15]) ∧
+          の_模写(ENTITY[15], ENTITY[14]) ∧
+           日本_絵画史_研究_上(ENTITY[22]) ∧
+            貴重_な(ATTRIB[24]) ∧
+             ATTRIBUTE_資料(ATTRIB[24], ENTITY[23]) ∧
+              CONJ_が(多数 ENTITY[4] (ENTITY[4] = ENTITY[1], 現存する.0_て_おり(EVENT[5], ENTITY[4])) ∧
+                    所蔵する.0_て_いる(EVENT[11], GROUP[7], ENTITY[6]),
+               多数 ENTITY[20] (ENTITY[20] = ENTITY[14],
+                含ま_て_おり(EVENT[21], _, ENTITY[20]) ∧ に(EVENT[21]) = ENTITY[13]) ∧
+                なっ_て_いる(EVENT[25], ENTITY[12]) ∧ と(EVENT[25]) = ENTITY[23] ∧
+                 ADV(EVENT[25]) = ENTITY[22]))
+
+# ::id 81_wikipedia_KYOTO_CLT_00002,81;NJ
+# ::snt 江戸 時代 中期 以降
+∃ EVENT[2] ENTITY[1] (江戸_時代_中期_以降(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 82_wikipedia_KYOTO_CLT_00002,82;NJ
+# ::snt 江戸 時代 の 狩野派 は 、 狩野家 の 宗家 を 中心 と し た 血族 集団 と 、 全国 に いる 多数 の 門人 から なる 巨大 な 画家 集団 で あり 、 ピラミッド型 の 組織 を 形成 し て い た 。
+∃ ATTRIB[15] EVENT[14] EVENT[16] EVENT[19] GROUP[4] ENTITY[2] ENTITY[18] ENTITY[17] ENTITY[1] (
+ 江戸_時代(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[狩野派]) ∧
+   CONJ_と(∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] (
+         の_宗家(ENTITY[狩野家], ENTITY[7]) ∧
+          中心(ENTITY[8]) ∧
+           し_た(EVENT[9], ENTITY[5], ENTITY[7], ENTITY[8]) ∧ 血族_集団(ENTITY[5]) ∧
+            past(EVENT[9]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    多数_の ENTITY[10] (
+     全 ENTITY[12] (国(ENTITY[12]), ∃ EVENT[13] (いる(EVENT[13], ENTITY[10]) ∧ に(EVENT[13]) = ENTITY[12])) ∧
+      門人(ENTITY[10]), is_element_of(ENTITY[10], GROUP[4]))) ∧
+    巨大_な(ATTRIB[15]) ∧
+     なる(EVENT[14], ENTITY[2]) ∧ から(EVENT[14]) = GROUP[4] ∧ ATTRIBUTE_画家_集団(ATTRIB[15], ENTITY[2]) ∧
+      ピラミッド型(ENTITY[18]) ∧
+       の_組織(ENTITY[18], ENTITY[17]) ∧
+        past(EVENT[19]) ∧ で_あり(EVENT[16], ENTITY[狩野派], ENTITY[2]) ∧ 形成する.0_て_い_た(EVENT[19], ENTITY[狩野派], ENTITY[17]))
+
+# ::id 83_wikipedia_KYOTO_CLT_00002,83;NJ
+# ::snt 「 奥絵師 」 と 呼ば れる 、 もっとも 格式 の 高い 4 家 を 筆頭 に 、 それ に次いで 格式 の 高い 「 表絵師 」 が 約15 家 あり 、 その 下 に は 公儀 や 寺社 の 画事 ではなく 、 一般 町人 の 需要 に 応える 「 町狩野 」 が 位置 する という よう に 、 明確 に 格付け が さ れ 、 その 影響力 は 日本 全国 に 及ん で い た 。
+∃ ENTITY[12] ENTITY[1] EVENT[4] EVENT[7] EVENT[10] EVENT[14] EVENT[16] EVENT[27] EVENT[28] EVENT[30] EVENT[33] ENTITY[6] ENTITY[9] ENTITY[2] ENTITY[13] ENTITY[15] GROUP[20] ENTITY[29] ENTITY[17] ENTITY[18] ENTITY[32] (
+ 下(ENTITY[18]) ∧
+  影響力(ENTITY[32]) ∧
+   ENTITY[1] = *pro* ∧
+    格式(ENTITY[6]) ∧
+     (CD_4_家(ENTITY[2]),
+      呼ば(EVENT[4], _, ENTITY[2], ENTITY[奥絵師]) ∧ 高い(EVENT[7], (ENTITY[2], ENTITY[6]))) ∧
+      筆頭(ENTITY[9]) ∧
+       ENTITY[12] = それ{ENTITY[奥絵師], ENTITY[2], ENTITY[9], ENTITY[6]} ∧
+        格式(ENTITY[13]) ∧
+         高い(EVENT[14], (ENTITY[表絵師], ENTITY[13])) ∧ に次いで(EVENT[14]) = ENTITY[12] ∧
+          CD_約15_家(ENTITY[15]) ∧
+           CONJ_ではなく(∃ GROUP[22] ENTITY[21] (
+                 CONJ_や(∃ ENTITY[23] (公儀(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[22])),
+                  ∃ ENTITY[24] (寺社(ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[22]))) ∧
+                  の_画事(GROUP[22], ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[20])),
+            ∃ ENTITY[26] ENTITY[25] (一般_町人(ENTITY[26]) ∧ の_需要(ENTITY[26], ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[20]))) ∧
+            応える(EVENT[27], ENTITY[町狩野]) ∧ に(EVENT[27]) = GROUP[20] ∧
+             THAT_よう(位置する.0(EVENT[28], ENTITY[町狩野]) ∧ に(EVENT[28]) = ENTITY[18], ENTITY[17]) ∧
+              格付け(ENTITY[29]) ∧
+               国(ENTITY[日本]) ∧
+                ADV_もっとも(EVENT[7]) ∧
+                 ADV_明確_に(EVENT[30]) ∧
+                  past(EVENT[33]) ∧
+                   xxx(EVENT[10], ENTITY[1], ENTITY[2], ENTITY[9]) ∧ あり(EVENT[16], ENTITY[表絵師], ENTITY[15]) ∧
+                    さ(EVENT[30], _, ENTITY[29]) ∧ に(EVENT[30]) = ENTITY[17] ∧
+                     及ん_で_い_た(EVENT[33], ENTITY[32]) ∧ に(EVENT[33]) = ENTITY[日本])
+
+# ::id 84_wikipedia_KYOTO_CLT_00002,84;NJ
+# ::snt この 時代 の 権力者 は 封建 社会 の 安定 継続 を 望み 、 江戸城 の よう な 公 の 場 に 描か れる 絵画 は 、 新奇 な もの より 伝統的 な 粉本 に 則っ て 描か れ た もの が 良し と さ れ た 。
+∃ ATTRIB[19] ATTRIB[16] SITUATION[14] EVENT[5] EVENT[20] EVENT[21] EVENT[22] EVENT[23] ENTITY[4] ENTITY[3] ENTITY[17] ENTITY[15] EVENT[11] EVENT[13] ENTITY[2] ENTITY[1] ENTITY[10] ENTITY[12] ENTITY[8] ENTITY[6] (
+ 時代(ENTITY[2]) ∧
+  の_権力者(ENTITY[2], ENTITY[1]) ∧
+   の_よう(ENTITY[江戸城], ENTITY[10]) ∧
+    公(ENTITY[12]) ∧
+     な(EVENT[11], ENTITY[8], ENTITY[10]) ∧ の_場(ENTITY[12], ENTITY[8]) ∧
+      描か(EVENT[13], _, ENTITY[6]) ∧ に(EVENT[13]) = ENTITY[8] ∧ 絵画(ENTITY[6]) ∧
+       封建_社会(ENTITY[4]) ∧
+        の_安定_継続(ENTITY[4], ENTITY[3]) ∧
+         新奇_な(ATTRIB[16]) ∧
+          ATTRIBUTE_もの(ATTRIB[16], ENTITY[15]) ∧
+           伝統的_な(ATTRIB[19]) ∧
+            ATTRIBUTE_xxx(ATTRIB[19], ENTITY[粉本]) ∧
+             CONJ_te(則っ_て(EVENT[20], ENTITY[17]) ∧ に(EVENT[20]) = ENTITY[粉本],
+              描か_た(EVENT[21], _, ENTITY[17])) ∧ もの(ENTITY[17]) ∧
+              FACT(SITUATION[14],
+               良し(EVENT[22], (ENTITY[6], ENTITY[17])) ∧ より(EVENT[22]) = ENTITY[15]) ∧
+               past(EVENT[21]) ∧
+                past(EVENT[23]) ∧
+                 望み(EVENT[5], ENTITY[1], ENTITY[3]) ∧ さ_た(EVENT[23], _, ENTITY[6], SITUATION[14]))
+
+# ::id 85_wikipedia_KYOTO_CLT_00002,85;NJ
+# ::snt また 、 大量 の 障壁画 制作 を こなす に は 、 弟子 一門 を 率い て 集団 で 制作 する 必要があり 、 集団 制作 を 容易 に する ため に も 絵師 個人 の 個性 より も 粉本 （ 絵手本 ） を 学習 する こと が 重視 さ れ た 。
+∃ SITUATION[15] ENTITY[13] SITUATION[12] SITUATION[2] ENTITY[1] EVENT[5] EVENT[7] EVENT[14] EVENT[17] EVENT[19] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[8] ENTITY[11] ENTITY[16] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  大量(ENTITY[4]) ∧
+   の_障壁画_制作(ENTITY[4], ENTITY[3]) ∧
+    FACT(SITUATION[2], こなす(EVENT[5], ENTITY[1], ENTITY[3])) ∧
+     弟子_一門(ENTITY[6]) ∧
+      集団(ENTITY[8]) ∧
+       絵師_個人(ENTITY[11]) ∧
+        の_個性(ENTITY[11], ENTITY[10]) ∧
+         ENTITY[13] = *pro*{ENTITY[10], ENTITY[11], ENTITY[8], ENTITY[6], ENTITY[3], ENTITY[4]} ∧
+          namely_-ENTITY-(ENTITY[絵手本], ENTITY[粉本]) ∧
+           こと(SITUATION[12], 学習する.0(EVENT[14], ENTITY[13], ENTITY[粉本])) ∧
+            集団_制作(ENTITY[16]) ∧
+             ため(SITUATION[15], する(EVENT[17], SITUATION[12], ENTITY[16])) ∧
+              ADV_容易_に(EVENT[17]) ∧
+               past(EVENT[19]) ∧
+                CONJ_te(率い_て(EVENT[7], ENTITY[1], ENTITY[6]) ∧ に(EVENT[7]) = SITUATION[2],
+                 MD_必要があり(∃ EVENT[9] (
+                       制作する.0(EVENT[9], ENTITY[1]) ∧
+                        で(EVENT[9]) = ENTITY[8] ∧ に(EVENT[9]) = SITUATION[2]))) ∧
+                 重視する.0_た(EVENT[19], _, SITUATION[12]) ∧ に(EVENT[19]) = SITUATION[15] ∧
+                  より(EVENT[19]) = ENTITY[10])
+
+# ::id 86_wikipedia_KYOTO_CLT_00002,86;NJ
+# ::snt こうした 点 から 、 狩野派 の 絵画 は 、 個性 や 新味 に 乏しい もの に なっ て いっ た こと は 否め ない 。
+∃ ATTRIB[5] SITUATION[2] EVENT[9] GROUP[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 点(ENTITY[1]) ∧
+  の_絵画(ENTITY[狩野派], ENTITY[3]) ∧
+   CONJ_や(∃ ENTITY[7] (個性(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ENTITY[8] (新味(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    に_乏しい(GROUP[6], ATTRIB[5]) ∧
+     ATTRIBUTE_もの(ATTRIB[5], ENTITY[4]) ∧
+      こと(SITUATION[2], なっ_て_いっ_た(EVENT[9], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[4]) ∧
+       past(EVENT[9]) ∧ ¬ ∃ EVENT[10] (否め(EVENT[10], SITUATION[2]) ∧ から(EVENT[10]) = ENTITY[1]))
+
+# ::id 87_wikipedia_KYOTO_CLT_00002,87;NJ
+# ::snt 奥絵師 は 旗本 と 同格 で 、 将軍 へ の 「 お目見え 」 と 帯刀 が 許さ れ た と いう から 、 その 格式 の 高さ が うかがえる 。
+∃ EVENT[5] EVENT[10] EVENT[3] EVENT[11] ENTITY[4] GROUP[6] ENTITY[2] ENTITY[1] (
+ 格式(ENTITY[2]) ∧
+  の_高さ(ENTITY[2], ENTITY[1]) ∧
+   旗本(ENTITY[4]) ∧
+    CONJ_と(∃ ENTITY[8] ENTITY[7] (将軍(ENTITY[8]) ∧ へ_の_お目見え(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[9] (帯刀(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+     before(EVENT[3], EVENT[10]) ∧
+      CRD_から(いう(EVENT[3], ENTITY[1],
+            CONJ_te(同格_で(EVENT[5], ENTITY[奥絵師]) ∧ と(EVENT[5]) = ENTITY[4],
+             許さ_た(EVENT[10], (_, GROUP[6]), ENTITY[奥絵師]))), うかがえる(EVENT[11], ENTITY[1])))
+
+# ::id 88_wikipedia_KYOTO_CLT_00002,88;NJ
+# ::snt 奥絵師 の 4 家 と は 探幽 （ 狩野 孝信 の 長男 ） の 系統 の 鍛冶橋家 、 尚信 （ 孝信 の 次男 ） の 系統 の 木挽町家 （ 当初 は 「 竹川町家 」 ） 、 安信 （ 孝信 の 三男 ） の 系統 の 中橋家 、 それに 狩野 岑信 （ みねのぶ 、 1662-1708 ） の 系統 の 浜町家 で ある （ 岑信 は 、 狩野 尚信 の 長男 で ある 狩野 常信 の 次男 ） 。
+∃ EVENT[10] GROUP[2] ENTITY[1] (
+ (CD_4_家(ENTITY[1]), の(ENTITY[奥絵師], ENTITY[1])) ∧
+  CONJ_それに(∃ ENTITY[4] ENTITY[3] (
+        の_長男(ENTITY[狩野_孝信], ENTITY[4]) ∧
+         namely_-ENTITY-(ENTITY[4], ENTITY[探幽]) ∧
+          の_系統(ENTITY[探幽], ENTITY[3]) ∧ の_xxx(ENTITY[3], ENTITY[鍛冶橋家]) ∧ is_element_of(ENTITY[鍛冶橋家], GROUP[2])),
+   ∃ ENTITY[6] ENTITY[5] (
+    の_次男(ENTITY[孝信], ENTITY[6]) ∧
+     namely_-ENTITY-(ENTITY[6], ENTITY[尚信]) ∧
+      の_系統(ENTITY[尚信], ENTITY[5]) ∧ の_xxx(ENTITY[5], ENTITY[木挽町家]) ∧ is_element_of(ENTITY[木挽町家], GROUP[2])),
+   ∃ ENTITY[8] ENTITY[7] (
+    の_三男(ENTITY[孝信], ENTITY[8]) ∧
+     namely_-ENTITY-(ENTITY[8], ENTITY[安信]) ∧
+      の_系統(ENTITY[安信], ENTITY[7]) ∧ の_xxx(ENTITY[7], ENTITY[中橋家]) ∧ is_element_of(ENTITY[中橋家], GROUP[2])),
+   ∃ ENTITY[9] (
+    namely_-ENTITY-(ENTITY[みねのぶ_1662-1708], ENTITY[狩野_岑信]) ∧
+     の_系統(ENTITY[狩野_岑信], ENTITY[9]) ∧ の_xxx(ENTITY[9], ENTITY[浜町家]) ∧ is_element_of(ENTITY[浜町家], GROUP[2]))) ∧
+   で_ある(EVENT[10], ENTITY[1], GROUP[2]))
+
+# ::id 89_wikipedia_KYOTO_CLT_00002,89;NJ
+# ::snt 探幽 に は 初め 実子 が なかっ た ため 、 刀剣金工家 の 後藤 立乗 の 息子 の 洞雲 （ 狩野 益信 、 1625-1694 ） を 養子 と し た 。
+∃ ENTITY[5] SITUATION[1] EVENT[3] EVENT[8] ENTITY[2] ENTITY[6] ENTITY[7] (
+ 実子(ENTITY[2]) ∧
+  FACT(SITUATION[1], なかっ_た(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[探幽]) ∧
+   ENTITY[5] = *pro*{ENTITY[2], ENTITY[探幽]} ∧
+    の_xxx(ENTITY[刀剣金工家], ENTITY[後藤_立乗]) ∧
+     の_息子(ENTITY[後藤_立乗], ENTITY[6]) ∧
+      の_xxx(ENTITY[6], ENTITY[洞雲]) ∧
+       namely_-ENTITY-(ENTITY[狩野_益信_1625-1694], ENTITY[洞雲]) ∧
+        養子(ENTITY[7]) ∧
+         ADV_初め(EVENT[3]) ∧
+          past(EVENT[3]) ∧
+           past(EVENT[8]) ∧
+            し_た(EVENT[8], ENTITY[5], ENTITY[洞雲], ENTITY[7]) ∧ ため(EVENT[8]) = SITUATION[1])
+
+# ::id 90_wikipedia_KYOTO_CLT_00002,90;NJ
+# ::snt 後 に 探幽 が 50 歳 を 過ぎ て 生まれ た 実子 で ある 狩野 守政 （ 1653-1718 ） が 跡 を 継ぐ が 、 この 系統 から は その 後 見る べき 画家 は 出 なかっ た 。
+∃ ENTITY[16] EVENT[7] EVENT[8] EVENT[9] EVENT[11] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[10] ENTITY[1] ENTITY[14] TIME[13] ENTITY[12] (
+ 系統(ENTITY[12]) ∧
+  後(TIME[13]) ∧
+   ENTITY[16] = *pro*{ENTITY[12], ENTITY[狩野_守政], ENTITY[探幽], ENTITY[1], ENTITY[10], ENTITY[2], ENTITY[4], ENTITY[6]} ∧
+    MD_べき(∃ EVENT[17] 見る(EVENT[17], ENTITY[16], ENTITY[14])) ∧ 画家(ENTITY[14]) ∧
+     後(ENTITY[1]) ∧
+      CD_50_歳(ENTITY[6]) ∧
+       CONJ_te(過ぎ_て(EVENT[7], ENTITY[探幽], ENTITY[6]), 生まれ_た(EVENT[8], ENTITY[4])) ∧ 実子(ENTITY[4]) ∧
+        で_ある(EVENT[9], ENTITY[狩野_守政], ENTITY[4]) ∧
+         CD_1653-1718(ENTITY[2]) ∧
+          namely_-ENTITY-(ENTITY[2], ENTITY[狩野_守政]) ∧
+           跡(ENTITY[10]) ∧
+            past(EVENT[8]) ∧
+             past(EVENT[11]) ∧
+              CONJ_が(継ぐ(EVENT[11], ENTITY[狩野_守政], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[1],
+               ¬ ∃ EVENT[18] (
+                     past(EVENT[18]) ∧
+                      出_た(EVENT[18], ENTITY[14]) ∧ is_contained_in(時間(EVENT[18]), TIME[13]) ∧
+                       から(EVENT[18]) = ENTITY[12])))
+
+# ::id 91_wikipedia_KYOTO_CLT_00002,91;NJ
+# ::snt 探幽 に は 多く の 弟子 が い た が 、 中 で は 『 夕顔棚納涼図 』 を 残し た 久隅 守景 （ くすみ もりかげ 、 生没年 未詳 ） が 著名 で ある 。
+∃ ENTITY[4] EVENT[6] EVENT[7] ENTITY[3] (
+ 中(ENTITY[3]) ∧
+  past(EVENT[6]) ∧
+   残し_た(EVENT[6], ENTITY[久隅_守景], ENTITY[夕顔棚納涼図]) ∧
+    くすみ_もりかげ_生没年_未詳(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[久隅_守景]) ∧
+      CONJ_が(多く_の ENTITY[1] (弟子(ENTITY[1]),
+            ∃ EVENT[2] (past(EVENT[2]) ∧ い_た(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[探幽])),
+       著名_で_ある(EVENT[7], ENTITY[久隅_守景]) ∧ で(EVENT[7]) = ENTITY[3]))
+
+# ::id 92_wikipedia_KYOTO_CLT_00002,92;NJ
+# ::snt 守景 は 何らかの 事情 で 狩野派 を 破門 に なり 、 後 に は 金沢方面 で 制作 し た が 、 経歴 について 不明 な 点 が 多い 。
+∃ ATTRIB[8] EVENT[3] EVENT[5] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[6] ENTITY[4] (
+ 後(ENTITY[4]) ∧
+  事情(ENTITY[1]) ∧
+   破門(ENTITY[2]) ∧
+    経歴(ENTITY[6]) ∧
+     不明_な(ATTRIB[8]) ∧
+      ATTRIBUTE_点(ATTRIB[8], ENTITY[7]) ∧
+       past(EVENT[5]) ∧
+        CONJ_が(なり(EVENT[3], ENTITY[守景], ENTITY[狩野派]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+              で(EVENT[3]) = ENTITY[1] ∧
+              制作する.0_た(EVENT[5], ENTITY[守景]) ∧ で(EVENT[5]) = ENTITY[金沢方面] ∧ に(EVENT[5]) = ENTITY[4],
+         多い(EVENT[9], (ENTITY[守景], ENTITY[7])) ∧ について(EVENT[9]) = ENTITY[6]))
+
+# ::id 93_wikipedia_KYOTO_CLT_00002,93;NJ
+# ::snt 前述 の とおり 、 狩野家 の 宗家 は 、 探幽 の 弟 ・ 安信 の 中橋家 が 継ぐ こと に なっ た 。
+∃ ENTITY[7] SITUATION[3] EVENT[6] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[1] ENTITY[4] (
+ の_宗家(ENTITY[狩野家], ENTITY[4]) ∧
+  前述(ENTITY[2]) ∧
+   の_とおり(ENTITY[2], ENTITY[1]) ∧
+    の_弟(ENTITY[探幽], ENTITY[5]) ∧
+     namely_-ENTITY-(ENTITY[5], ENTITY[安信]) ∧
+      の_xxx(ENTITY[安信], ENTITY[中橋家]) ∧
+       こと(SITUATION[3], 継ぐ(EVENT[6], ENTITY[中橋家], ENTITY[4])) ∧
+        ENTITY[7] = *pro*{ENTITY[4], ENTITY[中橋家], ENTITY[安信], ENTITY[探幽], ENTITY[狩野家], ENTITY[5], ENTITY[2]} ∧
+         past(EVENT[8]) ∧ なっ_た(EVENT[8], ENTITY[7], SITUATION[3]) ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 94_wikipedia_KYOTO_CLT_00002,94;NJ
+# ::snt 安信 の 子 の 狩野 時信 （ 1642-1678 ） は 30 代 で 没し 、 その 子 の 狩野 主信 （ うじのぶ 、 1675-1724 ） が 家督 を 継ぐ が 、 この 系統 から も その 後 目立っ た 画人 は 出 て い ない 。
+∃ EVENT[4] EVENT[7] ENTITY[3] ENTITY[6] EVENT[12] ENTITY[2] ENTITY[1] ENTITY[5] ENTITY[10] TIME[9] ENTITY[8] (
+ の_子(ENTITY[安信], ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[狩野_時信]) ∧
+   CD_1642-1678(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[狩野_時信]) ∧
+     子(ENTITY[5]) ∧
+      系統(ENTITY[8]) ∧
+       後(TIME[9]) ∧
+        目立っ_た(EVENT[12], ENTITY[10]) ∧ 画人(ENTITY[10]) ∧
+         past(EVENT[12]) ∧
+          CD_30_代(ENTITY[3]) ∧
+           の_xxx(ENTITY[5], ENTITY[狩野_主信]) ∧
+            namely_-ENTITY-(ENTITY[うじのぶ_1675-1724], ENTITY[狩野_主信]) ∧
+             家督(ENTITY[6]) ∧
+              CONJ_が(没し(EVENT[4], ENTITY[狩野_時信]) ∧ で(EVENT[4]) = ENTITY[3] ∧
+                    継ぐ(EVENT[7], ENTITY[狩野_主信], ENTITY[6]),
+               ¬ ∃ EVENT[13] (
+                     出_て_い(EVENT[13], ENTITY[10]) ∧
+                      is_contained_in(時間(EVENT[13]), TIME[9]) ∧ から(EVENT[13]) = ENTITY[8])))
+
+# ::id 95_wikipedia_KYOTO_CLT_00002,95;NJ
+# ::snt 都会的 な 画風 で 人気 を 博し た 英 一蝶 （ はなぶさ いっちょう 、 1652-1724 ） は 安信 の 弟子 で あっ た 。
+∃ ATTRIB[3] EVENT[7] ENTITY[6] EVENT[5] ENTITY[4] ENTITY[2] (
+ 都会的_な(ATTRIB[3]) ∧
+  ATTRIBUTE_画風(ATTRIB[3], ENTITY[2]) ∧
+   人気(ENTITY[4]) ∧
+    博し_た(EVENT[5], ENTITY[英_一蝶], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2] ∧
+     namely_-ENTITY-(ENTITY[はなぶさ_いっちょう_1652-1724], ENTITY[英_一蝶]) ∧
+      past(EVENT[5]) ∧
+       の_弟子(ENTITY[安信], ENTITY[6]) ∧ past(EVENT[7]) ∧ で_あっ_た(EVENT[7], ENTITY[英_一蝶], ENTITY[6]))
+
+# ::id 96_wikipedia_KYOTO_CLT_00002,96;NJ
+# ::snt 奥絵師 4 家 の 中 で 、 幕末 まで 比較的 高名 な 画人 を 輩出 し た の は 、 尚信 の 系統 の 木挽町家 で ある 。
+∃ ATTRIB[6] EVENT[9] ENTITY[8] ENTITY[1] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[2] (
+ 幕末(ENTITY[4]) ∧
+  比較的_高名_な(ATTRIB[6]) ∧
+   ATTRIBUTE_画人(ATTRIB[6], ENTITY[5]) ∧
+    輩出する.0_た(EVENT[7], ENTITY[2], ENTITY[5]) ∧ まで(EVENT[7]) = ENTITY[4] ∧ の(ENTITY[2]) ∧
+     past(EVENT[7]) ∧
+      の_中(ENTITY[奥絵師_4_家], ENTITY[1]) ∧
+       の_系統(ENTITY[尚信], ENTITY[8]) ∧
+        の_xxx(ENTITY[8], ENTITY[木挽町家]) ∧ で_ある(EVENT[9], ENTITY[2], ENTITY[木挽町家]) ∧ で(EVENT[9]) = ENTITY[1])
+
+# ::id 97_wikipedia_KYOTO_CLT_00002,97;NJ
+# ::snt この 家系 から は 尚信 の 嫡男 の 狩野 常信 （ 1636-1713 ） 、 その 子 の 狩野 周信 （ ちかのぶ 、 1660-1728 ） と 狩野 岑信 （ みねのぶ 、 1662-1708 ） ら が 出 て いる 。
+∃ EVENT[7] GROUP[3] ENTITY[2] ENTITY[6] ENTITY[1] (
+ 家系(ENTITY[1]) ∧
+  子(ENTITY[6]) ∧
+   CONJ_と(∃ ENTITY[5] ENTITY[4] (
+         の_嫡男(ENTITY[尚信], ENTITY[5]) ∧
+          の_xxx(ENTITY[5], ENTITY[狩野_常信]) ∧
+           CD_1636-1713(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[4], ENTITY[狩野_常信]) ∧ is_element_of(ENTITY[狩野_常信], GROUP[3])),
+    の_xxx(ENTITY[6], ENTITY[狩野_周信]) ∧ namely_-ENTITY-(ENTITY[ちかのぶ_1660-1728], ENTITY[狩野_周信]) ∧ is_element_of(ENTITY[狩野_周信], GROUP[3]),
+    namely_-ENTITY-(ENTITY[みねのぶ_1662-1708], ENTITY[狩野_岑信]) ∧ is_element_of(ENTITY[狩野_岑信], GROUP[3])) ∧
+    equals_ら(GROUP[3], ENTITY[2]) ∧ 出_て_いる(EVENT[7], ENTITY[2]) ∧ から(EVENT[7]) = ENTITY[1])
+
+# ::id 98_wikipedia_KYOTO_CLT_00002,98;NJ
+# ::snt 岑信 は 将軍 ・ 徳川 家宣 の 寵愛 を 受け 、 後 に 「 浜町家 」 として 独立 し 、 「 奥絵師家 」 の 1 つ に 数え られる よう に なっ た 。
+∃ SITUATION[6] EVENT[3] EVENT[5] EVENT[8] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[4] ENTITY[7] (
+ 将軍(ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[2], ENTITY[徳川_家宣]) ∧
+   の_寵愛(ENTITY[徳川_家宣], ENTITY[1]) ∧
+    後(ENTITY[4]) ∧
+     (CD_1_つ(ENTITY[7]), の(ENTITY[奥絵師家], ENTITY[7])) ∧
+      よう(SITUATION[6], 数え(EVENT[8], _, ENTITY[岑信], ENTITY[7])) ∧
+       past(EVENT[9]) ∧
+        受け(EVENT[3], ENTITY[岑信], ENTITY[1]) ∧
+         独立する.0(EVENT[5], ENTITY[岑信]) ∧ として(EVENT[5]) = ENTITY[浜町家] ∧ に(EVENT[5]) = ENTITY[4] ∧
+          なっ_た(EVENT[9], ENTITY[岑信], SITUATION[6]))
+
+# ::id 99_wikipedia_KYOTO_CLT_00002,99;NJ
+# ::snt この ほか 、 狩野 興以 （ ？-1636 ） は 狩野家 の 血族 で は ない が 、 探幽ら 3 兄弟 の 師匠筋 にあたる 人物 で 、 その 功績 によって 狩野 姓 を 与え られ 、 後 に 紀州 徳川家 に 仕え て いる 。
+∃ EVENT[7] EVENT[10] EVENT[12] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[11] ENTITY[2] ENTITY[8] ENTITY[1] (
+ ほか(ENTITY[1]) ∧
+  CD_？-1636(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[狩野_興以]) ∧
+    功績(ENTITY[8]) ∧
+     の_血族(ENTITY[狩野家], ENTITY[3]) ∧
+      の_師匠筋(ENTITY[探幽ら_3_兄弟], ENTITY[6]) ∧
+       にあたる_人物(ENTITY[6], ENTITY[5]) ∧
+        狩野_姓(ENTITY[9]) ∧
+         後(ENTITY[11]) ∧
+          CONJ_te(CONJ_が(¬ ∃ EVENT[4] (で_は(EVENT[4], ENTITY[狩野_興以], ENTITY[3]) ∧ ADV(EVENT[4]) = ENTITY[1]),
+                で(EVENT[7], ENTITY[狩野_興以], ENTITY[5]) ∧ ADV(EVENT[7]) = ENTITY[1]),
+           与え(EVENT[10], _, ENTITY[9]) ∧ によって(EVENT[10]) = ENTITY[8] ∧
+            仕え_て_いる(EVENT[12], ENTITY[狩野_興以]) ∧ に(EVENT[12]) = ENTITY[紀州_徳川家] ∧
+             に(EVENT[12]) = ENTITY[11] ∧ ADV(EVENT[12]) = ENTITY[1]))
+
+# ::id 100_wikipedia_KYOTO_CLT_00002,100;NJ
+# ::snt 一方 、 京都 に 残っ て 活動 を 続け た 「 京狩野 」 という 一派 も あり 、 狩野 永徳 の 弟子 で あっ た 狩野 山楽 （ 1559-1635 ） が その 中心 人物 で ある 。
+∃ ENTITY[4] ENTITY[1] ENTITY[9] ENTITY[7] EVENT[3] EVENT[5] EVENT[6] EVENT[10] EVENT[12] ENTITY[11] (
+ 中心_人物(ENTITY[11]) ∧
+  past(EVENT[5]) ∧
+   past(EVENT[10]) ∧
+    活動(ENTITY[4]) ∧
+     CONJ_te(残っ_て(EVENT[3], ENTITY[京狩野]) ∧ に(EVENT[3]) = ENTITY[京都],
+      続け_た(EVENT[5], ENTITY[京狩野], ENTITY[4])) ∧
+      という_一派(ENTITY[京狩野], ENTITY[1]) ∧
+       の_弟子(ENTITY[狩野_永徳], ENTITY[9]) ∧
+        で_あっ_た(EVENT[10], ENTITY[狩野_山楽], ENTITY[9]) ∧
+         CD_1559-1635(ENTITY[7]) ∧
+          namely_-ENTITY-(ENTITY[7], ENTITY[狩野_山楽]) ∧ あり(EVENT[6], ENTITY[1]) ∧ で_ある(EVENT[12], ENTITY[狩野_山楽], ENTITY[11]))
+
+# ::id 101_wikipedia_KYOTO_CLT_00002,101;NJ
+# ::snt 山楽 は 豊臣 秀吉 の 家臣 で あっ た 近江 の 木村家 の 出 で 、 元 の 名 を 木村 光頼 と 言っ た 。
+∃ EVENT[4] EVENT[5] EVENT[8] ENTITY[3] ENTITY[1] ENTITY[7] ENTITY[6] (
+ の_家臣(ENTITY[豊臣_秀吉], ENTITY[3]) ∧
+  で_あっ_た(EVENT[4], ENTITY[木村家], ENTITY[3]) ∧
+   の_xxx(ENTITY[近江], ENTITY[木村家]) ∧
+    の_出(ENTITY[木村家], ENTITY[1]) ∧
+     元(ENTITY[7]) ∧
+      の_名(ENTITY[7], ENTITY[6]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[8]) ∧
+         CONJ_te(で(EVENT[5], ENTITY[山楽], ENTITY[1]), 言っ_た(EVENT[8], ENTITY[山楽], ENTITY[6], ENTITY[木村_光頼])))
+
+# ::id 102_wikipedia_KYOTO_CLT_00002,102;NJ
+# ::snt 京都 ・ 大覚寺 宸殿 の 障壁画 『 牡丹図 』 『 紅白梅図 』 が 代表作 で 、 金地 に 色彩 豊か で 装飾的 な 画面 を 展開 し て いる 。
+∃ ENTITY[1] EVENT[6] EVENT[11] EVENT[12] EVENT[13] GROUP[4] ENTITY[2] ENTITY[5] ENTITY[3] ENTITY[10] ENTITY[8] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  is_element_of(ENTITY[牡丹図], GROUP[4]) ∧ is_element_of(ENTITY[紅白梅図], GROUP[4]) ∧
+   equals(GROUP[4], ENTITY[3]) ∧
+    の_障壁画(ENTITY[京都_大覚寺_宸殿], ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      代表作(ENTITY[5]) ∧
+       金地(ENTITY[7]) ∧
+        色彩(ENTITY[10]) ∧
+         CONJ_te(豊か_で(EVENT[11], (ENTITY[8], ENTITY[10])), 装飾的_な(EVENT[12], ENTITY[8])) ∧
+          画面(ENTITY[8]) ∧
+          CONJ_te(で(EVENT[6], (ENTITY[1], ENTITY[3]), ENTITY[5]),
+           展開する.0_て_いる(EVENT[13], ENTITY[1], ENTITY[8]) ∧ に(EVENT[13]) = ENTITY[7]))
+
+# ::id 103_wikipedia_KYOTO_CLT_00002,103;NJ
+# ::snt 山楽 の 娘婿 で 養子 の 狩野 山雪 （ 1589/90-1651 ） は 、 妙心寺 天球院 障壁画 の ほか 、 屏風 絵 など の 現存作 が ある 。
+∃ EVENT[9] ENTITY[5] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_娘婿(ENTITY[山楽], ENTITY[3]) ∧
+  で_xxx(ENTITY[3], ENTITY[狩野_山雪]) ∧
+   養子(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[狩野_山雪]) ∧
+     CD_1589__slash__90-1651(ENTITY[1]) ∧
+      namely_-ENTITY-(ENTITY[1], ENTITY[狩野_山雪]) ∧
+       妙心寺_天球院_障壁画(ENTITY[5]) ∧
+        の_ほか(ENTITY[5], ENTITY[4]) ∧
+         屏風_絵(ENTITY[8]) ∧
+          など(ENTITY[8], ENTITY[7]) ∧
+           の_現存作(ENTITY[7], ENTITY[6]) ∧
+            ある(EVENT[9], (ENTITY[狩野_山雪], ENTITY[6])) ∧ ADV(EVENT[9]) = ENTITY[4])
+
+# ::id 104_wikipedia_KYOTO_CLT_00002,104;NJ
+# ::snt 樹木 、 岩 など の 独特 の 形態 、 徹底 し た 細部 描写 など 、 狩野派 の 絵師 の 中 で は 異色 の 個性的 な 画風 を もつ 。
+∃ ATTRIB[16] ENTITY[1] EVENT[17] ENTITY[15] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ の_絵師(ENTITY[狩野派], ENTITY[3]) ∧
+  の_中(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    ∃ GROUP[8] ENTITY[11] ENTITY[7] ENTITY[6] (
+     ∃ ENTITY[9] (樹木(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ ENTITY[10] (岩(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+      など(GROUP[8], ENTITY[7]) ∧
+       独特(ENTITY[11]) ∧
+        の_形態(ENTITY[11], ENTITY[6]) ∧ の__形態(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+     ∃ EVENT[14] ENTITY[12] (
+      徹底する.0_た(EVENT[14], _, ENTITY[12]) ∧ 細部_描写(ENTITY[12]) ∧
+       past(EVENT[14]) ∧ is_element_of(ENTITY[12], GROUP[5])) ∧
+     異色(ENTITY[15]) ∧
+      個性的_な(ATTRIB[16]) ∧
+       ATTRIBUTE_画風(ATTRIB[16], ENTITY[4]) ∧ の_画風(ENTITY[15], ENTITY[4]) ∧ など_画風(GROUP[5], ENTITY[4]) ∧
+        もつ(EVENT[17], ENTITY[1], ENTITY[4]) ∧ で(EVENT[17]) = ENTITY[2])
+
+# ::id 105_wikipedia_KYOTO_CLT_00002,105;NJ
+# ::snt 山雪 の 残し た 画論 を 、 子 の 狩野 永納 （ 1631-1697 ） が まとめ た もの が 、 日本人 による 本格的 な 絵画史 として は 最初 の もの と さ れる 『 本朝画史 』 で ある 。
+∃ SITUATION[1] ATTRIB[13] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[10] ENTITY[9] EVENT[4] EVENT[7] EVENT[14] EVENT[15] ENTITY[12] ENTITY[11] (
+ 日本人(ENTITY[12]) ∧
+  本格的_な(ATTRIB[13]) ∧
+   ATTRIBUTE_絵画史(ATTRIB[13], ENTITY[11]) ∧ による_絵画史(ENTITY[12], ENTITY[11]) ∧
+    past(EVENT[4]) ∧
+     past(EVENT[7]) ∧
+      残し_た(EVENT[4], ENTITY[山雪], ENTITY[2]) ∧ 画論(ENTITY[2]) ∧
+       子(ENTITY[6]) ∧
+        の_xxx(ENTITY[6], ENTITY[狩野_永納]) ∧
+         CD_1631-1697(ENTITY[5]) ∧
+          namely_-ENTITY-(ENTITY[5], ENTITY[狩野_永納]) ∧
+           もの(SITUATION[1], まとめ_た(EVENT[7], ENTITY[狩野_永納], ENTITY[2])) ∧
+            として_最初(ENTITY[11], ENTITY[10]) ∧
+             の_もの(ENTITY[10], ENTITY[9]) ∧
+              さ(EVENT[14], _, ENTITY[本朝画史], ENTITY[9]) ∧ で_ある(EVENT[15], SITUATION[1], ENTITY[本朝画史]))
+
+# ::id 106_wikipedia_KYOTO_CLT_00002,106;NJ
+# ::snt 木挽町家 から は 、 江戸 時代 後期 に 狩野 典信 （ えいせんいん みちのぶ 、 1730-1790 ） 、 狩野 惟信 （ ようせんいん これのぶ 、 1753-1808 ） 、 狩野 栄信 （ いせんいん ながのぶ 、 1775-1828 ） 、 狩野 養信 （ せいせんいん おさのぶ 、 1786-1846 ） など が 出 て いる 。
+∃ EVENT[4] GROUP[3] ENTITY[2] ENTITY[1] (
+ 江戸_時代_後期(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[えいせんいん_みちのぶ_1730-1790], ENTITY[狩野_典信]) ∧ is_element_of(ENTITY[狩野_典信], GROUP[3]) ∧
+   namely_-ENTITY-(ENTITY[ようせんいん_これのぶ_1753-1808], ENTITY[狩野_惟信]) ∧ is_element_of(ENTITY[狩野_惟信], GROUP[3]) ∧
+   namely_-ENTITY-(ENTITY[いせんいん_ながのぶ_1775-1828], ENTITY[狩野_栄信]) ∧ is_element_of(ENTITY[狩野_栄信], GROUP[3]) ∧
+   namely_-ENTITY-(ENTITY[せいせんいん_おさのぶ_1786-1846], ENTITY[狩野_養信]) ∧ is_element_of(ENTITY[狩野_養信], GROUP[3]) ∧
+   など(GROUP[3], ENTITY[2]) ∧
+    出_て_いる(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1] ∧ から(EVENT[4]) = ENTITY[木挽町家])
+
+# ::id 107_wikipedia_KYOTO_CLT_00002,107;NJ
+# ::snt 晴川院 養信 は 、 天保 9 年 （ 1838 年 ） と 同 15 年 （ 1844 年 ） に相次いで 焼失 し た 江戸城 の 西の丸 および 本丸御殿 の 再建 に際し 、 膨大 な 障壁画 の 制作 を 狩野派 の 棟梁 として 指揮 し た 。
+∃ ATTRIB[11] EVENT[7] EVENT[13] GROUP[4] GROUP[8] ENTITY[2] ENTITY[10] ENTITY[12] ENTITY[9] ENTITY[1] (
+ CONJ_と(∃ ENTITY[5] (CD_天保_9_年_（_1838_年_）(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+  ∃ ENTITY[6] ((CD_15_年_（_1844_年_）(ENTITY[6]), 同(ENTITY[6])) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+  CONJ_および(is_element_of(ENTITY[西の丸], GROUP[8]), is_element_of(ENTITY[本丸御殿], GROUP[8])) ∧
+   焼失する.0_た(EVENT[7], ENTITY[2]) ∧ に相次いで(EVENT[7]) = GROUP[4] ∧
+    の(ENTITY[江戸城], ENTITY[2]) ∧ equals(GROUP[8], ENTITY[2]) ∧
+    の_再建(ENTITY[2], ENTITY[1]) ∧
+     膨大_な(ATTRIB[11]) ∧
+      ATTRIBUTE_障壁画(ATTRIB[11], ENTITY[10]) ∧
+       の_制作(ENTITY[10], ENTITY[9]) ∧
+        の_棟梁(ENTITY[狩野派], ENTITY[12]) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[13]) ∧
+           指揮する.0_た(EVENT[13], ENTITY[晴川院_養信], ENTITY[9]) ∧ として(EVENT[13]) = ENTITY[12] ∧
+            に際し(EVENT[13]) = ENTITY[1])
+
+# ::id 108_wikipedia_KYOTO_CLT_00002,108;NJ
+# ::snt 障壁画 そのもの は 現存 し ない が 、 膨大 な 下絵 が 東京国立博物館 に 所蔵 さ れ て いる 。
+∃ ATTRIB[5] ENTITY[2] ENTITY[4] EVENT[6] ENTITY[1] (
+ ENTITY[2] = そのもの ∧
+  RFL_障壁画(ENTITY[2], ENTITY[1]) ∧
+   膨大_な(ATTRIB[5]) ∧
+    ATTRIBUTE_下絵(ATTRIB[5], ENTITY[4]) ∧
+     CONJ_が(¬ ∃ EVENT[3] 現存する.0(EVENT[3], ENTITY[1]),
+      所蔵する.0_て_いる(EVENT[6], _, ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[東京国立博物館]))
+
+# ::id 109_wikipedia_KYOTO_CLT_00002,109;NJ
+# ::snt 晴川院 は 古画 の 模写 や 収集 に も 尽力 し た 。
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ 古画(ENTITY[2]) ∧
+  CONJ_や(∃ ENTITY[4] (模写(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (収集(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+    past(EVENT[6]) ∧ 尽力する.0_た(EVENT[6], ENTITY[晴川院]) ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 110_wikipedia_KYOTO_CLT_00002,110;NJ
+# ::snt 一般 に 、 江戸 時代 後期 の 狩野派 絵師 に対する 評価 は あまり 高く ない が 、 20 世紀 後半 以降 の 研究 の 進展 により 、 晴川院 は 古典 絵画 から 幕末 の 新しい 絵画 の 動き まで 熱心 に 研究 し た 、 高い 技術 を もっ た 絵師 で あっ た こと が 認識 さ れる よう に なり 、 再評価 の 動き が ある 。
+∃ SITUATION[25] ATTRIB[22] ATTRIB[17] SITUATION[10] EVENT[18] EVENT[23] EVENT[24] EVENT[26] EVENT[27] EVENT[30] ENTITY[1] ENTITY[9] ENTITY[8] ENTITY[16] ENTITY[15] ENTITY[14] ENTITY[13] ENTITY[21] ENTITY[11] ENTITY[29] ENTITY[28] ENTITY[7] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 江戸_時代_後期(ENTITY[4]) ∧
+  の_狩野派_絵師(ENTITY[4], ENTITY[3]) ∧
+   に対する_評価(ENTITY[3], ENTITY[2]) ∧
+    一般(ENTITY[1]) ∧
+     (CD_20_世紀(ENTITY[9]), 後半_以降(ENTITY[9])) ∧
+      の_研究(ENTITY[9], ENTITY[8]) ∧
+       の_進展(ENTITY[8], ENTITY[7]) ∧
+        古典_絵画(ENTITY[13]) ∧
+         幕末(ENTITY[16]) ∧
+          新しい(ATTRIB[17]) ∧
+           ATTRIBUTE_絵画(ATTRIB[17], ENTITY[15]) ∧ の_絵画(ENTITY[16], ENTITY[15]) ∧
+            の_動き(ENTITY[15], ENTITY[14]) ∧
+             高い(ATTRIB[22]) ∧
+              ATTRIBUTE_技術(ATTRIB[22], ENTITY[21]) ∧
+               研究する.0_た(EVENT[18], ENTITY[11]) ∧ まで(EVENT[18]) = ENTITY[14] ∧
+                から(EVENT[18]) = ENTITY[13] ∧
+                もっ_た(EVENT[23], ENTITY[11], ENTITY[21]) ∧ 絵師(ENTITY[11]) ∧
+                こと(SITUATION[10], で_あっ_た(EVENT[24], ENTITY[晴川院], ENTITY[11])) ∧
+                 よう(SITUATION[25], 認識する.0(EVENT[26], _, SITUATION[10])) ∧
+                  再評価(ENTITY[29]) ∧
+                   の_動き(ENTITY[29], ENTITY[28]) ∧
+                    ADV_熱心_に(EVENT[18]) ∧
+                     past(EVENT[18]) ∧
+                      past(EVENT[23]) ∧
+                       past(EVENT[24]) ∧
+                        CONJ_が(¬ ∃ EVENT[5] (
+                                   ADV_あまり(EVENT[5]) ∧
+                                    高く(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[1]),
+                         なり(EVENT[27], SITUATION[10], SITUATION[25]) ∧
+                          ある(EVENT[30], ENTITY[28]) ∧ により(EVENT[30]) = ENTITY[7]))
+
+# ::id 111_wikipedia_KYOTO_CLT_00002,111;NJ
+# ::snt 晴川院 の 次代 の 狩野 雅信 （ しょうせんいん ただのぶ 、 1823-1880 ） の 門下 に は 、 明治 初期 の 日本 画壇 の 重鎮 と なっ た 狩野 芳崖 （ 下関 出身 、 1828-1888 ） と 橋本 雅邦 （ 川越 出身 、 1835-1908 ） が い た 。
+∃ EVENT[11] GROUP[3] ENTITY[2] ENTITY[1] (
+ の_次代(ENTITY[晴川院], ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[狩野_雅信]) ∧
+   namely_-ENTITY-(ENTITY[しょうせんいん_ただのぶ_1823-1880], ENTITY[狩野_雅信]) ∧
+    の_門下(ENTITY[狩野_雅信], ENTITY[1]) ∧
+     CONJ_と(∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] (
+           明治_初期(ENTITY[8]) ∧
+            の_日本_画壇(ENTITY[8], ENTITY[7]) ∧
+             の_重鎮(ENTITY[7], ENTITY[6]) ∧
+              なっ_た(EVENT[9], ENTITY[狩野_芳崖]) ∧ と(EVENT[9]) = ENTITY[6] ∧
+               (CD_1828-1888(ENTITY[4]), 下関_出身(ENTITY[4])) ∧
+                namely_-ENTITY-(ENTITY[4], ENTITY[狩野_芳崖]) ∧ past(EVENT[9]) ∧ is_element_of(ENTITY[狩野_芳崖], GROUP[3])),
+      ∃ ENTITY[10] (
+       (CD_1835-1908(ENTITY[10]), 川越_出身(ENTITY[10])) ∧
+        namely_-ENTITY-(ENTITY[10], ENTITY[橋本_雅邦]) ∧ is_element_of(ENTITY[橋本_雅邦], GROUP[3]))) ∧
+      past(EVENT[11]) ∧ い_た(EVENT[11], GROUP[3]) ∧ に(EVENT[11]) = ENTITY[1])
+
+# ::id 112_wikipedia_KYOTO_CLT_00002,112;NJ
+# ::snt 芳崖 と 雅邦 は ともに 地方 の 狩野派系 絵師 の 家 の 出身 で あっ た 。
+∃ EVENT[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] GROUP[1] (
+ CONJ_と(is_element_of(ENTITY[芳崖], GROUP[1]), is_element_of(ENTITY[雅邦], GROUP[1])) ∧
+  地方(ENTITY[6]) ∧
+   の_狩野派系_絵師(ENTITY[6], ENTITY[5]) ∧
+    の_家(ENTITY[5], ENTITY[4]) ∧
+     の_出身(ENTITY[4], ENTITY[3]) ∧
+      past(EVENT[7]) ∧ ともに ENTITY[2] (is_element_of(ENTITY[2], GROUP[1]), で_あっ_た(EVENT[7], ENTITY[2], ENTITY[3])))
+
+# ::id 113_wikipedia_KYOTO_CLT_00002,113;NJ
+# ::snt 職業 絵師 集団 として の 狩野派 は 、 パトロン で あっ た 江戸幕府 の 終焉 とともに その 歴史的 役目 を 終え た 。
+∃ ATTRIB[7] EVENT[5] EVENT[8] ENTITY[4] ENTITY[2] ENTITY[1] ENTITY[6] (
+ 職業_絵師_集団(ENTITY[1]) ∧
+  として_の_xxx(ENTITY[1], ENTITY[狩野派]) ∧
+   歴史的(ATTRIB[7]) ∧
+    ATTRIBUTE_役目(ATTRIB[7], ENTITY[6]) ∧
+     パトロン(ENTITY[4]) ∧
+      で_あっ_た(EVENT[5], ENTITY[江戸幕府], ENTITY[4]) ∧
+       の_終焉(ENTITY[江戸幕府], ENTITY[2]) ∧
+        past(EVENT[5]) ∧
+         past(EVENT[8]) ∧ 終え_た(EVENT[8], ENTITY[狩野派], ENTITY[6]) ∧ とともに(EVENT[8]) = ENTITY[2])

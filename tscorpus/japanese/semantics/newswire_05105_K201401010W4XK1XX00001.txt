@@ -1,0 +1,258 @@
+# ::id 1_K201401010W4XK1XX00001;NJ
+# ::snt プロ野球
+∃ EVENT[2] ENTITY[1] (プロ野球(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_K201401010W4XK1XX00001;NJ
+# ::snt ／ 次代 の Ｎｏ．１ へ
+∃ EVENT[3] ENTITY[2] ENTITY[1] (次代(ENTITY[2]) ∧ の_Ｎｏ．１(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ へ(EVENT[3]) = ENTITY[1])
+
+# ::id 3_K201401010W4XK1XX00001;NJ
+# ::snt ／ 東北楽天 の 松井裕樹
+∃ EVENT[2] ENTITY[1] (東北楽天(ENTITY[1]) ∧ の_xxx(ENTITY[1], ENTITY[松井裕樹]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[松井裕樹])
+
+# ::id 4_K201401010W4XK1XX00001;NJ
+# ::snt 「 ドクターＫ 」 松井裕樹投手 （ １８ ） ＝ 神奈川・桐光学園高 ＝ が 、 仙台 に やっ て 来る 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[ドクターＫ], ENTITY[松井裕樹投手]) ∧
+  CD_１８(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[松井裕樹投手]) ∧
+    神奈川.桐光学園高(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[松井裕樹投手]) ∧ やっ_て_来る(EVENT[3], ENTITY[松井裕樹投手]) ∧ に(EVENT[3]) = ENTITY[仙台])
+
+# ::id 5_K201401010W4XK1XX00001;NJ
+# ::snt 甲子園大会 で 派手 な 奪三振ショー を 披露 し た 高校屈指 の 左腕 は 、 プロ野球 で も 並み居る 強打者 の バット に 空 を 切ら せる の か 。
+∃ ATTRIB[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[1] (
+ 甲子園大会(ENTITY[3]) ∧
+  派手_な(ATTRIB[5]) ∧
+   ATTRIBUTE_奪三振ショー(ATTRIB[5], ENTITY[4]) ∧
+    高校屈指(ENTITY[7]) ∧
+     披露する.0_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[3] ∧ の_左腕(ENTITY[7], ENTITY[1]) ∧
+      past(EVENT[6]) ∧
+       QUEST(∃ EVENT[12] EVENT[15] EVENT[13] ENTITY[11] ENTITY[9] ENTITY[14] ENTITY[8] (
+             プロ野球(ENTITY[11]) ∧
+              並み居る(EVENT[12], ENTITY[9]) ∧ で(EVENT[12]) = ENTITY[11] ∧ 強打者(ENTITY[9]) ∧
+               の_バット(ENTITY[9], ENTITY[8]) ∧
+                空(ENTITY[14]) ∧
+                 せる_の(EVENT[13], ENTITY[1], ENTITY[8], 切ら(EVENT[15], ENTITY[8], ENTITY[14])))))
+
+# ::id 6_K201401010W4XK1XX00001;NJ
+# ::snt 球団創設 ９ 年目 で 初 の 日本一 に 輝い た 東北楽天 で 、 次代 の エース と なる べく 第一歩 を 踏み出す 。
+∃ ENTITY[1] EVENT[6] EVENT[9] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[7] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  (CD_９_年目(ENTITY[4]), 球団創設(ENTITY[4])) ∧
+   初(ENTITY[5]) ∧
+    の_日本一(ENTITY[5], ENTITY[3]) ∧ で_日本一(ENTITY[4], ENTITY[3]) ∧
+     輝い_た(EVENT[6], ENTITY[東北楽天]) ∧ に(EVENT[6]) = ENTITY[3] ∧
+      次代(ENTITY[8]) ∧
+       の_エース(ENTITY[8], ENTITY[7]) ∧
+        第一歩(ENTITY[10]) ∧
+         past(EVENT[6]) ∧
+          なる_べく(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = ENTITY[7] ∧
+           踏み出す(EVENT[11], ENTITY[1], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[東北楽天])
+
+# ::id 7_K201401010W4XK1XX00001;NJ
+# ::snt ２０１３ 年 １２ 月 ８ 日 、 松井裕 は 仙台市 の 日本製紙クリネックススタジアム宮城 （ Ｋスタ宮城 、 ことし １ 月 １ 日 から 楽天Ｋｏｂｏスタジアム宮城 ） を 訪れ た 。
+∃ EVENT[6] GROUP[4] ENTITY[3] TIME[1] ENTITY[2] (
+ 松井裕(ENTITY[2]) ∧
+  CD_２０１３_年_１２_月_８_日(TIME[1]) ∧
+   の_xxx(ENTITY[仙台市], ENTITY[日本製紙クリネックススタジアム宮城]) ∧
+    is_element_of(ENTITY[Ｋスタ宮城], GROUP[4]) ∧
+     ∃ ENTITY[5] (
+      (CD_１_月_１_日(ENTITY[5]), ことし(ENTITY[5])) ∧
+       から_xxx(ENTITY[5], ENTITY[楽天Ｋｏｂｏスタジアム宮城]) ∧ is_element_of(ENTITY[楽天Ｋｏｂｏスタジアム宮城], GROUP[4])) ∧
+     equals(GROUP[4], ENTITY[3]) ∧
+      namely_-ENTITY-(ENTITY[3], ENTITY[日本製紙クリネックススタジアム宮城]) ∧
+       past(EVENT[6]) ∧ 訪れ_た(EVENT[6], ENTITY[2], ENTITY[日本製紙クリネックススタジアム宮城]) ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 8_K201401010W4XK1XX00001;NJ
+# ::snt マウンド で シャドーピッチング を 披露 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  マウンド(ENTITY[2]) ∧
+   シャドーピッチング(ENTITY[3]) ∧ 披露(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 9_K201401010W4XK1XX00001;NJ
+# ::snt 「 眺め が 良かっ た 。
+∃ EVENT[2] ENTITY[1] (眺め(ENTITY[1]) ∧ past(EVENT[2]) ∧ 良かっ_た(EVENT[2], ENTITY[1]))
+
+# ::id 10_K201401010W4XK1XX00001;NJ
+# ::snt この グラウンド で 早く 活躍 し たい 」 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ グラウンド(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧ ADV_早く(EVENT[3]) ∧ 活躍する.0_たい(EVENT[3], ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2])
+
+# ::id 11_K201401010W4XK1XX00001;NJ
+# ::snt １ カ月 ほど 前 、 東北楽天 が 頂点 に 登り詰め た ホームグラウンド で 、 胸 を 高鳴ら せ た 。
+∃ SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] ENTITY[4] ENTITY[5] TIME[3] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  CD_１_カ月(ENTITY[4]) ∧
+   ほど_前(ENTITY[4], TIME[3]) ∧
+    頂点(ENTITY[5]) ∧
+     ホームグラウンド(SITUATION[2],
+      登り詰め_た(EVENT[6], ENTITY[東北楽天]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+       is_contained_in(時間(EVENT[6]), TIME[3])) ∧
+      胸(ENTITY[7]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[8]) ∧ 高鳴ら_せ_た(EVENT[8], ENTITY[1], ENTITY[7]) ∧ で(EVENT[8]) = SITUATION[2])
+
+# ::id 12_K201401010W4XK1XX00001;NJ
+# ::snt 翌９ 日 、 仙台市内 で 開か れ た 新入団選手発表会 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] TIME[1] (
+ CD_翌９_日(TIME[1]) ∧
+  仙台市内(ENTITY[4]) ∧
+   開か_た(EVENT[5], _, ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[4] ∧ 新入団選手発表会(ENTITY[2]) ∧
+    past(EVENT[5]) ∧ xxx(EVENT[6], ENTITY[2]) ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 13_K201401010W4XK1XX00001;NJ
+# ::snt 「 小さい ころ から プロ を 目指し て 努力 し て き た こと が 実っ た 。
+∃ ATTRIB[4] SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  小さい(ATTRIB[4]) ∧
+   ATTRIBUTE_ころ(ATTRIB[4], ENTITY[3]) ∧
+    プロ(ENTITY[5]) ∧
+     こと(SITUATION[2],
+      CONJ_te(目指し_て(EVENT[6], ENTITY[1], ENTITY[5]) ∧ から(EVENT[6]) = ENTITY[3],
+       努力する.0_て_き_た(EVENT[7], ENTITY[1]) ∧ から(EVENT[7]) = ENTITY[3])) ∧
+      past(EVENT[7]) ∧ past(EVENT[8]) ∧ 実っ_た(EVENT[8], (ENTITY[1], SITUATION[2])))
+
+# ::id 14_K201401010W4XK1XX00001;NJ
+# ::snt 強気 な ピッチング を 見 て ほしい 」 。
+∃ ATTRIB[5] ENTITY[2] ENTITY[1] EVENT[6] EVENT[3] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *hearer* ∧
+   強気_な(ATTRIB[5]) ∧
+    ATTRIBUTE_ピッチング(ATTRIB[5], ENTITY[4]) ∧ ほしい(EVENT[3], ENTITY[1], ENTITY[2], 見_て(EVENT[6], ENTITY[2], ENTITY[4])))
+
+# ::id 15_K201401010W4XK1XX00001;NJ
+# ::snt 隣 に 座っ た 星野仙一監督 と ファン 約４００ 人 に 堂々 と アピール し た 。
+∃ ATTRIB[8] ENTITY[1] EVENT[5] EVENT[9] ENTITY[4] GROUP[6] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  隣(ENTITY[4]) ∧
+   CONJ_と(is_element_of(ENTITY[星野仙一監督], GROUP[6]),
+    ∃ ENTITY[7] ((CD_約４００_人(ENTITY[7]), ファン(ENTITY[7])) ∧ is_element_of(ENTITY[7], GROUP[6]))) ∧
+    座っ_た(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ equals(GROUP[6], ENTITY[2]) ∧
+     ADV_堂々(ATTRIB[8]) ∧
+      past(EVENT[5]) ∧
+       past(EVENT[9]) ∧
+        アピールする.0_た(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = ATTRIB[8] ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 16_K201401010W4XK1XX00001;NJ
+# ::snt 鋭く 変化 する 「伝家の宝刀」スライダー が 最大 の 武器 。
+∃ ENTITY[5] ENTITY[4] EVENT[2] EVENT[6] (
+ ADV_鋭く(EVENT[2]) ∧
+  変化する.0(EVENT[2], ENTITY[「伝家の宝刀」スライダー]) ∧
+   最大(ENTITY[5]) ∧ の_武器(ENTITY[5], ENTITY[4]) ∧ xxx(EVENT[6], ENTITY[「伝家の宝刀」スライダー], ENTITY[4]))
+
+# ::id 17_K201401010W4XK1XX00001;NJ
+# ::snt ２ 年生 で 出場 し た ２０１２ 年 夏 の 甲子園 で は 、 初戦 の 今治西 （ 愛媛 ） 戦 で いきなり １ 試合 ２２ 奪三振 の 大会新記録 を 打ち立て た 。
+∃ ENTITY[1] ENTITY[4] EVENT[14] ENTITY[10] ENTITY[8] ENTITY[12] ENTITY[13] ENTITY[11] ENTITY[9] EVENT[6] ENTITY[5] ENTITY[7] ENTITY[2] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  CD_２_年生(ENTITY[5]) ∧
+   (CD_２０１２_年(ENTITY[7]), 夏(ENTITY[7])) ∧
+    出場する.0_た(EVENT[6], ENTITY[4], ENTITY[2]) ∧ で(EVENT[6]) = ENTITY[5] ∧ の_甲子園(ENTITY[7], ENTITY[2]) ∧
+     past(EVENT[6]) ∧
+      ENTITY[1] = *pro* ∧
+       初戦(ENTITY[10]) ∧
+        の_戦(ENTITY[10], ENTITY[9]) ∧
+         今治西(ENTITY[8]) ∧
+          namely_-ENTITY-(ENTITY[8], ENTITY[9]) ∧
+           namely_-ENTITY-(ENTITY[愛媛], ENTITY[9]) ∧
+            (CD_１_２２(ENTITY[13]), 試合(ENTITY[13])) ∧
+             奪三振(ENTITY[12]) ∧
+              namely_-ENTITY-(ENTITY[12], ENTITY[13]) ∧
+               の_大会新記録(ENTITY[13], ENTITY[11]) ∧
+                ADV_いきなり(EVENT[14]) ∧
+                 past(EVENT[14]) ∧
+                  打ち立て_た(EVENT[14], ENTITY[1], ENTITY[11]) ∧ で(EVENT[14]) = ENTITY[9] ∧
+                   で(EVENT[14]) = ENTITY[2])
+
+# ::id 18_K201401010W4XK1XX00001;NJ
+# ::snt 準々決勝 で 敗れる まで ４ 試合 連続 ２ 桁 奪三振 を マーク 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  準々決勝(ENTITY[3]) ∧
+   FACT(SITUATION[2], 敗れる(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3]) ∧
+    (CD_４_２_桁(ENTITY[5]), 試合_連続(ENTITY[5]) ∧ 奪三振(ENTITY[5])) ∧
+     マーク(EVENT[6], ENTITY[1], ENTITY[5]) ∧ まで(EVENT[6]) = SITUATION[2])
+
+# ::id 19_K201401010W4XK1XX00001;NJ
+# ::snt 新た な スター の 誕生 に 球場 は 大いに 沸い た 。
+∃ ATTRIB[3] EVENT[5] ENTITY[2] ENTITY[1] ENTITY[4] (
+ 球場(ENTITY[4]) ∧
+  新た_な(ATTRIB[3]) ∧
+   ATTRIBUTE_スター(ATTRIB[3], ENTITY[2]) ∧
+    の_誕生(ENTITY[2], ENTITY[1]) ∧
+     ADV_大いに(EVENT[5]) ∧ past(EVENT[5]) ∧ 沸い_た(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[1])
+
+# ::id 20_K201401010W4XK1XX00001;NJ
+# ::snt 「 東北 だけじゃなく 、 日本 の 野球ファン を 魅了 する 素材 」 。
+∃ ENTITY[1] EVENT[6] EVENT[7] GROUP[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_だけじゃなく(is_element_of(ENTITY[東北], GROUP[5]), is_element_of(ENTITY[日本], GROUP[5])) ∧
+   の_野球ファン(GROUP[5], ENTITY[4]) ∧
+    魅了する.0(EVENT[6], ENTITY[2], ENTITY[4]) ∧ 素材(ENTITY[2]) ∧ xxx(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 21_K201401010W4XK1XX00001;NJ
+# ::snt 星野監督 は 、 松井裕 を こう 評する 。
+∃ EVENT[1] (ADV_こう(EVENT[1]) ∧ 評する(EVENT[1], ENTITY[星野監督], ENTITY[松井裕]))
+
+# ::id 22_K201401010W4XK1XX00001;NJ
+# ::snt 「 田中 （ 将大 ） の よう に 気持ち を 出す 攻撃的 な 投球 が 魅力 。 プロ という もの を 教え て いき たい 」 と 大きな 期待 を 寄せる 。
+∃ ENTITY[13] ENTITY[7] ATTRIB[6] ATTRIB[3] ENTITY[1] EVENT[10] EVENT[12] EVENT[16] EVENT[4] ENTITY[9] ENTITY[8] ENTITY[11] ENTITY[5] ENTITY[15] ENTITY[14] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  大きな(ATTRIB[3]) ∧
+   ATTRIBUTE_期待(ATTRIB[3], ENTITY[2]) ∧
+    攻撃的_な(ATTRIB[6]) ∧
+     ENTITY[7] = *pro*{ENTITY[1], ENTITY[2]} ∧
+      namely_-ENTITY-(ENTITY[将大], ENTITY[田中]) ∧
+       の_よう(ENTITY[田中], ENTITY[8]) ∧
+        気持ち(ENTITY[9]) ∧
+         ATTRIBUTE_投球(ATTRIB[6], ENTITY[5]) ∧
+          THAT_投球(出す(EVENT[10], ENTITY[7], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[8], ENTITY[5]) ∧
+          魅力(ENTITY[11]) ∧
+           ENTITY[13] = *pro*{ENTITY[田中], ENTITY[将大], ENTITY[5], ENTITY[11], ENTITY[8], ENTITY[9], ENTITY[1], ENTITY[2]} ∧
+            プロ(ENTITY[15]) ∧
+             という_もの(ENTITY[15], ENTITY[14]) ∧
+              寄せる(EVENT[4], ENTITY[1], ENTITY[2],
+               xxx(EVENT[12], ENTITY[5], ENTITY[11]) ∧ 教え_て_いき_たい(EVENT[16], ENTITY[13], ENTITY[14])))
+
+# ::id 23_K201401010W4XK1XX00001;NJ
+# ::snt 松井裕 は ルーキーイヤー の 目標 を 「 怪我 （ けが ） なく 一 年 を 終える 」 と 書い た 。
+∃ ENTITY[5] EVENT[9] EVENT[4] ENTITY[3] ENTITY[6] ENTITY[7] ENTITY[8] ENTITY[2] ENTITY[1] (
+ 松井裕(ENTITY[1]) ∧
+  ルーキーイヤー(ENTITY[3]) ∧
+   の_目標(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     怪我(ENTITY[7]) ∧
+      けが(ENTITY[6]) ∧
+       namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+        CD_一_年(ENTITY[8]) ∧
+         of_ADV_なく(ENTITY[7], EVENT[9]) ∧
+          past(EVENT[4]) ∧ 書い_た(EVENT[4], ENTITY[1], ENTITY[2], 終える(EVENT[9], ENTITY[5], ENTITY[8])))
+
+# ::id 24_K201401010W4XK1XX00001;NJ
+# ::snt 堅実 に 足元 を 見つめる 一方 で 、 「 最終的 に は 球界 を 代表 する 投手 に なり たい 」 と 語る 。
+∃ SITUATION[13] ENTITY[7] SITUATION[2] ENTITY[1] EVENT[5] EVENT[11] EVENT[12] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[10] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  堅実(ENTITY[3]) ∧
+   足元(ENTITY[4]) ∧
+    一方(SITUATION[2], 見つめる(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+     ENTITY[7] = *pro*{ENTITY[1], ENTITY[3], ENTITY[4]} ∧
+      球界(ENTITY[10]) ∧
+       代表する.0(EVENT[11], ENTITY[8], ENTITY[10]) ∧ 投手(ENTITY[8]) ∧
+        ADV_最終的_に_は(SITUATION[13]) ∧
+         語る(EVENT[6], ENTITY[1], FACT(SITUATION[13], なり_たい(EVENT[12], ENTITY[7], ENTITY[8]))) ∧
+          で(EVENT[6]) = SITUATION[2])
+
+# ::id 25_K201401010W4XK1XX00001;NJ
+# ::snt 自身 が 希望 し た 背番号 「 １ 」 同様 、 球界 の ナンバーワン を 目指す 。
+∃ SITUATION[10] ENTITY[5] ENTITY[1] EVENT[6] EVENT[9] ENTITY[2] ENTITY[3] ENTITY[8] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[5] = 自身{ENTITY[1]} ∧
+   希望する.0_た(EVENT[6], ENTITY[5], ENTITY[3]) ∧ 背番号(ENTITY[3]) ∧
+    CD_１(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      球界(ENTITY[8]) ∧
+       の_ナンバーワン(ENTITY[8], ENTITY[7]) ∧
+        past(EVENT[6]) ∧
+         同様(SITUATION[10]) ∧ SITUATION[10] = ENTITY[3] ∧ FACT(SITUATION[10], 目指す(EVENT[9], ENTITY[1], ENTITY[7])))

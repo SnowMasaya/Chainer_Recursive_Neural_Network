@@ -1,0 +1,405 @@
+% ::id 1_poetry_COLERIDGE-1798;AT1-1;NE
+% ::snt KUBLA KHAN
+fof(ex1414052104067,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,kubla__khan_) ) )).
+
+% ::id 2_poetry_COLERIDGE-1798;AT2-1;NE
+% ::snt In Xanadu did Kubla Khan A stately pleasure dome decree : Where Alph , the sacred river , ran Through caverns measureless to man Down to a sunless sea .
+fof(ex1414052104377,axiom,(
+    ? [X1,X2] :
+      ( sacred_1(s0,X1)
+      & river_1(s0,X1)
+      & stately_1(s0,X2)
+      & pleasure_dome_1(s0,X2)
+      & ? [X3,X4,X5,G6,E7] :
+          ( man_1(s0,X3)
+          & sunless_1(s0,X4)
+          & sea_1(s0,X4)
+          & ran_down_2(s0,E7,alph)
+          & through_2(s0,E7,G6)
+          & to_2(s0,E7,X4)
+          & alph = X1
+          & is_measureless_to_2(s0,G6,X3)
+          & caverns_1(s0,G6)
+          & is_where_2(s0,E7,X5)
+          & is_before_2(s0,E7,e0)
+          & ? [E8] :
+              ( is_before_2(s0,E8,e0)
+              & did_decree_3(s0,E8,kubla_khan,X2)
+              & in_2(s0,E8,xanadu)
+              & loc_2(s0,E8,X5) ) ) ) )).
+
+% ::id 3_poetry_COLERIDGE-1798;AT2-2;NE
+% ::snt So twice five miles of fertile ground With walls and towers were girdled round :
+fof(ex1414052104671,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( fertile_1(s0,X1)
+      & ground_1(s0,X1)
+      & ? [G5] :
+          ( walls_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G6] :
+          ( towers_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & twice_five_1(s0,G3)
+      & is_miles_with_2(s0,G3,G2)
+      & is_miles_of_2(s0,G3,X1)
+      & so_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & were_girdled_round_2(s0,E4,G3) ) )).
+
+% ::id 4_poetry_COLERIDGE-1798;AT2-3;NE
+% ::snt And there were gardens bright with sinuous rills , Where blossomed many an incense-bearing tree ;
+fof(ex1414052104982,axiom,(
+    ? [G1,G2,E3,E4] :
+      ( sinuous_1(s0,G1)
+      & rills_1(s0,G1)
+      & is_bright_with_2(s0,G2,G1)
+      & ? [X5] :
+          ( incense_bearing_1(s0,X5)
+          & tree_1(s0,X5)
+          & blossomed_2(s0,E3,X5) )
+      & gardens_1(s0,G2)
+      & is_where_2(s0,E3,G2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & were_2(s0,E4,G2) ) )).
+
+% ::id 5_poetry_COLERIDGE-1798;AT2-4;NE
+% ::snt And here were forests ancient as the hills , Enfolding sunny spots of greenery .
+fof(ex1414052105279,axiom,(
+    ? [G1,X2,G3,G4,S7,E5,E6] :
+      ( hills_1(s0,G1)
+      & greenery_1(s0,X2)
+      & forests_1(s0,G4)
+      & sunny_1(s0,G3)
+      & is_spots_of_2(s0,G3,X2)
+      & here_1(s0,S7)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & is_ancient_as_2(S8,G4,G1)
+          & enfolding_3(S8,E5,G4,G3)
+          & were_2(S8,E6,G4) ) ) )).
+
+% ::id 6_poetry_COLERIDGE-1798;AT3-1;NE
+% ::snt But oh ! that deep romantic chasm which slanted Down the green hill athwart a cedarn cover !
+fof(ex1414052105583,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( green_1(s0,X2)
+      & hill_1(s0,X2)
+      & cedarn_1(s0,X1)
+      & cover_1(s0,X1)
+      & deep_1(s0,X3)
+      & romantic_1(s0,X3)
+      & slanted_2(s0,E4,X3)
+      & down_2(s0,E4,X2)
+      & athwart_2(s0,E4,X1)
+      & chasm_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 7_poetry_COLERIDGE-1798;AT3-2;NE
+% ::snt A savage place ! as holy and enchanted As e'er beneath a waning moon was haunted By woman wailing for her demon-lover !
+fof(ex1414052105887,axiom,(
+    ? [X7,X1,X2,X3,X4,E5,E6] :
+      ( waning_1(s0,X1)
+      & moon_1(s0,X1)
+      & savage_1(s0,X4)
+      & is_as_holy_and_enchanted_as_e_er_beneath_2(s0,X4,X1)
+      & place_1(s0,X4)
+      & choose3(X7,X3,X4,X1)
+      & is_demon_lover_of_2(s0,X2,X7)
+      & wailing_2(s0,E5,X3)
+      & for_2(s0,E5,X2)
+      & woman_1(s0,X3)
+      & is_before_2(s0,E6,e0)
+      & haunted_3(s0,E6,X3,X4) ) )).
+
+% ::id 8_poetry_COLERIDGE-1798;AT4-1;NE
+% ::snt And from this chasm , with ceaseless turmoil seething , As if this earth in fast thick pants were breathing , A mighty fountain momently was forced : Amid whose swift half-intermitted burst Huge fragments vaulted like rebounding hail , Or chaffy grain beneath the thresher's flail :
+fof(ex1414052106231,axiom,(
+    ? [X1,X2,X3,G4,X5,X6,X7,G8,G9,E10,E11,E12,E13] :
+      ( thresher_1(s0,X1)
+      & chasm_1(s0,X3)
+      & is_earth_in_2(s0,X2,G4)
+      & fast_1(s0,G4)
+      & thick_1(s0,G4)
+      & pants_1(s0,G4)
+      & swift_1(s0,X5)
+      & half_intermitted_1(s0,X5)
+      & is_burst_of_2(s0,X5,X7)
+      & mighty_1(s0,X7)
+      & is_like_of_2(s0,G9,G8)
+      & vaulted_3(s0,E10,unspecified,G9)
+      & amid_2(s0,E10,X5)
+      & fountain_1(s0,X7)
+      & ceaseless_1(s0,X6)
+      & turmoil_1(s0,X6)
+      & huge_1(s0,G9)
+      & fragments_1(s0,G9)
+      & ? [X14] :
+          ( rebounding_1(s0,X14)
+          & hail_1(s0,X14)
+          & is_of_2(s0,X14,G8) )
+      & ? [X15,X16] :
+          ( is_flail_of_2(s0,X15,X1)
+          & chaffy_1(s0,X16)
+          & is_grain_beneath_2(s0,X16,X15)
+          & is_of_2(s0,X16,G8) )
+      & is_before_2(s0,E12,e0)
+      & momently_1(s0,E13)
+      & is_before_2(s0,E13,e0)
+      & seething_2(s0,E11,X7)
+      & with_2(s0,E11,X6)
+      & were_breathing_2(s0,E12,X2)
+      & forced_3(s0,E13,unspecified,X7)
+      & from_2(s0,E13,X3) ) )).
+
+% ::id 9_poetry_COLERIDGE-1798;AT4-2;NE
+% ::snt And 'mid these dancing rocks at once and ever It flung up momently the sacred river .
+fof(ex1414052106528,axiom,(
+    ? [X1,G2,X4,E5,E3] :
+      ( sacred_1(s0,X1)
+      & river_1(s0,X1)
+      & dancing_rocks_1(s0,G2)
+      & once_ever_1(s0,E5)
+      & momently_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & flung_up_3(s0,E3,X4,X1)
+      & predicate___mid_2(s0,E3,G2)
+      & at_2(s0,E3,E5) ) )).
+
+% ::id 10_poetry_COLERIDGE-1798;AT5-1;NE
+% ::snt Five miles meandering with a mazy motion Through wood and dale the sacred river ran , Then reached the caverns measureless to man , And sank in tumult to a lifeless ocean :
+fof(ex1414052106841,axiom,(
+    ? [X1,X2,G3,X4,X5,X6,G7,X8,E9,E10,E11,E12] :
+      ( sacred_1(s0,X2)
+      & river_1(s0,X2)
+      & man_1(s0,X1)
+      & is_measureless_to_2(s0,G3,X1)
+      & caverns_1(s0,G3)
+      & mazy_1(s0,X4)
+      & motion_1(s0,X4)
+      & tumult_1(s0,X6)
+      & lifeless_1(s0,X5)
+      & ocean_1(s0,X5)
+      & ? [X13] :
+          ( wood_1(s0,X13)
+          & is_of_2(s0,X13,G7) )
+      & ? [X14] :
+          ( dale_1(s0,X14)
+          & is_of_2(s0,X14,G7) )
+      & five_1(s0,X8)
+      & miles_1(s0,X8)
+      & is_before_2(s0,E10,e0)
+      & then_1(s0,E11)
+      & is_before_2(s0,E11,e0)
+      & is_before_2(s0,E12,e0)
+      & meandering_2(s0,E9,X2)
+      & msr_2(s0,E9,X8)
+      & with_2(s0,E9,X4)
+      & through_2(s0,E9,G7)
+      & ran_2(s0,E10,X2)
+      & reached_3(s0,E11,X2,G3)
+      & sank_2(s0,E12,X2)
+      & in_2(s0,E12,X6)
+      & to_2(s0,E12,X5) ) )).
+
+% ::id 11_poetry_COLERIDGE-1798;AT5-2;NE
+% ::snt And 'mid this tumult Kubla heard from far Ancestral voices prophesying war !
+fof(ex1414052107133,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( tumult_1(s0,X1)
+      & war_1(s0,X2)
+      & far_ancestral_1(s0,G3)
+      & prophesying_3(s0,E4,G3,X2)
+      & voices_1(s0,G3)
+      & is_before_2(s0,E5,e0)
+      & heard_2(s0,E5,kubla)
+      & predicate___mid_2(s0,E5,X1)
+      & from_2(s0,E5,G3) ) )).
+
+% ::id 12_poetry_COLERIDGE-1798;AT6-1;NE
+% ::snt The shadow of the dome of pleasure Floated midway on the waves ; Where was heard the mingled measure From the fountain and the caves .
+fof(ex1414052107444,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,G7,X8,G9,S12,E10,E11] :
+      ( pleasure_1(s0,X1)
+      & is_dome_of_2(s0,X2,X1)
+      & is_shadow_of_2(s0,X5,X2)
+      & mingled_1(s0,X4)
+      & measure_1(s0,X4)
+      & fountain_1(s0,X3)
+      & waves_1(s0,G7)
+      & caves_1(s0,G6)
+      & midway_1(s0,X8)
+      & is_of_2(s0,X3,G9)
+      & is_of_2(s0,G6,G9)
+      & is_where_2(s0,E10,S12)
+      & is_before_2(s0,E10,e0)
+      & heard_3(s0,E10,unspecified,X4)
+      & from_2(s0,E10,G9)
+      & is_before_2(s0,E11,e0)
+      & ? [S13] :
+          ( fact_2(s0,S12,S13)
+          & floated_2(S13,E11,X5)
+          & loc_2(S13,E11,X8)
+          & on_2(S13,E11,G7) ) ) )).
+
+% ::id 13_poetry_COLERIDGE-1798;AT6-2;NE
+% ::snt It was a miracle of rare device , A sunny pleasure-dome with caves of ice !
+fof(ex1414052107744,axiom,(
+    ? [X9,X8,X1,X2,X3,X4,G5,E6,E7] :
+      ( rare_1(s0,X1)
+      & device_1(s0,X1)
+      & is_miracle_of_2(s0,X2,X1)
+      & choose2(X9,X2,X1)
+      & ice_1(s0,X3)
+      & sunny_1(s0,X4)
+      & is_pleasure_dome_with_2(s0,X4,G5)
+      & is_caves_of_2(s0,G5,X3)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & was_3(s0,E6,X8,X2)
+      & was_3(s0,E7,X9,X4) ) )).
+
+% ::id 14_poetry_COLERIDGE-1798;AT7-1;NE
+% ::snt A damsel with a dulcimer In a vision once I saw :
+fof(ex1414052108032,axiom,(
+    ? [X5,X1,X2,X3,E4] :
+      ( dulcimer_1(s0,X1)
+      & is_damsel_with_2(s0,X3,X1)
+      & vision_1(s0,X2)
+      & once_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & saw_3(s0,E4,X5,X3)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 15_poetry_COLERIDGE-1798;AT7-2;NE
+% ::snt It was an Abyssinian maid ,
+fof(ex1414052108313,axiom,(
+    ? [X3,X1,E2] :
+      ( abyssinian_maid_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & was_3(s0,E2,X3,X1) ) )).
+
+% ::id 16_poetry_COLERIDGE-1798;AT7-3;NE
+% ::snt And on her dulcimer she played , Singing of Mount Abora .
+fof(ex1414052108602,axiom,(
+    ? [X5,X4,X1,E2,E3] :
+      ( choose1(X5,X4)
+      & is_dulcimer_of_2(s0,X1,X5)
+      & is_before_2(s0,E3,e0)
+      & singing_2(s0,E2,X4)
+      & of_2(s0,E2,mount_abora)
+      & played_2(s0,E3,X4)
+      & on_2(s0,E3,X1) ) )).
+
+% ::id 17_poetry_COLERIDGE-1798;AT8-1;NE
+% ::snt Could I revive within me Her symphony and song , To such a deep delight 'twould win me , That with music loud and long , I would build that dome in air , That sunny dome ! those caves of ice !
+fof(ex1414052108930,axiom,(
+    ? [X18,X17,X11,X10,X1,X2,X3,X4,G5,G6,X7] :
+      ( air_1(s0,X1)
+      & is_dome_in_2(s0,X4,X1)
+      & sunny_1(s0,X2)
+      & dome_1(s0,X2)
+      & ice_1(s0,X3)
+      & is_caves_of_2(s0,G5,X3)
+      & is_of_2(s0,X2,G6)
+      & is_of_2(s0,G5,G6)
+      & X4 = G6
+      & ! [X12,G8,G9] :
+          ( ( choose1(X12,X7)
+            & is_of_2(s0,G9,X12)
+            & ? [X13] :
+                ( symphony_1(s0,X13)
+                & is_of_2(s0,X13,G8) )
+            & ? [X14] :
+                ( song_1(s0,X14)
+                & is_of_2(s0,X14,G8) )
+            & G9 = G8
+            & ? [E15] :
+                ( revive_3(s0,E15,X10,G9)
+                & within_2(s0,E15,X11) ) )
+         => ? [X16] :
+              ( deep_1(s0,X16)
+              & delight_1(s0,X16)
+              & ? [X19,A22,E20,E21] :
+                  ( xxx_3(s0,E20,X19,A22)
+                  & music_1(s0,X19)
+                  & loud_1(s0,A22)
+                  & long_1(s0,A22)
+                  & build_3(s0,E21,X18,X4)
+                  & with_2(s0,E21,X19) )
+              & ? [E23] :
+                  ( win_3(s0,E23,X7,X17)
+                  & to_2(s0,E23,X16) ) ) ) ) )).
+
+% ::id 18_poetry_COLERIDGE-1798;AT8-2;NE
+% ::snt And all who heard should see them there ,
+fof(ex1414052109226,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [X2] :
+          ( heard_2(s0,E1,X2)
+          & ? [X5,G4,E3] :
+              ( see_3(s0,E3,X2,G4)
+              & loc_2(s0,E3,X5) ) ) ) )).
+
+% ::id 19_poetry_COLERIDGE-1798;AT8-3;NE
+% ::snt And all should cry , Beware ! Beware ! His flashing eyes , his floating hair !
+fof(ex1414052109520,axiom,(
+    ? [X1,G2,E3,E4,E5] :
+      ( ? [X7,G6] :
+          ( choose1(X7,X1)
+          & flashing_1(s0,G6)
+          & is_eyes_of_2(s0,G6,X7)
+          & is_of_2(s0,G6,G2) )
+      & ? [X9,X8] :
+          ( choose1(X9,X1)
+          & floating_1(s0,X8)
+          & is_hair_of_2(s0,X8,X9)
+          & is_of_2(s0,X8,G2) )
+      & ? [S10] :
+          ( cry_3(s0,E5,X1,S10)
+          & beware_3(S10,E3,unspecified,G2)
+          & beware_3(S10,E4,unspecified,G2) ) ) )).
+
+% ::id 20_poetry_COLERIDGE-1798;AT9-1;NE
+% ::snt Weave a circle round him thrice ,
+fof(ex1414052109804,axiom,(
+    ? [X4,X1,T2,E3] :
+      ( circle_1(s0,X1)
+      & thrice_1(s0,T2)
+      & weave_3(s0,E3,unspecified,X1)
+      & round_2(s0,E3,X4)
+      & tmp_2(s0,E3,T2) ) )).
+
+% ::id 21_poetry_COLERIDGE-1798;AT9-2;NE
+% ::snt And close your eyes with holy dread For he on honey-dew hath fed , And drunk the milk of Paradise .
+fof(ex1414052110110,axiom,(
+    ? [X8,X1,X9,X2,X3,G4,E5,E6,E7] :
+      ( is_milk_of_2(s0,X1,paradise)
+      & holy_1(s0,X3)
+      & dread_1(s0,X3)
+      & choose1(X9,X3)
+      & honey_dew_1(s0,X2)
+      & is_eyes_of_2(s0,G4,X8)
+      & hath_fed_2(s0,E5,X9)
+      & on_2(s0,E5,X2)
+      & drunk_3(s0,E6,X9,X1)
+      & close_3(s0,E7,unspecified,G4)
+      & with_2(s0,E7,X3) ) )).
+
+% ::id 22_poetry_COLERIDGE-1798;AT10-1;NE
+% ::snt 1798
+fof(ex1414052110392,axiom,(
+    ? [T1,E2] :
+      ( predicate__1798_1(s0,T1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,T1) ) )).
+

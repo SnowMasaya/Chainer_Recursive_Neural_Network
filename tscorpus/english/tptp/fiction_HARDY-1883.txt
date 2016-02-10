@@ -1,0 +1,2783 @@
+% ::id 1_fiction_HARDY-1883;AT1-1;NE
+% ::snt THE THREE STRANGERS
+fof(ex1414051373435,axiom,(
+    ? [G1,E2] :
+      ( three__1(s0,G1)
+      & strangers__1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 2_fiction_HARDY-1883;AT2-1;NE
+% ::snt Among the few features of agricultural England which retain an appearance but little modified by the lapse of centuries , may be reckoned the high , grassy and furzy downs , coombs , or ewe-leases , as they are indifferently called , that fill a large area of certain counties in the south and south-west .
+fof(ex1414051373845,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,G9,G10,G11] :
+      ( south_1(s0,X1)
+      & south_west_1(s0,X2)
+      & is_lapse_of_2(s0,X3,G11)
+      & high_1(s0,G4)
+      & downs_1(s0,G4)
+      & grassy_1(s0,G5)
+      & downs_1(s0,G5)
+      & furzy_1(s0,G6)
+      & downs_1(s0,G6)
+      & is_of_2(s0,G4,G7)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & G8 = G7
+      & is_of_2(s0,X1,G9)
+      & is_of_2(s0,X2,G9)
+      & G10 = G9
+      & centuries_1(s0,G11)
+      & ? [X12,G13,E14,E15,E16] :
+          ( modified_3(s0,E14,X3,X12)
+          & appearance_1(s0,X12)
+          & is_of_2(s0,G8,G13)
+          & ? [G17] :
+              ( coombs_1(s0,G17)
+              & is_of_2(s0,G17,G13) )
+          & ? [X18,G24,G19,G20,E21,E22,S23] :
+              ( large_1(s0,X18)
+              & is_area_of_2(s0,X18,G19)
+              & choose6(G24,G20,G8,G7,G6,G5,G4)
+              & certain_1(s0,G19)
+              & is_counties_in_2(s0,G19,G10)
+              & fill_3(s0,E22,G20,X18)
+              & is_ewe_leases_as_2(s0,G20,S23)
+              & indifferently_1(s0,E21)
+              & ? [S26] :
+                  ( fact_2(s0,S23,S26)
+                  & called_3(S26,E21,unspecified,G24) )
+              & is_of_2(s0,G20,G13) )
+          & little_1(s0,E14)
+          & ? [G25] :
+              ( retain_3(s0,E15,G25,X12)
+              & is_features_of__2(s0,G25,agricultural_england)
+              & reckoned_3(s0,E16,unspecified,G13)
+              & among_2(s0,E16,G25) ) ) ) )).
+
+% ::id 3_fiction_HARDY-1883;AT2-2;NE
+% ::snt If any mark of human occupation is met with hereon , it usually takes the form of the solitary cottage of some shepherd .
+fof(ex1414051374211,axiom,(
+    ? [X1,X2,X3,X4] :
+      ( shepherd_1(s0,X1)
+      & solitary_1(s0,X2)
+      & is_cottage_of_2(s0,X2,X1)
+      & is_form_of_2(s0,X3,X2)
+      & ! [X5,X6,E7] :
+          ( ( human_1(s0,X5)
+            & occupation_1(s0,X5)
+            & hereon_1(s0,X6) )
+         => ( ? [X8] :
+                ( is_mark_of_2(s0,X8,X5)
+                & met_3(s0,E7,unspecified,X8)
+                & with_2(s0,E7,X6) )
+            & ? [E9] :
+                ( usually_1(s0,E9)
+                & takes_3(s0,E9,X4,X3) ) ) ) ) )).
+
+% ::id 4_fiction_HARDY-1883;AT3-1;NE
+% ::snt Fifty years ago such a lonely cottage stood on such a down , and may possibly be standing there now .
+fof(ex1414051374557,axiom,(
+    ? [T1,E2] :
+      ( fifty_1(s0,T1)
+      & years_1(s0,T1)
+      & is_ago_tmp_2(s0,E2,T1)
+      & is_before_2(s0,E2,e0)
+      & ? [X3] :
+          ( lonely_1(s0,X3)
+          & cottage_1(s0,X3)
+          & ? [X4] :
+              ( down_1(s0,X4)
+              & stood_2(s0,E2,X3)
+              & on_2(s0,E2,X4) )
+          & ? [X6,E5] :
+              ( possibly_1(s0,E5)
+              & now_1(s0,E5)
+              & be_standing_2(s0,E5,X3)
+              & loc_2(s0,E5,X6) ) ) ) )).
+
+% ::id 5_fiction_HARDY-1883;AT3-2;NE
+% ::snt In spite of its loneliness , however , the spot , by actual measurement , was not more than five miles from a county-town .
+fof(ex1414051374910,axiom,(
+    ? [X1] :
+      ( spot_1(s0,X1)
+      & ? [X8,X2,X3,X4,X5,G6,E7] :
+          ( choose1(X8,X1)
+          & is_loneliness_of_2(s0,X2,X8)
+          & is_spite_of_2(s0,X5,X2)
+          & actual_1(s0,X4)
+          & measurement_1(s0,X4)
+          & county_town_1(s0,X3)
+          & five_1(s0,G6)
+          & miles_1(s0,G6)
+          & however_1(s0,E7)
+          & is_before_2(s0,E7,e0)
+          & ? [X9] :
+              ( is_than_2(s0,X9,G6)
+              & was_2(s0,E7,X1)
+              & in_2(s0,E7,X5)
+              & by_2(s0,E7,X4)
+              & msr_2(s0,E7,X9)
+              & from_2(s0,E7,X3) ) ) ) )).
+
+% ::id 6_fiction_HARDY-1883;AT3-3;NE
+% ::snt Yet that affected it little .
+fof(ex1414051375246,axiom,(
+    ? [X3,X2,E1] :
+      ( yet_1(s0,E1)
+      & little_1(s0,E1)
+      & is_before_2(s0,E1,e0)
+      & affected_3(s0,E1,X2,X3) ) )).
+
+% ::id 7_fiction_HARDY-1883;AT3-4;NE
+% ::snt Five miles of irregular upland , during the long inimical seasons , with their sleets , snows , rains , and mists , afford withdrawing space enough to isolate a Timon or a Nebuchadnezzar ; much less , in fair weather , to please that less repellent tribe , the poets , philosophers , artists , and others who ' conceive and meditate of pleasant things . '
+fof(ex1414051375646,axiom,(
+    ? [X1,G26,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,G14,E15,E16,X17,X18,X19,G20,G21,E22,E23,E24,E25,S27] :
+      ( less_repellent_1(s0,X1)
+      & is_tribe_of__2(s0,X1,G13)
+      & choose1(G26,G21)
+      & is_of_2(s0,G7,G26)
+      & sleets_1(s0,G2)
+      & snows_1(s0,G3)
+      & rains_1(s0,G4)
+      & mists_1(s0,G5)
+      & is_of_2(s0,G2,G6)
+      & is_of_2(s0,G3,G6)
+      & is_of_2(s0,G4,G6)
+      & is_of_2(s0,G5,G6)
+      & G7 = G6
+      & long_inimical_1(s0,G14)
+      & is_seasons_with_2(s0,G14,G7)
+      & poets_1(s0,G8)
+      & philosophers_1(s0,G9)
+      & artists_1(s0,G10)
+      & pleasant_1(s0,G11)
+      & things_1(s0,G11)
+      & is_of_2(s0,G8,G12)
+      & is_of_2(s0,G9,G12)
+      & is_of_2(s0,G10,G12)
+      & ? [G28] :
+          ( conceive_2(s0,E15,G28)
+          & meditate_2(s0,E16,G28)
+          & of_2(s0,E16,G11)
+          & is_of_2(s0,G28,G12) )
+      & G13 = G12
+      & irregular_1(s0,X17)
+      & upland_1(s0,X17)
+      & fair_1(s0,X18)
+      & weather_1(s0,X18)
+      & ? [S29] :
+          ( enough_2(s0,X19,S29)
+          & isolate_3(S29,E22,unspecified,G20) )
+      & much_1(s0,X19)
+      & less_1(s0,X19)
+      & is_in_2(s0,X19,X18)
+      & space_1(s0,X19)
+      & five_1(s0,G21)
+      & is_miles_of_2(s0,G21,X17)
+      & is_of_2(s0,timon,G20)
+      & is_of_2(s0,nebuchadnezzar,G20)
+      & ? [S31] :
+          ( fact_2(s0,S27,S31)
+          & withdrawing_3(S31,E24,G21,X19) )
+      & afford_3(s0,E25,G21,S27)
+      & during_2(s0,E25,G14) ) )).
+
+% ::id 8_fiction_HARDY-1883;AT4-1;NE
+% ::snt Some old earthen camp or barrow , some clump of trees , at least some starved fragment of ancient hedge is usually taken advantage of in the erection of these forlorn dwellings .
+fof(ex1414051376039,axiom,(
+    ? [X1,G2,X3,G4,E5] :
+      ( is_erection_of_2(s0,X1,G2)
+      & forlorn_1(s0,G2)
+      & dwellings_1(s0,G2)
+      & is_advantage_of_in_2(s0,X3,X1)
+      & ? [X6] :
+          ( old_1(s0,X6)
+          & earthen_camp_1(s0,X6)
+          & is_of_2(s0,X6,G4) )
+      & ? [X7] :
+          ( barrow_1(s0,X7)
+          & is_of_2(s0,X7,G4) )
+      & ? [X8,G9] :
+          ( is_clump_of_2(s0,X8,G9)
+          & trees_1(s0,G9)
+          & is_of_2(s0,X8,G4) )
+      & ? [X10,X11] :
+          ( ancient_1(s0,X10)
+          & hedge_1(s0,X10)
+          & ? [X12] :
+              ( starved_1(s0,X11)
+              & is_fragment_of_2(s0,X11,X10)
+              & is_fragment_at_2(s0,X11,X12) )
+          & is_of_2(s0,X11,G4) )
+      & usually_1(s0,E5)
+      & taken_4(s0,E5,unspecified,X3,G4) ) )).
+
+% ::id 9_fiction_HARDY-1883;AT4-2;NE
+% ::snt But , in the present case , such a kind of shelter had been disregarded .
+fof(ex1414051376384,axiom,(
+    ? [X1,X2,E3] :
+      ( present_1(s0,X1)
+      & case_1(s0,X1)
+      & shelter_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & ? [X4] :
+          ( is_kind_of_2(s0,X4,X2)
+          & had_disregarded_3(s0,E3,unspecified,X4)
+          & in_2(s0,E3,X1) ) ) )).
+
+% ::id 10_fiction_HARDY-1883;AT4-3;NE
+% ::snt Higher Crowstairs , as the house was called , stood quite detached and undefended .
+fof(ex1414051376727,axiom,(
+    ? [X1,E2,E3,S4] :
+      ( house_1(s0,X1)
+      & is_as_2(s0,higher_crowstairs,S4)
+      & is_before_2(s0,E2,e0)
+      & is_before_2(s0,E3,e0)
+      & ? [S5] :
+          ( fact_2(s0,S4,S5)
+          & called_3(S5,E2,unspecified,X1) )
+      & quite_detached_1(s0,higher_crowstairs)
+      & undefended_1(s0,higher_crowstairs)
+      & stood_2(s0,E3,higher_crowstairs) ) )).
+
+% ::id 11_fiction_HARDY-1883;AT4-4;NE
+% ::snt The only reason for its precise situation seemed to be the crossing of two footpaths at right angles hard by , which may have crossed there and thus for a good five hundred years .
+fof(ex1414051377104,axiom,(
+    ? [X6,X1,X2,X3,G4,G5] :
+      ( precise_1(s0,X1)
+      & is_situation_of_2(s0,X1,X6)
+      & is_reason_for_2(s0,X3,X1)
+      & hard_by_1(s0,X2)
+      & ? [G10,E11] :
+          ( five_hundred_1(s0,G10)
+          & good_1(s0,G10)
+          & years_1(s0,G10)
+          & there_thus_1(s0,E11)
+          & have_crossed_2(s0,E11,X2)
+          & for_2(s0,E11,G10) )
+      & is_crossing_at_2(s0,X2,G4)
+      & is_crossing_of_2(s0,X2,G5)
+      & two_1(s0,G5)
+      & footpaths_1(s0,G5)
+      & right_1(s0,G4)
+      & angles_1(s0,G4)
+      & ? [X7] :
+          ( is_of_2(s0,X7,X3)
+          & ? [E8,E9] :
+              ( is_before_2(s0,E9,e0)
+              & ? [S12] :
+                  ( seemed_2(s0,E9,S12)
+                  & be_3(S12,E8,X7,X2) ) ) ) ) )).
+
+% ::id 12_fiction_HARDY-1883;AT4-5;NE
+% ::snt Hence the house was exposed to the elements on all sides .
+fof(ex1414051377446,axiom,(
+    ? [X1,G2,E3] :
+      ( house_1(s0,X1)
+      & elements_1(s0,G2)
+      & hence_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & ? [G4] :
+          ( sides_1(s0,G4)
+          & exposed_3(s0,E3,unspecified,X1)
+          & to_2(s0,E3,G2)
+          & on_2(s0,E3,G4) ) ) )).
+
+% ::id 13_fiction_HARDY-1883;AT4-6;NE
+% ::snt But , though the wind up here blew unmistakably when it did blow , and the rain hit hard whenever it fell , the various weathers of the winter season were not quite so formidable on the coomb as they were imagined to be by dwellers on low ground .
+fof(ex1414051377850,axiom,(
+    ? [X1,X2,X3,X4,G5] :
+      ( winter_season_1(s0,X1)
+      & is_wind_up_2(s0,X2)
+      & rain_1(s0,X3)
+      & coomb_1(s0,X4)
+      & various_1(s0,G5)
+      & is_weathers_of_2(s0,G5,X1)
+      & ? [X6,G25,G7,A23,S18,S13,E8,E9,E10,S24,S11] :
+          ( low_1(s0,X6)
+          & ground_1(s0,X6)
+          & choose1(G25,G5)
+          & is_dwellers_on_2(s0,G7,X6)
+          & is_quite_so_formidable_as_2(s0,A23,S24)
+          & is_quite_so_formidable_on_2(s0,A23,X4)
+          & unmistakably_1(s0,S13)
+          & hard_1(s0,S18)
+          & is_before_2(s0,E9,e0)
+          & is_before_2(s0,E10,e0)
+          & ? [S26] :
+              ( fact_2(s0,S11,S26)
+              & ? [S27] :
+                  ( fact_2(S26,S13,S27)
+                  & ? [X16,T14,E15] :
+                      ( choose2(X16,X2,X1)
+                      & did_blow_2(S27,E15,X16)
+                      & is_when_2(S27,E15,T14)
+                      & is_before_2(S27,E15,e0)
+                      & ? [E17] :
+                          ( is_before_2(S27,E17,e0)
+                          & blew_2(S27,E17,X2)
+                          & tmp_2(S27,E17,T14) ) ) )
+              & ? [S28] :
+                  ( fact_2(S26,S18,S28)
+                  & ? [X21,T19,E20] :
+                      ( choose3(X21,X3,X2,X1)
+                      & fell_2(S28,E20,X21)
+                      & whenever_1(S28,E20)
+                      & is_before_2(S28,E20,e0)
+                      & ? [E22] :
+                          ( is_before_2(S28,E22,e0)
+                          & hit_2(S28,E22,X3)
+                          & tmp_2(S28,E22,T19) ) ) ) )
+          & ? [S29] :
+              ( fact_2(s0,S24,S29)
+              & ? [S30] :
+                  ( imagined_4(S29,E9,G7,G25,S30)
+                  & be_2(S30,E8,G25) ) )
+          & were_3(s0,E10,G5,A23)
+          & though_2(s0,E10,S11) ) ) )).
+
+% ::id 14_fiction_HARDY-1883;AT4-7;NE
+% ::snt The raw rimes were not so pernicious as in the hollows , and the frosts were scarcely so severe .
+fof(ex1414051378201,axiom,(
+    ? [G1,G2,G3,A7,E4] :
+      ( raw_1(s0,G2)
+      & rimes_1(s0,G2)
+      & hollows_1(s0,G1)
+      & frosts_1(s0,G3)
+      & scarcely_so_severe_1(s0,A7)
+      & is_before_2(s0,E4,e0)
+      & ? [A6,E5] :
+          ( is_so_pernicious_as_in_2(s0,A6,G1)
+          & is_before_2(s0,E5,e0)
+          & were_3(s0,E5,G2,A6) )
+      & were_3(s0,E4,G3,A7) ) )).
+
+% ::id 15_fiction_HARDY-1883;AT4-8;NE
+% ::snt When the shepherd and his family who tenanted the house were pitied for their sufferings from the exposure , they said that upon the whole they were less inconvenienced by ' wuzzes and flames ' -LRB- hoarses and phlegms -RRB- than when they had lived by the stream of a snug neighbouring valley .
+fof(ex1414051378610,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7] :
+      ( house_1(s0,X1)
+      & shepherd_1(s0,X2)
+      & exposure_1(s0,X3)
+      & whole_1(s0,X6)
+      & snug_1(s0,X4)
+      & neighbouring_1(s0,X4)
+      & valley_1(s0,X4)
+      & is_stream_of_2(s0,X5,X4)
+      & ! [G15,G8,G9,G10,E11,E12] :
+          ( ( tenanted_3(s0,E11,G10,X1)
+            & is_of_2(s0,X2,G8)
+            & ? [X14,X13] :
+                ( choose2(X14,X2,X1)
+                & is_family_of_2(s0,X13,X14)
+                & is_of_2(s0,X13,G8) )
+            & G10 = G8
+            & choose3(G15,G10,G8,G7)
+            & is_sufferings_of_2(s0,G9,G15)
+            & is_before_2(s0,E11,e0)
+            & is_before_2(s0,E12,e0) )
+         => ( pitied_3(s0,E12,unspecified,G10)
+            & for_2(s0,E12,G9)
+            & from_2(s0,E12,X3)
+            & ? [G21,G16,G17,G18,A22,E19,E20] :
+                ( choose4(G21,G7,G10,G9,G8)
+                & ? [G23] :
+                    ( wuzzes_1(s0,G23)
+                    & is_of_2(s0,G23,G16) )
+                & ? [G24] :
+                    ( flames_1(s0,G24)
+                    & is_of_2(s0,G24,G16) )
+                & G18 = G16
+                & ? [G25] :
+                    ( hoarses_1(s0,G25)
+                    & is_of_2(s0,G25,G17) )
+                & ? [G26] :
+                    ( phlegms_1(s0,G26)
+                    & is_of_2(s0,G26,G17) )
+                & G18 = G17
+                & ? [G29,T27,E28] :
+                    ( choose8(G29,G18,G17,G16,G21,G7,G10,G9,G8)
+                    & had_lived_2(s0,E28,G29)
+                    & tmp_2(s0,E28,T27)
+                    & by_2(s0,E28,X5)
+                    & is_before_2(s0,E28,E20)
+                    & is_less_inconvenienced_by_2(s0,A22,G18)
+                    & is_less_inconvenienced_than_2(s0,A22,T27) )
+                & is_before_2(s0,E19,E20)
+                & is_before_2(s0,E20,e0)
+                & ? [S30] :
+                    ( said_3(s0,E20,G7,S30)
+                    & were_3(S30,E19,G21,A22)
+                    & upon_2(S30,E19,X6) ) ) ) ) ) )).
+
+% ::id 16_fiction_HARDY-1883;AT5-1;NE
+% ::snt The night of March 28 , 182- , was precisely one of the nights that were wont to call forth these expressions of commiseration .
+fof(ex1414051378976,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,X8,E9] :
+      ( is_night_of_2(s0,X2,G3)
+      & commiseration_1(s0,X1)
+      & march_28_182_1(s0,G3)
+      & is_expressions_of_2(s0,G4,X1)
+      & ? [S10] :
+          ( were_wont_3(s0,E7,G5,S10)
+          & call_forth_3(S10,E6,G5,G4) )
+      & nights_1(s0,G5)
+      & is_before_2(s0,E7,e0)
+      & is_one_of_2(s0,X8,G5)
+      & precisely_1(s0,E9)
+      & is_before_2(s0,E9,e0)
+      & was_3(s0,E9,X2,X8) ) )).
+
+% ::id 17_fiction_HARDY-1883;AT5-2;NE
+% ::snt The level rainstorm smote walls , slopes , and hedges like the clothyard shafts of Senlac and Crecy .
+fof(ex1414051379324,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( level_1(s0,X1)
+      & rainstorm_1(s0,X1)
+      & is_of_2(s0,senlac,G2)
+      & is_of_2(s0,crecy,G2)
+      & clothyard_1(s0,G3)
+      & is_shafts_of_2(s0,G3,G2)
+      & ? [G6] :
+          ( walls_1(s0,G6)
+          & is_of_2(s0,G6,G4) )
+      & ? [G7] :
+          ( slopes_1(s0,G7)
+          & is_of_2(s0,G7,G4) )
+      & ? [G8] :
+          ( hedges_1(s0,G8)
+          & is_of_2(s0,G8,G4) )
+      & is_before_2(s0,E5,e0)
+      & is_like_of_2(s0,G4,G3)
+      & smote_3(s0,E5,X1,G4) ) )).
+
+% ::id 18_fiction_HARDY-1883;AT5-3;NE
+% ::snt Such sheep and outdoor animals as had no shelter stood with their buttocks to the winds ; while the tails of little birds trying to roost on some scraggy thorn were blown inside-out like umbrellas .
+ERROR: Line 15 Char 20 Token "(" continuing with "G7) &
+"
+
+% ::id 19_fiction_HARDY-1883;AT5-4;NE
+% ::snt The gable-end of the cottage was stained with wet ,
+fof(ex1414051380041,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( cottage_1(s0,X1)
+      & is_gable_end_of_2(s0,X2,X1)
+      & wet_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & stained_3(s0,E4,unspecified,X2)
+      & with_2(s0,E4,X3) ) )).
+
+% ::id 20_fiction_HARDY-1883;AT5-4;NE
+% ::snt and the eavesdroppings flapped against the wall .
+fof(ex1414051380375,axiom,(
+    ? [X1,G2,E3] :
+      ( wall_1(s0,X1)
+      & eavesdroppings_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & flapped_2(s0,E3,G2)
+      & against_2(s0,E3,X1) ) )).
+
+% ::id 21_fiction_HARDY-1883;AT5-5;NE
+% ::snt Yet never was commiseration for the shepherd more misplaced .
+fof(ex1414051380711,axiom,(
+    ? [X1,X2,E3] :
+      ( shepherd_1(s0,X1)
+      & is_commiseration_for_2(s0,X2,X1)
+      & yet_1(s0,E3)
+      & never_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & more_1(s0,E3)
+      & misplaced_3(s0,E3,unspecified,X2) ) )).
+
+% ::id 22_fiction_HARDY-1883;AT5-6;NE
+% ::snt For that cheerful rustic was entertaining a large party in glorification of the christening of his second girl .
+fof(ex1414051381061,axiom,(
+    ? [X7,X1,X2,X3,X4,X5,E6] :
+      ( cheerful_1(s0,X3)
+      & rustic_1(s0,X3)
+      & choose1(X7,X3)
+      & second_1(s0,X1)
+      & is_girl_of_2(s0,X1,X7)
+      & is_christening_of_2(s0,X2,X1)
+      & is_glorification_of_2(s0,X4,X2)
+      & large_1(s0,X5)
+      & is_party_in_2(s0,X5,X4)
+      & is_before_2(s0,E6,e0)
+      & was_entertaining_3(s0,E6,X3,X5) ) )).
+
+% ::id 23_fiction_HARDY-1883;AT6-1;NE
+% ::snt The guests had arrived before the rain began to fall , and they were all now assembled in the chief or living room of the dwelling .
+fof(ex1414051381426,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,G7,G13,E8,E9,E10,E11,S12] :
+      ( rain_1(s0,X1)
+      & dwelling_1(s0,X2)
+      & chief_1(s0,X3)
+      & room_1(s0,X3)
+      & living_1(s0,X4)
+      & room_1(s0,X4)
+      & guests_1(s0,G5)
+      & is_of_2(s0,G7,X2)
+      & is_of_2(s0,X3,G6)
+      & is_of_2(s0,X4,G6)
+      & G7 = G6
+      & choose1(G13,G5)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & now_1(s0,E11)
+      & is_before_2(s0,E11,e0)
+      & ? [S15] :
+          ( fact_2(s0,S12,S15)
+          & ? [S16] :
+              ( began_3(S15,E9,X1,S16)
+              & fall_2(S16,E8,X1) ) )
+      & had_arrived_2(s0,E10,G5)
+      & before_2(s0,E10,S12)
+      & ? [X14] :
+          ( is_of_2(s0,X14,G13)
+          & assembled_3(s0,E11,unspecified,X14)
+          & in_2(s0,E11,G7) ) ) )).
+
+% ::id 24_fiction_HARDY-1883;AT6-2;NE
+% ::snt A glance into the apartment at eight o'clock on this eventful evening would have resulted in the opinion that it was as cosy and comfortable a nook as could be wished for in boisterous weather .
+fof(ex1414051381821,axiom,(
+    ? [X9,X1,X2,X3,A12,A10,E4,X5,G6,T7] :
+      ( apartment_1(s0,X1)
+      & choose2(X9,X5,X1)
+      & nook_1(s0,X2)
+      & ? [S15] :
+          ( opinion_2(s0,X3,S15)
+          & was_3(S15,E4,X9,A10) )
+      & as_1(s0,A10)
+      & cosy_1(s0,A10)
+      & is_comfortable_of_2(s0,A10,X2)
+      & ? [A11] :
+          ( ? [X13,E14] :
+              ( boisterous_1(s0,X13)
+              & weather_1(s0,X13)
+              & be_wished_for_3(s0,E14,unspecified,A12)
+              & in_2(s0,E14,X13) )
+          & is_as_2(s0,A10,A11) )
+      & is_before_2(s0,E4,e0)
+      & is_glance_on_2(s0,X5,T7)
+      & is_glance_at_2(s0,X5,G6)
+      & is_glance_into_2(s0,X5,X1)
+      & eight_1(s0,G6)
+      & eventful_1(s0,T7)
+      & evening_1(s0,T7)
+      & ? [E8] :
+          ( have_resulted_2(s0,E8,X5)
+          & in_2(s0,E8,X3) ) ) )).
+
+% ::id 25_fiction_HARDY-1883;AT6-3;NE
+% ::snt The calling of its inhabitant was proclaimed by a number of highly-polished sheep-crooks without stems that were hung ornamentally over the fireplace , the curl of each shining crook varying from the antiquated type engraved in the patriarchal pictures of old family Bibles to the most approved fashion of the last local sheep-fair .
+fof(ex1414051382212,axiom,(
+    ? [X17,X1,X2,X3,X4,X5,X6,X7,G8,G9,E10,X18,X11,G12,G13,S19,E14,E15,E16] :
+      ( is_inhabitant_of_2(s0,X1,X17)
+      & is_calling_of_2(s0,X7,X1)
+      & fireplace_1(s0,X6)
+      & ? [X20] :
+          ( shining_1(s0,X20)
+          & crook_1(s0,X20)
+          & is_curl_of_2(s0,X5,X20) )
+      & antiquated_1(s0,X4)
+      & engraved_3(s0,E10,unspecified,X4)
+      & in_2(s0,E10,G9)
+      & type_1(s0,X4)
+      & last_1(s0,X2)
+      & local_sheep_fair_1(s0,X2)
+      & most_approved_1(s0,X3)
+      & is_fashion_of_2(s0,X3,X2)
+      & old_1(s0,G8)
+      & family_bibles_1(s0,G8)
+      & patriarchal_1(s0,G9)
+      & is_pictures_of_2(s0,G9,G8)
+      & is_number_of_2(s0,X11,G13)
+      & choose3(X18,X11,X7,X1)
+      & stems_1(s0,G12)
+      & highly_polished_1(s0,G13)
+      & is_sheep_crooks_without_2(s0,G13,G12)
+      & ornamentally_1(s0,S19)
+      & is_before_2(s0,E15,e0)
+      & is_before_2(s0,E16,e0)
+      & ? [S21] :
+          ( fact_2(s0,S19,S21)
+          & varying_2(S21,E14,X5)
+          & from_2(S21,E14,X4)
+          & to_2(S21,E14,X3)
+          & hung_3(S21,E15,unspecified,X18)
+          & over_2(S21,E15,X6) )
+      & proclaimed_3(s0,E16,X11,X7) ) )).
+
+% ::id 26_fiction_HARDY-1883;AT6-4;NE
+% ::snt The room was lighted by half-a-dozen candles , having wicks only a trifle smaller than the grease which enveloped them , in candlesticks that were never used but at high-days , holy-days , and family feasts .
+fof(ex1414051382611,axiom,(
+    ? [X1,X2,G13,E3,G4,G5,G6,G7,A12,X8,E9,E10,E11] :
+      ( room_1(s0,X2)
+      & enveloped_3(s0,E3,X1,G13)
+      & grease_1(s0,X1)
+      & choose2(G13,G4,G7)
+      & is_before_2(s0,E3,e0)
+      & wicks_1(s0,G4)
+      & ? [G14] :
+          ( high_days_1(s0,G14)
+          & is_of_2(s0,G14,G5) )
+      & ? [G15] :
+          ( holy_days_1(s0,G15)
+          & is_of_2(s0,G15,G5) )
+      & ? [G16] :
+          ( family_feasts_1(s0,G16)
+          & is_of_2(s0,G16,G5) )
+      & used_3(s0,E10,unspecified,G6)
+      & but_at_2(s0,E10,G5)
+      & candlesticks_1(s0,G6)
+      & half_a_dozen_1(s0,G7)
+      & having_3(s0,E9,G7,G4)
+      & attribute_2(s0,E9,A12)
+      & is_candles_in_2(s0,G7,G6)
+      & only_1(s0,A12)
+      & is_smaller_msr_2(s0,A12,X8)
+      & is_than_2(s0,A12,X1)
+      & trifle_1(s0,X8)
+      & never_1(s0,E10)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & lighted_3(s0,E11,G7,X2) ) )).
+
+% ::id 27_fiction_HARDY-1883;AT6-5;NE
+% ::snt The lights were scattered about the room , two of them standing on the chimney-piece .
+fof(ex1414051382960,axiom,(
+    ? [X1,X2,G3,G7,G4,E5,E6] :
+      ( room_1(s0,X2)
+      & chimney_piece_1(s0,X1)
+      & lights_1(s0,G3)
+      & choose1(G7,G3)
+      & two_1(s0,G4)
+      & is_of_2(s0,G4,G7)
+      & is_before_2(s0,E6,e0)
+      & standing_2(s0,E5,G4)
+      & on_2(s0,E5,X1)
+      & scattered_3(s0,E6,unspecified,G3)
+      & about_2(s0,E6,X2) ) )).
+
+% ::id 28_fiction_HARDY-1883;AT6-6;NE
+% ::snt This position of candles was in itself significant .
+fof(ex1414051383299,axiom,(
+    ? [X1,G2,X4,A5,E3] :
+      ( is_position_of_2(s0,X1,G2)
+      & candles_1(s0,G2)
+      & choose1(X4,X1)
+      & significant_1(s0,A5)
+      & is_before_2(s0,E3,e0)
+      & was_3(s0,E3,X1,A5)
+      & in_2(s0,E3,X4) ) )).
+
+% ::id 29_fiction_HARDY-1883;AT6-7;NE
+% ::snt Candles on the chimney-piece always meant a party .
+fof(ex1414051383633,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( chimney_piece_1(s0,X1)
+      & party_1(s0,X2)
+      & is_candles_on_2(s0,G3,X1)
+      & always_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & meant_3(s0,E4,G3,X2) ) )).
+
+% ::id 30_fiction_HARDY-1883;AT7-1;NE
+% ::snt On the hearth , in front of a back-brand to give substance , blazed a fire of thorns , that crackled ' like the laughter of the fool . '
+fof(ex1414051384002,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,A12,E9,E10,E11] :
+      ( fool_1(s0,X1)
+      & is_laughter_of_2(s0,X2,X1)
+      & hearth_1(s0,X3)
+      & crackled_3(s0,E9,X7,A12)
+      & is_fire_of__2(s0,X7,G8)
+      & substance_1(s0,X4)
+      & give_3(s0,E10,X5,X4)
+      & back_brand_1(s0,X5)
+      & is_front_of_2(s0,X6,X5)
+      & thorns_1(s0,G8)
+      & is_like_of_2(s0,A12,X2)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E11,e0)
+      & blazed_2(s0,E11,X7)
+      & on_2(s0,E11,X3)
+      & in_2(s0,E11,X6) ) )).
+
+% ::id 31_fiction_HARDY-1883;AT8-1;NE
+% ::snt Nineteen persons were gathered here .
+fof(ex1414051384335,axiom,(
+    ? [G1,E2] :
+      ( nineteen_1(s0,G1)
+      & persons_1(s0,G1)
+      & here_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & gathered_3(s0,E2,unspecified,G1) ) )).
+
+% ::id 32_fiction_HARDY-1883;AT8-2;NE
+% ::snt Of these , five women , wearing gowns of various bright hues , sat in chairs along the wall ;
+fof(ex1414051384689,axiom,(
+    ? [X1,G8,G2,G3,G4,G5,E6,E7] :
+      ( wall_1(s0,X1)
+      & various_1(s0,G2)
+      & bright_hues_1(s0,G2)
+      & is_gowns_of_2(s0,G3,G2)
+      & five_1(s0,G5)
+      & wearing_3(s0,E6,G5,G3)
+      & women_1(s0,G5)
+      & choose2(G8,G3,G2)
+      & is_chairs_along_2(s0,G4,X1)
+      & is_before_2(s0,E7,e0)
+      & sat_2(s0,E7,G5)
+      & of_2(s0,E7,G8)
+      & in_2(s0,E7,G4) ) )).
+
+% ::id 33_fiction_HARDY-1883;AT8-3;NE
+% ::snt girls shy and not shy filled the window-bench ;
+fof(ex1414051385026,axiom,(
+    ? [X1,G2,E3] :
+      ( window_bench_1(s0,X1)
+      & shy_1(s0,G2)
+      & shy_1(s0,G2)
+      & girls_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & filled_3(s0,E3,G2,X1) ) )).
+
+% ::id 34_fiction_HARDY-1883;AT8-4;NE
+% ::snt four men , including Charley Jake the hedge-carpenter , Elijah New the parish-clerk , and John Pitcher , a neighbouring dairyman , the shepherd's father-in-law , lolled in the settle ;
+fof(ex1414051385380,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,E7] :
+      ( hedge_carpenter_1(s0,X1)
+      & parish_clerk_1(s0,X2)
+      & shepherd_1(s0,X3)
+      & father_in_law_1(s0,X3)
+      & settle_1(s0,X4)
+      & charley_jake = X1
+      & is_of_2(s0,charley_jake,G5)
+      & elijah_new = X2
+      & is_of_2(s0,elijah_new,G5)
+      & ? [X8] :
+          ( neighbouring_1(s0,X8)
+          & dairyman_1(s0,X8)
+          & john_pitcher = X8
+          & john_pitcher = X3
+          & is_of_2(s0,john_pitcher,G5) )
+      & four_1(s0,G6)
+      & is_men_including_2(s0,G6,G5)
+      & is_before_2(s0,E7,e0)
+      & lolled_2(s0,E7,G6)
+      & in_2(s0,E7,X4) ) )).
+
+% ::id 35_fiction_HARDY-1883;AT8-5;NE
+% ::snt a young man and maid , who were blushing over tentative pourparlers on a life-companionship , sat beneath the corner-cupboard ;
+fof(ex1414051385739,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7] :
+      ( corner_cupboard_1(s0,X1)
+      & life_companionship_1(s0,X2)
+      & tentative_1(s0,G3)
+      & is_pourparlers_on_2(s0,G3,X2)
+      & were_blushing_2(s0,E6,G5)
+      & over_2(s0,E6,G3)
+      & ? [X8] :
+          ( young_1(s0,X8)
+          & man_1(s0,X8)
+          & is_of_2(s0,X8,G4) )
+      & ? [X9] :
+          ( maid_1(s0,X9)
+          & is_of_2(s0,X9,G4) )
+      & G5 = G4
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & sat_2(s0,E7,G5)
+      & beneath_2(s0,E7,X1) ) )).
+
+% ::id 36_fiction_HARDY-1883;AT8-6;NE
+% ::snt and an elderly engaged man of fifty or upward moved restlessly about from spots where his betrothed was not to the spot where she was .
+fof(ex1414051386118,axiom,(
+    ? [X13,X1,E2,X11,X3,X4,G5,G6,S10,E7] :
+      ( choose3(X13,X1,X4,X3)
+      & was_2(s0,E2,X13)
+      & spot_1(s0,X1)
+      & is_where_2(s0,E2,X1)
+      & is_before_2(s0,E2,e0)
+      & elderly_1(s0,X4)
+      & is_engaged_man_of_2(s0,X4,G5)
+      & choose1(X11,X4)
+      & betrothed_1(s0,X3)
+      & is_of_2(s0,X3,X11)
+      & ? [G8] :
+          ( fifty_1(s0,G8)
+          & is_of_2(s0,G8,G5) )
+      & ? [X9] : is_of_2(s0,X9,G5)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & ? [E12] :
+              ( is_before_2(S14,E12,e0)
+              & was_2(S14,E12,X3) ) )
+      & spots_1(s0,G6)
+      & restlessly_about_1(s0,E7)
+      & is_where_2(s0,S10,G6)
+      & is_before_2(s0,E7,e0)
+      & moved_2(s0,E7,X4)
+      & from_2(s0,E7,G6)
+      & to_2(s0,E7,X1) ) )).
+
+% ::id 37_fiction_HARDY-1883;AT8-7;NE
+% ::snt Enjoyment was pretty general , and so much the more prevailed in being unhampered by conventional restrictions .
+fof(ex1414051386470,axiom,(
+    ? [X1,G2,A6,E3,E4,E5,S8] :
+      ( enjoyment_1(s0,X1)
+      & conventional_1(s0,G2)
+      & restrictions_1(s0,G2)
+      & pretty_general_1(s0,A6)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E5,e0)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & unhampered_3(S9,E4,G2,X1) )
+      & was_3(s0,E3,X1,A6)
+      & ? [X7] :
+          ( prevailed_2(s0,E5,X1)
+          & msr_2(s0,E5,X7)
+          & in_2(s0,E5,S8) ) ) )).
+
+% ::id 38_fiction_HARDY-1883;AT8-8;NE
+% ::snt Absolute confidence in each other's good opinion begat perfect ease , while the finishing stroke of manner , amounting to a truly princely serenity , was lent to the majority by the absence of any expression or trait denoting that they wished to get on in the world , enlarge their minds , or do any eclipsing thing whatever -- which nowadays so generally nips the bloom and bonhomie of all except the two extremes of the social scale .
+fof(ex1414051386932,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,E9,E10,E11] :
+      ( manner_1(s0,X1)
+      & finishing_1(s0,X4)
+      & is_stroke_of_2(s0,X4,X1)
+      & majority_1(s0,X3)
+      & ? [X13,G14,G21,G20,G15,E16,E17,E18,E19] :
+          ( world_1(s0,X13)
+          & ? [S38] :
+              ( denoting_3(s0,E19,G14,S38)
+              & ? [S39] :
+                  ( wished_3(S38,E18,G20,S39)
+                  & get_on_2(S39,E16,G20)
+                  & in_2(S39,E16,X13)
+                  & enlarge_3(S39,E17,G20,G15)
+                  & ? [X22,X23,X24,X25,G26,G27,G28] :
+                      ( social_1(S39,X22)
+                      & scale_1(S39,X22)
+                      & bloom_1(S39,X23)
+                      & bonhomie_1(S39,X24)
+                      & eclipsing_1(S39,X25)
+                      & ? [S40] :
+                          ( thing_2(S39,X25,S40)
+                          & ? [X29,E30] :
+                              ( nowadays_1(S40,E30)
+                              & so_generally_1(S40,E30)
+                              & nips_3(S40,E30,X29,G28) ) )
+                      & two_1(S39,G26)
+                      & is_extremes_of_2(S39,G26,X22)
+                      & ? [X31] :
+                          ( is_except_2(S39,X31,G26)
+                          & is_of_2(S39,G28,X31) )
+                      & is_of_2(S39,X23,G27)
+                      & is_of_2(S39,X24,G27)
+                      & G28 = G27
+                      & ? [E32] :
+                          ( ? [X33,E34] :
+                              ( xxx_1(S39,E34)
+                              & X25 = X33 )
+                          & do_3(S39,E32,G20,X25) ) ) ) )
+          & choose1(G20,G14)
+          & choose2(G21,G20,G14)
+          & is_minds_of_2(s0,G15,G21)
+          & is_before_2(s0,E18,E19)
+          & ? [G35] :
+              ( ? [X36] :
+                  ( expression_1(s0,X36)
+                  & is_of_2(s0,X36,G35) )
+              & ? [X37] :
+                  ( trait_1(s0,X37)
+                  & is_of_2(s0,X37,G35) )
+              & G14 = G35
+              & is_absence_of_2(s0,X2,G14) ) )
+      & ? [X12] :
+          ( good_1(s0,X5)
+          & is_opinion_of_2(s0,X5,X12) )
+      & absolute_1(s0,X8)
+      & is_confidence_in_2(s0,X8,X5)
+      & perfect_1(s0,X7)
+      & ease_1(s0,X7)
+      & truly_princely_1(s0,X6)
+      & serenity_1(s0,X6)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & amounting_2(s0,E9,X4)
+      & to_2(s0,E9,X6)
+      & lent_4(s0,E10,X2,X4,X3)
+      & begat_3(s0,E11,X8,X7) ) )).
+
+% ::id 39_fiction_HARDY-1883;AT9-1;NE
+% ::snt Shepherd Fennel had married well , his wife being a dairyman's daughter from a vale at a distance , who brought fifty guineas in her pocket -- and kept them there , till they should be required for ministering to the needs of a coming family .
+fof(ex1414051387346,axiom,(
+    ? [X1,G2,X15,X14,X3,X4,X5,X6,X7,X8,G18,G16,G9,E10,E11,E12,E13,S17] :
+      ( coming_1(s0,X1)
+      & family_1(s0,X1)
+      & is_needs_of_2(s0,G2,X1)
+      & choose1(X14,shepherd_fennel)
+      & choose3(X15,X8,X14,shepherd_fennel)
+      & is_pocket_of_2(s0,X3,X15)
+      & brought_3(s0,E10,X8,G9)
+      & in_2(s0,E10,X3)
+      & kept_3(s0,E11,X8,G16)
+      & till_2(s0,E11,S17)
+      & is_wife_of__2(s0,X8,X14)
+      & dairyman_1(s0,X4)
+      & is_daughter_of_2(s0,X7,X4)
+      & distance_1(s0,X5)
+      & is_vale_at_2(s0,X6,X5)
+      & fifty_1(s0,G9)
+      & guineas_1(s0,G9)
+      & choose1(G16,G9)
+      & choose2(G18,G16,G9)
+      & is_before_2(s0,E10,e0)
+      & there_1(s0,E11)
+      & is_before_2(s0,E11,e0)
+      & well_1(s0,E13)
+      & is_before_2(s0,E13,e0)
+      & ? [S22] :
+          ( fact_2(s0,S17,S22)
+          & ? [E19,E20,S21] :
+              ( ? [S23] :
+                  ( fact_2(S22,S21,S23)
+                  & ministering_2(S23,E19,G18)
+                  & to_2(S23,E19,G2) )
+              & required_3(S22,E20,unspecified,G18)
+              & for_2(S22,E20,S21) ) )
+      & being_3(s0,E12,X8,X7)
+      & from_2(s0,E12,X6)
+      & had_married_2(s0,E13,shepherd_fennel) ) )).
+
+% ::id 40_fiction_HARDY-1883;AT9-2;NE
+% ::snt This frugal woman had been somewhat exercised as to the character that should be given to the gathering .
+fof(ex1414051387705,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( frugal_1(s0,X3)
+      & woman_1(s0,X3)
+      & gathering_1(s0,X1)
+      & ? [E6] : given_4(s0,E6,unspecified,X2,X1)
+      & character_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & ? [X5] :
+          ( had_exercised_3(s0,E4,unspecified,X3)
+          & msr_2(s0,E4,X5)
+          & as_to_2(s0,E4,X2) ) ) )).
+
+% ::id 41_fiction_HARDY-1883;AT9-3;NE
+% ::snt A sit-still party had its advantages ;
+fof(ex1414051388037,axiom,(
+    ? [X4,X1,G2,E3] :
+      ( sit_still_1(s0,X1)
+      & party_1(s0,X1)
+      & choose1(X4,X1)
+      & is_advantages_of_2(s0,G2,X4)
+      & is_before_2(s0,E3,e0)
+      & had_3(s0,E3,X1,G2) ) )).
+
+% ::id 42_fiction_HARDY-1883;AT9-4;NE
+% ::snt but an undisturbed position of ease in chairs and settles was apt to lead on the men to such an unconscionable deal of toping that they would sometimes fairly drink the house dry .
+fof(ex1414051388409,axiom,(
+    ? [X1,G2,X3,X4,X5,G13,G6,A11,E7,E8] :
+      ( house_1(s0,X1)
+      & men_1(s0,G2)
+      & ease_1(s0,X3)
+      & undisturbed_1(s0,X5)
+      & is_position_of_2(s0,X5,X3)
+      & is_position_in_2(s0,X5,G6)
+      & toping_1(s0,X4)
+      & ? [G9] :
+          ( chairs_1(s0,G9)
+          & is_of_2(s0,G9,G6) )
+      & ? [G10] :
+          ( settles_1(s0,G10)
+          & is_of_2(s0,G10,G6) )
+      & choose2(G13,G2,G6)
+      & ? [S19] :
+          ( apt_2(s0,A11,S19)
+          & ? [X12] :
+              ( unconscionable_1(S19,X12)
+              & is_deal_of_2(S19,X12,X4)
+              & ? [S20] :
+                  ( lead_2(S19,E7,S20)
+                  & ? [A18,T14,S17,E15,E16] :
+                      ( dry_1(S20,A18)
+                      & times_1(S20,T14)
+                      & fairly_1(S20,S17)
+                      & ? [S21] :
+                          ( fact_2(S20,S17,S21)
+                          & ? [S22] :
+                              ( drink_3(S21,E16,G13,S22)
+                              & is_3(S22,E15,X1,A18) )
+                          & tmp_2(S21,E16,T14) ) ) )
+              & on_2(S19,E7,G2)
+              & to_2(S19,E7,X12) ) )
+      & is_before_2(s0,E8,e0)
+      & was_3(s0,E8,X5,A11) ) )).
+
+% ::id 43_fiction_HARDY-1883;AT9-5;NE
+% ::snt A dancing-party was the alternative ;
+fof(ex1414051388749,axiom,(
+    ? [X1,X2,E3] :
+      ( alternative_1(s0,X1)
+      & dancing_party_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & was_3(s0,E3,X2,X1) ) )).
+
+% ::id 44_fiction_HARDY-1883;AT9-6;NE
+% ::snt but this , while avoiding the foregoing objection on the score of good drink , had a counterbalancing disadvantage in the matter of good victuals , the ravenous appetites engendered by the exercise causing immense havoc in the buttery .
+fof(ex1414051389118,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,E9,X15,X10,X11,E12,E13,E14] :
+      ( good_1(s0,X1)
+      & drink_1(s0,X1)
+      & is_score_of_2(s0,X2,X1)
+      & foregoing_1(s0,X3)
+      & is_objection_on_2(s0,X3,X2)
+      & is_matter_of_2(s0,X6,G7)
+      & exercise_1(s0,X4)
+      & buttery_1(s0,X5)
+      & good_1(s0,G7)
+      & victuals_1(s0,G7)
+      & ravenous_1(s0,G8)
+      & engendered_3(s0,E9,X4,G8)
+      & appetites_1(s0,G8)
+      & counterbalancing_1(s0,X11)
+      & disadvantage_1(s0,X11)
+      & immense_1(s0,X10)
+      & is_havoc_in_2(s0,X10,X5)
+      & is_before_2(s0,E14,e0)
+      & avoiding_3(s0,E12,X15,X3)
+      & causing_3(s0,E13,G8,X10)
+      & had_4(s0,E14,X15,unspecified,X11)
+      & in_2(s0,E14,X6) ) )).
+
+% ::id 45_fiction_HARDY-1883;AT9-7;NE
+% ::snt Shepherdess Fennel fell back upon the intermediate plan of mingling short dances with short periods of talk and singing , so as to hinder any ungovernable rage in either .
+fof(ex1414051389481,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,E7,S10,E8,E9,S11] :
+      ( talk_1(s0,X1)
+      & singing_1(s0,X2)
+      & intermediate_1(s0,X3)
+      & is_plan_of_2(s0,X3,S10)
+      & short_1(s0,G6)
+      & dances_1(s0,G6)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & short_1(s0,G5)
+      & is_periods_of_2(s0,G5,G4)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & mingling_3(S14,E7,unspecified,G6)
+          & with_2(S14,E7,G5) )
+      & is_before_2(s0,E9,e0)
+      & ? [S15] :
+          ( fact_2(s0,S11,S15)
+          & ? [X12] :
+              ( ungovernable_1(S15,X12)
+              & ? [X13] : is_rage_in_2(S15,X12,X13)
+              & hinder_3(S15,E8,shepherdess_fennel,X12) ) )
+      & fell_back_2(s0,E9,shepherdess_fennel)
+      & upon_2(s0,E9,X3)
+      & so_as_2(s0,E9,S11) ) )).
+
+% ::id 46_fiction_HARDY-1883;AT9-8;NE
+% ::snt But this scheme was entirely confined to her own gentle mind :
+fof(ex1414051389820,axiom,(
+    ? [X1,X4,X2,E3] :
+      ( scheme_1(s0,X1)
+      & choose1(X4,X1)
+      & own_1(s0,X2)
+      & is_gentle_mind_of_2(s0,X2,X4)
+      & entirely_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & confined_3(s0,E3,unspecified,X1)
+      & to_2(s0,E3,X2) ) )).
+
+% ::id 47_fiction_HARDY-1883;AT9-9;NE
+% ::snt the shepherd himself was in the mood to exhibit the most reckless phases of hospitality .
+fof(ex1414051390162,axiom,(
+    ? [X7,X1,X2,X3,G4,E5,E6] :
+      ( shepherd_1(s0,X3)
+      & choose1(X7,X3)
+      & mood_1(s0,X2)
+      & hospitality_1(s0,X1)
+      & is_of_2(s0,X3,X7)
+      & most_reckless_1(s0,G4)
+      & is_phases_of_2(s0,G4,X1)
+      & is_before_2(s0,E6,e0)
+      & ? [S8] :
+          ( was_3(s0,E6,X3,S8)
+          & exhibit_3(S8,E5,X3,G4) )
+      & in_2(s0,E6,X2) ) )).
+
+% ::id 48_fiction_HARDY-1883;AT10-1;NE
+% ::snt The fiddler was a boy of those parts , about twelve years of age , who had a wonderful dexterity in jigs and reels , though his fingers were so small and short as to necessitate a constant shifting for the high notes , from which he scrambled back to the first position with sounds not of unmixed purity of tone .
+fof(ex1414051390582,axiom,(
+    ? [X1,X2,G3,G4,X26,X23,X5,X6,X7,X8,X9,X10,G11,G12,G13,A24,T14,E15,E16,E17,E18,E19,S25,S22] :
+      ( fiddler_1(s0,X2)
+      & first_1(s0,X1)
+      & position_1(s0,X1)
+      & parts_1(s0,G4)
+      & high_1(s0,G3)
+      & notes_1(s0,G3)
+      & age_1(s0,X5)
+      & wonderful_1(s0,X9)
+      & dexterity_1(s0,X9)
+      & choose4(X23,X9,X10,X5,X2)
+      & choose4(X26,X9,X10,X5,X2)
+      & tone_1(s0,X6)
+      & unmixed_1(s0,X7)
+      & is_purity_of_2(s0,X7,X6)
+      & constant_1(s0,X8)
+      & scrambled_back_2(s0,E15,X26)
+      & from_2(s0,E15,X8)
+      & to_2(s0,E15,X1)
+      & with_2(s0,E15,G11)
+      & is_shifting_for_2(s0,X8,G3)
+      & had_3(s0,E18,X10,X9)
+      & in_2(s0,E18,G13)
+      & though_2(s0,E18,S22)
+      & is_boy_tmp_2(s0,X10,T14)
+      & is_boy_of__2(s0,X10,G4)
+      & ? [G20] :
+          ( jigs_1(s0,G20)
+          & is_of_2(s0,G20,G13) )
+      & ? [G21] :
+          ( reels_1(s0,G21)
+          & is_of_2(s0,G21,G13) )
+      & is_fingers_of_2(s0,G12,X23)
+      & ? [X27] :
+          ( is_of_2(s0,X27,X7)
+          & is_sounds_of_2(s0,G11,X27) )
+      & so_1(s0,A24)
+      & small_1(s0,A24)
+      & short_1(s0,A24)
+      & is_as_2(s0,A24,S25)
+      & twelve_1(s0,T14)
+      & about_1(s0,T14)
+      & is_years_of_2(s0,T14,X5)
+      & is_before_2(s0,E15,e0)
+      & is_before_2(s0,E17,e0)
+      & is_before_2(s0,E18,e0)
+      & is_before_2(s0,E19,e0)
+      & ? [S28] :
+          ( fact_2(s0,S25,S28)
+          & necessitate_3(S28,E16,unspecified,X8) )
+      & ? [S29] :
+          ( fact_2(s0,S22,S29)
+          & were_3(S29,E17,G12,A24) )
+      & was_3(s0,E19,X2,X10) ) )).
+
+% ::id 49_fiction_HARDY-1883;AT10-2;NE
+% ::snt At seven the shrill tweedle-dee of this youngster had begun , accompanied by a booming ground-bass from Elijah New , the parish-clerk , who had thoughtfully brought with him his favourite musical instrument , the serpent .
+fof(ex1414051390973,axiom,(
+    ? [X1,X2,X3,X4,X12,X11,X5,X6,G7,E8,E9,E10] :
+      ( youngster_1(s0,X1)
+      & shrill_1(s0,X4)
+      & is_tweedle_dee_of_2(s0,X4,X1)
+      & serpent_1(s0,X2)
+      & parish_clerk_1(s0,X3)
+      & choose2(X11,X4,X1)
+      & choose4(X12,elijah_new,X11,X4,X1)
+      & favourite_1(s0,X5)
+      & is_musical_instrument_of_2(s0,X5,X12)
+      & had_brought_3(s0,E8,elijah_new,X5)
+      & with_2(s0,E8,X11)
+      & booming_1(s0,X6)
+      & is_ground_bass_from_2(s0,X6,elijah_new)
+      & seven_1(s0,G7)
+      & X5 = X2
+      & elijah_new = X3
+      & thoughtfully_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E10,e0)
+      & accompanied_3(s0,E9,X6,X4)
+      & had_begun_2(s0,E10,X4)
+      & at_2(s0,E10,G7) ) )).
+
+% ::id 50_fiction_HARDY-1883;AT10-3;NE
+% ::snt Dancing was instantaneous , Mrs. Fennel privately enjoining the players on no account to let the dance exceed the length of a quarter of an hour .
+fof(ex1414051391330,axiom,(
+    ? [X1,X2,X3,X4,G5,X6,A8,S9,E7] :
+      ( dance_1(s0,X4)
+      & hour_1(s0,X1)
+      & is_quarter_of_2(s0,X2,X1)
+      & is_length_of_2(s0,X3,X2)
+      & players_1(s0,G5)
+      & dancing_1(s0,X6)
+      & instantaneous_1(s0,A8)
+      & privately_1(s0,S9)
+      & is_before_2(s0,E7,e0)
+      & ? [S14] :
+          ( fact_2(s0,S9,S14)
+          & ? [X10,E11,E12,E13] :
+              ( account_1(S14,X10)
+              & ? [S15] :
+                  ( enjoining_4(S14,E13,mrs_fennel,G5,S15)
+                  & ? [S16] :
+                      ( let_3(S15,E12,G5,S16)
+                      & exceed_3(S16,E11,X4,X3) ) )
+              & on_2(S14,E13,X10) ) )
+      & was_3(s0,E7,X6,A8) ) )).
+
+% ::id 51_fiction_HARDY-1883;AT11-1;NE
+% ::snt But Elijah and the boy , in the excitement of their position , quite forgot the injunction .
+fof(ex1414051391675,axiom,(
+    ? [X1,X2,X3,X4,G7,G5,E6] :
+      ( boy_1(s0,X1)
+      & is_position_of_2(s0,X2,G7)
+      & is_excitement_of_2(s0,X4,X2)
+      & injunction_1(s0,X3)
+      & choose1(G7,G5)
+      & is_of_2(s0,elijah,G5)
+      & is_of_2(s0,X1,G5)
+      & quite_1(s0,E6)
+      & is_before_2(s0,E6,e0)
+      & forgot_3(s0,E6,G5,X3)
+      & in_2(s0,E6,X4) ) )).
+
+% ::id 52_fiction_HARDY-1883;AT11-2;NE
+% ::snt Moreover , Oliver Giles , a man of seventeen , one of the dancers , who was enamoured of his partner , a fair girl of thirty-three rolling years , had recklessly handed a new crown-piece to the musicians , as a bribe to keep going as long as they had muscle and wind .
+fof(ex1414051392072,axiom,(
+    ? [G1,G2,X16,X3,X4,X5,X6,X7,X8,G9,G10,X11,S18,S17,E12,E13,E14,E15,S19] :
+      ( dancers_1(s0,G1)
+      & musicians_1(s0,G2)
+      & is_one_of_2(s0,X3,G1)
+      & choose2(X16,oliver_giles,X3)
+      & is_partner_of_2(s0,X5,X16)
+      & fair_1(s0,X4)
+      & is_girl_of_2(s0,X4,G9)
+      & enamoured_3(s0,E12,unspecified,oliver_giles)
+      & of_2(s0,E12,X5)
+      & is_man_of_2(s0,X6,G10)
+      & new_1(s0,X8)
+      & crown_piece_1(s0,X8)
+      & ? [S24] :
+          ( bribe_2(s0,X7,S24)
+          & keep_3(S24,E14,unspecified,S19) )
+      & oliver_giles = X3
+      & thirty_three_1(s0,G9)
+      & rolling_1(s0,G9)
+      & years_1(s0,G9)
+      & X5 = X4
+      & seventeen_1(s0,G10)
+      & oliver_giles = X6
+      & as_long_1(s0,X11)
+      & ? [X20,G23,X21,E22] :
+          ( muscle_1(s0,X20)
+          & wind_1(s0,X20)
+          & choose4(G23,G2,G10,G9,G1)
+          & had_3(s0,E22,G23,X20)
+          & msr_2(s0,E22,X21)
+          & is_before_2(s0,E22,e0)
+          & is_as_2(s0,X11,X21) )
+      & is_before_2(s0,E12,e0)
+      & moreover_1(s0,S17)
+      & recklessly_1(s0,S18)
+      & is_before_2(s0,E15,e0)
+      & ? [S25] :
+          ( fact_2(s0,S19,S25)
+          & going_1(S25,E13)
+          & msr_2(S25,E13,X11) )
+      & ? [S26] :
+          ( fact_2(s0,S17,S26)
+          & ? [S27] :
+              ( fact_2(S26,S18,S27)
+              & had_handed_3(S27,E15,oliver_giles,X8)
+              & to_2(S27,E15,G2)
+              & as_2(S27,E15,X7) ) ) ) )).
+
+% ::id 53_fiction_HARDY-1883;AT11-3;NE
+% ::snt Mrs. Fennel , seeing the steam begin to generate on the countenances of her guests , crossed over and touched the fiddler's elbow and put her hand on the serpent's mouth .
+fof(ex1414051392440,axiom,(
+    ? [X15,X1,X2,X3,G4,G5,X16,X6,X7,X8,E9,E10,E11,E12,E13,E14] :
+      ( steam_1(s0,X1)
+      & choose2(X15,X1,mrs_fennel)
+      & fiddler_1(s0,X2)
+      & serpent_1(s0,X3)
+      & is_guests_of_2(s0,G4,X15)
+      & is_countenances_of_2(s0,G5,G4)
+      & is_elbow_of_2(s0,X6,X2)
+      & choose4(X16,mrs_fennel,X6,X2,X1)
+      & is_hand_of_2(s0,X8,X16)
+      & is_mouth_of_2(s0,X7,X3)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E14,e0)
+      & ? [S17] :
+          ( seeing_3(s0,E11,mrs_fennel,S17)
+          & ? [S18] :
+              ( begin_3(S17,E10,X1,S18)
+              & generate_2(S18,E9,X1)
+              & on_2(S18,E9,G5) ) )
+      & crossed_over_2(s0,E12,mrs_fennel)
+      & touched_3(s0,E13,mrs_fennel,X6)
+      & put_3(s0,E14,mrs_fennel,X8)
+      & on_2(s0,E14,X7) ) )).
+
+% ::id 54_fiction_HARDY-1883;AT11-4;NE
+% ::snt But they took no notice ,
+fof(ex1414051392781,axiom,(
+    ? [G1,X2,E3] :
+      ( notice_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & took_3(s0,E3,G1,X2) ) )).
+
+% ::id 55_fiction_HARDY-1883;AT11-5;NE
+% ::snt and fearing she might lose her character of genial hostess if she were to interfere too markedly , she retired and sat down helpless .
+fof(ex1414051393139,axiom,(
+    ? [X4,A13,E1,E2,E3] :
+      ( helpless_1(s0,A13)
+      & is_before_2(s0,E2,e0)
+      & is_before_2(s0,E3,e0)
+      & ? [S14] :
+          ( fearing_3(s0,E1,X4,S14)
+          & ! [X7,E5,E6] :
+              ( ( choose1(X7,X4)
+                & too_markedly_1(S14,E5)
+                & is_before_2(S14,E6,E1) )
+             => ( ? [S15] :
+                    ( were_3(S14,E6,X7,S15)
+                    & interfere_2(S15,E5,X7) )
+                & ? [X8] :
+                    ( choose1(X8,X4)
+                    & ? [X12,X9,X10,E11] :
+                        ( choose2(X12,X8,X4)
+                        & genial_1(S14,X9)
+                        & hostess_1(S14,X9)
+                        & is_character_of_2(S14,X10,X9)
+                        & is_character_of__2(S14,X10,X12)
+                        & lose_3(S14,E11,X8,X10) ) ) ) ) )
+      & retired_2(s0,E2,X4)
+      & sat_down_3(s0,E3,X4,A13) ) )).
+
+% ::id 56_fiction_HARDY-1883;AT11-6;NE
+% ::snt And so the dance whizzed on with cumulative fury , the performers moving in their planet-like courses , direct and retrograde , from apogee to perigee , till the hand of the well-kicked clock at the bottom of the room had travelled over the circumference of an hour .
+fof(ex1414051393518,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,X9,X10,X11,G17,G12,S16,E13,E14,E15,S18] :
+      ( dance_1(s0,X7)
+      & room_1(s0,X1)
+      & is_bottom_of_2(s0,X2,X1)
+      & well_kicked_1(s0,X3)
+      & is_clock_at_2(s0,X3,X2)
+      & is_hand_of_2(s0,X6,X3)
+      & hour_1(s0,X4)
+      & is_circumference_of_2(s0,X5,X4)
+      & performers_1(s0,G8)
+      & cumulative_1(s0,X11)
+      & fury_1(s0,X11)
+      & apogee_1(s0,X10)
+      & perigee_1(s0,X9)
+      & choose1(G17,G8)
+      & planet_like_1(s0,G12)
+      & direct_1(s0,G12)
+      & retrograde_1(s0,G12)
+      & is_courses_to_2(s0,G12,X9)
+      & is_courses_from_2(s0,G12,X10)
+      & is_courses_of_2(s0,G12,G17)
+      & so_1(s0,S16)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E15,e0)
+      & ? [S19] :
+          ( fact_2(s0,S18,S19)
+          & had_travelled_over_3(S19,E13,X6,X5) )
+      & ? [S20] :
+          ( fact_2(s0,S16,S20)
+          & moving_2(S20,E14,G8)
+          & in_2(S20,E14,G12)
+          & till_2(S20,E14,S18)
+          & whizzed_on_2(S20,E15,X7)
+          & with_2(S20,E15,X11) ) ) )).
+
+% ::id 57_fiction_HARDY-1883;AT12-1;NE
+% ::snt While these cheerful events were in course of enactment within Fennel's pastoral dwelling , an incident having considerable bearing on the party had occurred in the gloomy night without .
+fof(ex1414051393893,axiom,(
+    ? [X1,X2,G3,X4,X5,X6,X7,X8,E9,E10,E11] :
+      ( party_1(s0,X1)
+      & gloomy_1(s0,X2)
+      & without_1(s0,X2)
+      & night_1(s0,X2)
+      & cheerful_1(s0,G3)
+      & events_1(s0,G3)
+      & considerable_1(s0,X4)
+      & bearing_1(s0,X4)
+      & having_3(s0,E9,X8,X4)
+      & on_2(s0,E9,X1)
+      & incident_1(s0,X8)
+      & enactment_1(s0,X5)
+      & is_course_of_2(s0,X7,X5)
+      & pastoral_1(s0,X6)
+      & is_dwelling_of_2(s0,X6,fennel)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & were_2(s0,E10,G3)
+      & in_2(s0,E10,X7)
+      & within_2(s0,E10,X6)
+      & had_occurred_2(s0,E11,X8)
+      & in_2(s0,E11,X2) ) )).
+
+% ::id 58_fiction_HARDY-1883;AT12-2;NE
+% ::snt Mrs. Fennel's concern about the growing fierceness of the dance corresponded in point of time with the ascent of a human figure to the solitary hill of Higher Crowstairs from the direction of the distant town .
+fof(ex1414051394260,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,E11] :
+      ( dance_1(s0,X1)
+      & growing_1(s0,X2)
+      & is_fierceness_of_2(s0,X2,X1)
+      & human_1(s0,X6)
+      & figure_1(s0,X6)
+      & solitary_1(s0,X5)
+      & is_hill_of_2(s0,X5,higher_crowstairs)
+      & distant_1(s0,X3)
+      & town_1(s0,X3)
+      & is_direction_of_2(s0,X4,X3)
+      & is_ascent_from_2(s0,X7,X4)
+      & is_ascent_to_2(s0,X7,X5)
+      & is_ascent_of__2(s0,X7,X6)
+      & is_concern_of__2(s0,X10,mrs_fennel)
+      & is_concern_about_2(s0,X10,X2)
+      & time_1(s0,X8)
+      & is_point_of_2(s0,X9,X8)
+      & is_before_2(s0,E11,e0)
+      & corresponded_2(s0,E11,X10)
+      & in_2(s0,E11,X9)
+      & with_2(s0,E11,X7) ) )).
+
+% ::id 59_fiction_HARDY-1883;AT12-3;NE
+% ::snt This personage strode on through the rain without a pause , following the little-worn path which , further on in its course , skirted the shepherd's cottage .
+fof(ex1414051394625,axiom,(
+    ? [X11,X1,X2,X3,X4,X5,X6,E7,X8,E9,E10] :
+      ( personage_1(s0,X6)
+      & rain_1(s0,X5)
+      & choose4(X11,X4,X6,X5,X8)
+      & is_course_of_2(s0,X1,X11)
+      & shepherd_1(s0,X2)
+      & is_cottage_of_2(s0,X3,X2)
+      & little_worn_1(s0,X4)
+      & is_further_on_in_2(s0,X4,X1)
+      & skirted_3(s0,E7,X4,X3)
+      & path_1(s0,X4)
+      & is_before_2(s0,E7,e0)
+      & pause_1(s0,X8)
+      & is_before_2(s0,E10,e0)
+      & following_3(s0,E9,X6,X4)
+      & strode_on_2(s0,E10,X6)
+      & through_2(s0,E10,X5)
+      & without_2(s0,E10,X8) ) )).
+
+% ::id 60_fiction_HARDY-1883;AT13-1;NE
+% ::snt It was nearly the time of full moon ,
+fof(ex1414051394967,axiom,(
+    ? [X1,X2,E3] :
+      ( full_1(s0,X1)
+      & moon_1(s0,X1)
+      & is_time_of_2(s0,X2,X1)
+      & nearly_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & was_2(s0,E3,X2) ) )).
+
+% ::id 61_fiction_HARDY-1883;AT13-2;NE
+% ::snt and on this account , though the sky was lined with a uniform sheet of dripping cloud , ordinary objects out of doors were readily visible .
+fof(ex1414051395322,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,A10,E7,E8,S9] :
+      ( account_1(s0,X2)
+      & sky_1(s0,X1)
+      & dripping_1(s0,X3)
+      & cloud_1(s0,X3)
+      & uniform_1(s0,X4)
+      & is_sheet_of_2(s0,X4,X3)
+      & doors_1(s0,G5)
+      & ordinary_1(s0,G6)
+      & is_objects_out_of_2(s0,G6,G5)
+      & readily_visible_1(s0,A10)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & was_lined_2(S11,E7,X1)
+          & with_2(S11,E7,X4) )
+      & were_3(s0,E8,G6,A10)
+      & on_2(s0,E8,X2)
+      & though_2(s0,E8,S9) ) )).
+
+% ::id 62_fiction_HARDY-1883;AT13-3;NE
+% ::snt The sad wan light revealed the lonely pedestrian to be a man of supple frame ;
+fof(ex1414051395666,axiom,(
+    ? [X1,X2,X3,X4,E5,E6] :
+      ( sad_1(s0,X2)
+      & wan_1(s0,X2)
+      & light_1(s0,X2)
+      & lonely_1(s0,X1)
+      & pedestrian_1(s0,X1)
+      & supple_1(s0,X3)
+      & frame_1(s0,X3)
+      & is_man_of_2(s0,X4,X3)
+      & is_before_2(s0,E6,e0)
+      & ? [S7] :
+          ( revealed_4(s0,E6,X2,X1,S7)
+          & be_3(S7,E5,X1,X4) ) ) )).
+
+% ::id 63_fiction_HARDY-1883;AT13-4;NE
+% ::snt his gait suggested that he had somewhat passed the period of perfect and instinctive agility , though not so far as to be otherwise than rapid of motion when occasion required .
+fof(ex1414051396045,axiom,(
+    ? [X1,X2,X3,G4,X9,X8,X5,A11,E6,E7] :
+      ( perfect_1(s0,X1)
+      & agility_1(s0,X1)
+      & instinctive_1(s0,X2)
+      & agility_1(s0,X2)
+      & is_period_of_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & is_gait_of_2(s0,X5,X8)
+      & choose1(X9,X5)
+      & ? [X12,X13,S15,S14] :
+          ( motion_1(s0,X12)
+          & rapid_1(s0,X13)
+          & is_of_2(s0,X13,X12)
+          & otherwise_1(s0,S15)
+          & ? [S19] :
+              ( fact_2(s0,S14,S19)
+              & ? [S20] :
+                  ( fact_2(S19,S15,S20)
+                  & ! [X16,E17] :
+                      ( ( occasion_1(S20,X16)
+                        & is_before_2(S20,E17,E7) )
+                     => ( required_2(S20,E17,X16)
+                        & ? [E18] :
+                            ( be_1(S20,E18)
+                            & than_2(S20,E18,X13) ) ) ) ) )
+          & is_so_far_as_2(s0,A11,S14) )
+      & is_before_2(s0,E6,E7)
+      & is_before_2(s0,E7,e0)
+      & ? [S21] :
+          ( suggested_3(s0,E7,X5,S21)
+          & ? [X10] :
+              ( had_passed_3(S21,E6,X9,X3)
+              & msr_2(S21,E6,X10)
+              & though_2(S21,E6,A11) ) ) ) )).
+
+% ::id 64_fiction_HARDY-1883;AT13-5;NE
+% ::snt At a rough guess , he might have been about forty years of age .
+fof(ex1414051396411,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( rough_1(s0,X3)
+      & guess_1(s0,X3)
+      & age_1(s0,X2)
+      & about_forty_1(s0,G4)
+      & is_years_of_2(s0,G4,X2)
+      & have_been_3(s0,E5,X1,G4)
+      & at_2(s0,E5,X3) ) )).
+
+% ::id 65_fiction_HARDY-1883;AT13-6;NE
+% ::snt He appeared tall ,
+fof(ex1414051396741,axiom,(
+    ? [X2,A3,E1] :
+      ( tall_1(s0,A3)
+      & is_before_2(s0,E1,e0)
+      & appeared_3(s0,E1,X2,A3) ) )).
+
+% ::id 66_fiction_HARDY-1883;AT13-7;NE
+% ::snt but a recruiting sergeant , or other person accustomed to the judging of men's heights by the eye , would have discerned that this was chiefly owing to his gauntness , and that he was not more than five-feet-eight or nine .
+fof(ex1414051397108,axiom,(
+    ? [X1,X2,G3,G4,G5] :
+      ( eye_1(s0,X1)
+      & judging_1(s0,X2)
+      & is_of_2(s0,X2,G4)
+      & is_by_2(s0,X2,X1)
+      & men_1(s0,G3)
+      & is_heights_of_2(s0,G4,G3)
+      & ? [X6] :
+          ( recruiting_sergeant_1(s0,X6)
+          & is_of_2(s0,X6,G5) )
+      & ? [E7] :
+          ( is_before_2(s0,E7,e0)
+          & ? [X8] :
+              ( accustomed_2(s0,E7,X8)
+              & to_2(s0,E7,X2)
+              & person_1(s0,X8)
+              & is_of_2(s0,X8,G5) ) )
+      & ? [X16,X15,X14,X9,G10,E11,E12,E13] :
+          ( choose2(X14,X2,X1)
+          & choose3(X15,X14,X2,X1)
+          & is_gauntness_of_2(s0,X9,X15)
+          & choose3(X16,X9,X2,X1)
+          & five_feet_eight_or_nine_1(s0,G10)
+          & chiefly_1(s0,E11)
+          & is_before_2(s0,E11,E13)
+          & is_before_2(s0,E12,E13)
+          & ? [S18] :
+              ( have_discerned_3(s0,E13,G5,S18)
+              & was_owing_2(S18,E11,X14)
+              & to_2(S18,E11,X9)
+              & ? [X17] :
+                  ( is_than_2(S18,X17,G10)
+                  & was_3(S18,E12,X16,X17) ) ) ) ) )).
+
+% ::id 67_fiction_HARDY-1883;AT14-1;NE
+% ::snt Notwithstanding the regularity of his tread , there was caution in it , as in that of one who mentally feels his way ;
+fof(ex1414051397470,axiom,(
+    ? [X11,X9,X1,X2,X3,X4,X5,E6,X10,X7,E8] :
+      ( choose1(X9,X7)
+      & is_tread_of_2(s0,X1,X9)
+      & is_regularity_of_2(s0,X5,X1)
+      & choose5(X11,X3,X5,X10,X7,X1)
+      & is_way_of_2(s0,X2,X11)
+      & feels_3(s0,E6,X3,X2)
+      & one_1(s0,X3)
+      & is_of_2(s0,X4,X3)
+      & mentally_1(s0,E6)
+      & caution_1(s0,X7)
+      & choose1(X10,X1)
+      & is_before_2(s0,E8,e0)
+      & was_2(s0,E8,X7)
+      & notwithstanding_2(s0,E8,X5)
+      & in_2(s0,E8,X10)
+      & as_in_2(s0,E8,X4) ) )).
+
+% ::id 68_fiction_HARDY-1883;AT14-2;NE
+% ::snt and despite the fact that it was not a black coat nor a dark garment of any sort that he wore , there was something about him which suggested that he naturally belonged to the black-coated tribes of men .
+fof(ex1414051397863,axiom,(
+    ? [X16,X1,G2,G3,E4,X11,X10,X5,G6,E7,E8,E9] :
+      ( choose1(X16,X5)
+      & ? [S18] :
+          ( fact_2(s0,X1,S18)
+          & ? [X15] :
+              ( wore_3(S18,E4,X16,X15)
+              & ? [E17] :
+                  ( is_before_2(S18,E17,e0)
+                  & was_3(S18,E17,X15,G6) ) ) )
+      & men_1(s0,G2)
+      & black_coated_1(s0,G3)
+      & is_tribes_of_2(s0,G3,G2)
+      & is_before_2(s0,E4,e0)
+      & choose2(X11,X5,X10)
+      & ? [S19] :
+          ( suggested_3(s0,E8,X5,S19)
+          & belonged_2(S19,E7,X11)
+          & to_2(S19,E7,G3) )
+      & is_thing_about_2(s0,X5,X10)
+      & ? [X12] :
+          ( black_1(s0,X12)
+          & coat_1(s0,X12)
+          & is_of_2(s0,X12,G6) )
+      & ? [X13] :
+          ( dark_1(s0,X13)
+          & ? [X14] :
+              ( sort_1(s0,X14)
+              & is_garment_of_2(s0,X13,X14) )
+          & is_of_2(s0,X13,G6) )
+      & naturally_1(s0,E7)
+      & is_before_2(s0,E7,E8)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & was_2(s0,E9,X5)
+      & despite_2(s0,E9,X1) ) )).
+
+% ::id 69_fiction_HARDY-1883;AT14-3;NE
+% ::snt His clothes were of fustian , and his boots hobnailed ,
+fof(ex1414051398212,axiom,(
+    ? [X7,X6,X1,G2,G3,E4,E5] :
+      ( fustian_1(s0,X1)
+      & choose1(X7,X1)
+      & is_clothes_of_2(s0,G2,X6)
+      & is_boots_of_2(s0,G3,X7)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & were_2(s0,E4,G2)
+      & of_2(s0,E4,X1)
+      & hobnailed_3(s0,E5,unspecified,G3) ) )).
+
+% ::id 70_fiction_HARDY-1883;AT14-4;NE
+% ::snt yet in his progress he showed not the mud-accustomed bearing of hobnailed and fustianed peasantry .
+fof(ex1414051398560,axiom,(
+    ? [X1,X2,X3,G4,X5] :
+      ( hobnailed_1(s0,X1)
+      & peasantry_1(s0,X1)
+      & fustianed_1(s0,X2)
+      & peasantry_1(s0,X2)
+      & mud_accustomed_1(s0,X3)
+      & is_bearing_of_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & ? [X8,X6,E7] :
+          ( choose1(X8,X5)
+          & is_progress_of_2(s0,X6,X8)
+          & is_before_2(s0,E7,e0)
+          & showed_3(s0,E7,X5,X3)
+          & in_2(s0,E7,X6) ) ) )).
+
+% ::id 71_fiction_HARDY-1883;AT15-1;NE
+% ::snt By the time that he had arrived abreast of the shepherd's premises the rain came down , or rather came along , with yet more determined violence .
+fof(ex1414051398932,axiom,(
+    ? [X9,X1,X2,X3,G4,E5,X6,E7,E8] :
+      ( rain_1(s0,X3)
+      & choose1(X9,X3)
+      & shepherd_1(s0,X1)
+      & had_arrived_3(s0,E5,X9,X2)
+      & abreast_of_2(s0,E5,G4)
+      & time_1(s0,X2)
+      & is_premises_of_2(s0,G4,X1)
+      & is_before_2(s0,E5,e0)
+      & yet_more_determined_1(s0,X6)
+      & violence_1(s0,X6)
+      & is_before_2(s0,E7,e0)
+      & rather_1(s0,E8)
+      & along_1(s0,E8)
+      & is_before_2(s0,E8,e0)
+      & came_down_2(s0,E7,X3)
+      & by_2(s0,E7,X2)
+      & with_2(s0,E7,X6)
+      & came_2(s0,E8,X3)
+      & by_2(s0,E8,X2)
+      & with_2(s0,E8,X6) ) )).
+
+% ::id 72_fiction_HARDY-1883;AT15-2;NE
+% ::snt The outskirts of the little settlement partially broke the force of wind and rain ,
+fof(ex1414051399276,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,E7] :
+      ( little_1(s0,X1)
+      & settlement_1(s0,X1)
+      & wind_1(s0,X2)
+      & rain_1(s0,X3)
+      & is_force_of_2(s0,X4,G5)
+      & is_outskirts_of_2(s0,G6,X1)
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,X3,G5)
+      & partially_1(s0,E7)
+      & is_before_2(s0,E7,e0)
+      & broke_3(s0,E7,G6,X4) ) )).
+
+% ::id 73_fiction_HARDY-1883;AT15-3;NE
+% ::snt and this induced him to stand still .
+fof(ex1414051399609,axiom,(
+    ? [X4,X3,E1,E2] :
+      ( still_1(s0,E1)
+      & is_before_2(s0,E2,e0)
+      & ? [S5] :
+          ( induced_4(s0,E2,X3,X4,S5)
+          & stand_2(S5,E1,X4) ) ) )).
+
+% ::id 74_fiction_HARDY-1883;AT15-4;NE
+% ::snt The most salient of the shepherd's domestic erections was an empty sty at the forward corner of his hedgeless garden , for in these latitudes the principle of masking the homelier features of your establishment by a conventional frontage was unknown .
+fof(ex1414051399987,axiom,(
+    ? [X18,X15,X1,X2,X3,X4,X5,X6,X7,G8,G9,G10,E11,S17,X12,A19,E13,E14,S16] :
+      ( shepherd_1(s0,X1)
+      & most_salient_1(s0,X7)
+      & is_of_2(s0,X7,G8)
+      & choose3(X15,X7,X12,X1)
+      & hedgeless_1(s0,X2)
+      & is_garden_of_2(s0,X2,X15)
+      & forward_1(s0,X6)
+      & is_corner_of_2(s0,X6,X2)
+      & is_establishment_of_2(s0,X3,X18)
+      & conventional_1(s0,X4)
+      & frontage_1(s0,X4)
+      & is_principle_of_2(s0,X5,S17)
+      & domestic_1(s0,G8)
+      & is_erections_of_2(s0,G8,X1)
+      & homelier_1(s0,G9)
+      & is_features_of_2(s0,G9,X3)
+      & latitudes_1(s0,G10)
+      & ? [S20] :
+          ( fact_2(s0,S17,S20)
+          & masking_3(S20,E11,unspecified,G9)
+          & by_2(S20,E11,X4) )
+      & empty_1(s0,X12)
+      & sty_1(s0,X12)
+      & unknown_1(s0,A19)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E14,e0)
+      & ? [S21] :
+          ( fact_2(s0,S16,S21)
+          & was_3(S21,E13,X5,A19)
+          & in_2(S21,E13,G10) )
+      & was_3(s0,E14,X7,X12)
+      & at_2(s0,E14,X6)
+      & for_2(s0,E14,S16) ) )).
+
+% ::id 75_fiction_HARDY-1883;AT15-5;NE
+% ::snt The traveller's eye was attracted to this small building by the pallid shine of the wet slates that covered it .
+fof(ex1414051400349,axiom,(
+    ? [X8,X1,X2,X3,G4,E5,X6,E7] :
+      ( traveller_1(s0,X1)
+      & small_1(s0,X3)
+      & building_1(s0,X3)
+      & choose3(X8,X3,X6,X1)
+      & pallid_1(s0,X2)
+      & is_shine_of_2(s0,X2,G4)
+      & wet_1(s0,G4)
+      & covered_3(s0,E5,G4,X8)
+      & slates_1(s0,G4)
+      & is_before_2(s0,E5,e0)
+      & is_eye_of_2(s0,X6,X1)
+      & is_before_2(s0,E7,e0)
+      & attracted_3(s0,E7,X2,X6)
+      & to_2(s0,E7,X3) ) )).
+
+% ::id 76_fiction_HARDY-1883;AT15-6;NE
+% ::snt He turned aside , and , finding it empty , stood under the pent-roof for shelter .
+fof(ex1414051400694,axiom,(
+    ? [X1,X8,X7,X2,A9,E3,E4,E5,E6] :
+      ( pent_roof_1(s0,X1)
+      & choose1(X8,X7)
+      & shelter_1(s0,X2)
+      & empty_1(s0,A9)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E6,e0)
+      & turned_aside_2(s0,E3,X7)
+      & ? [S10] :
+          ( finding_3(s0,E5,X7,S10)
+          & is_3(S10,E4,X8,A9) )
+      & stood_2(s0,E6,X7)
+      & under_2(s0,E6,X1)
+      & for_2(s0,E6,X2) ) )).
+
+% ::id 77_fiction_HARDY-1883;AT16-1;NE
+% ::snt While he stood , the boom of the serpent within the adjacent house , and the lesser strains of the fiddler , reached the spot as an accompaniment to the surging hiss of the flying rain on the sod , its louder beating on the cabbage-leaves of the garden , on the eight or ten beehives just discernible by the path , and its dripping from the eaves into a row of buckets and pans that had been placed under the walls of the cottage .
+fof(ex1414051401127,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,G11,G12,G13,G14,G15,X21,X16,G17,G18,E19,E20] :
+      ( adjacent_1(s0,X1)
+      & house_1(s0,X1)
+      & is_serpent_within_2(s0,X2,X1)
+      & is_boom_of_2(s0,X3,X2)
+      & fiddler_1(s0,X4)
+      & spot_1(s0,X10)
+      & flying_1(s0,X5)
+      & rain_1(s0,X5)
+      & sod_1(s0,X6)
+      & garden_1(s0,X7)
+      & path_1(s0,X8)
+      & cottage_1(s0,X9)
+      & lesser_1(s0,G11)
+      & is_strains_of_2(s0,G11,X4)
+      & is_cabbage_leaves_of_2(s0,G12,X7)
+      & eight_or_ten_1(s0,G13)
+      & just_discernible_1(s0,G13)
+      & is_beehives_by_2(s0,G13,X8)
+      & eaves_1(s0,G15)
+      & is_walls_of_2(s0,G14,X9)
+      & choose4(X21,X4,X3,X2,X1)
+      & is_accompaniment_to_2(s0,X16,G17)
+      & is_of_2(s0,X3,G18)
+      & is_of_2(s0,G11,G18)
+      & is_of_2(s0,surging_hiss,X5)
+      & is_on_2(s0,surging_hiss,X6)
+      & is_of_2(s0,surging_hiss,G17)
+      & ? [X23,X22] :
+          ( choose8(X23,surging_hiss,X6,X5,X10,X4,X3,X2,X1)
+          & louder_1(s0,X22)
+          & is_beating_on_2(s0,X22,G12)
+          & is_beating_of__2(s0,X22,X23)
+          & is_beating_on_2(s0,X22,G13)
+          & is_beating_of__2(s0,X22,X23)
+          & is_of_2(s0,X22,G17) )
+      & ? [X29,X24,X25,G26,G27,E28] :
+          ( choose10(X29,surging_hiss,X8,X7,X6,X5,X10,X4,X3,X2,X1)
+          & is_row_of_2(s0,X24,G27)
+          & is_dripping_of__2(s0,X25,X29)
+          & is_dripping_into_2(s0,X25,X24)
+          & is_dripping_from_2(s0,X25,G15)
+          & had_placed_3(s0,E28,unspecified,G27)
+          & under_2(s0,E28,G14)
+          & ? [G30] :
+              ( buckets_1(s0,G30)
+              & is_of_2(s0,G30,G26) )
+          & ? [G31] :
+              ( pans_1(s0,G31)
+              & is_of_2(s0,G31,G26) )
+          & G27 = G26
+          & is_before_2(s0,E28,e0)
+          & is_of_2(s0,X25,G17) )
+      & is_before_2(s0,E19,e0)
+      & is_before_2(s0,E20,e0)
+      & stood_2(s0,E19,X21)
+      & reached_3(s0,E20,G18,X10)
+      & as_2(s0,E20,X16) ) )).
+
+% ::id 78_fiction_HARDY-1883;AT16-2;NE
+% ::snt For at Higher Crowstairs , as at all such elevated domiciles , the grand difficulty of housekeeping was an insufficiency of water ;
+fof(ex1414051401490,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( housekeeping_1(s0,X1)
+      & grand_1(s0,X2)
+      & is_difficulty_of_2(s0,X2,X1)
+      & water_1(s0,X3)
+      & is_insufficiency_of_2(s0,X4,X3)
+      & is_before_2(s0,E5,e0)
+      & ? [G6] :
+          ( elevated_1(s0,G6)
+          & domiciles_1(s0,G6)
+          & was_3(s0,E5,X2,X4)
+          & at_2(s0,E5,higher_crowstairs)
+          & as_at_2(s0,E5,G6) ) ) )).
+
+% ::id 79_fiction_HARDY-1883;AT16-3;NE
+% ::snt and a casual rainfall was utilized by turning out , as catchers , every utensil that the house contained .
+fof(ex1414051401849,axiom,(
+    ? [X1,X2,G3,E4,S5] :
+      ( house_1(s0,X1)
+      & casual_1(s0,X2)
+      & rainfall_1(s0,X2)
+      & catchers_1(s0,G3)
+      & is_before_2(s0,E4,e0)
+      & ? [S9] :
+          ( fact_2(s0,S5,S9)
+          & ! [X6,E7] :
+              ( ( contained_3(S9,E7,X1,X6)
+                & utensil_1(S9,X6)
+                & is_before_2(S9,E7,e0) )
+             => ? [E8] :
+                  ( turning_out_3(S9,E8,X2,X6)
+                  & as_2(S9,E8,G3) ) ) )
+      & utilized_3(s0,E4,S5,X2) ) )).
+
+% ::id 80_fiction_HARDY-1883;AT16-4;NE
+% ::snt Some queer stories might be told of the contrivances for economy in suds and dish-waters that are absolutely necessitated in upland habitations during the droughts of summer .
+fof(ex1414051402213,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,G8,E9,G10] :
+      ( is_economy_in_2(s0,X2,G5)
+      & summer_1(s0,X1)
+      & suds_1(s0,G3)
+      & dish_waters_1(s0,G4)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & upland_1(s0,G7)
+      & habitations_1(s0,G7)
+      & is_droughts_of_2(s0,G6,X1)
+      & necessitated_3(s0,E9,unspecified,G8)
+      & in_2(s0,E9,G7)
+      & during_2(s0,E9,G6)
+      & is_contrivances_for_2(s0,G8,X2)
+      & absolutely_1(s0,E9)
+      & queer_1(s0,G10)
+      & stories_1(s0,G10)
+      & ? [E11] :
+          ( told_3(s0,E11,unspecified,G10)
+          & of_2(s0,E11,G8) ) ) )).
+
+% ::id 81_fiction_HARDY-1883;AT16-5;NE
+% ::snt But at this season there were no such exigencies ;
+fof(ex1414051402551,axiom,(
+    ? [X1,E2] :
+      ( season_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [G3] :
+          ( exigencies_1(s0,G3)
+          & were_2(s0,E2,G3)
+          & at_2(s0,E2,X1) ) ) )).
+
+% ::id 82_fiction_HARDY-1883;AT16-6;NE
+% ::snt a mere acceptance of what the skies bestowed was sufficient for an abundant store .
+fof(ex1414051402895,axiom,(
+    ? [G1,X2,X3,A7,E4] :
+      ( skies_1(s0,G1)
+      & mere_1(s0,X3)
+      & ? [X5,E6] :
+          ( bestowed_3(s0,E6,G1,X5)
+          & is_before_2(s0,E6,e0)
+          & is_acceptance_of_2(s0,X3,X5) )
+      & abundant_1(s0,X2)
+      & store_1(s0,X2)
+      & is_sufficient_for_2(s0,A7,X2)
+      & is_before_2(s0,E4,e0)
+      & was_3(s0,E4,X3,A7) ) )).
+
+% ::id 83_fiction_HARDY-1883;AT17-1;NE
+% ::snt At last the notes of the serpent ceased and the house was silent .
+fof(ex1414051403252,axiom,(
+    ? [X1,X2,G3,X4,A7,E5,E6] :
+      ( serpent_1(s0,X1)
+      & house_1(s0,X2)
+      & is_notes_of_2(s0,G3,X1)
+      & last_1(s0,X4)
+      & silent_1(s0,A7)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & ceased_2(s0,E5,G3)
+      & at_2(s0,E5,X4)
+      & was_3(s0,E6,X2,A7) ) )).
+
+% ::id 84_fiction_HARDY-1883;AT17-2;NE
+% ::snt This cessation of activity aroused the solitary pedestrian from the reverie into which he had lapsed ,
+fof(ex1414051403605,axiom,(
+    ? [X7,X1,X2,X3,X4,E5,E6] :
+      ( activity_1(s0,X1)
+      & is_cessation_of_2(s0,X4,X1)
+      & solitary_1(s0,X3)
+      & pedestrian_1(s0,X3)
+      & choose3(X7,X3,X4,X1)
+      & had_lapsed_2(s0,E5,X7)
+      & into_2(s0,E5,X2)
+      & reverie_1(s0,X2)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & aroused_3(s0,E6,X4,X3)
+      & from_2(s0,E6,X2) ) )).
+
+% ::id 85_fiction_HARDY-1883;AT17-3;NE
+% ::snt and , emerging from the shed , with an apparently new intention , he walked up the path to the house-door .
+fof(ex1414051403951,axiom,(
+    ? [X1,X2,X3,X7,X4,E5,E6] :
+      ( shed_1(s0,X1)
+      & house_door_1(s0,X2)
+      & is_path_to_2(s0,X3,X2)
+      & apparently_new_1(s0,X4)
+      & intention_1(s0,X4)
+      & is_before_2(s0,E6,e0)
+      & emerging_2(s0,E5,X7)
+      & from_2(s0,E5,X1)
+      & with_2(s0,E5,X4)
+      & walked_2(s0,E6,X7)
+      & up_2(s0,E6,X3) ) )).
+
+% ::id 86_fiction_HARDY-1883;AT17-4;NE
+% ::snt Arrived here , his first act was to kneel down on a large stone beside the row of vessels , and to drink a copious draught from one of them .
+fof(ex1414051404310,axiom,(
+    ? [X1,G2,X11,X3,X4,X5,X6,G12,E7,E8,E9,E10] :
+      ( is_row_of_2(s0,X1,G2)
+      & vessels_1(s0,G2)
+      & first_1(s0,X6)
+      & is_act_of_2(s0,X6,X11)
+      & large_1(s0,X3)
+      & stone_1(s0,X3)
+      & copious_1(s0,X5)
+      & draught_1(s0,X5)
+      & is_one_of_2(s0,X4,G12)
+      & choose1(G12,G2)
+      & here_1(s0,E7)
+      & is_before_2(s0,E10,e0)
+      & arrived_2(s0,E7,X6)
+      & ? [S13] :
+          ( was_3(s0,E10,X6,S13)
+          & kneel_down_2(S13,E8,X6)
+          & on_2(S13,E8,X3)
+          & beside_2(S13,E8,X1)
+          & drink_3(S13,E9,X6,X5)
+          & from_2(S13,E9,X4) ) ) )).
+
+% ::id 87_fiction_HARDY-1883;AT17-5;NE
+% ::snt Having quenched his thirst he rose and lifted his hand to knock , but paused with his eye upon the panel .
+fof(ex1414051404662,axiom,(
+    ? [X1,X13,X12,X11,X10,X2,X3,X4,E5,E6,E7,E8,E9] :
+      ( panel_1(s0,X1)
+      & choose1(X11,X10)
+      & is_thirst_of_2(s0,X2,X11)
+      & choose2(X12,X10,X2)
+      & is_hand_of_2(s0,X3,X12)
+      & choose3(X13,X10,X3,X2)
+      & is_eye_of_2(s0,X4,X13)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & having_quenched_3(s0,E5,X10,X2)
+      & rose_2(s0,E6,X10)
+      & ? [S14] :
+          ( lifted_4(s0,E8,X10,X3,S14)
+          & knock_2(S14,E7,X3) )
+      & paused_2(s0,E9,X10)
+      & with_2(s0,E9,X4)
+      & upon_2(s0,E9,X1) ) )).
+
+% ::id 88_fiction_HARDY-1883;AT17-6;NE
+% ::snt Since the dark surface of the wood revealed absolutely nothing , it was evident that he must be mentally looking through the door , as if he wished to measure thereby all the possibilities that a house of this sort might include , and how they might bear upon the question of his entry .
+fof(ex1414051405062,axiom,(
+    ? [X27,X1,X2,X3,X4,X5,X6,X7,X20,X13,G8,A18,E9,E10,E11,S19,S15,S12] :
+      ( door_1(s0,X1)
+      & wood_1(s0,X2)
+      & dark_1(s0,X3)
+      & is_surface_of_2(s0,X3,X2)
+      & sort_1(s0,X4)
+      & is_house_of_2(s0,X5,X4)
+      & choose7(X27,X5,X4,X20,X3,X2,X1)
+      & is_entry_of_2(s0,X6,X27)
+      & is_question_of_2(s0,X7,X6)
+      & choose3(X20,X3,X2,X1)
+      & ? [G21] :
+          ( ? [S28] :
+              ( possibilities_2(s0,G21,S28)
+              & ? [E22] : include_2(S28,E22,X5) )
+          & is_of_2(s0,G21,G8) )
+      & ? [X23,G25,S24] :
+          ( ? [S29] :
+              ( fact_2(s0,S24,S29)
+              & ? [E26] :
+                  ( bear_2(S29,E26,G25)
+                  & upon_2(S29,E26,X7) ) )
+          & is_how_2(s0,S24,X23)
+          & is_of_2(s0,X23,G8) )
+      & evident_1(s0,A18)
+      & thereby_1(s0,E9)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & ? [S30] :
+          ( fact_2(s0,S12,S30)
+          & ? [E14] :
+              ( mentally_1(S30,E14)
+              & be_looking_2(S30,E14,X13)
+              & through_2(S30,E14,X1) ) )
+      & ? [S31] :
+          ( fact_2(s0,S15,S31)
+          & ? [X16,E17] :
+              ( absolutely_1(S31,X16)
+              & thing_1(S31,X16)
+              & is_before_2(S31,E17,e0)
+              & revealed_3(S31,E17,X3,X16) ) )
+      & ? [S32] :
+          ( fact_2(s0,S19,S32)
+          & ? [S33] :
+              ( wished_3(S32,E10,X20,S33)
+              & measure_3(S33,E9,X20,G8) ) )
+      & was_3(s0,E11,S12,A18)
+      & since_2(s0,E11,S15)
+      & as_if_2(s0,E11,S19) ) )).
+
+% ::id 89_fiction_HARDY-1883;AT18-1;NE
+% ::snt In his indecision he turned and surveyed the scene around .
+fof(ex1414051405416,axiom,(
+    ? [X1,X6,X5,X2,E3,E4] :
+      ( scene_1(s0,X1)
+      & choose1(X6,X5)
+      & is_indecision_of_2(s0,X2,X6)
+      & is_before_2(s0,E3,e0)
+      & around_1(s0,E4)
+      & is_before_2(s0,E4,e0)
+      & turned_2(s0,E3,X5)
+      & in_2(s0,E3,X2)
+      & surveyed_3(s0,E4,X5,X1)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 90_fiction_HARDY-1883;AT18-2;NE
+% ::snt Not a soul was anywhere visible .
+fof(ex1414051405749,axiom,(
+    ? [A3,E1] :
+      ( any_where_visible_1(s0,A3)
+      & is_before_2(s0,E1,e0)
+      & ? [X2] :
+          ( soul_1(s0,X2)
+          & was_3(s0,E1,X2,A3) ) ) )).
+
+% ::id 91_fiction_HARDY-1883;AT18-3;NE
+% ::snt The garden-path stretched downward from his feet , gleaming like the track of a snail ;
+fof(ex1414051406090,axiom,(
+    ? [X1,X2,X3,X7,G4,E5,E6] :
+      ( garden_path_1(s0,X3)
+      & snail_1(s0,X1)
+      & is_track_of_2(s0,X2,X1)
+      & choose1(X7,X3)
+      & is_feet_of_2(s0,G4,X7)
+      & is_before_2(s0,E6,e0)
+      & is_like_of_2(s0,X3,X2)
+      & gleaming_2(s0,E5,X3)
+      & stretched_downward_2(s0,E6,X3)
+      & from_2(s0,E6,G4) ) )).
+
+% ::id 92_fiction_HARDY-1883;AT18-4;NE
+% ::snt the roof of the little well -LRB- mostly dry -RRB- , the well-cover , the top rail of the garden-gate , were varnished with the same dull liquid glaze ; while , far away in the vale , a faint whiteness of more than usual extent showed that the rivers were high in the meads .
+fof(ex1414051406478,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,G9,X10,X11,G12,A18,S17,E13,E14,E15] :
+      ( little_1(s0,X1)
+      & mostly_dry_1(s0,X1)
+      & well_1(s0,X1)
+      & is_roof_of_2(s0,X2,X1)
+      & well_cover_1(s0,X3)
+      & garden_gate_1(s0,X4)
+      & top_1(s0,X5)
+      & is_rail_of_2(s0,X5,X4)
+      & same_1(s0,X7)
+      & dull_1(s0,X7)
+      & liquid_glaze_1(s0,X7)
+      & vale_1(s0,X6)
+      & rivers_1(s0,G9)
+      & meads_1(s0,G8)
+      & usual_1(s0,X10)
+      & extent_1(s0,X10)
+      & faint_1(s0,X11)
+      & ? [X16] :
+          ( is_than_2(s0,X16,X10)
+          & is_whiteness_of_2(s0,X11,X16) )
+      & is_of_2(s0,X2,G12)
+      & is_of_2(s0,X3,G12)
+      & is_of_2(s0,X5,G12)
+      & is_high_in_2(s0,A18,G8)
+      & is_far_away_in_2(s0,S17,X6)
+      & is_before_2(s0,E13,E14)
+      & is_before_2(s0,E14,e0)
+      & is_before_2(s0,E15,e0)
+      & ? [S19] :
+          ( fact_2(s0,S17,S19)
+          & ? [S20] :
+              ( showed_3(S19,E14,X11,S20)
+              & were_3(S20,E13,G9,A18) ) )
+      & varnished_3(s0,E15,unspecified,G12)
+      & with_2(s0,E15,X7) ) )).
+
+% ::id 93_fiction_HARDY-1883;AT18-5;NE
+% ::snt Beyond all this winked a few bleared lamplights through the beating drops -- lights that denoted the situation of the county-town from which he had appeared to come .
+ERROR: Line 9 Char 20 Token "(" continuing with "G6) &
+"
+
+% ::id 94_fiction_HARDY-1883;AT18-6;NE
+% ::snt The absence of all notes of life in that direction seemed to clinch his intentions , and he knocked at the door .
+fof(ex1414051407201,axiom,(
+    ? [X1,X2,X3,X11,X10,X4,G5,E6,E7,E8] :
+      ( direction_1(s0,X1)
+      & ? [G9] :
+          ( is_notes_of_2(s0,G9,X4)
+          & is_absence_of_2(s0,X2,G9)
+          & is_absence_in_2(s0,X2,X1) )
+      & door_1(s0,X3)
+      & life_1(s0,X4)
+      & choose3(X10,X2,X1,X4)
+      & choose3(X11,X2,X1,X4)
+      & is_intentions_of_2(s0,G5,X10)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [S12] :
+          ( seemed_2(s0,E7,S12)
+          & clinch_3(S12,E6,X2,G5) )
+      & knocked_2(s0,E8,X11)
+      & at_2(s0,E8,X3) ) )).
+
+% ::id 95_fiction_HARDY-1883;AT19-1;NE
+% ::snt Within , a desultory chat had taken the place of movement and musical sound .
+fof(ex1414051407547,axiom,(
+    ? [X1,X2,X3,G4,X5,E6] :
+      ( movement_1(s0,X1)
+      & musical_1(s0,X2)
+      & sound_1(s0,X2)
+      & is_place_of_2(s0,X3,G4)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & desultory_1(s0,X5)
+      & chat_1(s0,X5)
+      & within_1(s0,E6)
+      & is_before_2(s0,E6,e0)
+      & had_taken_3(s0,E6,X5,X3) ) )).
+
+% ::id 96_fiction_HARDY-1883;AT19-2;NE
+% ::snt The hedge-carpenter was suggesting a song to the company , which nobody just then was inclined to undertake , so that the knock afforded a not unwelcome diversion .
+fof(ex1414051407921,axiom,(
+    ? [X1,X2,X3,X4,X5,E6,E7,S12] :
+      ( hedge_carpenter_1(s0,X3)
+      & company_1(s0,X2)
+      & knock_1(s0,X1)
+      & ? [X8,S11,E9,E10] :
+          ( body_1(s0,X8)
+          & just_then_1(s0,S11)
+          & is_before_2(s0,E10,e0)
+          & ? [S13] :
+              ( fact_2(s0,S11,S13)
+              & ? [S14] :
+                  ( was_inclined_3(S13,E10,X8,S14)
+                  & undertake_3(S14,E9,X8,X5) ) ) )
+      & song_1(s0,X5)
+      & unwelcome_1(s0,X4)
+      & diversion_1(s0,X4)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & ? [S15] :
+          ( fact_2(s0,S12,S15)
+          & afforded_3(S15,E6,X1,X4) )
+      & was_suggesting_4(s0,E7,X3,X5,X2)
+      & so_2(s0,E7,S12) ) )).
+
+% ::id 97_fiction_HARDY-1883;AT20-1;NE
+% ::snt ' Walk in ! ' said the shepherd promptly .
+fof(ex1414051408257,axiom,(
+    ? [X1,E2] :
+      ( shepherd_1(s0,X1)
+      & promptly_1(s0,E2)
+      & is_before_2(s0,E2,e0)
+      & ? [S4] :
+          ( said_3(s0,E2,X1,S4)
+          & ? [E3] : walk_in_1(S4,E3) ) ) )).
+
+% ::id 98_fiction_HARDY-1883;AT21-1;NE
+% ::snt The latch clicked upward , and out of the night our pedestrian appeared upon the door-mat .
+fof(ex1414051408598,axiom,(
+    ? [X1,X2,X3,X7,X4,E5,E6] :
+      ( latch_1(s0,X1)
+      & night_1(s0,X3)
+      & door_mat_1(s0,X2)
+      & is_pedestrian_of_2(s0,X4,X7)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & clicked_upward_2(s0,E5,X1)
+      & appeared_2(s0,E6,X4)
+      & out_of_2(s0,E6,X3)
+      & upon_2(s0,E6,X2) ) )).
+
+% ::id 99_fiction_HARDY-1883;AT21-2;NE
+% ::snt The shepherd arose , snuffed two of the nearest candles , and turned to look at him .
+fof(ex1414051408946,axiom,(
+    ? [X1,G2,X8,G3,E4,E5,E6,E7] :
+      ( shepherd_1(s0,X1)
+      & nearest_1(s0,G2)
+      & candles_1(s0,G2)
+      & two_1(s0,G3)
+      & is_of_2(s0,G3,G2)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & arose_2(s0,E4,X1)
+      & snuffed_3(s0,E5,X1,G3)
+      & ? [S9] :
+          ( turned_3(s0,E7,X1,S9)
+          & look_2(S9,E6,X1)
+          & at_2(S9,E6,X8) ) ) )).
+
+% ::id 100_fiction_HARDY-1883;AT22-1;NE
+% ::snt Their light disclosed that the stranger was dark in complexion and not unprepossessing as to feature .
+fof(ex1414051409289,axiom,(
+    ? [X1,X2,X3,G6,A7,E4,E5] :
+      ( stranger_1(s0,X1)
+      & is_light_of_2(s0,X3,G6)
+      & complexion_1(s0,X2)
+      & is_dark_in_2(s0,A7,X2)
+      & ? [X8] :
+          ( feature_1(s0,X8)
+          & is_unprepossessing_as_to_2(s0,A7,X8) )
+      & is_before_2(s0,E4,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [S9] :
+          ( disclosed_3(s0,E5,X3,S9)
+          & was_3(S9,E4,X1,A7) ) ) )).
+
+% ::id 101_fiction_HARDY-1883;AT22-2;NE
+% ::snt His hat , which for a moment he did not remove , hung low over his eyes , without concealing that they were large , open , and determined , moving with a flash rather than a glance round the room .
+fof(ex1414051410946,axiom,(
+    ? [X1,X15,X11,X10,X2,X3,X4,G17,G5,A18,A14,E6,E7,E8,E9,S16] :
+      ( room_1(s0,X1)
+      & choose1(X11,X10)
+      & ? [X12,E13] :
+          ( moment_1(s0,X12)
+          & is_before_2(s0,E13,e0)
+          & did_remove_3(s0,E13,X11,X4)
+          & for_2(s0,E13,X12) )
+      & is_hat_of_2(s0,X4,X10)
+      & choose1(X15,X4)
+      & flash_1(s0,X3)
+      & is_glance_round_2(s0,X2,X1)
+      & is_eyes_of_2(s0,G5,X15)
+      & choose1(G17,G5)
+      & low_1(s0,A14)
+      & large_1(s0,A18)
+      & open_1(s0,A18)
+      & determined_1(s0,A18)
+      & is_rather_than_2(s0,E6,X2)
+      & is_before_2(s0,E7,E8)
+      & is_before_2(s0,E9,e0)
+      & ? [S19] :
+          ( fact_2(s0,S16,S19)
+          & ? [S20] :
+              ( concealing_3(S19,E8,X4,S20)
+              & moving_2(S20,E6,G17)
+              & with_2(S20,E6,X3)
+              & were_3(S20,E7,G17,A18) ) )
+      & hung_3(s0,E9,X4,A14)
+      & over_2(s0,E9,G5)
+      & without_2(s0,E9,S16) ) )).
+
+% ::id 102_fiction_HARDY-1883;AT22-3;NE
+% ::snt He seemed pleased with his survey , and , baring his shaggy head , said , in a rich deep voice , ' The rain is so heavy , friends , that I ask leave to come in and rest awhile . '
+fof(ex1414051411339,axiom,(
+    ? [X20,X1,G2,X18,X17,X15,X3,X4,X5,A19,A16,T6,E7,E8,E9,E10,E11,E12,E13,E14] :
+      ( rain_1(s0,X1)
+      & friends_1(s0,G2)
+      & choose1(X17,X15)
+      & is_survey_of_2(s0,X3,X17)
+      & choose2(X18,X15,X3)
+      & shaggy_1(s0,X4)
+      & is_head_of_2(s0,X4,X18)
+      & rich_1(s0,X5)
+      & deep_voice_1(s0,X5)
+      & is_pleased_with_2(s0,A16,X3)
+      & so_heavy_1(s0,A19)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E14,e0)
+      & seemed_3(s0,E7,X15,A16)
+      & baring_3(s0,E8,X15,X4)
+      & ? [S21] :
+          ( said_3(s0,E14,X15,S21)
+          & ? [S22] :
+              ( ask_3(S21,E12,X20,S22)
+              & ? [S23] :
+                  ( leave_3(S22,E11,X20,S23)
+                  & come_in_2(S23,E9,X20)
+                  & rest_2(S23,E10,X20)
+                  & tmp_2(S23,E10,T6) ) )
+          & is_3(S21,E13,X1,A19) )
+      & in_2(s0,E14,X5) ) )).
+
+% ::id 103_fiction_HARDY-1883;AT23-1;NE
+% ::snt ' To be sure , stranger , ' said the shepherd .
+fof(ex1414051411682,axiom,(
+    ? [X1,E2] :
+      ( shepherd_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [S6] :
+          ( said_3(s0,E2,X1,S6)
+          & ? [X3,A5,E4] :
+              ( stranger_1(S6,X3)
+              & sure_1(S6,A5)
+              & be_3(S6,E4,unspecified,A5) ) ) ) )).
+
+% ::id 104_fiction_HARDY-1883;AT23-2;NE
+% ::snt ' And faith , you've been lucky in choosing your time , for we are having a bit of a fling for a glad cause --
+fof(ex1414051412039,axiom,(
+    ? [X11,X8,X13,X1,X2,X3,X4,A9,E5,E6,E7,S12,S10] :
+      ( is_time_of_2(s0,X1,X11)
+      & glad_1(s0,X2)
+      & cause_1(s0,X2)
+      & is_fling_for_2(s0,X3,X2)
+      & is_bit_of_2(s0,X4,X3)
+      & lucky_1(s0,A9)
+      & ? [S14] :
+          ( fact_2(s0,S10,S14)
+          & choosing_3(S14,E5,X8,X1) )
+      & ? [S15] :
+          ( fact_2(s0,S12,S15)
+          & having_are_3(S15,E6,X13,X4) )
+      & have_been_3(s0,E7,X8,A9)
+      & in_2(s0,E7,S10)
+      & for_2(s0,E7,S12) ) )).
+
+% ::id 105_fiction_HARDY-1883;AT23-3;NE
+% ::snt though , to be sure , a man could hardly wish that glad cause to happen more than once a year . '
+fof(ex1414051412386,axiom,(
+    ? [X1,X2] :
+      ( glad_1(s0,X1)
+      & cause_1(s0,X1)
+      & man_1(s0,X2)
+      & ? [A8,T3,S9,S7,E4,E5,E6] :
+          ( sure_1(s0,A8)
+          & more_than_once_1(s0,T3)
+          & year_1(s0,T3)
+          & ? [S10] :
+              ( though_2(s0,S7,S10)
+              & be_3(S10,E4,unspecified,A8) )
+          & hardly_1(s0,S9)
+          & ? [S11] :
+              ( fact_2(s0,S7,S11)
+              & ? [S12] :
+                  ( fact_2(S11,S9,S12)
+                  & ? [S13] :
+                      ( wish_4(S12,E6,X2,X1,S13)
+                      & happen_2(S13,E5,X1)
+                      & tmp_2(S13,E5,T3) ) ) ) ) ) )).
+
+% ::id 106_fiction_HARDY-1883;AT24-1;NE
+% ::snt ' Nor less , ' spoke up a woman . ' For 'tis best to get your family over and done with , as soon as you can , so as to be all the earlier out of the fag o 't . '
+fof(ex1414051412811,axiom,(
+    ? [X1,E2] :
+      ( woman_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [S22] :
+          ( spoke_up_3(s0,E2,X1,S22)
+          & ? [X21,X18,X15,X14,X3,X4,X5,G6,A13,S16,E7,E8,E9,E10,E11,S20,S12] :
+              ( choose1(X14,X1)
+              & choose1(X15,X1)
+              & choose1(X18,X1)
+              & choose2(X21,X5,X4)
+              & is_fag_o_2(S22,X3,X21)
+              & is_family_of_2(S22,X4,X14)
+              & is_family_of_2(S22,X5,X15)
+              & predicate____dollar_t_1(S22,G6)
+              & ? [S23] :
+                  ( best_2(S22,A13,S23)
+                  & get_1(S23,E7)
+                  & over_2(S23,E7,X4)
+                  & get_1(S23,E8)
+                  & done_with_2(S23,E8,X5) )
+              & ? [T17] :
+                  ( ? [E19] :
+                      ( xxx_2(S22,E19,X18)
+                      & tmp_2(S22,E19,T17) )
+                  & is_as_soon_as_2(S22,S16,T17) )
+              & all_1(S22,E9)
+              & the_1(S22,E9)
+              & earlier_1(S22,E9)
+              & ? [S24] :
+                  ( fact_2(S22,S20,S24)
+                  & be_2(S24,E9,G6)
+                  & out_of_2(S24,E9,X3) )
+              & ? [S25] :
+                  ( fact_2(S22,S12,S25)
+                  & ? [S26] :
+                      ( fact_2(S25,S16,S26)
+                      & is_3(S26,E10,G6,A13)
+                      & so_as_2(S26,E10,S20) ) )
+              & nor_less_1(S22,E11)
+              & xxx_1(S22,E11)
+              & for_2(S22,E11,S12) ) ) ) )).
+
+% ::id 107_fiction_HARDY-1883;AT25-1;NE
+% ::snt ' And what may be this glad cause ? ' asked the stranger .
+fof(ex1414051413167,axiom,(
+    ? [X1,E2] :
+      ( stranger_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [S6] :
+          ( asked_3(s0,E2,X1,S6)
+          & ? [X3] :
+              ( glad_1(S6,X3)
+              & cause_1(S6,X3)
+              & ? [X4,E5] : be_3(S6,E5,X4,X3) ) ) ) )).
+
+% ::id 108_fiction_HARDY-1883;AT26-1;NE
+% ::snt ' A birth and christening , ' said the shepherd .
+fof(ex1414051413505,axiom,(
+    ? [X1,E2] :
+      ( shepherd_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [S7] :
+          ( said_3(s0,E2,X1,S7)
+          & ? [G3,E4] :
+              ( ? [X5] :
+                  ( birth_1(S7,X5)
+                  & is_of_2(S7,X5,G3) )
+              & ? [X6] :
+                  ( christening_1(S7,X6)
+                  & is_of_2(S7,X6,G3) )
+              & xxx_1(S7,E4)
+              & link_2(S7,E4,G3) ) ) ) )).
+
+% ::id 109_fiction_HARDY-1883;AT27-1;NE
+% ::snt The stranger hoped his host might not be made unhappy either by too many or too few of such episodes ,
+fof(ex1414051413859,axiom,(
+    ? [X1,X4,X2,E3] :
+      ( stranger_1(s0,X1)
+      & choose1(X4,X1)
+      & is_host_of_2(s0,X2,X4)
+      & is_before_2(s0,E3,e0)
+      & ? [S9] :
+          ( hoped_3(s0,E3,X1,S9)
+          & ? [A6,E5] :
+              ( unhappy_1(S9,A6)
+              & either_1(S9,E5)
+              & ? [X7] :
+                  ( ? [G8] :
+                      ( episodes_1(S9,G8)
+                      & is_of_2(S9,X7,G8) )
+                  & made_3(S9,E5,X7,X2)
+                  & attribute_2(S9,E5,A6) ) ) ) ) )).
+
+% ::id 110_fiction_HARDY-1883;AT27-2;NE
+% ::snt and being invited by a gesture to a pull at the mug , he readily acquiesced .
+fof(ex1414051414207,axiom,(
+    ? [X1,X6,X2,X3,E4,E5] :
+      ( mug_1(s0,X1)
+      & gesture_1(s0,X3)
+      & is_pull_at_2(s0,X2,X1)
+      & readily_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & invited_3(s0,E4,X3,X6)
+      & to_2(s0,E4,X2)
+      & acquiesced_2(s0,E5,X6) ) )).
+
+% ::id 111_fiction_HARDY-1883;AT27-3;NE
+% ::snt His manner , which , before entering , had been so dubious , was now altogether that of a careless and candid man .
+fof(ex1414051414580,axiom,(
+    ? [X1,X2,G3,X9,X8,X4,A10,E5,E6,E7] :
+      ( candid_1(s0,X1)
+      & man_1(s0,X1)
+      & is_of_2(s0,X2,G3)
+      & is_of_2(s0,X1,G3)
+      & choose2(X9,X4,X8)
+      & entering_2(s0,E5,X9)
+      & had_been_3(s0,E6,X4,A10)
+      & is_manner_of_2(s0,X4,X8)
+      & so_dubious_1(s0,A10)
+      & is_before_2(s0,E6,e0)
+      & now_1(s0,E7)
+      & altogether_1(s0,E7)
+      & is_before_2(s0,E7,e0)
+      & was_3(s0,E7,X4,X2) ) )).
+
+% ::id 112_fiction_HARDY-1883;AT28-1;NE
+% ::snt ' Late to be traipsing athwart this coomb -- hey ? ' said the engaged man of fifty .
+fof(ex1414051414927,axiom,(
+    ? [X1,G2,E3] :
+      ( engaged_1(s0,X1)
+      & is_man_of_2(s0,X1,G2)
+      & fifty_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & ? [S8] :
+          ( said_3(s0,E3,X1,S8)
+          & ? [X4,A7,E5,E6] :
+              ( coomb_1(S8,X4)
+              & ? [S9] :
+                  ( late_2(S8,A7,S9)
+                  & be_athwart_traipsing_3(S9,E5,unspecified,X4) )
+              & xxx_3(S8,E6,unspecified,A7) ) ) ) )).
+
+% ::id 113_fiction_HARDY-1883;AT29-1;NE
+% ::snt ' Late it is , master , as you say . --
+fof(ex1414051415269,axiom,(
+    ? [X6,X3,S4,E1,E2,S5] :
+      ( choose1(X6,master)
+      & late_1(s0,S4)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & say_2(S7,E1,X6) )
+      & ? [S8] :
+          ( fact_2(s0,S4,S8)
+          & is_2(S8,E2,X3)
+          & as_2(S8,E2,S5) ) ) )).
+
+% ::id 114_fiction_HARDY-1883;AT29-2;NE
+% ::snt I'll take a seat in the chimney-corner , if you have nothing to urge against it , ma'am ; for I am a little moist on the side that was next the rain . '
+fof(ex1414051415665,axiom,(
+    ? [X17,X8,X6,X1,X2,X3,X4,E5] :
+      ( ma_am_1(s0,X4)
+      & choose1(X6,X4)
+      & chimney_corner_1(s0,X1)
+      & choose1(X8,X4)
+      & choose1(X17,X4)
+      & rain_1(s0,X2)
+      & was_3(s0,E5,X3,X2)
+      & side_1(s0,X3)
+      & next_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & ? [X7] :
+          ( is_seat_in_2(s0,X7,X1)
+          & ? [X12,X9,E10,E11] :
+              ( choose2(X12,X7,X1)
+              & urge_2(s0,E10,X9)
+              & against_2(s0,E10,X12)
+              & thing_1(s0,X9)
+              & have_3(s0,E11,X8,X9) )
+          & ? [X13,E14,E15,S16] :
+              ( little_1(s0,X13)
+              & is_moist_on_2(s0,X13,X3)
+              & ? [S18] :
+                  ( fact_2(s0,S16,S18)
+                  & am_3(S18,E14,X17,X13) )
+              & take_3(s0,E15,X6,X7)
+              & for_2(s0,E15,S16) ) ) ) )).
+
+% ::id 115_fiction_HARDY-1883;AT30-1;NE
+% ::snt Mrs. Shepherd Fennel assented , and made room for the self-invited comer , who , having got completely inside the chimney-corner , stretched out his legs and his arms with the expansiveness of a person quite at home .
+fof(ex1414051416041,axiom,(
+    ? [X15,X14,X1,X2,X3,X4,X5,G6,G7,G8,E9,E10,X11,E12,E13] :
+      ( chimney_corner_1(s0,X1)
+      & choose4(X14,X5,X1,mrs_shepherd_fennel,X11)
+      & choose4(X15,X5,X1,mrs_shepherd_fennel,X11)
+      & home_1(s0,X2)
+      & is_quite_at_2(s0,X3,X2)
+      & person_1(s0,X3)
+      & is_expansiveness_of_2(s0,X4,X3)
+      & self_invited_1(s0,X5)
+      & having_got_2(s0,E9,X5)
+      & inside_2(s0,E9,X1)
+      & stretched_out_3(s0,E10,X5,G8)
+      & with_2(s0,E10,X4)
+      & comer_1(s0,X5)
+      & is_legs_of_2(s0,G6,X14)
+      & is_arms_of_2(s0,G7,X15)
+      & is_of_2(s0,G6,G8)
+      & is_of_2(s0,G7,G8)
+      & completely_1(s0,E9)
+      & is_before_2(s0,E10,e0)
+      & room_1(s0,X11)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & assented_2(s0,E12,mrs_shepherd_fennel)
+      & made_3(s0,E13,mrs_shepherd_fennel,X11)
+      & for_2(s0,E13,X5) ) )).
+
+% ::id 116_fiction_HARDY-1883;AT31-1;NE
+% ::snt ' Yes , I am rather cracked in the vamp , ' he said freely , seeing that the eyes of the shepherd's wife fell upon his boots , ' and I am not well fitted either .
+fof(ex1414051416447,axiom,(
+    ? [X1,X2,G3,X10,X8,G4,S9,E5,E6,E7] :
+      ( shepherd_1(s0,X1)
+      & is_wife_of_2(s0,X2,X1)
+      & is_eyes_of_2(s0,G3,X2)
+      & choose3(X10,X2,X1,X8)
+      & is_boots_of_2(s0,G4,X10)
+      & freely_1(s0,S9)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E7,e0)
+      & ? [S16] :
+          ( fact_2(s0,S9,S16)
+          & ? [S17] :
+              ( seeing_3(S16,E6,X8,S17)
+              & fell_2(S17,E5,G3)
+              & upon_2(S17,E5,G4) )
+          & ? [S18] :
+              ( said_3(S16,E7,X8,S18)
+              & ? [X14,X13,X11,E12] :
+                  ( choose3(X13,X8,X2,X1)
+                  & vamp_1(S18,X11)
+                  & choose3(X14,X8,X2,X1)
+                  & rather_1(S18,E12)
+                  & cracked_3(S18,E12,unspecified,X13)
+                  & in_2(S18,E12,X11)
+                  & ? [E15] :
+                      ( well_1(S18,E15)
+                      & either_1(S18,E15)
+                      & am_fitted_2(S18,E15,X14) ) ) ) ) ) )).
+
+% ::id 117_fiction_HARDY-1883;AT31-2;NE
+% ::snt I have had some rough times lately , and have been forced to pick up what I can get in the way of wearing , but I must find a suit better fit for working-days when I reach home . '
+fof(ex1414051416830,axiom,(
+    ? [X17,X11,X8,X6,X1,X2,G3,E4,E5] :
+      ( wearing_1(s0,X1)
+      & is_way_of_2(s0,X2,X1)
+      & rough_1(s0,G3)
+      & times_1(s0,G3)
+      & lately_1(s0,E4)
+      & have_had_3(s0,E4,X6,G3)
+      & ? [S19] :
+          ( have_forced_4(s0,E5,unspecified,X6,S19)
+          & ? [X7] :
+              ( ? [E9] :
+                  ( get_3(S19,E9,X8,X7)
+                  & in_2(S19,E9,X2) )
+              & ? [E10] : pick_up_2(S19,E10,X7) ) )
+      & ? [X12,G13,E14] :
+          ( fit_2(s0,E14,X12)
+          & for_2(s0,E14,G13)
+          & suit_1(s0,X12)
+          & working_days_1(s0,G13)
+          & better_1(s0,E14)
+          & ? [T15,E16] :
+              ( reach_2(s0,E16,X17)
+              & is_when_2(s0,E16,T15)
+              & home_1(s0,E16)
+              & ? [E18] :
+                  ( find_3(s0,E18,X11,X12)
+                  & tmp_2(s0,E18,T15) ) ) ) ) )).
+
+% ::id 118_fiction_HARDY-1883;AT32-1;NE
+% ::snt ' One of hereabouts ? ' she inquired .
+fof(ex1414051417172,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S6] :
+          ( inquired_3(s0,E1,X2,S6)
+          & ? [X3,E5,E4] :
+              ( is_one_of_2(S6,X3,E5)
+              & hereabouts_1(S6,E5)
+              & xxx_1(S6,E4)
+              & link_2(S6,E4,X3) ) ) ) )).
+
+% ::id 119_fiction_HARDY-1883;AT33-1;NE
+% ::snt ' Not quite that --
+fof(ex1414051417501,axiom,(
+    ? [X1,E2] :
+      ( quite_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 120_fiction_HARDY-1883;AT33-1;NE
+% ::snt further up the country . '
+fof(ex1414051417838,axiom,(
+    ? [X1,A3,E2] :
+      ( country_1(s0,X1)
+      & is_further_up_2(s0,A3,X1)
+      & xxx_3(s0,E2,unspecified,A3) ) )).
+

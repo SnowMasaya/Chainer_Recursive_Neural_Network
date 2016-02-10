@@ -1,0 +1,219 @@
+# ::id 1_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ティータイム
+∃ EVENT[2] ENTITY[1] (ティータイム(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ／ 還暦ブラボー ＜ 阿部澄江 ＞
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[阿部澄江], ENTITY[還暦ブラボー]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[還暦ブラボー])
+
+# ::id 3_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 午 （ うま ） 年 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (
+ 午_年(ENTITY[2]) ∧
+  うま(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[2])
+
+# ::id 4_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt １ 月 １ 日 の 誕生日 で 還暦 を 迎え た 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１_月_１_日(ENTITY[3]) ∧
+   の_誕生日(ENTITY[3], ENTITY[2]) ∧
+    還暦(ENTITY[4]) ∧
+     past(EVENT[5]) ∧ 迎え_た(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2])
+
+# ::id 5_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 光陰 矢 の ごとし 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (光陰(ENTITY[1]) ∧ 矢(ENTITY[2]) ∧ ごとし(EVENT[3], ENTITY[1]) ∧ の(EVENT[3]) = ENTITY[2])
+
+# ::id 6_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt あっという間 の ６０ 年 だっ た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  あっという間(ENTITY[3]) ∧
+   (CD_６０_年(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+    past(EVENT[4]) ∧ だっ_た(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 7_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 今年 は 新た な 人生 の スタート 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 今年(ENTITY[1]) ∧
+  新た_な(ATTRIB[4]) ∧
+   ATTRIBUTE_人生(ATTRIB[4], ENTITY[3]) ∧ の_スタート(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 8_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 絵馬 に 願い事 を …。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  絵馬(ENTITY[2]) ∧
+   願い事(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 9_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 「 ６０ 年後 、 １２０ 歳 の 誕生日 に ２ 度目 の 還暦 を 迎え られ ます よう に 」 と 、 したため た 。
+∃ SITUATION[4] ENTITY[3] ENTITY[1] EVENT[10] EVENT[11] EVENT[2] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] TIME[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   CD_６０_年後(TIME[5]) ∧
+    CD_１２０_歳(ENTITY[7]) ∧
+     の_誕生日(ENTITY[7], ENTITY[6]) ∧
+      CD_２_度目(ENTITY[9]) ∧
+       の_還暦(ENTITY[9], ENTITY[8]) ∧
+        よう(SITUATION[4],
+         迎え_られ_ます(EVENT[10], ENTITY[3], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[6] ∧
+          is_contained_in(時間(EVENT[10]), TIME[5])) ∧
+         past(EVENT[2]) ∧
+          したため_た(EVENT[2], ENTITY[1], xxx(EVENT[11], ENTITY[3]) ∧ に(EVENT[11]) = SITUATION[4]))
+
+# ::id 10_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 仕事 で は 、 ３ 月末 で 定年退職 を 迎え ３８ 年間 の 教員生活 に いったん ピリオド を 打つ こと に なっ た 。
+∃ SITUATION[6] ENTITY[1] EVENT[5] EVENT[10] EVENT[12] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[9] ENTITY[7] ENTITY[2] (
+ 仕事(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_３_月末(ENTITY[3]) ∧
+    定年退職(ENTITY[4]) ∧
+     CD_３８_年間(ENTITY[8]) ∧
+      の_教員生活(ENTITY[8], ENTITY[7]) ∧
+       ピリオド(ENTITY[9]) ∧
+        こと(SITUATION[6], 打つ(EVENT[10], ENTITY[1], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[7]) ∧
+         ADV_いったん(EVENT[10]) ∧
+          past(EVENT[12]) ∧
+           迎え(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧
+            で(EVENT[5]) = ENTITY[2] ∧ なっ_た(EVENT[12], ENTITY[1], SITUATION[6]))
+
+# ::id 11_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 「 チョーク １ 本 、 わが 教え子 に 夢 を 描き 」 を モットー に 生徒たち と たくさん の 思い出 を つくっ て き た 。
+∃ ENTITY[4] SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] EVENT[12] ENTITY[5] ENTITY[3] ENTITY[7] GROUP[9] (
+ ENTITY[1] = *pro* ∧
+  (CD_１_本(ENTITY[3]), チョーク(ENTITY[3])) ∧
+   ENTITY[4] = わが ∧
+    教え子(ENTITY[4]) ∧
+     夢(ENTITY[5]) ∧
+      FACT(SITUATION[2],
+       描き(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+        ADV(EVENT[6]) = ENTITY[3]) ∧
+       モットー(ENTITY[7]) ∧
+        CONJ_と(∃ ENTITY[10] (生徒たち(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+         たくさん_の ENTITY[11] (思い出(ENTITY[11]), is_element_of(ENTITY[11], GROUP[9]))) ∧
+         past(EVENT[12]) ∧
+          xxx(EVENT[8], ENTITY[1], SITUATION[2]) ∧ に(EVENT[8]) = ENTITY[7] ∧
+           つくっ_て_き_た(EVENT[12], ENTITY[1], GROUP[9]))
+
+# ::id 12_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt その 出会い が 何より の 宝 で あっ た 。
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 出会い(ENTITY[1]) ∧
+  ADV_何より(ATTRIB[3]) ∧ の_宝(ATTRIB[3], ENTITY[2]) ∧ past(EVENT[4]) ∧ で_あっ_た(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 13_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 今 は 亡き 祖母 、 父 、 母 に は 言い 尽くせ ない ほど 感謝 し て いる 。
+∃ SITUATION[3] ENTITY[1] ATTRIB[6] EVENT[10] ENTITY[5] ENTITY[7] ENTITY[8] GROUP[4] ENTITY[2] (
+ 今(ENTITY[2]) ∧
+  亡き(ATTRIB[6]) ∧
+   ATTRIBUTE_祖母(ATTRIB[6], ENTITY[5]) ∧
+    父(ENTITY[7]) ∧
+     母(ENTITY[8]) ∧
+      is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[7], GROUP[4]) ∧ is_element_of(ENTITY[8], GROUP[4]) ∧
+       ENTITY[1] = *pro* ∧
+        FACT(SITUATION[3], ¬ ∃ EVENT[9] (言い_尽くせ(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = GROUP[4])) ∧
+         感謝する.0_て_いる(EVENT[10], ENTITY[1]) ∧ ほど(EVENT[10]) = SITUATION[3] ∧ 時間(EVENT[10]) = ENTITY[2])
+
+# ::id 14_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 家路 を 急ぐ 私 に 、 わが家 の 一 灯 が 待っ て い て くれ た 。
+∃ ENTITY[4] EVENT[3] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[4] = 私 ∧
+  家路(ENTITY[2]) ∧
+   急ぐ(EVENT[3], ENTITY[4], ENTITY[2]) ∧
+    わが家(ENTITY[6]) ∧
+     (CD_一_灯(ENTITY[5]), の(ENTITY[6], ENTITY[5])) ∧
+      past(EVENT[7]) ∧ 待っ_て_い_くれ_た(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[4])
+
+# ::id 15_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ４ 人 家族 で 過ごし た ころ が 、 ６０ 年間 の 中 で 一番 幸せ な 時間 だっ た よう に 思え て なら ない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ATTRIB[9] SITUATION[7] SITUATION[2] EVENT[4] EVENT[10] EVENT[11] ENTITY[3] ENTITY[6] ENTITY[8] ENTITY[5] (
+        (CD_４_人(ENTITY[3]), 家族(ENTITY[3])) ∧
+         ころ(SITUATION[2], 過ごし_た(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3]) ∧
+          CD_６０_年間(ENTITY[6]) ∧
+           の_中(ENTITY[6], ENTITY[5]) ∧
+            一番_幸せ_な(ATTRIB[9]) ∧
+             ATTRIBUTE_時間(ATTRIB[9], ENTITY[8]) ∧
+              よう(SITUATION[7], だっ_た(EVENT[10], _, ENTITY[8])) ∧
+               past(EVENT[4]) ∧
+                past(EVENT[10]) ∧
+                 思え_て_なら(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = SITUATION[7] ∧
+                  で(EVENT[11]) = ENTITY[5] ∧ が(EVENT[11]) = SITUATION[2]))
+
+# ::id 16_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt さて 、 還暦 の 私 。
+∃ ENTITY[2] EVENT[3] ENTITY[1] (ENTITY[2] = 私 ∧ 還暦(ENTITY[1]) ∧ の_xxx(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3], _, ENTITY[2]))
+
+# ::id 17_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 父 は 還暦 で わが家 を 新築 し た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 父(ENTITY[1]) ∧
+  還暦(ENTITY[2]) ∧
+   わが家(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ 新築する.0_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 18_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 私 も 父 を 見習い 、 生涯 現役 で 仕事 を し たい 。
+∃ ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = 私 ∧
+  父(ENTITY[2]) ∧
+   現役(ENTITY[4]) ∧
+    仕事(ENTITY[5]) ∧
+     ADV_生涯(EVENT[6]) ∧
+      見習い(EVENT[3], ENTITY[1], ENTITY[2]) ∧
+       し_たい(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4])
+
+# ::id 19_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そして 母 の よう に いつも 若く 美しく あり たい 。
+∃ SITUATION[6] ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  母(ENTITY[3]) ∧
+   の_よう(ENTITY[3], ENTITY[2]) ∧
+    ADV_いつも(SITUATION[6]) ∧
+     FACT(SITUATION[6],
+      若く(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2] ∧
+       美しく_あり_たい(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[2]))
+
+# ::id 20_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 旅 に 出 たり 音楽 を 聴い たり し ながら 自分 を 高め よう 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_よう(∃ ENTITY[8] SITUATION[2] EVENT[4] EVENT[6] EVENT[7] EVENT[9] ENTITY[3] ENTITY[5] (
+        旅(ENTITY[3]) ∧
+         音楽(ENTITY[5]) ∧
+          FACT(SITUATION[2],
+           CONJ_たり(出(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3],
+            聴い(EVENT[6], ENTITY[1], ENTITY[5]))) ∧
+           ENTITY[8] = 自分{ENTITY[5], ENTITY[3]} ∧
+            CRD_ながら(し(EVENT[7], ENTITY[1]) ∧ たり(EVENT[7]) = SITUATION[2],
+             高め(EVENT[9], ENTITY[1], ENTITY[8])))))
+
+# ::id 21_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そして 時 に は 立ち 止まり 深呼吸 を し 、 いちず に 生き たい 。
+∃ SITUATION[3] ENTITY[1] EVENT[4] EVENT[5] EVENT[6] ENTITY[2] (
+ 時(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   深呼吸(SITUATION[3], 立ち_止まり(EVENT[4], ENTITY[1])) ∧
+    ADV_いちず_に(EVENT[6]) ∧
+     し(EVENT[5], ENTITY[1], SITUATION[3]) ∧ に(EVENT[5]) = ENTITY[2] ∧ 生き_たい(EVENT[6], ENTITY[1]))
+
+# ::id 22_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 人 の 役 に 立てる こと の 喜び を 生きがい と し て 。
+∃ SITUATION[3] ENTITY[1] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  人(ENTITY[5]) ∧
+   の_役(ENTITY[5], ENTITY[4]) ∧
+    こと(SITUATION[3], 立てる(EVENT[6]) ∧ に(EVENT[6]) = ENTITY[4]) ∧
+     の_喜び(SITUATION[3], ENTITY[2]) ∧
+      生きがい(ENTITY[7]) ∧ し_て(EVENT[8], ENTITY[1], ENTITY[2]) ∧ と(EVENT[8]) = ENTITY[7])
+
+# ::id 23_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そんな 思い の 初春 で ある 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (思い(ENTITY[2]) ∧ の_初春(ENTITY[2], ENTITY[1]) ∧ で_ある(EVENT[3], _, ENTITY[1]))
+
+# ::id 24_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt （ 大崎 市 ・高校 教諭 ・６０ 歳 ）
+∃ EVENT[2] ENTITY[1] ((CD.６０_歳(ENTITY[1]), 大崎_市.高校_教諭(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

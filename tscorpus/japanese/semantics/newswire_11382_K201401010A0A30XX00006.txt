@@ -1,0 +1,134 @@
+# ::id 1_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 科学 の 泉
+∃ EVENT[2] ENTITY[1] (科学(ENTITY[1]) ∧ の_xxx(ENTITY[1], ENTITY[泉]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[泉])
+
+# ::id 2_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt ／ 最新宇宙論 （ ２ ）
+∃ EVENT[2] ENTITY[1] (CD_２(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[最新宇宙論]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[最新宇宙論])
+
+# ::id 3_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt ／ 膨張加速、源は暗黒エネルギー
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[膨張加速、源は暗黒エネルギー])
+
+# ::id 4_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 宇宙 は 約１３８億 年 前 から 現在 まで 膨張 し て い ます 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 宇宙(ENTITY[1]) ∧
+  (CD_約１３８億_年(ENTITY[2]), 前(ENTITY[2])) ∧
+   現在(ENTITY[3]) ∧
+    膨張する.0_て_い_ます(EVENT[4], ENTITY[1]) ∧ まで(EVENT[4]) = ENTITY[3] ∧ から(EVENT[4]) = ENTITY[2])
+
+# ::id 5_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 釜 の 中 で ブドウパン が 焼け て パン生地 が 膨らみ 、 その 中 の ブドウ同士 の 間隔 が 広がっ て いく よう に 、 空間 が 広がり 銀河同士 が 離れ て いく の です 。
+∃ SITUATION[4] EVENT[2] EVENT[8] EVENT[10] EVENT[14] EVENT[15] ENTITY[1] ENTITY[6] ENTITY[7] ENTITY[5] ENTITY[9] ENTITY[12] ENTITY[11] ENTITY[3] ENTITY[13] (
+ 中(ENTITY[13]) ∧
+  空間(ENTITY[1]) ∧
+   銀河同士(ENTITY[3]) ∧
+    釜(ENTITY[6]) ∧
+     の_中(ENTITY[6], ENTITY[5]) ∧
+      ブドウパン(ENTITY[7]) ∧
+       パン生地(ENTITY[9]) ∧
+        の_ブドウ同士(ENTITY[13], ENTITY[12]) ∧
+         の_間隔(ENTITY[12], ENTITY[11]) ∧
+          よう(SITUATION[4],
+           CONJ_te(焼け_て(EVENT[8], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[5],
+            膨らみ(EVENT[10], ENTITY[9]) ∧ 広がっ_て_いく(EVENT[14], ENTITY[11]))) ∧
+           広がり(EVENT[2], ENTITY[1]) ∧ 離れ_て_いく_の_です(EVENT[15], ENTITY[3]) ∧ に(EVENT[15]) = SITUATION[4])
+
+# ::id 6_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt この 発見 は 、 宇宙 は 永遠 に 変わら ない という 固定概念 こそ 打ち砕き まし た が 、 理論的 に は 当然 の 結果 と も いえ ます 。
+∃ ENTITY[8] EVENT[12] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[4] ENTITY[1] ENTITY[9] (
+ 発見(ENTITY[1]) ∧
+  宇宙(ENTITY[4]) ∧
+   理論的(ENTITY[9]) ∧
+    THAT_固定概念(¬ ∃ EVENT[6] ENTITY[5] (永遠(ENTITY[5]) ∧ 変わら(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]),
+     ENTITY[3]) ∧
+     ENTITY[8] = *pro*{ENTITY[3], ENTITY[1], ENTITY[4]} ∧
+      当然(ENTITY[11]) ∧
+       の_結果(ENTITY[11], ENTITY[10]) ∧
+        CONJ_が(こそ ENTITY[2] (ENTITY[2] = ENTITY[3], ∃ EVENT[7] (past(EVENT[7]) ∧ 打ち砕き_まし_た(EVENT[7], ENTITY[1], ENTITY[2]))),
+         いえ_ます(EVENT[12], ENTITY[8]) ∧ と(EVENT[12]) = ENTITY[10] ∧ に(EVENT[12]) = ENTITY[9]))
+
+# ::id 7_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 現に アインシュタイン は 宇宙膨張 、 あるいは 逆 に 宇宙 が つぶれる 可能性 に 気づい て い まし た 。
+∃ EVENT[7] GROUP[1] (
+ CONJ_あるいは(∃ ENTITY[2] (宇宙膨張(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+   宇宙(ENTITY[4]) ∧
+    THAT_可能性(つぶれる(EVENT[5], ENTITY[4]), ENTITY[3]) ∧ ADV_逆_に(EVENT[5]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  ADV_現に(EVENT[7]) ∧ past(EVENT[7]) ∧ 気づい_て_い_まし_た(EVENT[7], ENTITY[アインシュタイン]) ∧ に(EVENT[7]) = GROUP[1])
+
+# ::id 8_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 真 に 驚く べき は 、 宇宙膨張 の 速さ が ６０億 年 ほど 前 から 加速 し て いる こと です 。
+∃ SITUATION[5] ENTITY[2] SITUATION[1] EVENT[10] EVENT[11] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] (
+ ENTITY[2] = *pro* ∧
+  FACT(SITUATION[1],
+   MD_べき(∃ EVENT[4] ENTITY[3] (真(ENTITY[3]) ∧ 驚く(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]))) ∧
+   宇宙膨張(ENTITY[7]) ∧
+    の_速さ(ENTITY[7], ENTITY[6]) ∧
+     CD_６０億_年(ENTITY[9]) ∧
+      ほど_前(ENTITY[9], ENTITY[8]) ∧
+       こと(SITUATION[5], 加速する.0_て_いる(EVENT[10], ENTITY[6]) ∧ から(EVENT[10]) = ENTITY[8]) ∧
+        です(EVENT[11], SITUATION[1], SITUATION[5]))
+
+# ::id 9_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt たとえ て いえ ば 真上 に 投げ た ボール が 何 も し ない のに ある 高さ から どんどん 速く なる ような もの です 。
+∃ ENTITY[1] ENTITY[11] (
+ 高さ(ENTITY[11]) ∧
+  ENTITY[1] = *pro* ∧
+   ∀ EVENT[2] EVENT[3] CND_ば(CONJ_te(たとえ_て(EVENT[2], ENTITY[1]), いえ(EVENT[3], ENTITY[1])),
+       ∃ SITUATION[4] EVENT[8] EVENT[12] EVENT[14] ENTITY[7] ENTITY[5] (
+        真上(ENTITY[7]) ∧
+         投げ_た(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[7] ∧ ボール(ENTITY[5]) ∧
+          もの(SITUATION[4],
+           CRD_のに(も ENTITY[9] ¬ ∃ EVENT[10] し(EVENT[10], ENTITY[9]),
+            速く_なる_ような(EVENT[12], ENTITY[5]) ∧ から(EVENT[12]) = ENTITY[11])) ∧
+           past(EVENT[8]) ∧ ADV_どんどん(EVENT[12]) ∧ です(EVENT[14], ENTITY[1], SITUATION[4]))))
+
+# ::id 10_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt ボール は 地球 の 重力 によって 引っ張ら れる ので 上昇速度 は どんどん 遅く なり ます 。
+∃ EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[5] (
+ ボール(ENTITY[1]) ∧
+  上昇速度(ENTITY[5]) ∧
+   地球(ENTITY[3]) ∧
+    の_重力(ENTITY[3], ENTITY[2]) ∧
+     ADV_どんどん(EVENT[6]) ∧ CRD_ので(引っ張ら(EVENT[4], ENTITY[2], ENTITY[1]), 遅く_なり_ます(EVENT[6], ENTITY[5])))
+
+# ::id 11_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 宇宙 も その 中 に ある 物質 の 重力 によって 膨張速度 が 減速 する はず な の です 。
+∃ SITUATION[1] ENTITY[3] ENTITY[7] ENTITY[2] EVENT[6] EVENT[8] EVENT[9] ENTITY[5] (
+ 中(ENTITY[5]) ∧
+  ある(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 物質(ENTITY[3]) ∧
+   の_重力(ENTITY[3], ENTITY[2]) ∧
+    膨張速度(ENTITY[7]) ∧
+     はず(SITUATION[1], 減速する.0(EVENT[8], ENTITY[7]) ∧ によって(EVENT[8]) = ENTITY[2]) ∧
+      な_の_です(EVENT[9], ENTITY[宇宙], SITUATION[1]))
+
+# ::id 12_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt しかし 現実 は 誰 か が アクセル を 踏ん だ よう に 加速 し て いる の です 。
+∃ SITUATION[3] ENTITY[1] EVENT[7] ENTITY[2] (
+ 現実(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   よう(SITUATION[3], か ENTITY[4] ∃ EVENT[6] ENTITY[5] (アクセル(ENTITY[5]) ∧ past(EVENT[6]) ∧ 踏ん_だ(EVENT[6], ENTITY[4], ENTITY[5]))) ∧
+    加速する.0_て_いる_の_です(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = SITUATION[3] ∧ ADV(EVENT[7]) = ENTITY[2])
+
+# ::id 13_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt この 誰 か を 暗黒エネルギー と 呼ん で い ます 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  か ENTITY[2] ∃ EVENT[4] ENTITY[3] (暗黒エネルギー(ENTITY[3]) ∧ 呼ん_で_い_ます(EVENT[4], ENTITY[1], ENTITY[2]) ∧ と(EVENT[4]) = ENTITY[3]))
+
+# ::id 14_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt 暗黒エネルギー の 正体 を 探る こと が 現代宇宙論 の 最大 の テーマ です 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[9] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[7] ENTITY[6] (
+ ENTITY[2] = *pro* ∧
+  暗黒エネルギー(ENTITY[4]) ∧
+   の_正体(ENTITY[4], ENTITY[3]) ∧
+    こと(SITUATION[1], 探る(EVENT[5], ENTITY[2], ENTITY[3])) ∧
+     現代宇宙論(ENTITY[7]) ∧
+      最大(ENTITY[8]) ∧
+       の_テーマ(ENTITY[8], ENTITY[6]) ∧ の__テーマ(ENTITY[7], ENTITY[6]) ∧ です(EVENT[9], SITUATION[1], ENTITY[6]))
+
+# ::id 15_newswire_11382_K201401010A0A30XX00006;NJ
+# ::snt （ 東北大大学院理学研究科 教授 二間瀬敏史 ）
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東北大大学院理学研究科_教授_二間瀬敏史])

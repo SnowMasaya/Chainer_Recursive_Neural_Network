@@ -1,0 +1,149 @@
+# ::id 1_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 東日本大震災
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東日本大震災])
+
+# ::id 2_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ／ 復興応援職員 、 派遣継続 訴え
+∃ EVENT[3] GROUP[1] (
+ is_element_of(ENTITY[復興応援職員], GROUP[1]) ∧ ∃ ENTITY[2] (派遣継続_訴え(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 3_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ／ 岩手県 と 県教委 、
+∃ EVENT[2] GROUP[1] (
+ CONJ_と(is_element_of(ENTITY[岩手県], GROUP[1]), is_element_of(ENTITY[県教委], GROUP[1])) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 4_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 盛岡で２月シンポジウム
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[盛岡で２月シンポジウム])
+
+# ::id 5_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 岩手県 と 県教委 は ２ 月 ６、７ の 両日 、 盛岡市 で 、 震災 から の 復旧・復興 の ため に 全国 から 派遣 さ れ て いる 自治体職員 が 、 自ら の 仕事 の 成果 や 仕事 を 通し て 見え た 復興 の 課題 を 報告 する シンポジウム を 開く 。
+∃ GROUP[1] (
+ CONJ_と(is_element_of(ENTITY[岩手県], GROUP[1]), is_element_of(ENTITY[県教委], GROUP[1])) ∧
+  両 ENTITY[3] TIME[2] ((CD_２_月_６、７(ENTITY[3]) ∧ の_日(ENTITY[3], TIME[2])),
+   ∃ SITUATION[4] EVENT[22] EVENT[23] ENTITY[9] ENTITY[8] ENTITY[7] GROUP[12] ENTITY[5] (
+    震災(ENTITY[9]) ∧
+     から_の_復旧.復興(ENTITY[9], ENTITY[8]) ∧
+      の_ため(ENTITY[8], ENTITY[7]) ∧
+       全 ENTITY[10] (国(ENTITY[10]),
+        ∃ EVENT[11] (
+         派遣する.0_て_いる(EVENT[11], _, ENTITY[5]) ∧
+          から(EVENT[11]) = ENTITY[10] ∧ に(EVENT[11]) = ENTITY[7])) ∧ 自治体職員(ENTITY[5]) ∧
+        CONJ_や(∃ ENTITY[15] ENTITY[14] ENTITY[13] (
+              ENTITY[15] = 自ら{ENTITY[13], ENTITY[5], ENTITY[7], ENTITY[8], ENTITY[9], ENTITY[盛岡市], ENTITY[3], ENTITY[県教委], ENTITY[岩手県]} ∧
+               の_仕事(ENTITY[15], ENTITY[14]) ∧ の_成果(ENTITY[14], ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+         ∃ EVENT[19] EVENT[20] ENTITY[18] ENTITY[21] ENTITY[16] (
+          仕事(ENTITY[18]) ∧
+           復興(ENTITY[21]) ∧
+            CONJ_te(通し_て(EVENT[19], ENTITY[16], ENTITY[18]), 見え_た(EVENT[20], ENTITY[16])) ∧
+             の_課題(ENTITY[21], ENTITY[16]) ∧ past(EVENT[20]) ∧ is_element_of(ENTITY[16], GROUP[12]))) ∧
+         シンポジウム(SITUATION[4], 報告する.0(EVENT[22], ENTITY[5], GROUP[12])) ∧
+          開く(EVENT[23], GROUP[1], SITUATION[4]) ∧ で(EVENT[23]) = ENTITY[盛岡市] ∧
+           is_contained_in(時間(EVENT[23]), TIME[2]))))
+
+# ::id 6_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 震災 から 間もなく ３ 年 に なる の を 前 に 、 応援職員 の 必要性 を 確認 し 、 継続的 な 支援 を 訴える の が 狙い 。
+∃ ATTRIB[15] ENTITY[10] SITUATION[9] SITUATION[2] ENTITY[1] EVENT[5] EVENT[8] EVENT[13] EVENT[16] EVENT[17] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[12] ENTITY[11] ENTITY[14] (
+ ENTITY[1] = *pro* ∧
+  震災(ENTITY[3]) ∧
+   CD_３_年(ENTITY[4]) ∧
+    の(SITUATION[2], なる(EVENT[5], ENTITY[1], ENTITY[4]) ∧ から(EVENT[5]) = ENTITY[3]) ∧
+     前(ENTITY[7]) ∧
+      ENTITY[10] = *pro*{ENTITY[7], ENTITY[3], ENTITY[4]} ∧
+       応援職員(ENTITY[12]) ∧
+        の_必要性(ENTITY[12], ENTITY[11]) ∧
+         継続的_な(ATTRIB[15]) ∧
+          ATTRIBUTE_支援(ATTRIB[15], ENTITY[14]) ∧
+           の(SITUATION[9], 確認する.0(EVENT[13], ENTITY[10], ENTITY[11]) ∧ 訴える(EVENT[16], ENTITY[10], ENTITY[14])) ∧
+            ADV_間もなく(EVENT[5]) ∧
+             xxx(EVENT[8], ENTITY[1], SITUATION[2]) ∧ に(EVENT[8]) = ENTITY[7] ∧
+              狙い(EVENT[17], SITUATION[9]))
+
+# ::id 7_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ６ 日 は 県民会館 など 市内 ５ カ所 で 、 ５０～２００ 人 に 分かれ 五 つ の 分科会 を 開く 。
+∃ ENTITY[1] EVENT[6] EVENT[8] EVENT[11] DEGREE[5] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[2] (
+ CD_６_日(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   県民会館(ENTITY[4]) ∧
+    CD_５_カ所(DEGREE[5]) ∧
+     MSR_市内(DEGREE[5], ENTITY[3]) ∧ など_市内(ENTITY[4], ENTITY[3]) ∧
+      CD_５０～２００_人(ENTITY[7]) ∧
+       CD_五_つ(ENTITY[10]) ∧
+        の_分科会(ENTITY[10], ENTITY[9]) ∧
+         CONJ_te(で(EVENT[6], ENTITY[1], ENTITY[3]),
+          分かれ(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+          開く(EVENT[11], ENTITY[1], ENTITY[9]) ∧ 時間(EVENT[11]) = ENTITY[2])
+
+# ::id 8_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 応援職員 が 防潮堤 の 整備 や 埋蔵文化財調査 など を 報告 する 。
+∃ EVENT[7] GROUP[3] ENTITY[2] ENTITY[1] (
+ 応援職員(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[5] ENTITY[4] (防潮堤(ENTITY[5]) ∧ の_整備(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[6] (埋蔵文化財調査(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+   など(GROUP[3], ENTITY[2]) ∧ 報告する.0(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 9_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt ７ 日 は 岩手教育会館 で 、 派遣 を 終え た 大阪府職員 が 、 その 経験 を 府 の 危機管理 に どの よう に 生かし て いる か を 紹介 する 。
+∃ SITUATION[4] ENTITY[1] EVENT[14] ENTITY[3] ENTITY[9] ENTITY[2] (
+ CD_７_日(ENTITY[2]) ∧
+  経験(ENTITY[9]) ∧
+   ENTITY[1] = *pro* ∧
+    岩手教育会館(ENTITY[3]) ∧
+     か(SITUATION[4],
+      QUEST(∃ EVENT[8] EVENT[13] ENTITY[7] ENTITY[11] ENTITY[10] ENTITY[5] ? ENTITY[12] (
+            よう(ENTITY[12]) ∧
+             派遣(ENTITY[7]) ∧
+              終え_た(EVENT[8], ENTITY[5], ENTITY[7]) ∧ 大阪府職員(ENTITY[5]) ∧
+               府(ENTITY[11]) ∧
+                の_危機管理(ENTITY[11], ENTITY[10]) ∧
+                 past(EVENT[8]) ∧
+                  生かし_て_いる(EVENT[13], ENTITY[5], ENTITY[9]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+                   に(EVENT[13]) = ENTITY[10]))) ∧
+      紹介する.0(EVENT[14], ENTITY[1]) ∧ を(EVENT[14]) = SITUATION[4] ∧ で(EVENT[14]) = ENTITY[3] ∧
+       時間(EVENT[14]) = ENTITY[2])
+
+# ::id 10_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 達増拓也知事 は 「 応援職員 なく し て 復興 は 進ま ない 。 復興事業 は これ から ピーク を 迎える 。 あらためて 全国 に 支援 を お願い し たい 」 と 話し た 。
+∃ ENTITY[7] EVENT[3] EVENT[9] EVENT[12] EVENT[1] ENTITY[2] ENTITY[8] ENTITY[10] ENTITY[5] (
+ 復興(ENTITY[5]) ∧
+  応援職員(ENTITY[2]) ∧
+   ENTITY[7] = これ{ENTITY[2], ENTITY[5], ENTITY[達増拓也知事]} ∧
+    ピーク(ENTITY[8]) ∧
+     全 ENTITY[11] (国(ENTITY[11]), に_支援(ENTITY[11], ENTITY[10])) ∧
+      ADV_なく(EVENT[3]) ∧
+       ADV_あらためて(EVENT[12]) ∧
+        past(EVENT[1]) ∧
+         話し_た(EVENT[1], ENTITY[達増拓也知事],
+          CONJ_te(し_て(EVENT[3], ENTITY[2]), ¬ ∃ EVENT[6] 進ま(EVENT[6], ENTITY[5])) ∧
+           迎える(EVENT[9], ENTITY[復興事業], ENTITY[8]) ∧ から(EVENT[9]) = ENTITY[7] ∧
+           お願いする.0_たい(EVENT[12], _, ENTITY[10])))
+
+# ::id 11_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 定員 ６００ 人 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (定員(ENTITY[1]) ∧ CD_６００_人(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 12_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 参加無料 だ が 、 事前申し込み が 必要 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  参加無料(ENTITY[2]) ∧
+   事前申し込み(ENTITY[4]) ∧ CONJ_が(だ(EVENT[3], ENTITY[1], ENTITY[2]), 必要(EVENT[5], ENTITY[4])))
+
+# ::id 13_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 県 の ホームページ から 申込書 を ダウンロード し 、 １ 月 ３１ 日 まで に メール か ファクス で 申し込む 。
+∃ ENTITY[1] EVENT[5] EVENT[10] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[9] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  県(ENTITY[3]) ∧
+   の_ホームページ(ENTITY[3], ENTITY[2]) ∧
+    申込書(ENTITY[4]) ∧
+     CD_１_月_３１_日(ENTITY[6]) ∧
+      メール(ENTITY[9]) ∧
+       か ENTITY[8] (ENTITY[8] = ENTITY[9], LINK_ファクス(ENTITY[8], ENTITY[7])) ∧
+        ダウンロードする.0(EVENT[5], ENTITY[1], ENTITY[4]) ∧ から(EVENT[5]) = ENTITY[2] ∧
+         申し込む(EVENT[10], ENTITY[1]) ∧ で(EVENT[10]) = ENTITY[7] ∧ まで_に(EVENT[10]) = ENTITY[6])
+
+# ::id 14_newswire_12063_K201401010A0EA0XX00002;NJ
+# ::snt 連絡先 は 県秘書広報室調査監 ０１９（６２９）５５０３ 。
+∃ EVENT[2] ENTITY[1] (連絡先(ENTITY[1]) ∧ xxx(EVENT[2], ENTITY[1], ENTITY[県秘書広報室調査監_０１９（６２９）５５０３]))

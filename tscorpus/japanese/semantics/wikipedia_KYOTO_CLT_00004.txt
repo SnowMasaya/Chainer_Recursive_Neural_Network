@@ -1,0 +1,494 @@
+# ::id 1_wikipedia_KYOTO_CLT_00004,1;NJ
+# ::snt 声明
+∃ EVENT[2] ENTITY[1] (声明(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_CLT_00004,2;NJ
+# ::snt 声明 （ しょうみょう ） と は 日本 の 伝統 音楽 の 一 つ 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[しょうみょう], ENTITY[声明]) ∧
+  の_伝統_音楽(ENTITY[日本], ENTITY[2]) ∧
+   (CD_一_つ(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧ xxx(EVENT[3], ENTITY[声明], ENTITY[1]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00004,3;NJ
+# ::snt 仏典 に 節 を つけ た もの で 儀礼 に 用い られる 宗教 音楽 で ある 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[11] EVENT[12] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[10] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  仏典(ENTITY[4]) ∧
+   節(ENTITY[5]) ∧
+    つけ_た(EVENT[6], ENTITY[2], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧ もの(ENTITY[2]) ∧
+     儀礼(ENTITY[10]) ∧
+      用い(EVENT[11], _, ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[10] ∧ 宗教_音楽(ENTITY[8]) ∧
+       past(EVENT[6]) ∧ CONJ_te(で(EVENT[7], ENTITY[1], ENTITY[2]), で_ある(EVENT[12], ENTITY[1], ENTITY[8])))
+
+# ::id 4_wikipedia_KYOTO_CLT_00004,4;NJ
+# ::snt 日本 で は 、 梵唄 （ ぼんばい ） ・ 梵匿 （ ぼんのく ） と も いう 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] GROUP[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   namely_-ENTITY-(ENTITY[ぼんばい], ENTITY[梵唄]) ∧ is_element_of(ENTITY[梵唄], GROUP[3]) ∧
+    namely_-ENTITY-(ENTITY[ぼんのく], ENTITY[梵匿]) ∧ is_element_of(ENTITY[梵匿], GROUP[3]) ∧
+    いう(EVENT[4], ENTITY[1], ENTITY[2], GROUP[3]) ∧ で(EVENT[4]) = ENTITY[日本])
+
+# ::id 5_wikipedia_KYOTO_CLT_00004,5;NJ
+# ::snt 旧字体 で は 聲明 と 書く 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] ENTITY[3] (
+ 旧字体(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = *pro* ∧ 書く(EVENT[4], ENTITY[1], ENTITY[2], ENTITY[聲明]) ∧ で(EVENT[4]) = ENTITY[3])
+
+# ::id 6_wikipedia_KYOTO_CLT_00004,6;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 7_wikipedia_KYOTO_CLT_00004,7;NJ
+# ::snt 古代 インド の 学問 分野 （ 五明 ・ ごみょう ） の 一 つ 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  の_学問_分野(ENTITY[古代_インド], ENTITY[3]) ∧
+   namely_-ENTITY-(ENTITY[五明], ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[ごみょう], ENTITY[3]) ∧
+     (CD_一_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 8_wikipedia_KYOTO_CLT_00004,8;NJ
+# ::snt 五明 と は 、 声明 （ 音韻学 ・ 文法学 ） ・ 工巧明 （ 工芸 ・ 技術 論 ） ・ 医方明 （ 医学 ） ・ 因明 （ 倫理学 ） ・ 内明 （ 自己 の 宗旨 の 学問 、 仏教者 の 場合 は 仏教学 ） の 5 種類 の 学問 分野 を 指す 。
+∃ EVENT[16] ENTITY[15] GROUP[2] ENTITY[1] (
+ ∃ GROUP[3] (
+  ∃ ENTITY[4] (音韻学(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (文法学(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   namely_-ENTITY-(GROUP[3], ENTITY[声明]) ∧ is_element_of(ENTITY[声明], GROUP[2])) ∧
+  ∃ GROUP[7] ENTITY[6] (
+   ∃ ENTITY[8] (工芸(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+    ∃ ENTITY[9] (技術(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+    equals_論(GROUP[7], ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[6], ENTITY[工巧明]) ∧ is_element_of(ENTITY[工巧明], GROUP[2])) ∧
+  ∃ ENTITY[10] (医学(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[医方明]) ∧ is_element_of(ENTITY[医方明], GROUP[2])) ∧
+  ∃ ENTITY[11] (倫理学(ENTITY[11]) ∧ namely_-ENTITY-(ENTITY[11], ENTITY[因明]) ∧ is_element_of(ENTITY[因明], GROUP[2])) ∧
+  ∃ ENTITY[14] ENTITY[13] ENTITY[12] (
+   自己(ENTITY[14]) ∧
+    の_宗旨(ENTITY[14], ENTITY[13]) ∧
+     の_学問(ENTITY[13], ENTITY[12]) ∧ namely_-ENTITY-(ENTITY[12], ENTITY[内明]) ∧ is_element_of(ENTITY[内明], GROUP[2])) ∧
+  CD_5_種類(ENTITY[15]) ∧
+   の_学問_分野(ENTITY[15], ENTITY[1]) ∧ の__学問_分野(GROUP[2], ENTITY[1]) ∧ 指す(EVENT[16], ENTITY[五明], ENTITY[1]))
+
+# ::id 9_wikipedia_KYOTO_CLT_00004,9;NJ
+# ::snt 日本 へ の 仏教 伝来 と共に 伝わり 定着 し た 。
+∃ ENTITY[1] EVENT[3] EVENT[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  へ_の_仏教_伝来(ENTITY[日本], ENTITY[2]) ∧
+   past(EVENT[4]) ∧
+    伝わり(EVENT[3], ENTITY[1]) ∧ と共に(EVENT[3]) = ENTITY[2] ∧ 定着する.0_た(EVENT[4], ENTITY[1]))
+
+# ::id 10_wikipedia_KYOTO_CLT_00004,10;NJ
+# ::snt 754 年 （ 天平勝宝 4 年 ） に 東大寺 大仏 開眼 法要 の とき に 声明 を 用い た 法要 が 行わ れ た 記録 が あり 、 奈良 時代 に は 、 声明 が 盛ん に おこなわ れ て い た と 考え られる 。
+∃ SITUATION[10] ENTITY[6] SITUATION[5] SITUATION[1] EVENT[7] EVENT[8] EVENT[9] EVENT[12] EVENT[14] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[11] (
+ 奈良_時代(ENTITY[11]) ∧
+  CD_754_年_（_天平勝宝_4_年_）(ENTITY[2]) ∧
+   東大寺_大仏_開眼_法要(ENTITY[4]) ∧
+    の_とき(ENTITY[4], ENTITY[3]) ∧
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+      法要(SITUATION[5], 用い_た(EVENT[7], ENTITY[6], ENTITY[声明])) ∧
+       記録(SITUATION[1],
+        行わ_た(EVENT[8], _, SITUATION[5]) ∧ に(EVENT[8]) = ENTITY[3] ∧
+         に(EVENT[8]) = ENTITY[2]) ∧
+        と(SITUATION[10], おこなわ_て_い_た(EVENT[12], _, ENTITY[声明]) ∧ に(EVENT[12]) = ENTITY[11]) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[8]) ∧
+           ADV_盛ん_に(EVENT[12]) ∧
+            past(EVENT[12]) ∧ あり(EVENT[9], SITUATION[1]) ∧ 考え(EVENT[14], _, SITUATION[10]))
+
+# ::id 11_wikipedia_KYOTO_CLT_00004,11;NJ
+# ::snt 平安 時代 初期 に 最澄 ・ 空海 が それぞれ 声明 を 伝え て 、 天台声明 ・ 真言声明 の 基 と なっ た 。
+∃ ENTITY[5] EVENT[4] EVENT[8] GROUP[2] ENTITY[1] GROUP[7] ENTITY[6] (
+ 平安_時代_初期(ENTITY[1]) ∧
+  is_element_of(ENTITY[最澄], GROUP[2]) ∧ is_element_of(ENTITY[空海], GROUP[2]) ∧
+   ENTITY[5] = *pro*{ENTITY[声明], ENTITY[空海], ENTITY[最澄], ENTITY[1]} ∧
+    is_element_of(ENTITY[天台声明], GROUP[7]) ∧ is_element_of(ENTITY[真言声明], GROUP[7]) ∧
+     の_基(GROUP[7], ENTITY[6]) ∧
+      past(EVENT[8]) ∧
+       CONJ_te(それぞれ ENTITY[3] (is_element_of(ENTITY[3], GROUP[2]),
+             伝え_て(EVENT[4], ENTITY[3], ENTITY[声明]) ∧ に(EVENT[4]) = ENTITY[1]),
+        なっ_た(EVENT[8], ENTITY[5]) ∧ と(EVENT[8]) = ENTITY[6]))
+
+# ::id 12_wikipedia_KYOTO_CLT_00004,12;NJ
+# ::snt 天台宗 ・ 真言宗 以外 の 仏教 宗派 に も 、 各宗 独自 の 声明 が あり 、 現在 も 継承 さ れ て いる 。
+∃ EVENT[8] EVENT[10] GROUP[3] ENTITY[2] ENTITY[9] ENTITY[4] ENTITY[1] (
+ is_element_of(ENTITY[天台宗], GROUP[3]) ∧ is_element_of(ENTITY[真言宗], GROUP[3]) ∧
+  equals_以外(GROUP[3], ENTITY[2]) ∧
+   の_仏教_宗派(ENTITY[2], ENTITY[1]) ∧
+    各 ENTITY[6] (宗(ENTITY[6]), ∃ EVENT[7] (独自_の(EVENT[7], ENTITY[4]) ∧ ADV(EVENT[7]) = ENTITY[6])) ∧
+     声明(ENTITY[4]) ∧
+     現在(ENTITY[9]) ∧
+      あり(EVENT[8], ENTITY[4]) ∧
+       継承する.0_て_いる(EVENT[10], _, ENTITY[4]) ∧ 時間(EVENT[10]) = ENTITY[9] ∧ に(EVENT[10]) = ENTITY[1])
+
+# ::id 13_wikipedia_KYOTO_CLT_00004,13;NJ
+# ::snt 声明 は 口伝 （ くでん ） で 伝える ため 、 楽譜 が なかっ た 。
+∃ ENTITY[3] ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] ENTITY[5] (
+ ENTITY[2] = *pro*{ENTITY[声明]} ∧
+  ENTITY[3] = *pro*{ENTITY[声明]} ∧
+   namely_-ENTITY-(ENTITY[くでん], ENTITY[口伝]) ∧
+    FACT(SITUATION[1], 伝える(EVENT[4], ENTITY[2], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[口伝]) ∧
+     楽譜(ENTITY[5]) ∧
+      past(EVENT[6]) ∧ なかっ_た(EVENT[6], (ENTITY[声明], ENTITY[5])) ∧ ため(EVENT[6]) = SITUATION[1])
+
+# ::id 14_wikipedia_KYOTO_CLT_00004,14;NJ
+# ::snt その ため 、 伝授 は 困難 を 極め た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  伝授(ENTITY[2]) ∧
+   困難(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ 極め_た(EVENT[4], ENTITY[2], ENTITY[3]) ∧ ADV(EVENT[4]) = ENTITY[1])
+
+# ::id 15_wikipedia_KYOTO_CLT_00004,15;NJ
+# ::snt 後 に 楽譜 に あたる 、 博士 （ はかせ ） が 発明 さ れ た 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 後(ENTITY[1]) ∧
+  楽譜(ENTITY[3]) ∧
+   あたる(EVENT[4], ENTITY[博士]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+    namely_-ENTITY-(ENTITY[はかせ], ENTITY[博士]) ∧
+     past(EVENT[5]) ∧ 発明する.0_た(EVENT[5], _, ENTITY[博士]) ∧ に(EVENT[5]) = ENTITY[1])
+
+# ::id 16_wikipedia_KYOTO_CLT_00004,16;NJ
+# ::snt また 、 各流派 により 博士 など の 専門 用語 に は 違い が ある 。
+∃ EVENT[5] ENTITY[4] ENTITY[1] ENTITY[3] ENTITY[2] (
+ など(ENTITY[博士], ENTITY[3]) ∧
+  の_専門_用語(ENTITY[3], ENTITY[2]) ∧
+   違い(ENTITY[4]) ∧
+    ある(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2] ∧ により(EVENT[5]) = ENTITY[1])
+
+# ::id 17_wikipedia_KYOTO_CLT_00004,17;NJ
+# ::snt しかし 博士 は 、 唱える ため の 参考 で あり 、 声明 を 習得 し ようとすれ ば 、 口伝 （ ロイ と も 言う ） （ 指導者 による 面授 ） が 必要 で あり 、 師 から 弟子 へ の 流派 の 維持 ・ 継承 は 出来 ない 。
+∃ ENTITY[6] ENTITY[3] SITUATION[2] EVENT[4] EVENT[5] ENTITY[1] ENTITY[19] ENTITY[20] GROUP[18] ENTITY[17] ENTITY[16] ENTITY[15] ENTITY[14] (
+ 師(ENTITY[15]) ∧
+  弟子(ENTITY[16]) ∧
+   流派(ENTITY[17]) ∧
+    維持(ENTITY[19]) ∧
+     継承(ENTITY[20]) ∧
+      is_element_of(ENTITY[19], GROUP[18]) ∧ is_element_of(ENTITY[20], GROUP[18]) ∧
+       equals(GROUP[18], ENTITY[14]) ∧ の(ENTITY[17], ENTITY[14]) ∧ へ_の(ENTITY[16], ENTITY[14]) ∧
+        から(ENTITY[15], ENTITY[14]) ∧
+        ENTITY[3] = *pro*{ENTITY[1], ENTITY[博士]} ∧
+         ため(SITUATION[2], 唱える(EVENT[4], ENTITY[3])) ∧
+          の_参考(SITUATION[2], ENTITY[1]) ∧
+           ENTITY[6] = *pro*{ENTITY[1], ENTITY[博士]} ∧
+            で_あり(EVENT[5], ENTITY[博士], ENTITY[1]) ∧
+             CND_ば(MD_ようとすれ(∃ EVENT[7] 習得する.0(EVENT[7], ENTITY[6], ENTITY[声明])),
+                 ∃ ARB[11] EVENT[12] EVENT[13] ENTITY[9] ENTITY[8] (
+                  ARB[11] = *arb* ∧
+                   言う(EVENT[12], ARB[11], ENTITY[口伝], ENTITY[ロイ]) ∧
+                    指導者(ENTITY[9]) ∧
+                     による_面授(ENTITY[9], ENTITY[8]) ∧
+                      namely_-ENTITY-(ENTITY[8], ENTITY[口伝]) ∧ 必要_で_あり(EVENT[13], (ENTITY[6], ENTITY[口伝])))) ∧
+              ¬ ∃ EVENT[21] 出来(EVENT[21], ENTITY[14]))
+
+# ::id 18_wikipedia_KYOTO_CLT_00004,18;NJ
+# ::snt その ため に 指導者 ・ 後継者 の 育成 が 必須 で あっ た 。
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  ∃ ENTITY[4] (指導者(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (後継者(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   の_育成(GROUP[3], ENTITY[2]) ∧
+    past(EVENT[6]) ∧ 必須_で_あっ_た(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 19_wikipedia_KYOTO_CLT_00004,19;NJ
+# ::snt さまざま な 条件 が 重なっ て 、 多く の 流派 が 廃絶 し て しまっ た 。
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ さまざま_な(ATTRIB[2]) ∧
+  ATTRIBUTE_条件(ATTRIB[2], ENTITY[1]) ∧
+   CONJ_te(重なっ_て(EVENT[3], ENTITY[1]),
+    多く_の ENTITY[4] (流派(ENTITY[4]), ∃ EVENT[5] (past(EVENT[5]) ∧ 廃絶する.0_て_しまっ_た(EVENT[5], ENTITY[4])))))
+
+# ::id 20_wikipedia_KYOTO_CLT_00004,20;NJ
+# ::snt 天台声明
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[天台声明])
+
+# ::id 21_wikipedia_KYOTO_CLT_00004,21;NJ
+# ::snt 天台声明 は 最澄 が 伝え た もの が 基礎 と なり 、 独自 の 展開 を し た 。
+∃ ENTITY[4] ENTITY[1] ENTITY[7] ENTITY[6] EVENT[3] EVENT[5] EVENT[8] (
+ past(EVENT[3]) ∧
+  past(EVENT[8]) ∧
+   伝え_た(EVENT[3], ENTITY[最澄], ENTITY[1]) ∧ もの(ENTITY[1]) ∧
+    基礎(ENTITY[4]) ∧
+     独自(ENTITY[7]) ∧
+      の_展開(ENTITY[7], ENTITY[6]) ∧
+       なり(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[4] ∧ し_た(EVENT[8], ENTITY[天台声明], ENTITY[6]))
+
+# ::id 22_wikipedia_KYOTO_CLT_00004,22;NJ
+# ::snt 最澄 以後 は 、 円仁 ・ 安然 が 興隆 さ せ た 。
+∃ ENTITY[1] EVENT[5] EVENT[4] GROUP[3] ENTITY[2] (
+ 最澄_以後(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   is_element_of(ENTITY[円仁], GROUP[3]) ∧ is_element_of(ENTITY[安然], GROUP[3]) ∧
+    past(EVENT[4]) ∧
+     せ_た(EVENT[4], GROUP[3], ENTITY[1], 興隆する.0(EVENT[5], ENTITY[1])) ∧ 時間(EVENT[4]) = ENTITY[2])
+
+# ::id 23_wikipedia_KYOTO_CLT_00004,23;NJ
+# ::snt 融通念仏 の 祖 の 良忍 が 中興 の 祖 として 知ら れる 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (
+ の_祖(ENTITY[融通念仏], ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[良忍]) ∧
+   の_祖(ENTITY[中興], ENTITY[2]) ∧ 知ら(EVENT[3], _, ENTITY[良忍]) ∧ として(EVENT[3]) = ENTITY[2])
+
+# ::id 24_wikipedia_KYOTO_CLT_00004,24;NJ
+# ::snt 1109 年 （ 天仁 2 年 ） に 、 良忍 は 、 京都 ・ 大原 に 来迎院 （ 京都市 左京区 ） を 建立 し た 。
+∃ EVENT[2] ENTITY[1] (
+ CD_1109_年_（_天仁_2_年_）(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[京都市_左京区], ENTITY[来迎院]) ∧
+   past(EVENT[2]) ∧
+    建立する.0_た(EVENT[2], ENTITY[良忍], ENTITY[来迎院]) ∧ に(EVENT[2]) = ENTITY[京都_大原] ∧ に(EVENT[2]) = ENTITY[1])
+
+# ::id 25_wikipedia_KYOTO_CLT_00004,25;NJ
+# ::snt 大原 の 来迎院 の 山号 を 、 中国 の 声明 発祥 の 地 ・ 魚山 （ ぎょざん ） に 擬し て 、 魚山 と 呼称 さ れ た 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  の_xxx(ENTITY[大原], ENTITY[来迎院]) ∧
+   の_山号(ENTITY[来迎院], ENTITY[2]) ∧
+    声明_発祥(ENTITY[4]) ∧
+     の_地(ENTITY[4], ENTITY[3]) ∧ の__地(ENTITY[中国], ENTITY[3]) ∧
+      namely_-ENTITY-(ENTITY[3], ENTITY[魚山]) ∧
+       namely_-ENTITY-(ENTITY[ぎょざん], ENTITY[魚山]) ∧
+        past(EVENT[6]) ∧
+         CONJ_te(擬し_て(EVENT[5], ENTITY[1], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[魚山],
+          呼称する.0_た(EVENT[6], _, ENTITY[1], ENTITY[魚山])))
+
+# ::id 26_wikipedia_KYOTO_CLT_00004,26;NJ
+# ::snt やがて 、 来迎院 ・ 勝林院 の 2 ヶ寺 を 大原流 魚山声明 の 道場 と し て 知ら れる よう に なっ た 。
+∃ SITUATION[9] SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] GROUP[4] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  is_element_of(ENTITY[来迎院], GROUP[4]) ∧ is_element_of(ENTITY[勝林院], GROUP[4]) ∧
+   (CD_2_ヶ寺(ENTITY[3]), の(GROUP[4], ENTITY[3])) ∧
+    の_道場(ENTITY[大原流_魚山声明], ENTITY[5]) ∧
+     よう(SITUATION[2],
+      CONJ_te(し_て(EVENT[6], ENTITY[1], ENTITY[3], ENTITY[5]), 知ら(EVENT[7], _, ENTITY[1]))) ∧
+      ADV_やがて(SITUATION[9]) ∧ past(EVENT[8]) ∧ FACT(SITUATION[9], なっ_た(EVENT[8], ENTITY[1], SITUATION[2])))
+
+# ::id 27_wikipedia_KYOTO_CLT_00004,27;NJ
+# ::snt また 、 後 に 寂原 が 一派 を なし て 、 大原 に は 2 派 の 系統 の 声明 が あっ た 。
+∃ EVENT[3] EVENT[7] ENTITY[2] ENTITY[1] ENTITY[6] ENTITY[5] ENTITY[4] (
+ 後(ENTITY[1]) ∧
+  一派(ENTITY[2]) ∧
+   CD_2_派(ENTITY[6]) ∧
+    の_系統(ENTITY[6], ENTITY[5]) ∧
+     の_声明(ENTITY[5], ENTITY[4]) ∧
+      past(EVENT[7]) ∧
+       CONJ_te(なし_て(EVENT[3], ENTITY[寂原], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1],
+        あっ_た(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[大原]))
+
+# ::id 28_wikipedia_KYOTO_CLT_00004,28;NJ
+# ::snt のち に 宗快 が 大原声明 を 再興 する に 至っ た 。
+∃ SITUATION[2] EVENT[3] EVENT[4] ENTITY[1] (
+ のち(ENTITY[1]) ∧
+  FACT(SITUATION[2], 再興する.0(EVENT[3], ENTITY[宗快], ENTITY[大原声明])) ∧
+   past(EVENT[4]) ∧
+    至っ_た(EVENT[4], ENTITY[宗快]) ∧ に(EVENT[4]) = SITUATION[2] ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 29_wikipedia_KYOTO_CLT_00004,29;NJ
+# ::snt 湛智 が 新しい 音楽 理論 に 基づい た 流れ を 構築 し た 。
+∃ ATTRIB[4] EVENT[5] EVENT[6] ENTITY[3] ENTITY[1] (
+ 新しい(ATTRIB[4]) ∧
+  ATTRIBUTE_音楽_理論(ATTRIB[4], ENTITY[3]) ∧
+   基づい_た(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ 流れ(ENTITY[1]) ∧
+    past(EVENT[5]) ∧ past(EVENT[6]) ∧ 構築する.0_た(EVENT[6], ENTITY[湛智], ENTITY[1]))
+
+# ::id 30_wikipedia_KYOTO_CLT_00004,30;NJ
+# ::snt 以降 、 天台声明 の 中枢 を なし 、 現在 の 天台声明 に 継承 さ れ て いる 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  以降(ENTITY[2]) ∧
+   の_中枢(ENTITY[天台声明], ENTITY[3]) ∧
+    現在(ENTITY[5]) ∧
+     の_xxx(ENTITY[5], ENTITY[天台声明]) ∧
+      なし(EVENT[4], ENTITY[1], ENTITY[3]) ∧
+       継承する.0_て_いる(EVENT[6], _, ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[天台声明] ∧ ADV(EVENT[6]) = ENTITY[2])
+
+# ::id 31_wikipedia_KYOTO_CLT_00004,31;NJ
+# ::snt 融通念仏宗 、 浄土宗 、 浄土真宗 の 声明 は 、 天台声明 の 系統 で ある 。
+∃ EVENT[4] ENTITY[3] GROUP[2] ENTITY[1] (
+ is_element_of(ENTITY[融通念仏宗], GROUP[2]) ∧ is_element_of(ENTITY[浄土宗], GROUP[2]) ∧ is_element_of(ENTITY[浄土真宗], GROUP[2]) ∧
+  の_声明(GROUP[2], ENTITY[1]) ∧ の_系統(ENTITY[天台声明], ENTITY[3]) ∧ で_ある(EVENT[4], ENTITY[1], ENTITY[3]))
+
+# ::id 32_wikipedia_KYOTO_CLT_00004,32;NJ
+# ::snt 真言声明
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[真言声明])
+
+# ::id 33_wikipedia_KYOTO_CLT_00004,33;NJ
+# ::snt 真言声明 は 空海 が 伝え た もの が 基礎 と なり 、 現在 に 至っ て いる 。
+∃ ENTITY[4] ENTITY[1] ENTITY[6] EVENT[3] EVENT[5] EVENT[7] (
+ past(EVENT[3]) ∧
+  伝え_た(EVENT[3], ENTITY[空海], ENTITY[1]) ∧ もの(ENTITY[1]) ∧
+   基礎(ENTITY[4]) ∧
+    現在(ENTITY[6]) ∧
+     なり(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[4] ∧
+      至っ_て_いる(EVENT[7], ENTITY[真言声明]) ∧ に(EVENT[7]) = ENTITY[6])
+
+# ::id 34_wikipedia_KYOTO_CLT_00004,34;NJ
+# ::snt 声明 が 体系化 さ れ て き た の は 真雅 以降 で ある 。
+∃ SITUATION[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ 声明(ENTITY[2]) ∧
+  の(SITUATION[1], 体系化する.0_て_き_た(EVENT[3], _, ENTITY[2])) ∧
+   真雅_以降(ENTITY[4]) ∧ past(EVENT[3]) ∧ で_ある(EVENT[5], SITUATION[1], ENTITY[4]))
+
+# ::id 35_wikipedia_KYOTO_CLT_00004,35;NJ
+# ::snt 寛朝 は なかでも 中興 の 祖 と も いえる 。
+∃ ARB[1] EVENT[3] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  の_祖(ENTITY[中興], ENTITY[2]) ∧ ADV_なかでも(EVENT[3]) ∧ いえる(EVENT[3], ARB[1], ENTITY[寛朝], ENTITY[2]))
+
+# ::id 36_wikipedia_KYOTO_CLT_00004,36;NJ
+# ::snt 声明 の 作曲 ・ 整備 に つとめ た 。
+∃ ENTITY[1] EVENT[7] GROUP[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  声明(ENTITY[3]) ∧
+   ∃ ENTITY[5] (作曲(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (整備(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    equals(GROUP[4], ENTITY[2]) ∧ の(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[7]) ∧ つとめ_た(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[2])
+
+# ::id 37_wikipedia_KYOTO_CLT_00004,37;NJ
+# ::snt 鎌倉 時代 まで は 多く の 流派 が あっ た が 、 覚性法親王 により 、 4 派 （ 本相応院流 ・ 新相応院流 ・ 醍醐流 ・ 中川大進流 ） に まとめ られ た 。
+∃ ENTITY[1] EVENT[7] GROUP[5] ENTITY[6] ENTITY[2] (
+ 鎌倉_時代(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_4_派(ENTITY[6]) ∧
+    is_element_of(ENTITY[本相応院流], GROUP[5]) ∧ is_element_of(ENTITY[新相応院流], GROUP[5]) ∧ is_element_of(ENTITY[醍醐流], GROUP[5]) ∧
+     is_element_of(ENTITY[中川大進流], GROUP[5]) ∧
+     namely_-ENTITY-(GROUP[5], ENTITY[6]) ∧
+      past(EVENT[7]) ∧
+       CONJ_が(多く_の ENTITY[3] (流派(ENTITY[3]),
+             ∃ EVENT[4] (
+              past(EVENT[4]) ∧
+               あっ_た(EVENT[4], (ENTITY[1], ENTITY[3])) ∧ まで(EVENT[4]) = ENTITY[2])),
+        まとめ_た(EVENT[7], ENTITY[覚性法親王], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6]))
+
+# ::id 38_wikipedia_KYOTO_CLT_00004,38;NJ
+# ::snt 古義真言宗 の 声明 は 江戸 時代 にかけて 衰微・廃絶 し た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ の_声明(ENTITY[古義真言宗], ENTITY[1]) ∧
+  江戸_時代(ENTITY[2]) ∧ past(EVENT[3]) ∧ 衰微.廃絶する.0_た(EVENT[3], ENTITY[1]) ∧ にかけて(EVENT[3]) = ENTITY[2])
+
+# ::id 39_wikipedia_KYOTO_CLT_00004,39;NJ
+# ::snt 本相応院流 ・ 新相応院流 ・ 醍醐流 は 明治 中期 ごろ まで に は 廃絶 し た 。
+∃ EVENT[3] ENTITY[2] GROUP[1] (
+ is_element_of(ENTITY[本相応院流], GROUP[1]) ∧ is_element_of(ENTITY[新相応院流], GROUP[1]) ∧ is_element_of(ENTITY[醍醐流], GROUP[1]) ∧
+  明治_中期_ごろ(ENTITY[2]) ∧ past(EVENT[3]) ∧ 廃絶する.0_た(EVENT[3], GROUP[1]) ∧ まで_に(EVENT[3]) = ENTITY[2])
+
+# ::id 40_wikipedia_KYOTO_CLT_00004,40;NJ
+# ::snt 現在 で は 、 智山 （ ちざん ） 声明 （ 京都 ・ 智積院 ） 、 豊山 （ ぶざん ） 声明 （ 奈良 ・ 長谷寺 ） 、 南山進流 （ なんざんしんりゅう ・ 高野山 、 京都 ・ 古義真言宗 寺院 ） に 分別 さ れる 。
+∃ ENTITY[1] EVENT[8] GROUP[3] ENTITY[2] (
+ 現在(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] (
+    智山_声明(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[ちざん], ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[京都_智積院], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (
+     豊山_声明(ENTITY[5]) ∧
+      namely_-ENTITY-(ENTITY[ぶざん], ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[奈良_長谷寺], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ∃ GROUP[6] (
+     is_element_of(ENTITY[高野山], GROUP[6]) ∧ ∃ ENTITY[7] (京都_古義真言宗_寺院(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+      namely_-ENTITY-(GROUP[6], GROUP[6]) ∧ namely_-ENTITY-(ENTITY[なんざんしんりゅう], ENTITY[南山進流]) ∧ is_element_of(ENTITY[南山進流], GROUP[3])) ∧
+    分別する.0(EVENT[8], _, ENTITY[1]) ∧ に(EVENT[8]) = GROUP[3] ∧ で(EVENT[8]) = ENTITY[2])
+
+# ::id 41_wikipedia_KYOTO_CLT_00004,41;NJ
+# ::snt 智山声明 ・ 豊山声明 （ 新義真言宗系 声明 ） 真言宗 智山派 ・ 真言宗 豊山派 、 両派 の 声明 は 、 もと は 、 中川大進流 に 由来 する 。
+∃ EVENT[8] ENTITY[3] GROUP[2] GROUP[4] GROUP[1] ENTITY[7] ENTITY[5] (
+ 両 ENTITY[6] (派(ENTITY[6]), の_声明(ENTITY[6], ENTITY[5])) ∧
+  新義真言宗系_声明(ENTITY[3]) ∧
+   namely_-ENTITY-(ENTITY[3], ENTITY[豊山声明]) ∧
+    is_element_of(ENTITY[智山声明], GROUP[2]) ∧ is_element_of(ENTITY[豊山声明], GROUP[2]) ∧
+     is_element_of(ENTITY[真言宗_智山派], GROUP[4]) ∧ is_element_of(ENTITY[真言宗_豊山派], GROUP[4]) ∧
+      is_subset_of_or_equal_to(GROUP[2], GROUP[1]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[1]) ∧
+       namely_-ENTITY-(GROUP[1], ENTITY[5]) ∧
+        もと(ENTITY[7]) ∧
+         由来する.0(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[中川大進流] ∧ ADV(EVENT[8]) = ENTITY[7])
+
+# ::id 42_wikipedia_KYOTO_CLT_00004,42;NJ
+# ::snt 頼瑜 が 醍醐 の 古流 を 採り入れ た 。
+∃ EVENT[2] ENTITY[1] (の_古流(ENTITY[醍醐], ENTITY[1]) ∧ past(EVENT[2]) ∧ 採り入れ_た(EVENT[2], ENTITY[頼瑜], ENTITY[1]))
+
+# ::id 43_wikipedia_KYOTO_CLT_00004,43;NJ
+# ::snt 1583 年 （ 天正 13 年 ） 根来寺 （ 和歌山県 ） が 豊臣 秀吉 に 焼き討ち さ れ て 衰微 する と 、 智山 ・ 豊山 の 両派 は 、 醍醐 の 古流 を もと に し て 、 一派 を 形成 する に 至っ た 。
+∃ GROUP[5] (
+ is_element_of(ENTITY[智山], GROUP[5]) ∧ is_element_of(ENTITY[豊山], GROUP[5]) ∧
+  ∀ EVENT[2] EVENT[3] TIME[1] CND_と(
+      CD_1583_年_（_天正_13_年_）(TIME[1]) ∧ namely_-ENTITY-(ENTITY[和歌山県], ENTITY[根来寺]) ∧
+       CONJ_te(焼き討ちする.0_て(EVENT[2], ENTITY[豊臣_秀吉], ENTITY[根来寺]) ∧ is_contained_in(時間(EVENT[2]), TIME[1]),
+        衰微する.0(EVENT[3], ENTITY[根来寺]) ∧ is_contained_in(時間(EVENT[3]), TIME[1])),
+      両 ENTITY[4] (の_派(GROUP[5], ENTITY[4]),
+       ∃ SITUATION[9] EVENT[8] EVENT[11] EVENT[12] ENTITY[7] ENTITY[6] ENTITY[10] (
+        の_古流(ENTITY[醍醐], ENTITY[6]) ∧
+         もと(ENTITY[7]) ∧
+          一派(ENTITY[10]) ∧
+           FACT(SITUATION[9], 形成する.0(EVENT[11], ENTITY[4], ENTITY[10])) ∧
+            past(EVENT[12]) ∧
+             CONJ_te(し_て(EVENT[8], ENTITY[4], ENTITY[6], ENTITY[7]),
+              至っ_た(EVENT[12], ENTITY[4]) ∧ に(EVENT[12]) = SITUATION[9])))))
+
+# ::id 44_wikipedia_KYOTO_CLT_00004,44;NJ
+# ::snt 特徴 として は 、 豊山 の 「 論議 」 ・ 智山 の 「 声明 」 と 称さ れる 。
+∃ ENTITY[1] EVENT[6] GROUP[3] ENTITY[2] (
+ 特徴(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] (の_論議(ENTITY[豊山], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (の_声明(ENTITY[智山], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    称さ(EVENT[6], _, ENTITY[1], GROUP[3]) ∧ として(EVENT[6]) = ENTITY[2])
+
+# ::id 45_wikipedia_KYOTO_CLT_00004,46;NJ
+# ::snt 中川大進流 は 、 奈良 ・ 中川寺 の 大進 が 流祖 。
+∃ EVENT[2] ENTITY[1] (の_xxx(ENTITY[奈良_中川寺], ENTITY[大進]) ∧ 流祖(ENTITY[1]) ∧ xxx(EVENT[2], (ENTITY[中川大進流], ENTITY[大進]), ENTITY[1]))
+
+# ::id 46_wikipedia_KYOTO_CLT_00004,47;NJ
+# ::snt 貞永年間 （ 1232～1233 ） に 高野山 蓮華谷 ・ 三宝院 の 勝心 が 本拠地 を 高野山 に 移し た 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (
+ CD_1232～1233(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[1], ENTITY[貞永年間]) ∧
+   の_xxx(ENTITY[高野山_蓮華谷_三宝院], ENTITY[勝心]) ∧
+    本拠地(ENTITY[2]) ∧
+     past(EVENT[3]) ∧
+      移し_た(EVENT[3], ENTITY[勝心], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[高野山] ∧ に(EVENT[3]) = ENTITY[貞永年間])
+
+# ::id 47_wikipedia_KYOTO_CLT_00004,48;NJ
+# ::snt 後 に 高野山 の 別名 、 南山 を 冠し て 、 南山進流 と 称し た 。
+∃ ENTITY[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   後(ENTITY[3]) ∧
+    の_別名(ENTITY[高野山], ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[南山]) ∧
+      past(EVENT[6]) ∧
+       CONJ_te(冠し_て(EVENT[5], ENTITY[1], ENTITY[南山]) ∧ に(EVENT[5]) = ENTITY[3],
+        称し_た(EVENT[6], ENTITY[1], ENTITY[2], ENTITY[南山進流]) ∧ に(EVENT[6]) = ENTITY[3]))
+
+# ::id 48_wikipedia_KYOTO_CLT_00004,49;NJ
+# ::snt 進流 ・ 野山進流 と も 称する 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] GROUP[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   is_element_of(ENTITY[進流], GROUP[3]) ∧ is_element_of(ENTITY[野山進流], GROUP[3]) ∧ 称する(EVENT[4], ENTITY[1], ENTITY[2], GROUP[3]))
+
+# ::id 49_wikipedia_KYOTO_CLT_00004,50;NJ
+# ::snt 声明 と 日本 の 伝統 音楽
+∃ EVENT[4] GROUP[1] (
+ CONJ_と(∃ ENTITY[2] (声明(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (の_伝統_音楽(ENTITY[日本], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 50_wikipedia_KYOTO_CLT_00004,51;NJ
+# ::snt 平曲 ・ 謡曲 、 民謡 、 浄瑠璃 など の 音曲 は 声明 の 転化 と いえる 。
+∃ ENTITY[1] EVENT[11] ENTITY[10] ENTITY[9] ENTITY[5] ENTITY[6] ENTITY[7] ENTITY[8] GROUP[4] ENTITY[3] ENTITY[2] (
+ 平曲(ENTITY[5]) ∧
+  謡曲(ENTITY[6]) ∧
+   民謡(ENTITY[7]) ∧
+    浄瑠璃(ENTITY[8]) ∧
+     is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧ is_element_of(ENTITY[7], GROUP[4]) ∧
+      is_element_of(ENTITY[8], GROUP[4]) ∧
+      など(GROUP[4], ENTITY[3]) ∧
+       の_音曲(ENTITY[3], ENTITY[2]) ∧
+        ENTITY[1] = *pro* ∧
+         声明(ENTITY[10]) ∧ の_転化(ENTITY[10], ENTITY[9]) ∧ いえる(EVENT[11], ENTITY[1], ENTITY[2], ENTITY[9]))
+
+# ::id 51_wikipedia_KYOTO_CLT_00004,52;NJ
+# ::snt 単旋律 音楽 に あたえ た 影響 が 大きい 。
+∃ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  単旋律_音楽(ENTITY[4]) ∧
+   あたえ_た(EVENT[5], ENTITY[3], ENTITY[1], ENTITY[4]) ∧ 影響(ENTITY[1]) ∧
+    past(EVENT[5]) ∧ 大きい(EVENT[6], ENTITY[1]))

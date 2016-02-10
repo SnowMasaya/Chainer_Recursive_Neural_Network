@@ -1,0 +1,163 @@
+# ::id 1_wikipedia_KYOTO_BDS_00003,1;IE
+# ::snt Jodo Shinshu
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Jodo_Shinshu])
+
+# ::id 2_wikipedia_KYOTO_BDS_00003,2;IE
+# ::snt Jodo Shinshu -LRB- Shin-Buddhism / True Pure Land Sect -RRB- is one of the sects of Japanese Buddhism , and a religious community that Shinran , an apprentice of Honen , succeeded and which developed Honen 's doctrine -LRB- Jodo Shu / Pure Land Buddhism -RRB- in the early Kamakura period .
+∃ EVENT[13] GROUP[1] GROUP[3] ENTITY[11] (
+ is_sects_of(GROUP[3], ENTITY[Japanese_Buddhism]) ∧
+  early_Kamakura_period(ENTITY[11]) ∧
+   is_-ENTITY-_namely(ENTITY[Jodo_Shinshu], ENTITY[Shin-Buddhism_True_Pure_Land_Sect]) ∧
+    ∃ ENTITY[2] ((CD_one(ENTITY[2]), is_element_of(ENTITY[2], GROUP[3])) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+     ∃ ATTRIB[5] EVENT[8] EVENT[12] ENTITY[7] ENTITY[10] ENTITY[4] (
+      religious(ATTRIB[5]) ∧
+       is_apprentice_of(ENTITY[7], ENTITY[Honen]) ∧
+        is_-ENTITY-_namely(ENTITY[Shinran], ENTITY[7]) ∧
+         is_doctrine_POS(ENTITY[10], ENTITY[Honen]) ∧
+          is_-ENTITY-_namely(ENTITY[10], ENTITY[Jodo_Shu_Pure_Land_Buddhism]) ∧
+           CONJ_and(succeeded(EVENT[8], ENTITY[Shinran], ENTITY[4]),
+            developed(EVENT[12], ENTITY[4], ENTITY[10]) ∧ in(EVENT[12]) = ENTITY[11]) ∧
+            is_community_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+            past(EVENT[8]) ∧ past(EVENT[12]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+     copula(EVENT[13], ENTITY[Jodo_Shinshu], GROUP[1]))
+
+# ::id 3_wikipedia_KYOTO_BDS_00003,3;IE
+# ::snt Due to the historical background of the origin of the sect name , most sects belonging to this religion call themselves Shinshu as a sect name .
+∃ SITUATION[14] ATTRIB[2] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[7] (
+ historical(ATTRIB[2]) ∧
+  sect_name(ENTITY[4]) ∧
+   is_origin_of(ENTITY[3], ENTITY[4]) ∧
+    is_background_of(ENTITY[1], ENTITY[3]) ∧ is_background_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     religion(ENTITY[7]) ∧
+      is_ADV_due_to(SITUATION[14], ENTITY[1]) ∧
+       is_FACT_THAT(SITUATION[14],
+        MOST EVENT[8] GROUP[5] (belonging(EVENT[8], GROUP[5]) ∧ to(EVENT[8]) = ENTITY[7] ∧ sects(GROUP[5]),
+         ∃ ATTRIB[12] REF1[10] ENTITY[11] EVENT[13] EVENT[9] (
+          REF1[10] = themselves ∧
+           sect(ATTRIB[12]) ∧
+            is_name_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+             is_as(ENTITY[Shinshu], ENTITY[11]) ∧
+              call(EVENT[9], GROUP[5], xxx(EVENT[13], REF1[10], ENTITY[Shinshu]))))))
+
+# ::id 4_wikipedia_KYOTO_BDS_00003,4;IE
+# ::snt It used to also be called Ikko Shu and Monto Shu .
+∃ SITUATION[6] REF1[1] EVENT[5] EVENT[3] EVENT[2] GROUP[4] (
+ REF1[1] = it ∧
+  is_element_of(ENTITY[Ikko_Shu], GROUP[4]) ∧ is_element_of(ENTITY[Monto_Shu], GROUP[4]) ∧
+   ADV_also(SITUATION[6]) ∧
+    past(EVENT[2]) ∧
+     used(EVENT[2], REF1[1],
+      is_FACT_THAT(SITUATION[6], called(EVENT[3], _, REF1[1], xxx(EVENT[5], REF1[1], GROUP[4])))))
+
+# ::id 5_wikipedia_KYOTO_BDS_00003,5;IE
+# ::snt Doctrine
+∃ EVENT[2] ENTITY[1] (Doctrine(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_BDS_00003,6;IE
+# ::snt By saying a prayer -LRB- Shomyo nenbutsu -RRB- to the Buddha -LRB- Namu Amida Butsu , Namo Amida Butsu by Hongan-ji School -RRB- , practitioners can believe in the mercy of Amida Nyorai -LRB- hereinafter called " Nyorai " -RRB- , and trust in Tariki -LRB- Buddha 's power -RRB- , which makes everyone , including the bad , go to Jodo -LRB- Pure Land -RRB- after death and become Buddha .
+∃ SITUATION[2] SITUATION[10] ATTRIB[17] EVENT[4] ENTITY[3] GROUP[1] EVENT[9] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[16] (
+ is_-ENTITY-_namely(ENTITY[Buddha], ENTITY[Namu_Amida_Butsu]) ∧
+  is_by(ENTITY[Namo_Amida_Butsu], ENTITY[Hongan-ji_School]) ∧
+   is_-ENTITY-_namely(ENTITY[Buddha], ENTITY[Namo_Amida_Butsu]) ∧
+    is_FACT_THAT(SITUATION[10], called(EVENT[8], _, ENTITY[6], xxx(EVENT[9], ENTITY[6], ENTITY[Nyorai]))) ∧
+     is_-ENTITY-_namely(ENTITY[Amida_Nyorai], ENTITY[6]) ∧
+      is_mercy_of(ENTITY[5], ENTITY[Amida_Nyorai]) ∧
+       bad(ATTRIB[17]) ∧
+        is_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+         ADV_hereinafter(SITUATION[10]) ∧
+          practitioners(GROUP[1]) ∧
+           prayer(ENTITY[3]) ∧
+            is_-ENTITY-_namely(ENTITY[3], ENTITY[Shomyo_nenbutsu]) ∧
+             is_FACT_THAT(SITUATION[2], saying(EVENT[4], GROUP[1], ENTITY[3]) ∧ to(EVENT[4]) = ENTITY[Buddha]) ∧
+              MD_can(∃ EVENT[11] EVENT[14] EVENT[23] ENTITY[12] (
+                    makes(EVENT[14], ENTITY[Tariki],
+                     ∀ ENTITY[15] (one(ENTITY[15]) →
+                      ∃ EVENT[18] EVENT[21] EVENT[22] ENTITY[20] ENTITY[19] (
+                       Jodo(ENTITY[19]) ∧
+                        is_-ENTITY-_namely(ENTITY[19], ENTITY[Pure_Land]) ∧
+                         death(ENTITY[20]) ∧
+                          CONJ_and(including(EVENT[18], ENTITY[15], ENTITY[16]),
+                           CONJ_and(go(EVENT[21], ENTITY[15]) ∧ after(EVENT[21]) = ENTITY[20] ∧
+                                 to(EVENT[21]) = ENTITY[19],
+                            become(EVENT[22], ENTITY[15], ENTITY[Buddha])))))) ∧
+                     is_power_POS(ENTITY[12], ENTITY[Buddha]) ∧
+                      is_-ENTITY-_namely(ENTITY[Tariki], ENTITY[12]) ∧
+                       CONJ_and(believe(EVENT[11], GROUP[1]) ∧ in(EVENT[11]) = ENTITY[5] ∧
+                             By(EVENT[11]) = SITUATION[2],
+                        trust(EVENT[23], GROUP[1]) ∧ in(EVENT[23]) = ENTITY[Tariki] ∧
+                         By(EVENT[23]) = SITUATION[2]))))
+
+# ::id 7_wikipedia_KYOTO_BDS_00003,7;IE
+# ::snt Through this , the doctrine of Shinshu is called " Shinjin Shoin , Shomyo Ho-on " -LRB- Faith makes it happen , and praying is for gratitude -RRB- .
+∃ EVENT[4] EVENT[3] ENTITY[2] ENTITY[1] (
+ is_doctrine_of(ENTITY[2], ENTITY[Shinshu]) ∧
+  is_-ENTITY-_namely(ENTITY[Shinjin_Shoin], ENTITY[Shomyo_Ho-on]) ∧
+   called(EVENT[3], _, ENTITY[2], xxx(EVENT[4], ENTITY[2], ENTITY[Shinjin_Shoin])) ∧ Through(EVENT[3]) = ENTITY[1])
+
+# ::id 8_wikipedia_KYOTO_BDS_00003,8;IE
+# ::snt Rennyo , the 8th head-priest of Hongan-ji Temple , stated in " Ofumi " as follows .
+∃ SITUATION[3] ATTRIB[2] EVENT[4] EVENT[5] ENTITY[1] (
+ 8th(ATTRIB[2]) ∧
+  is_head-priest_of(ENTITY[1], ENTITY[Hongan-ji_Temple]) ∧ is_head-priest_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   is_-ENTITY-_namely(ENTITY[Rennyo], ENTITY[1]) ∧
+    is_FACT_THAT(SITUATION[3], follows(EVENT[4])) ∧
+     past(EVENT[5]) ∧
+      stated(EVENT[5], ENTITY[Rennyo]) ∧ as(EVENT[5]) = SITUATION[3] ∧ in(EVENT[5]) = ENTITY[Ofumi])
+
+# ::id 9_wikipedia_KYOTO_BDS_00003,13;IE
+# ::snt This is based on Forty-eight Vows of " Infinite Life Sutra -LRB- Bussetsu Muryojukyo -RRB- " , especially the Eighteenth Vow -LRB- Senjaku Hongan -RRB- called " O'Hongan .
+∃ EVENT[3] EVENT[6] GROUP[2] EVENT[5] ENTITY[1] (
+ called(EVENT[5], ENTITY[Eighteenth_Vow], ENTITY[O'Hongan]) ∧
+  is_-ENTITY-_namely(ENTITY[Eighteenth_Vow], ENTITY[Senjaku_Hongan]) ∧
+   is_-ENTITY-_namely(ENTITY[Infinite_Life_Sutra], ENTITY[Bussetsu_Muryojukyo]) ∧
+    (CD_forty-eight(GROUP[2]), is_Vows_of(GROUP[2], ENTITY[Infinite_Life_Sutra])) ∧
+     ADV_especially(EVENT[6]) ∧
+      is_based(EVENT[3], ENTITY[1]) ∧ on(EVENT[3]) = GROUP[2] ∧ xxx(EVENT[6], _, ENTITY[Eighteenth_Vow]))
+
+# ::id 10_wikipedia_KYOTO_BDS_00003,14;IE
+# ::snt The principal image -LRB- Honzon -RRB- is only Amida Nyorai .
+∃ ATTRIB[2] ENTITY[1] (
+ principal(ATTRIB[2]) ∧
+  is_image_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   is_-ENTITY-_namely(ENTITY[1], ENTITY[Honzon]) ∧ ONLY ENTITY[3] (is_of(ENTITY[3], ENTITY[Amida_Nyorai]), ∃ EVENT[4] copula(EVENT[4], ENTITY[1], ENTITY[3])))
+
+# ::id 11_wikipedia_KYOTO_BDS_00003,15;IE
+# ::snt However , Takada School and a part of the sect have Amida Nyorai , Kanzeon Bosatsu and Seishi Bosatsu as their principal images , in Zenko-ji Amida Sanson style .
+∃ ATTRIB[7] REF1[6] EVENT[9] ENTITY[8] GROUP[5] GROUP[4] GROUP[1] ENTITY[3] (
+ sect(ENTITY[3]) ∧
+  is_element_of(ENTITY[Takada_School], GROUP[1]) ∧ ∃ ENTITY[2] (is_part_of(ENTITY[2], ENTITY[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+   is_element_of(ENTITY[Amida_Nyorai], GROUP[4]) ∧ is_element_of(ENTITY[Kanzeon_Bosatsu], GROUP[4]) ∧ is_element_of(ENTITY[Seishi_Bosatsu], GROUP[4]) ∧
+    REF1[6] = their ∧
+     principal(ATTRIB[7]) ∧
+      is_images_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_images_POS(GROUP[5], REF1[6]) ∧
+       Zenko-ji_Amida_Sanson_style(ENTITY[8]) ∧
+        ADV_however(EVENT[9]) ∧
+         have(EVENT[9], GROUP[1], GROUP[4]) ∧ in(EVENT[9]) = ENTITY[8] ∧
+          as(EVENT[9]) = GROUP[5])
+
+# ::id 12_wikipedia_KYOTO_BDS_00003,16;IE
+# ::snt Misunderstanding of nenbutsu
+∃ EVENT[2] GROUP[1] (nenbutsu(GROUP[1]) ∧ misunderstanding(EVENT[2]) ∧ of(EVENT[2]) = GROUP[1])
+
+# ::id 13_wikipedia_KYOTO_BDS_00003,17;IE
+# ::snt Generally , the idea " that the vow of Amida Nyorai is offered to us even at this moment and we are saved " -LRB- Gensho shojoju -RRB- was misunderstood by a number of people , and repeatedly corrected .
+∃ SITUATION[14] REF2[7] REF1[3] EVENT[11] EVENT[12] GROUP[10] ENTITY[9] EVENT[8] ENTITY[5] ENTITY[2] ENTITY[1] (
+ is_vow_of(ENTITY[2], ENTITY[Amida_Nyorai]) ∧
+  REF1[3] = us ∧
+   moment(ENTITY[5]) ∧
+    REF2[7] = we ∧
+     is_idea_THAT(ENTITY[1],
+      CONJ_and(EVEN ENTITY[4] (is_of(ENTITY[4], ENTITY[5]),
+            ∃ EVENT[6] (
+             offered(EVENT[6], _, ENTITY[2]) ∧
+              at(EVENT[6]) = ENTITY[4] ∧ to(EVENT[6]) = REF1[3])),
+       saved(EVENT[8], _, REF2[7]))) ∧
+      is_-ENTITY-_namely(ENTITY[1], ENTITY[Gensho_shojoju]) ∧
+       people(GROUP[10]) ∧
+        is_number_of(ENTITY[9], GROUP[10]) ∧
+         ADV_generally(SITUATION[14]) ∧
+          past(EVENT[11]) ∧
+           ADV_repeatedly(EVENT[12]) ∧
+            past(EVENT[12]) ∧
+             is_FACT_THAT(SITUATION[14],
+              CONJ_and(misunderstood(EVENT[11], ENTITY[9], ENTITY[1]), corrected(EVENT[12], _, ENTITY[1]))))

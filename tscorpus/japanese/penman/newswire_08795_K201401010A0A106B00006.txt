@@ -1,0 +1,303 @@
+# ::id 1_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 河北春秋
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-河北春秋 / ENTITY
+             :name ( n-2 / name
+                    :op1 "河北春秋")))
+
+# ::id 2_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 神話 に 出 て くる 神様 は 暴れん坊ぞろい 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY-1 / 神様
+             :ARG0-of ( EVENT-4 / 出_て_くる
+                    :に ( ENTITY-3 / 神話)))
+      :ARG1 ( ENTITY-5 / 暴れん坊ぞろい))
+
+# ::id 3_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 岩 を 投げ て 山 を つくっ たり 海底火山 の 噴火 を 連想 さ せ たり する 。
+( EVENT-12 / する
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :たり ( CONJ-17 / CONJ_たり
+             :op1 ( CONJ-16 / CONJ_te
+                    :op1 ( EVENT-4 / 投げ_て
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-3 / 岩))
+                    :op2 ( EVENT-6 / つくっ
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-5 / 山)))
+             :op2 ( EVENT-8 / せ
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-7 / ENTITY
+                           :namely ( PICK-13 / or
+                                  :op1 ENTITY-5
+                                  :op2 ENTITY-3))
+                    :TOCOMP ( EVENT-11 / 連想する.0
+                           :ARG0 ENTITY-7
+                           :ARG1 ( ENTITY-9 / 噴火
+                                  :の ( ENTITY-10 / 海底火山))))))
+
+# ::id 4_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 物理学者 の 寺田寅彦 は 「 この 国 が 島国 で ある と 明瞭 に 表し て いる 。 神代史 に 科学的真実 が 織り込ま れ て いる の は 驚き 」 と 随筆 に 記す
+( EVENT-3 / 記す
+      :ARG0 ( ENTITY-寺田寅彦 / ENTITY
+             :name ( n-18 / name
+                    :op1 "寺田寅彦")
+             :の ( ENTITY-1 / 物理学者))
+      :に ( ENTITY-2 / 随筆)
+      :THAT ( CONJ-19 / AND
+             :op1 ( EVENT-5 / 表し_て_いる
+                    :ARG0 ( PICK-16 / or
+                           :op1 ENTITY-寺田寅彦
+                           :op2 ENTITY-2
+                           :op3 ENTITY-1)
+                    :THAT ( EVENT-8 / で_ある
+                           :ARG0 ( ENTITY-6 / 国)
+                           :ARG1 ( ENTITY-7 / 島国))
+                    :MOD ( mod-17 / 明瞭_に))
+             :op2 ( EVENT-15 / EVENT
+                    :ARG0 ( SITUATION-10 / の
+                           :THAT ( EVENT-13 / 織り込ま_て_いる
+                                  :ARG1 ( ENTITY-12 / 科学的真実)
+                                  :に ( ENTITY-11 / 神代史)))
+                    :ARG1 ( ENTITY-14 / 驚き))))
+
+# ::id 5_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 小笠原諸島 （ 東京都 ） に 生まれ た 新島 は 日々 大きく なっ て いる 。
+( EVENT-4 / 大きく_なっ_て_いる
+      :ARG0 ( ENTITY-新島 / ENTITY
+             :name ( n-6 / name
+                    :op1 "新島")
+             :ARG0-of ( EVENT-2 / 生まれ_た
+                    :に ( ENTITY-小笠原諸島 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "小笠原諸島")
+                           :NAMELY ( ENTITY-東京都 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "東京都")))
+                    :MOD ( mod-5 / past)))
+      :TMP ( TIME-3 / 日々))
+
+# ::id 6_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt １２ 月 初め に 甲子園球場 ほど だっ た の が ３ 倍 に なり 、 とうとう 西之島 と くっつい た
+( EVENT-8 / くっつい_た
+      :ARG0 ( ENTITY-2 / の
+             :ARG0-of ( EVENT-5 / だっ_た
+                    :ARG1 ( ENTITY-4 / ENTITY
+                           :ほど ( ENTITY-甲子園球場 / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "甲子園球場")))
+                    :MOD ( mod-9 / past))
+             :ARG0-of ( EVENT-7 / なり
+                    :ARG1 ( ENTITY-6 / CD_３_倍)))
+      :と ( ENTITY-西之島 / ENTITY
+             :name ( n-14 / name
+                    :op1 "西之島"))
+      :に ( ENTITY-1 / CD_１２_月
+             :MOD ( mod-10 / 初め))
+      :MOD ( mod-11 / とうとう)
+      :MOD ( mod-12 / past))
+
+# ::id 7_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 地球 は 生命体 、 その 上 で 暮らし て いる と 気付か さ れる 。
+( EVENT-2 / さ
+      :ARG1 ( ARB-1 / arb
+             :pick0)
+      :TOCOMP ( EVENT-3 / 気付か
+             :ARG0 ARB-1
+             :THAT ( CONJ-10 / AND
+                    :op1 ( EVENT-7 / EVENT
+                           :ARG0 ( ENTITY-5 / 地球)
+                           :ARG1 ( ENTITY-6 / 生命体))
+                    :op2 ( EVENT-9 / 暮らし_て_いる
+                           :ARG0 ARB-1
+                           :で ( ENTITY-8 / 上)))))
+
+# ::id 8_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt これ から 、 くぼみ に 水 が たまっ て 湖 と なり 小さな 命 が 。
+( CONJ-12 / AND
+      :op1 ( CONJ-11 / CONJ_te
+             :op1 ( EVENT-5 / たまっ_て
+                    :ARG0 ( ENTITY-4 / 水)
+                    :に ( ENTITY-3 / くぼみ))
+             :op2 ( EVENT-7 / なり
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-6 / 湖)))
+      :op2 ( EVENT-10 / EVENT
+             :ARG0 ( ENTITY-8 / 命
+                    :ATTRIBUTE ( ATTRIB-9 / 小さな))
+             :から ( ENTITY-1 / これ
+                    :pick0)))
+
+# ::id 9_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 列島 も こんな ふう に いま に 至っ た の だろ う か
+( EVENT-4 / 至っ_た_の_だろ
+      :ARG0 ( ENTITY-1 / 列島)
+      :に ( ENTITY-3 / いま)
+      :に ( ENTITY-2 / ふう)
+      :MOD ( mod-7 / past)
+      :domain-of ( QUEST-6 / QUEST)
+      :domain-of ( MD-5 / MD_う))
+
+# ::id 10_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 埋蔵資源 が ある と いい 。
+( CND-6 / と (
+             :op1 ( ENTITY-2 埋蔵資源) ( EVENT-3 ( ある
+                           :ARG0 ENTITY-2)))
+      :op2 ( EVENT-4 / いい
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)))
+
+# ::id 11_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 東向こう 、 南鳥島沖 に は ハイテク機器 に 使う レアメタル が ４０ 年 分 埋まっ て いる 。
+( EVENT-9 / 埋まっ_て_いる
+      :ARG0 ( ENTITY-3 / レアメタル
+             :ARG1-of ( EVENT-7 / 使う
+                    :ARG0 ( PICK-10 / or
+                           :op1 ENTITY-2
+                           :op2 ENTITY-1)
+                    :に ( ENTITY-6 / ハイテク機器)))
+      :MSR ( DEGREE-8 / CD_４０_年
+             :MOD ( mod-11 / 分))
+      :に ( ENTITY-2 / 南鳥島沖
+             :NAMELY ( ENTITY-1 / 東向こう)))
+
+# ::id 12_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 新島 も 期待 でき そう 。
+( EVENT-2 / 期待する.0
+      :ARG0 ( ENTITY-新島 / ENTITY
+             :name ( n-4 / name
+                    :op1 "新島"))
+      :ARG1 ( ENTITY-1 / pro
+             :pick0)
+      :domain-of ( MD-3 / MD_そう))
+
+# ::id 13_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 開発権 の ある 排他的経済水域 の 広さ は 世界 ６ 位 の 海洋技術国 な の だ から
+( EVENT-11 / な_の_だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 海洋技術国
+             :の ( EVENT-10 / EVENT
+                    :ARG0 ( ENTITY-4 / 広さ
+                           :の ( ENTITY-5 / 排他的経済水域
+                                  :ARG0-of ( EVENT-8 / ある
+                                         :ARG0 ( ENTITY-7 / 開発権))))
+                    :ARG1 ( ENTITY-9 / CD_６_位
+                           :MOD ( mod-13 / 世界))))
+      :domain-of ( MD-12 / MD_から))
+
+# ::id 14_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 幕末 、 黒船 で 来航 し た 米国使節 は 「 小笠原諸島 を 発見 し 、 すでに 英語名 を 付け た 」 と 領有 を 主張 する 。
+( EVENT-6 / 主張する.0
+      :ARG0 ( ENTITY-米国使節 / ENTITY
+             :name ( n-16 / name
+                    :op1 "米国使節")
+             :ARG0-of ( EVENT-4 / 来航する.0_た
+                    :で ( ENTITY-3 / 黒船)
+                    :TMP ( TIME-2 / 幕末)
+                    :MOD ( mod-13 / past)))
+      :ARG1 ( ENTITY-5 / 領有)
+      :THAT ( EVENT-10 / 付け_た
+             :ARG0 ( ENTITY-7 / ENTITY
+                    :namely ( PICK-12 / or
+                           :op1 ENTITY-米国使節
+                           :op2 ENTITY-5
+                           :op3 ENTITY-3)
+                    :ARG0-of ( EVENT-8 / 発見する.0
+                           :ARG1 ( ENTITY-小笠原諸島 / ENTITY
+                                  :name ( n-17 / name
+                                         :op1 "小笠原諸島"))))
+             :ARG1 ( ENTITY-9 / 英語名)
+             :MOD ( mod-14 / すでに)
+             :MOD ( mod-15 / past)))
+
+# ::id 15_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt その 時 、 仙台藩 の 先覚者 、 林子平 が 後世 に 残し た 周辺海図 「 三国通覧図説 」 が もの を いう
+( EVENT-8 / いう
+      :ARG0 ( ENTITY-三国通覧図説 / ENTITY
+             :name ( n-10 / name
+                    :op1 "三国通覧図説")
+             :NAMELY ( ENTITY-2 / 周辺海図
+                    :ARG1-of ( EVENT-6 / 残し_た
+                           :ARG0 ( ENTITY-林子平 / ENTITY
+                                  :name ( n-11 / name
+                                         :op1 "林子平")
+                                  :NAMELY ( ENTITY-4 / 先覚者
+                                         :の ( ENTITY-仙台藩 / ENTITY
+                                                :name ( n-12 / name
+                                                       :op1 "仙台藩"))))
+                           :に ( ENTITY-5 / 後世)
+                           :MOD ( mod-9 / past))))
+      :ARG1 ( ENTITY-7 / もの)
+      :TMP ( TIME-1 / 時))
+
+# ::id 16_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 「 わが 領土 の 動か ぬ 証拠 」 と 反論 さ れ 、 引き下がっ た 。
+( CONJ-16 / AND
+      :op1 ( EVENT-9 / 反論する.0
+             :ARG1 ( SITUATION-2 / と
+                    :THAT ( EVENT-8 / EVENT
+                           :ARG0 ( ENTITY-3 / ENTITY
+                                  :namely ENTITY-1)
+                           :ARG1 ( ENTITY-4 / 証拠
+                                  :の ( ENTITY-5 / 領土
+                                         :namely ( PICK-11 / or
+                                                :op1 ENTITY-3
+                                                :op2 ENTITY-1))
+                                  :THAT ( EVENT-7 / 動か
+                                         :ARG0 ( PICK-12 / or
+                                                :op1 ENTITY-5
+                                                :op2 ENTITY-3
+                                                :op3 ENTITY-1)
+                                         :domain-of ( NEG-14 / NEG))))))
+      :op2 ( EVENT-10 / 引き下がっ_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :MOD ( mod-15 / past)))
+
+# ::id 17_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 天 は 時 に 試練 を 与える 。
+( EVENT-5 / 与える
+      :ARG0 ( ENTITY-2 / 天)
+      :ARG1 ( ENTITY-4 / 試練)
+      :ARG2 ( ARB-1 / arb
+             :pick0)
+      :に ( ENTITY-3 / 時))
+
+# ::id 18_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt でも 、 人 に は 知恵 と 勇気 が ある 。
+( EVENT-5 / ある
+      :ARG0 ( CONJ-6 / CONJ_と
+             :op1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / 知恵)
+                    :op2 ENTITY-8)
+             :op2 ( GROUP-7 / AND
+                    :op1 ( ENTITY-4 / 勇気)
+                    :op2 ENTITY-9))
+      :に ( ENTITY-1 / 人))
+
+# ::id 19_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 未曽有 の 震災 から ことし で ３ 年 。
+( EVENT-5 / EVENT
+      :ARG1 ( ENTITY-4 / CD_３_年)
+      :で ( ENTITY-3 / ことし)
+      :から ( ENTITY-1 / 震災
+             :の ( ENTITY-2 / 未曽有)))
+
+# ::id 20_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 午 （ うま ） 年 に ちなみ 、 瞳 は 優しく 軽やか に 駆け たい 。
+( CONJ-8 / AND
+      :op1 ( EVENT-5 / 優しく
+             :ARG0 ( ENTITY-4 / 瞳))
+      :op2 ( EVENT-6 / 駆け_たい
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-3 / ちなみ
+                           :に ( ENTITY-2 / CD_午_ （ うま_ ） 年)))
+             :MOD ( mod-7 / 軽やか_に)))
+
+# ::id 21_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt （ ２０１４・１・１ ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / CD_２０１４.１.１))

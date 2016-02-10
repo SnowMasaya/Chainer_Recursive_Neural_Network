@@ -1,0 +1,363 @@
+# ::id 1_K201401010W4XK1XX00001;NJ
+# ::snt プロ野球
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / プロ野球))
+
+# ::id 2_K201401010W4XK1XX00001;NJ
+# ::snt ／ 次代 の Ｎｏ．１ へ
+( EVENT-3 / EVENT
+      :へ ( ENTITY-1 / Ｎｏ ． １
+             :の ( ENTITY-2 / 次代)))
+
+# ::id 3_K201401010W4XK1XX00001;NJ
+# ::snt ／ 東北楽天 の 松井裕樹
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-松井裕樹 / ENTITY
+             :name ( n-3 / name
+                    :op1 "松井裕樹")
+             :の ( ENTITY-1 / 東北楽天)))
+
+# ::id 4_K201401010W4XK1XX00001;NJ
+# ::snt 「 ドクターＫ 」 松井裕樹投手 （ １８ ） ＝ 神奈川・桐光学園高 ＝ が 、 仙台 に やっ て 来る 。
+( EVENT-3 / やっ_て_来る
+      :ARG0 ( ENTITY-松井裕樹投手 / ENTITY
+             :name ( n-4 / name
+                    :op1 "松井裕樹投手")
+             :NAMELY ( ENTITY-ドクターＫ / ENTITY
+                    :name ( n-5 / name
+                           :op1 "ドクターＫ"))
+             :NAMELY ( ENTITY-1 / 神奈川.桐光学園高))
+      :に ( ENTITY-仙台 / ENTITY
+             :name ( n-6 / name
+                    :op1 "仙台")))
+
+# ::id 5_K201401010W4XK1XX00001;NJ
+# ::snt 甲子園大会 で 派手 な 奪三振ショー を 披露 し た 高校屈指 の 左腕 は 、 プロ野球 で も 並み居る 強打者 の バット に 空 を 切ら せる の か 。
+( EVENT-13 / せる_の
+      :ARG0 ( ENTITY-1 / 左腕
+             :の ( ENTITY-7 / 高校屈指)
+             :ARG0-of ( EVENT-6 / 披露する.0_た
+                    :ARG1 ( ENTITY-4 / 奪三振ショー
+                           :ATTRIBUTE ( ATTRIB-5 / 派手_な))
+                    :で ( ENTITY-3 / 甲子園大会)
+                    :MOD ( mod-17 / past)))
+      :ARG1 ( ENTITY-8 / バット
+             :の ( ENTITY-9 / 強打者
+                    :ARG0-of ( EVENT-12 / 並み居る
+                           :で ( ENTITY-11 / プロ野球))))
+      :TOCOMP ( EVENT-15 / 切ら
+             :ARG0 ENTITY-8
+             :ARG1 ( ENTITY-14 / 空))
+      :domain-of ( QUEST-16 / QUEST))
+
+# ::id 6_K201401010W4XK1XX00001;NJ
+# ::snt 球団創設 ９ 年目 で 初 の 日本一 に 輝い た 東北楽天 で 、 次代 の エース と なる べく 第一歩 を 踏み出す 。
+( EVENT-11 / 踏み出す
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-9 / なる_べく
+                    :と ( ENTITY-7 / エース
+                           :の ( ENTITY-8 / 次代))))
+      :ARG1 ( ENTITY-10 / 第一歩)
+      :で ( ENTITY-東北楽天 / ENTITY
+             :name ( n-14 / name
+                    :op1 "東北楽天")
+             :ARG0-of ( EVENT-6 / 輝い_た
+                    :に ( ENTITY-3 / 日本一
+                           :の ( ENTITY-5 / 初)
+                           :で ( ENTITY-4 / CD_９_年目
+                                  :MOD ( mod-12 / 球団創設)))
+                    :MOD ( mod-13 / past))))
+
+# ::id 7_K201401010W4XK1XX00001;NJ
+# ::snt ２０１３ 年 １２ 月 ８ 日 、 松井裕 は 仙台市 の 日本製紙クリネックススタジアム宮城 （ Ｋスタ宮城 、 ことし １ 月 １ 日 から 楽天Ｋｏｂｏスタジアム宮城 ） を 訪れ た 。
+( EVENT-6 / 訪れ_た
+      :ARG0 ( ENTITY-2 / 松井裕)
+      :ARG1 ( ENTITY-日本製紙クリネックススタジアム宮城 / ENTITY
+             :name ( n-8 / name
+                    :op1 "日本製紙クリネックススタジアム宮城")
+             :の ( ENTITY-仙台市 / ENTITY
+                    :name ( n-10 / name
+                           :op1 "仙台市"))
+             :NAMELY ( ENTITY-3 / AND
+                    :op1 ( ENTITY-Ｋスタ宮城 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "Ｋスタ宮城"))
+                    :op2 ( GROUP-4 / AND (
+                                  :op1 ( ENTITY-5 CD_１_月_１_日) ( ENTITY-5 ことし))
+                           :op2 ( ENTITY-楽天Ｋｏｂｏスタジアム宮城 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "楽天Ｋｏｂｏスタジアム宮城")
+                                  :から ENTITY-5)
+                           :op3 ENTITY-楽天Ｋｏｂｏスタジアム宮城)))
+      :TMP ( TIME-1 / CD_２０１３_年_１２_月_８_日)
+      :MOD ( mod-7 / past))
+
+# ::id 8_K201401010W4XK1XX00001;NJ
+# ::snt マウンド で シャドーピッチング を 披露 。
+( EVENT-4 / 披露
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / シャドーピッチング)
+      :で ( ENTITY-2 / マウンド))
+
+# ::id 9_K201401010W4XK1XX00001;NJ
+# ::snt 「 眺め が 良かっ た 。
+( EVENT-2 / 良かっ_た
+      :ARG0 ( ENTITY-1 / 眺め)
+      :MOD ( mod-3 / past))
+
+# ::id 10_K201401010W4XK1XX00001;NJ
+# ::snt この グラウンド で 早く 活躍 し たい 」 。
+( EVENT-3 / 活躍する.0_たい
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :で ( ENTITY-2 / グラウンド)
+      :MOD ( mod-4 / 早く))
+
+# ::id 11_K201401010W4XK1XX00001;NJ
+# ::snt １ カ月 ほど 前 、 東北楽天 が 頂点 に 登り詰め た ホームグラウンド で 、 胸 を 高鳴ら せ た 。
+( EVENT-8 / 高鳴ら_せ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-7 / 胸)
+      :で ( SITUATION-2 / ホームグラウンド
+             :THAT ( EVENT-6 / 登り詰め_た
+                    :ARG0 ( ENTITY-東北楽天 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "東北楽天"))
+                    :に ( ENTITY-5 / 頂点)
+                    :TMP ( TIME-3 / 前
+                           :ほど ( ENTITY-4 / CD_１_カ月))
+                    :MOD ( mod-9 / past)))
+      :MOD ( mod-10 / past))
+
+# ::id 12_K201401010W4XK1XX00001;NJ
+# ::snt 翌９ 日 、 仙台市内 で 開か れ た 新入団選手発表会 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY-2 / 新入団選手発表会
+             :ARG1-of ( EVENT-5 / 開か_た
+                    :で ( ENTITY-4 / 仙台市内)
+                    :MOD ( mod-7 / past)))
+      :TMP ( TIME-1 / CD_翌９_日))
+
+# ::id 13_K201401010W4XK1XX00001;NJ
+# ::snt 「 小さい ころ から プロ を 目指し て 努力 し て き た こと が 実っ た 。
+( EVENT-8 / 実っ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG0 ( SITUATION-2 / こと
+             :THAT ( CONJ-10 / CONJ_te
+                    :op1 ( EVENT-6 / 目指し_て
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-5 / プロ)
+                           :から ( ENTITY-3 / ころ
+                                  :ATTRIBUTE ( ATTRIB-4 / 小さい)))
+                    :op2 ( EVENT-7 / 努力する.0_て_き_た
+                           :ARG0 ENTITY-1
+                           :から ENTITY-3
+                           :MOD ( mod-11 / past))))
+      :MOD ( mod-12 / past))
+
+# ::id 14_K201401010W4XK1XX00001;NJ
+# ::snt 強気 な ピッチング を 見 て ほしい 」 。
+( EVENT-3 / ほしい
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / hearer
+             :pick0)
+      :TOCOMP ( EVENT-6 / 見_て
+             :ARG0 ENTITY-2
+             :ARG1 ( ENTITY-4 / ピッチング
+                    :ATTRIBUTE ( ATTRIB-5 / 強気_な))))
+
+# ::id 15_K201401010W4XK1XX00001;NJ
+# ::snt 隣 に 座っ た 星野仙一監督 と ファン 約４００ 人 に 堂々 と アピール し た 。
+( EVENT-9 / アピールする.0_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :と ( ATTRIB-8 / 堂々)
+      :に ( ENTITY-2 / CONJ_と
+             :op1 ( ENTITY-星野仙一監督 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "星野仙一監督"))
+             :op2 ( GROUP-6 / AND (
+                           :op1 ( ENTITY-7 CD_約４００_人) ( ENTITY-7 ファン))
+                    :op2 ENTITY-13)
+             :ARG0-of ( EVENT-5 / 座っ_た
+                    :に ( ENTITY-4 / 隣)
+                    :MOD ( mod-10 / past)))
+      :MOD ( mod-11 / past))
+
+# ::id 16_K201401010W4XK1XX00001;NJ
+# ::snt 鋭く 変化 する 「伝家の宝刀」スライダー が 最大 の 武器 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY- 「 伝家の宝刀 」 スライダー / ENTITY
+             :name ( n-8 / name
+                    :op1 " 「 伝家の宝刀 」 スライダー")
+             :ARG0-of ( EVENT-2 / 変化する.0
+                    :MOD ( mod-7 / 鋭く)))
+      :ARG1 ( ENTITY-4 / 武器
+             :の ( ENTITY-5 / 最大)))
+
+# ::id 17_K201401010W4XK1XX00001;NJ
+# ::snt ２ 年生 で 出場 し た ２０１２ 年 夏 の 甲子園 で は 、 初戦 の 今治西 （ 愛媛 ） 戦 で いきなり １ 試合 ２２ 奪三振 の 大会新記録 を 打ち立て た 。
+( EVENT-14 / 打ち立て_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-11 / 大会新記録
+             :の ( ENTITY-13 / CD_１_２２
+                    :MOD ( mod-15 / 試合)
+                    :NAMELY ( ENTITY-12 / 奪三振)))
+      :で ( ENTITY-9 / 戦
+             :の ( ENTITY-10 / 初戦)
+             :NAMELY ( ENTITY-8 / 今治西)
+             :NAMELY ( ENTITY-愛媛 / ENTITY
+                    :name ( n-20 / name
+                           :op1 "愛媛")))
+      :で ( ENTITY-2 / 甲子園
+             :の ( ENTITY-7 / CD_２０１２_年
+                    :MOD ( mod-16 / 夏))
+             :ARG1-of ( EVENT-6 / 出場する.0_た
+                    :ARG0 ENTITY-1
+                    :で ( ENTITY-5 / CD_２_年生)
+                    :MOD ( mod-17 / past)))
+      :MOD ( mod-18 / いきなり)
+      :MOD ( mod-19 / past))
+
+# ::id 18_K201401010W4XK1XX00001;NJ
+# ::snt 準々決勝 で 敗れる まで ４ 試合 連続 ２ 桁 奪三振 を マーク 。
+( EVENT-6 / マーク
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-5 / CD_４_２_桁
+             :MOD ( mod-7 / 試合_連続)
+             :MOD ( mod-8 / 奪三振))
+      :まで ( EVENT-4 / 敗れる
+             :ARG0 ENTITY-1
+             :で ( ENTITY-3 / 準々決勝)))
+
+# ::id 19_K201401010W4XK1XX00001;NJ
+# ::snt 新た な スター の 誕生 に 球場 は 大いに 沸い た 。
+( EVENT-5 / 沸い_た
+      :ARG0 ( ENTITY-4 / 球場)
+      :に ( ENTITY-1 / 誕生
+             :の ( ENTITY-2 / スター
+                    :ATTRIBUTE ( ATTRIB-3 / 新た_な)))
+      :MOD ( mod-6 / 大いに)
+      :MOD ( mod-7 / past))
+
+# ::id 20_K201401010W4XK1XX00001;NJ
+# ::snt 「 東北 だけじゃなく 、 日本 の 野球ファン を 魅了 する 素材 」 。
+( EVENT-7 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 素材
+             :ARG0-of ( EVENT-6 / 魅了する.0
+                    :ARG1 ( ENTITY-4 / 野球ファン
+                           :の ( GROUP-5 / CONJ_だけじゃなく
+                                  :op1 ( ENTITY-東北 / ENTITY
+                                         :name ( n-8 / name
+                                                :op1 "東北"))
+                                  :op2 ( ENTITY-日本 / ENTITY
+                                         :name ( n-9 / name
+                                                :op1 "日本")))))))
+
+# ::id 21_K201401010W4XK1XX00001;NJ
+# ::snt 星野監督 は 、 松井裕 を こう 評する 。
+( EVENT-1 / 評する
+      :ARG0 ( ENTITY-星野監督 / ENTITY
+             :name ( n-3 / name
+                    :op1 "星野監督"))
+      :ARG1 ( ENTITY-松井裕 / ENTITY
+             :name ( n-4 / name
+                    :op1 "松井裕"))
+      :MOD ( mod-2 / こう))
+
+# ::id 22_K201401010W4XK1XX00001;NJ
+# ::snt 「 田中 （ 将大 ） の よう に 気持ち を 出す 攻撃的 な 投球 が 魅力 。 プロ という もの を 教え て いき たい 」 と 大きな 期待 を 寄せる 。
+( EVENT-4 / 寄せる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 期待
+             :ATTRIBUTE ( ATTRIB-3 / 大きな))
+      :THAT ( CONJ-21 / AND
+             :op1 ( EVENT-12 / EVENT
+                    :ARG0 ( ENTITY-5 / 投球
+                           :ATTRIBUTE ( ATTRIB-6 / 攻撃的_な)
+                           :THAT ( EVENT-10 / 出す
+                                  :ARG0 ( PICK-17 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-2)
+                                  :ARG1 ( ENTITY-9 / 気持ち)
+                                  :に ( ENTITY-8 / よう
+                                         :の ( ENTITY-田中 / ENTITY
+                                                :name ( n-19 / name
+                                                       :op1 "田中")
+                                                :NAMELY ( ENTITY-将大 / ENTITY
+                                                       :name ( n-20 / name
+                                                              :op1 "将大"))))))
+                    :ARG1 ( ENTITY-11 / 魅力))
+             :op2 ( EVENT-16 / 教え_て_いき_たい
+                    :ARG0 ( PICK-18 / or
+                           :op1 ENTITY-田中
+                           :op2 ENTITY-将大
+                           :op3 ENTITY-5
+                           :op4 ENTITY-11
+                           :op5 ENTITY-8
+                           :op6 ENTITY-9
+                           :op7 ENTITY-1
+                           :op8 ENTITY-2)
+                    :ARG1 ( ENTITY-14 / もの
+                           :という ( ENTITY-15 / プロ)))))
+
+# ::id 23_K201401010W4XK1XX00001;NJ
+# ::snt 松井裕 は ルーキーイヤー の 目標 を 「 怪我 （ けが ） なく 一 年 を 終える 」 と 書い た 。
+( EVENT-4 / 書い_た
+      :ARG0 ( ENTITY-1 / 松井裕)
+      :ARG1 ( ENTITY-2 / 目標
+             :の ( ENTITY-3 / ルーキーイヤー))
+      :THAT ( EVENT-9 / 終える
+             :ARG0 ( PICK-11 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-2
+                    :op3 ENTITY-3)
+             :ARG1 ( ENTITY-8 / CD_一_年)
+             :MOD ( mod-12 / なく
+                    :OF ( ENTITY-7 / 怪我
+                           :NAMELY ( ENTITY-6 / けが))))
+      :MOD ( mod-13 / past))
+
+# ::id 24_K201401010W4XK1XX00001;NJ
+# ::snt 堅実 に 足元 を 見つめる 一方 で 、 「 最終的 に は 球界 を 代表 する 投手 に なり たい 」 と 語る 。
+( EVENT-6 / 語る
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :で ( SITUATION-2 / 一方
+             :THAT ( EVENT-5 / 見つめる
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-4 / 足元)
+                    :に ( ENTITY-3 / 堅実)))
+      :THAT ( EVENT-12 / なり_たい
+             :ARG0 ( PICK-14 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-3
+                    :op3 ENTITY-4)
+             :ARG1 ( ENTITY-8 / 投手
+                    :ARG0-of ( EVENT-11 / 代表する.0
+                           :ARG1 ( ENTITY-10 / 球界)))
+             :MOD ( mod-15 / 最終的_に_は)))
+
+# ::id 25_K201401010W4XK1XX00001;NJ
+# ::snt 自身 が 希望 し た 背番号 「 １ 」 同様 、 球界 の ナンバーワン を 目指す 。
+( EVENT-9 / 目指す
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-7 / ナンバーワン
+             :の ( ENTITY-8 / 球界))
+      :MOD ( mod-11 / 同様)
+      :OF ( ENTITY-3 / 背番号
+             :ARG1-of ( EVENT-6 / 希望する.0_た
+                    :ARG0 ENTITY-1
+                    :MOD ( mod-12 / past))
+             :NAMELY ( ENTITY-2 / CD_１)))

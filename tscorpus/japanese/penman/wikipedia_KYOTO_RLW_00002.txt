@@ -1,0 +1,304 @@
+# ::id 1_wikipedia_KYOTO_RLW_00002,1;NJ
+# ::snt 嵯峨野観光鉄道
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-嵯峨野観光鉄道 / ENTITY
+             :name ( n-2 / name
+                    :op1 "嵯峨野観光鉄道")))
+
+# ::id 2_wikipedia_KYOTO_RLW_00002,2;NJ
+# ::snt 嵯峨野観光鉄道 （ さがのかんこうてつどう ） は 、 京都府 京都市 と 亀岡市 で 山陰本線 旧線 を 利用 し て 嵯峨野観光鉄道 嵯峨野観光線 に トロッコ列車 を 運行 し て いる 会社 。
+( EVENT-9 / EVENT
+      :ARG0 ( ENTITY-嵯峨野観光鉄道 / ENTITY
+             :name ( n-11 / name
+                    :op1 "嵯峨野観光鉄道")
+             :NAMELY ( ENTITY-1 / さがのかんこうてつどう))
+      :ARG1 ( ENTITY-2 / 会社
+             :ARG0-of ( CONJ-10 / CONJ_te
+                    :op1 ( EVENT-6 / 利用する.0_て
+                           :ARG1 ( ENTITY-5 / 山陰本線_旧線)
+                           :で ( GROUP-4 / CONJ_と
+                                  :op1 ( ENTITY-京都府_京都市 / ENTITY
+                                         :name ( n-12 / name
+                                                :op1 "京都府_京都市"))
+                                  :op2 ( ENTITY-亀岡市 / ENTITY
+                                         :name ( n-13 / name
+                                                :op1 "亀岡市"))))
+                    :op2 ( EVENT-8 / 運行する.0_て_いる
+                           :ARG1 ( ENTITY-7 / トロッコ列車)
+                           :に ( ENTITY-嵯峨野観光鉄道_嵯峨野観光線 / ENTITY
+                                  :name ( n-14 / name
+                                         :op1 "嵯峨野観光鉄道_嵯峨野観光線"))
+                           :で GROUP-4))))
+
+# ::id 3_wikipedia_KYOTO_RLW_00002,3;NJ
+# ::snt 西日本旅客鉄道 の 完全 子会社 で ある 。
+( EVENT-4 / で_ある
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 子会社
+             :ATTRIBUTE ( ATTRIB-3 / 完全)
+             :の ( ENTITY-西日本旅客鉄道 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "西日本旅客鉄道"))))
+
+# ::id 4_wikipedia_KYOTO_RLW_00002,4;NJ
+# ::snt 本社 は 京都府 京都市 右京区 嵯峨天竜寺車道町 。
+( EVENT-2 / EVENT
+      :ARG0 ( ENTITY-1 / 本社)
+      :ARG1 ( ENTITY-京都府_京都市_右京区_嵯峨天竜寺車道町 / ENTITY
+             :name ( n-3 / name
+                    :op1 "京都府_京都市_右京区_嵯峨天竜寺車道町")))
+
+# ::id 5_wikipedia_KYOTO_RLW_00002,5;NJ
+# ::snt 鉄道 の 電化 ・ 複線化 の ため 、 山陰本線 （ 嵯峨野線 ） の 嵯峨 （ 現在 の 嵯峨嵐山 ） ～ 馬堀 間 が 、 1989 年 3 月 に 新線 に 切替え られ た が 、 景勝地 として 名高い 保津峡 に 沿っ て 走る この 旧線 を 観光 鉄道 として 活用 する こと に なり 、 1991 年 から トロッコ列車 の 運行 を 開始 し て いる 。
+( CONJ-41 / AND
+      :op1 ( CONJ-29 / CONJ_te
+             :op1 ( EVENT-20 / 沿っ_て
+                    :ARG0 ( ENTITY-16 / 旧線)
+                    :に ( ENTITY-保津峡 / ENTITY
+                           :name ( n-34 / name
+                                  :op1 "保津峡")
+                           :ATTRIBUTE ( ATTRIB-18 / 名高い
+                                  :として ( ENTITY-19 / 景勝地))))
+             :op2 ( EVENT-21 / 走る
+                    :ARG0 ENTITY-16))
+      :op2 ( CONJ-31 / CONJ_が
+             :op1 ( EVENT-13 / 切替え_た
+                    :ARG1 ( ENTITY-7 / 間
+                           :EQUALS ( GROUP-9 / AND
+                                  :op1 ( GROUP-9 / AND
+                                         :op3 ( ENTITY-嵯峨 / ENTITY
+                                                :name ( n-35 / name
+                                                       :op1 "嵯峨")
+                                                :NAMELY ( ENTITY-嵯峨嵐山 / ENTITY
+                                                       :name ( n-37 / name
+                                                              :op1 "嵯峨嵐山")))
+                                         :op4 ENTITY-嵯峨
+                                         :op1 ( ENTITY-10 / 現在)
+                                         :op2 ( ENTITY-嵯峨嵐山 / ENTITY
+                                                :の ENTITY-10))
+                                  :op2 ( ENTITY-馬堀 / ENTITY
+                                         :name ( n-38 / name
+                                                :op1 "馬堀"))
+                                  :の ( ENTITY-山陰本線 / ENTITY
+                                         :name ( n-36 / name
+                                                :op1 "山陰本線")
+                                         :NAMELY ( ENTITY-8 / 嵯峨野線))))
+                    :に ( ENTITY-12 / 新線)
+                    :に ( ENTITY-11 / CD_1989_年_3_月)
+                    :ADV ( ENTITY-1 / ため
+                           :の ( ENTITY-2 / AND
+                                  :op1 ( ENTITY-5 / 電化)
+                                  :op2 ENTITY-39
+                                  :MOD ( mod-32 / AND
+                                         :op1 ( ENTITY-6 / 複線化)
+                                         :op2 ENTITY-40)
+                                  :の ( ENTITY-3 / 鉄道)))
+                    :MOD ( mod-33 / past))
+             :op2 ( EVENT-28 / 開始する.0_て_いる
+                    :ARG0 ( ENTITY-14 / ENTITY
+                           :namely ( PICK-30 / or
+                                  :op1 ENTITY-山陰本線
+                                  :op2 ENTITY-馬堀
+                                  :op3 ENTITY-嵯峨
+                                  :op4 ENTITY-嵯峨嵐山
+                                  :op5 ENTITY-1
+                                  :op6 ENTITY-7
+                                  :op7 ENTITY-11
+                                  :op8 ENTITY-12
+                                  :op9 ENTITY-8
+                                  :op10 ENTITY-2
+                                  :op11 ENTITY-3)
+                           :ARG0-of ( EVENT-24 / なり
+                                  :ARG1 ( SITUATION-15 / こと
+                                         :THAT ( EVENT-23 / 活用する.0
+                                                :ARG0 ENTITY-14
+                                                :ARG1 ENTITY-16
+                                                :として ( ENTITY-22 / 観光_鉄道)))))
+                    :ARG1 ( ENTITY-26 / 運行
+                           :の ( ENTITY-27 / トロッコ列車))
+                    :から ( ENTITY-25 / CD_1991_年))))
+
+# ::id 6_wikipedia_KYOTO_RLW_00002,6;NJ
+# ::snt けいてつ協會 『 しられざる鉄道 』 ジェイティービー 、 1997 年 によると 日本 初 の 純粋 な 観光 専用 鉄道 と さ れる 。
+( EVENT-6 / さ
+      :ARG1 ( ENTITY-1 / pro
+             :pick0)
+      :ARG2 ( ENTITY-3 / 観光_専用_鉄道
+             :ATTRIBUTE ( ATTRIB-5 / 純粋_な)
+             :の ( ENTITY-4 / 日本_初))
+      :によると ( ENTITY-しられざる鉄道 / ENTITY
+             :name ( n-7 / name
+                    :op1 "しられざる鉄道")
+             :NAMELY ( ENTITY-けいてつ協會_ジェイティービー / ENTITY
+                    :name ( n-8 / name
+                           :op1 "けいてつ協會_ジェイティービー"))
+             :NAMELY ( ENTITY-2 / CD_1997_年)))
+
+# ::id 7_wikipedia_KYOTO_RLW_00002,7;NJ
+# ::snt この ほか 、 トロッコ列車 の 京都側 の 始発駅 で ある トロッコ嵯峨駅 の 駅前 に は 、 19 世紀 の 科学 技術 や 芸術 を 展示 し て いる 「 19thCENTURYHALL 」 （ 19世紀ホール ） が あり 、 これ の 運営 も 行っ て いる 。
+( CONJ-28 / AND
+      :op1 ( EVENT-7 / で_ある
+             :ARG0 ( ENTITY-トロッコ嵯峨駅 / ENTITY
+                    :name ( n-22 / name
+                           :op1 "トロッコ嵯峨駅"))
+             :ARG1 ( ENTITY-5 / 始発駅
+                    :の ( ENTITY-京都側 / ENTITY
+                           :name ( n-23 / name
+                                  :op1 "京都側"))
+                    :の ( ENTITY-6 / トロッコ列車)))
+      :op2 ( EVENT-14 / 展示する.0_て_いる
+             :ARG0 ( ENTITY-19thCENTURYHALL / ENTITY
+                    :name ( n-21 / name
+                           :op1 "19thCENTURYHALL")
+                    :NAMELY ( ENTITY-19世紀ホール / ENTITY
+                           :name ( n-24 / name
+                                  :op1 "19世紀ホール")))
+             :ARG1 ( ENTITY-9 / CONJ_や
+                    :op1 ( GROUP-11 / AND
+                           :op1 ( ENTITY-12 / 科学_技術)
+                           :op2 ENTITY-26)
+                    :op2 ( GROUP-25 / AND
+                           :op1 ( ENTITY-13 / 芸術)
+                           :op2 ENTITY-27)
+                    :の ( ENTITY-10 / CD_19_世紀)))
+      :op3 ( EVENT-15 / あり
+             :ARG0 ENTITY-19thCENTURYHALL
+             :に ( ENTITY-3 / 駅前
+                    :の ENTITY-トロッコ嵯峨駅))
+      :op4 ( EVENT-18 / 行っ_て_いる
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-16 / 運営
+                    :の ( PICK-20 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-2
+                           :op3 ENTITY-3
+                           :op4 ENTITY-19thCENTURYHALL
+                           :op5 ENTITY-19世紀ホール
+                           :op6 ENTITY-トロッコ嵯峨駅
+                           :op7 ENTITY-5
+                           :op8 ENTITY-6
+                           :op9 ENTITY-京都側
+                           :op10 ENTITY-9
+                           :op11 ENTITY-10))
+             :ADV ( ENTITY-2 / ほか)))
+
+# ::id 8_wikipedia_KYOTO_RLW_00002,8;NJ
+# ::snt 19世紀ホール に は 、 国鉄 D51形 蒸気機関車 など の 蒸気機関車 など も 展示 さ れ て いる 。
+( EVENT-5 / 展示する.0_て_いる
+      :ARG1 ( ENTITY-1 / ENTITY
+             :など ( ENTITY-2 / 蒸気機関車
+                    :の ( ENTITY-3 / ENTITY
+                           :など ( ENTITY-4 / 国鉄_D51形_蒸気機関車))))
+      :に ( ENTITY-19世紀ホール / ENTITY
+             :name ( n-6 / name
+                    :op1 "19世紀ホール")))
+
+# ::id 9_wikipedia_KYOTO_RLW_00002,9;NJ
+# ::snt 歴史
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 歴史))
+
+# ::id 10_wikipedia_KYOTO_RLW_00002,10;NJ
+# ::snt 1990 年 （ 平成 2 年 ） 11 月 4 日 設立 。
+( EVENT-3 / 設立
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :TMP ( TIME-2 / CD_1990_年_ （ 平成_2_年_ ） 11_月_4_日))
+
+# ::id 11_wikipedia_KYOTO_RLW_00002,11;NJ
+# ::snt 1991 年 （ 平成 3 年 ） 4 月 27 日 嵯峨野観光線 トロッコ嵯峨駅 ～ トロッコ亀岡駅 間 が 開業 。
+( EVENT-4 / 開業
+      :ARG0 ( ENTITY-2 / 嵯峨野観光線_間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-トロッコ嵯峨駅 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "トロッコ嵯峨駅"))
+                    :op2 ( ENTITY-トロッコ亀岡駅 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "トロッコ亀岡駅"))))
+      :TMP ( TIME-1 / CD_1991_年_ （ 平成_3_年_ ） 4_月_27_日))
+
+# ::id 12_wikipedia_KYOTO_RLW_00002,12;NJ
+# ::snt 2002 年 （ 平成 14 年 ） 11 月 イメージキャラクター 「 トロッキー 」 登場 。
+( EVENT-4 / 登場
+      :ARG0 ( ENTITY-3 / トロッキー
+             :NAMELY ( ENTITY-2 / イメージキャラクター))
+      :TMP ( TIME-1 / CD_2002_年_ （ 平成_14_年_ ） 11_月))
+
+# ::id 13_wikipedia_KYOTO_RLW_00002,13;NJ
+# ::snt 2003 年 （ 平成 15 年 ） 4 月 トロッコ嵯峨駅 前 に 19世紀ホール が オープン 。
+( EVENT-3 / オープン
+      :ARG0 ( ENTITY-19世紀ホール / ENTITY
+             :name ( n-4 / name
+                    :op1 "19世紀ホール"))
+      :に ( ENTITY-2 / トロッコ嵯峨駅_前)
+      :TMP ( TIME-1 / CD_2003_年_ （ 平成_15_年_ ） 4_月))
+
+# ::id 14_wikipedia_KYOTO_RLW_00002,14;NJ
+# ::snt 路線
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 路線))
+
+# ::id 15_wikipedia_KYOTO_RLW_00002,15;NJ
+# ::snt 運行 形態 など は 下記 を 参照 。
+( EVENT-4 / 参照
+      :ARG1 ( ENTITY-3 / 下記)
+      :TPC ( ENTITY-1 / ENTITY
+             :など ( ENTITY-2 / 運行_形態))
+      :domain-of ( IMPERATIVE-5 / IMPERATIVE))
+
+# ::id 16_wikipedia_KYOTO_RLW_00002,17;NJ
+# ::snt 車両
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 車両))
+
+# ::id 17_wikipedia_KYOTO_RLW_00002,18;NJ
+# ::snt 全て JR に 在籍 し て い た 車両 を 改造 し て 使用 し て いる 。
+( CONJ-7 / CONJ_te
+      :op1 ( EVENT-5 / 改造する.0_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 車両
+                    :ARG0-of ( EVENT-4 / 在籍する.0_て_い_た
+                           :に ( ENTITY-JR / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "JR"))
+                           :MOD ( mod-8 / past))))
+      :op2 ( EVENT-6 / 使用する.0_て_いる
+             :ARG0 ENTITY-1
+             :ARG1 ENTITY-2))
+
+# ::id 18_wikipedia_KYOTO_RLW_00002,19;NJ
+# ::snt 機関車 は 国鉄 DE10形 ディーゼル機関車 1104 号機 を 専用機 として 塗色変更 、 予備 として JR に 在籍 し て いる 同 1156 号機 を 塗色変更 の 上 使用 し て いる 。
+( EVENT-13 / 使用する.0_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / 塗色変更
+                    :ARG1 ( ENTITY-3 / CD_1104_号機
+                           :MOD ( mod-15 / 国鉄_DE10形_ディーゼル機関車))
+                    :として ( ENTITY-4 / 専用機)))
+      :上 ( EVENT-12 / 塗色変更_の
+             :ARG0 ( PICK-14 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-2
+                    :op3 ENTITY-6
+                    :op4 ENTITY-3
+                    :op5 ENTITY-4)
+             :ARG1 ( ENTITY-9 / 同
+                    :MOD ( mod-16 / CD_1156_号機
+                           :ARG0-of ( EVENT-11 / 在籍する.0_て_いる
+                                  :に ( ENTITY-JR / ENTITY
+                                         :name ( n-17 / name
+                                                :op1 "JR"))))))
+      :として ( ENTITY-6 / 予備)
+      :TPC ( ENTITY-2 / 機関車))
+
+# ::id 19_wikipedia_KYOTO_RLW_00002,20;NJ
+# ::snt 客車 は 、 国鉄 トキ 25000形 貨車 から の 改造 で ある 。
+( EVENT-5 / で_ある
+      :ARG0 ( ENTITY-1 / 客車)
+      :ARG1 ( ENTITY-2 / 改造
+             :から_の ( ENTITY-4 / 貨車
+                    :NAMELY ( ENTITY-3 / 国鉄_トキ_25000形))))

@@ -1,0 +1,1164 @@
+# ::id 1_lpp_1943.1;NE
+# ::snt Chapter 1 .
+∃ EVENT[2] ENTITY[1] ((CD_1(ENTITY[1]), Chapter(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_lpp_1943.2;NE
+# ::snt Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+∃ SITUATION[20] ATTRIB[16] ATTRIB[9] NARRATOR[7] ATTRIB[3] NARRATOR[2] ATTRIB[12] EVENT[5] EVENT[18] EVENT[14] EVENT[19] GROUP[4] ENTITY[17] GROUP[15] ENTITY[10] ARTWORK[8] ENTITY[11] (
+ primeval(ATTRIB[12]) ∧
+  is_forest_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+   NARRATOR[2] = i ∧
+    (CD_six(GROUP[4]), years(GROUP[4])) ∧
+     is_old_MSR(ATTRIB[3], GROUP[4]) ∧
+      NARRATOR[7] = i ∧
+       magnificent(ATTRIB[9]) ∧
+        true(ATTRIB[16]) ∧
+         Nature(ENTITY[17]) ∧
+          is_Stories_from(GROUP[15], ENTITY[17]) ∧ is_Stories_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧
+           called(EVENT[14], _, ENTITY[10], xxx(EVENT[18], ENTITY[10], GROUP[15])) ∧
+            is_book_about(ENTITY[10], ENTITY[11]) ∧
+            is_picture_in(ARTWORK[8], ENTITY[10]) ∧ is_picture_ATTRIBUTE(ARTWORK[8], ATTRIB[9]) ∧
+             is_TMP(EVENT[5], SITUATION[20]) ∧
+              past(EVENT[5]) ∧
+               copula(EVENT[5], NARRATOR[2], ATTRIB[3]) ∧ TMP_once(SITUATION[20]) ∧
+                past(EVENT[19]) ∧ is_FACT_THAT(SITUATION[20], saw(EVENT[19], NARRATOR[7], ARTWORK[8])))
+
+# ::id 3_lpp_1943.3;NE
+# ::snt It was a picture of a boa constrictor in the act of swallowing an animal .
+∃ ARTWORK[1] SITUATION[5] EVENT[8] ENTITY[3] ENTITY[2] EVENT[7] ENTITY[6] ENTITY[4] (
+ animal(ENTITY[6]) ∧
+  is_FACT_THAT(SITUATION[5], swallowing(EVENT[7], _, ENTITY[6])) ∧
+   is_act_of(ENTITY[4], SITUATION[5]) ∧
+    ARTWORK[1] = it ∧
+     is_boa_constrictor_in(ENTITY[3], ENTITY[4]) ∧
+      is_picture_of(ENTITY[2], ENTITY[3]) ∧ past(EVENT[8]) ∧ copula(EVENT[8], ARTWORK[1], ENTITY[2]))
+
+# ::id 4_lpp_1943.4;NE
+# ::snt Here is a copy of the drawing .
+∃ EVENT[3] ENTITY[1] ENTITY[2] (drawing(ENTITY[2]) ∧ is_copy_of(ENTITY[1], ENTITY[2]) ∧ LOC_here(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1]))
+
+# ::id 5_lpp_1943.5;NE
+# ::snt In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+∃ ATTRIB[7] PREY[10] BOAS[9] BOAS[6] REF1[2] EVENT[11] EVENT[12] EVENT[8] EVENT[3] PREY[5] BOAS[4] ENTITY[1] (
+ book(ENTITY[1]) ∧
+  REF1[2] = it ∧
+   Boa_constrictors(BOAS[4]) ∧
+    BOAS[6] = their{BOAS[4]} ∧
+     is_prey_POS(PREY[5], BOAS[6]) ∧
+      BOAS[9] = xxx{BOAS[4]} ∧
+       PREY[10] = it{PREY[5]} ∧
+        whole(ATTRIB[7]) ∧
+         past(EVENT[3]) ∧
+          said(EVENT[3], REF1[2],
+           CONJ_and(CRD_without(chewing(EVENT[11], BOAS[9], PREY[10]), swallow(EVENT[12], BOAS[4], PREY[5])),
+            xxx(EVENT[8], PREY[5], ATTRIB[7]))) ∧ In(EVENT[3]) = ENTITY[1])
+
+# ::id 6_lpp_1943.6;NE
+# ::snt After that they are not able to move , and they sleep through the six months that they need for digestion . "
+∃ BOAS[6] BOAS[2] BOAS[9] EVENT[12] EVENT[11] ENTITY[1] ENTITY[10] GROUP[7] (
+ BOAS[9] = they{BOAS[6]} ∧
+  digestion(ENTITY[10]) ∧
+   (CD_six(GROUP[7]),
+    need(EVENT[11], BOAS[9], GROUP[7]) ∧ for(EVENT[11]) = ENTITY[10] ∧ months(GROUP[7])) ∧
+    BOAS[2] = they ∧
+     BOAS[6] = they ∧
+      CONJ_and(¬ ∃ ATTRIB[3] EVENT[4] EVENT[5] (
+                 is_able_to(ATTRIB[3], move(EVENT[4])) ∧
+                  copula(EVENT[5], BOAS[2], ATTRIB[3]) ∧ After(EVENT[5]) = ENTITY[1]),
+       sleep(EVENT[12], BOAS[6]) ∧ through(EVENT[12]) = GROUP[7]))
+
+# ::id 7_lpp_1943.7;NE
+# ::snt I pondered deeply , then , over the adventures of the jungle .
+∃ NARRATOR[1] EVENT[4] ENTITY[3] GROUP[2] (
+ jungle(ENTITY[3]) ∧
+  is_adventures_of(GROUP[2], ENTITY[3]) ∧
+   NARRATOR[1] = i ∧
+    ADV_deeply(EVENT[4]) ∧
+     TMP_then(EVENT[4]) ∧ past(EVENT[4]) ∧ pondered(EVENT[4], NARRATOR[1]) ∧ over(EVENT[4]) = GROUP[2])
+
+# ::id 8_lpp_1943.8;NE
+# ::snt And after some work with a colored pencil I succeeded in making my first drawing .
+SOME ATTRIB[3] ENTITY[2] ENTITY[1] ((colored(ATTRIB[3]) ∧ is_pencil_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_work_with(ENTITY[1], ENTITY[2])),
+ ∃ ATTRIB[8] NARRATOR[7] SITUATION[5] NARRATOR[4] EVENT[9] EVENT[10] ENTITY[6] (
+  NARRATOR[4] = i ∧
+   NARRATOR[7] = my{NARRATOR[4]} ∧
+    first(ATTRIB[8]) ∧
+     is_drawing_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_drawing_POS(ENTITY[6], NARRATOR[7]) ∧
+      is_FACT_THAT(SITUATION[5], making(EVENT[9], NARRATOR[4], ENTITY[6])) ∧
+       past(EVENT[10]) ∧
+        succeeded(EVENT[10], NARRATOR[4]) ∧ in(EVENT[10]) = SITUATION[5] ∧ after(EVENT[10]) = ENTITY[1]))
+
+# ::id 9_lpp_1943.9;NE
+# ::snt My Drawing Number One .
+∃ NARRATOR[2] EVENT[3] ARTWORK[1] (NARRATOR[2] = my ∧ is_Drawing_Number_One_POS(ARTWORK[1], NARRATOR[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ARTWORK[1])
+
+# ::id 10_lpp_1943.10;NE
+# ::snt It looked like this : I showed my masterpiece to the grown-ups , and asked them whether the drawing frightened them .
+∃ PERSONS[10] NARRATOR[7] NARRATOR[5] ATTRIB[2] ARTWORK[1] EVENT[4] EVENT[9] EVENT[11] ARTWORK[6] ENTITY[3] PERSONS[8] ARTWORK[12] (
+ grown-ups(PERSONS[8]) ∧
+  drawing(ARTWORK[12]) ∧
+   ARTWORK[1] = it ∧
+    is_like_comp(ATTRIB[2], ENTITY[3]) ∧
+     NARRATOR[5] = i ∧
+      NARRATOR[7] = my{NARRATOR[5]} ∧
+       is_masterpiece_POS(ARTWORK[6], NARRATOR[7]) ∧
+        PERSONS[10] = them{PERSONS[8]} ∧
+         past(EVENT[4]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[11]) ∧
+            looked(EVENT[4], ARTWORK[1], ATTRIB[2]) ∧
+             CONJ_and(showed(EVENT[9], NARRATOR[5], ARTWORK[6]) ∧ to(EVENT[9]) = PERSONS[8],
+              asked(EVENT[11], NARRATOR[5],
+               QUEST(∃ PERSONS[13] EVENT[14] (
+                     PERSONS[13] = them{PERSONS[10], PERSONS[8]} ∧
+                      is_before(EVENT[14], EVENT[11]) ∧ frightened(EVENT[14], ARTWORK[12], PERSONS[13]))),
+               PERSONS[10])))
+
+# ::id 11_lpp_1943.11;NE
+# ::snt But they answered : " Frighten ?
+∃ PERSONS[1] EVENT[2] (PERSONS[1] = they ∧ past(EVENT[2]) ∧ answered(EVENT[2], PERSONS[1], QUEST(∃ EVENT[3] frighten(EVENT[3]))))
+
+# ::id 12_lpp_1943.12;NE
+# ::snt Why should any one be frightened by a hat ? "
+QUEST(∃ SITUATION[5] ? ENTITY[1] (
+      is_ADV(SITUATION[5], ENTITY[1]) ∧
+       is_FACT_THAT(SITUATION[5],
+        MD_should(ANY ENTITY[2] (one(ENTITY[2]), ∃ EVENT[4] ENTITY[3] (hat(ENTITY[3]) ∧ frightened(EVENT[4], ENTITY[3], ENTITY[2])))))))
+
+# ::id 13_lpp_1943.13;NE
+# ::snt My drawing was not a picture of a hat .
+∃ NARRATOR[2] ARTWORK[1] (
+ NARRATOR[2] = my ∧
+  is_drawing_POS(ARTWORK[1], NARRATOR[2]) ∧
+   ¬ ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+         hat(ENTITY[4]) ∧
+          is_picture_of(ENTITY[3], ENTITY[4]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], ARTWORK[1], ENTITY[3])))
+
+# ::id 14_lpp_1943.14;NE
+# ::snt It was a picture of a boa constrictor digesting an elephant .
+∃ ARTWORK[1] EVENT[6] EVENT[7] ENTITY[5] BOA[3] ENTITY[2] (
+ ARTWORK[1] = it ∧
+  elephant(ENTITY[5]) ∧
+   digesting(EVENT[6], BOA[3], ENTITY[5]) ∧ boa_constrictor(BOA[3]) ∧
+    is_picture_of(ENTITY[2], BOA[3]) ∧ past(EVENT[7]) ∧ copula(EVENT[7], ARTWORK[1], ENTITY[2]))
+
+# ::id 15_lpp_1943.15;NE
+# ::snt But since the grown-ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown-ups could see it clearly .
+∃ SITUATION[13] NARRATOR[10] NARRATOR[7] SITUATION[1] EVENT[18] GROUP[2] BOA[12] PERSONS[14] INSIDE[11] (
+ grown-ups(GROUP[2]) ∧
+  boa_constrictor(BOA[12]) ∧
+   is_inside_of(INSIDE[11], BOA[12]) ∧
+    grown-ups(PERSONS[14]) ∧
+     is_FACT_THAT(SITUATION[1],
+      ¬ ∃ ARTWORK[4] ATTRIB[3] EVENT[5] EVENT[6] (
+            ARTWORK[4] = it ∧
+             is_able_to(ATTRIB[3], understand(EVENT[5], _, ARTWORK[4])) ∧
+              past(EVENT[6]) ∧ copula(EVENT[6], GROUP[2], ATTRIB[3]))) ∧
+      NARRATOR[7] = i ∧
+       NARRATOR[10] = i ∧
+        is_FACT_THAT(SITUATION[13],
+         MD_could(∃ INSIDE[15] EVENT[16] (
+               INSIDE[15] = it{INSIDE[11]} ∧
+                ADV_clearly(EVENT[16]) ∧ see(EVENT[16], PERSONS[14], INSIDE[15])))) ∧
+         past(EVENT[18]) ∧
+          ANOTHER ARTWORK[8] (drawing(ARTWORK[8]),
+           ∃ EVENT[9] (
+            past(EVENT[9]) ∧
+             made(EVENT[9], NARRATOR[7], ARTWORK[8]) ∧ since(EVENT[9]) = SITUATION[1])) ∧
+           drew(EVENT[18], NARRATOR[10], INSIDE[11]) ∧ so(EVENT[18]) = SITUATION[13])
+
+# ::id 16_lpp_1943.16;NE
+# ::snt They always need to have things explained .
+∃ SITUATION[6] PERSONS[1] EVENT[5] EVENT[3] EVENT[2] GROUP[4] (
+ PERSONS[1] = they ∧
+  things(GROUP[4]) ∧
+   TMP_always(SITUATION[6]) ∧
+    is_FACT_THAT(SITUATION[6], need(EVENT[2], PERSONS[1], have(EVENT[3], PERSONS[1], explained(EVENT[5], _, GROUP[4])))))
+
+# ::id 17_lpp_1943.17;NE
+# ::snt My Drawing Number Two looked like this : The grown-ups' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+∃ NARRATOR[22] SITUATION[16] NARRATOR[14] NARRATOR[10] ATTRIB[3] NARRATOR[2] EVENT[5] EVENT[21] EVENT[11] EVENT[29] EVENT[9] ENTITY[1] GROUP[15] GROUP[13] ENTITY[12] GROUP[24] ENTITY[23] ENTITY[6] ENTITY[4] GROUP[7] ENTITY[18] ENTITY[19] TIME[8] (
+ grown-ups'(GROUP[7]) ∧
+  time(TIME[8]) ∧
+   inside(ENTITY[18]) ∧
+    outside(ENTITY[19]) ∧
+     NARRATOR[2] = my ∧
+      is_Drawing_Number_Two_POS(ENTITY[1], NARRATOR[2]) ∧
+       is_like_comp(ATTRIB[3], ENTITY[4]) ∧
+        is_response_POS(ENTITY[6], GROUP[7]) ∧
+         NARRATOR[10] = me ∧
+          side(ENTITY[12]) ∧
+           NARRATOR[14] = my{NARRATOR[10]} ∧
+            is_FACT_THAT(SITUATION[16],
+             QUEST(∃ ENTITY[20] GROUP[17] (
+                   CONJ_or(is_element_of(ENTITY[18], GROUP[17]), is_element_of(ENTITY[19], GROUP[17])) ∧
+                    xxx(ENTITY[20]) ∧ from(ENTITY[20]) = GROUP[17]))) ∧
+             is_boa_constrictors_ADV(GROUP[15], SITUATION[16]) ∧
+              is_drawings_of(GROUP[13], GROUP[15]) ∧ is_drawings_POS(GROUP[13], NARRATOR[14]) ∧
+               NARRATOR[22] = myself ∧
+                stead(ENTITY[23]) ∧
+                 ∃ ENTITY[25] (geography(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[24])) ∧
+                  ∃ ENTITY[26] (history(ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[24])) ∧
+                  ∃ ENTITY[27] (arithmetic(ENTITY[27]) ∧ is_element_of(ENTITY[27], GROUP[24])) ∧
+                  ∃ ENTITY[28] (grammar(ENTITY[28]) ∧ is_element_of(ENTITY[28], GROUP[24])) ∧
+                  past(EVENT[5]) ∧
+                   past(EVENT[9]) ∧
+                    looked(EVENT[5], ENTITY[1], ATTRIB[3]) ∧
+                     copula(EVENT[9], ENTITY[6],
+                      CONJ_and(advise(EVENT[11], ENTITY[6], NARRATOR[10],
+                            lay(EVENT[21], NARRATOR[10], GROUP[13]) ∧ a(EVENT[21]) = ENTITY[12]),
+                       devote(EVENT[29], ENTITY[6], NARRATOR[22]) ∧ to(EVENT[29]) = GROUP[24] ∧
+                        in(EVENT[29]) = ENTITY[23])) ∧ is_contained_in(TMP(EVENT[9]), TIME[8]))
+
+# ::id 18_lpp_1943.18;NE
+# ::snt That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+∃ NARRATOR[6] EVENT[13] EVENT[15] ENTITY[7] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ CD_six(ENTITY[5]) ∧
+  is_age_of(ENTITY[4], ENTITY[5]) ∧
+   NARRATOR[6] = i ∧
+    MD_might(∃ ATTRIB[10] EVENT[12] ENTITY[11] ENTITY[9] (
+          magnificent(ATTRIB[10]) ∧
+           is_career_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+            painter(ENTITY[11]) ∧
+             have_copula(EVENT[12], ENTITY[7], ENTITY[9]) ∧ as(EVENT[12]) = ENTITY[11])) ∧
+     gave_up(EVENT[13], NARRATOR[6], ENTITY[7]) ∧ at(EVENT[13]) = ENTITY[4] ∧
+      is_ADV(EVENT[13], ENTITY[2]) ∧ past(EVENT[13]) ∧ copula(EVENT[15], ENTITY[1], ENTITY[2]))
+
+# ::id 19_lpp_1943.19;NE
+# ::snt I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+∃ NARRATOR[1] NARRATOR[7] NARRATOR[5] EVENT[8] ENTITY[4] ENTITY[6] GROUP[3] ENTITY[2] (
+ NARRATOR[5] = my{NARRATOR[1]} ∧
+  is_Drawing_Number_One_POS(ENTITY[4], NARRATOR[5]) ∧
+   NARRATOR[7] = my{NARRATOR[1]} ∧
+    is_Drawing_Number_Two_POS(ENTITY[6], NARRATOR[7]) ∧
+     is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[6], GROUP[3]) ∧
+      is_failure_of(ENTITY[2], GROUP[3]) ∧
+       NARRATOR[1] = i ∧ past(EVENT[8]) ∧ had_disheartened(EVENT[8], ENTITY[2], NARRATOR[1]))
+
+# ::id 20_lpp_1943.20;NE
+# ::snt Grown-ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+∃ SITUATION[5] ATTRIB[12] PERSONS[9] SITUATION[6] EVENT[10] EVENT[13] PERSONS[1] GROUP[8] GROUP[7] (
+ Grown-ups(PERSONS[1]) ∧
+  children(GROUP[7]) ∧
+   things(GROUP[8]) ∧
+    PERSONS[9] = them{PERSONS[1]} ∧
+     is_FACT_THAT(SITUATION[6], be_explaining(EVENT[10], GROUP[7], GROUP[8], PERSONS[9])) ∧
+      tiresome(ATTRIB[12]) ∧
+       TMP_never(SITUATION[5]) ∧
+        CONJ_and(TMP_always(EVENT[10]), TMP_forever(EVENT[10])) ∧
+         CONJ_and(is_FACT_THAT(SITUATION[5],
+               ANY ENTITY[2] (thing(ENTITY[2]),
+                ∃ PERSONS[3] EVENT[4] (
+                 PERSONS[3] = themselves{PERSONS[1]} ∧
+                  understand(EVENT[4], PERSONS[1], ENTITY[2]) ∧ by(EVENT[4]) = PERSONS[3]))),
+          copula(EVENT[13], SITUATION[6], ATTRIB[12])))
+
+# ::id 21_lpp_1943.21;NE
+# ::snt So then I chose another profession , and learned to pilot airplanes .
+∃ SITUATION[7] SITUATION[8] NARRATOR[1] EVENT[6] EVENT[4] GROUP[5] (
+ NARRATOR[1] = i ∧
+  airplanes(GROUP[5]) ∧
+   ADV_so(SITUATION[8]) ∧
+    TMP_then(SITUATION[7]) ∧
+     past(EVENT[4]) ∧
+      is_FACT_THAT(SITUATION[8],
+       is_FACT_THAT(SITUATION[7],
+        CONJ_and(ANOTHER ENTITY[2] (profession(ENTITY[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ chose(EVENT[3], NARRATOR[1], ENTITY[2]))),
+         learned(EVENT[4], NARRATOR[1], pilot(EVENT[6], NARRATOR[1], GROUP[5]))))))
+
+# ::id 22_lpp_1943.22;NE
+# ::snt I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
+∃ ATTRIB[12] NARRATOR[10] ATTRIB[9] SITUATION[7] ATTRIB[3] NARRATOR[1] EVENT[11] EVENT[13] DEGREE[2] ENTITY[8] ENTITY[5] (
+ world(ENTITY[5]) ∧
+  NARRATOR[1] = i ∧
+   little(ATTRIB[3]) ∧
+    is_ATTRIBUTE(DEGREE[2], ATTRIB[3]) ∧
+     geography(ENTITY[8]) ∧
+      NARRATOR[10] = me ∧
+       is_very_useful_to(ATTRIB[9], NARRATOR[10]) ∧
+        is_FACT_THAT(SITUATION[7], has_copula(EVENT[11], ENTITY[8], ATTRIB[9])) ∧
+         true(ATTRIB[12]) ∧
+          CONJ_and(ALL GROUP[4] (is_parts_of(GROUP[4], ENTITY[5]),
+                ∃ EVENT[6] (
+                 have_flown(EVENT[6], NARRATOR[1]) ∧
+                  over(EVENT[6]) = GROUP[4] ∧ MSR(EVENT[6]) = DEGREE[2])),
+           copula(EVENT[13], SITUATION[7], ATTRIB[12])))
+
+# ::id 23_lpp_1943.23;NE
+# ::snt At a glance I can distinguish China from Arizona .
+∃ NARRATOR[2] ENTITY[1] (
+ glance(ENTITY[1]) ∧
+  NARRATOR[2] = i ∧
+   MD_can(∃ EVENT[3] (
+         distinguish(EVENT[3], NARRATOR[2], LOC[China]) ∧
+          from(EVENT[3]) = LOC[Arizona] ∧ At(EVENT[3]) = ENTITY[1])))
+
+# ::id 24_lpp_1943.24;NE
+# ::snt If one gets lost in the night , such knowledge is valuable .
+∃ ATTRIB[8] ATTRIB[7] ATTRIB[3] SITUATION[1] EVENT[5] EVENT[9] ENTITY[2] ENTITY[6] ENTITY[4] (
+ night(ENTITY[4]) ∧
+  CD_one(ENTITY[2]) ∧
+   is_lost_in(ATTRIB[3], ENTITY[4]) ∧
+    is_FACT_THAT(SITUATION[1], gets(EVENT[5], ENTITY[2], ATTRIB[3])) ∧
+     such(ATTRIB[7]) ∧
+      is_knowledge_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+       valuable(ATTRIB[8]) ∧ copula(EVENT[9], ENTITY[6], ATTRIB[8]) ∧ If(EVENT[9]) = SITUATION[1])
+
+# ::id 25_lpp_1943.25;NE
+# ::snt In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
+∃ NARRATOR[3] ENTITY[2] ENTITY[1] (
+ life(ENTITY[2]) ∧
+  is_course_of(ENTITY[1], ENTITY[2]) ∧
+   NARRATOR[3] = i ∧
+    A_GREAT_MANY GROUP[4] (
+     A_GREAT_MANY EVENT[9] ENTITY[8] GROUP[7] GROUP[5] (
+      (consequence(ENTITY[8]) ∧ is_matters_of(GROUP[7], ENTITY[8]) ∧
+       have_concerned(EVENT[9], _, GROUP[5]) ∧ with(EVENT[9]) = GROUP[7] ∧ people(GROUP[5])),
+      is_encounters_with(GROUP[4], GROUP[5])),
+     ∃ EVENT[10] (have_had(EVENT[10], NARRATOR[3], GROUP[4]) ∧ In(EVENT[10]) = ENTITY[1])))
+
+# ::id 26_lpp_1943.26;NE
+# ::snt I have lived a great deal among grown-ups .
+∃ ATTRIB[3] NARRATOR[1] EVENT[5] PERSONS[4] DEGREE[2] (
+ NARRATOR[1] = i ∧
+  great(ATTRIB[3]) ∧
+   is_deal_ATTRIBUTE(DEGREE[2], ATTRIB[3]) ∧
+    grown-ups(PERSONS[4]) ∧
+     have_lived(EVENT[5], NARRATOR[1]) ∧ among(EVENT[5]) = PERSONS[4] ∧ MSR(EVENT[5]) = DEGREE[2])
+
+# ::id 27_lpp_1943.27;NE
+# ::snt I have seen them intimately , close at hand .
+∃ ATTRIB[3] PERSONS[2] NARRATOR[1] EVENT[5] ENTITY[4] (
+ NARRATOR[1] = i ∧
+  PERSONS[2] = them ∧
+   hand(ENTITY[4]) ∧
+    is_close_at(ATTRIB[3], ENTITY[4]) ∧
+     ADV_intimately(EVENT[5]) ∧ have_seen(EVENT[5], NARRATOR[1], PERSONS[2]) ∧ LOC(EVENT[5]) = ATTRIB[3])
+
+# ::id 28_lpp_1943.28;NE
+# ::snt And that has n't much improved my opinion of them .
+∃ ENTITY[1] ¬ MUCH DEGREE[2] ∃ PERSONS[5] NARRATOR[4] EVENT[6] ENTITY[3] (
+      NARRATOR[4] = my ∧
+       PERSONS[5] = them ∧
+        is_opinion_of(ENTITY[3], PERSONS[5]) ∧ is_opinion_POS(ENTITY[3], NARRATOR[4]) ∧
+         has_improved(EVENT[6], ENTITY[1], ENTITY[3]) ∧ MSR(EVENT[6]) = DEGREE[2])
+
+# ::id 29_lpp_1943.29;NE
+# ::snt Whenever I met one of them who seemed to me at all clear-sighted , I tried the experiment of showing him my Drawing Number One which , I have always kept .
+∃ NARRATOR[10] NARRATOR[6] PERSONS[4] NARRATOR[2] SITUATION[1] NARRATOR[17] NARRATOR[15] PERSON[13] SITUATION[12] EVENT[9] EVENT[21] PERSON[3] EVENT[18] EVENT[20] ARTWORK[14] ENTITY[11] (
+ PERSON[13] = him{PERSON[3]} ∧
+  NARRATOR[15] = my{NARRATOR[10]} ∧
+   NARRATOR[17] = i{NARRATOR[15], NARRATOR[10]} ∧
+    have_kept(EVENT[18], NARRATOR[17], ARTWORK[14]) ∧ is_Drawing_Number_One_POS(ARTWORK[14], NARRATOR[15]) ∧
+     is_FACT_THAT(SITUATION[12], showing(EVENT[20], _, ARTWORK[14], PERSON[13])) ∧
+      is_experiment_of(ENTITY[11], SITUATION[12]) ∧
+       TMP_always(EVENT[18]) ∧
+        NARRATOR[2] = i ∧
+         PERSONS[4] = them ∧
+          NARRATOR[6] = me{NARRATOR[2]} ∧
+           (CD_one(PERSON[3]),
+            ALL ENTITY[7] (clear-sighted(ENTITY[7]),
+             ∃ EVENT[8] (
+              past(EVENT[8]) ∧
+               seemed(EVENT[8], PERSON[3]) ∧ at(EVENT[8]) = ENTITY[7] ∧
+                to(EVENT[8]) = NARRATOR[6])) ∧ is_element_of(PERSON[3], PERSONS[4])) ∧
+            is_FACT_THAT(SITUATION[1], met(EVENT[9], NARRATOR[2], PERSON[3])) ∧
+             NARRATOR[10] = i ∧
+              past(EVENT[9]) ∧
+               past(EVENT[21]) ∧ tried(EVENT[21], NARRATOR[10], ENTITY[11]) ∧ Whenever(EVENT[21]) = SITUATION[1])
+
+# ::id 30_lpp_1943.30;NE
+# ::snt I would try to find out , so , if this was a person of true understanding .
+∃ NARRATOR[1] ENTITY[4] (
+ NARRATOR[1] = i ∧
+  MD_would(∃ EVENT[3] EVENT[2] (
+        ADV_so(EVENT[3]) ∧
+         try(EVENT[2], NARRATOR[1],
+          find_out(EVENT[3], NARRATOR[1],
+           QUEST(∃ ATTRIB[7] EVENT[8] ENTITY[6] ENTITY[5] (
+                 true(ATTRIB[7]) ∧
+                  is_understanding_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+                   is_person_of(ENTITY[5], ENTITY[6]) ∧
+                    is_before(EVENT[8], EVENT[3]) ∧ copula(EVENT[8], ENTITY[4], ENTITY[5]))))))))
+
+# ::id 31_lpp_1943.31;NE
+# ::snt But , whoever it was , he , or she , would always say : " That is a hat . "
+∃ GROUP[4] ENTITY[1] EVENT[3] ENTITY[8] (
+ past(EVENT[3]) ∧
+  copula(EVENT[3], ENTITY[1]) ∧
+   CONJ_or(∃ PERSON[5] (PERSON[5] = he ∧ is_element_of(PERSON[5], GROUP[4])), ∃ PERSON[6] (PERSON[6] = she ∧ is_element_of(PERSON[6], GROUP[4]))) ∧
+    MD_would(∃ SITUATION[11] ENTITY[9] EVENT[10] EVENT[7] (
+          TMP_always(SITUATION[11]) ∧
+           hat(ENTITY[9]) ∧
+            is_FACT_THAT(SITUATION[11],
+             say(EVENT[7], GROUP[4], copula(EVENT[10], ENTITY[8], ENTITY[9])) ∧
+              TPC(EVENT[7]) = ENTITY[1]))))
+
+# ::id 32_lpp_1943.32;NE
+# ::snt Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
+∃ SITUATION[10] NARRATOR[1] PERSON[2] (
+ person(PERSON[2]) ∧
+  NARRATOR[1] = i ∧
+   TMP_then(SITUATION[10]) ∧
+    is_FACT_THAT(SITUATION[10],
+     MD_would(∃ EVENT[8] GROUP[3] (
+           CONJ_or(∃ GROUP[4] (boa_constrictors(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])),
+            ∃ ATTRIB[6] GROUP[5] (primeval(ATTRIB[6]) ∧ is_forests_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])),
+            ∃ GROUP[7] (stars(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3]))) ∧
+            TMP_never(EVENT[8]) ∧
+             talk(EVENT[8], NARRATOR[1]) ∧ about(EVENT[8]) = GROUP[3] ∧
+              to(EVENT[8]) = PERSON[2]))))
+
+# ::id 33_lpp_1943.33;NE
+# ::snt I would bring myself down to his level .
+∃ NARRATOR[1] (
+ NARRATOR[1] = i ∧
+  MD_would(∃ PERSON[4] NARRATOR[2] EVENT[5] ENTITY[3] (
+        NARRATOR[2] = myself{NARRATOR[1]} ∧
+         PERSON[4] = his ∧
+          is_level_POS(ENTITY[3], PERSON[4]) ∧
+           bring_down(EVENT[5], NARRATOR[1], NARRATOR[2]) ∧ to(EVENT[5]) = ENTITY[3])))
+
+# ::id 34_lpp_1943.34;NE
+# ::snt I would talk to him about bridge , and golf , and politics , and neckties .
+∃ NARRATOR[1] (
+ NARRATOR[1] = i ∧
+  MD_would(∃ PERSON[2] EVENT[8] GROUP[3] (
+        PERSON[2] = him ∧
+         ∃ ENTITY[4] (bridge(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+          ∃ ENTITY[5] (golf(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+          ∃ GROUP[6] (politics(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+          ∃ GROUP[7] (neckties(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3])) ∧
+          talk(EVENT[8], NARRATOR[1]) ∧ about(EVENT[8]) = GROUP[3] ∧ to(EVENT[8]) = PERSON[2])))
+
+# ::id 35_lpp_1943.35;NE
+# ::snt And the grown-up would be greatly pleased to have met such a sensible man .
+∃ ENTITY[1] (
+ grown-up(ENTITY[1]) ∧
+  MD_would(∃ ATTRIB[5] ATTRIB[4] ATTRIB[2] EVENT[6] EVENT[7] ENTITY[3] (
+        such(ATTRIB[4]) ∧
+         sensible(ATTRIB[5]) ∧
+          is_man_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_man_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+           is_greatly_pleased_to(ATTRIB[2], have_met(EVENT[6], _, ENTITY[3])) ∧ copula(EVENT[7], ENTITY[1], ATTRIB[2]))))
+
+# ::id 36_lpp_1943.36;NE
+# ::snt Chapter 2 .
+∃ EVENT[2] ENTITY[1] ((CD_2(ENTITY[1]), Chapter(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 37_lpp_1943.37;NE
+# ::snt So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
+∃ ATTRIB[4] NARRATOR[3] NARRATOR[1] EVENT[5] ENTITY[2] ENTITY[16] (
+ is_Desert_of(ENTITY[16], ENTITY[Sahara]) ∧
+  NARRATOR[1] = i ∧
+   NARRATOR[3] = my{NARRATOR[1]} ∧
+    is_life_POS(ENTITY[2], NARRATOR[3]) ∧
+     alone(ATTRIB[4]) ∧
+      ADV_so(EVENT[5]) ∧
+       CONJ_and(ANY NARRATOR[8] ENTITY[6] (
+             (NARRATOR[8] = i{NARRATOR[1]} ∧
+              MD_could(∃ EVENT[9] (
+                    ADV_really(EVENT[9]) ∧
+                     talk(EVENT[9], NARRATOR[8]) ∧ to(EVENT[9]) = ENTITY[6])) ∧
+               one(ENTITY[6])),
+             ∃ NARRATOR[15] NARRATOR[12] SITUATION[11] EVENT[18] EVENT[20] GROUP[17] ENTITY[14] ENTITY[13] (
+              NARRATOR[12] = i{NARRATOR[1]} ∧
+               accident(ENTITY[13]) ∧
+                NARRATOR[15] = my{NARRATOR[12], NARRATOR[1]} ∧
+                 is_plane_POS(ENTITY[14], NARRATOR[15]) ∧
+                  (CD_six(GROUP[17]), years(GROUP[17])) ∧
+                   is_FACT_THAT(SITUATION[11],
+                    had(EVENT[18], NARRATOR[12], ENTITY[13]) ∧ in(EVENT[18]) = ENTITY[16] ∧
+                     with(EVENT[18]) = ENTITY[14]) ∧
+                    is_TMP_ago_MSR(EVENT[18], GROUP[17]) ∧
+                     past(EVENT[18]) ∧
+                      past(EVENT[20]) ∧
+                       lived(EVENT[20], NARRATOR[1], ENTITY[2]) ∧ until(EVENT[20]) = SITUATION[11] ∧
+                        without(EVENT[20]) = ENTITY[6])), xxx(EVENT[5], ENTITY[2], ATTRIB[4])))
+
+# ::id 38_lpp_1943.38;NE
+# ::snt Something was broken in my engine .
+SOME ENTITY[1] (thing(ENTITY[1]),
+ ∃ NARRATOR[3] EVENT[4] ENTITY[2] (
+  NARRATOR[3] = my ∧
+   is_engine_POS(ENTITY[2], NARRATOR[3]) ∧
+    past(EVENT[4]) ∧ broken(EVENT[4], _, ENTITY[1]) ∧ in(EVENT[4]) = ENTITY[2]))
+
+# ::id 39_lpp_1943.39;NE
+# ::snt And as I had with me neither a mechanic nor any passengers , I set myself to attempt the difficult repairs all alone .
+∃ ATTRIB[14] PRP[10] NARRATOR[9] NARRATOR[8] NARRATOR[3] NARRATOR[2] SITUATION[1] ATTRIB[12] EVENT[7] EVENT[13] EVENT[16] EVENT[15] GROUP[4] GROUP[11] (
+ difficult(ATTRIB[12]) ∧
+  is_repairs_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+   NARRATOR[2] = i ∧
+    NARRATOR[3] = me ∧
+     CONJ_neither_nor(∃ ENTITY[5] (mechanic(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+      ANY GROUP[6] (passengers(GROUP[6]), is_subset_of_or_equal_to(GROUP[6], GROUP[4]))) ∧
+      is_FACT_THAT(SITUATION[1], had(EVENT[7], NARRATOR[2], GROUP[4]) ∧ with(EVENT[7]) = NARRATOR[3]) ∧
+       NARRATOR[8] = i ∧
+        NARRATOR[9] = myself{NARRATOR[8]} ∧
+         is_FACT_THAT(PRP[10], attempt(EVENT[13], NARRATOR[9], GROUP[11])) ∧
+          all_alone(ATTRIB[14]) ∧
+           past(EVENT[7]) ∧
+            past(EVENT[16]) ∧
+             CONJ_and(set(EVENT[16], NARRATOR[8], NARRATOR[9]) ∧ PRP(EVENT[16]) = PRP[10] ∧
+                   as(EVENT[16]) = SITUATION[1], xxx(EVENT[15], NARRATOR[9], ATTRIB[14])))
+
+# ::id 40_lpp_1943.40;NE
+# ::snt It was a question of life or death for me : I had scarcely enough drinking water to last a week .
+∃ ATTRIB[12] ATTRIB[9] NARRATOR[7] NARRATOR[5] EVENT[6] EVENT[11] EVENT[13] GROUP[2] ENTITY[1] ENTITY[10] ENTITY[8] (
+ CONJ_or(∃ ENTITY[3] (life(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[4] (death(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+  is_question_of(ENTITY[1], GROUP[2]) ∧
+   NARRATOR[5] = me ∧
+    NARRATOR[7] = i ∧
+     week(ENTITY[10]) ∧
+      is_scarcely_enough_to(ATTRIB[9], last(EVENT[11], _, ENTITY[10])) ∧
+       drinking(ATTRIB[12]) ∧
+        is_water_ATTRIBUTE(ENTITY[8], ATTRIB[12]) ∧ is_water_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[13]) ∧
+           copula(EVENT[6], ENTITY[1]) ∧ for(EVENT[6]) = NARRATOR[5] ∧
+            had(EVENT[13], NARRATOR[7], ENTITY[8]))
+
+# ::id 41_lpp_1943.41;NE
+# ::snt The first night , then , I went to sleep on the sand , a thousand miles from any human habitation .
+∃ NARRATOR[3] ATTRIB[2] EVENT[9] GROUP[6] ENTITY[4] ENTITY[5] TIME[1] (
+ first(ATTRIB[2]) ∧
+  is_night_ATTRIBUTE(TIME[1], ATTRIB[2]) ∧
+   sand(ENTITY[5]) ∧
+    NARRATOR[3] = i ∧
+     sleep(ENTITY[4]) ∧
+      (CD_thousand(GROUP[6]),
+       ANY ATTRIB[8] ENTITY[7] ((human(ATTRIB[8]) ∧ is_habitation_ATTRIBUTE(ENTITY[7], ATTRIB[8])), is_miles_from(GROUP[6], ENTITY[7]))) ∧
+       ADV_then(EVENT[9]) ∧
+        past(EVENT[9]) ∧
+         went(EVENT[9], NARRATOR[3]) ∧ LOC(EVENT[9]) = GROUP[6] ∧ on(EVENT[9]) = ENTITY[5] ∧
+          to(EVENT[9]) = ENTITY[4] ∧ is_contained_in(TMP(EVENT[9]), TIME[1]))
+
+# ::id 42_lpp_1943.42;NE
+# ::snt I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
+∃ ATTRIB[4] ATTRIB[2] NARRATOR[1] EVENT[8] ENTITY[5] ENTITY[3] ENTITY[7] ENTITY[6] (
+ ocean(ENTITY[7]) ∧
+  is_middle_of(ENTITY[6], ENTITY[7]) ∧
+   NARRATOR[1] = i ∧
+    shipwrecked(ATTRIB[4]) ∧
+     is_raft_in(ENTITY[5], ENTITY[6]) ∧
+      is_sailor_on(ENTITY[3], ENTITY[5]) ∧ is_sailor_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_more_isolated_than(ATTRIB[2], ENTITY[3]) ∧
+        past(EVENT[8]) ∧ copula(EVENT[8], NARRATOR[1]) ∧ ATTRIBUTE(EVENT[8]) = ATTRIB[2])
+
+# ::id 43_lpp_1943.43;NE
+# ::snt Thus you can imagine my amazement , at sunrise , when I was awakened by an odd little voice .
+∃ SITUATION[14] READER[1] (
+ READER[1] = you ∧
+  ADV_thus(SITUATION[14]) ∧
+   is_FACT_THAT(SITUATION[14],
+    MD_can(∃ SITUATION[13] ATTRIB[9] ATTRIB[8] NARRATOR[6] NARRATOR[3] EVENT[10] EVENT[12] VOICE[7] ENTITY[4] ENTITY[2] (
+          NARRATOR[3] = my ∧
+           is_amazement_POS(ENTITY[2], NARRATOR[3]) ∧
+            sunrise(ENTITY[4]) ∧
+             NARRATOR[6] = i ∧
+              odd(ATTRIB[8]) ∧
+               little(ATTRIB[9]) ∧
+                is_voice_ATTRIBUTE(VOICE[7], ATTRIB[9]) ∧ is_voice_ATTRIBUTE(VOICE[7], ATTRIB[8]) ∧
+                 is_TMP(EVENT[10], SITUATION[13]) ∧
+                  past(EVENT[10]) ∧
+                   awakened(EVENT[10], VOICE[7], NARRATOR[6]) ∧
+                    is_FACT_THAT(SITUATION[13],
+                     imagine(EVENT[12], READER[1], ENTITY[2]) ∧ at(EVENT[12]) = ENTITY[4])))))
+
+# ::id 44_lpp_1943.44;NE
+# ::snt It said : " If you please -- draw me a sheep ! "
+∃ VOICE[1] EVENT[2] (
+ VOICE[1] = it ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], VOICE[1],
+    IMPERATIVE(∀ NARRATOR[3] EVENT[4] CND_If(NARRATOR[3] = you ∧ please(EVENT[4], NARRATOR[3]), ∃ PRINCE[5] EVENT[7] SHEEP[6] (
+              PRINCE[5] = me ∧
+               sheep(SHEEP[6]) ∧ draw(EVENT[7], _, SHEEP[6], PRINCE[5]))))))
+
+# ::id 45_lpp_1943.45;NE
+# ::snt " What ! "
+EXCLAMATIVE(∃ ENTITY[1] ENTITY[2] (xxx(ENTITY[2]) ∧ T(ENTITY[2]) = ENTITY[1]))
+
+# ::id 46_lpp_1943.46;NE
+# ::snt " Draw me a sheep ! "
+IMPERATIVE(∃ PRINCE[1] EVENT[3] SHEEP[2] (PRINCE[1] = me ∧ sheep(SHEEP[2]) ∧ draw(EVENT[3], _, SHEEP[2], PRINCE[1])))
+
+# ::id 47_lpp_1943.47;NE
+# ::snt I jumped to my feet , completely thunderstruck .
+∃ NARRATOR[3] NARRATOR[1] EVENT[6] EVENT[4] GROUP[2] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = my{NARRATOR[1]} ∧
+   is_feet_POS(GROUP[2], NARRATOR[3]) ∧
+    past(EVENT[6]) ∧
+     ADV_completely(EVENT[4]) ∧
+      CONJ_and(jumped(EVENT[6], NARRATOR[1]) ∧ to(EVENT[6]) = GROUP[2], thunderstruck(EVENT[4], _, NARRATOR[1])))
+
+# ::id 48_lpp_1943.48;NE
+# ::snt I blinked my eyes hard .
+∃ NARRATOR[3] NARRATOR[1] EVENT[4] GROUP[2] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = my{NARRATOR[1]} ∧
+   is_eyes_POS(GROUP[2], NARRATOR[3]) ∧
+    ADV_hard(EVENT[4]) ∧ past(EVENT[4]) ∧ blinked(EVENT[4], NARRATOR[1], GROUP[2]))
+
+# ::id 49_lpp_1943.49;NE
+# ::snt I looked carefully all around me .
+∃ NARRATOR[2] NARRATOR[1] EVENT[3] (
+ NARRATOR[1] = i ∧
+  NARRATOR[2] = me ∧
+   ADV_carefully(EVENT[3]) ∧ past(EVENT[3]) ∧ looked(EVENT[3], NARRATOR[1]) ∧ all_around(EVENT[3]) = NARRATOR[2])
+
+# ::id 50_lpp_1943.50;NE
+# ::snt And I saw a most extraordinary small person , who stood there examining me with great seriousness .
+∃ SITUATION[11] ATTRIB[8] NARRATOR[6] ATTRIB[4] ATTRIB[3] NARRATOR[1] EVENT[10] EVENT[9] EVENT[12] ENTITY[7] ENTITY[2] (
+ NARRATOR[1] = i ∧
+  most_extraordinary(ATTRIB[3]) ∧
+   small(ATTRIB[4]) ∧
+    NARRATOR[6] = me{NARRATOR[1]} ∧
+     great(ATTRIB[8]) ∧
+      is_seriousness_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       is_FACT_THAT(SITUATION[11],
+        CONJ_and(stood(EVENT[10], ENTITY[2]),
+         examining(EVENT[9], ENTITY[2], NARRATOR[6]) ∧ with(EVENT[9]) = ENTITY[7])) ∧
+        is_person_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_person_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+        LOC_there(SITUATION[11]) ∧ past(EVENT[10]) ∧ past(EVENT[12]) ∧ saw(EVENT[12], NARRATOR[1], ENTITY[2]))
+
+# ::id 51_lpp_1943.51;NE
+# ::snt Here you may see the best portrait that , later , I was able to make of him .
+∃ SITUATION[12] READER[1] SITUATION[10] PRINCE[7] ATTRIB[6] NARRATOR[5] ATTRIB[3] EVENT[8] EVENT[9] ENTITY[2] (
+ best(ATTRIB[3]) ∧
+  NARRATOR[5] = i ∧
+   PRINCE[7] = him ∧
+    is_able_to(ATTRIB[6], make(EVENT[8], _, ENTITY[2]) ∧ of(EVENT[8]) = PRINCE[7]) ∧
+     is_FACT_THAT(SITUATION[10], copula(EVENT[9], NARRATOR[5], ATTRIB[6])) ∧ is_portrait_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      TMP_later(SITUATION[10]) ∧
+       past(EVENT[9]) ∧
+        READER[1] = you ∧
+         LOC_here(SITUATION[12]) ∧ is_FACT_THAT(SITUATION[12], MD_may(∃ EVENT[11] see(EVENT[11], READER[1], ENTITY[2]))))
+
+# ::id 52_lpp_1943.52;NE
+# ::snt But my drawing is certainly very much less charming than its model .
+∃ ARTWORK[5] ATTRIB[3] NARRATOR[2] EVENT[6] ENTITY[4] ARTWORK[1] (
+ NARRATOR[2] = my ∧
+  is_drawing_POS(ARTWORK[1], NARRATOR[2]) ∧
+   ARTWORK[5] = its{ARTWORK[1]} ∧
+    is_model_POS(ENTITY[4], ARTWORK[5]) ∧
+     is_very_much_less_charming_than(ATTRIB[3], ENTITY[4]) ∧ ADV_certainly(EVENT[6]) ∧ copula(EVENT[6], ARTWORK[1], ATTRIB[3]))
+
+# ::id 53_lpp_1943.53;NE
+# ::snt That , however , is not my fault .
+∃ SITUATION[5] ENTITY[1] (
+ ADV_however(SITUATION[5]) ∧
+  is_FACT_THAT(SITUATION[5],
+   ¬ ∃ NARRATOR[3] EVENT[4] ENTITY[2] (NARRATOR[3] = my ∧ is_fault_POS(ENTITY[2], NARRATOR[3]) ∧ copula(EVENT[4], ENTITY[1], ENTITY[2]))))
+
+# ::id 54_lpp_1943.54;NE
+# ::snt The grown-ups discouraged me in my painter 's career when I was six years old , and I never learned to draw anything , except boas from the outside and boas from the inside .
+∃ SITUATION[13] NARRATOR[14] ATTRIB[8] NARRATOR[7] NARRATOR[5] NARRATOR[2] EVENT[10] EVENT[12] EVENT[15] ENTITY[4] GROUP[9] ENTITY[3] GROUP[1] ENTITY[19] ENTITY[21] (
+ grown-ups(GROUP[1]) ∧
+  outside(ENTITY[19]) ∧
+   inside(ENTITY[21]) ∧
+    NARRATOR[2] = me ∧
+     NARRATOR[5] = my{NARRATOR[2]} ∧
+      is_painter_POS(ENTITY[4], NARRATOR[5]) ∧
+       is_career_POS(ENTITY[3], ENTITY[4]) ∧
+        NARRATOR[7] = i{NARRATOR[2]} ∧
+         (CD_six(GROUP[9]), years(GROUP[9])) ∧
+          is_old_MSR(ATTRIB[8], GROUP[9]) ∧
+           NARRATOR[14] = i ∧
+            is_TMP(EVENT[10], SITUATION[13]) ∧
+             past(EVENT[10]) ∧
+              copula(EVENT[10], NARRATOR[7], ATTRIB[8]) ∧
+               past(EVENT[12]) ∧
+                TMP_never(EVENT[15]) ∧
+                 past(EVENT[15]) ∧
+                  CONJ_and(is_FACT_THAT(SITUATION[13],
+                        discouraged(EVENT[12], GROUP[1], NARRATOR[2]) ∧ in(EVENT[12]) = ENTITY[3]),
+                   learned(EVENT[15], NARRATOR[14],
+                    ANY ENTITY[16] (thing(ENTITY[16]),
+                     ∃ EVENT[22] GROUP[17] (
+                      ∃ BOAS[18] (is_boas_from(BOAS[18], ENTITY[19]) ∧ is_subset_of_or_equal_to(BOAS[18], GROUP[17])) ∧
+                       ∃ BOAS[20] (is_boas_from(BOAS[20], ENTITY[21]) ∧ is_subset_of_or_equal_to(BOAS[20], GROUP[17])) ∧
+                       draw(EVENT[22], NARRATOR[14], ENTITY[16]) ∧ except(EVENT[22]) = GROUP[17])))))
+
+# ::id 55_lpp_1943.55;NE
+# ::snt Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
+∃ SITUATION[13] NARRATOR[8] NARRATOR[5] NARRATOR[1] ATTRIB[3] EVENT[10] EVENT[12] ENTITY[9] ENTITY[7] GROUP[4] ENTITY[2] (
+ sudden(ATTRIB[3]) ∧
+  is_apparition_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   NARRATOR[1] = i ∧
+    NARRATOR[5] = my{NARRATOR[1]} ∧
+     NARRATOR[8] = my{NARRATOR[5], NARRATOR[1]} ∧
+      is_head_POS(ENTITY[7], NARRATOR[8]) ∧
+       astonishment(ENTITY[9]) ∧
+        starting(EVENT[10], GROUP[4]) ∧ in(EVENT[10]) = ENTITY[9] ∧ out_of(EVENT[10]) = ENTITY[7] ∧
+         is_eyes_POS(GROUP[4], NARRATOR[5]) ∧
+         TMP_now(SITUATION[13]) ∧
+          ADV_fairly(EVENT[10]) ∧
+           past(EVENT[12]) ∧
+            is_FACT_THAT(SITUATION[13],
+             stared(EVENT[12], NARRATOR[1]) ∧ with(EVENT[12]) = GROUP[4] ∧
+              at(EVENT[12]) = ENTITY[2]))
+
+# ::id 56_lpp_1943.56;NE
+# ::snt Remember , I had crashed in the desert a thousand miles from any inhabited region .
+∃ ENTITY[3] (
+ desert(ENTITY[3]) ∧
+  IMPERATIVE(∃ NARRATOR[2] EVENT[7] EVENT[1] GROUP[4] (
+        NARRATOR[2] = i ∧
+         (CD_thousand(GROUP[4]),
+          ANY ATTRIB[6] ENTITY[5] ((inhabited(ATTRIB[6]) ∧ is_region_ATTRIBUTE(ENTITY[5], ATTRIB[6])), is_miles_from(GROUP[4], ENTITY[5]))) ∧
+          is_before(EVENT[7], EVENT[1]) ∧
+           remember(EVENT[1],
+            had_crashed(EVENT[7], NARRATOR[2]) ∧ LOC(EVENT[7]) = GROUP[4] ∧
+             in(EVENT[7]) = ENTITY[3]))))
+
+# ::id 57_lpp_1943.57;NE
+# ::snt And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
+∃ SITUATION[14] ATTRIB[3] NARRATOR[2] EVENT[6] EVENT[13] EVENT[4] GROUP[8] ENTITY[1] GROUP[5] (
+ sands(GROUP[5]) ∧
+  NARRATOR[2] = my ∧
+   little(ATTRIB[3]) ∧
+    is_man_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_man_POS(ENTITY[1], NARRATOR[2]) ∧
+     CONJ_or(∃ ENTITY[9] (fatigue(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+      ∃ ENTITY[10] (hunger(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])),
+      ∃ ENTITY[11] (thirst(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])),
+      ∃ ENTITY[12] (fear(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[8]))) ∧
+      ADV_yet(SITUATION[14]) ∧
+       ADV_uncertainly(EVENT[6]) ∧
+        past(EVENT[4]) ∧
+         is_FACT_THAT(SITUATION[14],
+          seemed(EVENT[4], ENTITY[1],
+           CONJ_neither_nor(be_straying(EVENT[6], ENTITY[1]) ∧ among(EVENT[6]) = GROUP[5],
+            be_fainting(EVENT[13], ENTITY[1]) ∧ from(EVENT[13]) = GROUP[8]))))
+
+# ::id 58_lpp_1943.58;NE
+# ::snt Nothing about him gave any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation .
+∃ ENTITY[7] ENTITY[6] (
+ desert(ENTITY[7]) ∧
+  is_middle_of(ENTITY[6], ENTITY[7]) ∧
+   ¬ ∃ PRINCE[2] ENTITY[1] (
+         PRINCE[2] = him ∧
+          is_thing_about(ENTITY[1], PRINCE[2]) ∧
+           ANY EVENT[11] GROUP[8] PERSON[4] ENTITY[3] (
+            ((CD_thousand(GROUP[8]),
+               ANY ATTRIB[10] ENTITY[9] ((human(ATTRIB[10]) ∧ is_habitation_ATTRIBUTE(ENTITY[9], ATTRIB[10])),
+                is_miles_from(GROUP[8], ENTITY[9]))) ∧
+             lost(EVENT[11], _, PERSON[4]) ∧ LOC(EVENT[11]) = GROUP[8] ∧
+              in(EVENT[11]) = ENTITY[6] ∧ child(PERSON[4]) ∧ is_suggestion_of(ENTITY[3], PERSON[4])),
+            ∃ EVENT[12] (past(EVENT[12]) ∧ gave(EVENT[12], ENTITY[1], ENTITY[3])))))
+
+# ::id 59_lpp_1943.59;NE
+# ::snt When at last I was able to speak , I said to him : " But -- what are you doing here ? "
+∀ ATTRIB[3] NARRATOR[2] ATTRIB[1] EVENT[4] EVENT[5] CND_When(
+    ADV_last(ATTRIB[1]) ∧ NARRATOR[2] = i ∧ is_able_to(ATTRIB[3], speak(EVENT[4])) ∧ past(EVENT[5]) ∧
+     copula(EVENT[5], NARRATOR[2], ATTRIB[3]) ∧ at(EVENT[5]) = ATTRIB[1],
+    ∃ PRINCE[7] NARRATOR[6] EVENT[8] (
+     NARRATOR[6] = i ∧
+      PRINCE[7] = him ∧
+       past(EVENT[8]) ∧
+        said(EVENT[8], NARRATOR[6],
+         QUEST(∃ PRINCE[10] EVENT[11] ? ENTITY[9] (
+               PRINCE[10] = you{PRINCE[7]} ∧
+                LOC_here(EVENT[11]) ∧ copula_doing(EVENT[11], PRINCE[10], ENTITY[9])))) ∧
+         to(EVENT[8]) = PRINCE[7]))
+
+# ::id 60_lpp_1943.60;NE
+# ::snt And in answer he repeated , very slowly , as if he were speaking of a matter of great consequence : " If you please -- draw me a sheep ... "
+∃ SITUATION[14] PRINCE[2] ENTITY[1] (
+ answer(ENTITY[1]) ∧
+  PRINCE[2] = he ∧
+   ADV_very_slowly(SITUATION[14]) ∧
+    is_FACT_THAT(SITUATION[14],
+     ∀ ATTRIB[6] PRINCE[3] EVENT[7] ENTITY[5] ENTITY[4] CND_as_if(
+         PRINCE[3] = he{PRINCE[2]} ∧ great(ATTRIB[6]) ∧ is_consequence_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+          is_matter_of(ENTITY[4], ENTITY[5]) ∧ past(EVENT[7]) ∧
+          were_speaking(EVENT[7], PRINCE[3]) ∧ of(EVENT[7]) = ENTITY[4],
+         ∃ EVENT[8] (
+          past(EVENT[8]) ∧
+           repeated(EVENT[8], PRINCE[2],
+            IMPERATIVE(∀ NARRATOR[9] EVENT[10] CND_If(NARRATOR[9] = you ∧ please(EVENT[10], NARRATOR[9]), ∃ PRINCE[11] EVENT[13] SHEEP[12] (
+                      PRINCE[11] = me{PRINCE[2]} ∧
+                       sheep(SHEEP[12]) ∧ draw(EVENT[13], _, SHEEP[12], PRINCE[11]))))) ∧
+            in(EVENT[8]) = ENTITY[1]))))
+
+# ::id 61_lpp_1943.61;NE
+# ::snt When a mystery is too overpowering , one dare not disobey .
+∃ ATTRIB[3] SITUATION[1] EVENT[4] ENTITY[2] ENTITY[5] (
+ mystery(ENTITY[2]) ∧
+  too_overpowering(ATTRIB[3]) ∧
+   is_FACT_THAT(SITUATION[1], copula(EVENT[4], ENTITY[2], ATTRIB[3])) ∧
+    CD_one(ENTITY[5]) ∧ MD_dare(¬ ∃ EVENT[6] (disobey(EVENT[6], ENTITY[5]) ∧ When(EVENT[6]) = SITUATION[1])))
+
+# ::id 62_lpp_1943.62;NE
+# ::snt Absurd as it might seem to me , a thousand miles from any human habitation and in danger of death , I took out of my pocket a sheet of paper and my fountain-pen .
+∃ NARRATOR[13] NARRATOR[11] ATTRIB[1] EVENT[19] DEGREE[2] ENTITY[10] ENTITY[9] GROUP[14] ENTITY[12] GROUP[6] (
+ MD_might(∃ NARRATOR[4] EVENT[5] (
+       NARRATOR[4] = me ∧
+        seem(EVENT[5]) ∧ to(EVENT[5]) = NARRATOR[4] ∧ MSR(EVENT[5]) = DEGREE[2])) ∧
+  is_absurd_as(ATTRIB[1], DEGREE[2]) ∧
+   death(ENTITY[10]) ∧
+    is_danger_of(ENTITY[9], ENTITY[10]) ∧
+     (CD_thousand(GROUP[6]),
+      CONJ_and(ANY ATTRIB[8] ENTITY[7] ((human(ATTRIB[8]) ∧ is_habitation_ATTRIBUTE(ENTITY[7], ATTRIB[8])), is_miles_from(GROUP[6], ENTITY[7])),
+       is_miles_in(GROUP[6], ENTITY[9]))) ∧
+      NARRATOR[11] = i ∧
+       NARRATOR[13] = my{NARRATOR[11]} ∧
+        is_pocket_POS(ENTITY[12], NARRATOR[13]) ∧
+         ∃ ENTITY[16] ENTITY[15] (paper(ENTITY[16]) ∧ is_sheet_of(ENTITY[15], ENTITY[16]) ∧ is_element_of(ENTITY[15], GROUP[14])) ∧
+          ∃ NARRATOR[18] ENTITY[17] (NARRATOR[18] = my{NARRATOR[11]} ∧ is_fountain-pen_POS(ENTITY[17], NARRATOR[18]) ∧ is_element_of(ENTITY[17], GROUP[14])) ∧
+          past(EVENT[19]) ∧
+           took(EVENT[19], NARRATOR[11], GROUP[14]) ∧ out_of(EVENT[19]) = ENTITY[12] ∧
+            LOC(EVENT[19]) = GROUP[6] ∧ ATTRIBUTE(EVENT[19]) = ATTRIB[1])
+
+# ::id 63_lpp_1943.63;NE
+# ::snt But then I remembered how my studies had been concentrated on geography , history , arithmetic , and grammar , and I told the little chap , a little crossly , too , that I did not know how to draw .
+∃ NARRATOR[20] ATTRIB[18] NARRATOR[14] NARRATOR[1] ATTRIB[16] EVENT[2] EVENT[19] DEGREE[17] PRINCE[15] (
+ little(ATTRIB[16]) ∧
+  is_chap_ATTRIBUTE(PRINCE[15], ATTRIB[16]) ∧
+   NARRATOR[1] = i ∧
+    NARRATOR[14] = i ∧
+     little(ATTRIB[18]) ∧
+      is_ATTRIBUTE(DEGREE[17], ATTRIB[18]) ∧
+       NARRATOR[20] = i{NARRATOR[14]} ∧
+        TMP_then(EVENT[2]) ∧
+         past(EVENT[2]) ∧
+          is_ADV_crossly_too_MSR(EVENT[19], DEGREE[17]) ∧
+           past(EVENT[19]) ∧
+            CONJ_and(remembered(EVENT[2], NARRATOR[1],
+                  QUEST(∃ NARRATOR[5] EVENT[11] GROUP[6] GROUP[4] ? ENTITY[3] (
+                        NARRATOR[5] = my{NARRATOR[1]} ∧
+                         is_studies_POS(GROUP[4], NARRATOR[5]) ∧
+                          ∃ ENTITY[7] (geography(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+                           ∃ ENTITY[8] (history(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+                           ∃ ENTITY[9] (arithmetic(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+                           ∃ ENTITY[10] (grammar(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[6])) ∧
+                           is_ADV(EVENT[11], ENTITY[3]) ∧
+                            is_before(EVENT[11], EVENT[2]) ∧
+                             had_concentrated(EVENT[11], _, GROUP[4]) ∧
+                              on(EVENT[11]) = GROUP[6]))),
+             told(EVENT[19], NARRATOR[14], PRINCE[15],
+              ¬ ∃ EVENT[21] (
+                    is_before(EVENT[21], EVENT[19]) ∧
+                     did_know(EVENT[21], NARRATOR[20],
+                      QUEST(∃ EVENT[23] ? ENTITY[22] (
+                            is_ADV(EVENT[23], ENTITY[22]) ∧ draw(EVENT[23], NARRATOR[20]))))))))
+
+# ::id 64_lpp_1943.64;NE
+# ::snt He answered me : " That does n't matter .
+∃ NARRATOR[2] PRINCE[1] EVENT[3] ENTITY[4] (
+ PRINCE[1] = he ∧
+  NARRATOR[2] = me ∧
+   past(EVENT[3]) ∧ answered(EVENT[3], PRINCE[1], ¬ ∃ EVENT[5] does_matter(EVENT[5], ENTITY[4]), NARRATOR[2]))
+
+# ::id 65_lpp_1943.65;NE
+# ::snt Draw me a sheep ... "
+IMPERATIVE(∃ PRINCE[1] EVENT[3] SHEEP[2] (PRINCE[1] = me ∧ sheep(SHEEP[2]) ∧ draw(EVENT[3], _, SHEEP[2], PRINCE[1])))
+
+# ::id 66_lpp_1943.66;NE
+# ::snt But I had never drawn a sheep .
+∃ NARRATOR[1] EVENT[3] SHEEP[2] (
+ NARRATOR[1] = i ∧
+  sheep(SHEEP[2]) ∧ TMP_never(EVENT[3]) ∧ past(EVENT[3]) ∧ had_drawn(EVENT[3], NARRATOR[1], SHEEP[2]))
+
+# ::id 67_lpp_1943.67;NE
+# ::snt So I drew for him one of the two pictures I had drawn so often .
+∃ PRINCE[2] NARRATOR[1] NARRATOR[6] EVENT[9] ARTWORK[3] EVENT[7] GROUP[4] (
+ NARRATOR[6] = i{NARRATOR[1]} ∧
+  (CD_two(GROUP[4]), had_drawn(EVENT[7], NARRATOR[6], GROUP[4]) ∧ pictures(GROUP[4])) ∧
+   TMP_so_often(EVENT[7]) ∧
+    past(EVENT[7]) ∧
+     NARRATOR[1] = i ∧
+      PRINCE[2] = him ∧
+       (CD_one(ARTWORK[3]), is_element_of(ARTWORK[3], GROUP[4])) ∧
+        ADV_so(EVENT[9]) ∧
+         past(EVENT[9]) ∧ drew(EVENT[9], NARRATOR[1], ARTWORK[3]) ∧ for(EVENT[9]) = PRINCE[2])
+
+# ::id 68_lpp_1943.68;NE
+# ::snt It was that of the boa constrictor from the outside .
+∃ ARTWORK[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ outside(ENTITY[4]) ∧
+  is_boa_constrictor_from(ENTITY[3], ENTITY[4]) ∧
+   is_of(ENTITY[2], ENTITY[3]) ∧
+    ARTWORK[1] = it ∧ past(EVENT[5]) ∧ copula(EVENT[5], ARTWORK[1], ENTITY[2]))
+
+# ::id 69_lpp_1943.69;NE
+# ::snt And I was astounded to hear the little fellow greet it with , " No , no , no !
+∃ ARTWORK[6] NARRATOR[1] ATTRIB[5] EVENT[8] EVENT[3] EVENT[2] ENTITY[7] PRINCE[4] (
+ little(ATTRIB[5]) ∧
+  is_fellow_ATTRIBUTE(PRINCE[4], ATTRIB[5]) ∧
+   NARRATOR[1] = i ∧
+    ARTWORK[6] = it ∧
+     No(ENTITY[7]) ∧ no(ENTITY[7]) ∧ no(ENTITY[7]) ∧
+      past(EVENT[2]) ∧
+       astounded(EVENT[2], _, NARRATOR[1],
+        hear(EVENT[3], NARRATOR[1], greet(EVENT[8], PRINCE[4], ARTWORK[6]) ∧ with(EVENT[8]) = ENTITY[7])))
+
+# ::id 70_lpp_1943.70;NE
+# ::snt I do not want an elephant inside a boa constrictor .
+∃ PRINCE[1] (
+ PRINCE[1] = i ∧
+  ¬ ∃ EVENT[4] ENTITY[3] ENTITY[2] (boa_constrictor(ENTITY[3]) ∧ is_elephant_inside(ENTITY[2], ENTITY[3]) ∧ do_want(EVENT[4], PRINCE[1], ENTITY[2])))
+
+# ::id 71_lpp_1943.71;NE
+# ::snt A boa constrictor is a very dangerous creature , and an elephant is very cumbersome .
+∃ ATTRIB[6] ATTRIB[3] EVENT[4] EVENT[7] ENTITY[2] ENTITY[1] ENTITY[5] (
+ boa_constrictor(ENTITY[1]) ∧
+  very_dangerous(ATTRIB[3]) ∧
+   is_creature_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    elephant(ENTITY[5]) ∧
+     very_cumbersome(ATTRIB[6]) ∧ CONJ_and(copula(EVENT[4], ENTITY[1], ENTITY[2]), copula(EVENT[7], ENTITY[5], ATTRIB[6])))
+
+# ::id 72_lpp_1943.72;NE
+# ::snt Where I live , everything is very small .
+∃ SITUATION[8] PRINCE[2] EVENT[3] (
+ PRINCE[2] = i ∧
+  is_LOC(EVENT[3], SITUATION[8]) ∧
+   live(EVENT[3], PRINCE[2]) ∧
+    is_FACT_THAT(SITUATION[8],
+     ∀ ENTITY[5] (thing(ENTITY[5]) → ∃ ATTRIB[6] EVENT[7] (very_small(ATTRIB[6]) ∧ copula(EVENT[7], ENTITY[5], ATTRIB[6])))))
+
+# ::id 73_lpp_1943.73;NE
+# ::snt What I need is a sheep .
+∃ PRINCE[3] EVENT[4] EVENT[6] SHEEP[5] ENTITY[1] (
+ PRINCE[3] = i ∧
+  need(EVENT[4], PRINCE[3], ENTITY[1]) ∧ sheep(SHEEP[5]) ∧ copula(EVENT[6], ENTITY[1], SHEEP[5]))
+
+# ::id 74_lpp_1943.74;NE
+# ::snt Draw me a sheep . "
+IMPERATIVE(∃ PRINCE[1] EVENT[3] SHEEP[2] (PRINCE[1] = me ∧ sheep(SHEEP[2]) ∧ draw(EVENT[3], _, SHEEP[2], PRINCE[1])))
+
+# ::id 75_lpp_1943.75;NE
+# ::snt So then I made a drawing .
+∃ NARRATOR[1] EVENT[3] ARTWORK[2] (
+ NARRATOR[1] = i ∧
+  drawing(ARTWORK[2]) ∧
+   ADV_so(EVENT[3]) ∧ TMP_then(EVENT[3]) ∧ past(EVENT[3]) ∧ made(EVENT[3], NARRATOR[1], ARTWORK[2]))
+
+# ::id 76_lpp_1943.76;NE
+# ::snt He looked at it carefully , then he said : " No .
+∃ PRINCE[5] ARTWORK[2] PRINCE[1] EVENT[3] EVENT[7] ENTITY[6] (
+ PRINCE[1] = he ∧
+  ARTWORK[2] = it ∧
+   PRINCE[5] = he ∧
+    No(ENTITY[6]) ∧
+     ADV_carefully(EVENT[3]) ∧
+      past(EVENT[3]) ∧
+       TMP_then(EVENT[7]) ∧
+        past(EVENT[7]) ∧
+         looked(EVENT[3], PRINCE[1]) ∧ at(EVENT[3]) = ARTWORK[2] ∧ said(EVENT[7], PRINCE[5], ENTITY[6]))
+
+# ::id 77_lpp_1943.77;NE
+# ::snt This sheep is already very sickly .
+∃ ATTRIB[2] EVENT[3] SHEEP[1] (sheep(SHEEP[1]) ∧ very_sickly(ATTRIB[2]) ∧ TMP_already(EVENT[3]) ∧ copula(EVENT[3], SHEEP[1], ATTRIB[2]))
+
+# ::id 78_lpp_1943.78;NE
+# ::snt Make me another . "
+IMPERATIVE(∃ PRINCE[1] (PRINCE[1] = me ∧ ANOTHER ARTWORK[2] ∃ EVENT[3] make(EVENT[3], _, ARTWORK[2], PRINCE[1])))
+
+# ::id 79_lpp_1943.79;NE
+# ::snt So I made another drawing .
+∃ SITUATION[4] NARRATOR[1] (
+ NARRATOR[1] = i ∧
+  ADV_so(SITUATION[4]) ∧
+   is_FACT_THAT(SITUATION[4], ANOTHER ARTWORK[2] (drawing(ARTWORK[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ made(EVENT[3], NARRATOR[1], ARTWORK[2])))))
+
+# ::id 80_lpp_1943.80;NE
+# ::snt My friend smiled gently and indulgently .
+∃ NARRATOR[2] EVENT[3] PRINCE[1] (
+ NARRATOR[2] = my ∧
+  is_friend_POS(PRINCE[1], NARRATOR[2]) ∧
+   CONJ_and(ADV_gently(EVENT[3]), ADV_indulgently(EVENT[3])) ∧ past(EVENT[3]) ∧ smiled(EVENT[3], PRINCE[1]))
+
+# ::id 81_lpp_1943.81;NE
+# ::snt " You see yourself , " he said , " that this is not a sheep .
+∃ NARRATOR[4] NARRATOR[3] PRINCE[1] EVENT[5] EVENT[2] ARTWORK[6] (
+ PRINCE[1] = he ∧
+  NARRATOR[3] = you ∧
+   NARRATOR[4] = yourself{NARRATOR[3]} ∧
+    past(EVENT[2]) ∧
+     said(EVENT[2], PRINCE[1],
+      see(EVENT[5], NARRATOR[3], NARRATOR[4],
+       ¬ ∃ EVENT[8] SHEEP[7] (sheep(SHEEP[7]) ∧ copula(EVENT[8], ARTWORK[6], SHEEP[7])))))
+
+# ::id 82_lpp_1943.82;NE
+# ::snt This is a ram .
+∃ EVENT[3] RAM[2] ARTWORK[1] (ram(RAM[2]) ∧ copula(EVENT[3], ARTWORK[1], RAM[2]))
+
+# ::id 83_lpp_1943.83;NE
+# ::snt It has horns . "
+∃ RAM[1] EVENT[3] GROUP[2] (RAM[1] = it ∧ horns(GROUP[2]) ∧ has(EVENT[3], RAM[1], GROUP[2]))
+
+# ::id 84_lpp_1943.84;NE
+# ::snt So then I did my drawing over once more .
+∃ NARRATOR[3] NARRATOR[1] EVENT[5] TIME[4] ARTWORK[2] (
+ NARRATOR[1] = i ∧
+  NARRATOR[3] = my{NARRATOR[1]} ∧
+   is_drawing_POS(ARTWORK[2], NARRATOR[3]) ∧
+    CD_once_more(TIME[4]) ∧
+     ADV_so(EVENT[5]) ∧
+      TMP_then(EVENT[5]) ∧
+       past(EVENT[5]) ∧ did_over(EVENT[5], NARRATOR[1], ARTWORK[2]) ∧ is_contained_in(TMP(EVENT[5]), TIME[4]))
+
+# ::id 85_lpp_1943.85;NE
+# ::snt But it was rejected too , just like the others .
+∃ SITUATION[6] ATTRIB[2] ARTWORK[1] EVENT[5] EVENT[4] GROUP[3] (
+ others(GROUP[3]) ∧
+  ARTWORK[1] = it ∧
+   is_just_like_comp(ATTRIB[2], GROUP[3]) ∧
+    ADV_too(SITUATION[6]) ∧
+     past(EVENT[5]) ∧
+      is_FACT_THAT(SITUATION[6], CONJ_and(rejected(EVENT[5], _, ARTWORK[1]), xxx(EVENT[4], ARTWORK[1], ATTRIB[2]))))
+
+# ::id 86_lpp_1943.86;NE
+# ::snt " This one is too old .
+∃ ATTRIB[2] EVENT[3] SHEEP[1] (one(SHEEP[1]) ∧ too_old(ATTRIB[2]) ∧ copula(EVENT[3], SHEEP[1], ATTRIB[2]))
+
+# ::id 87_lpp_1943.87;NE
+# ::snt I want a sheep that will live a long time . "
+∃ PRINCE[1] EVENT[7] SHEEP[2] (
+ PRINCE[1] = i ∧
+  MD_will(∃ ATTRIB[5] EVENT[6] DEGREE[4] (
+        long(ATTRIB[5]) ∧
+         is_time_ATTRIBUTE(DEGREE[4], ATTRIB[5]) ∧ live(EVENT[6], SHEEP[2]) ∧ MSR(EVENT[6]) = DEGREE[4])) ∧
+   sheep(SHEEP[2]) ∧ want(EVENT[7], PRINCE[1], SHEEP[2]))
+
+# ::id 88_lpp_1943.88;NE
+# ::snt By this time my patience was exhausted , because I was in a hurry to start taking my engine apart .
+∃ NARRATOR[10] SITUATION[8] PRP[7] NARRATOR[5] SITUATION[4] NARRATOR[3] EVENT[11] EVENT[13] EVENT[14] EVENT[15] ENTITY[9] ENTITY[6] ENTITY[2] ENTITY[1] (
+ time(ENTITY[1]) ∧
+  NARRATOR[3] = my ∧
+   is_patience_POS(ENTITY[2], NARRATOR[3]) ∧
+    NARRATOR[5] = i ∧
+     hurry(ENTITY[6]) ∧
+      NARRATOR[10] = my{NARRATOR[5]} ∧
+       is_engine_POS(ENTITY[9], NARRATOR[10]) ∧
+        is_FACT_THAT(SITUATION[8], taking(EVENT[11], NARRATOR[5], ENTITY[9])) ∧
+         is_FACT_THAT(PRP[7], start(EVENT[13], NARRATOR[5], SITUATION[8])) ∧
+          is_FACT_THAT(SITUATION[4],
+           copula(EVENT[14], NARRATOR[5]) ∧ PRP(EVENT[14]) = PRP[7] ∧
+            in(EVENT[14]) = ENTITY[6]) ∧
+           ADV_apart(EVENT[11]) ∧
+            past(EVENT[14]) ∧
+             past(EVENT[15]) ∧
+              exhausted(EVENT[15], _, ENTITY[2]) ∧ because(EVENT[15]) = SITUATION[4] ∧
+               By(EVENT[15]) = ENTITY[1])
+
+# ::id 89_lpp_1943.89;NE
+# ::snt So I tossed off this drawing .
+∃ NARRATOR[1] EVENT[3] ARTWORK[2] (
+ drawing(ARTWORK[2]) ∧
+  NARRATOR[1] = i ∧ ADV_so(EVENT[3]) ∧ past(EVENT[3]) ∧ tossed_off(EVENT[3], NARRATOR[1], ARTWORK[2]))
+
+# ::id 90_lpp_1943.90;NE
+# ::snt And I threw out an explanation with it .
+∃ ARTWORK[3] NARRATOR[1] EVENT[4] ENTITY[2] (
+ NARRATOR[1] = i ∧
+  explanation(ENTITY[2]) ∧
+   ARTWORK[3] = it ∧
+    past(EVENT[4]) ∧ threw_out(EVENT[4], NARRATOR[1], ENTITY[2]) ∧ with(EVENT[4]) = ARTWORK[3])
+
+# ::id 91_lpp_1943.91;NE
+# ::snt " This is only his box .
+∃ SHEEP[4] ENTITY[3] ARTWORK[1] (
+ SHEEP[4] = his ∧
+  is_box_POS(ENTITY[3], SHEEP[4]) ∧ ONLY ENTITY[2] (is_of(ENTITY[2], ENTITY[3]), ∃ EVENT[5] copula(EVENT[5], ARTWORK[1], ENTITY[2])))
+
+# ::id 92_lpp_1943.92;NE
+# ::snt The sheep you asked for is inside . "
+∃ PRINCE[3] EVENT[5] EVENT[4] SHEEP[1] (
+ PRINCE[3] = you ∧
+  asked(EVENT[4], PRINCE[3]) ∧ for(EVENT[4]) = SHEEP[1] ∧ sheep(SHEEP[1]) ∧
+   past(EVENT[4]) ∧ LOC_inside(EVENT[5]) ∧ copula(EVENT[5], SHEEP[1]))
+
+# ::id 93_lpp_1943.93;NE
+# ::snt I was very surprised to see a light break over the face of my young judge : " That is exactly the way I wanted it !
+∃ ATTRIB[2] NARRATOR[1] SHEEP[15] PRINCE[14] ATTRIB[8] NARRATOR[7] EVENT[9] EVENT[10] EVENT[11] EVENT[17] ENTITY[3] EVENT[16] ENTITY[6] ENTITY[5] ENTITY[13] ENTITY[12] (
+ NARRATOR[7] = my{NARRATOR[1]} ∧
+  young(ATTRIB[8]) ∧
+   is_judge_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_judge_POS(ENTITY[6], NARRATOR[7]) ∧
+    is_face_of(ENTITY[5], ENTITY[6]) ∧
+     PRINCE[14] = i ∧
+      SHEEP[15] = it ∧
+       ADV_exactly(ENTITY[13]) ∧ is_way_THAT(ENTITY[13], wanted(EVENT[16], PRINCE[14], SHEEP[15])) ∧
+        past(EVENT[16]) ∧
+         NARRATOR[1] = i ∧
+          break(EVENT[9], ENTITY[3]) ∧ over(EVENT[9]) = ENTITY[5] ∧ light(ENTITY[3]) ∧
+           is_very_surprised_to(ATTRIB[2], see(EVENT[10], _, ENTITY[3])) ∧
+            past(EVENT[11]) ∧ copula(EVENT[11], NARRATOR[1], ATTRIB[2]) ∧ copula(EVENT[17], ENTITY[12], ENTITY[13]))
+
+# ::id 94_lpp_1943.94;NE
+# ::snt Do you think that this sheep will have to have a great deal of grass ? "
+∃ SHEEP[3] (
+ sheep(SHEEP[3]) ∧
+  QUEST(∃ NARRATOR[1] EVENT[2] (
+        NARRATOR[1] = you ∧
+         do_think(EVENT[2], NARRATOR[1],
+          MD_will(∃ ATTRIB[6] EVENT[8] EVENT[4] ENTITY[7] ENTITY[5] (
+                great(ATTRIB[6]) ∧
+                 grass(ENTITY[7]) ∧
+                  is_deal_of(ENTITY[5], ENTITY[7]) ∧ is_deal_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+                   have(EVENT[4], SHEEP[3], have(EVENT[8], SHEEP[3], ENTITY[5]))))))))
+
+# ::id 95_lpp_1943.95;NE
+# ::snt " Why ? "
+QUEST(∃ ENTITY[2] ? ENTITY[1] (is_ADV(ENTITY[2], ENTITY[1]) ∧ xxx(ENTITY[2])))
+
+# ::id 96_lpp_1943.96;NE
+# ::snt " Because where I live everything is very small ... "
+∃ SITUATION[9] PRINCE[3] SITUATION[1] EVENT[4] EVENT[10] (
+ PRINCE[3] = i ∧
+  is_FACT_THAT(SITUATION[1],
+   is_FACT_THAT(SITUATION[9],
+    ∀ ENTITY[6] (thing(ENTITY[6]) → ∃ ATTRIB[7] EVENT[8] (very_small(ATTRIB[7]) ∧ copula(EVENT[8], ENTITY[6], ATTRIB[7]))))) ∧
+   is_LOC(EVENT[4], SITUATION[9]) ∧
+    live(EVENT[4], PRINCE[3]) ∧ xxx(EVENT[10]) ∧ Because(EVENT[10]) = SITUATION[1])
+
+# ::id 97_lpp_1943.97;NE
+# ::snt " There will surely be enough grass for him , "
+∃ ATTRIB[2] ENTITY[1] (
+ enough(ATTRIB[2]) ∧
+  is_grass_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   MD_will(∃ SHEEP[3] EVENT[4] (
+         SHEEP[3] = him ∧
+          ADV_surely(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1]) ∧ for(EVENT[4]) = SHEEP[3])))
+
+# ::id 98_lpp_1943.98;NE
+# ::snt I said .
+∃ NARRATOR[1] EVENT[2] (NARRATOR[1] = i ∧ past(EVENT[2]) ∧ said(EVENT[2], NARRATOR[1]))
+
+# ::id 99_lpp_1943.99;NE
+# ::snt " It is a very small sheep that I have given you . "
+∃ PRINCE[6] NARRATOR[5] ATTRIB[3] SHEEP[1] EVENT[7] EVENT[8] GROUP[2] (
+ SHEEP[1] = it ∧
+  very_small(ATTRIB[3]) ∧
+   NARRATOR[5] = i ∧
+    PRINCE[6] = you ∧
+     have_given(EVENT[7], NARRATOR[5], GROUP[2], PRINCE[6]) ∧ is_sheep_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+      copula(EVENT[8], SHEEP[1], GROUP[2]))
+
+# ::id 100_lpp_1943.100;NE
+# ::snt He bent his head over the drawing : " Not so small that -- Look !
+∃ PRINCE[3] PRINCE[1] EVENT[5] ENTITY[2] ARTWORK[4] (
+ drawing(ARTWORK[4]) ∧
+  PRINCE[1] = he ∧
+   PRINCE[3] = his{PRINCE[1]} ∧
+    is_head_POS(ENTITY[2], PRINCE[3]) ∧
+     past(EVENT[5]) ∧
+      bent(EVENT[5], PRINCE[1], ENTITY[2]) ∧ over(EVENT[5]) = ARTWORK[4] ∧
+       ¬ ∃ ATTRIB[6] EVENT[7] (so_small(ATTRIB[6]) ∧ xxx(EVENT[7], _, ATTRIB[6])) ∧ IMPERATIVE(∃ EVENT[8] look(EVENT[8])))
+
+# ::id 101_lpp_1943.101;NE
+# ::snt He has gone to sleep ... "
+∃ SHEEP[1] EVENT[3] ENTITY[2] (SHEEP[1] = he ∧ sleep(ENTITY[2]) ∧ has_gone(EVENT[3], SHEEP[1]) ∧ to(EVENT[3]) = ENTITY[2])
+
+# ::id 102_lpp_1943.102;NE
+# ::snt And that is how I made the acquaintance of the little prince .
+∃ NARRATOR[4] ATTRIB[7] EVENT[8] EVENT[10] ENTITY[2] PRINCE[6] ENTITY[5] ENTITY[1] (
+ little(ATTRIB[7]) ∧
+  is_prince_ATTRIBUTE(PRINCE[6], ATTRIB[7]) ∧
+   is_acquaintance_of(ENTITY[5], PRINCE[6]) ∧
+    NARRATOR[4] = i ∧
+     made(EVENT[8], NARRATOR[4], ENTITY[5]) ∧
+      is_ADV(EVENT[8], ENTITY[2]) ∧ past(EVENT[8]) ∧ copula(EVENT[10], ENTITY[1], ENTITY[2]))

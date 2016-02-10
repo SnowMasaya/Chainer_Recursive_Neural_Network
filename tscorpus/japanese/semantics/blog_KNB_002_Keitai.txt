@@ -1,0 +1,134 @@
+# ::id 1_blog_KNB_002_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］ 正しい 選択
+∃ ATTRIB[3] EVENT[4] ENTITY[1] ENTITY[2] (
+ 正しい(ATTRIB[3]) ∧
+  ATTRIBUTE_選択(ATTRIB[3], ENTITY[2]) ∧
+   携帯_電話(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[2])
+
+# ::id 2_blog_KNB_002_Keitai_1-1-10-01;NJ
+# ::snt （ 階段 の 隙間 に 落とし て しまっ た ）
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  階段(ENTITY[3]) ∧
+   の_隙間(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ 落とし_て_しまっ_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 3_blog_KNB_002_Keitai_1-1-11-01;NJ
+# ::snt それでも 彼 は 今 も 、 データ も 飛ば ず に 元気 で やっ て い ます 。
+∃ SITUATION[3] ENTITY[1] EVENT[6] EVENT[7] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = 彼 ∧
+  今(ENTITY[2]) ∧
+   データ(ENTITY[4]) ∧
+    FACT(SITUATION[3], ¬ ∃ EVENT[5] 飛ば(EVENT[5], ENTITY[4])) ∧
+     CONJ_te(元気_で(EVENT[6], ENTITY[1]) ∧ te_に(EVENT[6]) = SITUATION[3] ∧ 時間(EVENT[6]) = ENTITY[2],
+      やっ_て_い_ます(EVENT[7], ENTITY[1]) ∧ te_に(EVENT[7]) = SITUATION[3] ∧ 時間(EVENT[7]) = ENTITY[2]))
+
+# ::id 4_blog_KNB_002_Keitai_1-1-12-01;NJ
+# ::snt なんて 頑丈 な ん だろ う ！ と 、 ただただ 驚く ばかり です 。
+∃ ENTITY[1] EVENT[2] (
+ ENTITY[1] = *speaker* ∧
+  ADV_ただただ(EVENT[2]) ∧
+   驚く_ばかり_です(EVENT[2], ENTITY[1],
+    EXCLAMATIVE(∃ ENTITY[3] (
+          ENTITY[3] = *pro*{ENTITY[1]} ∧
+           MD_う(∃ EVENT[4] (ADV_なんて(EVENT[4]) ∧ 頑丈_な_ん_だろ(EVENT[4], ENTITY[3])))))))
+
+# ::id 5_blog_KNB_002_Keitai_1-1-13-01;NJ
+# ::snt そして それ 以上 に 、 自分 の 雑さ 加減 に 驚く ばかり です 。
+∃ ENTITY[4] ENTITY[2] ENTITY[1] EVENT[5] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[2] = それ ∧
+   以上(ENTITY[2]) ∧
+    ENTITY[4] = 自分{ENTITY[1], ENTITY[2]} ∧
+     の_雑さ_加減(ENTITY[4], ENTITY[3]) ∧
+      驚く_ばかり_です(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 6_blog_KNB_002_Keitai_1-1-2-01;NJ
+# ::snt 半 年 ほど 前 に 携帯 電話 の 機種 変更 を し まし た 。
+∃ ENTITY[1] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  CD_半_年(ENTITY[3]) ∧
+   ほど_前(ENTITY[3], ENTITY[2]) ∧
+    携帯_電話(ENTITY[5]) ∧
+     の_機種_変更(ENTITY[5], ENTITY[4]) ∧
+      past(EVENT[6]) ∧ し_まし_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[2])
+
+# ::id 7_blog_KNB_002_Keitai_1-1-3-01;NJ
+# ::snt 悩ん だ 末 、 カシオ の Ｇ’ｚｏｎｅ という 、 衝撃 や 水 濡れ に 強い の が ウリ の 機種 に 決め まし た 。
+∃ ENTITY[8] SITUATION[7] SITUATION[6] SITUATION[2] ENTITY[1] EVENT[3] EVENT[12] EVENT[14] EVENT[15] ENTITY[5] GROUP[9] ENTITY[13] ENTITY[4] (
+ ENTITY[1] = *speaker* ∧
+  末(SITUATION[2], 悩ん_だ(EVENT[3], ENTITY[1])) ∧
+   カシオ(ENTITY[5]) ∧
+    の_xxx(ENTITY[5], ENTITY[Ｇ’ｚｏｎｅ]) ∧
+     ENTITY[8] = *pro*{ENTITY[4], ENTITY[Ｇ’ｚｏｎｅ], ENTITY[5], ENTITY[1]} ∧
+      CONJ_や(∃ ENTITY[10] (衝撃(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+       ∃ ENTITY[11] (水_濡れ(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+       の(SITUATION[7], 強い(EVENT[12], ENTITY[8]) ∧ に(EVENT[12]) = GROUP[9]) ∧
+        ウリ(ENTITY[13]) ∧
+         FACT(SITUATION[6], xxx(EVENT[14], SITUATION[7], ENTITY[13])) ∧
+          の_機種(SITUATION[6], ENTITY[4]) ∧ という_機種(ENTITY[Ｇ’ｚｏｎｅ], ENTITY[4]) ∧
+           past(EVENT[15]) ∧
+            決め_まし_た(EVENT[15], ENTITY[1]) ∧ に(EVENT[15]) = ENTITY[4] ∧ 時間(EVENT[15]) = SITUATION[2])
+
+# ::id 8_blog_KNB_002_Keitai_1-1-4-01;NJ
+# ::snt モノ の 扱い が 雑 な 自分 にとって は 、 精密 機械 で ある 携帯 は できるだけ 頑丈 な ほう が いい 、 という 発想 から の 選択 でし た 。
+∃ ATTRIB[11] ENTITY[1] ATTRIB[8] ENTITY[4] EVENT[12] EVENT[13] ENTITY[10] ENTITY[3] ENTITY[2] EVENT[9] ENTITY[7] ENTITY[5] (
+ ENTITY[4] = 自分{ENTITY[2], ENTITY[1]} ∧
+  精密(ATTRIB[8]) ∧
+   ATTRIBUTE_機械(ATTRIB[8], ENTITY[7]) ∧
+    で_ある(EVENT[9], ENTITY[5], ENTITY[7]) ∧ 携帯(ENTITY[5]) ∧
+     ENTITY[1] = *pro* ∧
+      できるだけ_頑丈_な(ATTRIB[11]) ∧
+       ATTRIBUTE_ほう(ATTRIB[11], ENTITY[10]) ∧
+        THAT_発想(いい(EVENT[12], ENTITY[10]) ∧ TPC(EVENT[12]) = ENTITY[5] ∧ にとって(EVENT[12]) = ENTITY[4],
+         ENTITY[3]) ∧
+         から_の_選択(ENTITY[3], ENTITY[2]) ∧ past(EVENT[13]) ∧ でし_た(EVENT[13], ENTITY[1], ENTITY[2]))
+
+# ::id 9_blog_KNB_002_Keitai_1-1-5-01;NJ
+# ::snt そして その 選択 は 正しかっ た よう に 思え ます 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] (
+ 選択(ENTITY[3]) ∧
+  ENTITY[1] = *speaker* ∧
+   よう(SITUATION[2], 正しかっ_た(EVENT[4], ENTITY[3])) ∧
+    past(EVENT[4]) ∧ 思え_ます(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = SITUATION[2])
+
+# ::id 10_blog_KNB_002_Keitai_1-1-6-01;NJ
+# ::snt 携帯 を 変え て から 半 年 間 。
+∃ ENTITY[3] SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *speaker*{ENTITY[1]} ∧
+  携帯(ENTITY[4]) ∧
+   FACT(SITUATION[2], 変え_て(EVENT[5], ENTITY[3], ENTITY[4])) ∧
+    (CD_半_年(ENTITY[1]), te_から_間(SITUATION[2], ENTITY[1])) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 11_blog_KNB_002_Keitai_1-1-7-01;NJ
+# ::snt ・ コンクリート の 地面 に 誤っ て 落とす こと 数十 回 。
+∃ ENTITY[2] EVENT[5] EVENT[6] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *speaker* ∧
+  コンクリート(ENTITY[4]) ∧
+   の_地面(ENTITY[4], ENTITY[3]) ∧
+    (CD_数十_回(ENTITY[1]),
+     THAT_こと(CONJ_te(誤っ_て(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[3],
+           落とす(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[3]), ENTITY[1])) ∧
+     xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 12_blog_KNB_002_Keitai_1-1-8-01;NJ
+# ::snt ・ 猛スピード で 走る 自転車 から 誤っ て 落とす こと ２ 回 。
+∃ EVENT[5] EVENT[6] EVENT[7] EVENT[8] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 猛スピード(ENTITY[4]) ∧
+  走る(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[4] ∧ 自転車(ENTITY[2]) ∧
+   (CD_２_回(ENTITY[1]),
+    THAT_こと(CONJ_te(誤っ_て(EVENT[6]) ∧ から(EVENT[6]) = ENTITY[2],
+          落とす(EVENT[7]) ∧ から(EVENT[7]) = ENTITY[2]), ENTITY[1])) ∧
+    xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 13_blog_KNB_002_Keitai_1-1-9-01;NJ
+# ::snt ・ 大学 校舎 の ２ 階 から 、 誤っ て １ 階 まで 落とす こと １ 回 。
+∃ ENTITY[2] EVENT[5] EVENT[7] EVENT[8] ENTITY[4] ENTITY[6] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *speaker* ∧
+  大学_校舎(ENTITY[4]) ∧
+   (CD_２_階(ENTITY[3]), の(ENTITY[4], ENTITY[3])) ∧
+    CD_１_階(ENTITY[6]) ∧
+     (CD_１_回(ENTITY[1]),
+      THAT_こと(CONJ_te(誤っ_て(EVENT[5], ENTITY[2]) ∧ から(EVENT[5]) = ENTITY[3],
+            落とす(EVENT[7], ENTITY[2]) ∧ まで(EVENT[7]) = ENTITY[6] ∧ から(EVENT[7]) = ENTITY[3]),
+       ENTITY[1])) ∧ xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])

@@ -1,0 +1,85 @@
+# ::id 1_wikipedia_JOJO;NJ
+# ::snt ダイヤモンド は 砕け ない
+∃ ARB[1] ENTITY[2] (ダイヤモンド(ENTITY[2]) ∧ ARB[1] = *arb* ∧ ¬ ∃ EVENT[3] 砕け(EVENT[3], ARB[1], ENTITY[2]))
+
+# ::id 2_wikipedia_JOJO;NJ
+# ::snt あらすじ
+∃ EVENT[2] ENTITY[1] (あらすじ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 3_wikipedia_JOJO;NJ
+# ::snt 1999 年 、 舞台 は 日本国 M県 S市 杜王町 （ もりおうちょう ） 。
+∃ EVENT[3] TIME[1] ENTITY[2] (
+ 舞台(ENTITY[2]) ∧
+  CD_1999_年(TIME[1]) ∧
+   namely_-ENTITY-(ENTITY[もりおうちょう], ENTITY[日本国_M県_S市_杜王町]) ∧ xxx(EVENT[3], ENTITY[2], ENTITY[日本国_M県_S市_杜王町]) ∧ is_contained_in(時間(EVENT[3]), TIME[1]))
+
+# ::id 4_wikipedia_JOJO;NJ
+# ::snt ジョセフ・ジョースター の 息子 （ 隠し子 ） で 、 空条承太郎 の 年下 の 叔父 で ある 高校生 ・ 東方仗助 （ ひがしかたじょうすけ 、 ジョジョ ） が 、 弓 と 矢 によって 生み出さ れ た スタンド使い達 の 起こす 事件 に 立ち向かう サスペンス・ホラー活劇 。
+∃ SITUATION[2] ENTITY[1] EVENT[11] EVENT[19] EVENT[20] EVENT[21] EVENT[22] GROUP[6] ENTITY[4] GROUP[3] GROUP[16] ENTITY[14] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  CONJ_で(∃ ENTITY[7] ENTITY[8] (
+        の_息子(ENTITY[ジョセフ.ジョースター], ENTITY[8]) ∧
+         隠し子(ENTITY[7]) ∧ namely_-ENTITY-(ENTITY[7], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])),
+   ∃ ENTITY[10] ENTITY[9] (
+    年下(ENTITY[10]) ∧
+     の_叔父(ENTITY[10], ENTITY[9]) ∧ の__叔父(ENTITY[空条承太郎], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+   で_ある(EVENT[11], ENTITY[4], GROUP[6]) ∧ 高校生(ENTITY[4]) ∧
+    namely_-ENTITY-(ENTITY[4], ENTITY[東方仗助]) ∧
+     is_element_of(ENTITY[ひがしかたじょうすけ], GROUP[3]) ∧ is_element_of(ENTITY[ジョジョ], GROUP[3]) ∧
+      namely_-ENTITY-(GROUP[3], ENTITY[東方仗助]) ∧
+       CONJ_と(∃ ENTITY[17] (弓(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+        ∃ ENTITY[18] (矢(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+        生み出さ_た(EVENT[19], GROUP[16], ENTITY[14]) ∧ スタンド使い達(ENTITY[14]) ∧
+         起こす(EVENT[20], ENTITY[14], ENTITY[12]) ∧ 事件(ENTITY[12]) ∧
+          サスペンス.ホラー活劇(SITUATION[2], 立ち向かう(EVENT[21], ENTITY[東方仗助]) ∧ に(EVENT[21]) = ENTITY[12]) ∧
+           past(EVENT[19]) ∧ xxx(EVENT[22], ENTITY[1], SITUATION[2]))
+
+# ::id 5_wikipedia_JOJO;NJ
+# ::snt 登場 人物
+∃ EVENT[2] ENTITY[1] (登場_人物(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_JOJO;NJ
+# ::snt スタンド の パラメーター は 『 JOJOA-GO!GO! 』 より 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ スタンド(ENTITY[2]) ∧
+  の_パラメーター(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[1]) ∧ より(EVENT[3]) = ENTITY[JOJOA-GO!GO!])
+
+# ::id 7_wikipedia_JOJO;NJ
+# ::snt 声優 は 『 ジョジョの奇妙な冒険オールスターバトル 』 の もの 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (声優(ENTITY[1]) ∧ の_もの(ENTITY[ジョジョの奇妙な冒険オールスターバトル], ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 8_wikipedia_JOJO;NJ
+# ::snt 仗助 と その 仲間
+∃ EVENT[3] GROUP[1] ENTITY[2] (
+ 仲間(ENTITY[2]) ∧
+  CONJ_と(is_element_of(ENTITY[仗助], GROUP[1]), is_element_of(ENTITY[2], GROUP[1])) ∧
+   xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 9_wikipedia_JOJO;NJ
+# ::snt 東方仗助 （ ひがしかたじょうすけ ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[ひがしかたじょうすけ], ENTITY[東方仗助]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東方仗助])
+
+# ::id 10_wikipedia_JOJO;NJ
+# ::snt 声 - 羽多野渉
+∃ EVENT[2] ENTITY[1] (声(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[羽多野渉]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[羽多野渉])
+
+# ::id 11_wikipedia_JOJO;NJ
+# ::snt 本作 の 主人公 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 本作(ENTITY[3]) ∧ の_主人公(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 12_wikipedia_JOJO;NJ
+# ::snt 身長 180 cm
+∃ EVENT[3] ENTITY[2] ENTITY[1] (身長(ENTITY[1]) ∧ CD_180_cm(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 13_wikipedia_JOJO;NJ
+# ::snt （ 初登場時 185 cm （ 成長中 ） と 記載 さ れ て い た が 後 に 180 cm と なっ た ） 。
+∃ ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] TIME[2] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  初登場時(TIME[2]) ∧
+   (CD_185_cm(ENTITY[3]), 成長中(ENTITY[3])) ∧
+    後(ENTITY[5]) ∧
+     CD_180_cm(ENTITY[6]) ∧
+      past(EVENT[4]) ∧
+       past(EVENT[7]) ∧
+        CONJ_が(記載する.0_て_い_た(EVENT[4], _, ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]),
+         なっ_た(EVENT[7], ENTITY[1], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[5]))

@@ -1,0 +1,905 @@
+# ::id 1_nonfiction_IBM-1401;NE
+# ::snt IBM 1401 Programming Systems
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = GROUP[1401_Programming_Systems_IBM])
+
+# ::id 2_nonfiction_IBM-1401;NE
+# ::snt When companies order an IBM 1401 Data Processing System , methods-programming staffs are given the responsibility of translating the requirements of management into finished applications .
+∃ ATTRIB[10] SITUATION[6] EVENT[11] ENTITY[8] GROUP[9] GROUP[7] ENTITY[5] (
+ management(ENTITY[8]) ∧
+  is_requirements_of(GROUP[7], ENTITY[8]) ∧
+   finished(ATTRIB[10]) ∧
+    is_applications_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+     is_FACT_THAT(SITUATION[6], translating(EVENT[11], _, GROUP[7]) ∧ into(EVENT[11]) = GROUP[9]) ∧
+      is_responsibility_of(ENTITY[5], SITUATION[6]) ∧
+       ∀ EVENT[2] GROUP[1] CND_When(companies(GROUP[1]) ∧ order(EVENT[2], GROUP[1], ENTITY[IBM_1401_Data_Processing_System]),
+           ∃ ATTRIB[4] EVENT[12] GROUP[3] (
+            methods-programming(ATTRIB[4]) ∧
+             is_staffs_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ given(EVENT[12], _, ENTITY[5], GROUP[3]))))
+
+# ::id 3_nonfiction_IBM-1401;NE
+# ::snt 1401 Programming Systems are helping cut the costs of getting the computer into operation by simplifying and expediting the work of these methods staffs .
+∃ SITUATION[2] SITUATION[9] EVENT[5] EVENT[6] EVENT[13] EVENT[7] GROUP[1] EVENT[12] GROUP[4] ENTITY[3] ENTITY[11] ENTITY[10] GROUP[8] (
+ methods_staffs(GROUP[4]) ∧
+  is_work_of(ENTITY[3], GROUP[4]) ∧
+   computer(ENTITY[10]) ∧
+    operation(ENTITY[11]) ∧
+     is_FACT_THAT(SITUATION[9], getting(EVENT[12], _, ENTITY[10]) ∧ into(EVENT[12]) = ENTITY[11]) ∧
+      is_costs_of(GROUP[8], SITUATION[9]) ∧
+       1401_Programming_Systems(GROUP[1]) ∧
+        is_FACT_THAT(SITUATION[2], CONJ_and(simplifying(EVENT[5], GROUP[1], ENTITY[3]), expediting(EVENT[6], GROUP[1], ENTITY[3]))) ∧
+         are_helping(EVENT[7], GROUP[1], cut(EVENT[13], GROUP[1], GROUP[8])) ∧ by(EVENT[7]) = SITUATION[2])
+
+# ::id 4_nonfiction_IBM-1401;NE
+# ::snt Modern , high-speed computers , such as the 1401 , are marvelous electronic instruments , but they represent only portions of data processing systems .
+∃ REF1[9] ATTRIB[7] ATTRIB[6] ATTRIB[4] ATTRIB[3] ATTRIB[2] EVENT[8] GROUP[5] GROUP[1] GROUP[12] GROUP[11] (
+ modern(ATTRIB[2]) ∧
+  high-speed(ATTRIB[3]) ∧
+   is_such_as(ATTRIB[4], ENTITY[1401]) ∧
+    is_computers_ATTRIBUTE(GROUP[1], ATTRIB[4]) ∧ is_computers_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_computers_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     marvelous(ATTRIB[6]) ∧
+      electronic(ATTRIB[7]) ∧
+       is_instruments_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_instruments_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+        REF1[9] = they ∧
+         data_processing_systems(GROUP[12]) ∧
+          is_portions_of(GROUP[11], GROUP[12]) ∧
+           CONJ_but(copula(EVENT[8], GROUP[1], GROUP[5]),
+            ONLY GROUP[10] (is_subset_of_or_equal_to(GROUP[10], GROUP[11]), ∃ EVENT[13] represent(EVENT[13], REF1[9], GROUP[10]))))
+
+# ::id 5_nonfiction_IBM-1401;NE
+# ::snt Well-tested programming languages for communication with computers must accompany the systems .
+∃ ATTRIB[2] GROUP[4] ENTITY[3] GROUP[1] GROUP[5] (
+ systems(GROUP[5]) ∧
+  well-tested(ATTRIB[2]) ∧
+   computers(GROUP[4]) ∧
+    is_communication_with(ENTITY[3], GROUP[4]) ∧
+     is_programming_languages_for(GROUP[1], ENTITY[3]) ∧ is_programming_languages_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ MD_must(∃ EVENT[6] accompany(EVENT[6], GROUP[1], GROUP[5])))
+
+# ::id 6_nonfiction_IBM-1401;NE
+# ::snt It is through these languages that the computer itself is used to perform many of the tedious functions that the programmer would otherwise have to perform .
+∃ ATTRIB[8] REF1[4] ENTITY[1] EVENT[5] EVENT[16] ENTITY[10] GROUP[7] ENTITY[3] GROUP[15] (
+ REF1[4] = itself ∧
+  is_computer_RFL(ENTITY[3], REF1[4]) ∧
+   tedious(ATTRIB[8]) ∧
+    programmer(ENTITY[10]) ∧
+     MD_would(∃ SITUATION[13] EVENT[12] EVENT[11] (
+           ADV_otherwise(SITUATION[13]) ∧
+            is_FACT_THAT(SITUATION[13], have(EVENT[11], ENTITY[10], perform(EVENT[12], ENTITY[10], GROUP[7]))))) ∧
+      is_functions_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      languages(GROUP[15]) ∧
+       used(EVENT[5], _, ENTITY[3],
+        MANY ENTITY[6] (is_element_of(ENTITY[6], GROUP[7]), ∃ EVENT[14] perform(EVENT[14], ENTITY[3], ENTITY[6]))) ∧
+        through(EVENT[5]) = ENTITY[1] ∧ copula(EVENT[16], ENTITY[1]) ∧ through(EVENT[16]) = GROUP[15])
+
+# ::id 7_nonfiction_IBM-1401;NE
+# ::snt A few minutes of computer time in translating the program can be equal to many , many hours of staff time in writing instructions coded in the language of the computer .
+∃ ENTITY[4] ENTITY[13] ENTITY[12] (
+ program(ENTITY[4]) ∧
+  computer(ENTITY[13]) ∧
+   is_language_of(ENTITY[12], ENTITY[13]) ∧
+    FEW SITUATION[3] EVENT[5] ENTITY[2] GROUP[1] (
+     (is_FACT_THAT(SITUATION[3], translating(EVENT[5], _, ENTITY[4])) ∧ is_computer_time_in(ENTITY[2], SITUATION[3]) ∧
+      is_minutes_of(GROUP[1], ENTITY[2])),
+     MD_can(∃ ATTRIB[6] EVENT[16] (
+           MANY,MANY SITUATION[9] EVENT[14] EVENT[15] GROUP[10] ENTITY[8] GROUP[7] (
+            (coded(EVENT[14], _, GROUP[10]) ∧ in(EVENT[14]) = ENTITY[12] ∧
+               instructions(GROUP[10]) ∧ is_FACT_THAT(SITUATION[9], writing(EVENT[15], _, GROUP[10])) ∧
+             is_staff_time_in(ENTITY[8], SITUATION[9]) ∧ is_hours_of(GROUP[7], ENTITY[8])), is_equal_to(ATTRIB[6], GROUP[7])) ∧
+            copula(EVENT[16], GROUP[1], ATTRIB[6])))))
+
+# ::id 8_nonfiction_IBM-1401;NE
+# ::snt The combination of a modern computer plus modern programming languages is the key to profitable data processing .
+∃ ATTRIB[8] ATTRIB[5] ATTRIB[3] EVENT[9] GROUP[4] ENTITY[2] GROUP[7] ENTITY[6] ENTITY[1] (
+ modern(ATTRIB[3]) ∧
+  modern(ATTRIB[5]) ∧
+   is_programming_languages_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    is_computer_plus(ENTITY[2], GROUP[4]) ∧ is_computer_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     is_combination_of(ENTITY[1], ENTITY[2]) ∧
+      profitable(ATTRIB[8]) ∧
+       is_data_processing_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_key_to(ENTITY[6], GROUP[7]) ∧ copula(EVENT[9], ENTITY[1], ENTITY[6]))
+
+# ::id 9_nonfiction_IBM-1401;NE
+# ::snt This brochure explains modern IBM Programming Languages and their significance to management .
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ brochure(ENTITY[1]) ∧
+  ∃ GROUP[3] (modern_IBM_Programming_Languages(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+   ∃ REF1[5] ENTITY[6] ENTITY[4] (
+    REF1[5] = their ∧
+     management(ENTITY[6]) ∧
+      is_significance_to(ENTITY[4], ENTITY[6]) ∧ is_significance_POS(ENTITY[4], REF1[5]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   explains(EVENT[7], ENTITY[1], GROUP[2]))
+
+# ::id 10_nonfiction_IBM-1401;NE
+# ::snt Page 2 : Here an operator points to machine language instructions for a new application being generated by the 1401 system on the 1403 high-speed printer .
+∃ SITUATION[10] ATTRIB[4] EVENT[8] EVENT[9] ENTITY[3] GROUP[2] ENTITY[1] ENTITY[7] ENTITY[6] (
+ 1401_system(ENTITY[6]) ∧
+  1403_high-speed_printer(ENTITY[7]) ∧
+   operator(ENTITY[1]) ∧
+    new(ATTRIB[4]) ∧
+     being_generated(EVENT[8], ENTITY[6], ENTITY[3]) ∧ on(EVENT[8]) = ENTITY[7] ∧ is_application_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      is_machine_language_instructions_for(GROUP[2], ENTITY[3]) ∧
+       ADV_here(SITUATION[10]) ∧ is_FACT_THAT(SITUATION[10], points(EVENT[9], ENTITY[1]) ∧ to(EVENT[9]) = GROUP[2]))
+
+# ::id 11_nonfiction_IBM-1401;NE
+# ::snt Statements about the application which were written by the programmer are being translated internally to machine-coded language .
+∃ ATTRIB[7] ENTITY[6] GROUP[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[2] (
+ application(ENTITY[2]) ∧
+  programmer(ENTITY[4]) ∧
+   past(EVENT[5]) ∧
+    ADV_internally(EVENT[8]) ∧
+     written(EVENT[5], ENTITY[4], GROUP[1]) ∧ is_Statements_about(GROUP[1], ENTITY[2]) ∧
+      machine-coded(ATTRIB[7]) ∧
+       is_language_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ being_translated(EVENT[8], _, GROUP[1]) ∧ to(EVENT[8]) = ENTITY[6])
+
+# ::id 12_nonfiction_IBM-1401;NE
+# ::snt What Is A 1401 Program ?
+QUEST(∃ EVENT[3] ENTITY[2] ? ENTITY[1] (1401_Program(ENTITY[2]) ∧ copula(EVENT[3], ENTITY[2], ENTITY[1])))
+
+# ::id 13_nonfiction_IBM-1401;NE
+# ::snt A program is a series of instructions that direct the 1401 as it solves an application .
+∃ REF1[5] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ program(ENTITY[1]) ∧
+  REF1[5] = it ∧
+   application(ENTITY[6]) ∧
+    CRD_as(solves(EVENT[7], REF1[5], ENTITY[6]), direct(EVENT[8], GROUP[3], ENTITY[1401])) ∧ instructions(GROUP[3]) ∧
+     is_series_of(ENTITY[2], GROUP[3]) ∧ copula(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 14_nonfiction_IBM-1401;NE
+# ::snt What Is A Stored Program Machine ?
+QUEST(∃ ATTRIB[3] EVENT[4] ENTITY[2] ? ENTITY[1] (stored(ATTRIB[3]) ∧ is_Program_Machine_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ copula(EVENT[4], ENTITY[2], ENTITY[1])))
+
+# ::id 15_nonfiction_IBM-1401;NE
+# ::snt A stored program machine is one which stores its own instructions in magnetic form and is capable of acting on those instructions to complete the application assigned .
+∃ SITUATION[12] ATTRIB[11] ATTRIB[9] ATTRIB[7] REF1[6] ATTRIB[2] EVENT[10] EVENT[18] EVENT[14] EVENT[19] EVENT[20] ENTITY[8] GROUP[5] ENTITY[3] ENTITY[1] EVENT[17] ENTITY[15] GROUP[13] (
+ instructions(GROUP[13]) ∧
+  assigned(EVENT[17], _, ENTITY[15]) ∧ application(ENTITY[15]) ∧
+   stored(ATTRIB[2]) ∧
+    is_program_machine_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     REF1[6] = its ∧
+      own(ATTRIB[7]) ∧
+       is_instructions_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_instructions_POS(GROUP[5], REF1[6]) ∧
+        magnetic(ATTRIB[9]) ∧
+         is_form_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+          is_FACT_THAT(SITUATION[12],
+           acting(EVENT[14], complete(EVENT[18], _, ENTITY[15])) ∧ on(EVENT[14]) = GROUP[13]) ∧
+           is_capable_of(ATTRIB[11], SITUATION[12]) ∧
+            (CD_one(ENTITY[3]),
+             CONJ_and(stores(EVENT[10], ENTITY[3], GROUP[5]) ∧ in(EVENT[10]) = ENTITY[8],
+              copula(EVENT[19], ENTITY[3], ATTRIB[11]))) ∧ copula(EVENT[20], ENTITY[1], ENTITY[3]))
+
+# ::id 16_nonfiction_IBM-1401;NE
+# ::snt The 1401 uses a stored program .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (stored(ATTRIB[2]) ∧ is_program_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ uses(EVENT[3], ENTITY[1401], ENTITY[1]))
+
+# ::id 17_nonfiction_IBM-1401;NE
+# ::snt What Are 1401 Programming Systems ?
+QUEST(∃ EVENT[3] GROUP[2] ? ENTITY[1] (1401_Programming_Systems(GROUP[2]) ∧ copula(EVENT[3], GROUP[2], ENTITY[1])))
+
+# ::id 18_nonfiction_IBM-1401;NE
+# ::snt There are two types : -LRB- 1 -RRB- Systems that provide the programmer with a simplified vocabulary of statements to use in writing programs , and -LRB- 2 -RRB- Pre-written programs , which take care of many of the everyday operations of the 1401 .
+∃ ATTRIB[21] EVENT[23] GROUP[2] GROUP[1] ENTITY[5] GROUP[20] (
+ programmer(ENTITY[5]) ∧
+  everyday(ATTRIB[21]) ∧
+   is_operations_of(GROUP[20], ENTITY[1401]) ∧ is_operations_ATTRIBUTE(GROUP[20], ATTRIB[21]) ∧
+    ∃ SITUATION[10] ATTRIB[7] EVENT[12] EVENT[13] EVENT[14] GROUP[11] GROUP[8] ENTITY[6] GROUP[3] (
+     simplified(ATTRIB[7]) ∧
+      programs(GROUP[11]) ∧
+       is_FACT_THAT(SITUATION[10], writing(EVENT[12], _, GROUP[11])) ∧
+        use(EVENT[13], _, GROUP[8]) ∧ in(EVENT[13]) = SITUATION[10] ∧ statements(GROUP[8]) ∧
+         is_vocabulary_of(ENTITY[6], GROUP[8]) ∧ is_vocabulary_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+          provide(EVENT[14], GROUP[3], ENTITY[5]) ∧ with(EVENT[14]) = ENTITY[6] ∧
+           Systems(GROUP[3]) ∧ programs(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+     ∃ ATTRIB[16] ENTITY[18] GROUP[15] (
+      pre-written(ATTRIB[16]) ∧
+       care(ENTITY[18]) ∧
+        MANY ENTITY[19] (is_element_of(ENTITY[19], GROUP[20]),
+         ∃ EVENT[22] (take(EVENT[22], GROUP[15], ENTITY[18]) ∧ of(EVENT[22]) = ENTITY[19])) ∧
+         is_programs_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧ is_subset_of_or_equal_to(GROUP[15], GROUP[2])) ∧
+     (CD_two(GROUP[1]), is_types_equals(GROUP[1], GROUP[2])) ∧ copula(EVENT[23], GROUP[1]))
+
+# ::id 19_nonfiction_IBM-1401;NE
+# ::snt What 1401 Programming Systems Mean To Management :
+QUEST(∃ EVENT[3] GROUP[2] ? ENTITY[1] (1401_Programming_Systems(GROUP[2]) ∧ mean(EVENT[3], GROUP[2], ENTITY[1]) ∧ To(EVENT[3]) = ENTITY[Management]))
+
+# ::id 20_nonfiction_IBM-1401;NE
+# ::snt INCREASED PROGRAMMING EFFICIENCY
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (increased(ATTRIB[2]) ∧ is_PROGRAMMING_EFFICIENCY_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 21_nonfiction_IBM-1401;NE
+# ::snt Programmers can concentrate on the application and results rather than on a multitude of " bookkeeping " functions , such as keeping track of storage locations .
+∃ GROUP[1] ENTITY[3] (
+ application(ENTITY[3]) ∧
+  Programmers(GROUP[1]) ∧
+   MD_can(∃ SITUATION[8] ATTRIB[7] EVENT[11] EVENT[12] GROUP[10] ENTITY[9] GROUP[6] ENTITY[5] GROUP[2] (
+         is_element_of(ENTITY[3], GROUP[2]) ∧ ∃ GROUP[4] (results(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[2])) ∧
+          storage_locations(GROUP[10]) ∧
+           is_track_of(ENTITY[9], GROUP[10]) ∧
+            is_FACT_THAT(SITUATION[8], keeping(EVENT[11], _, ENTITY[9])) ∧
+             is_such_as(ATTRIB[7], SITUATION[8]) ∧
+              is_bookkeeping_functions_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+               is_multitude_of(ENTITY[5], GROUP[6]) ∧
+                concentrate(EVENT[12], GROUP[1]) ∧ rather_than_on(EVENT[12]) = ENTITY[5] ∧
+                 on(EVENT[12]) = GROUP[2])))
+
+# ::id 22_nonfiction_IBM-1401;NE
+# ::snt FASTER TRANSLATION OF MANAGEMENT REQUIREMENTS INTO USABLE RESULTS
+∃ ATTRIB[5] ATTRIB[2] EVENT[6] GROUP[4] GROUP[3] ENTITY[1] (
+ faster(ATTRIB[2]) ∧
+  usable(ATTRIB[5]) ∧
+   is_RESULTS_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    is_MANAGEMENT_REQUIREMENTS_INTO(GROUP[3], GROUP[4]) ∧
+     is_TRANSLATION_OF(ENTITY[1], GROUP[3]) ∧ is_TRANSLATION_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 23_nonfiction_IBM-1401;NE
+# ::snt Simplified programming routines allow programmers to write more instructions in less time .
+∃ ATTRIB[2] EVENT[4] GROUP[3] GROUP[1] (
+ simplified(ATTRIB[2]) ∧
+  is_programming_routines_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   programmers(GROUP[3]) ∧
+    allow(EVENT[4], GROUP[1], GROUP[3],
+     MORE GROUP[5] (instructions(GROUP[5]),
+      LESS ENTITY[6] (time(ENTITY[6]), ∃ EVENT[7] (write(EVENT[7], GROUP[3], GROUP[5]) ∧ in(EVENT[7]) = ENTITY[6])))))
+
+# ::id 24_nonfiction_IBM-1401;NE
+# ::snt SHORTER TRAINING PERIODS
+∃ ATTRIB[2] EVENT[3] GROUP[1] (shorter(ATTRIB[2]) ∧ is_TRAINING_PERIODS_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 25_nonfiction_IBM-1401;NE
+# ::snt Programmers use a language more familiar to them rather than having to learn detailed machine codes .
+∃ ATTRIB[8] SITUATION[5] REF1[4] ATTRIB[3] EVENT[9] EVENT[6] EVENT[10] GROUP[7] ENTITY[2] GROUP[1] (
+ Programmers(GROUP[1]) ∧
+  REF1[4] = them ∧
+   detailed(ATTRIB[8]) ∧
+    is_machine_codes_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+     is_FACT_THAT(SITUATION[5], having(EVENT[6], learn(EVENT[9], _, GROUP[7]))) ∧
+      is_more_familiar_rather_than(ATTRIB[3], SITUATION[5]) ∧ is_more_familiar_to(ATTRIB[3], REF1[4]) ∧
+       is_language_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ use(EVENT[10], GROUP[1], ENTITY[2]))
+
+# ::id 26_nonfiction_IBM-1401;NE
+# ::snt REDUCED PROGRAMMING COSTS
+∃ ATTRIB[2] EVENT[3] GROUP[1] (reduced(ATTRIB[2]) ∧ is_PROGRAMMING_COSTS_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 27_nonfiction_IBM-1401;NE
+# ::snt Many pre-written programs are supplied by IBM , eliminating necessity of customers ' staffs writing their own .
+MANY ATTRIB[2] GROUP[1] ((pre-written(ATTRIB[2]) ∧ is_programs_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+ ∃ ATTRIB[9] REF1[8] SITUATION[4] EVENT[12] EVENT[10] EVENT[11] GROUP[6] ENTITY[7] GROUP[5] ENTITY[3] (
+  customers(GROUP[6]) ∧
+   is_staffs_POS(GROUP[5], GROUP[6]) ∧
+    REF1[8] = their ∧
+     own(ATTRIB[9]) ∧
+      is_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_POS(ENTITY[7], REF1[8]) ∧
+       is_FACT_THAT(SITUATION[4], writing(EVENT[10], GROUP[5], ENTITY[7])) ∧
+        is_necessity_of(ENTITY[3], SITUATION[4]) ∧
+         CONJ_and(supplied(EVENT[12], ENTITY[IBM], GROUP[1]), eliminating(EVENT[11], ENTITY[IBM], ENTITY[3]))))
+
+# ::id 28_nonfiction_IBM-1401;NE
+# ::snt MORE AVAILABLE 1401 TIME
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (more_available(ATTRIB[2]) ∧ is_1401_TIME_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 29_nonfiction_IBM-1401;NE
+# ::snt Pre-written programs have already been tested by IBM , reducing tedious checking operations on the computer .
+∃ SITUATION[9] ATTRIB[5] ATTRIB[4] ATTRIB[2] EVENT[8] EVENT[7] GROUP[3] GROUP[1] ENTITY[6] (
+ computer(ENTITY[6]) ∧
+  pre-written(ATTRIB[2]) ∧
+   is_programs_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    tedious(ATTRIB[4]) ∧
+     checking(ATTRIB[5]) ∧
+      is_operations_on(GROUP[3], ENTITY[6]) ∧ is_operations_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_operations_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+       ADV_already(SITUATION[9]) ∧
+        is_FACT_THAT(SITUATION[9], CONJ_and(have_tested(EVENT[8], ENTITY[IBM], GROUP[1]), reducing(EVENT[7], ENTITY[IBM], GROUP[3]))))
+
+# ::id 30_nonfiction_IBM-1401;NE
+# ::snt EASIER TO UNDERSTAND PROGRAMS
+∃ ATTRIB[1] EVENT[3] EVENT[4] GROUP[2] (
+ PROGRAMS(GROUP[2]) ∧
+  is_easier_to(ATTRIB[1], understand(EVENT[3], _, GROUP[2])) ∧ xxx(EVENT[4], _, ATTRIB[1]))
+
+# ::id 31_nonfiction_IBM-1401;NE
+# ::snt Programs are written in symbolic or application-oriented form instead of computer language .
+∃ ATTRIB[4] ATTRIB[3] EVENT[6] ENTITY[5] ENTITY[5] ENTITY[2] GROUP[1] (
+ Programs(GROUP[1]) ∧
+  symbolic(ATTRIB[3]) ∧
+   computer_language(ENTITY[5]) ∧
+    application-oriented(ATTRIB[4]) ∧
+     computer_language(ENTITY[5]) ∧
+      CONJ_or(is_form_instead_of(ENTITY[2], ENTITY[5]) ∧ is_form_ATTRIBUTE(ENTITY[2], ATTRIB[3]),
+       is_form_instead_of(ENTITY[2], ENTITY[5]) ∧ is_form_ATTRIBUTE(ENTITY[2], ATTRIB[4])) ∧
+       written(EVENT[6], _, GROUP[1]) ∧ in(EVENT[6]) = ENTITY[2])
+
+# ::id 32_nonfiction_IBM-1401;NE
+# ::snt This enables management to communicate more easily with the programming staff .
+∃ EVENT[5] EVENT[3] ENTITY[2] ENTITY[4] ENTITY[1] (
+ programming_staff(ENTITY[4]) ∧
+  management(ENTITY[2]) ∧
+   ADV_more_easily(EVENT[5]) ∧
+    enables(EVENT[3], ENTITY[1], ENTITY[2], communicate(EVENT[5], ENTITY[2]) ∧ with(EVENT[5]) = ENTITY[4]))
+
+# ::id 33_nonfiction_IBM-1401;NE
+# ::snt FASTER REPORTS ON OPERATIONS
+∃ ATTRIB[2] EVENT[4] GROUP[3] GROUP[1] (
+ faster(ATTRIB[2]) ∧
+  OPERATIONS(GROUP[3]) ∧
+   is_REPORTS_ON(GROUP[1], GROUP[3]) ∧ is_REPORTS_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 34_nonfiction_IBM-1401;NE
+# ::snt Routines such as those designed for report writing permit faster translation of management requirements into usable information .
+∃ ATTRIB[11] ATTRIB[8] ATTRIB[2] EVENT[12] GROUP[9] ENTITY[10] ENTITY[7] GROUP[1] EVENT[6] ENTITY[5] GROUP[3] (
+ report_writing(ENTITY[5]) ∧
+  designed(EVENT[6], _, GROUP[3]) ∧ for(EVENT[6]) = ENTITY[5] ∧
+   is_such_as(ATTRIB[2], GROUP[3]) ∧
+    is_Routines_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     faster(ATTRIB[8]) ∧
+      management_requirements(GROUP[9]) ∧
+       is_translation_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_translation_of(ENTITY[7], GROUP[9]) ∧
+        usable(ATTRIB[11]) ∧
+         is_information_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ permit(EVENT[12], GROUP[1], ENTITY[7]) ∧ into(EVENT[12]) = ENTITY[10])
+
+# ::id 35_nonfiction_IBM-1401;NE
+# ::snt IBM Programming Systems :
+∃ EVENT[2] GROUP[1] (IBM_Programming_Systems(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 36_nonfiction_IBM-1401;NE
+# ::snt Symbolic Programming Systems
+∃ ATTRIB[2] EVENT[3] GROUP[1] (symbolic(ATTRIB[2]) ∧ is_Programming_Systems_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 37_nonfiction_IBM-1401;NE
+# ::snt These systems permit programs to be written using meaningful names -LRB- symbols -RRB- rather than actual machine language .
+∃ ATTRIB[8] ATTRIB[6] EVENT[10] EVENT[9] EVENT[3] ENTITY[7] ENTITY[4] GROUP[5] GROUP[2] GROUP[1] (
+ systems(GROUP[1]) ∧
+  programs(GROUP[2]) ∧
+   meaningful(ATTRIB[6]) ∧
+    actual(ATTRIB[8]) ∧
+     is_machine_language_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      is_names_rather_than(GROUP[5], ENTITY[7]) ∧ is_names_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+       symbols(ENTITY[4]) ∧
+        is_-GROUP-_namely(GROUP[5], ENTITY[4]) ∧
+         permit(EVENT[3], GROUP[1], GROUP[2],
+          CONJ_and(written(EVENT[10], _, GROUP[2]), using(EVENT[9], GROUP[2], GROUP[5]))))
+
+# ::id 38_nonfiction_IBM-1401;NE
+# ::snt Autocoder
+∃ EVENT[2] ENTITY[1] (Autocoder(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 39_nonfiction_IBM-1401;NE
+# ::snt This is an advanced symbolic programming system .
+∃ ATTRIB[4] ATTRIB[3] EVENT[5] ENTITY[2] ENTITY[1] (
+ advanced(ATTRIB[3]) ∧
+  symbolic(ATTRIB[4]) ∧
+   is_programming_system_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_programming_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ copula(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 40_nonfiction_IBM-1401;NE
+# ::snt It allows generation of multiple machine instructions from one source statement , free-form coding , and an automatic assembly process through magnetic tape .
+∃ REF1[1] EVENT[13] GROUP[2] (
+ REF1[1] = it ∧
+  ∃ ATTRIB[5] ENTITY[6] GROUP[4] ENTITY[3] (
+   multiple(ATTRIB[5]) ∧
+    (CD_one(ENTITY[6]), source_statement(ENTITY[6])) ∧
+     is_machine_instructions_from(GROUP[4], ENTITY[6]) ∧ is_machine_instructions_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+      is_generation_of(ENTITY[3], GROUP[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ATTRIB[8] ENTITY[7] (free-form(ATTRIB[8]) ∧ is_coding_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   ∃ ATTRIB[12] ATTRIB[10] ENTITY[11] ENTITY[9] (
+    automatic(ATTRIB[10]) ∧
+     magnetic(ATTRIB[12]) ∧
+      is_tape_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+       is_assembly_process_through(ENTITY[9], ENTITY[11]) ∧ is_assembly_process_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧ is_element_of(ENTITY[9], GROUP[2])) ∧
+   allows(EVENT[13], REF1[1], GROUP[2]))
+
+# ::id 41_nonfiction_IBM-1401;NE
+# ::snt COBOL
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[COBOL])
+
+# ::id 42_nonfiction_IBM-1401;NE
+# ::snt COBOL is a problem-oriented programming language for commercial applications .
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] GROUP[3] ENTITY[1] (
+ problem-oriented(ATTRIB[2]) ∧
+  commercial(ATTRIB[4]) ∧
+   is_applications_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    is_programming_language_for(ENTITY[1], GROUP[3]) ∧ is_programming_language_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[5], ENTITY[COBOL], ENTITY[1]))
+
+# ::id 43_nonfiction_IBM-1401;NE
+# ::snt COBOL permits a programmer to use language based on English words and phrases in describing an application .
+∃ SITUATION[9] EVENT[8] EVENT[11] EVENT[12] EVENT[2] GROUP[5] ENTITY[10] ENTITY[3] ENTITY[1] (
+ programmer(ENTITY[1]) ∧
+  ∃ GROUP[6] (English_words(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+   ∃ GROUP[7] (English_phrases(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5])) ∧
+   based(EVENT[8], _, ENTITY[3]) ∧ on(EVENT[8]) = GROUP[5] ∧ language(ENTITY[3]) ∧
+    application(ENTITY[10]) ∧
+     is_FACT_THAT(SITUATION[9], describing(EVENT[11], ENTITY[3], ENTITY[10])) ∧
+      permits(EVENT[2], ENTITY[COBOL], ENTITY[1], use(EVENT[12], ENTITY[1], ENTITY[3]) ∧ in(EVENT[12]) = SITUATION[9]))
+
+# ::id 44_nonfiction_IBM-1401;NE
+# ::snt Input/Output Control System
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Input__slash__Output_Control_System])
+
+# ::id 45_nonfiction_IBM-1401;NE
+# ::snt This system provides the programmer with a packaged means of accomplishing input and output requirements .
+∃ SITUATION[5] ATTRIB[4] EVENT[9] EVENT[10] GROUP[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ system(ENTITY[1]) ∧
+  programmer(ENTITY[2]) ∧
+   packaged(ATTRIB[4]) ∧
+    ∃ GROUP[7] (input_requirements(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+     ∃ GROUP[8] (output_requirements(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6])) ∧
+     is_FACT_THAT(SITUATION[5], accomplishing(EVENT[9], _, GROUP[6])) ∧
+      is_means_of(ENTITY[3], SITUATION[5]) ∧ is_means_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       provides(EVENT[10], ENTITY[1], ENTITY[2]) ∧ with(EVENT[10]) = ENTITY[3])
+
+# ::id 46_nonfiction_IBM-1401;NE
+# ::snt Utility Programs
+∃ EVENT[2] GROUP[1] (Utility_Programs(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 47_nonfiction_IBM-1401;NE
+# ::snt These are pre-written instructions to perform many of the everyday operations of an installation .
+∃ ATTRIB[3] ATTRIB[6] EVENT[9] GROUP[2] ENTITY[7] GROUP[5] GROUP[1] (
+ everyday(ATTRIB[6]) ∧
+  installation(ENTITY[7]) ∧
+   is_operations_of(GROUP[5], ENTITY[7]) ∧ is_operations_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+    pre-written(ATTRIB[3]) ∧
+     is_instructions_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+      is_instructions_to(GROUP[2], MANY ENTITY[4] (is_element_of(ENTITY[4], GROUP[5]), ∃ EVENT[8] perform(EVENT[8], _, ENTITY[4]))) ∧
+      copula(EVENT[9], GROUP[1], GROUP[2]))
+
+# ::id 48_nonfiction_IBM-1401;NE
+# ::snt Subroutines
+∃ EVENT[2] GROUP[1] (Subroutines(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 49_nonfiction_IBM-1401;NE
+# ::snt These are routines for multiplication , division , dozens conversion , and program error detection aids .
+∃ EVENT[8] GROUP[3] GROUP[2] GROUP[1] (
+ ∃ ENTITY[4] (multiplication(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[5] (division(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+  ∃ ENTITY[6] (dozens_conversion(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+  ∃ GROUP[7] (program_error_detection_aids(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3])) ∧
+  is_routines_for(GROUP[2], GROUP[3]) ∧ copula(EVENT[8], GROUP[1], GROUP[2]))
+
+# ::id 50_nonfiction_IBM-1401;NE
+# ::snt Tape Utilities
+∃ EVENT[2] GROUP[1] (Tape_Utilities(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 51_nonfiction_IBM-1401;NE
+# ::snt These are generalized instructions , particularly useful to 1401 customers who also use larger data processing systems .
+∃ ATTRIB[8] ATTRIB[4] ATTRIB[3] EVENT[9] EVENT[11] GROUP[7] GROUP[5] GROUP[2] GROUP[1] (
+ generalized(ATTRIB[3]) ∧
+  larger(ATTRIB[8]) ∧
+   is_data_processing_systems_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+    use(EVENT[9], GROUP[5], GROUP[7]) ∧ 1401_customers(GROUP[5]) ∧
+     is_particularly_useful_to(ATTRIB[4], GROUP[5]) ∧
+      is_instructions_ATTRIBUTE(GROUP[2], ATTRIB[4]) ∧ is_instructions_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+       ADV_also(EVENT[9]) ∧ copula(EVENT[11], GROUP[1], GROUP[2]))
+
+# ::id 52_nonfiction_IBM-1401;NE
+# ::snt They facilitate the transfer of data between IBM cards , magnetic tapes , and printers .
+∃ REF1[1] ATTRIB[7] EVENT[9] GROUP[5] GROUP[6] GROUP[8] GROUP[4] GROUP[3] ENTITY[2] (
+ IBM_cards(GROUP[5]) ∧
+  magnetic(ATTRIB[7]) ∧
+   is_tapes_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+    printers(GROUP[8]) ∧
+     is_subset_of_or_equal_to(GROUP[5], GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[4]) ∧
+      is_data_between(GROUP[3], GROUP[4]) ∧
+       is_transfer_of(ENTITY[2], GROUP[3]) ∧ REF1[1] = they ∧ facilitate(EVENT[9], REF1[1], ENTITY[2]))
+
+# ::id 53_nonfiction_IBM-1401;NE
+# ::snt They also provide for some 1401 processing while the transfer of data is taking place .
+∃ SITUATION[8] ATTRIB[2] REF1[1] EVENT[6] EVENT[7] ENTITY[5] GROUP[4] ENTITY[3] (
+ data(GROUP[4]) ∧
+  is_transfer_of(ENTITY[3], GROUP[4]) ∧
+   REF1[1] = they ∧
+    processing(ATTRIB[2]) ∧
+     is_ATTRIBUTE(ENTITY[1401], ATTRIB[2]) ∧
+      place(ENTITY[5]) ∧
+       ADV_also(SITUATION[8]) ∧
+        is_FACT_THAT(SITUATION[8],
+         CRD_while(is_taking(EVENT[6], ENTITY[3], ENTITY[5]),
+          provide(EVENT[7], REF1[1]) ∧ for(EVENT[7]) = ENTITY[1401])))
+
+# ::id 54_nonfiction_IBM-1401;NE
+# ::snt Tape Sort Programs
+∃ EVENT[2] GROUP[1] (Tape_Sort_Programs(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 55_nonfiction_IBM-1401;NE
+# ::snt Data can be sorted and classified at high speed for further processing by use of these generalized sorting routines .
+∃ ATTRIB[9] GROUP[1] GROUP[8] (
+ generalized(ATTRIB[9]) ∧
+  is_sorting_routines_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+   Data(GROUP[1]) ∧
+    MD_can(∃ ATTRIB[6] ATTRIB[5] ATTRIB[3] EVENT[10] ENTITY[7] ENTITY[4] ENTITY[2] (
+          high(ATTRIB[3]) ∧
+           is_speed_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+            further(ATTRIB[5]) ∧
+             processing(ATTRIB[6]) ∧
+              is_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+               is_use_of(ENTITY[7], GROUP[8]) ∧
+                sorted_and_classified(EVENT[10], _, GROUP[1]) ∧ by(EVENT[10]) = ENTITY[7] ∧
+                 for(EVENT[10]) = ENTITY[4] ∧ at(EVENT[10]) = ENTITY[2])))
+
+# ::id 56_nonfiction_IBM-1401;NE
+# ::snt Report Program Generator
+∃ EVENT[2] ENTITY[1] (Report_Program_Generator(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 57_nonfiction_IBM-1401;NE
+# ::snt The programmer uses simplified , descriptive language with which he is already familiar to obtain reports swiftly and efficiently .
+∃ PRP[9] ATTRIB[7] REF1[6] ATTRIB[4] ATTRIB[3] EVENT[8] EVENT[11] EVENT[13] GROUP[10] ENTITY[2] ENTITY[1] (
+ programmer(ENTITY[1]) ∧
+  simplified(ATTRIB[3]) ∧
+   descriptive(ATTRIB[4]) ∧
+    REF1[6] = he ∧
+     already_familiar(ATTRIB[7]) ∧
+      copula(EVENT[8], REF1[6], ATTRIB[7]) ∧ with(EVENT[8]) = ENTITY[2] ∧
+       is_language_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_language_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+       reports(GROUP[10]) ∧
+        is_FACT_THAT(PRP[9], obtain(EVENT[11], ENTITY[2], GROUP[10])) ∧
+         CONJ_and(ADV_swiftly(EVENT[11]), ADV_efficiently(EVENT[11])) ∧
+          uses(EVENT[13], ENTITY[1], ENTITY[2]) ∧ PRP(EVENT[13]) = PRP[9])
+
+# ::id 58_nonfiction_IBM-1401;NE
+# ::snt FORTRAN -LRB- Contraction of FORmula TRANslator -RRB-
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ FORmula_TRANslator(ENTITY[2]) ∧
+  is_Contraction_of(ENTITY[1], ENTITY[2]) ∧
+   is_-ENTITY-_namely(ENTITY[FORTRAN], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[FORTRAN])
+
+# ::id 59_nonfiction_IBM-1401;NE
+# ::snt Engineers and mathematicians state problems in familiar algebraic language for solution by the computer .
+∃ ATTRIB[7] ATTRIB[6] EVENT[10] ENTITY[5] ENTITY[8] GROUP[4] GROUP[1] ENTITY[9] (
+ computer(ENTITY[9]) ∧
+  ∃ GROUP[2] (Engineers(GROUP[2]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+   ∃ GROUP[3] (mathematicians(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧
+   familiar(ATTRIB[6]) ∧
+    algebraic(ATTRIB[7]) ∧
+     is_language_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_language_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+      is_problems_in(GROUP[4], ENTITY[5]) ∧
+       is_solution_by(ENTITY[8], ENTITY[9]) ∧ state(EVENT[10], GROUP[1], GROUP[4]) ∧ for(EVENT[10]) = ENTITY[8])
+
+# ::id 60_nonfiction_IBM-1401;NE
+# ::snt RAMAC File Organization
+∃ EVENT[2] ENTITY[1] (RAMAC_File_Organization(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 61_nonfiction_IBM-1401;NE
+# ::snt Routines are supplied for simplifying organization of records for storage in the 1401 Random Access File .
+∃ SITUATION[2] EVENT[7] EVENT[8] ENTITY[5] GROUP[4] ENTITY[3] GROUP[1] ENTITY[6] (
+ 1401_Random_Access_File(ENTITY[6]) ∧
+  Routines(GROUP[1]) ∧
+   is_storage_in(ENTITY[5], ENTITY[6]) ∧
+    is_records_for(GROUP[4], ENTITY[5]) ∧
+     is_organization_of(ENTITY[3], GROUP[4]) ∧
+      is_FACT_THAT(SITUATION[2], simplifying(EVENT[7], GROUP[1], ENTITY[3])) ∧
+       supplied(EVENT[8], _, GROUP[1]) ∧ for(EVENT[8]) = SITUATION[2])
+
+# ::id 62_nonfiction_IBM-1401;NE
+# ::snt Here 's how one of the 1401 programming systems -- Report Program Generator -- works to increase programming efficiency
+∃ EVENT[2] ENTITY[1] GROUP[5] (
+ 1401_programming_systems(GROUP[5]) ∧
+  ADV_here(ENTITY[1]) ∧
+   copula(EVENT[2], ENTITY[1],
+    QUEST(∃ SITUATION[9] EVENT[8] EVENT[6] ENTITY[7] ENTITY[4] ? ENTITY[3] (
+          (CD_one(ENTITY[4]), is_Report_Program_Generator_of(ENTITY[4], GROUP[5])) ∧
+           programming_efficiency(ENTITY[7]) ∧
+            is_ADV(SITUATION[9], ENTITY[3]) ∧
+             is_FACT_THAT(SITUATION[9], works(EVENT[6], ENTITY[4], increase(EVENT[8], ENTITY[4], ENTITY[7])))))))
+
+# ::id 63_nonfiction_IBM-1401;NE
+# ::snt 1401 computers produce important reports for management in record time because of their outstanding processing and printing abilities .
+∃ ATTRIB[8] REF1[7] ATTRIB[3] EVENT[14] ENTITY[5] ENTITY[4] GROUP[9] ENTITY[6] GROUP[2] GROUP[1] (
+ 1401_computers(GROUP[1]) ∧
+  important(ATTRIB[3]) ∧
+   management(ENTITY[4]) ∧
+    record_time(ENTITY[5]) ∧
+     is_reports_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_reports_in(GROUP[2], ENTITY[5]) ∧ is_reports_for(GROUP[2], ENTITY[4]) ∧
+      REF1[7] = their ∧
+       outstanding(ATTRIB[8]) ∧
+        ∃ ATTRIB[11] GROUP[10] (processing(ATTRIB[11]) ∧ is_abilities_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])) ∧
+         ∃ ATTRIB[13] GROUP[12] (printing(ATTRIB[13]) ∧ is_abilities_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[9])) ∧
+         is_equals(ENTITY[6], GROUP[9]) ∧ is_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_POS(ENTITY[6], REF1[7]) ∧
+          produce(EVENT[14], GROUP[1], GROUP[2]) ∧ because_of(EVENT[14]) = ENTITY[6])
+
+# ::id 64_nonfiction_IBM-1401;NE
+# ::snt In addition to this rapid machine processing of input data used in reports , still more speed is achieved by the rapid preparation of programs to produce the reports .
+∃ ATTRIB[10] ATTRIB[3] ENTITY[1] EVENT[7] EVENT[13] GROUP[6] GROUP[4] ENTITY[2] GROUP[12] GROUP[11] ENTITY[9] (
+ rapid(ATTRIB[3]) ∧
+  reports(GROUP[6]) ∧
+   used(EVENT[7], _, GROUP[4]) ∧ in(EVENT[7]) = GROUP[6] ∧ input_data(GROUP[4]) ∧
+    is_machine_processing_of(ENTITY[2], GROUP[4]) ∧ is_machine_processing_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     rapid(ATTRIB[10]) ∧
+      reports(GROUP[12]) ∧
+       is_programs_to(GROUP[11], produce(EVENT[13], _, GROUP[12])) ∧
+        is_preparation_of(ENTITY[9], GROUP[11]) ∧ is_preparation_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+         is_addition_to(ENTITY[1], ENTITY[2]) ∧
+          STILL_MORE ENTITY[8] (speed(ENTITY[8]), ∃ EVENT[14] (achieved(EVENT[14], ENTITY[9], ENTITY[8]) ∧ In(EVENT[14]) = ENTITY[1])))
+
+# ::id 65_nonfiction_IBM-1401;NE
+# ::snt This is possible because of the IBM Report Program Generator , a unique system which permits programs to be created with a minimum of time and effort .
+∃ ATTRIB[2] ATTRIB[4] EVENT[14] EVENT[12] EVENT[7] ENTITY[10] ENTITY[11] GROUP[9] ENTITY[8] GROUP[6] ENTITY[3] ENTITY[13] ENTITY[1] (
+ IBM_Report_Program_Generator(ENTITY[13]) ∧
+  unique(ATTRIB[4]) ∧
+   programs(GROUP[6]) ∧
+    time(ENTITY[10]) ∧
+     effort(ENTITY[11]) ∧
+      is_element_of(ENTITY[10], GROUP[9]) ∧ is_element_of(ENTITY[11], GROUP[9]) ∧
+       is_minimum_of(ENTITY[8], GROUP[9]) ∧
+        permits(EVENT[7], ENTITY[3], GROUP[6],
+         created(EVENT[12], _, GROUP[6]) ∧ with(EVENT[12]) = ENTITY[8]) ∧
+         is_system_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+         is_-ENTITY-_namely(ENTITY[13], ENTITY[3]) ∧
+          possible(ATTRIB[2]) ∧
+           copula(EVENT[14], ENTITY[1]) ∧ because_of(EVENT[14]) = ENTITY[13] ∧ ATTRIBUTE(EVENT[14]) = ATTRIB[2])
+
+# ::id 66_nonfiction_IBM-1401;NE
+# ::snt This example illustrates how the Report Program Generator simplifies the preparation of one part of an Expense Distribution Report -LRB- The Major Total Line -RRB- :
+∃ ATTRIB[9] ATTRIB[8] EVENT[2] ENTITY[7] ENTITY[10] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[1] (
+ example(ENTITY[1]) ∧
+  Report_Program_Generator(ENTITY[4]) ∧
+   Expense_Distribution_Report(ENTITY[10]) ∧
+    major(ATTRIB[8]) ∧
+     total(ATTRIB[9]) ∧
+      is_Line_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_Line_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       is_-ENTITY-_namely(ENTITY[10], ENTITY[7]) ∧
+        (CD_one(ENTITY[6]), is_part_of(ENTITY[6], ENTITY[10])) ∧
+         is_preparation_of(ENTITY[5], ENTITY[6]) ∧
+          illustrates(EVENT[2], ENTITY[1],
+           QUEST(∃ EVENT[11] ? ENTITY[3] (is_ADV(EVENT[11], ENTITY[3]) ∧ simplifies(EVENT[11], ENTITY[4], ENTITY[5])))))
+
+# ::id 67_nonfiction_IBM-1401;NE
+# ::snt Without the Report Program Generator , the program to get the Major Total Line would be written out in detail , step by step :
+∃ ATTRIB[5] ATTRIB[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ Report_Program_Generator(ENTITY[1]) ∧
+  major(ATTRIB[4]) ∧
+   total(ATTRIB[5]) ∧
+    is_Line_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_Line_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     is_program_to(ENTITY[2], get(EVENT[6], _, ENTITY[3])) ∧
+      MD_would(∃ EVENT[10] ENTITY[9] ENTITY[8] ENTITY[7] (
+            detail(ENTITY[7]) ∧
+             step(ENTITY[9]) ∧
+              is_step_by(ENTITY[8], ENTITY[9]) ∧
+               written_out(EVENT[10], _, ENTITY[2]) ∧ ADV(EVENT[10]) = ENTITY[8] ∧
+                in(EVENT[10]) = ENTITY[7] ∧ Without(EVENT[10]) = ENTITY[1])))
+
+# ::id 68_nonfiction_IBM-1401;NE
+# ::snt But with the Report Program Generator , all the programmer has to write are these two statements :
+∃ GROUP[4] ENTITY[1] (
+ Report_Program_Generator(ENTITY[1]) ∧
+  (CD_two(GROUP[4]), statements(GROUP[4])) ∧
+   ALL ENTITY[2] (programmer(ENTITY[2]),
+    ∃ EVENT[5] EVENT[3] (has(EVENT[3], ENTITY[2], write_are(EVENT[5], ENTITY[2], GROUP[4])) ∧ with(EVENT[3]) = ENTITY[1])))
+
+# ::id 69_nonfiction_IBM-1401;NE
+# ::snt It 's just as easy to write the statements to generate the rest of the report !
+∃ ATTRIB[7] SITUATION[1] EVENT[6] EVENT[3] EVENT[8] ENTITY[5] ENTITY[4] GROUP[2] (
+ statements(GROUP[2]) ∧
+  report(ENTITY[5]) ∧
+   is_rest_of(ENTITY[4], ENTITY[5]) ∧
+    is_FACT_THAT(SITUATION[1], write(EVENT[3], _, GROUP[2], generate(EVENT[6], GROUP[2], ENTITY[4]))) ∧
+     just_as_easy(ATTRIB[7]) ∧ copula(EVENT[8], SITUATION[1], ATTRIB[7]))
+
+# ::id 70_nonfiction_IBM-1401;NE
+# ::snt The 1401 itself does the work of converting the programmers ' statements into the detailed instructions .
+∃ ATTRIB[7] SITUATION[3] REF1[1] EVENT[9] EVENT[8] GROUP[5] GROUP[6] GROUP[4] ENTITY[2] (
+ REF1[1] = itself ∧
+  is_RFL(ENTITY[1401], REF1[1]) ∧
+   programmers(GROUP[5]) ∧
+    is_statements_POS(GROUP[4], GROUP[5]) ∧
+     detailed(ATTRIB[7]) ∧
+      is_instructions_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+       is_FACT_THAT(SITUATION[3], converting(EVENT[8], _, GROUP[4]) ∧ into(EVENT[8]) = GROUP[6]) ∧
+        is_work_of(ENTITY[2], SITUATION[3]) ∧ does(EVENT[9], ENTITY[1401], ENTITY[2]))
+
+# ::id 71_nonfiction_IBM-1401;NE
+# ::snt The Report Program Generator is an example of what IBM Programming Systems can accomplish .
+∃ SITUATION[3] EVENT[7] ENTITY[2] ENTITY[1] (
+ Report_Program_Generator(ENTITY[1]) ∧
+  is_FACT_THAT(SITUATION[3], QUEST(∃ GROUP[5] ? ENTITY[4] (IBM_Programming_Systems(GROUP[5]) ∧ MD_can(∃ EVENT[6] accomplish(EVENT[6], GROUP[5], ENTITY[4]))))) ∧
+   is_example_of(ENTITY[2], SITUATION[3]) ∧ copula(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 72_nonfiction_IBM-1401;NE
+# ::snt With IBM you can be certain of total systems support for maximum profitability .
+∃ REF1[1] (
+ REF1[1] = you ∧
+  MD_can(∃ ATTRIB[6] ATTRIB[4] ATTRIB[2] EVENT[7] ENTITY[5] ENTITY[3] (
+        total(ATTRIB[4]) ∧
+         maximum(ATTRIB[6]) ∧
+          is_profitability_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+           is_systems_support_for(ENTITY[3], ENTITY[5]) ∧ is_systems_support_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+            is_certain_of(ATTRIB[2], ENTITY[3]) ∧
+             copula(EVENT[7], REF1[1]) ∧ ATTRIBUTE(EVENT[7]) = ATTRIB[2] ∧
+              With(EVENT[7]) = ENTITY[IBM])))
+
+# ::id 73_nonfiction_IBM-1401;NE
+# ::snt IBM Stands For Service
+∃ EVENT[2] ENTITY[1] (Service(ENTITY[1]) ∧ stands(EVENT[2], ENTITY[IBM]) ∧ For(EVENT[2]) = ENTITY[1])
+
+# ::id 74_nonfiction_IBM-1401;NE
+# ::snt Service that begins long before the delivery of a computer ... and continues in depth long after .
+∃ ENTITY[7] ENTITY[1] EVENT[5] EVENT[8] EVENT[10] ENTITY[4] ENTITY[3] (
+ computer(ENTITY[4]) ∧
+  is_delivery_of(ENTITY[3], ENTITY[4]) ∧
+   ADV_long(EVENT[5]) ∧
+    ADV_long_after(EVENT[8]) ∧
+     depth(ENTITY[7]) ∧
+      CONJ_and(begins(EVENT[5], ENTITY[1]) ∧ before(EVENT[5]) = ENTITY[3],
+       continues(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = ENTITY[7]) ∧ Service(ENTITY[1]) ∧
+       xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 75_nonfiction_IBM-1401;NE
+# ::snt Service that has been proven by years of data processing experience .
+∃ EVENT[5] EVENT[6] ENTITY[4] GROUP[3] ENTITY[1] (
+ data_processing_experience(ENTITY[4]) ∧
+  is_years_of(GROUP[3], ENTITY[4]) ∧
+   has_proven(EVENT[5], GROUP[3], ENTITY[1]) ∧ Service(ENTITY[1]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 76_nonfiction_IBM-1401;NE
+# ::snt New IBM Services include :
+∃ EVENT[1] include(EVENT[1], GROUP[New_IBM_Services])
+
+# ::id 77_nonfiction_IBM-1401;NE
+# ::snt Programmed Applications Library
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (programmed(ATTRIB[2]) ∧ is_Applications_Library_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 78_nonfiction_IBM-1401;NE
+# ::snt Pre-tested computer programs designed to handle various major data processing functions common to firms within a specific industry .
+∃ ATTRIB[11] ATTRIB[8] ATTRIB[7] ATTRIB[6] ATTRIB[2] EVENT[12] EVENT[4] EVENT[13] ENTITY[10] GROUP[9] GROUP[5] GROUP[1] (
+ pre-tested(ATTRIB[2]) ∧
+  various(ATTRIB[6]) ∧
+   major(ATTRIB[7]) ∧
+    specific(ATTRIB[11]) ∧
+     is_industry_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+      is_firms_within(GROUP[9], ENTITY[10]) ∧
+       is_common_to(ATTRIB[8], GROUP[9]) ∧
+        is_data_processing_functions_ATTRIBUTE(GROUP[5], ATTRIB[8]) ∧ is_data_processing_functions_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_data_processing_functions_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+         designed(EVENT[4], _, GROUP[1], handle(EVENT[12], GROUP[1], GROUP[5])) ∧
+          is_computer_programs_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[13]) ∧ LINK(EVENT[13]) = GROUP[1])
+
+# ::id 79_nonfiction_IBM-1401;NE
+# ::snt Programming Systems Support
+∃ EVENT[2] ENTITY[1] (Programming_Systems_Support(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 80_nonfiction_IBM-1401;NE
+# ::snt To keep customers up-to-date on the availability and use of all new programming systems .
+∃ ATTRIB[3] EVENT[10] EVENT[1] GROUP[2] ENTITY[6] ENTITY[7] GROUP[5] ENTITY[4] (
+ availability(ENTITY[6]) ∧
+  use(ENTITY[7]) ∧
+   is_element_of(ENTITY[6], GROUP[5]) ∧ is_element_of(ENTITY[7], GROUP[5]) ∧
+    ALL ATTRIB[9] GROUP[8] ((new(ATTRIB[9]) ∧ is_programming_systems_ATTRIBUTE(GROUP[8], ATTRIB[9])),
+     is_element_of(ENTITY[4], GROUP[8]) ∧ is_equals(ENTITY[4], GROUP[5])) ∧
+     customers(GROUP[2]) ∧
+      is_up-to-date_on(ATTRIB[3], ENTITY[4]) ∧
+       keep(EVENT[1], xxx(EVENT[10], GROUP[2]) ∧ ATTRIBUTE(EVENT[10]) = ATTRIB[3]))
+
+# ::id 81_nonfiction_IBM-1401;NE
+# ::snt To assist the IBM programming staff in reflecting customer requirements in the specification of new programming systems .
+∃ SITUATION[2] ATTRIB[6] EVENT[7] EVENT[8] GROUP[3] GROUP[5] ENTITY[4] ENTITY[1] (
+ IBM_programming_staff(ENTITY[1]) ∧
+  new(ATTRIB[6]) ∧
+   is_programming_systems_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+    is_specification_of(ENTITY[4], GROUP[5]) ∧
+     is_customer_requirements_in(GROUP[3], ENTITY[4]) ∧
+      is_FACT_THAT(SITUATION[2], reflecting(EVENT[7], ENTITY[1], GROUP[3])) ∧
+       assist(EVENT[8], _, ENTITY[1]) ∧ in(EVENT[8]) = SITUATION[2])
+
+# ::id 82_nonfiction_IBM-1401;NE
+# ::snt Other services available to every IBM customer :
+∃ ATTRIB[3] ATTRIB[2] EVENT[5] GROUP[1] (
+ other(ATTRIB[2]) ∧
+  ∀ ENTITY[4] (IBM_customer(ENTITY[4]) → is_available_to(ATTRIB[3], ENTITY[4])) ∧
+   is_services_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_services_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[1])
+
+# ::id 83_nonfiction_IBM-1401;NE
+# ::snt Program Library
+∃ EVENT[2] ENTITY[1] (Program_Library(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 84_nonfiction_IBM-1401;NE
+# ::snt A library of 1401 programs will be established to aid all 1401 customers in solving specific applications , scientific as well as commercial .
+∃ GROUP[2] ENTITY[1] (
+ 1401_programs(GROUP[2]) ∧
+  is_library_of(ENTITY[1], GROUP[2]) ∧
+   MD_will(∃ EVENT[3] established(EVENT[3], _, ENTITY[1],
+         ALL GROUP[4] (1401_customers(GROUP[4]),
+          ∃ ATTRIB[10] SITUATION[5] EVENT[11] EVENT[12] GROUP[9] (
+           specific(ATTRIB[10]) ∧
+            is_applications_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+             SCIENTIFIC ATTRIB[8] ENTITY[7] ENTITY[6] ((commercial(ATTRIB[8]) ∧ is_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_ADV_as_well_as(ENTITY[6], ENTITY[7])),
+              is_-GROUP-_namely(GROUP[9], ENTITY[6])) ∧
+              is_FACT_THAT(SITUATION[5], solving(EVENT[11], GROUP[4], GROUP[9])) ∧
+               aid(EVENT[12], ENTITY[1], GROUP[4]) ∧ in(EVENT[12]) = SITUATION[5])))))
+
+# ::id 85_nonfiction_IBM-1401;NE
+# ::snt These will include programs written by customers and programs written by IBM .
+∃ GROUP[1] MD_will(∃ EVENT[10] GROUP[2] (
+      ∃ EVENT[6] GROUP[5] GROUP[3] (
+       customers(GROUP[5]) ∧
+        written(EVENT[6], GROUP[5], GROUP[3]) ∧ programs(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+       ∃ EVENT[9] GROUP[7] (written(EVENT[9], ENTITY[IBM], GROUP[7]) ∧ programs(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[2])) ∧
+       include(EVENT[10], GROUP[1], GROUP[2])))
+
+# ::id 86_nonfiction_IBM-1401;NE
+# ::snt Schools and Seminars
+∃ EVENT[4] GROUP[1] (
+ ∃ GROUP[2] (Schools(GROUP[2]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ GROUP[3] (Seminars(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 87_nonfiction_IBM-1401;NE
+# ::snt Executive schools for management personnel .
+∃ ATTRIB[2] EVENT[4] GROUP[3] GROUP[1] (
+ executive(ATTRIB[2]) ∧
+  management_personnel(GROUP[3]) ∧
+   is_schools_for(GROUP[1], GROUP[3]) ∧ is_schools_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 88_nonfiction_IBM-1401;NE
+# ::snt Programming schools for methods personnel .
+∃ EVENT[3] GROUP[2] GROUP[1] (methods_personnel(GROUP[2]) ∧ is_Programming_schools_for(GROUP[1], GROUP[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 89_nonfiction_IBM-1401;NE
+# ::snt Industry seminars where customers meet to discuss subjects of common interest .
+∃ SITUATION[9] ATTRIB[7] EVENT[8] EVENT[4] EVENT[10] ENTITY[6] GROUP[5] GROUP[3] GROUP[1] (
+ customers(GROUP[3]) ∧
+  common(ATTRIB[7]) ∧
+   is_interest_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+    is_subjects_of(GROUP[5], ENTITY[6]) ∧
+     is_FACT_THAT(SITUATION[9], meet(EVENT[4], GROUP[3], discuss(EVENT[8], GROUP[3], GROUP[5]))) ∧ Industry_seminars(GROUP[1]) ∧
+      is_LOC(SITUATION[9], GROUP[1]) ∧ xxx(EVENT[10]) ∧ LINK(EVENT[10]) = GROUP[1])
+
+# ::id 90_nonfiction_IBM-1401;NE
+# ::snt Branch Offices
+∃ EVENT[2] GROUP[1] (Branch_Offices(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 91_nonfiction_IBM-1401;NE
+# ::snt More than 200 branch offices serve customer needs promptly and efficiently .
+∃ EVENT[3] GROUP[2] GROUP[1] (
+ (CD_more_than_200(GROUP[1]), branch_offices(GROUP[1])) ∧
+  customer_needs(GROUP[2]) ∧ CONJ_and(ADV_promptly(EVENT[3]), ADV_efficiently(EVENT[3])) ∧ serve(EVENT[3], GROUP[1], GROUP[2]))
+
+# ::id 92_nonfiction_IBM-1401;NE
+# ::snt Sales and Systems Representatives
+∃ EVENT[4] GROUP[1] (
+ ∃ GROUP[2] (Sales(GROUP[2]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ GROUP[3] (Systems_Representatives(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 93_nonfiction_IBM-1401;NE
+# ::snt Experienced , highly trained individuals work with customers in applying IBM methods to their requirements .
+∃ REF1[8] SITUATION[5] ATTRIB[3] ATTRIB[2] EVENT[9] EVENT[10] GROUP[7] GROUP[6] GROUP[4] GROUP[1] (
+ experienced(ATTRIB[2]) ∧
+  highly_trained(ATTRIB[3]) ∧
+   is_individuals_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_individuals_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    customers(GROUP[4]) ∧
+     IBM_methods(GROUP[6]) ∧
+      REF1[8] = their ∧
+       is_requirements_POS(GROUP[7], REF1[8]) ∧
+        is_FACT_THAT(SITUATION[5], applying(EVENT[9], GROUP[1], GROUP[6]) ∧ to(EVENT[9]) = GROUP[7]) ∧
+         work(EVENT[10], GROUP[1]) ∧ in(EVENT[10]) = SITUATION[5] ∧ with(EVENT[10]) = GROUP[4])
+
+# ::id 94_nonfiction_IBM-1401;NE
+# ::snt These are just a few of the many IBM services .
+∃ GROUP[1] FEW ENTITY[2] (ADV_just(ENTITY[2]) ∧ MANY GROUP[3] (IBM_services(GROUP[3]), is_element_of(ENTITY[2], GROUP[3])), ∃ EVENT[4] copula(EVENT[4], GROUP[1], ENTITY[2]))
+
+# ::id 95_nonfiction_IBM-1401;NE
+# ::snt Your IBM Sales Representative will be pleased to discuss all of them with you .
+∃ REF1[2] ENTITY[1] (
+ REF1[2] = your ∧
+  is_IBM_Sales_Representative_POS(ENTITY[1], REF1[2]) ∧
+   MD_will(∃ ATTRIB[3] EVENT[8] (
+         is_pleased_to(ATTRIB[3],
+          ALL REF2[5] ENTITY[4] ((REF2[5] = them ∧ is_of(ENTITY[4], REF2[5])), ∃ REF3[6] EVENT[7] (
+            REF3[6] = you ∧
+             discuss(EVENT[7], _, ENTITY[4]) ∧ with(EVENT[7]) = REF3[6]))) ∧
+          copula(EVENT[8], ENTITY[1], ATTRIB[3]))))
+
+# ::id 96_nonfiction_IBM-1401;NE
+# ::snt International Business Machines Corporation Data Processing Division , 112 East Post Road White Plains , New York
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[International_Business_Machines_Corporation_Data_Processing_Division_112_East_Post_Road_White_Plains_New_York])
+
+# ::id 97_nonfiction_IBM-1401;NE
+# ::snt -LSB- Footnote A : COBOL specifications were developed by the Conference on Data Systems Languages , a voluntary cooperative effort of users , and manufacturers of data processing systems . -RSB-
+∃ ATTRIB[5] ATTRIB[4] EVENT[11] GROUP[1] GROUP[7] GROUP[9] GROUP[8] GROUP[6] ENTITY[3] GROUP[10] ENTITY[2] (
+ Data_Systems_Languages(GROUP[10]) ∧
+  voluntary(ATTRIB[4]) ∧
+   cooperative(ATTRIB[5]) ∧
+    users(GROUP[7]) ∧
+     data_processing_systems(GROUP[9]) ∧
+      is_manufacturers_of(GROUP[8], GROUP[9]) ∧
+       is_subset_of_or_equal_to(GROUP[7], GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6]) ∧
+        is_effort_of(ENTITY[3], GROUP[6]) ∧ is_effort_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_effort_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+         is_-GROUP-_namely(GROUP[10], ENTITY[3]) ∧
+          is_Conference_on(ENTITY[2], GROUP[10]) ∧
+           COBOL_specifications(GROUP[1]) ∧
+            past(EVENT[11]) ∧ developed(EVENT[11], _, GROUP[1]) ∧ by(EVENT[11]) = ENTITY[2])

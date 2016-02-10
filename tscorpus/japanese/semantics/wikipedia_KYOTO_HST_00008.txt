@@ -1,0 +1,1317 @@
+# ::id 1_wikipedia_KYOTO_HST_00008,1;NJ
+# ::snt 院政
+∃ EVENT[2] ENTITY[1] (院政(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_HST_00008,2;NJ
+# ::snt 院政 （ いんせい ） と は 、 在位 する 天皇 の 直系 尊属 で ある 太上天皇 （ 上皇 ） が 、 天皇 に 代わっ て 政務 を 直接 行う 形態 の 政治 で ある 。
+∃ SITUATION[3] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[11] ENTITY[13] ENTITY[2] EVENT[9] EVENT[10] EVENT[12] EVENT[14] EVENT[16] ENTITY[1] (
+ 院政(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[いんせい], ENTITY[1]) ∧
+   ADV_直接(EVENT[14]) ∧
+    在位する.0(EVENT[9], ENTITY[7]) ∧ 天皇(ENTITY[7]) ∧
+     の_直系_尊属(ENTITY[7], ENTITY[6]) ∧
+      で_ある(EVENT[10], ENTITY[太上天皇], ENTITY[6]) ∧
+       上皇(ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[4], ENTITY[太上天皇]) ∧
+         天皇(ENTITY[11]) ∧
+          政務(ENTITY[13]) ∧
+           形態(SITUATION[3],
+            CONJ_te(代わっ_て(EVENT[12], ENTITY[太上天皇]) ∧ に(EVENT[12]) = ENTITY[11],
+             行う(EVENT[14], ENTITY[太上天皇], ENTITY[13]))) ∧
+            の_政治(SITUATION[3], ENTITY[2]) ∧ で_ある(EVENT[16], ENTITY[1], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_HST_00008,3;NJ
+# ::snt 上皇 は 「 院 」 と 呼ば れ た ので 、 院政 と いう 。
+∃ ENTITY[2] ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[6] ENTITY[3] (
+ 上皇(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = *pro* ∧
+    院(ENTITY[4]) ∧
+     院政(ENTITY[6]) ∧
+      past(EVENT[5]) ∧
+       CRD_ので(呼ば_た(EVENT[5], _, ENTITY[3], ENTITY[4]), いう(EVENT[7], ENTITY[1], ENTITY[2], ENTITY[6])))
+
+# ::id 4_wikipedia_KYOTO_HST_00008,4;NJ
+# ::snt 院政 を 布く 上皇 は 治天の君 と も 呼ば れ た 。
+∃ EVENT[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ 院政(ENTITY[3]) ∧
+  布く(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 上皇(ENTITY[1]) ∧
+   past(EVENT[5]) ∧ 呼ば_た(EVENT[5], _, ENTITY[1], ENTITY[治天の君]))
+
+# ::id 5_wikipedia_KYOTO_HST_00008,5;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_HST_00008,6;NJ
+# ::snt 前史
+∃ EVENT[2] ENTITY[1] (前史(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 7_wikipedia_KYOTO_HST_00008,7;NJ
+# ::snt 院政 と は 天皇 が 余力 ある 内 に 引退 し 、 若き 子 （ 孫 ） の 天皇 を 後見 する という 意味 。
+∃ ATTRIB[12] EVENT[7] EVENT[8] EVENT[13] EVENT[14] ENTITY[6] ENTITY[4] ENTITY[10] ENTITY[11] ENTITY[9] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 院政(ENTITY[1]) ∧
+  天皇(ENTITY[3]) ∧
+   余力(ENTITY[6]) ∧
+    ある(EVENT[7], ENTITY[6]) ∧ MSR(EVENT[7]) = ENTITY[4] ∧ 内(ENTITY[4]) ∧
+     若き(ATTRIB[12]) ∧
+      ATTRIBUTE_子(ATTRIB[12], ENTITY[11]) ∧
+       孫(ENTITY[10]) ∧
+        namely_-ENTITY-(ENTITY[10], ENTITY[11]) ∧
+         の_天皇(ENTITY[11], ENTITY[9]) ∧
+          THAT_意味(引退する.0(EVENT[8], ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[4] ∧
+                後見する.0(EVENT[13], ENTITY[3], ENTITY[9]), ENTITY[2]) ∧ xxx(EVENT[14], ENTITY[1], ENTITY[2]))
+
+# ::id 8_wikipedia_KYOTO_HST_00008,8;NJ
+# ::snt 院政 の 萌芽 は 持統天皇 ・ 元正天皇 ・ 聖武天皇 など から 見 られる 。
+∃ EVENT[5] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 院政(ENTITY[2]) ∧
+  の_萌芽(ENTITY[2], ENTITY[1]) ∧
+   is_element_of(ENTITY[持統天皇], GROUP[4]) ∧ is_element_of(ENTITY[元正天皇], GROUP[4]) ∧ is_element_of(ENTITY[聖武天皇], GROUP[4]) ∧
+    など(GROUP[4], ENTITY[3]) ∧ 見(EVENT[5], _, ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[3])
+
+# ::id 9_wikipedia_KYOTO_HST_00008,9;NJ
+# ::snt 当時 は 皇位 継承 が 安定 し て い なかっ た ため （ 大兄制 ） 、 譲位 という 意思表示 によって 意中 の 皇子 に 皇位継承 さ せる ため に とら れ た 方法 と 考え られ て いる 。
+∃ ENTITY[12] SITUATION[11] ENTITY[6] SITUATION[5] EVENT[16] EVENT[15] EVENT[17] EVENT[18] EVENT[19] ENTITY[3] ENTITY[10] ENTITY[14] ENTITY[13] ENTITY[9] ENTITY[7] ENTITY[1] ENTITY[2] (
+ 当時(ENTITY[2]) ∧
+  皇位_継承(ENTITY[3]) ∧
+   THAT_ため(¬ ∃ EVENT[4] (past(EVENT[4]) ∧ 安定する.0_て_い_た(EVENT[4], ENTITY[3]) ∧ 時間(EVENT[4]) = ENTITY[2]),
+    ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[大兄制], ENTITY[1]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[大兄制], ENTITY[3], ENTITY[2]} ∧
+      譲位(ENTITY[10]) ∧
+       という_意思表示(ENTITY[10], ENTITY[9]) ∧
+        ENTITY[12] = *pro*{ENTITY[7], ENTITY[9], ENTITY[10], ENTITY[6], ENTITY[1], ENTITY[大兄制], ENTITY[3], ENTITY[2]} ∧
+         意中(ENTITY[14]) ∧
+          の_皇子(ENTITY[14], ENTITY[13]) ∧
+           ため(SITUATION[11], せる(EVENT[15], ENTITY[12], ENTITY[13], 皇位継承する.0(EVENT[16], ENTITY[13]))) ∧
+            とら_た(EVENT[17], _, ENTITY[7]) ∧ に(EVENT[17]) = SITUATION[11] ∧
+             によって(EVENT[17]) = ENTITY[9] ∧ 方法(ENTITY[7]) ∧
+             と(SITUATION[5], xxx(EVENT[18], ENTITY[6], ENTITY[7])) ∧
+              past(EVENT[17]) ∧ 考え_て_いる(EVENT[19], _, SITUATION[5]) ∧ ADV(EVENT[19]) = ENTITY[1])
+
+# ::id 10_wikipedia_KYOTO_HST_00008,10;NJ
+# ::snt 平安 時代 に 入っ て も 嵯峨天皇 や 宇多天皇 や 、 円融天皇 など に も 見 られる （ 後述 ） 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] GROUP[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  平安_時代(ENTITY[3]) ∧
+   FACT(SITUATION[2], 入っ_て(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+    CONJ_や(is_element_of(ENTITY[嵯峨天皇], GROUP[6]), is_element_of(ENTITY[宇多天皇], GROUP[6]), is_element_of(ENTITY[円融天皇], GROUP[6])) ∧
+     など(GROUP[6], ENTITY[5]) ∧
+      見(EVENT[7], _, ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[5] ∧ te(EVENT[7]) = SITUATION[2])
+
+# ::id 11_wikipedia_KYOTO_HST_00008,11;NJ
+# ::snt 日本 の 律令下 で は 上皇 は 天皇 と 同等 の 権限 を 持つ と さ れ て い た ため 、 こうした やや 変則的 な 政体 で すら 制度 の 枠 内 で 可能 で あっ た 。
+∃ SITUATION[4] SITUATION[1] ATTRIB[12] EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[11] (
+ の_律令下(ENTITY[日本], ENTITY[2]) ∧
+  上皇(ENTITY[3]) ∧
+   やや_変則的_な(ATTRIB[12]) ∧
+    ATTRIBUTE_政体(ATTRIB[12], ENTITY[11]) ∧
+     天皇(ENTITY[7]) ∧
+      と_同等(ENTITY[7], ENTITY[6]) ∧
+       の_権限(ENTITY[6], ENTITY[5]) ∧
+        FACT(SITUATION[4], 持つ(EVENT[8], ENTITY[3], ENTITY[5])) ∧
+         FACT(SITUATION[1], さ_て_い_た(EVENT[9], _, ENTITY[3], SITUATION[4]) ∧ で(EVENT[9]) = ENTITY[2]) ∧
+          past(EVENT[9]) ∧
+           すら ENTITY[10] (ENTITY[10] = ENTITY[11],
+            ∃ EVENT[15] ENTITY[14] ENTITY[13] (
+             制度(ENTITY[14]) ∧
+              の_枠_内(ENTITY[14], ENTITY[13]) ∧
+               past(EVENT[15]) ∧
+                可能_で_あっ_た(EVENT[15], ENTITY[10]) ∧ で(EVENT[15]) = ENTITY[13] ∧
+                 ため(EVENT[15]) = SITUATION[1])))
+
+# ::id 12_wikipedia_KYOTO_HST_00008,12;NJ
+# ::snt これら の 天皇 は 退位 後 も 「 天皇家 の 家父長 」 として 若い 天皇 を 後見 する として 国政 に 関与 する 事 が あっ た 。
+∃ ATTRIB[9] SITUATION[5] SITUATION[3] ENTITY[2] EVENT[10] EVENT[12] EVENT[13] ENTITY[7] ENTITY[8] ENTITY[6] ENTITY[11] ENTITY[4] ENTITY[1] (
+ ENTITY[2] = これら ∧
+  の_天皇(ENTITY[2], ENTITY[1]) ∧
+   退位_後(ENTITY[4]) ∧
+    天皇家(ENTITY[7]) ∧
+     の_家父長(ENTITY[7], ENTITY[6]) ∧
+      若い(ATTRIB[9]) ∧
+       ATTRIBUTE_天皇(ATTRIB[9], ENTITY[8]) ∧
+        FACT(SITUATION[5], 後見する.0(EVENT[10], ENTITY[1], ENTITY[8]) ∧ として(EVENT[10]) = ENTITY[6]) ∧
+         国政(ENTITY[11]) ∧
+          事(SITUATION[3],
+           関与する.0(EVENT[12], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[11] ∧ として(EVENT[12]) = SITUATION[5] ∧
+            時間(EVENT[12]) = ENTITY[4]) ∧ past(EVENT[13]) ∧ あっ_た(EVENT[13], ENTITY[1], SITUATION[3]))
+
+# ::id 13_wikipedia_KYOTO_HST_00008,13;NJ
+# ::snt だが 、 当時 は まだ この 状態 を 常 に 維持 する ため の 政治的 組織 や 財政的 ・ 軍事的 裏付け が 不十分 で あり 、 平安 時代 中期 に は 幼く 短命 な 天皇 が 多く 十分 な 指導力 を 発揮 する ため の 若さ と 健康 を 保持 し た 上皇 が 絶え て 久しかっ た ため に 、 父系 による この 仕組み は 衰退 し 、 代わり に 母系 にあたる 天皇 の 外祖父 の 地位 を 占め た 藤原北家 が 天皇 の 職務 ・ 権利 を 代理・代行 する 摂関 政治 が 隆盛 し て いく こと に なる 。
+∃ SITUATION[50] ATTRIB[42] SITUATION[40] ATTRIB[35] SITUATION[21] SITUATION[18] SITUATION[32] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[7] GROUP[14] ENTITY[13] ENTITY[12] ENTITY[23] GROUP[25] ENTITY[20] ENTITY[34] ENTITY[41] GROUP[44] ENTITY[39] ENTITY[37] ENTITY[5] ENTITY[4] EVENT[3] EVENT[11] EVENT[17] EVENT[24] EVENT[31] EVENT[36] EVENT[43] EVENT[47] EVENT[48] EVENT[49] EVENT[51] EVENT[52] ENTITY[2] ENTITY[1] ENTITY[22] ENTITY[19] ENTITY[33] (
+ 父系(ENTITY[2]) ∧
+  による_仕組み(ENTITY[2], ENTITY[1]) ∧
+   当時(ENTITY[19]) ∧
+    状態(ENTITY[22]) ∧
+     平安_時代_中期(ENTITY[33]) ∧
+      past(EVENT[11]) ∧
+       ADV_まだ(SITUATION[32]) ∧
+        past(EVENT[47]) ∧
+         past(EVENT[49]) ∧
+          代わり(ENTITY[4]) ∧
+           母系(ENTITY[9]) ∧
+            天皇(ENTITY[10]) ∧
+             の_外祖父(ENTITY[10], ENTITY[8]) ∧ にあたる_外祖父(ENTITY[9], ENTITY[8]) ∧
+              の_地位(ENTITY[8], ENTITY[7]) ∧
+               占め_た(EVENT[11], ENTITY[藤原北家], ENTITY[7]) ∧
+                天皇(ENTITY[13]) ∧
+                 ∃ ENTITY[15] (職務(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])) ∧
+                  ∃ ENTITY[16] (権利(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14])) ∧
+                  equals(GROUP[14], ENTITY[12]) ∧ の(ENTITY[13], ENTITY[12]) ∧
+                   THAT_摂関_政治(代理.代行する.0(EVENT[17], ENTITY[藤原北家], ENTITY[12]), ENTITY[5]) ∧
+                    常(ENTITY[23]) ∧
+                     ため(SITUATION[21],
+                      維持する.0(EVENT[24], _, ENTITY[22]) ∧ に(EVENT[24]) = ENTITY[23]) ∧
+                      CONJ_や(∃ ATTRIB[27] ENTITY[26] (
+                            政治的(ATTRIB[27]) ∧
+                             ATTRIBUTE_組織(ATTRIB[27], ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[25])),
+                       ∃ ATTRIB[30] ATTRIB[29] ENTITY[28] (
+                        財政的(ATTRIB[29]) ∧
+                         軍事的(ATTRIB[30]) ∧
+                          ATTRIBUTE_裏付け(ATTRIB[29], ENTITY[28]) ∧ ATTRIBUTE_裏付け(ATTRIB[30], ENTITY[28]) ∧
+                           is_element_of(ENTITY[28], GROUP[25]))) ∧
+                       equals(GROUP[25], ENTITY[20]) ∧ の(SITUATION[21], ENTITY[20]) ∧
+                        幼く(ATTRIB[35]) ∧ 短命_な(ATTRIB[35]) ∧
+                         ATTRIBUTE_天皇(ATTRIB[35], ENTITY[34]) ∧
+                          十分_な(ATTRIB[42]) ∧
+                           ATTRIBUTE_指導力(ATTRIB[42], ENTITY[41]) ∧
+                            ため(SITUATION[40], 発揮する.0(EVENT[43], _, ENTITY[41])) ∧
+                             CONJ_と(∃ ENTITY[45] (若さ(ENTITY[45]) ∧ is_element_of(ENTITY[45], GROUP[44])),
+                              ∃ ENTITY[46] (健康(ENTITY[46]) ∧ is_element_of(ENTITY[46], GROUP[44]))) ∧
+                              equals(GROUP[44], ENTITY[39]) ∧ の(SITUATION[40], ENTITY[39]) ∧
+                               保持する.0_た(EVENT[47], ENTITY[37], ENTITY[39]) ∧ 上皇(ENTITY[37]) ∧
+                                ため(SITUATION[18],
+                                 FACT(SITUATION[32],
+                                  不十分_で_あり(EVENT[31], ENTITY[20]) ∧
+                                   時間(EVENT[31]) = ENTITY[19]) ∧
+                                  CONJ_te(多く(EVENT[36], ENTITY[34]) ∧
+                                        に(EVENT[36]) = ENTITY[33] ∧
+                                        絶え_て(EVENT[48], ENTITY[37]),
+                                   久しかっ_た(EVENT[49], ENTITY[5]))) ∧
+                                 こと(SITUATION[50], 隆盛する.0_て_いく(EVENT[51], ENTITY[5])) ∧
+                                  衰退する.0(EVENT[3], ENTITY[1]) ∧
+                                   なる(EVENT[52], ENTITY[5], SITUATION[50]) ∧
+                                    に(EVENT[52]) = SITUATION[18] ∧ に(EVENT[52]) = ENTITY[4])
+
+# ::id 14_wikipedia_KYOTO_HST_00008,14;NJ
+# ::snt だが 、 治暦 4 年 （ 1068 年 ） の 後三条天皇 の 即位 は その 状況 に 大きな 変化 を もたらし た 。
+∃ ATTRIB[5] EVENT[6] ENTITY[4] ENTITY[2] ENTITY[3] ENTITY[1] (
+ CD_治暦_4_年_（_1068_年_）(ENTITY[2]) ∧
+  の_即位(ENTITY[後三条天皇], ENTITY[1]) ∧ の__即位(ENTITY[2], ENTITY[1]) ∧
+   状況(ENTITY[3]) ∧
+    大きな(ATTRIB[5]) ∧
+     ATTRIBUTE_変化(ATTRIB[5], ENTITY[4]) ∧
+      past(EVENT[6]) ∧ もたらし_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[3])
+
+# ::id 15_wikipedia_KYOTO_HST_00008,15;NJ
+# ::snt 平安 時代 を通じて 皇位 継承 の 安定 が 大きな 政治 課題 と さ れ て おり 、 皇統 を 一条天皇系 へ 統一 する という 流れ の 中 で 、 後三条 が 即位 する こと と なっ た 。
+∃ SITUATION[12] ENTITY[9] ATTRIB[5] EVENT[6] EVENT[11] EVENT[13] EVENT[14] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] ENTITY[10] ENTITY[8] ENTITY[7] (
+ 平安_時代(ENTITY[1]) ∧
+  皇位_継承(ENTITY[3]) ∧
+   の_安定(ENTITY[3], ENTITY[2]) ∧
+    大きな(ATTRIB[5]) ∧
+     ATTRIBUTE_政治_課題(ATTRIB[5], ENTITY[4]) ∧
+      ENTITY[9] = *pro*{ENTITY[7], ENTITY[1], ENTITY[2], ENTITY[4], ENTITY[3]} ∧
+       皇統(ENTITY[10]) ∧
+        THAT_流れ(統一する.0(EVENT[11], ENTITY[9], ENTITY[10]) ∧ へ(EVENT[11]) = ENTITY[一条天皇系], ENTITY[8]) ∧
+         の_中(ENTITY[8], ENTITY[7]) ∧
+          こと(SITUATION[12], 即位する.0(EVENT[13], ENTITY[後三条])) ∧
+           past(EVENT[14]) ∧
+            さ_て_おり(EVENT[6], _, ENTITY[2], ENTITY[4]) ∧ を通じて(EVENT[6]) = ENTITY[1] ∧
+             なっ_た(EVENT[14], ENTITY[後三条], SITUATION[12]) ∧ で(EVENT[14]) = ENTITY[7])
+
+# ::id 16_wikipedia_KYOTO_HST_00008,16;NJ
+# ::snt 後三条 は 、 宇多天皇 以来 藤原北家 （ 後三条天皇 ） を 外戚 に 持た ない 170 年 ぶり の 天皇 で あり 、 外戚 の 地位 を 権力 の 源泉 と し て い た 摂関 政治 が ここ に 揺らぎ 始める こと と なる 。
+∃ ENTITY[16] SITUATION[15] EVENT[7] EVENT[14] EVENT[17] EVENT[18] TIME[6] ENTITY[5] ENTITY[1] ENTITY[11] ENTITY[13] ENTITY[12] ENTITY[10] ENTITY[8] (
+ 宇多天皇_以来(TIME[6]) ∧
+  (CD_170_年(ENTITY[5]), TMP_ぶり(TIME[6], ENTITY[5])) ∧
+   ¬ ∃ EVENT[4] ENTITY[3] (
+         namely_-ENTITY-(ENTITY[後三条天皇], ENTITY[藤原北家]) ∧
+          外戚(ENTITY[3]) ∧ 持た(EVENT[4], ENTITY[1], ENTITY[藤原北家], ENTITY[3])) ∧
+    の_天皇(ENTITY[5], ENTITY[1]) ∧
+    外戚(ENTITY[11]) ∧
+     の_地位(ENTITY[11], ENTITY[10]) ∧
+      権力(ENTITY[13]) ∧
+       の_源泉(ENTITY[13], ENTITY[12]) ∧
+        し_て_い_た(EVENT[14], ENTITY[8], ENTITY[10], ENTITY[12]) ∧ 摂関_政治(ENTITY[8]) ∧
+         ENTITY[16] = ここ{ENTITY[10], ENTITY[12], ENTITY[13], ENTITY[11], ENTITY[1], ENTITY[5], ENTITY[後三条], ENTITY[藤原北家], ENTITY[後三条天皇]} ∧
+          こと(SITUATION[15], 揺らぎ_始める(EVENT[17], ENTITY[8]) ∧ に(EVENT[17]) = ENTITY[16]) ∧
+           past(EVENT[14]) ∧ で_あり(EVENT[7], ENTITY[後三条], ENTITY[1]) ∧ なる(EVENT[18], ENTITY[8], SITUATION[15]))
+
+# ::id 17_wikipedia_KYOTO_HST_00008,17;NJ
+# ::snt 後三条天皇 以前 の 天皇 の 多く も 即位 し た 直後 に 、 王権 の 確立 と 律令 の 復興 を 企図 し て 「 新政 」 と 称し た 一連 の 政策 を 企画 実行 し て い た が 、 後三条天皇 は 外戚 に 摂関家 を 持た ない 強み も 背景 と し て 、 延久の荘園整理令 （ 1069 年 ） など より 積極的 な 政策 展開 を 行っ た 。
+∃ ATTRIB[27] ENTITY[20] SITUATION[19] EVENT[24] EVENT[28] ENTITY[23] ENTITY[26] ENTITY[25] (
+ ENTITY[20] = *pro*{ENTITY[後三条天皇], ENTITY[新政]} ∧
+  強み(SITUATION[19],
+   ¬ ∃ EVENT[22] ENTITY[21] (
+         外戚(ENTITY[21]) ∧ 持た(EVENT[22], ENTITY[20], ENTITY[摂関家]) ∧ に(EVENT[22]) = ENTITY[21])) ∧
+   背景(ENTITY[23]) ∧
+    CD_1069_年(ENTITY[26]) ∧
+     namely_-ENTITY-(ENTITY[26], ENTITY[延久の荘園整理令]) ∧
+      より_積極的_な(ATTRIB[27]) ∧
+       ATTRIBUTE_政策_展開(ATTRIB[27], ENTITY[25]) ∧ など_政策_展開(ENTITY[延久の荘園整理令], ENTITY[25]) ∧
+        past(EVENT[28]) ∧
+         CONJ_が(多く ENTITY[3] ENTITY[2] ENTITY[1] ((後三条天皇_以前(ENTITY[3]) ∧ の_天皇(ENTITY[3], ENTITY[2]) ∧ の(ENTITY[2], ENTITY[1])),
+               ∃ ENTITY[14] SITUATION[9] EVENT[10] EVENT[11] EVENT[15] EVENT[17] EVENT[18] GROUP[4] ENTITY[16] ENTITY[12] (
+                CONJ_と(∃ ENTITY[6] ENTITY[5] (
+                      王権(ENTITY[6]) ∧ の_確立(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+                 ∃ ENTITY[8] ENTITY[7] (
+                  律令(ENTITY[8]) ∧
+                   の_復興(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+                 直後(SITUATION[9], 即位する.0_た(EVENT[10], GROUP[4])) ∧
+                  ENTITY[14] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+                   一連(ENTITY[16]) ∧
+                    称し_た(EVENT[15], ENTITY[14], ENTITY[12], ENTITY[新政]) ∧ の_政策(ENTITY[16], ENTITY[12]) ∧
+                     past(EVENT[10]) ∧
+                      past(EVENT[15]) ∧
+                       past(EVENT[17]) ∧
+                        past(EVENT[18]) ∧
+                         CONJ_te(企図する.0_て(EVENT[11], ENTITY[1], GROUP[4]) ∧ に(EVENT[11]) = SITUATION[9],
+                          企画(EVENT[17], ENTITY[1], ENTITY[12]) ∧
+                           実行する.0_て_い_た(EVENT[18], ENTITY[1], ENTITY[12])))),
+          CONJ_te(し_て(EVENT[24], ENTITY[後三条天皇], SITUATION[19], ENTITY[23]), 行っ_た(EVENT[28], ENTITY[後三条天皇], ENTITY[25]))))
+
+# ::id 18_wikipedia_KYOTO_HST_00008,18;NJ
+# ::snt 延久 4 年 （ 1072 年 ） に 後三条天皇 は 第 一 皇子 貞仁親王 （ 白河天皇 ） へ 生前 譲位 し た が 、 その 直後 に 病没 し て しまう 。
+∃ EVENT[4] EVENT[6] ENTITY[2] TIME[3] ENTITY[1] ENTITY[5] (
+ 直後(ENTITY[5]) ∧
+  CD_延久_4_年_（_1072_年_）(ENTITY[1]) ∧
+   (CD_第_一(ENTITY[2]), 皇子(ENTITY[2])) ∧
+    namely_-ENTITY-(ENTITY[2], ENTITY[貞仁親王]) ∧
+     namely_-ENTITY-(ENTITY[白河天皇], ENTITY[貞仁親王]) ∧
+      生前(TIME[3]) ∧
+       past(EVENT[4]) ∧
+        CONJ_が(譲位する.0_た(EVENT[4], ENTITY[後三条天皇]) ∧ is_contained_in(時間(EVENT[4]), TIME[3]) ∧
+              へ(EVENT[4]) = ENTITY[貞仁親王] ∧ に(EVENT[4]) = ENTITY[1],
+         病没する.0_て_しまう(EVENT[6], ENTITY[後三条天皇]) ∧ に(EVENT[6]) = ENTITY[5] ∧ に(EVENT[6]) = ENTITY[1]))
+
+# ::id 19_wikipedia_KYOTO_HST_00008,19;NJ
+# ::snt この とき 、 後三条天皇 は 院政 を 開始 する 意図 を 持っ て い た とする 見解 が 慈円 により 主張 さ れ て （ 『 愚管抄 』 ） 以来 、 北畠 親房 （ 『 神皇正統記 』 ） 、 新井 白石 （ 『 読史余論 』 ） 、 黒板 勝美 、 三浦 周行 など により 主張 さ れ て い た が 、 和田 英松 が 、 災害 異変 、 後三条 の 病気 、 実仁親王 （ 平安 時代 ） の 立東宮 の 3 点 が 譲位 の 理由 で あり 院政 開始 は 企図 さ れ て い なかっ た と 主張 し 、 平泉 澄 が 病気 のみ に 限定 する など 異論 が 出さ れ た 。
+∃ SITUATION[14] ENTITY[8] SITUATION[7] SITUATION[3] EVENT[5] EVENT[6] EVENT[9] EVENT[12] EVENT[23] EVENT[15] EVENT[29] ENTITY[4] GROUP[11] ENTITY[10] ENTITY[1] GROUP[17] ENTITY[22] ENTITY[21] ENTITY[16] ENTITY[27] ENTITY[13] TIME[2] ENTITY[24] (
+ とき(TIME[2]) ∧
+  院政_開始(ENTITY[24]) ∧
+   院政(ENTITY[4]) ∧
+    意図(SITUATION[3], 開始する.0(EVENT[5], ENTITY[後三条天皇], ENTITY[4])) ∧
+     THAT_見解(持っ_て_い_た(EVENT[6], ENTITY[後三条天皇], SITUATION[3]) ∧ is_contained_in(時間(EVENT[6]), TIME[2]), ENTITY[1]) ∧
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[4], ENTITY[後三条天皇]} ∧
+       FACT(SITUATION[7], 主張する.0_て(EVENT[9], ENTITY[慈円], ENTITY[8])) ∧
+        namely_-ENTITY-(ENTITY[神皇正統記], ENTITY[北畠_親房]) ∧ is_element_of(ENTITY[北畠_親房], GROUP[11]) ∧
+         namely_-ENTITY-(ENTITY[読史余論], ENTITY[新井_白石]) ∧ is_element_of(ENTITY[新井_白石], GROUP[11]) ∧ is_element_of(ENTITY[黒板_勝美], GROUP[11]) ∧
+         is_element_of(ENTITY[三浦_周行], GROUP[11]) ∧
+         など(GROUP[11], ENTITY[10]) ∧
+          ∃ ENTITY[18] (災害_異変(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[17])) ∧
+           ∃ ENTITY[19] (の_病気(ENTITY[後三条], ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[17])) ∧
+           ∃ ENTITY[20] (
+            平安_時代(ENTITY[20]) ∧
+             namely_-ENTITY-(ENTITY[20], ENTITY[実仁親王]) ∧ の_xxx(ENTITY[実仁親王], ENTITY[立東宮]) ∧ is_element_of(ENTITY[立東宮], GROUP[17])) ∧
+           (CD_3_点(ENTITY[16]), の(GROUP[17], ENTITY[16])) ∧
+            譲位(ENTITY[22]) ∧
+             の_理由(ENTITY[22], ENTITY[21]) ∧
+              病気(ENTITY[27]) ∧
+               FACT(SITUATION[14],
+                主張する.0(EVENT[15], ENTITY[和田_英松],
+                 で_あり(EVENT[23], ENTITY[16], ENTITY[21]) ∧
+                  ¬ ∃ EVENT[25] (before(EVENT[15], EVENT[25]) ∧ 企図する.0_て_い_た(EVENT[25], _, ENTITY[24]))) ∧
+                 のみ ENTITY[26] (ENTITY[26] = ENTITY[27],
+                  ∃ EVENT[28] (限定する.0(EVENT[28], ENTITY[平泉_澄]) ∧ に(EVENT[28]) = ENTITY[26]))) ∧
+                など_異論(SITUATION[14], ENTITY[13]) ∧
+                 past(EVENT[6]) ∧
+                  past(EVENT[12]) ∧
+                   past(EVENT[29]) ∧
+                    CONJ_が(主張する.0_て_い_た(EVENT[12], ENTITY[10], ENTITY[1]) ∧ te_以来(EVENT[12]) = SITUATION[7],
+                     出さ_た(EVENT[29], _, ENTITY[13])))
+
+# ::id 20_wikipedia_KYOTO_HST_00008,20;NJ
+# ::snt 近年 で は 吉村 茂樹 が 、 当時 の 災害 異変 が 突出 し て い ない こと 、 後三条 の 病気 （ 糖尿病 と 推定 さ れ て いる ） が 重篤化 し た の が 退位 後 で ある こと を 理由 と し て 、 摂関家 を 外戚 に 持た ない 実仁親王 に 皇位 を 継承 さ せる こと による 王権 の 拡大 を 意図 し 、 摂関 政治 へ の 回帰 を 阻止 し た もの で あっ て 院政 の 意図 は なかっ た と 主張 し 、 通説化 し て いる 。
+∃ SITUATION[21] ENTITY[19] SITUATION[18] ENTITY[17] ENTITY[1] EVENT[15] EVENT[27] EVENT[25] EVENT[29] EVENT[32] EVENT[33] EVENT[36] EVENT[16] EVENT[37] ENTITY[14] GROUP[3] ENTITY[26] ENTITY[28] ENTITY[20] ENTITY[31] ENTITY[30] ENTITY[35] ENTITY[34] ENTITY[2] (
+ 近年(ENTITY[2]) ∧
+  院政(ENTITY[35]) ∧
+   の_意図(ENTITY[35], ENTITY[34]) ∧
+    ENTITY[1] = *pro* ∧
+     ∃ ENTITY[6] ENTITY[5] ENTITY[4] (
+      当時(ENTITY[6]) ∧
+       の_災害_異変(ENTITY[6], ENTITY[5]) ∧
+        THAT_こと(¬ ∃ EVENT[7] 突出する.0_て_い(EVENT[7], ENTITY[5]), ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+      ∃ SITUATION[9] EVENT[11] EVENT[13] ENTITY[10] ENTITY[12] ENTITY[8] (
+       の_病気(ENTITY[後三条], ENTITY[10]) ∧
+        の(SITUATION[9], 重篤化する.0_た(EVENT[11], ENTITY[10])) ∧
+         退位_後(ENTITY[12]) ∧
+          THAT_こと(で_ある(EVENT[13], SITUATION[9], ENTITY[12]), ENTITY[8]) ∧
+           past(EVENT[11]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+      理由(ENTITY[14]) ∧
+       ENTITY[17] = *pro*{ENTITY[2], ENTITY[吉村_茂樹], ENTITY[後三条], ENTITY[14], ENTITY[1]} ∧
+        ENTITY[19] = *pro*{ENTITY[17], ENTITY[2], ENTITY[吉村_茂樹], ENTITY[後三条], ENTITY[14], ENTITY[1]} ∧
+         ¬ ∃ EVENT[24] ENTITY[23] (外戚(ENTITY[23]) ∧ 持た(EVENT[24], ENTITY[実仁親王], ENTITY[摂関家], ENTITY[23])) ∧
+          皇位(ENTITY[26]) ∧
+           こと(SITUATION[21], せる(EVENT[25], _, ENTITY[実仁親王], 継承する.0(EVENT[27], ENTITY[実仁親王], ENTITY[26]))) ∧
+            王権(ENTITY[28]) ∧
+             の_拡大(ENTITY[28], ENTITY[20]) ∧ による_拡大(SITUATION[21], ENTITY[20]) ∧
+              摂関_政治(ENTITY[31]) ∧
+               へ_の_回帰(ENTITY[31], ENTITY[30]) ∧
+                もの(SITUATION[18],
+                 意図する.0(EVENT[29], ENTITY[19], ENTITY[20]) ∧ 阻止する.0_た(EVENT[32], ENTITY[19], ENTITY[30])) ∧
+                 before(EVENT[16], EVENT[32]) ∧
+                  before(EVENT[16], EVENT[36]) ∧
+                   CONJ_te(し_て(EVENT[15], ENTITY[吉村_茂樹], GROUP[3], ENTITY[14]) ∧ で(EVENT[15]) = ENTITY[2],
+                    主張する.0(EVENT[16], ENTITY[吉村_茂樹],
+                     CONJ_te(で_あっ_て(EVENT[33], ENTITY[17], SITUATION[18]), なかっ_た(EVENT[36], ENTITY[34]))) ∧
+                     で(EVENT[16]) = ENTITY[2]) ∧ 通説化する.0_て_いる(EVENT[37], ENTITY[1]))
+
+# ::id 21_wikipedia_KYOTO_HST_00008,21;NJ
+# ::snt しかしながら 美川 圭 の よう に 、 院政 の 当初 の 目的 を 皇位 決定権 の 掌握 と 見 て 、 王権 の 拡大 を 意図 し た こと 自体 を 重要視 する 意見 も 出 て いる 。
+∃ ENTITY[12] ENTITY[11] ENTITY[3] SITUATION[2] EVENT[9] EVENT[15] EVENT[16] EVENT[17] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[7] ENTITY[4] ENTITY[14] ENTITY[13] ENTITY[10] ENTITY[1] (
+ の_よう(ENTITY[美川_圭], ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1], ENTITY[美川_圭]} ∧
+   院政(ENTITY[5]) ∧
+    当初(ENTITY[6]) ∧
+     の_目的(ENTITY[6], ENTITY[4]) ∧ の__目的(ENTITY[5], ENTITY[4]) ∧
+      皇位_決定権(ENTITY[8]) ∧
+       の_掌握(ENTITY[8], ENTITY[7]) ∧
+        ENTITY[11] = 自体{ENTITY[10]} ∧
+         ENTITY[12] = *pro*{ENTITY[11], ENTITY[3], ENTITY[4], ENTITY[7], ENTITY[8], ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[美川_圭]} ∧
+          王権(ENTITY[14]) ∧
+           の_拡大(ENTITY[14], ENTITY[13]) ∧
+            RFL_こと(ENTITY[11], ENTITY[10]) ∧ THAT_こと(意図する.0_た(EVENT[15], ENTITY[12], ENTITY[13]), ENTITY[10]) ∧
+             意見(SITUATION[2],
+              CONJ_te(見_て(EVENT[9], ENTITY[3], ENTITY[4], ENTITY[7]),
+               重要視する.0(EVENT[16], ENTITY[3], ENTITY[10]))) ∧
+              past(EVENT[15]) ∧ 出_て_いる(EVENT[17], SITUATION[2]) ∧ に(EVENT[17]) = ENTITY[1])
+
+# ::id 22_wikipedia_KYOTO_HST_00008,22;NJ
+# ::snt その 一方 で 、 近年 で は 宇多天皇 が 醍醐天皇 に 譲位 し て 法皇 と なっ た 後 に 天皇 の 病気 に 伴っ て 実質上 の 院政 を 行っ て い た 事 が 明らか に なっ た 事 や 、 円融天皇 が 退位 後 に 息子 の 一条天皇 が 皇位 を 継ぐ と 政務 を 見 ようとし た ため に 外祖父 で ある 摂政 藤原 兼家 と 対立 し て い た という 説 も あり 、 院政 の 嚆矢 を 後三条天皇 より も 以前 に 見る 説 が 有力 と なっ て いる 。
+∃ ENTITY[33] SITUATION[32] EVENT[31] EVENT[37] EVENT[39] GROUP[3] ENTITY[35] ENTITY[36] ENTITY[34] ENTITY[38] ENTITY[2] ENTITY[1] (
+ 一方(ENTITY[1]) ∧
+  近年(ENTITY[2]) ∧
+   CONJ_や(∃ ENTITY[8] ENTITY[7] SITUATION[6] SITUATION[5] EVENT[9] EVENT[10] EVENT[13] EVENT[16] EVENT[17] ENTITY[12] ENTITY[11] ENTITY[15] ENTITY[14] ENTITY[4] (
+         ENTITY[7] = *pro*{ENTITY[宇多天皇], ENTITY[2], ENTITY[1]} ∧
+          ENTITY[8] = *pro*{ENTITY[宇多天皇], ENTITY[2], ENTITY[1]} ∧
+           後(SITUATION[6],
+            CONJ_te(譲位する.0_て(EVENT[9], ENTITY[7], ENTITY[8], ENTITY[醍醐天皇]),
+             なっ_た(EVENT[10], ENTITY[7]) ∧ と(EVENT[10]) = ENTITY[法皇])) ∧
+            天皇(ENTITY[12]) ∧
+             の_病気(ENTITY[12], ENTITY[11]) ∧
+              実質上(ENTITY[15]) ∧
+               の_院政(ENTITY[15], ENTITY[14]) ∧
+                事(SITUATION[5],
+                 CONJ_te(伴っ_て(EVENT[13], ENTITY[宇多天皇]) ∧ に(EVENT[13]) = ENTITY[11] ∧
+                       に(EVENT[13]) = SITUATION[6],
+                  行っ_て_い_た(EVENT[16], ENTITY[宇多天皇], ENTITY[14]) ∧ に(EVENT[16]) = SITUATION[6])) ∧
+                 THAT_事(なっ_た(EVENT[17], SITUATION[5]), ENTITY[4]) ∧
+                  past(EVENT[10]) ∧
+                   past(EVENT[16]) ∧
+                    ADV_明らか_に(EVENT[17]) ∧ past(EVENT[17]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ SITUATION[20] EVENT[29] EVENT[30] ENTITY[28] ENTITY[19] (
+     ため(SITUATION[20],
+      ∀ EVENT[24] ENTITY[22] ENTITY[23] ENTITY[21] CND_と(
+          退位_後(ENTITY[21]) ∧ 息子(ENTITY[22]) ∧ の_xxx(ENTITY[22], ENTITY[一条天皇]) ∧ 皇位(ENTITY[23]) ∧
+           継ぐ(EVENT[24], ENTITY[一条天皇], ENTITY[23]) ∧ に(EVENT[24]) = ENTITY[21],
+          ∃ ENTITY[25] (
+           政務(ENTITY[25]) ∧
+            MD_ようとし(∃ EVENT[26] (past(EVENT[26]) ∧ 見_た(EVENT[26], ENTITY[円融天皇], ENTITY[25])))))) ∧
+      外祖父(ENTITY[28]) ∧
+       で_ある(EVENT[29], ENTITY[藤原_兼家], ENTITY[28]) ∧
+        namely_-ENTITY-(ENTITY[摂政], ENTITY[藤原_兼家]) ∧
+         THAT_説(対立する.0_て_い_た(EVENT[30], ENTITY[円融天皇]) ∧ と(EVENT[30]) = ENTITY[藤原_兼家] ∧ に(EVENT[30]) = SITUATION[20],
+          ENTITY[19]) ∧ past(EVENT[30]) ∧ is_element_of(ENTITY[19], GROUP[3]))) ∧
+    ENTITY[33] = *pro*{ENTITY[1], ENTITY[2], ENTITY[円融天皇], ENTITY[藤原_兼家], ENTITY[摂政], ENTITY[一条天皇], ENTITY[宇多天皇], ENTITY[法皇], ENTITY[醍醐天皇]} ∧
+     院政(ENTITY[35]) ∧
+      の_嚆矢(ENTITY[35], ENTITY[34]) ∧
+       より_以前(ENTITY[後三条天皇], ENTITY[36]) ∧
+        説(SITUATION[32], 見る(EVENT[37], ENTITY[33], ENTITY[34]) ∧ に(EVENT[37]) = ENTITY[36]) ∧
+         有力(ENTITY[38]) ∧
+          あり(EVENT[31], GROUP[3]) ∧ で(EVENT[31]) = ENTITY[2] ∧
+           なっ_て_いる(EVENT[39], SITUATION[32]) ∧ と(EVENT[39]) = ENTITY[38] ∧ で(EVENT[39]) = ENTITY[1])
+
+# ::id 23_wikipedia_KYOTO_HST_00008,23;NJ
+# ::snt 白河 院政
+∃ EVENT[2] ENTITY[1] (白河_院政(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 24_wikipedia_KYOTO_HST_00008,24;NJ
+# ::snt 次 の 白河 は 摂関家 を 外戚 に 持つ 天皇 で あっ た が 、 後三条 と 同様 に 親政 を 行っ た 。
+∃ EVENT[6] EVENT[7] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[8] ENTITY[1] (
+ 次(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[白河]) ∧
+   摂関家(ENTITY[4]) ∧
+    外戚(ENTITY[5]) ∧
+     持つ(EVENT[6], ENTITY[2], ENTITY[4], ENTITY[5]) ∧ 天皇(ENTITY[2]) ∧
+      親政(ENTITY[8]) ∧
+       past(EVENT[7]) ∧
+        と_ADV_同様_に(ENTITY[後三条], EVENT[9]) ∧
+         past(EVENT[9]) ∧
+          CONJ_が(で_あっ_た(EVENT[7], ENTITY[白河], ENTITY[2]), 行っ_た(EVENT[9], ENTITY[白河], ENTITY[8])))
+
+# ::id 25_wikipedia_KYOTO_HST_00008,25;NJ
+# ::snt 白河 は 応徳 3 年 （ 1086 年 ） に 当時 8 歳 の 善仁皇子 （ 堀河天皇 ） へ 譲位 し 太上天皇 （ 上皇 ） と なっ た が 、 幼帝 を 後見 する ため 白川院 と 称し て 、 引き続き 政務 に 当たっ た 。
+∃ SITUATION[7] EVENT[4] EVENT[6] EVENT[9] EVENT[10] EVENT[12] TIME[3] ENTITY[2] ENTITY[5] ENTITY[1] ENTITY[8] ENTITY[11] (
+ CD_応徳_3_年_（_1086_年_）(ENTITY[1]) ∧
+  当時(TIME[3]) ∧
+   (CD_8_歳(ENTITY[2]), 時間(TIME[3], ENTITY[2])) ∧
+    の_xxx(ENTITY[2], ENTITY[善仁皇子]) ∧
+     namely_-ENTITY-(ENTITY[堀河天皇], ENTITY[善仁皇子]) ∧
+      上皇(ENTITY[5]) ∧
+       namely_-ENTITY-(ENTITY[5], ENTITY[太上天皇]) ∧
+        幼帝(ENTITY[8]) ∧
+         FACT(SITUATION[7], 後見する.0(EVENT[9], ENTITY[白川院], ENTITY[8])) ∧
+          政務(ENTITY[11]) ∧
+           past(EVENT[6]) ∧
+            ADV_引き続き(EVENT[12]) ∧
+             past(EVENT[12]) ∧
+              CONJ_が(譲位する.0(EVENT[4], ENTITY[白河]) ∧ へ(EVENT[4]) = ENTITY[善仁皇子] ∧
+                    なっ_た(EVENT[6], ENTITY[白河]) ∧ と(EVENT[6]) = ENTITY[太上天皇] ∧
+                     に(EVENT[6]) = ENTITY[1],
+               CONJ_te(称し_て(EVENT[10], ENTITY[白河], _, ENTITY[白川院]) ∧ ため(EVENT[10]) = SITUATION[7],
+                当たっ_た(EVENT[12], ENTITY[白河]) ∧ に(EVENT[12]) = ENTITY[11])))
+
+# ::id 26_wikipedia_KYOTO_HST_00008,26;NJ
+# ::snt 一般的 に は これ が 院政 の 始まり で ある と さ れ て いる 。
+∃ SITUATION[7] SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = これ ∧
+  院政(ENTITY[4]) ∧
+   の_始まり(ENTITY[4], ENTITY[3]) ∧
+    FACT(SITUATION[2], で_ある(EVENT[5], ENTITY[1], ENTITY[3])) ∧
+     ADV_一般的_に_は(SITUATION[7]) ∧ FACT(SITUATION[7], さ_て_いる(EVENT[6], _, ENTITY[1], SITUATION[2])))
+
+# ::id 27_wikipedia_KYOTO_HST_00008,27;NJ
+# ::snt 嘉承 2 年 （ 1107 年 ） に 堀河 が 没する と その 皇子 （ 鳥羽天皇 ） が 4 歳 で 即位 し 、 独自性 が 見 られ た 堀河 時代 より 白河 は 院政 を 強化 する こと に 成功 し た 。
+∃ SITUATION[10] EVENT[9] EVENT[12] EVENT[13] ENTITY[8] ENTITY[11] ENTITY[6] ENTITY[3] (
+ 皇子(ENTITY[3]) ∧
+  namely_-ENTITY-(ENTITY[鳥羽天皇], ENTITY[3]) ∧
+   独自性(ENTITY[8]) ∧
+    見_た(EVENT[9], _, ENTITY[8]) ∧ 時間(EVENT[9]) = ENTITY[6] ∧ 堀河_時代(ENTITY[6]) ∧
+     院政(ENTITY[11]) ∧
+      こと(SITUATION[10], 強化する.0(EVENT[12], ENTITY[白河], ENTITY[11])) ∧
+       past(EVENT[9]) ∧
+        past(EVENT[13]) ∧
+         ∀ EVENT[2] ENTITY[1] CND_と(CD_嘉承_2_年_（_1107_年_）(ENTITY[1]) ∧ 没する(EVENT[2], ENTITY[堀河]) ∧ に(EVENT[2]) = ENTITY[1],
+             ∃ EVENT[5] ENTITY[4] (CD_4_歳(ENTITY[4]) ∧ 即位する.0(EVENT[5], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[4])) ∧
+          成功する.0_た(EVENT[13], ENTITY[白河], SITUATION[10]) ∧ より(EVENT[13]) = ENTITY[6])
+
+# ::id 28_wikipedia_KYOTO_HST_00008,28;NJ
+# ::snt 白河 以後 、 院政 を 布い た 上皇 は 治天の君 、 すなわち 事実上 の 国王 として 君臨 し 、 天皇 は 「 まるで 東宮 （ 皇太子 ） の よう だ 」 と 言わ れる よう に なっ た 。
+∃ ENTITY[12] SITUATION[11] SITUATION[10] EVENT[8] EVENT[14] EVENT[16] EVENT[17] ENTITY[7] ENTITY[6] ENTITY[13] TIME[1] EVENT[5] ENTITY[4] ENTITY[2] ENTITY[9] (
+ 院政(ENTITY[4]) ∧
+  布い_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 上皇(ENTITY[2]) ∧
+   天皇(ENTITY[9]) ∧
+    past(EVENT[5]) ∧
+     白河_以後(TIME[1]) ∧
+      事実上(ENTITY[7]) ∧
+       の_国王(ENTITY[7], ENTITY[6]) ∧ すなわち_国王(ENTITY[治天の君], ENTITY[6]) ∧
+        ENTITY[12] = *pro*{ENTITY[9], ENTITY[2], ENTITY[治天の君], ENTITY[4], ENTITY[6], ENTITY[7]} ∧
+         namely_-ENTITY-(ENTITY[皇太子], ENTITY[東宮]) ∧
+          の_よう(ENTITY[東宮], ENTITY[13]) ∧
+           と(SITUATION[11], だ(EVENT[14], ENTITY[12], ENTITY[13])) ∧
+            よう(SITUATION[10], 言わ(EVENT[16], _, SITUATION[11])) ∧
+             ADV_まるで(EVENT[14]) ∧
+              past(EVENT[17]) ∧
+               君臨する.0(EVENT[8], ENTITY[2]) ∧ として(EVENT[8]) = ENTITY[6] ∧
+                なっ_た(EVENT[17], ENTITY[9], SITUATION[10]) ∧ is_contained_in(時間(EVENT[17]), TIME[1]))
+
+# ::id 29_wikipedia_KYOTO_HST_00008,29;NJ
+# ::snt ただし 、 白河 は 当初 から その よう な 院政 体制 を 意図 し て い た わけ で は なく 、 結果的 に そう なっ た と も いえる 。
+∃ SITUATION[1] EVENT[8] EVENT[11] ENTITY[5] (
+ よう(ENTITY[5]) ∧
+  FACT(SITUATION[1],
+   MD_わけ(¬ ∃ EVENT[6] EVENT[7] ENTITY[3] ENTITY[2] (
+              当初(ENTITY[2]) ∧
+               な(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 院政_体制(ENTITY[3]) ∧
+                past(EVENT[7]) ∧
+                 意図する.0_て_い_た_で_は(EVENT[7], ENTITY[白河], ENTITY[3]) ∧ から(EVENT[7]) = ENTITY[2])) ∧
+    なっ_た(EVENT[8])) ∧
+   ADV_結果的_に(EVENT[8]) ∧ ADV_そう(EVENT[8]) ∧ past(EVENT[8]) ∧ いえる(EVENT[11], _, SITUATION[1]))
+
+# ::id 30_wikipedia_KYOTO_HST_00008,30;NJ
+# ::snt 白河 の 本来 の 意志 は 、 皇位 継承 の 安定化 （ というより 自系統 による 皇位 独占 ） という 意図 が あっ た 。
+∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 本来(ENTITY[2]) ∧
+  の_意志(ENTITY[2], ENTITY[1]) ∧ の__意志(ENTITY[白河], ENTITY[1]) ∧
+   皇位_継承(ENTITY[8]) ∧
+    の_安定化(ENTITY[8], ENTITY[7]) ∧
+     というより(ENTITY[7], ENTITY[6]) ∧
+      自系統(ENTITY[5]) ∧
+       による_皇位_独占(ENTITY[5], ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[4], ENTITY[6]) ∧
+         という_意図(ENTITY[6], ENTITY[3]) ∧ past(EVENT[9]) ∧ あっ_た(EVENT[9], ENTITY[1], ENTITY[3]))
+
+# ::id 31_wikipedia_KYOTO_HST_00008,31;NJ
+# ::snt 弟 で ある 実仁親王 ・ 輔仁親王 が 有力 な 皇位 継承 候補 として 存在 し て いる 中 、 我が 子 で ある 善仁親王 に 皇位 を 譲る こと で これら 弟 の 皇位 継承 （ および それ を 支持 する 貴族 ） を 断念 さ せる 意図 が あっ た 。
+∃ ENTITY[15] SITUATION[13] ENTITY[12] ENTITY[11] SITUATION[10] ATTRIB[8] SITUATION[1] EVENT[5] EVENT[9] EVENT[16] EVENT[18] EVENT[27] EVENT[19] EVENT[28] ENTITY[4] GROUP[6] ENTITY[7] ENTITY[2] ENTITY[17] GROUP[20] (
+ 弟(ENTITY[4]) ∧
+  is_element_of(ENTITY[実仁親王], GROUP[6]) ∧ is_element_of(ENTITY[輔仁親王], GROUP[6]) ∧
+   で_ある(EVENT[5], ENTITY[2], ENTITY[4]) ∧ equals(GROUP[6], ENTITY[2]) ∧
+    有力_な(ATTRIB[8]) ∧
+     ATTRIBUTE_皇位_継承_候補(ATTRIB[8], ENTITY[7]) ∧
+      FACT(SITUATION[1], 存在する.0_て_いる(EVENT[9], ENTITY[2]) ∧ として(EVENT[9]) = ENTITY[7]) ∧
+       ENTITY[11] = *pro*{ENTITY[輔仁親王], ENTITY[実仁親王], ENTITY[2], ENTITY[7], ENTITY[4]} ∧
+        ENTITY[12] = *pro*{ENTITY[輔仁親王], ENTITY[実仁親王], ENTITY[2], ENTITY[7], ENTITY[4]} ∧
+         ENTITY[15] = 我が{ENTITY[12], ENTITY[11], ENTITY[輔仁親王], ENTITY[実仁親王], ENTITY[2], ENTITY[7], ENTITY[4]} ∧
+          子(ENTITY[15]) ∧
+           で_ある(EVENT[16], ENTITY[善仁親王], ENTITY[15]) ∧
+            皇位(ENTITY[17]) ∧
+             こと(SITUATION[13], 譲る(EVENT[18], ENTITY[12], ENTITY[17], ENTITY[善仁親王])) ∧
+              CONJ_および(∃ ENTITY[22] ENTITY[21] (
+                    ENTITY[22] = これら{ENTITY[12], ENTITY[11], ENTITY[善仁親王], ENTITY[17], ENTITY[輔仁親王], ENTITY[実仁親王], ENTITY[2], ENTITY[7], ENTITY[4]} ∧
+                     弟(ENTITY[22]) ∧ の_皇位_継承(ENTITY[22], ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[20])),
+               ∃ ENTITY[25] EVENT[26] ENTITY[23] (
+                ENTITY[25] = それ{ENTITY[12], ENTITY[11], ENTITY[善仁親王], ENTITY[17], ENTITY[輔仁親王], ENTITY[実仁親王], ENTITY[2], ENTITY[7], ENTITY[4]} ∧
+                 支持する.0(EVENT[26], ENTITY[23], ENTITY[25]) ∧ 貴族(ENTITY[23]) ∧
+                  is_element_of(ENTITY[23], GROUP[20]))) ∧
+               意図(SITUATION[10],
+                せる(EVENT[19], ENTITY[11], ENTITY[12], 断念する.0(EVENT[27], ENTITY[12], GROUP[20])) ∧
+                 で(EVENT[19]) = SITUATION[13]) ∧
+                past(EVENT[28]) ∧ あっ_た(EVENT[28], SITUATION[10]) ∧ 中(EVENT[28]) = SITUATION[1])
+
+# ::id 32_wikipedia_KYOTO_HST_00008,32;NJ
+# ::snt 直系 相続 による 皇位 継承 は 理想的 で ある 反面 、 皇位 継承 男子 が 必ずしも 確保 できる 訳 で は なく 、 常 に 皇統 断絶 の 不安 が つきまとう 。
+∃ ENTITY[5] SITUATION[1] ENTITY[11] ENTITY[10] ENTITY[9] EVENT[4] EVENT[12] ENTITY[3] ENTITY[2] (
+ 直系_相続(ENTITY[3]) ∧
+  による_皇位_継承(ENTITY[3], ENTITY[2]) ∧
+   FACT(SITUATION[1], 理想的_で_ある(EVENT[4], ENTITY[2])) ∧
+    ENTITY[5] = *pro*{ENTITY[2], ENTITY[3]} ∧
+     常(ENTITY[9]) ∧
+      皇統_断絶(ENTITY[11]) ∧
+       の_不安(ENTITY[11], ENTITY[10]) ∧
+        MD_訳(¬ ∃ ENTITY[6] EVENT[7] (
+                   ADV_必ずしも(EVENT[7]) ∧
+                    皇位_継承_男子(ENTITY[6]) ∧ 確保する.0_で_は(EVENT[7], ENTITY[5], ENTITY[6]))) ∧
+         つきまとう(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[9] ∧ 反面(EVENT[12]) = SITUATION[1])
+
+# ::id 33_wikipedia_KYOTO_HST_00008,33;NJ
+# ::snt 逆 に 多く の 皇子 が 並立 し て い て も 皇位 継承 紛争 が 絶え ない こと と なる 。
+∃ SITUATION[6] SITUATION[1] SITUATION[4] ENTITY[5] EVENT[8] (
+ ADV_逆_に(SITUATION[4]) ∧
+  FACT(SITUATION[1], FACT(SITUATION[4], 多く_の ENTITY[2] (皇子(ENTITY[2]), ∃ EVENT[3] 並立する.0_て_い(EVENT[3], ENTITY[2])))) ∧
+   皇位_継承_紛争(ENTITY[5]) ∧
+    こと(SITUATION[6], ¬ ∃ EVENT[7] 絶え(EVENT[7], ENTITY[5])) ∧
+     なる(EVENT[8], ENTITY[5], SITUATION[6]) ∧ te(EVENT[8]) = SITUATION[1])
+
+# ::id 34_wikipedia_KYOTO_HST_00008,34;NJ
+# ::snt 院政 の 下 で は 、 「 治天の君 」 が 次代 ・ 次々代 の 天皇 を 指名 でき た ので 、 比較的 安定 し た 皇位 継承 が 実現 でき 、 皇位 継承 に 「 治天の君 」 の 意向 を 反映 さ せる こと も 可能 で あっ た 。
+∃ SITUATION[14] ENTITY[8] EVENT[7] EVENT[11] EVENT[13] EVENT[18] EVENT[16] EVENT[19] GROUP[4] ENTITY[3] ENTITY[9] ENTITY[17] ENTITY[15] ENTITY[2] ENTITY[1] (
+ 院政(ENTITY[2]) ∧
+  の_下(ENTITY[2], ENTITY[1]) ∧
+   ∃ ENTITY[5] (次代(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (次々代(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    の_天皇(GROUP[4], ENTITY[3]) ∧
+     ENTITY[8] = *pro*{ENTITY[3], ENTITY[1], ENTITY[治天の君], ENTITY[2]} ∧
+      安定する.0_た(EVENT[11], ENTITY[9]) ∧ 皇位_継承(ENTITY[9]) ∧
+       皇位_継承(ENTITY[15]) ∧
+        の_意向(ENTITY[治天の君], ENTITY[17]) ∧
+         こと(SITUATION[14],
+          せる(EVENT[16], 反映する.0(EVENT[18], _, ENTITY[17])) ∧ に(EVENT[16]) = ENTITY[15]) ∧
+          past(EVENT[7]) ∧
+           ADV_比較的(EVENT[11]) ∧
+            past(EVENT[11]) ∧
+             past(EVENT[19]) ∧
+              CRD_ので(指名する.0_た(EVENT[7], ENTITY[治天の君], ENTITY[3]) ∧ で(EVENT[7]) = ENTITY[1],
+               実現する.0(EVENT[13], ENTITY[8], ENTITY[9]) ∧ 可能_で_あっ_た(EVENT[19], SITUATION[14])))
+
+# ::id 35_wikipedia_KYOTO_HST_00008,35;NJ
+# ::snt 摂関 政治 の 下 で 、 皇位 継承 に 摂関家 の 意向 が 大きく 反映 し て い た の と 大きく 異なっ て いる 。
+∃ SITUATION[2] ENTITY[1] EVENT[7] EVENT[9] ENTITY[4] ENTITY[6] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  摂関_政治(ENTITY[4]) ∧
+   の_下(ENTITY[4], ENTITY[3]) ∧
+    皇位_継承(ENTITY[5]) ∧
+     の_意向(ENTITY[摂関家], ENTITY[6]) ∧
+      の(SITUATION[2],
+       反映する.0_て_い_た(EVENT[7], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[5] ∧ で(EVENT[7]) = ENTITY[3]) ∧
+       ADV_大きく(EVENT[7]) ∧
+        past(EVENT[7]) ∧
+         ADV_大きく(EVENT[9]) ∧ 異なっ_て_いる(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = SITUATION[2])
+
+# ::id 36_wikipedia_KYOTO_HST_00008,36;NJ
+# ::snt また 、 外戚 関係 を 媒介 に 摂政 関白 として 政務 に あたる 摂関政治 と 異なっ て 、 院政 は 直接的 な 父権 に 基づく もの で あっ た ため 、 専制的 な 統治 を 可能 と し て い た 。
+∃ ATTRIB[21] ATTRIB[17] SITUATION[13] ENTITY[2] SITUATION[1] EVENT[5] EVENT[10] EVENT[11] EVENT[18] EVENT[19] EVENT[22] ENTITY[4] ENTITY[3] ENTITY[9] GROUP[6] ENTITY[16] ENTITY[14] ENTITY[20] ENTITY[12] (
+ 院政(ENTITY[12]) ∧
+  ENTITY[2] = *pro* ∧
+   外戚_関係(ENTITY[3]) ∧
+    媒介(ENTITY[4]) ∧
+     ∃ ENTITY[7] (摂政(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+      ∃ ENTITY[8] (関白(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+      政務(ENTITY[9]) ∧
+       摂関政治(SITUATION[1],
+        xxx(EVENT[5], ENTITY[2], ENTITY[3], ENTITY[4]) ∧
+         あたる(EVENT[10], ENTITY[2]) ∧ に(EVENT[10]) = ENTITY[9] ∧ として(EVENT[10]) = GROUP[6]) ∧
+        直接的_な(ATTRIB[17]) ∧
+         ATTRIBUTE_父権(ATTRIB[17], ENTITY[16]) ∧
+          基づく(EVENT[18], ENTITY[14]) ∧ に(EVENT[18]) = ENTITY[16] ∧ もの(ENTITY[14]) ∧
+           FACT(SITUATION[13], で_あっ_た(EVENT[19], ENTITY[12], ENTITY[14])) ∧
+            専制的_な(ATTRIB[21]) ∧
+             ATTRIBUTE_統治(ATTRIB[21], ENTITY[20]) ∧
+              past(EVENT[19]) ∧
+               past(EVENT[22]) ∧
+                CONJ_te(異なっ_て(EVENT[11]) ∧ と(EVENT[11]) = SITUATION[1],
+                 可能_と_し_て_い_た(EVENT[22], ENTITY[12], ENTITY[20]) ∧ ため(EVENT[22]) = SITUATION[13]))
+
+# ::id 37_wikipedia_KYOTO_HST_00008,37;NJ
+# ::snt 院政 を 布く 上皇 は 、 自己 の 政務 機関 として 院庁 を 設置 し 、 院宣 ・ 院庁下文 など の 命令 文書 を 発給 し た 。
+∃ EVENT[8] EVENT[14] ENTITY[6] ENTITY[7] ENTITY[5] GROUP[11] ENTITY[10] ENTITY[9] EVENT[4] ENTITY[3] ENTITY[1] (
+ 院政(ENTITY[3]) ∧
+  布く(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 上皇(ENTITY[1]) ∧
+   自己(ENTITY[6]) ∧
+    の_政務_機関(ENTITY[6], ENTITY[5]) ∧
+     院庁(ENTITY[7]) ∧
+      ∃ ENTITY[12] (院宣(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+       ∃ ENTITY[13] (院庁下文(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11])) ∧
+       など(GROUP[11], ENTITY[10]) ∧
+        の_命令_文書(ENTITY[10], ENTITY[9]) ∧
+         past(EVENT[14]) ∧
+          設置する.0(EVENT[8], ENTITY[1], ENTITY[7]) ∧ として(EVENT[8]) = ENTITY[5] ∧
+           発給する.0_た(EVENT[14], ENTITY[1], ENTITY[9]))
+
+# ::id 38_wikipedia_KYOTO_HST_00008,38;NJ
+# ::snt 従来 の 学説 で は 院庁 において 実際 の 政務 が 執ら れ た と さ れ て い た が 、 鈴木 茂男 が 当時 の 院庁 発給 文書 に 国政 に関する 内容 が 認め られ ない こと を 主張 し 、 橋本 義彦 が これ を 受け て 院庁 政治論 を 痛烈 に 批判 し た ため 近年 で は 、 非公式 の 私文書 として の 側面 の ある 院宣 を 用い て 朝廷 に 圧力 を かけ 、 院 独自 の 側近 を 院 の 近臣 として 太政官 内 に 送り込む こと によって 事実上 の 指揮 を 執っ た とする 見解 が 有力 と なっ て いる 。
+∃ SITUATION[35] ENTITY[24] ENTITY[17] SITUATION[10] SITUATION[9] SITUATION[5] EVENT[7] EVENT[8] EVENT[16] EVENT[18] EVENT[20] EVENT[30] EVENT[31] EVENT[34] EVENT[41] EVENT[44] EVENT[46] ENTITY[4] ENTITY[6] ENTITY[3] ENTITY[12] ENTITY[14] ENTITY[13] ENTITY[11] ENTITY[19] ENTITY[29] ENTITY[28] ENTITY[27] ENTITY[25] ENTITY[33] ENTITY[32] ENTITY[37] ENTITY[39] ENTITY[40] ENTITY[38] ENTITY[36] ENTITY[43] ENTITY[42] ENTITY[45] ENTITY[23] ENTITY[2] ENTITY[1] ENTITY[22] (
+ 従来(ENTITY[2]) ∧
+  の_学説(ENTITY[2], ENTITY[1]) ∧
+   近年(ENTITY[22]) ∧
+    実際(ENTITY[4]) ∧
+     の_政務(ENTITY[4], ENTITY[3]) ∧
+      院庁(ENTITY[6]) ∧
+       FACT(SITUATION[5], 執ら_た(EVENT[7], _, ENTITY[3]) ∧ において(EVENT[7]) = ENTITY[6]) ∧
+        当時(ENTITY[12]) ∧
+         の_院庁_発給_文書(ENTITY[12], ENTITY[11]) ∧
+          国政(ENTITY[14]) ∧
+           に関する_内容(ENTITY[14], ENTITY[13]) ∧
+            こと(SITUATION[10],
+             ¬ ∃ EVENT[15] (認め(EVENT[15], _, ENTITY[13]) ∧ に(EVENT[15]) = ENTITY[11])) ∧
+             ENTITY[17] = これ{ENTITY[11], ENTITY[13], ENTITY[14], ENTITY[12], ENTITY[鈴木_茂男], ENTITY[3], ENTITY[6], ENTITY[4], ENTITY[1], ENTITY[2]} ∧
+              院庁_政治論(ENTITY[19]) ∧
+               FACT(SITUATION[9],
+                主張する.0(EVENT[16], ENTITY[鈴木_茂男], SITUATION[10]) ∧
+                 CONJ_te(受け_て(EVENT[18], ENTITY[橋本_義彦], ENTITY[17]), 批判する.0_た(EVENT[20], ENTITY[橋本_義彦], ENTITY[19]))) ∧
+                ENTITY[24] = *pro*{ENTITY[22], ENTITY[19], ENTITY[11], ENTITY[13], ENTITY[14], ENTITY[12], ENTITY[橋本_義彦], ENTITY[鈴木_茂男], ENTITY[3], ENTITY[6], ENTITY[4], ENTITY[1], ENTITY[2]} ∧
+                 非公式(ENTITY[29]) ∧
+                  の_私文書(ENTITY[29], ENTITY[28]) ∧
+                   として_の_側面(ENTITY[28], ENTITY[27]) ∧
+                    ある(EVENT[30], (ENTITY[25], ENTITY[27])) ∧ 院宣(ENTITY[25]) ∧
+                     朝廷(ENTITY[32]) ∧
+                      圧力(ENTITY[33]) ∧
+                       独自(ENTITY[37]) ∧
+                        の_院_側近(ENTITY[37], ENTITY[36]) ∧
+                         院(ENTITY[39]) ∧
+                          の_近臣(ENTITY[39], ENTITY[38]) ∧
+                           太政官_内(ENTITY[40]) ∧
+                            こと(SITUATION[35],
+                             送り込む(EVENT[41], ENTITY[24], ENTITY[36], ENTITY[40]) ∧
+                              として(EVENT[41]) = ENTITY[38]) ∧
+                             事実上(ENTITY[43]) ∧
+                              の_指揮(ENTITY[43], ENTITY[42]) ∧
+                               THAT_見解(CONJ_te(用い_て(EVENT[31], ENTITY[24], ENTITY[25]),
+                                     かけ(EVENT[34], ENTITY[24], ENTITY[33]) ∧
+                                      に(EVENT[34]) = ENTITY[32]) ∧
+                                     執っ_た(EVENT[44], ENTITY[24], ENTITY[42]) ∧
+                                      によって(EVENT[44]) = SITUATION[35], ENTITY[23]) ∧
+                                有力(ENTITY[45]) ∧
+                                 past(EVENT[7]) ∧
+                                  past(EVENT[8]) ∧
+                                   ADV_痛烈_に(EVENT[20]) ∧
+                                    past(EVENT[20]) ∧
+                                     past(EVENT[44]) ∧
+                                      CONJ_が(さ_て_い_た(EVENT[8], _, ENTITY[3], SITUATION[5]) ∧
+                                            で(EVENT[8]) = ENTITY[1],
+                                       なっ_て_いる(EVENT[46], ENTITY[23], ENTITY[45]) ∧
+                                        で(EVENT[46]) = ENTITY[22] ∧
+                                        ため(EVENT[46]) = SITUATION[9]))
+
+# ::id 39_wikipedia_KYOTO_HST_00008,39;NJ
+# ::snt これら 院 の 近臣 は 上皇 と の 個別 の 主従 関係 により 出世 し 権勢 を 強め た 。
+∃ ENTITY[2] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[1] (
+ ENTITY[2] = これら ∧
+  近臣(ENTITY[2]) ∧
+   院(ENTITY[1]) ∧
+    の_xxx(ENTITY[1], ENTITY[2]) ∧
+     上皇(ENTITY[4]) ∧
+      個別(ENTITY[5]) ∧
+       の_主従_関係(ENTITY[5], ENTITY[3]) ∧ と_の_主従_関係(ENTITY[4], ENTITY[3]) ∧
+        権勢(ENTITY[7]) ∧
+         past(EVENT[8]) ∧
+          出世する.0(EVENT[6], ENTITY[2]) ∧ により(EVENT[6]) = ENTITY[3] ∧ 強め_た(EVENT[8], ENTITY[2], ENTITY[7]))
+
+# ::id 40_wikipedia_KYOTO_HST_00008,40;NJ
+# ::snt また 、 上皇 独自 の 軍事 組織 として 北面の武士 を 置く など 、 平氏 を 主 と し た 武士 勢力 の 登用 を 図っ た ため 、 平氏 権力 の 成長 を 促し た 。
+∃ SITUATION[4] SITUATION[2] ENTITY[1] EVENT[7] EVENT[11] EVENT[12] EVENT[15] ENTITY[6] ENTITY[5] ENTITY[10] ENTITY[8] ENTITY[3] ENTITY[14] ENTITY[13] (
+ ENTITY[1] = *pro* ∧
+  上皇_独自(ENTITY[6]) ∧
+   の_軍事_組織(ENTITY[6], ENTITY[5]) ∧
+    FACT(SITUATION[4], 置く(EVENT[7], _, ENTITY[北面の武士]) ∧ として(EVENT[7]) = ENTITY[5]) ∧
+     主(ENTITY[10]) ∧
+      し_た(EVENT[11], ENTITY[8], ENTITY[平氏], ENTITY[10]) ∧ 武士_勢力(ENTITY[8]) ∧
+       の_登用(ENTITY[8], ENTITY[3]) ∧ など_登用(SITUATION[4], ENTITY[3]) ∧
+        FACT(SITUATION[2], 図っ_た(EVENT[12], ENTITY[1], ENTITY[3])) ∧
+         平氏_権力(ENTITY[14]) ∧
+          の_成長(ENTITY[14], ENTITY[13]) ∧
+           past(EVENT[11]) ∧
+            past(EVENT[12]) ∧
+             past(EVENT[15]) ∧ 促し_た(EVENT[15], ENTITY[1], ENTITY[13]) ∧ ため(EVENT[15]) = SITUATION[2])
+
+# ::id 41_wikipedia_KYOTO_HST_00008,41;NJ
+# ::snt その ため 、 白河 による 院政 開始 をもって 中世 の 起点 と する 事 も ある 。
+∃ SITUATION[3] ENTITY[2] EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  ENTITY[2] = *pro* ∧
+   による_院政_開始(ENTITY[白河], ENTITY[4]) ∧
+    中世(ENTITY[6]) ∧
+     の_起点(ENTITY[6], ENTITY[5]) ∧
+      事(SITUATION[3], する(EVENT[7], ENTITY[2], ENTITY[4], ENTITY[5])) ∧
+       ある(EVENT[8], ENTITY[2], SITUATION[3]) ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 42_wikipedia_KYOTO_HST_00008,42;NJ
+# ::snt 院政 の 最盛 と 転換
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ 院政(ENTITY[2]) ∧
+  CONJ_と(∃ ENTITY[4] (最盛(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (転換(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 43_wikipedia_KYOTO_HST_00008,43;NJ
+# ::snt 白河 は 、 鳥羽 の 第 一 皇子 （ 崇徳天皇 ） を 皇位 に つけ た 後 に 没し 、 鳥羽 が 院政 を 布く こと と なっ た が 、 鳥羽 は 崇徳 を 疎ん じ 、 第 九 皇子 で ある 近衛天皇 （ 母 、 藤原 得子 ） へ 皇位 を 継が せ た （ 近衛 没後 は その 兄 の 後白河天皇 （ 母 、 藤原 璋子 ） が 継い だ ） 。
+∃ SITUATION[6] SITUATION[1] EVENT[4] EVENT[5] EVENT[8] EVENT[9] EVENT[10] EVENT[14] EVENT[17] EVENT[15] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[13] ENTITY[11] ENTITY[16] (
+ (CD_第_一(ENTITY[2]), の_皇子(ENTITY[鳥羽], ENTITY[2])) ∧
+  namely_-ENTITY-(ENTITY[崇徳天皇], ENTITY[2]) ∧
+   皇位(ENTITY[3]) ∧
+    後(SITUATION[1], つけ_た(EVENT[4], ENTITY[白河], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+     院政(ENTITY[7]) ∧
+      こと(SITUATION[6], 布く(EVENT[8], ENTITY[鳥羽], ENTITY[7])) ∧
+       (CD_第_九(ENTITY[13]), 皇子(ENTITY[13])) ∧
+        で_ある(EVENT[14], ENTITY[近衛天皇], ENTITY[13]) ∧
+         namely_-ENTITY-(ENTITY[藤原_得子], ENTITY[近衛天皇]) ∧
+          母(ENTITY[11]) ∧
+           namely_-ENTITY-(ENTITY[11], ENTITY[近衛天皇]) ∧
+            皇位(ENTITY[16]) ∧
+             past(EVENT[4]) ∧
+              past(EVENT[9]) ∧
+               past(EVENT[15]) ∧
+                CONJ_が(没し(EVENT[5], ENTITY[白河]) ∧ に(EVENT[5]) = SITUATION[1] ∧
+                      なっ_た(EVENT[9], ENTITY[鳥羽], SITUATION[6]),
+                 疎ん_じ(EVENT[10], ENTITY[鳥羽], ENTITY[崇徳]) ∧
+                  せ_た(EVENT[15], ENTITY[鳥羽], ENTITY[近衛天皇], 継が(EVENT[17], ENTITY[近衛天皇], ENTITY[16]))))
+
+# ::id 44_wikipedia_KYOTO_HST_00008,44;NJ
+# ::snt そして 、 保元 元 年 （ 1156 年 ） に 鳥羽 が 没し た 直後 、 崇徳 と 後白河 の 間 で 戦闘 が 起こり 、 後白河 が 勝利 し た （ 保元の乱 ） 。
+∃ SITUATION[1] EVENT[3] EVENT[7] EVENT[8] ENTITY[2] GROUP[5] ENTITY[6] ENTITY[4] (
+ CD_保元_元_年_（_1156_年_）(ENTITY[2]) ∧
+  直後(SITUATION[1], 没し_た(EVENT[3], ENTITY[鳥羽]) ∧ に(EVENT[3]) = ENTITY[2]) ∧
+   CONJ_と(is_element_of(ENTITY[崇徳], GROUP[5]), is_element_of(ENTITY[後白河], GROUP[5])) ∧
+    の_間(GROUP[5], ENTITY[4]) ∧
+     戦闘(ENTITY[6]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[8]) ∧
+        起こり(EVENT[7], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[4] ∧
+         勝利する.0_た(EVENT[8], ENTITY[後白河]) ∧ 時間(EVENT[8]) = SITUATION[1])
+
+# ::id 45_wikipedia_KYOTO_HST_00008,45;NJ
+# ::snt 後白河 は 保元 3 年 （ 1158 年 ） に 二条天皇 へ 譲位 する と 院政 を 開始 し た 。
+∀ EVENT[2] ENTITY[1] CND_と(
+    CD_保元_3_年_（_1158_年_）(ENTITY[1]) ∧
+     譲位する.0(EVENT[2], ENTITY[後白河]) ∧ へ(EVENT[2]) = ENTITY[二条天皇] ∧ に(EVENT[2]) = ENTITY[1],
+    ∃ EVENT[4] ENTITY[3] (院政(ENTITY[3]) ∧ past(EVENT[4]) ∧ 開始する.0_た(EVENT[4], ENTITY[後白河], ENTITY[3])))
+
+# ::id 46_wikipedia_KYOTO_HST_00008,46;NJ
+# ::snt 後白河 院政期 に は 、 平治の乱 と 平清盛 政権 の 登場 および その 崩壊 、 治承・寿永の内乱 の 勃発 、 源頼朝 の 鎌倉幕府 成立 など 、 武士 が 一気 に 台頭 する 時代 と なっ た 。
+∃ EVENT[13] EVENT[14] ENTITY[12] ENTITY[11] GROUP[3] ENTITY[2] ENTITY[7] ENTITY[1] (
+ 後白河_院政期(ENTITY[1]) ∧
+  崩壊(ENTITY[7]) ∧
+   CONJ_と(is_element_of(ENTITY[平治の乱], GROUP[3]),
+    ∃ GROUP[4] (
+     CONJ_および(∃ ENTITY[6] ENTITY[5] (平清盛_政権(ENTITY[6]) ∧ の_登場(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+      is_element_of(ENTITY[7], GROUP[4])) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])),
+    ∃ ENTITY[8] (の_勃発(ENTITY[治承.寿永の内乱], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3])),
+    ∃ ENTITY[9] (の_鎌倉幕府_成立(ENTITY[源頼朝], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[3]))) ∧
+    武士(ENTITY[11]) ∧
+     一気(ENTITY[12]) ∧
+      台頭する.0(EVENT[13], ENTITY[11]) ∧ に(EVENT[13]) = ENTITY[12] ∧ 時間(EVENT[13]) = ENTITY[2] ∧
+       など_時代(GROUP[3], ENTITY[2]) ∧
+       past(EVENT[14]) ∧
+        なっ_た(EVENT[14]) ∧ と(EVENT[14]) = ENTITY[2] ∧ に(EVENT[14]) = ENTITY[1])
+
+# ::id 47_wikipedia_KYOTO_HST_00008,47;NJ
+# ::snt 後白河 の 後 は 、 その 孫 の 後鳥羽天皇 が 院政 を 行っ た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_後(ENTITY[後白河], ENTITY[1]) ∧
+  孫(ENTITY[2]) ∧
+   の_xxx(ENTITY[2], ENTITY[後鳥羽天皇]) ∧
+    院政(ENTITY[3]) ∧
+     past(EVENT[4]) ∧ 行っ_た(EVENT[4], ENTITY[後鳥羽天皇], ENTITY[3]) ∧ 時間(EVENT[4]) = ENTITY[1])
+
+# ::id 48_wikipedia_KYOTO_HST_00008,48;NJ
+# ::snt 後鳥羽院 は 、 将軍 源実朝 が 暗殺 さ れ た 事 を 好機 と し 、 皇権 復興 を 企図 し て 鎌倉幕府 を 倒そ うとし た が 失敗 （ 承久の乱 ） 、 自身 は 流罪 と なっ た 上 、 皇権 の 低下 と 朝廷 へ 執権 北条氏 の 介入 を 招い て しまっ た 。
+∃ ENTITY[12] SITUATION[11] SITUATION[1] ENTITY[10] EVENT[3] EVENT[5] EVENT[7] EVENT[9] EVENT[14] EVENT[21] ENTITY[2] ENTITY[4] ENTITY[6] ENTITY[13] GROUP[15] (
+ ENTITY[10] = 自身{ENTITY[6], ENTITY[4], ENTITY[2], ENTITY[後鳥羽院], ENTITY[鎌倉幕府], ENTITY[源実朝]} ∧
+  将軍(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[源実朝]) ∧
+    事(SITUATION[1], 暗殺する.0_た(EVENT[3], _, ENTITY[源実朝])) ∧
+     好機(ENTITY[4]) ∧
+      皇権_復興(ENTITY[6]) ∧
+       ENTITY[12] = *pro*{ENTITY[10], ENTITY[6], ENTITY[4], ENTITY[2], ENTITY[後鳥羽院], ENTITY[鎌倉幕府], ENTITY[源実朝]} ∧
+        流罪(ENTITY[13]) ∧
+         FACT(SITUATION[11], なっ_た(EVENT[14], ENTITY[12]) ∧ と(EVENT[14]) = ENTITY[13]) ∧
+          CONJ_と(∃ ENTITY[17] ENTITY[16] (皇権(ENTITY[17]) ∧ の_低下(ENTITY[17], ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])),
+           ∃ ENTITY[20] ENTITY[19] ENTITY[18] (
+            朝廷(ENTITY[19]) ∧
+             執権(ENTITY[20]) ∧
+              namely_-ENTITY-(ENTITY[20], ENTITY[北条氏]) ∧
+               の_介入(ENTITY[北条氏], ENTITY[18]) ∧ へ_介入(ENTITY[19], ENTITY[18]) ∧
+                is_element_of(ENTITY[18], GROUP[15]))) ∧
+           past(EVENT[3]) ∧
+            past(EVENT[14]) ∧
+             past(EVENT[21]) ∧
+              CONJ_が(し(EVENT[5], ENTITY[後鳥羽院], SITUATION[1], ENTITY[4]) ∧
+                    CONJ_te(企図する.0_て(EVENT[7], ENTITY[後鳥羽院], ENTITY[6]),
+                     MD_うとし(∃ EVENT[8] (past(EVENT[8]) ∧ 倒そ_た(EVENT[8], ENTITY[後鳥羽院], ENTITY[鎌倉幕府])))),
+               失敗(EVENT[9], ENTITY[後鳥羽院])) ∧
+               招い_て_しまっ_た(EVENT[21], ENTITY[10], GROUP[15]) ∧ 上(EVENT[21]) = SITUATION[11])
+
+# ::id 49_wikipedia_KYOTO_HST_00008,49;NJ
+# ::snt 乱 後 、 後堀河天皇 が 即位 する と その 父親 で ある 守貞親王 が 例外的 に 皇位 を 経 ず し て 院政 を 行う （ 後高倉院 ） という 事態 も 発生 し て いる 。
+∃ SITUATION[10] SITUATION[1] EVENT[3] EVENT[7] EVENT[12] EVENT[13] TIME[2] ENTITY[8] ENTITY[11] ENTITY[4] ENTITY[6] (
+ 父親(ENTITY[6]) ∧
+  乱_後(TIME[2]) ∧
+   FACT(SITUATION[1], 即位する.0(EVENT[3], ENTITY[後堀河天皇]) ∧ is_contained_in(時間(EVENT[3]), TIME[2])) ∧
+    で_ある(EVENT[7], ENTITY[守貞親王], ENTITY[6]) ∧
+     皇位(ENTITY[8]) ∧
+      院政(ENTITY[11]) ∧
+       THAT_事態(CONJ_te(FACT(SITUATION[10], ¬ ∃ EVENT[9] 経_し_て(EVENT[9], ENTITY[守貞親王], ENTITY[8])),
+             行う(EVENT[12], ENTITY[守貞親王], ENTITY[11])), ENTITY[4]) ∧
+        ADV_例外的_に(SITUATION[10]) ∧ 発生する.0_て_いる(EVENT[13], ENTITY[4]) ∧ と(EVENT[13]) = SITUATION[1])
+
+# ::id 50_wikipedia_KYOTO_HST_00008,50;NJ
+# ::snt 院政 は 承久の乱 以降 も 継続 し 、 公家 政権 の 中枢 として 機能 し た 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 院政(ENTITY[1]) ∧
+  承久の乱_以降(ENTITY[2]) ∧
+   公家_政権(ENTITY[5]) ∧
+    の_中枢(ENTITY[5], ENTITY[4]) ∧
+     past(EVENT[6]) ∧
+      継続する.0(EVENT[3], ENTITY[1]) ∧ 時間(EVENT[3]) = ENTITY[2] ∧
+       機能する.0_た(EVENT[6], ENTITY[1]) ∧ として(EVENT[6]) = ENTITY[4])
+
+# ::id 51_wikipedia_KYOTO_HST_00008,51;NJ
+# ::snt 特に 乱 以後 初めて 本格的 な 院政 を 布い た 後嵯峨天皇 に 院政 諸制度 が 整備 さ れ て いる 。
+∃ SITUATION[9] ATTRIB[4] EVENT[5] EVENT[8] ENTITY[3] TIME[2] ENTITY[7] (
+ 乱_以後(TIME[2]) ∧
+  本格的_な(ATTRIB[4]) ∧
+   ATTRIBUTE_院政(ATTRIB[4], ENTITY[3]) ∧
+    布い_た(EVENT[5], ENTITY[後嵯峨天皇], ENTITY[3]) ∧ is_contained_in(時間(EVENT[5]), TIME[2]) ∧
+     院政_諸制度(ENTITY[7]) ∧
+      ADV_特に(SITUATION[9]) ∧
+       ADV_初めて(EVENT[5]) ∧ past(EVENT[5]) ∧ FACT(SITUATION[9], 整備する.0_て_いる(EVENT[8], ENTITY[後嵯峨天皇], ENTITY[7])))
+
+# ::id 52_wikipedia_KYOTO_HST_00008,52;NJ
+# ::snt 後嵯峨院 は 、 奏事 （ 弁官 や 蔵人 による 奏上 ） を 取り次ぐ 役職 で ある 伝奏 の 制度化 、 そして 院 が 評定衆 とともに 相論 （ 訴訟 ） 裁許 に 当たる 院評定 を 確立 し 、 院政 の 機能 強化 に 努め た 。
+∃ EVENT[21] EVENT[24] GROUP[1] ENTITY[23] ENTITY[22] (
+ CONJ_そして(∃ SITUATION[5] EVENT[11] EVENT[12] GROUP[7] ENTITY[6] ENTITY[10] ENTITY[3] ENTITY[2] (
+       奏事(ENTITY[10]) ∧
+        CONJ_や(∃ ENTITY[8] (弁官(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+         ∃ ENTITY[9] (蔵人(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+         による_奏上(GROUP[7], ENTITY[6]) ∧
+          namely_-ENTITY-(ENTITY[6], ENTITY[10]) ∧
+           役職(SITUATION[5], 取り次ぐ(EVENT[11], ENTITY[3], ENTITY[10])) ∧
+            で_ある(EVENT[12], ENTITY[3], SITUATION[5]) ∧ 伝奏(ENTITY[3]) ∧
+             の_制度化(ENTITY[3], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ EVENT[20] GROUP[16] ENTITY[15] ENTITY[14] ENTITY[13] (
+   院(ENTITY[14]) ∧
+    評定衆(ENTITY[15]) ∧
+     ∃ ENTITY[17] ENTITY[18] (
+      相論(ENTITY[18]) ∧
+       訴訟(ENTITY[17]) ∧ namely_-ENTITY-(ENTITY[17], ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16])) ∧
+      ∃ ENTITY[19] (裁許(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[16])) ∧
+      THAT_院評定(当たる(EVENT[20], ENTITY[14]) ∧ に(EVENT[20]) = GROUP[16] ∧ とともに(EVENT[20]) = ENTITY[15],
+       ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[1]))) ∧
+  院政(ENTITY[23]) ∧
+   の_機能_強化(ENTITY[23], ENTITY[22]) ∧
+    past(EVENT[24]) ∧
+     確立する.0(EVENT[21], ENTITY[後嵯峨院], GROUP[1]) ∧ 努め_た(EVENT[24], ENTITY[後嵯峨院]) ∧ に(EVENT[24]) = ENTITY[22])
+
+# ::id 53_wikipedia_KYOTO_HST_00008,53;NJ
+# ::snt 建武 新政期 に は 後醍醐天皇 が 親政 を 行い 院政 は 一時期 中断 し た が 、 数 年 の 後 に 北朝 による 院政 が 復活 し 、 室町 時代 に 入っ て から 院政 は 継続 し た が 、 永享 5 年 （ 1433 年 ） に 後小松天皇 が 死去 する と 院政 は 事実上 の 終焉 を 迎え た 。
+∃ SITUATION[12] EVENT[3] EVENT[6] EVENT[10] EVENT[14] EVENT[15] ENTITY[2] DEGREE[5] ENTITY[8] ENTITY[9] ENTITY[7] ENTITY[13] ENTITY[4] ENTITY[1] ENTITY[11] ENTITY[18] (
+ 建武_新政期(ENTITY[1]) ∧
+  院政(ENTITY[4]) ∧
+   院政(ENTITY[11]) ∧
+    院政(ENTITY[18]) ∧
+     親政(ENTITY[2]) ∧
+      一時期(DEGREE[5]) ∧
+       CD_数_年(ENTITY[8]) ∧
+        の_後(ENTITY[8], ENTITY[7]) ∧
+         による_院政(ENTITY[北朝], ENTITY[9]) ∧
+          室町_時代(ENTITY[13]) ∧
+           FACT(SITUATION[12], 入っ_て(EVENT[14], ENTITY[11]) ∧ に(EVENT[14]) = ENTITY[13]) ∧
+            past(EVENT[6]) ∧
+             past(EVENT[15]) ∧
+              CONJ_が(行い(EVENT[3], ENTITY[後醍醐天皇], ENTITY[2]) ∧
+                    中断する.0_た(EVENT[6], ENTITY[4]) ∧ MSR(EVENT[6]) = DEGREE[5] ∧
+                     に(EVENT[6]) = ENTITY[1],
+               復活する.0(EVENT[10], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[7] ∧
+                継続する.0_た(EVENT[15], ENTITY[11]) ∧ te_から(EVENT[15]) = SITUATION[12],
+               ∀ EVENT[17] ENTITY[16] CND_と(CD_永享_5_年_（_1433_年_）(ENTITY[16]) ∧ 死去する.0(EVENT[17], ENTITY[後小松天皇]) ∧ に(EVENT[17]) = ENTITY[16],
+                   ∃ EVENT[21] ENTITY[20] ENTITY[19] (
+                    事実上(ENTITY[20]) ∧
+                     の_終焉(ENTITY[20], ENTITY[19]) ∧
+                      past(EVENT[21]) ∧ 迎え_た(EVENT[21], ENTITY[18], ENTITY[19])))))
+
+# ::id 54_wikipedia_KYOTO_HST_00008,54;NJ
+# ::snt これ 以降 、 院政 は 度々 執ら れ た が 、 あくまで 形式上 の 存在 で しか なくなっ て いっ た ため で ある 。
+∃ SITUATION[11] ENTITY[6] SITUATION[5] TIME[1] EVENT[3] EVENT[9] EVENT[10] EVENT[12] ENTITY[8] ENTITY[7] ENTITY[2] (
+ 院政(ENTITY[2]) ∧
+  TIME[1] = これ ∧
+   以降(TIME[1]) ∧
+    ENTITY[6] = *pro*{ENTITY[2]} ∧
+     形式上(ENTITY[8]) ∧
+      の_存在(ENTITY[8], ENTITY[7]) ∧
+       ため(SITUATION[5],
+        FACT(SITUATION[11], CONJ_te_しか(で(EVENT[9], ENTITY[6], ENTITY[7]), なくなっ_て_いっ_た(EVENT[10], ENTITY[6])))) ∧
+        ADV_度々(EVENT[3]) ∧
+         past(EVENT[3]) ∧
+          ADV_あくまで(SITUATION[11]) ∧
+           past(EVENT[10]) ∧
+            CONJ_が(執ら_た(EVENT[3], _, ENTITY[2]) ∧ is_contained_in(時間(EVENT[3]), TIME[1]),
+             で_ある(EVENT[12], _, SITUATION[5])))
+
+# ::id 55_wikipedia_KYOTO_HST_00008,55;NJ
+# ::snt 江戸 時代 の 院政
+∃ EVENT[3] ENTITY[2] ENTITY[1] (江戸_時代(ENTITY[2]) ∧ の_院政(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 56_wikipedia_KYOTO_HST_00008,56;NJ
+# ::snt 江戸 時代 に 入る と 、 『 禁中並公家諸法度 』 に 基づい て 江戸幕府 の 対 朝廷 介入 は 本格化 し 、 皇族 の 政治 介入 は ほとんど 出来 なく なっ た 。
+∃ ENTITY[5] ENTITY[7] ENTITY[4] (
+ 皇族(ENTITY[5]) ∧
+  の_政治_介入(ENTITY[5], ENTITY[4]) ∧
+   の_対_朝廷_介入(ENTITY[江戸幕府], ENTITY[7]) ∧
+    ∀ ARB[1] EVENT[3] ENTITY[2] CND_と(
+        ARB[1] = *arb* ∧ 江戸_時代(ENTITY[2]) ∧
+         入る(EVENT[3], ARB[1]) ∧ に(EVENT[3]) = ENTITY[2],
+        ∃ ENTITY[9] EVENT[6] EVENT[8] (
+         ENTITY[9] = *pro*{ENTITY[7], ENTITY[江戸幕府], ENTITY[禁中並公家諸法度], ENTITY[5], ENTITY[2]} ∧
+          CONJ_te(基づい_て(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[禁中並公家諸法度],
+           本格化する.0(EVENT[8], ENTITY[7])) ∧
+           ¬ ∃ EVENT[11] (
+                 past(EVENT[11]) ∧
+                  ほとんど ENTITY[10] (ENTITY[10] = ENTITY[4], 出来_なっ_た(EVENT[11], ENTITY[9], ENTITY[10]))))))
+
+# ::id 57_wikipedia_KYOTO_HST_00008,57;NJ
+# ::snt 徳川氏 を 外戚 に 持つ 明正天皇 の 即位 で この 体制 は 確立 さ れる が 、 明正 の 治世中 は 後水尾天皇 による 院政 が 敷か れ た ため 、 明正 が 朝廷 に於ける 実権 を 持つ こと は 無く 、 後水尾上皇 に 朝廷 内 の 実権 が 集中 し た 。
+∃ SITUATION[11] SITUATION[8] EVENT[4] EVENT[6] EVENT[10] EVENT[14] EVENT[15] EVENT[18] ENTITY[3] ENTITY[1] ENTITY[9] ENTITY[13] ENTITY[12] ENTITY[17] ENTITY[16] ENTITY[5] ENTITY[7] (
+ 体制(ENTITY[5]) ∧
+  の_治世中(ENTITY[明正], ENTITY[7]) ∧
+   外戚(ENTITY[3]) ∧
+    持つ(EVENT[4], ENTITY[明正天皇], ENTITY[徳川氏], ENTITY[3]) ∧
+     の_即位(ENTITY[明正天皇], ENTITY[1]) ∧
+      による_院政(ENTITY[後水尾天皇], ENTITY[9]) ∧
+       FACT(SITUATION[8], 敷か_た(EVENT[10], _, ENTITY[9])) ∧
+        朝廷(ENTITY[13]) ∧
+         に於ける_実権(ENTITY[13], ENTITY[12]) ∧
+          こと(SITUATION[11], 持つ(EVENT[14], ENTITY[明正], ENTITY[12])) ∧
+           朝廷_内(ENTITY[17]) ∧
+            の_実権(ENTITY[17], ENTITY[16]) ∧
+             past(EVENT[6]) ∧
+              past(EVENT[10]) ∧
+               past(EVENT[18]) ∧
+                CONJ_が(確立する.0(EVENT[6], _, ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[1],
+                 無く(EVENT[15], ENTITY[明正], SITUATION[11]) ∧
+                  集中する.0_た(EVENT[18], ENTITY[16]) ∧ に(EVENT[18]) = ENTITY[後水尾上皇] ∧
+                   ため(EVENT[18]) = SITUATION[8] ∧ 時間(EVENT[18]) = ENTITY[7]))
+
+# ::id 58_wikipedia_KYOTO_HST_00008,58;NJ
+# ::snt さらに 、 霊元天皇 が 院政 を 行う と 、 江戸幕府 と の 間 に 確執 を 生み 、 朝幕 関係 に 緊張 を 走ら せ た 。
+∃ SITUATION[11] (
+ ADV_さらに(SITUATION[11]) ∧
+  FACT(SITUATION[11],
+   ∀ EVENT[2] ENTITY[1] CND_と(院政(ENTITY[1]) ∧ 行う(EVENT[2], ENTITY[霊元天皇], ENTITY[1]),
+       ∃ ENTITY[3] EVENT[6] EVENT[10] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[9] ENTITY[7] (
+        ENTITY[3] = *pro*{ENTITY[1], ENTITY[霊元天皇]} ∧
+         と_の_間(ENTITY[江戸幕府], ENTITY[4]) ∧
+          確執(ENTITY[5]) ∧
+           朝幕_関係(ENTITY[7]) ∧
+            緊張(ENTITY[9]) ∧
+             past(EVENT[8]) ∧
+              生み(EVENT[6], ENTITY[3], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+               せ_た(EVENT[8], ENTITY[3], 走ら(EVENT[10], ENTITY[3], ENTITY[9])) ∧
+                に(EVENT[8]) = ENTITY[7]))))
+
+# ::id 59_wikipedia_KYOTO_HST_00008,59;NJ
+# ::snt 結果 、 江戸幕府 は 院政 の 存在 を 黙認 せ ざるをえなくなる 。
+∃ ENTITY[1] (
+ 結果(ENTITY[1]) ∧
+  MD_ざるをえなくなる(∃ EVENT[4] ENTITY[3] ENTITY[2] (
+        院政(ENTITY[3]) ∧
+         の_存在(ENTITY[3], ENTITY[2]) ∧
+          黙認する.0(EVENT[4], ENTITY[江戸幕府], ENTITY[2]) ∧ ADV(EVENT[4]) = ENTITY[1])))
+
+# ::id 60_wikipedia_KYOTO_HST_00008,60;NJ
+# ::snt 元々 院政 は 朝廷 の 法 体系 の 枠 外 の 仕組み で あっ た が ため に 、 『 禁中並公家諸法度 』 で は それ を 統制 でき ず 、 江戸幕府 による 朝廷 の 統制 に 限界 が ある こと を 露呈 し た 格好 と なっ た 。
+∃ SITUATION[15] ENTITY[14] SITUATION[13] SITUATION[3] ENTITY[1] EVENT[9] EVENT[19] EVENT[20] EVENT[21] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[17] ENTITY[18] ENTITY[16] ENTITY[4] (
+ 院政(ENTITY[4]) ∧
+  ENTITY[1] = *pro* ∧
+   朝廷(ENTITY[8]) ∧
+    の_法_体系(ENTITY[8], ENTITY[7]) ∧
+     の_枠_外(ENTITY[7], ENTITY[6]) ∧
+      の_仕組み(ENTITY[6], ENTITY[5]) ∧
+       FACT(SITUATION[3], で_あっ_た(EVENT[9], ENTITY[4], ENTITY[5])) ∧
+        が_ため(SITUATION[3], ENTITY[2]) ∧
+         ENTITY[14] = *pro*{ENTITY[1], ENTITY[禁中並公家諸法度], ENTITY[4], ENTITY[2], ENTITY[5], ENTITY[6], ENTITY[7], ENTITY[8]} ∧
+          朝廷(ENTITY[17]) ∧
+           の_統制(ENTITY[17], ENTITY[16]) ∧ による_統制(ENTITY[江戸幕府], ENTITY[16]) ∧
+            限界(ENTITY[18]) ∧
+             こと(SITUATION[15], ある(EVENT[19], ENTITY[18]) ∧ に(EVENT[19]) = ENTITY[16]) ∧
+              格好(SITUATION[13], 露呈する.0_た(EVENT[20], ENTITY[14], SITUATION[15])) ∧
+               ADV_元々(EVENT[9]) ∧
+                past(EVENT[9]) ∧
+                 past(EVENT[20]) ∧
+                  past(EVENT[21]) ∧
+                   CONJ_te(¬ ∃ ENTITY[11] EVENT[12] (
+                              ENTITY[11] = それ{ENTITY[1], ENTITY[4], ENTITY[5], ENTITY[6], ENTITY[7], ENTITY[8]} ∧
+                               統制する.0(EVENT[12], ENTITY[禁中並公家諸法度], ENTITY[11]) ∧
+                                に(EVENT[12]) = ENTITY[2]),
+                    なっ_た(EVENT[21], ENTITY[1]) ∧ と(EVENT[21]) = SITUATION[13]))
+
+# ::id 61_wikipedia_KYOTO_HST_00008,61;NJ
+# ::snt 江戸 時代 末期 （ 文化年間 ～ 弘化年間 ） に 閑院宮 出身 の 光格天皇 が 、 息子 の 仁孝天皇 に 譲位 し て 院政 を 行っ た が 、 これ が 現在 において 最後 の 院政 で ある 。
+∃ ENTITY[9] ENTITY[4] EVENT[6] EVENT[8] EVENT[13] GROUP[1] ENTITY[3] ENTITY[5] ENTITY[7] ENTITY[2] ENTITY[12] ENTITY[11] ENTITY[10] (
+ 江戸_時代_末期(ENTITY[2]) ∧
+  is_element_of(ENTITY[文化年間], GROUP[1]) ∧ is_element_of(ENTITY[弘化年間], GROUP[1]) ∧
+   namely_-ENTITY-(GROUP[1], ENTITY[2]) ∧
+    閑院宮_出身(ENTITY[3]) ∧
+     の_xxx(ENTITY[3], ENTITY[光格天皇]) ∧
+      ENTITY[4] = *pro*{ENTITY[3], ENTITY[弘化年間], ENTITY[文化年間]} ∧
+       息子(ENTITY[5]) ∧
+        の_xxx(ENTITY[5], ENTITY[仁孝天皇]) ∧
+         院政(ENTITY[7]) ∧
+          ENTITY[9] = これ{ENTITY[2], ENTITY[7], ENTITY[5], ENTITY[3], ENTITY[光格天皇], ENTITY[仁孝天皇], ENTITY[弘化年間], ENTITY[文化年間]} ∧
+           現在(ENTITY[10]) ∧
+            最後(ENTITY[12]) ∧
+             の_院政(ENTITY[12], ENTITY[11]) ∧
+              past(EVENT[8]) ∧
+               CONJ_が(CONJ_te(譲位する.0_て(EVENT[6], ENTITY[光格天皇], ENTITY[4], ENTITY[仁孝天皇]) ∧ に(EVENT[6]) = ENTITY[2],
+                     行っ_た(EVENT[8], ENTITY[光格天皇], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[2]),
+                で_ある(EVENT[13], ENTITY[9], ENTITY[11]) ∧ において(EVENT[13]) = ENTITY[10]))
+
+# ::id 62_wikipedia_KYOTO_HST_00008,62;NJ
+# ::snt 現在 の 日本 で は 、 院政 は 事実上 禁止 さ れ て いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[1] ENTITY[2] (
+ 現在(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[日本]) ∧
+   院政(ENTITY[2]) ∧
+    事実上(ENTITY[3]) ∧
+     禁止する.0_て_いる(EVENT[4], _, ENTITY[2]) ∧ ADV(EVENT[4]) = ENTITY[3] ∧ で(EVENT[4]) = ENTITY[日本])
+
+# ::id 63_wikipedia_KYOTO_HST_00008,64;NJ
+# ::snt これ により 、 院政 の 前提 と なる 上皇 の 存在 は 否定 さ れ た 。
+∃ ENTITY[1] EVENT[8] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] (
+ 院政(ENTITY[5]) ∧
+  の_前提(ENTITY[5], ENTITY[4]) ∧
+   上皇(ENTITY[7]) ∧
+    なる(EVENT[6], ENTITY[2]) ∧ と(EVENT[6]) = ENTITY[4] ∧ の_存在(ENTITY[7], ENTITY[2]) ∧
+     ENTITY[1] = これ ∧ past(EVENT[8]) ∧ 否定する.0_た(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 64_wikipedia_KYOTO_HST_00008,65;NJ
+# ::snt そして 敗戦 後 の 1947 年 に 法律 として 制定 さ れ た 現行 の 皇室 典範 で も 、 第 4 条 で 「 天皇 が 崩 じ た とき は 、 皇嗣 が 、 直ちに 即位 する 」 と し 、 皇位 は 終身制 で あり 、 皇位 の 継承 は 天皇 の 死去 によって のみ おこなわ れる こと を 定め て いる 。
+∃ SITUATION[17] SITUATION[11] ENTITY[1] EVENT[7] EVENT[13] EVENT[15] EVENT[10] EVENT[20] EVENT[27] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[8] ENTITY[12] ENTITY[14] ENTITY[9] ENTITY[19] ENTITY[25] ENTITY[24] ENTITY[2] ENTITY[18] ENTITY[22] ENTITY[21] (
+ 皇位(ENTITY[18]) ∧
+  皇位(ENTITY[22]) ∧
+   の_継承(ENTITY[22], ENTITY[21]) ∧
+    ENTITY[1] = *pro* ∧
+     敗戦_後(ENTITY[5]) ∧
+      (CD_1947_年(ENTITY[4]), の(ENTITY[5], ENTITY[4])) ∧
+       法律(ENTITY[6]) ∧
+        現行(ENTITY[8]) ∧
+         制定する.0_た(EVENT[7], _, ENTITY[2]) ∧ として(EVENT[7]) = ENTITY[6] ∧
+          に(EVENT[7]) = ENTITY[4] ∧ の_皇室_典範(ENTITY[8], ENTITY[2]) ∧
+          (CD_第_4(ENTITY[9]), 条(ENTITY[9])) ∧
+           天皇(ENTITY[12]) ∧
+            とき(SITUATION[11], 崩_じ_た(EVENT[13], ENTITY[12])) ∧
+             皇嗣(ENTITY[14]) ∧
+              終身制(ENTITY[19]) ∧
+               天皇(ENTITY[25]) ∧
+                の_死去(ENTITY[25], ENTITY[24]) ∧
+                 こと(SITUATION[17],
+                  で_あり(EVENT[20], ENTITY[18], ENTITY[19]) ∧
+                   のみ ENTITY[23] (ENTITY[23] = ENTITY[24],
+                    ∃ EVENT[26] (おこなわ(EVENT[26], _, ENTITY[21]) ∧ によって(EVENT[26]) = ENTITY[23]))) ∧
+                  past(EVENT[7]) ∧
+                   before(EVENT[10], EVENT[13]) ∧
+                    ADV_直ちに(EVENT[15]) ∧
+                     し(EVENT[10], ENTITY[1],
+                      即位する.0(EVENT[15], ENTITY[14]) ∧ 時間(EVENT[15]) = SITUATION[11]) ∧
+                      で(EVENT[10]) = ENTITY[9] ∧
+                      定め_て_いる(EVENT[27], ENTITY[1], SITUATION[17]) ∧ で(EVENT[27]) = ENTITY[2])
+
+# ::id 65_wikipedia_KYOTO_HST_00008,66;NJ
+# ::snt さらに 第 2 条 で 皇位 継承 の 順序 を 、 第 3 条 で その 順序 の 変更 について 規定 し て おり 、 天皇 が 自ら の 意思 によって 継承者 を 指名 でき なく なっ て いる 。
+∃ SITUATION[11] ENTITY[1] EVENT[5] EVENT[10] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[12] ENTITY[9] (
+ 順序(ENTITY[9]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_第_2(ENTITY[2]), 条(ENTITY[2])) ∧
+    皇位_継承(ENTITY[4]) ∧
+     の_順序(ENTITY[4], ENTITY[3]) ∧
+      (CD_第_3(ENTITY[6]), 条(ENTITY[6])) ∧
+       の_変更(ENTITY[9], ENTITY[8]) ∧
+        について(ENTITY[8], ENTITY[7]) ∧
+         天皇(ENTITY[12]) ∧
+          ADV_さらに(SITUATION[11]) ∧
+           FACT(SITUATION[11],
+            xxx(EVENT[5], ENTITY[1], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[2] ∧
+             規定する.0_て_おり(EVENT[10], ENTITY[1], ENTITY[7]) ∧ で(EVENT[10]) = ENTITY[6]) ∧
+            ¬ ∃ ENTITY[14] EVENT[16] ENTITY[15] ENTITY[13] (
+                  ENTITY[14] = 自ら{ENTITY[12], ENTITY[9], ENTITY[6], ENTITY[7], ENTITY[8], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+                   の_意思(ENTITY[14], ENTITY[13]) ∧
+                    継承者(ENTITY[15]) ∧
+                     指名する.0_なっ_て_いる(EVENT[16], ENTITY[12], ENTITY[15]) ∧ によって(EVENT[16]) = ENTITY[13]))
+
+# ::id 66_wikipedia_KYOTO_HST_00008,67;NJ
+# ::snt 世界史上 から 見 た 院政
+∃ ARB[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ARB[3] = *arb* ∧
+  世界史上(ENTITY[4]) ∧
+   見_た(EVENT[5], ARB[3], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[4] ∧ 院政(ENTITY[1]) ∧
+    past(EVENT[5]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 67_wikipedia_KYOTO_HST_00008,68;NJ
+# ::snt 君主位 譲位者 が 後継者 の 後見 として 実質的 な 政務 を 行う という 政治 体制 は 、 恒久的 な 制度 として は 世界史的 に きわめて 稀 で あり 、 他 に は ヴェトナム の 陳朝 に その 例 を 見る 程度 で ある 。
+∃ ENTITY[15] SITUATION[14] ATTRIB[9] ATTRIB[6] EVENT[10] EVENT[17] EVENT[18] EVENT[7] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[16] ENTITY[13] ENTITY[1] (
+ 君主位_譲位者(ENTITY[2]) ∧
+  後継者(ENTITY[4]) ∧
+   の_後見(ENTITY[4], ENTITY[3]) ∧
+    実質的_な(ATTRIB[6]) ∧
+     ATTRIBUTE_政務(ATTRIB[6], ENTITY[5]) ∧
+      THAT_政治_体制(行う(EVENT[7], ENTITY[2], ENTITY[5]) ∧ として(EVENT[7]) = ENTITY[3], ENTITY[1]) ∧
+       恒久的_な(ATTRIB[9]) ∧
+        ATTRIBUTE_制度(ATTRIB[9], ENTITY[8]) ∧
+         他(ENTITY[13]) ∧
+          例(ENTITY[16]) ∧
+           ADV_世界史的_に(EVENT[10]) ∧
+            ADV_きわめて(EVENT[10]) ∧
+             ENTITY[15] = *pro*{ENTITY[1], ENTITY[13], ENTITY[8], ENTITY[2], ENTITY[3], ENTITY[5], ENTITY[4]} ∧
+              の_xxx(ENTITY[ヴェトナム], ENTITY[陳朝]) ∧
+               程度(SITUATION[14], 見る(EVENT[17], ENTITY[15], ENTITY[16]) ∧ に(EVENT[17]) = ENTITY[陳朝]) ∧
+                稀_で_あり(EVENT[10], ENTITY[1]) ∧ として(EVENT[10]) = ENTITY[8] ∧
+                 で_ある(EVENT[18], ENTITY[1], SITUATION[14]) ∧ に(EVENT[18]) = ENTITY[13])
+
+# ::id 68_wikipedia_KYOTO_HST_00008,69;NJ
+# ::snt 現代 日本 における 「 院政 」
+∃ EVENT[2] ENTITY[1] (における_院政(ENTITY[現代_日本], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 69_wikipedia_KYOTO_HST_00008,70;NJ
+# ::snt 院政 という 言葉 は 現代 日本 で も 使わ れ て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 院政(ENTITY[2]) ∧
+  という_言葉(ENTITY[2], ENTITY[1]) ∧ 使わ_て_いる(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[現代_日本])
+
+# ::id 70_wikipedia_KYOTO_HST_00008,71;NJ
+# ::snt 組織 の トップ が 公的 地位 を 去り 、 なおも 執行 部 に対して 決定的 な 影響 を 常時 与える 形態 を 指す 比喩 で ある 。
+∃ ATTRIB[12] ATTRIB[8] SITUATION[4] ENTITY[1] EVENT[9] EVENT[14] EVENT[16] EVENT[17] ENTITY[6] ENTITY[7] ENTITY[13] ENTITY[11] ENTITY[10] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  組織(ENTITY[6]) ∧
+   の_トップ(ENTITY[6], ENTITY[5]) ∧
+    公的(ATTRIB[8]) ∧
+     ATTRIBUTE_地位(ATTRIB[8], ENTITY[7]) ∧
+      執行_部(ENTITY[10]) ∧
+       決定的_な(ATTRIB[12]) ∧
+        ATTRIBUTE_影響(ATTRIB[12], ENTITY[11]) ∧
+         常時(ENTITY[13]) ∧
+          形態(SITUATION[4],
+           去り(EVENT[9], ENTITY[5], ENTITY[7]) ∧
+            与える(EVENT[14], ENTITY[5], ENTITY[11]) ∧ ADV(EVENT[14]) = ENTITY[13] ∧
+             に対して(EVENT[14]) = ENTITY[10]) ∧
+           指す(EVENT[16], ENTITY[2], SITUATION[4]) ∧ 比喩(ENTITY[2]) ∧
+            ADV_なおも(EVENT[14]) ∧ で_ある(EVENT[17], ENTITY[1], ENTITY[2]))
+
+# ::id 71_wikipedia_KYOTO_HST_00008,72;NJ
+# ::snt 主に 国政 や 企業 経営 の 状況 に対して 使わ れる 。
+∃ ENTITY[1] EVENT[6] GROUP[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[4] (国政(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (企業_経営(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   の_状況(GROUP[3], ENTITY[2]) ∧
+    ADV_主に(EVENT[6]) ∧ 使わ(EVENT[6], _, ENTITY[1]) ∧ に対して(EVENT[6]) = ENTITY[2])
+
+# ::id 72_wikipedia_KYOTO_HST_00008,73;NJ
+# ::snt 政治 において は 、 スキャンダル 等 によって 退陣 を 余儀なく さ れ た 内閣総理大臣 が 、 なお 与党 内 において 最も 強力 な 影響力 を 保持 し て いる 場合 に 「 院政 」 の 比喩 が 用い られる 。
+∃ ATTRIB[11] SITUATION[2] EVENT[8] EVENT[12] EVENT[16] ENTITY[6] ENTITY[7] ENTITY[5] ENTITY[10] ENTITY[9] ENTITY[3] ENTITY[15] ENTITY[14] ENTITY[1] (
+ 政治(ENTITY[1]) ∧
+  スキャンダル(ENTITY[6]) ∧
+   等(ENTITY[6], ENTITY[5]) ∧
+    退陣(ENTITY[7]) ∧
+     余儀なく_さ_た(EVENT[8], ENTITY[5], ENTITY[7], ENTITY[3]) ∧ 内閣総理大臣(ENTITY[3]) ∧
+      与党_内(ENTITY[9]) ∧
+       最も_強力_な(ATTRIB[11]) ∧
+        ATTRIBUTE_影響力(ATTRIB[11], ENTITY[10]) ∧
+         場合(SITUATION[2], 保持する.0_て_いる(EVENT[12], ENTITY[3], ENTITY[10]) ∧ において(EVENT[12]) = ENTITY[9]) ∧
+          院政(ENTITY[15]) ∧
+           の_比喩(ENTITY[15], ENTITY[14]) ∧
+            past(EVENT[8]) ∧
+             ADV_なお(EVENT[12]) ∧
+              用い(EVENT[16], _, ENTITY[14]) ∧ に(EVENT[16]) = SITUATION[2] ∧
+               において(EVENT[16]) = ENTITY[1])
+
+# ::id 73_wikipedia_KYOTO_HST_00008,74;NJ
+# ::snt 例えば 、 竹下 登 が 政権 退陣 し た 後 の 宇野 宗佑 政権 ・ 海部 俊樹 政権 が 「 竹下 院政 」 と 称さ れ た こと が ある （ 事実 が そう で ある か は 不明 ） 。
+∃ SITUATION[12] SITUATION[8] SITUATION[2] EVENT[4] EVENT[10] EVENT[11] ENTITY[3] GROUP[5] ENTITY[9] ENTITY[1] (
+ 政権(ENTITY[3]) ∧
+  後(SITUATION[2], 退陣する.0_た(EVENT[4], ENTITY[竹下_登], ENTITY[3])) ∧
+   ∃ ENTITY[6] (宇野_宗佑_政権(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+    ∃ ENTITY[7] (海部_俊樹_政権(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+    equals(GROUP[5], ENTITY[1]) ∧ の(SITUATION[2], ENTITY[1]) ∧
+     竹下_院政(ENTITY[9]) ∧
+      こと(SITUATION[8], 称さ_た(EVENT[10], _, ENTITY[1], ENTITY[9])) ∧
+       ADV_例えば(SITUATION[12]) ∧
+        past(EVENT[4]) ∧ past(EVENT[10]) ∧ FACT(SITUATION[12], ある(EVENT[11], ENTITY[1], SITUATION[8])))
+
+# ::id 74_wikipedia_KYOTO_HST_00008,75;NJ
+# ::snt 現代 日本 政治 の 「 院政 」 は 、 名目上 実権 を 持た ない 地位 に 就い て 実質的 な 権力 を 行使 する こと により 、 権力 行使 に 伴う 法的 ・ 道義的 責任 を 回避 する こと を 主 目的 と する 意味 で 使わ れ て おり 、 歴史上 の 院政 と は 本質的 に 異なる 。
+∃ ATTRIB[24] ATTRIB[20] ENTITY[14] SITUATION[13] SITUATION[12] ATTRIB[11] ATTRIB[10] SITUATION[5] ENTITY[4] SITUATION[3] EVENT[9] EVENT[18] EVENT[21] EVENT[22] EVENT[25] EVENT[26] EVENT[29] ENTITY[8] ENTITY[19] ENTITY[6] ENTITY[23] ENTITY[2] ENTITY[28] ENTITY[27] ENTITY[1] (
+ 現代_日本_政治(ENTITY[2]) ∧
+  の_院政(ENTITY[2], ENTITY[1]) ∧
+   歴史上(ENTITY[28]) ∧
+    の_院政(ENTITY[28], ENTITY[27]) ∧
+     ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+      権力_行使(ENTITY[8]) ∧
+       法的(ATTRIB[10]) ∧
+        道義的(ATTRIB[11]) ∧
+         伴う(EVENT[9], ENTITY[6]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+          ATTRIBUTE_責任(ATTRIB[10], ENTITY[6]) ∧ ATTRIBUTE_責任(ATTRIB[11], ENTITY[6]) ∧
+          ENTITY[14] = *pro*{ENTITY[6], ENTITY[4], ENTITY[8], ENTITY[1], ENTITY[2]} ∧
+           地位(SITUATION[13],
+            ¬ ∃ EVENT[17] ENTITY[16] ENTITY[15] (
+                  名目上(ENTITY[15]) ∧
+                   実権(ENTITY[16]) ∧
+                    持た(EVENT[17], ENTITY[14], ENTITY[16]) ∧ ADV(EVENT[17]) = ENTITY[15])) ∧
+            実質的_な(ATTRIB[20]) ∧
+             ATTRIBUTE_権力(ATTRIB[20], ENTITY[19]) ∧
+              こと(SITUATION[12],
+               CONJ_te(就い_て(EVENT[18], ENTITY[6]) ∧ に(EVENT[18]) = SITUATION[13],
+                行使する.0(EVENT[21], ENTITY[6], ENTITY[19]))) ∧
+               こと(SITUATION[5], 回避する.0(EVENT[22], ENTITY[4], ENTITY[6]) ∧ により(EVENT[22]) = SITUATION[12]) ∧
+                主(ATTRIB[24]) ∧
+                 ATTRIBUTE_目的(ATTRIB[24], ENTITY[23]) ∧
+                  意味(SITUATION[3], する(EVENT[25], ENTITY[4], SITUATION[5], ENTITY[23])) ∧
+                   ADV_本質的_に(EVENT[29]) ∧
+                    使わ_て_おり(EVENT[26], _, ENTITY[1]) ∧ で(EVENT[26]) = SITUATION[3] ∧
+                     異なる(EVENT[29], ENTITY[1]) ∧ と(EVENT[29]) = ENTITY[27])
+
+# ::id 75_wikipedia_KYOTO_HST_00008,76;NJ
+# ::snt また 企業 や 団体 で の 類似 の 現象 も 院政 と 比喩 さ れる こと が ある が 、 この 場合 は 忠実 な 腹心 や 縁者 を 後継者 として 確定 さ せる こと により 権力 の 更なる 強化 を 図る 意味合い が 強い 。
+∃ ATTRIB[24] ATTRIB[16] SITUATION[13] ENTITY[12] SITUATION[11] SITUATION[6] EVENT[8] EVENT[9] EVENT[21] EVENT[14] EVENT[25] EVENT[26] ENTITY[5] GROUP[2] ENTITY[7] ENTITY[1] GROUP[17] ENTITY[20] ENTITY[15] ENTITY[23] ENTITY[22] ENTITY[10] (
+ 場合(ENTITY[10]) ∧
+  CONJ_や(∃ ENTITY[3] (企業(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (団体(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   類似(ENTITY[5]) ∧
+    の_現象(ENTITY[5], ENTITY[1]) ∧ で_の_現象(GROUP[2], ENTITY[1]) ∧
+     院政(ENTITY[7]) ∧
+      こと(SITUATION[6], 比喩する.0(EVENT[8], _, ENTITY[1]) ∧ と(EVENT[8]) = ENTITY[7]) ∧
+       ENTITY[12] = *pro*{ENTITY[10], ENTITY[1], ENTITY[7], ENTITY[5]} ∧
+        忠実_な(ATTRIB[16]) ∧
+         CONJ_や(∃ ENTITY[18] (腹心(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[17])),
+          ∃ ENTITY[19] (縁者(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[17]))) ∧
+          equals(GROUP[17], ENTITY[15]) ∧ ATTRIBUTE(ATTRIB[16], ENTITY[15]) ∧
+           後継者(ENTITY[20]) ∧
+            こと(SITUATION[13],
+             せる(EVENT[14], ENTITY[12],
+              確定する.0(EVENT[21], ENTITY[12], ENTITY[15]) ∧ として(EVENT[21]) = ENTITY[20])) ∧
+             権力(ENTITY[23]) ∧
+              更なる(ATTRIB[24]) ∧
+               ATTRIBUTE_強化(ATTRIB[24], ENTITY[22]) ∧ の_強化(ENTITY[23], ENTITY[22]) ∧
+                意味合い(SITUATION[11], 図る(EVENT[25], ENTITY[12], ENTITY[22]) ∧ により(EVENT[25]) = SITUATION[13]) ∧
+                 CONJ_が(ある(EVENT[9], ENTITY[1], SITUATION[6]),
+                  強い(EVENT[26], SITUATION[11]) ∧ ADV(EVENT[26]) = ENTITY[10]))

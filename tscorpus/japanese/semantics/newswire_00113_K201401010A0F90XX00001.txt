@@ -1,0 +1,981 @@
+# ::id 1_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ２０１４ 東北経済展望
+∃ EVENT[2] ENTITY[1] ((CD_２０１４(ENTITY[1]), 東北経済展望(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 復興 と 成長 どう 描く
+QUEST(∃ EVENT[5] GROUP[1] ? ENTITY[4] (
+      CONJ_と(∃ ENTITY[2] (復興(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+       ∃ ENTITY[3] (成長(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+       ADV(ENTITY[4], EVENT[5]) ∧ 描く(EVENT[5], GROUP[1])))
+
+# ::id 3_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 新年 を 迎え た 東北経済 は 、 東日本大震災 から の 復興 に 加え 、 新た な 成長 の 道筋 を 描く 努力 が 求め られる 。
+∃ ATTRIB[12] ENTITY[5] EVENT[7] EVENT[13] EVENT[14] ENTITY[6] ENTITY[11] ENTITY[10] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ 新年(ENTITY[3]) ∧
+  迎え_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 東北経済(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[3]} ∧
+     から_の_復興(ENTITY[東日本大震災], ENTITY[6]) ∧
+      新た_な(ATTRIB[12]) ∧
+       ATTRIBUTE_成長(ATTRIB[12], ENTITY[11]) ∧
+        の_道筋(ENTITY[11], ENTITY[10]) ∧
+         描く(EVENT[13], ENTITY[8], ENTITY[10]) ∧ 努力(ENTITY[8]) ∧
+          加え(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+           求め_られる(EVENT[14], ENTITY[8]) ∧ TPC(EVENT[14]) = ENTITY[1])
+
+# ::id 4_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 企業 の 生産活動 と 消費 は 昨年 から 好転 し つつあり 、 上げ潮ムード を 地域 に 浸透 さ せ られる か も 焦点 と なる 。
+∃ SITUATION[8] EVENT[7] EVENT[15] ENTITY[6] ENTITY[14] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ 企業(ENTITY[2]) ∧
+  生産活動(ENTITY[4]) ∧
+   消費(ENTITY[5]) ∧
+    CONJ_と(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+     equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+      昨年(ENTITY[6]) ∧
+       か(SITUATION[8],
+        QUEST(∃ ENTITY[9] EVENT[13] EVENT[11] ENTITY[12] ENTITY[10] (
+              ENTITY[9] = *pro*{ENTITY[6], ENTITY[1], ENTITY[2], ENTITY[5], ENTITY[4]} ∧
+               上げ潮ムード(ENTITY[10]) ∧
+                地域(ENTITY[12]) ∧
+                 せ_られる(EVENT[11], ENTITY[9], ENTITY[10],
+                  浸透する.0(EVENT[13], ENTITY[10]) ∧ に(EVENT[13]) = ENTITY[12])))) ∧
+        焦点(ENTITY[14]) ∧
+         好転する.0_つつあり(EVENT[7], ENTITY[1]) ∧ から(EVENT[7]) = ENTITY[6] ∧
+          なる(EVENT[15], SITUATION[8]) ∧ と(EVENT[15]) = ENTITY[14])
+
+# ::id 5_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ４ 月 の 消費税増税 で 、 消費者 の 購買意欲 が 一定程度 減退 する の は 避け られ そう に ない 。
+∃ SITUATION[8] SITUATION[3] EVENT[7] EVENT[10] ENTITY[2] ENTITY[5] DEGREE[6] ENTITY[4] ENTITY[1] (
+ CD_４_月(ENTITY[2]) ∧
+  の_消費税増税(ENTITY[2], ENTITY[1]) ∧
+   消費者(ENTITY[5]) ∧
+    の_購買意欲(ENTITY[5], ENTITY[4]) ∧
+     一定程度(DEGREE[6]) ∧
+      の(SITUATION[3], 減退する.0(EVENT[7], ENTITY[4]) ∧ MSR(EVENT[7]) = DEGREE[6]) ∧
+       FACT(SITUATION[8], MD_そう(∃ EVENT[9] 避け_られ(EVENT[9], SITUATION[3]))) ∧
+        ない(EVENT[10], SITUATION[3]) ∧ に(EVENT[10]) = SITUATION[8] ∧ で(EVENT[10]) = ENTITY[1])
+
+# ::id 6_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 賃上げ で 消費 を 下支え し 、 内需拡大 による 好循環 を 東北 でも 実現 できる の か 。
+QUEST(∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+      ENTITY[1] = *pro* ∧
+       賃上げ(ENTITY[2]) ∧
+        消費(ENTITY[3]) ∧
+         内需拡大(ENTITY[6]) ∧
+          による_好循環(ENTITY[6], ENTITY[5]) ∧
+           下支えする.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2] ∧
+            でも ENTITY[7] (ENTITY[7] = ENTITY[東北],
+             ∃ EVENT[8] (実現する.0_の(EVENT[8], ENTITY[1], ENTITY[5]) ∧ LINK(EVENT[8]) = ENTITY[7]))))
+
+# ::id 7_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ２０１４ 年 を 展望 し た 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ CD_２０１４_年(ENTITY[2]) ∧ past(EVENT[3]) ∧ 展望する.0_た(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 8_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ◎ 好況持続 、 賃上げ が 鍵
+∃ EVENT[5] ENTITY[4] GROUP[1] (
+ ∃ ENTITY[2] (好況持続(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (賃上げ(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  鍵(ENTITY[4]) ∧ xxx(EVENT[5], GROUP[1], ENTITY[4]))
+
+# ::id 9_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 増税 控え 先行き不安 も
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (増税(ENTITY[1]) ∧ 先行き不安(ENTITY[3]) ∧ 控え(EVENT[2], ENTITY[1]) ∧ xxx(EVENT[4], ENTITY[3]))
+
+# ::id 10_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 昨年 の 東北経済 について 、 企業関係者 の 間 で は 「 景気 が 上向い た 」 という 見方 が 大勢 を 占める 。
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[8] ENTITY[7] (
+ 企業関係者(ENTITY[8]) ∧
+  の_間(ENTITY[8], ENTITY[7]) ∧
+   昨年(ENTITY[2]) ∧
+    の_東北経済(ENTITY[2], ENTITY[1]) ∧
+     景気(ENTITY[4]) ∧
+      THAT_見方(上向い_た(EVENT[5], ENTITY[4]), ENTITY[3]) ∧
+       past(EVENT[5]) ∧
+        大勢 ENTITY[6] (で(ENTITY[7], ENTITY[6]),
+         ∃ EVENT[9] (占める(EVENT[9], ENTITY[3], ENTITY[6]) ∧ について(EVENT[9]) = ENTITY[1])))
+
+# ::id 11_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 復興需要 に 加え 、 アベノミクス の 政策効果 が 東北 に も 徐々 に 波及 し て き た と み られる から だ 。
+∃ SITUATION[4] ENTITY[1] EVENT[3] EVENT[8] EVENT[5] EVENT[9] ENTITY[2] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  復興需要(ENTITY[2]) ∧
+   の_政策効果(ENTITY[アベノミクス], ENTITY[6]) ∧
+    徐々(ENTITY[7]) ∧
+     FACT(SITUATION[4],
+      み_られる(EVENT[5], ENTITY[1],
+       波及する.0_て_き_た(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[7] ∧ に(EVENT[8]) = ENTITY[東北])) ∧
+      before(EVENT[5], EVENT[8]) ∧
+       加え(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+        だ(EVENT[9], ENTITY[1]) ∧ から(EVENT[9]) = SITUATION[4])
+
+# ::id 12_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 昨年 １２ 月 に 公表 さ れ た 東北 の 企業短期経済観測調査 （ 短観 ） によると 、 景況感 を 示す 業況判断指数 （ ＤＩ ） は 、 全産業 で プラス １２ 。
+∃ EVENT[3] EVENT[9] ENTITY[2] ENTITY[8] ENTITY[7] EVENT[6] ENTITY[5] (
+ 景況感(ENTITY[5]) ∧
+  示す(EVENT[6], ENTITY[業況判断指数], ENTITY[5]) ∧
+   namely_-ENTITY-(ENTITY[ＤＩ], ENTITY[業況判断指数]) ∧
+    (CD_１２_月(ENTITY[2]), 昨年(ENTITY[2])) ∧
+     公表する.0_た(EVENT[3], _, ENTITY[企業短期経済観測調査]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+      の_xxx(ENTITY[東北], ENTITY[企業短期経済観測調査]) ∧
+       namely_-ENTITY-(ENTITY[短観], ENTITY[企業短期経済観測調査]) ∧
+        (CD_１２(ENTITY[8]), プラス(ENTITY[8])) ∧
+         past(EVENT[3]) ∧
+          xxx(EVENT[9], ENTITY[業況判断指数], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7] ∧
+           によると(EVENT[9]) = ENTITY[企業短期経済観測調査])
+
+# ::id 13_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ３ 期 連続 の 改善 で ２２ 年 ぶり の 高水準 に なっ た 。
+∃ ENTITY[1] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_３_期(ENTITY[3]), 連続(ENTITY[3])) ∧
+   の_改善(ENTITY[3], ENTITY[2]) ∧
+    (CD_２２_年(ENTITY[5]), ぶり(ENTITY[5])) ∧
+     の_高水準(ENTITY[5], ENTITY[4]) ∧
+      past(EVENT[6]) ∧ なっ_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 14_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 円安 で 採算性 が 向上 し た 輸出産業 に とどまら ず 、 好況感 は 幅広い 分野 に 広がっ た 。
+∃ ATTRIB[9] ENTITY[1] EVENT[10] ENTITY[8] ENTITY[7] (
+ 好況感(ENTITY[7]) ∧
+  ENTITY[1] = *pro* ∧
+   幅広い(ATTRIB[9]) ∧
+    ATTRIBUTE_分野(ATTRIB[9], ENTITY[8]) ∧
+     past(EVENT[10]) ∧
+      CONJ_te(¬ ∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+                 円安(ENTITY[3]) ∧
+                  採算性(ENTITY[4]) ∧
+                   輸出産業(SITUATION[2], 向上する.0_た(EVENT[5], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3]) ∧
+                    past(EVENT[5]) ∧ とどまら(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = SITUATION[2]),
+       広がっ_た(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[8]))
+
+# ::id 15_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 製造業 は １４ 業種 の うち １１ 業種 、 非製造業 は １２ 業種 の うち ９ 業種 が 上向い た 。
+∃ EVENT[8] GROUP[1] ENTITY[3] ENTITY[6] (
+ 製造業(ENTITY[3]) ∧
+  非製造業(ENTITY[6]) ∧
+   ∃ ENTITY[4] ENTITY[2] (
+    CD_１４_業種(ENTITY[4]) ∧
+     (CD_１１_業種(ENTITY[2]), の_うち(ENTITY[4], ENTITY[2]) ∧ LINK_うち(ENTITY[3], ENTITY[2])) ∧
+      is_element_of(ENTITY[2], GROUP[1])) ∧
+    ∃ ENTITY[7] ENTITY[5] (
+     CD_１２_業種(ENTITY[7]) ∧
+      (CD_９_業種(ENTITY[5]), の_うち(ENTITY[7], ENTITY[5]) ∧ LINK_うち(ENTITY[6], ENTITY[5])) ∧
+       is_element_of(ENTITY[5], GROUP[1])) ∧ past(EVENT[8]) ∧ 上向い_た(EVENT[8], GROUP[1]))
+
+# ::id 16_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 消費 も 好調 だ 。
+∃ EVENT[2] ENTITY[1] (消費(ENTITY[1]) ∧ 好調_だ(EVENT[2], ENTITY[1]))
+
+# ::id 17_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東北 の 昨年 １０ 月 の 大型小売店販売額 （ 速報 ） は 、 全店ベース で 前年同月比 １．６ ％ 増 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_xxx(ENTITY[東北], ENTITY[大型小売店販売額]) ∧
+  (CD_１０_月(ENTITY[2]), 昨年(ENTITY[2])) ∧
+   の_xxx(ENTITY[2], ENTITY[大型小売店販売額]) ∧
+    速報(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[大型小売店販売額]) ∧
+      全店ベース(ENTITY[3]) ∧
+       (CD_１．６_％(ENTITY[4]), 増_前年同月比(ENTITY[4])) ∧
+        xxx(EVENT[5], ENTITY[大型小売店販売額], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3])
+
+# ::id 18_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt プロ野球東北楽天 の 日本一セール や 優勝パレード効果 が 重なり 、 昨年 １１ 月 の 百貨店売上高 は 前年同月比 ２．８ ％ 増加 し た 。
+∃ EVENT[6] EVENT[10] GROUP[3] ENTITY[2] ENTITY[1] DEGREE[9] ENTITY[8] ENTITY[7] (
+ (CD_１１_月(ENTITY[8]), 昨年(ENTITY[8])) ∧
+  の_百貨店売上高(ENTITY[8], ENTITY[7]) ∧
+   プロ野球東北楽天(ENTITY[2]) ∧
+    CONJ_や(∃ ENTITY[4] (日本一セール(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+     ∃ ENTITY[5] (優勝パレード効果(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+     equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+      (CD_２．８_％(DEGREE[9]), 前年同月比(DEGREE[9])) ∧
+       past(EVENT[10]) ∧
+        重なり(EVENT[6], ENTITY[1]) ∧ 増加する.0_た(EVENT[10], ENTITY[7]) ∧ MSR(EVENT[10]) = DEGREE[9])
+
+# ::id 19_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 日銀仙台支店 の 高橋経一支店長 は 「 個人消費 は 底堅い 。 円安効果 で 輸出 も ゆっくり と 持ち直し 、 回復基調 に 乗っ た 」 と 総括 する 。
+∃ ATTRIB[6] ENTITY[8] ENTITY[5] ENTITY[4] EVENT[3] EVENT[7] EVENT[9] EVENT[1] ENTITY[2] (
+ の_xxx(ENTITY[日銀仙台支店], ENTITY[高橋経一支店長]) ∧
+  個人消費(ENTITY[2]) ∧
+   before(EVENT[1], EVENT[3]) ∧
+    before(EVENT[1], EVENT[9]) ∧
+     円安効果(ENTITY[4]) ∧
+      輸出(ENTITY[5]) ∧
+       ADV_ゆっくり(ATTRIB[6]) ∧
+        回復基調(ENTITY[8]) ∧
+         総括する.0(EVENT[1], ENTITY[高橋経一支店長],
+          底堅い(EVENT[3], ENTITY[2]) ∧
+           持ち直し(EVENT[7], ENTITY[5]) ∧ と(EVENT[7]) = ATTRIB[6] ∧
+            乗っ_た(EVENT[9], ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[8] ∧ で(EVENT[9]) = ENTITY[4]))
+
+# ::id 20_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 一方 、 先行き に対する 不安感 は 高まっ て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (先行き(ENTITY[2]) ∧ に対する_不安感(ENTITY[2], ENTITY[1]) ∧ 高まっ_て_いる(EVENT[3], ENTITY[1]))
+
+# ::id 21_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 帝国データバンク仙台支店 が 昨年 １２ 月 下旬 に 公表 し た 景気見通し調査 で は 、 １４ 年 を 「 回復局面 」 と する 企業 は １８．４ ％ 。
+∃ EVENT[10] ENTITY[9] EVENT[4] EVENT[8] ENTITY[3] ENTITY[7] ENTITY[5] ENTITY[1] (
+ (CD_１２_月(ENTITY[3]), 下旬_昨年(ENTITY[3])) ∧
+  公表する.0_た(EVENT[4], ENTITY[帝国データバンク仙台支店], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 景気見通し調査(ENTITY[1]) ∧
+   CD_１４_年(ENTITY[7]) ∧
+    する(EVENT[8], ENTITY[5], ENTITY[7]) ∧ と(EVENT[8]) = ENTITY[回復局面] ∧ 企業(ENTITY[5]) ∧
+     past(EVENT[4]) ∧
+      CD_１８．４_％(ENTITY[9]) ∧ xxx(EVENT[10], ENTITY[5], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[1])
+
+# ::id 22_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 全国平均 を ５．３ ポイント 下回っ た 。
+∃ ENTITY[1] EVENT[4] DEGREE[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_５．３_ポイント(DEGREE[3]) ∧
+   past(EVENT[4]) ∧ 下回っ_た(EVENT[4], ENTITY[1], ENTITY[2]) ∧ MSR(EVENT[4]) = DEGREE[3])
+
+# ::id 23_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 悪化局面 」 と し た 企業 は 全国 を １．２ ポイント 上回る １７．７ ％ だっ た 。
+∃ EVENT[9] ENTITY[4] EVENT[3] ENTITY[1] (
+ し_た(EVENT[3], ENTITY[1]) ∧ と(EVENT[3]) = ENTITY[悪化局面] ∧ 企業(ENTITY[1]) ∧
+  past(EVENT[3]) ∧
+   (CD_１７．７_％(ENTITY[4]),
+    全 ENTITY[6] (国(ENTITY[6]),
+     ∃ EVENT[8] DEGREE[7] (CD_１．２_ポイント(DEGREE[7]) ∧ 上回る(EVENT[8], ENTITY[4], ENTITY[6]) ∧ MSR(EVENT[8]) = DEGREE[7]))) ∧
+    past(EVENT[9]) ∧ だっ_た(EVENT[9], ENTITY[1], ENTITY[4]))
+
+# ::id 24_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ６ 割 以上 の 企業 が 懸念材料 に 挙げ た の は 、 消費税率 の アップ だ 。
+∃ SITUATION[1] EVENT[5] EVENT[8] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[7] ENTITY[6] (
+ (CD_６_割(ENTITY[3]), 以上(ENTITY[3])) ∧
+  の_企業(ENTITY[3], ENTITY[2]) ∧
+   懸念材料(ENTITY[4]) ∧
+    の(SITUATION[1], 挙げ_た(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4]) ∧
+     消費税率(ENTITY[7]) ∧
+      の_アップ(ENTITY[7], ENTITY[6]) ∧ past(EVENT[5]) ∧ だ(EVENT[8], SITUATION[1], ENTITY[6]))
+
+# ::id 25_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 短観 も 次期 は 製造業 、 非製造業 とも に 悪化 を 見込み 、 全産業 は ４ ポイント の 下降 と 想定 し て いる 。
+∃ EVENT[7] EVENT[12] EVENT[8] ENTITY[6] GROUP[3] ENTITY[11] ENTITY[10] ENTITY[1] ENTITY[2] ENTITY[9] (
+ 次期(ENTITY[2]) ∧
+  短観(ENTITY[1]) ∧
+   ∃ ENTITY[4] (製造業(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (非製造業_とも(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    悪化(ENTITY[6]) ∧
+     CD_４_ポイント(ENTITY[11]) ∧
+      の_下降(ENTITY[11], ENTITY[10]) ∧
+       見込み(EVENT[7], ENTITY[2], ENTITY[6]) ∧ に(EVENT[7]) = GROUP[3] ∧
+        想定する.0_て_いる(EVENT[8], ENTITY[1], xxx(EVENT[12], ENTITY[9], ENTITY[10])))
+
+# ::id 26_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 帝国データバンク仙台支店 の 遠峰英利情報部長 は 「 駆け込み需要後 の 反動減 に対する 懸念 は 強い 。 『 １３ 年 が 景気 の ピーク 』 と 感じ て いる 企業 は 多い 」 と みる 。
+∃ EVENT[5] EVENT[14] EVENT[1] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[10] ENTITY[6] (
+ の_xxx(ENTITY[帝国データバンク仙台支店], ENTITY[遠峰英利情報部長]) ∧
+  駆け込み需要後(ENTITY[4]) ∧
+   の_反動減(ENTITY[4], ENTITY[3]) ∧
+    に対する_懸念(ENTITY[3], ENTITY[2]) ∧
+     CD_１３_年(ENTITY[10]) ∧
+      感じ_て_いる(EVENT[8], ENTITY[6],
+       が ENTITY[9] (ENTITY[9] = ENTITY[10],
+        ∃ EVENT[13] ENTITY[12] ENTITY[11] (
+         景気(ENTITY[12]) ∧ の_ピーク(ENTITY[12], ENTITY[11]) ∧ xxx(EVENT[13], ENTITY[9], ENTITY[11])))) ∧
+       企業(ENTITY[6]) ∧
+       みる(EVENT[1], ENTITY[遠峰英利情報部長], 強い(EVENT[5], ENTITY[2]) ∧ 多い(EVENT[14], ENTITY[6])))
+
+# ::id 27_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 消費税増税 が 東北 の 経済活動 に 水 を 差せ ば 、 デフレ脱却 が 遠のきかね ない 。
+∀ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] CND_ば(
+    消費税増税(ENTITY[1]) ∧ の_経済活動(ENTITY[東北], ENTITY[2]) ∧ 水(ENTITY[3]) ∧
+     差せ(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2],
+    ∃ ENTITY[5] (デフレ脱却(ENTITY[5]) ∧ ¬ ∃ EVENT[6] 遠のきかね(EVENT[6], ENTITY[5])))
+
+# ::id 28_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 消費 の 落ち込み を いかに 防ぐ か 。
+QUEST(∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[2] ? ENTITY[4] (
+      ENTITY[1] = *pro* ∧
+       消費(ENTITY[3]) ∧
+        の_落ち込み(ENTITY[3], ENTITY[2]) ∧ ADV(ENTITY[4], EVENT[5]) ∧ 防ぐ(EVENT[5], ENTITY[1], ENTITY[2])))
+
+# ::id 29_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 方策 の 一 つ として 、 東北財務局 の 岸本浩局長 は 「 企業 の 賃上げ 」 を 挙げる 。
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ の_xxx(ENTITY[東北財務局], ENTITY[岸本浩局長]) ∧
+  方策(ENTITY[2]) ∧
+   (CD_一_つ(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧
+    企業(ENTITY[4]) ∧
+     の_賃上げ(ENTITY[4], ENTITY[3]) ∧ 挙げる(EVENT[5], ENTITY[岸本浩局長], ENTITY[3]) ∧ として(EVENT[5]) = ENTITY[1])
+
+# ::id 30_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 可処分所得 の 向上 が 増税 を 上回れ ば 、 内需拡大 、 一層 の 賃上げ という 好循環 が 現実味 を 帯びる 。
+∀ EVENT[4] ENTITY[2] ENTITY[3] ENTITY[1] CND_ば(
+    可処分所得(ENTITY[2]) ∧ の_向上(ENTITY[2], ENTITY[1]) ∧ 増税(ENTITY[3]) ∧
+     上回れ(EVENT[4], ENTITY[1], ENTITY[3]),
+    ∃ EVENT[11] GROUP[6] ENTITY[10] ENTITY[5] (
+     ∃ ENTITY[7] (内需拡大(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+      ∃ ATTRIB[9] ENTITY[8] (ADV_一層(ATTRIB[9]) ∧ の_賃上げ(ATTRIB[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+      という_好循環(GROUP[6], ENTITY[5]) ∧ 現実味(ENTITY[10]) ∧ 帯びる(EVENT[11], ENTITY[5], ENTITY[10])))
+
+# ::id 31_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 岸本局長 は 「 中小 が 率先 し て 取り組む の は 難しい かもしれない が 、 人件費 の 上昇分 は 結果的 に 消費 として 全企業 に 還元 さ れる 。 経営者 は 真剣 に 検討 し て ほしい 」 と 話す 。
+∃ ENTITY[16] ENTITY[13] SITUATION[2] EVENT[4] EVENT[5] EVENT[11] EVENT[17] EVENT[15] EVENT[1] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[14] (
+ 人件費(ENTITY[8]) ∧
+  の_上昇分(ENTITY[8], ENTITY[7]) ∧
+   経営者(ENTITY[14]) ∧
+    中小(ENTITY[3]) ∧
+     の(SITUATION[2], CONJ_te(率先する.0_て(EVENT[4], ENTITY[3]), 取り組む(EVENT[5], ENTITY[3]))) ∧
+      消費(ENTITY[9]) ∧
+       ENTITY[13] = *pro*{ENTITY[9], ENTITY[10], ENTITY[3], ENTITY[7], ENTITY[8], ENTITY[岸本局長]} ∧
+        ENTITY[16] = *pro*{ENTITY[13], ENTITY[9], ENTITY[10], ENTITY[3], ENTITY[7], ENTITY[8], ENTITY[岸本局長]} ∧
+         ADV_結果的_に(EVENT[11]) ∧
+          ADV_真剣_に(EVENT[17]) ∧
+           話す(EVENT[1], ENTITY[岸本局長],
+            CONJ_が(MD_かもしれない(∃ EVENT[6] 難しい(EVENT[6], SITUATION[2])),
+             還元する.0_れる(EVENT[11], ENTITY[7]) ∧ に(EVENT[11]) = ENTITY[10] ∧
+              として(EVENT[11]) = ENTITY[9]) ∧
+             ほしい(EVENT[15], ENTITY[13], ENTITY[14], 検討する.0_て(EVENT[17], ENTITY[14], ENTITY[16]))))
+
+# ::id 32_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 株高基調 が 続き 、 資産効果 が 膨らん だ （ コラージュ ）
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (株高基調(ENTITY[1]) ∧ 資産効果(ENTITY[3]) ∧ 続き(EVENT[2], ENTITY[1]) ∧ 膨らん_だ(EVENT[4], ENTITY[3]))
+
+# ::id 33_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ◎ 業界 は こう 見る
+∃ EVENT[2] ENTITY[1] (業界(ENTITY[1]) ∧ ADV_こう(EVENT[2]) ∧ 見る(EVENT[2], ENTITY[1]))
+
+# ::id 34_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東北 の 各業界 にとって ２０１４ 年 は どのような １ 年 に なる の か 。
+∃ ENTITY[2] (
+ CD_２０１４_年(ENTITY[2]) ∧
+  QUEST(∃ EVENT[4] ENTITY[1] ? ENTITY[3] (
+        CD_１_年(ENTITY[3]) ∧
+         の(ENTITY[東北], ENTITY[1]) ∧
+          なる_の(EVENT[4], ENTITY[2], ENTITY[3]) ∧ にとって(EVENT[4]) = ENTITY[1])))
+
+# ::id 35_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 製造 、 建設 、 小売り 、 観光 各分野 の 団体トップら に 、 成長 の 道筋 や 課題 を 聞い た 。
+∃ ENTITY[1] EVENT[14] GROUP[4] ENTITY[3] GROUP[11] ENTITY[10] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[5] (製造(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+   ∃ ENTITY[6] (建設(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+   ∃ ENTITY[7] (小売り(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+   ∃ ENTITY[8] (観光(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[4])) ∧
+   equals(GROUP[4], ENTITY[3]) ∧
+    の_団体トップら(ENTITY[3], ENTITY[2]) ∧
+     成長(ENTITY[10]) ∧
+      CONJ_や(∃ ENTITY[12] (道筋(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+       ∃ ENTITY[13] (課題(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+       equals(GROUP[11], ENTITY[9]) ∧ の(ENTITY[10], ENTITY[9]) ∧
+        past(EVENT[14]) ∧ 聞い_た(EVENT[14], ENTITY[1], ENTITY[9]) ∧ に(EVENT[14]) = ENTITY[2])
+
+# ::id 36_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ＜ 製造
+∃ EVENT[2] ENTITY[1] (製造(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 37_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ みやぎ工業会 竹渕裕樹会長 （ ５９ ）
+∃ EVENT[2] ENTITY[1] (CD_５９(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[みやぎ工業会_竹渕裕樹会長]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[みやぎ工業会_竹渕裕樹会長])
+
+# ::id 38_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 海外 へ 販路 を 拡大 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 海外(ENTITY[1]) ∧
+  販路(ENTITY[2]) ∧ 拡大(EVENT[3], _, ENTITY[2]) ∧ へ(EVENT[3]) = ENTITY[1])
+
+# ::id 39_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt みやぎ工業会 の 多く の 会員企業 が 、 震災前 と 同等 か それ以上 に 売り上げ を 戻し て いる 。
+∃ ENTITY[2] (
+ 多く ENTITY[3] (の(ENTITY[みやぎ工業会], ENTITY[3]), の_会員企業(ENTITY[3], ENTITY[2])) ∧
+  が ENTITY[1] (ENTITY[1] = ENTITY[2],
+   ∃ EVENT[10] GROUP[6] ENTITY[9] ENTITY[4] (
+    CONJ_と(∃ ENTITY[7] (震災前(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[8] (同等(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+     か ENTITY[5] (is_element_of(ENTITY[5], GROUP[6]), LINK_それ以上(ENTITY[5], ENTITY[4])) ∧
+      売り上げ(ENTITY[9]) ∧ 戻し_て_いる(EVENT[10], ENTITY[1], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[4])))
+
+# ::id 40_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 需要増 で 生産 は 好調 だ が 、 電気料金引き上げ など の コスト増 で 利益 は 上がっ て い ない 。
+∃ ENTITY[6] ENTITY[5] ENTITY[4] EVENT[3] ENTITY[2] ENTITY[1] ENTITY[7] (
+ 需要増(ENTITY[2]) ∧
+  で_生産(ENTITY[2], ENTITY[1]) ∧
+   利益(ENTITY[7]) ∧
+    電気料金引き上げ(ENTITY[6]) ∧
+     など(ENTITY[6], ENTITY[5]) ∧
+      の_コスト増(ENTITY[5], ENTITY[4]) ∧
+       CONJ_が(好調_だ(EVENT[3], ENTITY[1]),
+        ¬ ∃ EVENT[8] (上がっ_て_い(EVENT[8], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[4])))
+
+# ::id 41_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 消費税増税前 の 駆け込み需要 の 要素 も 大きく 、 楽観 は でき ない 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[5] (
+ 楽観(ENTITY[5]) ∧
+  消費税増税前(ENTITY[3]) ∧
+   の_駆け込み需要(ENTITY[3], ENTITY[2]) ∧
+    の_要素(ENTITY[2], ENTITY[1]) ∧ 大きく(EVENT[4], ENTITY[1]) ∧ ¬ ∃ EVENT[6] でき(EVENT[6], ENTITY[5]))
+
+# ::id 42_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 被災地 で は 、 雇用 の ミスマッチ による 労働力不足 が 深刻 だ 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 被災地(ENTITY[1]) ∧
+  雇用(ENTITY[4]) ∧
+   の_ミスマッチ(ENTITY[4], ENTITY[3]) ∧
+    による_労働力不足(ENTITY[3], ENTITY[2]) ∧ 深刻_だ(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[1])
+
+# ::id 43_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 大手製造業 の 海外シフト 、 国内 の 人口減 が 進む 中 、 中小 も 国内市場 だけ で は 生き残れ ない 。
+∃ SITUATION[1] EVENT[7] GROUP[2] ENTITY[8] ENTITY[10] (
+ 国内市場(ENTITY[10]) ∧
+  ∃ ENTITY[4] ENTITY[3] (大手製造業(ENTITY[4]) ∧ の_海外シフト(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[6] ENTITY[5] (国内(ENTITY[6]) ∧ の_人口減(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   FACT(SITUATION[1], 進む(EVENT[7], GROUP[2])) ∧
+    中小(ENTITY[8]) ∧
+     ¬ だけ_は ENTITY[9] (ENTITY[9] = ENTITY[10],
+           ∃ EVENT[11] (
+            生き残れ(EVENT[11], ENTITY[8]) ∧
+             で(EVENT[11]) = ENTITY[9] ∧ 中(EVENT[11]) = SITUATION[1])))
+
+# ::id 44_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 製造業 の 復興 を 確実 な もの に する ため 、 海外 の 販路拡大 が 一層 求め られる だろう 。
+∃ ATTRIB[6] ENTITY[2] SITUATION[1] EVENT[7] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[9] ENTITY[8] (
+ ENTITY[2] = *pro* ∧
+  製造業(ENTITY[4]) ∧
+   の_復興(ENTITY[4], ENTITY[3]) ∧
+    確実_な(ATTRIB[6]) ∧
+     ATTRIBUTE_もの(ATTRIB[6], ENTITY[5]) ∧
+      FACT(SITUATION[1], する(EVENT[7], ENTITY[2], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[5]) ∧
+       海外(ENTITY[9]) ∧
+        の_販路拡大(ENTITY[9], ENTITY[8]) ∧
+         MD_だろう(∃ EVENT[10] (ADV_一層(EVENT[10]) ∧ 求め_られる(EVENT[10], ENTITY[8]) ∧ ため(EVENT[10]) = SITUATION[1])))
+
+# ::id 45_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ＜ 建設
+∃ EVENT[2] ENTITY[1] (建設(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 46_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 岩手県建設業協会 宇部貞宏会長 （ ７６ ）
+∃ EVENT[2] ENTITY[1] (CD_７６(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[岩手県建設業協会_宇部貞宏会長]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[岩手県建設業協会_宇部貞宏会長])
+
+# ::id 47_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 五輪 の 悪影響 ない ＞
+∃ EVENT[2] ENTITY[1] (の_悪影響(ENTITY[五輪], ENTITY[1]) ∧ ない(EVENT[2], ENTITY[1]))
+
+# ::id 48_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 建設業界 は 例年 、 春 が 仕事 の 端境期 に なる が 、 １３ 年度 の 大型補正予算案 が 組ま れ た こと で 明るい スタート と なる 。
+∃ ATTRIB[13] SITUATION[8] ENTITY[7] EVENT[6] EVENT[11] EVENT[14] ENTITY[5] ENTITY[4] ENTITY[3] TIME[2] ENTITY[10] ENTITY[9] ENTITY[12] ENTITY[1] (
+ 建設業界(ENTITY[1]) ∧
+  例年(TIME[2]) ∧
+   春(ENTITY[3]) ∧
+    仕事(ENTITY[5]) ∧
+     の_端境期(ENTITY[5], ENTITY[4]) ∧
+      ENTITY[7] = *pro*{ENTITY[3], ENTITY[4], ENTITY[5], ENTITY[1]} ∧
+       (CD_１３(ENTITY[10]), 年度(ENTITY[10])) ∧
+        の_大型補正予算案(ENTITY[10], ENTITY[9]) ∧
+         こと(SITUATION[8], 組ま_れ_た(EVENT[11], ENTITY[9])) ∧
+          明るい(ATTRIB[13]) ∧
+           ATTRIBUTE_スタート(ATTRIB[13], ENTITY[12]) ∧
+            past(EVENT[11]) ∧
+             CONJ_が(なる(EVENT[6], ENTITY[3], ENTITY[4]) ∧ is_contained_in(時間(EVENT[6]), TIME[2]) ∧
+                   TPC(EVENT[6]) = ENTITY[1],
+              なる(EVENT[14], ENTITY[7]) ∧ と(EVENT[14]) = ENTITY[12] ∧
+               で(EVENT[14]) = SITUATION[8]))
+
+# ::id 49_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 震災 から ４ 年 目 に 入り 、 復旧復興 が 本格化 する 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  震災(ENTITY[2]) ∧
+   (CD_４_年(ENTITY[3]), 目(ENTITY[3])) ∧
+    復旧復興(ENTITY[5]) ∧
+     入り(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ から(EVENT[4]) = ENTITY[2] ∧
+      本格化する.0(EVENT[6], ENTITY[5]))
+
+# ::id 50_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 業界 は これ に 全力 を 挙げる 。
+∃ ENTITY[2] ENTITY[1] (
+ 業界(ENTITY[1]) ∧
+  ENTITY[2] = これ ∧
+   全 ENTITY[3] (力(ENTITY[3]), ∃ EVENT[4] (挙げる(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2])))
+
+# ::id 51_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東京五輪 の 悪影響 を 不安がる 声 も ある が 、 復旧復興 の 後 に 出 て くる と み て おり 、 心配 ない 。
+∃ ENTITY[7] EVENT[5] EVENT[6] EVENT[10] EVENT[12] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[9] ENTITY[8] ENTITY[11] (
+ 東京五輪(ENTITY[4]) ∧
+  の_悪影響(ENTITY[4], ENTITY[3]) ∧
+   不安がる(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 声(ENTITY[1]) ∧
+    ENTITY[7] = *pro*{ENTITY[1], ENTITY[3], ENTITY[4]} ∧
+     復旧復興(ENTITY[9]) ∧
+      の_後(ENTITY[9], ENTITY[8]) ∧
+       心配(ENTITY[11]) ∧
+        CONJ_が(ある(EVENT[6], ENTITY[1]),
+         出_て_くる_と_み_おり(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[8] ∧ ない(EVENT[12], ENTITY[11])))
+
+# ::id 52_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt とはいえ 、 資材高騰 と 人手不足 の 問題 は なかなか 解消 でき ない だろう 。
+∃ ENTITY[3] ENTITY[4] GROUP[2] ENTITY[1] (
+ 資材高騰(ENTITY[3]) ∧
+  人手不足(ENTITY[4]) ∧
+   CONJ_と(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[4], GROUP[2])) ∧
+    の_問題(GROUP[2], ENTITY[1]) ∧ ¬ MD_だろう(∃ EVENT[5] (ADV_なかなか(EVENT[5]) ∧ 解消する.0(EVENT[5], ENTITY[1]))))
+
+# ::id 53_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 仕事 は あっ て も 利益 に なら ず 、 豊作貧乏 の 状況 だ 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[9] ENTITY[5] ENTITY[8] ENTITY[7] ENTITY[3] (
+ 仕事(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   FACT(SITUATION[2], あっ_て(EVENT[4], ENTITY[3])) ∧
+    利益(ENTITY[5]) ∧
+     豊作貧乏(ENTITY[8]) ∧
+      の_状況(ENTITY[8], ENTITY[7]) ∧
+       CONJ_te(¬ ∃ EVENT[6] (
+                  なら(EVENT[6], ENTITY[1]) ∧
+                   に(EVENT[6]) = ENTITY[5] ∧ te(EVENT[6]) = SITUATION[2]),
+        だ(EVENT[9], ENTITY[1], ENTITY[7])))
+
+# ::id 54_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt これ を 機 に 、 財務 など 企業体質 の 改善 に 取り組む 必要 が ある 。
+∃ ENTITY[3] ENTITY[2] SITUATION[1] EVENT[5] EVENT[9] EVENT[10] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[6] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[3] = これ ∧
+   機(ENTITY[4]) ∧
+    財務(ENTITY[8]) ∧
+     など_企業体質(ENTITY[8], ENTITY[7]) ∧
+      の_改善(ENTITY[7], ENTITY[6]) ∧
+       必要(SITUATION[1],
+        xxx(EVENT[5], ENTITY[2], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+         取り組む(EVENT[9], ENTITY[2]) ∧ に(EVENT[9]) = ENTITY[6]) ∧ ある(EVENT[10], SITUATION[1]))
+
+# ::id 55_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ＜ 小売り
+∃ EVENT[2] ENTITY[1] (小売り(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 56_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 仙台三越 渡辺憲一社長 （ ５５ ）
+∃ EVENT[2] ENTITY[1] (CD_５５(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[仙台三越_渡辺憲一社長]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[仙台三越_渡辺憲一社長])
+
+# ::id 57_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 増税対策 、 積極的 に ＞
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 増税対策(ENTITY[2]) ∧ ADV_積極的_に(EVENT[3]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 58_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 小売業界 にとって ４ 月 の 消費税増税 が 逆風 に なる 。
+∃ EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 小売業界(ENTITY[1]) ∧
+  CD_４_月(ENTITY[3]) ∧
+   の_消費税増税(ENTITY[3], ENTITY[2]) ∧
+    逆風(ENTITY[4]) ∧ なる(EVENT[5], ENTITY[2], ENTITY[4]) ∧ にとって(EVENT[5]) = ENTITY[1])
+
+# ::id 59_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 前回 １９９７ 年 の 税率アップ時 を 参考 に すれ ば 、 昨年 １２ 月 ～ ３ 月 の 駆け込み需要 で 前年比 １ ％ の 売り上げ増 が 見込ま れる 半面 、 ことし ４ 月 以降 は ４～５ ％ 程度 の 落ち込み が 予想 さ れる 。
+∃ ENTITY[10] (
+ (CD_４_月(ENTITY[10]), 以降_ことし(ENTITY[10])) ∧
+  ∀ EVENT[4] ENTITY[2] ENTITY[3] ENTITY[1] CND_ば(
+      (CD_１９９７_年(ENTITY[2]), 前回(ENTITY[2])) ∧ の_税率アップ時(ENTITY[2], ENTITY[1]) ∧ 参考(ENTITY[3]) ∧
+       すれ(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3],
+      ∃ EVENT[9] EVENT[13] ENTITY[6] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[12] ENTITY[11] (
+       (CD_１２_月_３_月(ENTITY[6]), 昨年(ENTITY[6])) ∧
+        の_駆け込み需要(ENTITY[6], ENTITY[5]) ∧
+         (CD_１_％(ENTITY[8]), 前年比(ENTITY[8])) ∧
+          の_売り上げ増(ENTITY[8], ENTITY[7]) ∧
+           (CD_４～５_％(ENTITY[12]), 程度(ENTITY[12])) ∧
+            の_落ち込み(ENTITY[12], ENTITY[11]) ∧
+             CONJ_半面(見込ま(EVENT[9], _, ENTITY[7]) ∧ で(EVENT[9]) = ENTITY[5],
+              予想する.0_れる(EVENT[13], ENTITY[11]) ∧ 時間(EVENT[13]) = ENTITY[10]))))
+
+# ::id 60_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 厳しい 期間 は 数 カ月 程度 で 終わる と の 期待 も ある が 、 手 を こまねい て いれ ば マイナス は 避け られ ない 。
+∃ SITUATION[2] ATTRIB[4] EVENT[6] EVENT[7] ENTITY[5] ENTITY[1] ENTITY[3] ENTITY[11] (
+ 厳しい(ATTRIB[4]) ∧
+  ATTRIBUTE_期間(ATTRIB[4], ENTITY[3]) ∧
+   マイナス(ENTITY[11]) ∧
+    (CD_数_カ月(ENTITY[5]), 程度(ENTITY[5])) ∧
+     と(SITUATION[2], 終わる(EVENT[6], ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[5]) ∧
+      の_期待(SITUATION[2], ENTITY[1]) ∧
+       CONJ_が(ある(EVENT[7], ENTITY[1]),
+        ∀ ENTITY[8] EVENT[10] ENTITY[9] CND_ば(
+         (ENTITY[8] = *pro*{ENTITY[1], ENTITY[5], ENTITY[3]} ∧ 手(ENTITY[9]) ∧
+          こまねい_て_いれ(EVENT[10], ENTITY[8], ENTITY[9])), ¬ ∃ EVENT[12] 避け_られ(EVENT[12], ENTITY[11]))))
+
+# ::id 61_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 仙台三越 は 昨年 、 食品フロア を 全面改修 し 、 百貨店サービス を 提供 する 小型店 も 出店 し た 。
+∃ SITUATION[8] EVENT[2] EVENT[6] EVENT[7] ENTITY[1] ENTITY[5] ENTITY[3] (
+ 食品フロア(ENTITY[1]) ∧
+  百貨店サービス(ENTITY[5]) ∧
+   提供する.0(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 小型店(ENTITY[3]) ∧
+    ADV_昨年(SITUATION[8]) ∧
+     past(EVENT[7]) ∧
+      FACT(SITUATION[8], 全面改修する.0(EVENT[2], ENTITY[仙台三越], ENTITY[1]) ∧ 出店する.0_た(EVENT[7], ENTITY[仙台三越], ENTITY[3])))
+
+# ::id 62_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 各店 も 対策 に 追わ れる １ 年 に なる だろう 。
+各 ENTITY[1] (店(ENTITY[1]),
+ MD_だろう(∃ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+       ENTITY[3] = *pro*{ENTITY[1]} ∧
+        対策(ENTITY[4]) ∧
+         (CD_１_年(ENTITY[2]),
+          THAT(追わ_れる(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4], ENTITY[2])) ∧
+          なる(EVENT[6], ENTITY[1], ENTITY[2]))))
+
+# ::id 63_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ＜ 観光
+∃ EVENT[2] ENTITY[1] (観光(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 64_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 全国旅館ホテル生活衛生同業組合連合会 佐藤信幸会長 （ ６０ ）
+∃ EVENT[2] ENTITY[1] (CD_６０(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[全国旅館ホテル生活衛生同業組合連合会_佐藤信幸会長]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[全国旅館ホテル生活衛生同業組合連合会_佐藤信幸会長])
+
+# ::id 65_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 広域連携 、 魅力 磨く ＞
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (広域連携(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (魅力(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ 磨く(EVENT[4], GROUP[1]))
+
+# ::id 66_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 山形県内 で は ６～９ 月 に 山形デスティネーションキャンペーン が 展開 さ れ 、 山形市 で は 東北六魂祭 が 開か れる 。
+∃ EVENT[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 山形県内(ENTITY[1]) ∧
+  CD_６～９_月(ENTITY[2]) ∧
+   展開する.0(EVENT[3], _, ENTITY[山形デスティネーションキャンペーン]) ∧ に(EVENT[3]) = ENTITY[2] ∧ で(EVENT[3]) = ENTITY[1] ∧
+    開か(EVENT[4], _, ENTITY[東北六魂祭]) ∧ で(EVENT[4]) = ENTITY[山形市])
+
+# ::id 67_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 昨年 は 東日本大震災 で 激減 し た 観光客 が 少し ずつ 戻っ て き た 感 が あり 、 ことし は 飛躍 の 年 に し たい 。
+∃ SITUATION[3] ENTITY[1] EVENT[6] EVENT[7] EVENT[9] EVENT[13] ENTITY[4] ENTITY[12] ENTITY[11] ENTITY[2] ENTITY[10] (
+ 昨年(ENTITY[2]) ∧
+  ことし(ENTITY[10]) ∧
+   ENTITY[1] = *pro* ∧
+    激減する.0_た(EVENT[6], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[東日本大震災] ∧ 観光客(ENTITY[4]) ∧
+     感(SITUATION[3], 戻っ_て_き_た(EVENT[7], ENTITY[4])) ∧
+      飛躍(ENTITY[12]) ∧
+       の_年(ENTITY[12], ENTITY[11]) ∧
+        past(EVENT[6]) ∧
+         ADV_少し_ずつ(EVENT[7]) ∧
+          past(EVENT[7]) ∧
+           あり(EVENT[9], SITUATION[3]) ∧ 時間(EVENT[9]) = ENTITY[2] ∧
+            し_たい(EVENT[13], ENTITY[1], ENTITY[11]) ∧ 時間(EVENT[13]) = ENTITY[10])
+
+# ::id 68_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 復興応援 の 旅行需要 が 一段落 し 、 東北各県 は 歴史 や 文化 、 食 といった 魅力 を 磨き上げ、発信 する 力 が 問わ れる 。
+∃ ENTITY[6] SITUATION[5] EVENT[3] EVENT[13] EVENT[14] ENTITY[2] ENTITY[1] GROUP[8] ENTITY[7] ENTITY[4] (
+ 東北各県(ENTITY[4]) ∧
+  復興応援(ENTITY[2]) ∧
+   の_旅行需要(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[6] = *pro*{ENTITY[4], ENTITY[1], ENTITY[2]} ∧
+     CONJ_や(∃ ENTITY[9] (歴史(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+      ∃ GROUP[10] (
+       ∃ ENTITY[11] (文化(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (食(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8]))) ∧
+      といった_魅力(GROUP[8], ENTITY[7]) ∧
+       力(SITUATION[5], 磨き上げ、発信する.0(EVENT[13], ENTITY[6], ENTITY[7])) ∧
+        一段落する.0(EVENT[3], ENTITY[1]) ∧ 問わ(EVENT[14], _, SITUATION[5]) ∧ TPC(EVENT[14]) = ENTITY[4])
+
+# ::id 69_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt インバウンド （ 外国人旅行者 ） の 誘致 に 向け た イメージアップ 、 東京五輪 を 視野 に 入れ た ヘルス 、 スポーツツーリズム に 広域連携 で 取り組む 必要 が ある 。
+∃ ENTITY[2] SITUATION[1] EVENT[15] EVENT[16] ENTITY[14] GROUP[3] (
+ ENTITY[2] = *pro* ∧
+  ∃ ENTITY[5] EVENT[7] ENTITY[6] ENTITY[4] (
+   ENTITY[5] = *pro*{ENTITY[2]} ∧
+    namely_-ENTITY-(ENTITY[外国人旅行者], ENTITY[インバウンド]) ∧
+     の_誘致(ENTITY[インバウンド], ENTITY[6]) ∧
+      THAT_イメージアップ(向け_た(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6], ENTITY[4]) ∧
+       past(EVENT[7]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[9] EVENT[12] ENTITY[11] ENTITY[10] ENTITY[8] (
+    ENTITY[9] = *pro*{ENTITY[インバウンド], ENTITY[外国人旅行者], ENTITY[2]} ∧
+     東京五輪(ENTITY[10]) ∧
+      視野(ENTITY[11]) ∧
+       THAT_ヘルス(入れ_た(EVENT[12], ENTITY[9], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[11], ENTITY[8]) ∧
+        past(EVENT[12]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+   ∃ ENTITY[13] (スポーツツーリズム(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[3])) ∧
+   広域連携(ENTITY[14]) ∧
+    必要(SITUATION[1],
+     取り組む(EVENT[15], ENTITY[2]) ∧ で(EVENT[15]) = ENTITY[14] ∧ に(EVENT[15]) = GROUP[3]) ∧
+     ある(EVENT[16], SITUATION[1]))
+
+# ::id 70_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ◎ 守本憲弘・東北経産局長 に 聞く
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ 聞く(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[守本憲弘.東北経産局長])
+
+# ::id 71_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ／ 中小 の 飛躍 へ 投資環境整備
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 中小(ENTITY[3]) ∧
+  の_飛躍(ENTITY[3], ENTITY[2]) ∧
+   へ_投資環境整備(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 72_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東日本大震災 以降 、 東北経済 は 緩やか な 回復 を 続け て いる 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] TIME[1] ENTITY[2] (
+ 東北経済(ENTITY[2]) ∧
+  以降(TIME[1]) ∧
+   緩やか_な(ATTRIB[4]) ∧
+    ATTRIBUTE_回復(ATTRIB[4], ENTITY[3]) ∧
+     続け_て_いる(EVENT[5], ENTITY[2], ENTITY[3]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]) ∧
+      TPC(EVENT[5]) = ENTITY[東日本大震災])
+
+# ::id 73_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東北経済産業局 の 守本憲弘局長 は 、 飛躍 の 鍵 として 「 中小企業 の 投資 」 を 挙げ 、 条件整備 に 向け て 労働力確保 や 販路 の 拡大 に 取り組む 考え を 強調 し た 。
+∃ SITUATION[6] EVENT[5] EVENT[8] EVENT[13] EVENT[14] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[7] GROUP[9] (
+ の_xxx(ENTITY[東北経済産業局], ENTITY[守本憲弘局長]) ∧
+  飛躍(ENTITY[2]) ∧
+   の_鍵(ENTITY[2], ENTITY[1]) ∧
+    中小企業(ENTITY[4]) ∧
+     の_投資(ENTITY[4], ENTITY[3]) ∧
+      条件整備(ENTITY[7]) ∧
+       CONJ_や(∃ ENTITY[10] (労働力確保(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+        ∃ ENTITY[12] ENTITY[11] (販路(ENTITY[12]) ∧ の_拡大(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+        考え(SITUATION[6],
+         CONJ_te(向け_て(EVENT[8], ENTITY[守本憲弘局長]) ∧ に(EVENT[8]) = ENTITY[7],
+          取り組む(EVENT[13], ENTITY[守本憲弘局長]) ∧ に(EVENT[13]) = GROUP[9])) ∧
+         past(EVENT[14]) ∧
+          挙げ(EVENT[5], ENTITY[守本憲弘局長], ENTITY[3]) ∧ として(EVENT[5]) = ENTITY[1] ∧
+           強調する.0_た(EVENT[14], ENTITY[守本憲弘局長], SITUATION[6]))
+
+# ::id 74_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － 東北経済 の 現状 を どう 見る か 。
+QUEST(∃ ENTITY[1] EVENT[4] ENTITY[2] ? ENTITY[3] (
+      ENTITY[1] = *pro* ∧
+       の_現状(ENTITY[東北経済], ENTITY[2]) ∧ ADV(ENTITY[3], EVENT[4]) ∧ 見る(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 75_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 震災 の 打撃 から 着実 に 立ち直っ て き て いる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  震災(ENTITY[3]) ∧
+   の_打撃(ENTITY[3], ENTITY[2]) ∧
+    ADV_着実_に(EVENT[4]) ∧ 立ち直っ_て_き_いる(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[2])
+
+# ::id 76_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 円安 と 米国景気 の 回復 による 輸出増 で 、 東北 で も 幅広い 業種 が 押し上げ られ た 」
+∃ ATTRIB[7] EVENT[8] GROUP[2] ENTITY[6] ENTITY[1] (
+ CONJ_と(∃ ENTITY[3] (円安(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[5] ENTITY[4] (米国景気(ENTITY[5]) ∧ の_回復(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+  による_輸出増(GROUP[2], ENTITY[1]) ∧
+   幅広い(ATTRIB[7]) ∧
+    ATTRIBUTE_業種(ATTRIB[7], ENTITY[6]) ∧
+     past(EVENT[8]) ∧
+      押し上げ_た(EVENT[8], _, ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[東北] ∧ で(EVENT[8]) = ENTITY[1])
+
+# ::id 77_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 ただ 、 中小 の 多く は 原材料 の 高騰 、 電気料 の 引き上げ に 直面 し 、 設備投資 や 賃金 の ベースアップ に は 至っ て い ない 。
+∃ ENTITY[2] ENTITY[10] ENTITY[12] ENTITY[11] GROUP[9] (
+ 中小(ENTITY[2]) ∧
+  設備投資(ENTITY[10]) ∧
+   賃金(ENTITY[12]) ∧
+    の_ベースアップ(ENTITY[12], ENTITY[11]) ∧
+     CONJ_や(is_element_of(ENTITY[10], GROUP[9]), is_element_of(ENTITY[11], GROUP[9])) ∧
+      多く ENTITY[1] (の(ENTITY[2], ENTITY[1]),
+       ¬ ∃ EVENT[8] EVENT[13] GROUP[3] (
+             ∃ ENTITY[5] ENTITY[4] (原材料(ENTITY[5]) ∧ の_高騰(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+              ∃ ENTITY[7] ENTITY[6] (電気料(ENTITY[7]) ∧ の_引き上げ(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+              直面する.0(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = GROUP[3] ∧
+               至っ_て_い(EVENT[13], ENTITY[1]) ∧ に(EVENT[13]) = GROUP[9])))
+
+# ::id 78_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt プロ野球東北楽天 の 日本一セール は 盛り上がっ た が 、 個人消費 も 力強さ に 欠ける 」
+∃ ENTITY[3] ENTITY[2] EVENT[1] EVENT[4] (
+ の_xxx(ENTITY[プロ野球東北楽天], ENTITY[日本一セール]) ∧
+  past(EVENT[1]) ∧
+   個人消費(ENTITY[2]) ∧
+    力強さ(ENTITY[3]) ∧
+     CONJ_が(盛り上がっ_た(EVENT[1], ENTITY[日本一セール]), 欠ける(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]))
+
+# ::id 79_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － １４ 年 の 域内経済 を どう 予測 し て いる か 。
+QUEST(∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[2] ? ENTITY[4] (
+      ENTITY[1] = *pro* ∧
+       CD_１４_年(ENTITY[3]) ∧
+        の_域内経済(ENTITY[3], ENTITY[2]) ∧ ADV(ENTITY[4], EVENT[5]) ∧ 予測する.0_て_いる(EVENT[5], ENTITY[1], ENTITY[2])))
+
+# ::id 80_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 景気 が 上昇局面 に ある の は 間違いなく 、 それ を 中小 の 投資 に つなげる 必要 が ある 。
+∃ ENTITY[9] ENTITY[8] SITUATION[7] SITUATION[1] EVENT[4] EVENT[5] EVENT[12] EVENT[13] ENTITY[3] ENTITY[2] ENTITY[11] ENTITY[10] (
+ 景気(ENTITY[2]) ∧
+  上昇局面(ENTITY[3]) ∧
+   の(SITUATION[1], ある(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+    ENTITY[8] = *pro*{ENTITY[2], ENTITY[3]} ∧
+     ENTITY[9] = それ{ENTITY[2], ENTITY[3]} ∧
+      中小(ENTITY[11]) ∧
+       の_投資(ENTITY[11], ENTITY[10]) ∧
+        必要(SITUATION[7], つなげる(EVENT[12], ENTITY[8], ENTITY[9]) ∧ に(EVENT[12]) = ENTITY[10]) ∧
+         ADV_間違いなく(EVENT[5]) ∧ xxx(EVENT[5], SITUATION[1]) ∧ ある(EVENT[13], SITUATION[7]))
+
+# ::id 81_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 東北 の 経済関係者 が 『 ここ まで 復興 し た 』 と 胸 を 張り 、 販路拡大 や 企業誘致 を 実現 する 年 で あり たい 」
+∃ ENTITY[7] ENTITY[6] SITUATION[2] ENTITY[1] EVENT[8] EVENT[5] EVENT[12] EVENT[13] ENTITY[4] GROUP[9] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  の_経済関係者(ENTITY[東北], ENTITY[3]) ∧
+   胸(ENTITY[4]) ∧
+    ENTITY[6] = *pro*{ENTITY[3], ENTITY[4], ENTITY[東北], ENTITY[1]} ∧
+     ENTITY[7] = ここ{ENTITY[3], ENTITY[4], ENTITY[東北], ENTITY[1]} ∧
+      CONJ_や(∃ ENTITY[10] (販路拡大(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+       ∃ ENTITY[11] (企業誘致(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+       年(SITUATION[2],
+        張り(EVENT[5], ENTITY[3], ENTITY[4], 復興する.0_た(EVENT[8], ENTITY[6]) ∧ まで(EVENT[8]) = ENTITY[7]) ∧
+         実現する.0(EVENT[12], ENTITY[3], GROUP[9])) ∧
+        before(EVENT[5], EVENT[8]) ∧ あり_たい(EVENT[13], ENTITY[1]) ∧ で(EVENT[13]) = SITUATION[2])
+
+# ::id 82_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － 昨年 は 製造業 の 復調 が 際立っ た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 昨年(ENTITY[1]) ∧
+  製造業(ENTITY[3]) ∧
+   の_復調(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ 際立っ_た(EVENT[4], ENTITY[2]) ∧ 時間(EVENT[4]) = ENTITY[1])
+
+# ::id 83_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 自動車 を 含む 輸送用機械 の 拡大傾向 は 続い て おり 、 域内 で の ウエート は 増す だろう 。
+∃ EVENT[6] EVENT[5] ENTITY[4] ENTITY[2] ENTITY[1] ENTITY[8] ENTITY[7] (
+ 自動車(ENTITY[4]) ∧
+  含む(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 輸送用機械(ENTITY[2]) ∧
+   の_拡大傾向(ENTITY[2], ENTITY[1]) ∧
+    域内(ENTITY[8]) ∧
+     で_の_ウエート(ENTITY[8], ENTITY[7]) ∧ 続い_て_おり(EVENT[6], ENTITY[1]) ∧ MD_だろう(∃ EVENT[9] 増す(EVENT[9], ENTITY[7])))
+
+# ::id 84_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 電子関連 は スマートフォン （ 多機能携帯電話 ） の 普及 で 苦境 を 脱し た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 電子関連(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[多機能携帯電話], ENTITY[スマートフォン]) ∧
+   の_普及(ENTITY[スマートフォン], ENTITY[2]) ∧
+    苦境(ENTITY[3]) ∧
+     past(EVENT[4]) ∧ 脱し_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 85_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 産学連携 による 次世代半導体 の 開発 が 始まる など 、 東北 の 主力産業 で ある こと に 変わり は ない 」
+∃ SITUATION[3] ENTITY[2] SITUATION[1] EVENT[7] EVENT[9] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[10] (
+ 変わり(ENTITY[10]) ∧
+  ENTITY[2] = *pro* ∧
+   産学連携(ENTITY[6]) ∧
+    による_次世代半導体(ENTITY[6], ENTITY[5]) ∧
+     の_開発(ENTITY[5], ENTITY[4]) ∧
+      FACT(SITUATION[3], 始まる(EVENT[7], ENTITY[4])) ∧
+       の_主力産業(ENTITY[東北], ENTITY[8]) ∧
+        こと(SITUATION[1], で_ある(EVENT[9], ENTITY[2], ENTITY[8]) ∧ など(EVENT[9]) = SITUATION[3]) ∧
+         ない(EVENT[11], ENTITY[10]) ∧ に(EVENT[11]) = SITUATION[1])
+
+# ::id 86_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － 被災地 の 産業復興 は 地域 、 業種 による 落差 が 大きい 。
+∃ EVENT[7] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 被災地(ENTITY[2]) ∧
+  の_産業復興(ENTITY[2], ENTITY[1]) ∧
+   ∃ ENTITY[5] (地域(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (業種(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    による_落差(GROUP[4], ENTITY[3]) ∧ 大きい(EVENT[7], ENTITY[3]) ∧ TPC(EVENT[7]) = ENTITY[1])
+
+# ::id 87_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 津波浸水地 の 商業復旧 が 遅れ て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (津波浸水地(ENTITY[2]) ∧ の_商業復旧(ENTITY[2], ENTITY[1]) ∧ 遅れ_て_いる(EVENT[3], ENTITY[1]))
+
+# ::id 88_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 水産加工 で は 、 販路 の 再構築 と 労働力確保 の 問題 が 大きい 。
+∃ EVENT[7] GROUP[3] ENTITY[2] ENTITY[1] (
+ 水産加工(ENTITY[1]) ∧
+  CONJ_と(∃ ENTITY[5] ENTITY[4] (販路(ENTITY[5]) ∧ の_再構築(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[6] (労働力確保(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+   の_問題(GROUP[3], ENTITY[2]) ∧ 大きい(EVENT[7], ENTITY[2]) ∧ で(EVENT[7]) = ENTITY[1])
+
+# ::id 89_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 衛生的 な 就労環境 の 整備 、 海外販路 の 開拓 を 促す ため 、 各種助成制度 の 周知 を 進める 」
+∃ SITUATION[2] ENTITY[1] EVENT[9] EVENT[12] GROUP[3] ENTITY[11] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  ∃ ATTRIB[6] ENTITY[5] ENTITY[4] (
+   衛生的_な(ATTRIB[6]) ∧
+    ATTRIBUTE_就労環境(ATTRIB[6], ENTITY[5]) ∧ の_整備(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[8] ENTITY[7] (海外販路(ENTITY[8]) ∧ の_開拓(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[3])) ∧
+   FACT(SITUATION[2], 促す(EVENT[9], ENTITY[1], GROUP[3])) ∧
+    各種助成制度(ENTITY[11]) ∧
+     の_周知(ENTITY[11], ENTITY[10]) ∧ 進める(EVENT[12], ENTITY[1], ENTITY[10]) ∧ ため(EVENT[12]) = SITUATION[2])
+
+# ::id 90_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － 原発事故 に 見舞わ れ た 福島 の 復興 が 遅れ気味 だ 。
+∃ EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] (
+ 原発事故(ENTITY[3]) ∧
+  見舞わ_た(EVENT[4], _, ENTITY[福島]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+   の_復興(ENTITY[福島], ENTITY[1]) ∧
+    遅れ気味(ENTITY[5]) ∧ past(EVENT[4]) ∧ だ(EVENT[6], ENTITY[1], ENTITY[5]))
+
+# ::id 91_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 風評被害 の 悪影響 は 依然 大きい 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (風評被害(ENTITY[2]) ∧ の_悪影響(ENTITY[2], ENTITY[1]) ∧ ADV_依然(EVENT[3]) ∧ 大きい(EVENT[3], ENTITY[1]))
+
+# ::id 92_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 放射線モニタリング の 徹底 など 、 安全性 の アピール が 重要 に なる だろう 。
+∃ ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_徹底(ENTITY[放射線モニタリング], ENTITY[2]) ∧
+  安全性(ENTITY[3]) ∧
+   の_アピール(ENTITY[3], ENTITY[1]) ∧ など_アピール(ENTITY[2], ENTITY[1]) ∧ MD_だろう(∃ EVENT[4] 重要_に_なる(EVENT[4], ENTITY[1])))
+
+# ::id 93_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 住民 の 帰還 に 合わせ 、 国 と 自治体 が 緊密 に 連携 し て 産業再生 を 果たし たい 」
+∃ ENTITY[1] EVENT[4] EVENT[8] EVENT[11] ENTITY[3] ENTITY[2] GROUP[5] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  住民(ENTITY[3]) ∧
+   の_帰還(ENTITY[3], ENTITY[2]) ∧
+    CONJ_と(∃ ENTITY[6] (国(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[7] (自治体(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+     産業再生(ENTITY[10]) ∧
+      ADV_緊密_に(EVENT[8]) ∧
+       合わせ(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2] ∧
+        CONJ_te(連携する.0_て(EVENT[8], GROUP[5]), 果たし_たい(EVENT[11], ENTITY[1], ENTITY[10])))
+
+# ::id 94_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt － 東北楽天 の 快進撃 は 、 経済 に 好影響 を 及ぼし た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_快進撃(ENTITY[東北楽天], ENTITY[1]) ∧
+  経済(ENTITY[2]) ∧
+   好影響(ENTITY[3]) ∧
+    past(EVENT[4]) ∧ 及ぼし_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 95_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 「 直接効果 は 限定的 とはいえ 、 東北 の 一体感 を 生ん だ 意義 は 大きい 。
+∃ ENTITY[6] SITUATION[5] SITUATION[1] EVENT[4] EVENT[8] EVENT[9] ENTITY[3] ENTITY[7] ENTITY[2] (
+ 直接効果(ENTITY[2]) ∧
+  限定的(ENTITY[3]) ∧
+   FACT(SITUATION[1], xxx(EVENT[4], ENTITY[2], ENTITY[3])) ∧
+    ENTITY[6] = *pro*{ENTITY[3], ENTITY[2]} ∧
+     の_一体感(ENTITY[東北], ENTITY[7]) ∧
+      意義(SITUATION[5], 生ん_だ(EVENT[8], ENTITY[6], ENTITY[7])) ∧
+       past(EVENT[8]) ∧ 大きい(EVENT[9], SITUATION[5]) ∧ とはいえ(EVENT[9]) = SITUATION[1])
+
+# ::id 96_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 観光 や 食品 など 、 東北 に は 素晴らしい 地域資源 が ある 。
+∃ ATTRIB[5] EVENT[6] ENTITY[4] GROUP[1] (
+ CONJ_や(∃ ENTITY[2] (観光(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (食品(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  素晴らしい(ATTRIB[5]) ∧
+   ATTRIBUTE_地域資源(ATTRIB[5], ENTITY[4]) ∧
+    ある(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[東北] ∧ など(EVENT[6]) = GROUP[1])
+
+# ::id 97_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 県境 を 越え た 『 東北ブランド 』 を 確立 し 、 売りだす きっかけ に なっ た 」
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] EVENT[9] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   県境(ENTITY[5]) ∧
+    越え_た(EVENT[6], ENTITY[東北ブランド], ENTITY[5]) ∧
+     きっかけ(SITUATION[2], 確立する.0(EVENT[7], ENTITY[3], ENTITY[東北ブランド]) ∧ 売りだす(EVENT[8], ENTITY[3])) ∧
+      past(EVENT[6]) ∧ past(EVENT[9]) ∧ なっ_た(EVENT[9], ENTITY[1], SITUATION[2]))
+
+# ::id 98_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ＜ もりもと・かずひろ ＞ 東大卒 。
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[もりもと.かずひろ], ENTITY[東大卒]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東大卒])
+
+# ::id 99_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ８４ 年 通産省 （ 現経済産業省 ） 入省 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_８４_年(TIME[2]) ∧
+   namely_-ENTITY-(ENTITY[現経済産業省], ENTITY[通産省]) ∧ 入省(EVENT[3], ENTITY[1], ENTITY[通産省]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 100_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 官房参事官 、 中小企業庁経営支援部長 など を 経 て 、 １３ 年 ６ 月 から 現職 。
+∃ ENTITY[1] EVENT[4] EVENT[7] GROUP[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  is_element_of(ENTITY[官房参事官], GROUP[3]) ∧ is_element_of(ENTITY[中小企業庁経営支援部長], GROUP[3]) ∧
+   など(GROUP[3], ENTITY[2]) ∧
+    CD_１３_年_６_月(ENTITY[5]) ∧
+     現職(ENTITY[6]) ∧
+      CONJ_te(経_て(EVENT[4], ENTITY[1], ENTITY[2]),
+       xxx(EVENT[7], ENTITY[1], ENTITY[6]) ∧ から(EVENT[7]) = ENTITY[5]))
+
+# ::id 101_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt ５２ 歳 。
+∃ EVENT[2] ENTITY[1] (CD_５２_歳(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 102_newswire_00113_K201401010A0F90XX00001;NJ
+# ::snt 兵庫県出身 。
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[兵庫県出身])

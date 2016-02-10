@@ -1,0 +1,1083 @@
+# ::id 1_wikipedia_KYOTO_RLW_00001,1;NJ
+# ::snt 京都 市営 地下鉄 烏丸線
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-京都_市営_地下鉄_烏丸線 / ENTITY
+             :name ( n-2 / name
+                    :op1 "京都_市営_地下鉄_烏丸線")))
+
+# ::id 2_wikipedia_KYOTO_RLW_00001,2;NJ
+# ::snt 烏丸線 （ からすません ） は 、 京都府 京都市 左京区 の 国際会館駅 から 同市 伏見区 の 竹田駅 （ 京都府 ） まで を 結ぶ 京都 市営 地下鉄 の 路線 で ある 。
+( EVENT-6 / で_ある
+      :ARG0 ( ENTITY-烏丸線 / ENTITY
+             :name ( n-7 / name
+                    :op1 "烏丸線")
+             :NAMELY ( ENTITY-からすません / ENTITY
+                    :name ( n-10 / name
+                           :op1 "からすません")))
+      :ARG1 ( ENTITY-1 / 路線
+             :の ( ENTITY-5 / 京都_市営_地下鉄)
+             :ARG0-of ( EVENT-4 / 結ぶ
+                    :ARG1 ( ENTITY-3 / ENTITY
+                           :まで ( ENTITY-竹田駅 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "竹田駅")
+                                  :の ( ENTITY-同市_伏見区 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "同市_伏見区"))
+                                  :NAMELY ( ENTITY-京都府 / ENTITY
+                                         :name ( n-12 / name
+                                                :op1 "京都府"))))
+                    :から ( ENTITY-国際会館駅 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "国際会館駅")
+                           :の ( ENTITY-京都府_京都市_左京区 / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "京都府_京都市_左京区"))))))
+
+# ::id 3_wikipedia_KYOTO_RLW_00001,3;NJ
+# ::snt 京都市 最初 の 市営 地下鉄 路線 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 市営_地下鉄_路線
+             :の ( ENTITY-3 / 京都市_最初)))
+
+# ::id 4_wikipedia_KYOTO_RLW_00001,4;NJ
+# ::snt 北大路 ～ 十条 間 は 烏丸通 の 地下 を 通る 。
+( EVENT-5 / 通る
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / 地下
+             :の ( ENTITY-烏丸通 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "烏丸通")))
+      :LOC ( ENTITY-2 / 間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-北大路 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "北大路"))
+                    :op2 ( ENTITY-十条 / ENTITY
+                           :name ( n-8 / name
+                                  :op1 "十条")))))
+
+# ::id 5_wikipedia_KYOTO_RLW_00001,13;NJ
+# ::snt 現在 は 全列車 が 6 両 編成 だ が 、 ホーム 長 として 、 それ 以上 の 長さ に 対応 できる よう に なっ て いる 駅 が ある 。
+( CONJ-15 / CONJ_が
+      :op1 ( EVENT-4 / だ
+             :ARG0 ENTITY-2
+             :ARG1 ( ENTITY-3 / CD_6_両
+                    :MOD ( mod-16 / 編成))
+             :TMP ( ENTITY-1 / 現在))
+      :op2 ( EVENT-13 / ある
+             :ARG0 ( ENTITY-5 / 駅
+                    :ARG0-of ( EVENT-12 / なっ_て_いる
+                           :ARG1 ( SITUATION-8 / よう
+                                  :THAT ( EVENT-11 / 対応する.0
+                                         :ARG0 ENTITY-5
+                                         :に ( ENTITY-9 / 長さ
+                                                :の ( ENTITY-10 / 以上
+                                                       :namely ( PICK-14 / or
+                                                              :op1 ENTITY-5
+                                                              :op2 ENTITY-7
+                                                              :op3 ENTITY-2
+                                                              :op4 ENTITY-3
+                                                              :op5 ENTITY-1)))))
+                           :として ( ENTITY-7 / ホーム_長)))))
+
+# ::id 6_wikipedia_KYOTO_RLW_00001,14;NJ
+# ::snt 路線 の 特徴
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-1 / 特徴
+             :の ( ENTITY-2 / 路線)))
+
+# ::id 7_wikipedia_KYOTO_RLW_00001,15;NJ
+# ::snt 沿線 に は 大学 が 多い ため 学生 利用 が 多い 。
+( EVENT-6 / 多い
+      :ARG0 ( ENTITY-5 / 学生_利用)
+      :ため ( EVENT-4 / 多い
+             :ARG0 ( ENTITY-3 / 大学)
+             :に ( ENTITY-2 / 沿線)))
+
+# ::id 8_wikipedia_KYOTO_RLW_00001,28;NJ
+# ::snt また 当然 、 京都 観光 に 来 た 観光客 の 利用 も 多い が 、 沿線 周辺 の 主要 な 観光地 は 京都御所 （ 今出川駅 、 丸太町駅 ） や 繁華街 （ 烏丸御池駅 、 四条駅 ） くらい しか ない 。
+( CONJ-18 / CONJ_が
+      :op1 ( EVENT-6 / 多い
+             :ARG0 ( ENTITY-1 / 利用
+                    :の ( ENTITY-2 / 観光客
+                           :ARG0-of ( EVENT-5 / 来_た
+                                  :に ( ENTITY-4 / 京都_観光)
+                                  :MOD ( mod-19 / past))))
+             :MOD ( mod-20 / 当然)) (
+             :op2 ( ENTITY-11 ( ENTITY
+                           :OF ( CONJ-17 / CONJ_や
+                                  :op1 ( GROUP-12 / AND
+                                         :op1 ( GROUP-13 / AND
+                                                :op1 ( ENTITY-今出川駅 / ENTITY
+                                                       :name ( n-22 / name
+                                                              :op1 "今出川駅"))
+                                                :op2 ( ENTITY-丸太町駅 / ENTITY
+                                                       :name ( n-23 / name
+                                                              :op1 "丸太町駅")))
+                                         :op2 ( ENTITY-京都御所 / ENTITY
+                                                :name ( n-21 / name
+                                                       :op1 "京都御所")
+                                                :NAMELY GROUP-13)
+                                         :op3 ENTITY-京都御所)
+                                  :op2 ( GROUP-26 / AND
+                                         :op3 ( ENTITY-15 / ENTITY
+                                                :NAMELY ( GROUP-14 / AND
+                                                       :op1 ( ENTITY-烏丸御池駅 / ENTITY
+                                                              :name ( n-24 / name
+                                                                     :op1 "烏丸御池駅"))
+                                                       :op2 ( ENTITY-四条駅 / ENTITY
+                                                              :name ( n-25 / name
+                                                                     :op1 "四条駅"))))
+                                         :op4 ( ENTITY-27 / 繁華街)
+                                         :op1 ENTITY-28
+                                         :op2 GROUP-14)))) ( EVENT-16 ( ない
+                           :ARG0 ( ENTITY-8 / 観光地
+                                  :の ( ENTITY-9 / 沿線_周辺)
+                                  :ATTRIBUTE ( ATTRIB-10 / 主要_な))
+                           :ARG0 ENTITY-11))))
+
+# ::id 9_wikipedia_KYOTO_RLW_00001,29;NJ
+# ::snt その ため に 主要 観光地 へ は 京都 市営 地下鉄 東西線 に 乗り換える か 、 地下鉄 の 各駅 から 京都 市営 バス ・ 京都 バス など の 路線 バス 利用 と なる こと が 多い 。
+( EVENT-15 / 多い
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-3 / こと
+             :THAT ( CONJ-17 / CONJ_か
+                    :op1 ( EVENT-6 / 乗り換える
+                           :ARG0 ENTITY-1
+                           :に ( ENTITY-京都_市営_地下鉄_東西線 / ENTITY
+                                  :name ( n-19 / name
+                                         :op1 "京都_市営_地下鉄_東西線"))
+                           :へ ( ENTITY-4 / 観光地
+                                  :ATTRIBUTE ( ATTRIB-5 / 主要))) (
+                           :op2 ( ENTITY-7 ( 駅
+                                         :の ( ENTITY-8 / 地下鉄))) ( EVENT-14 ( なる
+                                         :ARG0 ENTITY-1
+                                         :と ( ENTITY-9 / 路線_バス_利用
+                                                :の ( ENTITY-10 / ENTITY
+                                                       :など ( GROUP-11 / AND
+                                                              :op1 ( ENTITY-12 / 京都_市営_バス)
+                                                              :op2 ENTITY-20
+                                                              :MOD ( mod-18 / AND
+                                                                     :op1 ( ENTITY-13 / 京都_バス)
+                                                                     :op2 ENTITY-21))))
+                                         :から ENTITY-7)))))
+      :に ( ENTITY-2 / ため))
+
+# ::id 10_wikipedia_KYOTO_RLW_00001,30;NJ
+# ::snt 運行 形態
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 運行_形態))
+
+# ::id 11_wikipedia_KYOTO_RLW_00001,31;NJ
+# ::snt 線内 折り返し 運転 の ほか に 、 竹田駅 から 近鉄京都線 に 乗り入れ 直通 運転 を 行っ て いる 。
+( EVENT-5 / 行っ_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / 乗り入れ_直通_運転)
+      :に ( ENTITY-近鉄京都線 / ENTITY
+             :name ( n-6 / name
+                    :op1 "近鉄京都線"))
+      :から ( ENTITY-竹田駅 / ENTITY
+             :name ( n-7 / name
+                    :op1 "竹田駅"))
+      :に ( ENTITY-2 / ほか
+             :の ( ENTITY-3 / 線内_折り返し_運転)))
+
+# ::id 12_wikipedia_KYOTO_RLW_00001,32;NJ
+# ::snt 昼間 時間帯 は 近鉄京都線 と ダイヤサイクル を 合わせる ため 7 分 半 ごと に 1 時間 8 本 （ 線内 折り返し 4 本 、 新田辺 直通 普通 2 本 、 奈良 直通 急行 2 本 ） が 運転 さ れる 。
+( EVENT-14 / 運転する.0
+      :ARG1 ( ENTITY-12 / ENTITY ( ENTITY-12 CD_8_本)
+             :MSR ( DEGREE-13 / CD_1_時間)
+             :NAMELY ( GROUP-8 / AND (
+                           :op1 ( ENTITY-9 CD_4_本) ( ENTITY-9 線内_折り返し))
+                    :op2 ENTITY-18
+                    :MOD ( mod-15 / AND (
+                                  :op1 ( ENTITY-10 CD_2_本) ( ENTITY-10 新田辺_直通_普通))
+                           :op2 ENTITY-19)
+                    :MOD ( mod-16 / AND (
+                                  :op1 ( ENTITY-11 CD_2_本) ( ENTITY-11 奈良_直通_急行))
+                           :op2 ENTITY-20)))
+      :に ( ENTITY-6 / ENTITY
+             :OF ( ENTITY-7 / CD_7_分_半))
+      :ため ( EVENT-5 / 合わせる
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-4 / ダイヤサイクル)
+             :と ( ENTITY-近鉄京都線 / ENTITY
+                    :name ( n-17 / name
+                           :op1 "近鉄京都線")))
+      :TPC ( ENTITY-1 / 昼間_時間帯))
+
+# ::id 13_wikipedia_KYOTO_RLW_00001,33;NJ
+# ::snt 全線 が 都心 を 通る 烏丸線 内 は 全線 通し の 運転 のみ で 区間 運転 は ない ため 、 利用者 の 多い 京都 ～ 烏丸御池 間 は 混雑 し 、 両端 の 竹田 及び 国際会館 に 向かう ほど 閑散 と する 。
+( EVENT-25 / 閑散_と_する
+      :ARG0 ( ENTITY-1 / 間
+             :EQUALS ( GROUP-5 / AND
+                    :op1 ( ENTITY-京都 / ENTITY
+                           :name ( n-28 / name
+                                  :op1 "京都"))
+                    :op2 ( ENTITY-烏丸御池 / ENTITY
+                           :name ( n-29 / name
+                                  :op1 "烏丸御池"))
+                    :LOC-of ( EVENT-4 / 多い
+                           :ARG0 ( ENTITY-3 / 利用者))))
+      :ほど ( EVENT-24 / 向かう
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :ARG0-of ( EVENT-19 / 混雑する.0))
+             :に ( ENTITY-21 / CONJ_及び
+                    :op1 ( ENTITY-竹田 / ENTITY
+                           :name ( n-30 / name
+                                  :op1 "竹田"))
+                    :op2 ( ENTITY-国際会館 / ENTITY
+                           :name ( n-31 / name
+                                  :op1 "国際会館"))
+                    :の ( ENTITY-22 / 端)))
+      :ため ( CONJ-27 / CONJ_te (
+                    :op1 ( ENTITY-12 線) ( EVENT-16 ( で
+                                  :ARG0 ENTITY-12
+                                  :ARG1 ( ENTITY-13 / ENTITY
+                                         :OF ( ENTITY-14 / 運転
+                                                :の ( ENTITY-15 / 通し)))
+                                  :LOC ( ENTITY-7 / 烏丸線_内
+                                         :ARG0-of ( EVENT-11 / 通る
+                                                :ARG0 ( ENTITY-9 / 線)
+                                                :ARG1 ( ENTITY-10 / 都心))))))
+             :op2 ( EVENT-18 / ない
+                    :ARG0 ( ENTITY-17 / 区間_運転)
+                    :LOC ENTITY-7)))
+
+# ::id 14_wikipedia_KYOTO_RLW_00001,34;NJ
+# ::snt 平日 昼間 より 土 休日 昼間 の 方 が 利用者 が 多い 。
+( EVENT-8 / 多い
+      :ARG0 ( ENTITY-7 / 利用者)
+      :TMP ( TIME-2 / 方
+             :の ( ENTITY-3 / 昼間
+                    :EQUALS ( GROUP-4 / AND
+                           :op1 ( ENTITY-5 / 土)
+                           :op2 ENTITY-10
+                           :MOD ( mod-9 / AND
+                                  :op1 ( ENTITY-6 / 休日)
+                                  :op2 ENTITY-11))))
+      :より ( ENTITY-1 / 平日_昼間))
+
+# ::id 15_wikipedia_KYOTO_RLW_00001,35;NJ
+# ::snt 線内 折り返し
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 線内_折り返し))
+
+# ::id 16_wikipedia_KYOTO_RLW_00001,36;NJ
+# ::snt 線内 折り返し 列車 は 、 昼間 は 毎時 4 本 運転 さ れる 。
+( EVENT-4 / 運転する.0
+      :ARG1 ( ENTITY-1 / 線内_折り返し_列車)
+      :MSR ( DEGREE-3 / CD_毎_4_本
+             :MOD ( mod-5 / 時))
+      :TMP ( ENTITY-2 / 昼間))
+
+# ::id 17_wikipedia_KYOTO_RLW_00001,37;NJ
+# ::snt 駅 の 行き先 案内 や 方向幕 は 、 単に 「 国際会館 」 「 竹田 」 と 表示 さ れる 。
+( EVENT-6 / 表示する.0
+      :ARG1 ( GROUP-1 / CONJ_や
+             :op1 ( ENTITY-2 / 行き先_案内
+                    :の ( ENTITY-3 / 駅))
+             :op2 ( ENTITY-4 / 方向幕))
+      :ARG2 ( GROUP-5 / AND
+             :op1 ( ENTITY-国際会館 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "国際会館"))
+             :op2 ( ENTITY-竹田 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "竹田")))
+      :MOD ( mod-7 / 単に))
+
+# ::id 18_wikipedia_KYOTO_RLW_00001,38;NJ
+# ::snt 新田辺 直通 普通
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 新田辺_直通_普通))
+
+# ::id 19_wikipedia_KYOTO_RLW_00001,39;NJ
+# ::snt 近鉄京都線 新田辺駅 発着 の 列車 が 、 昼間 は 毎時 2 本 （ 30 分 間隔 ） 運転 さ れる 。
+( EVENT-6 / 運転する.0
+      :ARG1 ( ENTITY-1 / 列車
+             :の ( ENTITY-2 / 近鉄京都線_新田辺駅_発着))
+      :MSR ( DEGREE-5 / CD_毎_2_本
+             :MOD ( mod-7 / 時)
+             :NAMELY ( ENTITY-4 / CD_30_分
+                    :MOD ( mod-8 / 間隔)))
+      :TMP ( ENTITY-3 / 昼間))
+
+# ::id 20_wikipedia_KYOTO_RLW_00001,40;NJ
+# ::snt 方向幕 は 「 普通｜新田辺 」 「 普通｜国際会館 」 で 、 烏丸線 内 で も そのまま の 表示 で ある 。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-3 / で
+             :ARG0 ( ENTITY-1 / 方向幕)
+             :ARG1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-普通 ｜ 新田辺 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "普通 ｜ 新田辺"))
+                    :op2 ( ENTITY-普通 ｜ 国際会館 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "普通 ｜ 国際会館"))))
+      :op2 ( EVENT-7 / で_ある
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-5 / 表示
+                    :の ( ATTRIB-6 / そのまま))
+             :で ( ENTITY-4 / 烏丸線_内)))
+
+# ::id 21_wikipedia_KYOTO_RLW_00001,41;NJ
+# ::snt 早朝 に 1 本 のみ 近鉄 宮津駅 発 国際会館 行き 普通 が 運転 さ れ て いる （ 近鉄 宮津 行き の 列車 は ない ） 。
+( EVENT-8 / 運転する.0_て_いる
+      :ARG1 ( ENTITY-4 / 近鉄_普通
+             :EQUALS ( GROUP-5 / AND
+                    :op1 ( ENTITY-6 / 宮津駅_発)
+                    :op2 ENTITY-10
+                    :MOD ( mod-9 / AND
+                           :op1 ( ENTITY-7 / 国際会館_行き)
+                           :op2 ENTITY-11)))
+      :MSR ( ENTITY-2 / ENTITY
+             :OF ( ENTITY-3 / CD_1_本))
+      :に ( ENTITY-1 / 早朝))
+
+# ::id 22_wikipedia_KYOTO_RLW_00001,42;NJ
+# ::snt 同志社大学 京田辺キャンパス に 近い 興戸駅 は 急行 が 停まら ない の と 烏丸線 直通 普通 が 新田辺 折返 の ため 近鉄 普通 の 運転 間隔 が 7 分 半 ～ 22 分 半 間隔 に 開い て い て 不便 な ため 、 新田辺駅 へ 乗入れる 普通 電車 の 近鉄宮津駅 へ の 延長 の 要望 も ある （ 詳しく は 興戸駅 の 項 を 参照 ） 。
+( EVENT-24 / ある
+      :ARG0 ( ENTITY-19 / 要望
+             :の ( ENTITY-20 / 延長
+                    :へ_の ( ENTITY-近鉄宮津駅 / ENTITY
+                           :name ( n-34 / name
+                                  :op1 "近鉄宮津駅"))
+                    :の ( ENTITY-21 / 普通_電車
+                           :ARG0-of ( EVENT-23 / 乗入れる
+                                  :へ ( ENTITY-新田辺駅 / ENTITY
+                                         :name ( n-35 / name
+                                                :op1 "新田辺駅"))))))
+      :ため ( CONJ-31 / CONJ_te
+             :op1 ( EVENT-17 / 開い_て_い
+                    :ARG0 ( ENTITY-11 / 運転_間隔
+                           :の ( ENTITY-12 / 近鉄_普通))
+                    :に ( ENTITY-13 / 間隔
+                           :EQUALS ( GROUP-14 / AND
+                                  :op1 ( ENTITY-15 / CD_7_分_半)
+                                  :op2 ENTITY-38
+                                  :MOD ( mod-32 / AND
+                                         :op1 ( ENTITY-16 / CD_22_分_半)
+                                         :op2 ENTITY-39)))
+                    :ADV ( ENTITY-3 / ため
+                           :EQUALS ( CONJ-29 / CONJ_と
+                                  :op1 ( GROUP-4 / AND
+                                         :op1 ( ENTITY-6 / 急行)
+                                         :op2 ( ENTITY-5 / の
+                                                :THAT ( EVENT-7 / 停まら
+                                                       :ARG0 ENTITY-6
+                                                       :domain-of ( NEG-28 / NEG)))
+                                         :op3 ENTITY-41)
+                                  :op2 ( GROUP-40 / AND
+                                         :op1 ( ENTITY-9 / 烏丸線_直通_普通)
+                                         :op2 ( ENTITY-8 / の
+                                                :THAT ( EVENT-10 / 折返
+                                                       :ARG0 ENTITY-9
+                                                       :LOC ( ENTITY-新田辺 / ENTITY
+                                                              :name ( n-36 / name
+                                                                     :op1 "新田辺"))))
+                                         :op3 ENTITY-42))))
+             :op2 ( EVENT-18 / 不便_な
+                    :ARG0 ( ENTITY-興戸駅 / ENTITY
+                           :name ( n-33 / name
+                                  :op1 "興戸駅")
+                           :ATTRIBUTE ( ATTRIB-2 / 近い
+                                  :に ( ENTITY-同志社大学_京田辺キャンパス / ENTITY
+                                         :name ( n-37 / name
+                                                :op1 "同志社大学_京田辺キャンパス")))))))
+
+# ::id 23_wikipedia_KYOTO_RLW_00001,43;NJ
+# ::snt 近鉄奈良 直通 急行
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 近鉄奈良_直通_急行))
+
+# ::id 24_wikipedia_KYOTO_RLW_00001,44;NJ
+# ::snt 近鉄奈良駅 発着 の 急行 列車 （ 烏丸線 内 は 各駅 停車 ） が 、 昼間 時間帯 に （ 平日 は 朝 に も ） 毎時 2 本 （ 30 分 間隔 ） 運転 さ れる 。
+( EVENT-6 / 運転する.0
+      :ARG1 ( ENTITY-1 / 急行_列車
+             :の ( ENTITY-2 / 近鉄奈良駅_発着))
+      :MSR ( DEGREE-5 / CD_毎_2_本
+             :MOD ( mod-7 / 時)
+             :NAMELY ( ENTITY-4 / CD_30_分
+                    :MOD ( mod-8 / 間隔)))
+      :に ( ENTITY-3 / 昼間_時間帯))
+
+# ::id 25_wikipedia_KYOTO_RLW_00001,45;NJ
+# ::snt 方向幕 は 「 急行｜奈良 」 「 急行｜京都国際会館 」 で ある が 、 国際会館 行き は 竹田 で 単に 「 国際会館 」 と 表示 を 変更 する （ さ れ ず に 直通 する 場合 も ある ） 。
+( CONJ-8 / CONJ_が
+      :op1 ( EVENT-3 / で_ある
+             :ARG0 ( ENTITY-1 / 方向幕)
+             :ARG1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-急行 ｜ 奈良 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "急行 ｜ 奈良"))
+                    :op2 ( ENTITY-急行 ｜ 京都国際会館 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "急行 ｜ 京都国際会館"))))
+      :op2 ( EVENT-6 / 変更する.0
+             :ARG0 ( ENTITY-4 / 国際会館_行き)
+             :ARG1 ( ENTITY-5 / 表示)
+             :ARG2 ( ENTITY-国際会館 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "国際会館"))
+             :で ( ENTITY-竹田 / ENTITY
+                    :name ( n-13 / name
+                           :op1 "竹田"))
+             :MOD ( mod-9 / 単に)))
+
+# ::id 26_wikipedia_KYOTO_RLW_00001,49;NJ
+# ::snt 注 ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 注))
+
+# ::id 27_wikipedia_KYOTO_RLW_00001,49;NJ
+# ::snt 近鉄線 で は 地下鉄線 と 直通 運転 を 行う 竹田 ～ 新田辺・近鉄奈良 間 のみ で 運行 。
+( EVENT-11 / 運行
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :で ( ENTITY-2 / ENTITY
+             :OF ( CONJ-14 / CONJ_と
+                    :op1 ( GROUP-3 / AND
+                           :op1 ( ENTITY-4 / 地下鉄線)
+                           :op2 ENTITY-19)
+                    :op2 ( GROUP-18 / AND
+                           :op5 ( ENTITY-5 / 間
+                                  :EQUALS ( GROUP-10 / AND
+                                         :op1 ( ENTITY-竹田 / ENTITY
+                                                :name ( n-15 / name
+                                                       :op1 "竹田"))
+                                         :op2 ( ENTITY-新田辺.近鉄奈良 / ENTITY
+                                                :name ( n-16 / name
+                                                       :op1 "新田辺.近鉄奈良"))))
+                           :op1 ( ENTITY-7 / ENTITY
+                                  :namely ( PICK-13 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-近鉄線))
+                           :op2 ( ENTITY-8 / 直通_運転)
+                           :op3 GROUP-10
+                           :op4 ( EVENT-9 / 行う
+                                  :ARG0 ENTITY-7
+                                  :ARG1 ENTITY-8
+                                  :LOC ENTITY-5))))
+      :で ( ENTITY-近鉄線 / ENTITY
+             :name ( n-17 / name
+                    :op1 "近鉄線")))
+
+# ::id 28_wikipedia_KYOTO_RLW_00001,50;NJ
+# ::snt 近鉄線 のみ で の 運行 は なし 。
+( EVENT-3 / なし
+      :ARG0 ( ENTITY-1 / 運行
+             :で_の ( ENTITY-2 / ENTITY
+                    :OF ( ENTITY-近鉄線 / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "近鉄線")))))
+
+# ::id 29_wikipedia_KYOTO_RLW_00001,51;NJ
+# ::snt 烏丸線 内 で の 方向幕 として は 、 国際会館 、 竹田 の 他 に 京都 （ 近鉄 車 は 近鉄京都 行き が ある ため 使用 ） 、 北大路 、 北山 の かつて の 終着駅 、 そして 烏丸御池 行き の もの が ある 。
+( EVENT-10 / ある
+      :ARG0 ( GROUP-5 / CONJ_そして
+             :op1 ( ENTITY-京都 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "京都"))
+             :op2 ( ENTITY-北大路 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "北大路"))
+             :op3 ( GROUP-5 / AND
+                    :op1 ( ATTRIB-7 / かつて)
+                    :op2 ( ENTITY-6 / 終着駅
+                           :の ATTRIB-7
+                           :の ( ENTITY-北山 / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "北山")))
+                    :op3 ENTITY-17)
+             :op4 ( GROUP-16 / AND
+                    :op1 ( ENTITY-9 / 烏丸御池_行き)
+                    :op2 ( ENTITY-8 / もの
+                           :の ENTITY-9)
+                    :op3 ENTITY-18))
+      :に ( ENTITY-3 / 他
+             :の ( GROUP-4 / AND
+                    :op1 ( ENTITY-国際会館 / ENTITY
+                           :name ( n-14 / name
+                                  :op1 "国際会館"))
+                    :op2 ( ENTITY-竹田 / ENTITY
+                           :name ( n-15 / name
+                                  :op1 "竹田"))))
+      :として ( ENTITY-1 / 方向幕
+             :で_の ( ENTITY-2 / 烏丸線_内)))
+
+# ::id 30_wikipedia_KYOTO_RLW_00001,52;NJ
+# ::snt 普段 は 使わ れる こと は ない 烏丸御池 行き の 方向幕 だ が 、 2005 年 5 月 23 日 の 京都駅 で の 発煙 騒ぎ の 際 に 使わ れ た こと が ある （ 地下鉄 の 車両 は 一部 を 除き 、 非常 渡り線 の ある 駅 の 行き先 も 入っ て いる ） 。
+( CONJ-16 / CONJ_が
+      :op1 ( EVENT-9 / だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-3 / 方向幕
+                    :の ( ENTITY-8 / 烏丸御池_行き)
+                    :ARG0-of ( EVENT-7 / ない
+                           :ARG1 ( SITUATION-5 / こと
+                                  :THAT ( EVENT-6 / 使わ
+                                         :ARG1 ENTITY-3))))
+             :ADV ( ENTITY-2 / 普段))
+      :op2 ( EVENT-15 / ある
+             :ARG0 ENTITY-1
+             :ARG1 ( SITUATION-10 / こと
+                    :THAT ( EVENT-14 / 使わ_た
+                           :ARG1 ENTITY-1
+                           :に ( ENTITY-11 / 際
+                                  :の ( ENTITY-12 / 発煙_騒ぎ
+                                         :で_の ( ENTITY-京都駅 / ENTITY
+                                                :name ( n-18 / name
+                                                       :op1 "京都駅"))
+                                         :の ( ENTITY-13 / CD_2005_年_5_月_23_日)))
+                           :MOD ( mod-17 / past)))))
+
+# ::id 31_wikipedia_KYOTO_RLW_00001,57;NJ
+# ::snt 注 ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 注))
+
+# ::id 32_wikipedia_KYOTO_RLW_00001,57;NJ
+# ::snt 両者 とも 近鉄京都線 、 近鉄橿原線 （ 急行 のみ 、 主に 近鉄京都 発着 ） 、 近鉄天理線 （ 急行 のみ 、 運用数 は 稀少 ） 、 近鉄奈良線 （ 主に 普通 、 区間 準急 、 準急 ） で も 運行 さ れ て いる 。
+( ( ENTITY-2 者) / ENTITY-1 ( ENTITY
+             :OF ENTITY-2) ( EVENT-4 ( 運行する.0_て_いる
+                    :ARG1 ENTITY-1
+                    :で ( GROUP-3 / AND
+                           :op1 ( ENTITY-近鉄京都線 / ENTITY
+                                  :name ( n-5 / name
+                                         :op1 "近鉄京都線"))
+                           :op2 ( ENTITY-近鉄橿原線 / ENTITY
+                                  :name ( n-6 / name
+                                         :op1 "近鉄橿原線"))
+                           :op3 ( ENTITY-近鉄天理線 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "近鉄天理線"))
+                           :op4 ( ENTITY-近鉄奈良線 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "近鉄奈良線"))))))
+
+# ::id 33_wikipedia_KYOTO_RLW_00001,58;NJ
+# ::snt 終日 近鉄線 内 のみ 、 もしくは 地下鉄 烏丸線 内 のみ の 運用 も ある 。
+( CONJ-10 / AND
+      :op1 ( CONJ-8 / CONJ_もしくは (
+                    :op1 ( ENTITY-3 ( ENTITY
+                                  :OF ( ENTITY-4 / 近鉄線_内))) ( ENTITY-2 ( 運用
+                                  :LINK ENTITY-3))) (
+                    :op2 / ENTITY-5 ( ENTITY
+                           :OF ( ENTITY-6 / 地下鉄_烏丸線_内)) ( ENTITY-9 ( 運用
+                                  :LINK ENTITY-5))))
+      :op2 ( EVENT-7 / ある
+             :ARG0 ENTITY-2
+             :MSR ( DEGREE-1 / 終日)))
+
+# ::id 34_wikipedia_KYOTO_RLW_00001,59;NJ
+# ::snt 京都駅 で は 烏丸線 、 近鉄線 双方 の ホーム に 乗り入れ て いる 。
+( EVENT-5 / 乗り入れ_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-2 / ホーム
+             :の ( ENTITY-3 / AND
+                    :op1 ( ENTITY-烏丸線 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "烏丸線"))
+                    :op2 ( ENTITY-近鉄線 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "近鉄線"))))
+      :で ( ENTITY-京都駅 / ENTITY
+             :name ( n-8 / name
+                    :op1 "京都駅")))
+
+# ::id 35_wikipedia_KYOTO_RLW_00001,60;NJ
+# ::snt 方向幕 は 京都市 交車 と 同じ 種別 ・ 行き先 に 加え て 、 近鉄線 のみ で 使用 する 「 京都駅 」 、 「 天理駅 」 、 「 橿原神宮前駅 」 、 「 近鉄難波駅 」 、 「 東花園駅 」 、 「 東生駒駅 」 、 「 大和西大寺駅 」 、 「 近鉄奈良駅 」 （ 普通 、 区間 準急 、 準急 、 快速 急行 ） 等 も 入っ て いる 。
+( CONJ-23 / CONJ_te
+      :op1 ( EVENT-8 / 加え_て
+             :に ( ENTITY-2 / AND
+                    :op1 ( ENTITY-6 / 種別)
+                    :op2 ENTITY-37
+                    :MOD ( mod-24 / AND
+                           :op1 ( ENTITY-7 / 行き先)
+                           :op2 ENTITY-38)
+                    :ATTRIBUTE ( ATTRIB-3 / 同じ
+                           :と ( ENTITY-4 / 京都市_交車)))
+             :TPC ( ENTITY-1 / 方向幕))
+      :op2 ( EVENT-21 / 入っ_て_いる
+             :ARG0 ( ENTITY-9 / ENTITY
+                    :等 ( ENTITY-15 / AND
+                           :op1 ( ENTITY-京都駅 / ENTITY
+                                  :name ( n-28 / name
+                                         :op1 "京都駅"))
+                           :op2 ( ENTITY-天理駅 / ENTITY
+                                  :name ( n-29 / name
+                                         :op1 "天理駅"))
+                           :op3 ( ENTITY-橿原神宮前駅 / ENTITY
+                                  :name ( n-30 / name
+                                         :op1 "橿原神宮前駅"))
+                           :op4 ( ENTITY-近鉄難波駅 / ENTITY
+                                  :name ( n-31 / name
+                                         :op1 "近鉄難波駅"))
+                           :op5 ( ENTITY-東花園駅 / ENTITY
+                                  :name ( n-32 / name
+                                         :op1 "東花園駅"))
+                           :op6 ( ENTITY-東生駒駅 / ENTITY
+                                  :name ( n-33 / name
+                                         :op1 "東生駒駅"))
+                           :op7 ( ENTITY-大和西大寺駅 / ENTITY
+                                  :name ( n-34 / name
+                                         :op1 "大和西大寺駅"))
+                           :op8 ( ENTITY-近鉄奈良駅 / ENTITY
+                                  :name ( n-35 / name
+                                         :op1 "近鉄奈良駅"))
+                           :ARG1-of ( EVENT-19 / 使用する.0
+                                  :ARG0 ( PICK-22 / or
+                                         :op1 ENTITY-9
+                                         :op2 ENTITY-1
+                                         :op3 ENTITY-2
+                                         :op4 ENTITY-4)
+                                  :で ( ENTITY-18 / ENTITY
+                                         :OF ( ENTITY-近鉄線 / ENTITY
+                                                :name ( n-36 / name
+                                                       :op1 "近鉄線"))))
+                           :NAMELY ( GROUP-10 / AND
+                                  :op1 ( ENTITY-11 / 普通)
+                                  :op2 ENTITY-39
+                                  :MOD ( mod-25 / AND
+                                         :op1 ( ENTITY-12 / 区間_準急)
+                                         :op2 ENTITY-40)
+                                  :MOD ( mod-26 / AND
+                                         :op1 ( ENTITY-13 / 準急)
+                                         :op2 ENTITY-41)
+                                  :MOD ( mod-27 / AND
+                                         :op1 ( ENTITY-14 / 快速_急行)
+                                         :op2 ENTITY-42))))
+             :TPC ENTITY-1))
+
+# ::id 36_wikipedia_KYOTO_RLW_00001,61;NJ
+# ::snt 歴史
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 歴史))
+
+# ::id 37_wikipedia_KYOTO_RLW_00001,62;NJ
+# ::snt 1981 年 （ 昭和 56 年 ） 5 月 29 日 北大路 ～ 京都 間 が 開業 。
+( EVENT-4 / 開業
+      :ARG0 ( ENTITY-2 / 間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-北大路 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "北大路"))
+                    :op2 ( ENTITY-京都 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "京都"))))
+      :TMP ( TIME-1 / CD_1981_年_ （ 昭和_56_年_ ） 5_月_29_日))
+
+# ::id 38_wikipedia_KYOTO_RLW_00001,63;NJ
+# ::snt 1988 年 （ 昭和 63 年 ） 6 月 11 日 京都 ～ 竹田 間 が 開業 。
+( EVENT-4 / 開業
+      :ARG0 ( ENTITY-2 / 間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-京都 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "京都"))
+                    :op2 ( ENTITY-竹田 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "竹田"))))
+      :TMP ( TIME-1 / CD_1988_年_ （ 昭和_63_年_ ） 6_月_11_日))
+
+# ::id 39_wikipedia_KYOTO_RLW_00001,64;NJ
+# ::snt 1988 年 （ 昭和 63 年 ） 8 月 28 日 近鉄京都線 と 相互 直通 運転 開始 。
+( EVENT-4 / 開始
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / 相互_直通_運転
+             :と ( ENTITY-近鉄京都線 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "近鉄京都線")))
+      :TMP ( TIME-2 / CD_1988_年_ （ 昭和_63_年_ ） 8_月_28_日))
+
+# ::id 40_wikipedia_KYOTO_RLW_00001,65;NJ
+# ::snt 新田辺駅 まで 。
+( EVENT-1 / EVENT
+      :まで ( ENTITY-新田辺駅 / ENTITY
+             :name ( n-2 / name
+                    :op1 "新田辺駅")))
+
+# ::id 41_wikipedia_KYOTO_RLW_00001,66;NJ
+# ::snt 1990 年 （ 平成 2 年 ） 10 月 24 日 北山 ～ 北大路 間 が 開業 。
+( EVENT-4 / 開業
+      :ARG0 ( ENTITY-2 / 間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-北山 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "北山"))
+                    :op2 ( ENTITY-北大路 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "北大路"))))
+      :TMP ( TIME-1 / CD_1990_年_ （ 平成_2_年_ ） 10_月_24_日))
+
+# ::id 42_wikipedia_KYOTO_RLW_00001,67;NJ
+# ::snt 1997 年 （ 平成 9 年 ） 5 月 22 日 京都 市営 地下鉄 東西線 の 開業 に 先立っ て 御池駅 を 烏丸御池駅 に 改称 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-4 / 先立っ_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-3 / 開業
+                    :の ( ENTITY-京都_市営_地下鉄_東西線 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "京都_市営_地下鉄_東西線")))
+             :TMP ( TIME-2 / CD_1997_年_ （ 平成_9_年_ ） 5_月_22_日))
+      :op2 ( EVENT-5 / 改称
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-御池駅 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "御池駅"))
+             :ARG2 ( ENTITY-烏丸御池駅 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "烏丸御池駅"))
+             :TMP TIME-2))
+
+# ::id 43_wikipedia_KYOTO_RLW_00001,68;NJ
+# ::snt 1997 年 （ 平成 9 年 ） 6 月 3 日 国際会館 ～ 北山 間 が 開業 。
+( EVENT-4 / 開業
+      :ARG0 ( ENTITY-2 / 間
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( ENTITY-国際会館 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "国際会館"))
+                    :op2 ( ENTITY-北山 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "北山"))))
+      :TMP ( TIME-1 / CD_1997_年_ （ 平成_9_年_ ） 6_月_3_日))
+
+# ::id 44_wikipedia_KYOTO_RLW_00001,69;NJ
+# ::snt 2000 年 （ 平成 12 年 ） 3 月 15 日 国際会館 ～ 近鉄奈良 間 直通 の 急行 を 運転開始 。
+( EVENT-6 / 運転開始
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / 急行
+             :の ( ENTITY-4 / 間_直通
+                    :EQUALS ( GROUP-5 / AND
+                           :op1 ( ENTITY-国際会館 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "国際会館"))
+                           :op2 ( ENTITY-近鉄奈良 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "近鉄奈良")))))
+      :TMP ( TIME-2 / CD_2000_年_ （ 平成_12_年_ ） 3_月_15_日))
+
+# ::id 45_wikipedia_KYOTO_RLW_00001,70;NJ
+# ::snt 延伸 計画
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 延伸_計画))
+
+# ::id 46_wikipedia_KYOTO_RLW_00001,71;NJ
+# ::snt 油小路通 は 高度 集積 地区 に 指定 さ れ て おり 、 活性化 を 期待 し て 、 竹田駅 から 近鉄京都線 と 分岐 し 横大路 付近 まで の 4.4 km を 延伸 する 計画 が ある 。
+( CONJ-18 / AND
+      :op1 ( EVENT-2 / 指定する.0_て_おり
+             :ARG1 ( ENTITY-油小路通 / ENTITY
+                    :name ( n-15 / name
+                           :op1 "油小路通"))
+             :ARG2 ( ENTITY-1 / 高度_集積_地区))
+      :op2 ( EVENT-11 / ある
+             :ARG0 ( SITUATION-3 / 計画
+                    :THAT ( CONJ-14 / CONJ_te
+                           :op1 ( EVENT-6 / 期待する.0_て
+                                  :ARG0 ( ENTITY-4 / ENTITY
+                                         :namely ( PICK-12 / or
+                                                :op1 ENTITY-1
+                                                :op2 ENTITY-油小路通))
+                                  :ARG1 ( ENTITY-5 / 活性化))
+                           :op2 ( EVENT-10 / 延伸する.0
+                                  :ARG0 ENTITY-4
+                                  :ARG1 ( ENTITY-7 / ENTITY ( ENTITY-7 CD_4.4_km)
+                                         :まで_の ( ENTITY-8 / 横大路_付近)
+                                         :ARG0-of ( EVENT-9 / 分岐する.0
+                                                :と ( ENTITY-近鉄京都線 / ENTITY
+                                                       :name ( n-16 / name
+                                                              :op1 "近鉄京都線"))
+                                                :から ( ENTITY-竹田駅 / ENTITY
+                                                       :name ( n-17 / name
+                                                              :op1 "竹田駅")))))))))
+
+# ::id 47_wikipedia_KYOTO_RLW_00001,72;NJ
+# ::snt ルート は 大手筋 の 下 を 通り 、 京阪本線 の 中書島駅 と 淀駅 の 間 付近 まで と なっ て いる 。
+( EVENT-7 / なっ_て_いる
+      :ARG0 ( ENTITY-1 / ルート
+             :ARG0-of ( EVENT-3 / 通り
+                    :ARG1 ( ENTITY-2 / 下
+                           :の ( ENTITY-大手筋 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "大手筋")))))
+      :まで_と ( ENTITY-4 / 間_付近
+             :の ( ENTITY-5 / CONJ_と
+                    :op1 ( ENTITY-中書島駅 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "中書島駅"))
+                    :op2 ( ENTITY-淀駅 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "淀駅"))
+                    :の ( ENTITY-京阪本線 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "京阪本線")))))
+
+# ::id 48_wikipedia_KYOTO_RLW_00001,73;NJ
+# ::snt 近畿地方 交通審議会 （ 国土交通省 の 諮問機関 ） が 2004 年 10 月 8 日 に 中長期的 に 望ま れる 鉄道 ネットワーク として 、 竹田駅 以南 の 延伸 計画 を 答申 し た 。
+( EVENT-10 / 答申する.0_た
+      :ARG0 ( ENTITY-2 / 近畿地方_交通審議会
+             :NAMELY ( ENTITY-1 / 諮問機関
+                    :の ( ENTITY-国土交通省 / ENTITY
+                           :name ( n-13 / name
+                                  :op1 "国土交通省"))))
+      :ARG1 ( ENTITY-8 / 延伸_計画
+             :の ( ENTITY-9 / 竹田駅_以南))
+      :として ( ENTITY-4 / 鉄道_ネットワーク
+             :ARG1-of ( EVENT-6 / 望ま
+                    :MOD ( mod-11 / 中長期的_に)))
+      :に ( ENTITY-3 / CD_2004_年_10_月_8_日)
+      :MOD ( mod-12 / past))
+
+# ::id 49_wikipedia_KYOTO_RLW_00001,74;NJ
+# ::snt 実は 昔 、 三栖 まで の 事業 免許 を 取得 する 直前 まで 計画 は 進ん で い た の だ が 、 その とき に 伏見 の 酒造家たち が 「 地下鉄 延長 によって 酒造 に 欠かせ ない 地下水 （ 伏水 ） が 出 なく なる 恐れ が ある 」 と 計画 に 猛反発 し た （ なお 奈良電気鉄道 （ 奈良電 ） が 1928 年 に 、 現在 の 近鉄京都線 を 伏見 付近 において 地下線 で 建設 する 予定 で あっ た とき も 、 同様 の 反対 運動 を 起こし て 高架線 に 変更 さ せ た こと が あっ た ） ため と いわ れ て いる 。
+( EVENT-25 / いわ_て_いる
+      :ARG1 ( SITUATION-1 / と
+             :THAT ( EVENT-24 / EVENT
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :ARG1 ( SITUATION-3 / ため
+                           :THAT ( CONJ-31 / CONJ_が
+                                  :op1 ( EVENT-10 / 進ん_で_い_た_の_だ
+                                         :ARG0 ( ENTITY-9 / 計画)
+                                         :まで ( SITUATION-5 / 直前
+                                                :THAT ( EVENT-8 / 取得する.0
+                                                       :ARG0 ENTITY-2
+                                                       :ARG1 ( ENTITY-7 / 事業_免許
+                                                              :まで_の ( ENTITY-三栖 / ENTITY
+                                                                     :name ( n-35 / name
+                                                                            :op1 "三栖")))))
+                                         :TMP ( TIME-4 / 昔)
+                                         :MOD ( mod-32 / past))
+                                  :op2 ( EVENT-14 / 猛反発する.0_た
+                                         :ARG0 ( ENTITY-12 / 酒造家たち
+                                                :の ( ENTITY-伏見 / ENTITY
+                                                       :name ( n-36 / name
+                                                              :op1 "伏見")))
+                                         :に ( ENTITY-13 / 計画)
+                                         :に ( ENTITY-11 / とき)
+                                         :THAT ( EVENT-23 / ある
+                                                :ARG0 ( SITUATION-15 / 恐れ
+                                                       :THAT ( EVENT-22 / 出_なる
+                                                              :ARG0 ( ENTITY-18 / 地下水
+                                                                     :NAMELY ( ENTITY-17 / 伏水)
+                                                                     :ARG0-of ( EVENT-21 / 欠かせ
+                                                                            :に ( ENTITY-20 / 酒造)
+                                                                            :domain-of ( NEG-27 / NEG)))
+                                                              :によって ( ENTITY-16 / 地下鉄_延長)
+                                                              :domain-of ( NEG-29 / NEG))))
+                                         :MOD ( mod-33 / past))))))
+      :MOD ( mod-34 / 実は))
+
+# ::id 50_wikipedia_KYOTO_RLW_00001,75;NJ
+# ::snt 結局 、 近鉄京都線 に 合流 する 形 で 新田辺駅 まで 乗り入れる こと で まとまっ た が 、 後 に 一部 の 電車 は 近鉄奈良駅 まで 直通 する よう に なっ て いる 。
+( CONJ-15 / CONJ_が
+      :op1 ( EVENT-7 / まとまっ_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :で ( SITUATION-2 / こと
+                    :THAT ( EVENT-6 / 乗り入れる
+                           :ARG0 ENTITY-1
+                           :まで ( ENTITY-新田辺駅 / ENTITY
+                                  :name ( n-18 / name
+                                         :op1 "新田辺駅"))
+                           :で ( SITUATION-3 / 形
+                                  :THAT ( EVENT-5 / 合流する.0
+                                         :ARG0 ENTITY-1
+                                         :に ( ENTITY-近鉄京都線 / ENTITY
+                                                :name ( n-19 / name
+                                                       :op1 "近鉄京都線"))))))
+             :MOD ( mod-16 / past)
+             :MOD ( mod-17 / 結局))
+      :op2 ( EVENT-14 / なっ_て_いる
+             :ARG0 ( ENTITY-10 / 電車
+                    :の ( ENTITY-11 / 一部))
+             :ARG1 ( SITUATION-12 / よう
+                    :THAT ( EVENT-13 / 直通する.0
+                           :ARG0 ENTITY-10
+                           :まで ( ENTITY-近鉄奈良駅 / ENTITY
+                                  :name ( n-20 / name
+                                         :op1 "近鉄奈良駅"))))
+             :に ( ENTITY-9 / 後)))
+
+# ::id 51_wikipedia_KYOTO_RLW_00001,76;NJ
+# ::snt また 、 さらに 淀川 を 越え て 南進 し 、 宇治川 南 部 に 計画 さ れ て いる 洛南 新都市 や 松井山手駅 まで 延伸 する 構想 も ある 。
+( EVENT-13 / ある
+      :ARG0 ( SITUATION-1 / 構想
+             :THAT ( EVENT-12 / 延伸する.0
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0
+                           :ARG0-of ( CONJ-18 / CONJ_te
+                                  :op1 ( EVENT-3 / 越え_て
+                                         :ARG1 ( ENTITY-淀川 / ENTITY
+                                                :name ( n-21 / name
+                                                       :op1 "淀川")))
+                                  :op2 ( EVENT-4 / 南進する.0)
+                                  :MOD ( mod-19 / さらに)))
+                    :まで ( ENTITY-6 / CONJ_や
+                           :op1 ( GROUP-10 / AND
+                                  :op1 ( ENTITY-11 / 洛南_新都市)
+                                  :op2 ENTITY-22)
+                           :op2 ( ENTITY-松井山手駅 / ENTITY
+                                  :name ( n-20 / name
+                                         :op1 "松井山手駅")
+                                  :OF GROUP-10)
+                           :ARG1-of ( EVENT-9 / 計画する.0_て_いる
+                                  :に ( ENTITY-8 / 宇治川_南_部))))))
+
+# ::id 52_wikipedia_KYOTO_RLW_00001,77;NJ
+# ::snt 一方 、 北 端 は 岩倉地区 まで 延伸 する 構想 も あっ た が こちら は 実現 の 可能性 は 限り なく 低い 。
+( CONJ-13 / CONJ_が
+      :op1 ( EVENT-5 / あっ_た
+             :ARG0 ( SITUATION-1 / 構想
+                    :THAT ( EVENT-4 / 延伸する.0
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :ARG1 ( ENTITY-3 / 北_端)
+                           :まで ( ENTITY-岩倉地区 / ENTITY
+                                  :name ( n-16 / name
+                                         :op1 "岩倉地区"))))
+             :MOD ( mod-14 / past))
+      :op2 ( EVENT-10 / 低い
+             :ARG0 ( PICK-12 / or
+                    :op1 ENTITY-3
+                    :op2 ENTITY-岩倉地区)
+             :ARG0 ( ENTITY-7 / 可能性
+                    :の ( ENTITY-8 / 実現))
+             :MOD ( mod-15 / なく
+                    :OF ( ENTITY-9 / 限り))))
+
+# ::id 53_wikipedia_KYOTO_RLW_00001,78;NJ
+# ::snt 叡山電鉄 （ 出町柳駅 ～ 岩倉駅（京都府） 間 ） の 利用者 が 減る 懸念 も ある 。
+( EVENT-6 / ある
+      :ARG0 ( SITUATION-1 / 懸念
+             :THAT ( EVENT-5 / 減る
+                    :ARG0 ( ENTITY-2 / 利用者
+                           :の ( ENTITY-叡山電鉄 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "叡山電鉄")
+                                  :NAMELY ( ENTITY-3 / 間
+                                         :EQUALS ( GROUP-4 / AND
+                                                :op1 ( ENTITY-出町柳駅 / ENTITY
+                                                       :name ( n-8 / name
+                                                              :op1 "出町柳駅"))
+                                                :op2 ( ENTITY-岩倉駅 （ 京都府 ） / ENTITY
+                                                       :name ( n-9 / name
+                                                              :op1 "岩倉駅 （ 京都府 ） ")))))))))
+
+# ::id 54_wikipedia_KYOTO_RLW_00001,79;NJ
+# ::snt 駅 一覧
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 駅_一覧))
+
+# ::id 55_wikipedia_KYOTO_RLW_00001,80;NJ
+# ::snt 普通 ・ 急行 ：
+( EVENT-4 / EVENT
+      :LINK ( GROUP-1 / AND
+             :op1 ( ENTITY-2 / 普通)
+             :op2 ENTITY-6
+             :MOD ( mod-5 / AND
+                    :op1 ( ENTITY-3 / 急行)
+                    :op2 ENTITY-7)))
+
+# ::id 56_wikipedia_KYOTO_RLW_00001,80;NJ
+# ::snt 烏丸線 内 は 各駅 に 停車 。
+( EVENT-4 / 停車
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-3 / 駅)
+      :LOC ( ENTITY-2 / 烏丸線_内))
+
+# ::id 57_wikipedia_KYOTO_RLW_00001,81;NJ
+# ::snt 乗り入れ 区間 で ある 竹田 ～ 新田辺 ・ 近鉄奈良 間 の 停車駅 は 近鉄京都線 を 参照 。
+( EVENT-9 / 参照
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-近鉄京都線 / ENTITY
+             :name ( n-10 / name
+                    :op1 "近鉄京都線"))
+      :TPC ( ENTITY-2 / 停車駅
+             :の ( ENTITY-3 / 間
+                    :EQUALS ( GROUP-7 / AND
+                           :op1 ( ENTITY-竹田 / ENTITY
+                                  :name ( n-11 / name
+                                         :op1 "竹田"))
+                           :op2 ( GROUP-8 / AND
+                                  :op1 ( ENTITY-新田辺 / ENTITY
+                                         :name ( n-12 / name
+                                                :op1 "新田辺"))
+                                  :op2 ( ENTITY-近鉄奈良 / ENTITY
+                                         :name ( n-13 / name
+                                                :op1 "近鉄奈良")))
+                           :ARG0-of ( EVENT-6 / で_ある
+                                  :ARG1 ( ENTITY-5 / 乗り入れ_区間))))))
+
+# ::id 58_wikipedia_KYOTO_RLW_00001,82;NJ
+# ::snt （ 1 ） 東西線 の 乗降客 数 を 含み 、 烏丸線 ・ 東西線 相互 間 の 乗り換え 客数 は 含ま ない （ つまり 、 烏丸御池駅 の 改札 を 通過 し た 人 数 で ある ）
+( EVENT-7 / 含ま
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-3 / 含み
+                    :ARG1 ( ENTITY-2 / 乗降客_数
+                           :の ( ENTITY-東西線 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "東西線")))))
+      :ARG1 ( ENTITY-4 / 乗り換え_客数
+             :の ( ENTITY-5 / 相互_間
+                    :EQUALS ( GROUP-6 / AND
+                           :op1 ( ENTITY-烏丸線 / ENTITY
+                                  :name ( n-10 / name
+                                         :op1 "烏丸線"))
+                           :op2 ENTITY-東西線)))
+      :domain-of ( NEG-8 / NEG))
+
+# ::id 59_wikipedia_KYOTO_RLW_00001,83;NJ
+# ::snt （ 2 ） 近鉄京都線 直通 客 を 含む 。
+( EVENT-3 / 含む
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 近鉄京都線_直通_客))
+
+# ::id 60_wikipedia_KYOTO_RLW_00001,84;NJ
+# ::snt （ 3 ） 実際 の 湖西線 分岐駅 は 東海道本線 （ 琵琶湖線 ） 山科駅 だ が 、 全て の 列車 が 京都駅 から 発着 し 実質的 な 起点 と なっ て いる ため この 表 に 掲載 し た 。
+( CONJ-17 / CONJ_が
+      :op1 ( EVENT-4 / だ
+             :ARG0 ( ENTITY-1 / 湖西線_分岐駅
+                    :の ( ENTITY-2 / 実際))
+             :ARG1 ( ENTITY-東海道本線_山科駅 / ENTITY
+                    :name ( n-20 / name
+                           :op1 "東海道本線_山科駅")
+                    :NAMELY ( ENTITY-3 / 琵琶湖線))
+             :MOD ( mod-18 / past))
+      :op2 ( EVENT-14 / 掲載する.0_た
+             :ARG0 ( PICK-15 / or
+                    :op1 ENTITY-3
+                    :op2 ENTITY-1
+                    :op3 ENTITY-東海道本線_山科駅
+                    :op4 ENTITY-2)
+             :ARG1 ( PICK-16 / or
+                    :op1 ENTITY-3
+                    :op2 ENTITY-1
+                    :op3 ENTITY-東海道本線_山科駅
+                    :op4 ENTITY-2)
+             :に ( ENTITY-13 / 表) (
+                    :ため ( ENTITY-8 列車) ( EVENT-12 ( なっ_て_いる
+                                  :ARG0 ( ENTITY-8 / ENTITY
+                                         :ARG0-of ( EVENT-9 / 発着する.0
+                                                :から ( ENTITY-京都駅 / ENTITY
+                                                       :name ( n-21 / name
+                                                              :op1 "京都駅"))))
+                                  :と ( ENTITY-10 / 起点
+                                         :ATTRIBUTE ( ATTRIB-11 / 実質的_な)))))
+             :MOD ( mod-19 / past)))

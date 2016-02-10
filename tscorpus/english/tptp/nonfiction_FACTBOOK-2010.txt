@@ -1,0 +1,4441 @@
+% ::id 1_nonfiction_FACTBOOK-2010;DISEASES;AT1-1;NE
+% ::snt Major infectious diseases
+fof(ex1414051827295,axiom,(
+    ? [G1,E2] :
+      ( major_1(s0,G1)
+      & infectious_diseases_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 2_nonfiction_FACTBOOK-2010;DISEASES;AT2-1;NE
+% ::snt This entry lists major infectious diseases likely to be encountered in countries where the risk of such diseases is assessed to be very high as compared to the United States .
+fof(ex1414051827693,axiom,(
+    ? [X1,X2,X16,X10,G3,G4,A14,S12,S11,E5,E6,E7,E8,E9,S15] :
+      ( entry_1(s0,X2)
+      & ? [G13] :
+          ( diseases_1(s0,G13)
+          & is_risk_of_2(s0,X1,G13) )
+      & choose1(X10,X2)
+      & choose4(X16,X1,G3,X10,X2)
+      & ? [S17] :
+          ( fact_2(s0,S12,S17)
+          & ? [S18] :
+              ( assessed_4(S17,E7,unspecified,X1,S18)
+              & be_3(S18,E6,X1,A14) ) )
+      & countries_1(s0,G3)
+      & major_1(s0,G4)
+      & ? [S19] :
+          ( infectious_diseases_2(s0,G4,S19)
+          & ? [S20] :
+              ( fact_2(S19,S11,S20)
+              & encountered_3(S20,E8,unspecified,X10)
+              & in_2(S20,E8,G3) ) )
+      & is_very_high_as_2(s0,A14,S15)
+      & likely_1(s0,S11)
+      & is_where_2(s0,S12,G3)
+      & ? [S21] :
+          ( fact_2(s0,S15,S21)
+          & compared_3(S21,E5,unspecified,X16)
+          & to_2(S21,E5,united_states) )
+      & lists_3(s0,E9,X2,G4) ) )).
+
+% ::id 3_nonfiction_FACTBOOK-2010;DISEASES;AT2-2;NE
+% ::snt These infectious diseases represent risks to US government personnel traveling to the specified country for a period of less than three years .
+fof(ex1414051828078,axiom,(
+    ? [X1,G2,X3,G4,G5,G6,E7,E8] :
+      ( specified_1(s0,X1)
+      & country_1(s0,X1)
+      & infectious_1(s0,G2)
+      & diseases_1(s0,G2)
+      & ? [X9] :
+          ( is_than_2(s0,X9,G4)
+          & is_period_of_2(s0,X3,X9) )
+      & risks_1(s0,G6)
+      & three_1(s0,G4)
+      & years_1(s0,G4)
+      & us__1(s0,G5)
+      & traveling_2(s0,E7,G5)
+      & to_2(s0,E7,X1)
+      & for_2(s0,E7,X3)
+      & government_personnel_1(s0,G5)
+      & represent_3(s0,E8,G2,G6)
+      & to_2(s0,E8,G5) ) )).
+
+% ::id 4_nonfiction_FACTBOOK-2010;DISEASES;AT2-3;NE
+% ::snt The degree of risk is assessed by considering the foreign nature of these infectious diseases , their severity , and the probability of being affected by the diseases present .
+ERROR: Line 16 Char 67 Character "c" continuing with "nstxxx>xxx<_cnstxxx"
+
+% ::id 5_nonfiction_FACTBOOK-2010;DISEASES;AT2-4;NE
+% ::snt The diseases listed do not necessarily represent the total disease burden experienced by the local population .
+fof(ex1414051828871,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( local_1(s0,X1)
+      & population_1(s0,X1)
+      & total_1(s0,X2)
+      & experienced_3(s0,E5,X1,X2)
+      & disease_burden_1(s0,X2)
+      & listed_3(s0,E4,unspecified,G3)
+      & diseases_1(s0,G3)
+      & ? [E6] :
+          ( necessarily_1(s0,E6)
+          & do_represent_3(s0,E6,G3,X2) ) ) )).
+
+% ::id 6_nonfiction_FACTBOOK-2010;DISEASES;AT3-1;NE
+% ::snt The risk to an individual traveler varies considerably by the specific location , visit duration , type of activities , type of accommodations , time of year , and other factors .
+fof(ex1414051829259,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( individual_1(s0,X1)
+      & traveler_1(s0,X1)
+      & is_risk_to_2(s0,X3,X1)
+      & specific_1(s0,X2)
+      & location_1(s0,X2)
+      & is_of_2(s0,X2,G4)
+      & ? [X6] :
+          ( visit_duration_1(s0,X6)
+          & is_of_2(s0,X6,G4) )
+      & ? [X7,G8] :
+          ( is_type_of_2(s0,X7,G8)
+          & activities_1(s0,G8)
+          & is_of_2(s0,X7,G4) )
+      & ? [X9,G10] :
+          ( is_type_of_2(s0,X9,G10)
+          & accommodations_1(s0,G10)
+          & is_of_2(s0,X9,G4) )
+      & ? [X11,T12] :
+          ( is_time_of_2(s0,X11,T12)
+          & year_1(s0,T12)
+          & is_of_2(s0,X11,G4) )
+      & ? [G13] :
+          ( factors_1(s0,G13)
+          & is_of_2(s0,G13,G4) )
+      & considerably_1(s0,E5)
+      & varies_2(s0,E5,X3)
+      & by_2(s0,E5,G4) ) )).
+
+% ::id 7_nonfiction_FACTBOOK-2010;DISEASES;AT3-2;NE
+% ::snt Consultation with a travel medicine physician is needed to evaluate individual risk and recommend appropriate preventive measures such as vaccines .
+fof(ex1414051829640,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7,E8] :
+      ( travel_medicine_physician_1(s0,X1)
+      & is_consultation_with_2(s0,X3,X1)
+      & individual_1(s0,X2)
+      & risk_1(s0,X2)
+      & appropriate_1(s0,G5)
+      & preventive_measures_1(s0,G5)
+      & vaccines_1(s0,G4)
+      & ? [X9] :
+          ( is_as_2(s0,X9,G4)
+          & G5 = X9 )
+      & ? [S10] :
+          ( needed_4(s0,E8,unspecified,X3,S10)
+          & evaluate_3(S10,E6,X3,X2)
+          & recommend_3(S10,E7,X3,G5) ) ) )).
+
+% ::id 8_nonfiction_FACTBOOK-2010;DISEASES;AT3-3;NE
+% ::snt Diseases are organized into the following six exposure categories shown in italics and listed in typical descending order of risk .
+fof(ex1414051830022,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,G7,E8] :
+      ( risk_1(s0,X1)
+      & typical_1(s0,X2)
+      & descending_1(s0,X2)
+      & is_order_of_2(s0,X2,X1)
+      & italics_1(s0,G3)
+      & six_1(s0,G4)
+      & following_1(s0,G4)
+      & shown_3(s0,E5,unspecified,G4)
+      & in_2(s0,E5,G3)
+      & listed_3(s0,E6,unspecified,G4)
+      & in_2(s0,E6,X2)
+      & exposure_categories_1(s0,G4)
+      & diseases_1(s0,G7)
+      & organized_3(s0,E8,unspecified,G7)
+      & into_2(s0,E8,G4) ) )).
+
+% ::id 9_nonfiction_FACTBOOK-2010;DISEASES;AT3-4;NE
+% ::snt Note :
+fof(ex1414051830382,axiom,(
+    ? [X1,E2] :
+      ( note_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 10_nonfiction_FACTBOOK-2010;DISEASES;AT3-5;NE
+% ::snt The sequence of exposure categories listed in individual country entries may vary according to local conditions .
+fof(ex1414051830754,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( is_sequence_of_2(s0,X1,G3)
+      & individual_1(s0,G2)
+      & country_entries_1(s0,G2)
+      & listed_3(s0,E4,unspecified,G3)
+      & in_2(s0,E4,G2)
+      & exposure_categories_1(s0,G3)
+      & ? [G5,E6,E7] :
+          ( local_1(s0,G5)
+          & conditions_1(s0,G5)
+          & according_2(s0,E6,X1)
+          & to_2(s0,E6,G5)
+          & vary_2(s0,E7,X1) ) ) )).
+
+% ::id 11_nonfiction_FACTBOOK-2010;DISEASES;AT3-6;NE
+% ::snt food or waterborne diseases acquired through eating or drinking on the local economy :
+fof(ex1414051831136,axiom,(
+    ? [X1,G2,G3,E4,E5,E6,E7,S8] :
+      ( local_1(s0,X1)
+      & economy_1(s0,X1)
+      & acquired_3(s0,E6,unspecified,G3)
+      & through_2(s0,E6,S8)
+      & ? [G9] :
+          ( food_diseases_1(s0,G9)
+          & is_of_2(s0,G9,G2) )
+      & ? [G10] :
+          ( waterborne_1(s0,G10)
+          & diseases_1(s0,G10)
+          & is_of_2(s0,G10,G2) )
+      & G3 = G2
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & eating_2(S11,E4,G3)
+          & on_2(S11,E4,X1)
+          & drinking_2(S11,E5,G3)
+          & on_2(S11,E5,X1) )
+      & xxx_1(s0,E7)
+      & link_2(s0,E7,G3) ) )).
+
+% ::id 12_nonfiction_FACTBOOK-2010;DISEASES;AT4-1;NE
+% ::snt Hepatitis A -
+fof(ex1414051831499,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,hepatitis_a) ) )).
+
+% ::id 13_nonfiction_FACTBOOK-2010;DISEASES;AT4-2;NE
+% ::snt viral disease that interferes with the functioning of the liver ;
+fof(ex1414051831875,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( liver_1(s0,X1)
+      & is_functioning_of_2(s0,X2,X1)
+      & viral_1(s0,X3)
+      & interferes_2(s0,E4,X3)
+      & with_2(s0,E4,X2)
+      & disease_1(s0,X3)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 14_nonfiction_FACTBOOK-2010;DISEASES;AT4-3;NE
+% ::snt spread through consumption of food or water contaminated with fecal matter , principally in areas of poor sanitation ;
+fof(ex1414051832255,axiom,(
+    ? [X9,X1,X2,X3,G4,G5,G6,E7,E8] :
+      ( fecal_1(s0,X1)
+      & matter_1(s0,X1)
+      & is_consumption_of_2(s0,X3,G5)
+      & poor_1(s0,X2)
+      & sanitation_1(s0,X2)
+      & contaminated_3(s0,E7,unspecified,G5)
+      & with_2(s0,E7,X1)
+      & ? [X10] :
+          ( food_1(s0,X10)
+          & is_of_2(s0,X10,G4) )
+      & ? [X11] :
+          ( water_1(s0,X11)
+          & is_of_2(s0,X11,G4) )
+      & G5 = G4
+      & is_areas_of_2(s0,G6,X2)
+      & spread_3(s0,E8,unspecified,X9)
+      & through_2(s0,E8,X3)
+      & principally_in_2(s0,E8,G6) ) )).
+
+% ::id 15_nonfiction_FACTBOOK-2010;DISEASES;AT4-4;NE
+% ::snt victims exhibit fever , jaundice , and diarrhea ;
+fof(ex1414051832625,axiom,(
+    ? [G1,G2,E3] :
+      ( victims_1(s0,G2)
+      & ? [X4] :
+          ( fever_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5] :
+          ( jaundice_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [X6] :
+          ( diarrhea_1(s0,X6)
+          & is_of_2(s0,X6,G1) )
+      & exhibit_3(s0,E3,G2,G1) ) )).
+
+% ::id 16_nonfiction_FACTBOOK-2010;DISEASES;AT4-5;NE
+% ::snt 15 % of victims will experience prolonged symptoms over 6 - 9 months ;
+ERROR: Line 5 Char 6 Token "?" continuing with "G3, G4, E5]:(
+"
+
+% ::id 17_nonfiction_FACTBOOK-2010;DISEASES;AT4-6;NE
+% ::snt vaccine available .
+fof(ex1414051833352,axiom,(
+    ? [X1,A3,E2] :
+      ( vaccine_1(s0,X1)
+      & available_1(s0,A3)
+      & is_3(s0,E2,X1,A3) ) )).
+
+% ::id 18_nonfiction_FACTBOOK-2010;DISEASES;AT4-7;NE
+% ::snt Hepatitis E -
+fof(ex1414051833705,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,hepatitis_e) ) )).
+
+% ::id 19_nonfiction_FACTBOOK-2010;DISEASES;AT4-8;NE
+% ::snt water-borne viral disease that interferes with the functioning of the liver ;
+fof(ex1414051834079,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( liver_1(s0,X1)
+      & is_functioning_of_2(s0,X2,X1)
+      & water_borne_1(s0,X3)
+      & interferes_2(s0,E4,X3)
+      & with_2(s0,E4,X2)
+      & viral_disease_1(s0,X3)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 20_nonfiction_FACTBOOK-2010;DISEASES;AT4-9;NE
+% ::snt most commonly spread through fecal contamination of drinking water ;
+fof(ex1414051834455,axiom,(
+    ? [X4,X1,X2,E3] :
+      ( drinking_1(s0,X1)
+      & water_1(s0,X1)
+      & fecal_1(s0,X2)
+      & is_contamination_of_2(s0,X2,X1)
+      & most_commonly_1(s0,E3)
+      & spread_3(s0,E3,unspecified,X4)
+      & through_2(s0,E3,X2) ) )).
+
+% ::id 21_nonfiction_FACTBOOK-2010;DISEASES;AT4-10;NE
+% ::snt victims exhibit jaundice , fatigue , abdominal pain , and dark colored urine .
+fof(ex1414051834823,axiom,(
+    ? [G1,G2,E3] :
+      ( victims_1(s0,G2)
+      & ? [X4] :
+          ( jaundice_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5] :
+          ( fatigue_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [X6] :
+          ( abdominal_1(s0,X6)
+          & pain_1(s0,X6)
+          & is_of_2(s0,X6,G1) )
+      & ? [X7] :
+          ( dark_colored_1(s0,X7)
+          & urine_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & exhibit_3(s0,E3,G2,G1) ) )).
+
+% ::id 22_nonfiction_FACTBOOK-2010;DISEASES;AT5-1;NE
+% ::snt Typhoid fever -
+fof(ex1414051835181,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,typhoid_fever) ) )).
+
+% ::id 23_nonfiction_FACTBOOK-2010;DISEASES;AT5-2;NE
+% ::snt bacterial disease spread through contact with food or water contaminated by fecal matter or sewage ;
+fof(ex1414051835565,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,E8] :
+      ( is_contact_with_2(s0,X1,G5)
+      & spread_3(s0,E7,unspecified,X2)
+      & through_2(s0,E7,X1)
+      & bacterial_disease_1(s0,X2)
+      & ? [X9] :
+          ( fecal_1(s0,X9)
+          & matter_1(s0,X9)
+          & is_of_2(s0,X9,G3) )
+      & ? [X10] :
+          ( sewage_1(s0,X10)
+          & is_of_2(s0,X10,G3) )
+      & contaminated_3(s0,E6,G3,G5)
+      & ? [X11] :
+          ( food_1(s0,X11)
+          & is_of_2(s0,X11,G4) )
+      & ? [X12] :
+          ( water_1(s0,X12)
+          & is_of_2(s0,X12,G4) )
+      & G5 = G4
+      & xxx_1(s0,E8)
+      & link_2(s0,E8,X2) ) )).
+
+% ::id 24_nonfiction_FACTBOOK-2010;DISEASES;AT5-3;NE
+% ::snt victims exhibit sustained high fevers ;
+fof(ex1414051835928,axiom,(
+    ? [G1,G2,E3] :
+      ( victims_1(s0,G2)
+      & sustained_1(s0,G1)
+      & high_fevers_1(s0,G1)
+      & exhibit_3(s0,E3,G2,G1) ) )).
+
+% ::id 25_nonfiction_FACTBOOK-2010;DISEASES;AT5-4;NE
+% ::snt left untreated , mortality rates can reach 20 % .
+ERROR: Line 9 Char 16 Token "reach_3" continuing with "s0, E6, G1, G5)))))"
+
+% ::id 26_nonfiction_FACTBOOK-2010;DISEASES;AT5-5;NE
+% ::snt vectorborne diseases acquired through the bite of an infected arthropod :
+fof(ex1414051836671,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( infected_1(s0,X1)
+      & arthropod_1(s0,X1)
+      & is_bite_of_2(s0,X2,X1)
+      & vectorborne_1(s0,G3)
+      & acquired_3(s0,E4,unspecified,G3)
+      & through_2(s0,E4,X2)
+      & diseases_1(s0,G3)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,G3) ) )).
+
+% ::id 27_nonfiction_FACTBOOK-2010;DISEASES;AT6-1;NE
+% ::snt Malaria -
+fof(ex1414051837030,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,malaria) ) )).
+
+% ::id 28_nonfiction_FACTBOOK-2010;DISEASES;AT6-2;NE
+% ::snt caused by single-cell parasitic protozoa Plasmodium ;
+fof(ex1414051837395,axiom,(
+    ? [X3,X1,E2] :
+      ( single_cell_1(s0,X1)
+      & parasitic_protozoa_plasmodium_1(s0,X1)
+      & caused_3(s0,E2,X1,X3) ) )).
+
+% ::id 29_nonfiction_FACTBOOK-2010;DISEASES;AT6-3;NE
+% ::snt transmitted to humans via the bite of the female Anopheles mosquito ;
+fof(ex1414051837767,axiom,(
+    ? [X1,X2,X5,G3,E4] :
+      ( female_anopheles_mosquito_1(s0,X1)
+      & is_bite_of_2(s0,X2,X1)
+      & humans_1(s0,G3)
+      & transmitted_3(s0,E4,unspecified,X5)
+      & to_2(s0,E4,G3)
+      & via_2(s0,E4,X2) ) )).
+
+% ::id 30_nonfiction_FACTBOOK-2010;DISEASES;AT6-4;NE
+% ::snt parasites multiply in the liver attacking red blood cells resulting in cycles of fever , chills , and sweats accompanied by anemia ;
+fof(ex1414051838156,axiom,(
+    ? [X1,G2,G3,G4,G5,E6,E7,E8] :
+      ( liver_1(s0,X1)
+      & parasites_1(s0,G5)
+      & red_1(s0,G2)
+      & blood_cells_1(s0,G2)
+      & ? [X9] :
+          ( fever_1(s0,X9)
+          & is_of_2(s0,X9,G3) )
+      & ? [G10] :
+          ( chills_1(s0,G10)
+          & is_of_2(s0,G10,G3) )
+      & ? [X11,G12,E13] :
+          ( anemia_1(s0,X11)
+          & accompanied_3(s0,E13,X11,G12)
+          & sweats_1(s0,G12)
+          & is_of_2(s0,G12,G3) )
+      & is_cycles_of_2(s0,G4,G3)
+      & attacking_3(s0,E6,G5,G2)
+      & resulting_2(s0,E7,G5)
+      & in_2(s0,E7,G4)
+      & multiply_2(s0,E8,G5)
+      & in_2(s0,E8,X1) ) )).
+
+% ::id 31_nonfiction_FACTBOOK-2010;DISEASES;AT6-5;NE
+% ::snt death due to damage to vital organs and interruption of blood supply to the brain ;
+fof(ex1414051838533,axiom,(
+    ? [X1,X2,G3,A6,E4,E5] :
+      ( brain_1(s0,X1)
+      & death_1(s0,X2)
+      & ? [G7] :
+          ( vital_1(s0,G7)
+          & organs_1(s0,G7)
+          & is_of_2(s0,G7,G3) )
+      & ? [X8,X9] :
+          ( is_blood_supply_to_2(s0,X8,X1)
+          & is_interruption_of_2(s0,X9,X8)
+          & is_of_2(s0,X9,G3) )
+      & ? [S10] :
+          ( due_2(s0,A6,S10)
+          & damage_1(S10,E4)
+          & to_2(S10,E4,G3) )
+      & is_3(s0,E5,X2,A6) ) )).
+
+% ::id 32_nonfiction_FACTBOOK-2010;DISEASES;AT6-6;NE
+% ::snt endemic in 100 , mostly tropical , countries with 90 % of cases and the majority of 1.5 - 2.5 million estimated annual deaths occurring in sub-Saharan Africa .
+ERROR: Line 10 Char 16 Token "is_of_2" continuing with "s0, G10, G4)) & is_"
+
+% ::id 33_nonfiction_FACTBOOK-2010;DISEASES;AT7-1;NE
+% ::snt Dengue fever -
+fof(ex1414051839279,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,dengue_fever) ) )).
+
+% ::id 34_nonfiction_FACTBOOK-2010;DISEASES;AT7-2;NE
+% ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments ;
+fof(ex1414051839649,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( mosquito_borne_1(s0,X1)
+      & viral_1(s0,X1)
+      & associated_3(s0,E3,unspecified,X1)
+      & with_2(s0,E3,G2)
+      & disease_1(s0,X1)
+      & urban_1(s0,G2)
+      & environments_1(s0,G2)
+      & X1 = aedes_aegypti
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 35_nonfiction_FACTBOOK-2010;DISEASES;AT7-3;NE
+% ::snt manifests as sudden onset of fever and severe headache ;
+fof(ex1414051840020,axiom,(
+    ? [X4,X1,G2,E3] :
+      ( sudden_1(s0,X1)
+      & is_onset_of_2(s0,X1,G2)
+      & ? [X5] :
+          ( fever_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( severe_1(s0,X6)
+          & headache_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & manifests_2(s0,E3,X4)
+      & as_2(s0,E3,X1) ) )).
+
+% ::id 36_nonfiction_FACTBOOK-2010;DISEASES;AT7-4;NE
+% ::snt occasionally produces shock and hemorrhage leading to death in 5 % of cases .
+ERROR: Line 6 Char 15 Token "leading_2" continuing with "s0, E6, G5) & to_2("
+
+% ::id 37_nonfiction_FACTBOOK-2010;DISEASES;AT8-1;NE
+% ::snt Yellow fever -
+fof(ex1414051840791,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,yellow_fever) ) )).
+
+% ::id 38_nonfiction_FACTBOOK-2010;DISEASES;AT8-2;NE
+% ::snt mosquito-borne viral disease ;
+fof(ex1414051841149,axiom,(
+    ? [X1,E2] :
+      ( mosquito_borne_1(s0,X1)
+      & viral_disease_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 39_nonfiction_FACTBOOK-2010;DISEASES;AT8-3;NE
+% ::snt severity ranges from influenza-like symptoms to severe hepatitis and hemorrhagic fever ;
+fof(ex1414051841522,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( severity_1(s0,X1)
+      & influenza_like_1(s0,G3)
+      & symptoms_1(s0,G3)
+      & ? [X5] :
+          ( severe_1(s0,X5)
+          & hepatitis_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( hemorrhagic_1(s0,X6)
+          & fever_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ranges_2(s0,E4,X1)
+      & from_2(s0,E4,G3)
+      & to_2(s0,E4,G2) ) )).
+
+% ::id 40_nonfiction_FACTBOOK-2010;DISEASES;AT8-4;NE
+% ::snt occurs only in tropical South America and sub-Saharan Africa , where most cases are reported ;
+fof(ex1414051841914,axiom,(
+    ? [X5,G1,G2,E3,E4] :
+      ( ? [G6] :
+          ( cases_1(s0,G6)
+          & reported_3(s0,E3,unspecified,G6) )
+      & is_of_2(s0,tropical_south_america,G1)
+      & is_of_2(s0,sub_saharan_africa,G1)
+      & G2 = G1
+      & is_where_2(s0,E3,G2)
+      & ? [X7] :
+          ( is_of_2(s0,X7,G2)
+          & occurs_2(s0,E4,X5)
+          & in_2(s0,E4,X7) ) ) )).
+
+% ::id 41_nonfiction_FACTBOOK-2010;DISEASES;AT8-5;NE
+% ::snt fatality rate is less than 20 % .
+ERROR: Line 5 Char 6 Token "?" continuing with "X4]:(is_than_2(s0, "
+
+% ::id 42_nonfiction_FACTBOOK-2010;DISEASES;AT9-1;NE
+% ::snt Japanese Encephalitis -
+fof(ex1414051842635,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,japanese_encephalitis) ) )).
+
+% ::id 43_nonfiction_FACTBOOK-2010;DISEASES;AT9-2;NE
+% ::snt mosquito-borne -LRB- Culex tritaeniorhynchus -RRB- viral disease associated with rural areas in Asia ;
+fof(ex1414051843011,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( mosquito_borne_1(s0,X1)
+      & viral_1(s0,X1)
+      & associated_3(s0,E3,unspecified,X1)
+      & with_2(s0,E3,G2)
+      & disease_1(s0,X1)
+      & rural_1(s0,G2)
+      & is_areas_in_2(s0,G2,asia)
+      & X1 = culex_tritaeniorhynchus
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 44_nonfiction_FACTBOOK-2010;DISEASES;AT9-3;NE
+% ::snt acute encephalitis can progress to paralysis , coma , and death ;
+fof(ex1414051843378,axiom,(
+    ? [X1] :
+      ( acute_1(s0,X1)
+      & encephalitis_1(s0,X1)
+      & ? [G2,E3] :
+          ( ? [X4] :
+              ( paralysis_1(s0,X4)
+              & is_of_2(s0,X4,G2) )
+          & ? [X5] :
+              ( coma_1(s0,X5)
+              & is_of_2(s0,X5,G2) )
+          & ? [X6] :
+              ( death_1(s0,X6)
+              & is_of_2(s0,X6,G2) )
+          & progress_2(s0,E3,X1)
+          & to_2(s0,E3,G2) ) ) )).
+
+% ::id 45_nonfiction_FACTBOOK-2010;DISEASES;AT9-4;NE
+% ::snt fatality rates 30 % .
+ERROR: Line 5 Char 5 Token "." continuing with "
+"
+
+% ::id 46_nonfiction_FACTBOOK-2010;DISEASES;AT10-1;NE
+% ::snt African Trypanosomiasis -
+fof(ex1414051844097,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,african_trypanosomiasis) ) )).
+
+% ::id 47_nonfiction_FACTBOOK-2010;DISEASES;AT10-2;NE
+% ::snt caused by the parasitic protozoa Trypanosoma ;
+fof(ex1414051844475,axiom,(
+    ? [X1,X3,E2] :
+      ( parasitic_1(s0,X1)
+      & protozoa_trypanosoma_1(s0,X1)
+      & caused_3(s0,E2,X1,X3) ) )).
+
+% ::id 48_nonfiction_FACTBOOK-2010;DISEASES;AT10-3;NE
+% ::snt transmitted to humans via the bite of bloodsucking Tsetse flies ;
+fof(ex1414051844850,axiom,(
+    ? [X1,X2,X5,G3,E4] :
+      ( bloodsucking_tsetse_flies_1(s0,X1)
+      & is_bite_of_2(s0,X2,X1)
+      & humans_1(s0,G3)
+      & transmitted_3(s0,E4,unspecified,X5)
+      & to_2(s0,E4,G3)
+      & via_2(s0,E4,X2) ) )).
+
+% ::id 49_nonfiction_FACTBOOK-2010;DISEASES;AT10-4;NE
+% ::snt infection leads to malaise and irregular fevers and , in advanced cases when the parasites invade the central nervous system , coma and death ;
+fof(ex1414051845242,axiom,(
+    ? [X1,G2,X3,G4,E5] :
+      ( central_1(s0,X1)
+      & nervous_system_1(s0,X1)
+      & parasites_1(s0,G2)
+      & infection_1(s0,X3)
+      & ? [G6] :
+          ( ? [X7] :
+              ( malaise_1(s0,X7)
+              & is_of_2(s0,X7,G6) )
+          & ? [G8] :
+              ( irregular_1(s0,G8)
+              & fevers_1(s0,G8)
+              & is_of_2(s0,G8,G6) )
+          & is_of_2(s0,G6,G4) )
+      & ? [G9,G10,G11,E12,S13] :
+          ( advanced_1(s0,G9)
+          & is_cases_when_2(s0,G9,S13)
+          & is_in_2(s0,G11,G9)
+          & ? [X14] :
+              ( coma_1(s0,X14)
+              & is_of_2(s0,X14,G10) )
+          & ? [X15] :
+              ( death_1(s0,X15)
+              & is_of_2(s0,X15,G10) )
+          & G11 = G10
+          & ? [S16] :
+              ( fact_2(s0,S13,S16)
+              & invade_3(S16,E12,G2,X1) )
+          & is_of_2(s0,G11,G4) )
+      & leads_2(s0,E5,X3)
+      & to_2(s0,E5,G4) ) )).
+
+% ::id 50_nonfiction_FACTBOOK-2010;DISEASES;AT10-5;NE
+% ::snt endemic in 36 countries of sub-Saharan Africa ;
+fof(ex1414051845613,axiom,(
+    ? [G1,A3,E2] :
+      ( predicate__36_1(s0,G1)
+      & is_countries_of_2(s0,G1,sub_saharan_africa)
+      & is_endemic_in_2(s0,A3,G1)
+      & xxx_3(s0,E2,unspecified,A3) ) )).
+
+% ::id 51_nonfiction_FACTBOOK-2010;DISEASES;AT10-6;NE
+% ::snt cattle and wild animals act as reservoir hosts for the parasites .
+fof(ex1414051845985,axiom,(
+    ? [G1,G2,G3,E4] :
+      ( parasites_1(s0,G1)
+      & ? [G5] :
+          ( cattle_1(s0,G5)
+          & is_of_2(s0,G5,G3) )
+      & ? [G6] :
+          ( wild_1(s0,G6)
+          & animals_1(s0,G6)
+          & is_of_2(s0,G6,G3) )
+      & is_reservoir_hosts_for_2(s0,G2,G1)
+      & act_2(s0,E4,G3)
+      & as_2(s0,E4,G2) ) )).
+
+% ::id 52_nonfiction_FACTBOOK-2010;DISEASES;AT11-1;NE
+% ::snt Cutaneous Leishmaniasis -
+fof(ex1414051846341,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,cutaneous_leishmaniasis) ) )).
+
+% ::id 53_nonfiction_FACTBOOK-2010;DISEASES;AT11-2;NE
+% ::snt caused by the parasitic protozoa leishmania ;
+fof(ex1414051846707,axiom,(
+    ? [X1,X3,E2] :
+      ( parasitic_1(s0,X1)
+      & protozoa_leishmania_1(s0,X1)
+      & caused_3(s0,E2,X1,X3) ) )).
+
+% ::id 54_nonfiction_FACTBOOK-2010;DISEASES;AT11-3;NE
+% ::snt transmitted to humans via the bite of sandflies ;
+fof(ex1414051847073,axiom,(
+    ? [X1,G2,X5,G3,E4] :
+      ( is_bite_of_2(s0,X1,G2)
+      & sandflies_1(s0,G2)
+      & humans_1(s0,G3)
+      & transmitted_3(s0,E4,unspecified,X5)
+      & to_2(s0,E4,G3)
+      & via_2(s0,E4,X1) ) )).
+
+% ::id 55_nonfiction_FACTBOOK-2010;DISEASES;AT11-4;NE
+% ::snt results in skin lesions that may become chronic ;
+fof(ex1414051847447,axiom,(
+    ? [X3,G1,E2] :
+      ( ? [A5,E4] :
+          ( chronic_1(s0,A5)
+          & become_3(s0,E4,G1,A5) )
+      & skin_lesions_1(s0,G1)
+      & results_2(s0,E2,X3)
+      & in_2(s0,E2,G1) ) )).
+
+% ::id 56_nonfiction_FACTBOOK-2010;DISEASES;AT11-5;NE
+% ::snt endemic in 88 countries ;
+fof(ex1414051847808,axiom,(
+    ? [G1,A3,E2] :
+      ( predicate__88_1(s0,G1)
+      & countries_1(s0,G1)
+      & is_endemic_in_2(s0,A3,G1)
+      & xxx_3(s0,E2,unspecified,A3) ) )).
+
+% ::id 57_nonfiction_FACTBOOK-2010;DISEASES;AT11-6;NE
+% ::snt 90 % of cases occur in Iran , Afghanistan , Syria , Saudi Arabia , Brazil , and Peru ;
+ERROR: Line 5 Char 12 Token "is_of_2" continuing with "s0, iran, G2) & is_"
+
+% ::id 58_nonfiction_FACTBOOK-2010;DISEASES;AT11-7;NE
+% ::snt wild and domesticated animals as well as humans can act as reservoirs of infection .
+fof(ex1414051848558,axiom,(
+    ? [G1,G2,G3] :
+      ( humans_1(s0,G1)
+      & is_as_well_as_2(s0,G3,G1)
+      & ? [G4] :
+          ( wild_1(s0,G4)
+          & animals_1(s0,G4)
+          & is_of_2(s0,G4,G2) )
+      & ? [G5] :
+          ( domesticated_1(s0,G5)
+          & animals_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & G3 = G2
+      & ? [X6,G7,E8] :
+          ( infection_1(s0,X6)
+          & is_reservoirs_of_2(s0,G7,X6)
+          & act_2(s0,E8,G3)
+          & as_2(s0,E8,G7) ) ) )).
+
+% ::id 59_nonfiction_FACTBOOK-2010;DISEASES;AT12-1;NE
+% ::snt Plague -
+fof(ex1414051848914,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,plague) ) )).
+
+% ::id 60_nonfiction_FACTBOOK-2010;DISEASES;AT12-2;NE
+% ::snt bacterial disease transmitted by fleas normally associated with rats ;
+fof(ex1414051849294,axiom,(
+    ? [X1,G2,G3,E4,E5,E6] :
+      ( bacterial_1(s0,X1)
+      & transmitted_3(s0,E5,G3,X1)
+      & disease_1(s0,X1)
+      & rats_1(s0,G2)
+      & associated_3(s0,E4,unspecified,G3)
+      & with_2(s0,E4,G2)
+      & fleas_1(s0,G3)
+      & normally_1(s0,E4)
+      & xxx_1(s0,E6)
+      & link_2(s0,E6,X1) ) )).
+
+% ::id 61_nonfiction_FACTBOOK-2010;DISEASES;AT12-3;NE
+% ::snt person-to-person airborne transmission also possible ;
+fof(ex1414051849662,axiom,(
+    ? [X1,A3,E2] :
+      ( person_to_person_1(s0,X1)
+      & airborne_transmission_1(s0,X1)
+      & possible_1(s0,A3)
+      & is_also_3(s0,E2,X1,A3) ) )).
+
+% ::id 62_nonfiction_FACTBOOK-2010;DISEASES;AT12-4;NE
+% ::snt recent plague epidemics occurred in areas of Asia , Africa , and South America associated with rural areas or small towns and villages ;
+fof(ex1414051850044,axiom,(
+    ? [G1,G2,G3,G4,E5,E6] :
+      ( recent_1(s0,G4)
+      & plague_epidemics_1(s0,G4)
+      & is_of_2(s0,asia,G2)
+      & is_of_2(s0,africa,G2)
+      & is_of_2(s0,south_america,G2)
+      & ? [G7] :
+          ( rural_1(s0,G7)
+          & areas_1(s0,G7)
+          & is_of_2(s0,G7,G1) )
+      & ? [G8] :
+          ( ? [G9] :
+              ( small_1(s0,G9)
+              & towns_1(s0,G9)
+              & is_of_2(s0,G9,G8) )
+          & ? [G10] :
+              ( villages_1(s0,G10)
+              & is_of_2(s0,G10,G8) )
+          & is_of_2(s0,G8,G1) )
+      & associated_3(s0,E5,unspecified,G3)
+      & with_2(s0,E5,G1)
+      & is_areas_of_2(s0,G3,G2)
+      & is_before_2(s0,E6,e0)
+      & occurred_2(s0,E6,G4)
+      & in_2(s0,E6,G3) ) )).
+
+% ::id 63_nonfiction_FACTBOOK-2010;DISEASES;AT12-5;NE
+% ::snt manifests as fever , headache , and painfully swollen lymph nodes ;
+fof(ex1414051850413,axiom,(
+    ? [X3,G1,E2] :
+      ( ? [X4] :
+          ( fever_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5] :
+          ( headache_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [G6] :
+          ( painfully_1(s0,G6)
+          & swollen_lymph_nodes_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & manifests_2(s0,E2,X3)
+      & as_2(s0,E2,G1) ) )).
+
+% ::id 64_nonfiction_FACTBOOK-2010;DISEASES;AT12-6;NE
+% ::snt disease progresses rapidly and without antibiotic treatment leads to pneumonic form with a death rate in excess of 50 % .
+ERROR: Line 9 Char 18 Token "rapidly_1" continuing with "s0, E7) &
+"
+
+% ::id 65_nonfiction_FACTBOOK-2010;DISEASES;AT13-1;NE
+% ::snt Crimean-Congo hemorrhagic fever -
+fof(ex1414051851154,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,crimean_congo_hemorrhagic_fever) ) )).
+
+% ::id 66_nonfiction_FACTBOOK-2010;DISEASES;AT13-2;NE
+% ::snt tick-borne viral disease ;
+fof(ex1414051851514,axiom,(
+    ? [X1,E2] :
+      ( tick_borne_1(s0,X1)
+      & viral_disease_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 67_nonfiction_FACTBOOK-2010;DISEASES;AT13-3;NE
+% ::snt infection may also result from exposure to infected animal blood or tissue ;
+fof(ex1414051851907,axiom,(
+    ? [X1] :
+      ( infection_1(s0,X1)
+      & ? [X2,G3,E4] :
+          ( is_exposure_to_2(s0,X2,G3)
+          & ? [X5] :
+              ( infected_1(s0,X5)
+              & animal_blood_1(s0,X5)
+              & is_of_2(s0,X5,G3) )
+          & ? [X6] :
+              ( tissue_infected_animal_1(s0,X6)
+              & is_of_2(s0,X6,G3) )
+          & also_result_2(s0,E4,X1)
+          & from_2(s0,E4,X2) ) ) )).
+
+% ::id 68_nonfiction_FACTBOOK-2010;DISEASES;AT13-4;NE
+% ::snt geographic distribution includes Africa , Asia , the Middle East , and Eastern Europe ;
+fof(ex1414051852271,axiom,(
+    ? [X1,G2,E3] :
+      ( geographic_1(s0,X1)
+      & distribution_1(s0,X1)
+      & is_of_2(s0,africa,G2)
+      & is_of_2(s0,asia,G2)
+      & is_of_2(s0,middle_east,G2)
+      & is_of_2(s0,eastern_europe,G2)
+      & includes_3(s0,E3,X1,G2) ) )).
+
+% ::id 69_nonfiction_FACTBOOK-2010;DISEASES;AT13-5;NE
+% ::snt sudden onset of fever , headache , and muscle aches followed by hemorrhaging in the bowels , urine , nose , and gums ;
+fof(ex1414051852652,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,X7,X8,G9,E10] :
+      ( urine_1(s0,X1)
+      & nose_1(s0,X2)
+      & bowels_1(s0,G3)
+      & gums_1(s0,G4)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,G4,G5)
+      & G6 = G5
+      & sudden_1(s0,X8)
+      & is_onset_of_2(s0,X8,G9)
+      & is_hemorrhaging_in_2(s0,X7,G6)
+      & ? [X11] :
+          ( fever_1(s0,X11)
+          & is_of_2(s0,X11,G9) )
+      & ? [X12] :
+          ( headache_1(s0,X12)
+          & is_of_2(s0,X12,G9) )
+      & ? [G13] :
+          ( muscle_aches_1(s0,G13)
+          & is_of_2(s0,G13,G9) )
+      & is_followed_2(s0,E10,X8)
+      & by_2(s0,E10,X7) ) )).
+
+% ::id 70_nonfiction_FACTBOOK-2010;DISEASES;AT13-6;NE
+% ::snt mortality rate is approximately 30 % .
+ERROR: Line 5 Char 9 Token "is_3" continuing with "s0, E3, X1, G2))
+"
+
+% ::id 71_nonfiction_FACTBOOK-2010;DISEASES;AT14-1;NE
+% ::snt Rift Valley fever -
+fof(ex1414051853369,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,rift_valley_fever) ) )).
+
+% ::id 72_nonfiction_FACTBOOK-2010;DISEASES;AT14-2;NE
+% ::snt viral disease affecting domesticated animals and humans ;
+fof(ex1414051853738,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( viral_1(s0,X1)
+      & affecting_3(s0,E3,X1,G2)
+      & disease_1(s0,X1)
+      & ? [G5] :
+          ( domesticated_1(s0,G5)
+          & animals_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G6] :
+          ( humans_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 73_nonfiction_FACTBOOK-2010;DISEASES;AT14-3;NE
+% ::snt transmission is by mosquito and other biting insects ;
+fof(ex1414051854102,axiom,(
+    ? [X1,G2,E3] :
+      ( transmission_1(s0,X1)
+      & ? [X4] :
+          ( mosquito_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [G5] :
+          ( biting_1(s0,G5)
+          & insects_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & is_2(s0,E3,X1)
+      & by_2(s0,E3,G2) ) )).
+
+% ::id 74_nonfiction_FACTBOOK-2010;DISEASES;AT14-4;NE
+% ::snt infection may also occur through handling of infected meat or contact with blood ;
+fof(ex1414051854473,axiom,(
+    ? [X1] :
+      ( infection_1(s0,X1)
+      & ? [X2,G3,E4] :
+          ( is_handling_of_2(s0,X2,G3)
+          & ? [X5] :
+              ( infected_1(s0,X5)
+              & meat_1(s0,X5)
+              & is_of_2(s0,X5,G3) )
+          & ? [X6,X7] :
+              ( blood_1(s0,X6)
+              & is_contact_with_2(s0,X7,X6)
+              & is_of_2(s0,X7,G3) )
+          & also_occur_2(s0,E4,X1)
+          & through_2(s0,E4,X2) ) ) )).
+
+% ::id 75_nonfiction_FACTBOOK-2010;DISEASES;AT14-5;NE
+% ::snt geographic distribution includes eastern and southern Africa where cattle and sheep are raised ;
+fof(ex1414051854856,axiom,(
+    ? [X1,G2,G3,G4,E5,E6] :
+      ( geographic_1(s0,X1)
+      & distribution_1(s0,X1)
+      & ? [G7] :
+          ( cattle_1(s0,G7)
+          & is_of_2(s0,G7,G2) )
+      & ? [G8] :
+          ( sheep_1(s0,G8)
+          & is_of_2(s0,G8,G2) )
+      & raised_3(s0,E5,unspecified,G2)
+      & ? [X9] :
+          ( eastern_1(s0,X9)
+          & is_of_2(s0,X9,G3) )
+      & is_of_2(s0,southern_africa,G3)
+      & G4 = G3
+      & is_where_2(s0,E5,G4)
+      & includes_3(s0,E6,X1,G4) ) )).
+
+% ::id 76_nonfiction_FACTBOOK-2010;DISEASES;AT14-6;NE
+% ::snt symptoms are generally mild with fever and some liver abnormalities ,
+fof(ex1414051855226,axiom,(
+    ? [G1,G2,A4,E3] :
+      ( symptoms_1(s0,G2)
+      & ? [X5] :
+          ( fever_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [G6] :
+          ( liver_abnormalities_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & generally_mild_1(s0,A4)
+      & are_3(s0,E3,G2,A4)
+      & with_2(s0,E3,G1) ) )).
+
+% ::id 77_nonfiction_FACTBOOK-2010;DISEASES;AT14-7;NE
+% ::snt but the disease may progress to hemorrhagic fever , encephalitis , or ocular disease ;
+fof(ex1414051855595,axiom,(
+    ? [X1] :
+      ( disease_1(s0,X1)
+      & ? [G2,E3] :
+          ( ? [X4] :
+              ( hemorrhagic_1(s0,X4)
+              & fever_1(s0,X4)
+              & is_of_2(s0,X4,G2) )
+          & ? [X5] :
+              ( encephalitis_1(s0,X5)
+              & is_of_2(s0,X5,G2) )
+          & ? [X6] :
+              ( ocular_1(s0,X6)
+              & disease_1(s0,X6)
+              & is_of_2(s0,X6,G2) )
+          & progress_2(s0,E3,X1)
+          & to_2(s0,E3,G2) ) ) )).
+
+% ::id 78_nonfiction_FACTBOOK-2010;DISEASES;AT14-8;NE
+% ::snt fatality rates are low at about 1 % of cases .
+ERROR: Line 6 Char 17 Token "is_low_at_2" continuing with "s0, A5, G2) & are_3"
+
+% ::id 79_nonfiction_FACTBOOK-2010;DISEASES;AT15-1;NE
+% ::snt Chikungunya -
+fof(ex1414051856318,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,chikungunya) ) )).
+
+% ::id 80_nonfiction_FACTBOOK-2010;DISEASES;AT15-2;NE
+% ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments , similar to Dengue Fever ;
+fof(ex1414051856700,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( mosquito_borne_1(s0,X1)
+      & viral_1(s0,X1)
+      & associated_3(s0,E3,unspecified,X1)
+      & with_2(s0,E3,G2)
+      & is_similar_to_2(s0,X1,dengue_fever)
+      & disease_1(s0,X1)
+      & urban_1(s0,G2)
+      & environments_1(s0,G2)
+      & X1 = aedes_aegypti
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 81_nonfiction_FACTBOOK-2010;DISEASES;AT15-3;NE
+% ::snt characterized by sudden onset of fever , rash , and severe joint pain usually lasting 3 - 7 days ,
+fof(ex1414051857079,axiom,(
+    ? [X6,X1,G2,G3,E4,E5] :
+      ( sudden_1(s0,X1)
+      & lasting_3(s0,E4,X1,G2)
+      & is_onset_of_2(s0,X1,G3)
+      & ? [X7] :
+          ( fever_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & ? [X8] :
+          ( rash_1(s0,X8)
+          & is_of_2(s0,X8,G3) )
+      & ? [X9] :
+          ( severe_1(s0,X9)
+          & joint_pain_1(s0,X9)
+          & is_of_2(s0,X9,G3) )
+      & predicate__3_7_1(s0,G2)
+      & days_1(s0,G2)
+      & usually_1(s0,E4)
+      & characterized_3(s0,E5,X1,X6) ) )).
+
+% ::id 82_nonfiction_FACTBOOK-2010;DISEASES;AT15-4;NE
+% ::snt some cases result in persistent arthritis .
+fof(ex1414051857444,axiom,(
+    ? [X1,G2,E3] :
+      ( persistent_1(s0,X1)
+      & arthritis_1(s0,X1)
+      & cases_1(s0,G2)
+      & result_2(s0,E3,G2)
+      & in_2(s0,E3,X1) ) )).
+
+% ::id 83_nonfiction_FACTBOOK-2010;DISEASES;AT15-5;NE
+% ::snt water contact diseases acquired through swimming or wading in freshwater lakes , streams , and rivers :
+fof(ex1414051857837,axiom,(
+    ? [G1,G2,E3,E4,E5,S6] :
+      ( water_contact_diseases_1(s0,G2)
+      & ? [G7] :
+          ( freshwater_lakes_1(s0,G7)
+          & is_of_2(s0,G7,G1) )
+      & ? [G8] :
+          ( streams_1(s0,G8)
+          & is_of_2(s0,G8,G1) )
+      & ? [G9] :
+          ( rivers_1(s0,G9)
+          & is_of_2(s0,G9,G1) )
+      & ? [S10] :
+          ( fact_2(s0,S6,S10)
+          & swimming_2(S10,E3,G2)
+          & in_2(S10,E3,G1)
+          & wading_2(S10,E4,G2)
+          & in_2(S10,E4,G1) )
+      & acquired_3(s0,E5,unspecified,G2)
+      & through_2(s0,E5,S6) ) )).
+
+% ::id 84_nonfiction_FACTBOOK-2010;DISEASES;AT16-1;NE
+% ::snt Leptospirosis -
+fof(ex1414051858196,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,leptospirosis) ) )).
+
+% ::id 85_nonfiction_FACTBOOK-2010;DISEASES;AT16-2;NE
+% ::snt bacterial disease that affects animals and humans ;
+fof(ex1414051858567,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( bacterial_1(s0,X1)
+      & affects_3(s0,E3,X1,G2)
+      & disease_1(s0,X1)
+      & ? [G5] :
+          ( animals_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G6] :
+          ( humans_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 86_nonfiction_FACTBOOK-2010;DISEASES;AT16-3;NE
+% ::snt infection occurs through contact with water , food , or soil contaminated by animal urine ;
+fof(ex1414051858959,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7] :
+      ( infection_1(s0,X3)
+      & animal_urine_1(s0,X1)
+      & is_contact_with_2(s0,X2,G5)
+      & contaminated_3(s0,E6,X1,G5)
+      & ? [X8] :
+          ( water_1(s0,X8)
+          & is_of_2(s0,X8,G4) )
+      & ? [X9] :
+          ( food_1(s0,X9)
+          & is_of_2(s0,X9,G4) )
+      & ? [X10] :
+          ( soil_1(s0,X10)
+          & is_of_2(s0,X10,G4) )
+      & G5 = G4
+      & occurs_2(s0,E7,X3)
+      & through_2(s0,E7,X2) ) )).
+
+% ::id 87_nonfiction_FACTBOOK-2010;DISEASES;AT16-4;NE
+% ::snt symptoms include high fever , severe headache , vomiting , jaundice , and diarrhea ;
+fof(ex1414051859332,axiom,(
+    ? [G1,G2,E3] :
+      ( symptoms_1(s0,G2)
+      & ? [X4] :
+          ( high_1(s0,X4)
+          & fever_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5] :
+          ( severe_1(s0,X5)
+          & headache_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [X6] :
+          ( vomiting_1(s0,X6)
+          & is_of_2(s0,X6,G1) )
+      & ? [X7] :
+          ( jaundice_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & ? [X8] :
+          ( diarrhea_1(s0,X8)
+          & is_of_2(s0,X8,G1) )
+      & include_3(s0,E3,G2,G1) ) )).
+
+% ::id 88_nonfiction_FACTBOOK-2010;DISEASES;AT16-5;NE
+% ::snt untreated , the disease can result in kidney damage , liver failure , meningitis , or respiratory distress ;
+fof(ex1414051859714,axiom,(
+    ? [X1] :
+      ( disease_1(s0,X1)
+      & ! [E2] :
+          ( untreated_3(s0,E2,unspecified,X1)
+          & ? [G3,E4] :
+              ( ? [X5] :
+                  ( kidney_damage_1(s0,X5)
+                  & is_of_2(s0,X5,G3) )
+              & ? [X6] :
+                  ( liver_failure_1(s0,X6)
+                  & is_of_2(s0,X6,G3) )
+              & ? [X7] :
+                  ( meningitis_1(s0,X7)
+                  & is_of_2(s0,X7,G3) )
+              & ? [X8] :
+                  ( respiratory_1(s0,X8)
+                  & distress_1(s0,X8)
+                  & is_of_2(s0,X8,G3) )
+              & result_2(s0,E4,X1)
+              & in_2(s0,E4,G3) ) ) ) )).
+
+% ::id 89_nonfiction_FACTBOOK-2010;DISEASES;AT16-6;NE
+% ::snt fatality rates are low
+fof(ex1414051860076,axiom,(
+    ? [G1,A3,E2] :
+      ( fatality_rates_1(s0,G1)
+      & low_1(s0,A3)
+      & are_3(s0,E2,G1,A3) ) )).
+
+% ::id 90_nonfiction_FACTBOOK-2010;DISEASES;AT16-7;NE
+% ::snt but left untreated recovery can take months .
+fof(ex1414051860457,axiom,(
+    ? [X1] :
+      ( recovery_1(s0,X1)
+      & ! [X3,A4,E2] :
+          ( ( choose1(X3,X1)
+            & untreated_1(s0,A4) )
+         => ( left_3(s0,E2,X3,A4)
+            & ? [G5,E6] :
+                ( months_1(s0,G5)
+                & take_3(s0,E6,X1,G5) ) ) ) ) )).
+
+% ::id 91_nonfiction_FACTBOOK-2010;DISEASES;AT17-1;NE
+% ::snt Schistosomiasis -
+fof(ex1414051860817,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,schistosomiasis) ) )).
+
+% ::id 92_nonfiction_FACTBOOK-2010;DISEASES;AT17-2;NE
+% ::snt caused by parasitic trematode flatworm Schistosoma ;
+fof(ex1414051861181,axiom,(
+    ? [X3,X1,E2] :
+      ( parasitic_1(s0,X1)
+      & trematode_flatworm_schistosoma_1(s0,X1)
+      & caused_3(s0,E2,X1,X3) ) )).
+
+% ::id 93_nonfiction_FACTBOOK-2010;DISEASES;AT17-3;NE
+% ::snt fresh water snails act as intermediate host and release larval form of parasite that penetrates the skin of people exposed to contaminated water ;
+fof(ex1414051861574,axiom,(
+    ? [X1,X2,G3,E4,X5,X6,X7,G8,E9,E10,E11] :
+      ( contaminated_1(s0,X1)
+      & water_1(s0,X1)
+      & is_skin_of_2(s0,X2,G3)
+      & exposed_3(s0,E4,unspecified,G3)
+      & to_2(s0,E4,X1)
+      & people_1(s0,G3)
+      & intermediate_1(s0,X5)
+      & host_1(s0,X5)
+      & penetrates_3(s0,E10,X6,X2)
+      & parasite_1(s0,X6)
+      & larval_1(s0,X7)
+      & is_form_of_2(s0,X7,X6)
+      & fresh_1(s0,G8)
+      & water_snails_1(s0,G8)
+      & act_2(s0,E9,G8)
+      & as_2(s0,E9,X5)
+      & release_3(s0,E11,G8,X7) ) )).
+
+% ::id 94_nonfiction_FACTBOOK-2010;DISEASES;AT17-4;NE
+% ::snt worms mature and reproduce in the blood vessels , liver , kidneys , and intestines releasing eggs , which become trapped in tissues triggering an immune response ;
+fof(ex1414051861972,axiom,(
+    ? [X1,G2,G3,G4,G5,G6,X7,G8,G9,G10,E11,E12,E13,E14,E15] :
+      ( liver_1(s0,X1)
+      & blood_vessels_1(s0,G2)
+      & kidneys_1(s0,G3)
+      & intestines_1(s0,G4)
+      & is_of_2(s0,G2,G5)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & G6 = G5
+      & immune_1(s0,X7)
+      & response_1(s0,X7)
+      & worms_1(s0,G10)
+      & tissues_1(s0,G8)
+      & triggering_3(s0,E11,G9,X7)
+      & become_trapped_3(s0,E12,unspecified,G9)
+      & in_2(s0,E12,G8)
+      & eggs_1(s0,G9)
+      & releasing_3(s0,E13,G10,G9)
+      & mature_2(s0,E14,G10)
+      & in_2(s0,E14,G6)
+      & reproduce_2(s0,E15,G10)
+      & in_2(s0,E15,G6) ) )).
+
+% ::id 95_nonfiction_FACTBOOK-2010;DISEASES;AT17-5;NE
+% ::snt may manifest as either urinary or intestinal disease resulting in decreased work or learning capacity ;
+fof(ex1414051862352,axiom,(
+    ? [X1,G2,G3,E4,E5] :
+      ( ? [X6] :
+          ( urinary_1(s0,X6)
+          & disease_1(s0,X6)
+          & is_of_2(s0,X6,G3) )
+      & ? [X7] :
+          ( intestinal_1(s0,X7)
+          & disease_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & ? [X8] :
+          ( decreased_1(s0,X8)
+          & work_1(s0,X8)
+          & is_of_2(s0,X8,G2) )
+      & ? [X9] :
+          ( learning_1(s0,X9)
+          & capacity_1(s0,X9)
+          & is_of_2(s0,X9,G2) )
+      & resulting_2(s0,E4,X1)
+      & in_2(s0,E4,G2)
+      & manifest_2(s0,E5,X1)
+      & as_2(s0,E5,G3) ) )).
+
+% ::id 96_nonfiction_FACTBOOK-2010;DISEASES;AT17-6;NE
+% ::snt mortality , while generally low , may occur in advanced cases usually due to bladder cancer ;
+fof(ex1414051862722,axiom,(
+    ? [X1,A2] :
+      ( is_mortality_while_2(s0,X1,A2)
+      & generally_low_1(s0,A2)
+      & ? [X3,G4,E5] :
+          ( bladder_cancer_1(s0,X3)
+          & advanced_1(s0,G4)
+          & cases_1(s0,G4)
+          & is_usually_due_to_2(s0,X1,X3)
+          & occur_2(s0,E5,X1)
+          & in_2(s0,E5,G4) ) ) )).
+
+% ::id 97_nonfiction_FACTBOOK-2010;DISEASES;AT17-7;NE
+% ::snt endemic in 74 developing countries with 80 % of infected people living in sub-Saharan Africa ;
+ERROR: Line 8 Char 23 Token "is_endemic_with_2" continuing with "s0, A6, G2) & is_en"
+
+% ::id 98_nonfiction_FACTBOOK-2010;DISEASES;AT17-8;NE
+% ::snt humans act as the reservoir for this parasite .
+fof(ex1414051863464,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( parasite_1(s0,X1)
+      & is_reservoir_for_2(s0,X2,X1)
+      & humans_1(s0,G3)
+      & act_2(s0,E4,G3)
+      & as_2(s0,E4,X2) ) )).
+
+% ::id 99_nonfiction_FACTBOOK-2010;DISEASES;AT17-9;NE
+% ::snt aerosolized dust or soil contact disease acquired through inhalation of aerosols contaminated with rodent urine :
+fof(ex1414051863850,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,E8] :
+      ( rodent_1(s0,X1)
+      & urine_1(s0,X1)
+      & is_inhalation_of_2(s0,X2,G3)
+      & contaminated_3(s0,E6,unspecified,G3)
+      & with_2(s0,E6,X1)
+      & aerosols_1(s0,G3)
+      & acquired_3(s0,E7,unspecified,G5)
+      & through_2(s0,E7,X2)
+      & ? [X9] :
+          ( aerosolized_1(s0,X9)
+          & dust_contact_disease_1(s0,X9)
+          & is_of_2(s0,X9,G4) )
+      & ? [X10] :
+          ( soil_contact_disease_1(s0,X10)
+          & is_of_2(s0,X10,G4) )
+      & G5 = G4
+      & xxx_1(s0,E8)
+      & link_2(s0,E8,G5) ) )).
+
+% ::id 100_nonfiction_FACTBOOK-2010;DISEASES;AT18-1;NE
+% ::snt Lassa fever -
+fof(ex1414051864210,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,lassa_fever) ) )).
+
+% ::id 101_nonfiction_FACTBOOK-2010;DISEASES;AT18-2;NE
+% ::snt viral disease carried by rats of the genus Mastomys ;
+fof(ex1414051864584,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( viral_1(s0,X1)
+      & carried_3(s0,E3,G2,X1)
+      & disease_1(s0,X1)
+      & is_rats_of_2(s0,G2,genus_mastomys)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 102_nonfiction_FACTBOOK-2010;DISEASES;AT18-3;NE
+% ::snt endemic in portions of West Africa ;
+fof(ex1414051864947,axiom,(
+    ? [G1,A3,E2] :
+      ( is_portions_of_2(s0,G1,west_africa)
+      & is_endemic_in_2(s0,A3,G1)
+      & xxx_3(s0,E2,unspecified,A3) ) )).
+
+% ::id 103_nonfiction_FACTBOOK-2010;DISEASES;AT18-4;NE
+% ::snt infection occurs through direct contact with or consumption of food contaminated by rodent urine or fecal matter containing virus particles ;
+fof(ex1414051865357,axiom,(
+    ? [X1,G2,E3] :
+      ( infection_1(s0,X1)
+      & ? [X4,X5,G6,G7,G8,E9,E10] :
+          ( contaminated_3(s0,E10,G8,X4)
+          & food_1(s0,X4)
+          & direct_1(s0,X5)
+          & is_contact_with_2(s0,X5,X4)
+          & virus_particles_1(s0,G6)
+          & containing_3(s0,E9,G8,G6)
+          & ? [X11] :
+              ( rodent_matter_1(s0,X11)
+              & is_of_2(s0,X11,G7) )
+          & ? [X12] :
+              ( urine_matter_1(s0,X12)
+              & is_of_2(s0,X12,G7) )
+          & ? [X13] :
+              ( fecal_1(s0,X13)
+              & matter_1(s0,X13)
+              & is_of_2(s0,X13,G7) )
+          & G8 = G7
+          & is_of_2(s0,X5,G2) )
+      & ? [X14,X15,G16,G17,G18,E19,E20] :
+          ( contaminated_3(s0,E20,G18,X14)
+          & food_1(s0,X14)
+          & is_consumption_of_2(s0,X15,X14)
+          & virus_particles_1(s0,G16)
+          & containing_3(s0,E19,G18,G16)
+          & ? [X21] :
+              ( rodent_matter_1(s0,X21)
+              & is_of_2(s0,X21,G17) )
+          & ? [X22] :
+              ( urine_matter_1(s0,X22)
+              & is_of_2(s0,X22,G17) )
+          & ? [X23] :
+              ( fecal_1(s0,X23)
+              & matter_1(s0,X23)
+              & is_of_2(s0,X23,G17) )
+          & G18 = G17
+          & is_of_2(s0,X15,G2) )
+      & occurs_2(s0,E3,X1)
+      & through_2(s0,E3,G2) ) )).
+
+% ::id 104_nonfiction_FACTBOOK-2010;DISEASES;AT18-5;NE
+% ::snt fatality rate can reach 50 % in epidemic outbreaks .
+ERROR: Line 6 Char 26 Token "epidemic_outbreaks_1" continuing with "s0, G2) &
+"
+
+% ::id 105_nonfiction_FACTBOOK-2010;DISEASES;AT19-1;NE
+% ::snt respiratory disease acquired through close contact with an infectious person :
+fof(ex1414051866090,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( infectious_1(s0,X1)
+      & person_1(s0,X1)
+      & close_1(s0,X2)
+      & is_contact_with_2(s0,X2,X1)
+      & acquired_3(s0,E4,unspecified,X3)
+      & through_2(s0,E4,X2)
+      & respiratory_disease_1(s0,X3)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 106_nonfiction_FACTBOOK-2010;DISEASES;AT20-1;NE
+% ::snt Meningococcal meningitis -
+fof(ex1414051866456,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,meningococcal_meningitis) ) )).
+
+% ::id 107_nonfiction_FACTBOOK-2010;DISEASES;AT20-2;NE
+% ::snt bacterial disease causing an inflammation of the lining of the brain and spinal cord ;
+fof(ex1414051866829,axiom,(
+    ? [X1,X2,X3,G4,G5,X6,X7,E8,E9] :
+      ( brain_1(s0,X1)
+      & spinal_cord_1(s0,X2)
+      & is_lining_of_2(s0,X3,G5)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & G5 = G4
+      & is_inflammation_of_2(s0,X6,X3)
+      & bacterial_1(s0,X7)
+      & causing_3(s0,E8,X7,X6)
+      & disease_1(s0,X7)
+      & xxx_1(s0,E9)
+      & link_2(s0,E9,X7) ) )).
+
+% ::id 108_nonfiction_FACTBOOK-2010;DISEASES;AT20-3;NE
+% ::snt one of the most important bacterial pathogens is Neisseria meningitidis because of its potential to cause epidemics ;
+fof(ex1414051867204,axiom,(
+    ? [G1,X8,X2,X3,G4,E5,E6,S7] :
+      ( most_important_1(s0,G1)
+      & bacterial_1(s0,G1)
+      & pathogens_1(s0,G1)
+      & is_one_of_2(s0,X3,G1)
+      & choose2(X8,neisseria_meningitidis,X3)
+      & is_potential_of_2(s0,X2,X8)
+      & epidemics_1(s0,G4)
+      & ? [S9] :
+          ( fact_2(s0,S7,S9)
+          & cause_3(S9,E5,X2,G4) )
+      & is_3(s0,E6,X3,neisseria_meningitidis)
+      & because_of_2(s0,E6,S7) ) )).
+
+% ::id 109_nonfiction_FACTBOOK-2010;DISEASES;AT20-4;NE
+% ::snt symptoms include stiff neck , high fever , headaches , and vomiting ;
+fof(ex1414051867585,axiom,(
+    ? [G1,G2,E3] :
+      ( symptoms_1(s0,G2)
+      & ? [X4] :
+          ( stiff_1(s0,X4)
+          & neck_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & ? [X5] :
+          ( high_1(s0,X5)
+          & fever_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [G6] :
+          ( headaches_1(s0,G6)
+          & is_of_2(s0,G6,G1) )
+      & ? [X7] :
+          ( vomiting_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & include_3(s0,E3,G2,G1) ) )).
+
+% ::id 110_nonfiction_FACTBOOK-2010;DISEASES;AT20-5;NE
+% ::snt bacteria are transmitted from person to person by respiratory droplets and facilitated by close and prolonged contact resulting from crowded living conditions , often with a seasonal distribution ;
+fof(ex1414051867990,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,E9,E10,E11] :
+      ( seasonal_1(s0,X3)
+      & distribution_1(s0,X3)
+      & person_1(s0,X2)
+      & person_1(s0,X1)
+      & bacteria_1(s0,G8)
+      & respiratory_1(s0,G4)
+      & droplets_1(s0,G4)
+      & crowded_1(s0,G5)
+      & living_conditions_1(s0,G5)
+      & resulting_2(s0,E10,G7)
+      & from_2(s0,E10,G5)
+      & ? [X12] :
+          ( close_1(s0,X12)
+          & contact_1(s0,X12)
+          & is_of_2(s0,X12,G6) )
+      & ? [X13] :
+          ( prolonged_1(s0,X13)
+          & contact_1(s0,X13)
+          & is_of_2(s0,X13,G6) )
+      & G7 = G6
+      & transmitted_3(s0,E9,G4,G8)
+      & from_2(s0,E9,X2)
+      & to_2(s0,E9,X1)
+      & often_with_2(s0,E9,X3)
+      & facilitated_3(s0,E11,G7,G8)
+      & often_with_2(s0,E11,X3) ) )).
+
+% ::id 111_nonfiction_FACTBOOK-2010;DISEASES;AT20-6;NE
+% ::snt death occurs in 5 - 15 % of cases , typically within 24 - 48 hours of onset of symptoms ;
+ERROR: Line 7 Char 17 Token "symptoms_1" continuing with "s0, G4) &
+"
+
+% ::id 112_nonfiction_FACTBOOK-2010;DISEASES;AT20-7;NE
+% ::snt highest burden of meningococcal disease occurs in the hyperendemic region of sub-Saharan Africa known as the " Meningitis Belt " which stretches from Senegal east to Ethiopia .
+fof(ex1414051868767,axiom,(
+    ? [X1,E2,E3,X4,X5,E6] :
+      ( hyperendemic_1(s0,X1)
+      & known_3(s0,E2,unspecified,X1)
+      & as_2(s0,E2,meningitis_belt)
+      & stretches_2(s0,E3,X1)
+      & from_2(s0,E3,senegal_east)
+      & to_2(s0,E3,ethiopia)
+      & is_region_of_2(s0,X1,sub_saharan_africa)
+      & meningococcal_1(s0,X4)
+      & disease_1(s0,X4)
+      & highest_1(s0,X5)
+      & is_burden_of_2(s0,X5,X4)
+      & occurs_2(s0,E6,X5)
+      & in_2(s0,E6,X1) ) )).
+
+% ::id 113_nonfiction_FACTBOOK-2010;DISEASES;AT21-1;NE
+% ::snt animal contact disease acquired through direct contact with local animals :
+fof(ex1414051869141,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( direct_1(s0,X1)
+      & is_contact_with_2(s0,X1,G3)
+      & animal_1(s0,X2)
+      & acquired_3(s0,E4,unspecified,X2)
+      & through_2(s0,E4,X1)
+      & contact_disease_1(s0,X2)
+      & local_1(s0,G3)
+      & animals_1(s0,G3)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X2) ) )).
+
+% ::id 114_nonfiction_FACTBOOK-2010;DISEASES;AT22-1;NE
+% ::snt Rabies -
+fof(ex1414051869499,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,rabies) ) )).
+
+% ::id 115_nonfiction_FACTBOOK-2010;DISEASES;AT22-2;NE
+% ::snt viral disease of mammals usually transmitted through the bite of an infected animal , most commonly dogs ;
+fof(ex1414051869876,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( infected_1(s0,X1)
+      & animal_1(s0,X1)
+      & is_bite_of_2(s0,X2,X1)
+      & ? [G6] :
+          ( commonly_1(s0,G6)
+          & dogs_1(s0,G6)
+          & X1 = G6 )
+      & viral_1(s0,X3)
+      & is_disease_of_2(s0,X3,G4)
+      & mammals_1(s0,G4)
+      & usually_1(s0,E5)
+      & is_transmitted_2(s0,E5,X3)
+      & through_2(s0,E5,X2) ) )).
+
+% ::id 116_nonfiction_FACTBOOK-2010;DISEASES;AT22-3;NE
+% ::snt virus affects the central nervous system causing brain alteration and death ;
+fof(ex1414051870244,axiom,(
+    ? [X1,X2,G3,E4,E5] :
+      ( central_1(s0,X1)
+      & nervous_system_1(s0,X1)
+      & virus_1(s0,X2)
+      & ? [X6] :
+          ( brain_alteration_1(s0,X6)
+          & is_of_2(s0,X6,G3) )
+      & ? [X7] :
+          ( death_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & causing_3(s0,E4,X1,G3)
+      & affects_3(s0,E5,X2,X1) ) )).
+
+% ::id 117_nonfiction_FACTBOOK-2010;DISEASES;AT22-4;NE
+% ::snt symptoms initially are non-specific fever and headache progressing to neurological symptoms ;
+fof(ex1414051870613,axiom,(
+    ? [G1,G2,G3,S6,E4,E5] :
+      ( symptoms_1(s0,G3)
+      & ? [X7] :
+          ( non_specific_1(s0,X7)
+          & fever_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & ? [X8] :
+          ( headache_1(s0,X8)
+          & is_of_2(s0,X8,G2) )
+      & neurological_1(s0,G1)
+      & symptoms_1(s0,G1)
+      & initially_1(s0,S6)
+      & ? [S9] :
+          ( fact_2(s0,S6,S9)
+          & progressing_2(S9,E4,G2)
+          & to_2(S9,E4,G1)
+          & are_3(S9,E5,G3,G2) ) ) )).
+
+% ::id 118_nonfiction_FACTBOOK-2010;DISEASES;AT22-5;NE
+% ::snt death occurs within days of the onset of symptoms .
+fof(ex1414051870983,axiom,(
+    ? [X1,G2,X3,G4,E5] :
+      ( is_onset_of_2(s0,X1,G2)
+      & symptoms_1(s0,G2)
+      & death_1(s0,X3)
+      & is_days_of_2(s0,G4,X1)
+      & occurs_2(s0,E5,X3)
+      & within_2(s0,E5,G4) ) )).
+
+% ::id 119_nonfiction_FACTBOOK-2010;LEGAL;AT1-1;NE
+% ::snt Legal system
+fof(ex1414051871341,axiom,(
+    ? [X1,E2] :
+      ( legal_1(s0,X1)
+      & system_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 120_nonfiction_FACTBOOK-2010;LEGAL;AT2-1;NE
+% ::snt This entry provides the description of a country's legal system ;
+fof(ex1414051871708,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( entry_1(s0,X4)
+      & country_1(s0,X1)
+      & legal_1(s0,X2)
+      & is_system_of_2(s0,X2,X1)
+      & is_description_of_2(s0,X3,X2)
+      & provides_3(s0,E5,X4,X3) ) )).
+
+% ::id 121_nonfiction_FACTBOOK-2010;LEGAL;AT2-2;NE
+% ::snt it also includes information on acceptance of International Court of Justice -LRB- ICJ -RRB- jurisdiction .
+fof(ex1414051872077,axiom,(
+    ? [X6,X1,X2,X3,X4,E5] :
+      ( justice_1(s0,X1)
+      & is_international_court_of_2(s0,X2,X1)
+      & is_jurisdiction_of_2(s0,X2,X1)
+      & is_acceptance_of_2(s0,X3,X2)
+      & is_information_on_2(s0,X4,X3)
+      & X2 = icj_
+      & also_includes_3(s0,E5,X6,X4) ) )).
+
+% ::id 122_nonfiction_FACTBOOK-2010;LEGAL;AT2-3;NE
+% ::snt The legal systems of nearly all countries are generally modeled upon elements of five main types : civil law -LRB- including French law , the Napoleonic Code , Roman law , Roman-Dutch law , and Spanish law -RRB- ; common law -LRB- including United State law -RRB- ; customary law ; mixed or pluralistic law ; and religious law -LRB- including Islamic law -RRB- .
+fof(ex1414051872510,axiom,(
+    ? [G1,G2,G3,G4,E5] :
+      ( legal_1(s0,G1)
+      & ? [G6] :
+          ( nearly_1(s0,G6)
+          & countries_1(s0,G6)
+          & is_systems_of_2(s0,G1,G6) )
+      & five_1(s0,G3)
+      & main_1(s0,G3)
+      & types_1(s0,G3)
+      & ? [X7,G8,E9] :
+          ( civil_1(s0,X7)
+          & including_3(s0,E9,X7,G8)
+          & law_1(s0,X7)
+          & ? [X10] :
+              ( french_1(s0,X10)
+              & law_1(s0,X10)
+              & is_of_2(s0,X10,G8) )
+          & is_of_2(s0,napoleonic_code,G8)
+          & ? [X11] :
+              ( roman_1(s0,X11)
+              & law_1(s0,X11)
+              & is_of_2(s0,X11,G8) )
+          & ? [X12] :
+              ( roman_dutch_1(s0,X12)
+              & law_1(s0,X12)
+              & is_of_2(s0,X12,G8) )
+          & ? [X13] :
+              ( spanish_1(s0,X13)
+              & law_1(s0,X13)
+              & is_of_2(s0,X13,G8) )
+          & is_of_2(s0,X7,G2) )
+      & ? [X14,X15,E16] :
+          ( united_state_law_1(s0,X14)
+          & common_1(s0,X15)
+          & including_3(s0,E16,X15,X14)
+          & law_1(s0,X15)
+          & is_of_2(s0,X15,G2) )
+      & ? [X17] :
+          ( customary_1(s0,X17)
+          & law_1(s0,X17)
+          & is_of_2(s0,X17,G2) )
+      & ? [G18] :
+          ( ? [X19] :
+              ( mixed_1(s0,X19)
+              & law_1(s0,X19)
+              & is_of_2(s0,X19,G18) )
+          & ? [X20] :
+              ( pluralistic_1(s0,X20)
+              & law_1(s0,X20)
+              & is_of_2(s0,X20,G18) )
+          & is_of_2(s0,G18,G2) )
+      & ? [X21,X22,E23] :
+          ( islamic_1(s0,X21)
+          & law_1(s0,X21)
+          & religious_1(s0,X22)
+          & including_3(s0,E23,X22,X21)
+          & law_1(s0,X22)
+          & is_of_2(s0,X22,G2) )
+      & G3 = G2
+      & is_elements_of_2(s0,G4,G3)
+      & generally_1(s0,E5)
+      & modeled_3(s0,E5,unspecified,G1)
+      & upon_2(s0,E5,G4) ) )).
+
+% ::id 123_nonfiction_FACTBOOK-2010;LEGAL;AT2-4;NE
+% ::snt An additional type of legal system - international law , which governs the conduct of independent nations in their relationships with one another - is also addressed below .
+fof(ex1414051872909,axiom,(
+    ? [X1,G2,X3,X4,X5,G9,G6,E7,E8] :
+      ( is_conduct_of_2(s0,X1,G2)
+      & independent_1(s0,G2)
+      & nations_1(s0,G2)
+      & legal_1(s0,X4)
+      & system_1(s0,X4)
+      & international_1(s0,X3)
+      & governs_3(s0,E7,X3,X1)
+      & in_2(s0,E7,G6)
+      & law_1(s0,X3)
+      & additional_1(s0,X5)
+      & is_type_of_2(s0,X5,X4)
+      & choose1(G9,G2)
+      & ? [X10] :
+          ( one_1(s0,X10)
+          & is_relationships_with_2(s0,G6,X10)
+          & is_relationships_of_2(s0,G6,G9) )
+      & X4 = X3
+      & below_1(s0,E8)
+      & also_addressed_3(s0,E8,unspecified,X5) ) )).
+
+% ::id 124_nonfiction_FACTBOOK-2010;LEGAL;AT2-5;NE
+% ::snt The following list describes these legal systems , the countries or world regions where these systems are enforced , and a brief statement on the origins and major features of each .
+fof(ex1414051873328,axiom,(
+    ? [X1,G2,G3,G4,G5,G6,G7,G8,G9,G10,G11,E12,G13,E14] :
+      ( following_1(s0,X1)
+      & list_1(s0,X1)
+      & legal_1(s0,G2)
+      & systems_1(s0,G2)
+      & systems_1(s0,G3)
+      & enforced_3(s0,E12,unspecified,G3)
+      & countries_1(s0,G4)
+      & world_regions_1(s0,G5)
+      & is_of_2(s0,G4,G6)
+      & is_of_2(s0,G5,G6)
+      & G7 = G6
+      & ? [X16] : is_of_2(s0,G11,X16)
+      & origins_1(s0,G8)
+      & major_1(s0,G9)
+      & features_1(s0,G9)
+      & is_of_2(s0,G8,G10)
+      & is_of_2(s0,G9,G10)
+      & G11 = G10
+      & is_where_2(s0,E12,G7)
+      & is_of_2(s0,G2,G13)
+      & is_of_2(s0,G7,G13)
+      & ? [X15] :
+          ( brief_1(s0,X15)
+          & is_statement_on_2(s0,X15,G11)
+          & is_of_2(s0,X15,G13) )
+      & describes_3(s0,E14,X1,G13) ) )).
+
+% ::id 125_nonfiction_FACTBOOK-2010;LEGAL;AT3-1;NE
+% ::snt Civil Law - The most widespread type of legal system in the world , applied in various forms in approximately 150 countries .
+fof(ex1414051873715,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7] :
+      ( legal_1(s0,X2)
+      & system_1(s0,X2)
+      & world_1(s0,X1)
+      & most_widespread_1(s0,X3)
+      & is_type_in_2(s0,X3,X1)
+      & is_type_of_2(s0,X3,X2)
+      & applied_3(s0,E6,unspecified,civil_law)
+      & in_2(s0,E6,G5)
+      & approximately_150_1(s0,G4)
+      & countries_1(s0,G4)
+      & various_1(s0,G5)
+      & is_forms_in_2(s0,G5,G4)
+      & civil_law = X3
+      & xxx_1(s0,E7)
+      & link_2(s0,E7,civil_law) ) )).
+
+% ::id 126_nonfiction_FACTBOOK-2010;LEGAL;AT3-2;NE
+% ::snt Also referred to as European continental law , the civil law system is derived mainly from the Roman Corpus Juris Civilus , -LRB- Body of Civil Law -RRB- , a collection of laws and legal interpretations compiled under the East Roman -LRB- Byzantine -RRB- Emperor Justinian I between A.D. 528 and 565 .
+fof(ex1414051874133,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,G9,S13,E10,E11,E12] :
+      ( civil_law_system_1(s0,X2)
+      & east_roman_emperor_1(s0,X1)
+      & byzantine = byzantine
+      & european_1(s0,X3)
+      & continental_law_1(s0,X3)
+      & civil_law_1(s0,X4)
+      & is_body_of_2(s0,X5,X4)
+      & is_collection_of_2(s0,X6,G9)
+      & roman_corpus_juris_civilus = X5
+      & justinian_i = X1
+      & ? [G14] :
+          ( predicate__528_1(s0,G14)
+          & a_d_1(s0,G14)
+          & is_of_2(s0,G14,G7) )
+      & ? [G15] :
+          ( predicate__565_1(s0,G15)
+          & is_of_2(s0,G15,G7) )
+      & compiled_2(s0,E11,G9)
+      & under_2(s0,E11,justinian_i)
+      & between_2(s0,E11,G7)
+      & ? [G16] :
+          ( laws_1(s0,G16)
+          & is_of_2(s0,G16,G8) )
+      & ? [G17] :
+          ( legal_1(s0,G17)
+          & interpretations_1(s0,G17)
+          & is_of_2(s0,G17,G8) )
+      & G9 = G8
+      & roman_corpus_juris_civilus = X6
+      & is_before_2(s0,E10,e0)
+      & mainly_1(s0,S13)
+      & also_referred_to_2(s0,E10,X2)
+      & as_2(s0,E10,X3)
+      & ? [S18] :
+          ( fact_2(s0,S13,S18)
+          & derived_3(S18,E12,unspecified,X2)
+          & from_2(S18,E12,roman_corpus_juris_civilus) ) ) )).
+
+% ::id 127_nonfiction_FACTBOOK-2010;LEGAL;AT3-3;NE
+% ::snt The major feature of civil law systems is that the laws are organized into systematic written codes .
+fof(ex1414051874509,axiom,(
+    ? [X1,G2,G3,G4,E5,E6] :
+      ( major_1(s0,X1)
+      & is_feature_of_2(s0,X1,G2)
+      & civil_law_systems_1(s0,G2)
+      & laws_1(s0,G3)
+      & systematic_1(s0,G4)
+      & written_1(s0,G4)
+      & codes_1(s0,G4)
+      & ? [S7] :
+          ( is_3(s0,E6,X1,S7)
+          & organized_3(S7,E5,unspecified,G3)
+          & into_2(S7,E5,G4) ) ) )).
+
+% ::id 128_nonfiction_FACTBOOK-2010;LEGAL;AT3-4;NE
+% ::snt In civil law the sources recognized as authoritative are principally legislation - especially codifications in constitutions or statutes enacted by governments - and secondarily , custom .
+fof(ex1414051874906,axiom,(
+    ? [X1,G2,E3,X4,G5,E6] :
+      ( authoritative_1(s0,X1)
+      & recognized_2(s0,E3,G2)
+      & as_2(s0,E3,X1)
+      & sources_1(s0,G2)
+      & is_before_2(s0,E3,e0)
+      & civil_law_1(s0,X4)
+      & ? [X7,G8,G9,G10,G11,E12] :
+          ( principally_1(s0,X7)
+          & legislation_1(s0,X7)
+          & governments_1(s0,G8)
+          & enacted_3(s0,E12,G8,G10)
+          & ? [G13] :
+              ( constitutions_1(s0,G13)
+              & is_of_2(s0,G13,G9) )
+          & ? [G14] :
+              ( statutes_1(s0,G14)
+              & is_of_2(s0,G14,G9) )
+          & G10 = G9
+          & especially_1(s0,G11)
+          & is_codifications_in_2(s0,G11,G10)
+          & X7 = G11
+          & is_of_2(s0,X7,G5) )
+      & ? [X15] :
+          ( secondarily_1(s0,X15)
+          & custom_1(s0,X15)
+          & is_of_2(s0,X15,G5) )
+      & are_3(s0,E6,G2,G5)
+      & in__2(s0,E6,X4) ) )).
+
+% ::id 129_nonfiction_FACTBOOK-2010;LEGAL;AT3-5;NE
+% ::snt The civil law systems in some countries are based on more than one code .
+fof(ex1414051875293,axiom,(
+    ? [G1,G2,X3,E4] :
+      ( countries_1(s0,G1)
+      & is_civil_law_systems_in_2(s0,G2,G1)
+      & one_1(s0,X3)
+      & code_1(s0,X3)
+      & ? [X5] :
+          ( is_than_2(s0,X5,X3)
+          & based_3(s0,E4,unspecified,G2)
+          & on_2(s0,E4,X5) ) ) )).
+
+% ::id 130_nonfiction_FACTBOOK-2010;LEGAL;AT4-1;NE
+% ::snt Common Law -
+fof(ex1414051875654,axiom,(
+    ? [X1,E2] :
+      ( common_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 131_nonfiction_FACTBOOK-2010;LEGAL;AT4-2;NE
+% ::snt A type of legal system , often synonymous with English common law , which is the system of England and Wales in the UK , and is also in force in approximately 80 countries formerly part of or influenced by the former British Empire .
+fof(ex1414051876073,axiom,(
+    ? [X1,G2,X3,X4,X5,X6,G7,A13,E8,E9,E10,E11,E12] :
+      ( is_system_of_2(s0,X1,G2)
+      & is_of_2(s0,england,G2)
+      & is_of_2(s0,wales,G2)
+      & legal_1(s0,X3)
+      & system_1(s0,X3)
+      & is_type_of_2(s0,X6,X3)
+      & force_1(s0,X4)
+      & english_1(s0,X5)
+      & is_3(s0,E8,X5,X1)
+      & in_2(s0,E8,uk_)
+      & is_also_2(s0,E11,X5)
+      & in__2(s0,E11,X4)
+      & in_2(s0,E11,G7)
+      & common_law_1(s0,X5)
+      & approximately_80_1(s0,G7)
+      & part_of_2(s0,E9,G7)
+      & influenced_3(s0,E10,former_british_empire,G7)
+      & countries_1(s0,G7)
+      & is_often_synonymous_with_2(s0,A13,X5)
+      & is_before_2(s0,E9,e0)
+      & is_3(s0,E12,X6,A13) ) )).
+
+% ::id 132_nonfiction_FACTBOOK-2010;LEGAL;AT4-3;NE
+% ::snt English common law reflects Biblical influences as well as remnants of law systems imposed by early conquerors including the Romans , Anglo-Saxons , and Normans .
+fof(ex1414051876464,axiom,(
+    ? [X1,G2,G3,G4,G5,G6,S10,E7,E8,E9] :
+      ( english_1(s0,X1)
+      & common_law_1(s0,X1)
+      & biblical_1(s0,G6)
+      & influences_1(s0,G6)
+      & is_of_2(s0,romans,G2)
+      & is_of_2(s0,anglo_saxons,G2)
+      & is_of_2(s0,normans,G2)
+      & early_1(s0,G3)
+      & including_3(s0,E7,G3,G2)
+      & conquerors_1(s0,G3)
+      & imposed_3(s0,E8,G3,G4)
+      & law_systems_1(s0,G4)
+      & is_remnants_of_2(s0,G5,G4)
+      & is_as_well_as_2(s0,S10,G5)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & reflects_3(S11,E9,X1,G6) ) ) )).
+
+% ::id 133_nonfiction_FACTBOOK-2010;LEGAL;AT4-4;NE
+% ::snt Some legal scholars attribute the formation of the English common law system to King Henry II -LRB- r.1154-1189 -RRB- .
+fof(ex1414051876841,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( english_1(s0,X1)
+      & common_law_system_1(s0,X1)
+      & is_formation_of_2(s0,X2,X1)
+      & legal_1(s0,G4)
+      & scholars_1(s0,G4)
+      & r_1154_1189_1(s0,G3)
+      & king_henry_ii_ = G3
+      & attribute_3(s0,E5,G4,X2)
+      & to_2(s0,E5,king_henry_ii_) ) )).
+
+% ::id 134_nonfiction_FACTBOOK-2010;LEGAL;AT4-5;NE
+% ::snt Until the time of his reign , laws customary among England's various manorial and ecclesiastical -LRB- church -RRB- jurisdictions were administered locally .
+fof(ex1414051877231,axiom,(
+    ? [X10,X1,X2,G3,G4,G5,E6] :
+      ( choose1(X10,england)
+      & is_reign_of_2(s0,X1,X10)
+      & is_time_of_2(s0,X2,X1)
+      & various_1(s0,G4)
+      & is_jurisdictions_of_2(s0,G4,england)
+      & ? [X7] :
+          ( manorial_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & ? [X8,X9] :
+          ( ecclesiastical_1(s0,X9)
+          & church_1(s0,X8)
+          & X9 = X8
+          & is_of_2(s0,X9,G3) )
+      & G4 = G3
+      & is_customary_among_2(s0,G5,G4)
+      & laws_1(s0,G5)
+      & locally_1(s0,E6)
+      & is_before_2(s0,E6,e0)
+      & administered_3(s0,E6,unspecified,G5)
+      & until_2(s0,E6,X2) ) )).
+
+% ::id 135_nonfiction_FACTBOOK-2010;LEGAL;AT4-6;NE
+% ::snt Henry II established the king's court and designated that laws were common to the entire English realm .
+fof(ex1414051877610,axiom,(
+    ? [X1,X2,X3,G4,A8,E5,E6,E7] :
+      ( king_1(s0,X1)
+      & entire_1(s0,X2)
+      & english_realm_1(s0,X2)
+      & is_court_of_2(s0,X3,X1)
+      & laws_1(s0,G4)
+      & is_common_to_2(s0,A8,X2)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,E7)
+      & established_3(s0,E5,henry_ii_,X3)
+      & ? [S9] :
+          ( designated_3(s0,E7,henry_ii_,S9)
+          & were_3(S9,E6,G4,A8) ) ) )).
+
+% ::id 136_nonfiction_FACTBOOK-2010;LEGAL;AT4-7;NE
+% ::snt The foundation of English common law is legal precedent - referred to as stare decisis , meaning to stand by things decided .
+fof(ex1414051877994,axiom,(
+    ? [X1,X2,X3,G4,E5,E6,E7,E8,E9] :
+      ( english_1(s0,X1)
+      & common_law_1(s0,X1)
+      & is_foundation_of_2(s0,X2,X1)
+      & legal_1(s0,X3)
+      & ? [S10] :
+          ( meaning_3(s0,E7,X3,S10)
+          & stand_2(S10,E6,X3)
+          & by_2(S10,E6,G4) )
+      & referred_to_2(s0,E8,X3)
+      & as_2(s0,E8,stare_decisis)
+      & precedent_1(s0,X3)
+      & decided_2(s0,E5,G4)
+      & things_1(s0,G4)
+      & is_before_2(s0,E8,e0)
+      & is_3(s0,E9,X2,X3) ) )).
+
+% ::id 137_nonfiction_FACTBOOK-2010;LEGAL;AT4-8;NE
+% ::snt In the English common law system , court judges are bound in their decisions in large part by the rules and other doctrines developed - and supplemented over time - by the judges of earlier English courts .
+fof(ex1414051878395,axiom,(
+    ? [X1,G2,G3,G4,X5,X6,G14,G7,G8,G9,G10,E11,E12,E13] :
+      ( english_1(s0,X1)
+      & common_law_system_1(s0,X1)
+      & earlier_1(s0,G2)
+      & english_1(s0,G2)
+      & courts_1(s0,G2)
+      & is_judges_of_2(s0,G3,G2)
+      & rules_1(s0,G4)
+      & large_1(s0,X6)
+      & part_1(s0,X6)
+      & time_1(s0,X5)
+      & court_judges_1(s0,G10)
+      & choose1(G14,G10)
+      & is_decisions_of_2(s0,G9,G14)
+      & developed_3(s0,E11,G3,G8)
+      & supplemented_3(s0,E12,G3,G8)
+      & over_2(s0,E12,X5)
+      & is_of_2(s0,G4,G7)
+      & ? [G15] :
+          ( doctrines_1(s0,G15)
+          & is_of_2(s0,G15,G7) )
+      & G8 = G7
+      & bound_3(s0,E13,G8,G10)
+      & in___2(s0,E13,X1)
+      & in__2(s0,E13,G9)
+      & in_2(s0,E13,X6) ) )).
+
+% ::id 138_nonfiction_FACTBOOK-2010;LEGAL;AT5-1;NE
+% ::snt Customary Law -
+fof(ex1414051878761,axiom,(
+    ? [X1,E2] :
+      ( customary_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 139_nonfiction_FACTBOOK-2010;LEGAL;AT5-2;NE
+% ::snt A type of legal system that serves as the basis of , or has influenced , the present-day laws in approximately 40 countries - mostly in Africa , but some in the Pacific islands , Europe , and the Near East .
+fof(ex1414051879157,axiom,(
+    ? [X1,G2,G3,G4,X5,X6,E7,E8,E9] :
+      ( is_in_2(s0,X1,G2)
+      & is_of_2(s0,pacific_islands,G2)
+      & is_of_2(s0,europe,G2)
+      & is_of_2(s0,near_east,G2)
+      & approximately_40_1(s0,G3)
+      & is_countries_but_2(s0,G3,X1)
+      & is_countries_mostly_in_2(s0,G3,africa)
+      & present_day_1(s0,G4)
+      & is_laws_in_2(s0,G4,G3)
+      & legal_1(s0,X5)
+      & system_1(s0,X5)
+      & serves_as_the_basis_of_3(s0,E7,X6,G4)
+      & has_influenced_3(s0,E8,X6,G4)
+      & is_type_of_2(s0,X6,X5)
+      & xxx_1(s0,E9)
+      & link_2(s0,E9,X6) ) )).
+
+% ::id 140_nonfiction_FACTBOOK-2010;LEGAL;AT5-3;NE
+% ::snt Customary law is also referred to as primitive law , unwritten law , indigenous law , and folk law .
+fof(ex1414051879532,axiom,(
+    ? [X1,G2,E3] :
+      ( customary_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( primitive_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( unwritten_1(s0,X5)
+          & law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( indigenous_1(s0,X6)
+          & law_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ? [X7] :
+          ( folk_law_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & also_referred_to_3(s0,E3,unspecified,X1)
+      & as_2(s0,E3,G2) ) )).
+
+% ::id 141_nonfiction_FACTBOOK-2010;LEGAL;AT5-4;NE
+% ::snt There is no single history of customary law such as that found in Roman civil law , English common law , Islamic law , or the Napoleonic Civil Code .
+fof(ex1414051879919,axiom,(
+    ? [X1,X2,X3,X4,G5,E6] :
+      ( roman_1(s0,X1)
+      & civil_law_1(s0,X1)
+      & english_1(s0,X2)
+      & common_law_1(s0,X2)
+      & islamic_1(s0,X3)
+      & law_1(s0,X3)
+      & found_2(s0,E6,X4)
+      & in_2(s0,E6,G5)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,X3,G5)
+      & is_of_2(s0,napoleonic_civil_code,G5)
+      & ? [X7,X8,E9] :
+          ( customary_1(s0,X7)
+          & law_1(s0,X7)
+          & single_1(s0,X8)
+          & is_history_such_as_2(s0,X8,X4)
+          & is_history_of_2(s0,X8,X7)
+          & is_2(s0,E9,X8) ) ) )).
+
+% ::id 142_nonfiction_FACTBOOK-2010;LEGAL;AT5-5;NE
+% ::snt The earliest systems of law in human society were customary , and usually developed in small agrarian and hunter-gatherer communities .
+fof(ex1414051880303,axiom,(
+    ? [X1,G2,X3,G4,A7,E5,E6] :
+      ( law_1(s0,X1)
+      & earliest_1(s0,G2)
+      & is_systems_of_2(s0,G2,X1)
+      & human_1(s0,X3)
+      & society_1(s0,X3)
+      & ? [G8] :
+          ( small_1(s0,G8)
+          & agrarian_1(s0,G8)
+          & communities_1(s0,G8)
+          & is_of_2(s0,G8,G4) )
+      & ? [G9] :
+          ( hunter_gatherer_1(s0,G9)
+          & communities_1(s0,G9)
+          & is_of_2(s0,G9,G4) )
+      & customary_1(s0,A7)
+      & is_before_2(s0,E5,e0)
+      & usually_1(s0,E6)
+      & is_before_2(s0,E6,e0)
+      & were_3(s0,E5,G2,A7)
+      & in_2(s0,E5,X3)
+      & developed_2(s0,E6,G2)
+      & in_2(s0,E6,G4)
+      & in_2(s0,E6,G4) ) )).
+
+% ::id 143_nonfiction_FACTBOOK-2010;LEGAL;AT5-6;NE
+% ::snt As the term implies , customary law is based upon the customs of a community .
+fof(ex1414051880681,axiom,(
+    ? [X1,X2,G3,X4,E5,E6,S7] :
+      ( term_1(s0,X1)
+      & community_1(s0,X2)
+      & is_customs_of_2(s0,G3,X2)
+      & customary_1(s0,X4)
+      & law_1(s0,X4)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & implies_2(S8,E5,X1) )
+      & based_3(s0,E6,unspecified,X4)
+      & as_2(s0,E6,S7)
+      & upon_2(s0,E6,G3) ) )).
+
+% ::id 144_nonfiction_FACTBOOK-2010;LEGAL;AT5-7;NE
+% ::snt Common attributes of customary legal systems are that they are seldom written down , they embody an organized set of rules regulating social relations , and they are agreed upon by members of the community .
+fof(ex1414051881088,axiom,(
+    ? [X1,X2,G15,G14,G13,G3,G4,G5,G6,G7,E8,E9,E10,E11,E12] :
+      ( community_1(s0,X1)
+      & organized_1(s0,X2)
+      & is_set_of_2(s0,X2,G5)
+      & customary_1(s0,G3)
+      & legal_systems_1(s0,G3)
+      & common_1(s0,G7)
+      & is_attributes_of_2(s0,G7,G3)
+      & choose2(G13,G7,G3)
+      & choose2(G14,G7,G3)
+      & social_1(s0,G4)
+      & relations_1(s0,G4)
+      & regulating_3(s0,E9,G5,G4)
+      & rules_1(s0,G5)
+      & choose4(G15,G5,G4,G7,G3)
+      & is_members_of_2(s0,G6,X1)
+      & seldom_1(s0,E8)
+      & ? [S16] :
+          ( are_3(s0,E12,G7,S16)
+          & written_down_3(S16,E8,unspecified,G13)
+          & embody_3(S16,E10,G14,X2)
+          & agreed_upon_3(S16,E11,G6,G15) ) ) )).
+
+% ::id 145_nonfiction_FACTBOOK-2010;LEGAL;AT5-8;NE
+% ::snt Although such law systems include sanctions for law infractions , resolution tends to be reconciliatory rather than punitive .
+fof(ex1414051881474,axiom,(
+    ? [X1,G2,G3,A10,A9,E4,E5,E6,S7] :
+      ( resolution_1(s0,X1)
+      & law_infractions_1(s0,G2)
+      & is_sanctions_for_2(s0,G3,G2)
+      & punitive_1(s0,A10)
+      & is_rather_than_2(s0,A9,A10)
+      & reconciliatory_1(s0,A9)
+      & ? [S11] :
+          ( fact_2(s0,S7,S11)
+          & ? [G8] :
+              ( law_systems_1(S11,G8)
+              & include_3(S11,E4,G8,G3) ) )
+      & ? [S12] :
+          ( tends_3(s0,E6,X1,S12)
+          & be_3(S12,E5,X1,A9) )
+      & although_2(s0,E6,S7) ) )).
+
+% ::id 146_nonfiction_FACTBOOK-2010;LEGAL;AT5-9;NE
+% ::snt A number of African states practiced customary law many centuries prior to colonial influences .
+fof(ex1414051881843,axiom,(
+    ? [X1,X2,G3,G4,E5] :
+      ( is_number_of_2(s0,X2,G3)
+      & customary_1(s0,X1)
+      & law_1(s0,X1)
+      & african_1(s0,G3)
+      & states_1(s0,G3)
+      & colonial_influences_1(s0,G4)
+      & is_before_2(s0,E5,e0)
+      & ? [T6] :
+          ( is_centuries_prior_to_2(s0,T6,G4)
+          & practiced_3(s0,E5,X2,X1)
+          & tmp_2(s0,E5,T6) ) ) )).
+
+% ::id 147_nonfiction_FACTBOOK-2010;LEGAL;AT5-10;NE
+% ::snt Following colonization , such laws were written down and incorporated to varying extents into the legal systems imposed by their colonial powers .
+fof(ex1414051882228,axiom,(
+    ? [G10,G1,G2,E3,X4,G5,E6,E7,E8] :
+      ( choose3(G10,G2,G5)
+      & colonial_1(s0,G1)
+      & is_powers_of_2(s0,G1,G10)
+      & legal_1(s0,G2)
+      & imposed_3(s0,E3,G1,G2)
+      & systems_1(s0,G2)
+      & colonization_1(s0,X4)
+      & varying_1(s0,G5)
+      & extents_1(s0,G5)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & ? [G9] :
+          ( laws_1(s0,G9)
+          & following_3(s0,E6,G9,X4)
+          & written_down_3(s0,E7,unspecified,G9)
+          & were_incorporated_2(s0,E8,G9)
+          & to_2(s0,E8,G5)
+          & into_2(s0,E8,G2) ) ) )).
+
+% ::id 148_nonfiction_FACTBOOK-2010;LEGAL;AT6-1;NE
+% ::snt European Union Law -
+fof(ex1414051882589,axiom,(
+    ? [X1,E2] :
+      ( european_union_law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 149_nonfiction_FACTBOOK-2010;LEGAL;AT6-2;NE
+% ::snt A sub-discipline of international law known as supranational law in which the rights of sovereign nations are limited in relation to one another .
+fof(ex1414051882982,axiom,(
+    ? [G1,G2,X3,X4,X5,X6,A10,E7,E8,E9] :
+      ( sovereign_1(s0,G1)
+      & nations_1(s0,G1)
+      & is_rights_of_2(s0,G2,G1)
+      & international_1(s0,X5)
+      & law_1(s0,X5)
+      & supranational_1(s0,X3)
+      & law_1(s0,X3)
+      & ? [X11] :
+          ( one_1(s0,X11)
+          & is_relation_to_2(s0,X4,X11) )
+      & known_3(s0,E7,unspecified,X6)
+      & as_2(s0,E7,X3)
+      & are_3(s0,E8,G2,A10)
+      & in__2(s0,E8,X6)
+      & is_sub_discipline_of__2(s0,X6,X5)
+      & is_limited_in_2(s0,A10,X4)
+      & xxx_1(s0,E9)
+      & link_2(s0,E9,X6) ) )).
+
+% ::id 150_nonfiction_FACTBOOK-2010;LEGAL;AT6-3;NE
+% ::snt Also referred to as the Law of the European Union or Community Law , it is the unique and complex legal system that operates in tandem with the laws of the 27 member states of the European Union -LRB- EU -RRB- .
+fof(ex1414051883382,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,X10,G7,E8,E9] :
+      ( is_law_of_2(s0,X1,european_union)
+      & is_tandem_with_2(s0,X2,G5)
+      & unique_1(s0,X3)
+      & complex_1(s0,X3)
+      & operates_2(s0,E6,X3)
+      & in_2(s0,E6,X2)
+      & legal_system_1(s0,X3)
+      & european_union = eu_
+      & predicate__27_1(s0,G4)
+      & is_member_states_of_2(s0,G4,european_union)
+      & is_laws_of_2(s0,G5,G4)
+      & is_of_2(s0,X1,G7)
+      & is_of_2(s0,community_law,G7)
+      & also_referred_to_2(s0,E8,X10)
+      & as_2(s0,E8,G7)
+      & is_3(s0,E9,X10,X3) ) )).
+
+% ::id 151_nonfiction_FACTBOOK-2010;LEGAL;AT6-4;NE
+% ::snt Similar to federal states , the EU legal system ensures compliance from the member states because of the Union's decentralized political nature .
+fof(ex1414051883762,axiom,(
+    ? [X1,G2,X3,X4,G5,E6] :
+      ( eu__1(s0,X1)
+      & legal_system_1(s0,X1)
+      & member_states_1(s0,G2)
+      & is_compliance_from_2(s0,X4,G2)
+      & decentralized_1(s0,X3)
+      & is_political_nature_of_2(s0,X3,union)
+      & federal_1(s0,G5)
+      & states_1(s0,G5)
+      & is_similar_to_2(s0,X1,G5)
+      & ensures_3(s0,E6,X1,X4)
+      & because_of_2(s0,E6,X3) ) )).
+
+% ::id 152_nonfiction_FACTBOOK-2010;LEGAL;AT6-5;NE
+% ::snt The European Court of Justice -LRB- ECJ -RRB- , established in 1952 by the Treaty of Paris , has been largely responsible for the development of EU law .
+fof(ex1414051884153,axiom,(
+    ? [X1,X2,X3,X4,X5,T6,E7,A9,E8] :
+      ( justice_1(s0,X2)
+      & is_treaty_of_2(s0,X1,paris)
+      & european_1(s0,X5)
+      & established_3(s0,E7,X1,X5)
+      & in_2(s0,E7,T6)
+      & is_court_of__2(s0,X5,X2)
+      & eu__1(s0,X3)
+      & law_1(s0,X3)
+      & is_development_of_2(s0,X4,X3)
+      & X5 = ecj_
+      & predicate__1952_1(s0,T6)
+      & is_largely_responsible_for_2(s0,A9,X4)
+      & has_been_3(s0,E8,X5,A9) ) )).
+
+% ::id 153_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+% ::snt Fundamental principles of European Union law include : subsidiarity - the notion that issues be handled by the smallest , lowest , or least centralized competent authority ; proportionality - the EU may only act to the extent needed to achieve its objectives ; conferral - the EU is a union of member states , and all its authorities are voluntarily granted by its members ; legal certainty - requires that legal rules be clear and precise ; and precautionary principle - a moral and political principle stating that if an action or policy might cause severe or irreversible harm to the public or to the environment , in the absence of a scientific consensus that harm would not ensue , the burden of proof falls on those who would advocate taking the action .
+fof(ex1414051884727,axiom,(
+    ? [X29,X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,G14,G15,G16,G17,E18,E19,E20,X21,G22,G23,E24] :
+      ( smallest_1(s0,X1)
+      & competent_1(s0,X1)
+      & authority_1(s0,X1)
+      & lowest_1(s0,X2)
+      & competent_1(s0,X2)
+      & authority_1(s0,X2)
+      & ? [S56] :
+          ( notion_2(s0,X3,S56)
+          & handled_3(S56,E18,G15,G16) )
+      & choose6(X29,X4,eu_,X3,X2,X1,X21)
+      & ? [S57] :
+          ( needed_3(s0,E20,X4,S57)
+          & achieve_3(S57,E19,X4,G17) )
+      & extent_1(s0,X4)
+      & proof_1(s0,X5)
+      & is_burden_of_2(s0,X13,X5)
+      & public_1(s0,X6)
+      & environment_1(s0,X7)
+      & harm_1(s0,X8)
+      & scientific_1(s0,X9)
+      & ? [S58] :
+          ( consensus_2(s0,X9,S58)
+          & ? [E53] : ensue_2(S58,E53,X8) )
+      & is_absence_of_2(s0,X12,X9)
+      & action_1(s0,X10)
+      & ? [E54,E55] :
+          ( taking_3(s0,E54,X11,X10)
+          & advocate_2(s0,E55,X11) )
+      & issues_1(s0,G16)
+      & is_of_2(s0,X1,G14)
+      & is_of_2(s0,X2,G14)
+      & ? [X26] :
+          ( centralized_1(s0,X26)
+          & competent_1(s0,X26)
+          & authority_1(s0,X26)
+          & is_of_2(s0,X26,G14) )
+      & G15 = G14
+      & is_objectives_of_2(s0,G17,X29)
+      & european_union_law_1(s0,X21)
+      & fundamental_1(s0,G23)
+      & is_principles_of_2(s0,G23,X21)
+      & ? [X25] :
+          ( subsidiarity_1(s0,X25)
+          & X25 = X3
+          & is_of_2(s0,X25,G22) )
+      & ? [X27] :
+          ( ? [S59] :
+              ( proportionality_2(s0,X27,S59)
+              & ? [E28] :
+                  ( only_act_2(S59,E28,eu_)
+                  & to_2(S59,E28,X4) ) )
+          & is_of_2(s0,X27,G22) )
+      & ? [X38,X37,X30,X31,G32,G33,E34,E35] :
+          ( is_union_of_2(s0,X30,G32)
+          & choose7(X37,eu_,X30,X4,X3,X2,X1,X21)
+          & choose7(X38,eu_,X30,X4,X3,X2,X1,X21)
+          & ? [S60] :
+              ( conferral_2(s0,X31,S60)
+              & is_3(S60,E34,eu_,X30)
+              & ? [G36] :
+                  ( is_authorities_of_2(S60,G36,X37)
+                  & granted_3(S60,E35,G33,G36) ) )
+          & member_states_1(s0,G32)
+          & is_members_of_2(s0,G33,X38)
+          & voluntarily_1(s0,E35)
+          & is_of_2(s0,X31,G22) )
+      & ? [X39,G40,A43,E41,E42] :
+          ( legal_1(s0,X39)
+          & ? [S61] :
+              ( requires_3(s0,E42,X39,S61)
+              & be_3(S61,E41,G40,A43) )
+          & certainty_1(s0,X39)
+          & legal_1(s0,G40)
+          & rules_1(s0,G40)
+          & clear_1(s0,A43)
+          & precise_1(s0,A43)
+          & is_of_2(s0,X39,G22) )
+      & ? [X44,X45,E46] :
+          ( precautionary_1(s0,X45)
+          & principle_1(s0,X45)
+          & moral_1(s0,X44)
+          & political_1(s0,X44)
+          & ? [S62] :
+              ( stating_3(s0,E46,X44,S62)
+              & ! [G47] :
+                  ( ( ? [X48] :
+                        ( action_1(S62,X48)
+                        & is_of_2(S62,X48,G47) )
+                    & ? [X49] :
+                        ( policy_1(S62,X49)
+                        & is_of_2(S62,X49,G47) ) )
+                 => ( ? [X50,E51] :
+                        ( severe_1(S62,X50)
+                        & irreversible_1(S62,X50)
+                        & is_harm_to_2(S62,X50,X6)
+                        & is_harm_to_2(S62,X50,X7)
+                        & cause_3(S62,E51,G47,X50) )
+                    & ? [E52] :
+                        ( falls_2(S62,E52,X13)
+                        & in_2(S62,E52,X12)
+                        & on_2(S62,E52,X11) ) ) ) )
+          & principle_1(s0,X44)
+          & X45 = X44
+          & is_of_2(s0,X45,G22) )
+      & include_3(s0,E24,G23,G22) ) )).
+
+% ::id 154_nonfiction_FACTBOOK-2010;LEGAL;AT7-1;NE
+% ::snt French Law -
+fof(ex1414051885155,axiom,(
+    ? [X1,E2] :
+      ( french_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 155_nonfiction_FACTBOOK-2010;LEGAL;AT7-2;NE
+% ::snt A type of civil law that is the legal system of France .
+fof(ex1414051885536,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( legal_1(s0,X1)
+      & is_system_of_2(s0,X1,france)
+      & civil_1(s0,X2)
+      & law_1(s0,X2)
+      & is_3(s0,E4,X3,X1)
+      & is_type_of__2(s0,X3,X2)
+      & xxx_1(s0,E5)
+      & link_2(s0,E5,X3) ) )).
+
+% ::id 156_nonfiction_FACTBOOK-2010;LEGAL;AT7-3;NE
+% ::snt The French system also serves as the basis for , or is mixed with , other legal systems in approximately 50 countries , notably in North Africa , the Near East , and the French territories and dependencies .
+fof(ex1414051885926,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,G9,E10,E11] :
+      ( french_1(s0,X3)
+      & system_1(s0,X3)
+      & near_1(s0,X1)
+      & east_1(s0,X1)
+      & ? [G12] :
+          ( legal_1(s0,G12)
+          & systems_1(s0,G12)
+          & is_basis_for_2(s0,X2,G12) )
+      & french_1(s0,G7)
+      & territories_1(s0,G4)
+      & dependencies_1(s0,G5)
+      & is_of_2(s0,G4,G6)
+      & is_of_2(s0,G5,G6)
+      & G7 = G6
+      & approximately_50_1(s0,G9)
+      & countries_1(s0,G9)
+      & is_of_2(s0,north_africa,G8)
+      & is_of_2(s0,X1,G8)
+      & is_of_2(s0,G7,G8)
+      & also_serves_2(s0,E10,X3)
+      & as_2(s0,E10,X2)
+      & in_2(s0,E10,G9)
+      & notably_in_2(s0,E10,G8)
+      & ? [G13] :
+          ( legal_1(s0,G13)
+          & systems_1(s0,G13)
+          & is_mixed_2(s0,E11,X3)
+          & with_2(s0,E11,G13)
+          & in_2(s0,E11,G9)
+          & notably_in_2(s0,E11,G8) ) ) )).
+
+% ::id 157_nonfiction_FACTBOOK-2010;LEGAL;AT7-4;NE
+% ::snt French law is primarily codified or systematic written civil law .
+fof(ex1414051886301,axiom,(
+    ? [X1,G2,E3] :
+      ( french_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( codified_1(s0,X4)
+          & civil_law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( systematic_1(s0,X5)
+          & written_1(s0,X5)
+          & civil_law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & primarily_1(s0,E3)
+      & is_3(s0,E3,X1,G2) ) )).
+
+% ::id 158_nonfiction_FACTBOOK-2010;LEGAL;AT7-5;NE
+% ::snt Prior to the French Revolution -LRB- 1789-1799 -RRB- , France had no single national legal system .
+fof(ex1414051886678,axiom,(
+    ? [T1,S2] :
+      ( predicate__1789_1799_1(s0,T1)
+      & french_revolution = T1
+      & is_prior_to_2(s0,S2,french_revolution)
+      & ? [S5] :
+          ( fact_2(s0,S2,S5)
+          & ? [X3,E4] :
+              ( single_1(S5,X3)
+              & national_1(S5,X3)
+              & legal_system_1(S5,X3)
+              & is_before_2(S5,E4,e0)
+              & had_3(S5,E4,france,X3) ) ) ) )).
+
+% ::id 159_nonfiction_FACTBOOK-2010;LEGAL;AT7-6;NE
+% ::snt Laws in the northern areas of present-day France were mostly local customs based on privileges and exemptions granted by kings and feudal lords , while in the southern areas Roman law predominated .
+fof(ex1414051887093,axiom,(
+    ? [G1,G2,X3,G4,G5,G6,G7,G8,S13,E9,E10,E11,E12] :
+      ( northern_1(s0,G1)
+      & is_areas_of_2(s0,G1,present_day_france)
+      & southern_1(s0,G2)
+      & areas_1(s0,G2)
+      & roman_1(s0,X3)
+      & law_1(s0,X3)
+      & is_laws_in_2(s0,G8,G1)
+      & local_1(s0,G7)
+      & customs_1(s0,G7)
+      & ? [G14] :
+          ( kings_1(s0,G14)
+          & is_of_2(s0,G14,G4) )
+      & ? [G15] :
+          ( feudal_1(s0,G15)
+          & lords_1(s0,G15)
+          & is_of_2(s0,G15,G4) )
+      & granted_3(s0,E9,G4,G6)
+      & ? [G16] :
+          ( privileges_1(s0,G16)
+          & is_of_2(s0,G16,G5) )
+      & ? [G17] :
+          ( exemptions_1(s0,G17)
+          & is_of_2(s0,G17,G5) )
+      & G6 = G5
+      & mostly_1(s0,S13)
+      & is_before_2(s0,E11,e0)
+      & is_before_2(s0,E12,e0)
+      & ? [S18] :
+          ( fact_2(s0,S13,S18)
+          & based_3(S18,E10,unspecified,G7)
+          & on_2(S18,E10,G6)
+          & predominated_2(S18,E11,X3)
+          & in_2(S18,E11,G2)
+          & were_3(S18,E12,G8,G7) ) ) )).
+
+% ::id 160_nonfiction_FACTBOOK-2010;LEGAL;AT7-7;NE
+% ::snt The introduction of the Napoleonic Civil Code during the reign of Napoleon I in the first decade of the 19th century brought major reforms to the French legal system , many of which remain part of France's current legal structure , though all have been extensively amended or redrafted to address a modern nation .
+fof(ex1414051887537,axiom,(
+    ? [X1,X2,X3,X4,T5,X6,X7,X8,X9,G10,S20,E11,E12,E13,E14,E15,E16,S22,S21,S18] :
+      ( is_reign_of_2(s0,X2,napoleon_i)
+      & first_1(s0,X1)
+      & is_decade_of_2(s0,X1,T5)
+      & is_introduction_in_2(s0,X4,X1)
+      & is_introduction_during_2(s0,X4,X2)
+      & is_introduction_of__2(s0,X4,napoleonic_civil_code)
+      & french_1(s0,X3)
+      & legal_system_1(s0,X3)
+      & predicate__19th_1(s0,T5)
+      & century_1(s0,T5)
+      & current_1(s0,X6)
+      & is_legal_structure_of_2(s0,X6,france)
+      & is_part_of_2(s0,X9,X6)
+      & modern_1(s0,X7)
+      & nation_1(s0,X7)
+      & modern_1(s0,X8)
+      & nation_1(s0,X8)
+      & major_1(s0,G10)
+      & ? [X17] :
+          ( is_of_2(s0,X17,G10)
+          & remain_3(s0,E15,X17,X9)
+          & though_2(s0,E15,S18) )
+      & is_reforms_to_2(s0,G10,X3)
+      & extensively_1(s0,S20)
+      & extensively_1(s0,E14)
+      & ? [S23] :
+          ( fact_2(s0,S21,S23)
+          & address_3(S23,E11,X7) )
+      & ? [S24] :
+          ( fact_2(s0,S22,S24)
+          & address_3(S24,E13,X8) )
+      & ? [S25] :
+          ( fact_2(s0,S18,S25)
+          & ? [X19] :
+              ( ? [S26] :
+                  ( fact_2(S25,S20,S26)
+                  & have_been_amended_2(S26,E12,X19)
+                  & prp_2(S26,E12,S21) )
+              & have_been_redrafted_2(S25,E14,X19)
+              & prp_2(S25,E14,S22) ) )
+      & brought_3(s0,E16,X4,G10) ) )).
+
+% ::id 161_nonfiction_FACTBOOK-2010;LEGAL;AT7-8;NE
+% ::snt French law distinguishes between public law and private law .
+fof(ex1414051887917,axiom,(
+    ? [X1,G2,E3] :
+      ( french_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( public_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( private_1(s0,X5)
+          & law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & distinguishes_2(s0,E3,X1)
+      & between_2(s0,E3,G2) ) )).
+
+% ::id 162_nonfiction_FACTBOOK-2010;LEGAL;AT7-9;NE
+% ::snt Public law relates to government , the French Constitution , public administration , and criminal law .
+fof(ex1414051888299,axiom,(
+    ? [X1,G2,E3] :
+      ( public_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( government_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & is_of_2(s0,french_constitution,G2)
+      & ? [X5] :
+          ( public_1(s0,X5)
+          & administration_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( criminal_1(s0,X6)
+          & law_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & relates_2(s0,E3,X1)
+      & to_2(s0,E3,G2) ) )).
+
+% ::id 163_nonfiction_FACTBOOK-2010;LEGAL;AT7-10;NE
+% ::snt Private law covers issues between private citizens or corporations .
+fof(ex1414051888670,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( private_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [G5] :
+          ( private_1(s0,G5)
+          & citizens_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G6] :
+          ( corporations_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & is_issues_between_2(s0,G3,G2)
+      & covers_3(s0,E4,X1,G3) ) )).
+
+% ::id 164_nonfiction_FACTBOOK-2010;LEGAL;AT7-11;NE
+% ::snt The most recent changes to the French legal system - introduced in the 1980s - were the decentralization laws , which transferred authority from centrally appointed government representatives to locally elected representatives of the people .
+fof(ex1414051889106,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,T8,E9,E10,E11] :
+      ( french_1(s0,X1)
+      & legal_system_1(s0,X1)
+      & authority_1(s0,X2)
+      & most_recent_1(s0,G7)
+      & introduced_3(s0,E9,unspecified,G7)
+      & in_2(s0,E9,T8)
+      & is_changes_to_2(s0,G7,X1)
+      & centrally_appointed_1(s0,G5)
+      & government_representatives_1(s0,G5)
+      & people_1(s0,G3)
+      & locally_elected_1(s0,G4)
+      & is_representatives_of_2(s0,G4,G3)
+      & transferred_3(s0,E10,G6,X2)
+      & from_2(s0,E10,G5)
+      & to_2(s0,E10,G4)
+      & decentralization_laws_1(s0,G6)
+      & predicate__1980s_1(s0,T8)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & were_3(s0,E11,G7,G6) ) )).
+
+% ::id 165_nonfiction_FACTBOOK-2010;LEGAL;AT8-1;NE
+% ::snt International Law -
+fof(ex1414051889471,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,international_law) ) )).
+
+% ::id 166_nonfiction_FACTBOOK-2010;LEGAL;AT8-2;NE
+% ::snt The law of the international community , or the body of customary rules and treaty rules accepted as legally binding by states in their relations with each other .
+fof(ex1414051889863,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,E8] :
+      ( international_1(s0,X1)
+      & community_1(s0,X1)
+      & is_law_of_2(s0,X2,X1)
+      & is_body_of_2(s0,X3,G6)
+      & customary_1(s0,G4)
+      & rules_1(s0,G4)
+      & treaty_rules_1(s0,G5)
+      & is_of_2(s0,G4,G6)
+      & is_of_2(s0,G5,G6)
+      & is_of_2(s0,X2,G7)
+      & is_of_2(s0,X3,G7)
+      & xxx_1(s0,E8)
+      & link_2(s0,E8,G7) ) )).
+
+% ::id 167_nonfiction_FACTBOOK-2010;LEGAL;AT8-3;NE
+% ::snt International law differs from other legal systems in that it primarily concerns sovereign political entities .
+fof(ex1414051890241,axiom,(
+    ? [X7,X1,G2,E3,E4,S6] :
+      ( international_1(s0,X1)
+      & law_1(s0,X1)
+      & choose1(X7,X1)
+      & sovereign_1(s0,G2)
+      & political_entities_1(s0,G2)
+      & primarily_1(s0,E3)
+      & ? [S8] :
+          ( fact_2(s0,S6,S8)
+          & concerns_3(S8,E3,X7,G2) )
+      & ? [G5] :
+          ( legal_systems_1(s0,G5)
+          & differs_2(s0,E4,X1)
+          & from_2(s0,E4,G5)
+          & in_2(s0,E4,S6) ) ) )).
+
+% ::id 168_nonfiction_FACTBOOK-2010;LEGAL;AT8-4;NE
+% ::snt There are three separate disciplines of international law :
+fof(ex1414051890607,axiom,(
+    ? [X1,G2,E3] :
+      ( international_1(s0,X1)
+      & law_1(s0,X1)
+      & three_1(s0,G2)
+      & separate_1(s0,G2)
+      & is_disciplines_of_2(s0,G2,X1)
+      & are_2(s0,E3,G2) ) )).
+
+% ::id 169_nonfiction_FACTBOOK-2010;LEGAL;AT8-5;NE
+% ::snt public international law , which governs the relationship between provinces and international entities and includes treaty law , law of the sea , international criminal law , and international humanitarian law ; private international law , which addresses legal jurisdiction ; and supranational law - a legal framework wherein countries are bound by regional agreements in which the laws of the member countries are held inapplicable when in conflict with supranational laws .
+fof(ex1414051891091,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,G8,E9] :
+      ( is_relationship_between_2(s0,X1,G5)
+      & sea_1(s0,X2)
+      & provinces_1(s0,G3)
+      & international_1(s0,G4)
+      & entities_1(s0,G4)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & member_countries_1(s0,G6)
+      & is_laws_of_2(s0,G7,G6)
+      & ? [X10,G11,E12,E13] :
+          ( public_1(s0,X10)
+          & governs_3(s0,E12,X10,X1)
+          & includes_3(s0,E13,X10,G11)
+          & international_law_1(s0,X10)
+          & ? [X14] :
+              ( treaty_law_1(s0,X14)
+              & is_of_2(s0,X14,G11) )
+          & ? [X15] :
+              ( is_law_of_2(s0,X15,X2)
+              & is_of_2(s0,X15,G11) )
+          & ? [X16] :
+              ( international_1(s0,X16)
+              & criminal_law_1(s0,X16)
+              & is_of_2(s0,X16,G11) )
+          & ? [X17] :
+              ( international_1(s0,X17)
+              & humanitarian_law_1(s0,X17)
+              & is_of_2(s0,X17,G11) )
+          & is_of_2(s0,X10,G8) )
+      & ? [X18,X19,E20] :
+          ( legal_1(s0,X18)
+          & jurisdiction_1(s0,X18)
+          & private_1(s0,X19)
+          & addresses_3(s0,E20,X19,X18)
+          & international_law_1(s0,X19)
+          & is_of_2(s0,X19,G8) )
+      & ? [X21,X22,X23,G24,G25,G26,E27,E28,S29] :
+          ( supranational_1(s0,X23)
+          & law_1(s0,X23)
+          & is_conflict_with_2(s0,X21,G24)
+          & legal_1(s0,X22)
+          & is_framework_wherein_2(s0,X22,S29)
+          & countries_1(s0,G26)
+          & supranational_1(s0,G24)
+          & laws_1(s0,G24)
+          & regional_1(s0,G25)
+          & held_3(s0,E27,unspecified,G7)
+          & in_2(s0,E27,G25)
+          & when_in_2(s0,E27,X21)
+          & agreements_1(s0,G25)
+          & X23 = X22
+          & inapplicable_1(s0,E27)
+          & ? [S30] :
+              ( fact_2(s0,S29,S30)
+              & bound_3(S30,E28,G25,G26) )
+          & is_of_2(s0,X23,G8) )
+      & xxx_1(s0,E9)
+      & link_2(s0,E9,G8) ) )).
+
+% ::id 170_nonfiction_FACTBOOK-2010;LEGAL;AT8-6;NE
+% ::snt At present the European Union is the only entity under a supranational legal system .
+fof(ex1414051891470,axiom,(
+    ? [X1,X2,X3] :
+      ( supranational_1(s0,X1)
+      & legal_system_1(s0,X1)
+      & is_entity_under_2(s0,X2,X1)
+      & present_1(s0,X3)
+      & ? [X4] :
+          ( is_of_2(s0,X4,X2)
+          & ? [E5] :
+              ( is_3(s0,E5,european_union,X4)
+              & at_2(s0,E5,X3) ) ) ) )).
+
+% ::id 171_nonfiction_FACTBOOK-2010;LEGAL;AT8-7;NE
+% ::snt The term international law was coined by Jeremy Bentham in 1780 in his Principles of Morals and Legislation , though laws governing relations between states have been recognized from very early times -LRB- many centuries B.C. -RRB- .
+fof(ex1414051891871,axiom,(
+    ? [X1,T2,X12,G3,G4,G5,G6,G7,T8,E9,E10,E11,S15] :
+      ( term_international_law_1(s0,X1)
+      & predicate__1780_1(s0,T2)
+      & choose1(X12,X1)
+      & ? [G13] :
+          ( morals_1(s0,G13)
+          & is_of_2(s0,G13,G3) )
+      & ? [X14] :
+          ( legislation_1(s0,X14)
+          & is_of_2(s0,X14,G3) )
+      & is_principles_of_2(s0,G7,G3)
+      & is_principles_of__2(s0,G7,X12)
+      & states_1(s0,G4)
+      & is_relations_between_2(s0,G5,G4)
+      & governing_3(s0,E9,G6,G5)
+      & laws_1(s0,G6)
+      & very_early_1(s0,T8)
+      & times_1(s0,T8)
+      & ? [X16] :
+          ( centuries_b_c_1(s0,X16)
+          & T8 = X16 )
+      & is_before_2(s0,E11,e0)
+      & ? [S17] :
+          ( fact_2(s0,S15,S17)
+          & have_recognized_3(S17,E10,unspecified,G6)
+          & from_2(S17,E10,T8) )
+      & coined_3(s0,E11,jeremy_bentham,X1)
+      & in__2(s0,E11,T2)
+      & in_2(s0,E11,G7)
+      & though_2(s0,E11,S15) ) )).
+
+% ::id 172_nonfiction_FACTBOOK-2010;LEGAL;AT8-8;NE
+% ::snt Modern international law developed alongside the emergence and growth of the European nation-states beginning in the early 16th century .
+fof(ex1414051892257,axiom,(
+    ? [X1,X2,G3,G4,G5,T6,X7,E8,E9] :
+      ( emergence_1(s0,X1)
+      & growth_1(s0,X2)
+      & european_1(s0,G3)
+      & nation_states_1(s0,G3)
+      & is_of_2(s0,G5,G3)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & G5 = G4
+      & predicate__16th_1(s0,T6)
+      & early_1(s0,T6)
+      & century_1(s0,T6)
+      & modern_1(s0,X7)
+      & international_law_1(s0,X7)
+      & is_before_2(s0,E9,e0)
+      & beginning_2(s0,E8,X7)
+      & in_2(s0,E8,T6)
+      & developed_2(s0,E9,X7)
+      & alongside_2(s0,E9,G5) ) )).
+
+% ::id 173_nonfiction_FACTBOOK-2010;LEGAL;AT8-9;NE
+% ::snt Other factors that influenced the development of international law included the revival of legal studies , the growth of international trade , and the practice of exchanging emissaries and establishing legations .
+fof(ex1414051892657,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,G9,G10,G11,E12,E13] :
+      ( international_1(s0,X1)
+      & law_1(s0,X1)
+      & is_development_of_2(s0,X2,X1)
+      & is_revival_of_2(s0,X3,G7)
+      & international_1(s0,X4)
+      & trade_1(s0,X4)
+      & is_growth_of_2(s0,X5,X4)
+      & is_practice_of_2(s0,X6,G10)
+      & legal_1(s0,G7)
+      & studies_1(s0,G7)
+      & exchanging_1(s0,G8)
+      & emissaries_1(s0,G8)
+      & establishing_1(s0,G9)
+      & legations_1(s0,G9)
+      & is_of_2(s0,G8,G10)
+      & is_of_2(s0,G9,G10)
+      & is_of_2(s0,X3,G11)
+      & is_of_2(s0,X5,G11)
+      & is_of_2(s0,X6,G11)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & ? [G14] :
+          ( influenced_3(s0,E12,G14,X2)
+          & factors_1(s0,G14)
+          & included_3(s0,E13,G14,G11) ) ) )).
+
+% ::id 174_nonfiction_FACTBOOK-2010;LEGAL;AT8-10;NE
+% ::snt The sources of International law are set out in Article 38-1 of the Statute of the International Court of Justice within the UN Charter .
+fof(ex1414051893038,axiom,(
+    ? [X1,X2,X3,X4,G5,X6,E7] :
+      ( international_1(s0,X1)
+      & law_1(s0,X1)
+      & justice_1(s0,X2)
+      & is_international_court_of_2(s0,X3,X2)
+      & is_statute_of_2(s0,X4,X3)
+      & is_sources_of_2(s0,G5,X1)
+      & is_article_38_1_within_2(s0,X6,un__charter)
+      & is_article_38_1_of_2(s0,X6,X4)
+      & set_out_3(s0,E7,unspecified,G5)
+      & in_2(s0,E7,X6) ) )).
+
+% ::id 175_nonfiction_FACTBOOK-2010;LEGAL;AT9-1;NE
+% ::snt Islamic Law -
+fof(ex1414051893400,axiom,(
+    ? [X1,E2] :
+      ( islamic_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 176_nonfiction_FACTBOOK-2010;LEGAL;AT9-2;NE
+% ::snt The most widespread type of religious law ,
+fof(ex1414051893773,axiom,(
+    ? [X1,E2] :
+      ( religious_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X3] :
+          ( widespread_1(s0,X3)
+          & is_type_of_2(s0,X3,X1)
+          & xxx_1(s0,E2)
+          & link_2(s0,E2,X3) ) ) )).
+
+% ::id 177_nonfiction_FACTBOOK-2010;LEGAL;AT9-3;NE
+% ::snt it is the legal system enforced in over 30 countries , particularly in the Near East , but also in Central and South Asia , Africa , and Indonesia .
+fof(ex1414051894149,axiom,(
+    ? [X1,X7,G2,G3,E4,E5,E6] :
+      ( legal_1(s0,X1)
+      & system_1(s0,X1)
+      & over_30_1(s0,G3)
+      & countries_1(s0,G3)
+      & ? [G8] :
+          ( is_of_2(s0,central,G8)
+          & is_of_2(s0,south_asia,G8)
+          & is_of_2(s0,G8,G2) )
+      & is_of_2(s0,africa,G2)
+      & is_of_2(s0,indonesia,G2)
+      & ? [S9] :
+          ( is_3(s0,E6,X7,S9)
+          & enforced_3(S9,E4,unspecified,X1)
+          & in_2(S9,E4,G3)
+          & particularly_in_2(S9,E4,near_east)
+          & enforced_3(S9,E5,unspecified,X1)
+          & in_2(S9,E5,G3)
+          & also_in_2(S9,E5,G2) ) ) )).
+
+% ::id 178_nonfiction_FACTBOOK-2010;LEGAL;AT9-4;NE
+% ::snt In many countries Islamic law operates in tandem with a civil law system .
+fof(ex1414051894520,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( islamic_1(s0,X3)
+      & law_1(s0,X3)
+      & civil_law_system_1(s0,X1)
+      & is_tandem_with_2(s0,X2,X1)
+      & ? [G5] :
+          ( countries_1(s0,G5)
+          & operates_2(s0,E4,X3)
+          & in__2(s0,E4,G5)
+          & in_2(s0,E4,X2) ) ) )).
+
+% ::id 179_nonfiction_FACTBOOK-2010;LEGAL;AT9-5;NE
+% ::snt Islamic law is embodied in the sharia , an Arabic word meaning the right path .
+fof(ex1414051894891,axiom,(
+    ? [X1,X2,X3,E4,E5,X6,E7] :
+      ( right_1(s0,X1)
+      & path_1(s0,X1)
+      & arabic_1(s0,X2)
+      & meaning_3(s0,E4,X2,X1)
+      & word_1(s0,X2)
+      & xxx_3(s0,E5,X3,X2)
+      & sharia_1(s0,X3)
+      & islamic_1(s0,X6)
+      & law_1(s0,X6)
+      & is_embodied_2(s0,E7,X6)
+      & in_2(s0,E7,X3) ) )).
+
+% ::id 180_nonfiction_FACTBOOK-2010;LEGAL;AT9-6;NE
+% ::snt Sharia covers all aspects of public and private life and organizes them into five categories : obligatory , recommended , permitted , disliked , and forbidden .
+fof(ex1414051895289,axiom,(
+    ? [G9,G1,G2,G3,E4,E5] :
+      ( ? [X7] :
+          ( public_1(s0,X7)
+          & life_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & ? [X8] :
+          ( private_1(s0,X8)
+          & life_1(s0,X8)
+          & is_of_2(s0,X8,G1) )
+      & choose1(G9,G1)
+      & five_1(s0,G3)
+      & categories_1(s0,G3)
+      & ? [X10] :
+          ( obligatory_1(s0,X10)
+          & is_of_2(s0,X10,G2) )
+      & ? [X11] :
+          ( recommended_1(s0,X11)
+          & is_of_2(s0,X11,G2) )
+      & ? [X12] :
+          ( permitted_1(s0,X12)
+          & is_of_2(s0,X12,G2) )
+      & ? [X13] :
+          ( disliked_1(s0,X13)
+          & is_of_2(s0,X13,G2) )
+      & ? [X14] :
+          ( forbidden_1(s0,X14)
+          & is_of_2(s0,X14,G2) )
+      & G3 = G2
+      & ? [G6] :
+          ( is_aspects_of_2(s0,G6,G1)
+          & covers_3(s0,E4,sharia,G6) )
+      & organizes_3(s0,E5,sharia,G9)
+      & into_2(s0,E5,G3) ) )).
+
+% ::id 181_nonfiction_FACTBOOK-2010;LEGAL;AT9-7;NE
+% ::snt The primary sources of sharia law are the Qur'an , believed by Muslims to be the word of God revealed to the Prophet Muhammad by the angel Gabriel , and the Sunnah , the teachings of the Prophet and his works .
+fof(ex1414051895699,axiom,(
+    ? [X1,X2,G3,G4,E5,G6,E7] :
+      ( sharia_law_1(s0,X1)
+      & revealed_3(s0,E5,angel_gabriel,X2)
+      & to_2(s0,E5,prophet_muhammad)
+      & is_word_of_2(s0,X2,god)
+      & primary_1(s0,G4)
+      & is_sources_of_2(s0,G4,X1)
+      & is_teachings_of_2(s0,G3,prophet)
+      & ? [E8,E9] :
+          ( ? [S13] :
+              ( believed_4(s0,E9,muslims,qur_an,S13)
+              & be_3(S13,E8,qur_an,X2) )
+          & is_of_2(s0,qur_an,G6) )
+      & ? [G10] :
+          ( is_of_2(s0,G3,G10)
+          & ? [X12,G11] :
+              ( choose8(X12,sunnah,prophet,qur_an,god,prophet_muhammad,angel_gabriel,X2,X1)
+              & is_works_of_2(s0,G11,X12)
+              & is_of_2(s0,G11,G10) )
+          & sunnah = G10
+          & is_of_2(s0,sunnah,G6) )
+      & are_3(s0,E7,G4,G6) ) )).
+
+% ::id 182_nonfiction_FACTBOOK-2010;LEGAL;AT9-8;NE
+% ::snt In addition to these two primary sources , traditional Sunni Muslims recognize the consensus of Muhammad's companions and Islamic jurists on certain issues , called ijmas , and various forms of reasoning , including analogy by legal scholars , referred to as qiyas .
+fof(ex1414051896117,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,G9,G10,G11,G12,E13,E14,E15,X16,E17] :
+      ( is_analogy_by_2(s0,X1,G8)
+      & including_3(s0,E14,X2,X1)
+      & referred_to_2(s0,E15,X2)
+      & as_2(s0,E15,G9)
+      & reasoning_1(s0,X2)
+      & is_consensus_on_2(s0,X3,G11)
+      & is_consensus_of__2(s0,X3,G12)
+      & two_1(s0,G4)
+      & primary_1(s0,G4)
+      & sources_1(s0,G4)
+      & is_companions_of_2(s0,G5,muhammad)
+      & islamic_1(s0,G6)
+      & jurists_1(s0,G6)
+      & is_of_2(s0,G5,G12)
+      & is_of_2(s0,G6,G12)
+      & certain_1(s0,G7)
+      & called_2(s0,E13,G7)
+      & issues_1(s0,G7)
+      & legal_1(s0,G8)
+      & scholars_1(s0,G8)
+      & qiyas_1(s0,G9)
+      & various_1(s0,G10)
+      & is_forms_of_2(s0,G10,X2)
+      & is_of_2(s0,G7,G11)
+      & is_of_2(s0,G10,G11)
+      & is_addition_to_2(s0,X16,G4)
+      & recognize_3(s0,E17,traditional_sunni_muslims,X3)
+      & in_2(s0,E17,X16) ) )).
+
+% ::id 183_nonfiction_FACTBOOK-2010;LEGAL;AT9-9;NE
+% ::snt Shia Muslims reject ijmas and qiyas as sources of sharia law .
+fof(ex1414051896493,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( sharia_law_1(s0,X1)
+      & ? [G5] :
+          ( ijmas_1(s0,G5)
+          & is_of_2(s0,G5,G3) )
+      & ? [G6] :
+          ( qiyas_1(s0,G6)
+          & is_of_2(s0,G6,G3) )
+      & is_sources_of_2(s0,G2,X1)
+      & reject_3(s0,E4,shia_muslims,G3)
+      & as_2(s0,E4,G2) ) )).
+
+% ::id 184_nonfiction_FACTBOOK-2010;LEGAL;AT10-1;NE
+% ::snt Mixed Law - Also referred to as pluralistic law ,
+fof(ex1414051896861,axiom,(
+    ? [X1,E2,E3] :
+      ( pluralistic_1(s0,X1)
+      & law_1(s0,X1)
+      & also_referred_to_2(s0,E2,mixed_law)
+      & as_2(s0,E2,X1)
+      & is_before_2(s0,E2,e0)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,mixed_law) ) )).
+
+% ::id 185_nonfiction_FACTBOOK-2010;LEGAL;AT10-2;NE
+% ::snt mixed law consists of elements of some or all of the other main types of legal systems - civil , common , customary , and religious .
+fof(ex1414051897249,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,X7,G8,G9,G10,E11] :
+      ( civil_1(s0,X1)
+      & common_1(s0,X2)
+      & customary_1(s0,X3)
+      & religious_1(s0,X4)
+      & legal_1(s0,G6)
+      & systems_1(s0,G6)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & is_of_2(s0,X3,G5)
+      & is_of_2(s0,X4,G5)
+      & G6 = G5
+      & mixed_1(s0,X7)
+      & law_1(s0,X7)
+      & ? [G12] :
+          ( main_1(s0,G12)
+          & is_types_of_2(s0,G12,G6)
+          & is_of_2(s0,G9,G12) )
+      & ? [X13] : is_of_2(s0,X13,G8)
+      & ? [X14] : is_of_2(s0,X14,G8)
+      & G9 = G8
+      & is_elements_of_2(s0,G10,G9)
+      & consists_2(s0,E11,X7)
+      & of_2(s0,E11,G10) ) )).
+
+% ::id 186_nonfiction_FACTBOOK-2010;LEGAL;AT10-3;NE
+% ::snt The mixed legal systems of a number of countries came about when colonial powers overlaid their own legal systems upon colonized regions but retained elements of the colonies ' existing legal systems .
+fof(ex1414051897651,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( is_number_of_2(s0,X1,G2)
+      & countries_1(s0,G2)
+      & mixed_1(s0,G4)
+      & is_legal_systems_of_2(s0,G4,X1)
+      & colonies_1(s0,G3)
+      & ? [G15,G6,G7,G8,G9,G10,T11,S14,E12,E13] :
+          ( colonial_powers_1(s0,G10)
+          & choose3(G15,G10,G4,G2)
+          & own_1(s0,G7)
+          & is_legal_systems_of_2(s0,G7,G15)
+          & colonized_1(s0,G6)
+          & regions_1(s0,G6)
+          & existing_1(s0,G8)
+          & is_legal_systems_of_2(s0,G8,G3)
+          & is_elements_of_2(s0,G9,G8)
+          & ? [S16] :
+              ( fact_2(s0,S14,S16)
+              & overlaid_3(S16,E12,G10,G7)
+              & upon_2(S16,E12,G6)
+              & retained_3(S16,E13,G10,G9) )
+          & is_when_2(s0,S14,T11)
+          & is_before_2(s0,E12,e0)
+          & is_before_2(s0,E13,e0)
+          & is_tmp_2(s0,E5,T11) )
+      & is_before_2(s0,E5,e0)
+      & came_about_2(s0,E5,G4) ) )).
+
+% ::id 187_nonfiction_FACTBOOK-2010;LEGAL;AT11-1;NE
+% ::snt Napoleonic Civil Code -
+fof(ex1414051898012,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,napoleonic_civil_code) ) )).
+
+% ::id 188_nonfiction_FACTBOOK-2010;LEGAL;AT11-2;NE
+% ::snt A type of civil law , referred to as the Civil Code or Code Civil des Francais , forms part of the legal system of France , and underpins the legal systems of Bolivia , Egypt , Lebanon , Poland , and the US state of Louisiana .
+fof(ex1414051898401,axiom,(
+    ? [X1,X2,G3,G4,X5,X6,X7,G8,E9,E10,E11] :
+      ( legal_1(s0,X1)
+      & is_system_of_2(s0,X1,france)
+      & is_us__state_of_2(s0,X2,louisiana)
+      & is_of_2(s0,bolivia,G3)
+      & is_of_2(s0,egypt,G3)
+      & is_of_2(s0,lebanon,G3)
+      & is_of_2(s0,poland,G3)
+      & is_of_2(s0,X2,G3)
+      & legal_1(s0,G4)
+      & is_systems_of_2(s0,G4,G3)
+      & civil_1(s0,X5)
+      & law_1(s0,X5)
+      & referred_to_2(s0,E9,X7)
+      & as_2(s0,E9,G8)
+      & is_type_of_2(s0,X7,X5)
+      & is_part_of_2(s0,X6,X1)
+      & is_of_2(s0,civil_code,G8)
+      & is_of_2(s0,code_civil_des_francais,G8)
+      & forms_3(s0,E10,X7,X6)
+      & underpins_3(s0,E11,X7,G4) ) )).
+
+% ::id 189_nonfiction_FACTBOOK-2010;LEGAL;AT11-3;NE
+% ::snt The Civil Code was established under Napoleon I , enacted in 1804 , and officially designated the Code Napoleon in 1807 .
+fof(ex1414051898787,axiom,(
+    ? [T1,T2,E3,E4,E5] :
+      ( predicate__1804_1(s0,T1)
+      & predicate__1807_1(s0,T2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & officially_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & established_3(s0,E3,unspecified,civil_code)
+      & under_2(s0,E3,napoleon_i)
+      & was_enacted_2(s0,E4,civil_code)
+      & in_2(s0,E4,T1)
+      & was_designated_3(s0,E5,civil_code,code_napoleon)
+      & in_2(s0,E5,T2) ) )).
+
+% ::id 190_nonfiction_FACTBOOK-2010;LEGAL;AT11-4;NE
+% ::snt This legal system combined the Teutonic civil law tradition of the northern provinces of France with the Roman law tradition of the southern and eastern regions of the country .
+fof(ex1414051899174,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,G7,G8,G9,E10] :
+      ( legal_1(s0,X4)
+      & system_1(s0,X4)
+      & teutonic_1(s0,X3)
+      & is_civil_law_tradition_of_2(s0,X3,G5)
+      & country_1(s0,X1)
+      & roman_1(s0,X2)
+      & is_law_tradition_of_2(s0,X2,G9)
+      & northern_1(s0,G5)
+      & is_provinces_of_2(s0,G5,france)
+      & is_of_2(s0,G9,X1)
+      & southern_1(s0,G6)
+      & regions_1(s0,G6)
+      & eastern_1(s0,G7)
+      & regions_1(s0,G7)
+      & is_of_2(s0,G6,G8)
+      & is_of_2(s0,G7,G8)
+      & G9 = G8
+      & is_before_2(s0,E10,e0)
+      & combined_3(s0,E10,X4,X3)
+      & with_2(s0,E10,X2) ) )).
+
+% ::id 191_nonfiction_FACTBOOK-2010;LEGAL;AT11-5;NE
+% ::snt The Civil Code bears similarities in its arrangement to the Roman Body of Civil Law -LRB- see Civil Law above -RRB- .
+fof(ex1414051899554,axiom,(
+    ? [X1,X6,X2,G3,E4,E5] :
+      ( roman_1(s0,X1)
+      & is_body_of_2(s0,X1,civil_law)
+      & choose1(X6,civil_code)
+      & is_arrangement_of_2(s0,X2,X6)
+      & is_similarities_to_2(s0,G3,X1)
+      & is_similarities_in_2(s0,G3,X2)
+      & above_1(s0,E5)
+      & bears_3(s0,E4,civil_code,G3)
+      & see_3(s0,E5,unspecified,civil_law) ) )).
+
+% ::id 192_nonfiction_FACTBOOK-2010;LEGAL;AT11-6;NE
+% ::snt As enacted in 1804 , the Code addressed personal status , property , and the acquisition of property .
+fof(ex1414051899934,axiom,(
+    ? [X1,X2,T3,G4,E5,E6] :
+      ( property_1(s0,X1)
+      & is_acquisition_of_2(s0,X2,X1)
+      & predicate__1804_1(s0,T3)
+      & ? [X7] :
+          ( personal_1(s0,X7)
+          & status_1(s0,X7)
+          & is_of_2(s0,X7,G4) )
+      & ? [X8] :
+          ( property_1(s0,X8)
+          & is_of_2(s0,X8,G4) )
+      & is_of_2(s0,X2,G4)
+      & is_before_2(s0,E6,e0)
+      & enacted_3(s0,E5,unspecified,code)
+      & in_2(s0,E5,T3)
+      & addressed_3(s0,E6,code,G4) ) )).
+
+% ::id 193_nonfiction_FACTBOOK-2010;LEGAL;AT11-7;NE
+% ::snt Codes added over the following six years included civil procedures , commercial law , criminal law and procedures , and a penal code .
+fof(ex1414051900325,axiom,(
+    ? [G1,G2,G3,E4,E5] :
+      ( six_1(s0,G1)
+      & following_1(s0,G1)
+      & years_1(s0,G1)
+      & added_2(s0,E4,G3)
+      & over_2(s0,E4,G1)
+      & codes_1(s0,G3)
+      & ? [G6] :
+          ( civil_1(s0,G6)
+          & procedures_1(s0,G6)
+          & is_of_2(s0,G6,G2) )
+      & ? [X7] :
+          ( commercial_1(s0,X7)
+          & law_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & ? [G8] :
+          ( ? [X9] :
+              ( criminal_1(s0,X9)
+              & law_1(s0,X9)
+              & is_of_2(s0,X9,G8) )
+          & ? [G10] :
+              ( procedures_1(s0,G10)
+              & is_of_2(s0,G10,G8) )
+          & is_of_2(s0,G8,G2) )
+      & ? [X11] :
+          ( penal_1(s0,X11)
+          & code_1(s0,X11)
+          & is_of_2(s0,X11,G2) )
+      & included_3(s0,E5,G3,G2) ) )).
+
+% ::id 194_nonfiction_FACTBOOK-2010;LEGAL;AT12-1;NE
+% ::snt Religious Law -
+fof(ex1414051900692,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,religious_law) ) )).
+
+% ::id 195_nonfiction_FACTBOOK-2010;LEGAL;AT12-2;NE
+% ::snt A legal system which stems from the sacred texts of religious traditions and in most cases professes to cover all aspects of life as a seamless part of devotional obligations to a transcendent , imminent , or deep philosophical reality .
+fof(ex1414051901117,axiom,(
+    ? [G1,G2,X3,X4,X5,G6,G7,E8,E9,E10,E11] :
+      ( religious_1(s0,G1)
+      & traditions_1(s0,G1)
+      & sacred_1(s0,G2)
+      & is_texts_of_2(s0,G2,G1)
+      & life_1(s0,X3)
+      & seamless_1(s0,X4)
+      & is_part_of_2(s0,X4,G7)
+      & legal_1(s0,X5)
+      & stems_2(s0,E8,X5)
+      & from_2(s0,E8,G2)
+      & ? [G12] :
+          ( cases_1(s0,G12)
+          & ? [S17] :
+              ( professes_3(s0,E10,X5,S17)
+              & ? [G13] :
+                  ( is_aspects_of_2(S17,G13,X3)
+                  & cover_3(S17,E9,X5,G13)
+                  & as_2(S17,E9,X4) ) )
+          & in_2(s0,E10,G12) )
+      & system_1(s0,X5)
+      & ? [X14] :
+          ( transcendent_1(s0,X14)
+          & reality_1(s0,X14)
+          & is_of_2(s0,X14,G6) )
+      & ? [X15] :
+          ( imminent_1(s0,X15)
+          & reality_1(s0,X15)
+          & is_of_2(s0,X15,G6) )
+      & ? [X16] :
+          ( deep_1(s0,X16)
+          & philosophical_1(s0,X16)
+          & reality_1(s0,X16)
+          & is_of_2(s0,X16,G6) )
+      & devotional_1(s0,G7)
+      & is_obligations_to_2(s0,G7,G6)
+      & xxx_1(s0,E11)
+      & link_2(s0,E11,X5) ) )).
+
+% ::id 196_nonfiction_FACTBOOK-2010;LEGAL;AT12-3;NE
+% ::snt Implied as the basis of religious law is the concept of unalterability , because the word of God cannot be amended or legislated against by judges or governments .
+fof(ex1414051901526,axiom,(
+    ? [X1,X2,X3,X4,X5,X8,E6,E7] :
+      ( religious_1(s0,X1)
+      & law_1(s0,X1)
+      & is_basis_of_2(s0,X2,X1)
+      & unalterability_1(s0,X3)
+      & is_concept_of_2(s0,X5,X3)
+      & is_word_of_2(s0,X4,god)
+      & implied_3(s0,E6,unspecified,X8)
+      & as_2(s0,E6,X2)
+      & ? [G9,E10,E11] :
+          ( ? [G12] :
+              ( judges_1(s0,G12)
+              & is_of_2(s0,G12,G9) )
+          & ? [G13] :
+              ( governments_1(s0,G13)
+              & is_of_2(s0,G13,G9) )
+          & amended_3(s0,E10,unspecified,X4)
+          & by_2(s0,E10,G9)
+          & legislated_against_3(s0,E11,unspecified,X4)
+          & by_2(s0,E11,G9) )
+      & is_3(s0,E7,X8,X5) ) )).
+
+% ::id 197_nonfiction_FACTBOOK-2010;LEGAL;AT12-4;NE
+% ::snt However , a detailed legal system generally requires human elaboration .
+fof(ex1414051901892,axiom,(
+    ? [X1,X2,E3] :
+      ( detailed_1(s0,X2)
+      & legal_system_1(s0,X2)
+      & human_1(s0,X1)
+      & elaboration_1(s0,X1)
+      & however_1(s0,E3)
+      & generally_1(s0,E3)
+      & requires_3(s0,E3,X2,X1) ) )).
+
+% ::id 198_nonfiction_FACTBOOK-2010;LEGAL;AT12-5;NE
+% ::snt The main types of religious law are sharia in Islam , halakha in Judaism , and canon law in some Christian groups .
+fof(ex1414051902271,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( religious_1(s0,X1)
+      & law_1(s0,X1)
+      & main_1(s0,G2)
+      & is_types_of_2(s0,G2,X1)
+      & ? [X5] :
+          ( is_sharia_in_2(s0,X5,islam)
+          & is_of_2(s0,X5,G3) )
+      & ? [X6] :
+          ( is_halakha_in_2(s0,X6,judaism)
+          & is_of_2(s0,X6,G3) )
+      & ? [X7,G8] :
+          ( is_canon_law_in_2(s0,X7,G8)
+          & christian_1(s0,G8)
+          & groups_1(s0,G8)
+          & is_of_2(s0,X7,G3) )
+      & are_3(s0,E4,G2,G3) ) )).
+
+% ::id 199_nonfiction_FACTBOOK-2010;LEGAL;AT12-6;NE
+% ::snt Sharia is the most widespread religious legal system -LRB- see Islamic Law -RRB- , and is the sole system of law for countries including Iran , the Maldives , and Saudi Arabia .
+fof(ex1414051902660,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,X7,X8,E9,E10,E11] :
+      ( most_widespread_1(s0,X1)
+      & religious_1(s0,X1)
+      & legal_system_1(s0,X1)
+      & law_1(s0,X2)
+      & sole_1(s0,X3)
+      & is_system_for_2(s0,X3,G5)
+      & is_system_of_2(s0,X3,X2)
+      & is_of_2(s0,iran,G4)
+      & is_of_2(s0,maldives,G4)
+      & is_of_2(s0,saudi_arabia,G4)
+      & including_3(s0,E6,G5,G4)
+      & countries_1(s0,G5)
+      & sharia_1(s0,X7)
+      & islamic_1(s0,X8)
+      & law_1(s0,X8)
+      & is_3(s0,E9,X7,X1)
+      & is_3(s0,E10,X7,X3)
+      & see_3(s0,E11,unspecified,X8) ) )).
+
+% ::id 200_nonfiction_FACTBOOK-2010;LEGAL;AT12-7;NE
+% ::snt No country is fully governed by halakha ,
+fof(ex1414051903028,axiom,(
+    ? [X1,X2,E3] :
+      ( country_1(s0,X2)
+      & halakha_1(s0,X1)
+      & fully_1(s0,E3)
+      & governed_3(s0,E3,X1,X2) ) )).
+
+% ::id 201_nonfiction_FACTBOOK-2010;LEGAL;AT12-8;NE
+% ::snt but Jewish people may decide to settle disputes through Jewish courts and be bound by their rulings .
+fof(ex1414051903407,axiom,(
+    ? [G1] :
+      ( jewish_1(s0,G1)
+      & people_1(s0,G1)
+      & ? [G8,G2,G3,G4,E5,E6,E7] :
+          ( disputes_1(s0,G3)
+          & jewish_1(s0,G2)
+          & courts_1(s0,G2)
+          & choose3(G8,G1,G3,G2)
+          & is_rulings_of_2(s0,G4,G8)
+          & ? [S9] :
+              ( decide_3(s0,E6,G1,S9)
+              & settle_3(S9,E5,G1,G3)
+              & through_2(S9,E5,G2) )
+          & bound_3(s0,E7,G4,G1) ) ) )).
+
+% ::id 202_nonfiction_FACTBOOK-2010;LEGAL;AT12-9;NE
+% ::snt Canon law is not a divine law as such because it is not found in revelation .
+fof(ex1414051903788,axiom,(
+    ? [X1] :
+      ( canon_law_1(s0,X1)
+      & ? [X6,X2,E3,S5] :
+          ( divine_1(s0,X2)
+          & ? [X4] : is_law_as_2(s0,X2,X4)
+          & choose2(X6,X2,X1)
+          & ? [S9] :
+              ( fact_2(s0,S5,S9)
+              & ? [X7,E8] :
+                  ( revelation_1(S9,X7)
+                  & found_3(S9,E8,unspecified,X6)
+                  & in_2(S9,E8,X7) ) )
+          & is_3(s0,E3,X1,X2)
+          & because_2(s0,E3,S5) ) ) )).
+
+% ::id 203_nonfiction_FACTBOOK-2010;LEGAL;AT12-10;NE
+% ::snt It is viewed instead as human law inspired by the word of God and applying the demands of that revelation to the actual situation of the church .
+fof(ex1414051904179,axiom,(
+    ? [X1,X2,X3,X4,G5,X10,X6,E7,E8,E9,S11] :
+      ( is_word_of_2(s0,X1,god)
+      & revelation_1(s0,X2)
+      & church_1(s0,X3)
+      & actual_1(s0,X4)
+      & is_situation_of_2(s0,X4,X3)
+      & is_demands_of_2(s0,G5,X2)
+      & human_1(s0,X6)
+      & law_1(s0,X6)
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & inspired_3(S12,E7,X1,X6) )
+      & applying_3(s0,E8,X10,G5)
+      & to_2(s0,E8,X4)
+      & viewed_3(s0,E9,unspecified,X10)
+      & instead_as_2(s0,E9,S11) ) )).
+
+% ::id 204_nonfiction_FACTBOOK-2010;LEGAL;AT12-11;NE
+% ::snt Canon law regulates the internal ordering of the Roman Catholic Church , the Eastern Orthodox Church , and the Anglican Communion .
+fof(ex1414051904552,axiom,(
+    ? [X1,G2,X3,E4] :
+      ( internal_1(s0,X1)
+      & ordering_1(s0,X1)
+      & is_of_2(s0,X1,G2)
+      & is_of_2(s0,roman_catholic_church,G2)
+      & is_of_2(s0,eastern_orthodox_church,G2)
+      & is_of_2(s0,anglican_communion,G2)
+      & canon_law_1(s0,X3)
+      & regulates_3(s0,E4,X3,X1) ) )).
+
+% ::id 205_nonfiction_FACTBOOK-2010;LEGAL;AT13-1;NE
+% ::snt Roman Law -
+fof(ex1414051904912,axiom,(
+    ? [X1,E2] :
+      ( roman_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 206_nonfiction_FACTBOOK-2010;LEGAL;AT13-2;NE
+% ::snt A type of civil law developed in ancient Rome and practiced from the time of the city's founding -LRB- traditionally 753 B.C. -RRB- until the fall of the Western Empire in the 5th century A.D. .
+fof(ex1414051905307,axiom,(
+    ? [X1,X2,E3] :
+      ( civil_1(s0,X1)
+      & law_1(s0,X1)
+      & is_type_of_2(s0,X2,X1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,X2) ) )).
+
+% ::id 207_nonfiction_FACTBOOK-2010;LEGAL;AT13-3;NE
+% ::snt Roman law remained the legal system of the Byzantine -LRB- Eastern Empire -RRB- until the fall of Constantinople in 1453 .
+fof(ex1414051905687,axiom,(
+    ? [X1,X2,X3,T4,X5,E6] :
+      ( byzantine_1(s0,X1)
+      & legal_1(s0,X3)
+      & is_system_of_2(s0,X3,X1)
+      & is_fall_in_2(s0,X2,T4)
+      & is_fall_of_2(s0,X2,constantinople)
+      & X1 = eastern_empire
+      & predicate__1453_1(s0,T4)
+      & roman_1(s0,X5)
+      & law_1(s0,X5)
+      & is_before_2(s0,E6,e0)
+      & remained_3(s0,E6,X5,X3)
+      & until_2(s0,E6,X2) ) )).
+
+% ::id 208_nonfiction_FACTBOOK-2010;LEGAL;AT13-4;NE
+% ::snt Preserved fragments of the first legal text , known as the Law of the Twelve Tables , dating from the 5th century B.C. , contained specific provisions designed to change the prevailing customary law .
+fof(ex1414051906078,axiom,(
+    ? [X1,X2,X3,E4,E5,G6,G7,E8,E9,E10] :
+      ( is_law_of_2(s0,X1,twelve_tables)
+      & first_1(s0,X2)
+      & known_3(s0,E4,unspecified,X2)
+      & as_2(s0,E4,X1)
+      & dating_2(s0,E5,X2)
+      & from_2(s0,E5,constant__5th_century_b_c_)
+      & legal_text_1(s0,X2)
+      & prevailing_1(s0,X3)
+      & customary_law_1(s0,X3)
+      & preserved_1(s0,G7)
+      & is_fragments_of_2(s0,G7,X2)
+      & specific_1(s0,G6)
+      & ? [S11] :
+          ( designed_3(s0,E9,G6,S11)
+          & change_3(S11,E8,G6,X3) )
+      & provisions_1(s0,G6)
+      & is_before_2(s0,E10,e0)
+      & contained_3(s0,E10,G7,G6) ) )).
+
+% ::id 209_nonfiction_FACTBOOK-2010;LEGAL;AT13-5;NE
+% ::snt Early Roman law was drawn from custom and statutes ;
+fof(ex1414051906449,axiom,(
+    ? [X1,G2,E3] :
+      ( early_1(s0,X1)
+      & roman_law_1(s0,X1)
+      & ? [X4] :
+          ( custom_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [G5] :
+          ( statutes_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & is_before_2(s0,E3,e0)
+      & drawn_3(s0,E3,unspecified,X1)
+      & from_2(s0,E3,G2) ) )).
+
+% ::id 210_nonfiction_FACTBOOK-2010;LEGAL;AT13-6;NE
+% ::snt later , during the time of the empire , emperors asserted their authority as the ultimate source of law .
+fof(ex1414051906835,axiom,(
+    ? [X1,X2,X3,X4,X5,G8,G6,E7] :
+      ( empire_1(s0,X1)
+      & is_time_of_2(s0,X4,X1)
+      & law_1(s0,X2)
+      & ultimate_1(s0,X3)
+      & is_source_of_2(s0,X3,X2)
+      & is_authority_of_2(s0,X5,G8)
+      & emperors_1(s0,G6)
+      & choose1(G8,G6)
+      & later_1(s0,E7)
+      & is_before_2(s0,E7,e0)
+      & asserted_3(s0,E7,G6,X5)
+      & during_2(s0,E7,X4)
+      & as_2(s0,E7,X3) ) )).
+
+% ::id 211_nonfiction_FACTBOOK-2010;LEGAL;AT13-7;NE
+% ::snt The basis for Roman laws was the idea that the exact form - not the intention - of words or of actions produced legal consequences .
+fof(ex1414051907220,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,G9,E10,E11] :
+      ( is_basis_for_2(s0,X3,G4)
+      & exact_1(s0,X1)
+      & form_1(s0,X1)
+      & ? [S13] :
+          ( idea_2(s0,X2,S13)
+          & produced_3(S13,E10,G9,G8) )
+      & roman_1(s0,G4)
+      & laws_1(s0,G4)
+      & words_1(s0,G5)
+      & actions_1(s0,G6)
+      & is_of_2(s0,G9,G5)
+      & is_of_2(s0,G9,G6)
+      & is_of_2(s0,X1,G7)
+      & ? [X12] :
+          ( intention_1(s0,X12)
+          & is_of_2(s0,X12,G7) )
+      & G9 = G7
+      & legal_1(s0,G8)
+      & consequences_1(s0,G8)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & was_3(s0,E11,X3,X2) ) )).
+
+% ::id 212_nonfiction_FACTBOOK-2010;LEGAL;AT13-8;NE
+% ::snt It was only in the late 6th century A.D. that a comprehensive Roman code of laws was published -LRB- see Civil Law above -RRB- .
+fof(ex1414051907600,axiom,(
+    ? [X6,X1,G2,E3,E4,E5] :
+      ( comprehensive_1(s0,X1)
+      & is_roman_code_of_2(s0,X1,G2)
+      & laws_1(s0,G2)
+      & is_before_2(s0,E3,E4)
+      & is_before_2(s0,E4,e0)
+      & above_1(s0,E5)
+      & ? [X7] :
+          ( is_of_2(s0,X7,late_6th_century_a_d_)
+          & ? [S8] :
+              ( was_3(s0,E4,X6,S8)
+              & published_3(S8,E3,unspecified,X1) )
+          & in_2(s0,E4,X7) )
+      & see_3(s0,E5,unspecified,civil_law) ) )).
+
+% ::id 213_nonfiction_FACTBOOK-2010;LEGAL;AT13-9;NE
+% ::snt Roman law served as the basis of law systems developed in a number of continental European countries .
+fof(ex1414051907975,axiom,(
+    ? [X1,X2,G3,G4,E5,X6,E7] :
+      ( is_number_of_2(s0,X1,G3)
+      & is_basis_of_2(s0,X2,G4)
+      & continental_1(s0,G3)
+      & european_countries_1(s0,G3)
+      & developed_3(s0,E5,unspecified,G4)
+      & in_2(s0,E5,X1)
+      & law_systems_1(s0,G4)
+      & roman_1(s0,X6)
+      & law_1(s0,X6)
+      & is_before_2(s0,E7,e0)
+      & served_2(s0,E7,X6)
+      & as_2(s0,E7,X2) ) )).
+
+% ::id 214_nonfiction_FACTBOOK-2010;LEGAL;AT14-1;NE
+% ::snt Roman-Dutch Law -
+fof(ex1414051908341,axiom,(
+    ? [X1,E2] :
+      ( roman_dutch_1(s0,X1)
+      & law_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 215_nonfiction_FACTBOOK-2010;LEGAL;AT14-2;NE
+% ::snt A type of civil law based on Roman law as applied in the Netherlands .
+fof(ex1414051908715,axiom,(
+    ? [X1,X2,X3,E4,E5,E6,S7] :
+      ( civil_1(s0,X2)
+      & law_1(s0,X2)
+      & roman_1(s0,X1)
+      & law_1(s0,X1)
+      & based_2(s0,E5,X3)
+      & on_2(s0,E5,X1)
+      & as_2(s0,E5,S7)
+      & is_type_of_2(s0,X3,X2)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & applied_3(S8,E4,unspecified,X3)
+          & in_2(S8,E4,netherlands) )
+      & xxx_1(s0,E6)
+      & link_2(s0,E6,X3) ) )).
+
+% ::id 216_nonfiction_FACTBOOK-2010;LEGAL;AT14-3;NE
+% ::snt Roman-Dutch law serves as the basis for legal systems in seven African countries , as well as Guyana , Indonesia , and Sri Lanka .
+fof(ex1414051909094,axiom,(
+    ? [X1,G2,X3,G4,G5,E6] :
+      ( is_basis_for_2(s0,X1,G2)
+      & legal_1(s0,G2)
+      & systems_1(s0,G2)
+      & roman_dutch_1(s0,X3)
+      & law_1(s0,X3)
+      & seven_1(s0,G5)
+      & african_countries_1(s0,G5)
+      & is_of_2(s0,guyana,G4)
+      & is_of_2(s0,indonesia,G4)
+      & is_of_2(s0,sri_lanka,G4)
+      & is_as_well_as_2(s0,E6,G4)
+      & serves_2(s0,E6,X3)
+      & as__2(s0,E6,X1)
+      & in_2(s0,E6,G5) ) )).
+
+% ::id 217_nonfiction_FACTBOOK-2010;LEGAL;AT14-4;NE
+% ::snt This law system , which originated in the province of Holland and expanded throughout the Netherlands -LRB- to be replaced by the French Civil Code in 1809 -RRB- , was instituted in a number of sub-Saharan African countries during the Dutch colonial period .
+fof(ex1414051909505,axiom,(
+    ? [X1,X2,X3,T4,E5,E6,E7,S11,X8,G9,E10] :
+      ( is_province_of_2(s0,X1,holland)
+      & originated_2(s0,E5,X3)
+      & in_2(s0,E5,X1)
+      & expanded_2(s0,E7,X3)
+      & throughout_2(s0,E7,netherlands)
+      & xxx_2(s0,E7,S11)
+      & law_system_1(s0,X3)
+      & dutch_1(s0,X2)
+      & colonial_period_1(s0,X2)
+      & predicate__1809_1(s0,T4)
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & replaced_3(S12,E6,french_civil_code,X3)
+          & in_2(S12,E6,T4) )
+      & is_number_of_2(s0,X8,G9)
+      & sub_saharan_1(s0,G9)
+      & african_countries_1(s0,G9)
+      & is_before_2(s0,E10,e0)
+      & instituted_3(s0,E10,unspecified,X3)
+      & in_2(s0,E10,X8)
+      & during_2(s0,E10,X2) ) )).
+
+% ::id 218_nonfiction_FACTBOOK-2010;LEGAL;AT14-5;NE
+% ::snt The Dutch jurist/philosopher Hugo Grotius was the first to attempt to reduce Roman-Dutch civil law into a system in his Jurisprudence of Holland -LRB- written 1619-20 , commentary published 1621 -RRB- .
+fof(ex1414051909903,axiom,(
+    ? [X14,X1,X2,X3,X4,X5,X6,G7,G8,T9,E10,E11,E12,E13] :
+      ( dutch_1(s0,X1)
+      & jurist__slash__philosopher_1(s0,X1)
+      & roman_dutch_1(s0,X5)
+      & civil_law_1(s0,X5)
+      & system_1(s0,X4)
+      & published_2(s0,E10,X2)
+      & tmp_2(s0,E10,T9)
+      & commentary_1(s0,X2)
+      & choose5(X14,X5,X4,X2,hugo_grotius,X1)
+      & is_jurisprudence_of_2(s0,X3,holland)
+      & is_jurisprudence_of__2(s0,X3,X14)
+      & first_1(s0,X6)
+      & ? [S15] :
+          ( predicate___2(s0,X6,S15)
+          & ? [S16] :
+              ( attempt_2(S15,E12,S16)
+              & reduce_3(S16,E11,unspecified,X5)
+              & into_2(S16,E11,X4)
+              & in_2(S16,E11,X3) ) )
+      & written_1(s0,G7)
+      & predicate__1619_20_1(s0,G7)
+      & is_of_2(s0,G7,G8)
+      & is_of_2(s0,X2,G8)
+      & X4 = G8
+      & predicate__1621_1(s0,T9)
+      & hugo_grotius = X1
+      & is_before_2(s0,E13,e0)
+      & was_3(s0,E13,hugo_grotius,X6) ) )).
+
+% ::id 219_nonfiction_FACTBOOK-2010;LEGAL;AT14-6;NE
+% ::snt The Dutch historian/lawyer Simon van Leeuwen coined the term Roman-Dutch law in 1652 .
+fof(ex1414051910284,axiom,(
+    ? [X1,X2,X3,T4,E5] :
+      ( dutch_1(s0,X1)
+      & historian__slash__lawyer_1(s0,X1)
+      & term_1(s0,X3)
+      & roman_dutch_1(s0,X2)
+      & law_1(s0,X2)
+      & X3 = X2
+      & predicate__1652_1(s0,T4)
+      & simon_van_leeuwen = X1
+      & coined_3(s0,E5,simon_van_leeuwen,X3)
+      & in_2(s0,E5,T4) ) )).
+
+% ::id 220_nonfiction_FACTBOOK-2010;LEGAL;AT15-1;NE
+% ::snt Spanish Law -
+fof(ex1414051910647,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,spanish_law) ) )).
+
+% ::id 221_nonfiction_FACTBOOK-2010;LEGAL;AT15-2;NE
+% ::snt A type of civil law , often referred to as the Spanish Civil Code ,
+fof(ex1414051911016,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( civil_1(s0,X1)
+      & law_1(s0,X1)
+      & referred_to_2(s0,E3,X2)
+      & as_2(s0,E3,spanish_civil_code)
+      & is_type_of_2(s0,X2,X1)
+      & often_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X2) ) )).
+
+% ::id 222_nonfiction_FACTBOOK-2010;LEGAL;AT15-3;NE
+% ::snt it is the present legal system of Spain and is the basis of legal systems in 12 countries mostly in Central and South America , but also in southwestern Europe , northern and western Africa , and southeastern Asia .
+fof(ex1414051911413,axiom,(
+    ? [X1,X2,G3,X10,G4,G5,G6,E7,E8,E9] :
+      ( present_1(s0,X1)
+      & is_legal_system_of_2(s0,X1,spain)
+      & is_basis_of_2(s0,X2,G3)
+      & legal_1(s0,G3)
+      & systems_1(s0,G3)
+      & predicate__12_1(s0,G6)
+      & countries_1(s0,G6)
+      & ? [X11] :
+          ( central_1(s0,X11)
+          & is_of_2(s0,X11,G4) )
+      & is_of_2(s0,south_america,G4)
+      & is_of_2(s0,southwestern_europe,G5)
+      & ? [G12] :
+          ( ? [X13] :
+              ( northern_1(s0,X13)
+              & is_of_2(s0,X13,G12) )
+          & is_of_2(s0,western_africa,G12)
+          & is_of_2(s0,G12,G5) )
+      & is_of_2(s0,southeastern_asia,G5)
+      & is_3(s0,E7,X10,X1)
+      & is_3(s0,E8,X10,X2)
+      & in_2(s0,E8,G6)
+      & mostly_in_2(s0,E8,G4)
+      & is_3(s0,E9,X10,X2)
+      & in_2(s0,E9,G6)
+      & also_in_2(s0,E9,G5) ) )).
+
+% ::id 223_nonfiction_FACTBOOK-2010;LEGAL;AT15-4;NE
+% ::snt The Spanish Civil Code reflects a complex mixture of customary , Roman , Napoleonic , local , and modern codified law .
+fof(ex1414051911803,axiom,(
+    ? [X1,G2,E3] :
+      ( complex_1(s0,X1)
+      & is_mixture_of_2(s0,X1,G2)
+      & ? [X4] :
+          ( customary_1(s0,X4)
+          & codified_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( roman_1(s0,X5)
+          & codified_1(s0,X5)
+          & law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( napoleonic_1(s0,X6)
+          & codified_1(s0,X6)
+          & law_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ? [X7] :
+          ( local_1(s0,X7)
+          & codified_1(s0,X7)
+          & law_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & ? [X8] :
+          ( codified_1(s0,X8)
+          & law_1(s0,X8)
+          & is_of_2(s0,X8,G2) )
+      & reflects_3(s0,E3,spanish_civil_code,X1) ) )).
+
+% ::id 224_nonfiction_FACTBOOK-2010;LEGAL;AT15-5;NE
+% ::snt The laws of the Visigoth invaders of Spain in the 5th to 7th centuries had the earliest major influence on Spanish legal system development .
+fof(ex1414051912184,axiom,(
+    ? [X1,X2,G3,G4,T5,E6] :
+      ( spanish_1(s0,X1)
+      & legal_system_development_1(s0,X1)
+      & earliest_1(s0,X2)
+      & major_1(s0,X2)
+      & is_influence_on_2(s0,X2,X1)
+      & visigoth_1(s0,G3)
+      & is_invaders_in_2(s0,G3,T5)
+      & is_invaders_of_2(s0,G3,spain)
+      & is_laws_of_2(s0,G4,G3)
+      & predicate__5th_to_7th_1(s0,T5)
+      & centuries_1(s0,T5)
+      & is_before_2(s0,E6,e0)
+      & had_3(s0,E6,G4,X2) ) )).
+
+% ::id 225_nonfiction_FACTBOOK-2010;LEGAL;AT15-6;NE
+% ::snt The Christian Reconquest of Spain in the 11th through 15th centuries witnessed the development of customary law , which combined canon -LRB- religious -RRB- and Roman law .
+fof(ex1414051912584,axiom,(
+    ? [X1,X2,X3,X4,G5,T6,T7,E8,E9] :
+      ( christian_1(s0,X4)
+      & is_reconquest_of_2(s0,X4,spain)
+      & is_reconquest_through_2(s0,X4,T6)
+      & is_reconquest_in_2(s0,X4,T7)
+      & religious_1(s0,canon)
+      & roman_1(s0,X1)
+      & law_1(s0,X1)
+      & customary_1(s0,X2)
+      & combined_3(s0,E8,X2,G5)
+      & law_1(s0,X2)
+      & is_development_of_2(s0,X3,X2)
+      & is_of_2(s0,canon,G5)
+      & is_of_2(s0,X1,G5)
+      & predicate__11th_1(s0,T7)
+      & predicate__15th_1(s0,T6)
+      & centuries_1(s0,T6)
+      & is_before_2(s0,E8,e0)
+      & witnessed_3(s0,E9,X4,X3) ) )).
+
+% ::id 226_nonfiction_FACTBOOK-2010;LEGAL;AT15-7;NE
+% ::snt During several centuries of Hapsburg and Bourbon rule , systematic recompilations of the existing national legal system were attempted ,
+fof(ex1414051912966,axiom,(
+    ? [X1,G2] :
+      ( existing_1(s0,X1)
+      & national_1(s0,X1)
+      & legal_system_1(s0,X1)
+      & systematic_1(s0,G2)
+      & is_recompilations_of_2(s0,G2,X1)
+      & ? [G3,T4] :
+          ( ? [X5] :
+              ( hapsburg_1(s0,X5)
+              & rule_1(s0,X5)
+              & is_of_2(s0,X5,G3) )
+          & ? [X6] :
+              ( bourbon_1(s0,X6)
+              & rule_1(s0,X6)
+              & is_of_2(s0,X6,G3) )
+          & is_centuries_of_2(s0,T4,G3)
+          & ? [A8,E7] :
+              ( attempted_1(s0,A8)
+              & is_before_2(s0,E7,e0)
+              & were_3(s0,E7,G2,A8)
+              & during_2(s0,E7,T4) ) ) ) )).
+
+% ::id 227_nonfiction_FACTBOOK-2010;LEGAL;AT15-8;NE
+% ::snt but these often conflicted with local and regional customary civil laws .
+fof(ex1414051913339,axiom,(
+    ? [G3,G1,E2] :
+      ( ? [G4] :
+          ( local_1(s0,G4)
+          & customary_1(s0,G4)
+          & civil_laws_1(s0,G4)
+          & is_of_2(s0,G4,G1) )
+      & ? [G5] :
+          ( regional_1(s0,G5)
+          & customary_1(s0,G5)
+          & civil_laws_1(s0,G5)
+          & is_of_2(s0,G5,G1) )
+      & often_1(s0,E2)
+      & conflicted_2(s0,E2,G3)
+      & with_2(s0,E2,G1) ) )).
+
+% ::id 228_nonfiction_FACTBOOK-2010;LEGAL;AT15-9;NE
+% ::snt Legal system development for most of the 19th century concentrated on formulating a national civil law system , which was finally enacted in 1889 as the Spanish Civil Code .
+fof(ex1414051913743,axiom,(
+    ? [T1,T2,X3,X4,E5,E6,E7,S9] :
+      ( predicate__19th_1(s0,T1)
+      & century_1(s0,T1)
+      & predicate__1889_1(s0,T2)
+      & legal_1(s0,X4)
+      & system_development_1(s0,X4)
+      & national_1(s0,X3)
+      & enacted_3(s0,E5,unspecified,X3)
+      & in_2(s0,E5,T2)
+      & as_2(s0,E5,spanish_civil_code)
+      & civil_law_system_1(s0,X3)
+      & finally_1(s0,E5)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & formulating_3(S10,E6,X4,X3) )
+      & ? [X8] :
+          ( is_of_2(s0,X8,T1)
+          & concentrated_2(s0,E7,X4)
+          & for_2(s0,E7,X8)
+          & on_2(s0,E7,S9) ) ) )).
+
+% ::id 229_nonfiction_FACTBOOK-2010;LEGAL;AT15-10;NE
+% ::snt Several sections of the code have been revised , the most recent of which are the penal code in 1989 and the judiciary code in 2001 .
+fof(ex1414051914133,axiom,(
+    ? [X1,X2,X3,T4,T5,G6,E7,E8] :
+      ( code_1(s0,X3)
+      & penal_1(s0,X1)
+      & is_code_in_2(s0,X1,T4)
+      & is_judiciary_code_in_2(s0,X2,T5)
+      & predicate__1989_1(s0,T4)
+      & predicate__2001_1(s0,T5)
+      & is_of_2(s0,X1,G6)
+      & is_of_2(s0,X2,G6)
+      & ? [G9] :
+          ( ? [X10] :
+              ( recent_1(s0,X10)
+              & is_of_2(s0,X10,G9)
+              & are_3(s0,E7,X10,G6) )
+          & is_sections_of__2(s0,G9,X3)
+          & have_been_revised_2(s0,E8,G9) ) ) )).
+
+% ::id 230_nonfiction_FACTBOOK-2010;LEGAL;AT15-11;NE
+% ::snt The Spanish Civil Code separates public and private law .
+fof(ex1414051914504,axiom,(
+    ? [G1,E2] :
+      ( ? [X3] :
+          ( public_1(s0,X3)
+          & law_1(s0,X3)
+          & is_of_2(s0,X3,G1) )
+      & ? [X4] :
+          ( private_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G1) )
+      & separates_3(s0,E2,spanish_civil_code,G1) ) )).
+
+% ::id 231_nonfiction_FACTBOOK-2010;LEGAL;AT15-12;NE
+% ::snt Public law includes constitutional law , administrative law , criminal law , process law , financial and tax law , and international public law .
+fof(ex1414051914895,axiom,(
+    ? [X1,G2,E3] :
+      ( public_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( constitutional_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( administrative_1(s0,X5)
+          & law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( criminal_1(s0,X6)
+          & law_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ? [X7] :
+          ( process_law_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & ? [G8] :
+          ( ? [X9] :
+              ( financial_1(s0,X9)
+              & law_1(s0,X9)
+              & is_of_2(s0,X9,G8) )
+          & ? [X10] :
+              ( tax_1(s0,X10)
+              & law_1(s0,X10)
+              & is_of_2(s0,X10,G8) )
+          & is_of_2(s0,G8,G2) )
+      & ? [X11] :
+          ( international_1(s0,X11)
+          & public_law_1(s0,X11)
+          & is_of_2(s0,X11,G2) )
+      & includes_3(s0,E3,X1,G2) ) )).
+
+% ::id 232_nonfiction_FACTBOOK-2010;LEGAL;AT15-13;NE
+% ::snt Private law includes civil law , commercial law , labor law , and international private law .
+fof(ex1414051915275,axiom,(
+    ? [X1,G2,E3] :
+      ( private_1(s0,X1)
+      & law_1(s0,X1)
+      & ? [X4] :
+          ( civil_1(s0,X4)
+          & law_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( commercial_1(s0,X5)
+          & law_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( labor_law_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ? [X7] :
+          ( international_1(s0,X7)
+          & private_law_1(s0,X7)
+          & is_of_2(s0,X7,G2) )
+      & includes_3(s0,E3,X1,G2) ) )).
+
+% ::id 233_nonfiction_FACTBOOK-2010;LEGAL;AT16-1;NE
+% ::snt United States Law -
+fof(ex1414051915634,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,united_states_law) ) )).
+
+% ::id 234_nonfiction_FACTBOOK-2010;LEGAL;AT16-2;NE
+% ::snt A type of common law , which is the basis of the legal system of the United States and that of its island possessions in the Caribbean and the Pacific .
+fof(ex1414051916024,axiom,(
+    ? [X11,X1,X2,X3,G4,G5,G6,X7,X8,E9,E10] :
+      ( choose2(X11,X8,X7)
+      & is_in_2(s0,X1,G4)
+      & is_of_2(s0,X1,G5)
+      & legal_1(s0,X2)
+      & is_system_of_2(s0,X2,G6)
+      & is_basis_of_2(s0,X3,X2)
+      & is_island_possessions_of_2(s0,G5,X11)
+      & is_of_2(s0,caribbean,G4)
+      & is_of_2(s0,pacific,G4)
+      & is_of_2(s0,united_states,G6)
+      & is_of_2(s0,X1,G6)
+      & common_1(s0,X7)
+      & law_1(s0,X7)
+      & is_3(s0,E9,X8,X3)
+      & is_type_of__2(s0,X8,X7)
+      & xxx_1(s0,E10)
+      & link_2(s0,E10,X8) ) )).
+
+% ::id 235_nonfiction_FACTBOOK-2010;LEGAL;AT16-3;NE
+% ::snt This legal system has several layers , more possibly than in most other countries , and is due in part to the division between federal and state law .
+fof(ex1414051916411,axiom,(
+    ? [X1,X2,X3,X4,G5,X6,A11,E7,E8] :
+      ( legal_1(s0,X4)
+      & system_1(s0,X4)
+      & federal_1(s0,X1)
+      & state_law_1(s0,X2)
+      & is_division_between_2(s0,X3,G5)
+      & is_of_2(s0,X1,G5)
+      & is_of_2(s0,X2,G5)
+      & is_part_to_2(s0,X6,X3)
+      & is_due_in_2(s0,A11,X6)
+      & ? [G10] :
+          ( countries_1(s0,G10)
+          & is_more_possibly_than_in_2(s0,E7,G10) )
+      & ? [G9] :
+          ( layers_1(s0,G9)
+          & has_3(s0,E7,X4,G9) )
+      & is_3(s0,E8,X4,A11) ) )).
+
+% ::id 236_nonfiction_FACTBOOK-2010;LEGAL;AT16-4;NE
+% ::snt The United States was founded not as one nation but as a union of 13 colonies , each claiming independence from the British Crown .
+fof(ex1414051916789,axiom,(
+    ? [X1,X2,X3,G4,E5,E6,E7] :
+      ( one_1(s0,X1)
+      & nation_1(s0,X1)
+      & is_independence_from_2(s0,X2,british_crown)
+      & is_union_of_2(s0,X3,G4)
+      & predicate__13_1(s0,G4)
+      & colonies_1(s0,G4)
+      & ? [X9] :
+          ( claiming_3(s0,E6,X9,X2)
+          & G4 = X9 )
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E7,e0)
+      & ? [X8] :
+          ( is_of_2(s0,X8,X1)
+          & founded_3(s0,E5,unspecified,united_states)
+          & as_2(s0,E5,X8) )
+      & founded_3(s0,E7,unspecified,united_states)
+      & as_2(s0,E7,X3) ) )).
+
+% ::id 237_nonfiction_FACTBOOK-2010;LEGAL;AT16-5;NE
+% ::snt The US Constitution , implemented in 1789 , began shifting power away from the states and toward the federal government , though the states today retain substantial legal authority .
+fof(ex1414051917181,axiom,(
+    ? [X1,G2,G3,T4,X5,X6,E7,E8,E9,E10,E11,S13,S12] :
+      ( federal_1(s0,X1)
+      & government_1(s0,X1)
+      & states_1(s0,G2)
+      & states_1(s0,G3)
+      & predicate__1789_1(s0,T4)
+      & implemented_3(s0,E7,unspecified,us__constitution)
+      & in_2(s0,E7,T4)
+      & power_1(s0,X5)
+      & substantial_1(s0,X6)
+      & legal_authority_1(s0,X6)
+      & today_1(s0,E10)
+      & is_before_2(s0,E11,e0)
+      & ? [S14] :
+          ( fact_2(s0,S12,S14)
+          & shifting_3(S14,E8,us__constitution,X5)
+          & away_from_2(S14,E8,G2)
+          & shifting_3(S14,E9,us__constitution,X5)
+          & toward_2(S14,E9,X1) )
+      & ? [S15] :
+          ( fact_2(s0,S13,S15)
+          & retain_3(S15,E10,G3,X6) )
+      & began_3(s0,E11,us__constitution,S12)
+      & though_2(s0,E11,S13) ) )).
+
+% ::id 238_nonfiction_FACTBOOK-2010;LEGAL;AT16-6;NE
+% ::snt US law draws its authority from four sources : constitutional law , statutory law , administrative regulations , and case law .
+fof(ex1414051918801,axiom,(
+    ? [X6,X1,X2,G3,G4,E5] :
+      ( us__1(s0,X2)
+      & law_1(s0,X2)
+      & choose1(X6,X2)
+      & is_authority_of_2(s0,X1,X6)
+      & four_1(s0,G4)
+      & sources_1(s0,G4)
+      & ? [X7] :
+          ( constitutional_1(s0,X7)
+          & law_1(s0,X7)
+          & is_of_2(s0,X7,G3) )
+      & ? [X8] :
+          ( statutory_1(s0,X8)
+          & law_1(s0,X8)
+          & is_of_2(s0,X8,G3) )
+      & ? [G9] :
+          ( administrative_1(s0,G9)
+          & regulations_1(s0,G9)
+          & is_of_2(s0,G9,G3) )
+      & ? [X10] :
+          ( case_law_1(s0,X10)
+          & is_of_2(s0,X10,G3) )
+      & G4 = G3
+      & draws_3(s0,E5,X2,X1)
+      & from_2(s0,E5,G4) ) )).
+
+% ::id 239_nonfiction_FACTBOOK-2010;LEGAL;AT16-7;NE
+% ::snt Constitutional law is based on the US Constitution and serves as the supreme federal law .
+fof(ex1414051919178,axiom,(
+    ? [X1,X2,X3,E4,E5] :
+      ( us__constitution_1(s0,X1)
+      & supreme_1(s0,X2)
+      & federal_law_1(s0,X2)
+      & constitutional_1(s0,X3)
+      & law_1(s0,X3)
+      & is_based_2(s0,E4,X3)
+      & on_2(s0,E4,X1)
+      & serves_2(s0,E5,X3)
+      & as_2(s0,E5,X2) ) )).
+
+% ::id 240_nonfiction_FACTBOOK-2010;LEGAL;AT16-8;NE
+% ::snt Taken together with those of the state constitutions , these documents outline the general structure of the federal and state governments and provide the rules and limits of power .
+fof(ex1414051919571,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,G7,G8,G9,G10,G11,G12,G13,E14,E15,E16] :
+      ( is_of_2(s0,X1,G4)
+      & general_1(s0,X2)
+      & is_structure_of_2(s0,X2,G8)
+      & power_1(s0,X3)
+      & documents_1(s0,G13)
+      & state_constitutions_1(s0,G4)
+      & federal_1(s0,G5)
+      & governments_1(s0,G5)
+      & state_1(s0,G6)
+      & governments_1(s0,G6)
+      & is_of_2(s0,G5,G7)
+      & is_of_2(s0,G6,G7)
+      & G8 = G7
+      & is_of_2(s0,G12,X3)
+      & rules_1(s0,G9)
+      & limits_1(s0,G10)
+      & is_of_2(s0,G9,G11)
+      & is_of_2(s0,G10,G11)
+      & G12 = G11
+      & together_1(s0,E14)
+      & taken_2(s0,E14,G13)
+      & with_2(s0,E14,X1)
+      & outline_3(s0,E15,G13,X2)
+      & provide_3(s0,E16,G13,G12) ) )).
+
+% ::id 241_nonfiction_FACTBOOK-2010;LEGAL;AT16-9;NE
+% ::snt US statutory law is legislation enacted by the US Congress and is codified in the United States Code .
+fof(ex1414051919950,axiom,(
+    ? [X1,X2,E3,E4,E5] :
+      ( us__1(s0,X2)
+      & statutory_law_1(s0,X2)
+      & enacted_3(s0,E3,us__congress,X1)
+      & legislation_1(s0,X1)
+      & is_3(s0,E4,X2,X1)
+      & is_codified_2(s0,E5,X2)
+      & in_2(s0,E5,united_states_code) ) )).
+
+% ::id 242_nonfiction_FACTBOOK-2010;LEGAL;AT16-10;NE
+% ::snt The 50 state legislatures have similar authority to enact state statutes .
+fof(ex1414051920316,axiom,(
+    ? [G1,X2,G3,E4,E5] :
+      ( predicate__50_1(s0,G1)
+      & state_legislatures_1(s0,G1)
+      & similar_1(s0,X2)
+      & ? [S6] :
+          ( authority_2(s0,X2,S6)
+          & enact_3(S6,E4,unspecified,G3) )
+      & state_statutes_1(s0,G3)
+      & have_3(s0,E5,G1,X2) ) )).
+
+% ::id 243_nonfiction_FACTBOOK-2010;LEGAL;AT16-11;NE
+% ::snt Administrative law is the authority delegated to federal and state executive agencies .
+fof(ex1414051920695,axiom,(
+    ? [X1,G2,G3,G4,E5,X6,E7] :
+      ( delegated_2(s0,E5,X1)
+      & to_2(s0,E5,G4)
+      & authority_1(s0,X1)
+      & federal_1(s0,G2)
+      & executive_agencies_1(s0,G2)
+      & state_1(s0,G3)
+      & executive_agencies_1(s0,G3)
+      & is_of_2(s0,G2,G4)
+      & is_of_2(s0,G3,G4)
+      & administrative_1(s0,X6)
+      & law_1(s0,X6)
+      & is_3(s0,E7,X6,X1) ) )).
+
+% ::id 244_nonfiction_FACTBOOK-2010;LEGAL;AT16-12;NE
+% ::snt Case law , also referred to as common law , covers areas where constitutional or statutory law is lacking .
+fof(ex1414051921086,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,E7] :
+      ( common_1(s0,X1)
+      & law_1(s0,X1)
+      & also_referred_to_2(s0,E5,X2)
+      & as_2(s0,E5,X1)
+      & case_law_1(s0,X2)
+      & ? [X8] :
+          ( constitutional_1(s0,X8)
+          & law_1(s0,X8)
+          & is_of_2(s0,X8,G3) )
+      & ? [X9] :
+          ( statutory_1(s0,X9)
+          & law_1(s0,X9)
+          & is_of_2(s0,X9,G3) )
+      & is_lacking_2(s0,E6,G3)
+      & areas_1(s0,G4)
+      & is_before_2(s0,E5,e0)
+      & is_where_2(s0,E6,G4)
+      & covers_3(s0,E7,X2,G4) ) )).
+
+% ::id 245_nonfiction_FACTBOOK-2010;LEGAL;AT16-13;NE
+% ::snt Case law is a collection of judicial decisions , customs , and general principles that began in England centuries ago , that were adopted in America at the time of the Revolution , and that continue to develop today .
+fof(ex1414051921505,axiom,(
+    ? [X1,X2,X3,X4,G5,T6,T7,E8,E9,E10,E11,E12] :
+      ( revolution_1(s0,X1)
+      & is_time_of_2(s0,X2,X1)
+      & case_law_1(s0,X4)
+      & ? [X16] :
+          ( began_2(s0,E8,X3)
+          & in_2(s0,E8,england)
+          & adopted_3(s0,E9,unspecified,X3)
+          & in_2(s0,E9,america)
+          & at_2(s0,E9,X2)
+          & ? [S17] :
+              ( continue_3(s0,E11,X3,S17)
+              & develop_2(S17,E10,X3)
+              & tmp_2(S17,E10,T7) ) )
+      & is_collection_of__2(s0,X3,G5)
+      & ? [G13] :
+          ( judicial_1(s0,G13)
+          & decisions_1(s0,G13)
+          & is_of_2(s0,G13,G5) )
+      & ? [G14] :
+          ( customs_1(s0,G14)
+          & is_of_2(s0,G14,G5) )
+      & ? [G15] :
+          ( general_1(s0,G15)
+          & principles_1(s0,G15)
+          & is_of_2(s0,G15,G5) )
+      & centuries_1(s0,T6)
+      & today_1(s0,T7)
+      & is_ago_tmp_2(s0,E8,T6)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & is_3(s0,E12,X4,X3) ) )).
+

@@ -1,0 +1,351 @@
+# ::id 1_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 東日本大震災
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東日本大震災])
+
+# ::id 2_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt ／ 宮城沿岸小中・河北新報社アンケート
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[宮城沿岸小中.河北新報社アンケート])
+
+# ::id 3_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt ／ 生活不安、子に投影
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[生活不安、子に投影])
+
+# ::id 4_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt ストレス 、 集中力低下
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (ストレス(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (集中力低下(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 5_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt ／ 成績後退 や 不登校増
+∃ EVENT[4] GROUP[1] (
+ CONJ_や(∃ ENTITY[2] (成績後退(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (不登校増(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 6_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 東日本大震災 の 被災地 で 河北新報社 が 実施 し た 小中学校 の 校長アンケート は 、 震災 から ２ 年 １０ カ月 近く が たっ た 現在 も 被災児童・生徒 が 震災 の 影響 と み られる さまざま な 問題 を 抱え て いる 実態 を 浮き彫り に し た 。
+∃ ATTRIB[18] SITUATION[6] EVENT[11] EVENT[17] EVENT[19] EVENT[21] ENTITY[10] ENTITY[9] ENTITY[16] ENTITY[15] ENTITY[13] ENTITY[12] ENTITY[7] ENTITY[20] EVENT[4] ENTITY[3] ENTITY[5] ENTITY[1] (
+ の_被災地(ENTITY[東日本大震災], ENTITY[3]) ∧
+  小中学校(ENTITY[5]) ∧
+   実施する.0_た(EVENT[4], ENTITY[河北新報社], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3] ∧ の_校長アンケート(ENTITY[5], ENTITY[1]) ∧
+    past(EVENT[4]) ∧
+     震災(ENTITY[9]) ∧
+      (CD_２_年_１０_カ月(ENTITY[10]), 近く(ENTITY[10])) ∧
+       たっ_た(EVENT[11], ENTITY[10]) ∧ から(EVENT[11]) = ENTITY[9] ∧ 時間(EVENT[11]) = ENTITY[7] ∧
+        現在(ENTITY[7]) ∧
+        被災児童.生徒(ENTITY[12]) ∧
+         震災(ENTITY[16]) ∧
+          の_影響(ENTITY[16], ENTITY[15]) ∧
+           さまざま_な(ATTRIB[18]) ∧
+            み(EVENT[17], _, ENTITY[13]) ∧ と(EVENT[17]) = ENTITY[15] ∧
+             ATTRIBUTE_問題(ATTRIB[18], ENTITY[13]) ∧
+             実態(SITUATION[6], 抱え_て_いる(EVENT[19], ENTITY[12], ENTITY[13]) ∧ 時間(EVENT[19]) = ENTITY[7]) ∧
+              浮き彫り(ENTITY[20]) ∧
+               past(EVENT[11]) ∧ past(EVENT[21]) ∧ し_た(EVENT[21], ENTITY[1], SITUATION[6], ENTITY[20]))
+
+# ::id 7_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 生活基盤 の 不安定さ が 子ども に 悪影響 を 及ぼし て いる 現状 も 浮かび 、 教育関係者 は 不安 を 募ら せ て いる 。
+∃ SITUATION[1] EVENT[6] EVENT[7] EVENT[10] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[9] ENTITY[8] (
+ 教育関係者(ENTITY[8]) ∧
+  生活基盤(ENTITY[3]) ∧
+   の_不安定さ(ENTITY[3], ENTITY[2]) ∧
+    子ども(ENTITY[4]) ∧
+     悪影響(ENTITY[5]) ∧
+      現状(SITUATION[1], 及ぼし_て_いる(EVENT[6], ENTITY[2], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4]) ∧
+       不安(ENTITY[9]) ∧ 浮かび(EVENT[7], SITUATION[1]) ∧ 募らする.0_て_いる(EVENT[10], ENTITY[8], ENTITY[9]))
+
+# ::id 8_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 震災 の 影響 と 思わ れる 具体的 な 問題 は 何 か 、 を 聞い た 設問 で は 、 「 家計 が 苦しい 」 「 家庭学習 の 場 を 確保 でき ない 」 「 家庭内 の 問題 で 精神的ストレス 」 と 家庭 に関する 項目 が １～３ 位 を 占め た 。
+∃ ATTRIB[9] EVENT[8] ENTITY[7] ENTITY[6] ENTITY[4] (
+ 震災(ENTITY[7]) ∧
+  の_影響(ENTITY[7], ENTITY[6]) ∧
+   具体的_な(ATTRIB[9]) ∧
+    思わ(EVENT[8], _, ENTITY[4]) ∧ と(EVENT[8]) = ENTITY[6] ∧ ATTRIBUTE_問題(ATTRIB[9], ENTITY[4]) ∧
+     は SITUATION[3] EVENT[12] ENTITY[1] (
+      (聞い_た(EVENT[12], ENTITY[1], SITUATION[3]) ∧ 設問(ENTITY[1]) ∧ past(EVENT[12]) ∧
+       か(SITUATION[3], QUEST(∃ EVENT[11] ? ENTITY[10] xxx(EVENT[11], ENTITY[4], ENTITY[10])))),
+      ∃ ENTITY[23] ENTITY[19] ENTITY[14] ENTITY[17] ENTITY[25] ENTITY[26] ENTITY[24] ENTITY[15] ENTITY[13] EVENT[18] EVENT[27] EVENT[16] (
+       past(EVENT[16]) ∧
+        家庭(ENTITY[14]) ∧
+         に関する_項目(ENTITY[14], ENTITY[13]) ∧
+          CD_１～３_位(ENTITY[15]) ∧
+           家計(ENTITY[17]) ∧
+            ENTITY[19] = *pro*{ENTITY[17], ENTITY[1], ENTITY[13], ENTITY[15], ENTITY[14], ENTITY[4], ENTITY[6], ENTITY[7]} ∧
+             ENTITY[23] = *pro*{ENTITY[17], ENTITY[1], ENTITY[13], ENTITY[15], ENTITY[14], ENTITY[4], ENTITY[6], ENTITY[7]} ∧
+              家庭内(ENTITY[25]) ∧
+               の_問題(ENTITY[25], ENTITY[24]) ∧
+                精神的ストレス(ENTITY[26]) ∧
+                 占め_た(EVENT[16], ENTITY[13], ENTITY[15],
+                  苦しい(EVENT[18], ENTITY[17]) ∧
+                   ¬ ∃ ENTITY[21] ENTITY[20] EVENT[22] (
+                         家庭学習(ENTITY[21]) ∧
+                          の_場(ENTITY[21], ENTITY[20]) ∧ 確保する.0(EVENT[22], ENTITY[19], ENTITY[20])) ∧
+                   xxx(EVENT[27], ENTITY[23], ENTITY[26]) ∧ で(EVENT[27]) = ENTITY[24]) ∧
+                  で(EVENT[16]) = ENTITY[1])))
+
+# ::id 9_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 宮城県教委義務教育課 の 鈴木洋課長 は 「 家庭 の 問題 が ここ まで 高い と は 思っ て い なかっ た 」 と 感想 を 述べ た 。
+∃ ENTITY[3] EVENT[2] ENTITY[1] (
+ の_xxx(ENTITY[宮城県教委義務教育課], ENTITY[鈴木洋課長]) ∧
+  感想(ENTITY[1]) ∧
+   ENTITY[3] = *pro*{ENTITY[鈴木洋課長], ENTITY[1], ENTITY[宮城県教委義務教育課]} ∧
+    past(EVENT[2]) ∧
+     述べ_た(EVENT[2], ENTITY[鈴木洋課長], ENTITY[1],
+      ¬ ∃ ENTITY[7] SITUATION[4] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] (
+            家庭(ENTITY[6]) ∧
+             の_問題(ENTITY[6], ENTITY[5]) ∧
+              ENTITY[7] = ここ{ENTITY[6], ENTITY[3], ENTITY[鈴木洋課長], ENTITY[1], ENTITY[宮城県教委義務教育課]} ∧
+               FACT(SITUATION[4], 高い(EVENT[8], ENTITY[5]) ∧ まで(EVENT[8]) = ENTITY[7]) ∧
+                before(EVENT[2], EVENT[9]) ∧ 思っ_て_い_た(EVENT[9], ENTITY[3], SITUATION[4]))))
+
+# ::id 10_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 震災 で 親 を 亡くし た 遺児 と 孤児 は 宮城県内 で 約１０００ 人 に 上る 。
+∃ EVENT[11] ENTITY[10] ENTITY[9] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[8] GROUP[6] ENTITY[1] (
+ 震災(ENTITY[3]) ∧
+  親(ENTITY[4]) ∧
+   遺児(ENTITY[7]) ∧
+    孤児(ENTITY[8]) ∧
+     CONJ_と(is_element_of(ENTITY[7], GROUP[6]), is_element_of(ENTITY[8], GROUP[6])) ∧
+      亡くし_た(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧ equals(GROUP[6], ENTITY[1]) ∧
+       past(EVENT[5]) ∧
+        宮城県内(ENTITY[9]) ∧
+         CD_約１０００_人(ENTITY[10]) ∧
+          上る(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = ENTITY[10] ∧ で(EVENT[11]) = ENTITY[9])
+
+# ::id 11_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 親 が 仕事 を 失う など 収入 が 安定 し ない 家庭 は 数 限りない 。
+∃ SITUATION[2] SITUATION[1] EVENT[5] EVENT[9] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[8] (
+ 親(ENTITY[3]) ∧
+  仕事(ENTITY[4]) ∧
+   FACT(SITUATION[2], 失う(EVENT[5], ENTITY[3], ENTITY[4])) ∧
+    収入(ENTITY[6]) ∧
+     家庭(SITUATION[1], ¬ ∃ EVENT[7] (安定する.0(EVENT[7], ENTITY[6]) ∧ など(EVENT[7]) = SITUATION[2])) ∧
+      CD_数_限りない(ENTITY[8]) ∧ xxx(EVENT[9], SITUATION[1], ENTITY[8]))
+
+# ::id 12_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt プレハブ の 仮設住宅 や みなし仮設 など から 通学 する 児童・生徒 は 現在 も 県内 に 約５３００ 人 いる 。
+∃ EVENT[12] DEGREE[11] ENTITY[10] ENTITY[9] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[7] GROUP[4] ENTITY[3] ENTITY[1] (
+ プレハブ(ENTITY[6]) ∧
+  の_仮設住宅(ENTITY[6], ENTITY[5]) ∧
+   みなし仮設(ENTITY[7]) ∧
+    CONJ_や(is_element_of(ENTITY[5], GROUP[4]), is_element_of(ENTITY[7], GROUP[4])) ∧
+     など(GROUP[4], ENTITY[3]) ∧
+      通学する.0(EVENT[8], ENTITY[1]) ∧ から(EVENT[8]) = ENTITY[3] ∧ 児童.生徒(ENTITY[1]) ∧
+       現在(ENTITY[9]) ∧
+        県内(ENTITY[10]) ∧
+         CD_約５３００_人(DEGREE[11]) ∧
+          いる(EVENT[12], ENTITY[1]) ∧ MSR(EVENT[12]) = DEGREE[11] ∧ に(EVENT[12]) = ENTITY[10] ∧
+           時間(EVENT[12]) = ENTITY[9])
+
+# ::id 13_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 鈴木課長 は 「 住宅 、 就労 の 問題 が 子どもたち の 安定 、 学校生活 の 安定 に つながる 」 と 語っ た 。
+∃ EVENT[11] EVENT[1] GROUP[3] GROUP[6] ENTITY[2] (
+ ∃ ENTITY[4] (住宅(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[5] (就労(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+  の_問題(GROUP[3], ENTITY[2]) ∧
+   ∃ ENTITY[8] ENTITY[7] (子どもたち(ENTITY[8]) ∧ の_安定(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+    ∃ ENTITY[10] ENTITY[9] (学校生活(ENTITY[10]) ∧ の_安定(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+    past(EVENT[1]) ∧
+     語っ_た(EVENT[1], ENTITY[鈴木課長], つながる(EVENT[11], ENTITY[2]) ∧ に(EVENT[11]) = GROUP[6]))
+
+# ::id 14_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt アンケート で は 学力低下 を 問題点 に 挙げる 回答 が 約２ 割 あっ た 。
+∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] DEGREE[7] ENTITY[2] ENTITY[1] (
+ アンケート(ENTITY[1]) ∧
+  学力低下(ENTITY[4]) ∧
+   問題点(ENTITY[5]) ∧
+    挙げる(EVENT[6], ENTITY[2], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 回答(ENTITY[2]) ∧
+     CD_約２_割(DEGREE[7]) ∧
+      past(EVENT[8]) ∧
+       あっ_た(EVENT[8], ENTITY[2]) ∧ MSR(EVENT[8]) = DEGREE[7] ∧ で(EVENT[8]) = ENTITY[1])
+
+# ::id 15_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 昨年 ８ 月 に 発表 さ れ た 全国学力テスト で も 宮城県 の 小中学校 は 成績 が 後退 し 、 震災 の 影響 が 指摘 さ れ た 。
+∃ EVENT[4] EVENT[7] EVENT[10] ENTITY[3] ENTITY[6] ENTITY[9] ENTITY[8] ENTITY[1] ENTITY[5] (
+ の_小中学校(ENTITY[宮城県], ENTITY[5]) ∧
+  (CD_８_月(ENTITY[3]), 昨年(ENTITY[3])) ∧
+   発表する.0_た(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 全国学力テスト(ENTITY[1]) ∧
+    成績(ENTITY[6]) ∧
+     震災(ENTITY[9]) ∧
+      の_影響(ENTITY[9], ENTITY[8]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[10]) ∧
+         後退する.0(EVENT[7], ENTITY[6]) ∧ TPC(EVENT[7]) = ENTITY[5] ∧
+          指摘する.0_た(EVENT[10], _, ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[1])
+
+# ::id 16_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 鈴木課長 は 「 学力低下 に 震災 の 影響 は ある 」 と 述べ た 上で 、 「 震災 の ストレス や 不安感 が ある と 集中力 が 低下 し 、 授業 に 集中 でき ない 。 仮設住宅 など 家庭 の 学習環境 も 良く なく 、 吸収力 が 落ち て いる 」 と 解説 する 。
+∃ ENTITY[7] EVENT[5] EVENT[1] EVENT[23] EVENT[6] ENTITY[2] ENTITY[20] ENTITY[19] ENTITY[18] ENTITY[22] ENTITY[4] ENTITY[3] (
+ 震災(ENTITY[4]) ∧
+  の_影響(ENTITY[4], ENTITY[3]) ∧
+   学力低下(ENTITY[2]) ∧
+    ENTITY[7] = *pro*{ENTITY[鈴木課長], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+     仮設住宅(ENTITY[19]) ∧
+      家庭(ENTITY[20]) ∧
+       の_学習環境(ENTITY[20], ENTITY[18]) ∧ など_学習環境(ENTITY[19], ENTITY[18]) ∧
+        吸収力(ENTITY[22]) ∧
+         past(EVENT[1]) ∧
+          述べ_た_上で(EVENT[1], ENTITY[鈴木課長], ある(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[2]) ∧
+           解説する.0(EVENT[6], ENTITY[鈴木課長],
+            ¬ ∀ EVENT[13] GROUP[10] ENTITY[9] ENTITY[8] CND_と(
+                     震災(ENTITY[9]) ∧
+                      CONJ_や(∃ ENTITY[11] (ストレス(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+                       ∃ ENTITY[12] (不安感(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+                      equals(GROUP[10], ENTITY[8]) ∧ の(ENTITY[9], ENTITY[8]) ∧
+                      ある(EVENT[13], ENTITY[8]),
+                     ∃ EVENT[15] EVENT[17] ENTITY[14] ENTITY[16] (
+                      集中力(ENTITY[14]) ∧
+                       授業(ENTITY[16]) ∧
+                        低下する.0(EVENT[15], ENTITY[14]) ∧
+                         集中する.0(EVENT[17], ENTITY[7]) ∧ に(EVENT[17]) = ENTITY[16])) ∧
+             ¬ ∃ EVENT[21] 良く(EVENT[21], ENTITY[18]) ∧ 落ち_て_いる(EVENT[23], ENTITY[22])))
+
+# ::id 17_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 「 不登校増 」 「 精神面 で 不安定 」 など 内面 や 行動 に関する 項目 も 多かっ た 。
+∃ EVENT[9] GROUP[6] GROUP[2] ENTITY[1] (
+ ∃ ENTITY[3] (不登校増(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[5] ENTITY[4] (精神面(ENTITY[5]) ∧ で_不安定(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+  CONJ_や(∃ ENTITY[7] (内面(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+   ∃ ENTITY[8] (行動(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+   に関する_項目(GROUP[6], ENTITY[1]) ∧ など_項目(GROUP[2], ENTITY[1]) ∧
+    past(EVENT[9]) ∧ 多かっ_た(EVENT[9], ENTITY[1]))
+
+# ::id 18_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 阪神大震災 で は 不登校 など の 問題行動 が ３～５ 年 目 に ピーク を 迎え て いる 。
+∃ EVENT[6] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 不登校(ENTITY[3]) ∧
+  など(ENTITY[3], ENTITY[2]) ∧
+   の_問題行動(ENTITY[2], ENTITY[1]) ∧
+    (CD_３～５_年(ENTITY[4]), 目(ENTITY[4])) ∧
+     ピーク(ENTITY[5]) ∧
+      迎え_て_いる(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧ で(EVENT[6]) = ENTITY[阪神大震災])
+
+# ::id 19_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 兵庫県教委教育企画課 の 野口博史指導主事 は 「 精神面 で 不安定 な 子ども は 数字以上 に いる と 思っ た 方 が いい 。 子ども は 元気 に 見え て も 内面 は 別 の こと が よく ある 」 と 助言 する 。
+∃ SITUATION[15] SITUATION[11] ENTITY[3] SITUATION[2] ATTRIB[7] EVENT[9] EVENT[4] EVENT[10] EVENT[13] EVENT[18] EVENT[19] EVENT[1] ENTITY[8] ENTITY[17] ENTITY[6] ENTITY[5] ENTITY[12] ENTITY[16] (
+ の_xxx(ENTITY[兵庫県教委教育企画課], ENTITY[野口博史指導主事]) ∧
+  精神面(ENTITY[6]) ∧
+   不安定_な(ATTRIB[7]) ∧
+    ATTRIBUTE_子ども(ATTRIB[7], ENTITY[5]) ∧ で_子ども(ENTITY[6], ENTITY[5]) ∧
+     子ども(ENTITY[12]) ∧
+      内面(ENTITY[16]) ∧
+       ENTITY[3] = *pro*{ENTITY[野口博史指導主事], ENTITY[兵庫県教委教育企画課]} ∧
+        数字以上(ENTITY[8]) ∧
+         方(SITUATION[2],
+          思っ_た(EVENT[4], ENTITY[3], いる(EVENT[9], ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[8])) ∧
+          FACT(SITUATION[11], 見え_て(EVENT[13], ENTITY[12])) ∧
+           別(ENTITY[17]) ∧
+            こと(SITUATION[15], の(EVENT[18], ENTITY[16], ENTITY[17])) ∧
+             before(EVENT[1], EVENT[4]) ∧
+              ADV_元気_に(EVENT[13]) ∧
+               助言する.0(EVENT[1], ENTITY[野口博史指導主事],
+                いい(EVENT[10], SITUATION[2]) ∧
+                 よく_ある(EVENT[19], SITUATION[15]) ∧ te(EVENT[19]) = SITUATION[11]))
+
+# ::id 20_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 「 その 他 」 の 回答 で 「 クレーマー の 保護者 が 増え た 」 という 記述 が 複数 あっ た 。
+∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[2] (
+ 他(ENTITY[2]) ∧
+  の_回答(ENTITY[2], ENTITY[1]) ∧
+   クレーマー(ENTITY[5]) ∧
+    の_保護者(ENTITY[5], ENTITY[4]) ∧
+     THAT_記述(増え_た(EVENT[6], ENTITY[4]), ENTITY[3]) ∧
+      past(EVENT[6]) ∧
+       past(EVENT[8]) ∧
+        複数 ENTITY[7] (ENTITY[7] = ENTITY[3], あっ_た(EVENT[8], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[1]))
+
+# ::id 21_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 野口指導主事 は 「 親 が イライラ する と 子ども も わずか な こと で イライラ し 、 それ を 見 た 親 が 学校 に 抗議 する という 悪循環 が 起こり得る 」 と 、 被災地 ならでは の 現象 に 言及 し た 。
+∃ EVENT[17] EVENT[3] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 被災地(ENTITY[2]) ∧
+  ならでは_の_現象(ENTITY[2], ENTITY[1]) ∧
+   THAT_悪循環(∀ EVENT[6] ENTITY[5] CND_と(親(ENTITY[5]) ∧ イライラする.0(EVENT[6], ENTITY[5]),
+            ∃ ENTITY[13] ATTRIB[9] EVENT[10] EVENT[14] EVENT[16] ENTITY[8] ENTITY[7] ENTITY[15] ENTITY[11] (
+             子ども(ENTITY[7]) ∧
+              わずか_な(ATTRIB[9]) ∧
+               ATTRIBUTE_こと(ATTRIB[9], ENTITY[8]) ∧
+                ENTITY[13] = それ{ENTITY[7], ENTITY[8], ENTITY[5], ENTITY[野口指導主事], ENTITY[1], ENTITY[2]} ∧
+                 見_た(EVENT[14], ENTITY[11], ENTITY[13]) ∧ 親(ENTITY[11]) ∧
+                  学校(ENTITY[15]) ∧
+                   before(EVENT[3], EVENT[14]) ∧
+                    イライラする.0(EVENT[10], ENTITY[7]) ∧ で(EVENT[10]) = ENTITY[8] ∧
+                     抗議する.0(EVENT[16], ENTITY[11]) ∧ に(EVENT[16]) = ENTITY[15])), ENTITY[4]) ∧
+    past(EVENT[3]) ∧
+     言及する.0_た(EVENT[3], ENTITY[野口指導主事], 起こり得る(EVENT[17], ENTITY[4])) ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 22_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 教職員 に関して は 「 精神的ストレス 」 が １６ ％ あっ た 。
+∃ EVENT[4] DEGREE[3] ENTITY[2] ENTITY[1] (
+ 教職員(ENTITY[1]) ∧
+  精神的ストレス(ENTITY[2]) ∧
+   CD_１６_％(DEGREE[3]) ∧
+    past(EVENT[4]) ∧
+     あっ_た(EVENT[4], ENTITY[2]) ∧ MSR(EVENT[4]) = DEGREE[3] ∧ に関して(EVENT[4]) = ENTITY[1])
+
+# ::id 23_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 宮城県教職員組合 の 瀬成田実書記長 は 「 実態 は もっと 多い 印象 だ 。 我慢 し て 声 を 上げ ない 教職員 が 多い の で は ない か 。 負担 を 減らす ため 、 教職員 の 数 を もっと 増やす べき だ 」 と 主張 する 。
+∃ ENTITY[12] ATTRIB[4] EVENT[5] EVENT[8] EVENT[11] EVENT[1] ENTITY[3] ENTITY[9] ENTITY[6] ENTITY[2] (
+ の_xxx(ENTITY[宮城県教職員組合], ENTITY[瀬成田実書記長]) ∧
+  実態(ENTITY[2]) ∧
+   もっと_多い(ATTRIB[4]) ∧
+    ATTRIBUTE_印象(ATTRIB[4], ENTITY[3]) ∧
+     声(ENTITY[9]) ∧
+      CONJ_te(我慢する.0_て(EVENT[8], ENTITY[6]), ¬ ∃ EVENT[10] 上げ(EVENT[10], ENTITY[6], ENTITY[9])) ∧ 教職員(ENTITY[6]) ∧
+       ENTITY[12] = *pro*{ENTITY[6], ENTITY[9], ENTITY[3], ENTITY[2], ENTITY[瀬成田実書記長], ENTITY[宮城県教職員組合]} ∧
+        主張する.0(EVENT[1], ENTITY[瀬成田実書記長],
+         だ(EVENT[5], ENTITY[2], ENTITY[3]) ∧ 多い_の(EVENT[11], ENTITY[6]) ∧
+          MD_べき(∃ SITUATION[13] EVENT[15] EVENT[18] ENTITY[14] ENTITY[17] ENTITY[16] (
+                負担(ENTITY[14]) ∧
+                 FACT(SITUATION[13], 減らす(EVENT[15], ENTITY[12], ENTITY[14])) ∧
+                  教職員(ENTITY[17]) ∧
+                   の_数(ENTITY[17], ENTITY[16]) ∧
+                    ADV_もっと(EVENT[18]) ∧
+                     増やす_だ(EVENT[18], ENTITY[12], ENTITY[16]) ∧ ため(EVENT[18]) = SITUATION[13]))))
+
+# ::id 24_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt アンケート は 県内 の 沿岸自治体 １５ 市町 の ２４５ 校 を 対象 に 実施 し た 。
+∃ EVENT[6] ENTITY[4] ENTITY[3] ENTITY[5] ENTITY[2] ENTITY[1] (
+ アンケート(ENTITY[1]) ∧
+  県内(ENTITY[4]) ∧
+   (CD_１５_市町(ENTITY[3]), の_沿岸自治体(ENTITY[4], ENTITY[3])) ∧
+    (CD_２４５_校(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+     対象(ENTITY[5]) ∧
+      past(EVENT[6]) ∧ 実施する.0_た(EVENT[6], ENTITY[1], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5])
+
+# ::id 25_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt 津波 で 人的 、 物的被害 が あっ た 学校 と 、 ほとんど 被害 の なかっ た 内陸寄り の 学校 が 混在 する 。
+∃ EVENT[14] GROUP[1] (
+ CONJ_と(∃ ATTRIB[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[2] (
+       津波(ENTITY[4]) ∧
+        人的(ATTRIB[6]) ∧
+         ATTRIBUTE_物的被害(ATTRIB[6], ENTITY[5]) ∧
+          あっ_た(EVENT[7], ENTITY[5]) ∧ で(EVENT[7]) = ENTITY[4] ∧ LOC(EVENT[7]) = ENTITY[2] ∧
+           学校(ENTITY[2]) ∧ past(EVENT[7]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[13] ENTITY[8] (
+   内陸寄り(ENTITY[13]) ∧
+    ほとんど ENTITY[10] ∃ EVENT[12] ENTITY[11] (
+     被害(ENTITY[11]) ∧
+      past(EVENT[12]) ∧ なかっ_た(EVENT[12], ENTITY[11]) ∧ LOC(EVENT[12]) = ENTITY[8]) ∧
+     の_学校(ENTITY[13], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[1]))) ∧ 混在する.0(EVENT[14], GROUP[1]))
+
+# ::id 26_newswire_02275_K201401010A0A30XX00001;NJ
+# ::snt ７ 割 の 校長 が 「 問題あり 」 と 答え た 結果 から 、 瀬成田書記長 は 「 被災校以外 で も 、 多く の 学校 が 悩み を 抱え て いる と 見 なければならない 」 と 、 問題 の 広がり を 指摘 し た 。
+∃ ENTITY[8] SITUATION[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ CD_７_割(ENTITY[3]) ∧
+  の_校長(ENTITY[3], ENTITY[2]) ∧
+   結果(SITUATION[1], 答え_た(EVENT[4], ENTITY[2]) ∧ と(EVENT[4]) = ENTITY[問題あり]) ∧
+    問題(ENTITY[6]) ∧
+     の_広がり(ENTITY[6], ENTITY[5]) ∧
+      ENTITY[8] = *pro*{ENTITY[瀬成田書記長], ENTITY[5], ENTITY[6], ENTITY[問題あり], ENTITY[2], ENTITY[3]} ∧
+       past(EVENT[4]) ∧
+        past(EVENT[7]) ∧
+         指摘する.0_た(EVENT[7], ENTITY[瀬成田書記長], ENTITY[5],
+          MD_なければならない(∃ EVENT[9] ENTITY[10] (
+                被災校以外(ENTITY[10]) ∧
+                 見(EVENT[9], ENTITY[8],
+                  多く_の ENTITY[11] (学校(ENTITY[11]),
+                   ∃ EVENT[13] ENTITY[12] (
+                    悩み(ENTITY[12]) ∧
+                     抱え_て_いる(EVENT[13], ENTITY[11], ENTITY[12]) ∧
+                      で(EVENT[13]) = ENTITY[10])))))) ∧ から(EVENT[7]) = SITUATION[1])

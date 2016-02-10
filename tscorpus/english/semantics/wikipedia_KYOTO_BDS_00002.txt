@@ -1,0 +1,1265 @@
+# ::id 1_wikipedia_KYOTO_BDS_00002,1;IE
+# ::snt Rinzai Zen Buddhism
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Rinzai_Zen_Buddhism])
+
+# ::id 2_wikipedia_KYOTO_BDS_00002,2;IE
+# ::snt Rinzai Zen Buddhism is one of the Chinese five Houses / seven Schools of Zen -LRB- Rinzai , Igyou , Soto , Unmon , Hogan -RRB- and Gigen RINZAI -LRB- ？ - 867 -RRB- of Tang was its founder .
+∃ REF1[7] EVENT[4] EVENT[8] ENTITY[1] ENTITY[5] ENTITY[6] GROUP[2] GROUP[3] (
+ (CD_five_seven(GROUP[3]),
+  is_Chinese_of(GROUP[3], ENTITY[Zen]) ∧ is_Houses_of(GROUP[3], ENTITY[Zen]) ∧ is_Schools_of(GROUP[3], ENTITY[Zen])) ∧
+  is_element_of(ENTITY[Rinzai], GROUP[2]) ∧ is_element_of(ENTITY[Igyou], GROUP[2]) ∧ is_element_of(ENTITY[Soto], GROUP[2]) ∧
+   is_element_of(ENTITY[Unmon], GROUP[2]) ∧ is_element_of(ENTITY[Hogan], GROUP[2]) ∧
+   is_-GROUP-_namely(GROUP[3], GROUP[2]) ∧
+    (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[3])) ∧
+     is_of(ENTITY[Gigen_RINZAI], ENTITY[Tang]) ∧
+      CD_？-867(ENTITY[5]) ∧
+       is_-ENTITY-_namely(ENTITY[Gigen_RINZAI], ENTITY[5]) ∧
+        REF1[7] = its ∧
+         is_founder_POS(ENTITY[6], REF1[7]) ∧
+          past(EVENT[8]) ∧
+           CONJ_and(copula(EVENT[4], ENTITY[Rinzai_Zen_Buddhism], ENTITY[1]), copula(EVENT[8], ENTITY[Gigen_RINZAI], ENTITY[6])))
+
+# ::id 3_wikipedia_KYOTO_BDS_00002,3;IE
+# ::snt He was known as " RINZAI of Katu -LRB- meaning to help wake up the sleeping mind -RRB- " and " General RINZAI " , and rose to the top of Chinese Zen with his distinctive style .
+∃ ATTRIB[13] REF2[12] REF1[1] ATTRIB[7] EVENT[9] EVENT[14] GROUP[2] ENTITY[11] ENTITY[6] ENTITY[10] (
+ sleeping(ATTRIB[7]) ∧
+  is_mind_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   is_top_of(ENTITY[10], ENTITY[Chinese_Zen]) ∧
+    REF1[1] = he ∧
+     ∃ EVENT[8] EVENT[5] EVENT[4] (
+      meaning(EVENT[4], ENTITY[RINZAI_of_Katu], help(EVENT[5], ENTITY[RINZAI_of_Katu], wake_up(EVENT[8], ENTITY[RINZAI_of_Katu], ENTITY[6]))) ∧
+       is_element_of(ENTITY[RINZAI_of_Katu], GROUP[2])) ∧ is_element_of(ENTITY[General_RINZAI], GROUP[2]) ∧
+      REF2[12] = his ∧
+       distinctive(ATTRIB[13]) ∧
+        is_style_ATTRIBUTE(ENTITY[11], ATTRIB[13]) ∧ is_style_POS(ENTITY[11], REF2[12]) ∧
+         past(EVENT[9]) ∧
+          past(EVENT[14]) ∧
+           CONJ_and(known(EVENT[9], _, REF1[1]) ∧ as(EVENT[9]) = GROUP[2],
+            rose(EVENT[14], REF1[1]) ∧ with(EVENT[14]) = ENTITY[11] ∧ to(EVENT[14]) = ENTITY[10]))
+
+# ::id 4_wikipedia_KYOTO_BDS_00002,4;IE
+# ::snt With its Zen Talks that try to awaken self awareness through study of Koan , it differs from the Silent Zen of the Soto sect , which just does meditation .
+∃ REF2[9] REF1[2] EVENT[8] EVENT[4] EVENT[15] ENTITY[7] ENTITY[6] ENTITY[5] GROUP[1] EVENT[12] ENTITY[14] ENTITY[11] (
+ Soto_sect(ENTITY[14]) ∧
+  is_of(ENTITY[Silent_Zen], ENTITY[14]) ∧
+   meditation(ENTITY[11]) ∧
+    does(EVENT[12], ENTITY[Silent_Zen], ENTITY[11]) ∧
+     ADV_just(EVENT[12]) ∧
+      REF1[2] = its ∧
+       self_awareness(ENTITY[5]) ∧
+        Koan(ENTITY[7]) ∧
+         is_study_of(ENTITY[6], ENTITY[7]) ∧
+          try(EVENT[4], GROUP[1], awaken(EVENT[8], GROUP[1], ENTITY[5]) ∧ through(EVENT[8]) = ENTITY[6]) ∧
+           is_Zen_Talks_POS(GROUP[1], REF1[2]) ∧
+           REF2[9] = it ∧
+            differs(EVENT[15], REF2[9]) ∧ from(EVENT[15]) = ENTITY[Silent_Zen] ∧ With(EVENT[15]) = GROUP[1])
+
+# ::id 5_wikipedia_KYOTO_BDS_00002,5;IE
+# ::snt Rinzai School in China
+∃ EVENT[1] (is_in(ENTITY[Rinzai_School], ENTITY[China]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Rinzai_School])
+
+# ::id 6_wikipedia_KYOTO_BDS_00002,6;IE
+# ::snt As the name implies , Rinzai School started with its founder Gigen RINZAI at the end of the Tang dynasty , after the anti-Buddhist movement at the Kaishou era .
+∃ REF1[5] SITUATION[1] ATTRIB[9] ENTITY[4] EVENT[3] EVENT[11] ENTITY[2] ENTITY[7] ENTITY[10] ENTITY[8] ENTITY[6] (
+ name(ENTITY[2]) ∧
+  Tang_dynasty(ENTITY[7]) ∧
+   is_end_of(ENTITY[6], ENTITY[7]) ∧
+    anti-buddhist(ATTRIB[9]) ∧
+     Kaishou_era(ENTITY[10]) ∧
+      is_movement_at(ENTITY[8], ENTITY[10]) ∧ is_movement_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+       past(EVENT[11]) ∧
+        is_FACT_THAT(SITUATION[1], implies(EVENT[3], ENTITY[2])) ∧
+         REF1[5] = its ∧
+          is_founder_POS(ENTITY[4], REF1[5]) ∧
+           is_-ENTITY-_namely(ENTITY[Gigen_RINZAI], ENTITY[4]) ∧
+            started(EVENT[11], ENTITY[Rinzai_School]) ∧ after(EVENT[11]) = ENTITY[8] ∧
+             at(EVENT[11]) = ENTITY[6] ∧ with(EVENT[11]) = ENTITY[Gigen_RINZAI] ∧
+             As(EVENT[11]) = SITUATION[1])
+
+# ::id 7_wikipedia_KYOTO_BDS_00002,7;IE
+# ::snt RINZAI was the disciple of Kiun OBAKU ; the school grew as a religious movement centered in the province of Hebei , with the support of Changshi WANG of the Hanchin government , but in the confusion that arose around the end of the Tang dynasty , Hebei was at the center of the tumultuous five dynasties and it became difficult to sustain a religious movement .
+∃ ATTRIB[25] ATTRIB[23] SITUATION[21] ATTRIB[5] ATTRIB[19] ENTITY[4] ENTITY[22] EVENT[2] EVENT[8] EVENT[11] EVENT[20] EVENT[24] EVENT[26] EVENT[16] ENTITY[1] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[3] ENTITY[15] ENTITY[14] GROUP[18] ENTITY[17] ENTITY[12] (
+ is_disciple_of(ENTITY[1], ENTITY[Kiun_OBAKU]) ∧
+  school(ENTITY[3]) ∧
+   is_province_of(ENTITY[7], ENTITY[Hebei]) ∧
+    Hanchin_government(ENTITY[10]) ∧
+     is_of(ENTITY[Changshi_WANG], ENTITY[10]) ∧
+      is_support_of(ENTITY[9], ENTITY[Changshi_WANG]) ∧
+       Tang_dynasty(ENTITY[15]) ∧
+        is_end_of(ENTITY[14], ENTITY[15]) ∧
+         arose(EVENT[16], ENTITY[12]) ∧ TMP_around(EVENT[16]) = ENTITY[14] ∧ confusion(ENTITY[12]) ∧
+          tumultuous(ATTRIB[19]) ∧
+           (CD_five(GROUP[18]), is_dynasties_ATTRIBUTE(GROUP[18], ATTRIB[19])) ∧
+            is_center_of(ENTITY[17], GROUP[18]) ∧
+             past(EVENT[16]) ∧
+              past(EVENT[2]) ∧
+               past(EVENT[11]) ∧
+                past(EVENT[20]) ∧
+                 past(EVENT[26]) ∧
+                  religious(ATTRIB[5]) ∧
+                   centered(EVENT[8], ENTITY[4]) ∧ in(EVENT[8]) = ENTITY[7] ∧
+                    is_movement_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+                    religious(ATTRIB[23]) ∧
+                     is_movement_ATTRIBUTE(ENTITY[22], ATTRIB[23]) ∧
+                      is_FACT_THAT(SITUATION[21], sustain(EVENT[24], _, ENTITY[22])) ∧
+                       difficult(ATTRIB[25]) ∧
+                        CONJ_but(copula(EVENT[2], ENTITY[RINZAI], ENTITY[1]),
+                         grew(EVENT[11], ENTITY[3]) ∧ with(EVENT[11]) = ENTITY[9] ∧
+                          as(EVENT[11]) = ENTITY[4],
+                         CONJ_and(copula(EVENT[20], ENTITY[Hebei]) ∧ at(EVENT[20]) = ENTITY[17] ∧
+                               in(EVENT[20]) = ENTITY[12], became(EVENT[26], SITUATION[21], ATTRIB[25]))))
+
+# ::id 8_wikipedia_KYOTO_BDS_00002,8;IE
+# ::snt The central figure around that time was Enshou FUKETSU .
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ central(ATTRIB[2]) ∧
+  time(ENTITY[3]) ∧
+   is_figure_around(ENTITY[1], ENTITY[3]) ∧ is_figure_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ENTITY[Enshou_FUKETSU]))
+
+# ::id 9_wikipedia_KYOTO_BDS_00002,9;IE
+# ::snt It was in the Northern Song dynasty that Rinzai School became vibrant again , below the gates of Sekiso SOEN , along with Enan OURYU and Houe YOUGI who came from Jiangxi province and created the two main sectes of Rinzai -LRB- Ouryu and Yougi -RRB- , and swept across all of China .
+∃ SITUATION[16] ATTRIB[3] ATTRIB[11] EVENT[8] EVENT[12] EVENT[15] EVENT[18] GROUP[6] ENTITY[5] ENTITY[1] GROUP[9] GROUP[10] GROUP[4] ENTITY[17] (
+ is_gates_of(GROUP[4], ENTITY[Sekiso_SOEN]) ∧
+  main(ATTRIB[11]) ∧
+   (CD_two(GROUP[10]), is_sectes_of(GROUP[10], ENTITY[Rinzai]) ∧ is_sectes_ATTRIBUTE(GROUP[10], ATTRIB[11])) ∧
+    is_element_of(ENTITY[Ouryu], GROUP[9]) ∧ is_element_of(ENTITY[Yougi], GROUP[9]) ∧
+     is_-GROUP-_namely(GROUP[10], GROUP[9]) ∧
+      Northern_Song_dynasty(ENTITY[17]) ∧
+       vibrant(ATTRIB[3]) ∧
+        is_element_of(ENTITY[Enan_OURYU], GROUP[6]) ∧ is_element_of(ENTITY[Houe_YOUGI], GROUP[6]) ∧
+         CONJ_and(came(EVENT[8], ENTITY[5]) ∧ from(EVENT[8]) = ENTITY[Jiangxi_province],
+          created(EVENT[12], ENTITY[5], GROUP[10]),
+          ALL ENTITY[13] (is_of(ENTITY[13], ENTITY[China]),
+           ∃ EVENT[14] (past(EVENT[14]) ∧ swept(EVENT[14], ENTITY[5]) ∧ across(EVENT[14]) = ENTITY[13]))) ∧
+          is_equals(ENTITY[5], GROUP[6]) ∧
+          is_FACT_THAT(SITUATION[16],
+           became(EVENT[15], ENTITY[Rinzai_School], ATTRIB[3]) ∧ along_with(EVENT[15]) = ENTITY[5] ∧
+            below(EVENT[15]) = GROUP[4] ∧ in(EVENT[15]) = ENTITY[1]) ∧
+           ADV_again(SITUATION[16]) ∧
+            past(EVENT[8]) ∧
+             past(EVENT[15]) ∧
+              past(EVENT[18]) ∧ copula(EVENT[18], ENTITY[1]) ∧ in(EVENT[18]) = ENTITY[17])
+
+# ::id 10_wikipedia_KYOTO_BDS_00002,10;IE
+# ::snt When it came to the Southern Song dynasty , Soukou DAIE , a disciple of Kokugon ENGO who belonged to the Yougi sect , started the Daikan sect in Zhejiang province , which became a major sect in the Rinzai School .
+∃ ATTRIB[11] ENTITY[3] EVENT[2] EVENT[6] EVENT[13] EVENT[12] ENTITY[1] ENTITY[5] ENTITY[10] ENTITY[8] ENTITY[7] (
+ Southern_Song_dynasty(ENTITY[1]) ∧
+  Yougi_sect(ENTITY[5]) ∧
+   Zhejiang_province(ENTITY[8]) ∧
+    major(ATTRIB[11]) ∧
+     is_sect_in(ENTITY[10], ENTITY[Rinzai_School]) ∧ is_sect_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+      became(EVENT[12], ENTITY[7], ENTITY[10]) ∧ is_Daikan_sect_in(ENTITY[7], ENTITY[8]) ∧
+       past(EVENT[12]) ∧
+        past(EVENT[2]) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[13]) ∧
+           belonged(EVENT[6], ENTITY[3]) ∧ to(EVENT[6]) = ENTITY[5] ∧ is_disciple_of(ENTITY[3], ENTITY[Kokugon_ENGO]) ∧
+            is_-ENTITY-_namely(ENTITY[Soukou_DAIE], ENTITY[3]) ∧
+             CRD_When(came_to(EVENT[2], ENTITY[1]), started(EVENT[13], ENTITY[Soukou_DAIE], ENTITY[7])))
+
+# ::id 11_wikipedia_KYOTO_BDS_00002,11;IE
+# ::snt Rinzai School in Japan
+∃ EVENT[1] (is_in(ENTITY[Rinzai_School], ENTITY[Japan]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Rinzai_School])
+
+# ::id 12_wikipedia_KYOTO_BDS_00002,12;IE
+# ::snt According to doctrine , it was brought over to China from India by Bodhidharma , the 28th successor of the 10 disciples -LRB- called Kasho -RRB- who directly received the teaching -LRB- enlightenment -RRB- of Siddhartha Gautama .
+∃ ATTRIB[5] REF1[1] EVENT[3] EVENT[14] ENTITY[2] ENTITY[4] EVENT[9] EVENT[8] EVENT[12] ENTITY[11] GROUP[6] (
+ is_teaching_of(ENTITY[11], ENTITY[Siddhartha_Gautama]) ∧ is_enlightenment_of(ENTITY[11], ENTITY[Siddhartha_Gautama]) ∧
+  (CD_10(GROUP[6]),
+   called(EVENT[8], ENTITY[Bodhidharma], GROUP[6], xxx(EVENT[9], GROUP[6], ENTITY[Kasho])) ∧
+    received(EVENT[12], GROUP[6], ENTITY[11]) ∧ disciples(GROUP[6])) ∧
+   ADV_directly(EVENT[12]) ∧
+    past(EVENT[12]) ∧
+     REF1[1] = it ∧
+      doctrine(ENTITY[2]) ∧
+       28th(ATTRIB[5]) ∧
+        is_successor_of(ENTITY[4], GROUP[6]) ∧ is_successor_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+         is_-ENTITY-_namely(ENTITY[Bodhidharma], ENTITY[4]) ∧
+          past(EVENT[14]) ∧
+           CONJ_and(according(EVENT[3], REF1[1]) ∧ to(EVENT[3]) = ENTITY[2],
+            brought_over(EVENT[14], ENTITY[Bodhidharma], REF1[1]) ∧ from(EVENT[14]) = ENTITY[India] ∧
+             to(EVENT[14]) = ENTITY[China]))
+
+# ::id 13_wikipedia_KYOTO_BDS_00002,13;IE
+# ::snt Later the Rinzai school , which achieved the pinnacle of Zen teaching , was brought to Japan in the Kamakura period by Eisai , who went to China to study in the Southern Song period .
+∃ PRP[8] SITUATION[13] EVENT[10] EVENT[11] EVENT[12] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[6] ENTITY[1] (
+ Zen_teaching(ENTITY[4]) ∧
+  is_pinnacle_of(ENTITY[3], ENTITY[4]) ∧
+   achieved(EVENT[5], ENTITY[1], ENTITY[3]) ∧ Rinzai_school(ENTITY[1]) ∧
+    Kamakura_period(ENTITY[6]) ∧
+     Southern_Song_period(ENTITY[9]) ∧
+      past(EVENT[5]) ∧
+       TMP_later(SITUATION[13]) ∧
+        past(EVENT[11]) ∧
+         past(EVENT[12]) ∧
+          is_FACT_THAT(PRP[8], study(EVENT[10], ENTITY[Eisai]) ∧ in(EVENT[10]) = ENTITY[9]) ∧
+           went(EVENT[11], ENTITY[Eisai]) ∧ PRP(EVENT[11]) = PRP[8] ∧ to(EVENT[11]) = ENTITY[China] ∧
+            is_FACT_THAT(SITUATION[13],
+             brought(EVENT[12], ENTITY[Eisai], ENTITY[1]) ∧ in(EVENT[12]) = ENTITY[6] ∧
+              to(EVENT[12]) = ENTITY[Japan]))
+
+# ::id 14_wikipedia_KYOTO_BDS_00002,14;IE
+# ::snt Japan 's Rinzai is one of Zen schools in Japan .
+∃ EVENT[3] GROUP[2] ENTITY[1] (
+ is_POS(ENTITY[Rinzai], ENTITY[Japan]) ∧
+  is_Zen_schools_in(GROUP[2], ENTITY[Japan]) ∧
+   (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧ copula(EVENT[3], ENTITY[Rinzai], ENTITY[1]))
+
+# ::id 15_wikipedia_KYOTO_BDS_00002,15;IE
+# ::snt It emphasizes the transmission of enlightenment from teacher to disciple . -LRB- Hassu is the disciple who inherited the teaching of the master . -RRB-
+∃ REF1[1] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ enlightenment(ENTITY[3]) ∧
+  teacher(ENTITY[4]) ∧
+   disciple(ENTITY[5]) ∧
+    is_transmission_to(ENTITY[2], ENTITY[5]) ∧ is_transmission_from(ENTITY[2], ENTITY[4]) ∧ is_transmission_of(ENTITY[2], ENTITY[3]) ∧
+     REF1[1] = it ∧ emphasizes(EVENT[6], REF1[1], ENTITY[2]))
+
+# ::id 16_wikipedia_KYOTO_BDS_00002,16;IE
+# ::snt It calls Sakyamuni the Original Teacher Venerable Sakyamuni Buddha , Bodhidharma the First Ancestor and Great Teacher Bodhidharma , and RINZAI the Founder and Great Teacher Rinzai .
+∃ REF1[1] ATTRIB[6] EVENT[9] EVENT[2] GROUP[3] ENTITY[5] ENTITY[8] (
+ first(ATTRIB[6]) ∧
+  is_Ancestor_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   Founder(ENTITY[8]) ∧
+    REF1[1] = it ∧
+     is_element_of(ENTITY[Original_Teacher_Venerable_Sakyamuni_Buddha], GROUP[3]) ∧
+      ∃ GROUP[4] (
+       is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[Great_Teacher_Bodhidharma], GROUP[4]) ∧
+        is_-ENTITY-_namely(ENTITY[Bodhidharma], GROUP[4]) ∧ is_element_of(ENTITY[Bodhidharma], GROUP[3])) ∧
+      ∃ GROUP[7] (
+       is_element_of(ENTITY[8], GROUP[7]) ∧ is_element_of(ENTITY[Great_Teacher_Rinzai], GROUP[7]) ∧
+        is_-ENTITY-_namely(ENTITY[RINZAI], GROUP[7]) ∧ is_element_of(ENTITY[RINZAI], GROUP[3])) ∧
+      calls(EVENT[2], REF1[1], xxx(EVENT[9], ENTITY[Sakyamuni], GROUP[3])))
+
+# ::id 17_wikipedia_KYOTO_BDS_00002,17;IE
+# ::snt In contrast to the Soto Zen school which spreads through regional clans and the general people , the Rinzai School received support from Samurai families in government , and was esteemed in the politics and culture .
+∃ ATTRIB[8] ATTRIB[6] EVENT[13] EVENT[18] ENTITY[12] GROUP[11] ENTITY[10] ENTITY[1] EVENT[9] GROUP[5] GROUP[7] GROUP[4] ENTITY[2] GROUP[16] ENTITY[17] GROUP[15] ENTITY[14] (
+ regional(ATTRIB[6]) ∧
+  is_clans_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+   general(ATTRIB[8]) ∧
+    is_people_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+     is_subset_of_or_equal_to(GROUP[5], GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4]) ∧
+      spreads(EVENT[9], ENTITY[2]) ∧ through(EVENT[9]) = GROUP[4] ∧ Soto_Zen_school(ENTITY[2]) ∧
+       politics(GROUP[16]) ∧
+        culture(ENTITY[17]) ∧
+         is_subset_of_or_equal_to(GROUP[16], GROUP[15]) ∧ is_element_of(ENTITY[17], GROUP[15]) ∧
+          is_equals(ENTITY[14], GROUP[15]) ∧
+           is_contrast_to(ENTITY[1], ENTITY[2]) ∧
+            support(ENTITY[10]) ∧
+             government(ENTITY[12]) ∧
+              is_Samurai_families_in(GROUP[11], ENTITY[12]) ∧
+               past(EVENT[13]) ∧
+                past(EVENT[18]) ∧
+                 CONJ_and(received(EVENT[13], ENTITY[Rinzai_School], ENTITY[10]) ∧ from(EVENT[13]) = GROUP[11] ∧
+                       In(EVENT[13]) = ENTITY[1],
+                  esteemed(EVENT[18], _, ENTITY[Rinzai_School]) ∧ in(EVENT[18]) = ENTITY[14] ∧
+                   In(EVENT[18]) = ENTITY[1]))
+
+# ::id 18_wikipedia_KYOTO_BDS_00002,18;IE
+# ::snt Later , the Rinzai School was rebuilt in the Edo period by Master HAKUIN , and continued to be called Hakuin Zen .
+∃ SITUATION[6] EVENT[2] EVENT[5] EVENT[4] EVENT[3] ENTITY[1] (
+ Edo_period(ENTITY[1]) ∧
+  TMP_later(SITUATION[6]) ∧
+   past(EVENT[2]) ∧
+    past(EVENT[3]) ∧
+     is_FACT_THAT(SITUATION[6],
+      CONJ_and(rebuilt(EVENT[2], ENTITY[Master_HAKUIN], ENTITY[Rinzai_School]) ∧ in(EVENT[2]) = ENTITY[1],
+       continued(EVENT[3], ENTITY[Rinzai_School], called(EVENT[4], _, ENTITY[Rinzai_School], xxx(EVENT[5], ENTITY[Rinzai_School], ENTITY[Hakuin_Zen]))))))
+
+# ::id 19_wikipedia_KYOTO_BDS_00002,19;IE
+# ::snt Traditions
+∃ EVENT[2] GROUP[1] (Traditions(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 20_wikipedia_KYOTO_BDS_00002,20;IE
+# ::snt Transmission of enlightenment from masters to disciples continues down to the present day -LRB- Hassu is the disciple who inherited the teaching of the master -RRB- .
+∃ ATTRIB[6] EVENT[7] GROUP[4] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[5] (
+ present(ATTRIB[6]) ∧
+  is_day_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   enlightenment(ENTITY[2]) ∧
+    masters(GROUP[3]) ∧
+     disciples(GROUP[4]) ∧
+      is_Transmission_to(ENTITY[1], GROUP[4]) ∧ is_Transmission_from(ENTITY[1], GROUP[3]) ∧ is_Transmission_of(ENTITY[1], ENTITY[2]) ∧
+       is_ADV_down_to(EVENT[7], ENTITY[5]) ∧ continues(EVENT[7], ENTITY[1]))
+
+# ::id 21_wikipedia_KYOTO_BDS_00002,21;IE
+# ::snt The important interaction between the master and disciple is called " a secret in the room " and is not to be taken out of the master 's room and revealed publicly .
+∃ ATTRIB[2] EVENT[10] EVENT[7] ENTITY[8] ENTITY[5] ENTITY[6] GROUP[4] ENTITY[3] ENTITY[9] ENTITY[13] ENTITY[1] (
+ important(ATTRIB[2]) ∧
+  master(ENTITY[5]) ∧
+   disciple(ENTITY[6]) ∧
+    is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧
+     is_equals(ENTITY[3], GROUP[4]) ∧
+      is_interaction_between(ENTITY[1], ENTITY[3]) ∧ is_interaction_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       room(ENTITY[9]) ∧
+        master(ENTITY[13]) ∧
+         is_secret_in(ENTITY[8], ENTITY[9]) ∧
+          CONJ_and(called(EVENT[7], _, ENTITY[1], xxx(EVENT[10], ENTITY[1], ENTITY[8])),
+           ¬ ∃ EVENT[14] EVENT[15] EVENT[11] ENTITY[12] (
+                 is_room_POS(ENTITY[12], ENTITY[13]) ∧
+                  ADV_publicly(EVENT[15]) ∧
+                   copula(EVENT[11], ENTITY[1],
+                    CONJ_and(taken_out(EVENT[14], _, ENTITY[1]) ∧ of(EVENT[14]) = ENTITY[12],
+                     revealed(EVENT[15], _, ENTITY[1]))))))
+
+# ::id 22_wikipedia_KYOTO_BDS_00002,22;IE
+# ::snt What is extracted from the interactions between a master and disciple , or Zen lecture transcripts that record the actions of a master , is called a Koan -LRB- precedent -RRB- and various collections have been compiled since the Song dynasty ; but enlightenment is not something that can be communicated with words , so when people today try to understand the text , the Koan itself refuses them .
+∃ SITUATION[20] ATTRIB[18] REF1[27] GROUP[3] ENTITY[15] ENTITY[1] GROUP[17] ENTITY[30] EVENT[13] EVENT[16] EVENT[14] EVENT[19] ENTITY[6] ENTITY[7] GROUP[5] GROUP[4] ENTITY[11] GROUP[10] ENTITY[24] ENTITY[26] (
+ master(ENTITY[6]) ∧
+  disciple(ENTITY[7]) ∧
+   is_element_of(ENTITY[6], GROUP[5]) ∧ is_element_of(ENTITY[7], GROUP[5]) ∧
+    is_interactions_between(GROUP[4], GROUP[5]) ∧
+     master(ENTITY[11]) ∧
+      is_actions_of(GROUP[10], ENTITY[11]) ∧
+       text(ENTITY[24]) ∧
+        REF1[27] = itself ∧
+         is_Koan_RFL(ENTITY[26], REF1[27]) ∧
+          CONJ_or(is_subset_of_or_equal_to(GROUP[4], GROUP[3]),
+           ∃ GROUP[8] EVENT[12] (
+            record(EVENT[12], GROUP[8], GROUP[10]) ∧ Zen_lecture_transcripts(GROUP[8]) ∧
+             is_subset_of_or_equal_to(GROUP[8], GROUP[3]))) ∧
+           extracted(EVENT[13], _, ENTITY[1]) ∧ from(EVENT[13]) = GROUP[3] ∧
+            Koan(ENTITY[15]) ∧ precedent(ENTITY[15]) ∧
+             various(ATTRIB[18]) ∧
+              is_collections_ATTRIBUTE(GROUP[17], ATTRIB[18]) ∧
+               is_FACT_THAT(SITUATION[20],
+                ∀ TIME[22] GROUP[21] EVENT[25] EVENT[23] CND_when(
+                    people(GROUP[21]) ∧ today(TIME[22]) ∧
+                     try(EVENT[23], GROUP[21], understand(EVENT[25], GROUP[21], ENTITY[24])) ∧
+                      is_contained_in(TMP(EVENT[23]), TIME[22]),
+                    ∃ REF2[28] EVENT[29] (REF2[28] = them ∧ refuses(EVENT[29], ENTITY[26], REF2[28])))) ∧
+                enlightenment(ENTITY[30]) ∧
+                 CONJ_but(CONJ_and(called(EVENT[14], _, ENTITY[1], xxx(EVENT[16], ENTITY[1], ENTITY[15])),
+                       have_compiled(EVENT[19], _, GROUP[17]) ∧ since(EVENT[19]) = ENTITY[Song_dynasty]),
+                  ¬ SOME ENTITY[31] (
+                        MD_can(∃ GROUP[33] EVENT[34] (
+                              words(GROUP[33]) ∧
+                               communicated(EVENT[34], _, ENTITY[31]) ∧
+                                with(EVENT[34]) = GROUP[33])) ∧ thing(ENTITY[31]),
+                        ∃ EVENT[35] (copula(EVENT[35], ENTITY[30], ENTITY[31]) ∧ so(EVENT[35]) = SITUATION[20]))))
+
+# ::id 23_wikipedia_KYOTO_BDS_00002,23;IE
+# ::snt However , they contain hints that lead people toward enlightenment , and there are a great many Zen books from the beginning down to the present day .
+∃ SITUATION[8] REF1[1] ATTRIB[12] EVENT[6] EVENT[7] ENTITY[5] GROUP[4] GROUP[2] ENTITY[11] ENTITY[10] (
+ beginning(ENTITY[10]) ∧
+  present(ATTRIB[12]) ∧
+   is_day_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+    REF1[1] = they ∧
+     people(GROUP[4]) ∧
+      enlightenment(ENTITY[5]) ∧
+       lead(EVENT[6], GROUP[2], GROUP[4]) ∧ toward(EVENT[6]) = ENTITY[5] ∧ hints(GROUP[2]) ∧
+        ADV_however(SITUATION[8]) ∧
+         CONJ_and(is_FACT_THAT(SITUATION[8], contain(EVENT[7], REF1[1], GROUP[2])),
+          A_GREAT_MANY GROUP[9] (Zen_books(GROUP[9]),
+           ∃ EVENT[13] (
+            copula(EVENT[13], GROUP[9]) ∧
+             down_to(EVENT[13]) = ENTITY[11] ∧ from(EVENT[13]) = ENTITY[10]))))
+
+# ::id 24_wikipedia_KYOTO_BDS_00002,24;IE
+# ::snt Also since the Song dynasty , the Zen schools changed to a Kannazen style in which masters give lectures using transcripts of Zen talks and the masters became not to display the same majesty as those in the Tang dynasty including Rinzai .
+∃ SITUATION[12] ATTRIB[16] EVENT[10] EVENT[9] EVENT[11] EVENT[14] GROUP[8] GROUP[7] ENTITY[6] GROUP[5] ENTITY[3] EVENT[20] GROUP[2] ENTITY[1] ENTITY[18] GROUP[17] ENTITY[15] GROUP[13] (
+ Song_dynasty(ENTITY[1]) ∧
+  Zen_schools(GROUP[2]) ∧
+   masters(GROUP[13]) ∧
+    same(ATTRIB[16]) ∧
+     is_majesty_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+      Tang_dynasty(ENTITY[18]) ∧
+       including(EVENT[20], GROUP[17], ENTITY[Rinzai]) ∧ is_in(GROUP[17], ENTITY[18]) ∧
+        masters(GROUP[5]) ∧
+         lectures(ENTITY[6]) ∧
+          Zen_talks(GROUP[8]) ∧
+           is_transcripts_of(GROUP[7], GROUP[8]) ∧
+            CONJ_and(give(EVENT[10], GROUP[5], ENTITY[6]) ∧ in(EVENT[10]) = ENTITY[3],
+             using(EVENT[9], ENTITY[6], GROUP[7])) ∧ Kannazen_style(ENTITY[3]) ∧
+             ADV_also(SITUATION[12]) ∧
+              past(EVENT[11]) ∧
+               past(EVENT[14]) ∧
+                CONJ_and(is_FACT_THAT(SITUATION[12],
+                      changed(EVENT[11], GROUP[2]) ∧ to(EVENT[11]) = ENTITY[3] ∧
+                       since(EVENT[11]) = ENTITY[1]),
+                 became(EVENT[14], GROUP[13],
+                  ¬ ∃ EVENT[21] (display(EVENT[21], GROUP[13], ENTITY[15]) ∧ as(EVENT[21]) = GROUP[17]))))
+
+# ::id 25_wikipedia_KYOTO_BDS_00002,25;IE
+# ::snt Although masters choose their successors when they die , the successors have not necessarily attained enlightenment by that time , but that fact is only known to the master and the successor himself .
+∃ SITUATION[10] SITUATION[18] REF2[6] REF1[4] SITUATION[1] REF3[22] EVENT[7] EVENT[9] EVENT[23] GROUP[3] GROUP[2] GROUP[19] ENTITY[13] GROUP[11] ENTITY[20] ENTITY[21] ENTITY[16] (
+ successors(GROUP[11]) ∧
+  time(ENTITY[13]) ∧
+   fact(ENTITY[16]) ∧
+    master(ENTITY[20]) ∧
+     REF3[22] = himself ∧
+      is_successor_RFL(ENTITY[21], REF3[22]) ∧
+       masters(GROUP[2]) ∧
+        REF1[4] = their ∧
+         is_successors_POS(GROUP[3], REF1[4]) ∧
+          REF2[6] = they ∧
+           is_FACT_THAT(SITUATION[1], is_FACT_THAT(SITUATION[10], choose(EVENT[9], GROUP[2], GROUP[3]))) ∧
+            is_element_of(ENTITY[20], GROUP[19]) ∧ is_element_of(ENTITY[21], GROUP[19]) ∧
+             is_FACT_THAT(SITUATION[18], known(EVENT[23], ENTITY[16]) ∧ to(EVENT[23]) = GROUP[19]) ∧
+              is_TMP(EVENT[7], SITUATION[10]) ∧
+               die(EVENT[7], REF2[6]) ∧
+                CONJ_but(¬ ∃ EVENT[14] ENTITY[12] (
+                           enlightenment(ENTITY[12]) ∧
+                            ADV_necessarily(EVENT[14]) ∧
+                             have_attained(EVENT[14], GROUP[11], ENTITY[12]) ∧ by(EVENT[14]) = ENTITY[13] ∧
+                              Although(EVENT[14]) = SITUATION[1]),
+                 ONLY SITUATION[17] (is_of(SITUATION[17], SITUATION[18]), ∃ EVENT[24] copula(EVENT[24], ENTITY[16], SITUATION[17]))))
+
+# ::id 26_wikipedia_KYOTO_BDS_00002,26;IE
+# ::snt Even if the new master had not attained enlightenment , the disciples would have been able to do so if it is within a few generations from that of the master who gained enlightenment , therefore it is possible to take such a measure .
+∃ SITUATION[24] ATTRIB[22] ATTRIB[20] SITUATION[18] ATTRIB[2] EVENT[21] EVENT[23] ENTITY[19] EVENT[13] ENTITY[1] ENTITY[12] ENTITY[10] ENTITY[9] GROUP[5] (
+ new(ATTRIB[2]) ∧
+  is_master_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   disciples(GROUP[5]) ∧
+    enlightenment(ENTITY[12]) ∧
+     gained(EVENT[13], ENTITY[10], ENTITY[12]) ∧ master(ENTITY[10]) ∧
+      is_of(ENTITY[9], ENTITY[10]) ∧
+       past(EVENT[13]) ∧
+        such(ATTRIB[20]) ∧
+         is_measure_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+          is_FACT_THAT(SITUATION[18], take(EVENT[21], _, ENTITY[19])) ∧
+           possible(ATTRIB[22]) ∧
+            ADV_therefore(SITUATION[24]) ∧
+             CND_Even_if(
+              ¬ ∃ EVENT[4] ENTITY[3] (enlightenment(ENTITY[3]) ∧ past(EVENT[4]) ∧ had_attained(EVENT[4], ENTITY[1], ENTITY[3])),
+              MD_would(∃ SITUATION[16] ATTRIB[6] EVENT[17] (
+                    is_able_to(ATTRIB[6],
+                     is_FACT_THAT(SITUATION[16],
+                      ∀ REF1[7] CND_if(
+                          REF1[7] = it ∧
+                           A_FEW GROUP[8] (is_generations_from(GROUP[8], ENTITY[9]),
+                            ∃ EVENT[14] (copula(EVENT[14], REF1[7]) ∧ within(EVENT[14]) = GROUP[8])),
+                          ∃ EVENT[15] do(EVENT[15])))) ∧
+                     ADV_so(SITUATION[16]) ∧ have_copula(EVENT[17], GROUP[5], ATTRIB[6])))) ∧
+              is_FACT_THAT(SITUATION[24], copula(EVENT[23], SITUATION[18], ATTRIB[22])))
+
+# ::id 27_wikipedia_KYOTO_BDS_00002,27;IE
+# ::snt It is possible for a master to leave behind several new masters , or at his discretion not to leave a successor and bring his line to an end .
+∃ ATTRIB[14] REF2[11] REF1[7] SITUATION[1] EVENT[13] EVENT[15] ENTITY[2] ENTITY[12] ENTITY[10] ENTITY[6] (
+ master(ENTITY[2]) ∧
+  REF1[7] = his ∧
+   is_discretion_POS(ENTITY[6], REF1[7]) ∧
+    REF2[11] = his ∧
+     is_line_POS(ENTITY[10], REF2[11]) ∧
+      end(ENTITY[12]) ∧
+       is_FACT_THAT(SITUATION[1],
+        CONJ_or(SEVERAL ATTRIB[4] GROUP[3] ((new(ATTRIB[4]) ∧ is_masters_ATTRIBUTE(GROUP[3], ATTRIB[4])),
+              ∃ EVENT[5] (leave(EVENT[5], ENTITY[2]) ∧ behind(EVENT[5]) = GROUP[3])),
+         CONJ_and(¬ ∃ EVENT[9] ENTITY[8] (
+                    successor(ENTITY[8]) ∧
+                     leave(EVENT[9], _, ENTITY[8]) ∧ at(EVENT[9]) = ENTITY[6]),
+          bring(EVENT[13], _, ENTITY[10]) ∧ to(EVENT[13]) = ENTITY[12] ∧
+           at(EVENT[13]) = ENTITY[6]))) ∧
+        possible(ATTRIB[14]) ∧ copula(EVENT[15], SITUATION[1], ATTRIB[14]))
+
+# ::id 28_wikipedia_KYOTO_BDS_00002,28;IE
+# ::snt Many lines have split , and some have disappeared ; in this way some of those lines have come down from the 7th century to the present day .
+∃ ATTRIB[11] ATTRIB[9] GROUP[7] DATE[10] DATE[8] ENTITY[5] (
+ way(ENTITY[5]) ∧
+  lines(GROUP[7]) ∧
+   7th(ATTRIB[9]) ∧
+    is_century_ATTRIBUTE(DATE[8], ATTRIB[9]) ∧
+     present(ATTRIB[11]) ∧
+      is_day_ATTRIBUTE(DATE[10], ATTRIB[11]) ∧
+       CONJ_and(MANY GROUP[1] (lines(GROUP[1]), ∃ EVENT[2] have_split(EVENT[2], GROUP[1])), SOME ENTITY[3] ∃ EVENT[4] have_disappeared(EVENT[4], ENTITY[3])) ∧
+        SOME ENTITY[6] (is_element_of(ENTITY[6], GROUP[7]),
+         ∃ EVENT[12] (
+          have_come_down(EVENT[12], ENTITY[6]) ∧
+           to(EVENT[12]) = DATE[10] ∧
+            from(EVENT[12]) = DATE[8] ∧ in(EVENT[12]) = ENTITY[5])))
+
+# ::id 29_wikipedia_KYOTO_BDS_00002,29;IE
+# ::snt Enlightenment
+∃ EVENT[2] ENTITY[1] (Enlightenment(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 30_wikipedia_KYOTO_BDS_00002,30;IE
+# ::snt The Zen sects generally emphasize enlightenment over knowledge .
+∃ EVENT[4] ENTITY[3] ENTITY[2] GROUP[1] (
+ Zen_sects(GROUP[1]) ∧
+  enlightenment(ENTITY[2]) ∧
+   knowledge(ENTITY[3]) ∧
+    ADV_generally(EVENT[4]) ∧ emphasize(EVENT[4], GROUP[1], ENTITY[2]) ∧ over(EVENT[4]) = ENTITY[3])
+
+# ::id 31_wikipedia_KYOTO_BDS_00002,31;IE
+# ::snt Enlightenment in Zen means that all living things realize the inherent buddha nature they possess .
+∃ REF1[7] ATTRIB[5] EVENT[2] ENTITY[1] EVENT[8] ENTITY[4] (
+ inherent(ATTRIB[5]) ∧
+  REF1[7] = they ∧
+   possess(EVENT[8], REF1[7], ENTITY[4]) ∧ is_buddha_nature_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    is_Enlightenment_in(ENTITY[1], ENTITY[Zen]) ∧
+     means(EVENT[2], ENTITY[1], ALL GROUP[3] (living_things(GROUP[3]), ∃ EVENT[9] realize(EVENT[9], GROUP[3], ENTITY[4]))))
+
+# ::id 32_wikipedia_KYOTO_BDS_00002,32;IE
+# ::snt For this reason , masters in the Tang dynasty struggled to enlightenment through much hardship .
+∃ ENTITY[4] GROUP[2] ENTITY[3] ENTITY[1] (
+ reason(ENTITY[1]) ∧
+  Tang_dynasty(ENTITY[3]) ∧
+   is_masters_in(GROUP[2], ENTITY[3]) ∧
+    enlightenment(ENTITY[4]) ∧
+     MUCH ENTITY[5] (hardship(ENTITY[5]),
+      ∃ EVENT[6] (
+       past(EVENT[6]) ∧
+        struggled(EVENT[6], GROUP[2]) ∧ through(EVENT[6]) = ENTITY[5] ∧ to(EVENT[6]) = ENTITY[4] ∧
+         For(EVENT[6]) = ENTITY[1])))
+
+# ::id 33_wikipedia_KYOTO_BDS_00002,33;IE
+# ::snt However , they began to devise many techniques for gaining enlightenment from the Song dynasty .
+∃ REF1[1] EVENT[2] ENTITY[6] (
+ Song_dynasty(ENTITY[6]) ∧
+  REF1[1] = they ∧
+   ADV_however(EVENT[2]) ∧
+    past(EVENT[2]) ∧
+     began(EVENT[2], REF1[1],
+      MANY SITUATION[4] EVENT[7] ENTITY[5] GROUP[3] (
+       (enlightenment(ENTITY[5]) ∧
+        is_FACT_THAT(SITUATION[4], gaining(EVENT[7], _, ENTITY[5]) ∧ from(EVENT[7]) = ENTITY[6]) ∧
+        is_techniques_for(GROUP[3], SITUATION[4])), ∃ EVENT[8] devise(EVENT[8], REF1[1], GROUP[3]))))
+
+# ::id 34_wikipedia_KYOTO_BDS_00002,34;IE
+# ::snt These were systematized so that enlightenment could be gained by performing training such as Zazen -LRB- not the same as meditation -RRB- , Koan -LRB- understanding stories that surpass intellectual understanding -RRB- , Dokyou -LRB- reading sutras -RRB- , or Samu -LRB- everyday work -RRB- under an already enlightened Zen master .
+∃ SITUATION[2] ATTRIB[10] EVENT[29] ENTITY[3] ENTITY[11] ENTITY[9] GROUP[1] (
+ same(ATTRIB[10]) ∧
+  meditation(ENTITY[11]) ∧
+   is_as(ENTITY[9], ENTITY[11]) ∧ is_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+    enlightenment(ENTITY[3]) ∧
+     is_FACT_THAT(SITUATION[2],
+      MD_could(∃ ATTRIB[6] LGS[4] EVENT[27] EVENT[28] GROUP[7] ENTITY[5] (
+            CONJ_or(¬ ∃ EVENT[12] xxx(EVENT[12], ENTITY[Zazen], ENTITY[9]) ∧ is_element_of(ENTITY[Zazen], GROUP[7]),
+             ∃ ATTRIB[18] EVENT[19] EVENT[20] ENTITY[17] GROUP[15] ENTITY[13] (
+              intellectual(ATTRIB[18]) ∧
+               is_understanding_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧
+                surpass(EVENT[19], GROUP[15], ENTITY[17]) ∧ stories(GROUP[15]) ∧
+                 understanding(EVENT[20], ENTITY[13], GROUP[15]) ∧ Koan(ENTITY[13]) ∧
+                  is_element_of(ENTITY[13], GROUP[7])),
+             ∃ EVENT[22] (reading(EVENT[22], ENTITY[Dokyou], ENTITY[sutras]) ∧ is_element_of(ENTITY[Dokyou], GROUP[7])),
+             ∃ ATTRIB[24] ATTRIB[26] ENTITY[25] ENTITY[23] (
+              already_enlightened(ATTRIB[26]) ∧
+               is_Zen_master_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+                is_under(ENTITY[Samu], ENTITY[25]) ∧
+                 everyday(ATTRIB[24]) ∧
+                  is_work_ATTRIBUTE(ENTITY[23], ATTRIB[24]) ∧
+                   is_-ENTITY-_namely(ENTITY[Samu], ENTITY[23]) ∧ is_element_of(ENTITY[Samu], GROUP[7]))) ∧
+             is_such_as(ATTRIB[6], GROUP[7]) ∧
+              is_training_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+               is_FACT_THAT(LGS[4], performing(EVENT[27], ENTITY[3], ENTITY[5])) ∧
+                gained(EVENT[28], LGS[4], ENTITY[3])))) ∧
+      past(EVENT[29]) ∧ systematized(EVENT[29], _, GROUP[1]) ∧ so(EVENT[29]) = SITUATION[2])
+
+# ::id 35_wikipedia_KYOTO_BDS_00002,35;IE
+# ::snt Enlightenment is thought to pass from the master to the disciple as a candle flame passes to a candle that is unlit -LRB- called Dentou -RRB- .
+∃ ATTRIB[9] SITUATION[5] EVENT[10] EVENT[13] EVENT[12] EVENT[14] EVENT[15] EVENT[2] ENTITY[7] ENTITY[6] ENTITY[1] ENTITY[4] ENTITY[3] (
+ master(ENTITY[3]) ∧
+  disciple(ENTITY[4]) ∧
+   Enlightenment(ENTITY[1]) ∧
+    candle_flame(ENTITY[6]) ∧
+     unlit(ATTRIB[9]) ∧
+      copula(EVENT[10], ENTITY[7], ATTRIB[9]) ∧
+       called(EVENT[12], _, ENTITY[7], xxx(EVENT[13], ENTITY[7], ENTITY[Dentou])) ∧ candle(ENTITY[7]) ∧
+       is_FACT_THAT(SITUATION[5], passes(EVENT[14], ENTITY[6]) ∧ to(EVENT[14]) = ENTITY[7]) ∧
+        thought(EVENT[2], _, ENTITY[1],
+         pass(EVENT[15], ENTITY[1]) ∧ as(EVENT[15]) = SITUATION[5] ∧ to(EVENT[15]) = ENTITY[4] ∧
+          from(EVENT[15]) = ENTITY[3]))
+
+# ::id 36_wikipedia_KYOTO_BDS_00002,36;IE
+# ::snt That is not a transmission based on words -LRB- logos -RRB- .
+∃ ENTITY[1] ¬ ∃ EVENT[6] EVENT[7] ENTITY[4] GROUP[5] ENTITY[2] (
+      words(GROUP[5]) ∧
+       logos(ENTITY[4]) ∧
+        is_-GROUP-_namely(GROUP[5], ENTITY[4]) ∧
+         based(EVENT[6], ENTITY[2]) ∧ on(EVENT[6]) = GROUP[5] ∧ transmission(ENTITY[2]) ∧
+          copula(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 37_wikipedia_KYOTO_BDS_00002,37;IE
+# ::snt For this reason , it is considered crucial to choose the right Zen master .
+∃ ATTRIB[5] SITUATION[2] EVENT[4] EVENT[6] ENTITY[3] ENTITY[1] (
+ reason(ENTITY[1]) ∧
+  right_Zen_master(ENTITY[3]) ∧
+   is_FACT_THAT(SITUATION[2], choose(EVENT[4], _, ENTITY[3])) ∧
+    crucial(ATTRIB[5]) ∧
+     considered(EVENT[6], _, SITUATION[2]) ∧ ATTRIBUTE(EVENT[6]) = ATTRIB[5] ∧ For(EVENT[6]) = ENTITY[1])
+
+# ::id 38_wikipedia_KYOTO_BDS_00002,38;IE
+# ::snt That means not just choosing one who has gained enlightenment , but one who fits with one 's own personality .
+∃ SITUATION[2] EVENT[16] ENTITY[1] (
+ is_FACT_THAT(SITUATION[2],
+  ¬ ∃ EVENT[14] GROUP[3] (
+        CONJ_but(∃ EVENT[7] ENTITY[6] ENTITY[4] (
+              enlightenment(ENTITY[6]) ∧
+               (CD_one(ENTITY[4]), has_gained(EVENT[7], ENTITY[4], ENTITY[6])) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ ATTRIB[12] EVENT[13] ENTITY[11] ENTITY[10] ENTITY[8] (
+          CD_one(ENTITY[11]) ∧
+           own(ATTRIB[12]) ∧
+            is_personality_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_personality_POS(ENTITY[10], ENTITY[11]) ∧
+             (CD_one(ENTITY[8]), fits(EVENT[13], ENTITY[8]) ∧ with(EVENT[13]) = ENTITY[10]) ∧
+              is_element_of(ENTITY[8], GROUP[3]))) ∧
+         ADV_just(EVENT[14]) ∧ choosing(EVENT[14], ENTITY[1], GROUP[3]))) ∧
+  means(EVENT[16], ENTITY[1], SITUATION[2]))
+
+# ::id 39_wikipedia_KYOTO_BDS_00002,39;IE
+# ::snt Actually , it does not mean that an enlightened Zen master instructs and enables someone gain enlightenment .
+∃ SITUATION[9] REF1[1] (
+ REF1[1] = it ∧
+  ADV_actually(SITUATION[9]) ∧
+   is_FACT_THAT(SITUATION[9],
+    ¬ ∃ EVENT[4] EVENT[5] EVENT[2] ENTITY[3] (
+          enlightened_Zen_master(ENTITY[3]) ∧
+           does_mean(EVENT[2], REF1[1],
+            CONJ_and(instructs(EVENT[4], ENTITY[3]),
+             enables(EVENT[5], ENTITY[3],
+              SOME ENTITY[6] (one(ENTITY[6]),
+               ∃ EVENT[8] ENTITY[7] (enlightenment(ENTITY[7]) ∧ gain(EVENT[8], ENTITY[6], ENTITY[7])))))))))
+
+# ::id 40_wikipedia_KYOTO_BDS_00002,40;IE
+# ::snt Masters in the Tang dynasty did not learn to get enlightenment from anybody - not to mention Siddhartha Gautama -LRB- Buddha , Shakuson -RRB- , who gained enlightenment without a teacher .
+∃ GROUP[1] ENTITY[2] (
+ Tang_dynasty(ENTITY[2]) ∧
+  is_Masters_in(GROUP[1], ENTITY[2]) ∧
+   ¬ ∃ EVENT[3] ENTITY[4] (
+         enlightenment(ENTITY[4]) ∧
+          past(EVENT[3]) ∧
+           did_learn(EVENT[3], GROUP[1],
+            ANY ENTITY[5] (body(ENTITY[5]),
+             ∃ EVENT[6] (get(EVENT[6], GROUP[1], ENTITY[4]) ∧ from(EVENT[6]) = ENTITY[5])) ∧
+             ¬ ∃ EVENT[10] EVENT[11] ENTITY[9] ENTITY[8] (
+                   enlightenment(ENTITY[8]) ∧
+                    teacher(ENTITY[9]) ∧
+                     gained(EVENT[10], ENTITY[Siddhartha_Gautama], ENTITY[8]) ∧ without(EVENT[10]) = ENTITY[9] ∧
+                      is_-ENTITY-_namely(ENTITY[Siddhartha_Gautama], ENTITY[Buddha_Shakuson]) ∧
+                       is_before(EVENT[10], EVENT[3]) ∧ mention(EVENT[11], GROUP[1], ENTITY[Siddhartha_Gautama])))))
+
+# ::id 41_wikipedia_KYOTO_BDS_00002,41;IE
+# ::snt While it is impossible to define enlightenment with words , words are one of many methods that can describe the boundaries of enlightenment .
+∃ ATTRIB[5] SITUATION[1] EVENT[4] EVENT[6] EVENT[14] GROUP[3] ENTITY[2] ENTITY[8] GROUP[7] ENTITY[12] GROUP[11] (
+ enlightenment(ENTITY[12]) ∧
+  is_boundaries_of(GROUP[11], ENTITY[12]) ∧
+   enlightenment(ENTITY[2]) ∧
+    words(GROUP[3]) ∧
+     is_FACT_THAT(SITUATION[1], define(EVENT[4], _, ENTITY[2]) ∧ with(EVENT[4]) = GROUP[3]) ∧
+      impossible(ATTRIB[5]) ∧
+       words(GROUP[7]) ∧
+        (CD_one(ENTITY[8]),
+         MANY GROUP[9] (MD_can(∃ EVENT[13] describe(EVENT[13], GROUP[9], GROUP[11])) ∧ methods(GROUP[9]),
+          is_element_of(ENTITY[8], GROUP[9]))) ∧
+         CRD_While(copula(EVENT[6], SITUATION[1], ATTRIB[5]), copula(EVENT[14], GROUP[7], ENTITY[8])))
+
+# ::id 42_wikipedia_KYOTO_BDS_00002,42;IE
+# ::snt That is why , especially after it was brought to Japan , enlightenment has been expressed through artistic expression such as poetry and painting , so that one can get a taste of its aroma .
+∃ EVENT[2] ENTITY[1] copula(EVENT[2], ENTITY[1],
+ QUEST(∃ SITUATION[20] SITUATION[13] ATTRIB[9] ATTRIB[8] REF1[4] EVENT[5] EVENT[19] GROUP[10] ENTITY[14] ENTITY[7] ENTITY[6] ? ENTITY[3] (
+       REF1[4] = it ∧
+        enlightenment(ENTITY[6]) ∧
+         artistic(ATTRIB[8]) ∧
+          ∃ ENTITY[11] (poetry(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+           ∃ ENTITY[12] (painting(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+           is_such_as(ATTRIB[9], GROUP[10]) ∧
+            is_expression_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_expression_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+             CD_one(ENTITY[14]) ∧
+              is_FACT_THAT(SITUATION[13],
+               MD_can(∃ REF2[17] EVENT[18] ENTITY[16] ENTITY[15] (
+                     REF2[17] = its ∧
+                      is_aroma_POS(ENTITY[16], REF2[17]) ∧
+                       is_taste_of(ENTITY[15], ENTITY[16]) ∧ get(EVENT[18], ENTITY[14], ENTITY[15])))) ∧
+               is_ADV(SITUATION[20], ENTITY[3]) ∧
+                is_before(EVENT[5], EVENT[2]) ∧
+                 is_FACT_THAT(SITUATION[20],
+                  CRD_especially_after(brought(EVENT[5], _, REF1[4]) ∧ to(EVENT[5]) = ENTITY[Japan],
+                   has_expressed(EVENT[19], _, ENTITY[6]) ∧ so(EVENT[19]) = SITUATION[13] ∧
+                    through(EVENT[19]) = ENTITY[7])))))
+
+# ::id 43_wikipedia_KYOTO_BDS_00002,43;IE
+# ::snt Other than in art , it is also expressed in deportments such as tea ceremony and flower arrangement ; and methods to get a taste of the world of enlightenment have also been born .
+∃ ATTRIB[4] REF1[2] EVENT[8] EVENT[15] EVENT[16] ENTITY[1] GROUP[5] GROUP[3] ENTITY[12] GROUP[11] ENTITY[14] ENTITY[13] (
+ enlightenment(ENTITY[14]) ∧
+  is_world_of(ENTITY[13], ENTITY[14]) ∧
+   art(ENTITY[1]) ∧
+    REF1[2] = it ∧
+     ∃ ENTITY[6] (tea_ceremony(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ENTITY[7] (flower_arrangement(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+      is_such_as(ATTRIB[4], GROUP[5]) ∧
+       is_deportments_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+        is_taste_of(ENTITY[12], ENTITY[13]) ∧
+         is_methods_to(GROUP[11], get(EVENT[15], _, ENTITY[12])) ∧
+          other(EVENT[8]) ∧ is_than_in(EVENT[8], ENTITY[1]) ∧
+           ADV_also(EVENT[8]) ∧
+            ADV_also(EVENT[16]) ∧
+             CONJ_and(expressed(EVENT[8], _, REF1[2]) ∧ in(EVENT[8]) = GROUP[3],
+              have_been_born(EVENT[16], GROUP[11])))
+
+# ::id 44_wikipedia_KYOTO_BDS_00002,44;IE
+# ::snt That is not an intellectual understanding .
+∃ ENTITY[1] ¬ ∃ ATTRIB[3] EVENT[4] ENTITY[2] (intellectual(ATTRIB[3]) ∧ is_understanding_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ copula(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 45_wikipedia_KYOTO_BDS_00002,45;IE
+# ::snt The Koan System
+∃ EVENT[2] ENTITY[1] (Koan_System(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 46_wikipedia_KYOTO_BDS_00002,46;IE
+# ::snt The Koan system came together after the Song dynasty , and though they might be fabricated it has made even more enlightenments possible .
+∃ REF2[7] REF1[5] SITUATION[4] EVENT[3] EVENT[8] ENTITY[2] ENTITY[1] (
+ Koan_system(ENTITY[1]) ∧
+  Song_dynasty(ENTITY[2]) ∧
+   past(EVENT[3]) ∧
+    REF1[5] = they ∧
+     is_FACT_THAT(SITUATION[4], MD_might(∃ EVENT[6] fabricated(EVENT[6], _, REF1[5]))) ∧
+      REF2[7] = it ∧
+       CONJ_and(came_together(EVENT[3], ENTITY[1]) ∧ after(EVENT[3]) = ENTITY[2],
+        has_made(EVENT[8], REF2[7],
+         EVEN_MORE GROUP[9] (enlightenments(GROUP[9]), ∃ ATTRIB[10] EVENT[11] (possible(ATTRIB[10]) ∧ xxx(EVENT[11], GROUP[9], ATTRIB[10])))) ∧
+         though(EVENT[8]) = SITUATION[4]))
+
+# ::id 47_wikipedia_KYOTO_BDS_00002,47;IE
+# ::snt Most Koan are made up of conversations between a master and disciple , telling the truth of the moment when the disciple gained enlightenment .
+∃ EVENT[12] ENTITY[11] ENTITY[10] ENTITY[8] ENTITY[7] (
+ disciple(ENTITY[10]) ∧
+  enlightenment(ENTITY[11]) ∧
+   gained(EVENT[12], ENTITY[10], ENTITY[11]) ∧ moment(ENTITY[8]) ∧
+    is_truth_of(ENTITY[7], ENTITY[8]) ∧
+     is_TMP(EVENT[12], ENTITY[8]) ∧
+      past(EVENT[12]) ∧
+       MOST ENTITY[1] (Koan(ENTITY[1]),
+        ∃ EVENT[14] EVENT[15] GROUP[3] GROUP[2] (
+         ∃ ENTITY[4] (master(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+          ∃ ENTITY[5] (disciple(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+          telling(EVENT[14], GROUP[2], ENTITY[7]) ∧ is_conversations_between(GROUP[2], GROUP[3]) ∧
+           made_up(EVENT[15], _, ENTITY[1]) ∧ of(EVENT[15]) = GROUP[2])))
+
+# ::id 48_wikipedia_KYOTO_BDS_00002,48;IE
+# ::snt Koan can not be received with logical , intellectual understanding , and are stories beyond logic that can be understood only by completely becoming the Koan itself instead of thinking .
+∃ REF1[12] ENTITY[1] ENTITY[11] (
+ REF1[12] = itself ∧
+  is_Koan_RFL(ENTITY[11], REF1[12]) ∧
+   Koan(ENTITY[1]) ∧
+    MD_can(¬ ∃ ATTRIB[4] ATTRIB[3] EVENT[5] EVENT[18] ENTITY[2] ENTITY[7] GROUP[6] (
+               logical(ATTRIB[3]) ∧
+                intellectual(ATTRIB[4]) ∧
+                 is_understanding_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_understanding_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+                  logic(ENTITY[7]) ∧
+                   MD_can(∃ SITUATION[16] SITUATION[13] LGS[10] EVENT[14] EVENT[15] (
+                         is_FACT_THAT(SITUATION[13], thinking(EVENT[14], ENTITY[11])) ∧
+                          is_FACT_THAT(LGS[10],
+                           is_FACT_THAT(SITUATION[16],
+                            becoming(EVENT[15], GROUP[6], ENTITY[11]) ∧
+                             instead_of(EVENT[15]) = SITUATION[13])) ∧
+                           ADV_completely(SITUATION[16]) ∧
+                            ONLY LGS[9] (is_subset_of_or_equal_to(LGS[9], LGS[10]),
+                             ∃ EVENT[17] understood(EVENT[17], LGS[9], GROUP[6])))) ∧
+                    is_stories_beyond(GROUP[6], ENTITY[7]) ∧
+                    CONJ_and(received(EVENT[5], _, ENTITY[1]) ∧ with(EVENT[5]) = ENTITY[2],
+                     copula(EVENT[18], ENTITY[1], GROUP[6])))))
+
+# ::id 49_wikipedia_KYOTO_BDS_00002,49;IE
+# ::snt The Koan system was established by collecting these Koan stories as a method for leading disciples and was composed of 500 to 1900 Koan stories .
+∃ ATTRIB[7] LGS[2] GROUP[6] ENTITY[5] GROUP[9] EVENT[4] EVENT[8] EVENT[10] GROUP[3] ENTITY[1] (
+ Koan_system(ENTITY[1]) ∧
+  Koan_stories(GROUP[3]) ∧
+   past(EVENT[8]) ∧
+    past(EVENT[10]) ∧
+     is_FACT_THAT(LGS[2], collecting(EVENT[4], ENTITY[1], GROUP[3])) ∧
+      leading(ATTRIB[7]) ∧
+       is_disciples_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+        is_method_for(ENTITY[5], GROUP[6]) ∧
+         (CD_500_to_1900(GROUP[9]), Koan_stories(GROUP[9])) ∧
+          CONJ_and(established(EVENT[8], LGS[2], ENTITY[1]) ∧ as(EVENT[8]) = ENTITY[5],
+           composed(EVENT[10], _, ENTITY[1]) ∧ of(EVENT[10]) = GROUP[9]))
+
+# ::id 50_wikipedia_KYOTO_BDS_00002,50;IE
+# ::snt Koan system differs according to the master 's style .
+∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[3] ENTITY[1] ENTITY[4] (
+ master(ENTITY[4]) ∧
+  Koan_system(ENTITY[1]) ∧
+   is_style_POS(ENTITY[3], ENTITY[4]) ∧
+    is_FACT_THAT(SITUATION[2], according(EVENT[5], ENTITY[1]) ∧ to(EVENT[5]) = ENTITY[3]) ∧
+     differs(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 51_wikipedia_KYOTO_BDS_00002,51;IE
+# ::snt Examples of Koan stories in the beginning .
+∃ EVENT[4] GROUP[2] GROUP[1] ENTITY[3] (
+ beginning(ENTITY[3]) ∧
+  is_Koan_stories_in(GROUP[2], ENTITY[3]) ∧
+   is_Examples_of(GROUP[1], GROUP[2]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 52_wikipedia_KYOTO_BDS_00002,52;IE
+# ::snt " Does a dog have buddha-nature ? "
+QUEST(∃ EVENT[3] ENTITY[2] ENTITY[1] (dog(ENTITY[1]) ∧ buddha-nature(ENTITY[2]) ∧ does_have(EVENT[3], ENTITY[1], ENTITY[2])))
+
+# ::id 53_wikipedia_KYOTO_BDS_00002,52;IE
+# ::snt " It does not have . "
+∃ REF1[1] (REF1[1] = it ∧ ¬ ∃ EVENT[2] does_have(EVENT[2], REF1[1]))
+
+# ::id 54_wikipedia_KYOTO_BDS_00002,53;IE
+# ::snt As the background , any Buddhist knows that " all living things have Buddha-nature . "
+∃ ENTITY[1] (
+ background(ENTITY[1]) ∧
+  ANY ENTITY[2] (Buddhist(ENTITY[2]),
+   ∃ EVENT[3] (
+    knows(EVENT[3], ENTITY[2],
+     ALL ATTRIB[5] GROUP[4] ((living(ATTRIB[5]) ∧ is_things_ATTRIBUTE(GROUP[4], ATTRIB[5])),
+      ∃ EVENT[7] ENTITY[6] (Buddha-nature(ENTITY[6]) ∧ have(EVENT[7], GROUP[4], ENTITY[6])))) ∧
+     As(EVENT[3]) = ENTITY[1])))
+
+# ::id 55_wikipedia_KYOTO_BDS_00002,54;IE
+# ::snt The Sound of One Hand Clapping
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ (CD_one(ENTITY[2]), Hand_Clapping(ENTITY[2])) ∧
+  is_Sound_of(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 56_wikipedia_KYOTO_BDS_00002,55;IE
+# ::snt A disciple has to listen to the sound of clapping with one hand and show that to the master .
+∃ EVENT[6] EVENT[9] EVENT[2] ENTITY[1] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[7] (
+ (CD_one(ENTITY[5]), hand(ENTITY[5])) ∧
+  is_clapping_with(ENTITY[4], ENTITY[5]) ∧
+   is_sound_of(ENTITY[3], ENTITY[4]) ∧
+    master(ENTITY[8]) ∧
+     disciple(ENTITY[1]) ∧
+      has(EVENT[2], ENTITY[1],
+       CONJ_and(listen(EVENT[6], ENTITY[1]) ∧ to(EVENT[6]) = ENTITY[3],
+        show(EVENT[9], ENTITY[1], ENTITY[7]) ∧ to(EVENT[9]) = ENTITY[8])))
+
+# ::id 57_wikipedia_KYOTO_BDS_00002,56;IE
+# ::snt By intellectual understanding , it is impossible to clap with one hand and make a sound .
+∃ ATTRIB[8] SITUATION[3] ATTRIB[2] EVENT[5] EVENT[7] EVENT[9] ENTITY[4] ENTITY[6] ENTITY[1] (
+ intellectual(ATTRIB[2]) ∧
+  is_understanding_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   (CD_one(ENTITY[4]), hand(ENTITY[4])) ∧
+    sound(ENTITY[6]) ∧
+     is_FACT_THAT(SITUATION[3],
+      CONJ_and(clap(EVENT[5]) ∧ with(EVENT[5]) = ENTITY[4], make(EVENT[7], _, ENTITY[6]))) ∧
+      impossible(ATTRIB[8]) ∧ copula(EVENT[9], SITUATION[3], ATTRIB[8]) ∧ By(EVENT[9]) = ENTITY[1])
+
+# ::id 58_wikipedia_KYOTO_BDS_00002,57;IE
+# ::snt Sects
+∃ EVENT[2] GROUP[1] (Sects(GROUP[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 59_wikipedia_KYOTO_BDS_00002,58;IE
+# ::snt Kenni-ji sect
+∃ EVENT[2] ENTITY[1] (Kenni-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 60_wikipedia_KYOTO_BDS_00002,59;IE
+# ::snt The sect began when Eisai came back from Southern Song China in 1202 .
+∃ SITUATION[7] EVENT[4] EVENT[6] DATE[3] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1202(DATE[3]) ∧
+   is_TMP(EVENT[4], SITUATION[7]) ∧
+    past(EVENT[4]) ∧
+     came_back(EVENT[4], ENTITY[Eisai]) ∧ in(EVENT[4]) = DATE[3] ∧ from(EVENT[4]) = ENTITY[Southern_Song_China] ∧
+      past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[7], began(EVENT[6], ENTITY[1])))
+
+# ::id 61_wikipedia_KYOTO_BDS_00002,60;IE
+# ::snt Eisai was the first to bring the Zen tradition to Japan .
+∃ ATTRIB[2] EVENT[6] EVENT[5] ENTITY[4] ENTITY[1] (
+ first(ATTRIB[2]) ∧
+  Zen_tradition(ENTITY[4]) ∧
+   bring(EVENT[5], ENTITY[1], ENTITY[4]) ∧ to(EVENT[5]) = ENTITY[Japan] ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[6]) ∧ copula(EVENT[6], ENTITY[Eisai], ENTITY[1]))
+
+# ::id 62_wikipedia_KYOTO_BDS_00002,61;IE
+# ::snt Head temple is Kenni-ji in Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Kenni-ji]) ∧ in(EVENT[2]) = ENTITY[Kyoto])
+
+# ::id 63_wikipedia_KYOTO_BDS_00002,62;IE
+# ::snt Kenni-ji is the oldest Zen temple in Japan .
+∃ REF1[1] EVENT[3] ENTITY[2] (is_oldest_Zen_temple_in(ENTITY[2], ENTITY[Japan]) ∧ REF1[1] = kenni-ji ∧ copula(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 64_wikipedia_KYOTO_BDS_00002,63;IE
+# ::snt Tofuku-ji sect
+∃ EVENT[2] ENTITY[1] (Tofuku-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 65_wikipedia_KYOTO_BDS_00002,64;IE
+# ::snt The sect began in Kyoto when Benen ENNI returned from Song China in 1236 .
+∃ SITUATION[7] EVENT[4] EVENT[6] DATE[3] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1236(DATE[3]) ∧
+   is_TMP(EVENT[4], SITUATION[7]) ∧
+    past(EVENT[4]) ∧
+     returned(EVENT[4], ENTITY[Benen_ENNI]) ∧ in(EVENT[4]) = DATE[3] ∧ from(EVENT[4]) = ENTITY[Song_China] ∧
+      past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[7], began(EVENT[6], ENTITY[1]) ∧ in(EVENT[6]) = ENTITY[Kyoto]))
+
+# ::id 66_wikipedia_KYOTO_BDS_00002,65;IE
+# ::snt Head temple is Tofuku-ji in Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Tofuku-ji]) ∧ in(EVENT[2]) = ENTITY[Kyoto])
+
+# ::id 67_wikipedia_KYOTO_BDS_00002,66;IE
+# ::snt Ekei ANKOKUJI , who was a monk and also acted as a diplomat for the Mori clan in the Warring States period , belonged to this school .
+∃ EVENT[3] EVENT[7] EVENT[9] ENTITY[2] ENTITY[4] ENTITY[5] ENTITY[6] ENTITY[8] (
+ Mori_clan(ENTITY[5]) ∧
+  Warring_States_period(ENTITY[6]) ∧
+   school(ENTITY[8]) ∧
+    monk(ENTITY[2]) ∧
+     is_diplomat_for(ENTITY[4], ENTITY[5]) ∧
+      CONJ_and_also(copula(EVENT[3], ENTITY[Ekei_ANKOKUJI], ENTITY[2]),
+       acted(EVENT[7], ENTITY[Ekei_ANKOKUJI]) ∧ in(EVENT[7]) = ENTITY[6] ∧ as(EVENT[7]) = ENTITY[4]) ∧
+       past(EVENT[3]) ∧
+        past(EVENT[7]) ∧
+         past(EVENT[9]) ∧ belonged(EVENT[9], ENTITY[Ekei_ANKOKUJI]) ∧ to(EVENT[9]) = ENTITY[8])
+
+# ::id 68_wikipedia_KYOTO_BDS_00002,67;IE
+# ::snt Kencho-ji sect
+∃ EVENT[2] ENTITY[1] (Kencho-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 69_wikipedia_KYOTO_BDS_00002,68;IE
+# ::snt The sect was established by Douryuu RANKEI in 1253 , who was invited from Southern Song China by Tiyori HOJOU , the 5th regent of the Kamakura Shogunate .
+∃ EVENT[3] EVENT[5] DATE[4] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  is_of(ENTITY[5th_regent], ENTITY[Kamakura_Shogunate]) ∧
+   is_-ENTITY-_namely(ENTITY[Tiyori_HOJOU], ENTITY[5th_regent]) ∧
+    invited(EVENT[3], ENTITY[Tiyori_HOJOU], ENTITY[Douryuu_RANKEI]) ∧ from(EVENT[3]) = ENTITY[Southern_Song_China] ∧
+     CD_1253(DATE[4]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[5]) ∧ established(EVENT[5], ENTITY[Douryuu_RANKEI], ENTITY[1]) ∧ in(EVENT[5]) = DATE[4])
+
+# ::id 70_wikipedia_KYOTO_BDS_00002,69;IE
+# ::snt Head temple is Kencho-ji in Kamakura , founded by Douryuu RANKEI .
+∃ EVENT[2] EVENT[3] (founded(EVENT[2], ENTITY[Douryuu_RANKEI], ENTITY[Kencho-ji]) ∧ copula(EVENT[3], ENTITY[Head_temple], ENTITY[Kencho-ji]) ∧ in(EVENT[3]) = ENTITY[Kamakura])
+
+# ::id 71_wikipedia_KYOTO_BDS_00002,70;IE
+# ::snt Kencho-ji was the first Zen temple that opened the first pure Zen training hall in Japan , with more than 1 , 000 monks training there at one time .
+∃ REF1[1] ATTRIB[5] EVENT[6] ENTITY[4] ENTITY[2] (
+ first(ATTRIB[5]) ∧
+  is_pure_Zen_training_hall_in(ENTITY[4], ENTITY[Japan]) ∧ is_pure_Zen_training_hall_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   opened(EVENT[6], ENTITY[2], ENTITY[4]) ∧ first_Zen_temple(ENTITY[2]) ∧
+    past(EVENT[6]) ∧
+     REF1[1] = kencho-ji ∧
+      MORE SITUATION[8] EVENT[11] ENTITY[10] GROUP[9] ENTITY[7] (
+       ((CD_1,000(GROUP[9]), monks(GROUP[9])) ∧ (CD_one(ENTITY[10]), time(ENTITY[10])) ∧
+        is_FACT_THAT(SITUATION[8], training(EVENT[11], GROUP[9]) ∧ at(EVENT[11]) = ENTITY[10]) ∧
+        is_than(ENTITY[7], SITUATION[8]) ∧ ADV_there(EVENT[11])),
+       ∃ EVENT[13] (past(EVENT[13]) ∧ copula(EVENT[13], REF1[1], ENTITY[2]) ∧ with(EVENT[13]) = ENTITY[7])))
+
+# ::id 72_wikipedia_KYOTO_BDS_00002,71;IE
+# ::snt Enkaku-ji sect
+∃ EVENT[2] ENTITY[1] (Enkaku-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 73_wikipedia_KYOTO_BDS_00002,72;IE
+# ::snt The sect began in Kamakura in 1282 when Sogen MUGAKU was invited from China .
+∃ SITUATION[7] EVENT[4] EVENT[6] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1282(DATE[2]) ∧
+   is_TMP(EVENT[4], SITUATION[7]) ∧
+    past(EVENT[4]) ∧
+     invited(EVENT[4], _, ENTITY[Sogen_MUGAKU]) ∧ from(EVENT[4]) = ENTITY[China] ∧
+      past(EVENT[6]) ∧
+       is_FACT_THAT(SITUATION[7],
+        began(EVENT[6], ENTITY[1]) ∧ in(EVENT[6]) = DATE[2] ∧ in(EVENT[6]) = ENTITY[Kamakura]))
+
+# ::id 74_wikipedia_KYOTO_BDS_00002,73;IE
+# ::snt Head temple is Enkaku-ji in Kamakura .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Enkaku-ji]) ∧ in(EVENT[2]) = ENTITY[Kamakura])
+
+# ::id 75_wikipedia_KYOTO_BDS_00002,74;IE
+# ::snt Enkaku-ji Temple was passed from Sogen MUGAKU to Kennichi KOUHOU and Soseki MUSOU , and was at one time the center of Japanese Zen .
+∃ EVENT[2] EVENT[5] GROUP[1] ENTITY[3] ENTITY[4] (
+ is_center_of(ENTITY[4], ENTITY[Japanese_Zen]) ∧
+  is_element_of(ENTITY[Kennichi_KOUHOU], GROUP[1]) ∧ is_element_of(ENTITY[Soseki_MUSOU], GROUP[1]) ∧
+   (CD_one(ENTITY[3]), time(ENTITY[3])) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(passed(EVENT[2], _, ENTITY[Enkaku-ji_Temple]) ∧ to(EVENT[2]) = GROUP[1] ∧
+            from(EVENT[2]) = ENTITY[Sogen_MUGAKU],
+       copula(EVENT[5], ENTITY[Enkaku-ji_Temple], ENTITY[4]) ∧ at(EVENT[5]) = ENTITY[3]))
+
+# ::id 76_wikipedia_KYOTO_BDS_00002,75;IE
+# ::snt Famous Zen masters after the Meiji period include Kousen IMAKITA , Souen SHAKU , and Sougen ASAHINA .
+∃ EVENT[4] GROUP[3] GROUP[1] ENTITY[2] (
+ Meiji_period(ENTITY[2]) ∧
+  is_Famous_Zen_masters_after(GROUP[1], ENTITY[2]) ∧
+   is_element_of(ENTITY[Kousen_IMAKITA], GROUP[3]) ∧ is_element_of(ENTITY[Souen_SHAKU], GROUP[3]) ∧ is_element_of(ENTITY[Sougen_ASAHINA], GROUP[3]) ∧
+    include(EVENT[4], GROUP[1], GROUP[3]))
+
+# ::id 77_wikipedia_KYOTO_BDS_00002,76;IE
+# ::snt Daisetsu SUZUKI who introduced Zen to the West experienced Zen under the two masters , IMAKITA and Souen SHAKU as a lay buddhist .
+∃ ATTRIB[6] ENTITY[5] EVENT[2] EVENT[7] GROUP[3] GROUP[4] (
+ (CD_two(GROUP[4]), masters(GROUP[4])) ∧
+  is_element_of(ENTITY[IMAKITA], GROUP[3]) ∧ is_element_of(ENTITY[Souen_SHAKU], GROUP[3]) ∧
+   is_-GROUP-_namely(GROUP[4], GROUP[3]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[7]) ∧
+      introduced(EVENT[2], ENTITY[Daisetsu_SUZUKI], ENTITY[Zen]) ∧ to(EVENT[2]) = ENTITY[West] ∧
+       lay(ATTRIB[6]) ∧
+        is_buddhist_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+         experienced(EVENT[7], ENTITY[Daisetsu_SUZUKI], ENTITY[Zen]) ∧ as(EVENT[7]) = ENTITY[5] ∧
+          under(EVENT[7]) = GROUP[4])
+
+# ::id 78_wikipedia_KYOTO_BDS_00002,77;IE
+# ::snt Also , Soseki NATSUME approached Souen SHAKU and wrote about that experience in The Gate .
+∃ SITUATION[4] EVENT[1] EVENT[3] ENTITY[2] (
+ experience(ENTITY[2]) ∧
+  ADV_also(SITUATION[4]) ∧
+   past(EVENT[1]) ∧
+    past(EVENT[3]) ∧
+     is_FACT_THAT(SITUATION[4],
+      CONJ_and(approached(EVENT[1], ENTITY[Soseki_NATSUME], ENTITY[Souen_SHAKU]),
+       wrote(EVENT[3], ENTITY[Soseki_NATSUME]) ∧ in(EVENT[3]) = ENTITY[Gate] ∧ about(EVENT[3]) = ENTITY[2])))
+
+# ::id 79_wikipedia_KYOTO_BDS_00002,78;IE
+# ::snt Nanzen-ji sect
+∃ EVENT[2] ENTITY[1] (Nanzen-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 80_wikipedia_KYOTO_BDS_00002,79;IE
+# ::snt The sect began by Fumon MUKAN in 1291 .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1291(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ in(EVENT[3]) = DATE[2] ∧ by(EVENT[3]) = ENTITY[Fumon_MUKAN])
+
+# ::id 81_wikipedia_KYOTO_BDS_00002,80;IE
+# ::snt Head temple is Nanzen-ji in Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Nanzen-ji]) ∧ in(EVENT[2]) = ENTITY[Kyoto])
+
+# ::id 82_wikipedia_KYOTO_BDS_00002,81;IE
+# ::snt Kokutai-ji sect
+∃ EVENT[2] ENTITY[1] (Kokutai-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 83_wikipedia_KYOTO_BDS_00002,82;IE
+# ::snt The sect began by Myoi JIUN around 1300 .
+∃ EVENT[3] TIME[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_around_1300(TIME[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[3]), TIME[2]) ∧ by(EVENT[3]) = ENTITY[Myoi_JIUN])
+
+# ::id 84_wikipedia_KYOTO_BDS_00002,83;IE
+# ::snt Head temple is Kokutai-ji -LRB- Takaoka City in Toyama Prefecture -RRB- , which was rebuilt in the Meiji period by Tesshuu YAMAOKA .
+∃ EVENT[4] EVENT[5] ENTITY[1] ENTITY[3] (
+ Meiji_period(ENTITY[3]) ∧
+  Head_temple(ENTITY[1]) ∧
+   rebuilt(EVENT[4], ENTITY[Tesshuu_YAMAOKA], ENTITY[Kokutai-ji]) ∧ in(EVENT[4]) = ENTITY[3] ∧
+    is_in(ENTITY[Takaoka_City], ENTITY[Toyama_Prefecture]) ∧
+     is_-ENTITY-_namely(ENTITY[Kokutai-ji], ENTITY[Takaoka_City]) ∧ past(EVENT[4]) ∧ copula(EVENT[5], ENTITY[1], ENTITY[Kokutai-ji]))
+
+# ::id 85_wikipedia_KYOTO_BDS_00002,84;IE
+# ::snt Taninaka-no-Zenseian , founded by Tesshuu , is a famous temple of the Kokutai-ji sect .
+∃ ATTRIB[4] ENTITY[3] EVENT[2] EVENT[6] ENTITY[5] (
+ Kokutai-ji_sect(ENTITY[5]) ∧
+  founded(EVENT[2], ENTITY[Tesshuu], ENTITY[Taninaka-no-Zenseian]) ∧
+   famous(ATTRIB[4]) ∧
+    is_temple_of(ENTITY[3], ENTITY[5]) ∧ is_temple_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ copula(EVENT[6], ENTITY[Taninaka-no-Zenseian], ENTITY[3]))
+
+# ::id 86_wikipedia_KYOTO_BDS_00002,85;IE
+# ::snt Daitoku-ji sect
+∃ EVENT[2] ENTITY[1] (Daitoku-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 87_wikipedia_KYOTO_BDS_00002,86;IE
+# ::snt The sect began in 1315 by Myouchou SHUUHOU .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1315(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ by(EVENT[3]) = ENTITY[Myouchou_SHUUHOU] ∧ in(EVENT[3]) = DATE[2])
+
+# ::id 88_wikipedia_KYOTO_BDS_00002,87;IE
+# ::snt Head temple is Daitoku-ji in Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Daitoku-ji]) ∧ in(EVENT[2]) = ENTITY[Kyoto])
+
+# ::id 89_wikipedia_KYOTO_BDS_00002,88;IE
+# ::snt It was razed during the Onin War in the Muromachi period , but Soujun IKKYUU rebuilt it .
+∃ REF2[4] REF1[1] EVENT[3] EVENT[5] ENTITY[2] (
+ Muromachi_period(ENTITY[2]) ∧
+  REF1[1] = it ∧
+   REF2[4] = it ∧
+    past(EVENT[3]) ∧
+     CONJ_but(razed(EVENT[3], _, REF1[1]) ∧ in(EVENT[3]) = ENTITY[2] ∧
+           during(EVENT[3]) = ENTITY[Onin_War], rebuilt(EVENT[5], _, REF2[4], ENTITY[Soujun_IKKYUU])))
+
+# ::id 90_wikipedia_KYOTO_BDS_00002,89;IE
+# ::snt Kogaku-ji sect
+∃ EVENT[2] ENTITY[1] (Kogaku-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 91_wikipedia_KYOTO_BDS_00002,90;IE
+# ::snt The sect began by Tushou BASSUI in 1327 .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1327(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ in(EVENT[3]) = DATE[2] ∧ by(EVENT[3]) = ENTITY[Tushou_BASSUI])
+
+# ::id 92_wikipedia_KYOTO_BDS_00002,91;IE
+# ::snt Head temple is Kogaku-ji in Koushuu City , Yamanashi Prefecture .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Kogaku-ji]) ∧ in(EVENT[2]) = ENTITY[Koushuu_City_Yamanashi_Prefecture])
+
+# ::id 93_wikipedia_KYOTO_BDS_00002,92;IE
+# ::snt Myoshin-ji sect
+∃ EVENT[2] ENTITY[1] (Myoshin-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 94_wikipedia_KYOTO_BDS_00002,93;IE
+# ::snt The sect began in 1337 by Egen KANZAN .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1337(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ by(EVENT[3]) = ENTITY[Egen_KANZAN] ∧ in(EVENT[3]) = DATE[2])
+
+# ::id 95_wikipedia_KYOTO_BDS_00002,94;IE
+# ::snt Head temple is Myoshin-ji in Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Myoshin-ji]) ∧ in(EVENT[2]) = ENTITY[Kyoto])
+
+# ::id 96_wikipedia_KYOTO_BDS_00002,95;IE
+# ::snt Subsidiary temples include Keishunin , Shunkouin , and Taizouin .
+∃ EVENT[3] GROUP[2] GROUP[1] (
+ Subsidiary_temples(GROUP[1]) ∧
+  is_element_of(ENTITY[Keishunin], GROUP[2]) ∧ is_element_of(ENTITY[Shunkouin], GROUP[2]) ∧ is_element_of(ENTITY[Taizouin], GROUP[2]) ∧
+   include(EVENT[3], GROUP[1], GROUP[2]))
+
+# ::id 97_wikipedia_KYOTO_BDS_00002,96;IE
+# ::snt It is the largest sect of the Rinzai School , with more than 3 , 400 sect temples .
+∃ REF1[1] ATTRIB[3] ENTITY[2] (
+ largest(ATTRIB[3]) ∧
+  is_sect_of(ENTITY[2], ENTITY[Rinzai_School]) ∧ is_sect_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   REF1[1] = it ∧
+    MORE GROUP[5] ENTITY[4] (((CD_3,400(GROUP[5]), sect_temples(GROUP[5])) ∧ is_than(ENTITY[4], GROUP[5])),
+     ∃ EVENT[6] (copula(EVENT[6], REF1[1], ENTITY[2]) ∧ with(EVENT[6]) = ENTITY[4])))
+
+# ::id 98_wikipedia_KYOTO_BDS_00002,97;IE
+# ::snt Tenryu-ji sect
+∃ EVENT[2] ENTITY[1] (Tenryu-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 99_wikipedia_KYOTO_BDS_00002,98;IE
+# ::snt The sect began in 1339 by Soseki MUSOU .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1339(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ by(EVENT[3]) = ENTITY[Soseki_MUSOU] ∧ in(EVENT[3]) = DATE[2])
+
+# ::id 100_wikipedia_KYOTO_BDS_00002,99;IE
+# ::snt Head temple is Tenryu-ji in Arashiyama , Kyoto .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Tenryu-ji]) ∧ in(EVENT[2]) = ENTITY[Arashiyama_Kyoto])
+
+# ::id 101_wikipedia_KYOTO_BDS_00002,100;IE
+# ::snt Eigen-ji sect
+∃ EVENT[2] ENTITY[1] (Eigen-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 102_wikipedia_KYOTO_BDS_00002,101;IE
+# ::snt The sect began in 1361 by Genkou JAKUSHITSU .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1361(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ by(EVENT[3]) = ENTITY[Genkou_JAKUSHITSU] ∧ in(EVENT[3]) = DATE[2])
+
+# ::id 103_wikipedia_KYOTO_BDS_00002,102;IE
+# ::snt Head temple is Eigen-ji in Higashioumi City , Shiga Prefecture .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Eigen-ji]) ∧ in(EVENT[2]) = ENTITY[Higashioumi_City_Shiga_Prefecture])
+
+# ::id 104_wikipedia_KYOTO_BDS_00002,103;IE
+# ::snt It has about 150 branch temples mainly in the area of Shiga Prefecture .
+∃ REF1[1] EVENT[4] GROUP[2] ENTITY[3] (
+ is_area_of(ENTITY[3], ENTITY[Shiga_Prefecture]) ∧
+  REF1[1] = it ∧
+   (CD_about_150(GROUP[2]), is_branch_temples_mainly_in(GROUP[2], ENTITY[3])) ∧ has(EVENT[4], REF1[1], GROUP[2]))
+
+# ::id 105_wikipedia_KYOTO_BDS_00002,104;IE
+# ::snt Belonged to the Tofuku-ji sect until 1880 .
+∃ REF1[1] EVENT[4] DATE[3] ENTITY[2] (
+ Tofuku-ji_sect(ENTITY[2]) ∧
+  REF1[1] = *pro* ∧
+   CD_1880(DATE[3]) ∧
+    past(EVENT[4]) ∧
+     belonged(EVENT[4], REF1[1]) ∧ until(EVENT[4]) = DATE[3] ∧ to(EVENT[4]) = ENTITY[2])
+
+# ::id 106_wikipedia_KYOTO_BDS_00002,105;IE
+# ::snt Hoko-ji sect
+∃ EVENT[2] ENTITY[1] (Hoko-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 107_wikipedia_KYOTO_BDS_00002,106;IE
+# ::snt The sect began by Gensen MUMON in 1384 .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1384(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ in(EVENT[3]) = DATE[2] ∧ by(EVENT[3]) = ENTITY[Gensen_MUMON])
+
+# ::id 108_wikipedia_KYOTO_BDS_00002,107;IE
+# ::snt Head temple is Hoko-ji in Inasa Town , Kita-ku , Hamamatsu City .
+∃ EVENT[2] ENTITY[1] (
+ Head_temple(ENTITY[1]) ∧
+  is_-ENTITY-_namely(ENTITY[Inasa_Town_Hamamatsu_City], ENTITY[Kita-ku]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Hoko-ji]) ∧ in(EVENT[2]) = ENTITY[Inasa_Town_Hamamatsu_City])
+
+# ::id 109_wikipedia_KYOTO_BDS_00002,108;IE
+# ::snt It has about 170 branch temples mainly in the area of Shizuoka Prefecture .
+∃ REF1[1] EVENT[4] GROUP[2] ENTITY[3] (
+ is_area_of(ENTITY[3], ENTITY[Shizuoka_Prefecture]) ∧
+  REF1[1] = it ∧
+   (CD_about_170(GROUP[2]), is_branch_temples_mainly_in(GROUP[2], ENTITY[3])) ∧ has(EVENT[4], REF1[1], GROUP[2]))
+
+# ::id 110_wikipedia_KYOTO_BDS_00002,109;IE
+# ::snt Belonged to the Nanzen-ji sect until 1904 .
+∃ REF1[1] EVENT[4] DATE[3] ENTITY[2] (
+ Nanzen-ji_sect(ENTITY[2]) ∧
+  REF1[1] = *pro* ∧
+   CD_1904(DATE[3]) ∧
+    past(EVENT[4]) ∧
+     belonged(EVENT[4], REF1[1]) ∧ until(EVENT[4]) = DATE[3] ∧ to(EVENT[4]) = ENTITY[2])
+
+# ::id 111_wikipedia_KYOTO_BDS_00002,110;IE
+# ::snt Shokoku-ji sect
+∃ EVENT[2] ENTITY[1] (Shokoku-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 112_wikipedia_KYOTO_BDS_00002,111;IE
+# ::snt The sect began by Soseki MUSOU in 1392 .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1392(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ in(EVENT[3]) = DATE[2] ∧ by(EVENT[3]) = ENTITY[Soseki_MUSOU])
+
+# ::id 113_wikipedia_KYOTO_BDS_00002,112;IE
+# ::snt Head temple is Shokoku-ji in Kyoto , established by Yoshimitsu ASHIKAGA .
+∃ EVENT[2] EVENT[3] (established(EVENT[2], ENTITY[Yoshimitsu_ASHIKAGA], ENTITY[Shokoku-ji]) ∧ copula(EVENT[3], ENTITY[Head_temple], ENTITY[Shokoku-ji]) ∧ in(EVENT[3]) = ENTITY[Kyoto])
+
+# ::id 114_wikipedia_KYOTO_BDS_00002,113;IE
+# ::snt It has about 100 branch temples nationwide .
+∃ REF1[1] EVENT[3] GROUP[2] (
+ REF1[1] = it ∧
+  (CD_about_100(GROUP[2]), branch_temples(GROUP[2])) ∧ ADV_nationwide(EVENT[3]) ∧ has(EVENT[3], REF1[1], GROUP[2]))
+
+# ::id 115_wikipedia_KYOTO_BDS_00002,114;IE
+# ::snt Kinkaku-ji Temple and Ginkaku-ji Temple are affiliated .
+∃ EVENT[2] GROUP[1] (is_element_of(ENTITY[Kinkaku-ji_Temple], GROUP[1]) ∧ is_element_of(ENTITY[Ginkaku-ji_Temple], GROUP[1]) ∧ are_affiliated(EVENT[2], GROUP[1]))
+
+# ::id 116_wikipedia_KYOTO_BDS_00002,115;IE
+# ::snt Buttsu-ji sect
+∃ EVENT[2] ENTITY[1] (Buttsu-ji_sect(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 117_wikipedia_KYOTO_BDS_00002,116;IE
+# ::snt The sect began by Shuukyuu GUCHUU in 1397 .
+∃ EVENT[3] DATE[2] ENTITY[1] (
+ sect(ENTITY[1]) ∧
+  CD_1397(DATE[2]) ∧
+   past(EVENT[3]) ∧
+    began(EVENT[3], ENTITY[1]) ∧ in(EVENT[3]) = DATE[2] ∧ by(EVENT[3]) = ENTITY[Shuukyuu_GUCHUU])
+
+# ::id 118_wikipedia_KYOTO_BDS_00002,117;IE
+# ::snt Head temple is Buttsu-ji in Mihara City , Hiroshima Prefecture .
+∃ EVENT[2] ENTITY[1] (Head_temple(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[1], ENTITY[Buttsu-ji]) ∧ in(EVENT[2]) = ENTITY[Mihara_City_Hiroshima_Prefecture])
+
+# ::id 119_wikipedia_KYOTO_BDS_00002,118;IE
+# ::snt It has about 50 branch temples mainly in the area of Hiroshima Prefecture .
+∃ REF1[1] EVENT[4] GROUP[2] ENTITY[3] (
+ is_area_of(ENTITY[3], ENTITY[Hiroshima_Prefecture]) ∧
+  REF1[1] = it ∧
+   (CD_about_50(GROUP[2]), is_branch_temples_mainly_in(GROUP[2], ENTITY[3])) ∧ has(EVENT[4], REF1[1], GROUP[2]))
+
+# ::id 120_wikipedia_KYOTO_BDS_00002,119;IE
+# ::snt Belonged to the Tenryu-ji sect until 1905 .
+∃ REF1[1] EVENT[4] DATE[3] ENTITY[2] (
+ Tenryu-ji_sect(ENTITY[2]) ∧
+  REF1[1] = *pro* ∧
+   CD_1905(DATE[3]) ∧
+    past(EVENT[4]) ∧
+     belonged(EVENT[4], REF1[1]) ∧ until(EVENT[4]) = DATE[3] ∧ to(EVENT[4]) = ENTITY[2])
+
+# ::id 121_wikipedia_KYOTO_BDS_00002,120;IE
+# ::snt Affiliated Educational Institutions
+∃ ATTRIB[2] EVENT[3] GROUP[1] (affiliated(ATTRIB[2]) ∧ is_Educational_Institutions_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 122_wikipedia_KYOTO_BDS_00002,121;IE
+# ::snt Hanazono University
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Hanazono_University])
+
+# ::id 123_wikipedia_KYOTO_BDS_00002,122;IE
+# ::snt Shogen Junior College
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Shogen_Junior_College])
+
+# ::id 124_wikipedia_KYOTO_BDS_00002,123;IE
+# ::snt Hanazono Middle School / High School
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Hanazono_Middle_School_High_School])

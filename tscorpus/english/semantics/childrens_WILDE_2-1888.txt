@@ -1,0 +1,1595 @@
+# ::id 1_childrens_WILDE-1888_2;AT1-1;NE
+# ::snt THE SELFISH GIANT
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (selfish(ATTRIB[2]) ∧ is_GIANT_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 2_childrens_WILDE-1888_2;AT2-1;NE
+# ::snt Every afternoon , as they were coming from school , the children used to go and play in the Giant 's garden .
+∃ ENTITY[4] GROUP[2] (
+ children(GROUP[2]) ∧
+  Giant(ENTITY[4]) ∧
+   ∀ TIME[1] (afternoon(TIME[1]) →
+    ∃ REF1[5] EVENT[7] EVENT[9] EVENT[10] EVENT[8] ENTITY[6] ENTITY[3] (
+     is_garden_POS(ENTITY[3], ENTITY[4]) ∧
+      REF1[5] = they ∧
+       school(ENTITY[6]) ∧
+        past(EVENT[7]) ∧
+         past(EVENT[8]) ∧
+          CRD_as(were_coming(EVENT[7], REF1[5]) ∧ from(EVENT[7]) = ENTITY[6],
+           used(EVENT[8], GROUP[2], CONJ_and(go(EVENT[9], GROUP[2]), play(EVENT[10], GROUP[2]))) ∧
+            in(EVENT[8]) = ENTITY[3] ∧ is_contained_in(TMP(EVENT[8]), TIME[1])))))
+
+# ::id 3_childrens_WILDE-1888_2;AT3-1;NE
+# ::snt It was a large lovely garden , with soft green grass .
+∃ ATTRIB[7] ATTRIB[6] ATTRIB[4] ATTRIB[3] REF1[1] EVENT[8] ENTITY[5] ENTITY[2] (
+ REF1[1] = it ∧
+  large(ATTRIB[3]) ∧
+   lovely(ATTRIB[4]) ∧
+    soft(ATTRIB[6]) ∧
+     green(ATTRIB[7]) ∧
+      is_grass_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_grass_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+       is_garden_with(ENTITY[2], ENTITY[5]) ∧ is_garden_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_garden_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+        past(EVENT[8]) ∧ copula(EVENT[8], REF1[1], ENTITY[2]))
+
+# ::id 4_childrens_WILDE-1888_2;AT3-2;NE
+# ::snt Here and there over the grass stood beautiful flowers like stars ,
+∃ SITUATION[8] ATTRIB[4] ATTRIB[3] EVENT[7] EVENT[6] GROUP[5] GROUP[2] ENTITY[1] (
+ grass(ENTITY[1]) ∧
+  beautiful(ATTRIB[3]) ∧
+   is_flowers_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    stars(GROUP[5]) ∧
+     is_like_comp(ATTRIB[4], GROUP[5]) ∧
+      LOC_here_there(SITUATION[8]) ∧
+       past(EVENT[7]) ∧
+        is_FACT_THAT(SITUATION[8],
+         CONJ_and(stood(EVENT[7], GROUP[2]) ∧ over(EVENT[7]) = ENTITY[1],
+          xxx(EVENT[6], GROUP[2], ATTRIB[4]))))
+
+# ::id 5_childrens_WILDE-1888_2;AT3-3;NE
+# ::snt and there were twelve peach-trees that in the spring-time broke out into delicate blossoms of pink and pearl , and in the autumn bore rich fruit .
+∃ ATTRIB[12] ATTRIB[8] ATTRIB[7] ATTRIB[5] EVENT[9] EVENT[13] EVENT[14] ENTITY[6] GROUP[4] ENTITY[11] GROUP[1] ENTITY[3] ENTITY[10] (
+ spring-time(ENTITY[3]) ∧
+  autumn(ENTITY[10]) ∧
+   delicate(ATTRIB[5]) ∧
+    pink(ATTRIB[7]) ∧
+     pearl(ATTRIB[8]) ∧
+      CONJ_and(is_ATTRIBUTE(ENTITY[6], ATTRIB[7]), is_ATTRIBUTE(ENTITY[6], ATTRIB[8])) ∧
+       is_blossoms_of(GROUP[4], ENTITY[6]) ∧ is_blossoms_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+        rich(ATTRIB[12]) ∧
+         is_fruit_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+          (CD_twelve(GROUP[1]),
+           CONJ_and(broke_out(EVENT[9], GROUP[1]) ∧ into(EVENT[9]) = GROUP[4] ∧
+                 in(EVENT[9]) = ENTITY[3],
+            bore(EVENT[13], GROUP[1], ENTITY[11]) ∧ in(EVENT[13]) = ENTITY[10]) ∧
+            peach-trees(GROUP[1])) ∧
+           past(EVENT[9]) ∧ past(EVENT[13]) ∧ past(EVENT[14]) ∧ copula(EVENT[14], GROUP[1]))
+
+# ::id 6_childrens_WILDE-1888_2;AT3-4;NE
+# ::snt The birds sat on the trees and sang so sweetly that the children used to stop their games in order to listen to them .
+∃ REF1[10] REF2[6] SITUATION[13] GROUP[9] ENTITY[5] EVENT[3] EVENT[7] EVENT[11] EVENT[8] EVENT[12] GROUP[2] GROUP[4] GROUP[1] (
+ birds(GROUP[1]) ∧
+  trees(GROUP[2]) ∧
+   children(GROUP[4]) ∧
+    past(EVENT[3]) ∧
+     past(EVENT[8]) ∧
+      is_ADV_so_sweetly_THAT(SITUATION[13],
+       used(EVENT[8], GROUP[4], stop(EVENT[11], GROUP[4], GROUP[9])) ∧ in(EVENT[8]) = ENTITY[5]) ∧
+       past(EVENT[12]) ∧
+        REF2[6] = them ∧
+         is_order_to(ENTITY[5], listen(EVENT[7]) ∧ to(EVENT[7]) = REF2[6]) ∧
+          REF1[10] = their ∧
+           is_games_POS(GROUP[9], REF1[10]) ∧
+            CONJ_and(sat(EVENT[3], GROUP[1]) ∧ on(EVENT[3]) = GROUP[2],
+             is_FACT_THAT(SITUATION[13], sang(EVENT[12], GROUP[1]))))
+
+# ::id 7_childrens_WILDE-1888_2;AT3-5;NE
+# ::snt " How happy we are here ! " they cried to each other .
+∃ REF2[1] (
+ REF2[1] = they ∧
+  EACH ATTRIB[3] ENTITY[2] ((other(ATTRIB[3]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3])),
+   ∃ EVENT[4] (
+    past(EVENT[4]) ∧
+     cried(EVENT[4], REF2[1],
+      EXCLAMATIVE(∃ REF1[6] ATTRIB[5] EVENT[7] (
+            REF1[6] = we ∧
+             LOC_here(EVENT[7]) ∧ happy(ATTRIB[5]) ∧ copula(EVENT[7], REF1[6], ATTRIB[5])))) ∧
+      to(EVENT[4]) = ENTITY[2])))
+
+# ::id 8_childrens_WILDE-1888_2;AT4-1;NE
+# ::snt One day the Giant came back .
+∃ EVENT[3] TIME[1] ENTITY[2] (
+ Giant(ENTITY[2]) ∧
+  (CD_one(TIME[1]), day(TIME[1])) ∧
+   DIR_back(EVENT[3]) ∧
+    past(EVENT[3]) ∧ came(EVENT[3], ENTITY[2]) ∧ is_contained_in(TMP(EVENT[3]), TIME[1]))
+
+# ::id 9_childrens_WILDE-1888_2;AT4-2;NE
+# ::snt He had been to visit his friend the Cornish ogre , and had stayed with him for seven years .
+∃ REF3[8] ATTRIB[4] REF2[6] REF1[1] EVENT[7] EVENT[2] EVENT[10] ENTITY[3] ENTITY[5] TIME[9] (
+ REF1[1] = he ∧
+  REF2[6] = his ∧
+   is_friend_POS(ENTITY[5], REF2[6]) ∧
+    cornish(ATTRIB[4]) ∧
+     is_ogre_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      is_-ENTITY-_namely(ENTITY[5], ENTITY[3]) ∧
+       REF3[8] = him ∧
+        (CD_seven(TIME[9]), years(TIME[9])) ∧
+         past(EVENT[2]) ∧
+          past(EVENT[10]) ∧
+           CONJ_and(had_copula(EVENT[2], REF1[1], visit(EVENT[7], REF1[1], ENTITY[5])),
+            had_stayed(EVENT[10], REF1[1]) ∧ for(EVENT[10]) = TIME[9] ∧ with(EVENT[10]) = REF3[8]))
+
+# ::id 10_childrens_WILDE-1888_2;AT4-3;NE
+# ::snt After the seven years were over he had said all that he had to say , for his conversation was limited ,
+∃ REF1[4] EVENT[2] TIME[1] (
+ (CD_seven(TIME[1]), years(TIME[1])) ∧
+  ADV_over(EVENT[2]) ∧
+   past(EVENT[2]) ∧
+    REF1[4] = he ∧
+     CRD_After(copula(EVENT[2], TIME[1]),
+      ALL REF2[7] EVENT[9] EVENT[8] ENTITY[5] (
+       (REF2[7] = he ∧ had(EVENT[8], REF2[7], say(EVENT[9], REF2[7], ENTITY[5])) ∧
+        past(EVENT[8])),
+       ∃ ATTRIB[13] REF3[12] SITUATION[10] ENTITY[11] EVENT[14] EVENT[15] (
+        past(EVENT[14]) ∧
+         past(EVENT[15]) ∧
+          REF3[12] = his ∧
+           is_conversation_POS(ENTITY[11], REF3[12]) ∧
+            limited(ATTRIB[13]) ∧
+             is_FACT_THAT(SITUATION[10], copula(EVENT[14], ENTITY[11], ATTRIB[13])) ∧
+              had_said(EVENT[15], REF1[4], ENTITY[5]) ∧ for(EVENT[15]) = SITUATION[10]))))
+
+# ::id 11_childrens_WILDE-1888_2;AT4-4;NE
+# ::snt and he determined to return to his own castle .
+∃ ATTRIB[5] REF2[4] REF1[1] EVENT[6] EVENT[2] ENTITY[3] (
+ REF1[1] = he ∧
+  REF2[4] = his ∧
+   own(ATTRIB[5]) ∧
+    is_castle_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_castle_POS(ENTITY[3], REF2[4]) ∧
+     past(EVENT[2]) ∧
+      determined(EVENT[2], REF1[1], return(EVENT[6], REF1[1]) ∧ to(EVENT[6]) = ENTITY[3]))
+
+# ::id 12_childrens_WILDE-1888_2;AT4-5;NE
+# ::snt When he arrived he saw the children playing in the garden .
+∃ SITUATION[11] REF2[5] REF1[2] EVENT[3] EVENT[10] EVENT[9] ENTITY[8] GROUP[6] (
+ garden(ENTITY[8]) ∧
+  playing(EVENT[9], GROUP[6]) ∧ in(EVENT[9]) = ENTITY[8] ∧ children(GROUP[6]) ∧
+   REF1[2] = he ∧
+    REF2[5] = he ∧
+     is_TMP(EVENT[3], SITUATION[11]) ∧
+      past(EVENT[3]) ∧
+       arrived(EVENT[3], REF1[2]) ∧
+        past(EVENT[10]) ∧ is_FACT_THAT(SITUATION[11], saw(EVENT[10], REF2[5], GROUP[6])))
+
+# ::id 13_childrens_WILDE-1888_2;AT5-1;NE
+# ::snt " What are you doing here ? " he cried in a very gruff voice ,
+∃ ATTRIB[3] REF2[1] EVENT[4] ENTITY[2] (
+ REF2[1] = he ∧
+  very_gruff(ATTRIB[3]) ∧
+   is_voice_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[4]) ∧
+     cried(EVENT[4], REF2[1],
+      QUEST(∃ REF1[6] EVENT[7] ? ENTITY[5] (REF1[6] = you ∧ LOC_here(EVENT[7]) ∧ copula_doing(EVENT[7], REF1[6], ENTITY[5])))) ∧
+      in(EVENT[4]) = ENTITY[2])
+
+# ::id 14_childrens_WILDE-1888_2;AT5-2;NE
+# ::snt and the children ran away .
+∃ EVENT[2] GROUP[1] (children(GROUP[1]) ∧ DIR_away(EVENT[2]) ∧ past(EVENT[2]) ∧ ran(EVENT[2], GROUP[1]))
+
+# ::id 15_childrens_WILDE-1888_2;AT6-1;NE
+# ::snt " My own garden is my own garden , " said the Giant ;
+∃ ATTRIB[8] REF2[7] ATTRIB[5] REF1[4] EVENT[9] EVENT[2] ENTITY[6] ENTITY[3] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  REF1[4] = my ∧
+   own(ATTRIB[5]) ∧
+    is_garden_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_garden_POS(ENTITY[3], REF1[4]) ∧
+     REF2[7] = my ∧
+      own(ATTRIB[8]) ∧
+       is_garden_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_garden_POS(ENTITY[6], REF2[7]) ∧
+        past(EVENT[2]) ∧ said(EVENT[2], ENTITY[1], copula(EVENT[9], ENTITY[3], ENTITY[6])))
+
+# ::id 16_childrens_WILDE-1888_2;AT6-2;NE
+# ::snt " any one can understand that ,
+∃ ENTITY[2] ANY ENTITY[1] (one(ENTITY[1]), MD_can(∃ EVENT[3] understand(EVENT[3], ENTITY[1], ENTITY[2])))
+
+# ::id 17_childrens_WILDE-1888_2;AT6-3;NE
+# ::snt and I will allow nobody to play in it but myself . "
+∃ REF1[1] (
+ REF1[1] = i ∧
+  MD_will(∃ REF3[6] EVENT[7] EVENT[2] GROUP[3] (
+        CONJ_but(¬ ∃ ENTITY[4] (body(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ REF2[5] (REF2[5] = myself ∧ is_element_of(REF2[5], GROUP[3]))) ∧
+         REF3[6] = it ∧
+          allow(EVENT[2], REF1[1], play(EVENT[7], GROUP[3]) ∧ in(EVENT[7]) = REF3[6]))))
+
+# ::id 18_childrens_WILDE-1888_2;AT6-4;NE
+# ::snt So he built a high wall all round it , and put up a notice-board .
+∃ SITUATION[8] REF2[4] ATTRIB[3] REF1[1] EVENT[5] EVENT[7] ENTITY[2] ENTITY[6] (
+ REF1[1] = he ∧
+  high(ATTRIB[3]) ∧
+   REF2[4] = it ∧
+    is_wall_all_round(ENTITY[2], REF2[4]) ∧ is_wall_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     notice-board(ENTITY[6]) ∧
+      ADV_so(SITUATION[8]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[7]) ∧
+         is_FACT_THAT(SITUATION[8], CONJ_and(built(EVENT[5], REF1[1], ENTITY[2]), put_up(EVENT[7], REF1[1], ENTITY[6]))))
+
+# ::id 19_childrens_WILDE-1888_2;AT7-1;NE
+# ::snt TRESPASSERS WILL BE PROSECUTED
+∃ GROUP[1] (TRESPASSERS(GROUP[1]) ∧ MD_will(∃ EVENT[2] prosecuted(EVENT[2], _, GROUP[1])))
+
+# ::id 20_childrens_WILDE-1888_2;AT8-1;NE
+# ::snt He was a very selfish Giant .
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = he ∧
+  very_selfish(ATTRIB[3]) ∧ is_Giant_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 21_childrens_WILDE-1888_2;AT9-1;NE
+# ::snt The poor children had now nowhere to play .
+∃ SITUATION[6] ATTRIB[2] EVENT[4] EVENT[3] GROUP[1] (
+ poor(ATTRIB[2]) ∧
+  is_children_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   TMP_now(SITUATION[6]) ∧
+    LOC_nowhere(EVENT[4]) ∧
+     past(EVENT[3]) ∧ is_FACT_THAT(SITUATION[6], had(EVENT[3], GROUP[1], play(EVENT[4], GROUP[1]))))
+
+# ::id 22_childrens_WILDE-1888_2;AT9-2;NE
+# ::snt They tried to play on the road ,
+∃ REF1[1] EVENT[4] EVENT[2] ENTITY[3] (
+ road(ENTITY[3]) ∧
+  REF1[1] = they ∧
+   past(EVENT[2]) ∧ tried(EVENT[2], REF1[1], play(EVENT[4], REF1[1]) ∧ on(EVENT[4]) = ENTITY[3]))
+
+# ::id 23_childrens_WILDE-1888_2;AT9-3;NE
+# ::snt but the road was very dusty and full of hard stones ,
+∃ ATTRIB[5] ATTRIB[3] ATTRIB[2] EVENT[6] EVENT[6] GROUP[4] ENTITY[1] (
+ road(ENTITY[1]) ∧
+  very_dusty(ATTRIB[2]) ∧
+   hard(ATTRIB[5]) ∧
+    is_stones_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     is_full_of(ATTRIB[3], GROUP[4]) ∧
+      past(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        CONJ_and(copula(EVENT[6], ENTITY[1], ATTRIB[2]),
+         copula(EVENT[6], ENTITY[1]) ∧ ATTRIBUTE(EVENT[6]) = ATTRIB[3]))
+
+# ::id 24_childrens_WILDE-1888_2;AT9-4;NE
+# ::snt and they did not like it .
+∃ REF1[1] (
+ REF1[1] = they ∧
+  ¬ ∃ REF2[2] EVENT[3] (REF2[2] = it ∧ past(EVENT[3]) ∧ did_like(EVENT[3], REF1[1], REF2[2])))
+
+# ::id 25_childrens_WILDE-1888_2;AT9-5;NE
+# ::snt They used to wander round the high wall when their lessons were over , and talk about the beautiful garden inside .
+∃ SITUATION[11] REF2[7] REF1[1] ATTRIB[13] ATTRIB[4] EVENT[8] EVENT[10] EVENT[14] EVENT[2] GROUP[6] ENTITY[3] ENTITY[12] (
+ high(ATTRIB[4]) ∧
+  is_wall_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   beautiful(ATTRIB[13]) ∧
+    LOC_inside(ENTITY[12]) ∧ is_garden_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+     REF1[1] = they ∧
+      REF2[7] = their ∧
+       is_lessons_POS(GROUP[6], REF2[7]) ∧
+        is_TMP(EVENT[8], SITUATION[11]) ∧
+         is_before(EVENT[8], EVENT[2]) ∧
+          copula_over(EVENT[8], GROUP[6]) ∧
+           past(EVENT[2]) ∧
+            used(EVENT[2], REF1[1],
+             CONJ_and(is_FACT_THAT(SITUATION[11], wander(EVENT[10], REF1[1]) ∧ round(EVENT[10]) = ENTITY[3]),
+              talk(EVENT[14], REF1[1]) ∧ about(EVENT[14]) = ENTITY[12])))
+
+# ::id 26_childrens_WILDE-1888_2;AT9-6;NE
+# ::snt " How happy we were there ! " they said to each other .
+∃ REF2[1] (
+ REF2[1] = they ∧
+  EACH ATTRIB[3] ENTITY[2] ((other(ATTRIB[3]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3])),
+   ∃ EVENT[4] (
+    past(EVENT[4]) ∧
+     said(EVENT[4], REF2[1],
+      EXCLAMATIVE(∃ REF1[6] ATTRIB[5] EVENT[7] (
+            REF1[6] = we ∧
+             LOC_there(EVENT[7]) ∧
+              is_before(EVENT[7], EVENT[4]) ∧
+               happy(ATTRIB[5]) ∧ copula(EVENT[7], REF1[6], ATTRIB[5])))) ∧
+      to(EVENT[4]) = ENTITY[2])))
+
+# ::id 27_childrens_WILDE-1888_2;AT10-1;NE
+# ::snt Then the Spring came ,
+∃ EVENT[2] ENTITY[1] (Spring(ENTITY[1]) ∧ TMP_then(EVENT[2]) ∧ past(EVENT[2]) ∧ came(EVENT[2], ENTITY[1]))
+
+# ::id 28_childrens_WILDE-1888_2;AT10-2;NE
+# ::snt and all over the country there were little blossoms and little birds .
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ country(ENTITY[1]) ∧
+  ∃ ATTRIB[4] GROUP[3] (little(ATTRIB[4]) ∧ is_blossoms_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+   ∃ ATTRIB[6] GROUP[5] (little(ATTRIB[6]) ∧ is_birds_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[2])) ∧
+   past(EVENT[7]) ∧ copula(EVENT[7], GROUP[2]) ∧ all_over(EVENT[7]) = ENTITY[1])
+
+# ::id 29_childrens_WILDE-1888_2;AT10-3;NE
+# ::snt Only in the garden of the Selfish Giant it was still winter .
+∃ ATTRIB[4] ENTITY[3] ENTITY[2] (
+ selfish(ATTRIB[4]) ∧
+  is_Giant_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_garden_of(ENTITY[2], ENTITY[3]) ∧
+    ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+     ∃ EVENT[6] TIME[5] (
+      winter(TIME[5]) ∧
+       TMP_still(EVENT[6]) ∧
+        past(EVENT[6]) ∧
+         copula(EVENT[6]) ∧ is_contained_in(TMP(EVENT[6]), TIME[5]) ∧ in(EVENT[6]) = ENTITY[1])))
+
+# ::id 30_childrens_WILDE-1888_2;AT10-4;NE
+# ::snt The birds did not care to sing in it as there were no children ,
+∃ SITUATION[1] GROUP[4] (
+ birds(GROUP[4]) ∧
+  is_FACT_THAT(SITUATION[1], ¬ ∃ EVENT[3] GROUP[2] (children(GROUP[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], GROUP[2]))) ∧
+   ¬ ∃ REF1[6] PRP[5] EVENT[7] EVENT[8] (
+         REF1[6] = it ∧
+          is_FACT_THAT(PRP[5], sing(EVENT[7], GROUP[4]) ∧ in(EVENT[7]) = REF1[6]) ∧
+           past(EVENT[8]) ∧
+            did_care(EVENT[8], GROUP[4]) ∧ PRP(EVENT[8]) = PRP[5] ∧ as(EVENT[8]) = SITUATION[1]))
+
+# ::id 31_childrens_WILDE-1888_2;AT10-5;NE
+# ::snt and the trees forgot to blossom .
+∃ EVENT[3] EVENT[2] GROUP[1] (trees(GROUP[1]) ∧ past(EVENT[2]) ∧ forgot(EVENT[2], GROUP[1], blossom(EVENT[3], GROUP[1])))
+
+# ::id 32_childrens_WILDE-1888_2;AT10-6;NE
+# ::snt Once a beautiful flower put its head out from the grass ,
+∃ REF1[4] ATTRIB[2] EVENT[6] ENTITY[3] ENTITY[1] ENTITY[5] (
+ grass(ENTITY[5]) ∧
+  beautiful(ATTRIB[2]) ∧
+   is_flower_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    REF1[4] = its ∧
+     is_head_POS(ENTITY[3], REF1[4]) ∧
+      TMP_once(EVENT[6]) ∧
+       past(EVENT[6]) ∧ put_out(EVENT[6], ENTITY[1], ENTITY[3]) ∧ from(EVENT[6]) = ENTITY[5])
+
+# ::id 33_childrens_WILDE-1888_2;AT10-7;NE
+# ::snt but when it saw the notice-board it was so sorry for the children that it slipped back into the ground again , and went off to sleep .
+∃ SITUATION[17] PRP[13] REF3[9] ATTRIB[7] REF2[6] REF1[2] EVENT[4] EVENT[11] EVENT[14] EVENT[15] EVENT[16] ENTITY[3] ENTITY[10] GROUP[8] (
+ notice-board(ENTITY[3]) ∧
+  children(GROUP[8]) ∧
+   ground(ENTITY[10]) ∧
+    REF1[2] = it ∧
+     REF2[6] = it ∧
+      REF3[9] = it ∧
+       is_FACT_THAT(PRP[13], sleep(EVENT[14], REF3[9])) ∧
+        is_so_sorry_for(ATTRIB[7], GROUP[8]) ∧
+         is_so_sorry_THAT(ATTRIB[7],
+          CONJ_and(slipped_back(EVENT[11], REF3[9]) ∧ into(EVENT[11]) = ENTITY[10],
+           went_off(EVENT[15], REF3[9]) ∧ PRP(EVENT[15]) = PRP[13])) ∧
+         is_TMP(EVENT[4], SITUATION[17]) ∧
+          past(EVENT[4]) ∧
+           saw(EVENT[4], REF1[2], ENTITY[3]) ∧
+            TMP_again(EVENT[11]) ∧
+             past(EVENT[11]) ∧
+              past(EVENT[15]) ∧
+               past(EVENT[16]) ∧ is_FACT_THAT(SITUATION[17], copula(EVENT[16], REF2[6], ATTRIB[7])))
+
+# ::id 34_childrens_WILDE-1888_2;AT10-8;NE
+# ::snt The only people who were pleased were the Snow and the Frost .
+∃ ATTRIB[4] EVENT[5] GROUP[2] (
+ pleased(ATTRIB[4]) ∧
+  copula(EVENT[5], GROUP[2], ATTRIB[4]) ∧ people(GROUP[2]) ∧
+   past(EVENT[5]) ∧
+    ONLY GROUP[1] (is_subset_of_or_equal_to(GROUP[1], GROUP[2]),
+     ∃ EVENT[9] GROUP[6] ENTITY[7] ENTITY[8] (
+      Snow(ENTITY[7]) ∧
+       Frost(ENTITY[8]) ∧
+        is_element_of(ENTITY[7], GROUP[6]) ∧ is_element_of(ENTITY[8], GROUP[6]) ∧
+         past(EVENT[9]) ∧ copula(EVENT[9], GROUP[1], GROUP[6]))))
+
+# ::id 35_childrens_WILDE-1888_2;AT10-9;NE
+# ::snt " Spring has forgotten this garden , " they cried ,
+∃ REF1[1] EVENT[5] EVENT[2] ENTITY[3] ENTITY[4] (
+ garden(ENTITY[4]) ∧
+  REF1[1] = they ∧
+   Spring(ENTITY[3]) ∧ past(EVENT[2]) ∧ cried(EVENT[2], REF1[1], has_forgotten(EVENT[5], ENTITY[3], ENTITY[4])))
+
+# ::id 36_childrens_WILDE-1888_2;AT10-10;NE
+# ::snt " so we will live here all the year round . "
+∃ SITUATION[5] REF1[1] (
+ REF1[1] = we ∧
+  ADV_so(SITUATION[5]) ∧
+   is_FACT_THAT(SITUATION[5],
+    MD_will(∃ SITUATION[4] (
+          LOC_here(SITUATION[4]) ∧
+           is_FACT_THAT(SITUATION[4],
+            ALL TIME[2] (ADV_round(TIME[2]) ∧ year(TIME[2]),
+             ∃ EVENT[3] (live(EVENT[3], REF1[1]) ∧ is_contained_in(TMP(EVENT[3]), TIME[2]))))))))
+
+# ::id 37_childrens_WILDE-1888_2;AT10-11;NE
+# ::snt The Snow covered up the grass with her great white cloak ,
+∃ ATTRIB[6] ATTRIB[5] REF1[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[1] (
+ Snow(ENTITY[1]) ∧
+  grass(ENTITY[2]) ∧
+   REF1[4] = her ∧
+    great(ATTRIB[5]) ∧
+     white(ATTRIB[6]) ∧
+      is_cloak_ATTRIBUTE(ENTITY[3], ATTRIB[6]) ∧ is_cloak_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_cloak_POS(ENTITY[3], REF1[4]) ∧
+       past(EVENT[7]) ∧ covered_up(EVENT[7], ENTITY[1], ENTITY[2]) ∧ with(EVENT[7]) = ENTITY[3])
+
+# ::id 38_childrens_WILDE-1888_2;AT10-12;NE
+# ::snt and the Frost painted all the trees silver .
+∃ EVENT[2] ENTITY[1] (
+ Frost(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   painted(EVENT[2], ENTITY[1],
+    ALL GROUP[3] (trees(GROUP[3]), ∃ EVENT[5] ENTITY[4] (silver(ENTITY[4]) ∧ xxx(EVENT[5], GROUP[3], ENTITY[4])))))
+
+# ::id 39_childrens_WILDE-1888_2;AT10-13;NE
+# ::snt Then they invited the North Wind to stay with them ,
+∃ SITUATION[7] REF2[4] PRP[3] REF1[1] EVENT[5] EVENT[6] ENTITY[2] (
+ North_Wind(ENTITY[2]) ∧
+  REF1[1] = they ∧
+   REF2[4] = them ∧
+    is_FACT_THAT(PRP[3], stay(EVENT[5], ENTITY[2]) ∧ with(EVENT[5]) = REF2[4]) ∧
+     TMP_then(SITUATION[7]) ∧
+      past(EVENT[6]) ∧
+       is_FACT_THAT(SITUATION[7], invited(EVENT[6], REF1[1], ENTITY[2]) ∧ PRP(EVENT[6]) = PRP[3]))
+
+# ::id 40_childrens_WILDE-1888_2;AT10-14;NE
+# ::snt and he came .
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ past(EVENT[2]) ∧ came(EVENT[2], REF1[1]))
+
+# ::id 41_childrens_WILDE-1888_2;AT10-15;NE
+# ::snt He was wrapped in furs ,
+∃ REF1[1] EVENT[3] GROUP[2] (REF1[1] = he ∧ furs(GROUP[2]) ∧ past(EVENT[3]) ∧ was_wrapped_in(EVENT[3], REF1[1], GROUP[2]))
+
+# ::id 42_childrens_WILDE-1888_2;AT10-16;NE
+# ::snt and he roared all day about the garden , and blew the chimney-pots down .
+∃ REF1[1] EVENT[6] ENTITY[3] GROUP[5] (
+ garden(ENTITY[3]) ∧
+  chimney-pots(GROUP[5]) ∧
+   REF1[1] = he ∧
+    past(EVENT[6]) ∧
+     CONJ_and(ALL TIME[2] (day(TIME[2]),
+           ∃ EVENT[4] (
+            past(EVENT[4]) ∧
+             roared(EVENT[4], REF1[1]) ∧ about(EVENT[4]) = ENTITY[3] ∧
+              is_contained_in(TMP(EVENT[4]), TIME[2]))), blew_down(EVENT[6], REF1[1], GROUP[5])))
+
+# ::id 43_childrens_WILDE-1888_2;AT10-17;NE
+# ::snt " This is a delightful spot , " he said ,
+∃ ATTRIB[5] REF1[1] EVENT[6] EVENT[2] ENTITY[4] ENTITY[3] (
+ REF1[1] = he ∧
+  delightful(ATTRIB[5]) ∧
+   is_spot_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    past(EVENT[2]) ∧ said(EVENT[2], REF1[1], copula(EVENT[6], ENTITY[3], ENTITY[4])))
+
+# ::id 44_childrens_WILDE-1888_2;AT10-18;NE
+# ::snt " we must ask the Hail on a visit . "
+∃ REF1[1] ENTITY[2] (
+ Hail(ENTITY[2]) ∧
+  REF1[1] = we ∧
+   MD_must(∃ EVENT[4] ENTITY[3] (visit(ENTITY[3]) ∧ ask(EVENT[4], REF1[1], ENTITY[2]) ∧ on(EVENT[4]) = ENTITY[3])))
+
+# ::id 45_childrens_WILDE-1888_2;AT10-19;NE
+# ::snt So the Hail came .
+∃ EVENT[2] ENTITY[1] (Hail(ENTITY[1]) ∧ ADV_so(EVENT[2]) ∧ past(EVENT[2]) ∧ came(EVENT[2], ENTITY[1]))
+
+# ::id 46_childrens_WILDE-1888_2;AT10-20;NE
+# ::snt Every day for three hours he rattled on the roof of the castle till he broke most of the slates ,
+∃ ENTITY[5] GROUP[9] ENTITY[4] (
+ castle(ENTITY[5]) ∧
+  is_roof_of(ENTITY[4], ENTITY[5]) ∧
+   slates(GROUP[9]) ∧
+    ∀ GROUP[2] TIME[1] (((CD_three(GROUP[2]), hours(GROUP[2])) ∧ is_day_for(TIME[1], GROUP[2])) →
+     ∃ REF2[7] SITUATION[6] REF1[3] EVENT[11] (
+      REF1[3] = he ∧
+       REF2[7] = he ∧
+        is_FACT_THAT(SITUATION[6],
+         MOST ENTITY[8] (is_element_of(ENTITY[8], GROUP[9]),
+          ∃ EVENT[10] (past(EVENT[10]) ∧ broke(EVENT[10], REF2[7], ENTITY[8])))) ∧
+         past(EVENT[11]) ∧
+          rattled(EVENT[11], REF1[3]) ∧ till(EVENT[11]) = SITUATION[6] ∧ on(EVENT[11]) = ENTITY[4] ∧
+           is_contained_in(TMP(EVENT[11]), TIME[1]))))
+
+# ::id 47_childrens_WILDE-1888_2;AT10-21;NE
+# ::snt and then he ran round and round the garden as fast as he could go .
+∃ SITUATION[7] REF2[5] REF1[1] EVENT[8] DEGREE[3] ENTITY[2] (
+ garden(ENTITY[2]) ∧
+  REF1[1] = he ∧
+   REF2[5] = he ∧
+    is_FACT_THAT(SITUATION[7], MD_could(∃ EVENT[6] go(EVENT[6], REF2[5]))) ∧
+     TMP_then(EVENT[8]) ∧
+      is_ADV(SITUATION[7], DEGREE[3]) ∧
+       is_ADV_as_fast_as(EVENT[8], DEGREE[3]) ∧
+        past(EVENT[8]) ∧ ran(EVENT[8], REF1[1]) ∧ round_and_round(EVENT[8]) = ENTITY[2])
+
+# ::id 48_childrens_WILDE-1888_2;AT10-22;NE
+# ::snt He was dressed in grey ,
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = he ∧
+  grey(ENTITY[2]) ∧ past(EVENT[3]) ∧ was_dressed(EVENT[3], REF1[1]) ∧ in(EVENT[3]) = ENTITY[2])
+
+# ::id 49_childrens_WILDE-1888_2;AT10-23;NE
+# ::snt and his breath was like ice .
+∃ ATTRIB[3] REF1[2] EVENT[5] ENTITY[4] ENTITY[1] (
+ REF1[2] = his ∧
+  is_breath_POS(ENTITY[1], REF1[2]) ∧
+   ice(ENTITY[4]) ∧
+    is_like_comp(ATTRIB[3], ENTITY[4]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], ENTITY[1], ATTRIB[3]))
+
+# ::id 50_childrens_WILDE-1888_2;AT11-1;NE
+# ::snt " I can not understand why the Spring is so late in coming , " said the Selfish Giant , as he sat at the window and looked out at his cold white garden ;
+∃ REF3[13] ATTRIB[10] ATTRIB[9] REF2[8] REF1[4] SITUATION[3] ATTRIB[2] EVENT[6] EVENT[11] EVENT[12] ENTITY[7] ENTITY[5] ENTITY[16] ENTITY[1] (
+ selfish(ATTRIB[2]) ∧
+  is_Giant_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   window(ENTITY[5]) ∧
+    Spring(ENTITY[16]) ∧
+     REF1[4] = he ∧
+      REF2[8] = his ∧
+       cold(ATTRIB[9]) ∧
+        white(ATTRIB[10]) ∧
+         is_garden_ATTRIBUTE(ENTITY[7], ATTRIB[10]) ∧ is_garden_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_garden_POS(ENTITY[7], REF2[8]) ∧
+          is_FACT_THAT(SITUATION[3],
+           CONJ_and(sat(EVENT[6], REF1[4]) ∧ at(EVENT[6]) = ENTITY[5],
+            looked_out(EVENT[11], REF1[4]) ∧ at(EVENT[11]) = ENTITY[7])) ∧
+           REF3[13] = i ∧
+            past(EVENT[6]) ∧
+             past(EVENT[11]) ∧
+              past(EVENT[12]) ∧
+               said(EVENT[12], ENTITY[1],
+                MD_can(¬ ∃ EVENT[14] understand(EVENT[14], REF3[13],
+                           QUEST(∃ ATTRIB[17] EVENT[18] ? ENTITY[15] (
+                                 so_late(ATTRIB[17]) ∧
+                                  is_ADV(EVENT[18], ENTITY[15]) ∧
+                                   copula(EVENT[18], ENTITY[16], ATTRIB[17])))))) ∧
+                as(EVENT[12]) = SITUATION[3])
+
+# ::id 51_childrens_WILDE-1888_2;AT11-2;NE
+# ::snt " I hope there will be a change in the weather . "
+∃ REF1[1] EVENT[2] ENTITY[3] ENTITY[4] (
+ weather(ENTITY[4]) ∧
+  REF1[1] = i ∧
+   is_change_in(ENTITY[3], ENTITY[4]) ∧ hope(EVENT[2], REF1[1], MD_will(∃ EVENT[5] copula(EVENT[5], ENTITY[3]))))
+
+# ::id 52_childrens_WILDE-1888_2;AT12-1;NE
+# ::snt But the Spring never came , nor the Summer .
+∃ EVENT[4] GROUP[1] ENTITY[2] ENTITY[3] (
+ Spring(ENTITY[2]) ∧
+  Summer(ENTITY[3]) ∧
+   CONJ_nor(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧
+    TMP_never(EVENT[4]) ∧ past(EVENT[4]) ∧ came(EVENT[4], GROUP[1]))
+
+# ::id 53_childrens_WILDE-1888_2;AT12-2;NE
+# ::snt The Autumn gave golden fruit to every garden ,
+∃ ATTRIB[3] ENTITY[2] ENTITY[1] (
+ Autumn(ENTITY[1]) ∧
+  golden(ATTRIB[3]) ∧
+   is_fruit_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    ∀ ENTITY[4] (garden(ENTITY[4]) → ∃ EVENT[5] (past(EVENT[5]) ∧ gave(EVENT[5], ENTITY[1], ENTITY[2], ENTITY[4]))))
+
+# ::id 54_childrens_WILDE-1888_2;AT12-3;NE
+# ::snt but to the Giant 's garden she gave none .
+∃ REF1[3] ENTITY[1] ENTITY[2] (
+ Giant(ENTITY[2]) ∧
+  is_garden_POS(ENTITY[1], ENTITY[2]) ∧
+   REF1[3] = she ∧ NONE ENTITY[4] ∃ EVENT[5] (past(EVENT[5]) ∧ gave(EVENT[5], REF1[3], ENTITY[4], ENTITY[1])))
+
+# ::id 55_childrens_WILDE-1888_2;AT12-4;NE
+# ::snt " He is too selfish , " she said .
+∃ ATTRIB[4] REF2[3] REF1[1] EVENT[5] EVENT[2] (
+ REF1[1] = she ∧
+  REF2[3] = he ∧
+   too_selfish(ATTRIB[4]) ∧ past(EVENT[2]) ∧ said(EVENT[2], REF1[1], copula(EVENT[5], REF2[3], ATTRIB[4])))
+
+# ::id 56_childrens_WILDE-1888_2;AT12-5;NE
+# ::snt So it was always Winter there ,
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = it ∧
+  Winter(ENTITY[2]) ∧
+   ADV_so(EVENT[3]) ∧
+    TMP_always(EVENT[3]) ∧ LOC_there(EVENT[3]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 57_childrens_WILDE-1888_2;AT12-6;NE
+# ::snt and the North Wind and the Hail , and the Frost , and the Snow danced about through the trees .
+∃ EVENT[7] GROUP[1] ENTITY[2] ENTITY[3] ENTITY[4] ENTITY[5] GROUP[6] (
+ North_Wind(ENTITY[2]) ∧
+  Hail(ENTITY[3]) ∧
+   Frost(ENTITY[4]) ∧
+    Snow(ENTITY[5]) ∧
+     trees(GROUP[6]) ∧
+      is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[3], GROUP[1]) ∧ is_element_of(ENTITY[4], GROUP[1]) ∧
+       is_element_of(ENTITY[5], GROUP[1]) ∧
+       past(EVENT[7]) ∧ danced_about(EVENT[7], GROUP[1]) ∧ through(EVENT[7]) = GROUP[6])
+
+# ::id 58_childrens_WILDE-1888_2;AT13-1;NE
+# ::snt One morning the Giant was lying awake in bed when he heard some lovely music .
+∃ SITUATION[11] ATTRIB[3] REF1[7] EVENT[12] EVENT[4] ENTITY[5] TIME[1] ENTITY[2] (
+ Giant(ENTITY[2]) ∧
+  (CD_one(TIME[1]), morning(TIME[1])) ∧
+   bed(ENTITY[5]) ∧
+    REF1[7] = he ∧
+     awake(ATTRIB[3]) ∧
+      is_TMP(SITUATION[11], EVENT[12]) ∧
+       is_FACT_THAT(SITUATION[11],
+        SOME ATTRIB[9] ENTITY[8] ((lovely(ATTRIB[9]) ∧ is_music_ATTRIBUTE(ENTITY[8], ATTRIB[9])),
+         ∃ EVENT[10] (past(EVENT[10]) ∧ heard(EVENT[10], REF1[7], ENTITY[8])))) ∧
+        past(EVENT[12]) ∧
+         CONJ_and(was_lying(EVENT[12], ENTITY[2]) ∧ in(EVENT[12]) = ENTITY[5] ∧
+               is_contained_in(TMP(EVENT[12]), TIME[1]), xxx(EVENT[4], ENTITY[2], ATTRIB[3])))
+
+# ::id 59_childrens_WILDE-1888_2;AT13-2;NE
+# ::snt It sounded so sweet to his ears that he thought it must be the King 's musicians passing by .
+∃ REF4[7] REF3[5] REF2[4] ATTRIB[2] REF1[1] EVENT[6] EVENT[13] GROUP[3] ENTITY[9] (
+ King(ENTITY[9]) ∧
+  REF1[1] = it ∧
+   REF2[4] = his ∧
+    is_ears_POS(GROUP[3], REF2[4]) ∧
+     REF3[5] = he ∧
+      REF4[7] = it ∧
+       is_so_sweet_to(ATTRIB[2], GROUP[3]) ∧
+        is_so_sweet_THAT(ATTRIB[2],
+         thought(EVENT[6], REF3[5],
+          MD_must(∃ EVENT[11] EVENT[12] GROUP[8] (
+                passing_by(EVENT[11], GROUP[8]) ∧ is_musicians_POS(GROUP[8], ENTITY[9]) ∧
+                 copula(EVENT[12], REF4[7], GROUP[8]))))) ∧
+        past(EVENT[6]) ∧ past(EVENT[13]) ∧ sounded(EVENT[13], REF1[1], ATTRIB[2]))
+
+# ::id 60_childrens_WILDE-1888_2;AT13-3;NE
+# ::snt It was really only a little linnet singing outside his window ,
+∃ SITUATION[8] ATTRIB[4] REF1[1] ENTITY[3] (
+ REF1[1] = it ∧
+  little(ATTRIB[4]) ∧
+   is_linnet_singing_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    ADV_really(SITUATION[8]) ∧
+     is_FACT_THAT(SITUATION[8],
+      ONLY ENTITY[2] (is_of(ENTITY[2], ENTITY[3]),
+       ∃ REF2[6] EVENT[7] ENTITY[5] (
+        REF2[6] = his ∧
+         is_window_POS(ENTITY[5], REF2[6]) ∧
+          past(EVENT[7]) ∧ copula(EVENT[7], REF1[1], ENTITY[2]) ∧ outside(EVENT[7]) = ENTITY[5]))))
+
+# ::id 61_childrens_WILDE-1888_2;AT13-4;NE
+# ::snt but it was so long since he had heard a bird sing in his garden that it seemed to him to be the most beautiful music in the world .
+∃ REF4[10] REF3[8] REF2[4] SITUATION[3] ATTRIB[2] REF1[1] ATTRIB[13] EVENT[9] EVENT[5] EVENT[15] EVENT[11] EVENT[16] ENTITY[7] ENTITY[6] ENTITY[14] ENTITY[12] (
+ most_beautiful(ATTRIB[13]) ∧
+  is_music_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+   world(ENTITY[14]) ∧
+    REF1[1] = it ∧
+     REF2[4] = he ∧
+      bird(ENTITY[6]) ∧
+       REF3[8] = his ∧
+        is_garden_POS(ENTITY[7], REF3[8]) ∧
+         is_FACT_THAT(SITUATION[3],
+          had_heard(EVENT[5], REF2[4], sing(EVENT[9], ENTITY[6]) ∧ in(EVENT[9]) = ENTITY[7])) ∧
+          REF4[10] = him ∧
+           is_so_long_since(ATTRIB[2], SITUATION[3]) ∧
+            is_so_long_THAT(ATTRIB[2],
+             seemed(EVENT[11], copula(EVENT[15], _, ENTITY[12]) ∧ in(EVENT[15]) = ENTITY[14]) ∧
+              to(EVENT[11]) = REF4[10]) ∧
+            past(EVENT[5]) ∧
+             past(EVENT[11]) ∧ past(EVENT[16]) ∧ copula(EVENT[16], REF1[1], ATTRIB[2]))
+
+# ::id 62_childrens_WILDE-1888_2;AT13-5;NE
+# ::snt Then the Hail stopped dancing over his head ,
+∃ REF1[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ Hail(ENTITY[1]) ∧
+  REF1[3] = his ∧
+   is_head_POS(ENTITY[2], REF1[3]) ∧
+    TMP_then(EVENT[4]) ∧ past(EVENT[4]) ∧ stopped_dancing(EVENT[4], ENTITY[1]) ∧ over(EVENT[4]) = ENTITY[2])
+
+# ::id 63_childrens_WILDE-1888_2;AT13-6;NE
+# ::snt and the North Wind ceased roaring ,
+∃ EVENT[3] ENTITY[2] ENTITY[1] (North_Wind(ENTITY[1]) ∧ roaring(ENTITY[2]) ∧ past(EVENT[3]) ∧ ceased(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 64_childrens_WILDE-1888_2;AT13-7;NE
+# ::snt and a delicious perfume came to him through the open casement .
+∃ REF1[3] ATTRIB[2] ATTRIB[5] EVENT[6] ENTITY[1] ENTITY[4] (
+ open(ATTRIB[5]) ∧
+  is_casement_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   delicious(ATTRIB[2]) ∧
+    is_perfume_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     REF1[3] = him ∧
+      past(EVENT[6]) ∧
+       came(EVENT[6], ENTITY[1]) ∧ through(EVENT[6]) = ENTITY[4] ∧ to(EVENT[6]) = REF1[3])
+
+# ::id 65_childrens_WILDE-1888_2;AT13-8;NE
+# ::snt " I believe the Spring has come at last , " said the Giant ;
+∃ ATTRIB[6] REF1[3] EVENT[7] EVENT[4] EVENT[2] ENTITY[5] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  Spring(ENTITY[5]) ∧
+   REF1[3] = i ∧
+    ADV_last(ATTRIB[6]) ∧
+     past(EVENT[2]) ∧
+      said(EVENT[2], ENTITY[1],
+       believe(EVENT[4], REF1[3], has_come(EVENT[7], ENTITY[5]) ∧ at(EVENT[7]) = ATTRIB[6])))
+
+# ::id 66_childrens_WILDE-1888_2;AT13-9;NE
+# ::snt and he jumped out of bed and looked out .
+∃ REF1[1] EVENT[3] EVENT[4] ENTITY[2] (
+ REF1[1] = he ∧
+  bed(ENTITY[2]) ∧
+   past(EVENT[3]) ∧
+    past(EVENT[4]) ∧
+     CONJ_and(jumped_out(EVENT[3], REF1[1]) ∧ of(EVENT[3]) = ENTITY[2], looked_out(EVENT[4], REF1[1])))
+
+# ::id 67_childrens_WILDE-1888_2;AT14-1;NE
+# ::snt What did he see ?
+QUEST(∃ REF1[2] EVENT[3] ? ENTITY[1] (REF1[2] = he ∧ past(EVENT[3]) ∧ did_see(EVENT[3], REF1[2], ENTITY[1])))
+
+# ::id 68_childrens_WILDE-1888_2;AT15-1;NE
+# ::snt He saw a most wonderful sight .
+∃ REF1[1] (
+ REF1[1] = he ∧
+  MOST ATTRIB[3] ENTITY[2] ((wonderful(ATTRIB[3]) ∧ is_sight_ATTRIBUTE(ENTITY[2], ATTRIB[3])),
+   ∃ EVENT[4] (past(EVENT[4]) ∧ saw(EVENT[4], REF1[1], ENTITY[2]))))
+
+# ::id 69_childrens_WILDE-1888_2;AT15-2;NE
+# ::snt Through a little hole in the wall the children had crept in ,
+∃ ATTRIB[2] EVENT[5] ENTITY[1] ENTITY[3] GROUP[4] (
+ wall(ENTITY[3]) ∧
+  children(GROUP[4]) ∧
+   little(ATTRIB[2]) ∧
+    is_hole_in(ENTITY[1], ENTITY[3]) ∧ is_hole_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     past(EVENT[5]) ∧ had_crept_in(EVENT[5], GROUP[4]) ∧ Through(EVENT[5]) = ENTITY[1])
+
+# ::id 70_childrens_WILDE-1888_2;AT15-3;NE
+# ::snt and they were sitting in the branches of the trees .
+∃ REF1[1] EVENT[4] GROUP[3] GROUP[2] (
+ trees(GROUP[3]) ∧
+  is_branches_of(GROUP[2], GROUP[3]) ∧
+   REF1[1] = they ∧ past(EVENT[4]) ∧ were_sitting(EVENT[4], REF1[1]) ∧ in(EVENT[4]) = GROUP[2])
+
+# ::id 71_childrens_WILDE-1888_2;AT15-4;NE
+# ::snt In every tree that he could see there was a little child .
+∀ REF1[3] ENTITY[1] ((REF1[3] = he ∧ MD_could(∃ EVENT[4] see(EVENT[4], REF1[3], ENTITY[1])) ∧ tree(ENTITY[1])) →
+ ∃ ATTRIB[6] EVENT[7] ENTITY[5] (
+  little(ATTRIB[6]) ∧
+   is_child_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    past(EVENT[7]) ∧ copula(EVENT[7], ENTITY[5]) ∧ In(EVENT[7]) = ENTITY[1]))
+
+# ::id 72_childrens_WILDE-1888_2;AT15-5;NE
+# ::snt And the trees were so glad to have the children back again that they had covered themselves with blossoms , and were waving their arms gently above the children 's heads .
+∃ REF3[9] REF2[4] REF1[3] ATTRIB[2] GROUP[5] GROUP[10] GROUP[8] EVENT[6] EVENT[7] EVENT[12] GROUP[11] GROUP[1] (
+ trees(GROUP[1]) ∧
+  children(GROUP[11]) ∧
+   past(EVENT[6]) ∧
+    past(EVENT[7]) ∧
+     ADV_gently(EVENT[12]) ∧
+      past(EVENT[12]) ∧
+       REF1[3] = they ∧
+        REF2[4] = themselves ∧
+         blossoms(GROUP[5]) ∧
+          is_so_glad_THAT(ATTRIB[2], had_covered(EVENT[6], REF1[3], REF2[4]) ∧ with(EVENT[6]) = GROUP[5]) ∧
+           REF3[9] = their ∧
+            is_arms_POS(GROUP[8], REF3[9]) ∧
+             is_heads_POS(GROUP[10], GROUP[11]) ∧
+              CONJ_and(copula(EVENT[7], GROUP[1], ATTRIB[2]),
+               were_waving(EVENT[12], GROUP[1], GROUP[8]) ∧ above(EVENT[12]) = GROUP[10]))
+
+# ::id 73_childrens_WILDE-1888_2;AT15-6;NE
+# ::snt The birds were flying about and twittering with delight ,
+∃ ENTITY[3] EVENT[2] EVENT[4] GROUP[1] (
+ birds(GROUP[1]) ∧
+  past(EVENT[2]) ∧
+   past(EVENT[4]) ∧
+    delight(ENTITY[3]) ∧
+     CONJ_and(were_flying_about(EVENT[2], GROUP[1]), were_twittering(EVENT[4], GROUP[1]) ∧ with(EVENT[4]) = ENTITY[3]))
+
+# ::id 74_childrens_WILDE-1888_2;AT15-7;NE
+# ::snt and the flowers were looking up through the green grass and laughing .
+∃ ATTRIB[3] EVENT[4] EVENT[5] ENTITY[2] GROUP[1] (
+ flowers(GROUP[1]) ∧
+  green(ATTRIB[3]) ∧
+   is_grass_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[4]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(were_looking_up(EVENT[4], GROUP[1]) ∧ through(EVENT[4]) = ENTITY[2], were_laughing(EVENT[5], GROUP[1])))
+
+# ::id 75_childrens_WILDE-1888_2;AT15-8;NE
+# ::snt It was a lovely scene ,
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = it ∧
+  lovely(ATTRIB[3]) ∧ is_scene_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 76_childrens_WILDE-1888_2;AT15-9;NE
+# ::snt only in one corner it was still winter .
+∃ ENTITY[2] (
+ (CD_one(ENTITY[2]), corner(ENTITY[2])) ∧
+  ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+   ∃ REF1[3] EVENT[5] ENTITY[4] (
+    REF1[3] = it ∧
+     winter(ENTITY[4]) ∧
+      TMP_still(EVENT[5]) ∧
+       past(EVENT[5]) ∧ copula(EVENT[5], REF1[3], ENTITY[4]) ∧ in(EVENT[5]) = ENTITY[1])))
+
+# ::id 77_childrens_WILDE-1888_2;AT15-10;NE
+# ::snt It was the farthest corner of the garden ,
+∃ REF1[1] ATTRIB[3] EVENT[5] ENTITY[4] ENTITY[2] (
+ farthest(ATTRIB[3]) ∧
+  garden(ENTITY[4]) ∧
+   is_corner_of(ENTITY[2], ENTITY[4]) ∧ is_corner_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    REF1[1] = it ∧ past(EVENT[5]) ∧ copula(EVENT[5], REF1[1], ENTITY[2]))
+
+# ::id 78_childrens_WILDE-1888_2;AT15-11;NE
+# ::snt and in it was standing a little boy .
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = it ∧
+  little(ATTRIB[3]) ∧
+   is_boy_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[4]) ∧ was_standing(EVENT[4], ENTITY[2]) ∧ in(EVENT[4]) = REF1[1])
+
+# ::id 79_childrens_WILDE-1888_2;AT16-1;NE
+# ::snt He was so small that he could not reach up to the branches of the tree ,
+∃ REF2[3] ATTRIB[2] REF1[1] EVENT[7] ENTITY[5] GROUP[4] (
+ tree(ENTITY[5]) ∧
+  is_branches_of(GROUP[4], ENTITY[5]) ∧
+   REF1[1] = he ∧
+    REF2[3] = he ∧
+     is_so_small_THAT(ATTRIB[2], MD_could(¬ ∃ EVENT[6] (reach_up(EVENT[6], REF2[3]) ∧ to(EVENT[6]) = GROUP[4]))) ∧
+      past(EVENT[7]) ∧ copula(EVENT[7], REF1[1], ATTRIB[2]))
+
+# ::id 80_childrens_WILDE-1888_2;AT16-2;NE
+# ::snt and he was wandering all round it , crying bitterly .
+∃ REF2[2] REF1[1] EVENT[5] EVENT[3] (
+ REF1[1] = he ∧
+  REF2[2] = it ∧
+   past(EVENT[5]) ∧
+    ADV_bitterly(EVENT[3]) ∧
+     CONJ_and(was_wandering(EVENT[5], REF1[1]) ∧ all_round(EVENT[5]) = REF2[2], crying(EVENT[3], REF1[1])))
+
+# ::id 81_childrens_WILDE-1888_2;AT16-3;NE
+# ::snt The poor tree was still quite covered with frost and snow ,
+∃ ATTRIB[2] EVENT[6] GROUP[3] ENTITY[1] (
+ poor(ATTRIB[2]) ∧
+  is_tree_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ENTITY[4] (frost(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (snow(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ADV_still_quite(EVENT[6]) ∧
+     past(EVENT[6]) ∧ covered(EVENT[6], _, ENTITY[1]) ∧ with(EVENT[6]) = GROUP[3])
+
+# ::id 82_childrens_WILDE-1888_2;AT16-4;NE
+# ::snt and the North Wind was blowing and roaring above it .
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ North_Wind(ENTITY[1]) ∧
+  REF1[2] = it ∧ past(EVENT[3]) ∧ was_blowing_and_roaring(EVENT[3], ENTITY[1]) ∧ above(EVENT[3]) = REF1[2])
+
+# ::id 83_childrens_WILDE-1888_2;AT16-5;NE
+# ::snt " Climb up ! little boy , " said the Tree ,
+∃ EVENT[2] ENTITY[1] (
+ Tree(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], ENTITY[1],
+    IMPERATIVE(∃ ATTRIB[4] EVENT[5] ENTITY[3] (little(ATTRIB[4]) ∧ is_boy_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ climb_up(EVENT[5], ENTITY[3])))))
+
+# ::id 84_childrens_WILDE-1888_2;AT16-6;NE
+# ::snt and it bent its branches down as low as it could ;
+∃ SITUATION[8] REF3[6] REF2[3] REF1[1] EVENT[9] DEGREE[4] GROUP[2] (
+ REF1[1] = it ∧
+  REF2[3] = its ∧
+   is_branches_POS(GROUP[2], REF2[3]) ∧
+    REF3[6] = it ∧
+     is_FACT_THAT(SITUATION[8], MD_could(∃ EVENT[7] xxx(EVENT[7], REF3[6]))) ∧
+      ADV_down(EVENT[9]) ∧
+       is_ADV(SITUATION[8], DEGREE[4]) ∧
+        is_ADV_as_low_as(EVENT[9], DEGREE[4]) ∧ past(EVENT[9]) ∧ bent(EVENT[9], REF1[1], GROUP[2]))
+
+# ::id 85_childrens_WILDE-1888_2;AT16-7;NE
+# ::snt but the boy was too tiny .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (boy(ENTITY[1]) ∧ too_tiny(ATTRIB[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 86_childrens_WILDE-1888_2;AT17-1;NE
+# ::snt And the Giant 's heart melted as he looked out .
+∃ REF1[4] SITUATION[3] EVENT[5] EVENT[7] ENTITY[1] ENTITY[2] (
+ Giant(ENTITY[2]) ∧
+  is_heart_POS(ENTITY[1], ENTITY[2]) ∧
+   REF1[4] = he ∧
+    is_FACT_THAT(SITUATION[3], looked(EVENT[5], REF1[4])) ∧
+     ADV_out(EVENT[5]) ∧
+      past(EVENT[5]) ∧ past(EVENT[7]) ∧ melted(EVENT[7], ENTITY[1]) ∧ as(EVENT[7]) = SITUATION[3])
+
+# ::id 87_childrens_WILDE-1888_2;AT17-2;NE
+# ::snt " How selfish I have been ! " he said ;
+∃ REF2[1] EVENT[2] (
+ REF2[1] = he ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], REF2[1],
+    EXCLAMATIVE(∃ REF1[4] ATTRIB[3] EVENT[5] (REF1[4] = i ∧ selfish(ATTRIB[3]) ∧ have_copula(EVENT[5], REF1[4], ATTRIB[3])))))
+
+# ::id 88_childrens_WILDE-1888_2;AT17-3;NE
+# ::snt " now I know why the Spring would not come here .
+∃ SITUATION[7] REF1[1] EVENT[8] ENTITY[2] ENTITY[4] (
+ Spring(ENTITY[4]) ∧
+  REF1[1] = i ∧
+   is_FACT_THAT(SITUATION[7], MD_would(¬ ∃ EVENT[5] (LOC_here(EVENT[5]) ∧ come(EVENT[5], ENTITY[4])))) ∧
+    TMP_now(EVENT[8]) ∧ is_ADV(SITUATION[7], ENTITY[2]) ∧ know(EVENT[8], REF1[1], ENTITY[2]))
+
+# ::id 89_childrens_WILDE-1888_2;AT17-4;NE
+# ::snt I will put that poor little boy on the top of the tree ,
+∃ REF1[1] ATTRIB[4] ATTRIB[3] ENTITY[6] ENTITY[5] ENTITY[2] (
+ poor(ATTRIB[3]) ∧
+  little(ATTRIB[4]) ∧
+   is_boy_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_boy_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    tree(ENTITY[6]) ∧
+     is_top_of(ENTITY[5], ENTITY[6]) ∧
+      REF1[1] = i ∧
+       MD_will(∃ EVENT[7] (put(EVENT[7], REF1[1], ENTITY[2]) ∧ on(EVENT[7]) = ENTITY[5])))
+
+# ::id 90_childrens_WILDE-1888_2;AT17-5;NE
+# ::snt and then I will knock down the wall ,
+∃ SITUATION[4] REF1[1] ENTITY[2] (
+ wall(ENTITY[2]) ∧
+  REF1[1] = i ∧ TMP_then(SITUATION[4]) ∧ is_FACT_THAT(SITUATION[4], MD_will(∃ EVENT[3] knock_down(EVENT[3], REF1[1], ENTITY[2]))))
+
+# ::id 91_childrens_WILDE-1888_2;AT17-6;NE
+# ::snt and my garden shall be the children 's playground for ever and ever . "
+∃ REF1[2] ENTITY[1] GROUP[4] (
+ children(GROUP[4]) ∧
+  REF1[2] = my ∧
+   is_garden_POS(ENTITY[1], REF1[2]) ∧
+    MD_shall(∃ EVENT[8] GROUP[5] ENTITY[3] (
+          is_playground_POS(ENTITY[3], GROUP[4]) ∧
+           ∃ ENTITY[6] (ADV_ever(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+            ∃ ENTITY[7] (ADV_ever(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+            copula(EVENT[8], ENTITY[1], ENTITY[3]) ∧ for(EVENT[8]) = GROUP[5])))
+
+# ::id 92_childrens_WILDE-1888_2;AT17-7;NE
+# ::snt He was really very sorry for what he had done .
+∃ REF2[5] ATTRIB[2] REF1[1] EVENT[6] EVENT[7] ENTITY[3] (
+ REF1[1] = he ∧
+  REF2[5] = he ∧
+   had_done(EVENT[6], REF2[5], ENTITY[3]) ∧
+    is_really_very_sorry_for(ATTRIB[2], ENTITY[3]) ∧
+     past(EVENT[6]) ∧ past(EVENT[7]) ∧ copula(EVENT[7], REF1[1], ATTRIB[2]))
+
+# ::id 93_childrens_WILDE-1888_2;AT18-1;NE
+# ::snt So he crept downstairs and opened the front door quite softly , and went out into the garden .
+∃ SITUATION[9] REF1[1] EVENT[3] EVENT[5] EVENT[8] ENTITY[2] ENTITY[4] ENTITY[7] (
+ front_door(ENTITY[4]) ∧
+  garden(ENTITY[7]) ∧
+   REF1[1] = he ∧
+    ADV_so(SITUATION[9]) ∧
+     past(EVENT[3]) ∧
+      ADV_quite_softly(EVENT[5]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[8]) ∧
+         is_FACT_THAT(SITUATION[9],
+          CONJ_and(crept(EVENT[3], REF1[1]) ∧ down(EVENT[3]) = ENTITY[2],
+           opened(EVENT[5], REF1[1], ENTITY[4]),
+           went_out(EVENT[8], REF1[1]) ∧ into(EVENT[8]) = ENTITY[7])))
+
+# ::id 94_childrens_WILDE-1888_2;AT18-2;NE
+# ::snt But when the children saw him they were so frightened that they all ran away ,
+∃ SITUATION[12] REF3[8] ATTRIB[7] REF2[6] REF1[3] EVENT[4] EVENT[9] EVENT[11] GROUP[2] (
+ children(GROUP[2]) ∧
+  REF1[3] = him ∧
+   REF2[6] = they ∧
+    REF3[8] = they ∧
+     is_so_frightened_THAT(ATTRIB[7], ran(EVENT[9], REF3[8])) ∧
+      is_TMP(EVENT[4], SITUATION[12]) ∧
+       past(EVENT[4]) ∧
+        saw(EVENT[4], GROUP[2], REF1[3]) ∧
+         DIR_away(EVENT[9]) ∧
+          past(EVENT[9]) ∧ past(EVENT[11]) ∧ is_FACT_THAT(SITUATION[12], copula(EVENT[11], REF2[6], ATTRIB[7])))
+
+# ::id 95_childrens_WILDE-1888_2;AT18-3;NE
+# ::snt and the garden became winter again .
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ garden(ENTITY[1]) ∧
+  winter(ENTITY[2]) ∧ TMP_again(EVENT[3]) ∧ past(EVENT[3]) ∧ became(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 96_childrens_WILDE-1888_2;AT18-4;NE
+# ::snt Only the little boy did not run , for his eyes were so full of tears that he did not see the Giant coming .
+∃ ATTRIB[3] ENTITY[2] (
+ little(ATTRIB[3]) ∧
+  is_boy_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+    ∃ ENTITY[11] (
+     Giant(ENTITY[11]) ∧
+      ¬ ∃ REF2[9] ATTRIB[7] REF1[6] SITUATION[4] EVENT[14] EVENT[15] GROUP[8] GROUP[5] (
+            REF1[6] = his ∧
+             is_eyes_POS(GROUP[5], REF1[6]) ∧
+              tears(GROUP[8]) ∧
+               REF2[9] = he ∧
+                is_so_full_of(ATTRIB[7], GROUP[8]) ∧
+                 is_so_full_THAT(ATTRIB[7],
+                  ¬ ∃ SITUATION[10] EVENT[12] EVENT[13] (
+                        is_FACT_THAT(SITUATION[10], coming(EVENT[12], ENTITY[11])) ∧
+                         past(EVENT[13]) ∧ did_see(EVENT[13], REF2[9], SITUATION[10]))) ∧
+                 is_FACT_THAT(SITUATION[4], copula(EVENT[14], GROUP[5], ATTRIB[7])) ∧
+                  past(EVENT[14]) ∧
+                   past(EVENT[15]) ∧
+                    did_run(EVENT[15], ENTITY[1]) ∧ for(EVENT[15]) = SITUATION[4]))))
+
+# ::id 97_childrens_WILDE-1888_2;AT18-5;NE
+# ::snt And the Giant stole up behind him and took him gently in his hand , and put him up into the tree .
+∃ REF4[9] REF3[6] REF2[4] REF1[2] EVENT[3] EVENT[7] EVENT[11] ENTITY[5] ENTITY[10] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  tree(ENTITY[10]) ∧
+   REF1[2] = him ∧
+    REF2[4] = him ∧
+     REF3[6] = his ∧
+      is_hand_POS(ENTITY[5], REF3[6]) ∧
+       REF4[9] = him ∧
+        past(EVENT[3]) ∧
+         ADV_gently(EVENT[7]) ∧
+          past(EVENT[7]) ∧
+           past(EVENT[11]) ∧
+            CONJ_and(stole_up(EVENT[3], ENTITY[1]) ∧ behind(EVENT[3]) = REF1[2],
+             took(EVENT[7], ENTITY[1], REF2[4]) ∧ in(EVENT[7]) = ENTITY[5],
+             put(EVENT[11], ENTITY[1], REF4[9]) ∧ up_into(EVENT[11]) = ENTITY[10]))
+
+# ::id 98_childrens_WILDE-1888_2;AT18-6;NE
+# ::snt And the tree broke at once into blossom ,
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ tree(ENTITY[1]) ∧
+  ADV_once(ATTRIB[2]) ∧
+   blossom(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     broke(EVENT[4], ENTITY[1]) ∧ into(EVENT[4]) = ENTITY[3] ∧ at(EVENT[4]) = ATTRIB[2])
+
+# ::id 99_childrens_WILDE-1888_2;AT18-7;NE
+# ::snt and the birds came and sang on it ,
+∃ REF1[2] EVENT[3] EVENT[4] GROUP[1] (
+ birds(GROUP[1]) ∧
+  past(EVENT[3]) ∧
+   past(EVENT[4]) ∧
+    REF1[2] = it ∧
+     CONJ_and(came(EVENT[3], GROUP[1]) ∧ on(EVENT[3]) = REF1[2],
+      sang(EVENT[4], GROUP[1]) ∧ on(EVENT[4]) = REF1[2]))
+
+# ::id 100_childrens_WILDE-1888_2;AT18-8;NE
+# ::snt and the little boy stretched out his two arms and flung them round the Giant 's neck , and kissed him .
+∃ REF3[10] REF2[6] REF1[4] ATTRIB[2] EVENT[5] EVENT[9] EVENT[11] GROUP[3] ENTITY[7] ENTITY[8] ENTITY[1] (
+ little(ATTRIB[2]) ∧
+  is_boy_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   Giant(ENTITY[8]) ∧
+    REF1[4] = his ∧
+     (CD_two(GROUP[3]), is_arms_POS(GROUP[3], REF1[4])) ∧
+      REF2[6] = them ∧
+       is_neck_POS(ENTITY[7], ENTITY[8]) ∧
+        REF3[10] = him ∧
+         past(EVENT[5]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[11]) ∧
+            CONJ_and(stretched_out(EVENT[5], ENTITY[1], GROUP[3]),
+             flung(EVENT[9], ENTITY[1], REF2[6]) ∧ round(EVENT[9]) = ENTITY[7],
+             kissed(EVENT[11], ENTITY[1], REF3[10])))
+
+# ::id 101_childrens_WILDE-1888_2;AT18-9;NE
+# ::snt And the other children , when they saw that the Giant was not wicked any longer , came running back ,
+∃ SITUATION[13] REF1[4] ATTRIB[2] EVENT[5] EVENT[11] ENTITY[6] GROUP[1] (
+ other(ATTRIB[2]) ∧
+  is_children_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   Giant(ENTITY[6]) ∧
+    REF1[4] = they ∧
+     is_TMP(EVENT[5], SITUATION[13]) ∧
+      past(EVENT[5]) ∧
+       saw(EVENT[5], REF1[4],
+        ¬ ∃ ATTRIB[7] EVENT[8] (
+              wicked(ATTRIB[7]) ∧
+               TMP_any_longer(EVENT[8]) ∧
+                is_before(EVENT[8], EVENT[5]) ∧ copula(EVENT[8], ENTITY[6], ATTRIB[7]))) ∧
+        ADV_back(EVENT[11]) ∧ past(EVENT[11]) ∧ is_FACT_THAT(SITUATION[13], came_running(EVENT[11], GROUP[1])))
+
+# ::id 102_childrens_WILDE-1888_2;AT18-10;NE
+# ::snt and with them came the Spring .
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ Spring(ENTITY[2]) ∧
+  REF1[1] = them ∧ past(EVENT[3]) ∧ came(EVENT[3], ENTITY[2]) ∧ with(EVENT[3]) = REF1[1])
+
+# ::id 103_childrens_WILDE-1888_2;AT18-11;NE
+# ::snt " It is your garden now , little children , " said the Giant ,
+∃ group[7] REF1[5] ATTRIB[4] EVENT[8] EVENT[2] ENTITY[6] GROUP[3] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  little(ATTRIB[4]) ∧
+   is_children_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+    REF1[5] = it ∧
+     group[7] = your ∧
+      is_garden_POS(ENTITY[6], group[7]) ∧
+       TMP_now(EVENT[8]) ∧
+        past(EVENT[2]) ∧
+         said(EVENT[2], ENTITY[1], copula(EVENT[8], REF1[5], ENTITY[6]) ∧ VOC(EVENT[8]) = GROUP[3]))
+
+# ::id 104_childrens_WILDE-1888_2;AT18-12;NE
+# ::snt and he took a great axe and knocked down the wall .
+∃ ATTRIB[3] REF1[1] EVENT[4] EVENT[6] ENTITY[2] ENTITY[5] (
+ wall(ENTITY[5]) ∧
+  REF1[1] = he ∧
+   great(ATTRIB[3]) ∧
+    is_axe_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[6]) ∧ CONJ_and(took(EVENT[4], REF1[1], ENTITY[2]), knocked_down(EVENT[6], REF1[1], ENTITY[5])))
+
+# ::id 105_childrens_WILDE-1888_2;AT18-13;NE
+# ::snt And when the people were going to market at twelve o'clock they found the Giant playing with the children in the most beautiful garden they had ever seen .
+∃ SITUATION[19] SITUATION[8] REF1[7] REF2[14] ATTRIB[12] EVENT[5] EVENT[17] EVENT[18] ENTITY[4] ENTITY[3] EVENT[15] GROUP[2] ENTITY[11] GROUP[10] ENTITY[9] (
+ people(GROUP[2]) ∧
+  Giant(ENTITY[9]) ∧
+   children(GROUP[10]) ∧
+    most_beautiful(ATTRIB[12]) ∧
+     REF2[14] = they ∧
+      had_seen(EVENT[15], REF2[14], ENTITY[11]) ∧ is_garden_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+       TMP_ever(EVENT[15]) ∧
+        past(EVENT[15]) ∧
+         market(ENTITY[3]) ∧
+          CD_twelve(ENTITY[4]) ∧
+           REF1[7] = they ∧
+            is_FACT_THAT(SITUATION[8],
+             playing(EVENT[17], ENTITY[9]) ∧ in(EVENT[17]) = ENTITY[11] ∧
+              with(EVENT[17]) = GROUP[10]) ∧
+             is_TMP(EVENT[5], SITUATION[19]) ∧
+              past(EVENT[5]) ∧
+               were_going(EVENT[5], GROUP[2]) ∧ at(EVENT[5]) = ENTITY[4] ∧
+                to(EVENT[5]) = ENTITY[3] ∧
+                past(EVENT[18]) ∧ is_FACT_THAT(SITUATION[19], found(EVENT[18], REF1[7], SITUATION[8])))
+
+# ::id 106_childrens_WILDE-1888_2;AT19-1;NE
+# ::snt All day long they played ,
+ALL TIME[1] (day_long(TIME[1]),
+ ∃ REF1[2] EVENT[3] (
+  REF1[2] = they ∧
+   past(EVENT[3]) ∧ played(EVENT[3], REF1[2]) ∧ is_contained_in(TMP(EVENT[3]), TIME[1])))
+
+# ::id 107_childrens_WILDE-1888_2;AT19-2;NE
+# ::snt and in the evening they came to the Giant to bid him good-bye .
+∃ REF2[5] PRP[4] REF1[2] EVENT[7] EVENT[8] ENTITY[6] ENTITY[3] ENTITY[1] (
+ evening(ENTITY[1]) ∧
+  Giant(ENTITY[3]) ∧
+   REF1[2] = they ∧
+    REF2[5] = him ∧
+     good-bye(ENTITY[6]) ∧
+      is_FACT_THAT(PRP[4], bid(EVENT[7], REF1[2], ENTITY[6], REF2[5])) ∧
+       past(EVENT[8]) ∧
+        came(EVENT[8], REF1[2]) ∧ PRP(EVENT[8]) = PRP[4] ∧ to(EVENT[8]) = ENTITY[3] ∧
+         in(EVENT[8]) = ENTITY[1])
+
+# ::id 108_childrens_WILDE-1888_2;AT20-1;NE
+# ::snt " But where is your little companion ? " he said :
+∃ REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], REF1[1],
+    QUEST(∃ ATTRIB[6] REF2[5] EVENT[7] ENTITY[4] ? LOC[3] (
+          REF2[5] = your ∧
+           little(ATTRIB[6]) ∧
+            is_companion_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_companion_POS(ENTITY[4], REF2[5]) ∧
+             is_LOC(EVENT[7], LOC[3]) ∧ copula(EVENT[7], ENTITY[4])))))
+
+# ::id 109_childrens_WILDE-1888_2;AT20-2;NE
+# ::snt " the boy I put into the tree . "
+∃ REF1[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ boy(ENTITY[1]) ∧
+  tree(ENTITY[3]) ∧
+   REF1[2] = i ∧ put(EVENT[4], REF1[2], ENTITY[1]) ∧ into(EVENT[4]) = ENTITY[3])
+
+# ::id 110_childrens_WILDE-1888_2;AT20-3;NE
+# ::snt The Giant loved him the best because he had kissed him .
+∃ REF3[6] REF2[5] REF1[2] ATTRIB[4] EVENT[7] EVENT[8] DEGREE[3] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  best(ATTRIB[4]) ∧
+   is_ATTRIBUTE(DEGREE[3], ATTRIB[4]) ∧
+    REF1[2] = him ∧
+     REF2[5] = he ∧
+      REF3[6] = him ∧
+       past(EVENT[7]) ∧
+        past(EVENT[8]) ∧
+         CRD_because(had_kissed(EVENT[7], REF2[5], REF3[6]),
+          loved(EVENT[8], ENTITY[1], REF1[2]) ∧ MSR(EVENT[8]) = DEGREE[3]))
+
+# ::id 111_childrens_WILDE-1888_2;AT21-1;NE
+# ::snt " We do n't know , " answered the children ;
+∃ REF1[3] EVENT[2] GROUP[1] (
+ children(GROUP[1]) ∧
+  REF1[3] = we ∧ past(EVENT[2]) ∧ answered(EVENT[2], GROUP[1], ¬ ∃ EVENT[4] do_know(EVENT[4], REF1[3])))
+
+# ::id 112_childrens_WILDE-1888_2;AT21-2;NE
+# ::snt " he has gone away . "
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ DIR_away(EVENT[2]) ∧ has_gone(EVENT[2], REF1[1]))
+
+# ::id 113_childrens_WILDE-1888_2;AT22-1;NE
+# ::snt " You must tell him to be sure come here to-morrow , " said the Giant .
+∃ REF1[3] EVENT[2] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  REF1[3] = you ∧
+   past(EVENT[2]) ∧
+    said(EVENT[2], ENTITY[1],
+     MD_must(∃ ATTRIB[6] REF2[4] EVENT[8] EVENT[10] EVENT[5] TIME[7] (
+           REF2[4] = him ∧
+            to-morrow(TIME[7]) ∧
+             is_sure_to(ATTRIB[6], come(EVENT[8]) ∧ is_contained_in(TMP(EVENT[8]), TIME[7])) ∧
+              LOC_here(EVENT[8]) ∧
+               tell(EVENT[5], REF1[3], REF2[4], copula(EVENT[10], REF2[4], ATTRIB[6]))))))
+
+# ::id 114_childrens_WILDE-1888_2;AT22-2;NE
+# ::snt But the children said that they did not know where he lived , and had never seen him before ;
+∃ REF3[9] REF1[3] EVENT[10] EVENT[2] GROUP[1] (
+ children(GROUP[1]) ∧
+  REF1[3] = they ∧
+   REF3[9] = him ∧
+    TMP_never(EVENT[10]) ∧
+     TMP_before(EVENT[10]) ∧
+      is_before(EVENT[10], EVENT[2]) ∧
+       past(EVENT[2]) ∧
+        said(EVENT[2], GROUP[1],
+         CONJ_and(¬ ∃ EVENT[4] (
+                    is_before(EVENT[4], EVENT[2]) ∧
+                     did_know(EVENT[4], REF1[3],
+                      QUEST(∃ REF2[6] EVENT[7] ? LOC[5] (
+                            REF2[6] = he ∧
+                             is_LOC(EVENT[7], LOC[5]) ∧
+                              is_before(EVENT[7], EVENT[4]) ∧ lived(EVENT[7], REF2[6]))))),
+          had_seen(EVENT[10], REF1[3], REF3[9]))))
+
+# ::id 115_childrens_WILDE-1888_2;AT22-3;NE
+# ::snt and the Giant felt very sad .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (Giant(ENTITY[1]) ∧ very_sad(ATTRIB[2]) ∧ past(EVENT[3]) ∧ felt(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 116_childrens_WILDE-1888_2;AT23-1;NE
+# ::snt Every afternoon , when school was over , the children came and played with the Giant .
+∃ ENTITY[7] GROUP[5] (
+ children(GROUP[5]) ∧
+  Giant(ENTITY[7]) ∧
+   ∀ TIME[1] (afternoon(TIME[1]) →
+    ∀ EVENT[3] ENTITY[2] CND_when(school(ENTITY[2]) ∧ ADV_over(EVENT[3]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], ENTITY[2]),
+        ∃ EVENT[6] EVENT[8] (
+         past(EVENT[6]) ∧
+          past(EVENT[8]) ∧
+           CONJ_and(came(EVENT[6], GROUP[5]) ∧ is_contained_in(TMP(EVENT[6]), TIME[1]),
+            played(EVENT[8], GROUP[5]) ∧ with(EVENT[8]) = ENTITY[7] ∧
+             is_contained_in(TMP(EVENT[8]), TIME[1]))))))
+
+# ::id 117_childrens_WILDE-1888_2;AT23-2;NE
+# ::snt But the little boy whom the Giant loved was never seen again .
+∃ ATTRIB[2] EVENT[6] EVENT[5] ENTITY[4] ENTITY[1] (
+ little(ATTRIB[2]) ∧
+  Giant(ENTITY[4]) ∧
+   loved(EVENT[5], ENTITY[4], ENTITY[1]) ∧ is_boy_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[5]) ∧
+     TMP_never(EVENT[6]) ∧ TMP_again(EVENT[6]) ∧ past(EVENT[6]) ∧ was_seen(EVENT[6], ENTITY[1]))
+
+# ::id 118_childrens_WILDE-1888_2;AT23-3;NE
+# ::snt The Giant was very kind to all the children ,
+∃ ATTRIB[2] EVENT[4] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  very_kind(ATTRIB[2]) ∧ ALL GROUP[3] (children(GROUP[3]), is_to(ATTRIB[2], GROUP[3])) ∧
+   past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ATTRIB[2]))
+
+# ::id 119_childrens_WILDE-1888_2;AT23-4;NE
+# ::snt yet he longed for his first little friend , and often spoke of him .
+∃ SITUATION[10] REF3[7] ATTRIB[5] ATTRIB[4] REF2[3] REF1[1] EVENT[6] EVENT[8] ENTITY[2] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   first(ATTRIB[4]) ∧
+    little(ATTRIB[5]) ∧
+     is_friend_ATTRIBUTE(ENTITY[2], ATTRIB[5]) ∧ is_friend_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_friend_POS(ENTITY[2], REF2[3]) ∧
+      REF3[7] = him ∧
+       ADV_yet(SITUATION[10]) ∧
+        past(EVENT[6]) ∧
+         TMP_often(EVENT[8]) ∧
+          past(EVENT[8]) ∧
+           is_FACT_THAT(SITUATION[10],
+            CONJ_and(longed(EVENT[6], REF1[1]) ∧ for(EVENT[6]) = ENTITY[2],
+             spoke(EVENT[8], REF1[1]) ∧ of(EVENT[8]) = REF3[7])))
+
+# ::id 120_childrens_WILDE-1888_2;AT23-5;NE
+# ::snt " How I would like to see him ! " he used to say .
+∃ REF1[1] EVENT[3] EVENT[2] (
+ REF1[1] = he ∧
+  past(EVENT[2]) ∧
+   used(EVENT[2], REF1[1],
+    say(EVENT[3], REF1[1],
+     EXCLAMATIVE(∃ SITUATION[9] REF2[5] ENTITY[4] (
+           REF2[5] = i ∧
+            is_ADV(SITUATION[9], ENTITY[4]) ∧
+             is_FACT_THAT(SITUATION[9],
+              MD_would(∃ REF3[7] EVENT[8] EVENT[6] (
+                    REF3[7] = him ∧
+                     like(EVENT[6], REF2[5], see(EVENT[8], REF2[5], REF3[7]))))))))))
+
+# ::id 121_childrens_WILDE-1888_2;AT24-1;NE
+# ::snt Years went over ,
+∃ EVENT[2] GROUP[1] (Years(GROUP[1]) ∧ past(EVENT[2]) ∧ went_over(EVENT[2], GROUP[1]))
+
+# ::id 122_childrens_WILDE-1888_2;AT24-2;NE
+# ::snt and the Giant grew very old and feeble .
+∃ ATTRIB[3] ATTRIB[2] EVENT[4] EVENT[4] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  very_old(ATTRIB[2]) ∧
+   feeble(ATTRIB[3]) ∧
+    past(EVENT[4]) ∧
+     past(EVENT[4]) ∧ CONJ_and(grew(EVENT[4], ENTITY[1], ATTRIB[2]), grew(EVENT[4], ENTITY[1], ATTRIB[3])))
+
+# ::id 123_childrens_WILDE-1888_2;AT24-3;NE
+# ::snt He could not play about any more , so he sat in a huge armchair , and watched the children at their games , and admired his garden .
+∃ REF1[1] GROUP[8] (
+ children(GROUP[8]) ∧
+  REF1[1] = he ∧
+   MD_could(¬ ANY_MORE TIME[2] ∃ REF4[13] REF3[10] ATTRIB[6] REF2[4] SITUATION[3] EVENT[7] EVENT[11] EVENT[14] EVENT[15] ENTITY[5] GROUP[9] ENTITY[12] (
+              REF2[4] = he ∧
+               huge(ATTRIB[6]) ∧
+                is_armchair_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+                 REF3[10] = their ∧
+                  is_games_POS(GROUP[9], REF3[10]) ∧
+                   REF4[13] = his ∧
+                    is_garden_POS(ENTITY[12], REF4[13]) ∧
+                     is_FACT_THAT(SITUATION[3],
+                      CONJ_and(sat(EVENT[7], REF2[4]) ∧ in(EVENT[7]) = ENTITY[5],
+                       watched(EVENT[11], REF2[4], GROUP[8]) ∧ at(EVENT[11]) = GROUP[9],
+                       admired(EVENT[14], REF2[4], ENTITY[12]))) ∧
+                      past(EVENT[7]) ∧
+                       past(EVENT[11]) ∧
+                        past(EVENT[14]) ∧
+                         play_about(EVENT[15], REF1[1]) ∧ so(EVENT[15]) = SITUATION[3] ∧
+                          is_contained_in(TMP(EVENT[15]), TIME[2]))))
+
+# ::id 124_childrens_WILDE-1888_2;AT24-4;NE
+# ::snt " I have many beautiful flowers , " he said ;
+∃ REF2[3] REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  REF2[3] = i ∧
+   past(EVENT[2]) ∧
+    said(EVENT[2], REF1[1],
+     MANY ATTRIB[5] GROUP[4] ((beautiful(ATTRIB[5]) ∧ is_flowers_ATTRIBUTE(GROUP[4], ATTRIB[5])), ∃ EVENT[6] have(EVENT[6], REF2[3], GROUP[4]))))
+
+# ::id 125_childrens_WILDE-1888_2;AT24-5;NE
+# ::snt " but the children are the most beautiful flowers of all . "
+∃ ATTRIB[3] GROUP[1] (
+ children(GROUP[1]) ∧
+  beautiful(ATTRIB[3]) ∧
+   MOST GROUP[2] (ALL ENTITY[4] (is_flowers_of(GROUP[2], ENTITY[4]) ∧ is_flowers_ATTRIBUTE(GROUP[2], ATTRIB[3])), ∃ EVENT[5] copula(EVENT[5], GROUP[1], GROUP[2])))
+
+# ::id 126_childrens_WILDE-1888_2;AT25-1;NE
+# ::snt One winter morning he looked out of his window as he was dressing .
+∃ REF3[6] SITUATION[5] REF2[4] REF1[2] EVENT[7] EVENT[8] ENTITY[3] TIME[1] (
+ (CD_one(TIME[1]), winter_morning(TIME[1])) ∧
+  REF1[2] = he ∧
+   REF2[4] = his ∧
+    is_window_POS(ENTITY[3], REF2[4]) ∧
+     REF3[6] = he ∧
+      is_FACT_THAT(SITUATION[5], was_dressing(EVENT[7], REF3[6])) ∧
+       past(EVENT[7]) ∧
+        past(EVENT[8]) ∧
+         looked_out(EVENT[8], REF1[2]) ∧ as(EVENT[8]) = SITUATION[5] ∧ of(EVENT[8]) = ENTITY[3] ∧
+          is_contained_in(TMP(EVENT[8]), TIME[1]))
+
+# ::id 127_childrens_WILDE-1888_2;AT25-2;NE
+# ::snt He did not hate the winter now , for he knew that it was merely the Spring asleep , and that the flowers were resting .
+∃ REF1[1] ENTITY[7] GROUP[11] ENTITY[2] (
+ winter(ENTITY[2]) ∧
+  Spring(ENTITY[7]) ∧
+   flowers(GROUP[11]) ∧
+    REF1[1] = he ∧
+     ¬ ∃ SITUATION[15] ATTRIB[12] REF3[6] REF2[4] SITUATION[3] EVENT[9] EVENT[13] EVENT[5] EVENT[14] ENTITY[8] (
+           REF2[4] = he ∧
+            REF3[6] = it ∧
+             sleep(ENTITY[8]) ∧
+              resting(ATTRIB[12]) ∧
+               is_FACT_THAT(SITUATION[3],
+                knew(EVENT[5], REF2[4],
+                 CONJ_and(copula(EVENT[9], REF3[6], ENTITY[7]) ∧ a(EVENT[9]) = ENTITY[8],
+                  copula(EVENT[13], GROUP[11], ATTRIB[12])))) ∧
+                TMP_now(SITUATION[15]) ∧
+                 ADV_merely(EVENT[9]) ∧
+                  is_before(EVENT[9], EVENT[5]) ∧
+                   is_before(EVENT[13], EVENT[5]) ∧
+                    past(EVENT[5]) ∧
+                     past(EVENT[14]) ∧
+                      is_FACT_THAT(SITUATION[15],
+                       did_hate(EVENT[14], REF1[1], ENTITY[2]) ∧ for(EVENT[14]) = SITUATION[3])))
+
+# ::id 128_childrens_WILDE-1888_2;AT26-1;NE
+# ::snt Suddenly he rubbed his eyes in wonder and looked and looked .
+∃ SITUATION[8] REF2[3] REF1[1] EVENT[5] EVENT[6] EVENT[7] ENTITY[4] GROUP[2] (
+ REF1[1] = he ∧
+  REF2[3] = his ∧
+   is_eyes_POS(GROUP[2], REF2[3]) ∧
+    wonder(ENTITY[4]) ∧
+     ADV_suddenly(SITUATION[8]) ∧
+      past(EVENT[5]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[7]) ∧
+         is_FACT_THAT(SITUATION[8],
+          CONJ_and(rubbed(EVENT[5], REF1[1], GROUP[2]) ∧ in(EVENT[5]) = ENTITY[4],
+           CONJ_and(looked(EVENT[6], REF1[1]), looked(EVENT[7], REF1[1])))))
+
+# ::id 129_childrens_WILDE-1888_2;AT26-2;NE
+# ::snt It certainly was a marvellous sight .
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = it ∧
+  marvellous(ATTRIB[3]) ∧
+   is_sight_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    ADV_certainly(EVENT[4]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 130_childrens_WILDE-1888_2;AT26-3;NE
+# ::snt In the farthest corner of the garden was a tree quite covered with lovely white blossoms .
+∃ ATTRIB[7] ATTRIB[6] ATTRIB[2] EVENT[8] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ farthest(ATTRIB[2]) ∧
+  garden(ENTITY[3]) ∧
+   is_corner_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_corner_of(ENTITY[1], ENTITY[3]) ∧
+    tree(ENTITY[4]) ∧
+     lovely(ATTRIB[6]) ∧
+      white(ATTRIB[7]) ∧
+       is_blossoms_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_blossoms_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+        ADV_quite(EVENT[8]) ∧
+         past(EVENT[8]) ∧
+          covered(EVENT[8], _, ENTITY[4]) ∧ with(EVENT[8]) = GROUP[5] ∧
+           In(EVENT[8]) = ENTITY[1])
+
+# ::id 131_childrens_WILDE-1888_2;AT26-4;NE
+# ::snt Its branches were all golden ,
+∃ ATTRIB[3] REF1[2] EVENT[4] GROUP[1] (
+ REF1[2] = its ∧
+  is_branches_POS(GROUP[1], REF1[2]) ∧ all_golden(ATTRIB[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], GROUP[1], ATTRIB[3]))
+
+# ::id 132_childrens_WILDE-1888_2;AT26-5;NE
+# ::snt and silver fruit hung down from them ,
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ silver_fruit(ENTITY[1]) ∧
+  REF1[2] = them ∧ past(EVENT[3]) ∧ hung_down(EVENT[3], ENTITY[1]) ∧ from(EVENT[3]) = REF1[2])
+
+# ::id 133_childrens_WILDE-1888_2;AT26-6;NE
+# ::snt and underneath it stood the little boy he had loved .
+∃ REF1[1] REF2[5] ATTRIB[3] EVENT[7] EVENT[6] ENTITY[2] (
+ little(ATTRIB[3]) ∧
+  REF2[5] = he ∧
+   had_loved(EVENT[6], REF2[5], ENTITY[2]) ∧ is_boy_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[6]) ∧
+     REF1[1] = it ∧ past(EVENT[7]) ∧ stood(EVENT[7], ENTITY[2]) ∧ underneath(EVENT[7]) = REF1[1])
+
+# ::id 134_childrens_WILDE-1888_2;AT27-1;NE
+# ::snt Downstairs ran the Giant in great joy , and out into the garden .
+∃ ATTRIB[4] EVENT[6] EVENT[6] ENTITY[3] ENTITY[1] ENTITY[5] ENTITY[2] (
+ Giant(ENTITY[2]) ∧
+  garden(ENTITY[5]) ∧
+   great(ATTRIB[4]) ∧
+    is_joy_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     past(EVENT[6]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(ran(EVENT[6], ENTITY[2]) ∧ in(EVENT[6]) = ENTITY[3] ∧ Down(EVENT[6]) = ENTITY[1],
+        ran(EVENT[6], ENTITY[2]) ∧ out_into(EVENT[6]) = ENTITY[5] ∧ Down(EVENT[6]) = ENTITY[1]))
+
+# ::id 135_childrens_WILDE-1888_2;AT27-2;NE
+# ::snt He hastened across the grass , and came near to the child .
+∃ ATTRIB[4] REF1[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] (
+ grass(ENTITY[2]) ∧
+  child(ENTITY[5]) ∧
+   REF1[1] = he ∧
+    is_near_to(ATTRIB[4], ENTITY[5]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(hastened(EVENT[3], REF1[1]) ∧ across(EVENT[3]) = ENTITY[2],
+        came(EVENT[6], REF1[1]) ∧ LOC(EVENT[6]) = ATTRIB[4]))
+
+# ::id 136_childrens_WILDE-1888_2;AT27-3;NE
+# ::snt And when he came quite close his face grew red with anger ,
+∃ SITUATION[11] ATTRIB[8] REF2[7] REF1[2] EVENT[3] EVENT[10] ENTITY[9] ENTITY[6] (
+ REF1[2] = he ∧
+  REF2[7] = his ∧
+   is_face_POS(ENTITY[6], REF2[7]) ∧
+    anger(ENTITY[9]) ∧
+     is_red_with(ATTRIB[8], ENTITY[9]) ∧
+      is_TMP(EVENT[3], SITUATION[11]) ∧
+       ADV_quite_close(EVENT[3]) ∧
+        past(EVENT[3]) ∧
+         came(EVENT[3], REF1[2]) ∧
+          past(EVENT[10]) ∧ is_FACT_THAT(SITUATION[11], grew(EVENT[10], ENTITY[6], ATTRIB[8])))
+
+# ::id 137_childrens_WILDE-1888_2;AT27-4;NE
+# ::snt and he said , " Who hath dared to wound thee ? "
+∃ REF1[1] EVENT[2] (
+ REF1[1] = he ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], REF1[1],
+    QUEST(∃ REF2[5] EVENT[6] EVENT[4] ? ENTITY[3] (REF2[5] = thee ∧ hath_dared(EVENT[4], ENTITY[3], wound(EVENT[6], ENTITY[3], REF2[5]))))))
+
+# ::id 138_childrens_WILDE-1888_2;AT27-5;NE
+# ::snt For on the palms of the child 's hands were the prints of two nails ,
+∃ EVENT[6] ENTITY[3] GROUP[2] GROUP[5] GROUP[4] GROUP[1] (
+ child(ENTITY[3]) ∧
+  is_hands_POS(GROUP[2], ENTITY[3]) ∧
+   is_palms_of(GROUP[1], GROUP[2]) ∧
+    (CD_two(GROUP[5]), nails(GROUP[5])) ∧
+     is_prints_of(GROUP[4], GROUP[5]) ∧
+      past(EVENT[6]) ∧ copula(EVENT[6], GROUP[4]) ∧ on(EVENT[6]) = GROUP[1])
+
+# ::id 139_childrens_WILDE-1888_2;AT27-6;NE
+# ::snt and the prints of two nails were on the little feet .
+∃ ATTRIB[4] EVENT[5] GROUP[2] GROUP[3] GROUP[1] (
+ (CD_two(GROUP[2]), nails(GROUP[2])) ∧
+  is_prints_of(GROUP[1], GROUP[2]) ∧
+   little(ATTRIB[4]) ∧
+    is_feet_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     past(EVENT[5]) ∧ copula(EVENT[5], GROUP[1]) ∧ on(EVENT[5]) = GROUP[3])
+
+# ::id 140_childrens_WILDE-1888_2;AT27-7;NE
+# ::snt " Who hath dared to wound thee ? " cried the Giant ;
+∃ EVENT[2] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   cried(EVENT[2], ENTITY[1],
+    QUEST(∃ REF1[5] EVENT[6] EVENT[4] ? ENTITY[3] (REF1[5] = thee ∧ hath_dared(EVENT[4], ENTITY[3], wound(EVENT[6], ENTITY[3], REF1[5]))))))
+
+# ::id 141_childrens_WILDE-1888_2;AT28-1;NE
+# ::snt " tell me , that I might take my big sword and slay him . "
+IMPERATIVE(∃ REF2[3] REF1[1] EVENT[2] (
+      REF1[1] = me ∧
+       REF2[3] = i ∧
+        tell(EVENT[2], _, REF1[1],
+         MD_might(∃ REF4[8] ATTRIB[6] REF3[5] EVENT[7] EVENT[9] ENTITY[4] (
+               REF3[5] = my ∧
+                big(ATTRIB[6]) ∧
+                 is_sword_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_sword_POS(ENTITY[4], REF3[5]) ∧
+                  REF4[8] = him ∧
+                   CONJ_and(take(EVENT[7], REF2[3], ENTITY[4]),
+                    slay(EVENT[9], REF2[3], REF4[8])))))))
+
+# ::id 142_childrens_WILDE-1888_2;AT29-1;NE
+# ::snt " Nay ! " answered the child ; " but these are the wounds of Love . "
+∃ EVENT[6] EVENT[2] ENTITY[5] GROUP[4] GROUP[3] ENTITY[1] (
+ child(ENTITY[1]) ∧
+  Love(ENTITY[5]) ∧
+   is_wounds_of(GROUP[4], ENTITY[5]) ∧
+    past(EVENT[2]) ∧ answered(EVENT[2], ENTITY[1], copula(EVENT[6], GROUP[3], GROUP[4])))
+
+# ::id 143_childrens_WILDE-1888_2;AT30-1;NE
+# ::snt " Who art thou ? " said the Giant ,
+∃ EVENT[2] ENTITY[1] (
+ Giant(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   said(EVENT[2], ENTITY[1], QUEST(∃ REF1[4] EVENT[5] ? ENTITY[3] (REF1[4] = thou ∧ copula(EVENT[5], ENTITY[3], REF1[4])))))
+
+# ::id 144_childrens_WILDE-1888_2;AT30-2;NE
+# ::snt and a strange awe fell on him ,
+∃ REF1[3] ATTRIB[2] EVENT[4] ENTITY[1] (
+ strange(ATTRIB[2]) ∧
+  is_awe_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[3] = him ∧ past(EVENT[4]) ∧ fell(EVENT[4], ENTITY[1]) ∧ on(EVENT[4]) = REF1[3])
+
+# ::id 145_childrens_WILDE-1888_2;AT30-3;NE
+# ::snt and he knelt before the little child .
+∃ REF1[1] ATTRIB[3] EVENT[4] ENTITY[2] (
+ little(ATTRIB[3]) ∧
+  is_child_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   REF1[1] = he ∧ past(EVENT[4]) ∧ knelt(EVENT[4], REF1[1]) ∧ before(EVENT[4]) = ENTITY[2])
+
+# ::id 146_childrens_WILDE-1888_2;AT31-1;NE
+# ::snt And the child smiled on the Giant , and said to him , " You let me play once in your garden , to-day you shall come with me to my garden , which is Paradise . "
+∃ REF5[14] REF4[10] REF3[8] REF2[6] REF1[4] ENTITY[9] TIME[13] EVENT[3] EVENT[11] EVENT[7] EVENT[5] ENTITY[2] ENTITY[1] (
+ child(ENTITY[1]) ∧
+  Giant(ENTITY[2]) ∧
+   past(EVENT[3]) ∧
+    TMP_once(EVENT[11]) ∧
+     is_before(EVENT[7], EVENT[5]) ∧
+      past(EVENT[5]) ∧
+       REF1[4] = him ∧
+        REF2[6] = you ∧
+         REF3[8] = me ∧
+          REF4[10] = your ∧
+           is_garden_POS(ENTITY[9], REF4[10]) ∧
+            to-day(TIME[13]) ∧
+             REF5[14] = you ∧
+              CONJ_and(smiled(EVENT[3], ENTITY[1]) ∧ on(EVENT[3]) = ENTITY[2],
+               said(EVENT[5], ENTITY[1],
+                let(EVENT[7], REF2[6], play(EVENT[11], REF3[8]) ∧ in(EVENT[11]) = ENTITY[9]) ∧
+                 MD_shall(∃ REF7[17] REF6[15] ENTITY[16] EVENT[19] EVENT[20] (
+                       REF6[15] = me ∧
+                        REF7[17] = my ∧
+                         copula(EVENT[19], ENTITY[16], ENTITY[Paradise]) ∧ is_garden_POS(ENTITY[16], REF7[17]) ∧
+                          come(EVENT[20], REF5[14]) ∧ to(EVENT[20]) = ENTITY[16] ∧
+                           with(EVENT[20]) = REF6[15] ∧
+                           is_contained_in(TMP(EVENT[20]), TIME[13])))) ∧
+                to(EVENT[5]) = REF1[4]))
+
+# ::id 147_childrens_WILDE-1888_2;AT32-1;NE
+# ::snt And when the children ran in that afternoon , they found the Giant lying dead under the tree , all covered with white blossoms .
+∃ ATTRIB[9] SITUATION[7] REF1[6] SITUATION[19] ATTRIB[15] EVENT[4] EVENT[17] EVENT[10] EVENT[18] EVENT[16] TIME[3] GROUP[2] GROUP[14] ENTITY[11] ENTITY[8] (
+ children(GROUP[2]) ∧
+  afternoon(TIME[3]) ∧
+   Giant(ENTITY[8]) ∧
+    white(ATTRIB[15]) ∧
+     is_blossoms_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+      ALL ENTITY[13] (is_of(ENTITY[13], ENTITY[11]), covered(EVENT[16], _, ENTITY[13]) ∧ with(EVENT[16]) = GROUP[14]) ∧
+       tree(ENTITY[11]) ∧
+       is_TMP(EVENT[4], SITUATION[19]) ∧
+        past(EVENT[4]) ∧
+         ran_in(EVENT[4], GROUP[2]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3]) ∧
+          past(EVENT[18]) ∧
+           REF1[6] = they ∧
+            dead(ATTRIB[9]) ∧
+             is_FACT_THAT(SITUATION[7],
+              CONJ_and(lying(EVENT[17], ENTITY[8]) ∧ under(EVENT[17]) = ENTITY[11],
+               xxx(EVENT[10], ENTITY[8], ATTRIB[9]))) ∧
+              is_FACT_THAT(SITUATION[19], found(EVENT[18], REF1[6], SITUATION[7])))

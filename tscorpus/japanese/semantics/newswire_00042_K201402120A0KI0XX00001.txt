@@ -1,0 +1,1056 @@
+# ::id 1_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 河北新報社 かほくイベントパーク
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[河北新報社_かほくイベントパーク])
+
+# ::id 2_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ 仙台青葉能
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[仙台青葉能])
+
+# ::id 3_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ 夢幻 の 世界 、 味わい 深く
+∃ EVENT[4] ENTITY[2] ENTITY[3] ENTITY[1] (
+ 夢幻(ENTITY[2]) ∧
+  の_世界(ENTITY[2], ENTITY[1]) ∧ 味わい(ENTITY[3]) ∧ 深く(EVENT[4], (ENTITY[1], ENTITY[3])))
+
+# ::id 4_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ５ 月 開催
+∃ ENTITY[2] ENTITY[1] EVENT[4] TIME[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   CD_５_月(TIME[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧ is_contained_in(時間(EVENT[4]), TIME[3]))
+
+# ::id 5_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 人間国宝 の ２ 氏 出演 、 「 天鼓 」 「 昆布売 」 など
+∃ EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] GROUP[3] ENTITY[2] ENTITY[1] (
+ is_element_of(WORK_OF_ART[天鼓], GROUP[3]) ∧ is_element_of(WORK_OF_ART[昆布売], GROUP[3]) ∧
+  人間国宝(ENTITY[5]) ∧
+   (CD_２_氏(ENTITY[4]), の(ENTITY[5], ENTITY[4])) ∧
+    equals(GROUP[3], ENTITY[2]) ∧ THAT(する.0(EVENT[6], ENTITY[4]), ENTITY[2]) ∧
+     など(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 6_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 新緑 の 季節 恒例 の 第 １７ 回 仙台青葉能 （ 主催 ・ 仙台青葉能の会 、 仙台市市民文化事業団 、 河北新報社 ） が ５ 月 １７ 日 、 仙台市 青葉区 の 電力ホール で 開か れ ます 。
+∃ EVENT[7] ENTITY[5] ENTITY[4] GROUP[2] ENTITY[1] TIME[6] (
+ 新緑(ENTITY[5]) ∧
+  の_季節(ENTITY[5], ENTITY[4]) ∧
+   の_xxx(ENTITY[4], EVENT[回_仙台青葉能]) ∧
+    第_１７(EVENT[回_仙台青葉能]) ∧
+     ∃ ENTITY[3] (主催(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧ is_subset_of_or_equal_to(ORG[仙台青葉能の会], GROUP[2]) ∧
+      is_subset_of_or_equal_to(ORG[仙台市市民文化事業団], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[河北新報社], GROUP[2]) ∧
+      equals(GROUP[2], ENTITY[1]) ∧
+       namely_-EVENT-(ENTITY[1], EVENT[回_仙台青葉能]) ∧
+        CD_５_月_１７_日(TIME[6]) ∧
+         の_xxx(NORP[仙台市_青葉区], FAC[電力ホール]) ∧
+          開く.0_ます(EVENT[7], _, EVENT[回_仙台青葉能]) ∧ で(EVENT[7]) = FAC[電力ホール] ∧
+           is_contained_in(時間(EVENT[7]), TIME[6]))
+
+# ::id 7_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 演目 は 喜多流能 「 巴 （ ともえ ） 」 、 和泉流狂言 「 昆布売 （ こぶうり ） 」 、 喜多流能 「 天鼓 （ てんこ ） 」 。
+∃ EVENT[6] GROUP[2] ENTITY[1] (
+ 演目(ENTITY[1]) ∧
+  ∃ ENTITY[3] (
+   namely_-WORK_OF_ART-(WORK_OF_ART[巴], WORK_OF_ART[喜多流能]) ∧
+    ともえ(ENTITY[3]) ∧ namely_-WORK_OF_ART-(ENTITY[3], WORK_OF_ART[喜多流能]) ∧ is_element_of(WORK_OF_ART[喜多流能], GROUP[2])) ∧
+   ∃ ENTITY[4] (
+    namely_-WORK_OF_ART-(WORK_OF_ART[昆布売], WORK_OF_ART[和泉流狂言]) ∧
+     こぶうり(ENTITY[4]) ∧ namely_-WORK_OF_ART-(ENTITY[4], WORK_OF_ART[和泉流狂言]) ∧ is_element_of(WORK_OF_ART[和泉流狂言], GROUP[2])) ∧
+   ∃ ENTITY[5] (
+    namely_-WORK_OF_ART-(WORK_OF_ART[天鼓], WORK_OF_ART[喜多流能]) ∧
+     てんこ(ENTITY[5]) ∧ namely_-WORK_OF_ART-(ENTITY[5], WORK_OF_ART[喜多流能]) ∧ is_element_of(WORK_OF_ART[喜多流能], GROUP[2])) ∧
+   xxx(EVENT[6], ENTITY[1], GROUP[2]))
+
+# ::id 8_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 昨年 に 続き 、 人間国宝 の 友枝昭世 、 野村万作 が 出演 し ます 。
+∃ EVENT[5] EVENT[6] GROUP[3] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 人間国宝(ENTITY[2]) ∧
+  is_element_of(PERSON[友枝昭世], GROUP[3]) ∧ is_element_of(PERSON[野村万作], GROUP[3]) ∧
+   equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+    昨年(ENTITY[4]) ∧
+     続く.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 出演する.0_ます(EVENT[6], ENTITY[1]))
+
+# ::id 9_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 「 巴 」 は 、 木曽義仲 の 愛人 だっ た 女武者・巴御前 をめぐる 物語 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ の_愛人(PERSON[木曽義仲], ENTITY[2]) ∧
+  だっ_た(EVENT[3], PERSON[女武者.巴御前], ENTITY[2]) ∧
+   物語(ENTITY[4]) ∧
+    past(EVENT[3]) ∧ xxx(EVENT[5], WORK_OF_ART[巴], ENTITY[4]) ∧ をめぐる(EVENT[5]) = PERSON[女武者.巴御前])
+
+# ::id 10_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 旅僧 が 社 の 前 を 通りかかる と 、 里 の 女 が 「 ここ は 義仲 を 祭っ た 社 な ので 、 お経 を 手向け て ほしい 」 と 頼み ます 。
+∃ ENTITY[10] (
+ ENTITY[10] = ここ ∧
+  ∀ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] CND_と(
+      旅僧(ENTITY[1]) ∧ 社(ENTITY[3]) ∧ の_前(ENTITY[3], ENTITY[2]) ∧
+       通りかかる.0(EVENT[4], ENTITY[1], ENTITY[2]),
+      ∃ ENTITY[14] SITUATION[9] ENTITY[8] EVENT[11] EVENT[12] EVENT[16] EVENT[13] EVENT[7] ENTITY[6] ENTITY[15] ENTITY[5] (
+       里(ENTITY[6]) ∧
+        の_女(ENTITY[6], ENTITY[5]) ∧
+         ENTITY[8] = *pro*{ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+          社(SITUATION[9], 祭る.0_た(EVENT[11], ENTITY[10], PERSON[義仲])) ∧
+           ENTITY[14] = *pro*{ENTITY[8], ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+            お経(ENTITY[15]) ∧
+             before(EVENT[7], EVENT[11]) ∧
+              頼む.0_ます(EVENT[7], ENTITY[5],
+               CRD_ので(な(EVENT[12], ENTITY[8], SITUATION[9]),
+                ほしい(EVENT[13], ENTITY[8], 手向ける.0_て(EVENT[16], ENTITY[14], ENTITY[15])))))))
+
+# ::id 11_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 僧 が 弔い を 始め たところ 、 甲冑姿 の 巴御前 の 霊 が 現れ 、 義仲 と 自害 を 共 に でき なかっ た 恨み や 戦い の 様子 など を 語り ます 。
+∃ EVENT[3] EVENT[6] EVENT[16] ENTITY[2] ENTITY[1] ENTITY[5] GROUP[8] ENTITY[7] ENTITY[4] (
+ 僧(ENTITY[1]) ∧
+  弔い(ENTITY[2]) ∧
+   甲冑姿(ENTITY[5]) ∧
+    の_xxx(ENTITY[5], PERSON[巴御前]) ∧
+     の_霊(PERSON[巴御前], ENTITY[4]) ∧
+      CONJ_や(∃ ENTITY[10] ENTITY[9] (
+            ENTITY[10] = *pro*{ENTITY[7], ENTITY[4], ENTITY[5], ENTITY[1], ENTITY[2]} ∧
+             THAT_恨み(¬ ∃ EVENT[13] ENTITY[12] ENTITY[11] (
+                        自害(ENTITY[11]) ∧
+                         共(ENTITY[12]) ∧
+                          past(EVENT[13]) ∧
+                           出来る.0_た(EVENT[13], ENTITY[10], ENTITY[11]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+                            と(EVENT[13]) = PERSON[義仲]), ENTITY[9]) ∧
+              is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ENTITY[15] ENTITY[14] (戦い(ENTITY[15]) ∧ の_様子(ENTITY[15], ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[8]))) ∧
+       など(GROUP[8], ENTITY[7]) ∧
+        CRD_たところ(始める.0(EVENT[3], ENTITY[1], ENTITY[2]),
+         現れる.0(EVENT[6], ENTITY[4]) ∧ 語る.0_ます(EVENT[16], ENTITY[4], ENTITY[7])))
+
+# ::id 12_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 気丈さ の 中 に 女性 の 深い 心情 が 感じ られる 巴御前 の シテ を 、 佐々木多門 が 務め ます 。
+∃ ATTRIB[6] EVENT[7] EVENT[8] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ 気丈さ(ENTITY[3]) ∧
+  の_中(ENTITY[3], ENTITY[2]) ∧
+   女性(ENTITY[5]) ∧
+    深い(ATTRIB[6]) ∧
+     ATTRIBUTE_心情(ATTRIB[6], ENTITY[4]) ∧ の_心情(ENTITY[5], ENTITY[4]) ∧
+      感じる.0(EVENT[7], _, ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[2] ∧
+       に(EVENT[7]) = WORK_OF_ART[シテ] ∧ の_xxx(PERSON[巴御前], WORK_OF_ART[シテ]) ∧ 務める.0_ます(EVENT[8], PERSON[佐々木多門], WORK_OF_ART[シテ]))
+
+# ::id 13_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 「 昆布売 」 は 、 強者 と 弱者 の 立場 が 逆転 する 物語 。
+∃ SITUATION[1] EVENT[6] EVENT[7] GROUP[3] ENTITY[2] (
+ CONJ_と(∃ ENTITY[4] (強者(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+  ∃ ENTITY[5] (弱者(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+  の_立場(GROUP[3], ENTITY[2]) ∧
+   物語(SITUATION[1], 逆転する.0(EVENT[6], ENTITY[2])) ∧ xxx(EVENT[7], WORK_OF_ART[昆布売], SITUATION[1]))
+
+# ::id 14_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 供 を 連れ ず に 出かけ た 大名 が 、 昆布売り に 無理 に 同道 を 迫り 、 太刀 まで 持た せ て 従者扱い し て 悦に入り ます 。
+∃ ENTITY[11] SITUATION[3] EVENT[6] EVENT[9] EVENT[15] EVENT[13] EVENT[12] EVENT[16] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[14] ENTITY[1] (
+ 供(ENTITY[4]) ∧
+  FACT(SITUATION[3], ¬ ∃ EVENT[5] 連れる.0(EVENT[5], ENTITY[1], ENTITY[4])) ∧
+   出かける.0_た(EVENT[6], ENTITY[1]) ∧ te_に(EVENT[6]) = SITUATION[3] ∧ 大名(ENTITY[1]) ∧
+    昆布売り(ENTITY[7]) ∧
+     同道(ENTITY[8]) ∧
+      ENTITY[11] = *pro*{ENTITY[7], ENTITY[8], ENTITY[4]} ∧
+       太刀(ENTITY[14]) ∧
+        past(EVENT[6]) ∧
+         ADV_無理_に(EVENT[9]) ∧
+          迫る.0(EVENT[9], ENTITY[1], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[7] ∧
+           CONJ_te(従者扱いする.0_て(EVENT[12], ENTITY[1], ENTITY[11],
+                 せ_て(EVENT[13], ENTITY[11], 持つ.0(EVENT[15], ENTITY[11]) ∧ まで(EVENT[15]) = ENTITY[14])),
+            悦に入る.0_ます(EVENT[16], ENTITY[1])))
+
+# ::id 15_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt やがて 我慢 でき なく なっ た 昆布売り は 太刀 を 抜い て 逆 に 大名 を 脅し 、 昆布 を 売る こと を 強要 。
+∃ ENTITY[10] SITUATION[9] SITUATION[14] ENTITY[4] ENTITY[6] ENTITY[11] EVENT[5] EVENT[7] EVENT[12] EVENT[13] ENTITY[1] (
+ ¬ ∃ EVENT[3] (past(EVENT[3]) ∧ 我慢できる.0_なっ_た(EVENT[3], ENTITY[1])) ∧ 昆布売り(ENTITY[1]) ∧
+  ADV_やがて(SITUATION[14]) ∧
+   ADV_逆_に(EVENT[7]) ∧
+    太刀(ENTITY[4]) ∧
+     大名(ENTITY[6]) ∧
+      ENTITY[10] = *pro*{ENTITY[1], ENTITY[6], ENTITY[4]} ∧
+       昆布(ENTITY[11]) ∧
+        こと(SITUATION[9], 売る.0(EVENT[12], ENTITY[10], ENTITY[11])) ∧
+         FACT(SITUATION[14],
+          CONJ_te(抜く.0_て(EVENT[5], ENTITY[1], ENTITY[4]), 脅す.0(EVENT[7], ENTITY[1], ENTITY[6])) ∧
+           する.0(EVENT[13], ENTITY[1], SITUATION[9])))
+
+# ::id 16_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 売り声 も 小唄節 や 浄瑠璃節 など で と 注文 を 付ける など 、 下克上 の 世相 を 反映 し た 筋立て で 、 シテ の 昆布売り を 野村 が 務め ます 。
+∃ ENTITY[5] SITUATION[4] ENTITY[1] EVENT[13] EVENT[7] EVENT[16] EVENT[17] EVENT[19] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[15] ENTITY[14] ENTITY[2] ENTITY[18] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   注文(ENTITY[6]) ∧
+    売り声(ENTITY[8]) ∧
+     CONJ_や(∃ ENTITY[11] (小唄節(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+      ∃ ENTITY[12] (浄瑠璃節(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+      など(GROUP[10], ENTITY[9]) ∧
+       FACT(SITUATION[4],
+        付ける.0(EVENT[7], ENTITY[5], ENTITY[6], xxx(EVENT[13], ENTITY[8]) ∧ で(EVENT[13]) = ENTITY[9])) ∧
+        下克上(ENTITY[15]) ∧
+         の_世相(ENTITY[15], ENTITY[14]) ∧
+          反映する.0_た(EVENT[16], ENTITY[2], ENTITY[14]) ∧ など(EVENT[16]) = SITUATION[4] ∧ 筋立て(ENTITY[2]) ∧
+           の_昆布売り(WORK_OF_ART[シテ], ENTITY[18]) ∧
+            past(EVENT[16]) ∧
+             CONJ_te(で(EVENT[17], ENTITY[1], ENTITY[2]), 務める.0_ます(EVENT[19], PERSON[野村], ENTITY[18])))
+
+# ::id 17_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 「 天鼓 」 は 、 鼓 に まつわる 親子 の 悲運 と 情愛 を 描い た 中国 ・ 後漢時代 の 物語 。
+∃ EVENT[6] EVENT[11] EVENT[12] ENTITY[5] GROUP[8] ENTITY[7] ENTITY[3] ENTITY[1] (
+ 鼓(ENTITY[5]) ∧
+  親子(ENTITY[7]) ∧
+   CONJ_と(∃ ENTITY[9] (悲運(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+    ∃ ENTITY[10] (情愛(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+    まつわる(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+     equals(GROUP[8], ENTITY[3]) ∧ の(ENTITY[7], ENTITY[3]) ∧
+     描く.0_た(EVENT[11], ENTITY[1], ENTITY[3]) ∧ の_物語(DATE[中国_後漢時代], ENTITY[1]) ∧
+      past(EVENT[11]) ∧ xxx(EVENT[12], WORK_OF_ART[天鼓], ENTITY[1]))
+
+# ::id 18_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 天鼓 という 名 の 子 が 天 から 降っ て き た 鼓 を 打つ と 、 その 音色 は 人々 を 感動 さ せ まし た 。
+∃ ENTITY[8] (
+ 音色(ENTITY[8]) ∧
+  ∀ EVENT[6] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[3] ENTITY[1] CND_と(
+      という_名(PERSON[天鼓], ENTITY[2]) ∧ の_子(ENTITY[2], ENTITY[1]) ∧ 天(ENTITY[5]) ∧
+       降る.0_て_き_た(EVENT[6], ENTITY[3]) ∧ から(EVENT[6]) = ENTITY[5] ∧ 鼓(ENTITY[3]) ∧
+       past(EVENT[6]) ∧ 打つ.0(EVENT[7], ENTITY[1], ENTITY[3]),
+      ∃ EVENT[10] ENTITY[9] (人々(ENTITY[9]) ∧ past(EVENT[10]) ∧ 感動する.0_せ_まし_た(EVENT[10], ENTITY[8], ENTITY[9]))))
+
+# ::id 19_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 皇帝 が 鼓 の 献上 を 命じ まし た が 、 拒ん だ 天鼓 は 殺さ れ 、 鼓 も 取り上げ られ ます 。
+∃ EVENT[4] EVENT[7] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[8] EVENT[6] (
+ past(EVENT[6]) ∧
+  拒む.0_だ(EVENT[6], PERSON[天鼓]) ∧
+   皇帝(ENTITY[1]) ∧
+    鼓(ENTITY[3]) ∧
+     の_献上(ENTITY[3], ENTITY[2]) ∧
+      鼓(ENTITY[8]) ∧
+       past(EVENT[4]) ∧
+        CONJ_が(命じる.0_まし_た(EVENT[4], ENTITY[1], ENTITY[2]),
+         殺す.0(EVENT[7], _, PERSON[天鼓]) ∧ 取り上げる.0_ます(EVENT[9], _, ENTITY[8])))
+
+# ::id 20_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 鼓 は 誰 が 打っ て も 鳴り ませ ん でし た が 、 天鼓 の 父 ・ 王伯 が 打っ たところ 、 妙 なる 音色 が 鳴り響き まし た 。
+∃ ENTITY[1] (
+ 鼓(ENTITY[1]) ∧
+  CONJ_が(¬ ∀ ENTITY[2] EVENT[3] CND_も(打つ.0_て(EVENT[3], ENTITY[2]), ∃ EVENT[4] (past(EVENT[4]) ∧ 鳴る.0_ませ_でし_た(EVENT[4], ENTITY[1]))),
+   ∀ EVENT[5] CND_たところ(の_xxx(PERSON[天鼓], PERSON[父_王伯]) ∧ 打つ.0(EVENT[5], PERSON[父_王伯]),
+       ∃ ATTRIB[7] ENTITY[6] EVENT[8] (
+        past(EVENT[8]) ∧
+         妙_なる(ATTRIB[7]) ∧ ATTRIBUTE_音色(ATTRIB[7], ENTITY[6]) ∧ 鳴り響く.0_まし_た(EVENT[8], ENTITY[6])))))
+
+# ::id 21_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 感動 し た 皇帝 が 天鼓 の 冥福 を 祈る 管弦講 を 行う と 、 天鼓 の 霊 が 現れ て 鼓 を 打ち 、 喜び の 舞 を 舞い ます 。
+∃ ENTITY[1] (
+ の_霊(PERSON[天鼓], ENTITY[1]) ∧
+  ∀ SITUATION[2] EVENT[5] EVENT[7] EVENT[8] ENTITY[6] ENTITY[3] CND_と(
+      感動する.0_た(EVENT[5], ENTITY[3]) ∧ 皇帝(ENTITY[3]) ∧ の_冥福(PERSON[天鼓], ENTITY[6]) ∧
+       管弦講(SITUATION[2], 祈る.0(EVENT[7], ENTITY[3], ENTITY[6])) ∧ past(EVENT[5]) ∧
+       行う.0(EVENT[8], ENTITY[1], SITUATION[2]),
+      ∃ EVENT[9] EVENT[11] EVENT[14] ENTITY[10] ENTITY[13] ENTITY[12] (
+       鼓(ENTITY[10]) ∧
+        喜び(ENTITY[13]) ∧
+         の_舞(ENTITY[13], ENTITY[12]) ∧
+          CONJ_te(現れる.0_て(EVENT[9], ENTITY[1]), 打つ.0(EVENT[11], ENTITY[1], ENTITY[10])) ∧
+           舞う.0_ます(EVENT[14], ENTITY[1], ENTITY[12]))))
+
+# ::id 22_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 前 シテ の 天鼓 の 父 と 後 シテ の 天鼓 の 霊 を 友枝 が 演じ ます 。
+∃ EVENT[4] GROUP[1] (
+ CONJ_と(∃ ENTITY[2] (の_xxx(WORK_OF_ART[前_シテ], PERSON[天鼓]) ∧ の_父(PERSON[天鼓], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (の_xxx(WORK_OF_ART[後_シテ], PERSON[天鼓]) ∧ の_霊(PERSON[天鼓], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  演じる.0_ます(EVENT[4], PERSON[友枝], GROUP[1]))
+
+# ::id 23_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 午後 １ 時 半 開演 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_１_時_半(TIME[2]), 午後(TIME[2])) ∧
+   する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 24_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt Ｓ席 １万 円 、
+∃ EVENT[3] ENTITY[2] ENTITY[1] (Ｓ席(ENTITY[1]) ∧ CD_１万_円(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 25_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt Ａ席 ８０００ 円 、
+∃ EVENT[3] ENTITY[2] ENTITY[1] (Ａ席(ENTITY[1]) ∧ CD_８０００_円(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 26_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt Ｂ席 ６０００ 円 、
+∃ EVENT[3] ENTITY[2] ENTITY[1] (Ｂ席(ENTITY[1]) ∧ CD_６０００_円(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 27_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 学生席 ２５００ 円 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (学生席(ENTITY[1]) ∧ CD_２５００_円(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 28_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 藤崎 、 仙台三越 など の プレイガイド または 河北チケットセンター で 、 今月 ２８ 日 発売 予定 です 。
+∃ ENTITY[1] EVENT[8] ENTITY[7] TIME[6] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_または(∃ GROUP[5] ENTITY[4] ENTITY[3] (
+        is_subset_of_or_equal_to(ORG[藤崎], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[仙台三越], GROUP[5]) ∧
+         など(GROUP[5], ENTITY[4]) ∧ の_プレイガイド(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   is_subset_of_or_equal_to(ORG[河北チケットセンター], GROUP[2])) ∧
+   (CD_２８_日(TIME[6]), 今月(TIME[6])) ∧
+    発売_予定(ENTITY[7]) ∧
+     です(EVENT[8], ENTITY[1], ENTITY[7]) ∧ is_contained_in(時間(EVENT[8]), TIME[6]) ∧
+      で(EVENT[8]) = GROUP[2])
+
+# ::id 29_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ 「 法隆寺 祈り と かたち 」 仙台展
+∃ EVENT[4] GROUP[1] (
+ CONJ_と(∃ ENTITY[2] (祈り(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (かたち(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  namely_-EVENT-(GROUP[1], GROUP[1]) ∧
+   namely_-ENTITY-(EVENT[法隆寺], ENTITY[仙台展]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[仙台展])
+
+# ::id 30_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ 彩色 鮮やか 、 太子像
+∃ EVENT[3] EVENT[4] ENTITY[2] (
+ 彩色(ENTITY[2]) ∧
+  鮮やか(EVENT[3], (WORK_OF_ART[太子像], ENTITY[2])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = WORK_OF_ART[太子像])
+
+# ::id 31_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ３ 月 １日 から
+∃ EVENT[2] ENTITY[1] (CD_３_月_１日(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ から(EVENT[2]) = ENTITY[1])
+
+# ::id 32_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 東京美術学校 と の 関係 に 光
+∃ EVENT[3] ENTITY[2] ENTITY[1] (と_の_関係(ORG[東京美術学校], ENTITY[2]) ∧ に_光(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[1]))
+
+# ::id 33_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ 震災 から の 復興 祈念
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 震災(ENTITY[3]) ∧ から_の_復興(ENTITY[3], ENTITY[2]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 34_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 仙台市博物館 （ 青葉区 ） で ３ 月 １日 から 開か れる 「 法隆寺 祈り と かたち 」 仙台展 （ 主催 ・ 河北新報社 、 法隆寺 など 、 特別協賛 ・ 清月記 ） で は 、 同寺 所蔵 の 寺宝 の 保存 と 継承 に 携わっ て き た 東京美術学校 （ 現東京芸術大 ） の 取り組み について も 紹介 し ます 。
+∃ ENTITY[1] EVENT[18] GROUP[10] EVENT[9] ENTITY[8] ENTITY[5] ENTITY[6] GROUP[4] GROUP[3] ENTITY[2] (
+ namely_-FAC-(GPE[青葉区], FAC[仙台市博物館]) ∧
+  CD_３_月_１日(ENTITY[8]) ∧
+   開く.0(EVENT[9], _, ENTITY[仙台展]) ∧ から(EVENT[9]) = ENTITY[8] ∧ で(EVENT[9]) = FAC[仙台市博物館] ∧
+    祈り(ENTITY[5]) ∧
+     かたち(ENTITY[6]) ∧
+      CONJ_と(is_element_of(ENTITY[5], GROUP[4]), is_element_of(ENTITY[6], GROUP[4])) ∧
+       namely_-EVENT-(GROUP[4], GROUP[4]) ∧
+        namely_-ENTITY-(EVENT[法隆寺], ENTITY[仙台展]) ∧
+         is_subset_of_or_equal_to(ORG[河北新報社], GROUP[3]) ∧ is_subset_of_or_equal_to(ORG[法隆寺], GROUP[3]) ∧
+          equals_主催(GROUP[3], ENTITY[2]) ∧
+           など_xxx(ENTITY[2], ORG[特別協賛_清月記]) ∧
+            namely_-ENTITY-(ORG[特別協賛_清月記], ENTITY[仙台展]) ∧
+             ENTITY[1] = *pro* ∧
+              CONJ_と(∃ ENTITY[13] ENTITY[12] ENTITY[11] (
+                    同寺_所蔵(ENTITY[13]) ∧
+                     の_寺宝(ENTITY[13], ENTITY[12]) ∧
+                      の_保存(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+               ∃ EVENT[17] ENTITY[16] ENTITY[14] (
+                継承(ENTITY[16]) ∧
+                 携わる.0_て_き_た(EVENT[17], ORG[東京美術学校]) ∧ に(EVENT[17]) = ENTITY[16] ∧
+                  namely_-ORG-(ORG[現東京芸術大], ORG[東京美術学校]) ∧
+                   の_取り組み(ORG[東京美術学校], ENTITY[14]) ∧
+                    past(EVENT[17]) ∧ is_element_of(ENTITY[14], GROUP[10]))) ∧
+               紹介する.0_ます(EVENT[18], ENTITY[1], GROUP[10]) ∧ で(EVENT[18]) = ENTITY[仙台展])
+
+# ::id 35_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 同校 の 設立 に 携わっ た 岡倉天心 （ １８６３～１９１３ 年 ） の 業績 や 学校関係者 が 同寺 に 奉納 し た 絵画 や 什物 （ 生活用具類 ） など を 展示 し ながら 、 東京美術学校 と 法隆寺 の 深い 関わり に 光 を 当て ます 。
+∃ ATTRIB[22] SITUATION[2] ENTITY[1] EVENT[19] EVENT[24] GROUP[3] GROUP[21] ENTITY[23] ENTITY[20] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[4] (
+        同校(ENTITY[8]) ∧
+         の_設立(ENTITY[8], ENTITY[7]) ∧
+          携わる.0_た(EVENT[9], PERSON[岡倉天心]) ∧ に(EVENT[9]) = ENTITY[7] ∧
+           CD_１８６３～１９１３_年(ENTITY[5]) ∧
+            namely_-PERSON-(ENTITY[5], PERSON[岡倉天心]) ∧
+             の_業績(PERSON[岡倉天心], ENTITY[4]) ∧ past(EVENT[9]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ EVENT[18] ENTITY[17] ENTITY[16] GROUP[12] ENTITY[11] ENTITY[10] (
+    CONJ_や(∃ ENTITY[13] (絵画(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+     ∃ ENTITY[14] ENTITY[15] (
+      什物(ENTITY[15]) ∧
+       生活用具類(ENTITY[14]) ∧ namely_-ENTITY-(ENTITY[14], ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[12]))) ∧
+     学校関係者(ENTITY[16]) ∧
+      同寺(ENTITY[17]) ∧
+       equals(GROUP[12], ENTITY[11]) ∧
+        THAT(奉納する.0_た(EVENT[18], ENTITY[16]) ∧ に(EVENT[18]) = ENTITY[17], ENTITY[11]) ∧
+        など(ENTITY[11], ENTITY[10]) ∧ past(EVENT[18]) ∧ is_element_of(ENTITY[10], GROUP[3]))) ∧
+   FACT(SITUATION[2], 展示する.0(EVENT[19], ENTITY[1], GROUP[3])) ∧
+    CONJ_と(is_subset_of_or_equal_to(ORG[東京美術学校], GROUP[21]), is_subset_of_or_equal_to(ORG[法隆寺], GROUP[21])) ∧
+     深い(ATTRIB[22]) ∧
+      ATTRIBUTE_関わり(ATTRIB[22], ENTITY[20]) ∧ の_関わり(GROUP[21], ENTITY[20]) ∧
+       光(ENTITY[23]) ∧
+        当てる.0_ます(EVENT[24], ENTITY[1], ENTITY[23]) ∧ に(EVENT[24]) = ENTITY[20] ∧ ながら(EVENT[24]) = SITUATION[2])
+
+# ::id 36_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt この うち 「 聖徳太子摂政像 」 は 、 当時 同校 の 教授 だっ た 平櫛田中 （ でんちゅう ） が 、 法隆寺聖徳会館 の 完成 （ １９６０ 年 ） を 記念 し て 制作 し た 高さ 約５０ センチ の 彫刻 です 。
+∃ EVENT[9] EVENT[12] EVENT[13] EVENT[15] ENTITY[8] ENTITY[7] TIME[6] ENTITY[4] ENTITY[10] ENTITY[11] ENTITY[14] ENTITY[2] ENTITY[1] (
+ うち(ENTITY[1]) ∧
+  当時(TIME[6]) ∧
+   同校(ENTITY[8]) ∧
+    の_教授(ENTITY[8], ENTITY[7]) ∧
+     だっ_た(EVENT[9], PERSON[平櫛田中], ENTITY[7]) ∧ is_contained_in(時間(EVENT[9]), TIME[6]) ∧
+      でんちゅう(ENTITY[4]) ∧
+       namely_-PERSON-(ENTITY[4], PERSON[平櫛田中]) ∧
+        の_完成(FAC[法隆寺聖徳会館], ENTITY[11]) ∧
+         CD_１９６０_年(ENTITY[10]) ∧
+          namely_-ENTITY-(ENTITY[10], ENTITY[11]) ∧
+           (CD_約５０_センチ(ENTITY[14]), 高さ(ENTITY[14])) ∧
+            CONJ_te(記念する.0_て(EVENT[12], PERSON[平櫛田中], ENTITY[11]), 制作する.0_た(EVENT[13], PERSON[平櫛田中], ENTITY[2])) ∧
+             の_彫刻(ENTITY[14], ENTITY[2]) ∧
+             past(EVENT[9]) ∧
+              past(EVENT[13]) ∧ です(EVENT[15], WORK_OF_ART[聖徳太子摂政像], ENTITY[2]) ∧ ADV(EVENT[15]) = ENTITY[1])
+
+# ::id 37_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 同寺 聖霊院 の 聖徳太子坐像 を モデル と し 、 勝鬘経 （ しょうまんきょう ） を 講じる 太子 ４５ 歳 の 姿 を 表し まし た 。
+∃ ENTITY[1] EVENT[3] EVENT[8] EVENT[9] ENTITY[2] ENTITY[7] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  の_xxx(FAC[同寺_聖霊院], WORK_OF_ART[聖徳太子坐像]) ∧
+   モデル(ENTITY[2]) ∧
+    しょうまんきょう(ENTITY[7]) ∧
+     namely_-WORK_OF_ART-(ENTITY[7], WORK_OF_ART[勝鬘経]) ∧
+      (CD_４５_歳(ENTITY[5]), 講じる.0(EVENT[8], ENTITY[5], WORK_OF_ART[勝鬘経]) ∧ 太子(ENTITY[5])) ∧
+       の_姿(ENTITY[5], ENTITY[4]) ∧
+        past(EVENT[9]) ∧
+         する.0(EVENT[3], ENTITY[1], WORK_OF_ART[聖徳太子坐像]) ∧ と(EVENT[3]) = ENTITY[2] ∧
+          表す.0_まし_た(EVENT[9], ENTITY[1], ENTITY[4]))
+
+# ::id 38_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 比較的 明るい 彩色 は 同じく 同校 教授 を 務め た 日本画家 前田青邨 による もの で 、 木彫 の 写実的 な 表現 を さらに 強調 する 狙い が あっ た と 思わ れ ます 。
+∃ ATTRIB[14] ENTITY[11] SITUATION[10] ATTRIB[2] EVENT[6] EVENT[8] EVENT[15] EVENT[17] EVENT[9] ENTITY[5] ENTITY[3] ENTITY[13] ENTITY[12] ENTITY[1] (
+ 比較的_明るい(ATTRIB[2]) ∧
+  ATTRIBUTE_彩色(ATTRIB[2], ENTITY[1]) ∧
+   同校_教授(ENTITY[5]) ∧
+    務め_た(EVENT[6], PERSON[日本画家_前田青邨], ENTITY[5]) ∧
+     による_もの(PERSON[日本画家_前田青邨], ENTITY[3]) ∧
+      ENTITY[11] = *pro*{ENTITY[1], ENTITY[3], ENTITY[5]} ∧
+       木彫(ENTITY[13]) ∧
+        写実的_な(ATTRIB[14]) ∧
+         ATTRIBUTE_表現(ATTRIB[14], ENTITY[12]) ∧ の_表現(ENTITY[13], ENTITY[12]) ∧
+          狙い(SITUATION[10], 強調する.0(EVENT[15], ENTITY[11], ENTITY[12])) ∧
+           ADV_同じく(EVENT[6]) ∧
+            past(EVENT[6]) ∧
+             ADV_さらに(EVENT[15]) ∧
+              before(EVENT[9], EVENT[17]) ∧
+               CONJ_te(で(EVENT[8], ENTITY[1], ENTITY[3]),
+                思う.0_ます(EVENT[9], _, ENTITY[1], 有る.0_た(EVENT[17], SITUATION[10]))))
+
+# ::id 39_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt また 、 日本 の 仏像 が 古来 から 彩色 が 施さ れ て い た 伝統 を 踏まえ た 作風 と も 考え られ て い ます 。
+∃ SITUATION[5] ENTITY[4] ENTITY[1] EVENT[9] EVENT[10] EVENT[11] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   の_仏像(NORP[日本], ENTITY[6]) ∧
+    古来(ENTITY[7]) ∧
+     彩色(ENTITY[8]) ∧
+      伝統(SITUATION[5], 施す.0_て_い_た(EVENT[9], (_, ENTITY[8]), ENTITY[6]) ∧ から(EVENT[9]) = ENTITY[7]) ∧
+       踏まえる.0_た(EVENT[10], ENTITY[4], SITUATION[5]) ∧ に(EVENT[10]) = ENTITY[2] ∧ 作風(ENTITY[2]) ∧
+        past(EVENT[9]) ∧
+         past(EVENT[10]) ∧ 考える.0_て_い_ます(EVENT[11], _, ENTITY[1]) ∧ と(EVENT[11]) = ENTITY[2])
+
+# ::id 40_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 法隆寺 は 聖徳太子 によって 創建 さ れ た 日本 を 代表 する 古刹 で 、 現在 も 日本人 の 信仰 と 文化的 な 誇り の 拠りどころ と なっ て い ます 。
+∃ SITUATION[1] GROUP[8] ENTITY[7] ENTITY[6] ENTITY[5] EVENT[3] EVENT[4] EVENT[12] (
+ past(EVENT[3]) ∧
+  ADV_現在_も(EVENT[12]) ∧
+   創建する.0_た(EVENT[3], PERSON[聖徳太子], GPE[日本]) ∧
+    古刹(SITUATION[1], 代表する.0(EVENT[4], FAC[法隆寺], GPE[日本])) ∧
+     日本人(ENTITY[7]) ∧
+      CONJ_と(∃ ENTITY[9] (信仰(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ATTRIB[11] ENTITY[10] (文化的_な(ATTRIB[11]) ∧ ATTRIBUTE_誇り(ATTRIB[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+       equals(GROUP[8], ENTITY[6]) ∧ の(ENTITY[7], ENTITY[6]) ∧
+        の_拠りどころ(ENTITY[6], ENTITY[5]) ∧
+         成る.0_て_い_ます(EVENT[12], FAC[法隆寺]) ∧ と(EVENT[12]) = ENTITY[5] ∧ で(EVENT[12]) = SITUATION[1])
+
+# ::id 41_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 仙台展 は 、 法隆寺 所蔵 の 宝物 多数 を 公開 し 、 東日本大震災 から の 復興 を 祈念 し て 開か れ ます 。
+∃ EVENT[5] EVENT[6] ENTITY[4] (
+ から_の_復興(EVENT[東日本大震災], ENTITY[4]) ∧
+  多数 FAC[2] ENTITY[1] ((法隆寺_所蔵(FAC[2]) ∧ の_宝物(FAC[2], ENTITY[1])), ∃ EVENT[3] 公開する.0(EVENT[3], EVENT[仙台展], ENTITY[1])) ∧
+   CONJ_te(祈念する.0_て(EVENT[5], EVENT[仙台展], ENTITY[4]), 開く.0_ます(EVENT[6], _, EVENT[仙台展])))
+
+# ::id 42_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 会期 は ４ 月 １３ 日 まで 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (会期(ENTITY[1]) ∧ CD_４_月_１３_日(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1]) ∧ まで(EVENT[3]) = ENTITY[2])
+
+# ::id 43_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 月曜 休館 。
+∃ EVENT[2] ENTITY[1] (月曜(ENTITY[1]) ∧ する.0(EVENT[2], ENTITY[1]))
+
+# ::id 44_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 前売り券 は 一般 １１００ 円 （ 当日 １３００ 円 ） で 今月 ２８ 日 まで 販売 。
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 前売り券(ENTITY[1]) ∧
+  (CD_１１００_円(ENTITY[3]), 一般(ENTITY[3])) ∧
+   (CD_１３００_円(ENTITY[2]), 当日(ENTITY[2])) ∧
+    namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+     (CD_２８_日(ENTITY[4]), 今月(ENTITY[4])) ∧
+      する.0(EVENT[5], ENTITY[1]) ∧ まで(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[3])
+
+# ::id 45_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 取扱店 は 藤崎 、 仙台三越 、 エスパル 、 チケットぴあ 、 コンビニエンスストア 、 河北新報販売店 など 。
+∃ EVENT[4] GROUP[2] ENTITY[1] (
+ 取扱店(ENTITY[1]) ∧
+  is_subset_of_or_equal_to(ORG[藤崎], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[仙台三越], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[エスパル], GROUP[2]) ∧
+   is_subset_of_or_equal_to(ORG[チケットぴあ], GROUP[2]) ∧ ∃ ENTITY[3] (コンビニエンスストア(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   is_subset_of_or_equal_to(ORG[河北新報販売店], GROUP[2]) ∧ xxx(EVENT[4], ENTITY[1]) ∧ など(EVENT[4]) = GROUP[2])
+
+# ::id 46_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ 明日 に 向かっ て 、 とも に 前 へ
+∃ ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *speaker+hearer* ∧
+  明日(ENTITY[2]) ∧
+   とも(ENTITY[4]) ∧
+    前(ENTITY[5]) ∧
+     CONJ_te(向かう.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2],
+      xxx(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[4] ∧ へ(EVENT[6]) = ENTITY[5]))
+
+# ::id 47_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ３ 月 、 仙台 で 復興支援シンポジウム
+∃ ENTITY[1] EVENT[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_３_月(TIME[2]) ∧
+   復興支援シンポジウム(ENTITY[3]) ∧
+    xxx(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = GPE[仙台] ∧
+     is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 48_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 復興 と 企業支援 考える
+∃ ENTITY[1] EVENT[5] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ENTITY[3] (復興(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (企業支援(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧ 考える.0(EVENT[5], ENTITY[1], GROUP[2]))
+
+# ::id 49_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 東日本大震災被災地 の 復興支援活動 を 企業経営 の 視点 から 考える 「 東日本大震災復興支援シンポジウム 『 明日 に 向かっ て 、 とも に 前 へ 』 」 （ 主催 ・ 東北経済連合会 、 河北新報社 、 協力 ・ ＪＲ東日本 、 東北電力 ） が ３ 月 １９ 日 、 仙台市 青葉区 の 電力ホール で 開か れ ます 。
+∃ ENTITY[8] EVENT[13] EVENT[15] ENTITY[10] ENTITY[12] ENTITY[11] ENTITY[9] GROUP[2] ENTITY[1] TIME[14] (
+ ENTITY[8] = *pro* ∧
+  東日本大震災被災地(ENTITY[10]) ∧
+   の_復興支援活動(ENTITY[10], ENTITY[9]) ∧
+    企業経営(ENTITY[12]) ∧
+     の_視点(ENTITY[12], ENTITY[11]) ∧
+      考える.0(EVENT[13], ENTITY[8], ENTITY[9]) ∧ から(EVENT[13]) = ENTITY[11] ∧
+       LOC(EVENT[13]) = EVENT[東日本大震災復興支援シンポジウム] ∧
+       ∃ GROUP[4] ENTITY[3] (
+        is_subset_of_or_equal_to(ORG[東北経済連合会], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[河北新報社], GROUP[4]) ∧
+         equals_主催(GROUP[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+        ∃ GROUP[6] ENTITY[5] (
+         is_subset_of_or_equal_to(ORG[ＪＲ東日本], GROUP[6]) ∧ is_subset_of_or_equal_to(ORG[東北電力], GROUP[6]) ∧
+          equals_協力(GROUP[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+        equals(GROUP[2], ENTITY[1]) ∧
+         namely_-EVENT-(ENTITY[1], EVENT[東日本大震災復興支援シンポジウム]) ∧
+          CD_３_月_１９_日(TIME[14]) ∧
+           の_xxx(NORP[仙台市_青葉区], FAC[電力ホール]) ∧
+            開く.0_ます(EVENT[15], _, EVENT[東日本大震災復興支援シンポジウム]) ∧ で(EVENT[15]) = FAC[電力ホール] ∧
+             is_contained_in(時間(EVENT[15]), TIME[14]))
+
+# ::id 50_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 長期化 する 復興支援 に 企業 が ＣＳＲ （ 企業 の 社会的責任 ） として 関わる こと に は 、 継続性 や 経営 の 観点 から 限界性 が 指摘 さ れ て い ます 。
+∃ SITUATION[1] ENTITY[7] ENTITY[6] ENTITY[8] ENTITY[5] ENTITY[2] GROUP[12] ENTITY[11] ENTITY[10] EVENT[4] EVENT[9] EVENT[15] (
+ 長期化する.0(EVENT[4], ENTITY[2]) ∧ 復興支援(ENTITY[2]) ∧
+  企業(ENTITY[5]) ∧
+   ＣＳＲ(ENTITY[8]) ∧
+    企業(ENTITY[7]) ∧
+     の_社会的責任(ENTITY[7], ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[8]) ∧
+       こと(SITUATION[1],
+        関わる.0(EVENT[9], ENTITY[5]) ∧ として(EVENT[9]) = ENTITY[8] ∧ に(EVENT[9]) = ENTITY[2]) ∧
+        CONJ_や(∃ ENTITY[13] (継続性(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+         ∃ ENTITY[14] (経営(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12]))) ∧
+         の_観点(GROUP[12], ENTITY[11]) ∧
+          から_限界性(ENTITY[11], ENTITY[10]) ∧ 指摘する.0_て_い_ます(EVENT[15], _, ENTITY[10]) ∧ に(EVENT[15]) = SITUATION[1])
+
+# ::id 51_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt シンポジウム で は 、 企業 が 本来 の 事業 と 被災地復興支援 を 両立 さ せる 仕組み や 方向性 を 探り ます 。
+∃ ENTITY[1] EVENT[12] EVENT[11] EVENT[13] ENTITY[9] ENTITY[10] ENTITY[8] ENTITY[7] GROUP[4] ENTITY[3] ENTITY[2] (
+ シンポジウム(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ ENTITY[5] (仕組み(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (方向性(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    企業(ENTITY[7]) ∧
+     本来(ENTITY[9]) ∧
+      の_事業(ENTITY[9], ENTITY[8]) ∧
+       被災地復興支援(ENTITY[10]) ∧
+        equals(GROUP[4], ENTITY[3]) ∧
+         THAT(せる(EVENT[11], ENTITY[7], ENTITY[10], 両立する.0(EVENT[12], ENTITY[10])) ∧
+               と(EVENT[11]) = ENTITY[8], ENTITY[3]) ∧
+         探る.0_ます(EVENT[13], ENTITY[1], ENTITY[3]) ∧ で(EVENT[13]) = ENTITY[2])
+
+# ::id 52_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 午後 １ 時 半 開会 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_１_時_半(TIME[2]), 午後(TIME[2])) ∧
+   する.0(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 53_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 第１ 部 の 基調講演 は 「 里山資本主義 から 紐解く （ ひもとく ） これ から の 東北復興 」 と 題し 、 地域エコノミスト の 藻谷浩介氏 が 登壇 し ます 。
+∃ ENTITY[10] ENTITY[6] ENTITY[1] EVENT[11] EVENT[13] ENTITY[7] ENTITY[4] ENTITY[12] ENTITY[3] ENTITY[2] (
+ CD_第１_部(ENTITY[3]) ∧
+  の_基調講演(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     里山資本主義(ENTITY[7]) ∧
+      ENTITY[10] = これ{ENTITY[7], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+       ひもとく ENTITY[8] ∃ EVENT[9] (
+        紐解く.0(EVENT[9], ENTITY[6], ENTITY[4]) ∧
+         LINK(EVENT[9]) = ENTITY[8] ∧ から(EVENT[9]) = ENTITY[7]) ∧ から_の_東北復興(ENTITY[10], ENTITY[4]) ∧
+        地域エコノミスト(ENTITY[12]) ∧
+         の_xxx(ENTITY[12], PERSON[藻谷浩介氏]) ∧
+          題する.0(EVENT[11], ENTITY[1]) ∧ と(EVENT[11]) = ENTITY[4] ∧ LOC(EVENT[11]) = ENTITY[2] ∧
+           登壇する.0_ます(EVENT[13], PERSON[藻谷浩介氏]))
+
+# ::id 54_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 第２ 部 の パネル討論 は 鈴幸漁業 （ 宮城県 女川町 ） 社長 の 鈴木敬幸氏 、 食品加工 など の コンサルタント を 手掛ける ファミリア （ 仙台市 ） 社長 の 島田昌幸氏 、 東北大大学院経済学研究科 教授 の 福嶋路氏 、 日本総合研究所創発戦略センター マネジャー の 井上岳一氏 、 ＪＲ東日本鉄道事業本部 営業部課長 の 小崎博子氏 の ５ 氏 が 意見交換 し ます 。
+∃ EVENT[15] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_第２_部(ENTITY[2]) ∧
+  の_パネル討論(ENTITY[2], ENTITY[1]) ∧
+   ∃ ORG[5] (
+    鈴幸漁業_社長(ORG[5]) ∧
+     namely_-ORG-(GPE[宮城県_女川町], ORG[5]) ∧ の_xxx(ORG[5], PERSON[鈴木敬幸氏]) ∧ is_element_of(PERSON[鈴木敬幸氏], GROUP[4])) ∧
+    ∃ EVENT[11] ENTITY[10] ENTITY[9] ENTITY[8] ORG[6] (
+     食品加工(ENTITY[10]) ∧
+      など(ENTITY[10], ENTITY[9]) ∧
+       の_コンサルタント(ENTITY[9], ENTITY[8]) ∧
+        手掛ける.0(EVENT[11], PERSON[島田昌幸氏], ENTITY[8]) ∧
+         ファミリア_社長(ORG[6]) ∧
+          namely_-ORG-(GPE[仙台市], ORG[6]) ∧ の_xxx(ORG[6], PERSON[島田昌幸氏]) ∧ is_element_of(PERSON[島田昌幸氏], GROUP[4])) ∧
+    ∃ ORG[12] (東北大大学院経済学研究科_教授(ORG[12]) ∧ の_xxx(ORG[12], PERSON[福嶋路氏]) ∧ is_element_of(PERSON[福嶋路氏], GROUP[4])) ∧
+    ∃ ORG[13] (日本総合研究所創発戦略センター_マネジャー(ORG[13]) ∧ の_xxx(ORG[13], PERSON[井上岳一氏]) ∧ is_element_of(PERSON[井上岳一氏], GROUP[4])) ∧
+    ∃ ORG[14] (ＪＲ東日本鉄道事業本部_営業部課長(ORG[14]) ∧ の_xxx(ORG[14], PERSON[小崎博子氏]) ∧ is_element_of(PERSON[小崎博子氏], GROUP[4])) ∧
+    (CD_５_氏(ENTITY[3]), の(GROUP[4], ENTITY[3])) ∧
+     意見交換する.0_ます(EVENT[15], ENTITY[3]) ∧ LOC(EVENT[15]) = ENTITY[1])
+
+# ::id 55_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt コーディネーター は 河北新報社 の 大田巌 取締役編集本部長 が 務め ます 。
+∃ EVENT[3] PERSON[2] ENTITY[1] (コーディネーター(ENTITY[1]) ∧ の_大田巌_取締役編集本部長(ORG[河北新報社], PERSON[2]) ∧ 務める.0_ます(EVENT[3], PERSON[2], ENTITY[1]))
+
+# ::id 56_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 募集定員 は １０００ 人 で 入場 無料 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 募集定員(ENTITY[1]) ∧
+  CD_１０００_人(ENTITY[2]) ∧
+   入場(ENTITY[4]) ∧
+    無料(ENTITY[5]) ∧
+     xxx(EVENT[3], ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2] ∧ xxx(EVENT[6], ENTITY[4], ENTITY[5]))
+
+# ::id 57_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 参加申し込み は 電子メール 、 ファクス 、 はがき で 受け付け ます 。
+∃ ENTITY[1] EVENT[7] GROUP[3] ENTITY[2] (
+ 参加申し込み(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] (電子メール(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (ファクス(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ∃ ENTITY[6] (はがき(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    受け付ける.0_ます(EVENT[7], ENTITY[1], ENTITY[2]) ∧ で(EVENT[7]) = GROUP[3])
+
+# ::id 58_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 住所 、 氏名 、 年齢 、 電話番号 、 参加希望人数 を 明記 し 、 〒９８０－８６６０ 河北新報社 企画事業部 「 復興支援・シンポジウム３／１９ 」 係 ０２２（２１１）１２２１ （ ファクス ） 、 ｊ－ｏｕｂｏ２＠ｐｏ．ｋａｈｏｋｕ．ｃｏ．ｊｐ へ 。
+∃ ENTITY[1] EVENT[8] EVENT[10] GROUP[2] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[3] (住所(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (氏名(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ENTITY[5] (年齢(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ∃ ENTITY[6] (電話番号(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[2])) ∧
+   ∃ ENTITY[7] (参加希望人数(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   namely_-ORG-(EVENT[復興支援.シンポジウム３／１９], ORG[〒９８０－８６６０_河北新報社_企画事業部_係_０２２（２１１）１２２１_ｊ－ｏｕｂｏ２＠ｐｏ．ｋａｈｏｋｕ．ｃｏ．ｊｐ]) ∧
+    ファクス(ENTITY[9]) ∧
+     namely_-ORG-(ENTITY[9], ORG[〒９８０－８６６０_河北新報社_企画事業部_係_０２２（２１１）１２２１_ｊ－ｏｕｂｏ２＠ｐｏ．ｋａｈｏｋｕ．ｃｏ．ｊｐ]) ∧
+      明記する.0(EVENT[8], ENTITY[1], GROUP[2]) ∧ xxx(EVENT[10], ENTITY[1]) ∧ へ(EVENT[10]) = ORG[〒９８０－８６６０_河北新報社_企画事業部_係_０２２（２１１）１２２１_ｊ－ｏｕｂｏ２＠ｐｏ．ｋａｈｏｋｕ．ｃｏ．ｊｐ])
+
+# ::id 59_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ３ 月 ７ 日 必着 で 応募者多数 の 場合 は 抽選 と し 、 聴講券 の 発送 をもって 発表 と し ます 。
+∃ ENTITY[6] ENTITY[2] ENTITY[1] EVENT[5] EVENT[10] EVENT[14] ENTITY[4] TIME[3] ENTITY[9] ENTITY[12] ENTITY[13] ENTITY[11] ENTITY[8] ENTITY[7] (
+ 応募者多数(ENTITY[8]) ∧
+  の_場合(ENTITY[8], ENTITY[7]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[2] = *pro*{ENTITY[1]} ∧
+     CD_３_月_７_日(TIME[3]) ∧
+      必着(ENTITY[4]) ∧
+       ENTITY[6] = *pro*{ENTITY[4]} ∧
+        抽選(ENTITY[9]) ∧
+         聴講券(ENTITY[12]) ∧
+          の_発送(ENTITY[12], ENTITY[11]) ∧
+           発表(ENTITY[13]) ∧
+            xxx(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[4] ∧
+             is_contained_in(時間(EVENT[5]), TIME[3]) ∧
+             する.0(EVENT[10], ENTITY[1], ENTITY[6]) ∧ と(EVENT[10]) = ENTITY[9] ∧
+              時間(EVENT[10]) = ENTITY[7] ∧
+              する.0_ます(EVENT[14], ENTITY[1]) ∧ と(EVENT[14]) = ENTITY[13] ∧ をもって(EVENT[14]) = ENTITY[11])
+
+# ::id 60_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ アリス＝紗良・オット リサイタル
+∃ EVENT[2] PERSON[1] (アリス＝紗良.オット_リサイタル(PERSON[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[1])
+
+# ::id 61_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ６ 月 ・ 仙台
+∃ EVENT[2] TIME[1] (
+ CD_６_月(TIME[1]) ∧
+  xxx(EVENT[2]) ∧ LOC(EVENT[2]) = GPE[仙台] ∧ is_contained_in(時間(EVENT[2]), TIME[1]))
+
+# ::id 62_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 東北大フォーシーズンズ 、 ピアノ の 音色 美しく
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ ピアノ(ENTITY[2]) ∧
+  の_音色(ENTITY[2], ENTITY[1]) ∧ 美しく(EVENT[3], ENTITY[1]) ∧ LOC(EVENT[3]) = EVENT[東北大フォーシーズンズ])
+
+# ::id 63_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 東北大学百周年記念会館 ・ 川内萩ホール （ 仙台市 青葉区 ） で 展開 し て いる 「 フォーシーズンズ・プログラム 」 （ 主催 ・ 河北新報社 、 東北大 、 東北放送 、 協賛 ・ 菓匠三全 ） の ２０１４ 年度 第１ 回 公演 として 、 ドイツ出身 の 人気若手ピアニスト 、 アリス＝紗良・オット の リサイタル が ６ 月 １日 午後 ２ 時 から 開か れ ます 。
+∃ EVENT[6] EVENT[12] GROUP[2] GROUP[8] ENTITY[11] ENTITY[7] ENTITY[1] (
+ namely_-ENTITY-(FAC[東北大学百周年記念会館], ENTITY[川内萩ホール]) ∧
+  namely_-ENTITY-(GPE[仙台市_青葉区], ENTITY[川内萩ホール]) ∧
+   展開する.0_て_いる(EVENT[6], EVENT[フォーシーズンズ.プログラム]) ∧ で(EVENT[6]) = ENTITY[川内萩ホール] ∧
+    ∃ GROUP[4] ENTITY[3] (
+     is_subset_of_or_equal_to(ORG[河北新報社], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[東北大], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[東北放送], GROUP[4]) ∧
+      equals_主催(GROUP[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧ is_subset_of_or_equal_to(ORG[協賛_菓匠三全], GROUP[2]) ∧
+     namely_-EVENT-(GROUP[2], EVENT[フォーシーズンズ.プログラム]) ∧
+      (CD_２０１４_年度_第１_回(ENTITY[1]), の_公演(EVENT[フォーシーズンズ.プログラム], ENTITY[1])) ∧
+       ∃ ENTITY[10] ENTITY[9] (ドイツ出身(ENTITY[10]) ∧ の_人気若手ピアニスト(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+        is_element_of(PERSON[アリス＝紗良.オット], GROUP[8]) ∧
+        の_リサイタル(GROUP[8], ENTITY[7]) ∧
+         (CD_６_月_１日_２_時(ENTITY[11]), 午後(ENTITY[11])) ∧
+          開く.0_ます(EVENT[12], _, ENTITY[7]) ∧ から(EVENT[12]) = ENTITY[11] ∧
+           として(EVENT[12]) = ENTITY[1])
+
+# ::id 64_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt オット は ５ 歳 で 最初 の コンクール に 入賞 後 、 ヨーロッパ 各地 の コンクール で 優勝 。
+∃ SITUATION[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] LOC[7] ENTITY[6] (
+ CD_５_歳(ENTITY[2]) ∧
+  最初(ENTITY[4]) ∧
+   の_コンクール(ENTITY[4], ENTITY[3]) ∧
+    後(SITUATION[1],
+     する.0(EVENT[5], ENTITY[オット]) ∧ に(EVENT[5]) = ENTITY[3] ∧ で(EVENT[5]) = ENTITY[2]) ∧
+     ヨーロッパ_各地(LOC[7]) ∧
+      の_コンクール(LOC[7], ENTITY[6]) ∧
+       する.0(EVENT[8], ENTITY[オット]) ∧ で(EVENT[8]) = ENTITY[6] ∧ 時間(EVENT[8]) = SITUATION[1])
+
+# ::id 65_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ミュンヘン・フィルハーモニー交響楽団 、 ウィーン交響楽団 など 数々 の 名門オーケストラ と 共演 を 重ね 、 優れ た 演奏力 は 世界各地 で 絶賛 を 浴び て い ます 。
+∃ ENTITY[1] EVENT[11] ENTITY[10] ENTITY[9] EVENT[8] ENTITY[6] (
+ 優れる.0_た(EVENT[8], ENTITY[6]) ∧ 演奏力(ENTITY[6]) ∧
+  past(EVENT[8]) ∧
+   ENTITY[1] = *pro* ∧
+    世界各地(ENTITY[9]) ∧
+     絶賛(ENTITY[10]) ∧
+      数々_の GROUP[3] ENTITY[2] ((is_subset_of_or_equal_to(ORG[ミュンヘン.フィルハーモニー交響楽団], GROUP[3]) ∧ is_subset_of_or_equal_to(ORG[ウィーン交響楽団], GROUP[3]) ∧ など_名門オーケストラ(GROUP[3], ENTITY[2])),
+       ∃ EVENT[5] ENTITY[4] (共演(ENTITY[4]) ∧ 重ねる.0(EVENT[5], ENTITY[1], ENTITY[4]) ∧ と(EVENT[5]) = ENTITY[2])) ∧
+       浴びる.0_て_い_ます(EVENT[11], ENTITY[6], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[9])
+
+# ::id 66_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ２０１２ 年 に は 復興支援チャリティー公演 を 仙台 で 開催 し まし た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ CD_２０１２_年(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   復興支援チャリティー公演(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     開催する.0_まし_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = GPE[仙台] ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 67_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 当日 は ベートーベン 「 ピアノ・ソナタ 第１７ 番 『 テンペスト 』 」 、 バッハ 『 幻想曲とフーガ 』 、 リスト 『 パガニーニ大練習曲 』 など を 披露 し ます 。
+∃ ENTITY[1] EVENT[5] GROUP[4] ENTITY[3] ENTITY[2] (
+ 当日(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   namely_-WORK_OF_ART-(WORK_OF_ART[テンペスト], WORK_OF_ART[テンペスト]) ∧ namely_-PERSON-(WORK_OF_ART[ピアノ.ソナタ_第１７_番], PERSON[ベートーベン]) ∧ is_element_of(PERSON[ベートーベン], GROUP[4]) ∧
+    namely_-PERSON-(WORK_OF_ART[幻想曲とフーガ], PERSON[バッハ]) ∧ is_element_of(PERSON[バッハ], GROUP[4]) ∧
+    namely_-PERSON-(WORK_OF_ART[パガニーニ大練習曲], PERSON[リスト]) ∧ is_element_of(PERSON[リスト], GROUP[4]) ∧
+    など(GROUP[4], ENTITY[3]) ∧ 披露する.0_ます(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 時間(EVENT[5]) = ENTITY[2])
+
+# ::id 68_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 入場料 は Ｓ席 ５５００ 円 、 Ａ席 ４５００ 円 、 藤崎 、 仙台三越 、 チケットぴあ 、 ローソンチケット 、 イープラス 、 河北チケットセンター で 今月 ２３ 日 発売 予定 。
+∃ ENTITY[1] EVENT[6] EVENT[10] GROUP[3] ENTITY[9] TIME[8] GROUP[7] ENTITY[2] (
+ 入場料(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] ((CD_５５００_円(ENTITY[4]), Ｓ席(ENTITY[4])) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] ((CD_４５００_円(ENTITY[5]), Ａ席(ENTITY[5])) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    is_subset_of_or_equal_to(ORG[藤崎], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[仙台三越], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[チケットぴあ], GROUP[7]) ∧
+     is_subset_of_or_equal_to(ORG[ローソンチケット], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[イープラス], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[河北チケットセンター], GROUP[7]) ∧
+     (CD_２３_日(TIME[8]), 今月(TIME[8])) ∧
+      発売_予定(ENTITY[9]) ∧
+       xxx(EVENT[6], ENTITY[2], GROUP[3]) ∧
+        xxx(EVENT[10], ENTITY[1], ENTITY[9]) ∧ is_contained_in(時間(EVENT[10]), TIME[8]) ∧
+         で(EVENT[10]) = GROUP[7])
+
+# ::id 69_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ 東北学院大 「 時代 の 音 」
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 時代(ENTITY[2]) ∧
+  の_音(ENTITY[2], ENTITY[1]) ∧
+   namely_-ORG-(ENTITY[1], ORG[東北学院大]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ORG[東北学院大])
+
+# ::id 70_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ 弦楽 四重奏 を 披露
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 弦楽_四重奏(ENTITY[2]) ∧ する.0(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 71_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ２８ 日 ・ 仙台
+∃ EVENT[2] TIME[1] (
+ CD_２８_日(TIME[1]) ∧
+  xxx(EVENT[2]) ∧ LOC(EVENT[2]) = GPE[仙台] ∧ is_contained_in(時間(EVENT[2]), TIME[1]))
+
+# ::id 72_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 東北学院大 と 河北新報社 が 主催 する 連続レクチャーコンサート 「 時代 の 音 」 の ２０１３ 年度 第３ 回 公演 が ２８ 日 午後 ６ 時 半 から 、 仙台市 青葉区 の 同大土樋キャンパス礼拝堂 で 開か れ ます 。
+∃ EVENT[5] EVENT[9] ENTITY[7] GROUP[4] ENTITY[2] ENTITY[6] ENTITY[8] ENTITY[1] (
+ 時代(ENTITY[7]) ∧
+  の_音(ENTITY[7], ENTITY[6]) ∧
+   CONJ_と(is_subset_of_or_equal_to(ORG[東北学院大], GROUP[4]), is_subset_of_or_equal_to(ORG[河北新報社], GROUP[4])) ∧
+    主催する.0(EVENT[5], GROUP[4], ENTITY[2]) ∧ 連続レクチャーコンサート(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[6]) ∧
+      (CD_２０１３_年度_第３_回(ENTITY[1]), の_公演(ENTITY[6], ENTITY[1])) ∧
+       (CD_２８_日_６_時_半(ENTITY[8]), 午後(ENTITY[8])) ∧
+        の_xxx(NORP[仙台市_青葉区], FAC[同大土樋キャンパス礼拝堂]) ∧
+         開く.0_ます(EVENT[9], _, ENTITY[1]) ∧ で(EVENT[9]) = FAC[同大土樋キャンパス礼拝堂] ∧
+          から(EVENT[9]) = ENTITY[8])
+
+# ::id 73_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt キーパーソン として １３ 年度 最終 回 に 臨む 鈴木秀美 （ チェロ ） を 中心 に ４ 人 が 弦楽 四重奏 を 披露 。
+∃ EVENT[6] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[1] (
+ キーパーソン(ENTITY[4]) ∧
+  (CD_１３_年度(ENTITY[5]), 最終_回(ENTITY[5])) ∧
+   臨む.0(EVENT[6], PERSON[鈴木秀美]) ∧ に(EVENT[6]) = ENTITY[5] ∧ として(EVENT[6]) = ENTITY[4] ∧
+    チェロ(ENTITY[2]) ∧
+     namely_-PERSON-(ENTITY[2], PERSON[鈴木秀美]) ∧
+      を_中心(PERSON[鈴木秀美], ENTITY[1]) ∧
+       CD_４_人(ENTITY[7]) ∧
+        弦楽_四重奏(ENTITY[8]) ∧ する.0(EVENT[9], ENTITY[7], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[1])
+
+# ::id 74_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 年度 を 通じ た テーマ 「 ヴィオロンチェロ の 黎明 （ れいめい ） 」 の 集大成 として 、 弦楽合奏 における チェロ の 役割 に 迫り ます 。
+∃ ENTITY[1] EVENT[7] EVENT[12] ENTITY[6] ENTITY[8] ENTITY[3] ENTITY[4] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  年度(ENTITY[6]) ∧
+   ヴィオロンチェロ(ENTITY[8]) ∧
+    通じる.0_た(EVENT[7], ENTITY[4], ENTITY[6]) ∧ の_テーマ(ENTITY[8], ENTITY[4]) ∧ の_黎明(ENTITY[8], ENTITY[4]) ∧
+     れいめい(ENTITY[3]) ∧
+      namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧
+       の_集大成(ENTITY[4], ENTITY[2]) ∧
+        弦楽合奏(ENTITY[11]) ∧
+         における_チェロ(ENTITY[11], ENTITY[10]) ∧
+          の_役割(ENTITY[10], ENTITY[9]) ∧
+           past(EVENT[7]) ∧
+            迫る.0_ます(EVENT[12], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[9] ∧ として(EVENT[12]) = ENTITY[2])
+
+# ::id 75_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 鈴木 以外 の 出演者 は 若松夏美 （ バイオリン ） 、 竹嶋祐子 （ 同 ） 、 成田寛 （ ビオラ ） 。
+∃ EVENT[7] GROUP[3] PERSON[2] ENTITY[1] (
+ 鈴木_以外(PERSON[2]) ∧
+  の_出演者(PERSON[2], ENTITY[1]) ∧
+   ∃ ENTITY[4] (バイオリン(ENTITY[4]) ∧ namely_-PERSON-(ENTITY[4], PERSON[若松夏美]) ∧ is_element_of(PERSON[若松夏美], GROUP[3])) ∧
+    ∃ ENTITY[5] (同(ENTITY[5]) ∧ namely_-PERSON-(ENTITY[5], PERSON[竹嶋祐子]) ∧ is_element_of(PERSON[竹嶋祐子], GROUP[3])) ∧
+    ∃ ENTITY[6] (ビオラ(ENTITY[6]) ∧ namely_-PERSON-(ENTITY[6], PERSON[成田寛]) ∧ is_element_of(PERSON[成田寛], GROUP[3])) ∧
+    xxx(EVENT[7], ENTITY[1], GROUP[3]))
+
+# ::id 76_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 曲目 は ハイドン 「 弦楽 四重奏曲 『 蛙 』 」 の ほか 、 モーツァルト と ボッケリーニ の 弦楽 四重奏曲 を 予定 し て い ます 。
+∃ EVENT[5] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 曲目(ENTITY[1]) ∧
+  namely_-WORK_OF_ART-(WORK_OF_ART[蛙], WORK_OF_ART[蛙]) ∧
+   namely_-PERSON-(WORK_OF_ART[弦楽_四重奏曲], PERSON[ハイドン]) ∧
+    の_ほか(PERSON[ハイドン], ENTITY[2]) ∧
+     CONJ_と(is_element_of(PERSON[モーツァルト], GROUP[4]), is_element_of(PERSON[ボッケリーニ], GROUP[4])) ∧
+      の_弦楽_四重奏曲(GROUP[4], ENTITY[3]) ∧ 予定する.0_て_い_ます(EVENT[5], ENTITY[1], ENTITY[3]) ∧ ADV(EVENT[5]) = ENTITY[2])
+
+# ::id 77_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 入場料 は 一般前売り ２０００ 円 （ 当日 ２５００ 円 ） で 藤崎 、 仙台三越 、 チケットぴあ 、 ローソンチケット 、 河北チケットセンター で 販売中 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] GROUP[5] ENTITY[2] (
+ 入場料(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_一般前売り_２０００_円_（_当日_２５００_円_）(ENTITY[3]) ∧
+    is_subset_of_or_equal_to(ORG[藤崎], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[仙台三越], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[チケットぴあ], GROUP[5]) ∧
+     is_subset_of_or_equal_to(ORG[ローソンチケット], GROUP[5]) ∧ is_subset_of_or_equal_to(ORG[河北チケットセンター], GROUP[5]) ∧
+     xxx(EVENT[4], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[3] ∧
+      xxx(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = GROUP[5])
+
+# ::id 78_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 連絡先 は 東北学院大学長室事務課 ０２２（２６４）６４２４ 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (連絡先(ENTITY[1]) ∧ 東北学院大学長室事務課_０２２（２６４）６４２４(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 79_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ アシュケナージ ・ ピアノデュオ
+∃ EVENT[2] PERSON[1] (アシュケナージ_ピアノデュオ(PERSON[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[1])
+
+# ::id 80_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ３ 月 ・ 仙台
+∃ EVENT[2] TIME[1] (
+ CD_３_月(TIME[1]) ∧
+  xxx(EVENT[2]) ∧ LOC(EVENT[2]) = GPE[仙台] ∧ is_contained_in(時間(EVENT[2]), TIME[1]))
+
+# ::id 81_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 巨匠 ウラディーミル・アシュケナージ と 長男 ボフカ による リサイタル 「 ピアノ・デュオ 」 が ３ 月 １３ 日 午後 ７ 時 から 、 仙台市 青葉区 の 東京エレクトロンホール宮城 で 開か れ ます 。
+∃ ENTITY[1] EVENT[6] EVENT[7] GROUP[4] ENTITY[2] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(is_element_of(PERSON[巨匠_ウラディーミル.アシュケナージ], GROUP[4]), is_element_of(PERSON[長男_ボフカ], GROUP[4])) ∧
+   による_リサイタル(GROUP[4], ENTITY[3]) ∧
+    ピアノ.デュオ(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      (CD_３_月_１３_日_７_時(ENTITY[5]), 午後(ENTITY[5])) ∧
+       の_xxx(NORP[仙台市_青葉区], FAC[東京エレクトロンホール宮城]) ∧
+        xxx(EVENT[6], ENTITY[3]) ∧ から(EVENT[6]) = ENTITY[5] ∧
+         開く.0_ます(EVENT[7], _, ENTITY[1]) ∧ で(EVENT[7]) = FAC[東京エレクトロンホール宮城])
+
+# ::id 82_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 演奏 さ れる ブラームス 「 ハイドン の 主題 による 変奏曲 」 は メロディー も 有名 な 長編曲 。
+∃ SITUATION[5] EVENT[7] EVENT[8] ENTITY[6] ENTITY[2] ENTITY[1] EVENT[4] (
+ 演奏する.0(EVENT[4], _, PERSON[ブラームス]) ∧
+  の_主題(PERSON[ハイドン], ENTITY[2]) ∧
+   による_変奏曲(ENTITY[2], ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[ブラームス]) ∧
+     メロディー(ENTITY[6]) ∧ 長編曲(SITUATION[5], 有名_な(EVENT[7], ENTITY[6])) ∧ xxx(EVENT[8], PERSON[ブラームス], SITUATION[5]))
+
+# ::id 83_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ムソルグスキー 「 禿山の一夜 」 （ ボフカ・アシュケナージ 編 ） は 、 ボフカ の 素晴らしい アレンジ で 魅力的 に 聴か せ ます 。
+∃ ATTRIB[6] ENTITY[2] ENTITY[1] EVENT[7] EVENT[3] ENTITY[5] PERSON[4] (
+ namely_-WORK_OF_ART-(WORK_OF_ART[禿山の一夜], WORK_OF_ART[ムソルグスキー]) ∧
+  ボフカ.アシュケナージ_編(PERSON[4]) ∧
+   namely_-WORK_OF_ART-(PERSON[4], WORK_OF_ART[ムソルグスキー]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[2] = *pro* ∧
+      素晴らしい(ATTRIB[6]) ∧
+       ATTRIBUTE_アレンジ(ATTRIB[6], ENTITY[5]) ∧ の_アレンジ(PERSON[ボフカ], ENTITY[5]) ∧
+        ADV_魅力的_に(EVENT[7]) ∧
+         させる.0_ます(EVENT[3], ENTITY[1], ENTITY[2],
+          聴く.0(EVENT[7], ENTITY[2], WORK_OF_ART[ムソルグスキー]) ∧ で(EVENT[7]) = ENTITY[5]))
+
+# ::id 84_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ストラビンスキー 「 春の祭典 」 は 大巨匠 の 魅力 が 最大限 に 発揮 さ れる ロシア の 作品 です 。
+∃ EVENT[5] EVENT[6] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ namely_-PERSON-(WORK_OF_ART[春の祭典], PERSON[ストラビンスキー]) ∧
+  大巨匠(ENTITY[3]) ∧
+   の_魅力(ENTITY[3], ENTITY[2]) ∧
+    最大限(ENTITY[4]) ∧
+     の_作品(NORP[ロシア], ENTITY[1]) ∧
+      THAT_作品(発揮する.0(EVENT[5], _, ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4], ENTITY[1]) ∧
+      です(EVENT[6], PERSON[ストラビンスキー], ENTITY[1]))
+
+# ::id 85_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 他 に シューベルト 「 ハンガリー 風 ディベルティメント 」 も 演奏 さ れ ます 。
+∃ EVENT[3] WORK_OF_ART[2] ENTITY[1] (
+ 他(ENTITY[1]) ∧
+  ハンガリー_風_ディベルティメント(WORK_OF_ART[2]) ∧
+   namely_-PERSON-(WORK_OF_ART[2], PERSON[シューベルト]) ∧ 演奏する.0_ます(EVENT[3], _, PERSON[シューベルト]) ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 86_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 入場料 は Ｓ席 ９０００ 円 、 Ａ席 ７０００ 円 、 藤崎 、 仙台三越 、 チケットぴあ 、 ローソンチケット 、 東京エレクトロンホール宮城 、 河北チケットセンター で 販売中 。
+∃ ENTITY[1] EVENT[6] EVENT[9] GROUP[3] ENTITY[8] GROUP[7] ENTITY[2] (
+ 入場料(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] ((CD_９０００_円(ENTITY[4]), Ｓ席(ENTITY[4])) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] ((CD_７０００_円(ENTITY[5]), Ａ席(ENTITY[5])) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    is_subset_of_or_equal_to(ORG[藤崎], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[仙台三越], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[チケットぴあ], GROUP[7]) ∧
+     is_subset_of_or_equal_to(ORG[ローソンチケット], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[東京エレクトロンホール宮城], GROUP[7]) ∧ is_subset_of_or_equal_to(ORG[河北チケットセンター], GROUP[7]) ∧
+     販売中(ENTITY[8]) ∧
+      xxx(EVENT[6], ENTITY[2], GROUP[3]) ∧
+       xxx(EVENT[9], ENTITY[1], ENTITY[8]) ∧ で(EVENT[9]) = GROUP[7])
+
+# ::id 87_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ◎ 第７７ 回 河北美術展
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[第７７_回_河北美術展])
+
+# ::id 88_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ 入賞・入選作品 一堂 に
+∃ EVENT[3] ENTITY[2] ENTITY[1] (入賞.入選作品(ENTITY[1]) ∧ 一堂(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2])
+
+# ::id 89_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt ／ ４ 月 から ・ 仙台
+∃ EVENT[2] ENTITY[1] (CD_４_月(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LOC(EVENT[2]) = GPE[仙台] ∧ から(EVENT[2]) = ENTITY[1])
+
+# ::id 90_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 第７７ 回 河北美術展 （ 主催 ・ 河北新報社 、 河北文化事業団 、 特別協賛 ＪＡＬ ） が ４ 月 ２５ 日 から ５ 月 ６ 日 まで 、 仙台市 青葉区 の 藤崎 本館 で 開催 さ れ ます 。
+∃ EVENT[8] GROUP[2] ENTITY[1] ORG[7] ENTITY[6] ENTITY[5] (
+ ∃ GROUP[4] ENTITY[3] (
+  is_subset_of_or_equal_to(ORG[河北新報社], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[河北文化事業団], GROUP[4]) ∧
+   equals_主催(GROUP[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧ is_subset_of_or_equal_to(ORG[特別協賛_ＪＡＬ], GROUP[2]) ∧
+  equals(GROUP[2], ENTITY[1]) ∧
+   namely_-EVENT-(ENTITY[1], EVENT[第７７_回_河北美術展]) ∧
+    CD_４_月_２５_日(ENTITY[5]) ∧
+     CD_５_月_６_日(ENTITY[6]) ∧
+      の_藤崎_本館(NORP[仙台市_青葉区], ORG[7]) ∧
+       開催する.0_ます(EVENT[8], _, EVENT[第７７_回_河北美術展]) ∧ で(EVENT[8]) = ORG[7] ∧
+        まで(EVENT[8]) = ENTITY[6] ∧ から(EVENT[8]) = ENTITY[5])
+
+# ::id 91_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 審査員 は 、 日本画 が 福王寺一彦 （ 日本美術院 ） 、 岡村倫行 （ 日展 ） 、 洋画 が 村田省蔵 （ 日展 ） 、 大津英敏 （ 独立美術協会 ） 、 櫃田伸也 （ 無所属 ） 、 彫刻 が 木戸修 （ 無所属 ） の ６ 氏 。
+∃ SITUATION[3] EVENT[6] EVENT[10] EVENT[13] EVENT[14] GROUP[5] ENTITY[4] GROUP[8] ENTITY[7] ENTITY[12] ENTITY[11] ENTITY[2] ENTITY[1] (
+ 審査員(ENTITY[1]) ∧
+  日本画(ENTITY[4]) ∧
+   namely_-PERSON-(ORG[日本美術院], PERSON[福王寺一彦]) ∧ is_element_of(PERSON[福王寺一彦], GROUP[5]) ∧
+    namely_-PERSON-(ORG[日展], PERSON[岡村倫行]) ∧ is_element_of(PERSON[岡村倫行], GROUP[5]) ∧
+    洋画(ENTITY[7]) ∧
+     namely_-PERSON-(ORG[日展], PERSON[村田省蔵]) ∧ is_element_of(PERSON[村田省蔵], GROUP[8]) ∧
+      namely_-PERSON-(ORG[独立美術協会], PERSON[大津英敏]) ∧ is_element_of(PERSON[大津英敏], GROUP[8]) ∧
+      ∃ ENTITY[9] (無所属(ENTITY[9]) ∧ namely_-PERSON-(ENTITY[9], PERSON[櫃田伸也]) ∧ is_element_of(PERSON[櫃田伸也], GROUP[8])) ∧
+      彫刻(ENTITY[11]) ∧
+       無所属(ENTITY[12]) ∧
+        namely_-PERSON-(ENTITY[12], PERSON[木戸修]) ∧
+         FACT(SITUATION[3],
+          xxx(EVENT[6], ENTITY[4], GROUP[5]) ∧ xxx(EVENT[10], ENTITY[7], GROUP[8]) ∧
+           xxx(EVENT[13], ENTITY[11], PERSON[木戸修])) ∧
+          (CD_６_氏(ENTITY[2]), の(SITUATION[3], ENTITY[2])) ∧ xxx(EVENT[14], ENTITY[1], ENTITY[2]))
+
+# ::id 92_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 会場 に は 厳正 な 審査 で 選ば れ た 河北賞 をはじめ 、 入賞 ・ 入選作 が 一堂 に 展示 さ れ ます 。
+∃ ATTRIB[4] EVENT[5] EVENT[8] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[1] (
+ 会場(ENTITY[1]) ∧
+  厳正_な(ATTRIB[4]) ∧
+   ATTRIBUTE_審査(ATTRIB[4], ENTITY[3]) ∧
+    選ぶ.0_た(EVENT[5], _, EVENT[河北賞]) ∧ で(EVENT[5]) = ENTITY[3] ∧
+     入賞_入選作(ENTITY[6]) ∧
+      一堂(ENTITY[7]) ∧
+       past(EVENT[5]) ∧
+        展示する.0_ます(EVENT[8], _, ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[7] ∧
+         をはじめ(EVENT[8]) = EVENT[河北賞] ∧ に(EVENT[8]) = ENTITY[1])
+
+# ::id 93_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 作品 は ４ 月 ８ 、 ９ の 両日 午前 １０ 時 から 午後 ５ 時 まで 、 仙台市 青葉体育館 （ 青葉区 堤町 ） で 受け付け ます 。
+∃ EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] TIME[2] ENTITY[1] (
+ 作品(ENTITY[1]) ∧
+  CD_４_月_８_９(ENTITY[3]) ∧
+   の_両日(ENTITY[3], TIME[2]) ∧
+    (CD_１０_時(ENTITY[4]), 午前(ENTITY[4])) ∧
+     (CD_５_時(ENTITY[5]), 午後(ENTITY[5])) ∧
+      namely_-FAC-(GPE[青葉区_堤町], FAC[仙台市_青葉体育館]) ∧
+       受け付ける.0_ます(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = FAC[仙台市_青葉体育館] ∧ まで(EVENT[6]) = ENTITY[5] ∧
+        から(EVENT[6]) = ENTITY[4] ∧ is_contained_in(時間(EVENT[6]), TIME[2]))
+
+# ::id 94_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 前記 の 期日 に 搬入 でき ない 場合 は 、 運送業者 を 利用 し 、 ３ 月 ３１ 日 ～ ４ 月 ３ 日 必着 で 河北新報社地域連携部 「 美術展 」 係 へ お送り ください 。
+∃ SITUATION[2] ENTITY[1] EVENT[7] EVENT[11] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[9] ENTITY[10] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  前記(ENTITY[4]) ∧
+   の_期日(ENTITY[4], ENTITY[3]) ∧
+    場合(SITUATION[2], ¬ ∃ EVENT[5] (搬入できる.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3])) ∧
+     運送業者(ENTITY[6]) ∧
+      (CD_３_月_３１_日_４_月_３_日(ENTITY[8]), 必着(ENTITY[8])) ∧
+       河北新報社地域連携部_係(ENTITY[10]) ∧
+        美術展(ENTITY[9]) ∧
+         namely_-ENTITY-(ENTITY[9], ENTITY[10]) ∧
+          利用する.0(EVENT[7], ENTITY[1], ENTITY[6]) ∧
+           送る.0_ください(EVENT[11], ENTITY[1]) ∧ へ(EVENT[11]) = ENTITY[10] ∧ で(EVENT[11]) = ENTITY[8] ∧
+            TPC(EVENT[11]) = SITUATION[2])
+
+# ::id 95_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 出品料 と 出品申込書 は 作品 と は 別 に 現金書留 で の 郵送 が 必要 です 。
+ EVENT[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[3] ENTITY[5] GROUP[1] (
+ 出品料(ENTITY[2]) ∧
+  出品申込書(ENTITY[3]) ∧
+   CONJ_と(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧
+    作品(ENTITY[5]) ∧
+     と_別(ENTITY[5], ENTITY[4]) ∧
+      現金書留(ENTITY[7]) ∧
+       で_の_郵送(ENTITY[7], ENTITY[6]) ∧
+        必要_です(EVENT[8], (GROUP[1], ENTITY[6])) ∧ に(EVENT[8]) = ENTITY[4])
+
+# ::id 96_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 詳細 は 募集要項 を ご覧 ください 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ 詳細(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   募集要項(ENTITY[3]) ∧ 見る.0_ください(EVENT[4], ENTITY[1], ENTITY[3]) ∧ ADV(EVENT[4]) = ENTITY[2])
+
+# ::id 97_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 入賞 ・ 入選者 は ４ 月 ２５ 日付 の 河北新報 朝刊 と ホームページ で 発表 し ます 。
+∃ ENTITY[1] EVENT[7] GROUP[3] ENTITY[2] (
+ 入賞_入選者(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_と(∃ ENTITY[5] WORK_OF_ART[4] (CD_４_月_２５_日付(ENTITY[5]) ∧ の_河北新報_朝刊(ENTITY[5], WORK_OF_ART[4]) ∧ is_element_of(WORK_OF_ART[4], GROUP[3])),
+    ∃ ENTITY[6] (ホームページ(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+    発表する.0_ます(EVENT[7], ENTITY[1], ENTITY[2]) ∧ で(EVENT[7]) = GROUP[3])
+
+# ::id 98_newswire_00042_K201402120A0KI0XX00001;NJ
+# ::snt 募集要項 など 出品 に 必要 な 書類 の 請求 は 河北新報社地域連携部 まで 。
+∃ ENTITY[1] EVENT[9] ENTITY[8] EVENT[7] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 募集要項(ENTITY[4]) ∧
+  出品(ENTITY[6]) ∧
+   必要_な(EVENT[7], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[6] ∧ など_書類(ENTITY[4], ENTITY[3]) ∧
+    の_請求(ENTITY[3], ENTITY[2]) ∧
+     ENTITY[1] = *pro* ∧
+      河北新報社地域連携部(ENTITY[8]) ∧ xxx(EVENT[9], ENTITY[1], ENTITY[2]) ∧ まで(EVENT[9]) = ENTITY[8])

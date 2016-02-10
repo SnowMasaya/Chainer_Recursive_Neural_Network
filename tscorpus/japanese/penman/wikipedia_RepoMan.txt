@@ -1,0 +1,121 @@
+# ::id 1_wikipedia_RepoMan;NJ
+# ::snt レポマン
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-レポマン / ENTITY
+             :name ( n-2 / name
+                    :op1 "レポマン")))
+
+# ::id 2_wikipedia_RepoMan;NJ
+# ::snt あらすじ
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / あらすじ))
+
+# ::id 3_wikipedia_RepoMan;NJ
+# ::snt ロサンゼルス 。
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-ロサンゼルス / ENTITY
+             :name ( n-2 / name
+                    :op1 "ロサンゼルス")))
+
+# ::id 4_wikipedia_RepoMan;NJ
+# ::snt パンク の 青年 オットー は 勤め て い た スーパーマーケット を 解雇 さ れ 、 家族 から は 疎んじ られ 、 悶々とし た 日々 を 過ごし て い た 。
+( CONJ-19 / AND
+      :op1 ( EVENT-7 / 解雇する.0
+             :ARG1 ( ENTITY-3 / スーパーマーケット
+                    :LOC-of ( EVENT-6 / 勤め_て_い_た
+                           :ARG0 ( PICK-14 / or
+                                  :op1 ENTITY-オットー
+                                  :op2 ENTITY-1
+                                  :op3 ENTITY-2)
+                           :MOD ( mod-16 / past))))
+      :op2 ( EVENT-13 / 過ごし_て_い_た
+             :ARG0 ( ENTITY-オットー / ENTITY
+                    :name ( n-18 / name
+                           :op1 "オットー")
+                    :ARG1-of ( EVENT-9 / 疎んじ
+                           :から ( ENTITY-8 / 家族))
+                    :NAMELY ( ENTITY-1 / 青年
+                           :の ( ENTITY-2 / パンク)))
+             :ARG1 ( SITUATION-10 / 日々
+                    :THAT ( EVENT-12 / 悶々とし_た
+                           :ARG0 ( PICK-15 / or
+                                  :op1 ENTITY-オットー
+                                  :op2 ENTITY-8
+                                  :op3 ENTITY-3
+                                  :op4 ENTITY-1
+                                  :op5 ENTITY-2)))
+             :MOD ( mod-17 / past)))
+
+# ::id 5_wikipedia_RepoMan;NJ
+# ::snt ある 日 、 オットー は 借金 の カタ として 自動車 を 回収 する 業者 ＝ レポマン の バッド という 男 と 知り合い 、 自分 も レポマン に なる 事 を 決める 。
+( EVENT-15 / 決める
+      :ARG0 ( ENTITY-オットー / ENTITY
+             :name ( n-17 / name
+                    :op1 "オットー")
+             :ARG0-of ( EVENT-10 / 知り合い
+                    :と ( ENTITY-2 / 男
+                           :という ( ENTITY-バッド / ENTITY
+                                  :name ( n-18 / name
+                                         :op1 "バッド")
+                                  :の ( ENTITY-9 / レポマン
+                                         :NAMELY ( ENTITY-3 / 業者
+                                                :ARG0-of ( EVENT-8 / 回収する.0
+                                                       :ARG1 ( ENTITY-7 / 自動車)
+                                                       :として ( ENTITY-5 / カタ
+                                                              :の ( ENTITY-6 / 借金)))))))))
+      :ARG1 ( SITUATION-11 / 事
+             :THAT ( EVENT-14 / なる
+                    :ARG0 ( PICK-16 / or
+                           :op1 ENTITY-オットー
+                           :op2 ENTITY-2
+                           :op3 ENTITY-9
+                           :op4 ENTITY-3
+                           :op5 ENTITY-5
+                           :op6 ENTITY-7
+                           :op7 ENTITY-6
+                           :op8 ENTITY-バッド)
+                    :に ( ENTITY-13 / レポマン)))
+      :TMP ( TIME-1 / 日))
+
+# ::id 6_wikipedia_RepoMan;NJ
+# ::snt ある 日 、 1 台 の 車 に 高額 の 懸賞金 が かけ られ 、 オットーたち は 色めき立つ 。
+( CONJ-9 / AND
+      :op1 ( EVENT-6 / かけ
+             :ARG1 ( ENTITY-4 / 懸賞金
+                    :の ( ENTITY-5 / 高額))
+             :に ( ENTITY-2 / 車
+                    :の ( ENTITY-3 / CD_1_台)))
+      :op2 ( EVENT-8 / 色めき立つ
+             :ARG0 ( ENTITY-7 / オットーたち)
+             :TMP ( TIME-1 / 日)))
+
+# ::id 7_wikipedia_RepoMan;NJ
+# ::snt 商売仇 と の 駆け引き の 末 、 車 の 回収 に 成功 し た オットーたち で あっ た が 、 その 車 に は 何と 宇宙人 の 死体 が 積ま れ て い た 。
+( CONJ-15 / CONJ_が
+      :op1 ( EVENT-9 / で_あっ_た
+             :ARG1 ( ENTITY-4 / オットーたち
+                    :ARG0-of ( EVENT-8 / 成功する.0_た
+                           :に ( ENTITY-6 / 回収
+                                  :の ( ENTITY-7 / 車))
+                           :MOD ( mod-16 / past)))
+             :ADV ( ENTITY-1 / 末
+                    :の ( ENTITY-2 / 駆け引き
+                           :と_の ( ENTITY-3 / 商売仇)))
+             :MOD ( mod-17 / past))
+      :op2 ( EVENT-13 / 積ま_て_い_た
+             :ARG1 ( ENTITY-11 / 死体
+                    :の ( ENTITY-12 / 宇宙人))
+             :に ( ENTITY-10 / 車)
+             :MOD ( mod-18 / 何と)
+             :MOD ( mod-19 / past)))
+
+# ::id 8_wikipedia_RepoMan;NJ
+# ::snt オットーたち は 政府 の 手先 の 組織 から 狙わ れる はめ に なる 。
+( EVENT-8 / なる
+      :ARG0 ( ENTITY-1 / オットーたち)
+      :ARG1 ( SITUATION-2 / はめ
+             :THAT ( EVENT-7 / 狙わ
+                    :ARG1 ENTITY-1
+                    :から ( ENTITY-4 / 組織
+                           :の ( ENTITY-5 / 手先
+                                  :の ( ENTITY-6 / 政府))))))

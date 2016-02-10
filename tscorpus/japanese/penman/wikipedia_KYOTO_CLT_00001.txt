@@ -1,0 +1,220 @@
+# ::id 1_wikipedia_KYOTO_CLT_00001,1;NJ
+# ::snt 京都将棋
+( 京都将棋 / -entity-
+      :name ( n2 / name
+             :op1 "京都将棋"))
+
+# ::id 2_wikipedia_KYOTO_CLT_00001,2;NJ
+# ::snt 京都将棋 （ きょうとしょうぎ ） と は 将棋 の 一種 で あり 、 二 人 で 行なう ボードゲーム （ 盤上遊戯 ） の 一種 で ある 。
+( e11 / で_ある
+      :arg0 ( 京都将棋 / -entity-
+             :name ( n13 / name
+                    :op1 "京都将棋")
+             :arg0-of ( e1 / is
+                    :arg1 ( きょうとしょうぎ / -entity-
+                           :name ( n14 / name
+                                  :op1 "きょうとしょうぎ")))
+             :arg0-of ( e8 / で_あり
+                    :arg1 ( x3 / 一種
+                           :の ( x2 / 将棋))))
+      :arg1 ( x7 / 一種
+             :の ( x6 / ボードゲーム
+                    :arg1-of ( e9 / 行なう
+                           :arg0 ( x12 / pro)
+                           :で ( x4 / CD_二_人))
+                    :arg0-of ( e10 / is
+                           :arg1 ( x5 / 盤上遊戯)))))
+
+# ::id 3_wikipedia_KYOTO_CLT_00001,3;NJ
+# ::snt 1976 年 に 田宮 克哉 が 発表 し た 、 ごく 新しい 将棋 で ある 。
+( e4 / で_ある
+      :arg0 ( x5 / pro)
+      :arg1 ( x1 / 将棋
+             :ATTRIBUTE ( A6 / ごく_新しい)
+             :arg1-of ( e3 / 発表_し_た
+                    :arg0 ( 田宮_克哉 / -entity-
+                           :name ( n7 / name
+                                  :op1 "田宮_克哉"))
+                    :に ( t2 / CD_1976_年)
+                    :tense past)))
+
+# ::id 4_wikipedia_KYOTO_CLT_00001,4;NJ
+# ::snt 京都銀閣将棋 、 京都銀閣金鶏秘譜将棋 と も 言う 。
+( e2 / 言う
+      :arg0 ( x4 / pro)
+      :arg1 ( x3 / pro)
+      :arg2 ( X1 / AND
+             :op1 ( 京都銀閣将棋 / -entity-
+                    :name ( n5 / name
+                           :op1 "京都銀閣将棋"))
+             :op2 ( 京都銀閣金鶏秘譜将棋 / -entity-
+                    :name ( n6 / name
+                           :op1 "京都銀閣金鶏秘譜将棋"))))
+
+# ::id 5_wikipedia_KYOTO_CLT_00001,5;NJ
+# ::snt こう 言う が 香車 の 裏 が と金 だ から で 京都 に は 関係 ない 。
+( r12 / が
+      :op1 ( e5 / 言う
+             :arg0 ( x9 / pro)
+             :mod ( m15 / こう))
+      :op2 ( r13 / て
+             :op1 ( r14 / から
+                    :op1 ( e6 / だ
+                           :arg0 ( x3 / 裏
+                                  :の ( x1 / 香車))
+                           :arg1 ( x2 / と金))
+                    :op2 ( e7 / で
+                           :arg0 ( x10 / pro)))
+             :op2 ( e8 / ない
+                    :arg0 x10
+                    :arg1 ( x4 / 関係)
+                    :に ( 京都 / -entity-
+                           :name ( n11 / name
+                                  :op1 "京都")))))
+
+# ::id 6_wikipedia_KYOTO_CLT_00001,6;NJ
+# ::snt 駒 を 1 手 ごと に 裏返す という 斬新 な ルール で 知ら れる 。
+( e5 / 知ら
+      :arg1 ( x6 / pro)
+      :で ( x3 / ルール
+             :ATTRIBUTE ( A7 / 斬新_な)
+             :THAT ( e4 / 裏返す
+                    :arg0 ( x8 / pro)
+                    :arg1 ( x2 / 駒)
+                    :に ( x1 / CD_1_手))))
+
+# ::id 7_wikipedia_KYOTO_CLT_00001,7;NJ
+# ::snt 大山 康晴 十五 世 名人 が 絶賛 し た と の 逸話 が ある 。
+( e5 / ある
+      :arg0 ( x2 / 逸話
+             :の ( s6 / と
+                    :THAT ( e4 / 絶賛_し_た
+                           :arg0 ( 大山_康晴 / -entity-
+                                  :name ( n8 / name
+                                         :op1 "大山_康晴")
+                                  :arg0-of ( e3 / is
+                                         :arg1 ( x1 / 名人
+                                                :card ( m9 / 十五_世))))
+                           :arg1 ( x7 / pro)
+                           :tense past))))
+
+# ::id 8_wikipedia_KYOTO_CLT_00001,8;NJ
+# ::snt ルール
+( x1 / ルール)
+
+# ::id 9_wikipedia_KYOTO_CLT_00001,9;NJ
+# ::snt ほぼ 将棋 と 同様 だ が 、 以下 の 点 で 異なる 。
+( r9 / が
+      :op1 ( e4 / 同様_だ
+             :arg0 ( x6 / pro)
+             :と ( x1 / 将棋)
+             :mod ( m10 / ほぼ))
+      :op2 ( e5 / 異なる
+             :arg0 ( x7 / pro)
+             :で ( x3 / 点
+                    :の ( x2 / 以下))))
+
+# ::id 10_wikipedia_KYOTO_CLT_00001,10;NJ
+# ::snt 盤 面 は 縦横 5 マス 。
+( e3 / xxx
+      :arg0 ( x1 / 盤_面
+             :mode definite)
+      :arg1 ( x2 / 縦横
+             :card ( m4 / 5_マス)))
+
+# ::id 11_wikipedia_KYOTO_CLT_00001,11;NJ
+# ::snt 自陣 ・ 敵陣 は ない 。
+( e4 / ない
+      :arg0 ( X3 / AND
+             :op1 ( x1 / 自陣)
+             :op2 ( x2 / 敵陣)))
+
+# ::id 12_wikipedia_KYOTO_CLT_00001,12;NJ
+# ::snt 初期 状態 で は 、 右図 の よう に 駒 を 配置 する 。
+( e5 / 配置_する
+      :arg0 ( x6 / pro)
+      :arg1 ( x3 / 駒)
+      :に ( x4 / よう
+             :の ( x2 / 右図))
+      :で ( x1 / 初期_状態
+             :mode definite))
+
+# ::id 13_wikipedia_KYOTO_CLT_00001,13;NJ
+# ::snt 駒 は 次 の 5 種類 。
+( e4 / xxx
+      :arg0 ( x1 / 駒
+             :mode definite)
+      :arg1 ( x3 / -xxx-
+             :card ( m5 / 5_種類)
+             :の ( x2 / 次)))
+
+# ::id 14_wikipedia_KYOTO_CLT_00001,14;NJ
+# ::snt 動き は 将棋 の もの と 同じ 。
+( e4 / 同じ
+      :arg0 ( x1 / 動き
+             :mode definite)
+      :と ( x3 / もの
+             :の ( x2 / 将棋)))
+
+# ::id 15_wikipedia_KYOTO_CLT_00001,20;NJ
+# ::snt 駒 は 成ら ず 、 その 代わりに 1 手 動く ごと に その 駒 を 裏返す 。
+( r14 / て
+      :op1 ( e5 / 成ら
+             :arg0 ( x1 / 駒
+                    :mode definite)
+             :polarity -)
+      :op2 ( e7 / 裏返す
+             :arg0 ( x8 / pro)
+             :arg1 ( x2 / 駒)
+             :に ( e6 / 動く
+                    :arg0 ( x11 / pro)
+                    :MSR ( d4 / CD_1_手))
+             :代わりに x3))
+
+# ::id 16_wikipedia_KYOTO_CLT_00001,21;NJ
+# ::snt すなわち 駒 は 1 手 ごと に 性能 が 変わる 。
+( e4 / 変わる
+      :arg0 ( x2 / 性能)
+      :arg0 ( x1 / 駒
+             :mode definite)
+      :に ( x3 / CD_1_手))
+
+# ::id 17_wikipedia_KYOTO_CLT_00001,22;NJ
+# ::snt 将棋 同様 取っ た 駒 は 打てる が 、 表裏 どちら で 打っ てもよい 。
+( r16 / が
+      :op1 ( e6 / 打てる
+             :arg0 ( x9 / pro)
+             :arg1 ( x2 / 駒
+                    :ATTRIBUTE ( A11 / 同様
+                           :COMP ( x1 / 将棋))
+                    :mode definite
+                    :arg1-of ( e3 / 取っ_た
+                           :arg0 ( x12 / pro)
+                           :tense past)))
+      :op2 ( w14 / てもよい
+             :domain ( e8 / 打っ
+                    :arg0 ( x13 / pro)
+                    :で ( x5 / どちら
+                           :arg0-of ( e7 / is
+                                  :arg1 ( x4 / 表裏))))))
+
+# ::id 18_wikipedia_KYOTO_CLT_00001,23;NJ
+# ::snt また 最後 列 に 歩 や 桂馬 で 打っ て も 構わ ない 。
+( n8 / NEG
+      :domain ( r11 / て
+             :op1 ( e5 / 打っ
+                    :arg0 ( x7 / pro)
+                    :で ( X4 / や
+                           :op1 ( x1 / 歩)
+                           :op2 ( x2 / 桂馬))
+                    :に ( x3 / 最後_列))
+             :op2 ( e6 / 構わ
+                    :arg0 x7)))
+
+# ::id 19_wikipedia_KYOTO_CLT_00001,24;NJ
+# ::snt 打ち歩詰め 、 二歩 は 禁止 さ れ て い ない 。
+( e4 / 禁止_さ_て_い
+      :arg1 ( X3 / AND
+             :op1 ( x1 / 打ち歩詰め)
+             :op2 ( x2 / 二歩))
+      :polarity -)

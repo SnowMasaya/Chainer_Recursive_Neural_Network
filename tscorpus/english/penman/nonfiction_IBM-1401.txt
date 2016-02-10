@@ -1,0 +1,1139 @@
+# ::id 1_nonfiction_IBM-1401;NE
+# ::snt IBM 1401 Programming Systems
+( GROUP-1401_Programming_Systems_IBM / GROUP
+      :name ( n-1 / name
+             :op1 "1401_Programming_Systems_IBM"))
+
+# ::id 2_nonfiction_IBM-1401;NE
+# ::snt When companies order an IBM 1401 Data Processing System , methods-programming staffs are given the responsibility of translating the requirements of management into finished applications .
+( CND-15 / When
+      :op1 ( EVENT-2 / order
+             :ARG0 ( GROUP-1 / companies)
+             :ARG1 ( ENTITY-IBM_1401_Data_Processing_System / ENTITY
+                    :name ( n-16 / name
+                           :op1 "IBM_1401_Data_Processing_System")))
+      :op2 ( EVENT-14 / given
+             :ARG1 ( ENTITY-5 / responsibility
+                    :DEFINITE ( ATTRIB-6 / the)
+                    :OF ( EVENT-13 / translating
+                           :ARG1 ( GROUP-8 / requirements
+                                  :DEFINITE ( ATTRIB-9 / the)
+                                  :OF ( ENTITY-10 / management))
+                           :INTO ( GROUP-11 / applications
+                                  :ATTRIBUTE ( ATTRIB-12 / finished))))
+             :ARG2 ( GROUP-3 / staffs
+                    :ATTRIBUTE ( ATTRIB-4 / methods-programming))))
+
+# ::id 3_nonfiction_IBM-1401;NE
+# ::snt 1401 Programming Systems are helping cut the costs of getting the computer into operation by simplifying and expediting the work of these methods staffs .
+( EVENT-9 / are_helping
+      :ARG0 ( GROUP-1 / 1401_Programming_Systems)
+      :BY ( CONJ-19 / and
+             :op1 ( EVENT-7 / simplifying
+                    :ARG0 GROUP-1
+                    :ARG1 ( ENTITY-3 / work
+                           :DEFINITE ( ATTRIB-4 / the)
+                           :OF ( GROUP-5 / methods_staffs
+                                  :DETERMINER ( ATTRIB-6 / these))))
+             :op2 ( EVENT-8 / expediting
+                    :ARG0 GROUP-1
+                    :ARG1 ENTITY-3))
+      :TOCOMP ( EVENT-17 / cut
+             :ARG0 GROUP-1
+             :ARG1 ( GROUP-10 / costs
+                    :DEFINITE ( ATTRIB-11 / the)
+                    :OF ( EVENT-16 / getting
+                           :ARG1 ( ENTITY-13 / computer
+                                  :DEFINITE ( ATTRIB-14 / the))
+                           :INTO ( ENTITY-15 / operation)))))
+
+# ::id 4_nonfiction_IBM-1401;NE
+# ::snt Modern , high-speed computers , such as the 1401 , are marvelous electronic instruments , but they represent only portions of data processing systems .
+( CONJ-14 / but
+      :op1 ( EVENT-8 / copula
+             :ARG0 ( GROUP-1 / computers
+                    :ATTRIBUTE ( ATTRIB-4 / such
+                           :AS ( ENTITY-1401 / ENTITY
+                                  :name ( n-15 / name
+                                         :op1 "1401")))
+                    :ATTRIBUTE ( ATTRIB-3 / high-speed)
+                    :ATTRIBUTE ( ATTRIB-2 / modern))
+             :ARG1 ( GROUP-5 / instruments
+                    :ATTRIBUTE ( ATTRIB-7 / electronic)
+                    :ATTRIBUTE ( ATTRIB-6 / marvelous)))
+      :op2 ( EVENT-13 / represent
+             :ARG0 ( REF1-9 / they)
+             :ARG1 ( GROUP-10 / portions
+                    :OF ( GROUP-12 / data_processing_systems)
+                    :QUANTIFIER ( ATTRIB-11 / only))))
+
+# ::id 5_nonfiction_IBM-1401;NE
+# ::snt Well-tested programming languages for communication with computers must accompany the systems .
+( EVENT-7 / accompany
+      :domain-of ( MD-8 / must)
+      :ARG0 ( GROUP-1 / programming_languages
+             :ATTRIBUTE ( ATTRIB-2 / well-tested)
+             :FOR ( ENTITY-3 / communication
+                    :WITH ( GROUP-4 / computers)))
+      :ARG1 ( GROUP-5 / systems
+             :DEFINITE ( ATTRIB-6 / the)))
+
+# ::id 6_nonfiction_IBM-1401;NE
+# ::snt It is through these languages that the computer itself is used to perform many of the tedious functions that the programmer would otherwise have to perform .
+( EVENT-21 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :THROUGH-of ( EVENT-6 / used
+                    :ARG1 ( ENTITY-3 / computer
+                           :DEFINITE ( ATTRIB-4 / the)
+                           :RFL ( REF1-5 / itself))
+                    :TOCOMP ( EVENT-18 / perform
+                           :ARG0 ENTITY-3
+                           :ARG1 ( ENTITY-7 / ENTITY
+                                  :OF ( GROUP-9 / functions
+                                         :DEFINITE ( ATTRIB-10 / the)
+                                         :ATTRIBUTE ( ATTRIB-11 / tedious)
+                                         :ARG1-of ( EVENT-16 / perform
+                                                :ARG0 ( ENTITY-13 / programmer
+                                                       :DEFINITE ( ATTRIB-14 / the))
+                                                :TOCOMP-of ( EVENT-15 / have
+                                                       :domain-of ( MD-22 / would)
+                                                       :ARG0 ENTITY-13
+                                                       :MOD ( mod-23 / otherwise))))
+                                  :QUANTIFIER ( ATTRIB-8 / many)))))
+      :THROUGH ( GROUP-19 / languages
+             :DETERMINER ( ATTRIB-20 / these)))
+
+# ::id 7_nonfiction_IBM-1401;NE
+# ::snt A few minutes of computer time in translating the program can be equal to many , many hours of staff time in writing instructions coded in the language of the computer .
+( EVENT-21 / copula
+      :domain-of ( MD-22 / can)
+      :ATTRIBUTE ( ATTRIB-8 / equal
+             :TO ( GROUP-9 / hours
+                    :OF ( ENTITY-11 / staff_time
+                           :IN ( EVENT-20 / writing
+                                  :ARG1 ( GROUP-13 / instructions
+                                         :ARG1-of ( EVENT-19 / coded
+                                                :IN ( ENTITY-15 / language
+                                                       :DEFINITE ( ATTRIB-16 / the)
+                                                       :OF ( ENTITY-17 / computer
+                                                              :DEFINITE ( ATTRIB-18 / the)))))))
+                    :QUANTIFIER ( ATTRIB-10 / many,many)))
+      :ARG0 ( GROUP-1 / minutes
+             :OF ( ENTITY-3 / computer_time
+                    :IN ( EVENT-7 / translating
+                           :ARG1 ( ENTITY-5 / program
+                                  :DEFINITE ( ATTRIB-6 / the))))
+             :QUANTIFIER ( ATTRIB-2 / few)))
+
+# ::id 8_nonfiction_IBM-1401;NE
+# ::snt The combination of a modern computer plus modern programming languages is the key to profitable data processing .
+( EVENT-11 / copula
+      :ARG0 ( ENTITY-1 / combination
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( ENTITY-3 / computer
+                    :ATTRIBUTE ( ATTRIB-4 / modern)
+                    :PLUS ( GROUP-5 / programming_languages
+                           :ATTRIBUTE ( ATTRIB-6 / modern))))
+      :ARG1 ( ENTITY-7 / key
+             :DEFINITE ( ATTRIB-8 / the)
+             :TO ( GROUP-9 / data_processing
+                    :ATTRIBUTE ( ATTRIB-10 / profitable))))
+
+# ::id 9_nonfiction_IBM-1401;NE
+# ::snt This brochure explains modern IBM Programming Languages and their significance to management .
+( EVENT-8 / explains
+      :ARG0 ( ENTITY-1 / brochure
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( GROUP-3 / AND
+             :op1 ( GROUP-4 / modern_IBM_Programming_Languages)
+             :op2 ( ENTITY-5 / significance
+                    :TO ( ENTITY-7 / management)
+                    :POS ( REF1-6 / their))))
+
+# ::id 10_nonfiction_IBM-1401;NE
+# ::snt Page 2 : Here an operator points to machine language instructions for a new application being generated by the 1401 system on the 1403 high-speed printer .
+( EVENT-11 / points
+      :ARG0 ( ENTITY-1 / operator)
+      :TO ( GROUP-2 / machine_language_instructions
+             :FOR ( ENTITY-3 / application
+                    :ATTRIBUTE ( ATTRIB-4 / new)
+                    :ARG1-of ( EVENT-10 / being_generated
+                           :ARG0 ( ENTITY-6 / 1401_system
+                                  :DEFINITE ( ATTRIB-7 / the))
+                           :ON ( ENTITY-8 / 1403_high-speed_printer
+                                  :DEFINITE ( ATTRIB-9 / the)))))
+      :MOD ( mod-1 / here))
+
+# ::id 11_nonfiction_IBM-1401;NE
+# ::snt Statements about the application which were written by the programmer are being translated internally to machine-coded language .
+( EVENT-10 / being_translated
+      :ARG1 ( GROUP-1 / Statements
+             :ABOUT ( ENTITY-2 / application
+                    :DEFINITE ( ATTRIB-3 / the))
+             :ARG1-of ( EVENT-7 / written
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( ENTITY-5 / programmer
+                           :DEFINITE ( ATTRIB-6 / the))))
+      :TO ( ENTITY-8 / language
+             :ATTRIBUTE ( ATTRIB-9 / machine-coded))
+      :MOD ( mod-2 / internally))
+
+# ::id 12_nonfiction_IBM-1401;NE
+# ::snt What Is A 1401 Program ?
+( EVENT-2 / copula
+      :domain-of ( QUEST-3 / QUEST)
+      :ARG0 ( ENTITY-1 / 1401_Program)
+      :ARG1 ( ENTITY_UNK-2 / penman-unknown))
+
+# ::id 13_nonfiction_IBM-1401;NE
+# ::snt A program is a series of instructions that direct the 1401 as it solves an application .
+( EVENT-9 / copula
+      :ARG1 ( ENTITY-2 / series
+             :OF ( GROUP-3 / instructions
+                    :ARG0-of ( CRD-10 / as
+                           :op1 ( EVENT-7 / solves
+                                  :ARG0 ( REF1-5 / it)
+                                  :ARG1 ( ENTITY-6 / application))
+                           :op2 ( EVENT-8 / direct
+                                  :ARG1 ( ENTITY-1401 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "1401"))))))
+      :ARG0 ( ENTITY-1 / program))
+
+# ::id 14_nonfiction_IBM-1401;NE
+# ::snt What Is A Stored Program Machine ?
+( EVENT-3 / copula
+      :domain-of ( QUEST-4 / QUEST)
+      :ARG0 ( ENTITY-1 / Program_Machine
+             :ATTRIBUTE ( ATTRIB-2 / stored))
+      :ARG1 ( ENTITY_UNK-2 / penman-unknown))
+
+# ::id 15_nonfiction_IBM-1401;NE
+# ::snt A stored program machine is one which stores its own instructions in magnetic form and is capable of acting on those instructions to complete the application assigned .
+( EVENT-23 / copula
+      :ARG0 ( ENTITY-1 / program_machine
+             :ATTRIBUTE ( ATTRIB-2 / stored))
+      :ARG1 ( ENTITY-3 / ENTITY
+             :CARDINAL ( ATTRIB-4 / one)
+             :ARG0-of ( CONJ-24 / and
+                    :op1 ( EVENT-11 / stores
+                           :ARG1 ( GROUP-6 / instructions
+                                  :ATTRIBUTE ( ATTRIB-8 / own)
+                                  :POS ( REF1-7 / its))
+                           :IN ( ENTITY-9 / form
+                                  :ATTRIBUTE ( ATTRIB-10 / magnetic)))
+                    :op2 ( EVENT-22 / copula
+                           :ATTRIBUTE ( ATTRIB-12 / capable
+                                  :OF ( EVENT-16 / acting
+                                         :ON ( GROUP-14 / instructions
+                                                :DETERMINER ( ATTRIB-15 / those))
+                                         :TOCOMP ( EVENT-21 / complete
+                                                :ARG1 ( ENTITY-17 / application
+                                                       :DEFINITE ( ATTRIB-18 / the)
+                                                       :ARG1-of ( EVENT-20 / assigned)))))))))
+
+# ::id 16_nonfiction_IBM-1401;NE
+# ::snt The 1401 uses a stored program .
+( EVENT-3 / uses
+      :ARG0 ( ENTITY-1401 / ENTITY
+             :name ( n-1 / name
+                    :op1 "1401"))
+      :ARG1 ( ENTITY-1 / program
+             :ATTRIBUTE ( ATTRIB-2 / stored)))
+
+# ::id 17_nonfiction_IBM-1401;NE
+# ::snt What Are 1401 Programming Systems ?
+( EVENT-2 / copula
+      :domain-of ( QUEST-3 / QUEST)
+      :ARG0 ( GROUP-1 / 1401_Programming_Systems)
+      :ARG1 ( ENTITY_UNK-2 / penman-unknown))
+
+# ::id 18_nonfiction_IBM-1401;NE
+# ::snt There are two types : -LRB- 1 -RRB- Systems that provide the programmer with a simplified vocabulary of statements to use in writing programs , and -LRB- 2 -RRB- Pre-written programs , which take care of many of the everyday operations of the 1401 .
+( EVENT-27 / copula
+      :ARG0 ( GROUP-1 / types
+             :EQUALS ( GROUP-3 / AND
+                    :op1 ( GROUP-4 / programs
+                           :MOD ( mod-1 / Systems
+                                  :ARG0-of ( EVENT-16 / provide
+                                         :ARG1 ( ENTITY-6 / programmer
+                                                :DEFINITE ( ATTRIB-7 / the))
+                                         :WITH ( ENTITY-8 / vocabulary
+                                                :ATTRIBUTE ( ATTRIB-9 / simplified)
+                                                :OF ( GROUP-10 / statements
+                                                       :ARG1-of ( EVENT-15 / use
+                                                              :IN ( EVENT-14 / writing
+                                                                     :ARG1 ( GROUP-13 / programs))))))))
+                    :op2 ( GROUP-17 / programs
+                           :ATTRIBUTE ( ATTRIB-18 / pre-written)
+                           :ARG0-of ( EVENT-26 / take
+                                  :ARG1 ( ENTITY-20 / care)
+                                  :OF ( ENTITY-21 / ENTITY
+                                         :OF ( GROUP-23 / operations
+                                                :DEFINITE ( ATTRIB-24 / the)
+                                                :ATTRIBUTE ( ATTRIB-25 / everyday)
+                                                :OF ( ENTITY-1401 / ENTITY
+                                                       :name ( n-2 / name
+                                                              :op1 "1401")))
+                                         :QUANTIFIER ( ATTRIB-22 / many))))
+                    :CARDINAL ( ATTRIB-2 / two))))
+
+# ::id 19_nonfiction_IBM-1401;NE
+# ::snt What 1401 Programming Systems Mean To Management :
+( EVENT-2 / mean
+      :domain-of ( QUEST-3 / QUEST)
+      :ARG0 ( GROUP-1 / 1401_Programming_Systems)
+      :ARG1 ( ENTITY_UNK-2 / penman-unknown)
+      :TO ( ENTITY-Management / ENTITY
+             :name ( n-4 / name
+                    :op1 "Management")))
+
+# ::id 20_nonfiction_IBM-1401;NE
+# ::snt INCREASED PROGRAMMING EFFICIENCY
+( ENTITY-1 / PROGRAMMING_EFFICIENCY
+      :ATTRIBUTE ( ATTRIB-2 / increased))
+
+# ::id 21_nonfiction_IBM-1401;NE
+# ::snt Programmers can concentrate on the application and results rather than on a multitude of " bookkeeping " functions , such as keeping track of storage locations .
+( EVENT-13 / concentrate
+      :domain-of ( MD-14 / can)
+      :ARG0 ( GROUP-1 / Programmers)
+      :RATHER_THAN_ON ( ENTITY-6 / multitude
+             :OF ( GROUP-7 / bookkeeping_functions
+                    :ATTRIBUTE ( ATTRIB-8 / such
+                           :AS ( EVENT-12 / keeping
+                                  :ARG1 ( ENTITY-10 / track
+                                         :OF ( GROUP-11 / storage_locations))))))
+      :ON ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / application
+                    :DEFINITE ( ATTRIB-4 / the))
+             :op2 ( GROUP-5 / results)))
+
+# ::id 22_nonfiction_IBM-1401;NE
+# ::snt FASTER TRANSLATION OF MANAGEMENT REQUIREMENTS INTO USABLE RESULTS
+( ENTITY-1 / TRANSLATION
+      :ATTRIBUTE ( ATTRIB-2 / faster)
+      :OF ( GROUP-3 / MANAGEMENT_REQUIREMENTS
+             :INTO ( GROUP-4 / RESULTS
+                    :ATTRIBUTE ( ATTRIB-5 / usable))))
+
+# ::id 23_nonfiction_IBM-1401;NE
+# ::snt Simplified programming routines allow programmers to write more instructions in less time .
+( EVENT-4 / allow
+      :ARG0 ( GROUP-1 / programming_routines
+             :ATTRIBUTE ( ATTRIB-2 / simplified))
+      :ARG1 ( GROUP-3 / programmers)
+      :TOCOMP ( EVENT-9 / write
+             :ARG0 GROUP-3
+             :ARG1 ( GROUP-5 / instructions
+                    :QUANTIFIER ( ATTRIB-6 / more))
+             :IN ( ENTITY-7 / time
+                    :QUANTIFIER ( ATTRIB-8 / less))))
+
+# ::id 24_nonfiction_IBM-1401;NE
+# ::snt SHORTER TRAINING PERIODS
+( GROUP-1 / TRAINING_PERIODS
+      :ATTRIBUTE ( ATTRIB-2 / shorter))
+
+# ::id 25_nonfiction_IBM-1401;NE
+# ::snt Programmers use a language more familiar to them rather than having to learn detailed machine codes .
+( EVENT-10 / use
+      :ARG0 ( GROUP-1 / Programmers)
+      :ARG1 ( ENTITY-2 / language
+             :ATTRIBUTE ( ATTRIB-3 / more_familiar
+                    :RATHER_THAN ( EVENT-6 / having
+                           :TOCOMP ( EVENT-9 / learn
+                                  :ARG1 ( GROUP-7 / machine_codes
+                                         :ATTRIBUTE ( ATTRIB-8 / detailed))))
+                    :TO ( REF1-4 / them))))
+
+# ::id 26_nonfiction_IBM-1401;NE
+# ::snt REDUCED PROGRAMMING COSTS
+( GROUP-1 / PROGRAMMING_COSTS
+      :ATTRIBUTE ( ATTRIB-2 / reduced))
+
+# ::id 27_nonfiction_IBM-1401;NE
+# ::snt Many pre-written programs are supplied by IBM , eliminating necessity of customers ' staffs writing their own .
+( CONJ-14 / and
+      :op1 ( EVENT-13 / supplied
+             :ARG0 ( ENTITY-IBM / ENTITY
+                    :name ( n-15 / name
+                           :op1 "IBM"))
+             :ARG1 ( GROUP-1 / programs
+                    :ATTRIBUTE ( ATTRIB-3 / pre-written)
+                    :QUANTIFIER ( ATTRIB-2 / many)))
+      :op2 ( EVENT-12 / eliminating
+             :ARG0 ENTITY-IBM
+             :ARG1 ( ENTITY-4 / necessity
+                    :OF ( EVENT-11 / writing
+                           :ARG0 ( GROUP-6 / staffs
+                                  :POS ( GROUP-7 / customers))
+                           :ARG1 ( ENTITY-8 / ENTITY
+                                  :ATTRIBUTE ( ATTRIB-10 / own)
+                                  :POS ( REF1-9 / their))))))
+
+# ::id 28_nonfiction_IBM-1401;NE
+# ::snt MORE AVAILABLE 1401 TIME
+( ENTITY-1 / 1401_TIME
+      :ATTRIBUTE ( ATTRIB-2 / more_available))
+
+# ::id 29_nonfiction_IBM-1401;NE
+# ::snt Pre-written programs have already been tested by IBM , reducing tedious checking operations on the computer .
+( CONJ-12 / and
+      :op1 ( EVENT-9 / have_tested
+             :ARG0 ( ENTITY-IBM / ENTITY
+                    :name ( n-14 / name
+                           :op1 "IBM"))
+             :ARG1 ( GROUP-1 / programs
+                    :ATTRIBUTE ( ATTRIB-2 / pre-written)))
+      :op2 ( EVENT-8 / reducing
+             :ARG0 ENTITY-IBM
+             :ARG1 ( GROUP-3 / operations
+                    :ATTRIBUTE ( ATTRIB-5 / checking)
+                    :ATTRIBUTE ( ATTRIB-4 / tedious)
+                    :ON ( ENTITY-6 / computer
+                           :DEFINITE ( ATTRIB-7 / the))))
+      :MOD ( mod-13 / already))
+
+# ::id 30_nonfiction_IBM-1401;NE
+# ::snt EASIER TO UNDERSTAND PROGRAMS
+( EVENT-4 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / easier
+             :TOCOMP ( EVENT-3 / understand
+                    :ARG1 ( GROUP-2 / PROGRAMS))))
+
+# ::id 31_nonfiction_IBM-1401;NE
+# ::snt Programs are written in symbolic or application-oriented form instead of computer language .
+( EVENT-6 / written
+      :ARG1 ( GROUP-1 / Programs)
+      :IN ( CONJ-7 / or
+             :op1 ( ENTITY-2 / form
+                    :ATTRIBUTE ( ATTRIB-3 / symbolic)
+                    :INSTEAD_OF ( ENTITY-5 / computer_language))
+             :op2 ( ENTITY-2 / form
+                    :ATTRIBUTE ( ATTRIB-4 / application-oriented)
+                    :INSTEAD_OF ( ENTITY-5 / computer_language))))
+
+# ::id 32_nonfiction_IBM-1401;NE
+# ::snt This enables management to communicate more easily with the programming staff .
+( EVENT-4 / enables
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / management)
+      :TOCOMP ( EVENT-7 / communicate
+             :ARG0 ENTITY-3
+             :WITH ( ENTITY-5 / programming_staff
+                    :DEFINITE ( ATTRIB-6 / the))
+             :MOD ( mod-1 / more_easily)))
+
+# ::id 33_nonfiction_IBM-1401;NE
+# ::snt FASTER REPORTS ON OPERATIONS
+( GROUP-1 / REPORTS
+      :ATTRIBUTE ( ATTRIB-2 / faster)
+      :ON ( GROUP-3 / OPERATIONS))
+
+# ::id 34_nonfiction_IBM-1401;NE
+# ::snt Routines such as those designed for report writing permit faster translation of management requirements into usable information .
+( EVENT-13 / permit
+      :ARG0 ( GROUP-1 / Routines
+             :ATTRIBUTE ( ATTRIB-2 / such
+                    :AS ( GROUP-3 / GROUP
+                           :DETERMINER ( ATTRIB-4 / those)
+                           :ARG1-of ( EVENT-7 / designed
+                                  :FOR ( ENTITY-6 / report_writing)))))
+      :ARG1 ( ENTITY-8 / translation
+             :ATTRIBUTE ( ATTRIB-9 / faster)
+             :OF ( GROUP-10 / management_requirements))
+      :INTO ( ENTITY-11 / information
+             :ATTRIBUTE ( ATTRIB-12 / usable)))
+
+# ::id 35_nonfiction_IBM-1401;NE
+# ::snt IBM Programming Systems :
+( GROUP-1 / IBM_Programming_Systems)
+
+# ::id 36_nonfiction_IBM-1401;NE
+# ::snt Symbolic Programming Systems
+( GROUP-1 / Programming_Systems
+      :ATTRIBUTE ( ATTRIB-2 / symbolic))
+
+# ::id 37_nonfiction_IBM-1401;NE
+# ::snt These systems permit programs to be written using meaningful names -LRB- symbols -RRB- rather than actual machine language .
+( EVENT-4 / permit
+      :ARG0 ( GROUP-1 / systems
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( GROUP-3 / programs)
+      :TOCOMP ( CONJ-13 / and
+             :op1 ( EVENT-11 / written
+                    :ARG1 GROUP-3)
+             :op2 ( EVENT-10 / using
+                    :ARG0 GROUP-3
+                    :ARG1 ( GROUP-6 / names
+                           :ATTRIBUTE ( ATTRIB-7 / meaningful)
+                           :RATHER_THAN ( ENTITY-8 / machine_language
+                                  :ATTRIBUTE ( ATTRIB-9 / actual))
+                           :NAMELY ( ENTITY-5 / symbols)))))
+
+# ::id 38_nonfiction_IBM-1401;NE
+# ::snt Autocoder
+( ENTITY-1 / Autocoder)
+
+# ::id 39_nonfiction_IBM-1401;NE
+# ::snt This is an advanced symbolic programming system .
+( EVENT-6 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / programming_system
+             :ATTRIBUTE ( ATTRIB-5 / symbolic)
+             :ATTRIBUTE ( ATTRIB-4 / advanced)))
+
+# ::id 40_nonfiction_IBM-1401;NE
+# ::snt It allows generation of multiple machine instructions from one source statement , free-form coding , and an automatic assembly process through magnetic tape .
+( EVENT-14 / allows
+      :ARG0 ( REF1-1 / it)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / generation
+                    :OF ( GROUP-4 / machine_instructions
+                           :ATTRIBUTE ( ATTRIB-5 / multiple)
+                           :FROM ( ENTITY-6 / source_statement
+                                  :CARDINAL ( ATTRIB-7 / one))))
+             :op2 ( ENTITY-8 / coding
+                    :ATTRIBUTE ( ATTRIB-9 / free-form))
+             :op3 ( ENTITY-10 / assembly_process
+                    :ATTRIBUTE ( ATTRIB-11 / automatic)
+                    :THROUGH ( ENTITY-12 / tape
+                           :ATTRIBUTE ( ATTRIB-13 / magnetic)))))
+
+# ::id 41_nonfiction_IBM-1401;NE
+# ::snt COBOL
+( ENTITY-COBOL / ENTITY
+      :name ( n-1 / name
+             :op1 "COBOL"))
+
+# ::id 42_nonfiction_IBM-1401;NE
+# ::snt COBOL is a problem-oriented programming language for commercial applications .
+( EVENT-5 / copula
+      :ARG0 ( ENTITY-COBOL / ENTITY
+             :name ( n-1 / name
+                    :op1 "COBOL"))
+      :ARG1 ( ENTITY-1 / programming_language
+             :ATTRIBUTE ( ATTRIB-2 / problem-oriented)
+             :FOR ( GROUP-3 / applications
+                    :ATTRIBUTE ( ATTRIB-4 / commercial))))
+
+# ::id 43_nonfiction_IBM-1401;NE
+# ::snt COBOL permits a programmer to use language based on English words and phrases in describing an application .
+( EVENT-2 / permits
+      :ARG0 ( ENTITY-COBOL / ENTITY
+             :name ( n-1 / name
+                    :op1 "COBOL"))
+      :ARG1 ( ENTITY-1 / programmer)
+      :TOCOMP ( EVENT-12 / use
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-3 / language
+                    :ARG1-of ( EVENT-8 / based
+                           :ON ( GROUP-5 / AND
+                                  :op1 ( GROUP-6 / English_words)
+                                  :op2 ( GROUP-7 / English_phrases))))
+             :IN ( EVENT-11 / describing
+                    :ARG0 ENTITY-3
+                    :ARG1 ( ENTITY-10 / application))))
+
+# ::id 44_nonfiction_IBM-1401;NE
+# ::snt Input/Output Control System
+( ENTITY-Input_slash_Output_Control_System / ENTITY
+      :name ( n-1 / name
+             :op1 "Input_slash_Output_Control_System"))
+
+# ::id 45_nonfiction_IBM-1401;NE
+# ::snt This system provides the programmer with a packaged means of accomplishing input and output requirements .
+( EVENT-12 / provides
+      :ARG0 ( ENTITY-1 / system
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / programmer
+             :DEFINITE ( ATTRIB-4 / the))
+      :WITH ( ENTITY-5 / means
+             :ATTRIBUTE ( ATTRIB-6 / packaged)
+             :OF ( EVENT-11 / accomplishing
+                    :ARG1 ( GROUP-8 / AND
+                           :op1 ( GROUP-9 / input_requirements)
+                           :op2 ( GROUP-10 / output_requirements)))))
+
+# ::id 46_nonfiction_IBM-1401;NE
+# ::snt Utility Programs
+( GROUP-1 / Utility_Programs)
+
+# ::id 47_nonfiction_IBM-1401;NE
+# ::snt These are pre-written instructions to perform many of the everyday operations of an installation .
+( EVENT-12 / copula
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( GROUP-3 / instructions
+             :ATTRIBUTE ( ATTRIB-4 / pre-written)
+             :TOCOMP ( EVENT-11 / perform
+                    :ARG1 ( ENTITY-5 / ENTITY
+                           :OF ( GROUP-7 / operations
+                                  :DEFINITE ( ATTRIB-8 / the)
+                                  :ATTRIBUTE ( ATTRIB-9 / everyday)
+                                  :OF ( ENTITY-10 / installation))
+                           :QUANTIFIER ( ATTRIB-6 / many)))))
+
+# ::id 48_nonfiction_IBM-1401;NE
+# ::snt Subroutines
+( GROUP-1 / Subroutines)
+
+# ::id 49_nonfiction_IBM-1401;NE
+# ::snt These are routines for multiplication , division , dozens conversion , and program error detection aids .
+( EVENT-9 / copula
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( GROUP-3 / routines
+             :FOR ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / multiplication)
+                    :op2 ( ENTITY-6 / division)
+                    :op3 ( ENTITY-7 / dozens_conversion)
+                    :op4 ( GROUP-8 / program_error_detection_aids))))
+
+# ::id 50_nonfiction_IBM-1401;NE
+# ::snt Tape Utilities
+( GROUP-1 / Tape_Utilities)
+
+# ::id 51_nonfiction_IBM-1401;NE
+# ::snt These are generalized instructions , particularly useful to 1401 customers who also use larger data processing systems .
+( EVENT-12 / copula
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( GROUP-3 / instructions
+             :ATTRIBUTE ( ATTRIB-5 / particularly_useful
+                    :TO ( GROUP-6 / 1401_customers
+                           :ARG0-of ( EVENT-10 / use
+                                  :ARG1 ( GROUP-8 / data_processing_systems
+                                         :ATTRIBUTE ( ATTRIB-9 / larger))
+                                  :MOD ( mod-1 / also))))
+             :ATTRIBUTE ( ATTRIB-4 / generalized)))
+
+# ::id 52_nonfiction_IBM-1401;NE
+# ::snt They facilitate the transfer of data between IBM cards , magnetic tapes , and printers .
+( EVENT-10 / facilitate
+      :ARG0 ( REF1-1 / they)
+      :ARG1 ( ENTITY-2 / transfer
+             :DEFINITE ( ATTRIB-3 / the)
+             :OF ( GROUP-4 / data
+                    :BETWEEN ( GROUP-5 / AND
+                           :op1 ( GROUP-6 / IBM_cards)
+                           :op2 ( GROUP-7 / tapes
+                                  :ATTRIBUTE ( ATTRIB-8 / magnetic))
+                           :op3 ( GROUP-9 / printers)))))
+
+# ::id 53_nonfiction_IBM-1401;NE
+# ::snt They also provide for some 1401 processing while the transfer of data is taking place .
+( CRD-12 / while
+      :op1 ( EVENT-8 / is_taking
+             :ARG0 ( ENTITY-4 / transfer
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :OF ( GROUP-6 / data))
+             :ARG1 ( ENTITY-7 / place))
+      :op2 ( EVENT-9 / provide
+             :ARG0 ( REF1-1 / they)
+             :FOR ( ENTITY-1401 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-2 / processing)
+                    :name ( n-14 / name
+                           :op1 "1401")
+                    :QUANTIFIER ( ATTRIB-3 / some)))
+      :MOD ( mod-13 / also))
+
+# ::id 54_nonfiction_IBM-1401;NE
+# ::snt Tape Sort Programs
+( GROUP-1 / Tape_Sort_Programs)
+
+# ::id 55_nonfiction_IBM-1401;NE
+# ::snt Data can be sorted and classified at high speed for further processing by use of these generalized sorting routines .
+( EVENT-11 / sorted_and_classified
+      :domain-of ( MD-12 / can)
+      :ARG1 ( GROUP-1 / Data)
+      :BY ( ENTITY-7 / use
+             :OF ( GROUP-8 / sorting_routines
+                    :DETERMINER ( ATTRIB-9 / these)
+                    :ATTRIBUTE ( ATTRIB-10 / generalized)))
+      :FOR ( ENTITY-4 / ENTITY
+             :ATTRIBUTE ( ATTRIB-6 / processing)
+             :ATTRIBUTE ( ATTRIB-5 / further))
+      :AT ( ENTITY-2 / speed
+             :ATTRIBUTE ( ATTRIB-3 / high)))
+
+# ::id 56_nonfiction_IBM-1401;NE
+# ::snt Report Program Generator
+( ENTITY-1 / Report_Program_Generator)
+
+# ::id 57_nonfiction_IBM-1401;NE
+# ::snt The programmer uses simplified , descriptive language with which he is already familiar to obtain reports swiftly and efficiently .
+( EVENT-14 / uses
+      :ARG0 ( ENTITY-1 / programmer
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / language
+             :ATTRIBUTE ( ATTRIB-5 / descriptive)
+             :ATTRIBUTE ( ATTRIB-4 / simplified)
+             :WITH-of ( EVENT-9 / copula
+                    :ATTRIBUTE ( ATTRIB-8 / already_familiar)
+                    :ARG0 ( REF1-7 / he)))
+      :PRP ( EVENT-12 / obtain
+             :ARG0 ENTITY-3
+             :ARG1 ( GROUP-11 / reports)
+             :MOD ( CONJ-15 / and
+                    :op1 ( mod-16 / swiftly)
+                    :op2 ( mod-17 / efficiently))))
+
+# ::id 58_nonfiction_IBM-1401;NE
+# ::snt FORTRAN -LRB- Contraction of FORmula TRANslator -RRB-
+( ENTITY-FORTRAN / Contraction
+      :OF ( ENTITY-2 / FORmula_TRANslator)
+      :name ( n-1 / name
+             :op1 "FORTRAN"))
+
+# ::id 59_nonfiction_IBM-1401;NE
+# ::snt Engineers and mathematicians state problems in familiar algebraic language for solution by the computer .
+( EVENT-11 / state
+      :ARG0 ( GROUP-1 / AND
+             :op1 ( GROUP-2 / Engineers)
+             :op2 ( GROUP-3 / mathematicians))
+      :ARG1 ( GROUP-4 / problems
+             :IN ( ENTITY-5 / language
+                    :ATTRIBUTE ( ATTRIB-7 / algebraic)
+                    :ATTRIBUTE ( ATTRIB-6 / familiar)))
+      :FOR ( ENTITY-8 / solution
+             :BY ( ENTITY-9 / computer
+                    :DEFINITE ( ATTRIB-10 / the))))
+
+# ::id 60_nonfiction_IBM-1401;NE
+# ::snt RAMAC File Organization
+( ENTITY-1 / RAMAC_File_Organization)
+
+# ::id 61_nonfiction_IBM-1401;NE
+# ::snt Routines are supplied for simplifying organization of records for storage in the 1401 Random Access File .
+( EVENT-9 / supplied
+      :ARG1 ( GROUP-1 / Routines)
+      :FOR ( EVENT-8 / simplifying
+             :ARG0 GROUP-1
+             :ARG1 ( ENTITY-3 / organization
+                    :OF ( GROUP-4 / records
+                           :FOR ( ENTITY-5 / storage
+                                  :IN ( ENTITY-6 / 1401_Random_Access_File
+                                         :DEFINITE ( ATTRIB-7 / the)))))))
+
+# ::id 62_nonfiction_IBM-1401;NE
+# ::snt Here 's how one of the 1401 programming systems -- Report Program Generator -- works to increase programming efficiency
+( EVENT-3 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :ATTRIBUTE ( ATTRIB-2 / here))
+      :THAT ( EVENT-8 / works
+             :domain-of ( QUEST-13 / QUEST)
+             :ARG0 ( ENTITY-4 / Report_Program_Generator
+                    :OF ( GROUP-6 / 1401_programming_systems
+                           :DEFINITE ( ATTRIB-7 / the))
+                    :CARDINAL ( ATTRIB-5 / one))
+             :TOCOMP ( EVENT-10 / increase
+                    :ARG0 ENTITY-4
+                    :ARG1 ( ENTITY-9 / programming_efficiency))
+             :MOD ( mod-14 / penman1-unknown)))
+
+# ::id 63_nonfiction_IBM-1401;NE
+# ::snt 1401 computers produce important reports for management in record time because of their outstanding processing and printing abilities .
+( EVENT-14 / produce
+      :ARG0 ( GROUP-1 / 1401_computers)
+      :ARG1 ( GROUP-2 / reports
+             :ATTRIBUTE ( ATTRIB-3 / important)
+             :IN ( ENTITY-5 / record_time)
+             :FOR ( ENTITY-4 / management))
+      :BECAUSE_OF ( ENTITY-6 / AND
+             :ATTRIBUTE ( ATTRIB-8 / outstanding)
+             :op1 ( GROUP-10 / abilities
+                    :ATTRIBUTE ( ATTRIB-11 / processing))
+             :op2 ( GROUP-12 / abilities
+                    :ATTRIBUTE ( ATTRIB-13 / printing))
+             :POS ( REF1-7 / their)))
+
+# ::id 64_nonfiction_IBM-1401;NE
+# ::snt In addition to this rapid machine processing of input data used in reports , still more speed is achieved by the rapid preparation of programs to produce the reports .
+( EVENT-18 / achieved
+      :ARG0 ( ENTITY-11 / preparation
+             :DEFINITE ( ATTRIB-12 / the)
+             :ATTRIBUTE ( ATTRIB-13 / rapid)
+             :OF ( GROUP-14 / programs
+                    :TOCOMP ( EVENT-17 / produce
+                           :ARG1 ( GROUP-15 / reports
+                                  :DEFINITE ( ATTRIB-16 / the)))))
+      :ARG1 ( ENTITY-9 / speed
+             :QUANTIFIER ( ATTRIB-10 / still_more))
+      :IN ( ENTITY-1 / addition
+             :TO ( ENTITY-2 / machine_processing
+                    :DETERMINER ( ATTRIB-3 / this)
+                    :ATTRIBUTE ( ATTRIB-4 / rapid)
+                    :OF ( GROUP-5 / input_data
+                           :ARG1-of ( EVENT-8 / used
+                                  :IN ( GROUP-7 / reports))))))
+
+# ::id 65_nonfiction_IBM-1401;NE
+# ::snt This is possible because of the IBM Report Program Generator , a unique system which permits programs to be created with a minimum of time and effort .
+( EVENT-16 / copula
+      :ATTRIBUTE ( ATTRIB-3 / possible)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :BECAUSE_OF ( ENTITY-14 / IBM_Report_Program_Generator
+             :DEFINITE ( ATTRIB-15 / the)
+             :NAMELY ( ENTITY-4 / system
+                    :ATTRIBUTE ( ATTRIB-5 / unique)
+                    :ARG0-of ( EVENT-8 / permits
+                           :ARG1 ( GROUP-7 / programs)
+                           :TOCOMP ( EVENT-13 / created
+                                  :ARG1 GROUP-7
+                                  :WITH ( ENTITY-9 / minimum
+                                         :OF ( GROUP-10 / AND
+                                                :op1 ( ENTITY-11 / time)
+                                                :op2 ( ENTITY-12 / effort))))))))
+
+# ::id 66_nonfiction_IBM-1401;NE
+# ::snt This example illustrates how the Report Program Generator simplifies the preparation of one part of an Expense Distribution Report -LRB- The Major Total Line -RRB- :
+( EVENT-3 / illustrates
+      :ARG0 ( ENTITY-1 / example
+             :DETERMINER ( ATTRIB-2 / this))
+      :THAT ( EVENT-15 / simplifies
+             :domain-of ( QUEST-18 / QUEST)
+             :ARG0 ( ENTITY-4 / Report_Program_Generator
+                    :DEFINITE ( ATTRIB-5 / the))
+             :ARG1 ( ENTITY-6 / preparation
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :OF ( ENTITY-8 / part
+                           :OF ( ENTITY-14 / Expense_Distribution_Report
+                                  :NAMELY ( ENTITY-10 / Line
+                                         :DETERMINER ( ATTRIB-11 / the)
+                                         :ATTRIBUTE ( ATTRIB-13 / total)
+                                         :ATTRIBUTE ( ATTRIB-12 / major)))
+                           :CARDINAL ( ATTRIB-9 / one)))
+             :MOD ( mod-19 / penman1-unknown)))
+
+# ::id 67_nonfiction_IBM-1401;NE
+# ::snt Without the Report Program Generator , the program to get the Major Total Line would be written out in detail , step by step :
+( EVENT-13 / written_out
+      :domain-of ( MD-14 / would)
+      :ARG1 ( ENTITY-3 / program
+             :DEFINITE ( ATTRIB-4 / the)
+             :TOCOMP ( EVENT-9 / get
+                    :ARG1 ( ENTITY-5 / Line
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :ATTRIBUTE ( ATTRIB-8 / total)
+                           :ATTRIBUTE ( ATTRIB-7 / major))))
+      :ADV ( ENTITY-11 / step
+             :BY ( ENTITY-12 / step))
+      :IN ( ENTITY-10 / detail)
+      :WITHOUT ( ENTITY-1 / Report_Program_Generator
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 68_nonfiction_IBM-1401;NE
+# ::snt But with the Report Program Generator , all the programmer has to write are these two statements :
+( EVENT-6 / has
+      :ARG0 ( ENTITY-3 / programmer
+             :DEFINITE ( ATTRIB-5 / the)
+             :QUANTIFIER ( ATTRIB-4 / all))
+      :WITH ( ENTITY-1 / Report_Program_Generator
+             :DEFINITE ( ATTRIB-2 / the))
+      :TOCOMP ( EVENT-10 / write_are
+             :ARG0 ENTITY-3
+             :ARG1 ( GROUP-7 / statements
+                    :DETERMINER ( ATTRIB-8 / these)
+                    :CARDINAL ( ATTRIB-9 / two))))
+
+# ::id 69_nonfiction_IBM-1401;NE
+# ::snt It 's just as easy to write the statements to generate the rest of the report !
+( EVENT-11 / copula
+      :ATTRIBUTE ( ATTRIB-10 / just_as_easy)
+      :ARG0 ( EVENT-4 / write
+             :ARG1 ( GROUP-2 / statements
+                    :DEFINITE ( ATTRIB-3 / the))
+             :TOCOMP ( EVENT-9 / generate
+                    :ARG0 GROUP-2
+                    :ARG1 ( ENTITY-5 / rest
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :OF ( ENTITY-7 / report
+                                  :DEFINITE ( ATTRIB-8 / the))))))
+
+# ::id 70_nonfiction_IBM-1401;NE
+# ::snt The 1401 itself does the work of converting the programmers ' statements into the detailed instructions .
+( EVENT-12 / does
+      :ARG0 ( ENTITY-1401 / ENTITY
+             :name ( n-1 / name
+                    :op1 "1401")
+             :RFL ( REF1-1 / itself))
+      :ARG1 ( ENTITY-2 / work
+             :DEFINITE ( ATTRIB-3 / the)
+             :OF ( EVENT-11 / converting
+                    :ARG1 ( GROUP-5 / statements
+                           :POS ( GROUP-6 / programmers
+                                  :DEFINITE ( ATTRIB-7 / the)))
+                    :INTO ( GROUP-8 / instructions
+                           :DEFINITE ( ATTRIB-9 / the)
+                           :ATTRIBUTE ( ATTRIB-10 / detailed)))))
+
+# ::id 71_nonfiction_IBM-1401;NE
+# ::snt The Report Program Generator is an example of what IBM Programming Systems can accomplish .
+( EVENT-7 / copula
+      :ARG0 ( ENTITY-1 / Report_Program_Generator
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / example
+             :OF ( EVENT-6 / accomplish
+                    :domain-of ( QUEST-11 / QUEST)
+                    :domain-of ( MD-10 / can)
+                    :ARG0 ( GROUP-5 / IBM_Programming_Systems)
+                    :ARG1 ( ENTITY_UNK-2 / penman-unknown))))
+
+# ::id 72_nonfiction_IBM-1401;NE
+# ::snt With IBM you can be certain of total systems support for maximum profitability .
+( EVENT-7 / copula
+      :domain-of ( MD-8 / can)
+      :ATTRIBUTE ( ATTRIB-2 / certain
+             :OF ( ENTITY-3 / systems_support
+                    :ATTRIBUTE ( ATTRIB-4 / total)
+                    :FOR ( ENTITY-5 / profitability
+                           :ATTRIBUTE ( ATTRIB-6 / maximum))))
+      :ARG0 ( REF1-1 / you)
+      :WITH ( ENTITY-IBM / ENTITY
+             :name ( n-9 / name
+                    :op1 "IBM")))
+
+# ::id 73_nonfiction_IBM-1401;NE
+# ::snt IBM Stands For Service
+( EVENT-2 / stands
+      :ARG0 ( ENTITY-IBM / ENTITY
+             :name ( n-1 / name
+                    :op1 "IBM"))
+      :FOR ( ENTITY-1 / Service))
+
+# ::id 74_nonfiction_IBM-1401;NE
+# ::snt Service that begins long before the delivery of a computer ... and continues in depth long after .
+( ENTITY-1 / Service
+      :ARG0-of ( CONJ-12 / and
+             :op1 ( EVENT-6 / begins
+                    :BEFORE ( ENTITY-3 / delivery
+                           :DEFINITE ( ATTRIB-4 / the)
+                           :OF ( ENTITY-5 / computer))
+                    :MOD ( mod-14 / long))
+             :op2 ( EVENT-9 / continues
+                    :IN ( ENTITY-8 / depth)
+                    :MOD ( mod-13 / long_after))))
+
+# ::id 75_nonfiction_IBM-1401;NE
+# ::snt Service that has been proven by years of data processing experience .
+( ENTITY-1 / Service
+      :ARG1-of ( EVENT-5 / has_proven
+             :ARG0 ( GROUP-3 / years
+                    :OF ( ENTITY-4 / data_processing_experience))))
+
+# ::id 76_nonfiction_IBM-1401;NE
+# ::snt New IBM Services include :
+( EVENT-1 / include
+      :ARG0 ( GROUP-New_IBM_Services / GROUP
+             :name ( n-1 / name
+                    :op1 "New_IBM_Services")))
+
+# ::id 77_nonfiction_IBM-1401;NE
+# ::snt Programmed Applications Library
+( ENTITY-1 / Applications_Library
+      :ATTRIBUTE ( ATTRIB-2 / programmed))
+
+# ::id 78_nonfiction_IBM-1401;NE
+# ::snt Pre-tested computer programs designed to handle various major data processing functions common to firms within a specific industry .
+( GROUP-1 / computer_programs
+      :ATTRIBUTE ( ATTRIB-2 / pre-tested)
+      :ARG1-of ( EVENT-4 / designed
+             :TOCOMP ( EVENT-12 / handle
+                    :ARG0 GROUP-1
+                    :ARG1 ( GROUP-5 / data_processing_functions
+                           :ATTRIBUTE ( ATTRIB-8 / common
+                                  :TO ( GROUP-9 / firms
+                                         :WITHIN ( ENTITY-10 / industry
+                                                :ATTRIBUTE ( ATTRIB-11 / specific))))
+                           :ATTRIBUTE ( ATTRIB-7 / major)
+                           :ATTRIBUTE ( ATTRIB-6 / various)))))
+
+# ::id 79_nonfiction_IBM-1401;NE
+# ::snt Programming Systems Support
+( ENTITY-1 / Programming_Systems_Support)
+
+# ::id 80_nonfiction_IBM-1401;NE
+# ::snt To keep customers up-to-date on the availability and use of all new programming systems .
+( EVENT-1 / keep
+      :TOCOMP ( EVENT-12 / EVENT
+             :ATTRIBUTE ( ATTRIB-3 / up-to-date
+                    :ON ( ENTITY-4 / AND
+                           :DEFINITE ( ATTRIB-5 / the)
+                           :op1 ( ENTITY-7 / availability)
+                           :op2 ( ENTITY-8 / use)
+                           :OF ( GROUP-9 / programming_systems
+                                  :ATTRIBUTE ( ATTRIB-11 / new)
+                                  :QUANTIFIER ( ATTRIB-10 / all))))
+             :ARG0 ( GROUP-2 / customers)))
+
+# ::id 81_nonfiction_IBM-1401;NE
+# ::snt To assist the IBM programming staff in reflecting customer requirements in the specification of new programming systems .
+( EVENT-10 / assist
+      :ARG1 ( ENTITY-1 / IBM_programming_staff
+             :DEFINITE ( ATTRIB-2 / the))
+      :IN ( EVENT-9 / reflecting
+             :ARG0 ENTITY-1
+             :ARG1 ( GROUP-4 / customer_requirements
+                    :IN ( ENTITY-5 / specification
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :OF ( GROUP-7 / programming_systems
+                                  :ATTRIBUTE ( ATTRIB-8 / new))))))
+
+# ::id 82_nonfiction_IBM-1401;NE
+# ::snt Other services available to every IBM customer :
+( GROUP-1 / services
+      :ATTRIBUTE ( ATTRIB-3 / available
+             :TO ( ENTITY-4 / IBM_customer
+                    :QUANTIFIER ( ATTRIB-5 / every)))
+      :ATTRIBUTE ( ATTRIB-2 / other))
+
+# ::id 83_nonfiction_IBM-1401;NE
+# ::snt Program Library
+( ENTITY-1 / Program_Library)
+
+# ::id 84_nonfiction_IBM-1401;NE
+# ::snt A library of 1401 programs will be established to aid all 1401 customers in solving specific applications , scientific as well as commercial .
+( EVENT-3 / established
+      :domain-of ( MD-14 / will)
+      :ARG1 ( ENTITY-1 / library
+             :OF ( GROUP-2 / 1401_programs))
+      :TOCOMP ( EVENT-13 / aid
+             :ARG0 ENTITY-1
+             :ARG1 ( GROUP-4 / 1401_customers
+                    :QUANTIFIER ( ATTRIB-5 / all))
+             :IN ( EVENT-12 / solving
+                    :ARG0 GROUP-4
+                    :ARG1 ( GROUP-10 / applications
+                           :ATTRIBUTE ( ATTRIB-11 / specific)
+                           :NAMELY ( ENTITY-7 / as_well
+                                  :AS ( ENTITY-8 / ENTITY
+                                         :ATTRIBUTE ( ATTRIB-9 / commercial)))))))
+
+# ::id 85_nonfiction_IBM-1401;NE
+# ::snt These will include programs written by customers and programs written by IBM .
+( EVENT-11 / include
+      :domain-of ( MD-12 / will)
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( GROUP-3 / AND
+             :op1 ( GROUP-4 / programs
+                    :ARG1-of ( EVENT-7 / written
+                           :ARG0 ( GROUP-6 / customers)))
+             :op2 ( GROUP-8 / programs
+                    :ARG1-of ( EVENT-10 / written
+                           :ARG0 ( ENTITY-IBM / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "IBM"))))))
+
+# ::id 86_nonfiction_IBM-1401;NE
+# ::snt Schools and Seminars
+( GROUP-1 / AND
+      :op1 ( GROUP-2 / Schools)
+      :op2 ( GROUP-3 / Seminars))
+
+# ::id 87_nonfiction_IBM-1401;NE
+# ::snt Executive schools for management personnel .
+( GROUP-1 / schools
+      :ATTRIBUTE ( ATTRIB-2 / executive)
+      :FOR ( GROUP-3 / management_personnel))
+
+# ::id 88_nonfiction_IBM-1401;NE
+# ::snt Programming schools for methods personnel .
+( GROUP-1 / Programming_schools
+      :FOR ( GROUP-2 / methods_personnel))
+
+# ::id 89_nonfiction_IBM-1401;NE
+# ::snt Industry seminars where customers meet to discuss subjects of common interest .
+( GROUP-1 / Industry_seminars
+      :LOC-of ( EVENT-4 / meet
+             :ARG0 ( GROUP-3 / customers)
+             :TOCOMP ( EVENT-8 / discuss
+                    :ARG0 GROUP-3
+                    :ARG1 ( GROUP-5 / subjects
+                           :OF ( ENTITY-6 / interest
+                                  :ATTRIBUTE ( ATTRIB-7 / common))))))
+
+# ::id 90_nonfiction_IBM-1401;NE
+# ::snt Branch Offices
+( GROUP-1 / Branch_Offices)
+
+# ::id 91_nonfiction_IBM-1401;NE
+# ::snt More than 200 branch offices serve customer needs promptly and efficiently .
+( EVENT-4 / serve
+      :ARG0 ( GROUP-1 / branch_offices
+             :CARDINAL ( ATTRIB-2 / more_than_200))
+      :ARG1 ( GROUP-3 / customer_needs)
+      :MOD ( CONJ-6 / and
+             :op1 ( mod-7 / promptly)
+             :op2 ( mod-8 / efficiently)))
+
+# ::id 92_nonfiction_IBM-1401;NE
+# ::snt Sales and Systems Representatives
+( GROUP-1 / AND
+      :op1 ( GROUP-2 / Sales)
+      :op2 ( GROUP-3 / Systems_Representatives))
+
+# ::id 93_nonfiction_IBM-1401;NE
+# ::snt Experienced , highly trained individuals work with customers in applying IBM methods to their requirements .
+( EVENT-10 / work
+      :ARG0 ( GROUP-1 / individuals
+             :ATTRIBUTE ( ATTRIB-3 / highly_trained)
+             :ATTRIBUTE ( ATTRIB-2 / experienced))
+      :IN ( EVENT-9 / applying
+             :ARG0 GROUP-1
+             :ARG1 ( GROUP-6 / IBM_methods)
+             :TO ( GROUP-7 / requirements
+                    :POS ( REF1-8 / their)))
+      :WITH ( GROUP-4 / customers))
+
+# ::id 94_nonfiction_IBM-1401;NE
+# ::snt These are just a few of the many IBM services .
+( EVENT-9 / copula
+      :ARG0 ( GROUP-1 / GROUP
+             :DETERMINER ( ATTRIB-2 / these))
+      :ARG1 ( ENTITY-3 / ENTITY
+             :ATTRIBUTE ( ATTRIB-4 / just)
+             :QUANTIFIER ( ATTRIB-5 / few)
+             :OF ( GROUP-6 / IBM_services
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :QUANTIFIER ( ATTRIB-8 / many))))
+
+# ::id 95_nonfiction_IBM-1401;NE
+# ::snt Your IBM Sales Representative will be pleased to discuss all of them with you .
+( EVENT-9 / copula
+      :domain-of ( MD-10 / will)
+      :ATTRIBUTE ( ATTRIB-3 / pleased
+             :TOCOMP ( EVENT-8 / discuss
+                    :ARG1 ( ENTITY-4 / ENTITY
+                           :OF ( REF2-6 / them)
+                           :QUANTIFIER ( ATTRIB-5 / all))
+                    :WITH ( REF3-7 / you)))
+      :ARG0 ( ENTITY-1 / IBM_Sales_Representative
+             :POS ( REF1-2 / your)))
+
+# ::id 96_nonfiction_IBM-1401;NE
+# ::snt International Business Machines Corporation Data Processing Division , 112 East Post Road White Plains , New York
+( ENTITY-International_Business_Machines_Corporation_Data_Processing_Division_112_East_Post_Road_White_Plains_New_York / ENTITY
+      :name ( n-1 / name
+             :op1 "International_Business_Machines_Corporation_Data_Processing_Division_112_East_Post_Road_White_Plains_New_York"))
+
+# ::id 97_nonfiction_IBM-1401;NE
+# ::snt -LSB- Footnote A : COBOL specifications were developed by the Conference on Data Systems Languages , a voluntary cooperative effort of users , and manufacturers of data processing systems . -RSB-
+( EVENT-12 / developed
+      :MOD ( mod-1 / past)
+      :ARG1 ( GROUP-1 / COBOL_specifications)
+      :BY ( ENTITY-2 / Conference
+             :DEFINITE ( ATTRIB-3 / the)
+             :ON ( GROUP-11 / Data_Systems_Languages
+                    :NAMELY ( ENTITY-4 / effort
+                           :ATTRIBUTE ( ATTRIB-6 / cooperative)
+                           :ATTRIBUTE ( ATTRIB-5 / voluntary)
+                           :OF ( GROUP-7 / AND
+                                  :op1 ( GROUP-8 / users)
+                                  :op2 ( GROUP-9 / manufacturers
+                                         :OF ( GROUP-10 / data_processing_systems)))))))

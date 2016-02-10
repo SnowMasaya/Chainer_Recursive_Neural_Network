@@ -1,0 +1,778 @@
+# ::id 1_wikipedia_Sendai_Music;NJ
+# ::snt 楽都仙台
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[楽都仙台])
+
+# ::id 2_wikipedia_Sendai_Music;NJ
+# ::snt 楽都仙台 （ がくとせんだい ） と は 、 伊達政宗 による 仙台開府 400 周年 を 記念 し て 、 2001 年 （ 平成 13 年 ） に 仙台市 主催 で 開催 さ れ た 音楽事業 において 用い られ た キャッチコピー を 端緒 に 、 仙台 の 音楽環境 の 充実振り を 表現 し ようとする 際 に 用い られる よう に なっ た 言葉 。
+∃ SITUATION[4] SITUATION[3] EVENT[12] EVENT[15] EVENT[16] EVENT[18] EVENT[20] EVENT[21] EVENT[22] ENTITY[6] ENTITY[11] ENTITY[14] ENTITY[13] ENTITY[9] ENTITY[17] ENTITY[7] ENTITY[5] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[がくとせんだい], ENTITY[楽都仙台]) ∧
+  の_音楽環境(ENTITY[仙台], ENTITY[6]) ∧
+   の_充実振り(ENTITY[6], ENTITY[5]) ∧
+    (CD_400_周年(ENTITY[11]), による_仙台開府(ENTITY[伊達政宗], ENTITY[11])) ∧
+     CD_2001_年_（_平成_13_年_）(ENTITY[13]) ∧
+      仙台市_主催(ENTITY[14]) ∧
+       CRD_te(記念する.0_て(EVENT[12], _, ENTITY[11]),
+        開催する.0_た(EVENT[15], _, ENTITY[9]) ∧ で(EVENT[15]) = ENTITY[14] ∧
+         に(EVENT[15]) = ENTITY[13]) ∧ 音楽事業(ENTITY[9]) ∧
+        用い_た(EVENT[16], _, ENTITY[7]) ∧ において(EVENT[16]) = ENTITY[9] ∧ キャッチコピー(ENTITY[7]) ∧
+         端緒(ENTITY[17]) ∧
+          際(SITUATION[4],
+           xxx(EVENT[18], ENTITY[5], ENTITY[7]) ∧ に(EVENT[18]) = ENTITY[17] ∧
+            MD_ようとする(∃ EVENT[19] 表現する.0(EVENT[19], _, ENTITY[5]))) ∧
+           よう(SITUATION[3],   (用い(EVENT[20], _, [_]) ∧ に(EVENT[20]) = SITUATION[4])) ∧
+            なっ_た(EVENT[21], ENTITY[1], SITUATION[3]) ∧ 言葉(ENTITY[1]) ∧
+             past(EVENT[15]) ∧
+              past(EVENT[16]) ∧ past(EVENT[21]) ∧ xxx(EVENT[22], ENTITY[楽都仙台], ENTITY[1]))
+
+# ::id 3_wikipedia_Sendai_Music;NJ
+# ::snt 仙台市 や 市民 一般 において 長らく 用い られ て き た 「 学都仙台 」 と 同音 と なっ て いる が 、 楽都仙台 を 構成 する イベント の 多く が 学生 を 出演者 ・ ボランティア ・ 聴衆 など として あてにし て おり 、 両者 は 表裏一体 の 面 も 持つ 。
+∃ EVENT[9] ENTITY[8] GROUP[1] (
+ CONJ_と(∃ EVENT[5] GROUP[3] (
+       CONJ_や(is_element_of(ENTITY[仙台市], GROUP[3]), ∃ ENTITY[4] (市民_一般(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3]))) ∧
+        用い_て_き_た(EVENT[5], _, ENTITY[学都仙台]) ∧ において(EVENT[5]) = GROUP[3] ∧
+         ADV_長らく(EVENT[5]) ∧ past(EVENT[5]) ∧ is_element_of(ENTITY[学都仙台], GROUP[1])),
+  ∃ ENTITY[7] (ENTITY[7] = *pro*{ENTITY[学都仙台], ENTITY[仙台市]} ∧ is_element_of(ENTITY[7], GROUP[1]))) ∧
+  同音(ENTITY[8]) ∧
+   CONJ_が(なっ_て_いる(EVENT[9], GROUP[1], ENTITY[8]),
+    多く EVENT[13] ENTITY[11] ENTITY[10] ((構成する.0(EVENT[13], ENTITY[11], ENTITY[楽都仙台]) ∧ イベント(ENTITY[11]) ∧ の(ENTITY[11], ENTITY[10])),
+     ∃ EVENT[20] GROUP[16] ENTITY[15] ENTITY[14] (
+      学生(ENTITY[14]) ∧
+       ∃ ENTITY[17] (出演者(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])) ∧
+        ∃ ENTITY[18] (ボランティア(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16])) ∧
+        ∃ ENTITY[19] (聴衆(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[16])) ∧
+        など(GROUP[16], ENTITY[15]) ∧
+         あてにし_て_おり(EVENT[20], ENTITY[10], ENTITY[14]) ∧ として(EVENT[20]) = ENTITY[15])) ∧
+     両 ENTITY[21] (者(ENTITY[21]),
+      ∃ EVENT[24] ENTITY[23] ENTITY[22] (表裏一体(ENTITY[23]) ∧ の_面(ENTITY[23], ENTITY[22]) ∧ 持つ(EVENT[24], ENTITY[21], ENTITY[22])))))
+
+# ::id 4_wikipedia_Sendai_Music;NJ
+# ::snt 「 楽都仙台 」 を 構成 する もの
+∃ ENTITY[1] EVENT[3] EVENT[4] (
+ 構成する.0(EVENT[3], ENTITY[1], ENTITY[楽都仙台]) ∧ もの(ENTITY[1]) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 5_wikipedia_Sendai_Music;NJ
+# ::snt 「 楽都仙台 」 という 言葉 は 、 市 当局 が 用いる とき 、 企業 が 用いる とき 、 市民 が 用いる とき と で 、 多少 の 意味 の 違い が ある 。
+∃ GROUP[3] ENTITY[2] ENTITY[1] (
+ という_言葉(ENTITY[楽都仙台], ENTITY[1]) ∧
+  ∃ EVENT[6] ENTITY[5] ENTITY[4] (市_当局(ENTITY[5]) ∧ THAT_とき(用いる(EVENT[6], ENTITY[5]), ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ EVENT[9] ENTITY[8] ENTITY[7] (企業(ENTITY[8]) ∧ THAT_とき(用いる(EVENT[9], ENTITY[8]), ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[3])) ∧
+   ∃ EVENT[12] ENTITY[11] ENTITY[10] (市民(ENTITY[11]) ∧ THAT_とき(用いる(EVENT[12], ENTITY[11]), ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+   と(GROUP[3], ENTITY[2]) ∧
+    多少_の ENTITY[14] ENTITY[13] ((意味(ENTITY[14]) ∧ の_違い(ENTITY[14], ENTITY[13])),
+     ∃ EVENT[15] (ある(EVENT[15], ENTITY[13]) ∧ で(EVENT[15]) = ENTITY[2] ∧ TPC(EVENT[15]) = ENTITY[1])))
+
+# ::id 6_wikipedia_Sendai_Music;NJ
+# ::snt 市 が 「 楽都仙台 」 と 言う とき は 、 市 （ または 仙台市市民文化事業団 を通して ） の 税金 投入 が ある 音楽 系 団体 や イベント の 総体 を 指し て いる 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[10] EVENT[14] ENTITY[3] ENTITY[9] ENTITY[8] GROUP[11] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  市(ENTITY[3]) ∧
+   とき(SITUATION[2], 言う(EVENT[4], ENTITY[3]) ∧ と(EVENT[4]) = ENTITY[楽都仙台]) ∧
+    市(ENTITY[9]) ∧
+     の_税金_投入(ENTITY[9], ENTITY[8]) ∧
+      CONJ_や(∃ ENTITY[12] (音楽_系_団体(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+       ∃ ENTITY[13] (イベント(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+       ある(EVENT[10], (ENTITY[6], ENTITY[8])) ∧ equals(GROUP[11], ENTITY[6]) ∧
+        の_総体(ENTITY[6], ENTITY[5]) ∧ 指し_て_いる(EVENT[14], ENTITY[1], ENTITY[5]) ∧ 時間(EVENT[14]) = SITUATION[2])
+
+# ::id 7_wikipedia_Sendai_Music;NJ
+# ::snt その ため 、 「 楽都仙台 」 で 第 一 に 上がる の は 仙台国際音楽コンクール や 仙台クラシックフェスティバル で ある 。
+∃ EVENT[7] GROUP[6] EVENT[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  CD_第_一(ENTITY[4]) ∧
+   上がる(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[楽都仙台] ∧
+    の(ENTITY[2]) ∧
+    CONJ_や(is_element_of(ENTITY[仙台国際音楽コンクール], GROUP[6]), is_element_of(ENTITY[仙台クラシックフェスティバル], GROUP[6])) ∧
+     で_ある(EVENT[7], ENTITY[2], GROUP[6]) ∧ ADV(EVENT[7]) = ENTITY[1])
+
+# ::id 8_wikipedia_Sendai_Music;NJ
+# ::snt 企業 の 場合 は 、 冠 公演 など で 後援 し て いる 仙台フィルハーモニー管弦楽団 が 第 一 に 上がる 。
+∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] ENTITY[1] (
+ 企業(ENTITY[2]) ∧
+  の_場合(ENTITY[2], ENTITY[1]) ∧
+   冠_公演(ENTITY[5]) ∧
+    など(ENTITY[5], ENTITY[4]) ∧
+     後援する.0_て_いる(EVENT[6], ENTITY[仙台フィルハーモニー管弦楽団]) ∧ で(EVENT[6]) = ENTITY[4] ∧
+      CD_第_一(ENTITY[7]) ∧
+       上がる(EVENT[8], ENTITY[仙台フィルハーモニー管弦楽団]) ∧ に(EVENT[8]) = ENTITY[7] ∧ TPC(EVENT[8]) = ENTITY[1])
+
+# ::id 9_wikipedia_Sendai_Music;NJ
+# ::snt 市民 の 認識 で は 、 定禅寺ストリートジャズフェスティバルin仙台 など 、 無料 の 街角屋外ライブイベント が 「 楽都仙台 」 を 代表 し て いる 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 市民(ENTITY[2]) ∧
+  の_認識(ENTITY[2], ENTITY[1]) ∧
+   無料(ENTITY[4]) ∧
+    の_街角屋外ライブイベント(ENTITY[4], ENTITY[3]) ∧ など_街角屋外ライブイベント(ENTITY[定禅寺ストリートジャズフェスティバルin仙台], ENTITY[3]) ∧
+     代表する.0_て_いる(EVENT[5], ENTITY[3], ENTITY[楽都仙台]) ∧ で(EVENT[5]) = ENTITY[1])
+
+# ::id 10_wikipedia_Sendai_Music;NJ
+# ::snt なお 、 年間 を通じて 経済 効果 が 最も 大きい の は 、 イベント 運営 会社 （ プロモーター ） が 主催 し て 仙台 で 行わ れる プロ の ミュージシャン の コンサート ツアー の 数々 で ある が 、 これ は 1つ1つ の 集客数 が 小さい ため 、 「 楽都仙台 」 と 言っ た とき に 引き合い に 出さ れる こと は 少ない 。
+∃ SITUATION[17] ARB[25] SITUATION[24] ENTITY[23] SITUATION[22] SITUATION[19] ENTITY[18] EVENT[26] EVENT[28] EVENT[29] ENTITY[27] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 年間(ENTITY[3]) ∧
+  経済_効果(ENTITY[4]) ∧
+   大きい(EVENT[5], (ENTITY[1], ENTITY[4])) ∧ を通じて(EVENT[5]) = ENTITY[3] ∧ の(ENTITY[1]) ∧
+    ENTITY[18] = これ{ENTITY[1], ENTITY[仙台], ENTITY[3], ENTITY[4]} ∧
+     ADV_最も(EVENT[5]) ∧
+      FACT(SITUATION[19], 1つ1つ_の ENTITY[20] (集客数(ENTITY[20]), ∃ EVENT[21] 小さい(EVENT[21], ENTITY[20]))) ∧
+       ENTITY[23] = *pro*{ENTITY[18], ENTITY[1], ENTITY[仙台], ENTITY[3], ENTITY[4]} ∧
+        ARB[25] = *arb* ∧
+         とき(SITUATION[24], 言っ_た(EVENT[26], ARB[25]) ∧ と(EVENT[26]) = ENTITY[楽都仙台]) ∧
+          引き合い(ENTITY[27]) ∧
+           こと(SITUATION[22],
+            出さ(EVENT[28], _, ENTITY[23]) ∧ に(EVENT[28]) = ENTITY[27] ∧
+             に(EVENT[28]) = SITUATION[24]) ∧
+            ADV_なお(SITUATION[17]) ∧
+             CONJ_が(FACT(SITUATION[17],
+                   数々 EVENT[12] EVENT[13] ENTITY[10] ENTITY[11] ENTITY[15] ENTITY[14] ENTITY[8] ENTITY[7] (
+                    (イベント_運営_会社(ENTITY[11]) ∧ プロモーター(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[11]) ∧
+                     プロ(ENTITY[15]) ∧ の_ミュージシャン(ENTITY[15], ENTITY[14]) ∧
+                     CONJ_te(主催する.0_て(EVENT[12], ENTITY[11]),
+                      行わ(EVENT[13], _, ENTITY[8]) ∧ で(EVENT[13]) = ENTITY[仙台]) ∧
+                      の_コンサート_ツアー(ENTITY[14], ENTITY[8]) ∧ の(ENTITY[8], ENTITY[7])),
+                    ∃ EVENT[16] で_ある(EVENT[16], ENTITY[1], ENTITY[7]))),
+              少ない(EVENT[29], SITUATION[22]) ∧ ため(EVENT[29]) = SITUATION[19] ∧
+               TPC(EVENT[29]) = ENTITY[18]))
+
+# ::id 11_wikipedia_Sendai_Music;NJ
+# ::snt 2009 年 （ 平成 21 年 ） 3 月 、 仙台観光コンベンション協会 など で つくる 仙台ビジターズ産業ネットワーク が 主体 と なっ て 「 楽都仙台プロジェクト 」 が 発足 し た 。
+∃ ENTITY[3] EVENT[5] EVENT[7] EVENT[8] ENTITY[4] ENTITY[6] TIME[1] (
+ CD_2009_年_（_平成_21_年_）_3_月(TIME[1]) ∧
+  ENTITY[3] = *pro* ∧
+   など(ENTITY[仙台観光コンベンション協会], ENTITY[4]) ∧
+    つくる(EVENT[5], ENTITY[3], ENTITY[仙台ビジターズ産業ネットワーク]) ∧ で(EVENT[5]) = ENTITY[4] ∧
+     主体(ENTITY[6]) ∧
+      past(EVENT[8]) ∧
+       CONJ_te(なっ_て(EVENT[7], ENTITY[仙台ビジターズ産業ネットワーク]) ∧ と(EVENT[7]) = ENTITY[6] ∧
+             is_contained_in(時間(EVENT[7]), TIME[1]),
+        発足する.0_た(EVENT[8], ENTITY[楽都仙台プロジェクト]) ∧ is_contained_in(時間(EVENT[8]), TIME[1])))
+
+# ::id 12_wikipedia_Sendai_Music;NJ
+# ::snt 今後 は 各イベント主催者同士 の 横 の 関係 の 強化 が 図ら れる 見込み で ある 。
+∃ SITUATION[3] ENTITY[1] EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[2] (
+ 今後(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   の_横(ENTITY[7], ENTITY[6]) ∧
+    の_関係(ENTITY[6], ENTITY[5]) ∧
+     の_強化(ENTITY[5], ENTITY[4]) ∧
+      見込み(SITUATION[3], 図ら(EVENT[8], _, ENTITY[4])) ∧
+       で_ある(EVENT[9], ENTITY[1], SITUATION[3]) ∧ 時間(EVENT[9]) = ENTITY[2])
+
+# ::id 13_wikipedia_Sendai_Music;NJ
+# ::snt 市民 が 主催 する 音楽 イベント
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 市民(ENTITY[3]) ∧
+  主催する.0(EVENT[4], ENTITY[3], ENTITY[1]) ∧ 音楽_イベント(ENTITY[1]) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 14_wikipedia_Sendai_Music;NJ
+# ::snt 仙台 は 、 「 市民 ボランティア が 主体 と なっ て 開催 する 」 「 街 を 舞台 装置 と し た 」 「 無料 の 」 「 屋外音楽祭 」 が 多い の が 特色 と なっ て いる 。
+∃ SITUATION[1] EVENT[6] EVENT[7] EVENT[11] EVENT[13] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[9] ENTITY[12] ENTITY[2] ENTITY[14] (
+ 市民_ボランティア(ENTITY[4]) ∧
+  主体(ENTITY[5]) ∧
+   街(ENTITY[9]) ∧
+    舞台_装置(ENTITY[10]) ∧
+     無料(ENTITY[12]) ∧
+      CONJ_te(なっ_て(EVENT[6], ENTITY[4], ENTITY[2]) ∧ と(EVENT[6]) = ENTITY[5],
+       開催する.0(EVENT[7], _, ENTITY[2])) ∧
+       し_た(EVENT[11], ENTITY[2], ENTITY[9]) ∧ と(EVENT[11]) = ENTITY[10] ∧ の_屋外音楽祭(ENTITY[12], ENTITY[2]) ∧
+       の(SITUATION[1], 多い(EVENT[13], ENTITY[仙台]) ∧ が(EVENT[13]) = ENTITY[2]) ∧
+        特色(ENTITY[14]) ∧
+         past(EVENT[11]) ∧ なっ_て_いる(EVENT[15], ENTITY[仙台], SITUATION[1]) ∧ と(EVENT[15]) = ENTITY[14])
+
+# ::id 15_wikipedia_Sendai_Music;NJ
+# ::snt 定禅寺ストリートジャズフェス が 、 期間中 約71万 人 （ 2006 年 （ 平成 18 年 ） ） の 観客 数 を 集め 、 最大 の イベント と なっ て いる 。
+∃ EVENT[4] EVENT[7] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[6] ENTITY[5] (
+ (CD_約71万_人(ENTITY[3]), 期間中(ENTITY[3])) ∧
+  CD_2006_年_（_平成_18_年_）(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+    の_観客_数(ENTITY[3], ENTITY[1]) ∧
+     最大(ENTITY[6]) ∧
+      の_イベント(ENTITY[6], ENTITY[5]) ∧ 集め(EVENT[4], ENTITY[定禅寺ストリートジャズフェス], ENTITY[1]) ∧ なっ_て_いる(EVENT[7], ENTITY[定禅寺ストリートジャズフェス], ENTITY[5]))
+
+# ::id 16_wikipedia_Sendai_Music;NJ
+# ::snt 音楽 以外 が メイン の イベント で も 、 ステージ が 設置 さ れ 、 バンド 演奏 が 行わ れる こと が ある 。
+∃ SITUATION[2] SITUATION[1] EVENT[6] EVENT[8] EVENT[10] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[9] (
+ 音楽_以外(ENTITY[3]) ∧
+  メイン(ENTITY[5]) ∧
+   の_イベント(ENTITY[5], ENTITY[4]) ∧
+    FACT(SITUATION[2], で(EVENT[6], ENTITY[3], ENTITY[4])) ∧
+     ステージ(ENTITY[7]) ∧
+      バンド_演奏(ENTITY[9]) ∧
+       こと(SITUATION[1],
+        設置する.0(EVENT[8], _, ENTITY[7]) ∧
+         行わ(EVENT[10], _, ENTITY[9]) ∧ te(EVENT[10]) = SITUATION[2]) ∧
+        ある(EVENT[11], SITUATION[1]))
+
+# ::id 17_wikipedia_Sendai_Music;NJ
+# ::snt 仙台市 都心 部 の 勾当台公園 ・ 定禅寺通 ・ 一番町 ・ 仙台駅前 など が 主会場 と なる こと が 多い が 、 都心 部 以外 で の 開催 例 も 見 られる 。
+∃ SITUATION[1] EVENT[9] EVENT[10] EVENT[13] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[2] ENTITY[12] ENTITY[11] (
+ 仙台市_都心_部(ENTITY[4]) ∧
+  ∃ ENTITY[6] (勾当台公園(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+   ∃ ENTITY[7] (定禅寺通(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧ is_element_of(ENTITY[一番町], GROUP[5]) ∧
+   is_element_of(ENTITY[仙台駅前], GROUP[5]) ∧
+   equals(GROUP[5], ENTITY[3]) ∧ の(ENTITY[4], ENTITY[3]) ∧
+    など(ENTITY[3], ENTITY[2]) ∧
+     主会場(ENTITY[8]) ∧
+      こと(SITUATION[1], なる(EVENT[9], ENTITY[2]) ∧ と(EVENT[9]) = ENTITY[8]) ∧
+       都心_部_以外(ENTITY[12]) ∧
+        で_の_開催_例(ENTITY[12], ENTITY[11]) ∧ CONJ_が(多い(EVENT[10], SITUATION[1]), 見(EVENT[13], _, ENTITY[11])))
+
+# ::id 18_wikipedia_Sendai_Music;NJ
+# ::snt 一般 企業 が 主催 する 音楽 イベント
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 一般_企業(ENTITY[3]) ∧
+  主催する.0(EVENT[4], ENTITY[3], ENTITY[1]) ∧ 音楽_イベント(ENTITY[1]) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 19_wikipedia_Sendai_Music;NJ
+# ::snt 企業 が 主催 する 音楽 イベント として 、 Datefm主催 の 「 スターライト・エクスプロージョン 」 、 ラジオ3 主催 の 「 七夕ヴィレッジ 」 および 「 クリスマスヴィレッジ 」 、 NTTドコモ東北 主催 の 「 学都×楽都コラボレーション 」 、 商店街 主催 の 「 ビッグバンドJAZZ・クリスマスコンサート 」 が ある 。
+∃ EVENT[4] EVENT[9] ENTITY[3] GROUP[5] ENTITY[1] (
+ 企業(ENTITY[3]) ∧
+  主催する.0(EVENT[4], ENTITY[3], ENTITY[1]) ∧ 音楽_イベント(ENTITY[1]) ∧
+   ∃ ENTITY[6] (の_スターライト.エクスプロージョン(ENTITY[Datefm主催], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+    ∃ GROUP[7] (
+     CONJ_および(の_xxx(ENTITY[ラジオ3_主催], ENTITY[七夕ヴィレッジ]) ∧ is_element_of(ENTITY[七夕ヴィレッジ], GROUP[7]), is_element_of(ENTITY[クリスマスヴィレッジ], GROUP[7])) ∧
+      is_subset_of_or_equal_to(GROUP[7], GROUP[5])) ∧ の_xxx(ENTITY[NTTドコモ東北_主催], ENTITY[学都×楽都コラボレーション]) ∧ is_element_of(ENTITY[学都×楽都コラボレーション], GROUP[5]) ∧
+    ∃ ENTITY[8] (商店街_主催(ENTITY[8]) ∧ の_xxx(ENTITY[8], ENTITY[ビッグバンドJAZZ.クリスマスコンサート]) ∧ is_element_of(ENTITY[ビッグバンドJAZZ.クリスマスコンサート], GROUP[5])) ∧
+    ある(EVENT[9], GROUP[5]) ∧ として(EVENT[9]) = ENTITY[1])
+
+# ::id 20_wikipedia_Sendai_Music;NJ
+# ::snt 全て 無料 の 屋外音楽イベント で あり 、 地元 の ミュージシャン や 学生 バンド も 出演 する ので 、 「 市民 が 主催 する 音楽イベント 」 の 項目 に も 記載 し た 。
+∃ ENTITY[1] EVENT[10] EVENT[15] EVENT[16] GROUP[6] ENTITY[14] ENTITY[12] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[8] ENTITY[7] (地元(ENTITY[8]) ∧ の_ミュージシャン(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+   ∃ ENTITY[9] (学生_バンド(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+   市民(ENTITY[14]) ∧
+    主催する.0(EVENT[15], ENTITY[14], ENTITY[12]) ∧ 音楽イベント(ENTITY[12]) ∧
+     の_項目(ENTITY[12], ENTITY[11]) ∧
+      past(EVENT[16]) ∧
+       CRD_ので(全て ENTITY[2] ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+             無料(ENTITY[4]) ∧ の_屋外音楽イベント(ENTITY[4], ENTITY[3]) ∧ で_あり(EVENT[5], ENTITY[2], ENTITY[3])) ∧
+             出演する.0(EVENT[10], GROUP[6]), 記載する.0_た(EVENT[16], ENTITY[1]) ∧ に(EVENT[16]) = ENTITY[11]))
+
+# ::id 21_wikipedia_Sendai_Music;NJ
+# ::snt その 他 、 冠 公演 の 形 で 仙台フィルハーモニー管弦楽団 （ 仙台フィル ） の コンサート を 主催 する 例 が 多い 。
+∃ ENTITY[3] SITUATION[2] EVENT[7] EVENT[8] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[1] (
+ 他(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   冠_公演(ENTITY[5]) ∧
+    の_形(ENTITY[5], ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[仙台フィル], ENTITY[仙台フィルハーモニー管弦楽団]) ∧
+      の_コンサート(ENTITY[仙台フィルハーモニー管弦楽団], ENTITY[6]) ∧
+       例(SITUATION[2], 主催する.0(EVENT[7], ENTITY[3], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[4]) ∧
+        多い(EVENT[8], SITUATION[2]) ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 22_wikipedia_Sendai_Music;NJ
+# ::snt 無料 の もの と 有料 の もの が ある 。
+∃ EVENT[6] GROUP[1] (
+ CONJ_と(∃ ENTITY[3] ENTITY[2] (無料(ENTITY[3]) ∧ の_もの(ENTITY[3], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[5] ENTITY[4] (有料(ENTITY[5]) ∧ の_もの(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+  ある(EVENT[6], GROUP[1]))
+
+# ::id 23_wikipedia_Sendai_Music;NJ
+# ::snt 仙台フィル は 、 クラシック 音楽 専用 に つくら れ た 仙台市青年文化センター・コンサートホール を 本拠 と する プロ の オーケストラ で 、 宮城県 内 を 中心 に 各地 で 定期 演奏会 や コンサート を 行っ て いる 。
+∃ EVENT[5] EVENT[7] EVENT[9] ENTITY[4] ENTITY[6] ENTITY[8] ENTITY[1] (
+ クラシック_音楽_専用(ENTITY[4]) ∧
+  つくら_た(EVENT[5], _, ENTITY[仙台市青年文化センター.コンサートホール]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+   本拠(ENTITY[6]) ∧
+    プロ(ENTITY[8]) ∧
+     する(EVENT[7], ENTITY[1], ENTITY[仙台市青年文化センター.コンサートホール]) ∧ と(EVENT[7]) = ENTITY[6] ∧ の_オーケストラ(ENTITY[8], ENTITY[1]) ∧
+      past(EVENT[5]) ∧
+       CONJ_te(で(EVENT[9], ENTITY[仙台フィル], ENTITY[1]),
+        各 ENTITY[10] (地(ENTITY[10]),
+         ∃ EVENT[16] EVENT[17] ENTITY[15] ENTITY[14] GROUP[11] (
+          CONJ_や(∃ ENTITY[12] (定期_演奏会(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+           ∃ ENTITY[13] (コンサート(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+           宮城県_内(ENTITY[14]) ∧
+            中心(ENTITY[15]) ∧
+             xxx(EVENT[16], GROUP[11], ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[15] ∧
+              行っ_て_いる(EVENT[17], ENTITY[仙台フィル], GROUP[11]) ∧ で(EVENT[17]) = ENTITY[10]))))
+
+# ::id 24_wikipedia_Sendai_Music;NJ
+# ::snt 経緯
+∃ EVENT[2] ENTITY[1] (経緯(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 25_wikipedia_Sendai_Music;NJ
+# ::snt 行政
+∃ EVENT[2] ENTITY[1] (行政(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 26_wikipedia_Sendai_Music;NJ
+# ::snt 仙台市 で は 、 石井享 市長 時代 （ 在任 期間 ： 1984 年 （ 昭和 59 年 ） 12 月 23 日 - 1993 年 （ 平成 5 年 ） 7 月 3 日 ） に バブル 景気 と なり 、 その 真っ只中 の 1989 年 （ 平成 元 年 ） 4 月 1 日 に 政令指定都市 に 移行 し た 。
+∃ ENTITY[1] EVENT[5] EVENT[10] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[9] ENTITY[7] ENTITY[8] (
+ 真っ只中(ENTITY[8]) ∧
+  ENTITY[1] = *pro* ∧
+   石井享_時代(ENTITY[3]) ∧
+    市長(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      バブル_景気(ENTITY[4]) ∧
+       (CD_1989_年_4_月_1_日(ENTITY[7]), の(ENTITY[8], ENTITY[7])) ∧
+        CD_平成_元_年(ENTITY[6]) ∧
+         namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+          政令指定都市(ENTITY[9]) ∧
+           past(EVENT[10]) ∧
+            なり(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+             移行する.0_た(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+              に(EVENT[10]) = ENTITY[7] ∧ で(EVENT[10]) = ENTITY[仙台市])
+
+# ::id 27_wikipedia_Sendai_Music;NJ
+# ::snt この 空前 の 景気 拡大 と 、 合併 による 市域 拡大 、 および 、 政令市 移行 による 市 財政力 の 増大 を 背景 に 、 石井 は 箱物 行政 を 行っ て 市内 に ホール や 文化 施設 を 次々 建設 し た 。
+∃ EVENT[10] EVENT[12] EVENT[16] ENTITY[9] GROUP[1] ENTITY[11] GROUP[14] ENTITY[13] ENTITY[3] ENTITY[2] (
+ 空前(ENTITY[3]) ∧
+  の_景気_拡大(ENTITY[3], ENTITY[2]) ∧
+   CONJ_と_および(is_element_of(ENTITY[2], GROUP[1]),
+    ∃ ENTITY[5] ENTITY[4] (合併(ENTITY[5]) ∧ による_市域_拡大(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])),
+    ∃ ENTITY[8] ENTITY[7] ENTITY[6] (
+     政令市_移行(ENTITY[8]) ∧
+      による_市_財政力(ENTITY[8], ENTITY[7]) ∧ の_増大(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[1]))) ∧
+    背景(ENTITY[9]) ∧
+     箱物_行政(ENTITY[11]) ∧
+      市内(ENTITY[13]) ∧
+       CONJ_や(is_element_of(ENTITY[ホール], GROUP[14]), ∃ ENTITY[15] (文化_施設(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14]))) ∧
+        ADV_次々(EVENT[16]) ∧
+         past(EVENT[16]) ∧
+          xxx(EVENT[10], ENTITY[石井], GROUP[1]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+           CONJ_te(行っ_て(EVENT[12], ENTITY[石井], ENTITY[11]),
+            建設する.0_た(EVENT[16], ENTITY[石井], GROUP[14]) ∧ に(EVENT[16]) = ENTITY[13]))
+
+# ::id 28_wikipedia_Sendai_Music;NJ
+# ::snt しかし 、 バブル が 崩壊 し 、 仙台市 の ハード面 を 拡充 し て き た 石井 が 、 本間俊太郎 宮城県 知事 （ 当時 ） と共に ゼネコン汚職事件 によって 辞任 する と 、 藤井黎 市長 時代 （ 在任 期間 ： 1993 年 （ 平成 5 年 ） 8 月 22 日 - 2005 年 （ 平成 17 年 ） 8 月 21 日 ） において 、 増大 し た ホール や 文化 施設 で の ソフト面 の 拡充 が 叫ば れる よう に なる 。
+∃ SITUATION[17] EVENT[2] EVENT[5] EVENT[7] EVENT[13] EVENT[18] EVENT[19] ENTITY[1] ENTITY[4] ENTITY[6] ENTITY[8] GROUP[14] ENTITY[16] ENTITY[11] ENTITY[10] ENTITY[9] (
+ バブル(ENTITY[1]) ∧
+  の_ハード面(ENTITY[仙台市], ENTITY[4]) ∧
+   拡充する.0_て_き_た(EVENT[5], ENTITY[石井], ENTITY[4]) ∧
+    当時(ENTITY[6]) ∧
+     namely_-ENTITY-(ENTITY[6], ENTITY[宮城県_知事_本間俊太郎]) ∧
+      藤井黎_時代(ENTITY[9]) ∧
+       市長(ENTITY[8]) ∧
+        namely_-ENTITY-(ENTITY[8], ENTITY[9]) ∧
+         CONJ_や(is_element_of(ENTITY[ホール], GROUP[14]), ∃ ENTITY[15] (文化_施設(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14]))) ∧
+          増大する.0_た(EVENT[13], ENTITY[11]) ∧ equals(GROUP[14], ENTITY[11]) ∧
+           ソフト面(ENTITY[16]) ∧
+            の_拡充(ENTITY[16], ENTITY[10]) ∧ で_の_拡充(ENTITY[11], ENTITY[10]) ∧
+             よう(SITUATION[17], 叫ば(EVENT[18], _, ENTITY[10])) ∧
+              past(EVENT[5]) ∧
+               past(EVENT[13]) ∧
+                CRD_と(崩壊する.0(EVENT[2], ENTITY[1]) ∧
+                      辞任する.0(EVENT[7], ENTITY[石井]) ∧ によって(EVENT[7]) = ENTITY[ゼネコン汚職事件] ∧
+                       と共に(EVENT[7]) = ENTITY[宮城県_知事_本間俊太郎],
+                 なる(EVENT[19], ENTITY[10], SITUATION[17]) ∧ において(EVENT[19]) = ENTITY[9]))
+
+# ::id 29_wikipedia_Sendai_Music;NJ
+# ::snt そこで 市 は 、 世界 の 3 大 音楽 コンクール の 1 つ で ある 「 チャイコフスキー国際コンクール 」 の ジュニア 部門 で ある 「 若い音楽家のためのチャイコフスキー国際コンクール 」 を 誘致 し 、 1995 年 （ 平成 7 年 ） に 開催 し た 。
+∃ EVENT[8] EVENT[9] EVENT[10] EVENT[12] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[11] ENTITY[1] (
+ 市(ENTITY[1]) ∧
+  世界(ENTITY[7]) ∧
+   (CD_3_大(ENTITY[6]), の_音楽_コンクール(ENTITY[7], ENTITY[6])) ∧
+    (CD_1_つ(ENTITY[5]), の(ENTITY[6], ENTITY[5])) ∧
+     で_ある(EVENT[8], ENTITY[チャイコフスキー国際コンクール], ENTITY[5]) ∧
+      の_ジュニア_部門(ENTITY[チャイコフスキー国際コンクール], ENTITY[3]) ∧
+       で_ある(EVENT[9], ENTITY[若い音楽家のためのチャイコフスキー国際コンクール], ENTITY[3]) ∧
+        CD_1995_年_（_平成_7_年_）(ENTITY[11]) ∧
+         past(EVENT[10]) ∧
+          past(EVENT[12]) ∧
+           誘致する.0(EVENT[10], ENTITY[1], ENTITY[若い音楽家のためのチャイコフスキー国際コンクール]) ∧
+            開催する.0_た(EVENT[12], ENTITY[1], ENTITY[若い音楽家のためのチャイコフスキー国際コンクール]) ∧ に(EVENT[12]) = ENTITY[11])
+
+# ::id 30_wikipedia_Sendai_Music;NJ
+# ::snt この 経験 を もと に 、 伊達政宗 による 仙台 開府 400 周年 に あたる 2001 年 （ 平成 13 年 ） から 、 市 主催 で 仙台国際音楽コンクール が 開催 さ れる よう に なり 、 この コンクール の ポスター ロゴ に 「 楽都 仙台 」 が 用い られ た 。
+∃ SITUATION[7] EVENT[5] EVENT[8] EVENT[9] EVENT[14] EVENT[15] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[1] ENTITY[13] ENTITY[10] ENTITY[11] ENTITY[12] (
+ コンクール(ENTITY[11]) ∧
+  経験(ENTITY[12]) ∧
+   による_仙台_開府(ENTITY[伊達政宗], ENTITY[3]) ∧
+    CD_400_周年(ENTITY[4]) ∧
+     (CD_2001_年_（_平成_13_年_）(ENTITY[1]),
+      あたる(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 時間(EVENT[5]) = ENTITY[1]) ∧
+      市_主催(ENTITY[6]) ∧
+       よう(SITUATION[7], 開催する.0(EVENT[8], _, ENTITY[仙台国際音楽コンクール])) ∧
+        の_ポスター_ロゴ(ENTITY[11], ENTITY[10]) ∧
+         もと(ENTITY[13]) ∧
+          past(EVENT[15]) ∧
+           なり(EVENT[9], ENTITY[仙台国際音楽コンクール], SITUATION[7]) ∧ で(EVENT[9]) = ENTITY[6] ∧
+            から(EVENT[9]) = ENTITY[1] ∧
+            xxx(EVENT[14], ENTITY[楽都_仙台], ENTITY[12]) ∧ に(EVENT[14]) = ENTITY[13] ∧
+             用い_た(EVENT[15], _, ENTITY[楽都_仙台]) ∧ に(EVENT[15]) = ENTITY[10])
+
+# ::id 31_wikipedia_Sendai_Music;NJ
+# ::snt 市 は これ 以降 、 当コンクール 以外 に も 市 の 音楽 事業 全般 において 「 楽都仙台 」 を キャッチコピー として 用いる よう に なり 、 また 、 音楽 イベント が 持つ 集客力 によって 仙台 に もたらさ れる 経済 効果 に 着目 し た 施策 を する よう に なっ た 。
+∃ SITUATION[11] SITUATION[10] SITUATION[3] TIME[2] EVENT[9] EVENT[17] EVENT[18] EVENT[19] EVENT[20] EVENT[21] ENTITY[4] ENTITY[16] ENTITY[14] ENTITY[12] ENTITY[1] (
+ 市(ENTITY[1]) ∧
+  TIME[2] = これ ∧
+   以降(TIME[2]) ∧
+    当コンクール_以外(ENTITY[4]) ∧
+     よう(SITUATION[3],
+      全 ENTITY[6] ENTITY[5] ((市(ENTITY[6]) ∧ の_音楽_事業(ENTITY[6], ENTITY[5]) ∧ の_般(ENTITY[6], ENTITY[5])),
+       ∃ EVENT[8] ENTITY[7] (
+        キャッチコピー(ENTITY[7]) ∧
+         用いる(EVENT[8], ENTITY[1], ENTITY[楽都仙台]) ∧ として(EVENT[8]) = ENTITY[7] ∧
+          において(EVENT[8]) = ENTITY[5] ∧ に(EVENT[8]) = ENTITY[4]))) ∧
+      音楽_イベント(ENTITY[16]) ∧
+       持つ(EVENT[17], ENTITY[16], ENTITY[14]) ∧ 集客力(ENTITY[14]) ∧
+        もたらさ(EVENT[18], ENTITY[14], ENTITY[12]) ∧ に(EVENT[18]) = ENTITY[仙台] ∧ 経済_効果(ENTITY[12]) ∧
+         施策(SITUATION[11], 着目する.0_た(EVENT[19], ENTITY[1]) ∧ に(EVENT[19]) = ENTITY[12]) ∧
+          よう(SITUATION[10], する(EVENT[20], ENTITY[1], SITUATION[11])) ∧
+           past(EVENT[9]) ∧
+            past(EVENT[19]) ∧
+             past(EVENT[21]) ∧
+              CONJ_また(なり(EVENT[9], ENTITY[1], SITUATION[3]) ∧ is_contained_in(時間(EVENT[9]), TIME[2]),
+               なっ_た(EVENT[21], ENTITY[1], SITUATION[10]) ∧ is_contained_in(時間(EVENT[21]), TIME[2])))
+
+# ::id 32_wikipedia_Sendai_Music;NJ
+# ::snt 市民
+∃ EVENT[2] ENTITY[1] (市民(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 33_wikipedia_Sendai_Music;NJ
+# ::snt 1987 年 （ 昭和 62 年 ） の 仙台 市営 地下鉄 南北線 開業 に 合わせ て 再開発 さ れ た ファッションドーム141 にて 、 同年 から 市民 が 主催 する 「 LIVE141　定禅寺ストリートジャズフェスティバル 」 が 開催 さ れ て い た が 、 1991 年 （ 平成 3 年 ） から は 「 定禅寺ストリートジャズフェスティバルin仙台 」 （ 以下 「 定禅寺ジャズフェス 」 ） と の 名称 で 、 無料 の 街角 野外 の 音楽 イベント として 再出発 し た 。
+∃ ENTITY[12] ENTITY[2] EVENT[5] EVENT[6] EVENT[10] EVENT[11] EVENT[19] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[7] ENTITY[15] ENTITY[18] ENTITY[17] ENTITY[16] ENTITY[14] ENTITY[13] (
+ CD_1991_年_（_平成_3_年_）(ENTITY[13]) ∧
+  ENTITY[2] = *pro*{ENTITY[ファッションドーム141]} ∧
+   CD_1987_年_（_昭和_62_年_）(ENTITY[4]) ∧
+    の_仙台_市営_地下鉄_南北線_開業(ENTITY[4], ENTITY[3]) ∧
+     CONJ_te(合わせ_て(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[3],
+      再開発する.0_た(EVENT[6], _, ENTITY[ファッションドーム141])) ∧
+      同年(ENTITY[7]) ∧
+       市民(ENTITY[9]) ∧
+        主催する.0(EVENT[10], ENTITY[9], ENTITY[LIVE141 定禅寺ストリートジャズフェスティバル]) ∧
+         ENTITY[12] = *pro*{ENTITY[ファッションドーム141], ENTITY[LIVE141 定禅寺ストリートジャズフェスティバル], ENTITY[7], ENTITY[9], ENTITY[3], ENTITY[4]} ∧
+          定禅寺ジャズフェス(ENTITY[15]) ∧ 以下(ENTITY[15]) ∧
+           namely_-ENTITY-(ENTITY[15], ENTITY[定禅寺ストリートジャズフェスティバルin仙台]) ∧
+            と_の_名称(ENTITY[定禅寺ストリートジャズフェスティバルin仙台], ENTITY[14]) ∧
+             無料(ENTITY[17]) ∧
+              街角_野外(ENTITY[18]) ∧
+               の_音楽_イベント(ENTITY[18], ENTITY[16]) ∧ の__音楽_イベント(ENTITY[17], ENTITY[16]) ∧
+                past(EVENT[6]) ∧
+                 past(EVENT[11]) ∧
+                  past(EVENT[19]) ∧
+                   CONJ_が(開催する.0_て_い_た(EVENT[11], _, ENTITY[LIVE141 定禅寺ストリートジャズフェスティバル]) ∧ から(EVENT[11]) = ENTITY[7] ∧
+                         にて(EVENT[11]) = ENTITY[ファッションドーム141],
+                    再出発する.0_た(EVENT[19], ENTITY[12]) ∧ から(EVENT[19]) = ENTITY[13] ∧
+                     として(EVENT[19]) = ENTITY[16] ∧ で(EVENT[19]) = ENTITY[14]))
+
+# ::id 34_wikipedia_Sendai_Music;NJ
+# ::snt 定禅寺ジャズフェス は 市民 に 受け入れ られ て 観客数 を 伸ばし 、 第 10 回 に あたる 2000 年 （ 平成 12 年 ） に は 2 日間 開催 と なっ て 約38万 人 の 観客 を 集め た 。
+∃ ENTITY[7] EVENT[2] EVENT[4] EVENT[11] EVENT[14] ENTITY[1] ENTITY[3] ENTITY[10] ENTITY[13] ENTITY[12] EVENT[9] ENTITY[8] ENTITY[5] (
+ ENTITY[7] = *pro*{ENTITY[定禅寺ジャズフェス], ENTITY[3], ENTITY[1]} ∧
+  CD_第_10_回(ENTITY[8]) ∧
+   (CD_2000_年_（_平成_12_年_）(ENTITY[5]),
+    あたる(EVENT[9], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[8] ∧ 時間(EVENT[9]) = ENTITY[5]) ∧
+    市民(ENTITY[1]) ∧
+     観客数(ENTITY[3]) ∧
+      (CD_2_日間(ENTITY[10]), 開催(ENTITY[10])) ∧
+       CD_約38万_人(ENTITY[13]) ∧
+        の_観客(ENTITY[13], ENTITY[12]) ∧
+         past(EVENT[14]) ∧
+          CONJ_te(受け入れ_て(EVENT[2], ENTITY[1], ENTITY[定禅寺ジャズフェス]), 伸ばし(EVENT[4], ENTITY[定禅寺ジャズフェス], ENTITY[3])) ∧
+           CONJ_te(なっ_て(EVENT[11], ENTITY[定禅寺ジャズフェス], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[5],
+            集め_た(EVENT[14], ENTITY[定禅寺ジャズフェス], ENTITY[12]) ∧ に(EVENT[14]) = ENTITY[5]))
+
+# ::id 35_wikipedia_Sendai_Music;NJ
+# ::snt 定禅寺ジャズフェス の 成功 により 「 市民 が 主催 」 「 無料 」 「 街角 野外 」 の 音楽 イベント が 仙台 で 次々 始まっ た 。
+∃ ENTITY[10] ENTITY[7] ENTITY[4] SITUATION[3] EVENT[6] EVENT[9] EVENT[12] EVENT[13] ENTITY[5] ENTITY[8] ENTITY[11] ENTITY[2] ENTITY[1] (
+ の_成功(ENTITY[定禅寺ジャズフェス], ENTITY[1]) ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[1], ENTITY[定禅寺ジャズフェス]} ∧
+   市民(ENTITY[5]) ∧
+    ENTITY[7] = *pro*{ENTITY[5], ENTITY[2], ENTITY[1], ENTITY[定禅寺ジャズフェス]} ∧
+     無料(ENTITY[8]) ∧
+      ENTITY[10] = *pro*{ENTITY[8], ENTITY[5], ENTITY[2], ENTITY[1], ENTITY[定禅寺ジャズフェス]} ∧
+       街角_野外(ENTITY[11]) ∧
+        FACT(SITUATION[3],
+         主催(EVENT[6], ENTITY[5], ENTITY[4]) ∧ xxx(EVENT[9], ENTITY[7], ENTITY[8]) ∧
+          xxx(EVENT[12], ENTITY[10], ENTITY[11])) ∧
+         の_音楽_イベント(SITUATION[3], ENTITY[2]) ∧
+          ADV_次々(EVENT[13]) ∧
+           past(EVENT[13]) ∧
+            始まっ_た(EVENT[13], ENTITY[2]) ∧ で(EVENT[13]) = ENTITY[仙台] ∧ により(EVENT[13]) = ENTITY[1])
+
+# ::id 36_wikipedia_Sendai_Music;NJ
+# ::snt 1998 年 （ 平成 10 年 ） から みちのくYOSAKOIまつり 、 2000 年 （ 平成 12 年 ） から 伊達ロックフェスティバル 、 2001 年 （ 平成 13 年 ） から ジャスプロムナードinSENDAI 、 とっておきの音楽祭 、 仙台ブルースフェスティバル 、 2002 年 （ 平成 14 年 ） から 仙台ゴスペル・フェスティバル など 、 数々 の 音楽 イベント が 街中 で 開催 さ れる よう に なり 、 市民 が 気軽 に 音楽 に 触れる 機会 が 多く なっ た 。
+∃ SITUATION[13] EVENT[16] EVENT[18] GROUP[1] ENTITY[15] ENTITY[14] (
+ ∃ ENTITY[2] (CD_1998_年_（_平成_10_年_）(ENTITY[2]) ∧ から_xxx(ENTITY[2], ENTITY[みちのくYOSAKOIまつり]) ∧ is_element_of(ENTITY[みちのくYOSAKOIまつり], GROUP[1])) ∧
+  ∃ ENTITY[3] (CD_2000_年_（_平成_12_年_）(ENTITY[3]) ∧ から_xxx(ENTITY[3], ENTITY[伊達ロックフェスティバル]) ∧ is_element_of(ENTITY[伊達ロックフェスティバル], GROUP[1])) ∧
+  ∃ GROUP[6] ENTITY[5] ENTITY[4] (
+   CD_2001_年_（_平成_13_年_）(ENTITY[5]) ∧
+    is_element_of(ENTITY[ジャスプロムナードinSENDAI], GROUP[6]) ∧ is_element_of(ENTITY[とっておきの音楽祭], GROUP[6]) ∧ is_element_of(ENTITY[仙台ブルースフェスティバル], GROUP[6]) ∧
+     から(ENTITY[5], ENTITY[4]) ∧ equals(GROUP[6], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  ∃ ENTITY[7] (CD_2002_年_（_平成_14_年_）(ENTITY[7]) ∧ から_xxx(ENTITY[7], ENTITY[仙台ゴスペル.フェスティバル]) ∧ is_element_of(ENTITY[仙台ゴスペル.フェスティバル], GROUP[1])) ∧
+  市民(ENTITY[14]) ∧
+   音楽(ENTITY[15]) ∧
+    機会(SITUATION[13], 触れる(EVENT[16], ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[15]) ∧
+     ADV_気軽_に(EVENT[16]) ∧
+      past(EVENT[18]) ∧
+       数々_の ENTITY[8] (音楽_イベント(ENTITY[8]),
+        ∃ SITUATION[9] EVENT[11] EVENT[12] ENTITY[10] (
+         街中(ENTITY[10]) ∧
+          よう(SITUATION[9], 開催する.0(EVENT[11], _, ENTITY[8]) ∧ で(EVENT[11]) = ENTITY[10]) ∧
+           なり(EVENT[12], ENTITY[8], SITUATION[9]) ∧ など(EVENT[12]) = GROUP[1])) ∧
+        多く_なっ_た(EVENT[18], SITUATION[13]))
+
+# ::id 37_wikipedia_Sendai_Music;NJ
+# ::snt 「 楽都仙台 」 は 、 市民 一般 に 既に 浸透 し て い た 「 学都仙台 」 と 同音 で ある ため 、 市 の 音楽 事業 以外 に も この よう な 仙台 の 音楽 イベント 全般 を 形容 する 際 に も 用い られる よう に なり 、 さらに 仙台 市民 の ライフスタイル を 表す 言葉 として も 使用 さ れる よう に なっ た 。
+∃ SITUATION[28] SITUATION[22] SITUATION[21] SITUATION[12] ARB[5] SITUATION[4] SITUATION[1] EVENT[11] EVENT[19] EVENT[20] EVENT[25] EVENT[26] EVENT[27] ENTITY[3] ENTITY[2] GROUP[13] ENTITY[24] ENTITY[23] ENTITY[8] (
+ よう(ENTITY[8]) ∧
+  市(ENTITY[3]) ∧
+   の_音楽_事業_以外(ENTITY[3], ENTITY[2]) ∧
+    ARB[5] = *arb* ∧
+     際(SITUATION[4],
+      全 EVENT[9] ENTITY[6] (な(EVENT[9], ENTITY[6], ENTITY[8]) ∧ の_音楽_イベント(ENTITY[仙台], ENTITY[6]) ∧ の_般(ENTITY[仙台], ENTITY[6]),
+       ∃ EVENT[10] 形容する.0(EVENT[10], ARB[5], ENTITY[6]))) ∧
+      よう(SITUATION[1],
+       用い(EVENT[11], _, ENTITY[楽都仙台]) ∧ に(EVENT[11]) = SITUATION[4] ∧
+        に(EVENT[11]) = ENTITY[2]) ∧
+       CONJ_と(∃ EVENT[16] ENTITY[15] (
+             市民_一般(ENTITY[15]) ∧
+              浸透する.0_て_い_た(EVENT[16], ENTITY[学都仙台]) ∧ に(EVENT[16]) = ENTITY[15] ∧
+               ADV_既に(EVENT[16]) ∧ past(EVENT[16]) ∧ is_element_of(ENTITY[学都仙台], GROUP[13])),
+        ∃ ENTITY[18] (同音(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[13]))) ∧
+        FACT(SITUATION[12], で_ある(EVENT[19], SITUATION[1], GROUP[13])) ∧
+         仙台_市民(ENTITY[24]) ∧
+          の_ライフスタイル(ENTITY[24], ENTITY[23]) ∧
+           言葉(SITUATION[22], 表す(EVENT[25], ENTITY[楽都仙台], ENTITY[23])) ∧
+            よう(SITUATION[21], 使用する.0(EVENT[26], _, ENTITY[楽都仙台]) ∧ として(EVENT[26]) = SITUATION[22]) ∧
+             ADV_さらに(SITUATION[28]) ∧
+              past(EVENT[27]) ∧
+               なり(EVENT[20], ENTITY[楽都仙台], SITUATION[1]) ∧ ため(EVENT[20]) = SITUATION[12] ∧
+                FACT(SITUATION[28], なっ_た(EVENT[27], ENTITY[楽都仙台], SITUATION[21])))
+
+# ::id 38_wikipedia_Sendai_Music;NJ
+# ::snt 業界
+∃ EVENT[2] ENTITY[1] (業界(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 39_wikipedia_Sendai_Music;NJ
+# ::snt 支店 経済 都市 で ある 仙台市 に は 、 中央 資本 の レコード 会社 20 社 が 営業所 を 構え て い た が 、 2000 年 （ 平成 12 年 ） に それら 全て が 閉鎖 さ れ て しまい 、 仙台 の 音楽 市場 に は ニッチ が 生まれ た 。
+∃ ENTITY[10] EVENT[8] EVENT[11] EVENT[14] DEGREE[6] ENTITY[5] ENTITY[7] ENTITY[4] ENTITY[9] ENTITY[13] EVENT[3] ENTITY[2] ENTITY[12] (
+ 支店_経済_都市(ENTITY[2]) ∧
+  で_ある(EVENT[3], ENTITY[仙台市], ENTITY[2]) ∧
+   の_音楽_市場(ENTITY[仙台], ENTITY[12]) ∧
+    中央_資本(ENTITY[5]) ∧
+     CD_20_社(DEGREE[6]) ∧
+      MSR_レコード_会社(DEGREE[6], ENTITY[4]) ∧ の_レコード_会社(ENTITY[5], ENTITY[4]) ∧
+       営業所(ENTITY[7]) ∧
+        CD_2000_年_（_平成_12_年_）(ENTITY[9]) ∧
+         ENTITY[10] = それら{ENTITY[4], ENTITY[7], ENTITY[5], ENTITY[仙台市], ENTITY[2]} ∧
+          ニッチ(ENTITY[13]) ∧
+           past(EVENT[8]) ∧
+            past(EVENT[14]) ∧
+             CONJ_が(構え_て_い_た(EVENT[8], ENTITY[4], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[仙台市],
+              閉鎖する.0_て_しまい(EVENT[11], _, ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[9] ∧
+               生まれ_た(EVENT[14], ENTITY[13]) ∧ に(EVENT[14]) = ENTITY[12]))
+
+# ::id 40_wikipedia_Sendai_Music;NJ
+# ::snt 仙台 に は 主 な プロモーター として 、 キョードー東北 、 ノースロードミュージック 、 GIP の 3 つ が ある が 、 2000 年 （ 平成 12 年 ） あたり から これら プロモーター が 中央 の アーティスト を 仙台 に 呼ん で 開催 する コンサート や ライブ が 増加 し 始め 、 ライブハウス も 増加 し た 。
+∃ ENTITY[9] ATTRIB[2] EVENT[5] EVENT[12] EVENT[13] EVENT[17] EVENT[19] GROUP[4] ENTITY[3] ENTITY[1] ENTITY[11] ENTITY[10] GROUP[14] ENTITY[7] ENTITY[18] ENTITY[6] (
+ 主_な(ATTRIB[2]) ∧
+  ATTRIBUTE_プロモーター(ATTRIB[2], ENTITY[1]) ∧
+   is_element_of(ENTITY[キョードー東北], GROUP[4]) ∧ is_element_of(ENTITY[ノースロードミュージック], GROUP[4]) ∧ is_element_of(ENTITY[GIP], GROUP[4]) ∧
+    (CD_3_つ(ENTITY[3]), の(GROUP[4], ENTITY[3])) ∧
+     (CD_2000_年_（_平成_12_年_）(ENTITY[6]), あたり(ENTITY[6])) ∧
+      ENTITY[9] = これら{ENTITY[6], ENTITY[1], ENTITY[3], ENTITY[仙台], ENTITY[GIP], ENTITY[ノースロードミュージック], ENTITY[キョードー東北]} ∧
+       プロモーター(ENTITY[9]) ∧
+        中央(ENTITY[11]) ∧
+         の_アーティスト(ENTITY[11], ENTITY[10]) ∧
+          CONJ_や(∃ ENTITY[15] (コンサート(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])),
+           ∃ ENTITY[16] (ライブ(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14]))) ∧
+           CONJ_te(呼ん_で(EVENT[12], ENTITY[9], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[仙台],
+            開催する.0(EVENT[13], ENTITY[9], ENTITY[7])) ∧ equals(GROUP[14], ENTITY[7]) ∧
+            ライブハウス(ENTITY[18]) ∧
+             past(EVENT[5]) ∧
+              past(EVENT[19]) ∧
+               CONJ_が(ある(EVENT[5], ENTITY[3]) ∧ として(EVENT[5]) = ENTITY[1] ∧
+                     に(EVENT[5]) = ENTITY[仙台],
+                増加する.0_始め(EVENT[17], ENTITY[7]) ∧
+                 増加する.0_た(EVENT[19], ENTITY[18]) ∧ から(EVENT[19]) = ENTITY[6]))
+
+# ::id 41_wikipedia_Sendai_Music;NJ
+# ::snt 一方 、 仙台 を 拠点 と する 音楽系 芸能 事務所 （ インディーズ・レーベル の 運営 や アーティスト マネージメント 等 を 行う ） の 設立 も 相次ぎ 、 2000 年 （ 平成 12 年 ） に は ハウス系 の FORESTNAUTSRECORDS 、 2004 年 （ 平成 16 年 ） に は J-POP 系 の エドワードリミテッド 、 2006 年 （ 平成 18 年 ） に は ヒップホップ 系 の Mess-AgeRecords （ RandC ） 、 2007 年 （ 平成 19 年 ） に も ヒップホップ 系 の NODOUBTTRACKS など が 設立 さ れ て いる 。
+∃ EVENT[5] EVENT[6] EVENT[17] ENTITY[4] ENTITY[2] ENTITY[1] GROUP[8] ENTITY[7] ENTITY[10] ENTITY[12] ENTITY[14] (
+ CD_2000_年_（_平成_12_年_）(ENTITY[10]) ∧
+  CD_2004_年_（_平成_16_年_）(ENTITY[12]) ∧
+   CD_2006_年_（_平成_18_年_）(ENTITY[14]) ∧
+    拠点(ENTITY[4]) ∧
+     する(EVENT[5], ENTITY[2], ENTITY[仙台]) ∧ と(EVENT[5]) = ENTITY[4] ∧ 音楽系_芸能_事務所(ENTITY[2]) ∧
+      の_設立(ENTITY[2], ENTITY[1]) ∧
+       ∃ ENTITY[9] (
+        に_xxx(ENTITY[10], ENTITY[FORESTNAUTSRECORDS]) ∧
+         ハウス系(ENTITY[9]) ∧ の_xxx(ENTITY[9], ENTITY[FORESTNAUTSRECORDS]) ∧ is_element_of(ENTITY[FORESTNAUTSRECORDS], GROUP[8])) ∧
+        ∃ ENTITY[11] (
+         に_xxx(ENTITY[12], ENTITY[エドワードリミテッド]) ∧
+          J-POP_系(ENTITY[11]) ∧ の_xxx(ENTITY[11], ENTITY[エドワードリミテッド]) ∧ is_element_of(ENTITY[エドワードリミテッド], GROUP[8])) ∧
+        ∃ ENTITY[13] (
+         に_xxx(ENTITY[14], ENTITY[Mess-AgeRecords]) ∧
+          ヒップホップ_系(ENTITY[13]) ∧
+           の_xxx(ENTITY[13], ENTITY[Mess-AgeRecords]) ∧ namely_-ENTITY-(ENTITY[RandC], ENTITY[Mess-AgeRecords]) ∧ is_element_of(ENTITY[Mess-AgeRecords], GROUP[8])) ∧
+        ∃ ENTITY[16] ENTITY[15] (
+         CD_2007_年_（_平成_19_年_）(ENTITY[16]) ∧
+          に_xxx(ENTITY[16], ENTITY[NODOUBTTRACKS]) ∧
+           ヒップホップ_系(ENTITY[15]) ∧ の_xxx(ENTITY[15], ENTITY[NODOUBTTRACKS]) ∧ is_element_of(ENTITY[NODOUBTTRACKS], GROUP[8])) ∧
+        など(GROUP[8], ENTITY[7]) ∧ 相次ぎ(EVENT[6], ENTITY[1]) ∧ 設立する.0_て_いる(EVENT[17], _, ENTITY[7]))
+
+# ::id 42_wikipedia_Sendai_Music;NJ
+# ::snt 特に エドワードリミテッド に は 、 MONKEYMAJIK 、 GReeeeN 、 キマグレン など の 人気 アーティスト が 所属 し て おり 、 地方 都市 所在 の 芸能 事務所 として 注目 を 浴びる よう に なっ た 。
+∃ SITUATION[12] SITUATION[6] ENTITY[5] EVENT[4] EVENT[10] EVENT[11] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[8] ENTITY[9] ENTITY[7] (
+ is_element_of(ENTITY[MONKEYMAJIK], GROUP[3]) ∧ is_element_of(ENTITY[GReeeeN], GROUP[3]) ∧ is_element_of(ENTITY[キマグレン], GROUP[3]) ∧
+  など(GROUP[3], ENTITY[2]) ∧
+   の_人気_アーティスト(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[2], ENTITY[エドワードリミテッド], ENTITY[キマグレン], ENTITY[GReeeeN], ENTITY[MONKEYMAJIK]} ∧
+     地方_都市_所在(ENTITY[8]) ∧
+      の_芸能_事務所(ENTITY[8], ENTITY[7]) ∧
+       注目(ENTITY[9]) ∧
+        よう(SITUATION[6], 浴びる(EVENT[10], ENTITY[5], ENTITY[9]) ∧ として(EVENT[10]) = ENTITY[7]) ∧
+         ADV_特に(SITUATION[12]) ∧
+          past(EVENT[11]) ∧
+           FACT(SITUATION[12],
+            所属する.0_て_おり(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[エドワードリミテッド] ∧
+             なっ_た(EVENT[11], ENTITY[5], SITUATION[6])))
+
+# ::id 43_wikipedia_Sendai_Music;NJ
+# ::snt また 、 2000 年代 に 入っ て から 、 モデル 事務所 の 仙台SOSモデルエージェンシー 、 あるいは 、 ダンス スクール の アクターズインターナショナル・仙台 や ステップワン など が 、 仙台 に 地域密着 し ながら 音楽 活動 を する ローカルアイドル を 育成 し 始め 、 SPLASH や conomi など が 仙台 で 開催 さ れる イベント で ショー を 行う よう に なっ た 。
+∃ SITUATION[18] SITUATION[1] EVENT[3] EVENT[12] EVENT[14] EVENT[15] EVENT[21] EVENT[23] EVENT[24] ENTITY[2] GROUP[5] ENTITY[13] ENTITY[10] ENTITY[4] GROUP[17] ENTITY[22] ENTITY[19] ENTITY[16] (
+ CD_2000_年代(ENTITY[2]) ∧
+  FACT(SITUATION[1], 入っ_て(EVENT[3]) ∧ に(EVENT[3]) = ENTITY[2]) ∧
+   CONJ_あるいは(∃ ENTITY[6] (モデル_事務所(ENTITY[6]) ∧ の_xxx(ENTITY[6], ENTITY[仙台SOSモデルエージェンシー]) ∧ is_element_of(ENTITY[仙台SOSモデルエージェンシー], GROUP[5])),
+    ∃ GROUP[9] ENTITY[8] ENTITY[7] (
+     ダンス_スクール(ENTITY[8]) ∧
+      CONJ_や(is_element_of(ENTITY[アクターズインターナショナル.仙台], GROUP[9]), is_element_of(ENTITY[ステップワン], GROUP[9])) ∧
+       の(ENTITY[8], ENTITY[7]) ∧ equals(GROUP[9], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    など(GROUP[5], ENTITY[4]) ∧
+     音楽_活動(ENTITY[13]) ∧
+      CRD_ながら(地域密着する.0(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[仙台],
+       する(EVENT[14], ENTITY[10], ENTITY[13])) ∧ ローカルアイドル(ENTITY[10]) ∧
+       CONJ_や(is_element_of(ENTITY[SPLASH], GROUP[17]), is_element_of(ENTITY[conomi], GROUP[17])) ∧
+        など(GROUP[17], ENTITY[16]) ∧
+         開催する.0(EVENT[21], _, ENTITY[19]) ∧ で(EVENT[21]) = ENTITY[仙台] ∧ イベント(ENTITY[19]) ∧
+          ショー(ENTITY[22]) ∧
+           よう(SITUATION[18], 行う(EVENT[23], ENTITY[16], ENTITY[22]) ∧ で(EVENT[23]) = ENTITY[19]) ∧
+            past(EVENT[24]) ∧
+             育成する.0_始め(EVENT[15], ENTITY[4], ENTITY[10]) ∧ te_から(EVENT[15]) = SITUATION[1] ∧
+              なっ_た(EVENT[24], ENTITY[16], SITUATION[18]))
+
+# ::id 44_wikipedia_Sendai_Music;NJ
+# ::snt この よう な 仙台 における ポピュラー 音楽 や 芸能面 で の 変化 は 、 「 楽都仙台 」 の 文脈 の 中 に 出 て くる こと は 少ない ものの 、 2000 年 （ 平成 12 年 ） 以降 に 起き た 「 楽都仙台 」 の 流れ の 1 つ と も 見 られる 。
+∃ SITUATION[8] EVENT[11] EVENT[12] EVENT[17] EVENT[18] ENTITY[10] ENTITY[9] ENTITY[16] ENTITY[14] ENTITY[13] EVENT[4] ENTITY[3] ENTITY[6] ENTITY[7] GROUP[5] ENTITY[1] (
+ よう(ENTITY[3]) ∧
+  ポピュラー_音楽(ENTITY[6]) ∧
+   芸能面(ENTITY[7]) ∧
+    CONJ_や(is_element_of(ENTITY[6], GROUP[5]), is_element_of(ENTITY[7], GROUP[5])) ∧
+     な(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で_の_変化(GROUP[5], ENTITY[1]) ∧ における_変化(ENTITY[仙台], ENTITY[1]) ∧
+      の_文脈(ENTITY[楽都仙台], ENTITY[10]) ∧
+       の_中(ENTITY[10], ENTITY[9]) ∧
+        こと(SITUATION[8], 出_て_くる(EVENT[11]) ∧ に(EVENT[11]) = ENTITY[9]) ∧
+         (CD_2000_年_（_平成_12_年_）(ENTITY[16]), 以降(ENTITY[16])) ∧
+          起き_た(EVENT[17], ENTITY[14]) ∧ に(EVENT[17]) = ENTITY[16] ∧ の_流れ(ENTITY[楽都仙台], ENTITY[14]) ∧
+           (CD_1_つ(ENTITY[13]), の(ENTITY[14], ENTITY[13])) ∧
+            past(EVENT[17]) ∧
+             CRD_ものの(少ない(EVENT[12], SITUATION[8]),
+              見(EVENT[18], _, ENTITY[1]) ∧ と(EVENT[18]) = ENTITY[13]))
+
+# ::id 45_wikipedia_Sendai_Music;NJ
+# ::snt 「 楽都仙台 」 の 経済 効果
+∃ EVENT[2] ENTITY[1] (の_経済_効果(ENTITY[楽都仙台], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 46_wikipedia_Sendai_Music;NJ
+# ::snt 「 楽都仙台 」 は 、 仙台市 の シティセールス の コンテンツ の 1 つ として 位置付け られ て いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_シティセールス(ENTITY[仙台市], ENTITY[3]) ∧
+  の_コンテンツ(ENTITY[3], ENTITY[2]) ∧
+   (CD_1_つ(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧
+    位置付け_て_いる(EVENT[4], _, ENTITY[楽都仙台]) ∧ として(EVENT[4]) = ENTITY[1])
+
+# ::id 47_wikipedia_Sendai_Music;NJ
+# ::snt 仙台市 として は 、 自治体 ウェブサイト など を通じて 市 主催 の 音楽 イベント を 中心 に 広く 紹介 を し て いる 。
+∃ EVENT[7] EVENT[9] ENTITY[3] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[8] ENTITY[2] ENTITY[1] (
+ として(ENTITY[仙台市], ENTITY[1]) ∧
+  自治体_ウェブサイト(ENTITY[3]) ∧
+   など(ENTITY[3], ENTITY[2]) ∧
+    市_主催(ENTITY[5]) ∧
+     の_音楽_イベント(ENTITY[5], ENTITY[4]) ∧
+      中心(ENTITY[6]) ∧
+       紹介(ENTITY[8]) ∧
+        ADV_広く(EVENT[9]) ∧
+         xxx(EVENT[7], ENTITY[1], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+          し_て_いる(EVENT[9], ENTITY[1], ENTITY[8]) ∧ を通じて(EVENT[9]) = ENTITY[2])
+
+# ::id 48_wikipedia_Sendai_Music;NJ
+# ::snt 仙台 の 有力 な プロモーター は 、 仙台 のみならず 、 東北地方各地 で コンサート など の 興行 を 行っ て いる 。
+∃ ATTRIB[2] EVENT[8] ENTITY[7] ENTITY[6] ENTITY[5] GROUP[3] ENTITY[1] (
+ 有力_な(ATTRIB[2]) ∧
+  の_プロモーター(ENTITY[仙台], ENTITY[1]) ∧ ATTRIBUTE_プロモーター(ATTRIB[2], ENTITY[1]) ∧
+   CONJ_のみならず(is_element_of(ENTITY[仙台], GROUP[3]), ∃ ENTITY[4] (東北地方各地(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3]))) ∧
+    コンサート(ENTITY[7]) ∧
+     など(ENTITY[7], ENTITY[6]) ∧
+      の_興行(ENTITY[6], ENTITY[5]) ∧ 行っ_て_いる(EVENT[8], ENTITY[1], ENTITY[5]) ∧ で(EVENT[8]) = GROUP[3])
+
+# ::id 49_wikipedia_Sendai_Music;NJ
+# ::snt その 興行 領域 の 広さ と メジャー アーティスト の 興行権 から 、 これら の 企業 が 損益 分岐点 を 超える と 考える 都市 や 都市圏 に コンサート が 集約 する 傾向 が あり 、 近年 で は 仙台 ・ 郡山 ・ 盛岡 、 特に 仙台 へ の 集約 が 進ん で いる 。
+∃ ENTITY[10] SITUATION[6] EVENT[13] EVENT[11] EVENT[18] EVENT[19] EVENT[24] ENTITY[12] ENTITY[9] GROUP[14] ENTITY[17] ENTITY[7] GROUP[23] ENTITY[22] ENTITY[21] GROUP[1] ENTITY[3] ENTITY[2] ENTITY[20] (
+ 興行_領域(ENTITY[3]) ∧
+  の_広さ(ENTITY[3], ENTITY[2]) ∧
+   近年(ENTITY[20]) ∧
+    CONJ_と(is_element_of(ENTITY[2], GROUP[1]),
+     ∃ ENTITY[5] ENTITY[4] (メジャー_アーティスト(ENTITY[5]) ∧ の_興行権(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+     ENTITY[10] = これら{ENTITY[2], ENTITY[3]} ∧
+      の_企業(ENTITY[10], ENTITY[9]) ∧
+       損益_分岐点(ENTITY[12]) ∧
+        CONJ_や(∃ ENTITY[15] (都市(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])),
+         ∃ ENTITY[16] (都市圏(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14]))) ∧
+         考える(EVENT[11], ENTITY[9], 超える(EVENT[13], ENTITY[7], ENTITY[12])) ∧ equals(GROUP[14], ENTITY[7]) ∧
+          コンサート(ENTITY[17]) ∧
+           傾向(SITUATION[6], 集約する.0(EVENT[18], ENTITY[17]) ∧ に(EVENT[18]) = ENTITY[7]) ∧
+            is_element_of(ENTITY[仙台], GROUP[23]) ∧ is_element_of(ENTITY[郡山], GROUP[23]) ∧ is_element_of(ENTITY[盛岡], GROUP[23]) ∧
+             equals(GROUP[23], ENTITY[22]) ∧
+              namely_-ENTITY-(ENTITY[特に_仙台], ENTITY[22]) ∧
+               へ_の_集約(ENTITY[22], ENTITY[21]) ∧
+                あり(EVENT[19], SITUATION[6]) ∧
+                 進ん_で_いる(EVENT[24], ENTITY[21]) ∧ で(EVENT[24]) = ENTITY[20] ∧
+                  から(EVENT[24]) = GROUP[1])
+
+# ::id 50_wikipedia_Sendai_Music;NJ
+# ::snt この よう な 集約 により 、 仙台 のみならず 、 周辺 各県 の タウン情報誌 の イベント情報欄 に は 、 仙台市 および 仙台 都市圏 で 行わ れる 音楽 ・ エンターテインメント 情報 （ 楽都仙台 の コンテンツ ） が 載せ られ 、 場合 によって は 隣県 の テレビ ・ ラジオ など の マスメディア を 用い て 県外 から の 集客 も 行わ れ て いる 。
+∃ ENTITY[20] GROUP[12] GROUP[15] ENTITY[9] ENTITY[10] ENTITY[1] GROUP[24] ENTITY[23] ENTITY[22] ENTITY[21] ENTITY[29] ENTITY[28] EVENT[4] EVENT[14] EVENT[18] EVENT[27] EVENT[30] ENTITY[3] GROUP[7] ENTITY[6] ENTITY[5] ENTITY[19] (
+ よう(ENTITY[3]) ∧
+  CONJ_のみならず(is_element_of(ENTITY[仙台], GROUP[7]),
+   各 ENTITY[8] (周辺(ENTITY[8]) ∧ 県(ENTITY[8]), is_element_of(ENTITY[8], GROUP[7]))) ∧
+   の_タウン情報誌(GROUP[7], ENTITY[6]) ∧
+    の_イベント情報欄(ENTITY[6], ENTITY[5]) ∧
+     場合(ENTITY[19]) ∧
+      な(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 集約(ENTITY[1]) ∧
+       CONJ_および(is_element_of(ENTITY[仙台市], GROUP[12]), ∃ ENTITY[13] (仙台_都市圏(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12]))) ∧
+        ∃ ENTITY[16] (音楽(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])) ∧
+         ∃ ENTITY[17] (エンターテインメント(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15])) ∧
+         行わ(EVENT[14], _, ENTITY[10]) ∧ で(EVENT[14]) = GROUP[12] ∧
+          equals_情報(GROUP[15], ENTITY[10]) ∧
+          の_コンテンツ(ENTITY[楽都仙台], ENTITY[9]) ∧
+           namely_-ENTITY-(ENTITY[9], ENTITY[10]) ∧
+            ENTITY[20] = *pro*{ENTITY[1], ENTITY[10], ENTITY[9], ENTITY[5], ENTITY[楽都仙台], ENTITY[仙台市], ENTITY[6], ENTITY[仙台], ENTITY[3]} ∧
+             隣県(ENTITY[22]) ∧
+              ∃ ENTITY[25] (テレビ(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[24])) ∧
+               ∃ ENTITY[26] (ラジオ(ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[24])) ∧
+               など(GROUP[24], ENTITY[23]) ∧
+                の_マスメディア(ENTITY[23], ENTITY[21]) ∧ の__マスメディア(ENTITY[22], ENTITY[21]) ∧
+                 県外(ENTITY[29]) ∧
+                  から_の_集客(ENTITY[29], ENTITY[28]) ∧
+                   載せ(EVENT[18], _, ENTITY[10]) ∧ に(EVENT[18]) = ENTITY[5] ∧
+                    により(EVENT[18]) = ENTITY[1] ∧
+                    CONJ_te(用い_て(EVENT[27], ENTITY[20], ENTITY[21]) ∧ によって(EVENT[27]) = ENTITY[19],
+                     行わ_て_いる(EVENT[30], _, ENTITY[28]) ∧ によって(EVENT[30]) = ENTITY[19]))
+
+# ::id 51_wikipedia_Sendai_Music;NJ
+# ::snt タウン情報誌 の 音楽イベント欄 における 開催 都市 比率 は 、 山形市 の タウン情報誌 で 仙台 9 割 ・ 山形 1 割 程度 、 福島市 の それ で 仙台 8 割 ・ 郡山 2 割 程度 と なっ て おり 、 県外 から 仙台 へ の 交流 人口 増大 を もたらし 、 仙台 経済圏 の 基盤 の 1 つ と なっ て いる 。
+∃ ENTITY[1] EVENT[14] EVENT[17] EVENT[21] GROUP[5] ENTITY[16] ENTITY[15] ENTITY[20] ENTITY[19] ENTITY[18] ENTITY[4] ENTITY[3] ENTITY[2] (
+ タウン情報誌(ENTITY[4]) ∧
+  の_音楽イベント欄(ENTITY[4], ENTITY[3]) ∧
+   における_開催_都市_比率(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[1] = *pro* ∧
+     ∃ GROUP[8] ENTITY[7] ENTITY[6] (
+      の_タウン情報誌(ENTITY[山形市], ENTITY[7]) ∧
+       is_element_of(ENTITY[仙台_9_割], GROUP[8]) ∧ ∃ ENTITY[9] (山形_1_割_程度(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+        equals(GROUP[8], ENTITY[6]) ∧ で(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ENTITY[11] GROUP[12] ENTITY[10] (
+       ENTITY[11] = それ{ENTITY[仙台_9_割], ENTITY[山形市], ENTITY[2], ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+        の_xxx(ENTITY[福島市], ENTITY[11]) ∧
+         is_element_of(ENTITY[仙台_8_割], GROUP[12]) ∧ ∃ ENTITY[13] (郡山_2_割_程度(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+          equals(GROUP[12], ENTITY[10]) ∧ で(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[5])) ∧
+      県外(ENTITY[16]) ∧
+       から_xxx(ENTITY[16], ENTITY[仙台]) ∧
+        へ_の_交流_人口_増大(ENTITY[仙台], ENTITY[15]) ∧
+         仙台_経済圏(ENTITY[20]) ∧
+          の_基盤(ENTITY[20], ENTITY[19]) ∧
+           (CD_1_つ(ENTITY[18]), の(ENTITY[19], ENTITY[18])) ∧
+            なっ_て_おり(EVENT[14], ENTITY[2], GROUP[5]) ∧
+             もたらし(EVENT[17], ENTITY[1], ENTITY[15]) ∧ なっ_て_いる(EVENT[21], ENTITY[1], ENTITY[18]))

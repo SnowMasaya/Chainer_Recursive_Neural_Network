@@ -1,0 +1,1545 @@
+# ::id 1_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt いのち と 地域 を 守る 防災 ・ 減災 の ページ
+∃ ENTITY[6] EVENT[10] EVENT[11] GROUP[7] GROUP[3] ENTITY[2] ENTITY[1] (
+ ∃ ENTITY[4] (防災(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[5] (減災(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+  ENTITY[6] = *pro*{ENTITY[1]} ∧
+   CONJ_と(∃ ENTITY[8] (いのち(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+    ∃ ENTITY[9] (地域(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+    equals(GROUP[3], ENTITY[2]) ∧ THAT(守る.0(EVENT[10], ENTITY[6], GROUP[7]), ENTITY[2]) ∧
+     の_ページ(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[11]) ∧ LINK(EVENT[11]) = ENTITY[1])
+
+# ::id 2_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ◎ 考える
+∃ EVENT[1] 考える.0(EVENT[1])
+
+# ::id 3_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 熱中症 に 備え よう
+IMPERATIVE(∃ ENTITY[1] EVENT[3] ENTITY[2] (
+      ENTITY[1] = *hearer* ∧
+       熱中症(ENTITY[2]) ∧ 備える.0_よう(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2]))
+
+# ::id 4_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 室内 や 夜 も 油断 禁物
+∃ EVENT[6] ENTITY[5] ENTITY[4] GROUP[1] (
+ CONJ_や(∃ ENTITY[2] (室内(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (夜(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  油断(ENTITY[4]) ∧
+   禁物(ENTITY[5]) ∧ xxx(EVENT[6], ENTITY[4], ENTITY[5]) ∧ TPC(EVENT[6]) = GROUP[1])
+
+# ::id 5_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 夏 の 到来 とともに 増える 熱中症 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 夏(ENTITY[4]) ∧
+  の_到来(ENTITY[4], ENTITY[3]) ∧
+   増える.0(EVENT[5], ENTITY[1]) ∧ とともに(EVENT[5]) = ENTITY[3] ∧ 熱中症(ENTITY[1]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 6_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 誰 も が 発症 の 危険 が あり 、 最悪 の 場合 は 死 に 至る が 、 正しい 知識 を 身に付けれ ば 防げる 。
+∃ ATTRIB[6] ENTITY[5] (
+ の(ATTRIB[6]) ∧ 最悪(ATTRIB[6]) ∧
+  ATTRIBUTE_場合(ATTRIB[6], ENTITY[5]) ∧
+   も ENTITY[1] ∃ ENTITY[9] EVENT[4] EVENT[8] ENTITY[3] ENTITY[2] ENTITY[7] (
+    発症(ENTITY[3]) ∧
+     の_危険(ENTITY[3], ENTITY[2]) ∧
+      死(ENTITY[7]) ∧
+       ENTITY[9] = *pro*{ENTITY[5], ENTITY[7], ENTITY[2], ENTITY[3]} ∧
+        CONJ_が(有る.0(EVENT[4], ENTITY[2]) ∧
+              至る.0(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7] ∧ ADV(EVENT[8]) = ENTITY[5],
+         ∀ ATTRIB[11] EVENT[12] ENTITY[10] CND_ば(正しい(ATTRIB[11]) ∧ ATTRIBUTE_知識(ATTRIB[11], ENTITY[10]) ∧ 身に付ける.0(EVENT[12], ENTITY[9], ENTITY[10]),
+             ∃ EVENT[13] 防ぐ.0(EVENT[13], ENTITY[1], ENTITY[9])))))
+
+# ::id 7_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 夏本番 を 前 に 、 すぐ に 実践 できる 予防法 や 応急手当て を 紹介 する 。
+∃ ATTRIB[8] ARB[7] ENTITY[1] EVENT[4] EVENT[9] EVENT[13] ENTITY[3] ENTITY[2] GROUP[10] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  夏本番(ENTITY[2]) ∧
+   前(ENTITY[3]) ∧
+    ARB[7] = *arb* ∧
+     ADV_すぐ(ATTRIB[8]) ∧
+      CONJ_や(∃ ENTITY[11] (予防法(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+       ∃ ENTITY[12] (応急手当て(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+       実践する.0(EVENT[9], ARB[7], ENTITY[5]) ∧ に(EVENT[9]) = ATTRIB[8] ∧ equals(GROUP[10], ENTITY[5]) ∧
+        xxx(EVENT[4], ENTITY[1], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+         紹介する.0(EVENT[13], ENTITY[1], ENTITY[5]))
+
+# ::id 8_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ 初夏 で も 救急搬送 急増 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (初夏(ENTITY[1]) ∧ 救急搬送(ENTITY[2]) ∧ する.0(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1])
+
+# ::id 9_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 全国各地 で 真夏日 を 観測 し た ５ 月 ２６ 日 ～ ６ 月 １ 日 、 東北 ６ 県 の 熱中症 による 救急搬送者数 は １２８ 人 で 、 前年同時期 の ３２ 人 を 大幅 に 上回っ た 。
+∃ EVENT[5] EVENT[12] EVENT[15] ENTITY[4] ENTITY[3] GROUP[6] ENTITY[11] ENTITY[14] ENTITY[13] TIME[1] ENTITY[10] ENTITY[9] (
+ 熱中症(ENTITY[10]) ∧
+  の_救急搬送者数(GPE[東北_６_県], ENTITY[9]) ∧ による_救急搬送者数(ENTITY[10], ENTITY[9]) ∧
+   真夏日(ENTITY[4]) ∧
+    ∃ ENTITY[7] (CD_５_月_２６_日(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+     ∃ ENTITY[8] (CD_６_月_１_日(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+     観測する.0_た(EVENT[5], _, ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧
+      is_contained_in(時間(EVENT[5]), TIME[1]) ∧ equals(GROUP[6], TIME[1]) ∧
+      CD_１２８_人(ENTITY[11]) ∧
+       前年同時期(ENTITY[14]) ∧
+        (CD_３２_人(ENTITY[13]), の(ENTITY[14], ENTITY[13])) ∧
+         past(EVENT[5]) ∧
+          ADV_大幅_に(EVENT[15]) ∧
+           past(EVENT[15]) ∧
+            CONJ_te(で(EVENT[12], ENTITY[9], ENTITY[11]) ∧ is_contained_in(時間(EVENT[12]), TIME[1]),
+             上回る.0_た(EVENT[15], ENTITY[9], ENTITY[13]) ∧ is_contained_in(時間(EVENT[15]), TIME[1])))
+
+# ::id 10_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 県別 の 内訳 は 、 青森 １６ 人 （ 前年同時期 ６ 人 ） 岩手 ２０ 人 （ ２ 人 ） 宮城 ３２ 人 （ ５ 人 ） 秋田 １５ 人 （ ６ 人 ） 山形 １５ 人 （ ５ 人 ） 福島 ３０ 人 （ ８ 人 ） 。
+∃ EVENT[4] EVENT[6] EVENT[8] EVENT[10] EVENT[12] EVENT[14] ENTITY[3] ENTITY[5] ENTITY[7] ENTITY[9] ENTITY[11] ENTITY[13] ENTITY[2] ENTITY[1] (
+ 県別(ENTITY[2]) ∧
+  の_内訳(ENTITY[2], ENTITY[1]) ∧
+   CD_１６_人(ENTITY[3]) ∧
+    CD_２０_人(ENTITY[5]) ∧
+     CD_３２_人(ENTITY[7]) ∧
+      CD_１５_人(ENTITY[9]) ∧
+       CD_１５_人(ENTITY[11]) ∧
+        CD_３０_人(ENTITY[13]) ∧
+         xxx(EVENT[4], GPE[青森], ENTITY[3]) ∧ TPC(EVENT[4]) = ENTITY[1] ∧
+          xxx(EVENT[6], GPE[岩手], ENTITY[5]) ∧ TPC(EVENT[6]) = ENTITY[1] ∧
+          xxx(EVENT[8], GPE[宮城], ENTITY[7]) ∧ TPC(EVENT[8]) = ENTITY[1] ∧
+          xxx(EVENT[10], GPE[秋田], ENTITY[9]) ∧ TPC(EVENT[10]) = ENTITY[1] ∧
+          xxx(EVENT[12], GPE[山形], ENTITY[11]) ∧ TPC(EVENT[12]) = ENTITY[1] ∧
+          xxx(EVENT[14], GPE[福島], ENTITY[13]) ∧ TPC(EVENT[14]) = ENTITY[1])
+
+# ::id 11_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 熱中症 は 例年 ６ 月 から 増え 始め 、 ７、８ 月 に 集中 する 。
+∃ EVENT[4] EVENT[6] ENTITY[3] TIME[2] ENTITY[5] ENTITY[1] (
+ 熱中症(ENTITY[1]) ∧
+  例年(TIME[2]) ∧
+   CD_６_月(ENTITY[3]) ∧
+    CD_７、８_月(ENTITY[5]) ∧
+     増える.0_始め(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[4]), TIME[2]) ∧
+      集中する.0(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5])
+
+# ::id 12_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 東北 で は 昨年 ６～９ 月 に ６ 人 が 死亡 し 、 ８４ 人 が 重症 に なっ た 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ (CD_６～９_月(ENTITY[1]), 昨年(ENTITY[1])) ∧
+  CD_６_人(ENTITY[2]) ∧
+   CD_８４_人(ENTITY[4]) ∧
+    重症(ENTITY[5]) ∧
+     past(EVENT[6]) ∧
+      死亡する.0(EVENT[3], ENTITY[2]) ∧
+       成る.0_た(EVENT[6], ENTITY[4], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[1] ∧ で(EVENT[6]) = GPE[東北])
+
+# ::id 13_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 熱中症 から 身 を 守る に は 、 できるだけ 気温 の 高い 場所 に 行か ない こと が 有効 だ が 、 夏場 に なる と そう も いか ない 。
+∃ ARB[8] SITUATION[7] ARB[3] SITUATION[2] ARB[1] EVENT[6] EVENT[15] ENTITY[5] ENTITY[4] (
+ ARB[1] = *arb* ∧
+  ARB[3] = *arb*{ARB[1]} ∧
+   熱中症(ENTITY[4]) ∧
+    身(ENTITY[5]) ∧
+     FACT(SITUATION[2], 守る.0(EVENT[6], ARB[3], ENTITY[5]) ∧ から(EVENT[6]) = ENTITY[4]) ∧
+      ARB[8] = *arb*{ARB[1]} ∧
+       こと(SITUATION[7],
+        ¬ ∃ SITUATION[14] EVENT[12] EVENT[13] ENTITY[11] ENTITY[9] (
+              気温(ENTITY[11]) ∧
+               高い(EVENT[12], (ENTITY[9], ENTITY[11])) ∧ 場所(ENTITY[9]) ∧
+                ADV_できるだけ(SITUATION[14]) ∧
+                 FACT(SITUATION[14], 行く.0(EVENT[13], ARB[8]) ∧ に(EVENT[13]) = ENTITY[9]))) ∧
+        CONJ_が(有効_だ(EVENT[15], SITUATION[7]) ∧ に(EVENT[15]) = SITUATION[2],
+         ∀ EVENT[17] ENTITY[16] CND_と(夏場(ENTITY[16]) ∧ 成る.0(EVENT[17], _, ENTITY[16]),
+             ∃ SITUATION[19] (ADV_そう_も(SITUATION[19]) ∧ FACT(SITUATION[19], ¬ ∃ EVENT[18] いく.0(EVENT[18], ARB[1]))))))
+
+# ::id 14_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 屋外 だけでなく 、 室内 や 夜間 も 油断 は 禁物 。
+∃ EVENT[8] ENTITY[7] GROUP[1] ENTITY[6] (
+ 油断(ENTITY[6]) ∧
+  CONJ_だけでなく(∃ ENTITY[2] (屋外(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+   ∃ GROUP[3] (
+    CONJ_や(∃ ENTITY[4] (室内(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+     ∃ ENTITY[5] (夜間(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1]))) ∧
+   禁物(ENTITY[7]) ∧ xxx(EVENT[8], ENTITY[6], ENTITY[7]) ∧ ADV(EVENT[8]) = GROUP[1])
+
+# ::id 15_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 予防 の ため に 、 温湿度計 の チェック と 定期的 な 水分補給 を 習慣付け たい 。
+∃ ARB[1] EVENT[9] ENTITY[3] GROUP[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  予防(ENTITY[3]) ∧
+   の_ため(ENTITY[3], ENTITY[2]) ∧
+    CONJ_と(∃ ENTITY[6] ENTITY[5] (温湿度計(ENTITY[6]) ∧ の_チェック(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ ATTRIB[8] ENTITY[7] (定期的_な(ATTRIB[8]) ∧ ATTRIBUTE_水分補給(ATTRIB[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+     習慣付ける.0_たい(EVENT[9], ARB[1], GROUP[4]) ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 16_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 湿度 が 高い と 汗 が なかなか 乾か なく なり 、 体 の 熱 を 発散しにくく なる 。
+∃ ARB[1] (
+ ARB[1] = *arb* ∧
+  ∀ EVENT[3] ENTITY[2] CND_と(湿度(ENTITY[2]) ∧ 高い(EVENT[3], ENTITY[2]),
+      ∃ EVENT[9] ENTITY[4] ENTITY[8] ENTITY[7] (
+       汗(ENTITY[4]) ∧
+        体(ENTITY[8]) ∧
+         の_熱(ENTITY[8], ENTITY[7]) ∧
+          ¬ ∃ EVENT[5] (ADV_なかなか(EVENT[5]) ∧ 乾く.0_なり(EVENT[5], ENTITY[4])) ∧
+           発散しにくく_なる(EVENT[9], ARB[1], ENTITY[7]))))
+
+# ::id 17_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 気温 と 併せ て 、 多湿 に も 注意 が 必要 だ 。
+∃ ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  気温(ENTITY[2]) ∧
+   多湿(ENTITY[4]) ∧
+    注意(ENTITY[5]) ∧
+     CONJ_te(併せる.0_て(EVENT[3], _, ENTITY[1]) ∧ と(EVENT[3]) = ENTITY[2],
+      必要_だ(EVENT[6], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4]))
+
+# ::id 18_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 水分補給 は 定期的 に スポーツドリンク の よう な 塩分 を 含ん だ 飲み物 を 取る よう に する 。
+∃ SITUATION[13] SITUATION[3] ARB[1] EVENT[8] EVENT[11] EVENT[12] EVENT[14] ENTITY[7] ENTITY[6] ENTITY[10] ENTITY[4] ENTITY[2] (
+ 水分補給(ENTITY[2]) ∧
+  ARB[1] = *arb* ∧
+   スポーツドリンク(ENTITY[7]) ∧
+    の_よう(ENTITY[7], ENTITY[6]) ∧
+     塩分(ENTITY[10]) ∧
+      な(EVENT[8], ENTITY[4], ENTITY[6]) ∧ 含む.0_だ(EVENT[11], ENTITY[4], ENTITY[10]) ∧ 飲み物(ENTITY[4]) ∧
+       よう(SITUATION[3], FACT(SITUATION[13], 取る.0(EVENT[12], ARB[1], ENTITY[4]))) ∧
+        ADV_定期的_に(SITUATION[13]) ∧
+         する.0(EVENT[14], ARB[1]) ∧ に(EVENT[14]) = SITUATION[3] ∧ TPC(EVENT[14]) = ENTITY[2])
+
+# ::id 19_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 喉 の 渇き を 自覚 する 前 から 、 こまめ に 水分補給 する の が ポイント だ 。
+∃ SITUATION[3] ARB[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[9] (
+ ARB[2] = *arb* ∧
+  喉(ENTITY[5]) ∧
+   の_渇き(ENTITY[5], ENTITY[4]) ∧
+    前(SITUATION[3], 自覚する.0(EVENT[6], ARB[2], ENTITY[4])) ∧
+     の(SITUATION[1], 水分補給する.0(EVENT[7], ARB[2]) ∧ から(EVENT[7]) = SITUATION[3]) ∧
+      ポイント(ENTITY[9]) ∧ ADV_こまめ_に(EVENT[7]) ∧ だ(EVENT[10], SITUATION[1], ENTITY[9]))
+
+# ::id 20_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 日頃 から 栄養バランス の 取れ た 食事 と 十分 な 睡眠 を 確保 し 、 熱中症 に なら ない よう な 体力づくり も 大事 に なる 。
+∃ SITUATION[13] ARB[12] SITUATION[11] ARB[1] EVENT[10] EVENT[16] EVENT[17] GROUP[3] ENTITY[2] ENTITY[14] (
+ ARB[1] = *arb* ∧
+  日頃(ENTITY[2]) ∧
+   CONJ_と(∃ EVENT[7] ENTITY[6] ENTITY[4] (
+         栄養バランス(ENTITY[6]) ∧
+          取る.0_た(EVENT[7], (ENTITY[4], ENTITY[6])) ∧ 食事(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ATTRIB[9] ENTITY[8] (十分_な(ATTRIB[9]) ∧ ATTRIBUTE_睡眠(ATTRIB[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3]))) ∧
+    ARB[12] = *arb* ∧
+     熱中症(ENTITY[14]) ∧
+      よう(SITUATION[13], ¬ ∃ EVENT[15] 成る.0(EVENT[15], ARB[12], ENTITY[14])) ∧
+       体力づくり(SITUATION[11], な(EVENT[16], ARB[12], SITUATION[13])) ∧
+        確保する.0(EVENT[10], ARB[1], GROUP[3]) ∧ から(EVENT[10]) = ENTITY[2] ∧ 大事_に_なる(EVENT[17], SITUATION[11]))
+
+# ::id 21_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ 応急手当
+∃ EVENT[2] ENTITY[1] (応急手当(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 22_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 風 を 当て 体 冷やす ＞
+∃ ARB[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ARB[1] = *arb* ∧
+  風(ENTITY[2]) ∧
+   体(ENTITY[4]) ∧ 当てる.0(EVENT[3], ARB[1], ENTITY[2]) ∧ 冷やす.0(EVENT[5], ARB[1], ENTITY[4]))
+
+# ::id 23_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 高温多湿 の 環境 で 、 めまい 、 失神 、 大量 の 発汗 、 吐き気 、 嘔吐 （ おうと ） 、 高体温 、 けいれん など の 症状 が 出 たら 、 熱中症 の 疑い が ある 。
+∀ EVENT[14] ENTITY[2] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[1] CND_たら(
+    高温多湿(ENTITY[2]) ∧ の_環境(ENTITY[2], ENTITY[1]) ∧
+     ∃ ENTITY[6] (めまい(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ENTITY[7] (失神(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+      大量_の ENTITY[8] (発汗(ENTITY[8]), is_element_of(ENTITY[8], GROUP[5])) ∧
+      ∃ ENTITY[9] (吐き気(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[5])) ∧
+      ∃ ENTITY[10] ENTITY[11] (
+       嘔吐(ENTITY[11]) ∧
+        おうと(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[5])) ∧
+      ∃ ENTITY[12] (高体温(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[5])) ∧
+      ∃ ENTITY[13] (けいれん(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[5])) ∧ など(GROUP[5], ENTITY[4]) ∧
+     の_症状(ENTITY[4], ENTITY[3]) ∧ 出る.0(EVENT[14], ENTITY[3]) ∧ で(EVENT[14]) = ENTITY[1],
+    ∃ EVENT[17] ENTITY[16] ENTITY[15] (熱中症(ENTITY[16]) ∧ の_疑い(ENTITY[16], ENTITY[15]) ∧ 有る.0(EVENT[17], ENTITY[15])))
+
+# ::id 24_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 患者 の 意識 の 有無 を 確認 し 、 １１９番 を する 。
+∃ ARB[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[6] (
+ ARB[1] = *arb* ∧
+  患者(ENTITY[4]) ∧
+   の_意識(ENTITY[4], ENTITY[3]) ∧
+    の_有無(ENTITY[3], ENTITY[2]) ∧
+     １１９番(ENTITY[6]) ∧ 確認する.0(EVENT[5], ARB[1], ENTITY[2]) ∧ する.0(EVENT[7], ARB[1], ENTITY[6]))
+
+# ::id 25_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 仙台市消防局救急課 の 担当者 は 「 意識 が なかっ たり 、 様子 が おかしかっ たり し た 場合 や 、 自力 で 水 を 飲め ない とき は 、 ためらわ ず 救急車 を 呼ん で ほしい 」 と 話す 。
+∃ ENTITY[20] ARB[4] ENTITY[3] ENTITY[15] SITUATION[8] ENTITY[7] EVENT[23] EVENT[19] EVENT[2] ENTITY[22] EVENT[10] EVENT[12] EVENT[13] ENTITY[9] ENTITY[11] ENTITY[6] ENTITY[17] ENTITY[16] ENTITY[14] GROUP[5] ENTITY[1] (
+ の_担当者(ORG[仙台市消防局救急課], ENTITY[1]) ∧
+  ENTITY[7] = *pro*{ENTITY[3], ENTITY[1]} ∧
+   意識(ENTITY[9]) ∧
+    様子(ENTITY[11]) ∧
+     FACT(SITUATION[8],
+      CONJ_たり(なかっ(EVENT[10], (ENTITY[7], ENTITY[9])), おかしかっ(EVENT[12], (ENTITY[7], ENTITY[11])))) ∧
+      THAT_場合(する.0_た(EVENT[13], ENTITY[7]) ∧ たり(EVENT[13]) = SITUATION[8], ENTITY[6]) ∧
+       ENTITY[15] = *pro*{ENTITY[6], ENTITY[11], ENTITY[9], ENTITY[3], ENTITY[1]} ∧
+        自力(ENTITY[16]) ∧
+         水(ENTITY[17]) ∧
+          THAT_とき(¬ ∃ EVENT[18] (飲む.0(EVENT[18], ENTITY[15], ENTITY[17]) ∧ で(EVENT[18]) = ENTITY[16]),
+           ENTITY[14]) ∧
+           CONJ_や(is_element_of(ENTITY[6], GROUP[5]), is_element_of(ENTITY[14], GROUP[5])) ∧
+            before(EVENT[2], EVENT[13]) ∧
+             ENTITY[3] = *speaker*{ENTITY[1]} ∧
+              ARB[4] = *arb* ∧
+               ENTITY[20] = *pro*{ENTITY[3], ENTITY[14], ENTITY[16], ENTITY[17], ENTITY[6], ENTITY[11], ENTITY[9], ENTITY[1]} ∧
+                救急車(ENTITY[22]) ∧
+                 話す.0(EVENT[2], ENTITY[1],
+                  ほしい(EVENT[19], ENTITY[3], ARB[4],
+                   CONJ_te(¬ ∃ EVENT[21] ためらう.0(EVENT[21], ARB[4], ENTITY[20]),
+                    呼ぶ.0_で(EVENT[23], ARB[4], ENTITY[22]))) ∧ 時間(EVENT[19]) = GROUP[5]))
+
+# ::id 26_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 救急車 が 到着 する まで は 、 応急手当て を 施す 。
+∃ SITUATION[2] ARB[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] (
+ ARB[1] = *arb* ∧
+  救急車(ENTITY[3]) ∧
+   FACT(SITUATION[2], 到着する.0(EVENT[4], ENTITY[3])) ∧
+    応急手当て(ENTITY[5]) ∧ 施す.0(EVENT[6], ARB[1], ENTITY[5]) ∧ まで(EVENT[6]) = SITUATION[2])
+
+# ::id 27_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 患者 を 風通し の 良い 涼しい 場所 に 移動 さ せ 、 衣服 を 緩め たり 、 脱がせ たり し て 皮膚 を 露出 さ せる 。
+∃ ENTITY[13] SITUATION[10] ARB[1] EVENT[7] EVENT[8] EVENT[9] EVENT[3] EVENT[12] EVENT[14] EVENT[15] EVENT[18] EVENT[17] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[11] ENTITY[16] (
+ ARB[1] = *arb* ∧
+  患者(ENTITY[2]) ∧
+   風通し(ENTITY[6]) ∧
+    良い(EVENT[7], (ENTITY[4], ENTITY[6])) ∧ 涼しい(EVENT[8], (ENTITY[4], ENTITY[6])) ∧
+     場所(ENTITY[4]) ∧
+     衣服(ENTITY[11]) ∧
+      ENTITY[13] = *pro*{ENTITY[11], ENTITY[2], ENTITY[4], ENTITY[6]} ∧
+       FACT(SITUATION[10], CONJ_たり(緩める.0(EVENT[12], ARB[1], ENTITY[11]), 脱ぐ.0(EVENT[14], ARB[1], ENTITY[13]))) ∧
+        皮膚(ENTITY[16]) ∧
+         せ(EVENT[3], ARB[1], ENTITY[2], 移動する.0(EVENT[9], ENTITY[2]) ∧ に(EVENT[9]) = ENTITY[4]) ∧
+          CONJ_te(する.0_て(EVENT[15], ARB[1]) ∧ たり(EVENT[15]) = SITUATION[10],
+           せる(EVENT[17], ARB[1], ENTITY[16], 露出する.0(EVENT[18], ENTITY[16]))))
+
+# ::id 28_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 首 の 後ろ 、 脇の下 、 太もも の 付け根 など 動脈 が 通る 部分 を 氷のう や 保冷剤 で 冷やし 、 体温 を 下げる 。
+∃ ARB[1] EVENT[10] EVENT[14] EVENT[16] ENTITY[9] GROUP[3] GROUP[11] ENTITY[2] ENTITY[15] (
+ ARB[1] = *arb* ∧
+  ∃ ENTITY[5] ENTITY[4] (首(ENTITY[5]) ∧ の_後ろ(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[6] (脇の下(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+   ∃ ENTITY[8] ENTITY[7] (太もも(ENTITY[8]) ∧ の_付け根(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[3])) ∧
+   動脈(ENTITY[9]) ∧
+    など_部分(GROUP[3], ENTITY[2]) ∧ THAT_部分(通る.0(EVENT[10], ENTITY[9]), ENTITY[2]) ∧
+     CONJ_や(∃ ENTITY[12] (氷のう(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+      ∃ ENTITY[13] (保冷剤(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+      体温(ENTITY[15]) ∧
+       冷やす.0(EVENT[14], ARB[1], ENTITY[2]) ∧ で(EVENT[14]) = GROUP[11] ∧
+        下げる.0(EVENT[16], ARB[1], ENTITY[15]))
+
+# ::id 29_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 体 に 水 を 掛け ながら うちわ や 扇風機 で 風 を 当てる と 冷却効果 が 高まる 。
+∀ ARB[1] EVENT[4] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[8] GROUP[5] CND_と(
+    ARB[1] = *arb* ∧ 体(ENTITY[2]) ∧ 水(ENTITY[3]) ∧
+     CONJ_や(∃ ENTITY[6] (うちわ(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+      ∃ ENTITY[7] (扇風機(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧ 風(ENTITY[8]) ∧
+     CRD_ながら(掛ける.0(EVENT[4], ARB[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2],
+      当てる.0(EVENT[9], ARB[1], ENTITY[8]) ∧ で(EVENT[9]) = GROUP[5]),
+    ∃ EVENT[11] ENTITY[10] (冷却効果(ENTITY[10]) ∧ 高まる.0(EVENT[11], ENTITY[10])))
+
+# ::id 30_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 常温 の 水 を 霧吹き で 掛ける の が 理想 だ が 、 手 や ぬらし た タオル で 少し ずつ 水 を 掛け て も 有効 だ 。
+∃ ARB[5] SITUATION[4] ARB[3] SITUATION[2] ENTITY[1] EVENT[9] EVENT[11] EVENT[19] EVENT[21] ENTITY[7] ENTITY[8] ENTITY[6] ENTITY[10] ENTITY[18] GROUP[12] (
+ ENTITY[1] = *pro* ∧
+  ARB[3] = *arb* ∧
+   ARB[5] = *arb*{ARB[3]} ∧
+    常温(ENTITY[7]) ∧
+     の_水(ENTITY[7], ENTITY[6]) ∧
+      霧吹き(ENTITY[8]) ∧
+       の(SITUATION[4], 掛ける.0(EVENT[9], ARB[5], ENTITY[6]) ∧ で(EVENT[9]) = ENTITY[8]) ∧
+        理想(ENTITY[10]) ∧
+         CONJ_や(∃ ENTITY[13] (手(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+          ∃ ARB[16] EVENT[17] ENTITY[14] (
+           ARB[16] = *arb*{ARB[3]} ∧
+            濡らす.0_た(EVENT[17], ARB[16], ENTITY[14]) ∧ タオル(ENTITY[14]) ∧
+             past(EVENT[17]) ∧ is_element_of(ENTITY[14], GROUP[12]))) ∧
+          水(ENTITY[18]) ∧
+           FACT(SITUATION[2],
+            CONJ_が(だ(EVENT[11], SITUATION[4], ENTITY[10]),
+             掛ける.0_て(EVENT[19], ARB[3], ENTITY[18]) ∧ で(EVENT[19]) = GROUP[12])) ∧
+            ADV_少し_ずつ(EVENT[19]) ∧ 有効_だ(EVENT[21], ENTITY[1]) ∧ te(EVENT[21]) = SITUATION[2])
+
+# ::id 31_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 自力 で 水 が 摂取 できる 場合 は 、 少量 の 塩 を 加え た 水 や スポーツドリンク を 飲ま せる 。
+∃ SITUATION[3] ENTITY[2] ARB[1] EVENT[6] EVENT[14] EVENT[7] ENTITY[5] ENTITY[4] GROUP[8] (
+ ARB[1] = *arb* ∧
+  ENTITY[2] = *pro* ∧
+   自力(ENTITY[4]) ∧
+    水(ENTITY[5]) ∧
+     FACT(SITUATION[3], 摂取する.0(EVENT[6], ENTITY[2], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4]) ∧
+      CONJ_や(∃ EVENT[12] ENTITY[11] ENTITY[10] ENTITY[9] (
+            少量(ENTITY[11]) ∧
+             の_塩(ENTITY[11], ENTITY[10]) ∧
+              THAT_水(加える.0_た(EVENT[12], _, ENTITY[10]), ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ENTITY[13] (スポーツドリンク(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[8]))) ∧
+       せる(EVENT[7], ARB[1], ENTITY[2], 飲む.0(EVENT[14], ENTITY[2], GROUP[8])) ∧ 場合(EVENT[7]) = SITUATION[3])
+
+# ::id 32_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ただし 、 意識 が はっきり し ない 場合 は 肺 に 入っ て しまう 危険 が ある ため 、 無理やり 飲ま せ てはいけない 。
+∃ ARB[1] (
+ ARB[1] = *arb* ∧
+  MD_てはいけない(∃ SITUATION[15] ENTITY[13] ENTITY[8] SITUATION[7] SITUATION[6] SITUATION[3] ENTITY[2] EVENT[10] EVENT[11] EVENT[14] EVENT[12] ENTITY[4] ENTITY[9] (
+        ENTITY[2] = *pro* ∧
+         意識(ENTITY[4]) ∧
+          FACT(SITUATION[3], ¬ ∃ EVENT[5] はっきりする.0(EVENT[5], (ENTITY[2], ENTITY[4]))) ∧
+           ENTITY[8] = *pro*{ENTITY[2], ENTITY[4]} ∧
+            肺(ENTITY[9]) ∧
+             危険(SITUATION[7], 入る.0_て_しまう(EVENT[10], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9]) ∧
+              FACT(SITUATION[6], 有る.0(EVENT[11], SITUATION[7])) ∧
+               ENTITY[13] = *pro*{ENTITY[9], ENTITY[4]} ∧
+                ADV_無理やり(SITUATION[15]) ∧
+                 FACT(SITUATION[15],
+                  せ(EVENT[12], ARB[1], ENTITY[2], 飲む.0(EVENT[14], ENTITY[2], ENTITY[13])) ∧
+                   ため(EVENT[12]) = SITUATION[6] ∧ 場合(EVENT[12]) = SITUATION[3]))))
+
+# ::id 33_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 熱中症 の 応急手当て は 、 市消防局 が 提供 する スマートフォン向け無料アプリ 「 救命ナビ 」 で 学ぶ こと が できる 。
+∃ SITUATION[2] ARB[1] EVENT[8] EVENT[9] EVENT[10] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[3] (
+ 熱中症(ENTITY[4]) ∧
+  の_応急手当て(ENTITY[4], ENTITY[3]) ∧
+   ARB[1] = *arb* ∧
+    市消防局(ENTITY[7]) ∧
+     提供する.0(EVENT[8], ENTITY[7], ENTITY[5]) ∧ スマートフォン向け無料アプリ(ENTITY[5]) ∧
+      namely_-WORK_OF_ART-(ENTITY[5], WORK_OF_ART[救命ナビ]) ∧
+       こと(SITUATION[2], 学ぶ.0(EVENT[9], ARB[1], ENTITY[3]) ∧ で(EVENT[9]) = WORK_OF_ART[救命ナビ]) ∧
+        出来る.0(EVENT[10], ARB[1], SITUATION[2]))
+
+# ::id 34_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ 仙台市立病院・村田祐二救命救急部長 に 聞く
+∃ ENTITY[2] ENTITY[1] EVENT[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧ 聞く.0(EVENT[3], ENTITY[1], ENTITY[2]) ∧ に(EVENT[3]) = PERSON[仙台市立病院.村田祐二救命救急部長])
+
+# ::id 35_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 乳幼児 、 高齢者 見守り を ＞
+∃ EVENT[5] GROUP[2] ENTITY[1] (
+ ∃ ENTITY[3] (乳幼児(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[4] (高齢者(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+  equals_見守り(GROUP[2], ENTITY[1]) ∧ xxx(EVENT[5]) ∧ を(EVENT[5]) = ENTITY[1])
+
+# ::id 36_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 熱中症 は いつ 、 どんな 人 が かかりやすい の か 。
+∃ ENTITY[1] (
+ 熱中症(ENTITY[1]) ∧
+  QUEST(∃ EVENT[4] ? ENTITY[3] TIME[2] (
+        人(ENTITY[3]) ∧
+         かかりやすい_の(EVENT[4], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]) ∧
+          TPC(EVENT[4]) = ENTITY[1])))
+
+# ::id 37_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 仙台市立病院 の 村田祐二救命救急部長 に 聞い た 。
+∃ ENTITY[2] ENTITY[1] EVENT[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   の_xxx(FAC[仙台市立病院], PERSON[村田祐二救命救急部長]) ∧
+    past(EVENT[3]) ∧ 聞く.0_た(EVENT[3], ENTITY[1], ENTITY[2]) ∧ に(EVENT[3]) = PERSON[村田祐二救命救急部長])
+
+# ::id 38_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 人間 は 汗 の 蒸発 や 、 皮膚 の 表面 から 外気 へ の 熱放散 によって 、 体温調節 を する 。
+∃ EVENT[10] ENTITY[9] GROUP[2] ENTITY[1] (
+ 人間(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[4] ENTITY[3] (汗(ENTITY[4]) ∧ の_蒸発(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] (
+    皮膚(ENTITY[8]) ∧
+     の_表面(ENTITY[8], ENTITY[7]) ∧
+      から_外気(ENTITY[7], ENTITY[6]) ∧ へ_の_熱放散(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+   体温調節(ENTITY[9]) ∧ する.0(EVENT[10], ENTITY[1], ENTITY[9]) ∧ によって(EVENT[10]) = GROUP[2])
+
+# ::id 39_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 熱中症 は 気温 や 湿度 が 高い 環境 で 、 熱 の 発散 が 正常 に 行わ れ ず 、 大量 の 汗 を かい て 水分 、 塩分 が 失わ れ 、 体 の バランス が 破綻 する こと によって 発症 する 。
+∃ SITUATION[4] ARB[3] SITUATION[2] EVENT[8] EVENT[18] EVENT[21] EVENT[22] GROUP[5] ENTITY[10] ENTITY[9] GROUP[15] ENTITY[20] ENTITY[19] ENTITY[1] (
+ 熱中症(ENTITY[1]) ∧
+  ARB[3] = *arb* ∧
+   CONJ_や(∃ ENTITY[6] (気温(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[7] (湿度(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    環境(SITUATION[4], 高い(EVENT[8], GROUP[5])) ∧
+     熱(ENTITY[10]) ∧
+      の_発散(ENTITY[10], ENTITY[9]) ∧
+       ∃ ENTITY[16] (水分(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])) ∧
+        ∃ ENTITY[17] (塩分(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15])) ∧
+        体(ENTITY[20]) ∧
+         の_バランス(ENTITY[20], ENTITY[19]) ∧
+          こと(SITUATION[2],
+           CONJ_te(¬ ∃ EVENT[11] (
+                      ADV_正常_に(EVENT[11]) ∧
+                       行う.0(EVENT[11], _, ENTITY[9]) ∧ で(EVENT[11]) = SITUATION[4]),
+            大量_の ENTITY[13] (汗(ENTITY[13]),
+             ∃ EVENT[14] (かく.0_て(EVENT[14], ARB[3], ENTITY[13]) ∧ で(EVENT[14]) = SITUATION[4])),
+            失う.0(EVENT[18], _, GROUP[15]) ∧
+             破綻する.0(EVENT[21], (ARB[3], ENTITY[19])) ∧ で(EVENT[21]) = SITUATION[4])) ∧
+           発症する.0(EVENT[22], ENTITY[1]) ∧ によって(EVENT[22]) = SITUATION[2])
+
+# ::id 40_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 特に 乳幼児 、 高齢者 、 運動 を する 人 は 警戒 し て ほしい 。
+∃ SITUATION[12] ENTITY[10] ENTITY[1] EVENT[11] EVENT[9] EVENT[8] ENTITY[3] ENTITY[4] ENTITY[7] ENTITY[5] GROUP[2] (
+ 乳幼児(ENTITY[3]) ∧
+  高齢者(ENTITY[4]) ∧
+   運動(ENTITY[7]) ∧
+    する.0(EVENT[8], ENTITY[5], ENTITY[7]) ∧ 人(ENTITY[5]) ∧
+     is_element_of(ENTITY[3], GROUP[2]) ∧ is_element_of(ENTITY[4], GROUP[2]) ∧ is_element_of(ENTITY[5], GROUP[2]) ∧
+      ENTITY[1] = *speaker* ∧
+       ENTITY[10] = *pro*{ENTITY[1], ENTITY[5], ENTITY[7], ENTITY[4], ENTITY[3]} ∧
+        ADV_特に(SITUATION[12]) ∧
+         FACT(SITUATION[12], ほしい(EVENT[9], ENTITY[1], GROUP[2], 警戒する.0_て(EVENT[11], GROUP[2], ENTITY[10]))))
+
+# ::id 41_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 人間 は 体 が 小さい ほど 短時間 で 熱中症 に かかりやすい 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 人間(ENTITY[1]) ∧
+  体(ENTITY[2]) ∧
+   短時間(ENTITY[4]) ∧
+    熱中症(ENTITY[5]) ∧
+     CRD_ほど(小さい(EVENT[3], ENTITY[2]),
+      かかりやすい(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5] ∧ で(EVENT[6]) = ENTITY[4]))
+
+# ::id 42_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 子ども は 身長 が 低い ため 、 地面 の 照り返し により 高い 温度 に さらさ れる ほか 、 汗腺 の 発達 も 未熟 だ 。
+∃ ATTRIB[9] SITUATION[5] SITUATION[2] EVENT[4] EVENT[10] EVENT[13] ENTITY[3] ENTITY[7] ENTITY[8] ENTITY[6] ENTITY[12] ENTITY[11] ENTITY[1] (
+ 子ども(ENTITY[1]) ∧
+  身長(ENTITY[3]) ∧
+   FACT(SITUATION[2], 低い(EVENT[4], (ENTITY[1], ENTITY[3]))) ∧
+    地面(ENTITY[7]) ∧
+     の_照り返し(ENTITY[7], ENTITY[6]) ∧
+      高い(ATTRIB[9]) ∧
+       ATTRIBUTE_温度(ATTRIB[9], ENTITY[8]) ∧
+        FACT(SITUATION[5],
+         さらす.0(EVENT[10], _, ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[8] ∧
+          により(EVENT[10]) = ENTITY[6]) ∧
+         汗腺(ENTITY[12]) ∧
+          の_発達(ENTITY[12], ENTITY[11]) ∧
+           未熟_だ(EVENT[13], (ENTITY[1], ENTITY[11])) ∧ ほか(EVENT[13]) = SITUATION[5] ∧
+            ため(EVENT[13]) = SITUATION[2])
+
+# ::id 43_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 大人 が あまり 暑く ない と 感じる 日 で も 、 乳幼児 だけ を 車 に 寝かせ て おく こと は ご法度 。
+∃ SITUATION[5] ENTITY[7] SITUATION[6] SITUATION[1] EVENT[3] EVENT[13] ENTITY[2] ENTITY[9] ENTITY[12] (
+ 大人(ENTITY[2]) ∧
+  日(SITUATION[1], 感じる.0(EVENT[3], ENTITY[2], FACT(SITUATION[5], ¬ ∃ EVENT[4] 暑く(EVENT[4])))) ∧
+   ENTITY[7] = *pro*{ENTITY[2]} ∧
+    乳幼児(ENTITY[9]) ∧
+     こと(SITUATION[6],
+      だけ ENTITY[8] (ENTITY[8] = ENTITY[9],
+       ∃ EVENT[11] ENTITY[10] (
+        車(ENTITY[10]) ∧
+         寝かせる.0_て_おく(EVENT[11], ENTITY[7], ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[10]))) ∧
+      ご法度(ENTITY[12]) ∧
+       ADV_あまり(SITUATION[5]) ∧ xxx(EVENT[13], SITUATION[6], ENTITY[12]) ∧ で(EVENT[13]) = SITUATION[1])
+
+# ::id 44_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 照り返し の 影響 を 受けやすい ベビーカー の 利用 は 注意 が 必要 だ 。
+∃ EVENT[8] ENTITY[7] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 照り返し(ENTITY[5]) ∧
+  の_影響(ENTITY[5], ENTITY[4]) ∧
+   受けやすい(EVENT[6], ENTITY[2], ENTITY[4]) ∧ ベビーカー(ENTITY[2]) ∧
+    の_利用(ENTITY[2], ENTITY[1]) ∧
+     注意(ENTITY[7]) ∧ 必要_だ(EVENT[8], ENTITY[7]) ∧ TPC(EVENT[8]) = ENTITY[1])
+
+# ::id 45_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 高齢者 は 汗 を かきにくく 、 暑さ を 自覚 する 能力 も 弱まっ て いる 。
+∃ SITUATION[4] EVENT[3] EVENT[6] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[1] (
+ 高齢者(ENTITY[1]) ∧
+  汗(ENTITY[2]) ∧
+   暑さ(ENTITY[5]) ∧
+    能力(SITUATION[4], 自覚する.0(EVENT[6], ENTITY[1], ENTITY[5])) ∧
+     かきにくく(EVENT[3], ENTITY[1], ENTITY[2]) ∧ 弱まる.0_て_いる(EVENT[7], (ENTITY[1], SITUATION[4])))
+
+# ::id 46_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 特に １人暮らし の 人 が 自宅 で 熱中症 に なる ケース が 多い 。
+∃ SITUATION[8] SITUATION[1] EVENT[6] EVENT[7] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ １人暮らし(ENTITY[3]) ∧
+  の_人(ENTITY[3], ENTITY[2]) ∧
+   自宅(ENTITY[4]) ∧
+    熱中症(ENTITY[5]) ∧
+     ケース(SITUATION[1], 成る.0(EVENT[6], ENTITY[2], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4]) ∧
+      ADV_特に(SITUATION[8]) ∧ FACT(SITUATION[8], 多い(EVENT[7], SITUATION[1])))
+
+# ::id 47_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 本人 が 気を付ける の は もちろん だ が 、 気温 の 高い 日 は 近所 の 人 が 声 を 掛ける など 、 見守り体制 を 整え たい 。
+∃ SITUATION[2] ARB[1] EVENT[4] EVENT[5] EVENT[14] EVENT[16] ENTITY[3] ENTITY[12] ENTITY[13] ENTITY[11] ENTITY[15] EVENT[10] ENTITY[9] ENTITY[7] (
+ 気温(ENTITY[9]) ∧
+  高い(EVENT[10], (ENTITY[7], ENTITY[9])) ∧ 日(ENTITY[7]) ∧
+   ARB[1] = *arb* ∧
+    本人(ENTITY[3]) ∧
+     の(SITUATION[2], 気を付ける.0(EVENT[4], ENTITY[3])) ∧
+      近所(ENTITY[12]) ∧
+       の_人(ENTITY[12], ENTITY[11]) ∧
+        声(ENTITY[13]) ∧
+         見守り体制(ENTITY[15]) ∧
+          ADV_もちろん(EVENT[5]) ∧
+           CONJ_が(だ(EVENT[5], SITUATION[2]),
+            CRD_など(掛ける.0(EVENT[14], ENTITY[11], ENTITY[13]) ∧ 時間(EVENT[14]) = ENTITY[7],
+             整える.0_たい(EVENT[16], ARB[1], ENTITY[15]))))
+
+# ::id 48_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 高血圧 や 糖尿病 の よう な 持病 が ある 場合 も 、 熱中症 の リスク は 高まる 。
+∃ SITUATION[1] EVENT[8] EVENT[9] EVENT[12] GROUP[5] ENTITY[4] ENTITY[2] ENTITY[11] ENTITY[10] (
+ 熱中症(ENTITY[11]) ∧
+  の_リスク(ENTITY[11], ENTITY[10]) ∧
+   CONJ_や(∃ ENTITY[6] (高血圧(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[7] (糖尿病(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    の_よう(GROUP[5], ENTITY[4]) ∧
+     な(EVENT[8], ENTITY[2], ENTITY[4]) ∧ 持病(ENTITY[2]) ∧
+      場合(SITUATION[1], 有る.0(EVENT[9], ENTITY[2])) ∧ 高まる.0(EVENT[12], (SITUATION[1], ENTITY[10])))
+
+# ::id 49_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 暑い 時期 に 運動 する 人 は 用心 し て ほしい 。
+∃ ENTITY[1] ATTRIB[5] EVENT[8] EVENT[7] EVENT[6] ENTITY[4] ENTITY[2] (
+ 暑い(ATTRIB[5]) ∧
+  ATTRIBUTE_時期(ATTRIB[5], ENTITY[4]) ∧
+   運動する.0(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[4] ∧ 人(ENTITY[2]) ∧
+    ENTITY[1] = *speaker* ∧ ほしい(EVENT[7], ENTITY[1], ENTITY[2], 用心する.0_て(EVENT[8], ENTITY[2])))
+
+# ::id 50_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 中 で も 進学 し た ばかり で 体 が 慣れ て い ない 中学 １ 年生 や 高校 １ 年生 は 要注意 。
+∃ SITUATION[5] EVENT[13] ENTITY[12] ENTITY[1] ENTITY[10] ENTITY[11] GROUP[9] ENTITY[2] EVENT[6] (
+ past(EVENT[6]) ∧
+  FACT(SITUATION[5], 進学する.0_た(EVENT[6], ENTITY[2])) ∧
+   (CD_１_年生(ENTITY[10]), 中学(ENTITY[10])) ∧
+    (CD_１_年生(ENTITY[11]), 高校(ENTITY[11])) ∧
+     CONJ_や(is_element_of(ENTITY[10], GROUP[9]), is_element_of(ENTITY[11], GROUP[9])) ∧
+      ¬ ばかり SITUATION[4] (SITUATION[4] = SITUATION[5],
+            ∃ EVENT[8] ENTITY[7] (
+             体(ENTITY[7]) ∧
+              慣れる.0_て_い(EVENT[8], (ENTITY[2], ENTITY[7])) ∧ で(EVENT[8]) = SITUATION[4])) ∧
+       equals(GROUP[9], ENTITY[2]) ∧
+       中(ENTITY[1]) ∧
+        要注意(ENTITY[12]) ∧ xxx(EVENT[13], ENTITY[2], ENTITY[12]) ∧ で(EVENT[13]) = ENTITY[1])
+
+# ::id 51_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 定期的 な 水分補給 を 徹底 し て もらい たい 。
+∃ ATTRIB[5] ENTITY[2] ENTITY[1] EVENT[6] EVENT[3] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   定期的_な(ATTRIB[5]) ∧
+    ATTRIBUTE_水分補給(ATTRIB[5], ENTITY[4]) ∧ もらい_たい(EVENT[3], ENTITY[1], ENTITY[2], 徹底する.0_て(EVENT[6], ENTITY[2], ENTITY[4])))
+
+# ::id 52_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ◎ 探る
+∃ EVENT[1] 探る.0(EVENT[1])
+
+# ::id 53_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 東北大助手 小林徹平さん
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PERSON[東北大助手_小林徹平さん])
+
+# ::id 54_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ まち機能 を 集約 、 交流 創出
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  まち機能(ENTITY[2]) ∧
+   交流(ENTITY[4]) ∧ する.0(EVENT[3], ENTITY[1], ENTITY[2]) ∧ する.0(EVENT[5], ENTITY[1], ENTITY[4]))
+
+# ::id 55_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 「 想い 」 受け継ぐ 風景 育む
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  想い(ENTITY[2]) ∧
+   風景(ENTITY[4]) ∧ 受け継ぐ.0(EVENT[3], ENTITY[1], ENTITY[2]) ∧ 育む.0(EVENT[5], ENTITY[1], ENTITY[4]))
+
+# ::id 56_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 東日本大震災 で 甚大 な 被害 を 受け た 東北沿岸部 は 、 かねて より 人口減少 と 高齢化 が 進ん で い た 。
+∃ ATTRIB[6] ATTRIB[4] EVENT[10] GROUP[7] EVENT[5] ENTITY[3] ENTITY[1] (
+ 甚大_な(ATTRIB[4]) ∧
+  ATTRIBUTE_被害(ATTRIB[4], ENTITY[3]) ∧
+   受ける.0_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ で(EVENT[5]) = EVENT[東日本大震災] ∧ 東北沿岸部(ENTITY[1]) ∧
+    past(EVENT[5]) ∧
+     ADV_かねて(ATTRIB[6]) ∧
+      CONJ_と(∃ ENTITY[8] (人口減少(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+       ∃ ENTITY[9] (高齢化(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+       past(EVENT[10]) ∧
+        進む.0_で_い_た(EVENT[10], GROUP[7]) ∧ より(EVENT[10]) = ATTRIB[6] ∧ LOC(EVENT[10]) = ENTITY[1])
+
+# ::id 57_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt さらに 、 被災 し た 住民 が 今 まで 住ん で い た まち を 離れ た ため 、 社会 を 支える 人口基盤 そのもの が 揺らぎ つつある 。
+∃ ENTITY[15] ENTITY[7] SITUATION[1] ENTITY[8] ENTITY[5] ENTITY[2] ENTITY[13] ENTITY[11] EVENT[4] EVENT[9] EVENT[10] EVENT[14] EVENT[16] (
+ past(EVENT[4]) ∧
+  past(EVENT[9]) ∧
+   past(EVENT[10]) ∧
+    被災する.0_た(EVENT[4], ENTITY[2]) ∧ 住民(ENTITY[2]) ∧
+     ENTITY[7] = *pro*{ENTITY[2]} ∧
+      今(ENTITY[8]) ∧
+       住む.0_で_い_た(EVENT[9], ENTITY[7]) ∧ まで(EVENT[9]) = ENTITY[8] ∧ LOC(EVENT[9]) = ENTITY[5] ∧
+        まち(ENTITY[5]) ∧
+        FACT(SITUATION[1], 離れる.0_た(EVENT[10], ENTITY[2], ENTITY[5])) ∧
+         社会(ENTITY[13]) ∧
+          ENTITY[15] = そのもの{ENTITY[13], ENTITY[2], ENTITY[5], ENTITY[8]} ∧
+           支える.0(EVENT[14], ENTITY[11], ENTITY[13]) ∧ RFL_人口基盤(ENTITY[15], ENTITY[11]) ∧
+            揺らぐ.0_つつある(EVENT[16], ENTITY[11]) ∧ ため(EVENT[16]) = SITUATION[1])
+
+# ::id 58_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 復興事業 は 、 被災 し た 住宅地 、 道路 、 建物 、 防潮堤 など の 生活基盤施設 の 復旧 ・ 新設 を 予定 し て いる 。
+∃ ENTITY[1] EVENT[8] EVENT[17] GROUP[9] ENTITY[6] ENTITY[5] GROUP[14] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 復興事業(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[10] (住宅地(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+    ∃ ENTITY[11] (道路(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9])) ∧
+    ∃ ENTITY[12] (建物(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9])) ∧
+    ∃ ENTITY[13] (防潮堤(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[9])) ∧
+    被災する.0_た(EVENT[8], ENTITY[6]) ∧ equals(GROUP[9], ENTITY[6]) ∧
+     など(ENTITY[6], ENTITY[5]) ∧
+      の_生活基盤施設(ENTITY[5], ENTITY[4]) ∧
+       ∃ ENTITY[15] (復旧(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])) ∧
+        ∃ ENTITY[16] (新設(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14])) ∧
+        equals(GROUP[14], ENTITY[3]) ∧ の(ENTITY[4], ENTITY[3]) ∧
+         past(EVENT[8]) ∧ 予定する.0_て_いる(EVENT[17], ENTITY[1], ENTITY[3]) ∧ TPC(EVENT[17]) = ENTITY[2])
+
+# ::id 59_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt しかし 、 人口減少 が 進む と 、 必然的 に 人 と 人 が 交流 する 場 が 減る 。
+∀ EVENT[2] ENTITY[1] CND_と(人口減少(ENTITY[1]) ∧ 進む.0(EVENT[2], ENTITY[1]),
+    ∃ SITUATION[10] EVENT[8] EVENT[9] GROUP[5] ENTITY[3] (
+     CONJ_と(∃ ENTITY[6] (人(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+      ∃ ENTITY[7] (人(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+      交流する.0(EVENT[8], GROUP[5]) ∧ LOC(EVENT[8]) = ENTITY[3] ∧ 場(ENTITY[3]) ∧
+       ADV_必然的_に(SITUATION[10]) ∧ FACT(SITUATION[10], 減る.0(EVENT[9], ENTITY[3]))))
+
+# ::id 60_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt この 点 を 考慮 し 、 復旧・新設 する 施設 や 被災 を 免れ た 施設 を 集約 する こと で 、 まち の 機能 を 重ね合わせ 、 交流 の 場 を 創出 する 必要 が ある 。
+∃ SITUATION[3] ENTITY[2] SITUATION[1] EVENT[13] EVENT[16] EVENT[19] EVENT[21] EVENT[22] GROUP[4] ENTITY[15] ENTITY[14] ENTITY[18] ENTITY[17] ENTITY[20] (
+ 点(ENTITY[20]) ∧
+  ENTITY[2] = *pro* ∧
+   CONJ_や(∃ ENTITY[7] EVENT[8] ENTITY[5] (
+         ENTITY[7] = *pro*{ENTITY[2]} ∧
+          復旧.新設する.0(EVENT[8], ENTITY[7], ENTITY[5]) ∧ 施設(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ EVENT[12] ENTITY[11] ENTITY[9] (
+     被災(ENTITY[11]) ∧
+      免れる.0_た(EVENT[12], ENTITY[9], ENTITY[11]) ∧ 施設(ENTITY[9]) ∧
+       past(EVENT[12]) ∧ is_element_of(ENTITY[9], GROUP[4]))) ∧
+    こと(SITUATION[3], 集約する.0(EVENT[13], ENTITY[2], GROUP[4])) ∧
+     まち(ENTITY[15]) ∧
+      の_機能(ENTITY[15], ENTITY[14]) ∧
+       交流(ENTITY[18]) ∧
+        の_場(ENTITY[18], ENTITY[17]) ∧
+         必要(SITUATION[1],
+          重ね合わせる.0(EVENT[16], ENTITY[2], ENTITY[14]) ∧
+           創出する.0(EVENT[19], ENTITY[2], ENTITY[17]) ∧ で(EVENT[19]) = SITUATION[3]) ∧
+          考慮する.0(EVENT[21], SITUATION[1], ENTITY[20]) ∧ 有る.0(EVENT[22], SITUATION[1]))
+
+# ::id 61_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 交流 の 場 の 創出 は 、 風景 を 育てる きっかけ に なる 。
+∃ ENTITY[5] SITUATION[4] EVENT[7] EVENT[8] ENTITY[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 交流(ENTITY[3]) ∧
+  の_場(ENTITY[3], ENTITY[2]) ∧
+   の_創出(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     風景(ENTITY[6]) ∧
+      きっかけ(SITUATION[4], 育てる.0(EVENT[7], ENTITY[5], ENTITY[6])) ∧ 成る.0(EVENT[8], ENTITY[1], SITUATION[4]))
+
+# ::id 62_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ここ で いう 風景 と は 、 それぞれ の 人 が 持つ 記憶 や 思い出 など 「 想（おも）い 」 の ある 場 で ある 。
+∃ ENTITY[4] ENTITY[3] GROUP[13] ENTITY[9] ENTITY[8] ENTITY[6] EVENT[16] EVENT[17] EVENT[5] ENTITY[1] (
+ ENTITY[3] = *speaker* ∧
+  ENTITY[4] = ここ ∧
+   言う.0(EVENT[5], ENTITY[3], ENTITY[1]) ∧ で(EVENT[5]) = ENTITY[4] ∧ 風景(ENTITY[1]) ∧
+    CONJ_や(∃ ENTITY[14] (記憶(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])),
+     ∃ ENTITY[15] (思い出(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13]))) ∧
+     それぞれ_の ENTITY[11] (人(ENTITY[11]), ∃ EVENT[12] 持つ.0(EVENT[12], ENTITY[11], ENTITY[9])) ∧ equals(GROUP[13], ENTITY[9]) ∧
+      など_想（おも）い(ENTITY[9], ENTITY[8]) ∧
+       有る.0(EVENT[16], ENTITY[8]) ∧ LOC(EVENT[16]) = ENTITY[6] ∧ 場(ENTITY[6]) ∧
+        で_ある(EVENT[17], ENTITY[1], ENTITY[6]))
+
+# ::id 63_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 道路 、 橋 、 山 、 川 、 海 といった 地図 の よう な イメージ として の 場 や 、 住宅地 、 商店 、 仕事場 、 遊び場 など の 日常生活 の 中 で 人 と 交流 する 場 は 、 人 の 「 想い 」 と 密接 な 関係 が ある 。
+∃ ATTRIB[30] ARB[22] EVENT[31] ENTITY[28] ENTITY[29] ENTITY[27] EVENT[13] EVENT[26] ENTITY[4] ENTITY[5] ENTITY[6] ENTITY[7] ENTITY[8] ENTITY[12] ENTITY[11] ENTITY[9] GROUP[3] ENTITY[2] ENTITY[17] ENTITY[18] ENTITY[19] ENTITY[20] GROUP[16] ENTITY[24] ENTITY[25] ENTITY[23] ENTITY[15] ENTITY[14] GROUP[1] (
+ 道路(ENTITY[4]) ∧
+  橋(ENTITY[5]) ∧
+   山(ENTITY[6]) ∧
+    川(ENTITY[7]) ∧
+     海(ENTITY[8]) ∧
+      is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧ is_element_of(ENTITY[6], GROUP[3]) ∧
+       is_element_of(ENTITY[7], GROUP[3]) ∧ is_element_of(ENTITY[8], GROUP[3]) ∧
+       地図(ENTITY[12]) ∧
+        の_よう(ENTITY[12], ENTITY[11]) ∧
+         な(EVENT[13], ENTITY[9], ENTITY[11]) ∧ イメージ(ENTITY[9]) ∧
+          として_の_場(ENTITY[9], ENTITY[2]) ∧ といった_場(GROUP[3], ENTITY[2]) ∧
+           住宅地(ENTITY[17]) ∧
+            商店(ENTITY[18]) ∧
+             仕事場(ENTITY[19]) ∧
+              遊び場(ENTITY[20]) ∧
+               is_element_of(ENTITY[17], GROUP[16]) ∧ is_element_of(ENTITY[18], GROUP[16]) ∧ is_element_of(ENTITY[19], GROUP[16]) ∧
+                is_element_of(ENTITY[20], GROUP[16]) ∧
+                など(GROUP[16], ENTITY[15]) ∧
+                 ARB[22] = *arb* ∧
+                  日常生活(ENTITY[24]) ∧
+                   の_中(ENTITY[24], ENTITY[23]) ∧
+                    人(ENTITY[25]) ∧
+                     交流する.0(EVENT[26], ARB[22]) ∧ と(EVENT[26]) = ENTITY[25] ∧
+                      で(EVENT[26]) = ENTITY[23] ∧ LOC(EVENT[26]) = ENTITY[14] ∧
+                      の_場(ENTITY[15], ENTITY[14]) ∧
+                      CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[14], GROUP[1])) ∧
+                       人(ENTITY[28]) ∧
+                        の_想い(ENTITY[28], ENTITY[27]) ∧
+                         密接_な(ATTRIB[30]) ∧
+                          ATTRIBUTE_関係(ATTRIB[30], ENTITY[29]) ∧
+                           有る.0(EVENT[31], _, ENTITY[29]) ∧ と(EVENT[31]) = ENTITY[27] ∧
+                            TPC(EVENT[31]) = GROUP[1])
+
+# ::id 64_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt そうした 「 想い 」 が 、 何 世代 に も わたっ て 重なり 、 人々 の 間 に 共有 さ れる 風景 が 生まれ て き た 。
+∃ ENTITY[8] ENTITY[7] ENTITY[5] EVENT[4] EVENT[9] EVENT[10] ENTITY[1] (
+ 想い(ENTITY[1]) ∧
+  past(EVENT[10]) ∧
+   人々(ENTITY[8]) ∧
+    の_間(ENTITY[8], ENTITY[7]) ∧
+     共有する.0(EVENT[9], _, ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[7] ∧ 風景(ENTITY[5]) ∧
+      CONJ_te(も ENTITY[2] (何_世代(ENTITY[2]), ∃ EVENT[3] (わたる.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2])),
+       重なる.0(EVENT[4], ENTITY[1])) ∧ 生まれる.0_て_き_た(EVENT[10], ENTITY[5]))
+
+# ::id 65_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 被災地 は 震災 により 多く の 風景 を 喪失 し た 。
+∃ ENTITY[2] ENTITY[1] (
+ 被災地(ENTITY[1]) ∧
+  震災(ENTITY[2]) ∧
+   多く_の ENTITY[3] (風景(ENTITY[3]),
+    ∃ EVENT[4] (past(EVENT[4]) ∧ 喪失する.0_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ により(EVENT[4]) = ENTITY[2])))
+
+# ::id 66_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 復興計画 で は 、 この よう な 風景 の 継承 も 重要 な 課題 で ある 。
+∃ ATTRIB[8] ENTITY[3] ENTITY[7] ENTITY[2] EVENT[6] EVENT[9] ENTITY[5] ENTITY[1] (
+ 復興計画(ENTITY[1]) ∧
+  よう(ENTITY[5]) ∧
+   な(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 風景(ENTITY[3]) ∧
+    の_継承(ENTITY[3], ENTITY[2]) ∧
+     重要_な(ATTRIB[8]) ∧
+      ATTRIBUTE_課題(ATTRIB[8], ENTITY[7]) ∧ で_ある(EVENT[9], ENTITY[2], ENTITY[7]) ∧ で(EVENT[9]) = ENTITY[1])
+
+# ::id 67_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 私 が 所属 する 東北大災害科学国際研究所 の 災害復興実践学分野 は 、 行政主導 で 進め られる 復興計画 の 策定 を 支援 し て いる 。
+∃ ENTITY[2] EVENT[8] EVENT[9] ENTITY[7] ENTITY[5] ENTITY[4] EVENT[3] ENTITY[1] (
+ ENTITY[2] = 私 ∧
+  の_災害復興実践学分野(ORG[東北大災害科学国際研究所], ENTITY[1]) ∧ THAT_災害復興実践学分野(所属する.0(EVENT[3], ENTITY[2]), ENTITY[1]) ∧
+   行政主導(ENTITY[7]) ∧
+    進める.0(EVENT[8], _, ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[7] ∧ 復興計画(ENTITY[5]) ∧
+     の_策定(ENTITY[5], ENTITY[4]) ∧ 支援する.0_て_いる(EVENT[9], ENTITY[1], ENTITY[4]))
+
+# ::id 68_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 具体例 を 挙げる と 、 まち全体 を コンパクト に まとめる ため 、 数 カ所 で 予定 さ れ て い た 集落 の 移転地 を 一 つ に 集約 する 住宅地 の 設計 や 、 その 住宅地付近 に 商業店舗 や 役場機能 など を 配置 する 計画 で ある 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] EVENT[28] ENTITY[3] GROUP[5] ENTITY[22] (
+ 住宅地付近(ENTITY[22]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = *speaker*{ENTITY[1]} ∧
+    具体例(ENTITY[3]) ∧
+     CONJ_や(∃ SITUATION[9] ENTITY[8] EVENT[11] EVENT[16] EVENT[19] ENTITY[10] ENTITY[15] ENTITY[17] ENTITY[18] ENTITY[13] ENTITY[7] ENTITY[6] (
+           住宅地(ENTITY[7]) ∧
+            ENTITY[8] = *pro*{ENTITY[7], ENTITY[1], ENTITY[3]} ∧
+             FACT(SITUATION[9], まとめる.0(EVENT[11], ENTITY[8], ENTITY[10])) ∧
+              CD_数_カ所(ENTITY[15]) ∧
+               集落(ENTITY[17]) ∧
+                予定する.0_て_い_た(EVENT[16], _, ENTITY[13]) ∧ で(EVENT[16]) = ENTITY[15] ∧
+                 の_移転地(ENTITY[17], ENTITY[13]) ∧
+                 CD_一_つ(ENTITY[18]) ∧
+                  の_設計(ENTITY[7], ENTITY[6]) ∧
+                   THAT_設計(集約する.0(EVENT[19], ENTITY[8], ENTITY[13]) ∧ に(EVENT[19]) = ENTITY[18] ∧
+                         ため(EVENT[19]) = SITUATION[9], ENTITY[6]) ∧
+                   ADV_コンパクト_に(EVENT[11]) ∧ past(EVENT[16]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+      ∃ ENTITY[21] EVENT[27] GROUP[24] ENTITY[23] ENTITY[20] (
+       ENTITY[21] = *pro*{ENTITY[1], ENTITY[3]} ∧
+        CONJ_や(∃ ENTITY[25] (商業店舗(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[24])),
+         ∃ ENTITY[26] (役場機能(ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[24]))) ∧
+         など(GROUP[24], ENTITY[23]) ∧
+          THAT_計画(配置する.0(EVENT[27], ENTITY[21], ENTITY[23]) ∧ に(EVENT[27]) = ENTITY[22], ENTITY[20]) ∧
+           is_element_of(ENTITY[20], GROUP[5]))) ∧
+      CRD_と(挙げる.0(EVENT[4], ENTITY[2], ENTITY[3]), で_ある(EVENT[28], ENTITY[1], GROUP[5])))
+
+# ::id 69_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt その 他 、 これ まで の まち が 持っ て い た 道 の 特徴 を 生かし た 住宅地 の 設計 を 担う 。
+∃ ENTITY[9] SITUATION[4] ENTITY[1] EVENT[10] EVENT[11] EVENT[12] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] (
+ 他(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[9] = これ{ENTITY[6], ENTITY[5], ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+    まで_の_まち(ENTITY[9], ENTITY[8]) ∧
+     持つ.0_て_い_た(EVENT[10], ENTITY[8], ENTITY[6]) ∧ 道(ENTITY[6]) ∧
+      の_特徴(ENTITY[6], ENTITY[5]) ∧
+       住宅地(SITUATION[4], 生かす.0_た(EVENT[11], _, ENTITY[5])) ∧
+        の_設計(SITUATION[4], ENTITY[3]) ∧
+         past(EVENT[10]) ∧ 担う.0(EVENT[12], ENTITY[1], ENTITY[3]) ∧ ADV(EVENT[12]) = ENTITY[2])
+
+# ::id 70_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt また 、 震災発生以前 に 行わ れ て い た 海 で の レジャー活動 を 継承 する ため 、 アクセス性 の 高い 親水型防潮堤 を 設計 する 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[7] EVENT[9] EVENT[13] EVENT[14] ENTITY[6] ENTITY[8] ENTITY[4] ENTITY[12] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   震災発生以前(ENTITY[6]) ∧
+    海(ENTITY[8]) ∧
+     行う.0_て_い_た(EVENT[7], _, ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ で_の_レジャー活動(ENTITY[8], ENTITY[4]) ∧
+      FACT(SITUATION[2], 継承する.0(EVENT[9], ENTITY[3], ENTITY[4])) ∧
+       アクセス性(ENTITY[12]) ∧
+        高い(EVENT[13], (ENTITY[10], ENTITY[12])) ∧ 親水型防潮堤(ENTITY[10]) ∧
+         past(EVENT[7]) ∧ 設計する.0(EVENT[14], ENTITY[1], ENTITY[10]) ∧ ため(EVENT[14]) = SITUATION[2])
+
+# ::id 71_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt これら の 取り組み は 、 人 と 人 が 交流 する 機会 を 創出 し て 人 の 「 想い 」 を 育み 、 道路 や 地形 など の 震災前 から 残る 風景 と 、 復興事業 を通じて 生まれる 風景 を 結び付ける こと や 、 あるいは 場 が 変化 し て も 、 そこ で 行わ れ て き た 活動 を 受け継ぎ 、 人 の 生活 が 生み出す 風景 を 継承 する こと も 狙い の 一 つ に なっ て いる 。
+∃ ENTITY[2] EVENT[47] ENTITY[46] ENTITY[45] GROUP[3] ENTITY[1] (
+ ENTITY[2] = これら ∧
+  の_取り組み(ENTITY[2], ENTITY[1]) ∧
+   CONJ_や_あるいは(∃ SITUATION[6] ENTITY[5] EVENT[10] EVENT[11] EVENT[14] EVENT[28] GROUP[7] ENTITY[13] ENTITY[12] GROUP[15] ENTITY[4] (
+         ENTITY[5] = *pro*{ENTITY[1]} ∧
+          CONJ_と(∃ ENTITY[8] (人(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+           ∃ ENTITY[9] (人(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+           機会(SITUATION[6], 交流する.0(EVENT[10], GROUP[7])) ∧
+            人(ENTITY[13]) ∧
+             の_想い(ENTITY[13], ENTITY[12]) ∧
+              CONJ_と(∃ EVENT[23] GROUP[18] ENTITY[22] ENTITY[17] ENTITY[16] (
+                    CONJ_や(∃ ENTITY[19] (道路(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[18])),
+                     ∃ ENTITY[20] (地形(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[18]))) ∧
+                     など(GROUP[18], ENTITY[17]) ∧
+                      震災前(ENTITY[22]) ∧
+                       残る.0(EVENT[23], ENTITY[16]) ∧ から(EVENT[23]) = ENTITY[22] ∧
+                        の_風景(ENTITY[17], ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])),
+               ∃ EVENT[27] ENTITY[26] ENTITY[24] (
+                復興事業(ENTITY[26]) ∧
+                 生まれる.0(EVENT[27], ENTITY[24]) ∧ を通じて(EVENT[27]) = ENTITY[26] ∧ 風景(ENTITY[24]) ∧
+                  is_element_of(ENTITY[24], GROUP[15]))) ∧
+               THAT_こと(CONJ_te(創出する.0_て(EVENT[11], ENTITY[5], SITUATION[6]), 育む.0(EVENT[14], ENTITY[5], ENTITY[12])) ∧
+                     結び付ける.0(EVENT[28], ENTITY[5], GROUP[15]), ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[36] SITUATION[31] ENTITY[30] EVENT[33] EVENT[37] EVENT[38] EVENT[43] EVENT[44] ENTITY[32] ENTITY[34] ENTITY[42] ENTITY[41] ENTITY[39] ENTITY[29] (
+     ENTITY[30] = *pro*{ENTITY[1]} ∧
+      場(ENTITY[32]) ∧
+       FACT(SITUATION[31], 変化する.0_て(EVENT[33], ENTITY[32])) ∧
+        ENTITY[36] = そこ{ENTITY[30], ENTITY[32], ENTITY[1]} ∧
+         行う.0_て_き_た(EVENT[37], _, ENTITY[34]) ∧ で(EVENT[37]) = ENTITY[36] ∧ 活動(ENTITY[34]) ∧
+          人(ENTITY[42]) ∧
+           の_生活(ENTITY[42], ENTITY[41]) ∧
+            生み出す.0(EVENT[43], ENTITY[41], ENTITY[39]) ∧ 風景(ENTITY[39]) ∧
+             THAT_こと(受け継ぐ.0(EVENT[38], ENTITY[30], ENTITY[34]) ∧
+                   継承する.0(EVENT[44], ENTITY[30], ENTITY[39]) ∧ te(EVENT[44]) = SITUATION[31], ENTITY[29]) ∧
+              past(EVENT[37]) ∧ is_element_of(ENTITY[29], GROUP[3]))) ∧
+    狙い(ENTITY[46]) ∧
+     (CD_一_つ(ENTITY[45]), の(ENTITY[46], ENTITY[45])) ∧ 成る.0_て_いる(EVENT[47], (ENTITY[1], GROUP[3]), ENTITY[45]))
+
+# ::id 72_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 今回 の 被災経験 も また 一 つ の 風景 で ある 。
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 今回(ENTITY[2]) ∧
+  の_被災経験(ENTITY[2], ENTITY[1]) ∧
+   CD_一_つ(ENTITY[4]) ∧
+    の_風景(ENTITY[4], ENTITY[3]) ∧ ADV_また(EVENT[5]) ∧ で_ある(EVENT[5], ENTITY[1], ENTITY[3]))
+
+# ::id 73_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt この 風景 を 共有 する こと は 、 次世代 の 風景 を 育む きっかけ に なる と 考え て いる 。
+∃ ENTITY[8] SITUATION[7] ARB[4] SITUATION[3] ENTITY[1] EVENT[6] EVENT[11] EVENT[12] EVENT[2] ENTITY[10] ENTITY[9] ENTITY[5] (
+ 風景(ENTITY[5]) ∧
+  ENTITY[1] = *pro* ∧
+   ARB[4] = *arb* ∧
+    こと(SITUATION[3], 共有する.0(EVENT[6], ARB[4], ENTITY[5])) ∧
+     ENTITY[8] = *pro*{ENTITY[5], ENTITY[1]} ∧
+      次世代(ENTITY[10]) ∧
+       の_風景(ENTITY[10], ENTITY[9]) ∧
+        きっかけ(SITUATION[7], 育む.0(EVENT[11], ENTITY[8], ENTITY[9])) ∧
+         考える.0_て_いる(EVENT[2], ENTITY[1], 成る.0(EVENT[12], SITUATION[3], SITUATION[7])))
+
+# ::id 74_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ こばやし・てっぺい ＞ 早稲田大大学院修了 。
+∃ EVENT[2] ENTITY[1] (早稲田大大学院修了(ENTITY[1]) ∧ namely_-PERSON-(ENTITY[1], PERSON[こばやし.てっぺい]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[こばやし.てっぺい])
+
+# ::id 75_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 株式会社国際開発コンサルタンツ を 経 て 、 １２ 年 から 東北大災害科学国際研究所助手 。
+∃ ENTITY[1] EVENT[2] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  CD_１２_年(ENTITY[3]) ∧
+   CONJ_te(経る.0_て(EVENT[2], ENTITY[1], ORG[株式会社国際開発コンサルタンツ]),
+    xxx(EVENT[4], ENTITY[1], ORG[東北大災害科学国際研究所助手]) ∧ から(EVENT[4]) = ENTITY[3]))
+
+# ::id 76_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 専門 は 景観デザイン 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (専門(ENTITY[1]) ∧ 景観デザイン(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 77_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ２６ 歳 。
+∃ EVENT[2] ENTITY[1] (CD_２６_歳(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 78_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 神奈川県出身 。
+∃ EVENT[2] ENTITY[1] (神奈川県出身(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 79_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ◎ 伝える ２０１１ ・ ３ ・ １１
+∃ ENTITY[1] EVENT[3] EVENT[4] (
+ (CD_２０１１_３_１１(ENTITY[1]), 伝える.0(EVENT[3], _, ENTITY[1])) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 80_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 浜 襲う 津波 を 撮影 （ 宮城県 南三陸町 ）
+∃ ENTITY[1] EVENT[5] GPE)(PU （)(NPR 宮城県_南三陸町)(PU ）[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  浜(ENTITY[4]) ∧
+   襲う.0(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 津波(ENTITY[2]) ∧ する.0(GPE)(PU （)(NPR 宮城県_南三陸町)(PU ）[6], ENTITY[1], ENTITY[2]))
+
+# ::id 81_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 引き波 強く 海底 あらわ
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (引き波(ENTITY[1]) ∧ 海底(ENTITY[3]) ∧ 強く(EVENT[2], ENTITY[1]) ∧ あらわ(EVENT[4], ENTITY[3]))
+
+# ::id 82_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 宮城県 南三陸町 歌津 の 漁業 高橋栄樹さん （ ３２ ） は 、 寄木漁港 に 面し た 自宅兼工場 で 大きな 揺れ に 襲わ れ た 。
+∃ ATTRIB[7] ENTITY[6] ENTITY[3] EVENT[5] EVENT[8] ENTITY[2] ENTITY[1] (
+ の_漁業(NORP[宮城県_南三陸町_歌津], ENTITY[2]) ∧
+  namely_-PERSON-(ENTITY[2], PERSON[高橋栄樹さん]) ∧
+   CD_３２(ENTITY[1]) ∧
+    namely_-PERSON-(ENTITY[1], PERSON[高橋栄樹さん]) ∧
+     past(EVENT[8]) ∧
+      面する.0_た(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[寄木漁港] ∧ 自宅兼工場(ENTITY[3]) ∧
+       大きな(ATTRIB[7]) ∧
+        ATTRIBUTE_揺れ(ATTRIB[7], ENTITY[6]) ∧ 襲う.0_た(EVENT[8], ENTITY[6], PERSON[高橋栄樹さん]) ∧ で(EVENT[8]) = ENTITY[3])
+
+# ::id 83_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 津波 は 引き波 と 押し波 を 繰り返し 、 浜 を 襲っ た 。
+∃ EVENT[5] EVENT[7] GROUP[2] ENTITY[6] ENTITY[1] (
+ 津波(ENTITY[1]) ∧
+  CONJ_と(∃ ENTITY[3] (引き波(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (押し波(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   浜(ENTITY[6]) ∧
+    past(EVENT[7]) ∧ 繰り返す.0(EVENT[5], ENTITY[1], GROUP[2]) ∧ 襲う.0_た(EVENT[7], ENTITY[1], ENTITY[6]))
+
+# ::id 84_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 大きな 水槽 の 近く で 、 カキ養殖用 の ロープ の 手入れ を し て い まし た 。
+∃ ATTRIB[4] ENTITY[1] EVENT[8] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  大きな(ATTRIB[4]) ∧
+   ATTRIBUTE_水槽(ATTRIB[4], ENTITY[3]) ∧
+    の_近く(ENTITY[3], ENTITY[2]) ∧
+     カキ養殖用(ENTITY[7]) ∧
+      の_ロープ(ENTITY[7], ENTITY[6]) ∧
+       の_手入れ(ENTITY[6], ENTITY[5]) ∧
+        past(EVENT[8]) ∧ する.0_て_い_まし_た(EVENT[8], ENTITY[1], ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[2])
+
+# ::id 85_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 微震動 の 後 、 揺れ が 大きく なり 、 水槽 の 水 は 波打っ て あふれ 、 軽トラック は バウンド し て い まし た 。
+∃ EVENT[4] EVENT[7] EVENT[8] EVENT[10] ENTITY[2] ENTITY[3] TIME[1] ENTITY[6] ENTITY[5] ENTITY[9] (
+ 水槽(ENTITY[6]) ∧
+  の_水(ENTITY[6], ENTITY[5]) ∧
+   軽トラック(ENTITY[9]) ∧
+    微震動(ENTITY[2]) ∧
+     の_後(ENTITY[2], TIME[1]) ∧
+      揺れ(ENTITY[3]) ∧
+       past(EVENT[10]) ∧
+        大きく_なり(EVENT[4], ENTITY[3]) ∧
+         CONJ_te(波打つ.0_て(EVENT[7], ENTITY[5]), あふれる.0(EVENT[8], ENTITY[5])) ∧
+          バウンドする.0_て_い_まし_た(EVENT[10], ENTITY[9]) ∧ is_contained_in(時間(EVENT[10]), TIME[1]))
+
+# ::id 86_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 湾内 の 係留場 に 止める ため 、 岸壁 に あっ た 船 を 出し まし た 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[10] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[9] ENTITY[7] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[3] = *pro* ∧
+   湾内(ENTITY[5]) ∧
+    の_係留場(ENTITY[5], ENTITY[4]) ∧
+     FACT(SITUATION[2], 止める.0(EVENT[6], ENTITY[1], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[4]) ∧
+      岸壁(ENTITY[9]) ∧
+       有る.0_た(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 船(ENTITY[7]) ∧
+        past(EVENT[10]) ∧
+         past(EVENT[11]) ∧ 出す.0_まし_た(EVENT[11], ENTITY[1], ENTITY[7]) ∧ ため(EVENT[11]) = SITUATION[2])
+
+# ::id 87_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 小舟 で 陸 に 戻る ころ に は 、 引き波 で 水位 が 下がっ て い まし た 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[6] (
+ ENTITY[2] = *speaker* ∧
+  小舟(ENTITY[3]) ∧
+   陸(ENTITY[4]) ∧
+    ころ(SITUATION[1],
+     戻る.0(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[3]) ∧
+     引き波(ENTITY[6]) ∧
+      水位(ENTITY[7]) ∧
+       past(EVENT[8]) ∧
+        下がる.0_て_い_まし_た(EVENT[8], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[6] ∧ に(EVENT[8]) = SITUATION[1])
+
+# ::id 88_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 自宅 は １ 階 が 工場 で 、 ２ 階 が 住居 です 。
+∃ EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[1] (
+ 自宅(ENTITY[1]) ∧
+  CD_１_階(ENTITY[2]) ∧
+   工場(ENTITY[3]) ∧
+    CD_２_階(ENTITY[5]) ∧
+     住居(ENTITY[6]) ∧
+      CONJ_te(で(EVENT[4], (ENTITY[1], ENTITY[2]), ENTITY[3]),
+       です(EVENT[7], (ENTITY[1], ENTITY[5]), ENTITY[6])))
+
+# ::id 89_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 住居 に 入る と 室内 は 神棚 が 落ち 、 食器 が 散乱 し て い まし た 。
+∃ ENTITY[1] EVENT[3] EVENT[6] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[7] ENTITY[4] (
+ 室内(ENTITY[4]) ∧
+  ENTITY[1] = *speaker* ∧
+   住居(ENTITY[2]) ∧
+    神棚(ENTITY[5]) ∧
+     食器(ENTITY[7]) ∧
+      past(EVENT[8]) ∧
+       CRD_と(入る.0(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2],
+        落ちる.0(EVENT[6], ENTITY[5]) ∧ LOC(EVENT[6]) = ENTITY[4] ∧ 散乱する.0_て_い_まし_た(EVENT[8], ENTITY[7])))
+
+# ::id 90_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 自分 の 部屋 は 金具 で 家具 を 固定 し て い た ので 被害 は 限定的 でし た 。
+∃ ENTITY[1] ENTITY[3] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[7] (
+ ENTITY[3] = 自分{ENTITY[1]} ∧
+  の_部屋(ENTITY[3], ENTITY[2]) ∧
+   被害(ENTITY[7]) ∧
+    ENTITY[1] = *speaker* ∧
+     金具(ENTITY[4]) ∧
+      家具(ENTITY[5]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[8]) ∧
+         CRD_ので(固定する.0_て_い_た(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4] ∧
+               LOC(EVENT[6]) = ENTITY[2], 限定的_でし_た(EVENT[8], ENTITY[7])))
+
+# ::id 91_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 漁港 の 撮影 を 始め まし た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  漁港(ENTITY[3]) ∧ の_撮影(ENTITY[3], ENTITY[2]) ∧ past(EVENT[4]) ∧ 始める.0_まし_た(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 92_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt すっかり 潮 が 引き 、 湾内 の 小島 が 陸続き に なり まし た 。
+∃ EVENT[2] EVENT[7] ENTITY[1] ENTITY[5] ENTITY[6] ENTITY[4] (
+ 潮(ENTITY[1]) ∧
+  湾内(ENTITY[5]) ∧
+   の_小島(ENTITY[5], ENTITY[4]) ∧
+    陸続き(ENTITY[6]) ∧
+     ADV_すっかり(EVENT[2]) ∧
+      past(EVENT[7]) ∧ 引く.0(EVENT[2], ENTITY[1]) ∧ 成る.0_まし_た(EVENT[7], ENTITY[4], ENTITY[6]))
+
+# ::id 93_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 午後 ３ 時 ５ 分 ごろ に 引き波 が 止まる と 、 押し波 が 発生 し 、 水位 が 上がり 始め まし た 。
+∃ EVENT[3] EVENT[5] EVENT[7] ENTITY[2] ENTITY[1] ENTITY[4] ENTITY[6] (
+ (CD_３_時_５_分(ENTITY[1]), 午後(ENTITY[1]) ∧ ごろ(ENTITY[1])) ∧
+  引き波(ENTITY[2]) ∧
+   押し波(ENTITY[4]) ∧
+    水位(ENTITY[6]) ∧
+     past(EVENT[7]) ∧
+      CRD_と(止まる.0(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1],
+       発生する.0(EVENT[5], ENTITY[4]) ∧ 上がる.0_始め_まし_た(EVENT[7], ENTITY[6])))
+
+# ::id 94_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 午後 ３ 時 ２０ 分 ごろ に は 、 海 が 防波堤 を 超え そう な ほど 膨れ 、 黒っぽい 色 に 変わり まし た 。
+∃ ATTRIB[8] SITUATION[3] EVENT[6] EVENT[9] ENTITY[4] ENTITY[7] ENTITY[2] ENTITY[1] (
+ (CD_３_時_２０_分(ENTITY[1]), 午後(ENTITY[1]) ∧ ごろ(ENTITY[1])) ∧
+  海(ENTITY[2]) ∧
+   防波堤(ENTITY[4]) ∧
+    FACT(SITUATION[3], MD_そう(∃ EVENT[5] 超える.0_な(EVENT[5], ENTITY[2], ENTITY[4]))) ∧
+     黒っぽい(ATTRIB[8]) ∧
+      ATTRIBUTE_色(ATTRIB[8], ENTITY[7]) ∧
+       past(EVENT[9]) ∧
+        膨れる.0(EVENT[6], ENTITY[2]) ∧ ほど(EVENT[6]) = SITUATION[3] ∧
+         変わる.0_まし_た(EVENT[9], ENTITY[2]) ∧ に(EVENT[9]) = ENTITY[7] ∧ に(EVENT[9]) = ENTITY[1])
+
+# ::id 95_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt コンクリートブロック に 係留 し て い た 船 は 、 海中 に 引きずり こま れる よう に 船首 が 沈ん で い まし た 。
+∃ SITUATION[5] EVENT[7] EVENT[9] ENTITY[6] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ コンクリートブロック(ENTITY[3]) ∧
+  係留する.0_て_い_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 船(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    海中(ENTITY[6]) ∧
+     よう(SITUATION[5], 引きずる.0_こま(EVENT[7], _, ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+      船首(ENTITY[8]) ∧
+       past(EVENT[9]) ∧ 沈む.0_で_い_まし_た(EVENT[9], (ENTITY[1], ENTITY[8])) ∧ に(EVENT[9]) = SITUATION[5])
+
+# ::id 96_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 防波堤 を 超え た 津波 は 、 あっという間 に 周囲 に 広がり 、 建物 に 迫り まし た 。
+∃ EVENT[7] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ 防波堤(ENTITY[3]) ∧
+  超える.0_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 津波(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    あっという間(ENTITY[5]) ∧
+     周囲(ENTITY[6]) ∧
+      建物(ENTITY[8]) ∧
+       past(EVENT[9]) ∧
+        広がる.0(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6] ∧ に(EVENT[7]) = ENTITY[5] ∧
+         迫る.0_まし_た(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[8])
+
+# ::id 97_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 工場部分 が 水没 し 、 水 が ２ 階 に 達する と 、 室内 に たまっ た 空気 で 建物 が 膨れ 、 ボコッ という 音 とともに 壊れ まし た 。
+∃ ATTRIB[14] ENTITY[12] EVENT[2] EVENT[5] EVENT[9] EVENT[11] EVENT[15] ENTITY[1] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[10] ENTITY[6] ENTITY[13] (
+ 工場部分(ENTITY[1]) ∧
+  水(ENTITY[3]) ∧
+   CD_２_階(ENTITY[4]) ∧
+    室内(ENTITY[8]) ∧
+     たまる.0_た(EVENT[9], ENTITY[6]) ∧ に(EVENT[9]) = ENTITY[8] ∧ 空気(ENTITY[6]) ∧
+      建物(ENTITY[10]) ∧
+       ENTITY[12] = *pro*{ENTITY[6], ENTITY[10], ENTITY[8], ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+        ADV_ボコッ(ATTRIB[14]) ∧
+         という_音(ATTRIB[14], ENTITY[13]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[15]) ∧
+            CRD_と(水没する.0(EVENT[2], ENTITY[1]) ∧
+                  達する.0(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4],
+             膨れる.0(EVENT[11], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[6] ∧
+              壊れる.0_まし_た(EVENT[15], ENTITY[12]) ∧ とともに(EVENT[15]) = ENTITY[13]))
+
+# ::id 98_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 海抜 １２ メートル ぐらい の 所 で 撮影 し て い まし た が 、 いつ の 間 に か 足元 に 水 が 来 て い まし た 。
+∃ ENTITY[2] ENTITY[1] EVENT[6] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[2] = *pro* ∧
+   (CD_１２_メートル(ENTITY[5]), 海抜(ENTITY[5])) ∧
+    ぐらい ENTITY[4] (ENTITY[4] = ENTITY[5], の_所(ENTITY[4], ENTITY[3])) ∧
+     past(EVENT[6]) ∧
+      CONJ_が(撮影する.0_て_い_まし_た(EVENT[6], ENTITY[1], ENTITY[2]) ∧ で(EVENT[6]) = ENTITY[3],
+       か ENTITY[8] ENTITY[7] (の_間(ENTITY[8], ENTITY[7]),
+        ∃ EVENT[11] ENTITY[10] ENTITY[9] (
+         足元(ENTITY[9]) ∧
+          水(ENTITY[10]) ∧
+           past(EVENT[11]) ∧
+            来る.0_て_い_まし_た(EVENT[11], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[9] ∧
+             に(EVENT[11]) = ENTITY[7]))))
+
+# ::id 99_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 撮影 に 夢中 で 気付き ませ ん でし た 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  撮影(ENTITY[2]) ∧
+   CONJ_te(夢中_で(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2],
+    ¬ ∃ EVENT[4] (past(EVENT[4]) ∧ 気付く.0_ませ_でし_た(EVENT[4], ENTITY[1]))))
+
+# ::id 100_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 周囲 の 車 が 流さ れ 、 ショート し た ため か 、 クラクション が 鳴りっぱなし でし た 。
+∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ 周囲(ENTITY[4]) ∧
+  の_車(ENTITY[4], ENTITY[3]) ∧
+   FACT(SITUATION[2], 流す.0(EVENT[5], _, ENTITY[3]) ∧ ショーとする.0_た(EVENT[6], ENTITY[3])) ∧
+    past(EVENT[6]) ∧
+     か SITUATION[1] (SITUATION[1] = SITUATION[2],
+      ∃ EVENT[8] ENTITY[7] (
+       クラクション(ENTITY[7]) ∧
+        past(EVENT[8]) ∧ 鳴りっぱなし_でし_た(EVENT[8], ENTITY[7]) ∧ ため(EVENT[8]) = SITUATION[1])))
+
+# ::id 101_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 第１ 波 の 海面 に 覆いかぶさる よう に 、 第２ 波 が 押し寄せ て き まし た 。
+∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ CD_第２_波(ENTITY[1]) ∧
+  CD_第１_波(ENTITY[4]) ∧
+   の_海面(ENTITY[4], ENTITY[3]) ∧
+    よう(SITUATION[2], 覆い被さる.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+     past(EVENT[6]) ∧ 押し寄せる.0_て_き_まし_た(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = SITUATION[2])
+
+# ::id 102_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 身 の 危険 を 感じ 、 裏山 に 避難 し まし た 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *speaker* ∧
+  身(ENTITY[3]) ∧
+   の_危険(ENTITY[3], ENTITY[2]) ∧
+    裏山(ENTITY[5]) ∧
+     past(EVENT[6]) ∧
+      感じる.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧ 避難する.0_まし_た(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5])
+
+# ::id 103_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 午後 ５ 時 ごろ に は 引き波 によって 、 再び 岸壁近く の 海底 が 姿 を 現し まし た 。
+∃ EVENT[6] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ (CD_５_時(ENTITY[1]), 午後(ENTITY[1]) ∧ ごろ(ENTITY[1])) ∧
+  引き波(ENTITY[2]) ∧
+   岸壁近く(ENTITY[4]) ∧
+    の_海底(ENTITY[4], ENTITY[3]) ∧
+     姿(ENTITY[5]) ∧
+      ADV_再び(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        現す.0_まし_た(EVENT[6], ENTITY[3], ENTITY[5]) ∧ によって(EVENT[6]) = ENTITY[2] ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 104_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 沖 に ある 岩礁 も 見え まし た 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 沖(ENTITY[3]) ∧
+  有る.0(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 岩礁(ENTITY[1]) ∧
+   past(EVENT[5]) ∧ 見える.0_まし_た(EVENT[5], ENTITY[1]))
+
+# ::id 105_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 裏山 の 民家 に 、 １２、１３ 人 の 近所 の 人たち が 身 を 寄せ 、 一夜 を 過ごし まし た 。
+∃ EVENT[7] EVENT[9] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[8] ENTITY[3] ENTITY[1] (
+ 裏山(ENTITY[2]) ∧
+  の_民家(ENTITY[2], ENTITY[1]) ∧
+   CD_１２、１３_人(ENTITY[4]) ∧
+    近所(ENTITY[5]) ∧
+     の_人たち(ENTITY[5], ENTITY[3]) ∧ の__人たち(ENTITY[4], ENTITY[3]) ∧
+      身(ENTITY[6]) ∧
+       一夜(ENTITY[8]) ∧
+        past(EVENT[9]) ∧
+         寄せる.0(EVENT[7], ENTITY[3], ENTITY[6]) ∧
+          過ごす.0_まし_た(EVENT[9], ENTITY[3], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[1])
+
+# ::id 106_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 伊里前小 に 通う 児童 の 親 は 、 わが 子 に 連絡 が 取れ ず 、 気 が 気 で ない 様子 でし た 。
+∃ SITUATION[8] EVENT[12] ENTITY[6] ENTITY[5] ENTITY[9] EVENT[4] ENTITY[2] ENTITY[1] (
+ 通う.0(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = FAC[伊里前小] ∧ 児童(ENTITY[2]) ∧
+  の_親(ENTITY[2], ENTITY[1]) ∧
+   子(ENTITY[5]) ∧
+    連絡(ENTITY[6]) ∧
+     気(ENTITY[9]) ∧
+      様子(SITUATION[8], ¬ ∃ EVENT[11] ENTITY[10] (気(ENTITY[10]) ∧ で(EVENT[11], ENTITY[9], ENTITY[10]))) ∧
+       past(EVENT[12]) ∧
+        CONJ_te(¬ ∃ EVENT[7] (取る.0(EVENT[7], ENTITY[1], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[5]),
+         でし_た(EVENT[12], ENTITY[1], SITUATION[8])))
+
+# ::id 107_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ラジオ で 「 南三陸町 は 壊滅 」 と 流れ 、 逃れ た の は 自分たち だけ の よう な 気 に なり まし た 。
+∃ ENTITY[14] SITUATION[9] ENTITY[2] ENTITY[1] EVENT[5] EVENT[4] EVENT[16] EVENT[17] ENTITY[3] ENTITY[8] ENTITY[6] EVENT[12] ENTITY[10] (
+ 逃れる.0_た(EVENT[12], ENTITY[10]) ∧ の(ENTITY[10]) ∧
+  past(EVENT[12]) ∧
+   ENTITY[1] = *speaker* ∧
+    ENTITY[2] = *pro*{ENTITY[1]} ∧
+     ラジオ(ENTITY[3]) ∧
+      ENTITY[14] = 自分たち{ENTITY[8], ENTITY[6], ENTITY[1], ENTITY[3]} ∧
+       FACT(SITUATION[9], だけ ENTITY[13] (ENTITY[13] = ENTITY[14], ∃ EVENT[15] xxx(EVENT[15], ENTITY[10], ENTITY[13]))) ∧
+        の_よう(SITUATION[9], ENTITY[8]) ∧
+         な(EVENT[16], ENTITY[6], ENTITY[8]) ∧ 気(ENTITY[6]) ∧
+          past(EVENT[17]) ∧
+           流れる.0(EVENT[4], ENTITY[2], する.0(EVENT[5], GPE[南三陸町])) ∧ で(EVENT[4]) = ENTITY[3] ∧
+            成る.0_まし_た(EVENT[17], ENTITY[1], ENTITY[6]))
+
+# ::id 108_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 翌日 、 若手 ２ 人 と 徒歩 で 避難所 の 歌津中 を 目指し まし た 。
+∃ ENTITY[1] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *speaker* ∧
+  翌日(TIME[2]) ∧
+   (CD_２_人(ENTITY[3]), 若手(ENTITY[3])) ∧
+    徒歩(ENTITY[4]) ∧
+     避難所(ENTITY[5]) ∧
+      の_xxx(ENTITY[5], FAC[歌津中]) ∧
+       past(EVENT[6]) ∧
+        目指す.0_まし_た(EVENT[6], ENTITY[1], FAC[歌津中]) ∧ で(EVENT[6]) = ENTITY[4] ∧
+         と(EVENT[6]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[6]), TIME[2]))
+
+# ::id 109_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 歌津 の 中心部 は がれき で 覆わ れ 、 橋 の 上 に 船 が 乗っ て い まし た 。
+∃ EVENT[3] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[1] (
+ の_中心部(NORP[歌津], ENTITY[1]) ∧
+  がれき(ENTITY[2]) ∧
+   橋(ENTITY[5]) ∧
+    の_上(ENTITY[5], ENTITY[4]) ∧
+     船(ENTITY[6]) ∧
+      past(EVENT[7]) ∧
+       覆う.0(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2] ∧
+        乗る.0_て_い_まし_た(EVENT[7], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[4])
+
+# ::id 110_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＪＲ気仙沼線 の 線路 を 進み まし た が 、 土台 が 流さ れ 、 線路 が 宙づり の 箇所 も あり まし た 。
+∃ SITUATION[5] ENTITY[1] EVENT[3] EVENT[7] EVENT[10] EVENT[11] ENTITY[2] ENTITY[6] ENTITY[9] ENTITY[8] ENTITY[4] (
+ ENTITY[1] = *speaker* ∧
+  の_線路(LOC[ＪＲ気仙沼線], ENTITY[2]) ∧
+   土台(ENTITY[6]) ∧
+    線路(ENTITY[8]) ∧
+     宙づり(ENTITY[9]) ∧
+      FACT(SITUATION[5], 流す.0(EVENT[7], _, ENTITY[6]) ∧ xxx(EVENT[10], ENTITY[8], ENTITY[9])) ∧
+       の_箇所(SITUATION[5], ENTITY[4]) ∧
+        past(EVENT[3]) ∧
+         past(EVENT[11]) ∧ CONJ_が(進む.0_まし_た(EVENT[3], ENTITY[1], ENTITY[2]), 有る.0_まし_た(EVENT[11], ENTITY[4])))
+
+# ::id 111_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 歌津中 で は 、 近所 の 児童 の 無事 を 確かめ まし た 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  近所(ENTITY[4]) ∧
+   の_児童(ENTITY[4], ENTITY[3]) ∧
+    の_無事(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[5]) ∧ 確かめる.0_まし_た(EVENT[5], ENTITY[1], ENTITY[2]) ∧ で(EVENT[5]) = FAC[歌津中])
+
+# ::id 112_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 発生当日 、 父 は 気仙沼市 、 母 と 弟 は 栗原市 に 出掛け て い まし た 。
+∃ EVENT[3] EVENT[7] TIME[1] ENTITY[2] ENTITY[5] ENTITY[6] GROUP[4] (
+ 父(ENTITY[2]) ∧
+  母(ENTITY[5]) ∧
+   弟(ENTITY[6]) ∧
+    CONJ_と(is_element_of(ENTITY[5], GROUP[4]), is_element_of(ENTITY[6], GROUP[4])) ∧
+     発生当日(TIME[1]) ∧
+      past(EVENT[7]) ∧
+       xxx(EVENT[3], ENTITY[2]) ∧ LOC(EVENT[3]) = LOC[気仙沼市] ∧
+        出かける.0_て_い_まし_た(EVENT[7], GROUP[4]) ∧ に(EVENT[7]) = LOC[栗原市] ∧ is_contained_in(時間(EVENT[7]), TIME[1]))
+
+# ::id 113_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 無事 、 再会 でき まし た 。
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *speaker* ∧ ADV_無事(EVENT[2]) ∧ past(EVENT[2]) ∧ 再会できる.0_まし_た(EVENT[2], ENTITY[1]))
+
+# ::id 114_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ◎ 現場 から
+∃ EVENT[2] ENTITY[1] (現場(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ から(EVENT[2]) = ENTITY[1])
+
+# ::id 115_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ 地域防災 の 担い手 を 育成
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 地域防災(ENTITY[3]) ∧ の_担い手(ENTITY[3], ENTITY[2]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 116_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ 宮城県 南三陸町 歌津中防災主任 及川敦さん （ ５０ ） ＞
+∃ EVENT[1] (５０(PERSON[宮城県_南三陸町_歌津中防災主任_及川敦さん]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PERSON[宮城県_南三陸町_歌津中防災主任_及川敦さん])
+
+# ::id 117_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 年間 ３２ 時間 の 防災教育 に 取り組ん で い ます 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  (CD_３２_時間(ENTITY[3]), 年間(ENTITY[3])) ∧
+   の_防災教育(ENTITY[3], ENTITY[2]) ∧ 取り組む.0_で_い_ます(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 118_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 自分 の 命 を 自分 で 守る こと 、 そして 将来 、 生徒 が 社会 の 担い手 に なっ た とき 、 災害 に 対応 し て 周囲 を 助け られる 実践力 の 向上 が 目標 です 。
+∃ EVENT[22] ENTITY[21] GROUP[1] (
+ CONJ_そして(∃ ENTITY[6] ENTITY[5] ENTITY[3] EVENT[7] ENTITY[4] ENTITY[2] (
+       ENTITY[3] = *pro* ∧
+        ENTITY[5] = 自分{ENTITY[3]} ∧
+         の_命(ENTITY[5], ENTITY[4]) ∧
+          ENTITY[6] = 自分 ∧
+           THAT_こと(守る.0(EVENT[7], ENTITY[3], ENTITY[4]) ∧ で(EVENT[7]) = ENTITY[6], ENTITY[2]) ∧
+            is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[16] SITUATION[10] SITUATION[9] EVENT[15] EVENT[18] EVENT[20] ENTITY[14] ENTITY[13] ENTITY[12] TIME[11] ENTITY[17] ENTITY[19] ENTITY[8] (
+   将来(TIME[11]) ∧
+    生徒(ENTITY[12]) ∧
+     社会(ENTITY[14]) ∧
+      の_担い手(ENTITY[14], ENTITY[13]) ∧
+       とき(SITUATION[10], 成る.0_た(EVENT[15], ENTITY[12], ENTITY[13]) ∧ is_contained_in(時間(EVENT[15]), TIME[11])) ∧
+        ENTITY[16] = *pro*{ENTITY[12], ENTITY[13], ENTITY[14], ENTITY[8]} ∧
+         災害(ENTITY[17]) ∧
+          周囲(ENTITY[19]) ∧
+           実践力(SITUATION[9],
+            CONJ_te(対応する.0_て(EVENT[18], ENTITY[16]) ∧ に(EVENT[18]) = ENTITY[17] ∧
+                  時間(EVENT[18]) = SITUATION[10],
+             助ける.0_られる(EVENT[20], ENTITY[16], ENTITY[19]) ∧ 時間(EVENT[20]) = SITUATION[10])) ∧
+            の_向上(SITUATION[9], ENTITY[8]) ∧ past(EVENT[15]) ∧ is_element_of(ENTITY[8], GROUP[1]))) ∧
+  目標(ENTITY[21]) ∧ です(EVENT[22], GROUP[1], ENTITY[21]))
+
+# ::id 119_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 応急処置 や がれき撤去 の 訓練 、 地域安全マップづくり や 家族防災会議 の 発表 など 多岐 に わたり ます 。
+∃ ENTITY[1] EVENT[12] ENTITY[11] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ GROUP[4] ENTITY[3] (
+   CONJ_や(∃ ENTITY[5] (応急処置(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (がれき撤去(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    の_訓練(GROUP[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ GROUP[8] ENTITY[7] (
+    CONJ_や(∃ ENTITY[9] (地域安全マップづくり(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+     ∃ ENTITY[10] (家族防災会議(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+     の_発表(GROUP[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   多岐(ENTITY[11]) ∧
+    わたる.0_ます(EVENT[12], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[11] ∧ など(EVENT[12]) = GROUP[2])
+
+# ::id 120_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 丸 １ 日 かける 避難所運営訓練 で は 、 避難 や 炊き出し 、 自治組織 の 設立 など 全て を 生徒 に 任せ 、 自主性 を 養い ます 。
+∃ ENTITY[5] SITUATION[2] ENTITY[1] EVENT[4] EVENT[15] ENTITY[3] ENTITY[14] (
+ ENTITY[1] = *pro* ∧
+  (CD_１_日(ENTITY[3]), 丸(ENTITY[3])) ∧
+   避難所運営訓練(SITUATION[2], かける.0(EVENT[4], ENTITY[1], ENTITY[3])) ∧
+    ENTITY[5] = *speaker*{ENTITY[1], ENTITY[3]} ∧
+     自主性(ENTITY[14]) ∧
+      全 GROUP[7] ENTITY[6] (
+       (CONJ_や(∃ ENTITY[8] (避難(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+          ∃ ENTITY[9] (炊き出し(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])),
+          ∃ ENTITY[11] ENTITY[10] (自治組織(ENTITY[11]) ∧ の_設立(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7]))) ∧
+        など_て(GROUP[7], ENTITY[6])),
+       ∃ EVENT[13] ENTITY[12] (生徒(ENTITY[12]) ∧ 任せる.0(EVENT[13], ENTITY[5], ENTITY[6]) ∧ に(EVENT[13]) = ENTITY[12])) ∧
+       養う.0_ます(EVENT[15], ENTITY[1], ENTITY[14]) ∧ で(EVENT[15]) = SITUATION[2])
+
+# ::id 121_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 今 の 生徒 は 震災 の 体験者 です 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 今(ENTITY[2]) ∧
+  の_生徒(ENTITY[2], ENTITY[1]) ∧
+   震災(ENTITY[4]) ∧ の_体験者(ENTITY[4], ENTITY[3]) ∧ です(EVENT[5], ENTITY[1], ENTITY[3]))
+
+# ::id 122_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 訓練 で は 自然 に 顔つき が 変わり ます 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 訓練(ENTITY[1]) ∧
+  顔つき(ENTITY[2]) ∧ ADV_自然_に(EVENT[3]) ∧ 変わる.0_ます(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1])
+
+# ::id 123_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 今後 、 教員 、 生徒 とも 震災 を 知ら ない 世代 に なっ た 時 が 正念場 でしょ う 。
+∃ SITUATION[1] GROUP[4] TIME[2] (
+ 今後(TIME[2]) ∧
+  ∃ ENTITY[5] (教員(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+   ∃ ENTITY[6] (生徒(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+   時(SITUATION[1],
+    とも ENTITY[3] (is_element_of(ENTITY[3], GROUP[4]),
+     ∃ SITUATION[7] EVENT[10] ENTITY[8] (
+      震災(ENTITY[8]) ∧
+       世代(SITUATION[7], ¬ ∃ EVENT[9] 知る.0(EVENT[9], ENTITY[3], ENTITY[8])) ∧
+        past(EVENT[10]) ∧
+         成る.0_た(EVENT[10], ENTITY[3], SITUATION[7]) ∧ is_contained_in(時間(EVENT[10]), TIME[2])))) ∧
+    MD_う(∃ EVENT[12] ENTITY[11] (正念場(ENTITY[11]) ∧ でしょ(EVENT[12], SITUATION[1], ENTITY[11]))))
+
+# ::id 124_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt しっかり し た 防災教育 の 継続 が 重要 だ と 思い ます 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[2] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *speaker* ∧
+  しっかりする.0_た(EVENT[6], ENTITY[4]) ∧ 防災教育(ENTITY[4]) ∧
+   の_継続(ENTITY[4], ENTITY[3]) ∧ 思う.0_ます(EVENT[2], ENTITY[1], 重要_だ(EVENT[7], ENTITY[3])))
+
+# ::id 125_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ＜ 原発事故 の 教訓 を 全国 に
+∃ ENTITY[1] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  原発事故(ENTITY[3]) ∧
+   の_教訓(ENTITY[3], ENTITY[2]) ∧
+    全 ENTITY[4] (国(ENTITY[4]), ∃ EVENT[5] (xxx(EVENT[5], ENTITY[1], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4])))
+
+# ::id 126_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt ／ ＮＰＯ法人福島学グローバルネットワーク事務局長 関根文恵さん （ ３５ ） ＞
+∃ EVENT[2] ENTITY[1] (CD_３５(ENTITY[1]) ∧ namely_-PERSON-(ENTITY[1], PERSON[ＮＰＯ法人福島学グローバルネットワーク事務局長_関根文恵さん]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[ＮＰＯ法人福島学グローバルネットワーク事務局長_関根文恵さん])
+
+# ::id 127_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 東日本大震災 の 津波 と 福島第１原発事故 の 二 つ の 大災害 を 経験 し た 福島県 で は 、 従来 の 防災訓練 は 役 に 立た ず 、 多く の 犠牲 を 払い ながら たくさん の 教訓 を 得 まし た 。
+∃ ENTITY[1] EVENT[7] ENTITY[6] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[8] (
+ の_津波(EVENT[東日本大震災], ENTITY[6]) ∧
+  CONJ_と(is_element_of(ENTITY[6], GROUP[5]), of(GROUP[5], EVENT[福島第１原発事故])) ∧
+   (CD_二_つ(ENTITY[4]), の(GROUP[5], ENTITY[4])) ∧
+    の_大災害(ENTITY[4], ENTITY[3]) ∧
+     経験する.0_た(EVENT[7], LOC[福島県], ENTITY[3]) ∧
+      従来(ENTITY[9]) ∧
+       の_防災訓練(ENTITY[9], ENTITY[8]) ∧
+        past(EVENT[7]) ∧
+         ENTITY[1] = *pro* ∧
+          CONJ_te(¬ ∃ EVENT[11] ENTITY[10] (
+                     役(ENTITY[10]) ∧
+                      立つ.0(EVENT[11], ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[10] ∧
+                       で(EVENT[11]) = LOC[福島県]),
+           たくさん_の ENTITY[12] (教訓(ENTITY[12]),
+            ∃ EVENT[15] (
+             past(EVENT[15]) ∧
+              CRD_ながら(多く_の ENTITY[13] (犠牲(ENTITY[13]), ∃ EVENT[14] 払う.0(EVENT[14], ENTITY[12], ENTITY[13])),
+               得る.0_まし_た(EVENT[15], ENTITY[1], ENTITY[12]) ∧ で(EVENT[15]) = LOC[福島県])))))
+
+# ::id 128_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 住民 、 被災自治体 など と 他県 の 旅行会社 、 学校 、 企業 の 仲介役 を 担い 、 防災教育旅行 や 実践的 な 防災キャンプ など の 企画 を 提案 し て い ます 。
+∃ ENTITY[1] EVENT[14] EVENT[21] GROUP[3] ENTITY[2] GROUP[17] ENTITY[16] ENTITY[15] (
+ ENTITY[1] = *speaker* ∧
+  CONJ_と(∃ GROUP[5] ENTITY[4] (
+        ∃ ENTITY[6] (住民(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+         ∃ ENTITY[7] (被災自治体(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+         など(GROUP[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ GROUP[10] ENTITY[9] ENTITY[8] (
+    他県(ENTITY[9]) ∧
+     ∃ ENTITY[11] (旅行会社(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+      ∃ ENTITY[12] (学校(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+      ∃ ENTITY[13] (企業(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+      equals(GROUP[10], ENTITY[8]) ∧ の(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3]))) ∧
+   の_仲介役(GROUP[3], ENTITY[2]) ∧
+    CONJ_や(∃ ENTITY[18] (防災教育旅行(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[17])),
+     ∃ ATTRIB[20] ENTITY[19] (実践的_な(ATTRIB[20]) ∧ ATTRIBUTE_防災キャンプ(ATTRIB[20], ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[17]))) ∧
+     など(GROUP[17], ENTITY[16]) ∧
+      の_企画(ENTITY[16], ENTITY[15]) ∧ 担う.0(EVENT[14], ENTITY[1], ENTITY[2]) ∧ 提案する.0_て_い_ます(EVENT[21], ENTITY[1], ENTITY[15]))
+
+# ::id 129_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 昨年 は 熊本県 の 高校生 の 研修旅行 を 広野町 など で 実施 し た ほか 、 東京 で 視察旅行 に関する セミナー を 開催 し まし た 。
+∃ SITUATION[3] ENTITY[1] EVENT[7] EVENT[10] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[9] ENTITY[8] ENTITY[2] (
+ 昨年(ENTITY[2]) ∧
+  ENTITY[1] = *speaker* ∧
+   の_高校生(NORP[熊本県], ENTITY[5]) ∧
+    の_研修旅行(ENTITY[5], ENTITY[4]) ∧
+     など(GPE[広野町], ENTITY[6]) ∧
+      FACT(SITUATION[3], 実施する.0_た(EVENT[7], ENTITY[1], ENTITY[4]) ∧ で(EVENT[7]) = ENTITY[6]) ∧
+       視察旅行(ENTITY[9]) ∧
+        に関する_セミナー(ENTITY[9], ENTITY[8]) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[10]) ∧
+           開催する.0_まし_た(EVENT[10], ENTITY[1], ENTITY[8]) ∧ で(EVENT[10]) = GPE[東京] ∧
+            ほか(EVENT[10]) = SITUATION[3] ∧ 時間(EVENT[10]) = ENTITY[2])
+
+# ::id 130_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 全国 で は 大地震 が 起きる 可能性 が あり 、 原発 が 立地 する 地域 も 数多く あり ます 。
+全 ENTITY[1] (国(ENTITY[1]),
+ ∃ SITUATION[2] EVENT[4] EVENT[5] EVENT[9] EVENT[11] ENTITY[3] ENTITY[8] ENTITY[6] (
+  大地震(ENTITY[3]) ∧
+   可能性(SITUATION[2], 起きる.0(EVENT[4], ENTITY[3])) ∧
+    原発(ENTITY[8]) ∧
+     立地する.0(EVENT[9], ENTITY[8]) ∧ LOC(EVENT[9]) = ENTITY[6] ∧ 地域(ENTITY[6]) ∧
+      有る.0(EVENT[5], SITUATION[2]) ∧
+       数多く ENTITY[10] (ENTITY[10] = ENTITY[6], 有る.0_ます(EVENT[11], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[1])))
+
+# ::id 131_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt どう 避難 する の か 、 放射線 に どう 対応 する の か 。
+QUEST(∃ ARB[1] EVENT[3] ? ENTITY[2] (ARB[1] = *arb* ∧ ADV(ENTITY[2], EVENT[3]) ∧ 避難する.0_の(EVENT[3], ARB[1]))) ∧
+ QUEST(∃ ARB[5] EVENT[8] ENTITY[6] ? ENTITY[7] (
+       ARB[5] = *arb* ∧
+        放射線(ENTITY[6]) ∧
+         ADV(ENTITY[7], EVENT[8]) ∧ 対応する.0_の(EVENT[8], ARB[5]) ∧ に(EVENT[8]) = ENTITY[6]))
+
+# ::id 132_newswire_00045_K201406110A0T30XX00001;NJ
+# ::snt 福島 の 教訓 を 伝え 続け て いき たい です 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *speaker* ∧ の_教訓(NORP[福島], ENTITY[2]) ∧ 伝える.0_続け_て_いき_たい_です(EVENT[3], ENTITY[1], ENTITY[2]))

@@ -1,0 +1,827 @@
+# ::id 1_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 東日本大震災
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-東日本大震災 / ENTITY
+             :name ( n-2 / name
+                    :op1 "東日本大震災")))
+
+# ::id 2_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ／ 宮城沿岸小中・河北新報社アンケート
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-宮城沿岸小中.河北新報社アンケート / ENTITY
+             :name ( n-2 / name
+                    :op1 "宮城沿岸小中.河北新報社アンケート")))
+
+# ::id 3_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ／ 「 児童 に 震災影響 」 ７ 割
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-1 / CD_７_割
+             :MOD ( mod-4 / 震災影響
+                    :に ( ENTITY-2 / 児童))))
+
+# ::id 4_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 家計 の 苦しさ 突出
+( EVENT-3 / 突出
+      :ARG0 ( ENTITY-1 / 苦しさ
+             :の ( ENTITY-2 / 家計)))
+
+# ::id 5_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 東日本大震災 で 被災 し た 宮城県沿岸部 の 小中学校 の 約７ 割 が 、 自校 の 児童・生徒 に 震災 の 影響 と み られる 問題 が 現在 も ある と 受け止め て いる こと が 、 河北新報社 が 各校長 に 実施 し た アンケート で 分かっ た 。
+( EVENT-21 / 分かっ_た
+      :ARG0 ( SITUATION-1 / こと
+             :THAT ( EVENT-7 / 受け止め_て_いる
+                    :ARG0 ( ENTITY-2 / ENTITY
+                           :の ( ENTITY-6 / 小中学校)
+                           :の ( ENTITY-5 / 宮城県沿岸部)
+                           :MOD ( mod-22 / CD_約７_割
+                                  :ARG0-of ( EVENT-4 / 被災する.0_た
+                                         :で ( ENTITY-東日本大震災 / ENTITY
+                                                :name ( n-26 / name
+                                                       :op1 "東日本大震災"))
+                                         :MOD ( mod-23 / past))))
+                    :THAT ( EVENT-16 / ある
+                           :ARG0 ( ENTITY-10 / 問題
+                                  :ARG1-of ( EVENT-14 / み
+                                         :と ( ENTITY-12 / 影響
+                                                :の ( ENTITY-13 / 震災))))
+                           :TMP ( ENTITY-15 / 現在)
+                           :に ( ENTITY-8 / 児童.生徒
+                                  :の ( ENTITY-9 / 自校)))))
+      :で ( ENTITY-17 / アンケート
+             :ARG1-of ( EVENT-20 / 実施する.0_た
+                    :ARG0 ( ENTITY-河北新報社 / ENTITY
+                           :name ( n-27 / name
+                                  :op1 "河北新報社"))
+                    :に ( ENTITY-19 / 各校長)
+                    :MOD ( mod-24 / past)))
+      :MOD ( mod-25 / past))
+
+# ::id 6_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 問題 は 苦しい 家計 や 精神面 の 不安定 、 学力・体力 の 低下 など 多岐 に わたっ て いる 。
+( EVENT-11 / わたっ_て_いる
+      :ARG0 ( ENTITY-1 / 問題)
+      :に ( ENTITY-2 / 多岐
+             :など ( GROUP-3 / AND
+                    :op1 ( CONJ-13 / CONJ_や
+                           :op1 ( GROUP-4 / AND
+                                  :op1 ( ATTRIB-6 / 苦しい)
+                                  :op2 ( ENTITY-5 / 家計
+                                         :ATTRIBUTE ATTRIB-6)
+                                  :op3 ENTITY-16)
+                           :op2 ( GROUP-15 / AND
+                                  :op1 ( ENTITY-8 / 精神面)
+                                  :op2 ( ENTITY-7 / 不安定
+                                         :の ENTITY-8)
+                                  :op3 ENTITY-17))
+                    :op2 GROUP-4
+                    :MOD ( mod-14 / AND
+                           :op1 ( ENTITY-10 / 学力.体力)
+                           :op2 ( ENTITY-9 / 低下
+                                  :の ENTITY-10)
+                           :op3 ENTITY-18))))
+
+# ::id 7_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 被災地全体 の 小中学生 の 現状 に は ８ 割 以上 の 校長 が 「 事態 は 深刻 」 と 危機意識 を 持ち 、 多く が 問題 の 長期化 を 懸念 し て いる 。
+( CONJ-15 / AND
+      :op1 ( EVENT-9 / 持ち
+             :ARG0 ( ENTITY-4 / 校長
+                    :の ( ENTITY-5 / CD_８_割
+                           :MOD ( mod-14 / 以上)))
+             :ARG1 ( ENTITY-6 / 危機意識
+                    :THAT ( EVENT-8 / 深刻
+                           :ARG0 ( ENTITY-7 / 事態))))
+      :op2 ( EVENT-13 / 懸念する.0_て_いる
+             :ARG0 ENTITY-10
+             :ARG1 ( ENTITY-11 / 長期化
+                    :の ( ENTITY-12 / 問題))
+             :に ( ENTITY-1 / 現状
+                    :の ( ENTITY-2 / 小中学生
+                           :の ( ENTITY-3 / 被災地全体)))))
+
+# ::id 8_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 児童・生徒 に 震災 の 影響 と 思わ れる 問題 が 「 ある 」 と 答え た の は ６９．２ ％ 。
+( EVENT-12 / EVENT
+      :ARG0 ( SITUATION-1 / の
+             :THAT ( EVENT-3 / 答え_た
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :THAT ( EVENT-10 / ある
+                           :ARG0 ( ENTITY-4 / 問題
+                                  :ARG1-of ( EVENT-9 / 思わ
+                                         :と ( ENTITY-7 / 影響
+                                                :の ( ENTITY-8 / 震災))
+                                         :に ( ENTITY-6 / 児童.生徒))))
+                    :MOD ( mod-13 / past)))
+      :ARG1 ( ENTITY-11 / CD_６９ ． ２_ ％))
+
+# ::id 9_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 内訳 は 小学校 ６８．４ 、 中学校 ７０．７ ％ だっ た 。
+( EVENT-5 / だっ_た
+      :ARG0 ( ENTITY-1 / 内訳)
+      :ARG1 ( GROUP-2 / AND (
+                    :op1 ( ENTITY-3 小学校) ( ENTITY-3 CD_６８ ． ４))
+             :op2 ENTITY-8
+             :MOD ( mod-6 / AND (
+                           :op1 ( ENTITY-4 中学校) ( ENTITY-4 CD_７０ ． ７_ ％))
+                    :op2 ENTITY-9))
+      :MOD ( mod-7 / past))
+
+# ::id 10_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 問題 が 「 ない 」 は ２３．６ ％ だっ た 。
+( EVENT-5 / だっ_た
+      :ARG0 ( EVENT-3 / ない
+             :ARG0 ( ENTITY-2 / 問題))
+      :ARG1 ( ENTITY-4 / CD_２３ ． ６_ ％)
+      :MOD ( mod-6 / past))
+
+# ::id 11_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 震災 の 影響 と 思わ れる 具体的 な 問題 は グラフ の 通り 。
+( EVENT-9 / EVENT
+      :ARG0 ( ENTITY-1 / 問題
+             :ATTRIBUTE ( ATTRIB-6 / 具体的_な)
+             :ARG1-of ( EVENT-5 / 思わ
+                    :と ( ENTITY-3 / 影響
+                           :の ( ENTITY-4 / 震災))))
+      :ARG1 ( ENTITY-7 / 通り
+             :の ( ENTITY-8 / グラフ)))
+
+# ::id 12_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 複数回答 の 結果 、 「 家計的 に 苦しい 児童・生徒 が 増え て いる 」 が 小中学校 とも に 最多 だっ た 。
+( EVENT-12 / だっ_た
+      :ARG0 ( EVENT-8 / 増え_て_いる
+             :ARG0 ( ENTITY-4 / 児童.生徒
+                    :ARG0-of ( EVENT-7 / 苦しい
+                           :に ( ENTITY-6 / 家計的))))
+      :ARG1 ( ENTITY-11 / 最多)
+      :に ( ENTITY-9 / ENTITY
+             :OF ( ENTITY-10 / 小中学校))
+      :ADV ( ENTITY-1 / 結果
+             :の ( ENTITY-2 / 複数回答))
+      :MOD ( mod-13 / past))
+
+# ::id 13_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 震災 による 保護者 の 死亡 、 失業 など で 経済的 に 厳しい 生活 を 強い られる 児童・生徒 が 依然 と し て 多数 いる 実態 が うかがえる 。
+( EVENT-18 / うかがえる
+      :ARG0 ( SITUATION-1 / 実態
+             :THAT ( CONJ-20 / CONJ_te
+                    :op1 ( EVENT-15 / し_て
+                           :ARG0 ( ENTITY-2 / 児童.生徒
+                                  :ARG2-of ( EVENT-12 / 強い
+                                         :ARG1 ( ENTITY-10 / 生活
+                                                :ATTRIBUTE ( ATTRIB-11 / 厳しい))
+                                         :で ( ENTITY-4 / ENTITY
+                                                :など ( GROUP-5 / AND
+                                                       :op3 ( ENTITY-6 / 死亡
+                                                              :の ( ENTITY-7 / 保護者
+                                                                     :による ( ENTITY-8 / 震災)))
+                                                       :op4 ENTITY-23
+                                                       :op1 ENTITY-8
+                                                       :op2 ENTITY-7
+                                                       :MOD ( mod-21 / AND
+                                                              :op1 ( ENTITY-9 / 失業)
+                                                              :op2 ENTITY-24)))
+                                         :MOD ( mod-22 / 経済的_に)))
+                           :と ( ATTRIB-14 / 依然)) (
+                           :op2 ( ENTITY-16 ( ENTITY
+                                         :OF ENTITY-2)) ( EVENT-17 ( いる
+                                         :ARG0 ENTITY-16))))))
+
+# ::id 14_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 中学校 は ７７．４ ％ と 特に 高く 、 教育費 が かかる 年代 で 家計 の 問題 が 深刻 に なっ て いる と み られる 。
+( EVENT-16 / み
+      :ARG1 ( SITUATION-1 / と
+             :THAT ( CONJ-22 / AND
+                    :op1 ( EVENT-4 / 高く
+                           :ARG0 ( ENTITY-2 / 中学校)
+                           :と ( ENTITY-3 / CD_７７ ． ４_ ％)
+                           :MOD ( mod-20 / 特に))
+                    :op2 ( CONJ-19 / CONJ_te
+                           :op1 ( EVENT-11 / で
+                                  :ARG0 ( PICK-17 / or
+                                         :op1 ENTITY-3
+                                         :op2 ENTITY-2)
+                                  :ARG1 ( ENTITY-7 / 年代
+                                         :TMP-of ( EVENT-10 / かかる
+                                                :ARG0 ( ENTITY-9 / 教育費))))
+                           :op2 ( EVENT-14 / なっ_て_いる
+                                  :ARG0 ( ENTITY-12 / 問題
+                                         :の ( ENTITY-13 / 家計))
+                                  :MOD ( mod-21 / 深刻_に))))))
+
+# ::id 15_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt プレハブ の 仮設住宅暮らし など 住宅事情 の 劣悪さ を 示す 回答 も 多く 、 「 家庭学習 の 場 を 確保 でき ない 」 が 約５ 割 、 「 家庭内 の 問題 で 精神的ストレス を 抱える 」 が 約４ 割 を 占め た 。
+( CONJ-29 / AND
+      :op1 ( EVENT-8 / 多く
+             :ARG0 ( ENTITY-1 / 回答
+                    :ARG0-of ( EVENT-7 / 示す
+                           :ARG1 ( ENTITY-3 / 劣悪さ
+                                  :の ( ENTITY-6 / 住宅事情)
+                                  :など ( ENTITY-4 / 仮設住宅暮らし
+                                         :の ( ENTITY-5 / プレハブ))))))
+      :op2 ( EVENT-15 / EVENT
+             :ARG0 ( EVENT-13 / 確保する.0
+                    :ARG0 ( PICK-24 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-3
+                           :op3 ENTITY-4
+                           :op4 ENTITY-6
+                           :op5 ENTITY-5)
+                    :ARG1 ( ENTITY-11 / 場
+                           :の ( ENTITY-12 / 家庭学習))
+                    :domain-of ( NEG-26 / NEG))
+             :ARG1 ( ENTITY-14 / CD_約５_割))
+      :op3 ( EVENT-23 / 占め_た
+             :ARG0 ( EVENT-21 / 抱える
+                    :ARG0 ( PICK-27 / or
+                           :op1 ENTITY-14
+                           :op2 ENTITY-1
+                           :op3 ENTITY-3
+                           :op4 ENTITY-4
+                           :op5 ENTITY-6
+                           :op6 ENTITY-5)
+                    :ARG1 ( ENTITY-20 / 精神的ストレス)
+                    :で ( ENTITY-18 / 問題
+                           :の ( ENTITY-19 / 家庭内)))
+             :ARG1 ( ENTITY-22 / CD_約４_割)
+             :MOD ( mod-28 / past)))
+
+# ::id 16_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 「 精神面 で 不安定 」 「 体力 の 低下 」 「 学力 の 低下 」 を 挙げる 回答 が ２ 割 から ４ 割 程度 あり 、 震災 の 影響 が 児童・生徒 の 成長 、 発達 を 阻害 する 要因 に なりかね ない 一面 も 浮かび上がっ た 。
+( CONJ-38 / AND
+      :op1 ( EVENT-13 / あり
+             :ARG0 ( ENTITY-1 / 回答
+                    :ARG0-of ( EVENT-10 / 挙げる
+                           :ARG1 ( GROUP-3 / AND
+                                  :op1 ( ENTITY-5 / 精神面)
+                                  :op2 ( ENTITY-4 / 不安定
+                                         :で ENTITY-5)
+                                  :op3 ENTITY-33
+                                  :MOD ( mod-28 / AND
+                                         :op1 ( ENTITY-7 / 体力)
+                                         :op2 ( ENTITY-6 / 低下
+                                                :の ENTITY-7)
+                                         :op3 ENTITY-34)
+                                  :MOD ( mod-29 / AND
+                                         :op1 ( ENTITY-9 / 学力)
+                                         :op2 ( ENTITY-8 / 低下
+                                                :の ENTITY-9)
+                                         :op3 ENTITY-35))))
+             :MSR ( DEGREE-11 / CD_４_割
+                    :MOD ( mod-30 / 程度
+                           :から ( ENTITY-12 / CD_２_割))))
+      :op2 ( EVENT-25 / 浮かび上がっ_た
+             :ARG0 ( SITUATION-14 / 一面
+                    :THAT ( EVENT-24 / なりかね
+                           :ARG0 ( ENTITY-15 / 影響
+                                  :の ( ENTITY-16 / 震災))
+                           :に ( ENTITY-17 / 要因
+                                  :ARG0-of ( EVENT-23 / 阻害する.0
+                                         :ARG1 ( GROUP-19 / AND
+                                                :op1 ( ENTITY-21 / 児童.生徒)
+                                                :op2 ( ENTITY-20 / 成長
+                                                       :の ENTITY-21)
+                                                :op3 ENTITY-36
+                                                :MOD ( mod-31 / AND
+                                                       :op1 ( ENTITY-22 / 発達)
+                                                       :op2 ENTITY-37))))
+                           :domain-of ( NEG-27 / NEG)))
+             :MOD ( mod-32 / past)))
+
+# ::id 17_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt いまだ に 震災前 の 日常 を 取り戻せ ない で いる 被災地 の 小中学生全体 について 尋ね た 設問 で は 、 「 事態 は 深刻 で 、 問題 の 長期化 が 予想 さ れる 」 が ５８．２ ％ で 最多 。
+( EVENT-19 / EVENT
+      :ARG0 ( CONJ-22 / CONJ_te
+             :op1 ( EVENT-13 / 深刻_で
+                    :ARG0 ( ENTITY-12 / 事態))
+             :op2 ( EVENT-16 / 予想する.0
+                    :ARG1 ( ENTITY-14 / 長期化
+                           :の ( ENTITY-15 / 問題))))
+      :ARG1 ( ENTITY-18 / 最多)
+      :で ( ENTITY-17 / CD_５８ ． ２_ ％)
+      :で ( ENTITY-1 / 設問
+             :ARG0-of ( EVENT-10 / 尋ね_た
+                    :について ( ENTITY-3 / 小中学生全体
+                           :の ( ENTITY-9 / 被災地)
+                           :ARG0-of ( EVENT-8 / 取り戻せ_で_いる
+                                  :ARG1 ( ENTITY-6 / 日常
+                                         :の ( ENTITY-7 / 震災前))
+                                  :に ( ATTRIB-5 / いまだ)
+                                  :domain-of ( NEG-20 / NEG)))
+                    :MOD ( mod-23 / past))))
+
+# ::id 18_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 「 事態 は 深刻 だ が 解決 に 向かっ て いる 」 が ２３．１ ％ で 続い た 。
+( EVENT-8 / 続い_た
+      :ARG0 ( CONJ-10 / CONJ_が
+             :op1 ( EVENT-3 / 深刻_だ
+                    :ARG0 ( ENTITY-2 / 事態))
+             :op2 ( EVENT-6 / 向かっ_て_いる
+                    :ARG0 ENTITY-2
+                    :に ( ENTITY-5 / 解決)))
+      :で ( ENTITY-7 / CD_２３ ． １_ ％)
+      :MOD ( mod-11 / past))
+
+# ::id 19_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 双方 を 合わせる と 、 「 事態 は 深刻 」 として 現状 を 憂慮 する 回答 が ８１．３ ％ に 上っ た 。
+( CND-13 / と (
+             :op1 ( ENTITY-1 pro
+                    :pick0) ( EVENT-3 ( 合わせる
+                           :ARG0 ENTITY-1
+                           :ARG1 ENTITY-2)))
+      :op2 ( EVENT-11 / 上っ_た
+             :ARG0 ( ENTITY-4 / 回答
+                    :ARG0-of ( EVENT-7 / 憂慮する.0
+                           :ARG1 ( ENTITY-6 / 現状)
+                           :THAT ( EVENT-9 / 深刻
+                                  :ARG0 ( ENTITY-8 / 事態))))
+             :に ( ENTITY-10 / CD_８１ ． ３_ ％)
+             :MOD ( mod-14 / past)))
+
+# ::id 20_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 被災児童・生徒 に対する 行政 や 地域 、 民間 から の 支援 が 十分 か どう か について は 、 「 十分 」 「 ある 程度 十分 」 が ４５．７ ％ 、 「 やや 不十分 」 「 全く 不十分 」 が ４１．４ ％ で 意見 が 分かれ た 。
+( CONJ-41 / AND
+      :op1 ( EVENT-16 / EVENT
+             :ARG0 ( CONJ-42 / AND
+                    :op1 ( EVENT-11 / 十分
+                           :ARG0 ( ENTITY-10 / pro
+                                  :pick0))
+                    :op2 ( EVENT-14 / 十分
+                           :ARG0 ( ENTITY-12 / pro
+                                  :pick0)
+                           :MSR ( DEGREE-13 / 程度)))
+             :ARG1 ( ENTITY-15 / CD_４５ ． ７_ ％))
+      :op2 ( EVENT-28 / 分かれ_た
+             :ARG0 ( ENTITY-27 / 意見)
+             :で ( EVENT-26 / EVENT
+                    :ARG0 ( CONJ-43 / AND
+                           :op1 ( EVENT-20 / 不十分
+                                  :ARG0 ENTITY-15
+                                  :MOD ( mod-33 / やや))
+                           :op2 ( EVENT-23 / 不十分
+                                  :ARG0 ENTITY-15
+                                  :MOD ( mod-34 / 全く)))
+                    :ARG1 ( ENTITY-25 / CD_４１ ． ４_ ％))
+             :について ( EVENT-8 / 十分
+                    :ARG0 ( ENTITY-3 / 支援
+                           :から_の ( CONJ-31 / CONJ_や
+                                  :op1 ( GROUP-4 / AND
+                                         :op1 ( ENTITY-5 / 行政)
+                                         :op2 ENTITY-38)
+                                  :op2 ( GROUP-36 / AND
+                                         :op1 ( ENTITY-6 / 地域)
+                                         :op2 ENTITY-39)
+                                  :op3 ( GROUP-37 / AND
+                                         :op1 ( ENTITY-7 / 民間)
+                                         :op2 ENTITY-40)))
+                    :に対する ( ENTITY-2 / 被災児童.生徒)
+                    :domain-of ( QUEST-32 / QUEST))
+             :MOD ( mod-35 / past)))
+
+# ::id 21_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 不十分 な 分野 （ 複数回答 ） は 「 経済的支援 」 「 保護者 へ の 住宅支援 」 「 就労支援 」 が 多数 を 占め 、 校長 の 多く が 、 一刻 も 早い 生活基盤 の 安定 を 願っ て いる こと が うかがえる 。
+( CONJ-21 / AND
+      :op1 ( EVENT-7 / 占め
+             :ARG0 ( GROUP-3 / AND
+                    :op1 ( ENTITY-経済的支援 / ENTITY
+                           :name ( n-17 / name
+                                  :op1 "経済的支援"))
+                    :op2 ( GROUP-3 / AND
+                           :op1 ( ENTITY-5 / 保護者)
+                           :op2 ( ENTITY-4 / 住宅支援
+                                  :へ_の ENTITY-5)
+                           :op3 ENTITY-20)
+                    :op3 ( ENTITY-就労支援 / ENTITY
+                           :name ( n-18 / name
+                                  :op1 "就労支援")))
+             :ARG1 ENTITY-6
+             :TPC ( ENTITY-1 / 分野
+                    :ATTRIBUTE ( ATTRIB-2 / 不十分_な)
+                    :NAMELY ( ENTITY-複数回答 / ENTITY
+                           :name ( n-19 / name
+                                  :op1 "複数回答"))))
+      :op2 ( EVENT-16 / うかがえる
+             :ARG0 ( SITUATION-8 / こと (
+                           :THAT ( ENTITY-9 ( ENTITY
+                                         :の ( ENTITY-10 / 校長))) ( EVENT-15 ( 願っ_て_いる
+                                         :ARG0 ENTITY-9
+                                         :ARG1 ( ENTITY-11 / 安定
+                                                :の ( ENTITY-12 / 生活基盤)
+                                                :THAT ( EVENT-14 / 早い
+                                                       :ARG0 ( ENTITY-13 / 一刻)))))))))
+
+# ::id 22_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ◎ 心 折れ ぬ 配慮 を
+( EVENT-4 / EVENT
+      :ARG1 ( SITUATION-1 / 配慮
+             :THAT ( EVENT-3 / 折れ
+                    :ARG0 ( ENTITY-2 / 心)
+                    :domain-of ( NEG-6 / NEG))))
+
+# ::id 23_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ／ 宮城県子ども総合センター 本間博彰所長 （ 医学博士 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-宮城県子ども総合センター_本間博彰所長 / ENTITY
+             :name ( n-2 / name
+                    :op1 "宮城県子ども総合センター_本間博彰所長")
+             :NAMELY ( ENTITY-医学博士 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "医学博士"))))
+
+# ::id 24_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 被災地 の 学校訪問 で 児童・生徒 の 問題 が 表面化 し て き た と 感じ て おり 、 それ を 裏付ける 調査結果 だ 。
+( CONJ-16 / AND
+      :op1 ( EVENT-5 / 感じ_て_おり
+             :ARG0 ENTITY-1
+             :で ( ENTITY-3 / 学校訪問
+                    :の ( ENTITY-4 / 被災地))
+             :THAT ( EVENT-8 / 表面化する.0_て_き_た
+                    :ARG0 ( ENTITY-6 / 問題
+                           :の ( ENTITY-7 / 児童.生徒))
+                    :MOD ( mod-15 / past)))
+      :op2 ( EVENT-13 / だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-9 / 調査結果
+                    :ARG0-of ( EVENT-12 / 裏付ける
+                           :ARG1 ( PICK-14 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-3
+                                  :op3 ENTITY-6
+                                  :op4 ENTITY-7
+                                  :op5 ENTITY-4)))))
+
+# ::id 25_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 阪神大震災 で も 心 の 問題 は ３ 年 目 に 多く なっ た 。
+( EVENT-4 / 多く_なっ_た
+      :ARG0 ( ENTITY-1 / 問題
+             :の ( ENTITY-2 / 心))
+      :に ( ENTITY-3 / CD_３_年
+             :MOD ( mod-5 / 目))
+      :で ( ENTITY-阪神大震災 / ENTITY
+             :name ( n-7 / name
+                    :op1 "阪神大震災"))
+      :MOD ( mod-6 / past))
+
+# ::id 26_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 家族機能 の 低下 など で 心 の 問題 を 抱える 子どもたち が 増え て き た と いえる だろう 。
+( EVENT-2 / いえる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :THAT ( EVENT-11 / 増え_て_き_た
+             :ARG0 ( ENTITY-6 / 子どもたち
+                    :ARG0-of ( EVENT-10 / 抱える
+                           :ARG1 ( ENTITY-8 / 問題
+                                  :の ( ENTITY-9 / 心))))
+             :で ( ENTITY-3 / ENTITY
+                    :など ( ENTITY-4 / 低下
+                           :の ( ENTITY-5 / 家族機能)))
+             :MOD ( mod-13 / past))
+      :domain-of ( MD-12 / MD_だろう))
+
+# ::id 27_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 調査結果 に ある よう に 、 心 の 問題 が 不登校 や 集中力低下 など いろいろ な 面 に 表れ て いる 。
+( EVENT-12 / 表れ_て_いる
+      :ARG0 ( ENTITY-5 / 問題
+             :の ( ENTITY-6 / 心))
+      :に ( ENTITY-7 / 面
+             :ATTRIBUTE ( ATTRIB-11 / いろいろ_な)
+             :など ( CONJ-13 / CONJ_や
+                    :op1 ( GROUP-8 / AND
+                           :op1 ( ENTITY-9 / 不登校)
+                           :op2 ENTITY-15)
+                    :op2 ( GROUP-14 / AND
+                           :op1 ( ENTITY-10 / 集中力低下)
+                           :op2 ENTITY-16)))
+      :に ( SITUATION-1 / よう
+             :THAT ( EVENT-4 / ある
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :に ( ENTITY-3 / 調査結果))))
+
+# ::id 28_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 最近 よく 、 ぼーっと し て いる 子 が 増え た と 聞く 。
+( EVENT-3 / 聞く
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :TMP ( TIME-2 / 最近)
+      :THAT ( EVENT-7 / 増え_た
+             :ARG0 ( ENTITY-4 / 子
+                    :ARG0-of ( EVENT-6 / ぼーっとする.0_て_いる))
+             :MOD ( mod-9 / past))
+      :MOD ( mod-10 / よく))
+
+# ::id 29_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 心的外傷後ストレス障害 （ ＰＴＳＤ ） の 典型例 だ 。
+( EVENT-3 / だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 典型例
+             :の ( ENTITY-心的外傷後ストレス障害 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "心的外傷後ストレス障害")
+                    :NAMELY ( ENTITY-ＰＴＳＤ / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "ＰＴＳＤ")))))
+
+# ::id 30_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 嫌 な 記憶 から 逃げ 、 自分 を 守る ため の 症状 と 理解 し て やる こと が 大事 だ 。
+( EVENT-14 / 大事_だ
+      :ARG0 ( SITUATION-1 / こと
+             :THAT ( EVENT-3 / 理解する.0_て_やる
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :THAT ( EVENT-13 / EVENT
+                           :ARG0 ( ENTITY-4 / ENTITY
+                                  :namely ENTITY-2)
+                           :ARG1 ( ENTITY-5 / 症状
+                                  :の ( SITUATION-6 / ため
+                                         :THAT ( EVENT-12 / 守る
+                                                :ARG0 ( ENTITY-7 / ENTITY
+                                                       :namely ( PICK-15 / or
+                                                              :op1 ENTITY-5
+                                                              :op2 ENTITY-4
+                                                              :op3 ENTITY-2)
+                                                       :ARG0-of ( EVENT-10 / 逃げ
+                                                              :から ( ENTITY-8 / 記憶
+                                                                     :ATTRIBUTE ( ATTRIB-9 / 嫌_な))))
+                                                :ARG1 ( PICK-16 / or
+                                                       :op1 ENTITY-8
+                                                       :op2 ENTITY-5
+                                                       :op3 ENTITY-4
+                                                       :op4 ENTITY-2))))))))
+
+# ::id 31_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 怖い の は 目立た ない 問題 だろ う 。
+( EVENT-6 / だろ
+      :ARG0 ( ENTITY-1 / の
+             :ATTRIBUTE ( ATTRIB-2 / 怖い))
+      :ARG1 ( ENTITY-3 / 問題
+             :ARG0-of ( EVENT-5 / 目立た
+                    :domain-of ( NEG-7 / NEG)))
+      :domain-of ( MD-8 / MD_う))
+
+# ::id 32_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 親 を 亡くし た 遺児 や 孤児 は 模範生 が 多く 、 外 から 内面 の 問題 が 見えにくい 。
+( CONJ-15 / AND
+      :op1 ( EVENT-9 / 多く
+             :ARG0 ( ENTITY-1 / CONJ_や
+                    :op1 ( ENTITY-6 / 遺児)
+                    :op2 ( ENTITY-7 / 孤児)
+                    :ARG0-of ( EVENT-4 / 亡くし_た
+                           :ARG1 ( ENTITY-3 / 親)
+                           :MOD ( mod-14 / past)))
+             :ARG0 ( ENTITY-8 / 模範生))
+      :op2 ( EVENT-13 / 見えにくい
+             :ARG0 ( ENTITY-11 / 問題
+                    :の ( ENTITY-12 / 内面))
+             :から ( ENTITY-10 / 外)))
+
+# ::id 33_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 深い 悲しみ を 抱え ながら 、 それ を 考え ない よう に し て いる 。
+( CND-14 / ながら (
+             :op1 ( ATTRIB-3 深い) ( ENTITY-2 ( 悲しみ
+                           :ATTRIBUTE ATTRIB-3)) ( EVENT-4 ( 抱え
+                           :ARG0 ENTITY-1
+                           :ARG1 ENTITY-2)))
+      :op2 ( EVENT-8 / し_て_いる
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( SITUATION-5 / よう
+                    :THAT ( EVENT-7 / 考え
+                           :ARG0 ENTITY-1
+                           :ARG1 ENTITY-2
+                           :domain-of ( NEG-13 / NEG)))))
+
+# ::id 34_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt いったん 崩れ た とき に 、 パキン と 折れる よう な 状態 に なら ない か 心配 だ 。
+( EVENT-2 / 心配_だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :THAT ( EVENT-13 / なら
+             :ARG0 ( ENTITY-3 / ENTITY
+                    :namely ENTITY-1)
+             :に ( ENTITY-7 / 状態
+                    :ARG0-of ( EVENT-12 / な
+                           :ARG1 ( SITUATION-9 / よう
+                                  :THAT ( EVENT-11 / 折れる
+                                         :ARG0 ENTITY-7
+                                         :と ( ENTITY-10 / パキン)))))
+             :に ( SITUATION-4 / とき
+                    :THAT ( EVENT-5 / 崩れ_た
+                           :ARG0 ENTITY-3
+                           :MOD ( mod-18 / いったん)
+                           :MOD ( mod-19 / past)))
+             :domain-of ( QUEST-17 / QUEST)
+             :domain-of ( NEG-16 / NEG)))
+
+# ::id 35_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ここ に き て 子ども の 問題 が 表面化 し た の は 、 学校 が ようやく 気付き始め た という 面 も ある 。
+( EVENT-12 / ある
+      :ARG0 ( SITUATION-1 / の
+             :THAT ( CONJ-14 / CONJ_te
+                    :op1 ( EVENT-4 / き_て
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :に ( ENTITY-3 / ここ
+                                  :pick0))
+                    :op2 ( EVENT-7 / 表面化する.0_た
+                           :ARG0 ( ENTITY-5 / 問題
+                                  :の ( ENTITY-6 / 子ども))
+                           :MOD ( mod-15 / past))))
+      :ARG1 ( ENTITY-8 / 面
+             :THAT ( EVENT-10 / 気付き始め_た
+                    :ARG0 ( ENTITY-9 / 学校)
+                    :MOD ( mod-16 / ようやく)
+                    :MOD ( mod-17 / past))))
+
+# ::id 36_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 教師 の 多く も 被災者 で あり 、 震災後 は 自分 の メンタルヘルス （ 心 の 健康 ） が 保て ず 、 目 の 前 の 問題 から 無意識 に 目 を 背け て い た 。
+( CONJ-18 / CONJ_te
+      :op1 ( EVENT-9 / 保て
+             :ARG0 ( ENTITY-メンタルヘルス / ENTITY
+                    :name ( n-21 / name
+                           :op1 "メンタルヘルス")
+                    :の ( PICK-16 / or
+                           :op1 ENTITY-5
+                           :op2 ENTITY-1
+                           :op3 ENTITY-3
+                           :op4 ENTITY-2)
+                    :NAMELY ( ENTITY-6 / 健康
+                           :の ( ENTITY-7 / 心)))
+             :TMP ( ENTITY-5 / 震災後)
+             :domain-of ( NEG-17 / NEG))
+      :op2 ( EVENT-14 / 背け_て_い_た
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :の ( ENTITY-2 / 教師)
+                    :ARG0-of ( EVENT-4 / で_あり
+                           :ARG1 ( ENTITY-3 / 被災者)))
+             :ARG1 ( ENTITY-13 / 目)
+             :から ( ENTITY-10 / 問題
+                    :の ( ENTITY-11 / 前
+                           :の ( ENTITY-12 / 目)))
+             :TMP ENTITY-5
+             :MOD ( mod-19 / 無意識_に)
+             :MOD ( mod-20 / past)))
+
+# ::id 37_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ＰＴＳＤ の 「 回避 」 という 症状 だ 。
+( EVENT-4 / だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 症状
+             :という ( ENTITY-3 / 回避
+                    :の ( ENTITY-ＰＴＳＤ / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "ＰＴＳＤ")))))
+
+# ::id 38_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 教師 の 心 の 問題 は まだ 多く 、 元気 が なく 、 求心力 を 失っ た 教師 の クラス で は 学級崩壊 も 起き て いる 。
+( CONJ-17 / AND
+      :op1 ( EVENT-10 / なく
+             :ARG0 ( ENTITY-9 / 元気))
+      :op2 ( EVENT-4 / 多く
+             :ARG0 ( ENTITY-1 / 問題
+                    :の ( ENTITY-2 / 心
+                           :の ( ENTITY-3 / 教師)))
+             :MOD ( mod-15 / まだ))
+      :op3 ( EVENT-14 / 起き_て_いる
+             :ARG0 ( ENTITY-13 / 学級崩壊)
+             :で ( ENTITY-6 / クラス
+                    :の ( ENTITY-7 / 教師
+                           :ARG0-of ( EVENT-12 / 失っ_た
+                                  :ARG1 ( ENTITY-11 / 求心力)
+                                  :MOD ( mod-16 / past))))))
+
+# ::id 39_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 家庭 が 不安定 だ と 子ども の 状態 は 良く なら ない 。
+( CND-10 / と (
+             :op1 ( ENTITY-1 家庭) ( EVENT-2 ( 不安定_だ
+                           :ARG0 ENTITY-1)))
+      :op2 ( EVENT-5 / なら
+             :ARG0 ( ENTITY-3 / 状態
+                    :の ( ENTITY-4 / 子ども))
+             :MOD ( mod-11 / 良く)
+             :domain-of ( NEG-9 / NEG)))
+
+# ::id 40_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 被災地 で は 間もなく がれき の 処理 が 終わり 、 仕事 が 一気 に 減る 。
+( CONJ-10 / AND
+      :op1 ( EVENT-4 / 終わり
+             :ARG0 ( ENTITY-2 / 処理
+                    :の ( ENTITY-3 / がれき))
+             :で ( ENTITY-1 / 被災地)
+             :MOD ( mod-9 / 間もなく))
+      :op2 ( EVENT-8 / 減る
+             :ARG0 ( ENTITY-6 / 仕事)
+             :に ( ENTITY-7 / 一気)))
+
+# ::id 41_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 義援金 など を 使い切っ た 人 も いる 。
+( EVENT-6 / いる
+      :ARG0 ( ENTITY-1 / 人
+             :ARG0-of ( EVENT-5 / 使い切っ_た
+                    :ARG1 ( ENTITY-3 / ENTITY
+                           :など ( ENTITY-4 / 義援金))
+                    :MOD ( mod-7 / past))))
+
+# ::id 42_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 仮設住宅 から 出る 見通し の ない 大人 の イライラ は 募る ばかり で 、 しわ寄せ が 子ども に 向か ない か 気掛かり だ 。
+( CONJ-20 / CONJ_te
+      :op1 ( EVENT-10 / 募る_ばかり_で
+             :ARG0 ( ENTITY-2 / イライラ
+                    :の ( ENTITY-3 / 大人
+                           :ARG0-of ( EVENT-9 / ない
+                                  :ARG0 ( SITUATION-5 / 見通し
+                                         :THAT ( EVENT-8 / 出る
+                                                :ARG0 ( PICK-15 / or
+                                                       :op1 ENTITY-3
+                                                       :op2 ENTITY-2
+                                                       :op3 ENTITY-1)
+                                                :から ( ENTITY-7 / 仮設住宅)))))))
+      :op2 ( EVENT-11 / 気掛かり_だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :THAT ( EVENT-14 / 向か
+                    :ARG0 ( ENTITY-12 / しわ寄せ)
+                    :に ( ENTITY-13 / 子ども)
+                    :domain-of ( QUEST-19 / QUEST)
+                    :domain-of ( NEG-18 / NEG))))
+
+# ::id 43_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 子ども を 救う に は 大人 の メンタルヘルス を 保た なくてはならず 、 その ため に 周囲 が なす べき 課題 は 山 ほど ある 。
+( CONJ-17 / AND
+      :op1 ( EVENT-6 / 保た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-メンタルヘルス / ENTITY
+                    :name ( n-16 / name
+                           :op1 "メンタルヘルス")
+                    :の ( ENTITY-5 / 大人))
+             :に ( EVENT-4 / 救う
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-3 / 子ども))
+             :domain-of ( MD-15 / MD_なくてはならず))
+      :op2 ( EVENT-13 / ある
+             :ARG0 ( ENTITY-7 / 課題
+                    :ARG1-of ( EVENT-11 / なす
+                           :ARG0 ( ENTITY-10 / 周囲)
+                           :に ( ENTITY-9 / ため)
+                           :domain-of ( MD-14 / MD_べき)))
+             :ほど ( ENTITY-12 / 山)))
+
+# ::id 44_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt ＜ 調査 の 方法 ＞ 宮城県 の 沿岸自治体 １５ 市町 に ある 公立小中学校 ２４５ 校 （ 小学校 １５９ 校 、 中学校 ８６ 校 ） の 校長 に 昨年 １２ 月 ５ 日 、 アンケート用紙 を 郵送 し 、 記名 による 回答 を 求め た 。
+( EVENT-14 / 求め_た
+      :ARG0 ( ENTITY-3 / ENTITY
+             :namely ENTITY-2
+             :ARG0-of ( EVENT-11 / 郵送する.0
+                    :ARG1 ( ENTITY-10 / アンケート用紙)))
+      :ARG1 ( ENTITY-12 / 回答
+             :による ( ENTITY-13 / 記名))
+      :TMP ( TIME-9 / CD_１２_月_５_日
+             :MOD ( mod-15 / 昨年))
+      :に ( ENTITY-4 / 校長
+             :の ( ENTITY-5 / 公立小中学校
+                    :MOD ( mod-16 / CD_２４５_校_ （ 中学校_８６_校_小学校_１５９_校_ ）
+                           :ARG0-of ( EVENT-8 / ある
+                                  :に ( ENTITY-7 / CD_１５_市町
+                                         :MOD ( mod-17 / 沿岸自治体
+                                                :の ( ENTITY-宮城県 / ENTITY
+                                                       :name ( n-19 / name
+                                                              :op1 "宮城県"))))))))
+      :TPC ( ENTITY-1 / 方法
+             :の ( ENTITY-2 / 調査))
+      :MOD ( mod-18 / past))
+
+# ::id 45_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 仙台市 は 宮城野区 と 若林区 に 限定 し た 。
+( EVENT-2 / 限定する.0_た
+      :ARG0 ( ENTITY-仙台市 / ENTITY
+             :name ( n-4 / name
+                    :op1 "仙台市"))
+      :に ( GROUP-1 / CONJ_と
+             :op1 ( ENTITY-宮城野区 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "宮城野区"))
+             :op2 ( ENTITY-若林区 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "若林区")))
+      :MOD ( mod-3 / past))
+
+# ::id 46_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 回答数 は ２０８ （ 回答率 ８４．９ ％ ） 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 回答数)
+      :ARG1 ( ENTITY-2 / CD_２０８_ （ 回答率_８４ ． ９_ ％ ）))
+
+# ::id 47_newswire_00616_K201401010A0A106B00001;NJ
+# ::snt 内訳 は 小学校 １３３ （ ８３．６ ％ ） 、 中学校 ７５ （ ８７．２ ％ ） だっ た 。
+( EVENT-5 / だっ_た
+      :ARG0 ( ENTITY-1 / 内訳)
+      :ARG1 ( GROUP-2 / AND (
+                    :op1 ( ENTITY-3 小学校) ( ENTITY-3 CD_１３３_ （ ８３ ． ６_ ％ ）))
+             :op2 ENTITY-8
+             :MOD ( mod-6 / AND (
+                           :op1 ( ENTITY-4 中学校) ( ENTITY-4 CD_７５_ （ ８７ ． ２_ ％ ）))
+                    :op2 ENTITY-9))
+      :MOD ( mod-7 / past))

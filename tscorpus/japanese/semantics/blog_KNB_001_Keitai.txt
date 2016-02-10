@@ -1,0 +1,506 @@
+# ::id 1_blog_KNB_001_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］ プリペイドカード 携帯 布教 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (
+ プリペイドカード_携帯_布教(ENTITY[2]) ∧
+  携帯_電話(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[2])
+
+# ::id 2_blog_KNB_001_Keitai_1-1-10-01;NJ
+# ::snt 月 １５００ 円 〜 ２０００ 円 の 現状 維持 か 、 月 ３０００ 円 超 で フツウ の 携帯 ユーザー の 仲間入り を する か です 。
+∃ SITUATION[3] ENTITY[1] EVENT[7] EVENT[13] TIME[6] ENTITY[5] ENTITY[4] TIME[9] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  CD_月(TIME[6]) ∧
+   (CD_１５００_円_２０００_円(ENTITY[5]), 時間(TIME[6], ENTITY[5])) ∧
+    の_現状_維持(ENTITY[5], ENTITY[4]) ∧
+     CD_月(TIME[9]) ∧
+      (CD_３０００_円(ENTITY[8]), TMP_超(TIME[9], ENTITY[8])) ∧
+       フツウ(ENTITY[12]) ∧
+        の_携帯_ユーザー(ENTITY[12], ENTITY[11]) ∧
+         の_仲間入り(ENTITY[11], ENTITY[10]) ∧
+          FACT(SITUATION[3],
+           CONJ_か(xxx(EVENT[7], ENTITY[1], ENTITY[4]),
+            する.0(EVENT[13], ENTITY[1], ENTITY[10]) ∧ で(EVENT[13]) = ENTITY[8])) ∧
+           か SITUATION[2] (SITUATION[2] = SITUATION[3], ∃ EVENT[14] です(EVENT[14], ENTITY[1], SITUATION[2])))
+
+# ::id 3_blog_KNB_001_Keitai_1-1-11-01;NJ
+# ::snt 結局 この よう な 結論 に 落ち着き まし た 。
+∃ SITUATION[7] ENTITY[1] EVENT[5] EVENT[6] ENTITY[2] ENTITY[4] (
+ よう(ENTITY[4]) ∧
+  ENTITY[1] = *pro* ∧
+   な(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 結論(ENTITY[2]) ∧
+    ADV_結局(SITUATION[7]) ∧
+     past(EVENT[6]) ∧ FACT(SITUATION[7], 落ち着き_まし_た(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[2]))
+
+# ::id 4_blog_KNB_001_Keitai_1-1-12-01;NJ
+# ::snt 確か に プリペイド に は 、 いく つ か の 弱点 が ある 。
+∃ EVENT[4] ENTITY[2] ENTITY[1] (
+ プリペイド(ENTITY[1]) ∧
+  か ENTITY[3] (いく_つ(ENTITY[3]), の_弱点(ENTITY[3], ENTITY[2])) ∧
+   ADV_確か_に(EVENT[4]) ∧ ある(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 5_blog_KNB_001_Keitai_1-1-13-01;NJ
+# ::snt Ｗｅｂ が 使え ない 、 通話 料 が やけ に 高い ので 電話 を わざわざ 公衆 電話 から かけ たり する 、 携帯 会社 が 謳う オトクげ な サービス を ほとんど 受け られ ない ．．．
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ATTRIB[17] SITUATION[4] EVENT[7] EVENT[10] EVENT[12] EVENT[16] EVENT[19] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[8] ENTITY[15] ENTITY[13] (
+        Ｗｅｂ(ENTITY[2]) ∧
+         通話_料(ENTITY[5]) ∧
+          やけ(ENTITY[6]) ∧
+           電話(ENTITY[8]) ∧
+            公衆_電話(ENTITY[9]) ∧
+             FACT(SITUATION[4],
+              CRD_ので(高い(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6],
+               かけ(EVENT[10], ENTITY[1], ENTITY[8]) ∧ から(EVENT[10]) = ENTITY[9])) ∧
+              携帯_会社(ENTITY[15]) ∧
+               オトクげ_な(ATTRIB[17]) ∧
+                謳う(EVENT[16], ENTITY[15], ENTITY[13]) ∧ ATTRIBUTE_サービス(ATTRIB[17], ENTITY[13]) ∧
+                 ADV_わざわざ(EVENT[10]) ∧
+                  ¬ ∃ EVENT[3] 使え(EVENT[3], ENTITY[1], ENTITY[2]) ∧
+                   する(EVENT[12], ENTITY[1]) ∧ たり(EVENT[12]) = SITUATION[4] ∧
+                    ほとんど ENTITY[18] (ENTITY[18] = ENTITY[1], 受け(EVENT[19], _, ENTITY[13], ENTITY[18]))))
+
+# ::id 6_blog_KNB_001_Keitai_1-1-13-02;NJ
+# ::snt 誕生日 割り など
+∃ EVENT[2] ENTITY[1] (誕生日_割り(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ など(EVENT[2]) = ENTITY[1])
+
+# ::id 7_blog_KNB_001_Keitai_1-1-14-01;NJ
+# ::snt しかし 、 これら の サービス は ６ 年間 使っ て こ なかっ た 自分 にとって は 特に 必要 で ない もの で あり 、 これ から この 機能 が 加わっ た から と いっ て 特別 ハッピー な わけ で も ない 。
+∃ ENTITY[1] ENTITY[9] ENTITY[3] DEGREE[7] ENTITY[2] ENTITY[15] (
+ ENTITY[3] = これら{ENTITY[1]} ∧
+  の_サービス(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[9] = 自分{ENTITY[2], ENTITY[1]} ∧
+    CD_６_年間(DEGREE[7]) ∧
+     ¬ ∃ EVENT[8] (past(EVENT[8]) ∧ 使っ_て_こ_た(EVENT[8], ENTITY[9]) ∧ MSR(EVENT[8]) = DEGREE[7]) ∧
+      機能(ENTITY[15]) ∧
+       ENTITY[1] = *pro* ∧
+        ¬ ∃ ATTRIB[18] ENTITY[14] EVENT[12] EVENT[16] EVENT[13] EVENT[19] ENTITY[4] ENTITY[17] (
+              ¬ ∃ EVENT[10] (
+                    ADV_特に(EVENT[10]) ∧
+                     必要_で(EVENT[10], ENTITY[4]) ∧ にとって(EVENT[10]) = ENTITY[9]) ∧
+               もの(ENTITY[4]) ∧
+               ENTITY[14] = これ{ENTITY[1], ENTITY[2], ENTITY[4]} ∧
+                特別_ハッピー_な(ATTRIB[18]) ∧
+                 ATTRIBUTE_わけ(ATTRIB[18], ENTITY[17]) ∧
+                  before(EVENT[13], EVENT[16]) ∧
+                   で_あり(EVENT[12], ENTITY[2], ENTITY[4]) ∧
+                    CRD_te(いっ_て(EVENT[13],
+                          MD_から(加わっ_た(EVENT[16], ENTITY[15]) ∧ から(EVENT[16]) = ENTITY[14])),
+                     で_も(EVENT[19], ENTITY[1], ENTITY[17]))))
+
+# ::id 8_blog_KNB_001_Keitai_1-1-15-01;NJ
+# ::snt 一方 、 値段 の 方 は 確か に 年間 最大 １万８千 円 程度 の 開き が ある と は 言え 、 現実的 に お金 に そう こまっ て いる わけ で も ない ので 、 ある 意味 ’ 瑣末 な ’ こと で あっ たり し ます 。
+∃ ATTRIB[19] ENTITY[4] SITUATION[3] EVENT[20] EVENT[21] ENTITY[18] ENTITY[2] ENTITY[17] ENTITY[1] (
+ 値段(ENTITY[2]) ∧
+  の_方(ENTITY[2], ENTITY[1]) ∧
+   意味(ENTITY[17]) ∧
+    ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+     瑣末_な(ATTRIB[19]) ∧
+      ATTRIBUTE_こと(ATTRIB[19], ENTITY[18]) ∧
+       FACT(SITUATION[3],
+        CRD_ので(¬ ∃ SITUATION[11] SITUATION[5] EVENT[8] EVENT[10] EVENT[13] EVENT[16] ENTITY[7] ENTITY[6] ENTITY[12] (
+                   (CD_１万８千_円(ENTITY[7]), 年間_最大(ENTITY[7]) ∧ 程度(ENTITY[7])) ∧
+                    の_開き(ENTITY[7], ENTITY[6]) ∧
+                     FACT(SITUATION[5], ある(EVENT[8], ENTITY[6])) ∧
+                      お金(ENTITY[12]) ∧
+                       わけ(SITUATION[11],
+                        こまっ_て_いる(EVENT[13], ENTITY[4]) ∧ に(EVENT[13]) = ENTITY[12]) ∧
+                        ADV_確か_に(EVENT[8]) ∧
+                         ADV_現実的_に(EVENT[13]) ∧
+                          ADV_そう(EVENT[13]) ∧
+                           言え(EVENT[10], ENTITY[4], SITUATION[5]) ∧
+                            で_も(EVENT[16], ENTITY[4], SITUATION[11])),
+         で_あっ(EVENT[20], ENTITY[1], ENTITY[18]) ∧ ADV(EVENT[20]) = ENTITY[17])) ∧
+        し_ます(EVENT[21], ENTITY[1]) ∧ たり(EVENT[21]) = SITUATION[3])
+
+# ::id 9_blog_KNB_001_Keitai_1-1-16-01;NJ
+# ::snt 加えて 、 プリペイドユーザー という もの が 持つ 社会 に対する マイナス イメージ も 考え て み まし た 。
+∃ ENTITY[1] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  プリペイドユーザー(ENTITY[5]) ∧
+   という_もの(ENTITY[5], ENTITY[4]) ∧
+    社会(ENTITY[7]) ∧
+     持つ(EVENT[6], ENTITY[4], ENTITY[2]) ∧ に対する_マイナス_イメージ(ENTITY[7], ENTITY[2]) ∧
+      past(EVENT[8]) ∧ 考え_て_み_まし_た(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 10_blog_KNB_001_Keitai_1-1-17-01;NJ
+# ::snt 貧乏人 臭い 、 なんか 怪しげ な 人 っぽい といった 類 の もの です 。
+∃ ATTRIB[9] ENTITY[5] SITUATION[4] ENTITY[1] EVENT[7] EVENT[10] EVENT[11] ENTITY[6] ENTITY[8] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[3], ENTITY[2], ENTITY[1]} ∧
+   貧乏人(ENTITY[6]) ∧
+    なんか_怪しげ_な(ATTRIB[9]) ∧
+     ATTRIBUTE_人(ATTRIB[9], ENTITY[8]) ∧
+      FACT(SITUATION[4], 臭い(EVENT[7], ENTITY[5], ENTITY[6]) ∧ っぽい(EVENT[10], ENTITY[5], ENTITY[8])) ∧
+       といった_類(SITUATION[4], ENTITY[3]) ∧ の_もの(ENTITY[3], ENTITY[2]) ∧ です(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 11_blog_KNB_001_Keitai_1-1-18-01;NJ
+# ::snt これ が 僕 に どのような 影響 を 与え うる の か 。
+QUEST(∃ ENTITY[2] ENTITY[1] EVENT[4] ? ENTITY[3] (
+      影響(ENTITY[3]) ∧
+       ENTITY[1] = これ ∧
+        ENTITY[2] = 僕 ∧ 与え_うる_の(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2]))
+
+# ::id 12_blog_KNB_001_Keitai_1-1-19-01;NJ
+# ::snt これ は 正直 言っ て よく 分かり ませ ん 。
+∃ SITUATION[6] ENTITY[2] ENTITY[1] EVENT[4] ENTITY[3] (
+ ENTITY[1] = これ ∧
+  ENTITY[2] = *speaker*{ENTITY[1]} ∧
+   正直(ENTITY[3]) ∧
+    ADV_よく(SITUATION[6]) ∧
+     CONJ_te(言っ_て(EVENT[4], ENTITY[2]) ∧ ADV(EVENT[4]) = ENTITY[3],
+      FACT(SITUATION[6], ¬ ∃ EVENT[5] 分かり_ませ(EVENT[5], ENTITY[1]))))
+
+# ::id 13_blog_KNB_001_Keitai_1-1-2-01;NJ
+# ::snt もはや ’ 今さら ’ だ が 、 という 接頭 句 で 始める しか ない ほど 今さら だが 、 私 は プリペイド 携帯 を ずっと 使っ て いる 。
+∃ SITUATION[11] SITUATION[13] SITUATION[4] ENTITY[2] SITUATION[1] ENTITY[14] EVENT[6] EVENT[8] EVENT[9] EVENT[12] EVENT[16] ENTITY[5] ENTITY[15] (
+ ENTITY[14] = 私{ENTITY[5]} ∧
+  ENTITY[2] = *speaker* ∧
+   THAT_接頭_句(CONJ_が(だ(EVENT[6]), xxx(EVENT[8])), ENTITY[5]) ∧
+    FACT(SITUATION[4], 始める(EVENT[9], ENTITY[2]) ∧ で(EVENT[9]) = ENTITY[5]) ∧
+     FACT(SITUATION[1], FACT(SITUATION[11], しか SITUATION[3] (SITUATION[3] = SITUATION[4], ∃ EVENT[10] ない(EVENT[10], ENTITY[2], SITUATION[3])))) ∧
+      プリペイド_携帯(ENTITY[15]) ∧
+       ADV_もはや(SITUATION[11]) ∧
+        ADV_今さら(EVENT[6]) ∧
+         ADV_今さら_ほど(SITUATION[13], SITUATION[1]) ∧
+          ADV_ずっと(EVENT[16]) ∧
+           CONJ_だが(FACT(SITUATION[13], xxx(EVENT[12])), 使っ_て_いる(EVENT[16], ENTITY[14], ENTITY[15])))
+
+# ::id 14_blog_KNB_001_Keitai_1-1-20-01;NJ
+# ::snt ばかげ た 想定 かもしれません が 、 仮定 の 話 として 、 １０ 年 後 に 私 が プリペイド 携帯 ユーザー だっ た ため に 契約 が おじゃん に なっ て しまう 可能性 だって ありえる の です 。
+∃ ENTITY[11] SITUATION[10] SITUATION[8] ENTITY[1] EVENT[13] EVENT[16] EVENT[17] ENTITY[7] ENTITY[12] ENTITY[15] ENTITY[14] ENTITY[9] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  仮定(ENTITY[7]) ∧
+   の_話(ENTITY[7], ENTITY[6]) ∧
+    (CD_１０_年(ENTITY[9]), 後(ENTITY[9])) ∧
+     ENTITY[11] = 私{ENTITY[9], ENTITY[6], ENTITY[7]} ∧
+      プリペイド_携帯_ユーザー(ENTITY[12]) ∧
+       ため(SITUATION[10], だっ_た(EVENT[13], ENTITY[11], ENTITY[12])) ∧
+        契約(ENTITY[14]) ∧
+         おじゃん(ENTITY[15]) ∧
+          可能性(SITUATION[8],
+           なっ_て_しまう(EVENT[16], ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[15] ∧ に(EVENT[16]) = SITUATION[10] ∧
+            に(EVENT[16]) = ENTITY[9]) ∧
+           past(EVENT[13]) ∧
+            CONJ_が(MD_かもしれません(∃ EVENT[4] EVENT[5] ENTITY[2] (
+                       ばかげ_た(EVENT[4], ENTITY[2]) ∧ 想定(ENTITY[2]) ∧
+                        xxx(EVENT[5], ENTITY[1], ENTITY[2]))),
+             ありえる_の_です(EVENT[17], SITUATION[8]) ∧ として(EVENT[17]) = ENTITY[6]))
+
+# ::id 15_blog_KNB_001_Keitai_1-1-21-01;NJ
+# ::snt でも 、 そんな 程度 の 契約 が 自分 にとって プラス な の か どう か 、 そんな ツマラナイ 人間 と 契約 し たっ て 得る もの は 何 も ない かもしれない の です 。
+∃ ARB[1] ARB[7] ATTRIB[3] EVENT[4] EVENT[8] ENTITY[2] ENTITY[5] (
+ ツマラナイ(ATTRIB[3]) ∧
+  ATTRIBUTE_人間(ATTRIB[3], ENTITY[2]) ∧
+   ARB[7] = *arb* ∧
+    得る(EVENT[8], ARB[7], ENTITY[5]) ∧ もの(ENTITY[5]) ∧
+     ARB[1] = *arb* ∧
+      CONJ_te(契約する.0_たっ_て(EVENT[4], ARB[1]) ∧ と(EVENT[4]) = ENTITY[2],
+       MD_かもしれない(も ENTITY[9] ∃ EVENT[10] ない_の_です(EVENT[10], ENTITY[5], ENTITY[9]))))
+
+# ::id 16_blog_KNB_001_Keitai_1-1-22-01;NJ
+# ::snt この 論理 は 、 別 の 弱点 から 逃避 する ため に よく 使わ れる ので 注意 が 必要 です が 。
+∃ SITUATION[2] EVENT[5] EVENT[6] EVENT[9] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[1] (
+ 論理(ENTITY[1]) ∧
+  別(ENTITY[4]) ∧
+   の_弱点(ENTITY[4], ENTITY[3]) ∧
+    ため(SITUATION[2], 逃避する.0(EVENT[5], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[3]) ∧
+     注意(ENTITY[8]) ∧
+      ADV_よく(EVENT[6]) ∧
+       MD_が(CRD_ので(使わ(EVENT[6], _, ENTITY[1]) ∧ に(EVENT[6]) = SITUATION[2],
+             必要_です(EVENT[9], ENTITY[8]))))
+
+# ::id 17_blog_KNB_001_Keitai_1-1-23-01;NJ
+# ::snt ともかく 、 社会 に 対する マイナス イメージ より は 、 ｍｉｘｉ で プリペイド 携帯 の コミュ に でも 入る ほう が 楽しい かもしれません 。
+∃ SITUATION[13] ARB[6] SITUATION[5] ENTITY[10] ENTITY[9] ENTITY[7] EVENT[4] ENTITY[3] ENTITY[1] (
+ 社会(ENTITY[3]) ∧
+  対する(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ マイナス_イメージ(ENTITY[1]) ∧
+   ARB[6] = *arb* ∧
+    ｍｉｘｉ(ENTITY[7]) ∧
+     プリペイド_携帯(ENTITY[10]) ∧
+      の_コミュ(ENTITY[10], ENTITY[9]) ∧
+       ほう(SITUATION[5],
+        でも ENTITY[8] (ENTITY[8] = ENTITY[9],
+         ∃ EVENT[11] (
+          入る(EVENT[11], ARB[6]) ∧
+           に(EVENT[11]) = ENTITY[8] ∧ で(EVENT[11]) = ENTITY[7]))) ∧
+        ADV_ともかく(SITUATION[13]) ∧
+         FACT(SITUATION[13], MD_かもしれません(∃ EVENT[12] (楽しい(EVENT[12], SITUATION[5]) ∧ より(EVENT[12]) = ENTITY[1]))))
+
+# ::id 18_blog_KNB_001_Keitai_1-1-24-01;NJ
+# ::snt （ 私 は そこ まで は し ませ ん が ）
+∃ ENTITY[3] ENTITY[1] ENTITY[2] (
+ ENTITY[1] = 私 ∧
+  ENTITY[3] = そこ{ENTITY[1]} ∧
+   まで(ENTITY[3], ENTITY[2]) ∧ MD_が(¬ ∃ EVENT[4] し_ませ(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 19_blog_KNB_001_Keitai_1-1-25-01;NJ
+# ::snt では 結局 決めて は 何 だっ た の か 。
+∃ ENTITY[1] (
+ 決めて(ENTITY[1]) ∧
+  QUEST(∃ EVENT[3] ? ENTITY[2] (ADV_結局(EVENT[3]) ∧ past(EVENT[3]) ∧ だっ_た_の(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 20_blog_KNB_001_Keitai_1-1-26-01;NJ
+# ::snt それ は プリペイド 携帯 電話 の やり方 に 対する 好み といった ところ でしょ う か 。
+∃ ENTITY[1] (
+ ENTITY[1] = それ ∧
+  QUEST(MD_う(∃ EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] (
+             プリペイド_携帯_電話(ENTITY[6]) ∧
+              の_やり方(ENTITY[6], ENTITY[5]) ∧
+               対する(EVENT[7], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[5] ∧ 好み(ENTITY[3]) ∧
+                といった_ところ(ENTITY[3], ENTITY[2]) ∧ でしょ(EVENT[8], ENTITY[1], ENTITY[2])))))
+
+# ::id 21_blog_KNB_001_Keitai_1-1-27-01;NJ
+# ::snt クレジットカード や ローン に 対する 嫌悪感 に 似 て いる かもしれません 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_かもしれません(∃ EVENT[7] EVENT[8] GROUP[4] ENTITY[2] (
+        CONJ_や(∃ ENTITY[5] (クレジットカード(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+         ∃ ENTITY[6] (ローン(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+         対する(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = GROUP[4] ∧ 嫌悪感(ENTITY[2]) ∧
+          似_て_いる(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[2])))
+
+# ::id 22_blog_KNB_001_Keitai_1-1-28-01;NJ
+# ::snt 自分 が 持っ て いる お金 以上 の もの を 得 ようとする な よ という 戒め かもしれません 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_かもしれません(∃ EVENT[10] ENTITY[2] (
+        THAT_戒め(MD_よ(IMPERATIVE(∃ ARB[3] (
+                        ARB[3] = *arb* ∧
+                         MD_ようとする(∃ ENTITY[7] EVENT[8] EVENT[9] ENTITY[5] ENTITY[4] (
+                               ENTITY[7] = 自分{ENTITY[4], ENTITY[1]} ∧
+                                持っ_て_いる(EVENT[8], ENTITY[7], ENTITY[5]) ∧ お金_以上(ENTITY[5]) ∧
+                                 の_もの(ENTITY[5], ENTITY[4]) ∧
+                                  得_な(EVENT[9], ARB[3], ENTITY[4])))))), ENTITY[2]) ∧
+         xxx(EVENT[10], ENTITY[1], ENTITY[2]))))
+
+# ::id 23_blog_KNB_001_Keitai_1-1-29-01;NJ
+# ::snt 素朴 な 意見 で 自分 の 中 に も まだ この 答え に 対する 違和感 は あり ます が 、 現時点 で の 答え という こと に し て おき たい と 思い ます 。
+∃ ENTITY[13] ENTITY[6] ATTRIB[4] ENTITY[1] EVENT[11] EVENT[17] EVENT[2] ENTITY[5] ENTITY[3] ENTITY[16] ENTITY[15] ENTITY[14] EVENT[10] ENTITY[9] ENTITY[7] (
+ 答え(ENTITY[9]) ∧
+  対する(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 違和感(ENTITY[7]) ∧
+   ENTITY[1] = *speaker* ∧
+    素朴_な(ATTRIB[4]) ∧
+     ATTRIBUTE_意見(ATTRIB[4], ENTITY[3]) ∧
+      ENTITY[6] = 自分{ENTITY[3], ENTITY[1]} ∧
+       の_中(ENTITY[6], ENTITY[5]) ∧
+        ENTITY[13] = *speaker*{ENTITY[7], ENTITY[9], ENTITY[3], ENTITY[5], ENTITY[1]} ∧
+         現時点(ENTITY[16]) ∧
+          で_の_答え(ENTITY[16], ENTITY[15]) ∧
+           という_こと(ENTITY[15], ENTITY[14]) ∧
+            ADV_まだ(EVENT[11]) ∧
+             思い_ます(EVENT[2], ENTITY[1],
+              CONJ_が(あり_ます(EVENT[11], ENTITY[7]) ∧ に(EVENT[11]) = ENTITY[5] ∧
+                    で(EVENT[11]) = ENTITY[3], し_て_おき_たい(EVENT[17], ENTITY[13], ENTITY[14]))))
+
+# ::id 24_blog_KNB_001_Keitai_1-1-3-01;NJ
+# ::snt 犯罪 に 用い られる など により かなり イメージ を 悪化 さ せ て しまっ た プリペイド 携帯 だ が 、 一 ユーザー として は 、 かなり 使いで が ある 。
+∃ SITUATION[11] SITUATION[5] ENTITY[4] ENTITY[1] EVENT[7] EVENT[10] EVENT[9] EVENT[12] EVENT[15] ENTITY[6] ENTITY[8] ENTITY[2] ENTITY[14] ENTITY[13] (
+ CD_一_ユーザー(ENTITY[13]) ∧
+  ENTITY[1] = *pro* ∧
+   犯罪(ENTITY[6]) ∧
+    FACT(SITUATION[5], 用い(EVENT[7], _, ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+     など(SITUATION[5], ENTITY[4]) ∧ ARG0(ENTITY[2], ENTITY[4]) ∧
+      イメージ(ENTITY[8]) ∧
+       FACT(SITUATION[11],
+        せ_て_しまっ_た(EVENT[9], ENTITY[2], ENTITY[8], 悪化する.0(EVENT[10], ENTITY[8])) ∧ により(EVENT[9]) = ENTITY[4]) ∧
+        プリペイド_携帯(ENTITY[2]) ∧
+        使いで(ENTITY[14]) ∧
+         ADV_かなり(SITUATION[11]) ∧
+          past(EVENT[9]) ∧
+           ADV_かなり(EVENT[15]) ∧
+            CONJ_が(だ(EVENT[12], ENTITY[1], ENTITY[2]),
+             ある(EVENT[15], ENTITY[14]) ∧ として(EVENT[15]) = ENTITY[13]))
+
+# ::id 25_blog_KNB_001_Keitai_1-1-30-01;NJ
+# ::snt プリペイド 携帯 電話 ファン
+∃ EVENT[2] ENTITY[1] (プリペイド_携帯_電話_ファン(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 26_blog_KNB_001_Keitai_1-1-30-02;NJ
+# ::snt プリペイド 携帯 電話 ファン による 私設 ページ
+∃ EVENT[3] ENTITY[2] ENTITY[1] (プリペイド_携帯_電話_ファン(ENTITY[2]) ∧ による_私設_ページ(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 27_blog_KNB_001_Keitai_1-1-31-01;NJ
+# ::snt ｈｔｔｐ：／／ｗｗｗ．ｐｒｅｐａｉｄｆａｎ．ｃｏｍ／
+∃ EVENT[2] ENTITY[1] (ｈｔｔｐ：／／ｗｗｗ．ｐｒｅｐａｉｄｆａｎ．ｃｏｍ／(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 28_blog_KNB_001_Keitai_1-1-4-01;NJ
+# ::snt かつて は この よう な 話 を 友人 に 振っ て も 、 「 携帯 電話 の 料金 は 親 が 払っ て いる から 別に ．．． 」 という にべもない 答え が 返っ て くる ばかり だっ た が 、 今日 において 、 携帯 電話 が 単なる 中高生 の 「お遊び」的 な ツール から 緊急 時 の 連絡 など 実用的 、 現実的 な 利用 目的 として 認知 さ れる につれ 、 さらに この よう な 傾向 が 強まる こと に なる だろう 。
+∃ SITUATION[19] ENTITY[20] SITUATION[11] ATTRIB[10] ENTITY[2] SITUATION[1] EVENT[6] EVENT[8] EVENT[15] EVENT[16] EVENT[18] ENTITY[7] ENTITY[3] ENTITY[14] ENTITY[9] ENTITY[5] ENTITY[13] ENTITY[12] ENTITY[36] (
+ よう(ENTITY[5]) ∧
+  携帯_電話(ENTITY[13]) ∧
+   の_料金(ENTITY[13], ENTITY[12]) ∧
+    よう(ENTITY[36]) ∧
+     ENTITY[2] = *speaker* ∧
+      な(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 話(ENTITY[3]) ∧
+       友人(ENTITY[7]) ∧
+        FACT(SITUATION[1], 振っ_て(EVENT[8], ENTITY[2], ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+         にべもない(ATTRIB[10]) ∧
+          親(ENTITY[14]) ∧
+           FACT(SITUATION[11], 払っ_て_いる(EVENT[15], ENTITY[14], ENTITY[12])) ∧
+            ATTRIBUTE_答え(ATTRIB[10], ENTITY[9]) ∧
+             THAT_答え(xxx(EVENT[16]) ∧ から(EVENT[16]) = SITUATION[11], ENTITY[9]) ∧
+             ENTITY[20] = *pro*{ENTITY[12], ENTITY[13], ENTITY[5], ENTITY[9], ENTITY[14], ENTITY[3], ENTITY[7]} ∧
+              ADV_かつて_は(SITUATION[19]) ∧
+               ADV_別に(EVENT[16]) ∧
+                past(EVENT[18]) ∧
+                 CONJ_が(FACT(SITUATION[19], 返っ_て_くる_ばかり_だっ_た(EVENT[18], ENTITY[9]) ∧ te(EVENT[18]) = SITUATION[1]),
+                  MD_だろう(∃ SITUATION[39] SITUATION[33] ATTRIB[31] ATTRIB[30] ATTRIB[26] ATTRIB[25] EVENT[32] EVENT[37] EVENT[38] EVENT[40] ENTITY[24] ENTITY[29] ENTITY[28] ENTITY[27] ENTITY[23] ENTITY[22] ENTITY[21] ENTITY[34] (
+                        今日(ENTITY[21]) ∧
+                         携帯_電話(ENTITY[22]) ∧
+                          単なる(ATTRIB[25]) ∧
+                           ATTRIBUTE_中高生(ATTRIB[25], ENTITY[24]) ∧
+                            「お遊び」的_な(ATTRIB[26]) ∧
+                             ATTRIBUTE_ツール(ATTRIB[26], ENTITY[23]) ∧ の_ツール(ENTITY[24], ENTITY[23]) ∧
+                              緊急_時(ENTITY[29]) ∧
+                               の_連絡(ENTITY[29], ENTITY[28]) ∧
+                                実用的(ATTRIB[30]) ∧
+                                 現実的_な(ATTRIB[31]) ∧
+                                  ATTRIBUTE_利用_目的(ATTRIB[30], ENTITY[27]) ∧ など_利用_目的(ENTITY[28], ENTITY[27]) ∧
+                                   ATTRIBUTE_利用_目的(ATTRIB[31], ENTITY[27]) ∧ など_利用_目的(ENTITY[28], ENTITY[27]) ∧
+                                   な(EVENT[37], ENTITY[34], ENTITY[36]) ∧ 傾向(ENTITY[34]) ∧
+                                    こと(SITUATION[33],
+                                     FACT(SITUATION[39], 強まる(EVENT[38], ENTITY[34]))) ∧
+                                     ADV_さらに(SITUATION[39]) ∧
+                                      CRD_につれ(認知する.0(EVENT[32], _, ENTITY[22]) ∧
+                                            として(EVENT[32]) = ENTITY[27] ∧
+                                            から(EVENT[32]) = ENTITY[23] ∧
+                                            において(EVENT[32]) = ENTITY[21],
+                                       なる(EVENT[40], ENTITY[20]) ∧
+                                        に(EVENT[40]) = SITUATION[33])))))
+
+# ::id 29_blog_KNB_001_Keitai_1-1-5-01;NJ
+# ::snt そこで 、 携帯 電話 の 料金 を 自分 の 身銭 で 払わ ざる得ない 、 あるいは 得なくなっ た が 所得 が 少ない 、 或いは お金 を 別 の 部分 に 使い たい と 思っ て いる ユーザー の ため に 、 という かなり 限定 さ れ た 目的 を もっ て この エントリー は スタート する わけ で ある 。
+∃ SITUATION[25] ENTITY[13] SITUATION[9] EVENT[16] EVENT[20] EVENT[7] EVENT[21] EVENT[23] EVENT[26] EVENT[27] ENTITY[11] ENTITY[12] ENTITY[10] ENTITY[8] ENTITY[19] ENTITY[18] ENTITY[17] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[24] (
+ エントリー(ENTITY[24]) ∧
+  所得(ENTITY[8]) ∧
+   携帯_電話(ENTITY[11]) ∧
+    の_料金(ENTITY[11], ENTITY[10]) ∧
+     ENTITY[13] = 自分{ENTITY[8], ENTITY[10], ENTITY[11], ENTITY[5], ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+      の_身銭(ENTITY[13], ENTITY[12]) ∧
+       FACT(SITUATION[9],
+        CONJ_あるいは(MD_ざる得ない(∃ EVENT[14] (
+                   before(EVENT[7], EVENT[14]) ∧
+                    払わ(EVENT[14], ENTITY[8], ENTITY[10]) ∧ で(EVENT[14]) = ENTITY[12])),
+         MD_得なくなっ(∃ EVENT[15] (before(EVENT[7], EVENT[15]) ∧ た(EVENT[15], ENTITY[8]))))) ∧
+        お金(ENTITY[17]) ∧
+         別(ENTITY[19]) ∧
+          の_部分(ENTITY[19], ENTITY[18]) ∧
+           思っ_て_いる(EVENT[7], ENTITY[5],
+            CONJ_或いは(少ない(EVENT[16], ENTITY[8]) ∧ が(EVENT[16]) = SITUATION[9],
+             使い_たい(EVENT[20], _, ENTITY[17]) ∧ に(EVENT[20]) = ENTITY[18])) ∧
+            ユーザー(ENTITY[5]) ∧
+            の_ため(ENTITY[5], ENTITY[4]) ∧
+             に(ENTITY[4], ENTITY[3]) ∧
+              限定する.0_た(EVENT[21], _, ENTITY[1]) ∧ という(EVENT[21]) = ENTITY[3] ∧
+               目的(ENTITY[1]) ∧
+               わけ(SITUATION[25], スタートする.0(EVENT[26], ENTITY[24])) ∧
+                ADV_かなり(EVENT[21]) ∧
+                 past(EVENT[21]) ∧
+                  CONJ_te(もっ_て(EVENT[23], _, ENTITY[1]), で_ある(EVENT[27], ENTITY[24], SITUATION[25])))
+
+# ::id 30_blog_KNB_001_Keitai_1-1-6-01;NJ
+# ::snt 実は 、 私 の 使っ て いる 携帯 電話 に 最近 原因 不明 の 黒い 横線 が 入る よう に なっ て しまっ た 。
+∃ SITUATION[12] ATTRIB[9] ENTITY[4] SITUATION[1] EVENT[5] EVENT[10] EVENT[11] ENTITY[8] ENTITY[7] TIME[6] ENTITY[2] (
+ ENTITY[4] = 私 ∧
+  使っ_て_いる(EVENT[5], ENTITY[4], ENTITY[2]) ∧ 携帯_電話(ENTITY[2]) ∧
+   最近(TIME[6]) ∧
+    原因_不明(ENTITY[8]) ∧
+     黒い(ATTRIB[9]) ∧
+      ATTRIBUTE_横線(ATTRIB[9], ENTITY[7]) ∧ の_横線(ENTITY[8], ENTITY[7]) ∧
+       よう(SITUATION[1],
+        入る(EVENT[10], ENTITY[7]) ∧ is_contained_in(時間(EVENT[10]), TIME[6]) ∧
+         に(EVENT[10]) = ENTITY[2]) ∧
+        ADV_実は(SITUATION[12]) ∧ past(EVENT[11]) ∧ FACT(SITUATION[12], なっ_て_しまっ_た(EVENT[11], SITUATION[1])))
+
+# ::id 31_blog_KNB_001_Keitai_1-1-6-02;NJ
+# ::snt Ｊ−ＳＡ０６：ｖｏｄａｆｏｎｅ→ｓｏｆｔｂａｎｋ ， もちろん プリペイド 携帯 電話
+∃ EVENT[2] ENTITY[1] (
+ プリペイド_携帯_電話(ENTITY[1]) ∧
+  ADV_もちろん(EVENT[2]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[Ｊ−ＳＡ０６：ｖｏｄａｆｏｎｅ→ｓｏｆｔｂａｎｋ] ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 32_blog_KNB_001_Keitai_1-1-7-01;NJ
+# ::snt 液晶 切れ だ と 思わ れる の だ が 修理 する と その間 の 連絡 が 困る ので そして 現実 の 使用 の 上 で は そんな に 困る こと も ない ので 、 今 の もの を 使い ながら 完璧 に 壊れる 他 の 携帯 を 手 に 入れ よう と 携帯 電話 に関する 情報 を 仕入れ 始め まし た 。
+∃ SITUATION[21] ENTITY[16] SITUATION[15] SITUATION[8] SITUATION[7] ENTITY[6] ENTITY[2] SITUATION[1] EVENT[4] EVENT[5] EVENT[12] EVENT[17] EVENT[24] EVENT[29] ENTITY[3] ENTITY[20] ENTITY[23] ENTITY[22] ENTITY[25] ENTITY[19] ENTITY[28] ENTITY[27] ENTITY[11] ENTITY[10] ENTITY[9] (
+ 現実(ENTITY[11]) ∧
+  の_使用(ENTITY[11], ENTITY[10]) ∧
+   の_上(ENTITY[10], ENTITY[9]) ∧
+    ENTITY[2] = *pro* ∧
+     液晶_切れ(ENTITY[3]) ∧
+      と(SITUATION[1], だ(EVENT[4], ENTITY[2], ENTITY[3])) ∧
+       ENTITY[6] = *pro*{ENTITY[3]} ∧
+        こと(SITUATION[8], 困る(EVENT[12]) ∧ で(EVENT[12]) = ENTITY[9]) ∧
+         FACT(SITUATION[7], ¬ ∃ EVENT[14] xxx(EVENT[14], SITUATION[8])) ∧
+          ENTITY[16] = *pro*{ENTITY[6], ENTITY[9], ENTITY[10], ENTITY[11], ENTITY[3]} ∧
+           他(ENTITY[20]) ∧
+            の_携帯(ENTITY[20], ENTITY[19]) ∧
+             今(ENTITY[23]) ∧
+              の_もの(ENTITY[23], ENTITY[22]) ∧
+               FACT(SITUATION[21], 使い(EVENT[24], ENTITY[19], ENTITY[22])) ∧
+                手(ENTITY[25]) ∧
+                 FACT(SITUATION[15],
+                  壊れる(EVENT[17], ENTITY[16]) ∧
+                   MD_よう(∃ EVENT[26] (
+                         入れ(EVENT[26], ENTITY[6], ENTITY[19]) ∧
+                          に(EVENT[26]) = ENTITY[25] ∧ ながら(EVENT[26]) = SITUATION[21]))) ∧
+                  携帯_電話(ENTITY[28]) ∧
+                   に関する_情報(ENTITY[28], ENTITY[27]) ∧
+                    past(EVENT[5]) ∧
+                     ADV_そんな_に(EVENT[12]) ∧
+                      ADV_完璧_に(EVENT[17]) ∧
+                       past(EVENT[29]) ∧
+                        CONJ_が(思わ_の_だ(EVENT[5], _, SITUATION[1]),
+                         仕入れ_始め_まし_た(EVENT[29], ENTITY[6], ENTITY[27]) ∧ と(EVENT[29]) = SITUATION[15] ∧
+                          LINK(EVENT[29]) = SITUATION[7]))
+
+# ::id 33_blog_KNB_001_Keitai_1-1-7-02a;NJ
+# ::snt プリペイド で は 代替 機 を 出せ ませ ん と いわ れ て しまい まし た 。
+∃ ENTITY[2] SITUATION[1] EVENT[6] ENTITY[3] (
+ プリペイド(ENTITY[3]) ∧
+  ENTITY[2] = *pro* ∧
+   と(SITUATION[1],
+    ¬ ∃ EVENT[5] ENTITY[4] (
+          代替_機(ENTITY[4]) ∧
+           出せ_ませ(EVENT[5], ENTITY[2], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3])) ∧
+    past(EVENT[6]) ∧ いわ_て_しまい_まし_た(EVENT[6], _, SITUATION[1]))
+
+# ::id 34_blog_KNB_001_Keitai_1-1-7-02b;NJ
+# ::snt 早くも ここ に 弱点 が ．．
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = ここ ∧
+  弱点(ENTITY[2]) ∧ ADV_早くも(EVENT[3]) ∧ xxx(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 35_blog_KNB_001_Keitai_1-1-7-03;NJ
+# ::snt 画面 が 見え なく なる 前 に
+∃ SITUATION[1] EVENT[4] ENTITY[2] (
+ 画面(ENTITY[2]) ∧
+  前(SITUATION[1], ¬ ∃ EVENT[3] 見え_なる(EVENT[3], ENTITY[2])) ∧ xxx(EVENT[4]) ∧ に(EVENT[4]) = SITUATION[1])
+
+# ::id 36_blog_KNB_001_Keitai_1-1-8-01;NJ
+# ::snt ２ 年 前 に 買い換え た 時 と さほど 変化 は あり ませ ん でし た が 、 結局 プリペイドサービス が 圧倒的 に 値段 の 上 で は 有利 だ という 見解 に 落ち着き まし た 。
+∃ SITUATION[9] ENTITY[4] SITUATION[3] ENTITY[1] EVENT[6] EVENT[13] EVENT[16] ENTITY[5] ENTITY[10] ENTITY[2] ENTITY[7] ENTITY[12] ENTITY[11] (
+ 変化(ENTITY[7]) ∧
+  値段(ENTITY[12]) ∧
+   の_上(ENTITY[12], ENTITY[11]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[4] = *pro*{ENTITY[1]} ∧
+      (CD_２_年(ENTITY[5]), 前(ENTITY[5])) ∧
+       時(SITUATION[3], 買い換え_た(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5]) ∧
+        プリペイドサービス(ENTITY[10]) ∧
+         THAT_見解(CONJ_が(FACT(SITUATION[9],
+                    ¬ ∃ EVENT[8] (
+                          past(EVENT[8]) ∧
+                           あり_ませ_でし_た(EVENT[8], ENTITY[7]) ∧ と(EVENT[8]) = SITUATION[3])),
+               有利_だ(EVENT[13], ENTITY[10]) ∧ で(EVENT[13]) = ENTITY[11]), ENTITY[2]) ∧
+          past(EVENT[6]) ∧
+           ADV_さほど(SITUATION[9]) ∧
+            ADV_結局(EVENT[13]) ∧
+             ADV_圧倒的_に(EVENT[13]) ∧
+              past(EVENT[16]) ∧ 落ち着き_まし_た(EVENT[16], ENTITY[1]) ∧ に(EVENT[16]) = ENTITY[2])
+
+# ::id 37_blog_KNB_001_Keitai_1-1-9-01;NJ
+# ::snt ここ で 私 は ２ つ の 選択肢 を 迫ら れ まし た 。
+∃ ENTITY[1] ENTITY[2] EVENT[5] ENTITY[4] ENTITY[3] (
+ ENTITY[2] = 私 ∧
+  ENTITY[1] = ここ ∧
+   CD_２_つ(ENTITY[4]) ∧
+    の_選択肢(ENTITY[4], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ 迫ら_まし_た(EVENT[5], _, ENTITY[3], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[1])

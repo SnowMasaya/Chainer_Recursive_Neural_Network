@@ -1,0 +1,1373 @@
+% ::id 1_nonfiction_BEETON-1861;AT2156-1;NE
+% ::snt DUTIES OF THE BUTLER .
+fof(ex1414051806345,axiom,(
+    ? [X1,G2,E3] :
+      ( butler__1(s0,X1)
+      & is_duties__of__2(s0,G2,X1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,G2) ) )).
+
+% ::id 2_nonfiction_BEETON-1861;AT2157-1;NE
+% ::snt The domestic duties of the butler are to bring in the eatables at breakfast , and wait upon the family at that meal , assisted by the footman , and see to the cleanliness of everything at table .
+fof(ex1414051806681,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,E9,E10,E11,E12,E13] :
+      ( butler_1(s0,X1)
+      & breakfast_1(s0,X2)
+      & family_1(s0,X5)
+      & meal_1(s0,X4)
+      & footman_1(s0,X3)
+      & ! [X14,X15] :
+          ( ( table_1(s0,X14)
+            & is_thing_at_2(s0,X15,X14) )
+         => is_cleanliness_of_2(s0,X6,X15) )
+      & domestic_1(s0,G8)
+      & is_duties_of_2(s0,G8,X1)
+      & is_eatables_at_2(s0,G7,X2)
+      & ? [S16] :
+          ( are_3(s0,E13,G8,S16)
+          & bring_in_3(S16,E9,G8,G7)
+          & assisted_3(S16,E10,X3,G8)
+          & wait_2(S16,E11,G8)
+          & upon_2(S16,E11,X5)
+          & at_2(S16,E11,X4)
+          & see_2(S16,E12,G8)
+          & to_2(S16,E12,X6) ) ) )).
+
+% ::id 3_nonfiction_BEETON-1861;AT2157-2;NE
+% ::snt On taking away , he removes the tray with the china and plate , for which he is responsible .
+fof(ex1414051807012,axiom,(
+    ? [X11,X1,X2,X3,G4,G5,A12,E6,X9,E7,E8,S10] :
+      ( china_1(s0,X1)
+      & plate_1(s0,X2)
+      & choose3(X11,X2,X1,X9)
+      & is_3(s0,E6,X11,A12)
+      & for_2(s0,E6,X3)
+      & is_tray_with_2(s0,X3,G5)
+      & is_of_2(s0,X1,G4)
+      & is_of_2(s0,X2,G4)
+      & G5 = G4
+      & responsible_1(s0,A12)
+      & away_1(s0,E7)
+      & ? [S13] :
+          ( fact_2(s0,S10,S13)
+          & taking_2(S13,E7,X9) )
+      & removes_3(s0,E8,X9,X3)
+      & on_2(s0,E8,S10) ) )).
+
+% ::id 4_nonfiction_BEETON-1861;AT2157-3;NE
+% ::snt At luncheon , he arranges the meal , and waits unassisted , the footman being now engaged in other duties .
+fof(ex1414051807336,axiom,(
+    ? [X1,X2,X7,X3,E4,E5,E6] :
+      ( meal_1(s0,X1)
+      & footman_1(s0,X2)
+      & luncheon_1(s0,X3)
+      & now_1(s0,E5)
+      & arranges_3(s0,E4,X7,X1)
+      & at_2(s0,E4,X3)
+      & unassisted_1(s0,X7)
+      & ? [G8] :
+          ( duties_1(s0,G8)
+          & engaged_3(s0,E5,unspecified,X2)
+          & in_2(s0,E5,G8) )
+      & waits_2(s0,E6,X7)
+      & at_2(s0,E6,X3) ) )).
+
+% ::id 5_nonfiction_BEETON-1861;AT2157-4;NE
+% ::snt At dinner , he places the silver and plated articles on the table , sees that everything is in its place , and rectifies what is wrong .
+fof(ex1414051807685,axiom,(
+    ? [X1,G2,G3,G4,G5,X9,X6,E7,E8] :
+      ( table_1(s0,X1)
+      & silver_articles_1(s0,G2)
+      & plated_1(s0,G3)
+      & articles_1(s0,G3)
+      & is_of_2(s0,G2,G4)
+      & is_of_2(s0,G3,G4)
+      & G5 = G4
+      & dinner_1(s0,X6)
+      & places_3(s0,E7,X9,G5)
+      & on_2(s0,E7,X1)
+      & at_2(s0,E7,X6)
+      & ? [S18] :
+          ( sees_3(s0,E8,X9,S18)
+          & ! [X10] :
+              ( thing_1(S18,X10)
+             => ? [X13,X11,E12] :
+                  ( choose4(X13,X10,X6,X9,X1)
+                  & is_place_of_2(S18,X11,X13)
+                  & is_2(S18,E12,X10)
+                  & in_2(S18,E12,X11) ) ) )
+      & at_2(s0,E8,X6)
+      & ? [X14,A16,E15] :
+          ( is_3(s0,E15,X14,A16)
+          & wrong_1(s0,A16)
+          & ? [E17] :
+              ( rectifies_3(s0,E17,X9,X14)
+              & at_2(s0,E17,X6) ) ) ) )).
+
+% ::id 6_nonfiction_BEETON-1861;AT2157-5;NE
+% ::snt He carries in the first dish , and announces in the drawing-room that dinner is on the table , and respectfully stands by the door until the company are seated , when he takes his place behind his master's chair on the left , to remove the covers , handing them to the other attendants to carry out .
+fof(ex1414051808057,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,X24,X23,X22,X21,X8,X9,X10,X11,G26,E12,E13,E14,E15,E16,E17,E18,E19,E20,S28,S25] :
+      ( first_1(s0,X1)
+      & dish_1(s0,X1)
+      & drawing_room_1(s0,X3)
+      & table_1(s0,X2)
+      & company_1(s0,X5)
+      & left_1(s0,X4)
+      & door_1(s0,X6)
+      & covers_1(s0,G7)
+      & dinner_1(s0,X8)
+      & choose6(X22,X5,X21,X3,X2,X1,X8)
+      & choose7(X23,X22,X5,X21,X3,X2,X1,X8)
+      & choose8(X24,X23,X22,X5,X21,X3,X2,X1,X8)
+      & is_master_of_2(s0,X9,X24)
+      & is_chair_of__2(s0,X10,X9)
+      & is_place_on_2(s0,X11,X4)
+      & is_place_behind_2(s0,X11,X10)
+      & is_place_of___2(s0,X11,X23)
+      & respectfully_1(s0,E20)
+      & ? [S29] :
+          ( fact_2(s0,S28,S29)
+          & carry_out_2(S29,E15,G26) )
+      & ? [S30] :
+          ( fact_2(s0,S25,S30)
+          & ? [G27] :
+              ( attendants_1(S30,G27)
+              & handing_3(S30,E16,G7,G26)
+              & to_2(S30,E16,G27)
+              & prp_2(S30,E16,S28) )
+          & remove_3(S30,E17,X11,G7) )
+      & carries_2(s0,E12,X21)
+      & in_2(s0,E12,X1)
+      & ? [S31] :
+          ( announces_3(s0,E14,X21,S31)
+          & is_2(S31,E13,X8)
+          & on_2(S31,E13,X2) )
+      & in_2(s0,E14,X3)
+      & takes_3(s0,E18,X22,X11)
+      & prp_2(s0,E18,S25)
+      & seated_3(s0,E19,unspecified,X5)
+      & stands_2(s0,E20,X21)
+      & by_2(s0,E20,X6) ) )).
+
+% ::id 7_nonfiction_BEETON-1861;AT2157-6;NE
+% ::snt After the first course of plates is supplied , his place is at the sideboard to serve the wines , but only when called on .
+fof(ex1414051808416,axiom,(
+    ? [X1,X2,G3,G4,G5,X15,X12,X6,E7,E8,E9,E10,E11,S14,S13] :
+      ( first_1(s0,X1)
+      & is_course_of_2(s0,X1,G3)
+      & sideboard_1(s0,X2)
+      & plates_1(s0,G3)
+      & wines_1(s0,G4)
+      & wines_1(s0,G5)
+      & is_place_of_2(s0,X6,X12)
+      & choose5(X15,X6,G4,X2,X1,G3)
+      & ? [S17] :
+          ( fact_2(s0,S14,S17)
+          & called_on_3(S17,E9,unspecified,X15) )
+      & ? [S18] :
+          ( fact_2(s0,S13,S18)
+          & serve_3(S18,E8,X6,G4)
+          & ? [S16] :
+              ( is_of_2(S18,S16,S14)
+              & serve_3(S18,E10,X6,G5)
+              & when_2(S18,E10,S16) ) )
+      & supplied_3(s0,E7,unspecified,X1)
+      & is_2(s0,E11,X6)
+      & at_2(s0,E11,X2)
+      & prp_2(s0,E11,S13) ) )).
+
+% ::id 8_nonfiction_BEETON-1861;AT2158-1;NE
+% ::snt The first course ended , he rings the cook's bell , and hands the dishes from the table to the other servants to carry away , receiving from them the second course , which he places on the table , removing the covers as before , and again taking his place at the sideboard .
+fof(ex1414051808797,axiom,(
+    ? [X1,X2,X3,G4,X8,X5,E6,E7] :
+      ( first_1(s0,X1)
+      & course_1(s0,X1)
+      & cook_1(s0,X2)
+      & table_1(s0,X3)
+      & is_dishes_from_2(s0,G4,X3)
+      & is_bell_of_2(s0,X5,X2)
+      & ended_3(s0,E6,unspecified,X1)
+      & rings_3(s0,E7,X8,X5)
+      & ? [G9] :
+          ( servants_1(s0,G9)
+          & ? [X25,X23,X10,X11,X12,X13,G14,E24,E15,E16,E17,G22,E18,E19,E20,S21] :
+              ( choose5(X23,X8,X3,X5,X2,X1)
+              & table_1(s0,X12)
+              & choose8(X25,X13,X23,X12,X8,X3,X5,X2,X1)
+              & is_place_of_2(s0,X11,X25)
+              & sideboard_1(s0,X10)
+              & second_1(s0,X13)
+              & removing_3(s0,E15,X13,G14)
+              & as_2(s0,E15,E24)
+              & taking_3(s0,E16,X13,X11)
+              & at_2(s0,E16,X10)
+              & places_3(s0,E17,X23,X13)
+              & on_2(s0,E17,X12)
+              & course_1(s0,X13)
+              & covers_1(s0,G14)
+              & before_1(s0,E24)
+              & again_1(s0,E16)
+              & choose1(G22,G9)
+              & away_1(s0,E18)
+              & ? [S26] :
+                  ( fact_2(s0,S21,S26)
+                  & carry_2(S26,E18,G4) )
+              & receiving_3(s0,E19,G4,X13)
+              & from_2(s0,E19,G22)
+              & hands_3(s0,E20,X8,G4)
+              & to_2(s0,E20,G9)
+              & prp_2(s0,E20,S21) ) ) ) )).
+
+% ::id 9_nonfiction_BEETON-1861;AT2159-1;NE
+% ::snt At dessert , the slips being removed , the butler receives the dessert from the other servants , and arranges it on the table , with plates and glasses , and then takes his place behind his master's chair to hand the wines and ices , while the footman stands behind his mistress for the same purpose , the other attendants leaving the room .
+fof(ex1414051809186,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,G8,X30,X28,X27,X23,X9,X10,X11,X12,X13,G14,S26,E15,E16,E17,E18,E19,E20,E21,S29] :
+      ( butler_1(s0,X6)
+      & dessert_1(s0,X1)
+      & table_1(s0,X2)
+      & footman_1(s0,X5)
+      & same_1(s0,X4)
+      & purpose_1(s0,X4)
+      & room_1(s0,X3)
+      & slips_1(s0,G7)
+      & wines_1(s0,G8)
+      & ices_1(s0,G8)
+      & dessert_1(s0,X13)
+      & choose1(X23,X1)
+      & choose4(X27,X6,X13,X2,X1)
+      & choose5(X28,X27,X6,X13,X2,X1)
+      & is_master_of_2(s0,X9,X28)
+      & is_chair_of__2(s0,X10,X9)
+      & is_place_behind_2(s0,X12,X10)
+      & is_place_of___2(s0,X12,X27)
+      & choose8(X30,X5,X12,X6,X13,X10,X9,X2,X1)
+      & is_mistress_of_2(s0,X11,X30)
+      & ? [G24] :
+          ( plates_1(s0,G24)
+          & is_of_2(s0,G24,G14) )
+      & ? [G25] :
+          ( glasses_1(s0,G25)
+          & is_of_2(s0,G25,G14) )
+      & then_1(s0,S26)
+      & ? [S32] :
+          ( fact_2(s0,S29,S32)
+          & ? [G31] :
+              ( attendants_1(S32,G31)
+              & leaving_3(S32,E18,G31,X3) )
+          & stands_2(S32,E19,X5)
+          & behind_2(S32,E19,X11)
+          & for_2(S32,E19,X4)
+          & hand_3(S32,E20,X12,G8) )
+      & removed_3(s0,E15,unspecified,G7)
+      & ? [G22] :
+          ( servants_1(s0,G22)
+          & receives_3(s0,E16,X6,X1)
+          & from_2(s0,E16,G22)
+          & at_2(s0,E16,X13) )
+      & arranges_3(s0,E17,X6,X23)
+      & on_2(s0,E17,X2)
+      & with_2(s0,E17,G14)
+      & at_2(s0,E17,X13)
+      & ? [S33] :
+          ( fact_2(s0,S26,S33)
+          & takes_3(S33,E21,X6,X12)
+          & prp_2(S33,E21,S29)
+          & at_2(S33,E21,X13) ) ) )).
+
+% ::id 10_nonfiction_BEETON-1861;AT2159-2;NE
+% ::snt Where the old-fashioned practice of having the dessert on the polished table , without any cloth , is still adhered to , the butler should rub off any marks made by the hot dishes before arranging the dessert .
+fof(ex1414051809550,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,E7,S9] :
+      ( butler_1(s0,X5)
+      & dessert_1(s0,X2)
+      & polished_1(s0,X1)
+      & table_1(s0,X1)
+      & old_fashioned_1(s0,X3)
+      & is_practice_of_2(s0,X3,S9)
+      & dessert_1(s0,X4)
+      & hot_1(s0,G6)
+      & dishes_1(s0,G6)
+      & ? [S15] :
+          ( fact_2(s0,S9,S15)
+          & ? [X10] :
+              ( cloth_1(S15,X10)
+              & having_3(S15,E7,unspecified,X2)
+              & on_2(S15,E7,X1)
+              & without_2(S15,E7,X10) ) )
+      & ! [E8] :
+          ( still_1(s0,E8)
+         => ( adhered_to_3(s0,E8,unspecified,X3)
+            & ? [E11,E12,E13,G14] :
+                ( made_3(s0,E11,G6,G14)
+                & marks_1(s0,G14)
+                & arranging_3(s0,E12,G14,X4)
+                & rub_off_3(s0,E13,X5,G14) ) ) ) ) )).
+
+% ::id 11_nonfiction_BEETON-1861;AT2160-1;NE
+% ::snt Before dinner , he has satisfied himself that the lamps , candles , or gas-burners are in perfect order , if not lighted , which will usually be the case .
+fof(ex1414051809901,axiom,(
+    ? [G1,G2,G3,G4,G5,X10,X9,X6,X7,E8] :
+      ( lamps_1(s0,G1)
+      & candles_1(s0,G2)
+      & gas_burners_1(s0,G3)
+      & is_of_2(s0,G1,G4)
+      & is_of_2(s0,G2,G4)
+      & is_of_2(s0,G3,G4)
+      & G5 = G4
+      & dinner_1(s0,X7)
+      & choose2(X10,X9,X7)
+      & perfect_1(s0,X6)
+      & order_1(s0,X6)
+      & ? [S16] :
+          ( has_satisfied_4(s0,E8,X9,X10,S16)
+          & ! [S11] :
+              ( ? [A12,E13] :
+                  ( case_1(S16,A12)
+                  & usually_1(S16,E13)
+                  & be_3(S16,E13,S11,A12) )
+             => ( ? [S17] :
+                    ( fact_2(S16,S11,S17)
+                    & ? [E14] : lighted_3(S17,E14,unspecified,G5) )
+                & ? [E15] :
+                    ( are_2(S16,E15,G5)
+                    & in_2(S16,E15,X6) ) ) ) )
+      & before_2(s0,E8,X7) ) )).
+
+% ::id 12_nonfiction_BEETON-1861;AT2160-2;NE
+% ::snt Having served every one with their share of the dessert , put the fires in order -LRB- when these are used -RRB- , and seen the lights are all right , at a signal from his master , he and the footman leave the room .
+fof(ex1414051810264,axiom,(
+    ? [X1,X2,X3,G4,G5,X22,X6,X7,X8,G20,G9,A21,E10,E11,E12,E13,E14] :
+      ( footman_1(s0,X1)
+      & dessert_1(s0,X2)
+      & room_1(s0,X3)
+      & fires_1(s0,G4)
+      & lights_1(s0,G5)
+      & order_1(s0,X6)
+      & choose3(X22,X2,X6,X1)
+      & is_master_of_2(s0,X7,X22)
+      & is_signal_from_2(s0,X8,X7)
+      & ? [X15] : is_of_2(s0,X15,G9)
+      & is_of_2(s0,X1,G9)
+      & choose2(G20,G4,G9)
+      & all_right_1(s0,A21)
+      & ! [X16] :
+        ? [X17,G19,E18] :
+          ( is_share_of_2(s0,X17,X2)
+          & is_share_of__2(s0,X17,G19)
+          & choose1(G19,G9)
+          & having_served_3(s0,E18,G9,X16)
+          & with_2(s0,E18,X17) )
+      & used_3(s0,E10,unspecified,G20)
+      & having_put_3(s0,E11,G9,G4)
+      & in_2(s0,E11,X6)
+      & ? [S23] :
+          ( having_seen_3(s0,E13,G9,S23)
+          & are_3(S23,E12,G5,A21) )
+      & leave_3(s0,E14,G9,X3)
+      & at_2(s0,E14,X8) ) )).
+
+% ::id 13_nonfiction_BEETON-1861;AT2161-1;NE
+% ::snt He now proceeds to the drawing-room , arranges the fireplace , and sees to the lights ;
+fof(ex1414051810591,axiom,(
+    ? [X1,X2,G3,X7,E4,E5,E6] :
+      ( drawing_room_1(s0,X1)
+      & fireplace_1(s0,X2)
+      & lights_1(s0,G3)
+      & now_1(s0,E4)
+      & proceeds_2(s0,E4,X7)
+      & to_2(s0,E4,X1)
+      & arranges_3(s0,E5,X7,X2)
+      & sees_2(s0,E6,X7)
+      & to_2(s0,E6,G3) ) )).
+
+% ::id 14_nonfiction_BEETON-1861;AT2161-2;NE
+% ::snt he then returns to his pantry , prepared to answer the bell , and attend to the company , while the footman is clearing away and cleaning the plate and glasses .
+fof(ex1414051810942,axiom,(
+    ? [X1,X2,X3,X4,G5,G6,G7,X17,X15,X8,S16,E9,E10,E11,E12,E13,E14] :
+      ( footman_1(s0,X2)
+      & plate_1(s0,X1)
+      & bell_1(s0,X3)
+      & company_1(s0,X4)
+      & glasses_1(s0,G5)
+      & is_of_2(s0,X1,G6)
+      & is_of_2(s0,G5,G6)
+      & G7 = G6
+      & choose2(X15,X2,X1)
+      & choose3(X17,X15,X2,X1)
+      & is_pantry_of_2(s0,X8,X17)
+      & away_1(s0,E9)
+      & then_1(s0,S16)
+      & is_clearing_3(s0,E9,X2,G7)
+      & is_cleaning_3(s0,E10,X2,G7)
+      & ? [S18] :
+          ( fact_2(s0,S16,S18)
+          & ? [S19] :
+              ( prepared_4(S18,E13,unspecified,X15,S19)
+              & answer_3(S19,E11,X15,X3)
+              & attend_2(S19,E12,X15)
+              & to_2(S19,E12,X4) )
+          & returns_2(S18,E14,X15)
+          & to_2(S18,E14,X8) ) ) )).
+
+% ::id 15_nonfiction_BEETON-1861;AT2162-1;NE
+% ::snt At tea he again attends .
+fof(ex1414051811250,axiom,(
+    ? [X3,X1,E2] :
+      ( tea_1(s0,X1)
+      & again_1(s0,E2)
+      & attends_2(s0,E2,X3)
+      & at_2(s0,E2,X1) ) )).
+
+% ::id 16_nonfiction_BEETON-1861;AT2162-2;NE
+% ::snt At bedtime he appears with the candles ;
+fof(ex1414051811556,axiom,(
+    ? [G1,X4,X2,E3] :
+      ( candles_1(s0,G1)
+      & bedtime_1(s0,X2)
+      & appears_2(s0,E3,X4)
+      & at_2(s0,E3,X2)
+      & with_2(s0,E3,G1) ) )).
+
+% ::id 17_nonfiction_BEETON-1861;AT2162-3;NE
+% ::snt he locks up the plate , secures doors and windows , and sees that all the fires are safe .
+fof(ex1414051811874,axiom,(
+    ? [X1,X7,G2,A11,E3,E4,E5,E6] :
+      ( plate_1(s0,X1)
+      & ? [G8] :
+          ( doors_1(s0,G8)
+          & is_of_2(s0,G8,G2) )
+      & ? [G9] :
+          ( windows_1(s0,G9)
+          & is_of_2(s0,G9,G2) )
+      & safe_1(s0,A11)
+      & locks_up_3(s0,E3,X7,X1)
+      & secures_3(s0,E4,X7,G2)
+      & ? [S12] :
+          ( sees_3(s0,E6,X7,S12)
+          & ? [G10] :
+              ( fires_1(S12,G10)
+              & are_3(S12,E5,G10,A11) ) ) ) )).
+
+% ::id 18_nonfiction_BEETON-1861;AT2163-1;NE
+% ::snt In addition to these duties , the butler , where only one footman is kept , will be required to perform some of the duties of the valet , to pay bills , and superintend the other servants .
+fof(ex1414051812222,axiom,(
+    ? [X1,X2,G3,G4] :
+      ( butler_1(s0,X2)
+      & valet_1(s0,X1)
+      & duties_1(s0,G3)
+      & is_duties_of_2(s0,G4,X1)
+      & ? [X5,X6,X7,G8,E9,E10,E11,E12] :
+          ( is_addition_to_2(s0,X7,G3)
+          & one_1(s0,X5)
+          & footman_1(s0,X5)
+          & is_of_2(s0,X6,G4)
+          & bills_1(s0,G8)
+          & ? [X13] :
+              ( is_of_2(s0,X13,X5)
+              & ? [E14] : kept_3(s0,E14,unspecified,X13) )
+          & ? [S16] :
+              ( required_4(s0,E12,unspecified,X2,S16)
+              & perform_3(S16,E9,X2,X6)
+              & pay_3(S16,E10,X2,G8)
+              & ? [G15] :
+                  ( servants_1(S16,G15)
+                  & superintend_3(S16,E11,X2,G15) ) )
+          & in_2(s0,E12,X7) ) ) )).
+
+% ::id 19_nonfiction_BEETON-1861;AT2163-2;NE
+% ::snt But the real duties of the butler are in the wine-cellar ;
+fof(ex1414051812533,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( butler_1(s0,X1)
+      & wine_cellar_1(s0,X2)
+      & real_1(s0,G3)
+      & is_duties_of_2(s0,G3,X1)
+      & are_2(s0,E4,G3)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 20_nonfiction_BEETON-1861;AT2163-3;NE
+% ::snt there he should be competent to advise his master as to the price and quality of the wine to be laid in ; " fine , " bottle , cork , and seal it , and place it in the binns .
+fof(ex1414051812882,axiom,(
+    ? [X1,X2,X3,G4,G5,G6,E7,X9,X8] :
+      ( laid_in_3(s0,E7,unspecified,X1)
+      & wine_1(s0,X1)
+      & price_1(s0,X2)
+      & quality_1(s0,X3)
+      & is_of_2(s0,G5,X1)
+      & is_of_2(s0,X2,G4)
+      & is_of_2(s0,X3,G4)
+      & G5 = G4
+      & binns_1(s0,G6)
+      & ? [X21,X20,X19,X10,A18,E11,E12,E13,E14,E15,E16,E17] :
+          ( choose2(X19,X8,X9)
+          & is_master_of_2(s0,X10,X19)
+          & choose6(X20,X3,X2,X1,X10,X8,X9)
+          & choose6(X21,X3,X2,X1,X10,X8,X9)
+          & ? [S22] :
+              ( competent_2(s0,A18,S22)
+              & advise_3(S22,E11,unspecified,X10)
+              & as_to_2(S22,E11,G5)
+              & fine_1(S22,E12)
+              & bottle_1(S22,E13)
+              & cork_1(S22,E14)
+              & seal_3(S22,E15,unspecified,X20)
+              & place_3(S22,E16,unspecified,X21)
+              & in_2(S22,E16,G6) )
+          & be_3(s0,E17,X9,A18)
+          & loc_2(s0,E17,X8) ) ) )).
+
+% ::id 21_nonfiction_BEETON-1861;AT2163-4;NE
+% ::snt Brewing , racking , and bottling malt liquors , belong to his office , as well as their distribution .
+fof(ex1414051813205,axiom,(
+    ? [X9,X1,X2,G10,G3,E4,E5,E6,E7,S8] :
+      ( is_office_of_2(s0,X2,X9)
+      & is_distribution_of_2(s0,X1,G10)
+      & malt_liquors_1(s0,G3)
+      & choose1(G10,G3)
+      & is_as_well_as_2(s0,E7,X1)
+      & ? [S11] :
+          ( fact_2(s0,S8,S11)
+          & brewing_3(S11,E4,unspecified,G3)
+          & racking_3(S11,E5,unspecified,G3)
+          & bottling_3(S11,E6,unspecified,G3) )
+      & belong_2(s0,E7,S8)
+      & to_2(s0,E7,X2) ) )).
+
+% ::id 22_nonfiction_BEETON-1861;AT2163-5;NE
+% ::snt These and other drinkables are brought from the cellar every day by his own hands , except where an under-butler is kept ; and a careful entry of every bottle used , entered in the cellar-book ; so that the book should always show the contents of the cellar .
+fof(ex1414051813559,axiom,(
+    ? [X1,X2,X3,X4,G5,G6] :
+      ( cellar_1(s0,X4)
+      & cellar_book_1(s0,X3)
+      & book_1(s0,X2)
+      & cellar_1(s0,X1)
+      & is_contents_of_2(s0,G5,X1)
+      & ? [G7] : is_of_2(s0,G7,G6)
+      & ? [G8] :
+          ( drinkables_1(s0,G8)
+          & is_of_2(s0,G8,G6) )
+      & ! [T9] :
+          ( day_1(s0,T9)
+         => ? [X11,G10] :
+              ( choose1(X11,X4)
+              & own_1(s0,G10)
+              & is_hands_of_2(s0,G10,X11)
+              & ! [X12,E13] :
+                  ( under_butler_1(s0,X12)
+                 => ( kept_3(s0,E13,unspecified,X12)
+                    & ? [X14,E15,E16] :
+                        ( careful_1(s0,X14)
+                        & ! [X17,E18] :
+                            ( ( used_3(s0,E18,unspecified,X17)
+                              & bottle_1(s0,X17) )
+                           => is_entry_of_2(s0,X14,X17) )
+                        & ? [E19] :
+                            ( always_1(s0,E19)
+                            & show_3(s0,E19,X2,G5) )
+                        & entered_3(s0,E15,unspecified,X14)
+                        & in_2(s0,E15,X3)
+                        & brought_3(s0,E16,G10,G6)
+                        & from_2(s0,E16,X4)
+                        & tmp_2(s0,E16,T9) ) ) ) ) ) ) )).
+
+% ::id 23_nonfiction_BEETON-1861;AT2164-1;NE
+% ::snt The office of butler is thus one of very great trust in a household .
+fof(ex1414051813891,axiom,(
+    ? [X1,X2,X3,X4,X5,E6] :
+      ( butler_1(s0,X1)
+      & is_office_of_2(s0,X2,X1)
+      & household_1(s0,X3)
+      & very_great_1(s0,X4)
+      & is_trust_in_2(s0,X4,X3)
+      & is_one_of_2(s0,X5,X4)
+      & thus_1(s0,E6)
+      & is_3(s0,E6,X2,X5) ) )).
+
+% ::id 24_nonfiction_BEETON-1861;AT2164-2;NE
+% ::snt Here , as elsewhere , honesty is the best policy :
+fof(ex1414051814214,axiom,(
+    ? [X1,X2,E3] :
+      ( best_1(s0,X1)
+      & policy_1(s0,X1)
+      & honesty_1(s0,X2)
+      & here_1(s0,E3)
+      & as_elsewhere_1(s0,E3)
+      & is_3(s0,E3,X2,X1) ) )).
+
+% ::id 25_nonfiction_BEETON-1861;AT2164-3;NE
+% ::snt the butler should make it his business to understand the proper treatment of the different wines under his charge , which he can easily do from the wine-merchant , and faithfully attend to it ;
+fof(ex1414051814568,axiom,(
+    ? [X14,X13,X1,X2,X3,X4,G5] :
+      ( butler_1(s0,X4)
+      & choose3(X13,X4)
+      & is_charge_of_2(s0,X1,X13)
+      & choose4(X14,X1,X4)
+      & wine_merchant_1(s0,X2)
+      & proper_1(s0,X3)
+      & ? [E15] :
+          ( easily_1(s0,E15)
+          & do_3(s0,E15,X14,X3)
+          & from_2(s0,E15,X2) )
+      & is_treatment_of_2(s0,X3,G5)
+      & different_1(s0,G5)
+      & is_wines_under_2(s0,G5,X1)
+      & ? [X16,X12,X11,X6,E7,E8,E9,E10] :
+          ( choose1(X11,X4)
+          & choose2(X12,X11,X4)
+          & choose6(X16,X3,X2,X1,X12,X11,X4)
+          & is_business_of_2(s0,X6,X12)
+          & faithfully_1(s0,E8)
+          & ? [S18] :
+              ( make_3(s0,E10,X4,S18)
+              & is_3(S18,E9,X11,X6) ) ) ) )).
+
+% ::id 26_nonfiction_BEETON-1861;AT2164-4;NE
+% ::snt his own reputation will soon compensate for the absence of bribes from unprincipled wine-merchants , if he serves a generous and hospitable master .
+fof(ex1414051814910,axiom,(
+    ? [X1,X2,G3,G4] :
+      ( generous_1(s0,X1)
+      & hospitable_1(s0,X1)
+      & master_1(s0,X1)
+      & is_absence_of_2(s0,X2,G4)
+      & unprincipled_1(s0,G3)
+      & wine_merchants_1(s0,G3)
+      & is_bribes_from_2(s0,G4,G3)
+      & ! [X6,E5] :
+          ( serves_3(s0,E5,X6,X1)
+          & ? [X8,X7] :
+              ( choose1(X8,X1)
+              & own_1(s0,X7)
+              & is_reputation_of_2(s0,X7,X8)
+              & ? [E9] :
+                  ( soon_1(s0,E9)
+                  & compensate_2(s0,E9,X7)
+                  & for_2(s0,E9,X2) ) ) ) ) )).
+
+% ::id 27_nonfiction_BEETON-1861;AT2164-5;NE
+% ::snt Nothing spreads more rapidly in society than the reputation of a good wine-cellar ,
+fof(ex1414051815227,axiom,(
+    ? [X1,X2] :
+      ( good_1(s0,X1)
+      & wine_cellar_1(s0,X1)
+      & is_reputation_of_2(s0,X2,X1)
+      & ? [X3,X4,E5] :
+          ( thing_1(s0,X4)
+          & society_1(s0,X3)
+          & is_more_rapidly_than_2(s0,E5,X2)
+          & is_more_rapidly_in_2(s0,E5,X3)
+          & spreads_2(s0,E5,X4) ) ) )).
+
+% ::id 28_nonfiction_BEETON-1861;AT2164-6;NE
+% ::snt and all that is required is wines well chosen and well cared for ;
+fof(ex1414051815548,axiom,(
+    ? [G1,E2,E3,E4,E5] :
+      ( chosen_3(s0,E3,unspecified,G1)
+      & cared_for_3(s0,E4,unspecified,G1)
+      & wines_1(s0,G1)
+      & well_1(s0,E3)
+      & well_1(s0,E4)
+      & ? [X6] :
+          ( required_3(s0,E2,unspecified,X6)
+          & is_3(s0,E5,X6,G1) ) ) )).
+
+% ::id 29_nonfiction_BEETON-1861;AT2164-7;NE
+% ::snt and this a little knowledge , carefully applied , will soon supply .
+fof(ex1414051815862,axiom,(
+    ? [X1,E2] :
+      ( little_1(s0,X1)
+      & applied_3(s0,E2,unspecified,X1)
+      & knowledge_1(s0,X1)
+      & carefully_1(s0,E2)
+      & ? [X4,E3] :
+          ( soon_1(s0,E3)
+          & supply_3(s0,E3,X1,X4) ) ) )).
+
+% ::id 30_nonfiction_BEETON-1861;AT2165-1;NE
+% ::snt The butler , we have said , has charge of the contents of the cellars ,
+fof(ex1414051816177,axiom,(
+    ? [X2,E1,S8] :
+      ( have_said_3(s0,E1,X2,S8)
+      & ? [X3,G4,G5,X6,E7] :
+          ( butler_1(S8,X3)
+          & cellars_1(S8,G4)
+          & is_contents_of_2(S8,G5,G4)
+          & is_charge_of_2(S8,X6,G5)
+          & has_3(S8,E7,X3,X6) ) ) )).
+
+% ::id 31_nonfiction_BEETON-1861;AT2165-2;NE
+% ::snt and it is his duty to keep them in a proper condition , to fine down wine in wood , bottle it off , and store it away in places suited to the sorts .
+fof(ex1414051816536,axiom,(
+    ? [G1,X18,X16,X15,X2,X3,X4,X5,G14,G6,S17,E7,E8,E9,E10,E11,E12,S13] :
+      ( sorts_1(s0,G1)
+      & proper_1(s0,X2)
+      & condition_1(s0,X2)
+      & wood_1(s0,X3)
+      & is_wine_in_2(s0,X4,X3)
+      & choose3(X15,X4,X3,X2)
+      & choose3(X16,X4,X3,X2)
+      & choose3(X18,X4,X3,X2)
+      & is_duty_of_2(s0,X5,X18)
+      & suited_3(s0,E10,unspecified,G6)
+      & to_2(s0,E10,G1)
+      & places_1(s0,G6)
+      & away_1(s0,S17)
+      & ? [S19] :
+          ( fact_2(s0,S13,S19)
+          & keep_3(S19,E7,unspecified,G14)
+          & in_2(S19,E7,X2)
+          & fine_down_3(S19,E8,unspecified,X4)
+          & bottle_off_3(S19,E9,unspecified,X15)
+          & ? [S20] :
+              ( fact_2(S19,S17,S20)
+              & store_3(S20,E11,unspecified,X16)
+              & in_2(S20,E11,G6) ) )
+      & is_3(s0,E12,S13,X5) ) )).
+
+% ::id 32_nonfiction_BEETON-1861;AT2165-3;NE
+% ::snt Where wine comes into the cellar ready bottled , it is usual to return the same number of empty bottles ;
+fof(ex1414051816865,axiom,(
+    ? [X1,X2,G3,E4,S5] :
+      ( same_1(s0,X1)
+      & is_number_of_2(s0,X1,G3)
+      & cellar_1(s0,X2)
+      & empty_1(s0,G3)
+      & bottles_1(s0,G3)
+      & ? [S10] :
+          ( fact_2(s0,S5,S10)
+          & return_3(S10,E4,unspecified,X1) )
+      & ! [X6,E7] :
+          ( wine_1(s0,X6)
+         => ( ready_bottled_1(s0,X6)
+            & comes_2(s0,E7,X6)
+            & into_2(s0,E7,X2)
+            & ? [A9,E8] :
+                ( usual_1(s0,A9)
+                & is_3(s0,E8,S5,A9) ) ) ) ) )).
+
+% ::id 33_nonfiction_BEETON-1861;AT2165-4;NE
+% ::snt the butler has not , in this case , the same inducements to keep the bottles of the different sorts separated ;
+fof(ex1414051817186,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7] :
+      ( butler_1(s0,X2)
+      & case_1(s0,X1)
+      & different_1(s0,G3)
+      & separated_3(s0,E6,unspecified,G3)
+      & sorts_1(s0,G3)
+      & is_bottles_of_2(s0,G4,G3)
+      & same_1(s0,G5)
+      & ? [S9] :
+          ( inducements_2(s0,G5,S9)
+          & keep_3(S9,E7,unspecified,G4) )
+      & ? [E8] :
+          ( has_3(s0,E8,X2,G5)
+          & in_2(s0,E8,X1) ) ) )).
+
+% ::id 34_nonfiction_BEETON-1861;AT2165-5;NE
+% ::snt but where the wine is bottled in the house , he will find his account , not only in keeping them separate , but in rinsing them well , and even washing them with clean water as soon as they are empty .
+fof(ex1414051817549,axiom,(
+    ? [X1,X2,X3] :
+      ( wine_1(s0,X2)
+      & house_1(s0,X1)
+      & ! [E4] :
+          ( bottled_3(s0,E4,unspecified,X2)
+          & in_2(s0,E4,X1)
+          & ? [X12,X5,X6,G18,G17,G14,E7,E8,E9,E10,E11,S16,S13] :
+              ( choose3(X12,X3,X2,X1)
+              & is_account_of_2(s0,X6,X12)
+              & clean_1(s0,X5)
+              & water_1(s0,X5)
+              & well_1(s0,E9)
+              & ? [G21,A22,T19,E20] :
+                  ( choose1(G21,G18)
+                  & empty_1(s0,A22)
+                  & are_3(s0,E20,G21,A22)
+                  & tmp_2(s0,E20,T19)
+                  & is_as_soon_as_2(s0,E10,T19) )
+              & ? [S23] :
+                  ( fact_2(s0,S13,S23)
+                  & separate_1(S23,G14)
+                  & keeping_3(S23,E7,X6,G14) )
+              & ? [S24] :
+                  ( fact_2(s0,S16,S24)
+                  & rinsing_3(S24,E9,X6,G17)
+                  & even_washing_3(S24,E10,X6,G18)
+                  & with_2(S24,E10,X5) )
+              & ? [S15] :
+                  ( is_of_2(s0,S15,S13)
+                  & find_3(s0,E8,X3,X6)
+                  & in_2(s0,E8,S15) )
+              & find_3(s0,E11,X3,X6)
+              & in_2(s0,E11,S16) ) ) ) )).
+
+% ::id 35_nonfiction_BEETON-1861;AT2166-1;NE
+% ::snt There are various modes of fining wine :
+fof(ex1414051817864,axiom,(
+    ? [X1,G2,E3] :
+      ( fining_1(s0,X1)
+      & wine_1(s0,X1)
+      & various_1(s0,G2)
+      & is_modes_of_2(s0,G2,X1)
+      & are_2(s0,E3,G2) ) )).
+
+% ::id 36_nonfiction_BEETON-1861;AT2166-2;NE
+% ::snt isinglass , gelatine , and gum Arabic are all used for the purpose .
+fof(ex1414051818181,axiom,(
+    ? [X1,G2,E3] :
+      ( purpose_1(s0,X1)
+      & ? [X4] :
+          ( isinglass_1(s0,X4)
+          & is_of_2(s0,X4,G2) )
+      & ? [X5] :
+          ( gelatine_1(s0,X5)
+          & is_of_2(s0,X5,G2) )
+      & ? [X6] :
+          ( gum_arabic_1(s0,X6)
+          & is_of_2(s0,X6,G2) )
+      & ? [X7] :
+          ( is_of_2(s0,X7,G2)
+          & used_3(s0,E3,unspecified,X7)
+          & for_2(s0,E3,X1) ) ) )).
+
+% ::id 37_nonfiction_BEETON-1861;AT2166-3;NE
+% ::snt Whichever of these articles is used , the process is always the same .
+fof(ex1414051818508,axiom,(
+    ? [X1,X2,G3] :
+      ( process_1(s0,X2)
+      & same_1(s0,X1)
+      & articles_1(s0,G3)
+      & ? [X4,E5] :
+          ( is_of_2(s0,X4,G3)
+          & used_3(s0,E5,unspecified,X4)
+          & ? [E6] :
+              ( always_1(s0,E6)
+              & is_3(s0,E6,X2,X1)
+              & circumstance_2(s0,E6,X4) ) ) ) )).
+
+% ::id 38_nonfiction_BEETON-1861;AT2166-4;NE
+% ::snt Supposing eggs -LRB- the cheapest -RRB- to be used , -- Draw a gallon or so of the wine , and mix one quart of it with the whites of four eggs , by stirring it with a whisk ;
+fof(ex1414051818860,axiom,(
+    ? [X1,X2,G3,G4,X18,X17,X5,X6,G7,G8,G9,E10,E11,E12,E13,E14] :
+      ( cheapest_1(s0,X1)
+      & wine_1(s0,X2)
+      & four_1(s0,G3)
+      & eggs_1(s0,G3)
+      & is_whites_of_2(s0,G4,G3)
+      & choose2(X17,X2,X1)
+      & one_1(s0,X6)
+      & is_quart_of_2(s0,X6,X17)
+      & choose2(X18,X2,X1)
+      & whisk_1(s0,X5)
+      & eggs_1(s0,G7)
+      & G7 = X1
+      & is_of_2(s0,G9,X2)
+      & ? [X15] :
+          ( gallon_1(s0,X15)
+          & is_of_2(s0,X15,G8) )
+      & ? [X16] :
+          ( so_1(s0,X16)
+          & is_of_2(s0,X16,G8) )
+      & G9 = G8
+      & ? [S19] :
+          ( supposing_4(s0,E11,unspecified,G7,S19)
+          & used_3(S19,E10,unspecified,G7) )
+      & draw_3(s0,E12,unspecified,G9)
+      & stirring_3(s0,E13,X6,X18)
+      & with_2(s0,E13,X5)
+      & mix_3(s0,E14,unspecified,X6)
+      & with_2(s0,E14,G4) ) )).
+
+% ::id 39_nonfiction_BEETON-1861;AT2166-5;NE
+% ::snt afterwards , when thoroughly mixed , pour it back into the cask through the bunghole ,
+fof(ex1414051819188,axiom,(
+    ? [X1,X2,S3] :
+      ( cask_1(s0,X2)
+      & bunghole_1(s0,X1)
+      & afterwards_1(s0,S3)
+      & ? [S8] :
+          ( fact_2(s0,S3,S8)
+          & ! [X5,E4] :
+              ( thoroughly_1(S8,E4)
+             => ( mixed_3(S8,E4,unspecified,X5)
+                & ? [X7,E6] :
+                    ( pour_back_3(S8,E6,unspecified,X7)
+                    & into_2(S8,E6,X2)
+                    & through_2(S8,E6,X1) ) ) ) ) ) )).
+
+% ::id 40_nonfiction_BEETON-1861;AT2166-6;NE
+% ::snt and stir up the whole cask , in a rotatory direction , with a clean split stick inserted through the bunghole .
+fof(ex1414051819516,axiom,(
+    ? [X1,X2,X3,X4,E5,E6] :
+      ( whole_1(s0,X2)
+      & cask_1(s0,X2)
+      & bunghole_1(s0,X1)
+      & rotatory_1(s0,X4)
+      & direction_1(s0,X4)
+      & clean_1(s0,X3)
+      & inserted_3(s0,E5,unspecified,X3)
+      & through_2(s0,E5,X1)
+      & split_stick_1(s0,X3)
+      & stir_up_3(s0,E6,unspecified,X2)
+      & in_2(s0,E6,X4)
+      & with_2(s0,E6,X3) ) )).
+
+% ::id 41_nonfiction_BEETON-1861;AT2166-7;NE
+% ::snt Having stirred it sufficiently , pour in the remainder of the wine drawn off , until the cask is full ;
+fof(ex1414051819845,axiom,(
+    ? [X1,X2,X3,E4,X8,A9,E5,E6,E7] :
+      ( drawn_off_3(s0,E4,unspecified,X1)
+      & wine_1(s0,X1)
+      & is_remainder_of_2(s0,X3,X1)
+      & cask_1(s0,X2)
+      & full_1(s0,A9)
+      & sufficiently_1(s0,E5)
+      & having_stirred_3(s0,E5,unspecified,X8)
+      & is_3(s0,E6,X2,A9)
+      & pour_1(s0,E7)
+      & in_2(s0,E7,X3) ) )).
+
+% ::id 42_nonfiction_BEETON-1861;AT2166-8;NE
+% ::snt then stir again , skimming off the bubbles that rise to the surface .
+fof(ex1414051820164,axiom,(
+    ? [X1,G2,E3,S7,S6,E4,E5] :
+      ( surface_1(s0,X1)
+      & rise_2(s0,E3,G2)
+      & to_2(s0,E3,X1)
+      & bubbles_1(s0,G2)
+      & then_1(s0,S6)
+      & again_1(s0,S7)
+      & ? [S8] :
+          ( fact_2(s0,S6,S8)
+          & ? [S9] :
+              ( fact_2(S8,S7,S9)
+              & skimming_off_3(S9,E4,unspecified,G2)
+              & stir_1(S9,E5) ) ) ) )).
+
+% ::id 43_nonfiction_BEETON-1861;AT2166-9;NE
+% ::snt When thoroughly mixed by stirring , close the bunghole , and leave it to stand for three or four days .
+fof(ex1414051820489,axiom,(
+    ? [X1,X9,X8,X2,G3,E4,E5,E6,E7] :
+      ( bunghole_1(s0,X1)
+      & stirring_1(s0,X2)
+      & choose2(X9,X1,X2)
+      & three_or_four_1(s0,G3)
+      & days_1(s0,G3)
+      & thoroughly_1(s0,E4)
+      & mixed_3(s0,E4,unspecified,X8)
+      & by_2(s0,E4,X2)
+      & close_3(s0,E5,unspecified,X1)
+      & ? [S10] :
+          ( leave_4(s0,E7,unspecified,X9,S10)
+          & stand_2(S10,E6,X9)
+          & for_2(S10,E6,G3) ) ) )).
+
+% ::id 44_nonfiction_BEETON-1861;AT2166-10;NE
+% ::snt This quantity of clarified wine will fine thirteen dozen of port or sherry .
+fof(ex1414051820808,axiom,(
+    ? [X1,X2] :
+      ( clarified_1(s0,X1)
+      & wine_1(s0,X1)
+      & is_quantity_of_2(s0,X2,X1)
+      & ? [G3,G4,E5] :
+          ( ? [X6] :
+              ( port_1(s0,X6)
+              & is_of_2(s0,X6,G3) )
+          & ? [X7] :
+              ( sherry_1(s0,X7)
+              & is_of_2(s0,X7,G3) )
+          & thirteen_dozen_1(s0,G4)
+          & is_of_2(s0,G4,G3)
+          & fine_3(s0,E5,X2,G4) ) ) )).
+
+% ::id 45_nonfiction_BEETON-1861;AT2166-11;NE
+% ::snt The other clearing ingredients are applied in the same manner , the material being cut into small pieces , and dissolved in the quart of wine ,
+fof(ex1414051821135,axiom,(
+    ? [X1,X2,X3,X4,G5,E6,E7,E8] :
+      ( same_1(s0,X4)
+      & manner_1(s0,X4)
+      & material_1(s0,X3)
+      & wine_1(s0,X1)
+      & is_quart_of_2(s0,X2,X1)
+      & small_1(s0,G5)
+      & pieces_1(s0,G5)
+      & ? [G9] :
+          ( clearing_1(s0,G9)
+          & ingredients_1(s0,G9)
+          & cut_3(s0,E6,unspecified,X3)
+          & into_2(s0,E6,G5)
+          & dissolved_3(s0,E7,unspecified,X3)
+          & in_2(s0,E7,X2)
+          & applied_3(s0,E8,unspecified,G9)
+          & in_2(s0,E8,X4) ) ) )).
+
+% ::id 46_nonfiction_BEETON-1861;AT2166-12;NE
+% ::snt and the cask stirred in the same manner .
+fof(ex1414051821446,axiom,(
+    ? [X1,X2,E3] :
+      ( cask_1(s0,X2)
+      & same_1(s0,X1)
+      & manner_1(s0,X1)
+      & is_before_2(s0,E3,e0)
+      & stirred_2(s0,E3,X2)
+      & in_2(s0,E3,X1) ) )).
+
+% ::id 47_nonfiction_BEETON-1861;AT2167-1;NE
+% ::snt To Bottle Wine . --
+fof(ex1414051822379,axiom,(
+    ? [X1,E2] :
+      ( wine_1(s0,X1)
+      & bottle_3(s0,E2,unspecified,X1) ) )).
+
+% ::id 48_nonfiction_BEETON-1861;AT2167-2;NE
+% ::snt Having thoroughly washed and dried the bottles , supposing they have been before used for the same kind of wine , provide corks , which will be improved by being slightly boiled , or at least steeped in hot water , -- a wooden hammer or mallet , a bottling-boot , and a squeezer for the corks .
+fof(ex1414051822756,axiom,(
+    ? [X1,X2,G3,G4,G11,G5,E6,E7,E8,E9,E10] :
+      ( wine_1(s0,X1)
+      & same_1(s0,X2)
+      & is_kind_of_2(s0,X2,X1)
+      & bottles_1(s0,G3)
+      & corks_1(s0,G4)
+      & choose1(G11,G3)
+      & ? [G12] :
+          ( ? [X13,E14,E15,E16,S17] :
+              ( hot_1(s0,X13)
+              & water_1(s0,X13)
+              & slightly_1(s0,E14)
+              & ? [S25] :
+                  ( fact_2(s0,S17,S25)
+                  & boiled_3(S25,E14,unspecified,G12)
+                  & ? [X18] :
+                      ( steeped_3(S25,E15,unspecified,G12)
+                      & at_2(S25,E15,X18)
+                      & in_2(S25,E15,X13) ) )
+              & improved_3(s0,E16,S17,G12) )
+          & corks_1(s0,G12)
+          & is_of_2(s0,G12,G5) )
+      & ? [G19,G20] :
+          ( ? [X21] :
+              ( wooden_1(s0,X21)
+              & hammer_1(s0,X21)
+              & is_of_2(s0,X21,G19) )
+          & ? [X22] :
+              ( mallet_1(s0,X22)
+              & is_of_2(s0,X22,G19) )
+          & G20 = G19
+          & is_of_2(s0,G20,G5) )
+      & ? [X23] :
+          ( bottling_boot_1(s0,X23)
+          & is_of_2(s0,X23,G5) )
+      & ? [X24] :
+          ( is_squeezer_for_2(s0,X24,G4)
+          & is_of_2(s0,X24,G5) )
+      & thoroughly_1(s0,E6)
+      & thoroughly_1(s0,E7)
+      & before_1(s0,E8)
+      & having_washed_3(s0,E6,unspecified,G3)
+      & having_dried_3(s0,E7,unspecified,G3)
+      & ? [S26] :
+          ( supposing_2(s0,E9,S26)
+          & have_used_3(S26,E8,unspecified,G11)
+          & for_2(S26,E8,X2) )
+      & provide_3(s0,E10,unspecified,G5) ) )).
+
+% ::id 49_nonfiction_BEETON-1861;AT2167-3;NE
+% ::snt Bore a hole in the lower part of the cask with a gimlet , receiving the liquid stream which follows in the bottle and filterer , which is placed in a tub or basin .
+fof(ex1414051823113,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,G8,G9,G10,G11,E12,E13,X14,X15,E16,E17] :
+      ( cask_1(s0,X1)
+      & lower_1(s0,X2)
+      & is_part_of_2(s0,X2,X1)
+      & tub_1(s0,X3)
+      & basin_1(s0,X4)
+      & bottle_1(s0,X5)
+      & filterer_1(s0,X6)
+      & liquid_1(s0,X7)
+      & follows_2(s0,E13,X7)
+      & in_2(s0,E13,G11)
+      & stream_1(s0,X7)
+      & is_of_2(s0,X3,G8)
+      & is_of_2(s0,X4,G8)
+      & G9 = G8
+      & placed_3(s0,E12,unspecified,G11)
+      & in_2(s0,E12,G9)
+      & is_of_2(s0,X5,G10)
+      & is_of_2(s0,X6,G10)
+      & G11 = G10
+      & is_hole_in_2(s0,X15,X2)
+      & gimlet_1(s0,X14)
+      & receiving_3(s0,E16,X15,X7)
+      & bore_3(s0,E17,unspecified,X15)
+      & with_2(s0,E17,X14) ) )).
+
+% ::id 50_nonfiction_BEETON-1861;AT2167-4;NE
+% ::snt This operation is best performed by two persons , one to draw the wine , the other to cork the bottles .
+fof(ex1414051823461,axiom,(
+    ? [X1,X2,G3,E4,G5,G6,E7] :
+      ( operation_1(s0,X2)
+      & wine_1(s0,X1)
+      & bottles_1(s0,G3)
+      & two_1(s0,G6)
+      & persons_1(s0,G6)
+      & ? [X8,E9] :
+          ( draw_3(s0,E9,X8,X1)
+          & one_1(s0,X8)
+          & is_of_2(s0,X8,G5) )
+      & ? [X10] :
+          ( cork_3(s0,E4,X10,G3)
+          & is_of_2(s0,X10,G5) )
+      & G6 = G5
+      & best_1(s0,E7)
+      & performed_3(s0,E7,G6,X2) ) )).
+
+% ::id 51_nonfiction_BEETON-1861;AT2167-5;NE
+% ::snt The drawer is to see that the bottles are up to the mark , but not too full , the bottle being placed in a clean tub to prevent waste .
+fof(ex1414051823796,axiom,(
+    ? [X1,X2,X3,G4,X5,X6,A14,E7,E8,E9,E10,E11,E12,S13] :
+      ( drawer_1(s0,X3)
+      & bottle_1(s0,X1)
+      & mark_1(s0,X2)
+      & bottles_1(s0,G4)
+      & clean_1(s0,X6)
+      & tub_1(s0,X6)
+      & waste_1(s0,X5)
+      & too_full_1(s0,A14)
+      & ? [S15] :
+          ( fact_2(s0,S13,S15)
+          & prevent_3(S15,E7,X1,X5) )
+      & placed_3(s0,E8,unspecified,X1)
+      & in_2(s0,E8,X6)
+      & prp_2(s0,E8,S13)
+      & ? [S16] :
+          ( is_3(s0,E12,X3,S16)
+          & ? [S17] :
+              ( see_3(S16,E11,X3,S17)
+              & are_2(S17,E9,G4)
+              & up_to_2(S17,E9,X2)
+              & are_3(S17,E10,G4,A14) ) ) ) )).
+
+% ::id 52_nonfiction_BEETON-1861;AT2167-6;NE
+% ::snt The corking-boot is buckled by a strap to the knee , the bottle placed in it , and the cork , after being squeezed in the press , driven in by a flat wooden mallet .
+fof(ex1414051824145,axiom,(
+    ? [X1,X2,X3,X4,X5,X12,X6,X7,E8,E9,E10,E11] :
+      ( corking_boot_1(s0,X5)
+      & knee_1(s0,X1)
+      & bottle_1(s0,X2)
+      & cork_1(s0,X4)
+      & press_1(s0,X3)
+      & is_strap_to_2(s0,X7,X1)
+      & choose3(X12,X5,X7,X1)
+      & flat_1(s0,X6)
+      & wooden_mallet_1(s0,X6)
+      & placed_3(s0,E8,unspecified,X2)
+      & in_2(s0,E8,X12)
+      & squeezed_3(s0,E9,unspecified,X4)
+      & in_2(s0,E9,X3)
+      & driven_in_3(s0,E10,unspecified,X4)
+      & by_2(s0,E10,X6)
+      & buckled_3(s0,E11,unspecified,X5)
+      & by_2(s0,E11,X7) ) )).
+
+% ::id 53_nonfiction_BEETON-1861;AT2168-1;NE
+% ::snt As the wine draws near to the bottom of the cask , a thick piece of muslin is placed in the strainer , to prevent the viscous grounds from passing into the bottle .
+fof(ex1414051824483,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,X7,X8,E9,E10,E11,E12,S14,S13] :
+      ( wine_1(s0,X3)
+      & cask_1(s0,X1)
+      & is_bottom_of_2(s0,X2,X1)
+      & strainer_1(s0,X5)
+      & bottle_1(s0,X4)
+      & viscous_1(s0,G6)
+      & grounds_1(s0,G6)
+      & muslin_1(s0,X7)
+      & thick_1(s0,X8)
+      & is_piece_of_2(s0,X8,X7)
+      & ? [S15] :
+          ( fact_2(s0,S14,S15)
+          & passing_2(S15,E10,G6)
+          & into_2(S15,E10,X4) )
+      & ? [S16] :
+          ( fact_2(s0,S13,S16)
+          & prevent_3(S16,E11,X8,G6)
+          & from_2(S16,E11,S14) )
+      & draws_near_2(s0,E9,X3)
+      & to_2(s0,E9,X2)
+      & placed_3(s0,E12,unspecified,X8)
+      & in_2(s0,E12,X5)
+      & prp_2(s0,E12,S13) ) )).
+
+% ::id 54_nonfiction_BEETON-1861;AT2169-1;NE
+% ::snt Having carefully counted the bottles , they are stored away in their respective binns , a layer of sand or sawdust being placed under the first tier , and another over it ;
+fof(ex1414051824817,axiom,(
+    ? [X1,G2,X3,G12,G10,G4,G5,G6,S11,E7,E8,E9] :
+      ( first_1(s0,X1)
+      & tier_1(s0,X1)
+      & bottles_1(s0,G2)
+      & is_layer_of_2(s0,X3,G4)
+      & choose2(G12,G10,G2)
+      & respective_1(s0,G6)
+      & is_binns_of_2(s0,G6,G12)
+      & ? [X13] :
+          ( sand_1(s0,X13)
+          & is_of_2(s0,X13,G4) )
+      & ? [X14] :
+          ( sawdust_1(s0,X14)
+          & is_of_2(s0,X14,G4) )
+      & is_of_2(s0,X1,G5)
+      & ? [X16] :
+          ( choose2(X16,X1,X3)
+          & ? [X15] :
+              ( is_over_2(s0,X15,X16)
+              & is_of_2(s0,X15,G5) ) )
+      & carefully_1(s0,E7)
+      & away_1(s0,S11)
+      & having_counted_3(s0,E7,G10,G2)
+      & ? [S17] :
+          ( fact_2(s0,S11,S17)
+          & placed_3(S17,E8,unspecified,X3)
+          & under_2(S17,E8,G5)
+          & stored_3(S17,E9,unspecified,G10)
+          & in_2(S17,E9,G6) ) ) )).
+
+% ::id 55_nonfiction_BEETON-1861;AT2169-2;NE
+% ::snt a second tier is laid over this , protected by a lath , the head of the second being laid to the bottom of the first ;
+fof(ex1414051825155,axiom,(
+    ? [X1,X2,X3,X4,X10,X5,X6,E7,E8,E9] :
+      ( second_1(s0,X1)
+      & is_head_of_2(s0,X4,X1)
+      & first_1(s0,X2)
+      & is_bottom_of_2(s0,X3,X2)
+      & second_1(s0,X6)
+      & tier_1(s0,X6)
+      & lath_1(s0,X5)
+      & protected_3(s0,E7,X5,X6)
+      & laid_3(s0,E8,unspecified,X4)
+      & to_2(s0,E8,X3)
+      & laid_3(s0,E9,unspecified,X6)
+      & over_2(s0,E9,X10) ) )).
+
+% ::id 56_nonfiction_BEETON-1861;AT2169-3;NE
+% ::snt over this another bed of sawdust is laid , not too thick , another lath ; and so on till the binn is filled .
+fof(ex1414051825497,axiom,(
+    ? [X1,X8,X2,S10,E3,E4,E5,E6,S11] :
+      ( binn_1(s0,X1)
+      & sawdust_1(s0,X2)
+      & choose1(X8,X2)
+      & so_1(s0,S10)
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & filled_3(S12,E5,unspecified,X1) )
+      & ? [X7] :
+          ( too_thick_1(s0,X7)
+          & is_bed_of_2(s0,X7,X2)
+          & laid_3(s0,E3,unspecified,X7)
+          & over_2(s0,E3,X8) )
+      & ? [X9] :
+          ( lath_1(s0,X9)
+          & laid_3(s0,E4,unspecified,X9) )
+      & ? [S13] :
+          ( fact_2(s0,S10,S13)
+          & on_1(S13,E6)
+          & till_2(S13,E6,S11) ) ) )).
+
+% ::id 57_nonfiction_BEETON-1861;AT2170-1;NE
+% ::snt Wine so laid in will be ready for use according to its quality and age .
+fof(ex1414051825827,axiom,(
+    ? [X1,E2] :
+      ( laid_in_3(s0,E2,unspecified,X1)
+      & wine_1(s0,X1)
+      & so_1(s0,E2)
+      & ? [X9,X3,G4,G5,A8,E6,E7] :
+          ( choose2(X9,X3,X1)
+          & according_2(s0,E6,X3)
+          & to_2(s0,E6,G5)
+          & use_1(s0,X3)
+          & is_of_2(s0,G5,X9)
+          & ? [X10] :
+              ( quality_1(s0,X10)
+              & is_of_2(s0,X10,G4) )
+          & ? [X11] :
+              ( age_1(s0,X11)
+              & is_of_2(s0,X11,G4) )
+          & G5 = G4
+          & is_ready_for_2(s0,A8,X3)
+          & be_3(s0,E7,X1,A8) ) ) )).
+
+% ::id 58_nonfiction_BEETON-1861;AT2170-2;NE
+% ::snt Port wine , old in the wood , will be ready to drink in five or six months ; but if it is a fruity wine , it will improve every year .
+fof(ex1414051826175,axiom,(
+    ? [X1,X2,X3] :
+      ( wood_1(s0,X1)
+      & fruity_1(s0,X2)
+      & wine_1(s0,X2)
+      & is_old_in_2(s0,X3,X1)
+      & port_wine_1(s0,X3)
+      & ? [A7,T4,E5,E6] :
+          ( ? [S13] :
+              ( ready_2(s0,A7,S13)
+              & drink_1(S13,E5) )
+          & five_or_six_1(s0,T4)
+          & months_1(s0,T4)
+          & be_3(s0,E6,X3,A7)
+          & in_2(s0,E6,T4) )
+      & ! [X9,E8] :
+          ( choose2(X9,X3,X1)
+         => ( is_3(s0,E8,X9,X2)
+            & ? [X10] :
+                ( choose3(X10,X2,X3,X1)
+                & ! [T11] :
+                    ( year_1(s0,T11)
+                   => ? [E12] :
+                        ( improve_2(s0,E12,X10)
+                        & tmp_2(s0,E12,T11) ) ) ) ) ) ) )).
+
+% ::id 59_nonfiction_BEETON-1861;AT2170-3;NE
+% ::snt Sherry , if of good quality , will be fit to drink as soon as the " sickness " -LRB- as its first condition after bottling is called -RRB- ceases , and will also improve ;
+fof(ex1414051826530,axiom,(
+    ? [X12,X1,X2,X3,E4,S11,X5] :
+      ( choose3(X12,X3,X5,sherry)
+      & bottling_1(s0,X1)
+      & first_1(s0,X2)
+      & is_condition_after_2(s0,X2,X1)
+      & is_condition_of_2(s0,X2,X12)
+      & is_sickness_as_2(s0,X3,S11)
+      & ? [S14] :
+          ( fact_2(s0,S11,S14)
+          & called_3(S14,E4,unspecified,X2) )
+      & good_1(s0,X5)
+      & quality_1(s0,X5)
+      & ? [A8,E6,E7] :
+          ( ? [S15] :
+              ( fit_2(s0,A8,S15)
+              & drink_1(S15,E6) )
+          & ? [T9,E10] :
+              ( ceases_2(s0,E10,X3)
+              & tmp_2(s0,E10,T9)
+              & is_as_soon_as_2(s0,E7,T9) )
+          & be_3(s0,E7,sherry,A8)
+          & if_of_2(s0,E7,X5) )
+      & ? [E13] :
+          ( also_improve_2(s0,E13,sherry)
+          & if_of_2(s0,E13,X5) ) ) )).
+
+% ::id 60_nonfiction_BEETON-1861;AT2170-4;NE
+% ::snt but the cellar must be kept at a perfectly steady temperature , neither too hot nor too cold , but about 55° or 60° , and absolutely free from draughts of cold air .
+fof(ex1414051826870,axiom,(
+    ? [X1] :
+      ( cellar_1(s0,X1)
+      & ? [X2,X3,G4,A8,X5,E6,E7] :
+          ( perfectly_steady_1(s0,X2)
+          & too_hot_1(s0,X2)
+          & too_cold_1(s0,X2)
+          & is_msr_2(s0,X2,X5)
+          & temperature_1(s0,X2)
+          & cold_1(s0,X3)
+          & air_1(s0,X3)
+          & is_draughts_of_2(s0,G4,X3)
+          & is_free_from_2(s0,A8,G4)
+          & predicate__55°_or_60°_1(s0,X5)
+          & about_1(s0,X5)
+          & absolutely_1(s0,E7)
+          & kept_3(s0,E6,unspecified,X1)
+          & at_2(s0,E6,X2)
+          & be_3(s0,E7,X1,A8) ) ) )).
+

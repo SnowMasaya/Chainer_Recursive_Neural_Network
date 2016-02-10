@@ -1,0 +1,382 @@
+# ::id 1_childrens_CALDECOTT-1878;IJ
+# ::snt ジャック が 建て た 家
+( EVENT-4 / EVENT
+      :LINK ( HOUSE.LOC-1 / 家
+             :ARG1-of ( EVENT-3 / 建てる.0_た
+                    :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                           :name ( n-6 / name
+                                  :op1 "ジャック"))
+                    :MOD ( mod-5 / past))))
+
+# ::id 2_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 です 。
+( EVENT-5 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( HOUSE.LOC-2 / 家
+             :ARG1-of ( EVENT-4 / 建てる.0_た
+                    :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                           :name ( n-7 / name
+                                  :op1 "ジャック"))
+                    :MOD ( mod-6 / past))))
+
+# ::id 3_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 です 。
+( EVENT-8 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( MALT.FOOD-2 / 麦芽
+             :ARG1-of ( EVENT-7 / 置く.0_た
+                    :に ( HOUSE.LOC-4 / 家
+                           :ARG1-of ( EVENT-6 / 建てる.0_た
+                                  :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                         :name ( n-11 / name
+                                                :op1 "ジャック"))
+                                  :MOD ( mod-9 / past)))
+                    :MOD ( mod-10 / past))))
+
+# ::id 4_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ です 。
+( EVENT-11 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( RAT.ANIMAL-2 / ねずみ
+             :ARG0-of ( EVENT-10 / 食べる.0_た
+                    :ARG1 ( MALT.FOOD-4 / 麦芽
+                           :ARG1-of ( EVENT-9 / 置く.0_た
+                                  :に ( HOUSE.LOC-6 / 家
+                                         :ARG1-of ( EVENT-8 / 建てる.0_た
+                                                :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                       :name ( n-15 / name
+                                                              :op1 "ジャック"))
+                                                :MOD ( mod-12 / past)))
+                                  :MOD ( mod-13 / past)))
+                    :MOD ( mod-14 / past))))
+
+# ::id 5_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ です 。
+( EVENT-14 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( CAT.ANIMAL-2 / ねこ
+             :ARG0-of ( EVENT-13 / 殺す.0_た
+                    :ARG1 ( RAT.ANIMAL-4 / ねずみ
+                           :ARG0-of ( EVENT-12 / 食べる.0_た
+                                  :ARG1 ( MALT.FOOD-6 / 麦芽
+                                         :ARG1-of ( EVENT-11 / 置く.0_た
+                                                :に ( HOUSE.LOC-8 / 家
+                                                       :ARG1-of ( EVENT-10 / 建てる.0_た
+                                                              :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                     :name ( n-19 / name
+                                                                            :op1 "ジャック"))
+                                                              :MOD ( mod-15 / past)))
+                                                :MOD ( mod-16 / past)))
+                                  :MOD ( mod-17 / past)))
+                    :MOD ( mod-18 / past))))
+
+# ::id 6_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 です 。
+( EVENT-17 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( CAT.ANIMAL-2 / 犬
+             :ARG0-of ( EVENT-16 / いじめる.0_た
+                    :ARG1 ( CAT.ANIMAL-4 / ねこ
+                           :ARG0-of ( EVENT-15 / 殺す.0_た
+                                  :ARG1 ( RAT.ANIMAL-6 / ねずみ
+                                         :ARG0-of ( EVENT-14 / 食べる.0_た
+                                                :ARG1 ( MALT.FOOD-8 / 麦芽
+                                                       :ARG1-of ( EVENT-13 / 置く.0_た
+                                                              :に ( HOUSE.LOC-10 / 家
+                                                                     :ARG1-of ( EVENT-12 / 建てる.0_た
+                                                                            :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                   :name ( n-23 / name
+                                                                                          :op1 "ジャック"))
+                                                                            :MOD ( mod-18 / past)))
+                                                              :MOD ( mod-19 / past)))
+                                                :MOD ( mod-20 / past)))
+                                  :MOD ( mod-21 / past)))
+                    :MOD ( mod-22 / past))))
+
+# ::id 7_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 です 。
+( EVENT-25 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( COW.ANIMAL-2 / 牛
+             :ARG0-of ( EVENT-19 / 突き上げる.0_た
+                    :ARG1 ( CAT.ANIMAL-4 / 犬
+                           :ARG0-of ( EVENT-18 / いじめる.0_た
+                                  :ARG1 ( CAT.ANIMAL-6 / ねこ
+                                         :ARG0-of ( EVENT-17 / 殺す.0_た
+                                                :ARG1 ( RAT.ANIMAL-8 / ねずみ
+                                                       :ARG0-of ( EVENT-16 / 食べる.0_た
+                                                              :ARG1 ( MALT.FOOD-10 / 麦芽
+                                                                     :ARG1-of ( EVENT-15 / 置く.0_た
+                                                                            :に ( HOUSE.LOC-12 / 家
+                                                                                   :ARG1-of ( EVENT-14 / 建てる.0_た
+                                                                                          :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                 :name ( n-32 / name
+                                                                                                        :op1 "ジャック"))
+                                                                                          :MOD ( mod-26 / past)))
+                                                                            :MOD ( mod-27 / past)))
+                                                              :MOD ( mod-28 / past)))
+                                                :MOD ( mod-29 / past)))
+                                  :MOD ( mod-30 / past)))
+                    :MOD ( mod-31 / past))
+             :ARG0-of ( EVENT-24 / 持つ.0
+                    :ARG1 ( HORN.COW.ANIMAL-21 / 角
+                           :ARG0-of ( EVENT-23 / ねじれる.0_た)))))
+
+# ::id 8_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 です 。
+( EVENT-30 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( MAIDEN.PERSON-2 / 少女
+             :ATTRIBUTE ( ATTRIB-29 / この上なく_みじめ_な)
+             :ARG0-of ( EVENT-28 / しぼる.0_た
+                    :ARG1 ( MILK.COW.ANIMAL-4 / 乳
+                           :の ( COW.ANIMAL-5 / 牛
+                                  :ARG0-of ( EVENT-22 / 突き上げる.0_た
+                                         :ARG1 ( CAT.ANIMAL-7 / 犬
+                                                :ARG0-of ( EVENT-21 / いじめる.0_た
+                                                       :ARG1 ( CAT.ANIMAL-9 / ねこ
+                                                              :ARG0-of ( EVENT-20 / 殺す.0_た
+                                                                     :ARG1 ( RAT.ANIMAL-11 / ねずみ
+                                                                            :ARG0-of ( EVENT-19 / 食べる.0_た
+                                                                                   :ARG1 ( MALT.FOOD-13 / 麦芽
+                                                                                          :ARG1-of ( EVENT-18 / 置く.0_た
+                                                                                                 :に ( HOUSE.LOC-15 / 家
+                                                                                                        :ARG1-of ( EVENT-17 / 建てる.0_た
+                                                                                                               :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                                      :name ( n-38 / name
+                                                                                                                             :op1 "ジャック"))
+                                                                                                               :MOD ( mod-31 / past)))
+                                                                                                 :MOD ( mod-32 / past)))
+                                                                                   :MOD ( mod-33 / past)))
+                                                                     :MOD ( mod-34 / past)))
+                                                       :MOD ( mod-35 / past)))
+                                         :MOD ( mod-36 / past))
+                                  :ARG0-of ( EVENT-27 / 持つ.0
+                                         :ARG1 ( HORN.COW.ANIMAL-24 / 角
+                                                :ARG0-of ( EVENT-26 / ねじれる.0_た)))))
+                    :MOD ( mod-37 / past))))
+
+# ::id 9_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 です 。
+( EVENT-37 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( MAN.PERSON-2 / 男
+             :ARG0-of ( EVENT-32 / キスする.0_た
+                    :ARG1 ( MAIDEN.PERSON-4 / 少女
+                           :ATTRIBUTE ( ATTRIB-31 / この上なく_みじめ_な)
+                           :ARG0-of ( EVENT-30 / しぼる.0_た
+                                  :ARG1 ( MILK.COW.ANIMAL-6 / 乳
+                                         :の ( COW.ANIMAL-7 / 牛
+                                                :ARG0-of ( EVENT-24 / 突き上げる.0_た
+                                                       :ARG1 ( CAT.ANIMAL-9 / 犬
+                                                              :ARG0-of ( EVENT-23 / いじめる.0_た
+                                                                     :ARG1 ( CAT.ANIMAL-11 / ねこ
+                                                                            :ARG0-of ( EVENT-22 / 殺す.0_た
+                                                                                   :ARG1 ( RAT.ANIMAL-13 / ねずみ
+                                                                                          :ARG0-of ( EVENT-21 / 食べる.0_た
+                                                                                                 :ARG1 ( MALT.FOOD-15 / 麦芽
+                                                                                                        :ARG1-of ( EVENT-20 / 置く.0_た
+                                                                                                               :に ( HOUSE.LOC-17 / 家
+                                                                                                                      :ARG1-of ( EVENT-19 / 建てる.0_た
+                                                                                                                             :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                                                    :name ( n-48 / name
+                                                                                                                                           :op1 "ジャック"))
+                                                                                                                             :MOD ( mod-39 / past)))
+                                                                                                               :MOD ( mod-40 / past)))
+                                                                                                 :MOD ( mod-41 / past)))
+                                                                                   :MOD ( mod-42 / past)))
+                                                                     :MOD ( mod-43 / past)))
+                                                       :MOD ( mod-44 / past))
+                                                :ARG0-of ( EVENT-29 / 持つ.0
+                                                       :ARG1 ( HORN.COW.ANIMAL-26 / 角
+                                                              :ARG0-of ( EVENT-28 / ねじれる.0_た)))))
+                                  :MOD ( mod-45 / past)))
+                    :MOD ( mod-46 / past))
+             :ARG0-of ( CONJ-38 / CONJ_te
+                    :op1 ( EVENT-34 / みすぼらしく_て
+                           :MOD ( mod-47 / この上なく))
+                    :op2 ( EVENT-36 / ぼろぼろ_な))))
+
+# ::id 10_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 です 。
+( EVENT-47 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( PRIEST.PERSON-2 / 司祭
+             :ARG0-of ( EVENT-40 / 行う.0_た
+                    :ARG1 ( MARRIAGE.EVENT-4 / 結婚式
+                           :の ( MAN.PERSON-5 / 男
+                                  :ARG0-of ( EVENT-35 / キスする.0_た
+                                         :ARG1 ( MAIDEN.PERSON-7 / 少女
+                                                :ATTRIBUTE ( ATTRIB-34 / この上なく_みじめ_な)
+                                                :ARG0-of ( EVENT-33 / しぼる.0_た
+                                                       :ARG1 ( MILK.COW.ANIMAL-9 / 乳
+                                                              :の ( COW.ANIMAL-10 / 牛
+                                                                     :ARG0-of ( EVENT-27 / 突き上げる.0_た
+                                                                            :ARG1 ( CAT.ANIMAL-12 / 犬
+                                                                                   :ARG0-of ( EVENT-26 / いじめる.0_た
+                                                                                          :ARG1 ( CAT.ANIMAL-14 / ねこ
+                                                                                                 :ARG0-of ( EVENT-25 / 殺す.0_た
+                                                                                                        :ARG1 ( RAT.ANIMAL-16 / ねずみ
+                                                                                                               :ARG0-of ( EVENT-24 / 食べる.0_た
+                                                                                                                      :ARG1 ( MALT.FOOD-18 / 麦芽
+                                                                                                                             :ARG1-of ( EVENT-23 / 置く.0_た
+                                                                                                                                    :に ( HOUSE.LOC-20 / 家
+                                                                                                                                           :ARG1-of ( EVENT-22 / 建てる.0_た
+                                                                                                                                                  :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                                                                         :name ( n-60 / name
+                                                                                                                                                                :op1 "ジャック"))
+                                                                                                                                                  :MOD ( mod-49 / past)))
+                                                                                                                                    :MOD ( mod-50 / past)))
+                                                                                                                      :MOD ( mod-51 / past)))
+                                                                                                        :MOD ( mod-52 / past)))
+                                                                                          :MOD ( mod-53 / past)))
+                                                                            :MOD ( mod-54 / past))
+                                                                     :ARG0-of ( EVENT-32 / 持つ.0
+                                                                            :ARG1 ( HORN.COW.ANIMAL-29 / 角
+                                                                                   :ARG0-of ( EVENT-31 / ねじれる.0_た)))))
+                                                       :MOD ( mod-55 / past)))
+                                         :MOD ( mod-56 / past))
+                                  :ARG0-of ( CONJ-48 / CONJ_te
+                                         :op1 ( EVENT-37 / みすぼらしく_て
+                                                :MOD ( mod-57 / この上なく))
+                                         :op2 ( EVENT-39 / ぼろぼろ_な))))
+                    :MOD ( mod-58 / past))
+             :ARG0-of ( EVENT-43 / 剃り上げる.0
+                    :ARG1 ( BEARD.PRIEST.PERSON-42 / ひげ))
+             :ARG0-of ( EVENT-45 / 刈り込む.0_だ
+                    :ARG1 ( HAIR.PRIEST.PERSON-44 / 髪)
+                    :MOD ( mod-59 / この上なく))))
+
+# ::id 11_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 の 目 を 覚まし た 暁 に 鳴い た おんどり です 。
+( EVENT-54 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( COCK.ANIMAL-2 / おんどり
+             :ARG0-of ( EVENT-50 / 覚ます.0_た
+                    :ARG1 ( EYE.PRIEST.PERSON-4 / 目
+                           :の ( PRIEST.PERSON-5 / 司祭
+                                  :ARG0-of ( EVENT-43 / 行う.0_た
+                                         :ARG1 ( MARRIAGE.EVENT-7 / 結婚式
+                                                :の ( MAN.PERSON-8 / 男
+                                                       :ARG0-of ( EVENT-38 / キスする.0_た
+                                                              :ARG1 ( MAIDEN.PERSON-10 / 少女
+                                                                     :ATTRIBUTE ( ATTRIB-37 / この上なく_みじめ_な)
+                                                                     :ARG0-of ( EVENT-36 / しぼる.0_た
+                                                                            :ARG1 ( MILK.COW.ANIMAL-12 / 乳
+                                                                                   :の ( COW.ANIMAL-13 / 牛
+                                                                                          :ARG0-of ( EVENT-30 / 突き上げる.0_た
+                                                                                                 :ARG1 ( CAT.ANIMAL-15 / 犬
+                                                                                                        :ARG0-of ( EVENT-29 / いじめる.0_た
+                                                                                                               :ARG1 ( CAT.ANIMAL-17 / ねこ
+                                                                                                                      :ARG0-of ( EVENT-28 / 殺す.0_た
+                                                                                                                             :ARG1 ( RAT.ANIMAL-19 / ねずみ
+                                                                                                                                    :ARG0-of ( EVENT-27 / 食べる.0_た
+                                                                                                                                           :ARG1 ( MALT.FOOD-21 / 麦芽
+                                                                                                                                                  :ARG1-of ( EVENT-26 / 置く.0_た
+                                                                                                                                                         :に ( HOUSE.LOC-23 / 家
+                                                                                                                                                                :ARG1-of ( EVENT-25 / 建てる.0_た
+                                                                                                                                                                       :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                                                                                              :name ( n-69 / name
+                                                                                                                                                                                     :op1 "ジャック"))
+                                                                                                                                                                       :MOD ( mod-56 / past)))
+                                                                                                                                                         :MOD ( mod-57 / past)))
+                                                                                                                                           :MOD ( mod-58 / past)))
+                                                                                                                             :MOD ( mod-59 / past)))
+                                                                                                               :MOD ( mod-60 / past)))
+                                                                                                 :MOD ( mod-61 / past))
+                                                                                          :ARG0-of ( EVENT-35 / 持つ.0
+                                                                                                 :ARG1 ( HORN.COW.ANIMAL-32 / 角
+                                                                                                        :ARG0-of ( EVENT-34 / ねじれる.0_た)))))
+                                                                            :MOD ( mod-62 / past)))
+                                                              :MOD ( mod-63 / past))
+                                                       :ARG0-of ( CONJ-55 / CONJ_te
+                                                              :op1 ( EVENT-40 / みすぼらしく_て
+                                                                     :MOD ( mod-64 / この上なく))
+                                                              :op2 ( EVENT-42 / ぼろぼろ_な))))
+                                         :MOD ( mod-65 / past))
+                                  :ARG0-of ( EVENT-46 / 剃り上げる.0
+                                         :ARG1 ( BEARD.PRIEST.PERSON-45 / ひげ))
+                                  :ARG0-of ( EVENT-48 / 刈り込む.0_だ
+                                         :ARG1 ( HAIR.PRIEST.PERSON-47 / 髪)
+                                         :MOD ( mod-66 / この上なく))))
+                    :MOD ( mod-67 / past))
+             :ARG0-of ( EVENT-53 / 鳴く.0_た
+                    :に ( TIME-52 / 暁)
+                    :MOD ( mod-68 / past))))
+
+# ::id 12_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 の 目 を 覚まし た 暁 に 鳴い た おんどり に やっ た とうもろこし の 種 を まい た 農夫 です 。
+( EVENT-62 / です
+      :ARG0 ( REF-1 / これ
+             :pick0)
+      :ARG1 ( FARMER.PERSON-2 / 農夫
+             :ARG0-of ( EVENT-61 / まく.0_た
+                    :ARG1 ( SEED.CORN.FOOD-4 / 種
+                           :の ( CORN.FOOD-5 / とうもろこし
+                                  :ARG1-of ( EVENT-60 / やる.0_た
+                                         :ARG0 ( ARB-7 / arb
+                                                :pick0)
+                                         :に ( COCK.ANIMAL-8 / おんどり
+                                                :ARG0-of ( EVENT-56 / 覚ます.0_た
+                                                       :ARG1 ( EYE.PRIEST.PERSON-10 / 目
+                                                              :の ( PRIEST.PERSON-11 / 司祭
+                                                                     :ARG0-of ( EVENT-49 / 行う.0_た
+                                                                            :ARG1 ( MARRIAGE.EVENT-13 / 結婚式
+                                                                                   :の ( MAN.PERSON-14 / 男
+                                                                                          :ARG0-of ( EVENT-44 / キスする.0_た
+                                                                                                 :ARG1 ( MAIDEN.PERSON-16 / 少女
+                                                                                                        :ATTRIBUTE ( ATTRIB-43 / この上なく_みじめ_な)
+                                                                                                        :ARG0-of ( EVENT-42 / しぼる.0_た
+                                                                                                               :ARG1 ( MILK.COW.ANIMAL-18 / 乳
+                                                                                                                      :の ( COW.ANIMAL-19 / 牛
+                                                                                                                             :ARG0-of ( EVENT-36 / 突き上げる.0_た
+                                                                                                                                    :ARG1 ( CAT.ANIMAL-21 / 犬
+                                                                                                                                           :ARG0-of ( EVENT-35 / いじめる.0_た
+                                                                                                                                                  :ARG1 ( CAT.ANIMAL-23 / ねこ
+                                                                                                                                                         :ARG0-of ( EVENT-34 / 殺す.0_た
+                                                                                                                                                                :ARG1 ( RAT.ANIMAL-25 / ねずみ
+                                                                                                                                                                       :ARG0-of ( EVENT-33 / 食べる.0_た
+                                                                                                                                                                              :ARG1 ( MALT.FOOD-27 / 麦芽
+                                                                                                                                                                                     :ARG1-of ( EVENT-32 / 置く.0_た
+                                                                                                                                                                                            :に ( HOUSE.LOC-29 / 家
+                                                                                                                                                                                                   :ARG1-of ( EVENT-31 / 建てる.0_た
+                                                                                                                                                                                                          :ARG0 ( JACK.PERSON-ジャック / JACK.PERSON
+                                                                                                                                                                                                                 :name ( n-79 / name
+                                                                                                                                                                                                                        :op1 "ジャック"))
+                                                                                                                                                                                                          :MOD ( mod-64 / past)))
+                                                                                                                                                                                            :MOD ( mod-65 / past)))
+                                                                                                                                                                              :MOD ( mod-66 / past)))
+                                                                                                                                                                :MOD ( mod-67 / past)))
+                                                                                                                                                  :MOD ( mod-68 / past)))
+                                                                                                                                    :MOD ( mod-69 / past))
+                                                                                                                             :ARG0-of ( EVENT-41 / 持つ.0
+                                                                                                                                    :ARG1 ( HORN.COW.ANIMAL-38 / 角
+                                                                                                                                           :ARG0-of ( EVENT-40 / ねじれる.0_た)))))
+                                                                                                               :MOD ( mod-70 / past)))
+                                                                                                 :MOD ( mod-71 / past))
+                                                                                          :ARG0-of ( CONJ-63 / CONJ_te
+                                                                                                 :op1 ( EVENT-46 / みすぼらしく_て
+                                                                                                        :MOD ( mod-72 / この上なく))
+                                                                                                 :op2 ( EVENT-48 / ぼろぼろ_な))))
+                                                                            :MOD ( mod-73 / past))
+                                                                     :ARG0-of ( EVENT-52 / 剃り上げる.0
+                                                                            :ARG1 ( BEARD.PRIEST.PERSON-51 / ひげ))
+                                                                     :ARG0-of ( EVENT-54 / 刈り込む.0_だ
+                                                                            :ARG1 ( HAIR.PRIEST.PERSON-53 / 髪)
+                                                                            :MOD ( mod-74 / この上なく))))
+                                                       :MOD ( mod-75 / past))
+                                                :ARG0-of ( EVENT-59 / 鳴く.0_た
+                                                       :に ( TIME-58 / 暁)
+                                                       :MOD ( mod-76 / past)))
+                                         :MOD ( mod-77 / past))))
+                    :MOD ( mod-78 / past))))

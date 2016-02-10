@@ -1,0 +1,597 @@
+# ::id 1_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 社説
+∃ EVENT[2] ENTITY[1] (社説(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ／ 私たち の 青い 鳥
+∃ ATTRIB[3] ENTITY[2] EVENT[4] ENTITY[1] (
+ ENTITY[2] = 私たち ∧
+  青い(ATTRIB[3]) ∧
+   ATTRIBUTE_鳥(ATTRIB[3], ENTITY[1]) ∧ の_鳥(ENTITY[2], ENTITY[1]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 3_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ／ 東北 の 再生 に 歴史的意義
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ の_再生(ENTITY[東北], ENTITY[2]) ∧
+  に_歴史的意義(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 4_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ＜ 人類 が 最後 に かかる の は 「 希望 」 という 名 の 病気 で ある ＞ 。
+∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[6] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 人類(ENTITY[3]) ∧
+  最後(ENTITY[4]) ∧
+   かかる(EVENT[5], ENTITY[3], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧ の(ENTITY[1]) ∧
+    希望(ENTITY[8]) ∧
+     という_名(ENTITY[8], ENTITY[7]) ∧ の_病気(ENTITY[7], ENTITY[6]) ∧ で_ある(EVENT[9], ENTITY[1], ENTITY[6]))
+
+# ::id 5_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 詩人 、 劇作家 の 寺山修司 は 作家 、 サン・テグジュペリ の 言葉 を 折 に 触れ て 引用 、 希望 と 向き合い続け た 。
+∃ EVENT[7] EVENT[8] EVENT[10] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[9] ENTITY[2] ENTITY[3] GROUP[1] (
+ 詩人(ENTITY[2]) ∧
+  劇作家(ENTITY[3]) ∧
+   is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[3], GROUP[1]) ∧
+    の_xxx(GROUP[1], ENTITY[寺山修司]) ∧
+     作家(ENTITY[5]) ∧
+      namely_-ENTITY-(ENTITY[5], ENTITY[サン.テグジュペリ]) ∧
+       の_言葉(ENTITY[サン.テグジュペリ], ENTITY[4]) ∧
+        折(ENTITY[6]) ∧
+         希望(ENTITY[9]) ∧
+          past(EVENT[10]) ∧
+           CONJ_te(触れ_て(EVENT[7], ENTITY[寺山修司], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6],
+            引用(EVENT[8], ENTITY[寺山修司])) ∧ 向き合い続け_た(EVENT[10], ENTITY[寺山修司]) ∧ と(EVENT[10]) = ENTITY[9])
+
+# ::id 6_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 右肩上がり の 経済成長 は 去り 人口減少 、 財政悪化 、 大震災 の 続発 など で 先々 の 安定 を 見通せ ない ただ中 に ある 。
+∃ SITUATION[5] ENTITY[1] EVENT[4] EVENT[15] GROUP[7] ENTITY[13] ENTITY[12] ENTITY[6] ENTITY[3] ENTITY[2] (
+ 右肩上がり(ENTITY[3]) ∧
+  の_経済成長(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    ∃ ENTITY[8] (人口減少(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+     ∃ ENTITY[9] (財政悪化(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+     ∃ ENTITY[11] ENTITY[10] (大震災(ENTITY[11]) ∧ の_続発(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7])) ∧
+     など(GROUP[7], ENTITY[6]) ∧
+      先々(ENTITY[13]) ∧
+       の_安定(ENTITY[13], ENTITY[12]) ∧
+        ただ中(SITUATION[5],
+         ¬ ∃ EVENT[14] (見通せ(EVENT[14], ENTITY[1], ENTITY[12]) ∧ で(EVENT[14]) = ENTITY[6])) ∧
+         去り(EVENT[4], ENTITY[2]) ∧ ある(EVENT[15], ENTITY[1]) ∧ に(EVENT[15]) = SITUATION[5])
+
+# ::id 7_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 期待感 に 満ち た 未来 を 展望し にくい 分 、 視線 は 足元 の 「 小さな 幸福 」 の 実現 に 向かう 。
+∃ ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[12] ENTITY[5] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[8] (
+ 視線(ENTITY[8]) ∧
+  ENTITY[2] = *pro* ∧
+   期待感(ENTITY[5]) ∧
+    満ち_た(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 未来(ENTITY[3]) ∧
+     FACT(SITUATION[1], 展望し_にくい(EVENT[7], ENTITY[2], ENTITY[3])) ∧
+      足元(ENTITY[11]) ∧
+       の_小さな_幸福(ENTITY[11], ENTITY[10]) ∧
+        の_実現(ENTITY[10], ENTITY[9]) ∧
+         past(EVENT[6]) ∧
+          向かう(EVENT[12], ENTITY[8]) ∧ に(EVENT[12]) = ENTITY[9] ∧ 分(EVENT[12]) = SITUATION[1])
+
+# ::id 8_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 分から ない で は ない 。
+EXCLAMATIVE(∃ ENTITY[1] (
+      ENTITY[1] = *pro* ∧
+       ¬ ∃ ENTITY[3] EVENT[2] (
+             ENTITY[3] = *pro*{ENTITY[1]} ∧
+              で_は(EVENT[2], ENTITY[1], ¬ ∃ EVENT[4] 分から(EVENT[4], ENTITY[3])))))
+
+# ::id 9_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 大望 や 野心 を あおる つもり は ない し 、 私益 や 国益 へ の 過ぎ た 固執 が 時 に 道 を 誤ら せ も する 。
+∃ SITUATION[7] SITUATION[1] EVENT[5] EVENT[13] EVENT[17] EVENT[15] EVENT[18] GROUP[2] GROUP[9] ENTITY[16] ENTITY[14] ENTITY[8] (
+ CONJ_や(∃ ENTITY[3] (大望(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[4] (野心(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+  つもり(SITUATION[1], あおる(EVENT[5], _, GROUP[2])) ∧
+   CONJ_や(∃ ENTITY[10] (私益(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+    ∃ ENTITY[11] (国益(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+    過ぎ_た(EVENT[13], ENTITY[8]) ∧ へ_の_固執(GROUP[9], ENTITY[8]) ∧
+     時(ENTITY[14]) ∧
+      道(ENTITY[16]) ∧
+       FACT(SITUATION[7],
+        せ(EVENT[15], ENTITY[8], 誤ら(EVENT[17], ENTITY[8], ENTITY[16])) ∧ に(EVENT[15]) = ENTITY[14]) ∧
+        past(EVENT[13]) ∧ CONJ_し(¬ ∃ EVENT[6] xxx(EVENT[6], SITUATION[1]), する(EVENT[18], SITUATION[7])))
+
+# ::id 10_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ただ 、 不安 を 可視化 する 想像力 や 乗り越える 意欲 を 放棄 し て は 、 寒々しい 希望喪失社会 が 現実化 する だけ だ 。
+∃ ATTRIB[15] SITUATION[13] ENTITY[2] SITUATION[1] EVENT[11] EVENT[16] GROUP[3] ENTITY[14] (
+ ENTITY[2] = *pro* ∧
+  CONJ_や(∃ EVENT[7] ENTITY[6] ENTITY[4] (
+        不安(ENTITY[6]) ∧
+         可視化する.0(EVENT[7], ENTITY[4], ENTITY[6]) ∧ 想像力(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[9] EVENT[10] ENTITY[8] (
+    ENTITY[9] = *pro*{ENTITY[2]} ∧
+     THAT_意欲(乗り越える(EVENT[10], ENTITY[9]), ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3]))) ∧
+   FACT(SITUATION[1], 放棄する.0_て(EVENT[11], ENTITY[2], GROUP[3])) ∧
+    寒々しい(ATTRIB[15]) ∧
+     ATTRIBUTE_希望喪失社会(ATTRIB[15], ENTITY[14]) ∧
+      FACT(SITUATION[13], 現実化する.0(EVENT[16], ENTITY[14])) ∧
+       だけ SITUATION[12] (SITUATION[12] = SITUATION[13], ∃ EVENT[17] (だ(EVENT[17], SITUATION[12]) ∧ te(EVENT[17]) = SITUATION[1])))
+
+# ::id 11_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt どんな 社会 を 望む の か 。
+QUEST(∃ ENTITY[1] EVENT[3] ? ENTITY[2] (社会(ENTITY[2]) ∧ ENTITY[1] = *pro* ∧ 望む_の(EVENT[3], ENTITY[1], ENTITY[2])))
+
+# ::id 12_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 難しい 時代 に 直面 する 今 、 私たち は 構想力 を 問わ れ て いる 。
+∃ ATTRIB[4] ENTITY[2] SITUATION[1] ENTITY[6] EVENT[5] EVENT[8] ENTITY[3] ENTITY[7] (
+ ENTITY[6] = 私たち{ENTITY[3]} ∧
+  ENTITY[2] = *pro* ∧
+   難しい(ATTRIB[4]) ∧
+    ATTRIBUTE_時代(ATTRIB[4], ENTITY[3]) ∧
+     今(SITUATION[1], 直面する.0(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+      構想力(ENTITY[7]) ∧ 問わ_て_いる(EVENT[8], _, ENTITY[7], ENTITY[6]) ∧ 時間(EVENT[8]) = SITUATION[1])
+
+# ::id 13_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt １９８９ 年 に 元号 が 「 平成 」 に 改まっ て から ２５ 年 、 四半 世紀 が 過ぎ た 。
+∃ SITUATION[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[6] (
+ CD_１９８９_年(ENTITY[2]) ∧
+  元号(ENTITY[3]) ∧
+   FACT(SITUATION[1],
+    改まっ_て(EVENT[4], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[平成] ∧ に(EVENT[4]) = ENTITY[2]) ∧
+    CD_２５_年(ENTITY[6]) ∧
+     CD_四半_世紀(ENTITY[5]) ∧
+      namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+       past(EVENT[7]) ∧ 過ぎ_た(EVENT[7], ENTITY[6]) ∧ te_から(EVENT[7]) = SITUATION[1])
+
+# ::id 14_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 国内外 、 歴史的 な 出来事 が 多く 、 社会 が 地球規模 で 転換期 に ある こと を 教える 。
+∃ SITUATION[6] ATTRIB[4] ENTITY[1] EVENT[5] EVENT[10] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  国内外(ENTITY[2]) ∧
+   歴史的_な(ATTRIB[4]) ∧
+    ATTRIBUTE_出来事(ATTRIB[4], ENTITY[3]) ∧
+     社会(ENTITY[7]) ∧
+      地球規模(ENTITY[8]) ∧
+       転換期(ENTITY[9]) ∧
+        こと(SITUATION[6],
+         ある(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ で(EVENT[10]) = ENTITY[8]) ∧
+         多く(EVENT[5], ENTITY[3]) ∧ ADV(EVENT[5]) = ENTITY[2] ∧ 教える(EVENT[11], ENTITY[1], SITUATION[6]))
+
+# ::id 15_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 新た な 社会 が 見定め切れ ない 故 に 模索 の 日々 が 長引く 。
+∃ ATTRIB[3] SITUATION[1] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[5] (
+ 新た_な(ATTRIB[3]) ∧
+  ATTRIBUTE_社会(ATTRIB[3], ENTITY[2]) ∧
+   故(SITUATION[1], ¬ ∃ EVENT[4] 見定め切れ(EVENT[4], ENTITY[2])) ∧
+    模索(ENTITY[6]) ∧
+     の_日々(ENTITY[6], ENTITY[5]) ∧ 長引く(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = SITUATION[1])
+
+# ::id 16_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 激動 の 歩み を 振り返る 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 激動(ENTITY[3]) ∧ の_歩み(ENTITY[3], ENTITY[2]) ∧ 振り返る(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 17_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 長期政権 を 担っ た 自民党 が 下野 。
+∃ EVENT[3] EVENT[4] ENTITY[2] (長期政権(ENTITY[2]) ∧ 担っ_た(EVENT[3], ENTITY[自民党], ENTITY[2]) ∧ past(EVENT[3]) ∧ 下野(EVENT[4], ENTITY[自民党]))
+
+# ::id 18_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ２００９ 年 、 初めて 本格的 な 政権交代 が 実現 し た 。
+∃ ATTRIB[3] EVENT[4] ENTITY[2] TIME[1] (
+ CD_２００９_年(TIME[1]) ∧
+  本格的_な(ATTRIB[3]) ∧
+   ATTRIBUTE_政権交代(ATTRIB[3], ENTITY[2]) ∧
+    ADV_初めて(EVENT[4]) ∧
+     past(EVENT[4]) ∧ 実現する.0_た(EVENT[4], ENTITY[2]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 19_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt １２ 年 、 自民党 が 政権 を 奪還 、 「 １ 強 体制 」 を 取り戻し た 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] TIME[1] (
+ CD_１２_年(TIME[1]) ∧
+  政権(ENTITY[2]) ∧
+   (CD_１_強(ENTITY[4]), 体制(ENTITY[4])) ∧
+    past(EVENT[5]) ∧
+     奪還(EVENT[3], ENTITY[自民党], ENTITY[2]) ∧
+      取り戻し_た(EVENT[5], ENTITY[自民党], ENTITY[4]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]))
+
+# ::id 20_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 消費税導入 は ８９ 年 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (消費税導入(ENTITY[1]) ∧ CD_８９_年(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 21_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 税率上げ が 政治 を 揺さぶり続ける 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (税率上げ(ENTITY[1]) ∧ 政治(ENTITY[2]) ∧ 揺さぶり続ける(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 22_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 経済 の 浮き沈み は 歴史的 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (経済(ENTITY[2]) ∧ の_浮き沈み(ENTITY[2], ENTITY[1]) ∧ 歴史的(EVENT[3], ENTITY[1]))
+
+# ::id 23_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 財政金融 の 大盤振る舞い で 、 ８９ 年 の 日経平均株価 は ４万 円 に 迫る 最高値 。
+∃ SITUATION[6] EVENT[3] EVENT[8] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[5] ENTITY[4] (
+ CD_８９_年(ENTITY[5]) ∧
+  の_日経平均株価(ENTITY[5], ENTITY[4]) ∧
+   財政金融(ENTITY[2]) ∧
+    の_大盤振る舞い(ENTITY[2], ENTITY[1]) ∧
+     CD_４万_円(ENTITY[7]) ∧
+      最高値(SITUATION[6], 迫る(EVENT[8], ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+       CONJ_te(で(EVENT[3], _, ENTITY[1]), xxx(EVENT[9], ENTITY[4], SITUATION[6])))
+
+# ::id 24_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt その 後 、 バブル が 崩壊 、 金融機関 の 破綻 が 相次い だ 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] TIME[1] (
+ 後(TIME[1]) ∧
+  バブル(ENTITY[2]) ∧
+   金融機関(ENTITY[5]) ∧
+    の_破綻(ENTITY[5], ENTITY[4]) ∧
+     past(EVENT[6]) ∧
+      崩壊(EVENT[3], ENTITY[2]) ∧ 相次い_だ(EVENT[6], ENTITY[4]) ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 25_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 雇用形態 が 大きく 変わり 、 個人所得 も 漸減 。
+∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 雇用形態(ENTITY[1]) ∧
+  個人所得(ENTITY[4]) ∧ ADV_大きく(EVENT[2]) ∧ 変わり(EVENT[2], ENTITY[1]) ∧ 漸減(EVENT[5], ENTITY[4]))
+
+# ::id 26_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ０８ 年 の リーマン・ショック から 経済 は 立ち直る 途上 に ある 。
+∃ SITUATION[3] EVENT[4] EVENT[5] ENTITY[1] ENTITY[2] (
+ 経済(ENTITY[2]) ∧
+  CD_０８_年(ENTITY[1]) ∧
+   の_xxx(ENTITY[1], ENTITY[リーマン.ショック]) ∧
+    途上(SITUATION[3], 立ち直る(EVENT[4], ENTITY[2])) ∧
+     ある(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = SITUATION[3] ∧ から(EVENT[5]) = ENTITY[リーマン.ショック])
+
+# ::id 27_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt １９９５ 年 の 阪神淡路大震災 など に 続い て ２０１１ 年 に は 東日本大震災 が 発生 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[1] ENTITY[4] (
+ CD_２０１１_年(ENTITY[4]) ∧
+  CD_１９９５_年(ENTITY[2]) ∧
+   の_xxx(ENTITY[2], ENTITY[阪神淡路大震災]) ∧
+    など(ENTITY[阪神淡路大震災], ENTITY[1]) ∧
+     CONJ_te(続い_て(EVENT[3]) ∧ に(EVENT[3]) = ENTITY[1],
+      発生(EVENT[5], ENTITY[東日本大震災]) ∧ に(EVENT[5]) = ENTITY[4]))
+
+# ::id 28_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 原発事故 も 重なり 、 豊か な 社会 の 脆（ぜい）弱（じゃく）さ を 見せつけ た 。
+∃ ATTRIB[6] ENTITY[1] EVENT[3] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  原発事故(ENTITY[2]) ∧
+   豊か_な(ATTRIB[6]) ∧
+    ATTRIBUTE_社会(ATTRIB[6], ENTITY[5]) ∧
+     の_脆（ぜい）弱（じゃく）さ(ENTITY[5], ENTITY[4]) ∧
+      past(EVENT[7]) ∧ 重なり(EVENT[3], ENTITY[2]) ∧ 見せつけ_た(EVENT[7], ENTITY[1], ENTITY[4]))
+
+# ::id 29_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ９５ 年 の 地下鉄サリン事件 で 社会不安 が 高まっ た 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (
+ CD_９５_年(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[地下鉄サリン事件]) ∧
+   社会不安(ENTITY[2]) ∧ past(EVENT[3]) ∧ 高まっ_た(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[地下鉄サリン事件])
+
+# ::id 30_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 格差 、 高齢社会 が 進行 し 人口減少 が 現実化 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (格差_高齢社会(ENTITY[1]) ∧ 人口減少(ENTITY[3]) ∧ 進行する.0(EVENT[2], ENTITY[1]) ∧ 現実化(EVENT[4], ENTITY[3]))
+
+# ::id 31_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 財政 は 借金まみれ で 不利益 の 分配 を 迫ら れる 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 財政(ENTITY[1]) ∧
+  借金まみれ(ENTITY[2]) ∧
+   不利益(ENTITY[5]) ∧
+    の_分配(ENTITY[5], ENTITY[4]) ∧
+     CONJ_te(で(EVENT[3], ENTITY[1], ENTITY[2]), 迫ら(EVENT[6], _, ENTITY[4], ENTITY[1])))
+
+# ::id 32_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 国際社会 で は 「 大国 の 興亡 」 が 劇的 に 展開 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 国際社会(ENTITY[1]) ∧
+  大国(ENTITY[3]) ∧
+   の_興亡(ENTITY[3], ENTITY[2]) ∧
+    ADV_劇的_に(EVENT[4]) ∧ 展開(EVENT[4], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[1])
+
+# ::id 33_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ８９ 年 に ベルリン の 壁 が 崩壊 、 ９１ 年 に ソ連 が 消滅 し た 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[1] ENTITY[4] (
+ CD_８９_年(ENTITY[1]) ∧
+  の_壁(ENTITY[ベルリン], ENTITY[2]) ∧
+   CD_９１_年(ENTITY[4]) ∧
+    past(EVENT[5]) ∧
+     崩壊(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1] ∧
+      消滅する.0_た(EVENT[5], ENTITY[ソ連]) ∧ に(EVENT[5]) = ENTITY[4])
+
+# ::id 34_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 唯一 の 強国 、 米国 も 国力 が 陰り 、 超大国不在 の 「 Ｇ０ 」 の 時代 に 動く 。
+∃ ENTITY[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  唯一(ENTITY[4]) ∧
+   の_強国(ENTITY[4], ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[3], ENTITY[米国]) ∧
+     LINK_国力(ENTITY[米国], ENTITY[2]) ∧
+      超大国不在(ENTITY[7]) ∧
+       の_xxx(ENTITY[7], ENTITY[Ｇ０]) ∧
+        の_時代(ENTITY[Ｇ０], ENTITY[6]) ∧
+         陰り(EVENT[5], ENTITY[2]) ∧ 動く(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[6])
+
+# ::id 35_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 東西冷戦終結 で 平和 の 配当 が 期待 さ れ た が 、 負 の 遺産 から 新た な 脅威 が 出現 。
+∃ ATTRIB[7] EVENT[3] EVENT[8] ENTITY[2] ENTITY[1] ENTITY[5] ENTITY[6] ENTITY[4] (
+ 平和(ENTITY[2]) ∧
+  の_配当(ENTITY[2], ENTITY[1]) ∧
+   負(ENTITY[5]) ∧
+    の_遺産(ENTITY[5], ENTITY[4]) ∧
+     新た_な(ATTRIB[7]) ∧
+      ATTRIBUTE_脅威(ATTRIB[7], ENTITY[6]) ∧
+       past(EVENT[3]) ∧
+        CONJ_が(期待する.0_た(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[東西冷戦終結],
+         出現(EVENT[8], ENTITY[6]) ∧ から(EVENT[8]) = ENTITY[4]))
+
+# ::id 36_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt ２００１ 年 「 ９・１１同時テロ 」 の 形 で 、 矛先 が 米国 に 向い た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] TIME[1] (
+ CD_２００１_年(TIME[1]) ∧
+  の_形(ENTITY[９.１１同時テロ], ENTITY[2]) ∧
+   矛先(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     向い_た(EVENT[4], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[米国] ∧ で(EVENT[4]) = ENTITY[2] ∧
+      is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 37_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 対テロ の アフガン、イラク両戦争 を 経 て なお 、 中東 の 安定化 は 遠い 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ の_安定化(ENTITY[中東], ENTITY[4]) ∧
+  ENTITY[1] = *pro* ∧
+   対テロ(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[アフガン、イラク両戦争]) ∧
+     ADV_なお(EVENT[5]) ∧ CONJ_te(経_て(EVENT[3], ENTITY[1], ENTITY[アフガン、イラク両戦争]), 遠い(EVENT[5], ENTITY[4])))
+
+# ::id 38_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 民主化 を 求める 「 アラブの春 」 も 出口 が 見え ない 。
+∃ EVENT[3] ENTITY[2] ENTITY[4] (
+ 民主化(ENTITY[2]) ∧
+  求める(EVENT[3], ENTITY[アラブの春], ENTITY[2]) ∧
+   出口(ENTITY[4]) ∧ ¬ ∃ EVENT[5] (見え(EVENT[5], ENTITY[4]) ∧ TPC(EVENT[5]) = ENTITY[アラブの春]))
+
+# ::id 39_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 米国主導 の 強欲 な 資本主義 が 席巻 。
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 米国主導(ENTITY[2]) ∧
+  強欲_な(ATTRIB[3]) ∧ ATTRIBUTE_資本主義(ATTRIB[3], ENTITY[1]) ∧ の_資本主義(ENTITY[2], ENTITY[1]) ∧ 席巻(EVENT[4], ENTITY[1]))
+
+# ::id 40_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 金融自由化 が リーマン・ショック と なっ て 暴発 し 、 新興国 の 躍進 など で 経済 の 仕組み も 複雑さ を 増す 。
+∃ EVENT[2] EVENT[3] EVENT[10] ENTITY[1] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[9] ENTITY[7] ENTITY[4] (
+ 金融自由化(ENTITY[1]) ∧
+  新興国(ENTITY[6]) ∧
+   の_躍進(ENTITY[6], ENTITY[5]) ∧
+    など(ENTITY[5], ENTITY[4]) ∧
+     経済(ENTITY[8]) ∧
+      の_仕組み(ENTITY[8], ENTITY[7]) ∧
+       複雑さ(ENTITY[9]) ∧
+        CONJ_te(なっ_て(EVENT[2], ENTITY[1]) ∧ と(EVENT[2]) = ENTITY[リーマン.ショック], 暴発する.0(EVENT[3], ENTITY[1])) ∧
+         増す(EVENT[10], ENTITY[7], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[4])
+
+# ::id 41_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 米国 と 台頭 する 中国 が 微妙 な 力関係 で 世界 を リード し そう な 状況 だ が 、 国益 の 調整 は 難しく 安定 し た 世界 へ の 道筋 を 描け ない 。
+∃ ENTITY[11] SITUATION[2] ENTITY[1] EVENT[10] GROUP[3] ENTITY[13] ENTITY[12] (
+ 国益(ENTITY[13]) ∧
+  の_調整(ENTITY[13], ENTITY[12]) ∧
+   ENTITY[1] = *pro* ∧
+    CONJ_と(is_element_of(ENTITY[米国], GROUP[3]), ∃ EVENT[5] (台頭する.0(EVENT[5], ENTITY[中国]) ∧ is_element_of(ENTITY[中国], GROUP[3]))) ∧
+     状況(SITUATION[2],
+      MD_そう(∃ ATTRIB[7] EVENT[9] ENTITY[8] ENTITY[6] (
+            微妙_な(ATTRIB[7]) ∧
+             ATTRIBUTE_力関係(ATTRIB[7], ENTITY[6]) ∧
+              世界(ENTITY[8]) ∧
+               リードする.0_な(EVENT[9], GROUP[3], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[6]))) ∧
+      ENTITY[11] = *pro*{ENTITY[中国], ENTITY[米国]} ∧
+       CONJ_が(だ(EVENT[10], ENTITY[1], SITUATION[2]),
+        ¬ ∃ EVENT[14] EVENT[18] EVENT[19] ENTITY[16] ENTITY[15] (
+              安定する.0_た(EVENT[18], ENTITY[16]) ∧ 世界(ENTITY[16]) ∧
+               へ_の_道筋(ENTITY[16], ENTITY[15]) ∧
+                past(EVENT[18]) ∧
+                 難しく(EVENT[14], ENTITY[12]) ∧ 描け(EVENT[19], ENTITY[11], ENTITY[15]))))
+
+# ::id 42_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 巨大地震 や 大型台風 など の 自然災害 が 猛威 を 振るう 。
+∃ EVENT[7] GROUP[3] ENTITY[2] ENTITY[6] ENTITY[1] (
+ CONJ_や(∃ ENTITY[4] (巨大地震(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+  ∃ ENTITY[5] (大型台風(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+  など(GROUP[3], ENTITY[2]) ∧
+   の_自然災害(ENTITY[2], ENTITY[1]) ∧ 猛威(ENTITY[6]) ∧ 振るう(EVENT[7], ENTITY[1], ENTITY[6]))
+
+# ::id 43_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 異常気象 の 要因 と さ れる 温暖化対策 も 利害 が 絡み つまずく 。
+∃ EVENT[5] EVENT[7] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[1] (
+ 異常気象(ENTITY[4]) ∧
+  の_要因(ENTITY[4], ENTITY[3]) ∧
+   さ(EVENT[5], _, ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[3] ∧ 温暖化対策(ENTITY[1]) ∧
+    利害(ENTITY[6]) ∧ 絡み(EVENT[7], ENTITY[6]) ∧ つまずく(EVENT[8], ENTITY[1]))
+
+# ::id 44_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 四半 世紀 の 激変 を 踏まえれ ば 、 従来 の 発想 で 「 希望 と 共 に ある 社会 」 を 築く こと は でき まい 。
+∀ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] CND_ば(
+    ENTITY[1] = *pro* ∧ CD_四半_世紀(ENTITY[3]) ∧ の_激変(ENTITY[3], ENTITY[2]) ∧
+     踏まえれ(EVENT[4], ENTITY[1], ENTITY[2]),
+    ∃ ENTITY[6] SITUATION[5] EVENT[13] EVENT[14] ENTITY[8] ENTITY[12] ENTITY[11] ENTITY[9] ENTITY[7] (
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[3]} ∧
+      従来(ENTITY[8]) ∧
+       の_発想(ENTITY[8], ENTITY[7]) ∧
+        希望(ENTITY[11]) ∧
+         共(ENTITY[12]) ∧
+          ある(EVENT[13], ENTITY[9]) ∧ に(EVENT[13]) = ENTITY[12] ∧ と(EVENT[13]) = ENTITY[11] ∧
+           社会(ENTITY[9]) ∧
+           こと(SITUATION[5], 築く(EVENT[14], ENTITY[6], ENTITY[9]) ∧ で(EVENT[14]) = ENTITY[7]) ∧
+            ¬ ∃ EVENT[15] でき(EVENT[15], SITUATION[5])))
+
+# ::id 45_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 先々 の 不透明 を 言い訳 に 「 時代 の 挑戦 」 から 逃れ続ける わけ に も いか ず 、 長い 視点 と 深い 洞察 で 流れ を 見据え て 一 歩 を 踏み出す 時 だ 。
+∃ ENTITY[12] SITUATION[11] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[9] EVENT[19] EVENT[21] EVENT[22] ENTITY[5] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] GROUP[14] ENTITY[13] ENTITY[20] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   先々(ENTITY[5]) ∧
+    の_不透明(ENTITY[5], ENTITY[4]) ∧
+     言い訳(ENTITY[6]) ∧
+      時代(ENTITY[8]) ∧
+       の_挑戦(ENTITY[8], ENTITY[7]) ∧
+        わけ(SITUATION[2],
+         逃れ続ける(EVENT[9], ENTITY[3], ENTITY[4]) ∧ から(EVENT[9]) = ENTITY[7] ∧
+          に(EVENT[9]) = ENTITY[6]) ∧
+         ENTITY[12] = *pro*{ENTITY[1], ENTITY[4], ENTITY[6], ENTITY[7], ENTITY[8], ENTITY[5]} ∧
+          CONJ_と(∃ ATTRIB[16] ENTITY[15] (長い(ATTRIB[16]) ∧ ATTRIBUTE_視点(ATTRIB[16], ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])),
+           ∃ ATTRIB[18] ENTITY[17] (深い(ATTRIB[18]) ∧ ATTRIBUTE_洞察(ATTRIB[18], ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[14]))) ∧
+           で_流れ(GROUP[14], ENTITY[13]) ∧
+            CD_一_歩(ENTITY[20]) ∧
+             時(SITUATION[11],
+              CONJ_te(見据え_て(EVENT[19], ENTITY[12], ENTITY[13]), 踏み出す(EVENT[21], ENTITY[12], ENTITY[20]))) ∧
+              CONJ_te(¬ ∃ EVENT[10] (いか(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = SITUATION[2]),
+               だ(EVENT[22], ENTITY[1], SITUATION[11])))
+
+# ::id 46_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 安倍晋三首相 は デフレ脱却 を 掲げ 、 成長戦略 を 推し進める 。
+∃ EVENT[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ デフレ脱却(ENTITY[1]) ∧
+  成長戦略(ENTITY[3]) ∧ 掲げ(EVENT[2], ENTITY[安倍晋三首相], ENTITY[1]) ∧ 推し進める(EVENT[4], ENTITY[安倍晋三首相], ENTITY[3]))
+
+# ::id 47_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 安全保障 の 態勢強化 と 併せ 、 国家主義的 な 古い 手法 で 富国 と 強兵 の 強い 日本 を 取り戻そう と する ごとく で ある 。
+∃ ATTRIB[8] ATTRIB[7] SITUATION[5] ENTITY[1] EVENT[4] EVENT[13] EVENT[14] EVENT[15] ENTITY[3] ENTITY[2] GROUP[10] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  安全保障(ENTITY[3]) ∧
+   の_態勢強化(ENTITY[3], ENTITY[2]) ∧
+    国家主義的_な(ATTRIB[7]) ∧
+     古い(ATTRIB[8]) ∧
+      ATTRIBUTE_手法(ATTRIB[8], ENTITY[6]) ∧ ATTRIBUTE__手法(ATTRIB[7], ENTITY[6]) ∧
+       CONJ_と(∃ ENTITY[11] (富国(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+        ∃ ENTITY[12] (強兵(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+        強い(EVENT[13], GROUP[10]) ∧ LOC(EVENT[13]) = ENTITY[日本] ∧
+         FACT(SITUATION[5], 取り戻そう(EVENT[14], ENTITY[1], ENTITY[日本]) ∧ で(EVENT[14]) = ENTITY[6]) ∧
+          併せ(EVENT[4], ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[2] ∧
+           する_ごとく_で_ある(EVENT[15], ENTITY[1]) ∧ と(EVENT[15]) = SITUATION[5])
+
+# ::id 48_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 原発再稼働 を 進める 理屈 も 、 そうした 文脈 で 説明 できる 。
+∃ ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] (
+ 文脈(ENTITY[5]) ∧
+  ENTITY[2] = *pro* ∧
+   原発再稼働(ENTITY[3]) ∧
+    理屈(SITUATION[1], 進める(EVENT[4], ENTITY[2], ENTITY[3])) ∧
+     説明する.0(EVENT[6], SITUATION[1]) ∧ で(EVENT[6]) = ENTITY[5])
+
+# ::id 49_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 現世 の 利益 と 引き換え に 後世 の 幸福 を 差し出す 心地 の 悪さ を 思う 。
+∃ ENTITY[4] SITUATION[3] ENTITY[1] EVENT[11] EVENT[12] ENTITY[10] ENTITY[9] GROUP[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   CONJ_と(∃ ENTITY[7] ENTITY[6] (現世(ENTITY[7]) ∧ の_利益(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[8] (引き換え(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5]))) ∧
+    後世(ENTITY[10]) ∧
+     の_幸福(ENTITY[10], ENTITY[9]) ∧
+      心地(SITUATION[3], 差し出す(EVENT[11], ENTITY[4], ENTITY[9]) ∧ に(EVENT[11]) = GROUP[5]) ∧
+       の_悪さ(SITUATION[3], ENTITY[2]) ∧ 思う(EVENT[12], ENTITY[1], ENTITY[2]))
+
+# ::id 50_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 「 ３・１１ 」 以後 の 日本 の 再生 で は なく 、 それ 以前 の 再生 に 流れ て いる 。
+∃ ENTITY[6] ENTITY[1] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  (CD_３.１１(ENTITY[3]), 以後(ENTITY[3])) ∧
+   の_xxx(ENTITY[3], ENTITY[日本]) ∧
+    の_再生(ENTITY[日本], ENTITY[2]) ∧
+     ENTITY[6] = それ{ENTITY[1], ENTITY[日本], ENTITY[2], ENTITY[3]} ∧
+      以前(ENTITY[6]) ∧
+       の_再生(ENTITY[6], ENTITY[5]) ∧
+        ¬ ∃ EVENT[4] で_は(EVENT[4], ENTITY[1], ENTITY[2]) ∧
+         流れ_て_いる(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[5])
+
+# ::id 51_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 昨年 亡くなっ た コラムニスト天野祐吉さん に は 、 現実 が そう 映る 。
+∃ EVENT[5] ENTITY[4] EVENT[3] TIME[2] (
+ 昨年(TIME[2]) ∧
+  亡くなっ_た(EVENT[3], ENTITY[コラムニスト天野祐吉さん]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]) ∧
+   past(EVENT[3]) ∧
+    現実(ENTITY[4]) ∧ ADV_そう(EVENT[5]) ∧ 映る(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[コラムニスト天野祐吉さん])
+
+# ::id 52_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 成長 から 成熟社会 へ の 潮流 に 背く よう に 成長神話 に すがる 寂しさ が 批評 に こもる 。
+∃ ENTITY[8] SITUATION[7] ENTITY[2] SITUATION[1] EVENT[6] EVENT[10] EVENT[12] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[11] (
+ ENTITY[2] = *pro* ∧
+  成長(ENTITY[5]) ∧
+   から_成熟社会(ENTITY[5], ENTITY[4]) ∧
+    へ_の_潮流(ENTITY[4], ENTITY[3]) ∧
+     よう(SITUATION[1], 背く(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[3]) ∧
+      ENTITY[8] = *pro*{ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+       成長神話(ENTITY[9]) ∧
+        寂しさ(SITUATION[7], すがる(EVENT[10], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9]) ∧
+         批評(ENTITY[11]) ∧
+          こもる(EVENT[12], SITUATION[7]) ∧ に(EVENT[12]) = ENTITY[11] ∧ に(EVENT[12]) = SITUATION[1])
+
+# ::id 53_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 好景気 が 復興 を 支える 側面 は 確か に ある が 、 成長 の 限界 を 学び 、 「 あの 日 」 に それ だけ で は 得 られ ない 安心感 、 幸福感 が ある こと も 知っ た 。
+∃ SITUATION[10] ENTITY[6] SITUATION[1] ENTITY[15] EVENT[3] EVENT[4] EVENT[9] EVENT[20] EVENT[21] ENTITY[2] ENTITY[8] ENTITY[7] GROUP[17] ENTITY[12] ENTITY[11] (
+ 日(ENTITY[11]) ∧
+  ENTITY[15] = それ{ENTITY[11], ENTITY[6], ENTITY[7], ENTITY[8], ENTITY[2], ENTITY[好景気]} ∧
+   復興(ENTITY[2]) ∧
+    側面(SITUATION[1], 支える(EVENT[3], ENTITY[好景気], ENTITY[2])) ∧
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[好景気]} ∧
+      成長(ENTITY[8]) ∧
+       の_限界(ENTITY[8], ENTITY[7]) ∧
+        ∃ ENTITY[18] (安心感(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[17])) ∧
+         ∃ ENTITY[19] (幸福感(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[17])) ∧
+         ¬ だけ_は ENTITY[14] (ENTITY[14] = ENTITY[15],
+               ∃ EVENT[16] (得(EVENT[16], _, ENTITY[12]) ∧ で(EVENT[16]) = ENTITY[14])) ∧
+          equals(GROUP[17], ENTITY[12]) ∧
+          こと(SITUATION[10], ある(EVENT[20], ENTITY[12]) ∧ に(EVENT[20]) = ENTITY[11]) ∧
+           ADV_確か_に(EVENT[4]) ∧
+            past(EVENT[4]) ∧
+             past(EVENT[21]) ∧
+              CONJ_が(ある(EVENT[4], SITUATION[1]),
+               学び(EVENT[9], ENTITY[6], ENTITY[7]) ∧ 知っ_た(EVENT[21], ENTITY[6], SITUATION[10])))
+
+# ::id 54_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 支え合う 共助 や 心 を 寄せ合う 絆 の 大切さ 、 巨大システム に 過度 に 依存 する 社会 の 危うさ を 悟っ た 今 、 復興 は 新た な 社会像 を 模索 し 実践 する 過程 に 重なる 。
+∃ ATTRIB[24] ENTITY[22] SITUATION[21] ENTITY[2] SITUATION[1] EVENT[19] EVENT[25] EVENT[26] EVENT[27] GROUP[3] ENTITY[23] ENTITY[20] (
+ 復興(ENTITY[20]) ∧
+  ENTITY[2] = *pro* ∧
+   ∃ GROUP[5] ENTITY[4] (
+    CONJ_や(∃ ENTITY[7] EVENT[8] ENTITY[6] (
+          ENTITY[7] = *pro*{ENTITY[4], ENTITY[2]} ∧
+           THAT_共助(支え合う(EVENT[8], ENTITY[7]), ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[10] EVENT[12] ENTITY[11] ENTITY[9] (
+      ENTITY[10] = *pro*{ENTITY[4], ENTITY[2]} ∧
+       心(ENTITY[11]) ∧
+        THAT_絆(寄せ合う(EVENT[12], ENTITY[10], ENTITY[11]), ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[5]))) ∧
+     の_大切さ(GROUP[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ EVENT[17] ENTITY[16] ENTITY[14] ENTITY[13] (
+     巨大システム(ENTITY[16]) ∧
+      依存する.0(EVENT[17], ENTITY[14]) ∧ に(EVENT[17]) = ENTITY[16] ∧ 社会(ENTITY[14]) ∧
+       の_危うさ(ENTITY[14], ENTITY[13]) ∧ ADV_過度_に(EVENT[17]) ∧ is_element_of(ENTITY[13], GROUP[3])) ∧
+    今(SITUATION[1], 悟っ_た(EVENT[19], ENTITY[2], GROUP[3])) ∧
+     ENTITY[22] = *pro*{ENTITY[20]} ∧
+      新た_な(ATTRIB[24]) ∧
+       ATTRIBUTE_社会像(ATTRIB[24], ENTITY[23]) ∧
+        過程(SITUATION[21], 模索する.0(EVENT[25], ENTITY[22], ENTITY[23]) ∧ 実践する.0(EVENT[26], ENTITY[22])) ∧
+         past(EVENT[19]) ∧
+          重なる(EVENT[27], ENTITY[20]) ∧ に(EVENT[27]) = SITUATION[21] ∧ 時間(EVENT[27]) = SITUATION[1])
+
+# ::id 55_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 成熟 に 軸足 を 置い た 地域主義的 な 循環・共生社会創造 へ の パラダイムシフト の 先駆け に も なろう 。
+∃ ATTRIB[9] ENTITY[1] EVENT[7] EVENT[10] ENTITY[6] ENTITY[8] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  成熟(ENTITY[2]) ∧
+   軸足(ENTITY[6]) ∧
+    地域主義的_な(ATTRIB[9]) ∧
+     ATTRIBUTE_循環.共生社会創造(ATTRIB[9], ENTITY[8]) ∧
+      置い_た(EVENT[7], ENTITY[4], ENTITY[6]) ∧ へ_の_パラダイムシフト(ENTITY[8], ENTITY[4]) ∧
+       の_先駆け(ENTITY[4], ENTITY[3]) ∧
+        past(EVENT[7]) ∧
+         なろう(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[3] ∧ に(EVENT[10]) = ENTITY[2])
+
+# ::id 56_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt 「 青い 鳥 」 の 舞う 社会 の 構築 に 向け た 一 つ の 手掛かり として 、 東北 の 再生 が 担う 歴史的意義 を かみしめ たい 。
+∃ ATTRIB[8] ENTITY[1] EVENT[9] EVENT[10] EVENT[15] EVENT[16] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[11] ENTITY[14] ENTITY[12] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  青い(ATTRIB[8]) ∧
+   ATTRIBUTE_鳥(ATTRIB[8], ENTITY[7]) ∧
+    舞う(EVENT[9], ENTITY[7]) ∧ LOC(EVENT[9]) = ENTITY[5] ∧ 社会(ENTITY[5]) ∧
+     の_構築(ENTITY[5], ENTITY[4]) ∧
+      CD_一_つ(ENTITY[11]) ∧
+       向け_た(EVENT[10], ENTITY[2]) ∧ に(EVENT[10]) = ENTITY[4] ∧ の_手掛かり(ENTITY[11], ENTITY[2]) ∧
+        の_再生(ENTITY[東北], ENTITY[14]) ∧
+         担う(EVENT[15], ENTITY[14], ENTITY[12]) ∧ 歴史的意義(ENTITY[12]) ∧
+          past(EVENT[10]) ∧ かみしめ_たい(EVENT[16], ENTITY[1], ENTITY[12]) ∧ として(EVENT[16]) = ENTITY[2])
+
+# ::id 57_newswire_00706_K201401010A0F10XX00202;NJ
+# ::snt （ ２０１４・１・１ ）
+∃ EVENT[2] ENTITY[1] (CD_２０１４.１.１(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

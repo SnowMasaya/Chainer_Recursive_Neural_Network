@@ -1,0 +1,224 @@
+# ::id 1_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 秋田県民会館 の 館長公募
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 館長公募
+             :の ( ENTITY-秋田県民会館 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "秋田県民会館"))))
+
+# ::id 2_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt ／ ４ 月 着任 、 任期 ２ 年
+( EVENT-4 / EVENT
+      :LINK ( GROUP-1 / AND (
+                    :op1 ( ENTITY-2 CD_４_月) ( ENTITY-2 着任))
+             :op2 ENTITY-6
+             :MOD ( mod-5 / AND (
+                           :op1 ( ENTITY-3 CD_２_年) ( ENTITY-3 任期))
+                    :op2 ENTITY-7)))
+
+# ::id 3_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 秋田県総合公社 は 、 秋田市 の 県民会館 （ 大ホール １８３９ 席 ） の 館長 を 公募 する 。
+( EVENT-3 / 公募する.0
+      :ARG0 ( ENTITY-秋田県総合公社 / ENTITY
+             :name ( n-6 / name
+                    :op1 "秋田県総合公社"))
+      :ARG1 ( ENTITY-1 / 館長
+             :の ( ENTITY-県民会館 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "県民会館")
+                    :の ( ENTITY-秋田市 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "秋田市"))
+                    :NAMELY ( ENTITY-2 / CD_１８３９_席
+                           :MOD ( mod-4 / 大ホール)))))
+
+# ::id 4_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 「 東北 の 文化発展 に 寄与 できる 人 」 （ 同公社 ） を 求め て いる 。
+( EVENT-6 / 求め_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 人
+             :ARG0-of ( EVENT-5 / 寄与する.0
+                    :に ( ENTITY-4 / 文化発展
+                           :の ( ENTITY-東北 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "東北"))))
+             :NAMELY ( ENTITY-同公社 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "同公社"))))
+
+# ::id 5_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 県 の 委託 で 会館 を 管理 し て いる 同公社 の 館長公募 は 今回 で ２ 人 目 。
+( EVENT-9 / EVENT
+      :ARG0 ( ENTITY-1 / 館長公募
+             :の ( ENTITY-同公社 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "同公社")
+                    :ARG0-of ( EVENT-6 / 管理する.0_て_いる
+                           :ARG1 ( ENTITY-5 / 会館)
+                           :で ( ENTITY-3 / 委託
+                                  :の ( ENTITY-4 / 県)))))
+      :ARG1 ( ENTITY-8 / CD_２_人
+             :MOD ( mod-10 / 目))
+      :で ( ENTITY-7 / 今回))
+
+# ::id 6_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt ２０１１ 年度 、 コンサート や 演劇 など の 利用料収入 によって 、 県 から の 管理料 が 変動 する 仕組み に なっ た ため 、 意欲的 な 館長 の 下 で 集客力 を 高め よう と 公募制 に 切り替え た 。
+( EVENT-22 / 切り替え_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-15 / 公募制
+             :THAT ( EVENT-21 / 高め
+                    :ARG0 ( PICK-25 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-3
+                           :op3 ENTITY-11
+                           :op4 ENTITY-12
+                           :op5 ENTITY-4)
+                    :ARG1 ( ENTITY-20 / 集客力)
+                    :で ( ENTITY-17 / 下
+                           :の ( ENTITY-18 / 館長
+                                  :ATTRIBUTE ( ATTRIB-19 / 意欲的_な)))
+                    :domain-of ( MD-27 / MD_よう)))
+      :ため ( EVENT-14 / なっ_た
+             :ARG0 ( PICK-24 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-3
+                    :op3 ENTITY-4)
+             :ARG1 ( SITUATION-10 / 仕組み
+                    :THAT ( EVENT-13 / 変動する.0
+                           :ARG0 ( ENTITY-11 / 管理料
+                                  :から_の ( ENTITY-12 / 県))))
+             :MOD ( mod-28 / past))
+      :によって ( ENTITY-3 / 利用料収入
+             :の ( ENTITY-4 / ENTITY
+                    :など ( CONJ-23 / CONJ_や
+                           :op1 ( GROUP-5 / AND
+                                  :op1 ( ENTITY-6 / コンサート)
+                                  :op2 ENTITY-31)
+                           :op2 ( GROUP-30 / AND
+                                  :op1 ( ENTITY-7 / 演劇)
+                                  :op2 ENTITY-32))))
+      :TMP ( TIME-2 / CD_２０１１_年度)
+      :MOD ( mod-29 / past))
+
+# ::id 7_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 職員 約２０ 人 の トップ として 、 自主企画 の 立案 や 業務全般 の 管理 、 施設維持 など に 当たる 。
+( EVENT-11 / 当たる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-4 / ENTITY
+             :など ( CONJ-12 / CONJ_や
+                    :op1 ( GROUP-5 / AND
+                           :op1 ( ENTITY-7 / 自主企画)
+                           :op2 ( ENTITY-6 / 立案
+                                  :の ENTITY-7)
+                           :op3 ENTITY-16)
+                    :op2 ( GROUP-14 / AND
+                           :op1 ( ENTITY-9 / 業務全般)
+                           :op2 ( ENTITY-8 / 管理
+                                  :の ENTITY-9)
+                           :op3 ENTITY-17)
+                    :op3 ( GROUP-15 / AND
+                           :op1 ( ENTITY-10 / 施設維持)
+                           :op2 ENTITY-18)))
+      :として ( ENTITY-2 / トップ
+             :の ( ENTITY-3 / CD_約２０_人
+                    :MOD ( mod-13 / 職員))))
+
+# ::id 8_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 応募条件 は 、 音楽 や 演劇 など 芸術文化事業 の 企画・実施 の 経験 、 企業 や 自治体 で 管理職 として の ２ 年 以上 の 実務経験－ など 。
+( EVENT-15 / EVENT
+      :ARG0 ( ENTITY-1 / 応募条件)
+      :など ( GROUP-2 / AND
+             :op5 ( ENTITY-3 / 経験
+                    :の ( ENTITY-4 / 企画.実施
+                           :の ( ENTITY-5 / 芸術文化事業
+                                  :など ( GROUP-6 / AND
+                                         :op1 ( ENTITY-7 / 音楽)
+                                         :op2 ENTITY-22))))
+             :op1 ( CONJ-17 / CONJ_や
+                    :op1 ( GROUP-6 / AND
+                           :op1 ( ENTITY-8 / 演劇)
+                           :op2 ENTITY-24)
+                    :op2 GROUP-23)
+             :op2 ENTITY-5
+             :op3 ENTITY-4
+             :op4 ENTITY-21
+             :MOD ( mod-20 / AND
+                    :op5 ( ENTITY-9 / 実務経験 －
+                           :の ( ENTITY-14 / CD_２_年)
+                           :として_の ( ENTITY-10 / 管理職
+                                  :で ( GROUP-11 / AND
+                                         :op1 ( ENTITY-12 / 企業)
+                                         :op2 ENTITY-26)))
+                    :op1 ( CONJ-19 / CONJ_や
+                           :op1 ( GROUP-11 / AND
+                                  :op1 ( ENTITY-13 / 自治体)
+                                  :op2 ENTITY-28)
+                           :op2 GROUP-27)
+                    :op2 ENTITY-10 (
+                           :op3 ( ENTITY-14 以上) ENTITY-14)
+                    :op4 ENTITY-25)))
+
+# ::id 9_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 基本給 は 月 ２２万 円 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 基本給)
+      :ARG1 ( ENTITY-2 / CD_２２万_円
+             :MOD ( mod-4 / 月)))
+
+# ::id 10_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 任期 は ２０１４ 年 ４ 月 １ 日 から ２ 年間 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / 任期)
+      :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_２_年間)
+             :から ( ENTITY-3 / CD_２０１４_年_４_月_１_日)))
+
+# ::id 11_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 申し込み は 今月 ６～３１ 日 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / 申し込み)
+      :ARG1 ( ENTITY-2 / CD_６ ～ ３１_日
+             :MOD ( mod-4 / 今月)))
+
+# ::id 12_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 「 職務経験 を 県民会館 の 利用促進 に どう 生かす か 」 を テーマ に し た 小論文 や 経歴書 、 面接 など で 決める 。
+( EVENT-18 / 決める
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :で ( ENTITY-2 / ENTITY
+             :など ( CONJ-27 / CONJ_や
+                    :op1 ( GROUP-3 / AND
+                           :op5 ( ENTITY-4 / 小論文)
+                           :op1 ( SITUATION-6 / か
+                                  :THAT ( EVENT-12 / 生かす
+                                         :ARG0 ( PICK-25 / or
+                                                :op1 ENTITY-4
+                                                :op2 ENTITY-2
+                                                :op3 ENTITY-1)
+                                         :ARG1 ( ENTITY-8 / 職務経験)
+                                         :に ( ENTITY-9 / 利用促進
+                                                :の ( ENTITY-10 / 県民会館))
+                                         :ADV ENTITY-11
+                                         :domain-of ( QUEST-26 / QUEST)))
+                           :op2 ( ENTITY-14 / テーマ)
+                           :op3 ( EVENT-15 / し_た
+                                  :ARG0 ENTITY-4
+                                  :ARG1 SITUATION-6
+                                  :ARG2 ENTITY-14)
+                           :op4 ( EVENT-30 / past))
+                    :op2 ( GROUP-28 / AND
+                           :op1 ( ENTITY-16 / 経歴書)
+                           :op2 ENTITY-31)
+                    :op3 ( GROUP-29 / AND
+                           :op1 ( ENTITY-17 / 面接)
+                           :op2 ENTITY-32))))
+
+# ::id 13_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 連絡先 は 同公社 ０１８（８９６）７１００ 。
+( EVENT-2 / EVENT
+      :ARG0 ( ENTITY-1 / 連絡先)
+      :ARG1 ( ENTITY-同公社_０１８ （ ８９６ ） ７１００ / ENTITY
+             :name ( n-3 / name
+                    :op1 "同公社_０１８ （ ８９６ ） ７１００")))

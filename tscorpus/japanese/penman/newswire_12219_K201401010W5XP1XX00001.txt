@@ -1,0 +1,232 @@
+# ::id 1_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ご当地バンザイ
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ご当地バンザイ))
+
+# ::id 2_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ／ 探そう つくろう 東北 の 宝
+( EVENT-8 / EVENT
+      :LINK ( ENTITY-1 / 宝
+             :の ( ENTITY-東北 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "東北"))
+             :ARG1-of ( EVENT-4 / 探そう
+                    :ARG0 ( ENTITY-3 / pro
+                           :pick0))
+             :ARG1-of ( EVENT-7 / つくろう
+                    :ARG0 ( ENTITY-6 / pro
+                           :pick0))))
+
+# ::id 3_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ぶらり 訪ね た 野外イベント で 、 地域自慢 の 汁物 を 振る舞う コーナー に 行列 が でき て い まし た 。
+( EVENT-12 / でき_て_い_まし_た
+      :ARG0 ( ENTITY-11 / 行列)
+      :に ( ENTITY-6 / コーナー
+             :ARG0-of ( EVENT-10 / 振る舞う
+                    :ARG1 ( ENTITY-8 / 汁物
+                           :の ( ENTITY-9 / 地域自慢))))
+      :で ( ENTITY-1 / 野外イベント
+             :LOC-of ( EVENT-4 / 訪ね_た
+                    :ARG0 ( ENTITY-3 / pro
+                           :pick0)
+                    :MOD ( mod-13 / ぶらり)
+                    :MOD ( mod-14 / past)))
+      :MOD ( mod-15 / past))
+
+# ::id 4_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 「 ご当地 の 味 」 を 楽しむ 人たち は 「 うめえ なぁ 」 「 懐かしい っちゃ ね 」 「 ん だ ねぇ 」 と 口々 に 語り 、 顔 に は ほんのり 笑み が 浮かん で い ます 。
+( CONJ-24 / AND
+      :op1 ( EVENT-7 / 語り
+             :ARG0 ( ENTITY-1 / 人たち
+                    :ARG0-of ( EVENT-5 / 楽しむ
+                           :ARG1 ( ENTITY-3 / 味
+                                  :の ( ENTITY-4 / ご当地))))
+             :に ( ENTITY-6 / 口々)
+             :THAT ( CONJ-25 / AND
+                    :op1 ( EVENT-12 / だ
+                           :MOD ( mod-22 / ん))
+                    :op2 ( EVENT-9 / うめえ
+                           :ARG0 ( PICK-18 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-6
+                                  :op3 ENTITY-3
+                                  :op4 ENTITY-4))
+                    :op3 ( EVENT-11 / 懐かしい
+                           :ARG0 ( PICK-19 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-6
+                                  :op3 ENTITY-3
+                                  :op4 ENTITY-4)
+                           :domain-of ( MD-21 / MD_っちゃ))))
+      :op2 ( EVENT-16 / 浮かん_で_い_ます
+             :ARG0 ( ENTITY-15 / 笑み)
+             :に ( ENTITY-14 / 顔)
+             :MOD ( mod-23 / ほんのり)))
+
+# ::id 5_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 「 ご当地 」 。
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-ご当地 / ENTITY
+             :name ( n-2 / name
+                    :op1 "ご当地")))
+
+# ::id 6_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt その 響き は 心 を わくわく さ せ ます 。
+( EVENT-3 / せ_ます
+      :ARG0 ( ENTITY-1 / 響き)
+      :ARG1 ( ENTITY-2 / 心)
+      :TOCOMP ( EVENT-4 / わくわくする.0
+             :ARG0 ENTITY-2))
+
+# ::id 7_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 地元発 の キャラクター が 続々 生まれ 、 その 土地 を 盛り上げ 、 地方 の 知ら れ ざる 物産 を 紹介 する テレビ番組 も すごい 人気 とか 。
+( CONJ-21 / AND
+      :op1 ( EVENT-7 / 盛り上げ
+             :ARG0 ( ENTITY-2 / キャラクター
+                    :の ( ENTITY-3 / 地元発)
+                    :ARG0-of ( EVENT-4 / 生まれ
+                           :MOD ( mod-20 / 続々)))
+             :ARG1 ( ENTITY-6 / 土地))
+      :op2 ( EVENT-18 / EVENT
+             :ARG1 ( ENTITY-1 / pro
+                    :pick0)
+             :とか ( EVENT-17 / EVENT
+                    :ARG0 ( SITUATION-9 / テレビ番組
+                           :THAT ( EVENT-14 / 紹介する.0
+                                  :ARG1 ( ENTITY-10 / 物産
+                                         :の ( ENTITY-11 / 地方)
+                                         :ARG1-of ( EVENT-13 / 知ら
+                                                :domain-of ( NEG-19 / NEG)))))
+                    :ARG1 ( ENTITY-15 / 人気
+                           :ATTRIBUTE ( ATTRIB-16 / すごい)))))
+
+# ::id 8_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 人々 の 心 を くすぐる 理由 は 、 都会 の 洗練さ と は ひと味 違う 「 何でも あり 」 の ユニークさ や 、 ごった煮 の エネルギー が 生み出す パワー 。
+( EVENT-22 / EVENT
+      :ARG0 ( SITUATION-1 / 理由
+             :THAT ( EVENT-5 / くすぐる
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :ARG1 ( ENTITY-3 / 心
+                           :の ( ENTITY-4 / 人々))))
+      :ARG1 ( CONJ-25 / CONJ_や
+             :op1 ( GROUP-6 / AND
+                    :op6 ( ENTITY-7 / ユニークさ
+                           :の ( SITUATION-13 / FACT
+                                  :THAT ( EVENT-15 / あり
+                                         :ARG0 ( ENTITY-14 / ENTITY
+                                                :namely ( PICK-24 / or
+                                                       :op1 ENTITY-7
+                                                       :op2 ENTITY-9
+                                                       :op3 ENTITY-10
+                                                       :op4 ENTITY-3
+                                                       :op5 ENTITY-4)))))
+                    :op1 ENTITY-14
+                    :op2 SITUATION-13
+                    :op3 ( EVENT-11 / 違う
+                           :ARG0 ENTITY-7
+                           :と ( ENTITY-9 / 洗練さ
+                                  :の ( ENTITY-10 / 都会)))
+                    :op4 ( EVENT-27 / ひと味)
+                    :op5 ( EVENT-15 / 何でも))
+             :op2 ( GROUP-26 / AND
+                    :op3 ( EVENT-21 / 生み出す
+                           :ARG0 ( ENTITY-19 / エネルギー
+                                  :の ( ENTITY-20 / ごった煮))
+                           :ARG1 ( ENTITY-17 / パワー))
+                    :op4 ENTITY-17
+                    :op1 ENTITY-20
+                    :op2 ENTITY-19)))
+
+# ::id 9_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt それ に 、 素朴 で 飾ら ない 風土 そのもの の 味わい な の でしょ う 。
+( EVENT-9 / な_の_でしょ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / 味わい
+             :の ( ENTITY-4 / 風土
+                    :RFL ( PICK-10 / or
+                           :op1 ENTITY-3
+                           :op2 ENTITY-1
+                           :op3 ENTITY-2)
+                    :ARG0-of ( EVENT-7 / 飾ら
+                           :で ( ENTITY-6 / 素朴)
+                           :domain-of ( NEG-11 / NEG))))
+      :に ( ENTITY-2 / それ
+             :pick0)
+      :domain-of ( MD-12 / MD_う))
+
+# ::id 10_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 古里 は もちろん 、 大切 な 人 の 住む まち や お気に入り の 風景 など それぞれ の 「 ご当地 」 は 、 ささやか な 喜び を 呼び起こし て くれ そう です 。
+( CONJ-18 / AND
+      :op1 ( EVENT-1 / EVENT
+             :ARG0 ( ENTITY-古里 / ENTITY
+                    :name ( n-17 / name
+                           :op1 "古里"))
+             :MOD ( mod-15 / もちろん))
+      :op2 ( EVENT-13 / 呼び起こし_て_くれ_です
+             :ARG0 ( ENTITY-ご当地 / ENTITY
+                    :name ( n-16 / name
+                           :op1 "ご当地")
+                    :など ( GROUP-3 / CONJ_や
+                           :op1 ( ENTITY-4 / まち
+                                  :LOC-of ( EVENT-8 / 住む
+                                         :ARG0 ( ENTITY-6 / 人
+                                                :ATTRIBUTE ( ATTRIB-7 / 大切_な))))
+                           :op2 ( ENTITY-9 / 風景
+                                  :の ( ENTITY-10 / お気に入り))))
+             :ARG1 ( ENTITY-11 / 喜び
+                    :ATTRIBUTE ( ATTRIB-12 / ささやか_な))
+             :domain-of ( MD-14 / MD_そう)))
+
+# ::id 11_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 東日本大震災 から ３ 度 目 の お正月 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / お正月
+             :の ( ENTITY-3 / CD_３_度
+                    :MOD ( mod-5 / 目)))
+      :から ( ENTITY-東日本大震災 / ENTITY
+             :name ( n-6 / name
+                    :op1 "東日本大震災")))
+
+# ::id 12_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 悲しみ は いつも ひっそり と たたずん で いる けれど 、 暮らし の 中 で 元気 の 種 を 持ち 続け たい 。
+( CRD-11 / けれど
+      :op1 ( EVENT-4 / たたずん_で_いる
+             :ARG0 ( ENTITY-2 / 悲しみ)
+             :と ( ATTRIB-3 / ひっそり)
+             :MOD ( mod-12 / いつも))
+      :op2 ( EVENT-10 / 持ち_続け_たい
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-8 / 種
+                    :の ( ENTITY-9 / 元気))
+             :で ( ENTITY-6 / 中
+                    :の ( ENTITY-7 / 暮らし))))
+
+# ::id 13_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt まず 足元 を 見つめ 直し ませ ん か 。
+( EVENT-3 / 見つめ_直し_ませ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 足元)
+      :MOD ( mod-7 / まず)
+      :domain-of ( QUEST-6 / QUEST)
+      :domain-of ( NEG-5 / NEG))
+
+# ::id 14_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt わたしたち の 東北 で 「 ご当地 」 の 魅力 を 探し て み まし た 。
+( EVENT-4 / 探し_て_み_まし_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / 魅力
+             :の ( ENTITY-ご当地 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "ご当地")))
+      :で ( ENTITY-東北 / ENTITY
+             :name ( n-6 / name
+                    :op1 "東北")
+             :の ENTITY-1)
+      :MOD ( mod-5 / past))

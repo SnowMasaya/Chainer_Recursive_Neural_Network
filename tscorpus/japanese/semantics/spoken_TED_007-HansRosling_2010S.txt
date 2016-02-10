@@ -1,0 +1,1209 @@
+# ::id 1_spoken_TED_007-HansRosling_2010S;1;NJ
+# ::snt 学校 で 先生 が 私たち に 世界 の 人口 が 30億 人 に 達し た と 教え て くれ た 事 を 今 で も 覚え て い ます
+∃ z10 Z12 x1 x2 x3 x4 x5 x6 e7 e8 e9 s11 (
+ 事(s11,
+  教え_て_くれ_た(e8, x5, 達し_た(e7, x3) ∧ に(e7) = x2) ∧
+   に(e8) = Z12 ∧ で(e8) = x4) ∧
+  before(e8, e7) ∧
+   past(e8) ∧
+    先生(x5) ∧
+     学校(x4) ∧
+      世界(x1) ∧
+       の_人口(x1, x3) ∧
+        CD_30億_人(x2) ∧
+         今(x6) ∧
+          Z12 = 私たち ∧
+           z10 = speaker ∧ 覚え_て_い_ます(e9, z10, s11) ∧ で(e9) = x6)
+
+# ::id 2_spoken_TED_007-HansRosling_2010S;1;NJ
+# ::snt まだ 1960 年 の 頃 でし た
+∃ x4 x1 t2 e3 (
+ まだ(e3) ∧
+  past(e3) ∧
+   CD_1960_年(t2) ∧
+    x4 = pro ∧ の_頃(t2, x1) ∧ でし_た(e3, x4, x1))
+
+# ::id 3_spoken_TED_007-HansRosling_2010S;2;NJ
+# ::snt 今 から お話 する の は 世界 の 人口 が あの 年 から どの よう に 変化 し これ から どう なる の か という こと です
+∃ z7 x1 x2 t3 e4 x5 e6 (
+ こと(QUEST(∃ x14 x8 x9 e10 e11 ? x12 x13 (
+            世界(x8) ∧
+             の_人口(x8, x9) ∧
+              x14 = これ{x12, x8, x2, x1} ∧
+               circumstance(x13, e11) ∧
+                よう(x12) ∧
+                 変化_し(e10, x9) ∧ に(e10) = x12 ∧
+                  is_contained_in(から(e10), t3) ∧
+                  なる_の(e11, x9) ∧ から(e11) = x14)), x5) ∧
+  年(t3) ∧
+   z7 = speaker ∧
+    今(x1) ∧
+     お話_する(e4, z7, x2) ∧ から(e4) = x1 ∧ の(x2) ∧
+      です(e6, x2, x5))
+
+# ::id 4_spoken_TED_007-HansRosling_2010S;2;NJ
+# ::snt しかし 私 が 今 まで 5 回 の TEDTalk で 披露 し た デジタルテクノロジー は 今回 使い ませ ん
+∃ z8 z5 x1 x2 x3 e4 (
+ past(e4) ∧
+  の_xxx(x1, TEDTalk) ∧
+   z5 = speaker ∧
+    z8 = 私 ∧
+     今(x2) ∧
+      CD_5_回(x1) ∧
+       披露_し_た(e4, z8, x3) ∧ で(e4) = TEDTalk ∧
+        まで(e4) = x2 ∧ デジタルテクノロジー(x3) ∧
+        ¬ ∃ t6 e7 (
+              今回(t6) ∧
+               使い_ませ(e7, z5, x3) ∧ is_contained_in(時間(e7), t6)))
+
+# ::id 5_spoken_TED_007-HansRosling_2010S;3;NJ
+# ::snt 代わり に 私 は 進歩 し まし た 本日 私 は 全く 新しい アナログ の 教育テクノロジー を 披露 し ます
+∃ z7 x1 x2 x3 A8 t4 e5 e6 (
+ past(e5) ∧
+  本日(t4) ∧
+   全く_新しい(A8) ∧
+    代わり(x3) ∧
+     アナログ(x1) ∧
+      進歩_し_まし_た(e5, x2) ∧ の_教育テクノロジー(x1, x2) ∧ attribute_教育テクノロジー(A8, x2) ∧
+       z7 = 私 ∧
+        披露_し_ます(e6, z7, x2) ∧ is_contained_in(時間(e6), t4) ∧
+         に(e6) = x3)
+
+# ::id 6_spoken_TED_007-HansRosling_2010S;3;NJ
+# ::snt IKEA から 持っ て 来 た この 箱 が そう です
+∃ z4 x1 e2 e3 (
+ そう(e3) ∧
+  past(e2) ∧
+   z4 = speaker ∧
+    持っ_て_来_た(e2, z4, x1) ∧ から(e2) = IKEA_ ∧ 箱(x1) ∧
+     です(e3, x1))
+
+# ::id 7_spoken_TED_007-HansRosling_2010S;4;NJ
+# ::snt この 箱 は 10億 人 分 を 表し ます
+∃ x1 x2 e3 ((CD_10億_人(x2), 分(x2)) ∧ 箱(x1) ∧ 表し_ます(e3, x1, x2))
+
+# ::id 8_spoken_TED_007-HansRosling_2010S;5;NJ
+# ::snt 学校 の 先生 は 1960 年 において 先進工業国 で は 人口 は 10億 人 で ある こと を 教え て くれ まし た
+∃ x1 x2 x3 x4 x5 t6 e7 e8 s9 (
+ こと(s9,
+  で_ある(e7, x3, x5) ∧ で(e7) = x2 ∧
+   is_contained_in(において(e7), t6)) ∧
+  past(e8) ∧
+   CD_1960_年(t6) ∧
+    CD_10億_人(x5) ∧
+     学校(x1) ∧
+      の_先生(x1, x4) ∧
+       人口(x3) ∧ 先進工業国(x2) ∧ 教え_て_くれ_まし_た(e8, x4, s9))
+
+# ::id 9_spoken_TED_007-HansRosling_2010S;6;NJ
+# ::snt 一方 発展途上国 で は 人口 は 20億 人 と 言っ て い まし た
+∃ x1 x2 x6 x3 e4 e5 (
+ past(e5) ∧
+  x6 = pro ∧
+   CD_20億_人(x3) ∧
+    人口(x2) ∧
+     発展途上国(x1) ∧
+      言っ_て_い_まし_た(e5, x6, xxx(e4, x2, x3) ∧ で(e4) = x1))
+
+# ::id 10_spoken_TED_007-HansRosling_2010S;7;NJ
+# ::snt 2 つ の 世界 は 分断 さ れ て い まし た
+∃ x1 x2 e3 (
+ past(e3) ∧
+  CD_2_つ(x1) ∧ の_世界(x1, x2) ∧ 分断_さ_て_い_まし_た(e3, _, x2))
+
+# ::id 11_spoken_TED_007-HansRosling_2010S;8;NJ
+# ::snt 10億 人 の 先進工業国 と 20億 人 の 発展途上国 に は 大きな ギャップ が あっ た の です
+∃ x1 x2 x3 x4 X5 x6 A8 e7 (
+ past(e7) ∧
+  大きな(A8) ∧
+   attribute_ギャップ(A8, x6) ∧
+    CRD_と(is_element_of(x2, X5), is_element_of(x4, X5)) ∧
+     CD_10億_人(x1) ∧
+      の_先進工業国(x1, x2) ∧
+       CD_20億_人(x3) ∧
+        の_発展途上国(x3, x4) ∧ あっ_た_の_です(e7, x6) ∧ に(e7) = X5)
+
+# ::id 12_spoken_TED_007-HansRosling_2010S;9;NJ
+# ::snt 先進工業国 で は 人々 は 健康 で 教育 を 受け 豊か で 小家族 でし た
+∃ x1 x2 x3 x4 x5 e6 e7 e8 e9 (
+ past(e9) ∧
+  健康(x3) ∧
+   教育(x4) ∧
+    小家族(x5) ∧
+     人々(x2) ∧
+      先進工業国(x1) ∧
+       CRD_て(で(e6, x2, x3),
+        受け(e7, x2, x4) ∧
+         CRD_て(豊か_で(e8, x2),
+          でし_た(e9, x2, x5) ∧ で(e9) = x1)))
+
+# ::id 13_spoken_TED_007-HansRosling_2010S;10;NJ
+# ::snt 彼ら の 憧れ は 車 を 購入 する 事 です
+∃ x5 x1 x7 x2 e3 e4 s6 (
+ 事(s6, 購入_する(e3, x7, x2)) ∧
+  x7 = pro{x1} ∧
+   車(x2) ∧
+    x5 = 彼ら ∧ の_憧れ(x5, x1) ∧ です(e4, x1, s6))
+
+# ::id 14_spoken_TED_007-HansRosling_2010S;11;NJ
+# ::snt 1960 年 スウェーデン人 は みんな この よう な ボルボ を 買う 為 に 貯金 を し て い まし た
+∃ x1 x2 t3 e4 e5 e6 s8 (
+ 為(s8, 買う(e5, ボルボ)) ∧
+  past(e6) ∧
+   CD_1960_年(t3) ∧
+    な(e4, ボルボ, x1) ∧
+     貯金(x2) ∧
+      よう(x1) ∧
+       みんな x7 (x7 = スウェーデン人,
+        し_て_い_まし_た(e6, x7, x2) ∧ に(e6) = s8 ∧
+         is_contained_in(時間(e6), t3)))
+
+# ::id 15_spoken_TED_007-HansRosling_2010S;12;NJ
+# ::snt これ が 当時 の スウェーデン の 経済レベル です
+∃ x4 x1 x2 e3 (
+ の_xxx(x1, スウェーデン) ∧
+  x4 = これ ∧ 当時(x1) ∧ の_経済レベル(スウェーデン, x2) ∧ です(e3, x4, x2))
+
+# ::id 16_spoken_TED_007-HansRosling_2010S;13;NJ
+# ::snt これ に対して 発展途上国 における 平均的 な 家庭 の 強い 願い は その 日 一日 の 食料 を 確保 する こと でし た
+∃ x1 x2 x3 A10 A9 t4 x13 x11 x5 t6 e7 e8 s12 (
+ こと(s12, 確保_する(e7, x13, x5) ∧ is_contained_in(時間(e7), t4)) ∧
+  past(e8) ∧
+   一日(t6) ∧
+    x11 = これ{x2, x1} ∧
+     x13 = pro{x3, x11, x2, x1} ∧
+      の_食料(t6, x5) ∧
+       日(t4) ∧
+        平均的_な(A9) ∧
+         強い(A10) ∧
+          発展途上国(x1) ∧
+           attribute_家庭(A9, x2) ∧ における_家庭(x1, x2) ∧
+            attribute_願い(A10, x3) ∧ の_願い(x2, x3) ∧
+             でし_た(e8, x3, s12) ∧ に対して(e8) = x11)
+
+# ::id 17_spoken_TED_007-HansRosling_2010S;14;NJ
+# ::snt 彼ら は 靴 を 買う 為 に 貯金 し て い た の です
+∃ x4 x1 e2 e3 s5 (
+ 為(s5, 買う(e2, x4, x1)) ∧
+  past(e3) ∧
+   靴(x1) ∧ x4 = 彼ら ∧ 貯金_し_て_い_た_の_です(e3, x4) ∧ に(e3) = s5)
+
+# ::id 18_spoken_TED_007-HansRosling_2010S;15;NJ
+# ::snt 私 が 育っ た 時代 において 世界 に は 途方もない ギャップ が 存在 し て い まし た
+∃ z7 x1 x2 A5 e3 e4 s6 (
+ 時代(s6, 育っ_た(e3, z7)) ∧
+  past(e3) ∧
+   past(e4) ∧
+    途方もない(A5) ∧
+     attribute_ギャップ(A5, x2) ∧
+      z7 = 私 ∧
+       世界(x1) ∧
+        存在_し_て_い_まし_た(e4, x2) ∧ に(e4) = x1 ∧ において(e4) = s6)
+
+# ::id 19_spoken_TED_007-HansRosling_2010S;16;NJ
+# ::snt そして 西欧諸国 と その 他 の 国々 と の ギャップ から 生じ た 固定観念 は 今 も 使わ れる 言葉 の 中 に 残り 私たち は 「 西欧諸国 」 とか 「 発展途上国 」 と 呼ぶ の です
+∃ x1 x2 x3 x4 x5 Z15 X6 e7 x8 x9 X10 t11 e12 e13 e14 (
+ 今(t11) ∧
+  CRD_とか(is_element_of(西欧諸国, X10), ∃ x16 (発展途上国(x16) ∧ is_element_of(x16, X10))) ∧
+   使わ(e12, _, x8) ∧ is_contained_in(時間(e12), t11) ∧ 言葉(x8) ∧
+    の_中(x8, x9) ∧
+     past(e7) ∧
+      Z15 = 私たち ∧
+       CRD_と(is_element_of(x1, X6), is_element_of(x3, X6)) ∧
+        西欧諸国(x1) ∧
+         他(x2) ∧
+          の_国々(x2, x3) ∧
+           と_の_ギャップ(X6, x4) ∧
+            生じ_た(e7, x5) ∧ から(e7) = x4 ∧ 固定観念(x5) ∧
+             残り(e13, x5) ∧ に(e13) = x9 ∧
+              呼ぶ_の_です(e14, Z15, x5) ∧ と(e14) = X10)
+
+# ::id 20_spoken_TED_007-HansRosling_2010S;17;NJ
+# ::snt しかし 世界 は 変わり まし た
+∃ x1 e2 (past(e2) ∧ 世界(x1) ∧ 変わり_まし_た(e2, x1))
+
+# ::id 21_spoken_TED_007-HansRosling_2010S;17;NJ
+# ::snt その 固定観念 や 世界 の 分類 について 一刻 も 早く 考え を 改め 理解 する 必要 が あり ます
+∃ x1 x2 x3 x4 X5 x6 s11 e7 e8 e9 s10 (
+ 必要(s10,
+  fact(s11,
+   改め(e7, _, x6) ∧ 理解_する(e8, _) ∧ について(e8) = x4)) ∧
+  早く(s11) ∧ 一刻_も(s11) ∧
+   考え(x6) ∧
+    CRD_や(is_element_of(x1, X5), is_element_of(x3, X5)) ∧
+     固定観念(x1) ∧
+      世界(x2) ∧
+       の_分類(x2, x3) ∧ equals(X5, x4) ∧ あり_ます(e9, s10))
+
+# ::id 22_spoken_TED_007-HansRosling_2010S;18;NJ
+# ::snt 今日 は それ を 皆さん に お見せ し ます
+∃ z4 t1 x5 x2 e3 (
+ x5 = それ ∧
+  皆さん(x2) ∧
+   今日(t1) ∧
+    z4 = speaker ∧
+     お見せ_し_ます(e3, z4, x5) ∧ に(e3) = x2 ∧
+      is_contained_in(時間(e3), t1))
+
+# ::id 23_spoken_TED_007-HansRosling_2010S;18;NJ
+# ::snt 1960 年 から 2010 年 に かけ て 世界 に 起き た こと と 言え ば 驚く べき 事 に 40億 人 も の 人々 が 世界 の 人口 の 仲間入り を 果たし た こと です
+∃ x1 (
+ x1 = pro ∧
+  ∀ x2 x3 t4 t5 e6 e7 e8 CND_ば(
+      past(e7) ∧ CD_1960_年(t5) ∧ CD_2010_年(t4) ∧ 世界(x2) ∧
+       CRD_て(かけ(e6) ∧ is_contained_in(に(e6), t4) ∧
+             is_contained_in(から(e6), t5),
+        起き_た(e7, x3) ∧ に(e7) = x2) ∧ こと(x3) ∧
+       言え(e8) ∧ と(e8) = x3,
+      ∃ x9 x10 x11 x12 x13 e14 e15 s18 s16 (
+       事(s16, MD_べき(∃ e17 驚く(e17))) ∧
+        こと(s18, 果たし_た(e14, x13, x12)) ∧
+         past(e14) ∧
+          CD_40億_人(x9) ∧
+           の_人々(x9, x13) ∧
+            世界(x10) ∧
+             の_人口(x10, x11) ∧
+              の_仲間入り(x11, x12) ∧
+               です(e15, x1, s18) ∧ に(e15) = s16)))
+
+# ::id 24_spoken_TED_007-HansRosling_2010S;19;NJ
+# ::snt どれ だけ 多い か ご覧 ください
+∃ z3 x7 x4 e1 e2 (
+ x7 = pro{x4} ∧
+  か d5 s6 (
+   fact(s6,
+    だけ x8 (of(d5, x8), 多い(e1, x7) ∧ msr(e1) = x8)),
+   link(s6, x4)) ∧ z3 = hearer ∧ ご覧_ください(e2, z3, x4))
+
+# ::id 25_spoken_TED_007-HansRosling_2010S;20;NJ
+# ::snt 私 が 学校 に 通っ て い た 時代 から 倍 に なり まし た
+∃ z7 x5 x1 x2 e3 e4 s6 (
+ 時代(s6, 通っ_て_い_た(e3, z7) ∧ に(e3) = x1) ∧
+  past(e3) ∧
+   past(e4) ∧
+    x5 = pro ∧
+     学校(x1) ∧
+      倍(x2) ∧
+       z7 = 私 ∧ なり_まし_た(e4, x5, x2) ∧ から(e4) = s6)
+
+# ::id 26_spoken_TED_007-HansRosling_2010S;21;NJ
+# ::snt もちろん 西欧諸国 の 経済成長 も あり まし た
+∃ x1 x2 e3 (
+ もちろん(e3) ∧
+  past(e3) ∧ 西欧諸国(x1) ∧ の_経済成長(x1, x2) ∧ あり_まし_た(e3, x2))
+
+# ::id 27_spoken_TED_007-HansRosling_2010S;22;NJ
+# ::snt 多く の 企業 が 経済 の 成長 を 促し 西欧諸国 の 国民 は こちら に 移動 し まし た
+∃ x1 x2 x9 x3 x4 x5 e6 e7 (
+ past(e7) ∧
+  多く x8 の_企業(x8, x5) ∧
+   経済(x3) ∧
+    の_成長(x3, x4) ∧
+     x9 = こちら{x5, x4, x3, x1} ∧
+      西欧諸国(x1) ∧
+       の_国民(x1, x2) ∧
+        促し(e6, x5, x4) ∧ 移動_し_まし_た(e7, x2) ∧ に(e7) = x9)
+
+# ::id 28_spoken_TED_007-HansRosling_2010S;23;NJ
+# ::snt 今や 彼ら の 憧れ は 車 を 所有 する だけ で は あり ませ ん
+∃ x2 x1 (
+ x2 = 彼ら ∧
+  の_憧れ(x2, x1) ∧
+   ¬ ∃ x9 x7 x3 t4 e5 e6 s8 (
+         fact(s8, 所有_する(e5, x9, x3)) ∧
+          今や(t4) ∧
+           x9 = pro{x1, x7} ∧
+            車(x3) ∧
+             だけ s10 (of(s8, s10), link(s10, x7)) ∧
+              で_は_あり_ませ(e6, x1, x7) ∧ is_contained_in(時間(e6), t4)))
+
+# ::id 29_spoken_TED_007-HansRosling_2010S;24;NJ
+# ::snt 今や 彼ら は 非常 に 離れ た 場所 を 飛行機 で 飛ん で 休日 を 過ごし たい の です
+∃ x8 x1 x2 t3 t4 e5 e6 e7 (
+ 非常_に(e5) ∧
+  今や(t4) ∧
+   休日(t3) ∧
+    離れ_た(e5, x2) ∧ 場所(x2) ∧
+     飛行機(x1) ∧
+      x8 = 彼ら ∧
+       CRD_で(飛ん(e6, x8, x2) ∧ で(e6) = x1,
+        過ごし_たい_の_です(e7, x8, t3) ∧ is_contained_in(時間(e7), t4)))
+
+# ::id 30_spoken_TED_007-HansRosling_2010S;25;NJ
+# ::snt 今 彼ら は ここ に い ます
+∃ x3 x4 t1 e2 (
+ 今(t1) ∧
+  x4 = ここ ∧
+   x3 = 彼ら ∧
+    い_ます(e2, x3) ∧ に(e2) = x4 ∧ is_contained_in(時間(e2), t1))
+
+# ::id 31_spoken_TED_007-HansRosling_2010S;26;NJ
+# ::snt そして 発展途上国 の 中 で 最も 成功 し た 国 も 移動 し て い ます
+∃ x1 x2 x3 e4 e5 (
+ 最も(e4) ∧
+  past(e4) ∧
+   発展途上国(x1) ∧
+    の_中(x1, x2) ∧
+     成功_し_た(e4, x3) ∧ で(e4) = x2 ∧ 国(x3) ∧
+      移動_し_て_い_ます(e5, x3))
+
+# ::id 32_spoken_TED_007-HansRosling_2010S;26;NJ
+# ::snt 彼ら の 経済 は 新興経済 と 呼ば れる よう に なり まし た
+∃ x5 x1 x2 e3 e4 s6 (
+ よう(s6, 呼ば(e3, _, x1) ∧ と(e3) = x2) ∧
+  past(e4) ∧
+   新興経済(x2) ∧
+    x5 = 彼ら ∧ の_経済(x5, x1) ∧ なり_まし_た(e4, x1, s6))
+
+# ::id 33_spoken_TED_007-HansRosling_2010S;27;NJ
+# ::snt そして 彼ら は 今や 車 を 買い 始め て い ます
+∃ x4 x1 t2 e3 (
+ 今や(t2) ∧
+  車(x1) ∧
+   x4 = 彼ら ∧ 買い_始め_て_い_ます(e3, x4, x1) ∧ is_contained_in(時間(e3), t2))
+
+# ::id 34_spoken_TED_007-HansRosling_2010S;28;NJ
+# ::snt 一 ヶ月 前 に は 中国 の 会社 で ある 吉利 ジーリー が ボルボ を 買収 し まし た
+∃ x1 x2 e3 e4 (
+ past(e4) ∧
+  の_会社(中国, x2) ∧
+   で_ある(e3, 吉利, x2) ∧
+    吉利 = ジーリー ∧
+     (CD_一_ヶ月(x1), 前(x1)) ∧
+      買収_し_まし_た(e4, 吉利, ボルボ) ∧ に(e4) = x1)
+
+# ::id 35_spoken_TED_007-HansRosling_2010S;28;NJ
+# ::snt ここ で ようやく スウェーデン人 は 世界 に 何 か 大きな 変化 が 起き た こと に 気づい た の です
+∃ x1 x3 e2 s4 (
+ こと(s4,
+  何_か x5 A6 ((大きな(A6) ∧ attribute_変化(A6, x5)),
+   ∃ x7 e8 (
+    past(e8) ∧
+     世界(x7) ∧ 起き_た(e8, x5) ∧ に(e8) = x7))) ∧
+  ようやく(e2) ∧
+   past(e2) ∧
+    x3 = ここ ∧
+     スウェーデン人(x1) ∧
+      気づい_た_の_です(e2, x1) ∧ に(e2) = s4 ∧ で(e2) = x3)
+
+# ::id 36_spoken_TED_007-HansRosling_2010S;29;NJ
+# ::snt 笑 今や こんな 感じ です
+∃ x1 x4 t2 e3 (
+ 今や(t2) ∧
+  x4 = pro ∧
+   感じ(x1) ∧ です(e3, x4, x1) ∧ is_contained_in(時間(e3), t2))
+
+# ::id 37_spoken_TED_007-HansRosling_2010S;30;NJ
+# ::snt 悲劇 な の は ここ の 食料 と 靴 を 得る 為 に 頑張っ て いる 20億 人 は 未だ に ほとんど 50 年 前 と 変わら ず 貧しい まま だ という こと です
+∃ x16 x1 x2 x3 x4 x5 x6 X7 e8 e9 e10 s15 x11 e17 e12 e13 e14 s18 (
+ まま(s18,
+  CRD_て(¬ ∃ t19 e20 (
+             ほとんど(e20) ∧
+              (CD_50_年(t19), 前(t19)) ∧
+               変わら(e20, x5) ∧ is_contained_in(と(e20), t19)),
+   貧しい(e12, x5))) ∧
+  未だ(e17) ∧
+   こと(だ(e13, x5, s18) ∧ に(e13) = e17, x11) ∧
+    為(s15, 得る(e9, x5, x4)) ∧
+     CRD_と(is_element_of(x2, X7), is_element_of(x3, X7)) ∧
+      悲劇(x1) ∧
+       な(e8, x6, x1) ∧ の(x6) ∧
+        x16 = ここ{x5, x6, x1} ∧
+         食料(x2) ∧
+          靴(x3) ∧
+           equals(X7, x4) ∧ の(x16, x4) ∧
+            (CD_20億_人(x5), 頑張っ_て_いる(e10, x5) ∧ に(e10) = s15) ∧
+             です(e14, x6, x11))
+
+# ::id 38_spoken_TED_007-HansRosling_2010S;31;NJ
+# ::snt 新しい の は 最も 大きい 集団 で ある ここ の 30億 人 が 新興経済国 として 変わり 始め て いる 点 です
+∃ x1 A8 x11 x2 x3 x4 A10 e5 e6 e7 s9 (
+ 点(s9, 変わり_始め_て_いる(e6, x4) ∧ として(e6) = x3) ∧
+  最も_大きい(A10) ∧
+   attribute_集団(A10, x2) ∧
+    x11 = ここ{x2, x1} ∧
+     (CD_30億_人(x4), で_ある(e5, x4, x2) ∧ の(x11, x4)) ∧
+      新興経済国(x3) ∧
+       新しい(A8) ∧ attribute_の(A8, x1) ∧ です(e7, x1, s9))
+
+# ::id 39_spoken_TED_007-HansRosling_2010S;31;NJ
+# ::snt 彼ら は かなり 健康 で 相対的 に 十分 な 教育 を 受け て おり 女性 1 人 につき 2 - 3 人 の 子供 が い ます
+∃ x8 x1 x2 x3 x4 A10 A9 e5 e6 e7 (
+ かなり(e5) ∧
+  十分_な(A10) ∧
+   相対的_に(A9) ∧ attribute(A10, A9) ∧
+    attribute__教育(A9, x1) ∧
+     (CD_1_人(x4), 女性(x4)) ∧
+      CD_2_3_人(x2) ∧
+       の_子供(x2, x3) ∧
+        x8 = 彼ら ∧
+         CRD_て(健康_で(e5, x8),
+          受け_て_おり(e6, x8, x1) ∧
+           い_ます(e7, (x8, x3)) ∧ につき(e7) = x4))
+
+# ::id 40_spoken_TED_007-HansRosling_2010S;32;NJ
+# ::snt 彼ら の 夢 は 自転車 を 買う 事 で あり 後 に なっ て バイク も 買う 事 です
+∃ x10 x1 x14 x12 x2 x3 x4 e5 e6 e7 e8 e9 s13 s11 (
+ 事(s11, 買う(e5, x12, x2)) ∧
+  事(s13, 買う(e8, x14, x4)) ∧
+   x12 = pro{x1} ∧
+    自転車(x2) ∧
+     後(x3) ∧
+      x14 = pro{x1, x3, x2} ∧
+       バイク(x4) ∧
+        x10 = 彼ら ∧
+         の_夢(x10, x1) ∧
+          で_あり(e6, x1, s11) ∧
+           CRD_て(なっ(e7, x1, x3), です(e9, x1, s13)))
+
+# ::id 41_spoken_TED_007-HansRosling_2010S;33;NJ
+# ::snt これ が 今 の 私たち の 世界 です
+∃ Z5 x4 x1 x2 e3 (
+ x4 = これ ∧
+  今(x1) ∧
+   の_世界(Z5, x2) ∧ の__世界(x1, x2) ∧
+    Z5 = 私たち ∧ です(e3, x4, x2))
+
+# ::id 42_spoken_TED_007-HansRosling_2010S;33;NJ
+# ::snt もはや ギャップ は 存在 し ませ ん
+∃ x1 (ギャップ(x1) ∧ ¬ ∃ e2 (もはや(e2) ∧ 存在_し_ませ(e2, x1)))
+
+# ::id 43_spoken_TED_007-HansRosling_2010S;34;NJ
+# ::snt しかし 最も 貧しい 国 と 最も 裕福 な 国 と の 間 の 格差 は 広がる ばかり です
+∃ x1 x2 x3 X4 A8 A7 t5 e6 (
+ と_の_間(X4, t5) ∧
+  最も_貧しい(A7) ∧
+   最も_裕福_な(A8) ∧
+    CRD_と(is_element_of(x1, X4), is_element_of(x2, X4)) ∧
+     attribute_国(A7, x1) ∧
+      attribute_国(A8, x2) ∧ の_格差(t5, x3) ∧ 広がる_ばかり_です(e6, x3))
+
+# ::id 44_spoken_TED_007-HansRosling_2010S;35;NJ
+# ::snt ただ 全て の 人々 は 歩く 事 から バイク に 乗る 事 運転 する 事 飛行機 に 乗る 事 まで 連続的 に 分布 し た 世界 です
+∃ x1 x2 X3 e4 e5 e6 s8 (
+ 事(s8, 歩く(e4, _)) ∧
+  連続的_に(e5) ∧
+   ∃ x9 x10 e11 (
+    バイク(x9) ∧
+     事(乗る(e11, _) ∧ に(e11) = x9, x10) ∧
+      is_element_of(x10, X3)) ∧
+    ∃ x12 e13 (事(運転_する(e13, _), x12) ∧ is_element_of(x12, X3)) ∧
+    ∃ x14 x15 e16 (
+     飛行機(x14) ∧
+      事(乗る(e16, _) ∧ に(e16) = x14, x15) ∧
+       is_element_of(x15, X3)) ∧
+    分布_し_た(e5, x2) ∧ まで(e5) = X3 ∧ から(e5) = s8 ∧
+     世界(x2) ∧
+     全 x7 (て(x7), の_人々(x7, x1)) ∧ です(e6, x1, x2))
+
+# ::id 45_spoken_TED_007-HansRosling_2010S;35;NJ
+# ::snt 多く の 人々 は 真ん中 に 位置づけ られ ます
+∃ x1 x2 e3 (
+ 真ん中(x2) ∧
+  多く x4 の_人々(x4, x1) ∧ 位置づけ_ます(e3, _, x1) ∧ に(e3) = x2)
+
+# ::id 46_spoken_TED_007-HansRosling_2010S;36;NJ
+# ::snt これ が 2010 年 における 私たち の 新しい 世界 です
+∃ Z5 x4 x1 A6 t2 e3 (
+ CD_2010_年(t2) ∧
+  新しい(A6) ∧
+   x4 = これ ∧
+    attribute_世界(A6, x1) ∧ の_世界(Z5, x1) ∧ における_世界(t2, x1) ∧
+     Z5 = 私たち ∧ です(e3, x4, x1))
+
+# ::id 47_spoken_TED_007-HansRosling_2010S;37;NJ
+# ::snt それでは 将来 何 が 起きる でしょう か ？
+QUEST(? x1 MD_でしょう(∃ t2 e3 (将来(t2) ∧ 起きる(e3, x1) ∧ is_contained_in(時間(e3), t2))))
+
+# ::id 48_spoken_TED_007-HansRosling_2010S;38;NJ
+# ::snt では 2050 年 を 予測 し て み ましょ う
+∃ Z1 (Z1 = speakerHearer ∧ IMPERATIVE(MD_う(∃ t2 e3 (CD_2050_年(t2) ∧ 予測_し_て_み_ましょ(e3, Z1, t2)))))
+
+# ::id 49_spoken_TED_007-HansRosling_2010S;39;NJ
+# ::snt 私 は 最近 上海 に い まし た そして 中国 で 何 が 起き て いる か 聞い て き まし た
+∃ z4 t1 e2 e3 (
+ past(e2) ∧
+  past(e3) ∧
+   最近(t1) ∧
+    z4 = 私 ∧
+     CRD_そして(い_まし_た(e2, z4) ∧ に(e2) = 上海 ∧
+           is_contained_in(時間(e2), t1),
+      聞い_て_き_まし_た(e3, z4, QUEST(∃ e5 ? x6 (起き_て_いる(e5, x6) ∧ で(e5) = 中国)))))
+
+# ::id 50_spoken_TED_007-HansRosling_2010S;39;NJ
+# ::snt どう やら 中国 が 日本 の よう に 経済大国 に なる の は 確実 の よう です
+∃ x1 x2 x3 A9 e4 e5 s6 (
+ の(s6, なる(e4, 中国, x1) ∧ に(e4) = x2) ∧
+  の(A9) ∧ 確実(A9) ∧
+   の_よう(日本, x2) ∧
+    経済大国(x1) ∧
+     attribute_よう(A9, x3) ∧
+      やら x7 x8 (circumstance(x7, x8), です(e5, s6, x3) ∧ link(e5) = x8))
+
+# ::id 51_spoken_TED_007-HansRosling_2010S;40;NJ
+# ::snt その 他 の 予測 です
+∃ x1 x2 e3 (の_予測(x1, x2) ∧ 他(x1) ∧ です(e3, _, x2))
+
+# ::id 52_spoken_TED_007-HansRosling_2010S;40;NJ
+# ::snt こっち は 1 か 2 もしくは 3 パーセント 成長 する でしょう
+∃ x1 (
+ x1 = こっち ∧
+  MD_でしょう(∃ X2 e3 (
+        CRD_か_もしくは(∃ x4 (CD_1(x4) ∧ is_element_of(x4, X2)),
+         ∃ x5 (CD_2(x5) ∧ is_element_of(x5, X2)),
+         ∃ x6 (CD_3_パーセント(x6) ∧ is_element_of(x6, X2))) ∧
+         成長_する(e3, x1) ∧ msr(e3) = X2)))
+
+# ::id 53_spoken_TED_007-HansRosling_2010S;41;NJ
+# ::snt これ は 7 か 8 パーセント 成長 し ます
+∃ x3 X1 e2 (
+ CRD_か(∃ x4 (CD_7(x4) ∧ is_element_of(x4, X1)),
+  ∃ x5 (CD_8_パーセント(x5) ∧ is_element_of(x5, X1))) ∧
+  x3 = これ ∧ 成長_し_ます(e2, x3) ∧ msr(e2) = X1)
+
+# ::id 54_spoken_TED_007-HansRosling_2010S;41;NJ
+# ::snt こっち は ここ に 移動 し ます
+∃ x2 x3 e1 (x3 = ここ ∧ x2 = こっち ∧ 移動_し_ます(e1, x2) ∧ に(e1) = x3)
+
+# ::id 55_spoken_TED_007-HansRosling_2010S;42;NJ
+# ::snt 彼ら は 飛行機 を 利用 し 始め ます
+∃ x3 x1 e2 (飛行機(x1) ∧ x3 = 彼ら ∧ 利用_し_始め_ます(e2, x3, x1))
+
+# ::id 56_spoken_TED_007-HansRosling_2010S;43;NJ
+# ::snt この よう な 中 の 下 の 所得 の 国 は 新興国 として 経済的 に さらに 発展 する でしょう
+∃ x1 x2 x3 x4 x5 e6 (
+ よう(x1) ∧
+  中(x2) ∧
+   の_下(x2, x3) ∧
+    の_所得(x3, x4) ∧
+     な(e6, x5, x1) ∧ の_国(x4, x5) ∧
+      MD_でしょう(∃ x7 e8 (
+            経済的_に(e8) ∧
+             さらに(e8) ∧
+              新興国(x7) ∧ 発展_する(e8, x5) ∧ として(e8) = x7)))
+
+# ::id 57_spoken_TED_007-HansRosling_2010S;44;NJ
+# ::snt ただし それ は 前提 として 私たち が 正しい グリーンテクノロジー に 投資 し 急激 な 気候変動 を 回避 し 相対的 に エネルギー の 費用 が 安い まま で あっ た 場合 に のみ 彼ら は ここ まで 移動 し て くる でしょう
+∃ x2 x1 Z14 (
+ Z14 = 私たち ∧
+  x1 = それ ∧
+   x2 = 彼ら ∧
+    MD_でしょう(∃ x19 x3 x4 x5 x6 x7 x8 A17 A16 A15 e9 e10 e11 e12 s13 (
+          場合(s13,
+           投資_し(e9, Z14) ∧ に(e9) = x4 ∧
+            回避_し(e10, Z14, x5) ∧ で_あっ_た(e11, x7, x6)) ∧
+           相対的_に(e11) ∧
+            past(e11) ∧
+             正しい(A15) ∧
+              急激_な(A16) ∧
+               安い(A17) ∧
+                前提(x8) ∧
+                 エネルギー(x3) ∧
+                  の_費用(x3, x7) ∧
+                   attribute_グリーンテクノロジー(A15, x4) ∧
+                    attribute_気候変動(A16, x5) ∧
+                     attribute_まま(A17, x6) ∧
+                      x19 = ここ{x7, x6, x5, x4, x3} ∧
+                       のみ s18 (of(s13, s18),
+                        移動_し_て_くる(e12, x2) ∧ まで(e12) = x19 ∧
+                         に(e12) = s18 ∧ として(e12) = x8 ∧
+                         topic(e12) = x1))))
+
+# ::id 58_spoken_TED_007-HansRosling_2010S;45;NJ
+# ::snt そして 彼ら は 電気自動車 を 買い 始め ます
+∃ x3 x1 e2 (電気自動車(x1) ∧ x3 = 彼ら ∧ 買い_始め_ます(e2, x3, x1))
+
+# ::id 59_spoken_TED_007-HansRosling_2010S;46;NJ
+# ::snt そういった 未来 が 予想 さ れ ます
+∃ z3 x1 e2 (z3 = speaker ∧ 未来(x1) ∧ 予想_さ_れ_ます(e2, z3, x1))
+
+# ::id 60_spoken_TED_007-HansRosling_2010S;47;NJ
+# ::snt では 最も 貧しい 20億 人 の 人々 は どう でしょ う ？
+∃ x1 x2 A4 (
+ 最も_貧しい(A4) ∧
+  (CD_20億_人(x1), attribute(A4, x1)) ∧
+   の_人々(x1, x2) ∧
+    QUEST(? x3 MD_う(∃ e5 (circumstance(x3, e5) ∧ でしょ(e5, x2)))))
+
+# ::id 61_spoken_TED_007-HansRosling_2010S;48;NJ
+# ::snt この 20億 人 の 人々 は どう なっ て いる でしょう か ？
+∃ x1 x2 (
+ CD_20億_人(x1) ∧
+  の_人々(x1, x2) ∧
+   QUEST(? x3 MD_でしょう(∃ e4 (circumstance(x3, e4) ∧ なっ_て_いる(e4, x2)))))
+
+# ::id 62_spoken_TED_007-HansRosling_2010S;49;NJ
+# ::snt 彼ら も 移動 する でしょう か ？
+QUEST(∃ x1 (x1 = 彼ら ∧ MD_でしょう(∃ e2 移動_する(e2, x1))))
+
+# ::id 63_spoken_TED_007-HansRosling_2010S;50;NJ
+# ::snt ここ で 人口 が 問題 と なり ます
+∃ x4 x1 x2 e3 (
+ 人口(x2) ∧
+  x4 = ここ ∧
+   問題(x1) ∧ なり_ます(e3, x2, x1) ∧ で(e3) = x4)
+
+# ::id 64_spoken_TED_007-HansRosling_2010S;50;NJ
+# ::snt あちら で は 女性 1 人 当たり 2-3 人 子供 が おり 家族計画 は 広く 普及 し 人口増加率 は 横ばい に なっ て い ます
+∃ x9 x1 x2 x3 x4 d5 e6 e7 e8 (
+ 広く(e7) ∧
+  (CD_1_人_2-3_人(d5), 女性(d5) ∧ 当たり(d5)) ∧
+   子供(x3) ∧
+    横ばい(x4) ∧
+     人口増加率(x2) ∧
+      x9 = あちら ∧
+       家族計画(x1) ∧
+        おり(e6, x3) ∧ msr(e6) = d5 ∧
+         普及_し(e7, x1) ∧ なっ_て_い_ます(e8, x2, x4) ∧ で(e8) = x9)
+
+# ::id 65_spoken_TED_007-HansRosling_2010S;51;NJ
+# ::snt ここ で は 人口 が 増加 し て い ます
+∃ x3 x1 e2 (人口(x1) ∧ x3 = ここ ∧ 増加_し_て_い_ます(e2, x1) ∧ で(e2) = x3)
+
+# ::id 66_spoken_TED_007-HansRosling_2010S;52;NJ
+# ::snt この 20億 人 は 10 年 後 30億 人 に 増える でしょう
+∃ x1 (
+ CD_20億_人(x1) ∧
+  MD_でしょう(∃ x2 t3 e4 (
+        (CD_10_年(t3), 後(t3)) ∧
+         CD_30億_人(x2) ∧
+          増える(e4, x1) ∧ に(e4) = x2 ∧
+           is_contained_in(時間(e4), t3))))
+
+# ::id 67_spoken_TED_007-HansRosling_2010S;52;NJ
+# ::snt そして 彼ら は その 後 40億 人 に 増え て いる でしょう
+∃ x2 t1 (
+ 後(t1) ∧
+  x2 = 彼ら ∧
+   MD_でしょう(∃ x3 e4 (
+         CD_40億_人(x3) ∧
+          増え_て_いる(e4, x2) ∧ に(e4) = x3 ∧
+           is_contained_in(時間(e4), t1))))
+
+# ::id 68_spoken_TED_007-HansRosling_2010S;53;NJ
+# ::snt もはや 今 まで に 見 た 事 も ない よう な 核戦争 が 起こら ない 限り この 状況 は 止まら ない でしょう
+∃ x1 (
+ 状況(x1) ∧
+  MD_でしょう(¬ ∃ x12 x2 x3 s8 e4 e5 e6 e7 s11 s10 s9 (
+             事(s11, 見_た(e4, _, x12) ∧ まで_に(e4) = x2) ∧
+              よう(s10, ない(e5, s11)) ∧
+               限り(s9, ¬ ∃ e13 起こら(e13, x3)) ∧
+                もはや(s8) ∧
+                 past(e4) ∧
+                  x12 = pro{x3, x1} ∧
+                   今(x2) ∧
+                    な(e6, x3, s10) ∧ 核戦争(x3) ∧
+                     fact(s8, 止まら(e7, x1) ∧ link(e7) = s9))))
+
+# ::id 69_spoken_TED_007-HansRosling_2010S;54;NJ
+# ::snt なぜなら 変化 は 既に 始まっ て いる から です
+∃ x1 e2 e3 s4 (
+ fact(s4, 始まっ_て_いる(e2, x1)) ∧
+  既に(e2) ∧ 変化(x1) ∧ です(e3) ∧ から(e3) = s4)
+
+# ::id 70_spoken_TED_007-HansRosling_2010S;55;NJ
+# ::snt それでも もし 彼ら が 貧困 から 抜け 出し 教育 を 受け 子供 の 生存率 が 改善 さ れれ ば 自転車 や 携帯電話 を 買っ て ここ まで 辿り着け ます
+∃ x1 (
+ x1 = pro ∧
+  ∀ x10 x2 x3 x4 x5 s9 e6 e7 e8 CND_ば(
+      もし(s9) ∧ 子供(x2) ∧ の_生存率(x2, x5) ∧
+       x10 = 彼ら{x5, x2, x1} ∧ 貧困(x3) ∧ 教育(x4) ∧
+       fact(s9,
+        抜け_出し(e6, x10) ∧ から(e6) = x3 ∧
+         受け(e7, x10, x4) ∧ 改善_さ(e8, _, x5)),
+      ∃ x16 X11 e12 e13 (
+       CRD_や(∃ x14 (自転車(x14) ∧ is_element_of(x14, X11)),
+        ∃ x15 (携帯電話(x15) ∧ is_element_of(x15, X11))) ∧
+        x16 = ここ{x5, x4, x3, x2} ∧
+         CRD_て(買っ(e12, x1, X11),
+          辿り着け_ます(e13, x1) ∧ まで(e13) = x16))))
+
+# ::id 71_spoken_TED_007-HansRosling_2010S;55;NJ
+# ::snt これ によって 人口増加率 は 2050 年 に は 収束 する でしょう
+∃ x1 t2 (
+ CD_2050_年(t2) ∧
+  人口増加率(x1) ∧
+   MD_でしょう(∃ x4 e3 (
+         x4 = これ ∧
+          収束_する(e3, x1) ∧ is_contained_in(に(e3), t2) ∧
+           によって(e3) = x4)))
+
+# ::id 72_spoken_TED_007-HansRosling_2010S;56;NJ
+# ::snt 食料 や 靴 を 求め させる よう な レベル に 人々 を 残し てはいけません
+MD_てはいけません(∃ x9 x1 x2 X3 e4 e5 e6 e7 s8 (
+      よう(s8, させる(e5, _, x9, 求め(e4, x9, X3))) ∧
+       CRD_や(∃ x10 (食料(x10) ∧ is_element_of(x10, X3)),
+        ∃ x11 (靴(x11) ∧ is_element_of(x11, X3))) ∧
+        x9 = pro{x2} ∧
+         な(e6, x2, s8) ∧ レベル(x2) ∧
+          人々(x1) ∧ 残し(e7, _, x1) ∧ に(e7) = x2))
+
+# ::id 73_spoken_TED_007-HansRosling_2010S;56;NJ
+# ::snt なぜなら それ が 継続 し た 人口 の 増加 に つながる から です
+∃ x7 x1 x2 e3 e4 e5 s6 (
+ fact(s6, つながる(e4, x7) ∧ に(e4) = x2) ∧
+  x7 = それ ∧
+   人口(x1) ∧
+    継続_し_た(e3, x2) ∧ の_増加(x1, x2) ∧
+     です(e5) ∧ から(e5) = s6)
+
+# ::id 74_spoken_TED_007-HansRosling_2010S;57;NJ
+# ::snt その 理由 について 以前 の デジタルテクノロジー を 用い て 説明 し ます
+∃ z8 z6 x1 x7 x2 x3 e4 e5 (
+ について(x1, x7) ∧
+  以前(x2) ∧
+   の_デジタルテクノロジー(x2, x3) ∧
+    z6 = speaker ∧
+     理由(x1) ∧
+      z8 = speaker ∧ CRD_て(用い(e4, z8, x3), 説明_し_ます(e5, z6, x7)))
+
+# ::id 75_spoken_TED_007-HansRosling_2010S;58;NJ
+# ::snt スクリーン上 に それぞれ の 国 を 表す 円 が 描か れ て い ます
+∃ x1 x2 x3 e4 e5 (
+ それぞれ x6 の_国(x6, x1) ∧
+  表す(e4, x3, x1) ∧ 円(x3) ∧
+   スクリーン上(x2) ∧ 描か_て_い_ます(e5, _, x3) ∧ に(e5) = x2)
+
+# ::id 76_spoken_TED_007-HansRosling_2010S;59;NJ
+# ::snt 大きさ は 人口 を 表現 し て い ます
+∃ x1 x2 e3 (人口(x2) ∧ 大きさ(x1) ∧ 表現_し_て_い_ます(e3, x1, x2))
+
+# ::id 77_spoken_TED_007-HansRosling_2010S;60;NJ
+# ::snt 色 は 大陸 を 表し て い ます
+∃ x1 x2 e3 (大陸(x2) ∧ 色(x1) ∧ 表し_て_い_ます(e3, x1, x2))
+
+# ::id 78_spoken_TED_007-HansRosling_2010S;61;NJ
+# ::snt この 黄色 が アメリカ を 示し 紺青色 は アフリカ 茶色 が ヨーロッパ 緑色 が 中東 薄青色 は 南アジア を 示し て い ます
+∃ x1 x2 x3 x4 x5 x6 x7 x8 x9 e10 e11 e12 e13 e14 (
+ アフリカ(x4) ∧
+  茶色(x6) ∧
+   ヨーロッパ(x5) ∧
+    緑色(x8) ∧
+     中東(x7) ∧
+      南アジア(x9) ∧
+       薄青色(x3) ∧
+        黄色(x1) ∧
+         紺青色(x2) ∧
+          示し(e10, x1, アメリカ) ∧
+           xxx(e11, x2, x4) ∧
+            xxx(e12, x6, x5) ∧
+             xxx(e13, x8, x7) ∧ 示し_て_い_ます(e14, x3, x9))
+
+# ::id 79_spoken_TED_007-HansRosling_2010S;62;NJ
+# ::snt あれ は インド で これ が 中国 です
+∃ x4 x3 e1 e2 (
+ x3 = これ ∧
+  x4 = あれ{x3} ∧ CRD_て(で(e1, x4, インド), です(e2, x3, 中国)))
+
+# ::id 80_spoken_TED_007-HansRosling_2010S;63;NJ
+# ::snt この 軸 は 女性 1 人 当たり の 子供 の 数 を 表し て い ます
+∃ x1 x2 x3 x4 e5 (
+ (CD_1_人(x2), 女性(x2) ∧ 当たり(x2)) ∧
+  の_子供(x2, x3) ∧
+   の_数(x3, x4) ∧ 軸(x1) ∧ 表し_て_い_ます(e5, x1, x4))
+
+# ::id 81_spoken_TED_007-HansRosling_2010S;63;NJ
+# ::snt 子供 が 2 人 4 人 6 人 もしくは 8 人 といった 家族 の 大小 を 表し ます
+∃ x7 x1 x2 x3 X4 e5 e6 (
+ CRD_もしくは(∃ x8 (CD_2_人(x8) ∧ is_element_of(x8, X4)),
+  ∃ x9 (CD_4_人(x9) ∧ is_element_of(x9, X4)), ∃ x10 (CD_6_人(x10) ∧ is_element_of(x10, X4)),
+  ∃ x11 (CD_8_人(x11) ∧ is_element_of(x11, X4))) ∧
+  x7 = pro ∧
+   家族(x2) ∧
+    子供(x1) ∧
+     の_大小(x2, x3) ∧ 大小(xxx(e5, x1, X4), x3) ∧
+      表し_ます(e6, x7, x3))
+
+# ::id 82_spoken_TED_007-HansRosling_2010S;64;NJ
+# ::snt 時代 は 1960 年 です
+∃ x1 t2 e3 (CD_1960_年(t2) ∧ 時代(x1) ∧ です(e3, x1, t2))
+
+# ::id 83_spoken_TED_007-HansRosling_2010S;65;NJ
+# ::snt 下側 の 軸 は 子供 の 生存率 です
+∃ x1 x2 x3 x4 e5 (
+ 子供(x3) ∧
+  の_生存率(x3, x4) ∧
+   下側(x1) ∧ の_軸(x1, x2) ∧ です(e5, x2, x4))
+
+# ::id 84_spoken_TED_007-HansRosling_2010S;65;NJ
+# ::snt 乳幼児 が 生き残っ て 学校 に 通う よう に なる 割合 を 示し て い ます
+∃ x7 x1 x2 e3 e4 e5 e6 s9 s8 (
+ よう(s9, 通う(e4, x2) ∧ に(e4) = x1) ∧
+  割合(s8, CRD_て(生き残っ(e3, x2), なる(e5, x2, s9))) ∧
+   x7 = pro ∧ 乳幼児(x2) ∧ 学校(x1) ∧ 示し_て_い_ます(e6, x7, s8))
+
+# ::id 85_spoken_TED_007-HansRosling_2010S;65;NJ
+# ::snt 60 70 80 90 パーセント そして 最も 裕福 で 健康的 な 国 と 同じ ほぼ 100 パーセント まで 表し ます
+∃ x4 x3 X1 e2 (
+ CRD_そして(∃ x5 (CD_60(x5) ∧ is_element_of(x5, X1)),
+  ∃ x6 (CD_70(x6) ∧ is_element_of(x6, X1)), ∃ x7 (CD_80(x7) ∧ is_element_of(x7, X1)),
+  ∃ x8 (CD_90_パーセント(x8) ∧ is_element_of(x8, X1)),
+  ∃ x9 x10 A13 A12 A11 (
+   裕福(A12) ∧
+    健康的_な(A13) ∧
+     と_同じ(x9, A11) ∧
+      CRD_で(attribute_国(A12, x9), attribute_国(A13, x9)) ∧
+       (CD_100_パーセント(x10), ほぼ(x10) ∧ attribute(A11, x10)) ∧
+        is_element_of(x10, X1))) ∧
+  x3 = pro ∧ まで(X1, x4) ∧ 表し_ます(e2, x3, x4))
+
+# ::id 86_spoken_TED_007-HansRosling_2010S;66;NJ
+# ::snt ほら これ が 私 の 先生 が 1960 年 に 話し て くれ た 世界 です
+∃ z7 x6 x1 x2 t3 e4 e5 (
+ past(e4) ∧
+  CD_1960_年(t3) ∧
+   x6 = これ ∧
+    の_先生(z7, x1) ∧
+     話し_て_くれ_た(e4, x1, x2) ∧ is_contained_in(に(e4), t3) ∧ 世界(x2) ∧
+      z7 = 私 ∧ です(e5, x6, x2))
+
+# ::id 87_spoken_TED_007-HansRosling_2010S;66;NJ
+# ::snt 10億 人 の 西欧諸国 が ここ に あり ます
+∃ x4 x1 x2 e3 (
+ CD_10億_人(x1) ∧
+  の_西欧諸国(x1, x2) ∧
+   x4 = ここ{x1} ∧ あり_ます(e3, x2) ∧ に(e3) = x4)
+
+# ::id 88_spoken_TED_007-HansRosling_2010S;66;NJ
+# ::snt 高い 子供 の 生存率 と 小家族 で ある こと が 特徴 です
+∃ x6 x1 X2 e3 e4 s5 (
+ こと(s5, で_ある(e3, x6, X2)) ∧
+  CRD_と(∃ x7 x8 A9 (
+        高い(A9) ∧
+         子供(x7) ∧
+          の_生存率(x7, x8) ∧ attribute_生存率(A9, x8) ∧ is_element_of(x8, X2)),
+   ∃ x10 (小家族(x10) ∧ is_element_of(x10, X2))) ∧
+   x6 = pro ∧ 特徴(x1) ∧ です(e4, s5, x1))
+
+# ::id 89_spoken_TED_007-HansRosling_2010S;66;NJ
+# ::snt そして それ以外 は 低い 子供 の 生存率 と 大家族 が 特徴 で ある 色とりどり の 発展途上国 です
+∃ x1 x2 x3 X4 A7 e5 e6 (
+ の(A7) ∧ 色とりどり(A7) ∧
+  CRD_と(∃ x8 x9 A10 (
+        低い(A10) ∧
+         子供(x8) ∧
+          の_生存率(x8, x9) ∧ attribute_生存率(A10, x9) ∧ is_element_of(x9, X4)),
+   ∃ x11 (大家族(x11) ∧ is_element_of(x11, X4))) ∧
+   特徴(x2) ∧
+    attribute_発展途上国(A7, x3) ∧ 発展途上国(で_ある(e5, X4, x2), x3) ∧
+     それ以外(x1) ∧ です(e6, x1, x3))
+
+# ::id 90_spoken_TED_007-HansRosling_2010S;67;NJ
+# ::snt 何 が 起こっ た の でしょ う ？
+QUEST(? x1 MD_う(∃ e2 (past(e2) ∧ 起こっ_た_の_でしょ(e2, x1))))
+
+# ::id 91_spoken_TED_007-HansRosling_2010S;67;NJ
+# ::snt 世界 を 動かし ます それ ！
+EXCLAMATION(∃ x3 x1 e2 (x3 = それ ∧ 世界(x1) ∧ 動かし_ます(e2, x3, x1)))
+
+# ::id 92_spoken_TED_007-HansRosling_2010S;68;NJ
+# ::snt ご覧 の よう に 年月 が 経つ につれて 子供 の 生存率 が 上昇 し て い ます ！
+EXCLAMATION(∃ x1 x2 x3 x4 x5 e6 e7 (
+      子供(x1) ∧
+       の_生存率(x1, x5) ∧
+        ご覧(x2) ∧
+         の_よう(x2, x4) ∧
+          年月(x3) ∧
+           CRD_につれて(経つ(e6, x3),
+            上昇_し_て_い_ます(e7, x5) ∧ に(e7) = x4)))
+
+# ::id 93_spoken_TED_007-HansRosling_2010S;69;NJ
+# ::snt 衛生教育 により 石鹸 や ワクチン ペニシリン を 手に入れ ます
+∃ x4 x1 X2 e3 (
+ CRD_や(∃ x5 (石鹸(x5) ∧ is_element_of(x5, X2)),
+  ∃ x6 (ワクチン(x6) ∧ is_element_of(x6, X2)),
+  ∃ x7 (ペニシリン(x7) ∧ is_element_of(x7, X2))) ∧
+  x4 = pro ∧
+   衛生教育(x1) ∧ 手に入れ_ます(e3, x4, X2) ∧ により(e3) = x1)
+
+# ::id 94_spoken_TED_007-HansRosling_2010S;69;NJ
+# ::snt 次 に 家族計画 です
+∃ x1 x2 e3 (
+ 次(x2) ∧
+  家族計画(x1) ∧ です(e3, _, x1) ∧ に(e3) = x2)
+
+# ::id 95_spoken_TED_007-HansRosling_2010S;69;NJ
+# ::snt 家族 の 規模 は 減少 し て いき ます
+∃ x1 x2 e3 (家族(x1) ∧ の_規模(x1, x2) ∧ 減少_し_て_いき_ます(e3, x2))
+
+# ::id 96_spoken_TED_007-HansRosling_2010S;70;NJ
+# ::snt 子供 の 生存率 は 90 パーセント まで 上がり 家族 の 規模 は 減少 し ます
+∃ x1 x2 x3 x4 x5 e6 e7 (
+ CD_90_パーセント(x5) ∧
+  家族(x1) ∧
+   の_規模(x1, x4) ∧
+    子供(x2) ∧
+     の_生存率(x2, x3) ∧
+      上がり(e6, x3) ∧ まで(e6) = x5 ∧ 減少_し_ます(e7, x4))
+
+# ::id 97_spoken_TED_007-HansRosling_2010S;70;NJ
+# ::snt 中東 の 多く の アラブ系 の 国々 は これ に 当てはまり ます
+∃ x1 x2 x5 e3 (
+ x5 = これ{x1, 中東} ∧
+  多く x4 の_アラブ系(x4, x1) ∧
+   の_国々(x1, x2) ∧ の__国々(中東, x2) ∧
+    当てはまり_ます(e3, x2) ∧ に(e3) = x5)
+
+# ::id 98_spoken_TED_007-HansRosling_2010S;71;NJ
+# ::snt ほら バングラデシュ が インド に 追いつい て き まし た
+∃ e1 (past(e1) ∧ 追いつい_て_き_まし_た(e1, バングラデシュ) ∧ に(e1) = インド)
+
+# ::id 99_spoken_TED_007-HansRosling_2010S;72;NJ
+# ::snt 全て の 新興経済国 は 良好 な 子供 の 生存率 と 家族 の 規模 の 小ささ で 西欧諸国 に 並ん だ の です
+∃ x1 x2 X3 e4 (
+ past(e4) ∧
+  CRD_と(∃ x6 x7 A8 (
+        良好_な(A8) ∧
+         attribute_子供(A8, x6) ∧ の_生存率(x6, x7) ∧ is_element_of(x7, X3)),
+   ∃ x9 x10 x11 (
+    家族(x9) ∧
+     の_規模(x9, x10) ∧ の_小ささ(x10, x11) ∧ is_element_of(x11, X3))) ∧
+   西欧諸国(x2) ∧
+    全て x5 の_新興経済国(x5, x1) ∧
+     並ん_だ_の_です(e4, x1) ∧ に(e4) = x2 ∧ で(e4) = X3)
+
+# ::id 100_spoken_TED_007-HansRosling_2010S;72;NJ
+# ::snt それでも まだ 最も 貧しい 10億 人 が 残っ て い ます
+∃ x1 A3 e2 (
+ まだ(e2) ∧
+  最も_貧しい(A3) ∧ (CD_10億_人(x1), attribute(A3, x1)) ∧ 残っ_て_い_ます(e2, x1))
+
+# ::id 101_spoken_TED_007-HansRosling_2010S;73;NJ
+# ::snt 最も 貧しい 10億 人 を 表し た 向こう に ある 箱 が 見え ます か ？
+QUEST(∃ x1 x2 x3 A7 e4 e5 e6 (
+      (CD_10億_人(x1), attribute(A7, x1)) ∧
+       向こう(x2) ∧
+        表し_た(e4, x3, x1) ∧
+         ある(e5, x3) ∧ に(e5) = x2 ∧ 箱(x3) ∧
+         最も_貧しい(A7) ∧ 見え_ます(e6, x3)))
+
+# ::id 102_spoken_TED_007-HansRosling_2010S;74;NJ
+# ::snt 彼ら は まだ ここ に いる の です
+∃ x2 x3 e1 (
+ まだ(e1) ∧
+  x3 = ここ ∧ x2 = 彼ら ∧ いる_の_です(e1, x2) ∧ に(e1) = x3)
+
+# ::id 103_spoken_TED_007-HansRosling_2010S;75;NJ
+# ::snt 子供 の 生存率 は 未だ に 70 から 80 パーセント です
+∃ x1 x2 x3 x4 e6 e5 (
+ 未だ(e6) ∧
+  CD_70(x3) ∧
+   (CD_80_パーセント(x4), から(x3, x4)) ∧
+    子供(x1) ∧
+     の_生存率(x1, x2) ∧ です(e5, x2, x4) ∧ に(e5) = e6)
+
+# ::id 104_spoken_TED_007-HansRosling_2010S;75;NJ
+# ::snt これ は つまり 6 人 も の 子供 が 生まれ たら 少なくとも 4 人 は 次 の 世代 として 生き残る という こと です
+∃ x4 x1 x2 e3 (
+ つまり(e3) ∧
+  こと(∀ x5 x6 e7 CND_たら(CD_6_人(x5) ∧ の_子供(x5, x6) ∧ 生まれ(e7, x6),
+           ∃ x8 x9 e10 (
+            少なくとも(e10) ∧
+             次(x8) ∧
+              の_世代(x8, x9) ∧
+               生き残る(e10, x1) ∧ として(e10) = x9)), x2) ∧
+   x4 = これ ∧ CD_4_人(x1) ∧ です(e3, x4, x2))
+
+# ::id 105_spoken_TED_007-HansRosling_2010S;76;NJ
+# ::snt そして 人口 は 一 世代 毎 に 倍 に なり ます
+∃ x1 x2 x3 e4 (
+ CD_一_世代(x3) ∧
+  倍(x2) ∧
+   人口(x1) ∧ なり_ます(e4, x1, x2) ∧ 毎_に(e4) = x3)
+
+# ::id 106_spoken_TED_007-HansRosling_2010S;77;NJ
+# ::snt 世界 の 人口 の 増加 を 本当 に 止める ため に は 子供 の 生存率 を 引き続き 90 パーセント まで 改善 さ せる こと です
+∃ x12 x1 x2 x3 x4 x5 x6 x7 s15 e8 e9 e10 e11 s14 s13 (
+ ため(s13, 止める(e8, _, x4) ∧ に(e8) = x3) ∧
+  こと(s14,
+   fact(s15,
+    せる(e10, _, x7, 改善_さ(e9, x7)) ∧ まで(e10) = x6)) ∧
+   引き続き(s15) ∧
+    x12 = pro ∧
+     世界(x1) ∧
+      の_人口(x1, x2) ∧
+       の_増加(x2, x4) ∧
+        本当(x3) ∧
+         子供(x5) ∧
+          の_生存率(x5, x7) ∧
+           CD_90_パーセント(x6) ∧ です(e11, x12, s14) ∧ に(e11) = s13)
+
+# ::id 107_spoken_TED_007-HansRosling_2010S;78;NJ
+# ::snt だからこそ ゲイツ財団 や UNICEF そして 援助団体 など が 最貧国 において 政府 と共に 投資 を 行う こと が とても 有効 な の です
+∃ x8 x1 x2 x3 X4 e5 e6 s7 (
+ こと(s7,
+  行う(e5, x8, x1) ∧ と共に(e5) = x2 ∧ において(e5) = x3) ∧
+  とても(e6) ∧
+   CRD_や_そして(is_element_of(ゲイツ財団, X4), is_element_of(UNICEF_, X4),
+    ∃ x9 (援助団体(x9) ∧ is_element_of(x9, X4))) ∧
+    など(X4, x8) ∧
+     最貧国(x3) ∧ 政府(x2) ∧ 投資(x1) ∧ 有効_な_の_です(e6, s7))
+
+# ::id 108_spoken_TED_007-HansRosling_2010S;78;NJ
+# ::snt なぜなら 彼ら は 実際 に 世界 における 持続的 な 人口規模 へ と 到達 する よう な 手助け を し て くれ て いる の です
+∃ x8 x10 x1 x2 x3 x4 A11 e5 e6 e7 s9 (
+ よう(s9, 到達_する(e5, x10) ∧ へ_と(e5) = x2) ∧
+  持続的_な(A11) ∧
+   実際(x4) ∧
+    x10 = pro{x3, x4, x8} ∧
+     世界(x1) ∧
+      attribute_人口規模(A11, x2) ∧ における_人口規模(x1, x2) ∧
+       な(e6, x3, s9) ∧ 手助け(x3) ∧
+        x8 = 彼ら ∧ し_て_くれ_いる_の_です(e7, x8, x3) ∧ に(e7) = x4)
+
+# ::id 109_spoken_TED_007-HansRosling_2010S;79;NJ
+# ::snt 正しい 手 を 打っ て いれ ば 90億 で 人口 は 留ま れ ます
+∃ x1 x2 (
+ x2 = pro ∧
+  人口(x1) ∧
+   ∀ x3 A5 e4 CND_ば(正しい(A5) ∧ attribute_手(A5, x3) ∧ 打っ_て_いれ(e4, x2, x3),
+       ∃ x6 e7 (CD_90億(x6) ∧ 留ま_れ_ます(e7, x2, x1) ∧ で(e7) = x6)))
+
+# ::id 110_spoken_TED_007-HansRosling_2010S;80;NJ
+# ::snt 高い 子供 の 生存率 こそ が 新しい 目標 です
+∃ x1 x2 x3 A7 A5 e4 (
+ 高い(A5) ∧
+  新しい(A7) ∧
+   子供(x1) ∧
+    attribute_生存率(A5, x3) ∧ の_生存率(x1, x3) ∧
+     attribute_目標(A7, x2) ∧ こそ x6 (x6 = x3, です(e4, x6, x2)))
+
+# ::id 111_spoken_TED_007-HansRosling_2010S;81;NJ
+# ::snt 子供 が 生き残る こと こそ が 人口 の 増加 を 止める 唯一 の 方法 な の です
+∃ x1 x2 x3 x4 x5 e6 e7 e8 s9 (
+ こと(s9, 生き残る(e6, x1)) ∧
+  子供(x1) ∧
+   人口(x2) ∧
+    の_増加(x2, x3) ∧
+     唯一(x4) ∧
+      止める(e7, x5, x3) ∧ の_方法(x4, x5) ∧
+       こそ s10 (of(s9, s10), な_の_です(e8, s10, x5)))
+
+# ::id 112_spoken_TED_007-HansRosling_2010S;82;NJ
+# ::snt 果たして 実現 する でしょう か ？
+QUEST(∃ x1 (x1 = pro ∧ MD_でしょう(∃ e2 (果たして(e2) ∧ 実現_する(e2, x1)))))
+
+# ::id 113_spoken_TED_007-HansRosling_2010S;83;NJ
+# ::snt 私 は 楽観主義者 で は あり ませ ん が 悲観主義者 で も あり ませ ん
+∃ z1 (
+ z1 = 私 ∧
+  ¬ ∃ x2 e3 (
+        悲観主義者(x2) ∧
+         CRD_が(¬ ∃ x4 e5 (楽観主義者(x4) ∧ で_は_あり_ませ(e5, z1, x4)),
+          で_も_あり_ませ(e3, z1, x2))))
+
+# ::id 114_spoken_TED_007-HansRosling_2010S;84;NJ
+# ::snt 私 は とても 真剣 な 「 ポシビリスト 」 （ 可能主義者 ） な の です
+∃ z4 x1 x2 A5 e3 (
+ とても_真剣_な(A5) ∧
+  attribute_ポシビリスト(A5, x2) ∧
+   可能主義者(x1) ∧ x2 = x1 ∧ z4 = 私 ∧ な_の_です(e3, z4, x2))
+
+# ::id 115_spoken_TED_007-HansRosling_2010S;85;NJ
+# ::snt これ は 新しい カテゴリー に 含ま れる もの で 感情 を 切り離し ただ 世界各国 と 分析的 に 仕事 を する の です
+∃ x10 x1 x2 x3 x4 x5 A11 e6 e7 e8 e9 (
+ ただ(e9) ∧
+  分析的_に(e9) ∧
+   新しい(A11) ∧
+    attribute_カテゴリー(A11, x1) ∧
+     含ま(e6, _, x2) ∧ に(e6) = x1 ∧ もの(x2) ∧
+      感情(x3) ∧
+       仕事(x4) ∧
+        x10 = これ ∧
+         CRD_て(で(e7, x10, x2),
+          切り離し(e8, _, x3) ∧
+           する_の_です(e9, _, x4) ∧ と(e9) = x5))
+
+# ::id 116_spoken_TED_007-HansRosling_2010S;86;NJ
+# ::snt 実現 は 可能 な の です
+∃ x1 e2 (実現(x1) ∧ 可能_な_の_です(e2, x1))
+
+# ::id 117_spoken_TED_007-HansRosling_2010S;87;NJ
+# ::snt グリーンテクノロジー によって
+∃ x1 e2 (グリーンテクノロジー(x1) ∧ xxx(e2) ∧ によって(e2) = x1)
+
+# ::id 118_spoken_TED_007-HansRosling_2010S;88;NJ
+# ::snt さらに より 良い 結果 が 生まれる でしょう
+∃ x1 A2 (さらに_より_良い(A2) ∧ attribute_結果(A2, x1) ∧ MD_でしょう(∃ e3 生まれる(e3, x1)))
+
+# ::id 119_spoken_TED_007-HansRosling_2010S;88;NJ
+# ::snt 貧困 を 軽減 する 投資 と グローバルガバナンス によって 世界 は こう な れる の です
+∃ x1 x2 x3 X4 e5 e6 (
+ こう(e6) ∧
+  CRD_と(∃ x7 (投資(x7) ∧ is_element_of(x7, X4)),
+   ∃ x8 (グローバルガバナンス(x8) ∧ is_element_of(x8, X4))) ∧
+   貧困(x2) ∧
+    軽減_する(e5, x3, x2) ∧ equals(X4, x3) ∧
+     世界(x1) ∧ な_れる_の_です(e6, x1) ∧ によって(e6) = x3)
+
+# ::id 120_spoken_TED_007-HansRosling_2010S;89;NJ
+# ::snt 昔 の 西欧諸国 の 位置づけ を ご覧 下さい
+∃ z5 x1 x2 x3 e4 (
+ 昔(x1) ∧
+  の_西欧諸国(x1, x2) ∧
+   の_位置づけ(x2, x3) ∧ z5 = hearer ∧ ご覧_下さい(e4, z5, x3))
+
+# ::id 121_spoken_TED_007-HansRosling_2010S;90;NJ
+# ::snt 単独 で 世界 を 率い 自分たち の 流儀 で 暮らし て い た この 青い 箱 を 覚え て い ます か ？
+∃ x11 x10 z8 x1 x2 x3 x4 A9 e5 e6 (
+ past(e6) ∧
+  青い(A9) ∧
+   z8 = hearer ∧
+    x10 = pro ∧
+     単独(x2) ∧
+      世界(x1) ∧
+       x11 = 自分たち{x10, x2, x1} ∧
+        の_流儀(x11, x3) ∧
+         attribute_箱(A9, x4) ∧
+          箱(率い(e5, x10, x1) ∧ で(e5) = x2 ∧
+                暮らし_て_い_た(e6, x10) ∧ で(e6) = x3, x4) ∧
+          QUEST(∃ e7 覚え_て_い_ます(e7, z8, x4)))
+
+# ::id 122_spoken_TED_007-HansRosling_2010S;91;NJ
+# ::snt こう は なり ませ ん
+∃ x1 (x1 = pro ∧ ¬ ∃ e2 (こう_は(e2) ∧ なり_ませ(e2, x1)))
+
+# ::id 123_spoken_TED_007-HansRosling_2010S;92;NJ
+# ::snt 昔 の 西欧諸国 が 持つ 役割 は 新しい 世界 において 近代世界 における 土台 と なる こと です
+∃ x1 x2 x3 e4 x11 x5 x6 x7 A12 e8 e9 s10 (
+ こと(s10, なる(e8, x11, x6) ∧ において(e8) = x7) ∧
+  新しい(A12) ∧
+   x11 = pro{x3, x2, x1} ∧
+    attribute_世界(A12, x7) ∧
+     近代世界(x5) ∧
+      における_土台(x5, x6) ∧
+       昔(x1) ∧
+        の_西欧諸国(x1, x2) ∧
+         持つ(e4, x2, x3) ∧ 役割(x3) ∧ です(e9, x3, s10))
+
+# ::id 124_spoken_TED_007-HansRosling_2010S;92;NJ
+# ::snt それ 以上 で も 以下 で も あり ませ ん
+∃ x1 (
+ x1 = pro ∧
+  ¬ ∃ x8 x6 x2 e3 e4 e5 s9 s7 (
+        fact(s7, で(e3, x1, x8)) ∧
+         fact(s9, で(e4, x1, x2)) ∧
+          x8 = それ{x6} ∧
+           以上(x8) ∧
+            以下(x2) ∧
+             て(s7, x6) ∧ て(s9, x6) ∧
+              あり_ませ(e5, x1, x6)))
+
+# ::id 125_spoken_TED_007-HansRosling_2010S;93;NJ
+# ::snt しかし とても 重要 な 役割 です
+∃ x3 x1 A4 e2 (とても_重要_な(A4) ∧ x3 = pro ∧ attribute_役割(A4, x1) ∧ です(e2, x3, x1))
+
+# ::id 126_spoken_TED_007-HansRosling_2010S;94;NJ
+# ::snt うまく 役割 を 果たし それ に 慣れる 事 です
+∃ x9 x8 x7 x5 x1 e2 e3 e4 s6 (
+ 事(s6,
+  果たし(e2, x8, x1) ∧ 慣れる(e3, x7) ∧ に(e3) = x9) ∧
+  うまく(e2) ∧
+   x5 = pro ∧
+    x7 = pro{x5} ∧
+     x8 = pro{x7, x5} ∧
+      役割(x1) ∧ x9 = それ{x1, x5} ∧ です(e4, x5, s6))
+
+# ::id 127_spoken_TED_007-HansRosling_2010S;95;NJ
+# ::snt ありがとう ござい まし た
+∃ e1 (past(e1) ∧ ありがとう_ござい_まし_た(e1))

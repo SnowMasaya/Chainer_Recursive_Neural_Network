@@ -1,0 +1,381 @@
+# ::id 1_poetry_COLERIDGE-1798;AT1-1;NE
+# ::snt KUBLA KHAN
+( ENTITY-KUBLA_KHAN / ENTITY
+      :name ( n-1 / name
+             :op1 "KUBLA_KHAN"))
+
+# ::id 2_poetry_COLERIDGE-1798;AT2-1;NE
+# ::snt In Xanadu did Kubla Khan A stately pleasure dome decree : Where Alph , the sacred river , ran Through caverns measureless to man Down to a sunless sea .
+( EVENT-14 / did_decree
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-Kubla_Khan / PERSON
+             :name ( n-4 / name
+                    :op1 "Kubla_Khan"))
+      :ARG1 ( DOME-1 / pleasure_dome
+             :ATTRIBUTE ( ATTRIB-2 / stately))
+      :IN ( LOC-Xanadu / LOC
+             :name ( n-5 / name
+                    :op1 "Xanadu"))
+      :LOC ( EVENT-12 / ran_down
+             :MOD ( mod-2 / past)
+             :ARG0 ( ENTITY-Alph / river
+                    :DETERMINER ( ATTRIB-5 / the)
+                    :ATTRIBUTE ( ATTRIB-6 / sacred)
+                    :name ( n-3 / name
+                           :op1 "Alph"))
+             :TO ( ENTITY-10 / sea
+                    :ATTRIBUTE ( ATTRIB-11 / sunless))
+             :THROUGH ( GROUP-7 / caverns
+                    :ATTRIBUTE ( ATTRIB-8 / measureless
+                           :TO ( ENTITY-9 / man)))))
+
+# ::id 3_poetry_COLERIDGE-1798;AT2-2;NE
+# ::snt So twice five miles of fertile ground With walls and towers were girdled round :
+( EVENT-8 / were_girdled_round
+      :MOD ( mod-2 / past)
+      :ARG0 ( GROUP-1 / miles
+             :WITH ( GROUP-5 / AND
+                    :op1 ( GROUP-6 / walls)
+                    :op2 ( GROUP-7 / towers))
+             :OF ( ENTITY-3 / ground
+                    :ATTRIBUTE ( ATTRIB-4 / fertile))
+             :CARDINAL ( ATTRIB-2 / twice_five))
+      :MOD ( mod-1 / so))
+
+# ::id 4_poetry_COLERIDGE-1798;AT2-3;NE
+# ::snt And there were gardens bright with sinuous rills , Where blossomed many an incense-bearing tree ;
+( EVENT-11 / copula
+      :MOD ( mod-3 / past)
+      :ARG0 ( GROUP-1 / gardens
+             :ATTRIBUTE ( ATTRIB-2 / bright
+                    :WITH ( GROUP-3 / rills
+                           :ATTRIBUTE ( ATTRIB-4 / sinuous)))
+             :LOC-of ( EVENT-9 / blossomed
+                    :MOD ( mod-2 / past)
+                    :ARG0 ( ENTITY-6 / tree
+                           :ATTRIBUTE ( ATTRIB-8 / incense-bearing)
+                           :QUANTIFIER ( ATTRIB-7 / many)))))
+
+# ::id 5_poetry_COLERIDGE-1798;AT2-4;NE
+# ::snt And here were forests ancient as the hills , Enfolding sunny spots of greenery .
+( CONJ-15 / and
+      :op1 ( CONJ-14 / and
+             :op1 ( EVENT-10 / copula
+                    :MOD ( mod-16 / past)
+                    :ARG0 ( GROUP-1 / forests))
+             :op2 ( EVENT-9 / enfolding
+                    :MOD ( mod-17 / past)
+                    :ARG0 GROUP-1
+                    :ARG1 ( GROUP-6 / spots
+                           :ATTRIBUTE ( ATTRIB-7 / sunny)
+                           :OF ( ENTITY-8 / greenery))))
+      :op2 ( EVENT-5 / EVENT
+             :ATTRIBUTE ( ATTRIB-2 / ancient
+                    :AS ( GROUP-3 / hills
+                           :DEFINITE ( ATTRIB-4 / the)))
+             :ARG0 GROUP-1)
+      :LOC ( LOC-18 / here))
+
+# ::id 6_poetry_COLERIDGE-1798;AT3-1;NE
+# ::snt But oh ! that deep romantic chasm which slanted Down the green hill athwart a cedarn cover !
+( ENTITY-1 / chasm
+      :DETERMINER ( ATTRIB-2 / that)
+      :ATTRIBUTE ( ATTRIB-4 / romantic)
+      :ATTRIBUTE ( ATTRIB-3 / deep)
+      :ARG0-of ( EVENT-11 / slanted
+             :MOD ( mod-1 / past)
+             :ATHWART ( ENTITY-9 / cover
+                    :ATTRIBUTE ( ATTRIB-10 / cedarn))
+             :DOWN ( ENTITY-6 / hill
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :ATTRIBUTE ( ATTRIB-8 / green))))
+
+# ::id 7_poetry_COLERIDGE-1798;AT3-2;NE
+# ::snt A savage place ! as holy and enchanted As e'er beneath a waning moon was haunted By woman wailing for her demon-lover !
+( EVENT-12 / haunted
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-7 / woman
+             :ARG0-of ( EVENT-11 / wailing
+                    :FOR ( ENTITY-9 / demon-lover
+                           :POS PERSON-7)))
+      :ARG1 ( ENTITY-1 / place
+             :ATTRIBUTE ( ATTRIB-3 / as_holy_and_enchanted
+                    :AS ( ATTRIB-4 / e ' er
+                           :BENEATH ( ENTITY-5 / moon
+                                  :ATTRIBUTE ( ATTRIB-6 / waning))))
+             :ATTRIBUTE ( ATTRIB-2 / savage)))
+
+# ::id 8_poetry_COLERIDGE-1798;AT4-1;NE
+# ::snt And from this chasm , with ceaseless turmoil seething , As if this earth in fast thick pants were breathing , A mighty fountain momently was forced : Amid whose swift half-intermitted burst Huge fragments vaulted like rebounding hail , Or chaffy grain beneath the thresher 's flail :
+( CONJ-39 / AND
+      :op1 ( CONJ-33 / and
+             :op1 ( EVENT-27 / vaulted
+                    :ARG1 ( GROUP-15 / fragments
+                           :ATTRIBUTE ( ATTRIB-16 / huge))
+                    :AMID ( ENTITY-11 / burst
+                           :ATTRIBUTE ( ATTRIB-14 / half-intermitted)
+                           :ATTRIBUTE ( ATTRIB-13 / swift)
+                           :POS ( FOUNTAIN-9 / fountain
+                                  :ATTRIBUTE ( ATTRIB-10 / mighty))))
+             :op2 ( EVENT-26 / EVENT
+                    :ATTRIBUTE ( ATTRIB-17 / like
+                           :COMP ( GROUP-18 / or
+                                  :op1 ( ENTITY-19 / hail
+                                         :ATTRIBUTE ( ATTRIB-20 / rebounding))
+                                  :op2 ( ENTITY-21 / grain
+                                         :ATTRIBUTE ( ATTRIB-22 / chaffy)
+                                         :BENEATH ( ENTITY-23 / flail
+                                                :POS ( ENTITY-24 / thresher
+                                                       :DEFINITE ( ATTRIB-25 / the))))))
+                    :ARG0 GROUP-15))
+      :op2 ( CRD-35 / As_if
+             :op1 ( EVENT-8 / were_breathing
+                    :MOD ( mod-36 / past)
+                    :ARG0 ( ENTITY-3 / earth
+                           :DETERMINER ( ATTRIB-4 / this)
+                           :IN ( GROUP-5 / pants
+                                  :ATTRIBUTE ( ATTRIB-7 / thick)
+                                  :ATTRIBUTE ( ATTRIB-6 / fast))))
+             :op2 ( CONJ-34 / and
+                    :op1 ( EVENT-30 / seething
+                           :ARG0 FOUNTAIN-9
+                           :WITH ( ENTITY-28 / turmoil
+                                  :ATTRIBUTE ( ATTRIB-29 / ceaseless)))
+                    :op2 ( EVENT-31 / forced
+                           :MOD ( mod-38 / past)
+                           :ARG1 FOUNTAIN-9
+                           :FROM ( ENTITY-1 / chasm
+                                  :DETERMINER ( ATTRIB-2 / this))
+                           :MOD ( mod-37 / momently)))))
+
+# ::id 9_poetry_COLERIDGE-1798;AT4-2;NE
+# ::snt And 'mid these dancing rocks at once and ever It flung up momently the sacred river .
+( EVENT-8 / flung_up
+      :MOD ( mod-2 / past)
+      :ARG0 ( FOUNTAIN-4 / it)
+      :ARG1 ( ENTITY-5 / river
+             :DEFINITE ( ATTRIB-6 / the)
+             :ATTRIBUTE ( ATTRIB-7 / sacred))
+      :AT ( ATTRIB-3 / once_ever)
+      :QUOTE_MID ( GROUP-1 / dancing_rocks
+             :DETERMINER ( ATTRIB-2 / these))
+      :MOD ( mod-1 / momently))
+
+# ::id 10_poetry_COLERIDGE-1798;AT5-1;NE
+# ::snt Five miles meandering with a mazy motion Through wood and dale the sacred river ran , Then reached the caverns measureless to man , And sank in tumult to a lifeless ocean :
+( CONJ-24 / and
+      :op1 ( EVENT-11 / meandering
+             :ARG0 ( ENTITY-1 / river
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :ATTRIBUTE ( ATTRIB-3 / sacred))
+             :THROUGH ( GROUP-8 / AND
+                    :op1 ( ENTITY-9 / wood)
+                    :op2 ( ENTITY-10 / dale))
+             :WITH ( ENTITY-6 / motion
+                    :ATTRIBUTE ( ATTRIB-7 / mazy))
+             :MSR ( GROUP-4 / miles
+                    :CARDINAL ( ATTRIB-5 / five)))
+      :op2 ( CONJ-23 / and
+             :op1 ( EVENT-12 / ran
+                    :MOD ( mod-25 / past)
+                    :ARG0 ENTITY-1)
+             :op2 ( EVENT-17 / reached
+                    :MOD ( mod-27 / past)
+                    :ARG0 ENTITY-1
+                    :ARG1 ( GROUP-13 / caverns
+                           :DEFINITE ( ATTRIB-14 / the)
+                           :ATTRIBUTE ( ATTRIB-15 / measureless
+                                  :TO ( ENTITY-16 / man)))
+                    :TMP ( TIME-26 / then))
+             :op3 ( EVENT-22 / sank
+                    :MOD ( mod-28 / past)
+                    :ARG0 ENTITY-1
+                    :TO ( ENTITY-20 / ocean
+                           :ATTRIBUTE ( ATTRIB-21 / lifeless))
+                    :IN ( ENTITY-19 / tumult))))
+
+# ::id 11_poetry_COLERIDGE-1798;AT5-2;NE
+# ::snt And 'mid this tumult Kubla heard from far Ancestral voices prophesying war !
+( EVENT-8 / heard
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Kubla / ENTITY
+             :name ( n-2 / name
+                    :op1 "Kubla"))
+      :FROM ( GROUP-3 / voices
+             :ATTRIBUTE ( ATTRIB-4 / far_ancestral)
+             :ARG0-of ( EVENT-7 / prophesying
+                    :ARG1 ( ENTITY-6 / war)))
+      :QUOTE_MID ( ENTITY-1 / tumult
+             :DETERMINER ( ATTRIB-2 / this)))
+
+# ::id 12_poetry_COLERIDGE-1798;AT6-1;NE
+# ::snt The shadow of the dome of pleasure Floated midway on the waves ; Where was heard the mingled measure From the fountain and the caves .
+( EVENT-20 / floated
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / shadow
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( DOME-3 / dome
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :OF ( ENTITY-5 / pleasure)))
+      :ON ( GROUP-7 / waves
+             :DEFINITE ( ATTRIB-8 / the))
+      :LOC ( ENTITY-6 / midway)
+      :LOC ( EVENT-18 / heard
+             :MOD ( mod-2 / past)
+             :ARG1 ( ENTITY-10 / measure
+                    :DEFINITE ( ATTRIB-11 / the)
+                    :ATTRIBUTE ( ATTRIB-12 / mingled))
+             :FROM ( GROUP-13 / AND
+                    :op1 ( ENTITY-14 / fountain
+                           :DEFINITE ( ATTRIB-15 / the))
+                    :op2 ( GROUP-16 / caves
+                           :DEFINITE ( ATTRIB-17 / the)))))
+
+# ::id 13_poetry_COLERIDGE-1798;AT6-2;NE
+# ::snt It was a miracle of rare device ,
+( EVENT-5 / copula
+      :MOD ( mod-1 / past)
+      :ARG0 ( DOME-1 / it)
+      :ARG1 ( ENTITY-2 / miracle
+             :OF ( ENTITY-3 / device
+                    :ATTRIBUTE ( ATTRIB-4 / rare))))
+
+# ::id 14_poetry_COLERIDGE-1798;AT6-2;NE
+# ::snt A sunny pleasure-dome with caves of ice !
+( EVENT-5 / EVENT
+      :ARG1 ( DOME-1 / pleasure-dome
+             :ATTRIBUTE ( ATTRIB-2 / sunny)
+             :WITH ( GROUP-3 / caves
+                    :OF ( ENTITY-4 / ice))))
+
+# ::id 15_poetry_COLERIDGE-1798;AT7-1;NE
+# ::snt A damsel with a dulcimer In a vision once I saw :
+( EVENT-5 / saw
+      :MOD ( mod-2 / past)
+      :ARG0 ( NARRATOR-4 / i)
+      :ARG1 ( PERSON-1 / damsel
+             :WITH ( ENTITY-2 / dulcimer))
+      :IN ( ENTITY-3 / vision)
+      :MOD ( mod-1 / once))
+
+# ::id 16_poetry_COLERIDGE-1798;AT7-2;NE
+# ::snt It was an Abyssinian maid ,
+( EVENT-3 / copula
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-1 / it)
+      :ARG1 ( ENTITY-2 / Abyssinian_maid))
+
+# ::id 17_poetry_COLERIDGE-1798;AT7-3;NE
+# ::snt And on her dulcimer she played , Singing of Mount Abora .
+( CONJ-6 / and
+      :op1 ( EVENT-5 / played
+             :MOD ( mod-7 / past)
+             :ARG0 ( PERSON-3 / she)
+             :ON ( ENTITY-1 / dulcimer
+                    :POS ( PERSON-2 / her)))
+      :op2 ( EVENT-4 / singing
+             :ARG0 PERSON-3
+             :OF ( ENTITY-Mount_Abora / ENTITY
+                    :name ( n-8 / name
+                           :op1 "Mount_Abora"))))
+
+# ::id 18_poetry_COLERIDGE-1798;AT8-1;NE
+# ::snt Could I revive within me Her symphony and song , To such a deep delight 't would win me , That with music loud and long , I would build that dome in air , That sunny dome ! those caves of ice !
+( CRD-37 / LINK
+      :op1 ( EVENT-8 / revive
+             :domain-of ( MD-35 / could)
+             :ARG0 ( NARRATOR-1 / i)
+             :ARG1 ( MUSIC-3 / AND
+                    :op1 ( ENTITY-6 / symphony)
+                    :op2 ( ENTITY-7 / song)
+                    :POS ( PERSON-4 / her))
+             :WITHIN ( NARRATOR-2 / me))
+      :op2 ( EVENT-31 / win
+             :domain-of ( MD-36 / would)
+             :ARG0 MUSIC-3
+             :ARG1 ( NARRATOR-30 / me)
+             :TO ( ENTITY-9 / delight
+                    :ATTRIBUTE ( ATTRIB-11 / deep)
+                    :ATTRIBUTE ( ATTRIB-10 / such)
+                    :THAT ( EVENT-28 / build
+                           :domain-of ( MD-34 / would)
+                           :ARG0 ( NARRATOR-17 / i)
+                           :ARG1 ( DOME-25 / dome
+                                  :DETERMINER ( ATTRIB-26 / that)
+                                  :IN ( ENTITY-27 / air)
+                                  :NAMELY ( GROUP-18 / AND
+                                         :op1 ( ENTITY-19 / dome
+                                                :DETERMINER ( ATTRIB-20 / that)
+                                                :ATTRIBUTE ( ATTRIB-21 / sunny))
+                                         :op2 ( GROUP-22 / caves
+                                                :DETERMINER ( ATTRIB-23 / those)
+                                                :OF ( ENTITY-24 / ice))))
+                           :WITH ( ENTITY-12 / music
+                                  :ARG0-of ( CONJ-32 / and
+                                         :op1 ( EVENT-16 / EVENT
+                                                :ATTRIBUTE ( ATTRIB-14 / loud))
+                                         :op2 ( EVENT-16 / EVENT
+                                                :ATTRIBUTE ( ATTRIB-15 / long))))))))
+
+# ::id 19_poetry_COLERIDGE-1798;AT8-2;NE
+# ::snt And all who heard should see them there ,
+( EVENT-6 / see
+      :domain-of ( MD-8 / should)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :QUANTIFIER ( ATTRIB-2 / all)
+             :ARG0-of ( EVENT-4 / heard
+                    :MOD ( mod-9 / past)))
+      :ARG1 ( DOME-5 / them)
+      :LOC ( LOC-10 / there))
+
+# ::id 20_poetry_COLERIDGE-1798;AT8-3;NE
+# ::snt And all should cry , Beware ! Beware ! His flashing eyes , his floating hair !
+( EVENT-3 / cry
+      :domain-of ( MD-15 / should)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :QUANTIFIER ( ATTRIB-2 / all))
+      :THAT ( EVENT-12 / beware
+             :ARG1 ( GROUP-4 / AND
+                    :op1 ( GROUP-5 / eyes
+                           :ATTRIBUTE ( ATTRIB-7 / flashing)
+                           :POS ( PERSON-6 / his))
+                    :op2 ( ENTITY-8 / hair
+                           :ATTRIBUTE ( ATTRIB-10 / floating)
+                           :POS ( PERSON-9 / his))
+                    :ARG1-of ( EVENT-11 / beware))
+             :domain-of ( IMPERATIVE-14 / IMPERATIVE)))
+
+# ::id 21_poetry_COLERIDGE-1798;AT9-1;NE
+# ::snt Weave a circle round him thrice ,
+( EVENT-5 / weave
+      :ARG1 ( ENTITY-1 / circle)
+      :TMP ( TIME-3 / TIME
+             :CARDINAL ( ATTRIB-4 / thrice))
+      :ROUND ( PERSON-2 / him)
+      :domain-of ( IMPERATIVE-6 / IMPERATIVE))
+
+# ::id 22_poetry_COLERIDGE-1798;AT9-2;NE
+# ::snt And close your eyes with holy dread For he on honey-dew hath fed , And drunk the milk of Paradise .
+( CRD-13 / For
+      :op1 ( CONJ-12 / and
+             :op1 ( EVENT-7 / hath_fed
+                    :ARG0 ( PERSON-5 / he)
+                    :ON ( ENTITY-6 / honey-dew))
+             :op2 ( EVENT-10 / drunk
+                    :ARG0 PERSON-5
+                    :ARG1 ( ENTITY-8 / milk
+                           :DEFINITE ( ATTRIB-9 / the)
+                           :OF ( ENTITY-Paradise / ENTITY
+                                  :name ( n-15 / name
+                                         :op1 "Paradise")))))
+      :op2 ( EVENT-11 / close
+             :ARG1 ( GROUP-1 / eyes
+                    :POS ( PERSONS-2 / your))
+             :WITH ( ENTITY-3 / dread
+                    :ATTRIBUTE ( ATTRIB-4 / holy)))
+      :domain-of ( IMPERATIVE-14 / IMPERATIVE))
+
+# ::id 23_poetry_COLERIDGE-1798;AT10-1;NE
+# ::snt 1798
+( DATE-1 / DATE
+      :CARDINAL ( ATTRIB-2 / 1798))

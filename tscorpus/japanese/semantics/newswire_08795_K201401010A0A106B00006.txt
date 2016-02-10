@@ -1,0 +1,211 @@
+# ::id 1_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 河北春秋
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[河北春秋])
+
+# ::id 2_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 神話 に 出 て くる 神様 は 暴れん坊ぞろい 。
+∃ EVENT[6] ENTITY[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ 神話(ENTITY[3]) ∧
+  出_て_くる(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 神様(ENTITY[1]) ∧
+   暴れん坊ぞろい(ENTITY[5]) ∧ xxx(EVENT[6], ENTITY[1], ENTITY[5]))
+
+# ::id 3_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 岩 を 投げ て 山 を つくっ たり 海底火山 の 噴火 を 連想 さ せ たり する 。
+∃ ENTITY[7] SITUATION[2] ENTITY[1] EVENT[4] EVENT[6] EVENT[11] EVENT[8] EVENT[12] ENTITY[3] ENTITY[5] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  岩(ENTITY[3]) ∧
+   山(ENTITY[5]) ∧
+    ENTITY[7] = *pro*{ENTITY[5], ENTITY[3]} ∧
+     海底火山(ENTITY[10]) ∧
+      の_噴火(ENTITY[10], ENTITY[9]) ∧
+       FACT(SITUATION[2],
+        CONJ_たり(CONJ_te(投げ_て(EVENT[4], ENTITY[1], ENTITY[3]), つくっ(EVENT[6], ENTITY[1], ENTITY[5])),
+         せ(EVENT[8], ENTITY[1], ENTITY[7], 連想する.0(EVENT[11], ENTITY[7], ENTITY[9])))) ∧
+        する(EVENT[12], ENTITY[1]) ∧ たり(EVENT[12]) = SITUATION[2])
+
+# ::id 4_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 物理学者 の 寺田寅彦 は 「 この 国 が 島国 で ある と 明瞭 に 表し て いる 。 神代史 に 科学的真実 が 織り込ま れ て いる の は 驚き 」 と 随筆 に 記す
+∃ SITUATION[9] SITUATION[10] ENTITY[4] EVENT[8] EVENT[5] EVENT[13] EVENT[15] EVENT[3] ENTITY[7] ENTITY[12] ENTITY[11] ENTITY[14] ENTITY[2] ENTITY[1] ENTITY[6] (
+ 物理学者(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[寺田寅彦]) ∧
+   国(ENTITY[6]) ∧
+    随筆(ENTITY[2]) ∧
+     ENTITY[4] = *pro*{ENTITY[寺田寅彦], ENTITY[2], ENTITY[1]} ∧
+      島国(ENTITY[7]) ∧
+       神代史(ENTITY[11]) ∧
+        科学的真実(ENTITY[12]) ∧
+         の(SITUATION[10], 織り込ま_て_いる(EVENT[13], _, ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[11]) ∧
+          驚き(ENTITY[14]) ∧
+           ADV_明瞭_に(SITUATION[9]) ∧
+            記す(EVENT[3], ENTITY[寺田寅彦],
+             FACT(SITUATION[9], 表し_て_いる(EVENT[5], ENTITY[4], で_ある(EVENT[8], ENTITY[6], ENTITY[7]))) ∧
+              xxx(EVENT[15], SITUATION[10], ENTITY[14])) ∧ に(EVENT[3]) = ENTITY[2])
+
+# ::id 5_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 小笠原諸島 （ 東京都 ） に 生まれ た 新島 は 日々 大きく なっ て いる 。
+∃ EVENT[4] TIME[3] EVENT[2] (
+ namely_-ENTITY-(ENTITY[東京都], ENTITY[小笠原諸島]) ∧
+  生まれ_た(EVENT[2], ENTITY[新島]) ∧ に(EVENT[2]) = ENTITY[小笠原諸島] ∧
+   past(EVENT[2]) ∧
+    日々(TIME[3]) ∧ 大きく_なっ_て_いる(EVENT[4], ENTITY[新島]) ∧ is_contained_in(時間(EVENT[4]), TIME[3]))
+
+# ::id 6_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt １２ 月 初め に 甲子園球場 ほど だっ た の が ３ 倍 に なり 、 とうとう 西之島 と くっつい た
+∃ EVENT[5] EVENT[7] EVENT[8] ENTITY[4] ENTITY[6] ENTITY[2] ENTITY[1] (
+ (CD_１２_月(ENTITY[1]), 初め(ENTITY[1])) ∧
+  ほど(ENTITY[甲子園球場], ENTITY[4]) ∧
+   だっ_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ の(ENTITY[2]) ∧
+    CD_３_倍(ENTITY[6]) ∧
+     past(EVENT[5]) ∧
+      ADV_とうとう(EVENT[8]) ∧
+       past(EVENT[8]) ∧
+        なり(EVENT[7], ENTITY[2], ENTITY[6]) ∧
+         くっつい_た(EVENT[8], ENTITY[2]) ∧ と(EVENT[8]) = ENTITY[西之島] ∧ に(EVENT[8]) = ENTITY[1])
+
+# ::id 7_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 地球 は 生命体 、 その 上 で 暮らし て いる と 気付か さ れる 。
+∃ ARB[4] ARB[1] EVENT[7] EVENT[9] EVENT[3] EVENT[2] ENTITY[6] ENTITY[5] ENTITY[8] (
+ 地球(ENTITY[5]) ∧
+  上(ENTITY[8]) ∧
+   ARB[1] = *arb* ∧
+    ARB[4] = *arb*{ARB[1]} ∧
+     生命体(ENTITY[6]) ∧
+      さ(EVENT[2], _, ARB[1],
+       気付か(EVENT[3], ARB[1],
+        xxx(EVENT[7], ENTITY[5], ENTITY[6]) ∧
+         暮らし_て_いる(EVENT[9], ARB[4]) ∧ で(EVENT[9]) = ENTITY[8])))
+
+# ::id 8_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt これ から 、 くぼみ に 水 が たまっ て 湖 と なり 小さな 命 が 。
+∃ ATTRIB[9] ENTITY[2] ENTITY[1] EVENT[5] EVENT[7] EVENT[10] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[8] (
+ ENTITY[1] = これ ∧
+  ENTITY[2] = *pro*{ENTITY[1]} ∧
+   くぼみ(ENTITY[3]) ∧
+    水(ENTITY[4]) ∧
+     湖(ENTITY[6]) ∧
+      小さな(ATTRIB[9]) ∧
+       ATTRIBUTE_命(ATTRIB[9], ENTITY[8]) ∧
+        CONJ_te(たまっ_て(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3],
+         なり(EVENT[7], ENTITY[2], ENTITY[6])) ∧
+         xxx(EVENT[10], ENTITY[8]) ∧ から(EVENT[10]) = ENTITY[1])
+
+# ::id 9_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 列島 も こんな ふう に いま に 至っ た の だろ う か
+∃ ENTITY[2] (
+ ふう(ENTITY[2]) ∧
+  QUEST(∃ ENTITY[1] (
+        列島(ENTITY[1]) ∧
+         MD_う(∃ EVENT[4] ENTITY[3] (
+               いま(ENTITY[3]) ∧
+                past(EVENT[4]) ∧
+                 至っ_た_の_だろ(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+                  に(EVENT[4]) = ENTITY[2])))))
+
+# ::id 10_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 埋蔵資源 が ある と いい 。
+∃ ENTITY[1] (ENTITY[1] = *pro* ∧ ∀ EVENT[3] ENTITY[2] CND_と(埋蔵資源(ENTITY[2]) ∧ ある(EVENT[3], ENTITY[2]), ∃ EVENT[4] いい(EVENT[4], ENTITY[1])))
+
+# ::id 11_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 東向こう 、 南鳥島沖 に は ハイテク機器 に 使う レアメタル が ４０ 年 分 埋まっ て いる 。
+∃ ENTITY[5] EVENT[7] EVENT[9] ENTITY[6] DEGREE[8] ENTITY[3] ENTITY[1] ENTITY[2] (
+ 南鳥島沖(ENTITY[2]) ∧
+  東向こう(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧
+    ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+     ハイテク機器(ENTITY[6]) ∧
+      使う(EVENT[7], ENTITY[5], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[6] ∧ レアメタル(ENTITY[3]) ∧
+       (CD_４０_年(DEGREE[8]), 分(DEGREE[8])) ∧
+        埋まっ_て_いる(EVENT[9], ENTITY[3]) ∧ MSR(EVENT[9]) = DEGREE[8] ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 12_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 新島 も 期待 でき そう 。
+∃ ENTITY[1] (ENTITY[1] = *pro* ∧ MD_そう(∃ EVENT[2] 期待する.0(EVENT[2], ENTITY[新島], ENTITY[1])))
+
+# ::id 13_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 開発権 の ある 排他的経済水域 の 広さ は 世界 ６ 位 の 海洋技術国 な の だ から
+∃ SITUATION[3] ENTITY[1] EVENT[10] EVENT[11] ENTITY[9] ENTITY[2] EVENT[8] ENTITY[7] ENTITY[5] ENTITY[4] (
+ 開発権(ENTITY[7]) ∧
+  ある(EVENT[8], (ENTITY[5], ENTITY[7])) ∧ 排他的経済水域(ENTITY[5]) ∧
+   の_広さ(ENTITY[5], ENTITY[4]) ∧
+    ENTITY[1] = *pro* ∧
+     (CD_６_位(ENTITY[9]), 世界(ENTITY[9])) ∧
+      FACT(SITUATION[3], xxx(EVENT[10], ENTITY[4], ENTITY[9])) ∧
+       の_海洋技術国(SITUATION[3], ENTITY[2]) ∧ MD_から(な_の_だ(EVENT[11], ENTITY[1], ENTITY[2])))
+
+# ::id 14_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 幕末 、 黒船 で 来航 し た 米国使節 は 「 小笠原諸島 を 発見 し 、 すでに 英語名 を 付け た 」 と 領有 を 主張 する 。
+∃ ENTITY[7] EVENT[8] EVENT[10] EVENT[6] ENTITY[9] ENTITY[5] EVENT[4] ENTITY[3] TIME[2] (
+ 幕末(TIME[2]) ∧
+  黒船(ENTITY[3]) ∧
+   来航する.0_た(EVENT[4], ENTITY[米国使節]) ∧ で(EVENT[4]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[4]), TIME[2]) ∧
+    past(EVENT[4]) ∧
+     領有(ENTITY[5]) ∧
+      ENTITY[7] = *speaker*{ENTITY[米国使節], ENTITY[5], ENTITY[3]} ∧
+       英語名(ENTITY[9]) ∧
+        ADV_すでに(EVENT[10]) ∧
+         before(EVENT[6], EVENT[10]) ∧
+          主張する.0(EVENT[6], ENTITY[米国使節], ENTITY[5],
+           発見する.0(EVENT[8], ENTITY[7], ENTITY[小笠原諸島]) ∧ 付け_た(EVENT[10], ENTITY[7], ENTITY[9])))
+
+# ::id 15_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt その 時 、 仙台藩 の 先覚者 、 林子平 が 後世 に 残し た 周辺海図 「 三国通覧図説 」 が もの を いう
+∃ EVENT[6] EVENT[8] ENTITY[4] ENTITY[5] ENTITY[2] ENTITY[7] TIME[1] (
+ 時(TIME[1]) ∧
+  の_先覚者(ENTITY[仙台藩], ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[林子平]) ∧
+    後世(ENTITY[5]) ∧
+     残し_た(EVENT[6], ENTITY[林子平], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 周辺海図(ENTITY[2]) ∧
+      namely_-ENTITY-(ENTITY[2], ENTITY[三国通覧図説]) ∧
+       もの(ENTITY[7]) ∧
+        past(EVENT[6]) ∧ いう(EVENT[8], ENTITY[三国通覧図説], ENTITY[7]) ∧ is_contained_in(時間(EVENT[8]), TIME[1]))
+
+# ::id 16_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt ▼ 「 わが 領土 の 動か ぬ 証拠 」 と 反論 さ れ 、 引き下がっ た 。
+∃ ENTITY[6] ENTITY[5] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[8] EVENT[9] EVENT[10] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ENTITY[5] = わが{ENTITY[3], ENTITY[1]} ∧
+    領土(ENTITY[5]) ∧
+     ENTITY[6] = *pro*{ENTITY[5], ENTITY[3], ENTITY[1]} ∧
+      の_証拠(ENTITY[5], ENTITY[4]) ∧ THAT_証拠(¬ ∃ EVENT[7] 動か(EVENT[7], ENTITY[6]), ENTITY[4]) ∧
+       と(SITUATION[2], xxx(EVENT[8], ENTITY[3], ENTITY[4])) ∧
+        past(EVENT[10]) ∧ 反論する.0(EVENT[9], _, SITUATION[2]) ∧ 引き下がっ_た(EVENT[10], ENTITY[1]))
+
+# ::id 17_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 天 は 時 に 試練 を 与える 。
+∃ ARB[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 天(ENTITY[2]) ∧
+  ARB[1] = *arb* ∧
+   時(ENTITY[3]) ∧
+    試練(ENTITY[4]) ∧ 与える(EVENT[5], ENTITY[2], ENTITY[4], ARB[1]) ∧ に(EVENT[5]) = ENTITY[3])
+
+# ::id 18_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt でも 、 人 に は 知恵 と 勇気 が ある 。
+∃ EVENT[5] GROUP[2] ENTITY[1] (
+ 人(ENTITY[1]) ∧
+  CONJ_と(∃ ENTITY[3] (知恵(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (勇気(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   ある(EVENT[5], GROUP[2]) ∧ に(EVENT[5]) = ENTITY[1])
+
+# ::id 19_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 未曽有 の 震災 から ことし で ３ 年 。
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 未曽有(ENTITY[2]) ∧
+  の_震災(ENTITY[2], ENTITY[1]) ∧
+   ことし(ENTITY[3]) ∧
+    CD_３_年(ENTITY[4]) ∧
+     xxx(EVENT[5], _, ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧ から(EVENT[5]) = ENTITY[1])
+
+# ::id 20_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt 午 （ うま ） 年 に ちなみ 、 瞳 は 優しく 軽やか に 駆け たい 。
+∃ ENTITY[1] EVENT[3] EVENT[5] EVENT[6] ENTITY[2] ENTITY[4] (
+ 瞳(ENTITY[4]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_午_（_うま_）_年(ENTITY[2]) ∧
+    ADV_軽やか_に(EVENT[6]) ∧
+     ちなみ(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+      優しく(EVENT[5], ENTITY[4]) ∧ 駆け_たい(EVENT[6], ENTITY[1]))
+
+# ::id 21_newswire_08795_K201401010A0A106B00006;NJ
+# ::snt （ ２０１４・１・１ ）
+∃ EVENT[2] ENTITY[1] (CD_２０１４.１.１(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

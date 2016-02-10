@@ -1,0 +1,1103 @@
+# ::id 1_textbook_BUFFALO;NE
+# ::snt Bunthorne entered .
+∃ EVENT[1] (past(EVENT[1]) ∧ entered(EVENT[1], ENTITY[Bunthorne]))
+
+# ::id 2_textbook_BUFFALO;NE
+# ::snt She purred .
+∃ REF1[1] EVENT[2] (REF1[1] = she ∧ past(EVENT[2]) ∧ purred(EVENT[2], REF1[1]))
+
+# ::id 3_textbook_BUFFALO;NE
+# ::snt A cat enters .
+∃ EVENT[2] ENTITY[1] (cat(ENTITY[1]) ∧ enters(EVENT[2], ENTITY[1]))
+
+# ::id 4_textbook_BUFFALO;NE
+# ::snt It purrs .
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ purrs(EVENT[2], REF1[1]))
+
+# ::id 5_textbook_BUFFALO;NE
+# ::snt It departs .
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ departs(EVENT[2], REF1[1]))
+
+# ::id 6_textbook_BUFFALO;NE
+# ::snt A cat entered .
+∃ EVENT[2] ENTITY[1] (cat(ENTITY[1]) ∧ past(EVENT[2]) ∧ entered(EVENT[2], ENTITY[1]))
+
+# ::id 7_textbook_BUFFALO;NE
+# ::snt It purred .
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ past(EVENT[2]) ∧ purred(EVENT[2], REF1[1]))
+
+# ::id 8_textbook_BUFFALO;NE
+# ::snt It departed .
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ past(EVENT[2]) ∧ departed(EVENT[2], REF1[1]))
+
+# ::id 9_textbook_BUFFALO;NE
+# ::snt A cat -LRB- namely Bunthorne -RRB- entered .
+∃ EVENT[2] ENTITY[1] (is_cat_namely(ENTITY[1], ENTITY[Bunthorne]) ∧ past(EVENT[2]) ∧ entered(EVENT[2], ENTITY[1]))
+
+# ::id 10_textbook_BUFFALO;NE
+# ::snt It -LRB- namely Bunthorne -RRB- purred .
+∃ REF1[1] EVENT[2] (REF1[1] = it ∧ is_namely(REF1[1], ENTITY[Bunthorne]) ∧ past(EVENT[2]) ∧ purred(EVENT[2], REF1[1]))
+
+# ::id 11_textbook_BUFFALO;NE
+# ::snt A cat entered and it purred and it departed .
+∃ REF2[5] REF1[3] EVENT[2] EVENT[4] EVENT[6] ENTITY[1] (
+ cat(ENTITY[1]) ∧
+  REF1[3] = it ∧
+   REF2[5] = it ∧
+    past(EVENT[2]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(entered(EVENT[2], ENTITY[1]), purred(EVENT[4], REF1[3]), departed(EVENT[6], REF2[5])))
+
+# ::id 12_textbook_BUFFALO;NE
+# ::snt The cat -LRB- namely Bruce -RRB- is chasing the cat -LRB- namely Albert -RRB- .
+∃ EVENT[3] ENTITY[2] ENTITY[1] (is_cat_namely(ENTITY[1], ENTITY[Bruce]) ∧ is_cat_namely(ENTITY[2], ENTITY[Albert]) ∧ is_chasing(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 13_textbook_BUFFALO;TSOGD_1a;IE
+# ::snt Who wrote what ?
+QUEST(∃ EVENT[3] ? ENTITY[2] ENTITY[1] (past(EVENT[3]) ∧ wrote(EVENT[3], ENTITY[1], ENTITY[2])))
+
+# ::id 14_textbook_BUFFALO;TSOGD_1b;IE
+# ::snt Which book is interesting ?
+QUEST(∃ EVENT[2] ? ENTITY[1] (book(ENTITY[1]) ∧ is_interesting(EVENT[2], ENTITY[1])))
+
+# ::id 15_textbook_BUFFALO;TSOGD_2a;IE
+# ::snt Everyone wrote something .
+∀ ENTITY[1] (one(ENTITY[1]) → SOME ENTITY[2] (thing(ENTITY[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ wrote(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 16_textbook_BUFFALO;TSOGD_2b;IE
+# ::snt Every book is interesting .
+∀ ENTITY[1] (book(ENTITY[1]) → ∃ EVENT[2] is_interesting(EVENT[2], ENTITY[1]))
+
+# ::id 17_textbook_BUFFALO;TSOGD_18a;IE
+# ::snt The chocolate that everyone bought is delicious .
+∃ ATTRIB[5] EVENT[6] ENTITY[1] EVENT[4] (
+ past(EVENT[4]) ∧
+  ∀ ENTITY[3] (one(ENTITY[3]) → bought(EVENT[4], ENTITY[3], ENTITY[1])) ∧ chocolate(ENTITY[1]) ∧
+   delicious(ATTRIB[5]) ∧ copula(EVENT[6], ENTITY[1], ATTRIB[5]))
+
+# ::id 18_textbook_BUFFALO;TSOGD_18b;IE
+# ::snt Every chocolate that a person bought is delicious .
+∀ EVENT[4] ENTITY[3] ENTITY[1] (
+ (person(ENTITY[3]) ∧ bought(EVENT[4], ENTITY[3], ENTITY[1]) ∧ chocolate(ENTITY[1]) ∧ past(EVENT[4])) →
+ ∃ ATTRIB[5] EVENT[6] (delicious(ATTRIB[5]) ∧ copula(EVENT[6], ENTITY[1], ATTRIB[5])))
+
+# ::id 19_textbook_BUFFALO;TSOGD_24a;IE
+# ::snt Every rumor that Hanako loves a person is true .
+∀ EVENT[3] ENTITY[2] ENTITY[1] ((person(ENTITY[2]) ∧ is_rumor_THAT(ENTITY[1], loves(EVENT[3], ENTITY[Hanako], ENTITY[2]))) →
+ ∃ ATTRIB[4] EVENT[5] (true(ATTRIB[4]) ∧ copula(EVENT[5], ENTITY[1], ATTRIB[4])))
+
+# ::id 20_textbook_BUFFALO;TSOGD_24b;IE
+# ::snt Every one 's computer is out of order .
+∀ ENTITY[2] ENTITY[1] ((CD_one(ENTITY[2]) ∧ is_computer_POS(ENTITY[1], ENTITY[2])) →
+ ∃ EVENT[4] ENTITY[3] (order(ENTITY[3]) ∧ copula_out(EVENT[4], ENTITY[1]) ∧ of(EVENT[4]) = ENTITY[3]))
+
+# ::id 21_textbook_BUFFALO;TSOGD_34;IE
+# ::snt If someone comes in , please report that to me .
+∃ EVENT[1] ENTITY[4] please(EVENT[1],
+ IMPERATIVE(CND_If(SOME ENTITY[2] (one(ENTITY[2]), ∃ EVENT[3] comes_in(EVENT[3], ENTITY[2])),
+          ∃ REF1[5] EVENT[6] (REF1[5] = me ∧ report(EVENT[6], _, ENTITY[4], REF1[5])))))
+
+# ::id 22_textbook_BUFFALO;TSOGD_38;IE
+# ::snt If a book that someone wrote has been read , please write a review of it and send it to him .
+∃ EVENT[1] please(EVENT[1],
+ ∀ BOOK[2] EVENT[6] CND_If(
+     SOME PERSON[4] (one(PERSON[4]), ∃ EVENT[5] (is_before(EVENT[5], EVENT[1]) ∧ wrote(EVENT[5], PERSON[4], BOOK[2]))) ∧
+      book(BOOK[2]) ∧ has_read(EVENT[6], _, BOOK[2]),
+     ∃ PERSON[11] REVIEW[10] BOOK[8] REVIEW[7] EVENT[9] EVENT[12] (
+      BOOK[8] = it{BOOK[2]} ∧
+       is_review_of(REVIEW[7], BOOK[8]) ∧
+        REVIEW[10] = it{REVIEW[7]} ∧
+         PERSON[11] = him ∧
+          CONJ_and(write(EVENT[9], _, REVIEW[7]), send(EVENT[12], _, REVIEW[10], PERSON[11])))))
+
+# ::id 23_textbook_BUFFALO;NE
+# ::snt arranged in such a way that information can be retrieved
+∃ ATTRIB[2] EVENT[5] ENTITY[3] ENTITY[1] (
+ such(ATTRIB[2]) ∧
+  information(ENTITY[3]) ∧
+   is_way_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_way_THAT(ENTITY[1], MD_can(∃ EVENT[4] retrieved(EVENT[4], _, ENTITY[3]))) ∧
+    past(EVENT[5]) ∧ arranged(EVENT[5]) ∧ in(EVENT[5]) = ENTITY[1])
+
+# ::id 24_textbook_BUFFALO;NE
+# ::snt The project involves developing a general method for transforming unrestricted natural language texts -LRB- Japanese and English -RRB- into high precision formal semantic representations and then linking such representations to application tasks , with a focus on recovering information from text for entry into databases and linking to world knowledge for reasoning .
+∃ SITUATION[28] SITUATION[18] ATTRIB[15] ATTRIB[11] ATTRIB[10] ATTRIB[8] ATTRIB[7] SITUATION[5] ATTRIB[4] SITUATION[2] EVENT[12] EVENT[13] EVENT[23] EVENT[26] EVENT[27] EVENT[29] GROUP[9] GROUP[6] ENTITY[3] GROUP[22] ENTITY[21] ENTITY[20] ENTITY[19] ENTITY[25] ENTITY[24] ENTITY[17] GROUP[16] GROUP[14] ENTITY[1] (
+ project(ENTITY[1]) ∧
+  general(ATTRIB[4]) ∧
+   japanese(ATTRIB[7]) ∧
+    english(ATTRIB[8]) ∧
+     CONJ_and(is_unrestricted_natural_language_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧ is_texts_ATTRIBUTE(GROUP[6], ATTRIB[7]),
+      is_unrestricted_natural_language_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_texts_ATTRIBUTE(GROUP[6], ATTRIB[8])) ∧
+      formal(ATTRIB[10]) ∧
+       semantic(ATTRIB[11]) ∧
+        is_high_precision_ATTRIBUTE(GROUP[9], ATTRIB[11]) ∧ is_high_precision_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+         is_representations_ATTRIBUTE(GROUP[9], ATTRIB[11]) ∧ is_representations_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+         is_FACT_THAT(SITUATION[5], transforming(EVENT[12], _, GROUP[6]) ∧ into(EVENT[12]) = GROUP[9]) ∧
+          is_method_for(ENTITY[3], SITUATION[5]) ∧ is_method_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+           such(ATTRIB[15]) ∧
+            is_representations_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+             information(ENTITY[19]) ∧
+              text(ENTITY[20]) ∧
+               databases(GROUP[22]) ∧
+                is_entry_into(ENTITY[21], GROUP[22]) ∧
+                 world_knowledge(ENTITY[24]) ∧
+                  reasoning(ENTITY[25]) ∧
+                   is_FACT_THAT(SITUATION[18],
+                    CONJ_and(recovering(EVENT[23], _, ENTITY[19]) ∧ for(EVENT[23]) = ENTITY[21] ∧
+                          from(EVENT[23]) = ENTITY[20],
+                     linking(EVENT[26]) ∧ for(EVENT[26]) = ENTITY[25] ∧
+                      to(EVENT[26]) = ENTITY[24])) ∧
+                    is_focus_on(ENTITY[17], SITUATION[18]) ∧
+                     is_application_tasks_with(GROUP[16], ENTITY[17]) ∧
+                      is_FACT_THAT(SITUATION[2],
+                       CONJ_and(developing(EVENT[13], ENTITY[1], ENTITY[3]),
+                        is_FACT_THAT(SITUATION[28],
+                         linking(EVENT[27], ENTITY[1], GROUP[14]) ∧
+                          to(EVENT[27]) = GROUP[16]))) ∧
+                       ADV_then(SITUATION[28]) ∧ involves(EVENT[29], ENTITY[1], SITUATION[2]))
+
+# ::id 25_textbook_BUFFALO;NE
+# ::snt Robust , accurate semantic analysis will improve all natural language processing tasks : recognising textual entailment , search , summarisation , automatic reply , machine translation and so on .
+∃ ATTRIB[3] ATTRIB[2] ENTITY[1] (
+ robust_accurate(ATTRIB[2]) ∧
+  semantic(ATTRIB[3]) ∧
+   is_analysis_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_analysis_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    ALL group[14] (natural_language_processing_tasks(group[14]),
+     ∃ GROUP[4] (
+      ∃ ATTRIB[7] ATTRIB[6] ENTITY[5] (
+       recognising(ATTRIB[6]) ∧
+        textual(ATTRIB[7]) ∧
+         is_entailment_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_entailment_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+       ∃ ENTITY[8] (search(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[4])) ∧
+       ∃ ENTITY[9] (summarisation(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[4])) ∧
+       ∃ ATTRIB[11] ENTITY[10] (automatic(ATTRIB[11]) ∧ is_reply_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[4])) ∧
+       ∃ ENTITY[12] (machine_translation(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[4])) ∧
+       ∃ ENTITY[13] (ADV_so_on(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[4])) ∧
+       is_-group-_namely(group[14], GROUP[4]) ∧ MD_will(∃ EVENT[15] improve(EVENT[15], ENTITY[1], group[14])))))
+
+# ::id 26_textbook_BUFFALO;NE
+# ::snt The gostak distims the doshes .
+∃ EVENT[3] GROUP[2] ENTITY[1] (gostak(ENTITY[1]) ∧ doshes(GROUP[2]) ∧ distims(EVENT[3], ENTITY[1], GROUP[2]))
+
+# ::id 27_textbook_BUFFALO;NE
+# ::snt The teacher scolded John .
+∃ EVENT[2] ENTITY[1] (teacher(ENTITY[1]) ∧ past(EVENT[2]) ∧ scolded(EVENT[2], ENTITY[1], ENTITY[John]))
+
+# ::id 28_textbook_BUFFALO;NE
+# ::snt John was scolded by the teacher .
+∃ EVENT[2] ENTITY[1] (teacher(ENTITY[1]) ∧ past(EVENT[2]) ∧ scolded(EVENT[2], ENTITY[1], ENTITY[John]))
+
+# ::id 29_textbook_BUFFALO;NE
+# ::snt My mother and my father had dinner at a restaurant in Tokyo with a friend .
+∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[6] GROUP[1] (
+ ∃ REF1[3] ENTITY[2] (REF1[3] = my ∧ is_mother_POS(ENTITY[2], REF1[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ REF2[5] ENTITY[4] (REF2[5] = my ∧ is_father_POS(ENTITY[4], REF2[5]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  dinner(ENTITY[6]) ∧
+   is_restaurant_in(ENTITY[7], ENTITY[Tokyo]) ∧
+    friend(ENTITY[8]) ∧
+     past(EVENT[9]) ∧
+      had(EVENT[9], GROUP[1], ENTITY[6]) ∧ with(EVENT[9]) = ENTITY[8] ∧ at(EVENT[9]) = ENTITY[7])
+
+# ::id 30_textbook_BUFFALO;NE
+# ::snt Science would not develop without basic research .
+∃ ENTITY[1] (
+ Science(ENTITY[1]) ∧
+  MD_would(¬ ∃ ATTRIB[3] EVENT[4] ENTITY[2] (
+             basic(ATTRIB[3]) ∧
+              is_research_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+               develop(EVENT[4], ENTITY[1]) ∧ without(EVENT[4]) = ENTITY[2])))
+
+# ::id 31_textbook_BUFFALO;NE
+# ::snt Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo .
+∃ EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] (
+ is_buffalo_POS(ENTITY[3], ENTITY[Buffalo]) ∧
+  buffalo(EVENT[4], ENTITY[3], ENTITY[1]) ∧ is_buffalo_POS(ENTITY[1], ENTITY[Buffalo]) ∧
+   is_buffalo_POS(ENTITY[5], ENTITY[Buffalo]) ∧ buffalo(EVENT[6], ENTITY[1], ENTITY[5]))
+
+# ::id 32_textbook_BUFFALO;NE
+# ::snt I think that that that that that boy ate was a hamburger .
+∃ REF1[1] EVENT[8] EVENT[2] ENTITY[7] EVENT[6] ENTITY[5] ENTITY[3] (
+ boy(ENTITY[5]) ∧
+  ate(EVENT[6], ENTITY[5], ENTITY[3]) ∧ that(ENTITY[3]) ∧
+   REF1[1] = i ∧
+    hamburger(ENTITY[7]) ∧
+     is_before(EVENT[8], EVENT[2]) ∧ think(EVENT[2], REF1[1], copula(EVENT[8], ENTITY[3], ENTITY[7])))
+
+# ::id 33_textbook_BUFFALO;CLARK-1853;NE
+# ::snt But they that fight for freedom , undertake The noblest cause mankind can have at stake
+∃ REF1[4] ATTRIB[6] EVENT[3] EVENT[11] ENTITY[2] ENTITY[8] ENTITY[5] (
+ noblest(ATTRIB[6]) ∧
+  mankind(ENTITY[8]) ∧
+   MD_can(∃ EVENT[10] ENTITY[9] (
+         stake(ENTITY[9]) ∧ have.4(EVENT[10], ENTITY[8], ENTITY[5]) ∧ at(EVENT[10]) = ENTITY[9])) ∧
+    is_cause_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    REF1[4] = they ∧
+     freedom(ENTITY[2]) ∧
+      fight.0(EVENT[3], REF1[4]) ∧ for(EVENT[3]) = ENTITY[2] ∧ undertake.0(EVENT[11], REF1[4], ENTITY[5]))
+
+# ::id 34_textbook_BUFFALO;NE
+# ::snt Rose rose to put rose roes on her rows of roses .
+∃ REF1[5] ATTRIB[3] PRP[1] EVENT[6] EVENT[7] GROUP[4] GROUP[2] (
+ rose(ATTRIB[3]) ∧
+  is_roes_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   REF1[5] = her ∧
+    is_rows_POS(GROUP[4], REF1[5]) ∧
+     is_FACT_THAT(PRP[1], put(EVENT[6], ENTITY[Rose], GROUP[2]) ∧ on(EVENT[6]) = GROUP[4]) ∧
+      past(EVENT[7]) ∧ rose(EVENT[7], ENTITY[Rose]) ∧ PRP(EVENT[7]) = PRP[1])
+
+# ::id 35_textbook_BUFFALO;NE
+# ::snt The rat the cat the dog bit chased escaped .
+∃ EVENT[8] EVENT[6] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[1] (
+ dog(ENTITY[5]) ∧
+  bit(EVENT[6], ENTITY[5], ENTITY[3]) ∧ cat(ENTITY[3]) ∧
+   chased(EVENT[7], ENTITY[3], ENTITY[1]) ∧ rat(ENTITY[1]) ∧
+    past(EVENT[6]) ∧ past(EVENT[7]) ∧ past(EVENT[8]) ∧ escaped(EVENT[8], ENTITY[1]))
+
+# ::id 36_textbook_BUFFALO;NE
+# ::snt The quick brown fox jumped over the lazy dog .
+∃ ATTRIB[5] ATTRIB[3] ATTRIB[2] EVENT[6] ENTITY[4] ENTITY[1] (
+ quick(ATTRIB[2]) ∧
+  brown(ATTRIB[3]) ∧
+   is_fox_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_fox_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    lazy(ATTRIB[5]) ∧
+     is_dog_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      past(EVENT[6]) ∧ jumped(EVENT[6], ENTITY[1]) ∧ over(EVENT[6]) = ENTITY[4])
+
+# ::id 37_textbook_BUFFALO;NE
+# ::snt very many very happy girls on the beach with the big dunes
+∃ ATTRIB[5] GROUP[4] ENTITY[3] (
+ big(ATTRIB[5]) ∧
+  is_dunes_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+   is_beach_with(ENTITY[3], GROUP[4]) ∧
+    VERY_MANY ATTRIB[2] GROUP[1] ((very_happy(ATTRIB[2]) ∧ is_girls_on(GROUP[1], ENTITY[3]) ∧ is_girls_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+     ∃ EVENT[6] (xxx(EVENT[6]) ∧ LINK(EVENT[6]) = GROUP[1])))
+
+# ::id 38_textbook_BUFFALO;NE
+# ::snt Bell , based in Los Angeles , makes and distributes electronic , computer and building products .
+∃ GROUP[3] EVENT[2] EVENT[9] EVENT[10] (
+ based(EVENT[2], ENTITY[Bell]) ∧ in(EVENT[2]) = ENTITY[Los_Angeles] ∧
+  ∃ ATTRIB[5] GROUP[4] (electronic(ATTRIB[5]) ∧ is_products_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+   ∃ GROUP[6] (computer_products(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+   ∃ ATTRIB[8] GROUP[7] (building(ATTRIB[8]) ∧ is_products_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3])) ∧
+   CONJ_and(makes(EVENT[9], ENTITY[Bell], GROUP[3]), distributes(EVENT[10], ENTITY[Bell], GROUP[3])))
+
+# ::id 39_textbook_BUFFALO;NE
+# ::snt If the police police police police , who polices the police police ?
+∃ GROUP[2] GROUP[1] GROUP[7] GROUP[6] (
+ police(GROUP[2]) ∧
+  is_police_POS(GROUP[1], GROUP[2]) ∧
+   police(GROUP[7]) ∧
+    is_police_POS(GROUP[6], GROUP[7]) ∧
+     QUEST(? ENTITY[5] ∀ EVENT[4] GROUP[3] CND_If(police(GROUP[3]) ∧ police(EVENT[4], GROUP[1], GROUP[3]),
+              ∃ EVENT[8] polices(EVENT[8], ENTITY[5], GROUP[6]))))
+
+# ::id 40_textbook_BUFFALO;NE
+# ::snt Police police police police police police !
+∃ EVENT[6] GROUP[3] GROUP[2] GROUP[5] GROUP[4] GROUP[1] (
+ Police(GROUP[3]) ∧
+  is_police_POS(GROUP[2], GROUP[3]) ∧
+   is_police_POS(GROUP[1], GROUP[2]) ∧
+    police(GROUP[5]) ∧ is_police_POS(GROUP[4], GROUP[5]) ∧ police(EVENT[6], GROUP[1], GROUP[4]))
+
+# ::id 41_textbook_BUFFALO;NE
+# ::snt Mary carefully analysed the issues .
+∃ EVENT[2] GROUP[1] (issues(GROUP[1]) ∧ ADV_carefully(EVENT[2]) ∧ past(EVENT[2]) ∧ analysed(EVENT[2], ENTITY[Mary], GROUP[1]))
+
+# ::id 42_textbook_BUFFALO;NE
+# ::snt Mary 's careful analysis of the issues
+∃ ATTRIB[2] EVENT[4] ENTITY[1] GROUP[3] (
+ issues(GROUP[3]) ∧
+  careful(ATTRIB[2]) ∧
+   is_analysis_of(ENTITY[1], GROUP[3]) ∧ is_analysis_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_analysis_POS(ENTITY[1], ENTITY[Mary]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 43_textbook_BUFFALO;NE
+# ::snt Time flies like an arrow ;
+∃ ATTRIB[2] EVENT[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ Time(ENTITY[1]) ∧
+  arrow(ENTITY[3]) ∧
+   is_like_comp(ATTRIB[2], ENTITY[3]) ∧ CONJ_and(flies(EVENT[5], ENTITY[1]), xxx(EVENT[4], ENTITY[1], ATTRIB[2])))
+
+# ::id 44_textbook_BUFFALO;NE
+# ::snt fruit flies like a banana .
+∃ EVENT[3] ENTITY[2] GROUP[1] (fruit_flies(GROUP[1]) ∧ banana(ENTITY[2]) ∧ like(EVENT[3], GROUP[1], ENTITY[2]))
+
+# ::id 45_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+∃ EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ man(ENTITY[1]) ∧
+  hill(ENTITY[3]) ∧
+   is_boy_on(ENTITY[2], ENTITY[3]) ∧
+    telescope(ENTITY[4]) ∧
+     past(EVENT[5]) ∧ saw(EVENT[5], ENTITY[1], ENTITY[2]) ∧ with(EVENT[5]) = ENTITY[4])
+
+# ::id 46_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ man(ENTITY[1]) ∧
+  telescope(ENTITY[4]) ∧
+   is_hill_with(ENTITY[3], ENTITY[4]) ∧
+    is_boy_on(ENTITY[2], ENTITY[3]) ∧ past(EVENT[5]) ∧ saw(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 47_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ man(ENTITY[1]) ∧
+  hill(ENTITY[3]) ∧
+   telescope(ENTITY[4]) ∧
+    is_boy_with(ENTITY[2], ENTITY[4]) ∧ is_boy_on(ENTITY[2], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ saw(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 48_textbook_BUFFALO;NE
+# ::snt If a farmer owns a donkey he beats it .
+∀ EVENT[3] ENTITY[2] PERSON[1] CND_If(farmer(PERSON[1]) ∧ donkey(ENTITY[2]) ∧ owns(EVENT[3], PERSON[1], ENTITY[2]),
+    ∃ REF1[5] PERSON[4] EVENT[6] (PERSON[4] = he{PERSON[1]} ∧ REF1[5] = it ∧ beats(EVENT[6], PERSON[4], REF1[5])))
+
+# ::id 49_textbook_BUFFALO;NE
+# ::snt Every farmer who owns a donkey beats it .
+∀ EVENT[4] ENTITY[3] ENTITY[1] ((donkey(ENTITY[3]) ∧ owns(EVENT[4], ENTITY[1], ENTITY[3]) ∧ farmer(ENTITY[1])) →
+ ∃ REF1[5] EVENT[6] (REF1[5] = it ∧ beats(EVENT[6], ENTITY[1], REF1[5])))
+
+# ::id 50_textbook_BUFFALO;NE
+# ::snt If we invite some philosopher , Max will be offended .
+∀ REF1[1] CND_If((REF1[1] = we ∧ SOME ENTITY[2] (philosopher(ENTITY[2]), ∃ EVENT[3] invite(EVENT[3], REF1[1], ENTITY[2]))), MD_will(∃ EVENT[4] be_offended(EVENT[4], ENTITY[Max])))
+
+# ::id 51_textbook_BUFFALO;NE
+# ::snt If we invite the philosopher , Max will be offended .
+∃ ENTITY[2] (
+ philosopher(ENTITY[2]) ∧
+  ∀ REF1[1] EVENT[3] CND_If((REF1[1] = we ∧ invite(EVENT[3], REF1[1], ENTITY[2])), MD_will(∃ EVENT[4] be_offended(EVENT[4], ENTITY[Max]))))
+
+# ::id 52_textbook_BUFFALO;NE
+# ::snt Only John expects that he will win .
+ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[John]),
+ ∃ REF1[3] EVENT[2] (REF1[3] = he ∧ expects(EVENT[2], ENTITY[1], MD_will(∃ EVENT[4] win(EVENT[4], REF1[3])))))
+
+# ::id 53_textbook_BUFFALO;NE
+# ::snt Only John expects to win .
+ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[John]), ∃ EVENT[3] EVENT[2] expects(EVENT[2], ENTITY[1], win(EVENT[3], ENTITY[1])))
+
+# ::id 54_textbook_BUFFALO;NE
+# ::snt Only John expects himself to win .
+ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[John]),
+ ∃ REF1[2] EVENT[4] EVENT[3] (REF1[2] = himself ∧ expects(EVENT[3], ENTITY[1], REF1[2], win(EVENT[4], REF1[2]))))
+
+# ::id 55_textbook_BUFFALO;NE
+# ::snt Only John expects him to win .
+ONLY ENTITY[1] (is_of(ENTITY[1], ENTITY[John]),
+ ∃ REF1[2] EVENT[4] EVENT[3] (REF1[2] = him ∧ expects(EVENT[3], ENTITY[1], REF1[2], win(EVENT[4], REF1[2]))))
+
+# ::id 56_textbook_BUFFALO;NE
+# ::snt Every wife thinks that only she respects her husband .
+∀ ENTITY[1] (wife(ENTITY[1]) →
+ ∃ REF1[4] EVENT[2] (
+  REF1[4] = she ∧
+   thinks(EVENT[2], ENTITY[1],
+    ONLY REF1[3] (is_of(REF1[3], REF1[4]),
+     ∃ REF2[6] EVENT[7] ENTITY[5] (REF2[6] = her ∧ is_husband_POS(ENTITY[5], REF2[6]) ∧ respects(EVENT[7], REF1[3], ENTITY[5]))))))
+
+# ::id 57_textbook_BUFFALO;NE
+# ::snt A collector did n't buy because she was influenced .
+∃ ENTITY[1] (
+ collector(ENTITY[1]) ∧
+  ¬ ∃ REF1[2] EVENT[3] EVENT[4] (
+        REF1[2] = she ∧
+         past(EVENT[3]) ∧
+          past(EVENT[4]) ∧ CRD_because(influenced(EVENT[3], _, REF1[2]), did_buy(EVENT[4], ENTITY[1]))))
+
+# ::id 58_textbook_BUFFALO;NE
+# ::snt A collector did n't buy because she was influenced .
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ collector(ENTITY[1]) ∧
+  REF1[2] = she ∧
+   past(EVENT[3]) ∧
+    CRD_because(influenced(EVENT[3], _, REF1[2]), ¬ ∃ EVENT[4] (past(EVENT[4]) ∧ did_buy(EVENT[4], ENTITY[1]))))
+
+# ::id 59_textbook_BUFFALO;NE
+# ::snt Because a collector was influenced she did n't buy .
+∃ REF1[3] EVENT[2] ENTITY[1] (
+ collector(ENTITY[1]) ∧
+  REF1[3] = she ∧
+   past(EVENT[2]) ∧
+    CRD_Because(influenced(EVENT[2], _, ENTITY[1]), ¬ ∃ EVENT[4] (past(EVENT[4]) ∧ did_buy(EVENT[4], REF1[3]))))
+
+# ::id 60_textbook_BUFFALO;NE
+# ::snt Who did Kim assure her that you would ask about her brother ?
+QUEST(∃ REF2[4] REF1[2] EVENT[3] ? ENTITY[1] (
+      REF1[2] = her ∧
+       REF2[4] = you ∧
+        past(EVENT[3]) ∧
+         did_assure(EVENT[3], ENTITY[Kim], REF1[2],
+          MD_would(∃ REF3[6] EVENT[7] ENTITY[5] (
+                REF3[6] = her ∧
+                 is_brother_POS(ENTITY[5], REF3[6]) ∧
+                  ask(EVENT[7], REF2[4], ENTITY[1]) ∧ about(EVENT[7]) = ENTITY[5])))))
+
+# ::id 61_textbook_BUFFALO;NE
+# ::snt More students flunked than thought they would flunk .
+MORE REF1[5] EVENT[4] DEGREE[2] GROUP[1] (
+ (REF1[5] = they ∧ thought(EVENT[4], DEGREE[2], MD_would(∃ EVENT[6] flunk(EVENT[6], REF1[5]))) ∧
+  is_students_than(GROUP[1], DEGREE[2]) ∧ past(EVENT[4])), ∃ EVENT[7] (past(EVENT[7]) ∧ flunked(EVENT[7], GROUP[1])))
+
+# ::id 62_textbook_BUFFALO;NE
+# ::snt More students flunked than they thought would flunk .
+MORE REF1[4] EVENT[5] DEGREE[2] GROUP[1] (
+ (REF1[4] = they ∧ thought(EVENT[5], REF1[4], MD_would(∃ EVENT[6] flunk(EVENT[6], DEGREE[2]))) ∧
+  is_students_than(GROUP[1], DEGREE[2]) ∧ past(EVENT[5])), ∃ EVENT[7] (past(EVENT[7]) ∧ flunked(EVENT[7], GROUP[1])))
+
+# ::id 63_textbook_BUFFALO;NE
+# ::snt Who did what to whom ?
+QUEST(∃ EVENT[4] ? ENTITY[3] ENTITY[2] ENTITY[1] (past(EVENT[4]) ∧ did(EVENT[4], ENTITY[1], ENTITY[2]) ∧ to(EVENT[4]) = ENTITY[3]))
+
+# ::id 64_textbook_BUFFALO;NE
+# ::snt This is the man .
+∃ EVENT[3] ENTITY[2] ENTITY[1] (man(ENTITY[2]) ∧ copula(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 65_textbook_BUFFALO;NE
+# ::snt This is the man whom the girl met .
+∃ EVENT[6] EVENT[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ girl(ENTITY[4]) ∧
+  met(EVENT[5], ENTITY[4], ENTITY[2]) ∧ man(ENTITY[2]) ∧
+   past(EVENT[5]) ∧ copula(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 66_textbook_BUFFALO;NE
+# ::snt This is the man whom the police said the girl met .
+∃ EVENT[8] EVENT[7] EVENT[5] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ police(ENTITY[4]) ∧
+  girl(ENTITY[6]) ∧
+   said(EVENT[5], ENTITY[4], met(EVENT[7], ENTITY[6], ENTITY[2])) ∧ man(ENTITY[2]) ∧
+    is_before(EVENT[7], EVENT[5]) ∧ past(EVENT[5]) ∧ copula(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 67_textbook_BUFFALO;NE
+# ::snt This is the man whom the police said Bill believes the girl met .
+∃ EVENT[9] EVENT[8] EVENT[6] EVENT[5] ENTITY[7] ENTITY[4] ENTITY[2] ENTITY[1] (
+ police(ENTITY[4]) ∧
+  girl(ENTITY[7]) ∧
+   said(EVENT[5], ENTITY[4], believes(EVENT[6], ENTITY[Bill], met(EVENT[8], ENTITY[7], ENTITY[2]))) ∧
+    man(ENTITY[2]) ∧
+    is_before(EVENT[8], EVENT[6]) ∧ past(EVENT[5]) ∧ copula(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 68_textbook_BUFFALO;NE
+# ::snt This is the man whom John said Bill believes Mary told Sam that I thought I had met .
+∃ REF2[9] REF1[7] EVENT[11] EVENT[10] EVENT[8] EVENT[6] EVENT[5] EVENT[4] ENTITY[2] ENTITY[1] (
+ REF1[7] = i ∧
+  REF2[9] = i ∧
+   said(EVENT[4], ENTITY[John],
+    believes(EVENT[5], ENTITY[Bill],
+     told(EVENT[6], ENTITY[Mary], ENTITY[Sam], thought(EVENT[8], REF1[7], had_met(EVENT[10], REF2[9], ENTITY[2]))))) ∧
+    man(ENTITY[2]) ∧
+    is_before(EVENT[10], EVENT[8]) ∧
+     is_before(EVENT[8], EVENT[6]) ∧
+      is_before(EVENT[6], EVENT[5]) ∧ past(EVENT[4]) ∧ copula(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 69_textbook_BUFFALO;NE
+# ::snt John wrote the book a chapter of which Mary proofread .
+∃ EVENT[5] EVENT[4] ENTITY[2] ENTITY[1] (
+ is_chapter_of(ENTITY[2], ENTITY[1]) ∧
+  proofread(EVENT[4], ENTITY[Mary], ENTITY[2]) ∧ book(ENTITY[1]) ∧
+   past(EVENT[4]) ∧ past(EVENT[5]) ∧ wrote(EVENT[5], ENTITY[John], ENTITY[1]))
+
+# ::id 70_textbook_BUFFALO;NE
+# ::snt John wrote the book which Mary proofread a chapter of .
+∃ EVENT[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ is_chapter_of(ENTITY[3], ENTITY[1]) ∧
+  proofread(EVENT[4], ENTITY[Mary], ENTITY[3]) ∧ book(ENTITY[1]) ∧
+   past(EVENT[4]) ∧ past(EVENT[5]) ∧ wrote(EVENT[5], ENTITY[John], ENTITY[1]))
+
+# ::id 71_textbook_BUFFALO;NE
+# ::snt John wrote the book of which Mary proofread a chapter .
+∃ EVENT[5] EVENT[4] ENTITY[2] ENTITY[1] (
+ is_chapter_of(ENTITY[2], ENTITY[1]) ∧
+  proofread(EVENT[4], ENTITY[Mary], ENTITY[2]) ∧ book(ENTITY[1]) ∧
+   past(EVENT[4]) ∧ past(EVENT[5]) ∧ wrote(EVENT[5], ENTITY[John], ENTITY[1]))
+
+# ::id 72_textbook_BUFFALO;NE
+# ::snt This book , I asked Bill to get his students to read .
+∃ REF2[5] REF1[2] EVENT[7] EVENT[6] EVENT[3] GROUP[4] ENTITY[1] (
+ book(ENTITY[1]) ∧
+  REF1[2] = i ∧
+   REF2[5] = his ∧
+    is_students_POS(GROUP[4], REF2[5]) ∧
+     past(EVENT[3]) ∧
+      asked(EVENT[3], REF1[2], ENTITY[Bill], get(EVENT[6], ENTITY[Bill], GROUP[4], read(EVENT[7], GROUP[4], ENTITY[1]))))
+
+# ::id 73_textbook_BUFFALO;NE
+# ::snt As for this book , I think you should read it .
+∃ REF2[4] REF1[2] EVENT[3] ENTITY[1] (
+ book(ENTITY[1]) ∧
+  REF1[2] = i ∧
+   REF2[4] = you ∧
+    think(EVENT[3], REF1[2], MD_should(∃ REF3[5] EVENT[6] (REF3[5] = it ∧ read(EVENT[6], REF2[4], REF3[5])))) ∧
+     As_for(EVENT[3]) = ENTITY[1])
+
+# ::id 74_textbook_BUFFALO;NE
+# ::snt It is this book that I asked Bill to get his students to read .
+∃ REF2[7] REF1[4] EVENT[9] EVENT[8] EVENT[5] EVENT[10] GROUP[6] ENTITY[2] ENTITY[1] (
+ book(ENTITY[1]) ∧
+  REF1[4] = i ∧
+   REF2[7] = his ∧
+    is_students_POS(GROUP[6], REF2[7]) ∧
+     asked(EVENT[5], REF1[4], ENTITY[Bill],
+      get(EVENT[8], ENTITY[Bill], GROUP[6], read(EVENT[9], GROUP[6], ENTITY[2]))) ∧
+      past(EVENT[5]) ∧ copula(EVENT[10], ENTITY[2], ENTITY[1]))
+
+# ::id 75_textbook_BUFFALO;NE
+# ::snt John deliberately did n't touch Bob .
+∃ SITUATION[2] (ADV_deliberately(SITUATION[2]) ∧ is_FACT_THAT(SITUATION[2], ¬ ∃ EVENT[1] (past(EVENT[1]) ∧ did_touch(EVENT[1], ENTITY[John], ENTITY[Bob]))))
+
+# ::id 76_textbook_BUFFALO;NE
+# ::snt John did n't deliberately touch Bob .
+¬ ∃ EVENT[1] (ADV_deliberately(EVENT[1]) ∧ past(EVENT[1]) ∧ did_touch(EVENT[1], ENTITY[John], ENTITY[Bob]))
+
+# ::id 77_textbook_BUFFALO;NE
+# ::snt I do n't like enchiladas .
+∃ REF1[1] (REF1[1] = i ∧ ¬ ∃ EVENT[3] GROUP[2] (enchiladas(GROUP[2]) ∧ do_like(EVENT[3], REF1[1], GROUP[2])))
+
+# ::id 78_textbook_BUFFALO;NE
+# ::snt I do n't like the taste of enchiladas .
+∃ REF1[1] GROUP[3] ENTITY[2] (
+ enchiladas(GROUP[3]) ∧
+  is_taste_of(ENTITY[2], GROUP[3]) ∧ REF1[1] = i ∧ ¬ ∃ EVENT[4] do_like(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 79_textbook_BUFFALO;NE
+# ::snt Every afternoon Mr. Vinken and a lawyer sign papers .
+∀ TIME[1] (afternoon(TIME[1]) →
+ ∃ EVENT[5] GROUP[4] GROUP[2] (
+  is_element_of(ENTITY[Mr.Vinken], GROUP[2]) ∧ ∃ ENTITY[3] (lawyer(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   papers(GROUP[4]) ∧ sign(EVENT[5], GROUP[2], GROUP[4]) ∧ is_contained_in(TMP(EVENT[5]), TIME[1])))
+
+# ::id 80_textbook_BUFFALO;NE
+# ::snt Every afternoon Mr. Vinken and the lawyer sign papers .
+∃ ENTITY[3] (
+ lawyer(ENTITY[3]) ∧
+  ∀ TIME[1] (afternoon(TIME[1]) →
+   ∃ EVENT[5] GROUP[4] GROUP[2] (
+    is_element_of(ENTITY[Mr.Vinken], GROUP[2]) ∧ is_element_of(ENTITY[3], GROUP[2]) ∧
+     papers(GROUP[4]) ∧ sign(EVENT[5], GROUP[2], GROUP[4]) ∧ is_contained_in(TMP(EVENT[5]), TIME[1]))))
+
+# ::id 81_textbook_BUFFALO;NE
+# ::snt A doctor will make sure that every patient recovers .
+∃ ENTITY[1] (
+ doctor(ENTITY[1]) ∧
+  MD_will(∃ ATTRIB[2] EVENT[5] (
+        is_sure_THAT(ATTRIB[2], ∀ ENTITY[3] (patient(ENTITY[3]) → ∃ EVENT[4] recovers(EVENT[4], ENTITY[3]))) ∧
+         make(EVENT[5], ENTITY[1], ATTRIB[2]))))
+
+# ::id 82_textbook_BUFFALO;NE
+# ::snt A doctor will make sure that every patient recovers .
+∀ ENTITY[1] (patient(ENTITY[1]) →
+ ∃ ENTITY[2] (
+  doctor(ENTITY[2]) ∧
+   MD_will(∃ ATTRIB[3] EVENT[4] EVENT[5] (is_sure_THAT(ATTRIB[3], recovers(EVENT[4], ENTITY[1])) ∧ make(EVENT[5], ENTITY[2], ATTRIB[3])))))
+
+# ::id 83_textbook_BUFFALO;NE
+# ::snt " Come on , " Nasha said . " Up beside me . "
+∃ EVENT[1] (
+ past(EVENT[1]) ∧
+  said(EVENT[1], ENTITY[Nasha],
+   IMPERATIVE(∃ REF1[2] EVENT[3] (REF1[2] = me ∧ come_on(EVENT[3]) ∧ Up_beside(EVENT[3]) = REF1[2]))))
+
+# ::id 84_textbook_BUFFALO;NE
+# ::snt Had Mary but known she would never have trusted Jane .
+∀ EVENT[1] ((but(EVENT[1]) ∧ past(EVENT[1]) ∧ had_known(EVENT[1], ENTITY[Mary])) →
+ ∃ REF1[3] (REF1[3] = she ∧ MD_would(∃ EVENT[4] (TMP_never(EVENT[4]) ∧ have_trusted(EVENT[4], REF1[3], ENTITY[Jane])))))
+
+# ::id 85_textbook_BUFFALO;NE
+# ::snt Had she but known Mary would never have trusted Jane .
+∀ REF1[1] EVENT[2] ((REF1[1] = she ∧ but(EVENT[2]) ∧ past(EVENT[2]) ∧ had_known(EVENT[2], REF1[1])) →
+ MD_would(∃ EVENT[4] (TMP_never(EVENT[4]) ∧ have_trusted(EVENT[4], ENTITY[Mary], ENTITY[Jane]))))
+
+# ::id 86_textbook_BUFFALO;NE
+# ::snt Mary is easy to please .
+∃ ATTRIB[1] EVENT[3] EVENT[4] (easy(please(EVENT[3], _, ATTRIB[1])) ∧ copula(EVENT[4], ENTITY[Mary], ATTRIB[1]))
+
+# ::id 87_textbook_BUFFALO;NE
+# ::snt The sonata is easy to play on this violin .
+∃ ATTRIB[2] EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ sonata(ENTITY[1]) ∧
+  violin(ENTITY[3]) ∧
+   is_easy_to(ATTRIB[2], play(EVENT[4]) ∧ on(EVENT[4]) = ENTITY[3]) ∧ copula(EVENT[5], ENTITY[1], ATTRIB[2]))
+
+# ::id 88_textbook_BUFFALO;NE
+# ::snt The violin is easy to play sonatas on .
+∃ ATTRIB[2] EVENT[5] EVENT[6] GROUP[4] ENTITY[1] (
+ violin(ENTITY[1]) ∧
+  sonatas(GROUP[4]) ∧
+   easy(play(EVENT[5], _, GROUP[4]) ∧ on(EVENT[5]) = ATTRIB[2]) ∧
+    copula(EVENT[6], ENTITY[1], ATTRIB[2]))
+
+# ::id 89_textbook_BUFFALO;NE
+# ::snt What violin is the sonata easy to play on .
+∃ ENTITY[2] (
+ sonata(ENTITY[2]) ∧
+  QUEST(∃ ATTRIB[3] EVENT[4] EVENT[5] ? ENTITY[1] (
+        violin(ENTITY[1]) ∧
+         is_easy_to(ATTRIB[3], play(EVENT[4]) ∧ on(EVENT[4]) = ENTITY[1]) ∧
+          copula(EVENT[5], ENTITY[2], ATTRIB[3]))))
+
+# ::id 90_textbook_BUFFALO;NE
+# ::snt It is undoubtedly difficult for them to understand since the US joined later , quickly assumed the leadership role and has espoused a hard core complete free trade policy until just recently , now that TAFTA has emerged as the focal point .
+∃ SITUATION[22] ATTRIB[15] ATTRIB[14] SITUATION[6] REF2[5] ATTRIB[2] REF1[1] ATTRIB[19] EVENT[4] EVENT[8] EVENT[11] EVENT[16] EVENT[20] EVENT[21] ENTITY[13] ENTITY[17] ENTITY[10] ENTITY[7] ENTITY[18] (
+ US(ENTITY[7]) ∧
+  leadership_role(ENTITY[10]) ∧
+   focal(ATTRIB[19]) ∧
+    is_point_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧
+     REF1[1] = it ∧
+      undoubtedly_difficult(understand(EVENT[4], _, ATTRIB[2])) ∧
+       REF2[5] = them ∧
+        hard(ATTRIB[14]) ∧
+         is_core_complete_free_trade_policy_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+          recently(ATTRIB[15]) ∧ just(ATTRIB[15]) ∧
+           is_FACT_THAT(SITUATION[6],
+            CONJ_and(joined(EVENT[8], ENTITY[7]), assumed(EVENT[11], ENTITY[7], ENTITY[10]),
+             has_espoused(EVENT[16], ENTITY[7], ENTITY[13]) ∧ until(EVENT[16]) = ATTRIB[15])) ∧
+            TAFTA(ENTITY[17]) ∧
+             ADV_later(EVENT[8]) ∧
+              past(EVENT[8]) ∧
+               ADV_quickly(EVENT[11]) ∧
+                past(EVENT[11]) ∧
+                 is_TMP_now_THAT(SITUATION[22], has_emerged(EVENT[20], ENTITY[17]) ∧ as(EVENT[20]) = ENTITY[18]) ∧
+                  is_FACT_THAT(SITUATION[22],
+                   copula(EVENT[21], REF1[1], ATTRIB[2]) ∧ since(EVENT[21]) = SITUATION[6] ∧
+                    for(EVENT[21]) = REF2[5]))
+
+# ::id 91_textbook_BUFFALO;NE
+# ::snt John left in his car , and so did Bill .
+∃ REF2[5] REF1[2] EVENT[3] EVENT[6] ENTITY[1] ENTITY[4] (
+ REF1[2] = his ∧
+  is_car_POS(ENTITY[1], REF1[2]) ∧
+   REF2[5] = his ∧
+    is_car_POS(ENTITY[4], REF2[5]) ∧
+     past(EVENT[3]) ∧
+      ADV_so(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        CONJ_and(left(EVENT[3], ENTITY[John]) ∧ in(EVENT[3]) = ENTITY[1],
+         did_left(EVENT[6], ENTITY[Bill]) ∧ in(EVENT[6]) = ENTITY[4]))
+
+# ::id 92_textbook_BUFFALO;NE
+# ::snt The officers had n't stationed a man with a weapon in the one spot where it could be fired .
+∃ REF1[6] ENTITY[4] GROUP[1] (
+ officers(GROUP[1]) ∧
+  REF1[6] = it ∧
+   (CD_one(ENTITY[4]), is_FACT_THAT(MD_could(∃ EVENT[7] fired(EVENT[7], _, REF1[6]))) ∧ spot(ENTITY[4])) ∧
+    ¬ ∃ SITUATION[8] EVENT[9] ENTITY[3] ENTITY[2] (
+          weapon(ENTITY[3]) ∧
+           is_man_with(ENTITY[2], ENTITY[3]) ∧
+            is_LOC(SITUATION[8], ENTITY[4]) ∧
+             past(EVENT[9]) ∧ had_stationed(EVENT[9], GROUP[1], ENTITY[2]) ∧ in(EVENT[9]) = ENTITY[4]))
+
+# ::id 93_textbook_BUFFALO;NE
+# ::snt Every woman who leaves her husband eventually gives him a second chance .
+∀ REF1[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ (REF1[4] = her ∧ is_husband_POS(ENTITY[3], REF1[4]) ∧
+  leaves(EVENT[5], ENTITY[1], ENTITY[3]) ∧ woman(ENTITY[1])) →
+ ∃ ATTRIB[8] REF2[6] EVENT[9] ENTITY[7] (
+  REF2[6] = him ∧
+   second(ATTRIB[8]) ∧
+    is_chance_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ ADV_eventually(EVENT[9]) ∧ gives(EVENT[9], ENTITY[1], ENTITY[7], REF2[6])))
+
+# ::id 94_textbook_BUFFALO;NE
+# ::snt The pilot that shot at it hit the MIG that chased him .
+∃ REF3[6] REF2[8] REF1[3] EVENT[7] EVENT[9] EVENT[4] ENTITY[1] (
+ REF1[3] = it ∧
+  shot(EVENT[4], ENTITY[1]) ∧ at(EVENT[4]) = REF1[3] ∧ pilot(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    REF2[8] = the ∧
+     MIG(REF2[8]) ∧
+      REF3[6] = him ∧
+       chased(EVENT[7], REF2[8], REF3[6]) ∧
+        past(EVENT[7]) ∧ past(EVENT[9]) ∧ hit(EVENT[9], ENTITY[1], REF2[8]))
+
+# ::id 95_textbook_BUFFALO;NE
+# ::snt John wants it to become sunny tomorrow .
+∃ ATTRIB[2] EVENT[4] EVENT[1] TIME[3] (
+ sunny(ATTRIB[2]) ∧
+  tomorrow(TIME[3]) ∧
+   wants(EVENT[1], ENTITY[John], become(EVENT[4], _, ATTRIB[2]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3])))
+
+# ::id 96_textbook_BUFFALO;NE
+# ::snt John wants to become sunny tomorrow .
+∃ ATTRIB[2] EVENT[4] EVENT[1] TIME[3] (
+ sunny(ATTRIB[2]) ∧
+  tomorrow(TIME[3]) ∧
+   wants(EVENT[1], ENTITY[John], become(EVENT[4], ENTITY[John], ATTRIB[2]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3])))
+
+# ::id 97_textbook_BUFFALO;NE
+# ::snt There 's a bank that they all bank with .
+∃ REF1[3] EVENT[4] EVENT[5] ENTITY[1] (
+ REF1[3] = they ∧
+  bank(EVENT[4], REF1[3]) ∧ with(EVENT[4]) = ENTITY[1] ∧ bank(ENTITY[1]) ∧
+   copula(EVENT[5], ENTITY[1]))
+
+# ::id 98_textbook_BUFFALO;SHELLS;NE
+# ::snt She sells sea-shells on the sea shore ;
+∃ REF1[1] EVENT[4] GROUP[2] ENTITY[3] (
+ sea_shore(ENTITY[3]) ∧
+  REF1[1] = she ∧
+   sea-shells(GROUP[2]) ∧ sells(EVENT[4], REF1[1], GROUP[2]) ∧ on(EVENT[4]) = ENTITY[3])
+
+# ::id 99_textbook_BUFFALO;SHELLS;NE
+# ::snt The shells that she sells are sea-shells
+∃ REF1[3] EVENT[6] GROUP[5] EVENT[4] GROUP[1] (
+ REF1[3] = she ∧
+  sells(EVENT[4], REF1[3], GROUP[1]) ∧ shells(GROUP[1]) ∧
+   sea-shells(GROUP[5]) ∧ copula(EVENT[6], GROUP[1], GROUP[5]))
+
+# ::id 100_textbook_BUFFALO;SHELLS;NE
+# ::snt I 'm sure .
+∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = i ∧ sure(ATTRIB[2]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2]))
+
+# ::id 101_textbook_BUFFALO;SHELLS;NE
+# ::snt So if she sells sea-shells on the sea shore , I 'm sure that the shells are sea-shore shells .
+∃ SITUATION[11] ENTITY[3] group[7] (
+ sea_shore(ENTITY[3]) ∧
+  shells(group[7]) ∧
+   ADV_so(SITUATION[11]) ∧
+    is_FACT_THAT(SITUATION[11],
+     ∀ REF1[1] EVENT[4] GROUP[2] CND_if(
+         REF1[1] = she ∧ sea-shells(GROUP[2]) ∧
+          sells(EVENT[4], REF1[1], GROUP[2]) ∧ on(EVENT[4]) = ENTITY[3],
+         ∃ ATTRIB[6] REF2[5] EVENT[9] EVENT[10] GROUP[8] (
+          REF2[5] = i ∧
+           sea-shore_shells(GROUP[8]) ∧
+            is_sure_THAT(ATTRIB[6], copula(EVENT[9], group[7], GROUP[8])) ∧
+             copula(EVENT[10], REF2[5], ATTRIB[6])))))
+
+# ::id 102_textbook_BUFFALO;BETTY;NE
+# ::snt Betty Botter bought some butter ,
+SOME ENTITY[1] (butter(ENTITY[1]), ∃ EVENT[2] (past(EVENT[2]) ∧ bought(EVENT[2], ENTITY[Betty_Botter], ENTITY[1])))
+
+# ::id 103_textbook_BUFFALO;BETTY;NE
+# ::snt But , she said , this butter 's bitter ;
+∃ ATTRIB[4] REF1[1] EVENT[5] EVENT[2] ENTITY[3] (
+ butter(ENTITY[3]) ∧
+  REF1[1] = she ∧
+   bitter(ATTRIB[4]) ∧ past(EVENT[2]) ∧ said(EVENT[2], REF1[1], copula(EVENT[5], ENTITY[3], ATTRIB[4])))
+
+# ::id 104_textbook_BUFFALO;BETTY;NE
+# ::snt If I put it in my batter , It will make my batter bitter ,
+∀ REF3[4] REF2[2] REF1[1] EVENT[5] ENTITY[3] CND_If(
+    REF1[1] = i ∧ REF2[2] = it ∧ REF3[4] = my ∧ is_batter_POS(ENTITY[3], REF3[4]) ∧
+     past(EVENT[5]) ∧ put(EVENT[5], REF1[1], REF2[2]) ∧ in(EVENT[5]) = ENTITY[3],
+    ∃ REF4[6] (
+     REF4[6] = it ∧
+      MD_will(∃ ATTRIB[10] REF5[9] EVENT[11] EVENT[7] ENTITY[8] (
+            REF5[9] = my ∧
+             is_batter_POS(ENTITY[8], REF5[9]) ∧
+              bitter(ATTRIB[10]) ∧ make(EVENT[7], REF4[6], xxx(EVENT[11], ENTITY[8], ATTRIB[10]))))))
+
+# ::id 105_textbook_BUFFALO;BETTY;NE
+# ::snt But a bit of better butter Will make my batter better .
+∃ ATTRIB[3] ENTITY[2] ENTITY[1] (
+ better(ATTRIB[3]) ∧
+  is_butter_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_bit_of(ENTITY[1], ENTITY[2]) ∧
+    MD_will(∃ ATTRIB[7] REF1[6] EVENT[8] EVENT[4] ENTITY[5] (
+          REF1[6] = my ∧
+           is_batter_POS(ENTITY[5], REF1[6]) ∧
+            better(ATTRIB[7]) ∧ make(EVENT[4], ENTITY[1], xxx(EVENT[8], ENTITY[5], ATTRIB[7])))))
+
+# ::id 106_textbook_BUFFALO;BETTY;NE
+# ::snt So she bought a bit of butter Better than her bitter butter ,
+∃ ATTRIB[7] REF2[6] ATTRIB[4] REF1[1] EVENT[8] ENTITY[5] ENTITY[3] ENTITY[2] (
+ REF1[1] = she ∧
+  butter(ENTITY[3]) ∧
+   REF2[6] = her ∧
+    bitter(ATTRIB[7]) ∧
+     is_butter_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_butter_POS(ENTITY[5], REF2[6]) ∧
+      is_better_than(ATTRIB[4], ENTITY[5]) ∧
+       is_bit_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_bit_of(ENTITY[2], ENTITY[3]) ∧
+        ADV_so(EVENT[8]) ∧ past(EVENT[8]) ∧ bought(EVENT[8], REF1[1], ENTITY[2]))
+
+# ::id 107_textbook_BUFFALO;BETTY;NE
+# ::snt And she put it in her batter ,
+∃ REF3[4] REF2[2] REF1[1] EVENT[5] ENTITY[3] (
+ REF1[1] = she ∧
+  REF2[2] = it ∧
+   REF3[4] = her ∧
+    is_batter_POS(ENTITY[3], REF3[4]) ∧
+     past(EVENT[5]) ∧ put(EVENT[5], REF1[1], REF2[2]) ∧ in(EVENT[5]) = ENTITY[3])
+
+# ::id 108_textbook_BUFFALO;BETTY;NE
+# ::snt And it made her batter better ,
+∃ ATTRIB[5] REF2[4] REF1[1] EVENT[6] EVENT[2] ENTITY[3] (
+ REF1[1] = it ∧
+  REF2[4] = her ∧
+   is_batter_POS(ENTITY[3], REF2[4]) ∧
+    better(ATTRIB[5]) ∧ past(EVENT[2]) ∧ made(EVENT[2], REF1[1], xxx(EVENT[6], ENTITY[3], ATTRIB[5])))
+
+# ::id 109_textbook_BUFFALO;BETTY;NE
+# ::snt So 't was better Betty Botter Bought a bit of better butter .
+∃ SITUATION[8] ATTRIB[5] ATTRIB[2] REF1[1] EVENT[6] EVENT[7] ENTITY[4] ENTITY[3] (
+ REF1[1] = 't ∧
+  better(ATTRIB[5]) ∧
+   is_butter_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    is_bit_of(ENTITY[3], ENTITY[4]) ∧
+     is_better_THAT(ATTRIB[2], bought(EVENT[6], ENTITY[Betty_Botter], ENTITY[3])) ∧
+      ADV_so(SITUATION[8]) ∧
+       past(EVENT[6]) ∧ past(EVENT[7]) ∧ is_FACT_THAT(SITUATION[8], copula(EVENT[7], REF1[1], ATTRIB[2])))
+
+# ::id 110_textbook_BUFFALO;postal_edge_chap1_ex65a;NE
+# ::snt Rhonda may praise herself and Claudia certainly will praise herself .
+∃ SITUATION[5] (
+ ADV_certainly(SITUATION[5]) ∧
+  CONJ_and(MD_may(∃ REF1[1] EVENT[2] (REF1[1] = herself ∧ praise(EVENT[2], ENTITY[Rhonda], REF1[1]))), is_FACT_THAT(SITUATION[5], MD_will(∃ REF2[3] EVENT[4] (REF2[3] = herself ∧ praise(EVENT[4], ENTITY[Claudia], REF2[3]))))))
+
+# ::id 111_textbook_BUFFALO;postal_edge_chap1_ex65b;NE
+# ::snt Rhonda may praise herself and Claudia certainly will .
+∃ SITUATION[5] (
+ ADV_certainly(SITUATION[5]) ∧
+  CONJ_and(MD_may(∃ REF1[1] EVENT[2] (REF1[1] = herself ∧ praise(EVENT[2], ENTITY[Rhonda], REF1[1]))), is_FACT_THAT(SITUATION[5], MD_will(∃ REF2[3] EVENT[4] (REF2[3] = herself ∧ praise(EVENT[4], ENTITY[Claudia], REF2[3]))))))
+
+# ::id 112_textbook_BUFFALO;postal_edge_chap1_ex65c;NE
+# ::snt Rhonda may and Claudia certainly will praise herself .
+∃ SITUATION[5] (
+ ADV_certainly(SITUATION[5]) ∧
+  CONJ_and(MD_may(∃ REF1[1] EVENT[2] (REF1[1] = herself ∧ praise(EVENT[2], ENTITY[Rhonda], REF1[1]))), is_FACT_THAT(SITUATION[5], MD_will(∃ REF2[3] EVENT[4] (REF2[3] = herself ∧ praise(EVENT[4], ENTITY[Claudia], REF2[3]))))))
+
+# ::id 113_textbook_BUFFALO;postal_edge_chap1_ex66a;NE
+# ::snt Rhonda may get Tom to praise her and Claudia certainly will get Tom to praise her .
+∃ SITUATION[7] (
+ ADV_certainly(SITUATION[7]) ∧
+  CONJ_and(MD_may(∃ REF1[2] EVENT[3] EVENT[1] (
+             REF1[2] = her ∧
+              get(EVENT[1], ENTITY[Rhonda], ENTITY[Tom], praise(EVENT[3], ENTITY[Tom], REF1[2])))),
+   is_FACT_THAT(SITUATION[7],
+    MD_will(∃ REF2[5] EVENT[6] EVENT[4] (
+          REF2[5] = her ∧
+           get(EVENT[4], ENTITY[Claudia], ENTITY[Tom], praise(EVENT[6], ENTITY[Tom], REF2[5])))))))
+
+# ::id 114_textbook_BUFFALO;postal_edge_chap1_ex66b;NE
+# ::snt Rhonda may get Tom to praise her and Claudia certainly will .
+∃ SITUATION[7] (
+ ADV_certainly(SITUATION[7]) ∧
+  CONJ_and(MD_may(∃ REF1[2] EVENT[3] EVENT[1] (
+             REF1[2] = her ∧
+              get(EVENT[1], ENTITY[Rhonda], ENTITY[Tom], praise(EVENT[3], ENTITY[Tom], REF1[2])))),
+   is_FACT_THAT(SITUATION[7],
+    MD_will(∃ REF2[5] EVENT[6] EVENT[4] (
+          REF2[5] = her ∧
+           get(EVENT[4], ENTITY[Claudia], ENTITY[Tom], praise(EVENT[6], ENTITY[Tom], REF2[5])))))))
+
+# ::id 115_textbook_BUFFALO;postal_edge_chap1_ex66c;NE
+# ::snt Rhonda may and Claudia certainly will get Tom to praise her .
+∃ SITUATION[7] (
+ ADV_certainly(SITUATION[7]) ∧
+  CONJ_and(MD_may(∃ REF1[2] EVENT[3] EVENT[1] (
+             REF1[2] = her ∧
+              get(EVENT[1], ENTITY[Rhonda], ENTITY[Tom], praise(EVENT[3], ENTITY[Tom], REF1[2])))),
+   is_FACT_THAT(SITUATION[7],
+    MD_will(∃ REF2[5] EVENT[6] EVENT[4] (
+          REF2[5] = her ∧
+           get(EVENT[4], ENTITY[Claudia], ENTITY[Tom], praise(EVENT[6], ENTITY[Tom], REF2[5])))))))
+
+# ::id 116_textbook_BUFFALO;takmi;NE
+# ::snt The straw was peeled off from the juice pack .
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ straw(ENTITY[1]) ∧
+  juice_pack(ENTITY[2]) ∧
+   past(EVENT[3]) ∧ peeled_off(EVENT[3], _, ENTITY[1]) ∧ from(EVENT[3]) = ENTITY[2])
+
+# ::id 117_textbook_BUFFALO;takmi;NE
+# ::snt I got some ice cream for my children , but there was something like a piece of thread inside the cup .
+∃ REF1[1] ENTITY[10] (
+ cup(ENTITY[10]) ∧
+  REF1[1] = i ∧
+   CONJ_but(SOME ENTITY[2] (ice_cream(ENTITY[2]),
+         ∃ REF2[4] EVENT[5] GROUP[3] (
+          REF2[4] = my ∧
+           is_children_POS(GROUP[3], REF2[4]) ∧
+            past(EVENT[5]) ∧ got(EVENT[5], REF1[1], ENTITY[2]) ∧ for(EVENT[5]) = GROUP[3])),
+    SOME ATTRIB[7] ENTITY[9] ENTITY[8] ENTITY[6] (
+     (thread(ENTITY[9]) ∧ is_piece_of(ENTITY[8], ENTITY[9]) ∧ is_like_comp(ATTRIB[7], ENTITY[8]) ∧
+      is_thing_ATTRIBUTE(ENTITY[6], ATTRIB[7])),
+     ∃ EVENT[11] (past(EVENT[11]) ∧ copula(EVENT[11], ENTITY[6]) ∧ inside(EVENT[11]) = ENTITY[10]))))
+
+# ::id 118_textbook_BUFFALO;takmi;NE
+# ::snt I could only find 11 cups in the 12-pack .
+∃ REF1[2] GROUP[1] ENTITY[4] (
+ 12-pack(ENTITY[4]) ∧
+  (CD_11(GROUP[1]), cups(GROUP[1])) ∧
+   REF1[2] = i ∧
+    MD_could(∃ EVENT[5] ONLY ENTITY[3] (is_element_of(ENTITY[3], GROUP[1]),
+          find(EVENT[5], REF1[2], ENTITY[3]) ∧ in(EVENT[5]) = ENTITY[4])))
+
+# ::id 119_textbook_BUFFALO;takmi;NE
+# ::snt There was a stain on the package that seemed to be caused by a leak .
+∃ EVENT[6] EVENT[4] EVENT[7] ENTITY[5] ENTITY[1] ENTITY[2] (
+ package(ENTITY[2]) ∧
+  leak(ENTITY[5]) ∧
+   seemed(EVENT[4], ENTITY[1], caused(EVENT[6], ENTITY[5], ENTITY[1])) ∧ is_stain_on(ENTITY[1], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ past(EVENT[7]) ∧ copula(EVENT[7], ENTITY[1]))
+
+# ::id 120_textbook_BUFFALO;takmi;NE
+# ::snt Is it safe to drink ?
+QUEST(∃ ATTRIB[3] SITUATION[1] EVENT[2] EVENT[4] (is*RIGHT*-FACT_THAT(SITUATION[1], drink(EVENT[2])) ∧ safe(ATTRIB[3]) ∧ copula(EVENT[4], SITUATION[1], ATTRIB[3])))
+
+# ::id 121_textbook_BUFFALO;takmi;NE
+# ::snt I love the ads for the new milk chocolate .
+∃ REF1[1] ATTRIB[4] EVENT[5] ENTITY[3] GROUP[2] (
+ new(ATTRIB[4]) ∧
+  is_milk_chocolate_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_ads_for(GROUP[2], ENTITY[3]) ∧ REF1[1] = i ∧ love(EVENT[5], REF1[1], GROUP[2]))
+
+# ::id 122_textbook_BUFFALO;takmi;NE
+# ::snt Could you tell me the name of the actor in the commercial ?
+∃ ENTITY[5] ENTITY[4] ENTITY[3] (
+ commercial(ENTITY[5]) ∧
+  is_actor_in(ENTITY[4], ENTITY[5]) ∧
+   is_name_of(ENTITY[3], ENTITY[4]) ∧
+    QUEST(MD_could(∃ REF2[2] REF1[1] EVENT[6] (
+               REF1[1] = you ∧
+                REF2[2] = me ∧ tell(EVENT[6], REF1[1], ENTITY[3], REF2[2])))))
+
+# ::id 123_textbook_BUFFALO;takmi;NE
+# ::snt The cup looked like it was already opened .
+∃ REF1[3] ATTRIB[2] EVENT[4] EVENT[6] ENTITY[1] (
+ cup(ENTITY[1]) ∧
+  REF1[3] = it ∧
+   is_like_THAT(ATTRIB[2], opened(EVENT[4], _, REF1[3])) ∧
+    ADV_already(EVENT[4]) ∧ past(EVENT[4]) ∧ past(EVENT[6]) ∧ looked(EVENT[6], ENTITY[1], ATTRIB[2]))
+
+# ::id 124_textbook_BUFFALO;takmi;NE
+# ::snt Is it safe ?
+QUEST(∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = it ∧ safe(ATTRIB[2]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2])))
+
+# ::id 125_textbook_BUFFALO;takmi;NE
+# ::snt It was a little more sour than when I ate it before .
+∃ REF3[6] REF2[5] ATTRIB[2] REF1[1] EVENT[7] EVENT[10] TIME[3] (
+ REF1[1] = it ∧
+  msr_tolower_a_little_more_sour(ATTRIB[2]) ∧
+   REF2[5] = i ∧
+    REF3[6] = it ∧
+     ate(EVENT[7], REF2[5], REF3[6]) ∧
+      is_TMP(EVENT[7], TIME[3]) ∧
+       ADV_before(EVENT[7]) ∧
+        past(EVENT[7]) ∧
+         past(EVENT[10]) ∧ copula(EVENT[10], REF1[1], ATTRIB[2]) ∧ than(EVENT[10]) = TIME[3])
+
+# ::id 126_textbook_BUFFALO;takmi;NE
+# ::snt I like to buy juice made by ABCDE confectionary company , but this time there was some juice leaking from the bottom .
+∃ REF1[1] EVENT[6] EVENT[7] EVENT[2] ENTITY[5] ENTITY[3] ENTITY[11] TIME[8] (
+ time(TIME[8]) ∧
+  bottom(ENTITY[11]) ∧
+   REF1[1] = i ∧
+    ABCDE_confectionary_company(ENTITY[5]) ∧
+     made(EVENT[6], ENTITY[5], ENTITY[3]) ∧ juice(ENTITY[3]) ∧
+      CONJ_but(like(EVENT[2], REF1[1], buy(EVENT[7], REF1[1], ENTITY[3])),
+       SOME EVENT[12] ENTITY[9] (leaking(EVENT[12], ENTITY[9]) ∧ from(EVENT[12]) = ENTITY[11] ∧ juice(ENTITY[9]),
+        ∃ EVENT[13] (past(EVENT[13]) ∧ copula(EVENT[13], ENTITY[9]) ∧ is_contained_in(TMP(EVENT[13]), TIME[8])))))
+
+# ::id 127_textbook_BUFFALO;takmi;NE
+# ::snt I bought some ice cream today , but it had a strange odor .
+∃ ATTRIB[7] REF2[5] REF1[1] EVENT[8] ENTITY[6] (
+ REF1[1] = i ∧
+  REF2[5] = it ∧
+   strange(ATTRIB[7]) ∧
+    is_odor_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     past(EVENT[8]) ∧
+      CONJ_but(SOME ENTITY[2] (ice_cream(ENTITY[2]),
+            ∃ EVENT[4] TIME[3] (
+             today(TIME[3]) ∧
+              past(EVENT[4]) ∧
+               bought(EVENT[4], REF1[1], ENTITY[2]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3]))),
+       had(EVENT[8], REF2[5], ENTITY[6])))
+
+# ::id 128_textbook_BUFFALO;takmi;NE
+# ::snt The vanilla ice cream tasted bitter .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (vanilla_ice_cream(ENTITY[1]) ∧ bitter(ATTRIB[2]) ∧ past(EVENT[3]) ∧ tasted(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 129_textbook_BUFFALO;takmi;NE
+# ::snt I bought it the day before yesterday ,
+∃ REF2[2] REF1[1] EVENT[5] ENTITY[4] TIME[3] (
+ yesterday(ENTITY[4]) ∧
+  is_day_before(TIME[3], ENTITY[4]) ∧
+   REF1[1] = i ∧
+    REF2[2] = it ∧
+     past(EVENT[5]) ∧ bought(EVENT[5], REF1[1], REF2[2]) ∧ is_contained_in(TMP(EVENT[5]), TIME[3]))
+
+# ::id 130_textbook_BUFFALO;takmi;NE
+# ::snt and the date has n't expired yet .
+∃ ENTITY[1] (date(ENTITY[1]) ∧ ¬ ∃ EVENT[2] (ADV_yet(EVENT[2]) ∧ has_expired(EVENT[2], ENTITY[1])))
+
+# ::id 131_textbook_BUFFALO;takmi;NE
+# ::snt When I was holding an unopened pack , the contents leaked from the bottom of the juice pack .
+∃ ENTITY[7] ENTITY[6] GROUP[5] (
+ contents(GROUP[5]) ∧
+  juice_pack(ENTITY[7]) ∧
+   is_bottom_of(ENTITY[6], ENTITY[7]) ∧
+    ∀ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] CND_When(
+        REF1[1] = i ∧ unopened(ATTRIB[3]) ∧ is_pack_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ past(EVENT[4]) ∧
+         was_holding(EVENT[4], REF1[1], ENTITY[2]),
+        ∃ EVENT[8] (past(EVENT[8]) ∧ leaked(EVENT[8], GROUP[5]) ∧ from(EVENT[8]) = ENTITY[6])))
+
+# ::id 132_textbook_BUFFALO;chap4;NE
+# ::snt Cyrus was mentioned by name by Isaiah .
+∃ EVENT[2] ENTITY[1] (
+ name(ENTITY[1]) ∧
+  past(EVENT[2]) ∧ mentioned(EVENT[2], ENTITY[Isaiah], ENTITY[Cyrus]) ∧ by(EVENT[2]) = ENTITY[1])
+
+# ::id 133_textbook_BUFFALO;chap4;NE
+# ::snt Cyrus was mentioned by Isaiah by name .
+∃ EVENT[2] ENTITY[1] (
+ name(ENTITY[1]) ∧
+  past(EVENT[2]) ∧ mentioned(EVENT[2], ENTITY[Isaiah], ENTITY[Cyrus]) ∧ by(EVENT[2]) = ENTITY[1])
+
+# ::id 134_textbook_BUFFALO;1411694268;NE
+# ::snt Last year , John smiled every day .
+∃ ATTRIB[2] DATE[1] (
+ last(ATTRIB[2]) ∧
+  is_year_ATTRIBUTE(DATE[1], ATTRIB[2]) ∧
+   ∀ TIME[3] (day(TIME[3]) →
+    ∃ EVENT[4] (
+     past(EVENT[4]) ∧
+      smiled(EVENT[4], ENTITY[John]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3]) ∧
+       TPC(EVENT[4]) = DATE[1])))
+
+# ::id 135_textbook_BUFFALO;1411694268;NE
+# ::snt It rains .
+∃ EVENT[1] rains(EVENT[1])
+
+# ::id 136_textbook_BUFFALO;LSA-2013-06-28,42;NE
+# ::snt Thank you for your attention !
+∃ REF3[4] REF2[2] REF1[1] EVENT[5] ENTITY[3] (
+ REF1[1] = *pro* ∧
+  REF2[2] = you ∧
+   REF3[4] = your ∧
+    is_attention_POS(ENTITY[3], REF3[4]) ∧ thank(EVENT[5], REF1[1], REF2[2]) ∧ for(EVENT[5]) = ENTITY[3])
+
+# ::id 137_textbook_BUFFALO;NE
+# ::snt John is holy
+∃ ATTRIB[1] EVENT[2] (holy(ATTRIB[1]) ∧ copula(EVENT[2], ENTITY[John], ATTRIB[1]))
+
+# ::id 138_textbook_BUFFALO;NE
+# ::snt John is without fault
+∃ EVENT[2] ENTITY[1] (fault(ENTITY[1]) ∧ copula(EVENT[2], ENTITY[John]) ∧ without(EVENT[2]) = ENTITY[1])
+
+# ::id 139_textbook_BUFFALO;NE
+# ::snt John is holy and without fault
+∃ ATTRIB[1] EVENT[3] EVENT[3] ENTITY[2] (
+ holy(ATTRIB[1]) ∧
+  fault(ENTITY[2]) ∧
+   CONJ_and(copula(EVENT[3], ENTITY[John], ATTRIB[1]), copula(EVENT[3], ENTITY[John]) ∧ without(EVENT[3]) = ENTITY[2]))
+
+# ::id 140_textbook_BUFFALO;NE
+# ::snt John is without fault and holy
+∃ ATTRIB[2] EVENT[3] EVENT[3] ENTITY[1] (
+ fault(ENTITY[1]) ∧
+  holy(ATTRIB[2]) ∧
+   CONJ_and(copula(EVENT[3], ENTITY[John]) ∧ without(EVENT[3]) = ENTITY[1], copula(EVENT[3], ENTITY[John], ATTRIB[2])))
+
+# ::id 141_textbook_BUFFALO;NE
+# ::snt John travels here and in Jerusalem
+∃ EVENT[1] CONJ_and(travels(EVENT[1], ENTITY[John]) ∧ LOC(EVENT[1]) = ENTITY[Jerusalem])
+
+# ::id 142_textbook_BUFFALO;NE
+# ::snt John expects a recent picture of himself to be displayed at the exhibition .
+∃ PERSON[4] ATTRIB[3] PERSON[2] EVENT[7] EVENT[5] ENTITY[1] ENTITY[6] (
+ exhibition(ENTITY[6]) ∧
+  PERSON[2] = xxx{PERSON[John]} ∧
+   recent(ATTRIB[3]) ∧
+    PERSON[4] = himself{PERSON[2]} ∧
+     is_picture_of(ENTITY[1], PERSON[4]) ∧ is_picture_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_picture_POS(ENTITY[1], PERSON[2]) ∧
+      expects(EVENT[5], PERSON[John], ENTITY[1], displayed(EVENT[7], _, ENTITY[1]) ∧ at(EVENT[7]) = ENTITY[6]))

@@ -1,0 +1,1378 @@
+% ::id 1_nonfiction_IBM-1401;NE
+% ::snt IBM 1401 Programming Systems
+fof(ex1414052023338,axiom,(
+    ? [G1,E2] :
+      ( ibm__1401_programming_systems_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 2_nonfiction_IBM-1401;NE
+% ::snt When companies order an IBM 1401 Data Processing System , methods-programming staffs are given the responsibility of translating the requirements of management into finished applications .
+fof(ex1414052023662,axiom,(
+    ? [X1,X2,G3,G4,E5,S10,G6,G7,E8,E9] :
+      ( management_1(s0,X1)
+      & is_responsibility_of_2(s0,X2,S10)
+      & is_requirements_of_2(s0,G4,X1)
+      & finished_1(s0,G3)
+      & applications_1(s0,G3)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & translating_3(S11,E5,unspecified,G4)
+          & into_2(S11,E5,G3) )
+      & methods_programming_1(s0,G7)
+      & staffs_1(s0,G7)
+      & companies_1(s0,G6)
+      & order_3(s0,E8,G6,ibm__1401_data_processing_system)
+      & are_given_3(s0,E9,G7,X2) ) )).
+
+% ::id 3_nonfiction_IBM-1401;NE
+% ::snt 1401 Programming Systems are helping cut the costs of getting the computer into operation by simplifying and expediting the work of these methods staffs .
+fof(ex1414052023984,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,S12,G7,E8,E9,E10,E11,S13] :
+      ( computer_1(s0,X2)
+      & operation_1(s0,X1)
+      & is_work_of_2(s0,X3,G4)
+      & is_costs_of_2(s0,G5,S12)
+      & methods_staffs_1(s0,G4)
+      & ? [S14] :
+          ( fact_2(s0,S12,S14)
+          & getting_3(S14,E6,unspecified,X2)
+          & into_2(S14,E6,X1) )
+      & predicate__1401_programming_systems_1(s0,G7)
+      & ? [S15] :
+          ( fact_2(s0,S13,S15)
+          & simplifying_3(S15,E8,G5,X3)
+          & expediting_3(S15,E9,G5,X3) )
+      & ? [S16] :
+          ( are_helping_3(s0,E11,G7,S16)
+          & cut_3(S16,E10,G7,G5)
+          & by_2(S16,E10,S13) ) ) )).
+
+% ::id 4_nonfiction_IBM-1401;NE
+% ::snt Modern , high-speed computers , such as the 1401 , are marvelous electronic instruments , but they represent only portions of data processing systems .
+fof(ex1414052024300,axiom,(
+    ? [G6,G1,G2,G3,G4,E5] :
+      ( modern_1(s0,G2)
+      & high_speed_1(s0,G2)
+      & is_computers_such_as_2(s0,G2,constant__1401)
+      & marvelous_1(s0,G1)
+      & electronic_1(s0,G1)
+      & instruments_1(s0,G1)
+      & choose2(G6,G2,G1)
+      & data_processing_systems_1(s0,G3)
+      & is_portions_of_2(s0,G4,G3)
+      & are_3(s0,E5,G2,G1)
+      & ? [G7] :
+          ( is_of_2(s0,G7,G4)
+          & ? [E8] : represent_3(s0,E8,G6,G7) ) ) )).
+
+% ::id 5_nonfiction_IBM-1401;NE
+% ::snt Well-tested programming languages for communication with computers must accompany the systems .
+fof(ex1414052024614,axiom,(
+    ? [G1,X2,G3,G4] :
+      ( systems_1(s0,G1)
+      & is_communication_with_2(s0,X2,G3)
+      & computers_1(s0,G3)
+      & well_tested_1(s0,G4)
+      & is_programming_languages_for_2(s0,G4,X2)
+      & ? [E5] : accompany_3(s0,E5,G4,G1) ) )).
+
+% ::id 6_nonfiction_IBM-1401;NE
+% ::snt It is through these languages that the computer itself is used to perform many of the tedious functions that the programmer would otherwise have to perform .
+fof(ex1414052024947,axiom,(
+    ? [X9,X1,X2,G3,G4,E5,E6,E7,S8] :
+      ( computer_1(s0,X2)
+      & choose1(X9,X2)
+      & programmer_1(s0,X1)
+      & is_of_2(s0,X2,X9)
+      & tedious_1(s0,G3)
+      & ? [S13,E11,E12] :
+          ( otherwise_1(s0,S13)
+          & ? [S14] :
+              ( fact_2(s0,S13,S14)
+              & ? [S15] :
+                  ( have_3(S14,E12,X1,S15)
+                  & perform_3(S15,E11,X1,G3) ) ) )
+      & functions_1(s0,G3)
+      & languages_1(s0,G4)
+      & ? [S16] :
+          ( fact_2(s0,S8,S16)
+          & ? [S17] :
+              ( used_4(S16,E6,unspecified,X2,S17)
+              & ? [X10] :
+                  ( is_of_2(S17,X10,G3)
+                  & perform_3(S17,E5,X2,X10) ) ) )
+      & is_2(s0,E7,S8)
+      & through_2(s0,E7,G4) ) )).
+
+% ::id 7_nonfiction_IBM-1401;NE
+% ::snt A few minutes of computer time in translating the program can be equal to many , many hours of staff time in writing instructions coded in the language of the computer .
+fof(ex1414052025284,axiom,(
+    ? [X1,X2,X3,X4,E5,S7] :
+      ( program_1(s0,X1)
+      & computer_1(s0,X2)
+      & is_language_of_2(s0,X3,X2)
+      & is_computer_time_in_2(s0,X4,S7)
+      & ? [S16] :
+          ( fact_2(s0,S7,S16)
+          & translating_3(S16,E5,unspecified,X1) )
+      & ? [G6] :
+          ( is_minutes_of_2(s0,G6,X4)
+          & ? [X8,G9,A13,E10,E11,E12,S15] :
+              ( is_staff_time_in_2(s0,X8,S15)
+              & coded_3(s0,E10,unspecified,G9)
+              & in_2(s0,E10,X3)
+              & instructions_1(s0,G9)
+              & ? [G14] :
+                  ( is_hours_of_2(s0,G14,X8)
+                  & is_equal_to_2(s0,A13,G14) )
+              & ? [S17] :
+                  ( fact_2(s0,S15,S17)
+                  & writing_3(S17,E11,unspecified,G9) )
+              & be_3(s0,E12,G6,A13) ) ) ) )).
+
+% ::id 8_nonfiction_IBM-1401;NE
+% ::snt The combination of a modern computer plus modern programming languages is the key to profitable data processing .
+fof(ex1414052025602,axiom,(
+    ? [X1,X2,X3,G4,G5,E6] :
+      ( modern_1(s0,X1)
+      & is_computer_plus_2(s0,X1,G4)
+      & is_combination_of_2(s0,X3,X1)
+      & is_key_to_2(s0,X2,G5)
+      & modern_1(s0,G4)
+      & programming_languages_1(s0,G4)
+      & profitable_1(s0,G5)
+      & data_processing_1(s0,G5)
+      & is_3(s0,E6,X3,X2) ) )).
+
+% ::id 9_nonfiction_IBM-1401;NE
+% ::snt This brochure explains modern IBM Programming Languages and their significance to management .
+fof(ex1414052025908,axiom,(
+    ? [X1,G2,E3] :
+      ( brochure_1(s0,X1)
+      & ? [G4] :
+          ( modern_ibm__programming_languages_1(s0,G4)
+          & is_of_2(s0,G4,G2) )
+      & ? [X5,X6,G7] :
+          ( management_1(s0,X5)
+          & is_significance_to_2(s0,X6,X5)
+          & is_significance_of_2(s0,X6,G7)
+          & is_of_2(s0,X6,G2) )
+      & explains_3(s0,E3,X1,G2) ) )).
+
+% ::id 10_nonfiction_IBM-1401;NE
+% ::snt Page 2 : Here an operator points to machine language instructions for a new application being generated by the 1401 system on the 1403 high-speed printer .
+fof(ex1414052026235,axiom,(
+    ? [X1,X2,X3,X4,G5,S8,E6,E7] :
+      ( predicate__1401_system_1(s0,X2)
+      & predicate__1403_high_speed_printer_1(s0,X1)
+      & operator_1(s0,X4)
+      & new_1(s0,X3)
+      & generated_3(s0,E6,X2,X3)
+      & on_2(s0,E6,X1)
+      & application_1(s0,X3)
+      & is_machine_language_instructions_for_2(s0,G5,X3)
+      & here_1(s0,S8)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & points_2(S9,E7,X4)
+          & to_2(S9,E7,G5) ) ) )).
+
+% ::id 11_nonfiction_IBM-1401;NE
+% ::snt Statements about the application which were written by the programmer are being translated internally to machine-coded language .
+fof(ex1414052026560,axiom,(
+    ? [X1,X2,X3,G4,E5,E6] :
+      ( application_1(s0,X2)
+      & programmer_1(s0,X1)
+      & machine_coded_1(s0,X3)
+      & language_1(s0,X3)
+      & written_3(s0,E5,X1,G4)
+      & is_statements_about_2(s0,G4,X2)
+      & is_before_2(s0,E5,e0)
+      & internally_1(s0,E6)
+      & translated_3(s0,E6,unspecified,G4)
+      & to_2(s0,E6,X3) ) )).
+
+% ::id 12_nonfiction_IBM-1401;NE
+% ::snt What Is A 1401 Program ?
+fof(ex1414052026874,axiom,(
+    ? [X1,X2,E3] :
+      ( predicate__1401_program_1(s0,X2)
+      & is_3(s0,E3,X2,X1) ) )).
+
+% ::id 13_nonfiction_IBM-1401;NE
+% ::snt A program is a series of instructions that direct the 1401 as it solves an application .
+fof(ex1414052027200,axiom,(
+    ? [X8,X1,X2,X3,G4,E5,E6,E7] :
+      ( program_1(s0,X3)
+      & choose2(X8,constant__1401,X3)
+      & application_1(s0,X1)
+      & is_series_of_2(s0,X2,G4)
+      & solves_3(s0,E5,X8,X1)
+      & direct_3(s0,E6,G4,constant__1401)
+      & instructions_1(s0,G4)
+      & is_3(s0,E7,X3,X2) ) )).
+
+% ::id 14_nonfiction_IBM-1401;NE
+% ::snt What Is A Stored Program Machine ?
+fof(ex1414052027511,axiom,(
+    ? [X1,X2,E3] :
+      ( stored_1(s0,X2)
+      & program_machine_1(s0,X2)
+      & is_3(s0,E3,X2,X1) ) )).
+
+% ::id 15_nonfiction_IBM-1401;NE
+% ::snt A stored program machine is one which stores its own instructions in magnetic form and is capable of acting on those instructions to complete the application assigned .
+fof(ex1414052027853,axiom,(
+    ? [X1,G2,E3,X13,X4,X5,X6,G7,A14,E8,E9,E10,E11,E12,S15] :
+      ( assigned_3(s0,E3,unspecified,X1)
+      & application_1(s0,X1)
+      & instructions_1(s0,G2)
+      & stored_1(s0,X6)
+      & program_machine_1(s0,X6)
+      & choose2(X13,X5,X6)
+      & magnetic_1(s0,X4)
+      & form_1(s0,X4)
+      & stores_3(s0,E8,X5,G7)
+      & in_2(s0,E8,X4)
+      & is_3(s0,E11,X5,A14)
+      & one_1(s0,X5)
+      & own_1(s0,G7)
+      & is_instructions_of_2(s0,G7,X13)
+      & is_capable_of_2(s0,A14,S15)
+      & ? [S16] :
+          ( fact_2(s0,S15,S16)
+          & ? [S17] :
+              ( acting_2(S16,E10,S17)
+              & complete_3(S17,E9,unspecified,X1) )
+          & on_2(S16,E10,G2) )
+      & is_3(s0,E12,X6,X5) ) )).
+
+% ::id 16_nonfiction_IBM-1401;NE
+% ::snt The 1401 uses a stored program .
+fof(ex1414052028158,axiom,(
+    ? [X1,E2] :
+      ( stored_1(s0,X1)
+      & program_1(s0,X1)
+      & uses_3(s0,E2,constant__1401,X1) ) )).
+
+% ::id 17_nonfiction_IBM-1401;NE
+% ::snt What Are 1401 Programming Systems ?
+fof(ex1414052028462,axiom,(
+    ? [X1,G2,E3] :
+      ( predicate__1401_programming_systems_1(s0,G2)
+      & are_3(s0,E3,G2,X1) ) )).
+
+% ::id 18_nonfiction_IBM-1401;NE
+% ::snt There are two types : -LRB- 1 -RRB- Systems that provide the programmer with a simplified vocabulary of statements to use in writing programs , and -LRB- 2 -RRB- Pre-written programs , which take care of many of the everyday operations of the 1401 .
+fof(ex1414052028828,axiom,(
+    ? [X1,G2,G3,G4,E5] :
+      ( programmer_1(s0,X1)
+      & everyday_1(s0,G2)
+      & is_operations_of_2(s0,G2,constant__1401)
+      & two_1(s0,G4)
+      & types_1(s0,G4)
+      & ? [X6,G7,G8,E9,E10,E11,S12] :
+          ( simplified_1(s0,X6)
+          & is_vocabulary_of_2(s0,X6,G8)
+          & programs_1(s0,G7)
+          & ? [S17] :
+              ( statements_2(s0,G8,S17)
+              & use_1(S17,E10)
+              & in_2(S17,E10,S12) )
+          & provide_3(s0,E11,systems,X1)
+          & with_2(s0,E11,X6)
+          & ? [S18] :
+              ( fact_2(s0,S12,S18)
+              & writing_3(S18,E9,unspecified,G7) )
+          & is_of_2(s0,systems,G3) )
+      & ? [X13,G14,E15] :
+          ( care_1(s0,X13)
+          & pre_written_1(s0,G14)
+          & ? [X16] :
+              ( is_of_2(s0,X16,G2)
+              & take_3(s0,E15,G14,X13)
+              & of_2(s0,E15,X16) )
+          & programs_1(s0,G14)
+          & is_of_2(s0,G14,G3) )
+      & G4 = G3
+      & are_2(s0,E5,G4) ) )).
+
+% ::id 19_nonfiction_IBM-1401;NE
+% ::snt What 1401 Programming Systems Mean To Management :
+fof(ex1414052029140,axiom,(
+    ? [X1,G2,E3] :
+      ( predicate__1401_programming_systems_1(s0,G2)
+      & mean_3(s0,E3,G2,X1)
+      & to_2(s0,E3,management) ) )).
+
+% ::id 20_nonfiction_IBM-1401;NE
+% ::snt INCREASED PROGRAMMING EFFICIENCY
+fof(ex1414052029441,axiom,(
+    ? [X1,E2] :
+      ( increased__1(s0,X1)
+      & programming__efficiency__1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 21_nonfiction_IBM-1401;NE
+% ::snt Programmers can concentrate on the application and results rather than on a multitude of " bookkeeping " functions , such as keeping track of storage locations .
+fof(ex1414052029763,axiom,(
+    ? [X1,G2] :
+      ( application_1(s0,X1)
+      & programmers_1(s0,G2)
+      & ? [X3,X4,G5,G6,G7,E8,E9,S11] :
+          ( is_track_of_2(s0,X3,G5)
+          & is_multitude_of_2(s0,X4,G6)
+          & is_of_2(s0,X1,G7)
+          & ? [G10] :
+              ( results_1(s0,G10)
+              & is_of_2(s0,G10,G7) )
+          & storage_locations_1(s0,G5)
+          & is_bookkeeping_such_as_2(s0,G6,S11)
+          & is_functions_such_as_2(s0,G6,S11)
+          & ? [S12] :
+              ( fact_2(s0,S11,S12)
+              & keeping_3(S12,E8,unspecified,X3) )
+          & concentrate_2(s0,E9,G2)
+          & on_2(s0,E9,G7)
+          & rather_than_on_2(s0,E9,X4) ) ) )).
+
+% ::id 22_nonfiction_IBM-1401;NE
+% ::snt FASTER TRANSLATION OF MANAGEMENT REQUIREMENTS INTO USABLE RESULTS
+fof(ex1414052030069,axiom,(
+    ? [X1,G2,G3,E4] :
+      ( faster__1(s0,X1)
+      & is_translation__of__2(s0,X1,G3)
+      & usable__1(s0,G2)
+      & results__1(s0,G2)
+      & is_management__requirements__into__2(s0,G3,G2)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 23_nonfiction_IBM-1401;NE
+% ::snt Simplified programming routines allow programmers to write more instructions in less time .
+fof(ex1414052030376,axiom,(
+    ? [G1,G2,E3,E4] :
+      ( simplified_1(s0,G2)
+      & programming_routines_1(s0,G2)
+      & programmers_1(s0,G1)
+      & ? [S7] :
+          ( allow_4(s0,E4,G2,G1,S7)
+          & ? [G5] :
+              ( instructions_1(S7,G5)
+              & ? [X6] :
+                  ( time_1(S7,X6)
+                  & write_3(S7,E3,G1,G5)
+                  & in_2(S7,E3,X6) ) ) ) ) )).
+
+% ::id 24_nonfiction_IBM-1401;NE
+% ::snt SHORTER TRAINING PERIODS
+fof(ex1414052030679,axiom,(
+    ? [G1,E2] :
+      ( shorter__1(s0,G1)
+      & training__periods__1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 25_nonfiction_IBM-1401;NE
+% ::snt Programmers use a language more familiar to them rather than having to learn detailed machine codes .
+fof(ex1414052030992,axiom,(
+    ? [X1,G7,G2,G3,E4,E5,E6,S8] :
+      ( is_more_familiar_rather_than_2(s0,X1,S8)
+      & is_more_familiar_to_2(s0,X1,G7)
+      & language_1(s0,X1)
+      & programmers_1(s0,G3)
+      & choose1(G7,G3)
+      & detailed_1(s0,G2)
+      & machine_codes_1(s0,G2)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & ? [S10] :
+              ( having_2(S9,E5,S10)
+              & learn_3(S10,E4,unspecified,G2) ) )
+      & use_3(s0,E6,G3,X1) ) )).
+
+% ::id 26_nonfiction_IBM-1401;NE
+% ::snt REDUCED PROGRAMMING COSTS
+fof(ex1414052031293,axiom,(
+    ? [G1,E2] :
+      ( reduced__1(s0,G1)
+      & programming__costs__1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 27_nonfiction_IBM-1401;NE
+% ::snt Many pre-written programs are supplied by IBM , eliminating necessity of customers ' staffs writing their own .
+fof(ex1414052031617,axiom,(
+    ? [X1,X2,G10,G3,G4,E5,E6,E7,S9] :
+      ( own_1(s0,X1)
+      & is_of_2(s0,X1,G10)
+      & is_necessity_of_2(s0,X2,S9)
+      & customers_1(s0,G3)
+      & is_staffs_of_2(s0,G4,G3)
+      & choose3(G10,G4,G3)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & writing_3(S11,E5,G4,X1) )
+      & ? [G8] :
+          ( pre_written_1(s0,G8)
+          & programs_1(s0,G8)
+          & eliminating_3(s0,E6,ibm_,X2)
+          & supplied_3(s0,E7,ibm_,G8) ) ) )).
+
+% ::id 28_nonfiction_IBM-1401;NE
+% ::snt MORE AVAILABLE 1401 TIME
+fof(ex1414052031919,axiom,(
+    ? [X1,E2] :
+      ( more__available__1(s0,X1)
+      & predicate__1401_time__1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 29_nonfiction_IBM-1401;NE
+% ::snt Pre-written programs have already been tested by IBM , reducing tedious checking operations on the computer .
+fof(ex1414052032235,axiom,(
+    ? [X1,G2,G3,S6,E4,E5] :
+      ( computer_1(s0,X1)
+      & pre_written_1(s0,G3)
+      & programs_1(s0,G3)
+      & tedious_1(s0,G2)
+      & checking_1(s0,G2)
+      & is_operations_on_2(s0,G2,X1)
+      & already_1(s0,S6)
+      & ? [S7] :
+          ( fact_2(s0,S6,S7)
+          & reducing_3(S7,E4,ibm_,G2)
+          & have_tested_3(S7,E5,ibm_,G3) ) ) )).
+
+% ::id 30_nonfiction_IBM-1401;NE
+% ::snt EASIER TO UNDERSTAND PROGRAMS
+fof(ex1414052032537,axiom,(
+    ? [G1,A4,E2,E3] :
+      ( programs__1(s0,G1)
+      & ? [S5] :
+          ( easier__2(s0,A4,S5)
+          & understand_3(S5,E2,unspecified,G1) )
+      & is_3(s0,E3,unspecified,A4) ) )).
+
+% ::id 31_nonfiction_IBM-1401;NE
+% ::snt Programs are written in symbolic or application-oriented form instead of computer language .
+fof(ex1414052032849,axiom,(
+    ? [X1,X2,G3,E4] :
+      ( computer_language_1(s0,X1)
+      & symbolic_1(s0,X2)
+      & application_oriented_1(s0,X2)
+      & is_form_instead_of_2(s0,X2,X1)
+      & programs_1(s0,G3)
+      & written_3(s0,E4,unspecified,G3)
+      & in_2(s0,E4,X2) ) )).
+
+% ::id 32_nonfiction_IBM-1401;NE
+% ::snt This enables management to communicate more easily with the programming staff .
+fof(ex1414052033154,axiom,(
+    ? [X1,X5,X2,E3,E4] :
+      ( programming_staff_1(s0,X1)
+      & management_1(s0,X2)
+      & more_easily_1(s0,E3)
+      & ? [S6] :
+          ( enables_4(s0,E4,X5,X2,S6)
+          & communicate_2(S6,E3,X2)
+          & with_2(S6,E3,X1) ) ) )).
+
+% ::id 33_nonfiction_IBM-1401;NE
+% ::snt FASTER REPORTS ON OPERATIONS
+fof(ex1414052033456,axiom,(
+    ? [G1,G2,E3] :
+      ( operations__1(s0,G1)
+      & faster__1(s0,G2)
+      & is_reports__on__2(s0,G2,G1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,G2) ) )).
+
+% ::id 34_nonfiction_IBM-1401;NE
+% ::snt Routines such as those designed for report writing permit faster translation of management requirements into usable information .
+fof(ex1414052033778,axiom,(
+    ? [X1,X2,E3,X4,X5,G6,G7,E8] :
+      ( report_writing_1(s0,X1)
+      & designed_3(s0,E3,unspecified,X2)
+      & for_2(s0,E3,X1)
+      & faster_1(s0,X5)
+      & is_translation_of_2(s0,X5,G6)
+      & usable_1(s0,X4)
+      & information_1(s0,X4)
+      & is_routines_such_as_2(s0,G7,X2)
+      & management_requirements_1(s0,G6)
+      & permit_3(s0,E8,G7,X5)
+      & into_2(s0,E8,X4) ) )).
+
+% ::id 35_nonfiction_IBM-1401;NE
+% ::snt IBM Programming Systems :
+fof(ex1414052034081,axiom,(
+    ? [G1,E2] :
+      ( ibm__programming_systems_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 36_nonfiction_IBM-1401;NE
+% ::snt Symbolic Programming Systems
+fof(ex1414052034378,axiom,(
+    ? [G1,E2] :
+      ( symbolic_1(s0,G1)
+      & programming_systems_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 37_nonfiction_IBM-1401;NE
+% ::snt These systems permit programs to be written using meaningful names -LRB- symbols -RRB- rather than actual machine language .
+fof(ex1414052034695,axiom,(
+    ? [G1,X2,G3,G4,G5,E6,E7,E8] :
+      ( systems_1(s0,G1)
+      & actual_1(s0,X2)
+      & machine_language_1(s0,X2)
+      & programs_1(s0,G5)
+      & meaningful_1(s0,G4)
+      & is_names_rather_than_2(s0,G4,X2)
+      & symbols_1(s0,G3)
+      & G4 = G3
+      & ? [S9] :
+          ( permit_4(s0,E8,G1,G5,S9)
+          & using_3(S9,E6,G5,G4)
+          & written_3(S9,E7,unspecified,G5) ) ) )).
+
+% ::id 38_nonfiction_IBM-1401;NE
+% ::snt Autocoder
+fof(ex1414052034995,axiom,(
+    ? [X1,E2] :
+      ( autocoder_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 39_nonfiction_IBM-1401;NE
+% ::snt This is an advanced symbolic programming system .
+fof(ex1414052035298,axiom,(
+    ? [X3,X1,E2] :
+      ( advanced_1(s0,X1)
+      & symbolic_1(s0,X1)
+      & programming_system_1(s0,X1)
+      & is_3(s0,E2,X3,X1) ) )).
+
+% ::id 40_nonfiction_IBM-1401;NE
+% ::snt It allows generation of multiple machine instructions from one source statement , free-form coding , and an automatic assembly process through magnetic tape .
+fof(ex1414052035621,axiom,(
+    ? [X3,G1,E2] :
+      ( ? [X4,X5,G6] :
+          ( one_1(s0,X4)
+          & source_statement_1(s0,X4)
+          & is_generation_of_2(s0,X5,G6)
+          & multiple_1(s0,G6)
+          & is_machine_instructions_from_2(s0,G6,X4)
+          & is_of_2(s0,X5,G1) )
+      & ? [X7] :
+          ( free_form_1(s0,X7)
+          & coding_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & ? [X8,X9] :
+          ( magnetic_1(s0,X8)
+          & tape_1(s0,X8)
+          & automatic_1(s0,X9)
+          & is_assembly_process_through_2(s0,X9,X8)
+          & is_of_2(s0,X9,G1) )
+      & allows_3(s0,E2,X3,G1) ) )).
+
+% ::id 41_nonfiction_IBM-1401;NE
+% ::snt COBOL
+fof(ex1414052035918,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,cobol_) ) )).
+
+% ::id 42_nonfiction_IBM-1401;NE
+% ::snt COBOL is a problem-oriented programming language for commercial applications .
+fof(ex1414052036225,axiom,(
+    ? [X1,G2,E3] :
+      ( problem_oriented_1(s0,X1)
+      & is_programming_language_for_2(s0,X1,G2)
+      & commercial_1(s0,G2)
+      & applications_1(s0,G2)
+      & is_3(s0,E3,cobol_,X1) ) )).
+
+% ::id 43_nonfiction_IBM-1401;NE
+% ::snt COBOL permits a programmer to use language based on English words and phrases in describing an application .
+fof(ex1414052036549,axiom,(
+    ? [X1,X2,X3,G4,E5,E6,E7,E8,S11] :
+      ( programmer_1(s0,X3)
+      & based_2(s0,E5,X2)
+      & on_2(s0,E5,english)
+      & language_1(s0,X2)
+      & application_1(s0,X1)
+      & ? [G9] :
+          ( words_1(s0,G9)
+          & is_of_2(s0,G9,G4) )
+      & ? [G10] :
+          ( phrases_1(s0,G10)
+          & is_of_2(s0,G10,G4) )
+      & english = G4
+      & ? [S12] :
+          ( fact_2(s0,S11,S12)
+          & describing_3(S12,E6,X2,X1) )
+      & ? [S13] :
+          ( permits_4(s0,E8,cobol_,X3,S13)
+          & use_3(S13,E7,X3,X2)
+          & in_2(S13,E7,S11) ) ) )).
+
+% ::id 44_nonfiction_IBM-1401;NE
+% ::snt Input/Output Control System
+fof(ex1414052036848,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,input__slash__output_control_system) ) )).
+
+% ::id 45_nonfiction_IBM-1401;NE
+% ::snt This system provides the programmer with a packaged means of accomplishing input and output requirements .
+fof(ex1414052037168,axiom,(
+    ? [X1,X2,X3,G4,E5,E6,S7] :
+      ( system_1(s0,X2)
+      & programmer_1(s0,X1)
+      & packaged_1(s0,X3)
+      & is_means_of_2(s0,X3,S7)
+      & ? [G8] :
+          ( input_requirements_1(s0,G8)
+          & is_of_2(s0,G8,G4) )
+      & ? [G9] :
+          ( output_requirements_1(s0,G9)
+          & is_of_2(s0,G9,G4) )
+      & ? [S10] :
+          ( fact_2(s0,S7,S10)
+          & accomplishing_3(S10,E5,unspecified,G4) )
+      & provides_3(s0,E6,X2,X1)
+      & with_2(s0,E6,X3) ) )).
+
+% ::id 46_nonfiction_IBM-1401;NE
+% ::snt Utility Programs
+fof(ex1414052037466,axiom,(
+    ? [G1,E2] :
+      ( utility_programs_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 47_nonfiction_IBM-1401;NE
+% ::snt These are pre-written instructions to perform many of the everyday operations of an installation .
+fof(ex1414052037777,axiom,(
+    ? [X1,G2,G6,G3,E4,E5] :
+      ( installation_1(s0,X1)
+      & everyday_1(s0,G2)
+      & is_operations_of_2(s0,G2,X1)
+      & pre_written_1(s0,G3)
+      & ? [S8] :
+          ( instructions_2(s0,G3,S8)
+          & ? [X7] :
+              ( is_of_2(S8,X7,G2)
+              & perform_3(S8,E4,unspecified,X7) ) )
+      & are_3(s0,E5,G6,G3) ) )).
+
+% ::id 48_nonfiction_IBM-1401;NE
+% ::snt Subroutines
+fof(ex1414052038075,axiom,(
+    ? [G1,E2] :
+      ( subroutines_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 49_nonfiction_IBM-1401;NE
+% ::snt These are routines for multiplication , division , dozens conversion , and program error detection aids .
+fof(ex1414052038384,axiom,(
+    ? [G4,G1,G2,E3] :
+      ( ? [X5] :
+          ( multiplication_1(s0,X5)
+          & is_of_2(s0,X5,G1) )
+      & ? [X6] :
+          ( division_1(s0,X6)
+          & is_of_2(s0,X6,G1) )
+      & ? [X7] :
+          ( dozens_conversion_1(s0,X7)
+          & is_of_2(s0,X7,G1) )
+      & ? [G8] :
+          ( program_error_detection_aids_1(s0,G8)
+          & is_of_2(s0,G8,G1) )
+      & is_routines_for_2(s0,G2,G1)
+      & are_3(s0,E3,G4,G2) ) )).
+
+% ::id 50_nonfiction_IBM-1401;NE
+% ::snt Tape Utilities
+fof(ex1414052038685,axiom,(
+    ? [G1,E2] :
+      ( tape_utilities_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 51_nonfiction_IBM-1401;NE
+% ::snt These are generalized instructions , particularly useful to 1401 customers who also use larger data processing systems .
+fof(ex1414052039004,axiom,(
+    ? [G7,G1,G2,G3,E4,E5,E6] :
+      ( larger_1(s0,G1)
+      & data_processing_systems_1(s0,G1)
+      & ? [S8] :
+          ( also_3(s0,E5,G2,S8)
+          & use_3(S8,E4,G2,G1) )
+      & predicate__1401_customers_1(s0,G2)
+      & generalized_1(s0,G3)
+      & is_particularly_useful_to_2(s0,G3,G2)
+      & instructions_1(s0,G3)
+      & are_3(s0,E6,G7,G3) ) )).
+
+% ::id 52_nonfiction_IBM-1401;NE
+% ::snt They facilitate the transfer of data between IBM cards , magnetic tapes , and printers .
+fof(ex1414052039319,axiom,(
+    ? [X1,G2,G3,G4,G5,G6,G8,E7] :
+      ( is_transfer_of_2(s0,X1,G6)
+      & ibm__cards_1(s0,G2)
+      & magnetic_1(s0,G3)
+      & tapes_1(s0,G3)
+      & printers_1(s0,G4)
+      & is_of_2(s0,G2,G5)
+      & is_of_2(s0,G3,G5)
+      & is_of_2(s0,G4,G5)
+      & is_data_between_2(s0,G6,G5)
+      & facilitate_3(s0,E7,G8,X1) ) )).
+
+% ::id 53_nonfiction_IBM-1401;NE
+% ::snt They also provide for some 1401 processing while the transfer of data is taking place .
+fof(ex1414052039636,axiom,(
+    ? [X1,G2,X3,G7,E4,E5,E6] :
+      ( is_transfer_of_2(s0,X1,G2)
+      & data_1(s0,G2)
+      & processing_1(s0,constant__1401)
+      & place_1(s0,X3)
+      & ? [S8] :
+          ( also_3(s0,E6,G7,S8)
+          & is_taking_3(S8,E4,X1,X3)
+          & provide_2(S8,E5,G7)
+          & for_2(S8,E5,constant__1401) ) ) )).
+
+% ::id 54_nonfiction_IBM-1401;NE
+% ::snt Tape Sort Programs
+fof(ex1414052039935,axiom,(
+    ? [G1,E2] :
+      ( tape_sort_programs_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 55_nonfiction_IBM-1401;NE
+% ::snt Data can be sorted and classified at high speed for further processing by use of these generalized sorting routines .
+fof(ex1414052040256,axiom,(
+    ? [G1,X2,X3,X4,G5] :
+      ( generalized_1(s0,G1)
+      & sorting_routines_1(s0,G1)
+      & high_1(s0,X4)
+      & speed_1(s0,X4)
+      & further_1(s0,X3)
+      & processing_1(s0,X3)
+      & is_use_of_2(s0,X2,G1)
+      & data_1(s0,G5)
+      & ? [E6] :
+          ( sorted_3(s0,E6,unspecified,G5)
+          & at_2(s0,E6,X4)
+          & for_2(s0,E6,X3)
+          & by_2(s0,E6,X2) )
+      & ? [E7] :
+          ( classified_3(s0,E7,unspecified,G5)
+          & at_2(s0,E7,X4)
+          & for_2(s0,E7,X3)
+          & by_2(s0,E7,X2) ) ) )).
+
+% ::id 56_nonfiction_IBM-1401;NE
+% ::snt Report Program Generator
+fof(ex1414052040558,axiom,(
+    ? [X1,E2] :
+      ( report_program_generator_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 57_nonfiction_IBM-1401;NE
+% ::snt The programmer uses simplified , descriptive language with which he is already familiar to obtain reports swiftly and efficiently .
+fof(ex1414052040881,axiom,(
+    ? [X1,X7,X2,G3,A8,E4,E5,E6,S9] :
+      ( programmer_1(s0,X1)
+      & choose1(X7,X1)
+      & simplified_1(s0,X2)
+      & descriptive_1(s0,X2)
+      & is_3(s0,E5,X7,A8)
+      & prp_2(s0,E5,S9)
+      & language_1(s0,X2)
+      & reports_1(s0,G3)
+      & is_already_familiar_with_2(s0,A8,X2)
+      & swiftly_1(s0,E4)
+      & efficiently_1(s0,E4)
+      & ? [S10] :
+          ( fact_2(s0,S9,S10)
+          & obtain_3(S10,E4,X7,G3) )
+      & uses_3(s0,E6,X1,X2) ) )).
+
+% ::id 58_nonfiction_IBM-1401;NE
+% ::snt FORTRAN -LRB- Contraction of FORmula TRANslator -RRB-
+fof(ex1414052041186,axiom,(
+    ? [X1,X2,E3] :
+      ( formula_translator_1(s0,X1)
+      & is_contraction_of_2(s0,X2,X1)
+      & fortran_ = X2
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,fortran_) ) )).
+
+% ::id 59_nonfiction_IBM-1401;NE
+% ::snt Engineers and mathematicians state problems in familiar algebraic language for solution by the computer .
+fof(ex1414052041499,axiom,(
+    ? [X1,X2,X3,G4,G5,E6] :
+      ( computer_1(s0,X1)
+      & familiar_1(s0,X2)
+      & algebraic_1(s0,X2)
+      & language_1(s0,X2)
+      & is_solution_by_2(s0,X3,X1)
+      & ? [G7] :
+          ( engineers_1(s0,G7)
+          & is_of_2(s0,G7,G5) )
+      & ? [G8] :
+          ( mathematicians_1(s0,G8)
+          & is_of_2(s0,G8,G5) )
+      & is_problems_in_2(s0,G4,X2)
+      & state_3(s0,E6,G5,G4)
+      & for_2(s0,E6,X3) ) )).
+
+% ::id 60_nonfiction_IBM-1401;NE
+% ::snt RAMAC File Organization
+fof(ex1414052041796,axiom,(
+    ? [X1,E2] :
+      ( ramac__file_organization_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 61_nonfiction_IBM-1401;NE
+% ::snt Routines are supplied for simplifying organization of records for storage in the 1401 Random Access File .
+fof(ex1414052042108,axiom,(
+    ? [X1,X2,X3,G4,G5,E6,E7,S8] :
+      ( predicate__1401_random_access_file_1(s0,X1)
+      & is_storage_in_2(s0,X2,X1)
+      & is_organization_of_2(s0,X3,G4)
+      & routines_1(s0,G5)
+      & is_records_for_2(s0,G4,X2)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & simplifying_3(S9,E6,G5,X3) )
+      & supplied_3(s0,E7,unspecified,G5)
+      & for_2(s0,E7,S8) ) )).
+
+% ::id 62_nonfiction_IBM-1401;NE
+% ::snt Here's how one of the 1401 programming systems -- Report Program Generator -- works to increase programming efficiency
+fof(ex1414052042427,axiom,(
+    ? [G1,X2,E3] :
+      ( predicate__1401_programming_systems_1(s0,G1)
+      & here_1(s0,X2)
+      & ? [S10] :
+          ( is_3(s0,E3,X2,S10)
+          & ? [X4,X5,X6,S9,E7,E8] :
+              ( one_1(S10,X6)
+              & is_report_program_generator_of_2(S10,X6,G1)
+              & programming_efficiency_1(S10,X5)
+              & is_how_2(S10,S9,X4)
+              & ? [S11] :
+                  ( fact_2(S10,S9,S11)
+                  & ? [S12] :
+                      ( works_3(S11,E8,X6,S12)
+                      & increase_3(S12,E7,X6,X5) ) ) ) ) ) )).
+
+% ::id 63_nonfiction_IBM-1401;NE
+% ::snt 1401 computers produce important reports for management in record time because of their outstanding processing and printing abilities .
+fof(ex1414052042752,axiom,(
+    ? [X1,X2,G8,G3,G4,G5,G6,E7] :
+      ( management_1(s0,X2)
+      & record_time_1(s0,X1)
+      & predicate__1401_computers_1(s0,G6)
+      & important_1(s0,G5)
+      & is_reports_in_2(s0,G5,X1)
+      & is_reports_for_2(s0,G5,X2)
+      & choose2(G8,G6,G5)
+      & outstanding_1(s0,G4)
+      & is_of_2(s0,G4,G8)
+      & ? [G9] :
+          ( processing_1(s0,G9)
+          & abilities_1(s0,G9)
+          & is_of_2(s0,G9,G3) )
+      & ? [G10] :
+          ( printing_1(s0,G10)
+          & abilities_1(s0,G10)
+          & is_of_2(s0,G10,G3) )
+      & G4 = G3
+      & produce_3(s0,E7,G6,G5)
+      & because_of_2(s0,E7,G4) ) )).
+
+% ::id 64_nonfiction_IBM-1401;NE
+% ::snt In addition to this rapid machine processing of input data used in reports , still more speed is achieved by the rapid preparation of programs to produce the reports .
+fof(ex1414052043091,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,E7,E8,X9,E10] :
+      ( rapid_1(s0,X1)
+      & is_machine_processing_of_2(s0,X1,G4)
+      & rapid_1(s0,X2)
+      & is_preparation_of_2(s0,X2,G6)
+      & reports_1(s0,G3)
+      & used_3(s0,E7,unspecified,G4)
+      & in_2(s0,E7,G3)
+      & input_data_1(s0,G4)
+      & reports_1(s0,G5)
+      & ? [S12] :
+          ( programs_2(s0,G6,S12)
+          & produce_3(S12,E8,unspecified,G5) )
+      & is_addition_to_2(s0,X9,X1)
+      & ? [X11] :
+          ( speed_1(s0,X11)
+          & achieved_3(s0,E10,X2,X11)
+          & in_2(s0,E10,X9) ) ) )).
+
+% ::id 65_nonfiction_IBM-1401;NE
+% ::snt This is possible because of the IBM Report Program Generator , a unique system which permits programs to be created with a minimum of time and effort .
+fof(ex1414052043426,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,G7,E8,E9,X11,A12,E10] :
+      ( ibm__report_program_generator_1(s0,X5)
+      & time_1(s0,X1)
+      & effort_1(s0,X2)
+      & is_minimum_of_2(s0,X3,G6)
+      & unique_1(s0,X4)
+      & ? [S13] :
+          ( permits_4(s0,E9,X4,G7,S13)
+          & created_3(S13,E8,unspecified,G7)
+          & with_2(S13,E8,X3) )
+      & system_1(s0,X4)
+      & programs_1(s0,G7)
+      & is_of_2(s0,X1,G6)
+      & is_of_2(s0,X2,G6)
+      & X5 = X4
+      & possible_1(s0,A12)
+      & is_3(s0,E10,X11,A12)
+      & because_of_2(s0,E10,X5) ) )).
+
+% ::id 66_nonfiction_IBM-1401;NE
+% ::snt This example illustrates how the Report Program Generator simplifies the preparation of one part of an Expense Distribution Report -LRB- The Major Total Line -RRB- :
+fof(ex1414052043752,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,E7] :
+      ( example_1(s0,X6)
+      & report_program_generator_1(s0,X5)
+      & expense_distribution_report_1(s0,X2)
+      & major_1(s0,X1)
+      & total_1(s0,X1)
+      & line_1(s0,X1)
+      & one_1(s0,X3)
+      & is_part_of_2(s0,X3,X2)
+      & is_preparation_of_2(s0,X4,X3)
+      & X2 = X1
+      & ? [S10] :
+          ( illustrates_3(s0,E7,X6,S10)
+          & ? [X8,E9] :
+              ( is_how_2(S10,E9,X8)
+              & simplifies_3(S10,E9,X5,X4) ) ) ) )).
+
+% ::id 67_nonfiction_IBM-1401;NE
+% ::snt Without the Report Program Generator , the program to get the Major Total Line would be written out in detail , step by step :
+fof(ex1414052044070,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( major_1(s0,X1)
+      & total_1(s0,X1)
+      & line_1(s0,X1)
+      & ? [S9] :
+          ( program_2(s0,X3,S9)
+          & get_3(S9,E4,unspecified,X1) )
+      & report_program_generator_1(s0,X2)
+      & ? [X5,X6,X7,E8] :
+          ( detail_1(s0,X7)
+          & step_1(s0,X5)
+          & is_step_by_2(s0,X6,X5)
+          & is_of_2(s0,X7,X6)
+          & written_out_3(s0,E8,unspecified,X3)
+          & in_2(s0,E8,X7)
+          & without_2(s0,E8,X2) ) ) )).
+
+% ::id 68_nonfiction_IBM-1401;NE
+% ::snt But with the Report Program Generator , all the programmer has to write are these two statements :
+fof(ex1414052044378,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( report_program_generator_1(s0,X1)
+      & two_1(s0,G2)
+      & statements_1(s0,G2)
+      & ? [X5] :
+          ( programmer_1(s0,X5)
+          & ? [S6] :
+              ( has_3(s0,E4,X5,S6)
+              & are_write_3(S6,E3,X5,G2) )
+          & with_2(s0,E4,X1) ) ) )).
+
+% ::id 69_nonfiction_IBM-1401;NE
+% ::snt It's just as easy to write the statements to generate the rest of the report !
+fof(ex1414052044688,axiom,(
+    ? [X1,X2,G3,A8,E4,E5,E6,S7] :
+      ( report_1(s0,X1)
+      & is_rest_of_2(s0,X2,X1)
+      & statements_1(s0,G3)
+      & just_as_easy_1(s0,A8)
+      & ? [S9] :
+          ( fact_2(s0,S7,S9)
+          & ? [S10] :
+              ( write_4(S9,E5,unspecified,G3,S10)
+              & generate_3(S10,E4,G3,X2) ) )
+      & is_3(s0,E6,S7,A8) ) )).
+
+% ::id 70_nonfiction_IBM-1401;NE
+% ::snt The 1401 itself does the work of converting the programmers ' statements into the detailed instructions .
+fof(ex1414052045003,axiom,(
+    ? [X1,G2,G3,G4,E5,S8,X7,E6] :
+      ( is_work_of_2(s0,X1,S8)
+      & programmers_1(s0,G2)
+      & is_statements_of_2(s0,G4,G2)
+      & detailed_1(s0,G3)
+      & instructions_1(s0,G3)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & converting_3(S9,E5,unspecified,G4)
+          & into_2(S9,E5,G3) )
+      & choose1(X7,constant__1401)
+      & is_of_2(s0,constant__1401,X7)
+      & does_3(s0,E6,constant__1401,X1) ) )).
+
+% ::id 71_nonfiction_IBM-1401;NE
+% ::snt The Report Program Generator is an example of what IBM Programming Systems can accomplish .
+fof(ex1414052045324,axiom,(
+    ? [X1,X2,E3,S4] :
+      ( report_program_generator_1(s0,X1)
+      & is_example_of_2(s0,X2,S4)
+      & ? [S8] :
+          ( fact_2(s0,S4,S8)
+          & ? [X5,G6] :
+              ( ibm__programming_systems_1(S8,G6)
+              & ? [E7] : accomplish_3(S8,E7,G6,X5) ) )
+      & is_3(s0,E3,X1,X2) ) )).
+
+% ::id 72_nonfiction_IBM-1401;NE
+% ::snt With IBM you can be certain of total systems support for maximum profitability .
+fof(ex1414052045640,axiom,(
+    ? [X1,X2,X3,A5,E4] :
+      ( maximum_1(s0,X2)
+      & profitability_1(s0,X2)
+      & total_1(s0,X3)
+      & is_systems_support_for_2(s0,X3,X2)
+      & is_certain_of_2(s0,A5,X3)
+      & be_3(s0,E4,X1,A5)
+      & with_2(s0,E4,ibm_) ) )).
+
+% ::id 73_nonfiction_IBM-1401;NE
+% ::snt IBM Stands For Service
+fof(ex1414052045943,axiom,(
+    ? [X1,E2] :
+      ( service_1(s0,X1)
+      & stands_2(s0,E2,ibm_)
+      & for_2(s0,E2,X1) ) )).
+
+% ::id 74_nonfiction_IBM-1401;NE
+% ::snt Service that begins long before the delivery of a computer ... and continues in depth long after .
+fof(ex1414052046265,axiom,(
+    ? [X1,X2,X3,X4,E5,E6,E7] :
+      ( computer_1(s0,X1)
+      & is_delivery_of_2(s0,X2,X1)
+      & depth_1(s0,X3)
+      & begins_2(s0,E5,X4)
+      & before_2(s0,E5,X2)
+      & continues_2(s0,E6,X4)
+      & in_2(s0,E6,X3)
+      & service_1(s0,X4)
+      & long_1(s0,E5)
+      & long_after_1(s0,E6)
+      & xxx_1(s0,E7)
+      & link_2(s0,E7,X4) ) )).
+
+% ::id 75_nonfiction_IBM-1401;NE
+% ::snt Service that has been proven by years of data processing experience .
+fof(ex1414052046581,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( has_proven_3(s0,E3,G2,X1)
+      & service_1(s0,X1)
+      & ? [G5] :
+          ( data_1(s0,G5)
+          & experience_1(s0,G5)
+          & is_years_of_2(s0,G2,G5) )
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X1) ) )).
+
+% ::id 76_nonfiction_IBM-1401;NE
+% ::snt New IBM Services include :
+fof(ex1414052046879,axiom,(
+    ? [E1] : include_2(s0,E1,new_ibm__services) )).
+
+% ::id 77_nonfiction_IBM-1401;NE
+% ::snt Programmed Applications Library
+fof(ex1414052047175,axiom,(
+    ? [X1,E2] :
+      ( programmed_1(s0,X1)
+      & applications_library_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 78_nonfiction_IBM-1401;NE
+% ::snt Pre-tested computer programs designed to handle various major data processing functions common to firms within a specific industry .
+fof(ex1414052047494,axiom,(
+    ? [X1,G2,G3,G4,E5,E6,E7] :
+      ( specific_1(s0,X1)
+      & industry_1(s0,X1)
+      & is_firms_within_2(s0,G2,X1)
+      & various_1(s0,G3)
+      & major_1(s0,G3)
+      & is_common_to_2(s0,G3,G2)
+      & data_processing_functions_1(s0,G3)
+      & pre_tested_1(s0,G4)
+      & ? [S8] :
+          ( designed_4(s0,E6,unspecified,G4,S8)
+          & handle_3(S8,E5,G4,G3) )
+      & computer_programs_1(s0,G4)
+      & xxx_1(s0,E7)
+      & link_2(s0,E7,G4) ) )).
+
+% ::id 79_nonfiction_IBM-1401;NE
+% ::snt Programming Systems Support
+fof(ex1414052047794,axiom,(
+    ? [X1,E2] :
+      ( programming_systems_support_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 80_nonfiction_IBM-1401;NE
+% ::snt To keep customers up-to-date on the availability and use of all new programming systems .
+fof(ex1414052048106,axiom,(
+    ? [X1,X2,G3,G4,G5,A8,E6,E7] :
+      ( availability_1(s0,X1)
+      & use_1(s0,X2)
+      & ? [G9] :
+          ( new_1(s0,G9)
+          & programming_systems_1(s0,G9)
+          & is_of_2(s0,G4,G9) )
+      & is_of_2(s0,X1,G3)
+      & is_of_2(s0,X2,G3)
+      & G4 = G3
+      & customers_1(s0,G5)
+      & is_up_to_date_on_2(s0,A8,G4)
+      & ? [S10] :
+          ( keep_2(s0,E7,S10)
+          & is_3(S10,E6,G5,A8) ) ) )).
+
+% ::id 81_nonfiction_IBM-1401;NE
+% ::snt To assist the IBM programming staff in reflecting customer requirements in the specification of new programming systems .
+fof(ex1414052048419,axiom,(
+    ? [X1,X2,G3,G4,E5,E6,S7] :
+      ( ibm__programming_staff_1(s0,X2)
+      & is_specification_of_2(s0,X1,G3)
+      & new_1(s0,G3)
+      & programming_systems_1(s0,G3)
+      & is_customer_requirements_in_2(s0,G4,X1)
+      & ? [S8] :
+          ( fact_2(s0,S7,S8)
+          & reflecting_3(S8,E5,X2,G4) )
+      & assist_3(s0,E6,unspecified,X2)
+      & in_2(s0,E6,S7) ) )).
+
+% ::id 82_nonfiction_IBM-1401;NE
+% ::snt Other services available to every IBM customer :
+fof(ex1414052048724,axiom,(
+    ? [E1,G2] :
+      ( ! [X3] :
+          ( ibm__customer_1(s0,X3)
+         => is_available_to_2(s0,G2,X3) )
+      & services_1(s0,G2)
+      & xxx_1(s0,E1)
+      & link_2(s0,E1,G2) ) )).
+
+% ::id 83_nonfiction_IBM-1401;NE
+% ::snt Program Library
+fof(ex1414052049021,axiom,(
+    ? [X1,E2] :
+      ( program_library_1(s0,X1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,X1) ) )).
+
+% ::id 84_nonfiction_IBM-1401;NE
+% ::snt A library of 1401 programs will be established to aid all 1401 customers in solving specific applications , scientific as well as commercial .
+fof(ex1414052049340,axiom,(
+    ? [X1,G2] :
+      ( is_library_of_2(s0,X1,G2)
+      & predicate__1401_programs_1(s0,G2)
+      & ? [G3,E4,E5,E6,S8] :
+          ( specific_1(s0,G3)
+          & applications_1(s0,G3)
+          & ? [S9] :
+              ( fact_2(s0,S8,S9)
+              & solving_3(S9,E4,G3) )
+          & ? [S10] :
+              ( established_4(s0,E6,unspecified,X1,S10)
+              & ? [G7] :
+                  ( predicate__1401_customers_1(S10,G7)
+                  & aid_3(S10,E5,X1,G7)
+                  & in_2(S10,E5,S8) ) ) ) ) )).
+
+% ::id 85_nonfiction_IBM-1401;NE
+% ::snt These will include programs written by customers and programs written by IBM .
+fof(ex1414052049663,axiom,(
+    ? [G1,G2,E3] :
+      ( ? [G4,G5,E6] :
+          ( customers_1(s0,G4)
+          & written_3(s0,E6,G4,G5)
+          & programs_1(s0,G5)
+          & is_of_2(s0,G5,G2) )
+      & ? [G7,E8] :
+          ( written_3(s0,E8,ibm_,G7)
+          & programs_1(s0,G7)
+          & is_of_2(s0,G7,G2) )
+      & include_3(s0,E3,G1,G2) ) )).
+
+% ::id 86_nonfiction_IBM-1401;NE
+% ::snt Schools and Seminars
+fof(ex1414052049963,axiom,(
+    ? [G1,E2] :
+      ( ? [G3] :
+          ( schools_1(s0,G3)
+          & is_of_2(s0,G3,G1) )
+      & ? [G4] :
+          ( seminars_1(s0,G4)
+          & is_of_2(s0,G4,G1) )
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 87_nonfiction_IBM-1401;NE
+% ::snt Executive schools for management personnel .
+fof(ex1414052050264,axiom,(
+    ? [G1,G2,E3] :
+      ( management_personnel_1(s0,G1)
+      & executive_1(s0,G2)
+      & is_schools_for_2(s0,G2,G1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,G2) ) )).
+
+% ::id 88_nonfiction_IBM-1401;NE
+% ::snt Programming schools for methods personnel .
+fof(ex1414052050564,axiom,(
+    ? [G1,G2,E3] :
+      ( methods_personnel_1(s0,G1)
+      & is_programming_schools_for_2(s0,G2,G1)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,G2) ) )).
+
+% ::id 89_nonfiction_IBM-1401;NE
+% ::snt Industry seminars where customers meet to discuss subjects of common interest .
+fof(ex1414052050881,axiom,(
+    ? [X1,G2,G3,G4,S8,E5,E6,E7] :
+      ( common_1(s0,X1)
+      & interest_1(s0,X1)
+      & customers_1(s0,G3)
+      & is_subjects_of_2(s0,G2,X1)
+      & ? [S9] :
+          ( fact_2(s0,S8,S9)
+          & ? [S10] :
+              ( meet_3(S9,E6,G3,S10)
+              & discuss_3(S10,E5,G3,G2) ) )
+      & industry_seminars_1(s0,G4)
+      & is_where_2(s0,S8,G4)
+      & xxx_1(s0,E7)
+      & link_2(s0,E7,G4) ) )).
+
+% ::id 90_nonfiction_IBM-1401;NE
+% ::snt Branch Offices
+fof(ex1414052051180,axiom,(
+    ? [G1,E2] :
+      ( branch_offices_1(s0,G1)
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 91_nonfiction_IBM-1401;NE
+% ::snt More than 200 branch offices serve customer needs promptly and efficiently .
+fof(ex1414052051484,axiom,(
+    ? [G1,G2,E3] :
+      ( more_than_200_1(s0,G2)
+      & branch_offices_1(s0,G2)
+      & customer_needs_1(s0,G1)
+      & promptly_1(s0,E3)
+      & efficiently_1(s0,E3)
+      & serve_3(s0,E3,G2,G1) ) )).
+
+% ::id 92_nonfiction_IBM-1401;NE
+% ::snt Sales and Systems Representatives
+fof(ex1414052051791,axiom,(
+    ? [G1,E2] :
+      ( ? [G3] :
+          ( sales_1(s0,G3)
+          & is_of_2(s0,G3,G1) )
+      & ? [G4] :
+          ( systems_representatives_1(s0,G4)
+          & is_of_2(s0,G4,G1) )
+      & xxx_1(s0,E2)
+      & link_2(s0,E2,G1) ) )).
+
+% ::id 93_nonfiction_IBM-1401;NE
+% ::snt Experienced , highly trained individuals work with customers in applying IBM methods to their requirements .
+fof(ex1414052052107,axiom,(
+    ? [G8,G1,G2,G3,G4,E5,E6,S7] :
+      ( experienced_1(s0,G4)
+      & highly_trained_1(s0,G4)
+      & individuals_1(s0,G4)
+      & customers_1(s0,G3)
+      & ibm__methods_1(s0,G2)
+      & choose3(G8,G4,G2,G3)
+      & is_requirements_of_2(s0,G1,G8)
+      & ? [S9] :
+          ( fact_2(s0,S7,S9)
+          & applying_3(S9,E5,G4,G2)
+          & to_2(S9,E5,G1) )
+      & work_2(s0,E6,G4)
+      & with_2(s0,E6,G3)
+      & in_2(s0,E6,S7) ) )).
+
+% ::id 94_nonfiction_IBM-1401;NE
+% ::snt These are just a few of the many IBM services .
+fof(ex1414052052414,axiom,(
+    ? [G2,E1,X3] :
+      ( just_1(s0,X3)
+      & ? [G4] :
+          ( ibm__services_1(s0,G4)
+          & is_of_2(s0,X3,G4) )
+      & are_3(s0,E1,G2,X3) ) )).
+
+% ::id 95_nonfiction_IBM-1401;NE
+% ::snt Your IBM Sales Representative will be pleased to discuss all of them with you .
+fof(ex1414052052727,axiom,(
+    ? [X7,X2,X1] :
+      ( is_ibm__sales_representative_of_2(s0,X1,X2)
+      & ? [G6,E3,E4,S8] :
+          ( be_pleased_3(s0,E4,X1,S8)
+          & ? [X5] :
+              ( is_of_2(S8,X5,G6)
+              & discuss_3(S8,E3,X1,X5)
+              & with_2(S8,E3,X7) ) ) ) )).
+
+% ::id 96_nonfiction_IBM-1401;NE
+% ::snt International Business Machines Corporation Data Processing Division , 112 East Post Road White Plains , New York
+fof(ex1414052053027,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & link_2(s0,E1,international_business_machines_corporation_data_processing_division_112_east_post_road_white_plains_new_york) ) )).
+
+% ::id 97_nonfiction_IBM-1401;NE
+% ::snt -LSB- Footnote A : COBOL specifications were developed by the Conference on Data Systems Languages , a voluntary cooperative effort of users , and manufacturers of data processing systems . -RSB-
+fof(ex1414052053350,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,G7,G8,E9] :
+      ( voluntary_1(s0,X1)
+      & cooperative_1(s0,X1)
+      & is_effort_of_2(s0,X1,G6)
+      & is_conference_on_2(s0,X2,G7)
+      & data_systems_languages_1(s0,G7)
+      & users_1(s0,G3)
+      & data_processing_systems_1(s0,G4)
+      & is_manufacturers_of_2(s0,G5,G4)
+      & is_of_2(s0,G3,G6)
+      & is_of_2(s0,G5,G6)
+      & G7 = X1
+      & cobol__specifications_1(s0,G8)
+      & is_before_2(s0,E9,e0)
+      & were_developed_2(s0,E9,G8)
+      & by_2(s0,E9,X2) ) )).
+

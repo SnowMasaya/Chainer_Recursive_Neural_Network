@@ -1,0 +1,193 @@
+# ::id 1_blog_KNB_004_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+∃ EVENT[2] ENTITY[1] (京都_観光(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_004_Kyoto_1-1-1-01;NJ
+# ::snt 紅葉 真っ盛り です
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 紅葉_真っ盛り(ENTITY[2]) ∧ です(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 3_blog_KNB_004_Kyoto_1-1-10-01;NJ
+# ::snt 今日 の 構内 の 紅葉 は きれい だっ た ので 、 たくさん の 人 が 見 て 、 きれい だ なあ という 感覚 を 共有 し たい 気持ち は あり ます が ・・・。
+∃ ENTITY[10] ENTITY[6] SITUATION[5] ENTITY[9] EVENT[4] EVENT[11] EVENT[12] EVENT[13] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 今日(ENTITY[2]) ∧
+  構内(ENTITY[3]) ∧
+   の_紅葉(ENTITY[3], ENTITY[1]) ∧ の__紅葉(ENTITY[2], ENTITY[1]) ∧
+    past(EVENT[4]) ∧
+     ENTITY[6] = *speaker*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+      ENTITY[10] = *pro*{ENTITY[6], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+       THAT_感覚(MD_なあ(きれい_だ(EVENT[11], ENTITY[10])), ENTITY[9]) ∧
+        気持ち(SITUATION[5],
+         CONJ_te(たくさん_の ENTITY[7] (人(ENTITY[7]), ∃ EVENT[8] 見_て(EVENT[8], ENTITY[7])),
+          共有する.0_たい(EVENT[12], ENTITY[6], ENTITY[9]))) ∧
+         MD_が(CRD_ので(きれい_だっ_た(EVENT[4], ENTITY[1]), あり_ます(EVENT[13], SITUATION[5]))))
+
+# ::id 4_blog_KNB_004_Kyoto_1-1-2-01;NJ
+# ::snt 大学 構内 も すっかり 紅く なっ て 、 きれい です ね 。
+∃ EVENT[2] EVENT[4] ENTITY[1] (
+ 大学_構内(ENTITY[1]) ∧
+  ADV_すっかり(EVENT[2]) ∧ MD_ね(CONJ_te(紅く_なっ_て(EVENT[2], ENTITY[1]), きれい_です(EVENT[4], ENTITY[1]))))
+
+# ::id 5_blog_KNB_004_Kyoto_1-1-3-01;NJ
+# ::snt 市内 の 名所 に 見 に 行っ て み たい もの です が 、 ＮＦ やら 授業 やら で なかなか 時間 が とれ そう に あり ませ ん 。
+∃ ENTITY[9] SITUATION[5] ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[4] ENTITY[3] (
+ ENTITY[2] = *speaker* ∧
+  市内(ENTITY[4]) ∧
+   の_名所(ENTITY[4], ENTITY[3]) ∧
+    FACT(SITUATION[5], 見(EVENT[6], ENTITY[2])) ∧
+     もの(SITUATION[1],
+      行っ_て_み_たい(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = SITUATION[5] ∧ に(EVENT[7]) = ENTITY[3]) ∧
+      ENTITY[9] = *speaker*{ENTITY[3], ENTITY[4]} ∧
+       CONJ_が(です(EVENT[8], _, SITUATION[1]),
+        ¬ ∃ SITUATION[13] EVENT[16] GROUP[11] ENTITY[14] ENTITY[10] (
+              CONJ_やら(is_element_of(ENTITY[ＮＦ], GROUP[11]),
+               ∃ ENTITY[12] (授業(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11]))) ∧
+               やら(GROUP[11], ENTITY[10]) ∧
+                時間(ENTITY[14]) ∧
+                 FACT(SITUATION[13], MD_そう(∃ EVENT[15] とれ(EVENT[15], ENTITY[9], ENTITY[14]))) ∧
+                  ADV_なかなか(EVENT[16]) ∧
+                   あり_ませ(EVENT[16], ENTITY[9]) ∧ に(EVENT[16]) = SITUATION[13] ∧
+                    で(EVENT[16]) = ENTITY[10])))
+
+# ::id 6_blog_KNB_004_Kyoto_1-1-4-01;NJ
+# ::snt 時間 が とれ た ころ に は 散っ て い た 、 なんて こと に なら なけれ ば いい の です が 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[14] (
+ ENTITY[3] = *pro*{ENTITY[1]} ∧
+  FACT(SITUATION[2],
+   ¬ ∃ ENTITY[9] SITUATION[8] ENTITY[7] SITUATION[6] EVENT[11] EVENT[12] EVENT[13] ENTITY[10] ENTITY[4] (
+         ENTITY[7] = *pro*{ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+          ENTITY[9] = *speaker*{ENTITY[7], ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+           時間(ENTITY[10]) ∧
+            ころ(SITUATION[8], とれ_た(EVENT[11], ENTITY[9], ENTITY[10])) ∧
+             FACT(SITUATION[6], 散っ_て_い_た(EVENT[12], ENTITY[7]) ∧ に(EVENT[12]) = SITUATION[8]) ∧
+              なんて SITUATION[5] (SITUATION[5] = SITUATION[6], LINK_こと(SITUATION[5], ENTITY[4])) ∧
+               past(EVENT[11]) ∧ past(EVENT[12]) ∧ なら(EVENT[13], ENTITY[3], ENTITY[4]))) ∧
+   ば(SITUATION[2], ENTITY[1]) ∧ MD_が(いい_の_です(EVENT[14], ENTITY[1])))
+
+# ::id 7_blog_KNB_004_Kyoto_1-1-5-01;NJ
+# ::snt 個人的 に は ここ から が 本題 。
+∃ ENTITY[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ 個人的(ENTITY[1]) ∧
+  ENTITY[2] = ここ ∧
+   本題(ENTITY[3]) ∧
+    xxx(EVENT[4], _, ENTITY[3]) ∧ ARG0_から(EVENT[4]) = ENTITY[2] ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 8_blog_KNB_004_Kyoto_1-1-6-01;NJ
+# ::snt 大学 に 入学 し て から ずっと 疑問 に 思っ て い た の です が 、 高校生 や 中年 女性 の 団体 が バス で 大学 に やってき て 時計台 の 前 で 記念 撮影 など を し て いる の は 、 京都 大学 が 京都 の 観光 名所 の 一部 に なっ て いる から な ん でしょ う か 。
+QUEST(∃ SITUATION[8] SITUATION[2] ENTITY[1] EVENT[4] EVENT[6] EVENT[15] EVENT[20] ENTITY[3] ENTITY[5] GROUP[10] ENTITY[14] ENTITY[13] ENTITY[17] ENTITY[19] ENTITY[18] ENTITY[16] ENTITY[9] (
+      ENTITY[1] = *speaker* ∧
+       大学(ENTITY[3]) ∧
+        FACT(SITUATION[2], 入学する.0_て(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+         疑問(ENTITY[5]) ∧
+          CONJ_や(∃ ENTITY[11] (高校生(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+           ∃ ENTITY[12] (中年_女性(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+           の_団体(GROUP[10], ENTITY[9]) ∧
+            バス(ENTITY[13]) ∧
+             大学(ENTITY[14]) ∧
+              時計台(ENTITY[17]) ∧
+               の_前(ENTITY[17], ENTITY[16]) ∧
+                記念_撮影(ENTITY[19]) ∧
+                 など(ENTITY[19], ENTITY[18]) ∧
+                  の(SITUATION[8],
+                   CONJ_te(やってき_て(EVENT[15], ENTITY[9]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+                         で(EVENT[15]) = ENTITY[13],
+                    し_て_いる(EVENT[20], ENTITY[9], ENTITY[18]) ∧ で(EVENT[20]) = ENTITY[16])) ∧
+                   ADV_ずっと(EVENT[6]) ∧
+                    past(EVENT[6]) ∧
+                     CONJ_が(思っ_て_い_た_の_です(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+                           te_から(EVENT[6]) = SITUATION[2],
+                      MD_う(∃ SITUATION[21] EVENT[25] EVENT[26] ENTITY[24] ENTITY[23] ENTITY[22] (
+                            京都_大学(ENTITY[22]) ∧
+                             の_観光_名所(ENTITY[京都], ENTITY[24]) ∧
+                              の_一部(ENTITY[24], ENTITY[23]) ∧
+                               FACT(SITUATION[21],
+                                なっ_て_いる(EVENT[25], ENTITY[22]) ∧ に(EVENT[25]) = ENTITY[23]) ∧
+                                な_ん_でしょ(EVENT[26], SITUATION[8]) ∧
+                                 から(EVENT[26]) = SITUATION[21])))))
+
+# ::id 9_blog_KNB_004_Kyoto_1-1-7-01;NJ
+# ::snt どうも 観光 、 特に 京都 観光 と なる と 寺 や 神社 なんか を 思い浮かべる ので 、 大学 が 観光地 で ある と すれ ば 、 それ は とても 意外 で 新鮮 な 感じ が し ます 。
+∃ SITUATION[10] ENTITY[1] ENTITY[16] (
+ ENTITY[16] = それ ∧
+  ENTITY[1] = *speaker* ∧
+   ADV_どうも(SITUATION[10]) ∧
+    CRD_ので(FACT(SITUATION[10],
+          ∀ EVENT[4] ENTITY[2] ENTITY[3] CND_と(
+              観光(ENTITY[3]) ∧ 特に_京都_観光(ENTITY[2]) ∧ namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+               なる(EVENT[4]) ∧ と(EVENT[4]) = ENTITY[3],
+              ∃ GROUP[6] (
+               CONJ_や(∃ ENTITY[7] (寺(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+                ∃ ENTITY[8] (神社(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+                なんか ENTITY[5] (is_element_of(ENTITY[5], GROUP[6]),
+                 ∃ EVENT[9] (思い浮かべる(EVENT[9], ENTITY[1]) ∧ を(EVENT[9]) = ENTITY[5]))))),
+     ∀ EVENT[14] EVENT[11] ENTITY[13] ENTITY[12] CND_ば(大学(ENTITY[12]) ∧ 観光地(ENTITY[13]) ∧ すれ(EVENT[11], で_ある(EVENT[14], ENTITY[12], ENTITY[13])),
+         ∃ SITUATION[21] SITUATION[15] EVENT[19] EVENT[20] EVENT[22] EVENT[23] ENTITY[17] (
+          FACT(SITUATION[21], CONJ_te(意外_で(EVENT[19], ENTITY[17]), 新鮮_な(EVENT[20], ENTITY[17]))) ∧
+           感じ(ENTITY[17]) ∧
+           FACT(SITUATION[15], xxx(EVENT[22], ENTITY[16], ENTITY[17])) ∧
+            ADV_とても(SITUATION[21]) ∧ し_ます(EVENT[23], SITUATION[15])))))
+
+# ::id 10_blog_KNB_004_Kyoto_1-1-8-01;NJ
+# ::snt 考え て みれ ば 京都大学 は それなり に 歴史 の ある 大学 で 、 見所 も ある もの だ けれども 、 それ が 遠く から はるばる やってき た 人たち の 巡回 ルート の 中 に 入る という の は 自分 の 頭 の 中 に は ない 発想 で 、 それ は つまり 京都大学 と 金閣 銀閣 清水寺 その 他 が 肩 を 並べ て いる と も 言い換え られる の で は ない か と 思い ます 。
+∃ SITUATION[40] SITUATION[34] ENTITY[32] ENTITY[1] ENTITY[33] ENTITY[28] ENTITY[15] EVENT[29] EVENT[30] EVENT[38] EVENT[39] EVENT[31] ENTITY[24] ENTITY[37] GROUP[35] EVENT[21] EVENT[23] ENTITY[20] ENTITY[18] ENTITY[17] ENTITY[16] ENTITY[27] ENTITY[26] ENTITY[14] ENTITY[36] (
+ ENTITY[15] = それ{ENTITY[1], ENTITY[京都大学]} ∧
+  遠く(ENTITY[20]) ∧
+   やってき_た(EVENT[21], ENTITY[18]) ∧ から(EVENT[21]) = ENTITY[20] ∧ 人たち(ENTITY[18]) ∧
+    の_巡回_ルート(ENTITY[18], ENTITY[17]) ∧
+     の_中(ENTITY[17], ENTITY[16]) ∧
+      THAT_の(入る(EVENT[23], ENTITY[15]) ∧ に(EVENT[23]) = ENTITY[16], ENTITY[14]) ∧
+       ENTITY[28] = 自分{ENTITY[26], ENTITY[24], ENTITY[14], ENTITY[16], ENTITY[17], ENTITY[18], ENTITY[20], ENTITY[1], ENTITY[京都大学]} ∧
+        の_頭(ENTITY[28], ENTITY[27]) ∧
+         の_中(ENTITY[27], ENTITY[26]) ∧
+          ENTITY[33] = それ{ENTITY[1], ENTITY[14], ENTITY[26], ENTITY[27], ENTITY[16], ENTITY[17], ENTITY[18], ENTITY[20], ENTITY[京都大学], ENTITY[24]} ∧
+           他(ENTITY[36]) ∧
+            ADV_はるばる(EVENT[21]) ∧
+             past(EVENT[21]) ∧
+              ENTITY[1] = *speaker* ∧
+               ない(EVENT[29], ENTITY[24]) ∧ に(EVENT[29]) = ENTITY[26] ∧ 発想(ENTITY[24]) ∧
+                ENTITY[32] = *speaker*{ENTITY[1], ENTITY[14], ENTITY[26], ENTITY[27], ENTITY[16], ENTITY[17], ENTITY[18], ENTITY[20], ENTITY[京都大学], ENTITY[24]} ∧
+                 CONJ_と(is_element_of(ENTITY[京都大学], GROUP[35]), is_element_of(ENTITY[金閣], GROUP[35]), is_element_of(ENTITY[銀閣], GROUP[35]),
+                  is_element_of(ENTITY[清水寺], GROUP[35]), is_element_of(ENTITY[36], GROUP[35])) ∧
+                  肩(ENTITY[37]) ∧
+                   FACT(SITUATION[34], 並べ_て_いる(EVENT[38], GROUP[35], ENTITY[37])) ∧
+                    ADV_つまり(SITUATION[40]) ∧
+                     CONJ_te(CRD_けれども(∀ ENTITY[2] EVENT[3] CND_ば(ENTITY[2] = *speaker*{ENTITY[1]} ∧ 考え_て_みれ(EVENT[3], ENTITY[2]), ∃ EVENT[13] GROUP[4] (
+                                    CONJ_で(∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] (
+                                          それなり(ENTITY[7]) ∧
+                                           歴史(ENTITY[8]) ∧
+                                            ある(EVENT[9], ENTITY[8]) ∧
+                                             に(EVENT[9]) = ENTITY[7] ∧
+                                             LOC(EVENT[9]) = ENTITY[5] ∧
+                                             大学(ENTITY[5]) ∧
+                                             is_element_of(ENTITY[5], GROUP[4])),
+                                     ∃ EVENT[12] ENTITY[11] ENTITY[10] (
+                                      見所(ENTITY[11]) ∧
+                                       THAT_もの(ある(EVENT[12], ENTITY[11]), ENTITY[10]) ∧
+                                        is_element_of(ENTITY[10], GROUP[4]))) ∧
+                                     だ(EVENT[13], ENTITY[京都大学], GROUP[4]))),
+                           で(EVENT[30], ENTITY[14], ENTITY[24])),
+                      思い_ます(EVENT[31], ENTITY[1],
+                       FACT(SITUATION[40],
+                        言い換え_られる_の(EVENT[39], ENTITY[32], ENTITY[33]) ∧ と(EVENT[39]) = SITUATION[34]))))
+
+# ::id 11_blog_KNB_004_Kyoto_1-1-9-01;NJ
+# ::snt おそらく 大学 が 自由 で オープン な 雰囲気 を 醸し出し て いる の も この 現象 の 理由 の ひとつ な の で は ない か と 考え ます が 、 これ を どう とらえ て いい の か 自分 に は よく わかり ませ ん 。
+∃ SITUATION[21] SITUATION[14] SITUATION[3] ENTITY[1] ENTITY[15] EVENT[7] EVENT[8] EVENT[9] EVENT[13] EVENT[2] ENTITY[5] ENTITY[4] ENTITY[11] ENTITY[10] ENTITY[12] (
+ 現象(ENTITY[12]) ∧
+  ENTITY[15] = 自分{ENTITY[12], ENTITY[10], ENTITY[11], ENTITY[4], ENTITY[5]} ∧
+   ENTITY[1] = *speaker* ∧
+    大学(ENTITY[4]) ∧
+     CONJ_te(自由_で(EVENT[7], ENTITY[5]), オープン_な(EVENT[8], ENTITY[5])) ∧ 雰囲気(ENTITY[5]) ∧
+      の(SITUATION[3], 醸し出し_て_いる(EVENT[9], ENTITY[4], ENTITY[5])) ∧
+       の_理由(ENTITY[12], ENTITY[11]) ∧
+        の_ひとつ(ENTITY[11], ENTITY[10]) ∧
+         ADV_おそらく(SITUATION[14]) ∧
+          ADV_よく(SITUATION[21]) ∧
+           CONJ_が(考え_ます(EVENT[2], ENTITY[1], FACT(SITUATION[14], な_の(EVENT[13], SITUATION[3], ENTITY[10]))),
+            FACT(SITUATION[21],
+             ¬ ∃ EVENT[16] (
+                   わかり_ませ(EVENT[16], ENTITY[1],
+                    QUEST(∃ ENTITY[17] EVENT[19] ? ENTITY[18] (
+                          ENTITY[17] = これ{ENTITY[1], ENTITY[15], ENTITY[12], ENTITY[10], ENTITY[11], ENTITY[4], ENTITY[5]} ∧
+                           ADV(ENTITY[18], EVENT[19]) ∧
+                            とらえ_て_いい_の(EVENT[19], _, ENTITY[17])))) ∧
+                    に(EVENT[16]) = ENTITY[15]))))

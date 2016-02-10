@@ -1,0 +1,997 @@
+# ::id 1_K201401010W5XP3XX00001;NJ
+# ::snt ご当地バンザイ
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ご当地バンザイ))
+
+# ::id 2_K201401010W5XP3XX00001;NJ
+# ::snt ／ 地元アイドル かっけー
+( EVENT-2 / かっけー
+      :ARG0 ( ENTITY-1 / 地元アイドル))
+
+# ::id 3_K201401010W5XP3XX00001;NJ
+# ::snt ◎ 魅せる
+( EVENT-1 / 魅せる)
+
+# ::id 4_K201401010W5XP3XX00001;NJ
+# ::snt ＜ 「 ＳＣＫＧＩＲＬＳ 」 （ 宮城 ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-ＳＣＫＧＩＲＬＳ / ENTITY
+             :name ( n-3 / name
+                    :op1 "ＳＣＫＧＩＲＬＳ")
+             :NAMELY ( ENTITY-1 / 宮城)))
+
+# ::id 5_K201401010W5XP3XX00001;NJ
+# ::snt ／ 被災地 の 思い 伝え たい ＞
+( EVENT-4 / 伝え_たい
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 思い
+             :の ( ENTITY-3 / 被災地)))
+
+# ::id 6_K201401010W5XP3XX00001;NJ
+# ::snt 太平洋 を 望む 気仙沼市 の 岩井崎 。
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-岩井崎 / ENTITY
+             :name ( n-2 / name
+                    :op1 "岩井崎")
+             :の ( ENTITY-気仙沼市 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "気仙沼市"))))
+
+# ::id 7_K201401010W5XP3XX00001;NJ
+# ::snt 昨年 １０ 月 の 「 復興！！お伊勢浜ライブフェスタ 」 に 、 地元 の アイドルグループ 「 ＳＣＫＧＩＲＬＳ （ エスシーケー・ガールズ ） 」 が 登場 し た 。
+( EVENT-4 / 登場する.0_た
+      :ARG0 ( ENTITY-ＳＣＫＧＩＲＬＳ / ENTITY
+             :name ( n-7 / name
+                    :op1 "ＳＣＫＧＩＲＬＳ")
+             :NAMELY ( ENTITY-2 / アイドルグループ
+                    :の ( ENTITY-3 / 地元))
+             :NAMELY ( ENTITY-エスシーケー.ガールズ / ENTITY
+                    :name ( n-9 / name
+                           :op1 "エスシーケー.ガールズ")))
+      :に ( ENTITY-復興 ！ ！ お伊勢浜ライブフェスタ / ENTITY
+             :name ( n-8 / name
+                    :op1 "復興 ！ ！ お伊勢浜ライブフェスタ")
+             :の ( ENTITY-1 / CD_１０_月
+                    :MOD ( mod-5 / 昨年)))
+      :MOD ( mod-6 / past))
+
+# ::id 8_K201401010W5XP3XX00001;NJ
+# ::snt 集まっ た 男性ファン の 歓声 に 応え 、 歌 や 踊り に 元気 いっぱい の ステージ を 繰り広げ た 。
+( EVENT-14 / 繰り広げ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-6 / 応え
+                    :に ( ENTITY-2 / 歓声
+                           :の ( ENTITY-3 / 男性ファン
+                                  :ARG0-of ( EVENT-5 / 集まっ_た
+                                         :MOD ( mod-16 / past))))))
+      :ARG1 ( ENTITY-10 / ステージ
+             :の ( EVENT-13 / いっぱい
+                    :ARG0 ( ENTITY-12 / 元気)))
+      :に ( CONJ-15 / CONJ_や
+             :op1 ( GROUP-7 / AND
+                    :op1 ( ENTITY-8 / 歌)
+                    :op2 ENTITY-19)
+             :op2 ( GROUP-18 / AND
+                    :op1 ( ENTITY-9 / 踊り)
+                    :op2 ENTITY-20))
+      :MOD ( mod-17 / past))
+
+# ::id 9_K201401010W5XP3XX00001;NJ
+# ::snt 「 産地直送気仙沼少女隊 」 の 略 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 略
+             :の ( ENTITY-産地直送気仙沼少女隊 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "産地直送気仙沼少女隊"))))
+
+# ::id 10_K201401010W5XP3XX00001;NJ
+# ::snt ２０１１ 年 １０ 月 に 結成 さ れ た 当時 は 「 ＡＫＢ４８ 」 の 向こう を 張り 「 ＳＣＫ４５ 」 と 名乗っ た 。
+( EVENT-7 / 名乗っ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-6 / 張り
+                    :ARG1 ( ENTITY-5 / 向こう
+                           :の ( ENTITY-ＡＫＢ４８ / ENTITY
+                                  :name ( n-10 / name
+                                         :op1 "ＡＫＢ４８")))))
+      :と ( ENTITY-ＳＣＫ４５ / ENTITY
+             :name ( n-11 / name
+                    :op1 "ＳＣＫ４５"))
+      :TMP ( SITUATION-2 / 当時
+             :THAT ( EVENT-4 / 結成する.0_れ_た
+                    :ARG0 ENTITY-1
+                    :に ( ENTITY-3 / CD_２０１１_年_１０_月)
+                    :MOD ( mod-8 / past)))
+      :MOD ( mod-9 / past))
+
+# ::id 11_K201401010W5XP3XX00001;NJ
+# ::snt 明るい 笑顔 は 引け を 取ら ない 。
+( EVENT-4 / 取ら
+      :ARG0 ( ENTITY-1 / 笑顔
+             :ATTRIBUTE ( ATTRIB-2 / 明るい))
+      :ARG1 ( ENTITY-3 / 引け)
+      :domain-of ( NEG-5 / NEG))
+
+# ::id 12_K201401010W5XP3XX00001;NJ
+# ::snt メンバー は 気仙沼 や 周辺地域 の １０～１９ 歳 まで の １０ 人 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY-1 / メンバー)
+      :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_１０_人)
+             :まで_の ( ENTITY-5 / CD_１０ ～ １９_歳)
+             :の ( GROUP-3 / CONJ_や
+                    :op1 ( ENTITY-気仙沼 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "気仙沼"))
+                    :op2 ( GROUP-3 / AND
+                           :op1 ( ENTITY-4 / 周辺地域)
+                           :op2 ENTITY-8))))
+
+# ::id 13_K201401010W5XP3XX00001;NJ
+# ::snt 締め の あいさつ は 「 んで まず ね （ それでは また ね ） 」 。
+( CONJ-12 / AND
+      :op1 ( ENTITY-4 / ENTITY
+             :THAT ( EVENT-5 / EVENT
+                    :MOD ( mod-10 / また)))
+      :op2 ( EVENT-9 / EVENT
+             :ARG0 ( ENTITY-1 / あいさつ
+                    :の ( ENTITY-2 / 締め))
+             :ARG1 ( ENTITY-3 / ENTITY
+                    :THAT ( EVENT-7 / EVENT
+                           :MOD ( mod-11 / まず)))))
+
+# ::id 14_K201401010W5XP3XX00001;NJ
+# ::snt 地元イベント に 駆り ださ れ たり 、 福祉施設 など を 回っ たり し て 元気 と ぬくもり を 届ける 。
+( CONJ-16 / CONJ_te
+      :op1 ( EVENT-8 / し_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :たり ( CONJ-14 / CONJ_たり
+                    :op1 ( EVENT-4 / 駆り_ださ
+                           :ARG1 ENTITY-1
+                           :に ( ENTITY-3 / 地元イベント))
+                    :op2 ( EVENT-7 / 回っ
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-5 / ENTITY
+                                  :など ( ENTITY-6 / 福祉施設)))))
+      :op2 ( EVENT-12 / 届ける
+             :ARG0 ENTITY-1
+             :ARG1 ( CONJ-15 / CONJ_と
+                    :op1 ( GROUP-9 / AND
+                           :op1 ( ENTITY-10 / 元気)
+                           :op2 ENTITY-18)
+                    :op2 ( GROUP-17 / AND
+                           :op1 ( ENTITY-11 / ぬくもり)
+                           :op2 ENTITY-19))))
+
+# ::id 15_K201401010W5XP3XX00001;NJ
+# ::snt 知名度アップ とともに 、 別 の グループ の ファン の 支持 も 集め ながら 、 活動 の 幅 は 広がっ て いる 。
+( CRD-12 / ながら
+      :op1 ( EVENT-8 / 集め
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-3 / 支持
+                    :の ( ENTITY-4 / ファン
+                           :の ( ENTITY-5 / グループ
+                                  :の ( ENTITY-6 / ENTITY
+                                         :ATTRIBUTE ( ATTRIB-7 / 別))))))
+      :op2 ( EVENT-11 / 広がっ_て_いる
+             :ARG0 ( ENTITY-9 / 幅
+                    :の ( ENTITY-10 / 活動))
+             :とともに ( ENTITY-1 / 知名度アップ)))
+
+# ::id 16_K201401010W5XP3XX00001;NJ
+# ::snt 最年長 で リーダー の 高橋里瀬さん （ １９ ） ＝ 愛称 りせ ＝ は 、 震災 の 津波 で 宮城県 南三陸町 の 自宅 を 失い 、 両親ら 家族 ７ 人 で 仮設住宅 に 暮らす 。
+( EVENT-12 / 暮らす
+      :ARG0 ( ENTITY-高橋里瀬さん / ENTITY
+             :name ( n-14 / name
+                    :op1 "高橋里瀬さん")
+             :の ( GROUP-2 / CONJ_で
+                    :op1 ( ENTITY-3 / 最年長)
+                    :op2 ( ENTITY-4 / リーダー))
+             :ARG0-of ( EVENT-8 / 失い
+                    :ARG1 ( ENTITY-7 / 自宅
+                           :の ( ENTITY-宮城県_南三陸町 / ENTITY
+                                  :name ( n-15 / name
+                                         :op1 "宮城県_南三陸町")))
+                    :で ( ENTITY-5 / 津波
+                           :の ( ENTITY-6 / 震災)))
+             :NAMELY ( ENTITY-1 / CD_１９))
+      :に ( ENTITY-11 / 仮設住宅)
+      :で ( ENTITY-10 / CD_７_人
+             :MOD ( mod-13 / 家族)
+             :NAMELY ( ENTITY-9 / 両親ら)))
+
+# ::id 17_K201401010W5XP3XX00001;NJ
+# ::snt 地元 の ケーブルテレビ で 「 市民アナウンサー 」 を 務め 、 将来 は 声優 に なる の が 目標 だ 。
+( EVENT-11 / だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / 務め
+                    :ARG1 ( ENTITY-4 / 市民アナウンサー)
+                    :で ( ENTITY-2 / ケーブルテレビ
+                           :の ( ENTITY-3 / 地元))))
+      :ARG0 ( SITUATION-6 / の
+             :THAT ( EVENT-9 / なる
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-8 / 声優)
+                    :TMP ( ENTITY-7 / 将来)))
+      :ARG1 ( ENTITY-10 / 目標))
+
+# ::id 18_K201401010W5XP3XX00001;NJ
+# ::snt みんな を 引っ張る りせさん 。
+( EVENT-5 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-りせさん / ENTITY
+             :name ( n-6 / name
+                    :op1 "りせさん")
+             :ARG0-of ( EVENT-4 / 引っ張る
+                    :ARG1 ENTITY-3)))
+
+# ::id 19_K201401010W5XP3XX00001;NJ
+# ::snt 「 美しい 海 、 おいしい 海 の 幸 といった 地域 の 良さ を アピール できる の が 私たち の 強み 。 もっと 多く の 人 と 触れあっ て 、 被災地 の 思い を 伝え たい 」 と 張り切る 。
+( EVENT-2 / 張り切る
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :THAT ( CONJ-30 / AND
+             :op1 ( EVENT-16 / EVENT
+                    :ARG0 ( SITUATION-3 / の
+                           :THAT ( EVENT-13 / アピールする.0
+                                  :ARG0 ENTITY-1
+                                  :ARG1 ( ENTITY-5 / 良さ
+                                         :の ( ENTITY-12 / 地域)
+                                         :といった ( GROUP-6 / AND
+                                                :op1 ( ATTRIB-8 / 美しい)
+                                                :op2 ( ENTITY-7 / 海
+                                                       :ATTRIBUTE ATTRIB-8)
+                                                :op3 ENTITY-28
+                                                :MOD ( mod-27 / AND
+                                                       :op3 ( ENTITY-9 / 幸
+                                                              :の ( ENTITY-11 / 海)
+                                                              :ATTRIBUTE ( ATTRIB-10 / おいしい))
+                                                       :op4 ENTITY-29
+                                                       :op1 ATTRIB-10
+                                                       :op2 ENTITY-11)))))
+                    :ARG1 ( ENTITY-14 / 強み
+                           :の ( PICK-23 / or
+                                  :op1 ENTITY-5
+                                  :op2 ENTITY-12
+                                  :op3 ENTITY-1)))
+             :op2 ( CONJ-26 / CONJ_te (
+                           :op1 ( ENTITY-18 人) ( EVENT-19 ( 触れあっ_て
+                                         :ARG0 ( ENTITY-17 / ENTITY
+                                                :namely ( PICK-24 / or
+                                                       :op1 ENTITY-14
+                                                       :op2 ENTITY-5
+                                                       :op3 ENTITY-12
+                                                       :op4 ENTITY-1))
+                                         :と ENTITY-18)))
+                    :op2 ( EVENT-22 / 伝え_たい
+                           :ARG0 ENTITY-17
+                           :ARG1 ( ENTITY-20 / 思い
+                                  :の ( ENTITY-21 / 被災地))))))
+
+# ::id 20_K201401010W5XP3XX00001;NJ
+# ::snt ＜ ＫＩＲＡ☆ＧＩＲＬ （ 福島 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-ＫＩＲＡ ☆ ＧＩＲＬ / ENTITY
+             :name ( n-2 / name
+                    :op1 "ＫＩＲＡ ☆ ＧＩＲＬ")
+             :NAMELY ( ENTITY-福島 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "福島"))))
+
+# ::id 21_K201401010W5XP3XX00001;NJ
+# ::snt ／ 会津 に 明るさ 届ける ＞
+( EVENT-3 / 届ける
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 明るさ)
+      :に ( ENTITY-会津 / ENTITY
+             :name ( n-4 / name
+                    :op1 "会津")))
+
+# ::id 22_K201401010W5XP3XX00001;NJ
+# ::snt 喜多方市 や 会津若松市 など 会津地方 の １０～１８ 歳 の 女子 １４ 人 が メンバー 。
+( EVENT-5 / EVENT
+      :ARG0 ( ENTITY-1 / CD_１４_人
+             :MOD ( mod-6 / 女子
+                    :の ( ENTITY-3 / CD_１０ ～ １８_歳)
+                    :の ( ENTITY-会津地方 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "会津地方")
+                           :など ( GROUP-2 / CONJ_や
+                                  :op1 ( ENTITY-喜多方市 / ENTITY
+                                         :name ( n-8 / name
+                                                :op1 "喜多方市"))
+                                  :op2 ( ENTITY-会津若松市 / ENTITY
+                                         :name ( n-9 / name
+                                                :op1 "会津若松市"))))))
+      :ARG1 ( ENTITY-4 / メンバー))
+
+# ::id 23_K201401010W5XP3XX00001;NJ
+# ::snt 福島第１原発事故 の 風評被害 の 影響 が 大きかっ た 会津地方 。
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-会津地方 / ENTITY
+             :name ( n-2 / name
+                    :op1 "会津地方")))
+
+# ::id 24_K201401010W5XP3XX00001;NJ
+# ::snt 子どもたち の 才能 を 引き出し 、 沈滞 し た ムード を 振り払おう と 、 ２０１２ 年 に 生まれ た 。
+( CRD-11 / と
+      :op1 ( EVENT-8 / 振り払おう
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-2 / ムード
+                    :ARG0-of ( EVENT-4 / 沈滞する.0_た
+                           :MOD ( mod-12 / past))
+                    :ARG0-of ( EVENT-7 / 引き出し
+                           :ARG1 ( ENTITY-5 / 才能
+                                  :の ( ENTITY-6 / 子どもたち)))))
+      :op2 ( EVENT-10 / 生まれ_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-9 / CD_２０１２_年)
+             :MOD ( mod-13 / past)))
+
+# ::id 25_K201401010W5XP3XX00001;NJ
+# ::snt 福島県 の 支援 も 受け 、 各種 の イベント に 出演 し て いる 。
+( EVENT-6 / 出演する.0_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-3 / 受け
+                    :ARG1 ( ENTITY-2 / 支援
+                           :の ( ENTITY-福島県 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "福島県")))))
+      :に ( ENTITY-4 / イベント
+             :の ( ENTITY-5 / 種)))
+
+# ::id 26_K201401010W5XP3XX00001;NJ
+# ::snt ダンス に 磨き を 掛け 、 女性版 の ＥＸＩＬＥ （ エグザイル ） を 目指す 。
+( EVENT-6 / 目指す
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-4 / 掛け
+                    :ARG1 ( ENTITY-3 / 磨き)
+                    :に ( ENTITY-2 / ダンス)))
+      :ARG1 ( ENTITY-ＥＸＩＬＥ / ENTITY
+             :name ( n-7 / name
+                    :op1 "ＥＸＩＬＥ")
+             :の ( ENTITY-5 / 女性版)
+             :NAMELY ( ENTITY-エグザイル / ENTITY
+                    :name ( n-8 / name
+                           :op1 "エグザイル"))))
+
+# ::id 27_K201401010W5XP3XX00001;NJ
+# ::snt ＜ ｐｒａｍｏ （ 秋田 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-ｐｒａｍｏ / ENTITY
+             :name ( n-2 / name
+                    :op1 "ｐｒａｍｏ")
+             :NAMELY ( ENTITY-秋田 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "秋田"))))
+
+# ::id 28_K201401010W5XP3XX00001;NJ
+# ::snt ／ みんな の プラモデル ＞
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / プラモデル))
+
+# ::id 29_K201401010W5XP3XX00001;NJ
+# ::snt 秋田県内 に 住む 、 中学 １ 年 から 高校 ３ 年 まで の ６ 人 編成 。
+( EVENT-8 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 編成
+             :まで_の ( ENTITY-6 / CD_３_年
+                    :MOD ( mod-9 / 高校
+                           :から ( ENTITY-7 / CD_１_年
+                                  :MOD ( mod-10 / 中学))))
+             :MOD ( mod-11 / CD_６_人
+                    :ARG0-of ( EVENT-5 / 住む
+                           :に ( ENTITY-4 / 秋田県内)))))
+
+# ::id 30_K201401010W5XP3XX00001;NJ
+# ::snt 県民 に 作っ て もらう プラモデル の 意味 を 込め 、 名付け られ た 。
+( CONJ-14 / AND
+      :op1 ( EVENT-10 / 込め
+             :ARG0 ( ENTITY-2 / ENTITY
+                    :namely ENTITY-1)
+             :ARG1 ( ENTITY-3 / 意味
+                    :の ( ENTITY-4 / プラモデル
+                           :ARG1-of ( EVENT-9 / 作っ_て
+                                  :ARG0 ( ENTITY-7 / 県民)
+                                  :TOCOMP-of ( EVENT-8 / もらう
+                                         :ARG0 ( PICK-12 / or
+                                                :op1 ENTITY-3
+                                                :op2 ENTITY-2
+                                                :op3 ENTITY-1)
+                                         :ARG1 ENTITY-7)))))
+      :op2 ( EVENT-11 / 名付け_た
+             :ARG1 ( ENTITY-1 / pro
+                    :pick0)
+             :MOD ( mod-13 / past)))
+
+# ::id 31_K201401010W5XP3XX00001;NJ
+# ::snt 地元ＦＭ局 の パーソナリティー を 務め 、 県内 の 魅力 を 発信 する 。
+( EVENT-7 / 発信する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-4 / 務め
+                    :ARG1 ( ENTITY-2 / パーソナリティー
+                           :の ( ENTITY-3 / 地元ＦＭ局))))
+      :ARG1 ( ENTITY-5 / 魅力
+             :の ( ENTITY-6 / 県内)))
+
+# ::id 32_K201401010W5XP3XX00001;NJ
+# ::snt 「 んだ す 」 「 んで ね す 」 など の 方言 も ポンポン 飛び出し 、 親しみ感 の ある アイドルたち だ 。
+( CONJ-16 / AND
+      :op1 ( EVENT-7 / 飛び出し
+             :ARG0 ( ENTITY-2 / 方言
+                    :の ( ENTITY-3 / ENTITY
+                           :など ( SITUATION-4 / MAT
+                                  :THAT ( CONJ-17 / AND
+                                         :op1 ( EVENT-5 / んだ_す)
+                                         :op2 ( EVENT-6 / んで_す
+                                                :domain-of ( NEG-14 / NEG))))))
+             :MOD ( mod-15 / ポンポン))
+      :op2 ( EVENT-12 / だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( SITUATION-9 / アイドルたち
+                    :THAT ( EVENT-11 / ある
+                           :ARG0 ( ENTITY-10 / 親しみ感)))))
+
+# ::id 33_K201401010W5XP3XX00001;NJ
+# ::snt ２０１１ 年 の 結成 以来 、 認知度 が 徐々 に アップ 。
+( EVENT-5 / アップ
+      :ARG0 ( ENTITY-3 / 認知度)
+      :に ( ENTITY-4 / 徐々)
+      :TMP ( TIME-1 / 結成_以来
+             :の ( ENTITY-2 / CD_２０１１_年)))
+
+# ::id 34_K201401010W5XP3XX00001;NJ
+# ::snt イベント の 出演機会 が 増え て いる 。
+( EVENT-3 / 増え_て_いる
+      :ARG0 ( ENTITY-1 / 出演機会
+             :の ( ENTITY-2 / イベント)))
+
+# ::id 35_K201401010W5XP3XX00001;NJ
+# ::snt ＜ りんご娘 （ 青森 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-りんご娘 / ENTITY
+             :name ( n-2 / name
+                    :op1 "りんご娘")
+             :NAMELY ( ENTITY-青森 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "青森"))))
+
+# ::id 36_K201401010W5XP3XX00001;NJ
+# ::snt ／ 農業活性化 を 後押し ＞
+( EVENT-3 / 後押し
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 農業活性化))
+
+# ::id 37_K201401010W5XP3XX00001;NJ
+# ::snt ２０００ 年 に 結成 さ れ た 。
+( EVENT-3 / 結成する.0_た
+      :ARG1 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-2 / CD_２０００_年)
+      :MOD ( mod-4 / past))
+
+# ::id 38_K201401010W5XP3XX00001;NJ
+# ::snt 青森県内 で の 認知度 は ほぼ １００ パーセント 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / 認知度
+             :で_の ( ENTITY-2 / 青森県内))
+      :ARG1 ( ENTITY-3 / CD_１００_パーセント
+             :MOD ( mod-5 / ほぼ)))
+
+# ::id 39_K201401010W5XP3XX00001;NJ
+# ::snt 現メンバー は とも に 中学 ３ 年 の 「 とき 」 ＝ 写真左 ＝ と 「 王林 」 の ２人 の 女の子 。
+( EVENT-8 / EVENT
+      :ARG0 ( ENTITY-現メンバー / ENTITY
+             :name ( n-13 / name
+                    :op1 "現メンバー"))
+      :ARG1 ( ENTITY-1 / 女の子
+             :の ( ENTITY-2 / ２人
+                    :の ( ENTITY-3 / CONJ_と
+                           :op1 ( GROUP-6 / AND
+                                  :op1 ( ENTITY-7 / 写真左)
+                                  :op2 ( ENTITY-とき / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "とき")
+                                         :NAMELY ENTITY-7)
+                                  :op3 ENTITY-とき)
+                           :op2 ( ENTITY-王林 / ENTITY
+                                  :name ( n-12 / name
+                                         :op1 "王林")
+                                  :OF GROUP-6)
+                           :の ( ENTITY-4 / CD_３_年
+                                  :MOD ( mod-10 / 中学
+                                         :に ( ENTITY-5 / とも)))))))
+
+# ::id 40_K201401010W5XP3XX00001;NJ
+# ::snt リンゴ王国 らしく 、 メンバー の 愛称 は 代々 、 リンゴ の 品種名 から 取っ て 付け られ て いる 。
+( CONJ-17 / AND
+      :op1 ( EVENT-1 / らしく
+             :ARG1 ( ENTITY-リンゴ王国 / ENTITY
+                    :name ( n-16 / name
+                           :op1 "リンゴ王国")))
+      :op2 ( CONJ-14 / CONJ_te
+             :op1 ( EVENT-8 / 取っ_て
+                    :ARG0 ( PICK-11 / or
+                           :op1 ENTITY-2
+                           :op2 ENTITY-3
+                           :op3 ENTITY-リンゴ王国)
+                    :ARG1 ( PICK-12 / or
+                           :op1 ENTITY-2
+                           :op2 ENTITY-3
+                           :op3 ENTITY-リンゴ王国)
+                    :から ( ENTITY-6 / 品種名
+                           :の ( ENTITY-7 / リンゴ)))
+             :op2 ( EVENT-9 / 付け_て_いる
+                    :ARG1 ( ENTITY-2 / 愛称
+                           :の ( ENTITY-3 / メンバー)))
+             :MOD ( mod-15 / 代々)))
+
+# ::id 41_K201401010W5XP3XX00001;NJ
+# ::snt ２人 は 、 弘前産リンゴ の キャンペーンガール として 全国各地 、 台湾 に も 渡り ＰＲ 。
+( EVENT-7 / ｐｒ
+      :ARG0 ( ENTITY-1 / ２人
+             :ARG0-of ( EVENT-5 / 渡り
+                    :に ( ENTITY-台湾 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "台湾"))
+                    :LOC ENTITY-4
+                    :として ( ENTITY-2 / キャンペーンガール
+                           :の ( ENTITY-3 / 弘前産リンゴ))))
+      :ARG1 ( PICK-8 / or
+             :op1 ENTITY-2
+             :op2 ENTITY-4
+             :op3 ENTITY-3
+             :op4 ENTITY-台湾))
+
+# ::id 42_K201401010W5XP3XX00001;NJ
+# ::snt 農業活性化 の 役割 も 担う 。
+( EVENT-4 / 担う
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 役割
+             :の ( ENTITY-3 / 農業活性化)))
+
+# ::id 43_K201401010W5XP3XX00001;NJ
+# ::snt ◎ 学ぶ
+( EVENT-1 / 学ぶ)
+
+# ::id 44_K201401010W5XP3XX00001;NJ
+# ::snt ／ 東北大方言研究センター 小林隆教授
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-東北大方言研究センター_小林隆教授 / ENTITY
+             :name ( n-2 / name
+                    :op1 "東北大方言研究センター_小林隆教授")))
+
+# ::id 45_K201401010W5XP3XX00001;NJ
+# ::snt ／ 東北方言 は 感性 の 言語
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / 東北方言)
+      :ARG1 ( ENTITY-2 / 言語
+             :の ( ENTITY-3 / 感性)))
+
+# ::id 46_K201401010W5XP3XX00001;NJ
+# ::snt オノマトペ ・ 感動詞 多彩
+( EVENT-4 / 多彩
+      :ARG0 ( GROUP-1 / AND
+             :op1 ( ENTITY-2 / オノマトペ)
+             :op2 ENTITY-6
+             :MOD ( mod-5 / AND
+                    :op1 ( ENTITY-3 / 感動詞)
+                    :op2 ENTITY-7)))
+
+# ::id 47_K201401010W5XP3XX00001;NJ
+# ::snt ／ 「 じぇ じぇ 」 「 わいは ！ 」 「 ばばば ばばば 」 「 おえん おえん 」
+( CONJ-6 / AND
+      :op1 ( EVENT-1 / EVENT)
+      :op2 ( EVENT-2 / EVENT)
+      :op3 ( EVENT-3 / EVENT)
+      :op4 ( EVENT-4 / EVENT
+             :MOD ( mod-5 / おえん_おえん)))
+
+# ::id 48_K201401010W5XP3XX00001;NJ
+# ::snt 昨年 の 朝 の 連続ドラマ で は 、 登場人物 が 驚く たび に 「 じぇ じぇ 」 と 、 方言 を 連発 する 愉快さ が 受け た 。
+( EVENT-11 / 受け_た
+      :ARG0 ( SITUATION-4 / 愉快さ
+             :THAT ( EVENT-9 / 連発する.0
+                    :ARG0 ( ENTITY-5 / 登場人物)
+                    :ARG1 ( ENTITY-8 / 方言)
+                    :に ( SITUATION-6 / たび
+                           :THAT ( EVENT-7 / 驚く
+                                  :ARG0 ENTITY-5))
+                    :THAT ( EVENT-10 / EVENT)))
+      :で ( ENTITY-1 / 連続ドラマ
+             :の ( ENTITY-3 / 朝)
+             :の ( ENTITY-2 / 昨年))
+      :MOD ( mod-12 / past))
+
+# ::id 49_K201401010W5XP3XX00001;NJ
+# ::snt 格好いい ヒーロー も 、 かわいい アイドル も 方言 の 使い手 だ 。
+( EVENT-8 / だ
+      :ARG0 ( CONJ-9 / CONJ_も
+             :op1 ( GROUP-1 / AND
+                    :op1 ( ATTRIB-3 / 格好いい)
+                    :op2 ( ENTITY-2 / ヒーロー
+                           :ATTRIBUTE ATTRIB-3)
+                    :op3 ENTITY-11)
+             :op2 ( GROUP-10 / AND
+                    :op1 ( ATTRIB-5 / かわいい)
+                    :op2 ( ENTITY-4 / アイドル
+                           :ATTRIBUTE ATTRIB-5)
+                    :op3 ENTITY-12))
+      :ARG1 ( ENTITY-6 / 使い手
+             :の ( ENTITY-7 / 方言)))
+
+# ::id 50_K201401010W5XP3XX00001;NJ
+# ::snt まさに 「 じぇ じぇ 」 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / ENTITY
+             :THAT ( EVENT-3 / EVENT))
+      :MOD ( mod-6 / まさに))
+
+# ::id 51_K201401010W5XP3XX00001;NJ
+# ::snt 感動詞 から 見える 東北 の 方言 の 豊かさ を 東北大方言研究センター教授 の 小林隆さん （ ５６ ） に 語っ て もらっ た 。
+( EVENT-2 / もらっ_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :TOCOMP ( EVENT-10 / 語っ_て
+             :ARG0 ( ENTITY-小林隆さん / ENTITY
+                    :name ( n-12 / name
+                           :op1 "小林隆さん")
+                    :の ( ENTITY-9 / 東北大方言研究センター教授)
+                    :NAMELY ( ENTITY-8 / CD_５６))
+             :ARG1 ( ENTITY-3 / 豊かさ
+                    :の ( ENTITY-7 / 方言
+                           :の ( ENTITY-東北 / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "東北")))
+                    :ARG0-of ( EVENT-6 / 見える
+                           :から ( ENTITY-5 / 感動詞))))
+      :MOD ( mod-11 / past))
+
+# ::id 52_K201401010W5XP3XX00001;NJ
+# ::snt 全国共通 に 方言 は 温かい 心 の 言葉 という 意識 が 広がっ て いる と 思う 。
+( EVENT-2 / 思う
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :THAT ( EVENT-10 / 広がっ_て_いる
+             :ARG0 ( ENTITY-3 / 意識
+                    :THAT ( EVENT-9 / EVENT
+                           :ARG0 ( ENTITY-5 / 方言)
+                           :ARG1 ( ENTITY-6 / 言葉
+                                  :の ( ENTITY-7 / 心
+                                         :ATTRIBUTE ( ATTRIB-8 / 温かい)))
+                           :に ENTITY-4))))
+
+# ::id 53_K201401010W5XP3XX00001;NJ
+# ::snt ドラマ に 登場 し た 「 じぇ じぇ 」 という 方言 は 、 ユーモラス な 感じ と 相まっ て 今 の 感性 の 時代 に マッチ し た の で は ない か 。
+( CONJ-13 / CONJ_te
+      :op1 ( EVENT-8 / 相まっ_て
+             :ARG0 ( ENTITY-1 / 方言
+                    :THAT ( EVENT-5 / EVENT)
+                    :ARG0-of ( EVENT-4 / 登場する.0_た
+                           :に ( ENTITY-3 / ドラマ)
+                           :MOD ( mod-14 / past)))
+             :と ( ENTITY-6 / 感じ
+                    :ATTRIBUTE ( ATTRIB-7 / ユーモラス_な)))
+      :op2 ( EVENT-12 / マッチする.0_た_の
+             :ARG0 ENTITY-1
+             :に ( ENTITY-9 / 時代
+                    :の ( ENTITY-11 / 感性)
+                    :の ( ENTITY-10 / 今))
+             :MOD ( mod-15 / past)))
+
+# ::id 54_K201401010W5XP3XX00001;NJ
+# ::snt 「 じぇ 」 は 現代 の 東北 で は 久慈市 の 小袖地区 に 限ら れ た 言い方 の よう だ 。
+( EVENT-8 / だ
+      :ARG0 ( ENTITY-1 / じぇ)
+      :ARG1 ( ENTITY-4 / よう
+             :の ( ENTITY-5 / 言い方
+                    :ARG1-of ( EVENT-7 / 限ら_た
+                           :に ( ENTITY-小袖地区 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "小袖地区")
+                                  :の ( ENTITY-久慈市 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "久慈市"))))))
+      :で ( ENTITY-2 / 東北
+             :の ( ENTITY-3 / 現代)))
+
+# ::id 55_K201401010W5XP3XX00001;NJ
+# ::snt 東北 の 方言 の 驚き方 は 多彩 だ 。
+( EVENT-3 / 多彩_だ
+      :ARG0 ( ENTITY-1 / 驚き方
+             :の ( ENTITY-2 / 方言
+                    :の ( ENTITY-東北 / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "東北")))))
+
+# ::id 56_K201401010W5XP3XX00001;NJ
+# ::snt 岩手県 の 旧南部藩 の 地域 で は 「 じゃ 」 が 使わ れ て いる 。
+( EVENT-3 / 使わ_て_いる
+      :ARG1 ( ENTITY-2 / じゃ)
+      :で ( ENTITY-1 / 地域
+             :の ( ENTITY-旧南部藩 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "旧南部藩")
+                    :の ( ENTITY-岩手県 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "岩手県")))))
+
+# ::id 57_K201401010W5XP3XX00001;NJ
+# ::snt 岩手 、 宮城 両県 の 三陸地方 や 秋田県 に は 「 あば 」 または 「 ば 」 が 残る 。
+( EVENT-7 / 残る
+      :ARG0 ( CONJ-8 / CONJ_または
+             :op1 ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / あば)
+                    :op2 ENTITY-14)
+             :op2 ( GROUP-13 / AND
+                    :op1 ( ENTITY-6 / ば)
+                    :op2 ENTITY-15))
+      :に ( GROUP-1 / CONJ_や
+             :op1 ( ENTITY-三陸地方 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "三陸地方")
+                    :の ( ENTITY-2 / 県
+                           :EQUALS ( GROUP-3 / AND
+                                  :op1 ( ENTITY-岩手 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "岩手"))
+                                  :op2 ( ENTITY-宮城 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "宮城")))))
+             :op2 ( ENTITY-秋田県 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "秋田県"))))
+
+# ::id 58_K201401010W5XP3XX00001;NJ
+# ::snt 青森県 津軽地方 に は 「 わい 」 や 「 わいは 」 という の も ある 。
+( EVENT-5 / ある
+      :ARG0 ( ENTITY-1 / の
+             :という ( CONJ-6 / CONJ_や
+                    :op1 ( GROUP-2 / AND
+                           :op1 ( ENTITY-3 / わい)
+                           :op2 ENTITY-9)
+                    :op2 ( GROUP-8 / AND
+                           :op1 ( ENTITY-4 / わいは)
+                           :op2 ENTITY-10)))
+      :に ( ENTITY-青森県_津軽地方 / ENTITY
+             :name ( n-7 / name
+                    :op1 "青森県_津軽地方")))
+
+# ::id 59_K201401010W5XP3XX00001;NJ
+# ::snt これら の 感動詞 は 気持ち の 表現 ゆえ に 意味 の 分析 が 難しい 。
+( EVENT-7 / 難しい
+      :ARG0 ( ENTITY-1 / 感動詞
+             :の ( ENTITY-2 / これら
+                    :pick0))
+      :ARG0 ( ENTITY-5 / 分析
+             :の ( ENTITY-6 / 意味))
+      :ゆえ_に ( ENTITY-3 / 表現
+             :の ( ENTITY-4 / 気持ち)))
+
+# ::id 60_K201401010W5XP3XX00001;NJ
+# ::snt 地域差 が ある の が 分かっ た の も 近年 の こと 。
+( CONJ-10 / AND
+      :op1 ( EVENT-5 / 分かっ_た
+             :ARG0 ( SITUATION-2 / の
+                    :THAT ( EVENT-4 / ある
+                           :ARG0 ( ENTITY-3 / 地域差)))
+             :MOD ( mod-9 / past))
+      :op2 ( EVENT-8 / EVENT
+             :ARG0 ( ENTITY-1 / の)
+             :ARG1 ( ENTITY-6 / こと
+                    :の ( ENTITY-7 / 近年))))
+
+# ::id 61_K201401010W5XP3XX00001;NJ
+# ::snt 「 じぇ 」 について も 、 ドラマ と 小袖地区 の 人々 の 使い方 に は 違い が ある かもしれない 。
+( EVENT-7 / ある
+      :ARG0 ( ENTITY-6 / 違い)
+      :に ( ENTITY-2 / 使い方
+             :の ( GROUP-3 / CONJ_と
+                    :op1 ( ENTITY-4 / ドラマ)
+                    :op2 ( ENTITY-5 / 人々
+                           :の ( ENTITY-小袖地区 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "小袖地区")))))
+      :について ( ENTITY-1 / じぇ)
+      :domain-of ( MD-8 / MD_かもしれない))
+
+# ::id 62_K201401010W5XP3XX00001;NJ
+# ::snt さらに 東北 の 方言 の 感動詞 に は 二 つ の “ 技 ” が ある 。
+( EVENT-5 / ある
+      :ARG0 ( ENTITY-3 / 技
+             :の ( ENTITY-4 / CD_二_つ))
+      :に ( ENTITY-1 / 感動詞
+             :の ( ENTITY-2 / 方言
+                    :の ( ENTITY-東北 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "東北"))))
+      :MOD ( mod-6 / さらに))
+
+# ::id 63_K201401010W5XP3XX00001;NJ
+# ::snt 言葉 を 繰り返す 重音化 と 伸ばす 長音化 によって 、 自分 の 感情 の 細か な 違い や 強さ を 表す 。
+( EVENT-18 / 表す
+      :ARG0 ( ARB-1 / arb
+             :pick0)
+      :ARG1 ( ENTITY-11 / CONJ_や
+             :op1 ( GROUP-15 / AND
+                    :op1 ( ENTITY-16 / 違い)
+                    :op2 ENTITY-22)
+             :op2 ( GROUP-21 / AND
+                    :op1 ( ENTITY-17 / 強さ)
+                    :op2 ENTITY-23)
+             :ATTRIBUTE ( ATTRIB-14 / 細か_な)
+             :の ( ENTITY-12 / 感情
+                    :の ENTITY-11))
+      :によって ( CONJ-19 / CONJ_と
+             :op1 ( GROUP-2 / AND
+                    :op3 ( ENTITY-3 / 重音化
+                           :THAT ( EVENT-6 / 繰り返す
+                                  :ARG0 ( ARB-4 / ARB
+                                         :namely ARB-1)
+                                  :ARG1 ( ENTITY-5 / 言葉)))
+                    :op4 ENTITY-25
+                    :op1 ARB-4
+                    :op2 ENTITY-5)
+             :op2 ( GROUP-24 / AND
+                    :op3 ( ENTITY-7 / 長音化
+                           :THAT ( EVENT-10 / 伸ばす
+                                  :ARG0 ( ARB-8 / ARB
+                                         :namely ARB-1)
+                                  :ARG1 ( ENTITY-9 / pro
+                                         :pick0)))
+                    :op4 ENTITY-26
+                    :op1 ARB-8
+                    :op2 ENTITY-9)))
+
+# ::id 64_K201401010W5XP3XX00001;NJ
+# ::snt 気仙沼市 で 使わ れる 「 ば 」 を 例 に する と 「 ばばば ばば こぼし て しまっ た や 」 「 ばー ばー ばー ー これ えらい こと す た やー ー 」 という 具合 だ 。
+( CRD-21 / と
+      :op1 ( EVENT-6 / する
+             :ARG1 ( ENTITY-2 / ば
+                    :ARG1-of ( EVENT-4 / 使わ
+                           :で ( ENTITY-気仙沼市 / ENTITY
+                                  :name ( n-24 / name
+                                         :op1 "気仙沼市"))))
+             :に ( ENTITY-5 / 例))
+      :op2 ( EVENT-16 / だ
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-7 / 具合
+                    :THAT ( CONJ-25 / AND
+                           :op1 ( EVENT-10 / こぼし_て_しまっ_た
+                                  :ARG0 ( PICK-17 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-気仙沼市
+                                         :op3 ENTITY-2
+                                         :op4 ENTITY-5)
+                                  :ARG1 ( PICK-18 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-気仙沼市
+                                         :op3 ENTITY-2
+                                         :op4 ENTITY-5)
+                                  :MOD ( mod-22 / past))
+                           :op2 ( EVENT-15 / す_た
+                                  :ARG0 ( PICK-20 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-気仙沼市
+                                         :op3 ENTITY-2
+                                         :op4 ENTITY-5)
+                                  :ARG1 ( ENTITY-13 / こと
+                                         :ATTRIBUTE ( ATTRIB-14 / えらい))
+                                  :TPC ( PICK-19 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-気仙沼市
+                                         :op3 ENTITY-2
+                                         :op4 ENTITY-5)
+                                  :MOD ( mod-23 / past))))))
+
+# ::id 65_K201401010W5XP3XX00001;NJ
+# ::snt 声 の 強弱 や イントネーション も 加え さまざま な バージョン を 編み出す 。
+( EVENT-9 / 編み出す
+      :ARG0 ( ARB-1 / arb
+             :pick0
+             :ARG0-of ( EVENT-6 / 加え
+                    :ARG1 ( CONJ-10 / CONJ_や
+                           :op1 ( GROUP-2 / AND
+                                  :op1 ( ENTITY-4 / 声)
+                                  :op2 ( ENTITY-3 / 強弱
+                                         :の ENTITY-4)
+                                  :op3 ENTITY-12)
+                           :op2 ( GROUP-11 / AND
+                                  :op1 ( ENTITY-5 / イントネーション)
+                                  :op2 ENTITY-13))))
+      :ARG1 ( ENTITY-7 / バージョン
+             :ATTRIBUTE ( ATTRIB-8 / さまざま_な)))
+
+# ::id 66_K201401010W5XP3XX00001;NJ
+# ::snt オノマトペ （ 擬音語 ・ 擬態語 ） が 発達 し た の も 東北 の 特徴 だ 。
+( EVENT-9 / だ
+      :ARG0 ( SITUATION-1 / の
+             :THAT ( EVENT-7 / 発達する.0_た
+                    :ARG0 ( ENTITY-6 / オノマトペ
+                           :NAMELY ( ENTITY-2 / AND
+                                  :op1 ( ENTITY-4 / 擬音語)
+                                  :op2 ENTITY-13
+                                  :MOD ( mod-10 / AND
+                                         :op1 ( ENTITY-5 / 擬態語)
+                                         :op2 ENTITY-14)))
+                    :MOD ( mod-11 / past)))
+      :ARG1 ( ENTITY-8 / 特徴
+             :の ( ENTITY-東北 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "東北"))))
+
+# ::id 67_K201401010W5XP3XX00001;NJ
+# ::snt 大声 で 泣く 様子 は 共通語 で は 「 わんわん 」 「 わー わー 」 だ が 、 東北 で は 「 おえんおえん 」 「 おんえおんえ 」 が 多い 。
+( CONJ-14 / CONJ_が
+      :op1 ( EVENT-9 / だ
+             :ARG0 ( SITUATION-1 / 様子
+                    :THAT ( EVENT-4 / 泣く
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :で ( ENTITY-3 / 大声)))
+             :ARG1 ( GROUP-6 / AND
+                    :op1 ( ENTITY-7 / わんわん)
+                    :op2 ENTITY-19
+                    :MOD ( mod-15 / AND
+                           :op1 ( ENTITY-8 / わー
+                                  :MOD ( mod-16 / わー))
+                           :op2 ENTITY-20))
+             :で ( ENTITY-5 / 共通語))
+      :op2 ( EVENT-13 / 多い
+             :ARG0 ( GROUP-10 / AND
+                    :op1 ( ENTITY-11 / おえんおえん)
+                    :op2 ENTITY-21
+                    :MOD ( mod-17 / AND
+                           :op1 ( ENTITY-12 / おんえおんえ)
+                           :op2 ENTITY-22))
+             :で ( ENTITY-東北 / ENTITY
+                    :name ( n-18 / name
+                           :op1 "東北"))))
+
+# ::id 68_K201401010W5XP3XX00001;NJ
+# ::snt 見聞き し た 様子 を 再現 する オノマトペ の 豊富さ や 感動詞 の 情感 の 豊かさ から 、 東北方言 は 「 感性 の 言語 」 な の だ と 思う 。
+( EVENT-13 / 思う
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :から ( CONJ-18 / CONJ_や
+             :op1 ( GROUP-2 / AND
+                    :op5 ( ENTITY-3 / 豊富さ
+                           :の ( ENTITY-4 / オノマトペ))
+                    :op1 ( EVENT-8 / 見聞きする.0_た
+                           :ARG0 ( ENTITY-6 / 様子))
+                    :op2 ( EVENT-9 / 再現する.0
+                           :ARG0 ENTITY-4
+                           :ARG1 ENTITY-6)
+                    :op3 ENTITY-20
+                    :op4 ( EVENT-21 / past))
+             :op2 ( GROUP-19 / AND
+                    :op3 ( ENTITY-10 / 豊かさ
+                           :の ( ENTITY-11 / 情感
+                                  :の ( ENTITY-12 / 感動詞)))
+                    :op4 ENTITY-22
+                    :op1 ENTITY-12
+                    :op2 ENTITY-11))
+      :THAT ( EVENT-17 / な_の_だ
+             :ARG0 ( ENTITY-14 / 東北方言)
+             :ARG1 ( ENTITY-15 / 言語
+                    :の ( ENTITY-16 / 感性))))

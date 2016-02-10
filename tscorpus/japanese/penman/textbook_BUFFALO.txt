@@ -1,0 +1,1010 @@
+# ::id 1_textbook_BUFFALO;TSOGD_1a;NJ
+# ::snt 誰 が 何 を 書い た か ？
+( EVENT-3 / 書い_た
+      :ARG0 ENTITY-1
+      :ARG1 ENTITY-2
+      :MOD ( mod-5 / past)
+      :domain-of ( QUEST-4 / QUEST))
+
+# ::id 2_textbook_BUFFALO;TSOGD_1b;NJ
+# ::snt どの 本 が 面白い か ？
+( EVENT-2 / 面白い
+      :ARG0 ( ENTITY-1 / 本)
+      :domain-of ( QUEST-3 / QUEST))
+
+# ::id 3_textbook_BUFFALO;TSOGD_2a;NJ
+# ::snt 誰 も が 何 か を 書い た 。
+( EVENT-3 / 書い_た
+      :ARG0 ENTITY-1
+      :ARG1 ENTITY-2
+      :MOD ( mod-4 / past))
+
+# ::id 4_textbook_BUFFALO;TSOGD_2b;NJ
+# ::snt どの 本 も が 面白い 。
+( ( ENTITY-1 本) / EVENT-2 ( 面白い
+             :ARG0 ENTITY-1))
+
+# ::id 5_textbook_BUFFALO;TSOGD_18a;NJ
+# ::snt 誰 も が 買っ た チョコレート が おいしい 。
+( EVENT-5 / おいしい
+      :ARG0 ( ENTITY-1 / チョコレート
+             :ARG1-of ( EVENT-4 / 買っ_た
+                    :ARG0 ENTITY-3
+                    :MOD ( mod-6 / past))))
+
+# ::id 6_textbook_BUFFALO;TSOGD_18b;NJ
+# ::snt 誰 が 買っ た チョコレート も おいしい 。
+( ( EVENT-4 ( 買っ_た
+                    :ARG0 ENTITY-3
+                    :ARG1 ( ENTITY-1 / チョコレート)
+                    :MOD ( mod-6 / past))) / EVENT-5 ( おいしい
+             :ARG0 ENTITY-1))
+
+# ::id 7_textbook_BUFFALO;TSOGD_24a;NJ
+# ::snt 誰 を 花子 が 愛し て いる という 噂 も 本当 だ 。
+( ( ENTITY-1 ( 噂
+                    :THAT ( EVENT-3 / 愛し_て_いる
+                           :ARG0 ( ENTITY-花子 / ENTITY
+                                  :name ( n-5 / name
+                                         :op1 "花子"))
+                           :ARG1 ENTITY-2))) / EVENT-4 ( 本当_だ
+             :ARG0 ENTITY-1))
+
+# ::id 8_textbook_BUFFALO;TSOGD_24b;NJ
+# ::snt 誰 の コンピューター も 故障 し て いる 。
+( ( ENTITY-1 ( コンピューター
+                    :の ENTITY-2)) / EVENT-3 ( 故障する.0_て_いる
+             :ARG0 ENTITY-1))
+
+# ::id 9_textbook_BUFFALO;TSOGD_34;NJ
+# ::snt 誰 が 来 て も 、 報告 し て ください 。
+( CND-7 / も
+      :op1 ( EVENT-4 / 来_て
+             :ARG0 ENTITY-3)
+      :op2 ( EVENT-6 / 報告する.0_て_ください
+             :ARG0 ( ENTITY-1 / hearer
+                    :pick0)
+             :ARG1 ENTITY-3
+             :ARG2 ( ENTITY-2 / speaker
+                    :pick0)
+             :domain-of ( IMPERATIVE-8 / IMPERATIVE)))
+
+# ::id 10_textbook_BUFFALO;TSOGD_38;NJ
+# ::snt 誰 が 書い た 本 を 読ん で も 、 一 つ 批評 を 書い て 送っ て 下さい 。
+( CND-17 / も (
+             :op1 ( EVENT-5 past) ( EVENT-5 ( 書い_た
+                           :ARG0 ENTITY-4
+                           :ARG1 ( ENTITY-2 / 本))) ( EVENT-6 ( 読ん_で
+                           :ARG0 ( ENTITY-1 / hearer
+                                  :pick0)
+                           :ARG1 ENTITY-2)))
+      :op2 ( CONJ-16 / CONJ_te
+             :op1 ( EVENT-9 / 書い_て
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-7 / 批評
+                           :MSR ( DEGREE-8 / CD_一_つ)))
+             :op2 ( EVENT-11 / 送っ_て_下さい
+                    :ARG0 ENTITY-1
+                    :ARG1 ENTITY-7
+                    :ARG2 ( PICK-15 / or
+                           :op1 ENTITY-4
+                           :op2 ENTITY-2)))
+      :domain-of ( IMPERATIVE-18 / IMPERATIVE))
+
+# ::id 11_textbook_BUFFALO;NJ
+# ::snt はは は ははは 、 はは の はは は ははは と わらう 。
+( CONJ-8 / AND
+      :op1 ( EVENT-3 / EVENT
+             :ARG0 ( ENTITY-1 / はは)
+             :と ( ATTRIB-2 / ははは))
+      :op2 ( EVENT-7 / わらう
+             :ARG0 ( ENTITY-4 / はは
+                    :の ( ENTITY-5 / はは))
+             :と ( ATTRIB-6 / ははは)))
+
+# ::id 12_textbook_BUFFALO;NJ
+# ::snt すもも も もも も もも の うち 。
+( EVENT-6 / EVENT
+      :ARG0 ( CONJ-7 / CONJ_も
+             :op1 ( GROUP-1 / AND
+                    :op1 ( ENTITY-2 / すもも)
+                    :op2 ENTITY-9)
+             :op2 ( GROUP-8 / AND
+                    :op1 ( ENTITY-3 / もも)
+                    :op2 ENTITY-10))
+      :ARG1 ( ENTITY-4 / うち
+             :の ( ENTITY-5 / もも)))
+
+# ::id 13_textbook_BUFFALO;NJ
+# ::snt にわ に は に わ の にわとり が いる 。
+( EVENT-4 / いる
+      :ARG0 ( ENTITY-2 / にわとり
+             :の ( ENTITY-3 / CD_に_わ))
+      :に ( ENTITY-1 / にわ))
+
+# ::id 14_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 落とす 。
+( EVENT-5 / 落とす
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / はし)
+      :で ( ENTITY-2 / はし
+             :の ( ENTITY-3 / はし)))
+
+# ::id 15_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 使う 。
+( EVENT-5 / 使う
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / はし)
+      :で ( ENTITY-2 / はし
+             :の ( ENTITY-3 / はし)))
+
+# ::id 16_textbook_BUFFALO;NJ
+# ::snt はし の はし で はし を 見つける 。
+( EVENT-5 / 見つける
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / はし)
+      :で ( ENTITY-2 / はし
+             :の ( ENTITY-3 / はし)))
+
+# ::id 17_textbook_BUFFALO;NJ
+# ::snt 情報 を 検索 する こと が できる よう に 構成 し た
+( EVENT-9 / 構成する.0_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( SITUATION-2 / よう
+             :THAT ( EVENT-8 / できる
+                    :ARG0 ( ARB-3 / arb
+                           :pick0)
+                    :ARG1 ( SITUATION-4 / こと
+                           :THAT ( EVENT-7 / 検索する.0
+                                  :ARG0 ARB-3
+                                  :ARG1 ( ENTITY-6 / 情報)))))
+      :MOD ( mod-10 / past))
+
+# ::id 18_textbook_BUFFALO;IJ
+# ::snt 無制約 の 日本語 および 英語 の 自然 言語 テクスト から 高精度 の 形式的 意味 表示 を 自動的 に 得る ため の 一般的 な 手法 の 確立 と 、 その 結果 を データベース として 推論 の ため の 世界 知識 の 構築 に 生かす 方法 を 開発 し ます 。
+( EVENT-29 / 開発する.0_ます
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( CONJ-32 / CONJ_と
+             :op1 ( GROUP-2 / AND
+                    :op15 ( ENTITY-3 / 確立
+                           :の ( ENTITY-4 / 手法
+                                  :ATTRIBUTE ( ATTRIB-19 / 一般的_な)
+                                  :の ( SITUATION-5 / ため
+                                         :THAT ( EVENT-17 / 得る
+                                                :ARG0 ( ARB-6 / arb
+                                                       :pick0)
+                                                :ARG1 ( ENTITY-14 / 意味_表示
+                                                       :ATTRIBUTE ( ATTRIB-16 / 形式的)
+                                                       :の ( ENTITY-15 / 高精度))
+                                                :から ( ENTITY-7 / 言語_テクスト
+                                                       :ATTRIBUTE ( ATTRIB-13 / 自然)
+                                                       :の ( ENTITY-8 / ENTITY
+                                                              :の ( ENTITY-9 / 無制約)
+                                                              :EQUALS ( GROUP-10 / AND
+                                                                     :op1 ( ENTITY-11 / 日本語)
+                                                                     :op2 ENTITY-35)))))))
+                    :op1 ARB-6
+                    :op2 ENTITY-9
+                    :op3 ( CONJ-31 / CONJ_および
+                           :op1 ( GROUP-10 / AND
+                                  :op1 ( ENTITY-12 / 英語)
+                                  :op2 ENTITY-37)
+                           :op2 GROUP-36)
+                    :op4 ENTITY-8
+                    :op5 ATTRIB-13
+                    :op6 ENTITY-7
+                    :op7 ENTITY-15
+                    :op8 ATTRIB-16
+                    :op9 ENTITY-14
+                    :op10 SITUATION-5
+                    :op11 ATTRIB-19
+                    :op12 ENTITY-4
+                    :op13 ENTITY-34
+                    :op14 ( EVENT-17 / 自動的_に))
+             :op2 ( GROUP-33 / AND
+                    :op8 ( ENTITY-20 / 方法
+                           :THAT ( EVENT-28 / 生かす
+                                  :ARG0 ( ARB-21 / arb
+                                         :pick0)
+                                  :ARG1 ( ENTITY-22 / 結果)
+                                  :に ( ENTITY-24 / 構築
+                                         :の ( ENTITY-25 / 世界_知識
+                                                :の ( ENTITY-26 / ため
+                                                       :の ( ENTITY-27 / 推論))))
+                                  :として ( ENTITY-23 / データベース)))
+                    :op1 ARB-21
+                    :op2 ENTITY-23
+                    :op3 ENTITY-27
+                    :op4 ENTITY-26
+                    :op5 ENTITY-25
+                    :op6 ENTITY-24
+                    :op7 ENTITY-38)))
+
+# ::id 19_textbook_BUFFALO;IJ
+# ::snt 頑強 で 正確 な 文 の 意味 の 解析 により 、 テクスト の 含意 の 認識 、 検索 、 テクスト 要約 、 自動 応答 、 機械 翻訳 等 、 自然 言語 処理 の すべて の 課題 へ の 貢献 を 目指し ます 。
+( EVENT-21 / 目指し_ます
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-8 / 貢献
+             :へ_の ( ENTITY-9 / 課題
+                    :の ( ENTITY-18 / ENTITY
+                           :の ( ENTITY-19 / 言語_処理
+                                  :ATTRIBUTE ( ATTRIB-20 / 自然)))
+                    :等 ( GROUP-10 / AND
+                           :op3 ( ENTITY-11 / 認識
+                                  :の ( ENTITY-12 / 含意
+                                         :の ( ENTITY-13 / テクスト)))
+                           :op4 ENTITY-27
+                           :op1 ENTITY-13
+                           :op2 ENTITY-12
+                           :MOD ( mod-23 / AND
+                                  :op1 ( ENTITY-14 / 検索)
+                                  :op2 ENTITY-28)
+                           :MOD ( mod-24 / AND
+                                  :op1 ( ENTITY-15 / テクスト_要約)
+                                  :op2 ENTITY-29)
+                           :MOD ( mod-25 / AND
+                                  :op1 ( ENTITY-16 / 自動_応答)
+                                  :op2 ENTITY-30)
+                           :MOD ( mod-26 / AND
+                                  :op1 ( ENTITY-17 / 機械_翻訳)
+                                  :op2 ENTITY-31))))
+      :により ( ENTITY-2 / 解析
+             :の ( ENTITY-6 / 意味
+                    :の ( ENTITY-7 / 文))
+             :ARG0-of ( CONJ-22 / CONJ_te
+                    :op1 ( EVENT-4 / 頑強_で)
+                    :op2 ( EVENT-5 / 正確_な))))
+
+# ::id 20_textbook_BUFFALO;IJ
+# ::snt ゴスタック は ドッシュ を ディスティム し ます 。
+( EVENT-3 / ディスティムする.0_ます
+      :ARG0 ( ENTITY-1 / ゴスタック)
+      :ARG1 ( ENTITY-2 / ドッシュ))
+
+# ::id 21_textbook_BUFFALO;NJ
+# ::snt 先生 は ジョン を しかっ た 。
+( EVENT-2 / しかっ_た
+      :ARG0 ( ENTITY-1 / 先生)
+      :ARG1 ( ENTITY-ジョン / ENTITY
+             :name ( n-4 / name
+                    :op1 "ジョン"))
+      :MOD ( mod-3 / past))
+
+# ::id 22_textbook_BUFFALO;NJ
+# ::snt ジョン は 先生 に しから れ た 。
+( EVENT-2 / しから_た
+      :ARG0 ( ENTITY-1 / 先生)
+      :ARG1 ( ENTITY-ジョン / ENTITY
+             :name ( n-4 / name
+                    :op1 "ジョン"))
+      :MOD ( mod-3 / past))
+
+# ::id 23_textbook_BUFFALO;NJ
+# ::snt 私 の 母 と 父 は 友達 と 一緒 に 東京 の レストラン で 夕食 を 食べ まし た 。
+( EVENT-10 / 食べ_まし_た
+      :ARG0 ( ENTITY-1 / CONJ_と
+             :op1 ( ENTITY-4 / 母)
+             :op2 ( ENTITY-5 / 父)
+             :の ( ENTITY-2 / 私
+                    :pick0))
+      :ARG1 ( ENTITY-9 / 夕食)
+      :で ( ENTITY-8 / レストラン
+             :の ( ENTITY-東京 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "東京")))
+      :に ( ENTITY-6 / 一緒
+             :と ( ENTITY-7 / 友達))
+      :MOD ( mod-11 / past))
+
+# ::id 24_textbook_BUFFALO;NJ
+# ::snt 基礎 研究 なし で は 科学 は 発展 し ない 。
+( EVENT-3 / 発展する.0
+      :ARG0 ( ENTITY-2 / 科学)
+      :で ( ENTITY-1 / 基礎_研究_なし)
+      :domain-of ( NEG-4 / NEG))
+
+# ::id 25_textbook_BUFFALO;NJ
+# ::snt 昨日 とっ た 写真 が かかっ て い た 。
+( EVENT-5 / かかっ_て_い_た
+      :ARG0 ( ENTITY-1 / 写真
+             :ARG1-of ( EVENT-4 / とっ_た
+                    :ARG0 ( ENTITY-3 / pro
+                           :pick0)
+                    :TMP ( TIME-昨日 / TIME
+                           :name ( n-8 / name
+                                  :op1 "昨日"))
+                    :MOD ( mod-6 / past)))
+      :MOD ( mod-7 / past))
+
+# ::id 26_textbook_BUFFALO;NJ
+# ::snt 子供 が 泳い で いる 写真 が かかっ て い た 。
+( EVENT-4 / かかっ_て_い_た
+      :ARG0 ( SITUATION-1 / 写真
+             :THAT ( EVENT-3 / 泳い_で_いる
+                    :ARG0 ( ENTITY-2 / 子供)))
+      :MOD ( mod-5 / past))
+
+# ::id 27_textbook_BUFFALO;TOPTEN_1a;NJ
+# ::snt 太郎 が 新聞 を 読み ながら ご飯 を 食べ て いる 。
+( CRD-5 / ながら
+      :op1 ( EVENT-2 / 読み
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 新聞))
+      :op2 ( EVENT-4 / 食べ_て_いる
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-3 / ご飯)))
+
+# ::id 28_textbook_BUFFALO;TOPTEN_1b;NJ
+# ::snt 太郎 が 新聞 を 読み つつ ご飯 を 食べ て いる 。
+( CRD-5 / つつ
+      :op1 ( EVENT-2 / 読み
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 新聞))
+      :op2 ( EVENT-4 / 食べ_て_いる
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-3 / ご飯)))
+
+# ::id 29_textbook_BUFFALO;TOPTEN_3;NJ
+# ::snt 太郎 が ギター を 弾く と 春子 が 歌っ た 。
+( CRD-4 / と
+      :op1 ( EVENT-2 / 弾く
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / ギター))
+      :op2 ( EVENT-3 / 歌っ_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past)))
+
+# ::id 30_textbook_BUFFALO;TOPTEN_4;NJ
+# ::snt 春子 は スペイン へ 行く だろう が 秋子 は イタリア へ 行く だろう 。
+( CONJ-5 / CONJ_が
+      :op1 ( EVENT-1 / 行く
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-7 / name
+                           :op1 "スペイン"))
+             :domain-of ( MD-3 / MD_だろう))
+      :op2 ( EVENT-2 / 行く
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-9 / name
+                           :op1 "イタリア"))
+             :domain-of ( MD-4 / MD_だろう)))
+
+# ::id 31_textbook_BUFFALO;TOPTEN_27a;NJ
+# ::snt ジョン が 来 た 。
+( EVENT-1 / 来_た
+      :ARG0 ( ENTITY-ジョン / ENTITY
+             :name ( n-3 / name
+                    :op1 "ジョン"))
+      :MOD ( mod-2 / past))
+
+# ::id 32_textbook_BUFFALO;TOPTEN_27b;NJ
+# ::snt ジョン は 来 た 。
+( EVENT-1 / 来_た
+      :ARG0 ( ENTITY-ジョン / ENTITY
+             :name ( n-3 / name
+                    :op1 "ジョン"))
+      :MOD ( mod-2 / past))
+
+# ::id 33_textbook_BUFFALO;TOPTEN_34a;NJ
+# ::snt 太郎 が 上着 を 脱い で ハンガー に 掛け た 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-2 / 脱い_で
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ENTITY-太郎
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 34_textbook_BUFFALO;TOPTEN_34b;NJ
+# ::snt 太郎 は 上着 を 脱い で ハンガー に 掛け た 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-2 / 脱い_で
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ENTITY-太郎
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 35_textbook_BUFFALO;TOPTEN_35a;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と ハンガー に 掛け た 。
+( CRD-9 / と
+      :op1 ( EVENT-2 / 脱ぐ
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-6 / 掛け_た
+             :ARG0 ( PICK-7 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-太郎)
+             :ARG1 ( PICK-8 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-太郎)
+             :に ( ENTITY-5 / ハンガー)
+             :MOD ( mod-10 / past)))
+
+# ::id 36_textbook_BUFFALO;TOPTEN_35b;NJ
+# ::snt 太郎 は 上着 を 脱ぐ と ハンガー に 掛け た 。
+( CRD-6 / と
+      :op1 ( EVENT-2 / 脱ぐ
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 37_textbook_BUFFALO;TOPTEN_36a;NJ
+# ::snt 太郎 は 殴る と すぐ 泣く 。
+( CND-7 / と (
+             :op1 ( ARB-1 arb
+                    :pick0) ( ENTITY-2 ( ENTITY
+                           :namely ENTITY-太郎)) ( EVENT-3 ( 殴る
+                           :ARG0 ARB-1
+                           :ARG1 ENTITY-2)))
+      :op2 ( EVENT-4 / 泣く
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "太郎"))
+             :MOD ( mod-8 / すぐ)))
+
+# ::id 38_textbook_BUFFALO;TOPTEN_36b;NJ
+# ::snt 春子 は 寒く なる と 学校 に 来 なく なる 。
+( CND-4 / と
+      :op1 ( EVENT-1 / 寒く_なる)
+      :op2 ( EVENT-3 / 来_なる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :に ( ENTITY-2 / 学校)
+             :domain-of ( NEG-5 / NEG)))
+
+# ::id 39_textbook_BUFFALO;TOPTEN_37a;NJ
+# ::snt 太郎 が 上着 を 脱い だ から ハンガー に 掛け た 。
+( CRD-8 / から
+      :op1 ( EVENT-3 / 脱い_だ
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-2 / 上着)
+             :MOD ( mod-9 / past))
+      :op2 ( EVENT-6 / 掛け_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( PICK-7 / or
+                    :op1 ENTITY-太郎
+                    :op2 ENTITY-2)
+             :に ( ENTITY-5 / ハンガー)
+             :MOD ( mod-10 / past)))
+
+# ::id 40_textbook_BUFFALO;TOPTEN_37b;NJ
+# ::snt 太郎 は 上着 を 脱い だ から ハンガー に 掛け た 。
+( CRD-6 / から
+      :op1 ( EVENT-2 / 脱い_だ
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 上着)
+             :MOD ( mod-7 / past))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "太郎"))
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-8 / past)))
+
+# ::id 41_textbook_BUFFALO;TOPTEN_44;NJ
+# ::snt 太郎 が 上着 を 脱い で ハンガー に 掛け た 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-2 / 脱い_で
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ENTITY-太郎
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 42_textbook_BUFFALO;TOPTEN_48;NJ
+# ::snt 太郎 は 上着 を 脱い で ハンガー に 掛け た 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-2 / 脱い_で
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ENTITY-太郎
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 43_textbook_BUFFALO;TOPTEN_53;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と 春子 が ハンガー に 掛け た 。
+( CRD-7 / と
+      :op1 ( EVENT-2 / 脱ぐ
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-10 / name
+                           :op1 "春子"))
+             :ARG1 ( PICK-6 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-太郎)
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-8 / past)))
+
+# ::id 44_textbook_BUFFALO;TOPTEN_57;NJ
+# ::snt 太郎 が 上着 を 脱ぐ と ハンガー に 掛け た 。
+( CRD-8 / と
+      :op1 ( EVENT-3 / 脱ぐ
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-10 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-2 / 上着))
+      :op2 ( EVENT-6 / 掛け_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( PICK-7 / or
+                    :op1 ENTITY-太郎
+                    :op2 ENTITY-2)
+             :に ( ENTITY-5 / ハンガー)
+             :MOD ( mod-9 / past)))
+
+# ::id 45_textbook_BUFFALO;TOPTEN_61;NJ
+# ::snt 太郎 は 上着 を 脱ぐ と ハンガー に 掛け た 。
+( CRD-6 / と
+      :op1 ( EVENT-2 / 脱ぐ
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 上着))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "太郎"))
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-7 / past)))
+
+# ::id 46_textbook_BUFFALO;TOPTEN_70;NJ
+# ::snt 太郎 が 上着 を 脱い だ から ハンガー に 掛け た 。
+( CRD-8 / から
+      :op1 ( EVENT-3 / 脱い_だ
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "太郎"))
+             :ARG1 ( ENTITY-2 / 上着)
+             :MOD ( mod-9 / past))
+      :op2 ( EVENT-6 / 掛け_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( PICK-7 / or
+                    :op1 ENTITY-太郎
+                    :op2 ENTITY-2)
+             :に ( ENTITY-5 / ハンガー)
+             :MOD ( mod-10 / past)))
+
+# ::id 47_textbook_BUFFALO;TOPTEN_74;NJ
+# ::snt 太郎 は 上着 を 脱い だ から ハンガー に 掛け た 。
+( CRD-6 / から
+      :op1 ( EVENT-2 / 脱い_だ
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / 上着)
+             :MOD ( mod-7 / past))
+      :op2 ( EVENT-5 / 掛け_た
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "太郎"))
+             :ARG1 ENTITY-1
+             :に ( ENTITY-4 / ハンガー)
+             :MOD ( mod-8 / past)))
+
+# ::id 48_textbook_BUFFALO;TOPTEN_78a;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌っ た 。
+( CRD-4 / ながら
+      :op1 ( EVENT-2 / 弾き
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / ギター))
+      :op2 ( EVENT-3 / 歌っ_た
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "太郎"))
+             :MOD ( mod-5 / past)))
+
+# ::id 49_textbook_BUFFALO;TOPTEN_78b;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌う 。
+( CRD-4 / ながら
+      :op1 ( EVENT-2 / 弾き
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / ギター))
+      :op2 ( EVENT-3 / 歌う
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "太郎"))))
+
+# ::id 50_textbook_BUFFALO;TOPTEN_80a;NJ
+# ::snt 春子 が 卒業 し た ので 一緒 に 旅行 し た 。
+( CRD-5 / ので
+      :op1 ( EVENT-2 / 卒業する.0_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "春子"))
+             :MOD ( mod-6 / past))
+      :op2 ( EVENT-4 / 旅行する.0_た
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :に ( ENTITY-3 / 一緒)
+             :MOD ( mod-7 / past)))
+
+# ::id 51_textbook_BUFFALO;TOPTEN_80b;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 し た 。
+( CRD-5 / ので
+      :op1 ( EVENT-2 / 卒業する.0
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-4 / 旅行する.0_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-3 / 一緒)
+             :MOD ( mod-6 / past)))
+
+# ::id 52_textbook_BUFFALO;TOPTEN_80c;NJ
+# ::snt 春子 が 卒業 し た ので 一緒 に 旅行 する 。
+( CRD-5 / ので
+      :op1 ( EVENT-2 / 卒業する.0_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子"))
+             :MOD ( mod-6 / past))
+      :op2 ( EVENT-4 / 旅行する.0
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-3 / 一緒)))
+
+# ::id 53_textbook_BUFFALO;TOPTEN_80d;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 する 。
+( CRD-5 / ので
+      :op1 ( EVENT-2 / 卒業する.0
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-4 / 旅行する.0
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-3 / 一緒)))
+
+# ::id 54_textbook_BUFFALO;TOPTEN_81a;NJ
+# ::snt 春子 が 卒業 し た ので 悲しかっ た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 卒業する.0_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 悲しかっ_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-6 / past)))
+
+# ::id 55_textbook_BUFFALO;TOPTEN_81b;NJ
+# ::snt 春子 が 卒業 する ので 悲しかっ た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 卒業する.0
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 悲しかっ_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-5 / past)))
+
+# ::id 56_textbook_BUFFALO;TOPTEN_81c;NJ
+# ::snt 春子 が 卒業 し た ので 悲しい 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 卒業する.0_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 悲しい
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 57_textbook_BUFFALO;TOPTEN_81d;NJ
+# ::snt 春子 が 卒業 する ので 悲しい 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 卒業する.0
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 悲しい
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 58_textbook_BUFFALO;TOPTEN_82a;NJ
+# ::snt 春子 が 休ん で い た ので 電話 し た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_い_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 電話する.0_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-6 / past)))
+
+# ::id 59_textbook_BUFFALO;TOPTEN_82b;NJ
+# ::snt 春子 が 休ん で いる ので 電話 し た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_いる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 電話する.0_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-5 / past)))
+
+# ::id 60_textbook_BUFFALO;TOPTEN_82c;NJ
+# ::snt 春子 が 休ん で い た ので 電話 する 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_い_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 電話する.0
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 61_textbook_BUFFALO;TOPTEN_82d;NJ
+# ::snt 春子 が 休ん で いる ので 電話 する 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_いる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 電話する.0
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 62_textbook_BUFFALO;TOPTEN_83a;NJ
+# ::snt 春子 が 休ん で い た ので 悲しかっ た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_い_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 悲しかっ_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-6 / past)))
+
+# ::id 63_textbook_BUFFALO;TOPTEN_83b;NJ
+# ::snt 春子 が 休ん で いる ので 悲しかっ た 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_いる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 悲しかっ_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :MOD ( mod-5 / past)))
+
+# ::id 64_textbook_BUFFALO;TOPTEN_83c;NJ
+# ::snt 春子 が 休ん で い た ので 悲しい 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_い_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :MOD ( mod-5 / past))
+      :op2 ( EVENT-3 / 悲しい
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 65_textbook_BUFFALO;TOPTEN_83d;NJ
+# ::snt 春子 が 休ん で いる ので 悲しい 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_いる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 悲しい
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 66_textbook_BUFFALO;TOPTEN_84a;NJ
+# ::snt 春子 は スペイン へ 行っ た が 秋子 は イタリア へ 行っ た 。
+( CONJ-3 / CONJ_が
+      :op1 ( EVENT-1 / 行っ_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-7 / name
+                           :op1 "スペイン"))
+             :MOD ( mod-4 / past))
+      :op2 ( EVENT-2 / 行っ_た
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-9 / name
+                           :op1 "イタリア"))
+             :MOD ( mod-5 / past)))
+
+# ::id 67_textbook_BUFFALO;TOPTEN_84b;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行っ た 。
+( CONJ-3 / CONJ_が
+      :op1 ( EVENT-1 / 行く
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-7 / name
+                           :op1 "スペイン"))
+             :MOD ( mod-4 / past))
+      :op2 ( EVENT-2 / 行っ_た
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-9 / name
+                           :op1 "イタリア"))
+             :MOD ( mod-5 / past)))
+
+# ::id 68_textbook_BUFFALO;TOPTEN_84c;NJ
+# ::snt 春子 は スペイン へ 行っ た が 秋子 は イタリア へ 行く 。
+( CONJ-3 / CONJ_が
+      :op1 ( EVENT-1 / 行っ_た
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-6 / name
+                           :op1 "スペイン"))
+             :MOD ( mod-4 / past))
+      :op2 ( EVENT-2 / 行く
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-8 / name
+                           :op1 "イタリア"))))
+
+# ::id 69_textbook_BUFFALO;TOPTEN_84d;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行く 。
+( CONJ-3 / CONJ_が
+      :op1 ( EVENT-1 / 行く
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-4 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-5 / name
+                           :op1 "スペイン")))
+      :op2 ( EVENT-2 / 行く
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-7 / name
+                           :op1 "イタリア"))))
+
+# ::id 70_textbook_BUFFALO;TOPTEN_93;NJ
+# ::snt ジョン が 来 た 。
+( EVENT-1 / 来_た
+      :ARG0 ( ENTITY-ジョン / ENTITY
+             :name ( n-3 / name
+                    :op1 "ジョン"))
+      :MOD ( mod-2 / past))
+
+# ::id 71_textbook_BUFFALO;TOPTEN_102;NJ
+# ::snt 太郎 が ギター を 弾き ながら 歌う 。
+( CRD-4 / ながら
+      :op1 ( EVENT-2 / 弾き
+             :ARG0 ENTITY-太郎
+             :ARG1 ( ENTITY-1 / ギター))
+      :op2 ( EVENT-3 / 歌う
+             :ARG0 ( ENTITY-太郎 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "太郎"))))
+
+# ::id 72_textbook_BUFFALO;TOPTEN_106;NJ
+# ::snt 春子 が 卒業 する ので 一緒 に 旅行 し た 。
+( CRD-5 / ので
+      :op1 ( EVENT-2 / 卒業する.0
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-4 / 旅行する.0_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-3 / 一緒)
+             :MOD ( mod-6 / past)))
+
+# ::id 73_textbook_BUFFALO;TOPTEN_110;NJ
+# ::snt 春子 が 休ん で いる ので 悲しい 。
+( CRD-4 / ので
+      :op1 ( EVENT-2 / 休ん_で_いる
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "春子")))
+      :op2 ( EVENT-3 / 悲しい
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)))
+
+# ::id 74_textbook_BUFFALO;TOPTEN_115;NJ
+# ::snt 春子 は スペイン へ 行く が 秋子 は イタリア へ 行っ た 。
+( CONJ-3 / CONJ_が
+      :op1 ( EVENT-1 / 行く
+             :ARG0 ( ENTITY-春子 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "春子"))
+             :へ ( ENTITY-スペイン / ENTITY
+                    :name ( n-7 / name
+                           :op1 "スペイン"))
+             :MOD ( mod-4 / past))
+      :op2 ( EVENT-2 / 行っ_た
+             :ARG0 ( ENTITY-秋子 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "秋子"))
+             :へ ( ENTITY-イタリア / ENTITY
+                    :name ( n-9 / name
+                           :op1 "イタリア"))
+             :MOD ( mod-5 / past)))
+
+# ::id 75_textbook_BUFFALO;NJ
+# ::snt この いちご は 甘く て おいしい です 。
+( CONJ-4 / CONJ_te
+      :op1 ( EVENT-2 / 甘く_て
+             :ARG0 ( ENTITY-1 / いちご))
+      :op2 ( EVENT-3 / おいしい_です
+             :ARG0 ENTITY-1))
+
+# ::id 76_textbook_BUFFALO;NJ
+# ::snt O王 を 追お う
+( EVENT-2 / 追お
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :を ( ENTITY-O王 / ENTITY
+             :name ( n-4 / name
+                    :op1 "O王"))
+      :domain-of ( MD-3 / MD_う))

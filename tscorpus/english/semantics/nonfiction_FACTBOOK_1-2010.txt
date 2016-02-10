@@ -1,0 +1,1096 @@
+# ::id 1_nonfiction_FACTBOOK-2010;DISEASES;AT1-1;NE
+# ::snt Major infectious diseases
+∃ ATTRIB[2] EVENT[3] GROUP[1] (major(ATTRIB[2]) ∧ is_infectious_diseases_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 2_nonfiction_FACTBOOK-2010;DISEASES;AT2-1;NE
+# ::snt This entry lists major infectious diseases likely to be encountered in countries where the risk of such diseases is assessed to be very high as compared to the United States .
+∃ SITUATION[15] SITUATION[17] SITUATION[12] ATTRIB[11] ATTRIB[3] ATTRIB[9] EVENT[13] EVENT[14] EVENT[10] EVENT[16] EVENT[18] GROUP[5] GROUP[2] GROUP[8] ENTITY[7] ENTITY[1] (
+ entry(ENTITY[1]) ∧
+  such(ATTRIB[9]) ∧
+   is_diseases_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+    is_risk_of(ENTITY[7], GROUP[8]) ∧
+     major(ATTRIB[3]) ∧
+      is_FACT_THAT(SITUATION[12],   (compared(EVENT[13], _, [_]) ∧ to(EVENT[13]) = GROUP[United_States])) ∧
+       is_very_high_as(ATTRIB[11], SITUATION[12]) ∧
+        is_FACT_THAT(SITUATION[15], assessed(EVENT[10], _, ENTITY[7], copula(EVENT[14], ENTITY[7], ATTRIB[11]))) ∧
+         countries(GROUP[5]) ∧
+         is_FACT_THAT(SITUATION[17], encountered(EVENT[16], _, GROUP[2]) ∧ in(EVENT[16]) = GROUP[5]) ∧
+          is_infectious_diseases_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+          ADV_likely(SITUATION[17]) ∧ is_LOC(SITUATION[15], GROUP[5]) ∧ lists(EVENT[18], ENTITY[1], GROUP[2]))
+
+# ::id 3_nonfiction_FACTBOOK-2010;DISEASES;AT2-2;NE
+# ::snt These infectious diseases represent risks to US government personnel traveling to the specified country for a period of less than three years .
+∃ ATTRIB[5] ATTRIB[8] ATTRIB[2] EVENT[12] EVENT[13] ENTITY[9] GROUP[4] GROUP[3] ENTITY[7] GROUP[1] (
+ infectious(ATTRIB[2]) ∧
+  is_diseases_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   specified(ATTRIB[8]) ∧
+    is_country_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+     risks(GROUP[3]) ∧
+      us(ATTRIB[5]) ∧
+       LESS GROUP[11] ENTITY[10] (((CD_three(GROUP[11]), years(GROUP[11])) ∧ is_than(ENTITY[10], GROUP[11])),
+        is_period_of(ENTITY[9], ENTITY[10])) ∧
+        traveling(EVENT[12], GROUP[4]) ∧ for(EVENT[12]) = ENTITY[9] ∧ to(EVENT[12]) = ENTITY[7] ∧
+         is_government_personnel_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ represent(EVENT[13], GROUP[1], GROUP[3]) ∧ to(EVENT[13]) = GROUP[4])
+
+# ::id 4_nonfiction_FACTBOOK-2010;DISEASES;AT2-3;NE
+# ::snt The degree of risk is assessed by considering the foreign nature of these infectious diseases , their severity , and the probability of being affected by the diseases present .
+∃ ARB[4] LGS[3] ATTRIB[15] SITUATION[13] ATTRIB[9] ATTRIB[7] EVENT[17] EVENT[18] GROUP[5] EVENT[16] ENTITY[2] GROUP[8] ENTITY[6] GROUP[14] ENTITY[12] ENTITY[1] (
+ risk(ENTITY[2]) ∧
+  is_degree_of(ENTITY[1], ENTITY[2]) ∧
+   foreign(ATTRIB[7]) ∧
+    infectious(ATTRIB[9]) ∧
+     is_diseases_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+      is_nature_of(ENTITY[6], GROUP[8]) ∧ is_nature_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+       present(ATTRIB[15]) ∧
+        is_diseases_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+         is_FACT_THAT(SITUATION[13],   being_affected(EVENT[16], GROUP[14], [_])) ∧
+          is_probability_of(ENTITY[12], SITUATION[13]) ∧
+           ARB[4] = *arb* ∧
+            is_element_of(ENTITY[6], GROUP[5]) ∧
+             ∃ REF1[11] ENTITY[10] (REF1[11] = their ∧ is_severity_POS(ENTITY[10], REF1[11]) ∧ is_element_of(ENTITY[10], GROUP[5])) ∧
+             is_element_of(ENTITY[12], GROUP[5]) ∧
+             is_FACT_THAT(LGS[3], considering(EVENT[17], ARB[4], GROUP[5])) ∧ assessed(EVENT[18], LGS[3], ENTITY[1]))
+
+# ::id 5_nonfiction_FACTBOOK-2010;DISEASES;AT2-4;NE
+# ::snt The diseases listed do not necessarily represent the total disease burden experienced by the local population .
+∃ ATTRIB[8] ATTRIB[5] ENTITY[7] ENTITY[4] GROUP[1] EVENT[3] EVENT[9] (
+ listed(EVENT[3], _, GROUP[1]) ∧ diseases(GROUP[1]) ∧
+  total(ATTRIB[5]) ∧
+   local(ATTRIB[8]) ∧
+    is_population_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+     experienced(EVENT[9], ENTITY[7], ENTITY[4]) ∧ is_disease_burden_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      ¬ ∃ EVENT[10] (ADV_necessarily(EVENT[10]) ∧ do_represent(EVENT[10], GROUP[1], ENTITY[4])))
+
+# ::id 6_nonfiction_FACTBOOK-2010;DISEASES;AT3-1;NE
+# ::snt The risk to an individual traveler varies considerably by the specific location , visit duration , type of activities , type of accommodations , time of year , and other factors .
+∃ ATTRIB[6] ATTRIB[3] EVENT[16] GROUP[4] ENTITY[2] ENTITY[5] ENTITY[1] (
+ individual(ATTRIB[3]) ∧
+  is_traveler_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_risk_to(ENTITY[1], ENTITY[2]) ∧
+    specific(ATTRIB[6]) ∧
+     is_location_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+      is_element_of(ENTITY[5], GROUP[4]) ∧ ∃ ENTITY[7] (visit_duration(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+       ∃ GROUP[9] ENTITY[8] (activities(GROUP[9]) ∧ is_type_of(ENTITY[8], GROUP[9]) ∧ is_element_of(ENTITY[8], GROUP[4])) ∧
+       ∃ GROUP[11] ENTITY[10] (accommodations(GROUP[11]) ∧ is_type_of(ENTITY[10], GROUP[11]) ∧ is_element_of(ENTITY[10], GROUP[4])) ∧
+       ∃ ENTITY[13] ENTITY[12] (year(ENTITY[13]) ∧ is_time_of(ENTITY[12], ENTITY[13]) ∧ is_element_of(ENTITY[12], GROUP[4])) ∧
+       ∃ ATTRIB[15] GROUP[14] (other(ATTRIB[15]) ∧ is_factors_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧ is_subset_of_or_equal_to(GROUP[14], GROUP[4])) ∧
+       ADV_considerably(EVENT[16]) ∧ varies(EVENT[16], ENTITY[1]) ∧ by(EVENT[16]) = GROUP[4])
+
+# ::id 7_nonfiction_FACTBOOK-2010;DISEASES;AT3-2;NE
+# ::snt Consultation with a travel medicine physician is needed to evaluate individual risk and recommend appropriate preventive measures such as vaccines .
+∃ ATTRIB[10] ATTRIB[9] ATTRIB[8] ATTRIB[5] EVENT[6] EVENT[12] EVENT[3] ENTITY[2] ENTITY[4] GROUP[11] GROUP[7] ENTITY[1] (
+ travel_medicine_physician(ENTITY[2]) ∧
+  is_Consultation_with(ENTITY[1], ENTITY[2]) ∧
+   individual(ATTRIB[5]) ∧
+    is_risk_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     appropriate(ATTRIB[8]) ∧
+      preventive(ATTRIB[9]) ∧
+       vaccines(GROUP[11]) ∧
+        is_such_as(ATTRIB[10], GROUP[11]) ∧
+         is_measures_ATTRIBUTE(GROUP[7], ATTRIB[10]) ∧ is_measures_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_measures_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+          needed(EVENT[3], _, ENTITY[1],
+           CONJ_and(evaluate(EVENT[6], ENTITY[1], ENTITY[4]), recommend(EVENT[12], ENTITY[1], GROUP[7]))))
+
+# ::id 8_nonfiction_FACTBOOK-2010;DISEASES;AT3-3;NE
+# ::snt Diseases are organized into the following six exposure categories shown in italics and listed in typical descending order of risk .
+∃ ATTRIB[9] ATTRIB[8] ATTRIB[3] EVENT[12] GROUP[1] EVENT[6] EVENT[11] GROUP[5] ENTITY[10] ENTITY[7] GROUP[2] (
+ following(ATTRIB[3]) ∧
+  italics(GROUP[5]) ∧
+   typical(ATTRIB[8]) ∧
+    descending(ATTRIB[9]) ∧
+     risk(ENTITY[10]) ∧
+      is_order_of(ENTITY[7], ENTITY[10]) ∧ is_order_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_order_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       (CD_six(GROUP[2]),
+        CONJ_and(shown(EVENT[6], _, GROUP[2]) ∧ in(EVENT[6]) = GROUP[5],
+         listed(EVENT[11], _, GROUP[2]) ∧ in(EVENT[11]) = ENTITY[7]) ∧
+         is_exposure_categories_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧
+        Diseases(GROUP[1]) ∧ organized(EVENT[12], _, GROUP[1]) ∧ into(EVENT[12]) = GROUP[2])
+
+# ::id 9_nonfiction_FACTBOOK-2010;DISEASES;AT3-4;NE
+# ::snt Note :
+∃ EVENT[2] ENTITY[1] (Note(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 10_nonfiction_FACTBOOK-2010;DISEASES;AT3-5;NE
+# ::snt The sequence of exposure categories listed in individual country entries may vary according to local conditions .
+∃ ATTRIB[5] EVENT[6] GROUP[4] GROUP[2] ENTITY[1] (
+ individual(ATTRIB[5]) ∧
+  is_country_entries_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+   listed(EVENT[6], _, GROUP[2]) ∧ in(EVENT[6]) = GROUP[4] ∧ exposure_categories(GROUP[2]) ∧
+    is_sequence_of(ENTITY[1], GROUP[2]) ∧
+     MD_may(∃ ATTRIB[8] EVENT[10] EVENT[9] GROUP[7] (
+           local(ATTRIB[8]) ∧
+            is_conditions_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+             CONJ_and(vary(EVENT[10], ENTITY[1]),
+              according(EVENT[9], ENTITY[1]) ∧ to(EVENT[9]) = GROUP[7]))))
+
+# ::id 11_nonfiction_FACTBOOK-2010;DISEASES;AT3-6;NE
+# ::snt food or waterborne diseases acquired through eating or drinking on the local economy :
+∃ SITUATION[7] ATTRIB[9] EVENT[10] EVENT[11] EVENT[12] EVENT[13] GROUP[2] ENTITY[1] ENTITY[8] (
+ local(ATTRIB[9]) ∧
+  is_economy_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   CONJ_or(∃ GROUP[3] (food_diseases(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])),
+    ∃ ATTRIB[5] GROUP[4] (waterborne(ATTRIB[5]) ∧ is_diseases_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[2]))) ∧
+    is_FACT_THAT(SITUATION[7],
+     CONJ_or(eating(EVENT[10], ENTITY[1]) ∧ on(EVENT[10]) = ENTITY[8],
+      drinking(EVENT[11], ENTITY[1]) ∧ on(EVENT[11]) = ENTITY[8])) ∧
+     acquired(EVENT[12], _, ENTITY[1]) ∧ through(EVENT[12]) = SITUATION[7] ∧ is_equals(ENTITY[1], GROUP[2]) ∧
+      xxx(EVENT[13]) ∧ LINK(EVENT[13]) = ENTITY[1])
+
+# ::id 12_nonfiction_FACTBOOK-2010;DISEASES;AT4-1;NE
+# ::snt Hepatitis A -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Hepatitis_A])
+
+# ::id 13_nonfiction_FACTBOOK-2010;DISEASES;AT4-2;NE
+# ::snt viral disease that interferes with the functioning of the liver ;
+∃ ATTRIB[2] EVENT[6] EVENT[7] ENTITY[1] ENTITY[5] ENTITY[4] (
+ liver(ENTITY[5]) ∧
+  is_functioning_of(ENTITY[4], ENTITY[5]) ∧
+   viral(ATTRIB[2]) ∧
+    interferes(EVENT[6], ENTITY[1]) ∧ with(EVENT[6]) = ENTITY[4] ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 14_nonfiction_FACTBOOK-2010;DISEASES;AT4-3;NE
+# ::snt spread through consumption of food or water contaminated with fecal matter , principally in areas of poor sanitation ;
+∃ ATTRIB[13] ATTRIB[9] REF1[1] EVENT[10] EVENT[14] ENTITY[8] GROUP[4] ENTITY[3] ENTITY[12] GROUP[11] ENTITY[2] (
+ REF1[1] = *pro* ∧
+  CONJ_or(∃ ENTITY[5] (food(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (water(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+   fecal(ATTRIB[9]) ∧
+    is_matter_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+     contaminated(EVENT[10], _, ENTITY[3]) ∧ with(EVENT[10]) = ENTITY[8] ∧ is_equals(ENTITY[3], GROUP[4]) ∧
+      is_consumption_of(ENTITY[2], ENTITY[3]) ∧
+       poor(ATTRIB[13]) ∧
+        is_sanitation_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+         is_areas_of(GROUP[11], ENTITY[12]) ∧
+          spread(EVENT[14], _, REF1[1]) ∧ principally_in(EVENT[14]) = GROUP[11] ∧
+           through(EVENT[14]) = ENTITY[2])
+
+# ::id 15_nonfiction_FACTBOOK-2010;DISEASES;AT4-4;NE
+# ::snt victims exhibit fever , jaundice , and diarrhea ;
+∃ EVENT[6] GROUP[2] GROUP[1] (
+ victims(GROUP[1]) ∧
+  ∃ ENTITY[3] (fever(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (jaundice(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ENTITY[5] (diarrhea(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧ exhibit(EVENT[6], GROUP[1], GROUP[2]))
+
+# ::id 16_nonfiction_FACTBOOK-2010;DISEASES;AT4-5;NE
+# ::snt 15 % of victims will experience prolonged symptoms over 6 - 9 months ;
+∃ GROUP[2] GROUP[1] (
+ victims(GROUP[2]) ∧
+  (CD_15(GROUP[1]), is%of(GROUP[1], GROUP[2])) ∧
+   MD_will(∃ ATTRIB[4] EVENT[6] GROUP[5] GROUP[3] (
+         prolonged(ATTRIB[4]) ∧
+          is_symptoms_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+           (CD_6_9(GROUP[5]), months(GROUP[5])) ∧
+            experience(EVENT[6], GROUP[1], GROUP[3]) ∧ over(EVENT[6]) = GROUP[5])))
+
+# ::id 17_nonfiction_FACTBOOK-2010;DISEASES;AT4-6;NE
+# ::snt vaccine available .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (vaccine(ENTITY[1]) ∧ available(ATTRIB[2]) ∧ xxx(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 18_nonfiction_FACTBOOK-2010;DISEASES;AT4-7;NE
+# ::snt Hepatitis E -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Hepatitis_E])
+
+# ::id 19_nonfiction_FACTBOOK-2010;DISEASES;AT4-8;NE
+# ::snt water-borne viral disease that interferes with the functioning of the liver ;
+∃ ATTRIB[2] EVENT[6] EVENT[7] ENTITY[1] ENTITY[5] ENTITY[4] (
+ liver(ENTITY[5]) ∧
+  is_functioning_of(ENTITY[4], ENTITY[5]) ∧
+   water-borne(ATTRIB[2]) ∧
+    interferes(EVENT[6], ENTITY[1]) ∧ with(EVENT[6]) = ENTITY[4] ∧ is_viral_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 20_nonfiction_FACTBOOK-2010;DISEASES;AT4-9;NE
+# ::snt most commonly spread through fecal contamination of drinking water ;
+∃ ATTRIB[5] ATTRIB[3] REF1[1] EVENT[6] ENTITY[4] ENTITY[2] (
+ REF1[1] = *pro* ∧
+  fecal(ATTRIB[3]) ∧
+   drinking(ATTRIB[5]) ∧
+    is_water_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     is_contamination_of(ENTITY[2], ENTITY[4]) ∧ is_contamination_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      ADV_most_commonly(EVENT[6]) ∧ spread(EVENT[6], _, REF1[1]) ∧ through(EVENT[6]) = ENTITY[2])
+
+# ::id 21_nonfiction_FACTBOOK-2010;DISEASES;AT4-10;NE
+# ::snt victims exhibit jaundice , fatigue , abdominal pain , and dark colored urine .
+∃ EVENT[9] GROUP[2] GROUP[1] (
+ victims(GROUP[1]) ∧
+  ∃ ENTITY[3] (jaundice(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (fatigue(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ATTRIB[6] ENTITY[5] (abdominal(ATTRIB[6]) ∧ is_pain_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ∃ ATTRIB[8] ENTITY[7] (dark_colored(ATTRIB[8]) ∧ is_urine_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   exhibit(EVENT[9], GROUP[1], GROUP[2]))
+
+# ::id 22_nonfiction_FACTBOOK-2010;DISEASES;AT5-1;NE
+# ::snt Typhoid fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Typhoid_fever])
+
+# ::id 23_nonfiction_FACTBOOK-2010;DISEASES;AT5-2;NE
+# ::snt bacterial disease spread through contact with food or water contaminated by fecal matter or sewage ;
+∃ EVENT[13] EVENT[14] EVENT[15] GROUP[9] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ CONJ_or(∃ ENTITY[6] (food(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+  ∃ ENTITY[7] (water(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+  CONJ_or(∃ ATTRIB[11] ENTITY[10] (fecal(ATTRIB[11]) ∧ is_matter_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+   ∃ ENTITY[12] (sewage(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9]))) ∧
+   contaminated(EVENT[13], GROUP[9], ENTITY[4]) ∧ is_equals(ENTITY[4], GROUP[5]) ∧
+    is_contact_with(ENTITY[3], ENTITY[4]) ∧
+     spread(EVENT[14], _, ENTITY[1]) ∧ through(EVENT[14]) = ENTITY[3] ∧ bacterial_disease(ENTITY[1]) ∧
+      xxx(EVENT[15]) ∧ LINK(EVENT[15]) = ENTITY[1])
+
+# ::id 24_nonfiction_FACTBOOK-2010;DISEASES;AT5-3;NE
+# ::snt victims exhibit sustained high fevers ;
+∃ ATTRIB[3] EVENT[4] GROUP[2] GROUP[1] (victims(GROUP[1]) ∧ sustained(ATTRIB[3]) ∧ is_high_fevers_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ exhibit(EVENT[4], GROUP[1], GROUP[2]))
+
+# ::id 25_nonfiction_FACTBOOK-2010;DISEASES;AT5-4;NE
+# ::snt left untreated , mortality rates can reach 20 % .
+∀ ATTRIB[2] REF1[1] EVENT[3] CND_0(REF1[1] = *pro* ∧ untreated(ATTRIB[2]) ∧ left(EVENT[3], REF1[1], ATTRIB[2]), ∃ GROUP[4] (
+     mortality_rates(GROUP[4]) ∧
+      MD_can(∃ EVENT[6] GROUP[5] ((CD_20(GROUP[5]), %(GROUP[5])) ∧ reach(EVENT[6], GROUP[4], GROUP[5])))))
+
+# ::id 26_nonfiction_FACTBOOK-2010;DISEASES;AT5-5;NE
+# ::snt vectorborne diseases acquired through the bite of an infected arthropod :
+∃ ATTRIB[2] ATTRIB[6] EVENT[7] EVENT[8] GROUP[1] ENTITY[5] ENTITY[4] (
+ infected(ATTRIB[6]) ∧
+  is_arthropod_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   is_bite_of(ENTITY[4], ENTITY[5]) ∧
+    vectorborne(ATTRIB[2]) ∧
+     acquired(EVENT[7], _, GROUP[1]) ∧ through(EVENT[7]) = ENTITY[4] ∧ is_diseases_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      xxx(EVENT[8]) ∧ LINK(EVENT[8]) = GROUP[1])
+
+# ::id 27_nonfiction_FACTBOOK-2010;DISEASES;AT6-1;NE
+# ::snt Malaria -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Malaria])
+
+# ::id 28_nonfiction_FACTBOOK-2010;DISEASES;AT6-2;NE
+# ::snt caused by single-cell parasitic protozoa Plasmodium ;
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (REF1[1] = *pro* ∧ single-cell(ATTRIB[3]) ∧ is_parasitic_protozoa_Plasmodium_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ caused(EVENT[4], ENTITY[2], REF1[1]))
+
+# ::id 29_nonfiction_FACTBOOK-2010;DISEASES;AT6-3;NE
+# ::snt transmitted to humans via the bite of the female Anopheles mosquito ;
+∃ REF1[1] EVENT[5] GROUP[2] ENTITY[4] ENTITY[3] (
+ female_Anopheles_mosquito(ENTITY[4]) ∧
+  is_bite_of(ENTITY[3], ENTITY[4]) ∧
+   REF1[1] = *pro* ∧
+    humans(GROUP[2]) ∧
+     transmitted(EVENT[5], _, REF1[1]) ∧ via(EVENT[5]) = ENTITY[3] ∧ to(EVENT[5]) = GROUP[2])
+
+# ::id 30_nonfiction_FACTBOOK-2010;DISEASES;AT6-4;NE
+# ::snt parasites multiply in the liver attacking red blood cells resulting in cycles of fever , chills , and sweats accompanied by anemia ;
+∃ ATTRIB[4] EVENT[15] EVENT[14] EVENT[5] GROUP[7] GROUP[6] GROUP[3] GROUP[1] ENTITY[2] (
+ liver(ENTITY[2]) ∧
+  parasites(GROUP[1]) ∧
+   ∃ ENTITY[8] (fever(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+    ∃ GROUP[9] (chills(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[7])) ∧
+    ∃ EVENT[13] ENTITY[12] GROUP[10] (
+     anemia(ENTITY[12]) ∧
+      accompanied(EVENT[13], ENTITY[12], GROUP[10]) ∧ sweats(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[7])) ∧
+    is_cycles_of(GROUP[6], GROUP[7]) ∧
+     red(ATTRIB[4]) ∧
+      is_blood_cells_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+       CONJ_and(CONJ_and(multiply(EVENT[15], GROUP[1]) ∧ in(EVENT[15]) = ENTITY[2],
+             resulting(EVENT[14], GROUP[1]) ∧ in(EVENT[14]) = GROUP[6]),
+        attacking(EVENT[5], GROUP[1], GROUP[3])))
+
+# ::id 31_nonfiction_FACTBOOK-2010;DISEASES;AT6-5;NE
+# ::snt death due to damage to vital organs and interruption of blood supply to the brain ;
+∃ ATTRIB[2] EVENT[9] EVENT[10] GROUP[3] ENTITY[1] ENTITY[8] (
+ brain(ENTITY[8]) ∧
+  death(ENTITY[1]) ∧
+   ∃ ATTRIB[5] GROUP[4] (vital(ATTRIB[5]) ∧ is_organs_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+    ∃ ENTITY[7] ENTITY[6] (is_blood_supply_to(ENTITY[7], ENTITY[8]) ∧ is_interruption_of(ENTITY[6], ENTITY[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    is_due_to(ATTRIB[2], damage(EVENT[9]) ∧ to(EVENT[9]) = GROUP[3]) ∧
+     xxx(EVENT[10], ENTITY[1], ATTRIB[2]))
+
+# ::id 32_nonfiction_FACTBOOK-2010;DISEASES;AT6-6;NE
+# ::snt endemic in 100 , mostly tropical , countries with 90 % of cases and the majority of 1.5 - 2.5 million estimated annual deaths occurring in sub-Saharan Africa .
+∃ SITUATION[4] ATTRIB[3] ATTRIB[1] ATTRIB[11] ATTRIB[10] EVENT[12] EVENT[13] GROUP[2] GROUP[5] GROUP[9] ENTITY[8] (
+ estimated(ATTRIB[10]) ∧
+  annual(ATTRIB[11]) ∧
+   (CD_1.5-2.5_million(GROUP[9]), is_deaths_ATTRIBUTE(GROUP[9], ATTRIB[11]) ∧ is_deaths_ATTRIBUTE(GROUP[9], ATTRIB[10])) ∧
+    is_majority_of(ENTITY[8], GROUP[9]) ∧
+     mostly_tropical(ATTRIB[3]) ∧
+      (CD_100(GROUP[2]), is_countries_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧
+       is_endemic_in(ATTRIB[1], GROUP[2]) ∧
+        ∃ GROUP[7] GROUP[6] (
+         cases(GROUP[7]) ∧
+          (CD_90(GROUP[6]), is%of(GROUP[6], GROUP[7])) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+         is_element_of(ENTITY[8], GROUP[5]) ∧
+         is_FACT_THAT(SITUATION[4], occurring(EVENT[12], GROUP[5]) ∧ in(EVENT[12]) = ENTITY[sub-Saharan_Africa]) ∧
+          xxx(EVENT[13]) ∧ with(EVENT[13]) = SITUATION[4] ∧ ATTRIBUTE(EVENT[13]) = ATTRIB[1])
+
+# ::id 33_nonfiction_FACTBOOK-2010;DISEASES;AT7-1;NE
+# ::snt Dengue fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Dengue_fever])
+
+# ::id 34_nonfiction_FACTBOOK-2010;DISEASES;AT7-2;NE
+# ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments ;
+∃ ATTRIB[6] ATTRIB[3] ATTRIB[2] EVENT[7] EVENT[8] GROUP[5] ENTITY[1] (
+ mosquito-borne(ATTRIB[2]) ∧
+  viral(ATTRIB[3]) ∧
+   urban(ATTRIB[6]) ∧
+    is_environments_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     associated(EVENT[7], _, ENTITY[1]) ∧ with(EVENT[7]) = GROUP[5] ∧
+      is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      is_-ENTITY-_namely(ENTITY[1], ENTITY[Aedes_aegypti]) ∧ xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 35_nonfiction_FACTBOOK-2010;DISEASES;AT7-3;NE
+# ::snt manifests as sudden onset of fever and severe headache ;
+∃ ATTRIB[3] REF1[1] EVENT[8] GROUP[4] ENTITY[2] (
+ REF1[1] = *pro* ∧
+  sudden(ATTRIB[3]) ∧
+   ∃ ENTITY[5] (fever(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ATTRIB[7] ENTITY[6] (severe(ATTRIB[7]) ∧ is_headache_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    is_onset_of(ENTITY[2], GROUP[4]) ∧ is_onset_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     manifests(EVENT[8], REF1[1]) ∧ as(EVENT[8]) = ENTITY[2])
+
+# ::id 36_nonfiction_FACTBOOK-2010;DISEASES;AT7-4;NE
+# ::snt occasionally produces shock and hemorrhage leading to death in 5 % of cases .
+∃ SITUATION[12] REF1[1] EVENT[10] EVENT[11] GROUP[9] GROUP[8] ENTITY[7] GROUP[3] ENTITY[2] (
+ REF1[1] = *pro* ∧
+  ∃ ENTITY[4] (shock(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (hemorrhage(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   cases(GROUP[9]) ∧
+    (CD_5(GROUP[8]), is%of(GROUP[8], GROUP[9])) ∧
+     is_death_in(ENTITY[7], GROUP[8]) ∧
+      leading(EVENT[10], ENTITY[2]) ∧ to(EVENT[10]) = ENTITY[7] ∧ is_equals(ENTITY[2], GROUP[3]) ∧
+       TMP_occasionally(SITUATION[12]) ∧ is_FACT_THAT(SITUATION[12], produces(EVENT[11], REF1[1], ENTITY[2])))
+
+# ::id 37_nonfiction_FACTBOOK-2010;DISEASES;AT8-1;NE
+# ::snt Yellow fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Yellow_fever])
+
+# ::id 38_nonfiction_FACTBOOK-2010;DISEASES;AT8-2;NE
+# ::snt mosquito-borne viral disease ;
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (mosquito-borne(ATTRIB[2]) ∧ is_viral_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 39_nonfiction_FACTBOOK-2010;DISEASES;AT8-3;NE
+# ::snt severity ranges from influenza-like symptoms to severe hepatitis and hemorrhagic fever ;
+∃ ATTRIB[3] EVENT[9] GROUP[4] GROUP[2] ENTITY[1] (
+ severity(ENTITY[1]) ∧
+  influenza-like(ATTRIB[3]) ∧
+   is_symptoms_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    ∃ ATTRIB[6] ENTITY[5] (severe(ATTRIB[6]) ∧ is_hepatitis_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ATTRIB[8] ENTITY[7] (hemorrhagic(ATTRIB[8]) ∧ is_fever_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+     ranges(EVENT[9], ENTITY[1]) ∧ to(EVENT[9]) = GROUP[4] ∧ from(EVENT[9]) = GROUP[2])
+
+# ::id 40_nonfiction_FACTBOOK-2010;DISEASES;AT8-4;NE
+# ::snt occurs only in tropical South America and sub-Saharan Africa , where most cases are reported ;
+∃ SITUATION[8] REF1[1] GROUP[4] ENTITY[3] (
+ REF1[1] = *pro* ∧
+  is_element_of(ENTITY[tropical_South_America], GROUP[4]) ∧ is_element_of(ENTITY[sub-Saharan_Africa], GROUP[4]) ∧
+   is_FACT_THAT(SITUATION[8], MOST GROUP[6] (cases(GROUP[6]), ∃ EVENT[7] reported(EVENT[7], _, GROUP[6]))) ∧
+    is_equals(ENTITY[3], GROUP[4]) ∧
+    is_LOC(SITUATION[8], ENTITY[3]) ∧
+     ONLY ENTITY[2] (is_of(ENTITY[2], ENTITY[3]), ∃ EVENT[9] (occurs(EVENT[9], REF1[1]) ∧ in(EVENT[9]) = ENTITY[2])))
+
+# ::id 41_nonfiction_FACTBOOK-2010;DISEASES;AT8-5;NE
+# ::snt fatality rate is less than 20 % .
+∃ ENTITY[1] (
+ fatality_rate(ENTITY[1]) ∧
+  LESS GROUP[3] ENTITY[2] (((CD_20(GROUP[3]), %(GROUP[3])) ∧ is_than(ENTITY[2], GROUP[3])),
+   ∃ EVENT[4] copula(EVENT[4], ENTITY[1], ENTITY[2])))
+
+# ::id 42_nonfiction_FACTBOOK-2010;DISEASES;AT9-1;NE
+# ::snt Japanese Encephalitis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Japanese_Encephalitis])
+
+# ::id 43_nonfiction_FACTBOOK-2010;DISEASES;AT9-2;NE
+# ::snt mosquito-borne -LRB- Culex tritaeniorhynchus -RRB- viral disease associated with rural areas in Asia ;
+∃ ATTRIB[6] ATTRIB[3] ATTRIB[2] EVENT[7] EVENT[8] GROUP[5] ENTITY[1] (
+ mosquito-borne(ATTRIB[2]) ∧
+  viral(ATTRIB[3]) ∧
+   rural(ATTRIB[6]) ∧
+    is_areas_in(GROUP[5], ENTITY[Asia]) ∧ is_areas_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     associated(EVENT[7], _, ENTITY[1]) ∧ with(EVENT[7]) = GROUP[5] ∧
+      is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      is_-ENTITY-_namely(ENTITY[1], ENTITY[Culex_tritaeniorhynchus]) ∧ xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 44_nonfiction_FACTBOOK-2010;DISEASES;AT9-3;NE
+# ::snt acute encephalitis can progress to paralysis , coma , and death ;
+∃ ATTRIB[2] ENTITY[1] (
+ acute(ATTRIB[2]) ∧
+  is_encephalitis_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   MD_can(∃ EVENT[7] GROUP[3] (
+         ∃ ENTITY[4] (paralysis(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+          ∃ ENTITY[5] (coma(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+          ∃ ENTITY[6] (death(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+          progress(EVENT[7], ENTITY[1]) ∧ to(EVENT[7]) = GROUP[3])))
+
+# ::id 45_nonfiction_FACTBOOK-2010;DISEASES;AT9-4;NE
+# ::snt fatality rates 30 % .
+∃ EVENT[3] GROUP[2] GROUP[1] (fatality_rates(GROUP[1]) ∧ (CD_30(GROUP[2]), %(GROUP[2])) ∧ xxx(EVENT[3], GROUP[1], GROUP[2]))
+
+# ::id 46_nonfiction_FACTBOOK-2010;DISEASES;AT10-1;NE
+# ::snt African Trypanosomiasis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[African_Trypanosomiasis])
+
+# ::id 47_nonfiction_FACTBOOK-2010;DISEASES;AT10-2;NE
+# ::snt caused by the parasitic protozoa Trypanosoma ;
+∃ REF1[1] ATTRIB[3] EVENT[4] ENTITY[2] (parasitic(ATTRIB[3]) ∧ is_protozoa_Trypanosoma_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ REF1[1] = *pro* ∧ caused(EVENT[4], ENTITY[2], REF1[1]))
+
+# ::id 48_nonfiction_FACTBOOK-2010;DISEASES;AT10-3;NE
+# ::snt transmitted to humans via the bite of bloodsucking Tsetse flies ;
+∃ REF1[1] EVENT[5] GROUP[2] ENTITY[4] ENTITY[3] (
+ bloodsucking_Tsetse_flies(ENTITY[4]) ∧
+  is_bite_of(ENTITY[3], ENTITY[4]) ∧
+   REF1[1] = *pro* ∧
+    humans(GROUP[2]) ∧
+     transmitted(EVENT[5], _, REF1[1]) ∧ via(EVENT[5]) = ENTITY[3] ∧ to(EVENT[5]) = GROUP[2])
+
+# ::id 49_nonfiction_FACTBOOK-2010;DISEASES;AT10-4;NE
+# ::snt infection leads to malaise and irregular fevers and , in advanced cases when the parasites invade the central nervous system , coma and death ;
+∃ ATTRIB[13] EVENT[18] GROUP[2] ENTITY[1] ENTITY[12] GROUP[11] (
+ parasites(GROUP[11]) ∧
+  central(ATTRIB[13]) ∧
+   is_nervous_system_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+    infection(ENTITY[1]) ∧
+     ∃ GROUP[3] (
+      ∃ ENTITY[4] (malaise(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+       ∃ ATTRIB[6] GROUP[5] (irregular(ATTRIB[6]) ∧ is_fevers_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+       is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+      ∃ SITUATION[10] ATTRIB[9] EVENT[14] GROUP[15] GROUP[8] ENTITY[7] (
+       advanced(ATTRIB[9]) ∧
+        is_FACT_THAT(SITUATION[10], invade(EVENT[14], GROUP[11], ENTITY[12])) ∧
+         is_cases_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧ is_cases_when(GROUP[8], SITUATION[10]) ∧
+          ∃ ENTITY[16] (coma(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])) ∧
+           ∃ ENTITY[17] (death(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15])) ∧
+           is_equals(ENTITY[7], GROUP[15]) ∧ is_in(ENTITY[7], GROUP[8]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+      leads(EVENT[18], ENTITY[1]) ∧ to(EVENT[18]) = GROUP[2])
+
+# ::id 50_nonfiction_FACTBOOK-2010;DISEASES;AT10-5;NE
+# ::snt endemic in 36 countries of sub-Saharan Africa ;
+∃ ATTRIB[1] EVENT[3] GROUP[2] (
+ (CD_36(GROUP[2]), is_countries_of(GROUP[2], ENTITY[sub-Saharan_Africa])) ∧
+  is_endemic_in(ATTRIB[1], GROUP[2]) ∧ xxx(EVENT[3], _, ATTRIB[1]))
+
+# ::id 51_nonfiction_FACTBOOK-2010;DISEASES;AT10-6;NE
+# ::snt cattle and wild animals act as reservoir hosts for the parasites .
+∃ EVENT[7] GROUP[5] GROUP[1] GROUP[6] (
+ parasites(GROUP[6]) ∧
+  ∃ GROUP[2] (cattle(GROUP[2]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+   ∃ ATTRIB[4] GROUP[3] (wild(ATTRIB[4]) ∧ is_animals_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧
+   is_reservoir_hosts_for(GROUP[5], GROUP[6]) ∧ act(EVENT[7], GROUP[1]) ∧ as(EVENT[7]) = GROUP[5])
+
+# ::id 52_nonfiction_FACTBOOK-2010;DISEASES;AT11-1;NE
+# ::snt Cutaneous Leishmaniasis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Cutaneous_Leishmaniasis])
+
+# ::id 53_nonfiction_FACTBOOK-2010;DISEASES;AT11-2;NE
+# ::snt caused by the parasitic protozoa leishmania ;
+∃ REF1[1] ATTRIB[3] EVENT[4] ENTITY[2] (parasitic(ATTRIB[3]) ∧ is_protozoa_leishmania_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ REF1[1] = *pro* ∧ caused(EVENT[4], ENTITY[2], REF1[1]))
+
+# ::id 54_nonfiction_FACTBOOK-2010;DISEASES;AT11-3;NE
+# ::snt transmitted to humans via the bite of sandflies ;
+∃ REF1[1] EVENT[5] GROUP[2] GROUP[4] ENTITY[3] (
+ sandflies(GROUP[4]) ∧
+  is_bite_of(ENTITY[3], GROUP[4]) ∧
+   REF1[1] = *pro* ∧
+    humans(GROUP[2]) ∧
+     transmitted(EVENT[5], _, REF1[1]) ∧ via(EVENT[5]) = ENTITY[3] ∧ to(EVENT[5]) = GROUP[2])
+
+# ::id 55_nonfiction_FACTBOOK-2010;DISEASES;AT11-4;NE
+# ::snt results in skin lesions that may become chronic ;
+∃ REF1[1] EVENT[6] GROUP[2] (
+ REF1[1] = *pro* ∧
+  MD_may(∃ ATTRIB[4] EVENT[5] (chronic(ATTRIB[4]) ∧ become(EVENT[5], GROUP[2], ATTRIB[4]))) ∧ skin_lesions(GROUP[2]) ∧
+   results(EVENT[6], REF1[1]) ∧ in(EVENT[6]) = GROUP[2])
+
+# ::id 56_nonfiction_FACTBOOK-2010;DISEASES;AT11-5;NE
+# ::snt endemic in 88 countries ;
+∃ ATTRIB[1] EVENT[3] GROUP[2] (
+ (CD_88(GROUP[2]), countries(GROUP[2])) ∧ is_endemic_in(ATTRIB[1], GROUP[2]) ∧ xxx(EVENT[3], _, ATTRIB[1]))
+
+# ::id 57_nonfiction_FACTBOOK-2010;DISEASES;AT11-6;NE
+# ::snt 90 % of cases occur in Iran , Afghanistan , Syria , Saudi Arabia , Brazil , and Peru ;
+∃ EVENT[4] GROUP[2] GROUP[3] GROUP[1] (
+ cases(GROUP[2]) ∧
+  (CD_90(GROUP[1]), is%of(GROUP[1], GROUP[2])) ∧
+   is_element_of(ENTITY[Iran], GROUP[3]) ∧ is_element_of(ENTITY[Afghanistan], GROUP[3]) ∧ is_element_of(ENTITY[Syria], GROUP[3]) ∧
+    is_element_of(ENTITY[Saudi_Arabia], GROUP[3]) ∧ is_element_of(ENTITY[Brazil], GROUP[3]) ∧ is_element_of(ENTITY[Peru], GROUP[3]) ∧
+    occur(EVENT[4], GROUP[1]) ∧ in(EVENT[4]) = GROUP[3])
+
+# ::id 58_nonfiction_FACTBOOK-2010;DISEASES;AT11-7;NE
+# ::snt wild and domesticated animals as well as humans can act as reservoirs of infection .
+∃ GROUP[7] GROUP[2] ENTITY[1] (
+ ∃ ATTRIB[4] GROUP[3] (wild(ATTRIB[4]) ∧ is_animals_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+  ∃ ATTRIB[6] GROUP[5] (domesticated(ATTRIB[6]) ∧ is_animals_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[2])) ∧
+  humans(GROUP[7]) ∧
+   is_ADV_as_well_as(ENTITY[1], GROUP[7]) ∧ is_equals(ENTITY[1], GROUP[2]) ∧
+    MD_can(∃ EVENT[10] ENTITY[9] GROUP[8] (
+          infection(ENTITY[9]) ∧
+           is_reservoirs_of(GROUP[8], ENTITY[9]) ∧ act(EVENT[10], ENTITY[1]) ∧ as(EVENT[10]) = GROUP[8])))
+
+# ::id 59_nonfiction_FACTBOOK-2010;DISEASES;AT12-1;NE
+# ::snt Plague -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Plague])
+
+# ::id 60_nonfiction_FACTBOOK-2010;DISEASES;AT12-2;NE
+# ::snt bacterial disease transmitted by fleas normally associated with rats ;
+∃ ATTRIB[2] EVENT[7] EVENT[9] EVENT[10] GROUP[6] GROUP[4] ENTITY[1] (
+ bacterial(ATTRIB[2]) ∧
+  rats(GROUP[6]) ∧
+   associated(EVENT[7], _, GROUP[4]) ∧ with(EVENT[7]) = GROUP[6] ∧ fleas(GROUP[4]) ∧
+    transmitted(EVENT[9], GROUP[4], ENTITY[1]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     ADV_normally(EVENT[7]) ∧ xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 61_nonfiction_FACTBOOK-2010;DISEASES;AT12-3;NE
+# ::snt person-to-person airborne transmission also possible ;
+∃ ATTRIB[3] ATTRIB[2] EVENT[4] ENTITY[1] (person-to-person(ATTRIB[2]) ∧ is_airborne_transmission_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ also_possible(ATTRIB[3]) ∧ xxx(EVENT[4], ENTITY[1], ATTRIB[3]))
+
+# ::id 62_nonfiction_FACTBOOK-2010;DISEASES;AT12-4;NE
+# ::snt recent plague epidemics occurred in areas of Asia , Africa , and South America associated with rural areas or small towns and villages ;
+∃ ATTRIB[2] EVENT[13] EVENT[14] GROUP[6] GROUP[4] GROUP[3] GROUP[1] (
+ recent(ATTRIB[2]) ∧
+  is_plague_epidemics_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   is_element_of(ENTITY[Asia], GROUP[4]) ∧ is_element_of(ENTITY[Africa], GROUP[4]) ∧ is_element_of(ENTITY[South_America], GROUP[4]) ∧
+    CONJ_or(∃ ATTRIB[8] GROUP[7] (rural(ATTRIB[8]) ∧ is_areas_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])),
+     ∃ GROUP[9] (
+      ∃ ATTRIB[11] GROUP[10] (small(ATTRIB[11]) ∧ is_towns_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])) ∧
+       ∃ GROUP[12] (villages(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[9])) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[6]))) ∧
+     associated(EVENT[13], _, GROUP[3]) ∧ with(EVENT[13]) = GROUP[6] ∧ is_areas_of(GROUP[3], GROUP[4]) ∧
+      past(EVENT[14]) ∧ occurred(EVENT[14], GROUP[1]) ∧ in(EVENT[14]) = GROUP[3])
+
+# ::id 63_nonfiction_FACTBOOK-2010;DISEASES;AT12-5;NE
+# ::snt manifests as fever , headache , and painfully swollen lymph nodes ;
+∃ REF1[1] EVENT[7] GROUP[2] (
+ REF1[1] = *pro* ∧
+  ∃ ENTITY[3] (fever(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (headache(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ATTRIB[6] GROUP[5] (painfully(ATTRIB[6]) ∧ is_swollen_lymph_nodes_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[2])) ∧
+   manifests(EVENT[7], REF1[1]) ∧ as(EVENT[7]) = GROUP[2])
+
+# ::id 64_nonfiction_FACTBOOK-2010;DISEASES;AT12-6;NE
+# ::snt disease progresses rapidly and without antibiotic treatment leads to pneumonic form with a death rate in excess of 50 % .
+∃ ATTRIB[7] ATTRIB[5] EVENT[2] EVENT[11] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[4] ENTITY[1] (
+ disease(ENTITY[1]) ∧
+  antibiotic(ATTRIB[5]) ∧
+   is_treatment_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    pneumonic(ATTRIB[7]) ∧
+     (CD_50(GROUP[10]), %(GROUP[10])) ∧
+      is_excess_of(ENTITY[9], GROUP[10]) ∧
+       is_death_rate_in(ENTITY[8], ENTITY[9]) ∧
+        is_form_with(ENTITY[6], ENTITY[8]) ∧ is_form_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         ADV_rapidly(EVENT[2]) ∧
+          CONJ_and(progresses(EVENT[2], ENTITY[1]),
+           leads(EVENT[11], ENTITY[1]) ∧ to(EVENT[11]) = ENTITY[6] ∧ without(EVENT[11]) = ENTITY[4]))
+
+# ::id 65_nonfiction_FACTBOOK-2010;DISEASES;AT13-1;NE
+# ::snt Crimean-Congo hemorrhagic fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Crimean-Congo_hemorrhagic_fever])
+
+# ::id 66_nonfiction_FACTBOOK-2010;DISEASES;AT13-2;NE
+# ::snt tick-borne viral disease ;
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (tick-borne(ATTRIB[2]) ∧ is_viral_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 67_nonfiction_FACTBOOK-2010;DISEASES;AT13-3;NE
+# ::snt infection may also result from exposure to infected animal blood or tissue ;
+∃ ENTITY[1] (
+ infection(ENTITY[1]) ∧
+  MD_may(∃ EVENT[8] GROUP[3] ENTITY[2] (
+        CONJ_or(∃ ATTRIB[5] ENTITY[4] (infected(ATTRIB[5]) ∧ is_animal_blood_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ ATTRIB[7] ENTITY[6] (infected(ATTRIB[7]) ∧ is_tissue_animal_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+         is_exposure_to(ENTITY[2], GROUP[3]) ∧
+          ADV_also(EVENT[8]) ∧ result(EVENT[8], ENTITY[1]) ∧ from(EVENT[8]) = ENTITY[2])))
+
+# ::id 68_nonfiction_FACTBOOK-2010;DISEASES;AT13-4;NE
+# ::snt geographic distribution includes Africa , Asia , the Middle East , and Eastern Europe ;
+∃ ATTRIB[2] EVENT[4] GROUP[3] ENTITY[1] (
+ geographic(ATTRIB[2]) ∧
+  is_distribution_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   is_element_of(ENTITY[Africa], GROUP[3]) ∧ is_element_of(ENTITY[Asia], GROUP[3]) ∧ is_element_of(ENTITY[Middle_East], GROUP[3]) ∧
+    is_element_of(ENTITY[Eastern_Europe], GROUP[3]) ∧ includes(EVENT[4], ENTITY[1], GROUP[3]))
+
+# ::id 69_nonfiction_FACTBOOK-2010;DISEASES;AT13-5;NE
+# ::snt sudden onset of fever , headache , and muscle aches followed by hemorrhaging in the bowels , urine , nose , and gums ;
+∃ ATTRIB[2] EVENT[14] GROUP[3] ENTITY[7] ENTITY[1] GROUP[10] ENTITY[11] ENTITY[12] GROUP[13] GROUP[9] ENTITY[8] (
+ bowels(GROUP[10]) ∧
+  urine(ENTITY[11]) ∧
+   nose(ENTITY[12]) ∧
+    gums(GROUP[13]) ∧
+     is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_element_of(ENTITY[11], GROUP[9]) ∧ is_element_of(ENTITY[12], GROUP[9]) ∧
+      is_subset_of_or_equal_to(GROUP[13], GROUP[9]) ∧
+      is_equals(ENTITY[8], GROUP[9]) ∧
+       sudden(ATTRIB[2]) ∧
+        ∃ ENTITY[4] (fever(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+         ∃ ENTITY[5] (headache(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+         ∃ GROUP[6] (muscle_aches(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+         is_onset_of(ENTITY[1], GROUP[3]) ∧ is_onset_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+          is_hemorrhaging_in(ENTITY[7], ENTITY[8]) ∧ followed(EVENT[14], ENTITY[1]) ∧ by(EVENT[14]) = ENTITY[7])
+
+# ::id 70_nonfiction_FACTBOOK-2010;DISEASES;AT13-6;NE
+# ::snt mortality rate is approximately 30 % .
+∃ EVENT[3] GROUP[2] ENTITY[1] (
+ mortality_rate(ENTITY[1]) ∧
+  (CD_30(GROUP[2]), ADV_approximately(GROUP[2]) ∧ %(GROUP[2])) ∧ copula(EVENT[3], ENTITY[1], GROUP[2]))
+
+# ::id 71_nonfiction_FACTBOOK-2010;DISEASES;AT14-1;NE
+# ::snt Rift Valley fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Rift_Valley_fever])
+
+# ::id 72_nonfiction_FACTBOOK-2010;DISEASES;AT14-2;NE
+# ::snt viral disease affecting domesticated animals and humans ;
+∃ ATTRIB[2] EVENT[8] EVENT[9] GROUP[4] ENTITY[1] (
+ viral(ATTRIB[2]) ∧
+  ∃ ATTRIB[6] GROUP[5] (domesticated(ATTRIB[6]) ∧ is_animals_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+   ∃ GROUP[7] (humans(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4])) ∧
+   affecting(EVENT[8], ENTITY[1], GROUP[4]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    xxx(EVENT[9]) ∧ LINK(EVENT[9]) = ENTITY[1])
+
+# ::id 73_nonfiction_FACTBOOK-2010;DISEASES;AT14-3;NE
+# ::snt transmission is by mosquito and other biting insects ;
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ transmission(ENTITY[1]) ∧
+  ∃ ENTITY[3] (mosquito(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ATTRIB[6] ATTRIB[5] GROUP[4] (
+    other(ATTRIB[5]) ∧
+     biting(ATTRIB[6]) ∧
+      is_insects_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_insects_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[2])) ∧
+   copula(EVENT[7], ENTITY[1]) ∧ by(EVENT[7]) = GROUP[2])
+
+# ::id 74_nonfiction_FACTBOOK-2010;DISEASES;AT14-4;NE
+# ::snt infection may also occur through handling of infected meat or contact with blood ;
+∃ ENTITY[1] (
+ infection(ENTITY[1]) ∧
+  MD_may(∃ EVENT[8] GROUP[3] ENTITY[2] (
+        CONJ_or(∃ ATTRIB[5] ENTITY[4] (infected(ATTRIB[5]) ∧ is_meat_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ ENTITY[7] ENTITY[6] (blood(ENTITY[7]) ∧ is_contact_with(ENTITY[6], ENTITY[7]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+         is_handling_of(ENTITY[2], GROUP[3]) ∧
+          ADV_also(EVENT[8]) ∧ occur(EVENT[8], ENTITY[1]) ∧ through(EVENT[8]) = ENTITY[2])))
+
+# ::id 75_nonfiction_FACTBOOK-2010;DISEASES;AT14-5;NE
+# ::snt geographic distribution includes eastern and southern Africa where cattle and sheep are raised ;
+∃ ATTRIB[2] EVENT[11] EVENT[13] GROUP[8] GROUP[4] ENTITY[3] ENTITY[1] (
+ geographic(ATTRIB[2]) ∧
+  is_distribution_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ATTRIB[6] ENTITY[5] (eastern(ATTRIB[6]) ∧ is_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    is_element_of(ENTITY[southern_Africa], GROUP[4]) ∧
+    ∃ GROUP[9] (cattle(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[8])) ∧
+     ∃ GROUP[10] (sheep(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8])) ∧
+     raised(EVENT[11], _, GROUP[8]) ∧ is_equals(ENTITY[3], GROUP[4]) ∧
+      is_LOC(EVENT[11], ENTITY[3]) ∧ includes(EVENT[13], ENTITY[1], ENTITY[3]))
+
+# ::id 76_nonfiction_FACTBOOK-2010;DISEASES;AT14-6;NE
+# ::snt symptoms are generally mild with fever and some liver abnormalities ,
+∃ ATTRIB[2] EVENT[6] GROUP[3] GROUP[1] (
+ symptoms(GROUP[1]) ∧
+  generally_mild(ATTRIB[2]) ∧
+   ∃ ENTITY[4] (fever(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    SOME GROUP[5] (liver_abnormalities(GROUP[5]), is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+    copula(EVENT[6], GROUP[1], ATTRIB[2]) ∧ with(EVENT[6]) = GROUP[3])
+
+# ::id 77_nonfiction_FACTBOOK-2010;DISEASES;AT14-7;NE
+# ::snt but the disease may progress to hemorrhagic fever , encephalitis , or ocular disease ;
+∃ ENTITY[1] (
+ disease(ENTITY[1]) ∧
+  MD_may(∃ EVENT[8] GROUP[2] (
+        CONJ_or(∃ ATTRIB[4] ENTITY[3] (hemorrhagic(ATTRIB[4]) ∧ is_fever_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+         ∃ ENTITY[5] (encephalitis(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])),
+         ∃ ATTRIB[7] ENTITY[6] (ocular(ATTRIB[7]) ∧ is_disease_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[2]))) ∧
+         progress(EVENT[8], ENTITY[1]) ∧ to(EVENT[8]) = GROUP[2])))
+
+# ::id 78_nonfiction_FACTBOOK-2010;DISEASES;AT14-8;NE
+# ::snt fatality rates are low at about 1 % of cases .
+∃ ATTRIB[2] EVENT[5] GROUP[4] GROUP[3] GROUP[1] (
+ fatality_rates(GROUP[1]) ∧
+  cases(GROUP[4]) ∧
+   (CD_1(GROUP[3]), ADV_about(GROUP[3]) ∧ is%of(GROUP[3], GROUP[4])) ∧
+    is_low_at(ATTRIB[2], GROUP[3]) ∧ copula(EVENT[5], GROUP[1], ATTRIB[2]))
+
+# ::id 79_nonfiction_FACTBOOK-2010;DISEASES;AT15-1;NE
+# ::snt Chikungunya -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Chikungunya])
+
+# ::id 80_nonfiction_FACTBOOK-2010;DISEASES;AT15-2;NE
+# ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments , similar to Dengue Fever ;
+∃ ATTRIB[7] ATTRIB[4] ATTRIB[3] ATTRIB[2] EVENT[8] EVENT[9] GROUP[6] ENTITY[1] (
+ mosquito-borne(ATTRIB[2]) ∧
+  viral(ATTRIB[3]) ∧
+   is_similar_to(ATTRIB[4], ENTITY[Dengue_Fever]) ∧
+    urban(ATTRIB[7]) ∧
+     is_environments_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+      associated(EVENT[8], _, ENTITY[1]) ∧ with(EVENT[8]) = GROUP[6] ∧
+       is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[4]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[3]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       is_-ENTITY-_namely(ENTITY[1], ENTITY[Aedes_aegypti]) ∧ xxx(EVENT[9]) ∧ LINK(EVENT[9]) = ENTITY[1])
+
+# ::id 81_nonfiction_FACTBOOK-2010;DISEASES;AT15-3;NE
+# ::snt characterized by sudden onset of fever , rash , and severe joint pain usually lasting 3 - 7 days ,
+∃ ATTRIB[3] REF1[1] EVENT[11] EVENT[13] GROUP[10] GROUP[4] ENTITY[2] (
+ REF1[1] = *pro* ∧
+  sudden(ATTRIB[3]) ∧
+   ∃ ENTITY[5] (fever(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (rash(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    ∃ ATTRIB[8] ENTITY[7] (severe(ATTRIB[8]) ∧ is_joint_pain_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+    (CD_3-7(GROUP[10]), days(GROUP[10])) ∧
+     lasting(EVENT[11], ENTITY[2], GROUP[10]) ∧ is_onset_of(ENTITY[2], GROUP[4]) ∧ is_onset_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      ADV_usually(EVENT[11]) ∧ characterized(EVENT[13], ENTITY[2], REF1[1]))
+
+# ::id 82_nonfiction_FACTBOOK-2010;DISEASES;AT15-4;NE
+# ::snt some cases result in persistent arthritis .
+SOME GROUP[1] (cases(GROUP[1]),
+ ∃ ATTRIB[3] EVENT[4] ENTITY[2] (
+  persistent(ATTRIB[3]) ∧
+   is_arthritis_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ result(EVENT[4], GROUP[1]) ∧ in(EVENT[4]) = ENTITY[2]))
+
+# ::id 83_nonfiction_FACTBOOK-2010;DISEASES;AT15-5;NE
+# ::snt water contact diseases acquired through swimming or wading in freshwater lakes , streams , and rivers :
+∃ ARB[3] SITUATION[2] EVENT[8] EVENT[9] EVENT[10] GROUP[4] GROUP[1] (
+ water_contact_diseases(GROUP[1]) ∧
+  ARB[3] = *arb* ∧
+   ∃ GROUP[5] (freshwater_lakes(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ GROUP[6] (streams(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+    ∃ GROUP[7] (rivers(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4])) ∧
+    is_FACT_THAT(SITUATION[2],
+     CONJ_or(swimming(EVENT[8], ARB[3]) ∧ in(EVENT[8]) = GROUP[4],
+      wading(EVENT[9], ARB[3]) ∧ in(EVENT[9]) = GROUP[4])) ∧
+     acquired(EVENT[10], _, GROUP[1]) ∧ through(EVENT[10]) = SITUATION[2])
+
+# ::id 84_nonfiction_FACTBOOK-2010;DISEASES;AT16-1;NE
+# ::snt Leptospirosis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Leptospirosis])
+
+# ::id 85_nonfiction_FACTBOOK-2010;DISEASES;AT16-2;NE
+# ::snt bacterial disease that affects animals and humans ;
+∃ ATTRIB[2] EVENT[7] EVENT[8] GROUP[4] ENTITY[1] (
+ bacterial(ATTRIB[2]) ∧
+  ∃ GROUP[5] (animals(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+   ∃ GROUP[6] (humans(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+   affects(EVENT[7], ENTITY[1], GROUP[4]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 86_nonfiction_FACTBOOK-2010;DISEASES;AT16-3;NE
+# ::snt infection occurs through contact with water , food , or soil contaminated by animal urine ;
+∃ EVENT[10] EVENT[11] ENTITY[9] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ infection(ENTITY[1]) ∧
+  CONJ_or(∃ ENTITY[5] (water(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (food(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])),
+   ∃ ENTITY[7] (soil(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+   animal_urine(ENTITY[9]) ∧
+    contaminated(EVENT[10], ENTITY[9], ENTITY[3]) ∧ is_equals(ENTITY[3], GROUP[4]) ∧
+     is_contact_with(ENTITY[2], ENTITY[3]) ∧ occurs(EVENT[11], ENTITY[1]) ∧ through(EVENT[11]) = ENTITY[2])
+
+# ::id 87_nonfiction_FACTBOOK-2010;DISEASES;AT16-4;NE
+# ::snt symptoms include high fever , severe headache , vomiting , jaundice , and diarrhea ;
+∃ EVENT[10] GROUP[2] GROUP[1] (
+ symptoms(GROUP[1]) ∧
+  ∃ ATTRIB[4] ENTITY[3] (high(ATTRIB[4]) ∧ is_fever_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ATTRIB[6] ENTITY[5] (severe(ATTRIB[6]) ∧ is_headache_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ∃ ENTITY[7] (vomiting(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+   ∃ ENTITY[8] (jaundice(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[2])) ∧
+   ∃ ENTITY[9] (diarrhea(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[2])) ∧ include(EVENT[10], GROUP[1], GROUP[2]))
+
+# ::id 88_nonfiction_FACTBOOK-2010;DISEASES;AT16-5;NE
+# ::snt untreated , the disease can result in kidney damage , liver failure , meningitis , or respiratory distress ;
+∃ ENTITY[1] (
+ disease(ENTITY[1]) ∧
+  ∀ EVENT[2] CND_0(untreated(EVENT[2], _, ENTITY[1]),
+   MD_can(∃ GROUP[3] EVENT[9] (
+         CONJ_or(∃ ENTITY[4] (kidney_damage(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+          ∃ ENTITY[5] (liver_failure(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])),
+          ∃ ENTITY[6] (meningitis(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])),
+          ∃ ATTRIB[8] ENTITY[7] (respiratory(ATTRIB[8]) ∧ is_distress_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[3]))) ∧
+          result(EVENT[9], ENTITY[1]) ∧ in(EVENT[9]) = GROUP[3]))))
+
+# ::id 89_nonfiction_FACTBOOK-2010;DISEASES;AT16-6;NE
+# ::snt fatality rates are low
+∃ ATTRIB[2] EVENT[3] GROUP[1] (fatality_rates(GROUP[1]) ∧ low(ATTRIB[2]) ∧ copula(EVENT[3], GROUP[1], ATTRIB[2]))
+
+# ::id 90_nonfiction_FACTBOOK-2010;DISEASES;AT16-7;NE
+# ::snt but left untreated recovery can take months .
+∀ ATTRIB[2] REF1[1] EVENT[3] CND_0(REF1[1] = *pro* ∧ untreated(ATTRIB[2]) ∧ left(EVENT[3], REF1[1], ATTRIB[2]), ∃ ENTITY[4] (recovery(ENTITY[4]) ∧ MD_can(∃ EVENT[6] GROUP[5] (months(GROUP[5]) ∧ take(EVENT[6], ENTITY[4], GROUP[5])))))
+
+# ::id 91_nonfiction_FACTBOOK-2010;DISEASES;AT17-1;NE
+# ::snt Schistosomiasis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Schistosomiasis])
+
+# ::id 92_nonfiction_FACTBOOK-2010;DISEASES;AT17-2;NE
+# ::snt caused by parasitic trematode flatworm Schistosoma ;
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (REF1[1] = *pro* ∧ parasitic(ATTRIB[3]) ∧ is_trematode_flatworm_Schistosoma_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ caused(EVENT[4], ENTITY[2], REF1[1]))
+
+# ::id 93_nonfiction_FACTBOOK-2010;DISEASES;AT17-3;NE
+# ::snt fresh water snails act as intermediate host and release larval form of parasite that penetrates the skin of people exposed to contaminated water ;
+∃ ATTRIB[7] ATTRIB[4] ATTRIB[2] ATTRIB[14] EVENT[5] EVENT[16] EVENT[17] ENTITY[3] ENTITY[8] ENTITY[6] GROUP[1] EVENT[15] ENTITY[13] GROUP[11] ENTITY[10] (
+ contaminated(ATTRIB[14]) ∧
+  is_water_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+   exposed(EVENT[15], _, GROUP[11]) ∧ to(EVENT[15]) = ENTITY[13] ∧ people(GROUP[11]) ∧
+    is_skin_of(ENTITY[10], GROUP[11]) ∧
+     fresh(ATTRIB[2]) ∧
+      is_water_snails_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+       intermediate(ATTRIB[4]) ∧
+        is_host_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+         larval(ATTRIB[7]) ∧
+          penetrates(EVENT[16], ENTITY[8], ENTITY[10]) ∧ parasite(ENTITY[8]) ∧
+           is_form_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_form_of(ENTITY[6], ENTITY[8]) ∧
+            CONJ_and(act(EVENT[5], GROUP[1]) ∧ as(EVENT[5]) = ENTITY[3],
+             release(EVENT[17], GROUP[1], ENTITY[6])))
+
+# ::id 94_nonfiction_FACTBOOK-2010;DISEASES;AT17-4;NE
+# ::snt worms mature and reproduce in the blood vessels , liver , kidneys , and intestines releasing eggs , which become trapped in tissues triggering an immune response ;
+∃ ATTRIB[12] EVENT[16] EVENT[17] EVENT[14] EVENT[13] EVENT[15] ENTITY[11] GROUP[10] GROUP[8] GROUP[1] GROUP[4] ENTITY[5] GROUP[6] GROUP[7] GROUP[3] ENTITY[2] (
+ blood_vessels(GROUP[4]) ∧
+  liver(ENTITY[5]) ∧
+   kidneys(GROUP[6]) ∧
+    intestines(GROUP[7]) ∧
+     is_subset_of_or_equal_to(GROUP[4], GROUP[3]) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3]) ∧
+      is_subset_of_or_equal_to(GROUP[7], GROUP[3]) ∧
+      is_equals(ENTITY[2], GROUP[3]) ∧
+       worms(GROUP[1]) ∧
+        tissues(GROUP[10]) ∧
+         immune(ATTRIB[12]) ∧
+          is_response_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+           CONJ_and(become_trapped(EVENT[14], _, GROUP[8]) ∧ in(EVENT[14]) = GROUP[10],
+            triggering(EVENT[13], GROUP[8], ENTITY[11])) ∧ eggs(GROUP[8]) ∧
+            CONJ_and(CONJ_and(mature(EVENT[16], GROUP[1]) ∧ in(EVENT[16]) = ENTITY[2],
+                  reproduce(EVENT[17], GROUP[1]) ∧ in(EVENT[17]) = ENTITY[2]),
+             releasing(EVENT[15], GROUP[1], GROUP[8])))
+
+# ::id 95_nonfiction_FACTBOOK-2010;DISEASES;AT17-5;NE
+# ::snt may manifest as either urinary or intestinal disease resulting in decreased work or learning capacity ;
+∃ REF1[1] (
+ REF1[1] = *pro* ∧
+  MD_may(∃ EVENT[13] EVENT[12] GROUP[7] GROUP[2] (
+        CONJ_either_or(∃ ATTRIB[4] ENTITY[3] (urinary(ATTRIB[4]) ∧ is_disease_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+         ∃ ATTRIB[6] ENTITY[5] (intestinal(ATTRIB[6]) ∧ is_disease_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+         CONJ_or(∃ ATTRIB[9] ENTITY[8] (decreased(ATTRIB[9]) ∧ is_work_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+          ∃ ATTRIB[11] ENTITY[10] (learning(ATTRIB[11]) ∧ is_capacity_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[7]))) ∧
+          CONJ_and(manifest(EVENT[13], REF1[1]) ∧ as(EVENT[13]) = GROUP[2],
+           resulting(EVENT[12], REF1[1]) ∧ in(EVENT[12]) = GROUP[7]))))
+
+# ::id 96_nonfiction_FACTBOOK-2010;DISEASES;AT17-6;NE
+# ::snt mortality , while generally low , may occur in advanced cases usually due to bladder cancer ;
+∃ ATTRIB[2] ENTITY[1] (
+ generally_low(ATTRIB[2]) ∧
+  is_mortality_while(ENTITY[1], ATTRIB[2]) ∧
+   MD_may(∃ ATTRIB[5] ATTRIB[4] EVENT[8] EVENT[7] ENTITY[6] GROUP[3] (
+         advanced(ATTRIB[4]) ∧
+          is_cases_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+           bladder_cancer(ENTITY[6]) ∧
+            is_usually_due_to(ATTRIB[5], ENTITY[6]) ∧
+             CONJ_and(occur(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = GROUP[3],
+              xxx(EVENT[7], ENTITY[1], ATTRIB[5])))))
+
+# ::id 97_nonfiction_FACTBOOK-2010;DISEASES;AT17-7;NE
+# ::snt endemic in 74 developing countries with 80 % of infected people living in sub-Saharan Africa ;
+∃ ATTRIB[6] ATTRIB[3] ATTRIB[1] EVENT[8] EVENT[9] GROUP[5] GROUP[4] GROUP[2] (
+ developing(ATTRIB[3]) ∧
+  (CD_74(GROUP[2]), is_countries_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧
+   infected(ATTRIB[6]) ∧
+    living(EVENT[8], GROUP[5]) ∧ in(EVENT[8]) = ENTITY[sub-Saharan_Africa] ∧ is_people_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     (CD_80(GROUP[4]), is%of(GROUP[4], GROUP[5])) ∧
+      is_endemic_with(ATTRIB[1], GROUP[4]) ∧ is_endemic_in(ATTRIB[1], GROUP[2]) ∧
+       xxx(EVENT[9]) ∧ ATTRIBUTE(EVENT[9]) = ATTRIB[1])
+
+# ::id 98_nonfiction_FACTBOOK-2010;DISEASES;AT17-8;NE
+# ::snt humans act as the reservoir for this parasite .
+∃ EVENT[4] GROUP[1] ENTITY[3] ENTITY[2] (
+ parasite(ENTITY[3]) ∧
+  is_reservoir_for(ENTITY[2], ENTITY[3]) ∧
+   humans(GROUP[1]) ∧ act(EVENT[4], GROUP[1]) ∧ as(EVENT[4]) = ENTITY[2])
+
+# ::id 99_nonfiction_FACTBOOK-2010;DISEASES;AT17-9;NE
+# ::snt aerosolized dust or soil contact disease acquired through inhalation of aerosols contaminated with rodent urine :
+∃ ATTRIB[11] EVENT[12] EVENT[13] EVENT[14] ENTITY[10] GROUP[8] ENTITY[7] GROUP[2] ENTITY[1] (
+ CONJ_or(∃ ATTRIB[4] ENTITY[3] (aerosolized(ATTRIB[4]) ∧ is_dust_contact_disease_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[5] (soil_contact_disease(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+  rodent(ATTRIB[11]) ∧
+   is_urine_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+    contaminated(EVENT[12], _, GROUP[8]) ∧ with(EVENT[12]) = ENTITY[10] ∧ aerosols(GROUP[8]) ∧
+     is_inhalation_of(ENTITY[7], GROUP[8]) ∧
+      acquired(EVENT[13], _, ENTITY[1]) ∧ through(EVENT[13]) = ENTITY[7] ∧ is_equals(ENTITY[1], GROUP[2]) ∧
+       xxx(EVENT[14]) ∧ LINK(EVENT[14]) = ENTITY[1])
+
+# ::id 100_nonfiction_FACTBOOK-2010;DISEASES;AT18-1;NE
+# ::snt Lassa fever -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Lassa_fever])
+
+# ::id 101_nonfiction_FACTBOOK-2010;DISEASES;AT18-2;NE
+# ::snt viral disease carried by rats of the genus Mastomys ;
+∃ ATTRIB[2] EVENT[5] EVENT[6] GROUP[4] ENTITY[1] (
+ viral(ATTRIB[2]) ∧
+  is_rats_of(GROUP[4], ENTITY[genus_Mastomys]) ∧
+   carried(EVENT[5], GROUP[4], ENTITY[1]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 102_nonfiction_FACTBOOK-2010;DISEASES;AT18-3;NE
+# ::snt endemic in portions of West Africa ;
+∃ ATTRIB[1] EVENT[3] GROUP[2] (is_portions_of(GROUP[2], ENTITY[West_Africa]) ∧ is_endemic_in(ATTRIB[1], GROUP[2]) ∧ xxx(EVENT[3], _, ATTRIB[1]))
+
+# ::id 103_nonfiction_FACTBOOK-2010;DISEASES;AT18-4;NE
+# ::snt infection occurs through direct contact with or consumption of food contaminated by rodent urine or fecal matter containing virus particles ;
+∃ EVENT[30] GROUP[2] ENTITY[1] (
+ infection(ENTITY[1]) ∧
+  CONJ_or(∃ ATTRIB[4] EVENT[15] EVENT[16] GROUP[14] GROUP[8] ENTITY[7] ENTITY[5] ENTITY[3] (
+        direct(ATTRIB[4]) ∧
+         CONJ_or(∃ ENTITY[9] (rodent_matter(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+          ∃ ENTITY[10] (urine_matter(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])),
+          ∃ ATTRIB[12] ENTITY[11] (fecal(ATTRIB[12]) ∧ is_matter_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧ is_element_of(ENTITY[11], GROUP[8]))) ∧
+          virus_particles(GROUP[14]) ∧
+           containing(EVENT[15], ENTITY[7], GROUP[14]) ∧ is_equals(ENTITY[7], GROUP[8]) ∧
+            contaminated(EVENT[16], ENTITY[7], ENTITY[5]) ∧ food(ENTITY[5]) ∧
+             is_contact_with(ENTITY[3], ENTITY[5]) ∧ is_contact_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ EVENT[28] EVENT[29] GROUP[27] GROUP[21] ENTITY[20] ENTITY[18] ENTITY[17] (
+    CONJ_or(∃ ENTITY[22] (rodent_matter(ENTITY[22]) ∧ is_element_of(ENTITY[22], GROUP[21])),
+     ∃ ENTITY[23] (urine_matter(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[21])),
+     ∃ ATTRIB[25] ENTITY[24] (fecal(ATTRIB[25]) ∧ is_matter_ATTRIBUTE(ENTITY[24], ATTRIB[25]) ∧ is_element_of(ENTITY[24], GROUP[21]))) ∧
+     virus_particles(GROUP[27]) ∧
+      containing(EVENT[28], ENTITY[20], GROUP[27]) ∧ is_equals(ENTITY[20], GROUP[21]) ∧
+       contaminated(EVENT[29], ENTITY[20], ENTITY[18]) ∧ food(ENTITY[18]) ∧
+        is_consumption_of(ENTITY[17], ENTITY[18]) ∧ is_element_of(ENTITY[17], GROUP[2]))) ∧
+   occurs(EVENT[30], ENTITY[1]) ∧ through(EVENT[30]) = GROUP[2])
+
+# ::id 104_nonfiction_FACTBOOK-2010;DISEASES;AT18-5;NE
+# ::snt fatality rate can reach 50 % in epidemic outbreaks .
+∃ ENTITY[1] (
+ fatality_rate(ENTITY[1]) ∧
+  MD_can(∃ EVENT[4] GROUP[3] GROUP[2] (
+        (CD_50(GROUP[2]), %(GROUP[2])) ∧
+         epidemic_outbreaks(GROUP[3]) ∧ reach(EVENT[4], ENTITY[1], GROUP[2]) ∧ in(EVENT[4]) = GROUP[3])))
+
+# ::id 105_nonfiction_FACTBOOK-2010;DISEASES;AT19-1;NE
+# ::snt respiratory disease acquired through close contact with an infectious person :
+∃ ATTRIB[6] ATTRIB[4] EVENT[7] EVENT[8] ENTITY[5] ENTITY[3] ENTITY[1] (
+ close(ATTRIB[4]) ∧
+  infectious(ATTRIB[6]) ∧
+   is_person_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_contact_with(ENTITY[3], ENTITY[5]) ∧ is_contact_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     acquired(EVENT[7], _, ENTITY[1]) ∧ through(EVENT[7]) = ENTITY[3] ∧ respiratory_disease(ENTITY[1]) ∧
+      xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 106_nonfiction_FACTBOOK-2010;DISEASES;AT20-1;NE
+# ::snt Meningococcal meningitis -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Meningococcal_meningitis])
+
+# ::id 107_nonfiction_FACTBOOK-2010;DISEASES;AT20-2;NE
+# ::snt bacterial disease causing an inflammation of the lining of the brain and spinal cord ;
+∃ ATTRIB[2] EVENT[10] EVENT[11] ENTITY[4] ENTITY[1] ENTITY[8] ENTITY[9] GROUP[7] ENTITY[6] ENTITY[5] (
+ brain(ENTITY[8]) ∧
+  spinal_cord(ENTITY[9]) ∧
+   is_element_of(ENTITY[8], GROUP[7]) ∧ is_element_of(ENTITY[9], GROUP[7]) ∧
+    is_equals(ENTITY[6], GROUP[7]) ∧
+     is_lining_of(ENTITY[5], ENTITY[6]) ∧
+      bacterial(ATTRIB[2]) ∧
+       is_inflammation_of(ENTITY[4], ENTITY[5]) ∧
+        causing(EVENT[10], ENTITY[1], ENTITY[4]) ∧ is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+         xxx(EVENT[11]) ∧ LINK(EVENT[11]) = ENTITY[1])
+
+# ::id 108_nonfiction_FACTBOOK-2010;DISEASES;AT20-3;NE
+# ::snt one of the most important bacterial pathogens is Neisseria meningitidis because of its potential to cause epidemics ;
+∃ REF1[7] SITUATION[5] ATTRIB[4] ATTRIB[3] EVENT[9] EVENT[10] GROUP[8] ENTITY[6] ENTITY[1] GROUP[2] (
+ most_important(ATTRIB[3]) ∧
+  bacterial(ATTRIB[4]) ∧
+   is_pathogens_ATTRIBUTE(GROUP[2], ATTRIB[4]) ∧ is_pathogens_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+    (CD_one(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+     REF1[7] = its ∧
+      is_potential_POS(ENTITY[6], REF1[7]) ∧
+       epidemics(GROUP[8]) ∧
+        is_FACT_THAT(SITUATION[5], cause(EVENT[9], ENTITY[6], GROUP[8])) ∧
+         copula(EVENT[10], ENTITY[1], ENTITY[Neisseria_meningitidis]) ∧ because_of(EVENT[10]) = SITUATION[5])
+
+# ::id 109_nonfiction_FACTBOOK-2010;DISEASES;AT20-4;NE
+# ::snt symptoms include stiff neck , high fever , headaches , and vomiting ;
+∃ EVENT[9] GROUP[2] GROUP[1] (
+ symptoms(GROUP[1]) ∧
+  ∃ ATTRIB[4] ENTITY[3] (stiff(ATTRIB[4]) ∧ is_neck_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ATTRIB[6] ENTITY[5] (high(ATTRIB[6]) ∧ is_fever_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ∃ GROUP[7] (headaches(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[2])) ∧
+   ∃ ENTITY[8] (vomiting(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[2])) ∧ include(EVENT[9], GROUP[1], GROUP[2]))
+
+# ::id 110_nonfiction_FACTBOOK-2010;DISEASES;AT20-5;NE
+# ::snt bacteria are transmitted from person to person by respiratory droplets and facilitated by close and prolonged contact resulting from crowded living conditions , often with a seasonal distribution ;
+∃ ATTRIB[17] ATTRIB[7] ATTRIB[3] EVENT[8] EVENT[18] EVENT[19] GROUP[6] ENTITY[5] ENTITY[4] GROUP[16] GROUP[10] ENTITY[9] ENTITY[2] GROUP[1] (
+ bacteria(GROUP[1]) ∧
+  seasonal(ATTRIB[3]) ∧
+   is_distribution_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    person(ENTITY[4]) ∧
+     person(ENTITY[5]) ∧
+      respiratory(ATTRIB[7]) ∧
+       is_droplets_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+        ∃ ATTRIB[12] ENTITY[11] (close(ATTRIB[12]) ∧ is_contact_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+         ∃ ATTRIB[14] ENTITY[13] (prolonged(ATTRIB[14]) ∧ is_contact_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+         crowded(ATTRIB[17]) ∧
+          is_living_conditions_ATTRIBUTE(GROUP[16], ATTRIB[17]) ∧
+           resulting(EVENT[18], ENTITY[9]) ∧ from(EVENT[18]) = GROUP[16] ∧ is_equals(ENTITY[9], GROUP[10]) ∧
+            CONJ_and(transmitted(EVENT[8], GROUP[6], GROUP[1]) ∧ to(EVENT[8]) = ENTITY[5] ∧
+                  from(EVENT[8]) = ENTITY[4] ∧ often_with(EVENT[8]) = ENTITY[2],
+             facilitated(EVENT[19], ENTITY[9], GROUP[1]) ∧ often_with(EVENT[19]) = ENTITY[2]))
+
+# ::id 111_nonfiction_FACTBOOK-2010;DISEASES;AT20-6;NE
+# ::snt death occurs in 5 - 15 % of cases , typically within 24 - 48 hours of onset of symptoms ;
+∃ EVENT[7] GROUP[3] GROUP[6] ENTITY[5] GROUP[4] GROUP[2] ENTITY[1] (
+ death(ENTITY[1]) ∧
+  cases(GROUP[3]) ∧
+   (CD_5_15(GROUP[2]), is%of(GROUP[2], GROUP[3])) ∧
+    symptoms(GROUP[6]) ∧
+     is_onset_of(ENTITY[5], GROUP[6]) ∧
+      (CD_24_48(GROUP[4]), is_hours_of(GROUP[4], ENTITY[5])) ∧
+       occurs(EVENT[7], ENTITY[1]) ∧ typically_within(EVENT[7]) = GROUP[4] ∧ in(EVENT[7]) = GROUP[2])
+
+# ::id 112_nonfiction_FACTBOOK-2010;DISEASES;AT20-7;NE
+# ::snt highest burden of meningococcal disease occurs in the hyperendemic region of sub-Saharan Africa known as the " Meningitis Belt " which stretches from Senegal east to Ethiopia .
+∃ ATTRIB[4] ATTRIB[2] ATTRIB[6] EVENT[11] ENTITY[3] ENTITY[1] EVENT[8] EVENT[10] ENTITY[5] (
+ hyperendemic(ATTRIB[6]) ∧
+  known(EVENT[8], _, ENTITY[5]) ∧ as(EVENT[8]) = ENTITY[Meningitis_Belt] ∧
+   stretches(EVENT[10], ENTITY[5]) ∧ to(EVENT[10]) = ENTITY[Ethiopia] ∧ from(EVENT[10]) = ENTITY[Senegal_east] ∧
+    is_region_of(ENTITY[5], ENTITY[sub-Saharan_Africa]) ∧ is_region_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   highest(ATTRIB[2]) ∧
+    meningococcal(ATTRIB[4]) ∧
+     is_disease_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      is_burden_of(ENTITY[1], ENTITY[3]) ∧ is_burden_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       occurs(EVENT[11], ENTITY[1]) ∧ in(EVENT[11]) = ENTITY[5])
+
+# ::id 113_nonfiction_FACTBOOK-2010;DISEASES;AT21-1;NE
+# ::snt animal contact disease acquired through direct contact with local animals :
+∃ ATTRIB[7] ATTRIB[5] ATTRIB[2] EVENT[8] EVENT[9] GROUP[6] ENTITY[4] ENTITY[1] (
+ animal(ATTRIB[2]) ∧
+  direct(ATTRIB[5]) ∧
+   local(ATTRIB[7]) ∧
+    is_animals_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+     is_contact_with(ENTITY[4], GROUP[6]) ∧ is_contact_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      acquired(EVENT[8], _, ENTITY[1]) ∧ through(EVENT[8]) = ENTITY[4] ∧ is_contact_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       xxx(EVENT[9]) ∧ LINK(EVENT[9]) = ENTITY[1])
+
+# ::id 114_nonfiction_FACTBOOK-2010;DISEASES;AT22-1;NE
+# ::snt Rabies -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Rabies])
+
+# ::id 115_nonfiction_FACTBOOK-2010;DISEASES;AT22-2;NE
+# ::snt viral disease of mammals usually transmitted through the bite of an infected animal , most commonly dogs ;
+∃ ATTRIB[2] ATTRIB[7] EVENT[8] GROUP[3] ENTITY[1] ENTITY[6] ENTITY[4] (
+ infected(ATTRIB[7]) ∧
+  is_animal_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   MOST ENTITY[5] (ADV_commonly(ENTITY[5]) ∧ dogs(ENTITY[5]), is_-ENTITY-_namely(ENTITY[6], ENTITY[5])) ∧
+    is_bite_of(ENTITY[4], ENTITY[6]) ∧
+     viral(ATTRIB[2]) ∧
+      mammals(GROUP[3]) ∧
+       is_disease_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_disease_of(ENTITY[1], GROUP[3]) ∧
+        TMP_usually(EVENT[8]) ∧ transmitted(EVENT[8], ENTITY[1]) ∧ through(EVENT[8]) = ENTITY[4])
+
+# ::id 116_nonfiction_FACTBOOK-2010;DISEASES;AT22-3;NE
+# ::snt virus affects the central nervous system causing brain alteration and death ;
+∃ ATTRIB[3] EVENT[8] EVENT[7] GROUP[4] ENTITY[1] ENTITY[2] (
+ central(ATTRIB[3]) ∧
+  is_nervous_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   virus(ENTITY[1]) ∧
+    ∃ ENTITY[5] (brain_alteration(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ENTITY[6] (death(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+     CONJ_and(affects(EVENT[8], ENTITY[1], ENTITY[2]), causing(EVENT[7], ENTITY[2], GROUP[4])))
+
+# ::id 117_nonfiction_FACTBOOK-2010;DISEASES;AT22-4;NE
+# ::snt symptoms initially are non-specific fever and headache progressing to neurological symptoms ;
+∃ SITUATION[10] ATTRIB[7] EVENT[9] EVENT[8] GROUP[6] GROUP[2] GROUP[1] (
+ symptoms(GROUP[1]) ∧
+  ∃ ATTRIB[4] ENTITY[3] (non-specific(ATTRIB[4]) ∧ is_fever_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[5] (headache(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   neurological(ATTRIB[7]) ∧
+    is_symptoms_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+     TMP_initially(SITUATION[10]) ∧
+      is_FACT_THAT(SITUATION[10],
+       CONJ_and(copula(EVENT[9], GROUP[1], GROUP[2]),
+        progressing(EVENT[8], GROUP[2]) ∧ to(EVENT[8]) = GROUP[6])))
+
+# ::id 118_nonfiction_FACTBOOK-2010;DISEASES;AT22-5;NE
+# ::snt death occurs within days of the onset of symptoms .
+∃ EVENT[5] GROUP[2] ENTITY[1] GROUP[4] ENTITY[3] (
+ symptoms(GROUP[4]) ∧
+  is_onset_of(ENTITY[3], GROUP[4]) ∧
+   death(ENTITY[1]) ∧
+    is_days_of(GROUP[2], ENTITY[3]) ∧ occurs(EVENT[5], ENTITY[1]) ∧ within(EVENT[5]) = GROUP[2])

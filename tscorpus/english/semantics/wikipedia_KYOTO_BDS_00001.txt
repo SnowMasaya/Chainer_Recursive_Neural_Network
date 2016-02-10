@@ -1,0 +1,504 @@
+# ::id 1_wikipedia_KYOTO_BDS_00001,1;IE
+# ::snt Sesshu
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PERSON[Sesshu])
+
+# ::id 2_wikipedia_KYOTO_BDS_00001,2;IE
+# ::snt Known as Sesshu -LRB- 1420-1506 -RRB- , he was an ink painter and Zen monk active in the Muromachi period in the latter half of the 15th century , and was called a master painter .
+∃ ATTRIB[7] PERSON[1] ATTRIB[12] ATTRIB[10] EVENT[3] EVENT[13] EVENT[16] EVENT[14] DATE[2] GROUP[4] ENTITY[15] DATE[11] ENTITY[9] ENTITY[8] (
+ latter(ATTRIB[10]) ∧
+  15th(ATTRIB[12]) ∧
+   is_century_ATTRIBUTE(DATE[11], ATTRIB[12]) ∧
+    is_half_of(ENTITY[9], DATE[11]) ∧ is_half_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+     is_Muromachi_period_in(ENTITY[8], ENTITY[9]) ∧
+      PERSON[1] = he ∧
+       CD_1420-1506(DATE[2]) ∧
+        is_-PERSON-_namely(PERSON[Sesshu], DATE[2]) ∧
+         ∃ ENTITY[5] (ink_painter(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+          ∃ ENTITY[6] (Zen_monk(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+          is_active_in(ATTRIB[7], ENTITY[8]) ∧
+           master_painter(ENTITY[15]) ∧
+            past(EVENT[13]) ∧
+             past(EVENT[14]) ∧
+              CONJ_and(known(EVENT[3], PERSON[1]) ∧ as(EVENT[3]) = PERSON[Sesshu],
+               CONJ_and(copula(EVENT[13], PERSON[1], GROUP[4]) ∧ ATTRIBUTE(EVENT[13]) = ATTRIB[7],
+                called(EVENT[14], _, PERSON[1], xxx(EVENT[16], PERSON[1], ENTITY[15])))))
+
+# ::id 3_wikipedia_KYOTO_BDS_00001,3;IE
+# ::snt He revolutionized the Japanese ink painting .
+∃ PERSON[1] ATTRIB[3] EVENT[4] ENTITY[2] (
+ japanese(ATTRIB[3]) ∧
+  is_ink_painting_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ PERSON[1] = he ∧ past(EVENT[4]) ∧ revolutionized(EVENT[4], PERSON[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_BDS_00001,4;IE
+# ::snt He was given the posthumous name " Toyo " or " Sesshu -LRB- 拙宗 -RRB- . "
+∃ PERSON[1] ATTRIB[4] EVENT[5] GROUP[2] ENTITY[3] (
+ posthumous(ATTRIB[4]) ∧
+  is_name_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_-ENTITY-_namely(ENTITY[Sesshu], ENTITY[拙宗]) ∧
+    CONJ_or(is_element_of(ENTITY[Toyo], GROUP[2]), is_element_of(ENTITY[Sesshu], GROUP[2])) ∧
+     is_-ENTITY-_namely(ENTITY[3], GROUP[2]) ∧
+      PERSON[1] = he ∧ past(EVENT[5]) ∧ given(EVENT[5], _, ENTITY[3], PERSON[1]))
+
+# ::id 5_wikipedia_KYOTO_BDS_00001,5;IE
+# ::snt Born in Bicchu Province , he moved to Suo Province after entering Shokoku-ji Temple in Kyoto .
+∃ PERSON[1] EVENT[2] EVENT[3] EVENT[4] (
+ PERSON[1] = he ∧
+  past(EVENT[4]) ∧
+   CONJ_and(born(EVENT[2], PERSON[1]) ∧ in(EVENT[2]) = ENTITY[Bicchu_Province],
+    CRD_after(entering(EVENT[3], PERSON[1], ENTITY[Shokoku-ji_Temple]) ∧ in(EVENT[3]) = ENTITY[Kyoto],
+     moved(EVENT[4], PERSON[1]) ∧ to(EVENT[4]) = ENTITY[Suo_Province])))
+
+# ::id 6_wikipedia_KYOTO_BDS_00001,6;IE
+# ::snt Later he accompanied a mission to Ming Dynasty China and learned Chinese ink painting .
+∃ SITUATION[7] ATTRIB[5] PERSON[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[4] (
+ PERSON[1] = he ∧
+  is_mission_to(ENTITY[2], ENTITY[Ming_Dynasty_China]) ∧
+   chinese(ATTRIB[5]) ∧
+    is_ink_painting_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+     TMP_later(SITUATION[7]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[6]) ∧
+        is_FACT_THAT(SITUATION[7], CONJ_and(accompanied(EVENT[3], PERSON[1], ENTITY[2]), learned(EVENT[6], PERSON[1], ENTITY[4]))))
+
+# ::id 7_wikipedia_KYOTO_BDS_00001,7;IE
+# ::snt His works were many , including not only Chinese-style landscape paintings , but also portraits and pictures of flowers and birds .
+∃ PERSON[2] GROUP[1] (
+ PERSON[2] = his ∧
+  is_works_POS(GROUP[1], PERSON[2]) ∧
+   MANY EVENT[15] GROUP[5] ENTITY[3] (
+    (CONJ_but_also(NOT ATTRIB[8] GROUP[7] ((chinese-style(ATTRIB[8]) ∧ is_landscape_paintings_ATTRIBUTE(GROUP[7], ATTRIB[8])),
+            ONLY GROUP[6] (is_subset_of_or_equal_to(GROUP[6], GROUP[7]), is_subset_of_or_equal_to(GROUP[6], GROUP[5]))),
+       ∃ GROUP[9] (
+        ∃ GROUP[10] (portraits(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])) ∧
+         ∃ GROUP[12] GROUP[11] (
+          ∃ GROUP[13] (flowers(GROUP[13]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[12])) ∧
+           ∃ GROUP[14] (birds(GROUP[14]) ∧ is_subset_of_or_equal_to(GROUP[14], GROUP[12])) ∧
+           is_pictures_of(GROUP[11], GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9])) ∧
+         is_subset_of_or_equal_to(GROUP[9], GROUP[5]))) ∧ including(EVENT[15], ENTITY[3], GROUP[5])),
+    ∃ EVENT[16] (past(EVENT[16]) ∧ copula(EVENT[16], GROUP[1], ENTITY[3]))))
+
+# ::id 8_wikipedia_KYOTO_BDS_00001,8;IE
+# ::snt His bold compositions and strong brush strokes constituted an extremely distinctive style .
+∃ ATTRIB[8] EVENT[9] ENTITY[7] GROUP[1] (
+ ∃ ATTRIB[4] PERSON[3] GROUP[2] (
+  PERSON[3] = his ∧
+   bold(ATTRIB[4]) ∧
+    is_compositions_ATTRIBUTE(GROUP[2], ATTRIB[4]) ∧ is_compositions_POS(GROUP[2], PERSON[3]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ ATTRIB[6] GROUP[5] (strong(ATTRIB[6]) ∧ is_brush_strokes_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[1])) ∧
+  extremely_distinctive(ATTRIB[8]) ∧ is_style_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ past(EVENT[9]) ∧ constituted(EVENT[9], GROUP[1], ENTITY[7]))
+
+# ::id 9_wikipedia_KYOTO_BDS_00001,9;IE
+# ::snt 6 of his extant works are designated national treasures . Indeed , he is considered to be extraordinary among Japanese painters .
+∃ ATTRIB[14] ATTRIB[12] PERSON[10] ATTRIB[7] ATTRIB[4] PERSON[3] EVENT[8] EVENT[5] EVENT[15] EVENT[11] GROUP[2] GROUP[6] ENTITY[1] GROUP[13] ENTITY[9] (
+ PERSON[3] = his ∧
+  extant(ATTRIB[4]) ∧
+   is_works_ATTRIBUTE(GROUP[2], ATTRIB[4]) ∧ is_works_POS(GROUP[2], PERSON[3]) ∧
+    (CD_6(ENTITY[1]), is_element_of(ENTITY[1], GROUP[2])) ∧
+     national(ATTRIB[7]) ∧
+      is_treasures_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+       deed(ENTITY[9]) ∧
+        PERSON[10] = he ∧
+         japanese(ATTRIB[14]) ∧
+          is_painters_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+           is_extraordinary_among(ATTRIB[12], GROUP[13]) ∧
+            designated(EVENT[5], _, ENTITY[1], xxx(EVENT[8], ENTITY[1], GROUP[6])) ∧
+             considered(EVENT[11], _, PERSON[10],
+              copula(EVENT[15], PERSON[10]) ∧ ATTRIBUTE(EVENT[15]) = ATTRIB[12]) ∧
+              In(EVENT[11]) = ENTITY[9])
+
+# ::id 10_wikipedia_KYOTO_BDS_00001,10;IE
+# ::snt For this reason , there are a great many artworks that are attributed to him , such as folding screens with pictures of flowers and that birds are painted on them .
+∃ ENTITY[1] (
+ reason(ENTITY[1]) ∧
+  A_GREAT_MANY PERSON[13] ATTRIB[3] EVENT[14] GROUP[4] GROUP[2] (
+   (∃ GROUP[7] GROUP[6] ARTWORK[5] (
+      flowers(GROUP[7]) ∧
+       is_pictures_of(GROUP[6], GROUP[7]) ∧ is_folding_screens_with(ARTWORK[5], GROUP[6]) ∧ is_element_of(ARTWORK[5], GROUP[4])) ∧
+      ∃ ARTWORK[10] EVENT[11] GROUP[9] ENTITY[8] (
+       birds(GROUP[9]) ∧
+        ARTWORK[10] = them ∧
+         is_THAT(ENTITY[8], painted(EVENT[11], _, GROUP[9]) ∧ on(EVENT[11]) = ARTWORK[10]) ∧
+          is_element_of(ENTITY[8], GROUP[4])) ∧ is_such_as(ATTRIB[3], GROUP[4]) ∧ PERSON[13] = him ∧
+    attributed(EVENT[14], _, GROUP[2]) ∧ to(EVENT[14]) = PERSON[13] ∧ is_artworks_ATTRIBUTE(GROUP[2], ATTRIB[3])),
+   ∃ EVENT[15] (copula(EVENT[15], GROUP[2]) ∧ For(EVENT[15]) = ENTITY[1])))
+
+# ::id 11_wikipedia_KYOTO_BDS_00001,11;IE
+# ::snt There are many works that even experts can not agree if they are really his work or not .
+MANY GROUP[3] GROUP[1] (
+ (experts(GROUP[3]) ∧
+  is_works_THAT(GROUP[1],
+   EVEN GROUP[2] (is_subset_of_or_equal_to(GROUP[2], GROUP[3]),
+    MD_can(¬ ∃ EVENT[4] agree(EVENT[4], GROUP[2],
+               QUEST(∃ PERSONS[10] PERSON[7] PERSONS[5] EVENT[8] ENTITY[6] (
+                     PERSONS[5] = they ∧
+                      PERSON[7] = his ∧
+                       is_work_POS(ENTITY[6], PERSON[7]) ∧
+                        PERSONS[10] = they ∧
+                         ADV_really(EVENT[8]) ∧
+                          CONJ_or(copula(EVENT[8], PERSONS[5], ENTITY[6]),
+                           ¬ ∃ PERSON[12] EVENT[13] ENTITY[11] (
+                                 PERSON[12] = his ∧
+                                  is_work_POS(ENTITY[11], PERSON[12]) ∧
+                                   ADV_really(EVENT[13]) ∧
+                                    copula(EVENT[13], PERSONS[10], ENTITY[11])))))))))),
+ ∃ EVENT[15] copula(EVENT[15], GROUP[1]))
+
+# ::id 12_wikipedia_KYOTO_BDS_00001,12;IE
+# ::snt Representative works include : Long Landscape Scroll , Summer and Winter Landscape , View of Amanohashidate , Broken Ink Landscape , Portrait of Ekadanpi , Fall and Winter Landscape , and Folding Screen of Birds and Flowers of the 4 Seasons .
+∃ ATTRIB[2] EVENT[10] GROUP[3] GROUP[1] GROUP[9] (
+ (CD_4(GROUP[9]), Seasons(GROUP[9])) ∧
+  representative(ATTRIB[2]) ∧
+   is_works_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    is_element_of(ENTITY[Long_Landscape_Scroll_Summer_and_Winter_Landscape], GROUP[3]) ∧ is_element_of(ENTITY[View_of_Amanohashidate], GROUP[3]) ∧ is_element_of(ENTITY[Broken_Ink_Landscape], GROUP[3]) ∧
+     is_element_of(ENTITY[Portrait_of_Ekadanpi], GROUP[3]) ∧ is_element_of(ENTITY[Fall_and_Winter_Landscape], GROUP[3]) ∧
+     ∃ GROUP[6] ENTITY[5] ENTITY[4] (
+      ∃ GROUP[7] (Birds(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+       ∃ GROUP[8] (Flowers(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6])) ∧
+       is_element_of(ENTITY[5], GROUP[9]) ∧ is_equals(ENTITY[5], GROUP[6]) ∧
+        is_Folding_Screen_of(ENTITY[4], ENTITY[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧ include(EVENT[10], GROUP[1], GROUP[3]))
+
+# ::id 13_wikipedia_KYOTO_BDS_00001,13;IE
+# ::snt His disciples include Shugetsu , Soen , and Toshun .
+∃ PERSON[2] EVENT[4] GROUP[3] GROUP[1] (
+ PERSON[2] = his ∧
+  is_disciples_POS(GROUP[1], PERSON[2]) ∧
+   is_element_of(ENTITY[Shugetsu], GROUP[3]) ∧ is_element_of(ENTITY[Soen], GROUP[3]) ∧ is_element_of(ENTITY[Toshun], GROUP[3]) ∧
+    include(EVENT[4], GROUP[1], GROUP[3]))
+
+# ::id 14_wikipedia_KYOTO_BDS_00001,14;IE
+# ::snt The Artist 's Life
+∃ EVENT[3] ENTITY[1] ENTITY[2] (Artist(ENTITY[2]) ∧ is_Life_POS(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 15_wikipedia_KYOTO_BDS_00001,15;IE
+# ::snt He was born in Akahama , Bicchu Province -LRB- present-day Soja City , Okayama Prefecture -RRB- , in 1420 .
+∃ PERSON[1] EVENT[3] DATE[2] (
+ PERSON[1] = he ∧
+  is_-ENTITY-_namely(ENTITY[Akahama_Bicchu_Province], ENTITY[present-day_Soja_City_Okayama_Prefecture]) ∧
+   CD_1420(DATE[2]) ∧
+    past(EVENT[3]) ∧
+     was_born(EVENT[3], PERSON[1]) ∧ in(EVENT[3]) = DATE[2] ∧ in(EVENT[3]) = ENTITY[Akahama_Bicchu_Province])
+
+# ::id 16_wikipedia_KYOTO_BDS_00001,16;IE
+# ::snt He was born to a Samurai family called ODA .
+∃ PERSON[1] EVENT[5] EVENT[4] EVENT[6] ENTITY[2] (
+ PERSON[1] = he ∧
+  called(EVENT[4], _, ENTITY[2], xxx(EVENT[5], ENTITY[2], ENTITY[ODA])) ∧ Samurai_family(ENTITY[2]) ∧
+   past(EVENT[6]) ∧ was_born(EVENT[6], PERSON[1]) ∧ to(EVENT[6]) = ENTITY[2])
+
+# ::id 17_wikipedia_KYOTO_BDS_00001,17;IE
+# ::snt He entered nearby Hofuku-ji Temple -LRB- Soja City -RRB- while young .
+∃ ATTRIB[2] PERSON[1] EVENT[3] (
+ PERSON[1] = he ∧
+  is_-ENTITY-_namely(ENTITY[nearby_Hofuku-ji_Temple], ENTITY[Soja_City]) ∧
+   young(ATTRIB[2]) ∧
+    past(EVENT[3]) ∧ entered(EVENT[3], PERSON[1], ENTITY[nearby_Hofuku-ji_Temple]) ∧ while(EVENT[3]) = ATTRIB[2])
+
+# ::id 18_wikipedia_KYOTO_BDS_00001,18;IE
+# ::snt He moved to Kyoto 's Shokoku-ji Temple at the age of around 10 , and while studying and having Zen training under Shuto SHUNRIN , learned painting from Shubun TENSHO .
+∃ PERSON[1] EVENT[4] EVENT[6] EVENT[8] EVENT[9] ENTITY[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+ CD_around_10(ENTITY[3]) ∧
+  is_age_of(ENTITY[2], ENTITY[3]) ∧
+   PERSON[1] = he ∧
+    is_POS(ENTITY[Shokoku-ji_Temple], ENTITY[Kyoto]) ∧
+     painting(ENTITY[5]) ∧
+      Zen_training(ENTITY[7]) ∧
+       past(EVENT[4]) ∧
+        past(EVENT[9]) ∧
+         CONJ_and(moved(EVENT[4], PERSON[1]) ∧ at(EVENT[4]) = ENTITY[2] ∧ to(EVENT[4]) = ENTITY[Shokoku-ji_Temple],
+          CRD_while(CONJ_and(studying(EVENT[6], ENTITY[5]),
+                having(EVENT[8], ENTITY[5], ENTITY[7]) ∧ under(EVENT[8]) = ENTITY[Shuto_SHUNRIN]),
+           learned(EVENT[9], PERSON[1], ENTITY[5]) ∧ from(EVENT[9]) = ENTITY[Shubun_TENSHO])))
+
+# ::id 19_wikipedia_KYOTO_BDS_00001,19;IE
+# ::snt In around 1454 , he moved to Suo Province , and built his studio , Unkokuan -LRB- Yamaguchi City , Yamaguchi Prefecture -RRB- , with the patronage of the feudal lord , Ouchi .
+∃ PERSON[7] PERSON[2] ATTRIB[6] EVENT[3] EVENT[8] DATE[1] ENTITY[5] ENTITY[4] (
+ feudal(ATTRIB[6]) ∧
+  is_lord_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   is_-ENTITY-_namely(ENTITY[5], ENTITY[Ouchi]) ∧
+    is_patronage_of(ENTITY[4], ENTITY[5]) ∧
+     CD_around_1454(DATE[1]) ∧
+      PERSON[2] = he ∧
+       PERSON[7] = his{PERSON[2]} ∧
+        is_POS(ENTITY[studio_Unkokuan], PERSON[7]) ∧
+         is_with(ENTITY[studio_Unkokuan], ENTITY[4]) ∧
+          is_-ENTITY-_namely(ENTITY[studio_Unkokuan], ENTITY[Yamaguchi_City_Yamaguchi_Prefecture]) ∧
+           past(EVENT[3]) ∧
+            past(EVENT[8]) ∧
+             CONJ_and(moved(EVENT[3], PERSON[2]) ∧ to(EVENT[3]) = ENTITY[Suo_Province] ∧
+                   In(EVENT[3]) = DATE[1],
+              built(EVENT[8], PERSON[2], ENTITY[studio_Unkokuan]) ∧ In(EVENT[8]) = DATE[1]))
+
+# ::id 20_wikipedia_KYOTO_BDS_00001,20;IE
+# ::snt In around 1465 , he acquired a calligraphy work by Bonki SOSEKI on which the characters of Sesshu were written , and requested Shinkei RYUKO to write a certificate about the origin of the name , Sesshu .
+∃ ATTRIB[4] PERSON[2] EVENT[7] EVENT[8] EVENT[13] EVENT[9] ENTITY[3] ENTITY[10] DATE[1] GROUP[6] ENTITY[12] ENTITY[11] (
+ is_characters_of(GROUP[6], PERSON[Sesshu]) ∧
+  name(ENTITY[12]) ∧
+   is_-ENTITY-_namely(ENTITY[12], ENTITY[Sesshu]) ∧
+    is_origin_of(ENTITY[11], ENTITY[12]) ∧
+     CD_around_1465(DATE[1]) ∧
+      PERSON[2] = he ∧
+       calligraphy(ATTRIB[4]) ∧
+        is_work_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+         written(EVENT[7], _, GROUP[6]) ∧ on(EVENT[7]) = PERSON[Bonki_SOSEKI] ∧
+          is_certificate_about(ENTITY[10], ENTITY[11]) ∧
+           past(EVENT[7]) ∧
+            past(EVENT[8]) ∧
+             past(EVENT[9]) ∧
+              CONJ_and(acquired(EVENT[8], PERSON[2], ENTITY[3]) ∧ by(EVENT[8]) = PERSON[Bonki_SOSEKI] ∧
+                    In(EVENT[8]) = DATE[1],
+               requested(EVENT[9], PERSON[2], PERSON[Shinkei_RYUKO], write(EVENT[13], PERSON[Shinkei_RYUKO], ENTITY[10])) ∧
+                In(EVENT[9]) = DATE[1]))
+
+# ::id 21_wikipedia_KYOTO_BDS_00001,21;IE
+# ::snt It is believed that after that , he came to be known as Sesshuu .
+∃ PERSON[3] SITUATION[1] EVENT[5] EVENT[4] EVENT[6] ENTITY[2] (
+ PERSON[3] = he ∧
+  is_FACT_THAT(SITUATION[1],
+   came(EVENT[4], PERSON[3], known(EVENT[5], _, PERSON[3]) ∧ as(EVENT[5]) = PERSON[Sesshuu]) ∧
+    after(EVENT[4]) = ENTITY[2]) ∧ past(EVENT[4]) ∧ believed(EVENT[6], _, SITUATION[1]))
+
+# ::id 22_wikipedia_KYOTO_BDS_00001,22;IE
+# ::snt It is thought that until this time he was known as Touyou SESSHU , but there is not a firm source to indicate that SESSHU and Sesshu were the same person .
+∃ ATTRIB[7] PERSON[3] SITUATION[1] ATTRIB[11] EVENT[4] EVENT[5] EVENT[12] EVENT[8] GROUP[9] ENTITY[6] ENTITY[2] ENTITY[10] (
+ time(ENTITY[2]) ∧
+  same(ATTRIB[11]) ∧
+   is_person_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+    PERSON[3] = he ∧
+     is_FACT_THAT(SITUATION[1],
+      known(EVENT[4], _, PERSON[3]) ∧ as(EVENT[4]) = ENTITY[Touyou_SESSHU] ∧
+       until(EVENT[4]) = ENTITY[2]) ∧
+      firm(ATTRIB[7]) ∧
+       is_element_of(ENTITY[SESSHU], GROUP[9]) ∧ is_element_of(PERSON[Sesshu], GROUP[9]) ∧
+        is_source_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         is_source_to(ENTITY[6], indicate(EVENT[8], copula(EVENT[12], GROUP[9], ENTITY[10]))) ∧
+         past(EVENT[4]) ∧
+          is_before(EVENT[12], EVENT[8]) ∧
+           CONJ_but(thought(EVENT[5], _, SITUATION[1]), ¬ ∃ EVENT[13] copula(EVENT[13], ENTITY[6])))
+
+# ::id 23_wikipedia_KYOTO_BDS_00001,23;IE
+# ::snt In 1468 , he sailed to Ming Dynasty China with a mission .
+∃ PERSON[2] EVENT[4] ENTITY[3] DATE[1] (
+ CD_1468(DATE[1]) ∧
+  PERSON[2] = he ∧
+   mission(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     sailed(EVENT[4], PERSON[2]) ∧ with(EVENT[4]) = ENTITY[3] ∧ to(EVENT[4]) = ENTITY[Ming_Dynasty_China] ∧
+      In(EVENT[4]) = DATE[1])
+
+# ::id 24_wikipedia_KYOTO_BDS_00001,24;IE
+# ::snt He familiarized himself with authentic Chinese ink painting and studied it for about 2 years .
+∃ ARTWORK[6] ATTRIB[4] PERSON[2] PERSON[1] EVENT[5] EVENT[8] ARTWORK[3] GROUP[7] (
+ PERSON[1] = he ∧
+  PERSON[2] = himself{PERSON[1]} ∧
+   authentic(ATTRIB[4]) ∧
+    is_Chinese_ink_painting_ATTRIBUTE(ARTWORK[3], ATTRIB[4]) ∧
+     ARTWORK[6] = it{ARTWORK[3]} ∧
+      (CD_about_2(GROUP[7]), years(GROUP[7])) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[8]) ∧
+         CONJ_and(familiarized(EVENT[5], PERSON[1], PERSON[2]) ∧ with(EVENT[5]) = ARTWORK[3],
+          studied(EVENT[8], PERSON[1], ARTWORK[6]) ∧ for(EVENT[8]) = GROUP[7]))
+
+# ::id 25_wikipedia_KYOTO_BDS_00001,25;IE
+# ::snt In the fall of 1481 , he traveled to Mino Province .
+∃ PERSON[3] EVENT[4] DATE[2] ENTITY[1] (
+ CD_1481(DATE[2]) ∧
+  is_fall_of(ENTITY[1], DATE[2]) ∧
+   PERSON[3] = he ∧
+    past(EVENT[4]) ∧
+     traveled(EVENT[4], PERSON[3]) ∧ to(EVENT[4]) = ENTITY[Mino_Province] ∧ In(EVENT[4]) = ENTITY[1])
+
+# ::id 26_wikipedia_KYOTO_BDS_00001,26;IE
+# ::snt There is no reliable record of the date of his death , but most put it at 1506 .
+∃ PERSON[5] EVENT[4] ENTITY[3] (
+ PERSON[5] = his ∧
+  is_death_POS(EVENT[4], PERSON[5]) ∧
+   is_date_of(ENTITY[3], EVENT[4]) ∧
+    CONJ_but(¬ ∃ ATTRIB[2] EVENT[6] ENTITY[1] (
+               reliable(ATTRIB[2]) ∧
+                is_record_of(ENTITY[1], ENTITY[3]) ∧ is_record_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[6], ENTITY[1])),
+     MOST ENTITY[7] ∃ EVENT[8] EVENT[10] DATE[9] (
+      EVENT[8] = it{EVENT[4]} ∧
+       CD_1506(DATE[9]) ∧ put(EVENT[10], ENTITY[7], EVENT[8]) ∧ at(EVENT[10]) = DATE[9])))
+
+# ::id 27_wikipedia_KYOTO_BDS_00001,27;IE
+# ::snt Other records write that he died in 1502 .
+∃ PERSON[4] ATTRIB[2] EVENT[6] EVENT[3] DATE[5] GROUP[1] (
+ other(ATTRIB[2]) ∧
+  is_records_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   PERSON[4] = he ∧
+    CD_1502(DATE[5]) ∧
+     is_before(EVENT[6], EVENT[3]) ∧
+      write(EVENT[3], GROUP[1], died(EVENT[6], PERSON[4]) ∧ in(EVENT[6]) = DATE[5]))
+
+# ::id 28_wikipedia_KYOTO_BDS_00001,28;IE
+# ::snt In addition to the date of his death , there are many other aspects of Sesshu 's life that remain unknown .
+∃ PERSON[4] ENTITY[1] ENTITY[3] ENTITY[2] (
+ PERSON[4] = his ∧
+  is_death_POS(ENTITY[3], PERSON[4]) ∧
+   is_date_of(ENTITY[2], ENTITY[3]) ∧
+    is_addition_to(ENTITY[1], ENTITY[2]) ∧
+     MANY ATTRIB[9] ATTRIB[6] EVENT[10] ENTITY[7] GROUP[5] (
+      (other(ATTRIB[6]) ∧ is_life_POS(ENTITY[7], PERSON[Sesshu]) ∧ unknown(ATTRIB[9]) ∧
+       remain(EVENT[10], GROUP[5], ATTRIB[9]) ∧ is_aspects_of(GROUP[5], ENTITY[7]) ∧ is_aspects_ATTRIBUTE(GROUP[5], ATTRIB[6])),
+      ∃ EVENT[11] (copula(EVENT[11], GROUP[5]) ∧ In(EVENT[11]) = ENTITY[1])))
+
+# ::id 29_wikipedia_KYOTO_BDS_00001,29;IE
+# ::snt A Rat Drawn In Tears
+∃ EVENT[3] GROUP[2] ENTITY[1] (
+ Rat(ENTITY[1]) ∧
+  Tears(GROUP[2]) ∧ drawn(EVENT[3], _, ENTITY[1]) ∧ In(EVENT[3]) = GROUP[2])
+
+# ::id 30_wikipedia_KYOTO_BDS_00001,30;IE
+# ::snt There is an interesting episode about Sesshu .
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (interesting(ATTRIB[2]) ∧ is_episode_about(ENTITY[1], PERSON[Sesshu]) ∧ is_episode_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[3], ENTITY[1]))
+
+# ::id 31_wikipedia_KYOTO_BDS_00001,31;IE
+# ::snt A young Sesshu who entered Hofuku-ji Temple only liked pictures and did not want to read sutras ; so the monks of the temple tied him to a pillar in the building enshrining a Buddhist statue .
+∃ ATTRIB[16] PERSON[11] GROUP[4] ENTITY[15] ENTITY[12] EVENT[2] EVENT[5] EVENT[17] EVENT[18] ENTITY[10] ENTITY[13] GROUP[9] (
+ temple(ENTITY[10]) ∧
+  is_monks_of(GROUP[9], ENTITY[10]) ∧
+   building(ENTITY[13]) ∧
+    past(EVENT[2]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[18]) ∧
+       entered(EVENT[2], PERSON[young_Sesshu], ENTITY[Hofuku-ji_Temple]) ∧
+        pictures(GROUP[4]) ∧
+         PERSON[11] = him{PERSON[young_Sesshu]} ∧
+          buddhist(ATTRIB[16]) ∧
+           is_statue_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+            enshrining(EVENT[17], ENTITY[12], ENTITY[15]) ∧ is_pillar_in(ENTITY[12], ENTITY[13]) ∧
+             CONJ_so(CONJ_and(ONLY ENTITY[3] (is_of(ENTITY[3], PERSON[young_Sesshu]), liked(EVENT[5], ENTITY[3], GROUP[4])),
+                   ¬ ∃ GROUP[7] EVENT[8] EVENT[6] (
+                         past(EVENT[6]) ∧
+                          sutras(GROUP[7]) ∧
+                           did_want(EVENT[6], PERSON[young_Sesshu], read(EVENT[8], PERSON[young_Sesshu], GROUP[7])))),
+              tied(EVENT[18], GROUP[9], PERSON[11]) ∧ to(EVENT[18]) = ENTITY[12]))
+
+# ::id 32_wikipedia_KYOTO_BDS_00001,32;IE
+# ::snt However , when the monks saw that he drew a rat with his tears that fell on the floor by using his big toe , they were impressed so they allowed him to draw pictures .
+∃ SITUATION[24] PERSON[19] PERSONS[18] SITUATION[17] PERSONS[16] ATTRIB[13] PERSON[12] SITUATION[10] PERSON[6] PERSON[3] EVENT[9] EVENT[14] EVENT[15] EVENT[2] EVENT[22] EVENT[20] EVENT[23] ENTITY[11] GROUP[5] ENTITY[4] GROUP[21] ENTITY[8] GROUP[1] (
+ monks(GROUP[1]) ∧
+  floor(ENTITY[8]) ∧
+   PERSON[3] = he ∧
+    rat(ENTITY[4]) ∧
+     PERSON[6] = his{PERSON[3]} ∧
+      fell(EVENT[9], GROUP[5]) ∧ on(EVENT[9]) = ENTITY[8] ∧ is_tears_POS(GROUP[5], PERSON[6]) ∧
+       PERSON[12] = his{PERSON[3]} ∧
+        big(ATTRIB[13]) ∧
+         is_toe_ATTRIBUTE(ENTITY[11], ATTRIB[13]) ∧ is_toe_POS(ENTITY[11], PERSON[12]) ∧
+          is_FACT_THAT(SITUATION[10], using(EVENT[14], ENTITY[4], ENTITY[11])) ∧
+           PERSONS[16] = they ∧
+            PERSONS[18] = they{PERSONS[16]} ∧
+             PERSON[19] = him ∧
+              pictures(GROUP[21]) ∧
+               is_FACT_THAT(SITUATION[17], allowed(EVENT[20], PERSONS[18], PERSON[19], draw(EVENT[22], PERSON[19], GROUP[21]))) ∧
+                ADV_however(SITUATION[24]) ∧
+                 is_before(EVENT[9], EVENT[2]) ∧
+                  is_before(EVENT[15], EVENT[2]) ∧
+                   past(EVENT[2]) ∧
+                    past(EVENT[20]) ∧
+                     past(EVENT[23]) ∧
+                      is_FACT_THAT(SITUATION[24],
+                       CRD_when(saw(EVENT[2], GROUP[1],
+                             drew(EVENT[15], PERSON[3], ENTITY[4]) ∧ by(EVENT[15]) = SITUATION[10] ∧
+                              with(EVENT[15]) = GROUP[5]),
+                        impressed(EVENT[23], _, PERSONS[16]) ∧ so(EVENT[23]) = SITUATION[17])))
+
+# ::id 33_wikipedia_KYOTO_BDS_00001,33;IE
+# ::snt This is thought to be the most well known story about Sesshu .
+∃ ATTRIB[4] EVENT[5] EVENT[2] ENTITY[3] ENTITY[1] (
+ most_well_known(ATTRIB[4]) ∧
+  is_story_about(ENTITY[3], PERSON[Sesshu]) ∧ is_story_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   thought(EVENT[2], _, ENTITY[1], copula(EVENT[5], ENTITY[1], ENTITY[3])))
+
+# ::id 34_wikipedia_KYOTO_BDS_00001,34;IE
+# ::snt The story first appeared in " Honcho Gashi " compiled by Eino KANO -LRB- published in 1693 , the Edo period -RRB- .
+∃ SITUATION[9] ENTITY[3] DATE[4] EVENT[7] EVENT[5] EVENT[8] ENTITY[1] (
+ story(ENTITY[1]) ∧
+  ADV_first(SITUATION[9]) ∧
+   past(EVENT[8]) ∧
+    compiled(EVENT[7], ENTITY[Eino_KANO], ENTITY[Honcho_Gashi]) ∧
+     CD_1693(DATE[4]) ∧
+      Edo_period(ENTITY[3]) ∧
+       is_-DATE-_namely(DATE[4], ENTITY[3]) ∧
+        published(EVENT[5], _, ENTITY[Honcho_Gashi]) ∧ in(EVENT[5]) = DATE[4] ∧
+         is_FACT_THAT(SITUATION[9], appeared(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = ENTITY[Honcho_Gashi]))
+
+# ::id 35_wikipedia_KYOTO_BDS_00001,35;IE
+# ::snt Deification
+∃ EVENT[2] ENTITY[1] (Deification(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 36_wikipedia_KYOTO_BDS_00001,36;IE
+# ::snt Sesshu started to be deified in the Edo period .
+∃ EVENT[3] EVENT[2] ENTITY[1] (
+ Edo_period(ENTITY[1]) ∧
+  past(EVENT[2]) ∧
+   started(EVENT[2], PERSON[Sesshu], deified(EVENT[3], _, PERSON[Sesshu])) ∧ in(EVENT[2]) = ENTITY[1])
+
+# ::id 37_wikipedia_KYOTO_BDS_00001,37;IE
+# ::snt It is thought to be because the Kano School that ruled painting circles at the time venerated him as a master , and feudal lords wanted to have Sesshu 's artwork .
+∃ ATTRIB[11] PERSON[7] SITUATION[2] SITUATION[1] EVENT[9] EVENT[14] EVENT[12] EVENT[15] EVENT[16] ENTITY[8] ENTITY[13] GROUP[10] EVENT[6] ENTITY[5] GROUP[4] (
+ painting_circles(GROUP[4]) ∧
+  time(ENTITY[5]) ∧
+   ruled(EVENT[6], ENTITY[Kano_School], GROUP[4]) ∧ at(EVENT[6]) = ENTITY[5] ∧
+    past(EVENT[6]) ∧
+     PERSON[7] = him ∧
+      master(ENTITY[8]) ∧
+       feudal(ATTRIB[11]) ∧
+        is_lords_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+         is_artwork_POS(ENTITY[13], PERSON[Sesshu]) ∧
+          is_FACT_THAT(SITUATION[2],
+           CONJ_and(venerated(EVENT[9], ENTITY[Kano_School], PERSON[7]) ∧ as(EVENT[9]) = ENTITY[8],
+            wanted(EVENT[12], GROUP[10], have(EVENT[14], GROUP[10], ENTITY[13])))) ∧
+           is_FACT_THAT(SITUATION[1], copula(EVENT[15]) ∧ because(EVENT[15]) = SITUATION[2]) ∧
+            past(EVENT[9]) ∧ past(EVENT[12]) ∧ thought(EVENT[16], _, SITUATION[1]))
+
+# ::id 38_wikipedia_KYOTO_BDS_00001,38;IE
+# ::snt It is said that this is why the number of artworks attributed to Sesshu increased .
+∃ SITUATION[1] EVENT[3] EVENT[11] EVENT[8] GROUP[6] ENTITY[5] ENTITY[2] (
+ attributed(EVENT[8], _, GROUP[6]) ∧ to(EVENT[8]) = PERSON[Sesshu] ∧ artworks(GROUP[6]) ∧
+  is_number_of(ENTITY[5], GROUP[6]) ∧
+   is_FACT_THAT(SITUATION[1],
+    copula(EVENT[3], ENTITY[2],
+     QUEST(∃ EVENT[9] ? ENTITY[4] (
+           is_ADV(EVENT[9], ENTITY[4]) ∧
+            is_before(EVENT[9], EVENT[3]) ∧ increased(EVENT[9], ENTITY[5]))))) ∧
+    said(EVENT[11], _, SITUATION[1]))
+
+# ::id 39_wikipedia_KYOTO_BDS_00001,39;IE
+# ::snt Reflecting Sesshu 's popularity , a Japanese puppet drama / Kabuki work entitled " The Gion Religious Festival " was created . The drama was first performed in January 1758 . The scene of Kinkaku-ji Temple , where Sesshu 's granddaughter , Yukihime , takes an active role , is famous and similar works were performed .
+∃ ATTRIB[20] ATTRIB[17] ATTRIB[14] ENTITY[4] ENTITY[1] GROUP[19] EVENT[3] EVENT[5] EVENT[6] EVENT[8] EVENT[18] EVENT[21] EVENT[15] ENTITY[7] ENTITY[13] ENTITY[12] ENTITY[10] (
+ drama(ENTITY[7]) ∧
+  is_granddaughter_POS(ENTITY[12], PERSON[Sesshu]) ∧
+   is_-ENTITY-_namely(ENTITY[12], ENTITY[Yukihime]) ∧
+    active(ATTRIB[14]) ∧
+     is_role_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+      takes(EVENT[15], ENTITY[12], ENTITY[13]) ∧
+       is_scene_of(ENTITY[10], ENTITY[Kinkaku-ji_Temple]) ∧
+        is_LOC(EVENT[15], ENTITY[Kinkaku-ji_Temple]) ∧
+         past(EVENT[6]) ∧
+          ADV_first(EVENT[8]) ∧
+           past(EVENT[8]) ∧
+            past(EVENT[21]) ∧
+             entitled(EVENT[3], ENTITY[1], ENTITY[Gion_Religious_Festival]) ∧ Japanese_puppet_drama_Kabuki_work(ENTITY[1]) ∧
+              is_popularity_POS(ENTITY[4], PERSON[Sesshu]) ∧
+               famous(ATTRIB[17]) ∧
+                similar(ATTRIB[20]) ∧
+                 is_works_ATTRIBUTE(GROUP[19], ATTRIB[20]) ∧
+                  CONJ_and(reflecting(EVENT[5], ENTITY[1], ENTITY[4]), created(EVENT[6], _, ENTITY[1])) ∧
+                   performed(EVENT[8], _, ENTITY[7]) ∧ in(EVENT[8]) = DATE[January_1758] ∧
+                   CONJ_and(copula(EVENT[18], ENTITY[10], ATTRIB[17]), performed(EVENT[21], _, GROUP[19])))
+
+# ::id 40_wikipedia_KYOTO_BDS_00001,42;IE
+# ::snt Today , Sesshu who gave birth to one of Japanese cultures is a leading historical figure of this country .
+∃ ATTRIB[6] EVENT[7] EVENT[10] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[8] TIME[1] ENTITY[9] (
+ country(ENTITY[9]) ∧
+  Today(TIME[1]) ∧
+   birth(ENTITY[3]) ∧
+    japanese(ATTRIB[6]) ∧
+     is_cultures_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+      (CD_one(ENTITY[4]), is_element_of(ENTITY[4], GROUP[5])) ∧
+       gave(EVENT[7], PERSON[Sesshu], ENTITY[3]) ∧ to(EVENT[7]) = ENTITY[4] ∧
+        is_leading_historical_figure_of(ENTITY[8], ENTITY[9]) ∧
+         past(EVENT[7]) ∧ copula(EVENT[10], PERSON[Sesshu], ENTITY[8]) ∧ is_contained_in(TMP(EVENT[10]), TIME[1]))

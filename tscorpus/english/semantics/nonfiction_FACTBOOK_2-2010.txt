@@ -1,0 +1,1964 @@
+# ::id 1_nonfiction_FACTBOOK-2010;LEGAL;AT1-1;NE
+# ::snt Legal system
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (legal(ATTRIB[2]) ∧ is_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 2_nonfiction_FACTBOOK-2010;LEGAL;AT2-1;NE
+# ::snt This entry provides the description of a country 's legal system ;
+∃ ATTRIB[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ entry(ENTITY[1]) ∧
+  country(ENTITY[4]) ∧
+   legal(ATTRIB[5]) ∧
+    is_system_ATTRIBUTE(ENTITY[3], ATTRIB[5]) ∧ is_system_POS(ENTITY[3], ENTITY[4]) ∧
+     is_description_of(ENTITY[2], ENTITY[3]) ∧ provides(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 3_nonfiction_FACTBOOK-2010;LEGAL;AT2-2;NE
+# ::snt it also includes information on acceptance of International Court of Justice -LRB- ICJ -RRB- jurisdiction .
+∃ REF1[1] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ REF1[1] = it ∧
+  Justice(ENTITY[5]) ∧
+   is_International_Court_jurisdiction_of(ENTITY[4], ENTITY[5]) ∧
+    is_-ENTITY-_namely(ENTITY[4], ENTITY[ICJ]) ∧
+     is_acceptance_of(ENTITY[3], ENTITY[4]) ∧
+      is_information_on(ENTITY[2], ENTITY[3]) ∧ ADV_also(EVENT[6]) ∧ includes(EVENT[6], REF1[1], ENTITY[2]))
+
+# ::id 4_nonfiction_FACTBOOK-2010;LEGAL;AT2-3;NE
+# ::snt The legal systems of nearly all countries are generally modeled upon elements of five main types : civil law -LRB- including French law , the Napoleonic Code , Roman law , Roman-Dutch law , and Spanish law -RRB- ; common law -LRB- including United State law -RRB- ; customary law ; mixed or pluralistic law ; and religious law -LRB- including Islamic law -RRB- .
+∃ ATTRIB[38] ATTRIB[2] EVENT[39] GROUP[5] GROUP[37] GROUP[4] GROUP[1] (
+ legal(ATTRIB[2]) ∧
+  ALL GROUP[3] (ADV_nearly(GROUP[3]) ∧ countries(GROUP[3]), is_systems_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_systems_of(GROUP[1], GROUP[3])) ∧
+   main(ATTRIB[38]) ∧
+    (CD_five(GROUP[37]), is_types_ATTRIBUTE(GROUP[37], ATTRIB[38])) ∧
+     ∃ ATTRIB[7] EVENT[18] GROUP[9] ENTITY[6] (
+      civil(ATTRIB[7]) ∧
+       ∃ ATTRIB[11] ENTITY[10] (french(ATTRIB[11]) ∧ is_law_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+        is_element_of(ENTITY[Napoleonic_Code], GROUP[9]) ∧
+        ∃ ATTRIB[13] ENTITY[12] (roman(ATTRIB[13]) ∧ is_law_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧ is_element_of(ENTITY[12], GROUP[9])) ∧
+        ∃ ATTRIB[15] ENTITY[14] (roman-dutch(ATTRIB[15]) ∧ is_law_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧ is_element_of(ENTITY[14], GROUP[9])) ∧
+        ∃ ATTRIB[17] ENTITY[16] (spanish(ATTRIB[17]) ∧ is_law_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧ is_element_of(ENTITY[16], GROUP[9])) ∧
+        including(EVENT[18], ENTITY[6], GROUP[9]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+         is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ATTRIB[20] EVENT[23] ENTITY[22] ENTITY[19] (
+       common(ATTRIB[20]) ∧
+        United_State_law(ENTITY[22]) ∧
+         including(EVENT[23], ENTITY[19], ENTITY[22]) ∧ is_law_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+          is_element_of(ENTITY[19], GROUP[5])) ∧
+      ∃ ATTRIB[25] ENTITY[24] (customary(ATTRIB[25]) ∧ is_law_ATTRIBUTE(ENTITY[24], ATTRIB[25]) ∧ is_element_of(ENTITY[24], GROUP[5])) ∧
+      ∃ GROUP[26] (
+       CONJ_or(∃ ATTRIB[28] ENTITY[27] (mixed(ATTRIB[28]) ∧ is_law_ATTRIBUTE(ENTITY[27], ATTRIB[28]) ∧ is_element_of(ENTITY[27], GROUP[26])),
+        ∃ ATTRIB[30] ENTITY[29] (pluralistic(ATTRIB[30]) ∧ is_law_ATTRIBUTE(ENTITY[29], ATTRIB[30]) ∧ is_element_of(ENTITY[29], GROUP[26]))) ∧
+        is_subset_of_or_equal_to(GROUP[26], GROUP[5])) ∧
+      ∃ ATTRIB[35] ATTRIB[32] EVENT[36] ENTITY[34] ENTITY[31] (
+       religious(ATTRIB[32]) ∧
+        islamic(ATTRIB[35]) ∧
+         is_law_ATTRIBUTE(ENTITY[34], ATTRIB[35]) ∧
+          including(EVENT[36], ENTITY[31], ENTITY[34]) ∧ is_law_ATTRIBUTE(ENTITY[31], ATTRIB[32]) ∧
+           is_element_of(ENTITY[31], GROUP[5])) ∧
+      is_-GROUP-_namely(GROUP[37], GROUP[5]) ∧
+       is_elements_of(GROUP[4], GROUP[37]) ∧
+        ADV_generally(EVENT[39]) ∧ modeled(EVENT[39], _, GROUP[1]) ∧ upon(EVENT[39]) = GROUP[4])
+
+# ::id 5_nonfiction_FACTBOOK-2010;LEGAL;AT2-4;NE
+# ::snt An additional type of legal system - international law , which governs the conduct of independent nations in their relationships with one another - is also addressed below .
+∃ REF1[10] ATTRIB[4] ATTRIB[14] ATTRIB[2] ATTRIB[8] EVENT[12] EVENT[15] ENTITY[11] GROUP[9] ENTITY[3] ENTITY[13] ENTITY[1] GROUP[7] ENTITY[6] (
+ independent(ATTRIB[8]) ∧
+  is_nations_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   is_conduct_of(ENTITY[6], GROUP[7]) ∧
+    additional(ATTRIB[2]) ∧
+     legal(ATTRIB[14]) ∧
+      is_system_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+       international(ATTRIB[4]) ∧
+        REF1[10] = their ∧
+         CD_one_another(ENTITY[11]) ∧
+          is_relationships_with(GROUP[9], ENTITY[11]) ∧ is_relationships_POS(GROUP[9], REF1[10]) ∧
+           governs(EVENT[12], ENTITY[3], ENTITY[6]) ∧ in(EVENT[12]) = GROUP[9] ∧
+            is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+            is_-ENTITY-_namely(ENTITY[13], ENTITY[3]) ∧
+             is_type_of(ENTITY[1], ENTITY[13]) ∧ is_type_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+              ADV_also(EVENT[15]) ∧ LOC_below(EVENT[15]) ∧ addressed(EVENT[15], _, ENTITY[1]))
+
+# ::id 6_nonfiction_FACTBOOK-2010;LEGAL;AT2-5;NE
+# ::snt The following list describes these legal systems , the countries or world regions where these systems are enforced , and a brief statement on the origins and major features of each .
+∃ ATTRIB[20] ATTRIB[5] ATTRIB[2] EVENT[22] GROUP[3] EVENT[12] GROUP[4] GROUP[8] GROUP[9] GROUP[11] GROUP[7] ENTITY[6] GROUP[18] GROUP[19] GROUP[17] ENTITY[16] ENTITY[1] (
+ following(ATTRIB[2]) ∧
+  is_list_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   legal(ATTRIB[5]) ∧
+    is_systems_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     countries(GROUP[8]) ∧
+      world_regions(GROUP[9]) ∧
+       CONJ_or(is_subset_of_or_equal_to(GROUP[8], GROUP[7]), is_subset_of_or_equal_to(GROUP[9], GROUP[7])) ∧
+        systems(GROUP[11]) ∧
+         enforced(EVENT[12], _, GROUP[11]) ∧ is_equals(ENTITY[6], GROUP[7]) ∧
+          origins(GROUP[18]) ∧
+           major(ATTRIB[20]) ∧
+            is_features_ATTRIBUTE(GROUP[19], ATTRIB[20]) ∧
+             is_subset_of_or_equal_to(GROUP[18], GROUP[17]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[17]) ∧
+              EACH ENTITY[21] (is_equals(ENTITY[16], GROUP[17]) ∧ is_of(ENTITY[16], ENTITY[21])) ∧
+               is_LOC(EVENT[12], ENTITY[6]) ∧
+                is_subset_of_or_equal_to(GROUP[4], GROUP[3]) ∧ is_element_of(ENTITY[6], GROUP[3]) ∧
+                 ∃ ATTRIB[15] ENTITY[14] (
+                  brief(ATTRIB[15]) ∧
+                   is_statement_on(ENTITY[14], ENTITY[16]) ∧ is_statement_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+                    is_element_of(ENTITY[14], GROUP[3])) ∧ describes(EVENT[22], ENTITY[1], GROUP[3]))
+
+# ::id 7_nonfiction_FACTBOOK-2010;LEGAL;AT3-1;NE
+# ::snt Civil Law - The most widespread type of legal system in the world , applied in various forms in approximately 150 countries .
+∃ ATTRIB[4] ATTRIB[2] ATTRIB[8] EVENT[10] EVENT[11] GROUP[9] GROUP[7] ENTITY[3] ENTITY[1] ENTITY[5] (
+ world(ENTITY[5]) ∧
+  various(ATTRIB[8]) ∧
+   (CD_approximately_150(GROUP[9]), countries(GROUP[9])) ∧
+    is_forms_in(GROUP[7], GROUP[9]) ∧ is_forms_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+     applied(EVENT[10], _, ENTITY[Civil_Law]) ∧ in(EVENT[10]) = GROUP[7] ∧
+      most_widespread(ATTRIB[2]) ∧
+       legal(ATTRIB[4]) ∧
+        is_system_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+         is_type_in(ENTITY[1], ENTITY[5]) ∧ is_type_of(ENTITY[1], ENTITY[3]) ∧ is_type_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+          is_-ENTITY-_namely(ENTITY[Civil_Law], ENTITY[1]) ∧ xxx(EVENT[11]) ∧ LINK(EVENT[11]) = ENTITY[Civil_Law])
+
+# ::id 8_nonfiction_FACTBOOK-2010;LEGAL;AT3-2;NE
+# ::snt Also referred to as European continental law , the civil law system is derived mainly from the Roman Corpus Juris Civilus , -LRB- Body of Civil Law -RRB- , a collection of laws and legal interpretations compiled under the East Roman -LRB- Byzantine -RRB- Emperor Justinian I between A.D. 528 and 565 .
+∃ ATTRIB[3] ATTRIB[11] EVENT[4] EVENT[20] ENTITY[2] EVENT[17] ENTITY[19] ENTITY[18] GROUP[9] GROUP[10] ENTITY[13] ENTITY[15] ENTITY[16] GROUP[14] GROUP[8] ENTITY[7] ENTITY[6] ENTITY[1] (
+ civil_law_system(ENTITY[1]) ∧
+  Civil_Law(ENTITY[19]) ∧
+   is_Body_of(ENTITY[18], ENTITY[19]) ∧
+    is_-ENTITY-_namely(ENTITY[Roman_Corpus_Juris_Civilus], ENTITY[18]) ∧
+     laws(GROUP[9]) ∧
+      legal(ATTRIB[11]) ∧
+       is_interpretations_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+        is_subset_of_or_equal_to(GROUP[9], GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[8]) ∧
+         East_Roman_Emperor(ENTITY[13]) ∧
+          is_-ENTITY-_namely(ENTITY[Justinian_I], ENTITY[13]) ∧
+           is_-ENTITY-_namely(ENTITY[Justinian_I], ENTITY[Byzantine]) ∧
+            (CD_528(ENTITY[15]), A.D.(ENTITY[15])) ∧
+             CD_565(ENTITY[16]) ∧
+              is_element_of(ENTITY[15], GROUP[14]) ∧ is_element_of(ENTITY[16], GROUP[14]) ∧
+               compiled(EVENT[17], ENTITY[7]) ∧ between(EVENT[17]) = GROUP[14] ∧
+                under(EVENT[17]) = ENTITY[Justinian_I] ∧ is_equals(ENTITY[7], GROUP[8]) ∧
+                is_collection_of(ENTITY[6], ENTITY[7]) ∧
+                 is_-ENTITY-_namely(ENTITY[Roman_Corpus_Juris_Civilus], ENTITY[6]) ∧
+                  european(ATTRIB[3]) ∧
+                   is_continental_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+                    ADV_also(EVENT[4]) ∧
+                     past(EVENT[4]) ∧
+                      ADV_mainly(EVENT[20]) ∧
+                       CONJ_and(referred_to(EVENT[4], ENTITY[1]) ∧ as(EVENT[4]) = ENTITY[2],
+                        derived(EVENT[20], _, ENTITY[1]) ∧ from(EVENT[20]) = ENTITY[Roman_Corpus_Juris_Civilus]))
+
+# ::id 9_nonfiction_FACTBOOK-2010;LEGAL;AT3-3;NE
+# ::snt The major feature of civil law systems is that the laws are organized into systematic written codes .
+∃ ATTRIB[8] ATTRIB[7] ATTRIB[2] EVENT[9] EVENT[4] GROUP[6] GROUP[3] GROUP[5] ENTITY[1] (
+ major(ATTRIB[2]) ∧
+  civil_law_systems(GROUP[3]) ∧
+   is_feature_of(ENTITY[1], GROUP[3]) ∧ is_feature_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    laws(GROUP[5]) ∧
+     systematic(ATTRIB[7]) ∧
+      written(ATTRIB[8]) ∧
+       is_codes_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_codes_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+        copula(EVENT[4], ENTITY[1], organized(EVENT[9], _, GROUP[5]) ∧ into(EVENT[9]) = GROUP[6]))
+
+# ::id 10_nonfiction_FACTBOOK-2010;LEGAL;AT3-4;NE
+# ::snt In civil law the sources recognized as authoritative are principally legislation - especially codifications in constitutions or statutes enacted by governments - and secondarily , custom .
+∃ ATTRIB[5] EVENT[18] GROUP[7] ENTITY[1] EVENT[6] ENTITY[4] GROUP[2] (
+ authoritative(ATTRIB[5]) ∧
+  is_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   recognized(EVENT[6], GROUP[2]) ∧ as(EVENT[6]) = ENTITY[4] ∧ sources(GROUP[2]) ∧
+    past(EVENT[6]) ∧
+     civil_law(ENTITY[1]) ∧
+      ∃ EVENT[15] GROUP[14] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[16] (
+       ADV_principally(ENTITY[16]) ∧ legislation(ENTITY[16]) ∧
+        CONJ_or(∃ GROUP[11] (constitutions(GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[10])),
+         ∃ GROUP[12] (statutes(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[10]))) ∧
+         governments(GROUP[14]) ∧
+          enacted(EVENT[15], GROUP[14], ENTITY[9]) ∧ is_equals(ENTITY[9], GROUP[10]) ∧
+           ADV_especially(ENTITY[8]) ∧ is_codifications_in(ENTITY[8], ENTITY[9]) ∧
+            is_-ENTITY-_namely(ENTITY[16], ENTITY[8]) ∧ is_element_of(ENTITY[16], GROUP[7])) ∧
+       ∃ ENTITY[17] (ADV_secondarily(ENTITY[17]) ∧ custom(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[7])) ∧
+       copula(EVENT[18], GROUP[2], GROUP[7]) ∧ In(EVENT[18]) = ENTITY[1])
+
+# ::id 11_nonfiction_FACTBOOK-2010;LEGAL;AT3-5;NE
+# ::snt The civil law systems in some countries are based on more than one code .
+∃ GROUP[1] (
+ SOME GROUP[2] (countries(GROUP[2]), is_civil_law_in(GROUP[1], GROUP[2]) ∧ is_systems_in(GROUP[1], GROUP[2])) ∧
+  MORE ENTITY[4] ENTITY[3] (((CD_one(ENTITY[4]), code(ENTITY[4])) ∧ is_than(ENTITY[3], ENTITY[4])),
+   ∃ EVENT[5] (based(EVENT[5], _, GROUP[1]) ∧ on(EVENT[5]) = ENTITY[3])))
+
+# ::id 12_nonfiction_FACTBOOK-2010;LEGAL;AT4-1;NE
+# ::snt Common Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (common(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 13_nonfiction_FACTBOOK-2010;LEGAL;AT4-2;NE
+# ::snt A type of legal system , often synonymous with English common law , which is the system of England and Wales in the UK , and is also in force in approximately 80 countries formerly part of or influenced by the former British Empire .
+∃ SITUATION[18] ATTRIB[6] ATTRIB[4] ATTRIB[3] EVENT[10] EVENT[14] EVENT[16] EVENT[17] EVENT[19] ENTITY[2] GROUP[12] ENTITY[11] ENTITY[5] ENTITY[1] GROUP[9] ENTITY[8] (
+ is_element_of(ENTITY[England], GROUP[9]) ∧ is_element_of(ENTITY[Wales], GROUP[9]) ∧
+  is_system_of(ENTITY[8], GROUP[9]) ∧
+   legal(ATTRIB[3]) ∧
+    is_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     is_type_of(ENTITY[1], ENTITY[2]) ∧
+      english(ATTRIB[6]) ∧
+       force(ENTITY[11]) ∧
+        (CD_approximately_80(GROUP[12]),
+         CONJ_or(part_of(EVENT[14], GROUP[12]), influenced(EVENT[16], ENTITY[former_British_Empire], GROUP[12])) ∧ countries(GROUP[12])) ∧
+         CONJ_and(copula(EVENT[10], ENTITY[5], ENTITY[8]) ∧ in(EVENT[10]) = ENTITY[UK],
+          is_FACT_THAT(SITUATION[18],
+           copula(EVENT[17], ENTITY[5]) ∧ in(EVENT[17]) = GROUP[12] ∧
+            in(EVENT[17]) = ENTITY[11])) ∧ is_common_law_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+          is_often_synonymous_with(ATTRIB[4], ENTITY[5]) ∧
+           ADV_also(SITUATION[18]) ∧
+            ADV_formerly(EVENT[14]) ∧
+             past(EVENT[14]) ∧ xxx(EVENT[19], ENTITY[1]) ∧ ATTRIBUTE(EVENT[19]) = ATTRIB[4])
+
+# ::id 14_nonfiction_FACTBOOK-2010;LEGAL;AT4-3;NE
+# ::snt English common law reflects Biblical influences as well as remnants of law systems imposed by early conquerors including the Romans , Anglo-Saxons , and Normans .
+∃ SITUATION[15] ATTRIB[9] ATTRIB[4] ATTRIB[2] EVENT[12] EVENT[13] EVENT[14] GROUP[11] GROUP[8] GROUP[6] GROUP[5] GROUP[3] ENTITY[1] (
+ english(ATTRIB[2]) ∧
+  is_common_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   biblical(ATTRIB[4]) ∧
+    is_influences_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     early(ATTRIB[9]) ∧
+      is_subset_of_or_equal_to(GROUP[Romans], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[Anglo-Saxons], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[Normans], GROUP[11]) ∧
+       including(EVENT[12], GROUP[8], GROUP[11]) ∧ is_conquerors_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+        imposed(EVENT[13], GROUP[8], GROUP[6]) ∧ law_systems(GROUP[6]) ∧
+         is_remnants_of(GROUP[5], GROUP[6]) ∧
+          is_ADV_as_well_as(SITUATION[15], GROUP[5]) ∧ is_FACT_THAT(SITUATION[15], reflects(EVENT[14], ENTITY[1], GROUP[3])))
+
+# ::id 15_nonfiction_FACTBOOK-2010;LEGAL;AT4-4;NE
+# ::snt Some legal scholars attribute the formation of the English common law system to King Henry II -LRB- r.1154-1189 -RRB- .
+∃ ATTRIB[5] ENTITY[4] ENTITY[3] (
+ english(ATTRIB[5]) ∧
+  is_common_law_system_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   is_formation_of(ENTITY[3], ENTITY[4]) ∧
+    SOME ATTRIB[2] GROUP[1] ((legal(ATTRIB[2]) ∧ is_scholars_ATTRIBUTE(GROUP[1], ATTRIB[2])),
+     ∃ EVENT[7] ENTITY[6] (
+      CD_r.1154-1189(ENTITY[6]) ∧
+       is_-ENTITY-_namely(ENTITY[King_Henry_II], ENTITY[6]) ∧
+        attribute(EVENT[7], GROUP[1], ENTITY[3]) ∧ to(EVENT[7]) = ENTITY[King_Henry_II])))
+
+# ::id 16_nonfiction_FACTBOOK-2010;LEGAL;AT4-5;NE
+# ::snt Until the time of his reign , laws customary among England 's various manorial and ecclesiastical -LRB- church -RRB- jurisdictions were administered locally .
+∃ ATTRIB[12] ATTRIB[5] REF1[3] EVENT[13] GROUP[6] GROUP[11] GROUP[4] ENTITY[2] ENTITY[1] (
+ REF1[3] = his ∧
+  is_reign_POS(ENTITY[2], REF1[3]) ∧
+   is_time_of(ENTITY[1], ENTITY[2]) ∧
+    various(ATTRIB[12]) ∧
+     is_jurisdictions_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧ is_jurisdictions_POS(GROUP[11], ENTITY[England]) ∧
+      ∃ ENTITY[7] (manorial(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+       ∃ ATTRIB[10] ENTITY[8] ENTITY[9] (
+        ecclesiastical(ATTRIB[10]) ∧
+         is_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+          church(ENTITY[8]) ∧ is_-ENTITY-_namely(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+       is_-GROUP-_namely(GROUP[11], GROUP[6]) ∧
+        is_customary_among(ATTRIB[5], GROUP[11]) ∧
+         is_laws_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+          LOC_locally(EVENT[13]) ∧
+           past(EVENT[13]) ∧ administered(EVENT[13], _, GROUP[4]) ∧ Until(EVENT[13]) = ENTITY[1])
+
+# ::id 17_nonfiction_FACTBOOK-2010;LEGAL;AT4-6;NE
+# ::snt Henry II established the king 's court and designated that laws were common to the entire English realm .
+∃ ATTRIB[6] ATTRIB[8] EVENT[3] EVENT[9] EVENT[4] ENTITY[1] GROUP[5] ENTITY[2] ENTITY[7] (
+ king(ENTITY[2]) ∧
+  entire(ATTRIB[8]) ∧
+   is_English_realm_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    is_court_POS(ENTITY[1], ENTITY[2]) ∧
+     laws(GROUP[5]) ∧
+      is_common_to(ATTRIB[6], ENTITY[7]) ∧
+       past(EVENT[3]) ∧
+        is_before(EVENT[9], EVENT[4]) ∧
+         CONJ_and(established(EVENT[3], ENTITY[Henry_II], ENTITY[1]),
+          designated(EVENT[4], ENTITY[Henry_II], copula(EVENT[9], GROUP[5]) ∧ ATTRIBUTE(EVENT[9]) = ATTRIB[6])))
+
+# ::id 18_nonfiction_FACTBOOK-2010;LEGAL;AT4-7;NE
+# ::snt The foundation of English common law is legal precedent - referred to as stare decisis , meaning to stand by things decided .
+∃ ATTRIB[5] ATTRIB[3] EVENT[12] EVENT[10] EVENT[11] EVENT[7] EVENT[13] GROUP[8] ENTITY[4] ENTITY[2] ENTITY[1] (
+ english(ATTRIB[3]) ∧
+  is_common_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_foundation_of(ENTITY[1], ENTITY[2]) ∧
+    legal(ATTRIB[5]) ∧
+     decided(EVENT[10], GROUP[8]) ∧ things(GROUP[8]) ∧
+      CONJ_and(referred_to(EVENT[12], ENTITY[4]) ∧ as(EVENT[12]) = ENTITY[stare_decisis],
+       meaning(EVENT[7], ENTITY[4], stand(EVENT[11], ENTITY[4]) ∧ by(EVENT[11]) = GROUP[8])) ∧
+       is_precedent_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ past(EVENT[12]) ∧ copula(EVENT[13], ENTITY[1], ENTITY[4]))
+
+# ::id 19_nonfiction_FACTBOOK-2010;LEGAL;AT4-8;NE
+# ::snt In the English common law system , court judges are bound in their decisions in large part by the rules and other doctrines developed - and supplemented over time - by the judges of earlier English courts .
+∃ ATTRIB[7] REF1[5] ATTRIB[17] ATTRIB[16] ATTRIB[2] EVENT[18] EVENT[20] EVENT[21] ENTITY[19] GROUP[9] ENTITY[8] ENTITY[6] GROUP[4] GROUP[3] GROUP[10] GROUP[15] GROUP[14] ENTITY[1] (
+ english(ATTRIB[2]) ∧
+  is_common_law_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   rules(GROUP[10]) ∧
+    earlier(ATTRIB[16]) ∧
+     english(ATTRIB[17]) ∧
+      is_courts_ATTRIBUTE(GROUP[15], ATTRIB[17]) ∧ is_courts_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧
+       is_judges_of(GROUP[14], GROUP[15]) ∧
+        court_judges(GROUP[3]) ∧
+         REF1[5] = their ∧
+          is_decisions_POS(GROUP[4], REF1[5]) ∧
+           large(ATTRIB[7]) ∧
+            is_part_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+             is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧
+              ∃ ATTRIB[12] GROUP[11] (other(ATTRIB[12]) ∧ is_doctrines_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9])) ∧
+              time(ENTITY[19]) ∧
+               CONJ_and(developed(EVENT[18], GROUP[14], ENTITY[8]),
+                supplemented(EVENT[20], GROUP[14], ENTITY[8]) ∧ over(EVENT[20]) = ENTITY[19]) ∧
+                is_equals(ENTITY[8], GROUP[9]) ∧
+                bound(EVENT[21], ENTITY[8], GROUP[3]) ∧ in(EVENT[21]) = ENTITY[6] ∧
+                 in(EVENT[21]) = GROUP[4] ∧ In(EVENT[21]) = ENTITY[1])
+
+# ::id 20_nonfiction_FACTBOOK-2010;LEGAL;AT5-1;NE
+# ::snt Customary Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (customary(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 21_nonfiction_FACTBOOK-2010;LEGAL;AT5-2;NE
+# ::snt A type of legal system that serves as the basis of , or has influenced , the present-day laws in approximately 40 countries - mostly in Africa , but some in the Pacific islands , Europe , and the Near East .
+∃ ATTRIB[3] ATTRIB[6] EVENT[10] EVENT[11] EVENT[12] ENTITY[2] ENTITY[1] GROUP[7] GROUP[5] (
+ present-day(ATTRIB[6]) ∧
+  (CD_approximately_40(GROUP[7]),
+   SOME GROUP[9] ENTITY[8] (
+    (is_element_of(ENTITY[Pacific_islands], GROUP[9]) ∧ is_element_of(ENTITY[Europe], GROUP[9]) ∧ is_element_of(ENTITY[Near_East], GROUP[9]) ∧
+     is_in(ENTITY[8], GROUP[9])), is_countries_but(GROUP[7], ENTITY[8]) ∧ is_countries_mostly_in(GROUP[7], ENTITY[Africa]))) ∧
+   is_laws_in(GROUP[5], GROUP[7]) ∧ is_laws_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+    legal(ATTRIB[3]) ∧
+     is_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      CONJ_or(serves_as_the_basis_of(EVENT[10], ENTITY[1], GROUP[5]), has_influenced(EVENT[11], ENTITY[1], GROUP[5])) ∧
+       is_type_of(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[12]) ∧ LINK(EVENT[12]) = ENTITY[1])
+
+# ::id 22_nonfiction_FACTBOOK-2010;LEGAL;AT5-3;NE
+# ::snt Customary law is also referred to as primitive law , unwritten law , indigenous law , and folk law .
+∃ ATTRIB[2] EVENT[11] GROUP[3] ENTITY[1] (
+ customary(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ATTRIB[5] ENTITY[4] (primitive(ATTRIB[5]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ATTRIB[7] ENTITY[6] (unwritten(ATTRIB[7]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    ∃ ATTRIB[9] ENTITY[8] (indigenous(ATTRIB[9]) ∧ is_law_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+    ∃ ENTITY[10] (folk_law(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+    ADV_also(EVENT[11]) ∧ referred_to(EVENT[11], _, ENTITY[1]) ∧ as(EVENT[11]) = GROUP[3])
+
+# ::id 23_nonfiction_FACTBOOK-2010;LEGAL;AT5-4;NE
+# ::snt There is no single history of customary law such as that found in Roman civil law , English common law , Islamic law , or the Napoleonic Civil Code .
+∃ ATTRIB[14] ATTRIB[12] ATTRIB[10] EVENT[15] ENTITY[9] ENTITY[11] ENTITY[13] GROUP[8] ENTITY[6] (
+ roman(ATTRIB[10]) ∧
+  is_civil_law_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+   english(ATTRIB[12]) ∧
+    is_common_law_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+     islamic(ATTRIB[14]) ∧
+      is_law_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+       CONJ_or(is_element_of(ENTITY[9], GROUP[8]), is_element_of(ENTITY[11], GROUP[8]), is_element_of(ENTITY[13], GROUP[8]),
+        is_element_of(ENTITY[Napoleonic_Civil_Code], GROUP[8])) ∧
+        found(EVENT[15], ENTITY[6]) ∧ in(EVENT[15]) = GROUP[8] ∧
+         ¬ ∃ ATTRIB[5] ATTRIB[4] ATTRIB[2] EVENT[16] ENTITY[3] ENTITY[1] (
+               single(ATTRIB[2]) ∧
+                customary(ATTRIB[4]) ∧
+                 is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+                  is_such_as(ATTRIB[5], ENTITY[6]) ∧
+                   is_history_ATTRIBUTE(ENTITY[1], ATTRIB[5]) ∧ is_history_of(ENTITY[1], ENTITY[3]) ∧
+                    is_history_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[16], ENTITY[1])))
+
+# ::id 24_nonfiction_FACTBOOK-2010;LEGAL;AT5-5;NE
+# ::snt The earliest systems of law in human society were customary , and usually developed in small agrarian and hunter-gatherer communities .
+∃ ATTRIB[6] ATTRIB[5] ATTRIB[2] EVENT[7] EVENT[14] GROUP[8] ENTITY[4] ENTITY[3] GROUP[1] (
+ earliest(ATTRIB[2]) ∧
+  law(ENTITY[3]) ∧
+   is_systems_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ is_systems_of(GROUP[1], ENTITY[3]) ∧
+    human(ATTRIB[5]) ∧
+     is_society_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      customary(ATTRIB[6]) ∧
+       ∃ ATTRIB[11] ATTRIB[10] GROUP[9] (
+        small(ATTRIB[10]) ∧
+         agrarian(ATTRIB[11]) ∧
+          is_communities_ATTRIBUTE(GROUP[9], ATTRIB[11]) ∧ is_communities_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[8])) ∧
+        ∃ ATTRIB[13] GROUP[12] (hunter-gatherer(ATTRIB[13]) ∧ is_communities_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[8])) ∧
+        past(EVENT[7]) ∧
+         ADV_usually(EVENT[14]) ∧
+          past(EVENT[14]) ∧
+           CONJ_and(copula(EVENT[7], GROUP[1], ATTRIB[6]) ∧ in(EVENT[7]) = ENTITY[4],
+            developed(EVENT[14], GROUP[1]) ∧ in(EVENT[14]) = GROUP[8] ∧ in(EVENT[14]) = ENTITY[4]))
+
+# ::id 25_nonfiction_FACTBOOK-2010;LEGAL;AT5-6;NE
+# ::snt As the term implies , customary law is based upon the customs of a community .
+∃ ATTRIB[5] SITUATION[1] ENTITY[4] EVENT[3] EVENT[8] ENTITY[2] ENTITY[7] GROUP[6] (
+ term(ENTITY[2]) ∧
+  community(ENTITY[7]) ∧
+   is_customs_of(GROUP[6], ENTITY[7]) ∧
+    is_FACT_THAT(SITUATION[1], implies(EVENT[3], ENTITY[2])) ∧
+     customary(ATTRIB[5]) ∧
+      is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+       based(EVENT[8], _, ENTITY[4]) ∧ upon(EVENT[8]) = GROUP[6] ∧ As(EVENT[8]) = SITUATION[1])
+
+# ::id 26_nonfiction_FACTBOOK-2010;LEGAL;AT5-7;NE
+# ::snt Common attributes of customary legal systems are that they are seldom written down , they embody an organized set of rules regulating social relations , and they are agreed upon by members of the community .
+∃ REF3[18] ATTRIB[15] ATTRIB[11] REF2[9] REF1[6] ATTRIB[4] ATTRIB[2] EVENT[7] EVENT[16] EVENT[17] EVENT[21] EVENT[5] GROUP[3] GROUP[14] GROUP[12] ENTITY[10] GROUP[19] GROUP[1] ENTITY[20] (
+ community(ENTITY[20]) ∧
+  common(ATTRIB[2]) ∧
+   customary(ATTRIB[4]) ∧
+    is_legal_systems_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     is_attributes_of(GROUP[1], GROUP[3]) ∧ is_attributes_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+      REF1[6] = they ∧
+       REF2[9] = they ∧
+        organized(ATTRIB[11]) ∧
+         social(ATTRIB[15]) ∧
+          is_relations_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+           regulating(EVENT[16], GROUP[12], GROUP[14]) ∧ rules(GROUP[12]) ∧
+            is_set_of(ENTITY[10], GROUP[12]) ∧ is_set_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+             REF3[18] = they ∧
+              is_members_of(GROUP[19], ENTITY[20]) ∧
+               TMP_seldom(EVENT[7]) ∧
+                copula(EVENT[5], GROUP[1],
+                 CONJ_and(written_down(EVENT[7], _, REF1[6]), embody(EVENT[17], REF2[9], ENTITY[10]),
+                  agreed_upon(EVENT[21], GROUP[19], REF3[18]))))
+
+# ::id 27_nonfiction_FACTBOOK-2010;LEGAL;AT5-8;NE
+# ::snt Although such law systems include sanctions for law infractions , resolution tends to be reconciliatory rather than punitive .
+∃ ATTRIB[10] ATTRIB[9] ATTRIB[3] SITUATION[1] EVENT[6] EVENT[11] EVENT[8] GROUP[5] GROUP[4] GROUP[2] ENTITY[7] (
+ such(ATTRIB[3]) ∧
+  is_law_systems_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   law_infractions(GROUP[5]) ∧
+    is_sanctions_for(GROUP[4], GROUP[5]) ∧
+     is_FACT_THAT(SITUATION[1], include(EVENT[6], GROUP[2], GROUP[4])) ∧
+      resolution(ENTITY[7]) ∧
+       punitive(ATTRIB[10]) ∧
+        is_ADV_rather_than(ATTRIB[9], ATTRIB[10]) ∧ reconciliatory(ATTRIB[9]) ∧
+         tends(EVENT[8], ENTITY[7], copula(EVENT[11], ENTITY[7], ATTRIB[9])) ∧ Although(EVENT[8]) = SITUATION[1])
+
+# ::id 28_nonfiction_FACTBOOK-2010;LEGAL;AT5-9;NE
+# ::snt A number of African states practiced customary law many centuries prior to colonial influences .
+∃ ATTRIB[5] ATTRIB[3] GROUP[2] ENTITY[4] ENTITY[1] (
+ african(ATTRIB[3]) ∧
+  is_states_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_number_of(ENTITY[1], GROUP[2]) ∧
+    customary(ATTRIB[5]) ∧
+     is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      MANY GROUP[7] GROUP[6] ((colonial_influences(GROUP[7]) ∧ is_centuries_prior_to(GROUP[6], GROUP[7])),
+       ∃ EVENT[8] (past(EVENT[8]) ∧ practiced(EVENT[8], ENTITY[1], ENTITY[4]) ∧ TMP(EVENT[8]) = GROUP[6])))
+
+# ::id 29_nonfiction_FACTBOOK-2010;LEGAL;AT5-10;NE
+# ::snt Following colonization , such laws were written down and incorporated to varying extents into the legal systems imposed by their colonial powers .
+∃ ATTRIB[7] ATTRIB[2] ATTRIB[13] REF1[12] ATTRIB[9] EVENT[4] EVENT[5] EVENT[15] ENTITY[3] GROUP[6] GROUP[1] EVENT[14] GROUP[11] GROUP[8] (
+ legal(ATTRIB[9]) ∧
+  REF1[12] = their ∧
+   colonial(ATTRIB[13]) ∧
+    is_powers_ATTRIBUTE(GROUP[11], ATTRIB[13]) ∧ is_powers_POS(GROUP[11], REF1[12]) ∧
+     imposed(EVENT[14], GROUP[11], GROUP[8]) ∧ is_systems_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+      such(ATTRIB[2]) ∧
+       is_laws_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+        colonization(ENTITY[3]) ∧
+         varying(ATTRIB[7]) ∧
+          is_extents_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+           past(EVENT[5]) ∧
+            past(EVENT[15]) ∧
+             CONJ_and(following(EVENT[4], GROUP[1], ENTITY[3]),
+              CONJ_and(written_down(EVENT[5], _, GROUP[1]),
+               were_incorporated(EVENT[15], GROUP[1]) ∧ into(EVENT[15]) = GROUP[8] ∧
+                to(EVENT[15]) = GROUP[6])))
+
+# ::id 30_nonfiction_FACTBOOK-2010;LEGAL;AT6-1;NE
+# ::snt European Union Law -
+∃ EVENT[2] ENTITY[1] (European_Union_Law(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 31_nonfiction_FACTBOOK-2010;LEGAL;AT6-2;NE
+# ::snt A sub-discipline of international law known as supranational law in which the rights of sovereign nations are limited in relation to one another .
+∃ ATTRIB[12] ATTRIB[6] ATTRIB[3] ATTRIB[11] EVENT[7] EVENT[15] EVENT[16] ENTITY[5] ENTITY[14] ENTITY[13] ENTITY[2] ENTITY[1] GROUP[10] GROUP[9] (
+ sovereign(ATTRIB[11]) ∧
+  is_nations_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+   is_rights_of(GROUP[9], GROUP[10]) ∧
+    international(ATTRIB[3]) ∧
+     is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+      supranational(ATTRIB[6]) ∧
+       is_law_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+        CD_one_another(ENTITY[14]) ∧
+         is_relation_to(ENTITY[13], ENTITY[14]) ∧
+          is_limited_in(ATTRIB[12], ENTITY[13]) ∧
+           known(EVENT[7], _, ENTITY[1]) ∧ as(EVENT[7]) = ENTITY[5] ∧
+            copula(EVENT[15], GROUP[9], ATTRIB[12]) ∧ in(EVENT[15]) = ENTITY[1] ∧
+             is_sub-discipline_of(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[16]) ∧ LINK(EVENT[16]) = ENTITY[1])
+
+# ::id 32_nonfiction_FACTBOOK-2010;LEGAL;AT6-3;NE
+# ::snt Also referred to as the Law of the European Union or Community Law , it is the unique and complex legal system that operates in tandem with the laws of the 27 member states of the European Union -LRB- EU -RRB- .
+∃ REF1[1] ATTRIB[8] ATTRIB[7] EVENT[4] EVENT[14] GROUP[2] EVENT[13] EVENT[13] ENTITY[3] GROUP[12] GROUP[11] ENTITY[10] GROUP[12] GROUP[11] ENTITY[10] ENTITY[6] (
+ is_Law_of(ENTITY[3], ENTITY[European_Union]) ∧
+  unique(ATTRIB[7]) ∧
+   is_-ENTITY-_namely(ENTITY[European_Union], ENTITY[EU]) ∧
+    (CD_27(GROUP[12]), is_member_states_of(GROUP[12], ENTITY[European_Union])) ∧
+     is_laws_of(GROUP[11], GROUP[12]) ∧
+      is_tandem_with(ENTITY[10], GROUP[11]) ∧
+       complex(ATTRIB[8]) ∧
+        is_-ENTITY-_namely(ENTITY[European_Union], ENTITY[EU]) ∧
+         (CD_27(GROUP[12]), is_member_states_of(GROUP[12], ENTITY[European_Union])) ∧
+          is_laws_of(GROUP[11], GROUP[12]) ∧
+           is_tandem_with(ENTITY[10], GROUP[11]) ∧
+            CONJ_and(operates(EVENT[13], ENTITY[6]) ∧ in(EVENT[13]) = ENTITY[10] ∧
+                  is_legal_system_ATTRIBUTE(ENTITY[6], ATTRIB[7]),
+             operates(EVENT[13], ENTITY[6]) ∧ in(EVENT[13]) = ENTITY[10] ∧
+              is_legal_system_ATTRIBUTE(ENTITY[6], ATTRIB[8])) ∧
+             REF1[1] = it ∧
+              CONJ_or(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[Community_Law], GROUP[2])) ∧
+               ADV_also(EVENT[4]) ∧
+                CONJ_and(referred_to(EVENT[4], REF1[1]) ∧ as(EVENT[4]) = GROUP[2],
+                 copula(EVENT[14], REF1[1], ENTITY[6])))
+
+# ::id 33_nonfiction_FACTBOOK-2010;LEGAL;AT6-4;NE
+# ::snt Similar to federal states , the EU legal system ensures compliance from the member states because of the Union 's decentralized political nature .
+∃ ATTRIB[5] ATTRIB[3] ATTRIB[10] ATTRIB[2] EVENT[11] EVENT[6] ENTITY[9] ENTITY[7] GROUP[4] GROUP[8] ENTITY[1] (
+ eu(ATTRIB[2]) ∧
+  is_legal_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   member_states(GROUP[8]) ∧
+    is_compliance_from(ENTITY[7], GROUP[8]) ∧
+     decentralized(ATTRIB[10]) ∧
+      is_political_nature_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧ is_political_nature_POS(ENTITY[9], ENTITY[Union]) ∧
+       federal(ATTRIB[5]) ∧
+        is_states_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+         is_similar_to(ATTRIB[3], GROUP[4]) ∧
+          CONJ_and(ensures(EVENT[11], ENTITY[1], ENTITY[7]) ∧ because_of(EVENT[11]) = ENTITY[9],
+           xxx(EVENT[6], ENTITY[1]) ∧ ATTRIBUTE(EVENT[6]) = ATTRIB[3]))
+
+# ::id 34_nonfiction_FACTBOOK-2010;LEGAL;AT6-5;NE
+# ::snt The European Court of Justice -LRB- ECJ -RRB- , established in 1952 by the Treaty of Paris , has been largely responsible for the development of EU law .
+∃ ATTRIB[8] ATTRIB[11] ATTRIB[2] EVENT[12] EVENT[7] ENTITY[6] DATE[5] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[1] (
+ european(ATTRIB[2]) ∧
+  Justice(ENTITY[3]) ∧
+   CD_1952(DATE[5]) ∧
+    is_Treaty_of(ENTITY[6], ENTITY[Paris]) ∧
+     established(EVENT[7], ENTITY[6], ENTITY[1]) ∧ in(EVENT[7]) = DATE[5] ∧
+      is_Court_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_Court_of(ENTITY[1], ENTITY[3]) ∧
+      is_-ENTITY-_namely(ENTITY[1], ENTITY[ECJ]) ∧
+       eu(ATTRIB[11]) ∧
+        is_law_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+         is_development_of(ENTITY[9], ENTITY[10]) ∧
+          is_largely_responsible_for(ATTRIB[8], ENTITY[9]) ∧ has_copula(EVENT[12], ENTITY[1]) ∧ ATTRIBUTE(EVENT[12]) = ATTRIB[8])
+
+# ::id 35_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt Fundamental principles of European Union law include :
+∃ ATTRIB[2] EVENT[4] ENTITY[3] GROUP[1] (
+ fundamental(ATTRIB[2]) ∧
+  European_Union_law(ENTITY[3]) ∧ is_principles_of(GROUP[1], ENTITY[3]) ∧ is_principles_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ include(EVENT[4], GROUP[1]))
+
+# ::id 36_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt subsidiarity - the notion that issues be handled by the smallest , lowest , or least centralized competent authority ;
+∃ EVENT[2] ENTITY[1] (subsidiarity(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 37_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt proportionality - the EU may only act to the extent needed to achieve its objectives ;
+∃ REF1[6] ENTITY[1] EVENT[10] EVENT[7] EVENT[4] GROUP[5] ENTITY[2] (
+ REF1[6] = its ∧
+  is_objectives_POS(GROUP[5], REF1[6]) ∧
+   needed(EVENT[4], ENTITY[2], achieve(EVENT[7], ENTITY[2], GROUP[5])) ∧ extent(ENTITY[2]) ∧
+    is_proportionality_THAT(ENTITY[1],
+     MD_may(∃ EVENT[8] (only(EVENT[8]) ∧ act(EVENT[8], ENTITY[EU]) ∧ to(EVENT[8]) = ENTITY[2]))) ∧
+     xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 38_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt conferral - the EU is a union of member states , and all its authorities are voluntarily granted by its members ;
+∃ EVENT[4] EVENT[11] GROUP[3] ENTITY[2] ENTITY[1] (
+ member_states(GROUP[3]) ∧
+  is_union_of(ENTITY[2], GROUP[3]) ∧
+   is_conferral_THAT(ENTITY[1],
+    CONJ_and(copula(EVENT[4], ENTITY[EU], ENTITY[2]),
+     ALL REF1[6] GROUP[5] ((REF1[6] = its ∧ is_authorities_POS(GROUP[5], REF1[6])), ∃ REF2[8] EVENT[9] GROUP[7] (
+       REF2[8] = its ∧
+        is_members_POS(GROUP[7], REF2[8]) ∧
+         ADV_voluntarily(EVENT[9]) ∧ granted(EVENT[9], GROUP[7], GROUP[5]))))) ∧
+    xxx(EVENT[11]) ∧ LINK(EVENT[11]) = ENTITY[1])
+
+# ::id 39_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt legal certainty - requires that legal rules be clear and precise ;
+∃ ATTRIB[8] ATTRIB[7] ATTRIB[6] ATTRIB[2] EVENT[9] EVENT[9] EVENT[4] EVENT[10] GROUP[5] ENTITY[1] (
+ legal(ATTRIB[2]) ∧
+  legal(ATTRIB[6]) ∧
+   is_rules_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+    clear(ATTRIB[7]) ∧
+     precise(ATTRIB[8]) ∧
+      requires(EVENT[4], ENTITY[1],
+       CONJ_and(copula(EVENT[9], GROUP[5], ATTRIB[7]), copula(EVENT[9], GROUP[5], ATTRIB[8]))) ∧
+       is_certainty_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 40_nonfiction_FACTBOOK-2010;LEGAL;AT6-6;NE
+# ::snt and precautionary principle - a moral and political principle stating that if an action or policy might cause severe or irreversible harm to the public or to the environment , in the absence of a scientific consensus that harm would not ensue , the burden of proof falls on those who would advocate taking the action .
+∃ ATTRIB[3] ATTRIB[2] ATTRIB[29] ATTRIB[17] ATTRIB[17] EVENT[5] EVENT[5] EVENT[30] ENTITY[1] ENTITY[28] ENTITY[12] ENTITY[13] ENTITY[12] ENTITY[13] ENTITY[18] ENTITY[16] ENTITY[21] ENTITY[24] GROUP[22] ENTITY[20] ENTITY[15] ENTITY[12] ENTITY[13] ENTITY[12] ENTITY[13] ENTITY[18] ENTITY[16] ENTITY[21] ENTITY[24] GROUP[22] ENTITY[20] ENTITY[15] (
+ public(ENTITY[12]) ∧
+  environment(ENTITY[13]) ∧
+   public(ENTITY[12]) ∧
+    environment(ENTITY[13]) ∧
+     scientific(ATTRIB[17]) ∧
+      harm(ENTITY[18]) ∧
+       is_consensus_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧ is_consensus_THAT(ENTITY[16], MD_would(¬ ∃ EVENT[19] ensue(EVENT[19], ENTITY[18]))) ∧
+        is_absence_of(ENTITY[15], ENTITY[16]) ∧
+         proof(ENTITY[21]) ∧
+          is_burden_of(ENTITY[20], ENTITY[21]) ∧
+           action(ENTITY[24]) ∧
+            MD_would(∃ EVENT[26] EVENT[25] CONJ_and(advocate(EVENT[26], GROUP[22]), taking(EVENT[25], GROUP[22], ENTITY[24]))) ∧
+             public(ENTITY[12]) ∧
+              environment(ENTITY[13]) ∧
+               public(ENTITY[12]) ∧
+                environment(ENTITY[13]) ∧
+                 scientific(ATTRIB[17]) ∧
+                  harm(ENTITY[18]) ∧
+                   is_consensus_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+                    is_consensus_THAT(ENTITY[16], MD_would(¬ ∃ EVENT[19] ensue(EVENT[19], ENTITY[18]))) ∧
+                    is_absence_of(ENTITY[15], ENTITY[16]) ∧
+                     proof(ENTITY[21]) ∧
+                      is_burden_of(ENTITY[20], ENTITY[21]) ∧
+                       action(ENTITY[24]) ∧
+                        MD_would(∃ EVENT[26] EVENT[25] CONJ_and(advocate(EVENT[26], GROUP[22]),
+                              taking(EVENT[25], GROUP[22], ENTITY[24]))) ∧
+                         precautionary(ATTRIB[29]) ∧
+                          is_principle_ATTRIBUTE(ENTITY[28], ATTRIB[29]) ∧
+                           moral(ATTRIB[2]) ∧
+                            political(ATTRIB[3]) ∧
+                             CONJ_and(stating(EVENT[5], ENTITY[1],
+                                   ∀ GROUP[6] CND_if(
+                                       CONJ_or(∃ ENTITY[7] (
+                                             action(ENTITY[7]) ∧
+                                              is_element_of(ENTITY[7], GROUP[6])),
+                                        ∃ ENTITY[8] (
+                                         policy(ENTITY[8]) ∧
+                                          is_element_of(ENTITY[8], GROUP[6]))) ∧
+                                        MD_might(∃ ATTRIB[11] ATTRIB[10] EVENT[14] ENTITY[9] (
+                                              severe(ATTRIB[10]) ∧
+                                               irreversible(ATTRIB[11]) ∧
+                                                CONJ_or(CONJ_or(is_harm_to(ENTITY[9], ENTITY[12]) ∧
+                                                           is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[10]),
+                                                      is_harm_to(ENTITY[9], ENTITY[13]) ∧
+                                                       is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[10])),
+                                                 CONJ_or(is_harm_to(ENTITY[9], ENTITY[12]) ∧
+                                                       is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[11]),
+                                                  is_harm_to(ENTITY[9], ENTITY[13]) ∧
+                                                   is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[11]))) ∧
+                                                 cause(EVENT[14], GROUP[6], ENTITY[9]))),
+                                       ∃ EVENT[27] (
+                                        falls(EVENT[27], ENTITY[20]) ∧
+                                         on(EVENT[27]) = GROUP[22] ∧
+                                          in(EVENT[27]) = ENTITY[15]))) ∧
+                                   is_principle_ATTRIBUTE(ENTITY[1], ATTRIB[2]),
+                              stating(EVENT[5], ENTITY[1],
+                               ∀ GROUP[6] CND_if(
+                                   CONJ_or(∃ ENTITY[7] (action(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+                                    ∃ ENTITY[8] (policy(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+                                    MD_might(∃ ATTRIB[11] ATTRIB[10] EVENT[14] ENTITY[9] (
+                                          severe(ATTRIB[10]) ∧
+                                           irreversible(ATTRIB[11]) ∧
+                                            CONJ_or(CONJ_or(is_harm_to(ENTITY[9], ENTITY[12]) ∧
+                                                       is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[10]),
+                                                  is_harm_to(ENTITY[9], ENTITY[13]) ∧
+                                                   is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[10])),
+                                             CONJ_or(is_harm_to(ENTITY[9], ENTITY[12]) ∧
+                                                   is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[11]),
+                                              is_harm_to(ENTITY[9], ENTITY[13]) ∧
+                                               is_harm_ATTRIBUTE(ENTITY[9], ATTRIB[11]))) ∧
+                                             cause(EVENT[14], GROUP[6], ENTITY[9]))),
+                                   ∃ EVENT[27] (
+                                    falls(EVENT[27], ENTITY[20]) ∧
+                                     on(EVENT[27]) = GROUP[22] ∧
+                                      in(EVENT[27]) = ENTITY[15]))) ∧
+                               is_principle_ATTRIBUTE(ENTITY[1], ATTRIB[3])) ∧
+                              is_-ENTITY-_namely(ENTITY[28], ENTITY[1]) ∧
+                               xxx(EVENT[30]) ∧ LINK(EVENT[30]) = ENTITY[28])
+
+# ::id 41_nonfiction_FACTBOOK-2010;LEGAL;AT7-1;NE
+# ::snt French Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (french(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 42_nonfiction_FACTBOOK-2010;LEGAL;AT7-2;NE
+# ::snt A type of civil law that is the legal system of France .
+∃ ATTRIB[3] ATTRIB[6] EVENT[7] EVENT[8] ENTITY[2] ENTITY[1] ENTITY[5] (
+ legal(ATTRIB[6]) ∧
+  is_system_of(ENTITY[5], ENTITY[France]) ∧ is_system_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   civil(ATTRIB[3]) ∧
+    is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     copula(EVENT[7], ENTITY[1], ENTITY[5]) ∧ is_type_of(ENTITY[1], ENTITY[2]) ∧
+      xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 43_nonfiction_FACTBOOK-2010;LEGAL;AT7-3;NE
+# ::snt The French system also serves as the basis for , or is mixed with , other legal systems in approximately 50 countries , notably in North Africa , the Near East , and the French territories and dependencies .
+∃ ATTRIB[20] ATTRIB[19] ATTRIB[15] ATTRIB[14] ATTRIB[8] ATTRIB[6] ATTRIB[2] GROUP[18] GROUP[4] GROUP[3] EVENT[16] EVENT[21] ENTITY[5] GROUP[10] GROUP[11] GROUP[9] ENTITY[7] GROUP[13] ENTITY[12] ENTITY[1] (
+ french(ATTRIB[2]) ∧
+  is_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   near(ATTRIB[6]) ∧
+    is_East_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     french(ATTRIB[8]) ∧
+      territories(GROUP[10]) ∧
+       dependencies(GROUP[11]) ∧
+        is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9]) ∧
+         is_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_equals(ENTITY[7], GROUP[9]) ∧
+          other(ATTRIB[14]) ∧
+           legal(ATTRIB[15]) ∧
+            is_systems_ATTRIBUTE(GROUP[13], ATTRIB[15]) ∧ is_systems_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+             is_basis_for(ENTITY[12], GROUP[13]) ∧
+              ADV_also(EVENT[16]) ∧
+               (CD_approximately_50(GROUP[3]), countries(GROUP[3])) ∧
+                is_element_of(ENTITY[North_Africa], GROUP[4]) ∧ is_element_of(ENTITY[5], GROUP[4]) ∧
+                 is_element_of(ENTITY[7], GROUP[4]) ∧
+                 other(ATTRIB[19]) ∧
+                  legal(ATTRIB[20]) ∧
+                   is_systems_ATTRIBUTE(GROUP[18], ATTRIB[20]) ∧ is_systems_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧
+                    CONJ_or(serves(EVENT[16], ENTITY[1]) ∧ as(EVENT[16]) = ENTITY[12] ∧
+                          notably_in(EVENT[16]) = GROUP[4] ∧ in(EVENT[16]) = GROUP[3],
+                     is_mixed(EVENT[21], ENTITY[1]) ∧ with(EVENT[21]) = GROUP[18] ∧
+                      notably_in(EVENT[21]) = GROUP[4] ∧ in(EVENT[21]) = GROUP[3]))
+
+# ::id 44_nonfiction_FACTBOOK-2010;LEGAL;AT7-4;NE
+# ::snt French law is primarily codified or systematic written civil law .
+∃ ATTRIB[2] EVENT[9] GROUP[3] ENTITY[1] (
+ french(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   CONJ_or(∃ ATTRIB[5] ENTITY[4] (codified(ATTRIB[5]) ∧ is_civil_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ATTRIB[8] ATTRIB[7] ENTITY[6] (
+     systematic(ATTRIB[7]) ∧
+      written(ATTRIB[8]) ∧
+       is_civil_law_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_civil_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+    ADV_primarily(EVENT[9]) ∧ copula(EVENT[9], ENTITY[1], GROUP[3]))
+
+# ::id 45_nonfiction_FACTBOOK-2010;LEGAL;AT7-5;NE
+# ::snt Prior to the French Revolution -LRB- 1789-1799 -RRB- , France had no single national legal system .
+∃ SITUATION[6] DATE[1] (
+ CD_1789-1799(DATE[1]) ∧
+  is_-ENTITY-_namely(ENTITY[French_Revolution], DATE[1]) ∧
+   is_TMP_prior_to(SITUATION[6], ENTITY[French_Revolution]) ∧
+    is_FACT_THAT(SITUATION[6],
+     ¬ ∃ ATTRIB[4] ATTRIB[3] EVENT[5] ENTITY[2] (
+           single(ATTRIB[3]) ∧
+            national(ATTRIB[4]) ∧
+             is_legal_system_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_legal_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+              past(EVENT[5]) ∧ had(EVENT[5], ENTITY[France], ENTITY[2]))))
+
+# ::id 46_nonfiction_FACTBOOK-2010;LEGAL;AT7-6;NE
+# ::snt Laws in the northern areas of present-day France were mostly local customs based on privileges and exemptions granted by kings and feudal lords , while in the southern areas Roman law predominated .
+∃ SITUATION[23] ATTRIB[20] ATTRIB[5] ATTRIB[18] ATTRIB[3] EVENT[21] EVENT[22] EVENT[15] EVENT[16] ENTITY[19] GROUP[11] GROUP[7] ENTITY[6] GROUP[4] GROUP[1] GROUP[2] GROUP[17] (
+ northern(ATTRIB[3]) ∧
+  is_areas_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_areas_of(GROUP[2], ENTITY[present-day_France]) ∧
+   southern(ATTRIB[18]) ∧
+    is_areas_ATTRIBUTE(GROUP[17], ATTRIB[18]) ∧
+     is_Laws_in(GROUP[1], GROUP[2]) ∧
+      local(ATTRIB[5]) ∧
+       is_customs_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+        roman(ATTRIB[20]) ∧
+         is_law_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+          ∃ GROUP[8] (privileges(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[7])) ∧
+           ∃ GROUP[9] (exemptions(GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[7])) ∧
+           ∃ GROUP[12] (kings(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[11])) ∧
+            ∃ ATTRIB[14] GROUP[13] (feudal(ATTRIB[14]) ∧ is_lords_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11])) ∧
+            granted(EVENT[15], GROUP[11], ENTITY[6]) ∧ is_equals(ENTITY[6], GROUP[7]) ∧
+             ADV_mostly(SITUATION[23]) ∧
+              past(EVENT[21]) ∧
+               past(EVENT[22]) ∧
+                is_FACT_THAT(SITUATION[23],
+                 CONJ_and(CRD_while(predominated(EVENT[21], ENTITY[19]) ∧ in(EVENT[21]) = GROUP[17],
+                       copula(EVENT[22], GROUP[1], GROUP[4])),
+                  based(EVENT[16], _, GROUP[4]) ∧ on(EVENT[16]) = ENTITY[6])))
+
+# ::id 47_nonfiction_FACTBOOK-2010;LEGAL;AT7-7;NE
+# ::snt The introduction of the Napoleonic Civil Code during the reign of Napoleon I in the first decade of the 19th century brought major reforms to the French legal system , many of which remain part of France 's current legal structure , though all have been extensively amended or redrafted to address a modern nation .
+∃ ATTRIB[8] ATTRIB[10] ATTRIB[6] ATTRIB[4] EVENT[31] GROUP[7] DATE[5] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[1] (
+ is_reign_of(ENTITY[2], ENTITY[Napoleon_I]) ∧
+  first(ATTRIB[4]) ∧
+   19th(ATTRIB[6]) ∧
+    is_century_ATTRIBUTE(DATE[5], ATTRIB[6]) ∧
+     is_decade_of(ENTITY[3], DATE[5]) ∧ is_decade_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      is_introduction_in(ENTITY[1], ENTITY[3]) ∧ is_introduction_during(ENTITY[1], ENTITY[2]) ∧ is_introduction_of(ENTITY[1], ENTITY[Napoleonic_Civil_Code]) ∧
+       french(ATTRIB[10]) ∧
+        is_legal_system_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+         major(ATTRIB[8]) ∧
+          MANY ENTITY[11] (is_element_of(ENTITY[11], GROUP[7]),
+           ∃ SITUATION[16] ATTRIB[15] EVENT[30] ENTITY[14] ENTITY[13] (
+            current(ATTRIB[15]) ∧
+             is_legal_structure_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧ is_legal_structure_POS(ENTITY[14], ENTITY[France]) ∧
+              is_part_of(ENTITY[13], ENTITY[14]) ∧
+               is_FACT_THAT(SITUATION[16],
+                ALL ENTITY[17] ∃ SITUATION[23] ATTRIB[26] PRP[24] ATTRIB[20] PRP[18] EVENT[21] EVENT[22] EVENT[27] EVENT[28] ENTITY[19] ENTITY[25] (
+                 modern(ATTRIB[20]) ∧
+                  is_nation_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                   is_FACT_THAT(PRP[18], address(EVENT[21], ENTITY[17], ENTITY[19])) ∧
+                    modern(ATTRIB[26]) ∧
+                     is_nation_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+                      is_FACT_THAT(PRP[24], address(EVENT[27], ENTITY[17], ENTITY[25])) ∧
+                       ADV_extensively(SITUATION[23]) ∧
+                        ADV_extensively(EVENT[28]) ∧
+                         CONJ_or(is_FACT_THAT(SITUATION[23],
+                               have_been_amended(EVENT[22], ENTITY[17]) ∧ PRP(EVENT[22]) = PRP[18]),
+                          have_redrafted_been(EVENT[28], ENTITY[17]) ∧ PRP(EVENT[28]) = PRP[24]))) ∧
+                remain(EVENT[30], ENTITY[11], ENTITY[13]) ∧ though(EVENT[30]) = SITUATION[16])) ∧
+           is_reforms_to(GROUP[7], ENTITY[9]) ∧ is_reforms_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ brought(EVENT[31], ENTITY[1], GROUP[7]))
+
+# ::id 48_nonfiction_FACTBOOK-2010;LEGAL;AT7-8;NE
+# ::snt French law distinguishes between public law and private law .
+∃ ATTRIB[2] EVENT[8] GROUP[3] ENTITY[1] (
+ french(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ATTRIB[5] ENTITY[4] (public(ATTRIB[5]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ATTRIB[7] ENTITY[6] (private(ATTRIB[7]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    distinguishes(EVENT[8], ENTITY[1]) ∧ between(EVENT[8]) = GROUP[3])
+
+# ::id 49_nonfiction_FACTBOOK-2010;LEGAL;AT7-9;NE
+# ::snt Public law relates to government , the French Constitution , public administration , and criminal law .
+∃ ATTRIB[2] EVENT[9] GROUP[3] ENTITY[1] (
+ public(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ENTITY[4] (government(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧ is_element_of(ENTITY[French_Constitution], GROUP[3]) ∧
+    ∃ ATTRIB[6] ENTITY[5] (public(ATTRIB[6]) ∧ is_administration_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ∃ ATTRIB[8] ENTITY[7] (criminal(ATTRIB[8]) ∧ is_law_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[3])) ∧
+    relates(EVENT[9], ENTITY[1]) ∧ to(EVENT[9]) = GROUP[3])
+
+# ::id 50_nonfiction_FACTBOOK-2010;LEGAL;AT7-10;NE
+# ::snt Private law covers issues between private citizens or corporations .
+∃ ATTRIB[2] EVENT[8] GROUP[4] GROUP[3] ENTITY[1] (
+ private(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   CONJ_or(∃ ATTRIB[6] GROUP[5] (private(ATTRIB[6]) ∧ is_citizens_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])),
+    ∃ GROUP[7] (corporations(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[4]))) ∧
+    is_issues_between(GROUP[3], GROUP[4]) ∧ covers(EVENT[8], ENTITY[1], GROUP[3]))
+
+# ::id 51_nonfiction_FACTBOOK-2010;LEGAL;AT7-11;NE
+# ::snt The most recent changes to the French legal system - introduced in the 1980s - were the decentralization laws , which transferred authority from centrally appointed government representatives to locally elected representatives of the people .
+∃ ATTRIB[15] ATTRIB[13] ATTRIB[7] ATTRIB[4] ATTRIB[2] EVENT[18] EVENT[8] EVENT[17] DATE[6] ENTITY[3] GROUP[16] GROUP[14] GROUP[12] ENTITY[11] GROUP[9] GROUP[1] (
+ most_recent(ATTRIB[2]) ∧
+  french(ATTRIB[4]) ∧
+   is_legal_system_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    1980s(ATTRIB[7]) ∧
+     is_ATTRIBUTE(DATE[6], ATTRIB[7]) ∧
+      introduced(EVENT[8], _, GROUP[1]) ∧ in(EVENT[8]) = DATE[6] ∧
+       is_changes_to(GROUP[1], ENTITY[3]) ∧ is_changes_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+       authority(ENTITY[11]) ∧
+        centrally_appointed(ATTRIB[13]) ∧
+         is_government_representatives_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+          locally_elected(ATTRIB[15]) ∧
+           people(GROUP[16]) ∧
+            is_representatives_of(GROUP[14], GROUP[16]) ∧ is_representatives_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+             transferred(EVENT[17], GROUP[9], ENTITY[11]) ∧ to(EVENT[17]) = GROUP[14] ∧
+              from(EVENT[17]) = GROUP[12] ∧ decentralization_laws(GROUP[9]) ∧
+              past(EVENT[17]) ∧ past(EVENT[18]) ∧ copula(EVENT[18], GROUP[1], GROUP[9]))
+
+# ::id 52_nonfiction_FACTBOOK-2010;LEGAL;AT8-1;NE
+# ::snt International Law -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[International_Law])
+
+# ::id 53_nonfiction_FACTBOOK-2010;LEGAL;AT8-2;NE
+# ::snt The law of the international community , or the body of customary rules and treaty rules accepted as legally binding by states in their relations with each other .
+∃ ATTRIB[8] ATTRIB[4] EVENT[10] GROUP[1] ENTITY[3] ENTITY[2] GROUP[7] GROUP[9] GROUP[6] ENTITY[5] (
+ international(ATTRIB[4]) ∧
+  is_community_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_law_of(ENTITY[2], ENTITY[3]) ∧
+    customary(ATTRIB[8]) ∧
+     is_rules_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      treaty_rules(GROUP[9]) ∧
+       is_subset_of_or_equal_to(GROUP[7], GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[6]) ∧
+        is_body_of(ENTITY[5], GROUP[6]) ∧
+         CONJ_or(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[5], GROUP[1])) ∧
+          xxx(EVENT[10]) ∧ LINK(EVENT[10]) = GROUP[1])
+
+# ::id 54_nonfiction_FACTBOOK-2010;LEGAL;AT8-3;NE
+# ::snt International law differs from other legal systems in that it primarily concerns sovereign political entities .
+∃ ATTRIB[8] REF1[6] SITUATION[5] ATTRIB[4] ATTRIB[2] EVENT[9] EVENT[11] GROUP[7] GROUP[3] ENTITY[1] (
+ international(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   other(ATTRIB[4]) ∧
+    is_legal_systems_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+     REF1[6] = it ∧
+      sovereign(ATTRIB[8]) ∧
+       is_political_entities_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+        is_FACT_THAT(SITUATION[5], concerns(EVENT[9], REF1[6], GROUP[7])) ∧
+         ADV_primarily(EVENT[9]) ∧
+          differs(EVENT[11], ENTITY[1]) ∧ in(EVENT[11]) = SITUATION[5] ∧ from(EVENT[11]) = GROUP[3])
+
+# ::id 55_nonfiction_FACTBOOK-2010;LEGAL;AT8-4;NE
+# ::snt There are three separate disciplines of international law :
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] ENTITY[3] GROUP[1] (
+ separate(ATTRIB[2]) ∧
+  international(ATTRIB[4]) ∧
+   is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    (CD_three(GROUP[1]), is_disciplines_of(GROUP[1], ENTITY[3]) ∧ is_disciplines_ATTRIBUTE(GROUP[1], ATTRIB[2])) ∧
+     copula(EVENT[5], GROUP[1]))
+
+# ::id 56_nonfiction_FACTBOOK-2010;LEGAL;AT8-5;NE
+# ::snt public international law , which governs the relationship between provinces and international entities and includes treaty law , law of the sea , international criminal law , and international humanitarian law ; private international law , which addresses legal jurisdiction ; and supranational law - a legal framework wherein countries are bound by regional agreements in which the laws of the member countries are held inapplicable when in conflict with supranational laws .
+∃ ATTRIB[9] EVENT[43] GROUP[1] GROUP[7] GROUP[8] GROUP[6] ENTITY[5] ENTITY[14] GROUP[34] GROUP[33] (
+ provinces(GROUP[7]) ∧
+  international(ATTRIB[9]) ∧
+   is_entities_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+    is_subset_of_or_equal_to(GROUP[7], GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6]) ∧
+     is_relationship_between(ENTITY[5], GROUP[6]) ∧
+      sea(ENTITY[14]) ∧
+       member_countries(GROUP[34]) ∧
+        is_laws_of(GROUP[33], GROUP[34]) ∧
+         ∃ ATTRIB[3] EVENT[10] EVENT[19] GROUP[11] ENTITY[2] (
+          public(ATTRIB[3]) ∧
+           ∃ ENTITY[12] (treaty_law(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+            ∃ ENTITY[13] (is_law_of(ENTITY[13], ENTITY[14]) ∧ is_element_of(ENTITY[13], GROUP[11])) ∧
+            ∃ ATTRIB[16] ENTITY[15] (international(ATTRIB[16]) ∧ is_criminal_law_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧ is_element_of(ENTITY[15], GROUP[11])) ∧
+            ∃ ATTRIB[18] ENTITY[17] (international(ATTRIB[18]) ∧ is_humanitarian_law_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧ is_element_of(ENTITY[17], GROUP[11])) ∧
+            CONJ_and(governs(EVENT[10], ENTITY[2], ENTITY[5]), includes(EVENT[19], ENTITY[2], GROUP[11])) ∧
+             is_international_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+          ∃ ATTRIB[24] ATTRIB[21] EVENT[25] ENTITY[23] ENTITY[20] (
+           private(ATTRIB[21]) ∧
+            legal(ATTRIB[24]) ∧
+             is_jurisdiction_ATTRIBUTE(ENTITY[23], ATTRIB[24]) ∧
+              addresses(EVENT[25], ENTITY[20], ENTITY[23]) ∧ is_international_law_ATTRIBUTE(ENTITY[20], ATTRIB[21]) ∧
+               is_element_of(ENTITY[20], GROUP[1])) ∧
+          ∃ ATTRIB[37] ATTRIB[31] SITUATION[28] ATTRIB[27] ATTRIB[42] EVENT[38] EVENT[40] GROUP[36] ENTITY[35] GROUP[30] GROUP[29] ENTITY[26] ENTITY[41] (
+           supranational(ATTRIB[42]) ∧
+            is_law_ATTRIBUTE(ENTITY[41], ATTRIB[42]) ∧
+             legal(ATTRIB[27]) ∧
+              countries(GROUP[29]) ∧
+               regional(ATTRIB[31]) ∧
+                supranational(ATTRIB[37]) ∧
+                 is_laws_ATTRIBUTE(GROUP[36], ATTRIB[37]) ∧
+                  is_conflict_with(ENTITY[35], GROUP[36]) ∧
+                   held(EVENT[38], _, GROUP[33]) ∧ when_in(EVENT[38]) = ENTITY[35] ∧
+                    in(EVENT[38]) = GROUP[30] ∧ is_agreements_ATTRIBUTE(GROUP[30], ATTRIB[31]) ∧
+                    is_FACT_THAT(SITUATION[28], bound(EVENT[40], GROUP[30], GROUP[29])) ∧
+                     is_framework_ATTRIBUTE(ENTITY[26], ATTRIB[27]) ∧ is_framework_wherein(ENTITY[26], SITUATION[28]) ∧
+                      is_-ENTITY-_namely(ENTITY[41], ENTITY[26]) ∧
+                       ADV_inapplicable(EVENT[38]) ∧ is_element_of(ENTITY[41], GROUP[1])) ∧
+          xxx(EVENT[43]) ∧ LINK(EVENT[43]) = GROUP[1])
+
+# ::id 57_nonfiction_FACTBOOK-2010;LEGAL;AT8-6;NE
+# ::snt At present the European Union is the only entity under a supranational legal system .
+∃ ATTRIB[5] ENTITY[1] ENTITY[4] ENTITY[3] (
+ supranational(ATTRIB[5]) ∧
+  is_legal_system_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   is_entity_under(ENTITY[3], ENTITY[4]) ∧
+    present(ENTITY[1]) ∧
+     ONLY ENTITY[2] (is_of(ENTITY[2], ENTITY[3]), ∃ EVENT[6] (copula(EVENT[6], ENTITY[European_Union], ENTITY[2]) ∧ At(EVENT[6]) = ENTITY[1])))
+
+# ::id 58_nonfiction_FACTBOOK-2010;LEGAL;AT8-7;NE
+# ::snt The term international law was coined by Jeremy Bentham in 1780 in his Principles of Morals and Legislation , though laws governing relations between states have been recognized from very early times -LRB- many centuries B.C. -RRB- .
+∃ ATTRIB[16] SITUATION[8] REF1[4] EVENT[13] EVENT[17] EVENT[18] GROUP[5] GROUP[12] GROUP[11] DATE[15] GROUP[9] GROUP[3] DATE[2] ENTITY[1] (
+ international_law_term(ENTITY[1]) ∧
+  CD_1780(DATE[2]) ∧
+   REF1[4] = his ∧
+    ∃ GROUP[6] (Morals(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[5])) ∧
+     ∃ ENTITY[7] (Legislation(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+     is_Principles_of(GROUP[3], GROUP[5]) ∧ is_Principles_POS(GROUP[3], REF1[4]) ∧
+      states(GROUP[12]) ∧
+       is_relations_between(GROUP[11], GROUP[12]) ∧
+        governing(EVENT[13], GROUP[9], GROUP[11]) ∧ laws(GROUP[9]) ∧
+         very_early(ATTRIB[16]) ∧
+          is_times_ATTRIBUTE(DATE[15], ATTRIB[16]) ∧
+           MANY ENTITY[14] (centuries_B.C.(ENTITY[14]), is_-DATE-_namely(DATE[15], ENTITY[14])) ∧
+            is_FACT_THAT(SITUATION[8], have_recognized(EVENT[17], _, GROUP[9]) ∧ from(EVENT[17]) = DATE[15]) ∧
+             past(EVENT[18]) ∧
+              coined(EVENT[18], ENTITY[Jeremy_Bentham], ENTITY[1]) ∧ though(EVENT[18]) = SITUATION[8] ∧
+               in(EVENT[18]) = GROUP[3] ∧ in(EVENT[18]) = DATE[2])
+
+# ::id 59_nonfiction_FACTBOOK-2010;LEGAL;AT8-8;NE
+# ::snt Modern international law developed alongside the emergence and growth of the European nation-states beginning in the early 16th century .
+∃ ATTRIB[2] ATTRIB[10] ATTRIB[8] EVENT[12] EVENT[11] ENTITY[1] ENTITY[5] ENTITY[6] GROUP[7] GROUP[4] DATE[9] ENTITY[3] (
+ emergence(ENTITY[5]) ∧
+  growth(ENTITY[6]) ∧
+   is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧
+    european(ATTRIB[8]) ∧
+     is_nation-states_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      is_element_of(ENTITY[3], GROUP[7]) ∧ is_equals(ENTITY[3], GROUP[4]) ∧
+       early(ATTRIB[10]) ∧
+        is_16th_century_ATTRIBUTE(DATE[9], ATTRIB[10]) ∧
+         modern(ATTRIB[2]) ∧
+          is_international_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+           past(EVENT[12]) ∧
+            CONJ_and(developed(EVENT[12], ENTITY[1]) ∧ alongside(EVENT[12]) = ENTITY[3],
+             beginning(EVENT[11], ENTITY[1]) ∧ in(EVENT[11]) = DATE[9]))
+
+# ::id 60_nonfiction_FACTBOOK-2010;LEGAL;AT8-9;NE
+# ::snt Other factors that influenced the development of international law included the revival of legal studies , the growth of international trade , and the practice of exchanging emissaries and establishing legations .
+∃ ATTRIB[2] ATTRIB[20] ATTRIB[18] ATTRIB[14] ATTRIB[11] ATTRIB[6] EVENT[7] EVENT[21] GROUP[8] GROUP[1] ENTITY[5] ENTITY[4] GROUP[10] ENTITY[9] ENTITY[13] ENTITY[12] GROUP[17] GROUP[19] GROUP[16] ENTITY[15] (
+ international(ATTRIB[6]) ∧
+  is_law_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+   is_development_of(ENTITY[4], ENTITY[5]) ∧
+    legal(ATTRIB[11]) ∧
+     is_studies_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+      is_revival_of(ENTITY[9], GROUP[10]) ∧
+       international(ATTRIB[14]) ∧
+        is_trade_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+         is_growth_of(ENTITY[12], ENTITY[13]) ∧
+          exchanging(ATTRIB[18]) ∧
+           is_emissaries_ATTRIBUTE(GROUP[17], ATTRIB[18]) ∧
+            establishing(ATTRIB[20]) ∧
+             is_legations_ATTRIBUTE(GROUP[19], ATTRIB[20]) ∧
+              is_subset_of_or_equal_to(GROUP[17], GROUP[16]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[16]) ∧
+               is_practice_of(ENTITY[15], GROUP[16]) ∧
+                other(ATTRIB[2]) ∧
+                 influenced(EVENT[7], GROUP[1], ENTITY[4]) ∧ is_factors_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+                  is_element_of(ENTITY[9], GROUP[8]) ∧ is_element_of(ENTITY[12], GROUP[8]) ∧
+                   is_element_of(ENTITY[15], GROUP[8]) ∧
+                   past(EVENT[7]) ∧ past(EVENT[21]) ∧ included(EVENT[21], GROUP[1], GROUP[8]))
+
+# ::id 61_nonfiction_FACTBOOK-2010;LEGAL;AT8-10;NE
+# ::snt The sources of International law are set out in Article 38-1 of the Statute of the International Court of Justice within the UN Charter .
+∃ ATTRIB[3] EVENT[8] ENTITY[4] ENTITY[2] ENTITY[7] ENTITY[6] ENTITY[5] GROUP[1] (
+ international(ATTRIB[3]) ∧
+  is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_sources_of(GROUP[1], ENTITY[2]) ∧
+    Justice(ENTITY[7]) ∧
+     is_International_Court_of(ENTITY[6], ENTITY[7]) ∧
+      is_Statute_of(ENTITY[5], ENTITY[6]) ∧
+       is_Article_38-1_within(ENTITY[4], ENTITY[UN_Charter]) ∧ is_Article_38-1_of(ENTITY[4], ENTITY[5]) ∧
+        set_out(EVENT[8], _, GROUP[1]) ∧ in(EVENT[8]) = ENTITY[4])
+
+# ::id 62_nonfiction_FACTBOOK-2010;LEGAL;AT9-1;NE
+# ::snt Islamic Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (islamic(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 63_nonfiction_FACTBOOK-2010;LEGAL;AT9-2;NE
+# ::snt The most widespread type of religious law ,
+∃ ATTRIB[4] ATTRIB[2] ENTITY[3] (
+ widespread(ATTRIB[2]) ∧
+  religious(ATTRIB[4]) ∧
+   is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    MOST ENTITY[1] (is_type_of(ENTITY[1], ENTITY[3]) ∧ is_type_ATTRIBUTE(ENTITY[1], ATTRIB[2]),
+     ∃ EVENT[5] (xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])))
+
+# ::id 64_nonfiction_FACTBOOK-2010;LEGAL;AT9-3;NE
+# ::snt it is the legal system enforced in over 30 countries , particularly in the Near East , but also in Central and South Asia , Africa , and Indonesia .
+∃ REF1[1] ATTRIB[4] EVENT[8] EVENT[8] EVENT[2] GROUP[6] GROUP[5] ENTITY[3] (
+ legal(ATTRIB[4]) ∧
+  is_system_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   REF1[1] = it ∧
+    (CD_over_30(GROUP[5]), countries(GROUP[5])) ∧
+     ∃ GROUP[7] (is_element_of(ENTITY[Central], GROUP[7]) ∧ is_element_of(ENTITY[South_Asia], GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+      is_element_of(ENTITY[Africa], GROUP[6]) ∧ is_element_of(ENTITY[Indonesia], GROUP[6]) ∧
+      copula(EVENT[2], REF1[1],
+       CONJ_but(enforced(EVENT[8], _, ENTITY[3]) ∧ particularly_in(EVENT[8]) = ENTITY[Near_East] ∧
+             in(EVENT[8]) = GROUP[5],
+        enforced(EVENT[8], _, ENTITY[3]) ∧ also_in(EVENT[8]) = GROUP[6] ∧
+         in(EVENT[8]) = GROUP[5])))
+
+# ::id 65_nonfiction_FACTBOOK-2010;LEGAL;AT9-4;NE
+# ::snt In many countries Islamic law operates in tandem with a civil law system .
+MANY GROUP[1] (countries(GROUP[1]),
+ ∃ ATTRIB[3] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] (
+  islamic(ATTRIB[3]) ∧
+   is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    civil_law_system(ENTITY[5]) ∧
+     is_tandem_with(ENTITY[4], ENTITY[5]) ∧
+      operates(EVENT[6], ENTITY[2]) ∧ in(EVENT[6]) = ENTITY[4] ∧ In(EVENT[6]) = GROUP[1]))
+
+# ::id 66_nonfiction_FACTBOOK-2010;LEGAL;AT9-5;NE
+# ::snt Islamic law is embodied in the sharia , an Arabic word meaning the right path .
+∃ ATTRIB[2] ATTRIB[9] ATTRIB[6] EVENT[12] ENTITY[1] EVENT[10] EVENT[11] ENTITY[8] ENTITY[5] ENTITY[3] (
+ arabic(ATTRIB[6]) ∧
+  right(ATTRIB[9]) ∧
+   is_path_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+    meaning(EVENT[10], ENTITY[5], ENTITY[8]) ∧ is_word_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     xxx(EVENT[11], ENTITY[3], ENTITY[5]) ∧ sharia(ENTITY[3]) ∧
+      islamic(ATTRIB[2]) ∧
+       is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_embodied(EVENT[12], ENTITY[1]) ∧ in(EVENT[12]) = ENTITY[3])
+
+# ::id 67_nonfiction_FACTBOOK-2010;LEGAL;AT9-6;NE
+# ::snt Sharia covers all aspects of public and private life and organizes them into five categories : obligatory , recommended , permitted , disliked , and forbidden .
+∃ REF1[8] EVENT[16] GROUP[9] GROUP[15] (
+ REF1[8] = them ∧
+  (CD_five(GROUP[15]), categories(GROUP[15])) ∧
+   ∃ ENTITY[10] (obligatory(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+    ∃ ENTITY[11] (recommended(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9])) ∧
+    ∃ ENTITY[12] (permitted(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9])) ∧
+    ∃ ENTITY[13] (disliked(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[9])) ∧
+    ∃ ENTITY[14] (forbidden(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[9])) ∧
+    is_-GROUP-_namely(GROUP[15], GROUP[9]) ∧
+     CONJ_and(ALL GROUP[2] GROUP[1] (
+           (∃ ATTRIB[4] ENTITY[3] (public(ATTRIB[4]) ∧ is_life_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+              ∃ ATTRIB[6] ENTITY[5] (private(ATTRIB[6]) ∧ is_life_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+            is_aspects_of(GROUP[1], GROUP[2])), ∃ EVENT[7] covers(EVENT[7], ENTITY[Sharia], GROUP[1])),
+      organizes(EVENT[16], ENTITY[Sharia], REF1[8]) ∧ into(EVENT[16]) = GROUP[15]))
+
+# ::id 68_nonfiction_FACTBOOK-2010;LEGAL;AT9-7;NE
+# ::snt The primary sources of sharia law are the Qur'an , believed by Muslims to be the word of God revealed to the Prophet Muhammad by the angel Gabriel , and the Sunnah , the teachings of the Prophet and his works .
+∃ REF1[14] ATTRIB[2] EVENT[15] GROUP[4] EVENT[9] EVENT[10] EVENT[6] ENTITY[3] ENTITY[7] GROUP[12] GROUP[13] GROUP[11] GROUP[1] (
+ primary(ATTRIB[2]) ∧
+  sharia_law(ENTITY[3]) ∧
+   is_sources_of(GROUP[1], ENTITY[3]) ∧ is_sources_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    revealed(EVENT[9], ENTITY[angel_Gabriel], ENTITY[7]) ∧ to(EVENT[9]) = ENTITY[Prophet_Muhammad] ∧ is_word_of(ENTITY[7], ENTITY[God]) ∧
+     believed(EVENT[6], GROUP[Muslims], ENTITY[Qur'an], copula(EVENT[10], ENTITY[Qur'an], ENTITY[7])) ∧
+      is_teachings_of(GROUP[12], ENTITY[Prophet]) ∧
+       REF1[14] = his ∧
+        is_works_POS(GROUP[13], REF1[14]) ∧
+         is_subset_of_or_equal_to(GROUP[12], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11]) ∧
+          is_-ENTITY-_namely(ENTITY[Sunnah], GROUP[11]) ∧
+           is_element_of(ENTITY[Qur'an], GROUP[4]) ∧ is_element_of(ENTITY[Sunnah], GROUP[4]) ∧ copula(EVENT[15], GROUP[1], GROUP[4]))
+
+# ::id 69_nonfiction_FACTBOOK-2010;LEGAL;AT9-8;NE
+# ::snt In addition to these two primary sources , traditional Sunni Muslims recognize the consensus of Muhammad 's companions and Islamic jurists on certain issues , called ijmas , and various forms of reasoning , including analogy by legal scholars , referred to as qiyas .
+∃ ATTRIB[20] ATTRIB[15] ATTRIB[11] ATTRIB[8] ATTRIB[3] EVENT[25] ENTITY[1] EVENT[13] EVENT[21] EVENT[24] GROUP[2] GROUP[6] GROUP[7] GROUP[10] GROUP[19] ENTITY[18] GROUP[23] ENTITY[16] GROUP[14] GROUP[9] GROUP[5] ENTITY[4] (
+ primary(ATTRIB[3]) ∧
+  (CD_two(GROUP[2]), is_sources_ATTRIBUTE(GROUP[2], ATTRIB[3])) ∧
+   is_companions_POS(GROUP[6], ENTITY[Muhammad]) ∧
+    islamic(ATTRIB[8]) ∧
+     is_jurists_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+      is_subset_of_or_equal_to(GROUP[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[5]) ∧
+       certain(ATTRIB[11]) ∧
+        called(EVENT[13], GROUP[10]) ∧ is_issues_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+         various(ATTRIB[15]) ∧
+          legal(ATTRIB[20]) ∧
+           is_scholars_ATTRIBUTE(GROUP[19], ATTRIB[20]) ∧
+            is_analogy_by(ENTITY[18], GROUP[19]) ∧
+             qiyas(GROUP[23]) ∧
+              including(EVENT[21], ENTITY[16], ENTITY[18]) ∧
+               referred_to(EVENT[24], ENTITY[16]) ∧ as(EVENT[24]) = GROUP[23] ∧ reasoning(ENTITY[16]) ∧
+               is_forms_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧ is_forms_of(GROUP[14], ENTITY[16]) ∧
+                is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[14], GROUP[9]) ∧
+                 is_consensus_on(ENTITY[4], GROUP[9]) ∧ is_consensus_of(ENTITY[4], GROUP[5]) ∧
+                  is_addition_to(ENTITY[1], GROUP[2]) ∧
+                   recognize(EVENT[25], GROUP[traditional_Sunni_Muslims], ENTITY[4]) ∧ In(EVENT[25]) = ENTITY[1])
+
+# ::id 70_nonfiction_FACTBOOK-2010;LEGAL;AT9-9;NE
+# ::snt Shia Muslims reject ijmas and qiyas as sources of sharia law .
+∃ EVENT[6] ENTITY[5] GROUP[4] GROUP[1] (
+ ∃ GROUP[2] (ijmas(GROUP[2]) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ GROUP[3] (qiyas(GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧
+  sharia_law(ENTITY[5]) ∧
+   is_sources_of(GROUP[4], ENTITY[5]) ∧ reject(EVENT[6], GROUP[Shia_Muslims], GROUP[1]) ∧ as(EVENT[6]) = GROUP[4])
+
+# ::id 71_nonfiction_FACTBOOK-2010;LEGAL;AT10-1;NE
+# ::snt Mixed Law - Also referred to as pluralistic law ,
+∃ ATTRIB[3] EVENT[4] EVENT[6] ENTITY[2] (
+ pluralistic(ATTRIB[3]) ∧
+  is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   referred_to(EVENT[4], ENTITY[Mixed_Law]) ∧ as(EVENT[4]) = ENTITY[2] ∧
+    ADV_also(EVENT[4]) ∧ past(EVENT[4]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[Mixed_Law])
+
+# ::id 72_nonfiction_FACTBOOK-2010;LEGAL;AT10-2;NE
+# ::snt mixed law consists of elements of some or all of the other main types of legal systems - civil , common , customary , and religious .
+∃ ATTRIB[2] ATTRIB[17] ATTRIB[10] ATTRIB[9] EVENT[18] GROUP[5] ENTITY[4] GROUP[3] ENTITY[1] ENTITY[12] ENTITY[13] ENTITY[14] ENTITY[15] GROUP[11] GROUP[16] GROUP[8] (
+ other(ATTRIB[9]) ∧
+  main(ATTRIB[10]) ∧
+   legal(ATTRIB[17]) ∧
+    is_systems_ATTRIBUTE(GROUP[16], ATTRIB[17]) ∧
+     civil(ENTITY[12]) ∧
+      common(ENTITY[13]) ∧
+       customary(ENTITY[14]) ∧
+        religious(ENTITY[15]) ∧
+         is_element_of(ENTITY[12], GROUP[11]) ∧ is_element_of(ENTITY[13], GROUP[11]) ∧ is_element_of(ENTITY[14], GROUP[11]) ∧
+          is_element_of(ENTITY[15], GROUP[11]) ∧
+          is_-GROUP-_namely(GROUP[16], GROUP[11]) ∧
+           is_types_of(GROUP[8], GROUP[16]) ∧ is_types_ATTRIBUTE(GROUP[8], ATTRIB[10]) ∧ is_types_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+            mixed(ATTRIB[2]) ∧
+             is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+              CONJ_or(SOME ENTITY[6] is_element_of(ENTITY[6], GROUP[5]), ALL ENTITY[7] is_element_of(ENTITY[7], GROUP[5])) ∧
+               is_element_of(ENTITY[4], GROUP[8]) ∧ is_equals(ENTITY[4], GROUP[5]) ∧
+                is_elements_of(GROUP[3], ENTITY[4]) ∧ consists(EVENT[18], ENTITY[1]) ∧ of(EVENT[18]) = GROUP[3])
+
+# ::id 73_nonfiction_FACTBOOK-2010;LEGAL;AT10-3;NE
+# ::snt The mixed legal systems of a number of countries came about when colonial powers overlaid their own legal systems upon colonized regions but retained elements of the colonies ' existing legal systems .
+∃ SITUATION[18] SITUATION[20] ATTRIB[16] ATTRIB[11] ATTRIB[9] REF1[8] ATTRIB[2] EVENT[12] EVENT[17] EVENT[19] GROUP[10] GROUP[7] GROUP[14] GROUP[13] GROUP[6] GROUP[4] ENTITY[3] GROUP[15] GROUP[1] (
+ mixed(ATTRIB[2]) ∧
+  countries(GROUP[4]) ∧
+   is_number_of(ENTITY[3], GROUP[4]) ∧
+    is_legal_systems_of(GROUP[1], ENTITY[3]) ∧ is_legal_systems_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     colonies(GROUP[15]) ∧
+      colonial_powers(GROUP[6]) ∧
+       REF1[8] = their ∧
+        own(ATTRIB[9]) ∧
+         is_legal_systems_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_legal_systems_POS(GROUP[7], REF1[8]) ∧
+          colonized(ATTRIB[11]) ∧
+           is_regions_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+            existing(ATTRIB[16]) ∧
+             is_legal_systems_ATTRIBUTE(GROUP[14], ATTRIB[16]) ∧ is_legal_systems_POS(GROUP[14], GROUP[15]) ∧
+              is_elements_of(GROUP[13], GROUP[14]) ∧
+               is_TMP(SITUATION[18], SITUATION[20]) ∧
+                past(EVENT[12]) ∧
+                 past(EVENT[17]) ∧
+                  is_FACT_THAT(SITUATION[18],
+                   CONJ_but(overlaid(EVENT[12], GROUP[6], GROUP[7]) ∧ upon(EVENT[12]) = GROUP[10],
+                    retained(EVENT[17], GROUP[6], GROUP[13]))) ∧
+                   past(EVENT[19]) ∧ is_FACT_THAT(SITUATION[20], came_about(EVENT[19], GROUP[1])))
+
+# ::id 74_nonfiction_FACTBOOK-2010;LEGAL;AT11-1;NE
+# ::snt Napoleonic Civil Code -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Napoleonic_Civil_Code])
+
+# ::id 75_nonfiction_FACTBOOK-2010;LEGAL;AT11-2;NE
+# ::snt A type of civil law , referred to as the Civil Code or Code Civil des Francais , forms part of the legal system of France , and underpins the legal systems of Bolivia , Egypt , Lebanon , Poland , and the US state of Louisiana .
+∃ ATTRIB[3] ATTRIB[12] ATTRIB[9] EVENT[6] EVENT[10] EVENT[15] GROUP[5] ENTITY[2] ENTITY[7] ENTITY[1] ENTITY[8] ENTITY[14] GROUP[13] GROUP[11] (
+ legal(ATTRIB[9]) ∧
+  is_system_of(ENTITY[8], ENTITY[France]) ∧ is_system_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   legal(ATTRIB[12]) ∧
+    is_US_state_of(ENTITY[14], ENTITY[Louisiana]) ∧
+     is_element_of(ENTITY[Bolivia], GROUP[13]) ∧ is_element_of(ENTITY[Egypt], GROUP[13]) ∧ is_element_of(ENTITY[Lebanon], GROUP[13]) ∧
+      is_element_of(ENTITY[Poland], GROUP[13]) ∧ is_element_of(ENTITY[14], GROUP[13]) ∧
+      is_systems_of(GROUP[11], GROUP[13]) ∧ is_systems_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+       civil(ATTRIB[3]) ∧
+        is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+         CONJ_or(is_element_of(ENTITY[Civil_Code], GROUP[5]), is_element_of(ENTITY[Code_Civil_des_Francais], GROUP[5])) ∧
+          referred_to(EVENT[6], ENTITY[1]) ∧ as(EVENT[6]) = GROUP[5] ∧ is_type_of(ENTITY[1], ENTITY[2]) ∧
+           is_part_of(ENTITY[7], ENTITY[8]) ∧
+            CONJ_and(forms(EVENT[10], ENTITY[1], ENTITY[7]), underpins(EVENT[15], ENTITY[1], GROUP[11])))
+
+# ::id 76_nonfiction_FACTBOOK-2010;LEGAL;AT11-3;NE
+# ::snt The Civil Code was established under Napoleon I , enacted in 1804 , and officially designated the Code Napoleon in 1807 .
+∃ DATE[2] DATE[4] EVENT[1] EVENT[3] EVENT[5] (
+ past(EVENT[1]) ∧
+  past(EVENT[3]) ∧
+   ADV_officially(EVENT[5]) ∧
+    past(EVENT[5]) ∧
+     CD_1804(DATE[2]) ∧
+      CD_1807(DATE[4]) ∧
+       CONJ_and(established(EVENT[1], _, ENTITY[Civil_Code]) ∧ under(EVENT[1]) = ENTITY[Napoleon_I],
+        was_enacted(EVENT[3], ENTITY[Civil_Code]) ∧ in(EVENT[3]) = DATE[2],
+        was_designated(EVENT[5], ENTITY[Civil_Code], ENTITY[Code_Napoleon]) ∧ in(EVENT[5]) = DATE[4]))
+
+# ::id 77_nonfiction_FACTBOOK-2010;LEGAL;AT11-4;NE
+# ::snt This legal system combined the Teutonic civil law tradition of the northern provinces of France with the Roman law tradition of the southern and eastern regions of the country .
+∃ ATTRIB[14] ATTRIB[12] ATTRIB[8] ATTRIB[6] ATTRIB[4] ATTRIB[2] EVENT[16] GROUP[5] GROUP[11] GROUP[13] ENTITY[15] GROUP[10] ENTITY[9] ENTITY[7] ENTITY[3] ENTITY[1] (
+ legal(ATTRIB[2]) ∧
+  is_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   teutonic(ATTRIB[4]) ∧
+    northern(ATTRIB[6]) ∧
+     is_provinces_of(GROUP[5], ENTITY[France]) ∧ is_provinces_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+      is_civil_law_of(ENTITY[3], GROUP[5]) ∧ is_civil_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       is_tradition_of(ENTITY[3], GROUP[5]) ∧ is_tradition_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       roman(ATTRIB[8]) ∧
+        southern(ATTRIB[12]) ∧
+         is_regions_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+          eastern(ATTRIB[14]) ∧
+           is_regions_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+            is_subset_of_or_equal_to(GROUP[11], GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[10]) ∧
+             country(ENTITY[15]) ∧
+              is_of(ENTITY[9], ENTITY[15]) ∧ is_equals(ENTITY[9], GROUP[10]) ∧
+               is_law_tradition_of(ENTITY[7], ENTITY[9]) ∧ is_law_tradition_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+                past(EVENT[16]) ∧ combined(EVENT[16], ENTITY[1], ENTITY[3]) ∧ with(EVENT[16]) = ENTITY[7])
+
+# ::id 78_nonfiction_FACTBOOK-2010;LEGAL;AT11-5;NE
+# ::snt The Civil Code bears similarities in its arrangement to the Roman Body of Civil Law -LRB- see Civil Law above -RRB- .
+∃ REF1[3] ATTRIB[5] EVENT[6] ENTITY[2] GROUP[1] ENTITY[4] (
+ roman(ATTRIB[5]) ∧
+  is_Body_of(ENTITY[4], ENTITY[Civil_Law]) ∧ is_Body_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   REF1[3] = its ∧
+    is_arrangement_POS(ENTITY[2], REF1[3]) ∧
+     is_similarities_to(GROUP[1], ENTITY[4]) ∧ is_similarities_in(GROUP[1], ENTITY[2]) ∧ bears(EVENT[6], ENTITY[Civil_Code], GROUP[1]))
+
+# ::id 79_nonfiction_FACTBOOK-2010;LEGAL;AT11-6;NE
+# ::snt As enacted in 1804 , the Code addressed personal status , property , and the acquisition of property .
+∃ EVENT[2] EVENT[9] DATE[1] GROUP[3] ENTITY[8] ENTITY[7] (
+ property(ENTITY[8]) ∧
+  is_acquisition_of(ENTITY[7], ENTITY[8]) ∧
+   CD_1804(DATE[1]) ∧
+    ∃ ATTRIB[5] ENTITY[4] (personal(ATTRIB[5]) ∧ is_status_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+     ∃ ENTITY[6] (property(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧ is_element_of(ENTITY[7], GROUP[3]) ∧
+     past(EVENT[9]) ∧
+      CRD_As(enacted(EVENT[2], _, ENTITY[Code]) ∧ in(EVENT[2]) = DATE[1],
+       addressed(EVENT[9], ENTITY[Code], GROUP[3])))
+
+# ::id 80_nonfiction_FACTBOOK-2010;LEGAL;AT11-7;NE
+# ::snt Codes added over the following six years included civil procedures , commercial law , criminal law and procedures , and a penal code .
+∃ ATTRIB[4] GROUP[6] GROUP[1] EVENT[5] EVENT[17] GROUP[3] (
+ following(ATTRIB[4]) ∧
+  (CD_six(GROUP[3]), is_years_ATTRIBUTE(GROUP[3], ATTRIB[4])) ∧
+   added(EVENT[5], GROUP[1]) ∧ over(EVENT[5]) = GROUP[3] ∧ Codes(GROUP[1]) ∧
+    ∃ ATTRIB[8] GROUP[7] (civil(ATTRIB[8]) ∧ is_procedures_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+     ∃ ATTRIB[10] ENTITY[9] (commercial(ATTRIB[10]) ∧ is_law_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+     ∃ GROUP[11] (
+      ∃ ATTRIB[13] ENTITY[12] (criminal(ATTRIB[13]) ∧ is_law_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+       ∃ GROUP[14] (procedures(GROUP[14]) ∧ is_subset_of_or_equal_to(GROUP[14], GROUP[11])) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[6])) ∧
+     ∃ ATTRIB[16] ENTITY[15] (penal(ATTRIB[16]) ∧ is_code_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧ is_element_of(ENTITY[15], GROUP[6])) ∧
+     included(EVENT[17], GROUP[1], GROUP[6]))
+
+# ::id 81_nonfiction_FACTBOOK-2010;LEGAL;AT12-1;NE
+# ::snt Religious Law -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Religious_Law])
+
+# ::id 82_nonfiction_FACTBOOK-2010;LEGAL;AT12-2;NE
+# ::snt A legal system which stems from the sacred texts of religious traditions and in most cases professes to cover all aspects of life as a seamless part of devotional obligations to a transcendent , imminent , or deep philosophical reality .
+∃ ATTRIB[2] ATTRIB[7] ATTRIB[5] EVENT[8] EVENT[26] ENTITY[1] GROUP[6] GROUP[4] (
+ sacred(ATTRIB[5]) ∧
+  religious(ATTRIB[7]) ∧
+   is_traditions_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+    is_texts_of(GROUP[4], GROUP[6]) ∧ is_texts_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     legal(ATTRIB[2]) ∧
+      CONJ_and(stems(EVENT[8], ENTITY[1]) ∧ from(EVENT[8]) = GROUP[4],
+       MOST GROUP[9] (cases(GROUP[9]),
+        ∃ EVENT[10] (
+         professes(EVENT[10], ENTITY[1],
+          ALL ENTITY[12] GROUP[11] ((life(ENTITY[12]) ∧ is_aspects_of(GROUP[11], ENTITY[12])),
+           ∃ ATTRIB[16] ATTRIB[14] EVENT[25] GROUP[17] GROUP[15] ENTITY[13] (
+            seamless(ATTRIB[14]) ∧
+             devotional(ATTRIB[16]) ∧
+              CONJ_or(∃ ATTRIB[19] ENTITY[18] (transcendent(ATTRIB[19]) ∧ is_reality_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧ is_element_of(ENTITY[18], GROUP[17])),
+               ∃ ATTRIB[21] ENTITY[20] (imminent(ATTRIB[21]) ∧ is_reality_ATTRIBUTE(ENTITY[20], ATTRIB[21]) ∧ is_element_of(ENTITY[20], GROUP[17])),
+               ∃ ATTRIB[24] ATTRIB[23] ENTITY[22] (
+                deep(ATTRIB[23]) ∧
+                 philosophical(ATTRIB[24]) ∧
+                  is_reality_ATTRIBUTE(ENTITY[22], ATTRIB[24]) ∧ is_reality_ATTRIBUTE(ENTITY[22], ATTRIB[23]) ∧
+                   is_element_of(ENTITY[22], GROUP[17]))) ∧
+               is_obligations_to(GROUP[15], GROUP[17]) ∧ is_obligations_ATTRIBUTE(GROUP[15], ATTRIB[16]) ∧
+                is_part_of(ENTITY[13], GROUP[15]) ∧ is_part_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+                 cover(EVENT[25], ENTITY[1], GROUP[11]) ∧ as(EVENT[25]) = ENTITY[13]))) ∧
+          in(EVENT[10]) = GROUP[9]))) ∧ is_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       xxx(EVENT[26]) ∧ LINK(EVENT[26]) = ENTITY[1])
+
+# ::id 83_nonfiction_FACTBOOK-2010;LEGAL;AT12-3;NE
+# ::snt Implied as the basis of religious law is the concept of unalterability , because the word of God can not be amended or legislated against by judges or governments .
+∃ REF1[1] ATTRIB[4] EVENT[5] EVENT[14] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[8] ENTITY[6] (
+ religious(ATTRIB[4]) ∧
+  is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   is_basis_of(ENTITY[2], ENTITY[3]) ∧
+    unalterability(ENTITY[7]) ∧
+     is_concept_of(ENTITY[6], ENTITY[7]) ∧
+      is_word_of(ENTITY[8], ENTITY[God]) ∧
+       REF1[1] = *pro* ∧
+        CONJ_and(implied(EVENT[5], _, REF1[1]) ∧ as(EVENT[5]) = ENTITY[2],
+         CRD_because(MD_can(¬ ∃ EVENT[12] EVENT[13] GROUP[9] (
+                         CONJ_or(∃ GROUP[10] (judges(GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[9])),
+                          ∃ GROUP[11] (governments(GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[11], GROUP[9]))) ∧
+                          CONJ_or(amended(EVENT[12], _, ENTITY[8]) ∧ by(EVENT[12]) = GROUP[9],
+                           legislated_against(EVENT[13], _, ENTITY[8]) ∧
+                            by(EVENT[13]) = GROUP[9]))),
+          copula(EVENT[14], REF1[1], ENTITY[6]))))
+
+# ::id 84_nonfiction_FACTBOOK-2010;LEGAL;AT12-4;NE
+# ::snt However , a detailed legal system generally requires human elaboration .
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] ENTITY[3] ENTITY[1] (
+ detailed(ATTRIB[2]) ∧
+  is_legal_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   human(ATTRIB[4]) ∧
+    is_elaboration_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     ADV_however(EVENT[5]) ∧ ADV_generally(EVENT[5]) ∧ requires(EVENT[5], ENTITY[1], ENTITY[3]))
+
+# ::id 85_nonfiction_FACTBOOK-2010;LEGAL;AT12-5;NE
+# ::snt The main types of religious law are sharia in Islam , halakha in Judaism , and canon law in some Christian groups .
+∃ ATTRIB[4] ATTRIB[2] EVENT[11] GROUP[5] ENTITY[3] GROUP[1] (
+ main(ATTRIB[2]) ∧
+  religious(ATTRIB[4]) ∧
+   is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_types_of(GROUP[1], ENTITY[3]) ∧ is_types_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+     ∃ ENTITY[6] (is_sharia_in(ENTITY[6], ENTITY[Islam]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ENTITY[7] (is_halakha_in(ENTITY[7], ENTITY[Judaism]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+      ∃ ENTITY[8] (
+       SOME ATTRIB[10] GROUP[9] ((christian(ATTRIB[10]) ∧ is_groups_ATTRIBUTE(GROUP[9], ATTRIB[10])), is_canon_law_in(ENTITY[8], GROUP[9])) ∧
+        is_element_of(ENTITY[8], GROUP[5])) ∧ copula(EVENT[11], GROUP[1], GROUP[5]))
+
+# ::id 86_nonfiction_FACTBOOK-2010;LEGAL;AT12-6;NE
+# ::snt Sharia is the most widespread religious legal system -LRB- see Islamic Law -RRB- , and is the sole system of law for countries including Iran , the Maldives , and Saudi Arabia .
+∃ ATTRIB[7] ATTRIB[4] ATTRIB[3] EVENT[5] EVENT[13] ENTITY[1] EVENT[12] ENTITY[2] GROUP[11] GROUP[9] ENTITY[8] ENTITY[6] (
+ most_widespread(ATTRIB[3]) ∧
+  religious(ATTRIB[4]) ∧
+   is_legal_system_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_legal_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    sole(ATTRIB[7]) ∧
+     law(ENTITY[8]) ∧
+      is_element_of(ENTITY[Iran], GROUP[11]) ∧ is_subset_of_or_equal_to(GROUP[Maldives], GROUP[11]) ∧ is_element_of(ENTITY[Saudi_Arabia], GROUP[11]) ∧
+       including(EVENT[12], GROUP[9], GROUP[11]) ∧ countries(GROUP[9]) ∧
+        is_system_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_system_for(ENTITY[6], GROUP[9]) ∧ is_system_of(ENTITY[6], ENTITY[8]) ∧
+         Sharia(ENTITY[1]) ∧
+          CONJ_and(copula(EVENT[5], ENTITY[1], ENTITY[2]), copula(EVENT[13], ENTITY[1], ENTITY[6])))
+
+# ::id 87_nonfiction_FACTBOOK-2010;LEGAL;AT12-7;NE
+# ::snt No country is fully governed by halakha ,
+¬ ∃ EVENT[3] ENTITY[2] ENTITY[1] (country(ENTITY[1]) ∧ halakha(ENTITY[2]) ∧ ADV_fully(EVENT[3]) ∧ governed(EVENT[3], ENTITY[2], ENTITY[1]))
+
+# ::id 88_nonfiction_FACTBOOK-2010;LEGAL;AT12-8;NE
+# ::snt but Jewish people may decide to settle disputes through Jewish courts and be bound by their rulings .
+∃ ATTRIB[2] GROUP[1] (
+ jewish(ATTRIB[2]) ∧
+  is_people_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+   MD_may(∃ REF1[9] ATTRIB[6] EVENT[7] EVENT[3] EVENT[10] GROUP[5] GROUP[4] GROUP[8] (
+         disputes(GROUP[4]) ∧
+          jewish(ATTRIB[6]) ∧
+           is_courts_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+            REF1[9] = their ∧
+             is_rulings_POS(GROUP[8], REF1[9]) ∧
+              CONJ_and(decide(EVENT[3], GROUP[1],
+                    settle(EVENT[7], GROUP[1], GROUP[4]) ∧ through(EVENT[7]) = GROUP[5]),
+               bound(EVENT[10], GROUP[8], GROUP[1])))))
+
+# ::id 89_nonfiction_FACTBOOK-2010;LEGAL;AT12-9;NE
+# ::snt Canon law is not a divine law as such because it is not found in revelation .
+∃ ENTITY[1] (
+ Canon_law(ENTITY[1]) ∧
+  ¬ ∃ REF1[7] SITUATION[6] ATTRIB[5] ATTRIB[3] EVENT[10] ENTITY[4] ENTITY[2] (
+        divine(ATTRIB[3]) ∧
+         such(ATTRIB[5]) ∧
+          is_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+           is_law_as(ENTITY[2], ENTITY[4]) ∧ is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+            REF1[7] = it ∧
+             is_FACT_THAT(SITUATION[6],
+              ¬ ∃ EVENT[9] ENTITY[8] (
+                    revelation(ENTITY[8]) ∧
+                     found(EVENT[9], _, REF1[7]) ∧ in(EVENT[9]) = ENTITY[8])) ∧
+              copula(EVENT[10], ENTITY[1], ENTITY[2]) ∧ because(EVENT[10]) = SITUATION[6]))
+
+# ::id 90_nonfiction_FACTBOOK-2010;LEGAL;AT12-10;NE
+# ::snt It is viewed instead as human law inspired by the word of God and applying the demands of that revelation to the actual situation of the church .
+∃ ATTRIB[4] SITUATION[2] REF1[1] ATTRIB[10] EVENT[6] EVENT[13] EVENT[12] ENTITY[3] ENTITY[5] ENTITY[8] ENTITY[11] ENTITY[9] GROUP[7] (
+ is_word_of(ENTITY[5], ENTITY[God]) ∧
+  revelation(ENTITY[8]) ∧
+   is_demands_of(GROUP[7], ENTITY[8]) ∧
+    actual(ATTRIB[10]) ∧
+     church(ENTITY[11]) ∧
+      is_situation_of(ENTITY[9], ENTITY[11]) ∧ is_situation_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+       REF1[1] = it ∧
+        human(ATTRIB[4]) ∧
+         is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+          is_FACT_THAT(SITUATION[2], inspired(EVENT[6], ENTITY[5], ENTITY[3])) ∧
+           CONJ_and(viewed(EVENT[13], _, REF1[1]) ∧ instead_as(EVENT[13]) = SITUATION[2],
+            applying(EVENT[12], REF1[1], GROUP[7]) ∧ to(EVENT[12]) = ENTITY[9]))
+
+# ::id 91_nonfiction_FACTBOOK-2010;LEGAL;AT12-11;NE
+# ::snt Canon law regulates the internal ordering of the Roman Catholic Church , the Eastern Orthodox Church , and the Anglican Communion .
+∃ ATTRIB[4] ATTRIB[3] EVENT[6] ENTITY[1] GROUP[5] ENTITY[2] (
+ internal(ATTRIB[3]) ∧
+  ordering(ATTRIB[4]) ∧
+   is_element_of(ENTITY[Roman_Catholic_Church], GROUP[5]) ∧ is_element_of(ENTITY[Eastern_Orthodox_Church], GROUP[5]) ∧ is_element_of(ENTITY[Anglican_Communion], GROUP[5]) ∧
+    is_element_of(ENTITY[2], GROUP[5]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     Canon_law(ENTITY[1]) ∧ regulates(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 92_nonfiction_FACTBOOK-2010;LEGAL;AT13-1;NE
+# ::snt Roman Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (roman(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 93_nonfiction_FACTBOOK-2010;LEGAL;AT13-2;NE
+# ::snt A type of civil law developed in ancient Rome and practiced from the time of the city 's founding -LRB- traditionally 753 B.C. -RRB- until the fall of the Western Empire in the 5th century A.D. .
+∃ ATTRIB[3] ATTRIB[12] EVENT[5] EVENT[13] EVENT[14] ENTITY[2] ENTITY[1] ENTITY[9] DATE[7] ENTITY[8] DATE[11] ENTITY[10] ENTITY[6] (
+ city(ENTITY[9]) ∧
+  is_founding_POS(ENTITY[8], ENTITY[9]) ∧
+   (CD_753(DATE[7]), ADV_traditionally(DATE[7]) ∧ B.C.(DATE[7])) ∧
+    is_-ENTITY-_namely(ENTITY[8], DATE[7]) ∧
+     is_time_of(ENTITY[6], ENTITY[8]) ∧
+      5th(ATTRIB[12]) ∧
+       is_century_A.D.ATTRIBUTE(DATE[11], ATTRIB[12]) ∧
+        is_fall_in(ENTITY[10], DATE[11]) ∧ is_fall_of(ENTITY[10], ENTITY[Western_Empire]) ∧
+         civil(ATTRIB[3]) ∧
+          is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+           CONJ_and(developed(EVENT[5], ENTITY[1]) ∧ in(EVENT[5]) = ENTITY[ancient_Rome],
+            practiced(EVENT[13], ENTITY[1]) ∧ until(EVENT[13]) = ENTITY[10] ∧
+             from(EVENT[13]) = ENTITY[6]) ∧ is_type_of(ENTITY[1], ENTITY[2]) ∧
+            past(EVENT[5]) ∧ past(EVENT[13]) ∧ xxx(EVENT[14]) ∧ LINK(EVENT[14]) = ENTITY[1])
+
+# ::id 94_nonfiction_FACTBOOK-2010;LEGAL;AT13-3;NE
+# ::snt Roman law remained the legal system of the Byzantine -LRB- Eastern Empire -RRB- until the fall of Constantinople in 1453 .
+∃ ATTRIB[2] ATTRIB[6] ATTRIB[4] EVENT[9] ENTITY[1] ENTITY[5] DATE[8] ENTITY[7] ENTITY[3] (
+ legal(ATTRIB[4]) ∧
+  byzantine(ATTRIB[6]) ∧
+   is_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    is_-ENTITY-_namely(ENTITY[5], ENTITY[Eastern_Empire]) ∧
+     is_system_of(ENTITY[3], ENTITY[5]) ∧ is_system_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      CD_1453(DATE[8]) ∧
+       is_fall_in(ENTITY[7], DATE[8]) ∧ is_fall_of(ENTITY[7], ENTITY[Constantinople]) ∧
+        roman(ATTRIB[2]) ∧
+         is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+          past(EVENT[9]) ∧ remained(EVENT[9], ENTITY[1], ENTITY[3]) ∧ until(EVENT[9]) = ENTITY[7])
+
+# ::id 95_nonfiction_FACTBOOK-2010;LEGAL;AT13-4;NE
+# ::snt Preserved fragments of the first legal text , known as the Law of the Twelve Tables , dating from the 5th century B.C. , contained specific provisions designed to change the prevailing customary law .
+∃ ATTRIB[13] ATTRIB[2] ATTRIB[17] ATTRIB[10] ATTRIB[4] EVENT[18] EVENT[15] EVENT[19] GROUP[12] GROUP[1] EVENT[7] EVENT[11] ENTITY[6] DATE[9] ENTITY[3] ENTITY[16] (
+ first(ATTRIB[4]) ∧
+  is_Law_of(ENTITY[6], ENTITY[Twelve_Tables]) ∧
+   5th(ATTRIB[10]) ∧
+    is_century_B.C.ATTRIBUTE(DATE[9], ATTRIB[10]) ∧
+     known(EVENT[7], _, ENTITY[3]) ∧ as(EVENT[7]) = ENTITY[6] ∧
+      dating(EVENT[11], ENTITY[3]) ∧ from(EVENT[11]) = DATE[9] ∧ is_legal_text_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+      prevailing(ATTRIB[17]) ∧
+       is_customary_law_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+        preserved(ATTRIB[2]) ∧
+         is_fragments_of(GROUP[1], ENTITY[3]) ∧ is_fragments_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+          specific(ATTRIB[13]) ∧
+           designed(EVENT[15], GROUP[12], change(EVENT[18], GROUP[12], ENTITY[16])) ∧ is_provisions_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+            past(EVENT[19]) ∧ contained(EVENT[19], GROUP[1], GROUP[12]))
+
+# ::id 96_nonfiction_FACTBOOK-2010;LEGAL;AT13-5;NE
+# ::snt Early Roman law was drawn from custom and statutes ;
+∃ ATTRIB[2] EVENT[6] GROUP[3] ENTITY[1] (
+ early(ATTRIB[2]) ∧
+  is_Roman_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ENTITY[4] (custom(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ GROUP[5] (statutes(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+    past(EVENT[6]) ∧ drawn(EVENT[6], _, ENTITY[1]) ∧ from(EVENT[6]) = GROUP[3])
+
+# ::id 97_nonfiction_FACTBOOK-2010;LEGAL;AT13-6;NE
+# ::snt later , during the time of the empire , emperors asserted their authority as the ultimate source of law .
+∃ REF1[5] ATTRIB[7] EVENT[9] ENTITY[4] GROUP[3] ENTITY[2] ENTITY[8] ENTITY[6] ENTITY[1] (
+ empire(ENTITY[2]) ∧
+  is_time_of(ENTITY[1], ENTITY[2]) ∧
+   ultimate(ATTRIB[7]) ∧
+    law(ENTITY[8]) ∧
+     is_source_of(ENTITY[6], ENTITY[8]) ∧ is_source_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+      emperors(GROUP[3]) ∧
+       REF1[5] = their ∧
+        is_authority_POS(ENTITY[4], REF1[5]) ∧
+         TMP_later(EVENT[9]) ∧
+          past(EVENT[9]) ∧
+           asserted(EVENT[9], GROUP[3], ENTITY[4]) ∧ as(EVENT[9]) = ENTITY[6] ∧
+            during(EVENT[9]) = ENTITY[1])
+
+# ::id 98_nonfiction_FACTBOOK-2010;LEGAL;AT13-7;NE
+# ::snt The basis for Roman laws was the idea that the exact form - not the intention - of words or of actions produced legal consequences .
+∃ ATTRIB[13] ATTRIB[8] ATTRIB[3] EVENT[15] EVENT[14] GROUP[2] ENTITY[7] GROUP[10] GROUP[11] GROUP[6] GROUP[12] ENTITY[5] ENTITY[4] ENTITY[1] (
+ roman(ATTRIB[3]) ∧
+  is_laws_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_basis_for(ENTITY[1], GROUP[2]) ∧
+    exact(ATTRIB[8]) ∧
+     is_form_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      is_element_of(ENTITY[7], GROUP[6]) ∧ NOT ENTITY[9] (intention(ENTITY[9]), is_element_of(ENTITY[9], GROUP[6])) ∧
+       words(GROUP[10]) ∧
+        actions(GROUP[11]) ∧
+         CONJ_or(is_element_of(ENTITY[5], GROUP[10]) ∧ is_equals(ENTITY[5], GROUP[6]),
+          is_element_of(ENTITY[5], GROUP[11]) ∧ is_equals(ENTITY[5], GROUP[6])) ∧
+          legal(ATTRIB[13]) ∧
+           is_consequences_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+            is_idea_THAT(ENTITY[4], produced(EVENT[14], ENTITY[5], GROUP[12])) ∧
+             past(EVENT[14]) ∧ past(EVENT[15]) ∧ copula(EVENT[15], ENTITY[1], ENTITY[4]))
+
+# ::id 99_nonfiction_FACTBOOK-2010;LEGAL;AT13-8;NE
+# ::snt It was only in the late 6th century A.D. that a comprehensive Roman code of laws was published -LRB- see Civil Law above -RRB- .
+∃ ATTRIB[4] ATTRIB[10] ATTRIB[9] EVENT[6] GROUP[5] ENTITY[3] ENTITY[1] DATE[8] (
+ late(ATTRIB[9]) ∧
+  6th(ATTRIB[10]) ∧
+   is_century_A.D.ATTRIBUTE(DATE[8], ATTRIB[10]) ∧ is_century_A.D.ATTRIBUTE(DATE[8], ATTRIB[9]) ∧
+    comprehensive(ATTRIB[4]) ∧
+     laws(GROUP[5]) ∧
+      is_Roman_code_of(ENTITY[3], GROUP[5]) ∧ is_Roman_code_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+       published(EVENT[6], _, ENTITY[3]) ∧ in(EVENT[6]) = ENTITY[1] ∧
+        past(EVENT[6]) ∧
+         ONLY ENTITY[7] (is_of(ENTITY[7], DATE[8]),
+          ∃ EVENT[11] (past(EVENT[11]) ∧ copula(EVENT[11], ENTITY[1]) ∧ in(EVENT[11]) = ENTITY[7])))
+
+# ::id 100_nonfiction_FACTBOOK-2010;LEGAL;AT13-9;NE
+# ::snt Roman law served as the basis of law systems developed in a number of continental European countries .
+∃ ATTRIB[2] ATTRIB[8] EVENT[10] ENTITY[1] EVENT[9] GROUP[7] ENTITY[6] GROUP[4] ENTITY[3] (
+ continental(ATTRIB[8]) ∧
+  is_European_countries_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+   is_number_of(ENTITY[6], GROUP[7]) ∧
+    developed(EVENT[9], _, GROUP[4]) ∧ in(EVENT[9]) = ENTITY[6] ∧ law_systems(GROUP[4]) ∧
+     is_basis_of(ENTITY[3], GROUP[4]) ∧
+      roman(ATTRIB[2]) ∧
+       is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+        past(EVENT[10]) ∧ served(EVENT[10], ENTITY[1]) ∧ as(EVENT[10]) = ENTITY[3])
+
+# ::id 101_nonfiction_FACTBOOK-2010;LEGAL;AT14-1;NE
+# ::snt Roman-Dutch Law -
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (roman-dutch(ATTRIB[2]) ∧ is_Law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 102_nonfiction_FACTBOOK-2010;LEGAL;AT14-2;NE
+# ::snt A type of civil law based on Roman law as applied in the Netherlands .
+∃ SITUATION[7] ATTRIB[6] ATTRIB[3] EVENT[8] EVENT[9] EVENT[10] ENTITY[5] ENTITY[2] ENTITY[1] (
+ civil(ATTRIB[3]) ∧
+  is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   roman(ATTRIB[6]) ∧
+    is_law_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     is_FACT_THAT(SITUATION[7], applied(EVENT[8], _, ENTITY[1]) ∧ in(EVENT[8]) = ENTITY[Netherlands]) ∧
+      based(EVENT[9], ENTITY[1]) ∧ as(EVENT[9]) = SITUATION[7] ∧ on(EVENT[9]) = ENTITY[5] ∧
+       is_type_of(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[10]) ∧ LINK(EVENT[10]) = ENTITY[1])
+
+# ::id 103_nonfiction_FACTBOOK-2010;LEGAL;AT14-3;NE
+# ::snt Roman-Dutch law serves as the basis for legal systems in seven African countries , as well as Guyana , Indonesia , and Sri Lanka .
+∃ ATTRIB[2] ATTRIB[5] EVENT[8] GROUP[7] GROUP[6] ENTITY[1] GROUP[4] ENTITY[3] (
+ legal(ATTRIB[5]) ∧
+  is_systems_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+   is_basis_for(ENTITY[3], GROUP[4]) ∧
+    roman-dutch(ATTRIB[2]) ∧
+     is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      (CD_seven(GROUP[6]), African_countries(GROUP[6])) ∧
+       is_element_of(ENTITY[Guyana], GROUP[7]) ∧ is_element_of(ENTITY[Indonesia], GROUP[7]) ∧ is_element_of(ENTITY[Sri_Lanka], GROUP[7]) ∧
+        is_ADV_as_well_as(EVENT[8], GROUP[7]) ∧
+         serves(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = GROUP[6] ∧ as(EVENT[8]) = ENTITY[3])
+
+# ::id 104_nonfiction_FACTBOOK-2010;LEGAL;AT14-4;NE
+# ::snt This law system , which originated in the province of Holland and expanded throughout the Netherlands -LRB- to be replaced by the French Civil Code in 1809 -RRB- , was instituted in a number of sub-Saharan African countries during the Dutch colonial period .
+∃ ATTRIB[11] ATTRIB[13] ADT[5] EVENT[14] GROUP[10] ENTITY[9] EVENT[4] EVENT[7] EVENT[8] ENTITY[3] DATE[6] ENTITY[12] ENTITY[1] (
+ is_province_of(ENTITY[3], ENTITY[Holland]) ∧
+  CD_1809(DATE[6]) ∧
+   is_FACT_THAT(ADT[5], replaced(EVENT[7], ENTITY[French_Civil_Code], ENTITY[1]) ∧ in(EVENT[7]) = DATE[6]) ∧
+    CONJ_and(originated(EVENT[4], ENTITY[1]) ∧ in(EVENT[4]) = ENTITY[3],
+     expanded(EVENT[8], ENTITY[1]) ∧ ADT(EVENT[8]) = ADT[5] ∧ throughout(EVENT[8]) = ENTITY[Netherlands]) ∧
+     law_system(ENTITY[1]) ∧
+     dutch(ATTRIB[13]) ∧
+      is_colonial_period_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+       sub-saharan(ATTRIB[11]) ∧
+        is_African_countries_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+         is_number_of(ENTITY[9], GROUP[10]) ∧
+          past(EVENT[14]) ∧
+           instituted(EVENT[14], _, ENTITY[1]) ∧ during(EVENT[14]) = ENTITY[12] ∧
+            in(EVENT[14]) = ENTITY[9])
+
+# ::id 105_nonfiction_FACTBOOK-2010;LEGAL;AT14-5;NE
+# ::snt The Dutch jurist/philosopher Hugo Grotius was the first to attempt to reduce Roman-Dutch civil law into a system in his Jurisprudence of Holland -LRB- written 1619-20 , commentary published 1621 -RRB- .
+∃ ATTRIB[2] ATTRIB[12] REF1[18] ATTRIB[8] ATTRIB[4] EVENT[20] ENTITY[1] EVENT[15] EVENT[19] EVENT[6] ENTITY[17] ENTITY[11] ENTITY[13] GROUP[10] ENTITY[9] ENTITY[16] ENTITY[7] ENTITY[3] (
+ first(ATTRIB[4]) ∧
+  roman-dutch(ATTRIB[8]) ∧
+   is_civil_law_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+    REF1[18] = his ∧
+     is_Jurisprudence_of(ENTITY[17], ENTITY[Holland]) ∧ is_Jurisprudence_POS(ENTITY[17], REF1[18]) ∧
+      is_system_in(ENTITY[16], ENTITY[17]) ∧
+       written(ATTRIB[12]) ∧
+        is_TMP(ENTITY[11], TIME[1619-20]) ∧ is_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+         published(EVENT[15], ENTITY[13]) ∧ is_contained_in(TMP(EVENT[15]), TIME[1621]) ∧ commentary(ENTITY[13]) ∧
+          is_element_of(ENTITY[11], GROUP[10]) ∧ is_element_of(ENTITY[13], GROUP[10]) ∧
+           is_equals(ENTITY[9], GROUP[10]) ∧
+            is_-ENTITY-_namely(ENTITY[16], ENTITY[9]) ∧
+             attempt(EVENT[6], ENTITY[3],
+              reduce(EVENT[19], ENTITY[3], ENTITY[7]) ∧ into(EVENT[19]) = ENTITY[16]) ∧
+              is_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+              dutch(ATTRIB[2]) ∧
+               is_jurist__slash__philosopher_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+                is_-ENTITY-_namely(ENTITY[Hugo_Grotius], ENTITY[1]) ∧ past(EVENT[20]) ∧ copula(EVENT[20], ENTITY[Hugo_Grotius], ENTITY[3]))
+
+# ::id 106_nonfiction_FACTBOOK-2010;LEGAL;AT14-6;NE
+# ::snt The Dutch historian/lawyer Simon van Leeuwen coined the term Roman-Dutch law in 1652 .
+∃ ATTRIB[2] ATTRIB[4] EVENT[7] ENTITY[1] DATE[6] ENTITY[3] ENTITY[5] (
+ term(ENTITY[5]) ∧
+  roman-dutch(ATTRIB[4]) ∧
+   is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_-ENTITY-_namely(ENTITY[5], ENTITY[3]) ∧
+     dutch(ATTRIB[2]) ∧
+      is_historian__slash__lawyer_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       is_-ENTITY-_namely(ENTITY[Simon_van_Leeuwen], ENTITY[1]) ∧
+        CD_1652(DATE[6]) ∧ coined(EVENT[7], ENTITY[Simon_van_Leeuwen], ENTITY[5]) ∧ in(EVENT[7]) = DATE[6])
+
+# ::id 107_nonfiction_FACTBOOK-2010;LEGAL;AT15-1;NE
+# ::snt Spanish Law -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[Spanish_Law])
+
+# ::id 108_nonfiction_FACTBOOK-2010;LEGAL;AT15-2;NE
+# ::snt A type of civil law , often referred to as the Spanish Civil Code ,
+∃ ATTRIB[3] EVENT[5] EVENT[7] ENTITY[2] ENTITY[1] (
+ civil(ATTRIB[3]) ∧
+  is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   referred_to(EVENT[5], ENTITY[1]) ∧ as(EVENT[5]) = ENTITY[Spanish_Civil_Code] ∧ is_type_of(ENTITY[1], ENTITY[2]) ∧
+    TMP_often(EVENT[5]) ∧ past(EVENT[5]) ∧ xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 109_nonfiction_FACTBOOK-2010;LEGAL;AT15-3;NE
+# ::snt it is the present legal system of Spain and is the basis of legal systems in 12 countries mostly in Central and South America , but also in southwestern Europe , northern and western Africa , and southeastern Asia .
+∃ REF1[1] ATTRIB[7] ATTRIB[3] EVENT[4] EVENT[16] EVENT[16] GROUP[9] GROUP[12] GROUP[8] ENTITY[2] GROUP[6] ENTITY[5] (
+ present(ATTRIB[3]) ∧
+  is_legal_system_of(ENTITY[2], ENTITY[Spain]) ∧ is_legal_system_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   legal(ATTRIB[7]) ∧
+    is_systems_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+     is_basis_of(ENTITY[5], GROUP[6]) ∧
+      REF1[1] = it ∧
+       (CD_12(GROUP[8]), countries(GROUP[8])) ∧
+        ∃ ATTRIB[11] ENTITY[10] (central(ATTRIB[11]) ∧ is_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+         is_element_of(ENTITY[South_America], GROUP[9]) ∧
+         is_element_of(ENTITY[southwestern_Europe], GROUP[12]) ∧
+          ∃ GROUP[13] (
+           ∃ ATTRIB[15] ENTITY[14] (northern(ATTRIB[15]) ∧ is_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧ is_element_of(ENTITY[14], GROUP[13])) ∧
+            is_element_of(ENTITY[western_Africa], GROUP[13]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[12])) ∧ is_element_of(ENTITY[southeastern_Asia], GROUP[12]) ∧
+          CONJ_and(copula(EVENT[4], REF1[1], ENTITY[2]),
+           CONJ_but(copula(EVENT[16], REF1[1], ENTITY[5]) ∧ mostly_in(EVENT[16]) = GROUP[9] ∧
+                 in(EVENT[16]) = GROUP[8],
+            copula(EVENT[16], REF1[1], ENTITY[5]) ∧ also_in(EVENT[16]) = GROUP[12] ∧
+             in(EVENT[16]) = GROUP[8])))
+
+# ::id 110_nonfiction_FACTBOOK-2010;LEGAL;AT15-4;NE
+# ::snt The Spanish Civil Code reflects a complex mixture of customary , Roman , Napoleonic , local , and modern codified law .
+∃ ATTRIB[2] EVENT[19] GROUP[3] ENTITY[1] (
+ complex(ATTRIB[2]) ∧
+  ∃ ATTRIB[6] ATTRIB[5] ENTITY[4] (
+   customary(ATTRIB[5]) ∧
+    codified(ATTRIB[6]) ∧
+     is_law_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ATTRIB[9] ATTRIB[8] ENTITY[7] (
+    roman(ATTRIB[8]) ∧
+     codified(ATTRIB[9]) ∧
+      is_law_ATTRIBUTE(ENTITY[7], ATTRIB[9]) ∧ is_law_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧ is_element_of(ENTITY[7], GROUP[3])) ∧
+   ∃ ATTRIB[12] ATTRIB[11] ENTITY[10] (
+    napoleonic(ATTRIB[11]) ∧
+     codified(ATTRIB[12]) ∧
+      is_law_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_law_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+   ∃ ATTRIB[15] ATTRIB[14] ENTITY[13] (
+    local(ATTRIB[14]) ∧
+     codified(ATTRIB[15]) ∧
+      is_law_ATTRIBUTE(ENTITY[13], ATTRIB[15]) ∧ is_law_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧ is_element_of(ENTITY[13], GROUP[3])) ∧
+   ∃ ATTRIB[18] ATTRIB[17] ENTITY[16] (
+    modern(ATTRIB[17]) ∧
+     codified(ATTRIB[18]) ∧
+      is_law_ATTRIBUTE(ENTITY[16], ATTRIB[18]) ∧ is_law_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧ is_element_of(ENTITY[16], GROUP[3])) ∧
+   is_mixture_of(ENTITY[1], GROUP[3]) ∧ is_mixture_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ reflects(EVENT[19], ENTITY[Spanish_Civil_Code], ENTITY[1]))
+
+# ::id 111_nonfiction_FACTBOOK-2010;LEGAL;AT15-5;NE
+# ::snt The laws of the Visigoth invaders of Spain in the 5th to 7th centuries had the earliest major influence on Spanish legal system development .
+∃ ATTRIB[10] ATTRIB[8] ATTRIB[7] ATTRIB[5] ATTRIB[3] EVENT[11] DATE[4] GROUP[2] ENTITY[9] ENTITY[6] GROUP[1] (
+ visigoth(ATTRIB[3]) ∧
+  5th_to_7th(ATTRIB[5]) ∧
+   is_centuries_ATTRIBUTE(DATE[4], ATTRIB[5]) ∧
+    is_invaders_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧ is_invaders_in(GROUP[2], DATE[4]) ∧ is_invaders_of(GROUP[2], ENTITY[Spain]) ∧
+     is_laws_of(GROUP[1], GROUP[2]) ∧
+      earliest(ATTRIB[7]) ∧
+       major(ATTRIB[8]) ∧
+        spanish(ATTRIB[10]) ∧
+         is_legal_system_development_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+          is_influence_on(ENTITY[6], ENTITY[9]) ∧ is_influence_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_influence_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+           past(EVENT[11]) ∧ had(EVENT[11], GROUP[1], ENTITY[6]))
+
+# ::id 112_nonfiction_FACTBOOK-2010;LEGAL;AT15-6;NE
+# ::snt The Christian Reconquest of Spain in the 11th through 15th centuries witnessed the development of customary law , which combined canon -LRB- religious -RRB- and Roman law .
+∃ ATTRIB[14] ATTRIB[12] ATTRIB[9] ATTRIB[6] ATTRIB[4] ATTRIB[2] EVENT[16] EVENT[15] DATE[5] DATE[3] ENTITY[13] GROUP[11] ENTITY[8] ENTITY[7] ENTITY[1] (
+ christian(ATTRIB[2]) ∧
+  11th(ATTRIB[4]) ∧
+   is_ATTRIBUTE(DATE[3], ATTRIB[4]) ∧
+    15th(ATTRIB[6]) ∧
+     is_centuries_ATTRIBUTE(DATE[5], ATTRIB[6]) ∧
+      is_Reconquest_of(ENTITY[1], ENTITY[Spain]) ∧ is_Reconquest_through(ENTITY[1], DATE[5]) ∧ is_Reconquest_in(ENTITY[1], DATE[3]) ∧
+       is_Reconquest_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       customary(ATTRIB[9]) ∧
+        religious(ATTRIB[12]) ∧
+         is_ATTRIBUTE(ENTITY[canon], ATTRIB[12]) ∧
+          roman(ATTRIB[14]) ∧
+           is_law_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+            is_element_of(ENTITY[canon], GROUP[11]) ∧ is_element_of(ENTITY[13], GROUP[11]) ∧
+             combined(EVENT[15], ENTITY[8], GROUP[11]) ∧ is_law_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+              is_development_of(ENTITY[7], ENTITY[8]) ∧ past(EVENT[15]) ∧ witnessed(EVENT[16], ENTITY[1], ENTITY[7]))
+
+# ::id 113_nonfiction_FACTBOOK-2010;LEGAL;AT15-7;NE
+# ::snt During several centuries of Hapsburg and Bourbon rule , systematic recompilations of the existing national legal system were attempted ,
+∃ ATTRIB[11] ATTRIB[10] ENTITY[9] (
+ existing(ATTRIB[10]) ∧
+  national(ATTRIB[11]) ∧
+   is_legal_system_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_legal_system_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+    SEVERAL GROUP[2] TIME[1] (
+     (∃ ATTRIB[4] ENTITY[3] (hapsburg(ATTRIB[4]) ∧ is_rule_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+        ∃ ATTRIB[6] ENTITY[5] (bourbon(ATTRIB[6]) ∧ is_rule_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+      is_centuries_of(TIME[1], GROUP[2])),
+     ∃ ATTRIB[12] ATTRIB[8] EVENT[13] GROUP[7] (
+      systematic(ATTRIB[8]) ∧
+       is_recompilations_of(GROUP[7], ENTITY[9]) ∧ is_recompilations_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+        attempted(ATTRIB[12]) ∧
+         past(EVENT[13]) ∧ copula(EVENT[13], GROUP[7], ATTRIB[12]) ∧ During(EVENT[13]) = TIME[1])))
+
+# ::id 114_nonfiction_FACTBOOK-2010;LEGAL;AT15-8;NE
+# ::snt but these often conflicted with local and regional customary civil laws .
+∃ EVENT[9] GROUP[2] GROUP[1] (
+ ∃ ATTRIB[5] ATTRIB[4] GROUP[3] (
+  local(ATTRIB[4]) ∧
+   customary(ATTRIB[5]) ∧
+    is_civil_laws_ATTRIBUTE(GROUP[3], ATTRIB[5]) ∧ is_civil_laws_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[2])) ∧
+  ∃ ATTRIB[8] ATTRIB[7] GROUP[6] (
+   regional(ATTRIB[7]) ∧
+    customary(ATTRIB[8]) ∧
+     is_civil_laws_ATTRIBUTE(GROUP[6], ATTRIB[8]) ∧ is_civil_laws_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[2])) ∧
+  TMP_often(EVENT[9]) ∧ conflicted(EVENT[9], GROUP[1]) ∧ with(EVENT[9]) = GROUP[2])
+
+# ::id 115_nonfiction_FACTBOOK-2010;LEGAL;AT15-9;NE
+# ::snt Legal system development for most of the 19th century concentrated on formulating a national civil law system , which was finally enacted in 1889 as the Spanish Civil Code .
+∃ ATTRIB[2] ATTRIB[5] ENTITY[1] DATE[4] (
+ 19th(ATTRIB[5]) ∧
+  is_century_ATTRIBUTE(DATE[4], ATTRIB[5]) ∧
+   legal(ATTRIB[2]) ∧
+    is_system_development_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     MOST ENTITY[3] (is_of(ENTITY[3], DATE[4]),
+      ∃ ATTRIB[8] SITUATION[6] EVENT[11] EVENT[13] EVENT[14] DATE[10] ENTITY[7] (
+       national(ATTRIB[8]) ∧
+        CD_1889(DATE[10]) ∧
+         enacted(EVENT[11], _, ENTITY[7]) ∧ as(EVENT[11]) = ENTITY[Spanish_Civil_Code] ∧
+          in(EVENT[11]) = DATE[10] ∧ is_civil_law_system_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+          is_FACT_THAT(SITUATION[6], formulating(EVENT[13], ENTITY[1], ENTITY[7])) ∧
+           TMP_finally(EVENT[11]) ∧
+            past(EVENT[11]) ∧
+             past(EVENT[14]) ∧
+              concentrated(EVENT[14], ENTITY[1]) ∧ on(EVENT[14]) = SITUATION[6] ∧
+               for(EVENT[14]) = ENTITY[3])))
+
+# ::id 116_nonfiction_FACTBOOK-2010;LEGAL;AT15-10;NE
+# ::snt Several sections of the code have been revised , the most recent of which are the penal code in 1989 and the judiciary code in 2001 .
+∃ ATTRIB[8] ATTRIB[4] DATE[9] ENTITY[7] DATE[11] ENTITY[10] ENTITY[2] (
+ code(ENTITY[2]) ∧
+  recent(ATTRIB[4]) ∧
+   penal(ATTRIB[8]) ∧
+    CD_1989(DATE[9]) ∧
+     is_code_in(ENTITY[7], DATE[9]) ∧ is_code_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      CD_2001(DATE[11]) ∧
+       is_judiciary_code_in(ENTITY[10], DATE[11]) ∧
+        SEVERAL GROUP[1] (
+         MOST ENTITY[3] (is_element_of(ENTITY[3], GROUP[1]) ∧ is_ATTRIBUTE(ENTITY[3], ATTRIB[4]),
+          ∃ EVENT[12] GROUP[6] (
+           is_element_of(ENTITY[7], GROUP[6]) ∧ is_element_of(ENTITY[10], GROUP[6]) ∧
+            copula(EVENT[12], ENTITY[3], GROUP[6]))) ∧ is_sections_of(GROUP[1], ENTITY[2]),
+         ∃ EVENT[13] have_been_revised(EVENT[13], GROUP[1])))
+
+# ::id 117_nonfiction_FACTBOOK-2010;LEGAL;AT15-11;NE
+# ::snt The Spanish Civil Code separates public and private law .
+∃ EVENT[6] GROUP[1] (
+ ∃ ATTRIB[3] ENTITY[2] (public(ATTRIB[3]) ∧ is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ATTRIB[5] ENTITY[4] (private(ATTRIB[5]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  separates(EVENT[6], ENTITY[Spanish_Civil_Code], GROUP[1]))
+
+# ::id 118_nonfiction_FACTBOOK-2010;LEGAL;AT15-12;NE
+# ::snt Public law includes constitutional law , administrative law , criminal law , process law , financial and tax law , and international public law .
+∃ ATTRIB[2] EVENT[18] GROUP[3] ENTITY[1] (
+ public(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ATTRIB[5] ENTITY[4] (constitutional(ATTRIB[5]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ATTRIB[7] ENTITY[6] (administrative(ATTRIB[7]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    ∃ ATTRIB[9] ENTITY[8] (criminal(ATTRIB[9]) ∧ is_law_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+    ∃ ENTITY[10] (process_law(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+    ∃ GROUP[11] (
+     ∃ ATTRIB[13] ENTITY[12] (financial(ATTRIB[13]) ∧ is_law_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+      ∃ ATTRIB[15] ENTITY[14] (tax(ATTRIB[15]) ∧ is_law_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧ is_element_of(ENTITY[14], GROUP[11])) ∧
+      is_subset_of_or_equal_to(GROUP[11], GROUP[3])) ∧
+    ∃ ATTRIB[17] ENTITY[16] (international(ATTRIB[17]) ∧ is_public_law_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧ is_element_of(ENTITY[16], GROUP[3])) ∧
+    includes(EVENT[18], ENTITY[1], GROUP[3]))
+
+# ::id 119_nonfiction_FACTBOOK-2010;LEGAL;AT15-13;NE
+# ::snt Private law includes civil law , commercial law , labor law , and international private law .
+∃ ATTRIB[2] EVENT[11] GROUP[3] ENTITY[1] (
+ private(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   ∃ ATTRIB[5] ENTITY[4] (civil(ATTRIB[5]) ∧ is_law_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ATTRIB[7] ENTITY[6] (commercial(ATTRIB[7]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    ∃ ENTITY[8] (labor_law(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+    ∃ ATTRIB[10] ENTITY[9] (international(ATTRIB[10]) ∧ is_private_law_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧ is_element_of(ENTITY[9], GROUP[3])) ∧
+    includes(EVENT[11], ENTITY[1], GROUP[3]))
+
+# ::id 120_nonfiction_FACTBOOK-2010;LEGAL;AT16-1;NE
+# ::snt United States Law -
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[United_States_Law])
+
+# ::id 121_nonfiction_FACTBOOK-2010;LEGAL;AT16-2;NE
+# ::snt A type of common law , which is the basis of the legal system of the United States and that of its island possessions in the Caribbean and the Pacific .
+∃ ATTRIB[3] REF1[11] ATTRIB[7] EVENT[13] EVENT[14] ENTITY[2] ENTITY[1] GROUP[12] GROUP[10] ENTITY[9] GROUP[8] ENTITY[6] ENTITY[5] (
+ legal(ATTRIB[7]) ∧
+  REF1[11] = its ∧
+   is_island_possessions_POS(GROUP[10], REF1[11]) ∧
+    is_element_of(ENTITY[Caribbean], GROUP[12]) ∧ is_element_of(ENTITY[Pacific], GROUP[12]) ∧
+     is_in(ENTITY[9], GROUP[12]) ∧ is_element_of(ENTITY[9], GROUP[10]) ∧
+      is_subset_of_or_equal_to(GROUP[United_States], GROUP[8]) ∧ is_element_of(ENTITY[9], GROUP[8]) ∧
+       is_system_of(ENTITY[6], GROUP[8]) ∧ is_system_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+        is_basis_of(ENTITY[5], ENTITY[6]) ∧
+         common(ATTRIB[3]) ∧
+          is_law_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+           copula(EVENT[13], ENTITY[1], ENTITY[5]) ∧ is_type_of(ENTITY[1], ENTITY[2]) ∧
+            xxx(EVENT[14]) ∧ LINK(EVENT[14]) = ENTITY[1])
+
+# ::id 122_nonfiction_FACTBOOK-2010;LEGAL;AT16-3;NE
+# ::snt This legal system has several layers , more possibly than in most other countries , and is due in part to the division between federal and state law .
+∃ ATTRIB[8] ATTRIB[2] EVENT[14] ENTITY[9] ENTITY[12] ENTITY[13] GROUP[11] ENTITY[10] ENTITY[1] (
+ legal(ATTRIB[2]) ∧
+  is_system_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   federal(ENTITY[12]) ∧
+    state_law(ENTITY[13]) ∧
+     is_element_of(ENTITY[12], GROUP[11]) ∧ is_element_of(ENTITY[13], GROUP[11]) ∧
+      is_division_between(ENTITY[10], GROUP[11]) ∧
+       is_part_to(ENTITY[9], ENTITY[10]) ∧
+        is_due_in(ATTRIB[8], ENTITY[9]) ∧
+         CONJ_and(SEVERAL GROUP[3] (layers(GROUP[3]),
+               ∃ EVENT[6] (
+                MOST ATTRIB[5] GROUP[4] ((other(ATTRIB[5]) ∧ is_countries_ATTRIBUTE(GROUP[4], ATTRIB[5])), is_ADV_more_possibly_than_in(EVENT[6], GROUP[4])) ∧
+                 has(EVENT[6], ENTITY[1], GROUP[3]))), copula(EVENT[14], ENTITY[1], ATTRIB[8])))
+
+# ::id 123_nonfiction_FACTBOOK-2010;LEGAL;AT16-4;NE
+# ::snt The United States was founded not as one nation but as a union of 13 colonies , each claiming independence from the British Crown .
+∃ EVENT[9] ENTITY[2] GROUP[8] ENTITY[3] (
+ (CD_one(ENTITY[2]), nation(ENTITY[2])) ∧
+  (CD_13(GROUP[8]), colonies(GROUP[8])) ∧
+   EACH EVENT[7] ENTITY[6] ENTITY[4] ((is_independence_from(ENTITY[6], ENTITY[British_Crown]) ∧ claiming(EVENT[7], ENTITY[4], ENTITY[6])), is_-GROUP-_namely(GROUP[8], ENTITY[4])) ∧
+    is_union_of(ENTITY[3], GROUP[8]) ∧
+     past(EVENT[9]) ∧
+      CONJ_but(NOT ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+            ∃ EVENT[9] (
+             past(EVENT[9]) ∧
+              founded(EVENT[9], _, GROUP[United_States]) ∧ as(EVENT[9]) = ENTITY[1])),
+       founded(EVENT[9], _, GROUP[United_States]) ∧ as(EVENT[9]) = ENTITY[3]))
+
+# ::id 124_nonfiction_FACTBOOK-2010;LEGAL;AT16-5;NE
+# ::snt The US Constitution , implemented in 1789 , began shifting power away from the states and toward the federal government , though the states today retain substantial legal authority .
+∃ ATTRIB[13] SITUATION[10] SITUATION[4] ATTRIB[8] EVENT[9] EVENT[9] EVENT[14] EVENT[16] ENTITY[5] ENTITY[12] EVENT[3] DATE[2] GROUP[6] ENTITY[7] GROUP[11] (
+ CD_1789(DATE[2]) ∧
+  implemented(EVENT[3], _, ENTITY[US_Constitution]) ∧ in(EVENT[3]) = DATE[2] ∧
+   states(GROUP[6]) ∧
+    federal(ATTRIB[8]) ∧
+     is_government_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      states(GROUP[11]) ∧
+       power(ENTITY[5]) ∧
+        is_FACT_THAT(SITUATION[4],
+         CONJ_and(shifting(EVENT[9], ENTITY[US_Constitution], ENTITY[5]) ∧ away_from(EVENT[9]) = GROUP[6],
+          shifting(EVENT[9], ENTITY[US_Constitution], ENTITY[5]) ∧ toward(EVENT[9]) = ENTITY[7])) ∧
+         substantial(ATTRIB[13]) ∧
+          is_legal_authority_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+           is_FACT_THAT(SITUATION[10], retain(EVENT[14], GROUP[11], ENTITY[12])) ∧
+            TMP_today(EVENT[14]) ∧
+             past(EVENT[16]) ∧ began(EVENT[16], ENTITY[US_Constitution], SITUATION[4]) ∧ though(EVENT[16]) = SITUATION[10])
+
+# ::id 125_nonfiction_FACTBOOK-2010;LEGAL;AT16-6;NE
+# ::snt US law draws its authority from four sources : constitutional law , statutory law , administrative regulations , and case law .
+∃ REF1[4] ATTRIB[2] EVENT[14] GROUP[5] GROUP[13] ENTITY[3] ENTITY[1] (
+ us(ATTRIB[2]) ∧
+  is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[4] = its ∧
+    is_authority_POS(ENTITY[3], REF1[4]) ∧
+     (CD_four(GROUP[13]), sources(GROUP[13])) ∧
+      ∃ ATTRIB[7] ENTITY[6] (constitutional(ATTRIB[7]) ∧ is_law_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+       ∃ ATTRIB[9] ENTITY[8] (statutory(ATTRIB[9]) ∧ is_law_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧ is_element_of(ENTITY[8], GROUP[5])) ∧
+       ∃ ATTRIB[11] GROUP[10] (administrative(ATTRIB[11]) ∧ is_regulations_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ is_subset_of_or_equal_to(GROUP[10], GROUP[5])) ∧
+       ∃ ENTITY[12] (case_law(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[5])) ∧
+       is_-GROUP-_namely(GROUP[13], GROUP[5]) ∧ draws(EVENT[14], ENTITY[1], ENTITY[3]) ∧ from(EVENT[14]) = GROUP[13])
+
+# ::id 126_nonfiction_FACTBOOK-2010;LEGAL;AT16-7;NE
+# ::snt Constitutional law is based on the US Constitution and serves as the supreme federal law .
+∃ ATTRIB[2] ATTRIB[6] EVENT[4] EVENT[7] ENTITY[1] ENTITY[3] ENTITY[5] (
+ US_Constitution(ENTITY[3]) ∧
+  supreme(ATTRIB[6]) ∧
+   is_federal_law_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+    constitutional(ATTRIB[2]) ∧
+     is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+      CONJ_and(is_based(EVENT[4], ENTITY[1]) ∧ on(EVENT[4]) = ENTITY[3],
+       serves(EVENT[7], ENTITY[1]) ∧ as(EVENT[7]) = ENTITY[5]))
+
+# ::id 127_nonfiction_FACTBOOK-2010;LEGAL;AT16-8;NE
+# ::snt Taken together with those of the state constitutions , these documents outline the general structure of the federal and state governments and provide the rules and limits of power .
+∃ ATTRIB[13] ATTRIB[11] ATTRIB[7] EVENT[4] EVENT[14] EVENT[20] GROUP[3] GROUP[2] GROUP[10] GROUP[12] GROUP[9] ENTITY[8] ENTITY[6] GROUP[17] GROUP[18] ENTITY[19] GROUP[16] ENTITY[15] GROUP[1] (
+ documents(GROUP[1]) ∧
+  state_constitutions(GROUP[3]) ∧
+   is_subset_of_or_equal_to(GROUP[2], GROUP[3]) ∧
+    general(ATTRIB[7]) ∧
+     federal(ATTRIB[11]) ∧
+      is_governments_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+       state(ATTRIB[13]) ∧
+        is_governments_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+         is_subset_of_or_equal_to(GROUP[10], GROUP[9]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[9]) ∧
+          is_equals(ENTITY[8], GROUP[9]) ∧
+           is_structure_of(ENTITY[6], ENTITY[8]) ∧ is_structure_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+            rules(GROUP[17]) ∧
+             limits(GROUP[18]) ∧
+              is_subset_of_or_equal_to(GROUP[17], GROUP[16]) ∧ is_subset_of_or_equal_to(GROUP[18], GROUP[16]) ∧
+               power(ENTITY[19]) ∧
+                is_equals(ENTITY[15], GROUP[16]) ∧ is_of(ENTITY[15], ENTITY[19]) ∧
+                 ADV_together(EVENT[4]) ∧
+                  CONJ_and(taken(EVENT[4], GROUP[1]) ∧ with(EVENT[4]) = GROUP[2],
+                   CONJ_and(outline(EVENT[14], GROUP[1], ENTITY[6]), provide(EVENT[20], GROUP[1], ENTITY[15]))))
+
+# ::id 128_nonfiction_FACTBOOK-2010;LEGAL;AT16-9;NE
+# ::snt US statutory law is legislation enacted by the US Congress and is codified in the United States Code .
+∃ ATTRIB[2] EVENT[5] EVENT[6] EVENT[7] ENTITY[3] ENTITY[1] (
+ us(ATTRIB[2]) ∧
+  is_statutory_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   enacted(EVENT[5], ENTITY[US_Congress], ENTITY[3]) ∧ legislation(ENTITY[3]) ∧
+    CONJ_and(copula(EVENT[6], ENTITY[1], ENTITY[3]), is_codified(EVENT[7], ENTITY[1]) ∧ in(EVENT[7]) = ENTITY[United_States_Code]))
+
+# ::id 129_nonfiction_FACTBOOK-2010;LEGAL;AT16-10;NE
+# ::snt The 50 state legislatures have similar authority to enact state statutes .
+∃ ATTRIB[3] EVENT[5] EVENT[6] GROUP[4] ENTITY[2] GROUP[1] (
+ (CD_50(GROUP[1]), state_legislatures(GROUP[1])) ∧
+  similar(ATTRIB[3]) ∧
+   state_statutes(GROUP[4]) ∧
+    is_authority_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧ is_authority_to(ENTITY[2], enact(EVENT[5], _, GROUP[4])) ∧
+     have(EVENT[6], GROUP[1], ENTITY[2]))
+
+# ::id 130_nonfiction_FACTBOOK-2010;LEGAL;AT16-11;NE
+# ::snt Administrative law is the authority delegated to federal and state executive agencies .
+∃ ATTRIB[2] ATTRIB[9] ATTRIB[7] EVENT[11] ENTITY[1] EVENT[10] GROUP[6] GROUP[8] GROUP[5] ENTITY[3] (
+ federal(ATTRIB[7]) ∧
+  is_executive_agencies_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+   state(ATTRIB[9]) ∧
+    is_executive_agencies_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+     is_subset_of_or_equal_to(GROUP[6], GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[5]) ∧
+      delegated(EVENT[10], ENTITY[3]) ∧ to(EVENT[10]) = GROUP[5] ∧ authority(ENTITY[3]) ∧
+       administrative(ATTRIB[2]) ∧ is_law_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[11], ENTITY[1], ENTITY[3]))
+
+# ::id 131_nonfiction_FACTBOOK-2010;LEGAL;AT16-12;NE
+# ::snt Case law , also referred to as common law , covers areas where constitutional or statutory law is lacking .
+∃ ATTRIB[4] EVENT[5] EVENT[14] EVENT[16] ENTITY[3] GROUP[9] GROUP[7] ENTITY[1] (
+ common(ATTRIB[4]) ∧
+  is_law_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   referred_to(EVENT[5], ENTITY[1]) ∧ as(EVENT[5]) = ENTITY[3] ∧ Case_law(ENTITY[1]) ∧
+    CONJ_or(∃ ATTRIB[11] ENTITY[10] (constitutional(ATTRIB[11]) ∧ is_law_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+     ∃ ATTRIB[13] ENTITY[12] (statutory(ATTRIB[13]) ∧ is_law_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧ is_element_of(ENTITY[12], GROUP[9]))) ∧
+     is_lacking(EVENT[14], GROUP[9]) ∧ areas(GROUP[7]) ∧
+      ADV_also(EVENT[5]) ∧
+       past(EVENT[5]) ∧ is_LOC(EVENT[14], GROUP[7]) ∧ covers(EVENT[16], ENTITY[1], GROUP[7]))
+
+# ::id 132_nonfiction_FACTBOOK-2010;LEGAL;AT16-13;NE
+# ::snt Case law is a collection of judicial decisions , customs , and general principles that began in England centuries ago , that were adopted in America at the time of the Revolution , and that continue to develop today .
+∃ EVENT[11] EVENT[16] EVENT[20] EVENT[18] EVENT[21] GROUP[10] TIME[19] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[15] ENTITY[14] (
+ Revolution(ENTITY[15]) ∧
+  is_time_of(ENTITY[14], ENTITY[15]) ∧
+   Case_law(ENTITY[1]) ∧
+    ∃ ATTRIB[5] GROUP[4] (judicial(ATTRIB[5]) ∧ is_decisions_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+     ∃ GROUP[6] (customs(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[3])) ∧
+     ∃ ATTRIB[8] GROUP[7] (general(ATTRIB[8]) ∧ is_principles_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[3])) ∧
+     centuries(GROUP[10]) ∧
+      today(TIME[19]) ∧
+       CONJ_and(began(EVENT[11], ENTITY[2]) ∧ in(EVENT[11]) = ENTITY[England],
+        adopted(EVENT[16], _, ENTITY[2]) ∧ at(EVENT[16]) = ENTITY[14] ∧ in(EVENT[16]) = ENTITY[America],
+        continue(EVENT[18], ENTITY[2], develop(EVENT[20], ENTITY[2]) ∧ is_contained_in(TMP(EVENT[20]), TIME[19]))) ∧
+        is_collection_of(ENTITY[2], GROUP[3]) ∧
+        is_TMP_ago_TMP(EVENT[11], GROUP[10]) ∧
+         past(EVENT[11]) ∧ past(EVENT[16]) ∧ copula(EVENT[21], ENTITY[1], ENTITY[2]))

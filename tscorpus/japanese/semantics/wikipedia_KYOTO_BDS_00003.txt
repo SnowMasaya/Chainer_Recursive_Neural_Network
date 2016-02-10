@@ -1,0 +1,1365 @@
+# ::id 1_wikipedia_KYOTO_BDS_00003,1;NJ
+# ::snt 浄土真宗
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[浄土真宗])
+
+# ::id 2_wikipedia_KYOTO_BDS_00003,2;NJ
+# ::snt 浄土真宗 （ じょうどしんしゅう 、 Shin-Buddhism , Pure Land Buddhism ） は 、 日本 の 仏教 の 宗派 の ひと つ で 、 鎌倉 時代 初期 、 法然 の 弟子 ・ 親鸞 が 、 法然 の 教え （ 浄土宗 ） を 継承 発展 さ せ た 教団 で ある 。
+∃ SITUATION[7] EVENT[5] EVENT[11] EVENT[12] EVENT[10] EVENT[13] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[9] TIME[6] GROUP[1] (
+ is_element_of(ENTITY[じょうどしんしゅう], GROUP[1]) ∧ is_element_of(ENTITY[Shin-Buddhism], GROUP[1]) ∧ is_element_of(ENTITY[Pure_Land_Buddhism], GROUP[1]) ∧
+  namely_-ENTITY-(GROUP[1], ENTITY[浄土真宗]) ∧
+   の_仏教(ENTITY[日本], ENTITY[4]) ∧
+    の_宗派(ENTITY[4], ENTITY[3]) ∧
+     (CD_ひと_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+      鎌倉_時代_初期(TIME[6]) ∧
+       の_弟子(ENTITY[法然], ENTITY[8]) ∧
+        namely_-ENTITY-(ENTITY[8], ENTITY[親鸞]) ∧
+         の_教え(ENTITY[法然], ENTITY[9]) ∧
+          namely_-ENTITY-(ENTITY[浄土宗], ENTITY[9]) ∧
+           教団(SITUATION[7],
+            せ_た(EVENT[10], ENTITY[親鸞], ENTITY[9],
+             継承(EVENT[11], ENTITY[9]) ∧ 発展する.0(EVENT[12], ENTITY[9]))) ∧
+            past(EVENT[10]) ∧
+             CONJ_te(で(EVENT[5], ENTITY[浄土真宗], ENTITY[2]),
+              で_ある(EVENT[13], ENTITY[浄土真宗], SITUATION[7]) ∧ is_contained_in(時間(EVENT[13]), TIME[6])))
+
+# ::id 3_wikipedia_KYOTO_BDS_00003,3;NJ
+# ::snt 宗派名 の 成り立ち の 歴史的 経緯 から 、 現在 、 同宗 に 属する 宗派 の 多く が 宗旨名 として は 真宗 を 名乗る 。
+∃ ATTRIB[4] ENTITY[3] ENTITY[2] TIME[5] ENTITY[1] ENTITY[11] (
+ 宗旨名(ENTITY[11]) ∧
+  宗派名(ENTITY[3]) ∧
+   の_成り立ち(ENTITY[3], ENTITY[2]) ∧
+    歴史的(ATTRIB[4]) ∧
+     の_経緯(ENTITY[2], ENTITY[1]) ∧ ATTRIBUTE_経緯(ATTRIB[4], ENTITY[1]) ∧
+      現在(TIME[5]) ∧
+       多く EVENT[10] ENTITY[9] ENTITY[7] ENTITY[6] (
+        (同宗(ENTITY[9]) ∧
+         属する(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 宗派(ENTITY[7]) ∧
+         の(ENTITY[7], ENTITY[6])),
+        ∃ EVENT[12] (
+         名乗る(EVENT[12], ENTITY[6], ENTITY[真宗]) ∧
+          として(EVENT[12]) = ENTITY[11] ∧
+           is_contained_in(時間(EVENT[12]), TIME[5]) ∧ から(EVENT[12]) = ENTITY[1])))
+
+# ::id 4_wikipedia_KYOTO_BDS_00003,4;NJ
+# ::snt 過去 に は 一向宗 、 門徒宗 と も 通称 さ れ た 。
+∃ ENTITY[1] EVENT[4] GROUP[3] ENTITY[2] (
+ 過去(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   is_element_of(ENTITY[一向宗], GROUP[3]) ∧ is_element_of(ENTITY[門徒宗], GROUP[3]) ∧
+    past(EVENT[4]) ∧ 通称する.0_た(EVENT[4], _, ENTITY[1], GROUP[3]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 5_wikipedia_KYOTO_BDS_00003,5;NJ
+# ::snt 教義
+∃ EVENT[2] ENTITY[1] (教義(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_BDS_00003,6;NJ
+# ::snt 念仏 （ 南無阿弥陀仏 、 なむあみだぶつ 、 なもあみだぶつ （ 本願寺派 ） ） を 称える こと （ 称名念仏 ） を通して 、 阿弥陀如来 （ 以降 「 如来 」 ） の 慈悲 を 信知 せしめ られ 、 悪人 を 含む 全て の 人 が 浄土 へ 往生 し 成仏 する という 絶対 他力 へ の 信順 を 往生 成仏 の 正因 と する 。
+∃ ENTITY[8] ENTITY[5] ENTITY[1] EVENT[7] EVENT[12] EVENT[9] EVENT[22] GROUP[6] ENTITY[11] ENTITY[10] ENTITY[4] ENTITY[3] ENTITY[21] ENTITY[20] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  絶対_他力(ENTITY[3]) ∧
+   ENTITY[5] = *pro*{ENTITY[3], ENTITY[1]} ∧
+    namely_-ENTITY-(ENTITY[南無阿弥陀仏], ENTITY[念仏]) ∧
+     is_element_of(ENTITY[なむあみだぶつ], GROUP[6]) ∧ namely_-ENTITY-(ENTITY[本願寺派], ENTITY[なもあみだぶつ]) ∧ is_element_of(ENTITY[なもあみだぶつ], GROUP[6]) ∧
+      namely_-ENTITY-(GROUP[6], ENTITY[念仏]) ∧
+       THAT_こと(称える(EVENT[7], ENTITY[5], ENTITY[念仏]), ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[称名念仏], ENTITY[4]) ∧
+         ENTITY[8] = *pro*{ENTITY[4], ENTITY[称名念仏], ENTITY[念仏], ENTITY[なもあみだぶつ], ENTITY[本願寺派], ENTITY[なむあみだぶつ], ENTITY[南無阿弥陀仏], ENTITY[3], ENTITY[1]} ∧
+          以降(ENTITY[11]) ∧
+           namely_-ENTITY-(ENTITY[11], ENTITY[阿弥陀如来]) ∧
+            namely_-ENTITY-(ENTITY[如来], ENTITY[阿弥陀如来]) ∧
+             の_慈悲(ENTITY[阿弥陀如来], ENTITY[10]) ∧
+              へ_の_信順(ENTITY[3], ENTITY[2]) ∧
+               THAT_信順(せしめ(EVENT[9], _, ENTITY[8], 信知(EVENT[12], ENTITY[8], ENTITY[10])) ∧
+                     全て_の EVENT[16] ENTITY[15] ENTITY[13] (
+                      (悪人(ENTITY[15]) ∧
+                       含む(EVENT[16], ENTITY[13], ENTITY[15]) ∧ 人(ENTITY[13])),
+                      ∃ EVENT[18] EVENT[19] ENTITY[17] (
+                       浄土(ENTITY[17]) ∧
+                        往生する.0(EVENT[18], ENTITY[13]) ∧ へ(EVENT[18]) = ENTITY[17] ∧
+                         成仏する.0(EVENT[19], ENTITY[13]) ∧ を通して(EVENT[19]) = ENTITY[4])),
+                ENTITY[2]) ∧
+               往生_成仏(ENTITY[21]) ∧
+                の_正因(ENTITY[21], ENTITY[20]) ∧ する(EVENT[22], ENTITY[1], ENTITY[2], ENTITY[20]))
+
+# ::id 7_wikipedia_KYOTO_BDS_00003,7;NJ
+# ::snt この こと から 、 真宗 の 教え を 漢字 8 字 で あらわす と 、 「 信心正因称名報恩 」 と 言わ れる 。
+∃ ENTITY[1] (
+ こと(ENTITY[1]) ∧
+  ∀ ARB[2] EVENT[6] DEGREE[5] ENTITY[4] ENTITY[3] CND_と(
+      ARB[2] = *arb* ∧ の_教え(ENTITY[真宗], ENTITY[3]) ∧ CD_8_字(DEGREE[5]) ∧
+       MSR_漢字(DEGREE[5], ENTITY[4]) ∧ あらわす(EVENT[6], ARB[2], ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[4],
+      ∃ ENTITY[7] EVENT[8] (
+       ENTITY[7] = *pro*{ENTITY[3], ENTITY[4], ENTITY[真宗]} ∧
+        言わ(EVENT[8], _, ENTITY[7], ENTITY[信心正因称名報恩]) ∧ から(EVENT[8]) = ENTITY[1])))
+
+# ::id 8_wikipedia_KYOTO_BDS_00003,8;NJ
+# ::snt 本願寺 八 世 蓮如 が 、 『 御文 』 にて 次 の よう に 述べ て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[本願寺_八_世], ENTITY[蓮如]) ∧
+  次(ENTITY[2]) ∧
+   の_よう(ENTITY[2], ENTITY[1]) ∧
+    述べ_て_いる(EVENT[3], ENTITY[蓮如]) ∧ に(EVENT[3]) = ENTITY[1] ∧ にて(EVENT[3]) = ENTITY[御文])
+
+# ::id 9_wikipedia_KYOTO_BDS_00003,13;NJ
+# ::snt この 根拠 が 、 『 無量寿経仏説無量寿経 』 に 説か れる 四十八 願 、 ことに 「 王本願 」 と も 呼ば れる 第 十八 願 （ 選択 本願 ） で ある 。
+∃ SITUATION[11] ENTITY[2] ENTITY[6] ENTITY[7] EVENT[4] EVENT[5] EVENT[9] EVENT[10] ENTITY[1] (
+ 根拠(ENTITY[1]) ∧
+  ADV_ことに(SITUATION[11]) ∧
+   (CD_四十八_願(ENTITY[2]), 説か(EVENT[4], _, ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[無量寿経仏説無量寿経]) ∧
+    (CD_第_十八(ENTITY[7]), 呼ば(EVENT[9], _, ENTITY[7], ENTITY[王本願]) ∧ 願(ENTITY[7])) ∧
+     選択_本願(ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+       xxx(EVENT[5], ENTITY[1], ENTITY[2]) ∧ FACT(SITUATION[11], で_ある(EVENT[10], ENTITY[1], ENTITY[7])))
+
+# ::id 10_wikipedia_KYOTO_BDS_00003,14;NJ
+# ::snt 本尊 は 阿弥陀如来一仏 で ある 。
+∃ EVENT[2] ENTITY[1] (本尊(ENTITY[1]) ∧ で_ある(EVENT[2], ENTITY[1], ENTITY[阿弥陀如来一仏]))
+
+# ::id 11_wikipedia_KYOTO_BDS_00003,15;NJ
+# ::snt ただし 、 高田派 及び 一部 門徒 は 善光寺式 阿弥陀 三尊形式 で ある 阿弥陀如来 ・ 観世音菩薩 ・ 勢至菩薩 を 本尊 と する 。
+∃ GROUP[6] ENTITY[7] ENTITY[3] EVENT[5] EVENT[8] ENTITY[2] GROUP[1] (
+ 一部_門徒(ENTITY[2]) ∧
+  CONJ_及び(is_element_of(ENTITY[高田派], GROUP[1]), is_element_of(ENTITY[2], GROUP[1])) ∧
+   is_element_of(ENTITY[阿弥陀如来], GROUP[6]) ∧ is_element_of(ENTITY[観世音菩薩], GROUP[6]) ∧ is_element_of(ENTITY[勢至菩薩], GROUP[6]) ∧
+    で_ある(EVENT[5], ENTITY[3], ENTITY[善光寺式_阿弥陀_三尊形式]) ∧ equals(GROUP[6], ENTITY[3]) ∧
+     本尊(ENTITY[7]) ∧ する(EVENT[8], GROUP[1], ENTITY[3], ENTITY[7]))
+
+# ::id 12_wikipedia_KYOTO_BDS_00003,16;NJ
+# ::snt 念仏 へ の 誤解
+∃ EVENT[3] ENTITY[2] ENTITY[1] (念仏(ENTITY[2]) ∧ へ_の_誤解(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 13_wikipedia_KYOTO_BDS_00003,17;NJ
+# ::snt 一般 に 、 「 今 この 時 に も 阿弥陀如来 の 本願力 は 私たち に 回向 さ れ て い て 、 救わ れ て いる 」 （ 現生正定聚 ） について は 、 誤っ た 受け取り方 を する 者 が 多かっ た ため 、 たびたび 正し て いる 。
+∃ SITUATION[12] ENTITY[2] ENTITY[9] ENTITY[5] EVENT[17] EVENT[18] EVENT[19] EVENT[20] ENTITY[15] ENTITY[13] ENTITY[1] EVENT[10] EVENT[11] ENTITY[6] ENTITY[8] ENTITY[7] ENTITY[4] ENTITY[3] (
+ ENTITY[5] = *pro*{ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+  時(ENTITY[7]) ∧
+   今(ENTITY[6]) ∧
+    namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+     の_本願力(ENTITY[阿弥陀如来], ENTITY[8]) ∧
+      ENTITY[9] = 私たち{ENTITY[阿弥陀如来], ENTITY[5], ENTITY[6], ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+       THAT(CONJ_te(回向する.0_て_い(EVENT[10], _, ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+                  に(EVENT[10]) = ENTITY[7],
+             救わ_て_いる(EVENT[11], _, ENTITY[5]) ∧ に(EVENT[11]) = ENTITY[7]), ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[現生正定聚], ENTITY[4]) ∧
+         について(ENTITY[4], ENTITY[3]) ∧
+          一般(ENTITY[1]) ∧
+           ENTITY[2] = *pro* ∧
+            誤っ_た(EVENT[17], ENTITY[15]) ∧ 受け取り方(ENTITY[15]) ∧
+             する(EVENT[18], ENTITY[13], ENTITY[15]) ∧ 者(ENTITY[13]) ∧
+              FACT(SITUATION[12], 多かっ_た(EVENT[19], ENTITY[13])) ∧
+               past(EVENT[17]) ∧
+                past(EVENT[19]) ∧
+                 ADV_たびたび(EVENT[20]) ∧
+                  正し_て_いる(EVENT[20], ENTITY[2], ENTITY[3]) ∧ ため(EVENT[20]) = SITUATION[12] ∧
+                   に(EVENT[20]) = ENTITY[1])
+
+# ::id 14_wikipedia_KYOTO_BDS_00003,23;NJ
+# ::snt ここ で も 信心正因 を 確認 し 、 明確 に 正し て おり 、 「 ただ 念仏 を 称えれ ば 、 誰 でも 極楽 へ ゆける 」 と は 述べ て い ない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ENTITY[2] EVENT[3] EVENT[4] (
+        ENTITY[2] = ここ ∧
+         ADV_明確_に(EVENT[4]) ∧
+          確認する.0(EVENT[3], ENTITY[1], ENTITY[信心正因]) ∧ で(EVENT[3]) = ENTITY[2] ∧
+           正し_て_おり(EVENT[4], ENTITY[1], ENTITY[信心正因]) ∧ で(EVENT[4]) = ENTITY[2] ∧
+           は SITUATION[6] (
+            FACT(SITUATION[6],
+             ∀ ENTITY[7] EVENT[9] ENTITY[8] CND_ば(
+                 ENTITY[7] = *pro*{ENTITY[1], ENTITY[信心正因]} ∧ 念仏(ENTITY[8]) ∧ ADV_ただ(EVENT[9]) ∧
+                  称えれ(EVENT[9], ENTITY[7], ENTITY[8]),
+                 でも ENTITY[11] ∃ EVENT[13] ENTITY[12] (
+                  極楽(ENTITY[12]) ∧
+                   ゆける(EVENT[13], ENTITY[11]) ∧ へ(EVENT[13]) = ENTITY[12]))),
+            ∃ EVENT[14] (述べ_て_い(EVENT[14], ENTITY[1]) ∧ LINK(EVENT[14]) = SITUATION[6]))))
+
+# ::id 15_wikipedia_KYOTO_BDS_00003,24;NJ
+# ::snt 如来 より 賜る 信心 により 救わ れる の が 浄土真宗 で ある 。
+∃ ENTITY[5] ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[2]} ∧
+   賜る(EVENT[6], ENTITY[5], ENTITY[3]) ∧ より(EVENT[6]) = ENTITY[如来] ∧ 信心(ENTITY[3]) ∧
+    の(SITUATION[1], 救わ(EVENT[7], ENTITY[3], ENTITY[2])) ∧ で_ある(EVENT[8], SITUATION[1], ENTITY[浄土真宗]))
+
+# ::id 16_wikipedia_KYOTO_BDS_00003,25;NJ
+# ::snt あくまでも 念仏 は 、 報恩 の 為 に 発せ られる の で あっ て 、 往生 の 条件 で は ない 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[1] (
+ 念仏(ENTITY[1]) ∧
+  報恩(ENTITY[3]) ∧
+   の_為(ENTITY[3], ENTITY[2]) ∧
+    往生(ENTITY[6]) ∧
+     の_条件(ENTITY[6], ENTITY[5]) ∧
+      ADV_あくまでも(EVENT[4]) ∧
+       CONJ_te(発せ_の_で_あっ_て(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2],
+        ¬ ∃ EVENT[7] で_は(EVENT[7], ENTITY[1], ENTITY[5])))
+
+# ::id 17_wikipedia_KYOTO_BDS_00003,27;NJ
+# ::snt 習俗
+∃ EVENT[2] ENTITY[1] (習俗(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 18_wikipedia_KYOTO_BDS_00003,28;NJ
+# ::snt 他 の 仏教 宗派 に対する 真宗 の 最大 の 違い は 、 僧侶 に 肉食妻帯 が 許さ れる 、 無戒 で ある という 点 に ある （ 明治 まで 、 妻帯 の 許さ れる 仏教 宗派 は 真宗 のみ で あっ た ） 。
+∃ EVENT[8] EVENT[10] EVENT[11] ENTITY[7] ENTITY[6] ENTITY[9] ENTITY[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 他(ENTITY[3]) ∧
+  の_仏教_宗派(ENTITY[3], ENTITY[2]) ∧
+   最大(ENTITY[4]) ∧
+    の_違い(ENTITY[4], ENTITY[1]) ∧ の__違い(ENTITY[真宗], ENTITY[1]) ∧ に対する_違い(ENTITY[2], ENTITY[1]) ∧
+     僧侶(ENTITY[6]) ∧
+      肉食妻帯(ENTITY[7]) ∧
+       無戒(ENTITY[9]) ∧
+        THAT_点(許さ(EVENT[8], _, ENTITY[7], ENTITY[6]) ∧ で_ある(EVENT[10], _, ENTITY[9]),
+         ENTITY[5]) ∧ ある(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = ENTITY[5])
+
+# ::id 19_wikipedia_KYOTO_BDS_00003,29;NJ
+# ::snt そもそも は 、 一般 の 僧侶 という 概念 （ 世間 と の 縁 を 断っ て 出家 し 修行 する 人々 ） や 世間 内 で 生活 する 仏教徒 （ 在家 ） として の 規範 から はみ出さ ざるを得ない 人々 を 救済 する の が 本願 念仏 で ある と 、 師 法然 から 継承 し た 親鸞 が 、 それ を 実践 し 僧 として 初めて 公式 に 妻帯 し 子 を 設け た こと に 由来 する 。
+∃ SITUATION[40] ENTITY[31] SITUATION[2] ENTITY[1] EVENT[28] EVENT[30] EVENT[5] EVENT[32] EVENT[34] EVENT[38] EVENT[39] ENTITY[4] ENTITY[8] ENTITY[29] ENTITY[6] ENTITY[33] ENTITY[37] (
+ ENTITY[1] = *pro* ∧
+  師(ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[法然]) ∧
+    MD_ざるを得ない(∃ EVENT[27] GROUP[10] (
+          CONJ_や(∃ EVENT[15] EVENT[16] EVENT[17] ENTITY[20] ENTITY[19] ENTITY[14] ENTITY[13] ENTITY[11] ENTITY[18] (
+                一般(ENTITY[20]) ∧
+                 の_僧侶(ENTITY[20], ENTITY[19]) ∧
+                  という_概念(ENTITY[19], ENTITY[18]) ∧
+                   世間(ENTITY[14]) ∧
+                    と_の_縁(ENTITY[14], ENTITY[13]) ∧
+                     CONJ_te(断っ_て(EVENT[15], ENTITY[11], ENTITY[13]),
+                      出家する.0(EVENT[16], ENTITY[11]) ∧ 修行する.0(EVENT[17], ENTITY[11])) ∧
+                      人々(ENTITY[11]) ∧ namely_-ENTITY-(ENTITY[11], ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[10])),
+           ∃ EVENT[26] ENTITY[25] ENTITY[22] ENTITY[23] ENTITY[21] (
+            世間_内(ENTITY[25]) ∧
+             生活する.0(EVENT[26], ENTITY[23]) ∧ で(EVENT[26]) = ENTITY[25] ∧ 仏教徒(ENTITY[23]) ∧
+              在家(ENTITY[22]) ∧
+               namely_-ENTITY-(ENTITY[22], ENTITY[23]) ∧
+                として_の_規範(ENTITY[23], ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[10]))) ∧
+           はみ出さ(EVENT[27], ENTITY[8]) ∧ から(EVENT[27]) = GROUP[10])) ∧ 人々(ENTITY[8]) ∧
+     救済する.0(EVENT[28], ENTITY[6], ENTITY[8]) ∧ の(ENTITY[6]) ∧
+      本願_念仏(ENTITY[29]) ∧
+       継承する.0_た(EVENT[5], ENTITY[親鸞], で_ある(EVENT[30], ENTITY[6], ENTITY[29])) ∧ から(EVENT[5]) = ENTITY[法然] ∧
+        ENTITY[31] = それ{ENTITY[法然], ENTITY[6], ENTITY[29], ENTITY[8], ENTITY[4], ENTITY[1]} ∧
+         僧(ENTITY[33]) ∧
+          子(ENTITY[37]) ∧
+           こと(SITUATION[2],
+            実践する.0(EVENT[32], ENTITY[親鸞], ENTITY[31]) ∧
+             妻帯する.0(EVENT[34], ENTITY[親鸞]) ∧ として(EVENT[34]) = ENTITY[33] ∧
+              設け_た(EVENT[38], ENTITY[親鸞], ENTITY[37])) ∧
+            ADV_そもそも_は(SITUATION[40]) ∧
+             past(EVENT[5]) ∧
+              ADV_初めて(EVENT[34]) ∧
+               ADV_公式_に(EVENT[34]) ∧
+                past(EVENT[38]) ∧
+                 FACT(SITUATION[40], 由来する.0(EVENT[39], ENTITY[1]) ∧ に(EVENT[39]) = SITUATION[2]))
+
+# ::id 20_wikipedia_KYOTO_BDS_00003,30;NJ
+# ::snt その ため 、 真宗 に は 法脈 （ 師弟 関係 ） と 血脈 の 2 つ の 系譜 が 存在 する 。
+∃ EVENT[8] GROUP[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  CONJ_と(∃ ENTITY[3] ENTITY[4] (
+        法脈(ENTITY[4]) ∧
+         師弟_関係(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])),
+   ∃ ENTITY[7] ENTITY[6] ENTITY[5] (
+    血脈(ENTITY[7]) ∧
+     (CD_2_つ(ENTITY[6]), の(ENTITY[7], ENTITY[6])) ∧
+      の_系譜(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+   存在する.0(EVENT[8], GROUP[2]) ∧ に(EVENT[8]) = ENTITY[真宗] ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 21_wikipedia_KYOTO_BDS_00003,31;NJ
+# ::snt 与え られる 名前 も 戒名 で は なく 法名 と 言う 。
+∃ ENTITY[6] ENTITY[4] ENTITY[7] ENTITY[1] EVENT[3] EVENT[8] (
+ 与え(EVENT[3], _, ENTITY[1]) ∧ 名前(ENTITY[1]) ∧
+  戒名(ENTITY[4]) ∧
+   ENTITY[6] = *pro*{ENTITY[4]} ∧
+    法名(ENTITY[7]) ∧
+     ¬ ∃ EVENT[5] で_は(EVENT[5], ENTITY[1], ENTITY[4]) ∧ 言う(EVENT[8], ENTITY[1], ENTITY[6], ENTITY[7]))
+
+# ::id 22_wikipedia_KYOTO_BDS_00003,32;NJ
+# ::snt 真宗 は 、 ただ 如来 の 働き に まかせ て （ すなわち 真実 の 信心 を 獲得 すれ ば ） 、 全て の 人 は 往生成仏 する こと が 出来る とする 教え から 、 他 の 宗派 と 比べ 多く の 宗教 儀式 や 習俗 に とらわれ ず 、 報恩謝徳 の 念仏 と 聞法 を 大事 に する 。
+∃ ENTITY[2] EVENT[4] EVENT[16] EVENT[25] ENTITY[3] ENTITY[15] ENTITY[14] GROUP[22] ENTITY[1] (
+ ENTITY[2] = *pro*{ENTITY[真宗]} ∧
+  の_働き(ENTITY[如来], ENTITY[3]) ∧
+   THAT_教え(CONJ_te(まかせ_て(EVENT[4], _, ENTITY[2], ENTITY[3]),
+         全て_の ENTITY[6] (人(ENTITY[6]),
+          ∃ SITUATION[11] SITUATION[7] EVENT[10] EVENT[12] EVENT[13] ENTITY[9] ENTITY[8] (
+           真実(ENTITY[9]) ∧
+            の_信心(ENTITY[9], ENTITY[8]) ∧
+             FACT(SITUATION[7], 獲得する.0(EVENT[10], ENTITY[6], ENTITY[8])) ∧
+              こと(SITUATION[11], 往生成仏する.0(EVENT[12], ENTITY[6])) ∧
+               出来る(EVENT[13], ENTITY[6], SITUATION[11]) ∧ ば(EVENT[13]) = SITUATION[7]))), ENTITY[1]) ∧
+    他(ENTITY[15]) ∧
+     の_宗派(ENTITY[15], ENTITY[14]) ∧
+      CONJ_と(∃ ENTITY[23] (の_念仏(ENTITY[報恩謝徳], ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[22])),
+       ∃ ENTITY[24] (聞法(ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[22]))) ∧
+       ADV_ただ(EVENT[4]) ∧
+        ADV_大事_に(EVENT[25]) ∧
+         比べ(EVENT[16], ENTITY[真宗]) ∧ と(EVENT[16]) = ENTITY[14] ∧
+          CONJ_te(多く_の GROUP[18] ENTITY[17] (
+                (CONJ_や(∃ ENTITY[19] (宗教_儀式(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[18])),
+                   ∃ ENTITY[20] (習俗(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[18]))) ∧
+                 equals(GROUP[18], ENTITY[17])),
+                ¬ ∃ EVENT[21] (
+                      とらわれ(EVENT[21], ENTITY[真宗]) ∧
+                       に(EVENT[21]) = ENTITY[17] ∧ から(EVENT[21]) = ENTITY[1])),
+           する(EVENT[25], ENTITY[真宗], GROUP[22]) ∧ から(EVENT[25]) = ENTITY[1]))
+
+# ::id 23_wikipedia_KYOTO_BDS_00003,33;NJ
+# ::snt 仏教 宗派 の 中 で は 、 唯一 加持 祈祷 を 行わ ない の も 大きな 特徴 で ある 。
+∃ ATTRIB[9] ENTITY[2] SITUATION[1] EVENT[10] ENTITY[8] ENTITY[4] ENTITY[3] (
+ 仏教_宗派(ENTITY[4]) ∧
+  の_中(ENTITY[4], ENTITY[3]) ∧
+   ENTITY[2] = *pro* ∧
+    の(SITUATION[1],
+     ¬ ∃ EVENT[7] ENTITY[6] ENTITY[5] (
+           唯一(ENTITY[5]) ∧
+            加持_祈祷(ENTITY[6]) ∧
+             行わ(EVENT[7], ENTITY[2], ENTITY[6]) ∧ ADV(EVENT[7]) = ENTITY[5] ∧
+              で(EVENT[7]) = ENTITY[3])) ∧
+     大きな(ATTRIB[9]) ∧ ATTRIBUTE_特徴(ATTRIB[9], ENTITY[8]) ∧ で_ある(EVENT[10], SITUATION[1], ENTITY[8]))
+
+# ::id 24_wikipedia_KYOTO_BDS_00003,34;NJ
+# ::snt また 合理性 を 重んじ 、 作法 や 教え も 簡潔 で あっ た こと から 、 近世 に は 庶民 に 広く 受け入れ られ た が 、 他 の 宗派 から は かえって 反発 を 買い 、 「 門徒 物 知ら ず 」 （ 門徒 と は 真宗 の 信者 の こと ） など と 揶揄 さ れる 事 も しばしば で あっ た 。
+∃ ENTITY[15] SITUATION[14] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[5] EVENT[9] EVENT[12] EVENT[19] EVENT[21] EVENT[24] ENTITY[4] GROUP[6] ENTITY[11] ENTITY[18] ENTITY[10] ENTITY[17] ENTITY[16] (
+ 近世(ENTITY[10]) ∧
+  他(ENTITY[17]) ∧
+   の_宗派(ENTITY[17], ENTITY[16]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[3] = *pro*{ENTITY[1]} ∧
+      合理性(ENTITY[4]) ∧
+       CONJ_や(∃ ENTITY[7] (作法(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+        ∃ ENTITY[8] (教え(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+        こと(SITUATION[2], 重んじ(EVENT[5], ENTITY[3], ENTITY[4]) ∧ 簡潔_で_あっ_た(EVENT[9], GROUP[6])) ∧
+         庶民(ENTITY[11]) ∧
+          ENTITY[15] = *pro*{ENTITY[10], ENTITY[11], ENTITY[4]} ∧
+           反発(ENTITY[18]) ∧
+            事(SITUATION[14],
+             買い(EVENT[19], ENTITY[15], ENTITY[18]) ∧ LGS(EVENT[19]) = ENTITY[16] ∧
+              揶揄する.0(EVENT[21], _, ENTITY[15],
+               ¬ ∃ EVENT[23] ENTITY[22] (物(ENTITY[22]) ∧ 知ら(EVENT[23], ENTITY[門徒], ENTITY[22])))) ∧
+             past(EVENT[9]) ∧
+              ADV_広く(EVENT[12]) ∧
+               past(EVENT[12]) ∧
+                ADV_かえって(EVENT[19]) ∧
+                 ADV_しばしば(EVENT[24]) ∧
+                  past(EVENT[24]) ∧
+                   CONJ_が(受け入れ_た(EVENT[12], ENTITY[11], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[10] ∧
+                         から(EVENT[12]) = SITUATION[2], で_あっ_た(EVENT[24], SITUATION[14])))
+
+# ::id 25_wikipedia_KYOTO_BDS_00003,35;NJ
+# ::snt また 真宗 は 、 本尊 （ 「 南無阿弥陀仏 」 の 名号 本尊 、 若しくは 阿弥陀如来 の 絵像 ・ 木像 ） の 各戸 へ の 安置 を 奨励 し た 。
+∃ EVENT[9] ENTITY[1] (
+ 各 GROUP[3] ENTITY[2] (
+  (CONJ_若しくは(∃ ENTITY[4] (の_名号_本尊(ENTITY[南無阿弥陀仏], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+     ∃ GROUP[6] ENTITY[5] (
+      ∃ ENTITY[7] (絵像(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+       ∃ ENTITY[8] (木像(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+       の(ENTITY[阿弥陀如来], ENTITY[5]) ∧ equals(GROUP[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   namely_-ENTITY-(GROUP[3], ENTITY[本尊]) ∧ の_戸(ENTITY[本尊], ENTITY[2])), へ_の_安置(ENTITY[2], ENTITY[1])) ∧
+  past(EVENT[9]) ∧ 奨励する.0_た(EVENT[9], ENTITY[真宗], ENTITY[1]))
+
+# ::id 26_wikipedia_KYOTO_BDS_00003,36;NJ
+# ::snt これ を 安置 する 仏壇 の 荘厳 に関して の 「 決まり 」 が 他 の 宗派 に比して 厳格 で ある 。
+∃ ENTITY[6] ENTITY[5] EVENT[7] EVENT[10] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[1] (
+ ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+  ENTITY[6] = これ{ENTITY[2], ENTITY[1]} ∧
+   安置する.0(EVENT[7], ENTITY[5], ENTITY[6]) ∧ LOC(EVENT[7]) = ENTITY[3] ∧ 仏壇(ENTITY[3]) ∧
+    の_荘厳(ENTITY[3], ENTITY[2]) ∧
+     に関して_の_決まり(ENTITY[2], ENTITY[1]) ∧
+      他(ENTITY[9]) ∧
+       の_宗派(ENTITY[9], ENTITY[8]) ∧ 厳格_で_ある(EVENT[10], ENTITY[1]) ∧ に比して(EVENT[10]) = ENTITY[8])
+
+# ::id 27_wikipedia_KYOTO_BDS_00003,37;NJ
+# ::snt 荘厳 は 本山 を 模 し て いる こと から 、 真宗 各派 で も 作り が 異なり 、 仏具 に関して も それぞれに 違い が ある 。
+∃ SITUATION[3] EVENT[5] EVENT[6] EVENT[10] ENTITY[4] ENTITY[2] ENTITY[9] ENTITY[7] ENTITY[1] (
+ 荘厳(ENTITY[1]) ∧
+  派(ENTITY[真宗]) ∧
+   作り(ENTITY[2]) ∧
+    本山(ENTITY[4]) ∧
+     こと(SITUATION[3], 模する.0_て_いる(EVENT[5], ENTITY[1], ENTITY[4])) ∧
+      仏具(ENTITY[7]) ∧
+       違い(ENTITY[9]) ∧
+        異なり(EVENT[6], (ENTITY[1], ENTITY[2])) ∧ から(EVENT[6]) = SITUATION[3] ∧
+         で(EVENT[6]) = ENTITY[真宗] ∧
+         それぞれに ENTITY[8] (ENTITY[8] = ENTITY[1], ある(EVENT[10], (ENTITY[8], ENTITY[9])) ∧ に関して(EVENT[10]) = ENTITY[7]))
+
+# ::id 28_wikipedia_KYOTO_BDS_00003,38;NJ
+# ::snt 仏壇 に 、 本尊 を 安置 し 荘厳 さ れ た もの を 、 真宗 で は 「 御内仏 」 と 呼ぶ 。
+∃ ENTITY[4] ENTITY[1] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   仏壇(ENTITY[5]) ∧
+    本尊(ENTITY[6]) ∧
+     安置する.0(EVENT[7], ENTITY[4], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[5] ∧
+      荘厳する.0_た(EVENT[8], _, ENTITY[2]) ∧ もの(ENTITY[2]) ∧
+      past(EVENT[8]) ∧ 呼ぶ(EVENT[9], ENTITY[1], ENTITY[2], ENTITY[御内仏]) ∧ で(EVENT[9]) = ENTITY[真宗])
+
+# ::id 29_wikipedia_KYOTO_BDS_00003,39;NJ
+# ::snt 真宗 において は 、 先祖壇 や 祈祷壇 として 、 用い ない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ ENTITY[2] EVENT[6] GROUP[3] (
+        ENTITY[2] = *pro* ∧
+         CONJ_や(∃ ENTITY[4] (先祖壇(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+          ∃ ENTITY[5] (祈祷壇(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+          用い(EVENT[6], ENTITY[1], ENTITY[2]) ∧ として(EVENT[6]) = GROUP[3] ∧
+           において(EVENT[6]) = ENTITY[真宗]))
+
+# ::id 30_wikipedia_KYOTO_BDS_00003,40;NJ
+# ::snt 真宗 の 本山 に は 、 その いずれ において も 基本的 に 、 本尊 阿弥陀如来 を 安置 する 本堂 （ 阿弥陀堂 ） と は 別 に 、 宗祖 親鸞 の 真影 を 安置 する 御影堂 が ある 。
+∃ ENTITY[5] EVENT[6] ENTITY[3] ENTITY[1] (
+ の_本山(ENTITY[真宗], ENTITY[1]) ∧
+  ENTITY[5] = *pro*{ENTITY[1], ENTITY[真宗]} ∧
+   安置する.0(EVENT[6], ENTITY[5], ENTITY[本尊_阿弥陀如来]) ∧ LOC(EVENT[6]) = ENTITY[3] ∧ 本堂(ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[阿弥陀堂], ENTITY[3]) ∧
+     も ENTITY[2] ∃ SITUATION[13] SITUATION[14] ENTITY[8] EVENT[11] EVENT[12] ENTITY[10] ENTITY[9] (
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[阿弥陀堂], ENTITY[本尊_阿弥陀如来], ENTITY[真宗]} ∧
+       宗祖(ENTITY[10]) ∧
+        namely_-ENTITY-(ENTITY[10], ENTITY[親鸞]) ∧
+         の_真影(ENTITY[親鸞], ENTITY[9]) ∧
+          安置する.0(EVENT[11], ENTITY[8], ENTITY[9]) ∧ LOC(EVENT[11]) = ENTITY[御影堂] ∧
+           ADV_基本的_に(SITUATION[14]) ∧
+            ADV_別_に_と(SITUATION[13], ENTITY[3]) ∧
+             FACT(SITUATION[14],
+              FACT(SITUATION[13],
+               ある(EVENT[12], ENTITY[御影堂]) ∧ において(EVENT[12]) = ENTITY[2] ∧
+                に(EVENT[12]) = ENTITY[1]))))
+
+# ::id 31_wikipedia_KYOTO_BDS_00003,41;NJ
+# ::snt 真宗 の 寺院 建築 に は 他 に も 内陣 に比べて 外陣 が 広い など 、 他 宗 に 見 られ ない 特徴 が ある 。
+∃ SITUATION[4] EVENT[7] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_寺院_建築(ENTITY[真宗], ENTITY[1]) ∧
+  他(ENTITY[2]) ∧
+   内陣(ENTITY[5]) ∧
+    外陣(ENTITY[6]) ∧
+     FACT(SITUATION[4], 広い(EVENT[7], ENTITY[6]) ∧ に比べて(EVENT[7]) = ENTITY[5]) ∧
+      ¬ ∃ EVENT[10] ENTITY[9] (
+            他_宗(ENTITY[9]) ∧
+             見(EVENT[10], _, ENTITY[3]) ∧ に(EVENT[10]) = ENTITY[9]) ∧
+       など_特徴(SITUATION[4], ENTITY[3]) ∧
+       ある(EVENT[11], ENTITY[3]) ∧ に(EVENT[11]) = ENTITY[2] ∧ に(EVENT[11]) = ENTITY[1])
+
+# ::id 32_wikipedia_KYOTO_BDS_00003,42;NJ
+# ::snt また 各派 とも に 、 宗祖 親鸞 聖人 の 忌日 に 、 「 報恩講 」 と 呼ば れる 法会 を 厳修 する 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  とも ENTITY[2] (各派(ENTITY[2]),
+   ∃ EVENT[8] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] (
+    宗祖(ENTITY[5]) ∧
+     namely_-ENTITY-(ENTITY[5], ENTITY[親鸞]) ∧
+      聖人(ENTITY[4]) ∧
+       namely_-ENTITY-(ENTITY[4], ENTITY[親鸞]) ∧
+        の_忌日(ENTITY[親鸞], ENTITY[3]) ∧
+         呼ば(EVENT[8], _, ENTITY[6], ENTITY[報恩講]) ∧ 法会(ENTITY[6]) ∧
+          厳修する.0(EVENT[9], ENTITY[1], ENTITY[6]) ∧ に(EVENT[9]) = ENTITY[3] ∧
+           に(EVENT[9]) = ENTITY[2])))
+
+# ::id 33_wikipedia_KYOTO_BDS_00003,43;NJ
+# ::snt その 旨 は 、 求道 ・ 弘教 の 恩徳 と 、 それ を通じて 信知せ しめ られ た 阿弥陀如来 の 恩徳 と に 報謝 し 、 その 教え を 聞信 する 法会 で ある 。
+∃ ENTITY[3] SITUATION[2] EVENT[12] EVENT[14] EVENT[15] GROUP[5] ENTITY[4] ENTITY[13] ENTITY[1] (
+ 旨(ENTITY[1]) ∧
+  教え(ENTITY[13]) ∧
+   ENTITY[3] = *pro*{ENTITY[1]} ∧
+    CONJ_と(∃ GROUP[7] ENTITY[6] (
+          is_element_of(ENTITY[求道], GROUP[7]) ∧ is_element_of(ENTITY[弘教], GROUP[7]) ∧
+           の_恩徳(GROUP[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[10] EVENT[11] ENTITY[8] (
+      ENTITY[10] = それ{ENTITY[8], ENTITY[弘教], ENTITY[求道], ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+       信知せする.0_た(EVENT[11], _, ENTITY[阿弥陀如来]) ∧ を通じて(EVENT[11]) = ENTITY[10] ∧
+        の_恩徳(ENTITY[阿弥陀如来], ENTITY[8]) ∧ past(EVENT[11]) ∧ is_element_of(ENTITY[8], GROUP[5]))) ∧
+     と(GROUP[5], ENTITY[4]) ∧
+      法会(SITUATION[2],
+       報謝する.0(EVENT[12], ENTITY[3]) ∧ に(EVENT[12]) = ENTITY[4] ∧
+        聞信する.0(EVENT[14], ENTITY[3], ENTITY[13])) ∧ で_ある(EVENT[15], ENTITY[1], SITUATION[2]))
+
+# ::id 34_wikipedia_KYOTO_BDS_00003,44;NJ
+# ::snt また この 法会 を 、 年間 最大 の 行事 と する 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 法会(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   最大(ENTITY[4]) ∧ の_年間_行事(ENTITY[4], ENTITY[3]) ∧ する(EVENT[5], ENTITY[1], ENTITY[2], ENTITY[3]))
+
+# ::id 35_wikipedia_KYOTO_BDS_00003,45;NJ
+# ::snt ただし 、 真宗 各派 で その 日 は 異なる 。
+∃ EVENT[2] ENTITY[1] (日(ENTITY[1]) ∧ 派(ENTITY[真宗]) ∧ 異なる(EVENT[2], ENTITY[1]) ∧ で(EVENT[2]) = ENTITY[真宗])
+
+# ::id 36_wikipedia_KYOTO_BDS_00003,46;NJ
+# ::snt （ 詳しく は 、 報恩講 宗派別 の 御正忌報恩講 の 日程 を 参照 。 ）
+IMPERATIVE(∃ EVENT[3] ENTITY[2] ENTITY[1] (
+      報恩講_宗派別(ENTITY[2]) ∧
+       の_xxx(ENTITY[2], ENTITY[御正忌報恩講]) ∧
+        の_日程(ENTITY[御正忌報恩講], ENTITY[1]) ∧ ADV_詳しく_は(EVENT[3]) ∧ 参照(EVENT[3], _, ENTITY[1])))
+
+# ::id 37_wikipedia_KYOTO_BDS_00003,47;NJ
+# ::snt 主 な 経典
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (主_な(ATTRIB[2]) ∧ ATTRIBUTE_経典(ATTRIB[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 38_wikipedia_KYOTO_BDS_00003,48;NJ
+# ::snt 正依 の 経典 は 浄土 三 部 経 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (の_経典(ENTITY[正依], ENTITY[1]) ∧ 浄土_三_部_経(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 39_wikipedia_KYOTO_BDS_00003,49;NJ
+# ::snt また 経典 で は 無い が 、 七高僧 の 著作 について も 重んじる 。
+∃ ENTITY[1] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  経典(ENTITY[2]) ∧
+   の_著作(ENTITY[七高僧], ENTITY[5]) ∧
+    について(ENTITY[5], ENTITY[4]) ∧
+     CONJ_が(¬ ∃ EVENT[3] で_は(EVENT[3], ENTITY[1], ENTITY[2]), 重んじる(EVENT[6], ENTITY[1], ENTITY[4])))
+
+# ::id 40_wikipedia_KYOTO_BDS_00003,50;NJ
+# ::snt 中でも 天親 の 『 無量寿経優婆提舎願生偈 』 は 、 師 で ある 法然 が 「 三経一論 」 と 呼び 、 浄土三部経 と 並べ て 特に 重んじ た 。
+∃ SITUATION[8] EVENT[3] EVENT[4] EVENT[5] EVENT[6] ENTITY[2] (
+ の_xxx(ENTITY[天親], ENTITY[無量寿経優婆提舎願生偈]) ∧
+  師(ENTITY[2]) ∧
+   で_ある(EVENT[3], ENTITY[法然], ENTITY[2]) ∧
+    ADV_中でも(SITUATION[8]) ∧
+     ADV_特に(EVENT[6]) ∧
+      past(EVENT[6]) ∧
+       FACT(SITUATION[8],
+        呼び(EVENT[4], ENTITY[法然], ENTITY[無量寿経優婆提舎願生偈], ENTITY[三経一論]) ∧
+         CONJ_te(並べ_て(EVENT[5], ENTITY[法然], ENTITY[無量寿経優婆提舎願生偈]) ∧ と(EVENT[5]) = ENTITY[浄土三部経],
+          重んじ_た(EVENT[6], ENTITY[法然], ENTITY[無量寿経優婆提舎願生偈]))))
+
+# ::id 41_wikipedia_KYOTO_BDS_00003,51;NJ
+# ::snt 親鸞 は 、 『 仏説無量寿経 』 を 『 大無量寿経 』 『 大経 』 と 呼び 特に 重んじ た 。
+∃ EVENT[2] EVENT[3] GROUP[1] (
+ is_element_of(ENTITY[大無量寿経], GROUP[1]) ∧ is_element_of(ENTITY[大経], GROUP[1]) ∧
+  past(EVENT[2]) ∧
+   ADV_特に(EVENT[3]) ∧
+    past(EVENT[3]) ∧ 呼び(EVENT[2], ENTITY[親鸞], ENTITY[仏説無量寿経], GROUP[1]) ∧ 重んじ_た(EVENT[3], ENTITY[親鸞], ENTITY[仏説無量寿経]))
+
+# ::id 42_wikipedia_KYOTO_BDS_00003,90;NJ
+# ::snt なお 蓮如 の 『 御文 （ 御文章 ） 』 は 、 本願寺派 ・ 大谷派 など で は 正依 の 聖教 に 準じ て 重んじる が 、 高田派 など 宗派 によって は 用い ない 。
+∃ SITUATION[7] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[8] GROUP[3] ENTITY[2] ENTITY[9] (
+ の_xxx(ENTITY[蓮如], ENTITY[御文]) ∧
+  namely_-ENTITY-(ENTITY[御文章], ENTITY[御文]) ∧
+   is_element_of(ENTITY[本願寺派], GROUP[3]) ∧ is_element_of(ENTITY[大谷派], GROUP[3]) ∧
+    など(GROUP[3], ENTITY[2]) ∧
+     宗派(ENTITY[9]) ∧
+      ENTITY[1] = *pro* ∧
+       の_聖教(ENTITY[正依], ENTITY[4]) ∧
+        など(ENTITY[高田派], ENTITY[8]) ∧
+         ADV_なお(SITUATION[7]) ∧
+          CONJ_が(FACT(SITUATION[7],
+                CONJ_te(準じ_て(EVENT[5], ENTITY[1], ENTITY[御文]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+                      で(EVENT[5]) = ENTITY[2],
+                 重んじる(EVENT[6], ENTITY[1], ENTITY[御文]) ∧ で(EVENT[6]) = ENTITY[2])),
+           ¬ ∃ EVENT[10] (用い(EVENT[10], ENTITY[8]) ∧ によって(EVENT[10]) = ENTITY[9])))
+
+# ::id 43_wikipedia_KYOTO_BDS_00003,91;NJ
+# ::snt （ 蓮如 は 、 本願寺 の 血脈 で ある 為 、 宗祖 親鸞 から の 法脈 を 重んずる 宗派 で は 用い ない 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] ENTITY[3] EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] (
+ 宗祖(ENTITY[8]) ∧
+  namely_-ENTITY-(ENTITY[8], ENTITY[親鸞]) ∧
+   から_の_法脈(ENTITY[親鸞], ENTITY[7]) ∧
+    重んずる(EVENT[9], ENTITY[5], ENTITY[7]) ∧ 宗派(ENTITY[5]) ∧
+     ENTITY[1] = *pro* ∧
+      の_血脈(ENTITY[本願寺], ENTITY[3]) ∧
+       FACT(SITUATION[2], で_ある(EVENT[4], ENTITY[蓮如], ENTITY[3])) ∧
+        ¬ ∃ EVENT[10] (用い(EVENT[10], ENTITY[5], ENTITY[1]) ∧ 為(EVENT[10]) = SITUATION[2]))
+
+# ::id 44_wikipedia_KYOTO_BDS_00003,92;NJ
+# ::snt また 蓮如 の 本願寺 と 高田派 は 、 争い が 起き 対立 し た 歴史 が ある 。 ）
+∃ SITUATION[1] EVENT[4] EVENT[5] EVENT[6] ENTITY[3] GROUP[2] (
+ の_xxx(ENTITY[蓮如], ENTITY[本願寺]) ∧
+  CONJ_と(is_element_of(ENTITY[本願寺], GROUP[2]), is_element_of(ENTITY[高田派], GROUP[2])) ∧
+   争い(ENTITY[3]) ∧
+    歴史(SITUATION[1], 起き(EVENT[4], ENTITY[3]) ∧ 対立する.0_た(EVENT[5], GROUP[2])) ∧
+     past(EVENT[5]) ∧ ある(EVENT[6], SITUATION[1]))
+
+# ::id 45_wikipedia_KYOTO_BDS_00003,93;NJ
+# ::snt 名称 について
+∃ EVENT[2] ENTITY[1] (名称(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ について(EVENT[2]) = ENTITY[1])
+
+# ::id 46_wikipedia_KYOTO_BDS_00003,94;NJ
+# ::snt 開祖 親鸞 は 、 釈尊 ・ 七高僧 へ と 継承 さ れる 他力念仏 の 系譜 を ふまえ 、 法然 （ 浄土宗 開祖 ） を 師 と 仰い で から の 生涯 に渡り 、 「 真 の 宗教 で ある 浄土宗 の 教え 」 を 継承 し 、 さらに 高め て 行く 事 に 力 を 注い だ 。
+∃ SITUATION[12] SITUATION[8] EVENT[5] EVENT[6] EVENT[11] EVENT[17] EVENT[18] EVENT[19] EVENT[22] GROUP[4] ENTITY[2] ENTITY[1] ENTITY[9] ENTITY[10] ENTITY[16] ENTITY[15] ENTITY[13] ENTITY[21] ENTITY[7] (
+ namely_-ENTITY-(ENTITY[開祖], ENTITY[親鸞]) ∧
+  is_element_of(ENTITY[釈尊], GROUP[4]) ∧ is_element_of(ENTITY[七高僧], GROUP[4]) ∧
+   継承する.0(EVENT[5], _, ENTITY[2]) ∧ へ_と(EVENT[5]) = GROUP[4] ∧ 他力念仏(ENTITY[2]) ∧
+    の_系譜(ENTITY[2], ENTITY[1]) ∧
+     浄土宗_開祖(ENTITY[9]) ∧
+      namely_-ENTITY-(ENTITY[9], ENTITY[法然]) ∧
+       師(ENTITY[10]) ∧
+        FACT(SITUATION[8], 仰い_で(EVENT[11], _, ENTITY[法然], ENTITY[10])) ∧
+         te_から_の_生涯(SITUATION[8], ENTITY[7]) ∧
+          真(ENTITY[16]) ∧
+           の_宗教(ENTITY[16], ENTITY[15]) ∧
+            で_ある(EVENT[17], ENTITY[浄土宗], ENTITY[15]) ∧
+             の_教え(ENTITY[浄土宗], ENTITY[13]) ∧
+              事(SITUATION[12],
+               継承する.0(EVENT[18], ENTITY[親鸞], ENTITY[13]) ∧ 高め_て_行く(EVENT[19], ENTITY[親鸞], ENTITY[13])) ∧
+               力(ENTITY[21]) ∧
+                ADV_さらに(EVENT[19]) ∧
+                 past(EVENT[22]) ∧
+                  ふまえ(EVENT[6], ENTITY[親鸞], ENTITY[1]) ∧
+                   注い_だ(EVENT[22], ENTITY[親鸞], ENTITY[21]) ∧ に(EVENT[22]) = SITUATION[12] ∧
+                    に渡り(EVENT[22]) = ENTITY[7])
+
+# ::id 47_wikipedia_KYOTO_BDS_00003,95;NJ
+# ::snt 法然 没後 の 弟子たち による 本願 ・ 念仏 に対する 解釈 の 違い から 、 のち に 浄土宗 西山派 など から の 批判 を 受ける 事 に つながる 。
+∃ ENTITY[10] SITUATION[9] EVENT[13] EVENT[14] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[12] ENTITY[11] ENTITY[8] ENTITY[1] (
+ 法然_没後(ENTITY[3]) ∧
+  弟子たち(ENTITY[4]) ∧
+   ∃ ENTITY[6] (本願(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+    ∃ ENTITY[7] (念仏(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+    に対する_解釈(GROUP[5], ENTITY[2]) ∧ による_解釈(ENTITY[4], ENTITY[2]) ∧ の_解釈(ENTITY[3], ENTITY[2]) ∧
+     の_違い(ENTITY[2], ENTITY[1]) ∧
+      のち(ENTITY[8]) ∧
+       ENTITY[10] = *pro*{ENTITY[1], ENTITY[8], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+        など(ENTITY[浄土宗_西山派], ENTITY[12]) ∧
+         から_の_批判(ENTITY[12], ENTITY[11]) ∧
+          事(SITUATION[9], 受ける(EVENT[13], ENTITY[10], ENTITY[11])) ∧
+           つながる(EVENT[14]) ∧ に(EVENT[14]) = SITUATION[9] ∧ に(EVENT[14]) = ENTITY[8] ∧
+            から(EVENT[14]) = ENTITY[1])
+
+# ::id 48_wikipedia_KYOTO_BDS_00003,100;NJ
+# ::snt 親鸞 は 越後 流罪 後 （ 承元の法難 ） に 関東 を 拠点 に 布教 を 行っ た ため 、 関東 に 親鸞 の 教え を 受け た 門徒 が 形成 さ れ て いく 。
+∃ SITUATION[1] EVENT[4] EVENT[6] EVENT[10] EVENT[11] ENTITY[3] ENTITY[5] ENTITY[2] ENTITY[9] ENTITY[7] (
+ 越後_流罪_後(ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[承元の法難], ENTITY[2]) ∧
+   拠点(ENTITY[3]) ∧
+    布教(ENTITY[5]) ∧
+     FACT(SITUATION[1],
+      xxx(EVENT[4], ENTITY[親鸞], ENTITY[関東], ENTITY[3]) ∧
+       行っ_た(EVENT[6], ENTITY[親鸞], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[2]) ∧
+      の_教え(ENTITY[親鸞], ENTITY[9]) ∧
+       受け_た(EVENT[10], ENTITY[7], ENTITY[9]) ∧ 門徒(ENTITY[7]) ∧
+        past(EVENT[6]) ∧
+         past(EVENT[10]) ∧
+          形成する.0_て_いく(EVENT[11], _, ENTITY[7]) ∧ に(EVENT[11]) = ENTITY[関東] ∧
+           ため(EVENT[11]) = SITUATION[1])
+
+# ::id 49_wikipedia_KYOTO_BDS_00003,101;NJ
+# ::snt 親鸞 の 没後 に 、 浄土宗 から 独立 し た 宗旨 として 形成 さ れる 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  の_没後(ENTITY[親鸞], ENTITY[2]) ∧
+   独立する.0_た(EVENT[5], ENTITY[3]) ∧ から(EVENT[5]) = ENTITY[浄土宗] ∧ 宗旨(ENTITY[3]) ∧
+    past(EVENT[5]) ∧
+     形成する.0(EVENT[6], _, ENTITY[1]) ∧ として(EVENT[6]) = ENTITY[3] ∧ に(EVENT[6]) = ENTITY[2])
+
+# ::id 50_wikipedia_KYOTO_BDS_00003,102;NJ
+# ::snt 親鸞 の 教え を 継ぐ 者 に は 自ら の 教義 こそ 浄土 へ の 往生 の 真 の 教え と の 思い は あっ た が 、 浄土真宗 と 名乗る こと は 浄土宗 の 否定 と も 取ら れ かね ない ため 、 当時 は ただ 真宗 と 名乗っ た 。
+∃ SITUATION[18] SITUATION[17] ENTITY[16] ENTITY[9] SITUATION[6] EVENT[15] EVENT[19] EVENT[23] EVENT[4] ENTITY[3] ENTITY[8] ENTITY[5] ENTITY[1] ENTITY[22] (
+ の_教え(ENTITY[親鸞], ENTITY[3]) ∧
+  継ぐ(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 者(ENTITY[1]) ∧
+   ENTITY[9] = 自ら{ENTITY[5], ENTITY[1], ENTITY[3], ENTITY[親鸞]} ∧
+    の_教義(ENTITY[9], ENTITY[8]) ∧
+     と(SITUATION[6],
+      こそ ENTITY[7] (ENTITY[7] = ENTITY[8],
+       ∃ EVENT[14] ENTITY[12] ENTITY[13] ENTITY[11] ENTITY[10] (
+        浄土(ENTITY[12]) ∧
+         へ_の_往生(ENTITY[12], ENTITY[11]) ∧
+          真(ENTITY[13]) ∧
+           の_教え(ENTITY[13], ENTITY[10]) ∧ の__教え(ENTITY[11], ENTITY[10]) ∧
+            xxx(EVENT[14], ENTITY[7], ENTITY[10])))) ∧
+      の_思い(SITUATION[6], ENTITY[5]) ∧
+       当時(ENTITY[22]) ∧
+        past(EVENT[15]) ∧
+         ADV_ただ(EVENT[23]) ∧
+          past(EVENT[23]) ∧
+           ENTITY[16] = *pro*{ENTITY[1], ENTITY[5], ENTITY[8], ENTITY[3], ENTITY[親鸞]} ∧
+            こと(SITUATION[18], 名乗る(EVENT[19], _, ENTITY[浄土真宗])) ∧
+             FACT(SITUATION[17],
+              ¬ ∃ ENTITY[20] EVENT[21] (
+                    の_否定(ENTITY[浄土宗], ENTITY[20]) ∧
+                     取ら_かね(EVENT[21], _, SITUATION[18]) ∧ と(EVENT[21]) = ENTITY[20])) ∧
+              CONJ_が(あっ_た(EVENT[15], (ENTITY[1], ENTITY[5])),
+               名乗っ_た(EVENT[23], ENTITY[16], ENTITY[真宗]) ∧ 時間(EVENT[23]) = ENTITY[22] ∧
+                ため(EVENT[23]) = SITUATION[17]))
+
+# ::id 51_wikipedia_KYOTO_BDS_00003,103;NJ
+# ::snt ちなみに 浄土宗 や 時宗 で も 自ら を 「 浄土真宗 」 「 真宗 」 と 称し た 例 が あり 、 また 時宗旧一向派 （ 開祖 一向俊聖 ） を 「 一向宗 」 と 称し た 例 も ある 。
+∃ ENTITY[9] SITUATION[8] ENTITY[4] ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[11] EVENT[12] GROUP[5] GROUP[3] ENTITY[10] (
+ ENTITY[2] = *pro* ∧
+  CONJ_や(is_element_of(ENTITY[浄土宗], GROUP[3]), is_element_of(ENTITY[時宗], GROUP[3])) ∧
+   ENTITY[4] = 自ら{ENTITY[時宗], ENTITY[浄土宗]} ∧
+    is_element_of(ENTITY[浄土真宗], GROUP[5]) ∧ is_element_of(ENTITY[真宗], GROUP[5]) ∧
+     例(SITUATION[1], 称し_た(EVENT[6], ENTITY[2], ENTITY[4], GROUP[5]) ∧ で(EVENT[6]) = GROUP[3]) ∧
+      ENTITY[9] = *pro*{ENTITY[真宗], ENTITY[浄土真宗], ENTITY[時宗], ENTITY[浄土宗]} ∧
+       namely_-ENTITY-(ENTITY[一向俊聖], ENTITY[時宗旧一向派]) ∧
+        開祖(ENTITY[10]) ∧
+         namely_-ENTITY-(ENTITY[10], ENTITY[時宗旧一向派]) ∧
+          例(SITUATION[8], 称し_た(EVENT[11], ENTITY[9], ENTITY[時宗旧一向派], ENTITY[一向宗])) ∧
+           past(EVENT[6]) ∧
+            past(EVENT[11]) ∧ CONJ_また(あり(EVENT[7], SITUATION[1]), ある(EVENT[12], SITUATION[8])))
+
+# ::id 52_wikipedia_KYOTO_BDS_00003,104;NJ
+# ::snt 近世 に は 浄土宗 から の 圧力 により 、 江戸 幕府 から 「 浄土真宗 」 と 名乗る こと を 禁じ られ 、 「 一向宗 」 と 公称 し た （ 逆 に 本来 「 一向宗 」 を 公称 し て い た 一向俊聖 の 法統 は 、 本来は 無関係 で ある 時宗 へ と 強制的 に 統合 さ れる 事 に なる ） 。
+∃ SITUATION[5] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 近世(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   から_の_圧力(ENTITY[浄土宗], ENTITY[3]) ∧
+    江戸_幕府(ENTITY[4]) ∧
+     こと(SITUATION[5], 名乗る(EVENT[6], ENTITY[4], ENTITY[浄土真宗])) ∧
+      past(EVENT[8]) ∧
+       禁じ(EVENT[7], ENTITY[4], SITUATION[5]) ∧ により(EVENT[7]) = ENTITY[3] ∧
+        公称する.0_た(EVENT[8], ENTITY[1], ENTITY[一向宗]) ∧ に(EVENT[8]) = ENTITY[2])
+
+# ::id 53_wikipedia_KYOTO_BDS_00003,105;NJ
+# ::snt 親鸞 の 法統 が 「 浄土真宗 」 を 名乗る こと の 是非 について 浄土真宗 と 浄土宗 の 間 で 争わ れ た の が 安永 3 年 （ 1774 年 ） から 15 年 にわたって 続け られ た 宗名論争 で ある 。
+∃ SITUATION[4] SITUATION[1] EVENT[6] EVENT[9] EVENT[13] EVENT[14] ENTITY[5] ENTITY[3] GROUP[8] ENTITY[7] ENTITY[2] ENTITY[12] ENTITY[11] (
+ の_法統(ENTITY[親鸞], ENTITY[5]) ∧
+  こと(SITUATION[4], 名乗る(EVENT[6], ENTITY[5], ENTITY[浄土真宗])) ∧
+   の_是非(SITUATION[4], ENTITY[3]) ∧
+    について(ENTITY[3], ENTITY[2]) ∧
+     CONJ_と(is_element_of(ENTITY[浄土真宗], GROUP[8]), is_element_of(ENTITY[浄土宗], GROUP[8])) ∧
+      の_間(GROUP[8], ENTITY[7]) ∧
+       の(SITUATION[1], 争わ_た(EVENT[9], _, ENTITY[2]) ∧ で(EVENT[9]) = ENTITY[7]) ∧
+        CD_安永_3_年_（_1774_年_）(ENTITY[11]) ∧
+         CD_15_年(ENTITY[12]) ∧
+          続け_た(EVENT[13], _, ENTITY[宗名論争]) ∧ にわたって(EVENT[13]) = ENTITY[12] ∧
+           から(EVENT[13]) = ENTITY[11] ∧
+           past(EVENT[9]) ∧ past(EVENT[13]) ∧ で_ある(EVENT[14], SITUATION[1], ENTITY[宗名論争]))
+
+# ::id 54_wikipedia_KYOTO_BDS_00003,106;NJ
+# ::snt 明治 5 年 （ 1872 年 ） 太政官正院 から 各 府 県 へ 「 一向宗名之儀、自今真宗ト改名可致旨 」 の 布告 が 発せ られ 、 ここ に 近代 に なっ て ようやく 「 （ 浄土 ） 真宗 」 と 表記 する こと が 認め られ た の で ある 。
+∃ SITUATION[16] ENTITY[13] SITUATION[12] ENTITY[11] ENTITY[8] EVENT[10] EVENT[14] EVENT[15] TIME[1] ENTITY[9] (
+ CD_明治_5_年_（_1872_年_）(TIME[1]) ∧
+  ENTITY[8] = ここ{ENTITY[太政官正院], ENTITY[一向宗名之儀、自今真宗ト改名可致旨]} ∧
+   近代(ENTITY[9]) ∧
+    ENTITY[11] = *pro*{ENTITY[9], ENTITY[太政官正院], ENTITY[一向宗名之儀、自今真宗ト改名可致旨]} ∧
+     ENTITY[13] = *pro*{ENTITY[9], ENTITY[太政官正院], ENTITY[一向宗名之儀、自今真宗ト改名可致旨]} ∧
+      namely_-ENTITY-(ENTITY[真宗], ENTITY[浄土]) ∧
+       こと(SITUATION[12], 表記する.0(EVENT[14], ENTITY[11], ENTITY[13], ENTITY[浄土])) ∧
+        ADV_ようやく(SITUATION[16]) ∧
+         past(EVENT[15]) ∧
+          各 GROUP[3] ENTITY[2] (
+           (∃ ENTITY[4] (府(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+              ∃ ENTITY[5] (県(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧ equals(GROUP[3], ENTITY[2])),
+           ∃ EVENT[7] ENTITY[6] (
+            の_布告(ENTITY[一向宗名之儀、自今真宗ト改名可致旨], ENTITY[6]) ∧
+             発せ(EVENT[7], ENTITY[太政官正院], ENTITY[6]) ∧ へ(EVENT[7]) = ENTITY[2] ∧
+              is_contained_in(時間(EVENT[7]), TIME[1]))) ∧
+           CONJ_te(なっ_て(EVENT[10]) ∧ に(EVENT[10]) = ENTITY[9] ∧ に(EVENT[10]) = ENTITY[8],
+            FACT(SITUATION[16], 認め_た_の_で_ある(EVENT[15], (_, SITUATION[12]), ENTITY[11]))))
+
+# ::id 55_wikipedia_KYOTO_BDS_00003,107;NJ
+# ::snt 歴史
+∃ EVENT[2] ENTITY[1] (歴史(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 56_wikipedia_KYOTO_BDS_00003,108;NJ
+# ::snt 親鸞 時代
+∃ EVENT[2] ENTITY[1] (親鸞_時代(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 57_wikipedia_KYOTO_BDS_00003,109;NJ
+# ::snt 蓮如 の 登場 まで
+∃ EVENT[2] ENTITY[1] (の_登場(ENTITY[蓮如], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ まで(EVENT[2]) = ENTITY[1])
+
+# ::id 58_wikipedia_KYOTO_BDS_00003,110;NJ
+# ::snt 親鸞 の 死後 、 親鸞 の 曾孫 にあたる 覚如 （ 1270 年 - 1351 年 ） は 、 三 代 伝持 等 を 根拠 と し て 親鸞 の 祖廟 継承 の 正当性 を 主張 し 、 本願寺 （ 別名 大谷本願寺 ） を 建て て 本願寺 3 世 と 称し た 。
+∃ EVENT[6] EVENT[9] EVENT[11] EVENT[12] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[10] TIME[1] ENTITY[3] ENTITY[2] (
+ の_曾孫(ENTITY[親鸞], ENTITY[3]) ∧
+  にあたる_xxx(ENTITY[3], ENTITY[覚如]) ∧
+   CD_1270_年_1351_年(ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[2], ENTITY[覚如]) ∧
+     の_死後(ENTITY[親鸞], TIME[1]) ∧
+      等(ENTITY[三_代_伝持], ENTITY[4]) ∧
+       根拠(ENTITY[5]) ∧
+        の_祖廟_継承(ENTITY[親鸞], ENTITY[8]) ∧
+         の_正当性(ENTITY[8], ENTITY[7]) ∧
+          namely_-ENTITY-(ENTITY[大谷本願寺], ENTITY[本願寺]) ∧
+           別名(ENTITY[10]) ∧
+            namely_-ENTITY-(ENTITY[10], ENTITY[本願寺]) ∧
+             past(EVENT[12]) ∧
+              CONJ_te(し_て(EVENT[6], ENTITY[覚如], ENTITY[4], ENTITY[5]), 主張する.0(EVENT[9], ENTITY[覚如], ENTITY[7])) ∧
+               CONJ_te(建て_て(EVENT[11], ENTITY[覚如], ENTITY[本願寺]) ∧ is_contained_in(時間(EVENT[11]), TIME[1]),
+                称し_た(EVENT[12], ENTITY[覚如], ENTITY[本願寺_3_世]) ∧ is_contained_in(時間(EVENT[12]), TIME[1])))
+
+# ::id 59_wikipedia_KYOTO_BDS_00003,111;NJ
+# ::snt こうした 動き に対し 、 親鸞 の 関東 における 門弟 の 系譜 を 継ぐ 佛光寺 7 世 の 了源 （ 1295 年 - 1336 年 ） など 他 の 法脈 は 、 佛光寺 や 専修寺 など を 根拠地 と し て 、 次第 に 本願寺 に 対抗的 な 立場 を 取る こと に なっ た 。
+∃ ATTRIB[16] SITUATION[9] EVENT[13] EVENT[17] EVENT[18] GROUP[11] ENTITY[12] ENTITY[10] ENTITY[15] ENTITY[14] EVENT[7] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[8] ENTITY[2] ENTITY[1] (
+ 動き(ENTITY[1]) ∧
+  における_門弟(ENTITY[関東], ENTITY[6]) ∧ の_門弟(ENTITY[親鸞], ENTITY[6]) ∧
+   の_系譜(ENTITY[6], ENTITY[5]) ∧
+    継ぐ(EVENT[7], ENTITY[了源], ENTITY[5]) ∧
+     の_xxx(ENTITY[佛光寺_7_世], ENTITY[了源]) ∧
+      CD_1295_年_1336_年(ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[了源]) ∧
+        他(ENTITY[8]) ∧
+         の_法脈(ENTITY[8], ENTITY[2]) ∧ など_法脈(ENTITY[了源], ENTITY[2]) ∧
+          CONJ_や(is_element_of(ENTITY[佛光寺], GROUP[11]), is_element_of(ENTITY[専修寺], GROUP[11])) ∧
+           など(GROUP[11], ENTITY[10]) ∧
+            根拠地(ENTITY[12]) ∧
+             次第(ENTITY[14]) ∧
+              対抗的_な(ATTRIB[16]) ∧
+               ATTRIBUTE_立場(ATTRIB[16], ENTITY[15]) ∧
+                こと(SITUATION[9],
+                 CONJ_te(し_て(EVENT[13], ENTITY[2], ENTITY[10], ENTITY[12]),
+                  取る(EVENT[17], ENTITY[2], ENTITY[15]) ∧ に(EVENT[17]) = ENTITY[本願寺] ∧
+                   に(EVENT[17]) = ENTITY[14])) ∧
+                 past(EVENT[18]) ∧
+                  なっ_た(EVENT[18], ENTITY[2], SITUATION[9]) ∧ に対し(EVENT[18]) = ENTITY[1])
+
+# ::id 60_wikipedia_KYOTO_BDS_00003,112;NJ
+# ::snt この 頃 の 浄土真宗 は 、 佛光寺 や 専修寺 において 活発 な 布教 活動 が 行わ れ 多く の 信者 を 得 た が 、 本願寺 は 8 世 蓮如 の 登場 まで は 、 天台宗 の 末寺 として 存続 し て い た に 過ぎ なかっ た 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] GROUP[2] ENTITY[1] ENTITY[9] ENTITY[8] (
+ 頃(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[浄土真宗]) ∧
+   CD_8_世(ENTITY[9]) ∧
+    namely_-ENTITY-(ENTITY[9], ENTITY[蓮如]) ∧
+     の_登場(ENTITY[蓮如], ENTITY[8]) ∧
+      CONJ_や(is_element_of(ENTITY[佛光寺], GROUP[2]), is_element_of(ENTITY[専修寺], GROUP[2])) ∧
+       活発_な(ATTRIB[4]) ∧
+        ATTRIBUTE_布教_活動(ATTRIB[4], ENTITY[3]) ∧
+         CONJ_が(行わ(EVENT[5], _, ENTITY[3]) ∧ において(EVENT[5]) = GROUP[2] ∧
+               多く_の ENTITY[6] (信者(ENTITY[6]), ∃ EVENT[7] (past(EVENT[7]) ∧ 得_た(EVENT[7], ENTITY[浄土真宗], ENTITY[6]))),
+          ¬ ∃ SITUATION[10] EVENT[12] EVENT[13] ENTITY[11] (
+                の_末寺(ENTITY[天台宗], ENTITY[11]) ∧
+                 FACT(SITUATION[10], 存続する.0_て_い_た(EVENT[12], ENTITY[本願寺]) ∧ として(EVENT[12]) = ENTITY[11]) ∧
+                  past(EVENT[12]) ∧
+                   past(EVENT[13]) ∧
+                    過ぎ_た(EVENT[13], ENTITY[本願寺]) ∧ に(EVENT[13]) = SITUATION[10] ∧
+                     まで(EVENT[13]) = ENTITY[8])))
+
+# ::id 61_wikipedia_KYOTO_BDS_00003,113;NJ
+# ::snt 蓮如 の 登場 ～ 石山合戦
+∃ EVENT[3] GROUP[1] (
+ ∃ ENTITY[2] (の_登場(ENTITY[蓮如], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧ is_element_of(ENTITY[石山合戦], GROUP[1]) ∧
+  xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 62_wikipedia_KYOTO_BDS_00003,114;NJ
+# ::snt 室町 時代 の 後期 に 登場 し た 本願寺 8 世 の 蓮如 （ 1415 年 - 1499 年 ） は 、 当時 の 民衆 の 成長 を 背景 に 講 と 呼ば れる 組織 を 築き 、 人々 が 平等 に 教え を 聴き 団結 できる 場 を 提供 し 、 また 親鸞 の 教え を 安易 な 言葉 で 述べ た 『 御文 （ 御文章 ） 』 を 著作 し 、 一般 に 広く 教化 し た 。
+∃ SITUATION[32] SITUATION[12] ATTRIB[26] EVENT[10] EVENT[11] EVENT[15] EVENT[16] EVENT[21] EVENT[22] EVENT[27] EVENT[28] EVENT[30] ENTITY[9] ENTITY[8] ENTITY[13] ENTITY[19] ENTITY[18] ENTITY[20] ENTITY[17] ENTITY[6] ENTITY[25] ENTITY[24] ENTITY[29] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 室町_時代(ENTITY[4]) ∧
+  の_後期(ENTITY[4], ENTITY[3]) ∧
+   登場する.0_た(EVENT[5], ENTITY[蓮如]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+    の_xxx(ENTITY[本願寺_8_世], ENTITY[蓮如]) ∧
+     CD_1415_年_1499_年(ENTITY[1]) ∧
+      namely_-ENTITY-(ENTITY[1], ENTITY[蓮如]) ∧
+       past(EVENT[5]) ∧
+        人々(ENTITY[8]) ∧
+         教え(ENTITY[9]) ∧
+          FACT(SITUATION[12],
+           聴き(EVENT[10], ENTITY[8], ENTITY[9]) ∧ LOC(EVENT[10]) = ENTITY[6] ∧
+            団結する.0(EVENT[11], ENTITY[8], ENTITY[9]) ∧ LOC(EVENT[11]) = ENTITY[6]) ∧
+           場(ENTITY[6]) ∧
+           呼ば(EVENT[15], _, ENTITY[13], ENTITY[講]) ∧ 組織(ENTITY[13]) ∧
+            当時(ENTITY[19]) ∧
+             の_民衆(ENTITY[19], ENTITY[18]) ∧
+              の_成長(ENTITY[18], ENTITY[17]) ∧
+               背景(ENTITY[20]) ∧
+                の_教え(ENTITY[親鸞], ENTITY[24]) ∧
+                 安易_な(ATTRIB[26]) ∧
+                  ATTRIBUTE_言葉(ATTRIB[26], ENTITY[25]) ∧
+                   述べ_た(EVENT[27], ENTITY[御文], ENTITY[24]) ∧ で(EVENT[27]) = ENTITY[25] ∧
+                    namely_-ENTITY-(ENTITY[御文章], ENTITY[御文]) ∧
+                     一般(ENTITY[29]) ∧
+                      ADV_平等_に(SITUATION[12]) ∧
+                       ADV_また(SITUATION[32]) ∧
+                        past(EVENT[27]) ∧
+                         ADV_広く(EVENT[30]) ∧
+                          past(EVENT[30]) ∧
+                           築き(EVENT[16], ENTITY[6], ENTITY[13]) ∧
+                            xxx(EVENT[21], ENTITY[6], ENTITY[17], ENTITY[20]) ∧
+                             提供する.0(EVENT[22], ENTITY[蓮如], ENTITY[6]) ∧
+                            FACT(SITUATION[32],
+                             著作する.0(EVENT[28], ENTITY[蓮如], ENTITY[御文]) ∧
+                              教化する.0_た(EVENT[30], ENTITY[蓮如]) ∧ に(EVENT[30]) = ENTITY[29]))
+
+# ::id 63_wikipedia_KYOTO_BDS_00003,115;NJ
+# ::snt この 事 により 本願寺 は 急速 に 発展・拡大 し 、 一向宗 と 呼ば れる よう に なっ た （ 逆 に この 他 の 真宗 各派 は 衰退 する こと と なる ） 。
+∃ SITUATION[4] EVENT[2] EVENT[5] EVENT[6] ENTITY[1] (
+ 事(ENTITY[1]) ∧
+  ADV_急速_に(EVENT[2]) ∧
+   past(EVENT[6]) ∧
+    よう(SITUATION[4], 呼ば(EVENT[5], _, ENTITY[本願寺], ENTITY[一向宗])) ∧
+     発展.拡大する.0(EVENT[2], ENTITY[本願寺]) ∧ なっ_た(EVENT[6], ENTITY[本願寺], SITUATION[4]) ∧ により(EVENT[6]) = ENTITY[1])
+
+# ::id 64_wikipedia_KYOTO_BDS_00003,117;NJ
+# ::snt 中世 末 の 複雑 な 支配権 の 並存 する 体制 に 不満 を 持つ 村々 に 国人 ・ 土豪 が 真宗 に 改宗 する こと で 加わり 、 「 一向一揆 」 と 呼ば れる 一 郡 や 一 国 の 一向宗徒 が 一 つ に 団結 し た 一揆 が 各地 で 起こる よう に なる 。
+∃ SITUATION[24] SITUATION[13] ATTRIB[6] EVENT[7] EVENT[9] EVENT[14] EVENT[15] EVENT[18] EVENT[23] EVENT[27] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[3] GROUP[10] ENTITY[1] GROUP[19] ENTITY[22] ENTITY[16] (
+ 中世_末(ENTITY[4]) ∧
+  複雑_な(ATTRIB[6]) ∧
+   ATTRIBUTE_支配権(ATTRIB[6], ENTITY[5]) ∧
+    の_体制(ENTITY[4], ENTITY[3]) ∧ THAT_体制(並存する.0(EVENT[7], ENTITY[5]), ENTITY[3]) ∧
+     不満(ENTITY[8]) ∧
+      持つ(EVENT[9], ENTITY[1], ENTITY[8]) ∧ に(EVENT[9]) = ENTITY[3] ∧ 村々(ENTITY[1]) ∧
+       ∃ ENTITY[11] (国人(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (土豪(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+        こと(SITUATION[13], 改宗する.0(EVENT[14], GROUP[10]) ∧ に(EVENT[14]) = ENTITY[真宗]) ∧
+         CONJ_や(∃ ENTITY[20] (CD_一_郡(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[19])),
+          ∃ ENTITY[21] (CD_一_国(ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[19]))) ∧
+          の_xxx(GROUP[19], ENTITY[一向宗徒]) ∧
+           CD_一_つ(ENTITY[22]) ∧
+            呼ば(EVENT[18], _, ENTITY[16], ENTITY[一向一揆]) ∧
+             THAT_一揆(団結する.0_た(EVENT[23], ENTITY[一向宗徒]) ∧ に(EVENT[23]) = ENTITY[22], ENTITY[16]) ∧
+             よう(SITUATION[24],
+              各 ENTITY[25] (地(ENTITY[25]),
+               ∃ EVENT[26] (起こる(EVENT[26], ENTITY[16]) ∧ で(EVENT[26]) = ENTITY[25]))) ∧
+              past(EVENT[23]) ∧
+               加わり(EVENT[15], GROUP[10]) ∧ で(EVENT[15]) = SITUATION[13] ∧
+                に(EVENT[15]) = ENTITY[1] ∧ なる(EVENT[27], ENTITY[16], SITUATION[24]))
+
+# ::id 65_wikipedia_KYOTO_BDS_00003,118;NJ
+# ::snt その ため 、 この 後 に 加賀 の 例 で 記述 する ような 大名 に対する 反乱 が 各地 で 頻発 し 、 徳川 家康 ・ 上杉 謙信 など 多数 の 大名 が 一向宗 の 禁教令 を 出し た 。
+∃ EVENT[6] ENTITY[5] ENTITY[7] ENTITY[2] ENTITY[4] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  後(ENTITY[4]) ∧
+   の_例(ENTITY[加賀], ENTITY[5]) ∧
+    大名(ENTITY[7]) ∧
+     記述する.0_ような(EVENT[6], ENTITY[2]) ∧ で(EVENT[6]) = ENTITY[5] ∧ に(EVENT[6]) = ENTITY[4] ∧
+      に対する_反乱(ENTITY[7], ENTITY[2]) ∧
+      各 ENTITY[8] (地(ENTITY[8]), ∃ EVENT[9] (頻発する.0(EVENT[9], ENTITY[2]) ∧ で(EVENT[9]) = ENTITY[8])) ∧
+       多数_の GROUP[11] ENTITY[10] ((is_element_of(ENTITY[徳川_家康], GROUP[11]) ∧ is_element_of(ENTITY[上杉_謙信], GROUP[11]) ∧ など_大名(GROUP[11], ENTITY[10])),
+        ∃ EVENT[13] ENTITY[12] (
+         の_禁教令(ENTITY[一向宗], ENTITY[12]) ∧
+          past(EVENT[13]) ∧ 出し_た(EVENT[13], ENTITY[10], ENTITY[12]) ∧ ADV(EVENT[13]) = ENTITY[1])))
+
+# ::id 66_wikipedia_KYOTO_BDS_00003,119;NJ
+# ::snt 中でも 、 薩摩国 の 島津氏 は 明治 時代 まで 禁教令 を 継続 し た ため 、 南九州 の 真宗信者 は 講 を 組織 し 秘か に 山中 の 洞窟 で 信仰 を 守っ た （ かくれ念仏 ） 。
+∃ SITUATION[11] SITUATION[1] EVENT[4] EVENT[5] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[8] ENTITY[6] (
+ の_xxx(ENTITY[薩摩国], ENTITY[島津氏]) ∧
+  の_xxx(ENTITY[南九州], ENTITY[真宗信者]) ∧
+   明治_時代(ENTITY[2]) ∧
+    禁教令(ENTITY[3]) ∧
+     FACT(SITUATION[1], 継続する.0_た(EVENT[4], ENTITY[島津氏], ENTITY[3]) ∧ まで(EVENT[4]) = ENTITY[2]) ∧
+      山中(ENTITY[7]) ∧
+       の_洞窟(ENTITY[7], ENTITY[6]) ∧
+        信仰(ENTITY[8]) ∧
+         ADV_中でも(SITUATION[11]) ∧
+          past(EVENT[4]) ∧
+           ADV_秘か_に(EVENT[9]) ∧
+            past(EVENT[9]) ∧
+             FACT(SITUATION[11],
+              組織する.0(EVENT[5], ENTITY[真宗信者], ENTITY[講]) ∧
+               守っ_た(EVENT[9], ENTITY[真宗信者], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[6] ∧
+                ため(EVENT[9]) = SITUATION[1]))
+
+# ::id 67_wikipedia_KYOTO_BDS_00003,120;NJ
+# ::snt やがて 応仁の乱 （ 1467 年 - 1477 年 ） が 起こり 、 当時 越前国 に あっ た 本願寺 の 根拠 吉崎 御坊 の 北 、 加賀国 で 東 軍 ・ 西 軍 に 分かれ て の 内乱 が 生じる と 、 専修寺派 の 門徒 が 西 軍 に 与し た 富樫 幸千代 に 味方 し た の に対し 、 本願寺派 の 門徒 は 越前 の 大名 朝倉 孝景 （ 7 代 当主 ） の 仲介 で 、 文明 6 年 （ 1474 年 ） 、 加賀 を 追い出さ れ た 前 守護 で 幸千代 の 兄 で ある 東 軍 の 富樫 政親 に 味方 し て 幸千代 を 追い出し た （ つまり 、 加賀 の 一向一揆 は 、 最初 は 真宗 内 の 勢力争い で も あっ た ） 。
+∃ ENTITY[21] (
+ の_門徒(ENTITY[本願寺派], ENTITY[21]) ∧
+  ∀ SITUATION[9] EVENT[2] EVENT[8] EVENT[13] EVENT[14] ENTITY[1] TIME[7] ENTITY[5] ENTITY[4] GROUP[10] CND_と(
+      CD_1467_年_1477_年(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[応仁の乱]) ∧ 当時(TIME[7]) ∧
+       あっ_た(EVENT[8], ENTITY[本願寺]) ∧ に(EVENT[8]) = ENTITY[越前国] ∧
+        is_contained_in(時間(EVENT[8]), TIME[7]) ∧ の_根拠(ENTITY[本願寺], ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[5], ENTITY[吉崎_御坊]) ∧
+       の_北(ENTITY[吉崎_御坊], ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[4], ENTITY[加賀国]) ∧
+       ∃ ENTITY[11] (東_軍(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (西_軍(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+       内乱(SITUATION[9], 分かれ_て_の(EVENT[13]) ∧ に(EVENT[13]) = GROUP[10]) ∧ ADV_やがて(EVENT[2]) ∧
+       past(EVENT[8]) ∧
+       起こり(EVENT[2], ENTITY[応仁の乱]) ∧ 生じる(EVENT[14], SITUATION[9]) ∧ で(EVENT[14]) = ENTITY[加賀国],
+      ∃ SITUATION[15] EVENT[19] EVENT[20] EVENT[30] EVENT[31] EVENT[33] EVENT[34] EVENT[35] ENTITY[18] ENTITY[16] ENTITY[24] ENTITY[23] TIME[29] ENTITY[27] ENTITY[32] ENTITY[25] ENTITY[22] (
+       の_門徒(ENTITY[専修寺派], ENTITY[16]) ∧
+        西_軍(ENTITY[18]) ∧
+         与し_た(EVENT[19], ENTITY[富樫_幸千代]) ∧ に(EVENT[19]) = ENTITY[18] ∧
+          の(SITUATION[15], 味方する.0_た(EVENT[20], ENTITY[16]) ∧ に(EVENT[20]) = ENTITY[富樫_幸千代]) ∧
+           の_大名(ENTITY[越前], ENTITY[24]) ∧
+            namely_-ENTITY-(ENTITY[24], ENTITY[朝倉_孝景]) ∧
+             (CD_7_代(ENTITY[23]), 当主(ENTITY[23])) ∧
+              namely_-ENTITY-(ENTITY[23], ENTITY[朝倉_孝景]) ∧
+               の_仲介(ENTITY[朝倉_孝景], ENTITY[22]) ∧
+                CD_文明_6_年_（_1474_年_）(TIME[29]) ∧
+                 追い出さ_た(EVENT[30], _, ENTITY[27]) ∧ を(EVENT[30]) = ENTITY[加賀] ∧
+                  is_contained_in(時間(EVENT[30]), TIME[29]) ∧ 前_守護(ENTITY[27]) ∧
+                  の_兄(ENTITY[幸千代], ENTITY[32]) ∧
+                   CONJ_te(で(EVENT[31], ENTITY[富樫_政親], ENTITY[27]), で_ある(EVENT[33], ENTITY[富樫_政親], ENTITY[32])) ∧
+                    東_軍(ENTITY[25]) ∧
+                     の_xxx(ENTITY[25], ENTITY[富樫_政親]) ∧
+                      past(EVENT[19]) ∧
+                       past(EVENT[20]) ∧
+                        past(EVENT[30]) ∧
+                         past(EVENT[35]) ∧
+                          CONJ_te(味方する.0_て(EVENT[34], ENTITY[21]) ∧ に(EVENT[34]) = ENTITY[富樫_政親] ∧
+                                で(EVENT[34]) = ENTITY[22] ∧ に対し(EVENT[34]) = SITUATION[15],
+                           追い出し_た(EVENT[35], ENTITY[21], ENTITY[幸千代]) ∧ で(EVENT[35]) = ENTITY[22] ∧
+                            に対し(EVENT[35]) = SITUATION[15]))))
+
+# ::id 68_wikipedia_KYOTO_BDS_00003,121;NJ
+# ::snt しかし その 後 、 本願寺 門徒 と 富樫 政親 は 対立 する よう に なり 、 長享 2 年 （ 1488 年 ） 、 政親 が 一向宗 討伐軍 を 差し向ける と 、 結局 政親 を 自刃 に 追い込ん で 自治 を 行う まで に なっ た （ ただし 富樫氏 一族 の 富樫 正高 は 一向一揆 に 同情的 で 、 守護 大名 として 象徴的 に 居座っ て いる ） 。
+∃ SITUATION[4] EVENT[5] EVENT[6] ENTITY[3] GROUP[2] TIME[1] (
+ 後(TIME[1]) ∧
+  本願寺_門徒(ENTITY[3]) ∧
+   CONJ_と(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[富樫_政親], GROUP[2])) ∧
+    よう(SITUATION[4], 対立する.0(EVENT[5], GROUP[2])) ∧
+     なり(EVENT[6], GROUP[2], SITUATION[4]) ∧ is_contained_in(時間(EVENT[6]), TIME[1]) ∧
+      ∀ ENTITY[8] TIME[7] EVENT[9] CND_と(
+          CD_長享_2_年_（_1488_年_）(TIME[7]) ∧ 一向宗_討伐軍(ENTITY[8]) ∧
+           差し向ける(EVENT[9], ENTITY[政親], ENTITY[8]) ∧ is_contained_in(時間(EVENT[9]), TIME[7]),
+          ∃ SITUATION[13] ENTITY[10] SITUATION[17] ENTITY[11] ENTITY[14] EVENT[12] EVENT[15] EVENT[16] (
+           ADV_結局(SITUATION[17]) ∧
+            past(EVENT[16]) ∧
+             ENTITY[10] = *pro*{ENTITY[8], ENTITY[政親], ENTITY[富樫_政親], ENTITY[3]} ∧
+              自刃(ENTITY[11]) ∧
+               自治(ENTITY[14]) ∧
+                FACT(SITUATION[13], 行う(EVENT[15], ENTITY[10], ENTITY[14])) ∧
+                 FACT(SITUATION[17],
+                  CONJ_te(追い込ん_で(EVENT[12], ENTITY[10], ENTITY[政親]) ∧ に(EVENT[12]) = ENTITY[11],
+                   なっ_た(EVENT[16], ENTITY[10]) ∧ まで_に(EVENT[16]) = SITUATION[13])))))
+
+# ::id 69_wikipedia_KYOTO_BDS_00003,122;NJ
+# ::snt その 後 、 門徒 の 矛先 は 朝倉氏 に 奪わ れ て い た 吉崎 の 道場 奪回 に 向け られ 、 北陸 全土 から 狩り出さ れ た 門徒 が 何 度 も 朝倉氏 と 決戦 し て いる 。
+∃ ENTITY[4] ENTITY[8] EVENT[6] EVENT[7] EVENT[10] ENTITY[3] ENTITY[2] TIME[1] (
+ 後(TIME[1]) ∧
+  門徒(ENTITY[3]) ∧
+   の_矛先(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[6]) ∧
+     past(EVENT[10]) ∧
+      奪わ_て_い_た(EVENT[6], ENTITY[朝倉氏], ENTITY[4]) ∧ の_道場_奪回(ENTITY[吉崎], ENTITY[4]) ∧
+       土(ENTITY[北陸]) ∧
+        狩り出さ_た(EVENT[10], _, ENTITY[8]) ∧ から(EVENT[10]) = ENTITY[北陸] ∧ 門徒(ENTITY[8]) ∧
+         向け(EVENT[7], _, ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[4] ∧
+          も ENTITY[11] (何_度(ENTITY[11]),
+           ∃ EVENT[12] (
+            決戦する.0_て_いる(EVENT[12], ENTITY[8]) ∧
+             と(EVENT[12]) = ENTITY[朝倉氏] ∧
+              MSR(EVENT[12]) = ENTITY[11] ∧ is_contained_in(時間(EVENT[12]), TIME[1]))))
+
+# ::id 70_wikipedia_KYOTO_BDS_00003,123;NJ
+# ::snt 一方 、 畿内 で は 、 吉崎 より 移っ た 蓮如 が 文明 14 年 （ 1482 年 ） に 建立 し た 、 京都 山科本願寺 が 本拠地 で あっ た が 、 その 勢威 を 恐れ た 細川 晴元 は 日蓮宗徒 と 結び 、 天文 （ 元号 ） 元 年 （ 1532 年 ） 8 月 に 山科本願寺 を 焼き討ち し た （ 真宗 で は 「 天文の錯乱 」 、 日蓮宗 で は 「 天文法華の乱 」 ） 。
+∃ ENTITY[4] ENTITY[6] ENTITY[12] EVENT[3] EVENT[5] EVENT[7] EVENT[11] EVENT[13] EVENT[10] ENTITY[9] (
+ 勢威(ENTITY[9]) ∧
+  恐れ_た(EVENT[10], ENTITY[細川_晴元], ENTITY[9]) ∧
+   past(EVENT[10]) ∧
+    past(EVENT[3]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[7]) ∧
+       past(EVENT[13]) ∧
+        移っ_た(EVENT[3], ENTITY[蓮如]) ∧ より(EVENT[3]) = ENTITY[吉崎] ∧
+         CD_文明_14_年_（_1482_年_）(ENTITY[4]) ∧
+          建立する.0_た(EVENT[5], ENTITY[蓮如], ENTITY[京都_山科本願寺]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+           本拠地(ENTITY[6]) ∧
+            CD_天文_（_元号_）_元_年_（_1532_年_）_8_月(ENTITY[12]) ∧
+             CONJ_が(で_あっ_た(EVENT[7], ENTITY[京都_山科本願寺], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[畿内],
+              結び(EVENT[11], ENTITY[細川_晴元], ENTITY[日蓮宗徒]) ∧
+               焼き討ちする.0_た(EVENT[13], ENTITY[細川_晴元], ENTITY[山科本願寺]) ∧ に(EVENT[13]) = ENTITY[12]))
+
+# ::id 71_wikipedia_KYOTO_BDS_00003,124;NJ
+# ::snt これ により 本拠地 を 失っ た 本願寺 は 、 蓮如 が その 最晩年 に 建立 し （ 明応 5 年 1496 年 ） 、 居住 し た 大坂 石山 の 坊舎 の 地 に 本拠地 を 移し た （ 石山本願寺 ） 。
+∃ ENTITY[10] ENTITY[2] ENTITY[12] ENTITY[5] EVENT[8] EVENT[11] EVENT[13] EVENT[4] ENTITY[3] ENTITY[7] (
+ ENTITY[2] = これ ∧
+  本拠地(ENTITY[3]) ∧
+   失っ_た(EVENT[4], ENTITY[本願寺], ENTITY[3]) ∧ により(EVENT[4]) = ENTITY[2] ∧
+    最晩年(ENTITY[7]) ∧
+     past(EVENT[4]) ∧
+      past(EVENT[11]) ∧
+       past(EVENT[13]) ∧
+        ENTITY[10] = *pro*{ENTITY[蓮如], ENTITY[7], ENTITY[本願寺], ENTITY[3]} ∧
+         建立する.0(EVENT[8], ENTITY[蓮如], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[7] ∧
+          居住する.0_た(EVENT[11], ENTITY[10]) ∧ LOC(EVENT[11]) = ENTITY[5] ∧
+           の_地(ENTITY[坊舎], ENTITY[5]) ∧ の__地(ENTITY[大坂_石山], ENTITY[5]) ∧
+          本拠地(ENTITY[12]) ∧ 移し_た(EVENT[13], ENTITY[本願寺], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[5])
+
+# ::id 72_wikipedia_KYOTO_BDS_00003,125;NJ
+# ::snt これ 以後 、 大坂 の 地 は 、 城郭 に も 匹敵 する 本願寺 の 伽藍 と その 周辺 に 形成 さ れ た 寺内町 を 中心 に 大きく 発展 し 、 その 脅威 は 時 の 権力者たち に 恐れ られ た 。
+∃ TIME[1] EVENT[12] EVENT[13] EVENT[18] ENTITY[11] GROUP[3] ENTITY[17] ENTITY[16] ENTITY[9] ENTITY[2] ENTITY[15] (
+ の_地(ENTITY[大坂], ENTITY[2]) ∧
+  周辺(ENTITY[9]) ∧
+   脅威(ENTITY[15]) ∧
+    TIME[1] = これ ∧
+     以後(TIME[1]) ∧
+      CONJ_と(∃ EVENT[7] ENTITY[6] ENTITY[4] (
+            城郭(ENTITY[6]) ∧
+             匹敵する.0(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ の_伽藍(ENTITY[本願寺], ENTITY[4]) ∧
+              is_element_of(ENTITY[4], GROUP[3])),
+       ∃ EVENT[10] (
+        形成する.0_た(EVENT[10], _, ENTITY[寺内町]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+         past(EVENT[10]) ∧ is_element_of(ENTITY[寺内町], GROUP[3]))) ∧
+       中心(ENTITY[11]) ∧
+        時(ENTITY[17]) ∧
+         の_権力者たち(ENTITY[17], ENTITY[16]) ∧
+          ADV_大きく(EVENT[13]) ∧
+           past(EVENT[18]) ∧
+            xxx(EVENT[12], ENTITY[2], GROUP[3], ENTITY[11]) ∧
+             発展する.0(EVENT[13], ENTITY[2]) ∧ is_contained_in(時間(EVENT[13]), TIME[1]) ∧
+             恐れ_た(EVENT[18], ENTITY[16], ENTITY[15]))
+
+# ::id 73_wikipedia_KYOTO_BDS_00003,126;NJ
+# ::snt 永禄 11 年 （ 1568 年 ） に 織田 信長 が 畿内 を 制圧 し 、 征夷大将軍 と なっ た 足利 義昭 と 対立 する よう に なる と 、 本願寺 11 世 の 顕如 （ 1543 年 - 1592 年 ） は 足利 義昭 に 味方 し 、 元亀 元 年 （ 1570 年 ） 9 月 12 日 、 突如 として 三好氏 を 攻め て い た 信長 の 陣営 を 攻撃 し た （ 石山合戦 ） 。
+∃ ENTITY[9] (
+ の_xxx(ENTITY[本願寺_11_世], ENTITY[顕如]) ∧
+  CD_1543_年_1592_年(ENTITY[9]) ∧
+   namely_-ENTITY-(ENTITY[9], ENTITY[顕如]) ∧
+    ∀ SITUATION[3] EVENT[2] EVENT[6] EVENT[7] EVENT[8] ENTITY[5] ENTITY[1] CND_と(
+        CD_永禄_11_年_（_1568_年_）(ENTITY[1]) ∧ 征夷大将軍(ENTITY[5]) ∧
+         なっ_た(EVENT[6], ENTITY[足利_義昭]) ∧ と(EVENT[6]) = ENTITY[5] ∧
+         よう(SITUATION[3], 対立する.0(EVENT[7], ENTITY[織田_信長]) ∧ と(EVENT[7]) = ENTITY[足利_義昭]) ∧
+         past(EVENT[6]) ∧
+         制圧する.0(EVENT[2], ENTITY[織田_信長], ENTITY[畿内]) ∧
+          なる(EVENT[8], ENTITY[織田_信長], SITUATION[3]) ∧ に(EVENT[8]) = ENTITY[1],
+        ∃ ATTRIB[12] EVENT[10] EVENT[15] EVENT[16] ENTITY[13] TIME[11] (
+         CD_元亀_元_年_（_1570_年_）_9_月_12_日(TIME[11]) ∧
+          ADV_突如(ATTRIB[12]) ∧
+           攻め_て_い_た(EVENT[15], ENTITY[13], ENTITY[三好氏]) ∧ の_陣営(ENTITY[信長], ENTITY[13]) ∧
+            past(EVENT[15]) ∧
+             past(EVENT[16]) ∧
+              味方する.0(EVENT[10], ENTITY[顕如]) ∧ に(EVENT[10]) = ENTITY[足利_義昭] ∧
+               攻撃する.0_た(EVENT[16], _, ENTITY[13]) ∧ として(EVENT[16]) = ATTRIB[12] ∧
+                is_contained_in(時間(EVENT[16]), TIME[11]))))
+
+# ::id 74_wikipedia_KYOTO_BDS_00003,127;NJ
+# ::snt また 、 これ に 呼応 し て 各地 の 門徒 も 蜂起 し 、 伊勢国 長島 願証寺 の 一揆 （ 長島一向一揆 ） は 尾張 の 小木江城 を 攻め滅ぼし て いる 。
+∃ ENTITY[2] EVENT[3] EVENT[6] EVENT[7] ENTITY[4] ENTITY[1] (
+ の_一揆(ENTITY[伊勢国_長島_願証寺], ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[長島一向一揆], ENTITY[1]) ∧
+   ENTITY[2] = これ{ENTITY[長島一向一揆], ENTITY[伊勢国_長島_願証寺]} ∧
+    各 ENTITY[5] (地(ENTITY[5]), の_門徒(ENTITY[5], ENTITY[4])) ∧
+     の_xxx(ENTITY[尾張], ENTITY[小木江城]) ∧
+      CONJ_te(呼応する.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2], 蜂起する.0(EVENT[6], ENTITY[4])) ∧
+       攻め滅ぼし_て_いる(EVENT[7], ENTITY[1], ENTITY[小木江城]))
+
+# ::id 75_wikipedia_KYOTO_BDS_00003,128;NJ
+# ::snt この 後 、 顕如 と 信長 は 幾 度 か 和議 を 結ん で いる が 、 顕如 は 義昭 など の 要請 により 幾 度 も 和議 を 破棄 し た ため 、 長島 や 越前 など 石山 以外 の 大半 の 一向一揆 は 、 ほとんど が 信長 によって 根切 （ 皆殺し ） に さ れ た 。
+∃ SITUATION[6] ENTITY[8] ENTITY[7] GROUP[2] TIME[1] GROUP[13] ENTITY[12] (
+ 後(TIME[1]) ∧
+  CONJ_と(is_element_of(ENTITY[顕如], GROUP[2]), is_element_of(ENTITY[信長], GROUP[2])) ∧
+   CONJ_や(is_element_of(ENTITY[長島], GROUP[13]), is_element_of(ENTITY[越前], GROUP[13])) ∧
+    など_xxx(GROUP[13], ENTITY[一向一揆]) ∧
+     石山_以外(ENTITY[12]) ∧
+      の_xxx(ENTITY[12], ENTITY[一向一揆]) ∧
+       など(ENTITY[義昭], ENTITY[8]) ∧
+        の_要請(ENTITY[8], ENTITY[7]) ∧
+         FACT(SITUATION[6],
+          も ENTITY[9] (幾_度(ENTITY[9]),
+           ∃ EVENT[11] ENTITY[10] (
+            和議(ENTITY[10]) ∧
+             past(EVENT[11]) ∧
+              破棄する.0_た(EVENT[11], ENTITY[顕如], ENTITY[10]) ∧ MSR(EVENT[11]) = ENTITY[9] ∧
+               により(EVENT[11]) = ENTITY[7]))) ∧
+          CONJ_が(か ENTITY[3] (幾_度(ENTITY[3]),
+                ∃ EVENT[5] ENTITY[4] (
+                 和議(ENTITY[4]) ∧
+                  past(EVENT[5]) ∧
+                   結ん_で_いる(EVENT[5], GROUP[2], ENTITY[4]) ∧ LINK(EVENT[5]) = ENTITY[3] ∧
+                    is_contained_in(時間(EVENT[5]), TIME[1]))),
+           ほとんど ENTITY[14] ∃ EVENT[17] ENTITY[15] ENTITY[16] (
+            根切(ENTITY[16]) ∧
+             皆殺し(ENTITY[15]) ∧
+              namely_-ENTITY-(ENTITY[15], ENTITY[16]) ∧
+               past(EVENT[17]) ∧
+                さ_た(EVENT[17], (ENTITY[信長], ENTITY[14]), ENTITY[一向一揆]) ∧ に(EVENT[17]) = ENTITY[16] ∧
+                 ため(EVENT[17]) = SITUATION[6])))
+
+# ::id 76_wikipedia_KYOTO_BDS_00003,129;NJ
+# ::snt 石山 で は 開戦 以後 、 実に 10 年 も の 間 戦い 続け た が 、 天正 8 年 （ 1580 年 ） 、 信長 が 正親町天皇 による 仲介 という 形 で 提案 し た 和議 を 承諾 し て 本願寺 側 が 武装解除 し 、 顕如 が 石山 を 退去 する こと で 石山合戦 は 終結 し た 。
+∃ SITUATION[7] ENTITY[1] EVENT[5] EVENT[12] EVENT[13] EVENT[15] EVENT[16] EVENT[17] ENTITY[4] DEGREE[3] TIME[2] ENTITY[11] ENTITY[10] ENTITY[8] ENTITY[14] TIME[6] (
+ ENTITY[1] = *pro* ∧
+  開戦_以後(TIME[2]) ∧
+   CD_10_年(ENTITY[4]) ∧
+    ADV_実に(DEGREE[3]) ∧ の_間(ENTITY[4], DEGREE[3]) ∧
+     CD_天正_8_年_（_1580_年_）(TIME[6]) ∧
+      による_仲介(ENTITY[正親町天皇], ENTITY[11]) ∧
+       という_形(ENTITY[11], ENTITY[10]) ∧
+        提案する.0_た(EVENT[12], ENTITY[信長], ENTITY[8]) ∧ で(EVENT[12]) = ENTITY[10] ∧ 和議(ENTITY[8]) ∧
+         本願寺_側(ENTITY[14]) ∧
+          こと(SITUATION[7],
+           CONJ_te(承諾する.0_て(EVENT[13], ENTITY[顕如], ENTITY[8]), 武装解除する.0(EVENT[15], ENTITY[14])) ∧
+            退去する.0(EVENT[16], ENTITY[顕如], ENTITY[石山])) ∧
+           past(EVENT[5]) ∧
+            past(EVENT[12]) ∧
+             past(EVENT[17]) ∧
+              CONJ_が(戦い_続け_た(EVENT[5], ENTITY[1]) ∧ MSR(EVENT[5]) = DEGREE[3] ∧
+                    is_contained_in(時間(EVENT[5]), TIME[2]) ∧ で(EVENT[5]) = ENTITY[石山],
+               終結する.0_た(EVENT[17], ENTITY[石山合戦]) ∧ is_contained_in(時間(EVENT[17]), TIME[6]) ∧
+                で(EVENT[17]) = SITUATION[7]))
+
+# ::id 77_wikipedia_KYOTO_BDS_00003,130;NJ
+# ::snt （ その 後 、 石山本願寺 の 跡地 を 含め 、 豊臣 秀吉 が 大坂城 を 築造 し て いる 。 ）
+∃ EVENT[3] EVENT[4] ENTITY[2] TIME[1] (
+ 後(TIME[1]) ∧
+  の_跡地(ENTITY[石山本願寺], ENTITY[2]) ∧
+   含め(EVENT[3], ENTITY[豊臣_秀吉], ENTITY[2]) ∧
+    築造する.0_て_いる(EVENT[4], ENTITY[豊臣_秀吉], ENTITY[大坂城]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 78_wikipedia_KYOTO_BDS_00003,131;NJ
+# ::snt この よう に 一向一揆 は 、 当時 の 日本 社会 における 最大 の 勢力 の ひと つ で あり 、 戦国大名 に 伍する 存在 で あっ た が 、 真宗 の 門徒 全体 が この 動き に 同調 し て い た わけ で は ない 。
+∃ EVENT[7] EVENT[11] EVENT[12] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[10] ENTITY[8] ENTITY[1] ENTITY[15] (
+ よう(ENTITY[1]) ∧
+  動き(ENTITY[15]) ∧
+   当時(ENTITY[5]) ∧
+    の_日本_社会(ENTITY[5], ENTITY[4]) ∧
+     最大(ENTITY[6]) ∧
+      の_勢力(ENTITY[6], ENTITY[3]) ∧ における_勢力(ENTITY[4], ENTITY[3]) ∧
+       (CD_ひと_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+        戦国大名(ENTITY[10]) ∧
+         伍する(EVENT[11], ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[10] ∧ 存在(ENTITY[8]) ∧
+          past(EVENT[12]) ∧
+           CONJ_が(で_あり(EVENT[7], ENTITY[一向一揆], ENTITY[2]) ∧
+                 で_あっ_た(EVENT[12], ENTITY[一向一揆], ENTITY[8]) ∧ に(EVENT[12]) = ENTITY[1],
+            全体 ENTITY[13] (の_門徒(ENTITY[真宗], ENTITY[13]),
+             ¬ ∃ SITUATION[14] EVENT[16] EVENT[17] (
+                   わけ(SITUATION[14], 同調する.0_て_い_た(EVENT[16], ENTITY[13]) ∧ に(EVENT[16]) = ENTITY[15]) ∧
+                    past(EVENT[16]) ∧ で_は(EVENT[17], ENTITY[13], SITUATION[14])))))
+
+# ::id 79_wikipedia_KYOTO_BDS_00003,132;NJ
+# ::snt 越前国 における 本願寺 門徒 と 専修寺派 の 門徒 （ 高田門徒 ・ 真宗 三門徒 派 ） と の 交戦 の 例 に 見 られる よう に 、 本願寺 以外 の 真宗 諸派 の 中 に は これ と 対立 する もの も あっ た 。
+∃ ENTITY[16] ENTITY[2] SITUATION[1] EVENT[10] EVENT[17] EVENT[18] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[14] ENTITY[13] ENTITY[12] ENTITY[11] (
+ 本願寺_以外(ENTITY[13]) ∧
+  の_真宗_諸派(ENTITY[13], ENTITY[12]) ∧
+   の_中(ENTITY[12], ENTITY[11]) ∧
+    ENTITY[2] = *pro* ∧
+     CONJ_と(∃ ENTITY[6] (本願寺_門徒(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+      ∃ GROUP[7] ENTITY[9] (
+       の_門徒(ENTITY[専修寺派], ENTITY[9]) ∧
+        is_element_of(ENTITY[高田門徒], GROUP[7]) ∧ ∃ ENTITY[8] (真宗_三門徒_派(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+         namely_-ENTITY-(GROUP[7], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[5]))) ∧
+      と_の_交戦(GROUP[5], ENTITY[4]) ∧ における_交戦(ENTITY[越前国], ENTITY[4]) ∧
+       の_例(ENTITY[4], ENTITY[3]) ∧
+        よう(SITUATION[1], 見(EVENT[10], _, ENTITY[2]) ∧ に(EVENT[10]) = ENTITY[3]) ∧
+         ENTITY[16] = これ{ENTITY[11], ENTITY[12], ENTITY[13], ENTITY[越前国], ENTITY[高田門徒], ENTITY[専修寺派], ENTITY[3], ENTITY[4]} ∧
+          対立する.0(EVENT[17], ENTITY[14]) ∧ と(EVENT[17]) = ENTITY[16] ∧ もの(ENTITY[14]) ∧
+           past(EVENT[18]) ∧
+            あっ_た(EVENT[18], ENTITY[14]) ∧ に(EVENT[18]) = ENTITY[11] ∧ に(EVENT[18]) = SITUATION[1])
+
+# ::id 80_wikipedia_KYOTO_BDS_00003,133;NJ
+# ::snt 京都 に 再興
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ 再興(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[京都])
+
+# ::id 81_wikipedia_KYOTO_BDS_00003,134;NJ
+# ::snt 豊臣 秀吉 の 時代 に なる と 、 天正 19 年 （ 1591 年 ） に 、 顕如 は 京都 中央 部 （ 京都 七条 堀川 ） に 土地 を 与え られ 、 本願寺 を 再興 し た 。
+∃ ENTITY[1] (
+ CD_天正_19_年_（_1591_年_）(ENTITY[1]) ∧
+  ∀ EVENT[3] ENTITY[2] CND_と(の_時代(ENTITY[豊臣_秀吉], ENTITY[2]) ∧ なる(EVENT[3], ENTITY[顕如]) ∧ に(EVENT[3]) = ENTITY[2],
+      ∃ EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] (
+       京都_中央_部(ENTITY[4]) ∧
+        namely_-ENTITY-(ENTITY[京都_七条_堀川], ENTITY[4]) ∧
+         土地(ENTITY[5]) ∧
+          past(EVENT[7]) ∧
+           与え(EVENT[6], _, ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+            再興する.0_た(EVENT[7], ENTITY[顕如], ENTITY[本願寺]) ∧ に(EVENT[7]) = ENTITY[1])))
+
+# ::id 82_wikipedia_KYOTO_BDS_00003,135;NJ
+# ::snt 1602 年 、 石山 退去 時 の 見解 の 相違 等 をめぐる 教団 内部 の 対立 状況 が 主因 と なり 、 これ に 徳川 家康 の 宗教 政策 が 作用 し て 、 顕如 の 長男 で ある 教如 （ 1558 年 - 1614 年 ） が 、 家康 から 本願寺 の すぐ 東 の 土地 （ 京都 七条 烏丸 ） を 与え られ 東本願寺 を 構え た 。
+∃ ENTITY[10] EVENT[9] EVENT[12] EVENT[16] EVENT[19] EVENT[20] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[3] ENTITY[8] ENTITY[2] ENTITY[11] ENTITY[15] ENTITY[13] ENTITY[18] ENTITY[17] TIME[1] (
+ CD_1602_年(TIME[1]) ∧
+  石山_退去_時(ENTITY[6]) ∧
+   の_見解(ENTITY[6], ENTITY[5]) ∧
+    の_相違(ENTITY[5], ENTITY[4]) ∧
+     等(ENTITY[4], ENTITY[3]) ∧
+      教団_内部(ENTITY[7]) ∧
+       の_対立_状況(ENTITY[7], ENTITY[2]) ∧ をめぐる_対立_状況(ENTITY[3], ENTITY[2]) ∧
+        主因(ENTITY[8]) ∧
+         ENTITY[10] = これ{ENTITY[2], ENTITY[8], ENTITY[3], ENTITY[7], ENTITY[4], ENTITY[5], ENTITY[6]} ∧
+          の_宗教_政策(ENTITY[徳川_家康], ENTITY[11]) ∧
+           の_長男(ENTITY[顕如], ENTITY[15]) ∧
+            で_ある(EVENT[16], ENTITY[教如], ENTITY[15]) ∧
+             CD_1558_年_1614_年(ENTITY[13]) ∧
+              namely_-ENTITY-(ENTITY[13], ENTITY[教如]) ∧
+               ADV_すぐ(ENTITY[18]) ∧ の_東(ENTITY[本願寺], ENTITY[18]) ∧
+                の_土地(ENTITY[18], ENTITY[17]) ∧
+                 namely_-ENTITY-(ENTITY[京都_七条_烏丸], ENTITY[17]) ∧
+                  past(EVENT[20]) ∧
+                   なり(EVENT[9], ENTITY[2]) ∧ と(EVENT[9]) = ENTITY[8] ∧
+                    CONJ_te(作用する.0_て(EVENT[12], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[10] ∧
+                          is_contained_in(時間(EVENT[12]), TIME[1]),
+                     与え(EVENT[19], ENTITY[家康], ENTITY[17]) ∧
+                      構え_た(EVENT[20], ENTITY[教如], ENTITY[東本願寺]) ∧ is_contained_in(時間(EVENT[20]), TIME[1])))
+
+# ::id 83_wikipedia_KYOTO_BDS_00003,136;NJ
+# ::snt これ により 、 当時 最大 の 宗教 勢力 で あっ た 本願寺 は 、 顕如 の 三男 准如 （ 1577 年 - 1630 年 ） を 12 世 宗主 と する 西 （ 現在 の 浄土真宗 本願寺派 、 真宗 興正派 など ） と 、 長男 教如 を 12 世 宗主 と する 東 （ 現在 の 真宗 大谷派 など ） と に 分裂 する こと に なっ た 。
+∃ SITUATION[6] ENTITY[1] EVENT[24] EVENT[25] GROUP[8] ENTITY[7] EVENT[5] ENTITY[4] ENTITY[3] (
+ 当時_最大(ENTITY[4]) ∧
+  の_宗教_勢力(ENTITY[4], ENTITY[3]) ∧
+   で_あっ_た(EVENT[5], ENTITY[本願寺], ENTITY[3]) ∧
+    past(EVENT[5]) ∧
+     ENTITY[1] = これ ∧
+      CONJ_と(∃ EVENT[14] ENTITY[12] ENTITY[11] ENTITY[13] GROUP[17] ENTITY[16] ENTITY[15] ENTITY[9] (
+            の_三男(ENTITY[顕如], ENTITY[12]) ∧
+             namely_-ENTITY-(ENTITY[12], ENTITY[准如]) ∧
+              CD_1577_年_1630_年(ENTITY[11]) ∧
+               namely_-ENTITY-(ENTITY[11], ENTITY[准如]) ∧
+                (CD_12_世(ENTITY[13]), 宗主(ENTITY[13])) ∧
+                 現在(ENTITY[16]) ∧
+                  is_element_of(ENTITY[浄土真宗_本願寺派], GROUP[17]) ∧ is_element_of(ENTITY[真宗_興正派], GROUP[17]) ∧
+                   equals(GROUP[17], ENTITY[15]) ∧ の(ENTITY[16], ENTITY[15]) ∧
+                    する(EVENT[14], ENTITY[9], ENTITY[准如], ENTITY[13]) ∧ など_西(ENTITY[15], ENTITY[9]) ∧
+                     is_element_of(ENTITY[9], GROUP[8])),
+       ∃ EVENT[22] ENTITY[20] ENTITY[21] ENTITY[23] ENTITY[18] (
+        長男(ENTITY[20]) ∧
+         namely_-ENTITY-(ENTITY[20], ENTITY[教如]) ∧
+          (CD_12_世(ENTITY[21]), 宗主(ENTITY[21])) ∧
+           現在(ENTITY[23]) ∧
+            の_xxx(ENTITY[23], ENTITY[真宗_大谷派]) ∧
+             する(EVENT[22], ENTITY[18], ENTITY[教如], ENTITY[21]) ∧ など_東(ENTITY[真宗_大谷派], ENTITY[18]) ∧
+              is_element_of(ENTITY[18], GROUP[8]))) ∧
+       と(GROUP[8], ENTITY[7]) ∧
+        こと(SITUATION[6], 分裂する.0(EVENT[24], ENTITY[本願寺]) ∧ に(EVENT[24]) = ENTITY[7]) ∧
+         past(EVENT[25]) ∧
+          なっ_た(EVENT[25], ENTITY[本願寺]) ∧ に(EVENT[25]) = SITUATION[6] ∧ により(EVENT[25]) = ENTITY[1])
+
+# ::id 84_wikipedia_KYOTO_BDS_00003,137;NJ
+# ::snt 明治維新 後 の 宗教 再編 時 に は 、 大教院 に対し 宗教 団体 として 公的 な 登録 を 行う 際 、 現在 の 浄土真宗 本願寺派 のみ が 浄土真宗 として 申請 し 、 他 は 真宗 として 申請 し た こと が 、 現在 の 名称 に 影響 し て いる 。
+∃ ATTRIB[11] SITUATION[8] SITUATION[3] EVENT[12] EVENT[13] EVENT[16] ENTITY[5] ENTITY[10] ENTITY[9] ENTITY[15] ENTITY[14] ENTITY[2] ENTITY[7] ENTITY[1] (
+ 明治維新_後(ENTITY[2]) ∧
+  の_宗教_再編_時(ENTITY[2], ENTITY[1]) ∧
+   他(ENTITY[7]) ∧
+    現在(ENTITY[5]) ∧
+     の_xxx(ENTITY[5], ENTITY[浄土真宗_本願寺派]) ∧
+      宗教_団体(ENTITY[9]) ∧
+       公的_な(ATTRIB[11]) ∧
+        ATTRIBUTE_登録(ATTRIB[11], ENTITY[10]) ∧
+         際(SITUATION[8],
+          行う(EVENT[12], ENTITY[7], ENTITY[10]) ∧ として(EVENT[12]) = ENTITY[9] ∧
+           に対し(EVENT[12]) = ENTITY[大教院]) ∧
+          こと(SITUATION[3],
+           のみ ENTITY[4] (ENTITY[4] = ENTITY[浄土真宗_本願寺派], ∃ EVENT[6] (申請する.0(EVENT[6], ENTITY[4]) ∧ として(EVENT[6]) = ENTITY[浄土真宗])) ∧
+            申請する.0_た(EVENT[13], ENTITY[7]) ∧ として(EVENT[13]) = ENTITY[真宗] ∧
+             時間(EVENT[13]) = SITUATION[8]) ∧
+           現在(ENTITY[15]) ∧
+            の_名称(ENTITY[15], ENTITY[14]) ∧
+             past(EVENT[13]) ∧
+              影響する.0_て_いる(EVENT[16], SITUATION[3]) ∧ に(EVENT[16]) = ENTITY[14] ∧ に(EVENT[16]) = ENTITY[1])
+
+# ::id 85_wikipedia_KYOTO_BDS_00003,138;NJ
+# ::snt また 、 長い 歴史 の 中 で 土俗信仰 など と 結びつい た 、 浄土真宗 系 の 新宗教 も 存在 し て いる 。
+∃ ATTRIB[5] EVENT[8] EVENT[10] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[3] ENTITY[9] ENTITY[1] (
+ 長い(ATTRIB[5]) ∧
+  ATTRIBUTE_歴史(ATTRIB[5], ENTITY[4]) ∧
+   の_中(ENTITY[4], ENTITY[3]) ∧
+    土俗信仰(ENTITY[7]) ∧
+     など(ENTITY[7], ENTITY[6]) ∧
+      浄土真宗_系(ENTITY[9]) ∧
+       結びつい_た(EVENT[8], ENTITY[1]) ∧ と(EVENT[8]) = ENTITY[6] ∧ で(EVENT[8]) = ENTITY[3] ∧
+        の_新宗教(ENTITY[9], ENTITY[1]) ∧ past(EVENT[8]) ∧ 存在する.0_て_いる(EVENT[10], ENTITY[1]))
+
+# ::id 86_wikipedia_KYOTO_BDS_00003,139;NJ
+# ::snt 宗派
+∃ EVENT[2] ENTITY[1] (宗派(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 87_wikipedia_KYOTO_BDS_00003,140;NJ
+# ::snt 現在 、 浄土真宗 宗派 加盟 の 10 派 ほか 諸派 に 分かれ て いる が 、 宗 全体 として は 、 日本 の 仏教 諸宗 中 、 最も 多く の 寺院 （ 約22,000 ヶ寺 ） 、 信徒 を 擁する 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  現在(TIME[2]) ∧
+   浄土真宗_宗派_加盟(ENTITY[4]) ∧
+    (CD_10_派(ENTITY[3]), の_ほか_諸派(ENTITY[4], ENTITY[3])) ∧
+     CONJ_が(分かれ_て_いる(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+           is_contained_in(時間(EVENT[5]), TIME[2]),
+      全体 ENTITY[6] (宗(ENTITY[6]),
+       ∃ ENTITY[7] (
+        の_仏教_諸宗_中(ENTITY[日本], ENTITY[7]) ∧
+         最も_多く_の GROUP[9] ENTITY[8] (
+          (∃ DEGREE[11] ENTITY[10] (CD_約22,000_ヶ寺(DEGREE[11]) ∧ MSR_寺院(DEGREE[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+             ∃ ENTITY[12] (信徒(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9])) ∧ equals(GROUP[9], ENTITY[8])),
+          ∃ EVENT[13] (
+           擁する(EVENT[13], ENTITY[1], ENTITY[8]) ∧
+            ADV(EVENT[13]) = ENTITY[7] ∧ として(EVENT[13]) = ENTITY[6]))))))
+
+# ::id 88_wikipedia_KYOTO_BDS_00003,141;NJ
+# ::snt 真宗十派 （ 真宗教団連合 ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[真宗教団連合], ENTITY[真宗十派]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[真宗十派])
+
+# ::id 89_wikipedia_KYOTO_BDS_00003,142;NJ
+# ::snt 真宗教団連合 は 、 親鸞聖人 生誕 750 年 ・ 立教開宗 700 年 にあたる 1923 年 （ 大正 12 年 ） 、 真宗 各派 の 協調 ・ 連携 を 図る 為 に 、 真宗 各派 協和会 として 結成 さ れ た 。
+∃ SITUATION[7] EVENT[12] GROUP[2] GROUP[9] ENTITY[8] TIME[1] (
+ ∃ DEGREE[4] ENTITY[3] (CD_750_年(DEGREE[4]) ∧ MSR_生誕(DEGREE[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ DEGREE[6] ENTITY[5] (CD_700_年(DEGREE[6]) ∧ MSR_立教開宗(DEGREE[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+  namely_-ENTITY-(GROUP[2], ENTITY[親鸞聖人]) ∧
+   (CD_1923_年_（_大正_12_年_）(TIME[1]), にあたる(ENTITY[親鸞聖人], TIME[1])) ∧
+    派(ENTITY[真宗]) ∧
+     ∃ ENTITY[10] (協調(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+      ∃ ENTITY[11] (連携(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9])) ∧
+      equals(GROUP[9], ENTITY[8]) ∧ の(ENTITY[真宗], ENTITY[8]) ∧
+       為(SITUATION[7], 図る(EVENT[12], ENTITY[真宗教団連合], ENTITY[8])) ∧
+        各 ENTITY[13] (真宗(ENTITY[13]) ∧ 派(ENTITY[13]) ∧ 協和会(ENTITY[13]),
+         ∃ EVENT[14] (
+          past(EVENT[14]) ∧
+           結成する.0_た(EVENT[14], _, ENTITY[真宗教団連合]) ∧ として(EVENT[14]) = ENTITY[13] ∧
+            に(EVENT[14]) = SITUATION[7] ∧ is_contained_in(時間(EVENT[14]), TIME[1]))))
+
+# ::id 90_wikipedia_KYOTO_BDS_00003,143;NJ
+# ::snt 加盟 団体 は 以下 の 10 派 で あり 、 「 真宗十派 」 と いわ れる 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 加盟_団体(ENTITY[1]) ∧
+  以下(ENTITY[3]) ∧
+   (CD_10_派(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+    で_あり(EVENT[4], ENTITY[1], ENTITY[2]) ∧ いわ(EVENT[5], _, ENTITY[1], ENTITY[真宗十派]))

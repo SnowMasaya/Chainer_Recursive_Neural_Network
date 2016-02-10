@@ -1,0 +1,199 @@
+# ::id 1_blog_KNB_004_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+∃ EVENT[2] ENTITY[1] (携帯_電話(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_004_Keitai_1-1-1-01;NJ
+# ::snt お金 が かかる ん です 。
+∃ EVENT[2] ENTITY[1] (お金(ENTITY[1]) ∧ かかる_ん_です(EVENT[2], ENTITY[1]))
+
+# ::id 3_blog_KNB_004_Keitai_1-1-10-01;NJ
+# ::snt 著作権 保護 か 何 か よく わから ない けれども ｍｐ３ ファイル を 直接 取り込む の は 不可能 みたい で 、 これ が 不便 で ある 。
+∃ ENTITY[13] ENTITY[8] SITUATION[7] ENTITY[1] EVENT[11] EVENT[14] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[8] = *pro* ∧
+   ｍｐ３_ファイル(ENTITY[9]) ∧
+    直接(ENTITY[10]) ∧
+     の(SITUATION[7], 取り込む(EVENT[11], ENTITY[8], ENTITY[9]) ∧ ADV(EVENT[11]) = ENTITY[10]) ∧
+      ENTITY[13] = これ{ENTITY[9], ENTITY[10]} ∧
+       CONJ_te(CRD_けれども(¬ か ENTITY[4] ENTITY[2] ((か ENTITY[3] (ENTITY[3] = ENTITY[4], LINK(ENTITY[3], ENTITY[2])) ∧ 著作権_保護(ENTITY[4])),
+                       ∃ EVENT[5] (ADV_よく(EVENT[5]) ∧ わから(EVENT[5], ENTITY[1], ENTITY[2]))),
+             MD_みたい(∃ EVENT[12] 不可能_で(EVENT[12], SITUATION[7]))), 不便_で_ある(EVENT[14], ENTITY[13])))
+
+# ::id 4_blog_KNB_004_Keitai_1-1-11-01;NJ
+# ::snt たとえば 、 昔 パソコン に 保存 し た ＣＤ の データ を 携帯 に 取り込も う と 思っ たら 、 いったん ＣＤ−Ｒ もしくは ＲＷ に 出力 し て から で ないといけない 。
+∃ ENTITY[13] ENTITY[3] ENTITY[1] EVENT[2] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[3] = *speaker*{ENTITY[1]} ∧
+   ENTITY[13] = *pro* ∧
+    CRD_たら(思っ(EVENT[2], ENTITY[1],
+          MD_う(∃ ENTITY[6] EVENT[9] EVENT[12] ENTITY[8] TIME[7] ENTITY[10] ENTITY[11] ENTITY[4] (
+                ENTITY[6] = *speaker*{ENTITY[3], ENTITY[1]} ∧
+                 昔(TIME[7]) ∧
+                  パソコン(ENTITY[8]) ∧
+                   ＣＤ(ENTITY[10]) ∧
+                    保存する.0_た(EVENT[9], ENTITY[6], ENTITY[4]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+                     is_contained_in(時間(EVENT[9]), TIME[7]) ∧ の_データ(ENTITY[10], ENTITY[4]) ∧
+                     携帯(ENTITY[11]) ∧
+                      before(EVENT[2], EVENT[9]) ∧
+                       取り込も(EVENT[12], ENTITY[3], ENTITY[4]) ∧ に(EVENT[12]) = ENTITY[11]))),
+     MD_ないといけない(∃ SITUATION[14] EVENT[18] EVENT[20] GROUP[15] (
+           CONJ_もしくは(∃ ENTITY[16] (ＣＤ−Ｒ(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])),
+            ∃ ENTITY[17] (ＲＷ(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15]))) ∧
+            FACT(SITUATION[14], 出力する.0_て(EVENT[18], ENTITY[13]) ∧ に(EVENT[18]) = GROUP[15]) ∧
+             ADV_いったん(EVENT[18]) ∧ で(EVENT[20], ENTITY[13]) ∧ te_から(EVENT[20]) = SITUATION[14]))))
+
+# ::id 5_blog_KNB_004_Keitai_1-1-12-01;NJ
+# ::snt 音楽 用 の ＲＷ は 高い し Ｒ にしても いったん 記録 し たら もう 使え ない ので たくさん の 無駄 な ＣＤ−Ｒ が 発生 し て しまう の だ 。
+∃ ENTITY[4] ENTITY[3] (
+ 音楽_用(ENTITY[4]) ∧
+  の_ＲＷ(ENTITY[4], ENTITY[3]) ∧
+   たくさん_の ATTRIB[2] ENTITY[1] ((無駄_な(ATTRIB[2]) ∧ ATTRIBUTE_ＣＤ−Ｒ(ATTRIB[2], ENTITY[1])),
+    ∃ ARB[6] EVENT[5] EVENT[13] (
+     ARB[6] = *arb* ∧
+      CRD_ので(CONJ_し(高い(EVENT[5], ENTITY[3]),
+            ¬ ∃ ENTITY[8] (
+                  Ｒ(ENTITY[8]) ∧
+                   にしても ENTITY[7] (ENTITY[7] = ENTITY[8],
+                    ∀ EVENT[9] CND_たら(ADV_いったん(EVENT[9]) ∧ 記録する.0(EVENT[9], ENTITY[7]),
+                        ∃ EVENT[11] (ADV_もう(EVENT[11]) ∧ 使え(EVENT[11], ARB[6], ENTITY[7])))))),
+       発生する.0_て_しまう_の_だ(EVENT[13], ENTITY[1])))))
+
+# ::id 6_blog_KNB_004_Keitai_1-1-13-01;NJ
+# ::snt 何とか なら ない もの か 。
+∃ ENTITY[3] SITUATION[2] (
+ ENTITY[3] = *pro* ∧
+  もの(SITUATION[2], ¬ ∃ EVENT[4] (ADV_何とか(EVENT[4]) ∧ なら(EVENT[4], ENTITY[3]))) ∧
+   か SITUATION[1] (SITUATION[1] = SITUATION[2], ∃ EVENT[6] (xxx(EVENT[6]) ∧ LINK(EVENT[6]) = SITUATION[1])))
+
+# ::id 7_blog_KNB_004_Keitai_1-1-2-01;NJ
+# ::snt 私 の 携帯 料金 を 払っ て いる 親 いわく 「 そろそろ 料金 プラン の 変更 も 検討 せよ 」 と の こと 。
+∃ ENTITY[6] SITUATION[2] EVENT[7] EVENT[12] ENTITY[5] ENTITY[3] ENTITY[1] (
+ ENTITY[6] = 私{ENTITY[3], ENTITY[1]} ∧
+  の_携帯_料金(ENTITY[6], ENTITY[5]) ∧
+   払っ_て_いる(EVENT[7], ENTITY[3], ENTITY[5]) ∧ 親_いわく(ENTITY[3]) ∧
+    と(SITUATION[2],
+     IMPERATIVE(∃ EVENT[10] ENTITY[9] ENTITY[8] (
+           料金_プラン(ENTITY[9]) ∧
+            の_変更(ENTITY[9], ENTITY[8]) ∧
+             ADV_そろそろ(EVENT[10]) ∧ 検討する.0(EVENT[10], ENTITY[3], ENTITY[8])))) ∧
+     の_こと(SITUATION[2], ENTITY[1]) ∧ xxx(EVENT[12]) ∧ LINK(EVENT[12]) = ENTITY[1])
+
+# ::id 8_blog_KNB_004_Keitai_1-1-3-01;NJ
+# ::snt 請求書 によれば 通話 料金 は 無料 通話 分 より 少し 高い ぐらい だ けど 、 パケット 代 が １０万 円 分 くらい 。
+∃ SITUATION[4] EVENT[6] ENTITY[5] ENTITY[11] ENTITY[9] ENTITY[1] ENTITY[2] (
+ 通話_料金(ENTITY[2]) ∧
+  請求書(ENTITY[1]) ∧
+   無料_通話_分(ENTITY[5]) ∧
+    FACT(SITUATION[4], 高い(EVENT[6], ENTITY[2]) ∧ より(EVENT[6]) = ENTITY[5]) ∧
+     パケット_代(ENTITY[9]) ∧
+      (CD_１０万_円(ENTITY[11]), 分(ENTITY[11])) ∧
+       ADV_少し(EVENT[6]) ∧
+        CRD_けど(ぐらい SITUATION[3] (SITUATION[3] = SITUATION[4], ∃ EVENT[8] だ(EVENT[8], ENTITY[2], SITUATION[3])),
+         くらい ENTITY[10] (ENTITY[10] = ENTITY[11],
+          ∃ EVENT[12] (xxx(EVENT[12], ENTITY[9], ENTITY[10]) ∧ によれば(EVENT[12]) = ENTITY[1]))))
+
+# ::id 9_blog_KNB_004_Keitai_1-1-3-02;NJ
+# ::snt もちろん 定額 で 使っ て いる ので そんな に も 請求 さ れ て ない
+∃ ENTITY[1] (
+ ENTITY[1] = *speaker* ∧
+  ¬ ∃ SITUATION[6] EVENT[3] EVENT[4] ENTITY[2] (
+        定額(ENTITY[2]) ∧
+         ADV_もちろん(SITUATION[6]) ∧
+          ADV_そんな_に_も(EVENT[4]) ∧
+           FACT(SITUATION[6],
+            CRD_ので(使っ_て_いる(EVENT[3], ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2],
+             請求する.0_て(EVENT[4], _, ENTITY[1])))))
+
+# ::id 10_blog_KNB_004_Keitai_1-1-4-01;NJ
+# ::snt パケ 代 を 定額 に する と 実質 メール も ウェブ も 使い放題 に なる から 、 と 考え て 、 ウェブ で 検索 し たり 音楽 ダウンロード し たり と 好き放題 し て しまっ て こんな 料金 に なっ て しまう よう だ 。
+∃ SITUATION[16] ENTITY[15] ENTITY[2] ENTITY[1] EVENT[3] EVENT[18] EVENT[20] EVENT[21] EVENT[14] ENTITY[17] ENTITY[19] ENTITY[22] (
+ 料金(ENTITY[22]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = *pro*{ENTITY[1]} ∧
+    ENTITY[15] = *pro*{ENTITY[2], ENTITY[1]} ∧
+     ウェブ(ENTITY[17]) ∧
+      音楽(ENTITY[19]) ∧
+       FACT(SITUATION[16],
+        CONJ_たり(検索する.0(EVENT[18], ENTITY[15]) ∧ で(EVENT[18]) = ENTITY[17],
+         ダウンロードする.0(EVENT[20], ENTITY[15], ENTITY[19]))) ∧
+        CONJ_te(CONJ_te(考え_て(EVENT[3], ENTITY[2],
+                   MD_から(∀ ARB[4] EVENT[7] ENTITY[6] ENTITY[5] CND_と(
+                            ARB[4] = *arb* ∧ パケ_代(ENTITY[5]) ∧ 定額(ENTITY[6]) ∧
+                             する(EVENT[7], ARB[4], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6],
+                            ∃ EVENT[13] ENTITY[12] GROUP[9] ENTITY[8] (
+                             実質(ENTITY[8]) ∧
+                              CONJ_も(∃ ENTITY[10] (メール(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+                               ∃ ENTITY[11] (ウェブ(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+                               使い放題(ENTITY[12]) ∧
+                                なる(EVENT[13], GROUP[9]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+                                 ADV(EVENT[13]) = ENTITY[8])))),
+              好き放題する.0_て_しまっ(EVENT[14], ENTITY[2], xxx(EVENT[21], ENTITY[15]) ∧ たり(EVENT[21]) = SITUATION[16])),
+         MD_よう(∃ EVENT[23] (なっ_て_しまう_だ(EVENT[23], ENTITY[1]) ∧ に(EVENT[23]) = ENTITY[22]))))
+
+# ::id 11_blog_KNB_004_Keitai_1-1-5-01;NJ
+# ::snt でも 定額 料金 そのもの が 高い ・・・
+∃ ENTITY[2] EVENT[3] ENTITY[1] (ENTITY[2] = そのもの ∧ RFL_定額_料金(ENTITY[2], ENTITY[1]) ∧ 高い(EVENT[3], ENTITY[1]))
+
+# ::id 12_blog_KNB_004_Keitai_1-1-6-01;NJ
+# ::snt 携帯屋さん に 相談 に 行け ば いい の だろ う が 、 どうも 騙さ れ やすい 性分 な ので 、 向こう の 思う壺 に なら ない か 心配 だ 。
+∃ ENTITY[16] SITUATION[15] ENTITY[10] SITUATION[9] ENTITY[8] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[11] EVENT[13] ENTITY[5] ENTITY[4] (
+ ENTITY[3] = *speaker*{ENTITY[1]} ∧
+  携帯屋さん(ENTITY[4]) ∧
+   相談(ENTITY[5]) ∧
+    FACT(SITUATION[2],
+     行け(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧ に(EVENT[6]) = ENTITY[4]) ∧
+     ば(SITUATION[2], ENTITY[1]) ∧
+      ENTITY[8] = *speaker*{ENTITY[4], ENTITY[5]} ∧
+       ENTITY[10] = *speaker*{ENTITY[8], ENTITY[4], ENTITY[5]} ∧
+        性分(SITUATION[9], 騙さ_やすい(EVENT[11], _, ENTITY[10])) ∧
+         ENTITY[16] = *speaker*{ENTITY[4], ENTITY[5]} ∧
+          FACT(SITUATION[15],
+           ¬ ∃ EVENT[19] ENTITY[18] ENTITY[17] (
+                 向こう(ENTITY[18]) ∧
+                  の_思う壺(ENTITY[18], ENTITY[17]) ∧
+                   なら(EVENT[19], ENTITY[16]) ∧ に(EVENT[19]) = ENTITY[17])) ∧
+           ADV_どうも(EVENT[11]) ∧
+            CONJ_が(MD_う(∃ EVENT[7] いい_の_だろ(EVENT[7], ENTITY[1])),
+             CRD_ので(な(EVENT[13], ENTITY[8], SITUATION[9]),
+              か SITUATION[14] (SITUATION[14] = SITUATION[15], ∃ EVENT[20] 心配_だ(EVENT[20], SITUATION[14])))))
+
+# ::id 13_blog_KNB_004_Keitai_1-1-7-01;NJ
+# ::snt 自分 で ある程度 調べ て 、 携帯屋さん の 意見 も 参考 に し て 考え て み よう 。
+IMPERATIVE(∃ ENTITY[2] ENTITY[1] EVENT[3] EVENT[8] EVENT[9] ENTITY[6] ENTITY[7] ENTITY[5] (
+      ENTITY[1] = *speaker* ∧
+       ENTITY[2] = 自分 ∧
+        携帯屋さん(ENTITY[6]) ∧
+         の_意見(ENTITY[6], ENTITY[5]) ∧
+          参考(ENTITY[7]) ∧
+           ADV_ある程度(EVENT[3]) ∧
+            CONJ_te(調べ_て(EVENT[3], ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2],
+             し_て(EVENT[8], ENTITY[1], ENTITY[5], ENTITY[7]), 考え_て_み_よう(EVENT[9], ENTITY[1]))))
+
+# ::id 14_blog_KNB_004_Keitai_1-1-8-01;NJ
+# ::snt 新しい 機種 も 気 に なる し 。
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ 新しい(ATTRIB[2]) ∧
+  ATTRIBUTE_機種(ATTRIB[2], ENTITY[1]) ∧ 気(ENTITY[3]) ∧ MD_し(なる(EVENT[4], ENTITY[1], ENTITY[3])))
+
+# ::id 15_blog_KNB_004_Keitai_1-1-9-01;NJ
+# ::snt 音楽 ダウンロード といえば 、 ａｕ は 内臓 さ れ て いる 専用 の ミュージック プレーヤー で 音楽 を 聴こ う と 思っ たら 、 音楽 の データ を サイト から 購入 する か ＣＤ から 取り込ま ねばならない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_ねばならない(∃ ENTITY[2] (
+        音楽_ダウンロード(ENTITY[2]) ∧
+         ∀ ENTITY[4] EVENT[3] CND_たら(
+             ENTITY[4] = *pro*{ENTITY[1], ENTITY[2], ENTITY[ａｕ]} ∧
+              思っ(EVENT[3], ENTITY[1],
+               MD_う(∃ EVENT[7] EVENT[10] ENTITY[8] ENTITY[9] ENTITY[5] (
+                     専用(ENTITY[8]) ∧
+                      内臓する.0_て_いる(EVENT[7], _, ENTITY[5]) ∧ の_ミュージック_プレーヤー(ENTITY[8], ENTITY[5]) ∧
+                       音楽(ENTITY[9]) ∧
+                        聴こ(EVENT[10], ENTITY[4], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[5]))),
+             ∃ EVENT[14] EVENT[16] ENTITY[12] ENTITY[13] ENTITY[15] ENTITY[11] (
+              音楽(ENTITY[12]) ∧
+               の_データ(ENTITY[12], ENTITY[11]) ∧
+                サイト(ENTITY[13]) ∧
+                 ＣＤ(ENTITY[15]) ∧
+                  CRD_か(購入する.0(EVENT[14], ENTITY[11]) ∧ から(EVENT[14]) = ENTITY[13],
+                   取り込ま(EVENT[16], ENTITY[1], ENTITY[11]) ∧ から(EVENT[16]) = ENTITY[15] ∧
+                    TPC(EVENT[16]) = ENTITY[ａｕ] ∧ といえば(EVENT[16]) = ENTITY[2]))))))

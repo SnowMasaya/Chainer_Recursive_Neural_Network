@@ -1,0 +1,885 @@
+# ::id 1_childrens_POTTER-1902;AT1-1;NE
+# ::snt THE TALE OF PETER RABBIT BY BEATRIX POTTER
+∃ EVENT[2] TTL[1] (
+ is_TALE_OF(TTL[1], PETER.RABBIT.PERSON[PETER_RABBIT]) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = TTL[1] ∧ BY(EVENT[2]) = AUTHOR[BEATRIX_POTTER])
+
+# ::id 2_childrens_POTTER-1902;AT2-1;NE
+# ::snt Once upon a time there were four little Rabbits ,
+∃ ATTRIB[3] EVENT[4] TIME[1] RABBIT.PERSONS[2] (
+ time(TIME[1]) ∧
+  little(ATTRIB[3]) ∧
+   (CD_four(RABBIT.PERSONS[2]), is_Rabbits_ATTRIBUTE(RABBIT.PERSONS[2], ATTRIB[3])) ∧
+    is_TMP_once_upon(EVENT[4], TIME[1]) ∧ past(EVENT[4]) ∧ be.01(EVENT[4], RABBIT.PERSONS[2]))
+
+# ::id 3_childrens_POTTER-1902;AT2-2;NE
+# ::snt and their names were -- Flopsy , Mopsy , Cotton-tail , and Peter .
+∃ RABBIT.PERSONS[2] EVENT[4] GROUP[3] GROUP[1] (
+ RABBIT.PERSONS[2] = their ∧
+  is_names_POS(GROUP[1], RABBIT.PERSONS[2]) ∧
+   is_element_of(FLOPSY.RABBIT.PERSON[Flopsy], GROUP[3]) ∧ is_element_of(MOPSY.RABBIT.PERSON[Mopsy], GROUP[3]) ∧ is_element_of(COTTONTAIL.RABBIT.PERSON[Cotton-tail], GROUP[3]) ∧
+    is_element_of(PETER.RABBIT.PERSON[Peter], GROUP[3]) ∧ past(EVENT[4]) ∧ be.01(EVENT[4], GROUP[1], GROUP[3]))
+
+# ::id 4_childrens_POTTER-1902;AT2-3;NE
+# ::snt They lived with their Mother in a sand-bank , underneath the root of a very big fir-tree .
+∃ RABBIT.PERSONS[3] RABBIT.PERSONS[1] ATTRIB[7] EVENT[8] ENTITY[4] MOTHER.RABBIT.PERSON[2] ENTITY[6] ENTITY[5] (
+ very_big(ATTRIB[7]) ∧
+  is_fir-tree_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   is_root_of(ENTITY[5], ENTITY[6]) ∧
+    RABBIT.PERSONS[1] = they ∧
+     RABBIT.PERSONS[3] = their{RABBIT.PERSONS[1]} ∧
+      is_Mother_POS(MOTHER.RABBIT.PERSON[2], RABBIT.PERSONS[3]) ∧
+       is_sand-bank_underneath(ENTITY[4], ENTITY[5]) ∧
+        past(EVENT[8]) ∧
+         live.01(EVENT[8], RABBIT.PERSONS[1]) ∧ in(EVENT[8]) = ENTITY[4] ∧ with(EVENT[8]) = MOTHER.RABBIT.PERSON[2])
+
+# ::id 5_childrens_POTTER-1902;AT3-1;NE
+# ::snt ' Now my dears , ' said old Mrs. Rabbit one morning ,
+∃ MOTHER.RABBIT.PERSON[4] EVENT[5] EVENT[2] RABBIT.PERSONS[3] TIME[1] (
+ (CD_one(TIME[1]), morning(TIME[1])) ∧
+  MOTHER.RABBIT.PERSON[4] = my{MOTHER.RABBIT.PERSON[old_Mrs.Rabbit]} ∧
+   is_dears_POS(RABBIT.PERSONS[3], MOTHER.RABBIT.PERSON[4]) ∧
+    past(EVENT[2]) ∧
+     say.01(EVENT[2], MOTHER.RABBIT.PERSON[old_Mrs.Rabbit], xxx(EVENT[5]) ∧ VOC(EVENT[5]) = RABBIT.PERSONS[3]) ∧
+      is_contained_in(TMP(EVENT[2]), TIME[1]))
+
+# ::id 6_childrens_POTTER-1902;AT3-1;NE
+# ::snt ' you may go into the fields or down the lane ,
+∃ RABBIT.PERSONS[1] LOC[2] LOC[3] (
+ fields(LOC[2]) ∧
+  lane(LOC[3]) ∧
+   RABBIT.PERSONS[1] = you ∧
+    MD_may(∃ EVENT[4] EVENT[4] CONJ_or(go.01(EVENT[4], RABBIT.PERSONS[1]) ∧ into(EVENT[4]) = LOC[2],
+          go.01(EVENT[4], RABBIT.PERSONS[1]) ∧ down(EVENT[4]) = LOC[3])))
+
+# ::id 7_childrens_POTTER-1902;AT3-1;NE
+# ::snt but do n't go into Mr. McGregor 's garden :
+IMPERATIVE(∃ RABBIT.PERSONS[1] (
+      RABBIT.PERSONS[1] = xxx ∧
+       ¬ ∃ EVENT[3] GARDEN.LOC[2] (
+             is_garden_POS(GARDEN.LOC[2], MRMCGREGOR.PERSON[Mr.McGregor]) ∧
+              do_go(EVENT[3], RABBIT.PERSONS[1]) ∧ into(EVENT[3]) = GARDEN.LOC[2])))
+
+# ::id 8_childrens_POTTER-1902;AT3-3;NE
+# ::snt your Father had an accident there ;
+∃ GARDEN.LOC[4] RABBIT.PERSONS[2] EVENT[5] ACCIDENT.EVENT[3] FATHER.RABBIT.PERSON[1] (
+ RABBIT.PERSONS[2] = your ∧
+  is_Father_POS(FATHER.RABBIT.PERSON[1], RABBIT.PERSONS[2]) ∧
+   accident(ACCIDENT.EVENT[3]) ∧
+    GARDEN.LOC[4] = there ∧
+     past(EVENT[5]) ∧ have.03(EVENT[5], FATHER.RABBIT.PERSON[1], ACCIDENT.EVENT[3]) ∧ LOC(EVENT[5]) = GARDEN.LOC[4])
+
+# ::id 9_childrens_POTTER-1902;AT3-3;NE
+# ::snt he was put in a pie by Mrs. McGregor . '
+∃ FATHER.RABBIT.PERSON[1] EVENT[3] FOOD.PRODUCT[2] (
+ FATHER.RABBIT.PERSON[1] = he ∧
+  pie(FOOD.PRODUCT[2]) ∧
+   past(EVENT[3]) ∧ put.01(EVENT[3], MRSMCGREGOR.PERSON[Mrs.McGregor], FATHER.RABBIT.PERSON[1]) ∧ in(EVENT[3]) = FOOD.PRODUCT[2])
+
+# ::id 10_childrens_POTTER-1902;AT3-4;NE
+# ::snt ' Now run along ,
+IMPERATIVE(∃ RABBIT.PERSONS[1] EVENT[2] (RABBIT.PERSONS[1] = xxx ∧ TMP_now(EVENT[2]) ∧ run_along(EVENT[2], RABBIT.PERSONS[1])))
+
+# ::id 11_childrens_POTTER-1902;AT3-4;NE
+# ::snt and do n't get into mischief .
+IMPERATIVE(∃ RABBIT.PERSONS[1] (
+      RABBIT.PERSONS[1] = xxx ∧
+       ¬ ∃ EVENT[3] ENTITY[2] (mischief(ENTITY[2]) ∧ do_get(EVENT[3], RABBIT.PERSONS[1]) ∧ into(EVENT[3]) = ENTITY[2])))
+
+# ::id 12_childrens_POTTER-1902;AT3-5;NE
+# ::snt I am going out . '
+∃ MOTHER.RABBIT.PERSON[1] EVENT[2] (MOTHER.RABBIT.PERSON[1] = i ∧ am_going_out(EVENT[2], MOTHER.RABBIT.PERSON[1]))
+
+# ::id 13_childrens_POTTER-1902;AT4-1;NE
+# ::snt Then old Mrs. Rabbit took a basket and her umbrella , and went through the wood to the baker 's .
+∃ SITUATION[10] EVENT[5] EVENT[9] GROUP[1] ENTITY[7] BAKER.PERSON[8] WOOD.LOC[6] (
+ wood(WOOD.LOC[6]) ∧
+  baker(BAKER.PERSON[8]) ∧
+   ∃ ENTITY[2] (basket(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+    ∃ MOTHER.RABBIT.PERSON[4] ENTITY[3] (MOTHER.RABBIT.PERSON[4] = her{MOTHER.RABBIT.PERSON[old_Mrs.Rabbit]} ∧ is_umbrella_POS(ENTITY[3], MOTHER.RABBIT.PERSON[4]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+    is_POS(ENTITY[7], BAKER.PERSON[8]) ∧
+     TMP_then(SITUATION[10]) ∧
+      past(EVENT[5]) ∧
+       past(EVENT[9]) ∧
+        is_FACT_THAT(SITUATION[10],
+         CONJ_and(took(EVENT[5], MOTHER.RABBIT.PERSON[old_Mrs.Rabbit], GROUP[1]),
+          went(EVENT[9], MOTHER.RABBIT.PERSON[old_Mrs.Rabbit]) ∧ to(EVENT[9]) = ENTITY[7] ∧ through(EVENT[9]) = WOOD.LOC[6])))
+
+# ::id 14_childrens_POTTER-1902;AT4-2;NE
+# ::snt She bought a loaf of brown bread and five currant buns .
+∃ MOTHER.RABBIT.PERSON[1] EVENT[7] FOOD.PRODUCTS[2] (
+ MOTHER.RABBIT.PERSON[1] = she ∧
+  ∃ ATTRIB[5] FOOD.PRODUCT[4] ENTITY[3] (
+   brown(ATTRIB[5]) ∧
+    is_bread_ATTRIBUTE(FOOD.PRODUCT[4], ATTRIB[5]) ∧ is_loaf_of(ENTITY[3], FOOD.PRODUCT[4]) ∧ is_element_of(ENTITY[3], FOOD.PRODUCTS[2])) ∧
+   ∃ GROUP[6] ((CD_five(GROUP[6]), currant_buns(GROUP[6])) ∧ is_subset_of_or_equal_to(GROUP[6], FOOD.PRODUCTS[2])) ∧
+   past(EVENT[7]) ∧ bought(EVENT[7], MOTHER.RABBIT.PERSON[1], FOOD.PRODUCTS[2]))
+
+# ::id 15_childrens_POTTER-1902;AT5-1;NE
+# ::snt Flopsy , Mopsy , and Cotton-tail , who were good little bunnies , went down the lane to gather blackberries :
+∃ PRP[9] ATTRIB[6] ATTRIB[5] EVENT[7] EVENT[11] EVENT[12] GROUP[4] GROUP[2] FOOD.PRODUCTS[10] RABBIT.PERSONS[1] ENTITY[8] (
+ lane(ENTITY[8]) ∧
+  is_element_of(FLOPSY.RABBIT.PERSON[Flopsy], GROUP[2]) ∧ is_element_of(MOPSY.RABBIT.PERSON[Mopsy], GROUP[2]) ∧ is_element_of(COTTONTAIL.RABBIT.PERSON[Cotton-tail], GROUP[2]) ∧
+   good(ATTRIB[5]) ∧
+    little(ATTRIB[6]) ∧
+     is_bunnies_ATTRIBUTE(GROUP[4], ATTRIB[6]) ∧ is_bunnies_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+      copula(EVENT[7], RABBIT.PERSONS[1], GROUP[4]) ∧ is_equals(RABBIT.PERSONS[1], GROUP[2]) ∧
+       blackberries(FOOD.PRODUCTS[10]) ∧
+        is_FACT_THAT(PRP[9], gather(EVENT[11], RABBIT.PERSONS[1], FOOD.PRODUCTS[10])) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[12]) ∧
+           went(EVENT[12], RABBIT.PERSONS[1]) ∧ PRP(EVENT[12]) = PRP[9] ∧ down(EVENT[12]) = ENTITY[8])
+
+# ::id 16_childrens_POTTER-1902;AT6-1;NE
+# ::snt But Peter , who was very naughty , ran straight away to Mr. McGregor 's garden , and squeezed under the gate !
+∃ ATTRIB[2] EVENT[3] EVENT[5] EVENT[8] GARDEN.LOC[4] GATE.GARDEN.LOC[7] (
+ gate(GATE.GARDEN.LOC[7]) ∧
+  very_naughty(ATTRIB[2]) ∧
+   be.01(EVENT[3], PETER.RABBIT.PERSON[Peter], ATTRIB[2]) ∧
+    is_garden_POS(GARDEN.LOC[4], MRMCGREGOR.PERSON[Mr.McGregor]) ∧
+     past(EVENT[3]) ∧
+      DIR_straight_away(EVENT[5]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[8]) ∧
+         CONJ_and(ran(EVENT[5], PETER.RABBIT.PERSON[Peter]) ∧ to(EVENT[5]) = GARDEN.LOC[4],
+          squeezed(EVENT[8], PETER.RABBIT.PERSON[Peter]) ∧ under(EVENT[8]) = GATE.GARDEN.LOC[7]))
+
+# ::id 17_childrens_POTTER-1902;AT6-3;NE
+# ::snt First he ate some lettuces and some French beans ;
+∃ PETER.RABBIT.PERSON[1] EVENT[6] FOOD.PRODUCTS[2] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  SOME LETTUCE.FOOD.PRODUCTS[3] (lettuces(LETTUCE.FOOD.PRODUCTS[3]), is_subset_of_or_equal_to(LETTUCE.FOOD.PRODUCTS[3], FOOD.PRODUCTS[2])) ∧
+   SOME ATTRIB[5] FRENCHBEAN.FOOD.PRODUCTS[4] ((french(ATTRIB[5]) ∧ is_beans_ATTRIBUTE(FRENCHBEAN.FOOD.PRODUCTS[4], ATTRIB[5])), is_subset_of_or_equal_to(FRENCHBEAN.FOOD.PRODUCTS[4], FOOD.PRODUCTS[2])) ∧
+   TMP_first(EVENT[6]) ∧ past(EVENT[6]) ∧ ate(EVENT[6], PETER.RABBIT.PERSON[1], FOOD.PRODUCTS[2]))
+
+# ::id 18_childrens_POTTER-1902;AT6-3;NE
+# ::snt and then he ate some radishes ;
+∃ SITUATION[4] PETER.RABBIT.PERSON[1] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  TMP_then(SITUATION[4]) ∧
+   is_FACT_THAT(SITUATION[4], SOME RADISH.FOOD.PRODUCTS[2] (radishes(RADISH.FOOD.PRODUCTS[2]), ∃ EVENT[3] (past(EVENT[3]) ∧ ate(EVENT[3], PETER.RABBIT.PERSON[1], RADISH.FOOD.PRODUCTS[2])))))
+
+# ::id 19_childrens_POTTER-1902;AT6-4;NE
+# ::snt And then , feeling rather sick , he went to look for some parsley .
+∃ SITUATION[8] PRP[4] ATTRIB[2] PETER.RABBIT.PERSON[1] EVENT[3] EVENT[7] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  rather_sick(ATTRIB[2]) ∧
+   is_FACT_THAT(PRP[4],
+    SOME PARSLEY.FOOD.PRODUCT[5] (parsley(PARSLEY.FOOD.PRODUCT[5]), ∃ EVENT[6] (look(EVENT[6], PETER.RABBIT.PERSON[1]) ∧ for(EVENT[6]) = PARSLEY.FOOD.PRODUCT[5]))) ∧
+    TMP_then(SITUATION[8]) ∧
+     past(EVENT[7]) ∧
+      is_FACT_THAT(SITUATION[8],
+       CONJ_and(feeling(EVENT[3], PETER.RABBIT.PERSON[1], ATTRIB[2]),
+        went(EVENT[7], PETER.RABBIT.PERSON[1]) ∧ PRP(EVENT[7]) = PRP[4])))
+
+# ::id 20_childrens_POTTER-1902;AT6-6;NE
+# ::snt But round the end of a cucumber frame , whom should he meet but Mr. McGregor !
+∃ EVENT[7] PERSON[3] ENTITY[2] ENTITY[1] (
+ cucumber_frame(ENTITY[2]) ∧
+  is_end_of(ENTITY[1], ENTITY[2]) ∧
+   MD_should(∃ PETER.RABBIT.PERSON[5] EVENT[6] (PETER.RABBIT.PERSON[5] = he ∧ meet(EVENT[6], PETER.RABBIT.PERSON[5], PERSON[3]))) ∧
+    xxx(EVENT[7], PERSON[3], MRMCGREGOR.PERSON[Mr.McGregor]) ∧ round(EVENT[7]) = ENTITY[1])
+
+# ::id 21_childrens_POTTER-1902;AT7-1;NE
+# ::snt Mr. McGregor was on his hands and knees planting out young cabbages ,
+∃ ATTRIB[7] MRMCGREGOR.PERSON[2] EVENT[9] EVENT[8] GROUP[3] CABBAGE.FOOD.PRODUCTS[6] ENTITY[1] (
+ MRMCGREGOR.PERSON[2] = his{MRMCGREGOR.PERSON[Mr.McGregor]} ∧
+  ∃ GROUP[4] (hands(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+   ∃ GROUP[5] (knees(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+   is_equals(ENTITY[1], GROUP[3]) ∧ is_POS(ENTITY[1], MRMCGREGOR.PERSON[2]) ∧
+    young(ATTRIB[7]) ∧
+     is_cabbages_ATTRIBUTE(CABBAGE.FOOD.PRODUCTS[6], ATTRIB[7]) ∧
+      past(EVENT[9]) ∧
+       CONJ_and(be.02(EVENT[9], MRMCGREGOR.PERSON[Mr.McGregor]) ∧ on(EVENT[9]) = ENTITY[1],
+        planting_out(EVENT[8], MRMCGREGOR.PERSON[Mr.McGregor], CABBAGE.FOOD.PRODUCTS[6])))
+
+# ::id 22_childrens_POTTER-1902;AT7-2;NE
+# ::snt but he jumped up and ran after Peter , waving a rake and calling out , ' Stop thief ! '
+∃ MRMCGREGOR.PERSON[1] EVENT[2] EVENT[8] EVENT[4] EVENT[5] ENTITY[3] (
+ MRMCGREGOR.PERSON[1] = he ∧
+  rake(ENTITY[3]) ∧
+   past(EVENT[2]) ∧
+    past(EVENT[8]) ∧
+     CONJ_and(jumped_up(EVENT[2], MRMCGREGOR.PERSON[1]),
+      CONJ_and(ran(EVENT[8], MRMCGREGOR.PERSON[1]) ∧ after(EVENT[8]) = PETER.RABBIT.PERSON[Peter],
+       CONJ_and(waving(EVENT[4], MRMCGREGOR.PERSON[1], ENTITY[3]),
+        calling_out(EVENT[5], MRMCGREGOR.PERSON[1],
+         IMPERATIVE(∃ EVENT[7] ENTITY[6] (thief(ENTITY[6]) ∧ stop(EVENT[7], _, ENTITY[6]))))))))
+
+# ::id 23_childrens_POTTER-1902;AT8-1;NE
+# ::snt Peter was most dreadfully frightened ;
+∃ EVENT[1] (ADV_most_dreadfully(EVENT[1]) ∧ past(EVENT[1]) ∧ frightened(EVENT[1], _, PETER.RABBIT.PERSON[Peter]))
+
+# ::id 24_childrens_POTTER-1902;AT8-1;NE
+# ::snt he rushed all over the garden ,
+∃ PETER.RABBIT.PERSON[1] EVENT[3] GARDEN.LOC[2] (
+ garden(GARDEN.LOC[2]) ∧
+  PETER.RABBIT.PERSON[1] = he ∧ past(EVENT[3]) ∧ rushed(EVENT[3], PETER.RABBIT.PERSON[1]) ∧ all_over(EVENT[3]) = GARDEN.LOC[2])
+
+# ::id 25_childrens_POTTER-1902;AT8-2;NE
+# ::snt for he had forgotten the way back to the gate .
+∃ PETER.RABBIT.PERSON[1] EVENT[4] GATE.GARDEN.LOC[3] ENTITY[2] (
+ gate(GATE.GARDEN.LOC[3]) ∧
+  is_DIR_back_to(ENTITY[2], GATE.GARDEN.LOC[3]) ∧ way(ENTITY[2]) ∧
+   PETER.RABBIT.PERSON[1] = he ∧ past(EVENT[4]) ∧ had_forgotten(EVENT[4], PETER.RABBIT.PERSON[1], ENTITY[2]))
+
+# ::id 26_childrens_POTTER-1902;AT8-3;NE
+# ::snt He lost one of his shoes among the cabbages , and the other shoe amongst the potatoes .
+∃ PETER.RABBIT.PERSON[4] PETER.RABBIT.PERSON[1] ATTRIB[8] EVENT[6] EVENT[10] SHOE.PRODUCTS[3] SHOE.PRODUCT[2] CABBAGE.FOOD.LOC[5] FOOD.PRODUCTS[9] SHOE.PRODUCT[7] (
+ cabbages(CABBAGE.FOOD.LOC[5]) ∧
+  other(ATTRIB[8]) ∧
+   is_shoe_ATTRIBUTE(SHOE.PRODUCT[7], ATTRIB[8]) ∧
+    potatoes(FOOD.PRODUCTS[9]) ∧
+     PETER.RABBIT.PERSON[1] = he ∧
+      PETER.RABBIT.PERSON[4] = his{PETER.RABBIT.PERSON[1]} ∧
+       is_shoes_POS(SHOE.PRODUCTS[3], PETER.RABBIT.PERSON[4]) ∧
+        (CD_one(SHOE.PRODUCT[2]), is_element_of(SHOE.PRODUCT[2], SHOE.PRODUCTS[3])) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[10]) ∧
+           CONJ_and(lost(EVENT[6], PETER.RABBIT.PERSON[1], SHOE.PRODUCT[2]) ∧ among(EVENT[6]) = CABBAGE.FOOD.LOC[5],
+            lost(EVENT[10], PETER.RABBIT.PERSON[1], SHOE.PRODUCT[7]) ∧ amongst(EVENT[10]) = FOOD.PRODUCTS[9]))
+
+# ::id 27_childrens_POTTER-1902;AT8-4;NE
+# ::snt After losing them , he ran on four legs and went faster , so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net , and got caught by the large buttons on his jacket .
+∃ NARRATOR.PERSON[4] SHOE.PRODUCTS[2] PETER.RABBIT.PERSON[1] PETER.RABBIT.PERSON[14] ATTRIB[12] EVENT[3] EVENT[5] EVENT[21] EVENT[22] GROUP[20] JACKET.PRODUCT[13] BUTTON.JACKET.PRODUCTS[11] (
+ large(ATTRIB[12]) ∧
+  PETER.RABBIT.PERSON[14] = his{PETER.RABBIT.PERSON[1]} ∧
+   is_jacket_POS(JACKET.PRODUCT[13], PETER.RABBIT.PERSON[14]) ∧
+    is_buttons_on(BUTTON.JACKET.PRODUCTS[11], JACKET.PRODUCT[13]) ∧ is_buttons_ATTRIBUTE(BUTTON.JACKET.PRODUCTS[11], ATTRIB[12]) ∧
+     PETER.RABBIT.PERSON[1] = he ∧
+      SHOE.PRODUCTS[2] = them ∧
+       NARRATOR.PERSON[4] = i ∧
+        (CD_four(GROUP[20]), legs(GROUP[20])) ∧
+         past(EVENT[21]) ∧
+          ADV_faster(EVENT[22]) ∧
+           past(EVENT[22]) ∧
+            CRD_After(losing(EVENT[3], PETER.RABBIT.PERSON[1], SHOE.PRODUCTS[2]),
+             CRD_so(think(EVENT[5], NARRATOR.PERSON[4],
+                   ∀ SITUATION[9] ATTRIB[10] PETER.RABBIT.PERSON[6] ENTITY[7] CND_if(
+                       PETER.RABBIT.PERSON[6] = he{PETER.RABBIT.PERSON[1]} ∧ gooseberry_net(ENTITY[7]) ∧
+                        is_caught_by(ATTRIB[10], BUTTON.JACKET.PRODUCTS[11]) ∧ ADV_unfortunately(SITUATION[9]) ∧
+                        CONJ_and(is_FACT_THAT(SITUATION[9],
+                              ¬ ∃ EVENT[8] (
+                                    is_before(EVENT[8], EVENT[5]) ∧
+                                     had_run(EVENT[8], PETER.RABBIT.PERSON[6]) ∧
+                                      into(EVENT[8]) = ENTITY[7])),
+                         ¬ ∃ EVENT[15] (got(EVENT[15], PETER.RABBIT.PERSON[6]) ∧ ATTRIBUTE(EVENT[15]) = ATTRIB[10])),
+                       ∃ PETER.RABBIT.PERSON[16] (
+                        PETER.RABBIT.PERSON[16] = he{PETER.RABBIT.PERSON[1]} ∧
+                         MD_might(∃ EVENT[17] (
+                               DIR_away(EVENT[17]) ∧
+                                ADV_altogether(EVENT[17]) ∧ have_got(EVENT[17], PETER.RABBIT.PERSON[16])))))),
+              CONJ_and(ran(EVENT[21], PETER.RABBIT.PERSON[1]) ∧ on(EVENT[21]) = GROUP[20],
+               went(EVENT[22], PETER.RABBIT.PERSON[1])))))
+
+# ::id 28_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 29_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 30_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 31_childrens_POTTER-1902;AT8-5;NE
+# ::snt It was a blue jacket with brass buttons , quite new .
+∃ ATTRIB[5] ATTRIB[3] JACKET.PRODUCT[1] EVENT[6] BUTTON.JACKET.PRODUCTS[4] BLUE.JACKET.PRODUCT[2] (
+ JACKET.PRODUCT[1] = it ∧
+  blue(ATTRIB[3]) ∧
+   brass_buttons(BUTTON.JACKET.PRODUCTS[4]) ∧
+    quite_new(ATTRIB[5]) ∧
+     is_jacket_ATTRIBUTE(BLUE.JACKET.PRODUCT[2], ATTRIB[5]) ∧ is_jacket_with(BLUE.JACKET.PRODUCT[2], BUTTON.JACKET.PRODUCTS[4]) ∧ is_jacket_ATTRIBUTE(BLUE.JACKET.PRODUCT[2], ATTRIB[3]) ∧
+      past(EVENT[6]) ∧ be.01(EVENT[6], JACKET.PRODUCT[1], BLUE.JACKET.PRODUCT[2]))
+
+# ::id 32_childrens_POTTER-1902;AT9-1;NE
+# ::snt Peter gave himself up for lost , and shed big tears ;
+∃ ATTRIB[5] ATTRIB[2] PETER.RABBIT.PERSON[1] EVENT[3] EVENT[6] GROUP[4] (
+ PETER.RABBIT.PERSON[1] = himself{PETER.RABBIT.PERSON[Peter]} ∧
+  lost(ATTRIB[2]) ∧
+   big(ATTRIB[5]) ∧
+    is_tears_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+     past(EVENT[3]) ∧
+      past(EVENT[6]) ∧
+       CONJ_and(gave_up(EVENT[3], PETER.RABBIT.PERSON[Peter], PETER.RABBIT.PERSON[1]) ∧ for(EVENT[3]) = ATTRIB[2],
+        shed(EVENT[6], PETER.RABBIT.PERSON[Peter], GROUP[4])))
+
+# ::id 33_childrens_POTTER-1902;AT9-2;NE
+# ::snt but his sobs were overheard by some friendly sparrows , who flew to him in great excitement , and implored him to exert himself .
+∃ PETER.RABBIT.PERSON[2] GROUP[1] (
+ PETER.RABBIT.PERSON[2] = his ∧
+  is_sobs_POS(GROUP[1], PETER.RABBIT.PERSON[2]) ∧
+   SOME PETER.RABBIT.PERSON[12] PETER.RABBIT.PERSON[10] ATTRIB[8] PETER.RABBIT.PERSON[6] ATTRIB[4] EVENT[9] EVENT[13] EVENT[11] ENTITY[7] SPARROW.PERSONS[3] (
+    (friendly(ATTRIB[4]) ∧ PETER.RABBIT.PERSON[6] = him ∧ great(ATTRIB[8]) ∧ is_excitement_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+     PETER.RABBIT.PERSON[10] = him ∧ PETER.RABBIT.PERSON[12] = himself{PETER.RABBIT.PERSON[10]} ∧
+     CONJ_and(flew(EVENT[9], SPARROW.PERSONS[3]) ∧ in(EVENT[9]) = ENTITY[7] ∧ to(EVENT[9]) = PETER.RABBIT.PERSON[6],
+      implored(EVENT[11], SPARROW.PERSONS[3], PETER.RABBIT.PERSON[10], exert(EVENT[13], PETER.RABBIT.PERSON[10], PETER.RABBIT.PERSON[12]))) ∧
+      is_sparrows_ATTRIBUTE(SPARROW.PERSONS[3], ATTRIB[4]) ∧ past(EVENT[9]) ∧ past(EVENT[11])),
+    ∃ EVENT[14] (past(EVENT[14]) ∧ overheard(EVENT[14], SPARROW.PERSONS[3], GROUP[1]))))
+
+# ::id 34_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 35_childrens_POTTER-1902;AT10-1;NE
+# ::snt Mr. McGregor came up with a sieve , which he intended to pop upon the top of Peter ;
+∃ MRMCGREGOR.PERSON[3] EVENT[6] EVENT[4] EVENT[7] SIEVE.PRODUCT[1] ENTITY[5] (
+ is_top_of(ENTITY[5], PETER.RABBIT.PERSON[Peter]) ∧
+  MRMCGREGOR.PERSON[3] = he{MRMCGREGOR.PERSON[Mr.McGregor]} ∧
+   intended(EVENT[4], MRMCGREGOR.PERSON[3], pop(EVENT[6], MRMCGREGOR.PERSON[3], SIEVE.PRODUCT[1]) ∧ upon(EVENT[6]) = ENTITY[5]) ∧
+    sieve(SIEVE.PRODUCT[1]) ∧
+    past(EVENT[4]) ∧ past(EVENT[7]) ∧ came_up(EVENT[7], MRMCGREGOR.PERSON[Mr.McGregor]) ∧ with(EVENT[7]) = SIEVE.PRODUCT[1])
+
+# ::id 36_childrens_POTTER-1902;AT11-1;NE
+# ::snt but Peter wriggled out just in time , leaving his jacket behind him .
+∃ PETER.RABBIT.PERSON[5] PETER.RABBIT.PERSON[4] EVENT[7] EVENT[6] EVENT[2] JACKET.PRODUCT[3] TIME[1] (
+ time(TIME[1]) ∧
+  PETER.RABBIT.PERSON[4] = his{PETER.RABBIT.PERSON[Peter]} ∧
+   is_jacket_POS(JACKET.PRODUCT[3], PETER.RABBIT.PERSON[4]) ∧
+    PETER.RABBIT.PERSON[5] = him{PETER.RABBIT.PERSON[Peter]} ∧
+     past(EVENT[7]) ∧
+      CONJ_and(wriggled_out(EVENT[7], PETER.RABBIT.PERSON[Peter]) ∧ just_in(EVENT[7]) = TIME[1],
+       leaving(EVENT[2], PETER.RABBIT.PERSON[Peter], xxx(EVENT[6], JACKET.PRODUCT[3]) ∧ behind(EVENT[6]) = PETER.RABBIT.PERSON[5])))
+
+# ::id 37_childrens_POTTER-1902;AT11-2;NE
+# ::snt And rushed into the tool-shed , and jumped into a can .
+∃ PETER.RABBIT.PERSON[1] EVENT[3] EVENT[5] WATER.CAN.CONTAINER.PRODUCT[4] ENTITY[2] (
+ tool-shed(ENTITY[2]) ∧
+  PETER.RABBIT.PERSON[1] = xxx ∧
+   can(WATER.CAN.CONTAINER.PRODUCT[4]) ∧
+    past(EVENT[3]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(rushed(EVENT[3], PETER.RABBIT.PERSON[1]) ∧ into(EVENT[3]) = ENTITY[2],
+       jumped(EVENT[5], PETER.RABBIT.PERSON[1]) ∧ into(EVENT[5]) = WATER.CAN.CONTAINER.PRODUCT[4]))
+
+# ::id 38_childrens_POTTER-1902;AT11-3;NE
+# ::snt It would have been a beautiful thing to hide in , if it had not had so much water in it .
+∀ WATER.CAN.CONTAINER.PRODUCT[1] CND_if(
+    WATER.CAN.CONTAINER.PRODUCT[1] = it ∧
+     SO_MUCH ENTITY[2] (water(ENTITY[2]),
+      ∃ WATER.CAN.CONTAINER.PRODUCT[3] (
+       WATER.CAN.CONTAINER.PRODUCT[3] = it ∧
+        ¬ ∃ EVENT[4] (
+              past(EVENT[4]) ∧
+               had_had(EVENT[4], WATER.CAN.CONTAINER.PRODUCT[1], ENTITY[2]) ∧ in(EVENT[4]) = WATER.CAN.CONTAINER.PRODUCT[3]))),
+    ∃ WATER.CAN.CONTAINER.PRODUCT[5] (
+     WATER.CAN.CONTAINER.PRODUCT[5] = it ∧
+      MD_would(∃ ATTRIB[7] EVENT[9] EVENT[10] ENTITY[6] (
+            beautiful(ATTRIB[7]) ∧
+             hide(EVENT[9]) ∧ in(EVENT[9]) = ENTITY[6] ∧ is_thing_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+              have_copula(EVENT[10], WATER.CAN.CONTAINER.PRODUCT[5], ENTITY[6])))))
+
+# ::id 39_childrens_POTTER-1902;AT12-1;NE
+# ::snt Mr. McGregor was quite sure that Peter was somewhere in the tool-shed , perhaps hidden underneath a flower-pot .
+∃ SITUATION[7] ATTRIB[1] EVENT[6] EVENT[4] EVENT[8] FLOWER.POT.CONTAINER.PRODUCT[3] ENTITY[2] (
+ tool-shed(ENTITY[2]) ∧
+  flower-pot(FLOWER.POT.CONTAINER.PRODUCT[3]) ∧
+   is_quite_sure_THAT(ATTRIB[1],
+    is_FACT_THAT(SITUATION[7],
+     CONJ_and(be.02(EVENT[6], PETER.RABBIT.PERSON[Peter]) ∧ in(EVENT[6]) = ENTITY[2],
+      hidden(EVENT[4], _, PETER.RABBIT.PERSON[Peter]) ∧ underneath(EVENT[4]) = FLOWER.POT.CONTAINER.PRODUCT[3]))) ∧
+    LOC_somewhere(SITUATION[7]) ∧
+     past(EVENT[6]) ∧ ADV_perhaps(EVENT[4]) ∧ past(EVENT[8]) ∧ be.01(EVENT[8], MRMCGREGOR.PERSON[Mr.McGregor], ATTRIB[1]))
+
+# ::id 40_childrens_POTTER-1902;AT12-2;NE
+# ::snt He began to turn them over carefully , looking under each .
+∃ FLOWER.POT.CONTAINER.PRODUCTS[5] MRMCGREGOR.PERSON[1] EVENT[6] EVENT[4] (
+ MRMCGREGOR.PERSON[1] = he ∧
+  FLOWER.POT.CONTAINER.PRODUCTS[5] = them ∧
+   ADV_carefully(EVENT[6]) ∧
+    past(EVENT[4]) ∧
+     CONJ_and(began(EVENT[4], MRMCGREGOR.PERSON[1], turn_over(EVENT[6], MRMCGREGOR.PERSON[1], FLOWER.POT.CONTAINER.PRODUCTS[5])),
+      EACH FLOWER.POT.CONTAINER.PRODUCTS[2] ∃ EVENT[3] (looking(EVENT[3], MRMCGREGOR.PERSON[1]) ∧ under(EVENT[3]) = FLOWER.POT.CONTAINER.PRODUCTS[2])))
+
+# ::id 41_childrens_POTTER-1902;AT13-1;NE
+# ::snt Presently Peter sneezed -- ' Kertyschoo ! '
+∃ EVENT[1] (TMP_presently(EVENT[1]) ∧ past(EVENT[1]) ∧ sneezed(EVENT[1], PETER.RABBIT.PERSON[Peter]))
+
+# ::id 42_childrens_POTTER-1902;AT13-2;NE
+# ::snt Mr. McGregor was after him in no time .
+∃ PETER.RABBIT.PERSON[1] (
+ PETER.RABBIT.PERSON[1] = him ∧
+  ¬ ∃ EVENT[3] TIME[2] (
+        time(TIME[2]) ∧
+         past(EVENT[3]) ∧
+          be.02(EVENT[3], MRMCGREGOR.PERSON[Mr.McGregor]) ∧ in(EVENT[3]) = TIME[2] ∧ after(EVENT[3]) = PETER.RABBIT.PERSON[1]))
+
+# ::id 43_childrens_POTTER-1902;AT13-3;NE
+# ::snt And tried to put his foot upon Peter , who jumped out of a window , upsetting three plants .
+∃ MRMCGREGOR.PERSON[4] MRMCGREGOR.PERSON[1] EVENT[9] EVENT[8] EVENT[10] EVENT[2] GROUP[7] ENTITY[6] ENTITY[3] (
+ MRMCGREGOR.PERSON[1] = xxx ∧
+  MRMCGREGOR.PERSON[4] = his{MRMCGREGOR.PERSON[1]} ∧
+   is_foot_POS(ENTITY[3], MRMCGREGOR.PERSON[4]) ∧
+    window(ENTITY[6]) ∧
+     (CD_three(GROUP[7]), plants(GROUP[7])) ∧
+      CONJ_and(jumped_out(EVENT[9], PETER.RABBIT.PERSON[Peter]) ∧ of(EVENT[9]) = ENTITY[6],
+       upsetting(EVENT[8], PETER.RABBIT.PERSON[Peter], GROUP[7])) ∧
+       is_before(EVENT[9], EVENT[2]) ∧
+        past(EVENT[2]) ∧
+         tried(EVENT[2], MRMCGREGOR.PERSON[1], put(EVENT[10], MRMCGREGOR.PERSON[1], ENTITY[3]) ∧ upon(EVENT[10]) = PETER.RABBIT.PERSON[Peter]))
+
+# ::id 44_childrens_POTTER-1902;AT14-1;NE
+# ::snt The window was too small for Mr. McGregor ,
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (window(ENTITY[1]) ∧ is_too_small_for(ATTRIB[2], MRMCGREGOR.PERSON[Mr.McGregor]) ∧ past(EVENT[3]) ∧ be.01(EVENT[3], ENTITY[1], ATTRIB[2]))
+
+# ::id 45_childrens_POTTER-1902;AT14-2;NE
+# ::snt and he was tired of running after Peter .
+∃ MRMCGREGOR.PERSON[4] SITUATION[3] ATTRIB[2] MRMCGREGOR.PERSON[1] EVENT[5] EVENT[6] (
+ MRMCGREGOR.PERSON[1] = he ∧
+  MRMCGREGOR.PERSON[4] = xxx{MRMCGREGOR.PERSON[1]} ∧
+   is_FACT_THAT(SITUATION[3], running(EVENT[5], MRMCGREGOR.PERSON[4]) ∧ after(EVENT[5]) = PETER.RABBIT.PERSON[Peter]) ∧
+    is_tired_of(ATTRIB[2], SITUATION[3]) ∧ past(EVENT[6]) ∧ be.01(EVENT[6], MRMCGREGOR.PERSON[1], ATTRIB[2]))
+
+# ::id 46_childrens_POTTER-1902;AT14-3;NE
+# ::snt He went back to his work .
+∃ MRMCGREGOR.PERSON[3] MRMCGREGOR.PERSON[1] EVENT[4] ENTITY[2] (
+ MRMCGREGOR.PERSON[1] = he ∧
+  MRMCGREGOR.PERSON[3] = his{MRMCGREGOR.PERSON[1]} ∧
+   is_work_POS(ENTITY[2], MRMCGREGOR.PERSON[3]) ∧
+    past(EVENT[4]) ∧ went_back(EVENT[4], MRMCGREGOR.PERSON[1]) ∧ to(EVENT[4]) = ENTITY[2])
+
+# ::id 47_childrens_POTTER-1902;AT15-1;NE
+# ::snt Peter sat down to rest ;
+∃ PRP[1] EVENT[2] EVENT[3] (
+ past(EVENT[3]) ∧
+  is_FACT_THAT(PRP[1], rest(EVENT[2], PETER.RABBIT.PERSON[Peter])) ∧ sat_down(EVENT[3], PETER.RABBIT.PERSON[Peter]) ∧ PRP(EVENT[3]) = PRP[1])
+
+# ::id 48_childrens_POTTER-1902;AT15-2;NE
+# ::snt he was out of breath trembling with fright ,
+∃ PETER.RABBIT.PERSON[1] EVENT[5] EVENT[4] ENTITY[3] ENTITY[2] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  breath(ENTITY[2]) ∧
+   fright(ENTITY[3]) ∧
+    past(EVENT[5]) ∧
+     CONJ_and(be.02(EVENT[5], PETER.RABBIT.PERSON[1]) ∧ out_of(EVENT[5]) = ENTITY[2],
+      trembling(EVENT[4], PETER.RABBIT.PERSON[1]) ∧ with(EVENT[4]) = ENTITY[3]))
+
+# ::id 49_childrens_POTTER-1902;AT15-3;NE
+# ::snt and he had not the least idea which way to go .
+∃ PETER.RABBIT.PERSON[1] EVENT[4] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  ¬ LEAST ENTITY[2] (
+        is_idea_THAT(ENTITY[2],
+         QUEST(? ENTITY[3] (way(ENTITY[3]) ∧ go(EVENT[4]) ∧ DIR(EVENT[4]) = ENTITY[3]))),
+        ∃ EVENT[5] (past(EVENT[5]) ∧ have.03(EVENT[5], PETER.RABBIT.PERSON[1], ENTITY[2]))))
+
+# ::id 50_childrens_POTTER-1902;AT15-4;NE
+# ::snt Also he was very damp with sitting in that can .
+∃ SITUATION[7] SITUATION[3] ATTRIB[2] PETER.RABBIT.PERSON[1] EVENT[5] EVENT[6] WATER.CAN.CONTAINER.PRODUCT[4] (
+ can(WATER.CAN.CONTAINER.PRODUCT[4]) ∧
+  PETER.RABBIT.PERSON[1] = he ∧
+   is_FACT_THAT(SITUATION[3], sitting(EVENT[5]) ∧ in(EVENT[5]) = WATER.CAN.CONTAINER.PRODUCT[4]) ∧
+    is_very_damp_with(ATTRIB[2], SITUATION[3]) ∧
+     ADV_also(SITUATION[7]) ∧ past(EVENT[6]) ∧ is_FACT_THAT(SITUATION[7], be.01(EVENT[6], PETER.RABBIT.PERSON[1], ATTRIB[2])))
+
+# ::id 51_childrens_POTTER-1902;AT15-5;NE
+# ::snt After a time he began to wander about , going lippity -- lippity -- not very fast , and looking all round .
+∃ PETER.RABBIT.PERSON[2] EVENT[10] EVENT[8] EVENT[3] ENTITY[4] TIME[1] (
+ time(TIME[1]) ∧
+  PETER.RABBIT.PERSON[2] = he ∧
+   lippity_lippity(ENTITY[4]) ∧
+    ADV_all_round(EVENT[8]) ∧
+     past(EVENT[3]) ∧
+      began(EVENT[3], PETER.RABBIT.PERSON[2],
+       CONJ_and(wander_about(EVENT[10], PETER.RABBIT.PERSON[2]),
+        CONJ_and(NOT ATTRIB[6] DEGREE[5] ((very_fast(ATTRIB[6]) ∧ is_ATTRIBUTE(DEGREE[5], ATTRIB[6])),
+              ∃ EVENT[7] (going(EVENT[7], PETER.RABBIT.PERSON[2], ENTITY[4]) ∧ MSR(EVENT[7]) = DEGREE[5])),
+         looking(EVENT[8], PETER.RABBIT.PERSON[2])))) ∧ After(EVENT[3]) = TIME[1])
+
+# ::id 52_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 53_childrens_POTTER-1902;AT15-6;NE
+# ::snt He found a door in a wall ;
+∃ PETER.RABBIT.PERSON[1] EVENT[4] WALL.LOC[3] DOOR.LOC[2] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  wall(WALL.LOC[3]) ∧ is_door_in(DOOR.LOC[2], WALL.LOC[3]) ∧ past(EVENT[4]) ∧ found(EVENT[4], PETER.RABBIT.PERSON[1], DOOR.LOC[2]))
+
+# ::id 54_childrens_POTTER-1902;AT15-7;NE
+# ::snt but it was locked ,
+∃ DOOR.LOC[1] EVENT[2] (DOOR.LOC[1] = it ∧ past(EVENT[2]) ∧ locked(EVENT[2], _, DOOR.LOC[1]))
+
+# ::id 55_childrens_POTTER-1902;AT15-8;NE
+# ::snt and there was no room for a fat little rabbit to squeeze underneath .
+¬ ∃ ATTRIB[5] ATTRIB[4] EVENT[6] EVENT[7] PETER.RABBIT.PERSON[3] ENTITY[1] (
+      fat(ATTRIB[4]) ∧
+       little(ATTRIB[5]) ∧
+        is_rabbit_ATTRIBUTE(PETER.RABBIT.PERSON[3], ATTRIB[5]) ∧ is_rabbit_ATTRIBUTE(PETER.RABBIT.PERSON[3], ATTRIB[4]) ∧
+         squeeze(EVENT[6], PETER.RABBIT.PERSON[3]) ∧ underneath(EVENT[6]) = ENTITY[1] ∧ room(ENTITY[1]) ∧
+          past(EVENT[7]) ∧ be.02(EVENT[7], ENTITY[1]))
+
+# ::id 56_childrens_POTTER-1902;AT16-1;NE
+# ::snt An old mouse was running in and out over the stone doorstep , carrying peas and beans to her family in the wood .
+∃ MOUSE.PERSON[8] ATTRIB[2] EVENT[11] EVENT[10] ENTITY[7] FOOD.PRODUCTS[4] MOUSE.PERSON[1] WOOD.LOC[9] ENTITY[3] (
+ stone_doorstep(ENTITY[3]) ∧
+  wood(WOOD.LOC[9]) ∧
+   old(ATTRIB[2]) ∧
+    is_mouse_ATTRIBUTE(MOUSE.PERSON[1], ATTRIB[2]) ∧
+     ∃ GROUP[5] (peas(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], FOOD.PRODUCTS[4])) ∧
+      ∃ GROUP[6] (beans(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], FOOD.PRODUCTS[4])) ∧
+      MOUSE.PERSON[8] = her{MOUSE.PERSON[1]} ∧
+       is_family_in(ENTITY[7], WOOD.LOC[9]) ∧ is_family_POS(ENTITY[7], MOUSE.PERSON[8]) ∧
+        past(EVENT[11]) ∧
+         CONJ_and(was_running_in_and_out(EVENT[11], MOUSE.PERSON[1]) ∧ over(EVENT[11]) = ENTITY[3],
+          carrying(EVENT[10], MOUSE.PERSON[1], FOOD.PRODUCTS[4]) ∧ to(EVENT[10]) = ENTITY[7]))
+
+# ::id 57_childrens_POTTER-1902;AT16-2;NE
+# ::snt Peter asked her the way to the gate ,
+∃ MOUSE.PERSON[1] EVENT[4] GATE.GARDEN.LOC[3] ENTITY[2] (
+ gate(GATE.GARDEN.LOC[3]) ∧
+  is_way_to(ENTITY[2], GATE.GARDEN.LOC[3]) ∧
+   MOUSE.PERSON[1] = her ∧ past(EVENT[4]) ∧ asked(EVENT[4], PETER.RABBIT.PERSON[Peter], ENTITY[2], MOUSE.PERSON[1]))
+
+# ::id 58_childrens_POTTER-1902;AT16-3;NE
+# ::snt but she had such a large pea in her mouth that she could not answer .
+∃ MOUSE.PERSON[8] ATTRIB[6] MOUSE.PERSON[4] ATTRIB[3] MOUSE.PERSON[1] EVENT[9] ENTITY[7] FOOD.PRODUCT[2] (
+ MOUSE.PERSON[1] = she ∧
+  MOUSE.PERSON[4] = she{MOUSE.PERSON[1]} ∧
+   is_such_THAT(ATTRIB[3], MD_could(¬ ∃ EVENT[5] answer(EVENT[5], MOUSE.PERSON[4]))) ∧
+    large(ATTRIB[6]) ∧
+     is_pea_ATTRIBUTE(FOOD.PRODUCT[2], ATTRIB[6]) ∧ is_pea_ATTRIBUTE(FOOD.PRODUCT[2], ATTRIB[3]) ∧
+      MOUSE.PERSON[8] = her{MOUSE.PERSON[1]} ∧
+       is_mouth_POS(ENTITY[7], MOUSE.PERSON[8]) ∧
+        past(EVENT[9]) ∧ have.03(EVENT[9], MOUSE.PERSON[1], FOOD.PRODUCT[2]) ∧ in(EVENT[9]) = ENTITY[7])
+
+# ::id 59_childrens_POTTER-1902;AT16-4;NE
+# ::snt She only shook her head at him .
+∃ PETER.RABBIT.PERSON[4] MOUSE.PERSON[3] MOUSE.PERSON[1] EVENT[5] ENTITY[2] (
+ MOUSE.PERSON[1] = she ∧
+  MOUSE.PERSON[3] = her{MOUSE.PERSON[1]} ∧
+   is_head_POS(ENTITY[2], MOUSE.PERSON[3]) ∧
+    PETER.RABBIT.PERSON[4] = him ∧
+     only(EVENT[5]) ∧
+      past(EVENT[5]) ∧ shook(EVENT[5], MOUSE.PERSON[1], ENTITY[2]) ∧ at(EVENT[5]) = PETER.RABBIT.PERSON[4])
+
+# ::id 60_childrens_POTTER-1902;AT17-1;NE
+# ::snt Peter began to cry .
+∃ EVENT[2] EVENT[1] (past(EVENT[1]) ∧ began(EVENT[1], PETER.RABBIT.PERSON[Peter], cry(EVENT[2], PETER.RABBIT.PERSON[Peter])))
+
+# ::id 61_childrens_POTTER-1902;AT17-2;NE
+# ::snt Then he tried to find his way straight across the garden ,
+∃ SITUATION[7] PETER.RABBIT.PERSON[4] PETER.RABBIT.PERSON[1] EVENT[6] EVENT[2] ENTITY[3] GARDEN.LOC[5] (
+ garden(GARDEN.LOC[5]) ∧
+  PETER.RABBIT.PERSON[1] = he ∧
+   PETER.RABBIT.PERSON[4] = his{PETER.RABBIT.PERSON[1]} ∧
+    is_way_POS(ENTITY[3], PETER.RABBIT.PERSON[4]) ∧
+     TMP_then(SITUATION[7]) ∧
+      past(EVENT[2]) ∧
+       is_FACT_THAT(SITUATION[7],
+        tried(EVENT[2], PETER.RABBIT.PERSON[1], find(EVENT[6], PETER.RABBIT.PERSON[1], ENTITY[3]) ∧ straight_across(EVENT[6]) = GARDEN.LOC[5])))
+
+# ::id 62_childrens_POTTER-1902;AT17-3;NE
+# ::snt but he became more and more puzzled .
+∃ ATTRIB[2] PETER.RABBIT.PERSON[1] EVENT[3] (PETER.RABBIT.PERSON[1] = he ∧ more_and_more_puzzled(ATTRIB[2]) ∧ past(EVENT[3]) ∧ became(EVENT[3], PETER.RABBIT.PERSON[1], ATTRIB[2]))
+
+# ::id 63_childrens_POTTER-1902;AT17-4;NE
+# ::snt Presently , he came to a pond where Mr. McGregor filled his water-cans .
+∃ SITUATION[9] MRMCGREGOR.PERSON[5] PETER.RABBIT.PERSON[1] EVENT[6] EVENT[8] CONTAINER.PRODUCTS[4] POND.LOC[2] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  MRMCGREGOR.PERSON[5] = his{MRMCGREGOR.PERSON[Mr.McGregor]} ∧
+   is_water-cans_POS(CONTAINER.PRODUCTS[4], MRMCGREGOR.PERSON[5]) ∧
+    filled(EVENT[6], MRMCGREGOR.PERSON[Mr.McGregor], CONTAINER.PRODUCTS[4]) ∧ pond(POND.LOC[2]) ∧
+     TMP_presently(SITUATION[9]) ∧
+      is_LOC(EVENT[6], POND.LOC[2]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[8]) ∧ is_FACT_THAT(SITUATION[9], came(EVENT[8], PETER.RABBIT.PERSON[1]) ∧ to(EVENT[8]) = POND.LOC[2]))
+
+# ::id 64_childrens_POTTER-1902;AT8-4;NE
+# ::snt null
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 65_childrens_POTTER-1902;AT18-1;NE
+# ::snt A white cat was staring at some gold-fish ,
+∃ ATTRIB[2] CAT.PERSON[1] (
+ white(ATTRIB[2]) ∧
+  is_cat_ATTRIBUTE(CAT.PERSON[1], ATTRIB[2]) ∧
+   SOME GOLDFISH.PERSONS[3] (gold-fish(GOLDFISH.PERSONS[3]),
+    ∃ EVENT[4] (past(EVENT[4]) ∧ was_staring(EVENT[4], CAT.PERSON[1]) ∧ at(EVENT[4]) = GOLDFISH.PERSONS[3])))
+
+# ::id 66_childrens_POTTER-1902;AT18-2;NE
+# ::snt she sat very , very still ,
+∃ ATTRIB[2] CAT.PERSON[1] EVENT[4] EVENT[3] (
+ CAT.PERSON[1] = she ∧
+  very(ATTRIB[2]) ∧ very_still(ATTRIB[2]) ∧
+   past(EVENT[4]) ∧ CONJ_and(sat(EVENT[4], CAT.PERSON[1]), xxx(EVENT[3], CAT.PERSON[1], ATTRIB[2])))
+
+# ::id 67_childrens_POTTER-1902;AT18-3;NE
+# ::snt but now and then the tip of her tail twitched as if it were alive .
+∃ SITUATION[8] CAT.PERSON[3] TAIL.CAT.PERSON[2] ENTITY[1] (
+ CAT.PERSON[3] = her ∧
+  is_tail_POS(TAIL.CAT.PERSON[2], CAT.PERSON[3]) ∧
+   is_tip_of(ENTITY[1], TAIL.CAT.PERSON[2]) ∧
+    CONJ_and(TMP_now(SITUATION[8]), TMP_then(SITUATION[8])) ∧
+     is_FACT_THAT(SITUATION[8],
+      ∀ ATTRIB[5] TAIL.CAT.PERSON[4] EVENT[6] CND_as_if(
+          TAIL.CAT.PERSON[4] = it{TAIL.CAT.PERSON[2]} ∧ alive(ATTRIB[5]) ∧ past(EVENT[6]) ∧
+           copula(EVENT[6], TAIL.CAT.PERSON[4], ATTRIB[5]), ∃ EVENT[7] (past(EVENT[7]) ∧ twitched(EVENT[7], ENTITY[1])))))
+
+# ::id 68_childrens_POTTER-1902;AT18-4;NE
+# ::snt Peter thought it best to go away without speaking to her ;
+∃ SITUATION[7] ATTRIB[8] CAT.PERSON[4] SITUATION[3] SITUATION[2] EVENT[5] EVENT[6] EVENT[9] EVENT[1] (
+ CAT.PERSON[4] = her ∧
+  is_FACT_THAT(SITUATION[3], speaking(EVENT[5]) ∧ to(EVENT[5]) = CAT.PERSON[4]) ∧
+   is_FACT_THAT(SITUATION[2], is_FACT_THAT(SITUATION[7], go(EVENT[6]) ∧ without(EVENT[6]) = SITUATION[3])) ∧
+    best(ATTRIB[8]) ∧
+     DIR_away(SITUATION[7]) ∧ past(EVENT[1]) ∧ thought(EVENT[1], PETER.RABBIT.PERSON[Peter], xxx(EVENT[9], SITUATION[2], ATTRIB[8])))
+
+# ::id 69_childrens_POTTER-1902;AT18-5;NE
+# ::snt he had heard about cats from his cousin , little Benjamin Bunny .
+∃ PETER.RABBIT.PERSON[4] PETER.RABBIT.PERSON[1] EVENT[5] BENJAMIN.RABBIT.PERSON[3] CAT.PERSONS[2] (
+ PETER.RABBIT.PERSON[1] = he ∧
+  cats(CAT.PERSONS[2]) ∧
+   PETER.RABBIT.PERSON[4] = his{PETER.RABBIT.PERSON[1]} ∧
+    is_cousin_POS(BENJAMIN.RABBIT.PERSON[3], PETER.RABBIT.PERSON[4]) ∧
+     is_-BENJAMIN.RABBIT.PERSON-_namely(BENJAMIN.RABBIT.PERSON[3], ENTITY[little_Benjamin_Bunny]) ∧
+      past(EVENT[5]) ∧
+       had_heard(EVENT[5], PETER.RABBIT.PERSON[1]) ∧ from(EVENT[5]) = BENJAMIN.RABBIT.PERSON[3] ∧ about(EVENT[5]) = CAT.PERSONS[2])
+
+# ::id 70_childrens_POTTER-1902;AT18-6;NE
+# ::snt He went back towards the tool-shed ,
+∃ PETER.RABBIT.PERSON[1] EVENT[3] SHED.LOC[2] (
+ tool-shed(SHED.LOC[2]) ∧
+  PETER.RABBIT.PERSON[1] = he ∧ past(EVENT[3]) ∧ went_back(EVENT[3], PETER.RABBIT.PERSON[1]) ∧ towards(EVENT[3]) = SHED.LOC[2])
+
+# ::id 71_childrens_POTTER-1902;AT18-7;NE
+# ::snt but suddenly , quite close to him , he heard the noise of a hoe -- scr-r-ritch , scratch , scratch , scritch .
+∃ PETER.RABBIT.PERSON[3] PETER.RABBIT.PERSON[2] ATTRIB[1] EVENT[11] HOE.PRODUCT[10] ENTITY[5] ENTITY[6] ENTITY[7] ENTITY[8] GROUP[4] ENTITY[9] (
+ hoe(HOE.PRODUCT[10]) ∧
+  is_noise_of(ENTITY[9], HOE.PRODUCT[10]) ∧
+   scr-r-ritch(ENTITY[5]) ∧
+    scratch(ENTITY[6]) ∧
+     scratch(ENTITY[7]) ∧
+      scritch(ENTITY[8]) ∧
+       is_element_of(ENTITY[5], GROUP[4]) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧ is_element_of(ENTITY[7], GROUP[4]) ∧
+        is_element_of(ENTITY[8], GROUP[4]) ∧
+        is_-ENTITY-_namely(ENTITY[9], GROUP[4]) ∧
+         PETER.RABBIT.PERSON[2] = him ∧
+          is_quite_close_to(ATTRIB[1], PETER.RABBIT.PERSON[2]) ∧
+           PETER.RABBIT.PERSON[3] = he ∧
+            ADV_suddenly(EVENT[11]) ∧
+             past(EVENT[11]) ∧ heard(EVENT[11], PETER.RABBIT.PERSON[3], ENTITY[9]) ∧ LOC(EVENT[11]) = ATTRIB[1])
+
+# ::id 72_childrens_POTTER-1902;AT19-1;NE
+# ::snt Peter scuttered underneath the bushes .
+∃ EVENT[2] GROUP[1] (bushes(GROUP[1]) ∧ past(EVENT[2]) ∧ scuttered(EVENT[2], PETER.RABBIT.PERSON[Peter]) ∧ underneath(EVENT[2]) = GROUP[1])
+
+# ::id 73_childrens_POTTER-1902;AT19-2;NE
+# ::snt But presently , as nothing happened , he came out , and climbed upon a wheelbarrow and peeped over .
+∃ SITUATION[9] PETER.RABBIT.PERSON[4] SITUATION[1] EVENT[5] EVENT[7] EVENT[8] ENTITY[6] (
+ is_FACT_THAT(SITUATION[1], ¬ ∃ EVENT[3] ENTITY[2] (thing(ENTITY[2]) ∧ past(EVENT[3]) ∧ happened(EVENT[3], ENTITY[2]))) ∧
+  PETER.RABBIT.PERSON[4] = he ∧
+   wheelbarrow(ENTITY[6]) ∧
+    TMP_presently(SITUATION[9]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[7]) ∧
+       past(EVENT[8]) ∧
+        is_FACT_THAT(SITUATION[9],
+         CONJ_and(came_out(EVENT[5], PETER.RABBIT.PERSON[4]) ∧ as(EVENT[5]) = SITUATION[1],
+          CONJ_and(climbed(EVENT[7], PETER.RABBIT.PERSON[4]) ∧ upon(EVENT[7]) = ENTITY[6] ∧
+                as(EVENT[7]) = SITUATION[1],
+           peeped_over(EVENT[8], PETER.RABBIT.PERSON[4]) ∧ as(EVENT[8]) = SITUATION[1]))))
+
+# ::id 74_childrens_POTTER-1902;AT19-3;NE
+# ::snt The first thing he saw was Mr. McGregor hoeing onions .
+∃ SITUATION[6] PETER.RABBIT.PERSON[4] ATTRIB[2] EVENT[8] EVENT[9] ONION.FOOD.PRODUCTS[7] EVENT[5] ENTITY[1] (
+ first(ATTRIB[2]) ∧
+  PETER.RABBIT.PERSON[4] = he ∧
+   saw(EVENT[5], PETER.RABBIT.PERSON[4], ENTITY[1]) ∧ is_thing_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    past(EVENT[5]) ∧
+     onions(ONION.FOOD.PRODUCTS[7]) ∧
+      is_FACT_THAT(SITUATION[6], hoeing(EVENT[8], MRMCGREGOR.PERSON[Mr.McGregor], ONION.FOOD.PRODUCTS[7])) ∧
+       past(EVENT[9]) ∧ be.01(EVENT[9], ENTITY[1], SITUATION[6]))
+
+# ::id 75_childrens_POTTER-1902;AT19-4;NE
+# ::snt His back was turned towards Peter ,
+∃ MRMCGREGOR.PERSON[2] EVENT[3] ENTITY[1] (
+ MRMCGREGOR.PERSON[2] = his ∧
+  is_back_POS(ENTITY[1], MRMCGREGOR.PERSON[2]) ∧
+   past(EVENT[3]) ∧ turned(EVENT[3], _, ENTITY[1]) ∧ towards(EVENT[3]) = PETER.RABBIT.PERSON[Peter])
+
+# ::id 76_childrens_POTTER-1902;AT19-4;NE
+# ::snt and beyond him was the gate !
+∃ MRMCGREGOR.PERSON[1] EVENT[3] GATE.GARDEN.LOC[2] (
+ gate(GATE.GARDEN.LOC[2]) ∧
+  MRMCGREGOR.PERSON[1] = him ∧ past(EVENT[3]) ∧ be.02(EVENT[3], GATE.GARDEN.LOC[2]) ∧ beyond(EVENT[3]) = MRMCGREGOR.PERSON[1])
+
+# ::id 77_childrens_POTTER-1902;AT20-1;NE
+# ::snt Peter got down very quietly off the wheelbarrow ; and started running as fast as he could go , along a straight walk behind some black-currant bushes .
+∃ ATTRIB[10] PETER.RABBIT.PERSON[6] SITUATION[8] DEGREE[4] ENTITY[9] EVENT[2] EVENT[12] ENTITY[1] (
+ wheelbarrow(ENTITY[1]) ∧
+  ADV_very_quietly(EVENT[2]) ∧
+   past(EVENT[2]) ∧
+    is_MSR(SITUATION[8], DEGREE[4]) ∧
+     is_ADV_as_fast_as(EVENT[12], DEGREE[4]) ∧
+      past(EVENT[12]) ∧
+       PETER.RABBIT.PERSON[6] = he{PETER.RABBIT.PERSON[Peter]} ∧
+        is_FACT_THAT(SITUATION[8], MD_could(∃ EVENT[7] go(EVENT[7], PETER.RABBIT.PERSON[6]))) ∧
+         straight(ATTRIB[10]) ∧
+          SOME GROUP[11] (black-currant_bushes(GROUP[11]), is_walk_behind(ENTITY[9], GROUP[11]) ∧ is_walk_ATTRIBUTE(ENTITY[9], ATTRIB[10])) ∧
+           CONJ_and(got_down(EVENT[2], PETER.RABBIT.PERSON[Peter]) ∧ off(EVENT[2]) = ENTITY[1],
+            started_running(EVENT[12], PETER.RABBIT.PERSON[Peter]) ∧ along(EVENT[12]) = ENTITY[9]))
+
+# ::id 78_childrens_POTTER-1902;AT20-2;NE
+# ::snt Mr. McGregor caught sight of him at the corner ,
+∃ PETER.RABBIT.PERSON[2] EVENT[4] ENTITY[1] ENTITY[3] (
+ corner(ENTITY[3]) ∧
+  PETER.RABBIT.PERSON[2] = him ∧
+   is_sight_of(ENTITY[1], PETER.RABBIT.PERSON[2]) ∧
+    past(EVENT[4]) ∧ caught(EVENT[4], MRMCGREGOR.PERSON[Mr.McGregor], ENTITY[1]) ∧ at(EVENT[4]) = ENTITY[3])
+
+# ::id 79_childrens_POTTER-1902;AT21-1;NE
+# ::snt but Peter did not care .
+¬ ∃ EVENT[1] (past(EVENT[1]) ∧ did_care(EVENT[1], PETER.RABBIT.PERSON[Peter]))
+
+# ::id 80_childrens_POTTER-1902;AT21-2;NE
+# ::snt He slipped underneath the gate , and was safe at last in the wood outside the garden .
+∃ ATTRIB[5] ATTRIB[4] PETER.RABBIT.PERSON[1] EVENT[3] EVENT[8] GATE.GARDEN.LOC[2] GARDEN.LOC[7] WOOD.LOC[6] (
+ gate(GATE.GARDEN.LOC[2]) ∧
+  garden(GARDEN.LOC[7]) ∧
+   is_wood_outside(WOOD.LOC[6], GARDEN.LOC[7]) ∧
+    PETER.RABBIT.PERSON[1] = he ∧
+     ADV_last(ATTRIB[5]) ∧
+      is_safe_in(ATTRIB[4], WOOD.LOC[6]) ∧ is_safe_at(ATTRIB[4], ATTRIB[5]) ∧
+       past(EVENT[3]) ∧
+        past(EVENT[8]) ∧
+         CONJ_and(slipped(EVENT[3], PETER.RABBIT.PERSON[1]) ∧ underneath(EVENT[3]) = GATE.GARDEN.LOC[2],
+          be.01(EVENT[8], PETER.RABBIT.PERSON[1], ATTRIB[4])))
+
+# ::id 81_childrens_POTTER-1902;AT22-1;NE
+# ::snt Mr. McGregor hung up the little jacket and the shoes for a scare-crow to frighten the blackbirds .
+∃ PRP[5] ATTRIB[3] EVENT[8] EVENT[9] ENTITY[6] GROUP[1] JACKET.PRODUCT[2] SHOE.PRODUCTS[4] BLACKBIRD.PERSONS[7] (
+ little(ATTRIB[3]) ∧
+  is_jacket_ATTRIBUTE(JACKET.PRODUCT[2], ATTRIB[3]) ∧
+   shoes(SHOE.PRODUCTS[4]) ∧
+    blackbirds(BLACKBIRD.PERSONS[7]) ∧
+     is_element_of(JACKET.PRODUCT[2], GROUP[1]) ∧ is_subset_of_or_equal_to(SHOE.PRODUCTS[4], GROUP[1]) ∧
+      scare-crow(ENTITY[6]) ∧
+       is_FACT_THAT(PRP[5], frighten(EVENT[8], ENTITY[6], BLACKBIRD.PERSONS[7])) ∧
+        past(EVENT[9]) ∧ hung_up(EVENT[9], MRMCGREGOR.PERSON[Mr.McGregor], GROUP[1]) ∧ PRP(EVENT[9]) = PRP[5])
+
+# ::id 82_childrens_POTTER-1902;AT23-1;NE
+# ::snt Peter never stopped running or looked behind him till he got home to the big fir-tree .
+∃ PETER.RABBIT.PERSON[9] PETER.RABBIT.PERSON[2] SITUATION[1] SITUATION[11] ATTRIB[5] ENTITY[3] EVENT[6] EVENT[8] EVENT[7] EVENT[10] ENTITY[4] (
+ big(ATTRIB[5]) ∧
+  is_fir-tree_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   TMP_never(SITUATION[11]) ∧
+    past(EVENT[6]) ∧
+     past(EVENT[8]) ∧
+      past(EVENT[10]) ∧
+       PETER.RABBIT.PERSON[2] = he{PETER.RABBIT.PERSON[Peter]} ∧
+        home(ENTITY[3]) ∧
+         is_FACT_THAT(SITUATION[1], got(EVENT[6], PETER.RABBIT.PERSON[2], ENTITY[3]) ∧ to(EVENT[6]) = ENTITY[4]) ∧
+          PETER.RABBIT.PERSON[9] = him ∧
+           is_FACT_THAT(SITUATION[11],
+            CONJ_or(CONJ_and(stopped(EVENT[8], PETER.RABBIT.PERSON[Peter]) ∧ till(EVENT[8]) = SITUATION[1],
+                  running(EVENT[7], PETER.RABBIT.PERSON[Peter])),
+             looked(EVENT[10], PETER.RABBIT.PERSON[Peter]) ∧ behind(EVENT[10]) = PETER.RABBIT.PERSON[9] ∧
+              till(EVENT[10]) = SITUATION[1])))
+
+# ::id 83_childrens_POTTER-1902;AT23-2;NE
+# ::snt He was so tired that he flopped down upon the nice soft sand on the floor of the rabbit-hole and shut his eyes .
+∃ PETER.RABBIT.PERSON[11] PETER.RABBIT.PERSON[3] ATTRIB[2] PETER.RABBIT.PERSON[1] ATTRIB[6] ATTRIB[5] EVENT[9] EVENT[12] EVENT[13] GROUP[10] ENTITY[8] ENTITY[7] ENTITY[4] (
+ nice(ATTRIB[5]) ∧
+  soft(ATTRIB[6]) ∧
+   rabbit-hole(ENTITY[8]) ∧
+    is_floor_of(ENTITY[7], ENTITY[8]) ∧
+     is_sand_on(ENTITY[4], ENTITY[7]) ∧ is_sand_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_sand_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      PETER.RABBIT.PERSON[1] = he ∧
+       PETER.RABBIT.PERSON[3] = he{PETER.RABBIT.PERSON[1]} ∧
+        PETER.RABBIT.PERSON[11] = his{PETER.RABBIT.PERSON[3], PETER.RABBIT.PERSON[1]} ∧
+         is_eyes_POS(GROUP[10], PETER.RABBIT.PERSON[11]) ∧
+          is_so_tired_THAT(ATTRIB[2],
+           CONJ_and(flopped_down(EVENT[9], PETER.RABBIT.PERSON[3]) ∧ upon(EVENT[9]) = ENTITY[4],
+            shut(EVENT[12], PETER.RABBIT.PERSON[3], GROUP[10]))) ∧
+           past(EVENT[9]) ∧
+            past(EVENT[12]) ∧ past(EVENT[13]) ∧ be.01(EVENT[13], PETER.RABBIT.PERSON[1], ATTRIB[2]))
+
+# ::id 84_childrens_POTTER-1902;AT23-3;NE
+# ::snt His mother was busy cooking ;
+∃ ATTRIB[3] PETER.RABBIT.PERSON[2] EVENT[5] EVENT[4] MOTHER.RABBIT.PERSON[1] (
+ PETER.RABBIT.PERSON[2] = his ∧
+  is_mother_POS(MOTHER.RABBIT.PERSON[1], PETER.RABBIT.PERSON[2]) ∧
+   busy(ATTRIB[3]) ∧
+    past(EVENT[5]) ∧ CONJ_and(be.01(EVENT[5], MOTHER.RABBIT.PERSON[1], ATTRIB[3]), cooking(EVENT[4], MOTHER.RABBIT.PERSON[1])))
+
+# ::id 85_childrens_POTTER-1902;AT23-4;NE
+# ::snt she wondered what he had done with his clothes .
+∃ MOTHER.RABBIT.PERSON[1] EVENT[2] (
+ MOTHER.RABBIT.PERSON[1] = she ∧
+  past(EVENT[2]) ∧
+   wondered(EVENT[2], MOTHER.RABBIT.PERSON[1],
+    QUEST(∃ PETER.RABBIT.PERSON[6] PETER.RABBIT.PERSON[4] EVENT[7] GROUP[5] ? ENTITY[3] (
+          PETER.RABBIT.PERSON[4] = he ∧
+           PETER.RABBIT.PERSON[6] = his{PETER.RABBIT.PERSON[4]} ∧
+            is_clothes_POS(GROUP[5], PETER.RABBIT.PERSON[6]) ∧
+             is_before(EVENT[7], EVENT[2]) ∧
+              had_done(EVENT[7], PETER.RABBIT.PERSON[4], ENTITY[3]) ∧ with(EVENT[7]) = GROUP[5]))))
+
+# ::id 86_childrens_POTTER-1902;AT24-1;NE
+# ::snt It was the second little jacket and pair of shoes that Peter had lost in a fortnight !
+∃ ATTRIB[5] ATTRIB[2] EVENT[11] EVENT[12] TIME[10] ENTITY[8] JACKET.PRODUCT[4] SHOE.PRODUCTS[7] ENTITY[6] GROUP[3] ENTITY[1] (
+ second(ATTRIB[2]) ∧
+  little(ATTRIB[5]) ∧
+   is_jacket_ATTRIBUTE(JACKET.PRODUCT[4], ATTRIB[5]) ∧
+    shoes(SHOE.PRODUCTS[7]) ∧
+     is_pair_of(ENTITY[6], SHOE.PRODUCTS[7]) ∧
+      is_element_of(JACKET.PRODUCT[4], GROUP[3]) ∧ is_element_of(ENTITY[6], GROUP[3]) ∧
+       is_equals(ENTITY[1], GROUP[3]) ∧ is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+        fortnight(TIME[10]) ∧
+         had_lost(EVENT[11], PETER.RABBIT.PERSON[Peter], ENTITY[8]) ∧ in(EVENT[11]) = TIME[10] ∧
+          past(EVENT[11]) ∧ past(EVENT[12]) ∧ be.01(EVENT[12], ENTITY[8], ENTITY[1]))
+
+# ::id 87_childrens_POTTER-1902;AT25-1;NE
+# ::snt I am sorry to say that Peter was not very well during the evening .
+∃ ATTRIB[2] NARRATOR.PERSON[1] EVENT[3] EVENT[7] TIME[4] (
+ evening(TIME[4]) ∧
+  NARRATOR.PERSON[1] = i ∧
+   is_sorry_to(ATTRIB[2],
+    say(EVENT[3],
+     ¬ ∃ EVENT[5] (
+           ADV_very_well(EVENT[5]) ∧
+            is_before(EVENT[5], EVENT[3]) ∧
+             be.02(EVENT[5], PETER.RABBIT.PERSON[Peter]) ∧ during(EVENT[5]) = TIME[4]))) ∧
+    copula(EVENT[7], NARRATOR.PERSON[1], ATTRIB[2]))
+
+# ::id 88_childrens_POTTER-1902;AT25-2;NE
+# ::snt His mother put him to bed , and made some camomile tea ;
+∃ PETER.RABBIT.PERSON[3] PETER.RABBIT.PERSON[2] EVENT[5] ENTITY[4] MOTHER.RABBIT.PERSON[1] (
+ PETER.RABBIT.PERSON[2] = his ∧
+  is_mother_POS(MOTHER.RABBIT.PERSON[1], PETER.RABBIT.PERSON[2]) ∧
+   PETER.RABBIT.PERSON[3] = him ∧
+    bed(ENTITY[4]) ∧
+     past(EVENT[5]) ∧
+      CONJ_and(put(EVENT[5], MOTHER.RABBIT.PERSON[1], PETER.RABBIT.PERSON[3]) ∧ to(EVENT[5]) = ENTITY[4],
+       SOME DRINK.PRODUCT[6] (camomile_tea(DRINK.PRODUCT[6]), ∃ EVENT[7] (past(EVENT[7]) ∧ made(EVENT[7], MOTHER.RABBIT.PERSON[1], DRINK.PRODUCT[6])))))
+
+# ::id 89_childrens_POTTER-1902;AT25-3;NE
+# ::snt and she gave a dose of it to Peter !
+∃ DRINK.PRODUCT[3] MOTHER.RABBIT.PERSON[1] EVENT[4] ENTITY[2] (
+ MOTHER.RABBIT.PERSON[1] = she ∧
+  DRINK.PRODUCT[3] = it ∧
+   is_dose_of(ENTITY[2], DRINK.PRODUCT[3]) ∧ past(EVENT[4]) ∧ gave(EVENT[4], MOTHER.RABBIT.PERSON[1], ENTITY[2], PETER.RABBIT.PERSON[Peter]))
+
+# ::id 90_childrens_POTTER-1902;AT26-1;NE
+# ::snt ' One table-spoonful to be taken at bed-time . '
+∃ EVENT[4] EVENT[2] TIME[3] AMOUNT[1] (
+ (CD_one(AMOUNT[1]), table-spoonful(AMOUNT[1])) ∧
+  bed-time(TIME[3]) ∧
+   copula(EVENT[2], AMOUNT[1], taken(EVENT[4], _, AMOUNT[1]) ∧ at(EVENT[4]) = TIME[3]))
+
+# ::id 91_childrens_POTTER-1902;AT27-1;NE
+# ::snt But Flopsy , Mopsy , and Cotton-tail had bread and milk and blackberries for supper .
+∃ EVENT[7] ENTITY[6] PRODUCTS[2] RABBIT.PERSONS[1] (
+ is_element_of(FLOPSY.RABBIT.PERSON[Flopsy], RABBIT.PERSONS[1]) ∧ is_element_of(MOPSY.RABBIT.PERSON[Mopsy], RABBIT.PERSONS[1]) ∧ is_element_of(COTTONTAIL.RABBIT.PERSON[Cotton-tail], RABBIT.PERSONS[1]) ∧
+  ∃ FOOD.PRODUCTS[3] (bread(FOOD.PRODUCTS[3]) ∧ is_subset_of_or_equal_to(FOOD.PRODUCTS[3], PRODUCTS[2])) ∧
+   ∃ DRINK.PRODUCTS[4] (milk(DRINK.PRODUCTS[4]) ∧ is_subset_of_or_equal_to(DRINK.PRODUCTS[4], PRODUCTS[2])) ∧
+   ∃ FOOD.PRODUCTS[5] (blackberries(FOOD.PRODUCTS[5]) ∧ is_subset_of_or_equal_to(FOOD.PRODUCTS[5], PRODUCTS[2])) ∧
+   supper(ENTITY[6]) ∧
+    past(EVENT[7]) ∧ have.03(EVENT[7], RABBIT.PERSONS[1], PRODUCTS[2]) ∧ for(EVENT[7]) = ENTITY[6])
+
+# ::id 92_childrens_POTTER-1902;AT34-1;NE
+# ::snt THE END
+∃ EVENT[2] ENTITY[1] (END(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

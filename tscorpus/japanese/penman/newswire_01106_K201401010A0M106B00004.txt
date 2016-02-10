@@ -1,0 +1,728 @@
+# ::id 1_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt つなぐ 産業 無限大 （ １ ）
+( EVENT-6 / EVENT
+      :LINK ( ENTITY-2 / 産業_無限大
+             :ARG0-of ( EVENT-5 / つなぐ
+                    :ARG1 ( ARB-4 / arb
+                           :pick0))
+             :NAMELY ( ENTITY-1 / CD_１)))
+
+# ::id 2_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ／ 東北スマートアグリカルチャー研究会 （ 仙台 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-東北スマートアグリカルチャー研究会 / ENTITY
+             :name ( n-2 / name
+                    :op1 "東北スマートアグリカルチャー研究会")
+             :NAMELY ( ENTITY-仙台 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "仙台"))))
+
+# ::id 3_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農場経営 × ＩＴビジネス
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 農場経営
+             :MOD ( mod-3 / ＩＴビジネス)))
+
+# ::id 4_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ／ ハウス管理 、 遠隔操作
+( EVENT-4 / EVENT
+      :LINK ( GROUP-1 / AND
+             :op1 ( ENTITY-2 / ハウス管理)
+             :op2 ENTITY-6
+             :MOD ( mod-5 / AND
+                    :op1 ( ENTITY-3 / 遠隔操作)
+                    :op2 ENTITY-7)))
+
+# ::id 5_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農林水産物 は 収穫 、 漁獲 だけ じゃ 、 終わら ない 。
+( EVENT-6 / 終わら
+      :ARG0 ( ENTITY-1 / 農林水産物)
+      :じゃ ( ENTITY-2 / ENTITY
+             :OF ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / 収穫)
+                    :op2 ENTITY-9
+                    :MOD ( mod-8 / AND
+                           :op1 ( ENTITY-5 / 漁獲)
+                           :op2 ENTITY-10)))
+      :domain-of ( NEG-7 / NEG))
+
+# ::id 6_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ひと手間 かけれ ば 商品 の 魅力 は 増し 、 ブランド価値 が ぐんと 高まる 。
+( CND-11 / ば (
+             :op1 ( ARB-1 arb
+                    :pick0) ( ENTITY-2 ひと手間) ( EVENT-3 ( かけれ
+                           :ARG0 ARB-1
+                           :ARG1 ENTITY-2)))
+      :op2 ( CONJ-13 / AND
+             :op1 ( EVENT-6 / 増し
+                    :ARG0 ( ENTITY-4 / 魅力
+                           :の ( ENTITY-5 / 商品)))
+             :op2 ( EVENT-8 / 高まる
+                    :ARG0 ( ENTITY-7 / ブランド価値)
+                    :MOD ( mod-12 / ぐんと))))
+
+# ::id 7_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 雇用 の 創出 に も つながる 。
+( EVENT-4 / つながる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-2 / 創出
+             :の ( ENTITY-3 / 雇用)))
+
+# ::id 8_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 培わ れ た 技 や 豊か な 自然 も 一緒 。
+( EVENT-8 / EVENT
+      :ARG0 ( CONJ-9 / CONJ_や
+             :op1 ( GROUP-1 / AND
+                    :op1 ( EVENT-4 / past)
+                    :op2 ( EVENT-11 / 培わ_た
+                           :ARG1 ( ENTITY-2 / 技))
+                    :op3 ENTITY-2)
+             :op2 ( GROUP-10 / AND
+                    :op1 ( ATTRIB-6 / 豊か_な)
+                    :op2 ( ENTITY-5 / 自然
+                           :ATTRIBUTE ATTRIB-6)
+                    :op3 ENTITY-12))
+      :ARG1 ( ENTITY-7 / 一緒))
+
+# ::id 9_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 体験 など と 組み合わせれ ば 観光客 を 呼び込める 。
+( CND-7 / ば (
+             :op1 ( ENTITY-2 体験) ( EVENT-3 ( 組み合わせれ
+                           :ARG0 ARB-1
+                           :など_と ENTITY-2)))
+      :op2 ( EVENT-5 / 呼び込める
+             :ARG0 ( ARB-1 / arb
+                    :pick0)
+             :ARG1 ( ENTITY-4 / 観光客)))
+
+# ::id 10_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt うま年 の ２０１４ 年 、 積極的 な 連携 で 地域資源 を もっと 生かし て 駆けだそう 。
+( CONJ-10 / CONJ_te
+      :op1 ( EVENT-7 / 生かし_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-6 / 地域資源)
+             :で ( ENTITY-4 / 連携
+                    :ATTRIBUTE ( ATTRIB-5 / 積極的_な))
+             :TMP ( TIME-2 / TIME ( TIME-2 CD_２０１４_年)
+                    :の ( ENTITY-3 / うま年))
+             :MOD ( mod-11 / もっと))
+      :op2 ( EVENT-9 / 駆けだそう
+             :ARG0 ENTITY-1
+             :TMP TIME-2))
+
+# ::id 11_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 東日本大震災 から の 復興 を 目指す 県内 で 、 地域産業 の 可能性 を 無限 に 広げる 挑戦 を 追う 。
+( EVENT-13 / 追う
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-7 / 挑戦
+             :ARG0-of ( EVENT-11 / 広げる
+                    :ARG1 ( ENTITY-9 / 可能性
+                           :の ( ENTITY-10 / 地域産業))
+                    :MOD ( mod-14 / 無限_に)))
+      :で ( ENTITY-2 / 県内
+             :ARG0-of ( EVENT-6 / 目指す
+                    :ARG1 ( ENTITY-4 / 復興
+                           :から_の ( ENTITY-5 / 東日本大震災)))))
+
+# ::id 12_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt （ １５ 回 続き ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / CD_１５_回
+             :MOD ( mod-3 / 続き)))
+
+# ::id 13_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 自宅 の ある 仙台市 青葉区 で 携帯電話 を 操作 する 。
+( EVENT-6 / 操作する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-5 / 携帯電話)
+      :で ( ENTITY-仙台市_青葉区 / ENTITY
+             :name ( n-7 / name
+                    :op1 "仙台市_青葉区")
+             :ARG1-of ( EVENT-4 / ある
+                    :ARG0 ( ENTITY-3 / 自宅))))
+
+# ::id 14_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 画面 に 映る の は 、 経営 する 約５０ キロ 離れ た 大崎市 鹿島台 の 農場 。
+( EVENT-11 / EVENT
+      :ARG0 ( ENTITY-1 / の
+             :ARG0-of ( EVENT-4 / 映る
+                    :に ( ENTITY-3 / 画面)))
+      :ARG1 ( ENTITY-5 / 農場
+             :の ( ENTITY-大崎市_鹿島台 / ENTITY
+                    :name ( n-13 / name
+                           :op1 "大崎市_鹿島台")
+                    :ARG1-of ( EVENT-10 / 離れ_た
+                           :ARG0 ( ENTITY-9 / CD_約５０_キロ)
+                           :MOD ( mod-12 / past)))
+             :ARG0-of ( EVENT-7 / 経営する.0)))
+
+# ::id 15_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ビニールハウス の 中 で 、 ルッコラ や ミズナ が 青々と 育っ て いる 。
+( EVENT-6 / 育っ_て_いる
+      :ARG0 ( CONJ-8 / CONJ_や
+             :op1 ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / ルッコラ)
+                    :op2 ENTITY-11)
+             :op2 ( GROUP-10 / AND
+                    :op1 ( ENTITY-5 / ミズナ)
+                    :op2 ENTITY-12))
+      :で ( ENTITY-1 / 中
+             :の ( ENTITY-2 / ビニールハウス))
+      :MOD ( mod-9 / 青々と))
+
+# ::id 16_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 「 作物 の 状況 が どこ に い て も 分かる 」 。
+( CND-10 / も (
+             :op1 ( ENTITY-3 ( ENTITY
+                           :namely ( PICK-9 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-2))) ( EVENT-5 ( い_て
+                           :ARG0 ENTITY-3
+                           :に ENTITY-4)))
+      :op2 ( EVENT-6 / 分かる
+             :ARG0 ( ENTITY-1 / 状況
+                    :の ( ENTITY-2 / 作物))))
+
+# ::id 17_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業生産法人アグリフューチャー代表 の 女川源さん （ ４２ ） は 、 ＩＴ による 農業 を 実践 する 。
+( EVENT-5 / 実践する.0
+      :ARG0 ( ENTITY-女川源さん / ENTITY
+             :name ( n-6 / name
+                    :op1 "女川源さん")
+             :の ( ENTITY-2 / 農業生産法人アグリフューチャー代表)
+             :NAMELY ( ENTITY-1 / CD_４２))
+      :ARG1 ( ENTITY-3 / 農業
+             :による ( ENTITY-4 / ＩＴ)))
+
+# ::id 18_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農場 に は カメラ や センサー が 設置 さ れ 、 インターネット で 情報 を 取得 できる 。
+( CONJ-14 / AND
+      :op1 ( EVENT-6 / 設置する.0
+             :ARG1 ( CONJ-10 / CONJ_や
+                    :op1 ( GROUP-3 / AND
+                           :op1 ( ENTITY-4 / カメラ)
+                           :op2 ENTITY-12)
+                    :op2 ( GROUP-11 / AND
+                           :op1 ( ENTITY-5 / センサー)
+                           :op2 ENTITY-13)))
+      :op2 ( EVENT-9 / 取得する.0
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-8 / 情報)
+             :で ( ENTITY-7 / インターネット)
+             :に ( ENTITY-2 / 農場)))
+
+# ::id 19_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 地面 の 湿り具合 や ハウス内 の 結露 、 温度 まで 確認 でき 、 「 作業効率 が 上がる 」 と 胸 を 張る 。
+( EVENT-10 / 張る
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-8 / 確認する.0
+                    :まで ( CONJ-13 / CONJ_や
+                           :op1 ( GROUP-2 / AND
+                                  :op1 ( ENTITY-4 / 地面)
+                                  :op2 ( ENTITY-3 / 湿り具合
+                                         :の ENTITY-4)
+                                  :op3 ENTITY-16)
+                           :op2 ( GROUP-14 / AND
+                                  :op1 ( ENTITY-6 / ハウス内)
+                                  :op2 ( ENTITY-5 / 結露
+                                         :の ENTITY-6)
+                                  :op3 ENTITY-17)
+                           :op3 ( GROUP-15 / AND
+                                  :op1 ( ENTITY-7 / 温度)
+                                  :op2 ENTITY-18))))
+      :ARG1 ( ENTITY-9 / 胸)
+      :THAT ( EVENT-12 / 上がる
+             :ARG0 ( ENTITY-11 / 作業効率)))
+
+# ::id 20_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 女川さん は 元ＮＴＴ関連会社 の サラリーマン 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-女川さん / ENTITY
+             :name ( n-4 / name
+                    :op1 "女川さん"))
+      :ARG1 ( ENTITY-1 / サラリーマン
+             :の ( ENTITY-2 / 元ＮＴＴ関連会社)))
+
+# ::id 21_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt １２ 年 ２ 月 、 農地 を 借り て 農業法人 を つくっ た 。
+( CONJ-7 / CONJ_te
+      :op1 ( EVENT-4 / 借り_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-3 / 農地)
+             :TMP ( TIME-2 / CD_１２_年_２_月))
+      :op2 ( EVENT-6 / つくっ_た
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-5 / 農業法人)
+             :TMP TIME-2
+             :MOD ( mod-8 / past)))
+
+# ::id 22_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 同時期 に 東北スマートアグリカルチャー研究会 の 設立 に 加わっ た 。
+( EVENT-5 / 加わっ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-3 / 設立
+             :の ( ENTITY-4 / 東北スマートアグリカルチャー研究会))
+      :に ( ENTITY-2 / 同時期)
+      :MOD ( mod-6 / past))
+
+# ::id 23_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 仙台市 の ＩＴ企業 や 東北大 、 農業関連法人 など で つくる 。
+( EVENT-6 / つくる
+      :ARG0 ( ENTITY-1 / 研究会)
+      :で ( ENTITY-2 / ENTITY
+             :など ( GROUP-3 / AND
+                    :op1 ( ENTITY-5 / 農業関連法人)
+                    :op2 ENTITY-10
+                    :OF-of ( CONJ-7 / CONJ_や
+                           :op1 ( GROUP-3 / AND
+                                  :op1 ( ENTITY-4 / ＩＴ企業
+                                         :の ( ENTITY-仙台市 / ENTITY
+                                                :name ( n-9 / name
+                                                       :op1 "仙台市")))
+                                  :op2 ENTITY-12)
+                           :op2 ( ENTITY-東北大 / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "東北大"))
+                           :op3 GROUP-11))))
+
+# ::id 24_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業振興 の ため の ＩＴシステム開発 に 取り組む 。
+( EVENT-5 / 取り組む
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-2 / ＩＴシステム開発
+             :の ( ENTITY-3 / ため
+                    :の ( ENTITY-4 / 農業振興))))
+
+# ::id 25_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 支援対象 は 一般農家 だ 。
+( EVENT-3 / だ
+      :ARG0 ( ENTITY-1 / 支援対象)
+      :ARG1 ( ENTITY-2 / 一般農家))
+
+# ::id 26_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業 の ＩＴ活用 は 植物工場 で 大はやり だ が 、 女川さん は 「 機材購入 や 管理 に コスト が 掛かり すぎる 」 と 指摘 。
+( CONJ-12 / CONJ_が
+      :op1 ( EVENT-4 / 大はやり_だ
+             :ARG0 ( ENTITY-1 / ＩＴ活用
+                    :の ( ENTITY-2 / 農業))
+             :で ( ENTITY-3 / 植物工場))
+      :op2 ( EVENT-5 / 指摘
+             :ARG0 ( ENTITY-女川さん / ENTITY
+                    :name ( n-13 / name
+                           :op1 "女川さん"))
+             :THAT ( EVENT-10 / 掛かり_すぎる
+                    :ARG0 ( ENTITY-9 / コスト)
+                    :に ( CONJ-11 / CONJ_や
+                           :op1 ( GROUP-6 / AND
+                                  :op1 ( ENTITY-7 / 機材購入)
+                                  :op2 ENTITY-15)
+                           :op2 ( GROUP-14 / AND
+                                  :op1 ( ENTITY-8 / 管理)
+                                  :op2 ENTITY-16)))))
+
+# ::id 27_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農家 が 自身 で カメラ を 設置 し 管理 できれ ば 「 大幅 に 経費 を 抑え られる 」 と 語る 。
+( CND-15 / ば (
+             :op1 ( ENTITY-2 農家) ( ENTITY-4 カメラ) ( ENTITY-3 ( ENTITY
+                           :namely ENTITY-1)) ( EVENT-6 ( 管理する.0
+                           :ARG0 ( ENTITY-2 / ENTITY
+                                  :ARG0-of ( EVENT-5 / 設置する.0
+                                         :ARG1 ENTITY-4))
+                           :で ENTITY-3)))
+      :op2 ( EVENT-7 / 語る
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :THAT ( EVENT-10 / 抑え_られる
+                    :ARG0 ( PICK-14 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-2
+                           :op3 ENTITY-4)
+                    :ARG1 ( ENTITY-9 / 経費)
+                    :MOD ( mod-16 / 大幅_に))))
+
+# ::id 28_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 昨年 ８ 月 、 泉区 に 実験農場 を 開設 し た 。
+( EVENT-4 / 開設する.0_た
+      :ARG0 ( ENTITY-1 / 研究会)
+      :ARG1 ( ENTITY-3 / 実験農場)
+      :に ( ENTITY-泉区 / ENTITY
+             :name ( n-7 / name
+                    :op1 "泉区"))
+      :TMP ( TIME-2 / CD_８_月
+             :MOD ( mod-5 / 昨年))
+      :MOD ( mod-6 / past))
+
+# ::id 29_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 約１０００ 平方メートル の ハウス内 に 取り付け た 小型カメラ や センサー 、 無線ＬＡＮ設備 は 市販品 。
+( EVENT-12 / EVENT
+      :ARG0 ( ENTITY-1 / CONJ_や
+             :op1 ( ENTITY-8 / 小型カメラ)
+             :op2 ( ENTITY-9 / センサー)
+             :op3 ( ENTITY-10 / 無線ＬＡＮ設備)
+             :ARG1-of ( EVENT-6 / 取り付け_た
+                    :ARG0 ( ENTITY-3 / pro
+                           :pick0)
+                    :に ( ENTITY-4 / ハウス内
+                           :の ( ENTITY-5 / CD_約１０００_平方メートル))
+                    :MOD ( mod-13 / past)))
+      :ARG1 ( ENTITY-11 / 市販品))
+
+# ::id 30_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt プラスチック容器 で 覆い 、 水 や ほこり を 防い で いる 。
+( EVENT-8 / 防い_で_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-4 / 覆い
+                    :ARG1 ( ENTITY-2 / pro
+                           :pick0)
+                    :で ( ENTITY-3 / プラスチック容器)))
+      :ARG1 ( CONJ-9 / CONJ_や
+             :op1 ( GROUP-5 / AND
+                    :op1 ( ENTITY-6 / 水)
+                    :op2 ENTITY-11)
+             :op2 ( GROUP-10 / AND
+                    :op1 ( ENTITY-7 / ほこり)
+                    :op2 ENTITY-12)))
+
+# ::id 31_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 専用機器 を 使え ば １００万 円 以上 。
+( CND-7 / ば (
+             :op1 ( ENTITY-2 専用機器) ( EVENT-3 ( 使え
+                           :ARG0 ARB-1
+                           :ARG1 ENTITY-2)))
+      :op2 ( EVENT-5 / EVENT
+             :ARG0 ( ARB-1 / arb
+                    :pick0)
+             :ARG1 ( ENTITY-4 / CD_１００万_円
+                    :MOD ( mod-8 / 以上))))
+
+# ::id 32_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt それ が １０万 円 程度 で 済む と いう 。
+( EVENT-2 / いう
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :THAT ( EVENT-5 / 済む
+             :ARG0 ENTITY-1
+             :で ( ENTITY-4 / CD_１０万_円
+                    :MOD ( mod-6 / 程度))))
+
+# ::id 33_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 遠隔監視システム は 震災 から の 農業再生 に も 一役 買う 。
+( EVENT-5 / 買う
+      :ARG0 ( ENTITY-1 / 遠隔監視システム)
+      :ARG1 ( ENTITY-4 / 一役)
+      :に ( ENTITY-2 / 農業再生
+             :から_の ( ENTITY-3 / 震災)))
+
+# ::id 34_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 津波被害 を 受け た 石巻市 や 名取市 の 生産者 が 活用 し 、 営農 を 再開 し て いる 。
+( EVENT-9 / 再開する.0_て_いる
+      :ARG0 ( ENTITY-1 / 生産者
+             :の ( ENTITY-2 / CONJ_や
+                    :op1 ( ENTITY-石巻市 / ENTITY
+                           :name ( n-11 / name
+                                  :op1 "石巻市"))
+                    :op2 ( ENTITY-名取市 / ENTITY
+                           :name ( n-12 / name
+                                  :op1 "名取市"))
+                    :ARG0-of ( EVENT-5 / 受け_た
+                           :ARG1 ( ENTITY-4 / 津波被害)
+                           :MOD ( mod-10 / past)))
+             :ARG0-of ( EVENT-7 / 活用する.0))
+      :ARG1 ( ENTITY-8 / 営農))
+
+# ::id 35_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 住まい の 移転 など に 伴う 職住分離 の 課題 を 克服 できる ため だ 。
+( EVENT-11 / だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-2 / ため
+             :THAT ( EVENT-10 / 克服する.0
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-3 / 課題
+                           :の ( ENTITY-4 / 職住分離
+                                  :ARG0-of ( EVENT-9 / 伴う
+                                         :に ( ENTITY-6 / ENTITY
+                                                :など ( ENTITY-7 / 移転
+                                                       :の ( ENTITY-8 / 住まい)))))))))
+
+# ::id 36_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt データ は ネット経由 で 一括管理 さ れる 。
+( EVENT-3 / 一括管理する.0
+      :ARG1 ( ENTITY-1 / データ)
+      :で ( ENTITY-2 / ネット経由))
+
+# ::id 37_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 蓄積 さ れる 膨大 な 情報 「 ビッグデータ 」 の 価値 は 高い 。
+( EVENT-6 / 高い
+      :ARG0 ( ENTITY-1 / 価値
+             :の ( ENTITY-2 / 情報
+                    :ATTRIBUTE ( ATTRIB-5 / 膨大_な)
+                    :ARG1-of ( EVENT-4 / 蓄積する.0)
+                    :NAMELY ( ENTITY-ビッグデータ / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "ビッグデータ")))))
+
+# ::id 38_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ベテラン農家 も 加われ ば 、 長年 の 経験 で 培わ れ た 技術 を 共有 できる 。
+( CND-11 / ば (
+             :op1 ( ENTITY-2 ベテラン農家) ( EVENT-3 ( 加われ
+                           :ARG0 ENTITY-2)))
+      :op2 ( EVENT-9 / 共有する.0
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-4 / 技術
+                    :ARG1-of ( EVENT-8 / 培わ_た
+                           :で ( ENTITY-6 / 経験
+                                  :の ( ENTITY-7 / 長年))
+                           :MOD ( mod-12 / past)))))
+
+# ::id 39_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 約４００ 社 ある 仙台市内 の ＩＴ企業 にとって も 、 農業分野参入 は 飛躍 の チャンス だ 。
+( EVENT-9 / だ
+      :ARG0 ( ENTITY-6 / 農業分野参入)
+      :ARG1 ( ENTITY-7 / チャンス
+             :の ( ENTITY-8 / 飛躍))
+      :にとって ( ENTITY-1 / ＩＴ企業
+             :の ( ENTITY-5 / 仙台市内)
+             :ARG1-of ( EVENT-4 / ある
+                    :ARG0 ( ENTITY-3 / CD_約４００_社))))
+
+# ::id 40_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt これ まで は 首都圏 の 下請け に 甘んじる こと が 多かっ た 。
+( EVENT-7 / 多かっ_た
+      :ARG0 ( SITUATION-2 / こと
+             :THAT ( EVENT-6 / 甘んじる
+                    :ARG0 ENTITY-1
+                    :に ( ENTITY-4 / 下請け
+                           :の ( ENTITY-5 / 首都圏))))
+      :まで ( ENTITY-1 / これ
+             :pick0)
+      :MOD ( mod-8 / past))
+
+# ::id 41_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 副会長 で ＩＴサービス業トライポッドワークス常務 の 菊池務さん （ ５２ ） ＝ 東北大特任教授 ＝ は 「 気候 や 作物 に 合わせる に は 農家密着 が 必要 。 生産地 に 近い 強み を 生かせる 」 と 力 を 込める 。
+( EVENT-5 / 込める
+      :ARG0 ( ENTITY-菊池務さん / ENTITY
+             :name ( n-20 / name
+                    :op1 "菊池務さん")
+             :で ( ENTITY-3 / 研究会_副会長)
+             :の ( ENTITY-2 / ＩＴサービス業トライポッドワークス常務)
+             :NAMELY ( ENTITY-1 / CD_５２)
+             :NAMELY ( ENTITY-東北大特任教授 / ENTITY
+                    :name ( n-21 / name
+                           :op1 "東北大特任教授")))
+      :ARG1 ( ENTITY-4 / 力)
+      :THAT ( CONJ-25 / AND
+             :op1 ( EVENT-12 / 必要
+                    :ARG0 ( ENTITY-6 / 農家密着)
+                    :に ( EVENT-11 / 合わせる
+                           :ARG0 ENTITY-6
+                           :に ( CONJ-18 / CONJ_や
+                                  :op1 ( GROUP-8 / AND
+                                         :op1 ( ENTITY-9 / 気候)
+                                         :op2 ENTITY-23)
+                                  :op2 ( GROUP-22 / AND
+                                         :op1 ( ENTITY-10 / 作物)
+                                         :op2 ENTITY-24))))
+             :op2 ( EVENT-17 / 生かせる
+                    :ARG0 ( PICK-19 / or
+                           :op1 ENTITY-6
+                           :op2 ENTITY-菊池務さん
+                           :op3 ENTITY-4
+                           :op4 ENTITY-東北大特任教授
+                           :op5 ENTITY-1
+                           :op6 ENTITY-2
+                           :op7 ENTITY-3)
+                    :ARG1 ( ENTITY-14 / 強み
+                           :ATTRIBUTE ( ATTRIB-15 / 近い
+                                  :に ( ENTITY-16 / 生産地))))))
+
+# ::id 42_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 小さな 農地 を 一体的 に 管理 し 「 大規模農場化 」 する 構想 も 描く 。
+( EVENT-9 / 描く
+      :ARG0 ( ENTITY-1 / 研究会
+             :ARG0-of ( EVENT-4 / 管理する.0
+                    :ARG1 ( ENTITY-2 / 農地
+                           :ATTRIBUTE ( ATTRIB-3 / 小さな))
+                    :MOD ( mod-10 / 一体的_に)))
+      :LINK ( SITUATION-6 / 構想
+             :THAT ( EVENT-8 / 大規模農場化_する
+                    :ARG0 ENTITY-1
+                    :ARG1 ENTITY-2)))
+
+# ::id 43_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 後継者難 や 耕作放棄 による 飛び地増加 といった 課題解決 を 見据える 。
+( EVENT-7 / 見据える
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 課題解決
+             :といった ( ENTITY-3 / 飛び地増加
+                    :による ( CONJ-8 / CONJ_や
+                           :op1 ( GROUP-4 / AND
+                                  :op1 ( ENTITY-5 / 後継者難)
+                                  :op2 ENTITY-10)
+                           :op2 ( GROUP-9 / AND
+                                  :op1 ( ENTITY-6 / 耕作放棄)
+                                  :op2 ENTITY-11)))))
+
+# ::id 44_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 昨年 １０ 月 に は 農家 と 先進技術 の 橋渡し役「農業ＩＴマイスター」 の 育成講座 も 始め た 。
+( CONJ-15 / AND
+      :op1 ( ENTITY-1 / pro
+             :pick0)
+      :op2 ( EVENT-8 / 始め_た
+             :ARG0 ( ENTITY-3 / 育成講座
+                    :の ( ENTITY-4 / 橋渡し役 「 農業ＩＴマイスター 」
+                           :の ( CONJ-9 / CONJ_と
+                                  :op1 ( GROUP-5 / AND
+                                         :op1 ( ENTITY-6 / 農家)
+                                         :op2 ENTITY-13)
+                                  :op2 ( GROUP-12 / AND
+                                         :op1 ( ENTITY-7 / 先進技術)
+                                         :op2 ENTITY-14))))
+             :に ( ENTITY-2 / CD_１０_月
+                    :MOD ( mod-10 / 昨年))
+             :MOD ( mod-11 / past)))
+
+# ::id 45_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会メンバー も 設立当初 の ３ 倍 の 約３０ 社 ・ 団体 に 増え た 。
+( EVENT-8 / 増え_た
+      :ARG0 ( ENTITY-1 / 研究会メンバー)
+      :に ( ENTITY-2 / ENTITY ( ENTITY-2 CD_約３０)
+             :EQUALS ( GROUP-5 / AND
+                    :op1 ( ENTITY-6 / 社)
+                    :op2 ENTITY-11
+                    :MOD ( mod-9 / AND
+                           :op1 ( ENTITY-7 / 団体)
+                           :op2 ENTITY-12)
+                    :の ( ENTITY-3 / ENTITY ( ENTITY-3 CD_３_倍)
+                           :の ( ENTITY-4 / 設立当初))))
+      :MOD ( mod-10 / past))
+
+# ::id 46_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 今後 は 九州大 と の 連携 や 福島県内 で の 新た な 取り組み も 本格化 する 。
+( EVENT-7 / 本格化する.0
+      :ARG0 ( CONJ-8 / CONJ_や
+             :op1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / 連携
+                           :と_の ( ENTITY-九州大 / ENTITY
+                                  :name ( n-9 / name
+                                         :op1 "九州大")))
+                    :op2 ENTITY-11)
+             :op2 ( GROUP-10 / AND
+                    :op3 ( ENTITY-4 / 取り組み
+                           :ATTRIBUTE ( ATTRIB-6 / 新た_な)
+                           :で_の ( ENTITY-5 / 福島県内))
+                    :op4 ENTITY-12
+                    :op1 ENTITY-5
+                    :op2 ATTRIB-6))
+      :TMP ( ENTITY-1 / 今後))
+
+# ::id 47_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 新しい 営農システム を 仙台 から 全国 へ 。
+( EVENT-5 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 営農システム
+             :ATTRIBUTE ( ATTRIB-3 / 新しい))
+      :へ ( ENTITY-4 / 国)
+      :から ( ENTITY-仙台 / ENTITY
+             :name ( n-6 / name
+                    :op1 "仙台")))
+
+# ::id 48_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 新た な 農業ビジネス が 芽吹き つつある 。
+( EVENT-3 / 芽吹き_つつある
+      :ARG0 ( ENTITY-1 / 農業ビジネス
+             :ATTRIBUTE ( ATTRIB-2 / 新た_な)))
+
+# ::id 49_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt （ 報道部・村上俊 ）
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-報道部.村上俊 / ENTITY
+             :name ( n-2 / name
+                    :op1 "報道部.村上俊")))
+
+# ::id 50_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ＜ 東北スマートアグリカルチャー研究会 ＞ 仙台市 の トライポッドワークス 、 ＳＪＣ 、 亀山鉄工所 、 東北大 、 東北学院大 と 鶴岡高専 （ 鶴岡市 ） 、 村田製作所 （ 京都府 ） など 約３０ 社・団体 で 構成 。
+( EVENT-7 / 構成
+      :ARG0 ( ENTITY-東北スマートアグリカルチャー研究会 / ENTITY
+             :name ( n-12 / name
+                    :op1 "東北スマートアグリカルチャー研究会"))
+      :で ( ENTITY-1 / CD_約３０
+             :MOD ( mod-9 / 社.団体
+                    :など ( CONJ-8 / CONJ_と
+                           :op1 ( GROUP-2 / AND
+                                  :op1 ( GROUP-4 / AND
+                                         :op1 ( GROUP-4 / AND
+                                                :op1 ( ENTITY-5 / トライポッドワークス)
+                                                :op2 ENTITY-22)
+                                         :op2 ( ENTITY-ＳＪＣ / ENTITY
+                                                :name ( n-13 / name
+                                                       :op1 "ＳＪＣ"))
+                                         :op3 ( GROUP-21 / AND
+                                                :op1 ( ENTITY-6 / 亀山鉄工所)
+                                                :op2 ENTITY-23)
+                                         :op4 ( ENTITY-東北大 / ENTITY
+                                                :name ( n-14 / name
+                                                       :op1 "東北大"))
+                                         :op5 ( ENTITY-東北学院大 / ENTITY
+                                                :name ( n-15 / name
+                                                       :op1 "東北学院大")))
+                                  :op2 ( ENTITY-3 / ENTITY
+                                         :EQUALS GROUP-4
+                                         :の ( ENTITY-仙台市 / ENTITY
+                                                :name ( n-16 / name
+                                                       :op1 "仙台市")))
+                                  :op3 ENTITY-24)
+                           :op2 ( GROUP-19 / AND
+                                  :op1 ( ENTITY-鶴岡高専 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "鶴岡高専")
+                                         :NAMELY ( ENTITY-鶴岡市 / ENTITY
+                                                :name ( n-17 / name
+                                                       :op1 "鶴岡市")))
+                                  :op2 ENTITY-鶴岡高専)
+                           :op3 ( GROUP-20 / AND
+                                  :op1 ( ENTITY-村田製作所 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "村田製作所")
+                                         :NAMELY ( ENTITY-京都府 / ENTITY
+                                                :name ( n-18 / name
+                                                       :op1 "京都府")))
+                                  :op2 ENTITY-村田製作所)))))
+
+# ::id 51_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 会長 は 中井裕東北大教授 。
+( EVENT-2 / EVENT
+      :ARG0 ( ENTITY-1 / 会長)
+      :ARG1 ( ENTITY-中井裕東北大教授 / ENTITY
+             :name ( n-3 / name
+                    :op1 "中井裕東北大教授")))
+
+# ::id 52_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ＩＴ農業講習会 を ２ 月 １８～２０ 日 に 開く 予定 。
+( EVENT-6 / EVENT
+      :ARG1 ( SITUATION-1 / 予定
+             :THAT ( EVENT-5 / 開く
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :ARG1 ( ENTITY-3 / ＩＴ農業講習会)
+                    :に ( ENTITY-4 / CD_２_月_１８ ～ ２０_日))))
+
+# ::id 53_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 連絡先 は アイエスビー東北内 の 事務局 ０２２（３０２）３２４８ 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / 連絡先)
+      :ARG1 ( ENTITY-2 / 事務局_０２２ （ ３０２ ） ３２４８
+             :の ( ENTITY-3 / アイエスビー東北内)))

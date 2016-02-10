@@ -1,0 +1,169 @@
+# ::id 1_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 希望 とともに 、 たゆま ず 前 へ
+∃ ENTITY[2] EVENT[5] ENTITY[4] ENTITY[1] (
+ 希望(ENTITY[1]) ∧
+  ENTITY[2] = *pro* ∧
+   前(ENTITY[4]) ∧
+    CONJ_te(¬ ∃ EVENT[3] (たゆま(EVENT[3], ENTITY[2]) ∧ とともに(EVENT[3]) = ENTITY[1]),
+     xxx(EVENT[5]) ∧ へ(EVENT[5]) = ENTITY[4] ∧ とともに(EVENT[5]) = ENTITY[1]))
+
+# ::id 2_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt ／ 仙台
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[仙台])
+
+# ::id 3_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt しんしん と 降る 雪 の 中 を 人 と 栗毛 （ くりげ ） の 馬 が 進む 。
+∃ ATTRIB[4] EVENT[5] EVENT[11] ENTITY[2] GROUP[6] ENTITY[1] (
+ ADV_しんしん(ATTRIB[4]) ∧
+  降る(EVENT[5], ENTITY[2]) ∧ と(EVENT[5]) = ATTRIB[4] ∧ 雪(ENTITY[2]) ∧
+   の_中(ENTITY[2], ENTITY[1]) ∧
+    CONJ_と(∃ ENTITY[7] (人(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[9] ENTITY[10] ENTITY[8] (
+      栗毛(ENTITY[10]) ∧
+       くりげ(ENTITY[9]) ∧
+        namely_-ENTITY-(ENTITY[9], ENTITY[10]) ∧ の_馬(ENTITY[10], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+     進む(EVENT[11], GROUP[6], ENTITY[1]))
+
+# ::id 4_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 震災 の 苦難 を 乗り越え 、 ここ まで 来 た 。
+∃ ENTITY[5] ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  震災(ENTITY[3]) ∧
+   の_苦難(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[5] = ここ{ENTITY[2], ENTITY[3]} ∧
+     past(EVENT[6]) ∧
+      乗り越え(EVENT[4], ENTITY[1], ENTITY[2]) ∧ 来_た(EVENT[6], ENTITY[1]) ∧ まで(EVENT[6]) = ENTITY[5])
+
+# ::id 5_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 仙台市 太白区 秋保町 で 乗馬クラブ の ベル・ステーブル を 運営 する 鈴木嘉憲さん （ ３２ ） 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  乗馬クラブ(ENTITY[4]) ∧
+   の_xxx(ENTITY[4], ENTITY[ベル.ステーブル]) ∧
+    運営する.0(EVENT[5], ENTITY[鈴木嘉憲さん], ENTITY[ベル.ステーブル]) ∧ で(EVENT[5]) = ENTITY[仙台市_太白区_秋保町] ∧
+     CD_３２(ENTITY[2]) ∧ namely_-ENTITY-(ENTITY[2], ENTITY[鈴木嘉憲さん]) ∧ xxx(EVENT[6], ENTITY[1], ENTITY[鈴木嘉憲さん]))
+
+# ::id 6_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 馬主 から 預かる 競技馬 「 ノースキング 」 が 、 雪 と じゃれ合う よう に 跳ねる 。
+∃ SITUATION[6] ENTITY[3] EVENT[5] EVENT[8] EVENT[9] ENTITY[4] ENTITY[1] ENTITY[7] (
+ ENTITY[3] = *pro*{ENTITY[ノースキング]} ∧
+  馬主(ENTITY[4]) ∧
+   預かる(EVENT[5], ENTITY[3], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[4] ∧ 競技馬(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[ノースキング]) ∧
+     雪(ENTITY[7]) ∧
+      よう(SITUATION[6], じゃれ合う(EVENT[8], ENTITY[ノースキング]) ∧ と(EVENT[8]) = ENTITY[7]) ∧
+       跳ねる(EVENT[9], ENTITY[ノースキング]) ∧ に(EVENT[9]) = SITUATION[6])
+
+# ::id 7_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 「 馬齢 は ２０ 歳 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (馬齢(ENTITY[1]) ∧ CD_２０_歳(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 8_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 人間 で 言え ば ８０ 歳 近い のに 、 まだ やんちゃ です よ 」
+∃ ENTITY[1] EVENT[9] (
+ ENTITY[1] = *pro* ∧
+  ADV_まだ(EVENT[9]) ∧
+   MD_よ(CRD_のに(∀ ENTITY[3] ENTITY[2] EVENT[5] ENTITY[4] CND_ば(
+                 ENTITY[2] = *speaker*{ENTITY[1]} ∧ ENTITY[3] = *pro*{ENTITY[1]} ∧ 人間(ENTITY[4]) ∧
+                  言え(EVENT[5], ENTITY[2], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[4],
+                 ∃ ATTRIB[7] EVENT[8] ENTITY[6] (
+                  近い(ATTRIB[7]) ∧
+                   (CD_８０_歳(ENTITY[6]), ATTRIBUTE(ATTRIB[7], ENTITY[6])) ∧
+                    xxx(EVENT[8], ENTITY[1], ENTITY[6]))), やんちゃ_です(EVENT[9], ENTITY[1]))))
+
+# ::id 9_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 東日本大震災 の 津波 で 、 名取市 下増田 に あっ た 鈴木さん の 乗馬クラブ は 全壊 し た 。
+∃ EVENT[5] ENTITY[1] EVENT[4] ENTITY[2] (
+ あっ_た(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[名取市_下増田] ∧ の_乗馬クラブ(ENTITY[鈴木さん], ENTITY[2]) ∧
+  past(EVENT[4]) ∧
+   の_津波(ENTITY[東日本大震災], ENTITY[1]) ∧
+    past(EVENT[5]) ∧ 全壊する.0_た(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[1])
+
+# ::id 10_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 馬 ３９ 頭 が 流さ れ 、 スタッフ １ 人 の 行方 は 今 も 分から ない 。
+∃ EVENT[2] ENTITY[1] ENTITY[4] ENTITY[3] (
+ (CD_１_人(ENTITY[4]), スタッフ(ENTITY[4])) ∧
+  の_行方(ENTITY[4], ENTITY[3]) ∧
+   (CD_３９_頭(ENTITY[1]), 馬(ENTITY[1])) ∧
+    流さ(EVENT[2], _, ENTITY[1]) ∧
+     ¬ ∃ EVENT[6] ENTITY[5] (今(ENTITY[5]) ∧ 分から(EVENT[6], ENTITY[3]) ∧ 時間(EVENT[6]) = ENTITY[5]))
+
+# ::id 11_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 悲しみ を 抱え て 秋保 の 新天地 に 移っ た 鈴木さん の 元 に 、 やっ て き た の が ノースキング だっ た 。
+∃ EVENT[6] EVENT[8] EVENT[9] EVENT[10] ENTITY[5] ENTITY[7] ENTITY[3] ENTITY[1] (
+ 悲しみ(ENTITY[5]) ∧
+  の_新天地(ENTITY[秋保], ENTITY[7]) ∧
+   CONJ_te(抱え_て(EVENT[6], ENTITY[鈴木さん], ENTITY[5]), 移っ_た(EVENT[8], ENTITY[鈴木さん]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+    の_元(ENTITY[鈴木さん], ENTITY[3]) ∧
+     やっ_て_き_た(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[3] ∧ の(ENTITY[1]) ∧
+      past(EVENT[8]) ∧ past(EVENT[9]) ∧ past(EVENT[10]) ∧ だっ_た(EVENT[10], ENTITY[1], ENTITY[ノースキング]))
+
+# ::id 12_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 被災 し た 仙台市内 の 別 の 乗馬クラブ で 奇跡的 に 助かっ た 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  別(ENTITY[5]) ∧
+   被災する.0_た(EVENT[4], ENTITY[2]) ∧ の_乗馬クラブ(ENTITY[5], ENTITY[2]) ∧ の__乗馬クラブ(ENTITY[仙台市内], ENTITY[2]) ∧
+    past(EVENT[4]) ∧
+     ADV_奇跡的_に(EVENT[6]) ∧ past(EVENT[6]) ∧ 助かっ_た(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 13_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 全国 から 届い た 支援 で 再建 し た 厩舎 （ きゅうしゃ ） で 愛情 を 注ぐ と 、 見違える ほど 元気 に なっ た 。
+∃ ENTITY[16] ENTITY[15] SITUATION[14] ENTITY[6] ENTITY[2] ENTITY[1] EVENT[11] EVENT[13] EVENT[17] EVENT[18] ENTITY[7] ENTITY[3] ENTITY[12] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro*{ENTITY[1]} ∧
+   ENTITY[6] = *pro*{ENTITY[2], ENTITY[1]} ∧
+    全 ENTITY[9] (国(ENTITY[9]),
+     ∃ EVENT[10] (past(EVENT[10]) ∧ 届い_た(EVENT[10], ENTITY[7]) ∧ から(EVENT[10]) = ENTITY[9])) ∧
+     支援(ENTITY[7]) ∧
+     再建する.0_た(EVENT[11], ENTITY[6], ENTITY[4]) ∧ で(EVENT[11]) = ENTITY[7] ∧ 厩舎(ENTITY[4]) ∧
+      きゅうしゃ(ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧
+        愛情(ENTITY[12]) ∧
+         ENTITY[15] = *pro*{ENTITY[1], ENTITY[4], ENTITY[12], ENTITY[3], ENTITY[7]} ∧
+          ENTITY[16] = *pro*{ENTITY[1], ENTITY[4], ENTITY[12], ENTITY[3], ENTITY[7]} ∧
+           FACT(SITUATION[14], 見違える(EVENT[17], ENTITY[15], ENTITY[16])) ∧
+            past(EVENT[11]) ∧
+             past(EVENT[18]) ∧
+              CRD_と(注ぐ(EVENT[13], ENTITY[2], ENTITY[12]) ∧ で(EVENT[13]) = ENTITY[4],
+               元気_に_なっ_た(EVENT[18], ENTITY[1]) ∧ ほど(EVENT[18]) = SITUATION[14]))
+
+# ::id 14_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 新しい 年 が 明け た 。
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (新しい(ATTRIB[2]) ∧ ATTRIBUTE_年(ATTRIB[2], ENTITY[1]) ∧ past(EVENT[3]) ∧ 明け_た(EVENT[3], ENTITY[1]))
+
+# ::id 15_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 震災 から 間もなく ３ 年 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 震災(ENTITY[1]) ∧
+  CD_３_年(ENTITY[2]) ∧
+   ADV_間もなく(EVENT[3]) ∧ xxx(EVENT[3], _, ENTITY[2]) ∧ から(EVENT[3]) = ENTITY[1])
+
+# ::id 16_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 多く の 人 、 そして 馬 に 励まさ れ て き た 鈴木さん が 午 （ うま ） 年 に 誓う 。
+∃ ENTITY[1] EVENT[6] EVENT[8] GROUP[3] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  CONJ_そして(多く_の ENTITY[4] (人(ENTITY[4]), is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (馬(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   励まさ_て_き_た(EVENT[6], GROUP[3], ENTITY[鈴木さん]) ∧
+    CD_午_（_うま_）_年(ENTITY[7]) ∧
+     past(EVENT[6]) ∧ 誓う(EVENT[8], ENTITY[鈴木さん], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7])
+
+# ::id 17_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 「 亡くなっ た 職員 や 馬 に 恥ずかしい 姿 は 見せ たく ない 。
+∃ ENTITY[1] ATTRIB[9] ENTITY[8] (
+ 恥ずかしい(ATTRIB[9]) ∧
+  ATTRIBUTE_姿(ATTRIB[9], ENTITY[8]) ∧
+   ENTITY[1] = *speaker* ∧
+    ¬ ∃ EVENT[4] EVENT[10] GROUP[5] ENTITY[2] (
+          CONJ_や(∃ ENTITY[6] (職員(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+           ∃ ENTITY[7] (馬(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+           亡くなっ_た(EVENT[4], ENTITY[2]) ∧ equals(GROUP[5], ENTITY[2]) ∧
+            past(EVENT[4]) ∧ 見せ_たく(EVENT[10], ENTITY[1], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[2]))
+
+# ::id 18_newswire_13153_K201401010A0A106B00004;NJ
+# ::snt 未来 に 向かっ て 駆け て いき ます 」
+∃ ENTITY[1] EVENT[3] EVENT[4] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  未来(ENTITY[2]) ∧
+   CONJ_te(向かっ_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2], 駆け_て_いき_ます(EVENT[4], ENTITY[1])))

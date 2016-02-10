@@ -1,0 +1,660 @@
+# ::id 1_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ご当地バンザイ
+∃ EVENT[2] ENTITY[1] (ご当地バンザイ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ ローカルヒーロー 熱い
+∃ EVENT[2] ENTITY[1] (ローカルヒーロー(ENTITY[1]) ∧ 熱い(EVENT[2], ENTITY[1]))
+
+# ::id 3_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 新しい 地方 の 時代 の 到来 と 言っ たら 、 大げさ だろ う か 。
+QUEST(∃ ENTITY[1] (
+      ENTITY[1] = *pro* ∧
+       MD_う(∀ ATTRIB[4] EVENT[6] ENTITY[5] ENTITY[3] ENTITY[2] CND_たら(
+                新しい(ATTRIB[4]) ∧ 地方(ENTITY[5]) ∧
+                 の_時代(ENTITY[5], ENTITY[3]) ∧ ATTRIBUTE_時代(ATTRIB[4], ENTITY[3]) ∧
+                 の_到来(ENTITY[3], ENTITY[2]) ∧
+                 言っ(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[2],
+                ∃ EVENT[7] 大げさ_だろ(EVENT[7], ENTITY[1])))))
+
+# ::id 4_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 子ども 、 若者 、 大人 まで も 魅了 する ご当地 の ローカルヒーロー や アイドルたち 。
+∃ EVENT[7] EVENT[12] GROUP[3] GROUP[9] ENTITY[8] ENTITY[1] (
+ ∃ ENTITY[4] (子ども(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[5] (若者(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+  ∃ ENTITY[6] (大人(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+  ご当地(ENTITY[8]) ∧
+   CONJ_や(∃ ENTITY[10] (ローカルヒーロー(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+    ∃ ENTITY[11] (アイドルたち(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+    魅了する.0(EVENT[7], ENTITY[1]) ∧ まで(EVENT[7]) = GROUP[3] ∧
+     equals(GROUP[9], ENTITY[1]) ∧ の(ENTITY[8], ENTITY[1]) ∧
+     xxx(EVENT[12]) ∧ LINK(EVENT[12]) = ENTITY[1])
+
+# ::id 5_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 ゆるキャラ 」 が 地域 の 観光 を けん引 し 、 東北なまり の 方言 が 堂々 と 流行語 に なる 。
+∃ ATTRIB[7] EVENT[4] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[6] ENTITY[8] ENTITY[5] (
+ ゆるキャラ(ENTITY[1]) ∧
+  地域(ENTITY[3]) ∧
+   の_観光(ENTITY[3], ENTITY[2]) ∧
+    東北なまり(ENTITY[6]) ∧
+     の_方言(ENTITY[6], ENTITY[5]) ∧
+      ADV_堂々(ATTRIB[7]) ∧
+       流行語(ENTITY[8]) ∧
+        けん引する.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧
+         なる(EVENT[9], ENTITY[5], ENTITY[8]) ∧ と(EVENT[9]) = ATTRIB[7])
+
+# ::id 6_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt この 何 と も 不思議 で 、 心 躍る 高揚感 。
+∃ EVENT[7] ENTITY[5] ENTITY[1] EVENT[4] EVENT[6] (
+ 心(ENTITY[5]) ∧
+  CONJ_te(も ENTITY[3] (不思議_で(EVENT[4], _, ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[3]),
+   躍る(EVENT[6], ENTITY[5], ENTITY[1])) ∧ 高揚感(ENTITY[1]) ∧
+   xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 7_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt あなた の 地元 で も いつか 始まる ムーブメント か も 。
+∃ ENTITY[4] EVENT[5] EVENT[7] ENTITY[3] ENTITY[1] (
+ ENTITY[4] = あなた{ENTITY[1]} ∧
+  の_地元(ENTITY[4], ENTITY[3]) ∧
+   始まる(EVENT[5], ENTITY[1]) ∧ で(EVENT[5]) = ENTITY[3] ∧ ムーブメント(ENTITY[1]) ∧
+    ADV_いつか(EVENT[5]) ∧ MD_も(MD_か(xxx(EVENT[7], _, ENTITY[1]))))
+
+# ::id 8_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt まず は 、 「 ご当地 」 の 奥深い 魅力 を 眺め て み よう 。
+∃ ATTRIB[3] ENTITY[1] EVENT[4] ENTITY[2] (
+ ENTITY[1] = *speaker+hearer* ∧
+  奥深い(ATTRIB[3]) ∧
+   ATTRIBUTE_魅力(ATTRIB[3], ENTITY[2]) ∧ の_魅力(ENTITY[ご当地], ENTITY[2]) ∧
+    ADV_まず_は(EVENT[4]) ∧ 眺め_て_み_よう(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 9_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ◎ 魅せる
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ 魅せる(EVENT[2], ENTITY[1]))
+
+# ::id 10_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ＜ 東北合神ミライガー
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東北合神ミライガー])
+
+# ::id 11_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 復興 の 力 に ６ 県 団結 ＞
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  復興(ENTITY[3]) ∧
+   の_力(ENTITY[3], ENTITY[2]) ∧
+    ６_県 ENTITY[4] (ENTITY[4] = ENTITY[1], 団結(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2]))
+
+# ::id 12_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 福島市 の 西部 三育幼稚園 で 昨年 １０ 月 に 行わ れ た ヒーローショー 。
+∃ EVENT[5] EVENT[6] ENTITY[3] ENTITY[4] ENTITY[1] (
+ の_西部(ENTITY[福島市], ENTITY[3]) ∧
+  LOC_xxx(ENTITY[3], ENTITY[三育幼稚園]) ∧
+   (CD_１０_月(ENTITY[4]), 昨年(ENTITY[4])) ∧
+    行わ_た(EVENT[5], _, ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[三育幼稚園] ∧
+     ヒーローショー(ENTITY[1]) ∧ past(EVENT[5]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 13_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 悪役 の 怪人 に おびえ て い た 子どもたち から 歓声 が 湧き起こっ た 。
+∃ EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[1] (
+ 悪役(ENTITY[4]) ∧
+  の_怪人(ENTITY[4], ENTITY[3]) ∧
+   おびえ_て_い_た(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ 子どもたち(ENTITY[1]) ∧
+    歓声(ENTITY[6]) ∧
+     past(EVENT[5]) ∧ past(EVENT[7]) ∧ 湧き起こっ_た(EVENT[7], ENTITY[6]) ∧ から(EVENT[7]) = ENTITY[1])
+
+# ::id 14_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 東北 の ローカルヒーロー 「 東北合神（がっしん）ミライガー 」 の 登場 だ 。
+∃ EVENT[2] ENTITY[1] (の_ローカルヒーロー(ENTITY[東北], ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[東北合神（がっしん）ミライガー]) ∧ 登場_だ(EVENT[2], ENTITY[東北合神（がっしん）ミライガー]))
+
+# ::id 15_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 東北 に 光 を 取り戻す 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  光(ENTITY[2]) ∧ 取り戻す(EVENT[3], ENTITY[1], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[東北])
+
+# ::id 16_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 日本 の 未来 を つくる 子どもたち に 手出し は さ せ ん ぞ 」 。
+∃ ENTITY[1] ENTITY[8] (
+ 手出し(ENTITY[8]) ∧
+  ENTITY[1] = *pro* ∧
+   MD_ぞ(¬ ∃ ENTITY[2] EVENT[7] EVENT[9] EVENT[3] ENTITY[6] ENTITY[4] (
+              ENTITY[2] = *pro* ∧
+               の_未来(ENTITY[日本], ENTITY[6]) ∧
+                つくる(EVENT[7], ENTITY[4], ENTITY[6]) ∧ 子どもたち(ENTITY[4]) ∧
+                 せ(EVENT[3], ENTITY[1], ENTITY[2], さ(EVENT[9], ENTITY[2], ENTITY[8], ENTITY[4])))))
+
+# ::id 17_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 宮城 の 名物・笹かま の 形 を し た 「 笹かまブレード 」 を 使い 、 さっそうと 悪役 を 退治 し た 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  宮城(ENTITY[5]) ∧
+   の_名物.笹かま(ENTITY[5], ENTITY[4]) ∧
+    の_形(ENTITY[4], ENTITY[3]) ∧
+     し_た(EVENT[6], ENTITY[笹かまブレード], ENTITY[3]) ∧
+      悪役(ENTITY[8]) ∧
+       past(EVENT[6]) ∧
+        ADV_さっそうと(EVENT[9]) ∧
+         past(EVENT[9]) ∧ 使い(EVENT[7], ENTITY[1], ENTITY[笹かまブレード]) ∧ 退治する.0_た(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 18_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ミライガー は 、 秋田県 の ヒーロー 「 超神ネイガー 」 を 生み出し た 海老名保さん （ ４４ ） ＝ にかほ市 ＝ が 考案 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ ミライガー(ENTITY[1]) ∧
+  の_ヒーロー(ENTITY[秋田県], ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[超神ネイガー]) ∧
+    生み出し_た(EVENT[5], ENTITY[海老名保さん], ENTITY[超神ネイガー]) ∧
+     CD_４４(ENTITY[2]) ∧
+      namely_-ENTITY-(ENTITY[2], ENTITY[海老名保さん]) ∧
+       namely_-ENTITY-(ENTITY[にかほ市], ENTITY[海老名保さん]) ∧ past(EVENT[5]) ∧ 考案(EVENT[6], ENTITY[海老名保さん], ENTITY[1]))
+
+# ::id 19_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 東日本大震災 の 被災地 の 子どもたち を 応援 しよう と 、 ２０１２ 年 から 活動 し て いる 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] CND_と(
+      東日本大震災(ENTITY[4]) ∧ の_被災地(ENTITY[4], ENTITY[3]) ∧ の_子どもたち(ENTITY[3], ENTITY[2]) ∧
+       応援する.0(EVENT[5], ENTITY[1], ENTITY[2]),
+      ∃ EVENT[7] ENTITY[6] (CD_２０１２_年(ENTITY[6]) ∧ 活動する.0_て_いる(EVENT[7], ENTITY[1]) ∧ から(EVENT[7]) = ENTITY[6])))
+
+# ::id 20_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 顔 は 独眼竜政宗 （ 宮城 ） が モチーフ 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 顔(ENTITY[1]) ∧
+  宮城(ENTITY[2]) ∧ namely_-ENTITY-(ENTITY[2], ENTITY[独眼竜政宗]) ∧ モチーフ(EVENT[3], (ENTITY[1], ENTITY[独眼竜政宗])))
+
+# ::id 21_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 胸 は なまはげ （ 秋田 ） 、 背中 は ねぶた （ 青森 ） 、 腕 は チャグチャグ馬コ （ 岩手 ） 、 肩 は 月山 （ 山形 ） の 修験者 の ほら貝 、 ひざ は 白虎隊 （ 福島 ） の 虎 と 、 ６ 県 の シンボル を 合体 さ せ 、 東北 の 団結 を 表現 し た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] EVENT[9] EVENT[13] EVENT[16] EVENT[17] EVENT[19] ENTITY[12] ENTITY[11] ENTITY[15] ENTITY[3] ENTITY[2] ENTITY[18] ENTITY[4] ENTITY[6] ENTITY[8] ENTITY[10] ENTITY[14] (
+ 胸(ENTITY[4]) ∧
+  背中(ENTITY[6]) ∧
+   腕(ENTITY[8]) ∧
+    肩(ENTITY[10]) ∧
+     ひざ(ENTITY[14]) ∧
+      ENTITY[1] = *pro* ∧
+       CD_６_県(ENTITY[3]) ∧
+        namely_-ENTITY-(ENTITY[秋田], ENTITY[なまはげ]) ∧
+         namely_-ENTITY-(ENTITY[青森], ENTITY[ねぶた]) ∧
+          namely_-ENTITY-(ENTITY[岩手], ENTITY[チャグチャグ馬コ]) ∧
+           namely_-ENTITY-(ENTITY[山形], ENTITY[月山]) ∧
+            の_修験者(ENTITY[月山], ENTITY[12]) ∧
+             の_ほら貝(ENTITY[12], ENTITY[11]) ∧
+              namely_-ENTITY-(ENTITY[福島], ENTITY[白虎隊]) ∧
+               の_虎(ENTITY[白虎隊], ENTITY[15]) ∧
+                の_シンボル(ENTITY[3], ENTITY[2]) ∧
+                 THAT_シンボル(xxx(EVENT[5], ENTITY[4], ENTITY[なまはげ]) ∧ xxx(EVENT[7], ENTITY[6], ENTITY[ねぶた]) ∧
+                       xxx(EVENT[9], ENTITY[8], ENTITY[チャグチャグ馬コ]) ∧ xxx(EVENT[13], ENTITY[10], ENTITY[11]) ∧
+                       xxx(EVENT[16], _, ENTITY[15]) ∧ LINK(EVENT[16]) = ENTITY[14],
+                  ENTITY[2]) ∧
+                 の_団結(ENTITY[東北], ENTITY[18]) ∧
+                  past(EVENT[19]) ∧
+                   合体する.0_せ(EVENT[17], ENTITY[1], ENTITY[2]) ∧ 表現する.0_た(EVENT[19], ENTITY[1], ENTITY[18]))
+
+# ::id 22_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ショー を 通じ 、 海老名さん が 子ども に 伝え よう と し て いる の が 、 郷土愛 、 団結心 、 そして 、 絶対 に 諦めない 心 だ 。
+∃ EVENT[4] EVENT[5] EVENT[14] ENTITY[3] GROUP[8] ENTITY[1] (
+ ショー(ENTITY[3]) ∧
+  通じ(EVENT[4], ENTITY[1], ENTITY[3]) ∧
+   し_て_いる(EVENT[5], ENTITY[1],
+    MD_よう(∃ EVENT[7] ENTITY[6] (子ども(ENTITY[6]) ∧ 伝え(EVENT[7], ENTITY[海老名さん]) ∧ に(EVENT[7]) = ENTITY[6]))) ∧
+   の(ENTITY[1]) ∧
+   CONJ_そして(∃ ENTITY[9] (郷土愛(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+    ∃ ENTITY[10] (団結心(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])),
+    ∃ ATTRIB[13] ATTRIB[12] ENTITY[11] (
+     ADV_絶対(ATTRIB[13]) ∧
+      に_諦めない(ATTRIB[13], ATTRIB[12]) ∧ ATTRIBUTE_心(ATTRIB[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8]))) ∧
+    だ(EVENT[14], ENTITY[1], GROUP[8]))
+
+# ::id 23_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 今 、 ヒーローショー に 一番 夢中 に なっ て いる ５ 歳 の 子ども が 成人 する まで 活動 を 続け たい 」 と 海老名さん 。
+∃ SITUATION[2] ENTITY[1] EVENT[7] EVENT[11] EVENT[13] ENTITY[6] TIME[5] ENTITY[10] ENTITY[3] ENTITY[12] (
+ ENTITY[1] = *pro*{ENTITY[海老名さん]} ∧
+  今(TIME[5]) ∧
+   ヒーローショー(ENTITY[6]) ∧
+    CD_５_歳(ENTITY[10]) ∧
+     なっ_て_いる(EVENT[7], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[6] ∧ is_contained_in(時間(EVENT[7]), TIME[5]) ∧
+      の_子ども(ENTITY[10], ENTITY[3]) ∧
+      FACT(SITUATION[2], 成人する.0(EVENT[11], ENTITY[3])) ∧
+       活動(ENTITY[12]) ∧
+        ADV_一番(EVENT[7]) ∧
+         ADV_夢中_に(EVENT[7]) ∧ 続け_たい(EVENT[13], ENTITY[1], ENTITY[12]) ∧ まで(EVENT[13]) = SITUATION[2])
+
+# ::id 24_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 大人 に なっ た 子どもたち が 、 次 の 世代 に 強さ と 優しさ を 伝える “ ヒーロー ” に なっ て ほしい と 願っ て いる 。
+∃ ENTITY[3] ENTITY[1] EVENT[8] EVENT[16] EVENT[17] EVENT[4] EVENT[2] ENTITY[7] ENTITY[10] GROUP[13] ENTITY[11] ENTITY[9] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   大人(ENTITY[7]) ∧
+    なっ_た(EVENT[8], ENTITY[5], ENTITY[7]) ∧ 子どもたち(ENTITY[5]) ∧
+     次(ENTITY[10]) ∧
+      の_世代(ENTITY[10], ENTITY[9]) ∧
+       CONJ_と(∃ ENTITY[14] (強さ(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])),
+        ∃ ENTITY[15] (優しさ(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13]))) ∧
+        伝える(EVENT[16], ENTITY[11], GROUP[13]) ∧ ヒーロー(ENTITY[11]) ∧
+         before(EVENT[4], EVENT[8]) ∧
+          願っ_て_いる(EVENT[2], ENTITY[1],
+           ほしい(EVENT[4], ENTITY[3], なっ_て(EVENT[17], ENTITY[5], ENTITY[11]) ∧ に(EVENT[17]) = ENTITY[9])))
+
+# ::id 25_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ＜ シージェッター海斗 （ 宮城 ）
+∃ EVENT[2] ENTITY[1] (宮城(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[シージェッター海斗]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[シージェッター海斗])
+
+# ::id 26_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 自然 と 海 を 守る ため ＞
+∃ ENTITY[2] EVENT[6] EVENT[7] GROUP[3] ENTITY[1] (
+ ENTITY[2] = *pro* ∧
+  CONJ_と(∃ ENTITY[4] (自然(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (海(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   THAT_ため(守る(EVENT[6], ENTITY[2], GROUP[3]), ENTITY[1]) ∧ xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 27_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ２００４ 年 、 石巻市 の 石ノ森萬画館 と 石森プロ の 連携 で 誕生 。
+∃ ENTITY[1] EVENT[8] GROUP[4] ENTITY[7] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２００４_年(TIME[2]) ∧
+   CONJ_と(∃ ENTITY[5] (の_石ノ森萬画館(ENTITY[石巻市], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (石森プロ(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    の_連携(GROUP[4], ENTITY[3]) ∧
+     誕生(ENTITY[7]) ∧
+      xxx(EVENT[8], ENTITY[1], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[3] ∧
+       is_contained_in(時間(EVENT[8]), TIME[2]))
+
+# ::id 28_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 生前 に 石ノ森章太郎 が 手掛け た ラフスケッチ を 元 に デザイン さ れ た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] EVENT[8] ENTITY[4] ENTITY[6] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  生前(ENTITY[4]) ∧
+   手掛け_た(EVENT[5], ENTITY[石ノ森章太郎], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ ラフスケッチ(ENTITY[2]) ∧
+    元(ENTITY[6]) ∧
+     past(EVENT[5]) ∧
+      past(EVENT[8]) ∧
+       xxx(EVENT[7], ENTITY[1], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+        デザインする.0_た(EVENT[8], _, ENTITY[1]))
+
+# ::id 29_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 自然 と 海 の 破壊 を たくらむ 悪 の 軍団 ヒメラニアン帝国 の 怪人 と 対戦 する 。
+∃ ENTITY[1] EVENT[8] EVENT[12] GROUP[5] ENTITY[4] ENTITY[10] ENTITY[9] ENTITY[11] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ENTITY[6] (自然(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+   ∃ ENTITY[7] (海(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+   の_破壊(GROUP[5], ENTITY[4]) ∧
+    ヒメラニアン帝国(ENTITY[11]) ∧
+     悪(ENTITY[10]) ∧
+      の_軍団(ENTITY[10], ENTITY[9]) ∧
+       namely_-ENTITY-(ENTITY[9], ENTITY[11]) ∧
+        たくらむ(EVENT[8], ENTITY[2], ENTITY[4]) ∧ の_怪人(ENTITY[11], ENTITY[2]) ∧
+         対戦する.0(EVENT[12], ENTITY[1]) ∧ と(EVENT[12]) = ENTITY[2])
+
+# ::id 30_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 変身時 の セリフ は 「 閃（せん）鋼 」 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (変身時(ENTITY[2]) ∧ の_セリフ(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[閃（せん）鋼]))
+
+# ::id 31_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 石巻市 出身 の アニメソング歌手 遠藤正明 が テーマソング を 歌う 。
+∃ EVENT[3] ENTITY[1] ENTITY[2] (石巻市_出身(ENTITY[1]) ∧ の_xxx(ENTITY[1], ENTITY[アニメソング歌手_遠藤正明]) ∧ テーマソング(ENTITY[2]) ∧ 歌う(EVENT[3], ENTITY[アニメソング歌手_遠藤正明], ENTITY[2]))
+
+# ::id 32_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 石ノ森萬画館 で は 実写版 の 映像作品 が 上映 さ れ て いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 石ノ森萬画館(ENTITY[1]) ∧
+  実写版(ENTITY[3]) ∧
+   の_映像作品(ENTITY[3], ENTITY[2]) ∧ 上映する.0_て_いる(EVENT[4], _, ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[1])
+
+# ::id 33_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ＜ 破牙神ライザー龍 （ 宮城 ）
+∃ EVENT[2] ENTITY[1] (宮城(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[破牙神ライザー龍]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[破牙神ライザー龍])
+
+# ::id 34_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 子ども の 声 から 誕生 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  子ども(ENTITY[3]) ∧
+   の_声(ENTITY[3], ENTITY[2]) ∧ 誕生(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[2])
+
+# ::id 35_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 仙台市 の ＮＰＯ法人 ＨＥＲＯ（ヒーロー） が 運営 する 宮城県 の ヒーロー 。
+∃ EVENT[3] EVENT[4] ENTITY[1] (
+ の_xxx(ENTITY[仙台市], ENTITY[ＮＰＯ法人_ＨＥＲＯ（ヒーロー）]) ∧
+  運営する.0(EVENT[3], ENTITY[ＮＰＯ法人_ＨＥＲＯ（ヒーロー）], ENTITY[1]) ∧ の_ヒーロー(ENTITY[宮城県], ENTITY[1]) ∧ xxx(EVENT[4], _, ENTITY[1]))
+
+# ::id 36_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 震災 の 約１ カ月 後 、 被災地 の 避難所 から 「 子ども が ヒーロー に 会い たがっ て いる 」 という 電話 が あっ た こと を きっかけ に 誕生 し た 。
+∃ SITUATION[6] ENTITY[1] EVENT[10] EVENT[11] EVENT[13] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[12] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  被災地(ENTITY[5]) ∧
+   の_避難所(ENTITY[5], ENTITY[4]) ∧
+    震災(ENTITY[3]) ∧
+     (CD_約１_カ月(ENTITY[2]), の_後(ENTITY[3], ENTITY[2])) ∧
+      namely_-ENTITY-(ENTITY[2], ENTITY[4]) ∧
+       子ども(ENTITY[8]) ∧
+        ヒーロー(ENTITY[9]) ∧
+         THAT_電話(会い_たがっ_て_いる(EVENT[10], ENTITY[8], ENTITY[9]), ENTITY[7]) ∧
+          こと(SITUATION[6], あっ_た(EVENT[11], ENTITY[7])) ∧
+           きっかけ(ENTITY[12]) ∧
+            past(EVENT[11]) ∧
+             past(EVENT[13]) ∧
+              誕生する.0_た(EVENT[13], ENTITY[1], SITUATION[6]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+               から(EVENT[13]) = ENTITY[4])
+
+# ::id 37_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 宮城県内 の 幼稚園 、 保育園 など で ショー を 無償 で 開催 。
+∃ ENTITY[1] EVENT[10] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  宮城県内(ENTITY[4]) ∧
+   ∃ ENTITY[6] (幼稚園(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+    ∃ ENTITY[7] (保育園(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+    equals(GROUP[5], ENTITY[3]) ∧ の(ENTITY[4], ENTITY[3]) ∧
+     など(ENTITY[3], ENTITY[2]) ∧
+      ショー(ENTITY[8]) ∧
+       無償(ENTITY[9]) ∧
+        開催(EVENT[10], ENTITY[1], ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[9] ∧ で(EVENT[10]) = ENTITY[2])
+
+# ::id 38_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 人々 を 不安 に 陥れる 怪人 と 戦い 、 「 命 の 尊さ 」 「 人 を いたわる 心 の 強さ 」 を 伝える 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[16] ENTITY[5] ENTITY[4] ENTITY[2] GROUP[8] (
+ ENTITY[1] = *pro* ∧
+  人々(ENTITY[4]) ∧
+   不安(ENTITY[5]) ∧
+    陥れる(EVENT[6], ENTITY[2], ENTITY[4], ENTITY[5]) ∧ 怪人(ENTITY[2]) ∧
+     ∃ ENTITY[10] ENTITY[9] (命(ENTITY[10]) ∧ の_尊さ(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ EVENT[15] ENTITY[14] ENTITY[12] ENTITY[11] (
+       人(ENTITY[14]) ∧
+        いたわる(EVENT[15], ENTITY[12], ENTITY[14]) ∧ 心(ENTITY[12]) ∧
+         の_強さ(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])) ∧
+      戦い(EVENT[7], ENTITY[1]) ∧ と(EVENT[7]) = ENTITY[2] ∧ 伝える(EVENT[16], ENTITY[1], GROUP[8]))
+
+# ::id 39_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ＜ 相双神旗ディネード （ 福島 ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[福島], ENTITY[相双神旗ディネード]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[相双神旗ディネード])
+
+# ::id 40_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 原発被害 、 負け ねえ ど ＞
+∃ ENTITY[1] (ENTITY[1] = *pro* ∧ MD_ど(¬ ∃ EVENT[3] ENTITY[2] (原発被害(ENTITY[2]) ∧ 負け(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 41_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 震災 や 原発事故 で 被害 を 受け た 福島県 の 相双地区 で 活動 。
+∃ ENTITY[1] EVENT[8] EVENT[10] ENTITY[7] GROUP[4] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[5] (震災(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (原発事故(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+   被害(ENTITY[7]) ∧
+    受け_た(EVENT[8], ENTITY[2], ENTITY[7]) ∧ で(EVENT[8]) = GROUP[4] ∧ の_相双地区(ENTITY[福島県], ENTITY[2]) ∧
+     活動(ENTITY[9]) ∧
+      past(EVENT[8]) ∧ xxx(EVENT[10], ENTITY[1], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[2])
+
+# ::id 42_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 子どもたち に 内部被ばく の 予防法 、 自然 と の 共生 、 １ 次 産業 の 大切さ を 伝える 。
+∃ ENTITY[1] EVENT[10] GROUP[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  子どもたち(ENTITY[2]) ∧
+   ∃ ENTITY[5] ENTITY[4] (内部被ばく(ENTITY[5]) ∧ の_予防法(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[7] ENTITY[6] (自然(ENTITY[7]) ∧ と_の_共生(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧
+    ∃ ENTITY[9] ENTITY[8] (
+     (CD_１_次(ENTITY[9]), 産業(ENTITY[9])) ∧
+      の_大切さ(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+    伝える(EVENT[10], ENTITY[1], GROUP[3]) ∧ に(EVENT[10]) = ENTITY[2])
+
+# ::id 43_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 名前 は 「 負ける んで ねえ ど 」 の 方言 から 付け た 。
+∃ ENTITY[5] SITUATION[4] ENTITY[1] EVENT[9] ENTITY[3] ENTITY[2] (
+ 名前(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[5] = *pro*{ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+    ど(SITUATION[4],
+     ¬ ∃ SITUATION[6] EVENT[7] EVENT[8] (
+           FACT(SITUATION[6], 負ける(EVENT[7], ENTITY[5])) ∧
+            xxx(EVENT[8], ENTITY[5]) ∧ んで(EVENT[8]) = SITUATION[6])) ∧
+     の_方言(SITUATION[4], ENTITY[3]) ∧
+      past(EVENT[9]) ∧ 付け_た(EVENT[9], ENTITY[1], ENTITY[2]) ∧ から(EVENT[9]) = ENTITY[3])
+
+# ::id 44_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 衣装 は 相馬野馬追い の 騎馬武者 を イメージ 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (衣装(ENTITY[1]) ∧ 相馬野馬追い(ENTITY[3]) ∧ の_騎馬武者(ENTITY[3], ENTITY[2]) ∧ イメージ(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 45_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 農家 の 息子・星ソーマ が 変身 、 女戦士ミネート と とも に 悪 と 戦う 。
+∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] ENTITY[3] (
+ 農家(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[息子.星ソーマ]) ∧
+   と_とも(ENTITY[女戦士ミネート], ENTITY[3]) ∧
+    悪(ENTITY[4]) ∧
+     変身(EVENT[2], ENTITY[息子.星ソーマ]) ∧
+      戦う(EVENT[5], ENTITY[息子.星ソーマ]) ∧ と(EVENT[5]) = ENTITY[4] ∧ に(EVENT[5]) = ENTITY[3])
+
+# ::id 46_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt キャッチフレーズ は 「 勝つ ん じゃ ない 。 生きる ん だ 」 。
+∃ ENTITY[4] ENTITY[2] EVENT[5] ENTITY[1] (
+ キャッチフレーズ(ENTITY[1]) ∧
+  ENTITY[2] = *pro*{ENTITY[1]} ∧
+   ENTITY[4] = *pro*{ENTITY[1]} ∧ ¬ ∃ EVENT[3] 勝つ_ん_じゃ(EVENT[3], ENTITY[2]) ∧ 生きる_ん_だ(EVENT[5], ENTITY[4]))
+
+# ::id 47_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ◎ 知る
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ 知る(EVENT[2], ENTITY[1]))
+
+# ::id 48_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ なぜ ご当地ブーム
+QUEST(∃ EVENT[3] ENTITY[2] ? ENTITY[1] (ご当地ブーム(ENTITY[2]) ∧ ADV(ENTITY[1], EVENT[3]) ∧ xxx(EVENT[3], ENTITY[2])))
+
+# ::id 49_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 小山薫堂さん に 聞く
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ 聞く(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[小山薫堂さん])
+
+# ::id 50_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ／ 震災 機 に 「 古里 回帰 」
+∃ SITUATION[2] ENTITY[1] EVENT[3] EVENT[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  機(SITUATION[2], 震災(EVENT[3], ENTITY[1])) ∧
+   古里(ENTITY[4]) ∧ 回帰(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = SITUATION[2])
+
+# ::id 51_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ご当地ブーム を 引っ張る シンボル は 、 各地 の イメージキャラクター だ 。
+∃ EVENT[7] ENTITY[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ ご当地ブーム(ENTITY[3]) ∧
+  引っ張る(EVENT[4], ENTITY[1], ENTITY[3]) ∧ シンボル(ENTITY[1]) ∧
+   各 ENTITY[6] (地(ENTITY[6]), の_イメージキャラクター(ENTITY[6], ENTITY[5])) ∧ だ(EVENT[7], ENTITY[1], ENTITY[5]))
+
+# ::id 52_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 東北 も 数ある 人気 の 「 ゆるキャラ 」 を 先頭 に 全国 に 魅力 を 発信 し たい 。
+∃ ATTRIB[2] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[1] (
+ 数ある(ATTRIB[2]) ∧
+  人気(ENTITY[3]) ∧
+   の_ゆるキャラ(ENTITY[3], ENTITY[1]) ∧ ATTRIBUTE_ゆるキャラ(ATTRIB[2], ENTITY[1]) ∧
+    先頭(ENTITY[4]) ∧
+     xxx(EVENT[5], ENTITY[東北], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧
+      全 ENTITY[6] (国(ENTITY[6]), ∃ EVENT[8] ENTITY[7] (魅力(ENTITY[7]) ∧ 発信する.0_たい(EVENT[8], ENTITY[東北], ENTITY[7], ENTITY[6]))))
+
+# ::id 53_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ご当地キャラ の トップランナー 、 熊本県 の 「 くまモン 」 を プロデュース し た 東北芸術工科大企画構想学科長 で 放送作家 の 小山薫堂さん （ ４９ ） に 、 ブーム の 背景 を 聞い た 。
+∃ ENTITY[1] EVENT[9] EVENT[12] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[11] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  熊本県(ENTITY[8]) ∧
+   の_xxx(ENTITY[8], ENTITY[くまモン]) ∧
+    ご当地キャラ(ENTITY[7]) ∧
+     の_トップランナー(ENTITY[7], ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[くまモン]) ∧
+       プロデュースする.0_た(EVENT[9], ENTITY[小山薫堂さん], ENTITY[くまモン]) ∧
+        東北芸術工科大企画構想学科長(ENTITY[4]) ∧
+         で_xxx(ENTITY[4], ENTITY[小山薫堂さん]) ∧
+          放送作家(ENTITY[3]) ∧
+           の_xxx(ENTITY[3], ENTITY[小山薫堂さん]) ∧
+            CD_４９(ENTITY[2]) ∧
+             namely_-ENTITY-(ENTITY[2], ENTITY[小山薫堂さん]) ∧
+              ブーム(ENTITY[11]) ∧
+               の_背景(ENTITY[11], ENTITY[10]) ∧
+                past(EVENT[9]) ∧ past(EVENT[12]) ∧ 聞い_た(EVENT[12], ENTITY[1], ENTITY[10], ENTITY[小山薫堂さん]))
+
+# ::id 54_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt － 「 くまモン 」 は すごい 人気 です ね 。
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (すごい(ATTRIB[2]) ∧ ATTRIBUTE_人気(ATTRIB[2], ENTITY[1]) ∧ MD_ね(です(EVENT[3], ENTITY[くまモン], ENTITY[1])))
+
+# ::id 55_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 誕生 の 経緯 は 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (誕生(ENTITY[2]) ∧ の_経緯(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[1]))
+
+# ::id 56_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 熊本県 に 住む 人たち が ワクワク する すてき な もの を 再発見 し 、 自分たち が 幸せ だ と 感じ られる 何 か を 探そう と 始め た の です 。
+∃ ENTITY[3] ENTITY[1] EVENT[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   past(EVENT[2]) ∧
+    始め_た_の_です(EVENT[2], ENTITY[1],
+     か ENTITY[17] ATTRIB[14] ENTITY[6] EVENT[12] EVENT[13] EVENT[15] EVENT[18] EVENT[16] ENTITY[11] ENTITY[9] ENTITY[7] ENTITY[4] (
+      (再発見する.0(EVENT[15], ENTITY[4], ENTITY[7]) ∧
+         感じ_られる(EVENT[16], ENTITY[6], ENTITY[4], 幸せ_だ(EVENT[18], ENTITY[17])) ∧
+       ENTITY[6] = *pro*{ENTITY[3], ENTITY[1]} ∧ 熊本県(ENTITY[11]) ∧
+       住む(EVENT[12], ENTITY[9]) ∧ に(EVENT[12]) = ENTITY[11] ∧ 人たち(ENTITY[9]) ∧
+       すてき_な(ATTRIB[14]) ∧ ワクワクする.0(EVENT[13], ENTITY[9], ENTITY[7]) ∧ ATTRIBUTE_もの(ATTRIB[14], ENTITY[7]) ∧
+       ENTITY[17] = 自分たち{ENTITY[4], ENTITY[6], ENTITY[7], ENTITY[9], ENTITY[11], ENTITY[3], ENTITY[1]}), ∃ EVENT[19] 探そう(EVENT[19], ENTITY[3], ENTITY[4]))))
+
+# ::id 57_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 熊本 の いい もの を 見つけ だし 驚い て いる キャラクター として 、 くまモン は 生まれ まし た 」
+∃ ATTRIB[5] EVENT[6] EVENT[7] EVENT[9] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[8] (
+ くまモン(ENTITY[8]) ∧
+  熊本(ENTITY[4]) ∧
+   いい(ATTRIB[5]) ∧
+    ATTRIBUTE_もの(ATTRIB[5], ENTITY[3]) ∧ の_もの(ENTITY[4], ENTITY[3]) ∧
+     見つけ_だし(EVENT[6], ENTITY[1], ENTITY[3]) ∧ 驚い_て_いる(EVENT[7], ENTITY[1]) ∧ キャラクター(ENTITY[1]) ∧
+      past(EVENT[9]) ∧ 生まれ_まし_た(EVENT[9], ENTITY[8]) ∧ として(EVENT[9]) = ENTITY[1])
+
+# ::id 59_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 理由 の 一 つ は 、 地元 を 愛し て いる 人 が 集まる から でしょう 。
+∃ EVENT[6] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 理由(ENTITY[2]) ∧
+  (CD_一_つ(ENTITY[1]), の(ENTITY[2], ENTITY[1])) ∧
+   地元(ENTITY[5]) ∧
+    愛し_て_いる(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 人(ENTITY[3]) ∧ MD_でしょう(∃ EVENT[7] 集まる_から(EVENT[7], ENTITY[3], ENTITY[1])))
+
+# ::id 60_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 趣味 で つながる の で は なく 、 郷土愛 という 根本的 な 価値観 で 結び付く ので 、 結束力 とか 何 か の イベント を する 際に 強い パワー が 生まれる の です 」
+∃ ATTRIB[6] ENTITY[1] EVENT[7] EVENT[17] ENTITY[2] ENTITY[5] ENTITY[4] GROUP[8] (
+ ENTITY[1] = *pro* ∧
+  趣味(ENTITY[2]) ∧
+   郷土愛(ENTITY[5]) ∧
+    根本的_な(ATTRIB[6]) ∧
+     ATTRIBUTE_価値観(ATTRIB[6], ENTITY[4]) ∧ という_価値観(ENTITY[5], ENTITY[4]) ∧
+      CONJ_とか(∃ ENTITY[9] (結束力(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ATTRIB[16] ENTITY[12] SITUATION[11] EVENT[15] ENTITY[13] ENTITY[10] (
+        ENTITY[12] = *pro*{ENTITY[10], ENTITY[4], ENTITY[5], ENTITY[2]} ∧
+         か ENTITY[14] の_イベント(ENTITY[14], ENTITY[13]) ∧
+          FACT(SITUATION[11], する(EVENT[15], ENTITY[12], ENTITY[13])) ∧
+           強い(ATTRIB[16]) ∧
+            ATTRIBUTE_パワー(ATTRIB[16], ENTITY[10]) ∧ 際に_パワー(SITUATION[11], ENTITY[10]) ∧
+             is_element_of(ENTITY[10], GROUP[8]))) ∧
+       CRD_ので(¬ ∃ EVENT[3] (つながる_の_で_は(EVENT[3], ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2]) ∧
+             結び付く(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = ENTITY[4], 生まれる_の_です(EVENT[17], GROUP[8])))
+
+# ::id 61_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt － その 背景 に は 何 が 。
+∃ ENTITY[1] (背景(ENTITY[1]) ∧ QUEST(∃ EVENT[3] ? ENTITY[2] (xxx(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1])))
+
+# ::id 62_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 人々 の 直接的 な 関係 が 希薄 に なり 、 人 が 人 と 膝詰め で 話す よう な 交わり を 求め て いる 。
+∃ SITUATION[10] ATTRIB[4] ENTITY[1] EVENT[6] EVENT[14] EVENT[15] EVENT[16] ENTITY[3] ENTITY[5] ENTITY[2] GROUP[11] ENTITY[9] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  人々(ENTITY[3]) ∧
+   直接的_な(ATTRIB[4]) ∧
+    ATTRIBUTE_関係(ATTRIB[4], ENTITY[2]) ∧ の_関係(ENTITY[3], ENTITY[2]) ∧
+     希薄(ENTITY[5]) ∧
+      人(ENTITY[9]) ∧
+       CONJ_と(∃ ENTITY[12] (人(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+        ∃ ENTITY[13] (膝詰め(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+        よう(SITUATION[10], 話す(EVENT[14], ENTITY[9]) ∧ で(EVENT[14]) = GROUP[11]) ∧
+         な(EVENT[15], ENTITY[9], SITUATION[10]) ∧ 交わり(ENTITY[7]) ∧
+          なり(EVENT[6], ENTITY[2], ENTITY[5]) ∧ 求め_て_いる(EVENT[16], ENTITY[1], ENTITY[7]))
+
+# ::id 63_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 特に ３・１１ （ 東日本大震災 ） 以降 、 古里 へ の 回帰 が 強まっ て 、 古里 を 大切 に し よう と 感じる 人 は 増え て いる の で は ない でしょう か 」
+∃ SITUATION[9] SITUATION[11] ENTITY[4] EVENT[7] EVENT[3] ENTITY[6] TIME[5] ENTITY[1] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  (CD_３.１１_（_東日本大震災_）(TIME[5]), 以降(TIME[5])) ∧
+   へ_の_回帰(ENTITY[古里], ENTITY[6]) ∧
+    感じる(EVENT[3], ENTITY[1],
+     CONJ_te(強まっ_て(EVENT[7], ENTITY[6]) ∧ is_contained_in(時間(EVENT[7]), TIME[5]),
+      FACT(SITUATION[9],
+       MD_よう(∃ EVENT[8] (し(EVENT[8], ENTITY[4], ENTITY[古里]) ∧ is_contained_in(時間(EVENT[8]), TIME[5])))))) ∧
+     人(ENTITY[1]) ∧
+     ADV_特に(SITUATION[11]) ∧
+      ADV_大切_に(SITUATION[9]) ∧ MD_か(FACT(SITUATION[11], ¬ MD_でしょう(∃ EVENT[10] 増え_て_いる_の_で_は(EVENT[10], ENTITY[1])))))
+
+# ::id 64_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt － くまモン は 地元 だけでなく 、 全国 、 海外 に も 出掛け て いき ます ね 。
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ くまモン(ENTITY[1]) ∧
+  CONJ_だけでなく(∃ ENTITY[3] (地元(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ GROUP[4] (
+    全 ENTITY[5] (国(ENTITY[5]), is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ENTITY[6] (海外(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[2]))) ∧
+   MD_ね(出掛け_て_いき_ます(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = GROUP[2]))
+
+# ::id 65_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 行っ た こと の ない 地域 を 訪ね 、 地域間 の 交流 を 図っ て い ます 。
+∃ ENTITY[5] SITUATION[4] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] EVENT[11] ENTITY[2] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   こと(SITUATION[4], 行っ_た(EVENT[6], ENTITY[5])) ∧
+    ない(EVENT[7], SITUATION[4], ENTITY[2]) ∧ 地域(ENTITY[2]) ∧
+     地域間(ENTITY[10]) ∧
+      の_交流(ENTITY[10], ENTITY[9]) ∧
+       past(EVENT[6]) ∧ 訪ね(EVENT[8], ENTITY[1], ENTITY[2]) ∧ 図っ_て_い_ます(EVENT[11], ENTITY[1], ENTITY[9]))
+
+# ::id 66_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 根底 に は 互い に 褒め合う 観光キャンペーン を し たい という 思い が あり ます 」
+∃ ENTITY[4] ENTITY[3] EVENT[6] EVENT[7] ENTITY[5] ENTITY[2] ENTITY[1] (
+ 根底(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ENTITY[4] = 互い{ENTITY[1]} ∧
+    褒め合う_観光キャンペーン(ENTITY[5]) ∧
+     THAT_思い(し_たい(EVENT[6], ENTITY[3], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4], ENTITY[2]) ∧
+      あり_ます(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[1])
+
+# ::id 67_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 「 自分たち の 土地 の 魅力 だけ を 語る の で は なく 、 例えば 宮城 の 人 が 『 山形県 の 酒 は うまい ん だ よ 』 と 言っ た 方 が 説得力 が あり ます 。
+∃ SITUATION[15] SITUATION[7] ARB[1] EVENT[12] EVENT[10] EVENT[14] ENTITY[9] ENTITY[8] ENTITY[13] ENTITY[11] (
+ の_酒(ENTITY[山形県], ENTITY[11]) ∧
+  ARB[1] = *arb* ∧
+   宮城(ENTITY[9]) ∧
+    の_人(ENTITY[9], ENTITY[8]) ∧
+     方(SITUATION[7], 言っ_た(EVENT[10], ENTITY[8], MD_よ(うまい_ん_だ(EVENT[12], ENTITY[11])))) ∧
+      説得力(ENTITY[13]) ∧
+       ADV_例えば(SITUATION[15]) ∧
+        past(EVENT[10]) ∧
+         ¬ ∃ ENTITY[5] ENTITY[4] ENTITY[3] (
+               ENTITY[5] = 自分たち{ENTITY[3]} ∧
+                の_土地(ENTITY[5], ENTITY[4]) ∧
+                 の_魅力(ENTITY[4], ENTITY[3]) ∧
+                  だけ ENTITY[2] (ENTITY[2] = ENTITY[3], ∃ EVENT[6] 語る_の_で_は(EVENT[6], ARB[1], ENTITY[2]))) ∧
+          FACT(SITUATION[15], あり_ます(EVENT[14], (SITUATION[7], ENTITY[13]))))
+
+# ::id 68_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 互い の 魅力 を 再発見 できる 関係づくり が できる と いい です ね 」
+∃ ENTITY[6] ENTITY[4] SITUATION[3] ENTITY[1] EVENT[7] EVENT[8] EVENT[2] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   ENTITY[6] = 互い{ENTITY[4], ENTITY[1]} ∧
+    の_魅力(ENTITY[6], ENTITY[5]) ∧
+     関係づくり(SITUATION[3], 再発見する.0(EVENT[7], ENTITY[4], ENTITY[5])) ∧
+      MD_ね(いい_です(EVENT[2], ENTITY[1], できる(EVENT[8], SITUATION[3]))))
+
+# ::id 69_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt ＜ こやま・くんどう ＞ １９６４ 年 、 熊本県 生まれ 。
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[こやま.くんどう])
+
+# ::id 70_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt テレビ番組 「 料理 の 鉄人 」 など の 企画 構成 をはじめ 、 映画 「 おくりびと 」 の 脚本 も 手掛け た 。
+∃ ENTITY[1] EVENT[12] ENTITY[5] ENTITY[4] ENTITY[6] GROUP[7] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  テレビ番組(ENTITY[6]) ∧
+   料理(ENTITY[5]) ∧
+    の_鉄人(ENTITY[5], ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[6]) ∧
+      など(ENTITY[6], ENTITY[3]) ∧
+       ∃ ENTITY[8] (企画(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+        ∃ ENTITY[9] (構成(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+        の(ENTITY[3], ENTITY[2]) ∧ equals(GROUP[7], ENTITY[2]) ∧
+         映画(ENTITY[11]) ∧
+          namely_-ENTITY-(ENTITY[おくりびと], ENTITY[11]) ∧
+           の_脚本(ENTITY[11], ENTITY[10]) ∧
+            past(EVENT[12]) ∧ 手掛け_た(EVENT[12], ENTITY[1], ENTITY[10]) ∧ をはじめ(EVENT[12]) = ENTITY[2])
+
+# ::id 71_newswire_00402_K201401010W5XP2XX00001;NJ
+# ::snt 東京都在住 。
+∃ EVENT[2] ENTITY[1] (東京都在住(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])

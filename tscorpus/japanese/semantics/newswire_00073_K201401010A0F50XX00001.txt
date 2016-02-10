@@ -1,0 +1,1282 @@
+# ::id 1_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 第６３ 回 河北文化賞
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[第６３_回_河北文化賞])
+
+# ::id 2_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 不断 の 努力 、 東北 照らす
+∃ EVENT[3] ENTITY[2] ENTITY[1] (不断(ENTITY[2]) ∧ の_努力(ENTITY[2], ENTITY[1]) ∧ 照らす.0(EVENT[3], ENTITY[1], LOC[東北]))
+
+# ::id 3_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ◎ 地域
+∃ EVENT[2] ENTITY[1] (地域(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 4_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt がん 登録 により がん対策 の 向上 に 寄与
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  がん_登録(ENTITY[2]) ∧
+   がん対策(ENTITY[4]) ∧
+    の_向上(ENTITY[4], ENTITY[3]) ∧
+     する.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ により(EVENT[5]) = ENTITY[2])
+
+# ::id 5_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 宮城県新生物レジストリー委員会
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ORG[宮城県新生物レジストリー委員会])
+
+# ::id 6_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 情報活用 、 全国基準 に
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  情報活用(ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3])
+
+# ::id 7_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 日本人 の 死亡原因 第１ 位 を 占める 「 がん 」 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 日本人(ENTITY[4]) ∧
+  (CD_第１_位(ENTITY[3]), の_死亡原因(ENTITY[4], ENTITY[3])) ∧
+   占める.0(EVENT[5], ENTITY[1], ENTITY[3]) ∧ がん(ENTITY[1]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 8_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 集団検診 の 有効性 など がん 対策 を 評価 する に は 罹患 （ りかん ） 率 、 生存率 といった 基礎データ が 欠かせ ない 。
+∃ ARB[2] SITUATION[1] EVENT[6] ENTITY[4] ENTITY[5] ENTITY[3] GROUP[8] ENTITY[7] (
+ ARB[2] = *arb* ∧
+  集団検診(ENTITY[4]) ∧
+   の_有効性(ENTITY[4], ENTITY[3]) ∧
+    がん_対策(ENTITY[5]) ∧
+     FACT(SITUATION[1], 評価する.0(EVENT[6], ARB[2], ENTITY[5]) ∧ など(EVENT[6]) = ENTITY[3]) ∧
+      ∃ ENTITY[9] (罹患_率(ENTITY[9]) ∧ namely_-ENTITY-(ENTITY[りかん], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+       ∃ ENTITY[10] (生存率(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+       といった_基礎データ(GROUP[8], ENTITY[7]) ∧ ¬ ∃ EVENT[11] (欠かす.0(EVENT[11], ENTITY[7]) ∧ に(EVENT[11]) = SITUATION[1]))
+
+# ::id 9_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt データ は 患者 の 年齢 や 性別 、 住所 、 診断名 など を 一 つ 一 つ 登録 し た 「 がん登録 」 の 分析 で 得 られる 。
+∃ ARB[4] EVENT[14] EVENT[15] GROUP[8] ENTITY[7] ENTITY[6] DEGREE[13] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ データ(ENTITY[1]) ∧
+  ARB[4] = *arb* ∧
+   患者(ENTITY[7]) ∧
+    CONJ_や(∃ ENTITY[9] (年齢(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+     ∃ ENTITY[10] (性別(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])),
+     ∃ ENTITY[11] (住所(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])),
+     ∃ ENTITY[12] (診断名(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[8]))) ∧
+     equals(GROUP[8], ENTITY[6]) ∧ の(ENTITY[7], ENTITY[6]) ∧
+      など(ENTITY[6], ENTITY[5]) ∧
+       CD_一_つ_一_つ(DEGREE[13]) ∧
+        THAT_がん登録(登録する.0_た(EVENT[14], ARB[4], ENTITY[5]) ∧ MSR(EVENT[14]) = DEGREE[13], ENTITY[3]) ∧
+         の_分析(ENTITY[3], ENTITY[2]) ∧
+          past(EVENT[14]) ∧ 得る.0(EVENT[15], _, ENTITY[1]) ∧ で(EVENT[15]) = ENTITY[2])
+
+# ::id 10_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 宮城県 の がん登録 は スタッフ が 主要病院 を 訪ね て 直接 症例 を 集め て いる こと から 、 登録漏れ が 約１０ ％ に とどまり 国際的 な 評価 が 高い 。
+∃ ATTRIB[13] SITUATION[2] EVENT[5] EVENT[7] EVENT[11] EVENT[14] ENTITY[4] ENTITY[6] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[12] ENTITY[1] (
+ の_がん登録(NORP[宮城県], ENTITY[1]) ∧
+  スタッフ(ENTITY[3]) ∧
+   主要病院(ENTITY[4]) ∧
+    症例(ENTITY[6]) ∧
+     こと(SITUATION[2], CONJ_te(訪ねる.0_て(EVENT[5], ENTITY[3], ENTITY[4]), 集める.0_て_いる(EVENT[7], ENTITY[3], ENTITY[6]))) ∧
+      登録漏れ(ENTITY[9]) ∧
+       CD_約１０_％(ENTITY[10]) ∧
+        国際的_な(ATTRIB[13]) ∧
+         ATTRIBUTE_評価(ATTRIB[13], ENTITY[12]) ∧
+          ADV_直接(EVENT[7]) ∧
+           とどまり(EVENT[11], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[10] ∧ から(EVENT[11]) = SITUATION[2] ∧
+            高い(EVENT[14], (ENTITY[1], ENTITY[12])))
+
+# ::id 11_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt この 事業 を 担う の が 東北大 と 県 、 県医師会 で 構成 する 「 宮城県新生物レジストリー委員会 」 だ 。
+∃ GROUP[6] ENTITY[1] EVENT[4] EVENT[9] EVENT[10] ENTITY[3] (
+ 事業(ENTITY[3]) ∧
+  担う.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ の(ENTITY[1]) ∧
+   CONJ_と(is_subset_of_or_equal_to(ORG[東北大], GROUP[6]), ∃ ENTITY[7] (県(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ENTITY[8] (県医師会(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    構成する.0(EVENT[9], ORG[宮城県新生物レジストリー委員会]) ∧ で(EVENT[9]) = GROUP[6] ∧ だ(EVENT[10], ENTITY[1], ORG[宮城県新生物レジストリー委員会]))
+
+# ::id 12_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 県内 の がん登録 は 、 東北大 医学部 初代公衆衛生学講座教授 の 故瀬木三雄氏 が 全国 に 先駆け １９５９ 年 に 始め た 。
+∃ EVENT[5] EVENT[9] ORG[4] ENTITY[8] ENTITY[2] ENTITY[1] (
+ 県内(ENTITY[2]) ∧
+  の_がん登録(ENTITY[2], ENTITY[1]) ∧
+   東北大_医学部_初代公衆衛生学講座教授(ORG[4]) ∧
+    の(EVENT[5], PERSON[故瀬木三雄氏], ORG[4]) ∧
+     CD_１９５９_年(ENTITY[8]) ∧
+      past(EVENT[9]) ∧
+       全 ENTITY[6] (国(ENTITY[6]), ∃ EVENT[7] (先駆ける.0(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6])) ∧
+        始める.0_た(EVENT[9], PERSON[故瀬木三雄氏], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[8])
+
+# ::id 13_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ７１ 年 に 事業 を 県 に 移管 する 際に レジストリー を 設立 し た 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] CND_際に(
+      CD_７１_年(ENTITY[2]) ∧ 事業(ENTITY[3]) ∧ 県(ENTITY[4]) ∧
+       移管する.0(EVENT[5], ENTITY[1], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ に(EVENT[5]) = ENTITY[2],
+      ∃ EVENT[7] ENTITY[6] (レジストリー(ENTITY[6]) ∧ past(EVENT[7]) ∧ 設立する.0_た(EVENT[7], ENTITY[1], ENTITY[6]))))
+
+# ::id 14_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 現在 は 、 県対がん協会 （ 仙台市 青葉区 ） の がん登録室 が 実務 に 当たる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 現在(ENTITY[1]) ∧
+  namely_-ORG-(LOC[仙台市_青葉区], ORG[県対がん協会]) ∧
+   の_がん登録室(ORG[県対がん協会], ENTITY[2]) ∧
+    実務(ENTITY[3]) ∧
+     当たる.0(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 時間(EVENT[4]) = ENTITY[1])
+
+# ::id 15_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 瀬木氏 は 戦後 、 旧厚生省時代 に 母子健康手帳 を 考案 し た 公衆衛生 の 権威 。
+∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] TIME[3] ENTITY[7] ENTITY[1] (
+ 戦後(TIME[3]) ∧
+  旧厚生省時代(ENTITY[4]) ∧
+   母子健康手帳(ENTITY[5]) ∧
+    公衆衛生(ENTITY[7]) ∧
+     考案する.0_た(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+      is_contained_in(時間(EVENT[6]), TIME[3]) ∧ の_権威(ENTITY[7], ENTITY[1]) ∧
+      past(EVENT[6]) ∧ xxx(EVENT[8], PERSON[瀬木氏], ENTITY[1]))
+
+# ::id 16_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt レジストリー実務委員長 で 東北大大学院 医学系研究科 の 辻一郎教授 （ 公衆衛生学 ） は 「 やがて 経済成長 に 伴い 、 がん が 死亡原因 の 主流 に なる と 見込ん で い た 」 と 瀬木氏 の 高い 先見性 を 評価 する 。
+∃ SITUATION[18] ENTITY[10] ATTRIB[8] EVENT[14] EVENT[17] EVENT[11] EVENT[9] ENTITY[13] ENTITY[16] ENTITY[15] ENTITY[12] ENTITY[7] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] (
+ レジストリー実務委員長(ENTITY[3]) ∧
+  東北大大学院_医学系研究科(ENTITY[5]) ∧
+   CONJ_te(で(EVENT[4], PERSON[辻一郎教授], ENTITY[3]), の(EVENT[6], PERSON[辻一郎教授], ENTITY[5])) ∧
+    公衆衛生学(ENTITY[1]) ∧
+     namely_-PERSON-(ENTITY[1], PERSON[辻一郎教授]) ∧
+      高い(ATTRIB[8]) ∧
+       ATTRIBUTE_先見性(ATTRIB[8], ENTITY[7]) ∧ の_先見性(PERSON[瀬木氏], ENTITY[7]) ∧
+        ENTITY[10] = *pro*{ENTITY[7], ENTITY[1], ENTITY[5], ENTITY[3]} ∧
+         がん(ENTITY[12]) ∧
+          経済成長(ENTITY[13]) ∧
+           死亡原因(ENTITY[16]) ∧
+            の_主流(ENTITY[16], ENTITY[15]) ∧
+             ADV_やがて(SITUATION[18]) ∧
+              before(EVENT[9], EVENT[11]) ∧
+               評価する.0(EVENT[9], PERSON[辻一郎教授], ENTITY[7],
+                見込む.0_で_い_た(EVENT[11], ENTITY[10],
+                 FACT(SITUATION[18],
+                  伴う.0(EVENT[14], ENTITY[12]) ∧ に(EVENT[14]) = ENTITY[13] ∧
+                   成る.0(EVENT[17], ENTITY[12], ENTITY[15])))))
+
+# ::id 17_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 登録 さ れ た 情報 は 県民 の がん予防 に 役立て られ て いる だけでなく 、 乳がん検診 へ の マンモグラフィー導入 の 根拠 として 利用 さ れる など 国 の がん対策 に も 貢献 する 。
+∃ SITUATION[7] EVENT[6] EVENT[11] EVENT[14] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[13] ENTITY[12] ENTITY[1] EVENT[3] (
+ past(EVENT[3]) ∧
+  登録する.0_れ_た(EVENT[3], ENTITY[1]) ∧ 情報(ENTITY[1]) ∧
+   県民(ENTITY[5]) ∧
+    の_がん予防(ENTITY[5], ENTITY[4]) ∧
+     乳がん検診(ENTITY[10]) ∧
+      へ_の_マンモグラフィー導入(ENTITY[10], ENTITY[9]) ∧
+       の_根拠(ENTITY[9], ENTITY[8]) ∧
+        FACT(SITUATION[7], 利用する.0_れる(EVENT[11], ENTITY[1]) ∧ として(EVENT[11]) = ENTITY[8]) ∧
+         国(ENTITY[13]) ∧
+          の_がん対策(ENTITY[13], ENTITY[12]) ∧
+           CONJ_だけでなく(役立つ.0_られ_て_いる(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[4],
+            貢献する.0(EVENT[14], ENTITY[1]) ∧ に(EVENT[14]) = ENTITY[12] ∧ など(EVENT[14]) = SITUATION[7]))
+
+# ::id 18_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ２０１３ 年 １２ 月 に は 国 が 登録情報 を 一元管理 する と 定め た 「 がん登録推進法 」 が 成立 し 、 宮城 の がん登録 は 全国基準 に なっ た 。
+∃ SITUATION[4] EVENT[6] EVENT[7] EVENT[8] EVENT[11] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[10] ENTITY[1] ENTITY[9] (
+ CD_２０１３_年_１２_月(ENTITY[1]) ∧
+  の_がん登録(NORP[宮城], ENTITY[9]) ∧
+   国(ENTITY[3]) ∧
+    登録情報(ENTITY[5]) ∧
+     FACT(SITUATION[4], 一元管理する.0(EVENT[6], ENTITY[3], ENTITY[5])) ∧
+      THAT_がん登録推進法(定める.0_た(EVENT[7], ENTITY[3]) ∧ と(EVENT[7]) = SITUATION[4], ENTITY[2]) ∧
+       全国基準(ENTITY[10]) ∧
+        past(EVENT[7]) ∧
+         past(EVENT[11]) ∧
+          成立する.0(EVENT[8], ENTITY[2]) ∧ に(EVENT[8]) = ENTITY[1] ∧ 成る.0_た(EVENT[11], ENTITY[9], ENTITY[10]))
+
+# ::id 19_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ＜ 宮城県新生物レジストリー委員会 ＞
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ORG[宮城県新生物レジストリー委員会])
+
+# ::id 20_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 県内 の 主要 約３０ 病院 の 協力 を 得 て 年間 約２万 件 の 情報 を 登録 し て いる 。
+∃ ENTITY[1] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  県内(ENTITY[4]) ∧
+   の_主要_約３０_病院(ENTITY[4], ENTITY[3]) ∧
+    の_協力(ENTITY[3], ENTITY[2]) ∧
+     (CD_約２万_件(ENTITY[7]), 年間(ENTITY[7])) ∧
+      の_情報(ENTITY[7], ENTITY[6]) ∧
+       CONJ_te(得る.0_て(EVENT[5], ENTITY[1], ENTITY[2]), 登録する.0_て_いる(EVENT[8], ENTITY[1], ENTITY[6])))
+
+# ::id 21_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 県対がん協会 がん登録室 の スタッフ は ７ 人 。
+∃ EVENT[4] ENTITY[3] ORG[2] ENTITY[1] (県対がん協会_がん登録室(ORG[2]) ∧ の_スタッフ(ORG[2], ENTITY[1]) ∧ CD_７_人(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[3]))
+
+# ::id 22_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 複数病院 に 通院 する 患者 の 情報 を 整理 する 「 名寄せ 」 の 作業 など に 当たっ て いる 。
+∃ ENTITY[1] EVENT[10] EVENT[11] EVENT[12] ENTITY[9] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  複数病院(ENTITY[9]) ∧
+   通院する.0(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 患者(ENTITY[7]) ∧
+    の_情報(ENTITY[7], ENTITY[6]) ∧
+     整理する.0(EVENT[11], ENTITY[4], ENTITY[6]) ∧ 名寄せ(ENTITY[4]) ∧
+      の_作業(ENTITY[4], ENTITY[3]) ∧
+       など(ENTITY[3], ENTITY[2]) ∧ 当たる.0_て_いる(EVENT[12], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[2])
+
+# ::id 23_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ◎ 多年 にわたり 東北能楽界 の 発展向上 に 貢献
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  多年(ENTITY[2]) ∧
+   東北能楽界(ENTITY[4]) ∧
+    の_発展向上(ENTITY[4], ENTITY[3]) ∧
+     する.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ にわたり(EVENT[5]) = ENTITY[2])
+
+# ::id 24_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 能楽師・喜多流職分 佐々木宗生さん （ ７４ ）
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 能楽師.喜多流職分(ENTITY[2]) ∧
+  namely_-PERSON-(ENTITY[2], PERSON[佐々木宗生さん]) ∧
+   CD_７４(ENTITY[1]) ∧ namely_-PERSON-(ENTITY[1], PERSON[佐々木宗生さん]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = PERSON[佐々木宗生さん])
+
+# ::id 25_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 中尊寺 から 継承 に 力
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  中尊寺(ENTITY[3]) ∧
+   から_継承(ENTITY[3], ENTITY[2]) ∧
+    力(ENTITY[4]) ∧ xxx(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 26_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 岩手県 平泉町 の 中尊寺 は 代々 の 仙台藩主 の 擁護 の 下 、 喜多流 を 継承 し て き た 。
+∃ EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[1] (
+ の_xxx(NORP[岩手県_平泉町], FAC[中尊寺]) ∧
+  代々(ENTITY[4]) ∧
+   の_仙台藩主(ENTITY[4], ENTITY[3]) ∧
+    の_擁護(ENTITY[3], ENTITY[2]) ∧
+     の_下(ENTITY[2], ENTITY[1]) ∧
+      喜多流(ENTITY[5]) ∧
+       past(EVENT[6]) ∧ 継承する.0_て_き_た(EVENT[6], FAC[中尊寺], ENTITY[5]) ∧ ADV(EVENT[6]) = ENTITY[1])
+
+# ::id 27_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 神事能 を 取り仕切る シテ方 円乗院 に 生まれ 、 ３ 歳 で 稽古 を 始め た 。
+∃ ENTITY[1] EVENT[5] EVENT[6] EVENT[9] ENTITY[4] ENTITY[2] ENTITY[8] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  神事能(ENTITY[4]) ∧
+   取り仕切る.0(EVENT[5], ENTITY[2], ENTITY[4]) ∧ シテ方_円乗院(ENTITY[2]) ∧
+    CD_３_歳(ENTITY[7]) ∧
+     稽古(ENTITY[8]) ∧
+      past(EVENT[9]) ∧
+       生まれる.0(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[2] ∧
+        始める.0_た(EVENT[9], ENTITY[1], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7])
+
+# ::id 28_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 大学入学 と 同時 に 喜多流宗家 の 内弟子 と なり 、 本格的 に 修業 を 積ん だ 。
+∃ ENTITY[1] EVENT[4] EVENT[7] EVENT[9] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  大学入学(ENTITY[2]) ∧
+   同時(ENTITY[3]) ∧
+    喜多流宗家(ENTITY[6]) ∧
+     の_内弟子(ENTITY[6], ENTITY[5]) ∧
+      修業(ENTITY[8]) ∧
+       ADV_本格的_に(EVENT[9]) ∧
+        past(EVENT[9]) ∧
+         xxx(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ と(EVENT[4]) = ENTITY[2] ∧
+          成る.0(EVENT[7], ENTITY[1]) ∧ と(EVENT[7]) = ENTITY[5] ∧ 積む.0_だ(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 29_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 平泉町 の 大文字送り火 に 合わせ て １９７５ 年 に 始め た 中尊寺薪能 は 東北 の 夏 の 風物詩 として 定着 し た 。
+∃ ENTITY[3] EVENT[10] ENTITY[9] ENTITY[8] EVENT[5] EVENT[7] ENTITY[4] ENTITY[6] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  の_大文字送り火(NORP[平泉町], ENTITY[4]) ∧
+   CD_１９７５_年(ENTITY[6]) ∧
+    CONJ_te(合わせる.0_て(EVENT[5], ENTITY[3], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4],
+     始める.0_た(EVENT[7], ENTITY[3], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6]) ∧ 中尊寺薪能(ENTITY[1]) ∧
+     past(EVENT[7]) ∧
+      の_夏(NORP[東北], ENTITY[9]) ∧
+       の_風物詩(ENTITY[9], ENTITY[8]) ∧
+        past(EVENT[10]) ∧ 定着する.0_た(EVENT[10], ENTITY[1]) ∧ として(EVENT[10]) = ENTITY[8])
+
+# ::id 30_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 仙台市制 １００ 周年 の ８９ 年 、 仙台薪能 を 発起 し 、 藩祖伊達政宗 の 摺上原 （ すりあげはら ） の 戦勝 を 主題 に し た 秘曲 「 摺上 」 を 舞っ た 。
+∃ ENTITY[9] ENTITY[1] EVENT[5] EVENT[7] EVENT[12] EVENT[13] ENTITY[4] ENTITY[6] ENTITY[11] ENTITY[10] ENTITY[8] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_１００_周年(ENTITY[4]), 仙台市制(ENTITY[4])) ∧
+   (CD_８９_年(TIME[2]), の(EVENT[5], TIME[2], ENTITY[4])) ∧
+    仙台薪能(ENTITY[6]) ∧
+     ENTITY[9] = *pro*{ENTITY[1], ENTITY[6], ENTITY[4]} ∧
+      の_xxx(PERSON[藩祖伊達政宗], LOC[摺上原]) ∧
+       namely_-LOC-(ENTITY[すりあげはら], LOC[摺上原]) ∧
+        の_戦勝(LOC[摺上原], ENTITY[10]) ∧
+         主題(ENTITY[11]) ∧
+          THAT_秘曲(し_た(EVENT[12], ENTITY[9], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[11], ENTITY[8]) ∧
+           namely_-ENTITY-(WORK_OF_ART[摺上], ENTITY[8]) ∧
+            past(EVENT[12]) ∧
+             past(EVENT[13]) ∧
+              発起する.0(EVENT[7], ENTITY[1], ENTITY[6]) ∧
+               舞う.0_た(EVENT[13], ENTITY[1], ENTITY[8]) ∧ is_contained_in(時間(EVENT[13]), TIME[2]))
+
+# ::id 31_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 伊達家 に 恩 を 感じ て いる 。 仙台 の 節目 の 年 に 能楽 で お祝い し たい と 思っ た 」 と 振り返る 。
+∃ ENTITY[8] ENTITY[6] ENTITY[3] ENTITY[1] EVENT[5] EVENT[12] EVENT[7] EVENT[2] ENTITY[4] ENTITY[10] ENTITY[11] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *speaker*{ENTITY[1]} ∧
+   恩(ENTITY[4]) ∧
+    ENTITY[6] = *speaker*{ENTITY[4], ENTITY[1]} ∧
+     ENTITY[8] = *speaker*{ENTITY[6], ENTITY[4], ENTITY[1]} ∧
+      の_節目(NORP[仙台], ENTITY[10]) ∧
+       の_年(ENTITY[10], ENTITY[9]) ∧
+        能楽(ENTITY[11]) ∧
+         before(EVENT[2], EVENT[5]) ∧
+          before(EVENT[2], EVENT[7]) ∧
+           振り返る.0(EVENT[2], ENTITY[1],
+            感じる.0_て_いる(EVENT[5], ENTITY[3], ENTITY[4]) ∧ に(EVENT[5]) = PERSON[伊達家] ∧
+             思う.0_た(EVENT[7], ENTITY[6],
+              お祝いする.0_たい(EVENT[12], ENTITY[8]) ∧ で(EVENT[12]) = ENTITY[11] ∧
+               に(EVENT[12]) = ENTITY[9])))
+
+# ::id 32_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 仙台薪能 は 青葉能 に 引き継が れ 、 市民 に 親しま れ て いる 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 仙台薪能(ENTITY[1]) ∧
+  青葉能(ENTITY[2]) ∧
+   市民(ENTITY[4]) ∧ 引き継ぐ.0(EVENT[3], ENTITY[2], ENTITY[1]) ∧ 親しむ.0_て_いる(EVENT[5], ENTITY[4], ENTITY[1]))
+
+# ::id 33_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 能 に は 山川草木 を 敬う 日本人 の 心 、 感性 が 含ま れ て いる 」 と 言葉 に 力 を 込める 。
+∃ ENTITY[1] EVENT[9] EVENT[14] EVENT[4] ENTITY[3] ENTITY[8] GROUP[11] ENTITY[10] ENTITY[6] ENTITY[2] ENTITY[5] (
+ 能(ENTITY[5]) ∧
+  ENTITY[1] = *pro* ∧
+   言葉(ENTITY[3]) ∧
+    に_力(ENTITY[3], ENTITY[2]) ∧
+     山川草木(ENTITY[8]) ∧
+      日本人(ENTITY[10]) ∧
+       ∃ ENTITY[12] (心(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])) ∧
+        ∃ ENTITY[13] (感性(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11])) ∧
+        敬う.0(EVENT[9], ENTITY[6], ENTITY[8]) ∧ equals(GROUP[11], ENTITY[6]) ∧ の(ENTITY[10], ENTITY[6]) ∧
+         込める.0(EVENT[4], ENTITY[1], ENTITY[2],
+          含む.0_て_いる(EVENT[14], _, ENTITY[6]) ∧ に(EVENT[14]) = ENTITY[5]))
+
+# ::id 34_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 多く の 人 に 能 に 触れ て もらおう と 、 父 の 実高氏 （ 故人 ） が つくっ た 喜多流 の 愛好家団体 「 喜桜会 」 を 中心 に 、 宮城 、 岩手 、 秋田県 の 各地 に 出向い て 指導 する 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  CND_と(
+      多く_の ENTITY[2] (人(ENTITY[2]),
+       ∃ EVENT[5] EVENT[3] ENTITY[4] (
+        能(ENTITY[4]) ∧
+         もらおう(EVENT[3], ENTITY[1], ENTITY[2], 触れる.0_て(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4]))),
+      ∃ EVENT[12] EVENT[13] EVENT[15] EVENT[19] ENTITY[11] ENTITY[9] ENTITY[7] ENTITY[14] ENTITY[6] (
+       父(ENTITY[11]) ∧
+        の(EVENT[12], PERSON[実高氏], ENTITY[11]) ∧
+         故人(ENTITY[9]) ∧
+          namely_-PERSON-(ENTITY[9], PERSON[実高氏]) ∧
+           作る.0_た(EVENT[13], PERSON[実高氏], ENTITY[7]) ∧ 喜多流(ENTITY[7]) ∧
+            の_愛好家団体(ENTITY[7], ENTITY[6]) ∧
+             namely_-ENTITY-(ORG[喜桜会], ENTITY[6]) ∧
+              中心(ENTITY[14]) ∧
+               past(EVENT[13]) ∧
+                xxx(EVENT[15], ENTITY[1], ENTITY[6]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+                 CONJ_te(各 GROUP[17] ENTITY[16] (
+                       (is_element_of(LOC[宮城], GROUP[17]) ∧ is_element_of(LOC[岩手], GROUP[17]) ∧
+                          is_element_of(LOC[秋田県], GROUP[17]) ∧ の_地(GROUP[17], ENTITY[16])),
+                       ∃ EVENT[18] (出向く.0_て(EVENT[18], ENTITY[1]) ∧ に(EVENT[18]) = ENTITY[16])),
+                  指導する.0(EVENT[19], ENTITY[1])))))
+
+# ::id 35_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 仙台藩 が 再興 し た 中尊寺白山神社 の 能舞台 は 、 かやぶき の 格調高い 造り を 今 に 伝える 。
+∃ ATTRIB[7] EVENT[9] ENTITY[6] ENTITY[8] ENTITY[5] EVENT[3] ENTITY[4] ENTITY[1] (
+ 中尊寺白山神社(ENTITY[4]) ∧
+  再興する.0_た(EVENT[3], ORG[仙台藩], ENTITY[1]) ∧ の_能舞台(ENTITY[4], ENTITY[1]) ∧
+   past(EVENT[3]) ∧
+    かやぶき(ENTITY[6]) ∧
+     格調高い(ATTRIB[7]) ∧
+      ATTRIBUTE_造り(ATTRIB[7], ENTITY[5]) ∧ の_造り(ENTITY[6], ENTITY[5]) ∧
+       今(ENTITY[8]) ∧ 伝える.0(EVENT[9], ENTITY[1], ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[8])
+
+# ::id 36_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 舞う と 能 の 精神 を 自然 に 感じる こと が できる 。 この 能舞台 を 守る ために も 地元 の 熱い 思い を 絶やし てはいけない 」 と 語る 。
+∃ ENTITY[11] ENTITY[3] ENTITY[1] EVENT[2] ENTITY[13] (
+ 能舞台(ENTITY[13]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[3] = *speaker*{ENTITY[1]} ∧
+    ENTITY[11] = *speaker*{ENTITY[1]} ∧
+     語る.0(EVENT[2], ENTITY[1],
+      ∀ EVENT[4] CND_と(舞う.0(EVENT[4], ENTITY[3]),
+          ∃ SITUATION[5] EVENT[8] EVENT[10] ENTITY[7] ENTITY[6] (
+           能(ENTITY[7]) ∧
+            の_精神(ENTITY[7], ENTITY[6]) ∧
+             こと(SITUATION[5], 感じる.0(EVENT[8], ENTITY[3], ENTITY[6])) ∧
+              ADV_自然_に(EVENT[8]) ∧ 出来る.0(EVENT[10], ENTITY[3], SITUATION[5]))) ∧
+       MD_てはいけない(∃ ATTRIB[17] SITUATION[12] EVENT[14] EVENT[18] ENTITY[16] ENTITY[15] (
+             FACT(SITUATION[12], 守る.0(EVENT[14], ENTITY[11], ENTITY[13])) ∧
+              地元(ENTITY[16]) ∧
+               熱い(ATTRIB[17]) ∧
+                ATTRIBUTE_思い(ATTRIB[17], ENTITY[15]) ∧ の_思い(ENTITY[16], ENTITY[15]) ∧
+                 絶やす.0(EVENT[18], ENTITY[11], ENTITY[15]) ∧ ために(EVENT[18]) = SITUATION[12]))))
+
+# ::id 37_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 受賞 を 「 能 を 支える 東北 の 多く の 愛好家仲間 に 代わっ て お受け し たい 」 と 喜び 、 これ から も 能楽 の 振興 に 尽力 する こと を 誓う 。
+∃ SITUATION[13] ENTITY[12] ENTITY[4] ENTITY[1] EVENT[8] EVENT[10] EVENT[11] EVENT[3] EVENT[16] EVENT[17] ENTITY[7] ENTITY[5] ENTITY[2] ENTITY[15] ENTITY[14] (
+ ENTITY[1] = *pro* ∧
+  受賞(ENTITY[2]) ∧
+   ENTITY[4] = *speaker*{ENTITY[1], ENTITY[2]} ∧
+    能(ENTITY[7]) ∧
+     支える.0(EVENT[8], ENTITY[5], ENTITY[7]) ∧ 多く ENTITY[9] (の(NORP[東北], ENTITY[9]), の_愛好家仲間(ENTITY[9], ENTITY[5])) ∧
+      ENTITY[12] = これ{ENTITY[2], ENTITY[5], ENTITY[7]} ∧
+       能楽(ENTITY[15]) ∧
+        の_振興(ENTITY[15], ENTITY[14]) ∧
+         こと(SITUATION[13], 尽力する.0(EVENT[16], ENTITY[1]) ∧ に(EVENT[16]) = ENTITY[14]) ∧
+          喜ぶ.0(EVENT[3], ENTITY[1], ENTITY[2],
+           CONJ_te(代わる.0_て(EVENT[10], ENTITY[4]) ∧ に(EVENT[10]) = ENTITY[5],
+            お受けする.0_たい(EVENT[11], ENTITY[4]))) ∧
+           誓う.0(EVENT[17], ENTITY[1], SITUATION[13]) ∧ から(EVENT[17]) = ENTITY[12])
+
+# ::id 38_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 自身 の 目標 は 「 年 を 重ね て から 初めて 務め られる 曲 が ある 。 季節 を 選び 、 中尊寺 で 自分なり の 能 を 舞う 機会 を つくり たい 」 と 話す 。
+∃ SITUATION[16] ENTITY[13] SITUATION[7] ARB[6] ENTITY[2] EVENT[9] EVENT[10] EVENT[12] EVENT[15] EVENT[20] EVENT[21] EVENT[3] ENTITY[8] ENTITY[4] ENTITY[14] ENTITY[19] ENTITY[18] ENTITY[17] ENTITY[1] (
+ ENTITY[2] = 自身 ∧
+  の_目標(ENTITY[2], ENTITY[1]) ∧
+   ARB[6] = *arb* ∧
+    年(ENTITY[8]) ∧
+     FACT(SITUATION[7], 重ねる.0_て(EVENT[9], ENTITY[4], ENTITY[8])) ∧
+      務める.0_られる(EVENT[10], ARB[6], ENTITY[4]) ∧ te_から(EVENT[10]) = SITUATION[7] ∧ 曲(ENTITY[4]) ∧
+       ENTITY[13] = *speaker*{ENTITY[4], ENTITY[8], ENTITY[1]} ∧
+        季節(ENTITY[14]) ∧
+         中尊寺(ENTITY[17]) ∧
+          自分なり(ENTITY[19]) ∧
+           の_能(ENTITY[19], ENTITY[18]) ∧
+            機会(SITUATION[16], 舞う.0(EVENT[20], ENTITY[13], ENTITY[18]) ∧ で(EVENT[20]) = ENTITY[17]) ∧
+             ADV_初めて(EVENT[10]) ∧
+              話す.0(EVENT[3], ENTITY[1],
+               有る.0(EVENT[12], ENTITY[4]) ∧
+                選ぶ.0(EVENT[15], ENTITY[13], ENTITY[14]) ∧ 作る.0_たい(EVENT[21], ENTITY[13], SITUATION[16])))
+
+# ::id 39_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ＜ ささき・むねお ＞ １９３９ 年 岩手県 平泉町 生まれ 。
+∃ EVENT[2] LOC[1] (１９３９_年_岩手県_平泉町_生まれ(LOC[1]) ∧ xxx(EVENT[2], PERSON[ささき.むねお], LOC[1]))
+
+# ::id 40_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 国学院大卒 。
+∃ EVENT[2] ENTITY[1] (国学院大卒(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 41_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ７ 歳 で 喜多流 十四 世 宗家 の 「 隅田川 」 子方 で 初舞台 を 踏む 。
+∃ ENTITY[1] EVENT[6] ENTITY[4] ENTITY[5] WORK_OF_ART[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_７_歳(ENTITY[2]) ∧
+   (CD_十四_世(ENTITY[4]), 喜多流(ENTITY[4]) ∧ 宗家(ENTITY[4])) ∧
+    の_隅田川(ENTITY[4], WORK_OF_ART[3]) ∧ の_子方(ENTITY[4], WORK_OF_ART[3]) ∧
+     初舞台(ENTITY[5]) ∧
+      踏む.0(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = WORK_OF_ART[3] ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 42_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 喜多流職分 として ６９ 年 「 猩々乱 （ しょうじょうみだれ ） 」 、 ８２ 年 に 中尊寺 で 「 道成寺 」 を 披演 。
+∃ ENTITY[1] EVENT[4] EVENT[7] TIME[3] ENTITY[6] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  喜多流職分(ENTITY[2]) ∧
+   CD_６９_年(TIME[3]) ∧
+    namely_-WORK_OF_ART-(WORK_OF_ART[しょうじょうみだれ], WORK_OF_ART[猩々乱]) ∧
+     CD_８２_年(ENTITY[5]) ∧
+      中尊寺(ENTITY[6]) ∧
+       xxx(EVENT[4], ENTITY[1], WORK_OF_ART[猩々乱]) ∧ is_contained_in(時間(EVENT[4]), TIME[3]) ∧
+        として(EVENT[4]) = ENTITY[2] ∧
+        する.0(EVENT[7], ENTITY[1], WORK_OF_ART[道成寺]) ∧ で(EVENT[7]) = ENTITY[6] ∧
+         に(EVENT[7]) = ENTITY[5] ∧ として(EVENT[7]) = ENTITY[2])
+
+# ::id 43_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 中尊寺 の 神事能 を ３０年以上 指導 する 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ の_神事能(FAC[中尊寺], ENTITY[2]) ∧ ADV_３０年以上(EVENT[3]) ∧ 指導する.0(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 44_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ◎ 日本車いすバスケットボール選手権 で ５ 連覇 達成
+∃ EVENT[2] ENTITY[1] (CD_５_連覇(ENTITY[1]) ∧ する.0(EVENT[2], _, ENTITY[1]) ∧ で(EVENT[2]) = EVENT[日本車いすバスケットボール選手権])
+
+# ::id 45_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 宮城ＭＡＸ （ マックス ）
+∃ EVENT[1] (namely_-ORG-(ENTITY[マックス], ORG[宮城ＭＡＸ]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ORG[宮城ＭＡＸ])
+
+# ::id 46_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 実戦形式 の 練習 、 結実
+∃ EVENT[3] ENTITY[2] ENTITY[1] (実戦形式(ENTITY[2]) ∧ の_練習(ENTITY[2], ENTITY[1]) ∧ する.0(EVENT[3], ENTITY[1]))
+
+# ::id 47_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 車いすバスケットボール は 今や 障害者スポーツ の 代表格 と なっ た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 車いすバスケットボール(ENTITY[1]) ∧
+  障害者スポーツ(ENTITY[3]) ∧
+   の_代表格(ENTITY[3], ENTITY[2]) ∧
+    ADV_今や(EVENT[4]) ∧ past(EVENT[4]) ∧ 成る.0_た(EVENT[4], ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[2])
+
+# ::id 48_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt その 国内クラブチーム の 頂点 に 君臨 する 。
+∃ ENTITY[1] EVENT[4] ENTITY[2] ENTITY[3] (
+ 国内クラブチーム(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   の_頂点(ENTITY[3], ENTITY[2]) ∧ 君臨する.0(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 49_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 昨年 ５ 月 の 日本選手権 （ 東京・東京体育館 ） で 前人未到 の ５ 連覇 を 達成 し た 。
+∃ ENTITY[1] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_５_月(ENTITY[3]), 昨年(ENTITY[3])) ∧
+   の_日本選手権(ENTITY[3], ENTITY[2]) ∧
+    namely_-ENTITY-(FAC[東京.東京体育館], ENTITY[2]) ∧
+     前人未到(ENTITY[5]) ∧
+      (CD_５_連覇(ENTITY[4]), の(ENTITY[5], ENTITY[4])) ∧
+       past(EVENT[6]) ∧ 達成する.0_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 50_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt １６ チーム が 争っ た 日本選手権 は 、 準決勝 で 名古屋 の チーム と の 接戦 を 制する と 、 決勝 は 「 ＮＯＥＸＣＵＳＥ 」 （ 東京 ） に ３２点 差 で 快勝 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] ENTITY[3] ENTITY[9] (
+ 決勝(ENTITY[9]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_１６_チーム(ENTITY[3]) ∧
+    日本選手権(SITUATION[2], 争う.0_た(EVENT[4], ENTITY[3])) ∧
+     past(EVENT[4]) ∧
+      ∀ EVENT[8] ENTITY[7] ENTITY[6] ENTITY[5] CND_と(
+          準決勝(ENTITY[5]) ∧ の_チーム(NORP[名古屋], ENTITY[7]) ∧ と_の_接戦(ENTITY[7], ENTITY[6]) ∧
+           制する.0(EVENT[8], ENTITY[1], ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[5],
+          ∃ EVENT[11] ENTITY[10] (
+           namely_-ORG-(LOC[東京], ORG[ＮＯＥＸＣＵＳＥ]) ∧
+            (CD_３２点(ENTITY[10]), 差(ENTITY[10])) ∧
+             する.0(EVENT[11], ENTITY[1]) ∧ で(EVENT[11]) = ENTITY[10] ∧
+              に(EVENT[11]) = ORG[ＮＯＥＸＣＵＳＥ] ∧ TPC(EVENT[11]) = ENTITY[9] ∧
+              TPC(EVENT[11]) = SITUATION[2])))
+
+# ::id 51_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt １０ 月 の 全国障害者スポーツ大会 で も 、 チーム の 選手 が 主力 と なっ た 仙台市チーム が ３連覇 し た 。
+∃ SITUATION[2] EVENT[6] EVENT[7] ENTITY[1] ENTITY[4] ENTITY[5] ENTITY[3] (
+ CD_１０_月(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], EVENT[全国障害者スポーツ大会]) ∧
+   チーム(ENTITY[4]) ∧
+    の_選手(ENTITY[4], ENTITY[3]) ∧
+     主力(ENTITY[5]) ∧
+      仙台市チーム(SITUATION[2], 成る.0_た(EVENT[6], ENTITY[3]) ∧ と(EVENT[6]) = ENTITY[5]) ∧
+       past(EVENT[6]) ∧
+        past(EVENT[7]) ∧ 連覇する.0_た(EVENT[7], SITUATION[2]) ∧ で(EVENT[7]) = EVENT[全国障害者スポーツ大会])
+
+# ::id 52_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt メンバー は 週 ４ 日 、 仕事後 に 練習 で 汗 を 流す 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] TIME[2] ENTITY[1] (
+ メンバー(ENTITY[1]) ∧
+  (CD_４_日(TIME[2]), 週(TIME[2])) ∧
+   仕事後(ENTITY[3]) ∧
+    練習(ENTITY[4]) ∧
+     汗(ENTITY[5]) ∧
+      流す.0(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4] ∧
+       に(EVENT[6]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[6]), TIME[2]))
+
+# ::id 53_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 長年 目指し て き た の は 展開 の 速い バスケ 」 と 岩佐義明 ヘッドコーチ （ ５５ ） 。
+∃ ENTITY[5] EVENT[11] EVENT[12] ENTITY[2] ENTITY[1] ENTITY[10] ENTITY[8] EVENT[6] ENTITY[3] (
+ ENTITY[5] = *speaker*{ENTITY[1], ENTITY[2]} ∧
+  目指す.0_て_き_た(EVENT[6], ENTITY[5], ENTITY[3]) ∧ の(ENTITY[3]) ∧
+   ADV_長年(EVENT[6]) ∧
+    past(EVENT[6]) ∧
+     ヘッドコーチ(ENTITY[2]) ∧
+      namely_-PERSON-(ENTITY[2], PERSON[岩佐義明]) ∧
+       CD_５５(ENTITY[1]) ∧
+        namely_-PERSON-(ENTITY[1], PERSON[岩佐義明]) ∧
+         展開(ENTITY[10]) ∧
+          速い(EVENT[11], (ENTITY[8], ENTITY[10])) ∧ バスケ(ENTITY[8]) ∧
+           xxx(EVENT[12], ENTITY[3], ENTITY[8]))
+
+# ::id 54_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 実戦形式 の 練習 に 時間 を かけ た 結果 、 「 走る スピード に 加え 、 パス 、 シュート 、 攻守 の 切り替え の 速さ も 身 に 付い て き た 」 と 手応え を 語る 。
+∃ SITUATION[15] SITUATION[2] ENTITY[1] EVENT[6] EVENT[16] EVENT[17] EVENT[19] EVENT[8] ENTITY[4] ENTITY[5] ENTITY[3] GROUP[10] ENTITY[18] ENTITY[9] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  実戦形式(ENTITY[4]) ∧
+   の_練習(ENTITY[4], ENTITY[3]) ∧
+    時間(ENTITY[5]) ∧
+     FACT(SITUATION[2], 掛ける.0_た(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[3]) ∧
+      手応え(ENTITY[7]) ∧
+       ∃ ENTITY[11] (パス(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+        ∃ ENTITY[12] (シュート(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+        ∃ ENTITY[14] ENTITY[13] (攻守(ENTITY[14]) ∧ の_切り替え(ENTITY[14], ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+        の_速さ(GROUP[10], ENTITY[9]) ∧
+         スピード(SITUATION[15], 走る.0(EVENT[16], ENTITY[9])) ∧
+          身(ENTITY[18]) ∧
+           past(EVENT[6]) ∧
+            before(EVENT[8], EVENT[19]) ∧
+             語る.0(EVENT[8], ENTITY[1], ENTITY[7],
+              加える.0(EVENT[17], ENTITY[9]) ∧ に(EVENT[17]) = SITUATION[15] ∧
+               付く.0_て_き_た(EVENT[19], ENTITY[9]) ∧ に(EVENT[19]) = ENTITY[18]) ∧
+              結果(EVENT[8]) = SITUATION[2])
+
+# ::id 55_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ２００１ 年 宮城県 で 行わ れ た 全国障害者スポーツ大会 で ３ 位 と 躍進 し 全国 の 強豪 に 成長 。
+∃ ENTITY[1] EVENT[4] EVENT[6] EVENT[9] TIME[3] ENTITY[5] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  CD_２００１_年(TIME[3]) ∧
+   行わ_た(EVENT[4], _, ENTITY[全国障害者スポーツ大会]) ∧ で(EVENT[4]) = ENTITY[宮城県] ∧
+    is_contained_in(時間(EVENT[4]), TIME[3]) ∧
+    CD_３_位(ENTITY[5]) ∧
+     全 ENTITY[8] (国(ENTITY[8]), の_強豪(ENTITY[8], ENTITY[7])) ∧
+      past(EVENT[4]) ∧
+       躍進する.0(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[5] ∧ で(EVENT[6]) = ENTITY[全国障害者スポーツ大会] ∧
+        成長(EVENT[9], ENTITY[1], ENTITY[7]))
+
+# ::id 56_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ０４ 年 アテネ・パラリンピック は ガード 藤井新悟 （ ３５ ） 、 センター 藤本怜央 （ ３０ ） 両選手 が チーム から 初めて 日本代表 に 選ば れ た 。
+∃ EVENT[10] GROUP[2] ENTITY[9] ENTITY[8] ENTITY[1] (
+ ∃ ENTITY[4] ENTITY[3] (
+  ガード(ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[藤井新悟]) ∧
+    CD_３５(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[藤井新悟]) ∧ is_element_of(ENTITY[藤井新悟], GROUP[2])) ∧
+  ∃ ENTITY[6] ENTITY[5] ENTITY[7] (
+   藤本怜央(ENTITY[7]) ∧
+    センター(ENTITY[6]) ∧
+     namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+      CD_３０(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[5], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2])) ∧
+  equals(GROUP[2], ENTITY[1]) ∧
+   チーム(ENTITY[8]) ∧
+    日本代表(ENTITY[9]) ∧
+     ADV_初めて(EVENT[10]) ∧
+      past(EVENT[10]) ∧
+       選ば_た(EVENT[10], _, ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+        から(EVENT[10]) = ENTITY[8] ∧ TPC(EVENT[10]) = ENTITY[０４_年_アテネ.パラリンピック])
+
+# ::id 57_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 拠点 の 仙台市 宮城野区 の 体育館 は 東日本大震災 で 一時 使え なく なり 、 他 の 施設 を 渡り歩い て 練習 を 続け た 。
+∃ ENTITY[1] EVENT[8] EVENT[10] ENTITY[7] ENTITY[6] ENTITY[9] ENTITY[3] ENTITY[2] (
+ 拠点(ENTITY[3]) ∧
+  の_体育館(ENTITY[仙台市_宮城野区], ENTITY[2]) ∧ の__体育館(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    他(ENTITY[7]) ∧
+     の_施設(ENTITY[7], ENTITY[6]) ∧
+      練習(ENTITY[9]) ∧
+       past(EVENT[10]) ∧
+        ¬ ∃ EVENT[4] (ADV_一時(EVENT[4]) ∧ 使え_なり(EVENT[4], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[東日本大震災]) ∧
+         CONJ_te(渡り歩い_て(EVENT[8], ENTITY[1], ENTITY[6]), 続け_た(EVENT[10], ENTITY[1], ENTITY[9])))
+
+# ::id 58_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 翌１２ 年 の ロンドン・パラリンピック は ７ 人 の 代表選手 を 輩出 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_翌１２_年(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[ロンドン.パラリンピック]) ∧
+   CD_７_人(ENTITY[3]) ∧ の_代表選手(ENTITY[3], ENTITY[2]) ∧ 輩出(EVENT[4], ENTITY[ロンドン.パラリンピック], ENTITY[2]))
+
+# ::id 59_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt その 一人 で ガード の 佐藤聡主将 （ ３７ ） は 「 日本選手権 で は 、 どこ の チーム も 追い付け ない 連覇 の 記録 を 作り たい 」 と 話す 。
+∃ ENTITY[5] EVENT[13] EVENT[4] ENTITY[12] ENTITY[7] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[6] (
+ 一人(ENTITY[3]) ∧
+  で_xxx(ENTITY[3], ENTITY[佐藤聡主将]) ∧
+   ガード(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[佐藤聡主将]) ∧
+     CD_３７(ENTITY[1]) ∧
+      namely_-ENTITY-(ENTITY[1], ENTITY[佐藤聡主将]) ∧
+       日本選手権(ENTITY[6]) ∧
+        ENTITY[5] = *pro*{ENTITY[佐藤聡主将], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+         連覇(ENTITY[12]) ∧
+          も ENTITY[10] ENTITY[9] (の_チーム(ENTITY[10], ENTITY[9]), ¬ ∃ EVENT[11] 追い付け(EVENT[11], ENTITY[9], ENTITY[7])) ∧
+           の_記録(ENTITY[12], ENTITY[7]) ∧
+           話す(EVENT[4], ENTITY[佐藤聡主将], 作り_たい(EVENT[13], ENTITY[5], ENTITY[7]) ∧ で(EVENT[13]) = ENTITY[6]))
+
+# ::id 60_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ２ 月 に クラブチーム 世界一 を 争う 大会 に 出場 する 予定 。
+∃ SITUATION[4] SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] EVENT[8] ENTITY[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  CD_２_月(ENTITY[3]) ∧
+   クラブチーム_世界一(ENTITY[5]) ∧
+    大会(SITUATION[4], 争う(EVENT[6], ENTITY[1], ENTITY[5])) ∧
+     予定(SITUATION[2],
+      出場する.0(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = SITUATION[4] ∧ に(EVENT[7]) = ENTITY[3]) ∧
+      xxx(EVENT[8], ENTITY[1], SITUATION[2]))
+
+# ::id 61_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt プロ も 参加 する 大会 だ が 、 藤井選手 は 「 やるからには 優勝 を 目指す 」 と 向上心 を 燃やす 。
+∃ ENTITY[8] SITUATION[2] ENTITY[1] EVENT[4] EVENT[5] EVENT[10] EVENT[7] ENTITY[3] ENTITY[9] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  プロ(ENTITY[3]) ∧
+   大会(SITUATION[2], 参加する.0(EVENT[4], ENTITY[3])) ∧
+    向上心(ENTITY[6]) ∧
+     ENTITY[8] = *pro*{ENTITY[藤井選手], ENTITY[6], ENTITY[3]} ∧
+      優勝(ENTITY[9]) ∧
+       ADV_やるからには(EVENT[10]) ∧
+        CONJ_が(だ(EVENT[5], ENTITY[1], SITUATION[2]),
+         燃やす(EVENT[7], ENTITY[藤井選手], ENTITY[6], 目指す(EVENT[10], ENTITY[8], ENTITY[9]))))
+
+# ::id 62_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ＜ みやぎマックス ＞ １９８８ 年 西多賀ワークキャンパスチーム （ 仙台市 ） と 宮城作業所チーム （ 宮城県 利府町 ） が 合併 し 、 前身 の 「 宮城クラブ 」 を 結成 。
+∃ EVENT[4] EVENT[6] GROUP[2] ENTITY[5] TIME[1] (
+ CD_１９８８_年(TIME[1]) ∧
+  CONJ_と(∃ ENTITY[3] (西多賀ワークキャンパスチーム(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[仙台市], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   namely_-ENTITY-(ENTITY[宮城県_利府町], ENTITY[宮城作業所チーム]) ∧ is_element_of(ENTITY[宮城作業所チーム], GROUP[2])) ∧
+   前身(ENTITY[5]) ∧
+    の_xxx(ENTITY[5], ENTITY[宮城クラブ]) ∧
+     合併する.0(EVENT[4], GROUP[2]) ∧ 結成(EVENT[6], ENTITY[みやぎマックス], ENTITY[宮城クラブ]) ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 63_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ２００１ 年 現在 の チーム名 に 変更 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２００１_年(TIME[2]) ∧
+   現在(ENTITY[4]) ∧
+    の_チーム名(ENTITY[4], ENTITY[3]) ∧
+     変更(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[5]), TIME[2]))
+
+# ::id 64_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt パラリンピック で ０４ 年 の アテネ大会 以降 、 日本代表選手 を 輩出 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_０４_年(ENTITY[3]) ∧
+   の_アテネ大会_以降(ENTITY[3], TIME[2]) ∧
+    日本代表選手(ENTITY[4]) ∧
+     輩出(EVENT[5], ENTITY[1], ENTITY[4]) ∧ is_contained_in(時間(EVENT[5]), TIME[2]) ∧
+      で(EVENT[5]) = ENTITY[パラリンピック])
+
+# ::id 65_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 選手 は 男女 合わせ て １８ 人 （ 昨年 １２ 月 ２０ 日 現在 ） 。
+∃ EVENT[3] EVENT[6] ENTITY[2] ENTITY[4] ENTITY[5] ENTITY[1] (
+ 選手(ENTITY[1]) ∧
+  男女(ENTITY[2]) ∧
+   CD_１８_人(ENTITY[5]) ∧
+    (CD_１２_月_２０_日(ENTITY[4]), 昨年(ENTITY[4]) ∧ 現在(ENTITY[4])) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+      CONJ_te(合わせ_て(EVENT[3], ENTITY[1], ENTITY[2]), xxx(EVENT[6], ENTITY[1], ENTITY[5])))
+
+# ::id 66_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ◎ 多年 にわたり 東北 日本画壇 の 発展向上 に 寄与
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  多年(ENTITY[2]) ∧
+   東北_日本画壇(ENTITY[4]) ∧
+    の_発展向上(ENTITY[4], ENTITY[3]) ∧
+     寄与(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ にわたり(EVENT[5]) = ENTITY[2])
+
+# ::id 67_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 日本画家 能島和明さん （ ６９ ）
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 日本画家(ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[2], ENTITY[能島和明さん]) ∧
+   CD_６９(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[能島和明さん]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[能島和明さん])
+
+# ::id 68_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 命 を 削る 思い で 創作
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  命(ENTITY[3]) ∧
+   思い(SITUATION[2], 削る(EVENT[4], ENTITY[1], ENTITY[3])) ∧
+    創作(EVENT[5], ENTITY[1]) ∧ で(EVENT[5]) = SITUATION[2])
+
+# ::id 69_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 鶴岡市 の 「 黒川能 」 （ 国指定重要無形民俗文化財 ） の シテ 、 恐山 （ むつ市 ） の イタコ 、 栗駒山 の 冬木立 －。
+∃ EVENT[5] GROUP[1] (
+ ∃ ENTITY[2] (
+  の_xxx(ENTITY[鶴岡市], ENTITY[黒川能]) ∧
+   namely_-ENTITY-(ENTITY[国指定重要無形民俗文化財], ENTITY[黒川能]) ∧ の_シテ(ENTITY[黒川能], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (namely_-ENTITY-(ENTITY[むつ市], ENTITY[恐山]) ∧ の_イタコ(ENTITY[恐山], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  ∃ ENTITY[4] (の_冬木立(ENTITY[栗駒山], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[1])
+
+# ::id 70_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 日本画家 として 地位 を 築い た 今 も 、 主題 と 軸足 が 東北 の 地 から 離れ た こと は ない 。
+∃ SITUATION[7] ENTITY[3] EVENT[6] EVENT[12] EVENT[13] ENTITY[5] ENTITY[4] ENTITY[11] GROUP[8] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  日本画家(ENTITY[4]) ∧
+   地位(ENTITY[5]) ∧
+    築い_た(EVENT[6], ENTITY[3], ENTITY[5]) ∧ として(EVENT[6]) = ENTITY[4] ∧ 時間(EVENT[6]) = ENTITY[1] ∧
+     今(ENTITY[1]) ∧
+     CONJ_と(∃ ENTITY[9] (主題(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+      ∃ ENTITY[10] (軸足(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+      の_地(ENTITY[東北], ENTITY[11]) ∧
+       こと(SITUATION[7], 離れ_た(EVENT[12], GROUP[8]) ∧ から(EVENT[12]) = ENTITY[11]) ∧
+        past(EVENT[6]) ∧
+         past(EVENT[12]) ∧ ない(EVENT[13], SITUATION[7]) ∧ 時間(EVENT[13]) = ENTITY[1])
+
+# ::id 71_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 父 の 故康明さん も １９９７ 年度 の 河北文化賞 を 受賞 し た 日本画家 。
+∃ EVENT[5] EVENT[6] ENTITY[1] ENTITY[4] ENTITY[2] (
+ 父(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[故康明さん]) ∧
+   (CD_１９９７(ENTITY[4]), 年度(ENTITY[4])) ∧
+    の_xxx(ENTITY[4], ENTITY[河北文化賞]) ∧
+     受賞する.0_た(EVENT[5], ENTITY[2], ENTITY[河北文化賞]) ∧ 日本画家(ENTITY[2]) ∧
+      past(EVENT[5]) ∧ xxx(EVENT[6], ENTITY[故康明さん], ENTITY[2]))
+
+# ::id 72_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 親子 で 受賞 でき 、 大変 光栄 。 東北 に 根 を 張っ た 画家 として 、 作品 が 東北 の 方々 の 心 に 残る よう に 描い て いき たい 」 と 喜ぶ 。
+∃ SITUATION[13] ENTITY[8] ENTITY[3] ENTITY[1] EVENT[5] EVENT[6] EVENT[12] EVENT[17] EVENT[18] EVENT[2] ENTITY[4] ENTITY[11] ENTITY[16] ENTITY[15] ENTITY[14] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   親子(ENTITY[4]) ∧
+    ENTITY[8] = *pro*{ENTITY[4], ENTITY[1]} ∧
+     根(ENTITY[11]) ∧
+      張っ_た(EVENT[12], ENTITY[9], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[東北] ∧ 画家(ENTITY[9]) ∧
+       作品(ENTITY[14]) ∧
+        の_方々(ENTITY[東北], ENTITY[16]) ∧
+         の_心(ENTITY[16], ENTITY[15]) ∧
+          よう(SITUATION[13], 残る(EVENT[17], ENTITY[14]) ∧ に(EVENT[17]) = ENTITY[15]) ∧
+           ADV_大変(EVENT[6]) ∧
+            before(EVENT[2], EVENT[12]) ∧
+             喜ぶ(EVENT[2], ENTITY[1],
+              受賞する.0(EVENT[5], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[4] ∧
+               光栄(EVENT[6], ENTITY[3]) ∧
+               描い_て_いき_たい(EVENT[18], ENTITY[8]) ∧ に(EVENT[18]) = SITUATION[13] ∧
+                として(EVENT[18]) = ENTITY[9]))
+
+# ::id 73_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 多摩美大 ２ 年 で 日展 に 初入選 し て 頭角 を 現し 、 その 後 も 賞 を 重ね た 。
+∃ ENTITY[1] EVENT[3] EVENT[5] EVENT[8] ENTITY[2] ENTITY[4] ENTITY[7] ENTITY[6] (
+ 後(ENTITY[6]) ∧
+  ENTITY[1] = *pro* ∧
+   日展(ENTITY[2]) ∧
+    頭角(ENTITY[4]) ∧
+     賞(ENTITY[7]) ∧
+      past(EVENT[8]) ∧
+       CONJ_te(初入選する.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧ で(EVENT[3]) = ENTITY[多摩美大_２_年],
+        現し(EVENT[5], ENTITY[1], ENTITY[4])) ∧
+        重ね_た(EVENT[8], ENTITY[1], ENTITY[7]) ∧ 時間(EVENT[8]) = ENTITY[6])
+
+# ::id 74_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 奥深い 色彩 、 情感豊か な 風景 や 人物 は 高い 精神性 を たたえる 。
+∃ ATTRIB[8] ATTRIB[5] ATTRIB[3] EVENT[9] ENTITY[7] ENTITY[2] ENTITY[4] ENTITY[6] GROUP[1] (
+ 奥深い(ATTRIB[3]) ∧
+  ATTRIBUTE_色彩(ATTRIB[3], ENTITY[2]) ∧
+   情感豊か_な(ATTRIB[5]) ∧
+    ATTRIBUTE_風景(ATTRIB[5], ENTITY[4]) ∧
+     人物(ENTITY[6]) ∧
+      CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[4], GROUP[1]), is_element_of(ENTITY[6], GROUP[1])) ∧
+       高い(ATTRIB[8]) ∧ ATTRIBUTE_精神性(ATTRIB[8], ENTITY[7]) ∧ たたえる(EVENT[9], GROUP[1], ENTITY[7]))
+
+# ::id 75_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 源流 に ある の は 、 １ 歳 から 築館高 卒業 まで を 過ごし た 宮城県 築館町 （ 現栗原市 ） の 自然 だ 。
+∃ ENTITY[7] ENTITY[2] SITUATION[1] EVENT[4] EVENT[11] EVENT[12] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[5] (
+ ENTITY[2] = *pro* ∧
+  源流(ENTITY[3]) ∧
+   の(SITUATION[1], ある(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+    ENTITY[7] = *pro*{ENTITY[5], ENTITY[3]} ∧
+     CD_１_歳(ENTITY[9]) ∧
+      築館高_卒業(ENTITY[10]) ∧
+       まで(ENTITY[10], ENTITY[8]) ∧ から(ENTITY[9], ENTITY[8]) ∧
+        過ごし_た(EVENT[11], ENTITY[7], ENTITY[8]) ∧ LOC(EVENT[11]) = ENTITY[宮城県_築館町] ∧
+         namely_-ENTITY-(ENTITY[現栗原市], ENTITY[宮城県_築館町]) ∧
+          の_自然(ENTITY[宮城県_築館町], ENTITY[5]) ∧ past(EVENT[11]) ∧ だ(EVENT[12], SITUATION[1], ENTITY[5]))
+
+# ::id 76_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 自然 と 対話 し た こと が 今 に 生き て いる 。 東北 の 大地 が 鍛え て くれ た 」 と 振り返る 。
+∃ ENTITY[4] SITUATION[3] ENTITY[1] EVENT[6] EVENT[8] EVENT[10] EVENT[2] ENTITY[5] ENTITY[7] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   自然(ENTITY[5]) ∧
+    こと(SITUATION[3], 対話する.0_た(EVENT[6], ENTITY[4]) ∧ と(EVENT[6]) = ENTITY[5]) ∧
+     今(ENTITY[7]) ∧
+      の_大地(ENTITY[東北], ENTITY[9]) ∧
+       before(EVENT[2], EVENT[6]) ∧
+        before(EVENT[2], EVENT[8]) ∧
+         before(EVENT[2], EVENT[10]) ∧
+          振り返る(EVENT[2], ENTITY[1],
+           生き_て_いる(EVENT[8], SITUATION[3]) ∧ に(EVENT[8]) = ENTITY[7] ∧ 鍛え_て_くれ_た(EVENT[10], ENTITY[9])))
+
+# ::id 77_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt １９９６ 年 、 風景画 に 取り組む ため 、 栗原市 栗駒 に アトリエ を 構え た 。
+∃ SITUATION[3] ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[6] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１９９６_年(TIME[2]) ∧
+   風景画(ENTITY[4]) ∧
+    FACT(SITUATION[3], 取り組む(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4]) ∧
+     アトリエ(ENTITY[6]) ∧
+      past(EVENT[7]) ∧
+       構え_た(EVENT[7], ENTITY[1], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[栗原市_栗駒] ∧
+        ため(EVENT[7]) = SITUATION[3] ∧ is_contained_in(時間(EVENT[7]), TIME[2]))
+
+# ::id 78_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ６ 年間 住ん だ 後 も 折 に 触れ て 通う 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[6] EVENT[7] DEGREE[3] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  CD_６_年間(DEGREE[3]) ∧
+   FACT(SITUATION[2], 住ん_だ(EVENT[4], ENTITY[1]) ∧ MSR(EVENT[4]) = DEGREE[3]) ∧
+    折(ENTITY[5]) ∧
+     past(EVENT[4]) ∧
+      CONJ_te(触れ_て(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 後(EVENT[6]) = SITUATION[2],
+       通う(EVENT[7], ENTITY[1]) ∧ 後(EVENT[7]) = SITUATION[2]))
+
+# ::id 79_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 中央 で 活躍 できる 画家 を 育 てよう 」 と 、 仙台市 で 日本画 の 勉強会 を 開く など 後進 の 指導 に も 心 を 砕く 。
+∃ ENTITY[6] SITUATION[2] ENTITY[1] EVENT[5] EVENT[15] ENTITY[4] ENTITY[3] ENTITY[13] ENTITY[14] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  日本画(ENTITY[4]) ∧
+   の_勉強会(ENTITY[4], ENTITY[3]) ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[仙台市], ENTITY[3], ENTITY[4]} ∧
+     FACT(SITUATION[2],
+      開く(EVENT[5], ENTITY[1], ENTITY[3],
+       MD_てよう(∃ EVENT[10] EVENT[11] ENTITY[9] ENTITY[7] (
+             中央(ENTITY[9]) ∧
+              活躍する.0(EVENT[10], ENTITY[7]) ∧ で(EVENT[10]) = ENTITY[9] ∧ 画家(ENTITY[7]) ∧
+               育(EVENT[11], ENTITY[6], ENTITY[7])))) ∧ で(EVENT[5]) = ENTITY[仙台市]) ∧
+      後進(ENTITY[13]) ∧
+       の_指導(ENTITY[13], ENTITY[12]) ∧
+        心(ENTITY[14]) ∧
+         砕く(EVENT[15], ENTITY[1], ENTITY[14]) ∧ に(EVENT[15]) = ENTITY[12] ∧
+          など(EVENT[15]) = SITUATION[2])
+
+# ::id 80_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 近年 の 作品 は 鬼 の よう な 気迫 が にじむ 。
+∃ EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 近年(ENTITY[2]) ∧
+  の_作品(ENTITY[2], ENTITY[1]) ∧
+   鬼(ENTITY[6]) ∧
+    の_よう(ENTITY[6], ENTITY[5]) ∧
+     な(EVENT[7], ENTITY[3], ENTITY[5]) ∧ 気迫(ENTITY[3]) ∧
+      にじむ(EVENT[8], ENTITY[3]) ∧ TPC(EVENT[8]) = ENTITY[1])
+
+# ::id 81_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 黒川能 の シテ を 描い た ２０１３ 年 の 日本芸術院賞受賞作「鐘巻」 は 、 怨霊 と 化し た 女 の 情念 に 厳しい 創作姿勢 が 重なり合う 。
+∃ ATTRIB[11] EVENT[9] EVENT[12] ENTITY[8] ENTITY[6] ENTITY[10] ENTITY[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ の_シテ(ENTITY[黒川能], ENTITY[3]) ∧
+  描い_た(EVENT[4], ENTITY[日本芸術院賞受賞作「鐘巻」], ENTITY[3]) ∧
+   CD_２０１３_年(ENTITY[1]) ∧
+    の_xxx(ENTITY[1], ENTITY[日本芸術院賞受賞作「鐘巻」]) ∧
+     past(EVENT[4]) ∧
+      怨霊(ENTITY[8]) ∧
+       化し_た(EVENT[9], ENTITY[6]) ∧ と(EVENT[9]) = ENTITY[8] ∧ 女(ENTITY[6]) ∧
+        の_情念(ENTITY[6], ENTITY[5]) ∧
+         厳しい(ATTRIB[11]) ∧
+          ATTRIBUTE_創作姿勢(ATTRIB[11], ENTITY[10]) ∧
+           past(EVENT[9]) ∧
+            重なり合う(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[5] ∧ TPC(EVENT[12]) = ENTITY[日本芸術院賞受賞作「鐘巻」])
+
+# ::id 82_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 命 を 削る 思い で 描い て いる 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  命(ENTITY[3]) ∧
+   思い(SITUATION[2], 削る(EVENT[4], ENTITY[1], ENTITY[3])) ∧
+    描い_て_いる(EVENT[5], ENTITY[1]) ∧ で(EVENT[5]) = SITUATION[2])
+
+# ::id 83_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt あの世 を 描く の だ から 、 魂 を 取ら れる ぐらい の 覚悟 が ない と 」 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  あの世(ENTITY[2]) ∧
+   CRD_から(描く_の_だ(EVENT[3], ENTITY[1], ENTITY[2]),
+    ∀ ENTITY[7] SITUATION[6] EVENT[9] EVENT[10] ENTITY[8] ENTITY[4] CND_と(
+        ENTITY[7] = *pro*{ENTITY[4], ENTITY[1], ENTITY[2]} ∧ 魂(ENTITY[8]) ∧
+         FACT(SITUATION[6], 取ら(EVENT[9], _, ENTITY[8], ENTITY[7])) ∧
+         ぐらい SITUATION[5] (SITUATION[5] = SITUATION[6], の_覚悟(SITUATION[5], ENTITY[4])) ∧ ない(EVENT[10], ENTITY[4]),
+        ∃ EVENT[11] xxx(EVENT[11], ENTITY[1]))))
+
+# ::id 84_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 完成後 は ２ カ月 間 寝込ん だ 。
+∃ ENTITY[1] EVENT[4] DEGREE[3] ENTITY[2] (
+ 完成後(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_２_カ月(DEGREE[3]), 間(DEGREE[3])) ∧
+    past(EVENT[4]) ∧
+     寝込ん_だ(EVENT[4], ENTITY[1]) ∧ MSR(EVENT[4]) = DEGREE[3] ∧ TPC(EVENT[4]) = ENTITY[2])
+
+# ::id 85_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ８０ 歳 で 筆 を おく つもり だ 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  CD_８０_歳(ENTITY[3]) ∧
+   筆(ENTITY[4]) ∧
+    つもり(SITUATION[2], おく(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3]) ∧
+     だ(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 86_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 一 作 一 作 が 遺作 と なる 気持ち で 打ち込む 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  CD_一_作_一_作(ENTITY[3]) ∧
+   遺作(ENTITY[4]) ∧
+    気持ち(SITUATION[2], なる(EVENT[5], ENTITY[3]) ∧ と(EVENT[5]) = ENTITY[4]) ∧
+     打ち込む(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = SITUATION[2])
+
+# ::id 87_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt それ が 社会 や 人々 の 力 に なれ ば うれしい 」
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ ENTITY[2] EVENT[7] GROUP[4] ENTITY[3] CND_ば(
+      ENTITY[2] = それ{ENTITY[1]} ∧
+       CONJ_や(∃ ENTITY[5] (社会(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+        ∃ ENTITY[6] (人々(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧ の_力(GROUP[4], ENTITY[3]) ∧
+       なれ(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[3], ∃ EVENT[8] うれしい(EVENT[8], ENTITY[1])))
+
+# ::id 88_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ＜ のうじま・かずあき ＞ １９４４ 年 東京都生まれ 。
+∃ EVENT[2] ENTITY[1] (
+ (CD_１９４４_年(ENTITY[1]), 東京都生まれ(ENTITY[1])) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[のうじま.かずあき] ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 89_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 多摩美大卒 。
+∃ EVENT[2] ENTITY[1] (多摩美大卒(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 90_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 日本画家 の 故奥田元宋氏 に 師事 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  日本画家(ENTITY[2]) ∧
+   の_xxx(ENTITY[2], ENTITY[故奥田元宋氏]) ∧ 師事(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[故奥田元宋氏])
+
+# ::id 91_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ６６、７４ 年 に 河北美術展河北賞 、 ７２、７５ 年 に 日展特選 、 ２００９ 年 日展 文部科学大臣賞 、 １３ 年 日本芸術院賞 。
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (CD_６６、７４_年(ENTITY[2]) ∧ に_xxx(ENTITY[2], ENTITY[河北美術展河北賞]) ∧ is_element_of(ENTITY[河北美術展河北賞], GROUP[1])) ∧
+  ∃ ENTITY[3] (CD_７２、７５_年(ENTITY[3]) ∧ に_xxx(ENTITY[3], ENTITY[日展特選]) ∧ is_element_of(ENTITY[日展特選], GROUP[1])) ∧
+  ２００９_年(ENTITY[日展_文部科学大臣賞]) ∧ is_element_of(ENTITY[日展_文部科学大臣賞], GROUP[1]) ∧ is_element_of(ENTITY[１３_年_日本芸術院賞], GROUP[1]) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 92_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 現在 、 日展理事 、 河北美術展顧問 。
+∃ EVENT[5] GROUP[2] TIME[1] (
+ 現在(TIME[1]) ∧
+  ∃ ENTITY[3] (日展理事(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (河北美術展顧問(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[2] ∧ is_contained_in(時間(EVENT[5]), TIME[1]))
+
+# ::id 93_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ◎ 高精度画像認識 の 研究 と その 応用展開ならび に 情報技術 を 活用 し た 震災犠牲者 の 身元確認 における 功績
+∃ EVENT[9] EVENT[11] ENTITY[8] GROUP[4] ENTITY[10] ENTITY[2] ENTITY[1] ENTITY[7] (
+ 応用展開ならび(ENTITY[7]) ∧
+  CONJ_と(∃ ENTITY[6] ENTITY[5] (高精度画像認識(ENTITY[6]) ∧ の_研究(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   is_element_of(ENTITY[7], GROUP[4])) ∧
+   情報技術(ENTITY[8]) ∧
+    震災犠牲者(ENTITY[10]) ∧
+     活用する.0_た(EVENT[9], ENTITY[2], ENTITY[8]) ∧ に(EVENT[9]) = GROUP[4] ∧ の_身元確認(ENTITY[10], ENTITY[2]) ∧
+      における_功績(ENTITY[2], ENTITY[1]) ∧ past(EVENT[9]) ∧ xxx(EVENT[11]) ∧ LINK(EVENT[11]) = ENTITY[1])
+
+# ::id 94_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ／ 東北大大学院情報科学研究科 教授 青木孝文さん （ ４８ ）
+∃ EVENT[2] ENTITY[1] (CD_４８(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[東北大大学院情報科学研究科_教授_青木孝文さん]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[東北大大学院情報科学研究科_教授_青木孝文さん])
+
+# ::id 95_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 歯 を データベース化
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 歯(ENTITY[2]) ∧ データベース化(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 96_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 東日本大震災犠牲者 の 歯 の 情報 を データベース化 し 、 身元 の 特定 に つなげる システム を 開発 し た 。
+∃ ENTITY[1] EVENT[5] EVENT[10] EVENT[11] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  東日本大震災犠牲者(ENTITY[4]) ∧
+   の_歯(ENTITY[4], ENTITY[3]) ∧
+    の_情報(ENTITY[3], ENTITY[2]) ∧
+     身元(ENTITY[9]) ∧
+      の_特定(ENTITY[9], ENTITY[8]) ∧
+       つなげる(EVENT[10], ENTITY[6]) ∧ に(EVENT[10]) = ENTITY[8] ∧ システム(ENTITY[6]) ∧
+        past(EVENT[11]) ∧ データベース化する.0(EVENT[5], ENTITY[1], ENTITY[2]) ∧ 開発する.0_た(EVENT[11], ENTITY[1], ENTITY[6]))
+
+# ::id 97_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 膨大 な カルテ を １ 枚 ずつ 手作業 で 突き合わせ て 身元 を 確かめる 従来 の 手法 から スピード が 格段 に 早まっ た 。
+∃ ATTRIB[5] ENTITY[3] EVENT[9] EVENT[11] EVENT[13] ENTITY[8] ENTITY[6] ENTITY[4] ENTITY[10] ENTITY[2] ENTITY[12] ENTITY[1] (
+ 従来(ENTITY[2]) ∧
+  ENTITY[3] = *pro*{ENTITY[2]} ∧
+   膨大_な(ATTRIB[5]) ∧
+    ATTRIBUTE_カルテ(ATTRIB[5], ENTITY[4]) ∧
+     CD_１_枚(ENTITY[8]) ∧
+      ずつ ENTITY[7] (ENTITY[7] = ENTITY[8], LINK_手作業(ENTITY[7], ENTITY[6])) ∧
+       身元(ENTITY[10]) ∧
+        の_手法(ENTITY[2], ENTITY[1]) ∧
+         THAT_手法(CONJ_te(突き合わせ_て(EVENT[9], ENTITY[3], ENTITY[4]) ∧ で(EVENT[9]) = ENTITY[6],
+               確かめる(EVENT[11], ENTITY[3], ENTITY[10])), ENTITY[1]) ∧
+         スピード(ENTITY[12]) ∧
+          ADV_格段_に(EVENT[13]) ∧
+           past(EVENT[13]) ∧ 早まっ_た(EVENT[13], ENTITY[12]) ∧ から(EVENT[13]) = ENTITY[1])
+
+# ::id 98_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 専門 の 研究テーマ は 画像 を 高精度 で 認識 し 、 類似度 を 計測 する 「 位相限定相関法 」 という 技術 。
+∃ EVENT[7] EVENT[9] EVENT[10] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 専門(ENTITY[2]) ∧
+  の_研究テーマ(ENTITY[2], ENTITY[1]) ∧
+   画像(ENTITY[5]) ∧
+    高精度(ENTITY[6]) ∧
+     類似度(ENTITY[8]) ∧
+      認識する.0(EVENT[7], ENTITY[3], ENTITY[5]) ∧ で(EVENT[7]) = ENTITY[6] ∧
+       計測する.0(EVENT[9], ENTITY[3], ENTITY[8]) ∧ という_技術(ENTITY[位相限定相関法], ENTITY[3]) ∧
+       xxx(EVENT[10], ENTITY[1], ENTITY[3]))
+
+# ::id 99_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 指紋認証 や 部品 の 欠陥検査 など 応用範囲 は 広い 。
+∃ EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] GROUP[2] ENTITY[1] (
+ 指紋認証(ENTITY[3]) ∧
+  部品(ENTITY[5]) ∧
+   の_欠陥検査(ENTITY[5], ENTITY[4]) ∧
+    CONJ_や(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[4], GROUP[2])) ∧
+     など_応用範囲(GROUP[2], ENTITY[1]) ∧ 広い(EVENT[6], ENTITY[1]))
+
+# ::id 100_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 産学官連携 で 地域企業 を 巻き込ん だ 研究開発 に 力 を 入れる 。
+∃ ENTITY[1] EVENT[6] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  産学官連携(ENTITY[4]) ∧
+   地域企業(ENTITY[5]) ∧
+    巻き込ん_だ(EVENT[6], ENTITY[2], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4] ∧ 研究開発(ENTITY[2]) ∧
+     力(ENTITY[7]) ∧
+      past(EVENT[6]) ∧ 入れる(EVENT[8], ENTITY[1], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[2])
+
+# ::id 101_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 歯 から 身元不明遺体 の 個人 を 識別 する 研究 は ２００５ 年 に 始め た 。
+∃ EVENT[8] ENTITY[7] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 歯(ENTITY[3]) ∧
+  身元不明遺体(ENTITY[5]) ∧
+   の_個人(ENTITY[5], ENTITY[4]) ∧
+    識別する.0(EVENT[6], ENTITY[1], ENTITY[4]) ∧ から(EVENT[6]) = ENTITY[3] ∧ 研究(ENTITY[1]) ∧
+     CD_２００５_年(ENTITY[7]) ∧ past(EVENT[8]) ∧ 始め_た(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7])
+
+# ::id 102_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 当初 は 歯 の Ｘ線画像 を 基 に 照合 する 技術開発 を 進め た が 、 震災 で は 歯科医院 が 被災 し て Ｘ線画像 を 集め られ ない など の 理由 で 活用 でき なかっ た 。
+∃ ENTITY[9] SITUATION[3] ENTITY[1] EVENT[7] EVENT[8] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[10] (
+ 当初(ENTITY[2]) ∧
+  震災(ENTITY[10]) ∧
+   ENTITY[1] = *pro* ∧
+    歯(ENTITY[5]) ∧
+     の_Ｘ線画像(ENTITY[5], ENTITY[4]) ∧
+      基(ENTITY[6]) ∧
+       技術開発(SITUATION[3], 照合する.0(EVENT[7], ENTITY[1], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6]) ∧
+        ENTITY[9] = *pro*{ENTITY[2], ENTITY[4], ENTITY[6], ENTITY[5]} ∧
+         past(EVENT[8]) ∧
+          CONJ_が(進め_た(EVENT[8], ENTITY[1], SITUATION[3]) ∧ 時間(EVENT[8]) = ENTITY[2],
+           ¬ ∃ ENTITY[14] SITUATION[13] ENTITY[12] EVENT[16] EVENT[19] ENTITY[15] ENTITY[17] ENTITY[11] (
+                 ENTITY[14] = *pro*{ENTITY[12], ENTITY[11], ENTITY[10], ENTITY[9], ENTITY[2], ENTITY[4], ENTITY[6], ENTITY[5]} ∧
+                  歯科医院(ENTITY[15]) ∧
+                   Ｘ線画像(ENTITY[17]) ∧
+                    FACT(SITUATION[13],
+                     CONJ_te(被災する.0_て(EVENT[16], ENTITY[15]),
+                      ¬ ∃ EVENT[18] 集め_られ(EVENT[18], ENTITY[14], ENTITY[17]))) ∧
+                     など(SITUATION[13], ENTITY[12]) ∧
+                      の_理由(ENTITY[12], ENTITY[11]) ∧
+                       past(EVENT[19]) ∧
+                        活用する.0_た(EVENT[19], ENTITY[9]) ∧ で(EVENT[19]) = ENTITY[11] ∧
+                         で(EVENT[19]) = ENTITY[10])))
+
+# ::id 103_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 代わり に 考案 し た の が 遺体 の 歯科所見 を 用い た 照合方法 。
+∃ ENTITY[2] SITUATION[1] EVENT[4] EVENT[9] EVENT[10] ENTITY[3] ENTITY[8] ENTITY[7] ENTITY[5] (
+ ENTITY[2] = *pro* ∧
+  代わり(ENTITY[3]) ∧
+   の(SITUATION[1], 考案する.0_た(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+    遺体(ENTITY[8]) ∧
+     の_歯科所見(ENTITY[8], ENTITY[7]) ∧
+      用い_た(EVENT[9], ENTITY[5], ENTITY[7]) ∧ 照合方法(ENTITY[5]) ∧
+       past(EVENT[4]) ∧ past(EVENT[9]) ∧ xxx(EVENT[10], SITUATION[1], ENTITY[5]))
+
+# ::id 104_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 健全 な 歯 は 「 １ 」 、 部分修復 は 「 ２ 」 など 歯 の 状態 によって １ から ５ まで の 数字 を つけ 、 上下 の 歯 を データ化 し た 。
+∃ SITUATION[4] ENTITY[1] ATTRIB[6] EVENT[8] EVENT[11] EVENT[15] EVENT[18] ENTITY[7] ENTITY[10] ENTITY[3] ENTITY[14] ENTITY[13] ENTITY[12] ENTITY[2] ENTITY[17] ENTITY[16] ENTITY[5] ENTITY[9] (
+ 健全_な(ATTRIB[6]) ∧
+  ATTRIBUTE_歯(ATTRIB[6], ENTITY[5]) ∧
+   部分修復(ENTITY[9]) ∧
+    ENTITY[1] = *pro* ∧
+     CD_１(ENTITY[7]) ∧
+      CD_２(ENTITY[10]) ∧
+       FACT(SITUATION[4], xxx(EVENT[8], ENTITY[5], ENTITY[7]) ∧ xxx(EVENT[11], ENTITY[9], ENTITY[10])) ∧
+        など_歯(SITUATION[4], ENTITY[3]) ∧
+         の_状態(ENTITY[3], ENTITY[2]) ∧
+          CD_１(ENTITY[14]) ∧
+           (CD_５(ENTITY[13]), から(ENTITY[14], ENTITY[13])) ∧
+            まで_の_数字(ENTITY[13], ENTITY[12]) ∧
+             上下(ENTITY[17]) ∧
+              の_歯(ENTITY[17], ENTITY[16]) ∧
+               past(EVENT[18]) ∧
+                つけ(EVENT[15], ENTITY[1], ENTITY[12]) ∧ によって(EVENT[15]) = ENTITY[2] ∧
+                 データ化する.0_た(EVENT[18], ENTITY[1], ENTITY[16]))
+
+# ::id 105_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 行方不明者 の 歯科情報 も カルテ から 数字 に 書き換え 、 該当者 を 検索 できる よう に し た 。
+∃ SITUATION[7] ENTITY[1] EVENT[6] EVENT[9] EVENT[10] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  行方不明者(ENTITY[3]) ∧
+   の_歯科情報(ENTITY[3], ENTITY[2]) ∧
+    カルテ(ENTITY[4]) ∧
+     数字(ENTITY[5]) ∧
+      該当者(ENTITY[8]) ∧
+       よう(SITUATION[7], 検索する.0(EVENT[9], ENTITY[1], ENTITY[8])) ∧
+        past(EVENT[10]) ∧
+         書き換え(EVENT[6], ENTITY[1], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+          から(EVENT[6]) = ENTITY[4] ∧ し_た(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = SITUATION[7])
+
+# ::id 106_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 最後 は 歯科医 が 確認 し て 身元 の 特定 を 進め た 。
+∃ ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[2] (
+ 最後(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   歯科医(ENTITY[3]) ∧
+    身元(ENTITY[6]) ∧
+     の_特定(ENTITY[6], ENTITY[5]) ∧
+      past(EVENT[7]) ∧
+       CONJ_te(確認する.0_て(EVENT[4], ENTITY[3]) ∧ 時間(EVENT[4]) = ENTITY[2],
+        進め_た(EVENT[7], ENTITY[1], ENTITY[5]) ∧ 時間(EVENT[7]) = ENTITY[2]))
+
+# ::id 107_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 企業 と の 共同研究 で は 自分 の 技術 を そのまま 使う より 形 を 変え て 応用 する こと が 多い 。 震災 で も 現場 の 要求 に 合わせる こと が 必要 だっ た 」 と 振り返る 。
+∃ ENTITY[19] SITUATION[18] ENTITY[12] SITUATION[11] ENTITY[8] ENTITY[6] SITUATION[5] ENTITY[1] EVENT[9] EVENT[14] EVENT[15] EVENT[16] EVENT[22] EVENT[23] EVENT[2] ENTITY[7] ENTITY[13] ENTITY[21] ENTITY[20] ENTITY[17] ENTITY[4] ENTITY[3] (
+ 企業(ENTITY[4]) ∧
+  と_の_共同研究(ENTITY[4], ENTITY[3]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[6] = *pro*{ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+     ENTITY[8] = 自分{ENTITY[6], ENTITY[3], ENTITY[4], ENTITY[1]} ∧
+      の_技術(ENTITY[8], ENTITY[7]) ∧
+       FACT(SITUATION[5], 使う(EVENT[9], ENTITY[6], ENTITY[7])) ∧
+        ENTITY[12] = *pro*{ENTITY[3], ENTITY[7], ENTITY[4], ENTITY[1]} ∧
+         形(ENTITY[13]) ∧
+          こと(SITUATION[11], CONJ_te(変え_て(EVENT[14], ENTITY[12], ENTITY[13]), 応用する.0(EVENT[15], ENTITY[12]))) ∧
+           震災(ENTITY[17]) ∧
+            ENTITY[19] = *pro*{ENTITY[17], ENTITY[3], ENTITY[4], ENTITY[13], ENTITY[7], ENTITY[1]} ∧
+             現場(ENTITY[21]) ∧
+              の_要求(ENTITY[21], ENTITY[20]) ∧
+               こと(SITUATION[18], 合わせる(EVENT[22], ENTITY[19]) ∧ に(EVENT[22]) = ENTITY[20]) ∧
+                ADV_そのまま(EVENT[9]) ∧
+                 before(EVENT[2], EVENT[16]) ∧
+                  before(EVENT[2], EVENT[23]) ∧
+                   振り返る(EVENT[2], ENTITY[1],
+                    多い(EVENT[16], SITUATION[11]) ∧ より(EVENT[16]) = SITUATION[5] ∧
+                     で(EVENT[16]) = ENTITY[3] ∧
+                     必要_だっ_た(EVENT[23], SITUATION[18]) ∧ で(EVENT[23]) = ENTITY[17]))
+
+# ::id 108_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 課題 も 残る 。
+∃ EVENT[2] ENTITY[1] (課題(ENTITY[1]) ∧ 残る(EVENT[2], ENTITY[1]))
+
+# ::id 109_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 生前 の 歯科情報 の 収集 は 難しく 、 「 緊急時 に 入手 できる 仕組みづくり が 必要 」 と 訴える 。
+∃ ENTITY[8] SITUATION[7] ENTITY[1] EVENT[5] EVENT[10] EVENT[11] EVENT[6] ENTITY[9] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 生前(ENTITY[4]) ∧
+  の_歯科情報(ENTITY[4], ENTITY[3]) ∧
+   の_収集(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[8] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+      緊急時(ENTITY[9]) ∧
+       仕組みづくり(SITUATION[7], 入手する.0(EVENT[10], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9]) ∧
+        難しく(EVENT[5], ENTITY[2]) ∧ 訴える(EVENT[6], ENTITY[1], 必要(EVENT[11], SITUATION[7])))
+
+# ::id 110_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt Ｘ線画像 の 自動照合システム の 実用化 は これ から 。
+∃ ENTITY[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ Ｘ線画像(ENTITY[3]) ∧
+  の_自動照合システム(ENTITY[3], ENTITY[2]) ∧
+   の_実用化(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[4] = これ{ENTITY[2], ENTITY[3]} ∧ xxx(EVENT[5], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[4])
+
+# ::id 111_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 「 震災 を 経験 し た 自分 が やる しか ない 」 と 誓う 。
+∃ ENTITY[6] ENTITY[1] EVENT[5] EVENT[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[6] = 自分{ENTITY[1]} ∧
+   震災(ENTITY[4]) ∧
+    経験する.0_た(EVENT[5], ENTITY[6], ENTITY[4]) ∧
+     before(EVENT[2], EVENT[5]) ∧ 誓う(EVENT[2], ENTITY[1], ¬ ∃ EVENT[7] やる_しか(EVENT[7], ENTITY[6])))
+
+# ::id 112_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ＜ あおき・たかふみ ＞ １９６５ 年 石巻市生まれ 。
+∃ EVENT[2] ENTITY[1] (
+ (CD_１９６５_年(ENTITY[1]), 石巻市生まれ(ENTITY[1])) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[あおき.たかふみ] ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 113_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 東北大工学部電子工学科卒 、 ９２ 年 同大大学院 工学研究科 博士課程修了 。
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (東北大工学部電子工学科卒(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (９２_年_同大大学院_工学研究科_博士課程修了(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 114_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt ２００２ 年 から 現職 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２００２_年(ENTITY[2]) ∧
+   現職(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[3]) ∧ から(EVENT[4]) = ENTITY[2])
+
+# ::id 115_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt １２ 年 ４ 月 に 副学長就任 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ CD_１２_年_４_月(ENTITY[2]) ∧ 副学長就任(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2])
+
+# ::id 116_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 専門 は 画像情報工学 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (専門(ENTITY[1]) ∧ 画像情報工学(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 117_newswire_00073_K201401010A0F50XX00001;NJ
+# ::snt 計測自動制御学会常任理事 など を 歴任 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ など(ENTITY[計測自動制御学会常任理事], ENTITY[2]) ∧ 歴任(EVENT[3], ENTITY[1], ENTITY[2]))

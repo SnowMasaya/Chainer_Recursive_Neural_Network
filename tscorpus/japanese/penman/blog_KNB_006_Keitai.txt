@@ -1,0 +1,230 @@
+# ::id 1_blog_KNB_006_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 携帯_電話))
+
+# ::id 2_blog_KNB_006_Keitai_1-1-1-01;NJ
+# ::snt Ｊ−ＰＨＯＮＥ→ｓｏｆｔｂａｎｋ
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-Ｊ − ＰＨＯＮＥARROWRIGHTｓｏｆｔｂａｎｋ / ENTITY
+             :name ( n-2 / name
+                    :op1 "Ｊ − ＰＨＯＮＥARROWRIGHTｓｏｆｔｂａｎｋ")))
+
+# ::id 3_blog_KNB_006_Keitai_1-1-10-01;NJ
+# ::snt なんと 品切れ 。
+( EVENT-3 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 品切れ)
+      :MOD ( mod-4 / なんと))
+
+# ::id 4_blog_KNB_006_Keitai_1-1-11-01;NJ
+# ::snt 他 の 店舗 に 問い合わせ て も どこ も 品切れ 。
+( EVENT-8 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-7 / 品切れ)
+      :LOC ENTITY-6
+      :TE ( EVENT-5 / 問い合わせ_て
+             :ARG0 ENTITY-1
+             :に ( ENTITY-3 / 店舗
+                    :の ( ENTITY-4 / 他))))
+
+# ::id 5_blog_KNB_006_Keitai_1-1-12-01;NJ
+# ::snt 唯一 あっ た の が 電車 で ４０ 分 かかる 所 。
+( EVENT-11 / EVENT
+      :ARG0 ( ENTITY-1 / の
+             :LOC-of ( EVENT-5 / あっ_た
+                    :ARG0 ( ENTITY-3 / pro
+                           :pick0)
+                    :ADV ( ENTITY-4 / 唯一)
+                    :MOD ( mod-12 / past)))
+      :ARG1 ( ENTITY-6 / 所
+             :LOC-of ( EVENT-10 / かかる
+                    :ARG0 ( ENTITY-9 / CD_４０_分)
+                    :で ( ENTITY-8 / 電車))))
+
+# ::id 6_blog_KNB_006_Keitai_1-1-13-01;NJ
+# ::snt もちろん 行き まし た 。
+( EVENT-2 / 行き_まし_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :MOD ( mod-3 / もちろん)
+      :MOD ( mod-4 / past))
+
+# ::id 7_blog_KNB_006_Keitai_1-1-14-01;NJ
+# ::snt そこ まで し て 手に入れ た 携帯 だ から 前 以上 に 既に 愛着 が わい て ます ｗ
+( CRD-17 / から
+      :op1 ( EVENT-10 / だ
+             :ARG0 ( ENTITY-2 / 愛着)
+             :ARG1 ( ENTITY-3 / 携帯
+                    :ARG1-of ( CONJ-15 / CONJ_te
+                           :op1 ( EVENT-8 / し_て
+                                  :ARG0 ( ENTITY-5 / ENTITY
+                                         :namely ( PICK-13 / or
+                                                :op1 ENTITY-2
+                                                :op2 ENTITY-1))
+                                  :ARG1 ( ENTITY-6 / ENTITY
+                                         :まで ( PICK-14 / or
+                                                :op1 ENTITY-5
+                                                :op2 ENTITY-3
+                                                :op3 ENTITY-2
+                                                :op4 ENTITY-1)))
+                           :op2 ( EVENT-9 / 手に入れ_た
+                                  :ARG0 ENTITY-5
+                                  :MOD ( mod-18 / past)))))
+      :op2 ( EVENT-11 / わい_て_ます
+             :ARG0 ENTITY-2
+             :に ( ENTITY-1 / 前_以上))
+      :MOD ( mod-19 / 既に))
+
+# ::id 8_blog_KNB_006_Keitai_1-1-15-01;NJ
+# ::snt また ５ 年間 使い 続ける ぞい ！
+( EVENT-3 / 使い_続ける_ぞい
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :MSR ( DEGREE-2 / CD_５_年間)
+      :domain-of ( EXCLAMATIVE-4 / EXCLAMATIVE))
+
+# ::id 9_blog_KNB_006_Keitai_1-1-2-01;NJ
+# ::snt ８ 月 の 終わり に 機種 変 を し た 。
+( EVENT-5 / し_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-4 / 機種_変)
+      :に ( ENTITY-2 / 終わり
+             :の ( ENTITY-3 / CD_８_月))
+      :MOD ( mod-6 / past))
+
+# ::id 10_blog_KNB_006_Keitai_1-1-3-01;NJ
+# ::snt 今 まで 使っ て い た の は Ｊ−ＰＨＯＮＥ 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY-1 / の
+             :ARG1-of ( EVENT-5 / 使っ_て_い_た
+                    :ARG0 ( ENTITY-3 / speaker
+                           :pick0)
+                    :まで ( ENTITY-4 / 今)
+                    :MOD ( mod-7 / past)))
+      :ARG1 ( ENTITY-Ｊ − ＰＨＯＮＥ / ENTITY
+             :name ( n-8 / name
+                    :op1 "Ｊ − ＰＨＯＮＥ")))
+
+# ::id 11_blog_KNB_006_Keitai_1-1-4-01;NJ
+# ::snt 周り は みんな ｖｏｄａｆｏｎｅ に 変わっ てる のに Ｊ−ＰＨＯＮＥ 。
+( CRD-6 / のに (
+             :op1 ( ENTITY-3 ( ENTITY
+                           :OF ( ENTITY-2 / 周り))) ( EVENT-4 ( 変わっ_てる
+                           :ARG0 ENTITY-3
+                           :に ( ENTITY-ｖｏｄａｆｏｎｅ / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "ｖｏｄａｆｏｎｅ")))))
+      :op2 ( EVENT-5 / EVENT
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :ARG1 ( ENTITY-Ｊ − ＰＨＯＮＥ / ENTITY
+                    :name ( n-8 / name
+                           :op1 "Ｊ − ＰＨＯＮＥ"))))
+
+# ::id 12_blog_KNB_006_Keitai_1-1-5-01;NJ
+# ::snt なんと ５ 年 も の 間 使い 続け た 。
+( EVENT-4 / 使い_続け_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :MSR ( DEGREE-2 / 間
+             :の ( ENTITY-3 / CD_５_年))
+      :MOD ( mod-5 / なんと)
+      :MOD ( mod-6 / past))
+
+# ::id 13_blog_KNB_006_Keitai_1-1-6-01;NJ
+# ::snt しかし さすが に 電池 の 持ち が 悪く なっ て き た の と 、 たまたま キャンペーン を やっ て い て 無料 で 機種変 できる みたい だっ た から 愛着 の わい た 携帯 を 手放す こと に し た 。
+( EVENT-22 / し_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( SITUATION-16 / こと
+             :THAT ( EVENT-21 / 手放す
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-17 / 携帯
+                           :ARG1-of ( EVENT-20 / わい_た
+                                  :ARG0 ( ENTITY-19 / 愛着)
+                                  :MOD ( mod-34 / past)))))
+      :から ( CONJ-33 / CONJ_と
+             :op1 ( GROUP-2 / AND
+                    :op6 ( ENTITY-3 / の
+                           :THAT ( EVENT-7 / 悪く_なっ_て_き_た
+                                  :ARG0 ( ENTITY-5 / 持ち
+                                         :の ( ENTITY-6 / 電池))
+                                  :に ( ATTRIB-4 / さすが)))
+                    :op1 ATTRIB-4
+                    :op2 ENTITY-6
+                    :op3 ENTITY-5
+                    :op4 ENTITY-38
+                    :op5 ( EVENT-7 / past))
+             :op2 ( GROUP-37 / AND
+                    :op7 ( ENTITY-8 / ENTITY
+                           :THAT ( CONJ-32 / CONJ_te
+                                  :op1 ( EVENT-12 / やっ_て_い
+                                         :ARG0 ( ENTITY-10 / ENTITY
+                                                :namely ( PICK-28 / or
+                                                       :op1 ENTITY-9
+                                                       :op2 ENTITY-1))
+                                         :ARG1 ( ENTITY-11 / キャンペーン))
+                                  :op2 ( EVENT-15 / 機種変する.0_だっ_た
+                                         :ARG0 ( ENTITY-9 / ENTITY
+                                                :namely ENTITY-1)
+                                         :で ( ENTITY-14 / 無料)
+                                         :MOD ( mod-35 / past)
+                                         :domain-of ( MD-31 / MD_みたい))))
+                    :op1 ENTITY-9
+                    :op2 ENTITY-10
+                    :op3 ENTITY-11
+                    :op4 ENTITY-14
+                    :op5 ENTITY-39
+                    :op6 ( EVENT-12 / たまたま)))
+      :MOD ( mod-36 / past))
+
+# ::id 14_blog_KNB_006_Keitai_1-1-7-01;NJ
+# ::snt で 、 折角 変える なら また 長く 使える の が いい じゃ ない ？
+( CND-12 / なら (
+             :op1 ( ENTITY-1 speaker
+                    :pick0) ( EVENT-2 折角) ( EVENT-2 ( 変える
+                           :ARG0 ENTITY-1)))
+      :op2 ( EVENT-10 / いい
+             :ARG0 ( ENTITY-4 / の
+                    :ARG1-of ( EVENT-7 / 使える
+                           :ARG0 ( ENTITY-6 / speaker
+                                  :pick0)
+                           :MOD ( mod-13 / また)
+                           :MOD ( mod-14 / 長く)))))
+
+# ::id 15_blog_KNB_006_Keitai_1-1-8-01;NJ
+# ::snt すごい いい デザイン の が あっ て これ に 決め た ！！
+( CONJ-9 / CONJ_te
+      :op1 ( EVENT-5 / あっ_て
+             :ARG0 ( ENTITY-2 / ENTITY
+                    :の ( ENTITY-3 / デザイン
+                           :ATTRIBUTE ( ATTRIB-4 / すごい_いい))))
+      :op2 ( EVENT-7 / 決め_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :ARG1 ( PICK-8 / or
+                    :op1 ENTITY-2
+                    :op2 ENTITY-3)
+             :MOD ( mod-11 / past))
+      :domain-of ( EXCLAMATIVE-10 / EXCLAMATIVE))
+
+# ::id 16_blog_KNB_006_Keitai_1-1-8-02;NJ
+# ::snt しかも ロゴ が ｓｏｆｔｂａｎｋ ！！
+( EVENT-2 / EVENT
+      :ARG0 ( ENTITY-1 / ロゴ)
+      :ARG1 ( ENTITY-ｓｏｆｔｂａｎｋ / ENTITY
+             :name ( n-6 / name
+                    :op1 "ｓｏｆｔｂａｎｋ"))
+      :MOD ( mod-5 / しかも)
+      :domain-of ( EXCLAMATIVE-4 / EXCLAMATIVE))
+
+# ::id 17_blog_KNB_006_Keitai_1-1-9-01;NJ
+# ::snt と 思っ たら …
+( EVENT-2 / 思っ
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :domain-of ( MD-3 / MD_たら))

@@ -1,0 +1,133 @@
+# ::id 1_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 秋田県民会館 の 館長公募
+∃ EVENT[2] ENTITY[1] (の_館長公募(ENTITY[秋田県民会館], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt ／ ４ 月 着任 、 任期 ２ 年
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] ((CD_４_月(ENTITY[2]), 着任(ENTITY[2])) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] ((CD_２_年(ENTITY[3]), 任期(ENTITY[3])) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 3_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 秋田県総合公社 は 、 秋田市 の 県民会館 （ 大ホール １８３９ 席 ） の 館長 を 公募 する 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ の_xxx(ENTITY[秋田市], ENTITY[県民会館]) ∧
+  (CD_１８３９_席(ENTITY[2]), 大ホール(ENTITY[2])) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[県民会館]) ∧ の_館長(ENTITY[県民会館], ENTITY[1]) ∧ 公募する.0(EVENT[3], ENTITY[秋田県総合公社], ENTITY[1]))
+
+# ::id 4_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 「 東北 の 文化発展 に 寄与 できる 人 」 （ 同公社 ） を 求め て いる 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  の_文化発展(ENTITY[東北], ENTITY[4]) ∧
+   寄与する.0(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 人(ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[同公社], ENTITY[2]) ∧ 求め_て_いる(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 5_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 県 の 委託 で 会館 を 管理 し て いる 同公社 の 館長公募 は 今回 で ２ 人 目 。
+∃ EVENT[9] ENTITY[8] ENTITY[7] EVENT[6] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[1] (
+ 県(ENTITY[4]) ∧
+  の_委託(ENTITY[4], ENTITY[3]) ∧
+   会館(ENTITY[5]) ∧
+    管理する.0_て_いる(EVENT[6], ENTITY[同公社], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[3] ∧
+     の_館長公募(ENTITY[同公社], ENTITY[1]) ∧
+      今回(ENTITY[7]) ∧
+       (CD_２_人(ENTITY[8]), 目(ENTITY[8])) ∧
+        xxx(EVENT[9], ENTITY[1], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7])
+
+# ::id 6_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt ２０１１ 年度 、 コンサート や 演劇 など の 利用料収入 によって 、 県 から の 管理料 が 変動 する 仕組み に なっ た ため 、 意欲的 な 館長 の 下 で 集客力 を 高め よう と 公募制 に 切り替え た 。
+∃ ENTITY[16] SITUATION[10] ENTITY[9] SITUATION[8] ENTITY[1] EVENT[13] EVENT[14] EVENT[22] GROUP[5] ENTITY[4] ENTITY[12] ENTITY[11] ENTITY[15] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２０１１_年度(TIME[2]) ∧
+   CONJ_や(∃ ENTITY[6] (コンサート(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[7] (演劇(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    など(GROUP[5], ENTITY[4]) ∧
+     の_利用料収入(ENTITY[4], ENTITY[3]) ∧
+      ENTITY[9] = *pro*{ENTITY[1], ENTITY[3], ENTITY[4]} ∧
+       県(ENTITY[12]) ∧
+        から_の_管理料(ENTITY[12], ENTITY[11]) ∧
+         仕組み(SITUATION[10], 変動する.0(EVENT[13], ENTITY[11])) ∧
+          FACT(SITUATION[8], なっ_た(EVENT[14], ENTITY[9], SITUATION[10])) ∧
+           ENTITY[16] = *pro*{ENTITY[1], ENTITY[3], ENTITY[11], ENTITY[12], ENTITY[4]} ∧
+            THAT_公募制(MD_よう(∃ ATTRIB[19] EVENT[21] ENTITY[18] ENTITY[20] ENTITY[17] (
+                       意欲的_な(ATTRIB[19]) ∧
+                        ATTRIBUTE_館長(ATTRIB[19], ENTITY[18]) ∧
+                         の_下(ENTITY[18], ENTITY[17]) ∧
+                          集客力(ENTITY[20]) ∧
+                           高め(EVENT[21], ENTITY[16], ENTITY[20]) ∧ で(EVENT[21]) = ENTITY[17])),
+             ENTITY[15]) ∧
+             past(EVENT[14]) ∧
+              past(EVENT[22]) ∧
+               切り替え_た(EVENT[22], ENTITY[1]) ∧ に(EVENT[22]) = ENTITY[15] ∧
+                ため(EVENT[22]) = SITUATION[8] ∧ によって(EVENT[22]) = ENTITY[3] ∧
+                is_contained_in(時間(EVENT[22]), TIME[2]))
+
+# ::id 7_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 職員 約２０ 人 の トップ として 、 自主企画 の 立案 や 業務全般 の 管理 、 施設維持 など に 当たる 。
+∃ ENTITY[1] EVENT[11] ENTITY[3] GROUP[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_約２０_人(ENTITY[3]), 職員(ENTITY[3])) ∧
+   の_トップ(ENTITY[3], ENTITY[2]) ∧
+    CONJ_や(∃ ENTITY[7] ENTITY[6] (自主企画(ENTITY[7]) ∧ の_立案(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[9] ENTITY[8] (業務全般(ENTITY[9]) ∧ の_管理(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5])),
+     ∃ ENTITY[10] (施設維持(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[5]))) ∧
+     など(GROUP[5], ENTITY[4]) ∧
+      当たる(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = ENTITY[4] ∧ として(EVENT[11]) = ENTITY[2])
+
+# ::id 8_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 応募条件 は 、 音楽 や 演劇 など 芸術文化事業 の 企画・実施 の 経験 、 企業 や 自治体 で 管理職 として の ２ 年 以上 の 実務経験－ など 。
+∃ EVENT[15] GROUP[2] ENTITY[1] (
+ 応募条件(ENTITY[1]) ∧
+  ∃ GROUP[6] ENTITY[5] ENTITY[4] ENTITY[3] (
+   CONJ_や(∃ ENTITY[7] (音楽(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ENTITY[8] (演劇(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    など_芸術文化事業(GROUP[6], ENTITY[5]) ∧
+     の_企画.実施(ENTITY[5], ENTITY[4]) ∧ の_経験(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ GROUP[11] ENTITY[14] ENTITY[10] ENTITY[9] (
+    CONJ_や(∃ ENTITY[12] (企業(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+     ∃ ENTITY[13] (自治体(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+     で_管理職(GROUP[11], ENTITY[10]) ∧
+      (CD_２_年(ENTITY[14]), 以上(ENTITY[14])) ∧
+       の_実務経験－(ENTITY[14], ENTITY[9]) ∧ として_の_実務経験－(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[2])) ∧
+   xxx(EVENT[15], ENTITY[1]) ∧ など(EVENT[15]) = GROUP[2])
+
+# ::id 9_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 基本給 は 月 ２２万 円 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (基本給(ENTITY[1]) ∧ (CD_２２万_円(ENTITY[2]), 月(ENTITY[2])) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 10_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 任期 は ２０１４ 年 ４ 月 １ 日 から ２ 年間 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 任期(ENTITY[1]) ∧
+  CD_２０１４_年_４_月_１_日(ENTITY[3]) ∧
+   (CD_２_年間(ENTITY[2]), から(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 11_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 申し込み は 今月 ６～３１ 日 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (申し込み(ENTITY[1]) ∧ (CD_６～３１_日(ENTITY[2]), 今月(ENTITY[2])) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 12_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 「 職務経験 を 県民会館 の 利用促進 に どう 生かす か 」 を テーマ に し た 小論文 や 経歴書 、 面接 など で 決める 。
+∃ ENTITY[1] EVENT[18] GROUP[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ SITUATION[6] EVENT[15] ENTITY[14] ENTITY[4] (
+        か(SITUATION[6],
+         QUEST(∃ ENTITY[7] EVENT[12] ENTITY[10] ENTITY[9] ENTITY[8] ? ENTITY[11] (
+               ENTITY[7] = *pro*{ENTITY[4], ENTITY[2], ENTITY[1]} ∧
+                職務経験(ENTITY[8]) ∧
+                 県民会館(ENTITY[10]) ∧
+                  の_利用促進(ENTITY[10], ENTITY[9]) ∧
+                   ADV(ENTITY[11], EVENT[12]) ∧
+                    生かす(EVENT[12], ENTITY[7], ENTITY[8]) ∧ に(EVENT[12]) = ENTITY[9]))) ∧
+         テーマ(ENTITY[14]) ∧
+          し_た(EVENT[15], ENTITY[4], SITUATION[6], ENTITY[14]) ∧ 小論文(ENTITY[4]) ∧
+           past(EVENT[15]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[16] (経歴書(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[3])),
+   ∃ ENTITY[17] (面接(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[3]))) ∧
+   など(GROUP[3], ENTITY[2]) ∧ 決める(EVENT[18], ENTITY[1]) ∧ で(EVENT[18]) = ENTITY[2])
+
+# ::id 13_newswire_15047_K201401010A0EA0XX00004;NJ
+# ::snt 連絡先 は 同公社 ０１８（８９６）７１００ 。
+∃ EVENT[2] ENTITY[1] (連絡先(ENTITY[1]) ∧ xxx(EVENT[2], ENTITY[1], ENTITY[同公社_０１８（８９６）７１００]))

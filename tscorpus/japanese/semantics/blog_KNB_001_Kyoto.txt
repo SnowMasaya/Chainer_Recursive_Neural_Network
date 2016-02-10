@@ -1,0 +1,504 @@
+# ::id 1_blog_KNB_001_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+∃ EVENT[2] ENTITY[1] (京都_観光(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_001_Kyoto_1-1-1-01;NJ
+# ::snt 時雨殿 に 行っ た 。
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *pro* ∧ past(EVENT[2]) ∧ 行っ_た(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[時雨殿])
+
+# ::id 3_blog_KNB_001_Kyoto_1-1-1-02;NJ
+# ::snt しぐれでん
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[しぐれでん])
+
+# ::id 4_blog_KNB_001_Kyoto_1-1-10-01;NJ
+# ::snt 三条口 駅 の 近く に 自転車 を 止め て 京福電鉄 へ 。
+∃ ENTITY[1] EVENT[5] EVENT[6] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  三条口_駅(ENTITY[3]) ∧
+   の_近く(ENTITY[3], ENTITY[2]) ∧
+    自転車(ENTITY[4]) ∧
+     CONJ_te(止め_て(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2],
+      xxx(EVENT[6], ENTITY[1]) ∧ へ(EVENT[6]) = ENTITY[京福電鉄]))
+
+# ::id 5_blog_KNB_001_Kyoto_1-1-11-01;NJ
+# ::snt 路面 電車 は 昔 の 世田谷線 の 雰囲気 を 思い出さ せる もの だっ た 。
+∃ EVENT[8] EVENT[7] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 路面_電車(ENTITY[1]) ∧
+  昔(ENTITY[6]) ∧
+   の_世田谷線(ENTITY[6], ENTITY[5]) ∧
+    の_雰囲気(ENTITY[5], ENTITY[4]) ∧
+     せる(EVENT[7], ENTITY[2], ENTITY[4], 思い出さ(EVENT[8], ENTITY[4])) ∧ もの(ENTITY[2]) ∧
+      past(EVENT[9]) ∧ だっ_た(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 6_blog_KNB_001_Kyoto_1-1-11-02;NJ
+# ::snt 東京都 ・ 世田谷区
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東京都_世田谷区])
+
+# ::id 7_blog_KNB_001_Kyoto_1-1-12-01;NJ
+# ::snt 都市 部 で 通勤化 さ れ て い ない 路面 電車 は 珍しい と いえる だろう か 。
+∃ ENTITY[5] ENTITY[3] (
+ 都市_部(ENTITY[5]) ∧
+  ¬ ∃ EVENT[6] (通勤化する.0_て_い(EVENT[6], _, ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[5]) ∧ 路面_電車(ENTITY[3]) ∧
+   QUEST(∃ ARB[1] (ARB[1] = *arb* ∧ MD_だろう(∃ EVENT[7] EVENT[2] いえる(EVENT[2], ARB[1], 珍しい(EVENT[7], ENTITY[3]))))))
+
+# ::id 8_blog_KNB_001_Kyoto_1-1-13-01;NJ
+# ::snt もちろん 京福 は 観光 用 だろ う し 、 実際 明らか に 観光 客 という 乗客 を ちらほら 見かけ た 。
+∃ SITUATION[3] EVENT[6] ENTITY[5] ENTITY[4] (
+ 観光_客(ENTITY[5]) ∧
+  という_乗客(ENTITY[5], ENTITY[4]) ∧
+   ADV_もちろん(SITUATION[3]) ∧
+    ADV_実際(EVENT[6]) ∧
+     ADV_明らか_に(EVENT[6]) ∧
+      ADV_ちらほら(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        CONJ_し(FACT(SITUATION[3],
+              MD_う(∃ EVENT[2] ENTITY[1] (
+                    観光_用(ENTITY[1]) ∧
+                     past(EVENT[2]) ∧ だろ(EVENT[2], ENTITY[京福], ENTITY[1])))),
+         見かけ_た(EVENT[6], _, ENTITY[4])))
+
+# ::id 9_blog_KNB_001_Kyoto_1-1-14-01;NJ
+# ::snt 乗車 率 ９０ ％ 程度 だろ う か 。
+QUEST(∃ ENTITY[1] (
+      乗車_率(ENTITY[1]) ∧
+       MD_う(∃ EVENT[3] ENTITY[2] ((CD_９０_％(ENTITY[2]), 程度(ENTITY[2])) ∧ だろ(EVENT[3], ENTITY[1], ENTITY[2])))))
+
+# ::id 10_blog_KNB_001_Kyoto_1-1-15-01;NJ
+# ::snt 嵐山 に 着い て から は 足早 に お目当て の 時雨殿 へ 。
+∃ SITUATION[1] ENTITY[3] EVENT[2] EVENT[4] (
+ ADV_足早_に(EVENT[4]) ∧
+  FACT(SITUATION[1], 着い_て(EVENT[2]) ∧ に(EVENT[2]) = ENTITY[嵐山]) ∧
+   お目当て(ENTITY[3]) ∧
+    の_xxx(ENTITY[3], ENTITY[時雨殿]) ∧
+     xxx(EVENT[4]) ∧ へ(EVENT[4]) = ENTITY[時雨殿] ∧ te_から(EVENT[4]) = SITUATION[1])
+
+# ::id 11_blog_KNB_001_Kyoto_1-1-16-01;NJ
+# ::snt 細い 路地 を 通り 、 洒落 た 料亭 の 向こう に それ は ある 。
+∃ ATTRIB[3] ARB[1] ENTITY[9] EVENT[4] EVENT[8] EVENT[10] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[9] = それ{ENTITY[6], ENTITY[2]} ∧
+  ARB[1] = *arb* ∧
+   細い(ATTRIB[3]) ∧
+    ATTRIBUTE_路地(ATTRIB[3], ENTITY[2]) ∧
+     洒落_た(EVENT[8], ENTITY[6]) ∧ 料亭(ENTITY[6]) ∧
+      の_向こう(ENTITY[6], ENTITY[5]) ∧
+       通り(EVENT[4], ARB[1], ENTITY[2]) ∧ ある(EVENT[10], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[5])
+
+# ::id 12_blog_KNB_001_Kyoto_1-1-17-01;NJ
+# ::snt 時雨殿 の 外見 も 周り の 料亭 に 負け て い ない 程 ’高級’ で ある 。
+∃ SITUATION[2] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ の_外見(ENTITY[時雨殿], ENTITY[1]) ∧
+  周り(ENTITY[4]) ∧
+   の_料亭(ENTITY[4], ENTITY[3]) ∧
+    FACT(SITUATION[2], ¬ ∃ EVENT[5] (負け_て_い(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3])) ∧
+     ’高級’_で_ある(EVENT[6], ENTITY[1]) ∧ 程(EVENT[6]) = SITUATION[2])
+
+# ::id 13_blog_KNB_001_Kyoto_1-1-18-01;NJ
+# ::snt 時雨殿 の オフィシャル な データ について は 下 の リンク を 辿っ て もらえれ ば と 思う が 、 任天堂 資本 の 百人一首 博物館 といった ところ だろ う か 。
+∃ ATTRIB[5] ENTITY[4] (
+ オフィシャル_な(ATTRIB[5]) ∧
+  の_データ(ENTITY[時雨殿], ENTITY[4]) ∧ ATTRIBUTE_データ(ATTRIB[5], ENTITY[4]) ∧
+   QUEST(∃ ENTITY[10] ENTITY[1] EVENT[2] (
+         ENTITY[1] = *speaker* ∧
+          ENTITY[10] = *pro*{ENTITY[4], ENTITY[時雨殿]} ∧
+           CONJ_が(思う(EVENT[2], ENTITY[1],
+                 ∀ ENTITY[3] EVENT[8] ENTITY[7] ENTITY[6] CND_ば(
+                     ENTITY[3] = *pro*{ENTITY[1]} ∧ 下(ENTITY[7]) ∧ の_リンク(ENTITY[7], ENTITY[6]) ∧
+                      辿っ_て_もらえれ(EVENT[8], ENTITY[3], ENTITY[6]) ∧ について(EVENT[8]) = ENTITY[4],
+                     ∃ EVENT[9] xxx(EVENT[9]))),
+            MD_う(∃ EVENT[14] ENTITY[13] ENTITY[12] ENTITY[11] (
+                  任天堂_資本(ENTITY[13]) ∧
+                   の_百人一首_博物館(ENTITY[13], ENTITY[12]) ∧
+                    といった_ところ(ENTITY[12], ENTITY[11]) ∧ だろ(EVENT[14], ENTITY[10], ENTITY[11])))))))
+
+# ::id 14_blog_KNB_001_Kyoto_1-1-19-01;NJ
+# ::snt 「 任天堂 」 、 「 百人一首 」 どちら の 単語 も 僕 の 心 を くすぐる 。
+も ENTITY[2] GROUP[3] ENTITY[1] (
+ (の_単語(ENTITY[2], ENTITY[1]) ∧
+  ∃ ENTITY[4] (任天堂(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (百人一首(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧ equals(GROUP[3], ENTITY[2])),
+ ∃ ENTITY[7] EVENT[8] ENTITY[6] (ENTITY[7] = 僕{ENTITY[1], ENTITY[2]} ∧ の_心(ENTITY[7], ENTITY[6]) ∧ くすぐる(EVENT[8], ENTITY[1], ENTITY[6])))
+
+# ::id 15_blog_KNB_001_Kyoto_1-1-2-01;NJ
+# ::snt ２００６ 年 １１ 月 ０９ 日 。
+∃ EVENT[2] TIME[1] (CD_２００６_年_１１_月_０９_日(TIME[1]) ∧ xxx(EVENT[2]) ∧ is_contained_in(時間(EVENT[2]), TIME[1]))
+
+# ::id 16_blog_KNB_001_Kyoto_1-1-20-01;NJ
+# ::snt つい この間 山奥 で ’ 百人一首 神経衰弱 ’ を やっ た ばっかり だっ たり する 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] TIME[3] (
+ ENTITY[1] = *pro* ∧
+  ADV_つい(TIME[3]) ∧ この間(TIME[3]) ∧
+   山奥(ENTITY[4]) ∧
+    FACT(SITUATION[2],
+     やっ_た_ばっかり_だっ(EVENT[5], ENTITY[1], ENTITY[’_百人一首_神経衰弱_’]) ∧ で(EVENT[5]) = ENTITY[4] ∧
+      is_contained_in(時間(EVENT[5]), TIME[3])) ∧
+     past(EVENT[5]) ∧ する(EVENT[6], ENTITY[1]) ∧ たり(EVENT[6]) = SITUATION[2])
+
+# ::id 17_blog_KNB_001_Kyoto_1-1-21-01;NJ
+# ::snt 中 に 入る と 着物 姿 の スタッフ の 方 が ちらほら 。
+∃ ENTITY[1] EVENT[3] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *speaker* ∧
+  中(ENTITY[2]) ∧
+   着物_姿(ENTITY[6]) ∧
+    の_スタッフ(ENTITY[6], ENTITY[5]) ∧
+     の_方(ENTITY[5], ENTITY[4]) ∧
+      ADV_ちらほら(EVENT[7]) ∧
+       CRD_と(入る(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2], xxx(EVENT[7], ENTITY[4])))
+
+# ::id 18_blog_KNB_001_Kyoto_1-1-22-01;NJ
+# ::snt 最初 に 目 に 入る の は 、 「 許諾 なき 写真 禁止 」 の サイン で ある 。
+∃ ATTRIB[8] EVENT[10] ENTITY[9] ENTITY[7] ENTITY[6] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 最初(ENTITY[3]) ∧
+  目(ENTITY[4]) ∧
+   入る(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧ に(EVENT[5]) = ENTITY[3] ∧
+    の(ENTITY[1]) ∧
+    許諾(ENTITY[9]) ∧
+     comp_なき(ENTITY[9], ATTRIB[8]) ∧
+      ATTRIBUTE_写真_禁止(ATTRIB[8], ENTITY[7]) ∧ の_サイン(ENTITY[7], ENTITY[6]) ∧ で_ある(EVENT[10], ENTITY[1], ENTITY[6]))
+
+# ::id 19_blog_KNB_001_Kyoto_1-1-23-01;NJ
+# ::snt スタッフ のみ なら ず 「 他 の お客様 も 」 という ところ が 徹底 し て いる 。
+∃ ENTITY[1] EVENT[8] EVENT[9] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  スタッフ(ENTITY[4]) ∧
+   他(ENTITY[7]) ∧
+    の_お客様(ENTITY[7], ENTITY[6]) ∧
+     THAT_ところ(CONJ_te(のみ ENTITY[3] (ENTITY[3] = ENTITY[4], ¬ ∃ EVENT[5] なら(EVENT[5], _, ENTITY[3])),
+           xxx(EVENT[8], ENTITY[6])), ENTITY[2]) ∧ 徹底する.0_て_いる(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 20_blog_KNB_001_Kyoto_1-1-24-01;NJ
+# ::snt 荷物 を これ また 料亭 に あり そう な 鍵 付き の 大きな ロッカー に 入れ て 進む 。
+∃ ATTRIB[9] ENTITY[4] ENTITY[1] EVENT[10] EVENT[11] ENTITY[8] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  荷物(ENTITY[2]) ∧
+   ENTITY[4] = これ{ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+    鍵_付き(ENTITY[8]) ∧
+     大きな(ATTRIB[9]) ∧
+      MD_そう(∃ EVENT[6] ENTITY[5] (
+            料亭(ENTITY[5]) ∧
+             ADV_また(EVENT[6]) ∧ あり_な(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5])) ∧
+       ATTRIBUTE_ロッカー(ATTRIB[9], ENTITY[3]) ∧ の_ロッカー(ENTITY[8], ENTITY[3]) ∧
+       CONJ_te(入れ_て(EVENT[10], ENTITY[1], ENTITY[2]) ∧ に(EVENT[10]) = ENTITY[3],
+        進む(EVENT[11], ENTITY[1])))
+
+# ::id 21_blog_KNB_001_Kyoto_1-1-25-01;NJ
+# ::snt １ 階 は 、 時雨 ナビ を 使っ て 京都 の 町 を 探索 できる 。
+∃ ARB[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[2] (
+ CD_１_階(ENTITY[2]) ∧
+  ARB[1] = *arb* ∧
+   時雨_ナビ(ENTITY[3]) ∧
+    の_町(ENTITY[京都], ENTITY[5]) ∧
+     CONJ_te(使っ_て(EVENT[4], ARB[1], ENTITY[3]) ∧ LOC(EVENT[4]) = ENTITY[2],
+      探索する.0(EVENT[6], ARB[1], ENTITY[5]) ∧ LOC(EVENT[6]) = ENTITY[2]))
+
+# ::id 22_blog_KNB_001_Kyoto_1-1-25-02;NJ
+# ::snt 多く の 人 が レビュー を 書い て いる よう に どう 見 て も ニンテンドー ○Ｓ
+∃ SITUATION[2] ENTITY[1] EVENT[11] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  よう(SITUATION[2], 多く_の ENTITY[3] (人(ENTITY[3]), ∃ EVENT[5] ENTITY[4] (レビュー(ENTITY[4]) ∧ 書い_て_いる(EVENT[5], ENTITY[3], ENTITY[4])))) ∧
+   ∀ ARB[7] ENTITY[8] EVENT[9] CND_も((ARB[7] = *arb* ∧ ADV(ENTITY[8], EVENT[9]) ∧ 見_て(EVENT[9], ARB[7])), ニンテンドー_○Ｓ(ENTITY[6])) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[6]) ∧ に(EVENT[11]) = SITUATION[2])
+
+# ::id 23_blog_KNB_001_Kyoto_1-1-26-01;NJ
+# ::snt 時雨 ナビ の 無線 機能 を フル に 使っ て 、 京都 の 空中 散歩 を 楽しん だり 、 百人一首 取り に 参加 し たり できる 。
+∃ SITUATION[6] ARB[1] EVENT[4] EVENT[8] EVENT[10] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[9] (
+ ARB[1] = *arb* ∧
+  時雨_ナビ(ENTITY[3]) ∧
+   の_無線_機能(ENTITY[3], ENTITY[2]) ∧
+    の_空中_散歩(ENTITY[京都], ENTITY[7]) ∧
+     百人一首_取り(ENTITY[9]) ∧
+      FACT(SITUATION[6],
+       CONJ_だり(楽しん(EVENT[8], ARB[1], ENTITY[7]),
+        参加する.0(EVENT[10], ARB[1]) ∧ に(EVENT[10]) = ENTITY[9])) ∧
+       ADV_フル_に(EVENT[4]) ∧
+        CONJ_te(使っ_て(EVENT[4], ARB[1], ENTITY[2]),
+         できる(EVENT[11], ARB[1]) ∧ たり(EVENT[11]) = SITUATION[6]))
+
+# ::id 24_blog_KNB_001_Kyoto_1-1-27-01;NJ
+# ::snt 現代 技術 の 精 を 尽くし た お遊び という 印象 を 深く 受け た 。
+∃ ENTITY[5] ENTITY[1] EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   現代_技術(ENTITY[7]) ∧
+    の_精(ENTITY[7], ENTITY[6]) ∧
+     尽くし_た(EVENT[8], ENTITY[5], ENTITY[6], ENTITY[3]) ∧ お遊び(ENTITY[3]) ∧
+      という_印象(ENTITY[3], ENTITY[2]) ∧
+       past(EVENT[8]) ∧ ADV_深く(EVENT[9]) ∧ past(EVENT[9]) ∧ 受け_た(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 25_blog_KNB_001_Kyoto_1-1-28-01;NJ
+# ::snt でも 、 それだけに そこら に ある 京都 総合 紹介 と は ちょっと も そっと も 違う ダイナミックさ が 楽しい 。
+∃ ENTITY[5] ENTITY[1] EVENT[7] EVENT[10] EVENT[6] ENTITY[3] (
+ ENTITY[5] = そこら{ENTITY[1]} ∧
+  ある(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5] ∧ 京都_総合_紹介(ENTITY[3]) ∧
+   ADV_ちょっと_も(EVENT[7]) ∧
+    ADV_そっと_も(EVENT[7]) ∧
+     違う(EVENT[7], ENTITY[1]) ∧ と(EVENT[7]) = ENTITY[3] ∧ ダイナミックさ(ENTITY[1]) ∧
+      楽しい(EVENT[10], ENTITY[1]))
+
+# ::id 26_blog_KNB_001_Kyoto_1-1-29-01;NJ
+# ::snt その ほか に 、 競技 百人一首 を 体験 できる ところ も あっ て 、 ２ 回 の 挑戦 の 後 、 パーフェクト を 出し たり し て 遊ん で い た 。
+∃ SITUATION[12] ARB[5] ENTITY[1] EVENT[7] EVENT[8] EVENT[14] EVENT[15] EVENT[16] ENTITY[6] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[13] TIME[9] ENTITY[2] (
+ ほか(ENTITY[2]) ∧
+  ENTITY[1] = *speaker* ∧
+   ARB[5] = *arb* ∧
+    競技_百人一首(ENTITY[6]) ∧
+     体験する.0(EVENT[7], ARB[5], ENTITY[6]) ∧ LOC(EVENT[7]) = ENTITY[3] ∧ ところ(ENTITY[3]) ∧
+      CD_２_回(ENTITY[11]) ∧
+       の_挑戦(ENTITY[11], ENTITY[10]) ∧
+        の_後(ENTITY[10], TIME[9]) ∧
+         パーフェクト(ENTITY[13]) ∧
+          FACT(SITUATION[12], 出し(EVENT[14], ENTITY[1], ENTITY[13])) ∧
+           past(EVENT[16]) ∧
+            CONJ_te(あっ_て(EVENT[8], ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[2],
+             CONJ_te(し_て(EVENT[15], ENTITY[1]) ∧ たり(EVENT[15]) = SITUATION[12] ∧
+                   is_contained_in(時間(EVENT[15]), TIME[9]) ∧ に(EVENT[15]) = ENTITY[2],
+              遊ん_で_い_た(EVENT[16], ENTITY[1]) ∧ is_contained_in(時間(EVENT[16]), TIME[9]) ∧
+               に(EVENT[16]) = ENTITY[2])))
+
+# ::id 27_blog_KNB_001_Kyoto_1-1-29-02;NJ
+# ::snt ５ 人 抜き
+∃ EVENT[2] ENTITY[1] ((CD_５_人(ENTITY[1]), 抜き(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 28_blog_KNB_001_Kyoto_1-1-3-01;NJ
+# ::snt 時雨殿 に 行っ た 。
+∃ ENTITY[1] EVENT[2] (ENTITY[1] = *speaker* ∧ past(EVENT[2]) ∧ 行っ_た(EVENT[2], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[時雨殿])
+
+# ::id 29_blog_KNB_001_Kyoto_1-1-30-01;NJ
+# ::snt ２ 階 は 、 大きな 畳 張り に なっ て い て 、 実際 に ここ で 競技 百人一首 が 行わ れる こと も ある そう である 。
+∃ ENTITY[7] SITUATION[5] ATTRIB[3] EVENT[4] EVENT[9] ENTITY[2] ENTITY[8] ENTITY[6] ENTITY[1] (
+ CD_２_階(ENTITY[1]) ∧
+  大きな(ATTRIB[3]) ∧
+   ATTRIBUTE_畳_張り(ATTRIB[3], ENTITY[2]) ∧
+    実際(ENTITY[6]) ∧
+     ENTITY[7] = ここ{ENTITY[2], ENTITY[1]} ∧
+      競技_百人一首(ENTITY[8]) ∧
+       こと(SITUATION[5],
+        行わ(EVENT[9], _, ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7] ∧
+         に(EVENT[9]) = ENTITY[6]) ∧
+        CONJ_te(なっ_て_い(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2],
+         MD_そう(∃ EVENT[10] ある_である(EVENT[10], SITUATION[5]))))
+
+# ::id 30_blog_KNB_001_Kyoto_1-1-31-01;NJ
+# ::snt 展示 として は 、 昔々 の 百人一首 や 大戦 下 の 軍国 百人一首 が 飾ら れ て い て ファン として は 、 眺め て いる だけ で 幸せ といった ところ だろ う か 。
+∃ ENTITY[3] ENTITY[10] (
+ 展示(ENTITY[3]) ∧
+  ファン(ENTITY[10]) ∧
+   QUEST(∃ SITUATION[12] ENTITY[2] EVENT[9] EVENT[13] GROUP[4] ENTITY[1] (
+         ENTITY[2] = *pro* ∧
+          CONJ_や(∃ ENTITY[6] ENTITY[5] (昔々(ENTITY[6]) ∧ の_百人一首(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+           ∃ ENTITY[8] ENTITY[7] (大戦_下(ENTITY[8]) ∧ の_軍国_百人一首(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+           FACT(SITUATION[12], 眺め_て_いる(EVENT[13], ENTITY[2])) ∧
+            THAT_ところ(CONJ_te(飾ら_て_い(EVENT[9], _, GROUP[4]) ∧ として(EVENT[9]) = ENTITY[3],
+                  だけ SITUATION[11] (SITUATION[11] = SITUATION[12],
+                   ∃ EVENT[14] (
+                    幸せ(EVENT[14], ENTITY[2]) ∧
+                     として(EVENT[14]) = ENTITY[10] ∧ で(EVENT[14]) = SITUATION[11]))),
+             ENTITY[1]) ∧ MD_う(∃ EVENT[15] だろ(EVENT[15], _, ENTITY[1])))))
+
+# ::id 31_blog_KNB_001_Kyoto_1-1-32-01;NJ
+# ::snt お土産 コーナー に １ 枚 ４０００ 円 する 金 板 百人一首 が 販売 さ れ て い て 、 買お う か 一瞬 迷っ た が 、 いったい これ を どう し よう か ？ と 冷静 に なり 、 香り の つい た カード を ５００ 円 で 買う に とどめ た 。
+∃ SITUATION[20] SITUATION[10] ENTITY[1] EVENT[7] EVENT[8] EVENT[14] EVENT[24] EVENT[26] EVENT[27] DEGREE[6] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[23] ENTITY[25] ENTITY[21] (
+ ENTITY[1] = *speaker* ∧
+  お土産_コーナー(ENTITY[2]) ∧
+   CD_１_枚(DEGREE[6]) ∧
+    (CD_４０００_円(ENTITY[5]), MSR(DEGREE[6], ENTITY[5])) ∧
+     する(EVENT[7], ENTITY[3], ENTITY[5]) ∧ 金_板_百人一首(ENTITY[3]) ∧
+      FACT(SITUATION[10], MD_う(∃ EVENT[11] 買お(EVENT[11], ENTITY[1]))) ∧
+       香り(ENTITY[23]) ∧
+        つい_た(EVENT[24], ENTITY[23]) ∧ LOC(EVENT[24]) = ENTITY[21] ∧ カード(ENTITY[21]) ∧
+         CD_５００_円(ENTITY[25]) ∧
+          FACT(SITUATION[20], 買う(EVENT[26], ENTITY[1], ENTITY[21]) ∧ で(EVENT[26]) = ENTITY[25]) ∧
+           past(EVENT[24]) ∧
+            past(EVENT[27]) ∧
+             CONJ_が(CONJ_te(販売する.0_て_い(EVENT[8], _, ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[2],
+                   か SITUATION[9] (SITUATION[9] = SITUATION[10],
+                    ∃ EVENT[12] (
+                     ADV_一瞬(EVENT[12]) ∧
+                      past(EVENT[12]) ∧
+                       迷っ_た(EVENT[12], ENTITY[1]) ∧ LINK(EVENT[12]) = SITUATION[9]))),
+              冷静_に_なり(EVENT[14], ENTITY[1],
+               QUEST(∃ SITUATION[18] SITUATION[19] ENTITY[15] ? ENTITY[16] (
+                     ENTITY[15] = これ{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[5]} ∧
+                      ADV_いったい(SITUATION[19]) ∧
+                       is_ADV(SITUATION[18], ENTITY[16]) ∧
+                        FACT(SITUATION[19],
+                         FACT(SITUATION[18], MD_よう(∃ EVENT[17] し(EVENT[17], _, ENTITY[15]))))))) ∧
+               とどめ_た(EVENT[27], ENTITY[1]) ∧ に(EVENT[27]) = SITUATION[20]))
+
+# ::id 32_blog_KNB_001_Kyoto_1-1-33-01;NJ
+# ::snt ちなみに 金 板 の 百人一首 は １ セット で ８０万 円 で ある 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 金_板(ENTITY[2]) ∧
+  の_百人一首(ENTITY[2], ENTITY[1]) ∧
+   CD_１_セット(ENTITY[3]) ∧
+    CD_８０万_円(ENTITY[4]) ∧ で_ある(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3])
+
+# ::id 33_blog_KNB_001_Kyoto_1-1-34-01;NJ
+# ::snt 最後 で ちょっと 面食らっ た が 、 幸せ な 気分 で 時雨殿 を 出 て 、 嵐山 の 町 を ぶらぶら し て 同じく 京福 電鉄 に ゆせ れ て 帰途 に 着い た 。
+∃ SITUATION[4] ATTRIB[3] ENTITY[1] EVENT[6] EVENT[8] EVENT[10] EVENT[13] EVENT[16] ENTITY[5] ENTITY[2] ENTITY[9] ENTITY[12] ENTITY[15] (
+ ENTITY[1] = *speaker* ∧
+  幸せ_な(ATTRIB[3]) ∧
+   ATTRIBUTE_気分(ATTRIB[3], ENTITY[2]) ∧
+    最後(ENTITY[5]) ∧
+     FACT(SITUATION[4], 面食らっ_た(EVENT[6], ENTITY[時雨殿]) ∧ で(EVENT[6]) = ENTITY[5]) ∧
+      の_町(ENTITY[嵐山], ENTITY[9]) ∧
+       京福_電鉄(ENTITY[12]) ∧
+        帰途(ENTITY[15]) ∧
+         ADV_ちょっと(EVENT[6]) ∧
+          past(EVENT[6]) ∧
+           ADV_ぶらぶら(EVENT[10]) ∧
+            ADV_同じく(EVENT[13]) ∧
+             past(EVENT[16]) ∧
+              CONJ_te(出_て(EVENT[8], ENTITY[1], ENTITY[時雨殿]) ∧ が(EVENT[8]) = SITUATION[4] ∧
+                    で(EVENT[8]) = ENTITY[2], し_て(EVENT[10], ENTITY[1], ENTITY[9]),
+               ゆせ_て(EVENT[13], _, ENTITY[1]) ∧ に(EVENT[13]) = ENTITY[12],
+               着い_た(EVENT[16], ENTITY[1]) ∧ に(EVENT[16]) = ENTITY[15]))
+
+# ::id 34_blog_KNB_001_Kyoto_1-1-35-01;NJ
+# ::snt 誰 か と 嵐山 に 行っ たら 一 度 除く 価値 は ある と 思う 。
+∃ ENTITY[1] EVENT[2] (
+ ENTITY[1] = *speaker* ∧
+  思う(EVENT[2], ENTITY[1],
+   ∀ ARB[3] CND_たら(
+       ARB[3] = *arb* ∧
+        か ENTITY[4] ∃ EVENT[5] (行っ(EVENT[5], ARB[3]) ∧ に(EVENT[5]) = ENTITY[嵐山] ∧ と(EVENT[5]) = ENTITY[4]),
+       ∃ ARB[7] SITUATION[6] EVENT[9] EVENT[10] DEGREE[8] (
+        ARB[7] = *arb* ∧
+         CD_一_度(DEGREE[8]) ∧
+          価値(SITUATION[6], 除く(EVENT[9], ARB[7]) ∧ MSR(EVENT[9]) = DEGREE[8]) ∧
+           ある(EVENT[10], SITUATION[6])))))
+
+# ::id 35_blog_KNB_001_Kyoto_1-1-36-01;NJ
+# ::snt 時雨殿
+∃ EVENT[2] ENTITY[1] (時雨殿(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 36_blog_KNB_001_Kyoto_1-1-36-02;NJ
+# ::snt オフィシャルサイト
+∃ EVENT[2] ENTITY[1] (オフィシャルサイト(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 37_blog_KNB_001_Kyoto_1-1-37-01;NJ
+# ::snt ｈｔｔｐ：／／ｗｗｗ．ｓｈｉｇｕｒｅｄｅｎ．ｃｏｍ／
+∃ EVENT[2] ENTITY[1] (ｈｔｔｐ：／／ｗｗｗ．ｓｈｉｇｕｒｅｄｅｎ．ｃｏｍ／(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 38_blog_KNB_001_Kyoto_1-1-38-01;NJ
+# ::snt 純金 製 百人一首 に サッカー ボール
+∃ EVENT[4] GROUP[1] (
+ CONJ_に(∃ ENTITY[2] (純金_製_百人一首(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (サッカー_ボール(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 39_blog_KNB_001_Kyoto_1-1-38-02;NJ
+# ::snt 産経新聞
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[産経新聞])
+
+# ::id 40_blog_KNB_001_Kyoto_1-1-39-01;NJ
+# ::snt ｈｔｔｐ：／／ｗｗｗ．ｓａｎｋｅｉ．ｃｏ．ｊｐ／ｅｎａｋ／２００６／ｊｕｎ／ｋｉｊｉ／２７ｇｏｌｄｅｎＢａｌｌ．ｈｔｍｌ
+∃ EVENT[2] ENTITY[1] (ｈｔｔｐ：／／ｗｗｗ．ｓａｎｋｅｉ．ｃｏ．ｊｐ／ｅｎａｋ／２００６／ｊｕｎ／ｋｉｊｉ／２７ｇｏｌｄｅｎＢａｌｌ．ｈｔｍｌ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 41_blog_KNB_001_Kyoto_1-1-4-01;NJ
+# ::snt ８ 月 に 嵐山 へ ドクターフィシュ 体験 で 行っ た 時 に 残念 ながら 閉館 し て い た ので いつか 行こ う と 思っ て い た 場所 で ある 。
+∃ ENTITY[12] ENTITY[5] SITUATION[4] ENTITY[3] EVENT[8] EVENT[10] EVENT[11] EVENT[15] ENTITY[7] ENTITY[6] ENTITY[9] ENTITY[1] (
+ ENTITY[3] = *speaker* ∧
+  ENTITY[5] = *speaker*{ENTITY[3], ENTITY[1]} ∧
+   CD_８_月(ENTITY[6]) ∧
+    ドクターフィシュ_体験(ENTITY[7]) ∧
+     時(SITUATION[4],
+      行っ_た(EVENT[8], ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[7] ∧ へ(EVENT[8]) = ENTITY[嵐山] ∧
+       に(EVENT[8]) = ENTITY[6]) ∧
+      残念(ENTITY[9]) ∧
+       ENTITY[12] = *speaker*{ENTITY[1], ENTITY[3], ENTITY[嵐山], ENTITY[9], ENTITY[6], ENTITY[7]} ∧
+        CRD_ので(閉館する.0_て_い_た(EVENT[10], ENTITY[3]) ∧ ながら(EVENT[10]) = ENTITY[9] ∧ に(EVENT[10]) = SITUATION[4],
+         思っ_て_い_た(EVENT[11], ENTITY[3],
+          MD_う(∃ EVENT[14] ENTITY[13] (
+                いつか(ENTITY[13]) ∧
+                 行こ(EVENT[14], ENTITY[12]) ∧ ADV(EVENT[14]) = ENTITY[13]))) ∧
+          LOC(EVENT[11]) = ENTITY[1]) ∧ 場所(ENTITY[1]) ∧
+         past(EVENT[8]) ∧
+          past(EVENT[10]) ∧ past(EVENT[11]) ∧ で_ある(EVENT[15], _, ENTITY[1]))
+
+# ::id 42_blog_KNB_001_Kyoto_1-1-5-01;NJ
+# ::snt ドクターフィッシュ の 時 と は 違い 一 人 旅行 の ため 、 全く 待ち合わせ 時間 の こと など を 気 に する こと も なく ９ 時 過ぎ に 出発 する 。
+∃ SITUATION[15] ENTITY[8] SITUATION[7] ENTITY[3] ENTITY[1] EVENT[5] EVENT[13] EVENT[14] EVENT[17] ENTITY[6] ENTITY[11] ENTITY[10] ENTITY[12] ENTITY[9] ENTITY[2] ENTITY[16] ENTITY[4] (
+ の_時(ENTITY[ドクターフィッシュ], ENTITY[4]) ∧
+  ENTITY[1] = *speaker* ∧
+   ENTITY[3] = *pro*{ENTITY[2], ENTITY[1]} ∧
+    (CD_一_人(ENTITY[6]), 旅行(ENTITY[6])) ∧
+     違い(EVENT[5], ENTITY[3]) ∧ と(EVENT[5]) = ENTITY[4] ∧ の_ため(ENTITY[6], ENTITY[2]) ∧
+      ENTITY[8] = *speaker*{ENTITY[2], ENTITY[1], ENTITY[4], ENTITY[ドクターフィッシュ], ENTITY[6]} ∧
+       待ち合わせ_時間(ENTITY[11]) ∧
+        の_こと(ENTITY[11], ENTITY[10]) ∧
+         など(ENTITY[10], ENTITY[9]) ∧
+          気(ENTITY[12]) ∧
+           こと(SITUATION[7], する(EVENT[13], ENTITY[8], ENTITY[9]) ∧ に(EVENT[13]) = ENTITY[12]) ∧
+            (CD_９_時(ENTITY[16]), 過ぎ(ENTITY[16])) ∧
+             ADV_全く(SITUATION[15]) ∧
+              FACT(SITUATION[15], なく(EVENT[14], SITUATION[7]) ∧ ADV(EVENT[14]) = ENTITY[2]) ∧
+               出発する.0(EVENT[17], ENTITY[1]) ∧ に(EVENT[17]) = ENTITY[16])
+
+# ::id 43_blog_KNB_001_Kyoto_1-1-6-01;NJ
+# ::snt 嵐山 に 行く の に は 、 寮 の 前 から 嵐山 行き の バス が 都合 よく 出 て いる ので 、 それ に 乗っかれ ばいい だけ だ が 、 この 際 、 京都 の 路面 電車 も ぜひ 試し て みたい と 考え て 、 京福 電鉄 を 使う ルート で 行く こと に し た 。
+∃ ENTITY[25] SITUATION[24] SITUATION[23] ENTITY[18] ENTITY[16] ENTITY[4] SITUATION[3] ENTITY[1] EVENT[17] EVENT[27] EVENT[28] EVENT[29] ENTITY[26] TIME[19] (
+ 際(TIME[19]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[4] = *speaker*{ENTITY[1]} ∧
+    FACT(SITUATION[3],
+     MD_ばいい(∃ ENTITY[13] SITUATION[5] EVENT[6] EVENT[11] EVENT[12] EVENT[14] ENTITY[8] ENTITY[10] ENTITY[9] ENTITY[7] (
+           の(SITUATION[5], 行く(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[嵐山]) ∧
+            寮(ENTITY[8]) ∧
+             の_前(ENTITY[8], ENTITY[7]) ∧
+              の_バス(ENTITY[嵐山_行き], ENTITY[9]) ∧
+               都合(ENTITY[10]) ∧
+                ENTITY[13] = それ{ENTITY[嵐山_行き], ENTITY[7], ENTITY[9], ENTITY[10], ENTITY[8], ENTITY[嵐山], ENTITY[1]} ∧
+                 CRD_ので(よく(EVENT[11], (ENTITY[9], ENTITY[10])) ∧
+                       出_て_いる(EVENT[12], ENTITY[9]) ∧ から(EVENT[12]) = ENTITY[7],
+                  乗っかれ(EVENT[14], ENTITY[4]) ∧ に(EVENT[14]) = ENTITY[13] ∧
+                   に(EVENT[14]) = SITUATION[5])))) ∧
+     ENTITY[16] = *speaker*{ENTITY[嵐山_行き], ENTITY[嵐山]} ∧
+      ENTITY[18] = *speaker*{ENTITY[16], ENTITY[嵐山_行き], ENTITY[嵐山]} ∧
+       ENTITY[25] = *speaker*{ENTITY[16], ENTITY[京都], ENTITY[嵐山_行き], ENTITY[嵐山]} ∧
+        京福_電鉄(ENTITY[26]) ∧
+         ルート(SITUATION[24], 使う(EVENT[27], ENTITY[25], ENTITY[26])) ∧
+          こと(SITUATION[23], 行く(EVENT[28], ENTITY[16]) ∧ で(EVENT[28]) = SITUATION[24]) ∧
+           past(EVENT[29]) ∧
+            CONJ_が(だけ SITUATION[2] (SITUATION[2] = SITUATION[3], ∃ EVENT[15] だ(EVENT[15], ENTITY[1], SITUATION[2])),
+             CONJ_te(考え_て(EVENT[17], ENTITY[16],
+                   MD_みたい(∃ EVENT[21] ENTITY[20] (
+                         の_路面_電車(ENTITY[京都], ENTITY[20]) ∧
+                          ADV_ぜひ(EVENT[21]) ∧
+                           試し_て(EVENT[21], ENTITY[18], ENTITY[20]) ∧
+                            is_contained_in(時間(EVENT[21]), TIME[19])))),
+              し_た(EVENT[29], ENTITY[16]) ∧ に(EVENT[29]) = SITUATION[23])))
+
+# ::id 44_blog_KNB_001_Kyoto_1-1-7-01;NJ
+# ::snt まずは 自転車 で 三条口 へ と 向かう 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  自転車(ENTITY[2]) ∧
+   向かう(EVENT[3], ENTITY[1]) ∧ へ_と(EVENT[3]) = ENTITY[三条口] ∧ で(EVENT[3]) = ENTITY[2])
+
+# ::id 45_blog_KNB_001_Kyoto_1-1-7-02;NJ
+# ::snt 西大路 三条
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[西大路_三条])
+
+# ::id 46_blog_KNB_001_Kyoto_1-1-8-01;NJ
+# ::snt 御池 通り から ＪＲ 二条 駅 を 通る ルート で ある 。
+∃ ARB[3] SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ARB[3] = *arb* ∧
+   御池_通り(ENTITY[4]) ∧
+    ルート(SITUATION[2], 通る(EVENT[5], ARB[3], ENTITY[ＪＲ_二条_駅]) ∧ から(EVENT[5]) = ENTITY[4]) ∧
+     で_ある(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 47_blog_KNB_001_Kyoto_1-1-9-01;NJ
+# ::snt ＪＲ 二条 から の 道 は 自転車 ・ 歩行 者 道 が やたら と 大きく とっ て あり 、 昔 路面 電車 が 走っ て い た こと を 思わ せる 。
+∃ SITUATION[9] ATTRIB[5] ARB[2] ENTITY[1] EVENT[6] EVENT[12] EVENT[13] EVENT[8] ENTITY[4] ENTITY[11] TIME[10] ENTITY[3] (
+ から_の_道(ENTITY[ＪＲ_二条], ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   ARB[2] = *arb* ∧
+    自転車_歩行_者_道(ENTITY[4]) ∧
+     ADV_やたら(ATTRIB[5]) ∧
+      昔(TIME[10]) ∧
+       路面_電車(ENTITY[11]) ∧
+        こと(SITUATION[9], 走っ_て_い_た(EVENT[12], ENTITY[11]) ∧ is_contained_in(時間(EVENT[12]), TIME[10])) ∧
+         と_ADV_大きく(ATTRIB[5], EVENT[6]) ∧
+          before(EVENT[8], EVENT[12]) ∧
+           とっ_て_あり(EVENT[6], ENTITY[4]) ∧ LOC(EVENT[6]) = ENTITY[3] ∧
+            せる(EVENT[8], ENTITY[1], ARB[2], 思わ(EVENT[13], ARB[2], SITUATION[9])))

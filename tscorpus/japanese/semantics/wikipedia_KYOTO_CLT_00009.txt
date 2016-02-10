@@ -1,0 +1,747 @@
+# ::id 1_wikipedia_KYOTO_CLT_00009,1;NJ
+# ::snt 和菓子
+∃ EVENT[2] ENTITY[1] (和菓子(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_CLT_00009,2;NJ
+# ::snt 和菓子 （ わがし ） と は 、 日本 の 伝統的 製造法 で 作ら れ た 菓子 の こと 。
+∃ ATTRIB[6] EVENT[7] EVENT[8] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 和菓子(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[わがし], ENTITY[1]) ∧
+   伝統的(ATTRIB[6]) ∧
+    ATTRIBUTE_製造法(ATTRIB[6], ENTITY[5]) ∧ の_製造法(ENTITY[日本], ENTITY[5]) ∧
+     作ら_た(EVENT[7], _, ENTITY[3]) ∧ で(EVENT[7]) = ENTITY[5] ∧ 菓子(ENTITY[3]) ∧
+      の_こと(ENTITY[3], ENTITY[2]) ∧ past(EVENT[7]) ∧ xxx(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00009,3;NJ
+# ::snt 明治 時代 以降 に ヨーロッパ など から 新しく 日本 に 入っ て き た 洋菓子 に対して 使わ れる 言葉 。
+∃ ENTITY[1] EVENT[8] EVENT[10] EVENT[11] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  明治_時代_以降(ENTITY[6]) ∧
+   など(ENTITY[ヨーロッパ], ENTITY[7]) ∧
+    入っ_て_き_た(EVENT[8], ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[日本] ∧ から(EVENT[8]) = ENTITY[7] ∧
+     に(EVENT[8]) = ENTITY[6] ∧ 洋菓子(ENTITY[4]) ∧
+     使わ(EVENT[10], _, ENTITY[2]) ∧ に対して(EVENT[10]) = ENTITY[4] ∧ 言葉(ENTITY[2]) ∧
+      ADV_新しく(EVENT[8]) ∧ past(EVENT[8]) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_CLT_00009,4;NJ
+# ::snt 遣唐使 によって 伝来 し た 唐 菓子 や 、 宣教師 によって もたらさ れ た 南蛮 菓子 も 和菓子 に 含める 。
+∃ ENTITY[1] EVENT[12] ENTITY[11] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ EVENT[6] ENTITY[5] ENTITY[3] (
+        遣唐使(ENTITY[5]) ∧
+         伝来する.0_た(EVENT[6], ENTITY[3]) ∧ によって(EVENT[6]) = ENTITY[5] ∧ 唐_菓子(ENTITY[3]) ∧
+          past(EVENT[6]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ EVENT[10] ENTITY[9] ENTITY[7] (
+    宣教師(ENTITY[9]) ∧
+     もたらさ_た(EVENT[10], ENTITY[9], ENTITY[7]) ∧ 南蛮_菓子(ENTITY[7]) ∧
+      past(EVENT[10]) ∧ is_element_of(ENTITY[7], GROUP[2]))) ∧
+   和菓子(ENTITY[11]) ∧ 含める(EVENT[12], ENTITY[1], GROUP[2]) ∧ に(EVENT[12]) = ENTITY[11])
+
+# ::id 5_wikipedia_KYOTO_CLT_00009,5;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_CLT_00009,6;NJ
+# ::snt 茶道 に於ける 薄茶 （ うすちゃ 、 お薄 （ おうす ） と も ） や 濃茶 （ こいちゃ ） とともに 食べる こと も あり 、 味覚 は 元より 美的 鑑賞 に も 堪える こと を 期待 さ れ て 発達 し た 食品 。
+∃ ATTRIB[17] SITUATION[14] ENTITY[4] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[10] EVENT[11] EVENT[18] EVENT[18] EVENT[19] EVENT[20] EVENT[21] GROUP[7] ENTITY[6] ENTITY[5] ENTITY[16] ENTITY[12] ENTITY[15] (
+ 味覚(ENTITY[15]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[3] = *pro*{ENTITY[1]} ∧
+    ENTITY[4] = *pro*{ENTITY[1]} ∧
+     茶道(ENTITY[6]) ∧
+      CONJ_や(∃ ENTITY[8] (薄茶(ENTITY[8]) ∧ namely_-ENTITY-(ENTITY[うすちゃ], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+       ∃ ENTITY[9] (濃茶(ENTITY[9]) ∧ namely_-ENTITY-(ENTITY[こいちゃ], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+       equals(GROUP[7], ENTITY[5]) ∧ に於ける(ENTITY[6], ENTITY[5]) ∧
+        こと(SITUATION[2], 食べる(EVENT[10], ENTITY[3], ENTITY[4]) ∧ とともに(EVENT[10]) = ENTITY[5]) ∧
+         美的(ATTRIB[17]) ∧
+          ATTRIBUTE_鑑賞(ATTRIB[17], ENTITY[16]) ∧
+           こと(SITUATION[14],
+            CONJ_元より(堪える(EVENT[18]) ∧ LINK(EVENT[18]) = ENTITY[15],
+             堪える(EVENT[18]) ∧ LINK(EVENT[18]) = ENTITY[16])) ∧
+            CONJ_te(期待する.0_て(EVENT[19], _, SITUATION[14]), 発達する.0_た(EVENT[20], ENTITY[12])) ∧
+             食品(ENTITY[12]) ∧
+             past(EVENT[20]) ∧ あり(EVENT[11], SITUATION[2]) ∧ xxx(EVENT[21], ENTITY[1], ENTITY[12]))
+
+# ::id 7_wikipedia_KYOTO_CLT_00009,7;NJ
+# ::snt 通常 、 薄茶席 で は 干菓子 を 、 濃茶席 で は 生菓子 （ 主菓子 ） を 供 さ れる 。
+∃ ENTITY[1] EVENT[5] EVENT[9] ENTITY[3] ENTITY[6] ENTITY[7] ENTITY[2] ENTITY[4] ENTITY[8] (
+ 薄茶席(ENTITY[4]) ∧
+  濃茶席(ENTITY[8]) ∧
+   ENTITY[1] = *pro* ∧
+    通常(ENTITY[2]) ∧
+     で_干菓子(ENTITY[4], ENTITY[3]) ∧
+      で_生菓子(ENTITY[8], ENTITY[7]) ∧
+       主菓子(ENTITY[6]) ∧
+        namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+         xxx(EVENT[5], ENTITY[1], ENTITY[3]) ∧ ADV(EVENT[5]) = ENTITY[2] ∧
+          供する.0(EVENT[9], _, ENTITY[7], ENTITY[1]) ∧ ADV(EVENT[9]) = ENTITY[2])
+
+# ::id 8_wikipedia_KYOTO_CLT_00009,8;NJ
+# ::snt 日本茶 や 抹茶 の お茶請け に なる こと が 多い ため 、 甘い もの が 多い 。
+∃ ATTRIB[11] ENTITY[3] SITUATION[2] SITUATION[1] EVENT[8] EVENT[9] EVENT[12] GROUP[5] ENTITY[4] ENTITY[10] (
+ ENTITY[3] = *pro* ∧
+  CONJ_や(∃ ENTITY[6] (日本茶(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+   ∃ ENTITY[7] (抹茶(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+   の_お茶請け(GROUP[5], ENTITY[4]) ∧
+    こと(SITUATION[2], なる(EVENT[8], ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[4]) ∧
+     FACT(SITUATION[1], 多い(EVENT[9], SITUATION[2])) ∧
+      甘い(ATTRIB[11]) ∧
+       ATTRIBUTE_もの(ATTRIB[11], ENTITY[10]) ∧ 多い(EVENT[12], ENTITY[10]) ∧ ため(EVENT[12]) = SITUATION[1])
+
+# ::id 9_wikipedia_KYOTO_CLT_00009,9;NJ
+# ::snt 砂糖 、 米 、 小麦 、 小豆 など 、 比較的 少ない 種類 の 主 原料 より 、 多く の 種類 の 和菓子 が 生み出さ れる 。
+∃ ATTRIB[9] ATTRIB[8] EVENT[12] ENTITY[7] GROUP[2] ENTITY[10] ENTITY[1] (
+ ∃ ENTITY[3] (砂糖(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[4] (米(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+  ∃ ENTITY[5] (小麦(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+  ∃ ENTITY[6] (小豆(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[2])) ∧
+  比較的_少ない(ATTRIB[8]) ∧
+   ATTRIBUTE_種類(ATTRIB[8], ENTITY[7]) ∧
+    主(ATTRIB[9]) ∧
+     の_原料(ENTITY[7], ENTITY[1]) ∧ ATTRIBUTE_原料(ATTRIB[9], ENTITY[1]) ∧ など_原料(GROUP[2], ENTITY[1]) ∧
+      多く_の ENTITY[11] (種類(ENTITY[11]), の_和菓子(ENTITY[11], ENTITY[10])) ∧
+       生み出さ(EVENT[12], _, ENTITY[10]) ∧ より(EVENT[12]) = ENTITY[1])
+
+# ::id 10_wikipedia_KYOTO_CLT_00009,10;NJ
+# ::snt 原料 に 砂糖 を 用いる よう に なっ た の は 近世 以降 で あり 、 特に 和三盆 は 、 容易 に は 白砂糖 が 手 に 入ら ない 江戸 時代 、 その 独特 の 風味 と 程よい 甘さ によって 、 和菓子 の 発展 に 貢献 し た と さ れる 。
+∃ SITUATION[17] SITUATION[27] SITUATION[11] SITUATION[3] ENTITY[2] SITUATION[1] EVENT[6] EVENT[7] EVENT[9] EVENT[25] EVENT[26] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[14] ENTITY[24] ENTITY[23] GROUP[18] TIME[12] ENTITY[20] ENTITY[19] ENTITY[10] (
+ 和三盆(ENTITY[10]) ∧
+  独特(ENTITY[20]) ∧
+   の_風味(ENTITY[20], ENTITY[19]) ∧
+    ENTITY[2] = *pro* ∧
+     原料(ENTITY[4]) ∧
+      砂糖(ENTITY[5]) ∧
+       よう(SITUATION[3], 用いる(EVENT[6], ENTITY[2], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4]) ∧
+        の(SITUATION[1], なっ_た(EVENT[7], ENTITY[2], SITUATION[3])) ∧
+         近世_以降(ENTITY[8]) ∧
+          白砂糖(ENTITY[14]) ∧
+           FACT(SITUATION[17],
+            ¬ ∃ EVENT[16] ENTITY[15] (
+                  手(ENTITY[15]) ∧
+                   入ら(EVENT[16], ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[15] ∧
+                    is_contained_in(時間(EVENT[16]), TIME[12]))) ∧ 江戸_時代(TIME[12]) ∧
+            CONJ_と(is_element_of(ENTITY[19], GROUP[18]),
+             ∃ ATTRIB[22] ENTITY[21] (程よい(ATTRIB[22]) ∧ ATTRIBUTE_甘さ(ATTRIB[22], ENTITY[21]) ∧ is_element_of(ENTITY[21], GROUP[18]))) ∧
+             和菓子(ENTITY[24]) ∧
+              の_発展(ENTITY[24], ENTITY[23]) ∧
+               FACT(SITUATION[11],
+                貢献する.0_た(EVENT[25], ENTITY[10]) ∧ に(EVENT[25]) = ENTITY[23] ∧
+                 によって(EVENT[25]) = GROUP[18] ∧ is_contained_in(時間(EVENT[25]), TIME[12])) ∧
+                past(EVENT[7]) ∧
+                 ADV_特に(SITUATION[27]) ∧
+                  ADV_容易_に_は(SITUATION[17]) ∧
+                   past(EVENT[25]) ∧
+                    で_あり(EVENT[9], SITUATION[1], ENTITY[8]) ∧
+                     FACT(SITUATION[27], さ(EVENT[26], _, ENTITY[10], SITUATION[11])))
+
+# ::id 11_wikipedia_KYOTO_CLT_00009,11;NJ
+# ::snt 砂糖 を 用いる よう に なる 以前 における 、 もっとも 甘い 嗜好品 は 柿 で あっ た こと から 、 和菓子 が 持つ 味覚 の 繊細さ を 窺い 知る こと が できる 。
+∃ SITUATION[6] ENTITY[5] SITUATION[4] SITUATION[3] SITUATION[2] ENTITY[1] ATTRIB[11] EVENT[8] EVENT[9] EVENT[13] EVENT[17] EVENT[19] EVENT[20] ENTITY[7] ENTITY[12] ENTITY[16] ENTITY[18] ENTITY[14] ENTITY[10] (
+ もっとも_甘い(ATTRIB[11]) ∧
+  ATTRIBUTE_嗜好品(ATTRIB[11], ENTITY[10]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[5] = *pro*{ENTITY[1]} ∧
+     砂糖(ENTITY[7]) ∧
+      よう(SITUATION[6], 用いる(EVENT[8], ENTITY[5], ENTITY[7])) ∧
+       以前(SITUATION[4], なる(EVENT[9], ENTITY[5], SITUATION[6])) ∧
+        柿(ENTITY[12]) ∧
+         こと(SITUATION[3], で_あっ_た(EVENT[13], ENTITY[10], ENTITY[12]) ∧ における(EVENT[13]) = SITUATION[4]) ∧
+          和菓子(ENTITY[16]) ∧
+           味覚(ENTITY[18]) ∧
+            持つ(EVENT[17], ENTITY[16], ENTITY[14]) ∧ の_繊細さ(ENTITY[18], ENTITY[14]) ∧
+             こと(SITUATION[2], 窺い_知る(EVENT[19], ENTITY[1], ENTITY[14]) ∧ から(EVENT[19]) = SITUATION[3]) ∧
+              past(EVENT[13]) ∧ できる(EVENT[20], ENTITY[1], SITUATION[2]))
+
+# ::id 12_wikipedia_KYOTO_CLT_00009,12;NJ
+# ::snt また 、 前述 の 通り 、 和菓子 に は 芸術 作品 として の 側面 も 要求 さ れる 。
+∃ EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] ENTITY[3] (
+ 和菓子(ENTITY[3]) ∧
+  前述(ENTITY[2]) ∧
+   の_通り(ENTITY[2], ENTITY[1]) ∧
+    芸術_作品(ENTITY[5]) ∧
+     として_の_側面(ENTITY[5], ENTITY[4]) ∧
+      要求する.0(EVENT[6], _, ENTITY[4], ENTITY[3]) ∧ ADV(EVENT[6]) = ENTITY[1])
+
+# ::id 13_wikipedia_KYOTO_CLT_00009,13;NJ
+# ::snt 夏 の 和菓子 で あれ ば 、 涼 を 感じ させる ため に 葛粉 など を 用い て 透明感 ある 作品 に 仕上げる といった 具合 に 、 季節感 の 表現 一 つ に も 材料 を 吟味 する 。
+∃ ENTITY[3] ENTITY[1] EVENT[26] DEGREE[24] ENTITY[23] ENTITY[25] ENTITY[22] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   THAT_具合(∀ ENTITY[4] EVENT[7] ENTITY[6] ENTITY[5] CND_ば(
+            ENTITY[4] = *pro*{ENTITY[3], ENTITY[1]} ∧ 夏(ENTITY[6]) ∧ の_和菓子(ENTITY[6], ENTITY[5]) ∧
+             で_あれ(EVENT[7], ENTITY[4], ENTITY[5]),
+            ∃ ENTITY[12] SITUATION[11] ENTITY[8] EVENT[15] EVENT[13] EVENT[16] EVENT[20] EVENT[21] ENTITY[10] ENTITY[14] ENTITY[9] ENTITY[19] ENTITY[17] (
+             ENTITY[8] = *pro*{ENTITY[5], ENTITY[6], ENTITY[1]} ∧
+              葛粉(ENTITY[10]) ∧
+               など(ENTITY[10], ENTITY[9]) ∧
+                ENTITY[12] = *pro*{ENTITY[3], ENTITY[10], ENTITY[8], ENTITY[5], ENTITY[6], ENTITY[1]} ∧
+                 涼(ENTITY[14]) ∧
+                  ため(SITUATION[11],
+                   させる(EVENT[13], ENTITY[9], 感じ(EVENT[15], ENTITY[12], ENTITY[14]), ENTITY[12])) ∧
+                   透明感(ENTITY[19]) ∧
+                    ある(EVENT[20], (ENTITY[17], ENTITY[19])) ∧ 作品(ENTITY[17]) ∧
+                     CONJ_te(用い_て(EVENT[16], ENTITY[3], ENTITY[9]) ∧ に(EVENT[16]) = SITUATION[11],
+                      仕上げる(EVENT[21], ENTITY[3], ENTITY[8]) ∧ に(EVENT[21]) = ENTITY[17]))),
+    ENTITY[2]) ∧
+    季節感(ENTITY[23]) ∧
+     CD_一_つ(DEGREE[24]) ∧
+      MSR_表現(DEGREE[24], ENTITY[22]) ∧ の_表現(ENTITY[23], ENTITY[22]) ∧
+       材料(ENTITY[25]) ∧
+        吟味する.0(EVENT[26], ENTITY[1], ENTITY[25]) ∧ に(EVENT[26]) = ENTITY[22] ∧ に(EVENT[26]) = ENTITY[2])
+
+# ::id 14_wikipedia_KYOTO_CLT_00009,14;NJ
+# ::snt 特に 精巧 に 作ら れる 工芸 菓子 と 呼ば れる 分野 も あり 、 食用 可能 な 和菓子 の 材料 で 花鳥風月 の 世界 を 表現 する 。
+∃ SITUATION[10] ENTITY[1] EVENT[6] EVENT[8] EVENT[9] EVENT[14] EVENT[18] ENTITY[4] ENTITY[2] ENTITY[13] ENTITY[15] ENTITY[17] ENTITY[16] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  作ら(EVENT[6], _, ENTITY[4]) ∧ 工芸_菓子(ENTITY[4]) ∧
+   呼ば(EVENT[8], _, ENTITY[2], ENTITY[4]) ∧ 分野(ENTITY[2]) ∧
+    食用(ENTITY[13]) ∧
+     和菓子(ENTITY[15]) ∧
+      可能_な(EVENT[14], (ENTITY[11], ENTITY[13])) ∧ の_材料(ENTITY[15], ENTITY[11]) ∧
+       花鳥風月(ENTITY[17]) ∧
+        の_世界(ENTITY[17], ENTITY[16]) ∧
+         ADV_特に(SITUATION[10]) ∧
+          ADV_精巧_に(EVENT[6]) ∧
+           FACT(SITUATION[10], あり(EVENT[9], ENTITY[2])) ∧
+            表現する.0(EVENT[18], ENTITY[1], ENTITY[16]) ∧ で(EVENT[18]) = ENTITY[11])
+
+# ::id 15_wikipedia_KYOTO_CLT_00009,15;NJ
+# ::snt 水分量 20 % 以下 の 和菓子 を 干菓子 （ ひがし ） または 乾菓子 （ ひがし ） 、 40 % 以上 の 和菓子 （ 羊羹 は 30 ％ 以上 ） を 生菓子 、 その 中間 を 半生菓子 と いう 。
+∃ ENTITY[1] EVENT[7] EVENT[11] EVENT[14] ENTITY[3] GROUP[4] ENTITY[2] ENTITY[9] ENTITY[10] ENTITY[8] ENTITY[13] ENTITY[12] (
+ 中間(ENTITY[12]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_20%(ENTITY[3]), 水分量(ENTITY[3]) ∧ 以下(ENTITY[3])) ∧
+    の_和菓子(ENTITY[3], ENTITY[2]) ∧
+     CONJ_または(∃ ENTITY[5] (干菓子(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[ひがし], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+      ∃ ENTITY[6] (乾菓子(ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[ひがし], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+      (CD_40%(ENTITY[9]), 以上(ENTITY[9])) ∧
+       の_和菓子(ENTITY[9], ENTITY[8]) ∧
+        生菓子(ENTITY[10]) ∧
+         半生菓子(ENTITY[13]) ∧
+          xxx(EVENT[7], ENTITY[1], ENTITY[2], GROUP[4]) ∧
+           xxx(EVENT[11], ENTITY[1], ENTITY[8], ENTITY[10]) ∧ いう(EVENT[14], ENTITY[1], ENTITY[12], ENTITY[13]))
+
+# ::id 16_wikipedia_KYOTO_CLT_00009,16;NJ
+# ::snt 和菓子 は 大きく この 3 タイプ に 分類 さ れる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 和菓子(ENTITY[1]) ∧
+  CD_3_タイプ(ENTITY[2]) ∧
+   ADV_大きく(EVENT[3]) ∧ 分類する.0(EVENT[3], _, ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2])
+
+# ::id 17_wikipedia_KYOTO_CLT_00009,26;NJ
+# ::snt 日本 三 銘菓 の 一 つ で ある 「 長生殿 」
+∃ EVENT[3] EVENT[4] ENTITY[2] (
+ (CD_一_つ(ENTITY[2]), の(ENTITY[日本_三_銘菓], ENTITY[2])) ∧
+  で_ある(EVENT[3], ENTITY[長生殿], ENTITY[2]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[長生殿])
+
+# ::id 18_wikipedia_KYOTO_CLT_00009,28;NJ
+# ::snt 生姜 砂糖 を 塗っ た 煎餅 「 柴舟 」
+∃ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *pro*{ENTITY[柴舟]} ∧
+  生姜_砂糖(ENTITY[4]) ∧
+   塗っ_た(EVENT[5], ENTITY[3], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[1] ∧ 煎餅(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[柴舟]) ∧ past(EVENT[5]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[柴舟])
+
+# ::id 19_wikipedia_KYOTO_CLT_00009,30;NJ
+# ::snt 波打つ せんべい に クリーム を 挟ん だ 「 千寿せんべい 」
+∃ ENTITY[2] EVENT[5] EVENT[7] EVENT[8] ENTITY[6] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *pro* ∧
+  波打つ(EVENT[5], ENTITY[3]) ∧ せんべい(ENTITY[3]) ∧
+   クリーム(ENTITY[6]) ∧
+    THAT_千寿せんべい(挟ん_だ(EVENT[7], ENTITY[2], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[3], ENTITY[1]) ∧
+     xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 20_wikipedia_KYOTO_CLT_00009,35;NJ
+# ::snt 創業 当時 の 川端家 文書 は 京都市 の 文化財 に も なっ て いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 創業_当時(ENTITY[2]) ∧
+  の_川端家_文書(ENTITY[2], ENTITY[1]) ∧
+   の_文化財(ENTITY[京都市], ENTITY[3]) ∧ なっ_て_いる(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3])
+
+# ::id 21_wikipedia_KYOTO_CLT_00009,36;NJ
+# ::snt 創業 時 から 明治天皇 の 東京行幸 （ 1869 年 3 月 ） まで 、 内裏 に 御朝物 と 称する 菓子 を 毎朝 献上 し て き た 。
+∃ ENTITY[7] ENTITY[1] EVENT[9] ENTITY[3] ENTITY[8] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  創業_時(ENTITY[2]) ∧
+   の_xxx(ENTITY[明治天皇], ENTITY[東京行幸]) ∧
+    CD_1869_年_3_月(ENTITY[3]) ∧
+     namely_-ENTITY-(ENTITY[3], ENTITY[東京行幸]) ∧
+      内裏(ENTITY[4]) ∧
+       ENTITY[7] = *pro*{ENTITY[1], ENTITY[2], ENTITY[東京行幸], ENTITY[4], ENTITY[3], ENTITY[明治天皇]} ∧
+        御朝物(ENTITY[8]) ∧
+         称する(EVENT[9], ENTITY[7], ENTITY[5], ENTITY[8]) ∧ 菓子(ENTITY[5]) ∧
+          毎 TIME[10] (朝(TIME[10]),
+           ∃ EVENT[11] (
+            past(EVENT[11]) ∧
+             献上する.0_て_き_た(EVENT[11], ENTITY[1], ENTITY[5]) ∧ is_contained_in(時間(EVENT[11]), TIME[10]) ∧
+              に(EVENT[11]) = ENTITY[4] ∧ まで(EVENT[11]) = ENTITY[東京行幸] ∧
+              から(EVENT[11]) = ENTITY[2])))
+
+# ::id 22_wikipedia_KYOTO_CLT_00009,39;NJ
+# ::snt 京都 に ある 「 笹屋 」 の 本家 で も ある 。
+∃ ENTITY[1] EVENT[4] EVENT[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ある(EVENT[4], ENTITY[笹屋]) ∧ に(EVENT[4]) = ENTITY[京都] ∧
+   の_本家(ENTITY[笹屋], ENTITY[2]) ∧ で_も_ある(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 23_wikipedia_KYOTO_CLT_00009,43;NJ
+# ::snt 京都 に 本拠 を 残し て いる 和菓子屋 で は 老舗 の 一 つ 。
+∃ ENTITY[1] EVENT[8] ENTITY[7] ENTITY[6] EVENT[5] ENTITY[4] ENTITY[2] (
+ 本拠(ENTITY[4]) ∧
+  残し_て_いる(EVENT[5], ENTITY[2], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[京都] ∧ 和菓子屋(ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    老舗(ENTITY[7]) ∧
+     (CD_一_つ(ENTITY[6]), の(ENTITY[7], ENTITY[6])) ∧
+      xxx(EVENT[8], ENTITY[1], ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[2])
+
+# ::id 24_wikipedia_KYOTO_CLT_00009,44;NJ
+# ::snt 宮内庁 や 相国寺 、 南禅寺 など 納入先 も 多い 。
+∃ EVENT[3] GROUP[2] ENTITY[1] (
+ CONJ_や(is_element_of(ENTITY[宮内庁], GROUP[2]), is_element_of(ENTITY[相国寺], GROUP[2]), is_element_of(ENTITY[南禅寺], GROUP[2])) ∧
+  など_納入先(GROUP[2], ENTITY[1]) ∧ 多い(EVENT[3], ENTITY[1]))
+
+# ::id 25_wikipedia_KYOTO_CLT_00009,45;NJ
+# ::snt 烏丸店 は 京菓子 の 資料館 を 併設 し て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (京菓子(ENTITY[2]) ∧ の_資料館(ENTITY[2], ENTITY[1]) ∧ 併設する.0_て_いる(EVENT[3], ENTITY[烏丸店], ENTITY[1]))
+
+# ::id 26_wikipedia_KYOTO_CLT_00009,50;NJ
+# ::snt 皇室 御用達 で も あり 、 ごま豆腐 など の 惣菜 も 手がける 。
+∃ ENTITY[1] EVENT[3] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  皇室_御用達(ENTITY[2]) ∧
+   ごま豆腐(ENTITY[6]) ∧
+    など(ENTITY[6], ENTITY[5]) ∧
+     の_惣菜(ENTITY[5], ENTITY[4]) ∧ で_も_あり(EVENT[3], ENTITY[1], ENTITY[2]) ∧ 手がける(EVENT[7], ENTITY[1], ENTITY[4]))
+
+# ::id 27_wikipedia_KYOTO_CLT_00009,59;NJ
+# ::snt 京都 の 和菓子 は 、 宮中 や 公家 、 寺社 、 茶家 に おさめ たり 、 特別 な お祝い の ため に あつらえる 「 上菓子 」 、 ふだん に 食べる ｢ おまん （ 饅頭 の 略 ） ｣ や ｢ だんご ｣ ｢ 餅菓子 ｣ に わけ られる 。
+∃ EVENT[26] GROUP[2] ENTITY[1] (
+ の_和菓子(ENTITY[京都], ENTITY[1]) ∧
+  CONJ_や(∃ ATTRIB[15] SITUATION[6] ENTITY[5] EVENT[12] EVENT[16] GROUP[7] ENTITY[14] ENTITY[13] ENTITY[3] (
+        ENTITY[5] = *pro*{ENTITY[1], ENTITY[京都]} ∧
+         CONJ_や(∃ ENTITY[8] (宮中(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+          ∃ ENTITY[9] (公家(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])),
+          ∃ ENTITY[10] (寺社(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[7])),
+          ∃ ENTITY[11] (茶家(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[7]))) ∧
+          FACT(SITUATION[6], おさめ(EVENT[12], ENTITY[3]) ∧ に(EVENT[12]) = GROUP[7]) ∧
+           特別_な(ATTRIB[15]) ∧
+            ATTRIBUTE_お祝い(ATTRIB[15], ENTITY[14]) ∧
+             の_ため(ENTITY[14], ENTITY[13]) ∧
+              あつらえる(EVENT[16], ENTITY[5], ENTITY[3]) ∧ に(EVENT[16]) = ENTITY[13] ∧
+               たり(EVENT[16]) = SITUATION[6] ∧ 上菓子(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[21] EVENT[23] ENTITY[22] ENTITY[18] ENTITY[17] ENTITY[19] (
+    ENTITY[21] = *pro*{ENTITY[1], ENTITY[京都]} ∧
+     ふだん(ENTITY[22]) ∧
+      食べる(EVENT[23], ENTITY[21], ENTITY[19]) ∧ に(EVENT[23]) = ENTITY[22] ∧ おまん(ENTITY[19]) ∧
+       饅頭(ENTITY[18]) ∧
+        の_略(ENTITY[18], ENTITY[17]) ∧ namely_-ENTITY-(ENTITY[17], ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[2])),
+   ∃ ENTITY[24] (だんご(ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[2])),
+   ∃ ENTITY[25] (餅菓子(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[2]))) ∧
+   わけ(EVENT[26], _, ENTITY[1]) ∧ に(EVENT[26]) = GROUP[2])
+
+# ::id 28_wikipedia_KYOTO_CLT_00009,60;NJ
+# ::snt 前者 を つくる もの を 菓子匠 、 御菓子司 など と 称し 、 後者 を つくる もの を ｢ おまんやさん ｣ ｢ おもちやさん ｣ と 呼ん だ 。
+∃ ENTITY[1] EVENT[5] EVENT[10] EVENT[14] EVENT[18] ENTITY[4] GROUP[7] ENTITY[6] ENTITY[2] ENTITY[13] GROUP[15] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  前者(ENTITY[4]) ∧
+   つくる(EVENT[5], ENTITY[2], ENTITY[4]) ∧ もの(ENTITY[2]) ∧
+    ∃ ENTITY[8] (菓子匠(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+     ∃ ENTITY[9] (御菓子司(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+     など(GROUP[7], ENTITY[6]) ∧
+      後者(ENTITY[13]) ∧
+       つくる(EVENT[14], ENTITY[11], ENTITY[13]) ∧ もの(ENTITY[11]) ∧
+        ∃ ENTITY[16] (おまんやさん(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])) ∧
+         ∃ ENTITY[17] (おもちやさん(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15])) ∧
+         past(EVENT[18]) ∧
+          称し(EVENT[10], ENTITY[1], ENTITY[2], ENTITY[6]) ∧ 呼ん_だ(EVENT[18], ENTITY[1], ENTITY[11], GROUP[15]))
+
+# ::id 29_wikipedia_KYOTO_CLT_00009,61;NJ
+# ::snt 「 ○△餅 」 という 店 で も 、 饂飩 （ うどん ） ・ 寿司 ・ おはぎ が ださ れる ところ が 現在 も ある 。
+∃ EVENT[8] EVENT[10] GROUP[4] ENTITY[9] ENTITY[2] ENTITY[1] (
+ という_店(ENTITY[○△餅], ENTITY[1]) ∧
+  ∃ ENTITY[5] (饂飩(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[うどん], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+   ∃ ENTITY[6] (寿司(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+   ∃ ENTITY[7] (おはぎ(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+   ださ(EVENT[8], _, GROUP[4]) ∧ LOC(EVENT[8]) = ENTITY[2] ∧ ところ(ENTITY[2]) ∧
+    現在(ENTITY[9]) ∧
+     ある(EVENT[10], ENTITY[2]) ∧ 時間(EVENT[10]) = ENTITY[9] ∧ で(EVENT[10]) = ENTITY[1])
+
+# ::id 30_wikipedia_KYOTO_CLT_00009,62;NJ
+# ::snt 現代 で は その 区分 も あいまい に なっ て き て いる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 現代(ENTITY[1]) ∧
+  区分(ENTITY[2]) ∧ ADV_あいまい_に(EVENT[3]) ∧ なっ_て_き_いる(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1])
+
+# ::id 31_wikipedia_KYOTO_CLT_00009,63;NJ
+# ::snt 上菓子 は 、 お供え菓子 や 、 茶道 の 菓子 として 洗練 し た 発展 を とげ 、 ふだん の 菓子 も 年中 行事 ごと に 様々 な もの が 食べ られ た 経緯 から 多彩 に 展開 し た 。
+∃ SITUATION[17] SITUATION[11] SITUATION[2] EVENT[7] EVENT[8] EVENT[18] GROUP[3] ENTITY[10] ENTITY[13] ENTITY[9] ENTITY[1] (
+ 上菓子(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[4] (お供え菓子(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[6] ENTITY[5] (茶道(ENTITY[6]) ∧ の_菓子(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   発展(SITUATION[2], 洗練する.0_た(EVENT[7], ENTITY[1]) ∧ として(EVENT[7]) = GROUP[3]) ∧
+    ふだん(ENTITY[10]) ∧
+     の_菓子(ENTITY[10], ENTITY[9]) ∧
+      行事(ENTITY[13]) ∧
+       経緯(SITUATION[11],
+        FACT(SITUATION[17],
+         ごと ENTITY[12] (ENTITY[12] = ENTITY[13],
+          ∃ ATTRIB[15] EVENT[16] ENTITY[14] (
+           様々_な(ATTRIB[15]) ∧
+            ATTRIBUTE_もの(ATTRIB[15], ENTITY[14]) ∧
+             past(EVENT[16]) ∧
+              食べ_た(EVENT[16], _, ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[12])))) ∧
+        past(EVENT[7]) ∧
+         ADV_年中(SITUATION[17]) ∧
+          ADV_多彩_に(EVENT[18]) ∧
+           past(EVENT[18]) ∧
+            とげ(EVENT[8], ENTITY[1], SITUATION[2]) ∧
+             展開する.0_た(EVENT[18], ENTITY[9]) ∧ から(EVENT[18]) = SITUATION[11])
+
+# ::id 32_wikipedia_KYOTO_CLT_00009,64;NJ
+# ::snt その 伝統 が 今日 の 京菓子 に 反映 さ れ て いる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 伝統(ENTITY[1]) ∧
+  今日(ENTITY[3]) ∧
+   の_京菓子(ENTITY[3], ENTITY[2]) ∧ 反映する.0_て_いる(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 33_wikipedia_KYOTO_CLT_00009,65;NJ
+# ::snt 上菓子
+∃ EVENT[2] ENTITY[1] (上菓子(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 34_wikipedia_KYOTO_CLT_00009,66;NJ
+# ::snt 上菓子 は 以下 の よう な 素材 、 中間 素材 、 製法 を もちい 、 美的 に つくりあげる 。
+∃ ENTITY[1] EVENT[7] EVENT[12] EVENT[13] ENTITY[6] ENTITY[5] GROUP[8] ENTITY[3] ENTITY[2] (
+ 上菓子(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   以下(ENTITY[6]) ∧
+    の_よう(ENTITY[6], ENTITY[5]) ∧
+     ∃ ENTITY[9] (素材(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ ENTITY[10] (中間_素材(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+      ∃ ENTITY[11] (製法(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])) ∧
+      な(EVENT[7], ENTITY[3], ENTITY[5]) ∧ equals(GROUP[8], ENTITY[3]) ∧
+       ADV_美的_に(EVENT[13]) ∧ もちい(EVENT[12], ENTITY[2], ENTITY[3]) ∧ つくりあげる(EVENT[13], ENTITY[1], ENTITY[2]))
+
+# ::id 35_wikipedia_KYOTO_CLT_00009,67;NJ
+# ::snt こなし
+∃ EVENT[2] ENTITY[1] (こなし(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 36_wikipedia_KYOTO_CLT_00009,68;NJ
+# ::snt 白こし餡 （ 手亡豆 等 の 隠元豆 、 あるいは 白小豆 の 餡 ） と 薄力粉 を まぜ て 蒸し た もの に 砂糖水 を くわえ ねりあげ た もの 。
+∃ ENTITY[8] ENTITY[7] ENTITY[4] ENTITY[1] EVENT[18] EVENT[19] EVENT[21] EVENT[22] EVENT[23] GROUP[9] ENTITY[20] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   ENTITY[7] = *pro*{ENTITY[2], ENTITY[4], ENTITY[1]} ∧
+    ENTITY[8] = *pro*{ENTITY[7], ENTITY[2], ENTITY[4], ENTITY[1]} ∧
+     CONJ_と(∃ GROUP[10] ENTITY[16] (
+           白こし餡(ENTITY[16]) ∧
+            CONJ_あるいは(∃ ENTITY[13] ENTITY[12] ENTITY[11] (
+                  手亡豆(ENTITY[13]) ∧
+                   等(ENTITY[13], ENTITY[12]) ∧
+                    の_隠元豆(ENTITY[12], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+             ∃ ENTITY[15] ENTITY[14] (白小豆(ENTITY[15]) ∧ の_餡(ENTITY[15], ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[10]))) ∧
+             namely_-ENTITY-(GROUP[10], ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[9])),
+      ∃ ENTITY[17] (薄力粉(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[9]))) ∧
+      CONJ_te(まぜ_て(EVENT[18], ENTITY[8], GROUP[9]), 蒸し_た(EVENT[19], ENTITY[7], ENTITY[5])) ∧
+       もの(ENTITY[5]) ∧
+       砂糖水(ENTITY[20]) ∧
+        くわえ(EVENT[21], ENTITY[2], ENTITY[20]) ∧ に(EVENT[21]) = ENTITY[5] ∧
+         ねりあげ_た(EVENT[22], ENTITY[4], ENTITY[2]) ∧ もの(ENTITY[2]) ∧
+         past(EVENT[19]) ∧ past(EVENT[22]) ∧ xxx(EVENT[23], ENTITY[1], ENTITY[2]))
+
+# ::id 37_wikipedia_KYOTO_CLT_00009,69;NJ
+# ::snt 色 を つけ て さまざま な 形 に 加工 する 。
+∃ ATTRIB[6] ENTITY[2] ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   色(ENTITY[3]) ∧
+    さまざま_な(ATTRIB[6]) ∧
+     ATTRIBUTE_形(ATTRIB[6], ENTITY[5]) ∧
+      CONJ_te(つけ_て(EVENT[4], ENTITY[1], ENTITY[3]),
+       加工する.0(EVENT[7], ENTITY[1], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[5]))
+
+# ::id 38_wikipedia_KYOTO_CLT_00009,70;NJ
+# ::snt 梅 の 蕾 を かたどっ た ｢ 未開紅 ｣ 、 紅葉 に したて た ｢ 竜田川 ｣ を はじめ 、 くず菓子 の 餡 など 多彩 に 展開 する 。
+∃ ENTITY[1] EVENT[11] EVENT[14] GROUP[2] ENTITY[13] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  ∃ EVENT[6] ENTITY[5] ENTITY[4] (
+   梅(ENTITY[5]) ∧
+    の_蕾(ENTITY[5], ENTITY[4]) ∧
+     かたどっ_た(EVENT[6], ENTITY[未開紅], ENTITY[4]) ∧ past(EVENT[6]) ∧ is_element_of(ENTITY[未開紅], GROUP[2])) ∧
+   ∃ ENTITY[8] EVENT[10] ENTITY[9] (
+    ENTITY[8] = *pro*{ENTITY[未開紅], ENTITY[1]} ∧
+     紅葉(ENTITY[9]) ∧
+      したて_た(EVENT[10], ENTITY[8], ENTITY[竜田川]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+       past(EVENT[10]) ∧ is_element_of(ENTITY[竜田川], GROUP[2])) ∧
+   くず菓子(ENTITY[13]) ∧
+    の_餡(ENTITY[13], ENTITY[12]) ∧
+     ADV_多彩_に(EVENT[14]) ∧
+      はじめ(EVENT[11], ENTITY[1], GROUP[2]) ∧ 展開する.0(EVENT[14], ENTITY[1]) ∧ など(EVENT[14]) = ENTITY[12])
+
+# ::id 39_wikipedia_KYOTO_CLT_00009,71;NJ
+# ::snt きんとん
+∃ EVENT[2] ENTITY[1] (きんとん(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 40_wikipedia_KYOTO_CLT_00009,72;NJ
+# ::snt 蒸し た 山芋 を うらごし し て 砂糖 と 炊い た もの （ 薯蕷煉り切り ） や 、 白餡 を 寒天 で 固め た もの （ きんとん餡 、 天餡 ） 、 白餡 を 求肥 で つない だ もの （ 煉り切り ） を 、 色々 な 色 に そめ 、 うらごし器 で そぼろ状 に し 、 餡 など の 芯 に うえつけ て 季節 を 表現 する 。
+∃ ENTITY[34] ENTITY[30] ATTRIB[28] ENTITY[1] EVENT[29] EVENT[33] EVENT[38] EVENT[40] ENTITY[27] GROUP[2] ENTITY[32] ENTITY[31] ENTITY[37] ENTITY[36] ENTITY[35] ENTITY[39] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[8] ENTITY[5] EVENT[9] EVENT[10] EVENT[12] ENTITY[6] ENTITY[11] ENTITY[3] ENTITY[4] (
+        ENTITY[5] = *pro*{ENTITY[1]} ∧
+         ENTITY[8] = *pro*{ENTITY[5], ENTITY[1]} ∧
+          蒸し_た(EVENT[9], ENTITY[8], ENTITY[6]) ∧ 山芋(ENTITY[6]) ∧
+           砂糖(ENTITY[11]) ∧
+            THAT_もの(CONJ_te(うらごしする.0_て(EVENT[10], ENTITY[5], ENTITY[6]),
+                  炊い_た(EVENT[12], ENTITY[5]) ∧ と(EVENT[12]) = ENTITY[11]), ENTITY[4]) ∧
+             薯蕷煉り切り(ENTITY[3]) ∧
+              namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧
+               past(EVENT[9]) ∧ past(EVENT[12]) ∧ is_element_of(ENTITY[4], GROUP[2])),
+   ∃ ENTITY[17] EVENT[20] ENTITY[19] ENTITY[18] GROUP[13] ENTITY[16] (
+    ENTITY[17] = *pro*{ENTITY[1]} ∧
+     白餡(ENTITY[18]) ∧
+      寒天(ENTITY[19]) ∧
+       THAT_もの(固め_た(EVENT[20], ENTITY[17], ENTITY[18]) ∧ で(EVENT[20]) = ENTITY[19], ENTITY[16]) ∧
+        ∃ ENTITY[14] (きんとん餡(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])) ∧
+         ∃ ENTITY[15] (天餡(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13])) ∧
+         namely_-ENTITY-(GROUP[13], ENTITY[16]) ∧ past(EVENT[20]) ∧ is_element_of(ENTITY[16], GROUP[2])),
+   ∃ ENTITY[23] EVENT[26] ENTITY[25] ENTITY[24] ENTITY[21] ENTITY[22] (
+    ENTITY[23] = *pro*{ENTITY[1]} ∧
+     白餡(ENTITY[24]) ∧
+      求肥(ENTITY[25]) ∧
+       THAT_もの(つない_だ(EVENT[26], ENTITY[23], ENTITY[24]) ∧ で(EVENT[26]) = ENTITY[25], ENTITY[22]) ∧
+        煉り切り(ENTITY[21]) ∧ namely_-ENTITY-(ENTITY[21], ENTITY[22]) ∧ is_element_of(ENTITY[22], GROUP[2]))) ∧
+   色々_な(ATTRIB[28]) ∧
+    ATTRIBUTE_色(ATTRIB[28], ENTITY[27]) ∧
+     ENTITY[30] = *pro*{ENTITY[27]} ∧
+      うらごし器(ENTITY[31]) ∧
+       そぼろ状(ENTITY[32]) ∧
+        ENTITY[34] = *pro*{ENTITY[31], ENTITY[32], ENTITY[27]} ∧
+         餡(ENTITY[37]) ∧
+          など(ENTITY[37], ENTITY[36]) ∧
+           の_芯(ENTITY[36], ENTITY[35]) ∧
+            季節(ENTITY[39]) ∧
+             そめ(EVENT[29], ENTITY[1], GROUP[2]) ∧ に(EVENT[29]) = ENTITY[27] ∧
+              し(EVENT[33], ENTITY[1], ENTITY[30]) ∧ に(EVENT[33]) = ENTITY[32] ∧
+               で(EVENT[33]) = ENTITY[31] ∧
+               CONJ_te(うえつけ_て(EVENT[38], ENTITY[1], ENTITY[34]) ∧ に(EVENT[38]) = ENTITY[35],
+                表現する.0(EVENT[40], ENTITY[1], ENTITY[39])))
+
+# ::id 41_wikipedia_KYOTO_CLT_00009,73;NJ
+# ::snt 求肥 （ ぎゅうひ ）
+∃ EVENT[2] ENTITY[1] (求肥(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[ぎゅうひ], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 42_wikipedia_KYOTO_CLT_00009,74;NJ
+# ::snt もち米 の 粉 を 水 で 練っ て 湯がき 、 火 の 上 で 砂糖 を 加え て ねっ た もの 。
+∃ ENTITY[4] ENTITY[1] EVENT[8] EVENT[9] EVENT[13] EVENT[14] EVENT[15] ENTITY[6] ENTITY[7] ENTITY[5] ENTITY[11] ENTITY[12] ENTITY[10] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   もち米(ENTITY[6]) ∧
+    の_粉(ENTITY[6], ENTITY[5]) ∧
+     水(ENTITY[7]) ∧
+      火(ENTITY[11]) ∧
+       の_上(ENTITY[11], ENTITY[10]) ∧
+        砂糖(ENTITY[12]) ∧
+         CONJ_te(練っ_て(EVENT[8], ENTITY[2], ENTITY[5]) ∧ で(EVENT[8]) = ENTITY[7],
+          湯がき(EVENT[9], ENTITY[2])) ∧
+          CONJ_te(加え_て(EVENT[13], ENTITY[4], ENTITY[12]) ∧ で(EVENT[13]) = ENTITY[10],
+           ねっ_た(EVENT[14], ENTITY[4], ENTITY[2])) ∧ もの(ENTITY[2]) ∧
+          past(EVENT[14]) ∧ xxx(EVENT[15], ENTITY[1], ENTITY[2]))
+
+# ::id 43_wikipedia_KYOTO_CLT_00009,75;NJ
+# ::snt 夏 の 菓子 ｢ 鮎 ｣ 、 ｢ 調布 ｣ など に つかう 。
+∃ ENTITY[2] ENTITY[1] EVENT[8] GROUP[7] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   is_element_of(ENTITY[鮎], GROUP[7]) ∧ is_element_of(ENTITY[調布], GROUP[7]) ∧
+    equals(GROUP[7], ENTITY[6]) ∧
+     夏(ENTITY[5]) ∧
+      の_菓子(ENTITY[5], ENTITY[4]) ∧
+       namely_-ENTITY-(ENTITY[4], ENTITY[6]) ∧
+        など(ENTITY[6], ENTITY[3]) ∧ つかう(EVENT[8], ENTITY[1], ENTITY[2]) ∧ に(EVENT[8]) = ENTITY[3])
+
+# ::id 44_wikipedia_KYOTO_CLT_00009,76;NJ
+# ::snt クズ
+∃ EVENT[2] ENTITY[1] (クズ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 45_wikipedia_KYOTO_CLT_00009,77;NJ
+# ::snt 本くず粉 に 水 を 加え た もの を 漉し て 、 砂糖 を 加え 加熱 し アルファ化 さ せる 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] EVENT[8] EVENT[9] EVENT[11] EVENT[10] ENTITY[4] ENTITY[3] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  本くず粉(ENTITY[3]) ∧
+   水(ENTITY[4]) ∧
+    もの(SITUATION[2], 加え_た(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+     砂糖(ENTITY[7]) ∧
+      past(EVENT[5]) ∧
+       CONJ_te(漉し_て(EVENT[6], SITUATION[2]), 加え(EVENT[8], SITUATION[2], ENTITY[7])) ∧
+        加熱する.0(EVENT[9], SITUATION[2]) ∧ せる(EVENT[10], ENTITY[1], SITUATION[2], アルファ化する.0(EVENT[11], SITUATION[2])))
+
+# ::id 46_wikipedia_KYOTO_CLT_00009,78;NJ
+# ::snt 葛きり 、 葛饅頭 など 透明感 が 涼しさ を よぶ 。
+∃ EVENT[7] GROUP[2] ENTITY[6] ENTITY[5] ENTITY[1] (
+ ∃ ENTITY[3] (葛きり(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[4] (葛饅頭(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+  など(GROUP[2], ENTITY[1]) ∧
+   透明感(ENTITY[5]) ∧ 涼しさ(ENTITY[6]) ∧ よぶ(EVENT[7], (ENTITY[1], ENTITY[5]), ENTITY[6]))
+
+# ::id 47_wikipedia_KYOTO_CLT_00009,79;NJ
+# ::snt また シンプル に 六 方 を 焼い た だけ の ｢ 葛焼 ｣ は 熟練 を 要する 菓子 。
+∃ SITUATION[3] EVENT[10] EVENT[11] ENTITY[9] ENTITY[7] EVENT[5] ENTITY[4] ENTITY[1] (
+ CD_六_方(ENTITY[4]) ∧
+  FACT(SITUATION[3], 焼い_た(EVENT[5], _, ENTITY[4])) ∧
+   だけ SITUATION[2] (SITUATION[2] = SITUATION[3], の_葛焼(SITUATION[2], ENTITY[1])) ∧
+    ADV_シンプル_に(EVENT[5]) ∧
+     past(EVENT[5]) ∧
+      熟練(ENTITY[9]) ∧
+       要する(EVENT[10], ENTITY[7], ENTITY[9]) ∧ 菓子(ENTITY[7]) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[7]))
+
+# ::id 48_wikipedia_KYOTO_CLT_00009,80;NJ
+# ::snt 薯蕷 （ じょうよ ）
+∃ EVENT[2] ENTITY[1] (薯蕷(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[じょうよ], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 49_wikipedia_KYOTO_CLT_00009,81;NJ
+# ::snt 山芋 の こと 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 山芋(ENTITY[3]) ∧ の_こと(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 50_wikipedia_KYOTO_CLT_00009,82;NJ
+# ::snt 「 織部まんじゅう 」 など 上用 饅頭 の 皮 は 、 山芋 を すり おろし て 砂糖 と 上用粉 （ 細目 の 米粉 ） を くわえ た もの 。
+∃ ENTITY[5] SITUATION[4] EVENT[7] EVENT[13] EVENT[14] ENTITY[6] GROUP[8] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 織部まんじゅう(ENTITY[3]) ∧
+  など_上用_饅頭(ENTITY[3], ENTITY[2]) ∧
+   の_皮(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     山芋(ENTITY[6]) ∧
+      CONJ_と(∃ ENTITY[9] (砂糖(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ENTITY[11] ENTITY[10] ENTITY[12] (
+        上用粉(ENTITY[12]) ∧
+         細目(ENTITY[11]) ∧
+          の_米粉(ENTITY[11], ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[8]))) ∧
+       もの(SITUATION[4], CONJ_te(すり_おろし_て(EVENT[7], ENTITY[5], ENTITY[6]), くわえ_た(EVENT[13], ENTITY[5], GROUP[8]))) ∧
+        past(EVENT[13]) ∧ xxx(EVENT[14], ENTITY[1], SITUATION[4]))
+
+# ::id 51_wikipedia_KYOTO_CLT_00009,83;NJ
+# ::snt 餡 を 包ん で 蒸し て つくる 。
+∃ ENTITY[1] EVENT[3] EVENT[4] EVENT[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  餡(ENTITY[2]) ∧
+   CONJ_te(包ん_で(EVENT[3], ENTITY[1], ENTITY[2]), 蒸し_て(EVENT[4], ENTITY[1]), つくる(EVENT[5], ENTITY[1])))
+
+# ::id 52_wikipedia_KYOTO_CLT_00009,84;NJ
+# ::snt また 、 すり おろし た 山芋 に 、 砂糖 、 水 、 軽羹粉 （ 粗目 の 米粉 ） を 加え 、 蒸し あげ た の が カルカン （ 軽羹 ） 。
+∃ ENTITY[5] ENTITY[2] SITUATION[1] EVENT[6] EVENT[13] EVENT[14] EVENT[16] GROUP[7] ENTITY[3] ENTITY[15] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[2]} ∧
+   すり_おろし_た(EVENT[6], ENTITY[5], ENTITY[3]) ∧ 山芋(ENTITY[3]) ∧
+    ∃ ENTITY[8] (砂糖(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+     ∃ ENTITY[9] (水(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+     ∃ ENTITY[11] ENTITY[10] ENTITY[12] (
+      軽羹粉(ENTITY[12]) ∧
+       粗目(ENTITY[11]) ∧
+        の_米粉(ENTITY[11], ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[7])) ∧
+     の(SITUATION[1],
+      加え(EVENT[13], ENTITY[2], GROUP[7]) ∧ に(EVENT[13]) = ENTITY[3] ∧
+       蒸し_あげ_た(EVENT[14], ENTITY[2])) ∧
+      カルカン(ENTITY[15]) ∧
+       namely_-ENTITY-(ENTITY[軽羹], ENTITY[15]) ∧
+        past(EVENT[6]) ∧ past(EVENT[14]) ∧ xxx(EVENT[16], SITUATION[1], ENTITY[15]))
+
+# ::id 53_wikipedia_KYOTO_CLT_00009,85;NJ
+# ::snt 蒸し た 山芋 を うらごし し て 砂糖 と 炊い た もの が 、 薯蕷煉り切り 。
+∃ ENTITY[6] ENTITY[3] EVENT[7] EVENT[8] EVENT[10] EVENT[12] ENTITY[4] ENTITY[9] ENTITY[11] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  ENTITY[6] = *pro*{ENTITY[3], ENTITY[1]} ∧
+   蒸し_た(EVENT[7], ENTITY[6], ENTITY[4]) ∧ 山芋(ENTITY[4]) ∧
+    砂糖(ENTITY[9]) ∧
+     CONJ_te(うらごしする.0_て(EVENT[8], ENTITY[3], ENTITY[4]),
+      炊い_た(EVENT[10], ENTITY[3], ENTITY[1]) ∧ と(EVENT[10]) = ENTITY[9]) ∧ もの(ENTITY[1]) ∧
+      薯蕷煉り切り(ENTITY[11]) ∧ past(EVENT[7]) ∧ past(EVENT[10]) ∧ xxx(EVENT[12], ENTITY[1], ENTITY[11]))
+
+# ::id 54_wikipedia_KYOTO_CLT_00009,86;NJ
+# ::snt どの 場合 も 、 山芋 本来 の 『 白さ 』 と 、 独特 の 香り を 生かす こと が 大切 。
+も ENTITY[1] (場合(ENTITY[1]),
+ ∃ ENTITY[3] SITUATION[2] EVENT[9] EVENT[10] GROUP[4] (
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   CONJ_と(∃ ENTITY[6] ENTITY[5] (山芋_本来(ENTITY[6]) ∧ の_白さ(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[8] ENTITY[7] (独特(ENTITY[8]) ∧ の_香り(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+    こと(SITUATION[2], 生かす(EVENT[9], ENTITY[3], GROUP[4])) ∧
+     大切(EVENT[10], SITUATION[2]) ∧ ADV(EVENT[10]) = ENTITY[1]))
+
+# ::id 55_wikipedia_KYOTO_CLT_00009,87;NJ
+# ::snt この ほか に も ｢ 道明寺 ｣ ｢ 淡雪 ｣ ｢ 錦玉 ｣ など 中間 素材 は 数多い 。
+∃ EVENT[7] ENTITY[4] ENTITY[5] ENTITY[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ ほか(ENTITY[1]) ∧
+  道明寺(ENTITY[4]) ∧
+   淡雪(ENTITY[5]) ∧
+    錦玉(ENTITY[6]) ∧
+     is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧ is_element_of(ENTITY[6], GROUP[3]) ∧
+      など_中間_素材(GROUP[3], ENTITY[2]) ∧ 数多い(EVENT[7], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[1])
+
+# ::id 56_wikipedia_KYOTO_CLT_00009,88;NJ
+# ::snt 中間 素材 の 段階 まで に 炊く 、 蒸す 、 まぜる 、 練る など の 作業 が あり 、 その ひと つ で も ゆるがせ に する と おいしい 菓子 は でき ない 。
+∃ ATTRIB[12] EVENT[10] ENTITY[2] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[13] ENTITY[11] (
+ おいしい(ATTRIB[12]) ∧
+  ATTRIBUTE_菓子(ATTRIB[12], ENTITY[11]) ∧
+   CD_ひと_つ(ENTITY[13]) ∧
+    中間_素材(ENTITY[2]) ∧
+     の_段階(ENTITY[2], ENTITY[1]) ∧
+      ∃ ENTITY[6] (炊く(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+       ∃ ENTITY[7] (蒸す(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+       ∃ ENTITY[8] (まぜる(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5])) ∧
+       ∃ ENTITY[9] (練る(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[5])) ∧
+       など(GROUP[5], ENTITY[4]) ∧
+        の_作業(ENTITY[4], ENTITY[3]) ∧
+         あり(EVENT[10], ENTITY[3]) ∧ まで_に(EVENT[10]) = ENTITY[1] ∧
+          ¬ ∀ EVENT[15] ENTITY[14] CND_と(
+                   ゆるがせ(ENTITY[14]) ∧
+                    する(EVENT[15], ENTITY[11]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+                     で(EVENT[15]) = ENTITY[13], ∃ EVENT[16] でき(EVENT[16], ENTITY[11])))
+
+# ::id 57_wikipedia_KYOTO_CLT_00009,89;NJ
+# ::snt また 材料 も 厳選 さ れ た もの を 素材 に 応じ て あくぬき など を し ながら 、 味 を ひきだす 技術 が 要求 さ れる 。
+∃ ENTITY[7] SITUATION[2] EVENT[6] EVENT[9] EVENT[12] EVENT[14] EVENT[15] ENTITY[4] ENTITY[8] ENTITY[11] ENTITY[10] ENTITY[13] ENTITY[3] ENTITY[1] (
+ 材料(ENTITY[1]) ∧
+  厳選する.0_た(EVENT[6], _, ENTITY[4]) ∧ もの(ENTITY[4]) ∧
+   を(ENTITY[4], ENTITY[3]) ∧
+    ENTITY[7] = *pro*{ENTITY[4], ENTITY[1]} ∧
+     素材(ENTITY[8]) ∧
+      あくぬき(ENTITY[11]) ∧
+       など(ENTITY[11], ENTITY[10]) ∧
+        味(ENTITY[13]) ∧
+         技術(SITUATION[2],
+          CRD_ながら(CONJ_te(応じ_て(EVENT[9], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[8],
+                し(EVENT[12], ENTITY[7], ENTITY[10])),
+           ひきだす(EVENT[14], ENTITY[7], ENTITY[13]) ∧ TPC(EVENT[14]) = ENTITY[3])) ∧
+          past(EVENT[6]) ∧ 要求する.0(EVENT[15], _, SITUATION[2]) ∧ TPC(EVENT[15]) = ENTITY[1])
+
+# ::id 58_wikipedia_KYOTO_CLT_00009,90;NJ
+# ::snt そして 最後 に 季節感 や 、 菓子 が 食べ られる 場 の コンセプト を 表現 し なければならない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_なければならない(∃ EVENT[10] GROUP[3] ENTITY[2] (
+        最後(ENTITY[2]) ∧
+         CONJ_や(∃ ENTITY[4] (季節感(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+          ∃ EVENT[9] ENTITY[8] ENTITY[6] ENTITY[5] (
+           菓子(ENTITY[8]) ∧
+            食べ(EVENT[9], _, ENTITY[8]) ∧ LOC(EVENT[9]) = ENTITY[6] ∧ 場(ENTITY[6]) ∧
+             の_コンセプト(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+          表現する.0(EVENT[10], ENTITY[1], GROUP[3]) ∧ に(EVENT[10]) = ENTITY[2])))
+
+# ::id 59_wikipedia_KYOTO_CLT_00009,91;NJ
+# ::snt 繊細 な 感覚 と 確か な 技術 で 上菓子 は つくら れる 。
+∃ EVENT[7] GROUP[1] ENTITY[6] (
+ 上菓子(ENTITY[6]) ∧
+  CONJ_と(∃ ATTRIB[3] ENTITY[2] (繊細_な(ATTRIB[3]) ∧ ATTRIBUTE_感覚(ATTRIB[3], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+   ∃ ATTRIB[5] ENTITY[4] (確か_な(ATTRIB[5]) ∧ ATTRIBUTE_技術(ATTRIB[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1]))) ∧
+   つくら(EVENT[7], _, ENTITY[6]) ∧ で(EVENT[7]) = GROUP[1])
+
+# ::id 60_wikipedia_KYOTO_CLT_00009,92;NJ
+# ::snt ただし 、 その 製法 および 感性 は 菓子店 、 職人 によって 千差万別 で あり 、 微妙 な 違い が それぞれ の 個性 に なっ て いる 。
+∃ ATTRIB[10] EVENT[8] GROUP[5] ENTITY[9] ENTITY[3] ENTITY[4] GROUP[2] ENTITY[1] (
+ 製法(ENTITY[3]) ∧
+  感性(ENTITY[4]) ∧
+   CONJ_および(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[4], GROUP[2])) ∧
+    equals(GROUP[2], ENTITY[1]) ∧
+     ∃ ENTITY[6] (菓子店(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+      ∃ ENTITY[7] (職人(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+      微妙_な(ATTRIB[10]) ∧
+       ATTRIBUTE_違い(ATTRIB[10], ENTITY[9]) ∧
+        千差万別_で_あり(EVENT[8], ENTITY[1]) ∧ によって(EVENT[8]) = GROUP[5] ∧
+         それぞれ_の ENTITY[11] (個性(ENTITY[11]), ∃ EVENT[12] (なっ_て_いる(EVENT[12], ENTITY[9]) ∧ に(EVENT[12]) = ENTITY[11])))

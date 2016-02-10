@@ -1,0 +1,133 @@
+# ::id 1_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 全国高校サッカー （ 第２ 日 ）
+∃ EVENT[2] ENTITY[1] (CD_第２_日(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[全国高校サッカー]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[全国高校サッカー])
+
+# ::id 2_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt ／ 富岡、初戦突破
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[富岡、初戦突破])
+
+# ::id 3_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt ／ 勝利「福島の力に」
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[勝利「福島の力に」])
+
+# ::id 4_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt ／ 避難町民ら歓喜
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[避難町民ら歓喜])
+
+# ::id 5_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 千葉県 市原市 の ゼットエーオリプリスタジアム で １２ 月 ３１ 日 に あっ た 全国高校サッカー選手権 の １ 回 戦 で 、 福島県 代表 の 富岡 が 愛媛県 代表 の 松山商 を ２－０ で 破っ た 。
+∃ EVENT[4] EVENT[8] ENTITY[3] ENTITY[5] ENTITY[6] ENTITY[7] ENTITY[1] (
+ の_xxx(ENTITY[千葉県_市原市], ENTITY[ゼットエーオリプリスタジアム]) ∧
+  CD_１２_月_３１_日(ENTITY[3]) ∧
+   (CD_１_回(ENTITY[1]),
+    あっ_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ で(EVENT[4]) = ENTITY[ゼットエーオリプリスタジアム] ∧
+     の_戦(ENTITY[全国高校サッカー選手権], ENTITY[1])) ∧
+    福島県_代表(ENTITY[5]) ∧
+     の_xxx(ENTITY[5], ENTITY[富岡]) ∧
+      愛媛県_代表(ENTITY[6]) ∧
+       の_xxx(ENTITY[6], ENTITY[松山商]) ∧
+        CD_２－０(ENTITY[7]) ∧
+         past(EVENT[4]) ∧
+          past(EVENT[8]) ∧
+           破っ_た(EVENT[8], ENTITY[富岡], ENTITY[松山商]) ∧ で(EVENT[8]) = ENTITY[7] ∧
+            で(EVENT[8]) = ENTITY[1])
+
+# ::id 6_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 福島第１原発事故 から の 復興 の 先行き が 見通せ ない 中 、 駆け付け た 避難者ら は 「 きょう の １ 勝 が 福島 の 力 に なる 」 と 喜ん だ 。
+∃ SITUATION[3] ENTITY[10] ENTITY[11] ENTITY[9] EVENT[12] EVENT[8] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ から_の_復興(ENTITY[福島第１原発事故], ENTITY[5]) ∧
+  の_先行き(ENTITY[5], ENTITY[4]) ∧
+   FACT(SITUATION[3], ¬ ∃ EVENT[6] 見通せ(EVENT[6], ENTITY[4])) ∧
+    駆け付け_た(EVENT[7], ENTITY[1]) ∧ 中(EVENT[7]) = SITUATION[3] ∧ 避難者ら(ENTITY[1]) ∧
+     past(EVENT[7]) ∧
+      past(EVENT[8]) ∧
+       きょう(ENTITY[10]) ∧
+        (CD_１_勝(ENTITY[9]), の(ENTITY[10], ENTITY[9])) ∧
+         の_力(ENTITY[福島], ENTITY[11]) ∧ 喜ん_だ(EVENT[8], ENTITY[1], なる(EVENT[12], ENTITY[9], ENTITY[11])))
+
+# ::id 7_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 応援スタンド に は 富岡町民 をはじめ 、 県内各地 から 総勢 １０００ 人 が 詰め掛け た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 応援スタンド(ENTITY[1]) ∧
+  県内各地(ENTITY[2]) ∧
+   (CD_１０００_人(ENTITY[3]), 総勢(ENTITY[3])) ∧
+    past(EVENT[4]) ∧
+     詰め掛け_た(EVENT[4], ENTITY[3]) ∧ から(EVENT[4]) = ENTITY[2] ∧ をはじめ(EVENT[4]) = ENTITY[富岡町民] ∧
+      に(EVENT[4]) = ENTITY[1])
+
+# ::id 8_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 町内 に ある 富岡高 は 避難区域 に あり 、 メガホン など が 持ち出せ なかっ た ため 、 手作り の マラカス や 町内 の 名所 「 夜 の 森 の 桜 」 を イメージ し た ピンク色 の ポンチョ を 身 に 着け て 応援 し た 。
+∃ SITUATION[7] ENTITY[1] EVENT[6] EVENT[21] EVENT[24] EVENT[25] ENTITY[5] ENTITY[9] ENTITY[8] ENTITY[20] ENTITY[19] GROUP[14] ENTITY[13] ENTITY[18] ENTITY[22] ENTITY[23] ENTITY[11] EVENT[4] ENTITY[3] (
+ 町内(ENTITY[3]) ∧
+  ある(EVENT[4], ENTITY[富岡高]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+   ENTITY[1] = *pro* ∧
+    避難区域(ENTITY[5]) ∧
+     メガホン(ENTITY[9]) ∧
+      など(ENTITY[9], ENTITY[8]) ∧
+       FACT(SITUATION[7], ¬ ∃ EVENT[10] (past(EVENT[10]) ∧ 持ち出せ_た(EVENT[10], ENTITY[8]))) ∧
+        夜(ENTITY[20]) ∧
+         の_森(ENTITY[20], ENTITY[19]) ∧
+          の_桜(ENTITY[19], ENTITY[18]) ∧
+           CONJ_や(∃ ENTITY[16] ENTITY[15] (手作り(ENTITY[16]) ∧ の_マラカス(ENTITY[16], ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])),
+            ∃ ENTITY[17] (町内(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[14]))) ∧
+            の_名所(GROUP[14], ENTITY[13]) ∧
+             namely_-ENTITY-(ENTITY[13], ENTITY[18]) ∧
+              ピンク色(ENTITY[22]) ∧
+               イメージする.0_た(EVENT[21], ENTITY[11], ENTITY[18]) ∧ の_ポンチョ(ENTITY[22], ENTITY[11]) ∧
+                身(ENTITY[23]) ∧
+                 past(EVENT[21]) ∧
+                  past(EVENT[25]) ∧
+                   あり(EVENT[6], ENTITY[富岡高]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+                    CONJ_te(着け_て(EVENT[24], ENTITY[1], ENTITY[11]) ∧ に(EVENT[24]) = ENTITY[23] ∧
+                          ため(EVENT[24]) = SITUATION[7],
+                     応援する.0_た(EVENT[25], ENTITY[1]) ∧ ため(EVENT[25]) = SITUATION[7]))
+
+# ::id 9_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 息子 が 同校ＯＢ で 、 富岡町 から いわき市 に 避難 する 遠藤亜由美さん （ ４８ ） は 「 きょう の １ 勝 に 町民 は 励まさ れ た と 思い ます 」 と 感激 し た 様子 。
+∃ ENTITY[10] EVENT[15] EVENT[11] EVENT[9] EVENT[16] ENTITY[13] ENTITY[12] ENTITY[7] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[14] (
+ 息子(ENTITY[3]) ∧
+  同校ＯＢ(ENTITY[4]) ∧
+   CONJ_te(で(EVENT[5], ENTITY[3], ENTITY[4]),
+    避難する.0(EVENT[6], ENTITY[遠藤亜由美さん]) ∧ に(EVENT[6]) = ENTITY[いわき市] ∧ から(EVENT[6]) = ENTITY[富岡町]) ∧
+    CD_４８(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[遠藤亜由美さん]) ∧
+      町民(ENTITY[14]) ∧
+       ENTITY[10] = *pro*{ENTITY[7], ENTITY[遠藤亜由美さん], ENTITY[1], ENTITY[富岡町], ENTITY[いわき市], ENTITY[3], ENTITY[4]} ∧
+        きょう(ENTITY[13]) ∧
+         (CD_１_勝(ENTITY[12]), の(ENTITY[13], ENTITY[12])) ∧
+          感激する.0_た(EVENT[9], ENTITY[7],
+           思い_ます(EVENT[11], ENTITY[10],
+            励まさ_た(EVENT[15], _, ENTITY[14]) ∧ に(EVENT[15]) = ENTITY[12])) ∧
+           様子(ENTITY[7]) ∧
+           before(EVENT[11], EVENT[15]) ∧ past(EVENT[9]) ∧ xxx(EVENT[16], ENTITY[遠藤亜由美さん], ENTITY[7]))
+
+# ::id 10_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 避難区域 の 楢葉町 から いわき市 に 避難 する 小松崎幸枝さん （ ４９ ） は 「 子どもたち が ひたむき に 頑張っ て いる 姿 を 見 て 感動 し まし た 」 と 話し た 。
+∃ SITUATION[7] ENTITY[6] EVENT[9] EVENT[11] EVENT[12] EVENT[5] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ 避難区域(ENTITY[3]) ∧
+  の_xxx(ENTITY[3], ENTITY[楢葉町]) ∧
+   避難する.0(EVENT[4], ENTITY[小松崎幸枝さん]) ∧ に(EVENT[4]) = ENTITY[いわき市] ∧ から(EVENT[4]) = ENTITY[楢葉町] ∧
+    CD_４９(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[小松崎幸枝さん]) ∧
+      ENTITY[6] = *pro*{ENTITY[小松崎幸枝さん], ENTITY[1], ENTITY[楢葉町], ENTITY[いわき市], ENTITY[3]} ∧
+       子どもたち(ENTITY[8]) ∧
+        姿(SITUATION[7], 頑張っ_て_いる(EVENT[9], ENTITY[8])) ∧
+         ADV_ひたむき_に(EVENT[9]) ∧
+          before(EVENT[5], EVENT[12]) ∧
+           past(EVENT[5]) ∧
+            話し_た(EVENT[5], ENTITY[小松崎幸枝さん],
+             CONJ_te(見_て(EVENT[11], ENTITY[6], SITUATION[7]), 感動する.0_まし_た(EVENT[12], ENTITY[6]))))
+
+# ::id 11_newswire_11227_K201401010A0EA0XX00001;NJ
+# ::snt 駆け付け た 宮本皓一町長 も 「 全町避難 を 強い られ て いる 町 にとって 、 何より うれしい ニュース だ 」 と 喜ん だ 。
+∃ ATTRIB[10] ENTITY[4] ENTITY[7] ENTITY[9] ENTITY[5] EVENT[2] EVENT[8] EVENT[11] EVENT[3] (
+ past(EVENT[2]) ∧
+  ADV_何より(EVENT[11]) ∧
+   past(EVENT[3]) ∧
+    駆け付け_た(EVENT[2], ENTITY[宮本皓一町長]) ∧
+     ENTITY[4] = *pro*{ENTITY[宮本皓一町長]} ∧
+      全町避難(ENTITY[7]) ∧
+       強い_て_いる(EVENT[8], _, ENTITY[7], ENTITY[5]) ∧ 町(ENTITY[5]) ∧
+        うれしい(ATTRIB[10]) ∧
+         ATTRIBUTE_ニュース(ATTRIB[10], ENTITY[9]) ∧
+          喜ん_だ(EVENT[3], ENTITY[宮本皓一町長], だ(EVENT[11], ENTITY[4], ENTITY[9]) ∧ にとって(EVENT[11]) = ENTITY[5]))

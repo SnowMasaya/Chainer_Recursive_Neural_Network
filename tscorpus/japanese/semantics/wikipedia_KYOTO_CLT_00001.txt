@@ -1,0 +1,160 @@
+# ::id 1_wikipedia_KYOTO_CLT_00001,1;NJ
+# ::snt 京都将棋
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[京都将棋])
+
+# ::id 2_wikipedia_KYOTO_CLT_00001,2;NJ
+# ::snt 京都将棋 （ きょうとしょうぎ ） と は 将棋 の 一種 で あり 、 二 人 で 行なう ボードゲーム （ 盤上遊戯 ） の 一種 で ある 。
+∃ ENTITY[8] EVENT[3] EVENT[10] EVENT[11] ENTITY[2] ENTITY[1] ENTITY[9] ENTITY[5] ENTITY[6] ENTITY[4] (
+ namely_-ENTITY-(ENTITY[きょうとしょうぎ], ENTITY[京都将棋]) ∧
+  将棋(ENTITY[2]) ∧
+   の_一種(ENTITY[2], ENTITY[1]) ∧
+    ENTITY[8] = *pro*{ENTITY[4], ENTITY[京都将棋], ENTITY[1], ENTITY[2], ENTITY[きょうとしょうぎ]} ∧
+     CD_二_人(ENTITY[9]) ∧
+      行なう(EVENT[10], ENTITY[8], ENTITY[6]) ∧ で(EVENT[10]) = ENTITY[9] ∧ ボードゲーム(ENTITY[6]) ∧
+       盤上遊戯(ENTITY[5]) ∧
+        namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+         の_一種(ENTITY[6], ENTITY[4]) ∧
+          で_あり(EVENT[3], ENTITY[京都将棋], ENTITY[1]) ∧ で_ある(EVENT[11], ENTITY[京都将棋], ENTITY[4]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00001,3;NJ
+# ::snt 1976 年 に 田宮 克哉 が 発表 し た 、 ごく 新しい 将棋 で ある 。
+∃ ATTRIB[6] ENTITY[1] EVENT[5] EVENT[7] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_1976_年(ENTITY[4]) ∧
+   ごく_新しい(ATTRIB[6]) ∧
+    発表する.0_た(EVENT[5], ENTITY[田宮_克哉], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ ATTRIBUTE_将棋(ATTRIB[6], ENTITY[2]) ∧
+     past(EVENT[5]) ∧ で_ある(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_CLT_00001,4;NJ
+# ::snt 京都銀閣将棋 、 京都銀閣金鶏秘譜将棋 と も 言う 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] GROUP[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   is_element_of(ENTITY[京都銀閣将棋], GROUP[3]) ∧ is_element_of(ENTITY[京都銀閣金鶏秘譜将棋], GROUP[3]) ∧ 言う(EVENT[4], ENTITY[1], ENTITY[2], GROUP[3]))
+
+# ::id 5_wikipedia_KYOTO_CLT_00001,5;NJ
+# ::snt こう 言う が 香車 の 裏 が と金 だ から で 京都 に は 関係 ない 。
+∃ ENTITY[4] ENTITY[1] EVENT[2] EVENT[11] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro* ∧
+   関係(ENTITY[10]) ∧
+    ADV_こう(EVENT[2]) ∧
+     CONJ_が(言う(EVENT[2], ENTITY[1]),
+      CONJ_te(∀ EVENT[8] ENTITY[6] ENTITY[7] ENTITY[5] CND_から(
+               香車(ENTITY[6]) ∧ の_裏(ENTITY[6], ENTITY[5]) ∧ と金(ENTITY[7]) ∧
+                だ(EVENT[8], ENTITY[5], ENTITY[7]), ∃ EVENT[9] で(EVENT[9], ENTITY[4])),
+       ない(EVENT[11], ENTITY[4], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[京都])))
+
+# ::id 6_wikipedia_KYOTO_CLT_00001,6;NJ
+# ::snt 駒 を 1 手 ごと に 裏返す という 斬新 な ルール で 知ら れる 。
+∃ ENTITY[4] ATTRIB[3] ENTITY[1] EVENT[9] ENTITY[7] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  斬新_な(ATTRIB[3]) ∧
+   ENTITY[4] = *pro*{ENTITY[1]} ∧
+    駒(ENTITY[5]) ∧
+     CD_1_手(ENTITY[7]) ∧
+      ATTRIBUTE_ルール(ATTRIB[3], ENTITY[2]) ∧
+       THAT_ルール(ごと ENTITY[6] (ENTITY[6] = ENTITY[7],
+             ∃ EVENT[8] (裏返す(EVENT[8], ENTITY[4], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[6])), ENTITY[2]) ∧
+       知ら(EVENT[9], _, ENTITY[1]) ∧ で(EVENT[9]) = ENTITY[2])
+
+# ::id 7_wikipedia_KYOTO_CLT_00001,7;NJ
+# ::snt 大山 康晴 十五 世 名人 が 絶賛 し た と の 逸話 が ある 。
+∃ ENTITY[3] SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *pro*{ENTITY[1]} ∧
+  (CD_十五_世(ENTITY[4]), 名人(ENTITY[4])) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[大山_康晴]) ∧
+    と(SITUATION[2], 絶賛する.0_た(EVENT[5], ENTITY[大山_康晴], ENTITY[3])) ∧
+     の_逸話(SITUATION[2], ENTITY[1]) ∧ past(EVENT[5]) ∧ ある(EVENT[6], ENTITY[1]))
+
+# ::id 8_wikipedia_KYOTO_CLT_00001,8;NJ
+# ::snt ルール
+∃ EVENT[2] ENTITY[1] (ルール(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 9_wikipedia_KYOTO_CLT_00001,9;NJ
+# ::snt ほぼ 将棋 と 同様 だ が 、 以下 の 点 で 異なる 。
+∃ ENTITY[1] EVENT[3] EVENT[7] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  将棋(ENTITY[2]) ∧
+   以下(ENTITY[6]) ∧
+    の_点(ENTITY[6], ENTITY[5]) ∧
+     ADV_ほぼ(EVENT[3]) ∧
+      CONJ_が(同様_だ(EVENT[3], ENTITY[1]) ∧ と(EVENT[3]) = ENTITY[2],
+       異なる(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = ENTITY[5]))
+
+# ::id 10_wikipedia_KYOTO_CLT_00001,10;NJ
+# ::snt 盤 面 は 縦横 5 マス 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (盤_面(ENTITY[1]) ∧ (CD_5_マス(ENTITY[2]), 縦横(ENTITY[2])) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 11_wikipedia_KYOTO_CLT_00001,11;NJ
+# ::snt 自陣 ・ 敵陣 は ない 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] GROUP[1] (
+ 自陣(ENTITY[2]) ∧
+  敵陣(ENTITY[3]) ∧ is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[3], GROUP[1]) ∧ ない(EVENT[4], GROUP[1]))
+
+# ::id 12_wikipedia_KYOTO_CLT_00001,12;NJ
+# ::snt 初期 状態 で は 、 右図 の よう に 駒 を 配置 する 。
+∃ ENTITY[1] EVENT[6] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[2] (
+ 初期_状態(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   右図(ENTITY[4]) ∧
+    の_よう(ENTITY[4], ENTITY[3]) ∧
+     駒(ENTITY[5]) ∧
+      配置する.0(EVENT[6], ENTITY[1], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[3] ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 13_wikipedia_KYOTO_CLT_00001,13;NJ
+# ::snt 駒 は 次 の 5 種類 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 駒(ENTITY[1]) ∧
+  次(ENTITY[3]) ∧
+   (CD_5_種類(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 14_wikipedia_KYOTO_CLT_00001,14;NJ
+# ::snt 動き は 将棋 の もの と 同じ 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 動き(ENTITY[1]) ∧
+  将棋(ENTITY[3]) ∧
+   の_もの(ENTITY[3], ENTITY[2]) ∧ 同じ(EVENT[4], ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[2])
+
+# ::id 15_wikipedia_KYOTO_CLT_00001,20;NJ
+# ::snt 駒 は 成ら ず 、 その 代わりに 1 手 動く ごと に その 駒 を 裏返す 。
+∃ ENTITY[7] SITUATION[6] ENTITY[1] EVENT[9] DEGREE[8] ENTITY[2] ENTITY[10] ENTITY[4] (
+ 駒(ENTITY[2]) ∧
+  駒(ENTITY[10]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[7] = *pro*{ENTITY[1], ENTITY[4], ENTITY[2]} ∧
+     CD_1_手(DEGREE[8]) ∧
+      FACT(SITUATION[6], 動く(EVENT[9], ENTITY[7]) ∧ MSR(EVENT[9]) = DEGREE[8]) ∧
+       CONJ_te(¬ ∃ EVENT[3] 成ら(EVENT[3], ENTITY[2]),
+        ごと SITUATION[5] (SITUATION[5] = SITUATION[6],
+         ∃ EVENT[11] (
+          裏返す(EVENT[11], ENTITY[1], ENTITY[10]) ∧
+           に(EVENT[11]) = SITUATION[5] ∧ 代わりに(EVENT[11]) = ENTITY[4]))))
+
+# ::id 16_wikipedia_KYOTO_CLT_00001,21;NJ
+# ::snt すなわち 駒 は 1 手 ごと に 性能 が 変わる 。
+∃ ENTITY[3] ENTITY[1] (
+ 駒(ENTITY[1]) ∧
+  CD_1_手(ENTITY[3]) ∧
+   ごと ENTITY[2] (ENTITY[2] = ENTITY[3],
+    ∃ EVENT[5] ENTITY[4] (性能(ENTITY[4]) ∧ 変わる(EVENT[5], (ENTITY[1], ENTITY[4])) ∧ に(EVENT[5]) = ENTITY[2])))
+
+# ::id 18_wikipedia_KYOTO_CLT_00001,23;NJ
+# ::snt また 最後 列 に 歩 や 桂馬 で 打っ て も 構わ ない 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ¬ ∃ SITUATION[2] EVENT[7] EVENT[8] GROUP[4] ENTITY[3] (
+        最後_列(ENTITY[3]) ∧
+         CONJ_や(∃ ENTITY[5] (歩(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+          ∃ ENTITY[6] (桂馬(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+          FACT(SITUATION[2],
+           打っ_て(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = GROUP[4] ∧
+            に(EVENT[7]) = ENTITY[3]) ∧
+           構わ(EVENT[8], ENTITY[1]) ∧ te(EVENT[8]) = SITUATION[2]))
+
+# ::id 19_wikipedia_KYOTO_CLT_00001,24;NJ
+# ::snt 打ち歩詰め 、 二歩 は 禁止 さ れ て い ない 。
+∃ ENTITY[2] ENTITY[3] GROUP[1] (
+ 打ち歩詰め(ENTITY[2]) ∧
+  二歩(ENTITY[3]) ∧
+   is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[3], GROUP[1]) ∧ ¬ ∃ EVENT[4] 禁止する.0_て_い(EVENT[4], _, GROUP[1]))

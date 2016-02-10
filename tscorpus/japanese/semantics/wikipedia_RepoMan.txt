@@ -1,0 +1,88 @@
+# ::id 1_wikipedia_RepoMan;NJ
+# ::snt レポマン
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[レポマン])
+
+# ::id 2_wikipedia_RepoMan;NJ
+# ::snt あらすじ
+∃ EVENT[2] ENTITY[1] (あらすじ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 3_wikipedia_RepoMan;NJ
+# ::snt ロサンゼルス 。
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[ロサンゼルス])
+
+# ::id 4_wikipedia_RepoMan;NJ
+# ::snt パンク の 青年 オットー は 勤め て い た スーパーマーケット を 解雇 さ れ 、 家族 から は 疎んじ られ 、 悶々とし た 日々 を 過ごし て い た 。
+∃ ENTITY[11] SITUATION[10] ENTITY[5] EVENT[6] EVENT[7] EVENT[9] EVENT[12] EVENT[13] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[8] (
+ パンク(ENTITY[2]) ∧
+  の_青年(ENTITY[2], ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[1], ENTITY[オットー]) ∧
+    家族(ENTITY[8]) ∧
+     ENTITY[5] = *pro*{ENTITY[オットー], ENTITY[1], ENTITY[2]} ∧
+      勤め_て_い_た(EVENT[6], ENTITY[5]) ∧ LOC(EVENT[6]) = ENTITY[3] ∧ スーパーマーケット(ENTITY[3]) ∧
+       ENTITY[11] = *pro*{ENTITY[オットー], ENTITY[8], ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+        日々(SITUATION[10], 悶々とし_た(EVENT[12], ENTITY[11])) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[13]) ∧
+           解雇する.0(EVENT[7], _, ENTITY[3]) ∧
+            疎んじ(EVENT[9], _, ENTITY[オットー]) ∧ から(EVENT[9]) = ENTITY[8] ∧
+             過ごし_て_い_た(EVENT[13], ENTITY[オットー], SITUATION[10]))
+
+# ::id 5_wikipedia_RepoMan;NJ
+# ::snt ある 日 、 オットー は 借金 の カタ として 自動車 を 回収 する 業者 ＝ レポマン の バッド という 男 と 知り合い 、 自分 も レポマン に なる 事 を 決める 。
+∃ ENTITY[12] SITUATION[11] EVENT[8] EVENT[10] EVENT[14] EVENT[15] ENTITY[6] ENTITY[7] ENTITY[5] ENTITY[3] ENTITY[9] ENTITY[2] ENTITY[13] TIME[1] (
+ 日(TIME[1]) ∧
+  レポマン(ENTITY[9]) ∧
+   借金(ENTITY[6]) ∧
+    の_カタ(ENTITY[6], ENTITY[5]) ∧
+     自動車(ENTITY[7]) ∧
+      回収する.0(EVENT[8], ENTITY[3], ENTITY[7]) ∧ として(EVENT[8]) = ENTITY[5] ∧ 業者(ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[9]) ∧
+        の_xxx(ENTITY[9], ENTITY[バッド]) ∧
+         という_男(ENTITY[バッド], ENTITY[2]) ∧
+          ENTITY[12] = 自分{ENTITY[オットー], ENTITY[2], ENTITY[9], ENTITY[3], ENTITY[5], ENTITY[7], ENTITY[6], ENTITY[バッド]} ∧
+           レポマン(ENTITY[13]) ∧
+            事(SITUATION[11], なる(EVENT[14], ENTITY[12]) ∧ に(EVENT[14]) = ENTITY[13]) ∧
+             知り合い(EVENT[10], ENTITY[オットー]) ∧ と(EVENT[10]) = ENTITY[2] ∧
+              決める(EVENT[15], ENTITY[オットー], SITUATION[11]) ∧ is_contained_in(時間(EVENT[15]), TIME[1]))
+
+# ::id 6_wikipedia_RepoMan;NJ
+# ::snt ある 日 、 1 台 の 車 に 高額 の 懸賞金 が かけ られ 、 オットーたち は 色めき立つ 。
+∃ EVENT[6] EVENT[8] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[7] TIME[1] (
+ 日(TIME[1]) ∧
+  オットーたち(ENTITY[7]) ∧
+   CD_1_台(ENTITY[3]) ∧
+    の_車(ENTITY[3], ENTITY[2]) ∧
+     高額(ENTITY[5]) ∧
+      の_懸賞金(ENTITY[5], ENTITY[4]) ∧
+       かけ(EVENT[6], _, ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[2] ∧
+        色めき立つ(EVENT[8], ENTITY[7]) ∧ is_contained_in(時間(EVENT[8]), TIME[1]))
+
+# ::id 7_wikipedia_RepoMan;NJ
+# ::snt 商売仇 と の 駆け引き の 末 、 車 の 回収 に 成功 し た オットーたち で あっ た が 、 その 車 に は 何と 宇宙人 の 死体 が 積ま れ て い た 。
+∃ EVENT[8] EVENT[9] EVENT[13] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[1] ENTITY[12] ENTITY[11] ENTITY[10] (
+ 車(ENTITY[10]) ∧
+  商売仇(ENTITY[3]) ∧
+   と_の_駆け引き(ENTITY[3], ENTITY[2]) ∧
+    の_末(ENTITY[2], ENTITY[1]) ∧
+     車(ENTITY[7]) ∧
+      の_回収(ENTITY[7], ENTITY[6]) ∧
+       成功する.0_た(EVENT[8], ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[6] ∧ オットーたち(ENTITY[4]) ∧
+        宇宙人(ENTITY[12]) ∧
+         の_死体(ENTITY[12], ENTITY[11]) ∧
+          past(EVENT[8]) ∧
+           past(EVENT[9]) ∧
+            ADV_何と(EVENT[13]) ∧
+             past(EVENT[13]) ∧
+              CONJ_が(で_あっ_た(EVENT[9], _, ENTITY[4]) ∧ ADV(EVENT[9]) = ENTITY[1],
+               積ま_て_い_た(EVENT[13], _, ENTITY[11]) ∧ に(EVENT[13]) = ENTITY[10]))
+
+# ::id 8_wikipedia_RepoMan;NJ
+# ::snt オットーたち は 政府 の 手先 の 組織 から 狙わ れる はめ に なる 。
+∃ ENTITY[3] SITUATION[2] EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[1] (
+ オットーたち(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   政府(ENTITY[6]) ∧
+    の_手先(ENTITY[6], ENTITY[5]) ∧
+     の_組織(ENTITY[5], ENTITY[4]) ∧
+      はめ(SITUATION[2], 狙わ(EVENT[7], _, ENTITY[3]) ∧ から(EVENT[7]) = ENTITY[4]) ∧
+       なる(EVENT[8], ENTITY[1], SITUATION[2]))

@@ -1,0 +1,267 @@
+# ::id 1_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ティータイム
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ティータイム))
+
+# ::id 2_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ／ 還暦ブラボー ＜ 阿部澄江 ＞
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-還暦ブラボー / ENTITY
+             :name ( n-2 / name
+                    :op1 "還暦ブラボー")
+             :NAMELY ( ENTITY-阿部澄江 / ENTITY
+                    :name ( n-3 / name
+                           :op1 "阿部澄江"))))
+
+# ::id 3_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 午 （ うま ） 年 。
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-2 / 午_年
+             :NAMELY ( ENTITY-1 / うま)))
+
+# ::id 4_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt １ 月 １ 日 の 誕生日 で 還暦 を 迎え た 。
+( EVENT-5 / 迎え_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-4 / 還暦)
+      :で ( ENTITY-2 / 誕生日
+             :の ( ENTITY-3 / CD_１_月_１_日))
+      :MOD ( mod-6 / past))
+
+# ::id 5_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 光陰 矢 の ごとし 。
+( EVENT-3 / ごとし
+      :ARG0 ( ENTITY-1 / 光陰)
+      :の ( ENTITY-2 / 矢))
+
+# ::id 6_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt あっという間 の ６０ 年 だっ た 。
+( EVENT-4 / だっ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_６０_年)
+             :の ( ENTITY-3 / あっという間))
+      :MOD ( mod-5 / past))
+
+# ::id 7_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 今年 は 新た な 人生 の スタート 。
+( EVENT-5 / EVENT
+      :ARG0 ( ENTITY-1 / 今年)
+      :ARG1 ( ENTITY-2 / スタート
+             :の ( ENTITY-3 / 人生
+                    :ATTRIBUTE ( ATTRIB-4 / 新た_な))))
+
+# ::id 8_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 絵馬 に 願い事 を …。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-3 / 願い事)
+      :に ( ENTITY-2 / 絵馬))
+
+# ::id 9_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 「 ６０ 年後 、 １２０ 歳 の 誕生日 に ２ 度目 の 還暦 を 迎え られ ます よう に 」 と 、 したため た 。
+( EVENT-2 / したため_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :THAT ( EVENT-11 / EVENT
+             :ARG0 ( ENTITY-3 / ENTITY
+                    :namely ENTITY-1)
+             :に ( SITUATION-4 / よう
+                    :THAT ( EVENT-10 / 迎え_られ_ます
+                           :ARG0 ENTITY-3
+                           :ARG1 ( ENTITY-8 / 還暦
+                                  :の ( ENTITY-9 / CD_２_度目))
+                           :に ( ENTITY-6 / 誕生日
+                                  :の ( ENTITY-7 / CD_１２０_歳))
+                           :TMP ( TIME-5 / CD_６０_年後))))
+      :MOD ( mod-12 / past))
+
+# ::id 10_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 仕事 で は 、 ３ 月末 で 定年退職 を 迎え ３８ 年間 の 教員生活 に いったん ピリオド を 打つ こと に なっ た 。
+( EVENT-12 / なっ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / 迎え
+                    :ARG1 ( ENTITY-4 / 定年退職)
+                    :で ( ENTITY-3 / CD_３_月末)
+                    :で ( ENTITY-2 / 仕事)))
+      :ARG1 ( SITUATION-6 / こと
+             :THAT ( EVENT-10 / 打つ
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-9 / ピリオド)
+                    :に ( ENTITY-7 / 教員生活
+                           :の ( ENTITY-8 / CD_３８_年間))
+                    :MOD ( mod-13 / いったん)))
+      :MOD ( mod-14 / past))
+
+# ::id 11_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 「 チョーク １ 本 、 わが 教え子 に 夢 を 描き 」 を モットー に 生徒たち と たくさん の 思い出 を つくっ て き た 。
+( EVENT-12 / つくっ_て_き_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-8 / EVENT
+                    :ARG1 ( EVENT-6 / 描き
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-5 / 夢)
+                           :に ( ENTITY-4 / わが
+                                  :pick0
+                                  :MOD ( mod-14 / 教え子))
+                           :ADV ( ENTITY-3 / CD_１_本
+                                  :MOD ( mod-15 / チョーク)))
+                    :に ( ENTITY-7 / モットー)))
+      :ARG1 ( CONJ-13 / CONJ_と
+             :op1 ( GROUP-9 / AND
+                    :op1 ( ENTITY-10 / 生徒たち)
+                    :op2 ENTITY-17)
+             :op2 ( ENTITY-11 / ENTITY ( ENTITY-11 思い出)
+                    :OF GROUP-9))
+      :MOD ( mod-16 / past))
+
+# ::id 12_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt その 出会い が 何より の 宝 で あっ た 。
+( EVENT-4 / で_あっ_た
+      :ARG0 ( ENTITY-1 / 出会い)
+      :ARG1 ( ENTITY-2 / 宝
+             :の ( ATTRIB-3 / 何より))
+      :MOD ( mod-5 / past))
+
+# ::id 13_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 今 は 亡き 祖母 、 父 、 母 に は 言い 尽くせ ない ほど 感謝 し て いる 。
+( EVENT-10 / 感謝する.0_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ほど ( EVENT-9 / 言い_尽くせ
+             :ARG0 ENTITY-1
+             :に ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / 祖母
+                           :ATTRIBUTE ( ATTRIB-6 / 亡き))
+                    :op2 ( ENTITY-7 / 父)
+                    :op3 ( ENTITY-8 / 母))
+             :domain-of ( NEG-12 / NEG))
+      :TMP ( ENTITY-2 / 今))
+
+# ::id 14_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 家路 を 急ぐ 私 に 、 わが家 の 一 灯 が 待っ て い て くれ た 。
+( EVENT-7 / 待っ_て_い_くれ_た
+      :ARG0 ( ENTITY-5 / ENTITY ( ENTITY-5 CD_一_灯)
+             :の ( ENTITY-6 / わが家))
+      :に ( ENTITY-4 / 私
+             :pick0
+             :ARG0-of ( EVENT-3 / 急ぐ
+                    :ARG1 ( ENTITY-2 / 家路)))
+      :MOD ( mod-8 / past))
+
+# ::id 15_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt ４ 人 家族 で 過ごし た ころ が 、 ６０ 年間 の 中 で 一番 幸せ な 時間 だっ た よう に 思え て なら ない 。
+( EVENT-11 / 思え_て_なら
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( SITUATION-7 / よう
+             :THAT ( EVENT-10 / だっ_た
+                    :ARG1 ( ENTITY-8 / 時間
+                           :ATTRIBUTE ( ATTRIB-9 / 一番_幸せ_な))
+                    :MOD ( mod-13 / past)))
+      :で ( ENTITY-5 / 中
+             :の ( ENTITY-6 / CD_６０_年間))
+      :が ( SITUATION-2 / ころ
+             :THAT ( EVENT-4 / 過ごし_た
+                    :ARG0 ENTITY-1
+                    :で ( ENTITY-3 / CD_４_人
+                           :MOD ( mod-14 / 家族))
+                    :MOD ( mod-15 / past)))
+      :domain-of ( NEG-12 / NEG))
+
+# ::id 16_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt さて 、 還暦 の 私 。
+( EVENT-3 / EVENT
+      :ARG1 ( ENTITY-2 / 私
+             :pick0
+             :の ( ENTITY-1 / 還暦)))
+
+# ::id 17_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 父 は 還暦 で わが家 を 新築 し た 。
+( EVENT-4 / 新築する.0_た
+      :ARG0 ( ENTITY-1 / 父)
+      :ARG1 ( ENTITY-3 / わが家)
+      :で ( ENTITY-2 / 還暦)
+      :MOD ( mod-5 / past))
+
+# ::id 18_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 私 も 父 を 見習い 、 生涯 現役 で 仕事 を し たい 。
+( EVENT-6 / し_たい
+      :ARG0 ( ENTITY-1 / 私
+             :pick0
+             :ARG0-of ( EVENT-3 / 見習い
+                    :ARG1 ( ENTITY-2 / 父)))
+      :ARG1 ( ENTITY-5 / 仕事)
+      :で ( ENTITY-4 / 現役)
+      :MOD ( mod-7 / 生涯))
+
+# ::id 19_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そして 母 の よう に いつも 若く 美しく あり たい 。
+( EVENT-5 / 美しく_あり_たい
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-4 / 若く
+                    :に ( ENTITY-2 / よう
+                           :の ( ENTITY-3 / 母))))
+      :に ENTITY-2
+      :MOD ( mod-7 / いつも))
+
+# ::id 20_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 旅 に 出 たり 音楽 を 聴い たり し ながら 自分 を 高め よう 。
+( CRD-13 / ながら
+      :op1 ( EVENT-7 / し
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :たり ( CONJ-11 / CONJ_たり
+                    :op1 ( EVENT-4 / 出
+                           :ARG0 ENTITY-1
+                           :に ( ENTITY-3 / 旅))
+                    :op2 ( EVENT-6 / 聴い
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-5 / 音楽))))
+      :op2 ( EVENT-9 / 高め
+             :ARG0 ENTITY-1
+             :ARG1 ( PICK-12 / or
+                    :op1 ENTITY-5
+                    :op2 ENTITY-3))
+      :domain-of ( MD-14 / MD_よう))
+
+# ::id 21_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そして 時 に は 立ち 止まり 深呼吸 を し 、 いちず に 生き たい 。
+( EVENT-6 / 生き_たい
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / し
+                    :ARG1 ( SITUATION-3 / 深呼吸
+                           :THAT ( EVENT-4 / 立ち_止まり
+                                  :ARG0 ENTITY-1))
+                    :に ( ENTITY-2 / 時)))
+      :MOD ( mod-7 / いちず_に))
+
+# ::id 22_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt 人 の 役 に 立てる こと の 喜び を 生きがい と し て 。
+( EVENT-8 / し_て
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 喜び
+             :の ( SITUATION-3 / こと
+                    :THAT ( EVENT-6 / 立てる
+                           :に ( ENTITY-4 / 役
+                                  :の ( ENTITY-5 / 人)))))
+      :と ( ENTITY-7 / 生きがい))
+
+# ::id 23_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt そんな 思い の 初春 で ある 。
+( EVENT-3 / で_ある
+      :ARG1 ( ENTITY-1 / 初春
+             :の ( ENTITY-2 / 思い)))
+
+# ::id 24_newswire_09149_K201401010A0LB0XX00005;NJ
+# ::snt （ 大崎 市 ・高校 教諭 ・６０ 歳 ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / CD_.６０_歳
+             :MOD ( mod-3 / 大崎_市_.高校_教諭)))

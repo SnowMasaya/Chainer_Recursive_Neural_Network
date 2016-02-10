@@ -1,0 +1,180 @@
+# ::id 1_blog_KNB_002_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］ 正しい 選択
+( EVENT-4 / EVENT
+      :LINK ( ENTITY-2 / 選択
+             :ATTRIBUTE ( ATTRIB-3 / 正しい)
+             :NAMELY ( ENTITY-1 / 携帯_電話)))
+
+# ::id 2_blog_KNB_002_Keitai_1-1-10-01;NJ
+# ::snt （ 階段 の 隙間 に 落とし て しまっ た ）
+( EVENT-4 / 落とし_て_しまっ_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( ENTITY-2 / 隙間
+             :の ( ENTITY-3 / 階段))
+      :MOD ( mod-5 / past))
+
+# ::id 3_blog_KNB_002_Keitai_1-1-11-01;NJ
+# ::snt それでも 彼 は 今 も 、 データ も 飛ば ず に 元気 で やっ て い ます 。
+( CONJ-10 / CONJ_te
+      :op1 ( EVENT-6 / 元気_で
+             :ARG0 ( ENTITY-1 / 彼
+                    :pick0)
+             :TE_に ( SITUATION-3 / FACT
+                    :THAT ( EVENT-5 / 飛ば
+                           :ARG0 ( ENTITY-4 / データ)
+                           :domain-of ( NEG-9 / NEG)))
+             :TMP ( ENTITY-2 / 今))
+      :op2 ( EVENT-7 / やっ_て_い_ます
+             :ARG0 ENTITY-1
+             :TE_に SITUATION-3
+             :TMP ENTITY-2))
+
+# ::id 4_blog_KNB_002_Keitai_1-1-12-01;NJ
+# ::snt なんて 頑丈 な ん だろ う ！ と 、 ただただ 驚く ばかり です 。
+( EVENT-2 / 驚く_ばかり_です
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :THAT ( EVENT-4 / 頑丈_な_ん_だろ
+             :ARG0 ENTITY-1
+             :MOD ( mod-11 / なんて)
+             :domain-of ( EXCLAMATIVE-10 / EXCLAMATIVE)
+             :domain-of ( MD-9 / MD_う))
+      :MOD ( mod-12 / ただただ))
+
+# ::id 5_blog_KNB_002_Keitai_1-1-13-01;NJ
+# ::snt そして それ 以上 に 、 自分 の 雑さ 加減 に 驚く ばかり です 。
+( EVENT-5 / 驚く_ばかり_です
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( ENTITY-3 / 雑さ_加減
+             :の ( PICK-6 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-2))
+      :に ( ENTITY-2 / それ
+             :pick0
+             :MOD ( mod-7 / 以上)))
+
+# ::id 6_blog_KNB_002_Keitai_1-1-2-01;NJ
+# ::snt 半 年 ほど 前 に 携帯 電話 の 機種 変更 を し まし た 。
+( EVENT-6 / し_まし_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-4 / 機種_変更
+             :の ( ENTITY-5 / 携帯_電話))
+      :に ( ENTITY-2 / 前
+             :ほど ( ENTITY-3 / CD_半_年))
+      :MOD ( mod-7 / past))
+
+# ::id 7_blog_KNB_002_Keitai_1-1-3-01;NJ
+# ::snt 悩ん だ 末 、 カシオ の Ｇ’ｚｏｎｅ という 、 衝撃 や 水 濡れ に 強い の が ウリ の 機種 に 決め まし た 。
+( EVENT-15 / 決め_まし_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( ENTITY-4 / 機種
+             :の ( EVENT-14 / EVENT
+                    :ARG0 ( SITUATION-7 / の
+                           :THAT ( EVENT-12 / 強い
+                                  :ARG0 ( PICK-16 / or
+                                         :op1 ENTITY-4
+                                         :op2 ENTITY-Ｇ ’ ｚｏｎｅ
+                                         :op3 ENTITY-5
+                                         :op4 ENTITY-1)
+                                  :に ( CONJ-17 / CONJ_や
+                                         :op1 ( GROUP-9 / AND
+                                                :op1 ( ENTITY-10 / 衝撃)
+                                                :op2 ENTITY-21)
+                                         :op2 ( GROUP-20 / AND
+                                                :op1 ( ENTITY-11 / 水_濡れ)
+                                                :op2 ENTITY-22))))
+                    :ARG1 ( ENTITY-13 / ウリ))
+             :という ( ENTITY-Ｇ ’ ｚｏｎｅ / ENTITY
+                    :name ( n-19 / name
+                           :op1 "Ｇ ’ ｚｏｎｅ")
+                    :の ( ENTITY-5 / カシオ)))
+      :TMP ( SITUATION-2 / 末
+             :THAT ( EVENT-3 / 悩ん_だ
+                    :ARG0 ENTITY-1))
+      :MOD ( mod-18 / past))
+
+# ::id 8_blog_KNB_002_Keitai_1-1-4-01;NJ
+# ::snt モノ の 扱い が 雑 な 自分 にとって は 、 精密 機械 で ある 携帯 は できるだけ 頑丈 な ほう が いい 、 という 発想 から の 選択 でし た 。
+( EVENT-13 / でし_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 選択
+             :から_の ( ENTITY-3 / 発想
+                    :THAT ( EVENT-12 / いい
+                           :ARG0 ( ENTITY-10 / ほう
+                                  :ATTRIBUTE ( ATTRIB-11 / できるだけ_頑丈_な))
+                           :TPC ( ENTITY-5 / 携帯
+                                  :ARG0-of ( EVENT-9 / で_ある
+                                         :ARG1 ( ENTITY-7 / 機械
+                                                :ATTRIBUTE ( ATTRIB-8 / 精密))))
+                           :にとって ( PICK-14 / or
+                                  :op1 ENTITY-2
+                                  :op2 ENTITY-1))))
+      :MOD ( mod-15 / past))
+
+# ::id 9_blog_KNB_002_Keitai_1-1-5-01;NJ
+# ::snt そして その 選択 は 正しかっ た よう に 思え ます 。
+( EVENT-5 / 思え_ます
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( SITUATION-2 / よう
+             :THAT ( EVENT-4 / 正しかっ_た
+                    :ARG0 ( ENTITY-3 / 選択)
+                    :MOD ( mod-6 / past))))
+
+# ::id 10_blog_KNB_002_Keitai_1-1-6-01;NJ
+# ::snt 携帯 を 変え て から 半 年 間 。
+( EVENT-6 / EVENT
+      :LINK ( ENTITY-1 / CD_半_年
+             :MOD ( mod-7 / 間
+                    :TE_から ( EVENT-5 / 変え_て
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-4 / 携帯)))))
+
+# ::id 11_blog_KNB_002_Keitai_1-1-7-01;NJ
+# ::snt ・ コンクリート の 地面 に 誤っ て 落とす こと 数十 回 。
+( EVENT-7 / EVENT
+      :LINK ( ENTITY-1 / CD_数十_回
+             :MOD ( mod-10 / こと
+                    :THAT ( CONJ-9 / CONJ_te
+                           :op1 ( EVENT-5 / 誤っ_て
+                                  :ARG0 ( ENTITY-2 / speaker
+                                         :pick0)
+                                  :に ( ENTITY-3 / 地面
+                                         :の ( ENTITY-4 / コンクリート)))
+                           :op2 ( EVENT-6 / 落とす
+                                  :ARG0 ENTITY-2
+                                  :に ENTITY-3)))))
+
+# ::id 12_blog_KNB_002_Keitai_1-1-8-01;NJ
+# ::snt ・ 猛スピード で 走る 自転車 から 誤っ て 落とす こと ２ 回 。
+( EVENT-8 / EVENT
+      :LINK ( ENTITY-1 / CD_２_回
+             :MOD ( mod-11 / こと
+                    :THAT ( CONJ-10 / CONJ_te
+                           :op1 ( EVENT-6 / 誤っ_て
+                                  :から ( ENTITY-2 / 自転車
+                                         :ARG0-of ( EVENT-5 / 走る
+                                                :で ( ENTITY-4 / 猛スピード))))
+                           :op2 ( EVENT-7 / 落とす
+                                  :から ENTITY-2)))))
+
+# ::id 13_blog_KNB_002_Keitai_1-1-9-01;NJ
+# ::snt ・ 大学 校舎 の ２ 階 から 、 誤っ て １ 階 まで 落とす こと １ 回 。
+( EVENT-8 / EVENT
+      :LINK ( ENTITY-1 / CD_１_回
+             :MOD ( mod-11 / こと
+                    :THAT ( CONJ-10 / CONJ_te
+                           :op1 ( EVENT-5 / 誤っ_て
+                                  :ARG0 ( ENTITY-2 / speaker
+                                         :pick0)
+                                  :から ( ENTITY-3 / ENTITY ( ENTITY-3 CD_２_階)
+                                         :の ( ENTITY-4 / 大学_校舎)))
+                           :op2 ( EVENT-7 / 落とす
+                                  :ARG0 ENTITY-2
+                                  :まで ( ENTITY-6 / CD_１_階)
+                                  :から ENTITY-3)))))

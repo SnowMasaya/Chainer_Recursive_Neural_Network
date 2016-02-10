@@ -1,0 +1,1202 @@
+# ::id 1_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 東北再生 あす へ の 針路
+∃ EVENT[5] GROUP[1] (
+ ∃ ENTITY[2] (東北再生(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[4] ENTITY[3] (あす(ENTITY[4]) ∧ へ_の_針路(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[1])
+
+# ::id 2_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 提言 から 見る 現状 と 課題
+∃ ENTITY[3] EVENT[5] EVENT[9] ENTITY[4] GROUP[6] ENTITY[1] (
+ ENTITY[3] = *speaker* ∧
+  提言(ENTITY[4]) ∧
+   CONJ_と(∃ ENTITY[7] (現状(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ENTITY[8] (課題(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    見る.0(EVENT[5], ENTITY[3], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[4] ∧ equals(GROUP[6], ENTITY[1]) ∧
+     xxx(EVENT[9]) ∧ LINK(EVENT[9]) = ENTITY[1])
+
+# ::id 3_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 本格復興 へ 転換 の 年
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 本格復興(ENTITY[3]) ∧
+  へ_転換(ENTITY[3], ENTITY[2]) ∧
+   の_年(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 4_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復旧 から 本格復興 へ 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 復旧(ENTITY[1]) ∧
+  本格復興(ENTITY[2]) ∧ xxx(EVENT[3]) ∧ へ(EVENT[3]) = ENTITY[2] ∧ から(EVENT[3]) = ENTITY[1])
+
+# ::id 5_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 東日本大震災 から ３ 年 近く が 経過 し 、 被災地 は ターニングポイント の 年 を 迎え た 。
+∃ EVENT[2] EVENT[6] ENTITY[1] ENTITY[5] ENTITY[4] ENTITY[3] (
+ 被災地(ENTITY[3]) ∧
+  (CD_３_年(ENTITY[1]), 近く(ENTITY[1])) ∧
+   ターニングポイント(ENTITY[5]) ∧
+    の_年(ENTITY[5], ENTITY[4]) ∧
+     past(EVENT[6]) ∧
+      経過する.0(EVENT[2], ENTITY[1]) ∧ から(EVENT[2]) = EVENT[東日本大震災] ∧ 迎える.0_た(EVENT[6], ENTITY[3], ENTITY[4]))
+
+# ::id 6_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興 の 先 に ある の は 、 雄々しく 自立 し 、 豊か に 創造 し 、 固く 結束 する 東北 で あっ て ほしい 。
+∃ ENTITY[12] ENTITY[1] EVENT[10] EVENT[13] EVENT[15] EVENT[17] EVENT[7] ENTITY[8] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[2] (
+ 復興(ENTITY[5]) ∧
+  の_先(ENTITY[5], ENTITY[4]) ∧
+   有る.0(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[4] ∧ の(ENTITY[2]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[12] = *pro*{ENTITY[2], ENTITY[1], ENTITY[4], ENTITY[5]} ∧
+      自立する.0(EVENT[10], ENTITY[8]) ∧ 創造する.0(EVENT[13], ENTITY[8], ENTITY[12]) ∧ 結束する.0(EVENT[15], ENTITY[8]) ∧
+       東北(ENTITY[8]) ∧
+       ADV_雄々しく(EVENT[10]) ∧
+        ADV_豊か_に(EVENT[13]) ∧
+         ADV_固く(EVENT[15]) ∧ ほしい(EVENT[7], ENTITY[1], ENTITY[2], で_あっ_て(EVENT[17], ENTITY[2], ENTITY[8])))
+
+# ::id 7_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt そう 願っ て 河北新報社 が まとめ た 「 東北再生への提言 」 も 、 これ から が 真価 を 問わ れる 局面 だ 。
+∃ ENTITY[9] SITUATION[8] ENTITY[7] ENTITY[2] EVENT[3] EVENT[5] EVENT[12] EVENT[10] EVENT[13] ENTITY[11] TIME[6] (
+ ENTITY[2] = *pro* ∧
+  CONJ_te(願う.0_て(EVENT[3], _, ENTITY[2]), まとめる.0_た(EVENT[5], ORG[河北新報社], WORK_OF_ART[東北再生への提言])) ∧
+   ENTITY[7] = これ ∧
+    から_が(ENTITY[7], TIME[6]) ∧
+     ENTITY[9] = *pro* ∧
+      真価(ENTITY[11]) ∧
+       局面(SITUATION[8], れる(EVENT[10], WORK_OF_ART[東北再生への提言], ENTITY[9], 問う.0(EVENT[12], ENTITY[9], ENTITY[11]))) ∧
+        ADV_そう(EVENT[3]) ∧
+         past(EVENT[5]) ∧ だ(EVENT[13], WORK_OF_ART[東北再生への提言], SITUATION[8]) ∧ is_contained_in(時間(EVENT[13]), TIME[6]))
+
+# ::id 8_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ３ 分野 １１ 項目 の 提言 を 通し 、 東北 の 今 を 検証 する 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[5] (
+ ENTITY[1] = *speaker* ∧
+  CD_３_分野_１１_項目(ENTITY[3]) ∧
+   の_提言(ENTITY[3], ENTITY[2]) ∧
+    の_今(NORP[東北], ENTITY[5]) ∧ 通す.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧ 検証する.0(EVENT[6], ENTITY[1], ENTITY[5]))
+
+# ::id 9_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ◎ 安全安心 の まちづくり
+∃ EVENT[3] ENTITY[2] ENTITY[1] (安全安心(ENTITY[2]) ∧ の_まちづくり(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 10_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 住まい再建 、 地域差顕在化
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (住まい再建(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (地域差顕在化(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 11_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 １
+∃ EVENT[2] ENTITY[1] ((CD_１(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 12_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 高台移住 の 推進・定着 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (高台移住(ENTITY[2]) ∧ の_推進.定着(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 13_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 津波浸水域 から の 住宅移転 や 災害公営住宅 の 建設 は 、 当初 計画 の 遅れ や 取り組み の 地域差 が 顕在化 し て いる 。
+∃ EVENT[11] GROUP[6] ENTITY[3] ENTITY[2] ENTITY[5] ENTITY[4] GROUP[1] (
+ 津波浸水域(ENTITY[3]) ∧
+  から_の_住宅移転(ENTITY[3], ENTITY[2]) ∧
+   災害公営住宅(ENTITY[5]) ∧
+    の_建設(ENTITY[5], ENTITY[4]) ∧
+     CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[4], GROUP[1])) ∧
+      CONJ_や(∃ ENTITY[8] ENTITY[7] (計画(ENTITY[8]) ∧ の_遅れ(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+       ∃ ENTITY[10] ENTITY[9] (取り組み(ENTITY[10]) ∧ の_地域差(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+       ADV_当初(EVENT[11]) ∧ 顕在化する.0_て_いる(EVENT[11], GROUP[6]) ∧ TPC(EVENT[11]) = GROUP[1])
+
+# ::id 14_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 前例 の ない 被災規模 に 支援制度 が 追い付い て い ない 実態 は 、 復興庁 の データ （ ２０１３ 年 ９ 月 末 現在 ） で も 明らか だ 。
+∃ SITUATION[1] EVENT[5] EVENT[12] ENTITY[4] ENTITY[6] ENTITY[2] ENTITY[11] ENTITY[9] ENTITY[8] ENTITY[10] (
+ 前例(ENTITY[4]) ∧
+  ない(EVENT[5], (ENTITY[2], ENTITY[4])) ∧ 被災規模(ENTITY[2]) ∧
+   支援制度(ENTITY[6]) ∧
+    実態(SITUATION[1], ¬ ∃ EVENT[7] (追い付く.0_て_い(EVENT[7], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[2])) ∧
+     復興庁(ENTITY[11]) ∧
+      の_データ(ENTITY[11], ENTITY[10]) ∧
+       (CD_９_月(ENTITY[9]), 末(ENTITY[9])) ∧
+        (CD_２０１３_年(ENTITY[8]), LINK_現在(ENTITY[9], ENTITY[8])) ∧
+         namely_-ENTITY-(ENTITY[8], ENTITY[10]) ∧ 明らか_だ(EVENT[12], SITUATION[1]) ∧ で(EVENT[12]) = ENTITY[10])
+
+# ::id 15_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災宅地 を 買い上げ て 高台 へ 移転 さ せる 「 防災集団移転促進事業 」 は 、 想定 ３３２ 地区 に対し 、 着工 １７０ 地区 （ ５１ ％ ） 、 地盤 の かさ上げ で 現地再建 を 目指す 「 土地区画整理事業 」 は 想定 ５１ 地区 に対し 、 着工 ２０ 地区 （ ３９ ％ ） に とどまっ て いる 。
+∃ SITUATION[27] SITUATION[23] SITUATION[9] ENTITY[5] EVENT[12] EVENT[16] EVENT[26] EVENT[30] EVENT[31] ENTITY[11] ENTITY[10] ENTITY[14] ENTITY[15] ENTITY[13] ENTITY[25] ENTITY[24] ENTITY[28] ENTITY[29] EVENT[4] EVENT[8] EVENT[6] EVENT[22] ENTITY[3] ENTITY[7] ENTITY[1] ENTITY[20] ENTITY[21] ENTITY[19] ENTITY[17] (
+ 被災宅地(ENTITY[3]) ∧
+  ENTITY[5] = *pro*{ENTITY[3]} ∧
+   高台(ENTITY[7]) ∧
+    CONJ_te(買い上げる.0_て(EVENT[4], ENTITY[1], ENTITY[3]),
+     せる(EVENT[6], ENTITY[1], ENTITY[5], 移転する.0(EVENT[8], ENTITY[5]) ∧ へ(EVENT[8]) = ENTITY[7])) ∧
+     防災集団移転促進事業(ENTITY[1]) ∧
+     地盤(ENTITY[20]) ∧
+      の_かさ上げ(ENTITY[20], ENTITY[19]) ∧
+       現地再建(ENTITY[21]) ∧
+        目指す.0(EVENT[22], ENTITY[17], ENTITY[21]) ∧ で(EVENT[22]) = ENTITY[19] ∧ 土地区画整理事業(ENTITY[17]) ∧
+         想定(ENTITY[10]) ∧
+          CD_３３２_地区(ENTITY[11]) ∧
+           FACT(SITUATION[9], xxx(EVENT[12], (ENTITY[1], ENTITY[10]), ENTITY[11])) ∧
+            着工(ENTITY[13]) ∧
+             CD_１７０_地区(ENTITY[15]) ∧
+              CD_５１_％(ENTITY[14]) ∧
+               namely_-ENTITY-(ENTITY[14], ENTITY[15]) ∧
+                想定(ENTITY[24]) ∧
+                 CD_５１_地区(ENTITY[25]) ∧
+                  FACT(SITUATION[23], xxx(EVENT[26], (ENTITY[17], ENTITY[24]), ENTITY[25])) ∧
+                   CD_２０_地区(ENTITY[29]) ∧
+                    CD_３９_％(ENTITY[28]) ∧
+                     namely_-ENTITY-(ENTITY[28], ENTITY[29]) ∧
+                      FACT(SITUATION[27], xxx(EVENT[30], (ENTITY[17], ENTITY[着工]), ENTITY[29])) ∧
+                       xxx(EVENT[16], (ENTITY[1], ENTITY[13]), ENTITY[15]) ∧
+                        に対し(EVENT[16]) = SITUATION[9] ∧
+                        とどまる.0_て_いる(EVENT[31], ENTITY[17]) ∧ に(EVENT[31]) = SITUATION[27] ∧
+                         に対し(EVENT[31]) = SITUATION[23])
+
+# ::id 16_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 名取市 閖上 で は 、 市 が 合意形成 を 後回し に し て 区画整理事業 を 進め た 結果 、 被災住民 の 反発 を 招き 、 計画 に 縮小 や 遅れ が 生じ た 。
+∃ ENTITY[8] SITUATION[1] EVENT[5] EVENT[7] EVENT[11] EVENT[16] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[2] ENTITY[10] ENTITY[9] GROUP[13] ENTITY[12] (
+ 市(ENTITY[2]) ∧
+  合意形成(ENTITY[3]) ∧
+   後回し(ENTITY[4]) ∧
+    区画整理事業(ENTITY[6]) ∧
+     FACT(SITUATION[1],
+      CONJ_te(する.0_て(EVENT[5], ENTITY[2], ENTITY[3], ENTITY[4]), 進める.0_た(EVENT[7], ENTITY[2], ENTITY[6]))) ∧
+      ENTITY[8] = *pro*{ENTITY[2], ENTITY[6], ENTITY[3], ENTITY[4]} ∧
+       被災住民(ENTITY[10]) ∧
+        の_反発(ENTITY[10], ENTITY[9]) ∧
+         計画(ENTITY[12]) ∧
+          CONJ_や(∃ ENTITY[14] (縮小(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])),
+           ∃ ENTITY[15] (遅れ(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13]))) ∧
+           past(EVENT[7]) ∧
+            past(EVENT[16]) ∧
+             招く.0(EVENT[11], ENTITY[8], ENTITY[9]) ∧
+              生じる.0_た(EVENT[16], GROUP[13]) ∧ に(EVENT[16]) = ENTITY[12] ∧
+               結果(EVENT[16]) = SITUATION[1] ∧ で(EVENT[16]) = LOC[名取市_閖上])
+
+# ::id 17_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 災害公営住宅 は 、 岩手県 野田村 、 仙台市 、 石巻市 、 相馬市 など で 入居 が 始まっ た 。
+∃ EVENT[5] GROUP[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 災害公営住宅(ENTITY[1]) ∧
+  is_element_of(LOC[岩手県_野田村], GROUP[3]) ∧ is_element_of(LOC[仙台市], GROUP[3]) ∧ is_element_of(LOC[石巻市], GROUP[3]) ∧
+   is_element_of(LOC[相馬市], GROUP[3]) ∧
+   など(GROUP[3], ENTITY[2]) ∧
+    入居(ENTITY[4]) ∧
+     past(EVENT[5]) ∧
+      始まる.0_た(EVENT[5], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2] ∧ TPC(EVENT[5]) = ENTITY[1])
+
+# ::id 18_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 半面 、 約２万４７００ 戸 と さ れる 必要戸数 に対し 、 着工済み は わずか ４７７３ 戸 だ 。
+∃ EVENT[5] EVENT[8] ENTITY[4] ENTITY[7] ENTITY[2] ENTITY[1] ENTITY[6] (
+ 着工済み(ENTITY[6]) ∧
+  半面(ENTITY[1]) ∧
+   CD_約２万４７００_戸(ENTITY[4]) ∧
+    する.0(EVENT[5], _, ENTITY[2]) ∧ と(EVENT[5]) = ENTITY[4] ∧ 必要戸数(ENTITY[2]) ∧
+     (CD_４７７３_戸(ENTITY[7]), ADV_わずか(ENTITY[7])) ∧
+      だ(EVENT[8], ENTITY[6], ENTITY[7]) ∧ に対し(EVENT[8]) = ENTITY[2] ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 19_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 防災集団移転 の 枠組み から 外れ た 被災住民 も 少なく ない 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 防災集団移転(ENTITY[4]) ∧
+  の_枠組み(ENTITY[4], ENTITY[3]) ∧
+   外れる.0_た(EVENT[5], ENTITY[1]) ∧ から(EVENT[5]) = ENTITY[3] ∧ 被災住民(ENTITY[1]) ∧
+    past(EVENT[5]) ∧ ¬ ∃ EVENT[6] 少なく(EVENT[6], ENTITY[1]))
+
+# ::id 20_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt そうした 人たち を 救済 し 、 同時 に 新しい まちづくり の 原資 を 確保 する 手だて として 、 特別法 による 定期賃借権 の 設定 が 求め られ て いる 。
+∃ ATTRIB[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[1] EVENT[4] EVENT[9] EVENT[13] ENTITY[3] (
+ 人たち(ENTITY[3]) ∧
+  同時(ENTITY[5]) ∧
+   新しい(ATTRIB[8]) ∧
+    ATTRIBUTE_まちづくり(ATTRIB[8], ENTITY[7]) ∧
+     の_原資(ENTITY[7], ENTITY[6]) ∧
+      救済する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧
+       確保する.0(EVENT[9], ENTITY[1], ENTITY[6]) ∧ に(EVENT[9]) = ENTITY[5] ∧ 手だて(ENTITY[1]) ∧
+       特別法(ENTITY[11]) ∧
+        定期賃借権(ENTITY[12]) ∧
+         の_設定(ENTITY[12], ENTITY[10]) ∧ による_設定(ENTITY[11], ENTITY[10]) ∧
+          求める.0_て_いる(EVENT[13], _, ENTITY[10]) ∧ として(EVENT[13]) = ENTITY[1])
+
+# ::id 21_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ２
+∃ EVENT[2] ENTITY[1] ((CD_２(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 22_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 地域 の 医療 を 担う 人材育成 ＞
+∃ ENTITY[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *pro* ∧
+  地域(ENTITY[4]) ∧
+   の_医療(ENTITY[4], ENTITY[3]) ∧
+    THAT_人材育成(担う.0(EVENT[5], ENTITY[2], ENTITY[3]), ENTITY[1]) ∧
+     xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 23_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 政府 は １３ 年 １１ 月 、 東北 へ の 医学部新設 を 表明 し た 。
+∃ EVENT[4] ENTITY[3] TIME[2] ENTITY[1] (
+ 政府(ENTITY[1]) ∧
+  CD_１３_年_１１_月(TIME[2]) ∧
+   へ_の_医学部新設(LOC[東北], ENTITY[3]) ∧
+    past(EVENT[4]) ∧ 表明する.0_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 24_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 早けれ ば １５ 年 春 に も 開学 する 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ ENTITY[2] EVENT[3] CND_ば(ENTITY[2] = *pro*{ENTITY[1]} ∧ 早けれ(EVENT[3], ENTITY[2]), ∃ EVENT[5] ENTITY[4] (
+       (CD_１５_年(ENTITY[4]), 春(ENTITY[4])) ∧
+        開学する.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4])))
+
+# ::id 25_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 特例的 な 措置 で ある ため 、 通常 の 学部設置審査 に 先立っ て 有識者会議 が 新医学部 の 基本構想 を 検討 する 。
+∃ ATTRIB[4] ENTITY[2] SITUATION[1] EVENT[5] EVENT[8] EVENT[12] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[11] ENTITY[10] ENTITY[9] (
+ ENTITY[2] = *pro* ∧
+  特例的_な(ATTRIB[4]) ∧
+   ATTRIBUTE_措置(ATTRIB[4], ENTITY[3]) ∧
+    FACT(SITUATION[1], で_ある(EVENT[5], ENTITY[2], ENTITY[3])) ∧
+     通常(ENTITY[7]) ∧
+      の_学部設置審査(ENTITY[7], ENTITY[6]) ∧
+       有識者会議(ENTITY[9]) ∧
+        新医学部(ENTITY[11]) ∧
+         の_基本構想(ENTITY[11], ENTITY[10]) ∧
+          CONJ_te(先立つ.0_て(EVENT[8]) ∧ に(EVENT[8]) = ENTITY[6] ∧ ため(EVENT[8]) = SITUATION[1],
+           検討する.0(EVENT[12], ENTITY[9], ENTITY[10]) ∧ ため(EVENT[12]) = SITUATION[1]))
+
+# ::id 26_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 文部科学省 は 開学 の 条件 に （ １ ） 地域 の 医療ニーズ に 対応 し た 教育 （ ２ ） 医療現場 に 迷惑 を 掛け ない 教員医師 の 確保 （ ３ ） 卒業 し た 医師 の 地元定着策 （ ４ ） 入学定員 の 柔軟 な 調整 － を 列記 し た 。
+∃ EVENT[26] ENTITY[2] GROUP[3] ENTITY[1] (
+ 開学(ENTITY[2]) ∧
+  の_条件(ENTITY[2], ENTITY[1]) ∧
+   ∃ EVENT[9] ENTITY[8] ENTITY[7] ENTITY[4] ENTITY[5] (
+    地域(ENTITY[8]) ∧
+     の_医療ニーズ(ENTITY[8], ENTITY[7]) ∧
+      対応する.0_た(EVENT[9], ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[7] ∧ 教育(ENTITY[5]) ∧
+       CD_１(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    ∃ ENTITY[12] ENTITY[10] ENTITY[11] (
+     ¬ ∃ EVENT[16] ENTITY[15] ENTITY[14] (
+           医療現場(ENTITY[14]) ∧
+            迷惑(ENTITY[15]) ∧
+             掛ける.0(EVENT[16], ENTITY[12], ENTITY[15]) ∧ に(EVENT[16]) = ENTITY[14]) ∧
+      教員医師(ENTITY[12]) ∧
+      の_確保(ENTITY[12], ENTITY[11]) ∧
+       CD_２(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[3])) ∧
+    ∃ EVENT[21] ENTITY[19] ENTITY[17] ENTITY[18] (
+     卒業する.0_た(EVENT[21], ENTITY[19]) ∧ 医師(ENTITY[19]) ∧
+      の_地元定着策(ENTITY[19], ENTITY[18]) ∧
+       CD_３(ENTITY[17]) ∧
+        namely_-ENTITY-(ENTITY[17], ENTITY[18]) ∧ past(EVENT[21]) ∧ is_element_of(ENTITY[18], GROUP[3])) ∧
+    ∃ ATTRIB[25] ENTITY[24] ENTITY[22] ENTITY[23] (
+     入学定員(ENTITY[24]) ∧
+      柔軟_な(ATTRIB[25]) ∧
+       の_調整(ENTITY[24], ENTITY[23]) ∧ ATTRIBUTE_調整(ATTRIB[25], ENTITY[23]) ∧
+        CD_４(ENTITY[22]) ∧ namely_-ENTITY-(ENTITY[22], ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[3])) ∧
+    past(EVENT[26]) ∧ 列記する.0_た(EVENT[26], ORG[文部科学省], GROUP[3]) ∧ に(EVENT[26]) = ENTITY[1])
+
+# ::id 27_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ３
+∃ EVENT[2] ENTITY[1] ((CD_３(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 28_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 新た な 「 共助 」 の 仕組みづくり ＞
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 新た_な(ATTRIB[3]) ∧
+  ATTRIBUTE_共助(ATTRIB[3], ENTITY[2]) ∧
+   の_仕組みづくり(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 29_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災地 へ の 自治体職員 の 派遣 は 、 １３ 年 ５ 月 時点 で 全国 ５１１ 自治体 、 ２０５６ 人 を 数え た 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 被災地(ENTITY[2]) ∧
+  自治体職員(ENTITY[3]) ∧
+   の_派遣(ENTITY[3], ENTITY[1]) ∧ へ_の_派遣(ENTITY[2], ENTITY[1]) ∧
+    (CD_１３_年_５_月(ENTITY[4]), 時点(ENTITY[4])) ∧
+     (CD_全_５１１_自治体_２０５６_人(ENTITY[5]), 国(ENTITY[5])) ∧
+      past(EVENT[6]) ∧ 数える.0_た(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[4])
+
+# ::id 30_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 近年 、 全国各地 で 風水害 など の 自然災害 が 頻発 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] TIME[1] (
+ 近年(TIME[1]) ∧
+  風水害(ENTITY[5]) ∧
+   など(ENTITY[5], ENTITY[4]) ∧
+    の_自然災害(ENTITY[4], ENTITY[3]) ∧
+     する.0(EVENT[6], ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[2] ∧ is_contained_in(時間(EVENT[6]), TIME[1]))
+
+# ::id 31_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 派遣元 の 自治体 は 、 復旧・復興ノウハウ を 実地 で 学べる メリット を 強調 する 。
+∃ ENTITY[4] SITUATION[3] EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[1] (
+ 派遣元(ENTITY[2]) ∧
+  の_自治体(ENTITY[2], ENTITY[1]) ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    復旧.復興ノウハウ(ENTITY[5]) ∧
+     実地(ENTITY[6]) ∧
+      メリット(SITUATION[3], 学べる.0(EVENT[7], ENTITY[4], ENTITY[5]) ∧ で(EVENT[7]) = ENTITY[6]) ∧
+       強調する.0(EVENT[8], ENTITY[1], SITUATION[3]))
+
+# ::id 32_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 職員派遣 を 契機 に 、 遠隔地 の 自治体 と 相互災害支援協定 を 締結 する 動き も 活発 だ 。
+∃ ENTITY[2] SITUATION[1] EVENT[6] EVENT[9] EVENT[10] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[8] ENTITY[7] (
+ ENTITY[2] = *pro* ∧
+  遠隔地(ENTITY[4]) ∧
+   の_自治体(ENTITY[4], ENTITY[3]) ∧
+    相互災害支援協定(ENTITY[5]) ∧
+     動き(SITUATION[1], 締結する.0(EVENT[6], ENTITY[2], ENTITY[5]) ∧ と(EVENT[6]) = ENTITY[3]) ∧
+      職員派遣(ENTITY[7]) ∧
+       契機(ENTITY[8]) ∧
+        xxx(EVENT[9], SITUATION[1], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[8] ∧ 活発_だ(EVENT[10], SITUATION[1]))
+
+# ::id 33_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ただ 、 こうした 自治体間 の 「 共助 」 を 東北全体 で 体系化 する まで に は 至っ て い ない 。
+∃ ENTITY[1] ENTITY[5] ENTITY[4] (
+ 自治体間(ENTITY[5]) ∧
+  の_共助(ENTITY[5], ENTITY[4]) ∧
+   ENTITY[1] = *pro* ∧
+    ¬ ∃ ENTITY[3] SITUATION[2] EVENT[7] EVENT[8] ENTITY[6] (
+          ENTITY[3] = *pro*{ENTITY[1]} ∧
+           東北全体(ENTITY[6]) ∧
+            FACT(SITUATION[2], 体系化する.0(EVENT[7], ENTITY[3], ENTITY[4]) ∧ で(EVENT[7]) = ENTITY[6]) ∧
+             至る.0_て_い(EVENT[8], ENTITY[1]) ∧ まで_に(EVENT[8]) = SITUATION[2]))
+
+# ::id 34_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 津波 を 防御 し た 仙台東部道路 の 内陸側 に 立地 する ＝ 仙台市 若林区 荒井東
+∃ ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  津波(ENTITY[5]) ∧
+   防御する.0_た(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 仙台東部道路(ENTITY[3]) ∧
+    の_内陸側(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[6]) ∧ 立地する.0(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[2])
+
+# ::id 35_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ◎ 新しい 産業システム の 創生
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ 新しい(ATTRIB[3]) ∧
+  ATTRIBUTE_産業システム(ATTRIB[3], ENTITY[2]) ∧
+   の_創生(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 36_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 商品開発販売 、 漁業者 が 挑戦
+∃ EVENT[3] ENTITY[2] ENTITY[1] (商品開発販売(ENTITY[1]) ∧ 漁業者(ENTITY[2]) ∧ する.0(EVENT[3], ENTITY[2], ENTITY[1]))
+
+# ::id 37_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ４
+∃ EVENT[2] ENTITY[1] ((CD_４(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 38_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 世界 に 誇る 三陸 の 水産業振興 ＞
+∃ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  世界(ENTITY[4]) ∧
+   誇る.0(EVENT[5], ENTITY[3], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[4] ∧ の_水産業振興(LOC[三陸], ENTITY[1]) ∧
+    xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 39_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災 し た 食品関連産業 を 支援 し よう と 一般社団法人 「 東の食の会 」 （ 東京 ） など が 仕掛ける 「 三陸フィッシャーマンズ・プロジェクト 」 が 、 浜再生 の 起爆剤 として 注目 を 集め て いる 。
+∃ ENTITY[2] ENTITY[6] ENTITY[9] ENTITY[10] ENTITY[8] EVENT[4] EVENT[7] EVENT[11] (
+ past(EVENT[4]) ∧
+  被災する.0_た(EVENT[4], ENTITY[2]) ∧ 食品関連産業(ENTITY[2]) ∧
+   namely_-ORG-(ORG[東の食の会], ORG[一般社団法人]) ∧
+    namely_-ORG-(LOC[東京], ORG[一般社団法人]) ∧
+     など(ORG[一般社団法人], ENTITY[6]) ∧
+      CRD_と(MD_よう(∃ EVENT[5] 支援する.0(EVENT[5], ORG[三陸フィッシャーマンズ.プロジェクト], ENTITY[2])), 仕掛ける.0(EVENT[7], ENTITY[6], ORG[三陸フィッシャーマンズ.プロジェクト])) ∧
+       浜再生(ENTITY[9]) ∧
+        の_起爆剤(ENTITY[9], ENTITY[8]) ∧
+         注目(ENTITY[10]) ∧ 集める.0_て_いる(EVENT[11], ORG[三陸フィッシャーマンズ.プロジェクト], ENTITY[10]) ∧ として(EVENT[11]) = ENTITY[8])
+
+# ::id 40_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 石巻産 の 特大ホタテ 「 デカプリホ 」 の ブランド化 を 手始め に 、 被災 し た 漁業者 や 水産加工業者 が 商品開発 や 販売 の こつ を 学ぶ キャンプ を 各地 で 開催 。
+∃ SITUATION[7] ENTITY[1] EVENT[6] EVENT[10] EVENT[18] ENTITY[4] ENTITY[3] ENTITY[5] ENTITY[2] GROUP[11] GROUP[15] ENTITY[14] ENTITY[8] (
+ ENTITY[1] = *pro* ∧
+  石巻産(ENTITY[4]) ∧
+   の_特大ホタテ(ENTITY[4], ENTITY[3]) ∧
+    namely_-WORK_OF_ART-(ENTITY[3], WORK_OF_ART[デカプリホ]) ∧
+     の_ブランド化(WORK_OF_ART[デカプリホ], ENTITY[2]) ∧
+      手始め(ENTITY[5]) ∧
+       CONJ_や(∃ ENTITY[12] (漁業者(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+        ∃ ENTITY[13] (水産加工業者(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+        被災する.0_た(EVENT[10], ENTITY[8]) ∧ equals(GROUP[11], ENTITY[8]) ∧
+         CONJ_や(∃ ENTITY[16] (商品開発(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])),
+          ∃ ENTITY[17] (販売(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15]))) ∧
+          の_こつ(GROUP[15], ENTITY[14]) ∧
+           キャンプ(SITUATION[7], 学ぶ.0(EVENT[18], ENTITY[8], ENTITY[14])) ∧
+            past(EVENT[10]) ∧
+             xxx(EVENT[6], ENTITY[1], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5] ∧
+              各 ENTITY[19] (地(ENTITY[19]),
+               ∃ EVENT[20] (する.0(EVENT[20], ENTITY[1], SITUATION[7]) ∧ で(EVENT[20]) = ENTITY[19])))
+
+# ::id 41_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 漁業者 自身 が 水産物 の ネット販売 を 始める など 、 生産者 と 消費者 が 直接 結び付く 新しい 漁業 へ の 挑戦 が 始まっ て いる 。
+∃ ATTRIB[9] ENTITY[3] SITUATION[1] EVENT[6] EVENT[13] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[2] GROUP[10] ENTITY[8] ENTITY[7] (
+ ENTITY[3] = 自身 ∧
+  RFL_漁業者(ENTITY[3], ENTITY[2]) ∧
+   水産物(ENTITY[5]) ∧
+    の_ネット販売(ENTITY[5], ENTITY[4]) ∧
+     FACT(SITUATION[1], 始める.0(EVENT[6], ENTITY[2], ENTITY[4])) ∧
+      新しい(ATTRIB[9]) ∧
+       CONJ_と(∃ ENTITY[11] (生産者(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+        ∃ ENTITY[12] (消費者(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+        ATTRIBUTE_漁業(ATTRIB[9], ENTITY[8]) ∧ THAT_漁業(結び付く.0(EVENT[13], GROUP[10]), ENTITY[8]) ∧
+         へ_の_挑戦(ENTITY[8], ENTITY[7]) ∧
+          ADV_直接(EVENT[13]) ∧ 始まる.0_て_いる(EVENT[15], ENTITY[7]) ∧ など(EVENT[15]) = SITUATION[1])
+
+# ::id 42_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ５
+∃ EVENT[2] ENTITY[1] ((CD_５(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 43_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 仙台平野 の 先進的 な 農業再生 ＞
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ 先進的_な(ATTRIB[2]) ∧
+  ATTRIBUTE_農業再生(ATTRIB[2], ENTITY[1]) ∧ の_農業再生(LOC[仙台平野], ENTITY[1]) ∧
+   xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 44_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災農地 の 再生 を 進め て いる さなか 、 環太平洋連携協定 （ ＴＰＰ ） で の 関税撤廃議論 や 政府 の 減反廃止方針 が 持ち上がっ た 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[10] ENTITY[4] ENTITY[3] GROUP[6] (
+ ENTITY[2] = *pro* ∧
+  被災農地(ENTITY[4]) ∧
+   の_再生(ENTITY[4], ENTITY[3]) ∧
+    さなか(SITUATION[1], 進める.0_て_いる(EVENT[5], ENTITY[2], ENTITY[3])) ∧
+     CONJ_や(∃ ENTITY[7] (namely_-LAW-(ENTITY[ＴＰＰ], LAW[環太平洋連携協定]) ∧ で_の_関税撤廃議論(LAW[環太平洋連携協定], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+      ∃ ENTITY[9] ENTITY[8] (政府(ENTITY[9]) ∧ の_減反廃止方針(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+      past(EVENT[10]) ∧ 持ち上がる.0_た(EVENT[10], GROUP[6]) ∧ 時間(EVENT[10]) = SITUATION[1])
+
+# ::id 45_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 仙台平野 で は 、 アイリスオーヤマ が 農業生産法人 「 舞台ファーム 」 と の 共同出資 で コメ流通事業 へ の 本格参入 を 決め た 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ namely_-ORG-(ORG[舞台ファーム], ORG[農業生産法人]) ∧
+  と_の_共同出資(ORG[農業生産法人], ENTITY[1]) ∧
+   コメ流通事業(ENTITY[3]) ∧
+    へ_の_本格参入(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[4]) ∧
+      決める.0_た(EVENT[4], ORG[アイリスオーヤマ], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[1] ∧ で(EVENT[4]) = LOC[仙台平野])
+
+# ::id 46_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ６
+∃ EVENT[2] ENTITY[1] ((CD_６(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 47_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 地域 に 密着 し た 再生可能エネルギー戦略 ＞
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 地域(ENTITY[3]) ∧
+  密着する.0_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 再生可能エネルギー戦略(ENTITY[1]) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 48_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 石巻市 の 鹿妻小 を 舞台 に 、 再生可能エネルギー を 総合的 に 管理 する システム の 実証実験 が 始まっ て いる 。
+∃ EVENT[5] EVENT[8] EVENT[9] ENTITY[4] ENTITY[2] ENTITY[7] ENTITY[1] (
+ 再生可能エネルギー(ENTITY[4]) ∧
+  管理する.0(EVENT[5], ENTITY[2], ENTITY[4]) ∧ システム(ENTITY[2]) ∧
+   の_実証実験(ENTITY[2], ENTITY[1]) ∧
+    の_xxx(NORP[石巻市], ORG[鹿妻小]) ∧
+     舞台(ENTITY[7]) ∧
+      ADV_総合的_に(EVENT[5]) ∧
+       xxx(EVENT[8], ENTITY[1], ORG[鹿妻小]) ∧ に(EVENT[8]) = ENTITY[7] ∧ 始まる.0_て_いる(EVENT[9], ENTITY[1]))
+
+# ::id 49_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 手掛ける の は 、 東北大 など で つくる 東北復興次世代エネルギー研究開発機構 だ 。
+∃ ENTITY[6] ENTITY[3] EVENT[8] EVENT[9] ENTITY[7] EVENT[4] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  手掛ける.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ の(ENTITY[1]) ∧
+   ENTITY[6] = *pro*{ENTITY[1]} ∧
+    など(ORG[東北大], ENTITY[7]) ∧
+     作る.0(EVENT[8], ORG[東北復興次世代エネルギー研究開発機構], ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[7] ∧
+      だ(EVENT[9], ENTITY[1], ORG[東北復興次世代エネルギー研究開発機構]))
+
+# ::id 50_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 校舎 に 太陽光パネル や 蓄電装置 、 ガスコージェネレーション （ 熱電併給 ） システム 、 電気自動車 へ の 充電設備 を 設置 。
+∃ ENTITY[1] EVENT[9] GROUP[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  校舎(ENTITY[2]) ∧
+   CONJ_や(∃ ENTITY[4] (太陽光パネル(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (蓄電装置(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])),
+    ∃ PRODUCT[6] (ガスコージェネレーション_システム(PRODUCT[6]) ∧ namely_-PRODUCT-(ENTITY[熱電併給], PRODUCT[6]) ∧ is_element_of(PRODUCT[6], GROUP[3])),
+    ∃ ENTITY[8] ENTITY[7] (電気自動車(ENTITY[8]) ∧ へ_の_充電設備(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[3]))) ∧
+    する.0(EVENT[9], ENTITY[1], GROUP[3]) ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 51_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 子どもたち の 省エネ教育 に も 一役 買っ て いる 。
+∃ ENTITY[1] EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  子どもたち(ENTITY[3]) ∧
+   の_省エネ教育(ENTITY[3], ENTITY[2]) ∧
+    一役(ENTITY[4]) ∧ 買う.0_て_いる(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 52_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ７
+∃ EVENT[2] ENTITY[1] ((CD_７(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 53_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 世界 に 先駆け た 減災産業 の 集積 ＞
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 世界(ENTITY[4]) ∧
+  先駆ける.0_た(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 減災産業(ENTITY[2]) ∧
+   の_集積(ENTITY[2], ENTITY[1]) ∧ past(EVENT[5]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 54_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 多賀城市 は 復興計画 の 中核 に 「 減災リサーチパーク 」 構想 を 据え た 。
+∃ EVENT[4] ENTITY[2] FAC[3] ENTITY[1] (
+ 復興計画(ENTITY[2]) ∧
+  の_中核(ENTITY[2], ENTITY[1]) ∧
+   減災リサーチパーク(FAC[3]) ∧ 構想(FAC[3]) ∧
+    past(EVENT[4]) ∧ 据える.0_た(EVENT[4], GPE[多賀城市], FAC[3]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 55_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 災害 による 被害 を 最小化 する 技術 や 製品 を 開発 し 、 地元 に 減災産業 を 興す 。
+∃ ENTITY[1] EVENT[6] EVENT[10] EVENT[13] ENTITY[5] ENTITY[4] GROUP[7] ENTITY[2] ENTITY[12] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  災害(ENTITY[5]) ∧
+   による_被害(ENTITY[5], ENTITY[4]) ∧
+    CONJ_や(∃ ENTITY[8] (技術(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+     ∃ ENTITY[9] (製品(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+     最小化する.0(EVENT[6], ENTITY[2], ENTITY[4]) ∧ equals(GROUP[7], ENTITY[2]) ∧
+      地元(ENTITY[11]) ∧
+       減災産業(ENTITY[12]) ∧
+        開発する.0(EVENT[10], ENTITY[1], ENTITY[2]) ∧
+         興す.0(EVENT[13], ENTITY[1], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[11])
+
+# ::id 56_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 施設 に は 既に ３０ 社 が 入居 し て おり 、 省電力 の 人工光 による 野菜栽培 、 災害情報システム開発 など に 取り組ん で いる 。
+∃ ENTITY[5] EVENT[3] EVENT[12] ENTITY[2] GROUP[7] ENTITY[6] ENTITY[1] (
+ 施設(ENTITY[1]) ∧
+  CD_３０_社(ENTITY[2]) ∧
+   ENTITY[5] = *pro*{ENTITY[2], ENTITY[1]} ∧
+    ∃ ENTITY[10] ENTITY[9] ENTITY[8] (
+     省電力(ENTITY[10]) ∧
+      の_人工光(ENTITY[10], ENTITY[9]) ∧ による_野菜栽培(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+     ∃ ENTITY[11] (災害情報システム開発(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[7])) ∧
+     など(GROUP[7], ENTITY[6]) ∧
+      ADV_既に(EVENT[3]) ∧
+       入居する.0_て_おり(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1] ∧
+        取り組む.0_で_いる(EVENT[12], ENTITY[5]) ∧ に(EVENT[12]) = ENTITY[6])
+
+# ::id 57_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ８
+∃ EVENT[2] ENTITY[1] ((CD_８(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 58_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 地域再生ビジターズ産業 の 創出 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (地域再生ビジターズ産業(ENTITY[2]) ∧ の_創出(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 59_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 東北太平洋沿岸 の 自然公園 を 再編 し た 「 三陸復興国立公園 」 、 八戸市 から 気仙沼市 まで の 沿岸 １６ 市町村 で つくる 「 三陸ジオパーク 」 が ２０１３ 年 、 相次い で 誕生 し た 。
+∃ EVENT[11] EVENT[12] TIME[10] GROUP[1] (
+ ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+  東北太平洋沿岸(ENTITY[4]) ∧
+   の_自然公園(ENTITY[4], ENTITY[3]) ∧
+    再編する.0_た(EVENT[5], FAC[三陸復興国立公園], ENTITY[3]) ∧ past(EVENT[5]) ∧ is_subset_of_or_equal_to(FAC[三陸復興国立公園], GROUP[1])) ∧
+  ∃ ENTITY[7] EVENT[9] ENTITY[8] (
+   ENTITY[7] = *pro* ∧
+    から_xxx(LOC[八戸市], LOC[気仙沼市]) ∧
+     (CD_１６_市町村(ENTITY[8]), まで_の_沿岸(LOC[気仙沼市], ENTITY[8])) ∧
+      作る.0(EVENT[9], ENTITY[7], FAC[三陸ジオパーク]) ∧ で(EVENT[9]) = ENTITY[8] ∧
+       is_subset_of_or_equal_to(FAC[三陸ジオパーク], GROUP[1])) ∧
+  CD_２０１３_年(TIME[10]) ∧
+   past(EVENT[12]) ∧
+    CONJ_te(相次ぐ.0_で(EVENT[11], GROUP[1]) ∧ is_contained_in(時間(EVENT[11]), TIME[10]),
+     誕生する.0_た(EVENT[12], GROUP[1]) ∧ is_contained_in(時間(EVENT[12]), TIME[10])))
+
+# ::id 60_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 優れ た 景観 に 加え 、 教育効果 の 高い 震災遺構 に 重点 を 置い た 世界的 に も 珍しい 観光資源 だ 。
+∃ ENTITY[8] ATTRIB[7] ENTITY[1] EVENT[4] EVENT[5] EVENT[12] EVENT[14] EVENT[15] ENTITY[2] ENTITY[11] ENTITY[13] ENTITY[9] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  優れる.0_た(EVENT[4], ENTITY[2]) ∧ 景観(ENTITY[2]) ∧
+   ADV_世界的_に_も(ATTRIB[7]) ∧ 珍しい(ATTRIB[7]) ∧
+    ENTITY[8] = *pro*{ENTITY[1], ENTITY[2]} ∧
+     教育効果(ENTITY[11]) ∧
+      高い(EVENT[12], (ENTITY[9], ENTITY[11])) ∧ 震災遺構(ENTITY[9]) ∧
+       重点(ENTITY[13]) ∧
+        ATTRIBUTE_観光資源(ATTRIB[7], ENTITY[6]) ∧
+         THAT_観光資源(置く.0_た(EVENT[14], ENTITY[8], ENTITY[13]) ∧ に(EVENT[14]) = ENTITY[9], ENTITY[6]) ∧
+         加える.0(EVENT[5]) ∧ に(EVENT[5]) = ENTITY[2] ∧ だ(EVENT[15], ENTITY[1], ENTITY[6]))
+
+# ::id 61_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 多様 な 協業化 、 ６ 次 産業化 など 被災漁民 の 挑戦 と 模索 が 続く
+∃ EVENT[10] GROUP[7] ENTITY[6] GROUP[2] ENTITY[1] (
+ ∃ ATTRIB[4] ENTITY[3] (多様_な(ATTRIB[4]) ∧ ATTRIBUTE_協業化(ATTRIB[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[5] ((CD_６_次(ENTITY[5]), 産業化(ENTITY[5])) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+  被災漁民(ENTITY[6]) ∧
+   CONJ_と(∃ ENTITY[8] (挑戦(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+    ∃ ENTITY[9] (模索(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+    equals(GROUP[7], ENTITY[1]) ∧ の(ENTITY[6], ENTITY[1]) ∧ など(GROUP[2], ENTITY[1]) ∧
+     続く.0(EVENT[10], ENTITY[1]))
+
+# ::id 62_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ◎ 東北 の 連帯
+∃ EVENT[2] ENTITY[1] (の_連帯(NORP[東北], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 63_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 広域防災拠点 、 整備着手 へ
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (広域防災拠点(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (整備着手(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ へ(EVENT[4]) = GROUP[1])
+
+# ::id 64_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 ９
+∃ EVENT[2] ENTITY[1] ((CD_９(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 65_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 自立的復興 へ 東北再生共同体 を 創設 ＞
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  自立的復興(ENTITY[2]) ∧
+   東北再生共同体(ENTITY[3]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ へ(EVENT[4]) = ENTITY[2])
+
+# ::id 66_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 宮城県 は 、 宮城野原公園総合運動場 （ 仙台市 宮城野区 ） 一帯 で 広域防災拠点 の 整備 に 着手 する 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] FAC[1] (
+ 宮城野原公園総合運動場_一帯(FAC[1]) ∧
+  namely_-FAC-(LOC[仙台市_宮城野区], FAC[1]) ∧
+   広域防災拠点(ENTITY[3]) ∧
+    の_整備(ENTITY[3], ENTITY[2]) ∧
+     着手する.0(EVENT[4], GPE[宮城県]) ∧ に(EVENT[4]) = ENTITY[2] ∧ で(EVENT[4]) = FAC[1])
+
+# ::id 67_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 検討会議 は 、 他県 で 広域災害 が 発生 し た 際 に も 支援拠点 の 役割 を 果たす よう 提案 。
+∃ SITUATION[4] ENTITY[3] SITUATION[2] EVENT[7] EVENT[10] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[8] ENTITY[1] (
+ 検討会議(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   他県(ENTITY[5]) ∧
+    広域災害(ENTITY[6]) ∧
+     際(SITUATION[4], 発生する.0_た(EVENT[7], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[5]) ∧
+      支援拠点(ENTITY[9]) ∧
+       の_役割(ENTITY[9], ENTITY[8]) ∧
+        よう(SITUATION[2], 果す.0(EVENT[10], ENTITY[3], ENTITY[8]) ∧ に(EVENT[10]) = SITUATION[4]) ∧
+         past(EVENT[7]) ∧ する.0(EVENT[11], ENTITY[1], SITUATION[2]))
+
+# ::id 68_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 防災 を キーワード に し た 広域連携 に 期待 が 高まっ て いる 。
+∃ EVENT[5] EVENT[7] ENTITY[4] ENTITY[3] ENTITY[6] ENTITY[1] (
+ 防災(ENTITY[3]) ∧
+  キーワード(ENTITY[4]) ∧
+   する.0_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ 広域連携(ENTITY[1]) ∧
+    期待(ENTITY[6]) ∧ 高まる.0_て_いる(EVENT[7], ENTITY[6]) ∧ に(EVENT[7]) = ENTITY[1])
+
+# ::id 69_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 広域防災拠点 は 、 総合運動場 、 仙台医療センター 、 仙台貨物ターミナル駅 の 計４３ ヘクタール を 一体的 に 整備 。
+∃ EVENT[4] GROUP[3] ENTITY[2] ENTITY[1] (
+ 広域防災拠点(ENTITY[1]) ∧
+  is_subset_of_or_equal_to(FAC[総合運動場], GROUP[3]) ∧ is_subset_of_or_equal_to(FAC[仙台医療センター], GROUP[3]) ∧ is_subset_of_or_equal_to(FAC[仙台貨物ターミナル駅], GROUP[3]) ∧
+   (CD_計４３_ヘクタール(ENTITY[2]), の(GROUP[3], ENTITY[2])) ∧
+    ADV_一体的_に(EVENT[4]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 70_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 災害発生時 に は 警察 、 消防 、 医療チーム など の 人員 ６０００ 人 、 車両 １０００ 台 が 集結 する 。
+∃ EVENT[11] GROUP[4] GROUP[8] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 災害発生時(ENTITY[1]) ∧
+  ∃ ENTITY[5] (警察(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+   ∃ ENTITY[6] (消防(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+   ∃ ENTITY[7] (医療チーム(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+   など(GROUP[4], ENTITY[3]) ∧
+    ∃ ENTITY[9] ((CD_６０００_人(ENTITY[9]), 人員(ENTITY[9])) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+     ∃ ENTITY[10] ((CD_１０００_台(ENTITY[10]), 車両(ENTITY[10])) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+     equals(GROUP[8], ENTITY[2]) ∧ の(ENTITY[3], ENTITY[2]) ∧
+      集結する.0(EVENT[11], ENTITY[2]) ∧ に(EVENT[11]) = ENTITY[1])
+
+# ::id 71_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 拠点整備 に 併せ て 宮城県 は 、 ドクターヘリ の 配備 を 決め た 。
+∃ ENTITY[1] EVENT[3] EVENT[6] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  拠点整備(ENTITY[2]) ∧
+   ドクターヘリ(ENTITY[5]) ∧
+    の_配備(ENTITY[5], ENTITY[4]) ∧
+     past(EVENT[6]) ∧
+      CONJ_te(併せる.0_て(EVENT[3], _, ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2],
+       決める.0_た(EVENT[6], GPE[宮城県], ENTITY[4])))
+
+# ::id 72_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt これ で 東北 に 新潟 を 加え た ７ 県 で の 広域運航体制 が 整う 。
+∃ ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = これ ∧
+  (CD_７_県(ENTITY[3]),
+   THAT(加える.0_た(EVENT[4], _, GPE[新潟]) ∧ に(EVENT[4]) = GPE[東北], ENTITY[3])) ∧
+   で_の_広域運航体制(ENTITY[3], ENTITY[2]) ∧
+    past(EVENT[4]) ∧ 整う.0(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[1])
+
+# ::id 73_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 日本政策投資銀行 は ２０１３ 年 ４ 月 、 「 震災 の 教訓 を 共有 する 東北 が 一体 で 『 災害リスク対策 』 『 産業復興 』 に 取り組む 必要 が ある 」 とする 分析リポート を 発表 し た 。
+∃ SITUATION[3] EVENT[7] EVENT[12] EVENT[13] EVENT[14] ENTITY[6] ENTITY[5] GROUP[9] ENTITY[8] ENTITY[2] TIME[1] (
+ CD_２０１３_年_４_月(TIME[1]) ∧
+  震災(ENTITY[6]) ∧
+   の_教訓(ENTITY[6], ENTITY[5]) ∧
+    共有する.0(EVENT[7], GPE[東北], ENTITY[5]) ∧
+     一体(ENTITY[8]) ∧
+      ∃ ENTITY[10] (災害リスク対策(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+       ∃ ENTITY[11] (産業復興(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9])) ∧
+       必要(SITUATION[3],
+        取り組む.0(EVENT[12], GPE[東北]) ∧ に(EVENT[12]) = GROUP[9] ∧ で(EVENT[12]) = ENTITY[8]) ∧
+        THAT_分析リポート(有る.0(EVENT[13], SITUATION[3]), ENTITY[2]) ∧
+         past(EVENT[14]) ∧ 発表する.0_た(EVENT[14], ORG[日本政策投資銀行], ENTITY[2]) ∧ is_contained_in(時間(EVENT[14]), TIME[1]))
+
+# ::id 74_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 国内外 の 知見 が 結集 する プラットホーム 「 東北連合体 （ 仮称 ） 」 の 創設 を 提言 し て いる 。
+∃ ENTITY[1] EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  国内外(ENTITY[6]) ∧
+   の_知見(ENTITY[6], ENTITY[5]) ∧
+    THAT_プラットホーム(集結する.0(EVENT[7], ENTITY[5]), ENTITY[4]) ∧
+     namely_-ORG-(ENTITY[4], ORG[東北連合体]) ∧
+      仮称(ENTITY[3]) ∧
+       namely_-ORG-(ENTITY[3], ORG[東北連合体]) ∧ の_創設(ORG[東北連合体], ENTITY[2]) ∧ 提言する.0_て_いる(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 75_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 １０
+∃ EVENT[2] ENTITY[1] ((CD_１０(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 76_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 東北復興共同債 による 資金調達 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (東北復興共同債(ENTITY[2]) ∧ による_資金調達(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 77_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災企業 と 個人投資家 の 橋渡し を する 民間ファンド が 、 新た な 資金調達 の 仕組み として 存在感 を 増し て いる 。
+∃ ATTRIB[9] EVENT[7] EVENT[12] GROUP[4] ENTITY[3] ENTITY[10] ENTITY[11] ENTITY[8] ENTITY[1] (
+ CONJ_と(∃ ENTITY[5] (被災企業(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+  ∃ ENTITY[6] (個人投資家(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+  の_橋渡し(GROUP[4], ENTITY[3]) ∧
+   する.0(EVENT[7], ENTITY[1], ENTITY[3]) ∧ 民間ファンド(ENTITY[1]) ∧
+    新た_な(ATTRIB[9]) ∧
+     資金調達(ENTITY[10]) ∧
+      の_仕組み(ENTITY[10], ENTITY[8]) ∧ ATTRIBUTE_仕組み(ATTRIB[9], ENTITY[8]) ∧
+       存在感(ENTITY[11]) ∧ 増す.0_て_いる(EVENT[12], ENTITY[1], ENTITY[11]) ∧ として(EVENT[12]) = ENTITY[8])
+
+# ::id 78_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 地域社会 の 問題 を 解決 し ながら 収益 を 得る 「 ソーシャルビジネス （ 社会的企業 ） 」 の 先進例 だ 。
+∃ ENTITY[1] EVENT[8] EVENT[10] EVENT[11] ENTITY[7] ENTITY[6] ENTITY[9] ENTITY[3] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  地域社会(ENTITY[7]) ∧
+   の_問題(ENTITY[7], ENTITY[6]) ∧
+    収益(ENTITY[9]) ∧
+     CRD_ながら(解決する.0(EVENT[8], ENTITY[4], ENTITY[6]), 得る.0(EVENT[10], ENTITY[4], ENTITY[9])) ∧ ソーシャルビジネス(ENTITY[4]) ∧
+      社会的企業(ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧ の_先進例(ENTITY[4], ENTITY[2]) ∧ だ(EVENT[11], ENTITY[1], ENTITY[2]))
+
+# ::id 79_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ファンド の 手法 で 若手音楽家 を 世 に 送り出し て き た 「 ミュージックセキュリティーズ 」 （ 東京 ） は 、 培っ て き た ノウハウ を 、 被災地 で なりわい の 再生 に 応用 する 。
+∃ ENTITY[9] EVENT[10] EVENT[14] ENTITY[13] ENTITY[12] ENTITY[11] ENTITY[7] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[4] ENTITY[2] (
+ ファンド(ENTITY[3]) ∧
+  の_手法(ENTITY[3], ENTITY[2]) ∧
+   若手音楽家(ENTITY[4]) ∧
+    世(ENTITY[5]) ∧
+     送り出す.0_て_き_た(EVENT[6], ORG[ミュージックセキュリティーズ], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5] ∧ で(EVENT[6]) = ENTITY[2] ∧
+      namely_-ORG-(LOC[東京], ORG[ミュージックセキュリティーズ]) ∧
+       past(EVENT[6]) ∧
+        ENTITY[9] = *pro*{ENTITY[2], ENTITY[4], ENTITY[5], ENTITY[3]} ∧
+         培う.0_て_き_た(EVENT[10], ENTITY[9], ENTITY[7]) ∧ ノウハウ(ENTITY[7]) ∧
+          被災地(ENTITY[11]) ∧
+           なりわい(ENTITY[13]) ∧
+            の_再生(ENTITY[13], ENTITY[12]) ∧
+             past(EVENT[10]) ∧
+              応用する.0(EVENT[14], ORG[ミュージックセキュリティーズ], ENTITY[7]) ∧ に(EVENT[14]) = ENTITY[12] ∧
+               で(EVENT[14]) = ENTITY[11])
+
+# ::id 80_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt １ 口 １万５００ 円 で 出資 を 募り 、 手数料 を 除い た １万 円 を 、 被災企業 の 再生ファンド として 活用 。
+∃ ENTITY[6] ENTITY[1] EVENT[4] EVENT[8] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  CD_１_口_１万５００_円(ENTITY[2]) ∧
+   出資(ENTITY[3]) ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     手数料(ENTITY[7]) ∧
+      (CD_１万_円(ENTITY[5]), THAT(除く.0_た(EVENT[8], ENTITY[6], ENTITY[7]), ENTITY[5])) ∧
+       被災企業(ENTITY[10]) ∧
+        の_再生ファンド(ENTITY[10], ENTITY[9]) ∧
+         past(EVENT[8]) ∧
+          募る.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[2] ∧
+           する.0(EVENT[11], ENTITY[1], ENTITY[5]) ∧ として(EVENT[11]) = ENTITY[9])
+
+# ::id 81_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 既に ３０ 以上 の ファンド を 設立 し 、 調達資金 は ５億 円 を 超え て いる 。
+∃ ENTITY[1] EVENT[4] EVENT[8] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[6] (
+ 調達資金(ENTITY[6]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_３０(ENTITY[3]), 以上(ENTITY[3])) ∧
+    の_ファンド(ENTITY[3], ENTITY[2]) ∧
+     CD_５億_円(ENTITY[7]) ∧
+      ADV_既に(EVENT[4]) ∧
+       設立する.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧ 超える.0_て_いる(EVENT[8], (ENTITY[1], ENTITY[6]), ENTITY[7]))
+
+# ::id 82_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 出資金 を 機材 や 人材 に 置き換え て 被災企業 を 支援 する ＮＰＯ や 事業体 も 相次い で 起業 。
+∃ EVENT[7] EVENT[9] EVENT[13] EVENT[14] GROUP[4] ENTITY[3] ENTITY[8] GROUP[10] ENTITY[1] (
+ 出資金(ENTITY[3]) ∧
+  CONJ_や(∃ ENTITY[5] (機材(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (人材(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+   被災企業(ENTITY[8]) ∧
+    CONJ_や(∃ ENTITY[11] (ＮＰＯ(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+     ∃ ENTITY[12] (事業体(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+     CONJ_te(置き換える.0_て(EVENT[7], ENTITY[1], ENTITY[3]) ∧ に(EVENT[7]) = GROUP[4],
+      支援する.0(EVENT[9], ENTITY[1], ENTITY[8])) ∧ equals(GROUP[10], ENTITY[1]) ∧
+      CONJ_te(相次ぐ.0_で(EVENT[13], ENTITY[1]), する.0(EVENT[14], ENTITY[1])))
+
+# ::id 83_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt これ まで ボランティア が 担っ て い た 取り組み を 収益事業 に 衣替え する こと で 、 継続的 な 活動 が 可能 に なる 。
+∃ ATTRIB[11] ENTITY[5] ENTITY[2] SITUATION[1] EVENT[7] EVENT[9] EVENT[12] ENTITY[6] ENTITY[8] ENTITY[3] ENTITY[10] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[5] = これ{ENTITY[2]} ∧
+   ボランティア(ENTITY[6]) ∧
+    担う.0_て_い_た(EVENT[7], ENTITY[6], ENTITY[3]) ∧ まで(EVENT[7]) = ENTITY[5] ∧ 取り組み(ENTITY[3]) ∧
+     収益事業(ENTITY[8]) ∧
+      こと(SITUATION[1], 衣替えする.0(EVENT[9], ENTITY[2], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[8]) ∧
+       継続的_な(ATTRIB[11]) ∧
+        ATTRIBUTE_活動(ATTRIB[11], ENTITY[10]) ∧
+         past(EVENT[7]) ∧ 可能_に_なる(EVENT[12], ENTITY[10]) ∧ で(EVENT[12]) = SITUATION[1])
+
+# ::id 84_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ 提言 １１
+∃ EVENT[2] ENTITY[1] ((CD_１１(ENTITY[1]), 提言(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 85_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 交通・物流ネットワーク の 強化 ＞
+∃ EVENT[3] ENTITY[2] ENTITY[1] (交通.物流ネットワーク(ENTITY[2]) ∧ の_強化(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 86_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 東北 の 空 の 玄関口 ・ 仙台空港 は 、 １６ 年 ３ 月 の 民営化方針 が 正式決定 し た 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_空(NORP[東北], ENTITY[2]) ∧
+  の_玄関口(ENTITY[2], ENTITY[1]) ∧
+   namely_-FAC-(ENTITY[1], FAC[仙台空港]) ∧
+    CD_１６_年_３_月(ENTITY[4]) ∧
+     の_民営化方針(ENTITY[4], ENTITY[3]) ∧ past(EVENT[5]) ∧ 正式決定する.0_た(EVENT[5], (FAC[仙台空港], ENTITY[3])))
+
+# ::id 87_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 格安航空会社 の 定期便 を 増やす など 民間 の 柔軟 な 発想 で 利便性 の 向上 と 収益 の 増加 を 目指す 。
+∃ ATTRIB[8] SITUATION[2] ENTITY[1] EVENT[5] EVENT[14] ENTITY[4] ENTITY[3] ENTITY[7] GROUP[9] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  格安航空会社(ENTITY[4]) ∧
+   の_定期便(ENTITY[4], ENTITY[3]) ∧
+    FACT(SITUATION[2], 増やす.0(EVENT[5], ENTITY[1], ENTITY[3])) ∧
+     民間(ENTITY[7]) ∧
+      柔軟_な(ATTRIB[8]) ∧
+       の_発想(ENTITY[7], ENTITY[6]) ∧ ATTRIBUTE_発想(ATTRIB[8], ENTITY[6]) ∧
+        CONJ_と(∃ ENTITY[11] ENTITY[10] (利便性(ENTITY[11]) ∧ の_向上(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+         ∃ ENTITY[13] ENTITY[12] (収益(ENTITY[13]) ∧ の_増加(ENTITY[13], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9]))) ∧
+         目指す.0(EVENT[14], ENTITY[1], GROUP[9]) ∧ で(EVENT[14]) = ENTITY[6] ∧
+          など(EVENT[14]) = SITUATION[2])
+
+# ::id 88_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 平常時 は 多目的広場 を 開放 し 、 防災訓練 など に 活用 する
+∃ ENTITY[5] ENTITY[1] EVENT[4] EVENT[8] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[2] (
+ 平常時(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   多目的広場(ENTITY[3]) ∧
+    ENTITY[5] = *pro*{ENTITY[3]} ∧
+     防災訓練(ENTITY[7]) ∧
+      など(ENTITY[7], ENTITY[6]) ∧
+       開放する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧
+        活用する.0(EVENT[8], ENTITY[1], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[6] ∧ 時間(EVENT[8]) = ENTITY[2])
+
+# ::id 89_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ◎ 求め られる 視座 は
+∃ EVENT[4] ENTITY[1] EVENT[3] (
+ 求める.0(EVENT[3], _, ENTITY[1]) ∧ 視座(ENTITY[1]) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 90_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 構想日本代表 加藤秀樹さん （ ６３ ）
+∃ EVENT[2] ENTITY[1] (CD_６３(ENTITY[1]) ∧ namely_-PERSON-(ENTITY[1], PERSON[構想日本代表_加藤秀樹さん]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[構想日本代表_加藤秀樹さん])
+
+# ::id 91_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ／ 被災者 の 声 、 計画 に 反映 を
+∃ EVENT[7] GROUP[3] ENTITY[2] ENTITY[6] ENTITY[1] (
+ 被災者(ENTITY[2]) ∧
+  ∃ ENTITY[4] (声(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (計画(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+    反映(ENTITY[6]) ∧ xxx(EVENT[7]) ∧ を(EVENT[7]) = ENTITY[6] ∧ に(EVENT[7]) = ENTITY[1])
+
+# ::id 92_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災者 の 多く は 、 いまだ 復興 の 手応え を 実感 でき ず に いる 。
+∃ ENTITY[2] (
+ 被災者(ENTITY[2]) ∧
+  多く ENTITY[1] (の(ENTITY[2], ENTITY[1]),
+   ¬ ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+         復興(ENTITY[4]) ∧
+          の_手応え(ENTITY[4], ENTITY[3]) ∧ ADV_いまだ(EVENT[5]) ∧ 実感できる.0_に_いる(EVENT[5], ENTITY[1], ENTITY[3]))))
+
+# ::id 93_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興 の 新ステージ に 求め られる 視座 と は 何 か 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 復興(ENTITY[4]) ∧
+  の_新ステージ(ENTITY[4], ENTITY[3]) ∧
+   求める.0(EVENT[5], _, ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ 視座(ENTITY[1]) ∧
+    QUEST(∃ EVENT[7] ? ENTITY[6] xxx(EVENT[7], ENTITY[1], ENTITY[6])))
+
+# ::id 94_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 民間シンクタンク 「 構想日本 」 の 加藤秀樹代表 に 聞い た 。
+∃ ENTITY[2] ENTITY[1] EVENT[3] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[2] = *pro* ∧
+   namely_-ORG-(ORG[構想日本], ORG[民間シンクタンク]) ∧
+    の_xxx(ORG[民間シンクタンク], PERSON[加藤秀樹代表]) ∧
+     past(EVENT[3]) ∧ 聞く.0_た(EVENT[3], ENTITY[1], ENTITY[2]) ∧ に(EVENT[3]) = PERSON[加藤秀樹代表])
+
+# ::id 95_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興 で 本来 考え なければならなかっ た の は 、 自然 と の 付き合い方 で あり 、 それ を 踏まえ た 暮らし の 在り方 だ 。
+∃ ENTITY[13] ARB[12] SITUATION[11] ARB[3] ENTITY[8] ENTITY[7] ENTITY[10] EVENT[9] EVENT[14] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[1] (
+ ARB[3] = *arb* ∧
+  復興(ENTITY[4]) ∧
+   本来(ENTITY[5]) ∧
+    MD_なければならなかっ(∃ EVENT[6] (
+          past(EVENT[6]) ∧
+           考える.0_た(EVENT[6], ARB[3], ENTITY[1]) ∧ ADV(EVENT[6]) = ENTITY[5] ∧
+            で(EVENT[6]) = ENTITY[4])) ∧ の(ENTITY[1]) ∧
+     past(EVENT[14]) ∧
+      自然(ENTITY[8]) ∧
+       と_の_付き合い方(ENTITY[8], ENTITY[7]) ∧
+        ARB[12] = *arb* ∧
+         ENTITY[13] = それ{ENTITY[10], ENTITY[1], ENTITY[7], ENTITY[8], ENTITY[4], ENTITY[5]} ∧
+          暮らし(SITUATION[11], 踏まえる.0_た(EVENT[14], ARB[12], ENTITY[13])) ∧
+           の_在り方(SITUATION[11], ENTITY[10]) ∧
+            で_あり(EVENT[9], ENTITY[1], ENTITY[7]) ∧ だ(EVENT[15], ENTITY[1], ENTITY[10]))
+
+# ::id 96_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt それ が 根幹 から 問わ れ た の が 東日本大震災 だっ た 。
+∃ ENTITY[2] SITUATION[1] EVENT[4] EVENT[5] ENTITY[3] (
+ ENTITY[2] = それ ∧
+  根幹(ENTITY[3]) ∧
+   の(SITUATION[1], 問う.0_た(EVENT[4], _, ENTITY[2]) ∧ から(EVENT[4]) = ENTITY[3]) ∧
+    past(EVENT[4]) ∧ past(EVENT[5]) ∧ だっ_た(EVENT[5], SITUATION[1], EVENT[東日本大震災]))
+
+# ::id 97_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 津波 に 対抗 し て 堤防 を 高く する の は 、 技術力 に 依存 し た ２０ 世紀 型 の 発想 。
+∃ ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] EVENT[10] EVENT[12] ENTITY[3] ENTITY[5] ENTITY[9] ENTITY[11] ENTITY[7] (
+ ENTITY[2] = *pro* ∧
+  津波(ENTITY[3]) ∧
+   堤防(ENTITY[5]) ∧
+    の(SITUATION[1],
+     CONJ_te(対抗する.0_て(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3],
+      高く_する(EVENT[6], ENTITY[2], ENTITY[5]))) ∧
+     技術力(ENTITY[9]) ∧
+      (CD_２０_世紀(ENTITY[11]), 型(ENTITY[11])) ∧
+       依存する.0_た(EVENT[10], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ の_発想(ENTITY[11], ENTITY[7]) ∧
+        past(EVENT[10]) ∧ xxx(EVENT[12], SITUATION[1], ENTITY[7]))
+
+# ::id 98_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt こうした 考え方 は 限界 を 迎え つつある の だ と 、 私たち は 震災 から 学ん だ の で は なかっ た か 。
+∃ ENTITY[1] EVENT[6] EVENT[3] ENTITY[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = 私たち ∧
+  考え方(ENTITY[4]) ∧
+   震災(ENTITY[2]) ∧
+    限界(ENTITY[5]) ∧
+     past(EVENT[3]) ∧
+      学ぶ.0_だ_の(EVENT[3], ENTITY[1], 迎える.0_つつある_の_だ(EVENT[6], ENTITY[4], ENTITY[5])) ∧ から(EVENT[3]) = ENTITY[2])
+
+# ::id 99_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 次 の 文明 に ジャンプ する 方策 を 復興計画 の 基軸 に 据える べき だっ た が 、 現実 に は そう なっ て い ない 。
+∃ ENTITY[9] ARB[1] ENTITY[10] (
+ 現実(ENTITY[10]) ∧
+  ARB[1] = *arb* ∧
+   ENTITY[9] = *pro* ∧
+    CONJ_が(MD_べき(∃ SITUATION[2] EVENT[5] EVENT[8] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[6] (
+               次(ENTITY[4]) ∧
+                の_文明(ENTITY[4], ENTITY[3]) ∧
+                 方策(SITUATION[2], ジャンプする.0(EVENT[5], ARB[1]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+                  復興計画(ENTITY[7]) ∧
+                   の_基軸(ENTITY[7], ENTITY[6]) ∧
+                    past(EVENT[8]) ∧
+                     据える.0_だっ_た(EVENT[8], ARB[1], SITUATION[2]) ∧ に(EVENT[8]) = ENTITY[6])),
+     ¬ ∃ EVENT[11] (ADV_そう(EVENT[11]) ∧ 成る.0_て_い(EVENT[11], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[10])))
+
+# ::id 100_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興 に は ２５兆 円 も の 予算 が 投入 さ れる 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 復興(ENTITY[1]) ∧
+  CD_２５兆_円(ENTITY[3]) ∧
+   の_予算(ENTITY[3], ENTITY[2]) ∧ 投入する.0(EVENT[4], _, ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1])
+
+# ::id 101_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ところが 当 の 被災地 は 、 がれき処理 こそ 一段落 し た ものの 、 寒々 と し た 風景 が 今 も 広がっ て いる 。
+∃ ATTRIB[8] EVENT[9] EVENT[11] ENTITY[4] ENTITY[10] ENTITY[6] ENTITY[2] ENTITY[1] (
+ 当(ENTITY[2]) ∧
+  の_被災地(ENTITY[2], ENTITY[1]) ∧
+   がれき処理(ENTITY[4]) ∧
+    ADV_寒々(ATTRIB[8]) ∧
+     する.0_た(EVENT[9], ENTITY[6]) ∧ と(EVENT[9]) = ATTRIB[8] ∧ 風景(ENTITY[6]) ∧
+      今(ENTITY[10]) ∧
+       CRD_ものの(こそ ENTITY[3] (ENTITY[3] = ENTITY[4], ∃ EVENT[5] (past(EVENT[5]) ∧ 一段落する.0_た(EVENT[5], (ENTITY[1], ENTITY[3])))),
+        広がる.0_て_いる(EVENT[11], (ENTITY[1], ENTITY[6])) ∧ 時間(EVENT[11]) = ENTITY[10]))
+
+# ::id 102_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 巨額予算 は 一体 どこ で 使わ れ て いる の か 。
+∃ ENTITY[1] (
+ 巨額予算(ENTITY[1]) ∧
+  QUEST(∃ EVENT[3] ? ENTITY[2] (ADV_一体(EVENT[3]) ∧ 使う.0_て_いる_の(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2])))
+
+# ::id 103_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興計画 が 県単位 で 検討 さ れ て いる こと に 一 つ の 原因 が ある 。
+∃ SITUATION[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ 復興計画(ENTITY[2]) ∧
+  県単位(ENTITY[3]) ∧
+   こと(SITUATION[1], 検討する.0_て_いる(EVENT[4], _, ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[3]) ∧
+    CD_一_つ(ENTITY[6]) ∧
+     の_原因(ENTITY[6], ENTITY[5]) ∧ 有る.0(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = SITUATION[1])
+
+# ::id 104_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災県 と 被災地 は 違う 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] GROUP[1] (
+ 被災県(ENTITY[2]) ∧
+  被災地(ENTITY[3]) ∧
+   CONJ_と(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧ 違う.0(EVENT[4], GROUP[1]))
+
+# ::id 105_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 県庁所在地起点 で 技術論中心 の 復興策 を 練っ た 結果 、 本当 に 助け を 必要 と し て いる 被災地 の 人々 の 生活 が おろそか に なっ て いる 。
+∃ ENTITY[2] SITUATION[1] EVENT[6] EVENT[13] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[14] ENTITY[8] ENTITY[7] (
+ ENTITY[2] = *pro* ∧
+  県庁所在地起点(ENTITY[3]) ∧
+   技術論中心(ENTITY[5]) ∧
+    の_復興策(ENTITY[5], ENTITY[4]) ∧
+     FACT(SITUATION[1], 練る.0_た(EVENT[6], ENTITY[2], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[3]) ∧
+      本当(ENTITY[10]) ∧
+       助け(ENTITY[11]) ∧
+        必要(ENTITY[12]) ∧
+         被災地(ENTITY[14]) ∧
+          する.0_て_いる(EVENT[13], ENTITY[8], ENTITY[11]) ∧ と(EVENT[13]) = ENTITY[12] ∧
+           に(EVENT[13]) = ENTITY[10] ∧ の_人々(ENTITY[14], ENTITY[8]) ∧
+           の_生活(ENTITY[8], ENTITY[7]) ∧
+            past(EVENT[6]) ∧ おろそか_に_なっ_て_いる(EVENT[15], ENTITY[7]) ∧ 結果(EVENT[15]) = SITUATION[1])
+
+# ::id 106_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt １００ 年 後 の 生活 を イメージ し ない まま 高台移転 や 、 より 高い 堤防 の 建設 が 決まっ て しまっ た 。
+∃ ENTITY[2] SITUATION[1] EVENT[11] GROUP[6] (
+ ENTITY[2] = *pro* ∧
+  FACT(SITUATION[1],
+   ¬ ∃ EVENT[5] ENTITY[4] ENTITY[3] (
+         (CD_１００_年(ENTITY[4]), 後(ENTITY[4])) ∧
+          の_生活(ENTITY[4], ENTITY[3]) ∧ イメージする.0(EVENT[5], ENTITY[2], ENTITY[3]))) ∧
+   CONJ_や(∃ ENTITY[7] (高台移転(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+    ∃ ATTRIB[10] ENTITY[9] ENTITY[8] (
+     より_高い(ATTRIB[10]) ∧
+      ATTRIBUTE_堤防(ATTRIB[10], ENTITY[9]) ∧ の_建設(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+    past(EVENT[11]) ∧ 決まる.0_て_しまっ_た(EVENT[11], GROUP[6]) ∧ まま(EVENT[11]) = SITUATION[1])
+
+# ::id 107_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ここ に 来 て 堤防高 の 見直し議論 が 、 住民 の 中 から 出 て き た こと は よい こと だ と 思う 。
+∃ ATTRIB[12] ENTITY[4] SITUATION[3] ENTITY[1] EVENT[5] EVENT[10] EVENT[13] EVENT[2] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[11] (
+ ENTITY[1] = *speaker* ∧
+  ENTITY[4] = ここ{ENTITY[1]} ∧
+   堤防高(ENTITY[7]) ∧
+    の_見直し議論(ENTITY[7], ENTITY[6]) ∧
+     住民(ENTITY[9]) ∧
+      の_中(ENTITY[9], ENTITY[8]) ∧
+       こと(SITUATION[3],
+        CONJ_te(来る.0_て(EVENT[5]) ∧ に(EVENT[5]) = ENTITY[4],
+         出る.0_て_き_た(EVENT[10], ENTITY[6]) ∧ から(EVENT[10]) = ENTITY[8])) ∧
+        よい(ATTRIB[12]) ∧
+         ATTRIBUTE_こと(ATTRIB[12], ENTITY[11]) ∧
+          before(EVENT[2], EVENT[10]) ∧ 思う.0(EVENT[2], ENTITY[1], だ(EVENT[13], SITUATION[3], ENTITY[11])))
+
+# ::id 108_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復興 の 担い手 は 自治体 で ある はず だ が 、 予算 を 執行 する 行政 は 、 国 、 県 、 市町村 の 上下関係 と 縦割り構造 から 脱し て い ない 。
+∃ SITUATION[3] EVENT[5] EVENT[6] ENTITY[4] EVENT[10] ENTITY[2] ENTITY[1] ENTITY[9] ENTITY[7] (
+ 復興(ENTITY[2]) ∧
+  の_担い手(ENTITY[2], ENTITY[1]) ∧
+   予算(ENTITY[9]) ∧
+    執行する.0(EVENT[10], ENTITY[7], ENTITY[9]) ∧ 行政(ENTITY[7]) ∧
+     自治体(ENTITY[4]) ∧
+      はず(SITUATION[3], で_ある(EVENT[5], ENTITY[1], ENTITY[4])) ∧
+       CONJ_が(だ(EVENT[6], ENTITY[1], SITUATION[3]),
+        ¬ ∃ EVENT[19] GROUP[16] GROUP[12] ENTITY[11] (
+              ∃ ENTITY[13] (国(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+               ∃ ENTITY[14] (県(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])) ∧
+               ∃ ENTITY[15] (市町村(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[12])) ∧
+               CONJ_と(∃ ENTITY[17] (上下関係(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+                ∃ ENTITY[18] (縦割り構造(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+                の(GROUP[12], ENTITY[11]) ∧ equals(GROUP[16], ENTITY[11]) ∧
+                 脱する.0_て_い(EVENT[19], ENTITY[7]) ∧ から(EVENT[19]) = ENTITY[11])))
+
+# ::id 109_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 国 は 細かく 復興特区 を 設定 し て いる が 「 東北丸ごと特区 」 と し 、 従来 の 仕組み を 全部 白紙 に する くらい の 発想力 が 必要 だ 。
+∃ ENTITY[9] ENTITY[8] SITUATION[7] EVENT[3] EVENT[10] EVENT[15] EVENT[16] ENTITY[2] ENTITY[12] ENTITY[14] ENTITY[11] ENTITY[5] ENTITY[1] (
+ 国(ENTITY[1]) ∧
+  復興特区(ENTITY[2]) ∧
+   ENTITY[8] = *pro*{ENTITY[5], ENTITY[2], ENTITY[1]} ∧
+    ENTITY[9] = *pro*{ENTITY[5], ENTITY[2], ENTITY[1]} ∧
+     従来(ENTITY[12]) ∧
+      の_仕組み(ENTITY[12], ENTITY[11]) ∧
+       白紙(ENTITY[14]) ∧
+        FACT(SITUATION[7],
+         する.0(EVENT[10], ENTITY[8], ENTITY[9]) ∧ と(EVENT[10]) = LOC[東北丸ごと特区] ∧
+          全部 ENTITY[13] (ENTITY[13] = ENTITY[11],
+           する.0(EVENT[15], ENTITY[8], ENTITY[13]) ∧ に(EVENT[15]) = ENTITY[14])) ∧
+         くらい SITUATION[6] (SITUATION[6] = SITUATION[7], の_発想力(SITUATION[6], ENTITY[5])) ∧
+          ADV_細かく(EVENT[3]) ∧ CONJ_が(設定する.0_て_いる(EVENT[3], ENTITY[1], ENTITY[2]), 必要_だ(EVENT[16], ENTITY[5])))
+
+# ::id 110_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 有識者 の 意見 より 、 被災地 の 現場 、 被災者 の 声 に こそ 復興 の ヒント が ある 。
+∃ ENTITY[2] GROUP[4] ENTITY[1] (
+ 有識者(ENTITY[2]) ∧
+  の_意見(ENTITY[2], ENTITY[1]) ∧
+   ∃ ENTITY[6] ENTITY[5] (被災地(ENTITY[6]) ∧ の_現場(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[8] ENTITY[7] (被災者(ENTITY[8]) ∧ の_声(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+    こそ ENTITY[3] (is_element_of(ENTITY[3], GROUP[4]),
+     ∃ EVENT[11] ENTITY[10] ENTITY[9] (
+      復興(ENTITY[10]) ∧
+       の_ヒント(ENTITY[10], ENTITY[9]) ∧
+        有る.0(EVENT[11], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[3] ∧ より(EVENT[11]) = ENTITY[1])))
+
+# ::id 111_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 被災者 が 今 何 を 望み 、 どんな 生活 を し 、 何 に 困っ て いる か を 尋ねれ ば 、 リアリティー の ある 復興計画 が できる 。
+∀ SITUATION[2] ENTITY[1] EVENT[11] CND_ば(
+    ENTITY[1] = *pro* ∧
+     か(SITUATION[2],
+      QUEST(∃ EVENT[6] EVENT[8] EVENT[10] TIME[4] ENTITY[3] ? ENTITY[5] ENTITY[7] ENTITY[9] (
+            生活(ENTITY[7]) ∧
+             被災者(ENTITY[3]) ∧
+              今(TIME[4]) ∧
+               望む.0(EVENT[6], ENTITY[3], ENTITY[5]) ∧
+                する.0(EVENT[8], ENTITY[3], ENTITY[7]) ∧
+                 困る.0_て_いる(EVENT[10], ENTITY[3]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+                  is_contained_in(時間(EVENT[10]), TIME[4])))) ∧ 尋ねる.0(EVENT[11], ENTITY[1], SITUATION[2]),
+    ∃ EVENT[15] EVENT[16] ENTITY[14] ENTITY[12] (
+     リアリティー(ENTITY[14]) ∧
+      有る.0(EVENT[15], (ENTITY[12], ENTITY[14])) ∧ 復興計画(ENTITY[12]) ∧ 出来る.0(EVENT[16], ENTITY[12])))
+
+# ::id 112_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 復旧 から 復興 へ と 切り替わる 今年 こそ 、 住民 の 生活視点 で 復興計画 を 見直す 好機 だ 。
+∃ ENTITY[3] SITUATION[2] EVENT[6] ENTITY[5] ENTITY[4] (
+ ENTITY[3] = *pro* ∧
+  復旧(ENTITY[5]) ∧
+   から_復興(ENTITY[5], ENTITY[4]) ∧
+    今年(SITUATION[2], 切り替える.0(EVENT[6], ENTITY[3]) ∧ へ_と(EVENT[6]) = ENTITY[4]) ∧
+     こそ SITUATION[1] (SITUATION[1] = SITUATION[2],
+      ∃ ENTITY[8] SITUATION[7] EVENT[12] EVENT[13] ENTITY[10] ENTITY[11] ENTITY[9] (
+       ENTITY[8] = *pro*{ENTITY[4], ENTITY[5]} ∧
+        住民(ENTITY[10]) ∧
+         の_生活視点(ENTITY[10], ENTITY[9]) ∧
+          復興計画(ENTITY[11]) ∧
+           好機(SITUATION[7], 見直す.0(EVENT[12], ENTITY[8], ENTITY[11]) ∧ で(EVENT[12]) = ENTITY[9]) ∧
+            だ(EVENT[13], _, SITUATION[7]) ∧ 時間(EVENT[13]) = SITUATION[1])))
+
+# ::id 113_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ＜ かとう・ひでき ＞
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = PERSON[かとう.ひでき])
+
+# ::id 114_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt １９５０ 年 、 香川県 生まれ 。
+∃ ENTITY[1] EVENT[5] GROUP[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[4] (CD_１９５０_年(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧ is_element_of(LOC[香川県], GROUP[3]) ∧
+   equals_生まれ(GROUP[3], ENTITY[2]) ∧ xxx(EVENT[5], ENTITY[1], ENTITY[2]))
+
+# ::id 115_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 京大 卒 。
+∃ ENTITY[1] EVENT[3] ORG[2] (ENTITY[1] = *pro* ∧ 京大_卒(ORG[2]) ∧ xxx(EVENT[3], ENTITY[1], ORG[2]))
+
+# ::id 116_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 旧大蔵省 を ９６ 年 に 退官 し て 翌９７ 年 、 構想日本 を 設立 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] TIME[4] (
+ ENTITY[1] = *pro* ∧
+  CD_９６_年(ENTITY[2]) ∧
+   CD_翌９７_年(TIME[4]) ∧
+    CONJ_te(退官する.0_て(EVENT[3], ENTITY[1], ORG[旧大蔵省]) ∧ に(EVENT[3]) = ENTITY[2],
+     する.0(EVENT[5], ENTITY[1], ORG[構想日本]) ∧ is_contained_in(時間(EVENT[5]), TIME[4])))
+
+# ::id 117_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt 事業仕分け による 行財政改革 を 提唱 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 事業仕分け(ENTITY[3]) ∧ による_行財政改革(ENTITY[3], ENTITY[2]) ∧ する.0(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 118_newswire_00078_K201401010A0FZ0XX00002;NJ
+# ::snt ２００９～１２ 年 、 内閣府行政刷新会議 事務局長 として 政府 の 事業仕分け を 指揮 し た 。
+∃ ENTITY[1] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_２００９～１２_年(TIME[2]) ∧
+   内閣府行政刷新会議_事務局長(ENTITY[3]) ∧
+    政府(ENTITY[5]) ∧
+     の_事業仕分け(ENTITY[5], ENTITY[4]) ∧
+      past(EVENT[6]) ∧
+       指揮する.0_た(EVENT[6], ENTITY[1], ENTITY[4]) ∧ として(EVENT[6]) = ENTITY[3] ∧
+        is_contained_in(時間(EVENT[6]), TIME[2]))

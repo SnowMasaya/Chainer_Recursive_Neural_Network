@@ -1,0 +1,1425 @@
+# ::id 1_nonfiction_FACTBOOK-2010;DISEASES;AT1-1;NE
+# ::snt Major infectious diseases
+( GROUP-1 / infectious_diseases
+      :ATTRIBUTE ( ATTRIB-2 / major))
+
+# ::id 2_nonfiction_FACTBOOK-2010;DISEASES;AT2-1;NE
+# ::snt This entry lists major infectious diseases likely to be encountered in countries where the risk of such diseases is assessed to be very high as compared to the United States .
+( EVENT-20 / lists
+      :ARG0 ( ENTITY-1 / entry
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( GROUP-3 / infectious_diseases
+             :ATTRIBUTE ( ATTRIB-4 / major)
+             :ARG1-of ( EVENT-18 / encountered
+                    :IN ( GROUP-6 / countries
+                           :LOC-of ( EVENT-12 / assessed
+                                  :ARG1 ( ENTITY-8 / risk
+                                         :DEFINITE ( ATTRIB-9 / the)
+                                         :OF ( GROUP-10 / diseases
+                                                :ATTRIBUTE ( ATTRIB-11 / such)))
+                                  :TOCOMP ( EVENT-16 / copula
+                                         :ATTRIBUTE ( ATTRIB-13 / very_high
+                                                :AS ( EVENT-15 / compared
+                                                       :TO ( GROUP-United_States / GROUP
+                                                              :name ( n-2 / name
+                                                                     :op1 "United_States"))))
+                                         :ARG0 ENTITY-8)))
+                    :MOD ( mod-1 / likely))))
+
+# ::id 3_nonfiction_FACTBOOK-2010;DISEASES;AT2-2;NE
+# ::snt These infectious diseases represent risks to US government personnel traveling to the specified country for a period of less than three years .
+( EVENT-17 / represent
+      :ARG0 ( GROUP-1 / diseases
+             :DETERMINER ( ATTRIB-2 / these)
+             :ATTRIBUTE ( ATTRIB-3 / infectious))
+      :ARG1 ( GROUP-4 / risks)
+      :TO ( GROUP-5 / government_personnel
+             :ATTRIBUTE ( ATTRIB-6 / us)
+             :ARG0-of ( EVENT-16 / traveling
+                    :FOR ( ENTITY-11 / period
+                           :OF ( ENTITY-12 / ENTITY
+                                  :THAN ( GROUP-14 / years
+                                         :CARDINAL ( ATTRIB-15 / three))
+                                  :QUANTIFIER ( ATTRIB-13 / less)))
+                    :TO ( ENTITY-8 / country
+                           :DEFINITE ( ATTRIB-9 / the)
+                           :ATTRIBUTE ( ATTRIB-10 / specified)))))
+
+# ::id 4_nonfiction_FACTBOOK-2010;DISEASES;AT2-3;NE
+# ::snt The degree of risk is assessed by considering the foreign nature of these infectious diseases , their severity , and the probability of being affected by the diseases present .
+( EVENT-23 / assessed
+      :ARG0 ( EVENT-22 / considering
+             :ARG0 ( ARB-5 / arb)
+             :ARG1 ( GROUP-6 / AND
+                    :op1 ( ENTITY-7 / nature
+                           :DEFINITE ( ATTRIB-8 / the)
+                           :ATTRIBUTE ( ATTRIB-9 / foreign)
+                           :OF ( GROUP-10 / diseases
+                                  :DETERMINER ( ATTRIB-11 / these)
+                                  :ATTRIBUTE ( ATTRIB-12 / infectious)))
+                    :op2 ( ENTITY-13 / severity
+                           :POS ( REF1-14 / their))
+                    :op3 ( ENTITY-15 / probability
+                           :DEFINITE ( ATTRIB-16 / the)
+                           :OF ( EVENT-21 / being_affected
+                                  :ARG0 ( GROUP-18 / diseases
+                                         :DEFINITE ( ATTRIB-19 / the)
+                                         :ATTRIBUTE ( ATTRIB-20 / present))))))
+      :ARG1 ( ENTITY-1 / degree
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( ENTITY-3 / risk)))
+
+# ::id 5_nonfiction_FACTBOOK-2010;DISEASES;AT2-4;NE
+# ::snt The diseases listed do not necessarily represent the total disease burden experienced by the local population .
+( EVENT-13 / do_represent
+      :domain-of ( NEG-15 / NEG)
+      :ARG0 ( GROUP-1 / diseases
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG1-of ( EVENT-4 / listed))
+      :ARG1 ( ENTITY-5 / disease_burden
+             :DEFINITE ( ATTRIB-6 / the)
+             :ATTRIBUTE ( ATTRIB-7 / total)
+             :ARG1-of ( EVENT-12 / experienced
+                    :ARG0 ( ENTITY-9 / population
+                           :DEFINITE ( ATTRIB-10 / the)
+                           :ATTRIBUTE ( ATTRIB-11 / local))))
+      :MOD ( mod-16 / necessarily))
+
+# ::id 6_nonfiction_FACTBOOK-2010;DISEASES;AT3-1;NE
+# ::snt The risk to an individual traveler varies considerably by the specific location , visit duration , type of activities , type of accommodations , time of year , and other factors .
+( EVENT-18 / varies
+      :ARG0 ( ENTITY-1 / risk
+             :DEFINITE ( ATTRIB-2 / the)
+             :TO ( ENTITY-3 / traveler
+                    :ATTRIBUTE ( ATTRIB-4 / individual)))
+      :BY ( GROUP-5 / AND
+             :op1 ( ENTITY-6 / location
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :ATTRIBUTE ( ATTRIB-8 / specific))
+             :op2 ( ENTITY-9 / visit_duration)
+             :op3 ( ENTITY-10 / type
+                    :OF ( GROUP-11 / activities))
+             :op4 ( ENTITY-12 / type
+                    :OF ( GROUP-13 / accommodations))
+             :op5 ( ENTITY-14 / time
+                    :OF ( ENTITY-15 / year))
+             :op6 ( GROUP-16 / factors
+                    :ATTRIBUTE ( ATTRIB-17 / other)))
+      :MOD ( mod-1 / considerably))
+
+# ::id 7_nonfiction_FACTBOOK-2010;DISEASES;AT3-2;NE
+# ::snt Consultation with a travel medicine physician is needed to evaluate individual risk and recommend appropriate preventive measures such as vaccines .
+( EVENT-3 / needed
+      :ARG1 ( ENTITY-1 / Consultation
+             :WITH ( ENTITY-2 / travel_medicine_physician))
+      :TOCOMP ( CONJ-14 / and
+             :op1 ( EVENT-6 / evaluate
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-4 / risk
+                           :ATTRIBUTE ( ATTRIB-5 / individual)))
+             :op2 ( EVENT-12 / recommend
+                    :ARG0 ENTITY-1
+                    :ARG1 ( GROUP-7 / measures
+                           :ATTRIBUTE ( ATTRIB-10 / such
+                                  :AS ( GROUP-11 / vaccines))
+                           :ATTRIBUTE ( ATTRIB-9 / preventive)
+                           :ATTRIBUTE ( ATTRIB-8 / appropriate)))))
+
+# ::id 8_nonfiction_FACTBOOK-2010;DISEASES;AT3-3;NE
+# ::snt Diseases are organized into the following six exposure categories shown in italics and listed in typical descending order of risk .
+( EVENT-14 / organized
+      :ARG1 ( GROUP-1 / Diseases)
+      :INTO ( GROUP-2 / exposure_categories
+             :DEFINITE ( ATTRIB-3 / the)
+             :ATTRIBUTE ( ATTRIB-4 / following)
+             :CARDINAL ( ATTRIB-5 / six)
+             :ARG1-of ( CONJ-15 / and
+                    :op1 ( EVENT-8 / shown
+                           :IN ( GROUP-7 / italics))
+                    :op2 ( EVENT-13 / listed
+                           :IN ( ENTITY-9 / order
+                                  :ATTRIBUTE ( ATTRIB-11 / descending)
+                                  :ATTRIBUTE ( ATTRIB-10 / typical)
+                                  :OF ( ENTITY-12 / risk))))))
+
+# ::id 9_nonfiction_FACTBOOK-2010;DISEASES;AT3-4;NE
+# ::snt Note :
+( ENTITY-1 / Note)
+
+# ::id 10_nonfiction_FACTBOOK-2010;DISEASES;AT3-5;NE
+# ::snt The sequence of exposure categories listed in individual country entries may vary according to local conditions .
+( CONJ-12 / and
+      :domain-of ( MD-13 / may)
+      :op1 ( EVENT-11 / vary
+             :ARG0 ( ENTITY-1 / sequence
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :OF ( GROUP-3 / exposure_categories
+                           :ARG1-of ( EVENT-7 / listed
+                                  :IN ( GROUP-5 / country_entries
+                                         :ATTRIBUTE ( ATTRIB-6 / individual))))))
+      :op2 ( EVENT-10 / according
+             :ARG0 ENTITY-1
+             :TO ( GROUP-8 / conditions
+                    :ATTRIBUTE ( ATTRIB-9 / local))))
+
+# ::id 11_nonfiction_FACTBOOK-2010;DISEASES;AT3-6;NE
+# ::snt food or waterborne diseases acquired through eating or drinking on the local economy :
+( ENTITY-1 / or
+      :op1 ( GROUP-3 / food_diseases)
+      :op2 ( GROUP-4 / diseases
+             :ATTRIBUTE ( ATTRIB-5 / waterborne))
+      :ARG1-of ( EVENT-13 / acquired
+             :THROUGH ( CONJ-16 / or
+                    :op1 ( EVENT-11 / eating
+                           :ARG0 ENTITY-1
+                           :ON ( ENTITY-8 / economy
+                                  :DEFINITE ( ATTRIB-9 / the)
+                                  :ATTRIBUTE ( ATTRIB-10 / local)))
+                    :op2 ( EVENT-12 / drinking
+                           :ARG0 ENTITY-1
+                           :ON ENTITY-8))))
+
+# ::id 12_nonfiction_FACTBOOK-2010;DISEASES;AT4-1;NE
+# ::snt Hepatitis A -
+( ENTITY-Hepatitis_A / ENTITY
+      :name ( n-1 / name
+             :op1 "Hepatitis_A"))
+
+# ::id 13_nonfiction_FACTBOOK-2010;DISEASES;AT4-2;NE
+# ::snt viral disease that interferes with the functioning of the liver ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / viral)
+      :ARG0-of ( EVENT-8 / interferes
+             :WITH ( ENTITY-4 / functioning
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :OF ( ENTITY-6 / liver
+                           :DEFINITE ( ATTRIB-7 / the)))))
+
+# ::id 14_nonfiction_FACTBOOK-2010;DISEASES;AT4-3;NE
+# ::snt spread through consumption of food or water contaminated with fecal matter , principally in areas of poor sanitation ;
+( EVENT-14 / spread
+      :ARG1 ( REF1-1 / pro)
+      :PRINCIPALLY_IN ( GROUP-11 / areas
+             :OF ( ENTITY-12 / sanitation
+                    :ATTRIBUTE ( ATTRIB-13 / poor)))
+      :THROUGH ( ENTITY-2 / consumption
+             :OF ( ENTITY-3 / or
+                    :op1 ( ENTITY-5 / food)
+                    :op2 ( ENTITY-6 / water)
+                    :ARG1-of ( EVENT-10 / contaminated
+                           :WITH ( ENTITY-8 / matter
+                                  :ATTRIBUTE ( ATTRIB-9 / fecal))))))
+
+# ::id 15_nonfiction_FACTBOOK-2010;DISEASES;AT4-4;NE
+# ::snt victims exhibit fever , jaundice , and diarrhea ;
+( EVENT-6 / exhibit
+      :ARG0 ( GROUP-1 / victims)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / fever)
+             :op2 ( ENTITY-4 / jaundice)
+             :op3 ( ENTITY-5 / diarrhea)))
+
+# ::id 16_nonfiction_FACTBOOK-2010;DISEASES;AT4-5;NE
+# ::snt 15 % of victims will experience prolonged symptoms over 6 - 9 months ;
+( EVENT-9 / experience
+      :domain-of ( MD-10 / will)
+      :ARG0 ( GROUP-1 / percent
+             :CARDINAL ( ATTRIB-2 / 15)
+             :OF ( GROUP-3 / victims))
+      :ARG1 ( GROUP-4 / symptoms
+             :ATTRIBUTE ( ATTRIB-5 / prolonged))
+      :OVER ( GROUP-6 / months
+             :CARDINAL ( ATTRIB-8 / 9)
+             :CARDINAL ( ATTRIB-7 / 6)))
+
+# ::id 17_nonfiction_FACTBOOK-2010;DISEASES;AT4-6;NE
+# ::snt vaccine available .
+( EVENT-3 / EVENT
+      :ATTRIBUTE ( ATTRIB-2 / available)
+      :ARG0 ( ENTITY-1 / vaccine))
+
+# ::id 18_nonfiction_FACTBOOK-2010;DISEASES;AT4-7;NE
+# ::snt Hepatitis E -
+( ENTITY-Hepatitis_E / ENTITY
+      :name ( n-1 / name
+             :op1 "Hepatitis_E"))
+
+# ::id 19_nonfiction_FACTBOOK-2010;DISEASES;AT4-8;NE
+# ::snt water-borne viral disease that interferes with the functioning of the liver ;
+( ENTITY-1 / viral_disease
+      :ATTRIBUTE ( ATTRIB-2 / water-borne)
+      :ARG0-of ( EVENT-8 / interferes
+             :WITH ( ENTITY-4 / functioning
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :OF ( ENTITY-6 / liver
+                           :DEFINITE ( ATTRIB-7 / the)))))
+
+# ::id 20_nonfiction_FACTBOOK-2010;DISEASES;AT4-9;NE
+# ::snt most commonly spread through fecal contamination of drinking water ;
+( EVENT-6 / spread
+      :ARG1 ( REF1-1 / pro)
+      :THROUGH ( ENTITY-2 / contamination
+             :ATTRIBUTE ( ATTRIB-3 / fecal)
+             :OF ( ENTITY-4 / water
+                    :ATTRIBUTE ( ATTRIB-5 / drinking)))
+      :MOD ( mod-1 / most_commonly))
+
+# ::id 21_nonfiction_FACTBOOK-2010;DISEASES;AT4-10;NE
+# ::snt victims exhibit jaundice , fatigue , abdominal pain , and dark colored urine .
+( EVENT-9 / exhibit
+      :ARG0 ( GROUP-1 / victims)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / jaundice)
+             :op2 ( ENTITY-4 / fatigue)
+             :op3 ( ENTITY-5 / pain
+                    :ATTRIBUTE ( ATTRIB-6 / abdominal))
+             :op4 ( ENTITY-7 / urine
+                    :ATTRIBUTE ( ATTRIB-8 / dark_colored))))
+
+# ::id 22_nonfiction_FACTBOOK-2010;DISEASES;AT5-1;NE
+# ::snt Typhoid fever -
+( ENTITY-Typhoid_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Typhoid_fever"))
+
+# ::id 23_nonfiction_FACTBOOK-2010;DISEASES;AT5-2;NE
+# ::snt bacterial disease spread through contact with food or water contaminated by fecal matter or sewage ;
+( ENTITY-1 / bacterial_disease
+      :ARG1-of ( EVENT-14 / spread
+             :THROUGH ( ENTITY-3 / contact
+                    :WITH ( ENTITY-4 / or
+                           :op1 ( ENTITY-6 / food)
+                           :op2 ( ENTITY-7 / water)
+                           :ARG1-of ( EVENT-13 / contaminated
+                                  :ARG0 ( GROUP-9 / or
+                                         :op1 ( ENTITY-10 / matter
+                                                :ATTRIBUTE ( ATTRIB-11 / fecal))
+                                         :op2 ( ENTITY-12 / sewage)))))))
+
+# ::id 24_nonfiction_FACTBOOK-2010;DISEASES;AT5-3;NE
+# ::snt victims exhibit sustained high fevers ;
+( EVENT-4 / exhibit
+      :ARG0 ( GROUP-1 / victims)
+      :ARG1 ( GROUP-2 / high_fevers
+             :ATTRIBUTE ( ATTRIB-3 / sustained)))
+
+# ::id 25_nonfiction_FACTBOOK-2010;DISEASES;AT5-4;NE
+# ::snt left untreated , mortality rates can reach 20 % .
+( CND-9 / 0
+      :op1 ( EVENT-3 / left
+             :ATTRIBUTE ( ATTRIB-2 / untreated)
+             :ARG0 ( REF1-1 / pro))
+      :op2 ( EVENT-7 / reach
+             :domain-of ( MD-8 / can)
+             :ARG0 ( GROUP-4 / mortality_rates)
+             :ARG1 ( GROUP-5 / percent
+                    :CARDINAL ( ATTRIB-6 / 20))))
+
+# ::id 26_nonfiction_FACTBOOK-2010;DISEASES;AT5-5;NE
+# ::snt vectorborne diseases acquired through the bite of an infected arthropod :
+( GROUP-1 / diseases
+      :ATTRIBUTE ( ATTRIB-2 / vectorborne)
+      :ARG1-of ( EVENT-8 / acquired
+             :THROUGH ( ENTITY-4 / bite
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :OF ( ENTITY-6 / arthropod
+                           :ATTRIBUTE ( ATTRIB-7 / infected)))))
+
+# ::id 27_nonfiction_FACTBOOK-2010;DISEASES;AT6-1;NE
+# ::snt Malaria -
+( ENTITY-Malaria / ENTITY
+      :name ( n-1 / name
+             :op1 "Malaria"))
+
+# ::id 28_nonfiction_FACTBOOK-2010;DISEASES;AT6-2;NE
+# ::snt caused by single-cell parasitic protozoa Plasmodium ;
+( EVENT-4 / caused
+      :ARG0 ( ENTITY-2 / parasitic_protozoa_Plasmodium
+             :ATTRIBUTE ( ATTRIB-3 / single-cell))
+      :ARG1 ( REF1-1 / pro))
+
+# ::id 29_nonfiction_FACTBOOK-2010;DISEASES;AT6-3;NE
+# ::snt transmitted to humans via the bite of the female Anopheles mosquito ;
+( EVENT-7 / transmitted
+      :ARG1 ( REF1-1 / pro)
+      :VIA ( ENTITY-3 / bite
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( ENTITY-5 / female_Anopheles_mosquito
+                    :DEFINITE ( ATTRIB-6 / the)))
+      :TO ( GROUP-2 / humans))
+
+# ::id 30_nonfiction_FACTBOOK-2010;DISEASES;AT6-4;NE
+# ::snt parasites multiply in the liver attacking red blood cells resulting in cycles of fever , chills , and sweats accompanied by anemia ;
+( CONJ-18 / and
+      :op1 ( CONJ-17 / and
+             :op1 ( EVENT-16 / multiply
+                    :ARG0 ( GROUP-1 / parasites)
+                    :IN ( ENTITY-2 / liver
+                           :DEFINITE ( ATTRIB-3 / the)))
+             :op2 ( EVENT-15 / resulting
+                    :ARG0 GROUP-1
+                    :IN ( GROUP-7 / cycles
+                           :OF ( GROUP-8 / AND
+                                  :op1 ( ENTITY-9 / fever)
+                                  :op2 ( GROUP-10 / chills)
+                                  :op3 ( GROUP-11 / sweats
+                                         :ARG1-of ( EVENT-14 / accompanied
+                                                :ARG0 ( ENTITY-13 / anemia)))))))
+      :op2 ( EVENT-6 / attacking
+             :ARG0 GROUP-1
+             :ARG1 ( GROUP-4 / blood_cells
+                    :ATTRIBUTE ( ATTRIB-5 / red))))
+
+# ::id 31_nonfiction_FACTBOOK-2010;DISEASES;AT6-5;NE
+# ::snt death due to damage to vital organs and interruption of blood supply to the brain ;
+( EVENT-11 / EVENT
+      :ATTRIBUTE ( ATTRIB-2 / due
+             :TOCOMP ( EVENT-10 / damage
+                    :TO ( GROUP-3 / AND
+                           :op1 ( GROUP-4 / organs
+                                  :ATTRIBUTE ( ATTRIB-5 / vital))
+                           :op2 ( ENTITY-6 / interruption
+                                  :OF ( ENTITY-7 / blood_supply
+                                         :TO ( ENTITY-8 / brain
+                                                :DEFINITE ( ATTRIB-9 / the)))))))
+      :ARG0 ( ENTITY-1 / death))
+
+# ::id 32_nonfiction_FACTBOOK-2010;DISEASES;AT6-6;NE
+# ::snt endemic in 100 , mostly tropical , countries with 90 % of cases and the majority of 1.5 - 2.5 million estimated annual deaths occurring in sub-Saharan Africa .
+( EVENT-17 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / endemic
+             :IN ( GROUP-2 / countries
+                    :ATTRIBUTE ( ATTRIB-4 / mostly_tropical)
+                    :CARDINAL ( ATTRIB-3 / 100)))
+      :WITH ( EVENT-16 / occurring
+             :ARG0 ( GROUP-6 / AND
+                    :op1 ( GROUP-7 / percent
+                           :OF ( GROUP-9 / cases)
+                           :CARDINAL ( ATTRIB-8 / 90))
+                    :op2 ( ENTITY-10 / majority
+                           :DEFINITE ( ATTRIB-11 / the)
+                           :OF ( GROUP-12 / deaths
+                                  :ATTRIBUTE ( ATTRIB-15 / annual)
+                                  :ATTRIBUTE ( ATTRIB-14 / estimated)
+                                  :CARDINAL ( ATTRIB-13 / 1.5_-2.5_million))))
+             :IN ( ENTITY-sub-Saharan_Africa / ENTITY
+                    :name ( n-1 / name
+                           :op1 "sub-Saharan_Africa"))))
+
+# ::id 33_nonfiction_FACTBOOK-2010;DISEASES;AT7-1;NE
+# ::snt Dengue fever -
+( ENTITY-Dengue_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Dengue_fever"))
+
+# ::id 34_nonfiction_FACTBOOK-2010;DISEASES;AT7-2;NE
+# ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-3 / viral)
+      :ATTRIBUTE ( ATTRIB-2 / mosquito-borne)
+      :ARG1-of ( EVENT-7 / associated
+             :WITH ( GROUP-5 / environments
+                    :ATTRIBUTE ( ATTRIB-6 / urban)))
+      :NAMELY ( ENTITY-Aedes_aegypti / ENTITY
+             :name ( n-1 / name
+                    :op1 "Aedes_aegypti")))
+
+# ::id 35_nonfiction_FACTBOOK-2010;DISEASES;AT7-3;NE
+# ::snt manifests as sudden onset of fever and severe headache ;
+( EVENT-8 / manifests
+      :ARG0 ( REF1-1 / pro)
+      :AS ( ENTITY-2 / onset
+             :ATTRIBUTE ( ATTRIB-3 / sudden)
+             :OF ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / fever)
+                    :op2 ( ENTITY-6 / headache
+                           :ATTRIBUTE ( ATTRIB-7 / severe)))))
+
+# ::id 36_nonfiction_FACTBOOK-2010;DISEASES;AT7-4;NE
+# ::snt occasionally produces shock and hemorrhage leading to death in 5 % of cases .
+( EVENT-12 / produces
+      :ARG0 ( REF1-1 / pro)
+      :ARG1 ( ENTITY-2 / AND
+             :op1 ( ENTITY-4 / shock)
+             :op2 ( ENTITY-5 / hemorrhage)
+             :ARG0-of ( EVENT-11 / leading
+                    :TO ( ENTITY-7 / death
+                           :IN ( GROUP-8 / percent
+                                  :OF ( GROUP-10 / cases)
+                                  :CARDINAL ( ATTRIB-9 / 5)))))
+      :TMP ( TIME-1 / occasionally))
+
+# ::id 37_nonfiction_FACTBOOK-2010;DISEASES;AT8-1;NE
+# ::snt Yellow fever -
+( ENTITY-Yellow_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Yellow_fever"))
+
+# ::id 38_nonfiction_FACTBOOK-2010;DISEASES;AT8-2;NE
+# ::snt mosquito-borne viral disease ;
+( ENTITY-1 / viral_disease
+      :ATTRIBUTE ( ATTRIB-2 / mosquito-borne))
+
+# ::id 39_nonfiction_FACTBOOK-2010;DISEASES;AT8-3;NE
+# ::snt severity ranges from influenza-like symptoms to severe hepatitis and hemorrhagic fever ;
+( EVENT-9 / ranges
+      :ARG0 ( ENTITY-1 / severity)
+      :TO ( GROUP-4 / AND
+             :op1 ( ENTITY-5 / hepatitis
+                    :ATTRIBUTE ( ATTRIB-6 / severe))
+             :op2 ( ENTITY-7 / fever
+                    :ATTRIBUTE ( ATTRIB-8 / hemorrhagic)))
+      :FROM ( GROUP-2 / symptoms
+             :ATTRIBUTE ( ATTRIB-3 / influenza-like)))
+
+# ::id 40_nonfiction_FACTBOOK-2010;DISEASES;AT8-4;NE
+# ::snt occurs only in tropical South America and sub-Saharan Africa , where most cases are reported ;
+( EVENT-9 / occurs
+      :ARG0 ( REF1-1 / pro)
+      :IN ( ENTITY-2 / AND
+             :op1 ( ENTITY-tropical_South_America / ENTITY
+                    :name ( n-1 / name
+                           :op1 "tropical_South_America"))
+             :op2 ( ENTITY-sub-Saharan_Africa / ENTITY
+                    :name ( n-2 / name
+                           :op1 "sub-Saharan_Africa"))
+             :LOC-of ( EVENT-7 / reported
+                    :ARG1 ( GROUP-5 / cases
+                           :QUANTIFIER ( ATTRIB-6 / most)))))
+
+# ::id 41_nonfiction_FACTBOOK-2010;DISEASES;AT8-5;NE
+# ::snt fatality rate is less than 20 % .
+( EVENT-6 / copula
+      :ARG0 ( ENTITY-1 / fatality_rate)
+      :ARG1 ( ENTITY-2 / ENTITY
+             :THAN ( GROUP-4 / percent
+                    :CARDINAL ( ATTRIB-5 / 20))
+             :QUANTIFIER ( ATTRIB-3 / less)))
+
+# ::id 42_nonfiction_FACTBOOK-2010;DISEASES;AT9-1;NE
+# ::snt Japanese Encephalitis -
+( ENTITY-Japanese_Encephalitis / ENTITY
+      :name ( n-1 / name
+             :op1 "Japanese_Encephalitis"))
+
+# ::id 43_nonfiction_FACTBOOK-2010;DISEASES;AT9-2;NE
+# ::snt mosquito-borne -LRB- Culex tritaeniorhynchus -RRB- viral disease associated with rural areas in Asia ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-3 / viral)
+      :ATTRIBUTE ( ATTRIB-2 / mosquito-borne)
+      :ARG1-of ( EVENT-7 / associated
+             :WITH ( GROUP-5 / areas
+                    :ATTRIBUTE ( ATTRIB-6 / rural)
+                    :IN ( ENTITY-Asia / ENTITY
+                           :name ( n-1 / name
+                                  :op1 "Asia"))))
+      :NAMELY ( ENTITY-Culex_tritaeniorhynchus / ENTITY
+             :name ( n-2 / name
+                    :op1 "Culex_tritaeniorhynchus")))
+
+# ::id 44_nonfiction_FACTBOOK-2010;DISEASES;AT9-3;NE
+# ::snt acute encephalitis can progress to paralysis , coma , and death ;
+( EVENT-7 / progress
+      :domain-of ( MD-8 / can)
+      :ARG0 ( ENTITY-1 / encephalitis
+             :ATTRIBUTE ( ATTRIB-2 / acute))
+      :TO ( GROUP-3 / AND
+             :op1 ( ENTITY-4 / paralysis)
+             :op2 ( ENTITY-5 / coma)
+             :op3 ( ENTITY-6 / death)))
+
+# ::id 45_nonfiction_FACTBOOK-2010;DISEASES;AT9-4;NE
+# ::snt fatality rates 30 % .
+( EVENT-4 / EVENT
+      :ARG0 ( GROUP-1 / fatality_rates)
+      :ARG1 ( GROUP-2 / percent
+             :CARDINAL ( ATTRIB-3 / 30)))
+
+# ::id 46_nonfiction_FACTBOOK-2010;DISEASES;AT10-1;NE
+# ::snt African Trypanosomiasis -
+( ENTITY-African_Trypanosomiasis / ENTITY
+      :name ( n-1 / name
+             :op1 "African_Trypanosomiasis"))
+
+# ::id 47_nonfiction_FACTBOOK-2010;DISEASES;AT10-2;NE
+# ::snt caused by the parasitic protozoa Trypanosoma ;
+( EVENT-5 / caused
+      :ARG0 ( ENTITY-2 / protozoa_Trypanosoma
+             :DEFINITE ( ATTRIB-3 / the)
+             :ATTRIBUTE ( ATTRIB-4 / parasitic))
+      :ARG1 ( REF1-1 / pro))
+
+# ::id 48_nonfiction_FACTBOOK-2010;DISEASES;AT10-3;NE
+# ::snt transmitted to humans via the bite of bloodsucking Tsetse flies ;
+( EVENT-6 / transmitted
+      :ARG1 ( REF1-1 / pro)
+      :VIA ( ENTITY-3 / bite
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( ENTITY-5 / bloodsucking_Tsetse_flies))
+      :TO ( GROUP-2 / humans))
+
+# ::id 49_nonfiction_FACTBOOK-2010;DISEASES;AT10-4;NE
+# ::snt infection leads to malaise and irregular fevers and , in advanced cases when the parasites invade the central nervous system , coma and death ;
+( EVENT-20 / leads
+      :ARG0 ( ENTITY-1 / infection)
+      :TO ( GROUP-2 / AND
+             :op1 ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / malaise)
+                    :op2 ( GROUP-5 / fevers
+                           :ATTRIBUTE ( ATTRIB-6 / irregular)))
+             :op2 ( ENTITY-7 / AND
+                    :op1 ( ENTITY-18 / coma)
+                    :op2 ( ENTITY-19 / death)
+                    :IN ( GROUP-8 / cases
+                           :ATTRIBUTE ( ATTRIB-9 / advanced)
+                           :WHEN ( EVENT-16 / invade
+                                  :ARG0 ( GROUP-11 / parasites
+                                         :DEFINITE ( ATTRIB-12 / the))
+                                  :ARG1 ( ENTITY-13 / nervous_system
+                                         :DEFINITE ( ATTRIB-14 / the)
+                                         :ATTRIBUTE ( ATTRIB-15 / central)))))))
+
+# ::id 50_nonfiction_FACTBOOK-2010;DISEASES;AT10-5;NE
+# ::snt endemic in 36 countries of sub-Saharan Africa ;
+( EVENT-4 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / endemic
+             :IN ( GROUP-2 / countries
+                    :OF ( ENTITY-sub-Saharan_Africa / ENTITY
+                           :name ( n-1 / name
+                                  :op1 "sub-Saharan_Africa"))
+                    :CARDINAL ( ATTRIB-3 / 36))))
+
+# ::id 51_nonfiction_FACTBOOK-2010;DISEASES;AT10-6;NE
+# ::snt cattle and wild animals act as reservoir hosts for the parasites .
+( EVENT-8 / act
+      :ARG0 ( GROUP-1 / AND
+             :op1 ( GROUP-2 / cattle)
+             :op2 ( GROUP-3 / animals
+                    :ATTRIBUTE ( ATTRIB-4 / wild)))
+      :AS ( GROUP-5 / reservoir_hosts
+             :FOR ( GROUP-6 / parasites
+                    :DEFINITE ( ATTRIB-7 / the))))
+
+# ::id 52_nonfiction_FACTBOOK-2010;DISEASES;AT11-1;NE
+# ::snt Cutaneous Leishmaniasis -
+( ENTITY-Cutaneous_Leishmaniasis / ENTITY
+      :name ( n-1 / name
+             :op1 "Cutaneous_Leishmaniasis"))
+
+# ::id 53_nonfiction_FACTBOOK-2010;DISEASES;AT11-2;NE
+# ::snt caused by the parasitic protozoa leishmania ;
+( EVENT-5 / caused
+      :ARG0 ( ENTITY-2 / protozoa_leishmania
+             :DEFINITE ( ATTRIB-3 / the)
+             :ATTRIBUTE ( ATTRIB-4 / parasitic))
+      :ARG1 ( REF1-1 / pro))
+
+# ::id 54_nonfiction_FACTBOOK-2010;DISEASES;AT11-3;NE
+# ::snt transmitted to humans via the bite of sandflies ;
+( EVENT-6 / transmitted
+      :ARG1 ( REF1-1 / pro)
+      :VIA ( ENTITY-3 / bite
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( GROUP-5 / sandflies))
+      :TO ( GROUP-2 / humans))
+
+# ::id 55_nonfiction_FACTBOOK-2010;DISEASES;AT11-4;NE
+# ::snt results in skin lesions that may become chronic ;
+( EVENT-6 / results
+      :ARG0 ( REF1-1 / pro)
+      :IN ( GROUP-2 / skin_lesions
+             :ARG0-of ( EVENT-5 / become
+                    :domain-of ( MD-7 / may)
+                    :ATTRIBUTE ( ATTRIB-4 / chronic))))
+
+# ::id 56_nonfiction_FACTBOOK-2010;DISEASES;AT11-5;NE
+# ::snt endemic in 88 countries ;
+( EVENT-4 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / endemic
+             :IN ( GROUP-2 / countries
+                    :CARDINAL ( ATTRIB-3 / 88))))
+
+# ::id 57_nonfiction_FACTBOOK-2010;DISEASES;AT11-6;NE
+# ::snt 90 % of cases occur in Iran , Afghanistan , Syria , Saudi Arabia , Brazil , and Peru ;
+( EVENT-5 / occur
+      :ARG0 ( GROUP-1 / percent
+             :OF ( GROUP-3 / cases)
+             :CARDINAL ( ATTRIB-2 / 90))
+      :IN ( GROUP-4 / AND
+             :op1 ( ENTITY-Iran / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Iran"))
+             :op2 ( ENTITY-Afghanistan / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Afghanistan"))
+             :op3 ( ENTITY-Syria / ENTITY
+                    :name ( n-3 / name
+                           :op1 "Syria"))
+             :op4 ( ENTITY-Saudi_Arabia / ENTITY
+                    :name ( n-4 / name
+                           :op1 "Saudi_Arabia"))
+             :op5 ( ENTITY-Brazil / ENTITY
+                    :name ( n-5 / name
+                           :op1 "Brazil"))
+             :op6 ( ENTITY-Peru / ENTITY
+                    :name ( n-6 / name
+                           :op1 "Peru"))))
+
+# ::id 58_nonfiction_FACTBOOK-2010;DISEASES;AT11-7;NE
+# ::snt wild and domesticated animals as well as humans can act as reservoirs of infection .
+( EVENT-10 / act
+      :domain-of ( MD-11 / can)
+      :ARG0 ( ENTITY-1 / as_well
+             :EQUALS ( GROUP-2 / AND
+                    :op1 ( GROUP-3 / animals
+                           :ATTRIBUTE ( ATTRIB-4 / wild))
+                    :op2 ( GROUP-5 / animals
+                           :ATTRIBUTE ( ATTRIB-6 / domesticated))
+                    :AS ( GROUP-7 / humans)))
+      :AS ( GROUP-8 / reservoirs
+             :OF ( ENTITY-9 / infection)))
+
+# ::id 59_nonfiction_FACTBOOK-2010;DISEASES;AT12-1;NE
+# ::snt Plague -
+( ENTITY-Plague / ENTITY
+      :name ( n-1 / name
+             :op1 "Plague"))
+
+# ::id 60_nonfiction_FACTBOOK-2010;DISEASES;AT12-2;NE
+# ::snt bacterial disease transmitted by fleas normally associated with rats ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / bacterial)
+      :ARG1-of ( EVENT-9 / transmitted
+             :ARG0 ( GROUP-4 / fleas
+                    :ARG1-of ( EVENT-7 / associated
+                           :WITH ( GROUP-6 / rats)
+                           :MOD ( mod-1 / normally)))))
+
+# ::id 61_nonfiction_FACTBOOK-2010;DISEASES;AT12-3;NE
+# ::snt person-to-person airborne transmission also possible ;
+( EVENT-4 / EVENT
+      :ATTRIBUTE ( ATTRIB-3 / also_possible)
+      :ARG0 ( ENTITY-1 / airborne_transmission
+             :ATTRIBUTE ( ATTRIB-2 / person-to-person)))
+
+# ::id 62_nonfiction_FACTBOOK-2010;DISEASES;AT12-4;NE
+# ::snt recent plague epidemics occurred in areas of Asia , Africa , and South America associated with rural areas or small towns and villages ;
+( EVENT-14 / occurred
+      :MOD ( mod-1 / past)
+      :ARG0 ( GROUP-1 / plague_epidemics
+             :ATTRIBUTE ( ATTRIB-2 / recent))
+      :IN ( GROUP-3 / areas
+             :OF ( GROUP-4 / AND
+                    :op1 ( ENTITY-Asia / ENTITY
+                           :name ( n-2 / name
+                                  :op1 "Asia"))
+                    :op2 ( ENTITY-Africa / ENTITY
+                           :name ( n-3 / name
+                                  :op1 "Africa"))
+                    :op3 ( ENTITY-South_America / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "South_America")))
+             :ARG1-of ( EVENT-13 / associated
+                    :WITH ( GROUP-6 / or
+                           :op1 ( GROUP-7 / areas
+                                  :ATTRIBUTE ( ATTRIB-8 / rural))
+                           :op2 ( GROUP-9 / AND
+                                  :op1 ( GROUP-10 / towns
+                                         :ATTRIBUTE ( ATTRIB-11 / small))
+                                  :op2 ( GROUP-12 / villages))))))
+
+# ::id 63_nonfiction_FACTBOOK-2010;DISEASES;AT12-5;NE
+# ::snt manifests as fever , headache , and painfully swollen lymph nodes ;
+( EVENT-7 / manifests
+      :ARG0 ( REF1-1 / pro)
+      :AS ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / fever)
+             :op2 ( ENTITY-4 / headache)
+             :op3 ( GROUP-5 / swollen_lymph_nodes
+                    :ATTRIBUTE ( ATTRIB-6 / painfully))))
+
+# ::id 64_nonfiction_FACTBOOK-2010;DISEASES;AT12-6;NE
+# ::snt disease progresses rapidly and without antibiotic treatment leads to pneumonic form with a death rate in excess of 50 % .
+( CONJ-13 / and
+      :op1 ( EVENT-2 / progresses
+             :ARG0 ( ENTITY-1 / disease)
+             :MOD ( mod-14 / rapidly))
+      :op2 ( EVENT-12 / leads
+             :ARG0 ENTITY-1
+             :TO ( ENTITY-6 / form
+                    :ATTRIBUTE ( ATTRIB-7 / pneumonic)
+                    :WITH ( ENTITY-8 / death_rate
+                           :IN ( ENTITY-9 / excess
+                                  :OF ( GROUP-10 / percent
+                                         :CARDINAL ( ATTRIB-11 / 50)))))
+             :WITHOUT ( ENTITY-4 / treatment
+                    :ATTRIBUTE ( ATTRIB-5 / antibiotic))))
+
+# ::id 65_nonfiction_FACTBOOK-2010;DISEASES;AT13-1;NE
+# ::snt Crimean-Congo hemorrhagic fever -
+( ENTITY-Crimean-Congo_hemorrhagic_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Crimean-Congo_hemorrhagic_fever"))
+
+# ::id 66_nonfiction_FACTBOOK-2010;DISEASES;AT13-2;NE
+# ::snt tick-borne viral disease ;
+( ENTITY-1 / viral_disease
+      :ATTRIBUTE ( ATTRIB-2 / tick-borne))
+
+# ::id 67_nonfiction_FACTBOOK-2010;DISEASES;AT13-3;NE
+# ::snt infection may also result from exposure to infected animal blood or tissue ;
+( EVENT-8 / result
+      :domain-of ( MD-10 / may)
+      :ARG0 ( ENTITY-1 / infection)
+      :FROM ( ENTITY-2 / exposure
+             :TO ( GROUP-3 / or
+                    :op1 ( ENTITY-4 / animal_blood
+                           :ATTRIBUTE ( ATTRIB-5 / infected))
+                    :op2 ( ENTITY-6 / tissue_animal
+                           :ATTRIBUTE ( ATTRIB-7 / infected))))
+      :MOD ( mod-11 / also))
+
+# ::id 68_nonfiction_FACTBOOK-2010;DISEASES;AT13-4;NE
+# ::snt geographic distribution includes Africa , Asia , the Middle East , and Eastern Europe ;
+( EVENT-4 / includes
+      :ARG0 ( ENTITY-1 / distribution
+             :ATTRIBUTE ( ATTRIB-2 / geographic))
+      :ARG1 ( GROUP-3 / AND
+             :op1 ( ENTITY-Africa / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Africa"))
+             :op2 ( ENTITY-Asia / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Asia"))
+             :op3 ( ENTITY-Middle_East / ENTITY
+                    :name ( n-3 / name
+                           :op1 "Middle_East"))
+             :op4 ( ENTITY-Eastern_Europe / ENTITY
+                    :name ( n-4 / name
+                           :op1 "Eastern_Europe"))))
+
+# ::id 69_nonfiction_FACTBOOK-2010;DISEASES;AT13-5;NE
+# ::snt sudden onset of fever , headache , and muscle aches followed by hemorrhaging in the bowels , urine , nose , and gums ;
+( EVENT-15 / followed
+      :ARG0 ( ENTITY-1 / onset
+             :ATTRIBUTE ( ATTRIB-2 / sudden)
+             :OF ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / fever)
+                    :op2 ( ENTITY-5 / headache)
+                    :op3 ( GROUP-6 / muscle_aches)))
+      :BY ( ENTITY-7 / hemorrhaging
+             :IN ( ENTITY-8 / AND
+                    :DEFINITE ( ATTRIB-9 / the)
+                    :op1 ( GROUP-11 / bowels)
+                    :op2 ( ENTITY-12 / urine)
+                    :op3 ( ENTITY-13 / nose)
+                    :op4 ( GROUP-14 / gums))))
+
+# ::id 70_nonfiction_FACTBOOK-2010;DISEASES;AT13-6;NE
+# ::snt mortality rate is approximately 30 % .
+( EVENT-5 / copula
+      :ARG0 ( ENTITY-1 / mortality_rate)
+      :ARG1 ( GROUP-2 / percent
+             :ATTRIBUTE ( ATTRIB-3 / approximately)
+             :CARDINAL ( ATTRIB-4 / 30)))
+
+# ::id 71_nonfiction_FACTBOOK-2010;DISEASES;AT14-1;NE
+# ::snt Rift Valley fever -
+( ENTITY-Rift_Valley_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Rift_Valley_fever"))
+
+# ::id 72_nonfiction_FACTBOOK-2010;DISEASES;AT14-2;NE
+# ::snt viral disease affecting domesticated animals and humans ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / viral)
+      :ARG0-of ( EVENT-8 / affecting
+             :ARG1 ( GROUP-4 / AND
+                    :op1 ( GROUP-5 / animals
+                           :ATTRIBUTE ( ATTRIB-6 / domesticated))
+                    :op2 ( GROUP-7 / humans))))
+
+# ::id 73_nonfiction_FACTBOOK-2010;DISEASES;AT14-3;NE
+# ::snt transmission is by mosquito and other biting insects ;
+( EVENT-7 / copula
+      :ARG0 ( ENTITY-1 / transmission)
+      :BY ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / mosquito)
+             :op2 ( GROUP-4 / insects
+                    :ATTRIBUTE ( ATTRIB-6 / biting)
+                    :ATTRIBUTE ( ATTRIB-5 / other))))
+
+# ::id 74_nonfiction_FACTBOOK-2010;DISEASES;AT14-4;NE
+# ::snt infection may also occur through handling of infected meat or contact with blood ;
+( EVENT-8 / occur
+      :domain-of ( MD-10 / may)
+      :ARG0 ( ENTITY-1 / infection)
+      :THROUGH ( ENTITY-2 / handling
+             :OF ( GROUP-3 / or
+                    :op1 ( ENTITY-4 / meat
+                           :ATTRIBUTE ( ATTRIB-5 / infected))
+                    :op2 ( ENTITY-6 / contact
+                           :WITH ( ENTITY-7 / blood))))
+      :MOD ( mod-11 / also))
+
+# ::id 75_nonfiction_FACTBOOK-2010;DISEASES;AT14-5;NE
+# ::snt geographic distribution includes eastern and southern Africa where cattle and sheep are raised ;
+( EVENT-13 / includes
+      :ARG0 ( ENTITY-1 / distribution
+             :ATTRIBUTE ( ATTRIB-2 / geographic))
+      :ARG1 ( ENTITY-3 / AND
+             :op1 ( ENTITY-5 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-6 / eastern))
+             :op2 ( ENTITY-southern_Africa / ENTITY
+                    :name ( n-1 / name
+                           :op1 "southern_Africa"))
+             :LOC-of ( EVENT-11 / raised
+                    :ARG1 ( GROUP-8 / AND
+                           :op1 ( GROUP-9 / cattle)
+                           :op2 ( GROUP-10 / sheep)))))
+
+# ::id 76_nonfiction_FACTBOOK-2010;DISEASES;AT14-6;NE
+# ::snt symptoms are generally mild with fever and some liver abnormalities ,
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-2 / generally_mild)
+      :ARG0 ( GROUP-1 / symptoms)
+      :WITH ( GROUP-3 / AND
+             :op1 ( ENTITY-4 / fever)
+             :op2 ( GROUP-5 / liver_abnormalities
+                    :QUANTIFIER ( ATTRIB-6 / some))))
+
+# ::id 77_nonfiction_FACTBOOK-2010;DISEASES;AT14-7;NE
+# ::snt but the disease may progress to hemorrhagic fever , encephalitis , or ocular disease ;
+( EVENT-9 / progress
+      :domain-of ( MD-10 / may)
+      :ARG0 ( ENTITY-1 / disease
+             :DEFINITE ( ATTRIB-2 / the))
+      :TO ( GROUP-3 / or
+             :op1 ( ENTITY-4 / fever
+                    :ATTRIBUTE ( ATTRIB-5 / hemorrhagic))
+             :op2 ( ENTITY-6 / encephalitis)
+             :op3 ( ENTITY-7 / disease
+                    :ATTRIBUTE ( ATTRIB-8 / ocular))))
+
+# ::id 78_nonfiction_FACTBOOK-2010;DISEASES;AT14-8;NE
+# ::snt fatality rates are low at about 1 % of cases .
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-2 / low
+             :AT ( GROUP-3 / percent
+                    :ATTRIBUTE ( ATTRIB-4 / about)
+                    :OF ( GROUP-6 / cases)
+                    :CARDINAL ( ATTRIB-5 / 1)))
+      :ARG0 ( GROUP-1 / fatality_rates))
+
+# ::id 79_nonfiction_FACTBOOK-2010;DISEASES;AT15-1;NE
+# ::snt Chikungunya -
+( ENTITY-Chikungunya / ENTITY
+      :name ( n-1 / name
+             :op1 "Chikungunya"))
+
+# ::id 80_nonfiction_FACTBOOK-2010;DISEASES;AT15-2;NE
+# ::snt mosquito-borne -LRB- Aedes aegypti -RRB- viral disease associated with urban environments , similar to Dengue Fever ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-4 / similar
+             :TO ( ENTITY-Dengue_Fever / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Dengue_Fever")))
+      :ATTRIBUTE ( ATTRIB-3 / viral)
+      :ATTRIBUTE ( ATTRIB-2 / mosquito-borne)
+      :ARG1-of ( EVENT-8 / associated
+             :WITH ( GROUP-6 / environments
+                    :ATTRIBUTE ( ATTRIB-7 / urban)))
+      :NAMELY ( ENTITY-Aedes_aegypti / ENTITY
+             :name ( n-2 / name
+                    :op1 "Aedes_aegypti")))
+
+# ::id 81_nonfiction_FACTBOOK-2010;DISEASES;AT15-3;NE
+# ::snt characterized by sudden onset of fever , rash , and severe joint pain usually lasting 3 - 7 days ,
+( EVENT-14 / characterized
+      :ARG0 ( ENTITY-2 / onset
+             :ATTRIBUTE ( ATTRIB-3 / sudden)
+             :OF ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / fever)
+                    :op2 ( ENTITY-6 / rash)
+                    :op3 ( ENTITY-7 / joint_pain
+                           :ATTRIBUTE ( ATTRIB-8 / severe)))
+             :ARG0-of ( EVENT-12 / lasting
+                    :ARG1 ( GROUP-10 / days
+                           :CARDINAL ( ATTRIB-11 / 3_-7))
+                    :MOD ( mod-1 / usually)))
+      :ARG1 ( REF1-1 / pro))
+
+# ::id 82_nonfiction_FACTBOOK-2010;DISEASES;AT15-4;NE
+# ::snt some cases result in persistent arthritis .
+( EVENT-5 / result
+      :ARG0 ( GROUP-1 / cases
+             :QUANTIFIER ( ATTRIB-2 / some))
+      :IN ( ENTITY-3 / arthritis
+             :ATTRIBUTE ( ATTRIB-4 / persistent)))
+
+# ::id 83_nonfiction_FACTBOOK-2010;DISEASES;AT15-5;NE
+# ::snt water contact diseases acquired through swimming or wading in freshwater lakes , streams , and rivers :
+( EVENT-10 / acquired
+      :ARG1 ( GROUP-1 / water_contact_diseases)
+      :THROUGH ( CONJ-12 / or
+             :op1 ( EVENT-8 / swimming
+                    :ARG0 ( ARB-3 / arb)
+                    :IN ( GROUP-4 / AND
+                           :op1 ( GROUP-5 / freshwater_lakes)
+                           :op2 ( GROUP-6 / streams)
+                           :op3 ( GROUP-7 / rivers)))
+             :op2 ( EVENT-9 / wading
+                    :ARG0 ARB-3
+                    :IN GROUP-4)))
+
+# ::id 84_nonfiction_FACTBOOK-2010;DISEASES;AT16-1;NE
+# ::snt Leptospirosis -
+( ENTITY-Leptospirosis / ENTITY
+      :name ( n-1 / name
+             :op1 "Leptospirosis"))
+
+# ::id 85_nonfiction_FACTBOOK-2010;DISEASES;AT16-2;NE
+# ::snt bacterial disease that affects animals and humans ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / bacterial)
+      :ARG0-of ( EVENT-7 / affects
+             :ARG1 ( GROUP-4 / AND
+                    :op1 ( GROUP-5 / animals)
+                    :op2 ( GROUP-6 / humans))))
+
+# ::id 86_nonfiction_FACTBOOK-2010;DISEASES;AT16-3;NE
+# ::snt infection occurs through contact with water , food , or soil contaminated by animal urine ;
+( EVENT-11 / occurs
+      :ARG0 ( ENTITY-1 / infection)
+      :THROUGH ( ENTITY-2 / contact
+             :WITH ( ENTITY-3 / or
+                    :op1 ( ENTITY-5 / water)
+                    :op2 ( ENTITY-6 / food)
+                    :op3 ( ENTITY-7 / soil)
+                    :ARG1-of ( EVENT-10 / contaminated
+                           :ARG0 ( ENTITY-9 / animal_urine)))))
+
+# ::id 87_nonfiction_FACTBOOK-2010;DISEASES;AT16-4;NE
+# ::snt symptoms include high fever , severe headache , vomiting , jaundice , and diarrhea ;
+( EVENT-10 / include
+      :ARG0 ( GROUP-1 / symptoms)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / fever
+                    :ATTRIBUTE ( ATTRIB-4 / high))
+             :op2 ( ENTITY-5 / headache
+                    :ATTRIBUTE ( ATTRIB-6 / severe))
+             :op3 ( ENTITY-7 / vomiting)
+             :op4 ( ENTITY-8 / jaundice)
+             :op5 ( ENTITY-9 / diarrhea)))
+
+# ::id 88_nonfiction_FACTBOOK-2010;DISEASES;AT16-5;NE
+# ::snt untreated , the disease can result in kidney damage , liver failure , meningitis , or respiratory distress ;
+( CND-12 / 0
+      :op1 ( EVENT-3 / untreated
+             :ARG1 ( ENTITY-1 / disease
+                    :DEFINITE ( ATTRIB-2 / the)))
+      :op2 ( EVENT-10 / result
+             :domain-of ( MD-11 / can)
+             :ARG0 ENTITY-1
+             :IN ( GROUP-4 / or
+                    :op1 ( ENTITY-5 / kidney_damage)
+                    :op2 ( ENTITY-6 / liver_failure)
+                    :op3 ( ENTITY-7 / meningitis)
+                    :op4 ( ENTITY-8 / distress
+                           :ATTRIBUTE ( ATTRIB-9 / respiratory)))))
+
+# ::id 89_nonfiction_FACTBOOK-2010;DISEASES;AT16-6;NE
+# ::snt fatality rates are low
+( EVENT-3 / copula
+      :ATTRIBUTE ( ATTRIB-2 / low)
+      :ARG0 ( GROUP-1 / fatality_rates))
+
+# ::id 90_nonfiction_FACTBOOK-2010;DISEASES;AT16-7;NE
+# ::snt but left untreated recovery can take months .
+( CND-8 / 0
+      :op1 ( EVENT-3 / left
+             :ATTRIBUTE ( ATTRIB-2 / untreated)
+             :ARG0 ( REF1-1 / pro))
+      :op2 ( EVENT-6 / take
+             :domain-of ( MD-7 / can)
+             :ARG0 ( ENTITY-4 / recovery)
+             :ARG1 ( GROUP-5 / months)))
+
+# ::id 91_nonfiction_FACTBOOK-2010;DISEASES;AT17-1;NE
+# ::snt Schistosomiasis -
+( ENTITY-Schistosomiasis / ENTITY
+      :name ( n-1 / name
+             :op1 "Schistosomiasis"))
+
+# ::id 92_nonfiction_FACTBOOK-2010;DISEASES;AT17-2;NE
+# ::snt caused by parasitic trematode flatworm Schistosoma ;
+( EVENT-4 / caused
+      :ARG0 ( ENTITY-2 / trematode_flatworm_Schistosoma
+             :ATTRIBUTE ( ATTRIB-3 / parasitic))
+      :ARG1 ( REF1-1 / pro))
+
+# ::id 93_nonfiction_FACTBOOK-2010;DISEASES;AT17-3;NE
+# ::snt fresh water snails act as intermediate host and release larval form of parasite that penetrates the skin of people exposed to contaminated water ;
+( CONJ-19 / and
+      :op1 ( EVENT-5 / act
+             :ARG0 ( GROUP-1 / water_snails
+                    :ATTRIBUTE ( ATTRIB-2 / fresh))
+             :AS ( ENTITY-3 / host
+                    :ATTRIBUTE ( ATTRIB-4 / intermediate)))
+      :op2 ( EVENT-18 / release
+             :ARG0 GROUP-1
+             :ARG1 ( ENTITY-6 / form
+                    :ATTRIBUTE ( ATTRIB-7 / larval)
+                    :OF ( ENTITY-8 / parasite
+                           :ARG0-of ( EVENT-17 / penetrates
+                                  :ARG1 ( ENTITY-10 / skin
+                                         :DEFINITE ( ATTRIB-11 / the)
+                                         :OF ( GROUP-12 / people
+                                                :ARG1-of ( EVENT-16 / exposed
+                                                       :TO ( ENTITY-14 / water
+                                                              :ATTRIBUTE ( ATTRIB-15 / contaminated))))))))))
+
+# ::id 94_nonfiction_FACTBOOK-2010;DISEASES;AT17-4;NE
+# ::snt worms mature and reproduce in the blood vessels , liver , kidneys , and intestines releasing eggs , which become trapped in tissues triggering an immune response ;
+( CONJ-21 / and
+      :op1 ( CONJ-20 / and
+             :op1 ( EVENT-17 / mature
+                    :ARG0 ( GROUP-1 / worms)
+                    :IN ( ENTITY-2 / AND
+                           :DEFINITE ( ATTRIB-3 / the)
+                           :op1 ( GROUP-5 / blood_vessels)
+                           :op2 ( ENTITY-6 / liver)
+                           :op3 ( GROUP-7 / kidneys)
+                           :op4 ( GROUP-8 / intestines)))
+             :op2 ( EVENT-18 / reproduce
+                    :ARG0 GROUP-1
+                    :IN ENTITY-2))
+      :op2 ( EVENT-16 / releasing
+             :ARG0 GROUP-1
+             :ARG1 ( GROUP-9 / eggs
+                    :ARG1-of ( CONJ-19 / and
+                           :op1 ( EVENT-15 / become_trapped
+                                  :IN ( GROUP-11 / tissues))
+                           :op2 ( EVENT-14 / triggering
+                                  :ARG0 GROUP-9
+                                  :ARG1 ( ENTITY-12 / response
+                                         :ATTRIBUTE ( ATTRIB-13 / immune)))))))
+
+# ::id 95_nonfiction_FACTBOOK-2010;DISEASES;AT17-5;NE
+# ::snt may manifest as either urinary or intestinal disease resulting in decreased work or learning capacity ;
+( CONJ-14 / and
+      :domain-of ( MD-15 / may)
+      :op1 ( EVENT-13 / manifest
+             :ARG0 ( REF1-1 / pro)
+             :AS ( GROUP-2 / either_or
+                    :op1 ( ENTITY-3 / disease
+                           :ATTRIBUTE ( ATTRIB-4 / urinary))
+                    :op2 ( ENTITY-5 / disease
+                           :ATTRIBUTE ( ATTRIB-6 / intestinal))))
+      :op2 ( EVENT-12 / resulting
+             :ARG0 REF1-1
+             :IN ( GROUP-7 / or
+                    :op1 ( ENTITY-8 / work
+                           :ATTRIBUTE ( ATTRIB-9 / decreased))
+                    :op2 ( ENTITY-10 / capacity
+                           :ATTRIBUTE ( ATTRIB-11 / learning)))))
+
+# ::id 96_nonfiction_FACTBOOK-2010;DISEASES;AT17-6;NE
+# ::snt mortality , while generally low , may occur in advanced cases usually due to bladder cancer ;
+( CONJ-9 / and
+      :domain-of ( MD-10 / may)
+      :op1 ( EVENT-8 / occur
+             :ARG0 ( ENTITY-1 / mortality
+                    :WHILE ( ATTRIB-2 / generally_low))
+             :IN ( GROUP-3 / cases
+                    :ATTRIBUTE ( ATTRIB-4 / advanced)))
+      :op2 ( EVENT-7 / EVENT
+             :ATTRIBUTE ( ATTRIB-5 / usually_due
+                    :TO ( ENTITY-6 / bladder_cancer))
+             :ARG0 ENTITY-1))
+
+# ::id 97_nonfiction_FACTBOOK-2010;DISEASES;AT17-7;NE
+# ::snt endemic in 74 developing countries with 80 % of infected people living in sub-Saharan Africa ;
+( EVENT-11 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / endemic
+             :WITH ( GROUP-5 / percent
+                    :OF ( GROUP-7 / people
+                           :ATTRIBUTE ( ATTRIB-8 / infected)
+                           :ARG0-of ( EVENT-10 / living
+                                  :IN ( ENTITY-sub-Saharan_Africa / ENTITY
+                                         :name ( n-1 / name
+                                                :op1 "sub-Saharan_Africa"))))
+                    :CARDINAL ( ATTRIB-6 / 80))
+             :IN ( GROUP-2 / countries
+                    :ATTRIBUTE ( ATTRIB-4 / developing)
+                    :CARDINAL ( ATTRIB-3 / 74))))
+
+# ::id 98_nonfiction_FACTBOOK-2010;DISEASES;AT17-8;NE
+# ::snt humans act as the reservoir for this parasite .
+( EVENT-6 / act
+      :ARG0 ( GROUP-1 / humans)
+      :AS ( ENTITY-2 / reservoir
+             :DEFINITE ( ATTRIB-3 / the)
+             :FOR ( ENTITY-4 / parasite
+                    :DETERMINER ( ATTRIB-5 / this))))
+
+# ::id 99_nonfiction_FACTBOOK-2010;DISEASES;AT17-9;NE
+# ::snt aerosolized dust or soil contact disease acquired through inhalation of aerosols contaminated with rodent urine :
+( ENTITY-1 / or
+      :op1 ( ENTITY-3 / dust_contact_disease
+             :ATTRIBUTE ( ATTRIB-4 / aerosolized))
+      :op2 ( ENTITY-5 / soil_contact_disease)
+      :ARG1-of ( EVENT-13 / acquired
+             :THROUGH ( ENTITY-7 / inhalation
+                    :OF ( GROUP-8 / aerosols
+                           :ARG1-of ( EVENT-12 / contaminated
+                                  :WITH ( ENTITY-10 / urine
+                                         :ATTRIBUTE ( ATTRIB-11 / rodent)))))))
+
+# ::id 100_nonfiction_FACTBOOK-2010;DISEASES;AT18-1;NE
+# ::snt Lassa fever -
+( ENTITY-Lassa_fever / ENTITY
+      :name ( n-1 / name
+             :op1 "Lassa_fever"))
+
+# ::id 101_nonfiction_FACTBOOK-2010;DISEASES;AT18-2;NE
+# ::snt viral disease carried by rats of the genus Mastomys ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / viral)
+      :ARG1-of ( EVENT-5 / carried
+             :ARG0 ( GROUP-4 / rats
+                    :OF ( ENTITY-genus_Mastomys / ENTITY
+                           :name ( n-1 / name
+                                  :op1 "genus_Mastomys")))))
+
+# ::id 102_nonfiction_FACTBOOK-2010;DISEASES;AT18-3;NE
+# ::snt endemic in portions of West Africa ;
+( EVENT-3 / EVENT
+      :ATTRIBUTE ( ATTRIB-1 / endemic
+             :IN ( GROUP-2 / portions
+                    :OF ( ENTITY-West_Africa / ENTITY
+                           :name ( n-1 / name
+                                  :op1 "West_Africa")))))
+
+# ::id 103_nonfiction_FACTBOOK-2010;DISEASES;AT18-4;NE
+# ::snt infection occurs through direct contact with or consumption of food contaminated by rodent urine or fecal matter containing virus particles ;
+( EVENT-30 / occurs
+      :ARG0 ( ENTITY-1 / infection)
+      :THROUGH ( GROUP-2 / or
+             :op1 ( ENTITY-3 / contact
+                    :ATTRIBUTE ( ATTRIB-4 / direct)
+                    :WITH ( ENTITY-5 / food
+                           :ARG1-of ( EVENT-16 / contaminated
+                                  :ARG0 ( ENTITY-7 / or
+                                         :op1 ( ENTITY-9 / rodent_matter)
+                                         :op2 ( ENTITY-10 / urine_matter)
+                                         :op3 ( ENTITY-11 / matter
+                                                :ATTRIBUTE ( ATTRIB-12 / fecal))
+                                         :ARG0-of ( EVENT-15 / containing
+                                                :ARG1 ( GROUP-14 / virus_particles))))))
+             :op2 ( ENTITY-17 / consumption
+                    :OF ( ENTITY-18 / food
+                           :ARG1-of ( EVENT-29 / contaminated
+                                  :ARG0 ( ENTITY-20 / or
+                                         :op1 ( ENTITY-22 / rodent_matter)
+                                         :op2 ( ENTITY-23 / urine_matter)
+                                         :op3 ( ENTITY-24 / matter
+                                                :ATTRIBUTE ( ATTRIB-25 / fecal))
+                                         :ARG0-of ( EVENT-28 / containing
+                                                :ARG1 ( GROUP-27 / virus_particles))))))))
+
+# ::id 104_nonfiction_FACTBOOK-2010;DISEASES;AT18-5;NE
+# ::snt fatality rate can reach 50 % in epidemic outbreaks .
+( EVENT-5 / reach
+      :domain-of ( MD-6 / can)
+      :ARG0 ( ENTITY-1 / fatality_rate)
+      :ARG1 ( GROUP-2 / percent
+             :CARDINAL ( ATTRIB-3 / 50))
+      :IN ( GROUP-4 / epidemic_outbreaks))
+
+# ::id 105_nonfiction_FACTBOOK-2010;DISEASES;AT19-1;NE
+# ::snt respiratory disease acquired through close contact with an infectious person :
+( ENTITY-1 / respiratory_disease
+      :ARG1-of ( EVENT-7 / acquired
+             :THROUGH ( ENTITY-3 / contact
+                    :ATTRIBUTE ( ATTRIB-4 / close)
+                    :WITH ( ENTITY-5 / person
+                           :ATTRIBUTE ( ATTRIB-6 / infectious)))))
+
+# ::id 106_nonfiction_FACTBOOK-2010;DISEASES;AT20-1;NE
+# ::snt Meningococcal meningitis -
+( ENTITY-Meningococcal_meningitis / ENTITY
+      :name ( n-1 / name
+             :op1 "Meningococcal_meningitis"))
+
+# ::id 107_nonfiction_FACTBOOK-2010;DISEASES;AT20-2;NE
+# ::snt bacterial disease causing an inflammation of the lining of the brain and spinal cord ;
+( ENTITY-1 / disease
+      :ATTRIBUTE ( ATTRIB-2 / bacterial)
+      :ARG0-of ( EVENT-12 / causing
+             :ARG1 ( ENTITY-4 / inflammation
+                    :OF ( ENTITY-5 / lining
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :OF ( ENTITY-7 / AND
+                                  :DEFINITE ( ATTRIB-8 / the)
+                                  :op1 ( ENTITY-10 / brain)
+                                  :op2 ( ENTITY-11 / spinal_cord))))))
+
+# ::id 108_nonfiction_FACTBOOK-2010;DISEASES;AT20-3;NE
+# ::snt one of the most important bacterial pathogens is Neisseria meningitidis because of its potential to cause epidemics ;
+( EVENT-12 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :OF ( GROUP-3 / pathogens
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :ATTRIBUTE ( ATTRIB-6 / bacterial)
+                    :ATTRIBUTE ( ATTRIB-5 / most_important))
+             :CARDINAL ( ATTRIB-2 / one))
+      :ARG1 ( ENTITY-Neisseria_meningitidis / ENTITY
+             :name ( n-1 / name
+                    :op1 "Neisseria_meningitidis"))
+      :BECAUSE_OF ( EVENT-11 / cause
+             :ARG0 ( ENTITY-8 / potential
+                    :POS ( REF1-9 / its))
+             :ARG1 ( GROUP-10 / epidemics)))
+
+# ::id 109_nonfiction_FACTBOOK-2010;DISEASES;AT20-4;NE
+# ::snt symptoms include stiff neck , high fever , headaches , and vomiting ;
+( EVENT-9 / include
+      :ARG0 ( GROUP-1 / symptoms)
+      :ARG1 ( GROUP-2 / AND
+             :op1 ( ENTITY-3 / neck
+                    :ATTRIBUTE ( ATTRIB-4 / stiff))
+             :op2 ( ENTITY-5 / fever
+                    :ATTRIBUTE ( ATTRIB-6 / high))
+             :op3 ( GROUP-7 / headaches)
+             :op4 ( ENTITY-8 / vomiting)))
+
+# ::id 110_nonfiction_FACTBOOK-2010;DISEASES;AT20-5;NE
+# ::snt bacteria are transmitted from person to person by respiratory droplets and facilitated by close and prolonged contact resulting from crowded living conditions , often with a seasonal distribution ;
+( CONJ-20 / and
+      :op1 ( EVENT-8 / transmitted
+             :ARG0 ( GROUP-6 / droplets
+                    :ATTRIBUTE ( ATTRIB-7 / respiratory))
+             :ARG1 ( GROUP-1 / bacteria)
+             :TO ( ENTITY-5 / person)
+             :FROM ( ENTITY-4 / person)
+             :OFTEN_WITH ( ENTITY-2 / distribution
+                    :ATTRIBUTE ( ATTRIB-3 / seasonal)))
+      :op2 ( EVENT-19 / facilitated
+             :ARG0 ( ENTITY-9 / AND
+                    :op1 ( ENTITY-11 / contact
+                           :ATTRIBUTE ( ATTRIB-12 / close))
+                    :op2 ( ENTITY-13 / contact
+                           :ATTRIBUTE ( ATTRIB-14 / prolonged))
+                    :ARG0-of ( EVENT-18 / resulting
+                           :FROM ( GROUP-16 / living_conditions
+                                  :ATTRIBUTE ( ATTRIB-17 / crowded))))
+             :ARG1 GROUP-1
+             :OFTEN_WITH ENTITY-2))
+
+# ::id 111_nonfiction_FACTBOOK-2010;DISEASES;AT20-6;NE
+# ::snt death occurs in 5 - 15 % of cases , typically within 24 - 48 hours of onset of symptoms ;
+( EVENT-11 / occurs
+      :ARG0 ( ENTITY-1 / death)
+      :TYPICALLY_WITHIN ( GROUP-6 / hours
+             :OF ( ENTITY-9 / onset
+                    :OF ( GROUP-10 / symptoms))
+             :CARDINAL ( ATTRIB-8 / 48)
+             :CARDINAL ( ATTRIB-7 / 24))
+      :IN ( GROUP-2 / percent
+             :OF ( GROUP-5 / cases)
+             :CARDINAL ( ATTRIB-4 / 15)
+             :CARDINAL ( ATTRIB-3 / 5)))
+
+# ::id 112_nonfiction_FACTBOOK-2010;DISEASES;AT20-7;NE
+# ::snt highest burden of meningococcal disease occurs in the hyperendemic region of sub-Saharan Africa known as the " Meningitis Belt " which stretches from Senegal east to Ethiopia .
+( EVENT-12 / occurs
+      :ARG0 ( ENTITY-1 / burden
+             :ATTRIBUTE ( ATTRIB-2 / highest)
+             :OF ( ENTITY-3 / disease
+                    :ATTRIBUTE ( ATTRIB-4 / meningococcal)))
+      :IN ( ENTITY-5 / region
+             :DEFINITE ( ATTRIB-6 / the)
+             :ATTRIBUTE ( ATTRIB-7 / hyperendemic)
+             :OF ( ENTITY-sub-Saharan_Africa / ENTITY
+                    :name ( n-1 / name
+                           :op1 "sub-Saharan_Africa"))
+             :ARG1-of ( EVENT-9 / known
+                    :AS ( ENTITY-Meningitis_Belt / ENTITY
+                           :name ( n-2 / name
+                                  :op1 "Meningitis_Belt")))
+             :ARG0-of ( EVENT-11 / stretches
+                    :TO ( ENTITY-Ethiopia / ENTITY
+                           :name ( n-3 / name
+                                  :op1 "Ethiopia"))
+                    :FROM ( ENTITY-Senegal_east / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "Senegal_east")))))
+
+# ::id 113_nonfiction_FACTBOOK-2010;DISEASES;AT21-1;NE
+# ::snt animal contact disease acquired through direct contact with local animals :
+( ENTITY-1 / contact_disease
+      :ATTRIBUTE ( ATTRIB-2 / animal)
+      :ARG1-of ( EVENT-8 / acquired
+             :THROUGH ( ENTITY-4 / contact
+                    :ATTRIBUTE ( ATTRIB-5 / direct)
+                    :WITH ( GROUP-6 / animals
+                           :ATTRIBUTE ( ATTRIB-7 / local)))))
+
+# ::id 114_nonfiction_FACTBOOK-2010;DISEASES;AT22-1;NE
+# ::snt Rabies -
+( ENTITY-Rabies / ENTITY
+      :name ( n-1 / name
+             :op1 "Rabies"))
+
+# ::id 115_nonfiction_FACTBOOK-2010;DISEASES;AT22-2;NE
+# ::snt viral disease of mammals usually transmitted through the bite of an infected animal , most commonly dogs ;
+( EVENT-10 / transmitted
+      :ARG0 ( ENTITY-1 / disease
+             :ATTRIBUTE ( ATTRIB-2 / viral)
+             :OF ( GROUP-3 / mammals))
+      :THROUGH ( ENTITY-4 / bite
+             :DEFINITE ( ATTRIB-5 / the)
+             :OF ( ENTITY-8 / animal
+                    :ATTRIBUTE ( ATTRIB-9 / infected)
+                    :NAMELY ( ENTITY-6 / dogs
+                           :ATTRIBUTE ( ATTRIB-7 / commonly))))
+      :TMP ( TIME-1 / usually))
+
+# ::id 116_nonfiction_FACTBOOK-2010;DISEASES;AT22-3;NE
+# ::snt virus affects the central nervous system causing brain alteration and death ;
+( CONJ-10 / and
+      :op1 ( EVENT-9 / affects
+             :ARG0 ( ENTITY-1 / virus)
+             :ARG1 ( ENTITY-2 / nervous_system
+                    :DEFINITE ( ATTRIB-3 / the)
+                    :ATTRIBUTE ( ATTRIB-4 / central)))
+      :op2 ( EVENT-8 / causing
+             :ARG0 ENTITY-2
+             :ARG1 ( GROUP-5 / AND
+                    :op1 ( ENTITY-6 / brain_alteration)
+                    :op2 ( ENTITY-7 / death))))
+
+# ::id 117_nonfiction_FACTBOOK-2010;DISEASES;AT22-4;NE
+# ::snt symptoms initially are non-specific fever and headache progressing to neurological symptoms ;
+( CONJ-12 / and
+      :op1 ( EVENT-9 / copula
+             :ARG0 ( GROUP-1 / symptoms)
+             :ARG1 ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / fever
+                           :ATTRIBUTE ( ATTRIB-4 / non-specific))
+                    :op2 ( ENTITY-5 / headache)))
+      :op2 ( EVENT-8 / progressing
+             :ARG0 GROUP-2
+             :TO ( GROUP-6 / symptoms
+                    :ATTRIBUTE ( ATTRIB-7 / neurological)))
+      :TMP ( TIME-13 / initially))
+
+# ::id 118_nonfiction_FACTBOOK-2010;DISEASES;AT22-5;NE
+# ::snt death occurs within days of the onset of symptoms .
+( EVENT-6 / occurs
+      :ARG0 ( ENTITY-1 / death)
+      :WITHIN ( GROUP-2 / days
+             :OF ( ENTITY-3 / onset
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :OF ( GROUP-5 / symptoms))))

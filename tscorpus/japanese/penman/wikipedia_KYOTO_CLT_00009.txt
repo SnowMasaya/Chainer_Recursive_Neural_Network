@@ -1,0 +1,1208 @@
+# ::id 1_wikipedia_KYOTO_CLT_00009,1;NJ
+# ::snt 和菓子
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 和菓子))
+
+# ::id 2_wikipedia_KYOTO_CLT_00009,2;NJ
+# ::snt 和菓子 （ わがし ） と は 、 日本 の 伝統的 製造法 で 作ら れ た 菓子 の こと 。
+( EVENT-8 / EVENT
+      :ARG0 ( ENTITY-1 / 和菓子
+             :NAMELY ( ENTITY-わがし / ENTITY
+                    :name ( n-10 / name
+                           :op1 "わがし")))
+      :ARG1 ( ENTITY-2 / こと
+             :の ( ENTITY-3 / 菓子
+                    :ARG1-of ( EVENT-7 / 作ら_た
+                           :で ( ENTITY-5 / 製造法
+                                  :ATTRIBUTE ( ATTRIB-6 / 伝統的)
+                                  :の ( ENTITY-日本 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "日本")))
+                           :MOD ( mod-9 / past)))))
+
+# ::id 3_wikipedia_KYOTO_CLT_00009,3;NJ
+# ::snt 明治 時代 以降 に ヨーロッパ など から 新しく 日本 に 入っ て き た 洋菓子 に対して 使わ れる 言葉 。
+( EVENT-11 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 言葉
+             :ARG1-of ( EVENT-10 / 使わ
+                    :に対して ( ENTITY-4 / 洋菓子
+                           :ARG0-of ( EVENT-8 / 入っ_て_き_た
+                                  :に ( ENTITY-日本 / ENTITY
+                                         :name ( n-14 / name
+                                                :op1 "日本"))
+                                  :から ( ENTITY-7 / ENTITY
+                                         :など ( ENTITY-ヨーロッパ / ENTITY
+                                                :name ( n-15 / name
+                                                       :op1 "ヨーロッパ")))
+                                  :に ( ENTITY-6 / 明治_時代_以降)
+                                  :MOD ( mod-12 / 新しく)
+                                  :MOD ( mod-13 / past))))))
+
+# ::id 4_wikipedia_KYOTO_CLT_00009,4;NJ
+# ::snt 遣唐使 によって 伝来 し た 唐 菓子 や 、 宣教師 によって もたらさ れ た 南蛮 菓子 も 和菓子 に 含める 。
+( EVENT-12 / 含める
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( CONJ-13 / CONJ_や
+             :op1 ( GROUP-2 / AND
+                    :op3 ( EVENT-6 / past)
+                    :op4 ( ENTITY-3 / 唐_菓子)
+                    :op1 ( ENTITY-5 / 遣唐使)
+                    :op2 ( EVENT-15 / 伝来する.0_た
+                           :ARG0 ENTITY-3
+                           :によって ENTITY-5))
+             :op2 ( GROUP-14 / AND
+                    :op3 ( EVENT-10 / past)
+                    :op4 ( ENTITY-7 / 南蛮_菓子)
+                    :op1 ( ENTITY-9 / 宣教師)
+                    :op2 ( EVENT-16 / もたらさ_た
+                           :ARG0 ENTITY-9
+                           :ARG1 ENTITY-7)))
+      :に ( ENTITY-11 / 和菓子))
+
+# ::id 5_wikipedia_KYOTO_CLT_00009,5;NJ
+# ::snt 概要
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 概要))
+
+# ::id 6_wikipedia_KYOTO_CLT_00009,6;NJ
+# ::snt 茶道 に於ける 薄茶 （ うすちゃ 、 お薄 （ おうす ） と も ） や 濃茶 （ こいちゃ ） とともに 食べる こと も あり 、 味覚 は 元より 美的 鑑賞 に も 堪える こと を 期待 さ れ て 発達 し た 食品 。
+( CONJ-35 / AND
+      :op1 ( EVENT-11 / あり
+             :ARG0 ( SITUATION-2 / こと
+                    :THAT ( EVENT-10 / 食べる
+                           :ARG0 ENTITY-1
+                           :ARG1 ENTITY-1
+                           :とともに ( ENTITY-5 / CONJ_や
+                                  :op1 ( GROUP-7 / AND
+                                         :op1 ( ENTITY-8 / 薄茶)
+                                         :op2 ( ENTITY-30 / ENTITY
+                                                :NAMELY ( ENTITY-うすちゃ / ENTITY
+                                                       :name ( n-27 / name
+                                                              :op1 "うすちゃ")))
+                                         :op3 ENTITY-31)
+                                  :op2 ( GROUP-29 / AND
+                                         :op1 ( ENTITY-9 / 濃茶)
+                                         :op2 ( ENTITY-32 / ENTITY
+                                                :NAMELY ( ENTITY-こいちゃ / ENTITY
+                                                       :name ( n-28 / name
+                                                              :op1 "こいちゃ")))
+                                         :op3 ENTITY-33)
+                                  :に於ける ( ENTITY-6 / 茶道)))))
+      :op2 ( EVENT-21 / EVENT
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-12 / 食品
+                    :ARG0-of ( CONJ-25 / CONJ_te
+                           :op1 ( EVENT-19 / 期待する.0_て
+                                  :ARG1 ( SITUATION-14 / こと
+                                         :THAT ( CONJ-24 / CONJ_元より
+                                                :op1 ( EVENT-18 / 堪える
+                                                       :LINK ( ENTITY-15 / 味覚))
+                                                :op2 ( EVENT-34 / 堪える
+                                                       :LINK ( ENTITY-16 / 鑑賞
+                                                              :ATTRIBUTE ( ATTRIB-17 / 美的))))))
+                           :op2 ( EVENT-20 / 発達する.0_た
+                                  :MOD ( mod-26 / past))))))
+
+# ::id 7_wikipedia_KYOTO_CLT_00009,7;NJ
+# ::snt 通常 、 薄茶席 で は 干菓子 を 、 濃茶席 で は 生菓子 （ 主菓子 ） を 供 さ れる 。
+( EVENT-9 / 供する.0
+      :ARG1 ( ENTITY-7 / 生菓子
+             :で ( ENTITY-8 / 濃茶席)
+             :NAMELY ( ENTITY-6 / 主菓子))
+      :ARG2 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-5 / EVENT
+                    :ARG1 ( ENTITY-3 / 干菓子
+                           :で ( ENTITY-4 / 薄茶席))
+                    :ADV ( ENTITY-2 / 通常)))
+      :ADV ENTITY-2)
+
+# ::id 8_wikipedia_KYOTO_CLT_00009,8;NJ
+# ::snt 日本茶 や 抹茶 の お茶請け に なる こと が 多い ため 、 甘い もの が 多い 。
+( EVENT-12 / 多い
+      :ARG0 ( ENTITY-10 / もの
+             :ATTRIBUTE ( ATTRIB-11 / 甘い))
+      :ため ( EVENT-9 / 多い
+             :ARG0 ( SITUATION-2 / こと
+                    :THAT ( EVENT-8 / なる
+                           :ARG0 ( ENTITY-3 / pro
+                                  :pick0)
+                           :に ( ENTITY-4 / お茶請け
+                                  :の ( CONJ-13 / CONJ_や
+                                         :op1 ( GROUP-5 / AND
+                                                :op1 ( ENTITY-6 / 日本茶)
+                                                :op2 ENTITY-15)
+                                         :op2 ( GROUP-14 / AND
+                                                :op1 ( ENTITY-7 / 抹茶)
+                                                :op2 ENTITY-16)))))))
+
+# ::id 9_wikipedia_KYOTO_CLT_00009,9;NJ
+# ::snt 砂糖 、 米 、 小麦 、 小豆 など 、 比較的 少ない 種類 の 主 原料 より 、 多く の 種類 の 和菓子 が 生み出さ れる 。
+( EVENT-12 / 生み出さ
+      :ARG1 ( ENTITY-10 / 和菓子
+             :の ( ENTITY-11 / 種類))
+      :より ( ENTITY-1 / 原料
+             :の ( ENTITY-7 / 種類
+                    :ATTRIBUTE ( ATTRIB-8 / 比較的_少ない))
+             :ATTRIBUTE ( ATTRIB-9 / 主)
+             :など ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / 砂糖)
+                    :op2 ENTITY-16
+                    :MOD ( mod-13 / AND
+                           :op1 ( ENTITY-4 / 米)
+                           :op2 ENTITY-17)
+                    :MOD ( mod-14 / AND
+                           :op1 ( ENTITY-5 / 小麦)
+                           :op2 ENTITY-18)
+                    :MOD ( mod-15 / AND
+                           :op1 ( ENTITY-6 / 小豆)
+                           :op2 ENTITY-19))))
+
+# ::id 10_wikipedia_KYOTO_CLT_00009,10;NJ
+# ::snt 原料 に 砂糖 を 用いる よう に なっ た の は 近世 以降 で あり 、 特に 和三盆 は 、 容易 に は 白砂糖 が 手 に 入ら ない 江戸 時代 、 その 独特 の 風味 と 程よい 甘さ によって 、 和菓子 の 発展 に 貢献 し た と さ れる 。
+( CONJ-35 / AND
+      :op1 ( EVENT-9 / で_あり
+             :ARG0 ( SITUATION-1 / の
+                    :THAT ( EVENT-7 / なっ_た
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :ARG1 ( SITUATION-3 / よう
+                                  :THAT ( EVENT-6 / 用いる
+                                         :ARG0 ENTITY-2
+                                         :ARG1 ( ENTITY-5 / 砂糖)
+                                         :に ( ENTITY-4 / 原料)))
+                           :MOD ( mod-31 / past)))
+             :ARG1 ( ENTITY-8 / 近世_以降))
+      :op2 ( EVENT-26 / さ
+             :ARG1 ( ENTITY-10 / 和三盆)
+             :ARG2 ( EVENT-25 / 貢献する.0_た
+                    :ARG0 ENTITY-10
+                    :に ( ENTITY-23 / 発展
+                           :の ( ENTITY-24 / 和菓子))
+                    :によって ( GROUP-18 / CONJ_と
+                           :op1 ( ENTITY-19 / 風味
+                                  :の ( ENTITY-20 / 独特))
+                           :op2 ( GROUP-18 / AND
+                                  :op1 ( ATTRIB-22 / 程よい)
+                                  :op2 ( ENTITY-21 / 甘さ
+                                         :ATTRIBUTE ATTRIB-22)
+                                  :op3 ENTITY-34))
+                    :TMP ( TIME-12 / 江戸_時代
+                           :TMP-of ( EVENT-16 / 入ら
+                                  :ARG0 ( ENTITY-14 / 白砂糖)
+                                  :に ( ENTITY-15 / 手)
+                                  :domain-of ( NEG-29 / NEG)
+                                  :MOD ( mod-30 / 容易_に_は)))
+                    :MOD ( mod-32 / past))
+             :MOD ( mod-33 / 特に)))
+
+# ::id 11_wikipedia_KYOTO_CLT_00009,11;NJ
+# ::snt 砂糖 を 用いる よう に なる 以前 における 、 もっとも 甘い 嗜好品 は 柿 で あっ た こと から 、 和菓子 が 持つ 味覚 の 繊細さ を 窺い 知る こと が できる 。
+( EVENT-20 / できる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-2 / こと
+             :THAT ( EVENT-19 / 窺い_知る
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-14 / 繊細さ
+                           :の ( ENTITY-18 / 味覚)
+                           :ARG1-of ( EVENT-17 / 持つ
+                                  :ARG0 ( ENTITY-16 / 和菓子)))
+                    :から ( SITUATION-3 / こと
+                           :THAT ( EVENT-13 / で_あっ_た
+                                  :ARG0 ( ENTITY-10 / 嗜好品
+                                         :ATTRIBUTE ( ATTRIB-11 / もっとも_甘い))
+                                  :ARG1 ( ENTITY-12 / 柿)
+                                  :における ( SITUATION-4 / 以前
+                                         :THAT ( EVENT-9 / なる
+                                                :ARG0 ( ENTITY-5 / ENTITY
+                                                       :namely ENTITY-1)
+                                                :ARG1 ( SITUATION-6 / よう
+                                                       :THAT ( EVENT-8 / 用いる
+                                                              :ARG0 ENTITY-5
+                                                              :ARG1 ( ENTITY-7 / 砂糖)))))
+                                  :MOD ( mod-21 / past))))))
+
+# ::id 12_wikipedia_KYOTO_CLT_00009,12;NJ
+# ::snt また 、 前述 の 通り 、 和菓子 に は 芸術 作品 として の 側面 も 要求 さ れる 。
+( EVENT-6 / 要求する.0
+      :ARG1 ( ENTITY-4 / 側面
+             :として_の ( ENTITY-5 / 芸術_作品))
+      :ARG2 ( ENTITY-3 / 和菓子)
+      :ADV ( ENTITY-1 / 通り
+             :の ( ENTITY-2 / 前述)))
+
+# ::id 13_wikipedia_KYOTO_CLT_00009,13;NJ
+# ::snt 夏 の 和菓子 で あれ ば 、 涼 を 感じ させる ため に 葛粉 など を 用い て 透明感 ある 作品 に 仕上げる といった 具合 に 、 季節感 の 表現 一 つ に も 材料 を 吟味 する 。
+( EVENT-26 / 吟味する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-25 / 材料)
+      :に ( ENTITY-22 / 表現
+             :MSR ( DEGREE-24 / CD_一_つ)
+             :の ( ENTITY-23 / 季節感))
+      :に ( ENTITY-2 / 具合
+             :THAT ( CND-46 / ば (
+                           :op1 ( ENTITY-6 夏) ( ENTITY-4 ( ENTITY
+                                         :namely ( PICK-42 / or
+                                                :op1 ENTITY-3
+                                                :op2 ENTITY-1))) ( ENTITY-5 ( 和菓子
+                                         :の ENTITY-6)) ( EVENT-7 ( で_あれ
+                                         :ARG0 ENTITY-4
+                                         :ARG1 ENTITY-5)))
+                    :op2 ( CONJ-45 / CONJ_te
+                           :op1 ( EVENT-16 / 用い_て
+                                  :ARG0 ( ENTITY-3 / ENTITY
+                                         :namely ENTITY-1)
+                                  :ARG1 ( ENTITY-9 / ENTITY
+                                         :など ( ENTITY-10 / 葛粉))
+                                  :に ( SITUATION-11 / ため
+                                         :THAT ( EVENT-13 / させる
+                                                :ARG0 ENTITY-9
+                                                :ARG2 ( ENTITY-12 / ENTITY
+                                                       :namely ( PICK-44 / or
+                                                              :op1 ENTITY-3
+                                                              :op2 ENTITY-10
+                                                              :op3 ENTITY-8
+                                                              :op4 ENTITY-5
+                                                              :op5 ENTITY-6
+                                                              :op6 ENTITY-1))
+                                                :TOCOMP ( EVENT-15 / 感じ
+                                                       :ARG0 ENTITY-12
+                                                       :ARG1 ( ENTITY-14 / 涼)))))
+                           :op2 ( EVENT-21 / 仕上げる
+                                  :ARG0 ENTITY-3
+                                  :ARG1 ( ENTITY-8 / ENTITY
+                                         :namely ( PICK-43 / or
+                                                :op1 ENTITY-5
+                                                :op2 ENTITY-6
+                                                :op3 ENTITY-1))
+                                  :に ( ENTITY-17 / 作品
+                                         :ARG0-of ( EVENT-20 / ある
+                                                :ARG0 ( ENTITY-19 / 透明感))))))))
+
+# ::id 14_wikipedia_KYOTO_CLT_00009,14;NJ
+# ::snt 特に 精巧 に 作ら れる 工芸 菓子 と 呼ば れる 分野 も あり 、 食用 可能 な 和菓子 の 材料 で 花鳥風月 の 世界 を 表現 する 。
+( CONJ-21 / AND
+      :op1 ( EVENT-9 / あり
+             :ARG0 ( ENTITY-2 / 分野
+                    :ARG1-of ( EVENT-8 / 呼ば
+                           :ARG2 ( ENTITY-4 / 工芸_菓子
+                                  :ARG1-of ( EVENT-6 / 作ら
+                                         :MOD ( mod-19 / 精巧_に)))))
+             :MOD ( mod-20 / 特に))
+      :op2 ( EVENT-18 / 表現する.0
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-16 / 世界
+                    :の ( ENTITY-17 / 花鳥風月))
+             :で ( ENTITY-11 / 材料
+                    :の ( ENTITY-15 / 和菓子)
+                    :ARG0-of ( EVENT-14 / 可能_な
+                           :ARG0 ( ENTITY-13 / 食用)))))
+
+# ::id 15_wikipedia_KYOTO_CLT_00009,15;NJ
+# ::snt 水分量 20 % 以下 の 和菓子 を 干菓子 （ ひがし ） または 乾菓子 （ ひがし ） 、 40 % 以上 の 和菓子 （ 羊羹 は 30 ％ 以上 ） を 生菓子 、 その 中間 を 半生菓子 と いう 。
+( EVENT-14 / いう
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-7 / EVENT
+                    :ARG1 ( ENTITY-2 / 和菓子
+                           :の ( ENTITY-3 / CD_20_percent
+                                  :MOD ( mod-16 / 水分量)
+                                  :MOD ( mod-17 / 以下)))
+                    :ARG2 ( CONJ-15 / CONJ_または
+                           :op1 ( GROUP-4 / AND
+                                  :op1 ( ENTITY-5 / 干菓子)
+                                  :op2 ( ENTITY-21 / ENTITY
+                                         :NAMELY ( ENTITY-ひがし / ENTITY
+                                                :name ( n-19 / name
+                                                       :op1 "ひがし")))
+                                  :op3 ENTITY-22)
+                           :op2 ( GROUP-20 / AND
+                                  :op1 ( ENTITY-6 / 乾菓子)
+                                  :op2 ( ENTITY-23 / ENTITY
+                                         :NAMELY ENTITY-ひがし)
+                                  :op3 ENTITY-24)))
+             :ARG0-of ( EVENT-11 / EVENT
+                    :ARG1 ( ENTITY-8 / 和菓子
+                           :の ( ENTITY-9 / CD_40_percent
+                                  :MOD ( mod-18 / 以上)))
+                    :ARG2 ( ENTITY-10 / 生菓子)))
+      :ARG1 ( ENTITY-12 / 中間)
+      :ARG2 ( ENTITY-13 / 半生菓子))
+
+# ::id 16_wikipedia_KYOTO_CLT_00009,16;NJ
+# ::snt 和菓子 は 大きく この 3 タイプ に 分類 さ れる 。
+( EVENT-3 / 分類する.0
+      :ARG1 ( ENTITY-1 / 和菓子)
+      :に ( ENTITY-2 / CD_3_タイプ)
+      :MOD ( mod-4 / 大きく))
+
+# ::id 17_wikipedia_KYOTO_CLT_00009,26;NJ
+# ::snt 日本 三 銘菓 の 一 つ で ある 「 長生殿 」
+( EVENT-4 / EVENT
+      :LINK ( ENTITY-長生殿 / ENTITY
+             :name ( n-5 / name
+                    :op1 "長生殿")
+             :ARG0-of ( EVENT-3 / で_ある
+                    :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_一_つ)
+                           :の ( ENTITY-日本_三_銘菓 / ENTITY
+                                  :name ( n-6 / name
+                                         :op1 "日本_三_銘菓"))))))
+
+# ::id 18_wikipedia_KYOTO_CLT_00009,28;NJ
+# ::snt 生姜 砂糖 を 塗っ た 煎餅 「 柴舟 」
+( EVENT-6 / EVENT
+      :LINK ( ENTITY-柴舟 / ENTITY
+             :name ( n-8 / name
+                    :op1 "柴舟")
+             :NAMELY ( ENTITY-1 / 煎餅
+                    :に-of ( EVENT-5 / 塗っ_た
+                           :ARG0 ENTITY-柴舟
+                           :ARG1 ( ENTITY-4 / 生姜_砂糖)
+                           :MOD ( mod-7 / past)))))
+
+# ::id 19_wikipedia_KYOTO_CLT_00009,30;NJ
+# ::snt 波打つ せんべい に クリーム を 挟ん だ 「 千寿せんべい 」
+( EVENT-8 / EVENT
+      :LINK ( ENTITY-1 / 千寿せんべい
+             :THAT ( EVENT-7 / 挟ん_だ
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :ARG1 ( ENTITY-6 / クリーム)
+                    :に ( ENTITY-3 / せんべい
+                           :ARG0-of ( EVENT-5 / 波打つ)))))
+
+# ::id 20_wikipedia_KYOTO_CLT_00009,35;NJ
+# ::snt 創業 当時 の 川端家 文書 は 京都市 の 文化財 に も なっ て いる 。
+( EVENT-4 / なっ_て_いる
+      :ARG0 ( ENTITY-1 / 川端家_文書
+             :の ( ENTITY-2 / 創業_当時))
+      :に ( ENTITY-3 / 文化財
+             :の ( ENTITY-京都市 / ENTITY
+                    :name ( n-5 / name
+                           :op1 "京都市"))))
+
+# ::id 21_wikipedia_KYOTO_CLT_00009,36;NJ
+# ::snt 創業 時 から 明治天皇 の 東京行幸 （ 1869 年 3 月 ） まで 、 内裏 に 御朝物 と 称する 菓子 を 毎朝 献上 し て き た 。
+( EVENT-11 / 献上する.0_て_き_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-5 / 菓子
+             :ARG1-of ( EVENT-9 / 称する
+                    :ARG0 ( PICK-12 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-2
+                           :op3 ENTITY-東京行幸
+                           :op4 ENTITY-4
+                           :op5 ENTITY-3
+                           :op6 ENTITY-明治天皇)
+                    :ARG2 ( ENTITY-8 / 御朝物)))
+      :TMP ( TIME-10 / 朝)
+      :に ( ENTITY-4 / 内裏)
+      :まで ( ENTITY-東京行幸 / ENTITY
+             :name ( n-14 / name
+                    :op1 "東京行幸")
+             :の ( ENTITY-明治天皇 / ENTITY
+                    :name ( n-15 / name
+                           :op1 "明治天皇"))
+             :NAMELY ( ENTITY-3 / CD_1869_年_3_月))
+      :から ( ENTITY-2 / 創業_時)
+      :MOD ( mod-13 / past))
+
+# ::id 22_wikipedia_KYOTO_CLT_00009,39;NJ
+# ::snt 京都 に ある 「 笹屋 」 の 本家 で も ある 。
+( EVENT-5 / で_も_ある
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 本家
+             :の ( ENTITY-笹屋 / ENTITY
+                    :name ( n-6 / name
+                           :op1 "笹屋")
+                    :ARG0-of ( EVENT-4 / ある
+                           :に ( ENTITY-京都 / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "京都"))))))
+
+# ::id 23_wikipedia_KYOTO_CLT_00009,43;NJ
+# ::snt 京都 に 本拠 を 残し て いる 和菓子屋 で は 老舗 の 一 つ 。
+( EVENT-8 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-6 / ENTITY ( ENTITY-6 CD_一_つ)
+             :の ( ENTITY-7 / 老舗))
+      :で ( ENTITY-2 / 和菓子屋
+             :ARG0-of ( EVENT-5 / 残し_て_いる
+                    :ARG1 ( ENTITY-4 / 本拠)
+                    :に ( ENTITY-京都 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "京都")))))
+
+# ::id 24_wikipedia_KYOTO_CLT_00009,44;NJ
+# ::snt 宮内庁 や 相国寺 、 南禅寺 など 納入先 も 多い 。
+( EVENT-3 / 多い
+      :ARG0 ( ENTITY-1 / 納入先
+             :など ( GROUP-2 / CONJ_や
+                    :op1 ( ENTITY-宮内庁 / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "宮内庁"))
+                    :op2 ( ENTITY-相国寺 / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "相国寺"))
+                    :op3 ( ENTITY-南禅寺 / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "南禅寺")))))
+
+# ::id 25_wikipedia_KYOTO_CLT_00009,45;NJ
+# ::snt 烏丸店 は 京菓子 の 資料館 を 併設 し て いる 。
+( EVENT-3 / 併設する.0_て_いる
+      :ARG0 ( ENTITY-烏丸店 / ENTITY
+             :name ( n-4 / name
+                    :op1 "烏丸店"))
+      :ARG1 ( ENTITY-1 / 資料館
+             :の ( ENTITY-2 / 京菓子)))
+
+# ::id 26_wikipedia_KYOTO_CLT_00009,50;NJ
+# ::snt 皇室 御用達 で も あり 、 ごま豆腐 など の 惣菜 も 手がける 。
+( EVENT-7 / 手がける
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-3 / で_も_あり
+                    :ARG1 ( ENTITY-2 / 皇室_御用達)))
+      :ARG1 ( ENTITY-4 / 惣菜
+             :の ( ENTITY-5 / ENTITY
+                    :など ( ENTITY-6 / ごま豆腐))))
+
+# ::id 27_wikipedia_KYOTO_CLT_00009,59;NJ
+# ::snt 京都 の 和菓子 は 、 宮中 や 公家 、 寺社 、 茶家 に おさめ たり 、 特別 な お祝い の ため に あつらえる 「 上菓子 」 、 ふだん に 食べる ｢ おまん （ 饅頭 の 略 ） ｣ や ｢ だんご ｣ ｢ 餅菓子 ｣ に わけ られる 。
+( EVENT-26 / わけ
+      :ARG1 ( ENTITY-1 / 和菓子
+             :の ( ENTITY-京都 / ENTITY
+                    :name ( n-34 / name
+                           :op1 "京都")))
+      :に ( CONJ-33 / CONJ_や
+             :op1 ( GROUP-2 / AND
+                    :op8 ( ENTITY-3 / 上菓子)
+                    :op1 ( ENTITY-5 / ENTITY
+                           :namely ( PICK-29 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-京都))
+                    :op2 ( CONJ-30 / CONJ_や
+                           :op1 ( GROUP-7 / AND
+                                  :op1 ( ENTITY-8 / 宮中)
+                                  :op2 ENTITY-41)
+                           :op2 ( GROUP-38 / AND
+                                  :op1 ( ENTITY-9 / 公家)
+                                  :op2 ENTITY-42)
+                           :op3 ( GROUP-39 / AND
+                                  :op1 ( ENTITY-10 / 寺社)
+                                  :op2 ENTITY-43)
+                           :op4 ( GROUP-40 / AND
+                                  :op1 ( ENTITY-11 / 茶家)
+                                  :op2 ENTITY-44))
+                    :op3 ( SITUATION-6 / FACT
+                           :THAT ( EVENT-12 / おさめ
+                                  :ARG0 ENTITY-3
+                                  :に GROUP-7))
+                    :op4 ( ATTRIB-15 / 特別_な)
+                    :op5 ( ENTITY-14 / お祝い
+                           :ATTRIBUTE ATTRIB-15)
+                    :op6 ( ENTITY-13 / ため
+                           :の ENTITY-14)
+                    :op7 ( EVENT-16 / あつらえる
+                           :ARG0 ENTITY-5
+                           :ARG1 ENTITY-3
+                           :に ENTITY-13
+                           :たり SITUATION-6))
+             :op2 ( GROUP-35 / AND
+                    :op7 ( ENTITY-19 / おまん)
+                    :op1 ( ENTITY-21 / ENTITY
+                           :namely ( PICK-32 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-京都))
+                    :op2 ( ENTITY-22 / ふだん)
+                    :op3 ( EVENT-23 / 食べる
+                           :ARG0 ENTITY-21
+                           :ARG1 ( ENTITY-19 / ENTITY
+                                  :NAMELY ( ENTITY-17 / 略
+                                         :の ( ENTITY-18 / 饅頭)))
+                           :に ENTITY-22)
+                    :op4 ENTITY-18
+                    :op5 ENTITY-17
+                    :op6 ENTITY-45)
+             :op3 ( GROUP-36 / AND
+                    :op1 ( ENTITY-24 / だんご)
+                    :op2 ENTITY-46)
+             :op4 ( GROUP-37 / AND
+                    :op1 ( ENTITY-25 / 餅菓子)
+                    :op2 ENTITY-47)))
+
+# ::id 28_wikipedia_KYOTO_CLT_00009,60;NJ
+# ::snt 前者 を つくる もの を 菓子匠 、 御菓子司 など と 称し 、 後者 を つくる もの を ｢ おまんやさん ｣ ｢ おもちやさん ｣ と 呼ん だ 。
+( EVENT-18 / 呼ん_だ
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-10 / 称し
+                    :ARG1 ( ENTITY-2 / もの
+                           :ARG0-of ( EVENT-5 / つくる
+                                  :ARG1 ( ENTITY-4 / 前者)))
+                    :ARG2 ( ENTITY-6 / ENTITY
+                           :など ( GROUP-7 / AND
+                                  :op1 ( ENTITY-8 / 菓子匠)
+                                  :op2 ENTITY-22
+                                  :MOD ( mod-19 / AND
+                                         :op1 ( ENTITY-9 / 御菓子司)
+                                         :op2 ENTITY-23)))))
+      :ARG1 ( ENTITY-11 / もの
+             :ARG0-of ( EVENT-14 / つくる
+                    :ARG1 ( ENTITY-13 / 後者)))
+      :ARG2 ( GROUP-15 / AND
+             :op1 ( ENTITY-16 / おまんやさん)
+             :op2 ENTITY-24
+             :MOD ( mod-20 / AND
+                    :op1 ( ENTITY-17 / おもちやさん)
+                    :op2 ENTITY-25))
+      :MOD ( mod-21 / past))
+
+# ::id 29_wikipedia_KYOTO_CLT_00009,61;NJ
+# ::snt 「 ○△餅 」 という 店 で も 、 饂飩 （ うどん ） ・ 寿司 ・ おはぎ が ださ れる ところ が 現在 も ある 。
+( EVENT-10 / ある
+      :ARG0 ( ENTITY-2 / ところ
+             :LOC-of ( EVENT-8 / ださ
+                    :ARG1 ( GROUP-4 / AND
+                           :op1 ( ENTITY-5 / 饂飩)
+                           :op2 ( ENTITY-15 / ENTITY
+                                  :NAMELY ( ENTITY-うどん / ENTITY
+                                         :name ( n-13 / name
+                                                :op1 "うどん")))
+                           :op3 ENTITY-16
+                           :MOD ( mod-11 / AND
+                                  :op1 ( ENTITY-6 / 寿司)
+                                  :op2 ENTITY-17)
+                           :MOD ( mod-12 / AND
+                                  :op1 ( ENTITY-7 / おはぎ)
+                                  :op2 ENTITY-18))))
+      :TMP ( ENTITY-9 / 現在)
+      :で ( ENTITY-1 / 店
+             :という ( ENTITY- ○ △ 餅 / ENTITY
+                    :name ( n-14 / name
+                           :op1 " ○ △ 餅"))))
+
+# ::id 30_wikipedia_KYOTO_CLT_00009,62;NJ
+# ::snt 現代 で は その 区分 も あいまい に なっ て き て いる 。
+( EVENT-3 / なっ_て_き_いる
+      :ARG0 ( ENTITY-2 / 区分)
+      :で ( ENTITY-1 / 現代)
+      :MOD ( mod-4 / あいまい_に))
+
+# ::id 31_wikipedia_KYOTO_CLT_00009,63;NJ
+# ::snt 上菓子 は 、 お供え菓子 や 、 茶道 の 菓子 として 洗練 し た 発展 を とげ 、 ふだん の 菓子 も 年中 行事 ごと に 様々 な もの が 食べ られ た 経緯 から 多彩 に 展開 し た 。
+( CONJ-29 / AND
+      :op1 ( EVENT-8 / とげ
+             :ARG0 ( ENTITY-1 / 上菓子)
+             :ARG1 ( SITUATION-2 / 発展
+                    :THAT ( EVENT-7 / 洗練する.0_た
+                           :ARG0 ENTITY-1
+                           :として ( CONJ-20 / CONJ_や
+                                  :op1 ( GROUP-3 / AND
+                                         :op1 ( ENTITY-4 / お供え菓子)
+                                         :op2 ENTITY-27)
+                                  :op2 ( GROUP-26 / AND
+                                         :op1 ( ENTITY-6 / 茶道)
+                                         :op2 ( ENTITY-5 / 菓子
+                                                :の ENTITY-6)
+                                         :op3 ENTITY-28))
+                           :MOD ( mod-21 / past))))
+      :op2 ( EVENT-18 / 展開する.0_た
+             :ARG0 ( ENTITY-9 / 菓子
+                    :の ( ENTITY-10 / ふだん))
+             :から ( SITUATION-11 / 経緯 (
+                           :THAT ( ENTITY-12 ( ENTITY
+                                         :OF ( ENTITY-13 / 行事)
+                                         :MOD ( mod-23 / 年中))) ( EVENT-16 ( 食べ_た
+                                         :ARG1 ( ENTITY-14 / もの
+                                                :ATTRIBUTE ( ATTRIB-15 / 様々_な))
+                                         :に ENTITY-12
+                                         :MOD ( mod-22 / past)))))
+             :MOD ( mod-24 / 多彩_に)
+             :MOD ( mod-25 / past)))
+
+# ::id 32_wikipedia_KYOTO_CLT_00009,64;NJ
+# ::snt その 伝統 が 今日 の 京菓子 に 反映 さ れ て いる 。
+( EVENT-4 / 反映する.0_て_いる
+      :ARG1 ( ENTITY-1 / 伝統)
+      :に ( ENTITY-2 / 京菓子
+             :の ( ENTITY-3 / 今日)))
+
+# ::id 33_wikipedia_KYOTO_CLT_00009,65;NJ
+# ::snt 上菓子
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 上菓子))
+
+# ::id 34_wikipedia_KYOTO_CLT_00009,66;NJ
+# ::snt 上菓子 は 以下 の よう な 素材 、 中間 素材 、 製法 を もちい 、 美的 に つくりあげる 。
+( EVENT-13 / つくりあげる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 上菓子
+             :ARG0-of ( EVENT-12 / もちい
+                    :ARG1 ( ENTITY-3 / AND
+                           :op1 ( ENTITY-9 / 素材)
+                           :op2 ENTITY-17
+                           :MOD ( mod-14 / AND
+                                  :op1 ( ENTITY-10 / 中間_素材)
+                                  :op2 ENTITY-18)
+                           :MOD ( mod-15 / AND
+                                  :op1 ( ENTITY-11 / 製法)
+                                  :op2 ENTITY-19)
+                           :ARG0-of ( EVENT-7 / な
+                                  :ARG1 ( ENTITY-5 / よう
+                                         :の ( ENTITY-6 / 以下))))))
+      :MOD ( mod-16 / 美的_に))
+
+# ::id 35_wikipedia_KYOTO_CLT_00009,67;NJ
+# ::snt こなし
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / こなし))
+
+# ::id 36_wikipedia_KYOTO_CLT_00009,68;NJ
+# ::snt 白こし餡 （ 手亡豆 等 の 隠元豆 、 あるいは 白小豆 の 餡 ） と 薄力粉 を まぜ て 蒸し た もの に 砂糖水 を くわえ ねりあげ た もの 。
+( EVENT-23 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / もの
+             :ARG0-of ( EVENT-21 / くわえ
+                    :ARG1 ( ENTITY-20 / 砂糖水)
+                    :に ( ENTITY-5 / もの
+                           :ARG1-of ( CONJ-29 / CONJ_te
+                                  :op1 ( EVENT-18 / まぜ_て
+                                         :ARG0 ( PICK-25 / or
+                                                :op1 ENTITY-7
+                                                :op2 ENTITY-2
+                                                :op3 ENTITY-4
+                                                :op4 ENTITY-1)
+                                         :ARG1 ( CONJ-28 / CONJ_と
+                                                :op1 ( GROUP-9 / AND
+                                                       :op3 ( ENTITY-16 / ENTITY
+                                                              :NAMELY ( GROUP-10 / AND
+                                                                     :op3 ( ENTITY-11 / 隠元豆
+                                                                            :の ( ENTITY-12 / ENTITY
+                                                                                   :等 ( ENTITY-13 / 手亡豆)))
+                                                                     :op4 ENTITY-35
+                                                                     :op1 ENTITY-13
+                                                                     :op2 ENTITY-12))
+                                                       :op4 ( ENTITY-33 / 白こし餡)
+                                                       :op1 ENTITY-34
+                                                       :op2 ( CONJ-27 / CONJ_あるいは
+                                                              :op1 ( GROUP-10 / AND
+                                                                     :op1 ( ENTITY-15 / 白小豆)
+                                                                     :op2 ( ENTITY-14 / 餡
+                                                                            :の ENTITY-15)
+                                                                     :op3 ENTITY-37)
+                                                              :op2 GROUP-36))
+                                                :op2 ( GROUP-32 / AND
+                                                       :op1 ( ENTITY-17 / 薄力粉)
+                                                       :op2 ENTITY-38)))
+                                  :op2 ( EVENT-19 / 蒸し_た
+                                         :ARG0 ( ENTITY-7 / ENTITY
+                                                :namely ( PICK-24 / or
+                                                       :op1 ENTITY-2
+                                                       :op2 ENTITY-4
+                                                       :op3 ENTITY-1))
+                                         :MOD ( mod-30 / past)))))
+             :ARG1-of ( EVENT-22 / ねりあげ_た
+                    :ARG0 ( ENTITY-4 / ENTITY
+                           :namely ENTITY-1)
+                    :MOD ( mod-31 / past))))
+
+# ::id 37_wikipedia_KYOTO_CLT_00009,69;NJ
+# ::snt 色 を つけ て さまざま な 形 に 加工 する 。
+( CONJ-8 / CONJ_te
+      :op1 ( EVENT-4 / つけ_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-3 / 色))
+      :op2 ( EVENT-7 / 加工する.0
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-2 / pro
+                    :pick0)
+             :に ( ENTITY-5 / 形
+                    :ATTRIBUTE ( ATTRIB-6 / さまざま_な))))
+
+# ::id 38_wikipedia_KYOTO_CLT_00009,70;NJ
+# ::snt 梅 の 蕾 を かたどっ た ｢ 未開紅 ｣ 、 紅葉 に したて た ｢ 竜田川 ｣ を はじめ 、 くず菓子 の 餡 など 多彩 に 展開 する 。
+( EVENT-14 / 展開する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0
+             :ARG0-of ( EVENT-11 / はじめ
+                    :ARG1 ( GROUP-2 / AND
+                           :op5 ( ENTITY-未開紅 / ENTITY
+                                  :name ( n-20 / name
+                                         :op1 "未開紅"))
+                           :op1 ( ENTITY-5 / 梅)
+                           :op2 ( ENTITY-4 / 蕾
+                                  :の ENTITY-5)
+                           :op3 ( EVENT-6 / かたどっ_た
+                                  :ARG0 ENTITY-未開紅
+                                  :ARG1 ENTITY-4)
+                           :op4 ( EVENT-22 / past)
+                           :MOD ( mod-18 / AND
+                                  :op5 ( ENTITY-竜田川 / ENTITY
+                                         :name ( n-21 / name
+                                                :op1 "竜田川"))
+                                  :op1 ( ENTITY-8 / ENTITY
+                                         :namely ( PICK-17 / or
+                                                :op1 ENTITY-未開紅
+                                                :op2 ENTITY-1))
+                                  :op2 ( ENTITY-9 / 紅葉)
+                                  :op3 ( EVENT-10 / したて_た
+                                         :ARG0 ENTITY-8
+                                         :ARG1 ENTITY-竜田川
+                                         :に ENTITY-9)
+                                  :op4 ( EVENT-23 / past)))))
+      :など ( ENTITY-12 / 餡
+             :の ( ENTITY-13 / くず菓子))
+      :MOD ( mod-19 / 多彩_に))
+
+# ::id 39_wikipedia_KYOTO_CLT_00009,71;NJ
+# ::snt きんとん
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / きんとん))
+
+# ::id 40_wikipedia_KYOTO_CLT_00009,72;NJ
+# ::snt 蒸し た 山芋 を うらごし し て 砂糖 と 炊い た もの （ 薯蕷煉り切り ） や 、 白餡 を 寒天 で 固め た もの （ きんとん餡 、 天餡 ） 、 白餡 を 求肥 で つない だ もの （ 煉り切り ） を 、 色々 な 色 に そめ 、 うらごし器 で そぼろ状 に し 、 餡 など の 芯 に うえつけ て 季節 を 表現 する 。
+( CONJ-49 / CONJ_te
+      :op1 ( EVENT-38 / うえつけ_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-29 / そめ
+                           :ARG1 ( CONJ-47 / CONJ_や
+                                  :op1 ( GROUP-2 / AND
+                                         :op10 ( ENTITY-4 / もの
+                                                :THAT ( CONJ-46 / CONJ_te
+                                                       :op1 ( EVENT-10 / うらごしする.0_て
+                                                              :ARG0 ( ENTITY-5 / ENTITY
+                                                                     :namely ENTITY-1)
+                                                              :ARG1 ( ENTITY-6 / 山芋))
+                                                       :op2 ( EVENT-12 / 炊い_た
+                                                              :ARG0 ENTITY-5
+                                                              :と ( ENTITY-11 / 砂糖))))
+                                         :op1 ENTITY-5
+                                         :op2 ( ENTITY-8 / ENTITY
+                                                :namely ( PICK-44 / or
+                                                       :op1 ENTITY-5
+                                                       :op2 ENTITY-1))
+                                         :op3 ( EVENT-9 / 蒸し_た
+                                                :ARG0 ENTITY-8
+                                                :ARG1 ENTITY-6)
+                                         :op4 ENTITY-11
+                                         :op5 ( ENTITY-53 / ENTITY
+                                                :NAMELY ( ENTITY-3 / 薯蕷煉り切り))
+                                         :op6 ENTITY-3
+                                         :op7 ENTITY-54
+                                         :op8 ( EVENT-55 / past)
+                                         :op9 ( EVENT-12 / past))
+                                  :op2 ( GROUP-51 / AND
+                                         :op8 ( ENTITY-16 / もの
+                                                :THAT ( EVENT-20 / 固め_た
+                                                       :ARG0 ( ENTITY-17 / ENTITY
+                                                              :namely ENTITY-1)
+                                                       :ARG1 ( ENTITY-18 / 白餡)
+                                                       :で ( ENTITY-19 / 寒天)))
+                                         :op1 ENTITY-17
+                                         :op2 ENTITY-18
+                                         :op3 ENTITY-19
+                                         :op4 ( ENTITY-56 / ENTITY
+                                                :NAMELY ( GROUP-13 / AND
+                                                       :op1 ( ENTITY-15 / 天餡)
+                                                       :op2 ENTITY-58
+                                                       :MOD ( mod-50 / AND
+                                                              :op1 ( ENTITY-14 / きんとん餡)
+                                                              :op2 ENTITY-59)))
+                                         :op5 GROUP-13
+                                         :op6 ENTITY-57
+                                         :op7 ( EVENT-20 / past))
+                                  :op3 ( GROUP-52 / AND
+                                         :op7 ( ENTITY-22 / もの
+                                                :THAT ( EVENT-26 / つない_だ
+                                                       :ARG0 ( ENTITY-23 / ENTITY
+                                                              :namely ENTITY-1)
+                                                       :ARG1 ( ENTITY-24 / 白餡)
+                                                       :で ( ENTITY-25 / 求肥)))
+                                         :op1 ENTITY-23
+                                         :op2 ENTITY-24
+                                         :op3 ENTITY-25
+                                         :op4 ( ENTITY-60 / ENTITY
+                                                :NAMELY ( ENTITY-21 / 煉り切り))
+                                         :op5 ENTITY-21
+                                         :op6 ENTITY-61))
+                           :に ( ENTITY-27 / 色
+                                  :ATTRIBUTE ( ATTRIB-28 / 色々_な))))
+             :ARG1 ( PICK-48 / or
+                    :op1 ENTITY-31
+                    :op2 ENTITY-32
+                    :op3 ENTITY-27)
+             :に ( ENTITY-35 / 芯
+                    :の ( ENTITY-36 / ENTITY
+                           :など ( ENTITY-37 / 餡))))
+      :op2 ( EVENT-40 / 表現する.0
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :ARG0-of ( EVENT-33 / し
+                           :ARG1 ENTITY-27
+                           :に ( ENTITY-32 / そぼろ状)
+                           :で ( ENTITY-31 / うらごし器)))
+             :ARG1 ( ENTITY-39 / 季節)))
+
+# ::id 41_wikipedia_KYOTO_CLT_00009,73;NJ
+# ::snt 求肥 （ ぎゅうひ ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 求肥
+             :NAMELY ( ENTITY-ぎゅうひ / ENTITY
+                    :name ( n-3 / name
+                           :op1 "ぎゅうひ"))))
+
+# ::id 42_wikipedia_KYOTO_CLT_00009,74;NJ
+# ::snt もち米 の 粉 を 水 で 練っ て 湯がき 、 火 の 上 で 砂糖 を 加え て ねっ た もの 。
+( EVENT-15 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / もの
+             :ARG0-of ( CONJ-16 / CONJ_te
+                    :op1 ( EVENT-8 / 練っ_て
+                           :ARG1 ( ENTITY-5 / 粉
+                                  :の ( ENTITY-6 / もち米))
+                           :で ( ENTITY-7 / 水))
+                    :op2 ( EVENT-9 / 湯がき))
+             :ARG1-of ( CONJ-17 / CONJ_te
+                    :op1 ( EVENT-13 / 加え_て
+                           :ARG0 ( ENTITY-4 / ENTITY
+                                  :namely ENTITY-1)
+                           :ARG1 ( ENTITY-12 / 砂糖)
+                           :で ( ENTITY-10 / 上
+                                  :の ( ENTITY-11 / 火)))
+                    :op2 ( EVENT-14 / ねっ_た
+                           :ARG0 ENTITY-4
+                           :MOD ( mod-18 / past)))))
+
+# ::id 43_wikipedia_KYOTO_CLT_00009,75;NJ
+# ::snt 夏 の 菓子 ｢ 鮎 ｣ 、 ｢ 調布 ｣ など に つかう 。
+( EVENT-8 / つかう
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / pro
+             :pick0)
+      :に ( ENTITY-3 / ENTITY
+             :など ( ENTITY-6 / AND
+                    :op1 ( ENTITY-鮎 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "鮎"))
+                    :op2 ( ENTITY-調布 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "調布"))
+                    :NAMELY ( ENTITY-4 / 菓子
+                           :の ( ENTITY-5 / 夏)))))
+
+# ::id 44_wikipedia_KYOTO_CLT_00009,76;NJ
+# ::snt クズ
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / クズ))
+
+# ::id 45_wikipedia_KYOTO_CLT_00009,77;NJ
+# ::snt 本くず粉 に 水 を 加え た もの を 漉し て 、 砂糖 を 加え 加熱 し アルファ化 さ せる 。
+( EVENT-10 / せる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-2 / もの
+             :THAT ( EVENT-5 / 加え_た
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-4 / 水)
+                    :に ( ENTITY-3 / 本くず粉)
+                    :MOD ( mod-13 / past)
+                    :ARG0-of ( CONJ-12 / CONJ_te
+                           :op1 ( EVENT-6 / 漉し_て)
+                           :op2 ( EVENT-8 / 加え
+                                  :ARG0 ( SITUATION-2 / SITUATION
+                                         :ARG0-of ( EVENT-9 / 加熱する.0))
+                                  :ARG1 ( ENTITY-7 / 砂糖)))))
+      :TOCOMP ( EVENT-11 / アルファ化する.0
+             :ARG0 SITUATION-2))
+
+# ::id 46_wikipedia_KYOTO_CLT_00009,78;NJ
+# ::snt 葛きり 、 葛饅頭 など 透明感 が 涼しさ を よぶ 。
+( EVENT-7 / よぶ
+      :ARG0 ( ENTITY-1 / ENTITY
+             :など ( GROUP-2 / AND
+                    :op1 ( ENTITY-3 / 葛きり)
+                    :op2 ENTITY-9
+                    :MOD ( mod-8 / AND
+                           :op1 ( ENTITY-4 / 葛饅頭)
+                           :op2 ENTITY-10)))
+      :ARG0 ( ENTITY-5 / 透明感)
+      :ARG1 ( ENTITY-6 / 涼しさ))
+
+# ::id 47_wikipedia_KYOTO_CLT_00009,79;NJ
+# ::snt また シンプル に 六 方 を 焼い た だけ の ｢ 葛焼 ｣ は 熟練 を 要する 菓子 。
+( EVENT-11 / EVENT
+      :ARG0 ( ENTITY-1 / 葛焼
+             :の ( SITUATION-2 / SITUATION
+                    :OF ( EVENT-5 / 焼い_た
+                           :ARG1 ( ENTITY-4 / CD_六_方)
+                           :MOD ( mod-12 / シンプル_に)
+                           :MOD ( mod-13 / past))))
+      :ARG1 ( ENTITY-7 / 菓子
+             :ARG0-of ( EVENT-10 / 要する
+                    :ARG1 ( ENTITY-9 / 熟練))))
+
+# ::id 48_wikipedia_KYOTO_CLT_00009,80;NJ
+# ::snt 薯蕷 （ じょうよ ）
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 薯蕷
+             :NAMELY ( ENTITY-じょうよ / ENTITY
+                    :name ( n-3 / name
+                           :op1 "じょうよ"))))
+
+# ::id 49_wikipedia_KYOTO_CLT_00009,81;NJ
+# ::snt 山芋 の こと 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / こと
+             :の ( ENTITY-3 / 山芋)))
+
+# ::id 50_wikipedia_KYOTO_CLT_00009,82;NJ
+# ::snt 「 織部まんじゅう 」 など 上用 饅頭 の 皮 は 、 山芋 を すり おろし て 砂糖 と 上用粉 （ 細目 の 米粉 ） を くわえ た もの 。
+( EVENT-14 / EVENT
+      :ARG0 ( ENTITY-1 / 皮
+             :の ( ENTITY-2 / 上用_饅頭
+                    :など ( ENTITY-3 / 織部まんじゅう)))
+      :ARG1 ( SITUATION-4 / もの
+             :THAT ( CONJ-18 / CONJ_te
+                    :op1 ( EVENT-7 / すり_おろし_て
+                           :ARG0 ( ENTITY-5 / ENTITY
+                                  :namely ( PICK-15 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-2
+                                         :op3 ENTITY-3))
+                           :ARG1 ( ENTITY-6 / 山芋))
+                    :op2 ( EVENT-13 / くわえ_た
+                           :ARG0 ENTITY-5
+                           :ARG1 ( CONJ-16 / CONJ_と
+                                  :op1 ( GROUP-8 / AND
+                                         :op1 ( ENTITY-9 / 砂糖)
+                                         :op2 ENTITY-21)
+                                  :op2 ( GROUP-20 / AND
+                                         :op5 ( ENTITY-12 / 上用粉)
+                                         :op1 ( ENTITY-22 / ENTITY
+                                                :NAMELY ( ENTITY-10 / 米粉
+                                                       :の ( ENTITY-11 / 細目)))
+                                         :op2 ENTITY-11
+                                         :op3 ENTITY-10
+                                         :op4 ENTITY-23))
+                           :MOD ( mod-19 / past)))))
+
+# ::id 51_wikipedia_KYOTO_CLT_00009,83;NJ
+# ::snt 餡 を 包ん で 蒸し て つくる 。
+( CONJ-6 / CONJ_te
+      :op1 ( EVENT-3 / 包ん_で
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 餡))
+      :op2 ( EVENT-4 / 蒸し_て
+             :ARG0 ENTITY-1)
+      :op3 ( EVENT-5 / つくる
+             :ARG0 ENTITY-1))
+
+# ::id 52_wikipedia_KYOTO_CLT_00009,84;NJ
+# ::snt また 、 すり おろし た 山芋 に 、 砂糖 、 水 、 軽羹粉 （ 粗目 の 米粉 ） を 加え 、 蒸し あげ た の が カルカン （ 軽羹 ） 。
+( EVENT-16 / EVENT
+      :ARG0 ( SITUATION-1 / の
+             :THAT ( EVENT-14 / 蒸し_あげ_た
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0
+                           :ARG0-of ( EVENT-13 / 加え
+                                  :ARG1 ( GROUP-7 / AND
+                                         :op1 ( ENTITY-8 / 砂糖)
+                                         :op2 ENTITY-22
+                                         :MOD ( mod-17 / AND
+                                                :op1 ( ENTITY-9 / 水)
+                                                :op2 ENTITY-23)
+                                         :MOD ( mod-18 / AND
+                                                :op5 ( ENTITY-12 / 軽羹粉)
+                                                :op1 ( ENTITY-24 / ENTITY
+                                                       :NAMELY ( ENTITY-10 / 米粉
+                                                              :の ( ENTITY-11 / 粗目)))
+                                                :op2 ENTITY-11
+                                                :op3 ENTITY-10
+                                                :op4 ENTITY-25))
+                                  :に ( ENTITY-3 / 山芋
+                                         :ARG1-of ( EVENT-6 / すり_おろし_た
+                                                :ARG0 ENTITY-2
+                                                :MOD ( mod-19 / past)))))
+                    :MOD ( mod-20 / past)))
+      :ARG1 ( ENTITY-15 / カルカン
+             :NAMELY ( ENTITY-軽羹 / ENTITY
+                    :name ( n-21 / name
+                           :op1 "軽羹"))))
+
+# ::id 53_wikipedia_KYOTO_CLT_00009,85;NJ
+# ::snt 蒸し た 山芋 を うらごし し て 砂糖 と 炊い た もの が 、 薯蕷煉り切り 。
+( EVENT-12 / EVENT
+      :ARG0 ( ENTITY-1 / もの
+             :ARG1-of ( CONJ-14 / CONJ_te
+                    :op1 ( EVENT-8 / うらごしする.0_て
+                           :ARG0 ( ENTITY-3 / pro
+                                  :pick0)
+                           :ARG1 ( ENTITY-4 / 山芋
+                                  :ARG1-of ( EVENT-7 / 蒸し_た
+                                         :ARG0 ( PICK-13 / or
+                                                :op1 ENTITY-3
+                                                :op2 ENTITY-1)
+                                         :MOD ( mod-15 / past))))
+                    :op2 ( EVENT-10 / 炊い_た
+                           :ARG0 ENTITY-3
+                           :と ( ENTITY-9 / 砂糖)
+                           :MOD ( mod-16 / past))))
+      :ARG1 ( ENTITY-11 / 薯蕷煉り切り))
+
+# ::id 54_wikipedia_KYOTO_CLT_00009,86;NJ
+# ::snt どの 場合 も 、 山芋 本来 の 『 白さ 』 と 、 独特 の 香り を 生かす こと が 大切 。
+( ( ENTITY-1 場合) / EVENT-10 ( 大切
+             :ARG0 ( SITUATION-2 / こと
+                    :THAT ( EVENT-9 / 生かす
+                           :ARG0 ENTITY-1
+                           :ARG1 ( CONJ-11 / CONJ_と
+                                  :op1 ( GROUP-4 / AND
+                                         :op1 ( ENTITY-6 / 山芋_本来)
+                                         :op2 ( ENTITY-5 / 白さ
+                                                :の ENTITY-6)
+                                         :op3 ENTITY-13)
+                                  :op2 ( GROUP-12 / AND
+                                         :op1 ( ENTITY-8 / 独特)
+                                         :op2 ( ENTITY-7 / 香り
+                                                :の ENTITY-8)
+                                         :op3 ENTITY-14))))
+             :ADV ENTITY-1))
+
+# ::id 55_wikipedia_KYOTO_CLT_00009,87;NJ
+# ::snt この ほか に も ｢ 道明寺 ｣ ｢ 淡雪 ｣ ｢ 錦玉 ｣ など 中間 素材 は 数多い 。
+( EVENT-7 / 数多い
+      :ARG0 ( ENTITY-2 / 中間_素材
+             :など ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / 道明寺)
+                    :op2 ( ENTITY-5 / 淡雪)
+                    :op3 ( ENTITY-6 / 錦玉)))
+      :に ( ENTITY-1 / ほか))
+
+# ::id 56_wikipedia_KYOTO_CLT_00009,88;NJ
+# ::snt 中間 素材 の 段階 まで に 炊く 、 蒸す 、 まぜる 、 練る など の 作業 が あり 、 その ひと つ で も ゆるがせ に する と おいしい 菓子 は でき ない 。
+( CONJ-27 / AND
+      :op1 ( EVENT-10 / あり
+             :ARG0 ( ENTITY-3 / 作業
+                    :の ( ENTITY-4 / ENTITY
+                           :など ( GROUP-5 / AND
+                                  :op1 ( ENTITY-6 / 炊く)
+                                  :op2 ENTITY-23
+                                  :MOD ( mod-20 / AND
+                                         :op1 ( ENTITY-7 / 蒸す)
+                                         :op2 ENTITY-24)
+                                  :MOD ( mod-21 / AND
+                                         :op1 ( ENTITY-8 / まぜる)
+                                         :op2 ENTITY-25)
+                                  :MOD ( mod-22 / AND
+                                         :op1 ( ENTITY-9 / 練る)
+                                         :op2 ENTITY-26))))
+             :まで_に ( ENTITY-1 / 段階
+                    :の ( ENTITY-2 / 中間_素材)))
+      :op2 ( CND-18 / と (
+                    :op1 ( ENTITY-14 ゆるがせ) ( EVENT-15 ( する
+                                  :ARG0 ( ENTITY-11 / 菓子
+                                         :ATTRIBUTE ( ATTRIB-12 / おいしい))
+                                  :に ENTITY-14
+                                  :で ( ENTITY-13 / CD_ひと_つ))))
+             :op2 ( EVENT-16 / でき
+                    :ARG0 ENTITY-11
+                    :domain-of ( NEG-19 / NEG))))
+
+# ::id 57_wikipedia_KYOTO_CLT_00009,89;NJ
+# ::snt また 材料 も 厳選 さ れ た もの を 素材 に 応じ て あくぬき など を し ながら 、 味 を ひきだす 技術 が 要求 さ れる 。
+( EVENT-15 / 要求する.0
+      :ARG1 ( SITUATION-2 / 技術
+             :THAT ( CRD-20 / ながら
+                    :op1 ( CONJ-19 / CONJ_te
+                           :op1 ( EVENT-9 / 応じ_て
+                                  :ARG0 ( ENTITY-7 / ENTITY
+                                         :namely ( PICK-16 / or
+                                                :op1 ENTITY-4
+                                                :op2 ENTITY-1))
+                                  :に ( ENTITY-8 / 素材))
+                           :op2 ( EVENT-12 / し
+                                  :ARG0 ENTITY-7
+                                  :ARG1 ( ENTITY-10 / ENTITY
+                                         :など ( ENTITY-11 / あくぬき))))
+                    :op2 ( EVENT-14 / ひきだす
+                           :ARG0 ENTITY-7
+                           :ARG1 ( ENTITY-13 / 味)
+                           :TPC ( ENTITY-3 / ENTITY
+                                  :を ( ENTITY-4 / もの
+                                         :ARG1-of ( EVENT-6 / 厳選する.0_た
+                                                :MOD ( mod-21 / past)))))))
+      :TPC ( ENTITY-1 / 材料))
+
+# ::id 58_wikipedia_KYOTO_CLT_00009,90;NJ
+# ::snt そして 最後 に 季節感 や 、 菓子 が 食べ られる 場 の コンセプト を 表現 し なければならない 。
+( EVENT-10 / 表現する.0
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( CONJ-11 / CONJ_や
+             :op1 ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / 季節感)
+                    :op2 ENTITY-14)
+             :op2 ( GROUP-13 / AND
+                    :op3 ( ENTITY-5 / コンセプト
+                           :の ( ENTITY-6 / 場))
+                    :op4 ENTITY-15
+                    :op1 ( ENTITY-8 / 菓子)
+                    :op2 ( EVENT-9 / 食べ
+                           :ARG1 ENTITY-8
+                           :LOC ENTITY-6)))
+      :に ( ENTITY-2 / 最後)
+      :domain-of ( MD-12 / MD_なければならない))
+
+# ::id 59_wikipedia_KYOTO_CLT_00009,91;NJ
+# ::snt 繊細 な 感覚 と 確か な 技術 で 上菓子 は つくら れる 。
+( EVENT-7 / つくら
+      :ARG1 ( ENTITY-6 / 上菓子)
+      :で ( CONJ-8 / CONJ_と
+             :op1 ( GROUP-1 / AND
+                    :op1 ( ATTRIB-3 / 繊細_な)
+                    :op2 ( ENTITY-2 / 感覚
+                           :ATTRIBUTE ATTRIB-3)
+                    :op3 ENTITY-10)
+             :op2 ( GROUP-9 / AND
+                    :op1 ( ATTRIB-5 / 確か_な)
+                    :op2 ( ENTITY-4 / 技術
+                           :ATTRIBUTE ATTRIB-5)
+                    :op3 ENTITY-11)))
+
+# ::id 60_wikipedia_KYOTO_CLT_00009,92;NJ
+# ::snt ただし 、 その 製法 および 感性 は 菓子店 、 職人 によって 千差万別 で あり 、 微妙 な 違い が それぞれ の 個性 に なっ て いる 。
+( CONJ-16 / AND
+      :op1 ( EVENT-8 / 千差万別_で_あり
+             :ARG0 ( ENTITY-1 / CONJ_および
+                    :op1 ( ENTITY-3 / 製法)
+                    :op2 ( ENTITY-4 / 感性))
+             :によって ( GROUP-5 / AND
+                    :op1 ( ENTITY-6 / 菓子店)
+                    :op2 ENTITY-14
+                    :MOD ( mod-13 / AND
+                           :op1 ( ENTITY-7 / 職人)
+                           :op2 ENTITY-15)))
+      :op2 ( EVENT-12 / なっ_て_いる
+             :ARG0 ( ENTITY-9 / 違い
+                    :ATTRIBUTE ( ATTRIB-10 / 微妙_な))
+             :に ( ENTITY-11 / 個性)))

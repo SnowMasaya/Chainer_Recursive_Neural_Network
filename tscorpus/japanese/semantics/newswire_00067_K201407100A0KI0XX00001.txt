@@ -1,0 +1,647 @@
+# ::id 1_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 河北新報社 かほくイベントパーク
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[河北新報社_かほくイベントパーク])
+
+# ::id 2_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ◎ 特別展 「 奈良・国宝 室生寺 の 仏たち 」 開幕
+∃ EVENT[3] ENTITY[1] ENTITY[2] (特別展(ENTITY[2]) ∧ の_仏たち(FAC[奈良.国宝_室生寺], ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ する.0(EVENT[3], ENTITY[2]))
+
+# ::id 3_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ 仏像 、 境内 の 美 描写
+∃ ENTITY[1] EVENT[6] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  ∃ ENTITY[3] (仏像(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[5] ENTITY[4] (境内(ENTITY[5]) ∧ の_美(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   する.0(EVENT[6], ENTITY[1], GROUP[2]))
+
+# ::id 4_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ ８ 月 ２４ 日 まで
+∃ EVENT[2] ENTITY[1] (CD_８_月_２４_日(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ まで(EVENT[2]) = ENTITY[1])
+
+# ::id 5_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 土門拳 の 力作 １１ 点 も 紹介
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧ (CD_１１_点(ENTITY[2]), の_力作(PERSON[土門拳], ENTITY[2])) ∧ する.0(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 6_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ 「 写真職人 」 コーナー も
+∃ EVENT[2] ENTITY[1] (写真職人(ENTITY[1]) ∧ コーナー(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 7_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 仙台市博物館 （ 青葉区 ） で 開催中 の 特別展 「 奈良・国宝 室生寺 の 仏たち 」 （ 主催 ・ 河北新報社 、 大本山室生寺 など ） の 会場 で は 、 酒田市出身 の 写真家・土門拳 （ １９０９～９０ 年 ） が 仏像 や 境内 を 撮影 し た 作品 １１点 も 紹介 し て い ます 。
+∃ ENTITY[1] EVENT[15] EVENT[16] ENTITY[11] ENTITY[10] GROUP[12] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[4] GROUP[3] ENTITY[6] ENTITY[2] (
+ namely_-FAC-(LOC[青葉区], FAC[仙台市博物館]) ∧
+  で_開催中(FAC[仙台市博物館], ENTITY[7]) ∧
+   の_特別展(ENTITY[7], ENTITY[6]) ∧
+    の_仏たち(FAC[奈良.国宝_室生寺], ENTITY[5]) ∧
+     namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+      大本山室生寺(ENTITY[4]) ∧
+       is_subset_of_or_equal_to(ORG[河北新報社], GROUP[3]) ∧ is_element_of(ENTITY[4], GROUP[3]) ∧
+        など_xxx(GROUP[3], ENTITY[主催]) ∧
+         namely_-ENTITY-(ENTITY[主催], ENTITY[6]) ∧
+          の_会場(ENTITY[6], ENTITY[2]) ∧
+           ENTITY[1] = *pro* ∧
+            酒田市出身(ENTITY[11]) ∧
+             の_xxx(ENTITY[11], PERSON[写真家.土門拳]) ∧
+              CD_１９０９～９０_年(ENTITY[10]) ∧
+               namely_-PERSON-(ENTITY[10], PERSON[写真家.土門拳]) ∧
+                CONJ_や(∃ ENTITY[13] (仏像(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])),
+                 ∃ ENTITY[14] (境内(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12]))) ∧
+                 撮影する.0_た(EVENT[15], PERSON[写真家.土門拳], GROUP[12], ENTITY[8]) ∧ 作品_１１点(ENTITY[8]) ∧
+                  past(EVENT[15]) ∧
+                   紹介する.0_て_い_ます(EVENT[16], ENTITY[1], ENTITY[8]) ∧ で(EVENT[16]) = ENTITY[2])
+
+# ::id 8_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 室生寺 に 魅了 さ れ た 土門 は 戦前戦後 を通じて ４０ 年間 、 寺 に 通い詰め 、 気迫 の 込もっ た 力作 の 数々 は 、 室生寺 の 名 を より 多く の 人 に 広め まし た 。
+∃ EVENT[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[14] ENTITY[13] EVENT[3] EVENT[11] ENTITY[2] ENTITY[10] ENTITY[12] ENTITY[8] (
+ 室生寺(ENTITY[2]) ∧
+  魅了する.0_た(EVENT[3], _, PERSON[土門]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+   気迫(ENTITY[10]) ∧
+    力作(ENTITY[12]) ∧
+     込もる.0_た(EVENT[11], ENTITY[10], ENTITY[8]) ∧ の_数々(ENTITY[12], ENTITY[8]) ∧
+      past(EVENT[3]) ∧
+       past(EVENT[11]) ∧
+        戦前戦後(ENTITY[4]) ∧
+         CD_４０_年間(ENTITY[5]) ∧
+          寺(ENTITY[6]) ∧
+           室生寺(ENTITY[14]) ∧
+            の_名(ENTITY[14], ENTITY[13]) ∧
+             通い詰める.0(EVENT[7], PERSON[土門], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+              を通じて(EVENT[7]) = ENTITY[4] ∧
+              より_多く_の ENTITY[15] (人(ENTITY[15]),
+               ∃ EVENT[16] (
+                past(EVENT[16]) ∧
+                 広める.0_まし_た(EVENT[16], ENTITY[8], ENTITY[13]) ∧ に(EVENT[16]) = ENTITY[15])))
+
+# ::id 9_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 土門 は 子ども の 頃 から 書 や 絵 が 得意 で 、 ２４ 歳 で 写真館 に 弟子入り し て から も 、 寝床 で ５００ 冊 の 専門書 を 読む ほど の 努力家 でし た 。
+∃ SITUATION[9] EVENT[6] EVENT[12] EVENT[15] EVENT[16] ENTITY[2] GROUP[3] ENTITY[1] ENTITY[11] ENTITY[10] ENTITY[14] ENTITY[13] ENTITY[8] ENTITY[7] (
+ 子ども(ENTITY[2]) ∧
+  の_頃(ENTITY[2], ENTITY[1]) ∧
+   CONJ_や(∃ ENTITY[4] (書(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (絵(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+    寝床(ENTITY[7]) ∧
+     CD_５００_冊(ENTITY[11]) ∧
+      の_専門書(ENTITY[11], ENTITY[10]) ∧
+       FACT(SITUATION[9], 読む.0(EVENT[12], _, ENTITY[10])) ∧
+        ほど_の_努力家(SITUATION[9], ENTITY[8]) ∧
+         CD_２４_歳(ENTITY[13]) ∧
+          写真館(ENTITY[14]) ∧
+           past(EVENT[16]) ∧
+            CONJ_te(得意_で(EVENT[6], (ENTITY[土門], GROUP[3])) ∧ から(EVENT[6]) = ENTITY[1],
+             CRD_te_から(弟子入りする.0_て(EVENT[15], ENTITY[8]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+                   で(EVENT[15]) = ENTITY[13],
+              でし_た(EVENT[16], ENTITY[土門], ENTITY[8]) ∧ で(EVENT[16]) = ENTITY[7])))
+
+# ::id 10_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt プロ に なっ て から も 持ち前 の 粘り で 日本写真界 の リーダー的存在 と なり 、 後 に 「 写真 の 鬼 」 の 異名 を 取り まし た 。
+∃ SITUATION[2] ENTITY[1] EVENT[4] EVENT[9] EVENT[14] ENTITY[3] ENTITY[6] ENTITY[8] ENTITY[7] ENTITY[5] ENTITY[13] ENTITY[12] ENTITY[11] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  プロ(ENTITY[3]) ∧
+   FACT(SITUATION[2], 成る.0_て(EVENT[4], ENTITY[1], ENTITY[3])) ∧
+    持ち前(ENTITY[6]) ∧
+     の_粘り(ENTITY[6], ENTITY[5]) ∧
+      日本写真界(ENTITY[8]) ∧
+       の_リーダー的存在(ENTITY[8], ENTITY[7]) ∧
+        後(ENTITY[10]) ∧
+         写真(ENTITY[13]) ∧
+          の_鬼(ENTITY[13], ENTITY[12]) ∧
+           の_異名(ENTITY[12], ENTITY[11]) ∧
+            past(EVENT[14]) ∧
+             成る.0(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = ENTITY[7] ∧
+              で(EVENT[9]) = ENTITY[5] ∧ te_から(EVENT[9]) = SITUATION[2] ∧
+              取る.0_まし_た(EVENT[14], ENTITY[1], ENTITY[11]) ∧ に(EVENT[14]) = ENTITY[10])
+
+# ::id 11_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 室生寺 に 初めて 足 を 踏み入れ た の は １９３９ 年 、 ３０ 歳 の 時 。
+∃ ENTITY[3] EVENT[11] ENTITY[10] ENTITY[8] ENTITY[9] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  室生寺(ENTITY[4]) ∧
+   足(ENTITY[5]) ∧
+    踏み入れる.0_た(EVENT[6], ENTITY[3], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4] ∧ 時間(EVENT[6]) = ENTITY[1] ∧
+     の(ENTITY[1]) ∧
+     ADV_初めて(EVENT[6]) ∧
+      past(EVENT[6]) ∧
+       CD_３０_歳(ENTITY[10]) ∧
+        の_時(ENTITY[10], ENTITY[9]) ∧
+         CD_１９３９_年(ENTITY[8]) ∧ namely_-ENTITY-(ENTITY[8], ENTITY[9]) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[9]))
+
+# ::id 12_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 平安時代 の 趣 を 残す 風光明媚 な たたずまい と 美しい 仏像 の 数々 に 、 一目 で 心 を 奪わ れ まし た 。
+∃ ENTITY[1] EVENT[14] GROUP[3] ENTITY[13] ENTITY[12] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ATTRIB[9] EVENT[8] ENTITY[7] ENTITY[6] ENTITY[4] (
+        平安時代(ENTITY[7]) ∧
+         の_趣(ENTITY[7], ENTITY[6]) ∧
+          風光明媚_な(ATTRIB[9]) ∧
+           残す.0(EVENT[8], ENTITY[4], ENTITY[6]) ∧ ATTRIBUTE_たたずまい(ATTRIB[9], ENTITY[4]) ∧
+            is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ATTRIB[11] ENTITY[10] (美しい(ATTRIB[11]) ∧ ATTRIBUTE_仏像(ATTRIB[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3]))) ∧
+   の_数々(GROUP[3], ENTITY[2]) ∧
+    一目(ENTITY[12]) ∧
+     心(ENTITY[13]) ∧
+      past(EVENT[14]) ∧ 奪う.0_まし_た(EVENT[14], ENTITY[2], ENTITY[13], ENTITY[1]) ∧ で(EVENT[14]) = ENTITY[12])
+
+# ::id 13_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 土門 を 特に 引き付け て やま なかっ た の は 、 今回 の 特別展 に も 出陳 し て いる 弥勒堂 の 釈迦如来坐像 （ 国宝 ） です 。
+∃ ENTITY[8] ENTITY[7] ENTITY[5] EVENT[9] EVENT[10] ENTITY[1] (
+ ¬ ∃ EVENT[3] (ADV_特に(EVENT[3]) ∧ past(EVENT[3]) ∧ 引き付ける.0_て_やま_た(EVENT[3], ENTITY[1], PERSON[土門])) ∧
+  の(ENTITY[1]) ∧
+  今回(ENTITY[8]) ∧
+   の_特別展(ENTITY[8], ENTITY[7]) ∧
+    出陳する.0_て_いる(EVENT[9], WORK_OF_ART[釈迦如来坐像]) ∧ に(EVENT[9]) = ENTITY[7] ∧
+     の_xxx(FAC[弥勒堂], WORK_OF_ART[釈迦如来坐像]) ∧
+      国宝(ENTITY[5]) ∧ namely_-WORK_OF_ART-(ENTITY[5], WORK_OF_ART[釈迦如来坐像]) ∧ です(EVENT[10], ENTITY[1], WORK_OF_ART[釈迦如来坐像]))
+
+# ::id 14_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 「 天下 第一 の 美男 の 仏像 」 と 称する ほど ほれ込ん で カメラ を 向け 続け 、 りんと し た 表情 や 量感豊か な 座姿 を 映し 込ん だ 作品 を 残し て い ます 。
+∃ ENTITY[1] EVENT[5] EVENT[6] EVENT[8] EVENT[18] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[7] GROUP[9] (
+ ENTITY[1] = *pro* ∧
+  天下_第一(ENTITY[4]) ∧
+   の_美男(ENTITY[4], ENTITY[3]) ∧
+    の_仏像(ENTITY[3], ENTITY[2]) ∧
+     カメラ(ENTITY[7]) ∧
+      CONJ_や(∃ EVENT[12] ENTITY[10] (
+            凛とする.0_た(EVENT[12], ENTITY[10]) ∧ 表情(ENTITY[10]) ∧
+             past(EVENT[12]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+       ∃ ATTRIB[16] ENTITY[14] EVENT[17] ENTITY[15] ENTITY[13] (
+        ENTITY[14] = *pro*{ENTITY[1], ENTITY[7], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+         量感豊か_な(ATTRIB[16]) ∧
+          ATTRIBUTE_座姿(ATTRIB[16], ENTITY[15]) ∧
+           THAT_作品(映す.0_込ん_だ(EVENT[17], ENTITY[14], ENTITY[15]), ENTITY[13]) ∧
+            past(EVENT[17]) ∧ is_element_of(ENTITY[13], GROUP[9]))) ∧
+       CRD_ほど(称する.0(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[2],
+        CONJ_te(ほれ込む.0_で(EVENT[6], ENTITY[1]), 向ける.0_続け(EVENT[8], ENTITY[1], ENTITY[7]))) ∧
+        残す.0_て_い_ます(EVENT[18], ENTITY[1], GROUP[9]))
+
+# ::id 15_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 土門 は ５９ 歳 の 時 に ２ 度目 の 脳出血 で 倒れ 、 車いす の 生活 に なり ます が 、 その 後 も 不屈 の 精神 で 室生寺 に 通い 続け ます 。
+∃ ATTRIB[11] EVENT[7] EVENT[8] EVENT[13] ENTITY[2] ENTITY[4] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[1] ENTITY[12] ENTITY[10] ENTITY[9] (
+ 後(ENTITY[9]) ∧
+  車いす(ENTITY[2]) ∧
+   の_生活(ENTITY[2], ENTITY[1]) ∧
+    CD_５９_歳(ENTITY[4]) ∧
+     の_時(ENTITY[4], ENTITY[3]) ∧
+      CD_２_度目(ENTITY[6]) ∧
+       の_脳出血(ENTITY[6], ENTITY[5]) ∧
+        の(ATTRIB[11]) ∧ 不屈(ATTRIB[11]) ∧
+         ATTRIBUTE_精神(ATTRIB[11], ENTITY[10]) ∧
+          室生寺(ENTITY[12]) ∧
+           CONJ_が(倒れる.0(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = ENTITY[5] ∧
+                 に(EVENT[7]) = ENTITY[3] ∧ 成る.0_ます(EVENT[8], PERSON[土門], ENTITY[1]),
+            通う.0_続け_ます(EVENT[13], PERSON[土門]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+             で(EVENT[13]) = ENTITY[10] ∧ 時間(EVENT[13]) = ENTITY[9]))
+
+# ::id 16_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt そして １９７８ 年 、 ６９ 歳 の 時 に やっと の 思い で 撮っ た の が 雪 の 室生寺 。
+∃ ATTRIB[8] ENTITY[3] EVENT[9] EVENT[12] ENTITY[6] ENTITY[4] ENTITY[7] ENTITY[5] ENTITY[11] ENTITY[10] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  CD_６９_歳(ENTITY[6]) ∧
+   の_時(ENTITY[6], ENTITY[5]) ∧
+    CD_１９７８_年(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+      ADV_やっと(ATTRIB[8]) ∧
+       の_思い(ATTRIB[8], ENTITY[7]) ∧
+        撮る.0_た(EVENT[9], ENTITY[3], ENTITY[1]) ∧ で(EVENT[9]) = ENTITY[7] ∧
+         に(EVENT[9]) = ENTITY[5] ∧ の(ENTITY[1]) ∧
+         雪(ENTITY[11]) ∧
+          の_室生寺(ENTITY[11], ENTITY[10]) ∧ past(EVENT[9]) ∧ xxx(EVENT[12], ENTITY[1], ENTITY[10]))
+
+# ::id 17_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 明け方 、 定宿 の 女将さん に 起こさ れ て 雪景色 を 目にする と 、 土門 は 助手 に 背負わ れ ながら 夢中 で シャッター を 切り まし た 。
+∃ SITUATION[11] (
+ ADV_明け方(SITUATION[11]) ∧
+  FACT(SITUATION[11],
+   ∀ EVENT[3] EVENT[5] ENTITY[2] ENTITY[1] ENTITY[4] CND_と(
+       定宿(ENTITY[2]) ∧ の_女将さん(ENTITY[2], ENTITY[1]) ∧ 雪景色(ENTITY[4]) ∧
+        CONJ_te(起こす.0_て(EVENT[3], _, PERSON[土門]) ∧ に(EVENT[3]) = ENTITY[1],
+         目にする.0(EVENT[5], PERSON[土門], ENTITY[4])),
+       ∃ EVENT[7] EVENT[8] EVENT[10] ENTITY[6] ENTITY[9] (
+        助手(ENTITY[6]) ∧
+         シャッター(ENTITY[9]) ∧
+          past(EVENT[10]) ∧
+           CRD_ながら(背負う.0(EVENT[7], _, PERSON[土門]) ∧ に(EVENT[7]) = ENTITY[6],
+            CONJ_te(夢中_で(EVENT[8], PERSON[土門]), 切る.0_まし_た(EVENT[10], PERSON[土門], ENTITY[9])))))))
+
+# ::id 18_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt その 時 の 作品 が 「 室生寺 雪 の 鎧坂（よろいざか）金堂 見上げ 」 と 、 本展 に も 展示 し て いる 「 雪 の 五重塔 全景 」 。
+∃ EVENT[8] GROUP[3] ENTITY[1] ENTITY[2] (
+ 時(ENTITY[2]) ∧
+  の_作品(ENTITY[2], ENTITY[1]) ∧
+   CONJ_と(∃ EVENT[7] ENTITY[6] ENTITY[5] ENTITY[4] (
+         雪(ENTITY[5]) ∧
+          本展(ENTITY[6]) ∧
+           の_五重塔_全景(ENTITY[5], ENTITY[4]) ∧
+            THAT_五重塔_全景(展示する.0_て_いる(EVENT[7]) ∧ に(EVENT[7]) = ENTITY[6], ENTITY[4]) ∧
+            is_element_of(ENTITY[4], GROUP[3]))) ∧ xxx(EVENT[8], ENTITY[1], GROUP[3]))
+
+# ::id 19_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt この 作品 を 最後 に 土門 は ３ 度目 の 脳出血 に 倒れ 、 その 後 、 ８０ 歳 で この世 を 去り まし た 。
+∃ EVENT[3] EVENT[6] EVENT[10] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[9] ENTITY[8] ENTITY[1] TIME[7] (
+ 作品(ENTITY[1]) ∧
+  後(TIME[7]) ∧
+   最後(ENTITY[2]) ∧
+    CD_３_度目(ENTITY[5]) ∧
+     の_脳出血(ENTITY[5], ENTITY[4]) ∧
+      CD_８０_歳(ENTITY[8]) ∧
+       この世(ENTITY[9]) ∧
+        past(EVENT[10]) ∧
+         xxx(EVENT[3], PERSON[土門], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+          倒れる.0(EVENT[6], PERSON[土門]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+           去る.0_まし_た(EVENT[10], PERSON[土門], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[8] ∧
+            is_contained_in(時間(EVENT[10]), TIME[7]))
+
+# ::id 20_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 「 奈良・国宝 室生寺 の 仏たち 」 の 一角 に 設け た 「 室生寺 を 愛し た 写真家たち 」 の コーナー で は 、 土門拳 に 加え 、 奈良市 の 仏像写真館 「 飛鳥園 」 の 小川晴暘（せいよう）光三親子 、 楽園写真家・三好和義ら が 境内 や 仏像 を 撮影 し た 写真 約４０ 点 を 展示 。
+∃ ENTITY[1] ENTITY[4] EVENT[14] EVENT[19] EVENT[20] GROUP[15] GROUP[16] ENTITY[13] ENTITY[12] EVENT[7] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[10] ENTITY[8] ENTITY[2] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  の_仏たち(FAC[奈良.国宝_室生寺], ENTITY[6]) ∧
+   の_一角(ENTITY[6], ENTITY[5]) ∧
+    室生寺(ENTITY[10]) ∧
+     愛する.0_た(EVENT[11], ENTITY[8], ENTITY[10]) ∧ 写真家たち(ENTITY[8]) ∧
+      設ける.0_た(EVENT[7], ENTITY[4], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[5] ∧ の_コーナー(ENTITY[8], ENTITY[2]) ∧
+       past(EVENT[7]) ∧
+        past(EVENT[11]) ∧
+         ENTITY[1] = *pro* ∧
+          の_xxx(NORP[奈良市], FAC[仏像写真館]) ∧ namely_-FAC-(FAC[飛鳥園], FAC[仏像写真館]) ∧ の_xxx(FAC[仏像写真館], PERSON[小川晴暘（せいよう）光三親子]) ∧
+           is_element_of(PERSON[小川晴暘（せいよう）光三親子], GROUP[15]) ∧ is_element_of(PERSON[楽園写真家.三好和義ら], GROUP[15]) ∧
+           加える.0(EVENT[14]) ∧ に(EVENT[14]) = PERSON[土門拳] ∧ equals(GROUP[15], ENTITY[13]) ∧
+            CONJ_や(∃ ENTITY[17] (境内(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+             ∃ ENTITY[18] (仏像(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+             (CD_約４０_点(ENTITY[12]), THAT_写真(撮影する.0_た(EVENT[19], ENTITY[13], GROUP[16]), ENTITY[12])) ∧
+              past(EVENT[19]) ∧ する.0(EVENT[20], ENTITY[1], ENTITY[12]) ∧ で(EVENT[20]) = ENTITY[2])
+
+# ::id 21_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 「写真職人」たち の 目 を 通し て 表現 さ れ た 室生寺 の 美 を 、 多角的 に 紹介 し て い ます 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  「写真職人」たち(ENTITY[5]) ∧
+   の_目(ENTITY[5], ENTITY[4]) ∧
+    室生寺(ENTITY[8]) ∧
+     CONJ_te(通す.0_て(EVENT[6], ENTITY[2], ENTITY[4]), 表現する.0_た(EVENT[7], _, ENTITY[2])) ∧
+      の_美(ENTITY[8], ENTITY[2]) ∧
+      多角的(ENTITY[9]) ∧
+       past(EVENT[7]) ∧ 紹介する.0_て_い_ます(EVENT[10], ENTITY[1], ENTITY[2]) ∧ に(EVENT[10]) = ENTITY[9])
+
+# ::id 22_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 寺宝 で は 、 十一面観音菩薩立像 （ 国宝 ） や 重要文化財 ２４ 点 を 含む 美術品 約９０ 点 を 展示 し 、 １２００ 年 も の 間 、 室生寺 が 守り抜い て き た 貴重 な 密教美術 の 魅力 に 迫り ます 。
+∃ ATTRIB[17] ENTITY[1] EVENT[8] EVENT[9] EVENT[16] EVENT[18] GROUP[5] ENTITY[3] ENTITY[14] ENTITY[15] TIME[13] ENTITY[11] ENTITY[10] ENTITY[2] (
+ 寺宝(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ ENTITY[6] (国宝(ENTITY[6]) ∧ namely_-WORK_OF_ART-(ENTITY[6], WORK_OF_ART[十一面観音菩薩立像]) ∧ is_element_of(WORK_OF_ART[十一面観音菩薩立像], GROUP[5])),
+    ∃ ENTITY[7] ((CD_２４_点(ENTITY[7]), 重要文化財(ENTITY[7])) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    (CD_約９０_点(ENTITY[3]), 含む.0(EVENT[8], ENTITY[3], GROUP[5]) ∧ 美術品(ENTITY[3])) ∧
+     CD_１２００_年(ENTITY[14]) ∧
+      の_間(ENTITY[14], TIME[13]) ∧
+       室生寺(ENTITY[15]) ∧
+        貴重_な(ATTRIB[17]) ∧
+         守り抜く.0_て_き_た(EVENT[16], ENTITY[15], ENTITY[11]) ∧ is_contained_in(時間(EVENT[16]), TIME[13]) ∧
+          ATTRIBUTE_密教美術(ATTRIB[17], ENTITY[11]) ∧
+          の_魅力(ENTITY[11], ENTITY[10]) ∧
+           past(EVENT[16]) ∧
+            展示する.0(EVENT[9], ENTITY[1], ENTITY[3]) ∧
+             迫る.0_ます(EVENT[18], ENTITY[1]) ∧ に(EVENT[18]) = ENTITY[10] ∧ で(EVENT[18]) = ENTITY[2])
+
+# ::id 23_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 会期 は ８ 月 ２４ 日 まで 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (会期(ENTITY[1]) ∧ CD_８_月_２４_日(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1]) ∧ まで(EVENT[3]) = ENTITY[2])
+
+# ::id 24_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 祝日 を 除く 月曜日 と 祝日 の 翌日 は 休館 。
+∃ ENTITY[4] EVENT[9] ENTITY[8] EVENT[6] ENTITY[5] ENTITY[3] ENTITY[7] GROUP[2] ENTITY[1] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  祝日(ENTITY[5]) ∧
+   THAT_月曜日(除く.0(EVENT[6], ENTITY[4], ENTITY[5]), ENTITY[3]) ∧
+    祝日(ENTITY[7]) ∧
+     CONJ_と(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[7], GROUP[2])) ∧
+      の_翌日(GROUP[2], ENTITY[1]) ∧ 休館(ENTITY[8]) ∧ xxx(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 25_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 観覧料 は 一般 １４００ 円 、 大学・高校生 １１００ 円 、 小・中学生 ７００ 円 。
+∃ EVENT[6] GROUP[2] ENTITY[1] (
+ 観覧料(ENTITY[1]) ∧
+  ∃ ENTITY[3] ((CD_１４００_円(ENTITY[3]), 一般(ENTITY[3])) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] ((CD_１１００_円(ENTITY[4]), 大学.高校生(ENTITY[4])) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ENTITY[5] ((CD_７００_円(ENTITY[5]), 小.中学生(ENTITY[5])) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   xxx(EVENT[6], ENTITY[1], GROUP[2]))
+
+# ::id 26_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 左側 の 写真 が 「 雪 の 五重塔 全景 」 ＝ 仙台市博物館
+∃ EVENT[5] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 左側(ENTITY[2]) ∧
+  の_写真(ENTITY[2], ENTITY[1]) ∧
+   雪(ENTITY[4]) ∧
+    の_五重塔_全景(ENTITY[4], ENTITY[3]) ∧ namely_-ENTITY-(FAC[仙台市博物館], ENTITY[3]) ∧ xxx(EVENT[5], ENTITY[1], ENTITY[3]))
+
+# ::id 27_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ◎ ロバート・グラスパー・エクスペリメント 公演
+∃ EVENT[2] PERSON[1] (ロバート.グラスパー.エクスペリメント_公演(PERSON[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = PERSON[1])
+
+# ::id 28_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ 斬新 な ジャズ で 魅了
+∃ ATTRIB[3] ENTITY[1] EVENT[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  斬新_な(ATTRIB[3]) ∧
+   ATTRIBUTE_ジャズ(ATTRIB[3], ENTITY[2]) ∧ する.0(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 29_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ ８ 月 ・ 仙台
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = LOC[８_月_仙台])
+
+# ::id 30_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 東北大学 百 周年 記念 会館 ・ 川内萩ホール （ 仙台市 青葉区 ） で ８ 月 １８ 日 に 開か れる フォーシーズンズ・プログラム （ 主催 ・ 河北新報社 、 東北大 、 東北放送 ） の 本年度 第２ 弾 に 出演 する ロバート・グラスパー は 、 幅広い 音楽性 で 米国 の 現代ジャズ を 牽引 する ピアニスト です 。
+∃ ATTRIB[14] EVENT[16] EVENT[17] ENTITY[15] ENTITY[13] ENTITY[11] EVENT[9] EVENT[10] ORG[7] ENTITY[8] GROUP[4] ENTITY[3] ENTITY[5] ENTITY[2] (
+ 東北大学_百_周年_記念_会館(ORG[7]) ∧
+  namely_-FAC-(ORG[7], FAC[川内萩ホール]) ∧
+   namely_-FAC-(LOC[仙台市_青葉区], FAC[川内萩ホール]) ∧
+    CD_８_月_１８_日(ENTITY[8]) ∧
+     開く.0(EVENT[9], _, ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[8] ∧ で(EVENT[9]) = FAC[川内萩ホール] ∧
+      フォーシーズンズ.プログラム(ENTITY[5]) ∧
+      is_subset_of_or_equal_to(ORG[河北新報社], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[東北大], GROUP[4]) ∧ is_subset_of_or_equal_to(ORG[東北放送], GROUP[4]) ∧
+       equals_主催(GROUP[4], ENTITY[3]) ∧
+        namely_-ENTITY-(ENTITY[3], ENTITY[5]) ∧
+         (CD_第２_弾(ENTITY[2]), の_本年度(ENTITY[5], ENTITY[2])) ∧
+          出演する.0(EVENT[10], PERSON[ロバート.グラスパー]) ∧ に(EVENT[10]) = ENTITY[2] ∧
+           幅広い(ATTRIB[14]) ∧
+            ATTRIBUTE_音楽性(ATTRIB[14], ENTITY[13]) ∧
+             の_現代ジャズ(NORP[米国], ENTITY[15]) ∧
+              牽引する.0(EVENT[16], ENTITY[11], ENTITY[15]) ∧ で(EVENT[16]) = ENTITY[13] ∧
+               ピアニスト(ENTITY[11]) ∧ です(EVENT[17], PERSON[ロバート.グラスパー], ENTITY[11]))
+
+# ::id 31_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt グラスパー は テキサス州 ヒューストン 生まれ 。
+∃ EVENT[2] LOC[1] (テキサス州_ヒューストン_生まれ(LOC[1]) ∧ xxx(EVENT[2], PERSON[グラスパー], LOC[1]))
+
+# ::id 32_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 母親 の 影響 を 受け て 教会 で ピアノ を 弾き 、 ゴスペル 、 ジャズ 、 ブルース など さまざま な ブラック・ミュージック に 囲ま れ ながら 育ち まし た 。
+∃ ATTRIB[14] SITUATION[8] ENTITY[1] EVENT[4] EVENT[7] EVENT[15] EVENT[16] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] GROUP[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  母親(ENTITY[3]) ∧
+   の_影響(ENTITY[3], ENTITY[2]) ∧
+    教会(ENTITY[5]) ∧
+     ピアノ(ENTITY[6]) ∧
+      ∃ ENTITY[11] (ゴスペル(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+       ∃ ENTITY[12] (ジャズ(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+       ∃ ENTITY[13] (ブルース(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+       さまざま_な(ATTRIB[14]) ∧
+        ATTRIBUTE_ブラック.ミュージック(ATTRIB[14], ENTITY[9]) ∧ など_ブラック.ミュージック(GROUP[10], ENTITY[9]) ∧
+         FACT(SITUATION[8], 囲む.0(EVENT[15], _, ENTITY[1]) ∧ に(EVENT[15]) = ENTITY[9]) ∧
+          past(EVENT[16]) ∧
+           CONJ_te(受ける.0_て(EVENT[4], ENTITY[1], ENTITY[2]),
+            弾く.0(EVENT[7], ENTITY[1], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[5]) ∧
+            育つ.0_まし_た(EVENT[16], ENTITY[1]) ∧ ながら(EVENT[16]) = SITUATION[8])
+
+# ::id 33_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 地元 の 高校 を 卒業後 、 マンハッタン の ニュー・スクール・ユニバーシティ に 入学 。
+∃ ENTITY[1] EVENT[4] EVENT[5] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  地元(ENTITY[3]) ∧
+   の_高校(ENTITY[3], ENTITY[2]) ∧
+    の_xxx(NORP[マンハッタン], ORG[ニュー.スクール.ユニバーシティ]) ∧
+     卒業後(EVENT[4], ENTITY[1], ENTITY[2]) ∧ する.0(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ORG[ニュー.スクール.ユニバーシティ])
+
+# ::id 34_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 在学中 から クリスチャン・マクブライド 、 ラッセル・マローン 、 ケニー・ギャレット 、 Ｑティップ 、 モス・デフ ら 多く の ミュージシャン と 共演 し 、 豊か な 音楽 の 才能 に 磨き を かけ ます 。
+∃ ATTRIB[9] ENTITY[1] EVENT[6] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[10] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  在学中(ENTITY[2]) ∧
+   多く GROUP[5] ENTITY[4] (
+    (is_element_of(PERSON[クリスチャン.マクブライド], GROUP[5]) ∧ is_element_of(PERSON[ラッセル.マローン], GROUP[5]) ∧ is_element_of(PERSON[ケニー.ギャレット], GROUP[5]) ∧
+       is_element_of(PERSON[Ｑティップ], GROUP[5]) ∧ is_element_of(PERSON[モス.デフ], GROUP[5]) ∧ equals_ら(GROUP[5], ENTITY[4])),
+    の_ミュージシャン(ENTITY[4], ENTITY[3])) ∧
+    豊か_な(ATTRIB[9]) ∧
+     ATTRIBUTE_音楽(ATTRIB[9], ENTITY[8]) ∧
+      の_才能(ENTITY[8], ENTITY[7]) ∧
+       磨き(ENTITY[10]) ∧
+        共演する.0(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[3] ∧ から(EVENT[6]) = ENTITY[2] ∧
+         掛ける.0_ます(EVENT[11], ENTITY[1], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[7])
+
+# ::id 35_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt グラミー賞 を 受賞 し た ２０１２ 年 の アルバム 「 ブラック・レディオ 」 は ジャズ の 本流 を くみ ながら 、 Ｒ＆Ｂ 、 ヒップホップ や クラブミュージック の ファン から も 支持 さ れる 音楽性 を 具現化 し まし た 。
+∃ EVENT[7] EVENT[15] EVENT[16] ENTITY[6] ENTITY[5] GROUP[11] ENTITY[10] ENTITY[8] EVENT[4] ENTITY[3] ENTITY[1] (
+ グラミー賞(ENTITY[3]) ∧
+  受賞する.0_た(EVENT[4], WORK_OF_ART[アルバム], ENTITY[3]) ∧
+   CD_２０１２_年(ENTITY[1]) ∧
+    の_xxx(ENTITY[1], WORK_OF_ART[アルバム]) ∧
+     namely_-WORK_OF_ART-(WORK_OF_ART[ブラック.レディオ], WORK_OF_ART[アルバム]) ∧
+      past(EVENT[4]) ∧
+       ジャズ(ENTITY[6]) ∧
+        の_本流(ENTITY[6], ENTITY[5]) ∧
+         CONJ_や(∃ ENTITY[12] (Ｒ＆Ｂ(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+          ∃ ENTITY[13] (ヒップホップ(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11])),
+          ∃ ENTITY[14] (クラブミュージック(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[11]))) ∧
+          の_ファン(GROUP[11], ENTITY[10]) ∧
+           指示する.0(EVENT[15], _, ENTITY[8]) ∧ から(EVENT[15]) = ENTITY[10] ∧ 音楽性(ENTITY[8]) ∧
+            past(EVENT[16]) ∧
+             CRD_ながら(くむ.0(EVENT[7], WORK_OF_ART[アルバム], ENTITY[5]), 具現化する.0_まし_た(EVENT[16], WORK_OF_ART[アルバム], ENTITY[8])))
+
+# ::id 36_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 続編 の 「 ブラック・レディオ２ 」 は 、 同じ レーベル に 所属 する 高校時代 の 友人 、 ノラ・ジョーンズら 多彩 な ゲスト と 共演 し た 話題作 と なり まし た 。
+∃ ATTRIB[7] ATTRIB[11] ENTITY[3] SITUATION[2] EVENT[8] EVENT[12] EVENT[13] ENTITY[6] ENTITY[9] ENTITY[4] ENTITY[10] ENTITY[1] (
+ 続編(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], WORK_OF_ART[ブラック.レディオ２]) ∧
+   ENTITY[3] = *pro*{ENTITY[1]} ∧
+    多彩_な(ATTRIB[11]) ∧
+     ATTRIBUTE_ゲスト(ATTRIB[11], ENTITY[10]) ∧
+      同じ(ATTRIB[7]) ∧
+       ATTRIBUTE_レーベル(ATTRIB[7], ENTITY[6]) ∧
+        高校時代(ENTITY[9]) ∧
+         所属する.0(EVENT[8], ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[6] ∧ の_友人(ENTITY[9], ENTITY[4]) ∧
+          namely_-ENTITY-(ENTITY[4], ENTITY[10]) ∧
+           namely_-ENTITY-(PERSON[ノラ.ジョーンズら], ENTITY[10]) ∧
+            話題作(SITUATION[2], 共演する.0_た(EVENT[12], ENTITY[3]) ∧ と(EVENT[12]) = ENTITY[10]) ∧
+             past(EVENT[12]) ∧
+              past(EVENT[13]) ∧ 成る.0_まし_た(EVENT[13], WORK_OF_ART[ブラック.レディオ２]) ∧ と(EVENT[13]) = SITUATION[2])
+
+# ::id 37_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 仙台 公演 は 、 グループ の 「 ロバート・グラスパー・エクスペリメント 」 名義 で の 出演 です 。
+∃ ENTITY[1] EVENT[6] ENTITY[5] PERSON[4] ENTITY[3] LOC[2] (
+ 仙台_公演(LOC[2]) ∧
+  ENTITY[1] = *pro* ∧
+   グループ(ENTITY[5]) ∧
+    の_ロバート.グラスパー.エクスペリメント(ENTITY[5], PERSON[4]) ∧ の_名義(ENTITY[5], PERSON[4]) ∧
+     で_の_出演(PERSON[4], ENTITY[3]) ∧ です(EVENT[6], ENTITY[1], ENTITY[3]) ∧ LOC(EVENT[6]) = LOC[2])
+
+# ::id 38_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt グラスパー の ピアノ の 繊細 な タッチ 、 ドラム の コーレンバーグ の 予測不能 な ビート に 、 ベンジャミン の ボコーダー 、 トラヴィス の ベース が 重なり合い 、 斬新 な ジャズセッション が 期待 さ れ ます 。
+∃ ATTRIB[13] EVENT[11] EVENT[14] GROUP[8] GROUP[1] ENTITY[12] (
+ ∃ ATTRIB[4] ENTITY[3] ENTITY[2] (
+  の_ピアノ(PERSON[グラスパー], ENTITY[3]) ∧
+   繊細_な(ATTRIB[4]) ∧
+    の_タッチ(ENTITY[3], ENTITY[2]) ∧ ATTRIBUTE_タッチ(ATTRIB[4], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ATTRIB[7] ENTITY[6] ENTITY[5] (
+   ドラム(ENTITY[6]) ∧
+    の_xxx(ENTITY[6], PERSON[コーレンバーグ]) ∧
+     予測不能_な(ATTRIB[7]) ∧
+      の_ビート(PERSON[コーレンバーグ], ENTITY[5]) ∧ ATTRIBUTE_ビート(ATTRIB[7], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[1])) ∧
+  ∃ ENTITY[9] (の_ボコーダー(PERSON[ベンジャミン], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+   ∃ ENTITY[10] (の_ベース(PERSON[トラヴィス], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+   斬新_な(ATTRIB[13]) ∧
+    ATTRIBUTE_ジャズセッション(ATTRIB[13], ENTITY[12]) ∧
+     重なり合う.0(EVENT[11], GROUP[8]) ∧ に(EVENT[11]) = GROUP[1] ∧ 期待する.0_ます(EVENT[14], _, ENTITY[12]))
+
+# ::id 39_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 入場料 は 全席指定 ７８００ 円 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (入場料(ENTITY[1]) ∧ CD_７８００_円(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 40_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 藤崎 、 チケットぴあ 、 ローソンチケット 、 イープラス 、 河北チケットセンター で 販売中 。
+∃ EVENT[3] GROUP[2] ENTITY[1] (
+ is_subset_of_or_equal_to(ORG[藤崎], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[チケットぴあ], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[ローソンチケット], GROUP[2]) ∧
+  is_subset_of_or_equal_to(ORG[イープラス], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[河北チケットセンター], GROUP[2]) ∧
+  で_販売中(GROUP[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 41_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ◎ 笑顔 で おもてなし
+∃ EVENT[3] ENTITY[2] ENTITY[1] (笑顔(ENTITY[2]) ∧ で_おもてなし(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 42_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ ツール・ド・東北 ２０１４
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = EVENT[ツール.ド.東北_２０１４])
+
+# ::id 43_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ 運営 に 参加 し ませ ん か
+QUEST(∃ ENTITY[1] (
+      ENTITY[1] = *hearer* ∧
+       ¬ ∃ EVENT[3] ENTITY[2] (運営(ENTITY[2]) ∧ 参加する.0_ませ(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2])))
+
+# ::id 44_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ／ ９ 月
+∃ EVENT[2] ENTITY[1] (CD_９_月(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 45_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 東日本大震災 の 被災地 を 自転車 で 巡る 「 ツール・ド・東北 ２０１４ 」 （ 主催 ・ 河北新報社 、 ヤフー ） が ９ 月 １４ 日 に 開か れ ます 。
+∃ EVENT[4] GROUP[2] ENTITY[1] ENTITY[3] (
+ is_subset_of_or_equal_to(ORG[河北新報社], GROUP[2]) ∧ is_subset_of_or_equal_to(ORG[ヤフー], GROUP[2]) ∧
+  equals_主催(GROUP[2], ENTITY[1]) ∧
+   namely_-EVENT-(ENTITY[1], EVENT[ツール.ド.東北_２０１４]) ∧
+    CD_９_月_１４_日(ENTITY[3]) ∧ 開く.0_ます(EVENT[4], _, EVENT[ツール.ド.東北_２０１４]) ∧ に(EVENT[4]) = ENTITY[3])
+
+# ::id 46_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 実行委員会 は 、 大会 の 準備 、 運営 を 支える ボランティア 「 ツール・ド・東北クルー 」 を 募集 し て い ます 。
+∃ EVENT[9] EVENT[10] GROUP[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 実行委員会(ENTITY[1]) ∧
+  大会(ENTITY[5]) ∧
+   ∃ ENTITY[7] (準備(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+    ∃ ENTITY[8] (運営(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+    equals(GROUP[6], ENTITY[4]) ∧ の(ENTITY[5], ENTITY[4]) ∧
+     支える.0(EVENT[9], ENTITY[2], ENTITY[4]) ∧ ボランティア(ENTITY[2]) ∧ ツール.ド.東北クルー(ENTITY[2]) ∧
+      募集する.0_て_い_ます(EVENT[10], ENTITY[1], ENTITY[2]))
+
+# ::id 47_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 大会 は 昨年 に 続い て ２ 回目 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 大会(ENTITY[1]) ∧
+  昨年(ENTITY[2]) ∧
+   CD_２_回目(ENTITY[4]) ∧
+    CONJ_te(続く.0_て(EVENT[3], ENTITY[1]) ∧ に(EVENT[3]) = ENTITY[2], xxx(EVENT[5], ENTITY[1], ENTITY[4])))
+
+# ::id 48_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 今年 は コース 、 定員 を 拡大 し 、 石巻 、 気仙沼 、 女川 、 南三陸 の 宮城県内 ２ 市 ２ 町 の ４ コース を 、 全国 から 集まる ３０００ 人 が 駆け抜け ます 。
+∃ ENTITY[2] EVENT[6] EVENT[14] GROUP[3] GROUP[9] ENTITY[8] ENTITY[10] ENTITY[7] ENTITY[1] (
+ 今年(ENTITY[1]) ∧
+  ENTITY[2] = *pro*{ENTITY[1]} ∧
+   ∃ ENTITY[4] (コース(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (定員(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    is_element_of(LOC[石巻], GROUP[9]) ∧ is_element_of(LOC[気仙沼], GROUP[9]) ∧ is_element_of(LOC[女川], GROUP[9]) ∧
+     is_element_of(LOC[南三陸], GROUP[9]) ∧
+     (CD_２_市_２_町(ENTITY[8]), の_宮城県内(GROUP[9], ENTITY[8])) ∧
+      (CD_４_コース(ENTITY[7]), の(ENTITY[8], ENTITY[7])) ∧
+       (CD_３０００_人(ENTITY[10]),
+        全 ENTITY[12] (国(ENTITY[12]), ∃ EVENT[13] (集まる.0(EVENT[13], ENTITY[10]) ∧ から(EVENT[13]) = ENTITY[12]))) ∧
+        拡大する.0(EVENT[6], ENTITY[2], GROUP[3]) ∧
+         駆け抜ける.0_ます(EVENT[14], ENTITY[10], ENTITY[7]) ∧ 時間(EVENT[14]) = ENTITY[1])
+
+# ::id 49_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ボランティア の 活動日 は 大会前日 の １３ 日 と 当日 の １４ 日 。
+∃ EVENT[8] GROUP[3] ENTITY[2] ENTITY[1] (
+ ボランティア(ENTITY[2]) ∧
+  の_活動日(ENTITY[2], ENTITY[1]) ∧
+   CONJ_と(∃ ENTITY[5] ENTITY[4] (
+         大会前日(ENTITY[5]) ∧
+          (CD_１３_日(ENTITY[4]), の(ENTITY[5], ENTITY[4])) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[7] ENTITY[6] (
+     当日(ENTITY[7]) ∧
+      (CD_１４_日(ENTITY[6]), の(ENTITY[7], ENTITY[6])) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+    xxx(EVENT[8], ENTITY[1], GROUP[3]))
+
+# ::id 50_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 実行委 の 割り振り に 応じ て 、 参加者 の 受け付け や 案内 、 エイドステーション （ 休憩所 ） など で の 飲食物配布 、 コース上 で の 交通誘導 など を 担当 し ます 。
+∃ ENTITY[1] EVENT[4] EVENT[18] ENTITY[3] ENTITY[2] GROUP[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  実行委(ENTITY[3]) ∧
+   の_割り振り(ENTITY[3], ENTITY[2]) ∧
+    ∃ GROUP[9] ENTITY[8] ENTITY[7] (
+     参加者(ENTITY[8]) ∧
+      CONJ_や(∃ ENTITY[10] (受け付け(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+       ∃ ENTITY[11] (案内(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+       の(ENTITY[8], ENTITY[7]) ∧ equals(GROUP[9], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+     ∃ ENTITY[14] ENTITY[15] ENTITY[13] ENTITY[12] (
+      エイドステーション(ENTITY[15]) ∧
+       休憩所(ENTITY[14]) ∧
+        namely_-ENTITY-(ENTITY[14], ENTITY[15]) ∧
+         など(ENTITY[15], ENTITY[13]) ∧ で_の_飲食物配布(ENTITY[13], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[6])) ∧
+     ∃ ENTITY[17] ENTITY[16] (コース上(ENTITY[17]) ∧ で_の_交通誘導(ENTITY[17], ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[6])) ∧
+     など(GROUP[6], ENTITY[5]) ∧
+      CONJ_te(応じる.0_て(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2], 担当する.0_ます(EVENT[18], ENTITY[1], ENTITY[5])))
+
+# ::id 51_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 参加資格 は １５ 歳 以上 の 男女 （ 中学生 は 除く ） で 、 大会オリジナル の Ｔシャツ 、 帽子 、 食事 を 支給 し ます 。
+∃ ENTITY[1] EVENT[5] EVENT[13] ENTITY[4] ENTITY[3] GROUP[6] ENTITY[2] (
+ 参加資格(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_１５_歳(ENTITY[4]), 以上(ENTITY[4])) ∧
+    の_男女(ENTITY[4], ENTITY[3]) ∧
+     ∃ GROUP[9] ENTITY[8] ENTITY[7] (
+      大会オリジナル(ENTITY[8]) ∧
+       ∃ ENTITY[10] (Ｔシャツ(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])) ∧
+        ∃ ENTITY[11] (帽子(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9])) ∧
+        の(ENTITY[8], ENTITY[7]) ∧ equals(GROUP[9], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+      ∃ ENTITY[12] (食事(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[6])) ∧
+      CONJ_te(で(EVENT[5], ENTITY[2], ENTITY[3]), 支給する.0_ます(EVENT[13], ENTITY[1], GROUP[6])))
+
+# ::id 52_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 宿泊・交通費 は 自己負担 に なり ます が 、 希望者 に は 石巻専修大 など に 無料 の 寝具付き簡易宿泊所 を 設置 し ます 。
+∃ ENTITY[4] EVENT[3] EVENT[9] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[1] ENTITY[5] (
+ 宿泊.交通費(ENTITY[1]) ∧
+  希望者(ENTITY[5]) ∧
+   自己負担(ENTITY[2]) ∧
+    ENTITY[4] = *pro*{ENTITY[2], ENTITY[1]} ∧
+     など(ORG[石巻専修大], ENTITY[6]) ∧
+      無料(ENTITY[8]) ∧
+       の_寝具付き簡易宿泊所(ENTITY[8], ENTITY[7]) ∧
+        CONJ_が(成る.0_ます(EVENT[3], ENTITY[1], ENTITY[2]),
+         設置する.0_ます(EVENT[9], ENTITY[4], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[6] ∧
+          に(EVENT[9]) = ENTITY[5]))
+
+# ::id 53_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt ボランティア参加者 は 来年 の 「 ツール・ド・東北 」 の 大会優先出場権 を 得る こと が でき ます 。
+∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ ボランティア参加者(ENTITY[1]) ∧
+  来年(ENTITY[4]) ∧
+   の_大会優先出場権(EVENT[ツール.ド.東北], ENTITY[3]) ∧ の__大会優先出場権(ENTITY[4], ENTITY[3]) ∧
+    こと(SITUATION[2], 得る.0(EVENT[5], ENTITY[1], ENTITY[3])) ∧ 出来る.0_ます(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 54_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 募集人員 は ７５０ 人 で 事前説明会 を ８ 月 ２５ 日 に 石巻市 、 ２６ 日 に 気仙沼市 、 ２７ 日 に 仙台市 、 ２８ 日 に 東京 で 開き ます 。
+∃ ENTITY[1] EVENT[4] EVENT[11] ENTITY[3] GROUP[6] ENTITY[5] ENTITY[2] (
+ 募集人員(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CD_７５０_人(ENTITY[3]) ∧
+    事前説明会(ENTITY[5]) ∧
+     ∃ ENTITY[7] (CD_８_月_２５_日(ENTITY[7]) ∧ に_xxx(ENTITY[7], LOC[石巻市]) ∧ is_element_of(LOC[石巻市], GROUP[6])) ∧
+      ∃ ENTITY[8] (CD_２６_日(ENTITY[8]) ∧ に_xxx(ENTITY[8], LOC[気仙沼市]) ∧ is_element_of(LOC[気仙沼市], GROUP[6])) ∧
+      ∃ ENTITY[9] (CD_２７_日(ENTITY[9]) ∧ に_xxx(ENTITY[9], LOC[仙台市]) ∧ is_element_of(LOC[仙台市], GROUP[6])) ∧
+      ∃ ENTITY[10] (CD_２８_日(ENTITY[10]) ∧ に_xxx(ENTITY[10], LOC[東京]) ∧ is_element_of(LOC[東京], GROUP[6])) ∧
+      CONJ_te(で(EVENT[4], ENTITY[2], ENTITY[3]),
+       開く.0_ます(EVENT[11], ENTITY[1], ENTITY[5]) ∧ で(EVENT[11]) = GROUP[6]))
+
+# ::id 55_newswire_00067_K201407100A0KI0XX00001;NJ
+# ::snt 申し込み は 公式サイト の ほか 、 ファクス 、 はがき で も 受け付け ます 。
+∃ EVENT[7] ENTITY[3] GROUP[4] ENTITY[2] ENTITY[1] (
+ 申し込み(ENTITY[1]) ∧
+  公式サイト(ENTITY[3]) ∧
+   の_ほか(ENTITY[3], ENTITY[2]) ∧
+    ∃ ENTITY[5] (ファクス(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+     ∃ ENTITY[6] (はがき(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+     受け付ける.0_ます(EVENT[7], ENTITY[1]) ∧ で(EVENT[7]) = GROUP[4] ∧ ADV(EVENT[7]) = ENTITY[2])

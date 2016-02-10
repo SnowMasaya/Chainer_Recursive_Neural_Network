@@ -1,0 +1,1187 @@
+# ::id 1_wikipedia_KYOTO_RLW_00004,1;NJ
+# ::snt 奈良線
+( 奈良線 / -entity-
+      :name ( n2 / name
+             :op1 "奈良線"))
+
+# ::id 2_wikipedia_KYOTO_RLW_00004,2;NJ
+# ::snt 奈良線 （ ならせん ） は 、 京都府 木津川市 の 木津駅 （ 京都府 ） から 京都府 京都市 下京区 の 京都駅 に 至る 西日本旅客鉄道 （ JR西日本 ） の 鉄道 路線 （ 幹線 ） で ある 。
+( e8 / で_ある
+      :arg0 ( 奈良線 / -entity-
+             :name ( n16 / name
+                    :op1 "奈良線")
+             :arg0-of ( e1 / is
+                    :arg1 ( ならせん / -entity-
+                           :name ( n17 / name
+                                  :op1 "ならせん"))))
+      :arg1 ( x3 / 鉄道_路線
+             :の ( 西日本旅客鉄道 / -entity-
+                    :name ( n13 / name
+                           :op1 "西日本旅客鉄道")
+                    :arg0-of ( e6 / is
+                           :arg1 ( JR西日本 / -entity-
+                                  :name ( n14 / name
+                                         :op1 "JR西日本"))))
+             :arg0-of ( e5 / 至る
+                    :に ( 京都駅 / xxx
+                           :name ( n15 / name
+                                  :op1 "京都駅")
+                           :の ( 京都府_京都市_下京区 / -entity-
+                                  :name ( n10 / name
+                                         :op1 "京都府_京都市_下京区")))
+                    :から ( 木津駅 / xxx
+                           :name ( n11 / name
+                                  :op1 "木津駅")
+                           :の ( 京都府_木津川市 / -entity-
+                                  :name ( n9 / name
+                                         :op1 "京都府_木津川市"))
+                           :arg0-of ( e4 / is
+                                  :arg1 ( 京都府 / -entity-
+                                         :name ( n12 / name
+                                                :op1 "京都府")))))
+             :arg0-of ( e7 / is
+                    :arg1 ( x2 / 幹線))))
+
+# ::id 3_wikipedia_KYOTO_RLW_00004,3;NJ
+# ::snt 全線 が 大 都市 近郊 区間 に 含ま れる 。
+( e3 / 含ま
+      :arg1 ( x1 / 線
+             :quantifier ( A4 / 全))
+      :に ( t2 / 大_都市_近郊_区間))
+
+# ::id 4_wikipedia_KYOTO_RLW_00004,4;NJ
+# ::snt 関西本線 の 支線 として の 沿革 を 持つ ため 、 正式 な 起点 は 木津駅 だ が 、 列車 運行 上 は 京都 から 木津 へ 向かう 列車 が 下り （ 列車 番号 は 奇数 ） 、 逆 が 上り （ 同偶数 ） と なっ て いる 。
+( r27 / AND
+      :op1 ( r29 / が
+             :op1 ( e13 / だ
+                    :arg0 ( x1 / 起点
+                           :ATTRIBUTE ( A22 / 正式_な)
+                           :mode definite)
+                    :arg0 ( x19 / pro)
+                    :arg1 ( 木津駅 / -entity-
+                           :name ( n30 / name
+                                  :op1 "木津駅"))
+                    :LINK ( s20 / ため
+                           :THAT ( e12 / 持つ
+                                  :arg0 x19
+                                  :arg1 ( x5 / 沿革
+                                         :として_の ( x4 / 支線
+                                                :の ( 関西本線 / -entity-
+                                                       :name ( n27 / name
+                                                              :op1 "関西本線")))))))
+             :op2 ( e17 / なっ_て_いる
+                    :arg0 ( x23 / pro)
+                    :と ( r28 / AND
+                           :op1 ( e15 / xxx
+                                  :arg0 ( x7 / 列車
+                                         :arg0-of ( e14 / 向かう
+                                                :へ ( 木津 / -entity-
+                                                       :name ( n28 / name
+                                                              :op1 "木津"))
+                                                :から ( 京都 / -entity-
+                                                       :name ( n29 / name
+                                                              :op1 "京都"))))
+                                  :arg1 ( x6 / 下り))
+                           :op2 ( e16 / xxx
+                                  :arg0 ( x10 / 逆)
+                                  :arg1 ( x9 / 上り)
+                                  :circumstance ( x8 / 同偶数)))
+                    :circumstance ( x2 / 列車_運行_上
+                           :mode definite)))
+      :op2 ( e18 / xxx
+             :arg0 ( x3 / 列車_番号
+                    :mode definite)
+             :arg1 ( x11 / 奇数)))
+
+# ::id 5_wikipedia_KYOTO_RLW_00004,5;NJ
+# ::snt 以下 路線 データ を 除き 特記 なけれ ば 、 京都 から 木津 へ 下り 方向 に 記述 する 。
+( r11 / ば
+      :op1 ( e6 / なけれ
+             :arg0 ( x2 / 特記
+                    :arg0-of ( e5 / 除き
+                           :arg1 ( x1 / 路線_データ))))
+      :op2 ( e7 / 記述_する
+             :arg0 ( x9 / pro)
+             :arg1 ( x8 / pro)
+             :に ( x3 / 下り_方向)
+             :へ ( 木津 / -entity-
+                    :name ( n10 / name
+                           :op1 "木津"))
+             :から ( 京都 / -entity-
+                    :name ( n11 / name
+                           :op1 "京都"))
+             :circumstance ( x4 / 以下)))
+
+# ::id 6_wikipedia_KYOTO_RLW_00004,6;NJ
+# ::snt ライン カラー は 茶色 （ ■ ） で あり 、 選定 理由 は 「 二 本 の 古都 を 結ぶ クラシック な 落ち着い た イメージ 」 と さ れ て いる 。
+( r15 / AND
+      :op1 ( e8 / で_あり
+             :arg0 ( x1 / ライン_カラー
+                    :mode definite)
+             :arg1 ( x3 / 茶色
+                    :arg0-of ( e7 / is
+                           :arg1 ( ■ / -entity-
+                                  :name ( n15 / name
+                                         :op1 " ■ ")))))
+      :op2 ( e11 / さ_て_いる
+             :arg1 ( x2 / 選定_理由
+                    :mode definite)
+             :arg2 ( x6 / イメージ
+                    :ATTRIBUTE ( A14 / クラシック_な)
+                    :arg0-of ( e9 / 結ぶ
+                           :arg1 ( x5 / 古都
+                                  :の ( x4 / CD_二_本)))
+                    :arg0-of ( e10 / 落ち着い_た))))
+
+# ::id 7_wikipedia_KYOTO_RLW_00004,18;NJ
+# ::snt 木津駅 を 除き 西日本旅客鉄道 京都支社 の 管轄 で ある （ 木津駅 は 同西日本旅客鉄道 大阪支社 が 管理 ） 。
+( e4 / 管理
+      :arg0 ( 同西日本旅客鉄道_大阪支社 / -entity-
+             :name ( n8 / name
+                    :op1 "同西日本旅客鉄道_大阪支社"))
+      :arg1 ( 木津駅 / -entity-
+             :name ( n7 / name
+                    :op1 "木津駅")
+             :arg1-of ( e2 / 除き
+                    :arg0 ( x5 / pro
+                           :arg0-of ( e3 / で_ある
+                                  :arg1 ( x1 / 管轄
+                                         :の ( 西日本旅客鉄道_京都支社 / -entity-
+                                                :name ( n6 / name
+                                                       :op1 "西日本旅客鉄道_京都支社"))))))))
+
+# ::id 8_wikipedia_KYOTO_RLW_00004,19;NJ
+# ::snt 概要
+( x1 / 概要)
+
+# ::id 9_wikipedia_KYOTO_RLW_00004,20;NJ
+# ::snt 線路 名称 として 京都 ～ 木津 間 が 奈良線 と 名付け られ て いる が 、 その 全区間 が 京都府 内 に あり 、 奈良県 内 に は 全く 路線 が ない 。
+( r15 / が
+      :op1 ( e8 / 名付け_て_いる
+             :arg1 ( t7 / 間
+                    :EQUALS ( X6 / AND
+                           :op1 ( 京都 / -entity-
+                                  :name ( n13 / name
+                                         :op1 "京都"))
+                           :op2 ( 木津 / -entity-
+                                  :name ( n14 / name
+                                         :op1 "木津"))))
+             :arg2 ( 奈良線 / -entity-
+                    :name ( n15 / name
+                           :op1 "奈良線"))
+             :として ( x3 / 線路_名称))
+      :op2 ( r16 / AND
+             :op1 ( e9 / あり
+                    :arg0 ( x1 / 全区間)
+                    :に ( x4 / 京都府_内))
+             :op2 ( e10 / ない
+                    :arg0 ( x5 / 路線
+                           :quantifier ( A11 / 全く))
+                    :に ( x2 / 奈良県_内
+                           :mode definite))))
+
+# ::id 10_wikipedia_KYOTO_RLW_00004,21;NJ
+# ::snt これ は 当初 奈良鉄道 によって 京都 ～ 奈良 間 が 建設 さ れ た ものの 、 関西鉄道 に 合併 さ れ た 後 に 大阪 ～ 名古屋 ルート の 一部 として 木津 以南 を 分離 さ れ た 、 と の 経緯 に よる 。
+( e13 / よる
+      :arg0 ( x1 / これ
+             :mode definite)
+      :に ( x6 / 経緯
+             :の ( s15 / と
+                    :THAT ( r19 / ものの
+                           :op1 ( e10 / 建設_さ_た
+                                  :arg0 ( 奈良鉄道 / -entity-
+                                         :name ( n19 / name
+                                                :op1 "奈良鉄道"))
+                                  :arg1 ( t9 / 間
+                                         :EQUALS ( X7 / AND
+                                                :op1 ( 京都 / -entity-
+                                                       :name ( n20 / name
+                                                              :op1 "京都"))
+                                                :op2 ( 奈良 / -entity-
+                                                       :name ( n21 / name
+                                                              :op1 "奈良"))))
+                                  :circumstance ( x2 / 当初)
+                                  :tense past)
+                           :op2 ( e12 / 分離_さ_た
+                                  :arg1 ( x5 / 木津_以南)
+                                  :として ( x4 / 一部
+                                         :の ( x3 / ルート
+                                                :EQUALS ( X8 / AND
+                                                       :op1 ( 大阪 / -entity-
+                                                              :name ( n22 / name
+                                                                     :op1 "大阪"))
+                                                       :op2 ( 名古屋 / -entity-
+                                                              :name ( n23 / name
+                                                                     :op1 "名古屋")))))
+                                  :に ( s16 / 後
+                                         :THAT ( e11 / 合併_さ_た
+                                                :arg1 ( x17 / pro)
+                                                :に ( 関西鉄道 / -entity-
+                                                       :name ( n18 / name
+                                                              :op1 "関西鉄道"))
+                                                :tense past))
+                                  :tense past)))))
+
+# ::id 11_wikipedia_KYOTO_RLW_00004,22;NJ
+# ::snt ただし 、 列車 は 木津駅 から 関西本線 （ 大和路線 ） に 入っ て 奈良県 の 奈良駅 まで 運行 さ れる 。
+( r7 / て
+      :op1 ( e3 / 入っ
+             :arg0 ( x1 / 列車
+                    :mode definite)
+             :に ( 関西本線 / -entity-
+                    :name ( n7 / name
+                           :op1 "関西本線")
+                    :arg0-of ( e2 / is
+                           :arg1 ( 大和路線 / -entity-
+                                  :name ( n8 / name
+                                         :op1 "大和路線"))))
+             :から ( 木津駅 / -entity-
+                    :name ( n9 / name
+                           :op1 "木津駅")))
+      :op2 ( e4 / 運行_さ
+             :arg1 x1
+             :まで ( 奈良駅 / xxx
+                    :name ( n10 / name
+                           :op1 "奈良駅")
+                    :の ( 奈良県 / -entity-
+                           :name ( n6 / name
+                                  :op1 "奈良県")))))
+
+# ::id 12_wikipedia_KYOTO_RLW_00004,23;NJ
+# ::snt JR西日本 は 1988 年 3 月 13 日 改正 で アーバンネットワーク の 各路線 に 愛称路線名 （ JR京都線 ・ JR神戸線 など ） を 定め た が 、 奈良線 について は 見送ら れ た 。
+( r13 / が
+      :op1 ( e7 / 定め_た
+             :arg0 ( JR西日本 / -entity-
+                    :name ( n14 / name
+                           :op1 "JR西日本"))
+             :arg1 ( x2 / 愛称路線名
+                    :など ( X5 / AND
+                           :op1 ( JR京都線 / -entity-
+                                  :name ( n11 / name
+                                         :op1 "JR京都線"))
+                           :op2 ( JR神戸線 / -entity-
+                                  :name ( n12 / name
+                                         :op1 "JR神戸線"))))
+             :に ( x3 / 各路線
+                    :の ( x1 / アーバンネットワーク))
+             :で ( x4 / 改正
+                    :time ( t6 / CD_1988_年_3_月_13_日))
+             :tense past)
+      :op2 ( e8 / 見送ら_た
+             :arg1 ( x9 / -xxx-
+                    :について ( 奈良線 / -entity-
+                           :name ( n13 / name
+                                  :op1 "奈良線"))
+                    :mode definite)
+             :tense past))
+
+# ::id 13_wikipedia_KYOTO_RLW_00004,24;NJ
+# ::snt 近畿日本鉄道 に も 近鉄奈良線 が ある ため 、 「 JR奈良線 」 と 案内 さ れる こと も ある 。
+( e3 / ある
+      :arg0 ( x4 / pro)
+      :arg1 ( s6 / こと
+             :THAT ( e2 / 案内_さ
+                    :arg1 x4
+                    :arg2 ( JR奈良線 / -entity-
+                           :name ( n9 / name
+                                  :op1 "JR奈良線"))))
+      :LINK ( s5 / ため
+             :THAT ( e1 / ある
+                    :arg0 ( 近鉄奈良線 / -entity-
+                           :name ( n7 / name
+                                  :op1 "近鉄奈良線"))
+                    :に ( 近畿日本鉄道 / -entity-
+                           :name ( n8 / name
+                                  :op1 "近畿日本鉄道")))))
+
+# ::id 14_wikipedia_KYOTO_RLW_00004,25;NJ
+# ::snt 日本国有鉄道 時代 に は 「 国鉄奈良線 」 と 案内 さ れ て おり 、 案内板 の 英字 表記 も 「 JNR 」 を 入れ て い た 。
+( e6 / 入れ_て_い_た
+      :arg0 ( x7 / pro
+             :arg1-of ( e5 / 案内_さ_て_おり
+                    :arg2 ( 国鉄奈良線 / -entity-
+                           :name ( n9 / name
+                                  :op1 "国鉄奈良線"))
+                    :に ( x1 / 日本国有鉄道_時代
+                           :mode definite)))
+      :arg1 ( x3 / JNR)
+      :TOPIC ( x4 / 英字_表記
+             :の ( x2 / 案内板))
+      :tense past)
+
+# ::id 15_wikipedia_KYOTO_RLW_00004,26;NJ
+# ::snt 近鉄奈良線 は 難波 ～ 奈良 で 大和路線 と 対抗 関係 に あり 、 JR奈良線 が 対抗 関係 に ある の は 近鉄京都線 で ある 。
+( r9 / AND
+      :op1 ( e6 / あり
+             :arg0 ( 近鉄奈良線 / -entity-
+                    :name ( n13 / name
+                           :op1 "近鉄奈良線"))
+             :に ( x4 / 対抗_関係
+                    :と ( 大和路線 / -entity-
+                           :name ( n11 / name
+                                  :op1 "大和路線")))
+             :で ( X5 / AND
+                    :op1 ( 難波 / -entity-
+                           :name ( n9 / name
+                                  :op1 "難波"))
+                    :op2 ( 奈良 / -entity-
+                           :name ( n10 / name
+                                  :op1 "奈良"))))
+      :op2 ( e7 / で_ある
+             :arg0 ( x2 / の
+                    :mode definite
+                    :arg0-of ( e3 / ある
+                           :arg0 ( JR奈良線 / -entity-
+                                  :name ( n12 / name
+                                         :op1 "JR奈良線"))
+                           :に ( x1 / 対抗_関係)))
+             :arg1 ( 近鉄京都線 / -entity-
+                    :name ( n14 / name
+                           :op1 "近鉄京都線"))))
+
+# ::id 16_wikipedia_KYOTO_RLW_00004,27;NJ
+# ::snt 並行 する 京阪宇治線 や 近鉄京都線 は 以前 から 多数 の 列車 が 運行 さ れ て い た の に対し 、 奈良線 は 国鉄 末期 の 1984 年 まで 鉄道 の 電化 が さ れ ず 、 電化 後 も 国鉄 民営化 まで の しばらく は 国鉄 105系 電車 の 2 両 編成 など が 細々 と 走る 小さな ローカル線 で しか なかっ た 。
+( r31 / て
+      :op1 ( e17 / さ
+             :arg0 ( x10 / 電化
+                    :の ( x9 / 鉄道))
+             :arg1 ( 奈良線 / -entity-
+                    :name ( n28 / name
+                           :op1 "奈良線"))
+             :まで ( t14 / -time-
+                    :card ( m33 / 1984_年)
+                    :の ( x8 / 国鉄_末期))
+             :polarity -)
+      :op2 ( e20 / なかっ_た
+             :arg0 奈良線
+             :arg1 ( e19 / で
+                    :arg0 奈良線
+                    :arg1 ( x13 / ローカル線
+                           :ATTRIBUTE ( A27 / 小さな)
+                           :location-of ( e18 / 走る
+                                  :arg0 ( x25 / -xxx-
+                                         :など ( x12 / 編成
+                                                :card ( m32 / 2_両)
+                                                :の ( x11 / 国鉄_105系_電車)))
+                                  :と ( e26 / 細々))))
+             :MSR ( d4 / しばらく
+                    :まで_の ( x2 / 国鉄_民営化)
+                    :mode definite)
+             :time ( t15 / 電化_後)
+             :に対し ( s21 / の
+                    :THAT ( e16 / 運行_さ_て_い_た
+                           :arg0 ( x6 / 列車)
+                           :arg1 ( x1 / や
+                                  :op1 ( 京阪宇治線 / -entity-
+                                         :name ( n29 / name
+                                                :op1 "京阪宇治線"))
+                                  :op2 ( 近鉄京都線 / -entity-
+                                         :name ( n30 / name
+                                                :op1 "近鉄京都線"))
+                                  :mode definite
+                                  :arg0-of ( e5 / 並行_する))
+                           :から ( x7 / 以前)
+                           :tense past))
+             :tense past))
+
+# ::id 17_wikipedia_KYOTO_RLW_00004,28;NJ
+# ::snt しかし 、 JR西日本 が 発足 し て 以降 に アーバンネットワーク の 中 に 当線 を 組み込ん で から は 、 列車 の 4 両 編成化 （ 一部 は 6 両 編成 ） 、 部分 複線化 、 「 みやこ路快速 」 など の 快速 列車 を 始め と する 列車 の 増発 など 、 急速 に 輸送 改善 が 図ら れ た 。
+( e21 / 図ら_た
+      :arg1 ( x14 / 輸送_改善
+             :など ( X15 / AND
+                    :op1 ( x5 / 編成化
+                           :card ( m29 / 4_両)
+                           :の ( x4 / 列車)
+                           :arg0-of ( e17 / is
+                                  :arg1 ( x3 / -entity-
+                                         :THAT ( e16 / xxx
+                                                :arg0 ( x1 / 一部
+                                                       :mode definite)
+                                                :arg1 ( x2 / 編成
+                                                       :card ( m30 / 6_両))))))
+                    :op2 ( x6 / 部分_複線化)
+                    :op3 ( x10 / 増発
+                           :の ( x9 / 列車
+                                  :arg0-of ( e18 / する
+                                         :arg1 ( x8 / 快速_列車
+                                                :の ( x23 / -xxx-
+                                                       :など ( みやこ路快速 / -entity-
+                                                              :name ( n27 / name
+                                                                     :op1 "みやこ路快速"))))
+                                         :arg2 ( x7 / 始め))))))
+      :で_から ( r27 / て_以降_に
+             :op1 ( e19 / 発足_し
+                    :arg0 ( JR西日本 / -entity-
+                           :name ( n26 / name
+                                  :op1 "JR西日本")))
+             :op2 ( e20 / 組み込ん
+                    :arg0 ( x25 / pro)
+                    :arg1 ( x12 / 当線)
+                    :に ( x13 / 中
+                           :の ( x11 / アーバンネットワーク))))
+      :tense past
+      :mod ( m31 / 急速_に))
+
+# ::id 18_wikipedia_KYOTO_RLW_00004,29;NJ
+# ::snt 現在 で は 、 沿線 に ある 宇治市 の 平等院 など へ の 観光 や 、 城陽市 など 京都府 南 部 地域 から の 通勤 ・ 通学 路線 として の 性格 が 強く なっ て いる 。
+( e12 / 強く_なっ_て_いる
+      :arg0 ( X10 / や
+             :op1 ( x3 / 観光
+                    :へ_の ( x13 / -xxx-
+                           :など ( 平等院 / xxx
+                                  :name ( n16 / name
+                                         :op1 "平等院")
+                                  :の ( 宇治市 / -entity-
+                                         :name ( n15 / name
+                                                :op1 "宇治市"))
+                                  :arg0-of ( e11 / ある
+                                         :に ( x2 / 沿線)))))
+             :op2 ( x8 / 性格
+                    :として_の ( x7 / AND
+                           :op1 ( x4 / 通勤)
+                           :op2 ( x5 / 通学)
+                           :から_の ( x6 / 京都府_南_部_地域
+                                  :など ( 城陽市 / -entity-
+                                         :name ( n17 / name
+                                                :op1 "城陽市"))))))
+      :で ( x1 / 現在
+             :mode definite))
+
+# ::id 19_wikipedia_KYOTO_RLW_00004,30;NJ
+# ::snt しかし 桃山 ～ 新田 間 で 東 側 に 大きく 迂回 する 形 と なっ て おり 、 城陽 以南 は 町 の 中心 部 の 外れ を 走る ので 並行 する 近鉄京都線 と は 京奈 間 ・ 地域 輸送 共に まだ 格差 が ある 。
+( r26 / ので
+      :op1 ( e16 / 走る
+             :arg0 ( x18 / pro
+                    :arg0-of ( e15 / なっ_て_おり
+                           :と ( s19 / 形
+                                  :THAT ( e14 / 迂回_する
+                                         :arg0 ( x20 / pro)
+                                         :に ( x3 / 東_側)
+                                         :で ( t12 / 間
+                                                :EQUALS ( X10 / AND
+                                                       :op1 ( 桃山 / -entity-
+                                                              :name ( n23 / name
+                                                                     :op1 "桃山"))
+                                                       :op2 ( 新田 / -entity-
+                                                              :name ( n24 / name
+                                                                     :op1 "新田"))))
+                                         :mod ( m27 / 大きく)))))
+             :arg1 ( x6 / 外れ
+                    :の ( x5 / 中心_部
+                           :の ( x4 / 町)))
+             :location ( x1 / 城陽_以南
+                    :mode definite))
+      :op2 ( e17 / ある
+             :arg0 ( x8 / 格差)
+             :arg0 x18
+             :circumstance ( x9 / -state-
+                    :quantifier ( A22 / 共に)
+                    :EQUALS ( X11 / AND
+                           :op1 ( t13 / 京奈_間)
+                           :op2 ( x7 / 地域_輸送)))
+             :と ( 近鉄京都線 / -entity-
+                    :name ( n25 / name
+                           :op1 "近鉄京都線")
+                    :に-of ( e2 / 並行_する))
+             :mod ( m28 / まだ)))
+
+# ::id 20_wikipedia_KYOTO_RLW_00004,31;NJ
+# ::snt 車両 は 大阪支社 の 奈良電 車区 の もの を 使用 する が 、 駅 設備 面 など は 木津駅 を 除き 京都支社 が 管理 し て いる 。
+( r13 / が
+      :op1 ( e5 / 使用_する
+             :arg0 ( x9 / pro)
+             :arg1 ( x3 / もの
+                    :の ( x2 / 奈良電_車区
+                           :の ( 大阪支社 / -entity-
+                                  :name ( n12 / name
+                                         :op1 "大阪支社"))))
+             :TOPIC ( x1 / 車両
+                    :mode definite))
+      :op2 ( e7 / 管理_し_て_いる
+             :arg0 ( 京都支社 / -entity-
+                    :name ( n14 / name
+                           :op1 "京都支社"))
+             :arg1 ( x10 / -xxx-
+                    :など ( x4 / 駅_設備_面)
+                    :mode definite
+                    :arg0-of ( e6 / 除き
+                           :arg1 ( 木津駅 / -entity-
+                                  :name ( n13 / name
+                                         :op1 "木津駅"))))))
+
+# ::id 21_wikipedia_KYOTO_RLW_00004,32;NJ
+# ::snt 全駅 で Jスルー ・ ICOCA 、 および 東日本旅客鉄道 （ JR東日本 ） の Suica 、 東海旅客鉄道 （ JR東海 ） の TOICA 、 また スルッとKANSAI の PiTaPa が 使用 できる 。
+( e5 / 使用_できる
+      :arg0 ( x6 / pro)
+      :arg1 ( X2 / および_また
+             :op1 ( Jスルー / -entity-
+                    :name ( n11 / name
+                           :op1 "Jスルー"))
+             :op2 ( ICOCA / -entity-
+                    :name ( n12 / name
+                           :op1 "ICOCA"))
+             :op3 ( Suica / xxx
+                    :name ( n13 / name
+                           :op1 "Suica")
+                    :の ( 東日本旅客鉄道 / -entity-
+                           :name ( n8 / name
+                                  :op1 "東日本旅客鉄道")
+                           :arg0-of ( e3 / is
+                                  :arg1 ( JR東日本 / -entity-
+                                         :name ( n16 / name
+                                                :op1 "JR東日本")))))
+             :op4 ( TOICA / xxx
+                    :name ( n14 / name
+                           :op1 "TOICA")
+                    :の ( 東海旅客鉄道 / -entity-
+                           :name ( n9 / name
+                                  :op1 "東海旅客鉄道")
+                           :arg0-of ( e4 / is
+                                  :arg1 ( JR東海 / -entity-
+                                         :name ( n17 / name
+                                                :op1 "JR東海")))))
+             :op5 ( PiTaPa / xxx
+                    :name ( n15 / name
+                           :op1 "PiTaPa")
+                    :の ( スルッとKANSAI / -entity-
+                           :name ( n10 / name
+                                  :op1 "スルッとKANSAI"))))
+      :で ( x1 / 駅
+             :quantifier ( A7 / 全)))
+
+# ::id 22_wikipedia_KYOTO_RLW_00004,33;NJ
+# ::snt なお 城陽駅 以南 で は 無人駅 も 混在 する ため 簡易 改札 と なる 。
+( e5 / なる
+      :arg0 ( x6 / pro)
+      :と ( x3 / 簡易_改札)
+      :LINK ( s8 / ため
+             :THAT ( e4 / 混在_する
+                    :arg0 ( x2 / 無人駅)))
+      :で ( x1 / 城陽駅_以南
+             :mode definite))
+
+# ::id 23_wikipedia_KYOTO_RLW_00004,34;NJ
+# ::snt 運行 形態
+( x1 / 運行_形態)
+
+# ::id 24_wikipedia_KYOTO_RLW_00004,35;NJ
+# ::snt 1984 年 に 京都 ～ 和歌山駅 間 を 奈良線 ・ 桜井線 ・ 和歌山線 経由 で 結ん で い た 急行 列車 「 くろしお （ 列車 ） 」 が 廃止 さ れ て 以来 、 1991 年 まで は 普通 列車 のみ の 運転 だっ た （ 特急 の よう に 、 一時期 臨時 で 特別 急行 列車 が 運転 さ れ た こと が ある ） が 、 今 で は みやこ路快速 、 快速 列車 、 列車 種別 区間 種別 、 普通 列車 の 4 種類 の 種別 が 運転 さ れ て いる 。
+( r37 / AND
+      :op1 ( r42 / が
+             :op1 ( r43 / て_以来
+                    :op1 ( e28 / 廃止_さ
+                           :arg1 ( くろしお / -entity-
+                                  :name ( n43 / name
+                                         :op1 "くろしお")
+                                  :arg0-of ( e25 / 結ん_で_い_た
+                                         :arg1 ( t22 / 間
+                                                :EQUALS ( X17 / AND
+                                                       :op1 ( 京都 / -entity-
+                                                              :name ( n37 / name
+                                                                     :op1 "京都"))
+                                                       :op2 ( 和歌山駅 / -entity-
+                                                              :name ( n38 / name
+                                                                     :op1 "和歌山駅"))))
+                                         :で ( x3 / 経由
+                                                :EQUALS ( X18 / AND
+                                                       :op1 ( 奈良線 / -entity-
+                                                              :name ( n39 / name
+                                                                     :op1 "奈良線"))
+                                                       :op2 ( 桜井線 / -entity-
+                                                              :name ( n40 / name
+                                                                     :op1 "桜井線"))
+                                                       :op3 ( 和歌山線 / -entity-
+                                                              :name ( n41 / name
+                                                                     :op1 "和歌山線"))))
+                                         :に ( t23 / CD_1984_年)
+                                         :tense past)
+                                  :arg0-of ( e26 / is
+                                         :arg1 ( x4 / 急行_列車))
+                                  :arg0-of ( e27 / is
+                                         :arg1 ( x5 / 列車))))
+                    :op2 ( e29 / だっ_た
+                           :arg0 ( x33 / pro)
+                           :arg1 ( x7 / 運転
+                                  :の ( x6 / 普通_列車))
+                           :まで ( t2 / CD_1991_年)
+                           :tense past))
+             :op2 ( e30 / 運転_さ_て_いる
+                    :arg1 ( x12 / 種別
+                           :の ( x11 / -xxx-
+                                  :card ( m44 / 4_種類)
+                                  :の ( X20 / AND
+                                         :op1 ( みやこ路快速 / -entity-
+                                                :name ( n42 / name
+                                                       :op1 "みやこ路快速"))
+                                         :op2 ( x8 / 快速_列車)
+                                         :op3 ( X19 / AND
+                                                :op1 ( x9 / 列車_種別)
+                                                :op2 ( t24 / 区間_種別))
+                                         :op4 ( x10 / 普通_列車))))
+                    :で ( x1 / 今
+                           :mode definite)))
+      :op2 ( e32 / ある
+             :arg0 ( s35 / こと
+                    :THAT ( e31 / 運転_さ_た
+                           :arg1 ( x14 / 急行_列車
+                                  :ATTRIBUTE ( A36 / 特別))
+                           :で ( x13 / 臨時)
+                           :MSR ( d21 / 一時期)
+                           :tense past))
+             :に ( x16 / よう
+                    :の ( x15 / 特急))))
+
+# ::id 25_wikipedia_KYOTO_RLW_00004,36;NJ
+# ::snt 列車 種別
+( x1 / 列車_種別)
+
+# ::id 26_wikipedia_KYOTO_RLW_00004,37;NJ
+# ::snt みやこ路快速
+( みやこ路快速 / -entity-
+      :name ( n2 / name
+             :op1 "みやこ路快速"))
+
+# ::id 27_wikipedia_KYOTO_RLW_00004,38;NJ
+# ::snt 奈良線 の 最速達 の 種別 で あり 昼間 を 中心 に 運転 さ れる 。
+( e6 / 運転_さ
+      :arg1 ( x7 / pro
+             :arg0-of ( e5 / で_あり
+                    :arg1 ( x2 / 種別
+                           :の ( x1 / 最速達)
+                           :の ( 奈良線 / -entity-
+                                  :name ( n8 / name
+                                         :op1 "奈良線")))))
+      :に ( x3 / 中心
+             :を ( t4 / 昼間)))
+
+# ::id 28_wikipedia_KYOTO_RLW_00004,39;NJ
+# ::snt 基本的 に 30 分 間隔 の 運転 で 宇治駅 で 普通 列車 と 緩急 接続 を 行う 。
+( r9 / て
+      :op1 ( e5 / で
+             :arg0 ( x7 / pro)
+             :arg1 ( x2 / 運転
+                    :の ( x1 / 間隔
+                           :card ( m10 / 30_分)))
+             :mod ( m11 / 基本的_に))
+      :op2 ( e6 / 行う
+             :arg0 x7
+             :arg1 ( x3 / 緩急_接続)
+             :と ( x4 / 普通_列車)
+             :で ( 宇治駅 / -entity-
+                    :name ( n8 / name
+                           :op1 "宇治駅"))))
+
+# ::id 29_wikipedia_KYOTO_RLW_00004,40;NJ
+# ::snt 「 みやこ路快速 」 の 愛称 は 運行 開始 前 に 一般 公募 により 決定 し た 。
+( e4 / 決定_し_た
+      :arg0 ( x1 / 愛称
+             :の ( みやこ路快速 / -entity-
+                    :name ( n6 / name
+                           :op1 "みやこ路快速"))
+             :mode definite)
+      :により ( x2 / 一般_公募)
+      :に ( x3 / 運行_開始_前)
+      :tense past)
+
+# ::id 30_wikipedia_KYOTO_RLW_00004,41;NJ
+# ::snt 観光地 で ある 京都 と 奈良 を 結ぶ 列車 として 、 日本人 だけでなく 外国人 観光客 の 利用 も 多い 。
+( e11 / 多い
+      :arg0 ( x6 / 利用
+             :の ( X7 / だけでなく
+                    :op1 ( x1 / 日本人)
+                    :op2 ( x2 / 外国人_観光客)))
+      :として ( x5 / 列車
+             :arg0-of ( e10 / 結ぶ
+                    :arg1 ( x4 / と
+                           :op1 ( 京都 / -entity-
+                                  :name ( n12 / name
+                                         :op1 "京都"))
+                           :op2 ( 奈良 / -entity-
+                                  :name ( n13 / name
+                                         :op1 "奈良"))
+                           :arg0-of ( e9 / で_ある
+                                  :arg1 ( x3 / 観光地))))))
+
+# ::id 31_wikipedia_KYOTO_RLW_00004,42;NJ
+# ::snt 車両 は 全列車 JR西日本 221系 電車 で 、 4 両 編成 または 6 両 編成 で 運転 さ れる 。
+( r12 / て
+      :op1 ( e7 / で
+             :arg0 ( x1 / 車両
+                    :mode definite)
+             :arg0 ( x3 / 全列車)
+             :arg1 ( x2 / JR西日本_221系_電車))
+      :op2 ( e8 / 運転_さ
+             :arg1 x1
+             :で ( X6 / または
+                    :op1 ( x4 / 編成
+                           :card ( m13 / 4_両))
+                    :op2 ( x5 / 編成
+                           :card ( m14 / 6_両)))))
+
+# ::id 32_wikipedia_KYOTO_RLW_00004,43;NJ
+# ::snt 複線 区間 で は 最高速度 が 110 km/h で 運転 さ れ 、 それ 以外 で は 95 km/h で ある 。
+( e8 / で_ある
+      :arg0 ( x9 / pro
+             :arg0-of ( e6 / で
+                    :arg0 ( x4 / 最高速度)
+                    :arg1 ( x3 / CD_110_km__slash__h)
+                    :op1-of ( r13 / て
+                           :op2 ( e7 / 運転_さ
+                                  :arg1 x9
+                                  :で ( t2 / 複線_区間
+                                         :mode definite)))))
+      :arg1 ( x5 / CD_95_km__slash__h)
+      :で ( x1 / それ_以外
+             :mode definite))
+
+# ::id 33_wikipedia_KYOTO_RLW_00004,44;NJ
+# ::snt 標準 所要 時間 は 京都 発 奈良 行 が 約44 分 、 奈良 発 京都 行 が 約47 分 で ある 。
+( e11 / で_ある
+      :arg0 ( t1 / 標準_所要_時間
+             :mode definite
+             :arg0-of ( e10 / xxx
+                    :arg0 ( X8 / AND
+                           :op1 ( x2 / 京都_発)
+                           :op2 ( x3 / 奈良_行))
+                    :arg1 ( x4 / CD_約44_分)))
+      :arg0 ( X9 / AND
+             :op1 ( x5 / 奈良_発)
+             :op2 ( x6 / 京都_行))
+      :arg1 ( x7 / CD_約47_分))
+
+# ::id 34_wikipedia_KYOTO_RLW_00004,45;NJ
+# ::snt 京都 行き は 途中 上狛駅 もしくは 棚倉駅 に 2 分 ほど 運転停車 し 、 奈良 行 の みやこ路快速 と 行き違う ため 、 上り と 下り と で 所要 時間 に 若干 差 が ある 。
+( e13 / ある
+      :arg0 ( x7 / 若干_差)
+      :arg0 ( x1 / 京都_行き
+             :mode definite)
+      :に ( t10 / 所要_時間)
+      :で ( x16 / -xxx-
+             :と ( X9 / と
+                    :op1 ( x5 / 上り)
+                    :op2 ( x6 / 下り)))
+      :LINK ( s15 / ため
+             :THAT ( r18 / AND
+                    :op1 ( e11 / 運転停車_し
+                           :arg0 x1
+                           :ほど ( x2 / CD_2_分)
+                           :に ( X8 / もしくは
+                                  :op1 ( 上狛駅 / -entity-
+                                         :name ( n18 / name
+                                                :op1 "上狛駅"))
+                                  :op2 ( 棚倉駅 / -entity-
+                                         :name ( n19 / name
+                                                :op1 "棚倉駅"))))
+                    :op2 ( e12 / 行き違う
+                           :arg0 x1
+                           :と ( みやこ路快速 / xxx
+                                  :name ( n17 / name
+                                         :op1 "みやこ路快速")
+                                  :の ( x3 / 奈良_行))
+                           :circumstance ( x4 / 途中)))))
+
+# ::id 35_wikipedia_KYOTO_RLW_00004,46;NJ
+# ::snt 正月 三が日 の 間 は 伏見稲荷 へ の 参詣客 の ため 稲荷駅 に 臨時 停車 する 。
+( e6 / 停車_する
+      :arg0 ( x7 / pro)
+      :circumstance ( x4 / 臨時)
+      :に ( 稲荷駅 / -entity-
+             :name ( n10 / name
+                    :op1 "稲荷駅"))
+      :circumstance ( x5 / ため
+             :の ( x3 / 参詣客
+                    :へ_の ( 伏見稲荷 / -entity-
+                           :name ( n9 / name
+                                  :op1 "伏見稲荷"))))
+      :MSR ( t2 / 間
+             :の ( t1 / 正月_三が日)
+             :mode definite))
+
+# ::id 36_wikipedia_KYOTO_RLW_00004,50;NJ
+# ::snt 快速
+( x1 / 快速)
+
+# ::id 37_wikipedia_KYOTO_RLW_00004,51;NJ
+# ::snt 朝夕 ラッシュ 時 に 運転 さ れる 。
+( e2 / 運転_さ
+      :arg1 ( x3 / pro)
+      :に ( x1 / 朝夕_ラッシュ_時))
+
+# ::id 38_wikipedia_KYOTO_RLW_00004,52;NJ
+# ::snt 「 みやこ路快速 」 が 通過 する JR小倉駅 、 新田駅 （ 京都府 ） に も 停車 する 。
+( e5 / 停車_する
+      :arg0 ( x6 / pro)
+      :に ( x1 / AND
+             :op1 ( JR小倉駅 / -entity-
+                    :name ( n7 / name
+                           :op1 "JR小倉駅"))
+             :op2 ( 新田駅 / -entity-
+                    :name ( n8 / name
+                           :op1 "新田駅"))
+             :arg1-of ( e3 / 通過_する
+                    :arg0 ( みやこ路快速 / -entity-
+                           :name ( n9 / name
+                                  :op1 "みやこ路快速")))
+             :arg0-of ( e4 / is
+                    :arg1 ( 京都府 / -entity-
+                           :name ( n10 / name
+                                  :op1 "京都府")))))
+
+# ::id 39_wikipedia_KYOTO_RLW_00004,53;NJ
+# ::snt 車両 は 全列車 221系 で 運転 さ れ 、 4 両 編成 または 6 両 編成 で 運転 さ れる 。
+( e8 / 運転_さ
+      :arg1 ( x5 / 全列車
+             :arg1-of ( e7 / 運転_さ
+                    :で ( x2 / 221系)))
+      :で ( X6 / または
+             :op1 ( x3 / 編成
+                    :card ( m12 / 4_両))
+             :op2 ( x4 / 編成
+                    :card ( m13 / 6_両)))
+      :TOPIC ( x1 / 車両
+             :mode definite))
+
+# ::id 40_wikipedia_KYOTO_RLW_00004,54;NJ
+# ::snt 基本的 に 30 分 間隔 の 運転 で 宇治駅 で 普通 列車 と 緩急 接続 を 行う 。
+( r9 / て
+      :op1 ( e5 / で
+             :arg0 ( x7 / pro)
+             :arg1 ( x2 / 運転
+                    :の ( x1 / 間隔
+                           :card ( m10 / 30_分)))
+             :mod ( m11 / 基本的_に))
+      :op2 ( e6 / 行う
+             :arg0 x7
+             :arg1 ( x3 / 緩急_接続)
+             :と ( x4 / 普通_列車)
+             :で ( 宇治駅 / -entity-
+                    :name ( n8 / name
+                           :op1 "宇治駅"))))
+
+# ::id 41_wikipedia_KYOTO_RLW_00004,55;NJ
+# ::snt 上記 の みやこ路快速 と 同様 、 大和路線 の 快速 が 停車 する 平城山駅 は 通過 する 。
+( e4 / 通過_する
+      :arg0 ( x5 / pro)
+      :arg1 ( 平城山駅 / -entity-
+             :name ( n8 / name
+                    :op1 "平城山駅")
+             :location-of ( e2 / 停車_する
+                    :arg0 ( x1 / 快速
+                           :の ( 大和路線 / -entity-
+                                  :name ( n7 / name
+                                         :op1 "大和路線")))))
+      :mod ( m7 / 同様)
+      :と ( みやこ路快速 / xxx
+             :name ( n6 / name
+                    :op1 "みやこ路快速")
+             :の ( x3 / 上記)))
+
+# ::id 42_wikipedia_KYOTO_RLW_00004,56;NJ
+# ::snt 「 みやこ路快速 」 が 登場 する 2001 年 3 月 まで の 停車駅 は 京都 ・ 宇治 ・ 城陽 （ 設定 当初 は 通過 ） ・ 木津 ・ 奈良 で 、 車両 に は 国鉄 117系 電車 が 使用 さ れ て い た が 、 以後 は 奈良線 で は 使用 さ れ て い ない 。
+( r23 / が
+      :op1 ( r24 / て
+             :op1 ( e12 / で
+                    :arg0 ( x2 / 停車駅
+                           :mode definite
+                           :まで_の ( x1 / -xxx-
+                                  :card ( m25 / 2001_年_3_月)
+                                  :time-of ( e6 / 登場_する
+                                         :arg0 ( みやこ路快速 / -entity-
+                                                :name ( n25 / name
+                                                       :op1 "みやこ路快速")))))
+                    :arg1 ( X9 / AND
+                           :op1 ( 京都 / -entity-
+                                  :name ( n20 / name
+                                         :op1 "京都"))
+                           :op2 ( 宇治 / -entity-
+                                  :name ( n21 / name
+                                         :op1 "宇治"))
+                           :op3 ( 城陽 / -entity-
+                                  :name ( n22 / name
+                                         :op1 "城陽")
+                                  :arg0-of ( e11 / is
+                                         :arg1 ( x7 / -entity-
+                                                :THAT ( e10 / 通過
+                                                       :time ( t4 / 設定_当初
+                                                              :mode definite)))))
+                           :op4 ( 木津 / -entity-
+                                  :name ( n23 / name
+                                         :op1 "木津"))
+                           :op5 ( 奈良 / -entity-
+                                  :name ( n24 / name
+                                         :op1 "奈良"))))
+             :op2 ( e13 / 使用_さ_て_い_た
+                    :arg1 ( x8 / 国鉄_117系_電車)
+                    :に ( x3 / 車両
+                           :mode definite)
+                    :tense past))
+      :op2 ( e14 / 使用_さ_て_い
+             :arg1 ( x18 / pro)
+             :で ( 奈良線 / -entity-
+                    :name ( n26 / name
+                           :op1 "奈良線"))
+             :time ( t5 / 以後
+                    :mode definite)
+             :polarity -))
+
+# ::id 43_wikipedia_KYOTO_RLW_00004,57;NJ
+# ::snt 朝夕 は 運用 の 都合 上 で 大和路線 と 直通 する 列車 が ある 。
+( e6 / ある
+      :arg0 ( x4 / 列車
+             :arg0-of ( e5 / 直通_する
+                    :と ( 大和路線 / -entity-
+                           :name ( n8 / name
+                                  :op1 "大和路線"))))
+      :で ( x3 / 都合_上
+             :の ( x2 / 運用))
+      :time ( t1 / 朝夕
+             :mode definite))
+
+# ::id 44_wikipedia_KYOTO_RLW_00004,58;NJ
+# ::snt 区間 快速
+( t1 / 区間_快速)
+
+# ::id 45_wikipedia_KYOTO_RLW_00004,59;NJ
+# ::snt 朝 と 夜間 を 中心 に 運転 さ れる 。
+( e6 / 運転_さ
+      :arg1 ( x7 / pro
+             :arg0-of ( e5 / xxx
+                    :に ( x2 / 中心)
+                    :を ( X3 / と
+                           :op1 ( x1 / 朝)
+                           :op2 ( t4 / 夜間)))))
+
+# ::id 46_wikipedia_KYOTO_RLW_00004,60;NJ
+# ::snt 当初 は 平日 のみ だっ た が 、 2006 年 3 月 18 日 の ダイヤ 改正 から 土曜 ・ 休日 に も 運転 さ れる よう に なっ た 。
+( r17 / が
+      :op1 ( e8 / だっ_た
+             :arg0 ( x11 / pro)
+             :arg1 ( t6 / 平日)
+             :time ( t1 / 当初
+                    :mode definite)
+             :tense past)
+      :op2 ( e10 / なっ_た
+             :arg0 ( x13 / pro)
+             :に ( s14 / よう
+                    :THAT ( e9 / 運転_さ
+                           :arg1 x13
+                           :に ( X5 / AND
+                                  :op1 ( x3 / 土曜)
+                                  :op2 ( t7 / 休日))))
+             :から ( x4 / ダイヤ_改正
+                    :の ( x2 / CD_2006_年_3_月_18_日))
+             :tense past))
+
+# ::id 47_wikipedia_KYOTO_RLW_00004,61;NJ
+# ::snt 宇治 ～ 奈良 間 は 各駅 に 停車 する が 、 かつて は 深夜 など に 行き 違い の 関係 で 宇治駅 で 普通 を 追い抜く 木津 方面 行き の 区間 快速 が あっ た が 、 現在 は 区間 快速 の 前 を 走る 普通 は そのまま 終着駅 まで 逃げ切る ダイヤ に 変更 さ れ て いる 。
+( r31 / が
+      :op1 ( r32 / が
+             :op1 ( e16 / 停車_する_た
+                    :arg0 ( x21 / pro)
+                    :に ( x8 / 駅
+                           :quantifier ( A23 / 各))
+                    :location ( t4 / 間
+                           :EQUALS ( X3 / AND
+                                  :op1 ( 宇治 / -entity-
+                                         :name ( n30 / name
+                                                :op1 "宇治"))
+                                  :op2 ( 奈良 / -entity-
+                                         :name ( n31 / name
+                                                :op1 "奈良")))
+                           :mode definite)
+                    :tense past)
+             :op2 ( e18 / あっ_た
+                    :arg0 ( t15 / 区間_快速
+                           :の ( x12 / 木津_方面_行き)
+                           :arg0-of ( e17 / 追い抜く
+                                  :arg1 ( x10 / 普通)
+                                  :で ( 宇治駅 / -entity-
+                                         :name ( n29 / name
+                                                :op1 "宇治駅"))
+                                  :で ( x11 / 関係
+                                         :の ( x9 / 行き_違い))))
+                    :に ( x24 / -xxx-
+                           :など ( x13 / 深夜))
+                    :tense past
+                    :mod ( m33 / かつて_は)))
+      :op2 ( e20 / 変更_さ_て_いる
+             :arg1 ( x25 / pro)
+             :に ( s27 / ダイヤ
+                    :THAT ( e19 / 逃げ切る
+                           :arg0 ( x2 / 普通
+                                  :mode definite
+                                  :arg0-of ( e7 / 走る
+                                         :を ( x1 / 前
+                                                :の ( t5 / 区間_快速))))
+                           :まで ( x14 / 終着駅)
+                           :mod ( m34 / そのまま)))
+             :time ( t6 / 現在
+                    :mode definite)))
+
+# ::id 48_wikipedia_KYOTO_RLW_00004,62;NJ
+# ::snt 土曜 ・ 休日 の 20 時 台 の 京都 発 の 1 本 に 国鉄 103系 電車 を 使用 する 列車 が ある ほか は すべて 221系 で の 運転 で ある 。
+( e14 / で_ある
+      :arg0 ( x9 / -xxx-
+             :quantifier ( A15 / すべて))
+      :arg1 ( x8 / 運転
+             :で_の ( x7 / 221系))
+      :circumstance ( s16 / ほか
+             :THAT ( e13 / ある
+                    :arg0 ( x6 / 列車
+                           :arg0-of ( e12 / 使用_する
+                                  :arg1 ( x1 / 国鉄_103系_電車)))
+                    :に ( x5 / -xxx-
+                           :card ( m19 / 1_本)
+                           :の ( x3 / 京都_発)
+                           :の ( x4 / 台
+                                  :card ( m20 / 20_時)
+                                  :の ( X10 / AND
+                                         :op1 ( x2 / 土曜)
+                                         :op2 ( t11 / 休日)))))))
+
+# ::id 49_wikipedia_KYOTO_RLW_00004,63;NJ
+# ::snt 朝 ラッシュ 時 に は 運用 上 の 都合 で 大和路線 から 直通 する 列車 が ある 。
+( e6 / ある
+      :arg0 ( x4 / 列車
+             :arg0-of ( e5 / 直通_する
+                    :から ( 大和路線 / -entity-
+                           :name ( n8 / name
+                                  :op1 "大和路線"))))
+      :で ( x3 / 都合
+             :の ( x2 / 運用_上))
+      :に ( x1 / 朝_ラッシュ_時
+             :mode definite))
+
+# ::id 50_wikipedia_KYOTO_RLW_00004,64;NJ
+# ::snt 奈良線 の 区間 快速 は 大和路線 区間 快速 と の 誤乗 防止 を 図る ため 、 「 みやこ路快速 」 や 快速 と 同じ 橙色 の 文字色 を ライン カラー として 使用 し て い た が 、 2008 年 3 月 の ダイヤ 改正 に伴う 種別幕 の 交換 により 、 区間 快速 の 種別幕 は 緑文字 で 表現 さ れる よう に なり 、 ライン カラー は 使わ れ なく なっ た 。
+( r31 / が
+      :op1 ( e18 / 使用_し_て_い_た
+             :arg0 ( t3 / 区間_快速
+                    :の ( 奈良線 / -entity-
+                           :name ( n29 / name
+                                  :op1 "奈良線"))
+                    :mode definite)
+             :arg1 ( x9 / 文字色
+                    :の ( x7 / 橙色)
+                    :ATTRIBUTE ( A24 / 同じ
+                           :と ( X15 / や
+                                  :op1 ( みやこ路快速 / -entity-
+                                         :name ( n28 / name
+                                                :op1 "みやこ路快速"))
+                                  :op2 ( x6 / 快速))))
+             :として ( x8 / ライン_カラー)
+             :LINK ( s23 / ため
+                    :THAT ( e17 / 図る
+                           :arg0 t3
+                           :arg1 ( x5 / 誤乗_防止
+                                  :と_の ( t16 / 大和路線_区間_快速))))
+             :tense past)
+      :op2 ( r32 / AND
+             :op1 ( e20 / なり
+                    :arg0 ( x1 / 種別幕
+                           :の ( t4 / 区間_快速)
+                           :mode definite)
+                    :arg1 ( s27 / よう
+                           :THAT ( e19 / 表現_さ
+                                  :arg1 x1
+                                  :で ( x13 / 緑文字))))
+             :op2 ( e21 / 使わ_なっ_た
+                    :arg1 ( x2 / ライン_カラー
+                           :mode definite)
+                    :により ( x14 / 交換
+                           :の ( x11 / 種別幕)
+                           :に伴う ( x12 / ダイヤ_改正
+                                  :の ( x10 / CD_2008_年_3_月)))
+                    :tense past)
+             :op3
+             :polarity -))
+
+# ::id 51_wikipedia_KYOTO_RLW_00004,65;NJ
+# ::snt 上狛駅 以北 の 駅 掲示 時刻表 で は 紫文字 で 記載 さ れ て いる 。
+( e4 / 記載_さ_て_いる
+      :arg1 ( x5 / pro)
+      :で ( x3 / 紫文字)
+      :で ( x2 / 駅_掲示_時刻表
+             :の ( x1 / 上狛駅_以北)
+             :mode definite))
+
+# ::id 52_wikipedia_KYOTO_RLW_00004,66;NJ
+# ::snt 普通
+( x1 / 普通)
+
+# ::id 53_wikipedia_KYOTO_RLW_00004,67;NJ
+# ::snt 京都 ～ 宇治 、 城陽 、 奈良 間 で 運転 さ れる 。
+( e4 / 運転_さ
+      :arg1 ( x5 / pro)
+      :で ( t3 / 間
+             :EQUALS ( X2 / AND
+                    :op1 ( 京都 / -entity-
+                           :name ( n9 / name
+                                  :op1 "京都"))
+                    :op2 ( X1 / AND
+                           :op1 ( 宇治 / -entity-
+                                  :name ( n6 / name
+                                         :op1 "宇治"))
+                           :op2 ( 城陽 / -entity-
+                                  :name ( n7 / name
+                                         :op1 "城陽"))
+                           :op3 ( 奈良 / -entity-
+                                  :name ( n8 / name
+                                         :op1 "奈良"))))))
+
+# ::id 54_wikipedia_KYOTO_RLW_00004,68;NJ
+# ::snt 昼間 は 京都 ～ 城陽 間 は 15 分 間隔 で 運転 さ れる が 、 城陽 ～ 木津 間 は 30 分 間隔 と なる 。
+( r18 / が
+      :op1 ( e8 / 運転_さ
+             :arg1 ( x10 / pro)
+             :で ( x6 / 間隔
+                    :card ( m19 / 15_分))
+             :location ( t3 / 間
+                    :EQUALS ( X1 / AND
+                           :op1 ( 京都 / -entity-
+                                  :name ( n15 / name
+                                         :op1 "京都"))
+                           :op2 ( 城陽 / -entity-
+                                  :name ( n16 / name
+                                         :op1 "城陽")))
+                    :mode definite)
+             :time ( t4 / 昼間
+                    :mode definite))
+      :op2 ( e9 / なる
+             :arg0 ( x13 / pro)
+             :と ( x7 / 間隔
+                    :card ( m20 / 30_分))
+             :location ( t5 / 間
+                    :EQUALS ( X2 / AND
+                           :op1 城陽
+                           :op2 ( 木津 / -entity-
+                                  :name ( n17 / name
+                                         :op1 "木津")))
+                    :mode definite)))
+
+# ::id 55_wikipedia_KYOTO_RLW_00004,69;NJ
+# ::snt 車両 は 基本的 に 103系 で 運転 さ れる が 、 一部 221系 で 運転 さ れる 。
+( r10 / が
+      :op1 ( e5 / 運転_さ
+             :arg1 ( x1 / 車両
+                    :mode definite)
+             :で ( x2 / 103系)
+             :mod ( m11 / 基本的_に))
+      :op2 ( e6 / 運転_さ
+             :arg1 ( x8 / pro)
+             :で ( x3 / 221系)
+             :circumstance ( x4 / 一部)))
+
+# ::id 56_wikipedia_KYOTO_RLW_00004,70;NJ
+# ::snt 運用 上 の 都合 で 早朝 ・ 深夜 に 大和路線 と 直通 する 列車 が ある 。
+( e8 / ある
+      :arg0 ( x5 / 列車
+             :arg0-of ( e7 / 直通_する
+                    :と ( 大和路線 / -entity-
+                           :name ( n9 / name
+                                  :op1 "大和路線"))
+                    :に ( X6 / AND
+                           :op1 ( x1 / 早朝)
+                           :op2 ( x2 / 深夜))))
+      :で ( x4 / 都合
+             :の ( x3 / 運用_上)))

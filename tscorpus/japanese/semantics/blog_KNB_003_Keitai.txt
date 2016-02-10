@@ -1,0 +1,169 @@
+# ::id 1_blog_KNB_003_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+∃ EVENT[2] ENTITY[1] (携帯_電話(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_003_Keitai_1-1-10-01;NJ
+# ::snt うーん 。
+∃ EVENT[1] xxx(EVENT[1])
+
+# ::id 3_blog_KNB_003_Keitai_1-1-11-01;NJ
+# ::snt 私 として は 料金 が 安く なっ て 欲しい 、 という の に 加え て 、 電磁波 が 出 なく て 体 に 優しい ＋ 電波 状況 が 良く て 最低 今 ぐらい の エリア で 使える 、 という よう な 携帯 が 世の中 の 主流 に なっ て いっ て ほしい 。
+∃ ENTITY[5] ENTITY[3] ENTITY[2] EVENT[8] EVENT[6] EVENT[9] EVENT[16] EVENT[18] EVENT[23] EVENT[24] EVENT[28] EVENT[25] ENTITY[7] ENTITY[4] ENTITY[13] ENTITY[15] ENTITY[17] ENTITY[22] ENTITY[20] ENTITY[19] ENTITY[12] ENTITY[27] ENTITY[26] ENTITY[10] ENTITY[1] (
+ ENTITY[2] = 私 ∧
+  として(ENTITY[2], ENTITY[1]) ∧
+   ENTITY[3] = *pro*{ENTITY[1]} ∧
+    ENTITY[5] = *speaker*{ENTITY[3], ENTITY[1]} ∧
+     料金(ENTITY[7]) ∧
+      THAT_の(欲しい(EVENT[6], ENTITY[5], 安く_なっ_て(EVENT[8], ENTITY[7])), ENTITY[4]) ∧
+       電磁波(ENTITY[13]) ∧
+        体(ENTITY[15]) ∧
+         電波_状況(ENTITY[17]) ∧
+          最低(ENTITY[19]) ∧
+           今(ENTITY[22]) ∧
+            ぐらい ENTITY[21] (ENTITY[21] = ENTITY[22], の_エリア(ENTITY[21], ENTITY[20])) ∧
+             THAT_よう(CONJ_te(¬ ∃ EVENT[14] 出_て(EVENT[14], ENTITY[13]),
+                   優しい(EVENT[16], ENTITY[10]) ∧ に(EVENT[16]) = ENTITY[15]) ∧
+                   CONJ_te(良く_て(EVENT[18], ENTITY[17]),
+                    使える(EVENT[23], ENTITY[10]) ∧ で(EVENT[23]) = ENTITY[20] ∧
+                     ADV(EVENT[23]) = ENTITY[19]), ENTITY[12]) ∧
+              な(EVENT[24], _, ENTITY[12]) ∧ 携帯(ENTITY[10]) ∧
+               世の中(ENTITY[27]) ∧
+                の_主流(ENTITY[27], ENTITY[26]) ∧
+                 CONJ_te(加え_て(EVENT[9], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[4],
+                  ほしい(EVENT[25], ENTITY[1], ENTITY[10], なっ_て_いっ(EVENT[28], ENTITY[10], ENTITY[26]))))
+
+# ::id 4_blog_KNB_003_Keitai_1-1-12-01;NJ
+# ::snt という こと は やっぱり 競合 し て もらわ ない と ね 。
+∃ ENTITY[1] ENTITY[2] EVENT[3] (
+ THAT_こと(xxx(EVENT[3]), ENTITY[2]) ∧
+  ENTITY[1] = *speaker* ∧
+   MD_ね(∀ SITUATION[5] CND_と(ADV_やっぱり(SITUATION[5]) ∧ FACT(SITUATION[5], ¬ ∃ EVENT[4] 競合する.0_て_もらわ(EVENT[4], ENTITY[1])),
+            ∃ EVENT[6] (xxx(EVENT[6], ENTITY[1]) ∧ ADV(EVENT[6]) = ENTITY[2]))))
+
+# ::id 5_blog_KNB_003_Keitai_1-1-2-01;NJ
+# ::snt 最近 携帯 電話 業界 の 動き が 激しい よう に 感じる 。
+∃ SITUATION[3] ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] TIME[2] (
+ ENTITY[1] = *speaker* ∧
+  最近(TIME[2]) ∧
+   携帯_電話_業界(ENTITY[5]) ∧
+    の_動き(ENTITY[5], ENTITY[4]) ∧
+     よう(SITUATION[3], 激しい(EVENT[6], ENTITY[4])) ∧
+      感じる(EVENT[7], ENTITY[1], SITUATION[3]) ∧ is_contained_in(時間(EVENT[7]), TIME[2]))
+
+# ::id 6_blog_KNB_003_Keitai_1-1-3-01;NJ
+# ::snt ボーダフォン が ソフトバンク に なっ たり 、 番号 そのまま で 会社 を 変える こと が できる よう に なっ たり 。
+∃ SITUATION[7] SITUATION[6] ARB[5] SITUATION[4] SITUATION[2] ENTITY[1] EVENT[3] EVENT[10] EVENT[12] EVENT[13] EVENT[14] EVENT[15] ENTITY[9] ENTITY[8] ENTITY[11] (
+ ENTITY[1] = *pro* ∧
+  ARB[5] = *arb* ∧
+   番号(ENTITY[8]) ∧
+    そのまま(ENTITY[9]) ∧
+     FACT(SITUATION[7], xxx(EVENT[10], ENTITY[8], ENTITY[9])) ∧
+      会社(ENTITY[11]) ∧
+       こと(SITUATION[6], 変える(EVENT[12], ARB[5], ENTITY[11]) ∧ で(EVENT[12]) = SITUATION[7]) ∧
+        よう(SITUATION[4], できる(EVENT[13], ARB[5], SITUATION[6])) ∧
+         FACT(SITUATION[2],
+          CONJ_たり(なっ(EVENT[3], ENTITY[ボーダフォン], ENTITY[ソフトバンク]),
+           なっ(EVENT[14], ENTITY[1]) ∧ に(EVENT[14]) = SITUATION[4])) ∧
+          xxx(EVENT[15], ENTITY[1]) ∧ たり(EVENT[15]) = SITUATION[2])
+
+# ::id 7_blog_KNB_003_Keitai_1-1-3-02;NJ
+# ::snt 略称 忘れ た ・・・
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *speaker* ∧ 略称(ENTITY[2]) ∧ past(EVENT[3]) ∧ 忘れ_た(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 8_blog_KNB_003_Keitai_1-1-4-01;NJ
+# ::snt そういえば 、 ちょっと 前 に ドコモ と ａｕ とか で も 絵文字 が 使える よう に なっ た 。
+∃ SITUATION[5] SITUATION[3] ARB[1] EVENT[7] EVENT[8] EVENT[9] GROUP[6] ENTITY[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  ADV_ちょっと(ENTITY[2]) ∧ 前(ENTITY[2]) ∧
+   絵文字(ENTITY[4]) ∧
+    CONJ_と(is_element_of(ENTITY[ドコモ], GROUP[6]), is_element_of(ENTITY[ａｕ], GROUP[6])) ∧
+     FACT(SITUATION[5], で(EVENT[7], ENTITY[4]) ∧ とか(EVENT[7]) = GROUP[6]) ∧
+      よう(SITUATION[3], 使える(EVENT[8], ARB[1], ENTITY[4]) ∧ te(EVENT[8]) = SITUATION[5]) ∧
+       past(EVENT[9]) ∧ なっ_た(EVENT[9], ARB[1], SITUATION[3]) ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 9_blog_KNB_003_Keitai_1-1-5-01;NJ
+# ::snt 更に いう と 、 業界 の 話 で は ない けど 、 京大 で の フォーマ の 電波 状況 が 改善 さ れ て 、 本当 に １ 歩 入れ ば 圏外 だっ た 法経本館 で ばっちり 三 本 たつ よう に なっ た 。
+∃ ENTITY[11] SITUATION[9] SITUATION[1] SITUATION[17] ENTITY[6] ENTITY[5] ENTITY[18] ENTITY[4] EVENT[2] EVENT[8] EVENT[19] EVENT[21] (
+ ADV_更に(EVENT[2]) ∧
+  ADV_本当_に(SITUATION[17]) ∧
+   ADV_ばっちり(EVENT[19]) ∧
+    past(EVENT[21]) ∧
+     FACT(SITUATION[1], いう(EVENT[2])) ∧
+      の_電波_状況(ENTITY[フォーマ], ENTITY[4]) ∧ で_の_電波_状況(ENTITY[京大], ENTITY[4]) ∧
+       業界(ENTITY[6]) ∧
+        の_話(ENTITY[6], ENTITY[5]) ∧
+         ENTITY[11] = *pro*{ENTITY[4], ENTITY[5], ENTITY[6], ENTITY[京大], ENTITY[フォーマ]} ∧
+          FACT(SITUATION[17],
+           ∀ ARB[12] DEGREE[13] EVENT[14] CND_ば(
+               ARB[12] = *arb* ∧ CD_１_歩(DEGREE[13]) ∧
+                入れ(EVENT[14], ARB[12]) ∧ MSR(EVENT[14]) = DEGREE[13],
+               ∃ ENTITY[15] EVENT[16] (
+                past(EVENT[16]) ∧
+                 圏外(ENTITY[15]) ∧
+                  だっ_た(EVENT[16], ENTITY[11], ENTITY[15]) ∧ LOC(EVENT[16]) = ENTITY[法経本館]))) ∧
+           CD_三_本(ENTITY[18]) ∧
+            よう(SITUATION[9], たつ(EVENT[19], ENTITY[18]) ∧ で(EVENT[19]) = ENTITY[法経本館]) ∧
+             CRD_けど(¬ ∃ EVENT[7] で_は(EVENT[7], ENTITY[4], ENTITY[5]),
+              CONJ_te(改善する.0_て(EVENT[8], _, ENTITY[4]) ∧ と(EVENT[8]) = SITUATION[1],
+               なっ_た(EVENT[21], ENTITY[4], SITUATION[9]) ∧ と(EVENT[21]) = SITUATION[1])))
+
+# ::id 10_blog_KNB_003_Keitai_1-1-6-01;NJ
+# ::snt これ は 吉田山 の どこ か で 電波塔 が 新しく 建っ た から らしい という 噂 を 聞い た が 、 詳しい 理由 は よく 知ら ない 。。。
+∃ SITUATION[14] ENTITY[1] ATTRIB[12] ENTITY[3] EVENT[10] ENTITY[2] ENTITY[11] (
+ ENTITY[3] = これ{ENTITY[1]} ∧
+  詳しい(ATTRIB[12]) ∧
+   ATTRIBUTE_理由(ATTRIB[12], ENTITY[11]) ∧
+    ENTITY[1] = *speaker* ∧
+     THAT_噂(MD_らしい(∃ SITUATION[4] EVENT[9] (
+                FACT(SITUATION[4],
+                 か ENTITY[5] (の(ENTITY[吉田山], ENTITY[5]),
+                  ∃ EVENT[7] ENTITY[6] (
+                   電波塔(ENTITY[6]) ∧
+                    ADV_新しく(EVENT[7]) ∧
+                     past(EVENT[7]) ∧
+                      建っ_た(EVENT[7], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[5]))) ∧
+                 xxx(EVENT[9], ENTITY[3]) ∧ から(EVENT[9]) = SITUATION[4])), ENTITY[2]) ∧
+      past(EVENT[10]) ∧
+       ADV_よく(SITUATION[14]) ∧
+        CONJ_が(聞い_た(EVENT[10], ENTITY[1], ENTITY[2]),
+         FACT(SITUATION[14], ¬ ∃ EVENT[13] 知ら(EVENT[13], ENTITY[1], ENTITY[11]))))
+
+# ::id 11_blog_KNB_003_Keitai_1-1-7-01;NJ
+# ::snt 話 を 戻す と 、 携帯 業界 、 これ から どう なる ん だろ う 。
+QUEST(∃ ENTITY[2] SITUATION[1] EVENT[4] ENTITY[3] ENTITY[5] ? ENTITY[7] (
+      ENTITY[2] = *speaker* ∧
+       話(ENTITY[3]) ∧
+        FACT(SITUATION[1], 戻す(EVENT[4], ENTITY[2], ENTITY[3])) ∧
+         携帯_業界(ENTITY[5]) ∧
+          MD_う(∃ ENTITY[6] EVENT[8] (
+                ENTITY[6] = これ{ENTITY[3]} ∧
+                 ADV(ENTITY[7], EVENT[8]) ∧
+                  なる_ん_だろ(EVENT[8], ENTITY[5]) ∧ から(EVENT[8]) = ENTITY[6] ∧
+                   と(EVENT[8]) = SITUATION[1]))))
+
+# ::id 12_blog_KNB_003_Keitai_1-1-8-01;NJ
+# ::snt 会社 の が 増え すぎ て も 消費者 として は 困る し 、 でも 独占 状態 も 不利益 な 感じ に なっ て しまう だろう し 。
+∃ ENTITY[8] SITUATION[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ 消費者(ENTITY[6]) ∧
+  として(ENTITY[6], ENTITY[5]) ∧
+   会社(ENTITY[3]) ∧
+    の(ENTITY[3], ENTITY[2]) ∧
+     FACT(SITUATION[1], 増え_すぎ_て(EVENT[4], ENTITY[2])) ∧
+      ENTITY[8] = *pro*{ENTITY[5], ENTITY[6], ENTITY[2], ENTITY[3]} ∧
+       MD_し(CONJ_し(困る(EVENT[7], ENTITY[5]) ∧ te(EVENT[7]) = SITUATION[1],
+             MD_だろう(∃ ENTITY[10] SITUATION[9] EVENT[12] EVENT[16] EVENT[17] ENTITY[11] ENTITY[15] ENTITY[13] (
+                   ENTITY[10] = *pro*{ENTITY[8], ENTITY[5], ENTITY[6], ENTITY[2], ENTITY[3]} ∧
+                    独占_状態(ENTITY[11]) ∧
+                     FACT(SITUATION[9], xxx(EVENT[12], ENTITY[10], ENTITY[11])) ∧
+                      不利益(ENTITY[15]) ∧
+                       な(EVENT[16], ENTITY[13], ENTITY[15]) ∧ 感じ(ENTITY[13]) ∧
+                        なっ_て_しまう(EVENT[17], ENTITY[8], ENTITY[13]) ∧ LINK(EVENT[17]) = SITUATION[9])))))
+
+# ::id 13_blog_KNB_003_Keitai_1-1-9-01;NJ
+# ::snt 今 の 寡占 かつ 競合 し てる 状態 が ちょうど いい の か な 。
+MD_な(QUEST(∃ EVENT[8] GROUP[3] ENTITY[2] ENTITY[1] (
+           今(ENTITY[2]) ∧
+            CONJ_かつ(∃ ENTITY[4] (寡占(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+             ∃ EVENT[7] ENTITY[5] (競合する.0_てる(EVENT[7], ENTITY[5]) ∧ 状態(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+             equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+              ADV_ちょうど(EVENT[8]) ∧ いい_の(EVENT[8], ENTITY[1]))))

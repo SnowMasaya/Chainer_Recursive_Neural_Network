@@ -1,0 +1,268 @@
+# ::id 1_wikipedia_KYOTO_BDS_00006,1;NJ
+# ::snt 阿弥陀三尊
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-阿弥陀三尊 / ENTITY
+             :name ( n-2 / name
+                    :op1 "阿弥陀三尊")))
+
+# ::id 2_wikipedia_KYOTO_BDS_00006,2;NJ
+# ::snt 阿弥陀三尊 （ あみださんぞん ） は 、 仏教 における 仏像 安置 形式 の 一 つ 。
+( EVENT-4 / EVENT
+      :ARG0 ( ENTITY-阿弥陀三尊 / ENTITY
+             :name ( n-5 / name
+                    :op1 "阿弥陀三尊")
+             :NAMELY ( ENTITY-あみださんぞん / ENTITY
+                    :name ( n-6 / name
+                           :op1 "あみださんぞん")))
+      :ARG1 ( ENTITY-1 / ENTITY ( ENTITY-1 CD_一_つ)
+             :の ( ENTITY-2 / 仏像_安置_形式
+                    :における ( ENTITY-3 / 仏教))))
+
+# ::id 3_wikipedia_KYOTO_BDS_00006,3;NJ
+# ::snt 阿弥陀如来 を 中尊 と し 、 観音菩薩 を 左脇侍 、 勢至菩薩 を 右脇侍 と する 三尊形式 で ある 。
+( EVENT-6 / で_ある
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-三尊形式 / ENTITY
+             :name ( n-8 / name
+                    :op1 "三尊形式")
+             :ARG0-of ( EVENT-3 / し
+                    :ARG1 ( ENTITY-阿弥陀如来 / ENTITY
+                           :name ( n-9 / name
+                                  :op1 "阿弥陀如来"))
+                    :ARG2 ( ENTITY-中尊 / ENTITY
+                           :name ( n-10 / name
+                                  :op1 "中尊")))
+             :MOD ( mod-7 / ENTITY
+                    :ARG0-of ( EVENT-5 / する
+                           :ARG1 ( ENTITY-勢至菩薩 / ENTITY
+                                  :name ( n-11 / name
+                                         :op1 "勢至菩薩"))
+                           :ARG2 ( ENTITY-右脇侍 / ENTITY
+                                  :name ( n-12 / name
+                                         :op1 "右脇侍")))
+                    :ARG0-of ( EVENT-4 / EVENT
+                           :ARG1 ( ENTITY-観音菩薩 / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "観音菩薩"))
+                           :ARG2 ( ENTITY-左脇侍 / ENTITY
+                                  :name ( n-14 / name
+                                         :op1 "左脇侍"))))))
+
+# ::id 4_wikipedia_KYOTO_BDS_00006,4;NJ
+# ::snt （ なお 、 この 場合 の 「 左 」 「 右 」 と は 中尊 から 見 た 「 左 」 「 右 」 を 指す 。 ）
+( EVENT-13 / 指す
+      :ARG0 ( ENTITY-1 / AND
+             :op1 ( ENTITY-4 / 左)
+             :op2 ( ENTITY-5 / 右)
+             :の ( ENTITY-2 / 場合))
+      :ARG1 ( ENTITY-6 / AND
+             :op1 ( ENTITY-11 / 左)
+             :op2 ENTITY-20
+             :MOD ( mod-16 / AND
+                    :op1 ( ENTITY-12 / 右)
+                    :op2 ENTITY-21)
+             :ARG1-of ( EVENT-9 / 見_た
+                    :ARG0 ( PICK-15 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-2
+                           :op3 ENTITY-5
+                           :op4 ENTITY-4)
+                    :から ( ENTITY-中尊 / ENTITY
+                           :name ( n-19 / name
+                                  :op1 "中尊"))
+                    :MOD ( mod-17 / past)))
+      :MOD ( mod-18 / なお))
+
+# ::id 5_wikipedia_KYOTO_BDS_00006,5;NJ
+# ::snt 観音菩薩 は 阿弥陀如来 の 慈悲 を あらわす 化身 で あり 、 勢至菩薩 は 知恵 を あらわす 化身 と さ れる 。
+( CONJ-14 / AND
+      :op1 ( EVENT-5 / で_あり
+             :ARG0 ( ENTITY-観音菩薩 / ENTITY
+                    :name ( n-11 / name
+                           :op1 "観音菩薩"))
+             :ARG1 ( ENTITY-1 / 化身
+                    :ARG0-of ( EVENT-4 / あらわす
+                           :ARG1 ( ENTITY-3 / 慈悲
+                                  :の ( ENTITY-阿弥陀如来 / ENTITY
+                                         :name ( n-12 / name
+                                                :op1 "阿弥陀如来"))))))
+      :op2 ( EVENT-10 / さ
+             :ARG1 ( ENTITY-勢至菩薩 / ENTITY
+                    :name ( n-13 / name
+                           :op1 "勢至菩薩"))
+             :ARG2 ( ENTITY-6 / 化身
+                    :ARG0-of ( EVENT-9 / あらわす
+                           :ARG1 ( ENTITY-8 / 知恵)))))
+
+# ::id 6_wikipedia_KYOTO_BDS_00006,6;NJ
+# ::snt 脇侍 の 観音菩薩 は 、 宝冠 の 上 に 阿弥陀 の 化仏 を 表す し 、 勢至菩薩 は 水瓶 を 持つ ので 、 両脇侍 は 比較的 区別 が つけ やすい 。
+( CRD-12 / ので
+      :op1 ( CONJ-11 / CONJ_し
+             :op1 ( EVENT-5 / 表す
+                    :ARG0 ( ENTITY-観音菩薩 / ENTITY
+                           :name ( n-14 / name
+                                  :op1 "観音菩薩")
+                           :の ( ENTITY-脇侍 / ENTITY
+                                  :name ( n-15 / name
+                                         :op1 "脇侍")))
+                    :ARG1 ( ENTITY-4 / 化仏
+                           :の ( ENTITY-阿弥陀 / ENTITY
+                                  :name ( n-16 / name
+                                         :op1 "阿弥陀")))
+                    :に ( ENTITY-2 / 上
+                           :の ( ENTITY-3 / 宝冠)))
+             :op2 ( EVENT-7 / 持つ
+                    :ARG0 ( ENTITY-勢至菩薩 / ENTITY
+                           :name ( n-17 / name
+                                  :op1 "勢至菩薩"))
+                    :ARG1 ( ENTITY-6 / 水瓶)))
+      :op2 ( EVENT-9 / つけ_やすい
+             :ARG0 ENTITY-1
+             :ARG0 ( ENTITY-8 / 区別)
+             :MOD ( mod-13 / 比較的)))
+
+# ::id 7_wikipedia_KYOTO_BDS_00006,7;NJ
+# ::snt 日本 で は 、 法隆寺 献納 宝物 ・ 四十八体仏 （ 東京国立博物館 蔵 ） 中 の 銅造阿弥陀三尊像 （ 重文 ） 、 法隆寺 の 橘夫人厨子 内 に 安置 の 銅造阿弥陀三尊像 （ 国宝 ） など が 古い 作例 で ある 。
+( EVENT-13 / で_ある
+      :ARG0 ( ENTITY-1 / ENTITY
+             :など ( GROUP-2 / AND
+                    :op9 ( ENTITY-銅造阿弥陀三尊像 / ENTITY
+                           :name ( n-14 / name
+                                  :op1 "銅造阿弥陀三尊像"))
+                    :op1 ( ENTITY-6 / ENTITY
+                           :NAMELY ( ENTITY-5 / 法隆寺_献納_宝物))
+                    :op2 ENTITY-5
+                    :op3 ( ENTITY-17 / ENTITY
+                           :NAMELY ( ENTITY-4 / 東京国立博物館_蔵))
+                    :op4 ENTITY-4
+                    :op5 ( ENTITY-18 / 四十八体仏_中)
+                    :op6 ( ENTITY-銅造阿弥陀三尊像 / ENTITY
+                           :ARG1-of ( GROUP-2 / AND
+                                  :op1 ( ENTITY-9 / 橘夫人厨子_内
+                                         :の ( ENTITY-法隆寺 / ENTITY
+                                                :name ( n-15 / name
+                                                       :op1 "法隆寺")))
+                                  :op2 ( EVENT-10 / 安置_の
+                                         :に ENTITY-9)
+                                  :op5 ( ENTITY-銅造阿弥陀三尊像 / ENTITY
+                                         :の ENTITY-6)
+                                  :op3 ( ENTITY-7 / 国宝)
+                                  :op4 ( ENTITY-銅造阿弥陀三尊像 / ENTITY
+                                         :NAMELY ENTITY-7)))
+                    :op7 ( ENTITY-3 / 重文
+                           :NAMELY-of ENTITY-銅造阿弥陀三尊像)
+                    :op8 ENTITY-銅造阿弥陀三尊像))
+      :ARG1 ( ENTITY-11 / 作例
+             :ATTRIBUTE ( ATTRIB-12 / 古い))
+      :で ( ENTITY-日本 / ENTITY
+             :name ( n-16 / name
+                    :op1 "日本")))
+
+# ::id 8_wikipedia_KYOTO_BDS_00006,8;NJ
+# ::snt 中尊 を 坐像 、 脇侍 を 立像 （ りゅうぞう ） と する もの （ 例 ： 京都 ・ 仁和寺像 ） 、 中尊 ・ 脇侍 とも 立像 と する もの （ 例 ： 兵庫 ・ 浄土寺像 ） 、 中尊 ・ 脇侍 とも 坐像 と する もの （ 例 ： 京都 ・ 清凉寺像 ） 、 中尊 は 坐像 、 脇侍 は 跪坐（ひざまずく） する もの （ 例 ： 京都 ・ 三千院像 ） など 、 形式 は 各種 ある 。
+( EVENT-27 / ある
+      :ARG0 ( ENTITY-26 / ENTITY
+             :OF ( ENTITY-1 / 形式
+                    :など ( GROUP-2 / AND
+                           :op1 ( ENTITY-3 / もの
+                                  :ARG0-of ( EVENT-6 / EVENT
+                                         :ARG1 ( ENTITY-中尊 / ENTITY
+                                                :name ( n-28 / name
+                                                       :op1 "中尊"))
+                                         :ARG2 ( ENTITY-5 / 坐像))
+                                  :ARG0-of ( EVENT-8 / する
+                                         :ARG1 ( ENTITY-脇侍 / ENTITY
+                                                :name ( n-29 / name
+                                                       :op1 "脇侍"))
+                                         :ARG2 ( ENTITY-7 / 立像
+                                                :NAMELY ( ENTITY-りゅうぞう / ENTITY
+                                                       :name ( n-30 / name
+                                                              :op1 "りゅうぞう"))))
+                                  :NAMELY ( ENTITY-例_京都_仁和寺像 / ENTITY
+                                         :name ( n-31 / name
+                                                :op1 "例_京都_仁和寺像")))
+                           :op2 ( ENTITY-9 / もの
+                                  :ARG0-of ( EVENT-14 / する
+                                         :ARG1 ( ENTITY-11 / ENTITY
+                                                :OF ( GROUP-12 / AND
+                                                       :op1 ENTITY-中尊
+                                                       :op2 ENTITY-脇侍))
+                                         :ARG2 ( ENTITY-13 / 立像))
+                                  :NAMELY ( ENTITY-例_兵庫_浄土寺像 / ENTITY
+                                         :name ( n-32 / name
+                                                :op1 "例_兵庫_浄土寺像")))
+                           :op3 ( ENTITY-15 / もの
+                                  :ARG0-of ( EVENT-20 / する
+                                         :ARG1 ( ENTITY-17 / AND
+                                                :op1 ENTITY-中尊
+                                                :op2 ENTITY-脇侍)
+                                         :ARG2 ( ENTITY-19 / 坐像))
+                                  :NAMELY ( ENTITY-例_京都_清凉寺像 / ENTITY
+                                         :name ( n-33 / name
+                                                :op1 "例_京都_清凉寺像")))
+                           :op4 ( ENTITY-21 / もの
+                                  :ARG0-of ( EVENT-24 / EVENT
+                                         :ARG0 ENTITY-中尊
+                                         :ARG2 ( ENTITY-23 / 坐像))
+                                  :ARG0-of ( EVENT-25 / 跪坐 （ ひざまずく ） する.0
+                                         :ARG0 ENTITY-脇侍)
+                                  :NAMELY ( ENTITY-例_京都_三千院像 / ENTITY
+                                         :name ( n-34 / name
+                                                :op1 "例_京都_三千院像")))))))
+
+# ::id 9_wikipedia_KYOTO_BDS_00006,9;NJ
+# ::snt 中尊 は 坐像 、 脇侍 は 跪坐 と する もの は 来迎 形式 の 阿弥陀三尊像 で あり 、 この 場合 、 左脇侍 の 観音菩薩 は 往生者 を 迎え 取る ため の 蓮台 を 捧げ 持つ の が 普通 で ある 。
+( CONJ-22 / AND
+      :op1 ( EVENT-8 / で_あり
+             :ARG0 ( ENTITY-1 / もの
+                    :ARG0-of ( EVENT-4 / EVENT
+                           :ARG1 ( ENTITY-中尊 / ENTITY
+                                  :name ( n-19 / name
+                                         :op1 "中尊"))
+                           :ARG2 ( ENTITY-3 / 坐像))
+                    :ARG0-of ( EVENT-6 / する
+                           :ARG1 ( ENTITY-脇侍 / ENTITY
+                                  :name ( n-20 / name
+                                         :op1 "脇侍"))
+                           :ARG2 ( ENTITY-5 / 跪坐)))
+             :ARG1 ( ENTITY-阿弥陀三尊像 / ENTITY
+                    :name ( n-17 / name
+                           :op1 "阿弥陀三尊像")
+                    :の ( ENTITY-7 / 来迎_形式)))
+      :op2 ( EVENT-16 / 普通_で_ある
+             :ARG0 ( ENTITY-観音菩薩 / ENTITY
+                    :name ( n-18 / name
+                           :op1 "観音菩薩")
+                    :の ( ENTITY-左脇侍 / ENTITY
+                           :name ( n-21 / name
+                                  :op1 "左脇侍")))
+             :ARG0 ( SITUATION-10 / の
+                    :THAT ( EVENT-15 / 捧げ_持つ
+                           :ARG0 ENTITY-観音菩薩
+                           :ARG1 ( ENTITY-11 / 蓮台
+                                  :の ( SITUATION-12 / ため
+                                         :THAT ( EVENT-14 / 迎え_取る
+                                                :ARG1 ( ENTITY-13 / 往生者))))))
+             :ADV ( ENTITY-9 / 場合)))
+
+# ::id 10_wikipedia_KYOTO_BDS_00006,10;NJ
+# ::snt また 、 地蔵菩薩 と 龍樹菩薩 を 含め て 五尊像 と し た 作例 も み られる 。
+( EVENT-7 / み
+      :ARG1 ( ENTITY-1 / 作例
+             :ARG0-of ( CONJ-8 / CONJ_te
+                    :op1 ( EVENT-5 / 含め_て
+                           :ARG1 ( GROUP-4 / CONJ_と
+                                  :op1 ( ENTITY-地蔵菩薩 / ENTITY
+                                         :name ( n-10 / name
+                                                :op1 "地蔵菩薩"))
+                                  :op2 ( ENTITY-龍樹菩薩 / ENTITY
+                                         :name ( n-11 / name
+                                                :op1 "龍樹菩薩"))))
+                    :op2 ( EVENT-6 / し_た
+                           :ARG1 ( ENTITY-3 / pro
+                                  :pick0)
+                           :ARG2 ( ENTITY-五尊像 / ENTITY
+                                  :name ( n-12 / name
+                                         :op1 "五尊像"))
+                           :MOD ( mod-9 / past)))))

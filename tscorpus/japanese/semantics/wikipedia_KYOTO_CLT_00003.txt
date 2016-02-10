@@ -1,0 +1,379 @@
+# ::id 1_wikipedia_KYOTO_CLT_00003,1;NJ
+# ::snt 四神相応
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[四神相応])
+
+# ::id 2_wikipedia_KYOTO_CLT_00003,2;NJ
+# ::snt 四神相応 （ しじん そうおう ） は 、 中国 ・ 朝鮮 ・ 日本 において 、 天 の 四 方 の 方角 を 司る 「 四神 」 の 存在 に 最も ふさわしい と 伝統的 に 信じ られ て き た 地勢 や 地相 の こと を いう 。
+∃ SITUATION[4] EVENT[11] EVENT[12] EVENT[14] EVENT[19] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[6] GROUP[5] GROUP[16] ENTITY[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[しじん_そうおう], ENTITY[四神相応]) ∧
+  is_element_of(ENTITY[中国], GROUP[5]) ∧ is_element_of(ENTITY[朝鮮], GROUP[5]) ∧ is_element_of(ENTITY[日本], GROUP[5]) ∧
+   天(ENTITY[9]) ∧
+    CD_四_方(ENTITY[10]) ∧
+     の_方角(ENTITY[10], ENTITY[8]) ∧ の__方角(ENTITY[9], ENTITY[8]) ∧
+      司る(EVENT[11], ENTITY[四神], ENTITY[8]) ∧
+       の_存在(ENTITY[四神], ENTITY[6]) ∧
+        と(SITUATION[4],
+         ふさわしい(EVENT[12], ENTITY[2]) ∧ に(EVENT[12]) = ENTITY[6] ∧ において(EVENT[12]) = GROUP[5]) ∧
+         CONJ_や(∃ ENTITY[17] (地勢(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+          ∃ ENTITY[18] (地相(ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+          信じ_て_き_た(EVENT[14], _, SITUATION[4]) ∧ equals(GROUP[16], ENTITY[2]) ∧
+           の_こと(ENTITY[2], ENTITY[1]) ∧
+            ADV_最も(EVENT[12]) ∧
+             ADV_伝統的_に(EVENT[14]) ∧ past(EVENT[14]) ∧ いう(EVENT[19], ENTITY[四神相応], ENTITY[1]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00003,3;NJ
+# ::snt 四地相応 と も いう 。
+∃ ENTITY[2] ENTITY[1] EVENT[3] (ENTITY[1] = *pro* ∧ ENTITY[2] = *pro* ∧ いう(EVENT[3], ENTITY[1], ENTITY[2], ENTITY[四地相応]))
+
+# ::id 4_wikipedia_KYOTO_CLT_00003,4;NJ
+# ::snt なお 四神 に 中央 に 「 黄龍 」 （ おうりゅう ） 、 あるいは 麒麟 を 加え た もの が 「 五神 」 （ ごじん ） と 呼ば れ て いる 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[6] GROUP[4] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  中央(ENTITY[3]) ∧
+   CONJ_あるいは(namely_-ENTITY-(ENTITY[おうりゅう], ENTITY[黄龍]) ∧ is_element_of(ENTITY[黄龍], GROUP[4]), is_element_of(ENTITY[麒麟], GROUP[4])) ∧
+    もの(SITUATION[1],
+     加え_た(EVENT[5], ENTITY[2], GROUP[4]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+      に(EVENT[5]) = ENTITY[四神]) ∧
+     namely_-ENTITY-(ENTITY[ごじん], ENTITY[五神]) ∧ past(EVENT[5]) ∧ 呼ば_て_いる(EVENT[6], _, SITUATION[1], ENTITY[五神]))
+
+# ::id 5_wikipedia_KYOTO_CLT_00003,5;NJ
+# ::snt ただし 現代 で は 、 その 四神 と 現実 の 地形 と の 対応付け について 、 中国 や 韓国 ・ 朝鮮 と 日本 で は 大きく 異なっ て いる 。
+∃ EVENT[9] GROUP[4] ENTITY[3] ENTITY[2] GROUP[8] GROUP[7] ENTITY[1] (
+ 現代(ENTITY[1]) ∧
+  CONJ_や(is_element_of(ENTITY[中国], GROUP[8]), is_element_of(ENTITY[韓国], GROUP[8]), is_element_of(ENTITY[朝鮮], GROUP[8])) ∧
+   CONJ_と(is_subset_of_or_equal_to(GROUP[8], GROUP[7]), is_element_of(ENTITY[日本], GROUP[7])) ∧
+    CONJ_と(is_element_of(ENTITY[四神], GROUP[4]),
+     ∃ ENTITY[6] ENTITY[5] (現実(ENTITY[6]) ∧ の_地形(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4]))) ∧
+     と_の_対応付け(GROUP[4], ENTITY[3]) ∧
+      について(ENTITY[3], ENTITY[2]) ∧
+       ADV_大きく(EVENT[9]) ∧
+        異なっ_て_いる(EVENT[9], ENTITY[2]) ∧ で(EVENT[9]) = GROUP[7] ∧ で(EVENT[9]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_CLT_00003,6;NJ
+# ::snt 中国 ・ 朝鮮
+∃ EVENT[2] GROUP[1] (
+ is_element_of(ENTITY[中国], GROUP[1]) ∧ is_element_of(ENTITY[朝鮮], GROUP[1]) ∧
+  xxx(EVENT[2]) ∧ LINK(EVENT[2]) = GROUP[1])
+
+# ::id 7_wikipedia_KYOTO_CLT_00003,7;NJ
+# ::snt 中国 や 朝鮮 で の 風水 における 四神相応 は 、 背後 に 山 、 前方 に 海 、 湖沼 、 河川 の 水 （ すい ） が 配置 さ れ て いる 背山臨水 の 地 を 、 左右 から 砂 （ さ ） と 呼ば れる 丘陵 もしくは 背後 の 山 より も 低い 山 で 囲む こと で 蔵風聚水 （ 風 を 蓄え 水 を 集める ） の 形態 と なっ て いる もの を いう 。
+∃ SITUATION[5] EVENT[17] EVENT[28] EVENT[30] EVENT[31] GROUP[8] GROUP[19] ENTITY[18] ENTITY[6] ENTITY[29] ENTITY[3] GROUP[2] ENTITY[1] (
+ CONJ_や(is_element_of(ENTITY[中国], GROUP[2]), is_element_of(ENTITY[朝鮮], GROUP[2])) ∧
+  で_の_xxx(GROUP[2], ENTITY[四神相応]) ∧
+   風水(ENTITY[1]) ∧
+    における_xxx(ENTITY[1], ENTITY[四神相応]) ∧
+     ∃ ENTITY[10] ENTITY[9] (背後(ENTITY[10]) ∧ に_山(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ GROUP[13] ENTITY[12] ENTITY[11] (
+       前方(ENTITY[12]) ∧
+        ∃ ENTITY[14] (海(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])) ∧
+         ∃ ENTITY[15] (湖沼(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13])) ∧
+         ∃ ENTITY[16] (河川(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[13])) ∧
+         に_水(ENTITY[12], ENTITY[11]) ∧ の_水(GROUP[13], ENTITY[11]) ∧
+          namely_-ENTITY-(ENTITY[すい], ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])) ∧
+      配置する.0_て_いる(EVENT[17], _, GROUP[8]) ∧ LOC(EVENT[17]) = ENTITY[6] ∧ の_地(ENTITY[背山臨水], ENTITY[6]) ∧
+       左右(ENTITY[18]) ∧
+        CONJ_もしくは(∃ EVENT[23] ENTITY[22] ENTITY[20] (
+              砂(ENTITY[22]) ∧
+               namely_-ENTITY-(ENTITY[さ], ENTITY[22]) ∧
+                呼ば(EVENT[23], _, ENTITY[20], ENTITY[22]) ∧ 丘陵(ENTITY[20]) ∧
+                 is_element_of(ENTITY[20], GROUP[19])),
+         ∃ ATTRIB[25] ENTITY[27] ENTITY[26] ENTITY[24] (
+          背後(ENTITY[27]) ∧
+           の_山(ENTITY[27], ENTITY[26]) ∧
+            より_低い(ENTITY[26], ATTRIB[25]) ∧
+             ATTRIBUTE_山(ATTRIB[25], ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[19]))) ∧
+         こと(SITUATION[5], 囲む(EVENT[28], GROUP[19], ENTITY[6]) ∧ から(EVENT[28]) = ENTITY[18]) ∧
+          の_形態(ENTITY[蔵風聚水], ENTITY[29]) ∧
+           なっ_て_いる(EVENT[30], ENTITY[3]) ∧ と(EVENT[30]) = ENTITY[29] ∧ で(EVENT[30]) = SITUATION[5] ∧
+            もの(ENTITY[3]) ∧ いう(EVENT[31], ENTITY[四神相応], ENTITY[3]))
+
+# ::id 8_wikipedia_KYOTO_CLT_00003,8;NJ
+# ::snt この 場合 の 四神 は 、 背後 の 山 が 玄武 、 前方 の 水 が 朱雀 、 玄武 を 背 に し て 左 側 の 砂 が 青龍 、 右 側 が 白虎 で ある 。
+∃ EVENT[4] EVENT[7] EVENT[9] EVENT[12] EVENT[14] EVENT[16] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[11] ENTITY[10] ENTITY[13] ENTITY[15] ENTITY[1] (
+ 場合(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[四神]) ∧
+   背後(ENTITY[3]) ∧
+    の_山(ENTITY[3], ENTITY[2]) ∧
+     前方(ENTITY[6]) ∧
+      の_水(ENTITY[6], ENTITY[5]) ∧
+       背(ENTITY[8]) ∧
+        左_側(ENTITY[11]) ∧
+         の_砂(ENTITY[11], ENTITY[10]) ∧
+          背(ENTITY[13]) ∧
+           右_側(ENTITY[15]) ∧
+            xxx(EVENT[4], ENTITY[2], ENTITY[玄武]) ∧ TPC(EVENT[4]) = ENTITY[四神] ∧
+             xxx(EVENT[7], ENTITY[5], ENTITY[朱雀]) ∧ TPC(EVENT[7]) = ENTITY[四神] ∧
+              CONJ_te(し_て(EVENT[9], _, ENTITY[玄武]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+                    TPC(EVENT[9]) = ENTITY[四神],
+               xxx(EVENT[12], ENTITY[10], ENTITY[青龍]) ∧ TPC(EVENT[12]) = ENTITY[四神]) ∧
+               CONJ_te(し_て(EVENT[14], _, ENTITY[玄武]) ∧ に(EVENT[14]) = ENTITY[13] ∧
+                     TPC(EVENT[14]) = ENTITY[四神],
+                で_ある(EVENT[16], ENTITY[15], ENTITY[白虎]) ∧ TPC(EVENT[16]) = ENTITY[四神]))
+
+# ::id 9_wikipedia_KYOTO_CLT_00003,9;NJ
+# ::snt 日本 の 京都 において も 、 北 の 丹沢山地 を 玄武 、 東 の 左大文字山 を 青龍砂 、 西 の 嵐山 を 白虎砂 、 南 に あっ た 巨椋池 を 朱雀 と する 対応付け が 可能 で 、 標準的 な 風水 の 観点 から 正しく 京都 は 四神相応 の 地 で あっ た 。
+∃ ATTRIB[16] ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] EVENT[8] EVENT[11] EVENT[12] EVENT[13] EVENT[18] ENTITY[3] ENTITY[5] ENTITY[7] ENTITY[10] ENTITY[15] ENTITY[17] ENTITY[14] (
+ の_xxx(ENTITY[日本], ENTITY[京都]) ∧
+  ENTITY[2] = *pro*{ENTITY[京都], ENTITY[日本]} ∧
+   北(ENTITY[3]) ∧
+    の_xxx(ENTITY[3], ENTITY[丹沢山地]) ∧
+     東(ENTITY[5]) ∧
+      の_xxx(ENTITY[5], ENTITY[左大文字山]) ∧
+       西(ENTITY[7]) ∧
+        の_xxx(ENTITY[7], ENTITY[嵐山]) ∧
+         南(ENTITY[10]) ∧
+          あっ_た(EVENT[11], ENTITY[巨椋池]) ∧ に(EVENT[11]) = ENTITY[10] ∧
+           対応付け(SITUATION[1],
+            xxx(EVENT[4], ENTITY[2], ENTITY[丹沢山地]) ∧ と(EVENT[4]) = ENTITY[玄武] ∧
+             xxx(EVENT[6], ENTITY[2], ENTITY[左大文字山]) ∧ と(EVENT[6]) = ENTITY[青龍砂] ∧
+              xxx(EVENT[8], ENTITY[2], ENTITY[嵐山]) ∧ と(EVENT[8]) = ENTITY[白虎砂] ∧
+               する(EVENT[12], ENTITY[2], ENTITY[巨椋池]) ∧ と(EVENT[12]) = ENTITY[朱雀]) ∧
+            標準的_な(ATTRIB[16]) ∧
+             ATTRIBUTE_風水(ATTRIB[16], ENTITY[15]) ∧
+              の_観点(ENTITY[15], ENTITY[14]) ∧
+               の_地(ENTITY[四神相応], ENTITY[17]) ∧
+                past(EVENT[11]) ∧
+                 ADV_正しく(EVENT[18]) ∧
+                  past(EVENT[18]) ∧
+                   CONJ_te(可能_で(EVENT[13], SITUATION[1]) ∧ において(EVENT[13]) = ENTITY[京都],
+                    で_あっ_た(EVENT[18], ENTITY[京都], ENTITY[17]) ∧ から(EVENT[18]) = ENTITY[14] ∧
+                     において(EVENT[18]) = ENTITY[京都]))
+
+# ::id 10_wikipedia_KYOTO_CLT_00003,10;NJ
+# ::snt ただし 巨椋池 が 完全 に 埋め立て られ て しまっ た ため に 、 京都 の 四神相応 は 破壊 さ れ て いる 。
+∃ SITUATION[1] EVENT[2] EVENT[4] (
+ の_xxx(ENTITY[京都], ENTITY[四神相応]) ∧
+  ADV_完全_に(EVENT[2]) ∧
+   past(EVENT[2]) ∧
+    ため(SITUATION[1], 埋め立て_て_しまっ_た(EVENT[2], _, ENTITY[巨椋池])) ∧
+     破壊する.0_て_いる(EVENT[4], _, ENTITY[四神相応]) ∧ に(EVENT[4]) = SITUATION[1])
+
+# ::id 11_wikipedia_KYOTO_CLT_00003,11;NJ
+# ::snt なお かつて 朱雀大路 を 見通す こと の でき た 船岡山 は 、 玄武 と する には 小規模 で ある 。
+∃ ENTITY[8] ARB[7] SITUATION[3] ENTITY[2] EVENT[9] EVENT[10] EVENT[4] EVENT[6] (
+ ENTITY[2] = *pro* ∧
+  こと(SITUATION[3], 見通す(EVENT[4], ENTITY[2], ENTITY[朱雀大路])) ∧
+   でき_た(EVENT[6], ENTITY[2], SITUATION[3]) ∧ LOC(EVENT[6]) = ENTITY[船岡山] ∧
+    ADV_かつて(EVENT[4]) ∧
+     past(EVENT[6]) ∧
+      ARB[7] = *arb* ∧
+       ENTITY[8] = *pro*{ENTITY[船岡山], ENTITY[朱雀大路]} ∧
+        CRD_には(する(EVENT[9], ARB[7], ENTITY[8], ENTITY[玄武]), 小規模_で_ある(EVENT[10], ENTITY[船岡山])))
+
+# ::id 12_wikipedia_KYOTO_CLT_00003,12;NJ
+# ::snt 標準的 な 風水 の 観点 で は 、 船岡山 を 玄武 を 伝っ て やってくる 山龍 が 目指す 星峰 と 解釈 し て いる 。
+∃ ENTITY[1] ATTRIB[4] EVENT[8] EVENT[9] EVENT[10] EVENT[11] ENTITY[5] ENTITY[3] ENTITY[2] (
+ 標準的_な(ATTRIB[4]) ∧
+  ATTRIBUTE_風水(ATTRIB[4], ENTITY[3]) ∧
+   の_観点(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[1] = *pro* ∧
+     CONJ_te(伝っ_て(EVENT[8], ENTITY[山龍], ENTITY[玄武]), やってくる(EVENT[9], ENTITY[山龍])) ∧
+      目指す(EVENT[10], ENTITY[山龍], ENTITY[5]) ∧ 星峰(ENTITY[5]) ∧
+       解釈する.0_て_いる(EVENT[11], ENTITY[1], ENTITY[船岡山], ENTITY[5]) ∧ で(EVENT[11]) = ENTITY[2])
+
+# ::id 13_wikipedia_KYOTO_CLT_00003,13;NJ
+# ::snt 日本
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[日本])
+
+# ::id 14_wikipedia_KYOTO_CLT_00003,14;NJ
+# ::snt 現代 の 日本 で は 次表 の よう な 、 四神 を 「 山川道澤 」 に 対応 さ せる 解釈 が 一般 に 流布 し て いる 。
+∃ EVENT[6] EVENT[9] EVENT[8] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[2] ENTITY[1] (
+ 現代(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[日本]) ∧
+   次表(ENTITY[5]) ∧
+    の_よう(ENTITY[5], ENTITY[4]) ∧
+     な(EVENT[6], ENTITY[2], ENTITY[4]) ∧
+      せる(EVENT[8], ENTITY[2], ENTITY[四神], 対応する.0(EVENT[9], ENTITY[四神]) ∧ に(EVENT[9]) = ENTITY[山川道澤]) ∧
+       解釈(ENTITY[2]) ∧
+      一般(ENTITY[10]) ∧
+       流布する.0_て_いる(EVENT[11], ENTITY[2]) ∧ に(EVENT[11]) = ENTITY[10] ∧ で(EVENT[11]) = ENTITY[日本])
+
+# ::id 15_wikipedia_KYOTO_CLT_00003,15;NJ
+# ::snt しかし 、 この 対応付け は 古来 から 定まっ て い た という わけ で は ない 。
+∃ ENTITY[1] (
+ 対応付け(ENTITY[1]) ∧
+  ¬ ∃ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] (
+        ENTITY[3] = *pro*{ENTITY[1]} ∧
+         古来(ENTITY[4]) ∧
+          THAT_わけ(定まっ_て_い_た(EVENT[5], ENTITY[3]) ∧ から(EVENT[5]) = ENTITY[4], ENTITY[2]) ∧
+           past(EVENT[5]) ∧ で_は(EVENT[6], ENTITY[1], ENTITY[2])))
+
+# ::id 16_wikipedia_KYOTO_CLT_00003,20;NJ
+# ::snt しかし 『 作庭記 』 自体 に は 平安京 について の 言及 は なく 、 ましてや 山川道澤 の 具体的 地名 など は まったく 記さ れ て い ない 。
+∃ ATTRIB[6] ENTITY[1] EVENT[3] ENTITY[2] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = 自体{ENTITY[作庭記]} ∧
+  RFL_xxx(ENTITY[1], ENTITY[作庭記]) ∧
+   について_の_言及(ENTITY[平安京], ENTITY[2]) ∧
+    具体的(ATTRIB[6]) ∧
+     ATTRIBUTE_地名(ATTRIB[6], ENTITY[5]) ∧ の_地名(ENTITY[山川道澤], ENTITY[5]) ∧
+      など(ENTITY[5], ENTITY[4]) ∧
+       CONJ_ましてや(なく(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[作庭記],
+        ¬ ∃ EVENT[8] まったく ENTITY[7] (ENTITY[7] = ENTITY[4], 記さ_て_い(EVENT[8], _, ENTITY[7]))))
+
+# ::id 17_wikipedia_KYOTO_CLT_00003,22;NJ
+# ::snt その ため 、 同説 が 8 世紀 後葉 に 建設 さ れ た 平安京 選地 の 思想的 背景 で ある と の 前提 に 立っ た 主張 について は 裏付け が ない こと に 注意 が 必要 で ある 。
+∃ SITUATION[15] ATTRIB[12] SITUATION[5] EVENT[17] EVENT[19] ENTITY[16] ENTITY[18] EVENT[11] EVENT[13] EVENT[14] ENTITY[10] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  同説(ENTITY[6]) ∧
+   (CD_8_世紀(ENTITY[10]), 後葉(ENTITY[10])) ∧
+    建設する.0_た(EVENT[11], _, ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[10] ∧ 平安京_選地(ENTITY[8]) ∧
+     思想的(ATTRIB[12]) ∧
+      ATTRIBUTE_背景(ATTRIB[12], ENTITY[7]) ∧ の_背景(ENTITY[8], ENTITY[7]) ∧
+       と(SITUATION[5], で_ある(EVENT[13], ENTITY[6], ENTITY[7])) ∧
+        の_前提(SITUATION[5], ENTITY[4]) ∧
+         立っ_た(EVENT[14], ENTITY[2]) ∧ に(EVENT[14]) = ENTITY[4] ∧ 主張(ENTITY[2]) ∧
+          past(EVENT[11]) ∧
+           past(EVENT[14]) ∧
+            裏付け(ENTITY[16]) ∧
+             こと(SITUATION[15], ない(EVENT[17], ENTITY[16])) ∧
+              注意(ENTITY[18]) ∧
+               必要_で_ある(EVENT[19], ENTITY[18]) ∧ に(EVENT[19]) = SITUATION[15] ∧
+                について(EVENT[19]) = ENTITY[2] ∧ ADV(EVENT[19]) = ENTITY[1])
+
+# ::id 18_wikipedia_KYOTO_CLT_00003,23;NJ
+# ::snt さらに 、 平安京 で うまく 行っ た と さ れる 山川道澤 と の 対応付け は 、 江戸 時代 以降 に 主張 さ れる よう に なっ た もの で あり 、 それ が 一般的 な 解釈 と さ れる よう に なっ た の は ようやく 明治 時代 に なっ て から で ある 。
+∃ SITUATION[26] SITUATION[21] ATTRIB[18] SITUATION[16] ENTITY[15] SITUATION[14] SITUATION[9] SITUATION[3] EVENT[11] EVENT[12] EVENT[13] EVENT[19] EVENT[20] EVENT[23] EVENT[25] ENTITY[10] ENTITY[7] ENTITY[17] ENTITY[22] EVENT[4] EVENT[6] ENTITY[1] (
+ FACT(SITUATION[3], 行っ_た(EVENT[4], ENTITY[山川道澤]) ∧ で(EVENT[4]) = ENTITY[平安京]) ∧
+  さ(EVENT[6], _, ENTITY[山川道澤], SITUATION[3]) ∧
+   と_の_対応付け(ENTITY[山川道澤], ENTITY[1]) ∧
+    ADV_うまく(EVENT[4]) ∧
+     past(EVENT[4]) ∧
+      江戸_時代_以降(ENTITY[10]) ∧
+       よう(SITUATION[9], 主張する.0(EVENT[11], _, ENTITY[7]) ∧ に(EVENT[11]) = ENTITY[10]) ∧
+        なっ_た(EVENT[12], ENTITY[7], SITUATION[9]) ∧ もの(ENTITY[7]) ∧
+         ENTITY[15] = それ{ENTITY[7], ENTITY[10], ENTITY[1], ENTITY[山川道澤], ENTITY[平安京]} ∧
+          一般的_な(ATTRIB[18]) ∧
+           ATTRIBUTE_解釈(ATTRIB[18], ENTITY[17]) ∧
+            よう(SITUATION[16], さ(EVENT[19], _, ENTITY[15], ENTITY[17])) ∧
+             の(SITUATION[14], なっ_た(EVENT[20], ENTITY[15], SITUATION[16])) ∧
+              明治_時代(ENTITY[22]) ∧
+               FACT(SITUATION[21], なっ_て(EVENT[23], SITUATION[14]) ∧ に(EVENT[23]) = ENTITY[22]) ∧
+                ADV_さらに(SITUATION[26]) ∧
+                 past(EVENT[12]) ∧
+                  past(EVENT[20]) ∧
+                   ADV_ようやく(EVENT[23]) ∧
+                    FACT(SITUATION[26],
+                     で_あり(EVENT[13], ENTITY[1], ENTITY[7]) ∧
+                      で_ある(EVENT[25], SITUATION[14]) ∧ te_から(EVENT[25]) = SITUATION[21]))
+
+# ::id 19_wikipedia_KYOTO_CLT_00003,24;NJ
+# ::snt つまり 、 江戸 時代 以前 の 都市 デザイン が 四神相応 と なる よう に 設計 さ れ て い て も 、 その 四神 が 山川道澤 で ある と は 考え にくい 。
+∃ SITUATION[7] SITUATION[4] SITUATION[1] EVENT[5] EVENT[6] EVENT[8] EVENT[9] ENTITY[3] ENTITY[2] (
+ 江戸_時代_以前(ENTITY[3]) ∧
+  の_都市_デザイン(ENTITY[3], ENTITY[2]) ∧
+   よう(SITUATION[4], なる(EVENT[5], ENTITY[2]) ∧ と(EVENT[5]) = ENTITY[四神相応]) ∧
+    FACT(SITUATION[1], 設計する.0_て_い(EVENT[6], _, ENTITY[2]) ∧ に(EVENT[6]) = SITUATION[4]) ∧
+     FACT(SITUATION[7], で_ある(EVENT[8], ENTITY[四神], ENTITY[山川道澤])) ∧
+      考え_にくい(EVENT[9], _, SITUATION[7]) ∧ te(EVENT[9]) = SITUATION[1])
+
+# ::id 20_wikipedia_KYOTO_CLT_00003,28;NJ
+# ::snt 平城京 の 立地 は 、 平安京 で 説か れる ような 山川道澤 に は あてはまら ない 。
+∃ EVENT[3] ENTITY[1] (
+ の_立地(ENTITY[平城京], ENTITY[1]) ∧
+  説か_ような(EVENT[3], _, ENTITY[山川道澤]) ∧ で(EVENT[3]) = ENTITY[平安京] ∧
+   ¬ ∃ EVENT[4] (あてはまら(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[山川道澤]))
+
+# ::id 21_wikipedia_KYOTO_CLT_00003,29;NJ
+# ::snt しかし それ を 四神相応 と する 以上 、 奈良 時代 に は 別 の 解釈 が とら れ て い た こと に なる 。
+∃ SITUATION[7] ENTITY[2] ENTITY[1] EVENT[3] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[4] (
+ 奈良_時代(ENTITY[4]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = それ ∧
+    別(ENTITY[6]) ∧
+     の_解釈(ENTITY[6], ENTITY[5]) ∧
+      こと(SITUATION[7], とら_て_い_た(EVENT[8], _, ENTITY[5])) ∧
+       past(EVENT[8]) ∧
+        CRD_以上(する(EVENT[3], ENTITY[1], ENTITY[2], ENTITY[四神相応]),
+         なる(EVENT[9], ENTITY[5], SITUATION[7]) ∧ に(EVENT[9]) = ENTITY[4]))
+
+# ::id 22_wikipedia_KYOTO_CLT_00003,32;NJ
+# ::snt 『 柳営秘鑑 』 の 著者 で ある 菊池 弥門 にとって 、 江戸城 は 四神相応 の 地 に 建設 さ れ た 城郭 で ある 。
+∃ EVENT[3] EVENT[7] EVENT[8] ENTITY[2] ENTITY[6] ENTITY[4] (
+ の_著者(ENTITY[柳営秘鑑], ENTITY[2]) ∧
+  で_ある(EVENT[3], ENTITY[菊池_弥門], ENTITY[2]) ∧
+   の_地(ENTITY[四神相応], ENTITY[6]) ∧
+    建設する.0_た(EVENT[7], _, ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ 城郭(ENTITY[4]) ∧
+     past(EVENT[7]) ∧ で_ある(EVENT[8], ENTITY[江戸城], ENTITY[4]) ∧ にとって(EVENT[8]) = ENTITY[菊池_弥門])
+
+# ::id 23_wikipedia_KYOTO_CLT_00003,35;NJ
+# ::snt さらに 言え ば 、 姫路城 や 福山城 （ 備後国 ） 、 熊本城 など を 「 山川道澤 」 の 四神相応 と する もの 同様 に 後世 に 創ら れ た 解釈 で ある 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ ARB[2] EVENT[3] CND_ば(ARB[2] = *arb* ∧ ADV_さらに(EVENT[3]) ∧ 言え(EVENT[3], ARB[2]), ∃ SITUATION[15] EVENT[9] EVENT[13] EVENT[14] GROUP[8] ENTITY[7] ENTITY[5] ENTITY[12] ENTITY[10] (
+       CONJ_や(is_element_of(ENTITY[姫路城], GROUP[8]), namely_-ENTITY-(ENTITY[備後国], ENTITY[福山城]) ∧ is_element_of(ENTITY[福山城], GROUP[8]),
+        is_element_of(ENTITY[熊本城], GROUP[8])) ∧
+        など(GROUP[8], ENTITY[7]) ∧
+         の_xxx(ENTITY[山川道澤], ENTITY[四神相応]) ∧
+          する(EVENT[9], ENTITY[5], ENTITY[7], ENTITY[四神相応]) ∧ もの(ENTITY[5]) ∧
+           後世(ENTITY[12]) ∧
+            創ら_た(EVENT[13], _, ENTITY[10]) ∧ に(EVENT[13]) = ENTITY[12] ∧ 解釈(ENTITY[10]) ∧
+             of_ADV_同様_に(ENTITY[5], SITUATION[15]) ∧
+              past(EVENT[13]) ∧ FACT(SITUATION[15], で_ある(EVENT[14], ENTITY[1], ENTITY[10])))))
+
+# ::id 24_wikipedia_KYOTO_CLT_00003,37;NJ
+# ::snt 『 金城温古録 』 で 語ら れ て いる 四神相応 も また 「 山川道澤 」 で は ない 。
+∃ EVENT[2] (
+ 語ら_て_いる(EVENT[2], _, ENTITY[四神相応]) ∧ で(EVENT[2]) = ENTITY[金城温古録] ∧
+  ¬ ∃ EVENT[3] (ADV_また(EVENT[3]) ∧ で_は(EVENT[3], ENTITY[四神相応], ENTITY[山川道澤])))
+
+# ::id 25_wikipedia_KYOTO_CLT_00003,38;NJ
+# ::snt また 古代 中国 の 風水 で は 特定 の 方位 について 固定 し た 吉凶 を とる 考え は なく 、 鬼門 ・ 裏鬼門 を 忌む の は 日本 独自 の 考え方 で ある 。
+∃ ATTRIB[19] ENTITY[8] ENTITY[18] EVENT[11] EVENT[20] EVENT[9] EVENT[10] EVENT[17] ENTITY[5] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[1] ENTITY[15] ENTITY[16] GROUP[14] ENTITY[12] (
+ の_風水(ENTITY[古代_中国], ENTITY[1]) ∧
+  特定(ENTITY[5]) ∧
+   の_方位(ENTITY[5], ENTITY[4]) ∧
+    ENTITY[8] = *pro*{ENTITY[2], ENTITY[4], ENTITY[5], ENTITY[1], ENTITY[古代_中国]} ∧
+     固定する.0_た(EVENT[9], ENTITY[8], ENTITY[6]) ∧ 吉凶(ENTITY[6]) ∧
+      とる(EVENT[10], ENTITY[2], ENTITY[6]) ∧ について(EVENT[10]) = ENTITY[4] ∧ 考え(ENTITY[2]) ∧
+       鬼門(ENTITY[15]) ∧
+        裏鬼門(ENTITY[16]) ∧
+         is_element_of(ENTITY[15], GROUP[14]) ∧ is_element_of(ENTITY[16], GROUP[14]) ∧
+          忌む(EVENT[17], ENTITY[12], GROUP[14]) ∧ の(ENTITY[12]) ∧
+           past(EVENT[9]) ∧
+            独自(ATTRIB[19]) ∧
+             ATTRIBUTE_xxx(ATTRIB[19], ENTITY[日本]) ∧
+              の_考え方(ENTITY[日本], ENTITY[18]) ∧
+               なく(EVENT[11], ENTITY[2]) ∧ で(EVENT[11]) = ENTITY[1] ∧
+                で_ある(EVENT[20], ENTITY[12], ENTITY[18]))
+
+# ::id 26_wikipedia_KYOTO_CLT_00003,39;NJ
+# ::snt そういう 点 で 『 竈門山旧記 』 を 根拠 と し て 、 竈門神社 が 大宰府 の 鬼門 を 護る ため に 大宰府 建設 時 に 創建 さ れ た という 記述 から 、 大宰府 が 風水 に 則っ て 作ら れ た とする 説 は 問題 が 多い 。
+∃ SITUATION[5] EVENT[4] EVENT[7] EVENT[9] EVENT[15] ENTITY[3] ENTITY[6] ENTITY[8] ENTITY[14] ENTITY[2] EVENT[12] EVENT[13] ENTITY[11] ENTITY[10] ENTITY[1] (
+ 点(ENTITY[1]) ∧
+  風水(ENTITY[11]) ∧
+   THAT_説(CONJ_te(則っ_て(EVENT[12], ENTITY[大宰府]) ∧ に(EVENT[12]) = ENTITY[11],
+         作ら_た(EVENT[13], _, ENTITY[大宰府])), ENTITY[10]) ∧
+    past(EVENT[13]) ∧
+     根拠(ENTITY[3]) ∧
+      の_鬼門(ENTITY[大宰府], ENTITY[6]) ∧
+       ため(SITUATION[5], 護る(EVENT[7], ENTITY[竈門神社], ENTITY[6])) ∧
+        大宰府_建設_時(ENTITY[8]) ∧
+         THAT_記述(CONJ_te(し_て(EVENT[4], _, ENTITY[竈門山旧記], ENTITY[3]),
+               創建する.0_た(EVENT[9], _, ENTITY[竈門神社]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+                に(EVENT[9]) = SITUATION[5]), ENTITY[2]) ∧
+          問題(ENTITY[14]) ∧
+           past(EVENT[9]) ∧
+            多い(EVENT[15], (ENTITY[10], ENTITY[14])) ∧ から(EVENT[15]) = ENTITY[2] ∧
+             で(EVENT[15]) = ENTITY[1])
+
+# ::id 27_wikipedia_KYOTO_CLT_00003,40;NJ
+# ::snt この よう に 四神相応 の 解釈 は 古代 から 近世 にかけて 変化 し て いき 、 古代 中国 の 風水 と は 異なる 独自 の もの で あっ た と 考え られる 。
+∃ SITUATION[1] EVENT[6] EVENT[10] EVENT[12] EVENT[13] ENTITY[5] ENTITY[4] ENTITY[11] ENTITY[7] ENTITY[9] ENTITY[3] ENTITY[2] (
+ よう(ENTITY[2]) ∧
+  の_解釈(ENTITY[四神相応], ENTITY[3]) ∧
+   の_風水(ENTITY[古代_中国], ENTITY[9]) ∧
+    古代(ENTITY[4]) ∧
+     近世(ENTITY[5]) ∧
+      独自(ENTITY[11]) ∧
+       異なる(EVENT[10], ENTITY[7]) ∧ と(EVENT[10]) = ENTITY[9] ∧ の_もの(ENTITY[11], ENTITY[7]) ∧
+        と(SITUATION[1],
+         変化する.0_て_いき(EVENT[6], ENTITY[3]) ∧ にかけて(EVENT[6]) = ENTITY[5] ∧ から(EVENT[6]) = ENTITY[4] ∧
+          で_あっ_た(EVENT[12], ENTITY[3], ENTITY[7]) ∧ に(EVENT[12]) = ENTITY[2]) ∧
+         past(EVENT[12]) ∧ 考え(EVENT[13], _, SITUATION[1]))
+
+# ::id 28_wikipedia_KYOTO_CLT_00003,41;NJ
+# ::snt 現代 に 残る 四神相応 の 例
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 現代(ENTITY[3]) ∧
+  残る(EVENT[4], ENTITY[四神相応]) ∧ に(EVENT[4]) = ENTITY[3] ∧
+   の_例(ENTITY[四神相応], ENTITY[1]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])

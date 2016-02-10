@@ -1,0 +1,267 @@
+# ::id 1_childrens_CALDECOTT-1878;IJ
+# ::snt ジャック が 建て た 家
+∃ HOUSE.LOC[1] EVENT[3] EVENT[4] (
+ past(EVENT[3]) ∧
+  建てる.0_た(EVENT[3], JACK.PERSON[ジャック], HOUSE.LOC[1]) ∧ 家(HOUSE.LOC[1]) ∧
+   xxx(EVENT[4]) ∧ LINK(EVENT[4]) = HOUSE.LOC[1])
+
+# ::id 2_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 です 。
+∃ REF[1] HOUSE.LOC[2] EVENT[4] EVENT[5] (
+ REF[1] = これ ∧
+  past(EVENT[4]) ∧
+   建てる.0_た(EVENT[4], JACK.PERSON[ジャック], HOUSE.LOC[2]) ∧ 家(HOUSE.LOC[2]) ∧ です(EVENT[5], REF[1], HOUSE.LOC[2]))
+
+# ::id 3_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 です 。
+∃ REF[1] HOUSE.LOC[4] MALT.FOOD[2] EVENT[6] EVENT[7] EVENT[8] (
+ REF[1] = これ ∧
+  past(EVENT[6]) ∧
+   past(EVENT[7]) ∧
+    建てる.0_た(EVENT[6], JACK.PERSON[ジャック], HOUSE.LOC[4]) ∧ 家(HOUSE.LOC[4]) ∧
+     置く.0_た(EVENT[7], _, MALT.FOOD[2]) ∧ に(EVENT[7]) = HOUSE.LOC[4] ∧ 麦芽(MALT.FOOD[2]) ∧
+      です(EVENT[8], REF[1], MALT.FOOD[2]))
+
+# ::id 4_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ です 。
+∃ REF[1] HOUSE.LOC[6] MALT.FOOD[4] RAT.ANIMAL[2] EVENT[8] EVENT[9] EVENT[10] EVENT[11] (
+ REF[1] = これ ∧
+  past(EVENT[8]) ∧
+   past(EVENT[9]) ∧
+    past(EVENT[10]) ∧
+     建てる.0_た(EVENT[8], JACK.PERSON[ジャック], HOUSE.LOC[6]) ∧ 家(HOUSE.LOC[6]) ∧
+      置く.0_た(EVENT[9], _, MALT.FOOD[4]) ∧ に(EVENT[9]) = HOUSE.LOC[6] ∧ 麦芽(MALT.FOOD[4]) ∧
+       食べる.0_た(EVENT[10], RAT.ANIMAL[2], MALT.FOOD[4]) ∧ ねずみ(RAT.ANIMAL[2]) ∧ です(EVENT[11], REF[1], RAT.ANIMAL[2]))
+
+# ::id 5_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ です 。
+∃ REF[1] HOUSE.LOC[8] MALT.FOOD[6] RAT.ANIMAL[4] CAT.ANIMAL[2] EVENT[10] EVENT[11] EVENT[12] EVENT[13] EVENT[14] (
+ REF[1] = これ ∧
+  past(EVENT[10]) ∧
+   past(EVENT[11]) ∧
+    past(EVENT[12]) ∧
+     past(EVENT[13]) ∧
+      建てる.0_た(EVENT[10], JACK.PERSON[ジャック], HOUSE.LOC[8]) ∧ 家(HOUSE.LOC[8]) ∧
+       置く.0_た(EVENT[11], _, MALT.FOOD[6]) ∧ に(EVENT[11]) = HOUSE.LOC[8] ∧ 麦芽(MALT.FOOD[6]) ∧
+        食べる.0_た(EVENT[12], RAT.ANIMAL[4], MALT.FOOD[6]) ∧ ねずみ(RAT.ANIMAL[4]) ∧
+         殺す.0_た(EVENT[13], CAT.ANIMAL[2], RAT.ANIMAL[4]) ∧ ねこ(CAT.ANIMAL[2]) ∧ です(EVENT[14], REF[1], CAT.ANIMAL[2]))
+
+# ::id 6_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 です 。
+∃ REF[1] HOUSE.LOC[10] MALT.FOOD[8] RAT.ANIMAL[6] CAT.ANIMAL[4] CAT.ANIMAL[2] EVENT[12] EVENT[13] EVENT[14] EVENT[15] EVENT[16] EVENT[17] (
+ REF[1] = これ ∧
+  past(EVENT[12]) ∧
+   past(EVENT[13]) ∧
+    past(EVENT[14]) ∧
+     past(EVENT[15]) ∧
+      past(EVENT[16]) ∧
+       建てる.0_た(EVENT[12], JACK.PERSON[ジャック], HOUSE.LOC[10]) ∧ 家(HOUSE.LOC[10]) ∧
+        置く.0_た(EVENT[13], _, MALT.FOOD[8]) ∧ に(EVENT[13]) = HOUSE.LOC[10] ∧ 麦芽(MALT.FOOD[8]) ∧
+         食べる.0_た(EVENT[14], RAT.ANIMAL[6], MALT.FOOD[8]) ∧ ねずみ(RAT.ANIMAL[6]) ∧
+          殺す.0_た(EVENT[15], CAT.ANIMAL[4], RAT.ANIMAL[6]) ∧ ねこ(CAT.ANIMAL[4]) ∧
+           いじめる.0_た(EVENT[16], CAT.ANIMAL[2], CAT.ANIMAL[4]) ∧ 犬(CAT.ANIMAL[2]) ∧ です(EVENT[17], REF[1], CAT.ANIMAL[2]))
+
+# ::id 7_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 です 。
+∃ REF[1] HOUSE.LOC[12] MALT.FOOD[10] RAT.ANIMAL[8] CAT.ANIMAL[6] CAT.ANIMAL[4] HORN.COW.ANIMAL[21] COW.ANIMAL[2] EVENT[14] EVENT[15] EVENT[16] EVENT[17] EVENT[18] EVENT[19] EVENT[23] EVENT[24] EVENT[25] (
+ REF[1] = これ ∧
+  past(EVENT[14]) ∧
+   past(EVENT[15]) ∧
+    past(EVENT[16]) ∧
+     past(EVENT[17]) ∧
+      past(EVENT[18]) ∧
+       past(EVENT[19]) ∧
+        建てる.0_た(EVENT[14], JACK.PERSON[ジャック], HOUSE.LOC[12]) ∧ 家(HOUSE.LOC[12]) ∧
+         置く.0_た(EVENT[15], _, MALT.FOOD[10]) ∧ に(EVENT[15]) = HOUSE.LOC[12] ∧ 麦芽(MALT.FOOD[10]) ∧
+          食べる.0_た(EVENT[16], RAT.ANIMAL[8], MALT.FOOD[10]) ∧ ねずみ(RAT.ANIMAL[8]) ∧
+           殺す.0_た(EVENT[17], CAT.ANIMAL[6], RAT.ANIMAL[8]) ∧ ねこ(CAT.ANIMAL[6]) ∧
+            いじめる.0_た(EVENT[18], CAT.ANIMAL[4], CAT.ANIMAL[6]) ∧ 犬(CAT.ANIMAL[4]) ∧
+             ねじれる.0_た(EVENT[23], HORN.COW.ANIMAL[21]) ∧ 角(HORN.COW.ANIMAL[21]) ∧
+              突き上げる.0_た(EVENT[19], COW.ANIMAL[2], CAT.ANIMAL[4]) ∧
+               持つ.0(EVENT[24], COW.ANIMAL[2], HORN.COW.ANIMAL[21]) ∧ 牛(COW.ANIMAL[2]) ∧
+               です(EVENT[25], REF[1], COW.ANIMAL[2]))
+
+# ::id 8_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 です 。
+∃ ATTRIB[29] REF[1] HOUSE.LOC[15] MALT.FOOD[13] RAT.ANIMAL[11] CAT.ANIMAL[9] CAT.ANIMAL[7] HORN.COW.ANIMAL[24] COW.ANIMAL[5] MILK.COW.ANIMAL[4] MAIDEN.PERSON[2] EVENT[17] EVENT[18] EVENT[19] EVENT[20] EVENT[21] EVENT[22] EVENT[26] EVENT[27] EVENT[28] EVENT[30] (
+ REF[1] = これ ∧
+  past(EVENT[17]) ∧
+   past(EVENT[18]) ∧
+    past(EVENT[19]) ∧
+     past(EVENT[20]) ∧
+      past(EVENT[21]) ∧
+       past(EVENT[22]) ∧
+        past(EVENT[28]) ∧
+         建てる.0_た(EVENT[17], JACK.PERSON[ジャック], HOUSE.LOC[15]) ∧ 家(HOUSE.LOC[15]) ∧
+          置く.0_た(EVENT[18], _, MALT.FOOD[13]) ∧ に(EVENT[18]) = HOUSE.LOC[15] ∧ 麦芽(MALT.FOOD[13]) ∧
+           食べる.0_た(EVENT[19], RAT.ANIMAL[11], MALT.FOOD[13]) ∧ ねずみ(RAT.ANIMAL[11]) ∧
+            殺す.0_た(EVENT[20], CAT.ANIMAL[9], RAT.ANIMAL[11]) ∧ ねこ(CAT.ANIMAL[9]) ∧
+             いじめる.0_た(EVENT[21], CAT.ANIMAL[7], CAT.ANIMAL[9]) ∧ 犬(CAT.ANIMAL[7]) ∧
+              ねじれる.0_た(EVENT[26], HORN.COW.ANIMAL[24]) ∧ 角(HORN.COW.ANIMAL[24]) ∧
+               突き上げる.0_た(EVENT[22], COW.ANIMAL[5], CAT.ANIMAL[7]) ∧
+                持つ.0(EVENT[27], COW.ANIMAL[5], HORN.COW.ANIMAL[24]) ∧ 牛(COW.ANIMAL[5]) ∧
+                の_乳(COW.ANIMAL[5], MILK.COW.ANIMAL[4]) ∧
+                 この上なく_みじめ_な(ATTRIB[29]) ∧
+                  しぼる.0_た(EVENT[28], MAIDEN.PERSON[2], MILK.COW.ANIMAL[4]) ∧ ATTRIBUTE_少女(ATTRIB[29], MAIDEN.PERSON[2]) ∧
+                   です(EVENT[30], REF[1], MAIDEN.PERSON[2]))
+
+# ::id 9_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 です 。
+∃ ATTRIB[31] REF[1] HOUSE.LOC[17] MALT.FOOD[15] RAT.ANIMAL[13] CAT.ANIMAL[11] CAT.ANIMAL[9] HORN.COW.ANIMAL[26] COW.ANIMAL[7] MILK.COW.ANIMAL[6] MAIDEN.PERSON[4] MAN.PERSON[2] EVENT[19] EVENT[20] EVENT[21] EVENT[22] EVENT[23] EVENT[24] EVENT[28] EVENT[29] EVENT[30] EVENT[32] EVENT[34] EVENT[36] EVENT[37] (
+ REF[1] = これ ∧
+  past(EVENT[19]) ∧
+   past(EVENT[20]) ∧
+    past(EVENT[21]) ∧
+     past(EVENT[22]) ∧
+      past(EVENT[23]) ∧
+       past(EVENT[24]) ∧
+        past(EVENT[30]) ∧
+         past(EVENT[32]) ∧
+          ADV_この上なく(EVENT[34]) ∧
+           建てる.0_た(EVENT[19], JACK.PERSON[ジャック], HOUSE.LOC[17]) ∧ 家(HOUSE.LOC[17]) ∧
+            置く.0_た(EVENT[20], _, MALT.FOOD[15]) ∧ に(EVENT[20]) = HOUSE.LOC[17] ∧ 麦芽(MALT.FOOD[15]) ∧
+             食べる.0_た(EVENT[21], RAT.ANIMAL[13], MALT.FOOD[15]) ∧ ねずみ(RAT.ANIMAL[13]) ∧
+              殺す.0_た(EVENT[22], CAT.ANIMAL[11], RAT.ANIMAL[13]) ∧ ねこ(CAT.ANIMAL[11]) ∧
+               いじめる.0_た(EVENT[23], CAT.ANIMAL[9], CAT.ANIMAL[11]) ∧ 犬(CAT.ANIMAL[9]) ∧
+                ねじれる.0_た(EVENT[28], HORN.COW.ANIMAL[26]) ∧ 角(HORN.COW.ANIMAL[26]) ∧
+                 突き上げる.0_た(EVENT[24], COW.ANIMAL[7], CAT.ANIMAL[9]) ∧
+                  持つ.0(EVENT[29], COW.ANIMAL[7], HORN.COW.ANIMAL[26]) ∧ 牛(COW.ANIMAL[7]) ∧
+                  の_乳(COW.ANIMAL[7], MILK.COW.ANIMAL[6]) ∧
+                   この上なく_みじめ_な(ATTRIB[31]) ∧
+                    しぼる.0_た(EVENT[30], MAIDEN.PERSON[4], MILK.COW.ANIMAL[6]) ∧ ATTRIBUTE_少女(ATTRIB[31], MAIDEN.PERSON[4]) ∧
+                     キスする.0_た(EVENT[32], MAN.PERSON[2], MAIDEN.PERSON[4]) ∧
+                      CONJ_te(みすぼらしく_て(EVENT[34], MAN.PERSON[2]), ぼろぼろ_な(EVENT[36], MAN.PERSON[2])) ∧
+                       男(MAN.PERSON[2]) ∧ です(EVENT[37], REF[1], MAN.PERSON[2]))
+
+# ::id 10_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 です 。
+∃ ATTRIB[34] SITUATION[46] REF[1] HOUSE.LOC[20] MALT.FOOD[18] RAT.ANIMAL[16] CAT.ANIMAL[14] CAT.ANIMAL[12] HORN.COW.ANIMAL[29] COW.ANIMAL[10] MILK.COW.ANIMAL[9] MAIDEN.PERSON[7] MAN.PERSON[5] MARRIAGE.EVENT[4] BEARD.PRIEST.PERSON[42] HAIR.PRIEST.PERSON[44] PRIEST.PERSON[2] EVENT[22] EVENT[23] EVENT[24] EVENT[25] EVENT[26] EVENT[27] EVENT[31] EVENT[32] EVENT[33] EVENT[35] EVENT[37] EVENT[39] EVENT[40] EVENT[43] EVENT[45] EVENT[47] (
+ REF[1] = これ ∧
+  past(EVENT[22]) ∧
+   past(EVENT[23]) ∧
+    past(EVENT[24]) ∧
+     past(EVENT[25]) ∧
+      past(EVENT[26]) ∧
+       past(EVENT[27]) ∧
+        past(EVENT[33]) ∧
+         past(EVENT[35]) ∧
+          ADV_この上なく(EVENT[37]) ∧
+           past(EVENT[40]) ∧
+            ADV_この上なく(SITUATION[46]) ∧
+             建てる.0_た(EVENT[22], JACK.PERSON[ジャック], HOUSE.LOC[20]) ∧ 家(HOUSE.LOC[20]) ∧
+              置く.0_た(EVENT[23], _, MALT.FOOD[18]) ∧ に(EVENT[23]) = HOUSE.LOC[20] ∧
+               麦芽(MALT.FOOD[18]) ∧
+               食べる.0_た(EVENT[24], RAT.ANIMAL[16], MALT.FOOD[18]) ∧ ねずみ(RAT.ANIMAL[16]) ∧
+                殺す.0_た(EVENT[25], CAT.ANIMAL[14], RAT.ANIMAL[16]) ∧ ねこ(CAT.ANIMAL[14]) ∧
+                 いじめる.0_た(EVENT[26], CAT.ANIMAL[12], CAT.ANIMAL[14]) ∧ 犬(CAT.ANIMAL[12]) ∧
+                  ねじれる.0_た(EVENT[31], HORN.COW.ANIMAL[29]) ∧ 角(HORN.COW.ANIMAL[29]) ∧
+                   突き上げる.0_た(EVENT[27], COW.ANIMAL[10], CAT.ANIMAL[12]) ∧
+                    持つ.0(EVENT[32], COW.ANIMAL[10], HORN.COW.ANIMAL[29]) ∧ 牛(COW.ANIMAL[10]) ∧
+                    の_乳(COW.ANIMAL[10], MILK.COW.ANIMAL[9]) ∧
+                     この上なく_みじめ_な(ATTRIB[34]) ∧
+                      しぼる.0_た(EVENT[33], MAIDEN.PERSON[7], MILK.COW.ANIMAL[9]) ∧ ATTRIBUTE_少女(ATTRIB[34], MAIDEN.PERSON[7]) ∧
+                       キスする.0_た(EVENT[35], MAN.PERSON[5], MAIDEN.PERSON[7]) ∧
+                        CONJ_te(みすぼらしく_て(EVENT[37], MAN.PERSON[5]), ぼろぼろ_な(EVENT[39], MAN.PERSON[5])) ∧
+                         男(MAN.PERSON[5]) ∧
+                        の_結婚式(MAN.PERSON[5], MARRIAGE.EVENT[4]) ∧
+                         ひげ(BEARD.PRIEST.PERSON[42]) ∧
+                          髪(HAIR.PRIEST.PERSON[44]) ∧
+                           行う.0_た(EVENT[40], PRIEST.PERSON[2], MARRIAGE.EVENT[4]) ∧
+                            FACT(SITUATION[46],
+                             剃り上げる.0(EVENT[43], PRIEST.PERSON[2], BEARD.PRIEST.PERSON[42]) ∧
+                              刈り込む.0_だ(EVENT[45], PRIEST.PERSON[2], HAIR.PRIEST.PERSON[44])) ∧ 司祭(PRIEST.PERSON[2]) ∧
+                            です(EVENT[47], REF[1], PRIEST.PERSON[2]))
+
+# ::id 11_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 の 目 を 覚まし た 暁 に 鳴い た おんどり です 。
+∃ ATTRIB[37] SITUATION[49] REF[1] HOUSE.LOC[23] MALT.FOOD[21] RAT.ANIMAL[19] CAT.ANIMAL[17] CAT.ANIMAL[15] HORN.COW.ANIMAL[32] COW.ANIMAL[13] MILK.COW.ANIMAL[12] MAIDEN.PERSON[10] MAN.PERSON[8] MARRIAGE.EVENT[7] BEARD.PRIEST.PERSON[45] HAIR.PRIEST.PERSON[47] PRIEST.PERSON[5] EYE.PRIEST.PERSON[4] TIME[52] COCK.ANIMAL[2] EVENT[25] EVENT[26] EVENT[27] EVENT[28] EVENT[29] EVENT[30] EVENT[34] EVENT[35] EVENT[36] EVENT[38] EVENT[40] EVENT[42] EVENT[43] EVENT[46] EVENT[48] EVENT[50] EVENT[53] EVENT[54] (
+ REF[1] = これ ∧
+  past(EVENT[25]) ∧
+   past(EVENT[26]) ∧
+    past(EVENT[27]) ∧
+     past(EVENT[28]) ∧
+      past(EVENT[29]) ∧
+       past(EVENT[30]) ∧
+        past(EVENT[36]) ∧
+         past(EVENT[38]) ∧
+          ADV_この上なく(EVENT[40]) ∧
+           past(EVENT[43]) ∧
+            ADV_この上なく(SITUATION[49]) ∧
+             past(EVENT[50]) ∧
+              past(EVENT[53]) ∧
+               建てる.0_た(EVENT[25], JACK.PERSON[ジャック], HOUSE.LOC[23]) ∧ 家(HOUSE.LOC[23]) ∧
+                置く.0_た(EVENT[26], _, MALT.FOOD[21]) ∧ に(EVENT[26]) = HOUSE.LOC[23] ∧
+                 麦芽(MALT.FOOD[21]) ∧
+                 食べる.0_た(EVENT[27], RAT.ANIMAL[19], MALT.FOOD[21]) ∧ ねずみ(RAT.ANIMAL[19]) ∧
+                  殺す.0_た(EVENT[28], CAT.ANIMAL[17], RAT.ANIMAL[19]) ∧ ねこ(CAT.ANIMAL[17]) ∧
+                   いじめる.0_た(EVENT[29], CAT.ANIMAL[15], CAT.ANIMAL[17]) ∧ 犬(CAT.ANIMAL[15]) ∧
+                    ねじれる.0_た(EVENT[34], HORN.COW.ANIMAL[32]) ∧ 角(HORN.COW.ANIMAL[32]) ∧
+                     突き上げる.0_た(EVENT[30], COW.ANIMAL[13], CAT.ANIMAL[15]) ∧
+                      持つ.0(EVENT[35], COW.ANIMAL[13], HORN.COW.ANIMAL[32]) ∧ 牛(COW.ANIMAL[13]) ∧
+                      の_乳(COW.ANIMAL[13], MILK.COW.ANIMAL[12]) ∧
+                       この上なく_みじめ_な(ATTRIB[37]) ∧
+                        しぼる.0_た(EVENT[36], MAIDEN.PERSON[10], MILK.COW.ANIMAL[12]) ∧ ATTRIBUTE_少女(ATTRIB[37], MAIDEN.PERSON[10]) ∧
+                         キスする.0_た(EVENT[38], MAN.PERSON[8], MAIDEN.PERSON[10]) ∧
+                          CONJ_te(みすぼらしく_て(EVENT[40], MAN.PERSON[8]), ぼろぼろ_な(EVENT[42], MAN.PERSON[8])) ∧
+                           男(MAN.PERSON[8]) ∧
+                          の_結婚式(MAN.PERSON[8], MARRIAGE.EVENT[7]) ∧
+                           ひげ(BEARD.PRIEST.PERSON[45]) ∧
+                            髪(HAIR.PRIEST.PERSON[47]) ∧
+                             行う.0_た(EVENT[43], PRIEST.PERSON[5], MARRIAGE.EVENT[7]) ∧
+                              FACT(SITUATION[49],
+                               剃り上げる.0(EVENT[46], PRIEST.PERSON[5], BEARD.PRIEST.PERSON[45]) ∧
+                                刈り込む.0_だ(EVENT[48], PRIEST.PERSON[5], HAIR.PRIEST.PERSON[47])) ∧ 司祭(PRIEST.PERSON[5]) ∧
+                              の_目(PRIEST.PERSON[5], EYE.PRIEST.PERSON[4]) ∧
+                               暁(TIME[52]) ∧
+                                覚ます.0_た(EVENT[50], COCK.ANIMAL[2], EYE.PRIEST.PERSON[4]) ∧
+                                 鳴く.0_た(EVENT[53], COCK.ANIMAL[2]) ∧ に(EVENT[53]) = TIME[52] ∧
+                                  おんどり(COCK.ANIMAL[2]) ∧ です(EVENT[54], REF[1], COCK.ANIMAL[2]))
+
+# ::id 12_childrens_CALDECOTT-1878;IJ
+# ::snt これ は 、 ジャック が 建て た 家 に 置か れ た 麦芽 を 食べ た ねずみ を 殺し た ねこ を いじめ た 犬 を 突き上げ た ねじれ た 角 を 持つ 牛 の 乳 を しぼっ た この上なく みじめ な 少女 に キス し た この上なく みすぼらしく て ぼろぼろ な 男 の 結婚式 を 行っ た この上なく ひげ を 剃り上げ 髪 を 刈り込ん だ 司祭 の 目 を 覚まし た 暁 に 鳴い た おんどり に やっ た とうもろこし の 種 を まい た 農夫 です 。
+∃ SITUATION[55] ATTRIB[43] ARB[7] REF[1] EVENT[31] EVENT[32] EVENT[33] EVENT[34] EVENT[35] EVENT[36] EVENT[40] EVENT[41] EVENT[42] EVENT[44] EVENT[46] EVENT[48] EVENT[49] EVENT[52] EVENT[54] EVENT[56] EVENT[59] EVENT[60] EVENT[61] EVENT[62] HOUSE.LOC[29] MALT.FOOD[27] RAT.ANIMAL[25] CAT.ANIMAL[23] CAT.ANIMAL[21] HORN.COW.ANIMAL[38] COW.ANIMAL[19] MILK.COW.ANIMAL[18] MAIDEN.PERSON[16] MAN.PERSON[14] MARRIAGE.EVENT[13] BEARD.PRIEST.PERSON[51] HAIR.PRIEST.PERSON[53] PRIEST.PERSON[11] EYE.PRIEST.PERSON[10] TIME[58] COCK.ANIMAL[8] CORN.FOOD[5] SEED.CORN.FOOD[4] FARMER.PERSON[2] (
+ REF[1] = これ ∧
+  ARB[7] = *arb* ∧
+   建てる.0_た(EVENT[31], JACK.PERSON[ジャック], HOUSE.LOC[29]) ∧ 家(HOUSE.LOC[29]) ∧
+    置く.0_た(EVENT[32], _, MALT.FOOD[27]) ∧ に(EVENT[32]) = HOUSE.LOC[29] ∧ 麦芽(MALT.FOOD[27]) ∧
+     食べる.0_た(EVENT[33], RAT.ANIMAL[25], MALT.FOOD[27]) ∧ ねずみ(RAT.ANIMAL[25]) ∧
+      殺す.0_た(EVENT[34], CAT.ANIMAL[23], RAT.ANIMAL[25]) ∧ ねこ(CAT.ANIMAL[23]) ∧
+       いじめる.0_た(EVENT[35], CAT.ANIMAL[21], CAT.ANIMAL[23]) ∧ 犬(CAT.ANIMAL[21]) ∧
+        ねじれる.0_た(EVENT[40], HORN.COW.ANIMAL[38]) ∧ 角(HORN.COW.ANIMAL[38]) ∧
+         突き上げる.0_た(EVENT[36], COW.ANIMAL[19], CAT.ANIMAL[21]) ∧ 持つ.0(EVENT[41], COW.ANIMAL[19], HORN.COW.ANIMAL[38]) ∧ 牛(COW.ANIMAL[19]) ∧
+          の_乳(COW.ANIMAL[19], MILK.COW.ANIMAL[18]) ∧
+           この上なく_みじめ_な(ATTRIB[43]) ∧
+            しぼる.0_た(EVENT[42], MAIDEN.PERSON[16], MILK.COW.ANIMAL[18]) ∧ ATTRIBUTE_少女(ATTRIB[43], MAIDEN.PERSON[16]) ∧
+             キスする.0_た(EVENT[44], MAN.PERSON[14], MAIDEN.PERSON[16]) ∧
+              CONJ_te(みすぼらしく_て(EVENT[46], MAN.PERSON[14]), ぼろぼろ_な(EVENT[48], MAN.PERSON[14])) ∧ 男(MAN.PERSON[14]) ∧
+              の_結婚式(MAN.PERSON[14], MARRIAGE.EVENT[13]) ∧
+               ひげ(BEARD.PRIEST.PERSON[51]) ∧
+                髪(HAIR.PRIEST.PERSON[53]) ∧
+                 行う.0_た(EVENT[49], PRIEST.PERSON[11], MARRIAGE.EVENT[13]) ∧
+                  FACT(SITUATION[55],
+                   剃り上げる.0(EVENT[52], PRIEST.PERSON[11], BEARD.PRIEST.PERSON[51]) ∧ 刈り込む.0_だ(EVENT[54], PRIEST.PERSON[11], HAIR.PRIEST.PERSON[53])) ∧
+                   司祭(PRIEST.PERSON[11]) ∧
+                  の_目(PRIEST.PERSON[11], EYE.PRIEST.PERSON[10]) ∧
+                   暁(TIME[58]) ∧
+                    覚ます.0_た(EVENT[56], COCK.ANIMAL[8], EYE.PRIEST.PERSON[10]) ∧
+                     鳴く.0_た(EVENT[59], COCK.ANIMAL[8]) ∧ に(EVENT[59]) = TIME[58] ∧
+                      おんどり(COCK.ANIMAL[8]) ∧
+                     やる.0_た(EVENT[60], ARB[7], CORN.FOOD[5]) ∧ に(EVENT[60]) = COCK.ANIMAL[8] ∧
+                      とうもろこし(CORN.FOOD[5]) ∧
+                      の_種(CORN.FOOD[5], SEED.CORN.FOOD[4]) ∧
+                       まく.0_た(EVENT[61], FARMER.PERSON[2], SEED.CORN.FOOD[4]) ∧ 農夫(FARMER.PERSON[2]) ∧
+                        past(EVENT[31]) ∧
+                         past(EVENT[32]) ∧
+                          past(EVENT[33]) ∧
+                           past(EVENT[34]) ∧
+                            past(EVENT[35]) ∧
+                             past(EVENT[36]) ∧
+                              past(EVENT[42]) ∧
+                               past(EVENT[44]) ∧
+                                ADV_この上なく(EVENT[46]) ∧
+                                 past(EVENT[49]) ∧
+                                  ADV_この上なく(SITUATION[55]) ∧
+                                   past(EVENT[56]) ∧
+                                    past(EVENT[59]) ∧
+                                     past(EVENT[60]) ∧
+                                      past(EVENT[61]) ∧ です(EVENT[62], REF[1], FARMER.PERSON[2]))

@@ -1,0 +1,1139 @@
+% ::id 1_newswire_MASC;20000410_nyt;AT1-1;NE
+% ::snt Iraq clears visit by Ohio official
+fof(ex1414051788560,axiom,(
+    ? [X1,X2,E3] :
+      ( ohio_official_1(s0,X1)
+      & is_visit_by_2(s0,X2,X1)
+      & clears_3(s0,E3,iraq,X2) ) )).
+
+% ::id 2_newswire_MASC;20000410_nyt;AT2-2;NE
+% ::snt By Scott Montgomery Washington
+fof(ex1414051788861,axiom,(
+    ? [E1] :
+      ( xxx_1(s0,E1)
+      & by_2(s0,E1,scott_montgomery)
+      & tmp_2(s0,E1,washington) ) )).
+
+% ::id 3_newswire_MASC;20000410_nyt;AT3-1;NE
+% ::snt The Iraqi government has agreed to let U.S. Rep. Tony Hall visit the country next week to assess a humanitarian crisis that has festered since the Gulf War of 1990 , Hall's office said Monday .
+fof(ex1414051789210,axiom,(
+    ? [X1,E2] :
+      ( is_office_of_2(s0,X1,hall)
+      & is_before_2(s0,E2,e0)
+      & ? [S14] :
+          ( said_3(s0,E2,X1,S14)
+          & ? [X3,X4,T5,X6,T7,E8,E9,E10,E11,E12,S13] :
+              ( iraqi_1(S14,X4)
+              & government_1(S14,X4)
+              & country_1(S14,X3)
+              & predicate__1990_1(S14,T5)
+              & u_s_rep_1(S14,tony_hall)
+              & humanitarian_1(S14,X6)
+              & has_festered_2(S14,E8,X6)
+              & since_2(S14,E8,gulf_war)
+              & crisis_1(S14,X6)
+              & is_of_2(S14,gulf_war,T5)
+              & next_1(S14,T7)
+              & week_1(S14,T7)
+              & ? [S15] :
+                  ( fact_2(S14,S13,S15)
+                  & assess_3(S15,E9,tony_hall,X6) )
+              & ? [S16] :
+                  ( has_agreed_3(S14,E12,X4,S16)
+                  & ? [S17] :
+                      ( let_3(S16,E11,X4,S17)
+                      & visit_3(S17,E10,tony_hall,X3)
+                      & tmp_2(S17,E10,T7)
+                      & prp_2(S17,E10,S13) ) ) ) )
+      & tmp_2(s0,E2,monday) ) )).
+
+% ::id 4_newswire_MASC;20000410_nyt;AT3-2;NE
+% ::snt The Dayton Democrat , who has traveled to other crisis points including Sierra Leone and North Korea , will spend three days visiting hospitals and other facilities to seek understanding why aid has been ineffective in stemming malnourishment and other medical problems .
+fof(ex1414051789579,axiom,(
+    ? [X1,G2,E3,E4] :
+      ( ? [G5] :
+          ( including_3(s0,E3,unspecified,G2)
+          & crisis_points_1(s0,G5)
+          & has_traveled_2(s0,E4,X1)
+          & to_2(s0,E4,G5) )
+      & dayton_democrat_1(s0,X1)
+      & is_of_2(s0,sierra_leone,G2)
+      & is_of_2(s0,north_korea,G2)
+      & ? [G6,T7,E8,E9,E10,E11,S14,S13,S12] :
+          ( ? [G25] :
+              ( hospitals_1(s0,G25)
+              & is_of_2(s0,G25,G6) )
+          & ? [G26] :
+              ( facilities_1(s0,G26)
+              & is_of_2(s0,G26,G6) )
+          & three_1(s0,T7)
+          & days_1(s0,T7)
+          & ? [S27] :
+              ( fact_2(s0,S14,S27)
+              & ? [S28] :
+                  ( understanding_3(S27,E8,X1,S28)
+                  & ? [X15,X16,G17,A21,S20,E18,E19,S22] :
+                      ( aid_1(S28,X16)
+                      & ? [X23] :
+                          ( malnourishment_1(S28,X23)
+                          & is_of_2(S28,X23,G17) )
+                      & ? [G24] :
+                          ( medical_1(S28,G24)
+                          & problems_1(S28,G24)
+                          & is_of_2(S28,G24,G17) )
+                      & is_ineffective_in_2(S28,A21,S22)
+                      & is_why_2(S28,S20,X15)
+                      & ? [S29] :
+                          ( fact_2(S28,S22,S29)
+                          & stemming_3(S29,E18,unspecified,G17) )
+                      & ? [S30] :
+                          ( fact_2(S28,S20,S30)
+                          & has_been_3(S30,E19,X16,A21) ) ) ) )
+          & ? [S31] :
+              ( fact_2(s0,S13,S31)
+              & seek_3(S31,E9,X1,S14) )
+          & ? [S32] :
+              ( fact_2(s0,S12,S32)
+              & visiting_3(S32,E10,X1,G6)
+              & prp_2(S32,E10,S13) )
+          & spend_3(s0,E11,X1,S12)
+          & tmp_2(s0,E11,T7) ) ) )).
+
+% ::id 5_newswire_MASC;20000410_nyt;AT4-1;NE
+% ::snt Iraq has been under economic sanctions since the war ended , which some say have thwarted the country's ability to recover from the devastation of the bombing campaign .
+fof(ex1414051789933,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,E8,E9,E10,E11,E12] :
+      ( country_1(s0,X3)
+      & bombing_1(s0,X1)
+      & campaign_1(s0,X1)
+      & is_devastation_of_2(s0,X2,X1)
+      & war_1(s0,X4)
+      & is_ability_of_2(s0,X5,X3)
+      & economic_1(s0,G7)
+      & ? [S14] :
+          ( say_3(s0,E10,X6,S14)
+          & have_thwarted_3(S14,E9,G7,X5) )
+      & sanctions_1(s0,G7)
+      & is_before_2(s0,E11,e0)
+      & ended_2(s0,E11,X4)
+      & has_been_2(s0,E12,iraq)
+      & under_2(s0,E12,G7) ) )).
+
+% ::id 6_newswire_MASC;20000410_nyt;AT4-2;NE
+% ::snt The Persian Gulf War destroyed much of the country's medical infrastructure , according to a report by the World Health Organization .
+fof(ex1414051790265,axiom,(
+    ? [X1] :
+      ( country_1(s0,X1)
+      & ? [X2,G3] :
+          ( medical_1(s0,X2)
+          & is_infrastructure_of_2(s0,X2,X1)
+          & is_of_2(s0,G3,X2)
+          & ? [X4,E5] :
+              ( is_report_by_2(s0,X4,world_health_organization)
+              & is_before_2(s0,E5,e0)
+              & destroyed_3(s0,E5,persian_gulf_war,G3)
+              & according_to_2(s0,E5,X4) ) ) ) )).
+
+% ::id 7_newswire_MASC;20000410_nyt;AT4-3;NE
+% ::snt In 1996 the WHO found that much of the population existed in a state of " semi starvation . "
+fof(ex1414051790587,axiom,(
+    ? [X1,T2,E3] :
+      ( population_1(s0,X1)
+      & predicate__1996_1(s0,T2)
+      & is_before_2(s0,E3,e0)
+      & ? [S8] :
+          ( found_3(s0,E3,who_,S8)
+          & ? [G4] :
+              ( is_of_2(S8,G4,X1)
+              & ? [X5,X6,E7] :
+                  ( semi_1(S8,X5)
+                  & starvation_1(S8,X5)
+                  & is_state_of_2(S8,X6,X5)
+                  & is_before_2(S8,E7,E3)
+                  & existed_2(S8,E7,G4)
+                  & in_2(S8,E7,X6) ) ) )
+      & in_2(s0,E3,T2) ) )).
+
+% ::id 8_newswire_MASC;20000410_nyt;AT5-1;NE
+% ::snt Hall will be only the second member of Congress to travel in Iraq since the war , according to Hall's office .
+fof(ex1414051790911,axiom,(
+    ? [X1,X2,E3] :
+      ( war_1(s0,X1)
+      & second_1(s0,X2)
+      & travel_2(s0,E3,X2)
+      & in_2(s0,E3,iraq)
+      & since_2(s0,E3,X1)
+      & is_member_of_2(s0,X2,congress)
+      & ? [X4] :
+          ( is_of_2(s0,X4,X2)
+          & ? [X5,E6] :
+              ( is_office_of_2(s0,X5,hall)
+              & be_3(s0,E6,hall,X4)
+              & according_to_2(s0,E6,X5) ) ) ) )).
+
+% ::id 9_newswire_MASC;20000410_nyt;AT5-2;NE
+% ::snt The last visitor was then - U.S. Rep. Bill Richardson of New Mexico , who went to help a pair of U.S. oilmen in diplomatic trouble .
+fof(ex1414051791252,axiom,(
+    ? [X1,X2,X3,X4,G5,E6,E7,E8,E9,S10] :
+      ( last_1(s0,X1)
+      & visitor_1(s0,X1)
+      & u_s_rep_1(s0,X2)
+      & xxx_3(s0,E6,bill_richardson,X2)
+      & diplomatic_1(s0,X3)
+      & trouble_1(s0,X3)
+      & is_pair_in_2(s0,X4,X3)
+      & is_pair_of_2(s0,X4,G5)
+      & went_2(s0,E8,bill_richardson)
+      & prp_2(s0,E8,S10)
+      & is_of_2(s0,bill_richardson,new_mexico)
+      & u_s_1(s0,G5)
+      & oilmen_1(s0,G5)
+      & then_1(s0,E6)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & ? [S11] :
+          ( fact_2(s0,S10,S11)
+          & help_3(S11,E7,bill_richardson,X4) )
+      & was_3(s0,E9,X1,bill_richardson) ) )).
+
+% ::id 10_newswire_MASC;20000410_nyt;AT6-1;NE
+% ::snt Hall flies to Amman , Jordan , on Friday , where he'll spend the night before driving to Iraq .
+fof(ex1414051791583,axiom,(
+    ? [X1,X4,S3,E2] :
+      ( night_1(s0,X1)
+      & choose2(X4,amman_jordan,hall)
+      & ? [S7] :
+          ( fact_2(s0,S3,S7)
+          & ? [E5,E6] :
+              ( driving_2(S7,E5,X1)
+              & to_2(S7,E5,iraq)
+              & spend_3(S7,E6,X4,X1) ) )
+      & is_where_2(s0,S3,amman_jordan)
+      & flies_2(s0,E2,hall)
+      & to_2(s0,E2,amman_jordan)
+      & on_2(s0,E2,friday) ) )).
+
+% ::id 11_newswire_MASC;20000410_nyt;AT6-2;NE
+% ::snt Flights are not permitted into Iraq .
+fof(ex1414051791885,axiom,(
+    ? [G1] :
+      ( flights_1(s0,G1)
+      & ? [E2] :
+          ( permitted_3(s0,E2,unspecified,G1)
+          & into_2(s0,E2,iraq) ) ) )).
+
+% ::id 12_newswire_MASC;20000410_nyt;AT6-3;NE
+% ::snt Hall is to return to Washington on April 22 .
+fof(ex1414051792190,axiom,(
+    ? [E1,E2] :
+      ( predicate__22_1(s0,april)
+      & ? [S3] :
+          ( is_3(s0,E2,hall,S3)
+          & return_2(S3,E1,hall)
+          & to_2(S3,E1,washington)
+          & on_2(S3,E1,april) ) ) )).
+
+% ::id 13_newswire_MASC;20000410_nyt;AT7-1;NE
+% ::snt Story Filed By Cox Newspapers
+fof(ex1414051792495,axiom,(
+    ? [X1,E2] :
+      ( story_1(s0,X1)
+      & filed_3(s0,E2,cox_newspapers,X1) ) )).
+
+% ::id 14_newswire_MASC;A1.E1;AT1-1;NE
+% ::snt Inauguration of free zone in Dubai for e-commerce
+fof(ex1414051792806,axiom,(
+    ? [X1,X2,X3,E4] :
+      ( free_1(s0,X2)
+      & is_zone_in_2(s0,X2,dubai)
+      & e_commerce_1(s0,X1)
+      & is_inauguration_for_2(s0,X3,X1)
+      & is_inauguration_of_2(s0,X3,X2)
+      & xxx_1(s0,E4)
+      & link_2(s0,E4,X3) ) )).
+
+% ::id 15_newswire_MASC;A1.E1;AT2-1;NE
+% ::snt Dubai 10-28 -LRB- FP -RRB- -
+fof(ex1414051793110,axiom,(
+    ? [T1,E2] :
+      ( predicate__10_28_1(s0,T1)
+      & xxx_1(s0,E2)
+      & loc_2(s0,E2,dubai)
+      & tmp_2(s0,E2,T1)
+      & link_2(s0,E2,fp_) ) )).
+
+% ::id 16_newswire_MASC;A1.E1;AT3-1;NE
+% ::snt Dubai's Crown Prince Sheikh Mohamed Bin Rashid Al Maktoum inaugurated a free zone for e-commerce today , called Dubai Internet City .
+fof(ex1414051793429,axiom,(
+    ? [X1,X2,X3,T4,E5,E6] :
+      ( is_crown_prince_of_2(s0,X1,dubai)
+      & e_commerce_1(s0,X2)
+      & free_1(s0,X3)
+      & called_3(s0,E5,X3,dubai_internet_city)
+      & is_zone_for_2(s0,X3,X2)
+      & is_of_2(s0,sheikh_mohamed_bin_rashid_al_maktoum,X1)
+      & today_1(s0,T4)
+      & is_before_2(s0,E6,e0)
+      & inaugurated_3(s0,E6,sheikh_mohamed_bin_rashid_al_maktoum,X3)
+      & tmp_2(s0,E6,T4) ) )).
+
+% ::id 17_newswire_MASC;A1.E1;AT3-2;NE
+% ::snt The preliminary stages of the project , the only one of its kind according to its designers , are estimated at $ 200 million .
+fof(ex1414051793748,axiom,(
+    ? [X9,X8,X1,X2,X3,G4,G5,G6,E7] :
+      ( project_1(s0,X3)
+      & choose1(X8,X3)
+      & is_kind_of_2(s0,X1,X8)
+      & choose2(X9,X1,X3)
+      & is_one_according_to_2(s0,X2,G4)
+      & is_one_of__2(s0,X2,X1)
+      & is_designers_of_2(s0,G4,X9)
+      & ? [X10] :
+          ( is_of_2(s0,X10,X2)
+          & X3 = X10 )
+      & preliminary_1(s0,G5)
+      & is_stages_of_2(s0,G5,X3)
+      & predicate____dollar___200_million_1(s0,G6)
+      & estimated_3(s0,E7,unspecified,G5)
+      & at_2(s0,E7,G6) ) )).
+
+% ::id 18_newswire_MASC;A1.E1;AT4-1;NE
+% ::snt Sheikh Mohamed , who is also the Defense Minister of the United Arab Emirates , announced at the inauguration ceremony that " we want to make Dubai a new trading center . "
+fof(ex1414051794078,axiom,(
+    ? [X1,X2,X9,X3,E4,E5,E6,E7,E8] :
+      ( is_defense_minister_of_2(s0,X1,united_arab_emirates)
+      & inauguration_ceremony_1(s0,X2)
+      & is_also_3(s0,E4,sheikh_mohamed,X1)
+      & new_1(s0,X3)
+      & trading_center_1(s0,X3)
+      & is_before_2(s0,E8,e0)
+      & ? [S10] :
+          ( announced_3(s0,E8,sheikh_mohamed,S10)
+          & ? [S11] :
+              ( want_3(S10,E7,X9,S11)
+              & ? [S12] :
+                  ( make_3(S11,E6,X9,S12)
+                  & is_3(S12,E5,dubai,X3) ) ) )
+      & at_2(s0,E8,X2) ) )).
+
+% ::id 19_newswire_MASC;A1.E1;AT4-2;NE
+% ::snt The minister , who has his own website , also said : " I want Dubai to be the best place in the world for state-of-the-art technology companies . "
+fof(ex1414051794410,axiom,(
+    ? [X5,X1,X2,E3,E4] :
+      ( choose1(X5,X2)
+      & own_1(s0,X1)
+      & is_website_of_2(s0,X1,X5)
+      & has_3(s0,E3,X2,X1)
+      & minister_1(s0,X2)
+      & is_before_2(s0,E4,e0)
+      & ? [S12] :
+          ( also_said_3(s0,E4,X2,S12)
+          & ? [X11,X6,X7,G8,E9,E10] :
+              ( choose2(X11,X2,X1)
+              & world_1(S12,X6)
+              & best_1(S12,X7)
+              & is_place_for_2(S12,X7,G8)
+              & is_place_in_2(S12,X7,X6)
+              & state_of_the_art_1(S12,G8)
+              & technology_companies_1(S12,G8)
+              & ? [S13] :
+                  ( want_3(S12,E10,X11,S13)
+                  & be_3(S13,E9,dubai,X7) ) ) ) ) )).
+
+% ::id 20_newswire_MASC;A1.E1;AT4-3;NE
+% ::snt He said companies engaged in e-commerce would be able to set up offices , employ staff and own equipment in the open zone , including fully-owned foreign companies .
+fof(ex1414051794745,axiom,(
+    ? [X1,X6,X2,G3,E4,E5] :
+      ( open_1(s0,X1)
+      & zone_1(s0,X1)
+      & e_commerce_1(s0,X2)
+      & engaged_3(s0,E4,unspecified,G3)
+      & in_2(s0,E4,X2)
+      & companies_1(s0,G3)
+      & is_before_2(s0,E5,e0)
+      & ? [S17] :
+          ( said_3(s0,E5,X6,S17)
+          & ? [X7,X8,G9,G10,A16,E11,E12,E13,E14,E15] :
+              ( staff_1(S17,X7)
+              & equipment_1(S17,X8)
+              & offices_1(S17,G9)
+              & fully_owned_1(S17,G10)
+              & foreign_companies_1(S17,G10)
+              & is_able_in_2(S17,A16,X1)
+              & including_3(S17,E14,G3,G10)
+              & be_3(S17,E15,G3,A16) ) ) ) )).
+
+% ::id 21_newswire_MASC;A1.E1;AT5-1;NE
+% ::snt The e-commerce free zone is situated in north Dubai , near the industrial free zone in Jebel Ali , the top regional and tenth international leading area in container transit .
+fof(ex1414051795068,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( e_commerce_free_zone_1(s0,X4)
+      & industrial_1(s0,X3)
+      & is_free_zone_in_2(s0,X3,jebel_ali)
+      & container_transit_1(s0,X1)
+      & top_regional_1(s0,X2)
+      & tenth_international_1(s0,X2)
+      & leading_1(s0,X2)
+      & is_area_in_2(s0,X2,X1)
+      & X3 = X2
+      & is_near_of_2(s0,north_dubai,X3)
+      & situated_3(s0,E5,unspecified,X4)
+      & in_2(s0,E5,north_dubai) ) )).
+
+% ::id 22_newswire_MASC;A1.E1;AT6-1;NE
+% ::snt The inauguration of Dubai Internet City coincides with the opening of an annual IT show in Dubai , the Gulf Information Technology Exhibition -LRB- Gitex -RRB- , the biggest in the Middle East .
+fof(ex1414051795389,axiom,(
+    ? [X1,X2,X3,X4,E5] :
+      ( is_inauguration_of_2(s0,X4,dubai_internet_city)
+      & is_annual_it__show_in_2(s0,X2,dubai)
+      & biggest_1(s0,X1)
+      & is_in_2(s0,X1,middle_east)
+      & is_opening_of_2(s0,X3,X2)
+      & X2 = gulf_information_technology_exhibition
+      & X2 = gitex
+      & X2 = X1
+      & coincides_2(s0,E5,X4)
+      & with_2(s0,E5,X3) ) )).
+
+% ::id 23_newswire_MASC;A1.E2;AT1-1;NE
+% ::snt Launching the Electronics Free Trade Zone in Dubai
+fof(ex1414051795694,axiom,(
+    ? [E1] :
+      ( is_in_2(s0,electronics_free_trade_zone,dubai)
+      & launching_3(s0,E1,unspecified,electronics_free_trade_zone) ) )).
+
+% ::id 24_newswire_MASC;A1.E2;AT2-1;NE
+% ::snt Dubai 01-82 -LRB- AFP -RRB- -
+fof(ex1414051795993,axiom,(
+    ? [T1,E2] :
+      ( predicate__01_82_1(s0,T1)
+      & xxx_1(s0,E2)
+      & loc_2(s0,E2,dubai)
+      & tmp_2(s0,E2,T1)
+      & link_2(s0,E2,afp_) ) )).
+
+% ::id 25_newswire_MASC;A1.E2;AT3-1;NE
+% ::snt Crown Prince of Dubai Al Sheikh Mohammed bin Rashid Al Maktoom crown prince of Dubai launched today , i.e. on Saturday , an electronics free e-trade zone which has been named " Dubai Internet City "
+fof(ex1414051796321,axiom,(
+    ? [X1,X2,X3,T4,E5,E6,E7] :
+      ( is_crown_prince_of_2(s0,X1,dubai)
+      & is_crown_prince_of_2(s0,X2,dubai)
+      & ? [S8] :
+          ( has_named_4(s0,E6,unspecified,X3,S8)
+          & is_3(S8,E5,X3,dubai_internet_city) )
+      & electronics_free_e_trade_zone_1(s0,X3)
+      & al_sheikh_mohammed_bin_rashid_al_maktoom = X1
+      & al_sheikh_mohammed_bin_rashid_al_maktoom = X2
+      & is_today_i_e_on_2(s0,T4,saturday)
+      & is_before_2(s0,E7,e0)
+      & launched_3(s0,E7,al_sheikh_mohammed_bin_rashid_al_maktoom,X3)
+      & tmp_2(s0,E7,T4) ) )).
+
+% ::id 26_newswire_MASC;A1.E2;AT3-2;NE
+% ::snt The cost in the first stage of this unique project is estimated at 200 million dollars .
+fof(ex1414051796633,axiom,(
+    ? [X1,X2,X3,G4,E5] :
+      ( unique_1(s0,X1)
+      & project_1(s0,X1)
+      & first_1(s0,X2)
+      & is_stage_of_2(s0,X2,X1)
+      & is_cost_in_2(s0,X3,X2)
+      & predicate__200_million_1(s0,G4)
+      & dollars_1(s0,G4)
+      & estimated_3(s0,E5,unspecified,X3)
+      & at_2(s0,E5,G4) ) )).
+
+% ::id 27_newswire_MASC;A1.E2;AT4-1;NE
+% ::snt Sheikh Mohammed , who is also the UAE Defence Minister , said during the launching ceremony " we wish to make Dubai a center of modern economy " .
+fof(ex1414051796966,axiom,(
+    ? [X1,X2,E3,E4] :
+      ( uae__defence_minister_1(s0,X1)
+      & launching_1(s0,X2)
+      & ceremony_1(s0,X2)
+      & is_also_3(s0,E3,sheikh_mohammed,X1)
+      & is_before_2(s0,E4,e0)
+      & ? [S11] :
+          ( said_3(s0,E4,sheikh_mohammed,S11)
+          & ? [X10,X5,X6,E7,E8,E9] :
+              ( modern_1(S11,X5)
+              & economy_1(S11,X5)
+              & is_center_of_2(S11,X6,X5)
+              & ? [S12] :
+                  ( wish_3(S11,E9,X10,S12)
+                  & ? [S13] :
+                      ( make_3(S12,E8,X10,S13)
+                      & is_3(S13,E7,dubai,X6) ) ) ) )
+      & during_2(s0,E4,X2) ) )).
+
+% ::id 28_newswire_MASC;A1.E2;AT4-2;NE
+% ::snt The minister who has a personal website on the internet , further said that he wanted Dubai to become the best place in the world for the advanced -LRB- hitech -RRB- technological companies .
+fof(ex1414051797301,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,E7,X12,S11,E8,E9,E10] :
+      ( internet_1(s0,X1)
+      & personal_1(s0,X2)
+      & is_website_on_2(s0,X2,X1)
+      & has_3(s0,E7,X5,X2)
+      & minister_1(s0,X5)
+      & world_1(s0,X3)
+      & best_1(s0,X4)
+      & is_place_for_2(s0,X4,G6)
+      & is_place_in_2(s0,X4,X3)
+      & technological_1(s0,G6)
+      & advanced_hitech_1(s0,G6)
+      & companies_1(s0,G6)
+      & choose3(X12,X5,X2,X1)
+      & further_1(s0,S11)
+      & is_before_2(s0,E9,E10)
+      & is_before_2(s0,E10,e0)
+      & ? [S13] :
+          ( fact_2(s0,S11,S13)
+          & ? [S14] :
+              ( said_3(S13,E10,X5,S14)
+              & ? [S15] :
+                  ( wanted_3(S14,E9,X12,S15)
+                  & become_3(S15,E8,dubai,X4) ) ) ) ) )).
+
+% ::id 29_newswire_MASC;A1.E2;AT4-3;NE
+% ::snt He said that it would be possible for the companies working in the electronic trade sector to make Dubai their headquarters , and to establish offices here and provide employment and own machinery in the zone opened to companies fully owned by the foreigners .
+fof(ex1414051797672,axiom,(
+    ? [X1,X2,G3,G4,G5,E6,E7,E8,X19,X9,X10,X11,G21,G12,E13,E14,E15,E16,E17,E18,S20] :
+      ( electronic_trade_sector_1(s0,X1)
+      & opened_3(s0,E8,unspecified,X2)
+      & to_2(s0,E8,G4)
+      & zone_1(s0,X2)
+      & working_2(s0,E6,G5)
+      & in_2(s0,E6,X1)
+      & companies_1(s0,G5)
+      & foreigners_1(s0,G3)
+      & owned_3(s0,E7,G3,G4)
+      & companies_1(s0,G4)
+      & fully_1(s0,E7)
+      & is_headquarters_of_2(s0,X9,G21)
+      & employment_1(s0,X10)
+      & machinery_1(s0,X11)
+      & choose3(G21,G5,G4,G3)
+      & offices_1(s0,G12)
+      & here_1(s0,E15)
+      & is_before_2(s0,E18,e0)
+      & ? [S24] :
+          ( fact_2(s0,S20,S24)
+          & ? [S25] :
+              ( make_3(S24,E14,G5,S25)
+              & is_3(S25,E13,dubai,X9) )
+          & in_2(S24,E14,X2)
+          & establish_3(S24,E15,G5,G12)
+          & in_2(S24,E15,X2)
+          & provide_3(S24,E16,G5,X10)
+          & in_2(S24,E16,X2)
+          & own_3(S24,E17,G5,X11)
+          & in_2(S24,E17,X2) )
+      & ? [S26] :
+          ( said_3(s0,E18,X19,S26)
+          & ? [A23,E22] :
+              ( possible_1(S26,A23)
+              & be_3(S26,E22,S20,A23) ) ) ) )).
+
+% ::id 30_newswire_MASC;A1.E2;AT5-1;NE
+% ::snt The electronic trade free trade zone is situated in the north of Dubai , close to the free industrial zone in Jabal Ali Mountain , an area which is considered to be the first in the country , and tenth in the world for transit movement .
+fof(ex1414051798032,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,G10,G11,E12,E13,E14] :
+      ( electronic_trade_free_trade_zone_1(s0,X9)
+      & is_free_industrial_zone_in_2(s0,X7,jabal_ali_mountain)
+      & country_1(s0,X1)
+      & first_1(s0,X2)
+      & is_in_2(s0,X2,X1)
+      & world_1(s0,X3)
+      & tenth_1(s0,X4)
+      & is_in_2(s0,X4,X3)
+      & transit_movement_1(s0,X5)
+      & ? [S15] :
+          ( considered_4(s0,E13,unspecified,X6,S15)
+          & be_3(S15,E12,X6,G11)
+          & for_2(S15,E12,X5) )
+      & area_1(s0,X6)
+      & is_close_to_2(s0,X8,X7)
+      & is_north_of_2(s0,X8,dubai)
+      & is_of_2(s0,X2,G10)
+      & is_of_2(s0,X4,G10)
+      & G11 = G10
+      & X7 = X6
+      & situated_3(s0,E14,unspecified,X9)
+      & in_2(s0,E14,X8) ) )).
+
+% ::id 31_newswire_MASC;A1.E2;AT6-1;NE
+% ::snt Launching ' Dubai Internet city ' coincided with the opening of the annual information fair in Dubai which is considered to be the biggest in the Middle East - Gulf Information Technology Getix . '
+fof(ex1414051798366,axiom,(
+    ? [X1,X2,X3,E4,E5,X6,E7,E8,S9] :
+      ( biggest_1(s0,X1)
+      & is_in_2(s0,X1,middle_east)
+      & annual_1(s0,X2)
+      & ? [S10] :
+          ( considered_4(s0,E5,unspecified,X2,S10)
+          & be_3(S10,E4,X2,X1) )
+      & is_information_fair_in__2(s0,X2,dubai)
+      & is_opening_of_2(s0,X3,X2)
+      & X2 = gulf_information_technology_getix
+      & dubai_internet_city_1(s0,X6)
+      & is_before_2(s0,E8,e0)
+      & ? [S11] :
+          ( fact_2(s0,S9,S11)
+          & launching_3(S11,E7,unspecified,X6) )
+      & coincided_2(s0,E8,S9)
+      & with_2(s0,E8,X3) ) )).
+
+% ::id 32_newswire_MASC;wsj_1640;AT1-1;NE
+% ::snt Electronic theft by foreign and industrial spies and disgruntled employees is costing U.S. companies billions and eroding their international competitive advantage .
+fof(ex1414051798693,axiom,(
+    ? [X1,X2,G12,G3,G4,G5,E6,E7] :
+      ( electronic_1(s0,X2)
+      & is_theft_by_2(s0,X2,G3)
+      & international_1(s0,X1)
+      & competitive_1(s0,X1)
+      & is_advantage_of_2(s0,X1,G12)
+      & ? [G8] :
+          ( ? [G9] :
+              ( foreign_1(s0,G9)
+              & spies_1(s0,G9)
+              & is_of_2(s0,G9,G8) )
+          & ? [G10] :
+              ( industrial_1(s0,G10)
+              & spies_1(s0,G10)
+              & is_of_2(s0,G10,G8) )
+          & is_of_2(s0,G8,G3) )
+      & ? [G11] :
+          ( disgruntled_1(s0,G11)
+          & employees_1(s0,G11)
+          & is_of_2(s0,G11,G3) )
+      & u_s_1(s0,G5)
+      & companies_1(s0,G5)
+      & billions_1(s0,G4)
+      & choose3(G12,G5,G4,G3)
+      & is_costing_4(s0,E6,X2,G4,G5)
+      & is_eroding_3(s0,E7,X2,X1) ) )).
+
+% ::id 33_newswire_MASC;wsj_1640;AT1-2;NE
+% ::snt That was the message delivered by government and private security experts at an all-day conference on corporate electronic espionage .
+fof(ex1414051799018,axiom,(
+    ? [X1,G2,G3,G4,E5,X8,X6,E7] :
+      ( ? [X9] :
+          ( is_conference_on_2(s0,X9,X6)
+          & delivered_3(s0,E5,G4,X1)
+          & at_2(s0,E5,X9) )
+      & message_1(s0,X1)
+      & government_security_experts_1(s0,G2)
+      & private_1(s0,G3)
+      & security_experts_1(s0,G3)
+      & is_of_2(s0,G2,G4)
+      & is_of_2(s0,G3,G4)
+      & corporate_1(s0,X6)
+      & electronic_1(s0,X6)
+      & espionage_1(s0,X6)
+      & is_before_2(s0,E7,e0)
+      & was_3(s0,E7,X8,X1) ) )).
+
+% ::id 34_newswire_MASC;wsj_1640;AT2-1;NE
+% ::snt " Hostile and even friendly nations routinely steal information from U.S. companies and share it with their own companies , " said Noel D. Matchett , a former staffer at the federal National Security Agency and now president of Information Security Inc. , Silver Spring , Md .
+fof(ex1414051799361,axiom,(
+    ? [G1,E2] :
+      ( ? [X3] :
+          ( former_1(s0,X3)
+          & is_staffer_at_2(s0,X3,federal_national_security_agency)
+          & is_of_2(s0,X3,G1) )
+      & ? [X4] :
+          ( now_1(s0,X4)
+          & is_president_of_2(s0,X4,information_security_inc_silver_spring_md)
+          & is_of_2(s0,X4,G1) )
+      & noel_d_matchett = G1
+      & is_before_2(s0,E2,e0)
+      & ? [S17] :
+          ( said_3(s0,E2,noel_d_matchett,S17)
+          & ? [X15,X5,G16,G6,G7,G8,S14,E9,E10] :
+              ( information_1(S17,X5)
+              & choose1(X15,X5)
+              & ? [G11] :
+                  ( hostile_1(S17,G11)
+                  & nations_1(S17,G11)
+                  & is_of_2(S17,G11,G8) )
+              & ? [G12] :
+                  ( friendly_1(S17,G12)
+                  & nations_1(S17,G12)
+                  & ? [G13] :
+                      ( is_of_2(S17,G13,G12)
+                      & is_of_2(S17,G13,G8) ) )
+              & u_s_1(S17,G6)
+              & companies_1(S17,G6)
+              & choose2(G16,G8,G6)
+              & own_1(S17,G7)
+              & is_companies_of_2(S17,G7,G16)
+              & routinely_1(S17,S14)
+              & ? [S18] :
+                  ( fact_2(S17,S14,S18)
+                  & steal_3(S18,E9,G8,X5)
+                  & from_2(S18,E9,G6)
+                  & share_3(S18,E10,G8,X15)
+                  & with_2(S18,E10,G7) ) ) ) ) )).
+
+% ::id 35_newswire_MASC;wsj_1640;AT2-2;NE
+% ::snt It " may well be " that theft of business data is " as serious a strategic threat to national security " as it is a threat to the survival of victimized U.S. firms , said Michelle Van Cleave , the White House's assistant director for National Security Affairs .
+fof(ex1414051799712,axiom,(
+    ? [X1,E2] :
+      ( is_white_house_for_2(s0,X1,national_security_affairs)
+      & is_assistant_director_for_2(s0,X1,national_security_affairs)
+      & michelle_van_cleave = X1
+      & is_before_2(s0,E2,e0)
+      & ? [S17] :
+          ( said_3(s0,E2,michelle_van_cleave,S17)
+          & ? [X3,G4,X5] :
+              ( is_survival_of_2(S17,X3,G4)
+              & victimized_1(S17,G4)
+              & u_s_1(S17,G4)
+              & firms_1(S17,G4)
+              & ? [X6,X7,X8,G9,S12,E10,E11] :
+                  ( is_theft_of_2(S17,X8,G9)
+                  & national_1(S17,X6)
+                  & security_1(S17,X6)
+                  & ? [X16,X13,X14,E15] :
+                      ( choose2(X16,X8,X5)
+                      & is_threat_to_2(S17,X13,X3)
+                      & is_3(S17,E15,X16,X13)
+                      & msr_2(S17,E15,X14)
+                      & is_as_serious_as_2(S17,X7,X14) )
+                  & strategic_1(S17,X7)
+                  & is_threat_to_2(S17,X7,X6)
+                  & business_data_1(S17,G9)
+                  & well_1(S17,S12)
+                  & ? [S18] :
+                      ( fact_2(S17,S12,S18)
+                      & ? [S19] :
+                          ( be_3(S18,E11,X5,S19)
+                          & is_3(S19,E10,X8,X7) ) ) ) ) ) ) )).
+
+% ::id 36_newswire_MASC;wsj_1640;AT3-1;NE
+% ::snt The conference was jointly sponsored by the New York Institute of Technology School of Management and the Armed Forces Communications and Electronics Association , a joint industry-government trade group .
+fof(ex1414051800034,axiom,(
+    ? [X1,G2,E3] :
+      ( conference_1(s0,X1)
+      & is_of_2(s0,new_york_institute_of_technology_school_of_management,G2)
+      & ? [X4] :
+          ( joint_1(s0,X4)
+          & industry_government_trade_group_1(s0,X4)
+          & armed_forces_communications_and_electronics_association = X4
+          & is_of_2(s0,armed_forces_communications_and_electronics_association,G2) )
+      & jointly_1(s0,E3)
+      & is_before_2(s0,E3,e0)
+      & sponsored_3(s0,E3,G2,X1) ) )).
+
+% ::id 37_newswire_MASC;wsj_1640;AT4-1;NE
+% ::snt Any secret can be pirated , the experts said , if it is transmitted over the air .
+fof(ex1414051800351,axiom,(
+    ? [G1,E2] :
+      ( experts_1(s0,G1)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( said_3(s0,E2,G1,S8)
+          & ? [X3] :
+              ( air_1(S8,X3)
+              & ? [X4] :
+                  ( secret_1(S8,X4)
+                  & ! [X6,E5] :
+                      ( choose1(X6,X4)
+                     => ( transmitted_3(S8,E5,unspecified,X6)
+                        & over_2(S8,E5,X3)
+                        & ? [E7] : pirated_3(S8,E7,unspecified,X4) ) ) ) ) ) ) )).
+
+% ::id 38_newswire_MASC;wsj_1640;AT4-2;NE
+% ::snt Even rank amateurs can do it if they spend a few thousand dollars for a commercially available microwave receiver with amplifier and a VCR recorder .
+fof(ex1414051800677,axiom,(
+    ? [G1] :
+      ( rank_1(s0,G1)
+      & amateurs_1(s0,G1)
+      & ? [G2] :
+          ( is_of_2(s0,G2,G1)
+          & ! [G6,G3,G4,E5] :
+              ( ( choose1(G6,G2)
+                & a_few_thousand_1(s0,G4)
+                & dollars_1(s0,G4)
+                & ? [X7,X8] :
+                    ( amplifier_1(s0,X7)
+                    & commercially_available_1(s0,X8)
+                    & is_microwave_receiver_with_2(s0,X8,X7)
+                    & is_of_2(s0,X8,G3) )
+                & ? [X9] :
+                    ( vcr__recorder_1(s0,X9)
+                    & is_of_2(s0,X9,G3) ) )
+             => ( spend_3(s0,E5,G6,G4)
+                & for_2(s0,E5,G3)
+                & ? [X11,E10] : do_3(s0,E10,G2,X11) ) ) ) ) )).
+
+% ::id 39_newswire_MASC;wsj_1640;AT4-3;NE
+% ::snt They need only position themselves near a company's satellite dish and wait .
+fof(ex1414051800992,axiom,(
+    ? [X1,X2,G7,G6,A8,E3,E4,E5] :
+      ( company_1(s0,X1)
+      & is_satellite_dish_of_2(s0,X2,X1)
+      & choose1(G7,G6)
+      & is_near_of_2(s0,A8,X2)
+      & ? [S9] :
+          ( need_only_3(s0,E5,G6,S9)
+          & position_3(S9,E3,G6,G7)
+          & attribute_2(S9,E3,A8)
+          & wait_2(S9,E4,G6) ) ) )).
+
+% ::id 40_newswire_MASC;wsj_1640;AT5-1;NE
+% ::snt " You can have a dozen competitors stealing your secrets at the same time , " Mr. Matchett said , adding : " It's a pretty good bet they won't get caught . "
+fof(ex1414051801339,axiom,(
+    ? [X16,X10,X1,X2,G7,E3,E4,E5,S6] :
+      ( same_1(s0,X1)
+      & time_1(s0,X1)
+      & pretty_good_1(s0,X2)
+      & bet_1(s0,X2)
+      & is_before_2(s0,E5,e0)
+      & ? [S17] :
+          ( fact_2(s0,S6,S17)
+          & ? [A9,E8] :
+              ( caught_1(S17,A9)
+              & get_3(S17,E8,G7,A9) ) )
+      & ? [S18] :
+          ( adding_3(s0,E4,mr_matchett,S18)
+          & is_3(S18,E3,S6,X2) )
+      & ? [S19] :
+          ( said_3(s0,E5,mr_matchett,S19)
+          & ? [G11,G12,E13,E14,S15] :
+              ( a_dozen_1(S19,G12)
+              & competitors_1(S19,G12)
+              & is_secrets_of_2(S19,G11,X16)
+              & ? [S20] :
+                  ( fact_2(S19,S15,S20)
+                  & stealing_3(S20,E13,G12,G11)
+                  & at_2(S20,E13,X1) )
+              & have_3(S19,E14,X10,S15) ) ) ) )).
+
+% ::id 41_newswire_MASC;wsj_1640;AT5-2;NE
+% ::snt The only way to catch an electronic thief , he said , is to set him up with erroneous information .
+fof(ex1414051801690,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S11] :
+          ( said_3(s0,E1,X2,S11)
+          & ? [X3,X4,E5] :
+              ( electronic_1(S11,X3)
+              & thief_1(S11,X3)
+              & ? [S12] :
+                  ( way_2(S11,X4,S12)
+                  & catch_3(S12,E5,unspecified,X3) )
+              & ? [X6] :
+                  ( is_of_2(S11,X6,X4)
+                  & ? [X10,X7,E8,E9] :
+                      ( choose1(X10,X3)
+                      & erroneous_1(S11,X7)
+                      & information_1(S11,X7)
+                      & ? [S13] :
+                          ( is_3(S11,E9,X6,S13)
+                          & set_up_3(S13,E8,X6,X10)
+                          & with_2(S13,E8,X7) ) ) ) ) ) ) )).
+
+% ::id 42_newswire_MASC;wsj_1640;AT6-1;NE
+% ::snt Even though electronic espionage may cost U.S. firms billions of dollars a year , most aren't yet taking precautions , the experts said .
+fof(ex1414051802021,axiom,(
+    ? [G1,E2] :
+      ( experts_1(s0,G1)
+      & is_before_2(s0,E2,e0)
+      & ? [S12] :
+          ( said_3(s0,E2,G1,S12)
+          & ? [X3] :
+              ( electronic_1(S12,X3)
+              & espionage_1(S12,X3)
+              & ? [G4,G5,G6,T7,E8] :
+                  ( u_s_1(S12,G6)
+                  & firms_1(S12,G6)
+                  & dollars_1(S12,G4)
+                  & is_billions_tmp_2(S12,G5,T7)
+                  & is_billions_of_2(S12,G5,G4)
+                  & year_1(S12,T7)
+                  & cost_4(S12,E8,X3,G5,G6) )
+              & ? [X9,G10,E11] :
+                  ( precautions_1(S12,G10)
+                  & yet_1(S12,E11)
+                  & are_taking_3(S12,E11,X9,G10) ) ) ) ) )).
+
+% ::id 43_newswire_MASC;wsj_1640;AT6-2;NE
+% ::snt By contrast , European firms will spend $ 150 million this year on electronic security , and are expected to spend $ 1 billion by 1992 .
+fof(ex1414051802344,axiom,(
+    ? [T1,T2,X3,G4,G5,E6,E7] :
+      ( year_1(s0,T1)
+      & predicate__1992_1(s0,T2)
+      & contrast_1(s0,X3)
+      & european_1(s0,G5)
+      & firms_1(s0,G5)
+      & predicate____dollar___1_billion_1(s0,G4)
+      & ? [X8,G9,E10] :
+          ( electronic_1(s0,X8)
+          & security_1(s0,X8)
+          & predicate____dollar___150_million_1(s0,G9)
+          & spend_3(s0,E10,G5,G9)
+          & tmp_2(s0,E10,T1)
+          & on_2(s0,E10,X8)
+          & by_2(s0,E10,X3) )
+      & ? [S11] :
+          ( expected_4(s0,E7,unspecified,G5,S11)
+          & spend_3(S11,E6,G5,G4)
+          & by_2(S11,E6,T2) )
+      & by_2(s0,E7,X3) ) )).
+
+% ::id 44_newswire_MASC;wsj_1640;AT6-3;NE
+% ::snt Already many foreign firms , especially banks , have their own cryptographers , conference speakers reported .
+fof(ex1414051802674,axiom,(
+    ? [G1,E2] :
+      ( conference_speakers_1(s0,G1)
+      & is_before_2(s0,E2,e0)
+      & ? [S8] :
+          ( reported_3(s0,E2,G1,S8)
+          & ? [G3] :
+              ( foreign_1(S8,G3)
+              & firms_1(S8,G3)
+              & ? [G7,G4,G5,E6] :
+                  ( especially_1(S8,G4)
+                  & banks_1(S8,G4)
+                  & G3 = G4
+                  & choose2(G7,G3,G4)
+                  & own_1(S8,G5)
+                  & is_cryptographers_of_2(S8,G5,G7)
+                  & already_1(S8,E6)
+                  & have_3(S8,E6,G3,G5) ) ) ) ) )).
+
+% ::id 45_newswire_MASC;wsj_1640;AT7-1;NE
+% ::snt Still , encrypting corporate communications is only a partial remedy .
+fof(ex1414051802982,axiom,(
+    ? [X1,G2,S5,E3,S4] :
+      ( partial_1(s0,X1)
+      & remedy_1(s0,X1)
+      & corporate_1(s0,G2)
+      & communications_1(s0,G2)
+      & still_1(s0,S5)
+      & ? [S8] :
+          ( fact_2(s0,S4,S8)
+          & encrypting_3(S8,E3,unspecified,G2) )
+      & ? [S9] :
+          ( fact_2(s0,S5,S9)
+          & ? [X6] :
+              ( is_of_2(S9,X6,X1)
+              & ? [E7] : is_3(S9,E7,S4,X6) ) ) ) )).
+
+% ::id 46_newswire_MASC;wsj_1640;AT7-2;NE
+% ::snt One expert , whose job is so politically sensitive that he spoke on condition that he wouldn't be named or quoted , said the expected influx of East European refugees over the next few years will greatly increase the chances of computer-maintenance workers , for example , doubling as foreign spies .
+fof(ex1414051803349,axiom,(
+    ? [X1,X2,G3,G4,G5,G6,E7,S21,X16,X15,X8,X9,X10,A14,E11,E12,E13] :
+      ( expected_1(s0,X2)
+      & ? [T19] :
+          ( next_1(s0,T19)
+          & years_1(s0,T19)
+          & is_influx_of_2(s0,X2,G3)
+          & is_influx_over_2(s0,X2,T19) )
+      & example_1(s0,X1)
+      & east_european_1(s0,G3)
+      & refugees_1(s0,G3)
+      & computer_maintenance_workers_1(s0,G5)
+      & foreign_1(s0,G4)
+      & spies_1(s0,G4)
+      & is_chances_of_2(s0,G6,S21)
+      & ? [S22] :
+          ( fact_2(s0,S21,S22)
+          & doubling_2(S22,E7,G5)
+          & for_2(S22,E7,X1)
+          & as_2(S22,E7,G4) )
+      & is_job_of_2(s0,X9,X10)
+      & choose2(X15,X9,X10)
+      & choose3(X16,X15,X9,X10)
+      & ? [S23] :
+          ( condition_2(s0,X8,S23)
+          & ? [E17,E18] :
+              ( named_3(S23,E17,unspecified,X16)
+              & quoted_3(S23,E18,unspecified,X16) ) )
+      & one_1(s0,X10)
+      & is_3(s0,E12,X9,A14)
+      & expert_1(s0,X10)
+      & ? [S24] :
+          ( so_politically_sensitive_2(s0,A14,S24)
+          & spoke_2(S24,E11,X15)
+          & on_2(S24,E11,X8) )
+      & is_before_2(s0,E11,e0)
+      & is_before_2(s0,E13,e0)
+      & ? [S25] :
+          ( said_3(s0,E13,X10,S25)
+          & ? [E20] :
+              ( greatly_1(S25,E20)
+              & increase_3(S25,E20,X2,G6) ) ) ) )).
+
+% ::id 47_newswire_MASC;wsj_1640;AT7-3;NE
+% ::snt Moreover , he said , technology now exists for stealing corporate secrets after they've been " erased " from a computer's memory .
+fof(ex1414051803684,axiom,(
+    ? [X2,E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S12] :
+          ( said_3(s0,E1,X2,S12)
+          & ? [X11,X3,X4,X5,G6,E7,E8,E9,S10] :
+              ( choose1(X11,X5)
+              & computer_1(S12,X3)
+              & is_memory_of_2(S12,X4,X3)
+              & is_technology_for_2(S12,X5,S10)
+              & corporate_1(S12,G6)
+              & secrets_1(S12,G6)
+              & moreover_1(S12,E9)
+              & now_1(S12,E9)
+              & ? [S13] :
+                  ( fact_2(S12,S10,S13)
+                  & have_erased_3(S13,E7,unspecified,X11)
+                  & from_2(S13,E7,X4)
+                  & stealing_3(S13,E8,unspecified,G6) )
+              & exists_2(S12,E9,X5) ) ) ) )).
+
+% ::id 48_newswire_MASC;wsj_1640;AT7-4;NE
+% ::snt He said that Oliver North of Iran-Contra notoriety thought he had erased his computer but that the information was later retrieved for congressional committees to read .
+fof(ex1414051804015,axiom,(
+    ? [X1,X12,X11,X10,X2,X3,G4,S13,E5,E6,E7,E8,E9,S14] :
+      ( information_1(s0,X1)
+      & iran_contra_notoriety_1(s0,X2)
+      & choose3(X11,oliver_north,X2,X10)
+      & choose4(X12,X11,oliver_north,X2,X10)
+      & is_computer_of_2(s0,X3,X12)
+      & is_of_2(s0,oliver_north,X2)
+      & congressional_1(s0,G4)
+      & committees_1(s0,G4)
+      & is_before_2(s0,E5,E6)
+      & is_before_2(s0,E6,E9)
+      & later_1(s0,S13)
+      & is_before_2(s0,E8,E9)
+      & is_before_2(s0,E9,e0)
+      & ? [S15] :
+          ( fact_2(s0,S14,S15)
+          & read_2(S15,E7,G4) )
+      & ? [S16] :
+          ( said_3(s0,E9,X10,S16)
+          & ? [S17] :
+              ( thought_3(S16,E6,oliver_north,S17)
+              & had_erased_3(S17,E5,X11,X3) )
+          & ? [S18] :
+              ( fact_2(S16,S13,S18)
+              & retrieved_3(S18,E8,unspecified,X1)
+              & for_2(S18,E8,S14) ) ) ) )).
+
+% ::id 49_newswire_MASC;wsj_1640;AT7-5;NE
+% ::snt No personal computer , not even the one on a chief executive's desk , is safe , this speaker noted .
+fof(ex1414051804347,axiom,(
+    ? [X1,E2] :
+      ( speaker_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & ? [S11] :
+          ( noted_3(s0,E2,X1,S11)
+          & ? [X3,X4,G5,A10,E6] :
+              ( chief_1(S11,X3)
+              & executive_1(S11,X3)
+              & is_desk_of_2(S11,X4,X3)
+              & ? [X7] :
+                  ( personal_1(S11,X7)
+                  & computer_1(S11,X7)
+                  & is_of_2(S11,X7,G5) )
+              & ? [X8] :
+                  ( is_one_on_2(S11,X8,X4)
+                  & ? [X9] :
+                      ( is_of_2(S11,X9,X8)
+                      & is_of_2(S11,X9,G5) ) )
+              & safe_1(S11,A10)
+              & is_3(S11,E6,G5,A10) ) ) ) )).
+
+% ::id 50_newswire_MASC;wsj_1640;AT8-1;NE
+% ::snt W. Mark Goode , president of Micronyx Inc. , a Richardson , Texas , firm that makes computer-security products , provided a new definition for Mikhail Gorbachev's campaign for greater openness , known commonly as glasnost .
+fof(ex1414051804715,axiom,(
+    ? [X1,X2,X3,X4,X5,G6,E7,E8,E9] :
+      ( makes_3(s0,E7,X1,G6)
+      & richardson_texas_firm_1(s0,X1)
+      & is_president_of_2(s0,X2,micronyx_inc_)
+      & greater_1(s0,X3)
+      & openness_1(s0,X3)
+      & known_3(s0,E8,unspecified,X4)
+      & as_2(s0,E8,glasnost)
+      & is_campaign_for_2(s0,X4,X3)
+      & is_campaign_of_2(s0,X4,mikhail_gorbachev)
+      & new_1(s0,X5)
+      & is_definition_for_2(s0,X5,X4)
+      & computer_security_products_1(s0,G6)
+      & micronyx_inc_ = X1
+      & w_mark_goode = X2
+      & commonly_1(s0,E8)
+      & is_before_2(s0,E9,e0)
+      & provided_3(s0,E9,w_mark_goode,X5) ) )).
+
+% ::id 51_newswire_MASC;wsj_1640;AT8-2;NE
+% ::snt Under Mr. Gorbachev , Mr. Goode said , the Soviets are openly stealing Western corporate communications .
+fof(ex1414051805025,axiom,(
+    ? [E1] :
+      ( is_before_2(s0,E1,e0)
+      & ? [S4] :
+          ( said_3(s0,E1,mr_goode,S4)
+          & ? [G2,E3] :
+              ( western_1(S4,G2)
+              & corporate_communications_1(S4,G2)
+              & openly_1(S4,E3)
+              & are_stealing_3(S4,E3,soviets,G2)
+              & under_2(S4,E3,mr_gorbachev) ) ) ) )).
+
+% ::id 52_newswire_MASC;wsj_1640;AT8-3;NE
+% ::snt He cited the case of a Swiss oil trader who recently put out bids via telex for an oil tanker to pick up a cargo of crude in the Middle East .
+fof(ex1414051805374,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,G7,S12,E8,E9,X11,E10] :
+      ( crude_1(s0,X1)
+      & is_cargo_of_2(s0,X2,X1)
+      & pick_up_3(s0,E8,X3,X2)
+      & in_2(s0,E8,middle_east)
+      & oil_tanker_1(s0,X3)
+      & telex_1(s0,X4)
+      & swiss_1(s0,X5)
+      & ? [S13] :
+          ( fact_2(s0,S12,S13)
+          & put_out_3(S13,E9,X5,G7)
+          & via_2(S13,E9,X4) )
+      & oil_trader_1(s0,X5)
+      & is_case_of_2(s0,X6,X5)
+      & is_bids_for_2(s0,G7,X3)
+      & recently_1(s0,S12)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & cited_3(s0,E10,X11,X6) ) )).
+
+% ::id 53_newswire_MASC;wsj_1640;AT8-4;NE
+% ::snt Among the responses the Swiss trader got was one from the Soviet national shipping company , which hadn't been invited to submit a bid .
+fof(ex1414051805713,axiom,(
+    ? [X1,X2,G3,E4,X5,E6] :
+      ( soviet_1(s0,X1)
+      & ? [X7,E8,E9] :
+          ( bid_1(s0,X7)
+          & is_before_2(s0,E9,e0)
+          & ? [S10] :
+              ( had_invited_4(s0,E9,unspecified,X1,S10)
+              & submit_3(S10,E8,X1,X7) ) )
+      & national_shipping_company_1(s0,X1)
+      & swiss_1(s0,X2)
+      & trader_1(s0,X2)
+      & got_3(s0,E4,X2,G3)
+      & responses_1(s0,G3)
+      & is_before_2(s0,E4,e0)
+      & is_one_from_2(s0,X5,X1)
+      & is_before_2(s0,E6,e0)
+      & was_2(s0,E6,X5)
+      & among_2(s0,E6,G3) ) )).
+
+% ::id 54_newswire_MASC;wsj_1640;AT8-5;NE
+% ::snt The Soviets ' eavesdropping paid off , however , because they got the contract .
+fof(ex1414051806030,axiom,(
+    ? [X1,X2,G6,S5,E3,E4] :
+      ( contract_1(s0,X1)
+      & is_eavesdropping_of_2(s0,X2,soviets)
+      & choose1(G6,soviets)
+      & however_1(s0,S5)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & ? [S7] :
+          ( fact_2(s0,S5,S7)
+          & got_3(S7,E3,G6,X1)
+          & paid_off_2(S7,E4,X2) ) ) )).
+

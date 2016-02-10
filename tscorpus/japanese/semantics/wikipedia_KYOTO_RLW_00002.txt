@@ -1,0 +1,179 @@
+# ::id 1_wikipedia_KYOTO_RLW_00002,1;NJ
+# ::snt 嵯峨野観光鉄道
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[嵯峨野観光鉄道])
+
+# ::id 2_wikipedia_KYOTO_RLW_00002,2;NJ
+# ::snt 嵯峨野観光鉄道 （ さがのかんこうてつどう ） は 、 京都府 京都市 と 亀岡市 で 山陰本線 旧線 を 利用 し て 嵯峨野観光鉄道 嵯峨野観光線 に トロッコ列車 を 運行 し て いる 会社 。
+∃ EVENT[6] EVENT[8] EVENT[9] ENTITY[5] ENTITY[7] GROUP[4] ENTITY[2] ENTITY[1] (
+ さがのかんこうてつどう(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[1], ENTITY[嵯峨野観光鉄道]) ∧
+   CONJ_と(is_element_of(ENTITY[京都府_京都市], GROUP[4]), is_element_of(ENTITY[亀岡市], GROUP[4])) ∧
+    山陰本線_旧線(ENTITY[5]) ∧
+     トロッコ列車(ENTITY[7]) ∧
+      CONJ_te(利用する.0_て(EVENT[6], ENTITY[2], ENTITY[5]) ∧ で(EVENT[6]) = GROUP[4],
+       運行する.0_て_いる(EVENT[8], ENTITY[2], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[嵯峨野観光鉄道_嵯峨野観光線] ∧
+        で(EVENT[8]) = GROUP[4]) ∧ 会社(ENTITY[2]) ∧ xxx(EVENT[9], ENTITY[嵯峨野観光鉄道], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_RLW_00002,3;NJ
+# ::snt 西日本旅客鉄道 の 完全 子会社 で ある 。
+∃ ATTRIB[3] ENTITY[1] EVENT[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  完全(ATTRIB[3]) ∧
+   ATTRIBUTE_子会社(ATTRIB[3], ENTITY[2]) ∧ の_子会社(ENTITY[西日本旅客鉄道], ENTITY[2]) ∧ で_ある(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_RLW_00002,4;NJ
+# ::snt 本社 は 京都府 京都市 右京区 嵯峨天竜寺車道町 。
+∃ EVENT[2] ENTITY[1] (本社(ENTITY[1]) ∧ xxx(EVENT[2], ENTITY[1], ENTITY[京都府_京都市_右京区_嵯峨天竜寺車道町]))
+
+# ::id 5_wikipedia_KYOTO_RLW_00002,5;NJ
+# ::snt 鉄道 の 電化 ・ 複線化 の ため 、 山陰本線 （ 嵯峨野線 ） の 嵯峨 （ 現在 の 嵯峨嵐山 ） ～ 馬堀 間 が 、 1989 年 3 月 に 新線 に 切替え られ た が 、 景勝地 として 名高い 保津峡 に 沿っ て 走る この 旧線 を 観光 鉄道 として 活用 する こと に なり 、 1991 年 から トロッコ列車 の 運行 を 開始 し て いる 。
+∃ SITUATION[15] ENTITY[14] ATTRIB[18] EVENT[13] EVENT[23] EVENT[24] EVENT[28] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[8] GROUP[9] ENTITY[12] ENTITY[11] ENTITY[7] ENTITY[1] ENTITY[22] ENTITY[27] ENTITY[26] ENTITY[25] EVENT[20] EVENT[21] ENTITY[19] ENTITY[16] (
+ 景勝地(ENTITY[19]) ∧
+  として_名高い(ENTITY[19], ATTRIB[18]) ∧
+   ATTRIBUTE_xxx(ATTRIB[18], ENTITY[保津峡]) ∧
+    CONJ_te(沿っ_て(EVENT[20], ENTITY[16]) ∧ に(EVENT[20]) = ENTITY[保津峡], 走る(EVENT[21], ENTITY[16])) ∧
+     旧線(ENTITY[16]) ∧
+     鉄道(ENTITY[3]) ∧
+      ∃ ENTITY[5] (電化(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+       ∃ ENTITY[6] (複線化(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+       の(ENTITY[3], ENTITY[2]) ∧ equals(GROUP[4], ENTITY[2]) ∧
+        の_ため(ENTITY[2], ENTITY[1]) ∧
+         嵯峨野線(ENTITY[8]) ∧
+          namely_-ENTITY-(ENTITY[8], ENTITY[山陰本線]) ∧
+           ∃ ENTITY[10] (
+            現在(ENTITY[10]) ∧
+             の_xxx(ENTITY[10], ENTITY[嵯峨嵐山]) ∧ namely_-ENTITY-(ENTITY[嵯峨嵐山], ENTITY[嵯峨]) ∧ is_element_of(ENTITY[嵯峨], GROUP[9])) ∧
+            is_element_of(ENTITY[馬堀], GROUP[9]) ∧
+            equals_間(GROUP[9], ENTITY[7]) ∧ の__間(ENTITY[山陰本線], ENTITY[7]) ∧
+             CD_1989_年_3_月(ENTITY[11]) ∧
+              新線(ENTITY[12]) ∧
+               ENTITY[14] = *pro*{ENTITY[山陰本線], ENTITY[馬堀], ENTITY[嵯峨], ENTITY[嵯峨嵐山], ENTITY[1], ENTITY[7], ENTITY[11], ENTITY[12], ENTITY[8], ENTITY[2], ENTITY[3]} ∧
+                観光_鉄道(ENTITY[22]) ∧
+                 こと(SITUATION[15],
+                  活用する.0(EVENT[23], ENTITY[14], ENTITY[16]) ∧ として(EVENT[23]) = ENTITY[22]) ∧
+                  CD_1991_年(ENTITY[25]) ∧
+                   トロッコ列車(ENTITY[27]) ∧
+                    の_運行(ENTITY[27], ENTITY[26]) ∧
+                     past(EVENT[13]) ∧
+                      CONJ_が(切替え_た(EVENT[13], _, ENTITY[7]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+                            に(EVENT[13]) = ENTITY[11] ∧ ADV(EVENT[13]) = ENTITY[1],
+                       なり(EVENT[24], ENTITY[14], SITUATION[15]) ∧
+                        開始する.0_て_いる(EVENT[28], ENTITY[14], ENTITY[26]) ∧ から(EVENT[28]) = ENTITY[25]))
+
+# ::id 6_wikipedia_KYOTO_RLW_00002,6;NJ
+# ::snt けいてつ協會 『 しられざる鉄道 』 ジェイティービー 、 1997 年 によると 日本 初 の 純粋 な 観光 専用 鉄道 と さ れる 。
+∃ ATTRIB[5] ENTITY[1] EVENT[6] ENTITY[2] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  namely_-ENTITY-(ENTITY[けいてつ協會_ジェイティービー], ENTITY[しられざる鉄道]) ∧
+   CD_1997_年(ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[2], ENTITY[しられざる鉄道]) ∧
+     日本_初(ENTITY[4]) ∧
+      純粋_な(ATTRIB[5]) ∧
+       ATTRIBUTE_観光_専用_鉄道(ATTRIB[5], ENTITY[3]) ∧ の_観光_専用_鉄道(ENTITY[4], ENTITY[3]) ∧
+        さ(EVENT[6], _, ENTITY[1], ENTITY[3]) ∧ によると(EVENT[6]) = ENTITY[しられざる鉄道])
+
+# ::id 7_wikipedia_KYOTO_RLW_00002,7;NJ
+# ::snt この ほか 、 トロッコ列車 の 京都側 の 始発駅 で ある トロッコ嵯峨駅 の 駅前 に は 、 19 世紀 の 科学 技術 や 芸術 を 展示 し て いる 「 19thCENTURYHALL 」 （ 19世紀ホール ） が あり 、 これ の 運営 も 行っ て いる 。
+∃ ENTITY[17] ENTITY[1] EVENT[14] EVENT[15] EVENT[18] GROUP[11] ENTITY[10] ENTITY[9] ENTITY[16] EVENT[7] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[2] (
+ ほか(ENTITY[2]) ∧
+  トロッコ列車(ENTITY[6]) ∧
+   の_始発駅(ENTITY[京都側], ENTITY[5]) ∧ の__始発駅(ENTITY[6], ENTITY[5]) ∧
+    で_ある(EVENT[7], ENTITY[トロッコ嵯峨駅], ENTITY[5]) ∧
+     の_駅前(ENTITY[トロッコ嵯峨駅], ENTITY[3]) ∧
+      ENTITY[1] = *pro* ∧
+       CD_19_世紀(ENTITY[10]) ∧
+        CONJ_や(∃ ENTITY[12] (科学_技術(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+         ∃ ENTITY[13] (芸術(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+         equals(GROUP[11], ENTITY[9]) ∧ の(ENTITY[10], ENTITY[9]) ∧
+          展示する.0_て_いる(EVENT[14], ENTITY[19thCENTURYHALL], ENTITY[9]) ∧
+           namely_-ENTITY-(ENTITY[19世紀ホール], ENTITY[19thCENTURYHALL]) ∧
+            ENTITY[17] = これ{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[19thCENTURYHALL], ENTITY[19世紀ホール], ENTITY[トロッコ嵯峨駅], ENTITY[5], ENTITY[6], ENTITY[京都側], ENTITY[9], ENTITY[10]} ∧
+             の_運営(ENTITY[17], ENTITY[16]) ∧
+              あり(EVENT[15], ENTITY[19thCENTURYHALL]) ∧ に(EVENT[15]) = ENTITY[3] ∧
+               行っ_て_いる(EVENT[18], ENTITY[1], ENTITY[16]) ∧ ADV(EVENT[18]) = ENTITY[2])
+
+# ::id 8_wikipedia_KYOTO_RLW_00002,8;NJ
+# ::snt 19世紀ホール に は 、 国鉄 D51形 蒸気機関車 など の 蒸気機関車 など も 展示 さ れ て いる 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 国鉄_D51形_蒸気機関車(ENTITY[4]) ∧
+  など(ENTITY[4], ENTITY[3]) ∧
+   の_蒸気機関車(ENTITY[3], ENTITY[2]) ∧
+    など(ENTITY[2], ENTITY[1]) ∧ 展示する.0_て_いる(EVENT[5], _, ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[19世紀ホール])
+
+# ::id 9_wikipedia_KYOTO_RLW_00002,9;NJ
+# ::snt 歴史
+∃ EVENT[2] ENTITY[1] (歴史(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 10_wikipedia_KYOTO_RLW_00002,10;NJ
+# ::snt 1990 年 （ 平成 2 年 ） 11 月 4 日 設立 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_1990_年_（_平成_2_年_）_11_月_4_日(TIME[2]) ∧ 設立(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 11_wikipedia_KYOTO_RLW_00002,11;NJ
+# ::snt 1991 年 （ 平成 3 年 ） 4 月 27 日 嵯峨野観光線 トロッコ嵯峨駅 ～ トロッコ亀岡駅 間 が 開業 。
+∃ EVENT[4] GROUP[3] ENTITY[2] TIME[1] (
+ CD_1991_年_（_平成_3_年_）_4_月_27_日(TIME[1]) ∧
+  is_element_of(ENTITY[トロッコ嵯峨駅], GROUP[3]) ∧ is_element_of(ENTITY[トロッコ亀岡駅], GROUP[3]) ∧
+   equals_嵯峨野観光線_間(GROUP[3], ENTITY[2]) ∧ 開業(EVENT[4], ENTITY[2]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 12_wikipedia_KYOTO_RLW_00002,12;NJ
+# ::snt 2002 年 （ 平成 14 年 ） 11 月 イメージキャラクター 「 トロッキー 」 登場 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] TIME[1] (
+ CD_2002_年_（_平成_14_年_）_11_月(TIME[1]) ∧
+  トロッキー(ENTITY[3]) ∧
+   イメージキャラクター(ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧ 登場(EVENT[4], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 13_wikipedia_KYOTO_RLW_00002,13;NJ
+# ::snt 2003 年 （ 平成 15 年 ） 4 月 トロッコ嵯峨駅 前 に 19世紀ホール が オープン 。
+∃ EVENT[3] ENTITY[2] TIME[1] (
+ CD_2003_年_（_平成_15_年_）_4_月(TIME[1]) ∧
+  トロッコ嵯峨駅_前(ENTITY[2]) ∧
+   オープン(EVENT[3], ENTITY[19世紀ホール]) ∧ に(EVENT[3]) = ENTITY[2] ∧ is_contained_in(時間(EVENT[3]), TIME[1]))
+
+# ::id 14_wikipedia_KYOTO_RLW_00002,14;NJ
+# ::snt 路線
+∃ EVENT[2] ENTITY[1] (路線(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 15_wikipedia_KYOTO_RLW_00002,15;NJ
+# ::snt 運行 形態 など は 下記 を 参照 。
+∃ ENTITY[2] ENTITY[1] (
+ 運行_形態(ENTITY[2]) ∧
+  など(ENTITY[2], ENTITY[1]) ∧
+   IMPERATIVE(∃ EVENT[4] ENTITY[3] (下記(ENTITY[3]) ∧ 参照(EVENT[4], _, ENTITY[3]) ∧ TPC(EVENT[4]) = ENTITY[1])))
+
+# ::id 16_wikipedia_KYOTO_RLW_00002,17;NJ
+# ::snt 車両
+∃ EVENT[2] ENTITY[1] (車両(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 17_wikipedia_KYOTO_RLW_00002,18;NJ
+# ::snt 全て JR に 在籍 し て い た 車両 を 改造 し て 使用 し て いる 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  全て EVENT[4] ENTITY[2] (
+   (在籍する.0_て_い_た(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[JR] ∧ 車両(ENTITY[2]) ∧
+    past(EVENT[4])), ∃ EVENT[5] EVENT[6] CONJ_te(改造する.0_て(EVENT[5], ENTITY[1], ENTITY[2]), 使用する.0_て_いる(EVENT[6], ENTITY[1], ENTITY[2]))))
+
+# ::id 18_wikipedia_KYOTO_RLW_00002,19;NJ
+# ::snt 機関車 は 国鉄 DE10形 ディーゼル機関車 1104 号機 を 専用機 として 塗色変更 、 予備 として JR に 在籍 し て いる 同 1156 号機 を 塗色変更 の 上 使用 し て いる 。
+∃ ENTITY[8] SITUATION[7] ENTITY[1] EVENT[5] EVENT[11] EVENT[12] EVENT[13] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[6] ENTITY[2] (
+ 機関車(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   (CD_1104_号機(ENTITY[3]), 国鉄_DE10形_ディーゼル機関車(ENTITY[3])) ∧
+    専用機(ENTITY[4]) ∧
+     予備(ENTITY[6]) ∧
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[2], ENTITY[6], ENTITY[3], ENTITY[4]} ∧
+       (CD_1156_号機(ENTITY[9]),
+        在籍する.0_て_いる(EVENT[11], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[JR] ∧ 同(ENTITY[9])) ∧
+        FACT(SITUATION[7], 塗色変更_の(EVENT[12], ENTITY[8], ENTITY[9])) ∧
+         塗色変更(EVENT[5], ENTITY[1], ENTITY[3]) ∧ として(EVENT[5]) = ENTITY[4] ∧
+          使用する.0_て_いる(EVENT[13], ENTITY[1]) ∧ 上(EVENT[13]) = SITUATION[7] ∧ として(EVENT[13]) = ENTITY[6] ∧
+           TPC(EVENT[13]) = ENTITY[2])
+
+# ::id 19_wikipedia_KYOTO_RLW_00002,20;NJ
+# ::snt 客車 は 、 国鉄 トキ 25000形 貨車 から の 改造 で ある 。
+∃ EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 客車(ENTITY[1]) ∧
+  貨車(ENTITY[4]) ∧
+   国鉄_トキ_25000形(ENTITY[3]) ∧
+    namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧ から_の_改造(ENTITY[4], ENTITY[2]) ∧ で_ある(EVENT[5], ENTITY[1], ENTITY[2]))

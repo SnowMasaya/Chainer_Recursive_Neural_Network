@@ -1,0 +1,1031 @@
+# ::id 1_nonfiction_BEETON-1861;AT2156-1;NE
+# ::snt DUTIES OF THE BUTLER .
+∃ EVENT[3] GROUP[1] ENTITY[2] (BUTLER(ENTITY[2]) ∧ is_DUTIES_OF(GROUP[1], ENTITY[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = GROUP[1])
+
+# ::id 2_nonfiction_BEETON-1861;AT2157-1;NE
+# ::snt The domestic duties of the butler are to bring in the eatables at breakfast , and wait upon the family at that meal , assisted by the footman , and see to the cleanliness of everything at table .
+∃ REF1[5] ATTRIB[2] EVENT[8] EVENT[13] EVENT[12] EVENT[17] EVENT[4] ENTITY[7] BUTLER[3] GROUP[6] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[14] GROUP[1] (
+ domestic(ATTRIB[2]) ∧
+  butler(BUTLER[3]) ∧
+   is_duties_of(GROUP[1], BUTLER[3]) ∧ is_duties_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    eatables(GROUP[6]) ∧
+     family(ENTITY[9]) ∧
+      meal(ENTITY[10]) ∧
+       footman(ENTITY[11]) ∧
+        ∀ ENTITY[16] ENTITY[15] ((table(ENTITY[16]) ∧ is_thing_at(ENTITY[15], ENTITY[16])) → is_cleanliness_of(ENTITY[14], ENTITY[15])) ∧
+         REF1[5] = *pro* ∧
+          breakfast(ENTITY[7]) ∧
+           copula(EVENT[4], GROUP[1],
+            CONJ_and(bring_in(EVENT[8], REF1[5], GROUP[6]) ∧ at(EVENT[8]) = ENTITY[7],
+             CONJ_and(wait(EVENT[13], REF1[5]) ∧ at(EVENT[13]) = ENTITY[10] ∧
+                   upon(EVENT[13]) = ENTITY[9], assisted(EVENT[12], ENTITY[11], REF1[5])),
+             see(EVENT[17], REF1[5]) ∧ to(EVENT[17]) = ENTITY[14])))
+
+# ::id 3_nonfiction_BEETON-1861;AT2157-2;NE
+# ::snt On taking away , he removes the tray with the china and plate , for which he is responsible .
+∃ BUTLER[4] SITUATION[1] ATTRIB[12] BUTLER[11] EVENT[2] EVENT[14] EVENT[13] ENTITY[8] ENTITY[9] GROUP[7] ENTITY[6] ENTITY[5] (
+ china(ENTITY[8]) ∧
+  plate(ENTITY[9]) ∧
+   is_element_of(ENTITY[8], GROUP[7]) ∧ is_element_of(ENTITY[9], GROUP[7]) ∧
+    is_equals(ENTITY[6], GROUP[7]) ∧
+     BUTLER[11] = he{BUTLER[4]} ∧
+      responsible(ATTRIB[12]) ∧
+       copula(EVENT[13], BUTLER[11], ATTRIB[12]) ∧ for(EVENT[13]) = ENTITY[5] ∧ is_tray_with(ENTITY[5], ENTITY[6]) ∧
+        DIR_away(EVENT[2]) ∧
+         is_FACT_THAT(SITUATION[1], taking(EVENT[2])) ∧
+          BUTLER[4] = he ∧ removes(EVENT[14], BUTLER[4], ENTITY[5]) ∧ On(EVENT[14]) = SITUATION[1])
+
+# ::id 4_nonfiction_BEETON-1861;AT2157-3;NE
+# ::snt At luncheon , he arranges the meal , and waits unassisted , the footman being now engaged in other duties .
+∃ ATTRIB[3] ATTRIB[7] BUTLER[2] EVENT[11] EVENT[12] EVENT[8] EVENT[4] GROUP[6] ENTITY[1] ENTITY[10] FOOTMAN[5] (
+ meal(ENTITY[10]) ∧
+  footman(FOOTMAN[5]) ∧
+   luncheon(ENTITY[1]) ∧
+    BUTLER[2] = he ∧
+     other(ATTRIB[7]) ∧
+      is_duties_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+       unassisted(ATTRIB[3]) ∧
+        TMP_now(EVENT[8]) ∧
+         CONJ_and(CONJ_and(CONJ_and(arranges(EVENT[11], BUTLER[2], ENTITY[10]) ∧ At(EVENT[11]) = ENTITY[1],
+                    waits(EVENT[12], BUTLER[2]) ∧ At(EVENT[12]) = ENTITY[1]),
+               being_engaged(EVENT[8], _, FOOTMAN[5]) ∧ in(EVENT[8]) = GROUP[6]),
+          xxx(EVENT[4], BUTLER[2], ATTRIB[3])))
+
+# ::id 5_nonfiction_BEETON-1861;AT2157-4;NE
+# ::snt At dinner , he places the silver and plated articles on the table , sees that everything is in its place , and rectifies what is wrong .
+∃ ATTRIB[17] BUTLER[2] ATTRIB[7] EVENT[9] EVENT[10] EVENT[18] EVENT[19] ENTITY[15] ENTITY[1] GROUP[5] GROUP[6] GROUP[4] ENTITY[8] ENTITY[3] (
+ silver_articles(GROUP[5]) ∧
+  plated(ATTRIB[7]) ∧
+   is_articles_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+    is_subset_of_or_equal_to(GROUP[5], GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4]) ∧
+     is_equals(ENTITY[3], GROUP[4]) ∧
+      table(ENTITY[8]) ∧
+       dinner(ENTITY[1]) ∧
+        BUTLER[2] = he ∧
+         wrong(ATTRIB[17]) ∧
+          copula(EVENT[18], ENTITY[15], ATTRIB[17]) ∧
+           CONJ_and(places(EVENT[9], BUTLER[2], ENTITY[3]) ∧ on(EVENT[9]) = ENTITY[8] ∧
+                 At(EVENT[9]) = ENTITY[1],
+            sees(EVENT[10], BUTLER[2],
+             ∀ THING[11] (thing(THING[11]) →
+              ∃ THING[13] EVENT[14] ENTITY[12] (
+               THING[13] = its{THING[11]} ∧
+                is_place_POS(ENTITY[12], THING[13]) ∧
+                 copula(EVENT[14], THING[11]) ∧ in(EVENT[14]) = ENTITY[12]))) ∧
+             At(EVENT[10]) = ENTITY[1],
+            rectifies(EVENT[19], BUTLER[2], ENTITY[15]) ∧ At(EVENT[19]) = ENTITY[1]))
+
+# ::id 6_nonfiction_BEETON-1861;AT2157-5;NE
+# ::snt He carries in the first dish , and announces in the drawing-room that dinner is on the table , and respectfully stands by the door until the company are seated , when he takes his place behind his master 's chair on the left , to remove the covers , handing them to the other attendants to carry out .
+∃ SITUATION[31] PRP[24] REF5[21] PRP[19] REF4[17] REF3[14] REF2[12] REF1[1] ATTRIB[23] ATTRIB[3] EVENT[4] EVENT[9] EVENT[6] EVENT[27] EVENT[25] EVENT[26] EVENT[28] EVENT[29] EVENT[30] ENTITY[7] ENTITY[16] ENTITY[15] ENTITY[13] ENTITY[2] ENTITY[8] ENTITY[5] ENTITY[18] GROUP[22] GROUP[20] ENTITY[11] ENTITY[10] (
+ first(ATTRIB[3]) ∧
+  is_dish_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   drawing-room(ENTITY[5]) ∧
+    table(ENTITY[8]) ∧
+     door(ENTITY[10]) ∧
+      company(ENTITY[11]) ∧
+       left(ENTITY[18]) ∧
+        covers(GROUP[20]) ∧
+         other(ATTRIB[23]) ∧
+          is_attendants_ATTRIBUTE(GROUP[22], ATTRIB[23]) ∧
+           REF1[1] = he ∧
+            dinner(ENTITY[7]) ∧
+             REF2[12] = he ∧
+              REF3[14] = his ∧
+               REF4[17] = his ∧
+                is_master_POS(ENTITY[16], REF4[17]) ∧
+                 is_chair_POS(ENTITY[15], ENTITY[16]) ∧
+                  is_place_on(ENTITY[13], ENTITY[18]) ∧ is_place_behind(ENTITY[13], ENTITY[15]) ∧
+                   is_place_POS(ENTITY[13], REF3[14]) ∧
+                   REF5[21] = them ∧
+                    is_FACT_THAT(PRP[24], carry_out(EVENT[25], GROUP[22])) ∧
+                     is_FACT_THAT(PRP[19],
+                      CONJ_and(remove(EVENT[27], ENTITY[13], GROUP[20]),
+                       handing(EVENT[26], GROUP[20], REF5[21], GROUP[22]) ∧
+                        PRP(EVENT[26]) = PRP[24])) ∧
+                      ADV_respectfully(SITUATION[31]) ∧
+                       CONJ_and(carries(EVENT[4], REF1[1]) ∧ in(EVENT[4]) = ENTITY[2],
+                        announces(EVENT[6], REF1[1],
+                         copula(EVENT[9], ENTITY[7]) ∧ on(EVENT[9]) = ENTITY[8]) ∧
+                         in(EVENT[6]) = ENTITY[5],
+                        is_FACT_THAT(SITUATION[31],
+                         CRD_until(CRD_when(takes(EVENT[28], REF2[12], ENTITY[13]) ∧
+                                    PRP(EVENT[28]) = PRP[19],
+                               seated(EVENT[29], _, ENTITY[11])),
+                          stands(EVENT[30], REF1[1]) ∧ by(EVENT[30]) = ENTITY[10]))))
+
+# ::id 7_nonfiction_BEETON-1861;AT2157-6;NE
+# ::snt After the first course of plates is supplied , his place is at the sideboard to serve the wines , but only when called on .
+∃ REF2[13] SITUATION[12] PRP[8] REF1[6] ATTRIB[2] ENTITY[5] EVENT[4] EVENT[10] EVENT[14] EVENT[17] GROUP[3] ENTITY[1] GROUP[9] GROUP[15] ENTITY[7] (
+ first(ATTRIB[2]) ∧
+  plates(GROUP[3]) ∧
+   is_course_of(ENTITY[1], GROUP[3]) ∧ is_course_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    sideboard(ENTITY[7]) ∧
+     wines(GROUP[9]) ∧
+      wines(GROUP[15]) ∧
+       REF1[6] = his ∧
+        is_place_POS(ENTITY[5], REF1[6]) ∧
+         REF2[13] = *pro* ∧
+          is_FACT_THAT(SITUATION[12], called_on(EVENT[14], _, REF2[13])) ∧
+           is_FACT_THAT(PRP[8],
+            CONJ_but(serve(EVENT[10], ENTITY[5], GROUP[9]),
+             ONLY SITUATION[11] (is_of(SITUATION[11], SITUATION[12]),
+              ∃ EVENT[16] (serve(EVENT[16], ENTITY[5], GROUP[15]) ∧ when(EVENT[16]) = SITUATION[11])))) ∧
+            CRD_After(supplied(EVENT[4], _, ENTITY[1]),
+             copula(EVENT[17], ENTITY[5]) ∧ PRP(EVENT[17]) = PRP[8] ∧
+              at(EVENT[17]) = ENTITY[7]))
+
+# ::id 8_nonfiction_BEETON-1861;AT2158-1;NE
+# ::snt The first course ended , he rings the cook 's bell , and hands the dishes from the table to the other servants to carry away , receiving from them the second course , which he places on the table , removing the covers as before , and again taking his place at the sideboard .
+∃ REF2[15] PRP[12] REF1[4] REF4[25] ATTRIB[22] REF3[19] ATTRIB[17] ATTRIB[11] ATTRIB[2] ENTITY[5] EVENT[3] EVENT[7] EVENT[13] EVENT[31] EVENT[30] EVENT[29] EVENT[23] EVENT[27] ENTITY[1] ENTITY[6] ENTITY[9] GROUP[21] ENTITY[26] ENTITY[24] ENTITY[20] ENTITY[16] group[10] GROUP[8] (
+ first(ATTRIB[2]) ∧
+  is_course_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   cook(ENTITY[6]) ∧
+    table(ENTITY[9]) ∧
+     is_dishes_from(GROUP[8], ENTITY[9]) ∧
+      other(ATTRIB[11]) ∧
+       is_servants_ATTRIBUTE(group[10], ATTRIB[11]) ∧
+        second(ATTRIB[17]) ∧
+         REF3[19] = he ∧
+          table(ENTITY[20]) ∧
+           covers(GROUP[21]) ∧
+            ADV_before(ATTRIB[22]) ∧
+             REF4[25] = his ∧
+              is_place_POS(ENTITY[24], REF4[25]) ∧
+               sideboard(ENTITY[26]) ∧
+                CONJ_and(places(EVENT[29], REF3[19], ENTITY[16]) ∧ on(EVENT[29]) = ENTITY[20],
+                 CONJ_and(removing(EVENT[23], ENTITY[16], GROUP[21]) ∧ as(EVENT[23]) = ATTRIB[22],
+                  taking(EVENT[27], ENTITY[16], ENTITY[24]) ∧ at(EVENT[27]) = ENTITY[26])) ∧
+                 is_course_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+                 TMP_again(EVENT[27]) ∧
+                  DIR_away(EVENT[13]) ∧
+                   REF1[4] = he ∧
+                    is_bell_POS(ENTITY[5], ENTITY[6]) ∧
+                     is_FACT_THAT(PRP[12], carry(EVENT[13], GROUP[8])) ∧
+                      REF2[15] = them ∧
+                       CONJ_and(ended(EVENT[3], _, ENTITY[1]),
+                        CONJ_and(rings(EVENT[7], REF1[4], ENTITY[5]),
+                         CONJ_and(hands(EVENT[31], REF1[4], GROUP[8]) ∧
+                               PRP(EVENT[31]) = PRP[12] ∧ to(EVENT[31]) = group[10],
+                          receiving(EVENT[30], GROUP[8], ENTITY[16]) ∧ from(EVENT[30]) = REF2[15]))))
+
+# ::id 9_nonfiction_BEETON-1861;AT2159-1;NE
+# ::snt At dessert , the slips being removed , the butler receives the dessert from the other servants , and arranges it on the table , with plates and glasses , and then takes his place behind his master 's chair to hand the wines and ices , while the footman stands behind his mistress for the same purpose , the other attendants leaving the room .
+∃ SITUATION[37] REF4[27] PRP[20] REF3[19] REF2[16] REF1[9] ATTRIB[31] ATTRIB[29] ATTRIB[7] EVENT[3] EVENT[8] EVENT[14] EVENT[34] EVENT[33] EVENT[35] EVENT[36] GROUP[11] ENTITY[18] ENTITY[17] ENTITY[26] ENTITY[15] ENTITY[1] GROUP[2] GROUP[6] ENTITY[5] ENTITY[10] GROUP[23] GROUP[24] GROUP[22] ENTITY[32] GROUP[30] ENTITY[28] ENTITY[25] ENTITY[21] ENTITY[4] (
+ slips(GROUP[2]) ∧
+  butler(ENTITY[4]) ∧
+   dessert(ENTITY[5]) ∧
+    other(ATTRIB[7]) ∧
+     is_servants_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+      table(ENTITY[10]) ∧
+       wines(GROUP[23]) ∧
+        ices(GROUP[24]) ∧
+         is_subset_of_or_equal_to(GROUP[23], GROUP[22]) ∧ is_subset_of_or_equal_to(GROUP[24], GROUP[22]) ∧
+          is_equals(ENTITY[21], GROUP[22]) ∧
+           footman(ENTITY[25]) ∧
+            same(ATTRIB[29]) ∧
+             is_purpose_ATTRIBUTE(ENTITY[28], ATTRIB[29]) ∧
+              other(ATTRIB[31]) ∧
+               is_attendants_ATTRIBUTE(GROUP[30], ATTRIB[31]) ∧
+                room(ENTITY[32]) ∧
+                 dessert(ENTITY[1]) ∧
+                  REF1[9] = it ∧
+                   ∃ GROUP[12] (plates(GROUP[12]) ∧ is_subset_of_or_equal_to(GROUP[12], GROUP[11])) ∧
+                    ∃ GROUP[13] (glasses(GROUP[13]) ∧ is_subset_of_or_equal_to(GROUP[13], GROUP[11])) ∧
+                    REF2[16] = his ∧
+                     REF3[19] = his ∧
+                      is_master_POS(ENTITY[18], REF3[19]) ∧
+                       is_chair_POS(ENTITY[17], ENTITY[18]) ∧
+                        is_place_behind(ENTITY[15], ENTITY[17]) ∧ is_place_POS(ENTITY[15], REF2[16]) ∧
+                         REF4[27] = his ∧
+                          is_mistress_POS(ENTITY[26], REF4[27]) ∧
+                           is_FACT_THAT(PRP[20],
+                            CRD_while(CONJ_and(stands(EVENT[34], ENTITY[25]) ∧
+                                       for(EVENT[34]) = ENTITY[28] ∧
+                                       behind(EVENT[34]) = ENTITY[26],
+                                  leaving(EVENT[33], GROUP[30], ENTITY[32])),
+                             hand(EVENT[35], ENTITY[15], ENTITY[21]))) ∧
+                            TMP_then(SITUATION[37]) ∧
+                             CONJ_and(being_removed(EVENT[3], _, GROUP[2]),
+                              CONJ_and(receives(EVENT[8], ENTITY[4], ENTITY[5]) ∧
+                                    from(EVENT[8]) = GROUP[6] ∧ At(EVENT[8]) = ENTITY[1],
+                               arranges(EVENT[14], ENTITY[4], REF1[9]) ∧
+                                with(EVENT[14]) = GROUP[11] ∧ on(EVENT[14]) = ENTITY[10] ∧
+                                At(EVENT[14]) = ENTITY[1],
+                               is_FACT_THAT(SITUATION[37],
+                                takes(EVENT[36], ENTITY[4], ENTITY[15]) ∧
+                                 PRP(EVENT[36]) = PRP[20] ∧
+                                 At(EVENT[36]) = ENTITY[1]))))
+
+# ::id 10_nonfiction_BEETON-1861;AT2159-2;NE
+# ::snt Where the old-fashioned practice of having the dessert on the polished table , without any cloth , is still adhered to , the butler should rub off any marks made by the hot dishes before arranging the dessert .
+∃ ATTRIB[15] ATTRIB[6] SITUATION[3] ATTRIB[2] EVENT[8] ENTITY[5] ENTITY[4] ENTITY[1] GROUP[14] ENTITY[17] ENTITY[11] (
+ old-fashioned(ATTRIB[2]) ∧
+  dessert(ENTITY[4]) ∧
+   polished(ATTRIB[6]) ∧
+    is_table_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+     is_FACT_THAT(SITUATION[3],
+      ANY ENTITY[7] (cloth(ENTITY[7]),
+       having(EVENT[8], _, ENTITY[4]) ∧ without(EVENT[8]) = ENTITY[7] ∧
+        on(EVENT[8]) = ENTITY[5])) ∧
+      is_practice_of(ENTITY[1], SITUATION[3]) ∧ is_practice_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+       butler(ENTITY[11]) ∧
+        hot(ATTRIB[15]) ∧
+         is_dishes_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+          dessert(ENTITY[17]) ∧
+           ∀ EVENT[9] CND_Where((TMP_still(EVENT[9]) ∧ adhered_to(EVENT[9], _, ENTITY[1])),
+            MD_should(ANY EVENT[16] GROUP[12] (made(EVENT[16], GROUP[14], GROUP[12]) ∧ marks(GROUP[12]),
+                  ∃ EVENT[18] EVENT[19] CRD_before(arranging(EVENT[18], GROUP[12], ENTITY[17]), rub_off(EVENT[19], ENTITY[11], GROUP[12]))))))
+
+# ::id 11_nonfiction_BEETON-1861;AT2160-1;NE
+# ::snt Before dinner , he has satisfied himself that the lamps , candles , or gas-burners are in perfect order , if not lighted , which will usually be the case .
+∃ ATTRIB[11] REF2[3] REF1[2] EVENT[4] ENTITY[10] ENTITY[1] GROUP[7] GROUP[8] GROUP[9] GROUP[6] ATTRIB[13] ENTITY[5] (
+ lamps(GROUP[7]) ∧
+  candles(GROUP[8]) ∧
+   gas-burners(GROUP[9]) ∧
+    CONJ_or(is_subset_of_or_equal_to(GROUP[7], GROUP[6]), is_subset_of_or_equal_to(GROUP[8], GROUP[6]), is_subset_of_or_equal_to(GROUP[9], GROUP[6])) ∧
+     is_equals(ENTITY[5], GROUP[6]) ∧
+      case(ATTRIB[13]) ∧
+       dinner(ENTITY[1]) ∧
+        REF1[2] = he ∧
+         REF2[3] = himself ∧
+          perfect(ATTRIB[11]) ∧
+           is_order_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+            has_satisfied(EVENT[4], REF1[2], REF2[3],
+             ∀ SITUATION[17] CND_if(
+                 MD_will(∃ EVENT[14] (TMP_usually(EVENT[14]) ∧ copula(EVENT[14], SITUATION[17], ATTRIB[13]))) ∧
+                  is_FACT_THAT(SITUATION[17], ¬ ∃ EVENT[16] lighted(EVENT[16], _, ENTITY[5])),
+                 ∃ EVENT[18] (copula(EVENT[18], ENTITY[5]) ∧ in(EVENT[18]) = ENTITY[10]))) ∧
+             Before(EVENT[4]) = ENTITY[1])
+
+# ::id 12_nonfiction_BEETON-1861;AT2160-2;NE
+# ::snt Having served every one with their share of the dessert , put the fires in order -LRB- when these are used -RRB- , and seen the lights are all right , at a signal from his master , he and the footman leave the room .
+∃ ATTRIB[19] REF4[14] REF1[3] EVENT[15] EVENT[16] EVENT[20] EVENT[17] EVENT[22] ENTITY[2] ENTITY[13] GROUP[4] ENTITY[1] ENTITY[6] ENTITY[10] GROUP[12] GROUP[18] ENTITY[21] (
+ footman(ENTITY[6]) ∧
+  dessert(ENTITY[10]) ∧
+   fires(GROUP[12]) ∧
+    lights(GROUP[18]) ∧
+     room(ENTITY[21]) ∧
+      REF1[3] = his ∧
+       is_master_POS(ENTITY[2], REF1[3]) ∧
+        is_signal_from(ENTITY[1], ENTITY[2]) ∧
+         ∃ REF2[5] (REF2[5] = he ∧ is_element_of(REF2[5], GROUP[4])) ∧ is_element_of(ENTITY[6], GROUP[4]) ∧
+          order(ENTITY[13]) ∧
+           REF4[14] = these ∧
+            all_right(ATTRIB[19]) ∧
+             CONJ_and(CONJ_and(∀ ENTITY[7] (one(ENTITY[7]) →
+                        ∃ REF3[9] EVENT[11] ENTITY[8] (
+                         REF3[9] = their ∧
+                          is_share_of(ENTITY[8], ENTITY[10]) ∧ is_share_POS(ENTITY[8], REF3[9]) ∧
+                           having_served(EVENT[11], GROUP[4], ENTITY[7]) ∧ with(EVENT[11]) = ENTITY[8])),
+                   CRD_when(used(EVENT[15], _, REF4[14]),
+                    having_put(EVENT[16], GROUP[4], GROUP[12]) ∧ in(EVENT[16]) = ENTITY[13]),
+                   having_seen(EVENT[17], GROUP[4], copula(EVENT[20], GROUP[18], ATTRIB[19]))),
+              leave(EVENT[22], GROUP[4], ENTITY[21]) ∧ at(EVENT[22]) = ENTITY[1]))
+
+# ::id 13_nonfiction_BEETON-1861;AT2161-1;NE
+# ::snt He now proceeds to the drawing-room , arranges the fireplace , and sees to the lights ;
+∃ REF1[1] EVENT[3] EVENT[6] EVENT[8] ENTITY[2] ENTITY[5] GROUP[7] (
+ drawing-room(ENTITY[2]) ∧
+  fireplace(ENTITY[5]) ∧
+   lights(GROUP[7]) ∧
+    REF1[1] = he ∧
+     TMP_now(EVENT[3]) ∧
+      CONJ_and(proceeds(EVENT[3], REF1[1]) ∧ to(EVENT[3]) = ENTITY[2], arranges(EVENT[6], REF1[1], ENTITY[5]),
+       sees(EVENT[8], REF1[1]) ∧ to(EVENT[8]) = GROUP[7]))
+
+# ::id 14_nonfiction_BEETON-1861;AT2161-2;NE
+# ::snt he then returns to his pantry , prepared to answer the bell , and attend to the company , while the footman is clearing away and cleaning the plate and glasses .
+∃ SITUATION[18] REF2[11] REF1[9] EVENT[6] EVENT[8] EVENT[17] EVENT[14] EVENT[16] EVENT[12] ENTITY[10] ENTITY[4] GROUP[5] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[13] ENTITY[15] (
+ footman(ENTITY[1]) ∧
+  plate(ENTITY[4]) ∧
+   glasses(GROUP[5]) ∧
+    is_element_of(ENTITY[4], GROUP[3]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3]) ∧
+     is_equals(ENTITY[2], GROUP[3]) ∧
+      bell(ENTITY[13]) ∧
+       company(ENTITY[15]) ∧
+        REF1[9] = he ∧
+         REF2[11] = his ∧
+          is_pantry_POS(ENTITY[10], REF2[11]) ∧
+           DIR_away(EVENT[6]) ∧
+            TMP_then(SITUATION[18]) ∧
+             CRD_while(CONJ_and(is_clearing(EVENT[6], ENTITY[1], ENTITY[2]), is_cleaning(EVENT[8], ENTITY[1], ENTITY[2])),
+              is_FACT_THAT(SITUATION[18],
+               CONJ_and(returns(EVENT[17], REF1[9]) ∧ to(EVENT[17]) = ENTITY[10],
+                prepared(EVENT[12], _, REF1[9],
+                 CONJ_and(answer(EVENT[14], REF1[9], ENTITY[13]),
+                  attend(EVENT[16], REF1[9]) ∧ to(EVENT[16]) = ENTITY[15]))))))
+
+# ::id 15_nonfiction_BEETON-1861;AT2162-1;NE
+# ::snt At tea he again attends .
+∃ REF1[2] EVENT[3] ENTITY[1] (
+ tea(ENTITY[1]) ∧
+  REF1[2] = he ∧ TMP_again(EVENT[3]) ∧ attends(EVENT[3], REF1[2]) ∧ At(EVENT[3]) = ENTITY[1])
+
+# ::id 16_nonfiction_BEETON-1861;AT2162-2;NE
+# ::snt At bedtime he appears with the candles ;
+∃ REF1[2] EVENT[4] ENTITY[1] GROUP[3] (
+ candles(GROUP[3]) ∧
+  bedtime(ENTITY[1]) ∧
+   REF1[2] = he ∧
+    appears(EVENT[4], REF1[2]) ∧ with(EVENT[4]) = GROUP[3] ∧ At(EVENT[4]) = ENTITY[1])
+
+# ::id 17_nonfiction_BEETON-1861;AT2162-3;NE
+# ::snt he locks up the plate , secures doors and windows , and sees that all the fires are safe .
+∃ REF1[1] EVENT[3] EVENT[7] EVENT[8] GROUP[4] ENTITY[2] (
+ plate(ENTITY[2]) ∧
+  REF1[1] = he ∧
+   ∃ GROUP[5] (doors(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[4])) ∧
+    ∃ GROUP[6] (windows(GROUP[6]) ∧ is_subset_of_or_equal_to(GROUP[6], GROUP[4])) ∧
+    CONJ_and(locks_up(EVENT[3], REF1[1], ENTITY[2]), secures(EVENT[7], REF1[1], GROUP[4]),
+     sees(EVENT[8], REF1[1],
+      ALL GROUP[9] (fires(GROUP[9]), ∃ ATTRIB[10] EVENT[11] (safe(ATTRIB[10]) ∧ copula(EVENT[11], GROUP[9], ATTRIB[10]))))))
+
+# ::id 18_nonfiction_BEETON-1861;AT2163-1;NE
+# ::snt In addition to these duties , the butler , where only one footman is kept , will be required to perform some of the duties of the valet , to pay bills , and superintend the other servants .
+∃ ATTRIB[15] ENTITY[5] ENTITY[1] GROUP[2] ENTITY[10] GROUP[9] GROUP[14] ENTITY[3] (
+ duties(GROUP[2]) ∧
+  butler(ENTITY[3]) ∧
+   valet(ENTITY[10]) ∧
+    is_duties_of(GROUP[9], ENTITY[10]) ∧
+     other(ATTRIB[15]) ∧
+      is_servants_ATTRIBUTE(GROUP[14], ATTRIB[15]) ∧
+       is_addition_to(ENTITY[1], GROUP[2]) ∧
+        (CD_one(ENTITY[5]), footman(ENTITY[5])) ∧
+         CRD_where(ONLY ENTITY[4] (is_of(ENTITY[4], ENTITY[5]), ∃ EVENT[6] kept(EVENT[6], _, ENTITY[4])),
+          MD_will(∃ EVENT[13] EVENT[16] EVENT[7] GROUP[12] (
+                bills(GROUP[12]) ∧
+                 required(EVENT[7], _, ENTITY[3],
+                  CONJ_and(SOME ENTITY[8] (is_element_of(ENTITY[8], GROUP[9]), ∃ EVENT[11] perform(EVENT[11], ENTITY[3], ENTITY[8])),
+                   pay(EVENT[13], ENTITY[3], GROUP[12]), superintend(EVENT[16], ENTITY[3], GROUP[14]))) ∧
+                  In(EVENT[7]) = ENTITY[1]))))
+
+# ::id 19_nonfiction_BEETON-1861;AT2163-2;NE
+# ::snt But the real duties of the butler are in the wine-cellar ;
+∃ ATTRIB[2] EVENT[5] ENTITY[3] ENTITY[4] GROUP[1] (
+ real(ATTRIB[2]) ∧
+  butler(ENTITY[3]) ∧
+   is_duties_of(GROUP[1], ENTITY[3]) ∧ is_duties_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    wine-cellar(ENTITY[4]) ∧ copula(EVENT[5], GROUP[1]) ∧ in(EVENT[5]) = ENTITY[4])
+
+# ::id 20_nonfiction_BEETON-1861;AT2163-3;NE
+# ::snt there he should be competent to advise his master as to the price and quality of the wine to be laid in ; " fine , " bottle , cork , and seal it , and place it in the binns .
+∃ SITUATION[22] REF1[1] EVENT[11] ENTITY[7] ENTITY[8] ENTITY[9] GROUP[6] ENTITY[5] GROUP[19] (
+ price(ENTITY[7]) ∧
+  quality(ENTITY[8]) ∧
+   is_element_of(ENTITY[7], GROUP[6]) ∧ is_element_of(ENTITY[8], GROUP[6]) ∧
+    laid_in(EVENT[11], _, ENTITY[9]) ∧ wine(ENTITY[9]) ∧
+     is_of(ENTITY[5], ENTITY[9]) ∧ is_equals(ENTITY[5], GROUP[6]) ∧
+      binns(GROUP[19]) ∧
+       REF1[1] = he ∧
+        LOC_there(SITUATION[22]) ∧
+         is_FACT_THAT(SITUATION[22],
+          MD_should(∃ REF4[18] REF3[16] REF2[4] ATTRIB[2] EVENT[12] EVENT[13] EVENT[14] EVENT[15] EVENT[17] EVENT[20] EVENT[21] ENTITY[3] (
+                REF2[4] = his ∧
+                 is_master_POS(ENTITY[3], REF2[4]) ∧
+                  REF3[16] = it ∧
+                   REF4[18] = it ∧
+                    is_competent_to(ATTRIB[2],
+                     CONJ_and(advise(EVENT[12], _, ENTITY[3]) ∧ as_to(EVENT[12]) = ENTITY[5],
+                      fine(EVENT[13]), bottle(EVENT[14]), cork(EVENT[15]),
+                      seal(EVENT[17], _, REF3[16]),
+                      place(EVENT[20], _, REF4[18]) ∧ in(EVENT[20]) = GROUP[19])) ∧
+                     copula(EVENT[21], REF1[1], ATTRIB[2])))))
+
+# ::id 21_nonfiction_BEETON-1861;AT2163-4;NE
+# ::snt Brewing , racking , and bottling malt liquors , belong to his office , as well as their distribution .
+∃ REF2[9] REF1[7] SITUATION[1] GROUP[2] ENTITY[8] ENTITY[6] EVENT[3] EVENT[4] EVENT[5] EVENT[10] (
+ is_ADV_as_well_as(EVENT[10], ENTITY[8]) ∧
+  malt_liquors(GROUP[2]) ∧
+   is_FACT_THAT(SITUATION[1],
+    CONJ_and(brewing(EVENT[3], _, GROUP[2]), racking(EVENT[4], _, GROUP[2]),
+     bottling(EVENT[5], _, GROUP[2]))) ∧
+    REF1[7] = his ∧
+     is_office_POS(ENTITY[6], REF1[7]) ∧
+      REF2[9] = their ∧
+       is_distribution_POS(ENTITY[8], REF2[9]) ∧ belong(EVENT[10], SITUATION[1]) ∧ to(EVENT[10]) = ENTITY[6])
+
+# ::id 22_nonfiction_BEETON-1861;AT2163-5;NE
+# ::snt These and other drinkables are brought from the cellar every day by his own hands , except where an under-butler is kept ; and a careful entry of every bottle used , entered in the cellar-book ; so that the book should always show the contents of the cellar .
+∃ GROUP[1] GROUP[2] ENTITY[20] GROUP[19] ENTITY[18] ENTITY[17] ENTITY[5] (
+ cellar(ENTITY[5]) ∧
+  cellar-book(ENTITY[17]) ∧
+   book(ENTITY[18]) ∧
+    cellar(ENTITY[20]) ∧
+     is_contents_of(GROUP[19], ENTITY[20]) ∧
+      is_subset_of_or_equal_to(GROUP[2], GROUP[1]) ∧
+       ∃ ATTRIB[4] GROUP[3] (other(ATTRIB[4]) ∧ is_drinkables_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_subset_of_or_equal_to(GROUP[3], GROUP[1])) ∧
+       ∀ TIME[6] (day(TIME[6]) →
+        ∃ ATTRIB[9] REF1[8] GROUP[7] (
+         REF1[8] = his ∧
+          own(ATTRIB[9]) ∧
+           is_hands_ATTRIBUTE(GROUP[7], ATTRIB[9]) ∧ is_hands_POS(GROUP[7], REF1[8]) ∧
+            ∀ EVENT[11] ENTITY[10] CND_except_where(under-butler(ENTITY[10]) ∧ kept(EVENT[11], _, ENTITY[10]),
+                ∃ ATTRIB[13] EVENT[23] EVENT[24] ENTITY[12] (
+                 careful(ATTRIB[13]) ∧
+                  ∀ EVENT[16] ENTITY[14] ((used(EVENT[16], _, ENTITY[14]) ∧ bottle(ENTITY[14])) →
+                   (is_entry_of(ENTITY[12], ENTITY[14]) ∧ is_entry_ATTRIBUTE(ENTITY[12], ATTRIB[13]))) ∧
+                   CONJ_and(CRD_so(MD_should(∃ EVENT[21] (TMP_always(EVENT[21]) ∧ show(EVENT[21], ENTITY[18], GROUP[19]))),
+                         entered(EVENT[23], _, ENTITY[12]) ∧ in(EVENT[23]) = ENTITY[17]),
+                    brought(EVENT[24], GROUP[7], GROUP[1]) ∧ is_contained_in(TMP(EVENT[24]), TIME[6]) ∧
+                     from(EVENT[24]) = ENTITY[5]))))))
+
+# ::id 23_nonfiction_BEETON-1861;AT2164-1;NE
+# ::snt The office of butler is thus one of very great trust in a household .
+∃ ATTRIB[5] EVENT[7] ENTITY[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ butler(ENTITY[2]) ∧
+  is_office_of(ENTITY[1], ENTITY[2]) ∧
+   very_great(ATTRIB[5]) ∧
+    household(ENTITY[6]) ∧
+     is_trust_in(ENTITY[4], ENTITY[6]) ∧ is_trust_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      (CD_one(ENTITY[3]), is_of(ENTITY[3], ENTITY[4])) ∧
+       ADV_thus(EVENT[7]) ∧ copula(EVENT[7], ENTITY[1], ENTITY[3]))
+
+# ::id 24_nonfiction_BEETON-1861;AT2164-2;NE
+# ::snt Here , as elsewhere , honesty is the best policy :
+∃ ATTRIB[3] EVENT[4] ENTITY[1] ENTITY[2] (
+ best(ATTRIB[3]) ∧
+  is_policy_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   honesty(ENTITY[1]) ∧ LOC_here(EVENT[4]) ∧ LOC_as_elsewhere(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 25_nonfiction_BEETON-1861;AT2164-3;NE
+# ::snt the butler should make it his business to understand the proper treatment of the different wines under his charge , which he can easily do from the wine-merchant , and faithfully attend to it ;
+∃ REF2[11] REF1[9] ATTRIB[7] ATTRIB[5] ENTITY[8] ENTITY[12] GROUP[6] ENTITY[4] ENTITY[1] (
+ butler(ENTITY[1]) ∧
+  proper(ATTRIB[5]) ∧
+   different(ATTRIB[7]) ∧
+    REF1[9] = his ∧
+     is_charge_POS(ENTITY[8], REF1[9]) ∧
+      is_wines_under(GROUP[6], ENTITY[8]) ∧ is_wines_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+       REF2[11] = he ∧
+        wine-merchant(ENTITY[12]) ∧
+         MD_can(∃ EVENT[13] (
+               ADV_easily(EVENT[13]) ∧
+                do(EVENT[13], REF2[11], ENTITY[4]) ∧ from(EVENT[13]) = ENTITY[12])) ∧
+          is_treatment_of(ENTITY[4], GROUP[6]) ∧ is_treatment_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+          MD_should(∃ REF4[20] REF3[16] SITUATION[3] ENTITY[19] EVENT[15] EVENT[17] EVENT[21] EVENT[2] (
+                ADV_faithfully(EVENT[17]) ∧
+                 REF3[16] = it ∧
+                  is_FACT_THAT(SITUATION[3],
+                   CONJ_and(understand(EVENT[15], _, ENTITY[4]),
+                    attend(EVENT[17]) ∧ to(EVENT[17]) = REF3[16])) ∧
+                   REF4[20] = his ∧
+                    is_business_POS(ENTITY[19], REF4[20]) ∧
+                     make(EVENT[2], ENTITY[1], xxx(EVENT[21], SITUATION[3], ENTITY[19])))))
+
+# ::id 26_nonfiction_BEETON-1861;AT2164-4;NE
+# ::snt his own reputation will soon compensate for the absence of bribes from unprincipled wine-merchants , if he serves a generous and hospitable master .
+∃ ATTRIB[12] GROUP[11] GROUP[10] ENTITY[9] (
+ unprincipled(ATTRIB[12]) ∧
+  is_wine-merchants_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+   is_bribes_from(GROUP[10], GROUP[11]) ∧
+    is_absence_of(ENTITY[9], GROUP[10]) ∧
+     ∀ ATTRIB[4] ATTRIB[3] REF2[1] EVENT[5] PERSON[2] CND_if(
+         REF2[1] = he ∧ generous(ATTRIB[3]) ∧ hospitable(ATTRIB[4]) ∧
+          CONJ_and(is_master_ATTRIBUTE(PERSON[2], ATTRIB[3]), is_master_ATTRIBUTE(PERSON[2], ATTRIB[4])) ∧
+          serves(EVENT[5], REF2[1], PERSON[2]),
+         ∃ ATTRIB[8] REF1[7] ENTITY[6] (
+          REF1[7] = his ∧
+           own(ATTRIB[8]) ∧
+            is_reputation_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_reputation_POS(ENTITY[6], REF1[7]) ∧
+             MD_will(∃ EVENT[13] (
+                   TMP_soon(EVENT[13]) ∧
+                    compensate(EVENT[13], ENTITY[6]) ∧ for(EVENT[13]) = ENTITY[9])))))
+
+# ::id 27_nonfiction_BEETON-1861;AT2164-5;NE
+# ::snt Nothing spreads more rapidly in society than the reputation of a good wine-cellar ,
+∃ ATTRIB[5] ENTITY[4] ENTITY[3] (
+ good(ATTRIB[5]) ∧
+  is_wine-cellar_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   is_reputation_of(ENTITY[3], ENTITY[4]) ∧
+    ¬ ∃ EVENT[6] ENTITY[2] ENTITY[1] (
+          thing(ENTITY[1]) ∧
+           society(ENTITY[2]) ∧
+            is_ADV_more_rapidly_than(EVENT[6], ENTITY[3]) ∧ is_ADV_more_rapidly_in(EVENT[6], ENTITY[2]) ∧ spreads(EVENT[6], ENTITY[1])))
+
+# ::id 28_nonfiction_BEETON-1861;AT2164-6;NE
+# ::snt and all that is required is wines well chosen and well cared for ;
+ALL EVENT[3] ENTITY[1] (required(EVENT[3], _, ENTITY[1]),
+ ∃ GROUP[4] EVENT[6] EVENT[8] EVENT[10] (
+  ADV_well(EVENT[6]) ∧
+   ADV_well(EVENT[8]) ∧
+    CONJ_and(chosen(EVENT[6], _, GROUP[4]), cared_for(EVENT[8], _, GROUP[4])) ∧ wines(GROUP[4]) ∧
+     copula(EVENT[10], ENTITY[1], GROUP[4])))
+
+# ::id 29_nonfiction_BEETON-1861;AT2164-7;NE
+# ::snt and this a little knowledge , carefully applied , will soon supply .
+∃ ATTRIB[3] EVENT[5] ENTITY[2] ENTITY[1] (
+ little(ATTRIB[3]) ∧
+  applied(EVENT[5], _, ENTITY[2]) ∧ is_knowledge_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   ADV_carefully(EVENT[5]) ∧ MD_will(∃ EVENT[7] (TMP_soon(EVENT[7]) ∧ supply(EVENT[7], ENTITY[2], ENTITY[1]))))
+
+# ::id 30_nonfiction_BEETON-1861;AT2165-1;NE
+# ::snt The butler , we have said , has charge of the contents of the cellars ,
+∃ REF1[1] EVENT[7] EVENT[2] ENTITY[4] GROUP[6] GROUP[5] ENTITY[3] (
+ butler(ENTITY[3]) ∧
+  cellars(GROUP[6]) ∧
+   is_contents_of(GROUP[5], GROUP[6]) ∧
+    REF1[1] = we ∧
+     is_charge_of(ENTITY[4], GROUP[5]) ∧ have_said(EVENT[2], REF1[1], has(EVENT[7], ENTITY[3], ENTITY[4])))
+
+# ::id 31_nonfiction_BEETON-1861;AT2165-2;NE
+# ::snt and it is his duty to keep them in a proper condition , to fine down wine in wood , bottle it off , and store it away in places suited to the sorts .
+∃ SITUATION[17] REF4[19] REF3[11] REF2[9] ATTRIB[4] REF1[2] SITUATION[1] EVENT[5] EVENT[8] EVENT[10] EVENT[15] EVENT[16] EVENT[20] ENTITY[3] ENTITY[7] ENTITY[6] GROUP[12] ENTITY[18] GROUP[14] (
+ sorts(GROUP[14]) ∧
+  REF1[2] = them ∧
+   proper(ATTRIB[4]) ∧
+    is_condition_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     wood(ENTITY[7]) ∧
+      is_wine_in(ENTITY[6], ENTITY[7]) ∧
+       REF2[9] = it ∧
+        REF3[11] = it ∧
+         suited(EVENT[15], _, GROUP[12]) ∧ to(EVENT[15]) = GROUP[14] ∧ places(GROUP[12]) ∧
+          is_FACT_THAT(SITUATION[1],
+           CONJ_and(keep(EVENT[5], _, REF1[2]) ∧ in(EVENT[5]) = ENTITY[3],
+            fine_down(EVENT[8], _, ENTITY[6]), bottle_off(EVENT[10], _, REF2[9]),
+            is_FACT_THAT(SITUATION[17], store(EVENT[16], _, REF3[11]) ∧ in(EVENT[16]) = GROUP[12]))) ∧
+           REF4[19] = his ∧
+            is_duty_POS(ENTITY[18], REF4[19]) ∧ DIR_away(SITUATION[17]) ∧ copula(EVENT[20], SITUATION[1], ENTITY[18]))
+
+# ::id 32_nonfiction_BEETON-1861;AT2165-3;NE
+# ::snt Where wine comes into the cellar ready bottled , it is usual to return the same number of empty bottles ;
+∃ ATTRIB[10] ATTRIB[8] ENTITY[2] GROUP[9] ENTITY[7] (
+ cellar(ENTITY[2]) ∧
+  same(ATTRIB[8]) ∧
+   empty(ATTRIB[10]) ∧
+    is_bottles_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+     is_number_of(ENTITY[7], GROUP[9]) ∧ is_number_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+      ∀ ATTRIB[3] EVENT[5] EVENT[4] ENTITY[1] CND_Where(
+          wine(ENTITY[1]) ∧ ready_bottled(ATTRIB[3]) ∧
+           CONJ_and(comes(EVENT[5], ENTITY[1]) ∧ into(EVENT[5]) = ENTITY[2],
+            xxx(EVENT[4], ENTITY[1], ATTRIB[3])),
+          ∃ ATTRIB[12] SITUATION[6] EVENT[11] EVENT[13] (
+           is_FACT_THAT(SITUATION[6], return(EVENT[11], _, ENTITY[7])) ∧
+            usual(ATTRIB[12]) ∧ copula(EVENT[13], SITUATION[6], ATTRIB[12]))))
+
+# ::id 33_nonfiction_BEETON-1861;AT2165-4;NE
+# ::snt the butler has not , in this case , the same inducements to keep the bottles of the different sorts separated ;
+∃ ATTRIB[7] ATTRIB[4] EVENT[9] EVENT[10] GROUP[6] GROUP[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ butler(ENTITY[1]) ∧
+  case(ENTITY[2]) ∧
+   same(ATTRIB[4]) ∧
+    different(ATTRIB[7]) ∧
+     separated(EVENT[9], _, GROUP[6]) ∧ is_sorts_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+      is_bottles_of(GROUP[5], GROUP[6]) ∧
+       is_inducements_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧ is_inducements_to(GROUP[3], keep(EVENT[10], _, GROUP[5])) ∧
+        ¬ ∃ EVENT[11] (has(EVENT[11], ENTITY[1], GROUP[3]) ∧ in(EVENT[11]) = ENTITY[2]))
+
+# ::id 34_nonfiction_BEETON-1861;AT2165-5;NE
+# ::snt but where the wine is bottled in the house , he will find his account , not only in keeping them separate , but in rinsing them well , and even washing them with clean water as soon as they are empty .
+∃ ENTITY[2] ENTITY[1] (
+ wine(ENTITY[1]) ∧
+  house(ENTITY[2]) ∧
+   ∀ EVENT[3] CND_where(bottled(EVENT[3], _, ENTITY[1]) ∧ in(EVENT[3]) = ENTITY[2],
+       ∃ REF1[4] (
+        REF1[4] = he ∧
+         MD_will(∃ ATTRIB[22] REF6[21] ATTRIB[18] REF5[16] REF4[13] ATTRIB[10] REF3[9] SITUATION[8] REF2[6] SITUATION[26] SITUATION[27] TIME[19] ENTITY[17] ENTITY[5] EVENT[12] EVENT[11] EVENT[14] EVENT[23] EVENT[25] (
+               ADV_well(EVENT[14]) ∧
+                even(SITUATION[27]) ∧
+                 is_TMP(EVENT[23], TIME[19]) ∧
+                  is_TMP_as_soon_as(SITUATION[26], TIME[19]) ∧
+                   REF2[6] = his ∧
+                    is_account_POS(ENTITY[5], REF2[6]) ∧
+                     REF3[9] = them ∧
+                      separate(ATTRIB[10]) ∧
+                       REF4[13] = them ∧
+                        REF5[16] = them ∧
+                         clean(ATTRIB[18]) ∧
+                          is_water_ATTRIBUTE(ENTITY[17], ATTRIB[18]) ∧
+                           REF6[21] = they ∧
+                            empty(ATTRIB[22]) ∧
+                             copula(EVENT[23], REF6[21], ATTRIB[22]) ∧
+                              is_FACT_THAT(SITUATION[8],
+                               CONJ_but(CONJ_and(keeping(EVENT[12], ENTITY[5], REF3[9]),
+                                     xxx(EVENT[11], REF3[9], ATTRIB[10])),
+                                CONJ_and(rinsing(EVENT[14], ENTITY[5], REF4[13]),
+                                 is_FACT_THAT(SITUATION[27],
+                                  is_FACT_THAT(SITUATION[26],
+                                   washing(EVENT[25], ENTITY[5], REF5[16]) ∧
+                                    with(EVENT[25]) = ENTITY[17]))))) ∧
+                               NOT_ONLY SITUATION[7] (is_of(SITUATION[7], SITUATION[8]),
+                                ∃ EVENT[28] (
+                                 find(EVENT[28], REF1[4], ENTITY[5]) ∧
+                                  in(EVENT[28]) = SITUATION[7])))))))
+
+# ::id 35_nonfiction_BEETON-1861;AT2166-1;NE
+# ::snt There are various modes of fining wine :
+∃ ATTRIB[4] ATTRIB[2] EVENT[5] ENTITY[3] GROUP[1] (
+ various(ATTRIB[2]) ∧
+  fining(ATTRIB[4]) ∧
+   is_wine_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    is_modes_of(GROUP[1], ENTITY[3]) ∧ is_modes_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧ copula(EVENT[5], GROUP[1]))
+
+# ::id 36_nonfiction_BEETON-1861;AT2166-2;NE
+# ::snt isinglass , gelatine , and gum Arabic are all used for the purpose .
+∃ EVENT[7] GROUP[1] ENTITY[6] (
+ purpose(ENTITY[6]) ∧
+  ∃ ENTITY[2] (isinglass(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+   ∃ ENTITY[3] (gelatine(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+   ∃ ENTITY[4] (gum_Arabic(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+   ALL ENTITY[5] (is_element_of(ENTITY[5], GROUP[1]), used(EVENT[7], _, ENTITY[5]) ∧ for(EVENT[7]) = ENTITY[6]))
+
+# ::id 37_nonfiction_BEETON-1861;AT2166-3;NE
+# ::snt Whichever of these articles is used , the process is always the same .
+∃ ATTRIB[7] ENTITY[1] EVENT[4] EVENT[8] GROUP[3] ENTITY[6] ENTITY[5] (
+ articles(GROUP[3]) ∧
+  process(ENTITY[5]) ∧
+   same(ATTRIB[7]) ∧
+    is_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+     TMP_always(EVENT[8]) ∧
+      used(EVENT[4], _, ENTITY[1]) ∧
+       copula(EVENT[8], ENTITY[5], ENTITY[6]) ∧ ADV(EVENT[8]) = ENTITY[1])
+
+# ::id 38_nonfiction_BEETON-1861;AT2166-4;NE
+# ::snt Supposing eggs -LRB- the cheapest -RRB- to be used , -- Draw a gallon or so of the wine , and mix one quart of it with the whites of four eggs , by stirring it with a whisk ;
+∃ ENTITY[10] GROUP[15] GROUP[14] (
+ wine(ENTITY[10]) ∧
+  (CD_four(GROUP[15]), eggs(GROUP[15])) ∧
+   is_whites_of(GROUP[14], GROUP[15]) ∧
+    IMPERATIVE(∃ REF2[16] REF1[13] ATTRIB[2] EVENT[5] EVENT[4] EVENT[11] EVENT[18] EVENT[19] ENTITY[1] GROUP[3] GROUP[7] ENTITY[6] ENTITY[17] ENTITY[12] (
+          eggs(GROUP[3]) ∧
+           cheapest(ATTRIB[2]) ∧
+            is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+             is_-GROUP-_namely(GROUP[3], ENTITY[1]) ∧
+              CONJ_or(∃ ENTITY[8] (gallon(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+               ∃ ENTITY[9] (ADV_so(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+               is_of(ENTITY[6], ENTITY[10]) ∧ is_equals(ENTITY[6], GROUP[7]) ∧
+                REF1[13] = it ∧
+                 (CD_one(ENTITY[12]), is_quart_of(ENTITY[12], REF1[13])) ∧
+                  REF2[16] = it ∧
+                   whisk(ENTITY[17]) ∧
+                    CONJ_and(supposing(EVENT[4], _, GROUP[3], used(EVENT[5], _, GROUP[3])),
+                     CONJ_and(draw(EVENT[11], _, ENTITY[6]),
+                      CRD_by(stirring(EVENT[18], ENTITY[12], REF2[16]) ∧ with(EVENT[18]) = ENTITY[17],
+                       mix(EVENT[19], _, ENTITY[12]) ∧
+                        with(EVENT[19]) = GROUP[14]))))))
+
+# ::id 39_nonfiction_BEETON-1861;AT2166-5;NE
+# ::snt afterwards , when thoroughly mixed , pour it back into the cask through the bunghole ,
+∃ ENTITY[6] ENTITY[5] (
+ cask(ENTITY[5]) ∧
+  bunghole(ENTITY[6]) ∧
+   IMPERATIVE(∃ SITUATION[8] (
+         TMP_afterwards(SITUATION[8]) ∧
+          is_FACT_THAT(SITUATION[8],
+           ∀ REF1[1] EVENT[2] CND_when(REF1[1] = *pro* ∧ ADV_thoroughly(EVENT[2]) ∧ mixed(EVENT[2], _, REF1[1]), ∃ REF2[4] EVENT[7] (
+                REF2[4] = it ∧
+                 pour_back(EVENT[7], _, REF2[4]) ∧ through(EVENT[7]) = ENTITY[6] ∧
+                  into(EVENT[7]) = ENTITY[5]))))))
+
+# ::id 40_nonfiction_BEETON-1861;AT2166-6;NE
+# ::snt and stir up the whole cask , in a rotatory direction , with a clean split stick inserted through the bunghole .
+∃ ATTRIB[2] ENTITY[8] ENTITY[1] (
+ whole(ATTRIB[2]) ∧
+  is_cask_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   bunghole(ENTITY[8]) ∧
+    IMPERATIVE(∃ ATTRIB[6] ATTRIB[4] EVENT[9] EVENT[10] ENTITY[5] ENTITY[3] (
+          rotatory(ATTRIB[4]) ∧
+           is_direction_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+            clean(ATTRIB[6]) ∧
+             inserted(EVENT[9], _, ENTITY[5]) ∧ through(EVENT[9]) = ENTITY[8] ∧
+              is_split_stick_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+              stir_up(EVENT[10], _, ENTITY[1]) ∧ with(EVENT[10]) = ENTITY[5] ∧
+               in(EVENT[10]) = ENTITY[3])))
+
+# ::id 41_nonfiction_BEETON-1861;AT2166-7;NE
+# ::snt Having stirred it sufficiently , pour in the remainder of the wine drawn off , until the cask is full ;
+∃ ENTITY[5] ENTITY[8] ENTITY[4] EVENT[7] (
+ drawn_off(EVENT[7], _, ENTITY[5]) ∧ wine(ENTITY[5]) ∧
+  is_remainder_of(ENTITY[4], ENTITY[5]) ∧
+   cask(ENTITY[8]) ∧
+    IMPERATIVE(∃ ATTRIB[9] REF1[1] EVENT[2] EVENT[10] EVENT[11] (
+          REF1[1] = it ∧
+           full(ATTRIB[9]) ∧
+            ADV_sufficiently(EVENT[2]) ∧
+             CONJ_and(having_stirred(EVENT[2], _, REF1[1]),
+              CRD_until(copula(EVENT[10], ENTITY[8], ATTRIB[9]),
+               pour(EVENT[11]) ∧ in(EVENT[11]) = ENTITY[4])))))
+
+# ::id 42_nonfiction_BEETON-1861;AT2166-8;NE
+# ::snt then stir again , skimming off the bubbles that rise to the surface .
+∃ EVENT[4] ENTITY[3] GROUP[1] (
+ surface(ENTITY[3]) ∧
+  rise(EVENT[4], GROUP[1]) ∧ to(EVENT[4]) = ENTITY[3] ∧ bubbles(GROUP[1]) ∧
+   IMPERATIVE(∃ SITUATION[7] SITUATION[8] EVENT[6] EVENT[5] (
+         TMP_then(SITUATION[8]) ∧
+          TMP_again(SITUATION[7]) ∧
+           is_FACT_THAT(SITUATION[8],
+            is_FACT_THAT(SITUATION[7], CONJ_and(stir(EVENT[6]), skimming_off(EVENT[5], _, GROUP[1])))))))
+
+# ::id 43_nonfiction_BEETON-1861;AT2166-9;NE
+# ::snt When thoroughly mixed by stirring , close the bunghole , and leave it to stand for three or four days .
+∃ ENTITY[6] (
+ bunghole(ENTITY[6]) ∧
+  IMPERATIVE(∃ REF2[8] ATTRIB[3] REF1[1] EVENT[4] EVENT[7] EVENT[11] EVENT[9] ENTITY[2] GROUP[10] (
+        REF1[1] = *pro* ∧
+         stirring(ATTRIB[3]) ∧
+          is_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+           REF2[8] = it ∧
+            (CD_three_or_four(GROUP[10]), days(GROUP[10])) ∧
+             ADV_thoroughly(EVENT[4]) ∧
+              CRD_When(mixed(EVENT[4], _, REF1[1]) ∧ by(EVENT[4]) = ENTITY[2],
+               CONJ_and(close(EVENT[7], _, ENTITY[6]),
+                leave(EVENT[9], _, REF2[8],
+                 stand(EVENT[11], REF2[8]) ∧ for(EVENT[11]) = GROUP[10]))))))
+
+# ::id 44_nonfiction_BEETON-1861;AT2166-10;NE
+# ::snt This quantity of clarified wine will fine thirteen dozen of port or sherry .
+∃ ATTRIB[3] ENTITY[2] ENTITY[1] (
+ clarified(ATTRIB[3]) ∧
+  is_wine_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_quantity_of(ENTITY[1], ENTITY[2]) ∧
+    MD_will(∃ EVENT[8] GROUP[5] ENTITY[4] (
+          CONJ_or(∃ ENTITY[6] (port(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+           ∃ ENTITY[7] (sherry(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+           (CD_thirteen_dozen(ENTITY[4]), is_element_of(ENTITY[4], GROUP[5])) ∧ fine(EVENT[8], ENTITY[1], ENTITY[4]))))
+
+# ::id 45_nonfiction_BEETON-1861;AT2166-11;NE
+# ::snt The other clearing ingredients are applied in the same manner , the material being cut into small pieces , and dissolved in the quart of wine ,
+∃ ATTRIB[8] ATTRIB[5] ATTRIB[3] ATTRIB[2] EVENT[13] EVENT[9] EVENT[12] GROUP[7] ENTITY[11] ENTITY[10] ENTITY[6] ENTITY[4] GROUP[1] (
+ other(ATTRIB[2]) ∧
+  clearing(ATTRIB[3]) ∧
+   is_ingredients_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_ingredients_ATTRIBUTE(GROUP[1], ATTRIB[2]) ∧
+    same(ATTRIB[5]) ∧
+     is_manner_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      material(ENTITY[6]) ∧
+       wine(ENTITY[11]) ∧
+        is_quart_of(ENTITY[10], ENTITY[11]) ∧
+         small(ATTRIB[8]) ∧
+          is_pieces_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+           CONJ_and(applied(EVENT[13], _, GROUP[1]) ∧ in(EVENT[13]) = ENTITY[4],
+            CONJ_and(being_cut(EVENT[9], _, ENTITY[6]) ∧ into(EVENT[9]) = GROUP[7],
+             dissolved(EVENT[12], _, ENTITY[6]) ∧ in(EVENT[12]) = ENTITY[10])))
+
+# ::id 46_nonfiction_BEETON-1861;AT2166-12;NE
+# ::snt and the cask stirred in the same manner .
+∃ ATTRIB[3] EVENT[4] ENTITY[2] ENTITY[1] (
+ cask(ENTITY[1]) ∧
+  same(ATTRIB[3]) ∧
+   is_manner_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    past(EVENT[4]) ∧ stirred(EVENT[4], ENTITY[1]) ∧ in(EVENT[4]) = ENTITY[2])
+
+# ::id 47_nonfiction_BEETON-1861;AT2167-1;NE
+# ::snt To Bottle Wine . --
+∃ EVENT[2] ENTITY[1] (Wine(ENTITY[1]) ∧ bottle(EVENT[2], _, ENTITY[1]))
+
+# ::id 48_nonfiction_BEETON-1861;AT2167-2;NE
+# ::snt Having thoroughly washed and dried the bottles , supposing they have been before used for the same kind of wine , provide corks , which will be improved by being slightly boiled , or at least steeped in hot water , -- a wooden hammer or mallet , a bottling-boot , and a squeezer for the corks .
+∃ REF2[7] REF1[1] ATTRIB[9] EVENT[3] EVENT[5] EVENT[11] EVENT[6] EVENT[30] GROUP[13] GROUP[2] ENTITY[10] ENTITY[8] GROUP[29] (
+ bottles(GROUP[2]) ∧
+  same(ATTRIB[9]) ∧
+   wine(ENTITY[10]) ∧
+    is_kind_of(ENTITY[8], ENTITY[10]) ∧ is_kind_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+     corks(GROUP[29]) ∧
+      REF1[1] = *pro* ∧
+       REF2[7] = they ∧
+        ∃ GROUP[14] (
+         MD_will(∃ EVENT[16] EVENT[22] (
+               ADV_slightly(EVENT[16]) ∧
+                CRD_LGS(CONJ_or(being_boiled(EVENT[16], _, GROUP[14]),
+                      LEAST ENTITY[18] ∃ ATTRIB[20] EVENT[21] ENTITY[19] (
+                       hot(ATTRIB[20]) ∧
+                        is_water_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+                         steeped(EVENT[21], _, GROUP[14]) ∧ in(EVENT[21]) = ENTITY[19] ∧
+                          at(EVENT[21]) = ENTITY[18])),
+                 improved(EVENT[22], _, GROUP[14])))) ∧ corks(GROUP[14]) ∧
+          is_subset_of_or_equal_to(GROUP[14], GROUP[13])) ∧
+         ∃ GROUP[23] (
+          CONJ_or(∃ ATTRIB[25] ENTITY[24] (wooden(ATTRIB[25]) ∧ is_hammer_ATTRIBUTE(ENTITY[24], ATTRIB[25]) ∧ is_element_of(ENTITY[24], GROUP[23])),
+           ∃ ENTITY[26] (mallet(ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[23]))) ∧ is_subset_of_or_equal_to(GROUP[23], GROUP[13])) ∧
+         ∃ ENTITY[27] (bottling-boot(ENTITY[27]) ∧ is_element_of(ENTITY[27], GROUP[13])) ∧
+         ∃ ENTITY[28] (is_squeezer_for(ENTITY[28], GROUP[29]) ∧ is_element_of(ENTITY[28], GROUP[13])) ∧
+         ADV_thoroughly(EVENT[3]) ∧
+          TMP_before(EVENT[11]) ∧
+           CONJ_and(CONJ_and(having_washed(EVENT[3], REF1[1], GROUP[2]), having_dried(EVENT[5], REF1[1], GROUP[2])),
+            CONJ_and(supposing(EVENT[6], REF1[1],
+                  have_used(EVENT[11], _, REF2[7]) ∧ for(EVENT[11]) = ENTITY[8]),
+             provide(EVENT[30], REF1[1], GROUP[13]))))
+
+# ::id 49_nonfiction_BEETON-1861;AT2167-3;NE
+# ::snt Bore a hole in the lower part of the cask with a gimlet , receiving the liquid stream which follows in the bottle and filterer , which is placed in a tub or basin .
+∃ ATTRIB[7] ATTRIB[3] EVENT[18] EVENT[19] ENTITY[4] ENTITY[2] ENTITY[11] ENTITY[12] ENTITY[16] ENTITY[17] GROUP[15] ENTITY[14] GROUP[10] ENTITY[9] ENTITY[6] (
+ lower(ATTRIB[3]) ∧
+  cask(ENTITY[4]) ∧
+   is_part_of(ENTITY[2], ENTITY[4]) ∧ is_part_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    liquid(ATTRIB[7]) ∧
+     bottle(ENTITY[11]) ∧
+      filterer(ENTITY[12]) ∧
+       is_element_of(ENTITY[11], GROUP[10]) ∧ is_element_of(ENTITY[12], GROUP[10]) ∧
+        tub(ENTITY[16]) ∧
+         basin(ENTITY[17]) ∧
+          CONJ_or(is_element_of(ENTITY[16], GROUP[15]), is_element_of(ENTITY[17], GROUP[15])) ∧
+           is_equals(ENTITY[14], GROUP[15]) ∧
+            placed(EVENT[18], _, ENTITY[9]) ∧ in(EVENT[18]) = ENTITY[14] ∧
+             is_equals(ENTITY[9], GROUP[10]) ∧
+             follows(EVENT[19], ENTITY[6]) ∧ in(EVENT[19]) = ENTITY[9] ∧ is_stream_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+              IMPERATIVE(∃ EVENT[21] EVENT[20] ENTITY[5] ENTITY[1] (
+                    is_hole_in(ENTITY[1], ENTITY[2]) ∧
+                     gimlet(ENTITY[5]) ∧
+                      CONJ_and(bore(EVENT[21], _, ENTITY[1]) ∧ with(EVENT[21]) = ENTITY[5],
+                       receiving(EVENT[20], ENTITY[1], ENTITY[6])))))
+
+# ::id 50_nonfiction_BEETON-1861;AT2167-4;NE
+# ::snt This operation is best performed by two persons , one to draw the wine , the other to cork the bottles .
+∃ ATTRIB[9] GROUP[3] GROUP[2] EVENT[13] EVENT[12] ENTITY[6] GROUP[11] ENTITY[8] ENTITY[1] (
+ operation(ENTITY[1]) ∧
+  wine(ENTITY[6]) ∧
+   other(ATTRIB[9]) ∧
+    bottles(GROUP[11]) ∧
+     cork(EVENT[12], ENTITY[8], GROUP[11]) ∧ is_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+      ADV_best(EVENT[13]) ∧
+       ∃ ENTITY[4] EVENT[7] ((CD_one(ENTITY[4]), draw(EVENT[7], ENTITY[4], ENTITY[6])) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+        is_element_of(ENTITY[8], GROUP[3]) ∧
+        (CD_two(GROUP[2]), is_persons_equals(GROUP[2], GROUP[3])) ∧ performed(EVENT[13], GROUP[2], ENTITY[1]))
+
+# ::id 51_nonfiction_BEETON-1861;AT2167-5;NE
+# ::snt The drawer is to see that the bottles are up to the mark , but not too full , the bottle being placed in a clean tub to prevent waste .
+∃ PRP[5] ATTRIB[4] ATTRIB[14] ENTITY[6] ENTITY[3] EVENT[13] EVENT[15] EVENT[10] EVENT[9] EVENT[7] EVENT[8] ENTITY[12] GROUP[11] ENTITY[2] ENTITY[1] (
+ drawer(ENTITY[1]) ∧
+  bottles(GROUP[11]) ∧
+   mark(ENTITY[12]) ∧
+    bottle(ENTITY[2]) ∧
+     ¬ too_full(ATTRIB[14]) ∧
+      clean(ATTRIB[4]) ∧
+       is_tub_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+        waste(ENTITY[6]) ∧
+         is_FACT_THAT(PRP[5], prevent(EVENT[7], ENTITY[2], ENTITY[6])) ∧
+          CONJ_and(copula(EVENT[9], ENTITY[1],
+                see(EVENT[10], ENTITY[1],
+                 CONJ_but(copula(EVENT[13], GROUP[11]) ∧ up_to(EVENT[13]) = ENTITY[12],
+                  copula(EVENT[15], GROUP[11], ATTRIB[14])))),
+           being_placed(EVENT[8], _, ENTITY[2]) ∧ PRP(EVENT[8]) = PRP[5] ∧
+            in(EVENT[8]) = ENTITY[3]))
+
+# ::id 52_nonfiction_BEETON-1861;AT2167-6;NE
+# ::snt The corking-boot is buckled by a strap to the knee , the bottle placed in it , and the cork , after being squeezed in the press , driven in by a flat wooden mallet .
+∃ ATTRIB[11] REF1[5] EVENT[13] EVENT[6] EVENT[9] EVENT[12] ENTITY[10] ENTITY[2] ENTITY[3] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[1] (
+ corking-boot(ENTITY[1]) ∧
+  knee(ENTITY[3]) ∧
+   bottle(ENTITY[4]) ∧
+    cork(ENTITY[7]) ∧
+     press(ENTITY[8]) ∧
+      is_strap_to(ENTITY[2], ENTITY[3]) ∧
+       REF1[5] = it ∧
+        flat(ATTRIB[11]) ∧
+         is_wooden_mallet_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+          CONJ_and(buckled(EVENT[13], _, ENTITY[1]) ∧ by(EVENT[13]) = ENTITY[2],
+           CONJ_and(placed(EVENT[6], _, ENTITY[4]) ∧ in(EVENT[6]) = REF1[5],
+            CRD_after(being_squeezed(EVENT[9], _, ENTITY[7]) ∧ in(EVENT[9]) = ENTITY[8],
+             driven_in(EVENT[12], _, ENTITY[7]) ∧ by(EVENT[12]) = ENTITY[10]))))
+
+# ::id 53_nonfiction_BEETON-1861;AT2168-1;NE
+# ::snt As the wine draws near to the bottom of the cask , a thick piece of muslin is placed in the strainer , to prevent the viscous grounds from passing into the bottle .
+∃ SITUATION[12] PRP[9] ATTRIB[6] ATTRIB[11] ENTITY[7] ENTITY[5] EVENT[4] EVENT[14] EVENT[15] EVENT[16] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[13] GROUP[10] ENTITY[8] (
+ wine(ENTITY[1]) ∧
+  cask(ENTITY[3]) ∧
+   is_bottom_of(ENTITY[2], ENTITY[3]) ∧
+    strainer(ENTITY[8]) ∧
+     viscous(ATTRIB[11]) ∧
+      is_grounds_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧
+       bottle(ENTITY[13]) ∧
+        thick(ATTRIB[6]) ∧
+         muslin(ENTITY[7]) ∧
+          is_piece_of(ENTITY[5], ENTITY[7]) ∧ is_piece_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+           is_FACT_THAT(SITUATION[12], passing(EVENT[14], GROUP[10]) ∧ into(EVENT[14]) = ENTITY[13]) ∧
+            is_FACT_THAT(PRP[9], prevent(EVENT[15], ENTITY[5], GROUP[10]) ∧ from(EVENT[15]) = SITUATION[12]) ∧
+             CRD_As(draws_near(EVENT[4], ENTITY[1]) ∧ to(EVENT[4]) = ENTITY[2],
+              placed(EVENT[16], _, ENTITY[5]) ∧ PRP(EVENT[16]) = PRP[9] ∧
+               in(EVENT[16]) = ENTITY[8]))
+
+# ::id 54_nonfiction_BEETON-1861;AT2169-1;NE
+# ::snt Having carefully counted the bottles , they are stored away in their respective binns , a layer of sand or sawdust being placed under the first tier , and another over it ;
+∃ SITUATION[19] ATTRIB[7] REF2[6] REF1[1] ATTRIB[14] EVENT[3] EVENT[18] EVENT[17] GROUP[9] GROUP[12] ENTITY[8] GROUP[5] GROUP[2] ENTITY[13] (
+ bottles(GROUP[2]) ∧
+  first(ATTRIB[14]) ∧
+   is_tier_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+    REF1[1] = they ∧
+     REF2[6] = their ∧
+      respective(ATTRIB[7]) ∧
+       is_binns_ATTRIBUTE(GROUP[5], ATTRIB[7]) ∧ is_binns_POS(GROUP[5], REF2[6]) ∧
+        CONJ_or(∃ ENTITY[10] (sand(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+         ∃ ENTITY[11] (sawdust(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+         is_layer_of(ENTITY[8], GROUP[9]) ∧
+          is_element_of(ENTITY[13], GROUP[12]) ∧
+           ANOTHER REF3[16] ENTITY[15] ((REF3[16] = it ∧ is_over(ENTITY[15], REF3[16])), is_element_of(ENTITY[15], GROUP[12])) ∧
+           ADV_carefully(EVENT[3]) ∧
+            DIR_away(SITUATION[19]) ∧
+             CONJ_and(having_counted(EVENT[3], REF1[1], GROUP[2]),
+              is_FACT_THAT(SITUATION[19],
+               CONJ_and(stored(EVENT[18], _, REF1[1]) ∧ in(EVENT[18]) = GROUP[5],
+                being_placed(EVENT[17], _, ENTITY[8]) ∧ under(EVENT[17]) = GROUP[12]))))
+
+# ::id 55_nonfiction_BEETON-1861;AT2169-2;NE
+# ::snt a second tier is laid over this , protected by a lath , the head of the second being laid to the bottom of the first ;
+∃ ATTRIB[2] ATTRIB[11] ATTRIB[8] EVENT[13] EVENT[12] EVENT[5] ENTITY[4] ENTITY[1] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[6] ENTITY[3] (
+ second(ATTRIB[8]) ∧
+  is_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   is_head_of(ENTITY[6], ENTITY[7]) ∧
+    first(ATTRIB[11]) ∧
+     is_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+      is_bottom_of(ENTITY[9], ENTITY[10]) ∧
+       second(ATTRIB[2]) ∧
+        is_tier_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+         lath(ENTITY[4]) ∧
+          CONJ_and(CONJ_and(laid(EVENT[13], _, ENTITY[1]) ∧ over(EVENT[13]) = ENTITY[3],
+                being_laid(EVENT[12], _, ENTITY[6]) ∧ to(EVENT[12]) = ENTITY[9]),
+           protected(EVENT[5], ENTITY[4], ENTITY[1])))
+
+# ::id 56_nonfiction_BEETON-1861;AT2169-3;NE
+# ::snt over this another bed of sawdust is laid , not too thick ,
+∃ ENTITY[1] ANOTHER ATTRIB[4] ENTITY[3] ENTITY[2] (
+ (sawdust(ENTITY[3]) ∧ ¬ too_thick(ATTRIB[4]) ∧
+  is_bed_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_bed_of(ENTITY[2], ENTITY[3])),
+ ∃ EVENT[5] (laid(EVENT[5], _, ENTITY[2]) ∧ over(EVENT[5]) = ENTITY[1]))
+
+# ::id 57_nonfiction_BEETON-1861;AT2169-3;NE
+# ::snt another lath ;
+ANOTHER ENTITY[1] (lath(ENTITY[1]), ∃ EVENT[2] (xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1]))
+
+# ::id 58_nonfiction_BEETON-1861;AT2169-3;NE
+# ::snt and so on till the binn is filled .
+∃ SITUATION[1] SITUATION[5] EVENT[3] EVENT[4] ENTITY[2] (
+ binn(ENTITY[2]) ∧
+  ADV_so(SITUATION[5]) ∧
+   is_FACT_THAT(SITUATION[1], filled(EVENT[3], _, ENTITY[2])) ∧
+    is_FACT_THAT(SITUATION[5], xxx(EVENT[4]) ∧ till(EVENT[4]) = SITUATION[1]))
+
+# ::id 59_nonfiction_BEETON-1861;AT2170-1;NE
+# ::snt Wine so laid in will be ready for use according to its quality and age .
+∃ ENTITY[1] EVENT[3] (
+ ADV_so(EVENT[3]) ∧
+  laid_in(EVENT[3], _, ENTITY[1]) ∧ Wine(ENTITY[1]) ∧
+   MD_will(∃ REF1[9] ATTRIB[5] GROUP[10] ENTITY[8] ENTITY[6] EVENT[13] EVENT[14] (
+         REF1[9] = its ∧
+          ∃ ENTITY[11] (quality(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+           ∃ ENTITY[12] (age(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+           is_equals(ENTITY[8], GROUP[10]) ∧ is_POS(ENTITY[8], REF1[9]) ∧
+            according(EVENT[13], ENTITY[6]) ∧ to(EVENT[13]) = ENTITY[8] ∧ use(ENTITY[6]) ∧
+             is_ready_for(ATTRIB[5], ENTITY[6]) ∧ copula(EVENT[14], ENTITY[1], ATTRIB[5]))))
+
+# ::id 60_nonfiction_BEETON-1861;AT2170-2;NE
+# ::snt Port wine , old in the wood , will be ready to drink in five or six months ;
+∃ ATTRIB[2] ENTITY[1] ENTITY[3] (
+ wood(ENTITY[3]) ∧
+  is_old_in(ATTRIB[2], ENTITY[3]) ∧
+   is_Port_wine_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    MD_will(∃ ATTRIB[4] EVENT[5] EVENT[7] TIME[6] (
+          is_ready_to(ATTRIB[4], drink(EVENT[5])) ∧
+           (CD_five_or_six(TIME[6]), months(TIME[6])) ∧
+            copula(EVENT[7], ENTITY[1], ATTRIB[4]) ∧ in(EVENT[7]) = TIME[6])))
+
+# ::id 61_nonfiction_BEETON-1861;AT2170-2;NE
+# ::snt but if it is a fruity wine , it will improve every year .
+∀ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] CND_if(
+    REF1[1] = it ∧ fruity(ATTRIB[3]) ∧ is_wine_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     copula(EVENT[4], REF1[1], ENTITY[2]),
+    ∃ REF2[5] (
+     REF2[5] = it ∧
+      MD_will(∀ TIME[6] (year(TIME[6]) →
+            ∃ EVENT[7] (improve(EVENT[7], REF2[5]) ∧ is_contained_in(TMP(EVENT[7]), TIME[6]))))))
+
+# ::id 62_nonfiction_BEETON-1861;AT2170-3;NE
+# ::snt Sherry , if of good quality , will be fit to drink as soon as the " sickness " -LRB- as its first condition after bottling is called -RRB- ceases , and will also improve ;
+∃ ATTRIB[2] ATTRIB[11] REF1[10] SITUATION[8] ENTITY[1] EVENT[13] ENTITY[12] ENTITY[9] ENTITY[7] (
+ REF1[10] = its ∧
+  first(ATTRIB[11]) ∧
+   bottling(ENTITY[12]) ∧
+    is_condition_after(ENTITY[9], ENTITY[12]) ∧ is_condition_ATTRIBUTE(ENTITY[9], ATTRIB[11]) ∧ is_condition_POS(ENTITY[9], REF1[10]) ∧
+     is_FACT_THAT(SITUATION[8], called(EVENT[13], _, ENTITY[9])) ∧
+      is_sickness_as(ENTITY[7], SITUATION[8]) ∧
+       good(ATTRIB[2]) ∧
+        is_quality_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+         CONJ_and(MD_will(∃ SITUATION[17] ATTRIB[3] EVENT[4] EVENT[14] EVENT[16] TIME[5] (
+                    is_fit_to(ATTRIB[3], drink(EVENT[4])) ∧
+                     ceases(EVENT[14], ENTITY[7]) ∧
+                      is_TMP(EVENT[14], TIME[5]) ∧
+                       is_TMP_as_soon_as(SITUATION[17], TIME[5]) ∧
+                        is_FACT_THAT(SITUATION[17],
+                         copula(EVENT[16], ENTITY[Sherry], ATTRIB[3]) ∧ if_of(EVENT[16]) = ENTITY[1]))),
+          MD_will(∃ EVENT[18] (
+                ADV_also(EVENT[18]) ∧ improve(EVENT[18], ENTITY[Sherry]) ∧ if_of(EVENT[18]) = ENTITY[1]))))
+
+# ::id 63_nonfiction_BEETON-1861;AT2170-4;NE
+# ::snt but the cellar must be kept at a perfectly steady temperature , neither too hot nor too cold , but about 55° or 60° , and absolutely free from draughts of cold air .
+∃ ENTITY[1] (
+ cellar(ENTITY[1]) ∧
+  MD_must(∃ ATTRIB[12] ATTRIB[9] ATTRIB[6] ATTRIB[5] ATTRIB[4] ATTRIB[3] EVENT[8] EVENT[13] DEGREE[7] ENTITY[2] ENTITY[11] GROUP[10] (
+        perfectly_steady(ATTRIB[3]) ∧
+         too_hot(ATTRIB[4]) ∧
+          too_cold(ATTRIB[5]) ∧
+           (CD_55°_or_60°(DEGREE[7]), ADV_about(DEGREE[7])) ∧
+            is_MSR(ATTRIB[6], DEGREE[7]) ∧
+             CONJ_neither_nor_but(is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[4]) ∧ is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[3]),
+              is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[5]) ∧ is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[3]),
+              is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[6]) ∧ is_temperature_ATTRIBUTE(ENTITY[2], ATTRIB[3])) ∧
+              cold(ATTRIB[12]) ∧
+               is_air_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+                is_draughts_of(GROUP[10], ENTITY[11]) ∧
+                 is_free_from(ATTRIB[9], GROUP[10]) ∧
+                  ADV_absolutely(EVENT[13]) ∧
+                   CONJ_and(kept(EVENT[8], _, ENTITY[1]) ∧ at(EVENT[8]) = ENTITY[2],
+                    copula(EVENT[13], ENTITY[1]) ∧ ATTRIBUTE(EVENT[13]) = ATTRIB[9]))))

@@ -1,0 +1,474 @@
+# ::id 1_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt つなぐ 産業 無限大 （ １ ）
+∃ ARB[4] EVENT[5] EVENT[6] ENTITY[1] ENTITY[2] (
+ ARB[4] = *arb* ∧
+  つなぐ(EVENT[5], ENTITY[2], ARB[4]) ∧ 産業_無限大(ENTITY[2]) ∧
+   CD_１(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[2])
+
+# ::id 2_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ／ 東北スマートアグリカルチャー研究会 （ 仙台 ）
+∃ EVENT[1] (namely_-ENTITY-(ENTITY[仙台], ENTITY[東北スマートアグリカルチャー研究会]) ∧ xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[東北スマートアグリカルチャー研究会])
+
+# ::id 3_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農場経営 × ＩＴビジネス
+∃ EVENT[2] ENTITY[1] (農場経営(ENTITY[1]) ∧ ＩＴビジネス(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 4_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ／ ハウス管理 、 遠隔操作
+∃ EVENT[4] GROUP[1] (
+ ∃ ENTITY[2] (ハウス管理(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (遠隔操作(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 5_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農林水産物 は 収穫 、 漁獲 だけ じゃ 、 終わら ない 。
+∃ ENTITY[1] (
+ 農林水産物(ENTITY[1]) ∧
+  ¬ ∃ GROUP[3] (
+        ∃ ENTITY[4] (収穫(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+         ∃ ENTITY[5] (漁獲(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+         だけ ENTITY[2] (is_element_of(ENTITY[2], GROUP[3]), ∃ EVENT[6] (終わら(EVENT[6], ENTITY[1]) ∧ じゃ(EVENT[6]) = ENTITY[2]))))
+
+# ::id 6_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ひと手間 かけれ ば 商品 の 魅力 は 増し 、 ブランド価値 が ぐんと 高まる 。
+∃ ENTITY[5] ENTITY[4] (
+ 商品(ENTITY[5]) ∧
+  の_魅力(ENTITY[5], ENTITY[4]) ∧
+   ∀ ARB[1] EVENT[3] ENTITY[2] CND_ば(ARB[1] = *arb* ∧ ひと手間(ENTITY[2]) ∧ かけれ(EVENT[3], ARB[1], ENTITY[2]), ∃ EVENT[6] EVENT[8] ENTITY[7] (
+        ブランド価値(ENTITY[7]) ∧
+         ADV_ぐんと(EVENT[8]) ∧ 増し(EVENT[6], ENTITY[4]) ∧ 高まる(EVENT[8], ENTITY[7]))))
+
+# ::id 7_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 雇用 の 創出 に も つながる 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  雇用(ENTITY[3]) ∧
+   の_創出(ENTITY[3], ENTITY[2]) ∧ つながる(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 8_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 培わ れ た 技 や 豊か な 自然 も 一緒 。
+∃ ENTITY[7] GROUP[1] EVENT[8] (
+ CONJ_や(∃ ENTITY[2] EVENT[4] (
+       past(EVENT[4]) ∧
+        培わ_た(EVENT[4], _, ENTITY[2]) ∧ 技(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ATTRIB[6] ENTITY[5] (豊か_な(ATTRIB[6]) ∧ ATTRIBUTE_自然(ATTRIB[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[1]))) ∧
+  一緒(ENTITY[7]) ∧ xxx(EVENT[8], GROUP[1], ENTITY[7]))
+
+# ::id 9_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 体験 など と 組み合わせれ ば 観光客 を 呼び込める 。
+∃ ARB[1] (
+ ARB[1] = *arb* ∧
+  ∀ EVENT[3] ENTITY[2] CND_ば(体験(ENTITY[2]) ∧ 組み合わせれ(EVENT[3], ARB[1]) ∧ など_と(EVENT[3]) = ENTITY[2],
+      ∃ EVENT[5] ENTITY[4] (観光客(ENTITY[4]) ∧ 呼び込める(EVENT[5], ARB[1], ENTITY[4]))))
+
+# ::id 10_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt うま年 の ２０１４ 年 、 積極的 な 連携 で 地域資源 を もっと 生かし て 駆けだそう 。
+∃ ATTRIB[5] ENTITY[1] EVENT[7] EVENT[9] ENTITY[3] ENTITY[6] ENTITY[4] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  うま年(ENTITY[3]) ∧
+   (CD_２０１４_年(TIME[2]), の(ENTITY[3], TIME[2])) ∧
+    積極的_な(ATTRIB[5]) ∧
+     ATTRIBUTE_連携(ATTRIB[5], ENTITY[4]) ∧
+      地域資源(ENTITY[6]) ∧
+       ADV_もっと(EVENT[7]) ∧
+        CONJ_te(生かし_て(EVENT[7], ENTITY[1], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[4] ∧
+              is_contained_in(時間(EVENT[7]), TIME[2]),
+         駆けだそう(EVENT[9], ENTITY[1]) ∧ is_contained_in(時間(EVENT[9]), TIME[2])))
+
+# ::id 11_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 東日本大震災 から の 復興 を 目指す 県内 で 、 地域産業 の 可能性 を 無限 に 広げる 挑戦 を 追う 。
+∃ ENTITY[1] EVENT[6] EVENT[11] EVENT[13] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[9] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *speaker* ∧
+  東日本大震災(ENTITY[5]) ∧
+   から_の_復興(ENTITY[5], ENTITY[4]) ∧
+    目指す(EVENT[6], ENTITY[2], ENTITY[4]) ∧ 県内(ENTITY[2]) ∧
+     地域産業(ENTITY[10]) ∧
+      の_可能性(ENTITY[10], ENTITY[9]) ∧
+       広げる(EVENT[11], ENTITY[7], ENTITY[9]) ∧ 挑戦(ENTITY[7]) ∧
+        ADV_無限_に(EVENT[11]) ∧ 追う(EVENT[13], ENTITY[1], ENTITY[7]) ∧ で(EVENT[13]) = ENTITY[2])
+
+# ::id 12_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt （ １５ 回 続き ）
+∃ EVENT[2] ENTITY[1] ((CD_１５_回(ENTITY[1]), 続き(ENTITY[1])) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 13_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 自宅 の ある 仙台市 青葉区 で 携帯電話 を 操作 する 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  自宅(ENTITY[3]) ∧
+   ある(EVENT[4], ENTITY[3], ENTITY[仙台市_青葉区]) ∧
+    携帯電話(ENTITY[5]) ∧ 操作する.0(EVENT[6], ENTITY[1], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[仙台市_青葉区])
+
+# ::id 14_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 画面 に 映る の は 、 経営 する 約５０ キロ 離れ た 大崎市 鹿島台 の 農場 。
+∃ ENTITY[9] ENTITY[5] EVENT[7] EVENT[10] EVENT[11] EVENT[4] ENTITY[3] ENTITY[1] (
+ 画面(ENTITY[3]) ∧
+  映る(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ の(ENTITY[1]) ∧
+   past(EVENT[10]) ∧
+    CD_約５０_キロ(ENTITY[9]) ∧
+     離れ_た(EVENT[10], ENTITY[9], ENTITY[大崎市_鹿島台]) ∧
+      経営する.0(EVENT[7], ENTITY[5]) ∧ の_農場(ENTITY[大崎市_鹿島台], ENTITY[5]) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[5]))
+
+# ::id 15_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ビニールハウス の 中 で 、 ルッコラ や ミズナ が 青々と 育っ て いる 。
+∃ EVENT[6] ENTITY[2] GROUP[3] ENTITY[1] (
+ ビニールハウス(ENTITY[2]) ∧
+  の_中(ENTITY[2], ENTITY[1]) ∧
+   CONJ_や(∃ ENTITY[4] (ルッコラ(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (ミズナ(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+    ADV_青々と(EVENT[6]) ∧ 育っ_て_いる(EVENT[6], GROUP[3]) ∧ で(EVENT[6]) = ENTITY[1])
+
+# ::id 16_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 「 作物 の 状況 が どこ に い て も 分かる 」 。
+∃ ENTITY[2] ENTITY[1] (
+ 作物(ENTITY[2]) ∧
+  の_状況(ENTITY[2], ENTITY[1]) ∧
+   ∀ ENTITY[3] ENTITY[4] EVENT[5] CND_も(ENTITY[3] = *pro*{ENTITY[1], ENTITY[2]} ∧ い_て(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4], ∃ EVENT[6] 分かる(EVENT[6], ENTITY[1])))
+
+# ::id 17_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業生産法人アグリフューチャー代表 の 女川源さん （ ４２ ） は 、 ＩＴ による 農業 を 実践 する 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 農業生産法人アグリフューチャー代表(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[女川源さん]) ∧
+   CD_４２(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[女川源さん]) ∧
+     ＩＴ(ENTITY[4]) ∧ による_農業(ENTITY[4], ENTITY[3]) ∧ 実践する.0(EVENT[5], ENTITY[女川源さん], ENTITY[3]))
+
+# ::id 18_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農場 に は カメラ や センサー が 設置 さ れ 、 インターネット で 情報 を 取得 できる 。
+∃ ENTITY[1] EVENT[6] EVENT[9] GROUP[3] ENTITY[8] ENTITY[7] ENTITY[2] (
+ 農場(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_や(∃ ENTITY[4] (カメラ(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (センサー(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+    インターネット(ENTITY[7]) ∧
+     情報(ENTITY[8]) ∧
+      設置する.0(EVENT[6], _, GROUP[3]) ∧
+       取得する.0(EVENT[9], ENTITY[1], ENTITY[8]) ∧ で(EVENT[9]) = ENTITY[7] ∧ に(EVENT[9]) = ENTITY[2])
+
+# ::id 19_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 地面 の 湿り具合 や ハウス内 の 結露 、 温度 まで 確認 でき 、 「 作業効率 が 上がる 」 と 胸 を 張る 。
+∃ ENTITY[1] EVENT[8] EVENT[12] EVENT[10] GROUP[2] ENTITY[11] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[4] ENTITY[3] (地面(ENTITY[4]) ∧ の_湿り具合(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[6] ENTITY[5] (ハウス内(ENTITY[6]) ∧ の_結露(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])),
+   ∃ ENTITY[7] (温度(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2]))) ∧
+   胸(ENTITY[9]) ∧
+    作業効率(ENTITY[11]) ∧
+     確認する.0(EVENT[8], ENTITY[1]) ∧ まで(EVENT[8]) = GROUP[2] ∧
+      張る(EVENT[10], ENTITY[1], ENTITY[9], 上がる(EVENT[12], ENTITY[11])))
+
+# ::id 20_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 女川さん は 元ＮＴＴ関連会社 の サラリーマン 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (元ＮＴＴ関連会社(ENTITY[2]) ∧ の_サラリーマン(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3], ENTITY[女川さん], ENTITY[1]))
+
+# ::id 21_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt １２ 年 ２ 月 、 農地 を 借り て 農業法人 を つくっ た 。
+∃ ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  CD_１２_年_２_月(TIME[2]) ∧
+   農地(ENTITY[3]) ∧
+    農業法人(ENTITY[5]) ∧
+     past(EVENT[6]) ∧
+      CONJ_te(借り_て(EVENT[4], ENTITY[1], ENTITY[3]) ∧ is_contained_in(時間(EVENT[4]), TIME[2]),
+       つくっ_た(EVENT[6], ENTITY[1], ENTITY[5]) ∧ is_contained_in(時間(EVENT[6]), TIME[2])))
+
+# ::id 22_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 同時期 に 東北スマートアグリカルチャー研究会 の 設立 に 加わっ た 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  同時期(ENTITY[2]) ∧
+   東北スマートアグリカルチャー研究会(ENTITY[4]) ∧
+    の_設立(ENTITY[4], ENTITY[3]) ∧
+     past(EVENT[5]) ∧
+      加わっ_た(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[3] ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 23_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 仙台市 の ＩＴ企業 や 東北大 、 農業関連法人 など で つくる 。
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ 研究会(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[4] (の_ＩＴ企業(ENTITY[仙台市], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])), is_element_of(ENTITY[東北大], GROUP[3]),
+   ∃ ENTITY[5] (農業関連法人(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   など(GROUP[3], ENTITY[2]) ∧ つくる(EVENT[6], ENTITY[1]) ∧ で(EVENT[6]) = ENTITY[2])
+
+# ::id 24_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業振興 の ため の ＩＴシステム開発 に 取り組む 。
+∃ ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  農業振興(ENTITY[4]) ∧
+   の_ため(ENTITY[4], ENTITY[3]) ∧
+    の_ＩＴシステム開発(ENTITY[3], ENTITY[2]) ∧ 取り組む(EVENT[5], ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 25_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 支援対象 は 一般農家 だ 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (支援対象(ENTITY[1]) ∧ 一般農家(ENTITY[2]) ∧ だ(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 26_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農業 の ＩＴ活用 は 植物工場 で 大はやり だ が 、 女川さん は 「 機材購入 や 管理 に コスト が 掛かり すぎる 」 と 指摘 。
+∃ EVENT[4] EVENT[10] EVENT[5] ENTITY[3] ENTITY[9] GROUP[6] ENTITY[2] ENTITY[1] (
+ 農業(ENTITY[2]) ∧
+  の_ＩＴ活用(ENTITY[2], ENTITY[1]) ∧
+   植物工場(ENTITY[3]) ∧
+    CONJ_や(∃ ENTITY[7] (機材購入(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[8] (管理(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+     コスト(ENTITY[9]) ∧
+      CONJ_が(大はやり_だ(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3],
+       指摘(EVENT[5], ENTITY[女川さん], 掛かり_すぎる(EVENT[10], ENTITY[9]) ∧ に(EVENT[10]) = GROUP[6])))
+
+# ::id 27_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 農家 が 自身 で カメラ を 設置 し 管理 できれ ば 「 大幅 に 経費 を 抑え られる 」 と 語る 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ ENTITY[3] EVENT[5] EVENT[6] ENTITY[4] ENTITY[2] CND_ば(
+      農家(ENTITY[2]) ∧ ENTITY[3] = 自身{ENTITY[1]} ∧ カメラ(ENTITY[4]) ∧
+       設置する.0(EVENT[5], ENTITY[2], ENTITY[4]) ∧ 管理する.0(EVENT[6], ENTITY[2]) ∧ で(EVENT[6]) = ENTITY[3],
+      ∃ ENTITY[8] EVENT[10] EVENT[7] ENTITY[9] (
+       ENTITY[8] = *pro*{ENTITY[1], ENTITY[2], ENTITY[4]} ∧
+        経費(ENTITY[9]) ∧
+         ADV_大幅_に(EVENT[10]) ∧ 語る(EVENT[7], ENTITY[1], 抑え_られる(EVENT[10], ENTITY[8], ENTITY[9])))))
+
+# ::id 28_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 昨年 ８ 月 、 泉区 に 実験農場 を 開設 し た 。
+∃ EVENT[4] ENTITY[3] TIME[2] ENTITY[1] (
+ 研究会(ENTITY[1]) ∧
+  (CD_８_月(TIME[2]), 昨年(TIME[2])) ∧
+   実験農場(ENTITY[3]) ∧
+    past(EVENT[4]) ∧
+     開設する.0_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[泉区] ∧
+      is_contained_in(時間(EVENT[4]), TIME[2]))
+
+# ::id 29_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 約１０００ 平方メートル の ハウス内 に 取り付け た 小型カメラ や センサー 、 無線ＬＡＮ設備 は 市販品 。
+∃ ENTITY[3] EVENT[12] ENTITY[11] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[8] ENTITY[9] ENTITY[10] GROUP[7] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  CD_約１０００_平方メートル(ENTITY[5]) ∧
+   の_ハウス内(ENTITY[5], ENTITY[4]) ∧
+    小型カメラ(ENTITY[8]) ∧
+     センサー(ENTITY[9]) ∧
+      無線ＬＡＮ設備(ENTITY[10]) ∧
+       CONJ_や(is_element_of(ENTITY[8], GROUP[7]), is_element_of(ENTITY[9], GROUP[7]), is_element_of(ENTITY[10], GROUP[7])) ∧
+        取り付け_た(EVENT[6], ENTITY[3], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+         equals(GROUP[7], ENTITY[1]) ∧
+         past(EVENT[6]) ∧ 市販品(ENTITY[11]) ∧ xxx(EVENT[12], ENTITY[1], ENTITY[11]))
+
+# ::id 30_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt プラスチック容器 で 覆い 、 水 や ほこり を 防い で いる 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] EVENT[8] ENTITY[3] GROUP[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   プラスチック容器(ENTITY[3]) ∧
+    CONJ_や(∃ ENTITY[6] (水(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[7] (ほこり(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+     覆い(EVENT[4], ENTITY[1], ENTITY[2]) ∧ で(EVENT[4]) = ENTITY[3] ∧
+      防い_で_いる(EVENT[8], ENTITY[1], GROUP[5]))
+
+# ::id 31_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 専用機器 を 使え ば １００万 円 以上 。
+∃ ARB[1] (
+ ARB[1] = *arb* ∧
+  ∀ EVENT[3] ENTITY[2] CND_ば(専用機器(ENTITY[2]) ∧ 使え(EVENT[3], ARB[1], ENTITY[2]),
+      ∃ EVENT[5] ENTITY[4] ((CD_１００万_円(ENTITY[4]), 以上(ENTITY[4])) ∧ xxx(EVENT[5], ARB[1], ENTITY[4]))))
+
+# ::id 32_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt それ が １０万 円 程度 で 済む と いう 。
+∃ ENTITY[3] ENTITY[1] EVENT[5] EVENT[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = それ{ENTITY[1]} ∧
+   (CD_１０万_円(ENTITY[4]), 程度(ENTITY[4])) ∧
+    いう(EVENT[2], ENTITY[1], 済む(EVENT[5], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[4]))
+
+# ::id 33_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 遠隔監視システム は 震災 から の 農業再生 に も 一役 買う 。
+∃ EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 遠隔監視システム(ENTITY[1]) ∧
+  震災(ENTITY[3]) ∧
+   から_の_農業再生(ENTITY[3], ENTITY[2]) ∧
+    一役(ENTITY[4]) ∧ 買う(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[2])
+
+# ::id 34_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 津波被害 を 受け た 石巻市 や 名取市 の 生産者 が 活用 し 、 営農 を 再開 し て いる 。
+∃ EVENT[5] EVENT[7] EVENT[9] ENTITY[4] GROUP[6] ENTITY[2] ENTITY[8] ENTITY[1] (
+ 津波被害(ENTITY[4]) ∧
+  CONJ_や(is_element_of(ENTITY[石巻市], GROUP[6]), is_element_of(ENTITY[名取市], GROUP[6])) ∧
+   受け_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ equals(GROUP[6], ENTITY[2]) ∧
+    の_生産者(ENTITY[2], ENTITY[1]) ∧
+     営農(ENTITY[8]) ∧
+      past(EVENT[5]) ∧ 活用する.0(EVENT[7], ENTITY[1]) ∧ 再開する.0_て_いる(EVENT[9], ENTITY[1], ENTITY[8]))
+
+# ::id 35_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 住まい の 移転 など に 伴う 職住分離 の 課題 を 克服 できる ため だ 。
+∃ SITUATION[2] ENTITY[1] EVENT[9] EVENT[10] EVENT[11] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  住まい(ENTITY[8]) ∧
+   の_移転(ENTITY[8], ENTITY[7]) ∧
+    など(ENTITY[7], ENTITY[6]) ∧
+     伴う(EVENT[9], ENTITY[4]) ∧ に(EVENT[9]) = ENTITY[6] ∧ 職住分離(ENTITY[4]) ∧
+      の_課題(ENTITY[4], ENTITY[3]) ∧
+       ため(SITUATION[2], 克服する.0(EVENT[10], ENTITY[1], ENTITY[3])) ∧ だ(EVENT[11], ENTITY[1], SITUATION[2]))
+
+# ::id 36_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt データ は ネット経由 で 一括管理 さ れる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ データ(ENTITY[1]) ∧
+  ネット経由(ENTITY[2]) ∧ 一括管理する.0(EVENT[3], _, ENTITY[1]) ∧ で(EVENT[3]) = ENTITY[2])
+
+# ::id 37_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 蓄積 さ れる 膨大 な 情報 「 ビッグデータ 」 の 価値 は 高い 。
+∃ ATTRIB[5] EVENT[6] ENTITY[2] ENTITY[1] EVENT[4] (
+ 膨大_な(ATTRIB[5]) ∧
+  蓄積する.0(EVENT[4], _, ENTITY[2]) ∧ ATTRIBUTE_情報(ATTRIB[5], ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[ビッグデータ], ENTITY[2]) ∧ の_価値(ENTITY[2], ENTITY[1]) ∧ 高い(EVENT[6], ENTITY[1]))
+
+# ::id 38_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ベテラン農家 も 加われ ば 、 長年 の 経験 で 培わ れ た 技術 を 共有 できる 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  ∀ EVENT[3] ENTITY[2] CND_ば(ベテラン農家(ENTITY[2]) ∧ 加われ(EVENT[3], ENTITY[2]),
+      ∃ EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[4] (
+       長年(ENTITY[7]) ∧
+        の_経験(ENTITY[7], ENTITY[6]) ∧
+         培わ_た(EVENT[8], _, ENTITY[4]) ∧ で(EVENT[8]) = ENTITY[6] ∧ 技術(ENTITY[4]) ∧
+          past(EVENT[8]) ∧ 共有する.0(EVENT[9], ENTITY[1], ENTITY[4]))))
+
+# ::id 39_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 約４００ 社 ある 仙台市内 の ＩＴ企業 にとって も 、 農業分野参入 は 飛躍 の チャンス だ 。
+∃ EVENT[4] EVENT[9] ENTITY[3] ENTITY[5] ENTITY[8] ENTITY[7] ENTITY[1] ENTITY[6] (
+ 農業分野参入(ENTITY[6]) ∧
+  CD_約４００_社(ENTITY[3]) ∧
+   仙台市内(ENTITY[5]) ∧
+    ある(EVENT[4], ENTITY[3], ENTITY[1]) ∧ の_ＩＴ企業(ENTITY[5], ENTITY[1]) ∧
+     飛躍(ENTITY[8]) ∧
+      の_チャンス(ENTITY[8], ENTITY[7]) ∧ だ(EVENT[9], ENTITY[6], ENTITY[7]) ∧ にとって(EVENT[9]) = ENTITY[1])
+
+# ::id 40_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt これ まで は 首都圏 の 下請け に 甘んじる こと が 多かっ た 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] (
+ ENTITY[1] = これ ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   首都圏(ENTITY[5]) ∧
+    の_下請け(ENTITY[5], ENTITY[4]) ∧
+     こと(SITUATION[2], 甘んじる(EVENT[6], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[4]) ∧
+      past(EVENT[7]) ∧ 多かっ_た(EVENT[7], SITUATION[2]) ∧ まで(EVENT[7]) = ENTITY[1])
+
+# ::id 41_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 副会長 で ＩＴサービス業トライポッドワークス常務 の 菊池務さん （ ５２ ） ＝ 東北大特任教授 ＝ は 「 気候 や 作物 に 合わせる に は 農家密着 が 必要 。 生産地 に 近い 強み を 生かせる 」 と 力 を 込める 。
+∃ ATTRIB[15] ENTITY[13] SITUATION[7] EVENT[11] EVENT[12] EVENT[17] EVENT[5] GROUP[8] ENTITY[6] ENTITY[16] ENTITY[14] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 研究会_副会長(ENTITY[3]) ∧
+  で_xxx(ENTITY[3], ENTITY[菊池務さん]) ∧
+   ＩＴサービス業トライポッドワークス常務(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[菊池務さん]) ∧
+     CD_５２(ENTITY[1]) ∧
+      namely_-ENTITY-(ENTITY[1], ENTITY[菊池務さん]) ∧
+       namely_-ENTITY-(ENTITY[東北大特任教授], ENTITY[菊池務さん]) ∧
+        力(ENTITY[4]) ∧
+         農家密着(ENTITY[6]) ∧
+          CONJ_や(∃ ENTITY[9] (気候(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+           ∃ ENTITY[10] (作物(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+           FACT(SITUATION[7], 合わせる(EVENT[11], ENTITY[6]) ∧ に(EVENT[11]) = GROUP[8]) ∧
+            ENTITY[13] = *pro*{ENTITY[6], ENTITY[菊池務さん], ENTITY[4], ENTITY[東北大特任教授], ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+             生産地(ENTITY[16]) ∧
+              に_近い(ENTITY[16], ATTRIB[15]) ∧
+               ATTRIBUTE_強み(ATTRIB[15], ENTITY[14]) ∧
+                込める(EVENT[5], ENTITY[菊池務さん], ENTITY[4],
+                 必要(EVENT[12], ENTITY[6]) ∧ に(EVENT[12]) = SITUATION[7] ∧
+                  生かせる(EVENT[17], ENTITY[13], ENTITY[14])))
+
+# ::id 42_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会 は 小さな 農地 を 一体的 に 管理 し 「 大規模農場化 」 する 構想 も 描く 。
+∃ ENTITY[7] SITUATION[6] ATTRIB[3] EVENT[4] EVENT[8] EVENT[9] ENTITY[2] ENTITY[1] (
+ 研究会(ENTITY[1]) ∧
+  小さな(ATTRIB[3]) ∧
+   ATTRIBUTE_農地(ATTRIB[3], ENTITY[2]) ∧
+    ENTITY[7] = *pro*{ENTITY[2]} ∧
+     構想(SITUATION[6], 大規模農場化_する(EVENT[8], ENTITY[1], ENTITY[7])) ∧
+      ADV_一体的_に(EVENT[4]) ∧
+       管理する.0(EVENT[4], ENTITY[1], ENTITY[2]) ∧ 描く(EVENT[9], ENTITY[1]) ∧ LINK(EVENT[9]) = SITUATION[6])
+
+# ::id 43_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 後継者難 や 耕作放棄 による 飛び地増加 といった 課題解決 を 見据える 。
+∃ ENTITY[1] EVENT[7] GROUP[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_や(∃ ENTITY[5] (後継者難(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (耕作放棄(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+   による_飛び地増加(GROUP[4], ENTITY[3]) ∧ といった_課題解決(ENTITY[3], ENTITY[2]) ∧ 見据える(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 44_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 昨年 １０ 月 に は 農家 と 先進技術 の 橋渡し役「農業ＩＴマイスター」 の 育成講座 も 始め た 。
+∃ ENTITY[1] EVENT[8] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ (CD_１０_月(ENTITY[2]), 昨年(ENTITY[2])) ∧
+  ENTITY[1] = *pro* ∧
+   CONJ_と(∃ ENTITY[6] (農家(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[7] (先進技術(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    の_橋渡し役「農業ＩＴマイスター」(GROUP[5], ENTITY[4]) ∧
+     の_育成講座(ENTITY[4], ENTITY[3]) ∧
+      past(EVENT[8]) ∧ 始め_た(EVENT[8], ENTITY[3]) ∧ に(EVENT[8]) = ENTITY[2])
+
+# ::id 45_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 研究会メンバー も 設立当初 の ３ 倍 の 約３０ 社 ・ 団体 に 増え た 。
+∃ EVENT[8] ENTITY[4] GROUP[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 研究会メンバー(ENTITY[1]) ∧
+  設立当初(ENTITY[4]) ∧
+   (CD_３_倍(ENTITY[3]), の(ENTITY[4], ENTITY[3])) ∧
+    ∃ ENTITY[6] (社(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+     ∃ ENTITY[7] (団体(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+     (CD_約３０(ENTITY[2]), equals(GROUP[5], ENTITY[2]) ∧ の(ENTITY[3], ENTITY[2])) ∧
+      past(EVENT[8]) ∧ 増え_た(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[2])
+
+# ::id 46_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 今後 は 九州大 と の 連携 や 福島県内 で の 新た な 取り組み も 本格化 する 。
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ 今後(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[3] (と_の_連携(ENTITY[九州大], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ATTRIB[6] ENTITY[5] ENTITY[4] (
+    福島県内(ENTITY[5]) ∧
+     新た_な(ATTRIB[6]) ∧
+      ATTRIBUTE_取り組み(ATTRIB[6], ENTITY[4]) ∧ で_の_取り組み(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   本格化する.0(EVENT[7], GROUP[2]) ∧ 時間(EVENT[7]) = ENTITY[1])
+
+# ::id 47_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 新しい 営農システム を 仙台 から 全国 へ 。
+∃ ATTRIB[3] ENTITY[1] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  新しい(ATTRIB[3]) ∧
+   ATTRIBUTE_営農システム(ATTRIB[3], ENTITY[2]) ∧
+    全 ENTITY[4] (国(ENTITY[4]),
+     ∃ EVENT[5] (
+      xxx(EVENT[5], ENTITY[1], ENTITY[2]) ∧
+       へ(EVENT[5]) = ENTITY[4] ∧ から(EVENT[5]) = ENTITY[仙台])))
+
+# ::id 48_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 新た な 農業ビジネス が 芽吹き つつある 。
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (新た_な(ATTRIB[2]) ∧ ATTRIBUTE_農業ビジネス(ATTRIB[2], ENTITY[1]) ∧ 芽吹き_つつある(EVENT[3], ENTITY[1]))
+
+# ::id 49_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt （ 報道部・村上俊 ）
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[報道部.村上俊])
+
+# ::id 50_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ＜ 東北スマートアグリカルチャー研究会 ＞ 仙台市 の トライポッドワークス 、 ＳＪＣ 、 亀山鉄工所 、 東北大 、 東北学院大 と 鶴岡高専 （ 鶴岡市 ） 、 村田製作所 （ 京都府 ） など 約３０ 社・団体 で 構成 。
+∃ EVENT[7] GROUP[2] ENTITY[1] (
+ CONJ_と(∃ GROUP[4] ENTITY[3] (
+       ∃ ENTITY[5] (トライポッドワークス(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧ is_element_of(ENTITY[ＳＪＣ], GROUP[4]) ∧
+        ∃ ENTITY[6] (亀山鉄工所(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧ is_element_of(ENTITY[東北大], GROUP[4]) ∧
+        is_element_of(ENTITY[東北学院大], GROUP[4]) ∧
+        equals(GROUP[4], ENTITY[3]) ∧ の(ENTITY[仙台市], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  namely_-ENTITY-(ENTITY[鶴岡市], ENTITY[鶴岡高専]) ∧ is_element_of(ENTITY[鶴岡高専], GROUP[2]),
+  namely_-ENTITY-(ENTITY[京都府], ENTITY[村田製作所]) ∧ is_element_of(ENTITY[村田製作所], GROUP[2])) ∧
+  (CD_約３０(ENTITY[1]), など_社.団体(GROUP[2], ENTITY[1])) ∧
+   構成(EVENT[7], ENTITY[東北スマートアグリカルチャー研究会]) ∧ で(EVENT[7]) = ENTITY[1])
+
+# ::id 51_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 会長 は 中井裕東北大教授 。
+∃ EVENT[2] ENTITY[1] (会長(ENTITY[1]) ∧ xxx(EVENT[2], ENTITY[1], ENTITY[中井裕東北大教授]))
+
+# ::id 52_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt ＩＴ農業講習会 を ２ 月 １８～２０ 日 に 開く 予定 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  ＩＴ農業講習会(ENTITY[3]) ∧
+   CD_２_月_１８～２０_日(ENTITY[4]) ∧
+    予定(SITUATION[1], 開く(EVENT[5], ENTITY[2], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4]) ∧
+     xxx(EVENT[6], _, SITUATION[1]))
+
+# ::id 53_newswire_01106_K201401010A0M106B00004;NJ
+# ::snt 連絡先 は アイエスビー東北内 の 事務局 ０２２（３０２）３２４８ 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (連絡先(ENTITY[1]) ∧ アイエスビー東北内(ENTITY[3]) ∧ の_事務局_０２２（３０２）３２４８(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))

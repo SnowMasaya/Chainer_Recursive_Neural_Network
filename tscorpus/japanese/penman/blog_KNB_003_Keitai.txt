@@ -1,0 +1,265 @@
+# ::id 1_blog_KNB_003_Keitai_1-1-1-01;NJ
+# ::snt ［ 携帯 電話 ］
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 携帯_電話))
+
+# ::id 2_blog_KNB_003_Keitai_1-1-10-01;NJ
+# ::snt うーん 。
+( EVENT-1 / EVENT)
+
+# ::id 3_blog_KNB_003_Keitai_1-1-11-01;NJ
+# ::snt 私 として は 料金 が 安く なっ て 欲しい 、 という の に 加え て 、 電磁波 が 出 なく て 体 に 優しい ＋ 電波 状況 が 良く て 最低 今 ぐらい の エリア で 使える 、 という よう な 携帯 が 世の中 の 主流 に なっ て いっ て ほしい 。
+( CONJ-37 / AND
+      :op1 ( EVENT-24 / な
+             :ARG1 ( ENTITY-12 / よう
+                    :THAT ( CONJ-35 / CONJ_te
+                           :op1 ( EVENT-18 / 良く_て
+                                  :ARG0 ( ENTITY-17 / 電波_状況))
+                           :op2 ( EVENT-23 / 使える
+                                  :ARG0 ( ENTITY-10 / 携帯
+                                         :ARG0-of ( CONJ-34 / CONJ_te
+                                                :op1 ( EVENT-14 / 出_て
+                                                       :ARG0 ( ENTITY-13 / 電磁波)
+                                                       :domain-of ( NEG-33 / NEG))
+                                                :op2 ( EVENT-16 / 優しい
+                                                       :に ( ENTITY-15 / 体))))
+                                  :で ( ENTITY-20 / エリア
+                                         :の ( ENTITY-21 / ENTITY
+                                                :OF ( ENTITY-22 / 今)))
+                                  :ADV ( ENTITY-19 / 最低)))))
+      :op2 ( CONJ-36 / CONJ_te
+             :op1 ( EVENT-9 / 加え_て
+                    :ARG0 ( ENTITY-3 / ENTITY
+                           :namely ENTITY-1)
+                    :に ( ENTITY-4 / の
+                           :THAT ( EVENT-6 / 欲しい
+                                  :ARG0 ( PICK-29 / or
+                                         :op1 ENTITY-3
+                                         :op2 ENTITY-1)
+                                  :TOCOMP ( EVENT-8 / 安く_なっ_て
+                                         :ARG0 ( ENTITY-7 / 料金)))))
+             :op2 ( EVENT-25 / ほしい
+                    :ARG0 ( ENTITY-1 / ENTITY
+                           :として ( ENTITY-2 / 私
+                                  :pick0))
+                    :ARG1 ENTITY-10
+                    :TOCOMP ( EVENT-28 / なっ_て_いっ
+                           :ARG0 ENTITY-10
+                           :ARG1 ( ENTITY-26 / 主流
+                                  :の ( ENTITY-27 / 世の中))))))
+
+# ::id 4_blog_KNB_003_Keitai_1-1-12-01;NJ
+# ::snt という こと は やっぱり 競合 し て もらわ ない と ね 。
+( CND-12 / と (
+             :op1 ( SITUATION-5 やっぱり) ( SITUATION-5 ( FACT
+                           :THAT ( EVENT-4 / 競合する.0_て_もらわ
+                                  :ARG0 ( ENTITY-1 / speaker
+                                         :pick0)
+                                  :domain-of ( NEG-11 / NEG)))))
+      :op2 ( EVENT-6 / EVENT
+             :ARG0 ENTITY-1
+             :ADV ( ENTITY-2 / こと
+                    :THAT ( EVENT-3 / EVENT))
+             :domain-of ( MD-13 / MD_ね)))
+
+# ::id 5_blog_KNB_003_Keitai_1-1-2-01;NJ
+# ::snt 最近 携帯 電話 業界 の 動き が 激しい よう に 感じる 。
+( EVENT-7 / 感じる
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( SITUATION-3 / よう
+             :THAT ( EVENT-6 / 激しい
+                    :ARG0 ( ENTITY-4 / 動き
+                           :の ( ENTITY-5 / 携帯_電話_業界))))
+      :TMP ( TIME-2 / 最近))
+
+# ::id 6_blog_KNB_003_Keitai_1-1-3-01;NJ
+# ::snt ボーダフォン が ソフトバンク に なっ たり 、 番号 そのまま で 会社 を 変える こと が できる よう に なっ たり 。
+( EVENT-15 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :たり ( CONJ-17 / CONJ_たり
+             :op1 ( EVENT-3 / なっ
+                    :ARG0 ( ENTITY-ボーダフォン / ENTITY
+                           :name ( n-18 / name
+                                  :op1 "ボーダフォン"))
+                    :ARG1 ( ENTITY-ソフトバンク / ENTITY
+                           :name ( n-19 / name
+                                  :op1 "ソフトバンク")))
+             :op2 ( EVENT-14 / なっ
+                    :ARG0 ENTITY-1
+                    :に ( SITUATION-4 / よう
+                           :THAT ( EVENT-13 / できる
+                                  :ARG0 ( ARB-5 / arb
+                                         :pick0)
+                                  :ARG1 ( SITUATION-6 / こと
+                                         :THAT ( EVENT-12 / 変える
+                                                :ARG0 ARB-5
+                                                :ARG1 ( ENTITY-11 / 会社)
+                                                :で ( EVENT-10 / EVENT
+                                                       :ARG0 ( ENTITY-8 / 番号)
+                                                       :ARG1 ( ENTITY-9 / そのまま)))))))))
+
+# ::id 7_blog_KNB_003_Keitai_1-1-3-02;NJ
+# ::snt 略称 忘れ た ・・・
+( EVENT-3 / 忘れ_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-2 / 略称)
+      :MOD ( mod-4 / past))
+
+# ::id 8_blog_KNB_003_Keitai_1-1-4-01;NJ
+# ::snt そういえば 、 ちょっと 前 に ドコモ と ａｕ とか で も 絵文字 が 使える よう に なっ た 。
+( EVENT-9 / なっ_た
+      :ARG0 ( ARB-1 / arb
+             :pick0)
+      :ARG1 ( SITUATION-3 / よう
+             :THAT ( EVENT-8 / 使える
+                    :ARG0 ARB-1
+                    :ARG1 ( ENTITY-4 / 絵文字)
+                    :TE ( EVENT-7 / で
+                           :ARG0 ENTITY-4
+                           :とか ( GROUP-6 / CONJ_と
+                                  :op1 ( ENTITY-ドコモ / ENTITY
+                                         :name ( n-12 / name
+                                                :op1 "ドコモ"))
+                                  :op2 ( ENTITY-ａｕ / ENTITY
+                                         :name ( n-13 / name
+                                                :op1 "ａｕ"))))))
+      :に ( ENTITY-2 / ちょっと
+             :MOD ( mod-10 / 前))
+      :MOD ( mod-11 / past))
+
+# ::id 9_blog_KNB_003_Keitai_1-1-5-01;NJ
+# ::snt 更に いう と 、 業界 の 話 で は ない けど 、 京大 で の フォーマ の 電波 状況 が 改善 さ れ て 、 本当 に １ 歩 入れ ば 圏外 だっ た 法経本館 で ばっちり 三 本 たつ よう に なっ た 。
+( CONJ-38 / AND
+      :op1 ( CND-26 / ば (
+                    :op1 ( ARB-12 arb
+                           :pick0) ( DEGREE-13 CD_１_歩) ( EVENT-14 ( 入れ
+                                  :ARG0 ARB-12
+                                  :MSR DEGREE-13)))
+             :op2 ( EVENT-16 / だっ_た
+                    :ARG0 ( PICK-22 / or
+                           :op1 ENTITY-4
+                           :op2 ENTITY-5
+                           :op3 ENTITY-6
+                           :op4 ENTITY-京大
+                           :op5 ENTITY-フォーマ)
+                    :ARG1 ( ENTITY-15 / 圏外)
+                    :LOC ( ENTITY-法経本館 / ENTITY
+                           :name ( n-35 / name
+                                  :op1 "法経本館"))
+                    :MOD ( mod-30 / past)
+                    :MOD ( mod-31 / 本当_に)))
+      :op2 ( CRD-29 / けど
+             :op1 ( EVENT-7 / で_は
+                    :ARG0 ( ENTITY-4 / 電波_状況
+                           :の ( ENTITY-フォーマ / ENTITY
+                                  :name ( n-36 / name
+                                         :op1 "フォーマ"))
+                           :で_の ( ENTITY-京大 / ENTITY
+                                  :name ( n-37 / name
+                                         :op1 "京大")))
+                    :ARG1 ( ENTITY-5 / 話
+                           :の ( ENTITY-6 / 業界))
+                    :domain-of ( NEG-27 / NEG))
+             :op2 ( CONJ-28 / CONJ_te
+                    :op1 ( EVENT-8 / 改善する.0_て
+                           :ARG1 ENTITY-4
+                           :と ( SITUATION-1 / FACT
+                                  :THAT ( EVENT-2 / いう
+                                         :MOD ( mod-32 / 更に))))
+                    :op2 ( EVENT-21 / なっ_た
+                           :ARG0 ENTITY-4
+                           :ARG1 ( SITUATION-9 / よう
+                                  :THAT ( EVENT-19 / たつ
+                                         :ARG0 ( ENTITY-18 / CD_三_本)
+                                         :で ENTITY-法経本館
+                                         :MOD ( mod-33 / ばっちり)))
+                           :と SITUATION-1
+                           :MOD ( mod-34 / past)))))
+
+# ::id 10_blog_KNB_003_Keitai_1-1-6-01;NJ
+# ::snt これ は 吉田山 の どこ か で 電波塔 が 新しく 建っ た から らしい という 噂 を 聞い た が 、 詳しい 理由 は よく 知ら ない 。。。
+( CONJ-19 / CONJ_が
+      :op1 ( EVENT-10 / 聞い_た
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 噂
+                    :THAT ( EVENT-9 / EVENT
+                           :ARG0 ENTITY-1 (
+                                  :から ( ENTITY-5 ( ENTITY
+                                                :の ( ENTITY-吉田山 / ENTITY
+                                                       :name ( n-24 / name
+                                                              :op1 "吉田山")))) ( EVENT-7 ( 建っ_た
+                                                :ARG0 ( ENTITY-6 / 電波塔)
+                                                :で ENTITY-5
+                                                :MOD ( mod-20 / 新しく)
+                                                :MOD ( mod-21 / past))))
+                           :domain-of ( MD-16 / MD_らしい)))
+             :MOD ( mod-22 / past))
+      :op2 ( EVENT-13 / 知ら
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-11 / 理由
+                    :ATTRIBUTE ( ATTRIB-12 / 詳しい))
+             :domain-of ( NEG-18 / NEG)
+             :MOD ( mod-23 / よく)))
+
+# ::id 11_blog_KNB_003_Keitai_1-1-7-01;NJ
+# ::snt 話 を 戻す と 、 携帯 業界 、 これ から どう なる ん だろ う 。
+( EVENT-8 / なる_ん_だろ
+      :ARG0 ( ENTITY-5 / 携帯_業界)
+      :から ENTITY-3
+      :と ( EVENT-4 / 戻す
+             :ARG0 ( ENTITY-2 / speaker
+                    :pick0)
+             :ARG1 ( ENTITY-3 / 話))
+      :ADV ENTITY-7
+      :domain-of ( QUEST-11 / QUEST)
+      :domain-of ( MD-10 / MD_う))
+
+# ::id 12_blog_KNB_003_Keitai_1-1-8-01;NJ
+# ::snt 会社 の が 増え すぎ て も 消費者 として は 困る し 、 でも 独占 状態 も 不利益 な 感じ に なっ て しまう だろう し 。
+( CONJ-21 / CONJ_し
+      :op1 ( EVENT-7 / 困る
+             :ARG0 ( ENTITY-5 / ENTITY
+                    :として ( ENTITY-6 / 消費者))
+             :TE ( EVENT-4 / 増え_すぎ_て
+                    :ARG0 ( ENTITY-2 / ENTITY
+                           :の ( ENTITY-3 / 会社))))
+      :op2 ( EVENT-17 / なっ_て_しまう
+             :ARG0 ( ENTITY-8 / ENTITY
+                    :namely ( PICK-18 / or
+                           :op1 ENTITY-5
+                           :op2 ENTITY-6
+                           :op3 ENTITY-2
+                           :op4 ENTITY-3))
+             :ARG1 ( ENTITY-13 / 感じ
+                    :ARG0-of ( EVENT-16 / な
+                           :ARG1 ( ENTITY-15 / 不利益)))
+             :LINK ( EVENT-12 / EVENT
+                    :ARG0 ( PICK-19 / or
+                           :op1 ENTITY-8
+                           :op2 ENTITY-5
+                           :op3 ENTITY-6
+                           :op4 ENTITY-2
+                           :op5 ENTITY-3)
+                    :ARG1 ( ENTITY-11 / 独占_状態))
+             :domain-of ( MD-20 / MD_だろう))
+      :domain-of ( MD-22 / MD_し))
+
+# ::id 13_blog_KNB_003_Keitai_1-1-9-01;NJ
+# ::snt 今 の 寡占 かつ 競合 し てる 状態 が ちょうど いい の か な 。
+( EVENT-8 / いい_の
+      :ARG0 ( ENTITY-1 / CONJ_かつ
+             :op1 ( GROUP-3 / AND
+                    :op1 ( ENTITY-4 / 寡占)
+                    :op2 ENTITY-15)
+             :op2 ( GROUP-14 / AND
+                    :op1 ( EVENT-7 / 競合する.0_てる
+                           :ARG0 ( ENTITY-5 / 状態))
+                    :op2 ENTITY-5)
+             :の ( ENTITY-2 / 今))
+      :MOD ( mod-13 / ちょうど)
+      :domain-of ( MD-12 / MD_な)
+      :domain-of ( QUEST-11 / QUEST))

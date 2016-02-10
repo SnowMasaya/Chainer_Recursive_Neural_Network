@@ -1,0 +1,1617 @@
+# ::id 1_fiction_BIERCE-1891;NE
+# ::snt THE BOARDED WINDOW
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (boarded(ATTRIB[2]) ∧ is_WINDOW_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 2_fiction_BIERCE-1891;NE
+# ::snt BY AMBROSE BIERCE
+∃ EVENT[1] (xxx(EVENT[1]) ∧ BY(EVENT[1]) = ENTITY[AMBROSE_BIERCE])
+
+# ::id 3_fiction_BIERCE-1891;NE
+# ::snt In 1830 , only a few miles away from what is now the great city of Cincinnati , lay an immense and almost unbroken forest .
+∃ ATTRIB[12] ATTRIB[11] ATTRIB[7] EVENT[13] ENTITY[10] DATE[1] ENTITY[6] (
+ great(ATTRIB[7]) ∧
+  is_city_of(ENTITY[6], ENTITY[Cincinnati]) ∧ is_city_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+   CD_1830(DATE[1]) ∧
+    immense(ATTRIB[11]) ∧
+     almost_unbroken(ATTRIB[12]) ∧
+      CONJ_and(is_forest_ATTRIBUTE(ENTITY[10], ATTRIB[11]), is_forest_ATTRIBUTE(ENTITY[10], ATTRIB[12])) ∧
+       FEW GROUP[3] (miles(GROUP[3]),
+        ONLY GROUP[2] (is_subset_of_or_equal_to(GROUP[2], GROUP[3]),
+         ∃ EVENT[8] ENTITY[4] (
+          copula(EVENT[8], ENTITY[4], ENTITY[6]) ∧
+           ADV_now(EVENT[8]) ∧ is_DIR_away_from(EVENT[13], ENTITY[4]) ∧ is_DIR_away_MSR(EVENT[13], GROUP[2])))) ∧
+        past(EVENT[13]) ∧ lay(EVENT[13], _, ENTITY[10]) ∧ In(EVENT[13]) = DATE[1])
+
+# ::id 4_fiction_BIERCE-1891;NE
+# ::snt The whole region was sparsely settled by people of the frontier -- restless souls who no sooner had hewn fairly habitable homes out of the wilderness and attained to that degree of prosperity which to-day we should call indigence than impelled by some mysterious impulse of their nature they abandoned all and pushed farther westward , to encounter new perils and privations in the effort to regain the meagre comforts which they had voluntarily renounced .
+∃ SITUATION[30] SITUATION[44] SITUATION[48] ATTRIB[32] ATTRIB[17] REF1[7] SITUATION[6] ATTRIB[4] REF4[39] REF3[25] ATTRIB[23] ATTRIB[2] EVENT[29] EVENT[15] EVENT[34] EVENT[43] EVENT[47] GROUP[18] ENTITY[16] GROUP[31] ENTITY[3] GROUP[45] EVENT[26] EVENT[28] ENTITY[46] GROUP[22] ENTITY[21] ENTITY[33] TIME[38] ENTITY[36] ENTITY[35] ENTITY[1] (
+ whole(ATTRIB[2]) ∧
+  is_region_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   frontier(ENTITY[46]) ∧
+    meagre(ATTRIB[23]) ∧
+     REF3[25] = they ∧
+      had_renounced(EVENT[26], REF3[25], GROUP[22]) ∧ is_comforts_ATTRIBUTE(GROUP[22], ATTRIB[23]) ∧
+       is_effort_to(ENTITY[21], regain(EVENT[28], _, GROUP[22])) ∧
+        wilderness(ENTITY[33]) ∧
+         to-day(TIME[38]) ∧
+          REF4[39] = we ∧
+           MD_should(∃ ATTRIB[41] EVENT[42] EVENT[40] (
+                 indigence(ATTRIB[41]) ∧
+                  call(EVENT[40], REF4[39], xxx(EVENT[42], ENTITY[36], ATTRIB[41])) ∧
+                   is_contained_in(TMP(EVENT[40]), TIME[38]))) ∧ prosperity(ENTITY[36]) ∧
+            is_degree_of(ENTITY[35], ENTITY[36]) ∧
+             ADV_voluntarily(EVENT[26]) ∧
+              is_before(EVENT[26], EVENT[15]) ∧
+               is_people_of(GROUP[45], ENTITY[46]) ∧
+                restless(ATTRIB[4]) ∧
+                 REF1[7] = they ∧
+                  new(ATTRIB[17]) ∧
+                   ∃ GROUP[19] (perils(GROUP[19]) ∧ is_subset_of_or_equal_to(GROUP[19], GROUP[18])) ∧
+                    ∃ GROUP[20] (privations(GROUP[20]) ∧ is_subset_of_or_equal_to(GROUP[20], GROUP[18])) ∧
+                    is_equals(ENTITY[16], GROUP[18]) ∧ is_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+                     is_FACT_THAT(SITUATION[6],
+                      CONJ_and(SOME REF2[11] ATTRIB[9] ENTITY[10] ENTITY[8] (
+                            (mysterious(ATTRIB[9]) ∧ REF2[11] = their ∧
+                             is_nature_POS(ENTITY[10], REF2[11]) ∧
+                             is_impulse_of(ENTITY[8], ENTITY[10]) ∧ is_impulse_ATTRIBUTE(ENTITY[8], ATTRIB[9])),
+                            ∃ EVENT[12] impelled(EVENT[12], ENTITY[8], REF1[7])),
+                       CONJ_and(ALL ENTITY[13] ∃ EVENT[14] (past(EVENT[14]) ∧ abandoned(EVENT[14], REF1[7], ENTITY[13])),
+                        is_FACT_THAT(SITUATION[30],
+                         pushed(EVENT[15], REF1[7],
+                          encounter(EVENT[29], REF1[7], ENTITY[16]) ∧
+                           in(EVENT[29]) = ENTITY[21]))))) ∧
+                      fairly_habitable(ATTRIB[32]) ∧
+                       is_homes_ATTRIBUTE(GROUP[31], ATTRIB[32]) ∧
+                        is_FACT_THAT(SITUATION[44],
+                         CONJ_and(had_hewn_out(EVENT[34], ENTITY[3], GROUP[31]) ∧ of(EVENT[34]) = ENTITY[33],
+                          had_attained(EVENT[43], ENTITY[3]) ∧ to(EVENT[43]) = ENTITY[35])) ∧
+                         is_souls_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+                         is_-GROUP-_namely(GROUP[45], ENTITY[3]) ∧
+                          ADV_sparsely(SITUATION[48]) ∧
+                           ADV_farther_westward(SITUATION[30]) ∧
+                            past(EVENT[15]) ∧
+                             is_TMP_no_sooner_than(SITUATION[44], SITUATION[6]) ∧
+                              past(EVENT[34]) ∧
+                               past(EVENT[43]) ∧
+                                past(EVENT[47]) ∧
+                                 is_FACT_THAT(SITUATION[48], settled(EVENT[47], GROUP[45], ENTITY[1])))
+
+# ::id 5_fiction_BIERCE-1891;NE
+# ::snt Many of them had already forsaken that region for the remoter settlements ,
+∃ ATTRIB[5] GROUP[4] ENTITY[3] (
+ region(ENTITY[3]) ∧
+  remoter(ATTRIB[5]) ∧
+   is_settlements_ATTRIBUTE(GROUP[4], ATTRIB[5]) ∧
+    MANY REF1[2] ENTITY[1] ((REF1[2] = them ∧ is_of(ENTITY[1], REF1[2])), ∃ EVENT[6] (
+      ADV_already(EVENT[6]) ∧
+       past(EVENT[6]) ∧ had_forsaken(EVENT[6], ENTITY[1], ENTITY[3]) ∧ for(EVENT[6]) = GROUP[4])))
+
+# ::id 6_fiction_BIERCE-1891;NE
+# ::snt but among those remaining was one who had been of those first arriving .
+∃ ATTRIB[8] ENTITY[4] EVENT[10] EVENT[11] GROUP[6] GROUP[1] EVENT[3] EVENT[9] (
+ remaining(EVENT[3], GROUP[1]) ∧
+  first(ATTRIB[8]) ∧
+   arriving(EVENT[9], GROUP[6], ATTRIB[8]) ∧
+    past(EVENT[10]) ∧
+     past(EVENT[11]) ∧
+      (CD_one(ENTITY[4]), had_copula(EVENT[10], ENTITY[4]) ∧ of(EVENT[10]) = GROUP[6]) ∧
+       copula(EVENT[11], ENTITY[4]) ∧ among(EVENT[11]) = GROUP[1])
+
+# ::id 7_fiction_BIERCE-1891;NE
+# ::snt He lived alone in a house of logs surrounded on all sides by the great forest , of whose gloom and silence he seemed a part , for no one had ever known him to smile nor speak a needless word .
+∃ ATTRIB[2] REF1[1] SITUATION[25] ATTRIB[23] REF3[19] SITUATION[17] REF2[10] ATTRIB[9] EVENT[28] EVENT[3] GROUP[5] ENTITY[4] EVENT[21] EVENT[24] EVENT[20] EVENT[26] ENTITY[15] ENTITY[16] GROUP[14] ENTITY[12] ENTITY[22] ENTITY[11] ENTITY[8] (
+ great(ATTRIB[9]) ∧
+  REF2[10] = he ∧
+   gloom(ENTITY[15]) ∧
+    silence(ENTITY[16]) ∧
+     is_element_of(ENTITY[15], GROUP[14]) ∧ is_element_of(ENTITY[16], GROUP[14]) ∧
+      is_equals(ENTITY[12], GROUP[14]) ∧ is_POS(ENTITY[12], ENTITY[8]) ∧
+       is_part_of(ENTITY[11], ENTITY[12]) ∧
+        REF3[19] = him ∧
+         needless(ATTRIB[23]) ∧
+          is_word_ATTRIBUTE(ENTITY[22], ATTRIB[23]) ∧
+           is_FACT_THAT(SITUATION[17],
+            ¬ ∃ ENTITY[18] (
+                  one(ENTITY[18]) ∧
+                   is_FACT_THAT(SITUATION[25],
+                    had_known(EVENT[20], ENTITY[18], REF3[19],
+                     CONJ_nor(smile(EVENT[21], REF3[19]),
+                      speak(EVENT[24], REF3[19], ENTITY[22])))))) ∧
+            seemed(EVENT[26], REF2[10], ENTITY[11]) ∧ for(EVENT[26]) = SITUATION[17] ∧
+             is_forest_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+             ADV_ever(SITUATION[25]) ∧
+              past(EVENT[20]) ∧
+               past(EVENT[26]) ∧
+                REF1[1] = he ∧
+                 logs(GROUP[5]) ∧
+                  ALL GROUP[7] (sides(GROUP[7]),
+                   ∃ EVENT[27] (surrounded(EVENT[27], ENTITY[8], ENTITY[4]) ∧ on(EVENT[27]) = GROUP[7])) ∧
+                   is_house_of(ENTITY[4], GROUP[5]) ∧
+                   alone(ATTRIB[2]) ∧
+                    past(EVENT[28]) ∧
+                     CONJ_and(lived(EVENT[28], REF1[1]) ∧ in(EVENT[28]) = ENTITY[4],
+                      xxx(EVENT[3], REF1[1], ATTRIB[2])))
+
+# ::id 8_fiction_BIERCE-1891;NE
+# ::snt His simple wants were supplied by the sale or barter of skins of wild animals in the river town , for not a thing did he grow upon the land which , if needful , he might have claimed by right of undisturbed possession .
+∃ ATTRIB[3] REF1[2] REF3[21] ATTRIB[19] SITUATION[18] ATTRIB[10] GROUP[1] EVENT[20] ENTITY[6] ENTITY[7] ENTITY[11] GROUP[9] GROUP[8] GROUP[5] ENTITY[16] ENTITY[4] (
+ sale(ENTITY[6]) ∧
+  barter(ENTITY[7]) ∧
+   CONJ_or(is_element_of(ENTITY[6], GROUP[5]), is_element_of(ENTITY[7], GROUP[5])) ∧
+    wild(ATTRIB[10]) ∧
+     river_town(ENTITY[11]) ∧
+      is_animals_in(GROUP[9], ENTITY[11]) ∧ is_animals_ATTRIBUTE(GROUP[9], ATTRIB[10]) ∧
+       is_skins_of(GROUP[8], GROUP[9]) ∧
+        is_element_of(ENTITY[4], GROUP[8]) ∧ is_equals(ENTITY[4], GROUP[5]) ∧
+         needful(ATTRIB[19]) ∧
+          is_FACT_THAT(SITUATION[18], xxx(EVENT[20], ENTITY[16], ATTRIB[19])) ∧
+           REF3[21] = he ∧
+            MD_might(∃ ATTRIB[24] EVENT[25] ENTITY[23] ENTITY[22] (
+                  undisturbed(ATTRIB[24]) ∧
+                   is_possession_ATTRIBUTE(ENTITY[23], ATTRIB[24]) ∧
+                    is_right_of(ENTITY[22], ENTITY[23]) ∧
+                     have_claimed(EVENT[25], REF3[21], ENTITY[16]) ∧ by(EVENT[25]) = ENTITY[22] ∧
+                      if(EVENT[25]) = SITUATION[18])) ∧ land(ENTITY[16]) ∧
+             REF1[2] = his ∧
+              simple(ATTRIB[3]) ∧
+               is_wants_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_wants_POS(GROUP[1], REF1[2]) ∧
+                NOT REF2[15] EVENT[26] EVENT[14] ENTITY[12] (
+                 (REF2[15] = he ∧
+                  did(EVENT[14], ENTITY[12],
+                   grow(EVENT[26], REF2[15]) ∧ upon(EVENT[26]) = ENTITY[16]) ∧
+                   thing(ENTITY[12]) ∧ past(EVENT[14])),
+                 ∃ EVENT[27] (
+                  past(EVENT[27]) ∧
+                   supplied(EVENT[27], ENTITY[4], GROUP[1]) ∧ for(EVENT[27]) = ENTITY[12])))
+
+# ::id 9_fiction_BIERCE-1891;NE
+# ::snt There were evidences of `` improvement '' --
+∃ EVENT[3] ENTITY[2] GROUP[1] (improvement(ENTITY[2]) ∧ is_evidences_of(GROUP[1], ENTITY[2]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], GROUP[1]))
+
+# ::id 10_fiction_BIERCE-1891;NE
+# ::snt a few acres of ground immediately about the house had once been cleared of its trees , the decayed stumps of which were half concealed by the new growth that had been suffered to repair the ravage wrought by the ax .
+∃ ATTRIB[10] ATTRIB[7] EVENT[16] EVENT[17] EVENT[12] ENTITY[3] ENTITY[15] ENTITY[13] ENTITY[9] GROUP[6] (
+ house(ENTITY[3]) ∧
+  decayed(ATTRIB[7]) ∧
+   is_stumps_of(GROUP[6]) ∧ is_stumps_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+    new(ATTRIB[10]) ∧
+     ax(ENTITY[15]) ∧
+      wrought(EVENT[16], ENTITY[15], ENTITY[13]) ∧ ravage(ENTITY[13]) ∧
+       had_suffered(EVENT[12], _, ENTITY[9], repair(EVENT[17], ENTITY[9], ENTITY[13])) ∧
+        is_growth_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+        past(EVENT[12]) ∧
+         A_FEW ENTITY[2] GROUP[1] ((ground(ENTITY[2]) ∧ is_acres_of(GROUP[1], ENTITY[2]) ∧ is_acres_immediately_about(GROUP[1], ENTITY[3])),
+          ∃ SITUATION[21] REF1[5] EVENT[18] EVENT[20] GROUP[4] (
+           REF1[5] = its ∧
+            concealed(EVENT[18], ENTITY[9], GROUP[6]) ∧ is_trees_POS(GROUP[4], REF1[5]) ∧
+             ADV_once(SITUATION[21]) ∧
+              half(EVENT[18]) ∧
+               past(EVENT[18]) ∧
+                past(EVENT[20]) ∧
+                 is_FACT_THAT(SITUATION[21],
+                  had_cleared(EVENT[20], _, GROUP[1]) ∧ of(EVENT[20]) = GROUP[4]))))
+
+# ::id 11_fiction_BIERCE-1891;NE
+# ::snt Apparently the man 's zeal for agriculture had burned with a failing flame , expiring in penitential ashes .
+∃ SITUATION[10] ATTRIB[7] ATTRIB[5] EVENT[9] EVENT[8] ENTITY[3] GROUP[6] ENTITY[4] ENTITY[1] ENTITY[2] (
+ man(ENTITY[2]) ∧
+  agriculture(ENTITY[3]) ∧
+   is_zeal_for(ENTITY[1], ENTITY[3]) ∧ is_zeal_POS(ENTITY[1], ENTITY[2]) ∧
+    failing(ATTRIB[5]) ∧
+     is_flame_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+      penitential(ATTRIB[7]) ∧
+       is_ashes_ATTRIBUTE(GROUP[6], ATTRIB[7]) ∧
+        ADV_apparently(SITUATION[10]) ∧
+         past(EVENT[9]) ∧
+          is_FACT_THAT(SITUATION[10],
+           CONJ_and(had_burned(EVENT[9], ENTITY[1]) ∧ with(EVENT[9]) = ENTITY[4],
+            expiring(EVENT[8], ENTITY[1]) ∧ in(EVENT[8]) = GROUP[6])))
+
+# ::id 12_fiction_BIERCE-1891;NE
+# ::snt The little log house , with its chimney of sticks , its roof of warping clapboards weighted with traversing poles and its `` chinking '' of clay , had a single door and , directly opposite , a window .
+∃ REF3[15] ATTRIB[12] REF2[8] REF1[5] ATTRIB[2] EVENT[22] GROUP[17] EVENT[13] GROUP[6] ENTITY[4] GROUP[11] GROUP[9] ENTITY[7] ENTITY[16] ENTITY[14] GROUP[3] ENTITY[1] (
+ little(ATTRIB[2]) ∧
+  REF1[5] = its ∧
+   sticks(GROUP[6]) ∧
+    is_chimney_of(ENTITY[4], GROUP[6]) ∧ is_chimney_POS(ENTITY[4], REF1[5]) ∧
+     REF2[8] = its ∧
+      traversing(ATTRIB[12]) ∧
+       is_poles_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+        weighted(EVENT[13], GROUP[9]) ∧ with(EVENT[13]) = GROUP[11] ∧ warping_clapboards(GROUP[9]) ∧
+         is_roof_of(ENTITY[7], GROUP[9]) ∧ is_roof_POS(ENTITY[7], REF2[8]) ∧
+          REF3[15] = its ∧
+           clay(ENTITY[16]) ∧
+            is_chinking_of(ENTITY[14], ENTITY[16]) ∧ is_chinking_POS(ENTITY[14], REF3[15]) ∧
+             is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[7], GROUP[3]) ∧ is_element_of(ENTITY[14], GROUP[3]) ∧
+              is_log_house_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ is_log_house_with(ENTITY[1], GROUP[3]) ∧
+               ∃ ATTRIB[19] ENTITY[18] (single(ATTRIB[19]) ∧ is_door_ATTRIBUTE(ENTITY[18], ATTRIB[19]) ∧ is_element_of(ENTITY[18], GROUP[17])) ∧
+                ∃ ATTRIB[21] ENTITY[20] (directly_opposite(ATTRIB[21]) ∧ is_window_ATTRIBUTE(ENTITY[20], ATTRIB[21]) ∧ is_element_of(ENTITY[20], GROUP[17])) ∧
+                past(EVENT[22]) ∧ had(EVENT[22], ENTITY[1], GROUP[17]))
+
+# ::id 13_fiction_BIERCE-1891;NE
+# ::snt The latter , however , was boarded up --
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ latter(ATTRIB[2]) ∧
+  is_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ ADV_however(EVENT[3]) ∧ past(EVENT[3]) ∧ boarded_up(EVENT[3], _, ENTITY[1]))
+
+# ::id 14_fiction_BIERCE-1891;NE
+# ::snt nobody could remember a time when it was not .
+¬ ∃ ENTITY[1] (
+      body(ENTITY[1]) ∧
+       MD_could(∃ SITUATION[6] REF1[4] EVENT[7] ENTITY[2] (
+             REF1[4] = it ∧
+              is_FACT_THAT(SITUATION[6], ¬ ∃ EVENT[5] (past(EVENT[5]) ∧ copula(EVENT[5], REF1[4]))) ∧
+               time(ENTITY[2]) ∧
+               is_TMP(SITUATION[6], ENTITY[2]) ∧ remember(EVENT[7], ENTITY[1], ENTITY[2]))))
+
+# ::id 15_fiction_BIERCE-1891;NE
+# ::snt And none knew why it was so closed ;
+NONE ENTITY[1] ∃ EVENT[2] (
+ past(EVENT[2]) ∧
+  knew(EVENT[2], ENTITY[1],
+   QUEST(∃ REF1[4] EVENT[5] ? ENTITY[3] (
+         REF1[4] = it ∧
+          is_ADV(EVENT[5], ENTITY[3]) ∧
+           ADV_so(EVENT[5]) ∧ is_before(EVENT[5], EVENT[2]) ∧ closed(EVENT[5], _, REF1[4])))))
+
+# ::id 16_fiction_BIERCE-1891;NE
+# ::snt certainly not because of the occupant 's dislike of light and air , for on those rare occasions when a hunter had passed that lonely spot the recluse had commonly been seen sunning himself on his doorstep if heaven had provided sunshine for his need .
+∃ SITUATION[29] REF1[1] ATTRIB[13] ATTRIB[9] EVENT[14] ENTITY[3] ENTITY[12] ENTITY[11] ENTITY[16] GROUP[8] (
+ occupant(ENTITY[3]) ∧
+  rare(ATTRIB[9]) ∧
+   hunter(ENTITY[11]) ∧
+    lonely(ATTRIB[13]) ∧
+     is_spot_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+      had_passed(EVENT[14], ENTITY[11], ENTITY[12]) ∧ is_occasions_ATTRIBUTE(GROUP[8], ATTRIB[9]) ∧
+       recluse(ENTITY[16]) ∧
+        is_TMP(EVENT[14], GROUP[8]) ∧
+         past(EVENT[14]) ∧
+          REF1[1] = *pro* ∧
+           ADV_certainly(SITUATION[29]) ∧
+            is_FACT_THAT(SITUATION[29],
+             ¬ ∃ REF3[19] REF2[17] SITUATION[7] EVENT[26] EVENT[28] GROUP[4] ENTITY[18] ENTITY[2] (
+                   ∃ ENTITY[5] (light(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+                    ∃ ENTITY[6] (air(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+                    is_dislike_of(ENTITY[2], GROUP[4]) ∧ is_dislike_POS(ENTITY[2], ENTITY[3]) ∧
+                     REF2[17] = himself ∧
+                      REF3[19] = his ∧
+                       is_doorstep_POS(ENTITY[18], REF3[19]) ∧
+                        is_FACT_THAT(SITUATION[7],
+                         CONJ_and(had_seen(EVENT[26], _, ENTITY[16]) ∧ on(EVENT[26]) = GROUP[8],
+                          ∀ REF4[23] EVENT[24] ENTITY[22] ENTITY[21] ENTITY[20] CND_if(
+                              heaven(ENTITY[20]) ∧ sunshine(ENTITY[21]) ∧ REF4[23] = his ∧
+                               is_need_POS(ENTITY[22], REF4[23]) ∧ past(EVENT[24]) ∧
+                               had_provided(EVENT[24], ENTITY[20], ENTITY[21]) ∧ for(EVENT[24]) = ENTITY[22],
+                              ∃ EVENT[25] (
+                               sunning(EVENT[25], ENTITY[16], REF2[17]) ∧
+                                on(EVENT[25]) = ENTITY[18])))) ∧
+                         ADV_commonly(EVENT[26]) ∧
+                          past(EVENT[26]) ∧
+                           xxx(EVENT[28], REF1[1]) ∧ for(EVENT[28]) = SITUATION[7] ∧
+                            because_of(EVENT[28]) = ENTITY[2])))
+
+# ::id 17_fiction_BIERCE-1891;NE
+# ::snt I fancy there are few persons living to-day who ever knew the secret of that window ,
+∃ REF1[1] EVENT[2] ENTITY[9] ENTITY[8] (
+ window(ENTITY[9]) ∧
+  is_secret_of(ENTITY[8], ENTITY[9]) ∧
+   REF1[1] = i ∧
+    fancy(EVENT[2], REF1[1],
+     FEW EVENT[6] EVENT[10] TIME[5] GROUP[3] (
+      (to-day(TIME[5]) ∧
+       living(EVENT[6], GROUP[3]) ∧ is_contained_in(TMP(EVENT[6]), TIME[5]) ∧
+        knew(EVENT[10], GROUP[3], ENTITY[8]) ∧ persons(GROUP[3]) ∧ ADV_ever(EVENT[10]) ∧
+       is_before(EVENT[10], EVENT[2])), ∃ EVENT[12] copula(EVENT[12], GROUP[3]))))
+
+# ::id 18_fiction_BIERCE-1891;NE
+# ::snt but I am one , as you shall see .
+∃ REF2[4] SITUATION[3] REF1[1] EVENT[6] ENTITY[2] (
+ REF1[1] = i ∧
+  CD_one(ENTITY[2]) ∧
+   REF2[4] = you ∧
+    is_FACT_THAT(SITUATION[3], MD_shall(∃ EVENT[5] see(EVENT[5], REF2[4]))) ∧
+     copula(EVENT[6], REF1[1], ENTITY[2]) ∧ as(EVENT[6]) = SITUATION[3])
+
+# ::id 19_fiction_BIERCE-1891;NE
+# ::snt The man 's name was said to be Murlock .
+∃ EVENT[4] EVENT[3] ENTITY[1] ENTITY[2] (
+ man(ENTITY[2]) ∧
+  is_name_POS(ENTITY[1], ENTITY[2]) ∧
+   past(EVENT[3]) ∧ said(EVENT[3], _, ENTITY[1], copula(EVENT[4], ENTITY[1], ENTITY[Murlock])))
+
+# ::id 20_fiction_BIERCE-1891;NE
+# ::snt He was apparently seventy years old , actually about fifty .
+∃ ATTRIB[2] REF1[1] EVENT[4] ENTITY[3] (
+ REF1[1] = he ∧
+  CD_fifty(ENTITY[3]) ∧
+   seventy(ATTRIB[2]) ∧ is_years_old_actually_about(ATTRIB[2], ENTITY[3]) ∧
+    ADV_apparently(EVENT[4]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ATTRIB[2]))
+
+# ::id 21_fiction_BIERCE-1891;NE
+# ::snt Something besides years had had a hand in his aging .
+SOME GROUP[2] ENTITY[1] ((years(GROUP[2]) ∧ is_thing_besides(ENTITY[1], GROUP[2])),
+ ∃ REF1[5] EVENT[6] ENTITY[4] ENTITY[3] (
+  REF1[5] = his ∧
+   is_aging_POS(ENTITY[4], REF1[5]) ∧
+    is_hand_in(ENTITY[3], ENTITY[4]) ∧ past(EVENT[6]) ∧ had_had(EVENT[6], ENTITY[1], ENTITY[3])))
+
+# ::id 22_fiction_BIERCE-1891;NE
+# ::snt His hair and long , full beard were white ,
+∃ ATTRIB[7] EVENT[8] GROUP[1] (
+ ∃ REF1[3] ENTITY[2] (REF1[3] = his ∧ is_hair_POS(ENTITY[2], REF1[3]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ATTRIB[6] ATTRIB[5] ENTITY[4] (
+   long(ATTRIB[5]) ∧
+    full(ATTRIB[6]) ∧
+     is_beard_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_beard_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  white(ATTRIB[7]) ∧ past(EVENT[8]) ∧ copula(EVENT[8], GROUP[1], ATTRIB[7]))
+
+# ::id 23_fiction_BIERCE-1891;NE
+# ::snt his gray , lustreless eyes sunken ,
+∃ ATTRIB[5] ATTRIB[4] ATTRIB[3] REF1[2] EVENT[6] GROUP[1] (
+ REF1[2] = his ∧
+  gray(ATTRIB[3]) ∧
+   lustreless(ATTRIB[4]) ∧
+    is_eyes_ATTRIBUTE(GROUP[1], ATTRIB[4]) ∧ is_eyes_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_eyes_POS(GROUP[1], REF1[2]) ∧
+     sunken(ATTRIB[5]) ∧ past(EVENT[6]) ∧ copula(EVENT[6], GROUP[1], ATTRIB[5]))
+
+# ::id 24_fiction_BIERCE-1891;NE
+# ::snt his face singularly seamed with wrinkles which appeared to belong to two intersecting systems .
+∃ SITUATION[10] ATTRIB[7] REF1[2] EVENT[8] EVENT[5] EVENT[9] GROUP[6] GROUP[3] ENTITY[1] (
+ REF1[2] = his ∧
+  is_face_POS(ENTITY[1], REF1[2]) ∧
+   intersecting(ATTRIB[7]) ∧
+    (CD_two(GROUP[6]), is_systems_ATTRIBUTE(GROUP[6], ATTRIB[7])) ∧
+     appeared(EVENT[5], GROUP[3], belong(EVENT[8], GROUP[3]) ∧ to(EVENT[8]) = GROUP[6]) ∧
+      wrinkles(GROUP[3]) ∧
+      ADV_singularly(SITUATION[10]) ∧
+       past(EVENT[5]) ∧
+        past(EVENT[9]) ∧ is_FACT_THAT(SITUATION[10], seamed(EVENT[9], ENTITY[1]) ∧ with(EVENT[9]) = GROUP[3]))
+
+# ::id 25_fiction_BIERCE-1891;NE
+# ::snt In figure he was tall and spare , with a stoop of the shoulders -- a burden bearer .
+∃ ATTRIB[3] REF1[2] EVENT[7] ENTITY[4] ENTITY[5] ENTITY[1] GROUP[6] (
+ shoulders(GROUP[6]) ∧
+  figure(ENTITY[1]) ∧
+   REF1[2] = he ∧
+    tall_spare(ATTRIB[3]) ∧
+     is_stoop_of(ENTITY[5], GROUP[6]) ∧
+      burden_bearer(ENTITY[4]) ∧
+       is_-ENTITY-_namely(ENTITY[5], ENTITY[4]) ∧
+        past(EVENT[7]) ∧
+         copula(EVENT[7], REF1[2], ATTRIB[3]) ∧ with(EVENT[7]) = ENTITY[5] ∧
+          In(EVENT[7]) = ENTITY[1])
+
+# ::id 26_fiction_BIERCE-1891;NE
+# ::snt I never saw him ;
+∃ REF2[2] REF1[1] EVENT[3] (
+ REF1[1] = i ∧
+  REF2[2] = him ∧ ADV_never(EVENT[3]) ∧ past(EVENT[3]) ∧ saw(EVENT[3], REF1[1], REF2[2]))
+
+# ::id 27_fiction_BIERCE-1891;NE
+# ::snt these particulars I learned from my grandfather , from whom also I got the man 's story when I was a lad .
+∃ SITUATION[15] SITUATION[16] NARRATOR[10] NARRATOR[6] NARRATOR[4] NARRATOR[2] EVENT[12] EVENT[14] EVENT[17] ENTITY[11] ENTITY[7] ENTITY[3] ENTITY[8] GROUP[1] (
+ particulars(GROUP[1]) ∧
+  man(ENTITY[8]) ∧
+   NARRATOR[2] = i ∧
+    NARRATOR[4] = my{NARRATOR[2]} ∧
+     NARRATOR[6] = i{NARRATOR[4], NARRATOR[2]} ∧
+      is_story_POS(ENTITY[7], ENTITY[8]) ∧
+       NARRATOR[10] = i{NARRATOR[6], NARRATOR[4], NARRATOR[2]} ∧
+        lad(ENTITY[11]) ∧
+         is_FACT_THAT(SITUATION[16],
+          is_FACT_THAT(SITUATION[15], got(EVENT[14], NARRATOR[6], ENTITY[7]) ∧ from(EVENT[14]) = ENTITY[3])) ∧
+          is_grandfather_POS(ENTITY[3], NARRATOR[4]) ∧
+          ADV_also(SITUATION[16]) ∧
+           is_TMP(EVENT[12], SITUATION[15]) ∧
+            past(EVENT[12]) ∧
+             copula(EVENT[12], NARRATOR[10], ENTITY[11]) ∧
+              past(EVENT[14]) ∧
+               past(EVENT[17]) ∧ learned(EVENT[17], NARRATOR[2], GROUP[1]) ∧ from(EVENT[17]) = ENTITY[3])
+
+# ::id 28_fiction_BIERCE-1891;NE
+# ::snt He had known him when living near by in that early day .
+∃ SITUATION[10] ATTRIB[4] REF2[2] REF1[1] ATTRIB[6] EVENT[7] EVENT[9] TIME[5] (
+ early(ATTRIB[6]) ∧
+  is_day_ATTRIBUTE(TIME[5], ATTRIB[6]) ∧
+   REF1[1] = he ∧
+    REF2[2] = him ∧
+     near_by(ATTRIB[4]) ∧
+      is_TMP(EVENT[7], SITUATION[10]) ∧
+       living(EVENT[7]) ∧ in(EVENT[7]) = TIME[5] ∧ LOC(EVENT[7]) = ATTRIB[4] ∧
+        past(EVENT[9]) ∧ is_FACT_THAT(SITUATION[10], had_known(EVENT[9], REF1[1], REF2[2])))
+
+# ::id 29_fiction_BIERCE-1891;NE
+# ::snt One day Murlock was found in his cabin , dead .
+∃ ATTRIB[5] REF1[3] EVENT[6] EVENT[4] ENTITY[2] TIME[1] (
+ (CD_one(TIME[1]), day(TIME[1])) ∧
+  REF1[3] = his ∧
+   is_cabin_POS(ENTITY[2], REF1[3]) ∧
+    dead(ATTRIB[5]) ∧
+     past(EVENT[4]) ∧
+      found(EVENT[4], _, ENTITY[Murlock], xxx(EVENT[6], ENTITY[Murlock], ATTRIB[5])) ∧
+       in(EVENT[4]) = ENTITY[2] ∧ is_contained_in(TMP(EVENT[4]), TIME[1]))
+
+# ::id 30_fiction_BIERCE-1891;NE
+# ::snt It was not a time and place for coroners and newspapers ,
+∃ REF1[1] (
+ REF1[1] = it ∧
+  ¬ ∃ EVENT[9] GROUP[6] GROUP[3] ENTITY[2] (
+        ∃ ENTITY[4] (time(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+         ∃ ENTITY[5] (place(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+         ∃ GROUP[7] (coroners(GROUP[7]) ∧ is_subset_of_or_equal_to(GROUP[7], GROUP[6])) ∧
+          ∃ GROUP[8] (newspapers(GROUP[8]) ∧ is_subset_of_or_equal_to(GROUP[8], GROUP[6])) ∧
+          is_for(ENTITY[2], GROUP[6]) ∧ is_equals(ENTITY[2], GROUP[3]) ∧
+           past(EVENT[9]) ∧ copula(EVENT[9], REF1[1], ENTITY[2])))
+
+# ::id 31_fiction_BIERCE-1891;NE
+# ::snt and I suppose it was agreed that he had died from natural causes or I should have been told , and should remember .
+∃ REF3[8] ATTRIB[6] REF2[4] SITUATION[3] REF1[1] EVENT[7] EVENT[10] EVENT[2] GROUP[5] (
+ REF1[1] = i ∧
+  REF2[4] = he ∧
+   natural(ATTRIB[6]) ∧
+    is_causes_ATTRIBUTE(GROUP[5], ATTRIB[6]) ∧
+     REF3[8] = i ∧
+      is_FACT_THAT(SITUATION[3],
+       CONJ_or(had_died(EVENT[7], REF2[4]) ∧ from(EVENT[7]) = GROUP[5],
+        MD_should(∃ EVENT[9] have_told(EVENT[9], _, REF3[8])))) ∧
+       is_before(EVENT[7], EVENT[2]) ∧
+        is_before(EVENT[10], EVENT[2]) ∧
+         CONJ_and(suppose(EVENT[2], REF1[1], agreed(EVENT[10], _, SITUATION[3])),
+          MD_should(∃ EVENT[11] remember(EVENT[11], REF1[1]))))
+
+# ::id 32_fiction_BIERCE-1891;NE
+# ::snt I know only that with what was probably a sense of the fitness of things the body was buried near the cabin , alongside the grave of his wife , who had preceded him by so many years that local tradition had retained hardly a hint of her existence .
+∃ SITUATION[27] ATTRIB[11] REF1[1] REF4[23] ATTRIB[20] REF3[17] REF2[15] EVENT[8] EVENT[26] EVENT[2] ENTITY[5] ENTITY[3] EVENT[24] EVENT[25] GROUP[7] ENTITY[6] ENTITY[12] ENTITY[22] ENTITY[21] ENTITY[19] GROUP[18] ENTITY[14] ENTITY[13] ENTITY[10] (
+ things(GROUP[7]) ∧
+  is_fitness_of(ENTITY[6], GROUP[7]) ∧
+   body(ENTITY[10]) ∧
+    cabin(ENTITY[12]) ∧
+     REF2[15] = his ∧
+      REF3[17] = him ∧
+       local(ATTRIB[20]) ∧
+        is_tradition_ATTRIBUTE(ENTITY[19], ATTRIB[20]) ∧
+         REF4[23] = her ∧
+          is_existence_POS(ENTITY[22], REF4[23]) ∧
+           ADV_hardly(ENTITY[21]) ∧ is_hint_of(ENTITY[21], ENTITY[22]) ∧
+            many(GROUP[18]) ∧ is_ADV_so_THAT(GROUP[18], had_retained(EVENT[24], ENTITY[19], ENTITY[21])) ∧
+             years(GROUP[18]) ∧
+             had_preceded(EVENT[25], ENTITY[14], REF3[17]) ∧ by(EVENT[25]) = GROUP[18] ∧
+              is_wife_POS(ENTITY[14], REF2[15]) ∧
+              is_grave_of(ENTITY[13], ENTITY[14]) ∧
+               is_before(EVENT[24], EVENT[2]) ∧
+                is_before(EVENT[25], EVENT[2]) ∧
+                 REF1[1] = i ∧
+                  is_sense_of(ENTITY[5], ENTITY[6]) ∧
+                   copula(EVENT[8], ENTITY[3], ENTITY[5]) ∧
+                    is_near_comp(ATTRIB[11], ENTITY[12]) ∧
+                     only(SITUATION[27]) ∧
+                      ADV_probably(EVENT[8]) ∧
+                       is_before(EVENT[8], EVENT[2]) ∧
+                        is_before(EVENT[26], EVENT[2]) ∧
+                         is_FACT_THAT(SITUATION[27],
+                          know(EVENT[2], REF1[1],
+                           buried(EVENT[26], _, ENTITY[10]) ∧ alongside(EVENT[26]) = ENTITY[13] ∧
+                            LOC(EVENT[26]) = ATTRIB[11] ∧ with(EVENT[26]) = ENTITY[3])))
+
+# ::id 33_fiction_BIERCE-1891;NE
+# ::snt That closes the final chapter of this true story -- excepting , indeed , the circumstance that many years afterward , in company with an equally intrepid spirit , I penetrated to the place and ventured near enough to the ruined cabin to throw a stone against it , and ran away to avoid the ghost which every well-informed boy thereabout knew haunted the spot .
+∃ SITUATION[31] SITUATION[33] SITUATION[34] REF2[20] PRP[18] ATTRIB[17] ATTRIB[15] REF1[12] ATTRIB[11] ATTRIB[5] ATTRIB[3] EVENT[36] EVENT[35] ENTITY[6] EVENT[14] EVENT[21] EVENT[22] EVENT[30] EVENT[28] EVENT[32] EVENT[23] ENTITY[4] ENTITY[10] ENTITY[13] ENTITY[16] ENTITY[19] ENTITY[29] ENTITY[24] ENTITY[9] ENTITY[7] ENTITY[2] ENTITY[1] (
+ final(ATTRIB[3]) ∧
+  true(ATTRIB[5]) ∧
+   is_story_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    is_chapter_of(ENTITY[2], ENTITY[4]) ∧ is_chapter_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+     equally_intrepid(ATTRIB[11]) ∧
+      is_spirit_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+       is_company_with(ENTITY[9], ENTITY[10]) ∧
+        REF1[12] = i ∧
+         place(ENTITY[13]) ∧
+          ruined(ATTRIB[17]) ∧
+           is_cabin_ATTRIBUTE(ENTITY[16], ATTRIB[17]) ∧
+            enough(ATTRIB[15]) ∧ is_near_to(ATTRIB[15], ENTITY[16]) ∧
+             stone(ENTITY[19]) ∧
+              REF2[20] = it ∧
+               is_FACT_THAT(PRP[18], throw(EVENT[21], REF1[12], ENTITY[19]) ∧ against(EVENT[21]) = REF2[20]) ∧
+                spot(ENTITY[29]) ∧
+                 ∀ ATTRIB[27] ENTITY[26] ((well-informed(ATTRIB[27]) ∧ is_boy_ATTRIBUTE(ENTITY[26], ATTRIB[27])) →
+                  is_FACT_THAT(SITUATION[31], knew(EVENT[28], ENTITY[26], haunted(EVENT[30], ENTITY[24], ENTITY[29])))) ∧
+                  ghost(ENTITY[24]) ∧
+                  is_circumstance_THAT(ENTITY[7],
+                   is_FACT_THAT(SITUATION[34],
+                    CONJ_and(penetrated(EVENT[14], REF1[12]) ∧ to(EVENT[14]) = ENTITY[13] ∧
+                          in(EVENT[14]) = ENTITY[9],
+                     ventured(EVENT[22], REF1[12]) ∧ PRP(EVENT[22]) = PRP[18] ∧
+                      LOC(EVENT[22]) = ATTRIB[15] ∧ in(EVENT[22]) = ENTITY[9],
+                     is_FACT_THAT(SITUATION[33],
+                      ran(EVENT[23], REF1[12], avoid(EVENT[32], REF1[12], ENTITY[24])) ∧
+                       in(EVENT[23]) = ENTITY[9])))) ∧
+                   MANY GROUP[8] (years(GROUP[8]), is_TMP_afterward_of(SITUATION[34], GROUP[8])) ∧
+                    past(EVENT[14]) ∧
+                     past(EVENT[22]) ∧
+                      DIR_away(SITUATION[33]) ∧
+                       LOC_thereabout(SITUATION[31]) ∧
+                        is_before(EVENT[28], EVENT[23]) ∧
+                         past(EVENT[23]) ∧
+                          deed(ENTITY[6]) ∧
+                           CONJ_and(closes(EVENT[36], ENTITY[1], ENTITY[2]),
+                            excepting(EVENT[35], ENTITY[2], ENTITY[7]) ∧ in(EVENT[35]) = ENTITY[6]))
+
+# ::id 34_fiction_BIERCE-1891;NE
+# ::snt But there is an earlier chapter -- that supplied by my grandfather .
+∃ REF1[5] ATTRIB[2] EVENT[6] EVENT[7] ENTITY[4] ENTITY[1] (
+ earlier(ATTRIB[2]) ∧
+  REF1[5] = my ∧
+   is_grandfather_POS(ENTITY[4], REF1[5]) ∧
+    supplied(EVENT[6], ENTITY[1]) ∧ by(EVENT[6]) = ENTITY[4] ∧ is_chapter_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     past(EVENT[6]) ∧ copula(EVENT[7], ENTITY[1]))
+
+# ::id 35_fiction_BIERCE-1891;NE
+# ::snt When Murlock built his cabin and began laying sturdily about with his ax to hew out a farm -- the rifle , meanwhile , his means of support -- he was young , strong and full of hope .
+∃ SITUATION[11] SITUATION[13] SITUATION[20] ATTRIB[17] ATTRIB[16] ATTRIB[15] REF3[14] REF2[7] SITUATION[5] REF1[3] EVENT[4] EVENT[10] EVENT[8] EVENT[12] EVENT[19] EVENT[19] EVENT[19] ENTITY[2] ENTITY[9] ENTITY[6] ENTITY[18] (
+ REF1[3] = his ∧
+  is_cabin_POS(ENTITY[2], REF1[3]) ∧
+   REF2[7] = his ∧
+    is_ax_POS(ENTITY[6], REF2[7]) ∧
+     farm(ENTITY[9]) ∧
+      is_FACT_THAT(SITUATION[5],
+       is_FACT_THAT(SITUATION[11],
+        laying_about(EVENT[8], ENTITY[Murlock], hew_out(EVENT[10], ENTITY[Murlock], ENTITY[9])) ∧
+         with(EVENT[8]) = ENTITY[6])) ∧
+       REF3[14] = he ∧
+        young(ATTRIB[15]) ∧
+         strong(ATTRIB[16]) ∧
+          hope(ENTITY[18]) ∧
+           is_full_of(ATTRIB[17], ENTITY[18]) ∧
+            is_TMP(SITUATION[13], SITUATION[20]) ∧
+             past(EVENT[4]) ∧
+              ADV_sturdily(SITUATION[11]) ∧
+               past(EVENT[12]) ∧
+                is_FACT_THAT(SITUATION[13],
+                 CONJ_and(built(EVENT[4], ENTITY[Murlock], ENTITY[2]), began(EVENT[12], ENTITY[Murlock], SITUATION[5]))) ∧
+                 past(EVENT[19]) ∧
+                  past(EVENT[19]) ∧
+                   past(EVENT[19]) ∧
+                    is_FACT_THAT(SITUATION[20],
+                     CONJ_and(copula(EVENT[19], REF3[14], ATTRIB[15]), copula(EVENT[19], REF3[14], ATTRIB[16]),
+                      copula(EVENT[19], REF3[14], ATTRIB[17]))))
+
+# ::id 36_fiction_BIERCE-1891;NE
+# ::snt In that eastern country whence he came he had married , as was the fashion , a young woman in all ways worthy of his honest devotion , who shared the dangers and privations of his lot with a willing spirit and light heart .
+∃ ATTRIB[12] SITUATION[8] REF2[7] REF4[24] REF1[4] ATTRIB[2] EVENT[10] EVENT[31] ENTITY[11] EVENT[5] ENTITY[9] GROUP[21] GROUP[22] ENTITY[23] GROUP[20] ENTITY[19] ENTITY[1] (
+ eastern(ATTRIB[2]) ∧
+  REF1[4] = he ∧
+   came(EVENT[5], REF1[4]) ∧ is_country_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+    fashion(ENTITY[9]) ∧
+     dangers(GROUP[21]) ∧
+      privations(GROUP[22]) ∧
+       is_subset_of_or_equal_to(GROUP[21], GROUP[20]) ∧ is_subset_of_or_equal_to(GROUP[22], GROUP[20]) ∧
+        REF4[24] = his ∧
+         is_lot_POS(ENTITY[23], REF4[24]) ∧
+          is_of(ENTITY[19], ENTITY[23]) ∧ is_equals(ENTITY[19], GROUP[20]) ∧
+           is_LOC(EVENT[5], ENTITY[1]) ∧
+            past(EVENT[5]) ∧
+             REF2[7] = he ∧
+              is_FACT_THAT(SITUATION[8], copula(EVENT[10], ENTITY[9])) ∧
+               young(ATTRIB[12]) ∧
+                ALL ATTRIB[17] REF3[16] ATTRIB[14] ENTITY[15] GROUP[13] (
+                 (REF3[16] = his ∧ honest(ATTRIB[17]) ∧
+                  is_devotion_ATTRIBUTE(ENTITY[15], ATTRIB[17]) ∧ is_devotion_POS(ENTITY[15], REF3[16]) ∧
+                  is_worthy_of(ATTRIB[14], ENTITY[15]) ∧ is_ways_ATTRIBUTE(GROUP[13], ATTRIB[14])),
+                 ∃ EVENT[30] GROUP[25] (
+                  ∃ ATTRIB[27] ENTITY[26] (
+                   willing(ATTRIB[27]) ∧ is_spirit_ATTRIBUTE(ENTITY[26], ATTRIB[27]) ∧ is_element_of(ENTITY[26], GROUP[25])) ∧
+                   ∃ ATTRIB[29] ENTITY[28] (
+                    light(ATTRIB[29]) ∧
+                     is_heart_ATTRIBUTE(ENTITY[28], ATTRIB[29]) ∧ is_element_of(ENTITY[28], GROUP[25])) ∧
+                   past(EVENT[30]) ∧
+                    shared(EVENT[30], ENTITY[11], ENTITY[19]) ∧ with(EVENT[30]) = GROUP[25] ∧
+                     is_woman_in(ENTITY[11], GROUP[13]) ∧ is_woman_ATTRIBUTE(ENTITY[11], ATTRIB[12]))) ∧
+                 past(EVENT[10]) ∧
+                  past(EVENT[31]) ∧
+                   had_married(EVENT[31], REF2[7], ENTITY[11]) ∧ as(EVENT[31]) = SITUATION[8] ∧
+                    In(EVENT[31]) = ENTITY[1])
+
+# ::id 37_fiction_BIERCE-1891;NE
+# ::snt There is no known record of her name ;
+¬ ∃ REF1[4] ATTRIB[2] EVENT[5] ENTITY[3] ENTITY[1] (
+      known(ATTRIB[2]) ∧
+       REF1[4] = her ∧
+        is_name_POS(ENTITY[3], REF1[4]) ∧
+         is_record_of(ENTITY[1], ENTITY[3]) ∧ is_record_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧ copula(EVENT[5], ENTITY[1]))
+
+# ::id 38_fiction_BIERCE-1891;NE
+# ::snt of her charms of mind and person tradition is silent
+∃ ATTRIB[7] REF1[2] EVENT[8] GROUP[3] ENTITY[6] GROUP[1] (
+ REF1[2] = her ∧
+  ∃ ENTITY[4] (mind(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[5] (person(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+   is_charms_of(GROUP[1], GROUP[3]) ∧ is_charms_POS(GROUP[1], REF1[2]) ∧
+    tradition(ENTITY[6]) ∧
+     silent(ATTRIB[7]) ∧ copula(EVENT[8], ENTITY[6], ATTRIB[7]) ∧ of(EVENT[8]) = GROUP[1])
+
+# ::id 39_fiction_BIERCE-1891;NE
+# ::snt and the doubter is at liberty to entertain his doubt ;
+∃ REF1[4] EVENT[5] EVENT[6] ENTITY[3] ENTITY[2] ENTITY[1] (
+ doubter(ENTITY[1]) ∧
+  REF1[4] = his ∧
+   is_doubt_POS(ENTITY[3], REF1[4]) ∧
+    is_liberty_to(ENTITY[2], entertain(EVENT[5], _, ENTITY[3])) ∧
+     copula(EVENT[6], ENTITY[1]) ∧ at(EVENT[6]) = ENTITY[2])
+
+# ::id 40_fiction_BIERCE-1891;NE
+# ::snt but God forbid that I should share it !
+∃ REF1[2] EVENT[1] (
+ REF1[2] = i ∧
+  past(EVENT[1]) ∧
+   forbid(EVENT[1], ENTITY[God], MD_should(∃ REF2[3] EVENT[4] (REF2[3] = it ∧ share(EVENT[4], REF1[2], REF2[3])))))
+
+# ::id 41_fiction_BIERCE-1891;NE
+# ::snt Of their affection and happiness there is abundant assurance in every added day of the man 's widowed life ;
+∃ ATTRIB[7] REF1[2] EVENT[13] GROUP[3] ENTITY[6] ENTITY[1] ENTITY[11] (
+ man(ENTITY[11]) ∧
+  REF1[2] = their ∧
+   ∃ ENTITY[4] (affection(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (happiness(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    is_POS(ENTITY[1], REF1[2]) ∧ is_equals(ENTITY[1], GROUP[3]) ∧
+     abundant(ATTRIB[7]) ∧
+      ∀ ATTRIB[12] ATTRIB[9] ENTITY[10] ENTITY[8] (
+       (added(ATTRIB[9]) ∧ widowed(ATTRIB[12]) ∧
+        is_life_ATTRIBUTE(ENTITY[10], ATTRIB[12]) ∧ is_life_POS(ENTITY[10], ENTITY[11]) ∧
+        is_day_of(ENTITY[8], ENTITY[10]) ∧ is_day_ATTRIBUTE(ENTITY[8], ATTRIB[9])) →
+       (is_assurance_in(ENTITY[6], ENTITY[8]) ∧ is_assurance_ATTRIBUTE(ENTITY[6], ATTRIB[7]))) ∧
+       copula(EVENT[13], ENTITY[6]) ∧ Of(EVENT[13]) = ENTITY[1])
+
+# ::id 42_fiction_BIERCE-1891;NE
+# ::snt for what but the magnetism of a blessed memory could have chained that venturesome spirit to a lot like that ?
+∃ ATTRIB[4] ENTITY[3] (
+ blessed(ATTRIB[4]) ∧
+  is_memory_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+   QUEST(? ENTITY[2] (
+         is_magnetism_of(ENTITY[2], ENTITY[3]) ∧
+          BUT ENTITY[1] (is_of(ENTITY[1], ENTITY[2]),
+           ∃ ATTRIB[6] ENTITY[9] ENTITY[5] (
+            venturesome(ATTRIB[6]) ∧
+             is_spirit_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+              MD_could(∃ ATTRIB[8] EVENT[10] ENTITY[7] (
+                    is_like_comp(ATTRIB[8], ENTITY[9]) ∧
+                     is_lot_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+                      have_chained(EVENT[10], _, ENTITY[5]) ∧ to(EVENT[10]) = ENTITY[7] ∧
+                       for(EVENT[10]) = ENTITY[1])))))))
+
+# ::id 43_fiction_BIERCE-1891;NE
+# ::snt One day Murlock returned from gunning in a distant part of the forest to find his wife prostrate with fever , and delirious .
+∃ ATTRIB[13] ATTRIB[11] REF1[10] ATTRIB[4] SITUATION[2] EVENT[6] EVENT[14] EVENT[14] EVENT[8] EVENT[7] ENTITY[3] ENTITY[12] ENTITY[9] TIME[1] ENTITY[5] (
+ forest(ENTITY[5]) ∧
+  (CD_one(TIME[1]), day(TIME[1])) ∧
+   distant(ATTRIB[4]) ∧
+    is_part_of(ENTITY[3], ENTITY[5]) ∧ is_part_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+     is_FACT_THAT(SITUATION[2], gunning(EVENT[6], ENTITY[Murlock]) ∧ in(EVENT[6]) = ENTITY[3]) ∧
+      REF1[10] = his ∧
+       is_wife_POS(ENTITY[9], REF1[10]) ∧
+        fever(ENTITY[12]) ∧
+         is_prostrate_with(ATTRIB[11], ENTITY[12]) ∧
+          delirious(ATTRIB[13]) ∧
+           past(EVENT[7]) ∧
+            returned(EVENT[7], ENTITY[Murlock],
+             find(EVENT[8], ENTITY[Murlock],
+              CONJ_and(xxx(EVENT[14], ENTITY[9], ATTRIB[11]), xxx(EVENT[14], ENTITY[9], ATTRIB[13])))) ∧
+             from(EVENT[7]) = SITUATION[2] ∧ is_contained_in(TMP(EVENT[7]), TIME[1]))
+
+# ::id 44_fiction_BIERCE-1891;NE
+# ::snt There was no physician within miles ,
+∃ EVENT[4] ENTITY[1] (
+ ¬ ∃ GROUP[3] ENTITY[2] (
+       physician(ENTITY[2]) ∧
+        miles(GROUP[3]) ∧ is_within(ENTITY[1], GROUP[3]) ∧ is_LINK(ENTITY[1], ENTITY[2])) ∧
+  past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1]))
+
+# ::id 45_fiction_BIERCE-1891;NE
+# ::snt no neighbor ;
+¬ ∃ EVENT[2] ENTITY[1] (neighbor(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 46_fiction_BIERCE-1891;NE
+# ::snt nor was she in a condition to be left , to summon help .
+∃ PRP[3] REF1[1] EVENT[5] EVENT[6] EVENT[7] ENTITY[4] ENTITY[2] (
+ REF1[1] = she ∧
+  help(ENTITY[4]) ∧
+   is_FACT_THAT(PRP[3], summon(EVENT[5], _, ENTITY[4])) ∧
+    is_condition_to(ENTITY[2], be_left(EVENT[6]) ∧ PRP(EVENT[6]) = PRP[3]) ∧
+     past(EVENT[7]) ∧ copula(EVENT[7], REF1[1]) ∧ in(EVENT[7]) = ENTITY[2])
+
+# ::id 47_fiction_BIERCE-1891;NE
+# ::snt So he set about the task of nursing her back to health ,
+∃ REF1[1] REF2[4] SITUATION[3] EVENT[8] EVENT[6] ENTITY[5] ENTITY[2] (
+ REF2[4] = her ∧
+  health(ENTITY[5]) ∧
+   is_FACT_THAT(SITUATION[3], nursing(EVENT[6], _, REF2[4])) ∧
+    is_task_of(ENTITY[2], SITUATION[3]) ∧
+     is_ADV_back_to(EVENT[6], ENTITY[5]) ∧
+      REF1[1] = he ∧ past(EVENT[8]) ∧ set(EVENT[8], REF1[1]) ∧ about(EVENT[8]) = ENTITY[2])
+
+# ::id 48_fiction_BIERCE-1891;NE
+# ::snt but at the end of the third day she fell into unconsciousness and so passed away , apparently , with never a gleam of returning reason .
+∃ ATTRIB[8] REF1[3] EVENT[5] EVENT[9] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[2] ENTITY[1] (
+ (CD_third(ENTITY[2]), day(ENTITY[2])) ∧
+  is_end_of(ENTITY[1], ENTITY[2]) ∧
+   REF1[3] = she ∧
+    unconsciousness(ENTITY[4]) ∧
+     returning(ATTRIB[8]) ∧
+      is_reason_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+       is_gleam_of(ENTITY[6], ENTITY[7]) ∧
+        past(EVENT[5]) ∧
+         ADV_so(EVENT[9]) ∧
+          DIR_away(EVENT[9]) ∧
+           ADV_apparently(EVENT[9]) ∧
+            past(EVENT[9]) ∧
+             CONJ_and(fell(EVENT[5], REF1[3]) ∧ into(EVENT[5]) = ENTITY[4] ∧
+                   at(EVENT[5]) = ENTITY[1],
+              passed(EVENT[9], REF1[3]) ∧ with_never(EVENT[9]) = ENTITY[6] ∧
+               at(EVENT[9]) = ENTITY[1]))
+
+# ::id 49_fiction_BIERCE-1891;NE
+# ::snt From what we know of a nature like his we may venture to sketch in some of the details of the outline picture drawn by my grandfather .
+∃ REF3[9] SITUATION[1] REF4[16] EVENT[17] ENTITY[15] ENTITY[13] GROUP[12] (
+ REF4[16] = my ∧
+  is_grandfather_POS(ENTITY[15], REF4[16]) ∧
+   drawn(EVENT[17], ENTITY[15], ENTITY[13]) ∧ outline_picture(ENTITY[13]) ∧
+    is_details_of(GROUP[12], ENTITY[13]) ∧
+     is_FACT_THAT(SITUATION[1],
+      QUEST(∃ REF2[7] ATTRIB[5] REF1[3] EVENT[8] ENTITY[6] ENTITY[4] ? ENTITY[2] (
+            REF1[3] = we ∧
+             REF2[7] = his ∧
+              is_POS(ENTITY[6], REF2[7]) ∧
+               is_like_comp(ATTRIB[5], ENTITY[6]) ∧
+                is_nature_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+                 know(EVENT[8], REF1[3], ENTITY[2]) ∧ of(EVENT[8]) = ENTITY[4]))) ∧
+      REF3[9] = we ∧
+       MD_may(∃ EVENT[10] (
+             venture(EVENT[10], REF3[9],
+              SOME ENTITY[11] (is_element_of(ENTITY[11], GROUP[12]), ∃ EVENT[18] sketch_in(EVENT[18], REF3[9], ENTITY[11]))) ∧
+              From(EVENT[10]) = SITUATION[1])))
+
+# ::id 50_fiction_BIERCE-1891;NE
+# ::snt When convinced that she was dead , Murlock had sense enough to remember that the dead must be prepared for burial .
+∃ ATTRIB[3] REF1[2] EVENT[4] EVENT[1] EVENT[6] EVENT[10] ENTITY[5] ENTITY[7] (
+ dead(ENTITY[7]) ∧
+  REF1[2] = she ∧
+   dead(ATTRIB[3]) ∧
+    ADV_enough(ENTITY[5]) ∧
+     is_sense_to(ENTITY[5],
+      remember(EVENT[6],
+       MD_must(∃ EVENT[9] ENTITY[8] (
+             burial(ENTITY[8]) ∧
+              prepared(EVENT[9], _, ENTITY[7]) ∧ for(EVENT[9]) = ENTITY[8])))) ∧
+     is_before(EVENT[4], EVENT[1]) ∧
+      past(EVENT[10]) ∧
+       CRD_When(convinced(EVENT[1], ENTITY[Murlock], copula(EVENT[4], REF1[2], ATTRIB[3])),
+        had(EVENT[10], ENTITY[Murlock], ENTITY[5])))
+
+# ::id 51_fiction_BIERCE-1891;NE
+# ::snt In performance of this sacred duty he blundered now and again , did certain things incorrectly ,
+∃ ATTRIB[8] REF1[4] ATTRIB[3] EVENT[5] EVENT[9] GROUP[7] ENTITY[1] ENTITY[2] (
+ sacred(ATTRIB[3]) ∧
+  is_duty_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+   is_performance_of(ENTITY[1], ENTITY[2]) ∧
+    REF1[4] = he ∧
+     certain(ATTRIB[8]) ∧
+      is_things_ATTRIBUTE(GROUP[7], ATTRIB[8]) ∧
+       CONJ_and(ADV_now(EVENT[5]), ADV_again(EVENT[5])) ∧
+        past(EVENT[5]) ∧
+         ADV_incorrectly(EVENT[9]) ∧
+          past(EVENT[9]) ∧
+           blundered(EVENT[5], REF1[4]) ∧ In(EVENT[5]) = ENTITY[1] ∧
+            did(EVENT[9], REF1[4], GROUP[7]) ∧ In(EVENT[9]) = ENTITY[1])
+
+# ::id 52_fiction_BIERCE-1891;NE
+# ::snt and others which he did correctly were done over and over .
+∃ REF1[3] EVENT[4] EVENT[6] GROUP[1] (
+ REF1[3] = he ∧
+  did(EVENT[4], REF1[3], GROUP[1]) ∧ others(GROUP[1]) ∧
+   ADV_correctly(EVENT[4]) ∧
+    past(EVENT[4]) ∧
+     CONJ_and(ADV_over(EVENT[6]), ADV_over(EVENT[6])) ∧
+      past(EVENT[6]) ∧ done(EVENT[6], _, GROUP[1]))
+
+# ::id 53_fiction_BIERCE-1891;NE
+# ::snt His occasional failures to accomplish some simple and ordinary act filled him with astonishment , like that of a drunken man who wonders at the suspension of familiar natural laws .
+∃ ATTRIB[10] REF2[8] ATTRIB[3] REF1[2] ATTRIB[18] ATTRIB[17] ATTRIB[13] EVENT[21] EVENT[20] ENTITY[9] GROUP[1] EVENT[19] GROUP[16] ENTITY[15] ENTITY[12] ENTITY[11] (
+ drunken(ATTRIB[13]) ∧
+  familiar(ATTRIB[17]) ∧
+   natural(ATTRIB[18]) ∧
+    is_laws_ATTRIBUTE(GROUP[16], ATTRIB[18]) ∧ is_laws_ATTRIBUTE(GROUP[16], ATTRIB[17]) ∧
+     is_suspension_of(ENTITY[15], GROUP[16]) ∧
+      wonders(EVENT[19], ENTITY[12]) ∧ at(EVENT[19]) = ENTITY[15] ∧ is_man_ATTRIBUTE(ENTITY[12], ATTRIB[13]) ∧
+       is_of(ENTITY[11], ENTITY[12]) ∧
+        REF1[2] = his ∧
+         occasional(ATTRIB[3]) ∧
+          is_failures_ATTRIBUTE(GROUP[1], ATTRIB[3]) ∧ is_failures_POS(GROUP[1], REF1[2]) ∧
+           is_failures_to(GROUP[1],
+            SOME ATTRIB[6] ATTRIB[5] ENTITY[4] (
+             (simple(ATTRIB[5]) ∧ ordinary(ATTRIB[6]) ∧
+              CONJ_and(is_act_ATTRIBUTE(ENTITY[4], ATTRIB[5]), is_act_ATTRIBUTE(ENTITY[4], ATTRIB[6]))),
+             ∃ EVENT[7] accomplish(EVENT[7], _, ENTITY[4]))) ∧
+           REF2[8] = him ∧
+            astonishment(ENTITY[9]) ∧
+             is_like_comp(ATTRIB[10], ENTITY[11]) ∧
+              past(EVENT[21]) ∧
+               CONJ_and(filled(EVENT[21], GROUP[1], REF2[8]) ∧ with(EVENT[21]) = ENTITY[9],
+                xxx(EVENT[20], REF2[8]) ∧ ATTRIBUTE(EVENT[20]) = ATTRIB[10]))
+
+# ::id 54_fiction_BIERCE-1891;NE
+# ::snt He was surprised , too , that he did not weep -- surprised and a little ashamed ;
+∃ ATTRIB[8] REF2[3] REF1[1] EVENT[2] EVENT[6] EVENT[9] DEGREE[7] (
+ REF1[1] = he ∧
+  REF2[3] = he ∧
+   little(ATTRIB[8]) ∧
+    is_ATTRIBUTE(DEGREE[7], ATTRIB[8]) ∧
+     ADV_too(EVENT[2]) ∧
+      past(EVENT[2]) ∧
+       surprised(EVENT[2], _, REF1[1],
+        ¬ ∃ EVENT[4] (is_before(EVENT[4], EVENT[2]) ∧ did_weep(EVENT[4], REF2[3]))) ∧
+        CONJ_and(surprised(EVENT[6], _, REF1[1]),
+         ashamed(EVENT[9], _, REF1[1]) ∧ MSR(EVENT[9]) = DEGREE[7]))
+
+# ::id 55_fiction_BIERCE-1891;NE
+# ::snt surely it is unkind not to weep for the dead .
+∃ ATTRIB[2] REF1[1] EVENT[3] ENTITY[4] (
+ dead(ENTITY[4]) ∧
+  REF1[1] = it ∧
+   unkind(ATTRIB[2]) ∧
+    ADV_surely(EVENT[3]) ∧
+     copula(EVENT[3], REF1[1], ATTRIB[2],
+      ¬ ∃ EVENT[5] (xxx(EVENT[5], REF1[1]) ∧ for(EVENT[5]) = ENTITY[4])))
+
+# ::id 56_fiction_BIERCE-1891;NE
+# ::snt `` To-morrow , '' he said aloud ,
+∃ SITUATION[5] REF1[1] EVENT[4] EVENT[2] TIME[3] (
+ REF1[1] = he ∧
+  To-morrow(TIME[3]) ∧
+   ADV_aloud(SITUATION[5]) ∧
+    past(EVENT[2]) ∧
+     is_FACT_THAT(SITUATION[5], said(EVENT[2], REF1[1], xxx(EVENT[4]) ∧ is_contained_in(TMP(EVENT[4]), TIME[3]))))
+
+# ::id 57_fiction_BIERCE-1891;NE
+# ::snt `` I shall have to make the coffin and dig the grave ;
+∃ REF1[1] ENTITY[3] ENTITY[5] (
+ coffin(ENTITY[3]) ∧
+  grave(ENTITY[5]) ∧
+   REF1[1] = i ∧
+    MD_shall(∃ EVENT[4] EVENT[6] EVENT[2] have(EVENT[2], REF1[1],
+          CONJ_and(make(EVENT[4], REF1[1], ENTITY[3]), dig(EVENT[6], REF1[1], ENTITY[5])))))
+
+# ::id 58_fiction_BIERCE-1891;NE
+# ::snt and then I shall miss her , when she is no longer in sight ;
+∃ SITUATION[10] REF3[4] REF2[2] REF1[1] EVENT[6] ENTITY[5] (
+ REF1[1] = i ∧
+  REF2[2] = her ∧
+   REF3[4] = she ∧
+    sight(ENTITY[5]) ∧
+     ADV_then(EVENT[6]) ∧
+      is_TMP(EVENT[6], SITUATION[10]) ∧
+       TMP_no_longer(EVENT[6]) ∧
+        copula(EVENT[6], REF3[4]) ∧ in(EVENT[6]) = ENTITY[5] ∧
+         is_FACT_THAT(SITUATION[10], MD_shall(∃ EVENT[9] miss(EVENT[9], REF1[1], REF2[2]))))
+
+# ::id 59_fiction_BIERCE-1891;NE
+# ::snt but now -- she is dead , of course ,
+∃ ATTRIB[2] REF1[1] EVENT[4] ENTITY[3] (
+ REF1[1] = she ∧
+  dead(ATTRIB[2]) ∧
+   course(ENTITY[3]) ∧
+    ADV_now(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ATTRIB[2]) ∧ of(EVENT[4]) = ENTITY[3])
+
+# ::id 60_fiction_BIERCE-1891;NE
+# ::snt but it is all right --
+∃ ATTRIB[2] REF1[1] EVENT[3] (REF1[1] = it ∧ all_right(ATTRIB[2]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2]))
+
+# ::id 61_fiction_BIERCE-1891;NE
+# ::snt it _must_ be all right , somehow .
+∃ REF1[1] (
+ REF1[1] = it ∧
+  MD__must(∃ ATTRIB[2] EVENT[3] (all_right(ATTRIB[2]) ∧ ADV_somehow(EVENT[3]) ∧ copula(EVENT[3], REF1[1], ATTRIB[2]))))
+
+# ::id 62_fiction_BIERCE-1891;NE
+# ::snt Things can not be so bad as they seem . ''
+∃ GROUP[1] (
+ Things(GROUP[1]) ∧
+  MD_can(¬ ∃ REF1[5] ATTRIB[2] EVENT[6] EVENT[7] DEGREE[3] (
+             REF1[5] = they ∧
+              seem(EVENT[6], REF1[5], DEGREE[3]) ∧
+               is_so_bad_as(ATTRIB[2], DEGREE[3]) ∧ copula(EVENT[7], GROUP[1], ATTRIB[2]))))
+
+# ::id 63_fiction_BIERCE-1891;NE
+# ::snt He stood over the body in the fading light , adjusting the hair and putting the finishing touches to the simple toilet , doing all mechanically , with soulless care .
+∃ REF1[1] ATTRIB[15] ATTRIB[13] ATTRIB[4] EVENT[17] EVENT[11] EVENT[16] ENTITY[10] ENTITY[14] GROUP[12] ENTITY[3] ENTITY[2] (
+ body(ENTITY[2]) ∧
+  fading(ATTRIB[4]) ∧
+   is_light_ATTRIBUTE(ENTITY[3], ATTRIB[4]) ∧
+    hair(ENTITY[10]) ∧
+     finishing(ATTRIB[13]) ∧
+      simple(ATTRIB[15]) ∧
+       is_toilet_ATTRIBUTE(ENTITY[14], ATTRIB[15]) ∧
+        is_touches_to(GROUP[12], ENTITY[14]) ∧ is_touches_ATTRIBUTE(GROUP[12], ATTRIB[13]) ∧
+         REF1[1] = he ∧
+          past(EVENT[17]) ∧
+           CONJ_and(stood(EVENT[17], REF1[1]) ∧ in(EVENT[17]) = ENTITY[3] ∧
+                 over(EVENT[17]) = ENTITY[2],
+            CONJ_and(CONJ_and(adjusting(EVENT[11], REF1[1], ENTITY[10]), putting(EVENT[16], REF1[1], GROUP[12])),
+             ALL ENTITY[5] ∃ ATTRIB[7] EVENT[8] ENTITY[6] (
+              soulless(ATTRIB[7]) ∧
+               is_care_ATTRIBUTE(ENTITY[6], ATTRIB[7]) ∧
+                ADV_mechanically(EVENT[8]) ∧
+                 doing(EVENT[8], REF1[1], ENTITY[5]) ∧ with(EVENT[8]) = ENTITY[6]))))
+
+# ::id 64_fiction_BIERCE-1891;NE
+# ::snt And still through his consciousness ran an undersense of conviction that all was right -- that he should have her again as before , and everything explained .
+∃ REF2[8] REF1[2] EVENT[15] ENTITY[4] ENTITY[3] ENTITY[1] (
+ REF1[2] = his ∧
+  is_consciousness_POS(ENTITY[1], REF1[2]) ∧
+   REF2[8] = he ∧
+    is_conviction_THAT(ENTITY[4],
+     ALL ENTITY[5] ∃ ATTRIB[6] EVENT[7] (right(ATTRIB[6]) ∧ past(EVENT[7]) ∧ copula(EVENT[7], ENTITY[5], ATTRIB[6])) ∧
+      CONJ_and(MD_should(∃ REF3[9] EVENT[10] (
+                 REF3[9] = her ∧
+                  ADV_again(EVENT[10]) ∧ ADV_as_before(EVENT[10]) ∧ have(EVENT[10], REF2[8], REF3[9]))),
+       ∀ ENTITY[13] (thing(ENTITY[13]) → ∃ EVENT[14] explained(EVENT[14], _, ENTITY[13])))) ∧
+     is_undersense_of(ENTITY[3], ENTITY[4]) ∧
+      ADV_still(EVENT[15]) ∧ past(EVENT[15]) ∧ ran(EVENT[15], ENTITY[3]) ∧ through(EVENT[15]) = ENTITY[1])
+
+# ::id 65_fiction_BIERCE-1891;NE
+# ::snt He had had no experience in grief ;
+∃ REF1[1] (
+ REF1[1] = he ∧
+  ¬ ∃ EVENT[4] ENTITY[3] ENTITY[2] (
+        grief(ENTITY[3]) ∧
+         is_experience_in(ENTITY[2], ENTITY[3]) ∧ past(EVENT[4]) ∧ had_had(EVENT[4], REF1[1], ENTITY[2])))
+
+# ::id 66_fiction_BIERCE-1891;NE
+# ::snt his capacity had not been enlarged by use .
+∃ REF1[2] ENTITY[1] (
+ REF1[2] = his ∧
+  is_capacity_POS(ENTITY[1], REF1[2]) ∧
+   ¬ ∃ EVENT[4] ENTITY[3] (use(ENTITY[3]) ∧ past(EVENT[4]) ∧ had_enlarged(EVENT[4], ENTITY[3], ENTITY[1])))
+
+# ::id 67_fiction_BIERCE-1891;NE
+# ::snt His heart could not contain it all , nor his imagination rightly conceive it .
+∃ group[8] REF2[7] REF1[2] EVENT[9] ENTITY[1] ENTITY[6] (
+ REF1[2] = his ∧
+  is_heart_POS(ENTITY[1], REF1[2]) ∧
+   REF2[7] = his ∧
+    is_imagination_POS(ENTITY[6], REF2[7]) ∧
+     group[8] = it ∧
+      ADV_rightly(EVENT[9]) ∧
+       CONJ_nor(MD_could(¬ ∃ group[3] EVENT[5] (
+                       group[3] = it ∧
+                        ALL ENTITY[4] (is_of(ENTITY[4], group[3]), contain(EVENT[5], ENTITY[1], ENTITY[4])))),
+        conceive(EVENT[9], ENTITY[6], group[8])))
+
+# ::id 68_fiction_BIERCE-1891;NE
+# ::snt He did not know he was so hard struck ;
+∃ REF1[1] (
+ REF1[1] = he ∧
+  ¬ ∃ REF2[3] EVENT[4] EVENT[2] (
+        REF2[3] = he ∧
+         ADV_so_hard(EVENT[4]) ∧
+          is_before(EVENT[4], EVENT[2]) ∧
+           past(EVENT[2]) ∧ did_know(EVENT[2], REF1[1], was_struck(EVENT[4], REF2[3]))))
+
+# ::id 69_fiction_BIERCE-1891;NE
+# ::snt _that_ knowledge would come later , and never go .
+∃ EVENT[4] ENTITY[1] (
+ knowledge(ENTITY[1]) ∧
+  ADV_never(EVENT[4]) ∧
+   CONJ_and(MD_would(∃ TIME[2] EVENT[3] (
+              later(TIME[2]) ∧
+               come(EVENT[3], ENTITY[1]) ∧ is_contained_in(TMP(EVENT[3]), TIME[2]))),
+    go(EVENT[4], ENTITY[1])))
+
+# ::id 70_fiction_BIERCE-1891;NE
+# ::snt Grief is an artist of powers as various as the instruments upon which he plays his dirges for the dead , evoking from some the sharpest , shrillest notes , from others the low , grave chords that throb recurrent like the slow beating of a distant drum .
+∃ ATTRIB[4] ATTRIB[22] ATTRIB[28] ATTRIB[26] ATTRIB[24] ATTRIB[20] ATTRIB[19] ATTRIB[15] ATTRIB[14] REF2[9] REF1[7] EVENT[32] EVENT[31] GROUP[3] GROUP[17] ENTITY[2] ENTITY[1] EVENT[11] EVENT[30] EVENT[29] EVENT[23] ENTITY[10] GROUP[8] GROUP[5] GROUP[13] ENTITY[27] ENTITY[25] GROUP[18] (
+ REF1[7] = he ∧
+  REF2[9] = his ∧
+   is_dirges_POS(GROUP[8], REF2[9]) ∧
+    dead(ENTITY[10]) ∧
+     plays(EVENT[11], REF1[7], GROUP[8]) ∧ for(EVENT[11]) = ENTITY[10] ∧ upon(EVENT[11]) = GROUP[5] ∧
+      instruments(GROUP[5]) ∧
+      sharpest(ATTRIB[14]) ∧
+       shrillest(ATTRIB[15]) ∧
+        is_notes_ATTRIBUTE(GROUP[13], ATTRIB[15]) ∧ is_notes_ATTRIBUTE(GROUP[13], ATTRIB[14]) ∧
+         low(ATTRIB[19]) ∧
+          grave(ATTRIB[20]) ∧
+           slow(ATTRIB[26]) ∧
+            distant(ATTRIB[28]) ∧
+             is_drum_ATTRIBUTE(ENTITY[27], ATTRIB[28]) ∧
+              is_beating_of(ENTITY[25], ENTITY[27]) ∧ is_beating_ATTRIBUTE(ENTITY[25], ATTRIB[26]) ∧
+               is_like_comp(ATTRIB[24], ENTITY[25]) ∧
+                recurrent(ATTRIB[22]) ∧
+                 CONJ_and(CONJ_and(throb(EVENT[30], GROUP[18]),
+                       xxx(EVENT[29], GROUP[18]) ∧ ATTRIBUTE(EVENT[29]) = ATTRIB[24]),
+                  xxx(EVENT[23], GROUP[18], ATTRIB[22])) ∧
+                  is_chords_ATTRIBUTE(GROUP[18], ATTRIB[20]) ∧ is_chords_ATTRIBUTE(GROUP[18], ATTRIB[19]) ∧
+                  Grief(ENTITY[1]) ∧
+                   is_as_various_as(ATTRIB[4], GROUP[5]) ∧
+                    is_powers_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+                     is_artist_of(ENTITY[2], GROUP[3]) ∧
+                      others(GROUP[17]) ∧
+                       CONJ_and(copula(EVENT[32], ENTITY[1], ENTITY[2]),
+                        SOME ENTITY[12] ∃ EVENT[16] (evoking(EVENT[16], ENTITY[2], GROUP[13]) ∧ from(EVENT[16]) = ENTITY[12]) ∧
+                         evoking(EVENT[31], ENTITY[2], GROUP[18]) ∧ from(EVENT[31]) = GROUP[17]))
+
+# ::id 71_fiction_BIERCE-1891;NE
+# ::snt Some natures it startles ;
+SOME GROUP[1] (natures(GROUP[1]), ∃ REF1[2] EVENT[3] (REF1[2] = it ∧ startles(EVENT[3], REF1[2], GROUP[1])))
+
+# ::id 72_fiction_BIERCE-1891;NE
+# ::snt some it stupefies .
+SOME ENTITY[1] ∃ REF1[2] EVENT[3] (REF1[2] = it ∧ stupefies(EVENT[3], REF1[2], ENTITY[1]))
+
+# ::id 73_fiction_BIERCE-1891;NE
+# ::snt To one it comes like the stroke of an arrow , stinging all the sensibilities to a keener life ;
+∃ ATTRIB[3] REF1[2] ATTRIB[9] EVENT[11] ENTITY[1] EVENT[10] ENTITY[8] ENTITY[5] ENTITY[4] (
+ keener(ATTRIB[9]) ∧
+  is_life_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+   ALL GROUP[7] (sensibilities(GROUP[7]), stinging(EVENT[10], ENTITY[5], GROUP[7]) ∧ to(EVENT[10]) = ENTITY[8]) ∧
+    arrow(ENTITY[5]) ∧
+    is_stroke_of(ENTITY[4], ENTITY[5]) ∧
+     CD_one(ENTITY[1]) ∧
+      REF1[2] = it ∧
+       is_like_comp(ATTRIB[3], ENTITY[4]) ∧ comes(EVENT[11], REF1[2], ATTRIB[3]) ∧ To(EVENT[11]) = ENTITY[1])
+
+# ::id 74_fiction_BIERCE-1891;NE
+# ::snt to another as the blow of a bludgeon , which in crushing benumbs .
+∃ SITUATION[5] EVENT[6] EVENT[7] ENTITY[3] ENTITY[2] (
+ bludgeon(ENTITY[3]) ∧
+  is_FACT_THAT(SITUATION[5], crushing(EVENT[6])) ∧
+   benumbs(EVENT[7]) ∧ in(EVENT[7]) = SITUATION[5] ∧ is_blow_of(ENTITY[2], ENTITY[3]) ∧
+    ANOTHER ENTITY[1] ∃ EVENT[8] (xxx(EVENT[8]) ∧ as(EVENT[8]) = ENTITY[2] ∧ to(EVENT[8]) = ENTITY[1]))
+
+# ::id 75_fiction_BIERCE-1891;NE
+# ::snt We may conceive Murlock to have been that way affected , for -LRB- and here we are upon surer ground than that of conjecture -RRB- no sooner had he finished his pious work than , sinking into a chair by the side of the table upon which the body lay , and noting how white the profile showed in the deepening gloom , he laid his arms upon the table 's edge , and dropped his face into them , tearless yet and unutterably weary .
+∃ REF1[1] ATTRIB[16] EVENT[10] EVENT[40] ENTITY[9] ENTITY[7] ENTITY[6] ENTITY[15] ENTITY[14] ENTITY[22] ENTITY[38] (
+ body(ENTITY[9]) ∧
+  lay(EVENT[10], ENTITY[9]) ∧ upon(EVENT[10]) = ENTITY[7] ∧ table(ENTITY[7]) ∧
+   is_side_of(ENTITY[6], ENTITY[7]) ∧
+    profile(ENTITY[14]) ∧
+     deepening(ATTRIB[16]) ∧
+      is_gloom_ATTRIBUTE(ENTITY[15], ATTRIB[16]) ∧
+       table(ENTITY[22]) ∧
+        affected(EVENT[40], _, ENTITY[38]) ∧ way(ENTITY[38]) ∧
+         past(EVENT[10]) ∧
+          REF1[1] = we ∧
+           MD_may(∃ SITUATION[36] ATTRIB[34] REF4[33] REF3[31] ATTRIB[28] ATTRIB[27] REF8[26] REF7[25] REF6[20] REF5[4] SITUATION[3] SITUATION[2] EVENT[11] EVENT[12] EVENT[23] EVENT[29] EVENT[29] EVENT[35] EVENT[30] EVENT[41] EVENT[37] ENTITY[5] ENTITY[21] GROUP[19] ENTITY[24] ENTITY[32] (
+                 REF5[4] = he ∧
+                  chair(ENTITY[5]) ∧
+                   REF6[20] = his ∧
+                    is_arms_POS(GROUP[19], REF6[20]) ∧
+                     is_edge_POS(ENTITY[21], ENTITY[22]) ∧
+                      REF7[25] = his ∧
+                       is_face_POS(ENTITY[24], REF7[25]) ∧
+                        REF8[26] = them ∧
+                         ADV_yet(ATTRIB[27]) ∧ tearless(ATTRIB[27]) ∧
+                          unutterably_weary(ATTRIB[28]) ∧
+                           is_FACT_THAT(SITUATION[3],
+                            CONJ_and(CONJ_and(sinking(EVENT[11], REF5[4]) ∧
+                                       by(EVENT[11]) = ENTITY[6] ∧
+                                       into(EVENT[11]) = ENTITY[5],
+                                  noting(EVENT[12], REF5[4],
+                                   QUEST(∃ EVENT[17] ? ENTITY[13] (
+                                         white(EVENT[17]) ∧ is_ADV(EVENT[17], ENTITY[13]) ∧
+                                          is_before(EVENT[17], EVENT[12]) ∧
+                                           showed(EVENT[17], ENTITY[14]) ∧
+                                            in(EVENT[17]) = ENTITY[15])))),
+                             CONJ_and(laid(EVENT[23], REF5[4], GROUP[19]) ∧
+                                   upon(EVENT[23]) = ENTITY[21],
+                              CONJ_and(dropped(EVENT[29], REF5[4], ENTITY[24]) ∧
+                                    ATTRIBUTE(EVENT[29]) = ATTRIB[27] ∧ into(EVENT[29]) = REF8[26],
+                               dropped(EVENT[29], REF5[4], ENTITY[24]) ∧
+                                ATTRIBUTE(EVENT[29]) = ATTRIB[28] ∧
+                                into(EVENT[29]) = REF8[26])))) ∧
+                            REF3[31] = he ∧
+                             REF4[33] = his ∧
+                              pious(ATTRIB[34]) ∧
+                               is_work_ATTRIBUTE(ENTITY[32], ATTRIB[34]) ∧ is_work_POS(ENTITY[32], REF4[33]) ∧
+                                is_FACT_THAT(SITUATION[2],
+                                 is_FACT_THAT(SITUATION[36],
+                                  had(EVENT[30], ENTITY[Murlock], finished(EVENT[35], REF3[31], ENTITY[32])) ∧
+                                   than(EVENT[30]) = SITUATION[3])) ∧
+                                 ADV_no_sooner(SITUATION[36]) ∧
+                                  past(EVENT[23]) ∧
+                                   past(EVENT[29]) ∧
+                                    past(EVENT[29]) ∧
+                                     is_before(EVENT[35], EVENT[30]) ∧
+                                      past(EVENT[30]) ∧
+                                       conceive(EVENT[37], REF1[1], ENTITY[Murlock],
+                                        have_copula(EVENT[41], ENTITY[Murlock], ENTITY[38])) ∧
+                                        for(EVENT[37]) = SITUATION[2])))
+
+# ::id 76_fiction_BIERCE-1891;NE
+# ::snt At that moment came in through the open window a long , wailing sound like the cry of a lost child in the far deeps of the darkening wood !
+∃ ATTRIB[7] ATTRIB[6] ATTRIB[5] ATTRIB[14] ATTRIB[12] ATTRIB[10] ATTRIB[3] EVENT[15] ENTITY[4] ENTITY[13] GROUP[11] ENTITY[9] ENTITY[8] ENTITY[2] ENTITY[1] (
+ moment(ENTITY[1]) ∧
+  open(ATTRIB[3]) ∧
+   is_window_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    lost(ATTRIB[10]) ∧
+     far(ATTRIB[12]) ∧
+      darkening(ATTRIB[14]) ∧
+       is_wood_ATTRIBUTE(ENTITY[13], ATTRIB[14]) ∧
+        is_deeps_of(GROUP[11], ENTITY[13]) ∧ is_deeps_ATTRIBUTE(GROUP[11], ATTRIB[12]) ∧
+         is_child_in(ENTITY[9], GROUP[11]) ∧ is_child_ATTRIBUTE(ENTITY[9], ATTRIB[10]) ∧
+          is_cry_of(ENTITY[8], ENTITY[9]) ∧
+           long(ATTRIB[5]) ∧
+            wailing(ATTRIB[6]) ∧
+             is_like_comp(ATTRIB[7], ENTITY[8]) ∧
+              is_sound_ATTRIBUTE(ENTITY[4], ATTRIB[7]) ∧ is_sound_ATTRIBUTE(ENTITY[4], ATTRIB[6]) ∧ is_sound_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+               past(EVENT[15]) ∧
+                came_in(EVENT[15], ENTITY[4]) ∧ through(EVENT[15]) = ENTITY[2] ∧
+                 At(EVENT[15]) = ENTITY[1])
+
+# ::id 77_fiction_BIERCE-1891;NE
+# ::snt But the man did not move .
+∃ ENTITY[1] (man(ENTITY[1]) ∧ ¬ ∃ EVENT[2] (past(EVENT[2]) ∧ did_move(EVENT[2], ENTITY[1])))
+
+# ::id 78_fiction_BIERCE-1891;NE
+# ::snt Again , and nearer than before , sounded that unearthly cry upon his failing sense .
+∃ SITUATION[10] ATTRIB[4] ATTRIB[3] ATTRIB[8] REF1[7] ATTRIB[2] EVENT[9] EVENT[5] ENTITY[6] ENTITY[1] (
+ unearthly(ATTRIB[2]) ∧
+  is_cry_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   REF1[7] = his ∧
+    failing(ATTRIB[8]) ∧
+     is_sense_ATTRIBUTE(ENTITY[6], ATTRIB[8]) ∧ is_sense_POS(ENTITY[6], REF1[7]) ∧
+      ADV_before(ATTRIB[4]) ∧
+       is_nearer_than(ATTRIB[3], ATTRIB[4]) ∧
+        ADV_again(SITUATION[10]) ∧
+         past(EVENT[9]) ∧
+          is_FACT_THAT(SITUATION[10],
+           CONJ_and(sounded(EVENT[9], ENTITY[1]) ∧ upon(EVENT[9]) = ENTITY[6],
+            xxx(EVENT[5], ENTITY[1], ATTRIB[3]))))
+
+# ::id 79_fiction_BIERCE-1891;NE
+# ::snt Perhaps it was a wild beast ;
+∃ ATTRIB[3] REF1[1] EVENT[4] ENTITY[2] (
+ REF1[1] = it ∧
+  wild(ATTRIB[3]) ∧
+   is_beast_ATTRIBUTE(ENTITY[2], ATTRIB[3]) ∧
+    ADV_perhaps(EVENT[4]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], REF1[1], ENTITY[2]))
+
+# ::id 80_fiction_BIERCE-1891;NE
+# ::snt perhaps it was a dream .
+∃ REF1[1] EVENT[3] ENTITY[2] (
+ REF1[1] = it ∧
+  dream(ENTITY[2]) ∧ ADV_perhaps(EVENT[3]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], REF1[1], ENTITY[2]))
+
+# ::id 81_fiction_BIERCE-1891;NE
+# ::snt For Murlock was asleep .
+∃ ATTRIB[1] EVENT[2] (asleep(ATTRIB[1]) ∧ past(EVENT[2]) ∧ copula(EVENT[2], ENTITY[Murlock], ATTRIB[1]))
+
+# ::id 82_fiction_BIERCE-1891;NE
+# ::snt Some hours later , as it afterward appeared , this unfaithful watcher awoke and lifting his head from his arms intently listened --
+∃ REF3[13] REF2[11] TIME[1] ATTRIB[8] EVENT[9] EVENT[14] EVENT[15] GROUP[12] ENTITY[10] ENTITY[7] (
+ unfaithful(ATTRIB[8]) ∧
+  is_watcher_ATTRIBUTE(ENTITY[7], ATTRIB[8]) ∧
+   SOME GROUP[2] (hours(GROUP[2]),
+    ∃ REF1[4] SITUATION[3] EVENT[5] (
+     REF1[4] = it ∧
+      is_FACT_THAT(SITUATION[3], appeared(EVENT[5], REF1[4])) ∧
+       ADV_afterward(EVENT[5]) ∧
+        past(EVENT[5]) ∧ is_later_as(TIME[1], SITUATION[3]) ∧ is_later_comp(TIME[1], GROUP[2]))) ∧
+    REF2[11] = his ∧
+     is_head_POS(ENTITY[10], REF2[11]) ∧
+      REF3[13] = his ∧
+       is_arms_POS(GROUP[12], REF3[13]) ∧
+        past(EVENT[9]) ∧
+         ADV_intently(EVENT[15]) ∧
+          past(EVENT[15]) ∧
+           CONJ_and(awoke(EVENT[9], ENTITY[7]) ∧ is_contained_in(TMP(EVENT[9]), TIME[1]),
+            lifting(EVENT[14], ENTITY[7], ENTITY[10]) ∧ from(EVENT[14]) = GROUP[12],
+            listened(EVENT[15], ENTITY[7]) ∧ is_contained_in(TMP(EVENT[15]), TIME[1])))
+
+# ::id 83_fiction_BIERCE-1891;NE
+# ::snt he knew not why .
+∃ REF1[1] (
+ REF1[1] = he ∧
+  ¬ ∃ EVENT[2] (
+        past(EVENT[2]) ∧
+         knew(EVENT[2], REF1[1], QUEST(∃ ENTITY[4] ? ENTITY[3] (is_ADV(ENTITY[4], ENTITY[3]) ∧ xxx(ENTITY[4]))))))
+
+# ::id 84_fiction_BIERCE-1891;NE
+# ::snt There in the black darkness by the side of the dead , recalling all without a shock , he strained his eyes to see --
+∃ SITUATION[13] REF2[10] REF1[5] ATTRIB[2] EVENT[7] EVENT[12] EVENT[11] ENTITY[6] GROUP[9] ENTITY[4] ENTITY[3] ENTITY[1] (
+ black(ATTRIB[2]) ∧
+  dead(ENTITY[4]) ∧
+   is_side_of(ENTITY[3], ENTITY[4]) ∧
+    is_darkness_by(ENTITY[1], ENTITY[3]) ∧ is_darkness_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+     REF1[5] = he ∧
+      shock(ENTITY[6]) ∧
+       REF2[10] = his ∧
+        is_eyes_POS(GROUP[9], REF2[10]) ∧
+         LOC_there(SITUATION[13]) ∧
+          ADV_all(EVENT[7]) ∧
+           is_FACT_THAT(SITUATION[13],
+            CONJ_and(recalling(EVENT[7], REF1[5]) ∧ without(EVENT[7]) = ENTITY[6],
+             strained(EVENT[11], REF1[5], GROUP[9], see(EVENT[12], GROUP[9])) ∧
+              in(EVENT[11]) = ENTITY[1])))
+
+# ::id 85_fiction_BIERCE-1891;NE
+# ::snt he knew not what .
+QUEST(∃ REF1[1] ? ENTITY[2] (REF1[1] = he ∧ ¬ ∃ EVENT[3] (past(EVENT[3]) ∧ knew(EVENT[3], REF1[1], ENTITY[2]))))
+
+# ::id 86_fiction_BIERCE-1891;NE
+# ::snt His senses were all alert ,
+∃ ATTRIB[3] REF1[2] EVENT[4] GROUP[1] (
+ REF1[2] = his ∧
+  is_senses_POS(GROUP[1], REF1[2]) ∧ all_alert(ATTRIB[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], GROUP[1], ATTRIB[3]))
+
+# ::id 87_fiction_BIERCE-1891;NE
+# ::snt his breath was suspended ,
+∃ REF1[2] EVENT[3] ENTITY[1] (REF1[2] = his ∧ is_breath_POS(ENTITY[1], REF1[2]) ∧ past(EVENT[3]) ∧ suspended(EVENT[3], _, ENTITY[1]))
+
+# ::id 88_fiction_BIERCE-1891;NE
+# ::snt his blood had stilled its tides as if to assist the silence .
+∃ SITUATION[5] REF2[4] REF1[2] EVENT[7] EVENT[8] GROUP[3] ENTITY[1] ENTITY[6] (
+ silence(ENTITY[6]) ∧
+  REF1[2] = his ∧
+   is_blood_POS(ENTITY[1], REF1[2]) ∧
+    REF2[4] = its ∧
+     is_tides_POS(GROUP[3], REF2[4]) ∧
+      is_FACT_THAT(SITUATION[5], assist(EVENT[7], GROUP[3], ENTITY[6])) ∧
+       past(EVENT[8]) ∧ had_stilled(EVENT[8], ENTITY[1], GROUP[3]) ∧ as_if(EVENT[8]) = SITUATION[5])
+
+# ::id 89_fiction_BIERCE-1891;NE
+# ::snt Who -- what had waked him ,
+QUEST(∃ REF1[3] EVENT[4] ? ENTITY[1] ENTITY[2] (
+      is_-ENTITY-_namely(ENTITY[2], ENTITY[1]) ∧
+       REF1[3] = him ∧ past(EVENT[4]) ∧ had_waked(EVENT[4], ENTITY[2], REF1[3])))
+
+# ::id 90_fiction_BIERCE-1891;NE
+# ::snt and where was it ?
+QUEST(∃ REF1[2] EVENT[3] ? LOC[1] (
+      REF1[2] = it ∧ is_LOC(EVENT[3], LOC[1]) ∧ past(EVENT[3]) ∧ copula(EVENT[3], REF1[2])))
+
+# ::id 91_fiction_BIERCE-1891;NE
+# ::snt Suddenly the table shook beneath his arms ,
+∃ REF1[3] EVENT[4] GROUP[2] ENTITY[1] (
+ table(ENTITY[1]) ∧
+  REF1[3] = his ∧
+   is_arms_POS(GROUP[2], REF1[3]) ∧
+    ADV_suddenly(EVENT[4]) ∧ past(EVENT[4]) ∧ shook(EVENT[4], ENTITY[1]) ∧ beneath(EVENT[4]) = GROUP[2])
+
+# ::id 92_fiction_BIERCE-1891;NE
+# ::snt and at the same moment he heard , or fancied that he heard , a light , soft step -- another -- sounds as of bare feet upon the floor !
+∃ REF2[15] REF1[3] ATTRIB[2] EVENT[13] EVENT[16] EVENT[14] GROUP[4] ENTITY[12] ENTITY[1] (
+ same(ATTRIB[2]) ∧
+  is_moment_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   floor(ENTITY[12]) ∧
+    REF1[3] = he ∧
+     ∃ ATTRIB[7] ATTRIB[6] ENTITY[5] (
+      light(ATTRIB[6]) ∧
+       soft(ATTRIB[7]) ∧
+        is_step_ATTRIBUTE(ENTITY[5], ATTRIB[7]) ∧ is_step_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+      ANOTHER ENTITY[8] is_element_of(ENTITY[8], GROUP[4]) ∧
+      ∃ ATTRIB[11] GROUP[10] GROUP[9] (
+       bare(ATTRIB[11]) ∧
+        is_feet_ATTRIBUTE(GROUP[10], ATTRIB[11]) ∧ is_feet_upon(GROUP[10], ENTITY[12]) ∧
+         is_sounds_as_of(GROUP[9], GROUP[10]) ∧ is_subset_of_or_equal_to(GROUP[9], GROUP[4])) ∧
+      REF2[15] = he ∧
+       past(EVENT[13]) ∧
+        is_before(EVENT[16], EVENT[14]) ∧
+         past(EVENT[14]) ∧
+          CONJ_or(heard(EVENT[13], REF1[3], GROUP[4]) ∧ at(EVENT[13]) = ENTITY[1],
+           fancied(EVENT[14], REF1[3], GROUP[4], heard(EVENT[16], REF2[15])) ∧ at(EVENT[14]) = ENTITY[1]))
+
+# ::id 93_fiction_BIERCE-1891;NE
+# ::snt He was terrified beyond the power to cry out or move .
+∃ REF1[1] EVENT[5] ENTITY[2] EVENT[3] EVENT[4] (
+ is_power_to(ENTITY[2], CONJ_or(cry_out(EVENT[3]), move(EVENT[4]))) ∧
+  REF1[1] = he ∧
+   past(EVENT[5]) ∧ terrified(EVENT[5], _, REF1[1]) ∧ beyond(EVENT[5]) = ENTITY[2])
+
+# ::id 94_fiction_BIERCE-1891;NE
+# ::snt Perforce he waited --
+∃ REF1[1] EVENT[2] (REF1[1] = he ∧ ADV_perforce(EVENT[2]) ∧ past(EVENT[2]) ∧ waited(EVENT[2], REF1[1]))
+
+# ::id 95_fiction_BIERCE-1891;NE
+# ::snt waited there in the darkness through seeming centuries of such dread as one may know , yet live to tell .
+∃ SITUATION[12] SITUATION[14] SITUATION[7] ATTRIB[6] ATTRIB[4] REF1[1] EVENT[11] EVENT[10] EVENT[13] ENTITY[8] ENTITY[5] GROUP[3] ENTITY[2] (
+ darkness(ENTITY[2]) ∧
+  REF1[1] = *con* ∧
+   seeming(ATTRIB[4]) ∧
+    such(ATTRIB[6]) ∧
+     CD_one(ENTITY[8]) ∧
+      is_FACT_THAT(SITUATION[7],
+       MD_may(∃ EVENT[9] know(EVENT[9], ENTITY[8])) ∧
+        is_FACT_THAT(SITUATION[12], live(EVENT[10], ENTITY[8], tell(EVENT[11], ENTITY[8])))) ∧
+       is_dread_as(ENTITY[5], SITUATION[7]) ∧ is_dread_ATTRIBUTE(ENTITY[5], ATTRIB[6]) ∧
+        is_centuries_of(GROUP[3], ENTITY[5]) ∧ is_centuries_ATTRIBUTE(GROUP[3], ATTRIB[4]) ∧
+         ADV_there(SITUATION[14]) ∧
+          ADV_yet(SITUATION[12]) ∧
+           past(EVENT[13]) ∧
+            is_FACT_THAT(SITUATION[14],
+             waited(EVENT[13], REF1[1]) ∧ through(EVENT[13]) = GROUP[3] ∧
+              in(EVENT[13]) = ENTITY[2]))
+
+# ::id 96_fiction_BIERCE-1891;NE
+# ::snt He tried vainly to speak the dead woman 's name , vainly to stretch forth his hand across the table to learn if she were there .
+∃ SITUATION[16] REF3[12] SITUATION[11] REF2[8] REF1[1] ATTRIB[5] EVENT[6] EVENT[13] EVENT[15] EVENT[10] EVENT[2] ENTITY[3] ENTITY[7] ENTITY[4] ENTITY[9] (
+ dead(ATTRIB[5]) ∧
+  is_woman_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+   table(ENTITY[9]) ∧
+    REF1[1] = he ∧
+     is_name_POS(ENTITY[3], ENTITY[4]) ∧
+      REF2[8] = his ∧
+       is_hand_POS(ENTITY[7], REF2[8]) ∧
+        REF3[12] = she ∧
+         is_FACT_THAT(SITUATION[11], copula(EVENT[13], REF3[12])) ∧
+          ADV_vainly(SITUATION[16]) ∧
+           ADV_there(EVENT[13]) ∧
+            is_before(EVENT[13], EVENT[10]) ∧
+             past(EVENT[2]) ∧
+              tried(EVENT[2], REF1[1],
+               is_FACT_THAT(SITUATION[16],
+                speak(EVENT[6], REF1[1], ENTITY[3]) ∧ ADV_vainly(REF1[1]) ∧
+                 stretch_forth(EVENT[10], REF1[1], ENTITY[7],
+                  learn(EVENT[15], ENTITY[7]) ∧ if(EVENT[15]) = SITUATION[11]) ∧
+                  across(EVENT[10]) = ENTITY[9])))
+
+# ::id 97_fiction_BIERCE-1891;NE
+# ::snt His throat was powerless ,
+∃ ATTRIB[3] REF1[2] EVENT[4] ENTITY[1] (
+ REF1[2] = his ∧
+  is_throat_POS(ENTITY[1], REF1[2]) ∧ powerless(ATTRIB[3]) ∧ past(EVENT[4]) ∧ copula(EVENT[4], ENTITY[1], ATTRIB[3]))
+
+# ::id 98_fiction_BIERCE-1891;NE
+# ::snt his arms and hands were like lead .
+∃ ATTRIB[6] REF1[2] EVENT[8] GROUP[3] ENTITY[7] ENTITY[1] (
+ REF1[2] = his ∧
+  ∃ GROUP[4] (arms(GROUP[4]) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])) ∧
+   ∃ GROUP[5] (hands(GROUP[5]) ∧ is_subset_of_or_equal_to(GROUP[5], GROUP[3])) ∧
+   is_equals(ENTITY[1], GROUP[3]) ∧ is_POS(ENTITY[1], REF1[2]) ∧
+    lead(ENTITY[7]) ∧
+     is_like_comp(ATTRIB[6], ENTITY[7]) ∧ past(EVENT[8]) ∧ copula(EVENT[8], ENTITY[1], ATTRIB[6]))
+
+# ::id 99_fiction_BIERCE-1891;NE
+# ::snt Then occurred something most frightful .
+∃ SITUATION[4] (
+ ADV_then(SITUATION[4]) ∧
+  is_FACT_THAT(SITUATION[4],
+   SOME ATTRIB[2] ENTITY[1] ((most_frightful(ATTRIB[2]) ∧ is_thing_ATTRIBUTE(ENTITY[1], ATTRIB[2])),
+    ∃ EVENT[3] (past(EVENT[3]) ∧ occurred(EVENT[3], _, ENTITY[1])))))
+
+# ::id 100_fiction_BIERCE-1891;NE
+# ::snt Some heavy body seemed hurled against the table with an impetus that pushed it against his breast so sharply as nearly to overthrow him ,
+∃ ENTITY[3] (
+ table(ENTITY[3]) ∧
+  SOME ATTRIB[2] ENTITY[1] ((heavy(ATTRIB[2]) ∧ is_body_ATTRIBUTE(ENTITY[1], ATTRIB[2])),
+   ∃ SITUATION[14] REF3[10] SITUATION[9] REF2[8] REF1[6] EVENT[11] EVENT[13] EVENT[15] ENTITY[7] ENTITY[4] (
+    REF1[6] = it ∧
+     REF2[8] = his ∧
+      is_breast_POS(ENTITY[7], REF2[8]) ∧
+       REF3[10] = him ∧
+        is_FACT_THAT(SITUATION[9], overthrow(EVENT[11], _, REF3[10])) ∧
+         is_FACT_THAT(SITUATION[14], pushed(EVENT[13], ENTITY[4], REF1[6]) ∧ against(EVENT[13]) = ENTITY[7]) ∧
+          impetus(ENTITY[4]) ∧
+          ADV_nearly(EVENT[11]) ∧
+           is_ADV_so_sharply_as(SITUATION[14], SITUATION[9]) ∧
+            past(EVENT[13]) ∧
+             past(EVENT[15]) ∧
+              seemed_hurled(EVENT[15], _, ENTITY[1]) ∧ with(EVENT[15]) = ENTITY[4] ∧
+               against(EVENT[15]) = ENTITY[3])))
+
+# ::id 101_fiction_BIERCE-1891;NE
+# ::snt and at the same instant he heard and felt the fall of something upon the floor with so violent a thump that the whole house was shaken by the impact .
+∃ ATTRIB[9] REF1[3] ATTRIB[12] ATTRIB[2] EVENT[4] EVENT[14] EVENT[15] ENTITY[8] ENTITY[7] ENTITY[13] ENTITY[11] ENTITY[5] ENTITY[1] (
+ same(ATTRIB[2]) ∧
+  is_instant_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   floor(ENTITY[7]) ∧
+    SOME ENTITY[6] (thing(ENTITY[6]), is_fall_upon(ENTITY[5], ENTITY[7]) ∧ is_fall_of(ENTITY[5], ENTITY[6])) ∧
+     whole(ATTRIB[12]) ∧
+      is_house_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+       impact(ENTITY[13]) ∧
+        REF1[3] = he ∧
+         so_violent(ATTRIB[9]) ∧
+          shaken(EVENT[14], ENTITY[13], ENTITY[8], ENTITY[11]) ∧ is_thump_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+           past(EVENT[4]) ∧
+            past(EVENT[14]) ∧
+             past(EVENT[15]) ∧
+              CONJ_and(heard(EVENT[4], REF1[3]) ∧ at(EVENT[4]) = ENTITY[1],
+               felt(EVENT[15], REF1[3], ENTITY[5]) ∧ with(EVENT[15]) = ENTITY[8] ∧
+                at(EVENT[15]) = ENTITY[1]))
+
+# ::id 102_fiction_BIERCE-1891;NE
+# ::snt A scuffling ensued ,
+∃ EVENT[2] ENTITY[1] (scuffling(ENTITY[1]) ∧ past(EVENT[2]) ∧ ensued(EVENT[2], ENTITY[1]))
+
+# ::id 103_fiction_BIERCE-1891;NE
+# ::snt and a confusion of sounds impossible to describe .
+∃ ATTRIB[3] GROUP[2] ENTITY[1] EVENT[4] EVENT[5] (
+ is_impossible_to(ATTRIB[3], describe(EVENT[4])) ∧
+  is_sounds_ATTRIBUTE(GROUP[2], ATTRIB[3]) ∧
+   is_confusion_of(ENTITY[1], GROUP[2]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 104_fiction_BIERCE-1891;NE
+# ::snt Murlock had risen to his feet .
+∃ REF1[2] EVENT[3] GROUP[1] (
+ REF1[2] = his ∧
+  is_feet_POS(GROUP[1], REF1[2]) ∧
+   past(EVENT[3]) ∧ had_risen(EVENT[3], ENTITY[Murlock]) ∧ to(EVENT[3]) = GROUP[1])
+
+# ::id 105_fiction_BIERCE-1891;NE
+# ::snt Fear had by excess forfeited control of his faculties .
+∃ REF1[5] EVENT[6] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ Fear(ENTITY[1]) ∧
+  excess(ENTITY[2]) ∧
+   REF1[5] = his ∧
+    is_faculties_POS(GROUP[4], REF1[5]) ∧
+     is_control_of(ENTITY[3], GROUP[4]) ∧
+      past(EVENT[6]) ∧ had_forfeited(EVENT[6], ENTITY[1], ENTITY[3]) ∧ by(EVENT[6]) = ENTITY[2])
+
+# ::id 106_fiction_BIERCE-1891;NE
+# ::snt He flung his hands upon the table .
+∃ REF2[3] REF1[1] EVENT[5] GROUP[2] ENTITY[4] (
+ table(ENTITY[4]) ∧
+  REF1[1] = he ∧
+   REF2[3] = his ∧
+    is_hands_POS(GROUP[2], REF2[3]) ∧
+     past(EVENT[5]) ∧ flung(EVENT[5], REF1[1], GROUP[2]) ∧ upon(EVENT[5]) = ENTITY[4])
+
+# ::id 107_fiction_BIERCE-1891;NE
+# ::snt Nothing was there !
+¬ ∃ EVENT[2] ENTITY[1] (thing(ENTITY[1]) ∧ ADV_there(EVENT[2]) ∧ past(EVENT[2]) ∧ copula(EVENT[2], ENTITY[1]))
+
+# ::id 108_fiction_BIERCE-1891;NE
+# ::snt There is a point at which terror may turn to madness ;
+∃ EVENT[5] ENTITY[3] ENTITY[1] (
+ terror(ENTITY[3]) ∧
+  MD_may(∃ EVENT[4] (turn(EVENT[4], ENTITY[3]) ∧ at(EVENT[4]) = ENTITY[1])) ∧ point(ENTITY[1]) ∧
+   copula(EVENT[5], ENTITY[1]))
+
+# ::id 109_fiction_BIERCE-1891;NE
+# ::snt and madness incites to action .
+∃ EVENT[3] ENTITY[2] ENTITY[1] (madness(ENTITY[1]) ∧ action(ENTITY[2]) ∧ incites(EVENT[3], ENTITY[1]) ∧ to(EVENT[3]) = ENTITY[2])
+
+# ::id 110_fiction_BIERCE-1891;NE
+# ::snt With no definite intent , from no motive but the wayward impulse of a madman , Murlock sprang to the wall , with a little groping seized his loaded rifle , and without aim discharged it .
+∃ ATTRIB[5] ENTITY[6] ENTITY[4] ENTITY[7] (
+ wayward(ATTRIB[5]) ∧
+  madman(ENTITY[6]) ∧
+   is_impulse_of(ENTITY[4], ENTITY[6]) ∧ is_impulse_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    wall(ENTITY[7]) ∧
+     ¬ ∃ ATTRIB[2] ENTITY[1] (
+           definite(ATTRIB[2]) ∧
+            is_intent_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+             ¬ ∃ REF2[18] SITUATION[16] ATTRIB[14] REF1[13] ATTRIB[11] SITUATION[9] EVENT[15] EVENT[19] EVENT[20] EVENT[8] ENTITY[12] ENTITY[10] ENTITY[17] ENTITY[3] (
+                   is_motive_but(ENTITY[3], ENTITY[4]) ∧
+                    little(ATTRIB[11]) ∧
+                     is_groping_ATTRIBUTE(ENTITY[10], ATTRIB[11]) ∧
+                      REF1[13] = his ∧
+                       loaded(ATTRIB[14]) ∧
+                        is_rifle_ATTRIBUTE(ENTITY[12], ATTRIB[14]) ∧ is_rifle_POS(ENTITY[12], REF1[13]) ∧
+                         is_FACT_THAT(SITUATION[9], seized(EVENT[15], ENTITY[10], ENTITY[12])) ∧
+                          aim(ENTITY[17]) ∧
+                           REF2[18] = it ∧
+                            is_FACT_THAT(SITUATION[16], discharged(EVENT[19], ENTITY[17], REF2[18])) ∧
+                             is_before(EVENT[15], EVENT[8]) ∧
+                              past(EVENT[8]) ∧
+                               sprang(EVENT[8], ENTITY[Murlock],
+                                xxx(EVENT[20]) ∧ without(EVENT[20]) = SITUATION[16] ∧
+                                 with(EVENT[20]) = SITUATION[9]) ∧
+                                to(EVENT[8]) = ENTITY[7] ∧ from(EVENT[8]) = ENTITY[3] ∧
+                                With(EVENT[8]) = ENTITY[1])))
+
+# ::id 111_fiction_BIERCE-1891;NE
+# ::snt By the flash which lit up the room with a vivid illumination , he saw an enormous panther dragging the dead woman toward the window , its teeth fixed in her throat !
+∃ REF3[17] REF2[15] ATTRIB[9] REF1[7] ATTRIB[12] ATTRIB[5] EVENT[18] EVENT[19] EVENT[20] ENTITY[16] GROUP[14] ENTITY[8] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[13] ENTITY[11] ENTITY[1] (
+ room(ENTITY[3]) ∧
+  vivid(ATTRIB[5]) ∧
+   is_illumination_ATTRIBUTE(ENTITY[4], ATTRIB[5]) ∧
+    lit_up(EVENT[6], ENTITY[1], ENTITY[3]) ∧ with(EVENT[6]) = ENTITY[4] ∧ flash(ENTITY[1]) ∧
+     dead(ATTRIB[12]) ∧
+      is_woman_ATTRIBUTE(ENTITY[11], ATTRIB[12]) ∧
+       window(ENTITY[13]) ∧
+        past(EVENT[6]) ∧
+         REF1[7] = he ∧
+          enormous(ATTRIB[9]) ∧
+           REF2[15] = its ∧
+            is_teeth_POS(GROUP[14], REF2[15]) ∧
+             REF3[17] = her ∧
+              is_throat_POS(ENTITY[16], REF3[17]) ∧
+               CONJ_and(fixed(EVENT[18], GROUP[14]) ∧ in(EVENT[18]) = ENTITY[16],
+                dragging(EVENT[19], ENTITY[8], ENTITY[11]) ∧ toward(EVENT[19]) = ENTITY[13]) ∧
+                is_panther_ATTRIBUTE(ENTITY[8], ATTRIB[9]) ∧
+                past(EVENT[20]) ∧ saw(EVENT[20], REF1[7], ENTITY[8]) ∧ By(EVENT[20]) = ENTITY[1])
+
+# ::id 112_fiction_BIERCE-1891;NE
+# ::snt Then there were darkness blacker than before , and silence ;
+∃ EVENT[5] GROUP[1] (
+ ∃ ATTRIB[3] ENTITY[2] (ADV_before(ATTRIB[3]) ∧ is_ADV_blacker_than(ENTITY[2], ATTRIB[3]) ∧ darkness(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[4] (silence(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  ADV_then(EVENT[5]) ∧ past(EVENT[5]) ∧ copula(EVENT[5], GROUP[1]))
+
+# ::id 113_fiction_BIERCE-1891;NE
+# ::snt and when he returned to consciousness the sun was high and the wood vocal with songs of birds .
+∃ SITUATION[14] ATTRIB[10] ATTRIB[7] REF1[2] EVENT[4] EVENT[8] EVENT[13] ENTITY[3] GROUP[12] GROUP[11] ENTITY[6] ENTITY[9] (
+ sun(ENTITY[6]) ∧
+  wood(ENTITY[9]) ∧
+   REF1[2] = he ∧
+    consciousness(ENTITY[3]) ∧
+     high(ATTRIB[7]) ∧
+      birds(GROUP[12]) ∧
+       is_songs_of(GROUP[11], GROUP[12]) ∧
+        is_vocal_with(ATTRIB[10], GROUP[11]) ∧
+         is_TMP(EVENT[4], SITUATION[14]) ∧
+          past(EVENT[4]) ∧
+           returned(EVENT[4], REF1[2]) ∧ to(EVENT[4]) = ENTITY[3] ∧
+            past(EVENT[8]) ∧
+             past(EVENT[13]) ∧
+              is_FACT_THAT(SITUATION[14],
+               CONJ_and(copula(EVENT[8], ENTITY[6], ATTRIB[7]), copula(EVENT[13], ENTITY[9], ATTRIB[10]))))
+
+# ::id 114_fiction_BIERCE-1891;NE
+# ::snt The body lay near the window , where the beast had left it when frightened away by the flash and report of the rifle .
+∃ ATTRIB[2] SITUATION[18] SITUATION[19] REF2[8] REF1[6] EVENT[20] EVENT[14] EVENT[17] ENTITY[11] ENTITY[12] ENTITY[13] GROUP[10] ENTITY[9] ENTITY[5] ENTITY[3] ENTITY[1] (
+ body(ENTITY[1]) ∧
+  beast(ENTITY[5]) ∧
+   REF1[6] = it ∧
+    REF2[8] = *pro* ∧
+     flash(ENTITY[11]) ∧
+      report(ENTITY[12]) ∧
+       is_element_of(ENTITY[11], GROUP[10]) ∧ is_element_of(ENTITY[12], GROUP[10]) ∧
+        rifle(ENTITY[13]) ∧
+         is_of(ENTITY[9], ENTITY[13]) ∧ is_equals(ENTITY[9], GROUP[10]) ∧
+          is_FACT_THAT(SITUATION[19], is_FACT_THAT(SITUATION[18], had_left(EVENT[17], ENTITY[5], REF1[6]))) ∧ window(ENTITY[3]) ∧
+           is_LOC(SITUATION[19], ENTITY[3]) ∧
+            is_TMP(EVENT[14], SITUATION[18]) ∧
+             DIR_away(EVENT[14]) ∧
+              frightened(EVENT[14], ENTITY[9], REF2[8]) ∧
+               past(EVENT[17]) ∧
+                is_near_comp(ATTRIB[2], ENTITY[3]) ∧
+                 past(EVENT[20]) ∧ lay(EVENT[20], ENTITY[1]) ∧ LOC(EVENT[20]) = ATTRIB[2])
+
+# ::id 115_fiction_BIERCE-1891;NE
+# ::snt The clothing was deranged ,
+∃ EVENT[2] ENTITY[1] (clothing(ENTITY[1]) ∧ past(EVENT[2]) ∧ deranged(EVENT[2], _, ENTITY[1]))
+
+# ::id 116_fiction_BIERCE-1891;NE
+# ::snt the long hair in disorder ,
+∃ ATTRIB[2] EVENT[4] ENTITY[3] ENTITY[1] (
+ long(ATTRIB[2]) ∧
+  is_hair_ATTRIBUTE(ENTITY[1], ATTRIB[2]) ∧
+   disorder(ENTITY[3]) ∧ xxx(EVENT[4], ENTITY[1]) ∧ in(EVENT[4]) = ENTITY[3])
+
+# ::id 117_fiction_BIERCE-1891;NE
+# ::snt the limbs lay anyhow .
+∃ EVENT[2] GROUP[1] (limbs(GROUP[1]) ∧ ADV_anyhow(EVENT[2]) ∧ past(EVENT[2]) ∧ lay(EVENT[2], GROUP[1]))
+
+# ::id 118_fiction_BIERCE-1891;NE
+# ::snt From the throat , dreadfully lacerated , had issued a pool of blood not yet entirely coagulated .
+∃ ATTRIB[8] ATTRIB[3] EVENT[9] EVENT[7] ENTITY[6] ENTITY[5] EVENT[4] ENTITY[1] (
+ dreadfully(ATTRIB[3]) ∧
+  lacerated(EVENT[4], _, ENTITY[1]) ∧ ATTRIBUTE(EVENT[4]) = ATTRIB[3] ∧ throat(ENTITY[1]) ∧
+   blood(ENTITY[6]) ∧
+    is_pool_of(ENTITY[5], ENTITY[6]) ∧
+     ¬ ADV_yet(ATTRIB[8]) ∧ entirely_coagulated(ATTRIB[8]) ∧
+      past(EVENT[7]) ∧
+       had_issued(EVENT[7], ENTITY[5], xxx(EVENT[9], ENTITY[5], ATTRIB[8])) ∧ From(EVENT[7]) = ENTITY[1])
+
+# ::id 119_fiction_BIERCE-1891;NE
+# ::snt The ribbon with which he had bound the wrists was broken ;
+∃ REF1[3] EVENT[6] EVENT[5] GROUP[4] ENTITY[1] (
+ REF1[3] = he ∧
+  wrists(GROUP[4]) ∧
+   had_bound(EVENT[5], REF1[3], GROUP[4]) ∧ with(EVENT[5]) = ENTITY[1] ∧ ribbon(ENTITY[1]) ∧
+    past(EVENT[5]) ∧ past(EVENT[6]) ∧ broken(EVENT[6], _, ENTITY[1]))
+
+# ::id 120_fiction_BIERCE-1891;NE
+# ::snt the hands were tightly clenched .
+∃ ATTRIB[2] EVENT[3] GROUP[1] (
+ hands(GROUP[1]) ∧
+  tightly(ATTRIB[2]) ∧
+   past(EVENT[3]) ∧ clenched(EVENT[3], _, GROUP[1]) ∧ ATTRIBUTE(EVENT[3]) = ATTRIB[2])
+
+# ::id 121_fiction_BIERCE-1891;NE
+# ::snt Between the teeth was a fragment of the animal 's ear .
+∃ EVENT[5] ENTITY[3] ENTITY[2] ENTITY[4] GROUP[1] (
+ teeth(GROUP[1]) ∧
+  animal(ENTITY[4]) ∧
+   is_ear_POS(ENTITY[3], ENTITY[4]) ∧
+    is_fragment_of(ENTITY[2], ENTITY[3]) ∧
+     past(EVENT[5]) ∧ copula(EVENT[5], ENTITY[2]) ∧ Between(EVENT[5]) = GROUP[1])

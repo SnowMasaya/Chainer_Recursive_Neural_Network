@@ -1,0 +1,2169 @@
+# ::id 1_wikipedia_KYOTO_CLT_00005,1;NJ
+# ::snt 雅楽
+∃ EVENT[2] ENTITY[1] (雅楽(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_CLT_00005,2;NJ
+# ::snt 雅楽 （ ががく ） は 、 日本 、 中国 、 朝鮮半島 、 ベトナム の 伝統的 な 音楽 の 一 つ 。
+∃ ATTRIB[5] EVENT[6] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 雅楽(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[ががく], ENTITY[1]) ∧
+   is_element_of(ENTITY[日本], GROUP[4]) ∧ is_element_of(ENTITY[中国], GROUP[4]) ∧ is_element_of(ENTITY[朝鮮半島], GROUP[4]) ∧
+    is_element_of(ENTITY[ベトナム], GROUP[4]) ∧
+    伝統的_な(ATTRIB[5]) ∧
+     ATTRIBUTE_音楽(ATTRIB[5], ENTITY[3]) ∧ の_音楽(GROUP[4], ENTITY[3]) ∧
+      (CD_一_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00005,3;NJ
+# ::snt 以下 、 宮内庁 式部 職楽 部 に 伝わる 日本 の 雅楽 （ 重要 無形 文化財 ） を 中心 に 述べる 。
+∃ ATTRIB[4] ENTITY[1] EVENT[8] EVENT[10] ENTITY[7] ENTITY[3] ENTITY[9] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  以下(ENTITY[2]) ∧
+   宮内庁_式部_職楽_部(ENTITY[7]) ∧
+    伝わる(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[7] ∧ の_雅楽(ENTITY[日本], ENTITY[5]) ∧
+     重要(ATTRIB[4]) ∧
+      ATTRIBUTE_無形_文化財(ATTRIB[4], ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[5]) ∧
+        中心(ENTITY[9]) ∧ 述べる(EVENT[10], ENTITY[1], ENTITY[5], ENTITY[9]) ∧ ADV(EVENT[10]) = ENTITY[2])
+
+# ::id 4_wikipedia_KYOTO_CLT_00005,4;NJ
+# ::snt 概説
+∃ EVENT[2] ENTITY[1] (概説(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 5_wikipedia_KYOTO_CLT_00005,5;NJ
+# ::snt 雅楽 の 原義 は 「 雅正 の 楽舞 」 で 、 「 俗楽 」 の 対 。
+∃ EVENT[4] EVENT[7] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[1] (
+ 雅楽(ENTITY[2]) ∧
+  の_原義(ENTITY[2], ENTITY[1]) ∧
+   の_楽舞(ENTITY[雅正], ENTITY[3]) ∧
+    俗楽(ENTITY[6]) ∧
+     の_対(ENTITY[6], ENTITY[5]) ∧
+      CONJ_te(で(EVENT[4], ENTITY[1], ENTITY[3]), xxx(EVENT[7], ENTITY[1], ENTITY[5])))
+
+# ::id 6_wikipedia_KYOTO_CLT_00005,6;NJ
+# ::snt 国内 の 宮内庁 式部 職楽 部 による 定義 で は 、 宮内庁 式部 職楽 部 が 演奏 する 曲目 の 内 、 洋楽 を 除く もの 、 と さ れる 。
+∃ ENTITY[1] EVENT[11] EVENT[13] EVENT[14] ENTITY[10] ENTITY[8] ENTITY[12] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] (
+ 国内(ENTITY[4]) ∧
+  の_宮内庁_式部_職楽_部(ENTITY[4], ENTITY[3]) ∧
+   による_定義(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[1] = *pro* ∧
+     宮内庁_式部_職楽_部(ENTITY[10]) ∧
+      演奏する.0(EVENT[11], ENTITY[10], ENTITY[8]) ∧ 曲目(ENTITY[8]) ∧
+       の_内(ENTITY[8], ENTITY[7]) ∧
+        洋楽(ENTITY[12]) ∧
+         除く(EVENT[13], ENTITY[5], ENTITY[12]) ∧ ADV(EVENT[13]) = ENTITY[7] ∧ もの(ENTITY[5]) ∧
+          さ(EVENT[14], _, ENTITY[1], ENTITY[5]) ∧ で(EVENT[14]) = ENTITY[2])
+
+# ::id 7_wikipedia_KYOTO_CLT_00005,7;NJ
+# ::snt 多く は 器楽曲 で 宮廷 音楽 として 継承 さ れ て いる 。
+多く ENTITY[1] ∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ 器楽曲(ENTITY[2]) ∧
+  宮廷_音楽(ENTITY[4]) ∧
+   CONJ_te(で(EVENT[3], ENTITY[1], ENTITY[2]),
+    継承する.0_て_いる(EVENT[5], _, ENTITY[1]) ∧ として(EVENT[5]) = ENTITY[4]))
+
+# ::id 8_wikipedia_KYOTO_CLT_00005,8;NJ
+# ::snt 現在 でも 大規模 な 合奏 形態 で 演奏 さ れる 伝統 音楽 として は 世界 最古 の 様式 で ある 。
+∃ ENTITY[1] ATTRIB[7] ENTITY[3] EVENT[8] ENTITY[6] ENTITY[4] (
+ 大規模_な(ATTRIB[7]) ∧
+  ATTRIBUTE_合奏_形態(ATTRIB[7], ENTITY[6]) ∧
+   演奏する.0(EVENT[8], _, ENTITY[4]) ∧ で(EVENT[8]) = ENTITY[6] ∧ 伝統_音楽(ENTITY[4]) ∧
+    ENTITY[1] = *pro* ∧
+     現在(ENTITY[3]) ∧
+      でも ENTITY[2] (ENTITY[2] = ENTITY[3],
+       ∃ EVENT[11] ENTITY[10] ENTITY[9] (
+        世界_最古(ENTITY[10]) ∧
+         の_様式(ENTITY[10], ENTITY[9]) ∧
+          で_ある(EVENT[11], ENTITY[1], ENTITY[9]) ∧ として(EVENT[11]) = ENTITY[4] ∧
+           時間(EVENT[11]) = ENTITY[2])))
+
+# ::id 9_wikipedia_KYOTO_CLT_00005,9;NJ
+# ::snt ただし 、 雅楽 本来 の 合奏 形態 として は 、 応仁の乱 以降 、 徳川 幕府 が 楽師 の 末裔 （ 楽家 ） を あつめ て 再編 する まで は 、 100 年 以上 断絶 し て い た ので 、 平安 時代 の 形態 を どこ まで 継承 し て いる か は 疑問 で ある 。
+∃ SITUATION[14] ENTITY[6] SITUATION[5] ENTITY[3] EVENT[10] EVENT[11] EVENT[13] EVENT[21] ENTITY[9] ENTITY[8] ENTITY[7] DEGREE[12] TIME[4] ENTITY[20] ENTITY[2] ENTITY[1] (
+ 雅楽_本来(ENTITY[2]) ∧
+  の_合奏_形態(ENTITY[2], ENTITY[1]) ∧
+   ENTITY[3] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    応仁の乱_以降(TIME[4]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[2]} ∧
+      徳川_幕府(ENTITY[7]) ∧
+       楽師(ENTITY[9]) ∧
+        の_末裔(ENTITY[9], ENTITY[8]) ∧
+         namely_-ENTITY-(ENTITY[楽家], ENTITY[8]) ∧
+          FACT(SITUATION[5],
+           CONJ_te(あつめ_て(EVENT[10], ENTITY[7], ENTITY[8]), 再編する.0(EVENT[11], ENTITY[7], ENTITY[6]))) ∧
+           (CD_100_年(DEGREE[12]), 以上(DEGREE[12])) ∧
+            か(SITUATION[14],
+             QUEST(∃ ENTITY[15] EVENT[19] ENTITY[17] ENTITY[16] ? ENTITY[18] (
+                   ENTITY[15] = *pro*{ENTITY[1], ENTITY[7], ENTITY[8], ENTITY[9], ENTITY[楽家], ENTITY[2]} ∧
+                    平安_時代(ENTITY[17]) ∧
+                     の_形態(ENTITY[17], ENTITY[16]) ∧
+                      継承する.0_て_いる(EVENT[19], ENTITY[15], ENTITY[16]) ∧ まで(EVENT[19]) = ENTITY[18]))) ∧
+             疑問(ENTITY[20]) ∧
+              past(EVENT[13]) ∧
+               CRD_ので(断絶する.0_て_い_た(EVENT[13], ENTITY[3]) ∧ MSR(EVENT[13]) = DEGREE[12] ∧
+                     まで(EVENT[13]) = SITUATION[5] ∧ is_contained_in(時間(EVENT[13]), TIME[4]),
+                で_ある(EVENT[21], SITUATION[14], ENTITY[20]) ∧ として(EVENT[21]) = ENTITY[1]))
+
+# ::id 10_wikipedia_KYOTO_CLT_00005,10;NJ
+# ::snt 篳篥 の カタカナ で 記さ れ て いる 譜面 を 唱歌 （ しょうが メロディー を 暗謡 する ため に 楽譜 の 文字 に 節 を つけ て 歌う 事 ） として 歌う とき に ハ行 の 発音 を ファフィフフェフォ と 発音 する など 16 世紀 以前 の 日本語 の 発音 の 特徴 も そのまま 伝え られ て おり 、 全体的 に も かなり 忠実 に 再現 さ れ て いる の で は ない か という こと が 推測 さ れる 。
+∃ ENTITY[19] SITUATION[4] ENTITY[3] SITUATION[2] EVENT[9] EVENT[10] EVENT[12] EVENT[16] EVENT[20] EVENT[23] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[11] ENTITY[15] ENTITY[14] ENTITY[13] ENTITY[1] ENTITY[18] (
+ ENTITY[3] = *pro*{ENTITY[1]} ∧
+  篳篥(ENTITY[6]) ∧
+   カタカナ(ENTITY[8]) ∧
+    記さ_て_いる(EVENT[9], _, ENTITY[5]) ∧ で(EVENT[9]) = ENTITY[8] ∧ の_譜面(ENTITY[6], ENTITY[5]) ∧
+     namely_-ENTITY-(ENTITY[事_しょうが], ENTITY[唱歌]) ∧
+      とき(SITUATION[4], 歌う(EVENT[10], ENTITY[3], ENTITY[5]) ∧ として(EVENT[10]) = ENTITY[唱歌]) ∧
+       の_発音(ENTITY[ハ行], ENTITY[11]) ∧
+        FACT(SITUATION[2], 発音する.0(EVENT[12], ENTITY[3], ENTITY[11], ENTITY[ファフィフフェフォ]) ∧ に(EVENT[12]) = SITUATION[4]) ∧
+         (CD_16_世紀(ENTITY[13]), 以前(ENTITY[13])) ∧
+          日本語(ENTITY[15]) ∧
+           の_発音(ENTITY[15], ENTITY[14]) ∧
+            の_特徴(ENTITY[14], ENTITY[1]) ∧ の__特徴(ENTITY[13], ENTITY[1]) ∧ など_特徴(SITUATION[2], ENTITY[1]) ∧
+             ENTITY[19] = *pro*{ENTITY[ファフィフフェフォ], ENTITY[ハ行], ENTITY[唱歌], ENTITY[事_しょうが], ENTITY[1], ENTITY[13], ENTITY[14], ENTITY[15], ENTITY[11], ENTITY[5], ENTITY[6], ENTITY[8]} ∧
+              THAT_こと(再現する.0_て_いる_の(EVENT[20], _, ENTITY[19]), ENTITY[18]) ∧
+               ADV_そのまま(EVENT[16]) ∧
+                ADV_全体的_に_も(EVENT[20]) ∧
+                 ADV_かなり_忠実_に(EVENT[20]) ∧
+                  伝え_て_おり(EVENT[16], _, ENTITY[1]) ∧ 推測する.0(EVENT[23], _, ENTITY[18]))
+
+# ::id 11_wikipedia_KYOTO_CLT_00005,11;NJ
+# ::snt 楽琵琶 の 譜面 の よう に 漢字 で 記さ れる もの は 、 中国 の 敦煌 で 発見 さ れ た 琵琶譜 と も 類似点 が 多く 、 さらに 古い 大陸 から 伝わっ た 様式 が 多く 継承 さ れ て いる 。
+∃ ATTRIB[16] EVENT[10] EVENT[12] EVENT[17] EVENT[19] ENTITY[11] ENTITY[8] ENTITY[15] ENTITY[13] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[6] ENTITY[3] ENTITY[1] (
+ 楽琵琶(ENTITY[5]) ∧
+  の_譜面(ENTITY[5], ENTITY[4]) ∧
+   の_よう(ENTITY[4], ENTITY[3]) ∧
+    漢字(ENTITY[6]) ∧
+     記さ(EVENT[7], _, ENTITY[1]) ∧ で(EVENT[7]) = ENTITY[6] ∧ に(EVENT[7]) = ENTITY[3] ∧
+      もの(ENTITY[1]) ∧
+      の_xxx(ENTITY[中国], ENTITY[敦煌]) ∧
+       発見する.0_た(EVENT[10], _, ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[敦煌] ∧ 琵琶譜(ENTITY[8]) ∧
+        類似点(ENTITY[11]) ∧
+         さらに_古い(ATTRIB[16]) ∧
+          ATTRIBUTE_大陸(ATTRIB[16], ENTITY[15]) ∧
+           伝わっ_た(EVENT[17], ENTITY[13]) ∧ から(EVENT[17]) = ENTITY[15] ∧ 様式(ENTITY[13]) ∧
+            past(EVENT[10]) ∧
+             past(EVENT[17]) ∧
+              多く(EVENT[12], (ENTITY[1], ENTITY[11])) ∧ と(EVENT[12]) = ENTITY[8] ∧
+               多く ENTITY[18] (ENTITY[18] = ENTITY[13], 継承する.0_て_いる(EVENT[19], _, ENTITY[18])))
+
+# ::id 12_wikipedia_KYOTO_CLT_00005,12;NJ
+# ::snt 最も 重要 な 史料 として は 、 豊原 統秋 （ 1450 ~ 1512 ） が 応仁の乱 により 雅楽 等 の 記録 が 散逸 する こと を 憂え て 著し た 『 體源抄 』 （ たいげんしょう ） が あげ られる 。
+∃ SITUATION[5] ATTRIB[2] EVENT[9] EVENT[10] EVENT[11] EVENT[12] ENTITY[4] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[1] (
+ 最も_重要_な(ATTRIB[2]) ∧
+  ATTRIBUTE_史料(ATTRIB[2], ENTITY[1]) ∧
+   CD_1450_1512(ENTITY[4]) ∧
+    namely_-ENTITY-(ENTITY[4], ENTITY[豊原_統秋]) ∧
+     雅楽(ENTITY[8]) ∧
+      等(ENTITY[8], ENTITY[7]) ∧
+       の_記録(ENTITY[7], ENTITY[6]) ∧
+        こと(SITUATION[5], 散逸する.0(EVENT[9], ENTITY[6]) ∧ により(EVENT[9]) = ENTITY[応仁の乱]) ∧
+         CONJ_te(憂え_て(EVENT[10], ENTITY[豊原_統秋], SITUATION[5]), 著し_た(EVENT[11], ENTITY[豊原_統秋], ENTITY[體源抄])) ∧
+          namely_-ENTITY-(ENTITY[たいげんしょう], ENTITY[體源抄]) ∧
+           past(EVENT[11]) ∧ あげ(EVENT[12], _, ENTITY[體源抄]) ∧ として(EVENT[12]) = ENTITY[1])
+
+# ::id 13_wikipedia_KYOTO_CLT_00005,13;NJ
+# ::snt 笙 の 楽家 の 統秋 が 、 笙 を 中心 と し た 雅楽 、 舞楽 について の 記録 を まとめ た もの で 、 古い 時代 の 雅楽 について の 貴重 な 記録 で ある 。
+∃ ATTRIB[21] ATTRIB[20] ENTITY[1] EVENT[11] EVENT[15] EVENT[16] EVENT[22] ENTITY[5] ENTITY[4] ENTITY[10] ENTITY[9] GROUP[12] ENTITY[7] ENTITY[6] ENTITY[2] ENTITY[19] ENTITY[18] ENTITY[17] (
+ ENTITY[1] = *pro* ∧
+  笙(ENTITY[5]) ∧
+   の_楽家(ENTITY[5], ENTITY[4]) ∧
+    の_xxx(ENTITY[4], ENTITY[統秋]) ∧
+     笙(ENTITY[9]) ∧
+      中心(ENTITY[10]) ∧
+       ∃ ENTITY[13] (雅楽(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+        ∃ ENTITY[14] (舞楽(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])) ∧
+        し_た(EVENT[11], ENTITY[7], ENTITY[9], ENTITY[10]) ∧ equals(GROUP[12], ENTITY[7]) ∧
+         について_の_記録(ENTITY[7], ENTITY[6]) ∧
+          まとめ_た(EVENT[15], ENTITY[統秋], ENTITY[6], ENTITY[2]) ∧ もの(ENTITY[2]) ∧
+           古い(ATTRIB[20]) ∧
+            ATTRIBUTE_時代(ATTRIB[20], ENTITY[19]) ∧
+             の_雅楽(ENTITY[19], ENTITY[18]) ∧
+              貴重_な(ATTRIB[21]) ∧
+               ATTRIBUTE_記録(ATTRIB[21], ENTITY[17]) ∧ について_の_記録(ENTITY[18], ENTITY[17]) ∧
+                past(EVENT[11]) ∧
+                 past(EVENT[15]) ∧
+                  CONJ_te(で(EVENT[16], ENTITY[1], ENTITY[2]), で_ある(EVENT[22], ENTITY[1], ENTITY[17])))
+
+# ::id 14_wikipedia_KYOTO_CLT_00005,14;NJ
+# ::snt 日本 三 大 楽書 の 一 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  日本_三_大_楽書(ENTITY[3]) ∧
+   (CD_一(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 15_wikipedia_KYOTO_CLT_00005,15;NJ
+# ::snt 13 巻 22 冊 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ CD_13_巻_22_冊(ENTITY[2]) ∧ xxx(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 16_wikipedia_KYOTO_CLT_00005,16;NJ
+# ::snt 永正 9 年 成立 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_永正_9_年(TIME[2]) ∧ 成立(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 17_wikipedia_KYOTO_CLT_00005,17;NJ
+# ::snt 歴史
+∃ EVENT[2] ENTITY[1] (歴史(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 18_wikipedia_KYOTO_CLT_00005,18;NJ
+# ::snt 10 世紀 以前 に 中国 、 朝鮮半島 、 南アジア から 伝わっ た 儀式 用 の 音楽 が もと に なっ て いる 。
+∃ EVENT[5] EVENT[8] GROUP[4] ENTITY[3] ENTITY[6] ENTITY[7] ENTITY[1] (
+ (CD_10_世紀(ENTITY[3]), 以前(ENTITY[3])) ∧
+  is_element_of(ENTITY[中国], GROUP[4]) ∧ is_element_of(ENTITY[朝鮮半島], GROUP[4]) ∧ is_element_of(ENTITY[南アジア], GROUP[4]) ∧
+   儀式_用(ENTITY[6]) ∧
+    伝わっ_た(EVENT[5], ENTITY[1]) ∧ から(EVENT[5]) = GROUP[4] ∧ に(EVENT[5]) = ENTITY[3] ∧
+     の_音楽(ENTITY[6], ENTITY[1]) ∧
+     もと(ENTITY[7]) ∧ past(EVENT[5]) ∧ なっ_て_いる(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7])
+
+# ::id 19_wikipedia_KYOTO_CLT_00005,19;NJ
+# ::snt 中国 において 雅楽 ya-yüe といえば 儀式 に 催さ れる 音楽 で あっ た 。
+∃ EVENT[7] EVENT[8] ENTITY[2] ENTITY[3] ENTITY[6] ENTITY[4] ENTITY[1] (
+ 雅楽(ENTITY[3]) ∧
+  ya-yüe(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+    といえば(ENTITY[3], ENTITY[1]) ∧
+     儀式(ENTITY[6]) ∧
+      催さ(EVENT[7], _, ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ 音楽(ENTITY[4]) ∧
+       past(EVENT[8]) ∧ で_あっ_た(EVENT[8], ENTITY[1], ENTITY[4]) ∧ において(EVENT[8]) = ENTITY[中国])
+
+# ::id 20_wikipedia_KYOTO_CLT_00005,20;NJ
+# ::snt しかしながら 、 現在 日本 の 雅楽 で 演奏 さ れ て いる 曲目 の なか で 中国 から 伝わっ た と さ れる 唐楽 は 、 唐 の 燕楽 という 宴会 で 演奏 さ れ て い た 音楽 が もと に なっ て いる と さ れる 。
+∃ SITUATION[12] SITUATION[9] EVENT[16] EVENT[18] EVENT[19] ENTITY[15] ENTITY[17] ENTITY[13] EVENT[8] EVENT[10] EVENT[11] ENTITY[7] TIME[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 現在(TIME[6]) ∧
+  の_雅楽(ENTITY[日本], ENTITY[7]) ∧
+   演奏する.0_て_いる(EVENT[8], _, ENTITY[4]) ∧ で(EVENT[8]) = ENTITY[7] ∧
+    is_contained_in(時間(EVENT[8]), TIME[6]) ∧ 曲目(ENTITY[4]) ∧
+    の_なか(ENTITY[4], ENTITY[3]) ∧
+     FACT(SITUATION[9], 伝わっ_た(EVENT[10], ENTITY[1]) ∧ から(EVENT[10]) = ENTITY[中国]) ∧
+      さ(EVENT[11], _, ENTITY[1], SITUATION[9]) ∧ で(EVENT[11]) = ENTITY[3] ∧ 唐楽(ENTITY[1]) ∧
+       past(EVENT[10]) ∧
+        の_xxx(ENTITY[唐], ENTITY[燕楽]) ∧
+         という_宴会(ENTITY[燕楽], ENTITY[15]) ∧
+          演奏する.0_て_い_た(EVENT[16], _, ENTITY[13]) ∧ で(EVENT[16]) = ENTITY[15] ∧ 音楽(ENTITY[13]) ∧
+           もと(ENTITY[17]) ∧
+            FACT(SITUATION[12], なっ_て_いる(EVENT[18], (ENTITY[1], ENTITY[13])) ∧ に(EVENT[18]) = ENTITY[17]) ∧
+             past(EVENT[16]) ∧ さ(EVENT[19], _, ENTITY[1], SITUATION[12]))
+
+# ::id 21_wikipedia_KYOTO_CLT_00005,21;NJ
+# ::snt 日本 と 同様 に 中国 の 伝統 音楽 を とりいれ た ベトナム の 雅楽 （ nhãnhạc ） や 大韓民国 に 伝わる 国楽 と は 兄弟 関係 に あたる 。
+∃ ENTITY[1] EVENT[14] ENTITY[13] EVENT[5] EVENT[12] ENTITY[4] ENTITY[8] ENTITY[9] ENTITY[10] GROUP[7] ENTITY[2] (
+ の_伝統_音楽(ENTITY[中国], ENTITY[4]) ∧
+  の_雅楽(ENTITY[ベトナム], ENTITY[9]) ∧
+   nhãnhạc(ENTITY[8]) ∧
+    namely_-ENTITY-(ENTITY[8], ENTITY[9]) ∧
+     伝わる(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[大韓民国] ∧ 国楽(ENTITY[10]) ∧
+      CONJ_や(is_element_of(ENTITY[9], GROUP[7]), is_element_of(ENTITY[10], GROUP[7])) ∧
+       とりいれ_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ equals(GROUP[7], ENTITY[2]) ∧
+        と_ADV_同様_に(ENTITY[日本], EVENT[5]) ∧
+         past(EVENT[5]) ∧
+          ENTITY[1] = *pro* ∧
+           兄弟_関係(ENTITY[13]) ∧
+            あたる(EVENT[14], ENTITY[1]) ∧ に(EVENT[14]) = ENTITY[13] ∧ と(EVENT[14]) = ENTITY[2])
+
+# ::id 22_wikipedia_KYOTO_CLT_00005,22;NJ
+# ::snt 楽曲 の カテゴリー として も 、 唐楽 、 高麗楽 、 林邑楽 （ チャンパ の 音楽 ） 等 、 国際色 豊か な 名前 が 伝わっ て おり 、 大陸 の 音楽 伝来 以前 から の 日本 古来 の 音楽 の 要素 も 含ま れ て いる 。
+∃ EVENT[12] EVENT[13] EVENT[19] ENTITY[2] ENTITY[11] GROUP[4] ENTITY[3] ENTITY[1] ENTITY[17] ENTITY[18] ENTITY[16] ENTITY[15] ENTITY[14] (
+ 楽曲(ENTITY[2]) ∧
+  の_カテゴリー(ENTITY[2], ENTITY[1]) ∧
+   ∃ ENTITY[5] (唐楽(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (高麗楽(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    ∃ ENTITY[8] ENTITY[7] ENTITY[9] (
+     林邑楽(ENTITY[9]) ∧
+      チャンパ(ENTITY[8]) ∧
+       の_音楽(ENTITY[8], ENTITY[7]) ∧ namely_-ENTITY-(ENTITY[7], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[4])) ∧
+    国際色(ENTITY[11]) ∧
+     豊か_な(EVENT[12], (ENTITY[3], ENTITY[11])) ∧ 等_名前(GROUP[4], ENTITY[3]) ∧
+      大陸(ENTITY[17]) ∧
+       の_音楽_伝来_以前(ENTITY[17], ENTITY[16]) ∧
+        日本_古来(ENTITY[18]) ∧
+         の_音楽(ENTITY[18], ENTITY[15]) ∧ から_の_音楽(ENTITY[16], ENTITY[15]) ∧
+          の_要素(ENTITY[15], ENTITY[14]) ∧
+           伝わっ_て_おり(EVENT[13], ENTITY[3]) ∧ として(EVENT[13]) = ENTITY[1] ∧
+            含ま_て_いる(EVENT[19], _, ENTITY[14]))
+
+# ::id 23_wikipedia_KYOTO_CLT_00005,23;NJ
+# ::snt 近代 以前 において は 、 最古 の 様式 を 伝える 四天王寺 の 天王寺楽所 （ がくそ ） （ 大阪市 ） 、 宮中 の 大内楽所 （ 京都 ） 、 春日大社 の 南都楽所 （ 奈良市 ） が 三方楽所 と さ れ た 。
+∃ EVENT[8] GROUP[2] ENTITY[1] (
+ 近代_以前(ENTITY[1]) ∧
+  ∃ EVENT[6] ENTITY[5] ENTITY[4] (
+   最古(ENTITY[5]) ∧
+    の_様式(ENTITY[5], ENTITY[4]) ∧
+     伝える(EVENT[6], ENTITY[天王寺楽所], ENTITY[4]) ∧
+      の_xxx(ENTITY[四天王寺], ENTITY[天王寺楽所]) ∧
+       namely_-ENTITY-(ENTITY[がくそ], ENTITY[天王寺楽所]) ∧ namely_-ENTITY-(ENTITY[大阪市], ENTITY[天王寺楽所]) ∧ is_element_of(ENTITY[天王寺楽所], GROUP[2])) ∧
+   ∃ ENTITY[7] (
+    宮中(ENTITY[7]) ∧
+     の_xxx(ENTITY[7], ENTITY[大内楽所]) ∧ namely_-ENTITY-(ENTITY[京都], ENTITY[大内楽所]) ∧ is_element_of(ENTITY[大内楽所], GROUP[2])) ∧
+   の_xxx(ENTITY[春日大社], ENTITY[南都楽所]) ∧ namely_-ENTITY-(ENTITY[奈良市], ENTITY[南都楽所]) ∧ is_element_of(ENTITY[南都楽所], GROUP[2]) ∧
+   past(EVENT[8]) ∧ さ_た(EVENT[8], _, GROUP[2], ENTITY[三方楽所]) ∧ において(EVENT[8]) = ENTITY[1])
+
+# ::id 24_wikipedia_KYOTO_CLT_00005,24;NJ
+# ::snt これら の 楽所 は 近代 に なる と 東京 に 呼ば れ 、 現在 の 宮内庁 の 楽部 の 基礎 と なる が 、 それぞれ の 楽所 の 伝統 は それぞれ の 地 で 続い て いる 。
+∃ ENTITY[2] EVENT[9] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[1] ENTITY[10] (
+ ENTITY[2] = これら ∧
+  の_楽所(ENTITY[2], ENTITY[1]) ∧
+   それぞれ_の ENTITY[11] (楽所(ENTITY[11]), の_伝統(ENTITY[11], ENTITY[10])) ∧
+    現在(ENTITY[8]) ∧
+     の_楽部(ENTITY[宮内庁], ENTITY[7]) ∧ の__楽部(ENTITY[8], ENTITY[7]) ∧
+      の_基礎(ENTITY[7], ENTITY[6]) ∧
+       CONJ_が(∀ EVENT[4] ENTITY[3] CND_と(近代(ENTITY[3]) ∧ なる(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3],
+                ∃ EVENT[5] (呼ば(EVENT[5], _, ENTITY[1]) ∧ に(EVENT[5]) = ENTITY[東京])) ∧
+             なる(EVENT[9], ENTITY[1]) ∧ と(EVENT[9]) = ENTITY[6],
+        それぞれ_の ENTITY[12] (地(ENTITY[12]), ∃ EVENT[13] (続い_て_いる(EVENT[13], ENTITY[10]) ∧ で(EVENT[13]) = ENTITY[12]))))
+
+# ::id 25_wikipedia_KYOTO_CLT_00005,25;NJ
+# ::snt その 他 に も 民謡 や 声明 とも 相互 に 影響 が み られ 、 日本 独自 の 様式 が 作ら れ て き た 。
+∃ ATTRIB[10] EVENT[11] GROUP[3] ENTITY[9] ENTITY[1] (
+ 他(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[4] (民謡(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (声明(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   独自(ATTRIB[10]) ∧
+    ATTRIBUTE_xxx(ATTRIB[10], ENTITY[日本]) ∧
+     の_様式(ENTITY[日本], ENTITY[9]) ∧
+      past(EVENT[11]) ∧
+       とも ENTITY[2] (is_element_of(ENTITY[2], GROUP[3]),
+        ∃ EVENT[8] ENTITY[7] ENTITY[6] (
+         相互(ENTITY[6]) ∧
+          影響(ENTITY[7]) ∧
+           み(EVENT[8], _, ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[6] ∧
+            LINK(EVENT[8]) = ENTITY[2] ∧ に(EVENT[8]) = ENTITY[1])) ∧
+        作ら_て_き_た(EVENT[11], _, ENTITY[9]))
+
+# ::id 26_wikipedia_KYOTO_CLT_00005,26;NJ
+# ::snt 現在 、 100 曲 ほど が 宮内庁 式部 職楽 部 に 継承 さ れ て いる 。
+∃ EVENT[5] ENTITY[3] ENTITY[4] ENTITY[2] TIME[1] (
+ 現在(TIME[1]) ∧
+  CD_100_曲(ENTITY[3]) ∧
+   ほど(ENTITY[3], ENTITY[2]) ∧
+    宮内庁_式部_職楽_部(ENTITY[4]) ∧ 継承する.0_て_いる(EVENT[5], ENTITY[4], ENTITY[2]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]))
+
+# ::id 27_wikipedia_KYOTO_CLT_00005,27;NJ
+# ::snt 雅楽 の 曲 の 分類 と 演目
+∃ EVENT[7] ENTITY[3] GROUP[4] ENTITY[2] ENTITY[1] (
+ 雅楽(ENTITY[3]) ∧
+  の_曲(ENTITY[3], ENTITY[2]) ∧
+   CONJ_と(∃ ENTITY[5] (分類(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (演目(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    equals(GROUP[4], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+     xxx(EVENT[7]) ∧ LINK(EVENT[7]) = ENTITY[1])
+
+# ::id 28_wikipedia_KYOTO_CLT_00005,28;NJ
+# ::snt 日本 に 古く から 伝わる もの （ 国風歌舞 くにぶりのうたまい ）
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 古く(ENTITY[3]) ∧
+  伝わる(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[3] ∧ に(EVENT[4]) = ENTITY[日本] ∧
+   もの(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[国風歌舞], ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[くにぶりのうたまい], ENTITY[1]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 29_wikipedia_KYOTO_CLT_00005,43;NJ
+# ::snt 日本 国外 から 伝来 し た もの （ これ のみ を 雅楽 と する 見解 も ある 。 ）
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 日本_国外(ENTITY[3]) ∧
+  伝来する.0_た(EVENT[4], ENTITY[1]) ∧ から(EVENT[4]) = ENTITY[3] ∧ もの(ENTITY[1]) ∧
+   past(EVENT[4]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 30_wikipedia_KYOTO_CLT_00005,46;NJ
+# ::snt これら に は 上記 の 作風 を 真似 て 日本 で 制作 さ れ た 曲 （ 本邦楽 ） も 含む 。
+∃ ENTITY[1] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[3] (
+ ENTITY[1] = これら ∧
+  上記(ENTITY[6]) ∧
+   の_作風(ENTITY[6], ENTITY[5]) ∧
+    CONJ_te(真似_て(EVENT[7], ENTITY[3], ENTITY[5]),
+     制作する.0_た(EVENT[8], _, ENTITY[3]) ∧ で(EVENT[8]) = ENTITY[日本]) ∧ 曲(ENTITY[3]) ∧
+     本邦楽(ENTITY[2]) ∧
+      namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧ past(EVENT[8]) ∧ 含む(EVENT[9], ENTITY[1], ENTITY[3]))
+
+# ::id 31_wikipedia_KYOTO_CLT_00005,47;NJ
+# ::snt 平安 時代 に でき た 歌曲 （ 謡物 うたいもの ）
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 平安_時代(ENTITY[3]) ∧
+  でき_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 歌曲(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[謡物], ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[うたいもの], ENTITY[1]) ∧ past(EVENT[4]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 32_wikipedia_KYOTO_CLT_00005,54;NJ
+# ::snt 演奏 形態
+∃ EVENT[2] ENTITY[1] (演奏_形態(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 33_wikipedia_KYOTO_CLT_00005,55;NJ
+# ::snt 楽器 のみ の 演奏 を 管絃 と 言い 、 主として 屋内 で 演奏 さ れ 、 舞 を 伴う 演奏 を 舞楽 と 言い 、 主として 屋外 で 演奏 さ れる 。
+∃ ENTITY[16] ENTITY[10] ENTITY[6] ENTITY[1] EVENT[5] EVENT[8] EVENT[14] EVENT[15] EVENT[18] ENTITY[4] ENTITY[2] ENTITY[7] ENTITY[13] ENTITY[11] ENTITY[17] (
+ ENTITY[1] = *pro* ∧
+  楽器(ENTITY[4]) ∧
+   のみ ENTITY[3] (ENTITY[3] = ENTITY[4], の_演奏(ENTITY[3], ENTITY[2])) ∧
+    ENTITY[6] = *pro*{ENTITY[管絃], ENTITY[2], ENTITY[4]} ∧
+     屋内(ENTITY[7]) ∧
+      ENTITY[10] = *pro*{ENTITY[管絃], ENTITY[7], ENTITY[2], ENTITY[4]} ∧
+       舞(ENTITY[13]) ∧
+        伴う(EVENT[14], ENTITY[11], ENTITY[13]) ∧ 演奏(ENTITY[11]) ∧
+         ENTITY[16] = *pro*{ENTITY[舞楽], ENTITY[11], ENTITY[13], ENTITY[管絃], ENTITY[7], ENTITY[2], ENTITY[4]} ∧
+          屋外(ENTITY[17]) ∧
+           ADV_主として(EVENT[8]) ∧
+            ADV_主として(EVENT[18]) ∧
+             言い(EVENT[5], ENTITY[1], ENTITY[2], ENTITY[管絃]) ∧
+              演奏する.0(EVENT[8], _, ENTITY[6]) ∧ で(EVENT[8]) = ENTITY[7] ∧
+              言い(EVENT[15], ENTITY[10], ENTITY[11], ENTITY[舞楽]) ∧
+               演奏する.0(EVENT[18], _, ENTITY[16]) ∧ で(EVENT[18]) = ENTITY[17])
+
+# ::id 34_wikipedia_KYOTO_CLT_00005,56;NJ
+# ::snt 楽曲 の 様式
+∃ EVENT[3] ENTITY[2] ENTITY[1] (楽曲(ENTITY[2]) ∧ の_様式(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 35_wikipedia_KYOTO_CLT_00005,57;NJ
+# ::snt 曲 に は 序 （ じょ ） ・ 破 （ は ） ・ 急 （ きゅう ） が あり 、 西洋 音楽 で言う 第 一 楽章 、 第 二 楽章 、 第 三 楽章 を 言う 。
+∃ ENTITY[7] EVENT[6] EVENT[14] GROUP[2] GROUP[10] ENTITY[9] ENTITY[8] ENTITY[1] (
+ 曲(ENTITY[1]) ∧
+  ∃ ENTITY[3] (序(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[じょ], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ ENTITY[4] (破(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[は], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+   ∃ ENTITY[5] (急(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[きゅう], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[2])) ∧
+   ENTITY[7] = *pro*{ENTITY[1], ENTITY[きゅう], ENTITY[は], ENTITY[じょ]} ∧
+    西洋_音楽(ENTITY[9]) ∧
+     ∃ ENTITY[11] ((CD_第_一(ENTITY[11]), 楽章(ENTITY[11])) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+      ∃ ENTITY[12] ((CD_第_二(ENTITY[12]), 楽章(ENTITY[12])) ∧ is_element_of(ENTITY[12], GROUP[10])) ∧
+      ∃ ENTITY[13] ((CD_第_三(ENTITY[13]), 楽章(ENTITY[13])) ∧ is_element_of(ENTITY[13], GROUP[10])) ∧
+      equals(GROUP[10], ENTITY[8]) ∧ で言う(ENTITY[9], ENTITY[8]) ∧
+       あり(EVENT[6], GROUP[2]) ∧ に(EVENT[6]) = ENTITY[1] ∧ 言う(EVENT[14], ENTITY[7], ENTITY[8]))
+
+# ::id 36_wikipedia_KYOTO_CLT_00005,58;NJ
+# ::snt 序 は 一番 ゆったり し た 流れ で 、 自由 な 緩急 で 旋律 を 演奏 する 。
+∃ ATTRIB[9] ENTITY[7] ENTITY[2] ENTITY[10] ENTITY[8] EVENT[4] EVENT[6] EVENT[11] ENTITY[1] (
+ 序(ENTITY[1]) ∧
+  ADV_一番_ゆったり(EVENT[4]) ∧
+   past(EVENT[4]) ∧
+    し_た(EVENT[4], ENTITY[2]) ∧ 流れ(ENTITY[2]) ∧
+     ENTITY[7] = *pro*{ENTITY[2], ENTITY[1]} ∧
+      自由_な(ATTRIB[9]) ∧
+       ATTRIBUTE_緩急(ATTRIB[9], ENTITY[8]) ∧
+        旋律(ENTITY[10]) ∧
+         CONJ_te(で(EVENT[6], ENTITY[1], ENTITY[2]),
+          演奏する.0(EVENT[11], ENTITY[7], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[8]))
+
+# ::id 37_wikipedia_KYOTO_CLT_00005,59;NJ
+# ::snt 破 は ゆったり し た 流れ だ が 、 拍子 が 決め られ て い て 一 小節 を 八 拍 と し て 演奏 する 。
+∃ ENTITY[10] ENTITY[1] EVENT[5] EVENT[7] EVENT[9] EVENT[13] EVENT[14] ENTITY[3] ENTITY[8] ENTITY[12] ENTITY[11] ENTITY[2] (
+ 破(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   し_た(EVENT[5], ENTITY[3]) ∧ 流れ(ENTITY[3]) ∧
+    拍子(ENTITY[8]) ∧
+     ENTITY[10] = *pro*{ENTITY[2], ENTITY[8], ENTITY[3]} ∧
+      CD_一_小節(ENTITY[11]) ∧
+       CD_八_拍(ENTITY[12]) ∧
+        ADV_ゆったり(EVENT[5]) ∧
+         past(EVENT[5]) ∧
+          CONJ_te(CONJ_が(だ(EVENT[7], ENTITY[2], ENTITY[3]),
+                決め_て_い(EVENT[9], (_, ENTITY[8]), ENTITY[2])),
+           CONJ_te(し_て(EVENT[13], ENTITY[1], ENTITY[11], ENTITY[12]), 演奏する.0(EVENT[14], ENTITY[1], ENTITY[10]))))
+
+# ::id 38_wikipedia_KYOTO_CLT_00005,60;NJ
+# ::snt 急 は さっくり し た 流れ と なり 、 拍子 は 一 小節 を 四 拍 と し て 演奏 する 。
+∃ ENTITY[7] ENTITY[1] EVENT[5] EVENT[6] EVENT[11] EVENT[12] ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[2] ENTITY[8] (
+ 急(ENTITY[2]) ∧
+  拍子(ENTITY[8]) ∧
+   ENTITY[1] = *pro* ∧
+    さっくりする.0_た(EVENT[5], ENTITY[3]) ∧ 流れ(ENTITY[3]) ∧
+     ENTITY[7] = *pro*{ENTITY[2], ENTITY[3]} ∧
+      CD_一_小節(ENTITY[9]) ∧
+       CD_四_拍(ENTITY[10]) ∧
+        past(EVENT[5]) ∧
+         なり(EVENT[6], ENTITY[2]) ∧ と(EVENT[6]) = ENTITY[3] ∧
+          CONJ_te(し_て(EVENT[11], ENTITY[1], ENTITY[9], ENTITY[10]) ∧ TPC(EVENT[11]) = ENTITY[8],
+           演奏する.0(EVENT[12], ENTITY[1], ENTITY[7])))
+
+# ::id 39_wikipedia_KYOTO_CLT_00005,61;NJ
+# ::snt ただし 、 演目 によって は 必ずしも 急 が 速い テンポ と は なら ない ので 、 あくまでも 一 組 の 曲 の 3 番目 ぐらい の 意味 で ある 。
+∃ ATTRIB[6] SITUATION[3] ENTITY[1] EVENT[7] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[14] ENTITY[13] ENTITY[12] ENTITY[10] ENTITY[2] (
+ 演目(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   急(ENTITY[4]) ∧
+    速い(ATTRIB[6]) ∧
+     ATTRIBUTE_テンポ(ATTRIB[6], ENTITY[5]) ∧
+      FACT(SITUATION[3], xxx(EVENT[7], ENTITY[4], ENTITY[5])) ∧
+       CD_一_組(ENTITY[14]) ∧
+        の_曲(ENTITY[14], ENTITY[13]) ∧
+         (CD_3_番目(ENTITY[12]), の(ENTITY[13], ENTITY[12])) ∧
+          ぐらい ENTITY[11] (ENTITY[11] = ENTITY[12], の_意味(ENTITY[11], ENTITY[10])) ∧
+           ADV_必ずしも(EVENT[7]) ∧
+            ADV_あくまでも(EVENT[15]) ∧
+             CRD_ので(¬ ∃ EVENT[8] (なら(EVENT[8], ENTITY[1], SITUATION[3]) ∧ によって(EVENT[8]) = ENTITY[2]),
+              で_ある(EVENT[15], ENTITY[1], ENTITY[10])))
+
+# ::id 40_wikipedia_KYOTO_CLT_00005,62;NJ
+# ::snt 多く の 場合 、 破 のみ あるいは 急 のみ の 演奏 と なる 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  多く_の ENTITY[2] (場合(ENTITY[2]),
+   ∃ EVENT[8] ENTITY[5] ENTITY[7] ENTITY[3] (
+    破(ENTITY[5]) ∧
+     急(ENTITY[7]) ∧
+      CONJ_あるいは(のみ ENTITY[4] (ENTITY[4] = ENTITY[5], LINK_演奏(ENTITY[4], ENTITY[3])),
+       のみ ENTITY[6] (ENTITY[6] = ENTITY[7], LINK_演奏(ENTITY[6], ENTITY[3]))) ∧
+       なる(EVENT[8], ENTITY[1]) ∧ と(EVENT[8]) = ENTITY[3] ∧ ADV(EVENT[8]) = ENTITY[2])))
+
+# ::id 41_wikipedia_KYOTO_CLT_00005,63;NJ
+# ::snt 序 ・ 破 ・ 急 を 通し で 演奏 する こと を 「 一具 」 と 呼ぶ 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[9] EVENT[10] ENTITY[8] GROUP[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ∃ ENTITY[5] (序(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])) ∧
+    ∃ ENTITY[6] (破(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4])) ∧
+    ∃ ENTITY[7] (急(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4])) ∧
+    通し(ENTITY[8]) ∧
+     こと(SITUATION[2], 演奏する.0(EVENT[9], ENTITY[3], GROUP[4]) ∧ で(EVENT[9]) = ENTITY[8]) ∧
+      呼ぶ(EVENT[10], ENTITY[1], SITUATION[2], ENTITY[一具]))
+
+# ::id 42_wikipedia_KYOTO_CLT_00005,64;NJ
+# ::snt 曲 の 調子
+∃ EVENT[3] ENTITY[2] ENTITY[1] (曲(ENTITY[2]) ∧ の_調子(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 43_wikipedia_KYOTO_CLT_00005,65;NJ
+# ::snt 曲 の 調子 に は 何 種類 か 有っ た が 、 現在 は 、 唐楽 に 6 種類 、 高麗楽 に 3 種類 が 残る 。
+∃ GROUP[6] EVENT[11] ENTITY[2] ENTITY[5] ENTITY[1] (
+ 曲(ENTITY[2]) ∧
+  の_調子(ENTITY[2], ENTITY[1]) ∧
+   現在(ENTITY[5]) ∧
+    ∃ ENTITY[8] ENTITY[7] (
+     唐楽(ENTITY[8]) ∧
+      (CD_6_種類(ENTITY[7]), に(ENTITY[8], ENTITY[7])) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+     ∃ ENTITY[10] ENTITY[9] (
+      高麗楽(ENTITY[10]) ∧
+       (CD_3_種類(ENTITY[9]), に(ENTITY[10], ENTITY[9])) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+     CONJ_が(か ENTITY[3] (何_種類(ENTITY[3]),
+           ∃ EVENT[4] (past(EVENT[4]) ∧ 有っ_た(EVENT[4], ENTITY[1]) ∧ MSR(EVENT[4]) = ENTITY[3])),
+      残る(EVENT[11], (ENTITY[1], GROUP[6])) ∧ 時間(EVENT[11]) = ENTITY[5]))
+
+# ::id 44_wikipedia_KYOTO_CLT_00005,74;NJ
+# ::snt （ 黄鐘調 、 平調 、 盤渉調 は 対応 する 洋音階 の 自然 短音階 と 比べ て ラ に 相当 する 音 が 半 音 高い （ ドリア旋法 と 同様 ） 、
+∃ ATTRIB[16] ENTITY[7] EVENT[8] EVENT[10] EVENT[13] EVENT[17] ENTITY[9] ENTITY[5] ENTITY[15] DEGREE[14] ENTITY[11] ENTITY[2] ENTITY[3] ENTITY[4] GROUP[1] (
+ 黄鐘調(ENTITY[2]) ∧
+  平調(ENTITY[3]) ∧
+   盤渉調(ENTITY[4]) ∧
+    is_element_of(ENTITY[2], GROUP[1]) ∧ is_element_of(ENTITY[3], GROUP[1]) ∧ is_element_of(ENTITY[4], GROUP[1]) ∧
+     ENTITY[7] = *pro*{ENTITY[4], ENTITY[3], ENTITY[2]} ∧
+      洋音階(ENTITY[9]) ∧
+       対応する.0(EVENT[8], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[5] ∧ の_自然_短音階(ENTITY[9], ENTITY[5]) ∧
+        相当する.0(EVENT[13], ENTITY[11]) ∧ に(EVENT[13]) = ENTITY[ラ] ∧ 音(ENTITY[11]) ∧
+         CD_半_音(DEGREE[14]) ∧
+          と_同様(ENTITY[ドリア旋法], ATTRIB[16]) ∧
+           ATTRIBUTE(ATTRIB[16], ENTITY[15]) ∧
+            CONJ_te(比べ_て(EVENT[10], GROUP[1]) ∧ と(EVENT[10]) = ENTITY[5],
+             高い(EVENT[17], (GROUP[1], ENTITY[11])) ∧ LINK(EVENT[17]) = ENTITY[15] ∧
+              MSR(EVENT[17]) = DEGREE[14]))
+
+# ::id 45_wikipedia_KYOTO_CLT_00005,74;NJ
+# ::snt 高麗平調 は 洋音階 と 同じ ）
+∃ EVENT[3] ENTITY[2] ENTITY[1] (高麗平調(ENTITY[1]) ∧ 洋音階(ENTITY[2]) ∧ 同じ(EVENT[3], ENTITY[1]) ∧ と(EVENT[3]) = ENTITY[2])
+
+# ::id 46_wikipedia_KYOTO_CLT_00005,75;NJ
+# ::snt 渡し物
+∃ EVENT[2] ENTITY[1] (渡し物(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 47_wikipedia_KYOTO_CLT_00005,76;NJ
+# ::snt 雅楽 の レパートリー で 親しま れ て いる 調子 と は 別 の 調子 に 乗っ取っ て 演奏 する 事 も 可能 で ある （ 「 渡し物 」 と 称する ） 。
+∃ SITUATION[2] ENTITY[1] EVENT[10] EVENT[11] EVENT[12] ENTITY[4] ENTITY[3] EVENT[9] ENTITY[8] ENTITY[7] ENTITY[5] (
+ 雅楽(ENTITY[8]) ∧
+  の_レパートリー(ENTITY[8], ENTITY[7]) ∧
+   親しま_て_いる(EVENT[9], _, ENTITY[5]) ∧ で(EVENT[9]) = ENTITY[7] ∧ 調子(ENTITY[5]) ∧
+    ENTITY[1] = *pro* ∧
+     と_別(ENTITY[5], ENTITY[4]) ∧
+      の_調子(ENTITY[4], ENTITY[3]) ∧
+       事(SITUATION[2],
+        CONJ_te(乗っ取っ_て(EVENT[10], ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[3],
+         演奏する.0(EVENT[11], ENTITY[1]))) ∧ 可能_で_ある(EVENT[12], ENTITY[1], SITUATION[2]))
+
+# ::id 48_wikipedia_KYOTO_CLT_00005,77;NJ
+# ::snt その 場合 は 西洋 音楽 の 移調 と は 異なり 、 その 調子 に 含ま れる 音階 に 沿っ て 演奏 さ れる ため 、 メロディ ライン が 若干 変化 する 。
+∃ SITUATION[6] ENTITY[1] EVENT[5] EVENT[10] EVENT[11] EVENT[12] EVENT[15] ENTITY[7] ENTITY[14] ENTITY[13] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[2] (
+ 場合(ENTITY[2]) ∧
+  西洋_音楽(ENTITY[4]) ∧
+   の_移調(ENTITY[4], ENTITY[3]) ∧
+    調子(ENTITY[9]) ∧
+     ENTITY[1] = *pro* ∧
+      含ま(EVENT[10], _, ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 音階(ENTITY[7]) ∧
+       FACT(SITUATION[6],
+        CONJ_te(沿っ_て(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = ENTITY[7],
+         演奏する.0(EVENT[12], _, ENTITY[1]))) ∧
+        メロディ_ライン(ENTITY[13]) ∧
+         若干(ENTITY[14]) ∧
+          異なり(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[3] ∧
+           変化する.0(EVENT[15], (ENTITY[1], ENTITY[13])) ∧ ADV(EVENT[15]) = ENTITY[14] ∧
+            ため(EVENT[15]) = SITUATION[6] ∧ ADV(EVENT[15]) = ENTITY[2])
+
+# ::id 49_wikipedia_KYOTO_CLT_00005,78;NJ
+# ::snt 『 越天楽 』 を 平調 と 盤渉調 で 聴き 比べ て 例 に 挙げる と 、 平調 で は 「 D-EEBBABEEEDE 」 と なる が 、 これ を 西洋 音楽 の 論理 に 乗っ取っ て 完全 5 度 下 に 移調 する と 「 G-AAEEDEAAAGA 」 と なる 。
+∃ ENTITY[1] ENTITY[9] (
+ 平調(ENTITY[9]) ∧
+  ENTITY[1] = *pro* ∧
+   ∀ ENTITY[2] EVENT[6] EVENT[8] GROUP[3] ENTITY[7] CND_と(
+       ENTITY[2] = *pro*{ENTITY[1]} ∧
+        CONJ_と(∃ ENTITY[4] (平調(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+         ∃ ENTITY[5] (盤渉調(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧ 例(ENTITY[7]) ∧
+        CONJ_te(聴き_比べ_て(EVENT[6], ENTITY[2], ENTITY[越天楽]) ∧ で(EVENT[6]) = GROUP[3],
+         挙げる(EVENT[8], ENTITY[2], ENTITY[越天楽]) ∧ に(EVENT[8]) = ENTITY[7]),
+       ∃ EVENT[10] CONJ_が(なる(EVENT[10], ENTITY[1]) ∧ と(EVENT[10]) = ENTITY[D-EEBBABEEEDE] ∧ で(EVENT[10]) = ENTITY[9],
+        ∀ ATTRIB[17] ENTITY[12] ENTITY[11] EVENT[15] EVENT[18] ENTITY[14] ENTITY[13] ENTITY[16] CND_と(
+            ENTITY[11] = *pro*{ENTITY[1], ENTITY[9], ENTITY[D-EEBBABEEEDE], ENTITY[越天楽], ENTITY[7]} ∧
+             ENTITY[12] = これ{ENTITY[1], ENTITY[9], ENTITY[D-EEBBABEEEDE], ENTITY[越天楽], ENTITY[7]} ∧ 西洋_音楽(ENTITY[14]) ∧
+             の_論理(ENTITY[14], ENTITY[13]) ∧ 完全(ATTRIB[17]) ∧
+             (CD_5_度(ENTITY[16]), ATTRIBUTE_下(ATTRIB[17], ENTITY[16])) ∧
+             CONJ_te(乗っ取っ_て(EVENT[15], ENTITY[11], ENTITY[12]) ∧ に(EVENT[15]) = ENTITY[13],
+              移調する.0(EVENT[18], ENTITY[11], ENTITY[12]) ∧ に(EVENT[18]) = ENTITY[16]),
+            ∃ EVENT[19] (なる(EVENT[19], ENTITY[1]) ∧ と(EVENT[19]) = ENTITY[G-AAEEDEAAAGA])))))
+
+# ::id 50_wikipedia_KYOTO_CLT_00005,79;NJ
+# ::snt それ に対して 盤渉調 で は 「 G-AAFFEFBBBAB 」 と なり 、 途中 から 完全 4 度 下 の 移調 に なっ て いる 事 が 判る 。
+∃ ATTRIB[10] ENTITY[6] SITUATION[5] ENTITY[2] ENTITY[1] EVENT[4] EVENT[11] EVENT[12] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[3] (
+ 盤渉調(ENTITY[3]) ∧
+  ENTITY[1] = それ ∧
+   ENTITY[2] = *pro*{ENTITY[1]} ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[3], ENTITY[G-AAFFEFBBBAB]} ∧
+     途中(ENTITY[7]) ∧
+      完全(ATTRIB[10]) ∧
+       (CD_4_度(ENTITY[9]), ATTRIBUTE_下(ATTRIB[10], ENTITY[9])) ∧
+        の_移調(ENTITY[9], ENTITY[8]) ∧
+         事(SITUATION[5],
+          なっ_て_いる(EVENT[11], ENTITY[6]) ∧ に(EVENT[11]) = ENTITY[8] ∧
+           から(EVENT[11]) = ENTITY[7]) ∧
+          なり(EVENT[4], ENTITY[2]) ∧ と(EVENT[4]) = ENTITY[G-AAFFEFBBBAB] ∧ で(EVENT[4]) = ENTITY[3] ∧
+           判る(EVENT[12], SITUATION[5]) ∧ に対して(EVENT[12]) = ENTITY[1])
+
+# ::id 51_wikipedia_KYOTO_CLT_00005,80;NJ
+# ::snt これ は 、 一 つ に は 現代 使用 さ れ て いる 楽器 が 平調 の ため の もの で 、 特に 、 主 旋律 を 奏する 篳篥 の 音域 が 狭い ため 、 他 の 調子 を 演奏 する とき に 、 部分的 に 変え て 演奏 せ ざるを得ない ため で ある 。
+∃ SITUATION[21] ENTITY[23] SITUATION[22] ATTRIB[18] SITUATION[5] ENTITY[4] SITUATION[3] ENTITY[1] EVENT[9] EVENT[13] EVENT[19] EVENT[20] EVENT[26] EVENT[27] EVENT[30] TIME[8] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[17] ENTITY[15] ENTITY[14] ENTITY[6] ENTITY[25] ENTITY[24] ENTITY[2] (
+ ENTITY[1] = これ ∧
+  CD_一_つ(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    現代(TIME[8]) ∧
+     使用する.0_て_いる(EVENT[9], _, ENTITY[6]) ∧ is_contained_in(時間(EVENT[9]), TIME[8]) ∧ 楽器(ENTITY[6]) ∧
+      平調(ENTITY[12]) ∧
+       の_ため(ENTITY[12], ENTITY[11]) ∧
+        の_もの(ENTITY[11], ENTITY[10]) ∧
+         主(ATTRIB[18]) ∧
+          ATTRIBUTE_旋律(ATTRIB[18], ENTITY[17]) ∧
+           奏する(EVENT[19], ENTITY[15], ENTITY[17]) ∧ 篳篥(ENTITY[15]) ∧
+            の_音域(ENTITY[15], ENTITY[14]) ∧
+             FACT(SITUATION[5],
+              CONJ_te(で(EVENT[13], ENTITY[6], ENTITY[10]),
+               FACT(SITUATION[21], 狭い(EVENT[20], (ENTITY[6], ENTITY[14]))))) ∧
+              ENTITY[23] = *pro*{ENTITY[4], ENTITY[6], ENTITY[14], ENTITY[15], ENTITY[17], ENTITY[10], ENTITY[11], ENTITY[12], ENTITY[1], ENTITY[2]} ∧
+               他(ENTITY[25]) ∧
+                の_調子(ENTITY[25], ENTITY[24]) ∧
+                 とき(SITUATION[22], 演奏する.0(EVENT[26], ENTITY[23], ENTITY[24])) ∧
+                  ため(SITUATION[3],
+                   CONJ_te(変え_て(EVENT[27], ENTITY[4]) ∧ に(EVENT[27]) = SITUATION[22] ∧
+                         ため(EVENT[27]) = SITUATION[5],
+                    MD_ざるを得ない(∃ EVENT[29] (
+                          演奏する.0(EVENT[29], ENTITY[4]) ∧
+                           に(EVENT[29]) = SITUATION[22] ∧
+                            ため(EVENT[29]) = SITUATION[5])))) ∧
+                   ADV_特に(SITUATION[21]) ∧
+                    ADV_部分的_に(EVENT[27]) ∧
+                     で_ある(EVENT[30], ENTITY[1], SITUATION[3]) ∧ に(EVENT[30]) = ENTITY[2])
+
+# ::id 52_wikipedia_KYOTO_CLT_00005,81;NJ
+# ::snt この よう な 部分 で 龍笛 が 補足的 に 本来 の 音 に 近い メロディー を 吹く こと に なり 、 その 部分 が ヘテロフォニー と 呼ば れる 、 ずれ の 現象 を 伴っ て 演奏 さ れる こと により 、 独特 の 味わい が でる こと と なる 。
+∃ SITUATION[25] SITUATION[14] ATTRIB[8] SITUATION[6] ENTITY[10] ENTITY[9] ENTITY[7] ENTITY[5] ENTITY[1] ENTITY[18] ENTITY[20] ENTITY[16] ENTITY[24] ENTITY[23] EVENT[4] EVENT[11] EVENT[13] EVENT[19] EVENT[21] EVENT[22] EVENT[26] EVENT[27] ENTITY[3] ENTITY[15] (
+ よう(ENTITY[3]) ∧
+  部分(ENTITY[15]) ∧
+   ADV_補足的_に(EVENT[11]) ∧
+    な(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 部分(ENTITY[1]) ∧
+     龍笛(ENTITY[5]) ∧
+      本来(ENTITY[10]) ∧
+       の_音(ENTITY[10], ENTITY[9]) ∧
+        に_近い(ENTITY[9], ATTRIB[8]) ∧
+         ATTRIBUTE_メロディー(ATTRIB[8], ENTITY[7]) ∧
+          こと(SITUATION[6], 吹く(EVENT[11], ENTITY[5], ENTITY[7])) ∧
+           ヘテロフォニー(ENTITY[18]) ∧
+            ずれ(ENTITY[20]) ∧
+             呼ば(EVENT[19], _, ENTITY[16], ENTITY[18]) ∧ の_現象(ENTITY[20], ENTITY[16]) ∧
+              こと(SITUATION[14],
+               CONJ_te(伴っ_て(EVENT[21], ENTITY[15], ENTITY[16]), 演奏する.0(EVENT[22], _, ENTITY[15]))) ∧
+               独特(ENTITY[24]) ∧
+                の_味わい(ENTITY[24], ENTITY[23]) ∧
+                 こと(SITUATION[25], でる(EVENT[26], ENTITY[23])) ∧
+                  なり(EVENT[13], ENTITY[5], SITUATION[6]) ∧ で(EVENT[13]) = ENTITY[1] ∧
+                   なる(EVENT[27], ENTITY[23], SITUATION[25]) ∧ により(EVENT[27]) = SITUATION[14])
+
+# ::id 53_wikipedia_KYOTO_CLT_00005,82;NJ
+# ::snt 実際 は 、 更に 複雑 で 、 黄鐘調 や 盤渉調 の 『 越天楽 』 を 、 聞き 慣れ た 平調 と 聞き 比べる と 、 同じ 曲 と は 思え ない ほど 、 全く 違う 雰囲気 に なる 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (
+ 実際(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ADV_更に(EVENT[3]) ∧
+    CONJ_te(複雑_で(EVENT[3], ENTITY[1]) ∧ ADV(EVENT[3]) = ENTITY[2],
+     ∀ ENTITY[5] EVENT[11] EVENT[12] GROUP[6] ENTITY[9] CND_と(
+         ENTITY[5] = *pro*{ENTITY[1], ENTITY[2]} ∧
+          CONJ_や(∃ ENTITY[7] (黄鐘調(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+           ∃ ENTITY[8] (盤渉調(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧ の_xxx(GROUP[6], ENTITY[越天楽]) ∧
+          聞き_慣れ_た(EVENT[11], ENTITY[9]) ∧ 平調(ENTITY[9]) ∧ past(EVENT[11]) ∧
+          聞き_比べる(EVENT[12], ENTITY[5], ENTITY[越天楽]) ∧ と(EVENT[12]) = ENTITY[9],
+         ∃ ATTRIB[19] ENTITY[17] SITUATION[16] SITUATION[15] EVENT[20] EVENT[22] EVENT[24] ENTITY[18] ENTITY[13] (
+          ENTITY[17] = *pro*{ENTITY[13], ENTITY[1], ENTITY[越天楽], ENTITY[9], ENTITY[2]} ∧
+           同じ(ATTRIB[19]) ∧
+            ATTRIBUTE_曲(ATTRIB[19], ENTITY[18]) ∧
+             FACT(SITUATION[16], xxx(EVENT[20], ENTITY[17], ENTITY[18])) ∧
+              FACT(SITUATION[15], ¬ ∃ EVENT[21] 思え(EVENT[21], ENTITY[13], SITUATION[16])) ∧
+               違う(EVENT[22], ENTITY[13]) ∧ ほど(EVENT[22]) = SITUATION[15] ∧ 雰囲気(ENTITY[13]) ∧
+                ADV_全く(EVENT[22]) ∧ なる(EVENT[24], ENTITY[1]) ∧ に(EVENT[24]) = ENTITY[13]))))
+
+# ::id 54_wikipedia_KYOTO_CLT_00005,83;NJ
+# ::snt 譜面 も 別に 作成 さ れ 、 唱歌 も 変わる 。
+∃ EVENT[2] EVENT[5] ENTITY[1] ENTITY[4] (
+ 譜面(ENTITY[1]) ∧
+  唱歌(ENTITY[4]) ∧ ADV_別に(EVENT[2]) ∧ 作成する.0(EVENT[2], _, ENTITY[1]) ∧ 変わる(EVENT[5], ENTITY[4]))
+
+# ::id 55_wikipedia_KYOTO_CLT_00005,84;NJ
+# ::snt 『 迦陵頻 』 に於いて は 、 渡し物 で は 曲名 も 『 鳥 』 に 変わる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 渡し物(ENTITY[1]) ∧
+  曲名(ENTITY[2]) ∧
+   変わる(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[鳥] ∧ で(EVENT[3]) = ENTITY[1] ∧
+    に於いて(EVENT[3]) = ENTITY[迦陵頻])
+
+# ::id 56_wikipedia_KYOTO_CLT_00005,85;NJ
+# ::snt 実は 、 リズム も 渡し物 において 変化 する こと が ある 。
+∃ SITUATION[6] SITUATION[2] EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ リズム(ENTITY[1]) ∧
+  渡し物(ENTITY[3]) ∧
+   こと(SITUATION[2], 変化する.0(EVENT[4], ENTITY[1]) ∧ において(EVENT[4]) = ENTITY[3]) ∧
+    ADV_実は(SITUATION[6]) ∧ FACT(SITUATION[6], ある(EVENT[5], ENTITY[1], SITUATION[2])))
+
+# ::id 57_wikipedia_KYOTO_CLT_00005,86;NJ
+# ::snt 管弦 で は 只拍子 （ 6 拍子 ） で 演奏 さ れる 曲 が 舞楽 に なる と 夜多羅拍子 （ 5 拍子 ） と なっ て 変わっ て しまう もの が いく つ か ある 。
+∃ ENTITY[2] ENTITY[1] (
+ 管弦(ENTITY[1]) ∧
+  ∀ EVENT[8] EVENT[10] ENTITY[6] ENTITY[7] ENTITY[9] ENTITY[4] CND_と(
+      只拍子(ENTITY[7]) ∧ CD_6_拍子(ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+       演奏する.0(EVENT[8], _, ENTITY[4]) ∧ で(EVENT[8]) = ENTITY[7] ∧ 曲(ENTITY[4]) ∧
+       舞楽(ENTITY[9]) ∧ なる(EVENT[10], ENTITY[4]) ∧ に(EVENT[10]) = ENTITY[9],
+      ∃ EVENT[12] EVENT[13] ENTITY[11] (
+       CD_5_拍子(ENTITY[11]) ∧
+        namely_-ENTITY-(ENTITY[11], ENTITY[夜多羅拍子]) ∧
+         CONJ_te(なっ_て(EVENT[12], ENTITY[2]) ∧ と(EVENT[12]) = ENTITY[夜多羅拍子],
+          変わっ_て_しまう(EVENT[13], ENTITY[2])))) ∧ もの(ENTITY[2]) ∧
+   か ENTITY[14] (いく_つ(ENTITY[14]),
+    ∃ EVENT[15] (ある(EVENT[15], ENTITY[2]) ∧ MSR(EVENT[15]) = ENTITY[14] ∧ で(EVENT[15]) = ENTITY[1])))
+
+# ::id 58_wikipedia_KYOTO_CLT_00005,87;NJ
+# ::snt 一 つ の 曲 に 使用 さ れる 音列 が 変わっ たり 、 リズム が 変わっ たり する ところ は インド の 古典 音楽 の ラーガマーリカ （ ラーガ を 変え ながら 演奏 ） や ターラマーリカ （ リズム を 変え ながら 演奏 ） 等 と 共通 する もの が あり 、 特に 雅楽 で 言う 拍 の 概念 は インド の ターラ の 概念 に 近い もの が ある こと は 、 小泉 文夫 の 指摘 する ところ で ある 。
+∃ ATTRIB[27] SITUATION[19] SITUATION[2] SITUATION[1] ENTITY[22] EVENT[7] EVENT[8] EVENT[10] EVENT[11] EVENT[17] EVENT[18] EVENT[29] EVENT[33] EVENT[34] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[9] GROUP[15] ENTITY[14] ENTITY[12] ENTITY[28] ENTITY[26] ENTITY[31] EVENT[24] ENTITY[23] ENTITY[25] ENTITY[20] (
+ ENTITY[22] = *pro*{ENTITY[ターラマーリカ], ENTITY[ラーガマーリカ], ENTITY[インド], ENTITY[12], ENTITY[14], ENTITY[9], ENTITY[3], ENTITY[5], ENTITY[6]} ∧
+  雅楽(ENTITY[23]) ∧
+   拍(ENTITY[25]) ∧
+    言う(EVENT[24], ENTITY[22], ENTITY[20]) ∧ で(EVENT[24]) = ENTITY[23] ∧ の_概念(ENTITY[25], ENTITY[20]) ∧
+     CD_一_つ(ENTITY[6]) ∧
+      の_曲(ENTITY[6], ENTITY[5]) ∧
+       使用する.0(EVENT[7], _, ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[5] ∧ 音列(ENTITY[3]) ∧
+        リズム(ENTITY[9]) ∧
+         FACT(SITUATION[2], CONJ_たり(変わっ(EVENT[8], ENTITY[3]), 変わっ(EVENT[10], ENTITY[9]))) ∧
+          ところ(SITUATION[1], する(EVENT[11]) ∧ たり(EVENT[11]) = SITUATION[2]) ∧
+           CONJ_や(∃ ENTITY[16] (
+                 の_古典_音楽(ENTITY[インド], ENTITY[16]) ∧
+                  の_xxx(ENTITY[16], ENTITY[ラーガマーリカ]) ∧ is_element_of(ENTITY[ラーガマーリカ], GROUP[15])),
+            is_element_of(ENTITY[ターラマーリカ], GROUP[15])) ∧
+            等(GROUP[15], ENTITY[14]) ∧
+             共通する.0(EVENT[17], ENTITY[12]) ∧ と(EVENT[17]) = ENTITY[14] ∧ もの(ENTITY[12]) ∧
+              の_xxx(ENTITY[インド], ENTITY[ターラ]) ∧
+               の_概念(ENTITY[ターラ], ENTITY[28]) ∧
+                に_近い(ENTITY[28], ATTRIB[27]) ∧
+                 ATTRIBUTE_もの(ATTRIB[27], ENTITY[26]) ∧
+                  こと(SITUATION[19], ある(EVENT[29], (ENTITY[20], ENTITY[26]))) ∧
+                   指摘する.0(EVENT[33], ENTITY[小泉_文夫], ENTITY[31]) ∧ ところ(ENTITY[31]) ∧
+                    ADV_特に(EVENT[29]) ∧
+                     あり(EVENT[18], (SITUATION[1], ENTITY[12])) ∧ で_ある(EVENT[34], SITUATION[19], ENTITY[31]))
+
+# ::id 59_wikipedia_KYOTO_CLT_00005,88;NJ
+# ::snt 舞楽 の 種類
+∃ EVENT[3] ENTITY[2] ENTITY[1] (舞楽(ENTITY[2]) ∧ の_種類(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 60_wikipedia_KYOTO_CLT_00005,89;NJ
+# ::snt 広義 に は 国風歌舞 も 含ま れる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 広義(ENTITY[1]) ∧
+  国風歌舞(ENTITY[2]) ∧ 含ま(EVENT[3], _, ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 61_wikipedia_KYOTO_CLT_00005,90;NJ
+# ::snt 以下 の 分類 に は 例外 や 異論 も ある 。
+∃ EVENT[6] GROUP[3] ENTITY[2] ENTITY[1] (
+ 以下(ENTITY[2]) ∧
+  の_分類(ENTITY[2], ENTITY[1]) ∧
+   CONJ_や(∃ ENTITY[4] (例外(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (異論(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+    ある(EVENT[6], GROUP[3]) ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 62_wikipedia_KYOTO_CLT_00005,91;NJ
+# ::snt 左方 と 右方
+∃ EVENT[4] GROUP[1] (
+ CONJ_と(∃ ENTITY[2] (左方(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ENTITY[3] (右方(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1]))) ∧
+  xxx(EVENT[4]) ∧ LINK(EVENT[4]) = GROUP[1])
+
+# ::id 63_wikipedia_KYOTO_CLT_00005,92;NJ
+# ::snt 唐 を 経由 し て 伝来 し た もの を 左方舞 （ 左舞 ） と 言い 、 伴奏 音楽 を 唐楽 と 呼ぶ 。
+∃ ENTITY[1] EVENT[5] EVENT[6] EVENT[9] EVENT[12] ENTITY[4] ENTITY[7] ENTITY[8] ENTITY[2] ENTITY[11] ENTITY[10] (
+ ENTITY[1] = *pro* ∧
+  唐(ENTITY[4]) ∧
+   CONJ_te(経由する.0_て(EVENT[5], ENTITY[2], ENTITY[4]), 伝来する.0_た(EVENT[6], ENTITY[2])) ∧ もの(ENTITY[2]) ∧
+    左方舞(ENTITY[8]) ∧
+     左舞(ENTITY[7]) ∧
+      namely_-ENTITY-(ENTITY[7], ENTITY[8]) ∧
+       伴奏_音楽(ENTITY[10]) ∧
+        唐楽(ENTITY[11]) ∧
+         past(EVENT[6]) ∧
+          言い(EVENT[9], ENTITY[1], ENTITY[2], ENTITY[8]) ∧ 呼ぶ(EVENT[12], ENTITY[1], ENTITY[10], ENTITY[11]))
+
+# ::id 64_wikipedia_KYOTO_CLT_00005,93;NJ
+# ::snt 朝鮮半島 （ 高麗 ） を 経由 し て 伝来 し た もの を 右方舞 （ 右舞 ） と 言い 、 伴奏 音楽 を 高麗楽 と 呼ぶ 。
+∃ ENTITY[1] EVENT[4] EVENT[5] EVENT[8] EVENT[11] ENTITY[6] ENTITY[7] ENTITY[2] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  namely_-ENTITY-(ENTITY[高麗], ENTITY[朝鮮半島]) ∧
+   CONJ_te(経由する.0_て(EVENT[4], ENTITY[2], ENTITY[朝鮮半島]), 伝来する.0_た(EVENT[5], ENTITY[2])) ∧ もの(ENTITY[2]) ∧
+    右方舞(ENTITY[7]) ∧
+     右舞(ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+       伴奏_音楽(ENTITY[9]) ∧
+        高麗楽(ENTITY[10]) ∧
+         past(EVENT[5]) ∧
+          言い(EVENT[8], ENTITY[1], ENTITY[2], ENTITY[7]) ∧ 呼ぶ(EVENT[11], ENTITY[1], ENTITY[9], ENTITY[10]))
+
+# ::id 65_wikipedia_KYOTO_CLT_00005,94;NJ
+# ::snt 平舞
+∃ EVENT[2] ENTITY[1] (平舞(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 66_wikipedia_KYOTO_CLT_00005,95;NJ
+# ::snt 平舞 （ ひらまい ） は 、 文舞 （ ぶんのまい ） と も よば れ 、 武器 など を 持た ず に 舞う 、 穏やか な 感じ の 舞 。
+∃ ATTRIB[13] SITUATION[7] ENTITY[6] EVENT[3] EVENT[11] EVENT[14] ENTITY[2] ENTITY[9] ENTITY[8] ENTITY[12] ENTITY[4] ENTITY[1] (
+ 平舞(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[ひらまい], ENTITY[1]) ∧
+   文舞(ENTITY[2]) ∧
+    namely_-ENTITY-(ENTITY[ぶんのまい], ENTITY[2]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[2], ENTITY[ぶんのまい], ENTITY[ひらまい]} ∧
+      武器(ENTITY[9]) ∧
+       など(ENTITY[9], ENTITY[8]) ∧
+        FACT(SITUATION[7], ¬ ∃ EVENT[10] 持た(EVENT[10], ENTITY[4], ENTITY[8])) ∧
+         穏やか_な(ATTRIB[13]) ∧
+          ATTRIBUTE_感じ(ATTRIB[13], ENTITY[12]) ∧
+           舞う(EVENT[11], ENTITY[6], ENTITY[4]) ∧ te_に(EVENT[11]) = SITUATION[7] ∧
+            の_舞(ENTITY[12], ENTITY[4]) ∧
+            よば(EVENT[3], _, ENTITY[1], ENTITY[2]) ∧ xxx(EVENT[14], ENTITY[1], ENTITY[4]))
+
+# ::id 67_wikipedia_KYOTO_CLT_00005,96;NJ
+# ::snt 仮面 を 付け ず に 、 常装束 （ 襲装束 ・ 蛮絵装束 ） で 、 4 人 で 舞う 曲 が 多い 。
+∃ SITUATION[4] ENTITY[3] EVENT[10] EVENT[11] ENTITY[5] GROUP[7] ENTITY[9] ENTITY[8] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  仮面(ENTITY[5]) ∧
+   FACT(SITUATION[4], ¬ ∃ EVENT[6] 付け(EVENT[6], ENTITY[1], ENTITY[5])) ∧
+    常装束(ENTITY[8]) ∧
+     is_element_of(ENTITY[襲装束], GROUP[7]) ∧ is_element_of(ENTITY[蛮絵装束], GROUP[7]) ∧
+      namely_-ENTITY-(GROUP[7], ENTITY[8]) ∧
+       CD_4_人(ENTITY[9]) ∧
+        舞う(EVENT[10], ENTITY[3], ENTITY[1]) ∧ で(EVENT[10]) = ENTITY[9] ∧
+         で(EVENT[10]) = ENTITY[8] ∧ te_に(EVENT[10]) = SITUATION[4] ∧ 曲(ENTITY[1]) ∧
+         多い(EVENT[11], ENTITY[1]))
+
+# ::id 68_wikipedia_KYOTO_CLT_00005,97;NJ
+# ::snt 例外 として 、 『 振鉾 （ えんぶ ） 』 は 鉾 を 持つ 1 人 舞 、 『 青海波 』 『 迦陵頻 』 『 胡蝶 』 は 別装束 、 『 安摩 』 『 二ノ舞 』 は 仮面 を 着け 笏 や 桴 を 持つ など 。
+∃ ENTITY[12] ENTITY[4] SITUATION[2] EVENT[6] EVENT[7] EVENT[10] EVENT[14] EVENT[18] EVENT[19] ENTITY[5] ENTITY[3] ENTITY[9] ENTITY[13] GROUP[15] ENTITY[1] GROUP[8] GROUP[11] (
+ namely_-ENTITY-(ENTITY[えんぶ], ENTITY[振鉾]) ∧
+  is_element_of(ENTITY[青海波], GROUP[8]) ∧ is_element_of(ENTITY[迦陵頻], GROUP[8]) ∧ is_element_of(ENTITY[胡蝶], GROUP[8]) ∧
+   is_element_of(ENTITY[安摩], GROUP[11]) ∧ is_element_of(ENTITY[二ノ舞], GROUP[11]) ∧
+    例外(ENTITY[1]) ∧
+     ENTITY[4] = *pro*{ENTITY[振鉾], ENTITY[えんぶ], ENTITY[1]} ∧
+      鉾(ENTITY[5]) ∧
+       (CD_1_人(ENTITY[3]), THAT_舞(持つ(EVENT[6], ENTITY[4], ENTITY[5]), ENTITY[3])) ∧
+        別装束(ENTITY[9]) ∧
+         ENTITY[12] = *pro*{ENTITY[二ノ舞], ENTITY[安摩], ENTITY[胡蝶], ENTITY[迦陵頻], ENTITY[青海波], ENTITY[9], ENTITY[振鉾], ENTITY[えんぶ], ENTITY[3], ENTITY[5], ENTITY[1]} ∧
+          仮面(ENTITY[13]) ∧
+           CONJ_や(∃ ENTITY[16] (笏(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[15])),
+            ∃ ENTITY[17] (桴(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[15]))) ∧
+            FACT(SITUATION[2],
+             xxx(EVENT[7], ENTITY[振鉾], ENTITY[3]) ∧
+              xxx(EVENT[10], GROUP[8], ENTITY[9]) ∧
+               着け(EVENT[14], ENTITY[12], ENTITY[13]) ∧ 持つ(EVENT[18], ENTITY[12], GROUP[15])) ∧
+             xxx(EVENT[19]) ∧ など(EVENT[19]) = SITUATION[2] ∧ として(EVENT[19]) = ENTITY[1])
+
+# ::id 69_wikipedia_KYOTO_CLT_00005,98;NJ
+# ::snt 走舞
+∃ EVENT[2] ENTITY[1] (走舞(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 70_wikipedia_KYOTO_CLT_00005,99;NJ
+# ::snt 走舞 （ はしりまい ） は 勇猛 な 仮面 を 付け 、 桴 や 鉾 を 持ち 、 平舞 に 比し て 活発 な 動き で 舞う 勇壮 な 舞 。
+∃ ATTRIB[17] ATTRIB[15] ATTRIB[6] ENTITY[4] EVENT[7] EVENT[11] EVENT[13] EVENT[16] EVENT[18] ENTITY[5] GROUP[8] ENTITY[12] ENTITY[14] ENTITY[2] ENTITY[1] (
+ 走舞(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[はしりまい], ENTITY[1]) ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[はしりまい]} ∧
+    勇猛_な(ATTRIB[6]) ∧
+     ATTRIBUTE_仮面(ATTRIB[6], ENTITY[5]) ∧
+      CONJ_や(∃ ENTITY[9] (桴(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+       ∃ ENTITY[10] (鉾(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+       平舞(ENTITY[12]) ∧
+        活発_な(ATTRIB[15]) ∧
+         ATTRIBUTE_動き(ATTRIB[15], ENTITY[14]) ∧
+          勇壮_な(ATTRIB[17]) ∧
+           付け(EVENT[7], ENTITY[2], ENTITY[5]) ∧
+            持ち(EVENT[11], ENTITY[2], GROUP[8]) ∧
+             CONJ_te(比し_て(EVENT[13], ENTITY[4], ENTITY[2]) ∧ に(EVENT[13]) = ENTITY[12],
+              舞う(EVENT[16], ENTITY[4], ENTITY[2]) ∧ で(EVENT[16]) = ENTITY[14]) ∧
+            ATTRIBUTE_舞(ATTRIB[17], ENTITY[2]) ∧ xxx(EVENT[18], ENTITY[1], ENTITY[2]))
+
+# ::id 71_wikipedia_KYOTO_CLT_00005,100;NJ
+# ::snt 別装束 （ 裲襠装束 ） で 1 名 （ 『 納曽利 』 は 2 名 、 又は 1 名 ） で 舞う 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  別装束(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[裲襠装束], ENTITY[2]) ∧
+    CD_1_名(ENTITY[3]) ∧
+     舞う(EVENT[4], ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3] ∧ で(EVENT[4]) = ENTITY[2])
+
+# ::id 72_wikipedia_KYOTO_CLT_00005,101;NJ
+# ::snt 武舞
+∃ EVENT[2] ENTITY[1] (武舞(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 73_wikipedia_KYOTO_CLT_00005,102;NJ
+# ::snt 武舞 （ ぶまい 、 ぶのまい ） は 、 太刀 ・ 剣 や 鉾 を 持っ て 舞う 勇猛 な 舞 。
+∃ ATTRIB[11] ENTITY[4] EVENT[9] EVENT[10] EVENT[12] GROUP[5] ENTITY[2] GROUP[1] (
+ is_element_of(ENTITY[ぶまい], GROUP[1]) ∧ is_element_of(ENTITY[ぶのまい], GROUP[1]) ∧
+  namely_-ENTITY-(GROUP[1], ENTITY[武舞]) ∧
+   ENTITY[4] = *pro*{ENTITY[武舞], ENTITY[ぶのまい], ENTITY[ぶまい]} ∧
+    CONJ_や(∃ ENTITY[6] (太刀(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[7] (剣(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])),
+     ∃ ENTITY[8] (鉾(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5]))) ∧
+     勇猛_な(ATTRIB[11]) ∧
+      CONJ_te(持っ_て(EVENT[9], ENTITY[4], GROUP[5]), 舞う(EVENT[10], ENTITY[4], ENTITY[2])) ∧
+       ATTRIBUTE_舞(ATTRIB[11], ENTITY[2]) ∧ xxx(EVENT[12], ENTITY[武舞], ENTITY[2]))
+
+# ::id 74_wikipedia_KYOTO_CLT_00005,103;NJ
+# ::snt 「 文舞 」 に対する 言葉 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (文舞(ENTITY[2]) ∧ に対する_言葉(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 75_wikipedia_KYOTO_CLT_00005,104;NJ
+# ::snt 2 名 、 又は 4 名 で 舞う 。
+∃ ENTITY[1] EVENT[5] GROUP[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_又は(∃ ENTITY[3] (CD_2_名(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (CD_4_名(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧
+   舞う(EVENT[5], ENTITY[1]) ∧ で(EVENT[5]) = GROUP[2])
+
+# ::id 76_wikipedia_KYOTO_CLT_00005,105;NJ
+# ::snt 童舞
+∃ EVENT[2] ENTITY[1] (童舞(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 77_wikipedia_KYOTO_CLT_00005,106;NJ
+# ::snt 童舞 （ どうぶ 、 わらわまい ） と は 、 元服 前 の 男子 が 舞う 舞楽 の こと で ある 。
+∃ EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[3] GROUP[1] ENTITY[2] (
+ 童舞(ENTITY[2]) ∧
+  is_element_of(ENTITY[どうぶ], GROUP[1]) ∧ is_element_of(ENTITY[わらわまい], GROUP[1]) ∧
+   namely_-ENTITY-(GROUP[1], ENTITY[2]) ∧
+    元服_前(ENTITY[7]) ∧
+     の_男子(ENTITY[7], ENTITY[6]) ∧
+      舞う(EVENT[8], ENTITY[6], ENTITY[4]) ∧ 舞楽(ENTITY[4]) ∧
+       の_こと(ENTITY[4], ENTITY[3]) ∧ で_ある(EVENT[9], ENTITY[2], ENTITY[3]))
+
+# ::id 78_wikipedia_KYOTO_CLT_00005,107;NJ
+# ::snt 近代 以降 は 女子 あるいは 成人 女性 が 舞う 場合 も 多い 。
+∃ ENTITY[3] SITUATION[2] EVENT[7] EVENT[8] GROUP[4] ENTITY[1] (
+ 近代_以降(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   CONJ_あるいは(∃ ENTITY[5] (女子(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (成人_女性(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    場合(SITUATION[2], 舞う(EVENT[7], GROUP[4], ENTITY[3])) ∧
+     多い(EVENT[8], SITUATION[2]) ∧ 時間(EVENT[8]) = ENTITY[1])
+
+# ::id 79_wikipedia_KYOTO_CLT_00005,108;NJ
+# ::snt 装束 、 仮面 、 化粧 から 童舞 は 特に 関東 地方 において は 希少 価値 が きわめて 高い 。
+∃ ATTRIB[8] EVENT[9] ENTITY[7] GROUP[1] ENTITY[6] ENTITY[5] (
+ 童舞(ENTITY[5]) ∧
+  関東_地方(ENTITY[6]) ∧
+   ∃ ENTITY[2] (装束(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+    ∃ ENTITY[3] (仮面(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+    ∃ ENTITY[4] (化粧(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+    希少(ATTRIB[8]) ∧
+     ATTRIBUTE_価値(ATTRIB[8], ENTITY[7]) ∧
+      ADV_特に(EVENT[9]) ∧
+       ADV_きわめて(EVENT[9]) ∧
+        高い(EVENT[9], (ENTITY[5], ENTITY[7])) ∧ において(EVENT[9]) = ENTITY[6] ∧
+         から(EVENT[9]) = GROUP[1])
+
+# ::id 80_wikipedia_KYOTO_CLT_00005,109;NJ
+# ::snt 『 迦陵頻 』 と 『 胡蝶 』 は 童舞 専用 の 曲 で あり 、 その 他 に も 『 蘭陵王 （ 雅楽 ） 』 や 『 納曽利 』 等 、 童舞 の バージョン が ある 曲 が 多い 。
+∃ EVENT[4] EVENT[12] EVENT[13] ENTITY[3] ENTITY[2] ENTITY[11] GROUP[9] ENTITY[8] ENTITY[6] GROUP[1] ENTITY[5] (
+ CONJ_と(is_element_of(ENTITY[迦陵頻], GROUP[1]), is_element_of(ENTITY[胡蝶], GROUP[1])) ∧
+  他(ENTITY[5]) ∧
+   童舞_専用(ENTITY[3]) ∧
+    の_曲(ENTITY[3], ENTITY[2]) ∧
+     CONJ_や(∃ ENTITY[10] (雅楽(ENTITY[10]) ∧ namely_-ENTITY-(ENTITY[10], ENTITY[蘭陵王]) ∧ is_element_of(ENTITY[蘭陵王], GROUP[9])),
+      is_element_of(ENTITY[納曽利], GROUP[9])) ∧
+      童舞(ENTITY[11]) ∧
+       の_バージョン(ENTITY[11], ENTITY[8]) ∧ 等_バージョン(GROUP[9], ENTITY[8]) ∧
+        ある(EVENT[12], (ENTITY[6], ENTITY[8])) ∧ 曲(ENTITY[6]) ∧
+         で_あり(EVENT[4], GROUP[1], ENTITY[2]) ∧ 多い(EVENT[13], ENTITY[6]) ∧ に(EVENT[13]) = ENTITY[5])
+
+# ::id 81_wikipedia_KYOTO_CLT_00005,110;NJ
+# ::snt 仮面 を 付け ず に 白塗り の 厚化粧 を する の が 原則 で ある が 、 素顔 の まま や 薄化粧 の 場合 も ある 。
+∃ SITUATION[3] ENTITY[2] SITUATION[1] EVENT[8] EVENT[10] EVENT[16] ENTITY[4] ENTITY[7] ENTITY[6] ENTITY[9] GROUP[11] (
+ ENTITY[2] = *pro* ∧
+  仮面(ENTITY[4]) ∧
+   FACT(SITUATION[3], ¬ ∃ EVENT[5] 付け(EVENT[5], ENTITY[2], ENTITY[4])) ∧
+    白塗り(ENTITY[7]) ∧
+     の_厚化粧(ENTITY[7], ENTITY[6]) ∧
+      の(SITUATION[1], する(EVENT[8], ENTITY[2], ENTITY[6]) ∧ te_に(EVENT[8]) = SITUATION[3]) ∧
+       原則(ENTITY[9]) ∧
+        CONJ_や(∃ ENTITY[13] ENTITY[12] (素顔(ENTITY[13]) ∧ の_まま(ENTITY[13], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+         ∃ ENTITY[15] ENTITY[14] (薄化粧(ENTITY[15]) ∧ の_場合(ENTITY[15], ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[11]))) ∧
+         CONJ_が(で_ある(EVENT[10], SITUATION[1], ENTITY[9]), ある(EVENT[16], GROUP[11])))
+
+# ::id 82_wikipedia_KYOTO_CLT_00005,111;NJ
+# ::snt 女舞
+∃ EVENT[2] ENTITY[1] (女舞(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 83_wikipedia_KYOTO_CLT_00005,134;NJ
+# ::snt 番舞 一覧
+∃ EVENT[2] ENTITY[1] (番舞_一覧(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 84_wikipedia_KYOTO_CLT_00005,135;NJ
+# ::snt 平安 以降 、 唐楽 の 曲目 と 高麗楽 の 曲目 が 番舞 （ つがいまい ） として セット で 上演 さ れる 場合 が 多く なっ た 。
+∃ SITUATION[2] EVENT[10] EVENT[11] ENTITY[9] ENTITY[8] GROUP[3] TIME[1] (
+ 平安_以降(TIME[1]) ∧
+  CONJ_と(∃ ENTITY[5] ENTITY[4] (唐楽(ENTITY[5]) ∧ の_曲目(ENTITY[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[7] ENTITY[6] (高麗楽(ENTITY[7]) ∧ の_曲目(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3]))) ∧
+   番舞(ENTITY[8]) ∧
+    namely_-ENTITY-(ENTITY[つがいまい], ENTITY[8]) ∧
+     セット(ENTITY[9]) ∧
+      場合(SITUATION[2],
+       上演する.0(EVENT[10], _, GROUP[3]) ∧ で(EVENT[10]) = ENTITY[9] ∧
+        として(EVENT[10]) = ENTITY[8]) ∧
+       past(EVENT[11]) ∧ 多く_なっ_た(EVENT[11], SITUATION[2]) ∧ is_contained_in(時間(EVENT[11]), TIME[1]))
+
+# ::id 85_wikipedia_KYOTO_CLT_00005,136;NJ
+# ::snt その 一覧 を 示す 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (一覧(ENTITY[2]) ∧ ENTITY[1] = *pro* ∧ 示す(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 86_wikipedia_KYOTO_CLT_00005,137;NJ
+# ::snt 雅楽 に 使わ れる 楽器
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 雅楽(ENTITY[3]) ∧
+  使わ(EVENT[4], _, ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[3] ∧ 楽器(ENTITY[1]) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 87_wikipedia_KYOTO_CLT_00005,138;NJ
+# ::snt 管絃 の 合奏 の 中心 と なる 楽器 は 、 一般的 に 三 管 、 三 鼓 、 両絃 の 8 種類 と いわ れる 。
+∃ EVENT[12] GROUP[8] ENTITY[7] EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 管絃(ENTITY[5]) ∧
+  の_合奏(ENTITY[5], ENTITY[4]) ∧
+   の_中心(ENTITY[4], ENTITY[3]) ∧
+    なる(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[3] ∧ 楽器(ENTITY[1]) ∧
+     ∃ ENTITY[9] (CD_三_管(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ ENTITY[10] (CD_三_鼓(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+      両 ENTITY[11] (絃(ENTITY[11]), is_element_of(ENTITY[11], GROUP[8])) ∧
+      (CD_8_種類(ENTITY[7]), の(GROUP[8], ENTITY[7])) ∧
+       ADV_一般的_に(EVENT[12]) ∧ いわ(EVENT[12], _, ENTITY[1], ENTITY[7]))
+
+# ::id 88_wikipedia_KYOTO_CLT_00005,142;NJ
+# ::snt これら の 楽器 は 大変 高価 で ある が 、 練習 用 に 、 やや 安価 な 楽器 （ プラスチック 製 ） も ある 。
+∃ ATTRIB[8] ENTITY[2] ENTITY[6] ENTITY[7] ENTITY[5] EVENT[3] EVENT[9] ENTITY[1] (
+ ENTITY[2] = これら ∧
+  の_楽器(ENTITY[2], ENTITY[1]) ∧
+   ADV_大変(EVENT[3]) ∧
+    練習_用(ENTITY[5]) ∧
+     やや_安価_な(ATTRIB[8]) ∧
+      ATTRIBUTE_楽器(ATTRIB[8], ENTITY[7]) ∧
+       プラスチック_製(ENTITY[6]) ∧
+        namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+         CONJ_が(高価_で_ある(EVENT[3], ENTITY[1]), ある(EVENT[9], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[5]))
+
+# ::id 89_wikipedia_KYOTO_CLT_00005,143;NJ
+# ::snt その 他 に 笏拍子 など が 使わ れる こと も ある 。
+∃ SITUATION[2] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 他(ENTITY[1]) ∧
+  笏拍子(ENTITY[4]) ∧
+   など(ENTITY[4], ENTITY[3]) ∧
+    こと(SITUATION[2], 使わ(EVENT[5], _, ENTITY[3])) ∧
+     ある(EVENT[6], SITUATION[2]) ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 90_wikipedia_KYOTO_CLT_00005,144;NJ
+# ::snt 笙 は 簧 （ リード ） に 結露 する と 音程 が 狂う ので 、 演奏 の 合間 に 必ず 暖め て おく 。
+∃ ENTITY[8] ENTITY[1] EVENT[11] ENTITY[10] ENTITY[9] ENTITY[2] (
+ 笙(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[8] = *pro*{ENTITY[2]} ∧
+    演奏(ENTITY[10]) ∧
+     の_合間(ENTITY[10], ENTITY[9]) ∧
+      ADV_必ず(EVENT[11]) ∧
+       CRD_ので(∀ EVENT[5] ENTITY[3] ENTITY[4] CND_と(
+                簧(ENTITY[4]) ∧ リード(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧
+                 結露する.0(EVENT[5], ENTITY[2]) ∧ に(EVENT[5]) = ENTITY[4],
+                ∃ EVENT[7] ENTITY[6] (音程(ENTITY[6]) ∧ 狂う(EVENT[7], (ENTITY[2], ENTITY[6])))),
+        暖め_て_おく(EVENT[11], ENTITY[1], ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[9]))
+
+# ::id 91_wikipedia_KYOTO_CLT_00005,145;NJ
+# ::snt この ため 夏 でも 火鉢 や 電熱器 を そば に 置く 。
+∃ ENTITY[1] ENTITY[4] ENTITY[2] (
+ ため(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   夏(ENTITY[4]) ∧
+    でも ENTITY[3] (ENTITY[3] = ENTITY[4],
+     ∃ EVENT[9] ENTITY[8] GROUP[5] (
+      CONJ_や(∃ ENTITY[6] (火鉢(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+       ∃ ENTITY[7] (電熱器(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+       そば(ENTITY[8]) ∧
+        置く(EVENT[9], ENTITY[1], GROUP[5]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+         時間(EVENT[9]) = ENTITY[3] ∧ ADV(EVENT[9]) = ENTITY[2])))
+
+# ::id 92_wikipedia_KYOTO_CLT_00005,146;NJ
+# ::snt 篳篥 は 舌 （ リード ） を 柔らかく する ため 、 緑茶 に 浸ける 。
+∃ SITUATION[3] ENTITY[1] EVENT[6] EVENT[8] ENTITY[4] ENTITY[5] ENTITY[7] ENTITY[2] (
+ 篳篥(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   舌(ENTITY[5]) ∧
+    リード(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+      FACT(SITUATION[3], 柔らかく_する(EVENT[6], ENTITY[2], ENTITY[5])) ∧
+       緑茶(ENTITY[7]) ∧
+        浸ける(EVENT[8], ENTITY[1], ENTITY[2]) ∧ に(EVENT[8]) = ENTITY[7] ∧ ため(EVENT[8]) = SITUATION[3])
+
+# ::id 93_wikipedia_KYOTO_CLT_00005,147;NJ
+# ::snt 三管 の 説明
+∃ EVENT[2] ENTITY[1] (の_説明(ENTITY[三管], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 94_wikipedia_KYOTO_CLT_00005,148;NJ
+# ::snt 三管 について は 次 の よう な 説明 が なさ れる 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 次(ENTITY[4]) ∧
+  の_よう(ENTITY[4], ENTITY[3]) ∧
+   な(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 説明(ENTITY[1]) ∧
+    なさ(EVENT[6], _, ENTITY[1]) ∧ について(EVENT[6]) = ENTITY[三管])
+
+# ::id 95_wikipedia_KYOTO_CLT_00005,149;NJ
+# ::snt 「 天 から 差し込む 光 」 を 表す 笙 。
+∃ ARB[1] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] ENTITY[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  天(ENTITY[6]) ∧
+   差し込む(EVENT[7], ENTITY[4]) ∧ から(EVENT[7]) = ENTITY[6] ∧ 光(ENTITY[4]) ∧
+    表す(EVENT[8], ENTITY[2], ENTITY[4]) ∧ 笙(ENTITY[2]) ∧ xxx(EVENT[9], ARB[1], ENTITY[2]))
+
+# ::id 96_wikipedia_KYOTO_CLT_00005,150;NJ
+# ::snt 「 天 と 地 の 間 を 縦横無尽 に 駆け巡る 龍 」 を 表す 龍笛 。
+∃ ARB[1] EVENT[10] EVENT[12] EVENT[13] GROUP[7] ENTITY[6] ENTITY[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  CONJ_と(∃ ENTITY[8] (天(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+   ∃ ENTITY[9] (地(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+   の_間(GROUP[7], ENTITY[6]) ∧
+    駆け巡る(EVENT[10], ENTITY[4], ENTITY[6]) ∧ 龍(ENTITY[4]) ∧
+     表す(EVENT[12], ENTITY[2], ENTITY[4]) ∧ 龍笛(ENTITY[2]) ∧
+      ADV_縦横無尽_に(EVENT[10]) ∧ xxx(EVENT[13], ARB[1], ENTITY[2]))
+
+# ::id 97_wikipedia_KYOTO_CLT_00005,151;NJ
+# ::snt 「 地上 に こだまする 人々 の 声 」 を 表す 篳篥 。
+∃ ARB[1] EVENT[7] EVENT[9] EVENT[10] ENTITY[6] ENTITY[8] ENTITY[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  地上(ENTITY[6]) ∧
+   人々(ENTITY[8]) ∧
+    こだまする(EVENT[7], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ の_声(ENTITY[8], ENTITY[4]) ∧
+     表す(EVENT[9], ENTITY[2], ENTITY[4]) ∧ 篳篥(ENTITY[2]) ∧ xxx(EVENT[10], ARB[1], ENTITY[2]))
+
+# ::id 98_wikipedia_KYOTO_CLT_00005,152;NJ
+# ::snt この 3 つ の 管楽器 を あわせ て 「 三管 」 と 呼ぶ 。
+∃ ENTITY[5] ENTITY[1] EVENT[4] EVENT[6] ENTITY[3] ENTITY[2] (
+ CD_3_つ(ENTITY[3]) ∧
+  の_管楽器(ENTITY[3], ENTITY[2]) ∧
+   ENTITY[1] = *pro* ∧
+    ENTITY[5] = *pro*{ENTITY[2], ENTITY[3]} ∧
+     CONJ_te(あわせ_て(EVENT[4], ENTITY[1], ENTITY[2]), 呼ぶ(EVENT[6], ENTITY[1], ENTITY[5], ENTITY[三管])))
+
+# ::id 99_wikipedia_KYOTO_CLT_00005,153;NJ
+# ::snt 合奏 時 の 主 な 役割 は 、 主 メロディ を 篳篥 が 担当 する 。
+∃ ATTRIB[5] ATTRIB[3] EVENT[7] ENTITY[6] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 合奏_時(ENTITY[2]) ∧
+  主_な(ATTRIB[3]) ∧
+   ATTRIBUTE_役割(ATTRIB[3], ENTITY[1]) ∧ の_役割(ENTITY[2], ENTITY[1]) ∧
+    主(ATTRIB[5]) ∧
+     ATTRIBUTE_メロディ(ATTRIB[5], ENTITY[4]) ∧
+      篳篥(ENTITY[6]) ∧ 担当する.0(EVENT[7], ENTITY[6], ENTITY[4]) ∧ TPC(EVENT[7]) = ENTITY[1])
+
+# ::id 100_wikipedia_KYOTO_CLT_00005,154;NJ
+# ::snt 篳篥 は 音程 が 不安定 な 楽器 で ある 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 篳篥(ENTITY[1]) ∧
+  音程(ENTITY[2]) ∧
+   不安定_な(ATTRIB[4]) ∧ ATTRIBUTE_楽器(ATTRIB[4], ENTITY[3]) ∧ で_ある(EVENT[5], (ENTITY[1], ENTITY[2]), ENTITY[3]))
+
+# ::id 101_wikipedia_KYOTO_CLT_00005,155;NJ
+# ::snt 同じ 指 の ポジション で 長 2 度 くらい の 差 は 唇 の 締め 方 で 変わる 。
+∃ ATTRIB[3] EVENT[9] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[1] ENTITY[6] ENTITY[4] (
+ (CD_2_度(ENTITY[6]), 長(ENTITY[6])) ∧
+  くらい ENTITY[5] (ENTITY[5] = ENTITY[6], の_差(ENTITY[5], ENTITY[4])) ∧
+   同じ(ATTRIB[3]) ∧
+    ATTRIBUTE_指(ATTRIB[3], ENTITY[2]) ∧
+     の_ポジション(ENTITY[2], ENTITY[1]) ∧
+      唇(ENTITY[8]) ∧
+       の_締め_方(ENTITY[8], ENTITY[7]) ∧
+        変わる(EVENT[9], ENTITY[4]) ∧ で(EVENT[9]) = ENTITY[7] ∧ で(EVENT[9]) = ENTITY[1])
+
+# ::id 102_wikipedia_KYOTO_CLT_00005,156;NJ
+# ::snt 演奏者 は 、 本来 の 音程 より 少し 下 から 探る よう に 演奏 を 始める ため 、 その 独特 な 雰囲気 が 醸し ださ れる 。
+∃ SITUATION[3] SITUATION[1] ATTRIB[11] EVENT[9] EVENT[12] ENTITY[8] ENTITY[2] ENTITY[10] (
+ 演奏者(ENTITY[2]) ∧
+  独特_な(ATTRIB[11]) ∧
+   ATTRIBUTE_雰囲気(ATTRIB[11], ENTITY[10]) ∧
+    よう(SITUATION[3],
+     少し ENTITY[6] ENTITY[5] ENTITY[4] ((本来(ENTITY[6]) ∧ の_音程(ENTITY[6], ENTITY[5]) ∧ より_下(ENTITY[5], ENTITY[4])),
+      ∃ EVENT[7] (探る(EVENT[7], ENTITY[2]) ∧ から(EVENT[7]) = ENTITY[4]))) ∧
+     演奏(ENTITY[8]) ∧
+      FACT(SITUATION[1], 始める(EVENT[9], ENTITY[2], ENTITY[8]) ∧ に(EVENT[9]) = SITUATION[3]) ∧
+       醸し_ださ(EVENT[12], _, ENTITY[10]) ∧ ため(EVENT[12]) = SITUATION[1])
+
+# ::id 103_wikipedia_KYOTO_CLT_00005,157;NJ
+# ::snt また 、 その 特徴 を 生かし て 、 「 塩梅 」 と いわ れる 、 いわゆる こぶし の よう な 装飾的 な 演奏法 が 行わ れる 。
+∃ ATTRIB[12] ENTITY[1] EVENT[3] EVENT[7] EVENT[11] EVENT[13] ENTITY[6] ENTITY[10] ENTITY[9] ENTITY[4] ENTITY[2] (
+ 特徴(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   塩梅(ENTITY[6]) ∧
+    こぶし(ENTITY[10]) ∧
+     の_よう(ENTITY[10], ENTITY[9]) ∧
+      装飾的_な(ATTRIB[12]) ∧
+       いわ(EVENT[7], _, ENTITY[4], ENTITY[6]) ∧
+        な(EVENT[11], ENTITY[4], ENTITY[9]) ∧ ATTRIBUTE_演奏法(ATTRIB[12], ENTITY[4]) ∧
+        CONJ_te(生かし_て(EVENT[3], ENTITY[1], ENTITY[2]), 行わ(EVENT[13], _, ENTITY[4])))
+
+# ::id 104_wikipedia_KYOTO_CLT_00005,158;NJ
+# ::snt 龍笛 は 篳篥 が 出 ない 音 を カバー し たり し て 、 旋律 を より 豊か に する 。
+∃ SITUATION[2] EVENT[7] EVENT[8] EVENT[10] ENTITY[3] ENTITY[9] ENTITY[1] (
+ 龍笛(ENTITY[1]) ∧
+  ¬ ∃ EVENT[6] ENTITY[5] (篳篥(ENTITY[5]) ∧ 出(EVENT[6], (ENTITY[3], ENTITY[5]))) ∧ 音(ENTITY[3]) ∧
+   FACT(SITUATION[2], カバーする.0(EVENT[7], ENTITY[1], ENTITY[3])) ∧
+    旋律(ENTITY[9]) ∧
+     ADV_より_豊か_に(EVENT[10]) ∧
+      CONJ_te(し_て(EVENT[8], ENTITY[1]) ∧ たり(EVENT[8]) = SITUATION[2], する(EVENT[10], ENTITY[1], ENTITY[9])))
+
+# ::id 105_wikipedia_KYOTO_CLT_00005,159;NJ
+# ::snt 笙 は 独特 の 神々しい 音色 で 楽曲 を 引き締める 役割 も ある が 、 篳篥 や 龍笛 の 演奏者 にとって は 、 息継ぎ の タイミング を 示し たり 、 テンポ を 決め たり といった 役割 も ある 。
+∃ SITUATION[16] ENTITY[15] ATTRIB[6] ENTITY[3] SITUATION[2] EVENT[8] EVENT[9] EVENT[19] EVENT[21] EVENT[22] EVENT[23] ENTITY[5] ENTITY[7] ENTITY[4] ENTITY[18] ENTITY[17] ENTITY[20] ENTITY[14] ENTITY[12] ENTITY[13] GROUP[11] ENTITY[10] ENTITY[1] (
+ 笙(ENTITY[1]) ∧
+  篳篥(ENTITY[12]) ∧
+   龍笛(ENTITY[13]) ∧
+    CONJ_や(is_element_of(ENTITY[12], GROUP[11]), is_element_of(ENTITY[13], GROUP[11])) ∧
+     の_演奏者(GROUP[11], ENTITY[10]) ∧
+      ENTITY[3] = *pro*{ENTITY[1]} ∧
+       独特(ENTITY[5]) ∧
+        神々しい(ATTRIB[6]) ∧
+         ATTRIBUTE_音色(ATTRIB[6], ENTITY[4]) ∧ の_音色(ENTITY[5], ENTITY[4]) ∧
+          楽曲(ENTITY[7]) ∧
+           役割(SITUATION[2], 引き締める(EVENT[8], ENTITY[3], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[4]) ∧
+            ENTITY[15] = *pro*{ENTITY[1], ENTITY[10], ENTITY[13], ENTITY[12], ENTITY[4], ENTITY[7], ENTITY[5]} ∧
+             息継ぎ(ENTITY[18]) ∧
+              の_タイミング(ENTITY[18], ENTITY[17]) ∧
+               テンポ(ENTITY[20]) ∧
+                FACT(SITUATION[16],
+                 CONJ_たり(示し(EVENT[19], ENTITY[15], ENTITY[17]), 決め(EVENT[21], ENTITY[15], ENTITY[20]))) ∧
+                 THAT_役割(xxx(EVENT[22], ENTITY[15]) ∧ たり(EVENT[22]) = SITUATION[16], ENTITY[14]) ∧
+                  CONJ_が(ある(EVENT[9], (ENTITY[1], SITUATION[2])),
+                   ある(EVENT[23], (ENTITY[1], ENTITY[14])) ∧ にとって(EVENT[23]) = ENTITY[10]))
+
+# ::id 106_wikipedia_KYOTO_CLT_00005,160;NJ
+# ::snt 笙 は 日本 の 音楽 の 中 で は めずらしく 和声 （ ハーモニー ） を 醸成 する 楽器 で ある 。
+∃ SITUATION[10] EVENT[8] EVENT[9] ENTITY[6] ENTITY[7] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 笙(ENTITY[1]) ∧
+  の_音楽(ENTITY[日本], ENTITY[3]) ∧
+   の_中(ENTITY[3], ENTITY[2]) ∧
+    和声(ENTITY[7]) ∧
+     ハーモニー(ENTITY[6]) ∧
+      namely_-ENTITY-(ENTITY[6], ENTITY[7]) ∧
+       醸成する.0(EVENT[8], ENTITY[4], ENTITY[7]) ∧ 楽器(ENTITY[4]) ∧
+        ADV_めずらしく(SITUATION[10]) ∧
+         FACT(SITUATION[10], で_ある(EVENT[9], ENTITY[1], ENTITY[4]) ∧ で(EVENT[9]) = ENTITY[2]))
+
+# ::id 107_wikipedia_KYOTO_CLT_00005,161;NJ
+# ::snt 基本的 に は 6 つ の 音 （ 左手 の 親指 、 人差し指 、 中指 、 薬指 と 右手 の 親指 と 人差し指 を 使用 ） から 構成 さ れ 、 4 度 と 5 度 音程 を 組み合わせ た 20 世紀 以降 の 西欧 音楽 に 使用 さ れる ような 複雑 な もの で ある が 、 調律法 が 平均律 で は ない ので 協和音 と 不協和音 という より 、 むしろ 澄ん だ 音色 に 聞こえる 。
+∃ SITUATION[29] SITUATION[18] ATTRIB[13] ENTITY[1] EVENT[8] EVENT[12] EVENT[16] EVENT[17] EVENT[27] EVENT[28] GROUP[5] ENTITY[4] ENTITY[11] ENTITY[10] ENTITY[15] ENTITY[14] ENTITY[2] ENTITY[19] ENTITY[25] GROUP[22] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ENTITY[6] (CD_4_度(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+   ∃ ENTITY[7] (CD_5_度(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+   equals_音程(GROUP[5], ENTITY[4]) ∧
+    (CD_20_世紀(ENTITY[11]), 以降(ENTITY[11])) ∧
+     の_西欧_音楽(ENTITY[11], ENTITY[10]) ∧
+      複雑_な(ATTRIB[13]) ∧
+       組み合わせ_た(EVENT[8], ENTITY[2], ENTITY[4]) ∧
+        使用する.0_ような(EVENT[12], _, ENTITY[2]) ∧ に(EVENT[12]) = ENTITY[10] ∧
+         ATTRIBUTE_もの(ATTRIB[13], ENTITY[2]) ∧
+        CD_6_つ(ENTITY[15]) ∧
+         の_音(ENTITY[15], ENTITY[14]) ∧
+          調律法(ENTITY[19]) ∧
+           CONJ_と(∃ ENTITY[23] (協和音(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[22])),
+            ∃ ENTITY[24] (不協和音(ENTITY[24]) ∧ is_element_of(ENTITY[24], GROUP[22]))) ∧
+            澄ん_だ(EVENT[27], ENTITY[25]) ∧ 音色(ENTITY[25]) ∧
+             ADV_基本的_に_は(SITUATION[18]) ∧
+              past(EVENT[8]) ∧
+               ADV_むしろ(SITUATION[29]) ∧
+                CONJ_が(FACT(SITUATION[18],
+                      構成する.0(EVENT[16], _, ENTITY[2]) ∧ から(EVENT[16]) = ENTITY[14] ∧
+                       で_ある(EVENT[17], ENTITY[1], ENTITY[2])),
+                 CRD_ので(¬ ∃ EVENT[21] ENTITY[20] (平均律(ENTITY[20]) ∧ で_は(EVENT[21], ENTITY[19], ENTITY[20])),
+                  FACT(SITUATION[29],
+                   聞こえる(EVENT[28], ENTITY[1]) ∧ に(EVENT[28]) = ENTITY[25] ∧
+                    という_より(EVENT[28]) = GROUP[22]))))
+
+# ::id 108_wikipedia_KYOTO_CLT_00005,162;NJ
+# ::snt クロード・ドビュッシー の 和音 は 笙 の 影響 が み られる という 説 も ある 。
+∃ EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ の_和音(ENTITY[クロード.ドビュッシー], ENTITY[1]) ∧
+  笙(ENTITY[4]) ∧
+   の_影響(ENTITY[4], ENTITY[3]) ∧
+    THAT_説(み(EVENT[5], _, ENTITY[3]), ENTITY[2]) ∧
+     ある(EVENT[6], ENTITY[2]) ∧ TPC(EVENT[6]) = ENTITY[1])
+
+# ::id 109_wikipedia_KYOTO_CLT_00005,163;NJ
+# ::snt 三鼓 の 説明
+∃ EVENT[2] ENTITY[1] (の_説明(ENTITY[三鼓], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 110_wikipedia_KYOTO_CLT_00005,164;NJ
+# ::snt 「 三鼓 」 と は 、 羯鼓 （ 又は 三ノ鼓 ） 、 鉦鼓 、 和太鼓 で ある が 、 羯鼓 の 演奏者 が 洋楽 の 指揮者 の 役割 を 担い 、 全体 の テンポ を 決め て いる 。
+∃ EVENT[7] EVENT[13] GROUP[1] ENTITY[9] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[8] (
+ ∃ GROUP[2] (
+  CONJ_又は(∃ ENTITY[3] (羯鼓(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+   ∃ ENTITY[4] (三ノ鼓(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2]))) ∧ is_subset_of_or_equal_to(GROUP[2], GROUP[1])) ∧
+  ∃ ENTITY[5] (鉦鼓(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[1])) ∧
+  ∃ ENTITY[6] (和太鼓(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[1])) ∧
+  羯鼓(ENTITY[9]) ∧
+   の_演奏者(ENTITY[9], ENTITY[8]) ∧
+    洋楽(ENTITY[12]) ∧
+     の_指揮者(ENTITY[12], ENTITY[11]) ∧
+      の_役割(ENTITY[11], ENTITY[10]) ∧
+       CONJ_が(で_ある(EVENT[7], ENTITY[三鼓], GROUP[1]),
+        担い(EVENT[13], ENTITY[8], ENTITY[10]) ∧ 全体_の ENTITY[14] (テンポ(ENTITY[14]), ∃ EVENT[15] 決め_て_いる(EVENT[15], ENTITY[8], ENTITY[14]))))
+
+# ::id 111_wikipedia_KYOTO_CLT_00005,181;NJ
+# ::snt 楽人 の 正式 な 装束 は 衣冠 、 又は 狩衣 が 原則 で ある が 、 明治 以降 に 楽部 が 直垂 を 制定 し て 以降 は 神社 仏閣 や 民間 の 伝承 団体 で も 直垂 を 着用 する 場合 が 多い 。
+∃ ENTITY[15] SITUATION[14] SITUATION[9] ATTRIB[3] EVENT[8] EVENT[13] EVENT[21] EVENT[22] ENTITY[7] GROUP[4] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[20] GROUP[16] ENTITY[2] ENTITY[1] (
+ 楽人(ENTITY[2]) ∧
+  正式_な(ATTRIB[3]) ∧
+   ATTRIBUTE_装束(ATTRIB[3], ENTITY[1]) ∧ の_装束(ENTITY[2], ENTITY[1]) ∧
+    CONJ_又は(∃ ENTITY[5] (衣冠(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ ENTITY[6] (狩衣(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+     原則(ENTITY[7]) ∧
+      明治_以降(ENTITY[10]) ∧
+       楽部(ENTITY[11]) ∧
+        直垂(ENTITY[12]) ∧
+         FACT(SITUATION[9], 制定する.0_て(EVENT[13], ENTITY[11], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[10]) ∧
+          ENTITY[15] = *pro*{ENTITY[10], ENTITY[11], ENTITY[12], ENTITY[7], ENTITY[1], ENTITY[2]} ∧
+           CONJ_や(∃ ENTITY[17] (神社_仏閣(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[16])),
+            ∃ ENTITY[19] ENTITY[18] (民間(ENTITY[19]) ∧ の_伝承_団体(ENTITY[19], ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[16]))) ∧
+            直垂(ENTITY[20]) ∧
+             場合(SITUATION[14], 着用する.0(EVENT[21], ENTITY[15], ENTITY[20]) ∧ で(EVENT[21]) = GROUP[16]) ∧
+              CONJ_が(で_ある(EVENT[8], (ENTITY[1], GROUP[4]), ENTITY[7]),
+               多い(EVENT[22], SITUATION[14]) ∧ TMP_te_以降(EVENT[22]) = SITUATION[9]))
+
+# ::id 112_wikipedia_KYOTO_CLT_00005,182;NJ
+# ::snt 直垂 の 場合 、 生地 は 海松色 （ みるいろ ） と 呼ば れる 、 見る 角度 によって 色彩 が 変わる 美しい もの が 使わ れる 場合 が 多い 。
+∃ ATTRIB[17] ENTITY[13] ENTITY[12] SITUATION[4] EVENT[8] EVENT[14] EVENT[16] EVENT[18] EVENT[19] ENTITY[2] ENTITY[7] ENTITY[15] ENTITY[10] ENTITY[5] ENTITY[1] ENTITY[3] (
+ 生地(ENTITY[3]) ∧
+  直垂(ENTITY[2]) ∧
+   の_場合(ENTITY[2], ENTITY[1]) ∧
+    海松色(ENTITY[7]) ∧
+     namely_-ENTITY-(ENTITY[みるいろ], ENTITY[7]) ∧
+      ENTITY[12] = *pro*{ENTITY[5], ENTITY[みるいろ], ENTITY[7], ENTITY[1], ENTITY[3], ENTITY[2]} ∧
+       ENTITY[13] = *pro*{ENTITY[5], ENTITY[みるいろ], ENTITY[7], ENTITY[1], ENTITY[3], ENTITY[2]} ∧
+        見る(EVENT[14], ENTITY[12], ENTITY[13]) ∧ から(EVENT[14]) = ENTITY[10] ∧ 角度(ENTITY[10]) ∧
+         色彩(ENTITY[15]) ∧
+          美しい(ATTRIB[17]) ∧
+           呼ば(EVENT[8], _, ENTITY[5], ENTITY[7]) ∧
+            変わる(EVENT[16], (ENTITY[5], ENTITY[15])) ∧ によって(EVENT[16]) = ENTITY[10] ∧
+             ATTRIBUTE_もの(ATTRIB[17], ENTITY[5]) ∧
+            場合(SITUATION[4], 使わ(EVENT[18], _, ENTITY[5])) ∧
+             多い(EVENT[19], SITUATION[4]) ∧ TPC(EVENT[19]) = ENTITY[3] ∧ ADV(EVENT[19]) = ENTITY[1])
+
+# ::id 113_wikipedia_KYOTO_CLT_00005,183;NJ
+# ::snt 略式 で は 比較的 安価 な 白衣 に 差袴 （ 神職 の 普段着 と 同様 ） 、 稀 に 夏 に は 統一 の 浴衣 （ 俗楽 の 浴衣ざらい に 倣う ） と なる 。
+∃ ENTITY[11] ATTRIB[7] ATTRIB[4] ENTITY[1] EVENT[10] EVENT[15] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[14] ENTITY[13] ENTITY[2] ENTITY[12] (
+ 略式(ENTITY[2]) ∧
+  夏(ENTITY[12]) ∧
+   ENTITY[1] = *pro* ∧
+    比較的_安価_な(ATTRIB[4]) ∧
+     ATTRIBUTE_白衣(ATTRIB[4], ENTITY[3]) ∧
+      差袴(ENTITY[5]) ∧
+       神職(ENTITY[9]) ∧
+        の_普段着(ENTITY[9], ENTITY[8]) ∧
+         と_同様(ENTITY[8], ATTRIB[7]) ∧
+          ATTRIBUTE(ATTRIB[7], ENTITY[6]) ∧
+           ENTITY[11] = *pro*{ENTITY[2], ENTITY[3], ENTITY[5], ENTITY[6], ENTITY[8], ENTITY[9]} ∧
+            統一(ENTITY[14]) ∧
+             の_浴衣(ENTITY[14], ENTITY[13]) ∧
+              ADV_稀_に(EVENT[15]) ∧
+               xxx(EVENT[10], ENTITY[1], ENTITY[5]) ∧ LINK(EVENT[10]) = ENTITY[6] ∧
+                に(EVENT[10]) = ENTITY[3] ∧ で(EVENT[10]) = ENTITY[2] ∧
+                なる(EVENT[15], ENTITY[11], ENTITY[13]) ∧ に(EVENT[15]) = ENTITY[12])
+
+# ::id 114_wikipedia_KYOTO_CLT_00005,184;NJ
+# ::snt 装束 を 統一 し ない 場合 、 僧職 は 法衣 、 女性 は 女性 神職 装束 や 巫女 装束 、 一般的 な 和服 の 場合 が ある 。
+∃ SITUATION[5] ENTITY[2] SITUATION[1] EVENT[8] EVENT[15] EVENT[16] ENTITY[7] GROUP[10] ENTITY[6] ENTITY[9] (
+ 僧職(ENTITY[6]) ∧
+  女性(ENTITY[9]) ∧
+   ENTITY[2] = *pro* ∧
+    FACT(SITUATION[1], ¬ ∃ EVENT[4] ENTITY[3] (装束(ENTITY[3]) ∧ 統一する.0(EVENT[4], ENTITY[2], ENTITY[3]))) ∧
+     法衣(ENTITY[7]) ∧
+      CONJ_や(∃ ENTITY[11] (女性_神職_装束(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+       ∃ ENTITY[12] (巫女_装束(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10])),
+       ∃ ATTRIB[14] ENTITY[13] (一般的_な(ATTRIB[14]) ∧ ATTRIBUTE_和服(ATTRIB[14], ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[10]))) ∧
+       場合(SITUATION[5], xxx(EVENT[8], ENTITY[6], ENTITY[7]) ∧ の(EVENT[15], ENTITY[9], GROUP[10])) ∧
+        ある(EVENT[16], SITUATION[5]) ∧ 場合(EVENT[16]) = SITUATION[1])
+
+# ::id 115_wikipedia_KYOTO_CLT_00005,185;NJ
+# ::snt 通常 、 化粧 し ない （ 女性 は 薄化粧 の 場合 有り 、 三管 の 場合 は 口紅 を 塗ら ない ） が 、 舞人 と 兼任 の 場合 や 、 祭り 等 によって は 厚化粧 の 場合 も ある 。
+∃ ENTITY[1] EVENT[12] ENTITY[2] ENTITY[11] ENTITY[10] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[9] GROUP[5] ENTITY[4] (
+ 舞人(ENTITY[8]) ∧
+  と_兼任(ENTITY[8], ENTITY[7]) ∧
+   の_場合(ENTITY[7], ENTITY[6]) ∧
+    祭り(ENTITY[9]) ∧
+     CONJ_や(is_element_of(ENTITY[6], GROUP[5]), is_element_of(ENTITY[9], GROUP[5])) ∧
+      等(GROUP[5], ENTITY[4]) ∧
+       ENTITY[1] = *pro* ∧
+        通常(ENTITY[2]) ∧
+         厚化粧(ENTITY[11]) ∧
+          の_場合(ENTITY[11], ENTITY[10]) ∧
+           CONJ_が(¬ ∃ EVENT[3] (化粧する.0(EVENT[3], ENTITY[1]) ∧ ADV(EVENT[3]) = ENTITY[2]),
+            ある(EVENT[12], (ENTITY[1], ENTITY[10])) ∧ によって(EVENT[12]) = ENTITY[4]))
+
+# ::id 116_wikipedia_KYOTO_CLT_00005,186;NJ
+# ::snt 舞人 の 装束 は 国風歌舞 や 謡物 で は 白 系 、 唐楽 で は 赤 系 、 高麗楽 で は 緑 、 茶 、 黄褐色 系 が 多い 。
+∃ EVENT[16] GROUP[3] ENTITY[2] ENTITY[6] ENTITY[7] GROUP[5] ENTITY[9] ENTITY[11] ENTITY[1] (
+ 舞人(ENTITY[2]) ∧
+  の_装束(ENTITY[2], ENTITY[1]) ∧
+   国風歌舞(ENTITY[6]) ∧
+    謡物(ENTITY[7]) ∧
+     CONJ_や(is_element_of(ENTITY[6], GROUP[5]), is_element_of(ENTITY[7], GROUP[5])) ∧
+      唐楽(ENTITY[9]) ∧
+       高麗楽(ENTITY[11]) ∧
+        ∃ ENTITY[4] (で_白_系(GROUP[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+         ∃ ENTITY[8] (で_赤_系(ENTITY[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+         ∃ GROUP[12] ENTITY[10] (
+          ∃ ENTITY[13] (緑(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+           ∃ ENTITY[14] (茶(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])) ∧
+           ∃ ENTITY[15] (黄褐色_系(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[12])) ∧
+           で(ENTITY[11], ENTITY[10]) ∧ equals(GROUP[12], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+         多い(EVENT[16], (ENTITY[1], GROUP[3])))
+
+# ::id 117_wikipedia_KYOTO_CLT_00005,187;NJ
+# ::snt それぞれに 、 特定 の 曲目 専用 の 装束 （ 常装束 ） と 、 複数 の 曲目 で 共通 に 使う 装束 （ 常装束 、 等 ） が ある 。
+それぞれに ENTITY[1] ∃ EVENT[15] GROUP[2] (
+ CONJ_と(∃ ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[4] (
+       特定(ENTITY[6]) ∧
+        の_曲目_専用(ENTITY[6], ENTITY[5]) ∧
+         の_装束(ENTITY[5], ENTITY[4]) ∧
+          常装束(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])),
+  ∃ ENTITY[9] EVENT[13] ENTITY[11] ENTITY[12] ENTITY[10] ENTITY[14] ENTITY[7] (
+   ENTITY[9] = *pro*{ENTITY[1]} ∧
+    複数(ENTITY[11]) ∧
+     の_曲目(ENTITY[11], ENTITY[10]) ∧
+      共通(ENTITY[12]) ∧
+       常装束(ENTITY[14]) ∧
+        使う(EVENT[13], ENTITY[9], ENTITY[7]) ∧ に(EVENT[13]) = ENTITY[12] ∧
+         で(EVENT[13]) = ENTITY[10] ∧ 等_装束(ENTITY[14], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[2]))) ∧
+  ある(EVENT[15], (ENTITY[1], GROUP[2])))
+
+# ::id 118_wikipedia_KYOTO_CLT_00005,188;NJ
+# ::snt 曲 によって は 指定 の 仮面 を 着用 する 場合 が ある 。
+∃ ENTITY[3] SITUATION[2] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 曲(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   指定(ENTITY[5]) ∧
+    の_仮面(ENTITY[5], ENTITY[4]) ∧
+     場合(SITUATION[2], 着用する.0(EVENT[6], ENTITY[3], ENTITY[4])) ∧
+      ある(EVENT[7], SITUATION[2]) ∧ によって(EVENT[7]) = ENTITY[1])
+
+# ::id 119_wikipedia_KYOTO_CLT_00005,189;NJ
+# ::snt 仮面 を 付け ない 曲 の 場合 や 、 仮面 が 指定 さ れ た 曲 を 女性 や 少年 少女 が 舞う 場合 は 仮面 を 付け ず に 素顔 の まま か 、 化粧 （ 団体 によって は 歌舞伎 舞踊 と 同様 の 舞台 化粧 ） を する 場合 が ある 。
+∃ SITUATION[21] ENTITY[18] SITUATION[17] ENTITY[5] ENTITY[20] ENTITY[22] ENTITY[19] ENTITY[28] ENTITY[25] ENTITY[30] EVENT[24] EVENT[29] EVENT[31] EVENT[32] EVENT[12] EVENT[16] ENTITY[6] ENTITY[3] ENTITY[2] ENTITY[11] ENTITY[14] ENTITY[15] GROUP[13] ENTITY[9] ENTITY[8] ENTITY[26] GROUP[1] (
+ ENTITY[5] = *pro*{ENTITY[2]} ∧
+  仮面(ENTITY[6]) ∧
+   ¬ ∃ EVENT[7] (付け(EVENT[7], ENTITY[5], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[3]) ∧ 曲(ENTITY[3]) ∧
+    の_場合(ENTITY[3], ENTITY[2]) ∧
+     仮面(ENTITY[11]) ∧
+      指定する.0_た(EVENT[12], _, ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[9] ∧ 曲(ENTITY[9]) ∧
+       女性(ENTITY[14]) ∧
+        少年_少女(ENTITY[15]) ∧
+         CONJ_や(is_element_of(ENTITY[14], GROUP[13]), is_element_of(ENTITY[15], GROUP[13])) ∧
+          THAT_場合(舞う(EVENT[16], GROUP[13], ENTITY[9]), ENTITY[8]) ∧
+           CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[8], GROUP[1])) ∧
+            団体(ENTITY[26]) ∧
+             past(EVENT[12]) ∧
+              ENTITY[18] = *pro*{ENTITY[8], ENTITY[9], ENTITY[15], ENTITY[14], ENTITY[11], ENTITY[2], ENTITY[3], ENTITY[6]} ∧
+               素顔(ENTITY[20]) ∧
+                の_まま(ENTITY[20], ENTITY[19]) ∧
+                 仮面(ENTITY[22]) ∧
+                  FACT(SITUATION[21], ¬ ∃ EVENT[23] 付け(EVENT[23], ENTITY[19], ENTITY[22])) ∧
+                   化粧(ENTITY[30]) ∧
+                    歌舞伎_舞踊(ENTITY[28]) ∧
+                     同様_の(EVENT[29], ENTITY[25]) ∧ と(EVENT[29]) = ENTITY[28] ∧
+                      によって_舞台_化粧(ENTITY[26], ENTITY[25]) ∧
+                      namely_-ENTITY-(ENTITY[25], ENTITY[30]) ∧
+                       場合(SITUATION[17],
+                        CONJ_か(xxx(EVENT[24], ENTITY[18], ENTITY[19]) ∧ te_に(EVENT[24]) = SITUATION[21],
+                         する(EVENT[31], ENTITY[18], ENTITY[30]))) ∧
+                        ある(EVENT[32], SITUATION[17]) ∧ ADV(EVENT[32]) = GROUP[1])
+
+# ::id 120_wikipedia_KYOTO_CLT_00005,190;NJ
+# ::snt 尚 、 これら の 正式 な 装束 、 仮面 （ 特に 別装束 、 とりわけ 、 童舞 の 装束 ） は 大変 高価 で ある ため 、 これら を 購入 できる 神社 仏閣 、 団体 は 大規模 な 神社 、 寺院 や 財政 に 余裕 が ある 団体 に 限定 さ れる 。
+∃ SITUATION[1] ENTITY[16] ATTRIB[8] ENTITY[7] GROUP[21] EVENT[12] EVENT[32] EVENT[17] ENTITY[10] ENTITY[11] GROUP[9] ENTITY[3] ENTITY[5] ENTITY[4] GROUP[2] ENTITY[6] ENTITY[19] ENTITY[20] GROUP[18] ENTITY[14] (
+ ENTITY[7] = これら ∧
+  正式_な(ATTRIB[8]) ∧
+   装束(ENTITY[10]) ∧
+    仮面(ENTITY[11]) ∧
+     is_element_of(ENTITY[10], GROUP[9]) ∧ is_element_of(ENTITY[11], GROUP[9]) ∧
+      equals(GROUP[9], ENTITY[6]) ∧ ATTRIBUTE(ATTRIB[8], ENTITY[6]) ∧ の(ENTITY[7], ENTITY[6]) ∧
+       ADV_特に(ENTITY[3]) ∧ 別装束(ENTITY[3]) ∧
+        童舞(ENTITY[5]) ∧
+         ADV_とりわけ(ENTITY[4]) ∧ の_装束(ENTITY[5], ENTITY[4]) ∧
+          is_element_of(ENTITY[3], GROUP[2]) ∧ is_element_of(ENTITY[4], GROUP[2]) ∧
+           namely_-ENTITY-(GROUP[2], ENTITY[6]) ∧
+            ENTITY[16] = これら{ENTITY[6], ENTITY[4], ENTITY[5], ENTITY[3], ENTITY[11], ENTITY[10]} ∧
+             神社_仏閣(ENTITY[19]) ∧
+              団体(ENTITY[20]) ∧
+               is_element_of(ENTITY[19], GROUP[18]) ∧ is_element_of(ENTITY[20], GROUP[18]) ∧
+                購入する.0(EVENT[17], ENTITY[14], ENTITY[16]) ∧ equals(GROUP[18], ENTITY[14]) ∧
+                 ADV_大変(EVENT[12]) ∧
+                  FACT(SITUATION[1], 高価_で_ある(EVENT[12], ENTITY[6])) ∧
+                   CONJ_や(∃ ATTRIB[23] GROUP[24] ENTITY[22] (
+                         大規模_な(ATTRIB[23]) ∧
+                          ∃ ENTITY[25] (神社(ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[24])) ∧
+                           ∃ ENTITY[26] (寺院(ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[24])) ∧
+                           equals(GROUP[24], ENTITY[22]) ∧ ATTRIBUTE(ATTRIB[23], ENTITY[22]) ∧
+                            is_element_of(ENTITY[22], GROUP[21])),
+                    ∃ ENTITY[30] ENTITY[29] ENTITY[27] EVENT[31] (
+                     財政(ENTITY[29]) ∧
+                      余裕(ENTITY[30]) ∧
+                       ある(EVENT[31], (ENTITY[27], ENTITY[30])) ∧ に(EVENT[31]) = ENTITY[29] ∧
+                        団体(ENTITY[27]) ∧ is_element_of(ENTITY[27], GROUP[21]))) ∧
+                    限定する.0(EVENT[32], _, ENTITY[14]) ∧ に(EVENT[32]) = GROUP[21] ∧
+                     ため(EVENT[32]) = SITUATION[1])
+
+# ::id 121_wikipedia_KYOTO_CLT_00005,191;NJ
+# ::snt 又 、 童舞 以外 の 殆ど の 装束 は 成人 男性 、 又は 女性 用 に 仕立て られ 、 又 、 重量 が ある こと 、 仮面 を 付け た 場合 に 視野 が 制約 さ れる こと 、 長く 伸び てる 部分 （ 裾 、 裳 、 等 ） が ある ため 、 振り付け に関して も 伸び てる 部分 の 捌き方 等 の 難易度 が 高い こと 、 又 、 東日本 において は 伝承 団体 の メンバー の 殆ど が 成人 で ある こと と 財政 に 余裕 が ない 場合 が 多い こと から 少年 少女 の 育成 に 消極的 な 場合 が 多く 、 育成 し てる 場合 でも 略式 なら 安価 な 装束 で 済む 管弦 と 『 浦安の舞 』 等 に とどまり 、 舞楽 は 行わ ない か 、 行う 場合 でも 成人 に 限ら れる 場合 が 多い 。
+∃ ENTITY[4] ENTITY[3] SITUATION[2] EVENT[5] ENTITY[18] ENTITY[29] (
+ 舞楽(ENTITY[18]) ∧
+  童舞_以外(ENTITY[29]) ∧
+   ENTITY[3] = *pro* ∧
+    ENTITY[4] = *pro* ∧
+     FACT(SITUATION[2], 育成する.0_てる(EVENT[5], ENTITY[3], ENTITY[4])) ∧
+      でも SITUATION[1] (SITUATION[1] = SITUATION[2],
+       ∃ ENTITY[79] SITUATION[78] ENTITY[24] ENTITY[23] SITUATION[22] ENTITY[20] ENTITY[7] SITUATION[6] EVENT[25] EVENT[82] EVENT[83] EVENT[84] ENTITY[81] ENTITY[80] GROUP[35] (
+        ENTITY[7] = *pro* ∧
+         ENTITY[20] = *pro*{ENTITY[18], ENTITY[浦安の舞]} ∧
+          ENTITY[23] = *pro*{ENTITY[20], ENTITY[18], ENTITY[浦安の舞]} ∧
+           ENTITY[24] = *pro*{ENTITY[20], ENTITY[18], ENTITY[浦安の舞]} ∧
+            FACT(SITUATION[22], 行う(EVENT[25], ENTITY[23], ENTITY[24])) ∧
+             場合(SITUATION[6],
+              CONJ_か(¬ ∃ EVENT[17] EVENT[19] GROUP[9] ENTITY[8] (
+                         CONJ_と(∃ ENTITY[11] ENTITY[10] (
+                               ENTITY[11] = *pro*{ENTITY[8], ENTITY[7]} ∧
+                                THAT_管弦(∀ EVENT[13] ENTITY[12] CND_なら(
+                                         略式(ENTITY[12]) ∧
+                                          xxx(EVENT[13], ENTITY[11], ENTITY[12]),
+                                         ∃ ATTRIB[15] EVENT[16] ENTITY[14] (
+                                          安価_な(ATTRIB[15]) ∧
+                                           ATTRIBUTE_装束(ATTRIB[15], ENTITY[14]) ∧
+                                            済む(EVENT[16], ENTITY[11]) ∧
+                                             で(EVENT[16]) = ENTITY[14])), ENTITY[10]) ∧
+                                 is_element_of(ENTITY[10], GROUP[9])), is_element_of(ENTITY[浦安の舞], GROUP[9])) ∧
+                          等(GROUP[9], ENTITY[8]) ∧
+                           とどまり(EVENT[17], ENTITY[7]) ∧ に(EVENT[17]) = ENTITY[8] ∧
+                            行わ(EVENT[19], ENTITY[7], ENTITY[18])),
+               でも SITUATION[21] (SITUATION[21] = SITUATION[22],
+                ∃ EVENT[27] ENTITY[26] (
+                 成人(ENTITY[26]) ∧
+                  限ら(EVENT[27], _, ENTITY[20]) ∧ に(EVENT[27]) = ENTITY[26] ∧
+                   場合(EVENT[27]) = SITUATION[21])))) ∧
+              CONJ_又(∃ GROUP[36] (
+                    ∃ EVENT[39] ENTITY[38] ENTITY[37] (
+                     重量(ENTITY[38]) ∧
+                      THAT_こと(ある(EVENT[39], ENTITY[38]), ENTITY[37]) ∧ is_element_of(ENTITY[37], GROUP[36])) ∧
+                     ∃ ENTITY[42] SITUATION[41] EVENT[44] EVENT[46] ENTITY[43] ENTITY[45] ENTITY[40] (
+                      ENTITY[42] = *pro*{ENTITY[29], ENTITY[18], ENTITY[浦安の舞]} ∧
+                       仮面(ENTITY[43]) ∧
+                        場合(SITUATION[41], 付け_た(EVENT[44], ENTITY[42], ENTITY[43])) ∧
+                         視野(ENTITY[45]) ∧
+                          THAT_こと(制約する.0(EVENT[46], _, ENTITY[45]) ∧ に(EVENT[46]) = SITUATION[41],
+                           ENTITY[40]) ∧ past(EVENT[44]) ∧ is_element_of(ENTITY[40], GROUP[36])) ∧
+                     ∃ SITUATION[48] EVENT[51] EVENT[56] EVENT[63] EVENT[64] GROUP[53] ENTITY[49] ENTITY[61] ENTITY[60] ENTITY[59] ENTITY[58] ENTITY[57] ENTITY[47] (
+                      ∃ ENTITY[54] (裾(ENTITY[54]) ∧ is_element_of(ENTITY[54], GROUP[53])) ∧
+                       ∃ ENTITY[55] (裳(ENTITY[55]) ∧ is_element_of(ENTITY[55], GROUP[53])) ∧
+                       伸び_てる(EVENT[51], ENTITY[49]) ∧ 等_部分(GROUP[53], ENTITY[49]) ∧
+                        FACT(SITUATION[48], ある(EVENT[56], ENTITY[49])) ∧
+                         振り付け(ENTITY[57]) ∧
+                          伸び_てる(EVENT[63], ENTITY[61]) ∧ 部分(ENTITY[61]) ∧
+                           の_捌き方(ENTITY[61], ENTITY[60]) ∧
+                            等(ENTITY[60], ENTITY[59]) ∧
+                             の_難易度(ENTITY[59], ENTITY[58]) ∧
+                              THAT_こと(高い(EVENT[64], ENTITY[58]) ∧ に関して(EVENT[64]) = ENTITY[57] ∧
+                                    ため(EVENT[64]) = SITUATION[48], ENTITY[47]) ∧
+                               ADV_長く(EVENT[51]) ∧ is_element_of(ENTITY[47], GROUP[36])) ∧
+                     is_subset_of_or_equal_to(GROUP[36], GROUP[35])),
+               ∃ EVENT[77] GROUP[66] ENTITY[65] (
+                CONJ_と(∃ ENTITY[67] (
+                      THAT_こと(殆ど ENTITY[70] ENTITY[69] ENTITY[68] (
+                            (伝承_団体(ENTITY[70]) ∧ の_メンバー(ENTITY[70], ENTITY[69]) ∧
+                             の(ENTITY[69], ENTITY[68])),
+                            ∃ EVENT[72] ENTITY[71] (成人(ENTITY[71]) ∧ で_ある(EVENT[72], ENTITY[68], ENTITY[71]))),
+                       ENTITY[67]) ∧ is_element_of(ENTITY[67], GROUP[66])),
+                 ∃ EVENT[76] ENTITY[75] ENTITY[74] ENTITY[73] (
+                  財政(ENTITY[74]) ∧
+                   余裕(ENTITY[75]) ∧
+                    THAT_場合(ない(EVENT[76], ENTITY[75]) ∧ に(EVENT[76]) = ENTITY[74], ENTITY[73]) ∧
+                     is_element_of(ENTITY[73], GROUP[66]))) ∧
+                 THAT_こと(多い(EVENT[77], GROUP[66]) ∧ において(EVENT[77]) = ENTITY[東日本], ENTITY[65]) ∧
+                  is_element_of(ENTITY[65], GROUP[35]))) ∧
+               ENTITY[79] = *pro*{ENTITY[東日本], ENTITY[29], ENTITY[18], ENTITY[浦安の舞]} ∧
+                少年_少女(ENTITY[81]) ∧
+                 の_育成(ENTITY[81], ENTITY[80]) ∧
+                  場合(SITUATION[78], 消極的_な(EVENT[82], ENTITY[79]) ∧ に(EVENT[82]) = ENTITY[80]) ∧
+                   CONJ_又(殆ど_の ENTITY[28] (の_装束(ENTITY[29], ENTITY[28]),
+                         ∃ EVENT[34] GROUP[31] ENTITY[30] (
+                          CONJ_又は(∃ ENTITY[32] (成人_男性(ENTITY[32]) ∧ is_element_of(ENTITY[32], GROUP[31])),
+                           ∃ ENTITY[33] (女性(ENTITY[33]) ∧ is_element_of(ENTITY[33], GROUP[31]))) ∧
+                           equals_用(GROUP[31], ENTITY[30]) ∧
+                            仕立て(EVENT[34], _, ENTITY[28]) ∧ に(EVENT[34]) = ENTITY[30])),
+                    多く(EVENT[83], SITUATION[78]) ∧ から(EVENT[83]) = GROUP[35]) ∧
+                    多い(EVENT[84], SITUATION[6]) ∧ 場合(EVENT[84]) = SITUATION[1])))
+
+# ::id 122_wikipedia_KYOTO_CLT_00005,192;NJ
+# ::snt 従って 、 童舞 は 特に 関東 地方 において は 希少 価値 が きわめて 高い 。
+∃ ATTRIB[4] EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 童舞(ENTITY[1]) ∧
+  関東_地方(ENTITY[2]) ∧
+   希少(ATTRIB[4]) ∧
+    ATTRIBUTE_価値(ATTRIB[4], ENTITY[3]) ∧
+     ADV_特に(EVENT[5]) ∧
+      ADV_きわめて(EVENT[5]) ∧ 高い(EVENT[5], (ENTITY[1], ENTITY[3])) ∧ において(EVENT[5]) = ENTITY[2])
+
+# ::id 123_wikipedia_KYOTO_CLT_00005,193;NJ
+# ::snt 伶楽 （ 一 度 廃絶 し 、 近年 復元 さ れ た 雅楽 ）
+∃ EVENT[4] EVENT[6] EVENT[8] DEGREE[3] TIME[5] ENTITY[1] ENTITY[7] (
+ 伶楽(ENTITY[7]) ∧
+  CD_一_度(DEGREE[3]) ∧
+   近年(TIME[5]) ∧
+    廃絶する.0(EVENT[4], ENTITY[1]) ∧ MSR(EVENT[4]) = DEGREE[3] ∧
+     復元する.0_た(EVENT[6], _, ENTITY[1]) ∧ is_contained_in(時間(EVENT[6]), TIME[5]) ∧ 雅楽(ENTITY[1]) ∧
+     namely_-ENTITY-(ENTITY[1], ENTITY[7]) ∧ past(EVENT[6]) ∧ xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[7])
+
+# ::id 124_wikipedia_KYOTO_CLT_00005,194;NJ
+# ::snt 現在 、 国立劇場 の 企画 の 一環 として 、 廃絶 さ れ た 楽器 や 楽曲 を 復元 する 試み が 行わ れ て いる 。
+∃ ENTITY[5] SITUATION[4] EVENT[8] EVENT[12] EVENT[13] ENTITY[3] GROUP[9] ENTITY[6] ENTITY[2] TIME[1] (
+ 現在(TIME[1]) ∧
+  の_企画(ENTITY[国立劇場], ENTITY[3]) ∧
+   の_一環(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[5] = *pro*{ENTITY[2], ENTITY[国立劇場], ENTITY[3]} ∧
+     CONJ_や(∃ ENTITY[10] (楽器(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+      ∃ ENTITY[11] (楽曲(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+      廃絶する.0_た(EVENT[8], _, ENTITY[6]) ∧ equals(GROUP[9], ENTITY[6]) ∧
+       試み(SITUATION[4], 復元する.0(EVENT[12], ENTITY[5], ENTITY[6])) ∧
+        past(EVENT[8]) ∧
+         行わ_て_いる(EVENT[13], _, SITUATION[4]) ∧ として(EVENT[13]) = ENTITY[2] ∧
+          is_contained_in(時間(EVENT[13]), TIME[1]))
+
+# ::id 125_wikipedia_KYOTO_CLT_00005,195;NJ
+# ::snt これ を 総称 し て 、 「 伶楽 」 （ れいがく ） ないし 「 遠楽 」 （ えんがく ） と 呼ぶ 。
+∃ ENTITY[4] ENTITY[2] ENTITY[1] EVENT[3] EVENT[8] GROUP[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = これ ∧
+   ENTITY[4] = *pro* ∧
+    CONJ_ないし(∃ ENTITY[6] (伶楽(ENTITY[6]) ∧ namely_-ENTITY-(ENTITY[れいがく], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[7] (遠楽(ENTITY[7]) ∧ namely_-ENTITY-(ENTITY[えんがく], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+     CONJ_te(総称する.0_て(EVENT[3], ENTITY[1], ENTITY[2]), 呼ぶ(EVENT[8], ENTITY[1], ENTITY[4], GROUP[5])))
+
+# ::id 126_wikipedia_KYOTO_CLT_00005,196;NJ
+# ::snt 芝 祐靖 が 音楽 監督 を 務める 伶楽舎 が 演奏 活動 を 行っ て いる 。
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ 音楽_監督(ENTITY[2]) ∧
+  務める(EVENT[3], ENTITY[芝_祐靖], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[伶楽舎] ∧
+   演奏_活動(ENTITY[4]) ∧ 行っ_て_いる(EVENT[5], ENTITY[伶楽舎], ENTITY[4]))
+
+# ::id 127_wikipedia_KYOTO_CLT_00005,197;NJ
+# ::snt 復元 さ れ た 楽器
+∃ ENTITY[1] EVENT[3] EVENT[4] (
+ past(EVENT[3]) ∧
+  復元する.0_た(EVENT[3], _, ENTITY[1]) ∧ 楽器(ENTITY[1]) ∧
+   xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 128_wikipedia_KYOTO_CLT_00005,198;NJ
+# ::snt 箜篌 、 五弦 琵琶 、 阮咸 、 排簫 、 尺八 （ 近世 邦楽 の 尺八 と 異なる ） 、 竽 、 方響 など
+∃ EVENT[9] GROUP[1] (
+ ∃ ENTITY[2] (箜篌(ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (五弦_琵琶(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  ∃ ENTITY[4] (阮咸(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  ∃ ENTITY[5] (排簫(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[1])) ∧
+  ∃ ENTITY[6] (尺八(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[1])) ∧
+  ∃ ENTITY[7] (竽(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[1])) ∧
+  ∃ ENTITY[8] (方響(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[1])) ∧ xxx(EVENT[9]) ∧ など(EVENT[9]) = GROUP[1])
+
+# ::id 129_wikipedia_KYOTO_CLT_00005,199;NJ
+# ::snt 明治 時代 に も 正倉院 に のこる 残欠 を 参考 に 箜篌 や 五弦 琵琶 など を 復元 し た こと が ある 。
+∃ SITUATION[2] ENTITY[1] EVENT[10] EVENT[12] EVENT[13] EVENT[14] GROUP[5] ENTITY[11] ENTITY[8] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  明治_時代(ENTITY[3]) ∧
+   CONJ_や(∃ ENTITY[6] (箜篌(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+    ∃ ENTITY[7] (五弦_琵琶(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+    など(GROUP[5], ENTITY[4]) ∧
+     のこる(EVENT[10], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[正倉院] ∧ 残欠(ENTITY[8]) ∧
+      参考(ENTITY[11]) ∧
+       こと(SITUATION[2],
+        xxx(EVENT[12], ENTITY[4], ENTITY[8], ENTITY[11]) ∧
+         復元する.0_た(EVENT[13], ENTITY[1], ENTITY[4]) ∧ に(EVENT[13]) = ENTITY[3]) ∧
+        past(EVENT[13]) ∧ ある(EVENT[14], ENTITY[1], SITUATION[2]))
+
+# ::id 130_wikipedia_KYOTO_CLT_00005,200;NJ
+# ::snt 江戸 時代 から とだえる こと なく つたわる 漆 工芸 や 螺鈿 の 技術 等 により 工芸品 として は 高度 な もの で ある が 、 弦 の 張力 は 演奏 に 耐える もの で は なく 、 演奏 の ため の 楽器 として の 復元 は 昭和 に なっ て から で ある 。
+∃ SITUATION[10] ATTRIB[16] ENTITY[6] ENTITY[1] EVENT[8] EVENT[9] EVENT[17] EVENT[29] ENTITY[7] ENTITY[5] GROUP[11] ENTITY[3] ENTITY[15] ENTITY[2] ENTITY[14] ENTITY[19] ENTITY[18] ENTITY[28] ENTITY[27] ENTITY[26] ENTITY[25] (
+ 工芸品(ENTITY[14]) ∧
+  弦(ENTITY[19]) ∧
+   の_張力(ENTITY[19], ENTITY[18]) ∧
+    演奏(ENTITY[28]) ∧
+     の_ため(ENTITY[28], ENTITY[27]) ∧
+      の_楽器(ENTITY[27], ENTITY[26]) ∧
+       として_の_復元(ENTITY[26], ENTITY[25]) ∧
+        ENTITY[1] = *pro* ∧
+         ENTITY[6] = *pro*{ENTITY[3], ENTITY[2], ENTITY[1]} ∧
+          江戸_時代(ENTITY[7]) ∧
+           THAT_こと(とだえる(EVENT[8], ENTITY[6]) ∧ から(EVENT[8]) = ENTITY[7], ENTITY[5]) ∧
+            CONJ_や(∃ ENTITY[12] (漆_工芸(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+             ∃ ENTITY[13] (螺鈿(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+             FACT(SITUATION[10], つたわる(EVENT[9], ENTITY[3])) ∧ の_技術(GROUP[11], ENTITY[3]) ∧
+              等(ENTITY[3], ENTITY[2]) ∧
+               高度_な(ATTRIB[16]) ∧
+                ATTRIBUTE_もの(ATTRIB[16], ENTITY[15]) ∧
+                 of_ADV_なく(ENTITY[5], SITUATION[10]) ∧
+                  CONJ_が(で_ある(EVENT[17], ENTITY[1], ENTITY[15]) ∧ として(EVENT[17]) = ENTITY[14] ∧
+                        により(EVENT[17]) = ENTITY[2],
+                   ¬ ∃ EVENT[23] EVENT[24] ENTITY[22] ENTITY[20] (
+                         演奏(ENTITY[22]) ∧
+                          耐える(EVENT[23], ENTITY[20]) ∧ に(EVENT[23]) = ENTITY[22] ∧
+                           もの(ENTITY[20]) ∧ で_は(EVENT[24], ENTITY[18], ENTITY[20])) ∧
+                    なっ_て_から_で_ある(EVENT[29], ENTITY[25]) ∧ に(EVENT[29]) = ENTITY[昭和]))
+
+# ::id 131_wikipedia_KYOTO_CLT_00005,201;NJ
+# ::snt 近代 における 雅楽 の 派生
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 近代(ENTITY[2]) ∧
+  雅楽(ENTITY[3]) ∧
+   の_派生(ENTITY[3], ENTITY[1]) ∧ における_派生(ENTITY[2], ENTITY[1]) ∧
+    xxx(EVENT[4]) ∧ LINK(EVENT[4]) = ENTITY[1])
+
+# ::id 132_wikipedia_KYOTO_CLT_00005,202;NJ
+# ::snt 雅楽器 を 用い た 宗教 音楽 、 祭典楽 など が ある 。
+∃ ENTITY[4] EVENT[6] EVENT[10] ENTITY[5] GROUP[7] ENTITY[2] ENTITY[1] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  雅楽器(ENTITY[5]) ∧
+   ∃ ENTITY[8] (宗教_音楽(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+    ∃ ENTITY[9] (祭典楽(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+    用い_た(EVENT[6], ENTITY[4], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[2] ∧ equals(GROUP[7], ENTITY[2]) ∧
+     など(ENTITY[2], ENTITY[1]) ∧ past(EVENT[6]) ∧ ある(EVENT[10], ENTITY[1]))
+
+# ::id 133_wikipedia_KYOTO_CLT_00005,205;NJ
+# ::snt 岡山県 （ 黒住教 、 金光教 ） 発祥 の 、 雅楽 と 能楽 ・ 俗楽 の 要素 が 合わさっ た 「 吉備楽 」
+∃ EVENT[11] EVENT[12] GROUP[3] ENTITY[2] (
+ ∃ GROUP[5] GROUP[7] ENTITY[6] ENTITY[4] (
+  岡山県_発祥(ENTITY[6]) ∧
+   is_element_of(ENTITY[黒住教], GROUP[5]) ∧ is_element_of(ENTITY[金光教], GROUP[5]) ∧
+    namely_-ENTITY-(GROUP[5], ENTITY[6]) ∧
+     CONJ_と(∃ ENTITY[8] (雅楽(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+      ∃ ENTITY[9] (能楽(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+      equals(GROUP[7], ENTITY[4]) ∧ の(ENTITY[6], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+  ∃ ENTITY[10] (俗楽(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[3])) ∧
+  の_要素(GROUP[3], ENTITY[2]) ∧
+   合わさっ_た(EVENT[11], (ENTITY[吉備楽], ENTITY[2])) ∧
+    past(EVENT[11]) ∧ xxx(EVENT[12]) ∧ LINK(EVENT[12]) = ENTITY[吉備楽])
+
+# ::id 134_wikipedia_KYOTO_CLT_00005,206;NJ
+# ::snt 金光教 楽長 尾原 音人 によって 創始 さ れ た 金光教 祭典楽 の 「 中正楽 」
+∃ EVENT[4] EVENT[6] ENTITY[3] ENTITY[5] ENTITY[1] (
+ 金光教_楽長(ENTITY[3]) ∧
+  namely_-ENTITY-(ENTITY[3], ENTITY[尾原_音人]) ∧
+   金光教_祭典楽(ENTITY[5]) ∧
+    創始する.0_た(EVENT[4], ENTITY[尾原_音人], ENTITY[1]) ∧ の_中正楽(ENTITY[5], ENTITY[1]) ∧
+     past(EVENT[4]) ∧ xxx(EVENT[6]) ∧ LINK(EVENT[6]) = ENTITY[1])
+
+# ::id 135_wikipedia_KYOTO_CLT_00005,207;NJ
+# ::snt 現代 雅楽
+∃ EVENT[2] ENTITY[1] (現代_雅楽(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 136_wikipedia_KYOTO_CLT_00005,208;NJ
+# ::snt 国立劇場 で は 、 雅楽 の 編成 の ため の 新しい 作品 を 現代 の 国内外 の 作曲家 に 委嘱 し 、 演奏 し て いる 。
+∃ ATTRIB[6] ENTITY[1] EVENT[10] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  雅楽(ENTITY[5]) ∧
+   の_編成(ENTITY[5], ENTITY[4]) ∧
+    の_ため(ENTITY[4], ENTITY[3]) ∧
+     新しい(ATTRIB[6]) ∧
+      の_作品(ENTITY[3], ENTITY[2]) ∧ ATTRIBUTE_作品(ATTRIB[6], ENTITY[2]) ∧
+       現代(ENTITY[8]) ∧
+        国内外(ENTITY[9]) ∧
+         の_作曲家(ENTITY[9], ENTITY[7]) ∧ の__作曲家(ENTITY[8], ENTITY[7]) ∧
+          委嘱する.0(EVENT[10], ENTITY[1], ENTITY[2], ENTITY[7]) ∧ で(EVENT[10]) = ENTITY[国立劇場] ∧
+           演奏する.0_て_いる(EVENT[11], ENTITY[1], ENTITY[2]) ∧ で(EVENT[11]) = ENTITY[国立劇場])
+
+# ::id 137_wikipedia_KYOTO_CLT_00005,209;NJ
+# ::snt 国立劇場 以外 の 民間 で も 同様 の 試み が 行わ れ て いる 。
+∃ ATTRIB[5] EVENT[6] ENTITY[2] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 国立劇場_以外(ENTITY[2]) ∧
+  の_民間(ENTITY[2], ENTITY[1]) ∧
+   同様(ATTRIB[5]) ∧
+    ATTRIBUTE(ATTRIB[5], ENTITY[4]) ∧
+     の_試み(ENTITY[4], ENTITY[3]) ∧ 行わ_て_いる(EVENT[6], _, ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[1])
+
+# ::id 138_wikipedia_KYOTO_CLT_00005,210;NJ
+# ::snt 特に 武満 徹 の 「 秋庭歌一具 」 （ 1973 年 - 1979 年 ） は 優秀 な 解釈 により 頻繁 に 演奏 さ れ 、 現代 雅楽 の 欠かせ ない レパートリー と なっ て いる 。
+∃ SITUATION[11] ATTRIB[3] EVENT[4] EVENT[10] ENTITY[2] ENTITY[7] ENTITY[6] ENTITY[1] (
+ の_xxx(ENTITY[武満_徹], ENTITY[秋庭歌一具]) ∧
+  CD_1973_年_1979_年(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[1], ENTITY[秋庭歌一具]) ∧
+    優秀_な(ATTRIB[3]) ∧
+     ATTRIBUTE_解釈(ATTRIB[3], ENTITY[2]) ∧
+      現代_雅楽(ENTITY[7]) ∧
+       ¬ ∃ EVENT[9] 欠かせ(EVENT[9], _, ENTITY[6]) ∧ の_レパートリー(ENTITY[7], ENTITY[6]) ∧
+        ADV_特に(SITUATION[11]) ∧
+         ADV_頻繁_に(EVENT[4]) ∧
+          FACT(SITUATION[11],
+           演奏する.0(EVENT[4], _, ENTITY[秋庭歌一具]) ∧ により(EVENT[4]) = ENTITY[2] ∧
+            なっ_て_いる(EVENT[10], ENTITY[秋庭歌一具], ENTITY[6])))
+
+# ::id 139_wikipedia_KYOTO_CLT_00005,211;NJ
+# ::snt ポップス の 分野 で は 篳篥 の 東儀 秀樹 が 、 篳篥 の 音色 を 生かし た ポピュラー 音楽 の 編曲 および 自作 を 演奏 し 、 メディア に も 頻繁 に 出演 する など 、 雅楽 の イメージ を 一新 し 一般 に 紹介 し て いる 。
+∃ SITUATION[17] ENTITY[4] EVENT[10] EVENT[14] EVENT[19] EVENT[21] EVENT[23] ENTITY[3] ENTITY[9] ENTITY[8] GROUP[11] ENTITY[6] ENTITY[5] ENTITY[16] ENTITY[18] ENTITY[15] ENTITY[22] ENTITY[2] ENTITY[1] (
+ ポップス(ENTITY[2]) ∧
+  の_分野(ENTITY[2], ENTITY[1]) ∧
+   篳篥(ENTITY[3]) ∧
+    の_xxx(ENTITY[3], ENTITY[東儀_秀樹]) ∧
+     ENTITY[4] = *pro*{ENTITY[3], ENTITY[2]} ∧
+      篳篥(ENTITY[9]) ∧
+       の_音色(ENTITY[9], ENTITY[8]) ∧
+        生かし_た(EVENT[10], ENTITY[6], ENTITY[8]) ∧ ポピュラー_音楽(ENTITY[6]) ∧
+         CONJ_および(∃ ENTITY[12] (編曲(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+          ∃ ENTITY[13] (自作(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[11]))) ∧
+          equals(GROUP[11], ENTITY[5]) ∧ の(ENTITY[6], ENTITY[5]) ∧
+           雅楽(ENTITY[16]) ∧
+            の_イメージ(ENTITY[16], ENTITY[15]) ∧
+             メディア(ENTITY[18]) ∧
+              FACT(SITUATION[17], 出演する.0(EVENT[19], ENTITY[15]) ∧ に(EVENT[19]) = ENTITY[18]) ∧
+               一般(ENTITY[22]) ∧
+                past(EVENT[10]) ∧
+                 ADV_頻繁_に(EVENT[19]) ∧
+                  演奏する.0(EVENT[14], ENTITY[4], ENTITY[5]) ∧
+                   一新する.0(EVENT[21], ENTITY[4], ENTITY[15]) ∧ など(EVENT[21]) = SITUATION[17] ∧
+                    紹介する.0_て_いる(EVENT[23], ENTITY[東儀_秀樹], ENTITY[4], ENTITY[22]) ∧ で(EVENT[23]) = ENTITY[1])
+
+# ::id 140_wikipedia_KYOTO_CLT_00005,212;NJ
+# ::snt また 東儀 の 他 に 、 雅楽器 も 用い た 演奏 集団 、 音楽 理論 の 分析 ・ 研究 に 重点 を 置き 現代的 雅楽 曲 を 創作 する 、 芸術 団体 など が ある 。
+∃ EVENT[20] GROUP[3] ENTITY[2] ENTITY[1] (
+ の_他(ENTITY[東儀], ENTITY[1]) ∧
+  ∃ EVENT[7] ENTITY[6] ENTITY[4] (
+   雅楽器(ENTITY[6]) ∧
+    用い_た(EVENT[7], ENTITY[4], ENTITY[6]) ∧ 演奏_集団(ENTITY[4]) ∧
+     past(EVENT[7]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ATTRIB[18] EVENT[16] EVENT[19] GROUP[12] ENTITY[11] ENTITY[15] ENTITY[10] ENTITY[17] ENTITY[8] (
+    音楽_理論(ENTITY[11]) ∧
+     ∃ ENTITY[13] (分析(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[12])) ∧
+      ∃ ENTITY[14] (研究(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[12])) ∧
+      equals(GROUP[12], ENTITY[10]) ∧ の(ENTITY[11], ENTITY[10]) ∧
+       重点(ENTITY[15]) ∧
+        現代的(ATTRIB[18]) ∧
+         ATTRIBUTE_雅楽_曲(ATTRIB[18], ENTITY[17]) ∧
+          置き(EVENT[16], ENTITY[8], ENTITY[15]) ∧ に(EVENT[16]) = ENTITY[10] ∧
+           創作する.0(EVENT[19], ENTITY[8], ENTITY[17]) ∧ 芸術_団体(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[3])) ∧
+   など(GROUP[3], ENTITY[2]) ∧ ある(EVENT[20], ENTITY[2]) ∧ に(EVENT[20]) = ENTITY[1])
+
+# ::id 141_wikipedia_KYOTO_CLT_00005,213;NJ
+# ::snt 詳しく は 現代 雅楽 の 項 を 参照 。
+IMPERATIVE(∃ EVENT[3] ENTITY[2] ENTITY[1] (
+      現代_雅楽(ENTITY[2]) ∧
+       の_項(ENTITY[2], ENTITY[1]) ∧ ADV_詳しく_は(EVENT[3]) ∧ 参照(EVENT[3], _, ENTITY[1])))
+
+# ::id 142_wikipedia_KYOTO_CLT_00005,214;NJ
+# ::snt 雅楽 にまつわる 言葉
+∃ EVENT[3] ENTITY[2] ENTITY[1] (雅楽(ENTITY[2]) ∧ にまつわる_言葉(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 143_wikipedia_KYOTO_CLT_00005,215;NJ
+# ::snt 塩梅 （ あんばい ）
+∃ EVENT[2] ENTITY[1] (塩梅(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[あんばい], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 144_wikipedia_KYOTO_CLT_00005,216;NJ
+# ::snt 西洋 音楽 で 言う ところ の メリスマ 。
+∃ ENTITY[4] SITUATION[3] ENTITY[1] EVENT[6] EVENT[7] ENTITY[5] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[1]} ∧
+   西洋_音楽(ENTITY[5]) ∧
+    ところ(SITUATION[3], 言う(EVENT[6], ENTITY[4]) ∧ で(EVENT[6]) = ENTITY[5]) ∧
+     の_メリスマ(SITUATION[3], ENTITY[2]) ∧ xxx(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 145_wikipedia_KYOTO_CLT_00005,217;NJ
+# ::snt 近似 する 音程 へ 徐々 に 移行 する 一種 の ポルタメント 。
+∃ ENTITY[1] EVENT[6] EVENT[8] EVENT[10] ENTITY[7] ENTITY[4] ENTITY[9] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  近似する.0(EVENT[6], ENTITY[4]) ∧ 音程(ENTITY[4]) ∧
+   徐々(ENTITY[7]) ∧
+    一種(ENTITY[9]) ∧
+     移行する.0(EVENT[8], ENTITY[2]) ∧ に(EVENT[8]) = ENTITY[7] ∧ へ(EVENT[8]) = ENTITY[4] ∧
+      の_ポルタメント(ENTITY[9], ENTITY[2]) ∧ xxx(EVENT[10], ENTITY[1], ENTITY[2]))
+
+# ::id 146_wikipedia_KYOTO_CLT_00005,218;NJ
+# ::snt ゆっくり と 慎重 に 音程 を 変更 する ところ から 、 具合 を 測り つつ 物事 を 進める さま を 表す 。
+∃ ENTITY[9] SITUATION[8] ATTRIB[4] ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[11] EVENT[13] EVENT[14] ENTITY[5] ENTITY[10] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ADV_ゆっくり(ATTRIB[4]) ∧
+    音程(ENTITY[5]) ∧
+     ところ(SITUATION[2], 変更する.0(EVENT[6], ENTITY[3], ENTITY[5]) ∧ と(EVENT[6]) = ATTRIB[4]) ∧
+      ENTITY[9] = *pro*{ENTITY[1], ENTITY[5]} ∧
+       具合(ENTITY[10]) ∧
+        物事(ENTITY[12]) ∧
+         さま(SITUATION[8],
+          CRD_つつ(測り(EVENT[11], ENTITY[9], ENTITY[10]), 進める(EVENT[13], ENTITY[9], ENTITY[12]))) ∧
+          ADV_慎重_に(EVENT[6]) ∧ 表す(EVENT[14], ENTITY[1], SITUATION[8]) ∧ から(EVENT[14]) = SITUATION[2])
+
+# ::id 147_wikipedia_KYOTO_CLT_00005,219;NJ
+# ::snt 八多羅 （ やたら ） 、 八多羅滅多羅 （ やたらめったら ） 、 滅多 （ めった ）
+∃ EVENT[5] GROUP[1] (
+ ∃ ENTITY[2] (八多羅(ENTITY[2]) ∧ namely_-ENTITY-(ENTITY[やたら], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+  ∃ ENTITY[3] (八多羅滅多羅(ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[やたらめったら], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[1])) ∧
+  ∃ ENTITY[4] (滅多(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[めった], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])) ∧
+  xxx(EVENT[5]) ∧ LINK(EVENT[5]) = GROUP[1])
+
+# ::id 148_wikipedia_KYOTO_CLT_00005,220;NJ
+# ::snt 現在 は 矢鱈 と 書く が これ は 明治 時代 に 夏目 漱石 によって 作ら れ た 当て字 で 、 本来 は 雅楽 の 拍子 を 指す 。
+∃ ENTITY[2] ENTITY[1] ENTITY[6] EVENT[5] EVENT[10] EVENT[11] EVENT[15] ENTITY[4] ENTITY[9] ENTITY[7] ENTITY[14] ENTITY[13] ENTITY[3] ENTITY[12] (
+ 現在(ENTITY[3]) ∧
+  ENTITY[6] = これ{ENTITY[3], ENTITY[4]} ∧
+   本来(ENTITY[12]) ∧
+    ENTITY[1] = *pro* ∧
+     ENTITY[2] = *pro* ∧
+      矢鱈(ENTITY[4]) ∧
+       明治_時代(ENTITY[9]) ∧
+        作ら_た(EVENT[10], ENTITY[夏目_漱石], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧ 当て字(ENTITY[7]) ∧
+         雅楽(ENTITY[14]) ∧
+          の_拍子(ENTITY[14], ENTITY[13]) ∧
+           past(EVENT[10]) ∧
+            CONJ_が(書く(EVENT[5], ENTITY[1], ENTITY[2], ENTITY[4]) ∧ 時間(EVENT[5]) = ENTITY[3],
+             CONJ_te(で(EVENT[11], ENTITY[6], ENTITY[7]),
+              指す(EVENT[15], ENTITY[6], ENTITY[13]) ∧ ADV(EVENT[15]) = ENTITY[12])))
+
+# ::id 149_wikipedia_KYOTO_CLT_00005,221;NJ
+# ::snt 2 拍子 と 3 拍子 の リズム 細胞 を 繋げる 変拍子 。
+∃ ENTITY[1] EVENT[8] EVENT[9] GROUP[5] ENTITY[4] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CONJ_と(∃ ENTITY[6] (CD_2_拍子(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+   ∃ ENTITY[7] (CD_3_拍子(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+   の_リズム_細胞(GROUP[5], ENTITY[4]) ∧
+    繋げる(EVENT[8], ENTITY[2], ENTITY[4]) ∧ 変拍子(ENTITY[2]) ∧ xxx(EVENT[9], ENTITY[1], ENTITY[2]))
+
+# ::id 150_wikipedia_KYOTO_CLT_00005,222;NJ
+# ::snt 転じ て 、 リズム が 合わ ず めちゃくちゃ で 大袈裟 な 身振り や 様 を 指す 。
+∃ ATTRIB[7] ENTITY[1] EVENT[2] EVENT[6] EVENT[11] ENTITY[4] GROUP[8] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  リズム(ENTITY[4]) ∧
+   大袈裟_な(ATTRIB[7]) ∧
+    CONJ_や(∃ ENTITY[9] (身振り(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+     ∃ ENTITY[10] (様(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+     CONJ_te(¬ ∃ EVENT[5] 合わ(EVENT[5], ENTITY[4]), めちゃくちゃ_で(EVENT[6])) ∧
+      equals(GROUP[8], ENTITY[3]) ∧ ATTRIBUTE(ATTRIB[7], ENTITY[3]) ∧
+      CONJ_te(転じ_て(EVENT[2], ENTITY[1]), 指す(EVENT[11], ENTITY[1], ENTITY[3])))
+
+# ::id 151_wikipedia_KYOTO_CLT_00005,223;NJ
+# ::snt 多羅 （ たら ） は サンスクリット の ターラ （ リズム ） に 由来 する 。
+∃ EVENT[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[たら], ENTITY[多羅]) ∧
+  の_xxx(ENTITY[サンスクリット], ENTITY[ターラ]) ∧
+   リズム(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[ターラ]) ∧ 由来する.0(EVENT[2], ENTITY[多羅]) ∧ に(EVENT[2]) = ENTITY[ターラ])
+
+# ::id 152_wikipedia_KYOTO_CLT_00005,224;NJ
+# ::snt 打ち合わせ （ うちあわせ ）
+∃ EVENT[2] ENTITY[1] (打ち合わせ(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[うちあわせ], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 153_wikipedia_KYOTO_CLT_00005,225;NJ
+# ::snt 管楽器 同士 で 練習 を し た 後 、 打楽器 を 交え て 、 最終的 な リハーサル を し た こと から 。
+∃ ATTRIB[10] ENTITY[6] SITUATION[2] SITUATION[1] EVENT[8] EVENT[11] EVENT[12] ENTITY[7] ENTITY[9] (
+ 後(SITUATION[2],
+  同士 ENTITY[3] (管楽器(ENTITY[3]),
+   ∃ EVENT[5] ENTITY[4] (練習(ENTITY[4]) ∧ past(EVENT[5]) ∧ し_た(EVENT[5], ENTITY[3], ENTITY[4])))) ∧
+  ENTITY[6] = *pro* ∧
+   打楽器(ENTITY[7]) ∧
+    最終的_な(ATTRIB[10]) ∧
+     ATTRIBUTE_リハーサル(ATTRIB[10], ENTITY[9]) ∧
+      こと(SITUATION[1],
+       CONJ_te(交え_て(EVENT[8], ENTITY[6], ENTITY[7]) ∧ 時間(EVENT[8]) = SITUATION[2],
+        し_た(EVENT[11], ENTITY[6], ENTITY[9]) ∧ 時間(EVENT[11]) = SITUATION[2])) ∧
+       past(EVENT[11]) ∧ xxx(EVENT[12]) ∧ から(EVENT[12]) = SITUATION[1])
+
+# ::id 154_wikipedia_KYOTO_CLT_00005,226;NJ
+# ::snt 野暮 （ やぼ ）
+∃ EVENT[2] ENTITY[1] (野暮(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[やぼ], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 155_wikipedia_KYOTO_CLT_00005,227;NJ
+# ::snt 笙 の 17 本 の 管 の うち 「 也 」 と 「 毛 」 の 音 が 使用 さ れ ない こと から 。
+∃ SITUATION[1] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[3] GROUP[7] ENTITY[6] ENTITY[2] (
+ 笙(ENTITY[4]) ∧
+  CD_17_本(ENTITY[5]) ∧
+   の_管(ENTITY[5], ENTITY[3]) ∧ の__管(ENTITY[4], ENTITY[3]) ∧
+    の_うち(ENTITY[3], ENTITY[2]) ∧
+     CONJ_と(∃ ENTITY[8] (也(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+      ∃ ENTITY[9] (毛(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+      の_音(GROUP[7], ENTITY[6]) ∧
+       こと(SITUATION[1], ¬ ∃ EVENT[10] (使用する.0(EVENT[10], _, ENTITY[6]) ∧ ADV(EVENT[10]) = ENTITY[2])) ∧
+        xxx(EVENT[11]) ∧ から(EVENT[11]) = SITUATION[1])
+
+# ::id 156_wikipedia_KYOTO_CLT_00005,229;NJ
+# ::snt 左舞 （ さまい ） が 上達 する こと から 。
+∃ SITUATION[1] EVENT[3] EVENT[4] ENTITY[2] (
+ 左舞(ENTITY[2]) ∧
+  namely_-ENTITY-(ENTITY[さまい], ENTITY[2]) ∧
+   こと(SITUATION[1], 上達する.0(EVENT[3], ENTITY[2])) ∧ xxx(EVENT[4]) ∧ から(EVENT[4]) = SITUATION[1])
+
+# ::id 157_wikipedia_KYOTO_CLT_00005,230;NJ
+# ::snt 上手い （ うまい ）
+∃ ATTRIB[2] EVENT[3] ENTITY[1] (
+ 上手い(ATTRIB[2]) ∧
+  ATTRIBUTE(ATTRIB[2], ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[うまい], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 158_wikipedia_KYOTO_CLT_00005,231;NJ
+# ::snt 右舞 （ うまい ） から 。
+∃ EVENT[2] ENTITY[1] (右舞(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[うまい], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ から(EVENT[2]) = ENTITY[1])
+
+# ::id 159_wikipedia_KYOTO_CLT_00005,232;NJ
+# ::snt 二の舞 を 舞う （ にのまいをまう ）
+∃ EVENT[2] ENTITY[1] (二の舞(ENTITY[1]) ∧ 舞う(EVENT[2], _, ENTITY[1]))
+
+# ::id 160_wikipedia_KYOTO_CLT_00005,233;NJ
+# ::snt 「 二ノ舞 」 は 「 安摩 」 と セット の 番舞 一覧 、 ただし 例外的 に どちら も 左方 に 属し 、 装束 のみ 二ノ舞 は 右方 の 装束 。
+∃ SITUATION[7] EVENT[3] ENTITY[2] ENTITY[1] ENTITY[9] (
+ と_セット(ENTITY[安摩], ENTITY[2]) ∧
+  の_番舞_一覧(ENTITY[2], ENTITY[1]) ∧
+   装束(ENTITY[9]) ∧
+    ADV_例外的_に(SITUATION[7]) ∧
+     xxx(EVENT[3], ENTITY[二ノ舞], ENTITY[1]) ∧
+      FACT(SITUATION[7],
+       も ENTITY[4] ∃ EVENT[6] ENTITY[5] (左方(ENTITY[5]) ∧ 属し(EVENT[6], ENTITY[4]) ∧ に(EVENT[6]) = ENTITY[5])) ∧
+       のみ ENTITY[8] (ENTITY[8] = ENTITY[9],
+        ∃ EVENT[12] ENTITY[11] ENTITY[10] (
+         右方(ENTITY[11]) ∧
+          の_装束(ENTITY[11], ENTITY[10]) ∧ xxx(EVENT[12], (ENTITY[8], ENTITY[二ノ舞]), ENTITY[10]))))
+
+# ::id 161_wikipedia_KYOTO_CLT_00005,234;NJ
+# ::snt 安摩 が 上手 に 舞っ た 後 、 二ノ舞 は 真似 て 舞お うとする が 、 上手 に 出来 ず に 滑稽 な 動き に なる という 設定 。
+∃ SITUATION[12] ATTRIB[14] SITUATION[10] ENTITY[9] ENTITY[7] SITUATION[1] EVENT[3] EVENT[5] EVENT[15] EVENT[16] ENTITY[2] ENTITY[13] ENTITY[8] (
+ 安摩(ENTITY[2]) ∧
+  後(SITUATION[1], 舞っ_た(EVENT[3], ENTITY[2])) ∧
+   ENTITY[7] = *pro*{ENTITY[二ノ舞], ENTITY[2]} ∧
+    ENTITY[9] = *pro*{ENTITY[7], ENTITY[二ノ舞], ENTITY[2]} ∧
+     FACT(SITUATION[10], FACT(SITUATION[12], ¬ ∃ EVENT[11] 出来(EVENT[11], ENTITY[9]))) ∧
+      滑稽_な(ATTRIB[14]) ∧
+       ATTRIBUTE_動き(ATTRIB[14], ENTITY[13]) ∧
+        THAT_設定(なる(EVENT[15], ENTITY[9]) ∧ に(EVENT[15]) = ENTITY[13] ∧ te_に(EVENT[15]) = SITUATION[10],
+         ENTITY[8]) ∧
+         ADV_上手_に(EVENT[3]) ∧
+          past(EVENT[3]) ∧
+           ADV_上手_に(SITUATION[12]) ∧
+            CONJ_が(CONJ_te(真似_て(EVENT[5], ENTITY[二ノ舞]) ∧ 時間(EVENT[5]) = SITUATION[1],
+                  MD_うとする(∃ EVENT[6] (舞お(EVENT[6], ENTITY[二ノ舞]) ∧ 時間(EVENT[6]) = SITUATION[1]))),
+             xxx(EVENT[16], ENTITY[7], ENTITY[8])))
+
+# ::id 162_wikipedia_KYOTO_CLT_00005,235;NJ
+# ::snt 転じ て 他 人 の 成功 を 真似 て 失敗 する こと 。
+∃ ENTITY[4] SITUATION[3] ENTITY[1] EVENT[2] EVENT[7] EVENT[8] EVENT[9] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[1]} ∧
+   他_人(ENTITY[6]) ∧
+    の_成功(ENTITY[6], ENTITY[5]) ∧
+     こと(SITUATION[3], CONJ_te(真似_て(EVENT[7], ENTITY[4], ENTITY[5]), 失敗する.0(EVENT[8], ENTITY[4]))) ∧
+      CONJ_te(転じ_て(EVENT[2], ENTITY[1]), xxx(EVENT[9], ENTITY[1], SITUATION[3])))
+
+# ::id 163_wikipedia_KYOTO_CLT_00005,236;NJ
+# ::snt 他 人 の 失敗 を 繰り返す 例 に 使わ れる の は 本来 は 誤用 。
+∃ ENTITY[4] SITUATION[3] EVENT[11] ENTITY[10] EVENT[7] EVENT[8] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[1] (
+ ENTITY[4] = *pro*{ENTITY[1]} ∧
+  他_人(ENTITY[6]) ∧
+   の_失敗(ENTITY[6], ENTITY[5]) ∧
+    例(SITUATION[3], 繰り返す(EVENT[7], ENTITY[4], ENTITY[5])) ∧
+     使わ(EVENT[8], _, ENTITY[1]) ∧ に(EVENT[8]) = SITUATION[3] ∧ の(ENTITY[1]) ∧
+      本来(ENTITY[9]) ∧
+       誤用(ENTITY[10]) ∧ xxx(EVENT[11], ENTITY[1], ENTITY[10]) ∧ ADV(EVENT[11]) = ENTITY[9])
+
+# ::id 164_wikipedia_KYOTO_CLT_00005,237;NJ
+# ::snt 呂律 （ ろれつ ）
+∃ EVENT[2] ENTITY[1] (呂律(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[ろれつ], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 165_wikipedia_KYOTO_CLT_00005,238;NJ
+# ::snt 古く は 「 りょりつ 」 と も 読ん だ 。
+∃ ENTITY[2] ENTITY[1] EVENT[5] ENTITY[4] ENTITY[3] (
+ 古く(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[2] = *pro* ∧
+    りょりつ(ENTITY[4]) ∧
+     past(EVENT[5]) ∧ 読ん_だ(EVENT[5], ENTITY[1], ENTITY[2], ENTITY[4]) ∧ 時間(EVENT[5]) = ENTITY[3])
+
+# ::id 166_wikipedia_KYOTO_CLT_00005,239;NJ
+# ::snt 呂 と 律 は 雅楽 における 曲調 の 大 分類 で あり （ 上述 の 曲 の 調子 を 参照 ） 、 呂律 は 広い 意味 で の 曲 の 調子 を 意味 する 。
+∃ ATTRIB[12] ATTRIB[7] EVENT[8] EVENT[14] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[13] ENTITY[11] ENTITY[10] ENTITY[2] ENTITY[3] GROUP[1] ENTITY[9] (
+ 呂(ENTITY[2]) ∧
+  律(ENTITY[3]) ∧
+   CONJ_と(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧
+    呂律(ENTITY[9]) ∧
+     雅楽(ENTITY[6]) ∧
+      における_曲調(ENTITY[6], ENTITY[5]) ∧
+       大(ATTRIB[7]) ∧
+        ATTRIBUTE_分類(ATTRIB[7], ENTITY[4]) ∧ の_分類(ENTITY[5], ENTITY[4]) ∧
+         広い(ATTRIB[12]) ∧
+          ATTRIBUTE_意味(ATTRIB[12], ENTITY[11]) ∧
+           曲(ENTITY[13]) ∧
+            の_調子(ENTITY[13], ENTITY[10]) ∧ で_の_調子(ENTITY[11], ENTITY[10]) ∧
+             で_あり(EVENT[8], GROUP[1], ENTITY[4]) ∧ 意味する.0(EVENT[14], ENTITY[9], ENTITY[10]))
+
+# ::id 167_wikipedia_KYOTO_CLT_00005,240;NJ
+# ::snt 呂 旋法 を 前提 に 作ら れ た 曲 を 律 旋法 で 詠お うとする と 調子 が おかしく なる こと から 、 音 の 調子 が 合わ ない （ 転じ て 詠唱 や 講演 で うまく 言葉 が 続け て 発音 でき ない ） こと を 「 呂律 が 回ら ない 」 と 表現 する よう に なっ た 。
+∃ SITUATION[19] SITUATION[15] SITUATION[14] ENTITY[13] SITUATION[1] EVENT[22] EVENT[23] ENTITY[17] ENTITY[16] ENTITY[20] (
+ こと(SITUATION[1],
+  ∀ ENTITY[2] CND_と(
+      ENTITY[2] = *pro* ∧
+       MD_うとする(∃ EVENT[7] EVENT[8] EVENT[10] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[3] (
+             呂_旋法(ENTITY[5]) ∧
+              前提(ENTITY[6]) ∧
+               xxx(EVENT[7], ENTITY[3], ENTITY[5], ENTITY[6]) ∧ 作ら_た(EVENT[8], _, ENTITY[3]) ∧
+                曲(ENTITY[3]) ∧
+                律_旋法(ENTITY[9]) ∧
+                 past(EVENT[8]) ∧
+                  詠お(EVENT[10], ENTITY[2], ENTITY[3]) ∧ で(EVENT[10]) = ENTITY[9])),
+      ∃ EVENT[12] ENTITY[11] (調子(ENTITY[11]) ∧ おかしく_なる(EVENT[12], ENTITY[11])))) ∧
+  ENTITY[13] = *pro* ∧
+   音(ENTITY[17]) ∧
+    の_調子(ENTITY[17], ENTITY[16]) ∧
+     こと(SITUATION[15], ¬ ∃ EVENT[18] 合わ(EVENT[18], ENTITY[16])) ∧
+      呂律(ENTITY[20]) ∧
+       FACT(SITUATION[19], ¬ ∃ EVENT[21] 回ら(EVENT[21], ENTITY[20])) ∧
+        よう(SITUATION[14], 表現する.0(EVENT[22], ENTITY[13], SITUATION[15], SITUATION[19])) ∧
+         past(EVENT[23]) ∧
+          なっ_た(EVENT[23], ENTITY[13]) ∧ に(EVENT[23]) = SITUATION[14] ∧ から(EVENT[23]) = SITUATION[1])
+
+# ::id 168_wikipedia_KYOTO_CLT_00005,241;NJ
+# ::snt 二の句 を 継げ ない （ にのくをつげない ）
+∃ ENTITY[1] (二の句(ENTITY[1]) ∧ ¬ ∃ EVENT[2] 継げ(EVENT[2], _, ENTITY[1]))
+
+# ::id 169_wikipedia_KYOTO_CLT_00005,242;NJ
+# ::snt 朗詠 で 、 一の句 から 二の句 に 移る 時 、 急 に 高音 と なる ため 歌う の が 難しい こと から 。
+∃ SITUATION[14] ENTITY[10] ENTITY[5] SITUATION[4] SITUATION[3] ENTITY[2] SITUATION[1] EVENT[9] EVENT[12] EVENT[15] EVENT[16] EVENT[17] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[11] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[5] = *pro*{ENTITY[2]} ∧
+   朗詠(ENTITY[6]) ∧
+    一の句(ENTITY[7]) ∧
+     二の句(ENTITY[8]) ∧
+      時(SITUATION[4],
+       移る(EVENT[9], ENTITY[5]) ∧ に(EVENT[9]) = ENTITY[8] ∧ から(EVENT[9]) = ENTITY[7] ∧
+        で(EVENT[9]) = ENTITY[6]) ∧
+       ENTITY[10] = *pro*{ENTITY[2], ENTITY[6], ENTITY[7], ENTITY[8]} ∧
+        高音(ENTITY[11]) ∧
+         FACT(SITUATION[3],
+          なる(EVENT[12], ENTITY[10]) ∧ と(EVENT[12]) = ENTITY[11] ∧
+           時間(EVENT[12]) = SITUATION[4]) ∧
+          の(SITUATION[14], 歌う(EVENT[15], ENTITY[2])) ∧
+           こと(SITUATION[1], 難しい(EVENT[16], (ENTITY[2], SITUATION[14])) ∧ ため(EVENT[16]) = SITUATION[3]) ∧
+            ADV_急_に(EVENT[12]) ∧ xxx(EVENT[17]) ∧ から(EVENT[17]) = SITUATION[1])
+
+# ::id 170_wikipedia_KYOTO_CLT_00005,243;NJ
+# ::snt 雅楽 を 鑑賞 する 機会
+∃ ENTITY[2] EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ ENTITY[2] = *pro* ∧
+  雅楽(ENTITY[3]) ∧
+   THAT_機会(鑑賞する.0(EVENT[4], ENTITY[2], ENTITY[3]), ENTITY[1]) ∧ xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])

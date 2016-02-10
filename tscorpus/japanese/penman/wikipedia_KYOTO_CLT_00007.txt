@@ -1,0 +1,403 @@
+# ::id 1_wikipedia_KYOTO_CLT_00007,1;NJ
+# ::snt 湯豆腐
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 湯豆腐))
+
+# ::id 2_wikipedia_KYOTO_CLT_00007,2;NJ
+# ::snt 湯豆腐 （ ゆどうふ ） は 、 豆腐 を 使っ た 料理 の 一 つ 。
+( EVENT-7 / EVENT
+      :ARG0 ( ENTITY-1 / 湯豆腐
+             :NAMELY ( ENTITY-ゆどうふ / ENTITY
+                    :name ( n-8 / name
+                           :op1 "ゆどうふ")))
+      :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_一_つ)
+             :の ( SITUATION-3 / 料理
+                    :THAT ( EVENT-6 / 使っ_た
+                           :ARG0 ( ARB-4 / arb
+                                  :pick0)
+                           :ARG1 ( ENTITY-5 / 豆腐)))))
+
+# ::id 3_wikipedia_KYOTO_CLT_00007,3;NJ
+# ::snt 冬 の 代表的 な 鍋 料理 の ひと つ 。
+( EVENT-6 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / ENTITY ( ENTITY-2 CD_ひと_つ)
+             :の ( ENTITY-3 / 鍋_料理
+                    :ATTRIBUTE ( ATTRIB-5 / 代表的_な)
+                    :の ( ENTITY-4 / 冬))))
+
+# ::id 4_wikipedia_KYOTO_CLT_00007,4;NJ
+# ::snt 鍋 に 昆布 を 敷き 、 水 を 張っ た 中 に 一 口 大 に 切っ た 豆腐 を 入れ 、 温まっ た ところ を 引き揚げ て つけダレ で 食べる 。
+( CONJ-22 / CONJ_te
+      :op1 ( EVENT-18 / 引き揚げ_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-2 / pro
+                    :pick0
+                    :ARG0-of ( EVENT-5 / 敷き
+                           :ARG1 ( ENTITY-4 / 昆布)
+                           :に ( ENTITY-3 / 鍋)))
+             :を ( SITUATION-16 / ところ
+                    :THAT ( EVENT-17 / 温まっ_た
+                           :ARG0 ( ENTITY-2 / ENTITY
+                                  :ARG0-of ( EVENT-15 / 入れ
+                                         :ARG1 ( ENTITY-10 / 豆腐
+                                                :ARG1-of ( EVENT-14 / 切っ_た
+                                                       :ARG0 ( PICK-21 / or
+                                                              :op1 ENTITY-2
+                                                              :op2 ENTITY-6
+                                                              :op3 ENTITY-8
+                                                              :op4 ENTITY-1
+                                                              :op5 ENTITY-3
+                                                              :op6 ENTITY-4)
+                                                       :に ( ENTITY-13 / CD_一_口
+                                                              :MOD ( mod-23 / 大))
+                                                       :MOD ( mod-24 / past)))
+                                         :に ( ENTITY-6 / 中
+                                                :LOC-of ( EVENT-9 / 張っ_た
+                                                       :ARG1 ( ENTITY-8 / 水)
+                                                       :MOD ( mod-25 / past)))))
+                           :MOD ( mod-26 / past))))
+      :op2 ( EVENT-20 / 食べる
+             :ARG0 ENTITY-1
+             :ARG1 ENTITY-2
+             :で ( ENTITY-19 / つけダレ)))
+
+# ::id 5_wikipedia_KYOTO_CLT_00007,5;NJ
+# ::snt あまり 長く 煮 ず 、 豆腐 が ぐらり と 動い た 程度 で 食べる の が よい と さ れる 。
+( EVENT-13 / さ
+      :ARG1 ( SITUATION-1 / の
+             :THAT ( CONJ-19 / CONJ_te
+                    :op1 ( EVENT-4 / 煮
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :ARG1 ( ENTITY-3 / pro
+                                  :pick0)
+                           :domain-of ( NEG-18 / NEG)
+                           :MOD ( mod-20 / あまり_長く))
+                    :op2 ( EVENT-10 / 食べる
+                           :ARG0 ENTITY-2
+                           :ARG1 ENTITY-3
+                           :で ( SITUATION-6 / 程度
+                                  :THAT ( EVENT-9 / 動い_た
+                                         :ARG0 ( ENTITY-7 / 豆腐)
+                                         :と ( ATTRIB-8 / ぐらり)
+                                         :MOD ( mod-21 / past))))))
+      :ARG2 ( EVENT-12 / よい
+             :ARG0 SITUATION-1))
+
+# ::id 6_wikipedia_KYOTO_CLT_00007,6;NJ
+# ::snt なにしろ 豆腐 、 水 、 昆布 だけ が 材料 で ある から それぞれに 高品質 な もの が 求め られる 。
+( CRD-13 / から (
+             :op1 ( ENTITY-2 ( AND
+                           :op1 ( ENTITY-4 / 豆腐)
+                           :op2 ENTITY-17
+                           :MOD ( mod-14 / AND
+                                  :op1 ( ENTITY-5 / 水)
+                                  :op2 ENTITY-18)
+                           :MOD ( mod-15 / AND
+                                  :op1 ( ENTITY-6 / 昆布)
+                                  :op2 ENTITY-19)
+                           :MOD ( mod-16 / なにしろ))) ( ENTITY-1 ( ENTITY
+                           :OF ENTITY-2)) ( EVENT-8 ( で_ある
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-7 / 材料))))
+      :op2 ( EVENT-12 / 求め
+             :ARG1 ( ENTITY-10 / もの
+                    :ATTRIBUTE ( ATTRIB-11 / 高品質_な))))
+
+# ::id 7_wikipedia_KYOTO_CLT_00007,7;NJ
+# ::snt 特に 水 が 良質 で ある こと は 絶対 条件 で あり 、 京都 の もの が 名高い の も その 所以 で ある 。
+( CONJ-14 / AND
+      :op1 ( EVENT-6 / で_あり
+             :ARG0 ( SITUATION-1 / こと
+                    :THAT ( EVENT-3 / 良質_で_ある
+                           :ARG0 ( ENTITY-2 / 水)
+                           :MOD ( mod-12 / 特に)))
+             :ARG1 ( ENTITY-5 / 絶対_条件))
+      :op2 ( EVENT-11 / で_ある
+             :ARG0 ( SITUATION-7 / の
+                    :THAT ( EVENT-9 / 名高い
+                           :ARG0 ( ENTITY-8 / もの
+                                  :の ( ENTITY-京都 / ENTITY
+                                         :name ( n-13 / name
+                                                :op1 "京都")))))
+             :ARG1 ( ENTITY-10 / 所以)))
+
+# ::id 8_wikipedia_KYOTO_CLT_00007,8;NJ
+# ::snt つけダレ に は 、 醤油 、 または 醤油 、 酒 、 みりん 、 出汁 等 を 合わせ た もの 、 あるいは ポン酢醤油 など が 用い られ 、 薬味 として ネギ 、 ユズ 、 大根おろし （ 紅葉おろし ） 、 削っ た 鰹節 など が よく 用い られる 。
+( CONJ-52 / AND
+      :op1 ( EVENT-15 / 用い
+             :ARG1 ( ENTITY-2 / ENTITY
+                    :など ( CONJ-31 / CONJ_または_あるいは
+                           :op1 ( GROUP-3 / AND
+                                  :op1 ( ENTITY-4 / 醤油)
+                                  :op2 ENTITY-40)
+                           :op2 ( GROUP-38 / AND
+                                  :op6 ( ENTITY-5 / もの
+                                         :THAT ( EVENT-13 / 合わせ_た
+                                                :ARG0 ( ENTITY-6 / ENTITY
+                                                       :namely ( PICK-30 / or
+                                                              :op1 ENTITY-2
+                                                              :op2 ENTITY-1))
+                                                :ARG1 ( ENTITY-7 / ENTITY
+                                                       :等 GROUP-8)))
+                                  :op1 ENTITY-6
+                                  :op2 ( CONJ-53 / AND
+                                         :op1 ( GROUP-8 / AND
+                                                :op1 ( ENTITY-9 / 醤油)
+                                                :op2 ENTITY-42)
+                                         :op2 ( GROUP-8 / AND
+                                                :op1 ( ENTITY-10 / 酒)
+                                                :op2 ENTITY-43)
+                                         :op3 ( GROUP-8 / AND
+                                                :op1 ( ENTITY-11 / みりん)
+                                                :op2 ENTITY-44)
+                                         :op4 ( GROUP-8 / AND
+                                                :op1 ( ENTITY-12 / 出汁)
+                                                :op2 ENTITY-45))
+                                  :op3 ENTITY-7
+                                  :op4 ENTITY-41
+                                  :op5 ( EVENT-13 / past))
+                           :op3 ( GROUP-39 / AND
+                                  :op1 ( ENTITY-14 / ポン酢醤油)
+                                  :op2 ENTITY-46)))
+             :に ( ENTITY-1 / つけダレ))
+      :op2 ( EVENT-27 / 用い
+             :ARG1 ( ENTITY-17 / ENTITY
+                    :など ( GROUP-18 / AND
+                           :op1 ( ENTITY-19 / ネギ)
+                           :op2 ENTITY-47
+                           :MOD ( mod-34 / AND
+                                  :op1 ( ENTITY-20 / ユズ)
+                                  :op2 ENTITY-48)
+                           :MOD ( mod-35 / AND
+                                  :op3 ( ENTITY-22 / 大根おろし)
+                                  :op4 ( ENTITY-49 / ENTITY
+                                         :NAMELY ( ENTITY-21 / 紅葉おろし))
+                                  :op1 ENTITY-50
+                                  :op2 ENTITY-21)
+                           :MOD ( mod-36 / AND
+                                  :op3 ( EVENT-26 / past)
+                                  :op4 ( ENTITY-23 / 鰹節)
+                                  :op1 ( ENTITY-25 / ENTITY
+                                         :namely ( PICK-33 / or
+                                                :op1 ENTITY-17
+                                                :op2 ENTITY-16
+                                                :op3 ENTITY-2
+                                                :op4 ENTITY-1))
+                                  :op2 ( EVENT-51 / 削っ_た
+                                         :ARG0 ENTITY-25
+                                         :ARG1 ENTITY-23))))
+             :として ( ENTITY-16 / 薬味)
+             :MOD ( mod-37 / よく)))
+
+# ::id 9_wikipedia_KYOTO_CLT_00007,9;NJ
+# ::snt 塩 ひと つまみ 、 あるいは 刻ん だ 大根 を いれる と 豆腐 に ス が 入ら ず 、 やわらかく 仕上がる と いう 。
+( EVENT-1 / いう
+      :THAT ( CND-39 / と (
+                    :op1 ( ENTITY-3 ( ENTITY
+                                  :namely ENTITY-2)) ( CONJ-36 ( CONJ_あるいは
+                                  :op1 ( GROUP-4 / AND (
+                                                :op1 ( ENTITY-5 塩) ( ENTITY-5 CD_ひと_つまみ))
+                                         :op2 ENTITY-42)
+                                  :op2 ( GROUP-41 / AND
+                                         :op1 ( ENTITY-8 / ENTITY
+                                                :namely ( PICK-35 / or
+                                                       :op1 ENTITY-3
+                                                       :op2 ENTITY-2))
+                                         :op2 ( EVENT-9 / 刻ん_だ
+                                                :ARG0 ENTITY-8
+                                                :ARG1 ( ENTITY-6 / 大根))
+                                         :op3 ENTITY-6))) ( EVENT-10 ( いれる
+                                  :ARG0 ENTITY-3
+                                  :ARG1 GROUP-4)))
+             :op2 ( CONJ-38 / CONJ_te
+                    :op1 ( EVENT-13 / 入ら
+                           :ARG0 ( ENTITY-12 / ス)
+                           :に ( ENTITY-11 / 豆腐)
+                           :domain-of ( NEG-37 / NEG))
+                    :op2 ( EVENT-14 / 仕上がる
+                           :ARG0 ( ENTITY-2 / pro
+                                  :pick0)
+                           :MOD ( mod-40 / やわらかく)))))
+
+# ::id 10_wikipedia_KYOTO_CLT_00007,10;NJ
+# ::snt 豆腐 と 一緒 に ハクサイ や 鱈 の 切り身 を 煮る 場合 も ある 。
+( EVENT-10 / ある
+      :ARG0 ( SITUATION-1 / 場合
+             :THAT ( EVENT-9 / 煮る
+                    :ARG0 ( ENTITY-2 / pro
+                           :pick0)
+                    :ARG1 ( CONJ-11 / CONJ_や
+                           :op1 ( GROUP-5 / AND
+                                  :op1 ( ENTITY-6 / ハクサイ)
+                                  :op2 ENTITY-13)
+                           :op2 ( GROUP-12 / AND
+                                  :op1 ( ENTITY-8 / 鱈)
+                                  :op2 ( ENTITY-7 / 切り身
+                                         :の ENTITY-8)
+                                  :op3 ENTITY-14))
+                    :に ( ENTITY-3 / 一緒
+                           :と ( ENTITY-4 / 豆腐)))))
+
+# ::id 11_wikipedia_KYOTO_CLT_00007,11;NJ
+# ::snt しかし あまり 味 の 濃い もの を いれる と 淡味 が 身上 の この 料理 が 台無し に なっ て しまう と さ れる 。
+( EVENT-16 / さ
+      :ARG1 ( ENTITY-1 / 料理
+             :ARG0-of ( EVENT-5 / の
+                    :ARG0 ( ENTITY-3 / 淡味)
+                    :ARG1 ( ENTITY-4 / 身上)))
+      :ARG2 ( CND-24 / と (
+                    :op1 ( ENTITY-10 味) ( EVENT-11 あまり) ( ENTITY-7 ( ENTITY
+                                  :namely ( PICK-23 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-3
+                                         :op3 ENTITY-4))) ( EVENT-11 ( 濃い
+                                  :ARG0 ( ENTITY-8 / もの)
+                                  :ARG0 ENTITY-10)) ( EVENT-13 ( いれる
+                                  :ARG0 ENTITY-7
+                                  :ARG1 ENTITY-8)))
+             :op2 ( EVENT-14 / なっ_て_しまう
+                    :ARG0 ENTITY-1
+                    :MOD ( mod-25 / 台無し_に))))
+
+# ::id 12_wikipedia_KYOTO_CLT_00007,12;NJ
+# ::snt 主に 冬 に 食べ られる こと が 多い が 、 夏 の 鍋 として 食べる 人 も いる 。
+( CONJ-14 / CONJ_が
+      :op1 ( EVENT-6 / 多い
+             :ARG0 ( SITUATION-1 / こと
+                    :THAT ( EVENT-4 / 食べ
+                           :ARG1 ( ENTITY-2 / pro
+                                  :pick0)
+                           :に ( ENTITY-3 / 冬)
+                           :MOD ( mod-15 / 主に))))
+      :op2 ( EVENT-13 / いる
+             :ARG0 ( ENTITY-7 / 人
+                    :ARG0-of ( EVENT-12 / 食べる
+                           :ARG1 ENTITY-3
+                           :として ( ENTITY-10 / 鍋
+                                  :の ( ENTITY-11 / 夏))))))
+
+# ::id 13_wikipedia_KYOTO_CLT_00007,13;NJ
+# ::snt 池波 正太郎 は 小説 の 中 で 登場 人物 に 、 梅雨 時 の 冷える 日 に 食べ させ て おり 、 「 梅雨の湯豆腐 」 という 短編 作品 も ある 。
+( CONJ-14 / AND
+      :op1 ( EVENT-4 / させ_て_おり
+             :ARG0 ( ENTITY-池波_正太郎 / ENTITY
+                    :name ( n-12 / name
+                           :op1 "池波_正太郎"))
+             :ARG1 ( ENTITY-3 / 登場_人物)
+             :で ( ENTITY-1 / 中
+                    :の ( ENTITY-2 / 小説))
+             :TOCOMP ( EVENT-9 / 食べ
+                    :ARG0 ENTITY-3
+                    :に ( ENTITY-5 / 日
+                           :の ( ENTITY-6 / 梅雨_時)
+                           :TMP-of ( EVENT-8 / 冷える))))
+      :op2 ( EVENT-11 / ある
+             :ARG0 ( ENTITY-10 / 短編_作品
+                    :という ( ENTITY-梅雨の湯豆腐 / ENTITY
+                           :name ( n-13 / name
+                                  :op1 "梅雨の湯豆腐")))))
+
+# ::id 14_wikipedia_KYOTO_CLT_00007,14;NJ
+# ::snt 食通 の 池波 らしく 、 ある とき は 焼き 干し の 鮎 を 出汁 に 使う と言う 贅沢 な もの も あっ た 。
+( CONJ-15 / AND
+      :op1 ( EVENT-2 / らしく
+             :ARG1 ( ENTITY-池波 / ENTITY
+                    :name ( n-14 / name
+                           :op1 "池波")
+                    :の ( ENTITY-1 / 食通)))
+      :op2 ( EVENT-11 / あっ_た
+             :ARG0 ( ENTITY-3 / もの
+                    :ATTRIBUTE ( ATTRIB-4 / 贅沢_な)
+                    :THAT ( EVENT-10 / 使う
+                           :ARG0 ( PICK-12 / or
+                                  :op1 ENTITY-池波
+                                  :op2 ENTITY-1)
+                           :ARG1 ( ENTITY-7 / 鮎
+                                  :の ( ENTITY-8 / 焼き_干し))
+                           :に ( ENTITY-9 / 出汁)
+                           :TMP ( ENTITY-6 / とき)))
+             :MOD ( mod-13 / past)))
+
+# ::id 15_wikipedia_KYOTO_CLT_00007,15;NJ
+# ::snt なお 、 江戸 時代 の 料理 本 「 豆腐百珍 」 に 「 絶品 」 と ある 「 湯やっこ 」 は 、 湯豆腐 の 湯 の かわり に 葛湯 を 使い 、 食する まで 冷め にくく 、 豆腐 と 葛湯 の 相性 を 楽しむ もの 。
+( CONJ-35 / AND
+      :op1 ( EVENT-12 / 使い
+             :ARG0 ( PICK-26 / or
+                    :op1 ENTITY-1
+                    :op2 ENTITY-豆腐百珍
+                    :op3 ENTITY-5
+                    :op4 ENTITY-3
+                    :op5 ENTITY-4)
+             :ARG1 ( ENTITY-11 / 葛湯)
+             :に ( ENTITY-8 / かわり
+                    :の ( ENTITY-9 / 湯
+                           :の ( ENTITY-10 / 湯豆腐))))
+      :op2 ( EVENT-25 / EVENT
+             :ARG0 ( ENTITY-1 / 湯やっこ
+                    :ARG0-of ( EVENT-6 / ある
+                           :と ( ENTITY-5 / 絶品)
+                           :に ( ENTITY-豆腐百珍 / ENTITY
+                                  :name ( n-31 / name
+                                         :op1 "豆腐百珍")
+                                  :NAMELY ( ENTITY-3 / 料理_本
+                                         :の ( ENTITY-4 / 江戸_時代))))
+                    :ARG0-of ( EVENT-17 / 冷め_にくく
+                           :まで ( EVENT-16 / 食する
+                                  :ARG0 ( PICK-27 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-8
+                                         :op3 ENTITY-11
+                                         :op4 ENTITY-9
+                                         :op5 ENTITY-10
+                                         :op6 ENTITY-豆腐百珍
+                                         :op7 ENTITY-5
+                                         :op8 ENTITY-3
+                                         :op9 ENTITY-4)
+                                  :ARG1 ( PICK-28 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-8
+                                         :op3 ENTITY-11
+                                         :op4 ENTITY-9
+                                         :op5 ENTITY-10
+                                         :op6 ENTITY-豆腐百珍
+                                         :op7 ENTITY-5
+                                         :op8 ENTITY-3
+                                         :op9 ENTITY-4))))
+             :ARG1 ( SITUATION-18 / もの
+                    :THAT ( EVENT-24 / 楽しむ
+                           :ARG0 ( PICK-29 / or
+                                  :op1 ENTITY-1
+                                  :op2 ENTITY-8
+                                  :op3 ENTITY-11
+                                  :op4 ENTITY-9
+                                  :op5 ENTITY-10
+                                  :op6 ENTITY-豆腐百珍
+                                  :op7 ENTITY-5
+                                  :op8 ENTITY-3
+                                  :op9 ENTITY-4)
+                           :ARG1 ( ENTITY-20 / 相性
+                                  :の ( CONJ-30 / CONJ_と
+                                         :op1 ( GROUP-21 / AND
+                                                :op1 ( ENTITY-22 / 豆腐)
+                                                :op2 ENTITY-33)
+                                         :op2 ( GROUP-32 / AND
+                                                :op1 ( ENTITY-23 / 葛湯)
+                                                :op2 ENTITY-34)))))))
+
+# ::id 16_wikipedia_KYOTO_CLT_00007,16;NJ
+# ::snt 湯豆腐 を 詠ん だ 名句 に 久保田 万太郎 の 「 湯豆腐やいのちのはてのうすあかり 」 が ある 。
+( EVENT-5 / ある
+      :ARG0 ( ENTITY-湯豆腐やいのちのはてのうすあかり / ENTITY
+             :name ( n-7 / name
+                    :op1 "湯豆腐やいのちのはてのうすあかり")
+             :の ( ENTITY-久保田_万太郎 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "久保田_万太郎")))
+      :に ( ENTITY-1 / 名句
+             :ARG0-of ( EVENT-4 / 詠ん_だ
+                    :ARG1 ( ENTITY-3 / 湯豆腐)
+                    :MOD ( mod-6 / past))))

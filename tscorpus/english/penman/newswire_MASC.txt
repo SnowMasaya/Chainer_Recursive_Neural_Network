@@ -1,0 +1,1204 @@
+# ::id 1_newswire_MASC;20000410_nyt;AT1-1;NE
+# ::snt Iraq clears visit by Ohio official
+( EVENT-4 / clear.02
+      :ARG0 ( ORG-Iraq / ORG
+             :name ( n-1 / name
+                    :op1 "Iraq"))
+      :ARG1 ( ENTITY-1 / visit
+             :BY ( PERSON-2 / official
+                    :ATTRIBUTE ( NORP-3 / ohio))))
+
+# ::id 2_newswire_MASC;20000410_nyt;AT2-2;NE
+# ::snt By Scott Montgomery Washington
+( EVENT-1 / EVENT
+      :LOC ( GPE-Washington / GPE
+             :name ( n-1 / name
+                    :op1 "Washington"))
+      :BY ( PERSON-Scott_Montgomery / PERSON
+             :name ( n-2 / name
+                    :op1 "Scott_Montgomery")))
+
+# ::id 3_newswire_MASC;20000410_nyt;AT3-1;NE
+# ::snt The Iraqi government has agreed to let U.S. Rep. Tony Hall visit the country next week to assess a humanitarian crisis that has festered since the Gulf War of 1990 , Hall 's office said Monday .
+( EVENT-2 / say.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( ORG-1 / office
+             :POS ( PERSON-Hall / PERSON
+                    :name ( n-4 / name
+                           :op1 "Hall")))
+      :TMP ( DATE-Monday / DATE
+             :name ( n-5 / name
+                    :op1 "Monday"))
+      :THAT ( EVENT-6 / agree.01
+             :ARG0 ( ORG-3 / government
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :ATTRIBUTE ( NORP-5 / iraqi))
+             :TOCOMP ( EVENT-7 / let.01
+                    :ARG0 ORG-3
+                    :TOCOMP ( EVENT-21 / visit.01
+                           :ARG0 ( PERSON-Tony_Hall / PERSON
+                                  :ATTRIBUTE ( NORP-8 / u.s.rep.)
+                                  :name ( n-2 / name
+                                         :op1 "Tony_Hall"))
+                           :ARG1 ( GPE-9 / country
+                                  :DEFINITE ( ATTRIB-10 / the))
+                           :PRP ( EVENT-20 / assess.01
+                                  :ARG0 GPE-9
+                                  :ARG1 ( ENTITY-14 / crisis
+                                         :ATTRIBUTE ( ATTRIB-15 / humanitarian)
+                                         :ARG0-of ( EVENT-19 / fester.01
+                                                :SINCE ( GULF.WAR.EVENT-Gulf_War / GULF.WAR.EVENT
+                                                       :name ( n-3 / name
+                                                              :op1 "Gulf_War")
+                                                       :OF ( DATE-17 / DATE
+                                                              :CARDINAL ( ATTRIB-18 / 1990))))))
+                           :TMP ( DATE-11 / week
+                                  :ATTRIBUTE ( ATTRIB-12 / next))))))
+
+# ::id 4_newswire_MASC;20000410_nyt;AT3-2;NE
+# ::snt The Dayton Democrat , who has traveled to other crisis points including Sierra Leone and North Korea , will spend three days visiting hospitals and other facilities to seek understanding why aid has been ineffective in stemming malnourishment and other medical problems .
+( EVENT-33 / spend.02
+      :domain-of ( MD-38 / will)
+      :ARG0 ( PERSON-1 / Dayton_Democrat
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG0-of ( EVENT-9 / travel.01
+                    :TO ( LOC-4 / crisis_points
+                           :ATTRIBUTE ( ATTRIB-5 / other)
+                           :ARG0-of ( EVENT-8 / include.01
+                                  :ARG1 ( GPE-7 / AND
+                                         :op1 ( ENTITY-Sierra_Leone / ENTITY
+                                                :name ( n-40 / name
+                                                       :op1 "Sierra_Leone"))
+                                         :op2 ( ENTITY-North_Korea / ENTITY
+                                                :name ( n-41 / name
+                                                       :op1 "North_Korea")))))))
+      :ARG1 ( EVENT-32 / visit.01
+             :ARG0 PERSON-1
+             :ARG1 ( FAC-28 / AND
+                    :op1 ( GROUP-29 / hospitals)
+                    :op2 ( GROUP-30 / facilities
+                           :ATTRIBUTE ( ATTRIB-31 / other)))
+             :PRP ( EVENT-27 / seek.01
+                    :ARG0 PERSON-1
+                    :ARG1 ( EVENT-15 / understanding
+                           :ARG0 PERSON-1
+                           :THAT ( EVENT-25 / be.01
+                                  :domain-of ( QUEST-37 / QUEST)
+                                  :ATTRIBUTE ( ATTRIB-17 / ineffective
+                                         :IN ( EVENT-24 / stem.02
+                                                :ARG1 ( GROUP-19 / AND
+                                                       :op1 ( ENTITY-20 / malnourishment)
+                                                       :op2 ( GROUP-21 / problems
+                                                              :ATTRIBUTE ( ATTRIB-23 / medical)
+                                                              :ATTRIBUTE ( ATTRIB-22 / other)))))
+                                  :ARG0 ( ENTITY-16 / aid)
+                                  :MOD ( mod-39 / penman3-unknown)))))
+      :TMP ( DATE-10 / days
+             :CARDINAL ( ATTRIB-11 / three)))
+
+# ::id 5_newswire_MASC;20000410_nyt;AT4-1;NE
+# ::snt Iraq has been under economic sanctions since the war ended , which some say have thwarted the country 's ability to recover from the devastation of the bombing campaign .
+( CRD-21 / since
+      :op1 ( EVENT-19 / end.01
+             :MOD ( mod-22 / past)
+             :ARG0 ( GULF.WAR.EVENT-17 / war
+                    :DEFINITE ( ATTRIB-18 / the)))
+      :op2 ( EVENT-20 / be.01
+             :ARG0 ( GPE-Iraq / GPE
+                    :name ( n-23 / name
+                           :op1 "Iraq"))
+             :UNDER ( GROUP-1 / sanctions
+                    :ATTRIBUTE ( ATTRIB-2 / economic)
+                    :ARG0-of ( EVENT-16 / thwart.01
+                           :ARG1 ( ENTITY-7 / ability
+                                  :POS ( GPE-8 / country
+                                         :DEFINITE ( ATTRIB-9 / the))
+                                  :TOCOMP ( EVENT-15 / recover.01
+                                         :FROM ( ENTITY-10 / devastation
+                                                :DEFINITE ( ATTRIB-11 / the)
+                                                :OF ( BOMBING.EVENT-12 / campaign
+                                                       :DEFINITE ( ATTRIB-13 / the)
+                                                       :ATTRIBUTE ( ATTRIB-14 / bombing)))))
+                           :THAT-of ( EVENT-6 / say.01
+                                  :ARG0 ( PERSONS-4 / PERSONS
+                                         :QUANTIFIER ( ATTRIB-5 / some)))))))
+
+# ::id 6_newswire_MASC;20000410_nyt;AT4-2;NE
+# ::snt The Persian Gulf War destroyed much of the country 's medical infrastructure , according to a report by the World Health Organization .
+( CONJ-10 / and
+      :op1 ( EVENT-9 / destroy.01
+             :MOD ( mod-11 / past)
+             :ARG0 ( GULF.WAR.EVENT-Persian_Gulf_War / GULF.WAR.EVENT
+                    :name ( n-12 / name
+                           :op1 "Persian_Gulf_War"))
+             :ARG1 ( FAC-1 / FAC
+                    :OF ( FAC-3 / infrastructure
+                           :ATTRIBUTE ( ATTRIB-6 / medical)
+                           :POS ( GPE-4 / country
+                                  :DEFINITE ( ATTRIB-5 / the)))
+                    :QUANTIFIER ( ATTRIB-2 / much)))
+      :op2 ( EVENT-8 / accord.er
+             :ARG0 FAC-1
+             :TO ( ENTITY-7 / report
+                    :BY ( ORG-World_Health_Organization / ORG
+                           :name ( n-13 / name
+                                  :op1 "World_Health_Organization")))))
+
+# ::id 7_newswire_MASC;20000410_nyt;AT4-3;NE
+# ::snt In 1996 the WHO found that much of the population existed in a state of " semi starvation . "
+( EVENT-3 / find.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( ORG-WHO / ORG
+             :name ( n-3 / name
+                    :op1 "WHO"))
+      :IN ( DATE-1 / DATE
+             :CARDINAL ( ATTRIB-2 / 1996))
+      :THAT ( EVENT-11 / exist.01
+             :MOD ( mod-1 / past)
+             :ARG0 ( PERSONS-4 / PERSONS
+                    :OF ( PERSONS-6 / population
+                           :DEFINITE ( ATTRIB-7 / the))
+                    :QUANTIFIER ( ATTRIB-5 / much))
+             :IN ( ENTITY-8 / state
+                    :OF ( ENTITY-9 / starvation
+                           :ATTRIBUTE ( ATTRIB-10 / semi)))))
+
+# ::id 8_newswire_MASC;20000410_nyt;AT5-1;NE
+# ::snt Hall will be only the second member of Congress to travel in Iraq since the war , according to Hall 's office .
+( EVENT-10 / be.01
+      :domain-of ( MD-11 / will)
+      :ARG0 ( PERSON-Hall / PERSON
+             :name ( n-12 / name
+                    :op1 "Hall"))
+      :ARG1 ( PERSON-1 / member
+             :DEFINITE ( ATTRIB-3 / the)
+             :ATTRIBUTE ( ATTRIB-4 / second)
+             :OF ( ORG-Congress / ORG
+                    :name ( n-13 / name
+                           :op1 "Congress"))
+             :QUANTIFIER ( ATTRIB-2 / only)
+             :ARG0-of ( EVENT-8 / travel.01
+                    :SINCE ( GULF.EVENT-6 / war
+                           :DEFINITE ( ATTRIB-7 / the))
+                    :IN ( GPE-Iraq / GPE
+                           :name ( n-14 / name
+                                  :op1 "Iraq"))))
+      :ACCORDING_TO ( ORG-9 / office
+             :POS PERSON-Hall))
+
+# ::id 9_newswire_MASC;20000410_nyt;AT5-2;NE
+# ::snt The last visitor was then - U.S. Rep. Bill Richardson of New Mexico , who went to help a pair of U.S. oilmen in diplomatic trouble .
+( EVENT-14 / be.01
+      :MOD ( mod-3 / past)
+      :ARG0 ( PERSON-1 / visitor
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / last))
+      :ARG1 ( PERSON-Bill_Richardson / PERSON
+             :name ( n-4 / name
+                    :op1 "Bill_Richardson")
+             :OF ( GPE-New_Mexico / GPE
+                    :name ( n-6 / name
+                           :op1 "New_Mexico"))
+             :ARG0-of ( EVENT-12 / go.01
+                    :MOD ( mod-2 / past)
+                    :PRP ( EVENT-11 / help.01
+                           :ARG0 ( PERSON-Bill_Richardson / PERSON
+                                  :ATTRIBUTE ( NORP-13 / TMP_then
+                                         :MOD ( mod-1 / u.s.rep.))
+                                  :name ( n-5 / name
+                                         :op1 "Bill_Richardson"))
+                           :ARG1 ( PERSONS-6 / pair
+                                  :IN ( ENTITY-9 / trouble
+                                         :ATTRIBUTE ( ATTRIB-10 / diplomatic))
+                                  :OF ( PERSONS-7 / oilmen
+                                         :ATTRIBUTE ( NORP-8 / u.s.)))))))
+
+# ::id 10_newswire_MASC;20000410_nyt;AT6-1;NE
+# ::snt Hall flies to Amman , Jordan , on Friday , where he 'll spend the night before driving to Iraq .
+( EVENT-8 / fly.01
+      :ARG0 ( PERSON-Hall / PERSON
+             :name ( n-14 / name
+                    :op1 "Hall"))
+      :ON ( DATE-Friday / DATE
+             :name ( n-15 / name
+                    :op1 "Friday"))
+      :TO ( GPE-Amman_Jordan / GPE
+             :name ( n-13 / name
+                    :op1 "Amman_Jordan")
+             :LOC-of ( CRD-11 / before
+                    :domain-of ( MD-12 / ' ll)
+                    :op1 ( EVENT-3 / drive.01
+                           :ARG0 ( PERSON-2 / PERSON
+                                  :namely PERSON-Hall)
+                           :TO ( GPE-Iraq / GPE
+                                  :name ( n-16 / name
+                                         :op1 "Iraq")))
+                    :op2 ( EVENT-6 / spend.02
+                           :ARG0 PERSON-2
+                           :ARG1 ( TIME-4 / night
+                                  :DEFINITE ( ATTRIB-5 / the))))))
+
+# ::id 11_newswire_MASC;20000410_nyt;AT6-2;NE
+# ::snt Flights are not permitted into Iraq .
+( EVENT-2 / permit.01
+      :domain-of ( NEG-3 / NEG)
+      :ARG1 ( GROUP-1 / Flights)
+      :INTO ( GPE-Iraq / GPE
+             :name ( n-4 / name
+                    :op1 "Iraq")))
+
+# ::id 12_newswire_MASC;20000410_nyt;AT6-3;NE
+# ::snt Hall is to return to Washington on April 22 .
+( EVENT-1 / be.01
+      :ARG0 ( PERSON-Hall / PERSON
+             :name ( n-2 / name
+                    :op1 "Hall"))
+      :TOCOMP ( EVENT-3 / return.01
+             :ARG0 PERSON-Hall
+             :ON ( DATE-April / DATE
+                    :name ( n-1 / name
+                           :op1 "April")
+                    :CARDINAL ( ATTRIB-2 / 22))
+             :TO ( GPE-Washington / GPE
+                    :name ( n-3 / name
+                           :op1 "Washington"))))
+
+# ::id 13_newswire_MASC;20000410_nyt;AT7-1;NE
+# ::snt Story Filed By Cox Newspapers
+( EVENT-2 / file.01
+      :ARG0 ( ORG-Cox_Newspapers / ORG
+             :name ( n-1 / name
+                    :op1 "Cox_Newspapers"))
+      :ARG1 ( ENTITY-1 / Story))
+
+# ::id 14_newswire_MASC;A1.E1;AT1-1;NE
+# ::snt Inauguration of free zone in Dubai for e-commerce
+( INAUGURATION.EVENT-1 / Inauguration
+      :FOR ( ENTITY-4 / e-commerce)
+      :OF ( FAC-2 / zone
+             :ATTRIBUTE ( ATTRIB-3 / free)
+             :IN ( GPE-Dubai / GPE
+                    :name ( n-1 / name
+                           :op1 "Dubai"))))
+
+# ::id 15_newswire_MASC;A1.E1;AT2-1;NE
+# ::snt Dubai 10-28 -LRB- FP -RRB- -
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-FP / ENTITY
+             :name ( n-29 / name
+                    :op1 "FP"))
+      :TMP ( DATE-1 / DATE
+             :CARDINAL ( ATTRIB-2 / 10-28))
+      :LOC ( GPE-Dubai / GPE
+             :name ( n-30 / name
+                    :op1 "Dubai")))
+
+# ::id 16_newswire_MASC;A1.E1;AT3-1;NE
+# ::snt Dubai 's Crown Prince Sheikh Mohamed Bin Rashid Al Maktoum inaugurated a free zone for e-commerce today , called Dubai Internet City .
+( EVENT-8 / inaugurate.02
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-Crown_Prince_Sheikh_Mohamed_Bin_Rashid_Al_Maktoum / PERSON
+             :name ( n-2 / name
+                    :op1 "Crown_Prince_Sheikh_Mohamed_Bin_Rashid_Al_Maktoum")
+             :POS ( GPE-Dubai / GPE
+                    :name ( n-3 / name
+                           :op1 "Dubai")))
+      :ARG1 ( FAC-1 / zone
+             :ATTRIBUTE ( ATTRIB-2 / free)
+             :FOR ( ENTITY-3 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-4 / e-commerce))
+             :ARG0-of ( EVENT-6 / call.01
+                    :ARG1 ( FAC-Dubai_Internet_City / FAC
+                           :name ( n-4 / name
+                                  :op1 "Dubai_Internet_City"))))
+      :TMP ( DATE-7 / today))
+
+# ::id 17_newswire_MASC;A1.E1;AT3-2;NE
+# ::snt The preliminary stages of the project , the only one of its kind according to its designers , are estimated at $200 million .
+( EVENT-15 / estimate.01
+      :ARG1 ( GROUP-1 / stages
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-3 / preliminary)
+             :OF ( ENTITY-4 / ENTITY
+                    :OF ( ENTITY-5 / project
+                           :DEFINITE ( ATTRIB-6 / the)
+                           :DETERMINER ( ATTRIB-7 / the)
+                           :CARDINAL ( ATTRIB-8 / one)
+                           :ACCORDING_TO ( GROUP-11 / designers
+                                  :POS ( REF2-12 / its))
+                           :OF ( ENTITY-9 / kind
+                                  :POS ( REF1-10 / its)))))
+      :AT ( MONEY-13 / MONEY
+             :CARDINAL ( ATTRIB-14 / dollar_200_million)))
+
+# ::id 18_newswire_MASC;A1.E1;AT4-1;NE
+# ::snt Sheikh Mohamed , who is also the Defense Minister of the United Arab Emirates , announced at the inauguration ceremony that " we want to make Dubai a new trading center . "
+( EVENT-8 / announce.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( PERSON-Sheikh_Mohamed / PERSON
+             :name ( n-3 / name
+                    :op1 "Sheikh_Mohamed")
+             :ARG0-of ( EVENT-4 / be.01
+                    :ARG1 ( PERSON-2 / Defense_Minister
+                           :DEFINITE ( ATTRIB-3 / the)
+                           :OF ( GPE-United_Arab_Emirates / GPE
+                                  :name ( n-4 / name
+                                         :op1 "United_Arab_Emirates")))
+                    :MOD ( mod-1 / also)))
+      :AT ( INAUGURATION.EVENT-6 / inauguration_ceremony
+             :DEFINITE ( ATTRIB-7 / the))
+      :THAT ( EVENT-10 / want.01
+             :ARG0 ( PERSONS-9 / we)
+             :TOCOMP ( EVENT-11 / make.02
+                    :ARG0 PERSONS-9
+                    :TOCOMP ( EVENT-14 / EVENT
+                           :ARG0 ( GPE-Dubai / GPE
+                                  :name ( n-5 / name
+                                         :op1 "Dubai"))
+                           :ARG1 ( FAC-12 / trading_center
+                                  :ATTRIBUTE ( ATTRIB-13 / new))))))
+
+# ::id 19_newswire_MASC;A1.E1;AT4-2;NE
+# ::snt The minister , who has his own website , also said : " I want Dubai to be the best place in the world for state-of-the-art technology companies . "
+( EVENT-8 / say.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-1 / minister
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG0-of ( EVENT-7 / have.03
+                    :ARG1 ( ENTITY-4 / website
+                           :ATTRIBUTE ( ATTRIB-6 / own)
+                           :POS PERSON-1)))
+      :THAT ( EVENT-10 / want.01
+             :ARG0 ( PERSONAL-9 / i)
+             :TOCOMP ( EVENT-18 / be.01
+                    :ARG0 ( GPE-Dubai / GPE
+                           :name ( n-3 / name
+                                  :op1 "Dubai"))
+                    :ARG1 ( LOC-11 / place
+                           :DEFINITE ( ATTRIB-12 / the)
+                           :ATTRIBUTE ( ATTRIB-13 / best)
+                           :FOR ( ORG-16 / technology_companies
+                                  :ATTRIBUTE ( ATTRIB-17 / state-of-the-art))
+                           :IN ( LOC-14 / world
+                                  :DEFINITE ( ATTRIB-15 / the)))))
+      :MOD ( mod-2 / also))
+
+# ::id 20_newswire_MASC;A1.E1;AT4-3;NE
+# ::snt He said companies engaged in e-commerce would be able to set up offices , employ staff and own equipment in the open zone , including fully-owned foreign companies .
+( EVENT-2 / say.01
+      :MOD ( mod-28 / past)
+      :ARG0 ( PERSON-1 / he)
+      :THAT ( CONJ-27 / and
+             :op1 ( EVENT-21 / be.01
+                    :domain-of ( MD-26 / would)
+                    :ATTRIBUTE ( ATTRIB-7 / able
+                           :IN ( FAC-8 / zone
+                                  :DEFINITE ( ATTRIB-9 / the)
+                                  :ATTRIBUTE ( ATTRIB-10 / open))
+                           :TOCOMP ( CONJ-23 / and
+                                  :op1 ( EVENT-12 / set.03
+                                         :ARG1 ( FAC-11 / offices))
+                                  :op2 ( EVENT-14 / employ.01
+                                         :ARG1 ( PERSONS-13 / staff))
+                                  :op3 ( EVENT-16 / own.01
+                                         :ARG1 ( ENTITY-15 / equipment))))
+                    :ARG0 ( ORG-3 / companies
+                           :ARG1-of ( EVENT-6 / engage.01
+                                  :IN ( ENTITY-5 / e-commerce))))
+             :op2 ( EVENT-20 / include.01
+                    :ARG0 ORG-3
+                    :ARG1 ( ORG-17 / companies
+                           :ATTRIBUTE ( ATTRIB-19 / foreign)
+                           :ATTRIBUTE ( ATTRIB-18 / own.01)))))
+
+# ::id 21_newswire_MASC;A1.E1;AT5-1;NE
+# ::snt The e-commerce free zone is situated in north Dubai , near the industrial free zone in Jebel Ali , the top regional and tenth international leading area in container transit .
+( CONJ-17 / AND
+      :op1 ( ATTRIB-6 / top_regional)
+      :op2 ( ATTRIB-7 / tenth_international)
+      :op3 ( EVENT-13 / situate.01
+             :ARG1 ( FAC-1 / free_zone_e-commerce
+                    :DEFINITE ( ATTRIB-2 / the))
+             :IN ( LOC-north_Dubai / LOC
+                    :name ( n-15 / name
+                           :op1 "north_Dubai")
+                    :LOC ( ATTRIB-3 / near
+                           :COMP ( FAC-10 / free_zone
+                                  :DEFINITE ( ATTRIB-11 / the)
+                                  :ATTRIBUTE ( ATTRIB-12 / industrial)
+                                  :IN ( LOC-Jebel_Ali / LOC
+                                         :name ( n-16 / name
+                                                :op1 "Jebel_Ali"))
+                                  :NAMELY ( CONJ-14 / and
+                                         :op1 ( FAC-4 / area
+                                                :DETERMINER ( ATTRIB-5 / the)
+                                                :ATTRIBUTE ( ATTRIB-8 / leading)
+                                                :IN ( ENTITY-9 / container_transit))
+                                         :op2 ( FAC-4 / area
+                                                :DETERMINER ATTRIB-5
+                                                :ATTRIBUTE ( ATTRIB-8 / leading)
+                                                :IN ( ENTITY-9 / container_transit))))))))
+
+# ::id 22_newswire_MASC;A1.E1;AT6-1;NE
+# ::snt The inauguration of Dubai Internet City coincides with the opening of an annual IT show in Dubai , the Gulf Information Technology Exhibition -LRB- Gitex -RRB- , the biggest in the Middle East .
+( EVENT-8 / coincide.01
+      :ARG0 ( INAUGURATION.EVENT-1 / inauguration
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF ( FAC-Dubai_Internet_City / FAC
+                    :name ( n-2 / name
+                           :op1 "Dubai_Internet_City")))
+      :WITH ( OPENING.EVENT-3 / opening
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( SHOW.EVENT-6 / annual_IT_show_biggest
+                    :DETERMINER ( ATTRIB-7 / the)
+                    :IN ( GPE-Middle_East / GPE
+                           :name ( n-3 / name
+                                  :op1 "Middle_East"))
+                    :IN ( GPE-Dubai / GPE
+                           :name ( n-4 / name
+                                  :op1 "Dubai"))
+                    :NAMELY ( ENTITY-Gulf_Information_Technology_Exhibition / ENTITY
+                           :DETERMINER ( ATTRIB-5 / the)
+                           :name ( n-1 / name
+                                  :op1 "Gulf_Information_Technology_Exhibition"))
+                    :NAMELY ( ENTITY-Gitex / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "Gitex")))))
+
+# ::id 23_newswire_MASC;A1.E2;AT1-1;NE
+# ::snt Launching the Electronics Free Trade Zone in Dubai
+( EVENT-1 / launch.01
+      :ARG1 ( FAC-Electronics_Free_Trade_Zone / FAC
+             :name ( n-1 / name
+                    :op1 "Electronics_Free_Trade_Zone")
+             :IN ( GPE-Dubai / GPE
+                    :name ( n-2 / name
+                           :op1 "Dubai"))))
+
+# ::id 24_newswire_MASC;A1.E2;AT2-1;NE
+# ::snt Dubai 01-82 -LRB- AFP -RRB- -
+( EVENT-3 / EVENT
+      :LINK ( ENTITY-AFP / ENTITY
+             :name ( n-83 / name
+                    :op1 "AFP"))
+      :TMP ( DATE-1 / DATE
+             :CARDINAL ( ATTRIB-2 / 01-82))
+      :LOC ( GPE-Dubai / GPE
+             :name ( n-84 / name
+                    :op1 "Dubai")))
+
+# ::id 25_newswire_MASC;A1.E2;AT3-1;NE
+# ::snt Crown Prince of Dubai Al Sheikh Mohammed bin Rashid Al Maktoom crown prince of Dubai launched today , i.e. on Saturday , an electronics free e-trade zone which has been named " Dubai Internet City "
+( EVENT-7 / launch.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-Al_Sheikh_Mohammed_bin_Rashid_Al_Maktoom / crown_prince
+             :OF ( GPE-Dubai / GPE
+                    :name ( n-3 / name
+                           :op1 "Dubai"))
+             :name ( n-2 / name
+                    :op1 "Al_Sheikh_Mohammed_bin_Rashid_Al_Maktoom"))
+      :ARG1 ( FAC-3 / free_e-trade_electronics_zone
+             :ARG1-of ( EVENT-5 / name.01
+                    :TOCOMP ( EVENT-6 / EVENT
+                           :ARG0 FAC-3
+                           :ARG1 ( FAC-Dubai_Internet_City / FAC
+                                  :name ( n-4 / name
+                                         :op1 "Dubai_Internet_City")))))
+      :TMP ( DATE-2 / today
+             :I_DOT_E_DOT_ON ( DATE-Saturday / DATE
+                    :name ( n-5 / name
+                           :op1 "Saturday"))))
+
+# ::id 26_newswire_MASC;A1.E2;AT3-2;NE
+# ::snt The cost in the first stage of this unique project is estimated at 200 million dollars .
+( EVENT-11 / estimate.01
+      :ARG1 ( ENTITY-1 / cost
+             :DEFINITE ( ATTRIB-2 / the)
+             :IN ( ENTITY-3 / stage
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :ATTRIBUTE ( ATTRIB-5 / first)
+                    :OF ( ENTITY-6 / project
+                           :DETERMINER ( ATTRIB-7 / this)
+                           :ATTRIBUTE ( ATTRIB-8 / unique))))
+      :AT ( MONEY-9 / dollars
+             :CARDINAL ( ATTRIB-10 / 200_million)))
+
+# ::id 27_newswire_MASC;A1.E2;AT4-1;NE
+# ::snt Sheikh Mohammed , who is also the UAE Defence Minister , said during the launching ceremony " we wish to make Dubai a center of modern economy " .
+( EVENT-7 / say.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( PERSON-Sheikh_Mohammed / PERSON
+             :name ( n-3 / name
+                    :op1 "Sheikh_Mohammed")
+             :ARG0-of ( EVENT-2 / be.01
+                    :ARG1 ( TTL-UAE_Defence_Minister / TTL
+                           :name ( n-4 / name
+                                  :op1 "UAE_Defence_Minister"))
+                    :MOD ( mod-1 / also)))
+      :DURING ( CEREMONY.EVENT-4 / ceremony
+             :DEFINITE ( ATTRIB-5 / the)
+             :ATTRIBUTE ( ATTRIB-6 / launch.er))
+      :THAT ( EVENT-9 / wish.01
+             :ARG0 ( PERSONS-8 / we)
+             :TOCOMP ( EVENT-10 / make.02
+                    :ARG0 PERSONS-8
+                    :TOCOMP ( EVENT-14 / EVENT
+                           :ARG0 ( GPE-Dubai / GPE
+                                  :name ( n-5 / name
+                                         :op1 "Dubai"))
+                           :ARG1 ( ENTITY-11 / center
+                                  :OF ( ENTITY-12 / economy
+                                         :ATTRIBUTE ( ATTRIB-13 / modern)))))))
+
+# ::id 28_newswire_MASC;A1.E2;AT4-2;NE
+# ::snt The minister who has a personal website on the internet , further said that he wanted Dubai to become the best place in the world for the advanced -LRB- hitech -RRB- technological companies .
+( EVENT-9 / say.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( PERSON-1 / minister
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG0-of ( EVENT-8 / have.03
+                    :ARG1 ( ENTITY-4 / website
+                           :ATTRIBUTE ( ATTRIB-5 / personal)
+                           :ON ( ENTITY-6 / internet
+                                  :DEFINITE ( ATTRIB-7 / the)))))
+      :THAT ( EVENT-11 / want.01
+             :MOD ( mod-1 / past)
+             :ARG0 PERSON-1
+             :TOCOMP ( EVENT-20 / become.01
+                    :ARG0 ( GPE-Dubai / GPE
+                           :name ( n-4 / name
+                                  :op1 "Dubai"))
+                    :ARG1 ( LOC-12 / place
+                           :DEFINITE ( ATTRIB-13 / the)
+                           :ATTRIBUTE ( ATTRIB-14 / best)
+                           :FOR ( ORG-17 / advanced
+                                  :DEFINITE ATTRIB-18
+                                  :ATTRIBUTE ( ATTRIB-19 / technological
+                                         :ATTRIBUTE-of ( ORG-17 / hitech
+                                                :DEFINITE ( ATTRIB-18 / the))
+                                         :ATTRIBUTE-of ( ORG-17 / companies
+                                                :DEFINITE ( ATTRIB-18 / ATTRIB))))
+                           :IN ( LOC-15 / world
+                                  :DEFINITE ( ATTRIB-16 / the)))))
+      :MOD ( mod-3 / further))
+
+# ::id 29_newswire_MASC;A1.E2;AT4-3;NE
+# ::snt He said that it would be possible for the companies working in the electronic trade sector to make Dubai their headquarters , and to establish offices here and provide employment and own machinery in the zone opened to companies fully owned by the foreigners .
+( EVENT-2 / say.01
+      :MOD ( mod-42 / past)
+      :ARG0 ( PERSON-1 / he)
+      :THAT ( EVENT-32 / be.01
+             :domain-of ( MD-39 / would)
+             :ATTRIBUTE ( ATTRIB-31 / possible)
+             :ARG0 ( CONJ-37 / and
+                    :op1 ( EVENT-20 / make.02
+                           :ARG0 ( ORG-4 / companies
+                                  :DEFINITE ( ATTRIB-5 / the)
+                                  :ARG0-of ( EVENT-9 / work.01
+                                         :IN ( ENTITY-7 / electronic_trade_sector
+                                                :DEFINITE ( ATTRIB-8 / the))))
+                           :IN ( FAC-10 / zone
+                                  :DEFINITE ( ATTRIB-11 / the)
+                                  :ARG1-of ( EVENT-19 / open.01
+                                         :TO ( ORG-13 / companies
+                                                :ARG1-of ( EVENT-17 / own.01
+                                                       :ARG0 ( PERSONS-15 / foreigners
+                                                              :DEFINITE ( ATTRIB-16 / the))
+                                                       :MOD ( mod-40 / fully)))))
+                           :TOCOMP ( EVENT-23 / EVENT
+                                  :ARG0 ( GPE-Dubai / GPE
+                                         :name ( n-43 / name
+                                                :op1 "Dubai"))
+                                  :ARG1 ( ENTITY-21 / headquarters
+                                         :POS ORG-4)))
+                    :op2 ( CONJ-36 / and
+                           :op1 ( EVENT-25 / establish.01
+                                  :ARG0 ORG-4
+                                  :ARG1 ( FAC-24 / offices)
+                                  :IN FAC-10
+                                  :LOC ( LOC-41 / here))
+                           :op2 ( EVENT-28 / provide.01
+                                  :ARG0 ORG-4
+                                  :ARG1 ( ENTITY-27 / employment)
+                                  :IN FAC-10)
+                           :op3 ( EVENT-30 / own.01
+                                  :ARG0 ORG-4
+                                  :ARG1 ( ENTITY-29 / machinery)
+                                  :IN FAC-10)))))
+
+# ::id 30_newswire_MASC;A1.E2;AT5-1;NE
+# ::snt The electronic trade free trade zone is situated in the north of Dubai , close to the free industrial zone in Jabal Ali Mountain , an area which is considered to be the first in the country , and tenth in the world for transit movement .
+( EVENT-26 / situate.01
+      :ARG1 ( FAC-1 / electronic_trade_free_trade_zone
+             :DEFINITE ( ATTRIB-2 / the))
+      :IN ( LOC-3 / north
+             :DEFINITE ( ATTRIB-4 / the)
+             :LOC ( ATTRIB-5 / close
+                    :TO ( FAC-22 / zone
+                           :DEFINITE ( ATTRIB-23 / the)
+                           :ATTRIBUTE ( ATTRIB-25 / industrial)
+                           :ATTRIBUTE ( ATTRIB-24 / free)
+                           :IN ( LOC-Jabal_Ali_Mountain / LOC
+                                  :name ( n-1 / name
+                                         :op1 "Jabal_Ali_Mountain"))
+                           :NAMELY ( LOC-6 / area
+                                  :ARG1-of ( EVENT-8 / consider.01
+                                         :TOCOMP ( EVENT-21 / be.01
+                                                :ARG0 LOC-6
+                                                :ARG1 ( ENTITY-9 / AND
+                                                       :DEFINITE ( ATTRIB-10 / the)
+                                                       :op1 ( ENTITY-12 / ENTITY
+                                                              :ATTRIBUTE ( ATTRIB-13 / first)
+                                                              :IN ( GPE-14 / country
+                                                                     :DEFINITE ( ATTRIB-15 / the)))
+                                                       :op2 ( ENTITY-16 / ENTITY
+                                                              :ATTRIBUTE ( ATTRIB-17 / tenth)
+                                                              :IN ( LOC-18 / world
+                                                                     :DEFINITE ( ATTRIB-19 / the))))
+                                                :FOR ( ENTITY-20 / transit_movement))))))
+             :OF ( GPE-Dubai / GPE
+                    :name ( n-2 / name
+                           :op1 "Dubai"))))
+
+# ::id 31_newswire_MASC;A1.E2;AT6-1;NE
+# ::snt Launching ' Dubai Internet city ' coincided with the opening of the annual information fair in Dubai which is considered to be the biggest in the Middle East - Gulf Information Technology Getix . '
+( EVENT-15 / coincide.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( EVENT-3 / launch.01
+             :ARG1 ( FAC-2 / Dubai_Internet_city))
+      :WITH ( OPENING.EVENT-4 / opening
+             :DEFINITE ( ATTRIB-5 / the)
+             :OF ( FAIR.EVENT-6 / information_fair
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :ATTRIBUTE ( ATTRIB-8 / annual)
+                    :IN ( GPE-Dubai / GPE
+                           :name ( n-2 / name
+                                  :op1 "Dubai"))
+                    :ARG1-of ( EVENT-10 / consider.01
+                           :TOCOMP ( EVENT-14 / be.01
+                                  :ARG0 FAIR.EVENT-6
+                                  :ARG1 ( ENTITY-11 / ENTITY
+                                         :DEFINITE ( ATTRIB-12 / the)
+                                         :ATTRIBUTE ( ATTRIB-13 / biggest)
+                                         :IN ( GPE-Middle_East / GPE
+                                                :name ( n-3 / name
+                                                       :op1 "Middle_East")))))
+                    :NAMELY ( ENTITY-Gulf_Information_Technology_Getix / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "Gulf_Information_Technology_Getix")))))
+
+# ::id 32_newswire_MASC;wsj_1640;AT1-1;NE
+# ::snt Electronic theft by foreign and industrial spies and disgruntled employees is costing U.S. companies billions and eroding their international competitive advantage .
+( CONJ-20 / and
+      :op1 ( EVENT-14 / cost.01
+             :ARG0 ( ENTITY-1 / theft
+                    :ATTRIBUTE ( ATTRIB-2 / electronic)
+                    :BY ( PERSONS-3 / AND
+                           :op1 ( GROUP-4 / AND
+                                  :op1 ( GROUP-5 / spies
+                                         :ATTRIBUTE ( ATTRIB-6 / foreign))
+                                  :op2 ( GROUP-7 / spies
+                                         :ATTRIBUTE ( ATTRIB-8 / industrial)))
+                           :op2 ( GROUP-9 / employees
+                                  :ATTRIBUTE ( ATTRIB-10 / disgruntled))))
+             :ARG1 ( MONEY-13 / billions)
+             :ARG2 ( ORG-11 / companies
+                    :ATTRIBUTE ( NORP-12 / u.s.)))
+      :op2 ( EVENT-19 / erode.01
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-15 / advantage
+                    :ATTRIBUTE ( ATTRIB-18 / competitive)
+                    :ATTRIBUTE ( ATTRIB-17 / international)
+                    :POS ORG-11)))
+
+# ::id 33_newswire_MASC;wsj_1640;AT1-2;NE
+# ::snt That was the message delivered by government and private security experts at an all-day conference on corporate electronic espionage .
+( EVENT-17 / be.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / that))
+      :ARG1 ( ENTITY-3 / message
+             :DEFINITE ( ATTRIB-4 / the)
+             :ARG1-of ( EVENT-16 / deliver.01
+                    :ARG0 ( GROUP-6 / AND
+                           :op1 ( ORG-7 / government_security_experts)
+                           :op2 ( PERSONS-8 / security_experts
+                                  :ATTRIBUTE ( ATTRIB-9 / private)))
+                    :AT ( CONFERENCE.EVENT-10 / conference
+                           :ON ( ENTITY-13 / espionage
+                                  :ATTRIBUTE ( ATTRIB-15 / electronic)
+                                  :ATTRIBUTE ( ATTRIB-14 / corporate))
+                           :MSR ( TIME-11 / TIME
+                                  :QUANTIFIER ( ATTRIB-12 / all-day))))))
+
+# ::id 34_newswire_MASC;wsj_1640;AT2-1;NE
+# ::snt " Hostile and even friendly nations routinely steal information from U.S. companies and share it with their own companies , " said Noel D. Matchett , a former staffer at the federal National Security Agency and now president of Information Security Inc. , Silver Spring , Md .
+( EVENT-6 / say.01
+      :MOD ( mod-28 / past)
+      :ARG0 ( PERSON-Noel_D.Matchett / AND
+             :op1 ( ENTITY-2 / staffer
+                    :ATTRIBUTE ( ATTRIB-3 / former)
+                    :AT ( ORG-federal_National_Security_Agency / ORG
+                           :name ( n-30 / name
+                                  :op1 "federal_National_Security_Agency")))
+             :op2 ( TTL-4 / president
+                    :ATTRIBUTE ( ATTRIB-5 / now)
+                    :OF ( ORG-Information_Security_Inc.Silver_Spring_Md / ORG
+                           :name ( n-31 / name
+                                  :op1 "Information_Security_Inc.Silver_Spring_Md")))
+             :name ( n-29 / name
+                    :op1 "Noel_D.Matchett"))
+      :THAT ( CONJ-26 / and
+             :op1 ( EVENT-16 / steal.01
+                    :ARG0 ( GPE-7 / AND
+                           :op1 ( GROUP-8 / nations
+                                  :ATTRIBUTE ( ATTRIB-9 / hostile))
+                           :op2 ( GROUP-10 / nations
+                                  :ATTRIBUTE ( ATTRIB-12 / friendly)
+                                  :QUANTIFIER ( ATTRIB-11 / even)))
+                    :ARG1 ( ENTITY-13 / information)
+                    :FROM ( ORG-14 / companies
+                           :ATTRIBUTE ( NORP-15 / u.s.)))
+             :op2 ( EVENT-21 / share.01
+                    :ARG0 GPE-7
+                    :ARG1 ( REF1-17 / it)
+                    :WITH ( GROUP-18 / companies
+                           :ATTRIBUTE ( ATTRIB-20 / own)
+                           :POS GPE-7))
+             :MOD ( mod-27 / routinely)))
+
+# ::id 35_newswire_MASC;wsj_1640;AT2-2;NE
+# ::snt It " may well be " that theft of business data is " as serious a strategic threat to national security " as it is a threat to the survival of victimized U.S. firms , said Michelle Van Cleave , the White House 's assistant director for National Security Affairs .
+( EVENT-2 / say.01
+      :MOD ( mod-27 / past)
+      :ARG0 ( PERSON-Michelle_Van_Cleave / assistant_director
+             :FOR ( ENTITY-National_Security_Affairs / ENTITY
+                    :name ( n-29 / name
+                           :op1 "National_Security_Affairs"))
+             :POS ( ORG-White_House / ORG
+                    :name ( n-30 / name
+                           :op1 "White_House"))
+             :name ( n-28 / name
+                    :op1 "Michelle_Van_Cleave"))
+      :THAT ( EVENT-22 / be.01
+             :domain-of ( MD-25 / may)
+             :ARG0 ( EVENT-21 / be.01
+                    :ARG0 ( ENTITY-4 / theft
+                           :OF ( GROUP-5 / business_data))
+                    :ARG1 ( ENTITY-6 / threat
+                           :ATTRIBUTE ( ATTRIB-18 / strategic)
+                           :ATTRIBUTE ( ATTRIB-7 / as_serious
+                                  :AS ( DEGREE-8 / DEGREE
+                                         :MSR-of ( EVENT-17 / be.01
+                                                :ARG0 ( REF1-10 / it)
+                                                :ARG1 ( ENTITY-11 / threat
+                                                       :TO ( ENTITY-12 / survival
+                                                              :DEFINITE ( ATTRIB-13 / the)
+                                                              :OF ( GROUP-14 / firms
+                                                                     :ATTRIBUTE ( NORP-16 / u.s.)
+                                                                     :ATTRIBUTE ( ATTRIB-15 / victimize.01)))))))
+                           :TO ( ENTITY-19 / security
+                                  :ATTRIBUTE ( ATTRIB-20 / national))))
+             :MOD ( mod-26 / well)))
+
+# ::id 36_newswire_MASC;wsj_1640;AT3-1;NE
+# ::snt The conference was jointly sponsored by the New York Institute of Technology School of Management and the Armed Forces Communications and Electronics Association , a joint industry-government trade group .
+( EVENT-6 / sponsor.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( ORG-3 / AND
+             :op1 ( ENTITY-New_York_Institute_of_Technology_School_of_Management / ENTITY
+                    :name ( n-4 / name
+                           :op1 "New_York_Institute_of_Technology_School_of_Management"))
+             :op2 ( ENTITY-Armed_Forces_Communications_and_Electronics_Association / industry-government_trade_group
+                    :ATTRIBUTE ( ATTRIB-5 / joint)
+                    :name ( n-3 / name
+                           :op1 "Armed_Forces_Communications_and_Electronics_Association")))
+      :ARG1 ( CONFERENCE.EVENT-1 / conference
+             :DEFINITE ( ATTRIB-2 / the))
+      :MOD ( mod-1 / jointly))
+
+# ::id 37_newswire_MASC;wsj_1640;AT4-1;NE
+# ::snt Any secret can be pirated , the experts said , if it is transmitted over the air .
+( EVENT-3 / say.01
+      :MOD ( mod-15 / past)
+      :ARG0 ( PERSONS-1 / experts
+             :DEFINITE ( ATTRIB-2 / the))
+      :THAT ( CND-13 / if
+             :op1 ( EVENT-9 / transmit.01
+                    :ARG1 ( REF1-6 / it)
+                    :OVER ( ENTITY-7 / air
+                           :DEFINITE ( ATTRIB-8 / the)))
+             :op2 ( EVENT-10 / pirate.01
+                    :domain-of ( MD-14 / can)
+                    :ARG1 ( ENTITY-4 / secret
+                           :QUANTIFIER ( ATTRIB-5 / any)))))
+
+# ::id 38_newswire_MASC;wsj_1640;AT4-2;NE
+# ::snt Even rank amateurs can do it if they spend a few thousand dollars for a commercially available microwave receiver with amplifier and a VCR recorder .
+( CND-16 / if
+      :op1 ( EVENT-12 / spend.01
+             :ARG0 PERSONS-1
+             :ARG1 ( MONEY-5 / dollars
+                    :CARDINAL ( ATTRIB-6 / a_few_thousand))
+             :FOR ( GROUP-7 / AND
+                    :op1 ( ENTITY-8 / microwave_receiver
+                           :ATTRIBUTE ( ATTRIB-9 / commercially_available)
+                           :WITH ( ENTITY-10 / amplifier))
+                    :op2 ( ENTITY-11 / VCR_recorder)))
+      :op2 ( EVENT-14 / do.02
+             :domain-of ( MD-15 / can)
+             :ARG0 ( PERSONS-1 / amateurs
+                    :ATTRIBUTE ( ATTRIB-3 / rank)
+                    :QUANTIFIER ( ATTRIB-2 / even))
+             :ARG1 ( REF1-13 / it)))
+
+# ::id 39_newswire_MASC;wsj_1640;AT4-3;NE
+# ::snt They need only position themselves near a company 's satellite dish and wait .
+( EVENT-2 / need.01
+      :ARG0 ( PERSONS-1 / they)
+      :TOCOMP ( CONJ-13 / and
+             :op1 ( EVENT-7 / position.01
+                    :ARG0 PERSONS-1
+                    :ARG1 PERSONS-1
+                    :LOC ( ATTRIB-4 / near
+                           :COMP ( ENTITY-5 / satellite_dish
+                                  :POS ( ORG-6 / company))))
+             :op2 ( EVENT-8 / wait.01
+                    :ARG0 PERSONS-1))
+      :MOD ( mod-14 / only))
+
+# ::id 40_newswire_MASC;wsj_1640;AT5-1;NE
+# ::snt You can have a dozen competitors stealing your secrets at the same time , " Mr. Matchett said , adding : " It 's a pretty good bet they wo n't get caught . "
+( CONJ-27 / and
+      :op1 ( EVENT-9 / say.01
+             :MOD ( mod-28 / past)
+             :ARG0 ( PERSON-Mr.Matchett / PERSON
+                    :name ( n-29 / name
+                           :op1 "Mr.Matchett"))
+             :THAT ( EVENT-20 / have.06
+                    :domain-of ( MD-26 / can)
+                    :ARG0 ( GENERIC-10 / you)
+                    :ARG1 ( EVENT-19 / steal.01
+                           :ARG0 ( ORG-12 / competitors
+                                  :CARDINAL ( ATTRIB-13 / a_dozen))
+                           :ARG1 ( GROUP-14 / secrets
+                                  :POS GENERIC-10)
+                           :AT ( ENTITY-16 / time
+                                  :DEFINITE ( ATTRIB-17 / the)
+                                  :ATTRIBUTE ( ATTRIB-18 / same)))))
+      :op2 ( EVENT-1 / add.01
+             :ARG0 PERSON-Mr.Matchett
+             :THAT ( EVENT-8 / be.01
+                    :ARG0 ( EVENT-5 / get.03
+                           :domain-of ( MD-24 / wo)
+                           :domain-of ( NEG-23 / NEG)
+                           :ATTRIBUTE ( ATTRIB-4 / catch.03)
+                           :ARG0 ORG-12)
+                    :ARG1 ( ENTITY-6 / bet
+                           :ATTRIBUTE ( ATTRIB-7 / pretty_good)))))
+
+# ::id 41_newswire_MASC;wsj_1640;AT5-2;NE
+# ::snt The only way to catch an electronic thief , he said , is to set him up with erroneous information .
+( EVENT-2 / say.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-1 / he)
+      :THAT ( EVENT-9 / be.01
+             :ARG0 ( ENTITY-3 / way
+                    :DEFINITE ( ATTRIB-4 / the)
+                    :QUANTIFIER ( ATTRIB-5 / only)
+                    :TOCOMP ( EVENT-8 / catch.03
+                           :ARG1 ( THIEF-6 / thief
+                                  :ATTRIBUTE ( ATTRIB-7 / electronic))))
+             :TOCOMP ( EVENT-13 / set.03
+                    :ARG0 ENTITY-3
+                    :ARG1 THIEF-6
+                    :WITH ( ENTITY-11 / information
+                           :ATTRIBUTE ( ATTRIB-12 / erroneous)))))
+
+# ::id 42_newswire_MASC;wsj_1640;AT6-1;NE
+# ::snt Even though electronic espionage may cost U.S. firms billions of dollars a year , most are n't yet taking precautions , the experts said .
+( EVENT-3 / say.01
+      :MOD ( mod-24 / past)
+      :ARG0 ( PERSONS-1 / experts
+             :DEFINITE ( ATTRIB-2 / the))
+      :THAT ( CRD-22 / though
+             :op1 ( EVENT-11 / cost.01
+                    :domain-of ( MD-20 / may)
+                    :ARG0 ( ENTITY-4 / espionage
+                           :ATTRIBUTE ( ATTRIB-5 / electronic))
+                    :ARG1 ( MONEY-8 / billions
+                           :MSR ( TIME-10 / year)
+                           :OF ( GROUP-9 / dollars))
+                    :ARG2 ( ORG-6 / firms
+                           :ATTRIBUTE ( ATTRIB-7 / u.s.)))
+             :op2 ( EVENT-15 / be.03
+                    :domain-of ( NEG-21 / NEG)
+                    :ARG0 ( ORG-12 / ORG
+                           :QUANTIFIER ( ATTRIB-13 / most))
+                    :ARG1 ( GROUP-14 / precautions)
+                    :TMP ( TIME-23 / yet))))
+
+# ::id 43_newswire_MASC;wsj_1640;AT6-2;NE
+# ::snt By contrast , European firms will spend $150 million this year on electronic security , and are expected to spend $1 billion by 1992 .
+( CONJ-18 / and
+      :op1 ( EVENT-10 / spend.01
+             :domain-of ( MD-17 / will)
+             :ARG0 ( ORG-2 / firms
+                    :ATTRIBUTE ( NORP-3 / european))
+             :ARG1 ( MONEY-4 / MONEY
+                    :CARDINAL ( ATTRIB-5 / dollar_150_million))
+             :ON ( ENTITY-8 / security
+                    :ATTRIBUTE ( ATTRIB-9 / electronic))
+             :TMP ( DATE-6 / year
+                    :DETERMINER ( ATTRIB-7 / this))
+             :BY ( ENTITY-1 / contrast))
+      :op2 ( EVENT-11 / expect.01
+             :ARG1 ORG-2
+             :BY ENTITY-1
+             :TOCOMP ( EVENT-16 / spend.01
+                    :ARG0 ORG-2
+                    :ARG1 ( MONEY-12 / MONEY
+                           :CARDINAL ( ATTRIB-13 / dollar_1_billion))
+                    :BY ( DATE-14 / DATE
+                           :CARDINAL ( ATTRIB-15 / 1992)))))
+
+# ::id 44_newswire_MASC;wsj_1640;AT6-3;NE
+# ::snt Already many foreign firms , especially banks , have their own cryptographers , conference speakers reported .
+( EVENT-2 / report.01
+      :MOD ( mod-15 / past)
+      :ARG0 ( PERSONS-1 / conference_speakers)
+      :THAT ( EVENT-10 / have.03
+             :ARG0 ( ORG-3 / especially
+                    :OF ( ORG-6 / banks)
+                    :MOD ( mod-13 / firms
+                           :ATTRIBUTE ( ATTRIB-5 / foreign)
+                           :QUANTIFIER ( ATTRIB-4 / many)))
+             :ARG1 ( PERSONS-7 / cryptographers
+                    :ATTRIBUTE ( ATTRIB-9 / own)
+                    :POS ORG-3)
+             :TMP ( TIME-14 / already)))
+
+# ::id 45_newswire_MASC;wsj_1640;AT7-1;NE
+# ::snt Still , encrypting corporate communications is only a partial remedy .
+( EVENT-8 / be.01
+      :ARG0 ( EVENT-4 / encrypt.01
+             :ARG1 ( GROUP-2 / communications
+                    :ATTRIBUTE ( ATTRIB-3 / corporate)))
+      :ARG1 ( ENTITY-5 / remedy
+             :ATTRIBUTE ( ATTRIB-7 / partial)
+             :QUANTIFIER ( ATTRIB-6 / only))
+      :MOD ( mod-1 / still))
+
+# ::id 46_newswire_MASC;wsj_1640;AT7-2;NE
+# ::snt One expert , whose job is so politically sensitive that he spoke on condition that he would n't be named or quoted , said the expected influx of East European refugees over the next few years will greatly increase the chances of computer-maintenance workers , for example , doubling as foreign spies .
+( EVENT-13 / say.01
+      :MOD ( mod-43 / past)
+      :ARG0 ( PERSON-1 / expert
+             :CARDINAL ( ATTRIB-2 / one)
+             :POS-of ( ENTITY-3 / job
+                    :ARG0-of ( EVENT-12 / be.01
+                           :ATTRIBUTE ( ATTRIB-5 / so_politically_sensitive
+                                  :THAT ( EVENT-11 / speak.01
+                                         :MOD ( mod-41 / past)
+                                         :ARG0 ( PERSON-6 / PERSON
+                                                :namely PERSON-1)
+                                         :ON ( ENTITY-7 / condition
+                                                :THAT ( CONJ-36 / or
+                                                       :domain-of ( MD-38 / would)
+                                                       :domain-of ( NEG-37 / NEG)
+                                                       :op1 ( EVENT-9 / name.01
+                                                              :ARG1 ( PERSON-8 / PERSON
+                                                                     :namely PERSON-6))
+                                                       :op2 ( EVENT-10 / be.03
+                                                              :ARG1 PERSON-8))))))))
+      :THAT ( EVENT-30 / increase.01
+             :domain-of ( MD-40 / will)
+             :ARG0 ( ENTITY-14 / influx
+                    :DEFINITE ( ATTRIB-15 / the)
+                    :ATTRIBUTE ( ATTRIB-16 / expect.01)
+                    :OF ( GROUP-17 / refugees
+                           :ATTRIBUTE ( NORP-18 / east_european))
+                    :OVER ( DATE-19 / years
+                           :DEFINITE ( ATTRIB-20 / the)
+                           :QUANTIFIER ( ATTRIB-21 / next_few)))
+             :ARG1 ( GROUP-22 / chances
+                    :DEFINITE ( ATTRIB-23 / the)
+                    :OF ( EVENT-29 / double.02
+                           :ARG0 ( PERSONS-25 / computer-maintenance_workers)
+                           :AS ( PERSONS-27 / spies
+                                  :ATTRIBUTE ( ATTRIB-28 / foreign))
+                           :FOR ( ENTITY-26 / example)))
+             :MOD ( mod-42 / greatly)))
+
+# ::id 47_newswire_MASC;wsj_1640;AT7-3;NE
+# ::snt Moreover , he said , technology now exists for stealing corporate secrets after they 've been " erased " from a computer 's memory .
+( EVENT-2 / say.01
+      :MOD ( mod-19 / past)
+      :ARG0 ( PERSON-1 / he)
+      :THAT ( EVENT-12 / exist.01
+             :ARG0 ( ENTITY-3 / technology
+                    :FOR ( CRD-16 / after
+                           :op1 ( EVENT-10 / be.03
+                                  :ARG1 SECRETS-5
+                                  :FROM ( ENTITY-8 / memory
+                                         :POS ( ENTITY-9 / computer)))
+                           :op2 ( EVENT-11 / steal.01
+                                  :ARG1 ( SECRETS-5 / secrets
+                                         :ATTRIBUTE ( ATTRIB-6 / corporate)))))
+             :TMP ( TIME-17 / now)
+             :MOD ( mod-18 / moreover)))
+
+# ::id 48_newswire_MASC;wsj_1640;AT7-4;NE
+# ::snt He said that Oliver North of Iran-Contra notoriety thought he had erased his computer but that the information was later retrieved for congressional committees to read .
+( EVENT-2 / say.01
+      :MOD ( mod-25 / past)
+      :ARG0 ( PERSON-1 / he)
+      :THAT ( CONJ-20 / but
+             :op1 ( EVENT-4 / think.01
+                    :MOD ( mod-22 / past)
+                    :ARG0 ( PERSON-Oliver_North / PERSON
+                           :name ( n-26 / name
+                                  :op1 "Oliver_North")
+                           :OF ( ENTITY-3 / Iran-Contra_notoriety))
+                    :THAT ( EVENT-8 / erase.01
+                           :MOD ( mod-21 / past)
+                           :ARG0 ( PERSON-5 / PERSON
+                                  :namely PERSON-Oliver_North)
+                           :ARG1 ( ENTITY-6 / computer
+                                  :POS PERSON-5)))
+             :op2 ( EVENT-15 / retrieve.01
+                    :MOD ( mod-23 / past)
+                    :ARG1 ( ENTITY-9 / information
+                           :DEFINITE ( ATTRIB-10 / the))
+                    :FOR ( EVENT-14 / read.01
+                           :ARG0 ( ORG-12 / committees
+                                  :ATTRIBUTE ( ATTRIB-13 / congressional)))
+                    :TMP ( TIME-24 / later))))
+
+# ::id 49_newswire_MASC;wsj_1640;AT7-5;NE
+# ::snt No personal computer , not even the one on a chief executive 's desk , is safe , this speaker noted .
+( EVENT-3 / note.01
+      :MOD ( mod-1 / past)
+      :ARG0 ( PERSON-1 / speaker
+             :DETERMINER ( ATTRIB-2 / this))
+      :THAT ( EVENT-16 / be.01
+             :ATTRIBUTE ( ATTRIB-15 / safe)
+             :ARG0 ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / computer
+                           :ATTRIBUTE ( ATTRIB-7 / personal)
+                           :QUANTIFIER ( ATTRIB-6 / no))
+                    :op2 ( ENTITY-8 / ENTITY
+                           :DEFINITE ( ATTRIB-10 / the)
+                           :QUANTIFIER ( ATTRIB-9 / not_even)
+                           :ON ( ENTITY-12 / desk
+                                  :POS ( PERSON-13 / executive
+                                         :ATTRIBUTE ( ATTRIB-14 / chief)))
+                           :CARDINAL ( ATTRIB-11 / one)))))
+
+# ::id 50_newswire_MASC;wsj_1640;AT8-1;NE
+# ::snt W. Mark Goode , president of Micronyx Inc. , a Richardson , Texas , firm that makes computer-security products , provided a new definition for Mikhail Gorbachev 's campaign for greater openness , known commonly as glasnost .
+( EVENT-14 / provide.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( PERSON-W.Mark_Goode / president
+             :OF ( ORG-Micronyx_Inc. / firm
+                    :LOC ( ENTITY-Richardson_Texas / ENTITY
+                           :name ( n-5 / name
+                                  :op1 "Richardson_Texas"))
+                    :ARG0-of ( EVENT-5 / make.01
+                           :ARG1 ( PRODUCT-4 / computer-security_products))
+                    :name ( n-4 / name
+                           :op1 "Micronyx_Inc."))
+             :name ( n-3 / name
+                    :op1 "W.Mark_Goode"))
+      :ARG1 ( ENTITY-6 / definition
+             :ATTRIBUTE ( ATTRIB-7 / new)
+             :FOR ( ENTITY-8 / campaign
+                    :FOR ( ENTITY-9 / openness
+                           :ATTRIBUTE ( ATTRIB-10 / greater))
+                    :POS ( PERSON-Mikhail_Gorbachev / PERSON
+                           :name ( n-6 / name
+                                  :op1 "Mikhail_Gorbachev"))
+                    :ARG1-of ( EVENT-12 / know.01
+                           :AS ( ENTITY-glasnost / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "glasnost"))
+                           :MOD ( mod-1 / commonly)))))
+
+# ::id 51_newswire_MASC;wsj_1640;AT8-2;NE
+# ::snt Under Mr. Gorbachev , Mr. Goode said , the Soviets are openly stealing Western corporate communications .
+( EVENT-1 / say.01
+      :MOD ( mod-2 / past)
+      :ARG0 ( PERSON-Mr.Goode / PERSON
+             :name ( n-3 / name
+                    :op1 "Mr.Goode"))
+      :THAT ( EVENT-4 / be.03
+             :ARG0 ( GPE-Soviets / GPE
+                    :name ( n-4 / name
+                           :op1 "Soviets"))
+             :ARG1 ( GROUP-2 / corporate_communications
+                    :ATTRIBUTE ( NORP-3 / western))
+             :UNDER ( PERSON-Mr.Gorbachev / PERSON
+                    :name ( n-5 / name
+                           :op1 "Mr.Gorbachev"))
+             :MOD ( mod-1 / openly)))
+
+# ::id 52_newswire_MASC;wsj_1640;AT8-3;NE
+# ::snt He cited the case of a Swiss oil trader who recently put out bids via telex for an oil tanker to pick up a cargo of crude in the Middle East .
+( EVENT-16 / cite.01
+      :MOD ( mod-3 / past)
+      :ARG0 ( PERSON-1 / he)
+      :ARG1 ( ENTITY-2 / case
+             :DEFINITE ( ATTRIB-3 / the)
+             :OF ( PERSON-4 / oil_trader
+                    :ATTRIBUTE ( NORP-5 / swiss)
+                    :ARG0-of ( EVENT-14 / put.10
+                           :MOD ( mod-1 / past)
+                           :ARG1 ( GROUP-7 / bids
+                                  :FOR ( ENTITY-8 / oil_tanker
+                                         :ARG0-of ( EVENT-12 / pick.04
+                                                :ARG1 ( ENTITY-10 / cargo
+                                                       :OF ( ENTITY-11 / crude))
+                                                :IN ( GPE-Middle_East / GPE
+                                                       :name ( n-4 / name
+                                                              :op1 "Middle_East")))))
+                           :VIA ( ENTITY-13 / telex)
+                           :TMP ( TIME-2 / recently)))))
+
+# ::id 53_newswire_MASC;wsj_1640;AT8-4;NE
+# ::snt Among the responses the Swiss trader got was one from the Soviet national shipping company , which had n't been invited to submit a bid .
+( EVENT-17 / be.01
+      :MOD ( mod-21 / past)
+      :ARG0 ( ENTITY-8 / ENTITY
+             :FROM ( ORG-10 / national_shipping_company
+                    :DEFINITE ( ATTRIB-11 / the)
+                    :ATTRIBUTE ( ATTRIB-12 / soviet)
+                    :ARG1-of ( EVENT-14 / have.01
+                           :domain-of ( NEG-18 / NEG)
+                           :MOD ( mod-19 / past)
+                           :TOCOMP ( EVENT-16 / submit.01
+                                  :ARG0 ORG-10
+                                  :ARG1 ( ENTITY-15 / bid))))
+             :CARDINAL ( ATTRIB-9 / one))
+      :AMONG ( GROUP-1 / responses
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG1-of ( EVENT-7 / get.01
+                    :MOD ( mod-20 / past)
+                    :ARG0 ( PERSON-4 / trader
+                           :DEFINITE ( ATTRIB-5 / the)
+                           :ATTRIBUTE ( ATTRIB-6 / swiss)))))
+
+# ::id 54_newswire_MASC;wsj_1640;AT8-5;NE
+# ::snt The Soviets ' eavesdropping paid off , however , because they got the contract .
+( CRD-9 / because
+      :op1 ( EVENT-5 / get.01
+             :MOD ( mod-10 / past)
+             :ARG0 GPE-Soviets
+             :ARG1 ( ENTITY-3 / contract
+                    :DEFINITE ( ATTRIB-4 / the)))
+      :op2 ( EVENT-6 / pay.05
+             :MOD ( mod-11 / past)
+             :ARG0 ( ENTITY-1 / eavesdropping
+                    :POS ( GPE-Soviets / GPE
+                           :name ( n-13 / name
+                                  :op1 "Soviets"))))
+      :MOD ( mod-12 / however))

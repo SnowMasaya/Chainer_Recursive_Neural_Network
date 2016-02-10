@@ -1,0 +1,224 @@
+# ::id 1_childrens_CALDECOTT-1878;NE
+# ::snt THE HOUSE THAT JACK BUILT
+∃ EVENT[4] EVENT[3] HOUSE.LOC[1] (
+ built.01(EVENT[3], JACK.PERSON[JACK], HOUSE.LOC[1]) ∧ HOUSE(HOUSE.LOC[1]) ∧
+  past(EVENT[3]) ∧ xxx(EVENT[4]) ∧ LINK(EVENT[4]) = HOUSE.LOC[1])
+
+# ::id 2_childrens_CALDECOTT-1878;NE
+# ::snt This is the House that Jack built .
+∃ REF[1] EVENT[5] EVENT[4] HOUSE.LOC[2] (
+ built.01(EVENT[4], JACK.PERSON[Jack], HOUSE.LOC[2]) ∧ House(HOUSE.LOC[2]) ∧
+  past(EVENT[4]) ∧ REF[1] = this ∧ be.01(EVENT[5], REF[1], HOUSE.LOC[2]))
+
+# ::id 3_childrens_CALDECOTT-1878;NE
+# ::snt This is the Malt , That lay in the House that Jack built .
+∃ REF[1] EVENT[8] EVENT[6] EVENT[7] HOUSE.LOC[4] MALT.FOOD[2] (
+ built.01(EVENT[6], JACK.PERSON[Jack], HOUSE.LOC[4]) ∧ House(HOUSE.LOC[4]) ∧
+  lie.01(EVENT[7], MALT.FOOD[2]) ∧ in(EVENT[7]) = HOUSE.LOC[4] ∧ Malt(MALT.FOOD[2]) ∧
+   past(EVENT[6]) ∧ past(EVENT[7]) ∧ REF[1] = this ∧ be.01(EVENT[8], REF[1], MALT.FOOD[2]))
+
+# ::id 4_childrens_CALDECOTT-1878;NE
+# ::snt This is the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] EVENT[11] EVENT[8] EVENT[9] EVENT[10] HOUSE.LOC[6] MALT.FOOD[4] RAT.ANIMAL[2] (
+ built.01(EVENT[8], JACK.PERSON[Jack], HOUSE.LOC[6]) ∧ House(HOUSE.LOC[6]) ∧
+  lie.01(EVENT[9], MALT.FOOD[4]) ∧ in(EVENT[9]) = HOUSE.LOC[6] ∧ Malt(MALT.FOOD[4]) ∧
+   eat.01(EVENT[10], RAT.ANIMAL[2], MALT.FOOD[4]) ∧ Rat(RAT.ANIMAL[2]) ∧
+    past(EVENT[8]) ∧
+     past(EVENT[9]) ∧ past(EVENT[10]) ∧ REF[1] = this ∧ be.01(EVENT[11], REF[1], RAT.ANIMAL[2]))
+
+# ::id 5_childrens_CALDECOTT-1878;NE
+# ::snt This is the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] EVENT[14] EVENT[10] EVENT[11] EVENT[12] EVENT[13] HOUSE.LOC[8] MALT.FOOD[6] RAT.ANIMAL[4] CAT.ANIMAL[2] (
+ built.01(EVENT[10], JACK.PERSON[Jack], HOUSE.LOC[8]) ∧ House(HOUSE.LOC[8]) ∧
+  lie.01(EVENT[11], MALT.FOOD[6]) ∧ in(EVENT[11]) = HOUSE.LOC[8] ∧ Malt(MALT.FOOD[6]) ∧
+   eat.01(EVENT[12], RAT.ANIMAL[4], MALT.FOOD[6]) ∧ Rat(RAT.ANIMAL[4]) ∧
+    kill.01(EVENT[13], CAT.ANIMAL[2], RAT.ANIMAL[4]) ∧ Cat(CAT.ANIMAL[2]) ∧
+     past(EVENT[10]) ∧
+      past(EVENT[11]) ∧
+       past(EVENT[12]) ∧ past(EVENT[13]) ∧ REF[1] = this ∧ be.01(EVENT[14], REF[1], CAT.ANIMAL[2]))
+
+# ::id 6_childrens_CALDECOTT-1878;NE
+# ::snt This is the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] EVENT[17] EVENT[12] EVENT[13] EVENT[14] EVENT[15] EVENT[16] HOUSE.LOC[10] MALT.FOOD[8] RAT.ANIMAL[6] CAT.ANIMAL[4] DOG.ANIMAL[2] (
+ built.01(EVENT[12], JACK.PERSON[Jack], HOUSE.LOC[10]) ∧ House(HOUSE.LOC[10]) ∧
+  lie.01(EVENT[13], MALT.FOOD[8]) ∧ in(EVENT[13]) = HOUSE.LOC[10] ∧ Malt(MALT.FOOD[8]) ∧
+   eat.01(EVENT[14], RAT.ANIMAL[6], MALT.FOOD[8]) ∧ Rat(RAT.ANIMAL[6]) ∧
+    kill.01(EVENT[15], CAT.ANIMAL[4], RAT.ANIMAL[6]) ∧ Cat(CAT.ANIMAL[4]) ∧
+     worry.01(EVENT[16], DOG.ANIMAL[2], CAT.ANIMAL[4]) ∧ Dog(DOG.ANIMAL[2]) ∧
+      past(EVENT[12]) ∧
+       past(EVENT[13]) ∧
+        past(EVENT[14]) ∧
+         past(EVENT[15]) ∧
+          past(EVENT[16]) ∧ REF[1] = this ∧ be.01(EVENT[17], REF[1], DOG.ANIMAL[2]))
+
+# ::id 7_childrens_CALDECOTT-1878;NE
+# ::snt This is the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[4] EVENT[22] EVENT[16] EVENT[17] EVENT[18] EVENT[19] EVENT[20] EVENT[21] HOUSE.LOC[14] MALT.FOOD[12] RAT.ANIMAL[10] CAT.ANIMAL[8] DOG.ANIMAL[6] HORN.COW.ANIMAL[3] COW.ANIMAL[2] (
+ crumpled(ATTRIB[4]) ∧
+  is_horn_ATTRIBUTE(HORN.COW.ANIMAL[3], ATTRIB[4]) ∧
+   built.01(EVENT[16], JACK.PERSON[Jack], HOUSE.LOC[14]) ∧ House(HOUSE.LOC[14]) ∧
+    lie.01(EVENT[17], MALT.FOOD[12]) ∧ in(EVENT[17]) = HOUSE.LOC[14] ∧ Malt(MALT.FOOD[12]) ∧
+     eat.01(EVENT[18], RAT.ANIMAL[10], MALT.FOOD[12]) ∧ Rat(RAT.ANIMAL[10]) ∧
+      kill.01(EVENT[19], CAT.ANIMAL[8], RAT.ANIMAL[10]) ∧ Cat(CAT.ANIMAL[8]) ∧
+       worry.01(EVENT[20], DOG.ANIMAL[6], CAT.ANIMAL[8]) ∧ Dog(DOG.ANIMAL[6]) ∧
+        toss.01(EVENT[21], COW.ANIMAL[2], DOG.ANIMAL[6]) ∧ is_Cow_with(COW.ANIMAL[2], HORN.COW.ANIMAL[3]) ∧
+         past(EVENT[16]) ∧
+          past(EVENT[17]) ∧
+           past(EVENT[18]) ∧
+            past(EVENT[19]) ∧
+             past(EVENT[20]) ∧
+              past(EVENT[21]) ∧ REF[1] = this ∧ be.01(EVENT[22], REF[1], COW.ANIMAL[2]))
+
+# ::id 8_childrens_CALDECOTT-1878;NE
+# ::snt This is the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[7] ATTRIB[3] EVENT[26] EVENT[19] EVENT[20] EVENT[21] EVENT[22] EVENT[23] EVENT[24] EVENT[25] HOUSE.LOC[17] MALT.FOOD[15] RAT.ANIMAL[13] CAT.ANIMAL[11] DOG.ANIMAL[9] HORN.COW.ANIMAL[6] COW.ANIMAL[5] MAIDEN.PERSON[2] (
+ all_forlorn(ATTRIB[3]) ∧
+  crumpled(ATTRIB[7]) ∧
+   is_horn_ATTRIBUTE(HORN.COW.ANIMAL[6], ATTRIB[7]) ∧
+    built.01(EVENT[19], JACK.PERSON[Jack], HOUSE.LOC[17]) ∧ House(HOUSE.LOC[17]) ∧
+     lie.01(EVENT[20], MALT.FOOD[15]) ∧ in(EVENT[20]) = HOUSE.LOC[17] ∧ Malt(MALT.FOOD[15]) ∧
+      eat.01(EVENT[21], RAT.ANIMAL[13], MALT.FOOD[15]) ∧ Rat(RAT.ANIMAL[13]) ∧
+       kill.01(EVENT[22], CAT.ANIMAL[11], RAT.ANIMAL[13]) ∧ Cat(CAT.ANIMAL[11]) ∧
+        worry.01(EVENT[23], DOG.ANIMAL[9], CAT.ANIMAL[11]) ∧ Dog(DOG.ANIMAL[9]) ∧
+         toss.01(EVENT[24], COW.ANIMAL[5], DOG.ANIMAL[9]) ∧ is_Cow_with(COW.ANIMAL[5], HORN.COW.ANIMAL[6]) ∧
+          milk.02(EVENT[25], MAIDEN.PERSON[2], COW.ANIMAL[5]) ∧ is_Maiden_ATTRIBUTE(MAIDEN.PERSON[2], ATTRIB[3]) ∧
+           past(EVENT[19]) ∧
+            past(EVENT[20]) ∧
+             past(EVENT[21]) ∧
+              past(EVENT[22]) ∧
+               past(EVENT[23]) ∧
+                past(EVENT[24]) ∧
+                 past(EVENT[25]) ∧ REF[1] = this ∧ be.01(EVENT[26], REF[1], MAIDEN.PERSON[2]))
+
+# ::id 9_childrens_CALDECOTT-1878;NE
+# ::snt This is the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[13] ATTRIB[9] EVENT[33] HOUSE.LOC[23] MALT.FOOD[21] RAT.ANIMAL[19] CAT.ANIMAL[17] DOG.ANIMAL[15] HORN.COW.ANIMAL[12] COW.ANIMAL[11] MAIDEN.PERSON[8] MAN.PERSON[2] EVENT[5] EVENT[6] EVENT[25] EVENT[26] EVENT[27] EVENT[28] EVENT[29] EVENT[30] EVENT[31] EVENT[32] (
+ past(EVENT[25]) ∧
+  past(EVENT[26]) ∧
+   past(EVENT[27]) ∧
+    past(EVENT[28]) ∧
+     past(EVENT[29]) ∧
+      past(EVENT[30]) ∧
+       past(EVENT[31]) ∧
+        past(EVENT[32]) ∧
+         all_forlorn(ATTRIB[9]) ∧
+          crumpled(ATTRIB[13]) ∧
+           is_horn_ATTRIBUTE(HORN.COW.ANIMAL[12], ATTRIB[13]) ∧
+            built.01(EVENT[25], JACK.PERSON[Jack], HOUSE.LOC[23]) ∧ House(HOUSE.LOC[23]) ∧
+             lie.01(EVENT[26], MALT.FOOD[21]) ∧ in(EVENT[26]) = HOUSE.LOC[23] ∧ Malt(MALT.FOOD[21]) ∧
+              eat.01(EVENT[27], RAT.ANIMAL[19], MALT.FOOD[21]) ∧ Rat(RAT.ANIMAL[19]) ∧
+               kill.01(EVENT[28], CAT.ANIMAL[17], RAT.ANIMAL[19]) ∧ Cat(CAT.ANIMAL[17]) ∧
+                worry.01(EVENT[29], DOG.ANIMAL[15], CAT.ANIMAL[17]) ∧ Dog(DOG.ANIMAL[15]) ∧
+                 toss.01(EVENT[30], COW.ANIMAL[11], DOG.ANIMAL[15]) ∧ is_Cow_with(COW.ANIMAL[11], HORN.COW.ANIMAL[12]) ∧
+                  milk.02(EVENT[31], MAIDEN.PERSON[8], COW.ANIMAL[11]) ∧ is_Maiden_ATTRIBUTE(MAIDEN.PERSON[8], ATTRIB[9]) ∧
+                   ALL ENTITY[4] (is_of(ENTITY[4], MAN.PERSON[2]),
+                    CONJ_and(shred.04(EVENT[5], _, ENTITY[4]),
+                     tear.04(EVENT[6], _, ENTITY[4]))) ∧
+                    kiss.01(EVENT[32], MAN.PERSON[2], MAIDEN.PERSON[8]) ∧ Man(MAN.PERSON[2]) ∧
+                    REF[1] = this ∧ be.01(EVENT[33], REF[1], MAN.PERSON[2]))
+
+# ::id 10_childrens_CALDECOTT-1878;NE
+# ::snt This is the Priest , all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[19] ATTRIB[15] EVENT[40] HOUSE.LOC[29] MALT.FOOD[27] RAT.ANIMAL[25] CAT.ANIMAL[23] DOG.ANIMAL[21] HORN.COW.ANIMAL[18] COW.ANIMAL[17] MAIDEN.PERSON[14] MAN.PERSON[8] PRIEST.PERSON[2] EVENT[5] EVENT[6] EVENT[11] EVENT[12] EVENT[31] EVENT[32] EVENT[33] EVENT[34] EVENT[35] EVENT[36] EVENT[37] EVENT[38] EVENT[39] (
+ past(EVENT[31]) ∧
+  past(EVENT[32]) ∧
+   past(EVENT[33]) ∧
+    past(EVENT[34]) ∧
+     past(EVENT[35]) ∧
+      past(EVENT[36]) ∧
+       past(EVENT[37]) ∧
+        past(EVENT[38]) ∧
+         past(EVENT[39]) ∧
+          all_forlorn(ATTRIB[15]) ∧
+           crumpled(ATTRIB[19]) ∧
+            is_horn_ATTRIBUTE(HORN.COW.ANIMAL[18], ATTRIB[19]) ∧
+             built.01(EVENT[31], JACK.PERSON[Jack], HOUSE.LOC[29]) ∧ House(HOUSE.LOC[29]) ∧
+              lie.01(EVENT[32], MALT.FOOD[27]) ∧ in(EVENT[32]) = HOUSE.LOC[29] ∧ Malt(MALT.FOOD[27]) ∧
+               eat.01(EVENT[33], RAT.ANIMAL[25], MALT.FOOD[27]) ∧ Rat(RAT.ANIMAL[25]) ∧
+                kill.01(EVENT[34], CAT.ANIMAL[23], RAT.ANIMAL[25]) ∧ Cat(CAT.ANIMAL[23]) ∧
+                 worry.01(EVENT[35], DOG.ANIMAL[21], CAT.ANIMAL[23]) ∧ Dog(DOG.ANIMAL[21]) ∧
+                  toss.01(EVENT[36], COW.ANIMAL[17], DOG.ANIMAL[21]) ∧ is_Cow_with(COW.ANIMAL[17], HORN.COW.ANIMAL[18]) ∧
+                   milk.02(EVENT[37], MAIDEN.PERSON[14], COW.ANIMAL[17]) ∧ is_Maiden_ATTRIBUTE(MAIDEN.PERSON[14], ATTRIB[15]) ∧
+                    ALL ENTITY[10] (is_of(ENTITY[10], MAN.PERSON[8]),
+                     CONJ_and(shred.04(EVENT[11], _, ENTITY[10]),
+                      tear.04(EVENT[12], _, ENTITY[10]))) ∧
+                     kiss.01(EVENT[38], MAN.PERSON[8], MAIDEN.PERSON[14]) ∧ Man(MAN.PERSON[8]) ∧
+                     ALL ENTITY[4] (is_of(ENTITY[4], PRIEST.PERSON[2]),
+                      CONJ_and(shave.01(EVENT[5], _, ENTITY[4]),
+                       cut.02(EVENT[6], _, ENTITY[4]))) ∧
+                      marry.01(EVENT[39], PRIEST.PERSON[2], MAN.PERSON[8]) ∧ Priest(PRIEST.PERSON[2]) ∧
+                      REF[1] = this ∧ be.01(EVENT[40], REF[1], PRIEST.PERSON[2]))
+
+# ::id 11_childrens_CALDECOTT-1878;NE
+# ::snt This is the Cock that crowed in the morn , That waked the Priest all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[24] ATTRIB[20] EVENT[46] EVENT[5] EVENT[10] EVENT[11] EVENT[16] EVENT[17] EVENT[36] EVENT[37] EVENT[38] EVENT[39] EVENT[40] EVENT[41] EVENT[42] EVENT[43] EVENT[44] EVENT[45] TIME[4] HOUSE.LOC[34] MALT.FOOD[32] RAT.ANIMAL[30] CAT.ANIMAL[28] DOG.ANIMAL[26] HORN.COW.ANIMAL[23] COW.ANIMAL[22] MAIDEN.PERSON[19] MAN.PERSON[13] PRIEST.PERSON[7] COCK.ANIMAL[2] (
+ morn(TIME[4]) ∧
+  all_forlorn(ATTRIB[20]) ∧
+   crumpled(ATTRIB[24]) ∧
+    is_horn_ATTRIBUTE(HORN.COW.ANIMAL[23], ATTRIB[24]) ∧
+     built.01(EVENT[36], JACK.PERSON[Jack], HOUSE.LOC[34]) ∧ House(HOUSE.LOC[34]) ∧
+      lie.01(EVENT[37], MALT.FOOD[32]) ∧ in(EVENT[37]) = HOUSE.LOC[34] ∧ Malt(MALT.FOOD[32]) ∧
+       eat.01(EVENT[38], RAT.ANIMAL[30], MALT.FOOD[32]) ∧ Rat(RAT.ANIMAL[30]) ∧
+        kill.01(EVENT[39], CAT.ANIMAL[28], RAT.ANIMAL[30]) ∧ Cat(CAT.ANIMAL[28]) ∧
+         worry.01(EVENT[40], DOG.ANIMAL[26], CAT.ANIMAL[28]) ∧ Dog(DOG.ANIMAL[26]) ∧
+          toss.01(EVENT[41], COW.ANIMAL[22], DOG.ANIMAL[26]) ∧ is_Cow_with(COW.ANIMAL[22], HORN.COW.ANIMAL[23]) ∧
+           milk.02(EVENT[42], MAIDEN.PERSON[19], COW.ANIMAL[22]) ∧ is_Maiden_ATTRIBUTE(MAIDEN.PERSON[19], ATTRIB[20]) ∧
+            ALL ENTITY[15] (is_of(ENTITY[15], MAN.PERSON[13]),
+             CONJ_and(shred.04(EVENT[16], _, ENTITY[15]), tear.04(EVENT[17], _, ENTITY[15]))) ∧
+             kiss.01(EVENT[43], MAN.PERSON[13], MAIDEN.PERSON[19]) ∧ Man(MAN.PERSON[13]) ∧
+             ALL ENTITY[9] (is_of(ENTITY[9], PRIEST.PERSON[7]),
+              CONJ_and(shave.01(EVENT[10], _, ENTITY[9]), cut.02(EVENT[11], _, ENTITY[9]))) ∧
+              marry.01(EVENT[44], PRIEST.PERSON[7], MAN.PERSON[13]) ∧ Priest(PRIEST.PERSON[7]) ∧
+              crow.02(EVENT[5], COCK.ANIMAL[2]) ∧ in(EVENT[5]) = TIME[4] ∧
+               wake.01(EVENT[45], COCK.ANIMAL[2], PRIEST.PERSON[7]) ∧ Cock(COCK.ANIMAL[2]) ∧
+               past(EVENT[5]) ∧
+                past(EVENT[36]) ∧
+                 past(EVENT[37]) ∧
+                  past(EVENT[38]) ∧
+                   past(EVENT[39]) ∧
+                    past(EVENT[40]) ∧
+                     past(EVENT[41]) ∧
+                      past(EVENT[42]) ∧
+                       past(EVENT[43]) ∧
+                        past(EVENT[44]) ∧
+                         past(EVENT[45]) ∧
+                          REF[1] = this ∧ be.01(EVENT[46], REF[1], COCK.ANIMAL[2]))
+
+# ::id 12_childrens_CALDECOTT-1878;NE
+# ::snt This is the Farmer who sowed the corn , That fed the Cock that crowed in the morn , That waked the Priest all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+∃ REF[1] ATTRIB[28] ATTRIB[24] EVENT[52] EVENT[9] EVENT[14] EVENT[15] EVENT[20] EVENT[21] EVENT[40] EVENT[41] EVENT[42] EVENT[43] EVENT[44] EVENT[45] EVENT[46] EVENT[47] EVENT[48] EVENT[49] EVENT[50] EVENT[51] TIME[8] HOUSE.LOC[38] MALT.FOOD[36] RAT.ANIMAL[34] CAT.ANIMAL[32] DOG.ANIMAL[30] HORN.COW.ANIMAL[27] COW.ANIMAL[26] MAIDEN.PERSON[23] MAN.PERSON[17] PRIEST.PERSON[11] COCK.ANIMAL[6] CORN.FOOD[4] FARMER.PERSON[2] (
+ morn(TIME[8]) ∧
+  all_forlorn(ATTRIB[24]) ∧
+   crumpled(ATTRIB[28]) ∧
+    is_horn_ATTRIBUTE(HORN.COW.ANIMAL[27], ATTRIB[28]) ∧
+     built.01(EVENT[40], JACK.PERSON[Jack], HOUSE.LOC[38]) ∧ House(HOUSE.LOC[38]) ∧
+      lie.01(EVENT[41], MALT.FOOD[36]) ∧ in(EVENT[41]) = HOUSE.LOC[38] ∧ Malt(MALT.FOOD[36]) ∧
+       eat.01(EVENT[42], RAT.ANIMAL[34], MALT.FOOD[36]) ∧ Rat(RAT.ANIMAL[34]) ∧
+        kill.01(EVENT[43], CAT.ANIMAL[32], RAT.ANIMAL[34]) ∧ Cat(CAT.ANIMAL[32]) ∧
+         worry.01(EVENT[44], DOG.ANIMAL[30], CAT.ANIMAL[32]) ∧ Dog(DOG.ANIMAL[30]) ∧
+          toss.01(EVENT[45], COW.ANIMAL[26], DOG.ANIMAL[30]) ∧ is_Cow_with(COW.ANIMAL[26], HORN.COW.ANIMAL[27]) ∧
+           milk.02(EVENT[46], MAIDEN.PERSON[23], COW.ANIMAL[26]) ∧ is_Maiden_ATTRIBUTE(MAIDEN.PERSON[23], ATTRIB[24]) ∧
+            ALL ENTITY[19] (is_of(ENTITY[19], MAN.PERSON[17]),
+             CONJ_and(shred.04(EVENT[20], _, ENTITY[19]), tear.04(EVENT[21], _, ENTITY[19]))) ∧
+             kiss.01(EVENT[47], MAN.PERSON[17], MAIDEN.PERSON[23]) ∧ Man(MAN.PERSON[17]) ∧
+             ALL ENTITY[13] (is_of(ENTITY[13], PRIEST.PERSON[11]),
+              CONJ_and(shave.01(EVENT[14], _, ENTITY[13]), cut.02(EVENT[15], _, ENTITY[13]))) ∧
+              marry.01(EVENT[48], PRIEST.PERSON[11], MAN.PERSON[17]) ∧ Priest(PRIEST.PERSON[11]) ∧
+              crow.02(EVENT[9], COCK.ANIMAL[6]) ∧ in(EVENT[9]) = TIME[8] ∧
+               wake.01(EVENT[49], COCK.ANIMAL[6], PRIEST.PERSON[11]) ∧ Cock(COCK.ANIMAL[6]) ∧
+               feed.01(EVENT[50], CORN.FOOD[4], COCK.ANIMAL[6]) ∧ corn(CORN.FOOD[4]) ∧
+                sow.01(EVENT[51], FARMER.PERSON[2], CORN.FOOD[4]) ∧ Farmer(FARMER.PERSON[2]) ∧
+                 past(EVENT[9]) ∧
+                  past(EVENT[40]) ∧
+                   past(EVENT[41]) ∧
+                    past(EVENT[42]) ∧
+                     past(EVENT[43]) ∧
+                      past(EVENT[44]) ∧
+                       past(EVENT[45]) ∧
+                        past(EVENT[46]) ∧
+                         past(EVENT[47]) ∧
+                          past(EVENT[48]) ∧
+                           past(EVENT[49]) ∧
+                            past(EVENT[50]) ∧
+                             past(EVENT[51]) ∧
+                              REF[1] = this ∧ be.01(EVENT[52], REF[1], FARMER.PERSON[2]))

@@ -1,0 +1,340 @@
+% ::id 1_childrens_CALDECOTT-1878;NE
+% ::snt THE HOUSE THAT JACK BUILT
+fof(ex1414050844032,axiom,(
+    ? [X1,E2,E3] :
+      ( built_3(s0,E2,jack_,X1)
+      & house__1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & xxx_1(s0,E3)
+      & link_2(s0,E3,X1) ) )).
+
+% ::id 2_childrens_CALDECOTT-1878;NE
+% ::snt This is the House that Jack built .
+fof(ex1414050844330,axiom,(
+    ? [X1,E2,X4,E3] :
+      ( built_3(s0,E2,jack,X1)
+      & house_1(s0,X1)
+      & is_before_2(s0,E2,e0)
+      & is_3(s0,E3,X4,X1) ) )).
+
+% ::id 3_childrens_CALDECOTT-1878;NE
+% ::snt This is the Malt , That lay in the House that Jack built .
+fof(ex1414050844636,axiom,(
+    ? [X1,X2,E3,E4,X6,E5] :
+      ( built_3(s0,E3,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E4,X2)
+      & in_2(s0,E4,X1)
+      & malt_1(s0,X2)
+      & is_before_2(s0,E3,e0)
+      & is_before_2(s0,E4,e0)
+      & is_3(s0,E5,X6,X2) ) )).
+
+% ::id 4_childrens_CALDECOTT-1878;NE
+% ::snt This is the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050844956,axiom,(
+    ? [X1,X2,X3,E4,E5,E6,X8,E7] :
+      ( built_3(s0,E4,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E5,X2)
+      & in_2(s0,E5,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E6,X3,X2)
+      & rat_1(s0,X3)
+      & is_before_2(s0,E4,e0)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & is_3(s0,E7,X8,X3) ) )).
+
+% ::id 5_childrens_CALDECOTT-1878;NE
+% ::snt This is the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050845296,axiom,(
+    ? [X1,X2,X3,X4,E5,E6,E7,E8,X10,E9] :
+      ( built_3(s0,E5,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E6,X2)
+      & in_2(s0,E6,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E7,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E8,X4,X3)
+      & cat_1(s0,X4)
+      & is_before_2(s0,E5,e0)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & is_3(s0,E9,X10,X4) ) )).
+
+% ::id 6_childrens_CALDECOTT-1878;NE
+% ::snt This is the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050845648,axiom,(
+    ? [X1,X2,X3,X4,X5,E6,E7,E8,E9,E10,X12,E11] :
+      ( built_3(s0,E6,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E7,X2)
+      & in_2(s0,E7,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E8,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E9,X4,X3)
+      & cat_1(s0,X4)
+      & worried_3(s0,E10,X5,X4)
+      & dog_1(s0,X5)
+      & is_before_2(s0,E6,e0)
+      & is_before_2(s0,E7,e0)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & is_3(s0,E11,X12,X5) ) )).
+
+% ::id 7_childrens_CALDECOTT-1878;NE
+% ::snt This is the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050846012,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,E8,E9,E10,E11,E12,E13,X15,E14] :
+      ( crumpled_1(s0,X6)
+      & horn_1(s0,X6)
+      & built_3(s0,E8,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E9,X2)
+      & in_2(s0,E9,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E10,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E11,X4,X3)
+      & cat_1(s0,X4)
+      & worried_3(s0,E12,X5,X4)
+      & dog_1(s0,X5)
+      & tossed_3(s0,E13,X7,X5)
+      & is_cow_with_2(s0,X7,X6)
+      & is_before_2(s0,E8,e0)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & is_3(s0,E14,X15,X7) ) )).
+
+% ::id 8_childrens_CALDECOTT-1878;NE
+% ::snt This is the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050846391,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,E9,E10,E11,E12,E13,E14,E15,X17,E16] :
+      ( crumpled_1(s0,X6)
+      & horn_1(s0,X6)
+      & built_3(s0,E9,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E10,X2)
+      & in_2(s0,E10,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E11,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E12,X4,X3)
+      & cat_1(s0,X4)
+      & worried_3(s0,E13,X5,X4)
+      & dog_1(s0,X5)
+      & tossed_3(s0,E14,X7,X5)
+      & is_cow_with_2(s0,X7,X6)
+      & all_forlorn_1(s0,X8)
+      & milked_3(s0,E15,X8,X7)
+      & maiden_1(s0,X8)
+      & is_before_2(s0,E9,e0)
+      & is_before_2(s0,E10,e0)
+      & is_before_2(s0,E11,e0)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E14,e0)
+      & is_before_2(s0,E15,e0)
+      & is_3(s0,E16,X17,X8) ) )).
+
+% ::id 9_childrens_CALDECOTT-1878;NE
+% ::snt This is the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050846798,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,E10,E11,E12,E13,E14,E15,E16,E17,E18,E19,X21,E20] :
+      ( crumpled_1(s0,X6)
+      & horn_1(s0,X6)
+      & built_3(s0,E12,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E13,X2)
+      & in_2(s0,E13,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E14,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E15,X4,X3)
+      & cat_1(s0,X4)
+      & worried_3(s0,E16,X5,X4)
+      & dog_1(s0,X5)
+      & tossed_3(s0,E17,X7,X5)
+      & is_cow_with_2(s0,X7,X6)
+      & all_forlorn_1(s0,X8)
+      & milked_3(s0,E18,X8,X7)
+      & maiden_1(s0,X8)
+      & ? [X22] :
+          ( is_of_2(s0,X22,X9)
+          & tattered_3(s0,E10,unspecified,X22)
+          & torn_3(s0,E11,unspecified,X22) )
+      & kissed_3(s0,E19,X9,X8)
+      & man_1(s0,X9)
+      & is_before_2(s0,E12,e0)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E14,e0)
+      & is_before_2(s0,E15,e0)
+      & is_before_2(s0,E16,e0)
+      & is_before_2(s0,E17,e0)
+      & is_before_2(s0,E18,e0)
+      & is_before_2(s0,E19,e0)
+      & is_3(s0,E20,X21,X9) ) )).
+
+% ::id 10_childrens_CALDECOTT-1878;NE
+% ::snt This is the Priest , all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050847228,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E21,E22,E23,X25,E24] :
+      ( crumpled_1(s0,X6)
+      & horn_1(s0,X6)
+      & built_3(s0,E15,jack,X1)
+      & house_1(s0,X1)
+      & lay_2(s0,E16,X2)
+      & in_2(s0,E16,X1)
+      & malt_1(s0,X2)
+      & ate_3(s0,E17,X3,X2)
+      & rat_1(s0,X3)
+      & killed_3(s0,E18,X4,X3)
+      & cat_1(s0,X4)
+      & worried_3(s0,E19,X5,X4)
+      & dog_1(s0,X5)
+      & tossed_3(s0,E20,X7,X5)
+      & is_cow_with_2(s0,X7,X6)
+      & all_forlorn_1(s0,X8)
+      & milked_3(s0,E21,X8,X7)
+      & maiden_1(s0,X8)
+      & ? [X27] :
+          ( is_of_2(s0,X27,X9)
+          & tattered_3(s0,E13,unspecified,X27)
+          & torn_3(s0,E14,unspecified,X27) )
+      & kissed_3(s0,E22,X9,X8)
+      & man_1(s0,X9)
+      & ? [X26] :
+          ( is_of_2(s0,X26,X10)
+          & shaven_3(s0,E11,unspecified,X26)
+          & shorn_3(s0,E12,unspecified,X26) )
+      & married_3(s0,E23,X10,X9)
+      & priest_1(s0,X10)
+      & is_before_2(s0,E15,e0)
+      & is_before_2(s0,E16,e0)
+      & is_before_2(s0,E17,e0)
+      & is_before_2(s0,E18,e0)
+      & is_before_2(s0,E19,e0)
+      & is_before_2(s0,E20,e0)
+      & is_before_2(s0,E21,e0)
+      & is_before_2(s0,E22,e0)
+      & is_before_2(s0,E23,e0)
+      & is_3(s0,E24,X25,X10) ) )).
+
+% ::id 11_childrens_CALDECOTT-1878;NE
+% ::snt This is the Cock that crowed in the morn , That waked the Priest all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050847758,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,E13,E14,E15,E16,E17,E18,E19,E20,E21,E22,E23,E24,E25,E26,E27,X29,E28] :
+      ( morn_1(s0,X1)
+      & crumpled_1(s0,X7)
+      & horn_1(s0,X7)
+      & built_3(s0,E18,jack,X2)
+      & house_1(s0,X2)
+      & lay_2(s0,E19,X3)
+      & in_2(s0,E19,X2)
+      & malt_1(s0,X3)
+      & ate_3(s0,E20,X4,X3)
+      & rat_1(s0,X4)
+      & killed_3(s0,E21,X5,X4)
+      & cat_1(s0,X5)
+      & worried_3(s0,E22,X6,X5)
+      & dog_1(s0,X6)
+      & tossed_3(s0,E23,X8,X6)
+      & is_cow_with_2(s0,X8,X7)
+      & all_forlorn_1(s0,X9)
+      & milked_3(s0,E24,X9,X8)
+      & maiden_1(s0,X9)
+      & ? [X31] :
+          ( is_of_2(s0,X31,X10)
+          & tattered_3(s0,E16,unspecified,X31)
+          & torn_3(s0,E17,unspecified,X31) )
+      & kissed_3(s0,E25,X10,X9)
+      & man_1(s0,X10)
+      & ? [X30] :
+          ( is_of_2(s0,X30,X11)
+          & shaven_3(s0,E14,unspecified,X30)
+          & shorn_3(s0,E15,unspecified,X30) )
+      & married_3(s0,E26,X11,X10)
+      & priest_1(s0,X11)
+      & crowed_2(s0,E13,X12)
+      & in_2(s0,E13,X1)
+      & waked_3(s0,E27,X12,X11)
+      & cock_1(s0,X12)
+      & is_before_2(s0,E13,e0)
+      & is_before_2(s0,E18,e0)
+      & is_before_2(s0,E19,e0)
+      & is_before_2(s0,E20,e0)
+      & is_before_2(s0,E21,e0)
+      & is_before_2(s0,E22,e0)
+      & is_before_2(s0,E23,e0)
+      & is_before_2(s0,E24,e0)
+      & is_before_2(s0,E25,e0)
+      & is_before_2(s0,E26,e0)
+      & is_before_2(s0,E27,e0)
+      & is_3(s0,E28,X29,X12) ) )).
+
+% ::id 12_childrens_CALDECOTT-1878;NE
+% ::snt This is the Farmer who sowed the corn , That fed the Cock that crowed in the morn , That waked the Priest all shaven and shorn , That married the Man all tattered and torn , That kissed the Maiden all forlorn , That milked the Cow with the crumpled horn , That tossed the Dog , That worried the Cat , That killed the Rat , That ate the Malt , That lay in the House that Jack built .
+fof(ex1414050848600,axiom,(
+    ? [X1,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,E15,E16,E17,E18,E19,E20,E21,E22,E23,E24,E25,E26,E27,E28,E29,E30,E31,X33,E32] :
+      ( morn_1(s0,X1)
+      & crumpled_1(s0,X7)
+      & horn_1(s0,X7)
+      & built_3(s0,E20,jack,X2)
+      & house_1(s0,X2)
+      & lay_2(s0,E21,X3)
+      & in_2(s0,E21,X2)
+      & malt_1(s0,X3)
+      & ate_3(s0,E22,X4,X3)
+      & rat_1(s0,X4)
+      & killed_3(s0,E23,X5,X4)
+      & cat_1(s0,X5)
+      & worried_3(s0,E24,X6,X5)
+      & dog_1(s0,X6)
+      & tossed_3(s0,E25,X8,X6)
+      & is_cow_with_2(s0,X8,X7)
+      & all_forlorn_1(s0,X9)
+      & milked_3(s0,E26,X9,X8)
+      & maiden_1(s0,X9)
+      & ? [X35] :
+          ( is_of_2(s0,X35,X10)
+          & tattered_3(s0,E18,unspecified,X35)
+          & torn_3(s0,E19,unspecified,X35) )
+      & kissed_3(s0,E27,X10,X9)
+      & man_1(s0,X10)
+      & ? [X34] :
+          ( is_of_2(s0,X34,X11)
+          & shaven_3(s0,E16,unspecified,X34)
+          & shorn_3(s0,E17,unspecified,X34) )
+      & married_3(s0,E28,X11,X10)
+      & priest_1(s0,X11)
+      & crowed_2(s0,E15,X12)
+      & in_2(s0,E15,X1)
+      & waked_3(s0,E29,X12,X11)
+      & cock_1(s0,X12)
+      & fed_3(s0,E30,X13,X12)
+      & corn_1(s0,X13)
+      & sowed_3(s0,E31,X14,X13)
+      & farmer_1(s0,X14)
+      & is_before_2(s0,E15,e0)
+      & is_before_2(s0,E20,e0)
+      & is_before_2(s0,E21,e0)
+      & is_before_2(s0,E22,e0)
+      & is_before_2(s0,E23,e0)
+      & is_before_2(s0,E24,e0)
+      & is_before_2(s0,E25,e0)
+      & is_before_2(s0,E26,e0)
+      & is_before_2(s0,E27,e0)
+      & is_before_2(s0,E28,e0)
+      & is_before_2(s0,E29,e0)
+      & is_before_2(s0,E30,e0)
+      & is_before_2(s0,E31,e0)
+      & is_3(s0,E32,X33,X14) ) )).
+

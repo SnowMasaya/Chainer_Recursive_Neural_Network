@@ -1,0 +1,742 @@
+# ::id 1_wikipedia_KYOTO_HST_00009,1;NJ
+# ::snt 安土桃山 時代
+∃ EVENT[2] ENTITY[1] (安土桃山_時代(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_HST_00009,2;NJ
+# ::snt 安土桃山 時代 （ あづちももやまじだい 、 1568 年 - 1603 年 ） と は 、 織田 信長 と 豊臣 秀吉 が 天下人 として 日本 の 統治権 を 握っ て い た （ 織田 政権 ・ 豊臣 政権 ） 時代 を 指す 、 日本 の 歴史 の 時代 区分 の 一 つ 。
+∃ SITUATION[5] EVENT[9] EVENT[10] EVENT[12] ENTITY[8] ENTITY[7] GROUP[6] ENTITY[11] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 安土桃山_時代(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[あづちももやまじだい_1568_年_1603_年], ENTITY[1]) ∧
+   CONJ_と(is_element_of(ENTITY[織田_信長], GROUP[6]), is_element_of(ENTITY[豊臣_秀吉], GROUP[6])) ∧
+    天下人(ENTITY[7]) ∧
+     の_統治権(ENTITY[日本], ENTITY[8]) ∧
+      時代(SITUATION[5], 握っ_て_い_た(EVENT[9], GROUP[6], ENTITY[8]) ∧ として(EVENT[9]) = ENTITY[7]) ∧
+       の_歴史(ENTITY[日本], ENTITY[11]) ∧
+        指す(EVENT[10], ENTITY[3], SITUATION[5]) ∧ の_時代_区分(ENTITY[11], ENTITY[3]) ∧
+         (CD_一_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+          past(EVENT[9]) ∧ xxx(EVENT[12], ENTITY[1], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_HST_00009,3;NJ
+# ::snt 織豊 時代 （ しょくほうじだい ） や 安土大坂 時代 （ あづちおおさかじだい ） と も 言う 。
+∃ ENTITY[2] ENTITY[1] EVENT[6] GROUP[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   CONJ_や(∃ ENTITY[4] (織豊_時代(ENTITY[4]) ∧ namely_-ENTITY-(ENTITY[しょくほうじだい], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+    ∃ ENTITY[5] (安土大坂_時代(ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[あづちおおさかじだい], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+    言う(EVENT[6], ENTITY[1], ENTITY[2], GROUP[3]))
+
+# ::id 4_wikipedia_KYOTO_HST_00009,4;NJ
+# ::snt また 、 安土桃山 時代 の 元号 の 大 部分 が 天正 だっ た ので 、 天正 時代 （ てんしょうじだい ） と 呼ぶ こと も ある 。
+∃ ENTITY[8] ATTRIB[6] ENTITY[2] SITUATION[1] EVENT[7] EVENT[10] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[9] (
+ ENTITY[2] = *pro* ∧
+  安土桃山_時代(ENTITY[5]) ∧
+   の_元号(ENTITY[5], ENTITY[4]) ∧
+    大(ATTRIB[6]) ∧
+     ATTRIBUTE_部分(ATTRIB[6], ENTITY[3]) ∧ の_部分(ENTITY[4], ENTITY[3]) ∧
+      ENTITY[8] = *pro*{ENTITY[天正], ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+       天正_時代(ENTITY[9]) ∧
+        namely_-ENTITY-(ENTITY[てんしょうじだい], ENTITY[9]) ∧
+         こと(SITUATION[1],
+          CRD_ので(だっ_た(EVENT[7], ENTITY[3], ENTITY[天正]), 呼ぶ(EVENT[10], ENTITY[2], ENTITY[8], ENTITY[9]))) ∧
+          past(EVENT[7]) ∧ ある(EVENT[11], SITUATION[1]))
+
+# ::id 5_wikipedia_KYOTO_HST_00009,5;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 6_wikipedia_KYOTO_HST_00009,6;NJ
+# ::snt 織田 信長 の 居城 で あっ た 安土城 、 豊臣 秀吉 の 居城 で あっ た 伏見城 （ 桃山 ） から 、 この よう に 呼ば れる 。
+∃ ENTITY[1] EVENT[10] GROUP[2] ENTITY[9] (
+ よう(ENTITY[9]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ EVENT[5] ENTITY[4] (
+    の_居城(ENTITY[織田_信長], ENTITY[4]) ∧
+     で_あっ_た(EVENT[5], ENTITY[安土城], ENTITY[4]) ∧ past(EVENT[5]) ∧ is_element_of(ENTITY[安土城], GROUP[2])) ∧
+    ∃ EVENT[8] ENTITY[7] (
+     の_居城(ENTITY[豊臣_秀吉], ENTITY[7]) ∧
+      で_あっ_た(EVENT[8], ENTITY[伏見城], ENTITY[7]) ∧
+       namely_-ENTITY-(ENTITY[桃山], ENTITY[伏見城]) ∧ past(EVENT[8]) ∧ is_element_of(ENTITY[伏見城], GROUP[2])) ∧
+    呼ば(EVENT[10], _, ENTITY[1]) ∧ に(EVENT[10]) = ENTITY[9] ∧ から(EVENT[10]) = GROUP[2])
+
+# ::id 7_wikipedia_KYOTO_HST_00009,7;NJ
+# ::snt 特に 、 豊臣家 が 全国 支配 を 担っ た 後半 を 桃山 時代 と いい 、 この 時代 を 中心 に 栄え た 文化 を 桃山文化 と 呼ぶ 。
+∃ SITUATION[15] ENTITY[1] EVENT[7] EVENT[12] EVENT[13] EVENT[14] ENTITY[6] ENTITY[2] ENTITY[11] ENTITY[8] ENTITY[10] (
+ 時代(ENTITY[10]) ∧
+  ENTITY[1] = *pro* ∧
+   全 ENTITY[4] (国(ENTITY[4]) ∧ 支配(ENTITY[4]),
+    ∃ EVENT[5] (past(EVENT[5]) ∧ 担っ_た(EVENT[5], ENTITY[豊臣家], ENTITY[4]) ∧ 時間(EVENT[5]) = ENTITY[2])) ∧
+    後半(ENTITY[2]) ∧
+    桃山_時代(ENTITY[6]) ∧
+     中心(ENTITY[11]) ∧
+      xxx(EVENT[12], ENTITY[8], ENTITY[10], ENTITY[11]) ∧ 栄え_た(EVENT[13], ENTITY[8]) ∧ 文化(ENTITY[8]) ∧
+       ADV_特に(SITUATION[15]) ∧
+        past(EVENT[13]) ∧
+         FACT(SITUATION[15],
+          いい(EVENT[7], ENTITY[1], ENTITY[2], ENTITY[6]) ∧ 呼ぶ(EVENT[14], ENTITY[1], ENTITY[8], ENTITY[桃山文化])))
+
+# ::id 8_wikipedia_KYOTO_HST_00009,8;NJ
+# ::snt ただし 、 桃山 の 名称 は 江戸 時代 に なっ て 廃城 さ れ た 伏見城 の 跡地 に 桃 の 木 が 植え られ た こと から 名付け られ た もの で 、 桃山城 と 呼ば れる 城 が 存在 し た わけ で は ない 。
+∃ SITUATION[4] EVENT[8] EVENT[9] EVENT[12] EVENT[13] EVENT[14] EVENT[17] ENTITY[7] ENTITY[11] ENTITY[10] ENTITY[5] ENTITY[2] ENTITY[15] ENTITY[1] (
+ の_名称(ENTITY[桃山], ENTITY[1]) ∧
+  江戸_時代(ENTITY[7]) ∧
+   CONJ_te(なっ_て(EVENT[8], ENTITY[伏見城]) ∧ に(EVENT[8]) = ENTITY[7], 廃城する.0_た(EVENT[9], _, ENTITY[伏見城])) ∧
+    の_跡地(ENTITY[伏見城], ENTITY[5]) ∧
+     桃(ENTITY[11]) ∧
+      の_木(ENTITY[11], ENTITY[10]) ∧
+       こと(SITUATION[4], 植え_た(EVENT[12], _, ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[5]) ∧
+        名付け_た(EVENT[13], _, ENTITY[2]) ∧ から(EVENT[13]) = SITUATION[4] ∧ もの(ENTITY[2]) ∧
+         呼ば(EVENT[17], _, ENTITY[15], ENTITY[桃山城]) ∧ 城(ENTITY[15]) ∧
+          past(EVENT[9]) ∧
+           past(EVENT[12]) ∧
+            past(EVENT[13]) ∧
+             CONJ_te(で(EVENT[14], ENTITY[1], ENTITY[2]),
+              ¬ ∃ SITUATION[18] EVENT[19] EVENT[20] (
+                    わけ(SITUATION[18], 存在する.0_た(EVENT[19], ENTITY[15])) ∧
+                     past(EVENT[19]) ∧ で_は(EVENT[20], ENTITY[15], SITUATION[18]))))
+
+# ::id 9_wikipedia_KYOTO_HST_00009,9;NJ
+# ::snt その ため 、 歴史的 経緯 を 尊重 する なら “ 伏見 時代 ” の 方 が 適切 な 呼称 と なる が 、 そもそも 、 安土城 は 完成 から わずか 3 年 余り しか 存在 し て おら ず 、 伏見城 （ 木幡山 ） も 完成 から 2 年 後 に 秀吉 が 死去 する など 、 それぞれ 在城 は 短期間 で あり 、 これら を 時代 の 呼称 に 用いる こと 自体 が 適切 で は ない という 主張 も ある 。
+∃ SITUATION[25] ENTITY[29] ENTITY[28] ENTITY[27] EVENT[32] EVENT[34] ENTITY[31] ENTITY[30] ENTITY[26] ENTITY[11] ENTITY[1] ENTITY[22] (
+ ため(ENTITY[1]) ∧
+  在城(ENTITY[22]) ∧
+   ENTITY[27] = 自体{ENTITY[26]} ∧
+    ENTITY[28] = *pro*{ENTITY[27], ENTITY[22], ENTITY[伏見城], ENTITY[秀吉], ENTITY[木幡山], ENTITY[安土城], ENTITY[1]} ∧
+     ENTITY[29] = これら{ENTITY[27], ENTITY[22], ENTITY[伏見城], ENTITY[秀吉], ENTITY[木幡山], ENTITY[安土城], ENTITY[1]} ∧
+      時代(ENTITY[31]) ∧
+       の_呼称(ENTITY[31], ENTITY[30]) ∧
+        RFL_こと(ENTITY[27], ENTITY[26]) ∧ THAT_こと(用いる(EVENT[32], ENTITY[28], ENTITY[29], ENTITY[30]), ENTITY[26]) ∧
+         THAT_主張(FACT(SITUATION[25],
+               それぞれ SITUATION[13] EVENT[21] ENTITY[20] ENTITY[19] ENTITY[12] (
+                (namely_-ENTITY-(ENTITY[木幡山], ENTITY[伏見城]) ∧ 完成(ENTITY[20]) ∧
+                 (CD_2_年(ENTITY[19]), から_後(ENTITY[20], ENTITY[19])) ∧
+                 FACT(SITUATION[13],
+                  CONJ_te(¬ ∃ ATTRIB[17] ENTITY[16] ENTITY[15] (
+                             完成(ENTITY[16]) ∧
+                              わずか(ATTRIB[17]) ∧
+                               (CD_3_年_余り(ENTITY[15]),
+                                ATTRIBUTE(ATTRIB[17], ENTITY[15]) ∧ から(ENTITY[16], ENTITY[15])) ∧
+                                しか ENTITY[14] (ENTITY[14] = ENTITY[15],
+                                 ∃ EVENT[18] (
+                                  存在する.0_て_おら(EVENT[18], ENTITY[安土城]) ∧
+                                   MSR(EVENT[18]) = ENTITY[14]))),
+                   死去する.0(EVENT[21], ENTITY[秀吉]) ∧ に(EVENT[21]) = ENTITY[19] ∧
+                    TPC(EVENT[21]) = ENTITY[伏見城])) ∧ など(SITUATION[13], ENTITY[12])),
+                ∃ EVENT[24] ENTITY[23] (
+                 短期間(ENTITY[23]) ∧
+                  で_あり(EVENT[24], ENTITY[22], ENTITY[23]) ∧ ADV(EVENT[24]) = ENTITY[12]))) ∧
+               ¬ ∃ EVENT[33] 適切_で_は(EVENT[33], ENTITY[26]), ENTITY[11]) ∧
+          ADV_そもそも(SITUATION[25]) ∧
+           CONJ_が(∀ ATTRIB[4] ENTITY[2] EVENT[5] ENTITY[3] CND_なら(
+                    ENTITY[2] = *pro*{ENTITY[1]} ∧ 歴史的(ATTRIB[4]) ∧ ATTRIBUTE_経緯(ATTRIB[4], ENTITY[3]) ∧
+                     尊重する.0(EVENT[5], ENTITY[2], ENTITY[3]),
+                    ∃ ATTRIB[9] EVENT[10] ENTITY[7] ENTITY[8] ENTITY[6] (
+                     伏見_時代(ENTITY[7]) ∧
+                      の_方(ENTITY[7], ENTITY[6]) ∧
+                       適切_な(ATTRIB[9]) ∧
+                        ATTRIBUTE_呼称(ATTRIB[9], ENTITY[8]) ∧
+                         なる(EVENT[10], ENTITY[6]) ∧ と(EVENT[10]) = ENTITY[8] ∧
+                          ADV(EVENT[10]) = ENTITY[1])), ある(EVENT[34], ENTITY[11])))
+
+# ::id 10_wikipedia_KYOTO_HST_00009,10;NJ
+# ::snt その ため 、 近年 は 織豊 時代 という 呼び方 も 広まっ て おり 、 安土大坂 時代 、 または 天正 時代 の 呼称 を 提案 する ひと も いる 。
+∃ EVENT[5] EVENT[12] EVENT[13] ENTITY[4] ENTITY[3] GROUP[9] ENTITY[8] ENTITY[6] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  近年(ENTITY[2]) ∧
+   織豊_時代(ENTITY[4]) ∧
+    という_呼び方(ENTITY[4], ENTITY[3]) ∧
+     CONJ_または(∃ ENTITY[10] (安土大坂_時代(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+      ∃ ENTITY[11] (天正_時代(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[9]))) ∧
+      の_呼称(GROUP[9], ENTITY[8]) ∧
+       提案する.0(EVENT[12], ENTITY[6], ENTITY[8]) ∧ ひと(ENTITY[6]) ∧
+        広まっ_て_おり(EVENT[5], ENTITY[3]) ∧ 時間(EVENT[5]) = ENTITY[2] ∧ ADV(EVENT[5]) = ENTITY[1] ∧
+         いる(EVENT[13], ENTITY[6]))
+
+# ::id 11_wikipedia_KYOTO_HST_00009,11;NJ
+# ::snt 安土桃山 時代 の 始期 と 終期 に は 複数 の 見解 が 存在 する 。
+∃ EVENT[8] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ 安土桃山_時代(ENTITY[2]) ∧
+  始期(ENTITY[4]) ∧
+   終期(ENTITY[5]) ∧
+    CONJ_と(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+     の(ENTITY[2], ENTITY[1]) ∧ equals(GROUP[3], ENTITY[1]) ∧
+      複数(ENTITY[7]) ∧
+       の_見解(ENTITY[7], ENTITY[6]) ∧ 存在する.0(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[1])
+
+# ::id 12_wikipedia_KYOTO_HST_00009,12;NJ
+# ::snt 始期 は 織田 信長 が 足利 義昭 を 奉じ て 京都 に 上洛 し た 永禄 11 年 （ 1568 年 ） が 有力 で ある が 、 義昭 が 京都 から 放逐 さ れ た 元亀 4 年 （ 1573 年 ） 、 安土城 の 築城 が 始まっ た 天正 4 年 （ 1576 年 ） と する 考え も ある 。
+∃ ENTITY[9] ENTITY[2] GROUP[10] ENTITY[7] EVENT[4] EVENT[5] EVENT[6] EVENT[18] EVENT[19] ENTITY[1] (
+ 始期(ENTITY[1]) ∧
+  past(EVENT[5]) ∧
+   (CD_永禄_11_年_（_1568_年_）(ENTITY[2]),
+    CONJ_te(奉じ_て(EVENT[4], ENTITY[織田_信長], ENTITY[足利_義昭]) ∧ 時間(EVENT[4]) = ENTITY[2],
+     上洛する.0_た(EVENT[5], ENTITY[織田_信長]) ∧ に(EVENT[5]) = ENTITY[京都] ∧ 時間(EVENT[5]) = ENTITY[2])) ∧
+    ENTITY[9] = *pro*{ENTITY[2], ENTITY[1], ENTITY[織田_信長], ENTITY[京都], ENTITY[足利_義昭]} ∧
+     ∃ ENTITY[11] EVENT[13] (
+      past(EVENT[13]) ∧
+       (CD_元亀_4_年_（_1573_年_）(ENTITY[11]),
+        放逐する.0_た(EVENT[13], _, ENTITY[義昭]) ∧ から(EVENT[13]) = ENTITY[京都] ∧
+         時間(EVENT[13]) = ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])) ∧
+      ∃ ENTITY[16] ENTITY[14] EVENT[17] (
+       past(EVENT[17]) ∧
+        の_築城(ENTITY[安土城], ENTITY[16]) ∧
+         (CD_天正_4_年_（_1576_年_）(ENTITY[14]), 始まっ_た(EVENT[17], ENTITY[16]) ∧ 時間(EVENT[17]) = ENTITY[14]) ∧
+          is_element_of(ENTITY[14], GROUP[10])) ∧
+      する(EVENT[18], ENTITY[7], ENTITY[9], GROUP[10]) ∧ 考え(ENTITY[7]) ∧
+       CONJ_が(有力_で_ある(EVENT[6], ENTITY[2]) ∧ TPC(EVENT[6]) = ENTITY[1], ある(EVENT[19], ENTITY[7])))
+
+# ::id 13_wikipedia_KYOTO_HST_00009,13;NJ
+# ::snt 終期 は 、 豊臣 秀吉 が 死去 し た 慶長 3 年 （ 1598 年 ） 、 関ヶ原 の 戦い で 徳川 家康 が 勝利 し た 慶長 5 年 （ 1600 年 ） 、 家康 が 征夷大将軍 に 任じ られ 江戸 幕府 を 開い た 慶長 8 年 （ 1603 年 ） など が ある 。
+∃ GROUP[3] ENTITY[2] EVENT[17] ENTITY[1] (
+ 終期(ENTITY[1]) ∧
+  ∃ ENTITY[4] EVENT[6] (
+   past(EVENT[6]) ∧
+    (CD_慶長_3_年_（_1598_年_）(ENTITY[4]), 死去する.0_た(EVENT[6], ENTITY[豊臣_秀吉]) ∧ 時間(EVENT[6]) = ENTITY[4]) ∧
+     is_element_of(ENTITY[4], GROUP[3])) ∧
+   ∃ ENTITY[9] ENTITY[7] EVENT[10] (
+    past(EVENT[10]) ∧
+     の_戦い(ENTITY[関ヶ原], ENTITY[9]) ∧
+      (CD_慶長_5_年_（_1600_年_）(ENTITY[7]),
+       勝利する.0_た(EVENT[10], ENTITY[徳川_家康]) ∧ で(EVENT[10]) = ENTITY[9] ∧ 時間(EVENT[10]) = ENTITY[7]) ∧
+       is_element_of(ENTITY[7], GROUP[3])) ∧
+   ∃ ENTITY[13] ENTITY[15] ENTITY[11] EVENT[14] EVENT[16] (
+    past(EVENT[16]) ∧
+     征夷大将軍(ENTITY[13]) ∧
+      江戸_幕府(ENTITY[15]) ∧
+       (CD_慶長_8_年_（_1603_年_）(ENTITY[11]),
+        任じ(EVENT[14], _, ENTITY[家康], ENTITY[13]) ∧
+         開い_た(EVENT[16], ENTITY[家康], ENTITY[15]) ∧ 時間(EVENT[16]) = ENTITY[11]) ∧
+        is_element_of(ENTITY[11], GROUP[3])) ∧
+   など(GROUP[3], ENTITY[2]) ∧ ある(EVENT[17], ENTITY[2]) ∧ TPC(EVENT[17]) = ENTITY[1])
+
+# ::id 14_wikipedia_KYOTO_HST_00009,14;NJ
+# ::snt 何れ に し て も 、 「 織田 ・ 豊臣 の 時代 」 という 概念 を どこ で 区分 する か の 違い で は ある が 、 室町 時代 、 戦国 時代 （ 日本 ） と 重複 し て しまう こと が 、 その 定義付け を 複雑化 さ せ て いる 。
+∃ ENTITY[12] SITUATION[11] SITUATION[2] EVENT[16] EVENT[19] EVENT[18] ENTITY[1] GROUP[13] ENTITY[17] (
+ 定義付け(ENTITY[17]) ∧
+  か(SITUATION[2],
+   QUEST(∃ EVENT[7] GROUP[5] ENTITY[4] ENTITY[3] ? ENTITY[6] (
+         is_element_of(ENTITY[織田], GROUP[5]) ∧ is_element_of(ENTITY[豊臣], GROUP[5]) ∧
+          の_時代(GROUP[5], ENTITY[4]) ∧
+           という_概念(ENTITY[4], ENTITY[3]) ∧
+            区分する.0(EVENT[7], _, ENTITY[3]) ∧ で(EVENT[7]) = ENTITY[6]))) ∧
+   の_違い(SITUATION[2], ENTITY[1]) ∧
+    ENTITY[12] = *pro*{ENTITY[1], ENTITY[豊臣], ENTITY[織田]} ∧
+     ∃ ENTITY[14] (室町_時代(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])) ∧
+      ∃ ENTITY[15] (戦国_時代(ENTITY[15]) ∧ namely_-ENTITY-(ENTITY[日本], ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[13])) ∧
+      こと(SITUATION[11], 重複する.0_て_しまう(EVENT[16], ENTITY[12]) ∧ と(EVENT[16]) = GROUP[13]) ∧
+       CONJ_が(∀ ENTITY[8] EVENT[9] CND_も(し_て(EVENT[9], ENTITY[1]) ∧ に(EVENT[9]) = ENTITY[8],
+                ∃ EVENT[10] で_は_ある(EVENT[10], _, ENTITY[1])),
+        せ_て_いる(EVENT[18], SITUATION[11], ENTITY[17], 複雑化する.0(EVENT[19], ENTITY[17]))))
+
+# ::id 15_wikipedia_KYOTO_HST_00009,15;NJ
+# ::snt 織田 信長 による 政権 の 確立
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 政権(ENTITY[2]) ∧
+  の_確立(ENTITY[2], ENTITY[1]) ∧ による_確立(ENTITY[織田_信長], ENTITY[1]) ∧
+   xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 16_wikipedia_KYOTO_HST_00009,16;NJ
+# ::snt 戦国大名 の 中 で 織田 信長 の 勢力 が 次第 に 強大 に なり 、 足利 義昭 を 奉じ て 京都 に 上洛 し た こと で 、 信長 による 政権 の 運営 が 始まる こと に なっ た 。
+∃ SITUATION[11] ENTITY[6] SITUATION[1] EVENT[5] EVENT[7] EVENT[8] EVENT[12] EVENT[13] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[10] ENTITY[9] (
+ の_中(ENTITY[戦国大名], ENTITY[2]) ∧
+  の_勢力(ENTITY[織田_信長], ENTITY[3]) ∧
+   次第(ENTITY[4]) ∧
+    ENTITY[6] = *pro*{ENTITY[2], ENTITY[3], ENTITY[4], ENTITY[織田_信長], ENTITY[戦国大名]} ∧
+     こと(SITUATION[1],
+      強大_に_なり(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[4] ∧ で(EVENT[5]) = ENTITY[2] ∧
+       CONJ_te(奉じ_て(EVENT[7], ENTITY[6], ENTITY[足利_義昭]),
+        上洛する.0_た(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[京都])) ∧
+      政権(ENTITY[10]) ∧
+       の_運営(ENTITY[10], ENTITY[9]) ∧ による_運営(ENTITY[信長], ENTITY[9]) ∧
+        こと(SITUATION[11], 始まる(EVENT[12], ENTITY[9])) ∧
+         past(EVENT[8]) ∧
+          past(EVENT[13]) ∧ なっ_た(EVENT[13], ENTITY[9], SITUATION[11]) ∧ で(EVENT[13]) = SITUATION[1])
+
+# ::id 17_wikipedia_KYOTO_HST_00009,17;NJ
+# ::snt 元亀 4 年 （ 1573 年 ） に 足利 義昭 を 京 から 放逐 する と 、 室町幕府 は 事実上 崩壊 し 、 名実 共に 織田政権 が 確立 する 。
+∀ ENTITY[1] EVENT[3] ENTITY[2] CND_と(
+    ENTITY[1] = *pro* ∧ CD_元亀_4_年_（_1573_年_）(ENTITY[2]) ∧
+     放逐する.0(EVENT[3], ENTITY[1], ENTITY[足利_義昭]) ∧ から(EVENT[3]) = ENTITY[京] ∧ に(EVENT[3]) = ENTITY[2],
+    ∃ EVENT[5] ENTITY[4] (
+     事実上(ENTITY[4]) ∧
+      崩壊する.0(EVENT[5], ENTITY[室町幕府]) ∧ ADV(EVENT[5]) = ENTITY[4] ∧
+       共に ENTITY[6] (名実(ENTITY[6]), ∃ EVENT[7] (確立する.0(EVENT[7], ENTITY[織田政権]) ∧ ADV(EVENT[7]) = ENTITY[6]))))
+
+# ::id 18_wikipedia_KYOTO_HST_00009,18;NJ
+# ::snt さらに 、 天正 4 年 （ 1576 年 ） に 安土城 の 築城 が 始まり 天下 布武 へ の 流れ が 現実 の もの に なり つつある こと を 世 に 知ら しめる 。
+∃ SITUATION[13] SITUATION[5] ENTITY[1] EVENT[4] EVENT[10] EVENT[12] ENTITY[3] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[11] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  CD_天正_4_年_（_1576_年_）(ENTITY[2]) ∧
+   の_築城(ENTITY[安土城], ENTITY[3]) ∧
+    天下_布武(ENTITY[7]) ∧
+     へ_の_流れ(ENTITY[7], ENTITY[6]) ∧
+      現実(ENTITY[9]) ∧
+       の_もの(ENTITY[9], ENTITY[8]) ∧
+        こと(SITUATION[5], なり_つつある(EVENT[10], ENTITY[6]) ∧ に(EVENT[10]) = ENTITY[8]) ∧
+         世(ENTITY[11]) ∧
+          ADV_さらに(SITUATION[13]) ∧
+           FACT(SITUATION[13],
+            始まり(EVENT[4], ENTITY[3]) ∧
+             知ら_しめる(EVENT[12], ENTITY[1], SITUATION[5]) ∧ に(EVENT[12]) = ENTITY[11] ∧
+              に(EVENT[12]) = ENTITY[2]))
+
+# ::id 19_wikipedia_KYOTO_HST_00009,19;NJ
+# ::snt こうした 中 、 信長 の 支配 により 平和 を 取り戻し た 京 を 中心 に 新た な 文化 が 花開い て いっ た 。
+∃ ATTRIB[3] EVENT[7] EVENT[9] EVENT[10] ENTITY[6] ENTITY[5] ENTITY[8] ENTITY[2] ENTITY[1] (
+ 中(ENTITY[1]) ∧
+  新た_な(ATTRIB[3]) ∧
+   ATTRIBUTE_文化(ATTRIB[3], ENTITY[2]) ∧
+    の_支配(ENTITY[信長], ENTITY[5]) ∧
+     平和(ENTITY[6]) ∧
+      取り戻し_た(EVENT[7], ENTITY[京], ENTITY[6]) ∧ により(EVENT[7]) = ENTITY[5] ∧
+       中心(ENTITY[8]) ∧
+        past(EVENT[7]) ∧
+         past(EVENT[10]) ∧
+          xxx(EVENT[9], ENTITY[2], ENTITY[京]) ∧ に(EVENT[9]) = ENTITY[8] ∧
+           花開い_て_いっ_た(EVENT[10], ENTITY[2]) ∧ ADV(EVENT[10]) = ENTITY[1])
+
+# ::id 20_wikipedia_KYOTO_HST_00009,20;NJ
+# ::snt 信長 は その 後 も 勢力 を 拡大 し 日本 中央 部 を 制圧 する に 至る が 、 天下 統一 の 目前 と 思わ れ た 天正 10 年 （ 1582 年 ） に 本能寺の変 で 倒れ た 。
+∃ ENTITY[10] SITUATION[4] EVENT[3] EVENT[6] EVENT[7] EVENT[13] EVENT[14] ENTITY[2] ENTITY[5] ENTITY[12] ENTITY[11] ENTITY[8] ENTITY[1] (
+ 後(ENTITY[1]) ∧
+  勢力(ENTITY[2]) ∧
+   日本_中央_部(ENTITY[5]) ∧
+    FACT(SITUATION[4], 制圧する.0(EVENT[6], ENTITY[信長], ENTITY[5])) ∧
+     ENTITY[10] = *pro*{ENTITY[信長], ENTITY[5], ENTITY[2], ENTITY[1]} ∧
+      天下_統一(ENTITY[12]) ∧
+       の_目前(ENTITY[12], ENTITY[11]) ∧
+        (CD_天正_10_年_（_1582_年_）(ENTITY[8]),
+         思わ_た(EVENT[13], _, ENTITY[10], ENTITY[11]) ∧ 時間(EVENT[13]) = ENTITY[8]) ∧
+         past(EVENT[7]) ∧
+          past(EVENT[13]) ∧
+           past(EVENT[14]) ∧
+            CONJ_が(拡大する.0(EVENT[3], ENTITY[信長], ENTITY[2]) ∧ 時間(EVENT[3]) = ENTITY[1] ∧
+                  至る(EVENT[7], ENTITY[信長]) ∧ に(EVENT[7]) = SITUATION[4],
+             倒れ_た(EVENT[14], ENTITY[信長]) ∧ に(EVENT[14]) = ENTITY[8] ∧
+              で(EVENT[14]) = ENTITY[本能寺の変]))
+
+# ::id 21_wikipedia_KYOTO_HST_00009,21;NJ
+# ::snt 豊臣 秀吉 による 天下 統一
+∃ EVENT[2] ENTITY[1] (による_天下_統一(ENTITY[豊臣_秀吉], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 22_wikipedia_KYOTO_HST_00009,22;NJ
+# ::snt 本能寺の変 に対し 羽柴 秀吉 は 逸早く 京 に 駆け付け 首謀者 で ある 明智 光秀 を 破っ た （ 山崎の戦い ） 。
+∃ ENTITY[4] EVENT[1] EVENT[5] EVENT[6] (
+ ADV_逸早く(EVENT[1]) ∧
+  past(EVENT[6]) ∧
+   首謀者(ENTITY[4]) ∧
+    で_ある(EVENT[5], ENTITY[明智_光秀], ENTITY[4]) ∧
+     駆け付け(EVENT[1], ENTITY[羽柴_秀吉]) ∧ に(EVENT[1]) = ENTITY[京] ∧
+      破っ_た(EVENT[6], ENTITY[羽柴_秀吉], ENTITY[明智_光秀]) ∧ に対し(EVENT[6]) = ENTITY[本能寺の変])
+
+# ::id 23_wikipedia_KYOTO_HST_00009,23;NJ
+# ::snt これ により 織田 政権 内 で の 主導権 を 掌握 し た 秀吉 は 清洲会議 や 賤ヶ岳の戦い を 経 て 信長 の 後継者 として 地位 を 固め 、 天正 11 年 1583 年 に は 大坂城 の 築城 を 開始 する 。
+∃ ENTITY[2] EVENT[7] EVENT[10] EVENT[13] GROUP[6] ENTITY[9] ENTITY[8] ENTITY[12] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[11] (
+ ENTITY[2] = これ ∧
+  織田_政権_内(ENTITY[4]) ∧
+   で_の_主導権(ENTITY[4], ENTITY[3]) ∧
+    掌握する.0_た(EVENT[5], ENTITY[秀吉], ENTITY[3]) ∧ により(EVENT[5]) = ENTITY[2] ∧
+     CD_天正_11_年_1583_年(ENTITY[11]) ∧
+      past(EVENT[5]) ∧
+       CONJ_や(is_element_of(ENTITY[清洲会議], GROUP[6]), is_element_of(ENTITY[賤ヶ岳の戦い], GROUP[6])) ∧
+        の_後継者(ENTITY[信長], ENTITY[8]) ∧
+         地位(ENTITY[9]) ∧
+          の_築城(ENTITY[大坂城], ENTITY[12]) ∧
+           CONJ_te(経_て(EVENT[7], ENTITY[秀吉], GROUP[6]),
+            固め(EVENT[10], ENTITY[秀吉], ENTITY[9]) ∧ として(EVENT[10]) = ENTITY[8]) ∧
+            開始する.0(EVENT[13], ENTITY[秀吉], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[11])
+
+# ::id 24_wikipedia_KYOTO_HST_00009,24;NJ
+# ::snt 天正 14 年 （ 1586 年 ） に は 関白 ・ 太政大臣 に 任 ぜ られ 豊臣姓 を 賜り 、 天正 18 年 （ 1590 年 ） に 日本 を 統一 し 全国 で 検地 と 刀狩り を 実施 さ せ 政権 の 安定 に 力 を 注い だ 。
+∃ ENTITY[1] EVENT[6] EVENT[7] EVENT[18] GROUP[3] ENTITY[8] ENTITY[16] ENTITY[17] ENTITY[15] ENTITY[2] (
+ CD_天正_14_年_（_1586_年_）(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ ENTITY[4] (関白(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+    ∃ ENTITY[5] (太政大臣(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+    CD_天正_18_年_（_1590_年_）(ENTITY[8]) ∧
+     政権(ENTITY[16]) ∧
+      の_安定(ENTITY[16], ENTITY[15]) ∧
+       力(ENTITY[17]) ∧
+        past(EVENT[18]) ∧
+         任する.0(EVENT[6], _, ENTITY[豊臣姓], GROUP[3]) ∧
+          賜り(EVENT[7], ENTITY[1], ENTITY[豊臣姓]) ∧ に(EVENT[7]) = ENTITY[2] ∧
+          全 ENTITY[9] (国(ENTITY[9]),
+           ∃ ENTITY[10] EVENT[11] EVENT[14] EVENT[12] GROUP[13] (
+            ENTITY[10] = *pro*{ENTITY[2], ENTITY[豊臣姓]} ∧
+             CONJ_と(is_element_of(ENTITY[検地], GROUP[13]), is_element_of(ENTITY[刀狩り], GROUP[13])) ∧
+              統一する.0(EVENT[11], ENTITY[10], ENTITY[日本]) ∧
+               せ(EVENT[12], ENTITY[1], ENTITY[10], 実施する.0(EVENT[14], ENTITY[10], GROUP[13])) ∧
+                で(EVENT[12]) = ENTITY[9] ∧ に(EVENT[12]) = ENTITY[8])) ∧
+           注い_だ(EVENT[18], ENTITY[1], ENTITY[17]) ∧ に(EVENT[18]) = ENTITY[15])
+
+# ::id 25_wikipedia_KYOTO_HST_00009,25;NJ
+# ::snt また 、 文禄 1 年 （ 1592 年 ） 秀吉 は 明 の 征服 を 目論ん で 文禄・慶長の役 を 起こし た が 、 経由地 で ある はず の 朝鮮 で 戦況 が 膠着化 し て しまう 。
+∃ SITUATION[6] EVENT[3] EVENT[4] EVENT[8] EVENT[9] EVENT[11] ENTITY[2] TIME[1] ENTITY[7] ENTITY[10] (
+ CD_文禄_1_年_（_1592_年_）(TIME[1]) ∧
+  の_征服(ENTITY[明], ENTITY[2]) ∧
+   経由地(ENTITY[7]) ∧
+    はず(SITUATION[6], で_ある(EVENT[8], ENTITY[朝鮮], ENTITY[7])) ∧
+     の(EVENT[9], ENTITY[朝鮮], SITUATION[6]) ∧
+      戦況(ENTITY[10]) ∧
+       past(EVENT[4]) ∧
+        CONJ_が(CONJ_te(目論ん_で(EVENT[3], ENTITY[秀吉], ENTITY[2]) ∧ is_contained_in(時間(EVENT[3]), TIME[1]),
+              起こし_た(EVENT[4], ENTITY[秀吉], ENTITY[文禄.慶長の役]) ∧ is_contained_in(時間(EVENT[4]), TIME[1])),
+         膠着化する.0_て_しまう(EVENT[11], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[朝鮮]))
+
+# ::id 26_wikipedia_KYOTO_HST_00009,26;NJ
+# ::snt 一方 、 国内 は 天下 統一 による 平和 が もたらさ れ た こと など から 、 諸大名 は 領国 の 経営 に 力 を 注ぎ 、 各地 で 都市 が 興隆 し て いっ た 。
+∃ SITUATION[3] ENTITY[2] EVENT[6] EVENT[11] ENTITY[5] ENTITY[4] ENTITY[9] ENTITY[10] ENTITY[8] ENTITY[7] ENTITY[1] (
+ 国内(ENTITY[1]) ∧
+  諸大名(ENTITY[7]) ∧
+   天下_統一(ENTITY[5]) ∧
+    による_平和(ENTITY[5], ENTITY[4]) ∧
+     こと(SITUATION[3], もたらさ_た(EVENT[6], _, ENTITY[4])) ∧
+      など(SITUATION[3], ENTITY[2]) ∧
+       領国(ENTITY[9]) ∧
+        の_経営(ENTITY[9], ENTITY[8]) ∧
+         力(ENTITY[10]) ∧
+          past(EVENT[6]) ∧
+           注ぎ(EVENT[11], ENTITY[7], ENTITY[10]) ∧ に(EVENT[11]) = ENTITY[8] ∧
+            各 ENTITY[12] (地(ENTITY[12]),
+             ∃ EVENT[14] ENTITY[13] (
+              都市(ENTITY[13]) ∧
+               past(EVENT[14]) ∧
+                興隆する.0_て_いっ_た(EVENT[14], ENTITY[13]) ∧ で(EVENT[14]) = ENTITY[12] ∧
+                 から(EVENT[14]) = ENTITY[2] ∧ LOC(EVENT[14]) = ENTITY[1])))
+
+# ::id 27_wikipedia_KYOTO_HST_00009,27;NJ
+# ::snt また 、 秀吉 自身 は 京 を 活動 の 拠点 と し 茶の湯 を 始め と する 文化 活動 を 自ら も 積極的 に 行っ た 。
+∃ ENTITY[10] ENTITY[1] EVENT[4] EVENT[9] EVENT[11] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[5] (
+ ENTITY[1] = 自身 ∧
+  RFL_xxx(ENTITY[1], ENTITY[秀吉]) ∧
+   活動(ENTITY[3]) ∧
+    の_拠点(ENTITY[3], ENTITY[2]) ∧
+     茶の湯(ENTITY[7]) ∧
+      始め(ENTITY[8]) ∧
+       する(EVENT[9], ENTITY[5], ENTITY[7], ENTITY[8]) ∧ 文化_活動(ENTITY[5]) ∧
+        ENTITY[10] = 自ら{ENTITY[7], ENTITY[8], ENTITY[2], ENTITY[3], ENTITY[秀吉], ENTITY[京]} ∧
+         ADV_積極的_に(EVENT[11]) ∧
+          past(EVENT[11]) ∧
+           し(EVENT[4], ENTITY[秀吉], ENTITY[京], ENTITY[2]) ∧ 行っ_た(EVENT[11], ENTITY[10], ENTITY[5]))
+
+# ::id 28_wikipedia_KYOTO_HST_00009,28;NJ
+# ::snt こうした こと に 加え 、 南蛮 貿易 による 異文化 と の 接触 や 朝鮮 陶法 の 伝播 など により 、 文化 は 新た な 時代 を 向かえ “ 桃山文化 ” と 呼ば れる こと に なっ た 。
+∃ SITUATION[14] ATTRIB[12] EVENT[10] EVENT[13] EVENT[15] EVENT[16] GROUP[2] ENTITY[11] ENTITY[1] ENTITY[9] ENTITY[8] (
+ 文化(ENTITY[8]) ∧
+  こと(ENTITY[9]) ∧
+   CONJ_や(∃ ENTITY[5] ENTITY[4] ENTITY[3] (
+         南蛮_貿易(ENTITY[4]) ∧
+          異文化(ENTITY[5]) ∧
+           と_の_接触(ENTITY[5], ENTITY[3]) ∧ による_接触(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+    ∃ ENTITY[7] ENTITY[6] (朝鮮_陶法(ENTITY[7]) ∧ の_伝播(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[2]))) ∧
+    など(GROUP[2], ENTITY[1]) ∧
+     新た_な(ATTRIB[12]) ∧
+      ATTRIBUTE_時代(ATTRIB[12], ENTITY[11]) ∧
+       こと(SITUATION[14], 呼ば(EVENT[15], _, ENTITY[8], ENTITY[“_桃山文化_”])) ∧
+        past(EVENT[16]) ∧
+         加え(EVENT[10], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+          向かえ(EVENT[13], ENTITY[8], ENTITY[11]) ∧
+           なっ_た(EVENT[16], ENTITY[8], SITUATION[14]) ∧ により(EVENT[16]) = ENTITY[1])
+
+# ::id 29_wikipedia_KYOTO_HST_00009,29;NJ
+# ::snt 豊臣 時代 の 終焉
+∃ EVENT[3] ENTITY[2] ENTITY[1] (豊臣_時代(ENTITY[2]) ∧ の_終焉(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 30_wikipedia_KYOTO_HST_00009,30;NJ
+# ::snt 慶長 3 年 （ 1598 年 ） 秀吉 が 死去 する と 、 五大老 の 筆頭 で ある 徳川 家康 が 頭角 を 現し 朝鮮 遠征軍 撤退 の 和平 交渉 で も 主導権 を 握り 実質的 な 政権運営者 へ と のし上がっ て いっ た 。
+∀ EVENT[2] TIME[1] CND_と(CD_慶長_3_年_（_1598_年_）(TIME[1]) ∧ 死去する.0(EVENT[2], ENTITY[秀吉]) ∧ is_contained_in(時間(EVENT[2]), TIME[1]),
+    ∃ ATTRIB[13] EVENT[5] EVENT[7] EVENT[11] EVENT[14] ENTITY[4] ENTITY[6] ENTITY[9] ENTITY[10] ENTITY[8] ENTITY[12] (
+     の_筆頭(ENTITY[五大老], ENTITY[4]) ∧
+      で_ある(EVENT[5], ENTITY[徳川_家康], ENTITY[4]) ∧
+       頭角(ENTITY[6]) ∧
+        朝鮮_遠征軍_撤退(ENTITY[9]) ∧
+         の_和平_交渉(ENTITY[9], ENTITY[8]) ∧
+          主導権(ENTITY[10]) ∧
+           実質的_な(ATTRIB[13]) ∧
+            ATTRIBUTE_政権運営者(ATTRIB[13], ENTITY[12]) ∧
+             past(EVENT[14]) ∧
+              現し(EVENT[7], ENTITY[徳川_家康], ENTITY[6]) ∧
+               握り(EVENT[11], ENTITY[徳川_家康], ENTITY[10]) ∧ で(EVENT[11]) = ENTITY[8] ∧
+                のし上がっ_て_いっ_た(EVENT[14], ENTITY[徳川_家康]) ∧ へ_と(EVENT[14]) = ENTITY[12]))
+
+# ::id 31_wikipedia_KYOTO_HST_00009,31;NJ
+# ::snt これ に対し 石田 三成 を 中心 と し た 反家康勢力 が 反発 し 慶長 5 年 （ 1600 年 ） に 全国 を 二分 する 関ヶ原の戦い が 勃発 し た 。
+∃ ENTITY[1] EVENT[4] EVENT[5] EVENT[10] ENTITY[3] ENTITY[6] (
+ ENTITY[1] = これ ∧
+  中心(ENTITY[3]) ∧
+   し_た(EVENT[4], ENTITY[反家康勢力], ENTITY[石田_三成], ENTITY[3]) ∧
+    CD_慶長_5_年_（_1600_年_）(ENTITY[6]) ∧
+     全 ENTITY[8] (国(ENTITY[8]), ∃ EVENT[9] 二分する.0(EVENT[9], ENTITY[関ヶ原の戦い], ENTITY[8])) ∧
+      past(EVENT[4]) ∧
+       past(EVENT[10]) ∧
+        反発する.0(EVENT[5], ENTITY[反家康勢力]) ∧ に対し(EVENT[5]) = ENTITY[1] ∧
+         勃発する.0_た(EVENT[10], ENTITY[関ヶ原の戦い]) ∧ に(EVENT[10]) = ENTITY[6])
+
+# ::id 32_wikipedia_KYOTO_HST_00009,32;NJ
+# ::snt これ に 勝利 し た 徳川 家康 は 政権 の 基盤 を 固め 慶長 8 年 （ 1603 年 ） 征夷大将軍 に 任じ られる 。
+∃ ENTITY[2] EVENT[6] EVENT[9] ENTITY[5] ENTITY[4] ENTITY[8] TIME[7] EVENT[3] (
+ ENTITY[2] = これ ∧
+  勝利する.0_た(EVENT[3], ENTITY[徳川_家康]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+   past(EVENT[3]) ∧
+    政権(ENTITY[5]) ∧
+     の_基盤(ENTITY[5], ENTITY[4]) ∧
+      CD_慶長_8_年_（_1603_年_）(TIME[7]) ∧
+       征夷大将軍(ENTITY[8]) ∧
+        固め(EVENT[6], ENTITY[徳川_家康], ENTITY[4]) ∧
+         任じ(EVENT[9], _, ENTITY[徳川_家康], ENTITY[8]) ∧ is_contained_in(時間(EVENT[9]), TIME[7]))
+
+# ::id 33_wikipedia_KYOTO_HST_00009,33;NJ
+# ::snt これ により 安土桃山 時代 は 完全 に 終わり を 告げ 未曾有 の 太平 、 江戸 時代 が 始まっ た 。
+∃ ENTITY[1] EVENT[4] EVENT[9] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[8] ENTITY[2] (
+ 安土桃山_時代(ENTITY[2]) ∧
+  ENTITY[1] = これ ∧
+   終わり(ENTITY[3]) ∧
+    江戸_時代(ENTITY[8]) ∧
+     未曾有(ENTITY[7]) ∧
+      の_太平(ENTITY[7], ENTITY[6]) ∧
+       namely_-ENTITY-(ENTITY[6], ENTITY[8]) ∧
+        ADV_完全_に(EVENT[4]) ∧
+         past(EVENT[9]) ∧
+          告げ(EVENT[4], ENTITY[2], ENTITY[3]) ∧ により(EVENT[4]) = ENTITY[1] ∧ 始まっ_た(EVENT[9], ENTITY[8]))
+
+# ::id 34_wikipedia_KYOTO_HST_00009,34;NJ
+# ::snt 年表
+∃ EVENT[2] ENTITY[1] (年表(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 35_wikipedia_KYOTO_HST_00009,35;NJ
+# ::snt 織田 信長 、 足利 義昭 を 奉じ 、 上洛 （ 永禄 11 年 ・ 1568 ）
+∃ EVENT[1] EVENT[2] (奉じ(EVENT[1], ENTITY[織田_信長], ENTITY[足利_義昭]) ∧ 上洛(EVENT[2], ENTITY[織田_信長]))
+
+# ::id 36_wikipedia_KYOTO_HST_00009,36;NJ
+# ::snt 室町幕府滅亡 （ 元亀 4 年 ・ 1573 ）
+∃ EVENT[2] ENTITY[1] (CD_元亀_4_年.1573(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[室町幕府滅亡]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[室町幕府滅亡])
+
+# ::id 37_wikipedia_KYOTO_HST_00009,37;NJ
+# ::snt 長篠の戦い （ 天正 3 年 ・ 1575 ）
+∃ EVENT[2] ENTITY[1] (CD_天正_3_年.1575(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[長篠の戦い]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[長篠の戦い])
+
+# ::id 38_wikipedia_KYOTO_HST_00009,38;NJ
+# ::snt 織田 信長 、 安土城 を 築く （ 天正 4 年 ・ 1576 ）
+∃ EVENT[1] 築く(EVENT[1], ENTITY[織田_信長], ENTITY[安土城])
+
+# ::id 39_wikipedia_KYOTO_HST_00009,39;NJ
+# ::snt 織田 信長 、 顕如 を 降伏 さ せ 、 石山本願寺 と の 対決 を 終わら せる （ 石山合戦 （ 1570 ～ 1580 ） ）
+∃ ENTITY[3] EVENT[2] EVENT[1] EVENT[5] EVENT[4] (
+ と_の_対決(ENTITY[石山本願寺], ENTITY[3]) ∧
+  せ(EVENT[1], ENTITY[織田_信長], ENTITY[顕如], 降伏する.0(EVENT[2], ENTITY[顕如])) ∧
+   せる(EVENT[4], ENTITY[織田_信長], ENTITY[3], 終わら(EVENT[5], ENTITY[3])))
+
+# ::id 40_wikipedia_KYOTO_HST_00009,40;NJ
+# ::snt 明智 光秀 の 謀反 も 俗 に 言う 三日天下 で 終わる 。
+∃ ENTITY[5] ENTITY[4] EVENT[6] EVENT[8] ENTITY[2] ENTITY[1] (
+ の_謀反(ENTITY[明智_光秀], ENTITY[1]) ∧
+  ENTITY[4] = *pro*{ENTITY[1], ENTITY[明智_光秀]} ∧
+   ENTITY[5] = *pro*{ENTITY[1], ENTITY[明智_光秀]} ∧
+    言う(EVENT[6], ENTITY[4], ENTITY[5], ENTITY[2]) ∧ 三日天下(ENTITY[2]) ∧
+     ADV_俗_に(EVENT[6]) ∧ 終わる(EVENT[8], ENTITY[1]) ∧ で(EVENT[8]) = ENTITY[2])
+
+# ::id 41_wikipedia_KYOTO_HST_00009,42;NJ
+# ::snt 羽柴 秀吉 が 勝ち 、 敗れ た 柴田 勝家 が 自害 。
+∃ EVENT[1] EVENT[3] EVENT[4] (past(EVENT[3]) ∧ 敗れ_た(EVENT[3], ENTITY[柴田_勝家]) ∧ 勝ち(EVENT[1], ENTITY[羽柴_秀吉]) ∧ 自害(EVENT[4], ENTITY[柴田_勝家]))
+
+# ::id 42_wikipedia_KYOTO_HST_00009,43;NJ
+# ::snt 羽柴 秀吉 、 石山本願寺 跡地 に 大坂城 築城 （ 天正 10 年 ・ 1583 ）
+∃ EVENT[2] ENTITY[1] (石山本願寺_跡地(ENTITY[1]) ∧ 築城(EVENT[2], ENTITY[羽柴_秀吉], ENTITY[大坂城]) ∧ に(EVENT[2]) = ENTITY[1])
+
+# ::id 43_wikipedia_KYOTO_HST_00009,45;NJ
+# ::snt 羽柴 秀吉 、 藤原氏 を 称し 関白 に 就任 。
+∃ ENTITY[2] EVENT[1] EVENT[3] (
+ 関白(ENTITY[2]) ∧
+  称し(EVENT[1], ENTITY[羽柴_秀吉], ENTITY[藤原氏]) ∧ 就任(EVENT[3], ENTITY[羽柴_秀吉]) ∧ に(EVENT[3]) = ENTITY[2])
+
+# ::id 44_wikipedia_KYOTO_HST_00009,46;NJ
+# ::snt （ 天正 13 年 ・ 1585 ） 、 同年 四国 征伐
+∃ ENTITY[1] EVENT[4] ENTITY[2] TIME[3] (
+ ENTITY[1] = *pro* ∧
+  同年(TIME[3]) ∧
+   CD_天正_13_年.1585(ENTITY[2]) ∧
+    namely_-TIME-(ENTITY[2], TIME[3]) ∧ 征伐(EVENT[4], ENTITY[1], ENTITY[四国]) ∧ is_contained_in(時間(EVENT[4]), TIME[3]))
+
+# ::id 45_wikipedia_KYOTO_HST_00009,47;NJ
+# ::snt 羽柴 秀吉 、 太政大臣 と なり 、 豊臣姓 を 賜る （ 天正 14 年 ・ 1586 ）
+∃ EVENT[2] EVENT[3] ENTITY[1] (
+ 太政大臣(ENTITY[1]) ∧
+  なり(EVENT[2], ENTITY[羽柴_秀吉]) ∧ と(EVENT[2]) = ENTITY[1] ∧ 賜る(EVENT[3], ENTITY[羽柴_秀吉], ENTITY[豊臣姓]))
+
+# ::id 46_wikipedia_KYOTO_HST_00009,50;NJ
+# ::snt 文禄・慶長の役 （ 1592-1598 ）
+∃ EVENT[2] ENTITY[1] (CD_1592-1598(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[文禄.慶長の役]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[文禄.慶長の役])
+
+# ::id 47_wikipedia_KYOTO_HST_00009,51;NJ
+# ::snt 豊臣 秀吉 、 死去 （ 慶長 3 年 ・ 1598 ）
+∃ EVENT[1] 死去(EVENT[1], ENTITY[豊臣_秀吉])
+
+# ::id 48_wikipedia_KYOTO_HST_00009,52;NJ
+# ::snt 関ヶ原の戦い （ 慶長 5 年 ・ 1600 ）
+∃ EVENT[2] ENTITY[1] (CD_慶長_5_年.1600(ENTITY[1]) ∧ namely_-ENTITY-(ENTITY[1], ENTITY[関ヶ原の戦い]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[関ヶ原の戦い])
+
+# ::id 49_wikipedia_KYOTO_HST_00009,53;NJ
+# ::snt 徳川 家康 、 征夷大将軍 に 就任 （ 慶長 8 年 ・ 1603 ）
+∃ EVENT[2] ENTITY[1] (征夷大将軍(ENTITY[1]) ∧ 就任(EVENT[2], ENTITY[徳川_家康]) ∧ に(EVENT[2]) = ENTITY[1])
+
+# ::id 50_wikipedia_KYOTO_HST_00009,54;NJ
+# ::snt 桃山文化
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[桃山文化])
+
+# ::id 51_wikipedia_KYOTO_HST_00009,55;NJ
+# ::snt 安土桃山 時代 に は 、 都市 部 において 豪商 と 呼ば れる 新興 商人 が 成長 し 、 その 富 を 背景 に し た 豪華 で 大掛かり な 文化 傾向 が 見 られる 。
+∃ EVENT[6] EVENT[7] EVENT[12] EVENT[14] EVENT[15] EVENT[16] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[11] ENTITY[8] ENTITY[10] ENTITY[1] (
+ 安土桃山_時代(ENTITY[1]) ∧
+  富(ENTITY[10]) ∧
+   都市_部(ENTITY[2]) ∧
+    豪商(ENTITY[5]) ∧
+     呼ば(EVENT[6], _, ENTITY[3], ENTITY[5]) ∧ 新興_商人(ENTITY[3]) ∧
+      背景(ENTITY[11]) ∧
+       し_た(EVENT[12], ENTITY[8], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[11] ∧
+        CONJ_te(豪華_で(EVENT[14], ENTITY[8]), 大掛かり_な(EVENT[15], ENTITY[8])) ∧ 文化_傾向(ENTITY[8]) ∧
+        past(EVENT[12]) ∧
+         成長する.0(EVENT[7], ENTITY[3]) ∧ において(EVENT[7]) = ENTITY[2] ∧
+          見(EVENT[16], _, ENTITY[8]) ∧ に(EVENT[16]) = ENTITY[1])
+
+# ::id 52_wikipedia_KYOTO_HST_00009,56;NJ
+# ::snt また 信長 の 政策 により 、 仏教 勢力 の 力 が 中央 で は 弱まっ た 。
+∃ EVENT[5] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[4] (
+ 中央(ENTITY[4]) ∧
+  の_政策(ENTITY[信長], ENTITY[1]) ∧
+   仏教_勢力(ENTITY[3]) ∧
+    の_力(ENTITY[3], ENTITY[2]) ∧
+     past(EVENT[5]) ∧
+      弱まっ_た(EVENT[5], ENTITY[2]) ∧ で(EVENT[5]) = ENTITY[4] ∧ により(EVENT[5]) = ENTITY[1])
+
+# ::id 53_wikipedia_KYOTO_HST_00009,57;NJ
+# ::snt 仏教主義的 な 作品 が 減り 、 代わり に 人間中心 、 現世的 な 作風 が 見受け られる 。
+∃ ATTRIB[7] ATTRIB[6] ATTRIB[2] EVENT[3] EVENT[8] ENTITY[1] ENTITY[5] ENTITY[4] (
+ 仏教主義的_な(ATTRIB[2]) ∧
+  ATTRIBUTE_作品(ATTRIB[2], ENTITY[1]) ∧
+   代わり(ENTITY[4]) ∧
+    人間中心(ATTRIB[6]) ∧
+     現世的_な(ATTRIB[7]) ∧
+      ATTRIBUTE_作風(ATTRIB[6], ENTITY[5]) ∧ ATTRIBUTE_作風(ATTRIB[7], ENTITY[5]) ∧
+       減り(EVENT[3], ENTITY[1]) ∧ 見受け(EVENT[8], _, ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[4])
+
+# ::id 54_wikipedia_KYOTO_HST_00009,58;NJ
+# ::snt 茶の湯 が 流行 し 、 唐物 の 名物 茶道具 が 珍重 さ れ た 一方で 、 それ へ の 反抗 として の わび茶 も 発達 し た 。
+∃ ENTITY[7] EVENT[2] EVENT[4] EVENT[8] ENTITY[1] ENTITY[3] ENTITY[6] ENTITY[5] (
+ 茶の湯(ENTITY[1]) ∧
+  の_名物_茶道具(ENTITY[唐物], ENTITY[3]) ∧
+   ENTITY[7] = それ{ENTITY[5], ENTITY[唐物], ENTITY[3], ENTITY[1]} ∧
+    へ_の_反抗(ENTITY[7], ENTITY[6]) ∧
+     として_の_わび茶(ENTITY[6], ENTITY[5]) ∧
+      past(EVENT[4]) ∧
+       past(EVENT[8]) ∧
+        CONJ_一方で(流行する.0(EVENT[2], ENTITY[1]) ∧ 珍重する.0_た(EVENT[4], _, ENTITY[3]), 発達する.0_た(EVENT[8], ENTITY[5])))
+
+# ::id 55_wikipedia_KYOTO_HST_00009,59;NJ
+# ::snt 茶器 が 大名 から 家臣 へ の 報奨 と さ れ たり 、 茶会 が 武将 と 豪商 を 結ぶ など 政治 に も 影響 し た 。
+∃ SITUATION[3] SITUATION[2] ENTITY[1] EVENT[8] EVENT[13] EVENT[15] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[4] GROUP[10] ENTITY[9] ENTITY[14] (
+ ENTITY[1] = *pro* ∧
+  茶器(ENTITY[4]) ∧
+   大名(ENTITY[6]) ∧
+    家臣(ENTITY[7]) ∧
+     へ_の_報奨(ENTITY[7], ENTITY[5]) ∧ から_報奨(ENTITY[6], ENTITY[5]) ∧
+      FACT(SITUATION[3], さ(EVENT[8], _, ENTITY[4], ENTITY[5])) ∧
+       茶会(ENTITY[9]) ∧
+        CONJ_と(∃ ENTITY[11] (武将(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+         ∃ ENTITY[12] (豪商(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+         FACT(SITUATION[2], 結ぶ(EVENT[13], ENTITY[9], GROUP[10]) ∧ たり(EVENT[13]) = SITUATION[3]) ∧
+          政治(ENTITY[14]) ∧
+           past(EVENT[15]) ∧
+            影響する.0_た(EVENT[15], ENTITY[1]) ∧ に(EVENT[15]) = ENTITY[14] ∧ など(EVENT[15]) = SITUATION[2])
+
+# ::id 56_wikipedia_KYOTO_HST_00009,60;NJ
+# ::snt 特筆 す べき 点 として は 、 天文 （ 元号 ） 18 年 （ 1549 年 ） の フランシスコ・ザビエル 来日 以来 の 南蛮 貿易 によって もたらさ れ た 南蛮 文化 の 影響 が 挙げ られる 。
+∃ ENTITY[3] ENTITY[10] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[5] EVENT[11] EVENT[12] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  MD_べき(∃ EVENT[4] 特筆する.0(EVENT[4], ENTITY[3], ENTITY[1])) ∧ 点(ENTITY[1]) ∧
+   past(EVENT[11]) ∧
+    CD_天文_（_元号_）_18_年_（_1549_年_）(ENTITY[10]) ∧
+     の_フランシスコ.ザビエル_来日_以来(ENTITY[10], ENTITY[9]) ∧
+      の_南蛮_貿易(ENTITY[9], ENTITY[8]) ∧
+       もたらさ_た(EVENT[11], ENTITY[8], ENTITY[6]) ∧ 南蛮_文化(ENTITY[6]) ∧
+        の_影響(ENTITY[6], ENTITY[5]) ∧ 挙げ(EVENT[12], _, ENTITY[5]) ∧ として(EVENT[12]) = ENTITY[1])
+
+# ::id 57_wikipedia_KYOTO_HST_00009,61;NJ
+# ::snt まだ 小規模 で は あっ た が 、 日本 が 初めて 西洋文化 と 直接 （ 中国 など を 介さ ず に 、 正式 な 形 で ） 触れ合っ た という 点 で 重要 で ある 。
+∃ ATTRIB[9] SITUATION[5] ENTITY[1] EVENT[2] EVENT[10] EVENT[13] ENTITY[6] ENTITY[8] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  など(ENTITY[中国], ENTITY[6]) ∧
+   FACT(SITUATION[5], ¬ ∃ EVENT[7] 介さ(EVENT[7], ENTITY[日本], ENTITY[6])) ∧
+    正式_な(ATTRIB[9]) ∧
+     ATTRIBUTE_形(ATTRIB[9], ENTITY[8]) ∧
+      THAT_点(触れ合っ_た(EVENT[10], ENTITY[日本]) ∧ で(EVENT[10]) = ENTITY[8] ∧ te_に(EVENT[10]) = SITUATION[5] ∧
+            と(EVENT[10]) = ENTITY[西洋文化], ENTITY[4]) ∧
+       ADV_まだ(EVENT[2]) ∧
+        past(EVENT[2]) ∧
+         ADV_初めて(EVENT[10]) ∧
+          ADV_直接(EVENT[10]) ∧
+           past(EVENT[10]) ∧
+            CONJ_が(小規模_で_は_あっ_た(EVENT[2], ENTITY[1]), 重要_で_ある(EVENT[13], ENTITY[1]) ∧ で(EVENT[13]) = ENTITY[4]))
+
+# ::id 58_wikipedia_KYOTO_HST_00009,62;NJ
+# ::snt 絵画
+∃ EVENT[2] ENTITY[1] (絵画(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 59_wikipedia_KYOTO_HST_00009,63;NJ
+# ::snt 狩野派 の 絵師 が 織田 信長 、 豊臣 秀吉 など その 時々 の 権力者 と 結び付い た 。
+∃ EVENT[5] GROUP[3] ENTITY[2] ENTITY[1] ENTITY[4] (
+ 時々(ENTITY[4]) ∧
+  の_絵師(ENTITY[狩野派], ENTITY[1]) ∧
+   is_element_of(ENTITY[織田_信長], GROUP[3]) ∧ is_element_of(ENTITY[豊臣_秀吉], GROUP[3]) ∧
+    の_権力者(ENTITY[4], ENTITY[2]) ∧ など_権力者(GROUP[3], ENTITY[2]) ∧
+     past(EVENT[5]) ∧ 結び付い_た(EVENT[5], ENTITY[1]) ∧ と(EVENT[5]) = ENTITY[2])
+
+# ::id 60_wikipedia_KYOTO_HST_00009,64;NJ
+# ::snt 画壇 の 中心 を 占め た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  画壇(ENTITY[3]) ∧ の_中心(ENTITY[3], ENTITY[2]) ∧ past(EVENT[4]) ∧ 占め_た(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 61_wikipedia_KYOTO_HST_00009,67;NJ
+# ::snt 豊か な 色彩 と 力強い 線描 、 雄大 な 構図 が 特徴 。
+∃ EVENT[9] ENTITY[8] GROUP[1] (
+ CONJ_と(∃ ATTRIB[3] ENTITY[2] (豊か_な(ATTRIB[3]) ∧ ATTRIBUTE_色彩(ATTRIB[3], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ ATTRIB[5] ENTITY[4] (力強い(ATTRIB[5]) ∧ ATTRIBUTE_線描(ATTRIB[5], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[1])),
+  ∃ ATTRIB[7] ENTITY[6] (雄大_な(ATTRIB[7]) ∧ ATTRIBUTE_構図(ATTRIB[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[1]))) ∧
+  特徴(ENTITY[8]) ∧ xxx(EVENT[9], GROUP[1], ENTITY[8]))
+
+# ::id 62_wikipedia_KYOTO_HST_00009,97;NJ
+# ::snt 活字 印刷
+∃ EVENT[2] ENTITY[1] (活字_印刷(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 63_wikipedia_KYOTO_HST_00009,98;NJ
+# ::snt 朝鮮 出兵 により 朝鮮人 技術者 の 技術 を 移植 し た 木版 による 活字印刷 と 、 イエズス会 の ヴァリニャーニ が 伝え た 西 洋 の 活字印刷 による もの が ある 。
+∃ EVENT[15] GROUP[1] (
+ CONJ_と(∃ ENTITY[4] EVENT[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[2] (
+       ENTITY[4] = *pro* ∧
+        朝鮮_出兵(ENTITY[5]) ∧
+         朝鮮人_技術者(ENTITY[7]) ∧
+          の_技術(ENTITY[7], ENTITY[6]) ∧
+           木版(ENTITY[9]) ∧
+            移植する.0_た(EVENT[8], ENTITY[4], ENTITY[6]) ∧ により(EVENT[8]) = ENTITY[5] ∧
+             に(EVENT[8]) = ENTITY[2] ∧ による_活字印刷(ENTITY[9], ENTITY[2]) ∧
+             past(EVENT[8]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+  ∃ EVENT[13] ENTITY[14] ENTITY[11] ENTITY[10] (
+   の_xxx(ENTITY[イエズス会], ENTITY[ヴァリニャーニ]) ∧
+    西_洋(ENTITY[14]) ∧
+     伝え_た(EVENT[13], ENTITY[ヴァリニャーニ], ENTITY[11]) ∧ の_活字印刷(ENTITY[14], ENTITY[11]) ∧
+      による_もの(ENTITY[11], ENTITY[10]) ∧ past(EVENT[13]) ∧ is_element_of(ENTITY[10], GROUP[1]))) ∧
+  ある(EVENT[15], GROUP[1]))
+
+# ::id 64_wikipedia_KYOTO_HST_00009,114;NJ
+# ::snt 城郭
+∃ EVENT[2] ENTITY[1] (城郭(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 65_wikipedia_KYOTO_HST_00009,115;NJ
+# ::snt 織豊系城郭 と 呼ば れ 、 野面積み石垣 が 用い られる よう に なり 、 天守 を 持つ 城郭 建築 が 主流 と なる 。
+∃ SITUATION[7] ENTITY[1] EVENT[2] EVENT[6] EVENT[8] EVENT[9] EVENT[11] ENTITY[5] ENTITY[10] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  天守(ENTITY[5]) ∧
+   持つ(EVENT[6], ENTITY[3], ENTITY[5]) ∧ 城郭_建築(ENTITY[3]) ∧
+    よう(SITUATION[7], 用い(EVENT[8], _, ENTITY[野面積み石垣])) ∧
+     主流(ENTITY[10]) ∧
+      呼ば(EVENT[2], _, ENTITY[1], ENTITY[織豊系城郭]) ∧
+       なり(EVENT[9], ENTITY[3], SITUATION[7]) ∧ なる(EVENT[11], ENTITY[3]) ∧ と(EVENT[11]) = ENTITY[10])

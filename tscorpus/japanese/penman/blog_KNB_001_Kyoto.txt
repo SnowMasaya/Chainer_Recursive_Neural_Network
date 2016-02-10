@@ -1,0 +1,764 @@
+# ::id 1_blog_KNB_001_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 京都_観光))
+
+# ::id 2_blog_KNB_001_Kyoto_1-1-1-01;NJ
+# ::snt 時雨殿 に 行っ た 。
+( EVENT-2 / 行っ_た
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :に ( ENTITY-時雨殿 / ENTITY
+             :name ( n-4 / name
+                    :op1 "時雨殿"))
+      :MOD ( mod-3 / past))
+
+# ::id 3_blog_KNB_001_Kyoto_1-1-1-02;NJ
+# ::snt しぐれでん
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-しぐれでん / ENTITY
+             :name ( n-2 / name
+                    :op1 "しぐれでん")))
+
+# ::id 4_blog_KNB_001_Kyoto_1-1-10-01;NJ
+# ::snt 三条口 駅 の 近く に 自転車 を 止め て 京福電鉄 へ 。
+( CONJ-7 / CONJ_te
+      :op1 ( EVENT-5 / 止め_て
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ENTITY-4 / 自転車)
+             :に ( ENTITY-2 / 近く
+                    :の ( ENTITY-3 / 三条口_駅)))
+      :op2 ( EVENT-6 / EVENT
+             :ARG0 ENTITY-1
+             :へ ( ENTITY-京福電鉄 / ENTITY
+                    :name ( n-8 / name
+                           :op1 "京福電鉄"))))
+
+# ::id 5_blog_KNB_001_Kyoto_1-1-11-01;NJ
+# ::snt 路面 電車 は 昔 の 世田谷線 の 雰囲気 を 思い出さ せる もの だっ た 。
+( EVENT-9 / だっ_た
+      :ARG0 ( ENTITY-1 / 路面_電車)
+      :ARG1 ( ENTITY-2 / もの
+             :ARG0-of ( EVENT-7 / せる
+                    :ARG1 ( ENTITY-4 / 雰囲気
+                           :の ( ENTITY-5 / 世田谷線
+                                  :の ( ENTITY-6 / 昔)))
+                    :TOCOMP ( EVENT-8 / 思い出さ
+                           :ARG0 ENTITY-4)))
+      :MOD ( mod-10 / past))
+
+# ::id 6_blog_KNB_001_Kyoto_1-1-11-02;NJ
+# ::snt 東京都 ・ 世田谷区
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-東京都_世田谷区 / ENTITY
+             :name ( n-2 / name
+                    :op1 "東京都_世田谷区")))
+
+# ::id 7_blog_KNB_001_Kyoto_1-1-12-01;NJ
+# ::snt 都市 部 で 通勤化 さ れ て い ない 路面 電車 は 珍しい と いえる だろう か 。
+( EVENT-2 / いえる
+      :ARG0 ( ARB-1 / arb
+             :pick0)
+      :THAT ( EVENT-7 / 珍しい
+             :ARG0 ( ENTITY-3 / 路面_電車
+                    :ARG1-of ( EVENT-6 / 通勤化する.0_て_い
+                           :で ( ENTITY-5 / 都市_部)
+                           :domain-of ( NEG-8 / NEG))))
+      :domain-of ( QUEST-10 / QUEST)
+      :domain-of ( MD-9 / MD_だろう))
+
+# ::id 8_blog_KNB_001_Kyoto_1-1-13-01;NJ
+# ::snt もちろん 京福 は 観光 用 だろ う し 、 実際 明らか に 観光 客 という 乗客 を ちらほら 見かけ た 。
+( CONJ-12 / CONJ_し
+      :op1 ( EVENT-2 / だろ
+             :ARG0 ( ENTITY-京福 / ENTITY
+                    :name ( n-19 / name
+                           :op1 "京福"))
+             :ARG1 ( ENTITY-1 / 観光_用)
+             :MOD ( mod-13 / past)
+             :domain-of ( MD-11 / MD_う)
+             :MOD ( mod-14 / もちろん))
+      :op2 ( EVENT-6 / 見かけ_た
+             :ARG1 ( ENTITY-4 / 乗客
+                    :という ( ENTITY-5 / 観光_客))
+             :MOD ( mod-15 / 実際)
+             :MOD ( mod-16 / 明らか_に)
+             :MOD ( mod-17 / ちらほら)
+             :MOD ( mod-18 / past)))
+
+# ::id 9_blog_KNB_001_Kyoto_1-1-14-01;NJ
+# ::snt 乗車 率 ９０ ％ 程度 だろ う か 。
+( EVENT-3 / だろ
+      :ARG0 ( ENTITY-1 / 乗車_率)
+      :ARG1 ( ENTITY-2 / CD_９０_ ％
+             :MOD ( mod-6 / 程度))
+      :domain-of ( QUEST-5 / QUEST)
+      :domain-of ( MD-4 / MD_う))
+
+# ::id 10_blog_KNB_001_Kyoto_1-1-15-01;NJ
+# ::snt 嵐山 に 着い て から は 足早 に お目当て の 時雨殿 へ 。
+( EVENT-4 / EVENT
+      :へ ( ENTITY-時雨殿 / ENTITY
+             :name ( n-6 / name
+                    :op1 "時雨殿")
+             :の ( ENTITY-3 / お目当て))
+      :TE_から ( EVENT-2 / 着い_て
+             :に ( ENTITY-嵐山 / ENTITY
+                    :name ( n-7 / name
+                           :op1 "嵐山")))
+      :MOD ( mod-5 / 足早_に))
+
+# ::id 11_blog_KNB_001_Kyoto_1-1-16-01;NJ
+# ::snt 細い 路地 を 通り 、 洒落 た 料亭 の 向こう に それ は ある 。
+( CONJ-12 / AND
+      :op1 ( EVENT-4 / 通り
+             :ARG0 ( ARB-1 / arb
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 路地
+                    :ATTRIBUTE ( ATTRIB-3 / 細い)))
+      :op2 ( EVENT-10 / ある
+             :ARG0 ( PICK-11 / or
+                    :op1 ENTITY-6
+                    :op2 ENTITY-2)
+             :に ( ENTITY-5 / 向こう
+                    :の ( ENTITY-6 / 料亭
+                           :ARG0-of ( EVENT-8 / 洒落_た)))))
+
+# ::id 12_blog_KNB_001_Kyoto_1-1-17-01;NJ
+# ::snt 時雨殿 の 外見 も 周り の 料亭 に 負け て い ない 程 ’高級’ で ある 。
+( EVENT-6 / ’ 高級 ’ で_ある
+      :ARG0 ( ENTITY-1 / 外見
+             :の ( ENTITY-時雨殿 / ENTITY
+                    :name ( n-9 / name
+                           :op1 "時雨殿")))
+      :程 ( EVENT-5 / 負け_て_い
+             :ARG0 ENTITY-1
+             :に ( ENTITY-3 / 料亭
+                    :の ( ENTITY-4 / 周り))
+             :domain-of ( NEG-8 / NEG)))
+
+# ::id 13_blog_KNB_001_Kyoto_1-1-18-01;NJ
+# ::snt 時雨殿 の オフィシャル な データ について は 下 の リンク を 辿っ て もらえれ ば と 思う が 、 任天堂 資本 の 百人一首 博物館 といった ところ だろ う か 。
+( CONJ-21 / CONJ_が
+      :op1 ( EVENT-2 / 思う
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :THAT ( CND-19 / ば (
+                           :op1 ( ENTITY-7 下) ( ENTITY-3 ( ENTITY
+                                         :namely ENTITY-1)) ( ENTITY-6 ( リンク
+                                         :の ENTITY-7)) ( EVENT-8 ( 辿っ_て_もらえれ
+                                         :ARG0 ENTITY-3
+                                         :ARG1 ENTITY-6
+                                         :について ( ENTITY-4 / データ
+                                                :の ( ENTITY-時雨殿 / ENTITY
+                                                       :name ( n-23 / name
+                                                              :op1 "時雨殿"))
+                                                :ATTRIBUTE ( ATTRIB-5 / オフィシャル_な)))))
+                    :op2 ( EVENT-9 / EVENT)))
+      :op2 ( EVENT-14 / だろ
+             :ARG0 ( PICK-15 / or
+                    :op1 ENTITY-4
+                    :op2 ENTITY-時雨殿)
+             :ARG1 ( ENTITY-11 / ところ
+                    :といった ( ENTITY-12 / 百人一首_博物館
+                           :の ( ENTITY-13 / 任天堂_資本)))
+             :domain-of ( MD-20 / MD_う))
+      :domain-of ( QUEST-22 / QUEST))
+
+# ::id 14_blog_KNB_001_Kyoto_1-1-19-01;NJ
+# ::snt 「 任天堂 」 、 「 百人一首 」 どちら の 単語 も 僕 の 心 を くすぐる 。
+( ( ENTITY-1 ( 単語
+                    :の ( ENTITY-2 / AND
+                           :op1 ( ENTITY-4 / 任天堂)
+                           :op2 ENTITY-11
+                           :MOD ( mod-10 / AND
+                                  :op1 ( ENTITY-5 / 百人一首)
+                                  :op2 ENTITY-12)))) / EVENT-8 ( くすぐる
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-6 / 心
+                    :の ( PICK-9 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-2))))
+
+# ::id 15_blog_KNB_001_Kyoto_1-1-2-01;NJ
+# ::snt ２００６ 年 １１ 月 ０９ 日 。
+( EVENT-2 / EVENT
+      :TMP ( TIME-1 / CD_２００６_年_１１_月_０９_日))
+
+# ::id 16_blog_KNB_001_Kyoto_1-1-20-01;NJ
+# ::snt つい この間 山奥 で ’ 百人一首 神経衰弱 ’ を やっ た ばっかり だっ たり する 。
+( EVENT-6 / する
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :たり ( EVENT-5 / やっ_た_ばっかり_だっ
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY- ’ 百人一首_神経衰弱_ ’ / ENTITY
+                    :name ( n-9 / name
+                           :op1 " ’ 百人一首_神経衰弱_ ’ "))
+             :で ( ENTITY-4 / 山奥)
+             :TMP ( TIME-3 / つい
+                    :MOD ( mod-7 / この間))
+             :MOD ( mod-8 / past)))
+
+# ::id 17_blog_KNB_001_Kyoto_1-1-21-01;NJ
+# ::snt 中 に 入る と 着物 姿 の スタッフ の 方 が ちらほら 。
+( CRD-9 / と
+      :op1 ( EVENT-3 / 入る
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-2 / 中))
+      :op2 ( EVENT-7 / EVENT
+             :ARG0 ( ENTITY-4 / 方
+                    :の ( ENTITY-5 / スタッフ
+                           :の ( ENTITY-6 / 着物_姿)))
+             :MOD ( mod-10 / ちらほら)))
+
+# ::id 18_blog_KNB_001_Kyoto_1-1-22-01;NJ
+# ::snt 最初 に 目 に 入る の は 、 「 許諾 なき 写真 禁止 」 の サイン で ある 。
+( EVENT-10 / で_ある
+      :ARG0 ( ENTITY-1 / の
+             :ARG0-of ( EVENT-5 / 入る
+                    :に ( ENTITY-4 / 目)
+                    :に ( ENTITY-3 / 最初)))
+      :ARG1 ( ENTITY-6 / サイン
+             :の ( ENTITY-7 / 写真_禁止
+                    :ATTRIBUTE ( ATTRIB-8 / なき
+                           :COMP ( ENTITY-9 / 許諾)))))
+
+# ::id 19_blog_KNB_001_Kyoto_1-1-23-01;NJ
+# ::snt スタッフ のみ なら ず 「 他 の お客様 も 」 という ところ が 徹底 し て いる 。
+( EVENT-9 / 徹底する.0_て_いる
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / ところ
+             :THAT ( CONJ-13 / CONJ_te (
+                           :op1 ( ENTITY-3 ( ENTITY
+                                         :OF ( ENTITY-4 / スタッフ))) ( EVENT-5 ( なら
+                                         :ARG1 ENTITY-3
+                                         :domain-of ( NEG-12 / NEG))))
+                    :op2 ( EVENT-8 / EVENT
+                           :ARG0 ( ENTITY-6 / お客様
+                                  :の ( ENTITY-7 / 他))))))
+
+# ::id 20_blog_KNB_001_Kyoto_1-1-24-01;NJ
+# ::snt 荷物 を これ また 料亭 に あり そう な 鍵 付き の 大きな ロッカー に 入れ て 進む 。
+( CONJ-16 / AND
+      :op1 ( EVENT-6 / あり_な
+             :ARG0 ( PICK-12 / or
+                    :op1 ENTITY-3
+                    :op2 ENTITY-1
+                    :op3 ENTITY-2)
+             :に ( ENTITY-5 / 料亭)
+             :MOD ( mod-15 / また)
+             :domain-of ( MD-13 / MD_そう))
+      :op2 ( CONJ-14 / CONJ_te
+             :op1 ( EVENT-10 / 入れ_て
+                    :ARG0 ( ENTITY-1 / speaker
+                           :pick0)
+                    :ARG1 ( ENTITY-2 / 荷物)
+                    :に ( ENTITY-3 / ロッカー
+                           :ATTRIBUTE ( ATTRIB-9 / 大きな)
+                           :の ( ENTITY-8 / 鍵_付き)))
+             :op2 ( EVENT-11 / 進む
+                    :ARG0 ENTITY-1)))
+
+# ::id 21_blog_KNB_001_Kyoto_1-1-25-01;NJ
+# ::snt １ 階 は 、 時雨 ナビ を 使っ て 京都 の 町 を 探索 できる 。
+( CONJ-7 / CONJ_te
+      :op1 ( EVENT-4 / 使っ_て
+             :ARG0 ( ARB-1 / arb
+                    :pick0)
+             :ARG1 ( ENTITY-3 / 時雨_ナビ)
+             :LOC ( ENTITY-2 / CD_１_階))
+      :op2 ( EVENT-6 / 探索する.0
+             :ARG0 ARB-1
+             :ARG1 ( ENTITY-5 / 町
+                    :の ( ENTITY-京都 / ENTITY
+                           :name ( n-8 / name
+                                  :op1 "京都")))
+             :LOC ENTITY-2))
+
+# ::id 22_blog_KNB_001_Kyoto_1-1-25-02;NJ
+# ::snt 多く の 人 が レビュー を 書い て いる よう に どう 見 て も ニンテンドー ○Ｓ
+( EVENT-11 / EVENT
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( CND-13 / も (
+                    :op1 ( ARB-7 arb
+                           :pick0) ( EVENT-9 ( 見_て
+                                  :ARG0 ARB-7)) EVENT-9)
+             :op2 ( ENTITY-6 / ニンテンドー_ ○ Ｓ))
+      :に ( SITUATION-2 / よう (
+                    :THAT ( ENTITY-3 人) ( EVENT-5 ( 書い_て_いる
+                                  :ARG0 ENTITY-3
+                                  :ARG1 ( ENTITY-4 / レビュー))))))
+
+# ::id 23_blog_KNB_001_Kyoto_1-1-26-01;NJ
+# ::snt 時雨 ナビ の 無線 機能 を フル に 使っ て 、 京都 の 空中 散歩 を 楽しん だり 、 百人一首 取り に 参加 し たり できる 。
+( CONJ-14 / CONJ_te
+      :op1 ( EVENT-4 / 使っ_て
+             :ARG0 ( ARB-1 / arb
+                    :pick0)
+             :ARG1 ( ENTITY-2 / 無線_機能
+                    :の ( ENTITY-3 / 時雨_ナビ))
+             :MOD ( mod-15 / フル_に))
+      :op2 ( EVENT-11 / できる
+             :ARG0 ARB-1
+             :たり ( CONJ-13 / CONJ_だり
+                    :op1 ( EVENT-8 / 楽しん
+                           :ARG0 ARB-1
+                           :ARG1 ( ENTITY-7 / 空中_散歩
+                                  :の ( ENTITY-京都 / ENTITY
+                                         :name ( n-16 / name
+                                                :op1 "京都"))))
+                    :op2 ( EVENT-10 / 参加する.0
+                           :ARG0 ARB-1
+                           :に ( ENTITY-9 / 百人一首_取り)))))
+
+# ::id 24_blog_KNB_001_Kyoto_1-1-27-01;NJ
+# ::snt 現代 技術 の 精 を 尽くし た お遊び という 印象 を 深く 受け た 。
+( EVENT-9 / 受け_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :ARG1 ( ENTITY-2 / 印象
+             :という ( ENTITY-3 / お遊び
+                    :ARG2-of ( EVENT-8 / 尽くし_た
+                           :ARG0 ( PICK-11 / or
+                                  :op1 ENTITY-2
+                                  :op2 ENTITY-1)
+                           :ARG1 ( ENTITY-6 / 精
+                                  :の ( ENTITY-7 / 現代_技術))
+                           :MOD ( mod-12 / past))))
+      :MOD ( mod-13 / 深く)
+      :MOD ( mod-14 / past))
+
+# ::id 25_blog_KNB_001_Kyoto_1-1-28-01;NJ
+# ::snt でも 、 それだけに そこら に ある 京都 総合 紹介 と は ちょっと も そっと も 違う ダイナミックさ が 楽しい 。
+( EVENT-10 / 楽しい
+      :ARG0 ( ENTITY-1 / ダイナミックさ
+             :ARG0-of ( EVENT-7 / 違う
+                    :と ( ENTITY-3 / 京都_総合_紹介
+                           :ARG0-of ( EVENT-6 / ある
+                                  :に ENTITY-1))
+                    :MOD ( mod-11 / ちょっと_も)
+                    :MOD ( mod-12 / そっと_も))))
+
+# ::id 26_blog_KNB_001_Kyoto_1-1-29-01;NJ
+# ::snt その ほか に 、 競技 百人一首 を 体験 できる ところ も あっ て 、 ２ 回 の 挑戦 の 後 、 パーフェクト を 出し たり し て 遊ん で い た 。
+( CONJ-18 / CONJ_te
+      :op1 ( EVENT-8 / あっ_て
+             :ARG0 ( ENTITY-3 / ところ
+                    :LOC-of ( EVENT-7 / 体験する.0
+                           :ARG0 ( ARB-5 / arb
+                                  :pick0)
+                           :ARG1 ( ENTITY-6 / 競技_百人一首)))
+             :に ( ENTITY-2 / ほか))
+      :op2 ( CONJ-17 / CONJ_te
+             :op1 ( EVENT-15 / し_て
+                    :ARG0 ( ENTITY-1 / speaker
+                           :pick0)
+                    :たり ( EVENT-14 / 出し
+                           :ARG0 ENTITY-1
+                           :ARG1 ( ENTITY-13 / パーフェクト))
+                    :TMP ( TIME-9 / 後
+                           :の ( ENTITY-10 / 挑戦
+                                  :の ( ENTITY-11 / CD_２_回)))
+                    :に ENTITY-2)
+             :op2 ( EVENT-16 / 遊ん_で_い_た
+                    :ARG0 ENTITY-1
+                    :TMP TIME-9
+                    :に ENTITY-2
+                    :MOD ( mod-19 / past))))
+
+# ::id 27_blog_KNB_001_Kyoto_1-1-29-02;NJ
+# ::snt ５ 人 抜き
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / CD_５_人
+             :MOD ( mod-3 / 抜き)))
+
+# ::id 28_blog_KNB_001_Kyoto_1-1-3-01;NJ
+# ::snt 時雨殿 に 行っ た 。
+( EVENT-2 / 行っ_た
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :に ( ENTITY-時雨殿 / ENTITY
+             :name ( n-4 / name
+                    :op1 "時雨殿"))
+      :MOD ( mod-3 / past))
+
+# ::id 29_blog_KNB_001_Kyoto_1-1-30-01;NJ
+# ::snt ２ 階 は 、 大きな 畳 張り に なっ て い て 、 実際 に ここ で 競技 百人一首 が 行わ れる こと も ある そう である 。
+( CONJ-13 / CONJ_te
+      :op1 ( EVENT-4 / なっ_て_い
+             :ARG0 ( ENTITY-1 / CD_２_階)
+             :に ( ENTITY-2 / 畳_張り
+                    :ATTRIBUTE ( ATTRIB-3 / 大きな)))
+      :op2 ( EVENT-10 / ある_である
+             :ARG0 ( SITUATION-5 / こと
+                    :THAT ( EVENT-9 / 行わ
+                           :ARG1 ( ENTITY-8 / 競技_百人一首)
+                           :で ( PICK-11 / or
+                                  :op1 ENTITY-2
+                                  :op2 ENTITY-1)
+                           :に ( ENTITY-6 / 実際)))
+             :domain-of ( MD-12 / MD_そう)))
+
+# ::id 30_blog_KNB_001_Kyoto_1-1-31-01;NJ
+# ::snt 展示 として は 、 昔々 の 百人一首 や 大戦 下 の 軍国 百人一首 が 飾ら れ て い て ファン として は 、 眺め て いる だけ で 幸せ といった ところ だろ う か 。
+( EVENT-15 / だろ
+      :ARG1 ( ENTITY-1 / ところ
+             :THAT ( CONJ-18 / CONJ_te
+                    :op1 ( EVENT-9 / 飾ら_て_い
+                           :ARG1 ( CONJ-16 / CONJ_や
+                                  :op1 ( GROUP-4 / AND
+                                         :op1 ( ENTITY-6 / 昔々)
+                                         :op2 ( ENTITY-5 / 百人一首
+                                                :の ENTITY-6)
+                                         :op3 ENTITY-22)
+                                  :op2 ( GROUP-21 / AND
+                                         :op1 ( ENTITY-8 / 大戦_下)
+                                         :op2 ( ENTITY-7 / 軍国_百人一首
+                                                :の ENTITY-8)
+                                         :op3 ENTITY-23))
+                           :として ( ENTITY-3 / 展示)) (
+                           :op2 ( SITUATION-11 ( SITUATION
+                                         :OF ( EVENT-13 / 眺め_て_いる
+                                                :ARG0 ( ENTITY-2 / pro
+                                                       :pick0)))) ( EVENT-14 ( 幸せ
+                                         :ARG0 ENTITY-2
+                                         :として ( ENTITY-10 / ファン)
+                                         :で SITUATION-11)))))
+      :domain-of ( QUEST-20 / QUEST)
+      :domain-of ( MD-19 / MD_う))
+
+# ::id 31_blog_KNB_001_Kyoto_1-1-32-01;NJ
+# ::snt お土産 コーナー に １ 枚 ４０００ 円 する 金 板 百人一首 が 販売 さ れ て い て 、 買お う か 一瞬 迷っ た が 、 いったい これ を どう し よう か ？ と 冷静 に なり 、 香り の つい た カード を ５００ 円 で 買う に とどめ た 。
+( CONJ-43 / CONJ_が
+      :op1 ( CONJ-30 / CONJ_te
+             :op1 ( EVENT-8 / 販売する.0_て_い
+                    :ARG1 ( ENTITY-3 / 金_板_百人一首
+                           :ARG0-of ( EVENT-7 / する
+                                  :ARG1 ( ENTITY-5 / ENTITY ( ENTITY-5 CD_４０００_円)
+                                         :MSR ( DEGREE-6 / CD_１_枚))))
+                    :に ( ENTITY-2 / お土産_コーナー)) (
+                    :op2 ( SITUATION-9 ( SITUATION
+                                  :OF ( EVENT-11 / 買お
+                                         :ARG0 ( ENTITY-1 / speaker
+                                                :pick0)
+                                         :domain-of ( MD-29 / MD_う)))) ( EVENT-12 ( 迷っ_た
+                                  :ARG0 ( ENTITY-1 / ENTITY
+                                         :ARG0-of ( EVENT-14 / 冷静_に_なり
+                                                :THAT ( EVENT-17 / し
+                                                       :ARG1 ( PICK-37 / or
+                                                              :op1 ENTITY-1
+                                                              :op2 ENTITY-2
+                                                              :op3 ENTITY-3
+                                                              :op4 ENTITY-5)
+                                                       :domain-of ( MD-41 / MD_よう)
+                                                       :MOD ( mod-44 / いったい)
+                                                       :domain-of ( QUEST-42 / QUEST)
+                                                       :ADV ENTITY-16)))
+                                  :LINK SITUATION-9
+                                  :MOD ( mod-45 / 一瞬)
+                                  :MOD ( mod-46 / past)))))
+      :op2 ( EVENT-27 / とどめ_た
+             :ARG0 ENTITY-1
+             :に ( EVENT-26 / 買う
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-21 / カード
+                           :LOC-of ( EVENT-24 / つい_た
+                                  :ARG0 ( ENTITY-23 / 香り)
+                                  :MOD ( mod-47 / past)))
+                    :で ( ENTITY-25 / CD_５００_円))
+             :MOD ( mod-48 / past)))
+
+# ::id 32_blog_KNB_001_Kyoto_1-1-33-01;NJ
+# ::snt ちなみに 金 板 の 百人一首 は １ セット で ８０万 円 で ある 。
+( EVENT-5 / で_ある
+      :ARG0 ( ENTITY-1 / 百人一首
+             :の ( ENTITY-2 / 金_板))
+      :ARG1 ( ENTITY-4 / CD_８０万_円)
+      :で ( ENTITY-3 / CD_１_セット))
+
+# ::id 33_blog_KNB_001_Kyoto_1-1-34-01;NJ
+# ::snt 最後 で ちょっと 面食らっ た が 、 幸せ な 気分 で 時雨殿 を 出 て 、 嵐山 の 町 を ぶらぶら し て 同じく 京福 電鉄 に ゆせ れ て 帰途 に 着い た 。
+( CONJ-17 / CONJ_te
+      :op1 ( EVENT-8 / 出_て
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :ARG1 ( ENTITY-時雨殿 / ENTITY
+                    :name ( n-23 / name
+                           :op1 "時雨殿"))
+             :が ( EVENT-6 / 面食らっ_た
+                    :ARG0 ENTITY-時雨殿
+                    :で ( ENTITY-5 / 最後)
+                    :MOD ( mod-18 / ちょっと)
+                    :MOD ( mod-19 / past))
+             :で ( ENTITY-2 / 気分
+                    :ATTRIBUTE ( ATTRIB-3 / 幸せ_な)))
+      :op2 ( EVENT-10 / し_て
+             :ARG0 ENTITY-1
+             :ARG1 ( ENTITY-9 / 町
+                    :の ( ENTITY-嵐山 / ENTITY
+                           :name ( n-24 / name
+                                  :op1 "嵐山")))
+             :MOD ( mod-20 / ぶらぶら))
+      :op3 ( EVENT-13 / ゆせ_て
+             :ARG1 ENTITY-1
+             :に ( ENTITY-12 / 京福_電鉄)
+             :MOD ( mod-21 / 同じく))
+      :op4 ( EVENT-16 / 着い_た
+             :ARG0 ENTITY-1
+             :に ( ENTITY-15 / 帰途)
+             :MOD ( mod-22 / past)))
+
+# ::id 34_blog_KNB_001_Kyoto_1-1-35-01;NJ
+# ::snt 誰 か と 嵐山 に 行っ たら 一 度 除く 価値 は ある と 思う 。
+( EVENT-2 / 思う
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :THAT ( CND-14 / たら (
+                    :op1 ( ARB-3 arb
+                           :pick0) ( EVENT-5 ( 行っ
+                                  :ARG0 ARB-3
+                                  :に ( ENTITY-嵐山 / ENTITY
+                                         :name ( n-15 / name
+                                                :op1 "嵐山"))
+                                  :と ENTITY-4)))
+             :op2 ( EVENT-10 / ある
+                    :ARG0 ( SITUATION-6 / 価値
+                           :THAT ( EVENT-9 / 除く
+                                  :ARG0 ( ARB-7 / arb
+                                         :pick0)
+                                  :MSR ( DEGREE-8 / CD_一_度))))))
+
+# ::id 35_blog_KNB_001_Kyoto_1-1-36-01;NJ
+# ::snt 時雨殿
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 時雨殿))
+
+# ::id 36_blog_KNB_001_Kyoto_1-1-36-02;NJ
+# ::snt オフィシャルサイト
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / オフィシャルサイト))
+
+# ::id 37_blog_KNB_001_Kyoto_1-1-37-01;NJ
+# ::snt ｈｔｔｐ：／／ｗｗｗ．ｓｈｉｇｕｒｅｄｅｎ．ｃｏｍ／
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ｈｔｔｐ ： ／ ／ ｗｗｗ ． ｓｈｉｇｕｒｅｄｅｎ ． ｃｏｍ ／))
+
+# ::id 38_blog_KNB_001_Kyoto_1-1-38-01;NJ
+# ::snt 純金 製 百人一首 に サッカー ボール
+( EVENT-4 / EVENT
+      :LINK ( CONJ-5 / CONJ_に
+             :op1 ( GROUP-1 / AND
+                    :op1 ( ENTITY-2 / 純金_製_百人一首)
+                    :op2 ENTITY-7)
+             :op2 ( GROUP-6 / AND
+                    :op1 ( ENTITY-3 / サッカー_ボール)
+                    :op2 ENTITY-8)))
+
+# ::id 39_blog_KNB_001_Kyoto_1-1-38-02;NJ
+# ::snt 産経新聞
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-産経新聞 / ENTITY
+             :name ( n-2 / name
+                    :op1 "産経新聞")))
+
+# ::id 40_blog_KNB_001_Kyoto_1-1-39-01;NJ
+# ::snt ｈｔｔｐ：／／ｗｗｗ．ｓａｎｋｅｉ．ｃｏ．ｊｐ／ｅｎａｋ／２００６／ｊｕｎ／ｋｉｊｉ／２７ｇｏｌｄｅｎＢａｌｌ．ｈｔｍｌ
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / ｈｔｔｐ ： ／ ／ ｗｗｗ ． ｓａｎｋｅｉ ． ｃｏ ． ｊｐ ／ ｅｎａｋ ／ ２００６ ／ ｊｕｎ ／ ｋｉｊｉ ／ ２７ｇｏｌｄｅｎＢａｌｌ ． ｈｔｍｌ))
+
+# ::id 41_blog_KNB_001_Kyoto_1-1-4-01;NJ
+# ::snt ８ 月 に 嵐山 へ ドクターフィシュ 体験 で 行っ た 時 に 残念 ながら 閉館 し て い た ので いつか 行こ う と 思っ て い た 場所 で ある 。
+( EVENT-15 / で_ある
+      :ARG1 ( ENTITY-1 / 場所
+             :LOC-of ( CRD-20 / ので
+                    :op1 ( EVENT-10 / 閉館する.0_て_い_た
+                           :ARG0 ENTITY-3
+                           :ながら ( ENTITY-9 / 残念)
+                           :に ( SITUATION-4 / 時
+                                  :THAT ( EVENT-8 / 行っ_た
+                                         :ARG0 ( PICK-16 / or
+                                                :op1 ENTITY-3
+                                                :op2 ENTITY-1)
+                                         :で ( ENTITY-7 / ドクターフィシュ_体験)
+                                         :へ ( ENTITY-嵐山 / ENTITY
+                                                :name ( n-24 / name
+                                                       :op1 "嵐山"))
+                                         :に ( ENTITY-6 / CD_８_月)
+                                         :MOD ( mod-21 / past)))
+                           :MOD ( mod-22 / past))
+                    :op2 ( EVENT-11 / 思っ_て_い_た
+                           :ARG0 ( ENTITY-3 / speaker
+                                  :pick0)
+                           :THAT ( EVENT-14 / 行こ
+                                  :ARG0 ( PICK-17 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-3
+                                         :op3 ENTITY-嵐山
+                                         :op4 ENTITY-9
+                                         :op5 ENTITY-6
+                                         :op6 ENTITY-7)
+                                  :ADV ( ENTITY-13 / いつか)
+                                  :domain-of ( MD-19 / MD_う))
+                           :MOD ( mod-23 / past)))))
+
+# ::id 42_blog_KNB_001_Kyoto_1-1-5-01;NJ
+# ::snt ドクターフィッシュ の 時 と は 違い 一 人 旅行 の ため 、 全く 待ち合わせ 時間 の こと など を 気 に する こと も なく ９ 時 過ぎ に 出発 する 。
+( CONJ-24 / AND
+      :op1 ( EVENT-5 / 違い
+             :ARG0 ( PICK-18 / or
+                    :op1 ENTITY-2
+                    :op2 ENTITY-1)
+             :と ( ENTITY-4 / 時
+                    :の ( ENTITY-ドクターフィッシュ / ENTITY
+                           :name ( n-23 / name
+                                  :op1 "ドクターフィッシュ"))))
+      :op2 ( EVENT-14 / なく
+             :ARG0 ( SITUATION-7 / こと
+                    :THAT ( EVENT-13 / する
+                           :ARG0 ( PICK-19 / or
+                                  :op1 ENTITY-2
+                                  :op2 ENTITY-1
+                                  :op3 ENTITY-4
+                                  :op4 ENTITY-ドクターフィッシュ
+                                  :op5 ENTITY-6)
+                           :ARG1 ( ENTITY-9 / ENTITY
+                                  :など ( ENTITY-10 / こと
+                                         :の ( ENTITY-11 / 待ち合わせ_時間)))
+                           :に ( ENTITY-12 / 気)))
+             :ADV ( ENTITY-2 / ため
+                    :の ( ENTITY-6 / CD_一_人
+                           :MOD ( mod-20 / 旅行)))
+             :MOD ( mod-21 / 全く))
+      :op3 ( EVENT-17 / 出発する.0
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-16 / CD_９_時
+                    :MOD ( mod-22 / 過ぎ))))
+
+# ::id 43_blog_KNB_001_Kyoto_1-1-6-01;NJ
+# ::snt 嵐山 に 行く の に は 、 寮 の 前 から 嵐山 行き の バス が 都合 よく 出 て いる ので 、 それ に 乗っかれ ばいい だけ だ が 、 この 際 、 京都 の 路面 電車 も ぜひ 試し て みたい と 考え て 、 京福 電鉄 を 使う ルート で 行く こと に し た 。
+( CONJ-42 / CONJ_が (
+             :op1 ( SITUATION-2 ( SITUATION
+                           :OF ( CRD-34 / ので
+                                  :op1 ( EVENT-12 / 出_て_いる
+                                         :ARG0 ( ENTITY-9 / バス
+                                                :の ( ENTITY-嵐山_行き / ENTITY
+                                                       :name ( n-45 / name
+                                                              :op1 "嵐山_行き"))
+                                                :ARG0-of ( EVENT-11 / よく
+                                                       :ARG0 ( ENTITY-10 / 都合)))
+                                         :から ( ENTITY-7 / 前
+                                                :の ( ENTITY-8 / 寮)))
+                                  :op2 ( EVENT-14 / 乗っかれ
+                                         :ARG0 ( ENTITY-4 / ENTITY
+                                                :namely ENTITY-1)
+                                         :に ( PICK-33 / or
+                                                :op1 ENTITY-嵐山_行き
+                                                :op2 ENTITY-7
+                                                :op3 ENTITY-9
+                                                :op4 ENTITY-10
+                                                :op5 ENTITY-8
+                                                :op6 ENTITY-嵐山
+                                                :op7 ENTITY-1)
+                                         :に ( SITUATION-5 / の
+                                                :THAT ( EVENT-6 / 行く
+                                                       :ARG0 ENTITY-4
+                                                       :に ( ENTITY-嵐山 / ENTITY
+                                                              :name ( n-46 / name
+                                                                     :op1 "嵐山")))))
+                                  :domain-of ( MD-35 / MD_ばいい)))) ( EVENT-15 ( だ
+                           :ARG0 ( ENTITY-1 / pro
+                                  :pick0)
+                           :ARG1 SITUATION-2)))
+      :op2 ( CONJ-41 / CONJ_te
+             :op1 ( EVENT-17 / 考え_て
+                    :ARG0 ( ENTITY-16 / ENTITY
+                           :namely ( PICK-36 / or
+                                  :op1 ENTITY-嵐山_行き
+                                  :op2 ENTITY-嵐山))
+                    :THAT ( EVENT-21 / 試し_て
+                           :ARG0 ( PICK-37 / or
+                                  :op1 ENTITY-16
+                                  :op2 ENTITY-嵐山_行き
+                                  :op3 ENTITY-嵐山)
+                           :ARG1 ( ENTITY-20 / 路面_電車
+                                  :の ( ENTITY-京都 / ENTITY
+                                         :name ( n-47 / name
+                                                :op1 "京都")))
+                           :TMP ( TIME-19 / 際)
+                           :MOD ( mod-43 / ぜひ)
+                           :domain-of ( MD-40 / MD_みたい)))
+             :op2 ( EVENT-29 / し_た
+                    :ARG0 ENTITY-16
+                    :に ( SITUATION-23 / こと
+                           :THAT ( EVENT-28 / 行く
+                                  :ARG0 ENTITY-16
+                                  :で ( SITUATION-24 / ルート
+                                         :THAT ( EVENT-27 / 使う
+                                                :ARG0 ( PICK-38 / or
+                                                       :op1 ENTITY-16
+                                                       :op2 ENTITY-京都
+                                                       :op3 ENTITY-嵐山_行き
+                                                       :op4 ENTITY-嵐山)
+                                                :ARG1 ( ENTITY-26 / 京福_電鉄)))))
+                    :MOD ( mod-44 / past))))
+
+# ::id 44_blog_KNB_001_Kyoto_1-1-7-01;NJ
+# ::snt まずは 自転車 で 三条口 へ と 向かう 。
+( EVENT-3 / 向かう
+      :ARG0 ( ENTITY-1 / speaker
+             :pick0)
+      :へ_と ( ENTITY-三条口 / ENTITY
+             :name ( n-4 / name
+                    :op1 "三条口"))
+      :で ( ENTITY-2 / 自転車))
+
+# ::id 45_blog_KNB_001_Kyoto_1-1-7-02;NJ
+# ::snt 西大路 三条
+( EVENT-1 / EVENT
+      :LINK ( ENTITY-西大路_三条 / ENTITY
+             :name ( n-2 / name
+                    :op1 "西大路_三条")))
+
+# ::id 46_blog_KNB_001_Kyoto_1-1-8-01;NJ
+# ::snt 御池 通り から ＪＲ 二条 駅 を 通る ルート で ある 。
+( EVENT-6 / で_ある
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( SITUATION-2 / ルート
+             :THAT ( EVENT-5 / 通る
+                    :ARG0 ( ARB-3 / arb
+                           :pick0)
+                    :ARG1 ( ENTITY-ＪＲ_二条_駅 / ENTITY
+                           :name ( n-7 / name
+                                  :op1 "ＪＲ_二条_駅"))
+                    :から ( ENTITY-4 / 御池_通り))))
+
+# ::id 47_blog_KNB_001_Kyoto_1-1-9-01;NJ
+# ::snt ＪＲ 二条 から の 道 は 自転車 ・ 歩行 者 道 が やたら と 大きく とっ て あり 、 昔 路面 電車 が 走っ て い た こと を 思わ せる 。
+( CONJ-17 / AND
+      :op1 ( EVENT-6 / とっ_て_あり
+             :ARG0 ( ENTITY-4 / 自転車_歩行_者_道)
+             :LOC ( ENTITY-3 / 道
+                    :から_の ( ENTITY-ＪＲ_二条 / ENTITY
+                           :name ( n-16 / name
+                                  :op1 "ＪＲ_二条")))
+             :MOD ( mod-14 / 大きく
+                    :と ( ATTRIB-5 / やたら)))
+      :op2 ( EVENT-8 / せる
+             :ARG0 ( ENTITY-1 / pro
+                    :pick0)
+             :ARG1 ( ARB-2 / arb
+                    :pick0)
+             :TOCOMP ( EVENT-13 / 思わ
+                    :ARG0 ARB-2
+                    :ARG1 ( SITUATION-9 / こと
+                           :THAT ( EVENT-12 / 走っ_て_い_た
+                                  :ARG0 ( ENTITY-11 / 路面_電車)
+                                  :TMP ( TIME-10 / 昔)
+                                  :MOD ( mod-15 / past))))))

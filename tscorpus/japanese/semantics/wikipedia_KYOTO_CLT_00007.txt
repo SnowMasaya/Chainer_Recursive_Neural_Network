@@ -1,0 +1,231 @@
+# ::id 1_wikipedia_KYOTO_CLT_00007,1;NJ
+# ::snt 湯豆腐
+∃ EVENT[2] ENTITY[1] (湯豆腐(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_wikipedia_KYOTO_CLT_00007,2;NJ
+# ::snt 湯豆腐 （ ゆどうふ ） は 、 豆腐 を 使っ た 料理 の 一 つ 。
+∃ ARB[4] SITUATION[3] EVENT[6] EVENT[7] ENTITY[5] ENTITY[2] ENTITY[1] (
+ 湯豆腐(ENTITY[1]) ∧
+  namely_-ENTITY-(ENTITY[ゆどうふ], ENTITY[1]) ∧
+   ARB[4] = *arb* ∧
+    豆腐(ENTITY[5]) ∧
+     料理(SITUATION[3], 使っ_た(EVENT[6], ARB[4], ENTITY[5])) ∧
+      (CD_一_つ(ENTITY[2]), の(SITUATION[3], ENTITY[2])) ∧ xxx(EVENT[7], ENTITY[1], ENTITY[2]))
+
+# ::id 3_wikipedia_KYOTO_CLT_00007,3;NJ
+# ::snt 冬 の 代表的 な 鍋 料理 の ひと つ 。
+∃ ATTRIB[5] ENTITY[1] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  冬(ENTITY[4]) ∧
+   代表的_な(ATTRIB[5]) ∧
+    ATTRIBUTE_鍋_料理(ATTRIB[5], ENTITY[3]) ∧ の_鍋_料理(ENTITY[4], ENTITY[3]) ∧
+     (CD_ひと_つ(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧ xxx(EVENT[6], ENTITY[1], ENTITY[2]))
+
+# ::id 4_wikipedia_KYOTO_CLT_00007,4;NJ
+# ::snt 鍋 に 昆布 を 敷き 、 水 を 張っ た 中 に 一 口 大 に 切っ た 豆腐 を 入れ 、 温まっ た ところ を 引き揚げ て つけダレ で 食べる 。
+∃ SITUATION[16] ENTITY[12] ENTITY[2] ENTITY[1] EVENT[5] EVENT[9] EVENT[14] EVENT[15] EVENT[17] EVENT[18] EVENT[20] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[13] ENTITY[10] ENTITY[6] ENTITY[19] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = *pro* ∧
+   鍋(ENTITY[3]) ∧
+    昆布(ENTITY[4]) ∧
+     水(ENTITY[8]) ∧
+      張っ_た(EVENT[9], _, ENTITY[8]) ∧ LOC(EVENT[9]) = ENTITY[6] ∧ 中(ENTITY[6]) ∧
+       ENTITY[12] = *pro*{ENTITY[2], ENTITY[6], ENTITY[8], ENTITY[1], ENTITY[3], ENTITY[4]} ∧
+        (CD_一_口(ENTITY[13]), 大(ENTITY[13])) ∧
+         切っ_た(EVENT[14], ENTITY[12], ENTITY[10]) ∧ に(EVENT[14]) = ENTITY[13] ∧ 豆腐(ENTITY[10]) ∧
+          ところ(SITUATION[16], 温まっ_た(EVENT[17], ENTITY[2])) ∧
+           つけダレ(ENTITY[19]) ∧
+            past(EVENT[9]) ∧
+             past(EVENT[14]) ∧
+              past(EVENT[17]) ∧
+               敷き(EVENT[5], ENTITY[2], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+                入れ(EVENT[15], ENTITY[2], ENTITY[10]) ∧ に(EVENT[15]) = ENTITY[6] ∧
+                 CONJ_te(引き揚げ_て(EVENT[18], ENTITY[1], ENTITY[2]) ∧ を(EVENT[18]) = SITUATION[16],
+                  食べる(EVENT[20], ENTITY[1], ENTITY[2]) ∧ で(EVENT[20]) = ENTITY[19]))
+
+# ::id 5_wikipedia_KYOTO_CLT_00007,5;NJ
+# ::snt あまり 長く 煮 ず 、 豆腐 が ぐらり と 動い た 程度 で 食べる の が よい と さ れる 。
+∃ SITUATION[5] SITUATION[11] ATTRIB[8] SITUATION[6] ENTITY[3] ENTITY[2] SITUATION[1] EVENT[9] EVENT[10] EVENT[12] EVENT[13] ENTITY[7] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[3] = *pro* ∧
+   豆腐(ENTITY[7]) ∧
+    ADV_ぐらり(ATTRIB[8]) ∧
+     程度(SITUATION[6], 動い_た(EVENT[9], ENTITY[7]) ∧ と(EVENT[9]) = ATTRIB[8]) ∧
+      の(SITUATION[1],
+       CONJ_te(FACT(SITUATION[5], ¬ ∃ EVENT[4] 煮(EVENT[4], ENTITY[2], ENTITY[3])),
+        食べる(EVENT[10], ENTITY[2], ENTITY[3]) ∧ で(EVENT[10]) = SITUATION[6])) ∧
+       FACT(SITUATION[11], よい(EVENT[12], SITUATION[1])) ∧
+        ADV_あまり_長く(SITUATION[5]) ∧ past(EVENT[9]) ∧ さ(EVENT[13], _, SITUATION[1], SITUATION[11]))
+
+# ::id 6_wikipedia_KYOTO_CLT_00007,6;NJ
+# ::snt なにしろ 豆腐 、 水 、 昆布 だけ が 材料 で ある から それぞれに 高品質 な もの が 求め られる 。
+∃ SITUATION[9] ATTRIB[11] EVENT[12] ENTITY[10] (
+ 高品質_な(ATTRIB[11]) ∧
+  ATTRIBUTE_もの(ATTRIB[11], ENTITY[10]) ∧
+   ADV_なにしろ(SITUATION[9]) ∧
+    CRD_から(FACT(SITUATION[9],
+          それぞれに GROUP[3] ENTITY[2] (
+           (∃ ENTITY[4] (豆腐(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])) ∧
+              ∃ ENTITY[5] (水(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3])) ∧
+              ∃ ENTITY[6] (昆布(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[3])) ∧ equals(GROUP[3], ENTITY[2])),
+           だけ ENTITY[1] (ENTITY[1] = ENTITY[2], ∃ EVENT[8] ENTITY[7] (材料(ENTITY[7]) ∧ で_ある(EVENT[8], ENTITY[1], ENTITY[7]))))),
+     求め(EVENT[12], _, ENTITY[10])))
+
+# ::id 7_wikipedia_KYOTO_CLT_00007,7;NJ
+# ::snt 特に 水 が 良質 で ある こと は 絶対 条件 で あり 、 京都 の もの が 名高い の も その 所以 で ある 。
+∃ SITUATION[7] SITUATION[1] EVENT[3] EVENT[6] EVENT[9] EVENT[11] ENTITY[2] ENTITY[5] ENTITY[8] ENTITY[10] (
+ 所以(ENTITY[10]) ∧
+  水(ENTITY[2]) ∧
+   こと(SITUATION[1], 良質_で_ある(EVENT[3], ENTITY[2])) ∧
+    絶対_条件(ENTITY[5]) ∧
+     の_もの(ENTITY[京都], ENTITY[8]) ∧
+      の(SITUATION[7], 名高い(EVENT[9], ENTITY[8])) ∧
+       ADV_特に(EVENT[3]) ∧ で_あり(EVENT[6], SITUATION[1], ENTITY[5]) ∧ で_ある(EVENT[11], SITUATION[7], ENTITY[10]))
+
+# ::id 8_wikipedia_KYOTO_CLT_00007,8;NJ
+# ::snt つけダレ に は 、 醤油 、 または 醤油 、 酒 、 みりん 、 出汁 等 を 合わせ た もの 、 あるいは ポン酢醤油 など が 用い られ 、 薬味 として ネギ 、 ユズ 、 大根おろし （ 紅葉おろし ） 、 削っ た 鰹節 など が よく 用い られる 。
+∃ EVENT[15] EVENT[27] GROUP[3] ENTITY[2] GROUP[18] ENTITY[17] ENTITY[16] ENTITY[1] (
+ つけダレ(ENTITY[1]) ∧
+  CONJ_または_あるいは(∃ ENTITY[4] (醤油(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[6] EVENT[13] GROUP[8] ENTITY[7] ENTITY[5] (
+    ENTITY[6] = *pro*{ENTITY[2], ENTITY[1]} ∧
+     ∃ ENTITY[9] (醤油(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])) ∧
+      ∃ ENTITY[10] (酒(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8])) ∧
+      ∃ ENTITY[11] (みりん(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[8])) ∧
+      ∃ ENTITY[12] (出汁(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[8])) ∧
+      等(GROUP[8], ENTITY[7]) ∧
+       THAT_もの(合わせ_た(EVENT[13], ENTITY[6], ENTITY[7]), ENTITY[5]) ∧
+        past(EVENT[13]) ∧ is_element_of(ENTITY[5], GROUP[3])),
+   ∃ ENTITY[14] (ポン酢醤油(ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[3]))) ∧
+   など(GROUP[3], ENTITY[2]) ∧
+    薬味(ENTITY[16]) ∧
+     ∃ ENTITY[19] (ネギ(ENTITY[19]) ∧ is_element_of(ENTITY[19], GROUP[18])) ∧
+      ∃ ENTITY[20] (ユズ(ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[18])) ∧
+      ∃ ENTITY[21] ENTITY[22] (
+       大根おろし(ENTITY[22]) ∧
+        紅葉おろし(ENTITY[21]) ∧ namely_-ENTITY-(ENTITY[21], ENTITY[22]) ∧ is_element_of(ENTITY[22], GROUP[18])) ∧
+      ∃ ENTITY[25] EVENT[26] ENTITY[23] (
+       ENTITY[25] = *pro*{ENTITY[17], ENTITY[16], ENTITY[2], ENTITY[1]} ∧
+        削っ_た(EVENT[26], ENTITY[25], ENTITY[23]) ∧ 鰹節(ENTITY[23]) ∧
+         past(EVENT[26]) ∧ is_element_of(ENTITY[23], GROUP[18])) ∧
+      など(GROUP[18], ENTITY[17]) ∧
+       ADV_よく(EVENT[27]) ∧
+        用い(EVENT[15], _, ENTITY[2]) ∧ に(EVENT[15]) = ENTITY[1] ∧
+         用い(EVENT[27], _, ENTITY[17]) ∧ として(EVENT[27]) = ENTITY[16])
+
+# ::id 9_wikipedia_KYOTO_CLT_00007,9;NJ
+# ::snt 塩 ひと つまみ 、 あるいは 刻ん だ 大根 を いれる と 豆腐 に ス が 入ら ず 、 やわらかく 仕上がる と いう 。
+∃ ENTITY[2] EVENT[1] (
+ ENTITY[2] = *pro* ∧
+  いう(EVENT[1],
+   ∀ ENTITY[3] EVENT[10] GROUP[4] CND_と(
+       ENTITY[3] = *pro*{ENTITY[2]} ∧
+        CONJ_あるいは(∃ ENTITY[5] ((CD_ひと_つまみ(ENTITY[5]), 塩(ENTITY[5])) ∧ is_element_of(ENTITY[5], GROUP[4])),
+         ∃ ENTITY[8] EVENT[9] ENTITY[6] (
+          ENTITY[8] = *pro*{ENTITY[3], ENTITY[2]} ∧
+           刻ん_だ(EVENT[9], ENTITY[8], ENTITY[6]) ∧ 大根(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+        いれる(EVENT[10], ENTITY[3], GROUP[4]),
+       ∃ EVENT[14] ENTITY[12] ENTITY[11] (
+        豆腐(ENTITY[11]) ∧
+         ス(ENTITY[12]) ∧
+          ADV_やわらかく(EVENT[14]) ∧
+           CONJ_te(¬ ∃ EVENT[13] (入ら(EVENT[13], ENTITY[12]) ∧ に(EVENT[13]) = ENTITY[11]),
+            仕上がる(EVENT[14], ENTITY[2]))))))
+
+# ::id 10_wikipedia_KYOTO_CLT_00007,10;NJ
+# ::snt 豆腐 と 一緒 に ハクサイ や 鱈 の 切り身 を 煮る 場合 も ある 。
+∃ ENTITY[2] SITUATION[1] EVENT[9] EVENT[10] ENTITY[4] GROUP[5] ENTITY[3] (
+ ENTITY[2] = *pro* ∧
+  豆腐(ENTITY[4]) ∧
+   と_一緒(ENTITY[4], ENTITY[3]) ∧
+    CONJ_や(∃ ENTITY[6] (ハクサイ(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ENTITY[8] ENTITY[7] (鱈(ENTITY[8]) ∧ の_切り身(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5]))) ∧
+     場合(SITUATION[1], 煮る(EVENT[9], ENTITY[2], GROUP[5]) ∧ に(EVENT[9]) = ENTITY[3]) ∧
+      ある(EVENT[10], SITUATION[1]))
+
+# ::id 11_wikipedia_KYOTO_CLT_00007,11;NJ
+# ::snt しかし あまり 味 の 濃い もの を いれる と 淡味 が 身上 の この 料理 が 台無し に なっ て しまう と さ れる 。
+∃ SITUATION[6] EVENT[16] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 淡味(ENTITY[3]) ∧
+  身上(ENTITY[4]) ∧
+   の(EVENT[5], (ENTITY[1], ENTITY[3]), ENTITY[4]) ∧ 料理(ENTITY[1]) ∧
+    FACT(SITUATION[6],
+     ∀ ENTITY[7] EVENT[11] EVENT[13] ENTITY[10] ENTITY[8] CND_と(
+         ENTITY[7] = *pro*{ENTITY[1], ENTITY[3], ENTITY[4]} ∧ 味(ENTITY[10]) ∧
+          濃い(EVENT[11], (ENTITY[8], ENTITY[10])) ∧ もの(ENTITY[8]) ∧ ADV_あまり(EVENT[11]) ∧
+          いれる(EVENT[13], ENTITY[7], ENTITY[8]), ∃ EVENT[14] (ADV_台無し_に(EVENT[14]) ∧ なっ_て_しまう(EVENT[14], ENTITY[1])))) ∧
+     さ(EVENT[16], _, ENTITY[1], SITUATION[6]))
+
+# ::id 12_wikipedia_KYOTO_CLT_00007,12;NJ
+# ::snt 主に 冬 に 食べ られる こと が 多い が 、 夏 の 鍋 として 食べる 人 も いる 。
+∃ ENTITY[9] ENTITY[2] SITUATION[1] EVENT[4] EVENT[6] EVENT[12] EVENT[13] ENTITY[3] ENTITY[11] ENTITY[10] ENTITY[7] (
+ ENTITY[2] = *pro* ∧
+  冬(ENTITY[3]) ∧
+   こと(SITUATION[1], 食べ(EVENT[4], _, ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+    ENTITY[9] = *pro*{ENTITY[3]} ∧
+     夏(ENTITY[11]) ∧
+      の_鍋(ENTITY[11], ENTITY[10]) ∧
+       食べる(EVENT[12], ENTITY[7], ENTITY[9]) ∧ として(EVENT[12]) = ENTITY[10] ∧ 人(ENTITY[7]) ∧
+        ADV_主に(EVENT[4]) ∧ CONJ_が(多い(EVENT[6], SITUATION[1]), いる(EVENT[13], ENTITY[7])))
+
+# ::id 13_wikipedia_KYOTO_CLT_00007,13;NJ
+# ::snt 池波 正太郎 は 小説 の 中 で 登場 人物 に 、 梅雨 時 の 冷える 日 に 食べ させ て おり 、 「 梅雨の湯豆腐 」 という 短編 作品 も ある 。
+∃ EVENT[8] EVENT[9] EVENT[4] EVENT[11] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[1] ENTITY[10] (
+ 小説(ENTITY[2]) ∧
+  の_中(ENTITY[2], ENTITY[1]) ∧
+   登場_人物(ENTITY[3]) ∧
+    梅雨_時(ENTITY[6]) ∧
+     冷える(EVENT[8]) ∧ 時間(EVENT[8]) = ENTITY[5] ∧ の_日(ENTITY[6], ENTITY[5]) ∧
+      という_短編_作品(ENTITY[梅雨の湯豆腐], ENTITY[10]) ∧
+       させ_て_おり(EVENT[4], ENTITY[池波_正太郎], ENTITY[3], 食べ(EVENT[9], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[5]) ∧
+        で(EVENT[4]) = ENTITY[1] ∧ ある(EVENT[11], ENTITY[10]))
+
+# ::id 14_wikipedia_KYOTO_CLT_00007,14;NJ
+# ::snt 食通 の 池波 らしく 、 ある とき は 焼き 干し の 鮎 を 出汁 に 使う と言う 贅沢 な もの も あっ た 。
+∃ ENTITY[5] ATTRIB[4] EVENT[2] EVENT[10] EVENT[11] ENTITY[1] ENTITY[8] ENTITY[9] ENTITY[7] ENTITY[3] ENTITY[6] (
+ とき(ENTITY[6]) ∧
+  食通(ENTITY[1]) ∧
+   の_xxx(ENTITY[1], ENTITY[池波]) ∧
+    贅沢_な(ATTRIB[4]) ∧
+     ENTITY[5] = *pro*{ENTITY[池波], ENTITY[1]} ∧
+      焼き_干し(ENTITY[8]) ∧
+       の_鮎(ENTITY[8], ENTITY[7]) ∧
+        出汁(ENTITY[9]) ∧
+         ATTRIBUTE_もの(ATTRIB[4], ENTITY[3]) ∧
+          THAT_もの(使う(EVENT[10], ENTITY[5], ENTITY[7]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+                時間(EVENT[10]) = ENTITY[6], ENTITY[3]) ∧
+          past(EVENT[11]) ∧ らしく(EVENT[2], _, ENTITY[池波]) ∧ あっ_た(EVENT[11], ENTITY[3]))
+
+# ::id 15_wikipedia_KYOTO_CLT_00007,15;NJ
+# ::snt なお 、 江戸 時代 の 料理 本 「 豆腐百珍 」 に 「 絶品 」 と ある 「 湯やっこ 」 は 、 湯豆腐 の 湯 の かわり に 葛湯 を 使い 、 食する まで 冷め にくく 、 豆腐 と 葛湯 の 相性 を 楽しむ もの 。
+∃ ENTITY[19] SITUATION[18] ENTITY[15] ENTITY[14] SITUATION[13] ENTITY[7] EVENT[12] EVENT[16] EVENT[17] EVENT[24] EVENT[25] ENTITY[10] ENTITY[9] ENTITY[11] ENTITY[8] GROUP[21] ENTITY[20] EVENT[6] ENTITY[4] ENTITY[3] ENTITY[5] ENTITY[1] (
+ 江戸_時代(ENTITY[4]) ∧
+  の_料理_本(ENTITY[4], ENTITY[3]) ∧
+   namely_-ENTITY-(ENTITY[3], ENTITY[豆腐百珍]) ∧
+    絶品(ENTITY[5]) ∧
+     ある(EVENT[6], ENTITY[1]) ∧ と(EVENT[6]) = ENTITY[5] ∧ に(EVENT[6]) = ENTITY[豆腐百珍] ∧
+      湯やっこ(ENTITY[1]) ∧
+      ENTITY[7] = *pro*{ENTITY[1], ENTITY[豆腐百珍], ENTITY[5], ENTITY[3], ENTITY[4]} ∧
+       湯豆腐(ENTITY[10]) ∧
+        の_湯(ENTITY[10], ENTITY[9]) ∧
+         の_かわり(ENTITY[9], ENTITY[8]) ∧
+          葛湯(ENTITY[11]) ∧
+           ENTITY[14] = *pro*{ENTITY[1], ENTITY[8], ENTITY[11], ENTITY[9], ENTITY[10], ENTITY[豆腐百珍], ENTITY[5], ENTITY[3], ENTITY[4]} ∧
+            ENTITY[15] = *pro*{ENTITY[1], ENTITY[8], ENTITY[11], ENTITY[9], ENTITY[10], ENTITY[豆腐百珍], ENTITY[5], ENTITY[3], ENTITY[4]} ∧
+             FACT(SITUATION[13], 食する(EVENT[16], ENTITY[14], ENTITY[15])) ∧
+              ENTITY[19] = *pro*{ENTITY[1], ENTITY[8], ENTITY[11], ENTITY[9], ENTITY[10], ENTITY[豆腐百珍], ENTITY[5], ENTITY[3], ENTITY[4]} ∧
+               CONJ_と(∃ ENTITY[22] (豆腐(ENTITY[22]) ∧ is_element_of(ENTITY[22], GROUP[21])),
+                ∃ ENTITY[23] (葛湯(ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[21]))) ∧
+                の_相性(GROUP[21], ENTITY[20]) ∧
+                 もの(SITUATION[18], 楽しむ(EVENT[24], ENTITY[19], ENTITY[20])) ∧
+                  使い(EVENT[12], ENTITY[7], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[8] ∧
+                   冷め_にくく(EVENT[17], ENTITY[1]) ∧ まで(EVENT[17]) = SITUATION[13] ∧
+                    xxx(EVENT[25], ENTITY[1], SITUATION[18]))
+
+# ::id 16_wikipedia_KYOTO_CLT_00007,16;NJ
+# ::snt 湯豆腐 を 詠ん だ 名句 に 久保田 万太郎 の 「 湯豆腐やいのちのはてのうすあかり 」 が ある 。
+∃ EVENT[4] EVENT[5] ENTITY[3] ENTITY[1] (
+ 湯豆腐(ENTITY[3]) ∧
+  詠ん_だ(EVENT[4], ENTITY[1], ENTITY[3]) ∧ 名句(ENTITY[1]) ∧
+   の_xxx(ENTITY[久保田_万太郎], ENTITY[湯豆腐やいのちのはてのうすあかり]) ∧
+    past(EVENT[4]) ∧ ある(EVENT[5], ENTITY[湯豆腐やいのちのはてのうすあかり]) ∧ に(EVENT[5]) = ENTITY[1])

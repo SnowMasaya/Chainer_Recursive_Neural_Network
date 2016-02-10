@@ -1,0 +1,332 @@
+# ::id 1_blog_KNB_004_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+( EVENT-2 / EVENT
+      :LINK ( ENTITY-1 / 京都_観光))
+
+# ::id 2_blog_KNB_004_Kyoto_1-1-1-01;NJ
+# ::snt 紅葉 真っ盛り です
+( EVENT-3 / です
+      :ARG0 ( ENTITY-1 / pro
+             :pick0)
+      :ARG1 ( ENTITY-2 / 紅葉_真っ盛り))
+
+# ::id 3_blog_KNB_004_Kyoto_1-1-10-01;NJ
+# ::snt 今日 の 構内 の 紅葉 は きれい だっ た ので 、 たくさん の 人 が 見 て 、 きれい だ なあ という 感覚 を 共有 し たい 気持ち は あり ます が ・・・。
+( CRD-20 / ので
+      :op1 ( EVENT-4 / きれい_だっ_た
+             :ARG0 ( ENTITY-1 / 紅葉
+                    :の ( ENTITY-3 / 構内)
+                    :の ( ENTITY-2 / 今日))
+             :MOD ( mod-22 / past))
+      :op2 ( EVENT-13 / あり_ます
+             :ARG0 ( SITUATION-5 / 気持ち
+                    :THAT ( CONJ-19 / CONJ_te (
+                                  :op1 ( ENTITY-7 人) ( EVENT-8 ( 見_て
+                                                :ARG0 ENTITY-7)))
+                           :op2 ( EVENT-12 / 共有する.0_たい
+                                  :ARG0 ( ENTITY-6 / ENTITY
+                                         :namely ( PICK-14 / or
+                                                :op1 ENTITY-1
+                                                :op2 ENTITY-2
+                                                :op3 ENTITY-3))
+                                  :ARG1 ( ENTITY-9 / 感覚
+                                         :THAT ( EVENT-11 / きれい_だ
+                                                :ARG0 ( PICK-15 / or
+                                                       :op1 ENTITY-6
+                                                       :op2 ENTITY-1
+                                                       :op3 ENTITY-2
+                                                       :op4 ENTITY-3)
+                                                :domain-of ( MD-17 / MD_なあ)))))))
+      :domain-of ( MD-21 / MD_が))
+
+# ::id 4_blog_KNB_004_Kyoto_1-1-2-01;NJ
+# ::snt 大学 構内 も すっかり 紅く なっ て 、 きれい です ね 。
+( CONJ-5 / CONJ_te
+      :op1 ( EVENT-2 / 紅く_なっ_て
+             :ARG0 ( ENTITY-1 / 大学_構内)
+             :MOD ( mod-7 / すっかり))
+      :op2 ( EVENT-4 / きれい_です
+             :ARG0 ENTITY-1)
+      :domain-of ( MD-6 / MD_ね))
+
+# ::id 5_blog_KNB_004_Kyoto_1-1-3-01;NJ
+# ::snt 市内 の 名所 に 見 に 行っ て み たい もの です が 、 ＮＦ やら 授業 やら で なかなか 時間 が とれ そう に あり ませ ん 。
+( CONJ-22 / CONJ_が
+      :op1 ( EVENT-8 / です
+             :ARG1 ( SITUATION-1 / もの
+                    :THAT ( EVENT-7 / 行っ_て_み_たい
+                           :ARG0 ( ENTITY-2 / speaker
+                                  :pick0)
+                           :に ( EVENT-6 / 見
+                                  :ARG0 ENTITY-2)
+                           :に ( ENTITY-3 / 名所
+                                  :の ( ENTITY-4 / 市内)))))
+      :op2 ( EVENT-16 / あり_ませ
+             :ARG0 ( ENTITY-9 / ENTITY
+                    :namely ( PICK-18 / or
+                           :op1 ENTITY-3
+                           :op2 ENTITY-4))
+             :に ( EVENT-15 / とれ
+                    :ARG0 ENTITY-9
+                    :ARG1 ( ENTITY-14 / 時間)
+                    :domain-of ( MD-20 / MD_そう))
+             :で ( ENTITY-10 / ENTITY
+                    :やら ( GROUP-11 / CONJ_やら
+                           :op1 ( ENTITY-ＮＦ / ENTITY
+                                  :name ( n-24 / name
+                                         :op1 "ＮＦ"))
+                           :op2 ( GROUP-11 / AND
+                                  :op1 ( ENTITY-12 / 授業)
+                                  :op2 ENTITY-25)))
+             :MOD ( mod-23 / なかなか)
+             :domain-of ( NEG-21 / NEG)))
+
+# ::id 6_blog_KNB_004_Kyoto_1-1-4-01;NJ
+# ::snt 時間 が とれ た ころ に は 散っ て い た 、 なんて こと に なら なけれ ば いい の です が 。
+( EVENT-14 / いい_の_です
+      :ARG0 ( ENTITY-1 / ENTITY
+             :ば ( EVENT-13 / なら
+                    :ARG0 ( ENTITY-3 / ENTITY
+                           :namely ENTITY-1)
+                    :ARG1 ( ENTITY-4 / こと
+                           :LINK ( SITUATION-5 / SITUATION
+                                  :OF ( EVENT-12 / 散っ_て_い_た
+                                         :ARG0 ( ENTITY-7 / ENTITY
+                                                :namely ( PICK-18 / or
+                                                       :op1 ENTITY-4
+                                                       :op2 ENTITY-3
+                                                       :op3 ENTITY-1))
+                                         :に ( SITUATION-8 / ころ
+                                                :THAT ( EVENT-11 / とれ_た
+                                                       :ARG0 ( PICK-19 / or
+                                                              :op1 ENTITY-7
+                                                              :op2 ENTITY-4
+                                                              :op3 ENTITY-3
+                                                              :op4 ENTITY-1)
+                                                       :ARG1 ( ENTITY-10 / 時間)
+                                                       :MOD ( mod-22 / past)))
+                                         :MOD ( mod-23 / past))))
+                    :domain-of ( NEG-20 / NEG)))
+      :domain-of ( MD-21 / MD_が))
+
+# ::id 7_blog_KNB_004_Kyoto_1-1-5-01;NJ
+# ::snt 個人的 に は ここ から が 本題 。
+( EVENT-4 / EVENT
+      :ARG1 ( ENTITY-3 / 本題)
+      :ARG0_から ( ENTITY-2 / ここ
+             :pick0)
+      :に ( ENTITY-1 / 個人的))
+
+# ::id 8_blog_KNB_004_Kyoto_1-1-6-01;NJ
+# ::snt 大学 に 入学 し て から ずっと 疑問 に 思っ て い た の です が 、 高校生 や 中年 女性 の 団体 が バス で 大学 に やってき て 時計台 の 前 で 記念 撮影 など を し て いる の は 、 京都 大学 が 京都 の 観光 名所 の 一部 に なっ て いる から な ん でしょ う か 。
+( CONJ-31 / CONJ_が
+      :op1 ( EVENT-6 / 思っ_て_い_た_の_です
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :に ( ENTITY-5 / 疑問)
+             :TE_から ( EVENT-4 / 入学する.0_て
+                    :ARG0 ENTITY-1
+                    :に ( ENTITY-3 / 大学))
+             :MOD ( mod-33 / ずっと)
+             :MOD ( mod-34 / past))
+      :op2 ( EVENT-26 / な_ん_でしょ
+             :ARG0 ( SITUATION-8 / の
+                    :THAT ( CONJ-29 / CONJ_te
+                           :op1 ( EVENT-15 / やってき_て
+                                  :ARG0 ( ENTITY-9 / 団体
+                                         :の ( CONJ-27 / CONJ_や
+                                                :op1 ( GROUP-10 / AND
+                                                       :op1 ( ENTITY-11 / 高校生)
+                                                       :op2 ENTITY-37)
+                                                :op2 ( GROUP-36 / AND
+                                                       :op1 ( ENTITY-12 / 中年_女性)
+                                                       :op2 ENTITY-38)))
+                                  :に ( ENTITY-14 / 大学)
+                                  :で ( ENTITY-13 / バス))
+                           :op2 ( EVENT-20 / し_て_いる
+                                  :ARG0 ENTITY-9
+                                  :ARG1 ( ENTITY-18 / ENTITY
+                                         :など ( ENTITY-19 / 記念_撮影))
+                                  :で ( ENTITY-16 / 前
+                                         :の ( ENTITY-17 / 時計台)))))
+             :から ( EVENT-25 / なっ_て_いる
+                    :ARG0 ( ENTITY-22 / 京都_大学)
+                    :に ( ENTITY-23 / 一部
+                           :の ( ENTITY-24 / 観光_名所
+                                  :の ( ENTITY-京都 / ENTITY
+                                         :name ( n-35 / name
+                                                :op1 "京都")))))
+             :domain-of ( MD-30 / MD_う))
+      :domain-of ( QUEST-32 / QUEST))
+
+# ::id 9_blog_KNB_004_Kyoto_1-1-7-01;NJ
+# ::snt どうも 観光 、 特に 京都 観光 と なる と 寺 や 神社 なんか を 思い浮かべる ので 、 大学 が 観光地 で ある と すれ ば 、 それ は とても 意外 で 新鮮 な 感じ が し ます 。
+( CRD-39 / ので
+      :op1 ( CND-32 / と (
+                    :op1 ( ENTITY-3 観光) ( ENTITY-2 特に_京都_観光) ( ENTITY-3 ( ENTITY
+                                  :NAMELY ENTITY-2)) ( EVENT-4 ( なる
+                                  :と ENTITY-3)))
+             :op2 ( EVENT-9 / 思い浮かべる
+                    :ARG0 ( ENTITY-1 / speaker
+                           :pick0)
+                    :を ( ENTITY-5 / ENTITY
+                           :OF ( CONJ-31 / CONJ_や
+                                  :op1 ( GROUP-6 / AND
+                                         :op1 ( ENTITY-7 / 寺)
+                                         :op2 ENTITY-43)
+                                  :op2 ( GROUP-42 / AND
+                                         :op1 ( ENTITY-8 / 神社)
+                                         :op2 ENTITY-44)))
+                    :MOD ( mod-40 / どうも)))
+      :op2 ( CND-38 / ば (
+                    :op1 ( ENTITY-12 大学) ( ENTITY-13 観光地) ( EVENT-11 ( すれ
+                                  :THAT ( EVENT-14 / で_ある
+                                         :ARG0 ENTITY-12
+                                         :ARG1 ENTITY-13))))
+             :op2 ( EVENT-23 / し_ます
+                    :ARG0 ( EVENT-22 / EVENT
+                           :ARG0 ( PICK-24 / or
+                                  :op1 ENTITY-12
+                                  :op2 ENTITY-13)
+                           :ARG1 ( ENTITY-17 / 感じ
+                                  :ARG0-of ( CONJ-37 / CONJ_te
+                                         :op1 ( EVENT-19 / 意外_で)
+                                         :op2 ( EVENT-20 / 新鮮_な)
+                                         :MOD ( mod-41 / とても)))))))
+
+# ::id 10_blog_KNB_004_Kyoto_1-1-8-01;NJ
+# ::snt 考え て みれ ば 京都大学 は それなり に 歴史 の ある 大学 で 、 見所 も ある もの だ けれども 、 それ が 遠く から はるばる やってき た 人たち の 巡回 ルート の 中 に 入る という の は 自分 の 頭 の 中 に は ない 発想 で 、 それ は つまり 京都大学 と 金閣 銀閣 清水寺 その 他 が 肩 を 並べ て いる と も 言い換え られる の で は ない か と 思い ます 。
+( CONJ-50 / CONJ_te
+      :op1 ( CRD-49 / けれども
+             :op1 ( CND-48 / ば (
+                           :op1 ( ENTITY-2 ( ENTITY
+                                         :namely ENTITY-1)) ( EVENT-3 ( 考え_て_みれ
+                                         :ARG0 ENTITY-2)))
+                    :op2 ( EVENT-13 / だ
+                           :ARG0 ( ENTITY-京都大学 / ENTITY
+                                  :name ( n-54 / name
+                                         :op1 "京都大学"))
+                           :ARG1 ( CONJ-47 / CONJ_で
+                                  :op1 ( GROUP-4 / AND
+                                         :op3 ( EVENT-9 / ある
+                                                :ARG0 ( ENTITY-8 / 歴史)
+                                                :に ( ENTITY-7 / それなり)
+                                                :LOC ( ENTITY-5 / 大学))
+                                         :op4 ENTITY-5
+                                         :op1 ENTITY-7
+                                         :op2 ENTITY-8)
+                                  :op2 ( GROUP-58 / AND
+                                         :op1 ( ENTITY-11 / 見所)
+                                         :op2 ( ENTITY-10 / もの
+                                                :THAT ( EVENT-12 / ある
+                                                       :ARG0 ENTITY-11))
+                                         :op3 ENTITY-59))))
+             :op2 ( EVENT-30 / で
+                    :ARG0 ( ENTITY-14 / の
+                           :THAT ( EVENT-23 / 入る
+                                  :ARG0 ( PICK-41 / or
+                                         :op1 ENTITY-1
+                                         :op2 ENTITY-京都大学)
+                                  :に ( ENTITY-16 / 中
+                                         :の ( ENTITY-17 / 巡回_ルート
+                                                :の ( ENTITY-18 / 人たち
+                                                       :ARG0-of ( EVENT-21 / やってき_た
+                                                              :から ( ENTITY-20 / 遠く)
+                                                              :MOD ( mod-51 / はるばる)
+                                                              :MOD ( mod-52 / past)))))))
+                    :ARG1 ( ENTITY-24 / 発想
+                           :ARG0-of ( EVENT-29 / ない
+                                  :に ( ENTITY-26 / 中
+                                         :の ( ENTITY-27 / 頭
+                                                :の ( PICK-42 / or
+                                                       :op1 ENTITY-26
+                                                       :op2 ENTITY-24
+                                                       :op3 ENTITY-14
+                                                       :op4 ENTITY-16
+                                                       :op5 ENTITY-17
+                                                       :op6 ENTITY-18
+                                                       :op7 ENTITY-20
+                                                       :op8 ENTITY-1
+                                                       :op9 ENTITY-京都大学)))))))
+      :op2 ( EVENT-31 / 思い_ます
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :THAT ( EVENT-39 / 言い換え_られる_の
+                    :ARG0 ( PICK-44 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-14
+                           :op3 ENTITY-26
+                           :op4 ENTITY-27
+                           :op5 ENTITY-16
+                           :op6 ENTITY-17
+                           :op7 ENTITY-18
+                           :op8 ENTITY-20
+                           :op9 ENTITY-京都大学
+                           :op10 ENTITY-24)
+                    :ARG1 ( PICK-43 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-14
+                           :op3 ENTITY-26
+                           :op4 ENTITY-27
+                           :op5 ENTITY-16
+                           :op6 ENTITY-17
+                           :op7 ENTITY-18
+                           :op8 ENTITY-20
+                           :op9 ENTITY-京都大学
+                           :op10 ENTITY-24)
+                    :と ( EVENT-38 / 並べ_て_いる
+                           :ARG0 ( GROUP-35 / CONJ_と
+                                  :op1 ENTITY-京都大学
+                                  :op2 ( ENTITY-金閣 / ENTITY
+                                         :name ( n-55 / name
+                                                :op1 "金閣"))
+                                  :op3 ( ENTITY-銀閣 / ENTITY
+                                         :name ( n-56 / name
+                                                :op1 "銀閣"))
+                                  :op4 ( ENTITY-清水寺 / ENTITY
+                                         :name ( n-57 / name
+                                                :op1 "清水寺"))
+                                  :op5 ( ENTITY-36 / 他))
+                           :ARG1 ( ENTITY-37 / 肩))
+                    :MOD ( mod-53 / つまり))))
+
+# ::id 11_blog_KNB_004_Kyoto_1-1-9-01;NJ
+# ::snt おそらく 大学 が 自由 で オープン な 雰囲気 を 醸し出し て いる の も この 現象 の 理由 の ひとつ な の で は ない か と 考え ます が 、 これ を どう とらえ て いい の か 自分 に は よく わかり ませ ん 。
+( CONJ-34 / CONJ_が
+      :op1 ( EVENT-2 / 考え_ます
+             :ARG0 ( ENTITY-1 / speaker
+                    :pick0)
+             :THAT ( EVENT-13 / な_の
+                    :ARG0 ( SITUATION-3 / の
+                           :THAT ( EVENT-9 / 醸し出し_て_いる
+                                  :ARG0 ( ENTITY-4 / 大学)
+                                  :ARG1 ( ENTITY-5 / 雰囲気
+                                         :ARG0-of ( CONJ-23 / CONJ_te
+                                                :op1 ( EVENT-7 / 自由_で)
+                                                :op2 ( EVENT-8 / オープン_な)))))
+                    :ARG1 ( ENTITY-10 / ひとつ
+                           :の ( ENTITY-11 / 理由
+                                  :の ( ENTITY-12 / 現象)))
+                    :MOD ( mod-35 / おそらく)))
+      :op2 ( EVENT-16 / わかり_ませ
+             :ARG0 ENTITY-1
+             :に ( ENTITY-15 / ENTITY
+                    :namely ( PICK-22 / or
+                           :op1 ENTITY-12
+                           :op2 ENTITY-10
+                           :op3 ENTITY-11
+                           :op4 ENTITY-4
+                           :op5 ENTITY-5))
+             :THAT ( EVENT-19 / とらえ_て_いい_の
+                    :ARG1 ( PICK-31 / or
+                           :op1 ENTITY-1
+                           :op2 ENTITY-15
+                           :op3 ENTITY-12
+                           :op4 ENTITY-10
+                           :op5 ENTITY-11
+                           :op6 ENTITY-4
+                           :op7 ENTITY-5)
+                    :ADV ENTITY-18
+                    :domain-of ( QUEST-32 / QUEST))
+             :domain-of ( NEG-33 / NEG)
+             :MOD ( mod-36 / よく)))

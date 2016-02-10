@@ -1,0 +1,152 @@
+# ::id 1_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ご当地バンザイ
+∃ EVENT[2] ENTITY[1] (ご当地バンザイ(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ／ 探そう つくろう 東北 の 宝
+∃ ENTITY[6] ENTITY[3] EVENT[4] EVENT[7] EVENT[8] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  ENTITY[6] = *pro* ∧
+   探そう(EVENT[4], ENTITY[3], ENTITY[1]) ∧ つくろう(EVENT[7], ENTITY[6], ENTITY[1]) ∧ の_宝(ENTITY[東北], ENTITY[1]) ∧
+    xxx(EVENT[8]) ∧ LINK(EVENT[8]) = ENTITY[1])
+
+# ::id 3_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt ぶらり 訪ね た 野外イベント で 、 地域自慢 の 汁物 を 振る舞う コーナー に 行列 が でき て い まし た 。
+∃ ENTITY[3] EVENT[4] EVENT[10] EVENT[12] ENTITY[9] ENTITY[8] ENTITY[11] ENTITY[6] ENTITY[1] (
+ ENTITY[3] = *pro* ∧
+  訪ね_た(EVENT[4], ENTITY[3]) ∧ LOC(EVENT[4]) = ENTITY[1] ∧ 野外イベント(ENTITY[1]) ∧
+   地域自慢(ENTITY[9]) ∧
+    の_汁物(ENTITY[9], ENTITY[8]) ∧
+     振る舞う(EVENT[10], ENTITY[6], ENTITY[8]) ∧ コーナー(ENTITY[6]) ∧
+      行列(ENTITY[11]) ∧
+       ADV_ぶらり(EVENT[4]) ∧
+        past(EVENT[4]) ∧
+         past(EVENT[12]) ∧
+          でき_て_い_まし_た(EVENT[12], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[6] ∧ で(EVENT[12]) = ENTITY[1])
+
+# ::id 4_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 「 ご当地 の 味 」 を 楽しむ 人たち は 「 うめえ なぁ 」 「 懐かしい っちゃ ね 」 「 ん だ ねぇ 」 と 口々 に 語り 、 顔 に は ほんのり 笑み が 浮かん で い ます 。
+∃ ENTITY[10] ENTITY[8] EVENT[9] EVENT[12] EVENT[7] EVENT[16] ENTITY[6] ENTITY[15] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[14] (
+ ご当地(ENTITY[4]) ∧
+  の_味(ENTITY[4], ENTITY[3]) ∧
+   楽しむ(EVENT[5], ENTITY[1], ENTITY[3]) ∧ 人たち(ENTITY[1]) ∧
+    顔(ENTITY[14]) ∧
+     口々(ENTITY[6]) ∧
+      ENTITY[8] = *pro*{ENTITY[1], ENTITY[6], ENTITY[3], ENTITY[4]} ∧
+       ENTITY[10] = *pro*{ENTITY[1], ENTITY[6], ENTITY[3], ENTITY[4]} ∧
+        笑み(ENTITY[15]) ∧
+         ADV_ん(EVENT[12]) ∧
+          ADV_ほんのり(EVENT[16]) ∧
+           語り(EVENT[7], ENTITY[1],
+            うめえ(EVENT[9], ENTITY[8]) ∧ MD_っちゃ(∃ EVENT[11] 懐かしい(EVENT[11], ENTITY[10])) ∧ だ(EVENT[12])) ∧
+            に(EVENT[7]) = ENTITY[6] ∧ 浮かん_で_い_ます(EVENT[16], ENTITY[15]) ∧ に(EVENT[16]) = ENTITY[14])
+
+# ::id 5_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 「 ご当地 」 。
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[ご当地])
+
+# ::id 6_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt その 響き は 心 を わくわく さ せ ます 。
+∃ EVENT[4] EVENT[3] ENTITY[2] ENTITY[1] (響き(ENTITY[1]) ∧ 心(ENTITY[2]) ∧ せ_ます(EVENT[3], ENTITY[1], ENTITY[2], わくわくする.0(EVENT[4], ENTITY[2])))
+
+# ::id 7_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 地元発 の キャラクター が 続々 生まれ 、 その 土地 を 盛り上げ 、 地方 の 知ら れ ざる 物産 を 紹介 する テレビ番組 も すごい 人気 とか 。
+∃ ATTRIB[16] SITUATION[9] SITUATION[8] ENTITY[1] EVENT[4] EVENT[7] EVENT[14] EVENT[17] EVENT[18] ENTITY[3] ENTITY[2] ENTITY[11] ENTITY[10] ENTITY[15] ENTITY[6] (
+ 土地(ENTITY[6]) ∧
+  ENTITY[1] = *pro* ∧
+   地元発(ENTITY[3]) ∧
+    の_キャラクター(ENTITY[3], ENTITY[2]) ∧
+     地方(ENTITY[11]) ∧
+      ¬ ∃ EVENT[13] 知ら(EVENT[13], _, ENTITY[10]) ∧ の_物産(ENTITY[11], ENTITY[10]) ∧
+       テレビ番組(SITUATION[9], 紹介する.0(EVENT[14], _, ENTITY[10])) ∧
+        すごい(ATTRIB[16]) ∧
+         ATTRIBUTE_人気(ATTRIB[16], ENTITY[15]) ∧
+          FACT(SITUATION[8], xxx(EVENT[17], SITUATION[9], ENTITY[15])) ∧
+           ADV_続々(EVENT[4]) ∧
+            生まれ(EVENT[4], ENTITY[2]) ∧ 盛り上げ(EVENT[7], ENTITY[2], ENTITY[6]) ∧
+             xxx(EVENT[18], _, ENTITY[1]) ∧ とか(EVENT[18]) = SITUATION[8])
+
+# ::id 8_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 人々 の 心 を くすぐる 理由 は 、 都会 の 洗練さ と は ひと味 違う 「 何でも あり 」 の ユニークさ や 、 ごった煮 の エネルギー が 生み出す パワー 。
+∃ ENTITY[2] SITUATION[1] EVENT[5] EVENT[22] ENTITY[4] ENTITY[3] GROUP[6] ENTITY[10] ENTITY[9] (
+ 都会(ENTITY[10]) ∧
+  の_洗練さ(ENTITY[10], ENTITY[9]) ∧
+   ENTITY[2] = *pro* ∧
+    人々(ENTITY[4]) ∧
+     の_心(ENTITY[4], ENTITY[3]) ∧
+      理由(SITUATION[1], くすぐる(EVENT[5], ENTITY[2], ENTITY[3])) ∧
+       CONJ_や(∃ ENTITY[14] SITUATION[13] EVENT[11] EVENT[15] ENTITY[7] (
+             ENTITY[14] = *pro*{ENTITY[7], ENTITY[9], ENTITY[10], ENTITY[3], ENTITY[4]} ∧
+              FACT(SITUATION[13], あり(EVENT[15], ENTITY[14])) ∧
+               違う(EVENT[11], ENTITY[7]) ∧ と(EVENT[11]) = ENTITY[9] ∧
+                の_ユニークさ(SITUATION[13], ENTITY[7]) ∧
+                ADV_ひと味(EVENT[11]) ∧ ADV_何でも(EVENT[15]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+        ∃ EVENT[21] ENTITY[20] ENTITY[19] ENTITY[17] (
+         ごった煮(ENTITY[20]) ∧
+          の_エネルギー(ENTITY[20], ENTITY[19]) ∧
+           生み出す(EVENT[21], ENTITY[19], ENTITY[17]) ∧ パワー(ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[6]))) ∧
+        xxx(EVENT[22], SITUATION[1], GROUP[6]))
+
+# ::id 9_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt それ に 、 素朴 で 飾ら ない 風土 そのもの の 味わい な の でしょ う 。
+∃ ENTITY[1] (
+ ENTITY[1] = *pro* ∧
+  MD_う(∃ ENTITY[8] ENTITY[2] EVENT[9] ENTITY[4] ENTITY[3] (
+        ENTITY[2] = それ ∧
+         ENTITY[8] = そのもの{ENTITY[3], ENTITY[1], ENTITY[2]} ∧
+          ¬ ∃ EVENT[7] ENTITY[6] (素朴(ENTITY[6]) ∧ 飾ら(EVENT[7], ENTITY[4]) ∧ で(EVENT[7]) = ENTITY[6]) ∧
+           RFL_風土(ENTITY[8], ENTITY[4]) ∧
+           の_味わい(ENTITY[4], ENTITY[3]) ∧
+            な_の_でしょ(EVENT[9], ENTITY[1], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[2])))
+
+# ::id 10_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 古里 は もちろん 、 大切 な 人 の 住む まち や お気に入り の 風景 など それぞれ の 「 ご当地 」 は 、 ささやか な 喜び を 呼び起こし て くれ そう です 。
+∃ ATTRIB[7] EVENT[1] EVENT[8] ENTITY[6] ENTITY[4] ENTITY[10] ENTITY[9] GROUP[3] (
+ 大切_な(ATTRIB[7]) ∧
+  ATTRIBUTE_人(ATTRIB[7], ENTITY[6]) ∧
+   住む(EVENT[8], ENTITY[6]) ∧ LOC(EVENT[8]) = ENTITY[4] ∧ まち(ENTITY[4]) ∧
+    お気に入り(ENTITY[10]) ∧
+     の_風景(ENTITY[10], ENTITY[9]) ∧
+      CONJ_や(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[9], GROUP[3])) ∧
+       など_xxx(GROUP[3], ENTITY[ご当地]) ∧
+        ADV_もちろん(EVENT[1]) ∧
+         xxx(EVENT[1], ENTITY[古里]) ∧
+          MD_そう(∃ ATTRIB[12] ENTITY[11] EVENT[13] (
+                ささやか_な(ATTRIB[12]) ∧
+                 ATTRIBUTE_喜び(ATTRIB[12], ENTITY[11]) ∧ 呼び起こし_て_くれ_です(EVENT[13], ENTITY[ご当地], ENTITY[11]))))
+
+# ::id 11_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 東日本大震災 から ３ 度 目 の お正月 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_３_度(ENTITY[3]), 目(ENTITY[3])) ∧
+   の_お正月(ENTITY[3], ENTITY[2]) ∧ xxx(EVENT[4], ENTITY[1], ENTITY[2]) ∧ から(EVENT[4]) = ENTITY[東日本大震災])
+
+# ::id 12_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt 悲しみ は いつも ひっそり と たたずん で いる けれど 、 暮らし の 中 で 元気 の 種 を 持ち 続け たい 。
+∃ ATTRIB[3] ENTITY[1] EVENT[4] EVENT[10] ENTITY[7] ENTITY[9] ENTITY[8] ENTITY[6] ENTITY[2] (
+ 悲しみ(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ADV_ひっそり(ATTRIB[3]) ∧
+    暮らし(ENTITY[7]) ∧
+     の_中(ENTITY[7], ENTITY[6]) ∧
+      元気(ENTITY[9]) ∧
+       の_種(ENTITY[9], ENTITY[8]) ∧
+        ADV_いつも(EVENT[4]) ∧
+         CRD_けれど(たたずん_で_いる(EVENT[4], ENTITY[2]) ∧ と(EVENT[4]) = ATTRIB[3],
+          持ち_続け_たい(EVENT[10], ENTITY[1], ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[6]))
+
+# ::id 13_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt まず 足元 を 見つめ 直し ませ ん か 。
+QUEST(∃ ENTITY[1] (
+      ENTITY[1] = *pro* ∧
+       ¬ ∃ EVENT[3] ENTITY[2] (足元(ENTITY[2]) ∧ ADV_まず(EVENT[3]) ∧ 見つめ_直し_ませ(EVENT[3], ENTITY[1], ENTITY[2]))))
+
+# ::id 14_newswire_12219_K201401010W5XP1XX00001;NJ
+# ::snt わたしたち の 東北 で 「 ご当地 」 の 魅力 を 探し て み まし た 。
+∃ ENTITY[2] ENTITY[1] EVENT[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = わたしたち{ENTITY[1]} ∧
+   の_xxx(ENTITY[2], ENTITY[東北]) ∧
+    の_魅力(ENTITY[ご当地], ENTITY[3]) ∧
+     past(EVENT[4]) ∧ 探し_て_み_まし_た(EVENT[4], ENTITY[1], ENTITY[3]) ∧ で(EVENT[4]) = ENTITY[東北])

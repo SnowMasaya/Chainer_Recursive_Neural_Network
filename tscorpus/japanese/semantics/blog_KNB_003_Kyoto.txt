@@ -1,0 +1,124 @@
+# ::id 1_blog_KNB_003_Kyoto_1-1-1-01;NJ
+# ::snt ［ 京都 観光 ］
+∃ EVENT[2] ENTITY[1] (京都_観光(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 2_blog_KNB_003_Kyoto_1-1-10-01;NJ
+# ::snt 京都 で は 外国人 を 本当 に よく みかけ 、 ４ 月 の 住み 始め た 頃 は 毎回 「 あ 、 」 と 思っ て い た の だ が 、 今 で は すっかり 慣れ て 何とも 思わ なく なっ て しまっ た 自分 が いる 。
+∃ SITUATION[19] ENTITY[20] ENTITY[1] ENTITY[9] EVENT[3] EVENT[16] EVENT[21] ENTITY[2] EVENT[10] ENTITY[7] ENTITY[6] ENTITY[15] (
+ CD_４_月(ENTITY[7]) ∧
+  ENTITY[9] = *speaker*{ENTITY[7], ENTITY[1], ENTITY[京都], ENTITY[2]} ∧
+   住み_始め_た(EVENT[10], ENTITY[9]) ∧ 時間(EVENT[10]) = ENTITY[6] ∧ の_頃(ENTITY[7], ENTITY[6]) ∧
+    今(ENTITY[15]) ∧
+     past(EVENT[10]) ∧
+      ENTITY[1] = *speaker* ∧
+       外国人(ENTITY[2]) ∧
+        ENTITY[20] = 自分{ENTITY[6], ENTITY[7], ENTITY[京都], ENTITY[2]} ∧
+         CONJ_te(慣れ_て(EVENT[16], ENTITY[20]) ∧ で(EVENT[16]) = ENTITY[15],
+          FACT(SITUATION[19], ¬ ∃ EVENT[18] (past(EVENT[18]) ∧ 思わ_なっ_て_しまっ_た(EVENT[18], ENTITY[20])))) ∧
+          ADV_本当_に(EVENT[3]) ∧
+           ADV_よく(EVENT[3]) ∧
+            ADV_すっかり(EVENT[16]) ∧
+             ADV_何とも(SITUATION[19]) ∧
+              CONJ_が(みかけ(EVENT[3], ENTITY[1], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[京都] ∧
+                    毎 TIME[11] (回(TIME[11]),
+                     ∃ EVENT[13] EVENT[12] (
+                      past(EVENT[12]) ∧
+                       思っ_て_い_た_の_だ(EVENT[12], ENTITY[1], xxx(EVENT[13])) ∧
+                        is_contained_in(時間(EVENT[12]), TIME[11]) ∧ 時間(EVENT[12]) = ENTITY[6])),
+               いる(EVENT[21], ENTITY[20])))
+
+# ::id 3_blog_KNB_003_Kyoto_1-1-11-01;NJ
+# ::snt 京都 に 住ん で も 心 は 大阪人 だ と 自負 し て いる のに 、 こう やっ て 少し ずつ 京都 に 染まっ て いく の かもしれない 。
+∃ SITUATION[4] ENTITY[3] ENTITY[1] EVENT[5] EVENT[8] EVENT[2] EVENT[9] ENTITY[7] ENTITY[6] (
+ 心(ENTITY[6]) ∧
+  ENTITY[1] = *speaker* ∧
+   ENTITY[3] = *speaker*{ENTITY[1]} ∧
+    FACT(SITUATION[4], 住ん_で(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[京都]) ∧
+     大阪人(ENTITY[7]) ∧
+      ADV_こう(EVENT[9]) ∧
+       CRD_のに(自負する.0_て_いる(EVENT[2], ENTITY[1],
+             だ(EVENT[8], (ENTITY[3], ENTITY[6]), ENTITY[7]) ∧ te(EVENT[8]) = SITUATION[4]),
+        CONJ_te(やっ_て(EVENT[9], ENTITY[1]),
+         少し ENTITY[12] ずつ ENTITY[11] (ENTITY[11] = ENTITY[12],
+          MD_かもしれない(∃ EVENT[13] (
+                染まっ_て_いく_の(EVENT[13], ENTITY[1]) ∧
+                 に(EVENT[13]) = ENTITY[京都] ∧ MSR(EVENT[13]) = ENTITY[11]))))))
+
+# ::id 4_blog_KNB_003_Kyoto_1-1-2-01;NJ
+# ::snt この 春 から 京都 で 下宿 を 始め た 私 が 地元 大阪 と の 違い を 感じ た こと の ひと つ に 、 観光客 の 多さ が ある 。
+∃ ENTITY[7] SITUATION[2] EVENT[6] EVENT[9] EVENT[12] ENTITY[5] ENTITY[8] ENTITY[11] ENTITY[10] ENTITY[1] ENTITY[4] (
+ 春(ENTITY[4]) ∧
+  ENTITY[7] = 私{ENTITY[1]} ∧
+   下宿(ENTITY[5]) ∧
+    始め_た(EVENT[6], ENTITY[7], ENTITY[5]) ∧ で(EVENT[6]) = ENTITY[京都] ∧ から(EVENT[6]) = ENTITY[4] ∧
+     と_の_違い(ENTITY[地元_大阪], ENTITY[8]) ∧
+      こと(SITUATION[2], 感じ_た(EVENT[9], ENTITY[7], ENTITY[8])) ∧
+       (CD_ひと_つ(ENTITY[1]), の(SITUATION[2], ENTITY[1])) ∧
+        観光客(ENTITY[11]) ∧
+         の_多さ(ENTITY[11], ENTITY[10]) ∧
+          past(EVENT[6]) ∧
+           past(EVENT[9]) ∧ ある(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[1])
+
+# ::id 5_blog_KNB_003_Kyoto_1-1-3-01;NJ
+# ::snt 特に 外国人 観光客 だ 。
+∃ ENTITY[1] EVENT[3] ENTITY[2] (ENTITY[1] = *pro* ∧ 外国人_観光客(ENTITY[2]) ∧ ADV_特に(EVENT[3]) ∧ だ(EVENT[3], ENTITY[1], ENTITY[2]))
+
+# ::id 6_blog_KNB_003_Kyoto_1-1-4-01;NJ
+# ::snt 日本 に 観光 に 来る なら やっぱり 京都 が 一番 な ん だろ う か 。
+QUEST(∀ ARB[1] EVENT[3] ENTITY[2] CND_なら(
+         ARB[1] = *arb* ∧ 観光(ENTITY[2]) ∧
+          来る(EVENT[3], ARB[1]) ∧ に(EVENT[3]) = ENTITY[2] ∧ に(EVENT[3]) = ENTITY[日本],
+         ∃ SITUATION[6] (
+          ADV_やっぱり(SITUATION[6]) ∧
+           FACT(SITUATION[6], MD_う(∃ EVENT[5] ENTITY[4] (一番(ENTITY[4]) ∧ な_ん_だろ(EVENT[5], ENTITY[京都], ENTITY[4])))))))
+
+# ::id 7_blog_KNB_003_Kyoto_1-1-5-01;NJ
+# ::snt お寺 とか も いっぱい ある し 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ お寺(ENTITY[2]) ∧ とか(ENTITY[2], ENTITY[1]) ∧ ADV_いっぱい(EVENT[3]) ∧ MD_し(ある(EVENT[3], ENTITY[1])))
+
+# ::id 8_blog_KNB_003_Kyoto_1-1-6-01;NJ
+# ::snt 歴史 とか 伝統 文化 を 残す こと が なんか アイデンティ に なっ て いる 気 も する し 。
+∃ ENTITY[3] SITUATION[2] SITUATION[1] EVENT[7] EVENT[9] EVENT[11] GROUP[4] ENTITY[8] (
+ ENTITY[3] = *pro* ∧
+  CONJ_とか(∃ ENTITY[5] (歴史(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+   ∃ ENTITY[6] (伝統_文化(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+   こと(SITUATION[2], 残す(EVENT[7], ENTITY[3], GROUP[4])) ∧
+    アイデンティ(ENTITY[8]) ∧
+     気(SITUATION[1], なっ_て_いる(EVENT[9], SITUATION[2], ENTITY[8])) ∧
+      ADV_なんか(EVENT[9]) ∧ MD_し(する(EVENT[11], SITUATION[1])))
+
+# ::id 9_blog_KNB_003_Kyoto_1-1-7-01;NJ
+# ::snt 外国人 の なか の 日本 の イメージ に 一致 する もの が あちこち に ある の かもしれない 。
+∃ EVENT[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ 外国人(ENTITY[5]) ∧
+  の_なか(ENTITY[5], ENTITY[4]) ∧
+   の_イメージ(ENTITY[日本], ENTITY[3]) ∧ の__イメージ(ENTITY[4], ENTITY[3]) ∧
+    一致する.0(EVENT[6], ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[3] ∧ もの(ENTITY[1]) ∧
+     MD_かもしれない(∃ ENTITY[7] EVENT[8] (
+           ENTITY[7] = あちこち{ENTITY[日本], ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+            ある_の(EVENT[8], ENTITY[1]) ∧ に(EVENT[8]) = ENTITY[7])))
+
+# ::id 10_blog_KNB_003_Kyoto_1-1-8-01;NJ
+# ::snt 夏休み に 金閣寺 に 行っ た とき に は 何 ヶ国 語 を 耳 に し た だろう 。
+QUEST(∃ ENTITY[1] ? ENTITY[5] (
+      何_ヶ国(ENTITY[5]) ∧ 語(ENTITY[5]) ∧
+       ENTITY[1] = *speaker* ∧
+        MD_だろう(∃ SITUATION[2] EVENT[4] EVENT[7] ENTITY[3] ENTITY[6] (
+              夏休み(ENTITY[3]) ∧
+               とき(SITUATION[2],
+                行っ_た(EVENT[4], ENTITY[1]) ∧ に(EVENT[4]) = ENTITY[金閣寺] ∧
+                 に(EVENT[4]) = ENTITY[3]) ∧
+                耳(ENTITY[6]) ∧
+                 past(EVENT[4]) ∧
+                  past(EVENT[7]) ∧
+                   し_た(EVENT[7], ENTITY[1], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+                    に(EVENT[7]) = SITUATION[2]))))
+
+# ::id 11_blog_KNB_003_Kyoto_1-1-9-01;NJ
+# ::snt おそらく 日本人 より 外国人 の 方 が 多かっ た の で は ない か 。
+∃ EVENT[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 日本人(ENTITY[1]) ∧
+  外国人(ENTITY[3]) ∧
+   の_方(ENTITY[3], ENTITY[2]) ∧
+    ADV_おそらく(EVENT[4]) ∧ past(EVENT[4]) ∧ 多かっ_た_の(EVENT[4], ENTITY[2]) ∧ より(EVENT[4]) = ENTITY[1])

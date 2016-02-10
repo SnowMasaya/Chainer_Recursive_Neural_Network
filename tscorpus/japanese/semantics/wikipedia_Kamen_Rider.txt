@@ -1,0 +1,2717 @@
+# ::id 1_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー
+∃ EVENT[1] (xxx(EVENT[1]) ∧ LINK(EVENT[1]) = ENTITY[仮面ライダー])
+
+# ::id 2_wikipedia_Kamen_Rider;NJ
+# ::snt 概要
+∃ EVENT[2] ENTITY[1] (概要(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 3_wikipedia_Kamen_Rider;NJ
+# ::snt 本作 の 基本線 は 、 等身大 の ヒーロー と 怪人 が 対決 する 「 SF怪奇アクションドラマ 」 。
+∃ EVENT[9] EVENT[10] GROUP[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 本作(ENTITY[2]) ∧
+  の_基本線(ENTITY[2], ENTITY[1]) ∧
+   等身大(ENTITY[5]) ∧
+    CONJ_と(∃ ENTITY[7] (ヒーロー(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[8] (怪人(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧
+     equals(GROUP[6], ENTITY[4]) ∧ の(ENTITY[5], ENTITY[4]) ∧
+      THAT_SF怪奇アクションドラマ(対決する.0(EVENT[9], ENTITY[4]), ENTITY[3]) ∧ xxx(EVENT[10], ENTITY[1], ENTITY[3]))
+
+# ::id 4_wikipedia_Kamen_Rider;NJ
+# ::snt 従来 の 実写 ヒーロー 物 と は 一線 を 画し た 「 異形 」 の ヒーロー 像 と 、 人間 ドラマ として の 側面 を 極力 抑え た 勧善懲悪 劇 、 怪奇ドラマ的 な 演出 、 そして 颯爽と オートバイ を 駆っ て 「 ライダーキック 」 など の ダイナミック な アクション による 格闘 シーン や 、 多彩 な 動植物 を モチーフ と し た 特異 で グロテスク な 怪人 の 登場 が 特徴 。
+∃ EVENT[37] ENTITY[36] GROUP[1] ENTITY[5] ENTITY[4] (
+ 従来(ENTITY[5]) ∧
+  の_実写_ヒーロー_物(ENTITY[5], ENTITY[4]) ∧
+   CONJ_と_そして_や(∃ EVENT[7] ENTITY[6] ENTITY[8] ENTITY[2] (
+         一線(ENTITY[6]) ∧
+          異形(ENTITY[8]) ∧
+           画し_た(EVENT[7], ENTITY[2], ENTITY[6]) ∧ と(EVENT[7]) = ENTITY[4] ∧
+            の_ヒーロー_像(ENTITY[8], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])),
+    ∃ ENTITY[10] EVENT[13] ENTITY[12] ENTITY[11] ENTITY[9] (
+     ENTITY[10] = *pro*{ENTITY[4], ENTITY[5]} ∧
+      人間_ドラマ(ENTITY[12]) ∧
+       として_の_側面(ENTITY[12], ENTITY[11]) ∧
+        THAT_勧善懲悪_劇(抑え_た(EVENT[13], ENTITY[10], ENTITY[11]), ENTITY[9]) ∧
+         ADV_極力(EVENT[13]) ∧ is_element_of(ENTITY[9], GROUP[1])),
+    ∃ ATTRIB[16] ENTITY[15] (怪奇ドラマ的_な(ATTRIB[16]) ∧ ATTRIBUTE_演出(ATTRIB[16], ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[1])),
+    ∃ ATTRIB[25] ENTITY[21] SITUATION[20] EVENT[23] ENTITY[22] ENTITY[19] ENTITY[18] ENTITY[17] (
+     ENTITY[21] = *pro*{ENTITY[ライダーキック], ENTITY[19], ENTITY[18], ENTITY[17], ENTITY[4], ENTITY[5]} ∧
+      オートバイ(ENTITY[22]) ∧
+       FACT(SITUATION[20], 駆っ_て(EVENT[23], ENTITY[21], ENTITY[22])) ∧
+        te_xxx(SITUATION[20], ENTITY[ライダーキック]) ∧
+         など(ENTITY[ライダーキック], ENTITY[19]) ∧
+          ダイナミック_な(ATTRIB[25]) ∧
+           の_アクション(ENTITY[19], ENTITY[18]) ∧ ATTRIBUTE_アクション(ATTRIB[25], ENTITY[18]) ∧
+            による_格闘_シーン(ENTITY[18], ENTITY[17]) ∧ ADV_颯爽と(EVENT[23]) ∧ is_element_of(ENTITY[17], GROUP[1])),
+    ∃ ATTRIB[30] EVENT[32] EVENT[34] EVENT[35] ENTITY[31] ENTITY[29] ENTITY[27] ENTITY[26] (
+     多彩_な(ATTRIB[30]) ∧
+      ATTRIBUTE_動植物(ATTRIB[30], ENTITY[29]) ∧
+       モチーフ(ENTITY[31]) ∧
+        し_た(EVENT[32], ENTITY[27], ENTITY[29], ENTITY[31]) ∧
+         CONJ_te(特異_で(EVENT[34], ENTITY[27]), グロテスク_な(EVENT[35], ENTITY[27])) ∧ 怪人(ENTITY[27]) ∧
+         の_登場(ENTITY[27], ENTITY[26]) ∧ is_element_of(ENTITY[26], GROUP[1]))) ∧
+    特徴(ENTITY[36]) ∧ xxx(EVENT[37], GROUP[1], ENTITY[36]))
+
+# ::id 5_wikipedia_Kamen_Rider;NJ
+# ::snt 「 原作 漫画 」 は 石森章太郎 が 担当 し 、 少年 向け 雑誌 『 週刊ぼくらマガジン 』 （ のち に 『 週刊少年マガジン 』 に 連載誌 を 変更 ） に 漫画版 を 連載 し た 。
+∃ ENTITY[3] ENTITY[5] ENTITY[4] EVENT[2] EVENT[6] ENTITY[1] (
+ 原作_漫画(ENTITY[1]) ∧
+  past(EVENT[6]) ∧
+   ENTITY[3] = *pro*{ENTITY[1], ENTITY[石森章太郎]} ∧
+    少年_向け(ENTITY[4]) ∧ 週刊ぼくらマガジン(ENTITY[4]) ∧ 雑誌(ENTITY[4]) ∧
+     漫画版(ENTITY[5]) ∧ 担当する.0(EVENT[2], ENTITY[石森章太郎], ENTITY[1]) ∧ 連載する.0_た(EVENT[6], ENTITY[3], ENTITY[5], ENTITY[4]))
+
+# ::id 6_wikipedia_Kamen_Rider;NJ
+# ::snt 本作 終了 後 に も 登場 人物 や 敵対 組織 、 または 時系列 や 世界観 そのもの を 変え 、 多く の シリーズ が 製作 さ れ た 。
+∃ ENTITY[1] (
+ 本作_終了_後(ENTITY[1]) ∧
+  多く_の ENTITY[2] (シリーズ(ENTITY[2]),
+   ∃ EVENT[11] EVENT[12] GROUP[3] (
+    CONJ_または(∃ GROUP[4] (
+          CONJ_や(∃ ENTITY[5] (登場_人物(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+           ∃ ENTITY[6] (敵対_組織(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧ is_subset_of_or_equal_to(GROUP[4], GROUP[3])),
+     ∃ GROUP[7] (
+      CONJ_や(∃ ENTITY[8] (時系列(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[7])),
+       ∃ ENTITY[10] ENTITY[9] (
+        ENTITY[10] = そのもの{ENTITY[2], ENTITY[1]} ∧
+         RFL_世界観(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[7]))) ∧
+       is_subset_of_or_equal_to(GROUP[7], GROUP[3]))) ∧
+     past(EVENT[12]) ∧
+      変え(EVENT[11], ENTITY[2], GROUP[3]) ∧
+       製作する.0_た(EVENT[12], _, ENTITY[2]) ∧ に(EVENT[12]) = ENTITY[1])))
+
+# ::id 7_wikipedia_Kamen_Rider;NJ
+# ::snt それぞれ の 番組 は 基本的 に 、 主人公 と なる 「 ライダー 」 （ ＝ 仮面ライダー ） の 名称 を タイトル と し て いる 。
+それぞれ_の ENTITY[1] (番組(ENTITY[1]),
+ ∃ EVENT[6] EVENT[8] ENTITY[5] ENTITY[7] ENTITY[3] ENTITY[2] (
+  基本的(ENTITY[2]) ∧
+   主人公(ENTITY[5]) ∧
+    なる(EVENT[6], ENTITY[ライダー], ENTITY[5]) ∧
+     namely_-ENTITY-(ENTITY[仮面ライダー], ENTITY[ライダー]) ∧
+      の_名称(ENTITY[ライダー], ENTITY[3]) ∧
+       タイトル(ENTITY[7]) ∧ し_て_いる(EVENT[8], ENTITY[1], ENTITY[3], ENTITY[7]) ∧ に(EVENT[8]) = ENTITY[2]))
+
+# ::id 8_wikipedia_Kamen_Rider;NJ
+# ::snt 一般 に これ を 仮面ライダーシリーズ と 呼ぶ 。
+∃ ENTITY[3] ARB[1] EVENT[4] ENTITY[2] (
+ ARB[1] = *arb* ∧
+  一般(ENTITY[2]) ∧
+   ENTITY[3] = これ ∧ 呼ぶ(EVENT[4], ARB[1], ENTITY[3], ENTITY[仮面ライダーシリーズ]) ∧ に(EVENT[4]) = ENTITY[2])
+
+# ::id 9_wikipedia_Kamen_Rider;NJ
+# ::snt なお 、 1979 年 の 第 6 作 の テレビ 番組 名 も 同じく 『 仮面ライダー 』 だ が 、 新聞 や 文献 など で は 「 （ 新 ） 」 を 番組 名 に 付記 する 方法 で 本 作 と は 区別 さ れ て い た 。
+∃ SITUATION[17] ENTITY[11] SITUATION[10] EVENT[4] EVENT[14] EVENT[16] ENTITY[3] ENTITY[2] ENTITY[13] ENTITY[12] ENTITY[1] ENTITY[8] ENTITY[9] GROUP[7] ENTITY[15] ENTITY[6] (
+ 新聞(ENTITY[8]) ∧
+  文献(ENTITY[9]) ∧
+   CONJ_や(is_element_of(ENTITY[8], GROUP[7]), is_element_of(ENTITY[9], GROUP[7])) ∧
+    など(GROUP[7], ENTITY[6]) ∧
+     本_作(ENTITY[15]) ∧
+      CD_1979_年(ENTITY[3]) ∧
+       (CD_第_6_作(ENTITY[2]), の(ENTITY[3], ENTITY[2])) ∧
+        の_テレビ_番組_名(ENTITY[2], ENTITY[1]) ∧
+         ENTITY[11] = *pro*{ENTITY[1], ENTITY[6], ENTITY[9], ENTITY[8], ENTITY[仮面ライダー], ENTITY[2], ENTITY[3]} ∧
+          新(ENTITY[12]) ∧
+           番組_名(ENTITY[13]) ∧
+            方法(SITUATION[10], 付記する.0(EVENT[14], ENTITY[11], ENTITY[12], ENTITY[13])) ∧
+             ADV_なお(SITUATION[17]) ∧
+              ADV_同じく(EVENT[4]) ∧
+               past(EVENT[4]) ∧
+                past(EVENT[16]) ∧
+                 FACT(SITUATION[17],
+                  CONJ_が(だ(EVENT[4], ENTITY[1], ENTITY[仮面ライダー]),
+                   区別する.0_て_い_た(EVENT[16], _, ENTITY[1]) ∧ と(EVENT[16]) = ENTITY[15] ∧
+                    で(EVENT[16]) = SITUATION[10] ∧ で(EVENT[16]) = ENTITY[6])))
+
+# ::id 10_wikipedia_Kamen_Rider;NJ
+# ::snt 現在 で は 同作品 の 主役 ライダー で ある 「 スカイライダー 」 を 番組 名 に 付記 する 方法 で 区別 さ れる こと が ある 。
+∃ ENTITY[5] SITUATION[4] ENTITY[3] SITUATION[2] EVENT[9] EVENT[11] EVENT[12] EVENT[13] ENTITY[8] ENTITY[7] ENTITY[10] ENTITY[1] (
+ 現在(ENTITY[1]) ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   ENTITY[5] = *pro*{ENTITY[3], ENTITY[1]} ∧
+    同作品(ENTITY[8]) ∧
+     の_主役_ライダー(ENTITY[8], ENTITY[7]) ∧
+      で_ある(EVENT[9], ENTITY[スカイライダー], ENTITY[7]) ∧
+       番組_名(ENTITY[10]) ∧
+        方法(SITUATION[4], 付記する.0(EVENT[11], ENTITY[5], ENTITY[スカイライダー], ENTITY[10])) ∧
+         こと(SITUATION[2], 区別する.0(EVENT[12], _, ENTITY[3]) ∧ で(EVENT[12]) = SITUATION[4]) ∧
+          ある(EVENT[13], SITUATION[2]) ∧ で(EVENT[13]) = ENTITY[1])
+
+# ::id 11_wikipedia_Kamen_Rider;NJ
+# ::snt この 第 6 作 について は 『 仮面ライダー （ スカイライダー ） 』 を 参照 の こと 。
+∃ SITUATION[2] EVENT[5] ENTITY[1] ENTITY[3] (
+ CD_第_6_作(ENTITY[3]) ∧
+  IMP-FACT(SITUATION[2],
+   IMPERATIVE(∃ EVENT[4] (
+         namely_-ENTITY-(ENTITY[スカイライダー], ENTITY[仮面ライダー]) ∧
+          参照(EVENT[4], _, ENTITY[仮面ライダー]) ∧ について(EVENT[4]) = ENTITY[3]))) ∧
+   の_こと(SITUATION[2], ENTITY[1]) ∧ xxx(EVENT[5], _, ENTITY[1]))
+
+# ::id 12_wikipedia_Kamen_Rider;NJ
+# ::snt ストーリー
+∃ EVENT[2] ENTITY[1] (ストーリー(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 13_wikipedia_Kamen_Rider;NJ
+# ::snt 優秀 な 科学者 で オートレーサー で も ある 本郷猛 は 、 その 能力 に 目 を 付け た 悪 の 秘密 結社 ・ ショッカー によって 拉致 さ れ 、 バッタ の 能力 を 持つ 改造 人間 に さ れ て しまう 。
+∃ ATTRIB[3] EVENT[13] EVENT[14] EVENT[19] EVENT[20] ENTITY[12] ENTITY[9] ENTITY[8] ENTITY[18] ENTITY[17] ENTITY[15] EVENT[4] EVENT[6] EVENT[7] ENTITY[2] ENTITY[5] ENTITY[11] (
+ 優秀_な(ATTRIB[3]) ∧
+  ATTRIBUTE_科学者(ATTRIB[3], ENTITY[2]) ∧
+   オートレーサー(ENTITY[5]) ∧
+    CONJ_te_も(で(EVENT[4], ENTITY[本郷猛], ENTITY[2]), で(EVENT[6], ENTITY[本郷猛], ENTITY[5]),
+     ある(EVENT[7], ENTITY[本郷猛])) ∧
+     能力(ENTITY[11]) ∧
+      目(ENTITY[12]) ∧
+       付け_た(EVENT[13], ENTITY[ショッカー], ENTITY[12], ENTITY[11]) ∧
+        悪(ENTITY[9]) ∧
+         の_秘密_結社(ENTITY[9], ENTITY[8]) ∧
+          namely_-ENTITY-(ENTITY[8], ENTITY[ショッカー]) ∧
+           バッタ(ENTITY[18]) ∧
+            の_能力(ENTITY[18], ENTITY[17]) ∧
+             持つ(EVENT[19], ENTITY[15], ENTITY[17]) ∧ 改造_人間(ENTITY[15]) ∧
+              past(EVENT[13]) ∧
+               拉致する.0(EVENT[14], ENTITY[ショッカー], ENTITY[本郷猛]) ∧ さ_て_しまう(EVENT[20], _, ENTITY[本郷猛], ENTITY[15]))
+
+# ::id 14_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 ショッカー の 協力 者 に さ れ て い た 恩師 ・ 緑川博士 の 手引き により 、 脳 手術 の 寸前 で 脱出 に 成功 。
+∃ ENTITY[1] EVENT[6] EVENT[10] ENTITY[5] ENTITY[3] ENTITY[8] ENTITY[9] ENTITY[7] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  の_協力_者(ENTITY[ショッカー], ENTITY[5]) ∧
+   さ_て_い_た(EVENT[6], _, ENTITY[緑川博士], ENTITY[5]) ∧
+    恩師(ENTITY[3]) ∧
+     namely_-ENTITY-(ENTITY[3], ENTITY[緑川博士]) ∧
+      の_手引き(ENTITY[緑川博士], ENTITY[2]) ∧
+       脳_手術(ENTITY[8]) ∧
+        の_寸前(ENTITY[8], ENTITY[7]) ∧
+         脱出(ENTITY[9]) ∧
+          past(EVENT[6]) ∧
+           成功(EVENT[10], ENTITY[1], ENTITY[9]) ∧ で(EVENT[10]) = ENTITY[7] ∧
+            により(EVENT[10]) = ENTITY[2])
+
+# ::id 15_wikipedia_Kamen_Rider;NJ
+# ::snt やがて 、 緑川博士 は 脱出 の 途中 で ショッカー の 怪人 ・ 蜘蛛男 に 暗殺 さ れ て しまう が 、 その 遺志 を 継い だ 本郷 は 腰 に 巻い た ベルト の 風車 に 風圧 を 受け 、 それ を 風 の エネルギー と し て 変身 、 人類 の 味方 にして 正義 の 使者 ・ 仮面ライダー として 、 ショッカー に 立ち向かう 。
+∃ ENTITY[13] ENTITY[9] EVENT[4] EVENT[15] EVENT[17] EVENT[20] EVENT[21] EVENT[27] ENTITY[2] ENTITY[3] ENTITY[1] ENTITY[14] ENTITY[11] ENTITY[16] ENTITY[10] ENTITY[19] ENTITY[18] GROUP[22] EVENT[8] ENTITY[7] (
+ 遺志(ENTITY[7]) ∧
+  継い_だ(EVENT[8], ENTITY[本郷], ENTITY[7]) ∧
+   past(EVENT[8]) ∧
+    脱出(ENTITY[2]) ∧
+     の_途中(ENTITY[2], ENTITY[1]) ∧
+      の_怪人(ENTITY[ショッカー], ENTITY[3]) ∧
+       namely_-ENTITY-(ENTITY[3], ENTITY[蜘蛛男]) ∧
+        ENTITY[9] = それ{ENTITY[7], ENTITY[1], ENTITY[3], ENTITY[2], ENTITY[緑川博士], ENTITY[蜘蛛男], ENTITY[ショッカー]} ∧
+         ENTITY[13] = *pro*{ENTITY[10], ENTITY[9], ENTITY[本郷], ENTITY[7], ENTITY[1], ENTITY[3], ENTITY[2], ENTITY[緑川博士], ENTITY[蜘蛛男], ENTITY[ショッカー]} ∧
+          腰(ENTITY[14]) ∧
+           巻い_た(EVENT[15], ENTITY[13], ENTITY[11]) ∧ に(EVENT[15]) = ENTITY[14] ∧ ベルト(ENTITY[11]) ∧
+            の_風車(ENTITY[11], ENTITY[10]) ∧
+             風圧(ENTITY[16]) ∧
+              風(ENTITY[19]) ∧
+               の_エネルギー(ENTITY[19], ENTITY[18]) ∧
+                CONJ_にして(∃ ENTITY[24] ENTITY[23] (
+                      人類(ENTITY[24]) ∧ の_味方(ENTITY[24], ENTITY[23]) ∧ is_element_of(ENTITY[23], GROUP[22])),
+                 ∃ ENTITY[26] ENTITY[25] (
+                  正義(ENTITY[26]) ∧
+                   の_使者(ENTITY[26], ENTITY[25]) ∧ is_element_of(ENTITY[25], GROUP[22]))) ∧
+                 namely_-ENTITY-(GROUP[22], ENTITY[仮面ライダー]) ∧
+                  ADV_やがて(EVENT[4]) ∧
+                   past(EVENT[15]) ∧
+                    CONJ_が(暗殺する.0_て_しまう(EVENT[4], ENTITY[蜘蛛男], ENTITY[緑川博士]) ∧ で(EVENT[4]) = ENTITY[1],
+                     CONJ_te(受け(EVENT[17], ENTITY[9], ENTITY[16]) ∧ に(EVENT[17]) = ENTITY[10] ∧
+                           し_て(EVENT[20], ENTITY[本郷], ENTITY[9], ENTITY[18]),
+                      変身(EVENT[21], ENTITY[本郷])) ∧
+                      立ち向かう(EVENT[27], ENTITY[本郷], ENTITY[ショッカー]) ∧ として(EVENT[27]) = ENTITY[仮面ライダー]))
+
+# ::id 16_wikipedia_Kamen_Rider;NJ
+# ::snt 本郷 は 、 オートレーサー として の 師 ・ 立花藤兵衛 や 緑川博士 の 娘 ・ ルリ子 、 そして レース 仲間 で 実は FBI 捜査官 で も ある 滝和也ら の 協力 を 得 て 、 ショッカー が 送り出す 怪人達 を 次々 に 倒し て ゆく 。
+∃ ATTRIB[17] EVENT[13] EVENT[16] EVENT[18] GROUP[2] ENTITY[1] ENTITY[14] (
+ CONJ_や_そして(∃ ENTITY[4] ENTITY[3] (
+       オートレーサー(ENTITY[4]) ∧
+        として_の_師(ENTITY[4], ENTITY[3]) ∧ namely_-ENTITY-(ENTITY[3], ENTITY[立花藤兵衛]) ∧ is_element_of(ENTITY[立花藤兵衛], GROUP[2])),
+  ∃ ENTITY[5] (の_娘(ENTITY[緑川博士], ENTITY[5]) ∧ namely_-ENTITY-(ENTITY[5], ENTITY[ルリ子]) ∧ is_element_of(ENTITY[ルリ子], GROUP[2])),
+  ∃ EVENT[8] EVENT[10] EVENT[12] ENTITY[7] ENTITY[9] (
+   レース_仲間(ENTITY[7]) ∧
+    FBI_捜査官(ENTITY[9]) ∧
+     CONJ_te_も(で(EVENT[8], ENTITY[滝和也ら], ENTITY[7]), で(EVENT[10], ENTITY[滝和也ら], ENTITY[9]),
+      ある(EVENT[12], ENTITY[滝和也ら])) ∧ ADV_実は(EVENT[10]) ∧ is_element_of(ENTITY[滝和也ら], GROUP[2]))) ∧
+  の_協力(GROUP[2], ENTITY[1]) ∧
+   送り出す(EVENT[16], ENTITY[ショッカー], ENTITY[14]) ∧ 怪人達(ENTITY[14]) ∧
+    ADV_次々(ATTRIB[17]) ∧
+     CONJ_te(得_て(EVENT[13], ENTITY[本郷], ENTITY[1]),
+      倒し_て_ゆく(EVENT[18], ENTITY[本郷], ENTITY[14]) ∧ に(EVENT[18]) = ATTRIB[17]))
+
+# ::id 17_wikipedia_Kamen_Rider;NJ
+# ::snt 数多く の 怪人達 を 倒さ れ た ショッカー は 、 ライダー 打倒 の ため に フリーカメラマン の 一文字隼人 を ライダー 同様 の 改造 人間 に する が 、 一文字 は 脳 手術 直前 に ライダー ＝ 本郷 に 救出 さ れ 、 新た な 仮面ライダー と なる 。
+∃ ATTRIB[17] ENTITY[2] EVENT[11] EVENT[15] EVENT[18] ENTITY[7] ENTITY[8] ENTITY[10] ENTITY[9] ENTITY[6] ENTITY[14] ENTITY[13] ENTITY[16] EVENT[5] EVENT[3] ENTITY[12] (
+ ENTITY[2] = *pro* ∧
+  れ_た(EVENT[3], ENTITY[ショッカー], ENTITY[2], 数多く_の ENTITY[4] (怪人達(ENTITY[4]), 倒さ(EVENT[5], ENTITY[2], ENTITY[4]))) ∧
+   一文字(ENTITY[12]) ∧
+    past(EVENT[3]) ∧
+     ライダー_打倒(ENTITY[7]) ∧
+      の_ため(ENTITY[7], ENTITY[6]) ∧
+       フリーカメラマン(ENTITY[8]) ∧
+        の_xxx(ENTITY[8], ENTITY[一文字隼人]) ∧
+         ライダー_同様(ENTITY[10]) ∧
+          の_改造_人間(ENTITY[10], ENTITY[9]) ∧
+           脳_手術_直前(ENTITY[13]) ∧
+            ライダー(ENTITY[14]) ∧
+             namely_-ENTITY-(ENTITY[本郷], ENTITY[14]) ∧
+              新た_な(ATTRIB[17]) ∧
+               ATTRIBUTE_仮面ライダー(ATTRIB[17], ENTITY[16]) ∧
+                CONJ_が(する(EVENT[11], ENTITY[ショッカー], ENTITY[一文字隼人], ENTITY[9]) ∧ に(EVENT[11]) = ENTITY[6],
+                 救出する.0(EVENT[15], ENTITY[14], ENTITY[12]) ∧ に(EVENT[15]) = ENTITY[13] ∧
+                  なる(EVENT[18], ENTITY[12], ENTITY[16])))
+
+# ::id 18_wikipedia_Kamen_Rider;NJ
+# ::snt こうして 誕生 し た 2 人 の 仮面ライダー は 日本 と 海外 で 別れ て 戦い 、 時には 共闘 し ながら 、 少年仮面ライダー隊 など の 多く の 仲間たち の 協力 を 得 て 、 常人 と は 異なる 身体 に さ れ て しまっ た 「 改造 人間 」 として 苦悩 し つつ も 、 「 人間 の 自由 の ため 」 に ショッカー と 戦っ て いく 。
+∃ SITUATION[26] EVENT[7] EVENT[11] EVENT[12] EVENT[13] EVENT[19] EVENT[20] EVENT[21] EVENT[25] GROUP[9] ENTITY[4] ENTITY[16] ENTITY[14] ENTITY[24] ENTITY[23] ENTITY[22] ENTITY[1] ENTITY[18] EVENT[3] (
+ past(EVENT[3]) ∧
+  誕生する.0_た(EVENT[3], ENTITY[仮面ライダー]) ∧
+   CD_2_人(ENTITY[1]) ∧
+    の_xxx(ENTITY[1], ENTITY[仮面ライダー]) ∧
+     常人(ENTITY[18]) ∧
+      多く_の ENTITY[6] ENTITY[5] ((など(ENTITY[少年仮面ライダー隊], ENTITY[6]) ∧ の_仲間たち(ENTITY[6], ENTITY[5])), の_協力(ENTITY[5], ENTITY[4])) ∧
+       CONJ_と(is_element_of(ENTITY[日本], GROUP[9]), ∃ ENTITY[10] (海外(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9]))) ∧
+        異なる(EVENT[19], ENTITY[16]) ∧ と(EVENT[19]) = ENTITY[18] ∧ 身体(ENTITY[16]) ∧
+         さ_て_しまっ_た(EVENT[20], _, ENTITY[14], ENTITY[16]) ∧ 改造_人間(ENTITY[14]) ∧
+          人間(ENTITY[24]) ∧
+           の_自由(ENTITY[24], ENTITY[23]) ∧
+            の_ため(ENTITY[23], ENTITY[22]) ∧
+             ADV_こうして(SITUATION[26]) ∧
+              ADV_時には(EVENT[7]) ∧
+               past(EVENT[20]) ∧
+                FACT(SITUATION[26],
+                 CONJ_te(CRD_ながら(共闘する.0(EVENT[7], ENTITY[4]),
+                       CONJ_te(別れ_て(EVENT[11], ENTITY[4]) ∧ で(EVENT[11]) = GROUP[9],
+                        戦い(EVENT[12], ENTITY[4]) ∧ で(EVENT[12]) = GROUP[9]) ∧
+                        得_て(EVENT[13], ENTITY[仮面ライダー], ENTITY[4])),
+                  CRD_つつ(苦悩する.0(EVENT[21], ENTITY[仮面ライダー]) ∧ として(EVENT[21]) = ENTITY[14],
+                   戦っ_て_いく(EVENT[25], ENTITY[仮面ライダー]) ∧ と(EVENT[25]) = ENTITY[ショッカー] ∧
+                    に(EVENT[25]) = ENTITY[22]))))
+
+# ::id 19_wikipedia_Kamen_Rider;NJ
+# ::snt 製作 背景
+∃ EVENT[2] ENTITY[1] (製作_背景(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 20_wikipedia_Kamen_Rider;NJ
+# ::snt 企画
+∃ EVENT[2] ENTITY[1] (企画(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 21_wikipedia_Kamen_Rider;NJ
+# ::snt 本 作 は 、 朝日放送 の 『 部長刑事 』 の 前 に 低 視聴率 を 強い られ て い た 毎日放送 の 斎藤守慶 （ 営業 局長 ） が 、 渡邊亮徳 を通じて 東映 に 「 新しい 仮面ヒーロー 番組 を 製作 し たい 」 という 企画 を 依頼 し た の が 発端 と さ れる 。
+∃ ATTRIB[14] ENTITY[12] ATTRIB[9] ENTITY[5] SITUATION[2] EVENT[10] EVENT[7] EVENT[15] EVENT[16] EVENT[18] ENTITY[8] ENTITY[6] ENTITY[3] ENTITY[13] ENTITY[11] ENTITY[17] ENTITY[1] (
+ 本_作(ENTITY[1]) ∧
+  ENTITY[5] = *pro*{ENTITY[斎藤守慶], ENTITY[1]} ∧
+   の_xxx(ENTITY[朝日放送], ENTITY[部長刑事]) ∧
+    の_前(ENTITY[部長刑事], ENTITY[6]) ∧
+     低(ATTRIB[9]) ∧
+      ATTRIBUTE_視聴率(ATTRIB[9], ENTITY[8]) ∧
+       られ_て_い_た(EVENT[7], ENTITY[毎日放送], ENTITY[5], 強い(EVENT[10], ENTITY[5], ENTITY[8])) ∧
+        に(EVENT[7]) = ENTITY[6] ∧
+        の_xxx(ENTITY[毎日放送], ENTITY[斎藤守慶]) ∧
+         営業_局長(ENTITY[3]) ∧
+          namely_-ENTITY-(ENTITY[3], ENTITY[斎藤守慶]) ∧
+           ENTITY[12] = *pro*{ENTITY[斎藤守慶], ENTITY[渡邊亮徳], ENTITY[東映], ENTITY[3], ENTITY[6], ENTITY[8], ENTITY[毎日放送], ENTITY[部長刑事], ENTITY[朝日放送], ENTITY[1]} ∧
+            新しい(ATTRIB[14]) ∧
+             ATTRIBUTE_仮面ヒーロー_番組(ATTRIB[14], ENTITY[13]) ∧
+              THAT_企画(製作する.0_たい(EVENT[15], ENTITY[12], ENTITY[13]), ENTITY[11]) ∧
+               の(SITUATION[2],
+                依頼する.0_た(EVENT[16], ENTITY[斎藤守慶], ENTITY[11], ENTITY[東映]) ∧ を通じて(EVENT[16]) = ENTITY[渡邊亮徳]) ∧
+                発端(ENTITY[17]) ∧
+                 past(EVENT[7]) ∧
+                  past(EVENT[16]) ∧
+                   さ(EVENT[18], _, SITUATION[2], ENTITY[17]) ∧ TPC(EVENT[18]) = ENTITY[1])
+
+# ::id 22_wikipedia_Kamen_Rider;NJ
+# ::snt 東映 で は 、 系列 の 東映動画 で 制作 中 だっ た 『 タイガーマスク 』 （ よみうりテレビ ） の 人気 に も 着目 し 、 その 人気 要因 を 分析 する こと で 本 作 へ の 企画 に 到る 。
+∃ SITUATION[2] ENTITY[1] EVENT[8] EVENT[9] EVENT[10] EVENT[13] ENTITY[6] ENTITY[7] ENTITY[4] ENTITY[12] ENTITY[11] ENTITY[3] (
+ 人気_要因(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   系列(ENTITY[6]) ∧
+    の_xxx(ENTITY[6], ENTITY[東映動画]) ∧
+     制作_中(ENTITY[7]) ∧
+      だっ_た(EVENT[8], ENTITY[タイガーマスク], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[東映動画] ∧
+       namely_-ENTITY-(ENTITY[よみうりテレビ], ENTITY[タイガーマスク]) ∧
+        の_人気(ENTITY[タイガーマスク], ENTITY[4]) ∧
+         こと(SITUATION[2], 着目する.0(EVENT[9], ENTITY[3], ENTITY[4]) ∧ 分析する.0(EVENT[10], ENTITY[1], ENTITY[3])) ∧
+          本_作(ENTITY[12]) ∧
+           へ_の_企画(ENTITY[12], ENTITY[11]) ∧
+            past(EVENT[8]) ∧
+             到る(EVENT[13], ENTITY[1]) ∧ に(EVENT[13]) = ENTITY[11] ∧
+              で(EVENT[13]) = SITUATION[2] ∧ で(EVENT[13]) = ENTITY[東映])
+
+# ::id 23_wikipedia_Kamen_Rider;NJ
+# ::snt その ため 、 両者 に は 逃亡 者 の 仮面 ヒーロー で ある こと など の 共通 点 が ある 。
+∃ ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  両 ENTITY[2] (者(ENTITY[2]),
+   ∃ SITUATION[5] ENTITY[4] EVENT[8] EVENT[9] ENTITY[7] ENTITY[6] ENTITY[3] (
+    逃亡_者(ENTITY[7]) ∧
+     の_仮面_ヒーロー(ENTITY[7], ENTITY[6]) ∧
+      こと(SITUATION[5], で_ある(EVENT[8], _, ENTITY[6])) ∧
+       など(SITUATION[5], ENTITY[4]) ∧
+        の_共通_点(ENTITY[4], ENTITY[3]) ∧
+         ある(EVENT[9], ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[2] ∧ ADV(EVENT[9]) = ENTITY[1])))
+
+# ::id 24_wikipedia_Kamen_Rider;NJ
+# ::snt 本作 の 企画 は 、 平山プロデューサー によって 1970 年 初頭 に まとめ た 企画 書 「 マスクマンK 」 まで さかのぼる 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 本作(ENTITY[2]) ∧
+  の_企画(ENTITY[2], ENTITY[1]) ∧ さかのぼる(EVENT[3], ENTITY[1]) ∧ まで(EVENT[3]) = ENTITY[マスクマンK])
+
+# ::id 25_wikipedia_Kamen_Rider;NJ
+# ::snt この 企画 書 で は 、 「 仮面 の ヒーロー が 日本 征服 を 企む クロード黒原 率いる 組織 ・ ショッカー と 戦う 」 という 大まか な 筋書き が 作ら れ て い た 。
+∃ ATTRIB[3] EVENT[6] EVENT[7] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 企画_書(ENTITY[1]) ∧
+  大まか_な(ATTRIB[3]) ∧
+   仮面(ENTITY[5]) ∧
+    の_ヒーロー(ENTITY[5], ENTITY[4]) ∧
+     ATTRIBUTE_筋書き(ATTRIB[3], ENTITY[2]) ∧
+      THAT_筋書き(戦う(EVENT[6], ENTITY[4]) ∧ と(EVENT[6]) = ENTITY[ショッカー], ENTITY[2]) ∧
+      past(EVENT[7]) ∧ 作ら_て_い_た(EVENT[7], _, ENTITY[2]) ∧ で(EVENT[7]) = ENTITY[1])
+
+# ::id 26_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 その 内容 は 『 タイガーマスク 』 に 言及 し 、 「 自分 も 仮面 を 被れ ば ヒーロー に なれる 」 という 児童 の 願望 を 指摘 し て いる こと 、 主人公 ・ 九条剛 が 普通 の 体育 教師 で 鍛錬 によって ヒーロー の 力 を 得 て いる など 、 当時 流行 し て い た スポーツ根性 もの の 影響 が 強い 内容 で あっ た 。
+∃ SITUATION[23] EVENT[28] EVENT[29] EVENT[30] TIME[27] ENTITY[25] ENTITY[24] GROUP[2] ENTITY[1] (
+ 内容(ENTITY[1]) ∧
+  ∃ ENTITY[8] ENTITY[4] EVENT[5] EVENT[13] ENTITY[7] ENTITY[6] ENTITY[3] (
+   ENTITY[4] = *pro*{ENTITY[1]} ∧
+    児童(ENTITY[7]) ∧
+     ENTITY[8] = 自分{ENTITY[7], ENTITY[4], ENTITY[タイガーマスク], ENTITY[1]} ∧
+      の_願望(ENTITY[7], ENTITY[6]) ∧
+       THAT_願望(∀ EVENT[10] ENTITY[9] CND_ば(仮面(ENTITY[9]) ∧ 被れ(EVENT[10], ENTITY[8], ENTITY[9]),
+                ∃ EVENT[12] ENTITY[11] (ヒーロー(ENTITY[11]) ∧ なれる(EVENT[12], ENTITY[8], ENTITY[11]))), ENTITY[6]) ∧
+       THAT_こと(言及する.0(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[タイガーマスク] ∧
+             指摘する.0_て_いる(EVENT[13], ENTITY[4], ENTITY[6]), ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+   ∃ EVENT[18] EVENT[22] ENTITY[15] ENTITY[17] ENTITY[16] ENTITY[21] ENTITY[20] ENTITY[19] ENTITY[14] (
+    主人公(ENTITY[15]) ∧
+     namely_-ENTITY-(ENTITY[15], ENTITY[九条剛]) ∧
+      普通(ENTITY[17]) ∧
+       の_体育_教師(ENTITY[17], ENTITY[16]) ∧
+        鍛錬(ENTITY[19]) ∧
+         ヒーロー(ENTITY[21]) ∧
+          の_力(ENTITY[21], ENTITY[20]) ∧
+           THAT(CONJ_te(で(EVENT[18], ENTITY[九条剛], ENTITY[16]),
+                 得_て_いる(EVENT[22], ENTITY[九条剛], ENTITY[20]) ∧ によって(EVENT[22]) = ENTITY[19]), ENTITY[14]) ∧
+            is_element_of(ENTITY[14], GROUP[2])) ∧
+   当時(TIME[27]) ∧
+    流行する.0_て_い_た(EVENT[28], ENTITY[25]) ∧ is_contained_in(時間(EVENT[28]), TIME[27]) ∧ スポーツ根性_もの(ENTITY[25]) ∧
+     の_影響(ENTITY[25], ENTITY[24]) ∧
+      内容(SITUATION[23], 強い(EVENT[29], ENTITY[24])) ∧
+       past(EVENT[28]) ∧
+        past(EVENT[30]) ∧ で_あっ_た(EVENT[30], ENTITY[1], SITUATION[23]) ∧ など(EVENT[30]) = GROUP[2])
+
+# ::id 27_wikipedia_Kamen_Rider;NJ
+# ::snt この 企画 書 は 、 平山 による 「叩き台」的 な もの で 、 毎日放送 側 に は 提出 さ れ て おら ず 、 東映社 内 と 石森プロ 用 の もの だっ た 。
+∃ ATTRIB[3] EVENT[4] EVENT[11] ENTITY[2] GROUP[8] ENTITY[7] ENTITY[5] ENTITY[1] (
+ 企画_書(ENTITY[1]) ∧
+  毎日放送_側(ENTITY[5]) ∧
+   「叩き台」的_な(ATTRIB[3]) ∧
+    ATTRIBUTE_もの(ATTRIB[3], ENTITY[2]) ∧ による_もの(ENTITY[平山], ENTITY[2]) ∧
+     CONJ_と(∃ ENTITY[9] (東映社_内(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[8])),
+      ∃ ENTITY[10] (石森プロ_用(ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[8]))) ∧
+      の_もの(GROUP[8], ENTITY[7]) ∧
+       past(EVENT[11]) ∧
+        CONJ_te(で(EVENT[4], ENTITY[1], ENTITY[2]),
+         ¬ ∃ EVENT[6] (提出する.0_て_おら(EVENT[6], _, ENTITY[1]) ∧ に(EVENT[6]) = ENTITY[5]),
+         だっ_た(EVENT[11], ENTITY[1], ENTITY[7])))
+
+# ::id 28_wikipedia_Kamen_Rider;NJ
+# ::snt 平山 は 本 作 の 前 に 『 妖術武芸帳 』 で 「 謎 の 鉄 仮面 」 という 「 仮面 物 」 の 設定 を 創案 し て おり 、 この 際 、 石森章太郎 を アイディア 協力 者 候補 に 挙げ て い た が 、 企画 が TBS の 橋本洋二 に 渡っ て 実現 し なかっ た 。
+∃ EVENT[7] EVENT[10] EVENT[12] ENTITY[2] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[9] ENTITY[11] ENTITY[8] (
+ 際(ENTITY[8]) ∧
+  本_作(ENTITY[2]) ∧
+   の_前(ENTITY[2], ENTITY[1]) ∧
+    謎(ENTITY[6]) ∧
+     の_鉄_仮面(ENTITY[6], ENTITY[5]) ∧
+      という_仮面_物(ENTITY[5], ENTITY[4]) ∧
+       の_設定(ENTITY[4], ENTITY[3]) ∧
+        アイディア_協力_者_候補(ENTITY[9]) ∧
+         企画(ENTITY[11]) ∧
+          の_xxx(ENTITY[TBS], ENTITY[橋本洋二]) ∧
+           past(EVENT[10]) ∧
+            CONJ_が(創案する.0_て_おり(EVENT[7], ENTITY[平山], ENTITY[3]) ∧ で(EVENT[7]) = ENTITY[妖術武芸帳] ∧
+                  に(EVENT[7]) = ENTITY[1] ∧
+                  挙げ_て_い_た(EVENT[10], ENTITY[平山], ENTITY[石森章太郎]) ∧ に(EVENT[10]) = ENTITY[9] ∧
+                   ADV(EVENT[10]) = ENTITY[8],
+             CONJ_te(渡っ_て(EVENT[12], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[橋本洋二],
+              ¬ ∃ EVENT[13] (past(EVENT[13]) ∧ 実現する.0_た(EVENT[13], ENTITY[11])))))
+
+# ::id 29_wikipedia_Kamen_Rider;NJ
+# ::snt この ため 、 平山 にとって は 「 仮面 物 」 の この 「 マスクマンK 」 は 念願 の 設定 だっ た 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  仮面_物(ENTITY[2]) ∧
+   の_xxx(ENTITY[2], ENTITY[マスクマンK]) ∧
+    念願(ENTITY[4]) ∧
+     の_設定(ENTITY[4], ENTITY[3]) ∧
+      past(EVENT[5]) ∧
+       だっ_た(EVENT[5], ENTITY[マスクマンK], ENTITY[3]) ∧ にとって(EVENT[5]) = ENTITY[平山] ∧ ADV(EVENT[5]) = ENTITY[1])
+
+# ::id 30_wikipedia_Kamen_Rider;NJ
+# ::snt 次 に 起草 さ れ た 「 仮面天使 （ マスク・エンジェル ） 」 が 、 毎日放送 に 提出 さ れ た 最初 の 企画 書 と なる 。
+∃ EVENT[3] EVENT[6] EVENT[8] ENTITY[2] ENTITY[7] ENTITY[4] (
+ 次(ENTITY[2]) ∧
+  起草する.0_た(EVENT[3], _, ENTITY[仮面天使]) ∧ に(EVENT[3]) = ENTITY[2] ∧
+   namely_-ENTITY-(ENTITY[マスク.エンジェル], ENTITY[仮面天使]) ∧
+    最初(ENTITY[7]) ∧
+     提出する.0_た(EVENT[6], _, ENTITY[4], ENTITY[毎日放送]) ∧ の_企画_書(ENTITY[7], ENTITY[4]) ∧
+      past(EVENT[3]) ∧ past(EVENT[6]) ∧ なる(EVENT[8], ENTITY[仮面天使], ENTITY[4]))
+
+# ::id 31_wikipedia_Kamen_Rider;NJ
+# ::snt 平山 が 『 柔道一直線 』 の 流れ で 市川森一 と 上原正三 を 招き 、 平山 と コンビ の 長い 伊上勝 と の 3 人 の 脚本 家 によって 、 設定 など の 企画 打ち合わせ に 入っ た 。
+∃ EVENT[3] EVENT[9] EVENT[13] GROUP[2] ENTITY[1] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[12] ENTITY[11] ENTITY[10] ENTITY[4] (
+ の_流れ(ENTITY[柔道一直線], ENTITY[1]) ∧
+  CONJ_と(is_element_of(ENTITY[市川森一], GROUP[2]), is_element_of(ENTITY[上原正三], GROUP[2])) ∧
+   と_コンビ(ENTITY[平山], ENTITY[8]) ∧
+    長い(EVENT[9], (ENTITY[伊上勝], ENTITY[8])) ∧
+     (CD_3_人(ENTITY[6]), と_の(ENTITY[伊上勝], ENTITY[6])) ∧
+      の_脚本_家(ENTITY[6], ENTITY[5]) ∧
+       によって(ENTITY[5], ENTITY[4]) ∧
+        設定(ENTITY[12]) ∧
+         など(ENTITY[12], ENTITY[11]) ∧
+          の_企画_打ち合わせ(ENTITY[11], ENTITY[10]) ∧
+           past(EVENT[13]) ∧
+            招き(EVENT[3], ENTITY[平山], GROUP[2]) ∧ で(EVENT[3]) = ENTITY[1] ∧
+             入っ_た(EVENT[13], ENTITY[4]) ∧ に(EVENT[13]) = ENTITY[10])
+
+# ::id 32_wikipedia_Kamen_Rider;NJ
+# ::snt ここ で 主人公 の 名 が 本郷猛 に 決まり 、 市川 によって 「 恩師 ・ 緑川教授 殺害 の 容疑 を かけ られ た 逃亡 者 」 という 設定 に なっ た 。
+∃ ENTITY[9] ENTITY[2] ENTITY[1] EVENT[5] EVENT[14] EVENT[10] EVENT[15] ENTITY[4] ENTITY[3] ENTITY[12] ENTITY[13] ENTITY[11] ENTITY[7] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = ここ ∧
+   主人公(ENTITY[4]) ∧
+    の_名(ENTITY[4], ENTITY[3]) ∧
+     ENTITY[9] = *pro*{ENTITY[6], ENTITY[1], ENTITY[市川], ENTITY[本郷猛], ENTITY[3], ENTITY[4]} ∧
+      緑川教授_殺害(ENTITY[13]) ∧
+       恩師(ENTITY[12]) ∧
+        namely_-ENTITY-(ENTITY[12], ENTITY[13]) ∧
+         の_容疑(ENTITY[13], ENTITY[11]) ∧
+          られ_た(EVENT[10], ENTITY[7], ENTITY[9], かけ(EVENT[14], ENTITY[9], ENTITY[11])) ∧ 逃亡_者(ENTITY[7]) ∧
+           という_設定(ENTITY[7], ENTITY[6]) ∧
+            past(EVENT[10]) ∧
+             past(EVENT[15]) ∧
+              決まり(EVENT[5], ENTITY[3]) ∧ に(EVENT[5]) = ENTITY[本郷猛] ∧
+               で(EVENT[5]) = ENTITY[2] ∧
+               なっ_た(EVENT[15], ENTITY[1], ENTITY[6]) ∧ によって(EVENT[15]) = ENTITY[市川])
+
+# ::id 33_wikipedia_Kamen_Rider;NJ
+# ::snt スポ根 要素 は 薄め られ 、 主人公 は 30万 ボルト の 高圧 電流 を 浴びる 事故 で 特異 体質 と なり 、 人間 以上 の 力 を 得る という SF的 な 設定 が 加味 さ れ て いる 。
+∃ SITUATION[8] ATTRIB[7] ATTRIB[4] ENTITY[10] ENTITY[9] ENTITY[6] ENTITY[14] ENTITY[13] ENTITY[3] EVENT[2] EVENT[11] EVENT[12] EVENT[15] EVENT[16] ENTITY[1] ENTITY[5] (
+ スポ根_要素(ENTITY[1]) ∧
+  主人公(ENTITY[5]) ∧
+   sf的_な(ATTRIB[4]) ∧
+    特異(ATTRIB[7]) ∧
+     ATTRIBUTE_体質(ATTRIB[7], ENTITY[6]) ∧
+      CD_30万_ボルト(ENTITY[10]) ∧
+       の_高圧_電流(ENTITY[10], ENTITY[9]) ∧
+        事故(SITUATION[8], 浴びる(EVENT[11], ENTITY[6], ENTITY[9])) ∧
+         人間_以上(ENTITY[14]) ∧
+          の_力(ENTITY[14], ENTITY[13]) ∧
+           ATTRIBUTE_設定(ATTRIB[4], ENTITY[3]) ∧
+            THAT_設定(なり(EVENT[12], ENTITY[5], ENTITY[6]) ∧ で(EVENT[12]) = SITUATION[8] ∧
+                  得る(EVENT[15], ENTITY[5], ENTITY[13]), ENTITY[3]) ∧
+            薄め(EVENT[2], _, ENTITY[1]) ∧ 加味する.0_て_いる(EVENT[16], _, ENTITY[3]))
+
+# ::id 34_wikipedia_Kamen_Rider;NJ
+# ::snt また 本郷 役 に は 千葉治郎 が 候補 に 挙がっ て い た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 本郷_役(ENTITY[1]) ∧
+  候補(ENTITY[2]) ∧
+   past(EVENT[3]) ∧
+    挙がっ_て_い_た(EVENT[3], ENTITY[千葉治郎]) ∧ に(EVENT[3]) = ENTITY[2] ∧ に(EVENT[3]) = ENTITY[1])
+
+# ::id 35_wikipedia_Kamen_Rider;NJ
+# ::snt ヒーロー の デザイン 画 など は 起こさ れ て い ない 。
+∃ ENTITY[3] ENTITY[2] ENTITY[1] (
+ ヒーロー(ENTITY[3]) ∧
+  の_デザイン_画(ENTITY[3], ENTITY[2]) ∧ など(ENTITY[2], ENTITY[1]) ∧ ¬ ∃ EVENT[4] 起こさ_て_い(EVENT[4], _, ENTITY[1]))
+
+# ::id 36_wikipedia_Kamen_Rider;NJ
+# ::snt この 段階 で 、 毎日放送 の 廣瀬隆一 （ 当時 の 編成局 次長 ） から “ オートバイ に 乗る スーパーヒーロー 物 ” という 注文 が 追加 さ れ て 、 「 十字仮面 （ クロスファイヤー ） 」 の 企画 に 到る 。
+∃ ENTITY[7] ENTITY[1] EVENT[9] EVENT[10] EVENT[12] ENTITY[4] ENTITY[3] ENTITY[8] ENTITY[6] ENTITY[5] ENTITY[11] ENTITY[2] (
+ 段階(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   の_xxx(ENTITY[毎日放送], ENTITY[廣瀬隆一]) ∧
+    当時(ENTITY[4]) ∧
+     の_編成局_次長(ENTITY[4], ENTITY[3]) ∧
+      namely_-ENTITY-(ENTITY[3], ENTITY[廣瀬隆一]) ∧
+       ENTITY[7] = *pro*{ENTITY[5], ENTITY[2], ENTITY[1], ENTITY[3], ENTITY[4], ENTITY[毎日放送]} ∧
+        オートバイ(ENTITY[8]) ∧
+         THAT_スーパーヒーロー_物(乗る(EVENT[9], ENTITY[7]) ∧ に(EVENT[9]) = ENTITY[8], ENTITY[6]) ∧
+          という_注文(ENTITY[6], ENTITY[5]) ∧
+           namely_-ENTITY-(ENTITY[クロスファイヤー], ENTITY[十字仮面]) ∧
+            の_企画(ENTITY[十字仮面], ENTITY[11]) ∧
+             CONJ_te(追加する.0_て(EVENT[10], ENTITY[廣瀬隆一], ENTITY[5]) ∧ で(EVENT[10]) = ENTITY[2],
+              到る(EVENT[12], ENTITY[1]) ∧ に(EVENT[12]) = ENTITY[11]))
+
+# ::id 37_wikipedia_Kamen_Rider;NJ
+# ::snt 1970 年 9 月 上旬 の こと だっ た 。
+∃ ENTITY[1] EVENT[4] ENTITY[3] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  (CD_1970_年_9_月(ENTITY[3]), 上旬(ENTITY[3])) ∧
+   の_こと(ENTITY[3], ENTITY[2]) ∧ past(EVENT[4]) ∧ だっ_た(EVENT[4], ENTITY[1], ENTITY[2]))
+
+# ::id 38_wikipedia_Kamen_Rider;NJ
+# ::snt ここ で 構想 さ れ た ストーリー は 、 本郷 を 父 の 仇 と 信じる ヒロイン や 、 殺人 者 ・ 本郷 を 追う 刑事 など の 登場 人物 が 配さ れ 、 主人公 の 逃亡 者 として の 苦悩 も 付加 さ れ た 。
+∃ ENTITY[3] EVENT[17] EVENT[21] GROUP[7] ENTITY[6] ENTITY[5] ENTITY[20] ENTITY[19] ENTITY[18] EVENT[4] ENTITY[1] (
+ ENTITY[3] = ここ ∧
+  構想する.0_た(EVENT[4], _, ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3] ∧ ストーリー(ENTITY[1]) ∧
+   past(EVENT[4]) ∧
+    CONJ_や(∃ EVENT[12] ENTITY[11] ENTITY[10] ENTITY[8] (
+          父(ENTITY[11]) ∧
+           の_仇(ENTITY[11], ENTITY[10]) ∧
+            信じる(EVENT[12], ENTITY[8], ENTITY[本郷]) ∧ と(EVENT[12]) = ENTITY[10] ∧ ヒロイン(ENTITY[8]) ∧
+             is_element_of(ENTITY[8], GROUP[7])),
+     ∃ EVENT[16] ENTITY[15] ENTITY[13] (
+      殺人_者(ENTITY[15]) ∧
+       namely_-ENTITY-(ENTITY[15], ENTITY[本郷]) ∧
+        追う(EVENT[16], ENTITY[13], ENTITY[本郷]) ∧ 刑事(ENTITY[13]) ∧ is_element_of(ENTITY[13], GROUP[7]))) ∧
+     など(GROUP[7], ENTITY[6]) ∧
+      の_登場_人物(ENTITY[6], ENTITY[5]) ∧
+       主人公(ENTITY[19]) ∧
+        逃亡_者(ENTITY[20]) ∧
+         として_の_苦悩(ENTITY[20], ENTITY[18]) ∧ の_苦悩(ENTITY[19], ENTITY[18]) ∧
+          past(EVENT[21]) ∧
+           配さ(EVENT[17], _, ENTITY[5]) ∧
+            付加する.0_た(EVENT[21], _, ENTITY[18]) ∧ TPC(EVENT[21]) = ENTITY[1])
+
+# ::id 39_wikipedia_Kamen_Rider;NJ
+# ::snt 主人公 の 仮面 について は 、 怒り の 感情 が 高まる と 顔 に 感電 事故 による 十字形 の 傷跡 が 浮かび上がる ため 、 それ を 隠す ため に 被っ て いる という 設定 が 加え られ て いる 。
+∃ ENTITY[16] SITUATION[15] SITUATION[6] ENTITY[5] ENTITY[4] EVENT[17] EVENT[18] EVENT[19] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 主人公(ENTITY[2]) ∧
+  の_仮面(ENTITY[2], ENTITY[1]) ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[2]} ∧
+     FACT(SITUATION[6],
+      ∀ EVENT[9] ENTITY[8] ENTITY[7] CND_と(怒り(ENTITY[8]) ∧ の_感情(ENTITY[8], ENTITY[7]) ∧ 高まる(EVENT[9], ENTITY[7]),
+          ∃ EVENT[14] ENTITY[13] ENTITY[12] ENTITY[11] ENTITY[10] (
+           顔(ENTITY[10]) ∧
+            感電_事故(ENTITY[12]) ∧
+             十字形(ENTITY[13]) ∧
+              の_傷跡(ENTITY[13], ENTITY[11]) ∧ による_傷跡(ENTITY[12], ENTITY[11]) ∧
+               浮かび上がる(EVENT[14], ENTITY[11]) ∧ に(EVENT[14]) = ENTITY[10]))) ∧
+      ENTITY[16] = それ{ENTITY[4], ENTITY[1], ENTITY[2]} ∧
+       ため(SITUATION[15], 隠す(EVENT[17], ENTITY[5], ENTITY[16])) ∧
+        THAT_設定(被っ_て_いる(EVENT[18], ENTITY[4], ENTITY[5]) ∧ に(EVENT[18]) = SITUATION[15] ∧
+              ため(EVENT[18]) = SITUATION[6], ENTITY[3]) ∧
+         加え_て_いる(EVENT[19], _, ENTITY[3]) ∧ について(EVENT[19]) = ENTITY[1])
+
+# ::id 40_wikipedia_Kamen_Rider;NJ
+# ::snt 「 サイボーグ009 」 や 「 佐武と市捕物控 」 など の 数多く の ヒット 作 を 送り出し て き た 石森章太郎 が 、 原作 者 として 本格的 に 参加 する の は この 段階 から で 、 石森 の 起用 は 石森プロ の 加藤マネージャー から 、 東映 の 渡邊亮徳専務 （ 当時 ） に 熱心 な 売り込み が あっ た ため だっ た 。
+∃ ATTRIB[16] SITUATION[13] SITUATION[1] EVENT[9] EVENT[11] EVENT[17] EVENT[18] ENTITY[8] ENTITY[7] ENTITY[14] ENTITY[15] ENTITY[10] ENTITY[12] (
+ 段階(ENTITY[10]) ∧
+  の_起用(ENTITY[石森], ENTITY[12]) ∧
+   数多く_の GROUP[5] ENTITY[4] ENTITY[3] (
+    (CONJ_や(is_element_of(ENTITY[サイボーグ009], GROUP[5]), is_element_of(ENTITY[佐武と市捕物控], GROUP[5])) ∧ など(GROUP[5], ENTITY[4]) ∧
+     の_ヒット_作(ENTITY[4], ENTITY[3])), ∃ EVENT[6] (past(EVENT[6]) ∧ 送り出し_て_き_た(EVENT[6], ENTITY[石森章太郎], ENTITY[3]))) ∧
+    原作_者(ENTITY[7]) ∧
+     本格的(ENTITY[8]) ∧
+      の(SITUATION[1],
+       参加する.0(EVENT[9], ENTITY[石森章太郎]) ∧ に(EVENT[9]) = ENTITY[8] ∧ として(EVENT[9]) = ENTITY[7]) ∧
+       の_xxx(ENTITY[石森プロ], ENTITY[加藤マネージャー]) ∧
+        の_xxx(ENTITY[東映], ENTITY[渡邊亮徳専務]) ∧
+         当時(ENTITY[14]) ∧
+          namely_-ENTITY-(ENTITY[14], ENTITY[渡邊亮徳専務]) ∧
+           熱心_な(ATTRIB[16]) ∧
+            ATTRIBUTE_売り込み(ATTRIB[16], ENTITY[15]) ∧
+             ため(SITUATION[13],
+              あっ_た(EVENT[17], ENTITY[15]) ∧ に(EVENT[17]) = ENTITY[渡邊亮徳専務] ∧
+               から(EVENT[17]) = ENTITY[加藤マネージャー]) ∧
+              past(EVENT[17]) ∧
+               past(EVENT[18]) ∧
+                CONJ_te(で(EVENT[11], SITUATION[1]) ∧ から(EVENT[11]) = ENTITY[10],
+                 だっ_た(EVENT[18], ENTITY[12], SITUATION[13])))
+
+# ::id 41_wikipedia_Kamen_Rider;NJ
+# ::snt 10 月 上旬 に 、 伊上勝 によって 執筆 さ れ た 検討 台本 「 怪奇蜘蛛男 」 と 「 謎の恐怖屋敷 」 が 毎日放送 側 で 検討 さ れ 、 予算 案 とともに 「 題名 を 日本語 に し て ほしい 」 と の 要望 が 出さ れ た 。
+∃ ENTITY[13] ENTITY[12] SITUATION[11] EVENT[5] EVENT[8] EVENT[17] EVENT[14] EVENT[18] GROUP[6] ENTITY[2] ENTITY[7] ENTITY[3] ENTITY[16] ENTITY[15] ENTITY[10] ENTITY[9] ENTITY[1] (
+ (CD_10_月(ENTITY[1]), 上旬(ENTITY[1])) ∧
+  CONJ_と(is_element_of(ENTITY[怪奇蜘蛛男], GROUP[6]), is_element_of(ENTITY[謎の恐怖屋敷], GROUP[6])) ∧
+   執筆する.0_た(EVENT[5], ENTITY[伊上勝], ENTITY[3]) ∧ equals(GROUP[6], ENTITY[3]) ∧
+    検討_台本(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+      毎日放送_側(ENTITY[7]) ∧
+       予算_案(ENTITY[9]) ∧
+        ENTITY[12] = *speaker*{ENTITY[10], ENTITY[1], ENTITY[9], ENTITY[謎の恐怖屋敷], ENTITY[怪奇蜘蛛男], ENTITY[伊上勝], ENTITY[3], ENTITY[7], ENTITY[2]} ∧
+         ENTITY[13] = *hearer*{ENTITY[10], ENTITY[1], ENTITY[9], ENTITY[謎の恐怖屋敷], ENTITY[怪奇蜘蛛男], ENTITY[伊上勝], ENTITY[3], ENTITY[7], ENTITY[2]} ∧
+          題名(ENTITY[15]) ∧
+           日本語(ENTITY[16]) ∧
+            と(SITUATION[11],
+             ほしい(EVENT[14], ENTITY[12], ENTITY[13], し_て(EVENT[17], ENTITY[13], ENTITY[15], ENTITY[16]))) ∧
+             の_要望(SITUATION[11], ENTITY[10]) ∧
+              past(EVENT[5]) ∧
+               past(EVENT[18]) ∧
+                検討する.0(EVENT[8], ENTITY[7], ENTITY[3]) ∧
+                 出さ_た(EVENT[18], _, ENTITY[10]) ∧ とともに(EVENT[18]) = ENTITY[9] ∧
+                  に(EVENT[18]) = ENTITY[1])
+
+# ::id 42_wikipedia_Kamen_Rider;NJ
+# ::snt 10 月 15 日 に 石森 側 が 「 ファイヤー十字（クロス） 」 、 「 十字仮面 」 、 「 クロス火面 」 など の 題名 案 を 提出 し て いる 。
+∃ EVENT[6] GROUP[5] ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_10_月_15_日(ENTITY[1]) ∧
+  石森_側(ENTITY[2]) ∧
+   is_element_of(ENTITY[ファイヤー十字（クロス）], GROUP[5]) ∧ is_element_of(ENTITY[十字仮面], GROUP[5]) ∧ is_element_of(ENTITY[クロス火面], GROUP[5]) ∧
+    など(GROUP[5], ENTITY[4]) ∧
+     の_題名_案(ENTITY[4], ENTITY[3]) ∧ 提出する.0_て_いる(EVENT[6], ENTITY[2], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[1])
+
+# ::id 43_wikipedia_Kamen_Rider;NJ
+# ::snt 11 月 上旬 に は 主人公 ヒーロー で ある 「 クロスファイヤー 」 の デザイン 画 も 石森 によって 起こさ れ 、 東映 の 平山 も 毎日放送 の 引野芳照映画課長 （ 当時 ） も 、 この クロスファイヤー の デザイン に 「 カッコいい 」 と 絶賛 し 、 題名 も 正式 に 「 十字仮面 」 に 決定 、 11 月 に なっ て 毎日放送 側 は 『 十字仮面クロスファイヤー 』 の 企画 書 を 起稿 し 、 本郷 役 に は 近藤正臣 、 ルリ子 役 に 島田陽子 を 予定 し た 。
+∃ ENTITY[12] EVENT[6] EVENT[7] EVENT[13] EVENT[11] EVENT[16] EVENT[18] EVENT[21] EVENT[23] EVENT[25] ENTITY[5] ENTITY[3] ENTITY[2] ENTITY[10] GROUP[8] ENTITY[15] ENTITY[14] ENTITY[17] ENTITY[20] ENTITY[24] ENTITY[1] ENTITY[22] ENTITY[19] (
+ (CD_11_月(ENTITY[1]), 上旬(ENTITY[1])) ∧
+  毎日放送_側(ENTITY[19]) ∧
+   本郷_役(ENTITY[22]) ∧
+    主人公_ヒーロー(ENTITY[5]) ∧
+     で_ある(EVENT[6], ENTITY[3], ENTITY[5]) ∧
+      namely_-ENTITY-(ENTITY[クロスファイヤー], ENTITY[3]) ∧
+       の_デザイン_画(ENTITY[3], ENTITY[2]) ∧
+        CONJ_も(の_xxx(ENTITY[東映], ENTITY[平山]) ∧ is_element_of(ENTITY[平山], GROUP[8]),
+         ∃ ENTITY[9] (
+          の_xxx(ENTITY[毎日放送], ENTITY[引野芳照映画課長]) ∧
+           当時(ENTITY[9]) ∧ namely_-ENTITY-(ENTITY[9], ENTITY[引野芳照映画課長]) ∧ is_element_of(ENTITY[引野芳照映画課長], GROUP[8]))) ∧
+         の_デザイン(ENTITY[クロスファイヤー], ENTITY[10]) ∧
+          ENTITY[12] = *pro*{ENTITY[10], ENTITY[クロスファイヤー], ENTITY[引野芳照映画課長], ENTITY[毎日放送], ENTITY[平山], ENTITY[東映], ENTITY[2], ENTITY[3], ENTITY[5], ENTITY[1], ENTITY[石森]} ∧
+           題名(ENTITY[14]) ∧
+            正式(ENTITY[15]) ∧
+             CD_11_月(ENTITY[17]) ∧
+              の_企画_書(ENTITY[十字仮面クロスファイヤー], ENTITY[20]) ∧
+               ルリ子_役(ENTITY[24]) ∧
+                past(EVENT[25]) ∧
+                 起こさ(EVENT[7], ENTITY[石森], ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[1] ∧
+                  絶賛する.0(EVENT[11], GROUP[8], ENTITY[10], カッコいい(EVENT[13], ENTITY[12])) ∧
+                  決定(EVENT[16], ENTITY[14]) ∧ に(EVENT[16]) = ENTITY[十字仮面] ∧
+                   に(EVENT[16]) = ENTITY[15] ∧
+                   CRD_te(なっ_て(EVENT[18], _, ENTITY[17]),
+                    起稿する.0(EVENT[21], ENTITY[19], ENTITY[20]) ∧
+                     xxx(EVENT[23], ENTITY[19], ENTITY[近藤正臣]) ∧ に(EVENT[23]) = ENTITY[22] ∧
+                      予定する.0_た(EVENT[25], ENTITY[19], ENTITY[島田陽子]) ∧ に(EVENT[25]) = ENTITY[24]))
+
+# ::id 44_wikipedia_Kamen_Rider;NJ
+# ::snt 10 月 以降 に なり 、 東映 側 で は 平山 の 補佐 として 阿部征司 が プロデューサー 参加 。
+∃ EVENT[2] EVENT[6] ENTITY[1] ENTITY[5] ENTITY[4] ENTITY[3] (
+ 東映_側(ENTITY[3]) ∧
+  (CD_10_月(ENTITY[1]), 以降(ENTITY[1])) ∧
+   の_補佐(ENTITY[平山], ENTITY[4]) ∧
+    プロデューサー_参加(ENTITY[5]) ∧
+     なり(EVENT[2], _, ENTITY[1]) ∧
+      xxx(EVENT[6], ENTITY[阿部征司], ENTITY[5]) ∧ として(EVENT[6]) = ENTITY[4] ∧ で(EVENT[6]) = ENTITY[3])
+
+# ::id 45_wikipedia_Kamen_Rider;NJ
+# ::snt 石森 が 参加 し た 後 、 毎日放送 側 は 「 雑誌 で 漫画 連載 を し て ほしい 」 と 放送 開始 の 条件 を 出し た 。
+∃ ENTITY[8] ENTITY[7] SITUATION[1] ENTITY[5] ENTITY[11] ENTITY[10] ENTITY[4] EVENT[2] EVENT[12] EVENT[9] EVENT[6] ENTITY[3] (
+ 毎日放送_側(ENTITY[3]) ∧
+  past(EVENT[2]) ∧
+   past(EVENT[6]) ∧
+    後(SITUATION[1], 参加する.0_た(EVENT[2], ENTITY[石森])) ∧
+     放送_開始(ENTITY[5]) ∧
+      の_条件(ENTITY[5], ENTITY[4]) ∧
+       ENTITY[7] = *speaker*{ENTITY[3], ENTITY[4], ENTITY[5], ENTITY[石森]} ∧
+        ENTITY[8] = *hearer*{ENTITY[3], ENTITY[4], ENTITY[5], ENTITY[石森]} ∧
+         雑誌(ENTITY[10]) ∧
+          漫画_連載(ENTITY[11]) ∧
+           出し_た(EVENT[6], ENTITY[3], ENTITY[4],
+            ほしい(EVENT[9], ENTITY[7], ENTITY[8],
+             し_て(EVENT[12], ENTITY[8], ENTITY[11]) ∧ で(EVENT[12]) = ENTITY[10])) ∧
+            時間(EVENT[6]) = SITUATION[1])
+
+# ::id 46_wikipedia_Kamen_Rider;NJ
+# ::snt 漫画 連載 の 実現 に は 難航 し た が 、 平山 と 阿部 、 石森プロ の 加藤マネージャー の 3 人 が 『 週刊少年マガジン 』 （ 講談社 ） の 編集長 だっ た 内田勝 に 掛け合い 、 年末 に 了承 を 得 た 。
+∃ GROUP[5] ENTITY[7] ENTITY[11] ENTITY[10] ENTITY[4] EVENT[3] EVENT[8] EVENT[9] EVENT[12] ENTITY[2] ENTITY[1] (
+ 漫画_連載(ENTITY[2]) ∧
+  の_実現(ENTITY[2], ENTITY[1]) ∧
+   past(EVENT[3]) ∧
+    past(EVENT[8]) ∧
+     past(EVENT[12]) ∧
+      CONJ_と(is_element_of(ENTITY[平山], GROUP[5]), is_element_of(ENTITY[阿部], GROUP[5]),
+       の_xxx(ENTITY[石森プロ], ENTITY[加藤マネージャー]) ∧ is_element_of(ENTITY[加藤マネージャー], GROUP[5])) ∧
+       (CD_3_人(ENTITY[4]), の(GROUP[5], ENTITY[4])) ∧
+        namely_-ENTITY-(ENTITY[講談社], ENTITY[週刊少年マガジン]) ∧
+         の_編集長(ENTITY[週刊少年マガジン], ENTITY[7]) ∧
+          だっ_た(EVENT[8], ENTITY[内田勝], ENTITY[7]) ∧
+           年末(ENTITY[10]) ∧
+            了承(ENTITY[11]) ∧
+             CONJ_が(難航する.0_た(EVENT[3], ENTITY[1]),
+              掛け合い(EVENT[9], ENTITY[4], ENTITY[内田勝]) ∧
+               得_た(EVENT[12], ENTITY[4], ENTITY[11]) ∧ に(EVENT[12]) = ENTITY[10]))
+
+# ::id 47_wikipedia_Kamen_Rider;NJ
+# ::snt 12 月 に 入る と 、 企画 書 題名 を 『 十字仮面仮面ライダー（クロス） 』 に 変更 。
+∃ ENTITY[1] EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  CD_12_月(ENTITY[2]) ∧
+   企画_書_題名(ENTITY[4]) ∧
+    CRD_と(入る(EVENT[3]) ∧ に(EVENT[3]) = ENTITY[2],
+     変更(EVENT[5], ENTITY[1], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[十字仮面仮面ライダー（クロス）]))
+
+# ::id 48_wikipedia_Kamen_Rider;NJ
+# ::snt 藤岡弘 と 森川千恵子 （ 真樹千恵子 ） が 本郷 と ルリ子 役 に 選ば れ 、 藤兵衛 役 に は 高品格 を 予定 、 放映 開始 は 1971 年 4 月 と 決定 し た 。
+∃ ENTITY[1] EVENT[5] EVENT[7] EVENT[10] GROUP[4] ENTITY[3] GROUP[2] ENTITY[9] ENTITY[6] ENTITY[8] (
+ 藤兵衛_役(ENTITY[6]) ∧
+  放映_開始(ENTITY[8]) ∧
+   ENTITY[1] = *pro* ∧
+    CONJ_と(is_element_of(ENTITY[藤岡弘], GROUP[2]), namely_-ENTITY-(ENTITY[真樹千恵子], ENTITY[森川千恵子]) ∧ is_element_of(ENTITY[森川千恵子], GROUP[2])) ∧
+     CONJ_と(is_element_of(ENTITY[本郷], GROUP[4]), is_element_of(ENTITY[ルリ子], GROUP[4])) ∧
+      equals_役(GROUP[4], ENTITY[3]) ∧
+       CD_1971_年_4_月(ENTITY[9]) ∧
+        past(EVENT[10]) ∧
+         選ば(EVENT[5], _, GROUP[2]) ∧ に(EVENT[5]) = ENTITY[3] ∧
+          予定(EVENT[7], ENTITY[1], ENTITY[高品格]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+          決定する.0_た(EVENT[10], ENTITY[1], ENTITY[8]) ∧ と(EVENT[10]) = ENTITY[9])
+
+# ::id 49_wikipedia_Kamen_Rider;NJ
+# ::snt いよいよ 企画 が 毎日放送 側 を 通っ た この 1970 年 末 の 時点 で 、 市川 と 上原 は 「 『 帰ってきたウルトラマン 』 を やり たい から 」 と 願い出 て 降板 。
+∃ ENTITY[10] SITUATION[9] EVENT[5] EVENT[11] EVENT[12] EVENT[8] EVENT[13] ENTITY[4] ENTITY[3] ENTITY[1] ENTITY[2] GROUP[7] (
+ (CD_1970_年(ENTITY[2]), 末(ENTITY[2])) ∧
+  CONJ_と(is_element_of(ENTITY[市川], GROUP[7]), is_element_of(ENTITY[上原], GROUP[7])) ∧
+   企画(ENTITY[3]) ∧
+    毎日放送_側(ENTITY[4]) ∧
+     の_時点(ENTITY[2], ENTITY[1]) ∧ THAT_時点(通っ_た(EVENT[5], ENTITY[3], ENTITY[4]), ENTITY[1]) ∧
+      ENTITY[10] = *speaker*{ENTITY[1], ENTITY[上原], ENTITY[市川], ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+       FACT(SITUATION[9], やり_たい(EVENT[11], ENTITY[10], ENTITY[帰ってきたウルトラマン])) ∧
+        ADV_いよいよ(EVENT[5]) ∧
+         past(EVENT[5]) ∧
+          CONJ_te(願い出_て(EVENT[8], GROUP[7], xxx(EVENT[12]) ∧ から(EVENT[12]) = SITUATION[9]) ∧
+                で(EVENT[8]) = ENTITY[1],
+           降板(EVENT[13], GROUP[7]) ∧ で(EVENT[13]) = ENTITY[1]))
+
+# ::id 50_wikipedia_Kamen_Rider;NJ
+# ::snt 以後 の 企画 や 本編 脚本 は 伊上 によって 進め られる こと と なっ た 。
+∃ SITUATION[6] EVENT[7] EVENT[8] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ 以後(ENTITY[2]) ∧
+  企画(ENTITY[4]) ∧
+   本編_脚本(ENTITY[5]) ∧
+    CONJ_や(is_element_of(ENTITY[4], GROUP[3]), is_element_of(ENTITY[5], GROUP[3])) ∧
+     equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+      past(EVENT[8]) ∧
+       こと(SITUATION[6], 進め(EVENT[7], ENTITY[伊上], ENTITY[1])) ∧ なっ_た(EVENT[8], ENTITY[1], SITUATION[6]))
+
+# ::id 51_wikipedia_Kamen_Rider;NJ
+# ::snt 市川 は 自ら の 代わり として 、 同じ 脚本家 仲間 の 島田真之 と 滝沢真理 を 連れ て き て 、 以後 両人 とも に 本作 の 主筆 脚本家 と なっ て いる 。
+∃ ATTRIB[6] ENTITY[3] ENTITY[1] EVENT[8] GROUP[7] ENTITY[5] ENTITY[4] ENTITY[2] TIME[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = 自ら{ENTITY[市川], ENTITY[1]} ∧
+   の_代わり(ENTITY[3], ENTITY[2]) ∧
+    同じ(ATTRIB[6]) ∧
+     ATTRIBUTE_脚本家_仲間(ATTRIB[6], ENTITY[5]) ∧
+      CONJ_と(is_element_of(ENTITY[島田真之], GROUP[7]), is_element_of(ENTITY[滝沢真理], GROUP[7])) ∧
+       equals(GROUP[7], ENTITY[4]) ∧ の(ENTITY[5], ENTITY[4]) ∧
+        以後(TIME[9]) ∧
+         CONJ_te(連れ_て_き(EVENT[8], ENTITY[市川], ENTITY[4]) ∧ として(EVENT[8]) = ENTITY[2],
+          両人_とも ENTITY[10] ∃ EVENT[13] ENTITY[12] ENTITY[11] (
+           本作(ENTITY[12]) ∧
+            の_主筆_脚本家(ENTITY[12], ENTITY[11]) ∧
+             なっ_て_いる(EVENT[13], ENTITY[1], ENTITY[11]) ∧ に(EVENT[13]) = ENTITY[10] ∧
+              is_contained_in(時間(EVENT[13]), TIME[9]))))
+
+# ::id 52_wikipedia_Kamen_Rider;NJ
+# ::snt 1971 年 1 月 、 石森 は 「 もっと グロテスク な リアリティ の ある 奴 に し たい 」 として 、 自身 の 作品 の 髑髏 を モチーフ に し た 仮面 の ヒーロー で ある 『 スカルマン 』 （ 『 週刊少年マガジン 』 1970 年 1 月 11 日 号 に 掲載 ） を この 企画 に 応用 し た 「 仮面ライダースカルマン 」 の キャラクター を 提案 。
+∃ ENTITY[17] ENTITY[14] ATTRIB[5] ENTITY[3] SITUATION[2] EVENT[8] EVENT[9] EVENT[19] EVENT[20] EVENT[22] EVENT[23] ENTITY[7] ENTITY[4] ENTITY[16] ENTITY[18] ENTITY[15] ENTITY[13] ENTITY[12] ENTITY[10] TIME[1] ENTITY[21] (
+ 企画(ENTITY[21]) ∧
+  CD_1971_年_1_月(TIME[1]) ∧
+   ENTITY[3] = *pro* ∧
+    もっと_グロテスク_な(ATTRIB[5]) ∧
+     リアリティ(ENTITY[7]) ∧
+      ある(EVENT[8], (ENTITY[4], ENTITY[7])) ∧ ATTRIBUTE_奴(ATTRIB[5], ENTITY[4]) ∧
+       FACT(SITUATION[2], し_たい(EVENT[9], ENTITY[石森], ENTITY[3], ENTITY[4])) ∧
+        仮面(ENTITY[13]) ∧
+         ENTITY[14] = *pro*{ENTITY[13], ENTITY[スカルマン], ENTITY[仮面ライダースカルマン], ENTITY[石森], ENTITY[4], ENTITY[7]} ∧
+          ENTITY[17] = 自身{ENTITY[15], ENTITY[14], ENTITY[13], ENTITY[スカルマン], ENTITY[仮面ライダースカルマン], ENTITY[石森], ENTITY[4], ENTITY[7]} ∧
+           の_作品(ENTITY[17], ENTITY[16]) ∧
+            の_髑髏(ENTITY[16], ENTITY[15]) ∧
+             モチーフ(ENTITY[18]) ∧
+              の_ヒーロー(ENTITY[13], ENTITY[12]) ∧
+               THAT_ヒーロー(し_た(EVENT[19], ENTITY[14], ENTITY[15], ENTITY[18]), ENTITY[12]) ∧
+               で_ある(EVENT[20], ENTITY[スカルマン], ENTITY[12]) ∧
+                の_キャラクター(ENTITY[仮面ライダースカルマン], ENTITY[10]) ∧
+                 THAT_キャラクター(応用する.0_た(EVENT[22], _, ENTITY[スカルマン]) ∧ に(EVENT[22]) = ENTITY[21],
+                  ENTITY[10]) ∧
+                 past(EVENT[19]) ∧
+                  past(EVENT[22]) ∧
+                   提案(EVENT[23], ENTITY[石森], ENTITY[10]) ∧ として(EVENT[23]) = SITUATION[2] ∧
+                    is_contained_in(時間(EVENT[23]), TIME[1]))
+
+# ::id 53_wikipedia_Kamen_Rider;NJ
+# ::snt ここ で 主人公 が 敵対 する 怪人 と 同じく 改造 人間 で ある という 設定 が なさ れ 、 逃亡 者 で ある こと や 一部 の キャラクター が 整理 さ れ 、 藤兵衛 は 主人公 の 専属 トレーナー と なり 、 より シンプル な 物語 と なっ た 。
+∃ SITUATION[11] ATTRIB[25] ENTITY[7] ENTITY[2] ENTITY[1] EVENT[8] EVENT[10] EVENT[12] EVENT[20] EVENT[23] EVENT[26] ENTITY[5] ENTITY[9] ENTITY[4] ENTITY[3] GROUP[13] ENTITY[22] ENTITY[21] ENTITY[24] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = ここ ∧
+   主人公(ENTITY[4]) ∧
+    ENTITY[7] = *pro*{ENTITY[4], ENTITY[1], ENTITY[2]} ∧
+     敵対する.0(EVENT[8], ENTITY[7], ENTITY[5]) ∧ 怪人(ENTITY[5]) ∧
+      改造_人間(ENTITY[9]) ∧
+       THAT_設定(FACT(SITUATION[11], で_ある(EVENT[10], ENTITY[4], ENTITY[9])), ENTITY[3]) ∧
+        CONJ_や(∃ ENTITY[15] EVENT[17] ENTITY[16] ENTITY[14] (
+              ENTITY[15] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3], ENTITY[4], ENTITY[9], ENTITY[5]} ∧
+               逃亡_者(ENTITY[16]) ∧
+                THAT_こと(で_ある(EVENT[17], ENTITY[15], ENTITY[16]), ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])),
+         ∃ ENTITY[19] ENTITY[18] (一部(ENTITY[19]) ∧ の_キャラクター(ENTITY[19], ENTITY[18]) ∧ is_element_of(ENTITY[18], GROUP[13]))) ∧
+         主人公(ENTITY[22]) ∧
+          の_専属_トレーナー(ENTITY[22], ENTITY[21]) ∧
+           より_シンプル_な(ATTRIB[25]) ∧
+            ATTRIBUTE_物語(ATTRIB[25], ENTITY[24]) ∧
+             ADV_同じく_と(SITUATION[11], ENTITY[5]) ∧
+              past(EVENT[26]) ∧
+               なさ(EVENT[12], _, ENTITY[3]) ∧
+                整理する.0(EVENT[20], _, GROUP[13]) ∧
+                 なり(EVENT[23], ENTITY[藤兵衛], ENTITY[21]) ∧
+                  なっ_た(EVENT[26], ENTITY[1], ENTITY[24]) ∧ で(EVENT[26]) = ENTITY[2])
+
+# ::id 54_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 渡邊 は この キャラクター を 「 スカルマン は 以前 に 描か れ た 作品 じゃ ない か 。 大勝負 に 出る ん だ から 、 新しい キャラクター じゃ ない と 駄目 だ 」 と 拒絶 し た 。
+∃ ENTITY[10] ENTITY[9] EVENT[7] EVENT[8] EVENT[12] EVENT[2] ENTITY[6] ENTITY[4] ENTITY[11] ENTITY[3] ENTITY[1] (
+ キャラクター(ENTITY[1]) ∧
+  スカルマン(ENTITY[3]) ∧
+   以前(ENTITY[6]) ∧
+    描か_た(EVENT[7], _, ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧ 作品(ENTITY[4]) ∧
+     ENTITY[9] = *pro*{ENTITY[4], ENTITY[6], ENTITY[3], ENTITY[渡邊], ENTITY[1]} ∧
+      ENTITY[10] = *speaker+hearer*{ENTITY[9], ENTITY[4], ENTITY[6], ENTITY[3], ENTITY[渡邊], ENTITY[1]} ∧
+       大勝負(ENTITY[11]) ∧
+        before(EVENT[2], EVENT[7]) ∧
+         past(EVENT[2]) ∧
+          拒絶する.0_た(EVENT[2], ENTITY[渡邊], ENTITY[1],
+           xxx(EVENT[8], ENTITY[3], ENTITY[4]) ∧
+            CRD_から(出る_ん_だ(EVENT[12], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[11],
+             ∀ ATTRIB[14] ENTITY[13] CND_と(
+                 新しい(ATTRIB[14]) ∧ ATTRIBUTE_キャラクター(ATTRIB[14], ENTITY[13]) ∧
+                  ¬ ∃ EVENT[15] じゃ(EVENT[15], ENTITY[9], ENTITY[13]), ∃ EVENT[16] 駄目_だ(EVENT[16], ENTITY[9])))))
+
+# ::id 55_wikipedia_Kamen_Rider;NJ
+# ::snt 毎日放送 の 箱崎賞テレビ営業部副部長 （ 当時 ） から も 、 「 モチーフ が 髑髏 で は 営業上 の 支障 が ある 」 と 意見 が 出さ れ 、 企画 は さらなる 検討 を 求め られる 。
+∃ ATTRIB[15] ENTITY[12] SITUATION[4] EVENT[7] EVENT[10] EVENT[3] EVENT[16] EVENT[13] ENTITY[1] ENTITY[6] ENTITY[5] ENTITY[9] ENTITY[8] ENTITY[2] ENTITY[14] ENTITY[11] (
+ 企画(ENTITY[11]) ∧
+  の_xxx(ENTITY[毎日放送], ENTITY[箱崎賞テレビ営業部副部長]) ∧
+   当時(ENTITY[1]) ∧
+    namely_-ENTITY-(ENTITY[1], ENTITY[箱崎賞テレビ営業部副部長]) ∧
+     意見(ENTITY[2]) ∧
+      モチーフ(ENTITY[5]) ∧
+       髑髏(ENTITY[6]) ∧
+        FACT(SITUATION[4], で(EVENT[7], ENTITY[5], ENTITY[6])) ∧
+         営業上(ENTITY[9]) ∧
+          の_支障(ENTITY[9], ENTITY[8]) ∧
+           ENTITY[12] = *pro*{ENTITY[2], ENTITY[8], ENTITY[9], ENTITY[5], ENTITY[6], ENTITY[1], ENTITY[箱崎賞テレビ営業部副部長], ENTITY[毎日放送]} ∧
+            さらなる(ATTRIB[15]) ∧
+             ATTRIBUTE_検討(ATTRIB[15], ENTITY[14]) ∧
+              出さ(EVENT[3], ENTITY[箱崎賞テレビ営業部副部長], ENTITY[2],
+               ある(EVENT[10], ENTITY[8]) ∧ te(EVENT[10]) = SITUATION[4]) ∧
+               られる(EVENT[13], ENTITY[11], ENTITY[12], 求め(EVENT[16], ENTITY[12], ENTITY[14])))
+
+# ::id 56_wikipedia_Kamen_Rider;NJ
+# ::snt 非常 に 落胆 し た 石森 だっ た が 、 50 枚 以上 の デザイン 画 を 描い た 。
+∃ ENTITY[5] ENTITY[7] ENTITY[6] EVENT[2] EVENT[4] EVENT[8] (
+ ADV_非常_に(EVENT[2]) ∧
+  past(EVENT[2]) ∧
+   past(EVENT[4]) ∧
+    past(EVENT[8]) ∧
+     落胆する.0_た(EVENT[2], ENTITY[石森]) ∧
+      ENTITY[5] = *pro*{ENTITY[石森]} ∧
+       (CD_50_枚(ENTITY[7]), 以上(ENTITY[7])) ∧
+        の_デザイン_画(ENTITY[7], ENTITY[6]) ∧
+         CONJ_が(だっ_た(EVENT[4], _, ENTITY[石森]), 描い_た(EVENT[8], ENTITY[5], ENTITY[6])))
+
+# ::id 57_wikipedia_Kamen_Rider;NJ
+# ::snt この 中 に 加藤マネージャー の 持ち込ん だ 昆虫 図鑑 の バッタ を モチーフ に し た 、 強烈 な インパクト の ある デザイン 画 が あっ た 。
+∃ ENTITY[7] ATTRIB[5] EVENT[6] EVENT[11] EVENT[13] EVENT[14] ENTITY[4] ENTITY[9] ENTITY[12] ENTITY[8] ENTITY[2] ENTITY[1] (
+ 中(ENTITY[1]) ∧
+  強烈_な(ATTRIB[5]) ∧
+   ATTRIBUTE_インパクト(ATTRIB[5], ENTITY[4]) ∧
+    ENTITY[7] = *pro*{ENTITY[4], ENTITY[1]} ∧
+     持ち込ん_だ(EVENT[11], ENTITY[加藤マネージャー], ENTITY[9]) ∧ 昆虫_図鑑(ENTITY[9]) ∧
+      の_バッタ(ENTITY[9], ENTITY[8]) ∧
+       モチーフ(ENTITY[12]) ∧
+        ある(EVENT[6], (ENTITY[2], ENTITY[4])) ∧
+         THAT_デザイン_画(し_た(EVENT[13], ENTITY[7], ENTITY[8], ENTITY[12]), ENTITY[2]) ∧
+         past(EVENT[11]) ∧
+          past(EVENT[13]) ∧
+           past(EVENT[14]) ∧ あっ_た(EVENT[14], ENTITY[2]) ∧ に(EVENT[14]) = ENTITY[1])
+
+# ::id 58_wikipedia_Kamen_Rider;NJ
+# ::snt バッタ の 顔 が 「 スカルマン 」 に 共通 する 不気味さ と 髑髏 に 似 た 形 で ある こと 、 昆虫 は 「 自然 を 破壊 する 悪 と 闘う ヒーロー に ふさわしい 」 という 思い も あっ た 。
+∃ EVENT[24] GROUP[1] ENTITY[15] (
+ 昆虫(ENTITY[15]) ∧
+  ∃ EVENT[13] ENTITY[4] GROUP[5] ENTITY[3] ENTITY[2] (
+   バッタ(ENTITY[4]) ∧
+    の_顔(ENTITY[4], ENTITY[3]) ∧
+     CONJ_と(∃ EVENT[8] ENTITY[6] (
+           共通する.0(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[スカルマン] ∧ 不気味さ(ENTITY[6]) ∧
+            is_element_of(ENTITY[6], GROUP[5])),
+      ∃ EVENT[12] ENTITY[11] ENTITY[9] (
+       髑髏(ENTITY[11]) ∧
+        似_た(EVENT[12], ENTITY[9]) ∧ に(EVENT[12]) = ENTITY[11] ∧ 形(ENTITY[9]) ∧
+         is_element_of(ENTITY[9], GROUP[5]))) ∧
+      THAT_こと(で_ある(EVENT[13], ENTITY[3], GROUP[5]), ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1])) ∧
+   ∃ EVENT[21] EVENT[22] EVENT[23] ENTITY[20] ENTITY[18] ENTITY[16] ENTITY[14] (
+    自然(ENTITY[20]) ∧
+     破壊する.0(EVENT[21], ENTITY[18], ENTITY[20]) ∧ 悪(ENTITY[18]) ∧
+      闘う(EVENT[22], ENTITY[16]) ∧ と(EVENT[22]) = ENTITY[18] ∧ ヒーロー(ENTITY[16]) ∧
+       THAT_思い(ふさわしい(EVENT[23], ENTITY[15], ENTITY[16]), ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[1])) ∧
+   past(EVENT[24]) ∧ あっ_た(EVENT[24], GROUP[1]))
+
+# ::id 59_wikipedia_Kamen_Rider;NJ
+# ::snt 石森 は 「 子ども に 聞い て み よう 」 と 、 この 50 枚 以上 の デザイン 画 を 当時 幼稚園児 だっ た 息子 の 小野寺丈 に 見せ た ところ 、 即座 に バッタ を モチーフ に し た デザイン 画 を 選ん だ 。
+∃ ENTITY[16] ENTITY[11] SITUATION[2] ENTITY[1] EVENT[9] EVENT[10] EVENT[20] EVENT[21] ENTITY[8] TIME[7] ENTITY[5] ENTITY[19] ENTITY[18] ENTITY[17] ENTITY[15] ENTITY[4] ENTITY[3] (
+ (CD_50_枚(ENTITY[4]), 以上(ENTITY[4])) ∧
+  の_デザイン_画(ENTITY[4], ENTITY[3]) ∧
+   ENTITY[1] = *pro* ∧
+    当時(TIME[7]) ∧
+     幼稚園児(ENTITY[8]) ∧
+      だっ_た(EVENT[9], ENTITY[小野寺丈], ENTITY[8]) ∧ is_contained_in(時間(EVENT[9]), TIME[7]) ∧
+       息子(ENTITY[5]) ∧
+        の_xxx(ENTITY[5], ENTITY[小野寺丈]) ∧
+         ENTITY[11] = *pro*{ENTITY[石森], ENTITY[3], ENTITY[小野寺丈], ENTITY[5], ENTITY[8], ENTITY[4], ENTITY[1]} ∧
+          FACT(SITUATION[2],
+           見せ_た(EVENT[10], ENTITY[石森], ENTITY[3], ENTITY[小野寺丈],
+            MD_よう(∃ ENTITY[12] EVENT[14] ENTITY[13] (
+                  ENTITY[12] = *pro*{ENTITY[石森], ENTITY[3], ENTITY[小野寺丈], ENTITY[5], ENTITY[8], ENTITY[4], ENTITY[1]} ∧
+                   子ども(ENTITY[13]) ∧ 聞い_て_み(EVENT[14], ENTITY[11], ENTITY[12], ENTITY[13]))))) ∧
+           ENTITY[16] = *pro*{ENTITY[1], ENTITY[石森], ENTITY[3], ENTITY[小野寺丈], ENTITY[4], ENTITY[5], ENTITY[8]} ∧
+            即座(ENTITY[17]) ∧
+             バッタ(ENTITY[18]) ∧
+              モチーフ(ENTITY[19]) ∧
+               THAT_デザイン_画(し_た(EVENT[20], ENTITY[16], ENTITY[18], ENTITY[19]) ∧ に(EVENT[20]) = ENTITY[17],
+                ENTITY[15]) ∧
+                past(EVENT[9]) ∧
+                 past(EVENT[10]) ∧
+                  past(EVENT[21]) ∧
+                   選ん_だ(EVENT[21], ENTITY[1], ENTITY[15]) ∧ ところ(EVENT[21]) = SITUATION[2])
+
+# ::id 60_wikipedia_Kamen_Rider;NJ
+# ::snt この デザイン 画 は 平山 によって 渡邊専務 に もたらさ れ た 。
+∃ EVENT[2] ENTITY[1] (
+ デザイン_画(ENTITY[1]) ∧
+  past(EVENT[2]) ∧ もたらさ_た(EVENT[2], ENTITY[平山], ENTITY[1]) ∧ に(EVENT[2]) = ENTITY[渡邊専務])
+
+# ::id 61_wikipedia_Kamen_Rider;NJ
+# ::snt 渡邊 は 「 これ だ 、 今度 こそ いける 」 と 大喜び し て 、 即座 に ゴーサイン を 出し て いる 。
+∃ ENTITY[3] ENTITY[2] EVENT[4] EVENT[1] EVENT[10] ENTITY[6] ENTITY[9] ENTITY[8] (
+ ENTITY[2] = *pro*{ENTITY[渡邊]} ∧
+  ENTITY[3] = これ{ENTITY[2], ENTITY[渡邊]} ∧
+   今度(ENTITY[6]) ∧
+    即座(ENTITY[8]) ∧
+     ゴーサイン(ENTITY[9]) ∧
+      CONJ_te(大喜びする.0_て(EVENT[1], ENTITY[渡邊],
+            だ(EVENT[4], _, ENTITY[3]) ∧
+             こそ ENTITY[5] (ENTITY[5] = ENTITY[6], ∃ EVENT[7] (いける(EVENT[7], ENTITY[2]) ∧ LINK(EVENT[7]) = ENTITY[5]))),
+       出し_て_いる(EVENT[10], ENTITY[渡邊], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[8]))
+
+# ::id 62_wikipedia_Kamen_Rider;NJ
+# ::snt バッタ の デザイン 画 を 毎日放送 東京 支部 に 持ち込ん だ ところ 、 箱崎副部長 は 髑髏 で なく なっ た こと で 安堵 し た ものの 、 庄野部長 は 「 バッタ は 握れ ば 潰れる あの バッタ です か ？ 」 と 非力 な 昆虫 を モチーフ に する こと に 異議 を 唱え た 。
+∃ ATTRIB[15] ENTITY[13] SITUATION[12] ENTITY[8] SITUATION[7] ENTITY[2] SITUATION[1] ENTITY[22] ARB[21] EVENT[6] EVENT[11] EVENT[17] EVENT[27] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[16] ENTITY[14] ENTITY[26] EVENT[23] EVENT[24] ENTITY[19] ENTITY[18] (
+ バッタ(ENTITY[18]) ∧
+  ARB[21] = *arb* ∧
+   ENTITY[22] = *pro*{ENTITY[19], ENTITY[18], ENTITY[13], ENTITY[14], ENTITY[16], ENTITY[庄野部長], ENTITY[箱崎副部長], ENTITY[3], ENTITY[5], ENTITY[4]} ∧
+    CND_ば(握れ(EVENT[23], ARB[21], ENTITY[22]), 潰れる(EVENT[24], ENTITY[19])) ∧ バッタ(ENTITY[19]) ∧
+     ENTITY[2] = *pro* ∧
+      バッタ(ENTITY[4]) ∧
+       の_デザイン_画(ENTITY[4], ENTITY[3]) ∧
+        毎日放送_東京_支部(ENTITY[5]) ∧
+         FACT(SITUATION[1], 持ち込ん_だ(EVENT[6], ENTITY[2], ENTITY[3]) ∧ に(EVENT[6]) = ENTITY[5]) ∧
+          ENTITY[8] = *pro*{ENTITY[箱崎副部長], ENTITY[3], ENTITY[5], ENTITY[4]} ∧
+           こと(SITUATION[7],
+            ¬ ∃ EVENT[10] ENTITY[9] (
+                  髑髏(ENTITY[9]) ∧
+                   past(EVENT[10]) ∧ で_なっ_た(EVENT[10], ENTITY[8], ENTITY[9]))) ∧
+            ENTITY[13] = *pro*{ENTITY[庄野部長], ENTITY[箱崎副部長], ENTITY[3], ENTITY[5], ENTITY[4]} ∧
+             非力_な(ATTRIB[15]) ∧
+              ATTRIBUTE_昆虫(ATTRIB[15], ENTITY[14]) ∧
+               モチーフ(ENTITY[16]) ∧
+                こと(SITUATION[12],
+                 する(EVENT[17], ENTITY[13], ENTITY[14], ENTITY[16],
+                  QUEST(∃ EVENT[25] です(EVENT[25], ENTITY[18], ENTITY[19])))) ∧
+                 異議(ENTITY[26]) ∧
+                  past(EVENT[6]) ∧
+                   past(EVENT[11]) ∧
+                    past(EVENT[27]) ∧
+                     CRD_ものの(安堵する.0_た(EVENT[11], ENTITY[箱崎副部長]) ∧ で(EVENT[11]) = SITUATION[7] ∧
+                           ところ(EVENT[11]) = SITUATION[1],
+                      唱え_た(EVENT[27], ENTITY[庄野部長], ENTITY[26]) ∧ に(EVENT[27]) = SITUATION[12]))
+
+# ::id 63_wikipedia_Kamen_Rider;NJ
+# ::snt 平山 は 「 バッタ は 小さい から 強く 見え ない だけ で 、 昆虫 の 跳躍 能力 など が 人 の サイズ に なれ ば 強い もの に なり ます よ 」 と 説得 し た 。
+∃ SITUATION[8] SITUATION[5] ENTITY[1] EVENT[6] EVENT[2] ENTITY[3] (
+ バッタ(ENTITY[3]) ∧
+  ENTITY[1] = *pro* ∧
+   FACT(SITUATION[5],
+    CRD_から(小さい(EVENT[6], ENTITY[3]), FACT(SITUATION[8], ¬ ∃ EVENT[7] 見え(EVENT[7], ENTITY[3])))) ∧
+    ADV_強く(SITUATION[8]) ∧
+     past(EVENT[2]) ∧
+      説得する.0_た(EVENT[2], ENTITY[平山], ENTITY[1],
+       MD_よ(CONJ_te(だけ SITUATION[4] (SITUATION[4] = SITUATION[5], ∃ EVENT[9] で(EVENT[9], ENTITY[3], SITUATION[4])),
+             ∀ EVENT[15] ENTITY[12] ENTITY[11] ENTITY[14] ENTITY[13] ENTITY[10] CND_ば(
+                 昆虫(ENTITY[12]) ∧ の_跳躍_能力(ENTITY[12], ENTITY[11]) ∧ など(ENTITY[11], ENTITY[10]) ∧
+                  人(ENTITY[14]) ∧ の_サイズ(ENTITY[14], ENTITY[13]) ∧ なれ(EVENT[15], ENTITY[10], ENTITY[13]),
+                 ∃ ATTRIB[17] EVENT[18] ENTITY[16] (
+                  強い(ATTRIB[17]) ∧
+                   ATTRIBUTE_もの(ATTRIB[17], ENTITY[16]) ∧ なり_ます(EVENT[18], ENTITY[3], ENTITY[16])))))))
+
+# ::id 64_wikipedia_Kamen_Rider;NJ
+# ::snt 翌日 、 毎日放送 大阪 本社 の 編成 会議 に 出席 し た 平山 と 加藤 マネージャー は 、 「 バッタ 」 と は 伏せ て 「 昆虫 人間 」 として セールス 。
+∃ ENTITY[1] EVENT[11] EVENT[13] ENTITY[12] TIME[2] EVENT[7] ENTITY[6] ENTITY[5] ENTITY[9] GROUP[8] ENTITY[10] ENTITY[3] (
+ 毎日放送_大阪_本社(ENTITY[6]) ∧
+  の_編成_会議(ENTITY[6], ENTITY[5]) ∧
+   加藤_マネージャー(ENTITY[9]) ∧
+    CONJ_と(is_element_of(ENTITY[平山], GROUP[8]), is_element_of(ENTITY[9], GROUP[8])) ∧
+     出席する.0_た(EVENT[7], ENTITY[3]) ∧ に(EVENT[7]) = ENTITY[5] ∧ equals(GROUP[8], ENTITY[3]) ∧
+      バッタ(ENTITY[10]) ∧
+       past(EVENT[7]) ∧
+        ENTITY[1] = *pro* ∧
+         翌日(TIME[2]) ∧
+          昆虫_人間(ENTITY[12]) ∧
+           CONJ_te(伏せ_て(EVENT[11], ENTITY[3], ENTITY[10]) ∧ is_contained_in(時間(EVENT[11]), TIME[2]),
+            セールス(EVENT[13], ENTITY[3], ENTITY[1]) ∧ として(EVENT[13]) = ENTITY[12] ∧
+             is_contained_in(時間(EVENT[13]), TIME[2])))
+
+# ::id 65_wikipedia_Kamen_Rider;NJ
+# ::snt 加藤 が 「 子ども でも 描ける わかりやすさ 」 として 黒板 に 仮面 を 描く など し て 、 最終的 に 認め られ た 。
+∃ ENTITY[4] SITUATION[2] ENTITY[1] EVENT[10] EVENT[11] EVENT[13] ENTITY[6] ENTITY[9] ENTITY[8] ENTITY[3] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[加藤], ENTITY[1]} ∧
+   子ども(ENTITY[6]) ∧
+    THAT_わかりやすさ(でも ENTITY[5] (ENTITY[5] = ENTITY[6], ∃ EVENT[7] 描ける(EVENT[7], ENTITY[5], ENTITY[4])), ENTITY[3]) ∧
+     黒板(ENTITY[8]) ∧
+      仮面(ENTITY[9]) ∧
+       FACT(SITUATION[2],
+        描く(EVENT[10], ENTITY[加藤], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[8] ∧
+         として(EVENT[10]) = ENTITY[3]) ∧
+        最終的(ENTITY[12]) ∧
+         past(EVENT[13]) ∧
+          CONJ_te(し_て(EVENT[11], ENTITY[加藤]) ∧ など(EVENT[11]) = SITUATION[2],
+           認め_た(EVENT[13], _, ENTITY[1]) ∧ に(EVENT[13]) = ENTITY[12]))
+
+# ::id 66_wikipedia_Kamen_Rider;NJ
+# ::snt 前述 の 「 少年マガジン 」 誌 連載 の 折衝 も 進め られ て い た が 、 毎日放送 の 営業部 内 で まだ この ヒーロー の デザイン を 危ぶむ 声 が 強かっ た 。
+∃ ENTITY[6] SITUATION[5] EVENT[4] EVENT[10] EVENT[12] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[8] ENTITY[7] ENTITY[9] (
+ ヒーロー(ENTITY[9]) ∧
+  前述(ENTITY[3]) ∧
+   の_少年マガジン(ENTITY[3], ENTITY[2]) ∧ の_誌_連載(ENTITY[3], ENTITY[2]) ∧
+    の_折衝(ENTITY[2], ENTITY[1]) ∧
+     ENTITY[6] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+      の_営業部_内(ENTITY[毎日放送], ENTITY[7]) ∧
+       の_デザイン(ENTITY[9], ENTITY[8]) ∧
+        声(SITUATION[5], 危ぶむ(EVENT[10], ENTITY[6], ENTITY[8]) ∧ で(EVENT[10]) = ENTITY[7]) ∧
+         past(EVENT[4]) ∧
+          ADV_まだ(EVENT[10]) ∧
+           past(EVENT[12]) ∧ CONJ_が(進め_て_い_た(EVENT[4], _, ENTITY[1]), 強かっ_た(EVENT[12], SITUATION[5])))
+
+# ::id 67_wikipedia_Kamen_Rider;NJ
+# ::snt 廣瀬編成局次長 は 「 私 の 息子 も オートバイ に 乗っ た バッタ の ヒーロー を 面白い と 言っ て いる 。 ここ は ひとつ 、 子ども の 感覚 に 賭け て み ましょ う 」 と 社内 を 説得 し 、 番組 企画 は 推進 さ れ た 。
+∃ ATTRIB[10] ENTITY[4] ENTITY[13] EVENT[8] EVENT[11] EVENT[2] EVENT[21] ENTITY[7] ENTITY[9] ENTITY[5] ENTITY[3] ENTITY[1] ENTITY[20] (
+ ENTITY[13] = ここ{ENTITY[3], ENTITY[5], ENTITY[9], ENTITY[7], ENTITY[廣瀬編成局次長], ENTITY[1]} ∧
+  番組_企画(ENTITY[20]) ∧
+   社内(ENTITY[1]) ∧
+    ENTITY[4] = 私{ENTITY[廣瀬編成局次長], ENTITY[1]} ∧
+     の_息子(ENTITY[4], ENTITY[3]) ∧
+      オートバイ(ENTITY[7]) ∧
+       バッタ(ENTITY[9]) ∧
+        乗っ_た(EVENT[8], ENTITY[5]) ∧ に(EVENT[8]) = ENTITY[7] ∧ の_ヒーロー(ENTITY[9], ENTITY[5]) ∧
+         と(ATTRIB[10]) ∧ 面白い(ATTRIB[10]) ∧
+          before(EVENT[2], EVENT[8]) ∧
+           past(EVENT[21]) ∧
+            説得する.0(EVENT[2], ENTITY[廣瀬編成局次長], ENTITY[1],
+             言っ_て_いる(EVENT[11], ENTITY[3], ENTITY[5]) ∧ ATTRIBUTE(EVENT[11]) = ATTRIB[10] ∧
+              IMPERATIVE(∃ ENTITY[12] (
+                    ENTITY[12] = *speaker+hearer*{ENTITY[3], ENTITY[5], ENTITY[9], ENTITY[7], ENTITY[廣瀬編成局次長], ENTITY[1]} ∧
+                     MD_う(∃ SITUATION[19] ENTITY[15] EVENT[18] EVENT[14] ENTITY[17] ENTITY[16] (
+                           ENTITY[15] = *pro*{ENTITY[3], ENTITY[5], ENTITY[9], ENTITY[7], ENTITY[廣瀬編成局次長], ENTITY[1]} ∧
+                            子ども(ENTITY[17]) ∧
+                             の_感覚(ENTITY[17], ENTITY[16]) ∧
+                              ADV_ひとつ_LINK(SITUATION[19], ENTITY[13]) ∧
+                               FACT(SITUATION[19],
+                                み_ましょ(EVENT[14], ENTITY[12],
+                                 賭け_て(EVENT[18], ENTITY[12], ENTITY[15]) ∧
+                                  に(EVENT[18]) = ENTITY[16]))))))) ∧
+             推進する.0_た(EVENT[21], _, ENTITY[20]))
+
+# ::id 68_wikipedia_Kamen_Rider;NJ
+# ::snt ちなみに 、 「 敵対 組織 によって 改造 人間 に さ れ て しまっ た 」 という 設定 が ある ため 、 マスク に は 泣い て いる よう に 見える デザイン が 施さ れ て いる 。
+∃ ENTITY[12] SITUATION[11] ENTITY[3] SITUATION[1] EVENT[6] EVENT[7] EVENT[13] EVENT[14] EVENT[15] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[9] ENTITY[8] (
+ マスク(ENTITY[8]) ∧
+  ENTITY[3] = *pro* ∧
+   敵対_組織(ENTITY[4]) ∧
+    改造_人間(ENTITY[5]) ∧
+     THAT_設定(さ_て_しまっ_た(EVENT[6], ENTITY[4], ENTITY[3], ENTITY[5]), ENTITY[2]) ∧
+      FACT(SITUATION[1], ある(EVENT[7], ENTITY[2])) ∧
+       ENTITY[12] = *pro*{ENTITY[9], ENTITY[8], ENTITY[2], ENTITY[4], ENTITY[5]} ∧
+        よう(SITUATION[11], 泣い_て_いる(EVENT[13], ENTITY[12])) ∧
+         見える(EVENT[14], ENTITY[9]) ∧ に(EVENT[14]) = SITUATION[11] ∧ デザイン(ENTITY[9]) ∧
+          past(EVENT[6]) ∧
+           施さ_て_いる(EVENT[15], _, ENTITY[9]) ∧ に(EVENT[15]) = ENTITY[8] ∧
+            ため(EVENT[15]) = SITUATION[1])
+
+# ::id 69_wikipedia_Kamen_Rider;NJ
+# ::snt 以降 の シリーズ のみならず 、 改造 人間 に なら ない 平成仮面ライダー の マスク に も 同様 の デザイン が 施さ れ て いる 。
+∃ ATTRIB[10] EVENT[11] GROUP[2] ENTITY[9] ENTITY[8] ENTITY[1] (
+ CONJ_のみならず(∃ ENTITY[4] ENTITY[3] (以降(ENTITY[4]) ∧ の_シリーズ(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ¬ ∃ EVENT[7] ENTITY[6] (改造_人間(ENTITY[6]) ∧ なら(EVENT[7], ENTITY[平成仮面ライダー], ENTITY[6])) ∧ is_element_of(ENTITY[平成仮面ライダー], GROUP[2])) ∧
+  の_マスク(GROUP[2], ENTITY[1]) ∧
+   同様(ATTRIB[10]) ∧
+    ATTRIBUTE(ATTRIB[10], ENTITY[9]) ∧
+     の_デザイン(ENTITY[9], ENTITY[8]) ∧ 施さ_て_いる(EVENT[11], _, ENTITY[8]) ∧ に(EVENT[11]) = ENTITY[1])
+
+# ::id 70_wikipedia_Kamen_Rider;NJ
+# ::snt 制作 開始
+∃ EVENT[2] ENTITY[1] (制作_開始(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 71_wikipedia_Kamen_Rider;NJ
+# ::snt 「 バッタ 」 を モチーフ に し た ヒーロー 番組 企画 は 、 バイク に 乗っ て 戦う バッタ の ヒーロー 「 仮面ライダーホッパーキング 」 と 仮題 さ れ た が 、 「 長 すぎる 」 と の 毎日放送 側 の 意向 で 『 仮面ライダー 』 と 短縮 さ れ 、 2 月 1 日 から の 制作 決定 が 下さ れ た 。
+∃ ENTITY[16] SITUATION[15] ENTITY[13] EVENT[9] EVENT[10] EVENT[12] EVENT[17] EVENT[19] EVENT[22] ENTITY[8] ENTITY[11] ENTITY[6] ENTITY[18] ENTITY[14] ENTITY[21] ENTITY[20] EVENT[5] ENTITY[4] ENTITY[3] ENTITY[1] (
+ バッタ(ENTITY[3]) ∧
+  モチーフ(ENTITY[4]) ∧
+   し_た(EVENT[5], ENTITY[1], ENTITY[3], ENTITY[4]) ∧ ヒーロー_番組_企画(ENTITY[1]) ∧
+    past(EVENT[5]) ∧
+     バイク(ENTITY[8]) ∧
+      バッタ(ENTITY[11]) ∧
+       CONJ_te(乗っ_て(EVENT[9], ENTITY[6], ENTITY[8]), 戦う(EVENT[10], ENTITY[6])) ∧
+        の_ヒーロー(ENTITY[11], ENTITY[6]) ∧
+        namely_-ENTITY-(ENTITY[仮面ライダーホッパーキング], ENTITY[6]) ∧
+         ENTITY[13] = *pro*{ENTITY[6], ENTITY[11], ENTITY[8], ENTITY[1], ENTITY[仮面ライダーホッパーキング], ENTITY[3], ENTITY[4]} ∧
+          ENTITY[16] = *pro*{ENTITY[14], ENTITY[13], ENTITY[6], ENTITY[11], ENTITY[8], ENTITY[1], ENTITY[仮面ライダーホッパーキング], ENTITY[3], ENTITY[4]} ∧
+           と(SITUATION[15], 長_すぎる(EVENT[17], ENTITY[16])) ∧
+            毎日放送_側(ENTITY[18]) ∧
+             の_意向(ENTITY[18], ENTITY[14]) ∧ の__意向(SITUATION[15], ENTITY[14]) ∧
+              CD_2_月_1_日(ENTITY[21]) ∧
+               から_の_制作_決定(ENTITY[21], ENTITY[20]) ∧
+                past(EVENT[12]) ∧
+                 past(EVENT[22]) ∧
+                  CONJ_が(仮題する.0_た(EVENT[12], _, ENTITY[1]) ∧ と(EVENT[12]) = ENTITY[6],
+                   短縮する.0(EVENT[19], _, ENTITY[13]) ∧ と(EVENT[19]) = ENTITY[仮面ライダー] ∧
+                    で(EVENT[19]) = ENTITY[14] ∧ 下さ_た(EVENT[22], _, ENTITY[20])))
+
+# ::id 72_wikipedia_Kamen_Rider;NJ
+# ::snt また 当時 東映 の 「 大泉撮影所 」 は 組合 による ロックアウト の ため に 使用 でき ず 、 平山亨 や 斎藤頼照 とともに 組合 問題 で 東映京都撮影所 を 追わ れ た 内田有作 が 所長 と なり 、 急遽 生田 に 設立 し た 「 東映生田スタジオ 」 で の 制作 が 決まっ た 。
+∃ ENTITY[14] EVENT[9] EVENT[11] EVENT[15] EVENT[17] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[8] GROUP[7] TIME[2] ENTITY[10] ENTITY[12] (
+ の_xxx(ENTITY[東映], ENTITY[大泉撮影所]) ∧
+  当時(TIME[2]) ∧
+   組合(ENTITY[5]) ∧
+    による_ロックアウト(ENTITY[5], ENTITY[4]) ∧
+     の_ため(ENTITY[4], ENTITY[3]) ∧
+      CONJ_や(is_element_of(ENTITY[平山亨], GROUP[7]), is_element_of(ENTITY[斎藤頼照], GROUP[7])) ∧
+       組合_問題(ENTITY[8]) ∧
+        CONJ_te(¬ ∃ EVENT[6] (
+                   使用する.0(EVENT[6], ENTITY[内田有作], ENTITY[大泉撮影所]) ∧
+                    に(EVENT[6]) = ENTITY[3] ∧ is_contained_in(時間(EVENT[6]), TIME[2])),
+         追わ_た(EVENT[9], _, ENTITY[内田有作]) ∧ を(EVENT[9]) = ENTITY[東映京都撮影所] ∧
+          で(EVENT[9]) = ENTITY[8] ∧ とともに(EVENT[9]) = GROUP[7] ∧
+          is_contained_in(時間(EVENT[9]), TIME[2])) ∧
+         所長(ENTITY[10]) ∧
+          ENTITY[14] = *pro*{ENTITY[12], ENTITY[内田有作], ENTITY[東映京都撮影所], ENTITY[斎藤頼照], ENTITY[平山亨], ENTITY[大泉撮影所], ENTITY[東映], ENTITY[10], ENTITY[8], ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+           設立する.0_た(EVENT[15], ENTITY[14], ENTITY[東映生田スタジオ]) ∧ に(EVENT[15]) = ENTITY[生田] ∧
+            で_の_制作(ENTITY[東映生田スタジオ], ENTITY[12]) ∧
+             past(EVENT[9]) ∧
+              ADV_急遽(EVENT[15]) ∧
+               past(EVENT[15]) ∧
+                past(EVENT[17]) ∧ なり(EVENT[11], ENTITY[内田有作], ENTITY[10]) ∧ 決まっ_た(EVENT[17], ENTITY[12]))
+
+# ::id 73_wikipedia_Kamen_Rider;NJ
+# ::snt キャラクター 制作 と 美術 全般 は エキスプロダクション が 担当 。
+∃ EVENT[4] ENTITY[2] GROUP[1] (
+ キャラクター_制作(ENTITY[2]) ∧
+  CONJ_と(is_element_of(ENTITY[2], GROUP[1]),
+   全 ENTITY[3] (美術(ENTITY[3]) ∧ 般(ENTITY[3]), is_element_of(ENTITY[3], GROUP[1]))) ∧
+   担当(EVENT[4], ENTITY[エキスプロダクション], GROUP[1]))
+
+# ::id 74_wikipedia_Kamen_Rider;NJ
+# ::snt 照明 班 や 撮影 班 は 、 この 年 の 11 月 に 倒産 する こと と なる 大映東京撮影所 の スタッフ が 集め られ 、 東映 生え抜き で ない 異例 の スタッフ 編成 が 行わ れ た 。
+∃ SITUATION[6] EVENT[9] EVENT[10] EVENT[11] EVENT[17] ENTITY[7] ENTITY[4] ENTITY[16] ENTITY[12] ENTITY[2] ENTITY[3] ENTITY[8] GROUP[1] (
+ 照明_班(ENTITY[2]) ∧
+  撮影_班(ENTITY[3]) ∧
+   CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1])) ∧
+    年(ENTITY[8]) ∧
+     (CD_11_月(ENTITY[7]), の(ENTITY[8], ENTITY[7])) ∧
+      こと(SITUATION[6], 倒産する.0(EVENT[9], ENTITY[大映東京撮影所]) ∧ に(EVENT[9]) = ENTITY[7]) ∧
+       なる(EVENT[10], ENTITY[大映東京撮影所], SITUATION[6]) ∧
+        の_スタッフ(ENTITY[大映東京撮影所], ENTITY[4]) ∧
+         異例(ENTITY[16]) ∧
+          ¬ ∃ EVENT[15] ENTITY[14] (東映_生え抜き(ENTITY[14]) ∧ で(EVENT[15], ENTITY[12], ENTITY[14])) ∧
+           の_スタッフ_編成(ENTITY[16], ENTITY[12]) ∧
+           past(EVENT[17]) ∧
+            集め(EVENT[11], _, ENTITY[4]) ∧ TPC(EVENT[11]) = GROUP[1] ∧
+             行わ_た(EVENT[17], _, ENTITY[12]))
+
+# ::id 75_wikipedia_Kamen_Rider;NJ
+# ::snt 6 日 に スタッフ の 顔合わせ が あり 、 撮影 に 入っ た の は 2 月 7 日 で あっ た 。
+∃ ENTITY[6] SITUATION[5] EVENT[4] EVENT[8] EVENT[10] ENTITY[3] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[9] (
+ CD_6_日(ENTITY[1]) ∧
+  スタッフ(ENTITY[3]) ∧
+   の_顔合わせ(ENTITY[3], ENTITY[2]) ∧
+    ENTITY[6] = *pro*{ENTITY[1], ENTITY[2], ENTITY[3]} ∧
+     撮影(ENTITY[7]) ∧
+      の(SITUATION[5], 入っ_た(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+       CD_2_月_7_日(ENTITY[9]) ∧
+        past(EVENT[8]) ∧
+         past(EVENT[10]) ∧
+          あり(EVENT[4], ENTITY[2]) ∧ に(EVENT[4]) = ENTITY[1] ∧ で_あっ_た(EVENT[10], SITUATION[5], ENTITY[9]))
+
+# ::id 76_wikipedia_Kamen_Rider;NJ
+# ::snt 元々 、 本 作 は 『 ウルトラマン 』 の よう な 「 巨大 ヒーロー と 怪獣 が 戦う 作品 」 に し よう という 案 も あっ た と いう 。
+∃ ENTITY[3] EVENT[15] EVENT[1] ENTITY[2] ENTITY[4] (
+ 本_作(ENTITY[4]) ∧
+  ENTITY[3] = *pro* ∧
+   THAT_案(MD_よう(∃ EVENT[8] EVENT[13] EVENT[14] ENTITY[7] GROUP[9] ENTITY[5] (
+              の_よう(ENTITY[ウルトラマン], ENTITY[7]) ∧
+               CONJ_と(∃ ATTRIB[11] ENTITY[10] (巨大(ATTRIB[11]) ∧ ATTRIBUTE_ヒーロー(ATTRIB[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[9])),
+                ∃ ENTITY[12] (怪獣(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[9]))) ∧
+                な(EVENT[8], ENTITY[5], ENTITY[7]) ∧ THAT_作品(戦う(EVENT[13], GROUP[9]), ENTITY[5]) ∧
+                 し(EVENT[14], ENTITY[3], ENTITY[4], ENTITY[5]))), ENTITY[2]) ∧
+    ADV_元々(EVENT[15]) ∧ before(EVENT[1], EVENT[15]) ∧ いう(EVENT[1], あっ_た(EVENT[15], ENTITY[2])))
+
+# ::id 77_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 石森 は 等身大 ヒーロー に こだわり 、 敵 キャラクター も 人間 形態 として タイツ 主体 で 造形 さ れ 、 徹底 し て 怪獣 と は 差別化 する 方向 で 、 「 怪人 」 と 呼称 さ れ た 。
+∃ ENTITY[9] ENTITY[8] SITUATION[7] EVENT[2] EVENT[6] EVENT[10] EVENT[12] EVENT[14] ENTITY[1] ENTITY[5] ENTITY[4] ENTITY[13] ENTITY[3] ENTITY[11] (
+ 怪獣(ENTITY[11]) ∧
+  等身大_ヒーロー(ENTITY[1]) ∧
+   敵_キャラクター(ENTITY[3]) ∧
+    人間_形態(ENTITY[4]) ∧
+     タイツ_主体(ENTITY[5]) ∧
+      ENTITY[8] = *pro*{ENTITY[3], ENTITY[4], ENTITY[5], ENTITY[1], ENTITY[石森]} ∧
+       ENTITY[9] = *pro*{ENTITY[3], ENTITY[4], ENTITY[5], ENTITY[1], ENTITY[石森]} ∧
+        方向(SITUATION[7],
+         CONJ_te(徹底する.0_て(EVENT[10], ENTITY[8], ENTITY[9]),
+          差別化する.0(EVENT[12], ENTITY[8], ENTITY[9]) ∧ と(EVENT[12]) = ENTITY[11])) ∧
+         怪人(ENTITY[13]) ∧
+          past(EVENT[14]) ∧
+           こだわり(EVENT[2], ENTITY[石森]) ∧ に(EVENT[2]) = ENTITY[1] ∧
+            造形する.0(EVENT[6], _, ENTITY[3]) ∧ で(EVENT[6]) = ENTITY[5] ∧
+             として(EVENT[6]) = ENTITY[4] ∧
+             呼称する.0_た(EVENT[14], _, ENTITY[3]) ∧ と(EVENT[14]) = ENTITY[13] ∧
+              で(EVENT[14]) = SITUATION[7])
+
+# ::id 78_wikipedia_Kamen_Rider;NJ
+# ::snt 平山亨 著 『 泣き虫プロデューサーの遺言状 』 （ 講談社 ） によると 、 毎日放送 側 から 東映 に 支払わ れる 製作 費 は 1 話 につき 400万 円 。
+∃ EVENT[7] ENTITY[6] ENTITY[5] EVENT[4] ENTITY[3] ENTITY[1] (
+ 毎日放送_側(ENTITY[3]) ∧
+  支払わ(EVENT[4], ENTITY[3], ENTITY[1], ENTITY[東映]) ∧ 製作_費(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[泣き虫プロデューサーの遺言状], ENTITY[平山亨_著]) ∧
+    namely_-ENTITY-(ENTITY[講談社], ENTITY[平山亨_著]) ∧
+     CD_1_話(ENTITY[5]) ∧
+      CD_400万_円(ENTITY[6]) ∧
+       xxx(EVENT[7], ENTITY[1], ENTITY[6]) ∧ につき(EVENT[7]) = ENTITY[5] ∧ によると(EVENT[7]) = ENTITY[平山亨_著])
+
+# ::id 79_wikipedia_Kamen_Rider;NJ
+# ::snt 美術 予算 が 足り ず 、 機械 パネル の イメージ を 予定 し て い た ショッカー の アジト 内 は 、 エキスプロ の 高橋章 が 描く おどろおどろしい 模様 を 描い た もの と なっ た 。
+∃ ATTRIB[14] ENTITY[9] SITUATION[8] ENTITY[12] ENTITY[10] EVENT[13] EVENT[15] EVENT[16] EVENT[7] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[1] (
+ 美術_予算(ENTITY[3]) ∧
+  機械_パネル(ENTITY[6]) ∧
+   の_イメージ(ENTITY[6], ENTITY[5]) ∧
+    CONJ_te(¬ ∃ EVENT[4] 足り(EVENT[4], ENTITY[3]), 予定する.0_て_い_た(EVENT[7], ENTITY[1], ENTITY[5])) ∧
+     の_アジト_内(ENTITY[ショッカー], ENTITY[1]) ∧
+     past(EVENT[7]) ∧
+      past(EVENT[15]) ∧
+       past(EVENT[16]) ∧
+        ENTITY[9] = *pro*{ENTITY[1], ENTITY[ショッカー], ENTITY[5], ENTITY[6], ENTITY[3]} ∧
+         エキスプロ(ENTITY[12]) ∧
+          の_xxx(ENTITY[12], ENTITY[高橋章]) ∧
+           おどろおどろしい(ATTRIB[14]) ∧
+            描く(EVENT[13], ENTITY[高橋章], ENTITY[10]) ∧ ATTRIBUTE_模様(ATTRIB[14], ENTITY[10]) ∧
+             もの(SITUATION[8], 描い_た(EVENT[15], ENTITY[9], ENTITY[10])) ∧ なっ_た(EVENT[16], ENTITY[1], SITUATION[8]))
+
+# ::id 80_wikipedia_Kamen_Rider;NJ
+# ::snt 同プロ の 三上陸男 は 「 おかげ で 生物 感 の ある 不気味 な もの に なっ た 」 と コメント し て いる 。
+∃ ATTRIB[9] ENTITY[3] EVENT[8] EVENT[10] EVENT[2] ENTITY[7] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 同プロ(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[三上陸男]) ∧
+   ENTITY[3] = *pro*{ENTITY[三上陸男], ENTITY[1]} ∧
+    おかげ(ENTITY[4]) ∧
+     生物_感(ENTITY[7]) ∧
+      不気味_な(ATTRIB[9]) ∧
+       ある(EVENT[8], (ENTITY[5], ENTITY[7])) ∧ ATTRIBUTE_もの(ATTRIB[9], ENTITY[5]) ∧
+        before(EVENT[2], EVENT[10]) ∧
+         コメントする.0_て_いる(EVENT[2], ENTITY[三上陸男], なっ_た(EVENT[10], ENTITY[3], ENTITY[5]) ∧ で(EVENT[10]) = ENTITY[4]))
+
+# ::id 81_wikipedia_Kamen_Rider;NJ
+# ::snt 企画 段階 で 紆余曲折 を 経 た 本 作 は 、 放映 開始 さ れ て も 順風満帆 と は 行か なかっ た 。
+∃ EVENT[5] ENTITY[4] ENTITY[3] ENTITY[9] ENTITY[1] (
+ 企画_段階(ENTITY[3]) ∧
+  紆余曲折(ENTITY[4]) ∧
+   経_た(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3] ∧ 本_作(ENTITY[1]) ∧
+    順風満帆(ENTITY[9]) ∧
+     past(EVENT[5]) ∧
+      ¬ ∃ SITUATION[6] EVENT[8] EVENT[10] ENTITY[7] (
+            放映(ENTITY[7]) ∧
+             FACT(SITUATION[6], 開始する.0_て(EVENT[8], (_, ENTITY[7]), ENTITY[1])) ∧
+              past(EVENT[10]) ∧
+               行か_た(EVENT[10], ENTITY[1]) ∧ と(EVENT[10]) = ENTITY[9] ∧
+                te(EVENT[10]) = SITUATION[6]))
+
+# ::id 82_wikipedia_Kamen_Rider;NJ
+# ::snt 元々 貸し スタジオ で ある 「 東映生田スタジオ 」 に は 満足 な 撮影 設備 も なく 、 撮影 用 の 平台 が 一 つ ある のみ で 、 バラック 建て の 建物 は 雨 が 降る と 反響 音 によって アフレコ も でき ない 状況 だっ た 。
+∃ ENTITY[14] SITUATION[13] ATTRIB[6] EVENT[7] EVENT[10] EVENT[20] ENTITY[5] ENTITY[8] EVENT[3] ENTITY[2] ENTITY[12] ENTITY[11] (
+ 貸し_スタジオ(ENTITY[2]) ∧
+  で_ある(EVENT[3], ENTITY[東映生田スタジオ], ENTITY[2]) ∧
+   バラック_建て(ENTITY[12]) ∧
+    の_建物(ENTITY[12], ENTITY[11]) ∧
+     ADV_元々(EVENT[3]) ∧
+      満足_な(ATTRIB[6]) ∧
+       ATTRIBUTE_撮影_設備(ATTRIB[6], ENTITY[5]) ∧
+        撮影_用(ENTITY[8]) ∧
+         の_xxx(ENTITY[8], ENTITY[平台]) ∧
+          ENTITY[14] = *pro*{ENTITY[11], ENTITY[12], ENTITY[8], ENTITY[5], ENTITY[平台], ENTITY[東映生田スタジオ], ENTITY[2]} ∧
+           状況(SITUATION[13],
+            ¬ ∀ EVENT[16] ENTITY[15] CND_と(雨(ENTITY[15]) ∧ 降る(EVENT[16], ENTITY[15]),
+                     ∃ EVENT[19] ENTITY[18] ENTITY[17] (
+                      反響_音(ENTITY[17]) ∧
+                       アフレコ(ENTITY[18]) ∧
+                        でき(EVENT[19], ENTITY[14], ENTITY[18]) ∧
+                         によって(EVENT[19]) = ENTITY[17]))) ∧
+            past(EVENT[20]) ∧
+             CONJ_te(なく(EVENT[7], ENTITY[5]) ∧ に(EVENT[7]) = ENTITY[東映生田スタジオ] ∧
+                   一_つ ENTITY[9] (ENTITY[9] = ENTITY[平台], ある_のみ_で(EVENT[10], ENTITY[9])),
+              だっ_た(EVENT[20], ENTITY[11], SITUATION[13])))
+
+# ::id 83_wikipedia_Kamen_Rider;NJ
+# ::snt また 、 第 1 話 の 視聴 率 は 関東 地区 において 8.1 % と 厳しい もの で あっ た が 、 毎日放送 の 地元 で ある 関西 地区 で は 関東 地区 に 比べ て 高視聴 率 を マーク し て おり 、 この 数字 を 見 た 毎日放送 側 は 手応え を 感じ て 「 この まま で 参り ましょ う 」 と 平山 に 伝え た 。
+∃ ATTRIB[6] EVENT[7] EVENT[13] EVENT[15] EVENT[21] EVENT[22] ENTITY[4] ENTITY[5] ENTITY[3] ENTITY[12] ENTITY[14] ENTITY[20] EVENT[11] EVENT[19] ENTITY[2] ENTITY[10] ENTITY[8] ENTITY[1] ENTITY[18] ENTITY[24] ENTITY[16] (
+ CD_第_1_話(ENTITY[2]) ∧
+  の_視聴_率(ENTITY[2], ENTITY[1]) ∧
+   の_地元(ENTITY[毎日放送], ENTITY[10]) ∧
+    で_ある(EVENT[11], ENTITY[8], ENTITY[10]) ∧ 関西_地区(ENTITY[8]) ∧
+     数字(ENTITY[18]) ∧
+      見_た(EVENT[19], ENTITY[16], ENTITY[18]) ∧ 毎日放送_側(ENTITY[16]) ∧
+       まま(ENTITY[24]) ∧
+        past(EVENT[19]) ∧
+         関東_地区(ENTITY[4]) ∧
+          (CD_8.1%(ENTITY[3]), において(ENTITY[4], ENTITY[3])) ∧
+           厳しい(ATTRIB[6]) ∧
+            ATTRIBUTE_もの(ATTRIB[6], ENTITY[5]) ∧
+             関東_地区(ENTITY[12]) ∧
+              高視聴_率(ENTITY[14]) ∧
+               手応え(ENTITY[20]) ∧
+                past(EVENT[7]) ∧
+                 past(EVENT[22]) ∧
+                  CONJ_が(で_あっ_た(EVENT[7], ENTITY[1], ENTITY[5]) ∧ と(EVENT[7]) = ENTITY[3],
+                   CONJ_te(比べ_て(EVENT[13], ENTITY[1], ENTITY[12]) ∧ で(EVENT[13]) = ENTITY[8],
+                    マークする.0_て_おり(EVENT[15], ENTITY[1], ENTITY[14]) ∧ で(EVENT[15]) = ENTITY[8])) ∧
+                   CONJ_te(感じ_て(EVENT[21], ENTITY[16], ENTITY[20]),
+                    伝え_た(EVENT[22], ENTITY[16],
+                     IMPERATIVE(∃ ENTITY[23] (
+                           ENTITY[23] = *speaker+hearer*{ENTITY[16], ENTITY[平山], ENTITY[20], ENTITY[18], ENTITY[14], ENTITY[12], ENTITY[3], ENTITY[5], ENTITY[4], ENTITY[1], ENTITY[8], ENTITY[10], ENTITY[毎日放送], ENTITY[2]} ∧
+                            MD_う(∃ EVENT[25] (
+                                  参り_ましょ(EVENT[25], ENTITY[23]) ∧
+                                   で(EVENT[25]) = ENTITY[24]))))) ∧
+                     に(EVENT[22]) = ENTITY[平山]))
+
+# ::id 84_wikipedia_Kamen_Rider;NJ
+# ::snt 同時期 の 特撮 番組 が 『 宇宙猿人ゴリ 』 や 『 帰ってきたウルトラマン 』 など の 巨大 ヒーロー 番組 が 多かっ た せい か 、 のち の 2号ライダー 登場 の 際 に は 巨大化 さ せ よう という 案 も 出 た ものの 、 「 等身大 」 の ヒーロー と 怪人 を 貫い た 本 作 は 平山 が 企画 書 で 強調 し た 「 現実的 」 と の セールスポイント が 的中 し た 形 と なり 、 大人気 を 得 た 。
+∃ SITUATION[28] ATTRIB[9] SITUATION[2] EVENT[10] EVENT[32] EVENT[34] EVENT[35] EVENT[37] ENTITY[5] ENTITY[4] GROUP[8] ENTITY[7] ENTITY[6] ENTITY[3] ENTITY[31] ENTITY[33] ENTITY[29] ENTITY[36] EVENT[27] ENTITY[16] ENTITY[15] ENTITY[14] ENTITY[25] ENTITY[26] GROUP[24] ENTITY[23] ENTITY[22] ENTITY[20] (
+ のち(ENTITY[16]) ∧
+  の_2号ライダー_登場(ENTITY[16], ENTITY[15]) ∧
+   の_際(ENTITY[15], ENTITY[14]) ∧
+    等身大(ENTITY[23]) ∧
+     ヒーロー(ENTITY[25]) ∧
+      怪人(ENTITY[26]) ∧
+       CONJ_と(is_element_of(ENTITY[25], GROUP[24]), is_element_of(ENTITY[26], GROUP[24])) ∧
+        equals(GROUP[24], ENTITY[22]) ∧ の(ENTITY[23], ENTITY[22]) ∧
+         貫い_た(EVENT[27], ENTITY[20], ENTITY[22]) ∧ 本_作(ENTITY[20]) ∧
+          past(EVENT[27]) ∧
+           同時期(ENTITY[5]) ∧
+            の_特撮_番組(ENTITY[5], ENTITY[4]) ∧
+             が(ENTITY[4], ENTITY[3]) ∧
+              CONJ_や(is_element_of(ENTITY[宇宙猿人ゴリ], GROUP[8]), is_element_of(ENTITY[帰ってきたウルトラマン], GROUP[8])) ∧
+               など(GROUP[8], ENTITY[7]) ∧
+                巨大(ATTRIB[9]) ∧
+                 ATTRIBUTE_ヒーロー_番組(ATTRIB[9], ENTITY[6]) ∧ の_ヒーロー_番組(ENTITY[7], ENTITY[6]) ∧
+                  せい(SITUATION[2], 多かっ_た(EVENT[10], ENTITY[6]) ∧ TPC(EVENT[10]) = ENTITY[3]) ∧
+                   企画_書(ENTITY[31]) ∧
+                    現実的(ENTITY[33]) ∧
+                     強調する.0_た(EVENT[32], ENTITY[平山], ENTITY[29]) ∧ で(EVENT[32]) = ENTITY[31] ∧
+                      と_の_セールスポイント(ENTITY[33], ENTITY[29]) ∧
+                      形(SITUATION[28], 的中する.0_た(EVENT[34], ENTITY[29])) ∧
+                       大人気(ENTITY[36]) ∧
+                        past(EVENT[10]) ∧
+                         past(EVENT[32]) ∧
+                          past(EVENT[34]) ∧
+                           past(EVENT[37]) ∧
+                            CRD_ものの(か SITUATION[1] (SITUATION[1] = SITUATION[2],
+                                  ∃ ENTITY[12] EVENT[19] ENTITY[11] (
+                                   ENTITY[12] = *pro*{ENTITY[帰ってきたウルトラマン], ENTITY[宇宙猿人ゴリ], ENTITY[3], ENTITY[6], ENTITY[7], ENTITY[4], ENTITY[5]} ∧
+                                    THAT_案(MD_よう(∃ ENTITY[13] EVENT[18] EVENT[17] (
+                                               ENTITY[13] = *pro*{ENTITY[帰ってきたウルトラマン], ENTITY[宇宙猿人ゴリ], ENTITY[3], ENTITY[6], ENTITY[7], ENTITY[4], ENTITY[5]} ∧
+                                                せ(EVENT[17], ENTITY[12], ENTITY[13],
+                                                 巨大化する.0(EVENT[18], ENTITY[13])) ∧
+                                                 に(EVENT[17]) = ENTITY[14])),
+                                     ENTITY[11]) ∧
+                                     past(EVENT[19]) ∧
+                                      出_た(EVENT[19], ENTITY[11]) ∧
+                                       LINK(EVENT[19]) = SITUATION[1])),
+                             なり(EVENT[35], ENTITY[20], SITUATION[28]) ∧
+                              得_た(EVENT[37], ENTITY[20], ENTITY[36])))
+
+# ::id 85_wikipedia_Kamen_Rider;NJ
+# ::snt 番組 の 制作 は トラブル や 試行錯誤 の 連続 だっ た 。
+∃ EVENT[7] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 番組(ENTITY[2]) ∧
+  の_制作(ENTITY[2], ENTITY[1]) ∧
+   CONJ_や(∃ ENTITY[5] (トラブル(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+    ∃ ENTITY[6] (試行錯誤(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[4]))) ∧
+    の_連続(GROUP[4], ENTITY[3]) ∧ past(EVENT[7]) ∧ だっ_た(EVENT[7], ENTITY[1], ENTITY[3]))
+
+# ::id 86_wikipedia_Kamen_Rider;NJ
+# ::snt 中でも 大きな トラブル は 、 第 9 ・ 10 話 の 撮影中 に 藤岡 が オートバイ で 転倒 し 、 全治 3〜6 カ月 の 重傷 と なり 、 撮影 に 参加 でき なく なっ た こと 。
+∃ SITUATION[17] ENTITY[13] SITUATION[3] ATTRIB[2] EVENT[9] EVENT[12] EVENT[16] GROUP[5] ENTITY[8] ENTITY[11] ENTITY[10] ENTITY[4] ENTITY[1] (
+ 大きな(ATTRIB[2]) ∧
+  ATTRIBUTE_トラブル(ATTRIB[2], ENTITY[1]) ∧
+   ∃ ENTITY[6] (CD_第_9(ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])) ∧
+    ∃ ENTITY[7] (CD_10_話(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[5])) ∧
+    の_撮影中(GROUP[5], ENTITY[4]) ∧
+     オートバイ(ENTITY[8]) ∧
+      (CD_3〜6_カ月(ENTITY[11]), 全治(ENTITY[11])) ∧
+       の_重傷(ENTITY[11], ENTITY[10]) ∧
+        ENTITY[13] = *pro*{ENTITY[1], ENTITY[4], ENTITY[10], ENTITY[11], ENTITY[8], ENTITY[藤岡]} ∧
+         こと(SITUATION[3],
+          転倒する.0(EVENT[9], ENTITY[藤岡]) ∧ で(EVENT[9]) = ENTITY[8] ∧
+           なり(EVENT[12], ENTITY[藤岡], ENTITY[10]) ∧ に(EVENT[12]) = ENTITY[4] ∧
+           ¬ ∃ EVENT[15] ENTITY[14] (
+                 撮影(ENTITY[14]) ∧
+                  past(EVENT[15]) ∧
+                   参加する.0_なっ_た(EVENT[15], ENTITY[13]) ∧ に(EVENT[15]) = ENTITY[14])) ∧
+          ADV_中でも(SITUATION[17]) ∧ FACT(SITUATION[17], xxx(EVENT[16], ENTITY[1], SITUATION[3])))
+
+# ::id 87_wikipedia_Kamen_Rider;NJ
+# ::snt この ため 、 未完成 分 について 、 本郷 の 登場 シーン など を 前話 まで の 映像 から 流用 し た 藤岡 の 姿 と 別人 による 吹替え で 補い 、 声優 の 納谷六朗 による アフレコ で 制作 、 変身後 の ライダー の シーン を 増やし 、 さらに 新キャラクター ・ 滝和也 の 活躍 を 繋ぎ合わせる など の 措置 で 完成 さ せ 急場 を 凌い だ 。
+∃ ENTITY[8] SITUATION[7] ENTITY[6] ENTITY[1] EVENT[19] EVENT[22] EVENT[26] EVENT[28] EVENT[30] EVENT[29] EVENT[32] ENTITY[4] ENTITY[10] GROUP[11] ENTITY[9] ENTITY[21] ENTITY[20] ENTITY[25] ENTITY[24] ENTITY[23] ENTITY[27] ENTITY[5] ENTITY[3] ENTITY[31] ENTITY[2] (
+ ため(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   未完成_分(ENTITY[4]) ∧
+    について(ENTITY[4], ENTITY[3]) ∧
+     ENTITY[8] = *pro*{ENTITY[6], ENTITY[5], ENTITY[1], ENTITY[3], ENTITY[4], ENTITY[2]} ∧
+      の_登場_シーン(ENTITY[本郷], ENTITY[10]) ∧
+       など(ENTITY[10], ENTITY[9]) ∧
+        CONJ_と(∃ EVENT[16] ENTITY[15] ENTITY[14] ENTITY[12] (
+              前話(ENTITY[15]) ∧
+               まで_の_映像(ENTITY[15], ENTITY[14]) ∧
+                流用する.0_た(EVENT[16], ENTITY[12]) ∧ から(EVENT[16]) = ENTITY[14] ∧
+                 の_姿(ENTITY[藤岡], ENTITY[12]) ∧ past(EVENT[16]) ∧ is_element_of(ENTITY[12], GROUP[11])),
+         ∃ ENTITY[18] ENTITY[17] (別人(ENTITY[18]) ∧ による_吹替え(ENTITY[18], ENTITY[17]) ∧ is_element_of(ENTITY[17], GROUP[11]))) ∧
+         声優(ENTITY[21]) ∧
+          の_xxx(ENTITY[21], ENTITY[納谷六朗]) ∧
+           による_アフレコ(ENTITY[納谷六朗], ENTITY[20]) ∧
+            変身後(ENTITY[25]) ∧
+             の_ライダー(ENTITY[25], ENTITY[24]) ∧
+              の_シーン(ENTITY[24], ENTITY[23]) ∧
+               の_活躍(ENTITY[新キャラクター_滝和也], ENTITY[27]) ∧
+                FACT(SITUATION[7],
+                 補い(EVENT[19], ENTITY[8], ENTITY[9]) ∧ で(EVENT[19]) = GROUP[11] ∧
+                  制作(EVENT[22], ENTITY[8]) ∧ で(EVENT[22]) = ENTITY[20] ∧
+                   CONJ_さらに(増やし(EVENT[26], ENTITY[8], ENTITY[23]), 繋ぎ合わせる(EVENT[28], ENTITY[8], ENTITY[27]))) ∧
+                 など(SITUATION[7], ENTITY[6]) ∧
+                  の_措置(ENTITY[6], ENTITY[5]) ∧
+                   急場(ENTITY[31]) ∧
+                    past(EVENT[32]) ∧
+                     せ(EVENT[29], ENTITY[1], ENTITY[3], 完成する.0(EVENT[30], ENTITY[3])) ∧
+                      で(EVENT[29]) = ENTITY[5] ∧
+                      凌い_だ(EVENT[32], ENTITY[1], ENTITY[31]) ∧ ADV(EVENT[32]) = ENTITY[2])
+
+# ::id 88_wikipedia_Kamen_Rider;NJ
+# ::snt これら の 放映 の 間 、 方向 性 の 再検討 と 新た な 主役 について 討議 さ れ た 。
+∃ ENTITY[3] EVENT[10] ENTITY[2] GROUP[5] ENTITY[4] TIME[1] (
+ ENTITY[3] = これら ∧
+  の_放映(ENTITY[3], ENTITY[2]) ∧
+   の_間(ENTITY[2], TIME[1]) ∧
+    CONJ_と(∃ ENTITY[7] ENTITY[6] (方向_性(ENTITY[7]) ∧ の_再検討(ENTITY[7], ENTITY[6]) ∧ is_element_of(ENTITY[6], GROUP[5])),
+     ∃ ATTRIB[9] ENTITY[8] (新た_な(ATTRIB[9]) ∧ ATTRIBUTE_主役(ATTRIB[9], ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[5]))) ∧
+     について(GROUP[5], ENTITY[4]) ∧
+      past(EVENT[10]) ∧ 討議する.0_た(EVENT[10], _, ENTITY[4]) ∧ is_contained_in(時間(EVENT[10]), TIME[1]))
+
+# ::id 89_wikipedia_Kamen_Rider;NJ
+# ::snt 現存 する 会議録 によれば 、 連載 し て い た 漫画 同様 に 本郷 が 戦死 する 案 を 始め と し て 様々 な 展開 が 検討 さ れ て いる 。
+∃ ATTRIB[13] SITUATION[4] SITUATION[9] ENTITY[5] ENTITY[10] ENTITY[12] ENTITY[1] EVENT[3] EVENT[7] EVENT[8] EVENT[11] EVENT[14] (
+ past(EVENT[7]) ∧
+  of_ADV_同様_に(ENTITY[5], SITUATION[9]) ∧
+   現存する.0(EVENT[3], ENTITY[1]) ∧ 会議録(ENTITY[1]) ∧
+    連載する.0_て_い_た(EVENT[7], ENTITY[5]) ∧ 漫画(ENTITY[5]) ∧
+     案(SITUATION[4], FACT(SITUATION[9], 戦死する.0(EVENT[8], ENTITY[本郷]))) ∧
+      始め(ENTITY[10]) ∧
+       様々_な(ATTRIB[13]) ∧
+        ATTRIBUTE_展開(ATTRIB[13], ENTITY[12]) ∧
+         CRD_te(し_て(EVENT[11], _, SITUATION[4], ENTITY[10]),
+          検討する.0_て_いる(EVENT[14], _, ENTITY[12]) ∧ によれば(EVENT[14]) = ENTITY[1]))
+
+# ::id 90_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー2号 の 登場
+∃ EVENT[2] ENTITY[1] (の_登場(ENTITY[仮面ライダー2号], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 91_wikipedia_Kamen_Rider;NJ
+# ::snt 藤岡 の 怪我 による 入院 の ため 、 「 本郷 は 海外 の ショッカー 支部 と の 戦い に 赴き 、 その あと を 継ぐ 新しい 仮面ライダー が 登場 する 」 という 形 で の 新展開 が 決定 し た 。
+∃ EVENT[9] EVENT[12] EVENT[13] EVENT[14] ENTITY[3] ENTITY[2] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[1] ENTITY[11] (
+ あと(ENTITY[11]) ∧
+  怪我(ENTITY[3]) ∧
+   による_入院(ENTITY[3], ENTITY[2]) ∧
+    の_ため(ENTITY[2], ENTITY[1]) ∧ の__ため(ENTITY[藤岡], ENTITY[1]) ∧
+     海外(ENTITY[8]) ∧
+      の_ショッカー_支部(ENTITY[8], ENTITY[7]) ∧
+       と_の_戦い(ENTITY[7], ENTITY[6]) ∧
+        継ぐ(EVENT[12], ENTITY[新しい_仮面ライダー], ENTITY[11]) ∧
+         THAT_形(赴き(EVENT[9], ENTITY[本郷]) ∧ に(EVENT[9]) = ENTITY[6] ∧ 登場する.0(EVENT[13], ENTITY[新しい_仮面ライダー]),
+          ENTITY[5]) ∧
+          で_の_新展開(ENTITY[5], ENTITY[4]) ∧
+           past(EVENT[14]) ∧ 決定する.0_た(EVENT[14], ENTITY[4]) ∧ ADV(EVENT[14]) = ENTITY[1])
+
+# ::id 92_wikipedia_Kamen_Rider;NJ
+# ::snt 主役 ・ 一文字隼人 に は 佐々木剛 が 選ば れ た 。
+∃ EVENT[1] (past(EVENT[1]) ∧ 選ば_た(EVENT[1], _, ENTITY[佐々木剛]) ∧ に(EVENT[1]) = ENTITY[主役_一文字隼人])
+
+# ::id 93_wikipedia_Kamen_Rider;NJ
+# ::snt 佐々木 は 出演 依頼 を 受け た 当初 、 劇団NLT で 同期 だっ た 藤岡 の 役 を 奪う こと に なる と 難色 を 示し て い た が 、 「 藤岡 が 復帰 する まで の 代役 」 という 条件 で 引き受け た と いう 。
+∃ SITUATION[19] SITUATION[9] SITUATION[8] ENTITY[4] SITUATION[3] ENTITY[2] EVENT[6] EVENT[13] EVENT[14] EVENT[15] EVENT[16] EVENT[20] EVENT[21] EVENT[1] ENTITY[5] ENTITY[12] ENTITY[10] ENTITY[7] ENTITY[18] ENTITY[17] (
+ ENTITY[2] = *pro* ∧
+  ENTITY[4] = *pro*{ENTITY[2], ENTITY[佐々木]} ∧
+   出演_依頼(ENTITY[5]) ∧
+    FACT(SITUATION[3], 受け_た(EVENT[6], ENTITY[4], ENTITY[5])) ∧
+     難色(ENTITY[7]) ∧
+      同期(ENTITY[12]) ∧
+       だっ_た(EVENT[13], ENTITY[藤岡], ENTITY[12]) ∧ で(EVENT[13]) = ENTITY[劇団NLT] ∧
+        の_役(ENTITY[藤岡], ENTITY[10]) ∧
+         こと(SITUATION[9], 奪う(EVENT[14], ENTITY[7], ENTITY[10])) ∧
+          FACT(SITUATION[8], なる(EVENT[15], ENTITY[7], SITUATION[9])) ∧
+           FACT(SITUATION[19], 復帰する.0(EVENT[20], ENTITY[藤岡])) ∧
+            まで_の_代役(SITUATION[19], ENTITY[18]) ∧
+             という_条件(ENTITY[18], ENTITY[17]) ∧
+              before(EVENT[1], EVENT[6]) ∧
+               before(EVENT[1], EVENT[13]) ∧
+                before(EVENT[1], EVENT[16]) ∧
+                 before(EVENT[1], EVENT[21]) ∧
+                  いう(EVENT[1],
+                   CONJ_が(示し_て_い_た(EVENT[16], ENTITY[佐々木], ENTITY[7]) ∧ と(EVENT[16]) = SITUATION[8] ∧
+                         当初(EVENT[16]) = SITUATION[3],
+                    引き受け_た(EVENT[21], ENTITY[佐々木], ENTITY[2]) ∧ で(EVENT[21]) = ENTITY[17])))
+
+# ::id 94_wikipedia_Kamen_Rider;NJ
+# ::snt また 、 主役 交代 を 機 に それ まで の 反省 点 が 一気 に 修正 さ れる こと に なる 。
+∃ SITUATION[6] ENTITY[5] EVENT[3] EVENT[8] EVENT[9] ENTITY[2] ENTITY[1] ENTITY[7] ENTITY[4] (
+ 主役_交代(ENTITY[1]) ∧
+  機(ENTITY[2]) ∧
+   ENTITY[5] = それ{ENTITY[1], ENTITY[2]} ∧
+    まで_の_反省_点(ENTITY[5], ENTITY[4]) ∧
+     一気(ENTITY[7]) ∧
+      こと(SITUATION[6], 修正する.0(EVENT[8], _, ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+       xxx(EVENT[3], _, ENTITY[1], ENTITY[2]) ∧ なる(EVENT[9], ENTITY[4], SITUATION[6]))
+
+# ::id 95_wikipedia_Kamen_Rider;NJ
+# ::snt 舞台 を スナック から レーシングクラブ に 移し 、 レギュラー ヒロイン を 増やす など ドラマ の 雰囲気 を 明るく し た 。
+∃ SITUATION[2] ENTITY[1] EVENT[7] EVENT[8] EVENT[11] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[10] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  レギュラー_ヒロイン(ENTITY[3]) ∧
+   舞台(ENTITY[4]) ∧
+    スナック(ENTITY[5]) ∧
+     レーシングクラブ(ENTITY[6]) ∧
+      FACT(SITUATION[2],
+       移し(EVENT[7], ENTITY[3], ENTITY[4]) ∧ に(EVENT[7]) = ENTITY[6] ∧
+        から(EVENT[7]) = ENTITY[5] ∧ 増やす(EVENT[8], ENTITY[1], ENTITY[3])) ∧
+       ドラマ(ENTITY[10]) ∧
+        の_雰囲気(ENTITY[10], ENTITY[9]) ∧
+         past(EVENT[11]) ∧ 明るく_し_た(EVENT[11], ENTITY[1], ENTITY[9]) ∧ など(EVENT[11]) = SITUATION[2])
+
+# ::id 96_wikipedia_Kamen_Rider;NJ
+# ::snt 一文字 を 本郷 より も ユーモラス で 都会 派 の キャラクター に 設定 し 、 ヒーロー 性 を 強化 し た 。
+∃ ENTITY[1] EVENT[6] EVENT[8] GROUP[3] ENTITY[2] ENTITY[7] (
+ ENTITY[1] = *pro* ∧
+  CONJ_で(∃ ENTITY[4] (より_ユーモラス(ENTITY[本郷], ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[3])),
+   ∃ ENTITY[5] (都会_派(ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[3]))) ∧
+   の_キャラクター(GROUP[3], ENTITY[2]) ∧
+    ヒーロー_性(ENTITY[7]) ∧
+     past(EVENT[8]) ∧
+      設定する.0(EVENT[6], ENTITY[1], ENTITY[一文字]) ∧ に(EVENT[6]) = ENTITY[2] ∧
+       強化する.0_た(EVENT[8], ENTITY[1], ENTITY[7]))
+
+# ::id 97_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー の デザイン を やや 派手 な もの に し て 、 キャラクター 性 を 強化 する とともに 、 夜間 撮影時 の 困難 を 避ける べく 暗闇 に とけ込み にくい 配色 に し た 。
+∃ ATTRIB[5] SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] EVENT[15] EVENT[16] ENTITY[4] ENTITY[3] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[14] ENTITY[12] (
+ ENTITY[1] = *pro* ∧
+  の_デザイン(ENTITY[仮面ライダー], ENTITY[3]) ∧
+   やや_派手_な(ATTRIB[5]) ∧
+    ATTRIBUTE_もの(ATTRIB[5], ENTITY[4]) ∧
+     キャラクター_性(ENTITY[7]) ∧
+      FACT(SITUATION[2],
+       CONJ_te(し_て(EVENT[6], ENTITY[1], ENTITY[3], ENTITY[4]), 強化する.0(EVENT[8], ENTITY[1], ENTITY[7]))) ∧
+       夜間_撮影時(ENTITY[10]) ∧
+        の_困難(ENTITY[10], ENTITY[9]) ∧
+         暗闇(ENTITY[14]) ∧
+          とけ込み_にくい(EVENT[15], ENTITY[12]) ∧ に(EVENT[15]) = ENTITY[14] ∧ 配色(ENTITY[12]) ∧
+           past(EVENT[16]) ∧
+            MD_べく(∃ EVENT[11] 避ける(EVENT[11], ENTITY[1], ENTITY[9])) ∧
+             し_た(EVENT[16], ENTITY[1], ENTITY[12]) ∧ とともに(EVENT[16]) = SITUATION[2])
+
+# ::id 98_wikipedia_Kamen_Rider;NJ
+# ::snt ライダー に 「 変身 ポーズ 」 を 設定 し 、 一文字 の 意思 による 能動的 な 変身 を 取り入れ た 。
+∃ ATTRIB[7] ENTITY[1] EVENT[4] EVENT[8] ENTITY[3] ENTITY[2] ENTITY[6] ENTITY[5] (
+ ENTITY[1] = *pro* ∧
+  ライダー(ENTITY[2]) ∧
+   変身_ポーズ(ENTITY[3]) ∧
+    の_意思(ENTITY[一文字], ENTITY[6]) ∧
+     能動的_な(ATTRIB[7]) ∧
+      ATTRIBUTE_変身(ATTRIB[7], ENTITY[5]) ∧ による_変身(ENTITY[6], ENTITY[5]) ∧
+       past(EVENT[8]) ∧
+        設定する.0(EVENT[4], ENTITY[1], ENTITY[3]) ∧ に(EVENT[4]) = ENTITY[2] ∧
+         取り入れ_た(EVENT[8], ENTITY[1], ENTITY[5]))
+
+# ::id 99_wikipedia_Kamen_Rider;NJ
+# ::snt 脚 を 開き 両腕 を 大きく 動かし ながら 「 変身！！ 」 と 掛け声 を 叫ぶ 2号 の 「 変身 ポーズ 」 の 設定 は 、 佐々木 が 自動二輪 の 免許 を 持っ て い なかっ た ため の 苦肉の策 という 面 も あっ た 。
+∃ SITUATION[14] EVENT[18] ENTITY[13] ENTITY[12] EVENT[6] EVENT[7] EVENT[11] ENTITY[5] ENTITY[10] ENTITY[9] ENTITY[2] ENTITY[1] (
+ 脚(ENTITY[5]) ∧
+  変身！！(ENTITY[9]) ∧
+   掛け声(ENTITY[10]) ∧
+    CRD_ながら(両 ENTITY[4] (腕(ENTITY[4]), 開き(EVENT[6], ENTITY[4], ENTITY[5]) ∧ 動かし(EVENT[7], ENTITY[2号], ENTITY[4])),
+     叫ぶ(EVENT[11], ENTITY[2号], ENTITY[10]) ∧ と(EVENT[11]) = ENTITY[9]) ∧
+     の_変身_ポーズ(ENTITY[2号], ENTITY[2]) ∧
+      の_設定(ENTITY[2], ENTITY[1]) ∧
+       ADV_大きく(EVENT[7]) ∧
+        ため(SITUATION[14],
+         ¬ ∃ EVENT[17] ENTITY[16] ENTITY[15] (
+               自動二輪(ENTITY[16]) ∧
+                の_免許(ENTITY[16], ENTITY[15]) ∧
+                 past(EVENT[17]) ∧ 持っ_て_い_た(EVENT[17], ENTITY[佐々木], ENTITY[15]))) ∧
+         の_苦肉の策(SITUATION[14], ENTITY[13]) ∧
+          という_面(ENTITY[13], ENTITY[12]) ∧
+           past(EVENT[18]) ∧ あっ_た(EVENT[18], ENTITY[12]) ∧ TPC(EVENT[18]) = ENTITY[1])
+
+# ::id 100_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 子どもたち の 間 で 大流行 と なり 、 「 変身ブーム 」 と 呼ば れる 社会 現象 を 巻き起こし た 。
+∃ ENTITY[1] EVENT[5] EVENT[8] EVENT[9] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[6] (
+ ENTITY[1] = *pro* ∧
+  子どもたち(ENTITY[3]) ∧
+   の_間(ENTITY[3], ENTITY[2]) ∧
+    大流行(ENTITY[4]) ∧
+     呼ば(EVENT[8], _, ENTITY[6], ENTITY[変身ブーム]) ∧ 社会_現象(ENTITY[6]) ∧
+      past(EVENT[9]) ∧
+       なり(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[2] ∧
+        巻き起こし_た(EVENT[9], ENTITY[1], ENTITY[6]))
+
+# ::id 101_wikipedia_Kamen_Rider;NJ
+# ::snt この よう な 変身時 の アクション は 、 のち の 仮面ライダー シリーズ や 他 の 変身 ヒーロー ・ ヒロイン もの において も 重要 な 見せ場 として 受け継が れ た 。
+∃ ATTRIB[12] EVENT[13] ENTITY[11] GROUP[6] EVENT[4] ENTITY[3] ENTITY[5] ENTITY[1] (
+ よう(ENTITY[3]) ∧
+  変身時(ENTITY[5]) ∧
+   な(EVENT[4], ENTITY[1], ENTITY[3]) ∧ の_アクション(ENTITY[5], ENTITY[1]) ∧
+    CONJ_や(∃ ENTITY[8] ENTITY[7] (のち(ENTITY[8]) ∧ の_仮面ライダー_シリーズ(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+     ∃ ENTITY[10] ENTITY[9] (他(ENTITY[10]) ∧ の_変身_ヒーロー_ヒロイン_もの(ENTITY[10], ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+     重要_な(ATTRIB[12]) ∧
+      ATTRIBUTE_見せ場(ATTRIB[12], ENTITY[11]) ∧
+       past(EVENT[13]) ∧
+        受け継が_た(EVENT[13], _, ENTITY[1]) ∧ として(EVENT[13]) = ENTITY[11] ∧ において(EVENT[13]) = GROUP[6])
+
+# ::id 102_wikipedia_Kamen_Rider;NJ
+# ::snt 主役 が 一文字 に なっ て から 、 地方 ロケ による 舞台 の 拡充 や 大幹部 の 投入 による ショッカー 側 の 強化 など が 行わ れ 、 番組 の 人気 も 上昇 し て いっ た 。
+∃ EVENT[2] EVENT[12] EVENT[15] ENTITY[1] GROUP[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[14] ENTITY[13] (
+ 主役(ENTITY[1]) ∧
+  CONJ_や(∃ ENTITY[9] ENTITY[8] ENTITY[7] (
+        地方_ロケ(ENTITY[9]) ∧
+         による_舞台(ENTITY[9], ENTITY[8]) ∧ の_拡充(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+   ∃ ENTITY[11] ENTITY[10] (大幹部(ENTITY[11]) ∧ の_投入(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[6]))) ∧
+   による_ショッカー_側(GROUP[6], ENTITY[5]) ∧
+    の_強化(ENTITY[5], ENTITY[4]) ∧
+     など(ENTITY[4], ENTITY[3]) ∧
+      番組(ENTITY[14]) ∧
+       の_人気(ENTITY[14], ENTITY[13]) ∧
+        past(EVENT[15]) ∧
+         CRD_te_から(なっ_て(EVENT[2], ENTITY[1], ENTITY[一文字]), 行わ(EVENT[12], _, ENTITY[3])) ∧
+          上昇する.0_て_いっ_た(EVENT[15], ENTITY[13]))
+
+# ::id 103_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー1号 （ 新1号 ） の 再登場
+∃ EVENT[2] ENTITY[1] (
+ namely_-ENTITY-(ENTITY[仮面ライダー1号], ENTITY[新1号]) ∧
+  の_再登場(ENTITY[新1号], ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 104_wikipedia_Kamen_Rider;NJ
+# ::snt 一方 、 事故 によって 降板 と なっ た 藤岡 だ が 、 「 怪我 が 治っ たら 復帰 さ せる 」 と 約束 し た ものの 、 番組 が 人気 を 得 て 固定化 し て しまい 、 東映 側 は 藤岡 の 復帰 を 毎日放送 側 に なかなか 切り出せ ず 、 平山 や 阿部 も 困り果て て い た 。
+∃ ENTITY[10] ENTITY[9] ENTITY[7] ENTITY[1] EVENT[5] EVENT[6] EVENT[8] EVENT[17] EVENT[18] EVENT[25] ENTITY[4] ENTITY[3] ENTITY[16] ENTITY[15] GROUP[24] ENTITY[19] (
+ 東映_側(ENTITY[19]) ∧
+  ENTITY[1] = *pro* ∧
+   事故(ENTITY[3]) ∧
+    降板(ENTITY[4]) ∧
+     なっ_た(EVENT[5], ENTITY[藤岡], ENTITY[4]) ∧ によって(EVENT[5]) = ENTITY[3] ∧
+      ENTITY[7] = *pro*{ENTITY[藤岡], ENTITY[3], ENTITY[4]} ∧
+       ENTITY[9] = *pro*{ENTITY[7], ENTITY[藤岡], ENTITY[3], ENTITY[4]} ∧
+        ENTITY[10] = *pro*{ENTITY[7], ENTITY[藤岡], ENTITY[3], ENTITY[4]} ∧
+         番組(ENTITY[15]) ∧
+          人気(ENTITY[16]) ∧
+           CONJ_や(is_element_of(ENTITY[平山], GROUP[24]), is_element_of(ENTITY[阿部], GROUP[24])) ∧
+            past(EVENT[5]) ∧
+             past(EVENT[8]) ∧
+              past(EVENT[25]) ∧
+               CONJ_が(だ(EVENT[6], ENTITY[1], ENTITY[藤岡]),
+                CRD_ものの(約束する.0_た(EVENT[8], ENTITY[7],
+                      ∀ EVENT[12] ENTITY[11] CND_たら(怪我(ENTITY[11]) ∧ 治っ(EVENT[12], ENTITY[11]),
+                          ∃ EVENT[14] EVENT[13] せる(EVENT[13], ENTITY[9], ENTITY[10], 復帰する.0(EVENT[14], ENTITY[10])))),
+                 CONJ_te(得_て(EVENT[17], ENTITY[15], ENTITY[16]), 固定化する.0_て_しまい(EVENT[18], ENTITY[15]))) ∧
+                 CONJ_te(¬ ∃ EVENT[22] ENTITY[21] ENTITY[20] (
+                            の_復帰(ENTITY[藤岡], ENTITY[20]) ∧
+                             毎日放送_側(ENTITY[21]) ∧
+                              ADV_なかなか(EVENT[22]) ∧
+                               切り出せ(EVENT[22], ENTITY[19], ENTITY[20]) ∧
+                                に(EVENT[22]) = ENTITY[21]), 困り果て_て_い_た(EVENT[25], GROUP[24]))))
+
+# ::id 105_wikipedia_Kamen_Rider;NJ
+# ::snt そんな 中 、 毎日放送 の 庄野至映画部長 （ 当時 ） が 、 「 そう いえ ば 藤岡君 が 治っ た みたい です ね 、 今度 は どう し ましょ う 」 と 声 を かけ て き た 。
+∃ EVENT[4] ENTITY[2] ENTITY[3] ENTITY[6] TIME[1] (
+ 中(TIME[1]) ∧
+  今度(ENTITY[6]) ∧
+   の_xxx(ENTITY[毎日放送], ENTITY[庄野至映画部長]) ∧
+    当時(ENTITY[2]) ∧
+     namely_-ENTITY-(ENTITY[2], ENTITY[庄野至映画部長]) ∧
+      声(ENTITY[3]) ∧
+       past(EVENT[4]) ∧
+        かけ_て_き_た(EVENT[4], ENTITY[庄野至映画部長], ENTITY[3],
+         QUEST(∃ ENTITY[5] ? ENTITY[7] (
+               ENTITY[5] = *speaker*{ENTITY[庄野至映画部長], ENTITY[3], ENTITY[2], ENTITY[毎日放送]} ∧
+                MD_う(∃ EVENT[8] (
+                      ADV(ENTITY[7], EVENT[8]) ∧
+                       し_ましょ(EVENT[8], ENTITY[5],
+                        ∀ EVENT[9] CND_ば((ADV_そう(EVENT[9]) ∧ いえ(EVENT[9])),
+                         MD_みたい(∃ EVENT[11] (
+                               before(EVENT[8], EVENT[11]) ∧
+                                治っ_た_です(EVENT[11], ENTITY[藤岡君]))))) ∧
+                        時間(EVENT[8]) = ENTITY[6]))))) ∧
+         is_contained_in(時間(EVENT[4]), TIME[1]))
+
+# ::id 106_wikipedia_Kamen_Rider;NJ
+# ::snt 庄野部長 の この 一言 で 藤岡 の 復帰 が 決まり 、 「 1号ライダー 」 が ゲスト出演 する 「 ダブルライダー編 」 が イベント的 に 挿入 さ れる よう に なっ た 。
+∃ SITUATION[6] EVENT[3] EVENT[5] EVENT[8] EVENT[9] ENTITY[2] ENTITY[7] ENTITY[1] (
+ の_一言(ENTITY[庄野部長], ENTITY[1]) ∧
+  の_復帰(ENTITY[藤岡], ENTITY[2]) ∧
+   ゲスト出演する.0(EVENT[5], ENTITY[1号ライダー]) ∧ LOC(EVENT[5]) = ENTITY[ダブルライダー編] ∧
+    イベント的(ENTITY[7]) ∧
+     よう(SITUATION[6], 挿入する.0(EVENT[8], _, ENTITY[ダブルライダー編]) ∧ に(EVENT[8]) = ENTITY[7]) ∧
+      past(EVENT[9]) ∧
+       決まり(EVENT[3], ENTITY[2]) ∧ で(EVENT[3]) = ENTITY[1] ∧ なっ_た(EVENT[9], ENTITY[ダブルライダー編], SITUATION[6]))
+
+# ::id 107_wikipedia_Kamen_Rider;NJ
+# ::snt これ により 、 同番組 の 中 に 複数 の ヒーロー が 存在 する 展開 に なる 。
+∃ SITUATION[3] ENTITY[2] ENTITY[1] EVENT[8] EVENT[9] ENTITY[5] ENTITY[7] ENTITY[6] ENTITY[4] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[2] = これ ∧
+   同番組(ENTITY[5]) ∧
+    の_中(ENTITY[5], ENTITY[4]) ∧
+     複数(ENTITY[7]) ∧
+      の_ヒーロー(ENTITY[7], ENTITY[6]) ∧
+       展開(SITUATION[3], 存在する.0(EVENT[8], ENTITY[6]) ∧ に(EVENT[8]) = ENTITY[4]) ∧
+        なる(EVENT[9], ENTITY[1], SITUATION[3]) ∧ により(EVENT[9]) = ENTITY[2])
+
+# ::id 108_wikipedia_Kamen_Rider;NJ
+# ::snt 阿部 は 当時 を 振り返り 、 「 あの 時 の 庄野さん の 一言 が なかっ たら 、 今 の 藤岡君 が あっ た の か と いう くらい の 話 です 」 と 語っ て いる 。
+∃ SITUATION[6] EVENT[2] EVENT[7] EVENT[13] EVENT[3] ENTITY[1] ENTITY[4] ENTITY[9] (
+ 時(ENTITY[9]) ∧
+  当時(ENTITY[1]) ∧
+   FACT(SITUATION[6],
+    いう(EVENT[7],
+     QUEST(∀ EVENT[10] ENTITY[8] CND_たら(の_xxx(ENTITY[9], ENTITY[庄野さん]) ∧ の_一言(ENTITY[庄野さん], ENTITY[8]) ∧ なかっ(EVENT[10], ENTITY[8]),
+              ∃ EVENT[12] ENTITY[11] (
+               今(ENTITY[11]) ∧
+                の_xxx(ENTITY[11], ENTITY[藤岡君]) ∧
+                 before(EVENT[7], EVENT[12]) ∧ あっ_た_の(EVENT[12], ENTITY[藤岡君])))))) ∧
+    くらい SITUATION[5] (SITUATION[5] = SITUATION[6], の_話(SITUATION[5], ENTITY[4])) ∧
+     振り返り(EVENT[2], ENTITY[阿部], ENTITY[1]) ∧ 語っ_て_いる(EVENT[3], ENTITY[阿部], です(EVENT[13], _, ENTITY[4])))
+
+# ::id 109_wikipedia_Kamen_Rider;NJ
+# ::snt 毎日放送 と 東映 は ダブルライダー の 定着 を 考え て い た が 、 佐々木 が 「 藤岡君 が カムバック する まで という 約束 で 引き受け た の だ から 、 当然 、 藤岡君 に 返す べき だ 。 自分 が い た まま で は 、 彼 が 付録 の よう に なっ て しまう 」 と 頑な に 固辞 。
+∃ SITUATION[22] ENTITY[18] ENTITY[16] SITUATION[15] ENTITY[5] EVENT[3] EVENT[17] EVENT[21] EVENT[4] ENTITY[2] ENTITY[20] ENTITY[19] GROUP[1] (
+ CONJ_と(is_element_of(ENTITY[毎日放送], GROUP[1]), is_element_of(ENTITY[東映], GROUP[1])) ∧
+  の_定着(ENTITY[ダブルライダー], ENTITY[2]) ∧
+   ENTITY[5] = *speaker*{ENTITY[佐々木], ENTITY[2], ENTITY[ダブルライダー], ENTITY[東映], ENTITY[毎日放送]} ∧
+    ENTITY[16] = 自分{ENTITY[藤岡君], ENTITY[佐々木], ENTITY[2], ENTITY[ダブルライダー], ENTITY[東映], ENTITY[毎日放送]} ∧
+     まま(SITUATION[15], い_た(EVENT[17], ENTITY[16])) ∧
+      ENTITY[18] = 彼{ENTITY[藤岡君], ENTITY[佐々木], ENTITY[2], ENTITY[ダブルライダー], ENTITY[東映], ENTITY[毎日放送]} ∧
+       付録(ENTITY[20]) ∧
+        の_よう(ENTITY[20], ENTITY[19]) ∧
+         past(EVENT[3]) ∧
+          ADV_頑な_に(SITUATION[22]) ∧
+           before(EVENT[4], EVENT[17]) ∧
+            CONJ_が(考え_て_い_た(EVENT[3], GROUP[1], ENTITY[2]),
+             FACT(SITUATION[22],
+              固辞(EVENT[4], ENTITY[佐々木],
+               MD_べき(∃ SITUATION[9] ENTITY[7] ENTITY[6] EVENT[10] EVENT[11] EVENT[12] EVENT[13] ENTITY[8] (
+                     ENTITY[6] = *pro*{ENTITY[佐々木], ENTITY[2], ENTITY[ダブルライダー], ENTITY[東映], ENTITY[毎日放送]} ∧
+                      ENTITY[7] = *pro*{ENTITY[5], ENTITY[佐々木], ENTITY[2], ENTITY[ダブルライダー], ENTITY[東映], ENTITY[毎日放送]} ∧
+                       FACT(SITUATION[9], カムバックする.0(EVENT[10], ENTITY[藤岡君])) ∧
+                        THAT_約束(xxx(EVENT[11]) ∧ まで(EVENT[11]) = SITUATION[9], ENTITY[8]) ∧
+                         before(EVENT[4], EVENT[12]) ∧
+                          ADV_当然(EVENT[13]) ∧
+                           CRD_から(引き受け_た_の_だ(EVENT[12], ENTITY[6], ENTITY[7]) ∧ で(EVENT[12]) = ENTITY[8],
+                            返す_だ(EVENT[13], ENTITY[5], ENTITY[6], ENTITY[藤岡君])))) ∧
+                なっ_て_しまう(EVENT[21], ENTITY[18], ENTITY[19]) ∧ で(EVENT[21]) = SITUATION[15]))))
+
+# ::id 110_wikipedia_Kamen_Rider;NJ
+# ::snt 新1号 で の 単独 路線 で 番組 を 継続 する こと に なっ た （ 「 僕らのスーパーヒーロー伝説 」 より ） 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[6] ENTITY[4] ENTITY[3] (
+ ENTITY[1] = *pro* ∧
+  で_の_単独_路線(ENTITY[新1号], ENTITY[3]) ∧
+   番組(ENTITY[4]) ∧
+    こと(SITUATION[2], 継続する.0(EVENT[5], ENTITY[1], ENTITY[4]) ∧ で(EVENT[5]) = ENTITY[3]) ∧
+     past(EVENT[6]) ∧ なっ_た(EVENT[6], ENTITY[1], SITUATION[2]))
+
+# ::id 111_wikipedia_Kamen_Rider;NJ
+# ::snt 藤岡 の 復帰 を 祝い 、 復帰 作 で ある 第 40 話 ・ 41 話 は 、 正月 の ビッグイベント として 阿部 の 計らい で 九州 の 桜島 、 えびの高原 で の ロケ と なっ た 。
+∃ ENTITY[1] EVENT[3] EVENT[17] ENTITY[2] ENTITY[12] GROUP[16] ENTITY[15] ENTITY[14] ENTITY[13] ENTITY[11] EVENT[7] ENTITY[6] ENTITY[9] ENTITY[10] GROUP[8] ENTITY[4] (
+ 復帰_作(ENTITY[6]) ∧
+  CD_第_40_話(ENTITY[9]) ∧
+   CD_41_話(ENTITY[10]) ∧
+    is_element_of(ENTITY[9], GROUP[8]) ∧ is_element_of(ENTITY[10], GROUP[8]) ∧
+     で_ある(EVENT[7], ENTITY[4], ENTITY[6]) ∧ equals(GROUP[8], ENTITY[4]) ∧
+      ENTITY[1] = *pro* ∧
+       の_復帰(ENTITY[藤岡], ENTITY[2]) ∧
+        正月(ENTITY[12]) ∧
+         の_ビッグイベント(ENTITY[12], ENTITY[11]) ∧
+          の_計らい(ENTITY[阿部], ENTITY[13]) ∧
+           is_element_of(ENTITY[桜島], GROUP[16]) ∧ is_element_of(ENTITY[えびの高原], GROUP[16]) ∧
+            equals(GROUP[16], ENTITY[15]) ∧ の(ENTITY[九州], ENTITY[15]) ∧
+             で_の_ロケ(ENTITY[15], ENTITY[14]) ∧
+              past(EVENT[17]) ∧
+               祝い(EVENT[3], ENTITY[1], ENTITY[2]) ∧
+                なっ_た(EVENT[17], ENTITY[4], ENTITY[14]) ∧ で(EVENT[17]) = ENTITY[13] ∧
+                 として(EVENT[17]) = ENTITY[11])
+
+# ::id 112_wikipedia_Kamen_Rider;NJ
+# ::snt しかし 、 この 時点 で まだ 藤岡 の 負傷 し た 左 脚 の 骨 に は 粉砕 し た 骨片 を 繋ぐ ため の 金属 パイプ が 入っ た まま で 、 主治医 から は 「 これ が 撮影 で 曲がっ たら 、 抜け なく なる どころか 一生 歩け なく なる 」 と 猛反対 さ れ た が 、 藤岡 は これ を 隠し て ロケ に 参加 。
+∃ SITUATION[15] ENTITY[27] ENTITY[17] ENTITY[9] SITUATION[8] SITUATION[1] EVENT[12] EVENT[13] EVENT[14] EVENT[18] EVENT[28] EVENT[30] ENTITY[10] ENTITY[7] ENTITY[29] EVENT[5] ENTITY[6] ENTITY[3] ENTITY[2] ENTITY[16] (
+ 時点(ENTITY[2]) ∧
+  左_脚(ENTITY[6]) ∧
+   負傷する.0_た(EVENT[5], ENTITY[3]) ∧ の_骨(ENTITY[6], ENTITY[3]) ∧ の__骨(ENTITY[藤岡], ENTITY[3]) ∧
+    主治医(ENTITY[16]) ∧
+     past(EVENT[5]) ∧
+      ENTITY[9] = *pro*{ENTITY[7], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧
+       粉砕する.0_た(EVENT[12], ENTITY[10]) ∧ 骨片(ENTITY[10]) ∧
+        ため(SITUATION[8], 繋ぐ(EVENT[13], ENTITY[9], ENTITY[10])) ∧
+         の_金属_パイプ(SITUATION[8], ENTITY[7]) ∧
+          まま(SITUATION[1],
+           FACT(SITUATION[15],
+            入っ_た(EVENT[14], ENTITY[7]) ∧ に(EVENT[14]) = ENTITY[3] ∧
+             で(EVENT[14]) = ENTITY[2])) ∧
+           ENTITY[17] = *pro*{ENTITY[7], ENTITY[10], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧
+            ENTITY[27] = これ{ENTITY[16], ENTITY[7], ENTITY[10], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧
+             ロケ(ENTITY[29]) ∧
+              ADV_まだ(SITUATION[15]) ∧
+               past(EVENT[12]) ∧
+                past(EVENT[14]) ∧
+                 past(EVENT[18]) ∧
+                  CONJ_が(猛反対する.0_た(EVENT[18], _, ENTITY[17],
+                        ∀ ENTITY[19] EVENT[21] ENTITY[20] CND_たら(
+                            ENTITY[19] = これ{ENTITY[17], ENTITY[16], ENTITY[7], ENTITY[10], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧ 撮影(ENTITY[20]) ∧
+                             曲がっ(EVENT[21], ENTITY[19]) ∧ で(EVENT[21]) = ENTITY[20],
+                            ∃ ENTITY[24] ENTITY[22] (
+                             ENTITY[22] = *pro*{ENTITY[20], ENTITY[17], ENTITY[16], ENTITY[7], ENTITY[10], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧
+                              ENTITY[24] = *hearer*{ENTITY[20], ENTITY[17], ENTITY[16], ENTITY[7], ENTITY[10], ENTITY[2], ENTITY[3], ENTITY[藤岡], ENTITY[6]} ∧
+                               CONJ_どころか(¬ ∃ EVENT[23] 抜け_なる(EVENT[23], ENTITY[22]),
+                                ¬ ∃ EVENT[26] ENTITY[25] (
+                                      一生(ENTITY[25]) ∧
+                                       歩け_なる(EVENT[26], ENTITY[24]) ∧
+                                        ADV(EVENT[26]) = ENTITY[25]))))) ∧
+                        LOC_から(EVENT[18]) = ENTITY[16] ∧ で(EVENT[18]) = SITUATION[1],
+                   CONJ_te(隠し_て(EVENT[28], ENTITY[藤岡], ENTITY[27]) ∧ で(EVENT[28]) = SITUATION[1],
+                    参加(EVENT[30], ENTITY[藤岡]) ∧ に(EVENT[30]) = ENTITY[29] ∧
+                     で(EVENT[30]) = SITUATION[1])))
+
+# ::id 113_wikipedia_Kamen_Rider;NJ
+# ::snt ロケ の 晩 に は 傷口 を 抑え た タオル から 血 が 滴り 、 この 血 で 洗面 器 が 真っ赤 に なる ほど だっ た が 、 スタッフ に 気 を 遣い 、 ひた隠し に し て アクション を 演じ て いる 。
+∃ SITUATION[12] SITUATION[3] ENTITY[2] ENTITY[1] EVENT[9] EVENT[11] EVENT[15] EVENT[16] EVENT[17] EVENT[20] EVENT[22] EVENT[24] ENTITY[8] ENTITY[10] ENTITY[6] ENTITY[14] ENTITY[19] ENTITY[18] ENTITY[21] ENTITY[23] ENTITY[5] ENTITY[4] ENTITY[13] (
+ ロケ(ENTITY[5]) ∧
+  の_晩(ENTITY[5], ENTITY[4]) ∧
+   血(ENTITY[13]) ∧
+    ENTITY[1] = *pro* ∧
+     傷口(ENTITY[8]) ∧
+      抑え_た(EVENT[9], ENTITY[6], ENTITY[8]) ∧ タオル(ENTITY[6]) ∧
+       血(ENTITY[10]) ∧
+        洗面_器(ENTITY[14]) ∧
+         FACT(SITUATION[12], 真っ赤(EVENT[15], ENTITY[14]) ∧ で(EVENT[15]) = ENTITY[13]) ∧
+          FACT(SITUATION[3],
+           滴り(EVENT[11], ENTITY[10]) ∧ から(EVENT[11]) = ENTITY[6] ∧ に(EVENT[11]) = ENTITY[4] ∧
+            なる(EVENT[16], ENTITY[1], SITUATION[12])) ∧
+           ほど(SITUATION[3], ENTITY[2]) ∧ ARG0(ENTITY[1], ENTITY[2]) ∧
+            スタッフ(ENTITY[18]) ∧
+             気(ENTITY[19]) ∧
+              ひた隠し(ENTITY[21]) ∧
+               アクション(ENTITY[23]) ∧
+                past(EVENT[9]) ∧
+                 past(EVENT[17]) ∧
+                  CONJ_が(だっ_た(EVENT[17], ENTITY[1], ENTITY[2]),
+                   遣い(EVENT[20], ENTITY[1], ENTITY[19]) ∧ に(EVENT[20]) = ENTITY[18] ∧
+                    CONJ_te(し_て(EVENT[22], ENTITY[1], ENTITY[21]), 演じ_て_いる(EVENT[24], ENTITY[1], ENTITY[23]))))
+
+# ::id 114_wikipedia_Kamen_Rider;NJ
+# ::snt 無事 ロケ を 終え た 後 、 主治医 に 言わ れ た 「 大丈夫 です 。 脚 は 異常 あり ませ ん 」 と の 言葉 は 、 一生 忘れ られ ない と の こと で ある 。
+∃ ENTITY[3] SITUATION[2] ATTRIB[13] SITUATION[11] ENTITY[8] ENTITY[6] SITUATION[5] EVENT[19] ENTITY[1] EVENT[7] EVENT[14] EVENT[16] ENTITY[9] ENTITY[12] ENTITY[15] ENTITY[4] (
+ ENTITY[6] = *hearer*{ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+  ENTITY[8] = *hearer*{ENTITY[4], ENTITY[3], ENTITY[1]} ∧
+   脚(ENTITY[9]) ∧
+    と(SITUATION[5], 大丈夫_です(EVENT[7], ENTITY[6]) ∧ ¬ ∃ EVENT[10] 異常_あり_ませ(EVENT[10], (ENTITY[8], ENTITY[9]))) ∧
+     無事(ATTRIB[13]) ∧
+      ATTRIBUTE_ロケ(ATTRIB[13], ENTITY[12]) ∧
+       後(SITUATION[11], 終え_た(EVENT[14], _, ENTITY[12])) ∧
+        主治医(ENTITY[15]) ∧
+         の_言葉(SITUATION[5], ENTITY[4]) ∧
+          THAT_言葉(  (
+                言わ_た(EVENT[16], _, [_]) ∧
+                 に(EVENT[16]) = ENTITY[15] ∧ 時間(EVENT[16]) = SITUATION[11]), ENTITY[4]) ∧
+          past(EVENT[14]) ∧
+           past(EVENT[16]) ∧
+            ENTITY[3] = *pro*{ENTITY[1]} ∧
+             と(SITUATION[2],
+              ¬ ∃ EVENT[18] ENTITY[17] (
+                    一生(ENTITY[17]) ∧
+                     忘れ(EVENT[18], _, ENTITY[4], ENTITY[3]) ∧
+                      ADV(EVENT[18]) = ENTITY[17])) ∧
+              の_こと(SITUATION[2], ENTITY[1]) ∧ で_ある(EVENT[19], _, ENTITY[1]))
+
+# ::id 115_wikipedia_Kamen_Rider;NJ
+# ::snt その後 、 骨折 は 完治 、 金属 パイプ は 除去 さ れ て いる 。
+∃ EVENT[3] EVENT[5] ENTITY[1] ENTITY[2] ENTITY[4] (
+ 骨折(ENTITY[2]) ∧
+  金属_パイプ(ENTITY[4]) ∧
+   その後(ENTITY[1]) ∧
+    完治(EVENT[3], ENTITY[2]) ∧ 除去する.0_て_いる(EVENT[5], _, ENTITY[4]) ∧ ADV(EVENT[5]) = ENTITY[1])
+
+# ::id 116_wikipedia_Kamen_Rider;NJ
+# ::snt こうして 、 第 52 話 で 一文字 が ショッカー を 追っ て 南米 へ 向かっ た という 設定 の もと 、 外観 を 一新 し て 、 独自 の 変身 ポーズ も 「 ライダー変身！ 」 を 得 た 新1号ライダー が 第 53 話 で 主役 に 復帰 し た 。
+∃ EVENT[4] EVENT[5] EVENT[8] EVENT[11] EVENT[14] ENTITY[3] ENTITY[2] ENTITY[7] ENTITY[10] ENTITY[9] ENTITY[13] ENTITY[12] ENTITY[1] (
+ CD_第_52_話(ENTITY[3]) ∧
+  THAT_設定(CONJ_te(追っ_て(EVENT[4], ENTITY[一文字], ENTITY[ショッカー]) ∧ で(EVENT[4]) = ENTITY[3],
+        向かっ_た(EVENT[5], ENTITY[一文字]) ∧ へ(EVENT[5]) = ENTITY[南米] ∧ で(EVENT[5]) = ENTITY[3]),
+   ENTITY[2]) ∧
+   の_もと(ENTITY[2], ENTITY[1]) ∧
+    外観(ENTITY[7]) ∧
+     独自(ENTITY[10]) ∧
+      の_変身_ポーズ(ENTITY[10], ENTITY[9]) ∧
+       CONJ_te(一新する.0_て(EVENT[8], ENTITY[新1号ライダー], ENTITY[7]),
+        得_た(EVENT[11], ENTITY[新1号ライダー], ENTITY[ライダー変身！]) ∧ TPC(EVENT[11]) = ENTITY[9]) ∧
+        CD_第_53_話(ENTITY[12]) ∧
+         主役(ENTITY[13]) ∧
+          past(EVENT[5]) ∧
+           past(EVENT[11]) ∧
+            past(EVENT[14]) ∧
+             復帰する.0_た(EVENT[14], ENTITY[新1号ライダー]) ∧ に(EVENT[14]) = ENTITY[13] ∧
+              で(EVENT[14]) = ENTITY[12] ∧ ADV(EVENT[14]) = ENTITY[1])
+
+# ::id 117_wikipedia_Kamen_Rider;NJ
+# ::snt また 、 旧1号 時 の 本郷猛 が 常 に ダブル の ブレザー 姿 の 「 科学者然 」 と し た スタイル だっ た の に対して 、 復帰 し た 本郷猛 は 、 一文字隼人的 な 明るさ や 男性的 な 野性 味 を 増し 、 デザインジャケット の 上下 や 革ジャン に ジーンズ など 、 ファッション も 多彩 に なっ た （ その 多く は 藤岡 の 私物 だっ た ） 。
+∃ SITUATION[1] EVENT[9] EVENT[10] EVENT[18] EVENT[25] ENTITY[2] ENTITY[6] ENTITY[8] ENTITY[5] ENTITY[4] ENTITY[3] GROUP[13] ENTITY[24] GROUP[19] EVENT[12] (
+ 復帰する.0_た(EVENT[12], ENTITY[本郷猛]) ∧
+  past(EVENT[12]) ∧
+   旧1号_時(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[本郷猛]) ∧
+     常(ENTITY[3]) ∧
+      ダブル(ENTITY[6]) ∧
+       の_ブレザー_姿(ENTITY[6], ENTITY[5]) ∧
+        科学者然(ENTITY[8]) ∧
+         し_た(EVENT[9], ENTITY[4]) ∧ と(EVENT[9]) = ENTITY[8] ∧ の_スタイル(ENTITY[5], ENTITY[4]) ∧
+          の(SITUATION[1], だっ_た(EVENT[10], ENTITY[本郷猛], ENTITY[4]) ∧ に(EVENT[10]) = ENTITY[3]) ∧
+           CONJ_や(∃ ATTRIB[15] ENTITY[14] (一文字隼人的_な(ATTRIB[15]) ∧ ATTRIBUTE_明るさ(ATTRIB[15], ENTITY[14]) ∧ is_element_of(ENTITY[14], GROUP[13])),
+            ∃ ATTRIB[17] ENTITY[16] (男性的_な(ATTRIB[17]) ∧ ATTRIBUTE_野性_味(ATTRIB[17], ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[13]))) ∧
+            CONJ_や(∃ ENTITY[21] ENTITY[20] (デザインジャケット(ENTITY[21]) ∧ の_上下(ENTITY[21], ENTITY[20]) ∧ is_element_of(ENTITY[20], GROUP[19])),
+             ∃ ENTITY[23] ENTITY[22] (革ジャン(ENTITY[23]) ∧ に_ジーンズ(ENTITY[23], ENTITY[22]) ∧ is_element_of(ENTITY[22], GROUP[19]))) ∧
+             ファッション(ENTITY[24]) ∧
+              past(EVENT[10]) ∧
+               ADV_多彩_に(EVENT[25]) ∧
+                past(EVENT[25]) ∧
+                 増し(EVENT[18], ENTITY[本郷猛], GROUP[13]) ∧
+                  なっ_た(EVENT[25], (ENTITY[本郷猛], ENTITY[24])) ∧ など(EVENT[25]) = GROUP[19] ∧
+                   に対して(EVENT[25]) = SITUATION[1])
+
+# ::id 118_wikipedia_Kamen_Rider;NJ
+# ::snt 加えて 事故前 は バイク ヘルメット に 着用 義務 は 無かっ た ため 本郷 は “ ノーヘルスタイル ” だっ た が 、 1972 年 の 法 改正 で 、 「 時速 40 km を 越える 道路 」 で の 着用 が 義務化 さ れ た （ ただし 当時 は 罰則 なし 。 罰則 規定 は 1975 年 、 全面 義務化 は 1986 年 から 。 ） ため 、 復帰後 の 本郷 は ヘルメット を 常用 する よう に なっ た 。
+∃ SITUATION[18] SITUATION[10] SITUATION[2] EVENT[5] EVENT[7] EVENT[15] EVENT[16] EVENT[20] EVENT[21] ENTITY[3] ENTITY[6] ENTITY[9] ENTITY[14] ENTITY[12] ENTITY[11] ENTITY[19] ENTITY[8] ENTITY[4] ENTITY[1] ENTITY[17] (
+ 事故前(ENTITY[1]) ∧
+  着用_義務(ENTITY[4]) ∧
+   復帰後(ENTITY[17]) ∧
+    の_xxx(ENTITY[17], ENTITY[本郷]) ∧
+     バイク_ヘルメット(ENTITY[3]) ∧
+      FACT(SITUATION[2], 無かっ_た(EVENT[5], ENTITY[4]) ∧ に(EVENT[5]) = ENTITY[3]) ∧
+       ノーヘルスタイル(ENTITY[6]) ∧
+        CD_1972_年(ENTITY[9]) ∧
+         の_法_改正(ENTITY[9], ENTITY[8]) ∧
+          (CD_40_km(ENTITY[14]), 時速(ENTITY[14])) ∧
+           越える(EVENT[15], ENTITY[12], ENTITY[14]) ∧ 道路(ENTITY[12]) ∧
+            で_の_着用(ENTITY[12], ENTITY[11]) ∧
+             FACT(SITUATION[10], 義務化する.0_た(EVENT[16], _, ENTITY[11])) ∧
+              ヘルメット(ENTITY[19]) ∧
+               よう(SITUATION[18], 常用する.0(EVENT[20], ENTITY[本郷], ENTITY[19])) ∧
+                past(EVENT[5]) ∧
+                 past(EVENT[7]) ∧
+                  past(EVENT[16]) ∧
+                   past(EVENT[21]) ∧
+                    CONJ_が(だっ_た(EVENT[7], ENTITY[本郷], ENTITY[6]) ∧ ため(EVENT[7]) = SITUATION[2] ∧
+                          時間(EVENT[7]) = ENTITY[1],
+                     なっ_た(EVENT[21], ENTITY[本郷]) ∧ ため(EVENT[21]) = SITUATION[10] ∧
+                      に(EVENT[21]) = SITUATION[18] ∧ で(EVENT[21]) = ENTITY[8]))
+
+# ::id 119_wikipedia_Kamen_Rider;NJ
+# ::snt 配役
+∃ EVENT[2] ENTITY[1] (配役(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 120_wikipedia_Kamen_Rider;NJ
+# ::snt 本郷 役 に 藤岡 を 起用 し た の は 、 阿部 によれば 渡邊 と 藤岡 の マネージャー が 仲 が 良く 、 ここ から 平山 に対して 渡邊 の 推薦 が あっ た ため と し て いる 。
+∃ ENTITY[10] SITUATION[5] SITUATION[2] EVENT[4] EVENT[9] EVENT[12] EVENT[13] EVENT[1] ENTITY[3] GROUP[7] ENTITY[8] ENTITY[6] ENTITY[11] (
+ 本郷_役(ENTITY[3]) ∧
+  の(SITUATION[2], 起用する.0_た(EVENT[4], _, ENTITY[藤岡]) ∧ に(EVENT[4]) = ENTITY[3]) ∧
+   CONJ_と(is_element_of(ENTITY[渡邊], GROUP[7]), is_element_of(ENTITY[藤岡], GROUP[7])) ∧
+    の_マネージャー(GROUP[7], ENTITY[6]) ∧
+     仲(ENTITY[8]) ∧
+      ENTITY[10] = ここ{ENTITY[藤岡], ENTITY[渡邊], ENTITY[6], ENTITY[8], ENTITY[阿部], ENTITY[3]} ∧
+       の_推薦(ENTITY[渡邊], ENTITY[11]) ∧
+        ため(SITUATION[5],
+         良く(EVENT[9], (ENTITY[6], ENTITY[8])) ∧
+          あっ_た(EVENT[12], ENTITY[11]) ∧ に対して(EVENT[12]) = ENTITY[平山] ∧
+           から(EVENT[12]) = ENTITY[10]) ∧
+         before(EVENT[1], EVENT[4]) ∧
+          before(EVENT[1], EVENT[12]) ∧
+           し_て_いる(EVENT[1], xxx(EVENT[13], SITUATION[2], SITUATION[5]) ∧ によれば(EVENT[13]) = ENTITY[阿部]))
+
+# ::id 121_wikipedia_Kamen_Rider;NJ
+# ::snt 藤岡 と 同じ 事務所 に 所属 し て い た 島田 も 「 一緒 に 使っ て くれ 」 と 言わ れ て 起用 し た が 、 役 が なかっ た ため に ルリ子 の 友達 役 を 設定 し た と いう 。
+∃ SITUATION[13] SITUATION[7] ATTRIB[5] ENTITY[2] EVENT[6] EVENT[11] EVENT[12] EVENT[15] EVENT[17] EVENT[1] ENTITY[4] ENTITY[14] ENTITY[16] (
+ ENTITY[2] = *pro* ∧
+  と_同じ(ENTITY[藤岡], ATTRIB[5]) ∧
+   ATTRIBUTE_事務所(ATTRIB[5], ENTITY[4]) ∧
+    所属する.0_て_い_た(EVENT[6], ENTITY[島田]) ∧ に(EVENT[6]) = ENTITY[4] ∧
+     と(SITUATION[7],
+      IMPERATIVE(∃ ENTITY[8] EVENT[10] ENTITY[9] (
+            ENTITY[8] = *speaker*{ENTITY[2], ENTITY[藤岡], ENTITY[4]} ∧
+             一緒(ENTITY[9]) ∧
+              使っ_て_くれ(EVENT[10], ENTITY[島田], ENTITY[8]) ∧ に(EVENT[10]) = ENTITY[9]))) ∧
+      役(ENTITY[14]) ∧
+       ため(SITUATION[13], なかっ_た(EVENT[15], ENTITY[14])) ∧
+        の_友達_役(ENTITY[ルリ子], ENTITY[16]) ∧
+         before(EVENT[1], EVENT[6]) ∧
+          before(EVENT[1], EVENT[12]) ∧
+           before(EVENT[1], EVENT[15]) ∧
+            before(EVENT[1], EVENT[17]) ∧
+             いう(EVENT[1],
+              CONJ_が(CONJ_te(言わ_て(EVENT[11], _, ENTITY[島田], SITUATION[7]),
+                    起用する.0_た(EVENT[12], ENTITY[2], ENTITY[島田])),
+               設定する.0_た(EVENT[17], ENTITY[2], ENTITY[16]) ∧ に(EVENT[17]) = SITUATION[13])))
+
+# ::id 122_wikipedia_Kamen_Rider;NJ
+# ::snt ルリ子 役 の 真樹 、 藤兵衛 役 の 小林昭二 、 大野剣友会 の 起用 は 平山 による もの 。
+∃ EVENT[6] ENTITY[5] ENTITY[3] ENTITY[4] GROUP[2] ENTITY[1] (
+ ルリ子_役(ENTITY[3]) ∧
+  の_xxx(ENTITY[3], ENTITY[真樹]) ∧
+   藤兵衛_役(ENTITY[4]) ∧
+    の_xxx(ENTITY[4], ENTITY[小林昭二]) ∧
+     is_element_of(ENTITY[真樹], GROUP[2]) ∧ is_element_of(ENTITY[小林昭二], GROUP[2]) ∧ is_element_of(ENTITY[大野剣友会], GROUP[2]) ∧
+      の_起用(GROUP[2], ENTITY[1]) ∧ による_もの(ENTITY[平山], ENTITY[5]) ∧ xxx(EVENT[6], ENTITY[1], ENTITY[5]))
+
+# ::id 123_wikipedia_Kamen_Rider;NJ
+# ::snt 平山 によると 『 ウルトラマン 』 から 『 キャプテンウルトラ 』 へ の TBS の 番組 引き継ぎ 催事 で 、 ムラマツキャップ 役 の 小林 と 知り合い 、 若い 俳優たち に対する 配慮 や その 人格 に 惚れ込ん で 、 今回 の 起用 と なっ た と いう 。
+∃ ATTRIB[10] ENTITY[2] EVENT[7] EVENT[14] EVENT[17] EVENT[1] ENTITY[4] ENTITY[5] ENTITY[6] ENTITY[3] GROUP[11] ENTITY[9] ENTITY[8] ENTITY[16] ENTITY[15] ENTITY[13] (
+ 人格(ENTITY[13]) ∧
+  ENTITY[2] = *pro*{ENTITY[平山]} ∧
+   から(ENTITY[ウルトラマン], ENTITY[5]) ∧
+    キャプテンウルトラ(ENTITY[4]) ∧
+     namely_-ENTITY-(ENTITY[4], ENTITY[5]) ∧
+      の_番組_引き継ぎ_催事(ENTITY[TBS], ENTITY[3]) ∧ へ_の_番組_引き継ぎ_催事(ENTITY[5], ENTITY[3]) ∧
+       ムラマツキャップ_役(ENTITY[6]) ∧
+        の_xxx(ENTITY[6], ENTITY[小林]) ∧
+         若い(ATTRIB[10]) ∧
+          ATTRIBUTE_俳優たち(ATTRIB[10], ENTITY[9]) ∧
+           CONJ_や(∃ ENTITY[12] (配慮(ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[11])), is_element_of(ENTITY[13], GROUP[11])) ∧
+            equals(GROUP[11], ENTITY[8]) ∧ に対する(ENTITY[9], ENTITY[8]) ∧
+             今回(ENTITY[16]) ∧
+              の_起用(ENTITY[16], ENTITY[15]) ∧
+               before(EVENT[1], EVENT[17]) ∧
+                いう(EVENT[1],
+                 知り合い(EVENT[7], ENTITY[2]) ∧ と(EVENT[7]) = ENTITY[小林] ∧
+                  で(EVENT[7]) = ENTITY[3] ∧
+                  CONJ_te(惚れ込ん_で(EVENT[14], ENTITY[2]) ∧ に(EVENT[14]) = ENTITY[8],
+                   なっ_た(EVENT[17], ENTITY[2]) ∧ と(EVENT[17]) = ENTITY[15])) ∧
+                 によると(EVENT[1]) = ENTITY[平山])
+
+# ::id 124_wikipedia_Kamen_Rider;NJ
+# ::snt 滝 役 の 千葉治郎 は 阿部 と 内田 と で 決め た 。
+∃ ENTITY[1] EVENT[5] GROUP[4] ENTITY[3] ENTITY[2] (
+ 滝_役(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[千葉治郎]) ∧
+   ENTITY[1] = *pro* ∧
+    CONJ_と(is_element_of(ENTITY[阿部], GROUP[4]), is_element_of(ENTITY[内田], GROUP[4])) ∧
+     と(GROUP[4], ENTITY[3]) ∧
+      past(EVENT[5]) ∧ 決め_た(EVENT[5], ENTITY[1], ENTITY[千葉治郎]) ∧ で(EVENT[5]) = ENTITY[3])
+
+# ::id 125_wikipedia_Kamen_Rider;NJ
+# ::snt その ほか 、 ショッカー 幹部 や 「 ライダーガールズ 」 の 面々 の 起用 は 、 すべて 阿部 に よる 。
+∃ EVENT[6] ENTITY[5] GROUP[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ ほか(ENTITY[1]) ∧
+  ショッカー_幹部(ENTITY[5]) ∧
+   CONJ_や(is_element_of(ENTITY[5], GROUP[4]), is_element_of(ENTITY[ライダーガールズ], GROUP[4])) ∧
+    の_面々(GROUP[4], ENTITY[3]) ∧
+     の_起用(ENTITY[3], ENTITY[2]) ∧
+      ADV_すべて(EVENT[6]) ∧
+       よる(EVENT[6], ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[阿部] ∧ ADV(EVENT[6]) = ENTITY[1])
+
+# ::id 126_wikipedia_Kamen_Rider;NJ
+# ::snt 五郎 役 の 三浦康晴 は 、 ゲスト の 林寛子 と 併せ 、 阿部 が 懇意 だっ た 養成所 から の 起用 。
+∃ EVENT[3] EVENT[7] EVENT[8] ENTITY[2] ENTITY[5] ENTITY[4] ENTITY[1] (
+ 五郎_役(ENTITY[1]) ∧
+  の_xxx(ENTITY[1], ENTITY[三浦康晴]) ∧
+   ゲスト(ENTITY[2]) ∧
+    の_xxx(ENTITY[2], ENTITY[林寛子]) ∧
+     懇意_だっ_た(EVENT[7], ENTITY[阿部], ENTITY[5]) ∧ 養成所(ENTITY[5]) ∧
+      から_の_起用(ENTITY[5], ENTITY[4]) ∧
+       past(EVENT[7]) ∧
+        併せ(EVENT[3], ENTITY[三浦康晴]) ∧ と(EVENT[3]) = ENTITY[林寛子] ∧ xxx(EVENT[8], ENTITY[三浦康晴], ENTITY[4]))
+
+# ::id 127_wikipedia_Kamen_Rider;NJ
+# ::snt ショッカー 側 の 怪人 の 声 が テアトル・エコー 所属 俳優 に 統一 さ れ て い た の は 、 阿部 が 以前 担当 し た 映画 『 ガンマー第3号宇宙大作戦 』 から の 繋がり だっ た 。
+∃ SITUATION[1] EVENT[6] EVENT[11] EVENT[12] ENTITY[4] ENTITY[3] ENTITY[5] ENTITY[2] TIME[10] ENTITY[8] ENTITY[7] (
+ ショッカー_側(ENTITY[4]) ∧
+  の_怪人(ENTITY[4], ENTITY[3]) ∧
+   の_声(ENTITY[3], ENTITY[2]) ∧
+    テアトル.エコー_所属_俳優(ENTITY[5]) ∧
+     の(SITUATION[1], 統一する.0_て_い_た(EVENT[6], _, ENTITY[2]) ∧ に(EVENT[6]) = ENTITY[5]) ∧
+      以前(TIME[10]) ∧
+       担当する.0_た(EVENT[11], ENTITY[阿部], ENTITY[8]) ∧ is_contained_in(時間(EVENT[11]), TIME[10]) ∧
+        ガンマー第3号宇宙大作戦(ENTITY[8]) ∧ 映画(ENTITY[8]) ∧
+        から_の_繋がり(ENTITY[8], ENTITY[7]) ∧
+         past(EVENT[6]) ∧
+          past(EVENT[11]) ∧ past(EVENT[12]) ∧ だっ_た(EVENT[12], SITUATION[1], ENTITY[7]))
+
+# ::id 128_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー の 美術 ・ 造形
+∃ EVENT[5] GROUP[2] ENTITY[1] (
+ ∃ ENTITY[3] (美術(ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])) ∧
+  ∃ ENTITY[4] (造形(ENTITY[4]) ∧ is_element_of(ENTITY[4], GROUP[2])) ∧
+  equals(GROUP[2], ENTITY[1]) ∧ の(ENTITY[仮面ライダー], ENTITY[1]) ∧
+   xxx(EVENT[5]) ∧ LINK(EVENT[5]) = ENTITY[1])
+
+# ::id 129_wikipedia_Kamen_Rider;NJ
+# ::snt 主人公 ヒーロー 「 仮面ライダー 」 の 美術 、 造形 は 、 造形会社 「 エキス・プロダクション 」 （ 1966 年 創立 ） が 全面 担当 し た 。
+∃ ENTITY[6] ENTITY[4] ENTITY[5] GROUP[3] ENTITY[2] ENTITY[1] (
+ 仮面ライダー(ENTITY[2]) ∧ 主人公_ヒーロー(ENTITY[2]) ∧
+  美術(ENTITY[4]) ∧
+   造形(ENTITY[5]) ∧
+    is_element_of(ENTITY[4], GROUP[3]) ∧ is_element_of(ENTITY[5], GROUP[3]) ∧
+     equals(GROUP[3], ENTITY[1]) ∧ の(ENTITY[2], ENTITY[1]) ∧
+      エキス.プロダクション(ENTITY[6]) ∧ 造形会社(ENTITY[6]) ∧
+       全 ENTITY[7] (面(ENTITY[7]),
+        ∃ EVENT[8] (past(EVENT[8]) ∧ 担当する.0_た(EVENT[8], ENTITY[6], ENTITY[1]) ∧ ADV(EVENT[8]) = ENTITY[7])))
+
+# ::id 130_wikipedia_Kamen_Rider;NJ
+# ::snt デザイナー ・ 高橋章 ら が 「 東映生田スタジオ 」 に 常駐 し 、 セット の デザイン や 衣装 の 補修 も 合わせ 、 すべて を こなし て いる 。
+∃ EVENT[3] EVENT[9] ENTITY[1] GROUP[4] ENTITY[2] (
+ 高橋章_ら(ENTITY[2]) ∧
+  デザイナー(ENTITY[1]) ∧
+   namely_-ENTITY-(ENTITY[1], ENTITY[2]) ∧
+    CONJ_や(∃ ENTITY[6] ENTITY[5] (セット(ENTITY[6]) ∧ の_デザイン(ENTITY[6], ENTITY[5]) ∧ is_element_of(ENTITY[5], GROUP[4])),
+     ∃ ENTITY[8] ENTITY[7] (衣装(ENTITY[8]) ∧ の_補修(ENTITY[8], ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[4]))) ∧
+     常駐する.0(EVENT[3], ENTITY[2]) ∧ に(EVENT[3]) = ENTITY[東映生田スタジオ] ∧
+      合わせ(EVENT[9], ENTITY[2], GROUP[4]) ∧ すべて ENTITY[10] ∃ EVENT[11] こなし_て_いる(EVENT[11], ENTITY[2], ENTITY[10]))
+
+# ::id 131_wikipedia_Kamen_Rider;NJ
+# ::snt 怪人 の デザイン は 石森 の ラフ を 高橋 が クリンナップ し 、 色 指定 し て 決定画 と し て い た 。
+∃ EVENT[5] EVENT[6] EVENT[8] ENTITY[4] ENTITY[7] ENTITY[3] ENTITY[2] ENTITY[1] (
+ 怪人(ENTITY[2]) ∧
+  の_デザイン(ENTITY[2], ENTITY[1]) ∧
+   の_ラフ(ENTITY[石森], ENTITY[3]) ∧
+    色(ENTITY[4]) ∧
+     決定画(ENTITY[7]) ∧
+      past(EVENT[8]) ∧
+       CONJ_te(クリンナップする.0(EVENT[5], ENTITY[4]) ∧
+             指定する.0_て(EVENT[6], ENTITY[高橋], ENTITY[4]) ∧ TPC(EVENT[6]) = ENTITY[1],
+        し_て_い_た(EVENT[8], ENTITY[高橋], ENTITY[3]) ∧ と(EVENT[8]) = ENTITY[7] ∧
+         TPC(EVENT[8]) = ENTITY[1]))
+
+# ::id 132_wikipedia_Kamen_Rider;NJ
+# ::snt 「 サラセニア人間 」 は 石森デザイン ではなく 、 高橋 の オリジナル で ある 。
+∃ EVENT[3] GROUP[1] (
+ CONJ_ではなく(is_element_of(ENTITY[石森デザイン], GROUP[1]), ∃ ENTITY[2] (の_オリジナル(ENTITY[高橋], ENTITY[2]) ∧ is_element_of(ENTITY[2], GROUP[1]))) ∧
+  で_ある(EVENT[3], ENTITY[サラセニア人間], GROUP[1]))
+
+# ::id 133_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー の マスク は 上下 二分割 形式 と なっ て い て 、 三上陸男 による 粘土原型 を FRP樹脂 で 複製 し 作ら れ て いる 。
+∃ ENTITY[5] EVENT[4] EVENT[7] EVENT[8] ENTITY[3] ENTITY[6] ENTITY[2] ENTITY[1] (
+ 仮面ライダー(ENTITY[2]) ∧
+  の_マスク(ENTITY[2], ENTITY[1]) ∧
+   上下_二分割_形式(ENTITY[3]) ∧
+    ENTITY[5] = *pro*{ENTITY[1], ENTITY[3], ENTITY[2]} ∧
+     による_粘土原型(ENTITY[三上陸男], ENTITY[6]) ∧
+      CONJ_te(なっ_て_い(EVENT[4], ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[3],
+       複製する.0(EVENT[7], ENTITY[5], ENTITY[6]) ∧ で(EVENT[7]) = ENTITY[FRP樹脂] ∧
+        作ら_て_いる(EVENT[8], _, ENTITY[1])))
+
+# ::id 134_wikipedia_Kamen_Rider;NJ
+# ::snt アクション 用 の 「 Aタイプ 」 と 、 電飾 を 仕込ん だ 超アップ 撮影 用 の 「 Bタイプ 」 の 2 種 が FRP で 用意 さ れ た が 、 第 1 話 で Aタイプ の 「 クラッシャー 」 が 破損 し 、 修復跡 を 残し て の 撮影 と なっ て いる 。
+∃ ENTITY[14] SITUATION[13] ENTITY[12] EVENT[11] EVENT[17] EVENT[19] EVENT[20] GROUP[2] ENTITY[1] ENTITY[16] ENTITY[15] ENTITY[18] (
+ CONJ_と(∃ ENTITY[4] ENTITY[3] (アクション_用(ENTITY[4]) ∧ の_Aタイプ(ENTITY[4], ENTITY[3]) ∧ is_element_of(ENTITY[3], GROUP[2])),
+  ∃ ENTITY[8] EVENT[10] ENTITY[9] ENTITY[6] ENTITY[5] (
+   ENTITY[8] = *pro*{ENTITY[5], ENTITY[1]} ∧
+    電飾(ENTITY[9]) ∧
+     仕込ん_だ(EVENT[10], ENTITY[8], ENTITY[9], ENTITY[6]) ∧ 超アップ_撮影_用(ENTITY[6]) ∧
+      の_Bタイプ(ENTITY[6], ENTITY[5]) ∧ past(EVENT[10]) ∧ is_element_of(ENTITY[5], GROUP[2]))) ∧
+  (CD_2_種(ENTITY[1]), の(GROUP[2], ENTITY[1])) ∧
+   ENTITY[12] = *pro*{ENTITY[FRP], ENTITY[1]} ∧
+    ENTITY[14] = *pro*{ENTITY[12], ENTITY[FRP], ENTITY[1]} ∧
+     CD_第_1_話(ENTITY[15]) ∧
+      Aタイプ(ENTITY[16]) ∧
+       の_xxx(ENTITY[16], ENTITY[クラッシャー]) ∧
+        修復跡(ENTITY[18]) ∧
+         撮影(SITUATION[13],
+          破損する.0(EVENT[17], ENTITY[クラッシャー]) ∧ で(EVENT[17]) = ENTITY[15] ∧
+           残し_て_の(EVENT[19], ENTITY[14], ENTITY[18])) ∧
+          past(EVENT[11]) ∧
+           CONJ_が(用意する.0_た(EVENT[11], _, ENTITY[1]) ∧ で(EVENT[11]) = ENTITY[FRP],
+            なっ_て_いる(EVENT[20], ENTITY[12]) ∧ と(EVENT[20]) = SITUATION[13]))
+
+# ::id 135_wikipedia_Kamen_Rider;NJ
+# ::snt 以後 、 補修 を 繰り返し て の 撮影 で 、 アップ用 の はず の Bタイプ も 撮影 に 駆り出さ れ 、 常時 二 種 が 画面 に 登場 する こと と なっ た 。
+∃ SITUATION[10] ENTITY[5] SITUATION[4] SITUATION[3] ENTITY[1] EVENT[7] EVENT[12] EVENT[13] EVENT[15] EVENT[19] EVENT[20] ENTITY[6] ENTITY[11] ENTITY[14] ENTITY[8] ENTITY[18] ENTITY[17] TIME[16] TIME[2] (
+ ENTITY[1] = *pro* ∧
+  以後(TIME[2]) ∧
+   ENTITY[5] = *pro*{ENTITY[1]} ∧
+    補修(ENTITY[6]) ∧
+     撮影(SITUATION[4], 繰り返し_て_の(EVENT[7], ENTITY[5], ENTITY[6])) ∧
+      アップ用(ENTITY[11]) ∧
+       はず(SITUATION[10], の(EVENT[12], ENTITY[8], ENTITY[11])) ∧
+        の(EVENT[13], ENTITY[8], SITUATION[10]) ∧ Bタイプ(ENTITY[8]) ∧
+         撮影(ENTITY[14]) ∧
+          常時(TIME[16]) ∧
+           CD_二_種(ENTITY[17]) ∧
+            画面(ENTITY[18]) ∧
+             こと(SITUATION[3],
+              駆り出さ(EVENT[15], _, ENTITY[8]) ∧ に(EVENT[15]) = ENTITY[14] ∧
+               で(EVENT[15]) = SITUATION[4] ∧
+               登場する.0(EVENT[19], (ENTITY[1], ENTITY[17])) ∧ に(EVENT[19]) = ENTITY[18] ∧
+                is_contained_in(時間(EVENT[19]), TIME[16])) ∧
+              past(EVENT[20]) ∧
+               なっ_た(EVENT[20], ENTITY[1], SITUATION[3]) ∧ is_contained_in(時間(EVENT[20]), TIME[2]))
+
+# ::id 136_wikipedia_Kamen_Rider;NJ
+# ::snt 二 種 の 明確 な 違い は 複眼部 （ Cアイ ） の 下 の 「 覗き窓 」 の 、 透明 カバー の 留めネジ の 位置 で ある 。
+∃ ATTRIB[10] ATTRIB[3] EVENT[11] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[4] ENTITY[2] ENTITY[1] (
+ CD_二_種(ENTITY[2]) ∧
+  明確_な(ATTRIB[3]) ∧
+   ATTRIBUTE_違い(ATTRIB[3], ENTITY[1]) ∧ の_違い(ENTITY[2], ENTITY[1]) ∧
+    Cアイ(ENTITY[9]) ∧ 複眼部(ENTITY[9]) ∧
+     の_下(ENTITY[9], ENTITY[8]) ∧
+      の_覗き窓(ENTITY[8], ENTITY[7]) ∧
+       透明(ATTRIB[10]) ∧
+        ATTRIBUTE_カバー(ATTRIB[10], ENTITY[6]) ∧ の_カバー(ENTITY[7], ENTITY[6]) ∧
+         の_留めネジ(ENTITY[6], ENTITY[5]) ∧ の_位置(ENTITY[5], ENTITY[4]) ∧ で_ある(EVENT[11], ENTITY[1], ENTITY[4]))
+
+# ::id 137_wikipedia_Kamen_Rider;NJ
+# ::snt 全 98 話 で 使用 さ れ た マスク は すべて 同じ 型 から 複製 さ れ た 。
+∃ ATTRIB[6] EVENT[7] ENTITY[3] ENTITY[5] ENTITY[1] EVENT[4] (
+ past(EVENT[4]) ∧
+  使用する.0_た(EVENT[4], _, ENTITY[1]) ∧ で(EVENT[4]) = ENTITY[3] ∧ マスク(ENTITY[1]) ∧
+   CD_全_98_話(ENTITY[3]) ∧
+    同じ(ATTRIB[6]) ∧
+     ATTRIBUTE_型(ATTRIB[6], ENTITY[5]) ∧
+      ADV_すべて(EVENT[7]) ∧
+       past(EVENT[7]) ∧ 複製する.0_た(EVENT[7], _, ENTITY[1]) ∧ から(EVENT[7]) = ENTITY[5])
+
+# ::id 138_wikipedia_Kamen_Rider;NJ
+# ::snt この 型 から 、 ラテックスゴム で 抜か れ た 軟らかい アクション用 の マスク も 使わ れ て いる 。
+∃ ATTRIB[6] EVENT[5] EVENT[8] ENTITY[4] ENTITY[7] ENTITY[1] ENTITY[3] (
+ 型(ENTITY[3]) ∧
+  ラテックスゴム(ENTITY[4]) ∧
+   軟らかい(ATTRIB[6]) ∧
+    アクション用(ENTITY[7]) ∧
+     抜か_た(EVENT[5], _, ENTITY[1]) ∧ で(EVENT[5]) = ENTITY[4] ∧ から(EVENT[5]) = ENTITY[3] ∧
+      の_マスク(ENTITY[7], ENTITY[1]) ∧ ATTRIBUTE_マスク(ATTRIB[6], ENTITY[1]) ∧
+      past(EVENT[5]) ∧ 使わ_て_いる(EVENT[8], _, ENTITY[1]))
+
+# ::id 139_wikipedia_Kamen_Rider;NJ
+# ::snt 触覚 は ラジオアンテナ が 使わ れ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ 触覚(ENTITY[1]) ∧
+  ラジオアンテナ(ENTITY[2]) ∧
+   past(EVENT[3]) ∧ 使わ_た(EVENT[3], _, ENTITY[2]) ∧ TPC(EVENT[3]) = ENTITY[1])
+
+# ::id 140_wikipedia_Kamen_Rider;NJ
+# ::snt 付け根 は 第 1 話 で は 同じ 材質 だっ た が 撮影中 に 折れ て しまっ た ので 、 以後 自転車 の ブレーキ 部分 が 使わ れ て いる 。
+∃ ATTRIB[4] EVENT[5] EVENT[7] EVENT[11] ENTITY[3] ENTITY[6] ENTITY[10] ENTITY[9] TIME[8] ENTITY[2] ENTITY[1] (
+ 付け根(ENTITY[1]) ∧
+  CD_第_1_話(ENTITY[2]) ∧
+   同じ(ATTRIB[4]) ∧
+    ATTRIBUTE_材質(ATTRIB[4], ENTITY[3]) ∧
+     撮影中(ENTITY[6]) ∧
+      以後(TIME[8]) ∧
+       自転車(ENTITY[10]) ∧
+        の_ブレーキ_部分(ENTITY[10], ENTITY[9]) ∧
+         past(EVENT[5]) ∧
+          past(EVENT[7]) ∧
+           CRD_ので(CONJ_が(だっ_た(EVENT[5], ENTITY[1], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[2],
+                 折れ_て_しまっ_た(EVENT[7], ENTITY[1]) ∧ に(EVENT[7]) = ENTITY[6]),
+            使わ_て_いる(EVENT[11], _, ENTITY[9]) ∧ is_contained_in(時間(EVENT[11]), TIME[8])))
+
+# ::id 141_wikipedia_Kamen_Rider;NJ
+# ::snt 複眼部 （ Cアイ ） は 、 型 に 流し た 透明 の ポリエステル樹脂 が まだ 軟らかい うち に 裏側 から 角棒 を 押しつけ て 段差パターン を つけ た 。
+∃ ENTITY[6] SITUATION[3] ENTITY[1] EVENT[8] EVENT[10] EVENT[14] EVENT[16] ENTITY[7] ENTITY[9] ENTITY[4] ENTITY[13] ENTITY[12] ENTITY[15] ENTITY[2] (
+ Cアイ(ENTITY[2]) ∧ 複眼部(ENTITY[2]) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[6] = *pro*{ENTITY[1], ENTITY[2]} ∧
+    型(ENTITY[7]) ∧
+     透明(ENTITY[9]) ∧
+      流し_た(EVENT[8], ENTITY[6], ENTITY[4]) ∧ に(EVENT[8]) = ENTITY[7] ∧ の_ポリエステル樹脂(ENTITY[9], ENTITY[4]) ∧
+       うち(SITUATION[3], 軟らかい(EVENT[10], ENTITY[4])) ∧
+        裏側(ENTITY[12]) ∧
+         角棒(ENTITY[13]) ∧
+          段差パターン(ENTITY[15]) ∧
+           past(EVENT[8]) ∧
+            ADV_まだ(EVENT[10]) ∧
+             past(EVENT[16]) ∧
+              CONJ_te(押しつけ_て(EVENT[14], ENTITY[1], ENTITY[13]) ∧ から(EVENT[14]) = ENTITY[12] ∧
+                    に(EVENT[14]) = SITUATION[3] ∧ TPC(EVENT[14]) = ENTITY[2],
+               つけ_た(EVENT[16], ENTITY[1], ENTITY[15]) ∧ TPC(EVENT[16]) = ENTITY[2]))
+
+# ::id 142_wikipedia_Kamen_Rider;NJ
+# ::snt この 手法 は 東宝映画 『 モスラ 』 （ 1961 年 、 本多猪四郎 監督 ） で 怪獣 モスラ の 複眼 の 表現 に 使わ れ た 技法 で ある 。
+∃ EVENT[7] EVENT[8] ENTITY[4] ENTITY[6] ENTITY[5] ENTITY[2] ENTITY[1] (
+ 手法(ENTITY[1]) ∧
+  東宝映画(ENTITY[4]) ∧
+   namely_-ENTITY-(ENTITY[4], ENTITY[モスラ]) ∧
+    の_複眼(ENTITY[怪獣_モスラ], ENTITY[6]) ∧
+     の_表現(ENTITY[6], ENTITY[5]) ∧
+      使わ_た(EVENT[7], _, ENTITY[2]) ∧ に(EVENT[7]) = ENTITY[5] ∧
+       で(EVENT[7]) = ENTITY[モスラ] ∧ 技法(ENTITY[2]) ∧
+       past(EVENT[7]) ∧ で_ある(EVENT[8], ENTITY[1], ENTITY[2]))
+
+# ::id 143_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー の 衣装 の 、 エキスプロ の 担当部分 は マスク と ベルト 、 胸 の 部分 （ コンバーターラング ） だっ た 。
+∃ EVENT[10] GROUP[6] ENTITY[5] ENTITY[3] ENTITY[4] ENTITY[2] ENTITY[1] (
+ 仮面ライダー(ENTITY[3]) ∧
+  の_衣装(ENTITY[3], ENTITY[2]) ∧
+   エキスプロ(ENTITY[4]) ∧
+    の_担当部分(ENTITY[4], ENTITY[1]) ∧ の__担当部分(ENTITY[2], ENTITY[1]) ∧
+     CONJ_と(∃ ENTITY[7] (マスク(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+      ∃ ENTITY[8] (ベルト(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])),
+      ∃ ENTITY[9] (胸(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6]))) ∧
+      の_部分(GROUP[6], ENTITY[5]) ∧ past(EVENT[10]) ∧ だっ_た(EVENT[10], ENTITY[1], ENTITY[5]))
+
+# ::id 144_wikipedia_Kamen_Rider;NJ
+# ::snt 胴体部 や 手袋 ・ ブーツ は 東映 の 衣装部 で 用意 さ れ た 。
+∃ EVENT[6] ENTITY[5] ENTITY[2] ENTITY[3] ENTITY[4] GROUP[1] (
+ 胴体部(ENTITY[2]) ∧
+  手袋(ENTITY[3]) ∧
+   ブーツ(ENTITY[4]) ∧
+    CONJ_や(is_element_of(ENTITY[2], GROUP[1]), is_element_of(ENTITY[3], GROUP[1]), is_element_of(ENTITY[4], GROUP[1])) ∧
+     の_衣装部(ENTITY[東映], ENTITY[5]) ∧
+      past(EVENT[6]) ∧ 用意する.0_た(EVENT[6], _, GROUP[1]) ∧ で(EVENT[6]) = ENTITY[5])
+
+# ::id 145_wikipedia_Kamen_Rider;NJ
+# ::snt 上下 の スーツ は 当初 、 鹿革素材 で 制作 さ れ た が 、 アクション で 裂け て しまい 、 第 1 話 で 既に 左ひざ に 補修 が 確認 できる 。
+∃ SITUATION[12] EVENT[5] EVENT[10] EVENT[11] ENTITY[4] TIME[3] ENTITY[9] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[2] ENTITY[1] (
+ 上下(ENTITY[2]) ∧
+  の_スーツ(ENTITY[2], ENTITY[1]) ∧
+   当初(TIME[3]) ∧
+    鹿革素材(ENTITY[4]) ∧
+     CD_第_1_話(ENTITY[6]) ∧
+      左ひざ(ENTITY[7]) ∧
+       補修(ENTITY[8]) ∧
+        アクション(ENTITY[9]) ∧
+         past(EVENT[5]) ∧
+          ADV_既に(SITUATION[12]) ∧
+           CONJ_が(制作する.0_た(EVENT[5], _, ENTITY[1]) ∧ で(EVENT[5]) = ENTITY[4] ∧
+                 is_contained_in(時間(EVENT[5]), TIME[3]),
+            FACT(SITUATION[12],
+             裂け_て_しまい(EVENT[10], ENTITY[1]) ∧ で(EVENT[10]) = ENTITY[9] ∧
+              確認する.0(EVENT[11], (ENTITY[1], ENTITY[8])) ∧ で(EVENT[11]) = ENTITY[6] ∧
+               に(EVENT[11]) = ENTITY[7])))
+
+# ::id 146_wikipedia_Kamen_Rider;NJ
+# ::snt この ため 、 ビニールレザー素材 と なり 、 新1号 以降 は ジャージ素材 と なっ た 。
+∃ ENTITY[1] EVENT[4] EVENT[7] ENTITY[3] ENTITY[6] ENTITY[5] ENTITY[2] (
+ ため(ENTITY[2]) ∧
+  新1号_以降(ENTITY[5]) ∧
+   ENTITY[1] = *pro* ∧
+    ビニールレザー素材(ENTITY[3]) ∧
+     ジャージ素材(ENTITY[6]) ∧
+      past(EVENT[7]) ∧
+       なり(EVENT[4], ENTITY[1]) ∧ と(EVENT[4]) = ENTITY[3] ∧
+        なっ_た(EVENT[7], ENTITY[1]) ∧ と(EVENT[7]) = ENTITY[6] ∧ 時間(EVENT[7]) = ENTITY[5] ∧
+         ADV(EVENT[7]) = ENTITY[2])
+
+# ::id 147_wikipedia_Kamen_Rider;NJ
+# ::snt 第 1 話 の 撮影 開始 時点 で は 、 マスク の 制作 が 間に合わ なかっ た 。
+∃ ENTITY[4] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_第_1_話(ENTITY[2]) ∧
+  の_撮影_開始_時点(ENTITY[2], ENTITY[1]) ∧
+   マスク(ENTITY[4]) ∧
+    の_制作(ENTITY[4], ENTITY[3]) ∧
+     ¬ ∃ EVENT[5] (past(EVENT[5]) ∧ 間に合わ_た(EVENT[5], ENTITY[3]) ∧ で(EVENT[5]) = ENTITY[1]))
+
+# ::id 148_wikipedia_Kamen_Rider;NJ
+# ::snt この ため 、 撮影 は マスク を 使用 し ない ショッカー の 手術室 シーン から と なり 、 2 月 10 日 に ようやく マスク が 完成 し 、 11 日 の 小河内ダム ロケ から 仮面ライダー の アクション撮影 が 行わ れ た 。
+∃ ENTITY[4] EVENT[7] EVENT[10] EVENT[15] ENTITY[3] ENTITY[9] ENTITY[8] ENTITY[13] ENTITY[14] ENTITY[12] ENTITY[2] ENTITY[1] (
+ ため(ENTITY[1]) ∧
+  撮影(ENTITY[2]) ∧
+   ENTITY[4] = *pro*{ENTITY[ショッカー], ENTITY[2], ENTITY[1]} ∧
+    の_手術室_シーン(ENTITY[ショッカー], ENTITY[3]) ∧
+     THAT_手術室_シーン(¬ ∃ EVENT[6] ENTITY[5] (マスク(ENTITY[5]) ∧ 使用する.0(EVENT[6], ENTITY[4], ENTITY[5])), ENTITY[3]) ∧
+     CD_2_月_10_日(ENTITY[8]) ∧
+      マスク(ENTITY[9]) ∧
+       CD_11_日(ENTITY[13]) ∧
+        の_小河内ダム_ロケ(ENTITY[13], ENTITY[12]) ∧
+         の_アクション撮影(ENTITY[仮面ライダー], ENTITY[14]) ∧
+          ADV_ようやく(EVENT[10]) ∧
+           past(EVENT[15]) ∧
+            なり(EVENT[7], ENTITY[2]) ∧ から_と(EVENT[7]) = ENTITY[3] ∧
+             完成する.0(EVENT[10], ENTITY[9]) ∧ に(EVENT[10]) = ENTITY[8] ∧
+              行わ_た(EVENT[15], _, ENTITY[14]) ∧ から(EVENT[15]) = ENTITY[12] ∧
+               ADV(EVENT[15]) = ENTITY[1])
+
+# ::id 149_wikipedia_Kamen_Rider;NJ
+# ::snt 当初 仮面 の 基調 は 緑色 だっ た が 、 渡邊亮徳 の 「 緑色 の ヒーロー など ある か 」 と の 意見 で パール入り の 黒スプレー が 吹か れ 、 暗緑色 と なっ た 。
+∃ SITUATION[8] ENTITY[6] EVENT[5] EVENT[12] EVENT[15] EVENT[17] ENTITY[4] TIME[1] ENTITY[11] ENTITY[10] ENTITY[9] ENTITY[14] ENTITY[13] ENTITY[7] ENTITY[16] ENTITY[3] ENTITY[2] (
+ 仮面(ENTITY[3]) ∧
+  の_基調(ENTITY[3], ENTITY[2]) ∧
+   当初(TIME[1]) ∧
+    緑色(ENTITY[4]) ∧
+     ENTITY[6] = *pro*{ENTITY[2], ENTITY[3], ENTITY[4]} ∧
+      緑色(ENTITY[11]) ∧
+       の_ヒーロー(ENTITY[11], ENTITY[10]) ∧
+        など(ENTITY[10], ENTITY[9]) ∧
+         と(SITUATION[8], ある(EVENT[12], ENTITY[9])) ∧
+          の_意見(SITUATION[8], ENTITY[7]) ∧ の__意見(ENTITY[渡邊亮徳], ENTITY[7]) ∧
+           パール入り(ENTITY[14]) ∧
+            の_黒スプレー(ENTITY[14], ENTITY[13]) ∧
+             暗緑色(ENTITY[16]) ∧
+              past(EVENT[5]) ∧
+               past(EVENT[17]) ∧
+                CONJ_が(だっ_た(EVENT[5], ENTITY[2], ENTITY[4]) ∧ is_contained_in(時間(EVENT[5]), TIME[1]),
+                 吹か(EVENT[15], _, ENTITY[13]) ∧ で(EVENT[15]) = ENTITY[7] ∧
+                  なっ_た(EVENT[17], ENTITY[6]) ∧ と(EVENT[17]) = ENTITY[16]))
+
+# ::id 150_wikipedia_Kamen_Rider;NJ
+# ::snt パール を 施し た の は 、 第 1 話 の ロケ が 曇天 で 、 画面映り が 非常 に 悪かっ た ため 。
+∃ SITUATION[5] ENTITY[2] SITUATION[1] EVENT[4] EVENT[9] EVENT[11] EVENT[13] ENTITY[3] ENTITY[7] ENTITY[8] ENTITY[6] ENTITY[10] (
+ ENTITY[2] = *pro* ∧
+  パール(ENTITY[3]) ∧
+   の(SITUATION[1], 施し_た(EVENT[4], ENTITY[2], ENTITY[3])) ∧
+    CD_第_1_話(ENTITY[7]) ∧
+     の_ロケ(ENTITY[7], ENTITY[6]) ∧
+      曇天(ENTITY[8]) ∧
+       画面映り(ENTITY[10]) ∧
+        ため(SITUATION[5], CONJ_te(xxx(EVENT[9], ENTITY[6], ENTITY[8]), 悪かっ_た(EVENT[11], ENTITY[10]))) ∧
+         past(EVENT[4]) ∧
+          ADV_非常_に(EVENT[11]) ∧ past(EVENT[11]) ∧ xxx(EVENT[13], SITUATION[1], SITUATION[5]))
+
+# ::id 151_wikipedia_Kamen_Rider;NJ
+# ::snt この A と B の 2 種 は 、 色 を 塗り替え て そのまま 2号ライダー として 使わ れ て いる 。
+∃ ENTITY[5] EVENT[7] EVENT[9] ENTITY[6] ENTITY[8] ENTITY[3] ENTITY[4] GROUP[2] ENTITY[1] (
+ CONJ_と(is_element_of(ENTITY[3], GROUP[2]), is_element_of(ENTITY[4], GROUP[2])) ∧
+  (CD_2_種(ENTITY[1]), の(GROUP[2], ENTITY[1])) ∧
+   ENTITY[5] = *pro*{ENTITY[1], ENTITY[4], ENTITY[3]} ∧
+    色(ENTITY[6]) ∧
+     そのまま(ENTITY[8]) ∧
+      CONJ_te(塗り替え_て(EVENT[7], ENTITY[5], ENTITY[6]),
+       使わ_て_いる(EVENT[9], _, ENTITY[1]) ∧ として(EVENT[9]) = ENTITY[2号ライダー] ∧
+        ADV(EVENT[9]) = ENTITY[8]))
+
+# ::id 152_wikipedia_Kamen_Rider;NJ
+# ::snt 新1号編 に 入る と 、 緑色 が 鮮やか に なっ て いく が 、 塗装 に 使っ た カラースプレー が 季節 ごと の 乾燥度 や 日照条件 で 発色 が 違う ため も あっ た 。
+∃ ENTITY[8] SITUATION[5] ENTITY[9] ENTITY[13] ENTITY[17] ENTITY[11] ENTITY[6] EVENT[10] EVENT[18] EVENT[19] (
+ past(EVENT[10]) ∧
+  past(EVENT[19]) ∧
+   ENTITY[8] = *pro*{ENTITY[新1号編]} ∧
+    塗装(ENTITY[9]) ∧
+     使っ_た(EVENT[10], ENTITY[8], ENTITY[6]) ∧ に(EVENT[10]) = ENTITY[9] ∧ カラースプレー(ENTITY[6]) ∧
+      季節(ENTITY[13]) ∧
+       ごと ENTITY[12] (ENTITY[12] = ENTITY[13],
+        ∃ GROUP[14] (
+         CONJ_や(∃ ENTITY[15] (乾燥度(ENTITY[15]) ∧ is_element_of(ENTITY[15], GROUP[14])),
+          ∃ ENTITY[16] (日照条件(ENTITY[16]) ∧ is_element_of(ENTITY[16], GROUP[14]))) ∧
+          equals(GROUP[14], ENTITY[11]) ∧ の(ENTITY[12], ENTITY[11]))) ∧
+        発色(ENTITY[17]) ∧
+         ため(SITUATION[5], 違う(EVENT[18], (ENTITY[6], ENTITY[17])) ∧ で(EVENT[18]) = ENTITY[11]) ∧
+          CONJ_が(∀ EVENT[1] CND_と(入る(EVENT[1]) ∧ に(EVENT[1]) = ENTITY[新1号編],
+                   ∃ ENTITY[2] EVENT[3] (
+                    ADV_鮮やか_に(EVENT[3]) ∧
+                     past(EVENT[3]) ∧ 緑色(ENTITY[2]) ∧ なっ_て_いく(EVENT[3], ENTITY[2]))),
+           あっ_た(EVENT[19], SITUATION[5])))
+
+# ::id 153_wikipedia_Kamen_Rider;NJ
+# ::snt また 、 ロケ地 や キャラショー など の イベント先 で の 補修 を 想定 し 、 アサヒペン の カラースプレー など 、 全国 どこ で も 誰 でも 入手 し て 塗れる 色 を 優先 し た 配慮 も ある 。
+も ENTITY[2] EVENT[9] EVENT[19] GROUP[6] ENTITY[5] ENTITY[4] ENTITY[3] ENTITY[11] ENTITY[10] SITUATION[1] (
+ (FACT(SITUATION[1], 想定する.0(EVENT[9], ENTITY[2], ENTITY[3]) ∧ 優先する.0_た(EVENT[19], ENTITY[2], ENTITY[10])) ∧
+  ENTITY[2] = *pro* ∧
+  CONJ_や(∃ ENTITY[7] (ロケ地(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])),
+   ∃ ENTITY[8] (キャラショー(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6]))) ∧ など(GROUP[6], ENTITY[5]) ∧
+  の_イベント先(ENTITY[5], ENTITY[4]) ∧ で_の_補修(ENTITY[4], ENTITY[3]) ∧ の_カラースプレー(ENTITY[アサヒペン], ENTITY[11]) ∧
+  も ENTITY[13] (全 ENTITY[14] 国(ENTITY[14]),
+   でも ENTITY[15] ∃ ENTITY[16] EVENT[17] EVENT[18] (
+    ENTITY[16] = *pro*{ENTITY[10], ENTITY[11], ENTITY[アサヒペン], ENTITY[2], ENTITY[3], ENTITY[4], ENTITY[5]} ∧
+     CONJ_te(入手する.0_て(EVENT[17], ENTITY[15], ENTITY[16]) ∧ で(EVENT[17]) = ENTITY[13],
+      塗れる(EVENT[18], ENTITY[15], ENTITY[10]) ∧ で(EVENT[18]) = ENTITY[13]))) ∧
+   など_色(ENTITY[11], ENTITY[10]) ∧ past(EVENT[19])), ∃ EVENT[20] ある(EVENT[20], SITUATION[1]))
+
+# ::id 154_wikipedia_Kamen_Rider;NJ
+# ::snt 社会現象
+∃ EVENT[2] ENTITY[1] (社会現象(ENTITY[1]) ∧ xxx(EVENT[2]) ∧ LINK(EVENT[2]) = ENTITY[1])
+
+# ::id 155_wikipedia_Kamen_Rider;NJ
+# ::snt 『 仮面ライダー 』 は 社会現象 「 変身ブーム 」 の 発祥源 として 、 マスコミ の 注目 を 浴びる 番組 と なっ た 。
+∃ EVENT[8] EVENT[9] ENTITY[2] ENTITY[3] ENTITY[7] ENTITY[6] ENTITY[4] ENTITY[1] (
+ 社会現象(ENTITY[3]) ∧
+  変身ブーム(ENTITY[2]) ∧
+   namely_-ENTITY-(ENTITY[2], ENTITY[3]) ∧
+    の_発祥源(ENTITY[3], ENTITY[1]) ∧
+     マスコミ(ENTITY[7]) ∧
+      の_注目(ENTITY[7], ENTITY[6]) ∧
+       浴びる(EVENT[8], ENTITY[4], ENTITY[6]) ∧ 番組(ENTITY[4]) ∧
+        past(EVENT[9]) ∧
+         なっ_た(EVENT[9], ENTITY[仮面ライダー]) ∧ と(EVENT[9]) = ENTITY[4] ∧ として(EVENT[9]) = ENTITY[1])
+
+# ::id 156_wikipedia_Kamen_Rider;NJ
+# ::snt 「 ゲルショッカー編 」 開始日 の 新聞 各紙 の ラテ欄 に は 、 新幹部 「 ブラック将軍 」 の 登場 が 写真記事 で 紹介 さ れ て いる 。
+∃ EVENT[8] ENTITY[5] ENTITY[6] ENTITY[7] ENTITY[4] ENTITY[1] (
+ 各 ENTITY[3] ENTITY[2] ((ゲルショッカー編(ENTITY[3]) ∧ 開始日(ENTITY[3]) ∧ の_新聞(ENTITY[3], ENTITY[2]) ∧ の_紙(ENTITY[3], ENTITY[2])),
+  の_ラテ欄(ENTITY[2], ENTITY[1])) ∧
+  新幹部(ENTITY[6]) ∧
+   ブラック将軍(ENTITY[5]) ∧
+    namely_-ENTITY-(ENTITY[5], ENTITY[6]) ∧
+     の_登場(ENTITY[6], ENTITY[4]) ∧
+      写真記事(ENTITY[7]) ∧
+       紹介する.0_て_いる(EVENT[8], _, ENTITY[4]) ∧ で(EVENT[8]) = ENTITY[7] ∧ に(EVENT[8]) = ENTITY[1])
+
+# ::id 157_wikipedia_Kamen_Rider;NJ
+# ::snt 全 仮面ライダー シリーズ 中 、 最も 長期間 放送 し た 作品 で あり 、 未だ に その 記録 は 破ら れ て い ない 。
+∃ ATTRIB[9] ENTITY[1] EVENT[8] ENTITY[2] ENTITY[10] (
+ 記録(ENTITY[10]) ∧
+  ENTITY[1] = *pro* ∧
+   全 ENTITY[4] (仮面ライダー_シリーズ_中(ENTITY[4]),
+    ∃ EVENT[6] ENTITY[5] (
+     長期間(ENTITY[5]) ∧
+      ADV_最も(EVENT[6]) ∧
+       past(EVENT[6]) ∧
+        放送する.0_た(EVENT[6], ENTITY[2]) ∧ ADV(EVENT[6]) = ENTITY[5] ∧
+         ADV(EVENT[6]) = ENTITY[4])) ∧ 作品(ENTITY[2]) ∧
+    ADV_未だ(ATTRIB[9]) ∧
+     で_あり(EVENT[8], ENTITY[1], ENTITY[2]) ∧
+      ¬ ∃ EVENT[11] (破ら_て_い(EVENT[11], _, ENTITY[10]) ∧ に(EVENT[11]) = ATTRIB[9]))
+
+# ::id 158_wikipedia_Kamen_Rider;NJ
+# ::snt 第 1 話 の 放送 の 関東 で の 視聴率 は 8.1 % だっ た が 、 関西 で は 20.5 % を 記録 。
+∃ ENTITY[6] EVENT[5] EVENT[8] ENTITY[4] ENTITY[7] ENTITY[3] ENTITY[2] ENTITY[1] (
+ CD_第_1_話(ENTITY[3]) ∧
+  の_放送(ENTITY[3], ENTITY[2]) ∧
+   で_の_視聴率(ENTITY[関東], ENTITY[1]) ∧ の_視聴率(ENTITY[2], ENTITY[1]) ∧
+    CD_8.1%(ENTITY[4]) ∧
+     ENTITY[6] = *pro*{ENTITY[4], ENTITY[1], ENTITY[2], ENTITY[関東], ENTITY[3]} ∧
+      CD_20.5%(ENTITY[7]) ∧
+       past(EVENT[5]) ∧
+        CONJ_が(だっ_た(EVENT[5], ENTITY[1], ENTITY[4]),
+         記録(EVENT[8], ENTITY[6], ENTITY[7]) ∧ で(EVENT[8]) = ENTITY[関西]))
+
+# ::id 159_wikipedia_Kamen_Rider;NJ
+# ::snt 事故 による 主役俳優 の 交代 を 機 に 行わ れ た 種々 の 強化策 によって 、 着実 に 視聴率 を 伸ばし て いっ た 。
+∃ ENTITY[1] EVENT[9] EVENT[11] ENTITY[8] ENTITY[7] ENTITY[6] ENTITY[5] ENTITY[3] ENTITY[10] ENTITY[2] (
+ ENTITY[1] = *pro* ∧
+  事故(ENTITY[7]) ∧
+   主役俳優(ENTITY[8]) ∧
+    の_交代(ENTITY[8], ENTITY[6]) ∧ による_交代(ENTITY[7], ENTITY[6]) ∧
+     を_機(ENTITY[6], ENTITY[5]) ∧
+      行わ_た(EVENT[9], _, ENTITY[3]) ∧ に(EVENT[9]) = ENTITY[5] ∧ 種々(ENTITY[3]) ∧
+       の_強化策(ENTITY[3], ENTITY[2]) ∧
+        視聴率(ENTITY[10]) ∧
+         past(EVENT[9]) ∧
+          ADV_着実_に(EVENT[11]) ∧
+           past(EVENT[11]) ∧ 伸ばし_て_いっ_た(EVENT[11], ENTITY[1], ENTITY[10]) ∧ によって(EVENT[11]) = ENTITY[2])
+
+# ::id 160_wikipedia_Kamen_Rider;NJ
+# ::snt 9 月 末 ごろ に は 平均 し て 関東 で も 15 % 、 関西 で は 20 % の 視聴率 を 超える よう に なっ た 。
+∃ ENTITY[4] SITUATION[2] ENTITY[1] EVENT[5] EVENT[10] EVENT[11] GROUP[7] ENTITY[6] ENTITY[3] (
+ (CD_9_月(ENTITY[3]), 末_ごろ(ENTITY[3])) ∧
+  ENTITY[1] = *pro* ∧
+   ENTITY[4] = *pro*{ENTITY[1], ENTITY[3]} ∧
+    ∃ ENTITY[8] ((CD_15%(ENTITY[8]), で(ENTITY[関東], ENTITY[8])) ∧ is_element_of(ENTITY[8], GROUP[7])) ∧
+     ∃ ENTITY[9] ((CD_20%(ENTITY[9]), で(ENTITY[関西], ENTITY[9])) ∧ is_element_of(ENTITY[9], GROUP[7])) ∧
+     の_視聴率(GROUP[7], ENTITY[6]) ∧
+      よう(SITUATION[2],
+       CRD_te(平均する.0_て(EVENT[5], _, ENTITY[4]),
+        超える(EVENT[10], ENTITY[1], ENTITY[6]) ∧ に(EVENT[10]) = ENTITY[3])) ∧
+       past(EVENT[11]) ∧ なっ_た(EVENT[11], ENTITY[1]) ∧ に(EVENT[11]) = SITUATION[2])
+
+# ::id 161_wikipedia_Kamen_Rider;NJ
+# ::snt 全 98 話 の 平均視聴率 は 関東 が 21.2 % 、 関西 が 25.9 % 、
+∃ EVENT[4] EVENT[6] ENTITY[2] ENTITY[3] ENTITY[5] ENTITY[1] (
+ の_平均視聴率(ENTITY[2], ENTITY[1]) ∧
+  CD_全_98_話(ENTITY[2]) ∧
+   CD_21.2%(ENTITY[3]) ∧
+    CD_25.9%(ENTITY[5]) ∧
+     xxx(EVENT[4], ENTITY[1], ENTITY[3]) ∧ LOC(EVENT[4]) = ENTITY[関東] ∧
+      xxx(EVENT[6], ENTITY[1], ENTITY[5]) ∧ LOC(EVENT[6]) = ENTITY[関西])
+
+# ::id 162_wikipedia_Kamen_Rider;NJ
+# ::snt 最高視聴率 は 関東 が 30.1 % （ 1972 年 1 月 8 日 放送 ） 、 関西 が 35.5 %
+∃ EVENT[3] EVENT[5] ENTITY[2] ENTITY[4] ENTITY[1] (
+ 最高視聴率(ENTITY[1]) ∧
+  CD_30.1%(ENTITY[2]) ∧
+   CD_35.5%(ENTITY[4]) ∧
+    xxx(EVENT[3], ENTITY[1], ENTITY[2]) ∧ LOC(EVENT[3]) = ENTITY[関東] ∧
+     xxx(EVENT[5], ENTITY[1], ENTITY[4]) ∧ LOC(EVENT[5]) = ENTITY[関西])
+
+# ::id 163_wikipedia_Kamen_Rider;NJ
+# ::snt （ 1973 年 2 月 10 日 放送 。
+∃ ENTITY[1] EVENT[3] TIME[2] (
+ ENTITY[1] = *pro* ∧ CD_1973_年_2_月_10_日(TIME[2]) ∧ 放送(EVENT[3], ENTITY[1]) ∧ is_contained_in(時間(EVENT[3]), TIME[2]))
+
+# ::id 164_wikipedia_Kamen_Rider;NJ
+# ::snt ビデオリサーチ 調べ による ） 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (ビデオリサーチ_調べ(ENTITY[2]) ∧ による(ENTITY[2], ENTITY[1]) ∧ xxx(EVENT[3]) ∧ LINK(EVENT[3]) = ENTITY[1])
+
+# ::id 165_wikipedia_Kamen_Rider;NJ
+# ::snt カルビー製菓 の 「 仮面ライダースナック 」 の 付録 で ある 「 仮面ライダーカード 」 、 ブリヂストン自転車 から 発売 さ れ た 「 ドレミサイクロン 」 、 タカトクトイス や ポピー （ 現バンダイ・ボーイズトイ事業部 ） から 発売 さ れ た 「 仮面ライダー変身ベルト 」 といった キャラクター商品 も 大ヒット し 、 その 商品化権料 は 12億 円 に 達し 、 それ 以前 の ヒットキャラクター 『 鉄腕アトム 』 、 『 オバケのQ太郎 』 、 『 ウルトラマン 』 など の 商品化権料 を 凌駕 し 、 当時 の 過去 最高 の キャラクター に なっ た 。
+∃ ENTITY[22] ENTITY[1] EVENT[14] EVENT[17] EVENT[23] EVENT[28] GROUP[3] ENTITY[2] ENTITY[16] GROUP[20] ENTITY[21] ENTITY[19] ENTITY[18] TIME[27] ENTITY[26] ENTITY[25] ENTITY[24] ENTITY[15] (
+ 商品化権料(ENTITY[15]) ∧
+  ENTITY[1] = *pro* ∧
+   ∃ EVENT[6] ENTITY[5] (
+    の_xxx(ENTITY[カルビー製菓], ENTITY[仮面ライダースナック]) ∧
+     の_付録(ENTITY[仮面ライダースナック], ENTITY[5]) ∧ で_ある(EVENT[6], ENTITY[仮面ライダーカード], ENTITY[5]) ∧ is_element_of(ENTITY[仮面ライダーカード], GROUP[3])) ∧
+    ∃ EVENT[8] (
+     発売する.0_た(EVENT[8], _, ENTITY[ドレミサイクロン]) ∧ から(EVENT[8]) = ENTITY[ブリヂストン自転車] ∧
+      past(EVENT[8]) ∧ is_element_of(ENTITY[ドレミサイクロン], GROUP[3])) ∧
+    ∃ EVENT[13] GROUP[10] (
+     CONJ_や(∃ ENTITY[11] (タカトクトイス(ENTITY[11]) ∧ is_element_of(ENTITY[11], GROUP[10])),
+      ∃ ENTITY[12] (ポピー(ENTITY[12]) ∧ namely_-ENTITY-(ENTITY[現バンダイ.ボーイズトイ事業部], ENTITY[12]) ∧ is_element_of(ENTITY[12], GROUP[10]))) ∧
+      発売する.0_た(EVENT[13], _, ENTITY[仮面ライダー変身ベルト]) ∧ から(EVENT[13]) = GROUP[10] ∧
+       past(EVENT[13]) ∧ is_element_of(ENTITY[仮面ライダー変身ベルト], GROUP[3])) ∧
+    といった_キャラクター商品(GROUP[3], ENTITY[2]) ∧
+     CD_12億_円(ENTITY[16]) ∧
+      ENTITY[22] = それ{ENTITY[19], ENTITY[18], ENTITY[15], ENTITY[16], ENTITY[1], ENTITY[仮面ライダー変身ベルト], ENTITY[現バンダイ.ボーイズトイ事業部], ENTITY[ドレミサイクロン], ENTITY[ブリヂストン自転車], ENTITY[仮面ライダーカード], ENTITY[仮面ライダースナック], ENTITY[カルビー製菓], ENTITY[2]} ∧
+       以前(ENTITY[22]) ∧
+        の_ヒットキャラクター(ENTITY[22], ENTITY[21]) ∧
+         is_element_of(ENTITY[鉄腕アトム], GROUP[20]) ∧ is_element_of(ENTITY[オバケのQ太郎], GROUP[20]) ∧ is_element_of(ENTITY[ウルトラマン], GROUP[20]) ∧
+          namely_-ENTITY-(GROUP[20], ENTITY[21]) ∧
+           など(ENTITY[21], ENTITY[19]) ∧
+            の_商品化権料(ENTITY[19], ENTITY[18]) ∧
+             当時(ENTITY[26]) ∧
+              過去(TIME[27]) ∧
+               TMP_最高(TIME[27], ENTITY[25]) ∧ の_最高(ENTITY[26], ENTITY[25]) ∧
+                の_キャラクター(ENTITY[25], ENTITY[24]) ∧
+                 past(EVENT[28]) ∧
+                  大ヒットする.0(EVENT[14], ENTITY[2]) ∧
+                   達し(EVENT[17], ENTITY[15]) ∧ に(EVENT[17]) = ENTITY[16] ∧
+                    凌駕する.0(EVENT[23], ENTITY[15], ENTITY[18]) ∧
+                    なっ_た(EVENT[28], ENTITY[1]) ∧ に(EVENT[28]) = ENTITY[24])
+
+# ::id 166_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダーカード 欲しさ に スナック菓子 を 買っ て 菓子 を 捨てる など 、 社会問題 と なっ た （ マンガ 『 ちびまる子ちゃん 』 で も この 社会問題 を 取り上げ た エピソード が あっ た 。 また 、 仮面ライダースナック は 近年 、 再発売 さ れ た ） 。
+∃ ENTITY[3] SITUATION[2] ENTITY[1] EVENT[6] EVENT[8] EVENT[10] ENTITY[5] ENTITY[4] ENTITY[7] ENTITY[9] (
+ ENTITY[1] = *pro* ∧
+  ENTITY[3] = *pro*{ENTITY[1]} ∧
+   仮面ライダーカード_欲しさ(ENTITY[4]) ∧
+    スナック菓子(ENTITY[5]) ∧
+     菓子(ENTITY[7]) ∧
+      FACT(SITUATION[2],
+       CONJ_te(買っ_て(EVENT[6], ENTITY[3], ENTITY[5]) ∧ に(EVENT[6]) = ENTITY[4],
+        捨てる(EVENT[8], ENTITY[3], ENTITY[7]))) ∧
+       社会問題(ENTITY[9]) ∧
+        past(EVENT[10]) ∧
+         なっ_た(EVENT[10], ENTITY[1]) ∧ と(EVENT[10]) = ENTITY[9] ∧ など(EVENT[10]) = SITUATION[2])
+
+# ::id 167_wikipedia_Kamen_Rider;NJ
+# ::snt 番組 終了 から 40 年 経過 し て も なお 、 CM出演 、 ヒーローショー 、 TVゲーム化 、 パチンコ・パチスロ台 の 登場 など 、 人気 と 知名度 は 継続 し て いる 。
+∃ SITUATION[2] ENTITY[1] EVENT[5] EVENT[15] ENTITY[4] ENTITY[3] GROUP[6] ENTITY[13] ENTITY[14] GROUP[12] (
+ 人気(ENTITY[13]) ∧
+  知名度(ENTITY[14]) ∧
+   CONJ_と(is_element_of(ENTITY[13], GROUP[12]), is_element_of(ENTITY[14], GROUP[12])) ∧
+    ENTITY[1] = *pro* ∧
+     番組_終了(ENTITY[3]) ∧
+      CD_40_年(ENTITY[4]) ∧
+       FACT(SITUATION[2], 経過する.0_て(EVENT[5], ENTITY[4]) ∧ から(EVENT[5]) = ENTITY[3]) ∧
+        ∃ ENTITY[7] (CM出演(ENTITY[7]) ∧ is_element_of(ENTITY[7], GROUP[6])) ∧
+         ∃ ENTITY[8] (ヒーローショー(ENTITY[8]) ∧ is_element_of(ENTITY[8], GROUP[6])) ∧
+         ∃ ENTITY[9] (TVゲーム化(ENTITY[9]) ∧ is_element_of(ENTITY[9], GROUP[6])) ∧
+         ∃ ENTITY[11] ENTITY[10] (パチンコ.パチスロ台(ENTITY[11]) ∧ の_登場(ENTITY[11], ENTITY[10]) ∧ is_element_of(ENTITY[10], GROUP[6])) ∧
+         ADV_なお(EVENT[15]) ∧
+          継続する.0_て_いる(EVENT[15], (ENTITY[1], GROUP[12])) ∧ など(EVENT[15]) = GROUP[6] ∧
+           te(EVENT[15]) = SITUATION[2])
+
+# ::id 168_wikipedia_Kamen_Rider;NJ
+# ::snt 仮面ライダー は 、 のち の 東映特撮ヒーロー の 基本 と なっ た 。
+∃ EVENT[3] ENTITY[2] ENTITY[1] (
+ のち(ENTITY[2]) ∧
+  の_xxx(ENTITY[2], ENTITY[東映特撮ヒーロー]) ∧
+   の_基本(ENTITY[東映特撮ヒーロー], ENTITY[1]) ∧
+    past(EVENT[3]) ∧ なっ_た(EVENT[3], ENTITY[仮面ライダー]) ∧ と(EVENT[3]) = ENTITY[1])

@@ -1,0 +1,1772 @@
+# ::id 1_textbook_BUFFALO;NE
+# ::snt Bunthorne entered .
+( EVENT-1 / entered
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Bunthorne / ENTITY
+             :name ( n-2 / name
+                    :op1 "Bunthorne")))
+
+# ::id 2_textbook_BUFFALO;NE
+# ::snt She purred .
+( EVENT-2 / purred
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / she))
+
+# ::id 3_textbook_BUFFALO;NE
+# ::snt A cat enters .
+( EVENT-2 / enters
+      :ARG0 ( ENTITY-1 / cat))
+
+# ::id 4_textbook_BUFFALO;NE
+# ::snt It purrs .
+( EVENT-2 / purrs
+      :ARG0 ( REF1-1 / it))
+
+# ::id 5_textbook_BUFFALO;NE
+# ::snt It departs .
+( EVENT-2 / departs
+      :ARG0 ( REF1-1 / it))
+
+# ::id 6_textbook_BUFFALO;NE
+# ::snt A cat entered .
+( EVENT-2 / entered
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / cat))
+
+# ::id 7_textbook_BUFFALO;NE
+# ::snt It purred .
+( EVENT-2 / purred
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / it))
+
+# ::id 8_textbook_BUFFALO;NE
+# ::snt It departed .
+( EVENT-2 / departed
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / it))
+
+# ::id 9_textbook_BUFFALO;NE
+# ::snt A cat -LRB- namely Bunthorne -RRB- entered .
+( EVENT-2 / entered
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / cat
+             :NAMELY ( ENTITY-Bunthorne / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Bunthorne"))))
+
+# ::id 10_textbook_BUFFALO;NE
+# ::snt It -LRB- namely Bunthorne -RRB- purred .
+( EVENT-2 / purred
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / it
+             :NAMELY ( ENTITY-Bunthorne / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Bunthorne"))))
+
+# ::id 11_textbook_BUFFALO;NE
+# ::snt A cat entered and it purred and it departed .
+( CONJ-7 / and
+      :op1 ( EVENT-2 / entered
+             :MOD ( mod-8 / past)
+             :ARG0 ( ENTITY-1 / cat))
+      :op2 ( EVENT-4 / purred
+             :MOD ( mod-9 / past)
+             :ARG0 ( REF1-3 / it))
+      :op3 ( EVENT-6 / departed
+             :MOD ( mod-10 / past)
+             :ARG0 ( REF2-5 / it)))
+
+# ::id 12_textbook_BUFFALO;NE
+# ::snt The cat -LRB- namely Bruce -RRB- is chasing the cat -LRB- namely Albert -RRB- .
+( EVENT-5 / is_chasing
+      :ARG0 ( ENTITY-1 / cat
+             :DEFINITE ( ATTRIB-2 / the)
+             :NAMELY ( ENTITY-Bruce / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Bruce")))
+      :ARG1 ( ENTITY-3 / cat
+             :DEFINITE ( ATTRIB-4 / the)
+             :NAMELY ( ENTITY-Albert / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Albert"))))
+
+# ::id 13_textbook_BUFFALO;TSOGD_1a;IE
+# ::snt Who wrote what ?
+( EVENT-1 / wrote
+      :domain-of ( QUEST-2 / QUEST)
+      :MOD ( mod-3 / past)
+      :ARG0 ( ENTITY_UNK-2 / penman-unknown)
+      :ARG1 ( ENTITY_UNK-3 / penman-unknown))
+
+# ::id 14_textbook_BUFFALO;TSOGD_1b;IE
+# ::snt Which book is interesting ?
+( EVENT-2 / is_interesting
+      :domain-of ( QUEST-3 / QUEST)
+      :ARG0 ( ENTITY-1 / book
+             :QUANTIFIER ( ENTITY_UNK-2 / penman-unknown)))
+
+# ::id 15_textbook_BUFFALO;TSOGD_2a;IE
+# ::snt Everyone wrote something .
+( EVENT-5 / wrote
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / ENTITY
+             :QUANTIFIER ( ATTRIB-2 / everyone))
+      :ARG1 ( ENTITY-3 / ENTITY
+             :QUANTIFIER ( ATTRIB-4 / something)))
+
+# ::id 16_textbook_BUFFALO;TSOGD_2b;IE
+# ::snt Every book is interesting .
+( EVENT-3 / is_interesting
+      :ARG0 ( ENTITY-1 / book
+             :QUANTIFIER ( ATTRIB-2 / every)))
+
+# ::id 17_textbook_BUFFALO;TSOGD_18a;IE
+# ::snt The chocolate that everyone bought is delicious .
+( EVENT-8 / copula
+      :ATTRIBUTE ( ATTRIB-7 / delicious)
+      :ARG0 ( ENTITY-1 / chocolate
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG1-of ( EVENT-6 / bought
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( ENTITY-4 / ENTITY
+                           :QUANTIFIER ( ATTRIB-5 / everyone)))))
+
+# ::id 18_textbook_BUFFALO;TSOGD_18b;IE
+# ::snt Every chocolate that a person bought is delicious .
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-6 / delicious)
+      :ARG0 ( ENTITY-1 / chocolate
+             :QUANTIFIER ( ATTRIB-2 / every)
+             :ARG1-of ( EVENT-5 / bought
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( ENTITY-4 / person))))
+
+# ::id 19_textbook_BUFFALO;TSOGD_24a;IE
+# ::snt Every rumor that Hanako loves a person is true .
+( EVENT-6 / copula
+      :ATTRIBUTE ( ATTRIB-5 / true)
+      :ARG0 ( ENTITY-1 / rumor
+             :QUANTIFIER ( ATTRIB-2 / every)
+             :THAT ( EVENT-4 / loves
+                    :ARG0 ( ENTITY-Hanako / ENTITY
+                           :name ( n-1 / name
+                                  :op1 "Hanako"))
+                    :ARG1 ( ENTITY-3 / person))))
+
+# ::id 20_textbook_BUFFALO;TSOGD_24b;IE
+# ::snt Every one 's computer is out of order .
+( EVENT-6 / copula_out
+      :ARG0 ( ENTITY-1 / computer
+             :POS ( ENTITY-3 / ENTITY
+                    :CARDINAL ( ATTRIB-4 / one))
+             :QUANTIFIER ( ATTRIB-2 / every))
+      :OF ( ENTITY-5 / order))
+
+# ::id 21_textbook_BUFFALO;TSOGD_34;IE
+# ::snt If someone comes in , please report that to me .
+( EVENT-1 / please
+      :THAT ( CND-11 / If
+             :op1 ( EVENT-4 / comes_in
+                    :ARG0 ( ENTITY-2 / ENTITY
+                           :QUANTIFIER ( ATTRIB-3 / someone)))
+             :op2 ( EVENT-8 / report
+                    :ARG1 ( ENTITY-5 / ENTITY
+                           :DETERMINER ( ATTRIB-6 / that))
+                    :ARG2 ( REF1-7 / me)
+                    :domain-of ( IMPERATIVE-12 / IMPERATIVE))))
+
+# ::id 22_textbook_BUFFALO;TSOGD_38;IE
+# ::snt If a book that someone wrote has been read , please write a review of it and send it to him .
+( EVENT-1 / please
+      :THAT ( CND-17 / If
+             :op1 ( EVENT-7 / has_read
+                    :ARG1 ( BOOK-2 / book
+                           :ARG1-of ( EVENT-6 / wrote
+                                  :MOD ( mod-18 / past)
+                                  :ARG0 ( PERSON-4 / PERSON
+                                         :QUANTIFIER ( ATTRIB-5 / someone)))))
+             :op2 ( CONJ-16 / and
+                    :op1 ( EVENT-10 / write
+                           :ARG1 ( REVIEW-8 / review
+                                  :OF BOOK-2))
+                    :op2 ( EVENT-13 / send
+                           :ARG1 REVIEW-8
+                           :ARG2 PERSON-4))))
+
+# ::id 23_textbook_BUFFALO;NE
+# ::snt arranged in such a way that information can be retrieved
+( EVENT-5 / arranged
+      :MOD ( mod-8 / past)
+      :IN ( ENTITY-1 / way
+             :ATTRIBUTE ( ATTRIB-2 / such)
+             :THAT ( EVENT-4 / retrieved
+                    :domain-of ( MD-7 / can)
+                    :ARG1 ( ENTITY-3 / information))))
+
+# ::id 24_textbook_BUFFALO;NE
+# ::snt The project involves developing a general method for transforming unrestricted natural language texts -LRB- Japanese and English -RRB- into high precision formal semantic representations and then linking such representations to application tasks , with a focus on recovering information from text for entry into databases and linking to world knowledge for reasoning .
+( EVENT-30 / involves
+      :ARG0 ( ENTITY-1 / project
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( CONJ-35 / and
+             :op1 ( EVENT-14 / developing
+                    :ARG0 ENTITY-1
+                    :ARG1 ( ENTITY-4 / method
+                           :ATTRIBUTE ( ATTRIB-5 / general)
+                           :FOR ( EVENT-13 / transforming
+                                  :ARG1 ( CONJ-31 / and
+                                         :op1 ( GROUP-7 / texts
+                                                :ATTRIBUTE ( ATTRIB-8 / japanese
+                                                       :ATTRIBUTE-of ( GROUP-7 / unrestricted_natural_language)))
+                                         :op2 ( GROUP-7 / texts
+                                                :ATTRIBUTE ( ATTRIB-9 / english
+                                                       :ATTRIBUTE-of ( GROUP-7 / unrestricted_natural_language))))
+                                  :INTO ( GROUP-10 / high_precision
+                                         :ATTRIBUTE ( ATTRIB-12 / semantic
+                                                :ATTRIBUTE-of ( GROUP-10 / representations
+                                                       :ATTRIBUTE ( ATTRIB-11 / formal)))
+                                         :ATTRIBUTE ATTRIB-11))))
+             :op2 ( EVENT-28 / linking
+                    :ARG0 ENTITY-1
+                    :ARG1 ( GROUP-15 / representations
+                           :ATTRIBUTE ( ATTRIB-16 / such))
+                    :TO ( GROUP-17 / application_tasks
+                           :WITH ( ENTITY-18 / focus
+                                  :ON ( CONJ-33 / and
+                                         :op1 ( EVENT-24 / recovering
+                                                :ARG1 ( ENTITY-20 / information)
+                                                :FOR ( ENTITY-22 / entry
+                                                       :INTO ( GROUP-23 / databases))
+                                                :FROM ( ENTITY-21 / text))
+                                         :op2 ( EVENT-27 / linking
+                                                :FOR ( ENTITY-26 / reasoning)
+                                                :TO ( ENTITY-25 / world_knowledge)))))
+                    :MOD ( mod-36 / then))))
+
+# ::id 25_textbook_BUFFALO;NE
+# ::snt Robust , accurate semantic analysis will improve all natural language processing tasks : recognising textual entailment , search , summarisation , automatic reply , machine translation and so on .
+( EVENT-16 / improve
+      :domain-of ( MD-17 / will)
+      :ARG0 ( ENTITY-1 / analysis
+             :ATTRIBUTE ( ATTRIB-3 / semantic)
+             :ATTRIBUTE ( ATTRIB-2 / robust_accurate))
+      :ARG1 ( group-14 / natural_language_processing_tasks
+             :QUANTIFIER ( ATTRIB-15 / all)
+             :NAMELY ( GROUP-4 / AND
+                    :op1 ( ENTITY-5 / entailment
+                           :ATTRIBUTE ( ATTRIB-7 / textual)
+                           :ATTRIBUTE ( ATTRIB-6 / recognising))
+                    :op2 ( ENTITY-8 / search)
+                    :op3 ( ENTITY-9 / summarisation)
+                    :op4 ( ENTITY-10 / reply
+                           :ATTRIBUTE ( ATTRIB-11 / automatic))
+                    :op5 ( ENTITY-12 / machine_translation)
+                    :op6 ( ENTITY-13 / so_on
+                           :MOD ( mod-18 / ENTITY)))))
+
+# ::id 26_textbook_BUFFALO;NE
+# ::snt The gostak distims the doshes .
+( EVENT-5 / distims
+      :ARG0 ( ENTITY-1 / gostak
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( GROUP-3 / doshes
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 27_textbook_BUFFALO;NE
+# ::snt The teacher scolded John .
+( EVENT-3 / scolded
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / teacher
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-John / ENTITY
+             :name ( n-2 / name
+                    :op1 "John")))
+
+# ::id 28_textbook_BUFFALO;NE
+# ::snt John was scolded by the teacher .
+( EVENT-3 / scolded
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / teacher
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-John / ENTITY
+             :name ( n-2 / name
+                    :op1 "John")))
+
+# ::id 29_textbook_BUFFALO;NE
+# ::snt My mother and my father had dinner at a restaurant in Tokyo with a friend .
+( EVENT-9 / had
+      :MOD ( mod-1 / past)
+      :ARG0 ( GROUP-1 / AND
+             :op1 ( ENTITY-2 / mother
+                    :POS ( REF1-3 / my))
+             :op2 ( ENTITY-4 / father
+                    :POS ( REF2-5 / my)))
+      :ARG1 ( ENTITY-6 / dinner)
+      :WITH ( ENTITY-8 / friend)
+      :AT ( ENTITY-7 / restaurant
+             :IN ( ENTITY-Tokyo / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Tokyo"))))
+
+# ::id 30_textbook_BUFFALO;NE
+# ::snt Science would not develop without basic research .
+( EVENT-4 / develop
+      :domain-of ( MD-6 / would)
+      :domain-of ( NEG-5 / NEG)
+      :ARG0 ( ENTITY-1 / Science)
+      :WITHOUT ( ENTITY-2 / research
+             :ATTRIBUTE ( ATTRIB-3 / basic)))
+
+# ::id 31_textbook_BUFFALO;NE
+# ::snt Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo .
+( EVENT-6 / buffalo
+      :ARG0 ( ENTITY-1 / buffalo
+             :POS ( ENTITY-Buffalo / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Buffalo"))
+             :ARG1-of ( EVENT-4 / buffalo
+                    :ARG0 ( ENTITY-3 / buffalo
+                           :POS ENTITY-Buffalo)))
+      :ARG1 ( ENTITY-5 / buffalo
+             :POS ENTITY-Buffalo))
+
+# ::id 32_textbook_BUFFALO;NE
+# ::snt I think that that that that that boy ate was a hamburger .
+( EVENT-2 / think
+      :ARG0 ( REF1-1 / i)
+      :THAT ( EVENT-10 / copula
+             :MOD ( mod-1 / past)
+             :ARG0 ( ENTITY-3 / that
+                    :DETERMINER ( ATTRIB-4 / that)
+                    :ARG1-of ( EVENT-8 / ate
+                           :ARG0 ( ENTITY-6 / boy
+                                  :DETERMINER ( ATTRIB-7 / that))))
+             :ARG1 ( ENTITY-9 / hamburger)))
+
+# ::id 33_textbook_BUFFALO;CLARK-1853;NE
+# ::snt But they that fight for freedom , undertake The noblest cause mankind can have at stake
+( EVENT-12 / undertake.0
+      :ARG0 ( REF1-4 / they
+             :ARG0-of ( EVENT-3 / fight.0
+                    :FOR ( ENTITY-2 / freedom)))
+      :ARG1 ( ENTITY-5 / cause
+             :DEFINITE ( ATTRIB-6 / the)
+             :ATTRIBUTE ( ATTRIB-7 / noblest)
+             :ARG1-of ( EVENT-11 / have.4
+                    :domain-of ( MD-13 / can)
+                    :ARG0 ( ENTITY-9 / mankind)
+                    :AT ( ENTITY-10 / stake))))
+
+# ::id 34_textbook_BUFFALO;NE
+# ::snt Rose rose to put rose roes on her rows of roses .
+( EVENT-7 / rose
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Rose / ENTITY
+             :name ( n-2 / name
+                    :op1 "Rose"))
+      :PRP ( EVENT-6 / put
+             :ARG0 ENTITY-Rose
+             :ARG1 ( GROUP-2 / roes
+                    :ATTRIBUTE ( ATTRIB-3 / rose))
+             :ON ( GROUP-4 / rows
+                    :POS ( REF1-5 / her))))
+
+# ::id 35_textbook_BUFFALO;NE
+# ::snt The rat the cat the dog bit chased escaped .
+( EVENT-11 / escaped
+      :MOD ( mod-3 / past)
+      :ARG0 ( ENTITY-1 / rat
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG1-of ( EVENT-10 / chased
+                    :MOD ( mod-2 / past)
+                    :ARG0 ( ENTITY-4 / cat
+                           :DEFINITE ( ATTRIB-5 / the)
+                           :ARG1-of ( EVENT-9 / bit
+                                  :MOD ( mod-1 / past)
+                                  :ARG0 ( ENTITY-7 / dog
+                                         :DEFINITE ( ATTRIB-8 / the)))))))
+
+# ::id 36_textbook_BUFFALO;NE
+# ::snt The quick brown fox jumped over the lazy dog .
+( EVENT-8 / jumped
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / fox
+             :DEFINITE ( ATTRIB-2 / the)
+             :ATTRIBUTE ( ATTRIB-4 / brown)
+             :ATTRIBUTE ( ATTRIB-3 / quick))
+      :OVER ( ENTITY-5 / dog
+             :DEFINITE ( ATTRIB-6 / the)
+             :ATTRIBUTE ( ATTRIB-7 / lazy)))
+
+# ::id 37_textbook_BUFFALO;NE
+# ::snt very many very happy girls on the beach with the big dunes
+( GROUP-1 / girls
+      :ATTRIBUTE ( ATTRIB-3 / very_happy)
+      :ON ( ENTITY-4 / beach
+             :DEFINITE ( ATTRIB-5 / the)
+             :WITH ( GROUP-6 / dunes
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :ATTRIBUTE ( ATTRIB-8 / big)))
+      :QUANTIFIER ( ATTRIB-2 / very_many))
+
+# ::id 38_textbook_BUFFALO;NE
+# ::snt Bell , based in Los Angeles , makes and distributes electronic , computer and building products .
+( CONJ-11 / and
+      :op1 ( EVENT-9 / makes
+             :ARG0 ( ENTITY-Bell / ENTITY
+                    :name ( n-12 / name
+                           :op1 "Bell")
+                    :ARG0-of ( EVENT-2 / based
+                           :IN ( ENTITY-Los_Angeles / ENTITY
+                                  :name ( n-13 / name
+                                         :op1 "Los_Angeles"))))
+             :ARG1 ( GROUP-3 / AND
+                    :op1 ( GROUP-4 / products
+                           :ATTRIBUTE ( ATTRIB-5 / electronic))
+                    :op2 ( GROUP-6 / computer_products)
+                    :op3 ( GROUP-7 / products
+                           :ATTRIBUTE ( ATTRIB-8 / building))))
+      :op2 ( EVENT-10 / distributes
+             :ARG0 ENTITY-Bell
+             :ARG1 GROUP-3))
+
+# ::id 39_textbook_BUFFALO;NE
+# ::snt If the police police police police , who polices the police police ?
+( CND-10 / If
+      :op1 ( EVENT-5 / police
+             :ARG0 ( GROUP-1 / police
+                    :DEFINITE ( ATTRIB-2 / the)
+                    :POS ( GROUP-3 / police))
+             :ARG1 ( GROUP-4 / police))
+      :op2 ( EVENT-9 / polices
+             :domain-of ( QUEST-11 / QUEST)
+             :ARG0 ( ENTITY_UNK-2 / penman-unknown)
+             :ARG1 ( GROUP-6 / police
+                    :DEFINITE ( ATTRIB-7 / the)
+                    :POS ( GROUP-8 / police))))
+
+# ::id 40_textbook_BUFFALO;NE
+# ::snt Police police police police police police !
+( EVENT-6 / police
+      :ARG0 ( GROUP-1 / police
+             :POS ( GROUP-2 / police
+                    :POS ( GROUP-3 / Police)))
+      :ARG1 ( GROUP-4 / police
+             :POS ( GROUP-5 / police)))
+
+# ::id 41_textbook_BUFFALO;NE
+# ::snt Mary carefully analysed the issues .
+( EVENT-3 / analysed
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-Mary / ENTITY
+             :name ( n-3 / name
+                    :op1 "Mary"))
+      :ARG1 ( GROUP-1 / issues
+             :DEFINITE ( ATTRIB-2 / the))
+      :MOD ( mod-1 / carefully))
+
+# ::id 42_textbook_BUFFALO;NE
+# ::snt Mary 's careful analysis of the issues
+( ENTITY-1 / analysis
+      :ATTRIBUTE ( ATTRIB-2 / careful)
+      :OF ( GROUP-3 / issues
+             :DEFINITE ( ATTRIB-4 / the))
+      :POS ( ENTITY-Mary / ENTITY
+             :name ( n-1 / name
+                    :op1 "Mary")))
+
+# ::id 43_textbook_BUFFALO;NE
+# ::snt Time flies like an arrow ;
+( CONJ-6 / and
+      :op1 ( EVENT-5 / flies
+             :ARG0 ( ENTITY-1 / Time))
+      :op2 ( EVENT-4 / EVENT
+             :ATTRIBUTE ( ATTRIB-2 / like
+                    :COMP ( ENTITY-3 / arrow))
+             :ARG0 ENTITY-1))
+
+# ::id 44_textbook_BUFFALO;NE
+# ::snt fruit flies like a banana .
+( EVENT-3 / like
+      :ARG0 ( GROUP-1 / fruit_flies)
+      :ARG1 ( ENTITY-2 / banana))
+
+# ::id 45_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+( EVENT-9 / saw
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / man
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / boy
+             :DEFINITE ( ATTRIB-4 / the)
+             :ON ( ENTITY-5 / hill
+                    :DEFINITE ( ATTRIB-6 / the)))
+      :WITH ( ENTITY-7 / telescope
+             :DEFINITE ( ATTRIB-8 / the)))
+
+# ::id 46_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+( EVENT-9 / saw
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / man
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / boy
+             :DEFINITE ( ATTRIB-4 / the)
+             :ON ( ENTITY-5 / hill
+                    :DEFINITE ( ATTRIB-6 / the)
+                    :WITH ( ENTITY-7 / telescope
+                           :DEFINITE ( ATTRIB-8 / the)))))
+
+# ::id 47_textbook_BUFFALO;NE
+# ::snt The man saw the boy on the hill with the telescope .
+( EVENT-9 / saw
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-1 / man
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / boy
+             :DEFINITE ( ATTRIB-4 / the)
+             :WITH ( ENTITY-7 / telescope
+                    :DEFINITE ( ATTRIB-8 / the))
+             :ON ( ENTITY-5 / hill
+                    :DEFINITE ( ATTRIB-6 / the))))
+
+# ::id 48_textbook_BUFFALO;NE
+# ::snt If a farmer owns a donkey he beats it .
+( CND-7 / If
+      :op1 ( EVENT-3 / owns
+             :ARG0 ( PERSON-1 / farmer)
+             :ARG1 ( ENTITY-2 / donkey))
+      :op2 ( EVENT-6 / beats
+             :ARG0 PERSON-1
+             :ARG1 ( REF1-5 / it)))
+
+# ::id 49_textbook_BUFFALO;NE
+# ::snt Every farmer who owns a donkey beats it .
+( EVENT-7 / beats
+      :ARG0 ( ENTITY-1 / farmer
+             :QUANTIFIER ( ATTRIB-2 / every)
+             :ARG0-of ( EVENT-5 / owns
+                    :ARG1 ( ENTITY-4 / donkey)))
+      :ARG1 ( REF1-6 / it))
+
+# ::id 50_textbook_BUFFALO;NE
+# ::snt If we invite some philosopher , Max will be offended .
+( CND-7 / If
+      :op1 ( EVENT-4 / invite
+             :ARG0 ( REF1-1 / we)
+             :ARG1 ( ENTITY-2 / philosopher
+                    :QUANTIFIER ( ATTRIB-3 / some)))
+      :op2 ( EVENT-5 / be_offended
+             :domain-of ( MD-6 / will)
+             :ARG0 ( ENTITY-Max / ENTITY
+                    :name ( n-8 / name
+                           :op1 "Max"))))
+
+# ::id 51_textbook_BUFFALO;NE
+# ::snt If we invite the philosopher , Max will be offended .
+( CND-7 / If
+      :op1 ( EVENT-4 / invite
+             :ARG0 ( REF1-1 / we)
+             :ARG1 ( ENTITY-2 / philosopher
+                    :DEFINITE ( ATTRIB-3 / the)))
+      :op2 ( EVENT-5 / be_offended
+             :domain-of ( MD-6 / will)
+             :ARG0 ( ENTITY-Max / ENTITY
+                    :name ( n-8 / name
+                           :op1 "Max"))))
+
+# ::id 52_textbook_BUFFALO;NE
+# ::snt Only John expects that he will win .
+( EVENT-2 / expects
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-7 / name
+                    :op1 "John")
+             :QUANTIFIER ( ATTRIB-1 / only))
+      :THAT ( EVENT-4 / win
+             :domain-of ( MD-6 / will)
+             :ARG0 ( REF1-3 / he)))
+
+# ::id 53_textbook_BUFFALO;NE
+# ::snt Only John expects to win .
+( EVENT-2 / expects
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John")
+             :QUANTIFIER ( ATTRIB-1 / only))
+      :TOCOMP ( EVENT-3 / win
+             :ARG0 ENTITY-John))
+
+# ::id 54_textbook_BUFFALO;NE
+# ::snt Only John expects himself to win .
+( EVENT-3 / expects
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John")
+             :QUANTIFIER ( ATTRIB-1 / only))
+      :ARG1 ( REF1-2 / himself)
+      :TOCOMP ( EVENT-4 / win
+             :ARG0 REF1-2))
+
+# ::id 55_textbook_BUFFALO;NE
+# ::snt Only John expects him to win .
+( EVENT-3 / expects
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John")
+             :QUANTIFIER ( ATTRIB-1 / only))
+      :ARG1 ( REF1-2 / him)
+      :TOCOMP ( EVENT-4 / win
+             :ARG0 REF1-2))
+
+# ::id 56_textbook_BUFFALO;NE
+# ::snt Every wife thinks that only she respects her husband .
+( EVENT-3 / thinks
+      :ARG0 ( ENTITY-1 / wife
+             :QUANTIFIER ( ATTRIB-2 / every))
+      :THAT ( EVENT-8 / respects
+             :ARG0 ( REF1-5 / she
+                    :QUANTIFIER ( ATTRIB-4 / only))
+             :ARG1 ( ENTITY-6 / husband
+                    :POS ( REF2-7 / her))))
+
+# ::id 57_textbook_BUFFALO;NE
+# ::snt A collector did n't buy because she was influenced .
+( CRD-5 / because
+      :domain-of ( NEG-6 / NEG)
+      :op1 ( EVENT-3 / influenced
+             :MOD ( mod-7 / past)
+             :ARG1 ( REF1-2 / she))
+      :op2 ( EVENT-4 / did_buy
+             :MOD ( mod-8 / past)
+             :ARG0 ( ENTITY-1 / collector)))
+
+# ::id 58_textbook_BUFFALO;NE
+# ::snt A collector did n't buy because she was influenced .
+( CRD-6 / because
+      :op1 ( EVENT-3 / influenced
+             :MOD ( mod-7 / past)
+             :ARG1 ( REF1-2 / she))
+      :op2 ( EVENT-4 / did_buy
+             :domain-of ( NEG-5 / NEG)
+             :MOD ( mod-8 / past)
+             :ARG0 ( ENTITY-1 / collector)))
+
+# ::id 59_textbook_BUFFALO;NE
+# ::snt Because a collector was influenced she did n't buy .
+( CRD-6 / Because
+      :op1 ( EVENT-2 / influenced
+             :MOD ( mod-7 / past)
+             :ARG1 ( ENTITY-1 / collector))
+      :op2 ( EVENT-4 / did_buy
+             :domain-of ( NEG-5 / NEG)
+             :MOD ( mod-8 / past)
+             :ARG0 ( REF1-3 / she)))
+
+# ::id 60_textbook_BUFFALO;NE
+# ::snt Who did Kim assure her that you would ask about her brother ?
+( EVENT-2 / did_assure
+      :domain-of ( QUEST-9 / QUEST)
+      :MOD ( mod-10 / past)
+      :ARG0 ( ENTITY-Kim / ENTITY
+             :name ( n-11 / name
+                    :op1 "Kim"))
+      :ARG1 ( REF1-1 / her)
+      :THAT ( EVENT-6 / ask
+             :domain-of ( MD-8 / would)
+             :ARG0 ( REF2-3 / you)
+             :ARG1 ( ENTITY_UNK-2 / penman-unknown)
+             :ABOUT ( ENTITY-4 / brother
+                    :POS ( REF3-5 / her))))
+
+# ::id 61_textbook_BUFFALO;NE
+# ::snt More students flunked than thought they would flunk .
+( EVENT-8 / flunked
+      :MOD ( mod-12 / past)
+      :ARG0 ( GROUP-1 / students
+             :THAN ( DEGREE-3 / DEGREE
+                    :ARG0-of ( EVENT-5 / thought
+                           :MOD ( mod-11 / past)
+                           :THAT ( EVENT-7 / flunk
+                                  :domain-of ( MD-10 / would)
+                                  :ARG0 ( REF1-6 / they))))
+             :QUANTIFIER ( ATTRIB-2 / more)))
+
+# ::id 62_textbook_BUFFALO;NE
+# ::snt More students flunked than they thought would flunk .
+( EVENT-8 / flunked
+      :MOD ( mod-12 / past)
+      :ARG0 ( GROUP-1 / students
+             :THAN ( DEGREE-3 / DEGREE
+                    :ARG0-of ( EVENT-7 / flunk
+                           :domain-of ( MD-10 / would)
+                           :THAT-of ( EVENT-6 / thought
+                                  :MOD ( mod-11 / past)
+                                  :ARG0 ( REF1-5 / they))))
+             :QUANTIFIER ( ATTRIB-2 / more)))
+
+# ::id 63_textbook_BUFFALO;NE
+# ::snt Who did what to whom ?
+( EVENT-1 / did
+      :domain-of ( QUEST-2 / QUEST)
+      :MOD ( mod-3 / past)
+      :ARG0 ( ENTITY_UNK-2 / penman-unknown)
+      :ARG1 ( ENTITY_UNK-3 / penman-unknown)
+      :TO ( ENTITY_UNK-4 / penman-unknown))
+
+# ::id 64_textbook_BUFFALO;NE
+# ::snt This is the man .
+( EVENT-5 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / man
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 65_textbook_BUFFALO;NE
+# ::snt This is the man whom the girl met .
+( EVENT-9 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / man
+             :DEFINITE ( ATTRIB-4 / the)
+             :ARG1-of ( EVENT-8 / met
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( ENTITY-6 / girl
+                           :DEFINITE ( ATTRIB-7 / the)))))
+
+# ::id 66_textbook_BUFFALO;NE
+# ::snt This is the man whom the police said the girl met .
+( EVENT-12 / copula
+      :ARG0 ( ENTITY-1 / ENTITY
+             :DETERMINER ( ATTRIB-2 / this))
+      :ARG1 ( ENTITY-3 / man
+             :DEFINITE ( ATTRIB-4 / the)
+             :ARG1-of ( EVENT-11 / met
+                    :MOD ( mod-2 / past)
+                    :ARG0 ( ENTITY-9 / girl
+                           :DEFINITE ( ATTRIB-10 / the))
+                    :THAT-of ( EVENT-8 / said
+                           :MOD ( mod-1 / past)
+                           :ARG0 ( ENTITY-6 / police
+                                  :DEFINITE ( ATTRIB-7 / the))))))
+
+# ::id 67_textbook_BUFFALO;NE
+# ::snt This is the man whom the police said Bill believes the girl met .
+( CONJ-4 / AND
+      :op1 ( EVENT-8 / said
+             :MOD ( mod-2 / past)
+             :ARG0 ( ENTITY-6 / police
+                    :DEFINITE ( ATTRIB-7 / the))
+             :THAT ( EVENT-9 / believes
+                    :ARG0 ( ENTITY-Bill / ENTITY
+                           :name ( n-3 / name
+                                  :op1 "Bill"))
+                    :THAT ( EVENT-12 / met
+                           :MOD ( mod-1 / past)
+                           :ARG0 ( ENTITY-10 / girl
+                                  :DEFINITE ( ATTRIB-11 / the))
+                           :ARG1 ( ENTITY-3 / man
+                                  :DEFINITE ( ATTRIB-4 / the)))))
+      :op2 ( EVENT-13 / copula
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :DETERMINER ( ATTRIB-2 / this))
+             :ARG1 ENTITY-3))
+
+# ::id 68_textbook_BUFFALO;NE
+# ::snt This is the man whom John said Bill believes Mary told Sam that I thought I had met .
+( CONJ-9 / AND
+      :op1 ( EVENT-6 / said
+             :MOD ( mod-4 / past)
+             :ARG0 ( ENTITY-John / ENTITY
+                    :name ( n-5 / name
+                           :op1 "John"))
+             :THAT ( EVENT-7 / believes
+                    :ARG0 ( ENTITY-Bill / ENTITY
+                           :name ( n-6 / name
+                                  :op1 "Bill"))
+                    :THAT ( EVENT-8 / told
+                           :MOD ( mod-3 / past)
+                           :ARG0 ( ENTITY-Mary / ENTITY
+                                  :name ( n-7 / name
+                                         :op1 "Mary"))
+                           :ARG1 ( ENTITY-Sam / ENTITY
+                                  :name ( n-8 / name
+                                         :op1 "Sam"))
+                           :THAT ( EVENT-10 / thought
+                                  :MOD ( mod-2 / past)
+                                  :ARG0 ( REF1-9 / i)
+                                  :THAT ( EVENT-12 / had_met
+                                         :MOD ( mod-1 / past)
+                                         :ARG0 ( REF2-11 / i)
+                                         :ARG1 ( ENTITY-3 / man
+                                                :DEFINITE ( ATTRIB-4 / the)))))))
+      :op2 ( EVENT-13 / copula
+             :ARG0 ( ENTITY-1 / ENTITY
+                    :DETERMINER ( ATTRIB-2 / this))
+             :ARG1 ENTITY-3))
+
+# ::id 69_textbook_BUFFALO;NE
+# ::snt John wrote the book a chapter of which Mary proofread .
+( EVENT-6 / wrote
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-3 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-1 / book
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF-of ( ENTITY-3 / chapter
+                    :ARG1-of ( EVENT-5 / proofread
+                           :MOD ( mod-1 / past)
+                           :ARG0 ( ENTITY-Mary / ENTITY
+                                  :name ( n-4 / name
+                                         :op1 "Mary"))))))
+
+# ::id 70_textbook_BUFFALO;NE
+# ::snt John wrote the book which Mary proofread a chapter of .
+( EVENT-6 / wrote
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-3 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-1 / book
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF-of ( ENTITY-4 / chapter
+                    :ARG1-of ( EVENT-5 / proofread
+                           :MOD ( mod-1 / past)
+                           :ARG0 ( ENTITY-Mary / ENTITY
+                                  :name ( n-4 / name
+                                         :op1 "Mary"))))))
+
+# ::id 71_textbook_BUFFALO;NE
+# ::snt John wrote the book of which Mary proofread a chapter .
+( EVENT-6 / wrote
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-3 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-1 / book
+             :DEFINITE ( ATTRIB-2 / the)
+             :OF-of ( ENTITY-3 / chapter
+                    :ARG1-of ( EVENT-5 / proofread
+                           :MOD ( mod-1 / past)
+                           :ARG0 ( ENTITY-Mary / ENTITY
+                                  :name ( n-4 / name
+                                         :op1 "Mary"))))))
+
+# ::id 72_textbook_BUFFALO;NE
+# ::snt This book , I asked Bill to get his students to read .
+( EVENT-4 / asked
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-3 / i)
+      :ARG1 ( ENTITY-Bill / ENTITY
+             :name ( n-2 / name
+                    :op1 "Bill"))
+      :TOCOMP ( EVENT-7 / get
+             :ARG0 ENTITY-Bill
+             :ARG1 ( GROUP-5 / students
+                    :POS ( REF2-6 / his))
+             :TOCOMP ( EVENT-8 / read
+                    :ARG0 GROUP-5
+                    :ARG1 ( ENTITY-1 / book
+                           :DETERMINER ( ATTRIB-2 / this)))))
+
+# ::id 73_textbook_BUFFALO;NE
+# ::snt As for this book , I think you should read it .
+( EVENT-4 / think
+      :ARG0 ( REF1-3 / i)
+      :AS_FOR ( ENTITY-1 / book
+             :DETERMINER ( ATTRIB-2 / this))
+      :THAT ( EVENT-7 / read
+             :domain-of ( MD-9 / should)
+             :ARG0 ( REF2-5 / you)
+             :ARG1 ( REF3-6 / it)))
+
+# ::id 74_textbook_BUFFALO;NE
+# ::snt It is this book that I asked Bill to get his students to read .
+( CONJ-3 / AND
+      :op1 ( EVENT-6 / asked
+             :MOD ( mod-1 / past)
+             :ARG0 ( REF1-5 / i)
+             :ARG1 ( ENTITY-Bill / ENTITY
+                    :name ( n-2 / name
+                           :op1 "Bill"))
+             :TOCOMP ( EVENT-9 / get
+                    :ARG0 ENTITY-Bill
+                    :ARG1 ( GROUP-7 / students
+                           :POS ( REF2-8 / his))
+                    :TOCOMP ( EVENT-10 / read
+                           :ARG0 GROUP-7
+                           :ARG1 ( ENTITY-3 / ENTITY))))
+      :op2 ( EVENT-11 / copula
+             :ARG0 ENTITY-3
+             :ARG1 ( ENTITY-1 / book
+                    :DETERMINER ( ATTRIB-2 / this))))
+
+# ::id 75_textbook_BUFFALO;NE
+# ::snt John deliberately did n't touch Bob .
+( EVENT-1 / did_touch
+      :domain-of ( NEG-3 / NEG)
+      :MOD ( mod-5 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-6 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-Bob / ENTITY
+             :name ( n-7 / name
+                    :op1 "Bob"))
+      :MOD ( mod-4 / deliberately))
+
+# ::id 76_textbook_BUFFALO;NE
+# ::snt John did n't deliberately touch Bob .
+( EVENT-1 / did_touch
+      :domain-of ( NEG-3 / NEG)
+      :MOD ( mod-5 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-6 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-Bob / ENTITY
+             :name ( n-7 / name
+                    :op1 "Bob"))
+      :MOD ( mod-4 / deliberately))
+
+# ::id 77_textbook_BUFFALO;NE
+# ::snt I do n't like enchiladas .
+( EVENT-3 / do_like
+      :domain-of ( NEG-4 / NEG)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( GROUP-2 / enchiladas))
+
+# ::id 78_textbook_BUFFALO;NE
+# ::snt I do n't like the taste of enchiladas .
+( EVENT-5 / do_like
+      :domain-of ( NEG-6 / NEG)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( ENTITY-2 / taste
+             :DEFINITE ( ATTRIB-3 / the)
+             :OF ( GROUP-4 / enchiladas)))
+
+# ::id 79_textbook_BUFFALO;NE
+# ::snt Every afternoon Mr. Vinken and a lawyer sign papers .
+( EVENT-6 / sign
+      :ARG0 ( GROUP-3 / AND
+             :op1 ( ENTITY-Mr.Vinken / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Mr.Vinken"))
+             :op2 ( ENTITY-4 / lawyer))
+      :ARG1 ( GROUP-5 / papers)
+      :TMP ( TIME-1 / afternoon
+             :QUANTIFIER ( ATTRIB-2 / every)))
+
+# ::id 80_textbook_BUFFALO;NE
+# ::snt Every afternoon Mr. Vinken and the lawyer sign papers .
+( EVENT-7 / sign
+      :ARG0 ( GROUP-3 / AND
+             :op1 ( ENTITY-Mr.Vinken / ENTITY
+                    :name ( n-1 / name
+                           :op1 "Mr.Vinken"))
+             :op2 ( ENTITY-4 / lawyer
+                    :DEFINITE ( ATTRIB-5 / the)))
+      :ARG1 ( GROUP-6 / papers)
+      :TMP ( TIME-1 / afternoon
+             :QUANTIFIER ( ATTRIB-2 / every)))
+
+# ::id 81_textbook_BUFFALO;NE
+# ::snt A doctor will make sure that every patient recovers .
+( EVENT-6 / make
+      :domain-of ( MD-7 / will)
+      :ATTRIBUTE ( ATTRIB-2 / sure
+             :THAT ( EVENT-5 / recovers
+                    :ARG0 ( ENTITY-3 / patient
+                           :QUANTIFIER ( ATTRIB-4 / every))))
+      :ARG0 ( ENTITY-1 / doctor))
+
+# ::id 82_textbook_BUFFALO;NE
+# ::snt A doctor will make sure that every patient recovers .
+( EVENT-6 / make
+      :domain-of ( MD-7 / will)
+      :ATTRIBUTE ( ATTRIB-4 / sure
+             :THAT ( EVENT-5 / recovers
+                    :ARG0 ( ENTITY-1 / patient
+                           :QUANTIFIER ( ATTRIB-2 / every))))
+      :ARG0 ( ENTITY-3 / doctor))
+
+# ::id 83_textbook_BUFFALO;NE
+# ::snt " Come on , " Nasha said . " Up beside me . "
+( EVENT-1 / said
+      :MOD ( mod-6 / past)
+      :ARG0 ( ENTITY-Nasha / ENTITY
+             :name ( n-7 / name
+                    :op1 "Nasha"))
+      :THAT ( EVENT-3 / come_on
+             :UP_BESIDE ( REF1-2 / me)
+             :domain-of ( IMPERATIVE-5 / IMPERATIVE)))
+
+# ::id 84_textbook_BUFFALO;NE
+# ::snt Had Mary but known she would never have trusted Jane .
+( CRD-7 / LINK
+      :op1 ( EVENT-1 / had_known
+             :MOD ( mod-9 / past)
+             :ARG0 ( ENTITY-Mary / ENTITY
+                    :name ( n-11 / name
+                           :op1 "Mary"))
+             :MOD ( mod-8 / but))
+      :op2 ( EVENT-4 / have_trusted
+             :domain-of ( MD-6 / would)
+             :ARG0 ( REF1-3 / she)
+             :ARG1 ( ENTITY-Jane / ENTITY
+                    :name ( n-12 / name
+                           :op1 "Jane"))
+             :TMP ( TIME-10 / never)))
+
+# ::id 85_textbook_BUFFALO;NE
+# ::snt Had she but known Mary would never have trusted Jane .
+( CRD-7 / LINK
+      :op1 ( EVENT-2 / had_known
+             :MOD ( mod-9 / past)
+             :ARG0 ( REF1-1 / she)
+             :MOD ( mod-8 / but))
+      :op2 ( EVENT-4 / have_trusted
+             :domain-of ( MD-6 / would)
+             :ARG0 ( ENTITY-Mary / ENTITY
+                    :name ( n-11 / name
+                           :op1 "Mary"))
+             :ARG1 ( ENTITY-Jane / ENTITY
+                    :name ( n-12 / name
+                           :op1 "Jane"))
+             :TMP ( TIME-10 / never)))
+
+# ::id 86_textbook_BUFFALO;NE
+# ::snt Mary is easy to please .
+( EVENT-4 / copula
+      :ATTRIBUTE ( ATTRIB-1 / ATTRIB
+             :ARG1-of ( EVENT-3 / please
+                    :domain-of ( easy-5 / easy)))
+      :ARG0 ( ENTITY-Mary / ENTITY
+             :name ( n-6 / name
+                    :op1 "Mary")))
+
+# ::id 87_textbook_BUFFALO;NE
+# ::snt The sonata is easy to play on this violin .
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-3 / easy
+             :TOCOMP ( EVENT-6 / play
+                    :ON ( ENTITY-4 / violin
+                           :DETERMINER ( ATTRIB-5 / this))))
+      :ARG0 ( ENTITY-1 / sonata
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 88_textbook_BUFFALO;NE
+# ::snt The violin is easy to play sonatas on .
+( EVENT-7 / copula
+      :ATTRIBUTE ( ATTRIB-3 / ATTRIB
+             :ON-of ( EVENT-6 / play
+                    :ARG1 ( GROUP-5 / sonatas)
+                    :domain-of ( easy-8 / easy)))
+      :ARG0 ( ENTITY-1 / violin
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 89_textbook_BUFFALO;NE
+# ::snt What violin is the sonata easy to play on .
+( EVENT-6 / copula
+      :domain-of ( QUEST-7 / QUEST)
+      :ATTRIBUTE ( ATTRIB-4 / easy
+             :TOCOMP ( EVENT-5 / play
+                    :ON ( ENTITY-1 / violin
+                           :QUANTIFIER ( ENTITY_UNK-2 / penman-unknown))))
+      :ARG0 ( ENTITY-2 / sonata
+             :DEFINITE ( ATTRIB-3 / the)))
+
+# ::id 90_textbook_BUFFALO;NE
+# ::snt It is undoubtedly difficult for them to understand since the US joined later , quickly assumed the leadership role and has espoused a hard core complete free trade policy until just recently , now that TAFTA has emerged as the focal point .
+( EVENT-24 / copula
+      :ATTRIBUTE ( ATTRIB-2 / ATTRIB
+             :ARG1-of ( EVENT-4 / understand
+                    :domain-of ( undoubtedly_difficult-26 / undoubtedly_difficult)))
+      :ARG0 ( REF1-1 / it)
+      :SINCE ( CONJ-28 / and
+             :op1 ( EVENT-9 / joined
+                    :MOD ( mod-30 / past)
+                    :ARG0 ( ENTITY-7 / US
+                           :DEFINITE ( ATTRIB-8 / the))
+                    :MOD ( mod-29 / later))
+             :op2 ( EVENT-13 / assumed
+                    :MOD ( mod-32 / past)
+                    :ARG0 ENTITY-7
+                    :ARG1 ( ENTITY-11 / leadership_role
+                           :DEFINITE ( ATTRIB-12 / the))
+                    :MOD ( mod-31 / quickly))
+             :op3 ( EVENT-18 / has_espoused
+                    :ARG0 ENTITY-7
+                    :ARG1 ( ENTITY-15 / core_complete_free_trade_policy
+                           :ATTRIBUTE ( ATTRIB-16 / hard))
+                    :UNTIL ( ATTRIB-17 / recently
+                           :MOD ( mod-33 / just))))
+      :FOR ( REF2-5 / them)
+      :TMP ( TIME-34 / now
+             :THAT ( EVENT-23 / has_emerged
+                    :ARG0 ( ENTITY-19 / TAFTA)
+                    :AS ( ENTITY-20 / point
+                           :DEFINITE ( ATTRIB-21 / the)
+                           :ATTRIBUTE ( ATTRIB-22 / focal)))))
+
+# ::id 91_textbook_BUFFALO;NE
+# ::snt John left in his car , and so did Bill .
+( CONJ-8 / and
+      :op1 ( EVENT-3 / left
+             :MOD ( mod-9 / past)
+             :ARG0 ( ENTITY-John / ENTITY
+                    :name ( n-12 / name
+                           :op1 "John"))
+             :IN ( ENTITY-1 / car
+                    :POS ( REF1-2 / his)))
+      :op2 ( EVENT-6 / did_left
+             :MOD ( mod-11 / past)
+             :ARG0 ( ENTITY-Bill / ENTITY
+                    :name ( n-13 / name
+                           :op1 "Bill"))
+             :IN ( ENTITY-4 / car
+                    :POS ( REF2-5 / his))
+             :MOD ( mod-10 / so)))
+
+# ::id 92_textbook_BUFFALO;NE
+# ::snt The officers had n't stationed a man with a weapon in the one spot where it could be fired .
+( EVENT-12 / had_stationed
+      :domain-of ( NEG-14 / NEG)
+      :MOD ( mod-16 / past)
+      :ARG0 ( GROUP-1 / officers
+             :DEFINITE ( ATTRIB-2 / the))
+      :ARG1 ( ENTITY-3 / man
+             :WITH ( ENTITY-4 / weapon))
+      :IN ( ENTITY-5 / spot
+             :DEFINITE ( ATTRIB-6 / the)
+             :CARDINAL ( ATTRIB-7 / one)
+             :LOC-of ( EVENT-10 / fired
+                    :domain-of ( MD-13 / could)
+                    :ARG1 ( REF1-9 / it))))
+
+# ::id 93_textbook_BUFFALO;NE
+# ::snt Every woman who leaves her husband eventually gives him a second chance .
+( EVENT-10 / gives
+      :ARG0 ( ENTITY-1 / woman
+             :QUANTIFIER ( ATTRIB-2 / every)
+             :ARG0-of ( EVENT-6 / leaves
+                    :ARG1 ( ENTITY-4 / husband
+                           :POS ( REF1-5 / her))))
+      :ARG1 ( ENTITY-8 / chance
+             :ATTRIBUTE ( ATTRIB-9 / second))
+      :ARG2 ( REF2-7 / him)
+      :MOD ( mod-1 / eventually))
+
+# ::id 94_textbook_BUFFALO;NE
+# ::snt The pilot that shot at it hit the MIG that chased him .
+( EVENT-10 / hit
+      :MOD ( mod-4 / past)
+      :ARG0 ( ENTITY-1 / pilot
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG0-of ( EVENT-5 / shot
+                    :MOD ( mod-1 / past)
+                    :AT ( REF1-4 / it)))
+      :ARG1 ( REF2-9 / MIG
+             :MOD ( mod-2 / the
+                    :ARG0-of ( EVENT-8 / chased
+                           :MOD ( mod-3 / past)
+                           :ARG1 ( REF3-7 / him)))))
+
+# ::id 95_textbook_BUFFALO;NE
+# ::snt John wants it to become sunny tomorrow .
+( EVENT-1 / wants
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John"))
+      :TOCOMP ( EVENT-4 / become
+             :ATTRIBUTE ( ATTRIB-2 / sunny)
+             :TMP ( TIME-3 / tomorrow)))
+
+# ::id 96_textbook_BUFFALO;NE
+# ::snt John wants to become sunny tomorrow .
+( EVENT-1 / wants
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John"))
+      :TOCOMP ( EVENT-4 / become
+             :ATTRIBUTE ( ATTRIB-2 / sunny)
+             :ARG0 ENTITY-John
+             :TMP ( TIME-3 / tomorrow)))
+
+# ::id 97_textbook_BUFFALO;NE
+# ::snt There 's a bank that they all bank with .
+( EVENT-6 / copula
+      :ARG0 ( ENTITY-1 / bank
+             :WITH-of ( EVENT-5 / bank
+                    :ARG0 ( REF1-4 / they
+                           :QUANTIFIER ( ATTRIB-3 / all)))))
+
+# ::id 98_textbook_BUFFALO;SHELLS;NE
+# ::snt She sells sea-shells on the sea shore ;
+( EVENT-5 / sells
+      :ARG0 ( REF1-1 / she)
+      :ARG1 ( GROUP-2 / sea-shells)
+      :ON ( ENTITY-3 / sea_shore
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 99_textbook_BUFFALO;SHELLS;NE
+# ::snt The shells that she sells are sea-shells
+( EVENT-7 / copula
+      :ARG0 ( GROUP-1 / shells
+             :DEFINITE ( ATTRIB-2 / the)
+             :ARG1-of ( EVENT-5 / sells
+                    :ARG0 ( REF1-4 / she)))
+      :ARG1 ( GROUP-6 / sea-shells))
+
+# ::id 100_textbook_BUFFALO;SHELLS;NE
+# ::snt I 'm sure .
+( EVENT-3 / copula
+      :ATTRIBUTE ( ATTRIB-2 / sure)
+      :ARG0 ( REF1-1 / i))
+
+# ::id 101_textbook_BUFFALO;SHELLS;NE
+# ::snt So if she sells sea-shells on the sea shore , I 'm sure that the shells are sea-shore shells .
+( CND-15 / if
+      :op1 ( EVENT-5 / sells
+             :ARG0 ( REF1-1 / she)
+             :ARG1 ( GROUP-2 / sea-shells)
+             :ON ( ENTITY-3 / sea_shore
+                    :DEFINITE ( ATTRIB-4 / the)))
+      :op2 ( EVENT-12 / copula
+             :ATTRIBUTE ( ATTRIB-7 / sure
+                    :THAT ( EVENT-11 / copula
+                           :ARG0 ( group-8 / shells
+                                  :DEFINITE ( ATTRIB-9 / the))
+                           :ARG1 ( GROUP-10 / sea-shore_shells)))
+             :ARG0 ( REF2-6 / i)
+             :MOD ( mod-16 / so)))
+
+# ::id 102_textbook_BUFFALO;BETTY;NE
+# ::snt Betty Botter bought some butter ,
+( EVENT-3 / bought
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Betty_Botter / ENTITY
+             :name ( n-2 / name
+                    :op1 "Betty_Botter"))
+      :ARG1 ( ENTITY-1 / butter
+             :QUANTIFIER ( ATTRIB-2 / some)))
+
+# ::id 103_textbook_BUFFALO;BETTY;NE
+# ::snt But , she said , this butter 's bitter ;
+( EVENT-2 / said
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / she)
+      :THAT ( EVENT-6 / copula
+             :ATTRIBUTE ( ATTRIB-5 / bitter)
+             :ARG0 ( ENTITY-3 / butter
+                    :DETERMINER ( ATTRIB-4 / this))))
+
+# ::id 104_textbook_BUFFALO;BETTY;NE
+# ::snt If I put it in my batter , It will make my batter bitter ,
+( CND-13 / If
+      :op1 ( EVENT-5 / put
+             :MOD ( mod-14 / past)
+             :ARG0 ( REF1-1 / i)
+             :ARG1 ( REF2-2 / it)
+             :IN ( ENTITY-3 / batter
+                    :POS ( REF3-4 / my)))
+      :op2 ( EVENT-7 / make
+             :domain-of ( MD-12 / will)
+             :ARG0 ( REF4-6 / it)
+             :TOCOMP ( EVENT-11 / EVENT
+                    :ATTRIBUTE ( ATTRIB-10 / bitter)
+                    :ARG0 ( ENTITY-8 / batter
+                           :POS ( REF5-9 / my)))))
+
+# ::id 105_textbook_BUFFALO;BETTY;NE
+# ::snt But a bit of better butter Will make my batter better .
+( EVENT-4 / make
+      :domain-of ( MD-9 / will)
+      :ARG0 ( ENTITY-1 / bit
+             :OF ( ENTITY-2 / butter
+                    :ATTRIBUTE ( ATTRIB-3 / better)))
+      :TOCOMP ( EVENT-8 / EVENT
+             :ATTRIBUTE ( ATTRIB-7 / better)
+             :ARG0 ( ENTITY-5 / batter
+                    :POS ( REF1-6 / my))))
+
+# ::id 106_textbook_BUFFALO;BETTY;NE
+# ::snt So she bought a bit of butter Better than her bitter butter ,
+( EVENT-8 / bought
+      :MOD ( mod-2 / past)
+      :ARG0 ( REF1-1 / she)
+      :ARG1 ( ENTITY-2 / bit
+             :ATTRIBUTE ( ATTRIB-4 / better
+                    :THAN ( ENTITY-5 / butter
+                           :ATTRIBUTE ( ATTRIB-7 / bitter)
+                           :POS ( REF2-6 / her)))
+             :OF ( ENTITY-3 / butter))
+      :MOD ( mod-1 / so))
+
+# ::id 107_textbook_BUFFALO;BETTY;NE
+# ::snt And she put it in her batter ,
+( EVENT-5 / put
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / she)
+      :ARG1 ( REF2-2 / it)
+      :IN ( ENTITY-3 / batter
+             :POS ( REF3-4 / her)))
+
+# ::id 108_textbook_BUFFALO;BETTY;NE
+# ::snt And it made her batter better ,
+( EVENT-2 / made
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / it)
+      :TOCOMP ( EVENT-6 / EVENT
+             :ATTRIBUTE ( ATTRIB-5 / better)
+             :ARG0 ( ENTITY-3 / batter
+                    :POS ( REF2-4 / her))))
+
+# ::id 109_textbook_BUFFALO;BETTY;NE
+# ::snt So 't was better Betty Botter Bought a bit of better butter .
+( EVENT-7 / copula
+      :MOD ( mod-2 / past)
+      :ATTRIBUTE ( ATTRIB-2 / better
+             :THAT ( EVENT-6 / bought
+                    :MOD ( mod-1 / past)
+                    :ARG0 ( ENTITY-Betty_Botter / ENTITY
+                           :name ( n-4 / name
+                                  :op1 "Betty_Botter"))
+                    :ARG1 ( ENTITY-3 / bit
+                           :OF ( ENTITY-4 / butter
+                                  :ATTRIBUTE ( ATTRIB-5 / better)))))
+      :ARG0 ( REF1-1 / ' t)
+      :MOD ( mod-3 / so))
+
+# ::id 110_textbook_BUFFALO;postal_edge_chap1_ex65a;NE
+# ::snt Rhonda may praise herself and Claudia certainly will praise herself .
+( CONJ-8 / and
+      :op1 ( EVENT-2 / praise
+             :domain-of ( MD-6 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-10 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( REF1-1 / herself))
+      :op2 ( EVENT-4 / praise
+             :domain-of ( MD-7 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-11 / name
+                           :op1 "Claudia"))
+             :ARG1 ( REF2-3 / herself)
+             :MOD ( mod-9 / certainly)))
+
+# ::id 111_textbook_BUFFALO;postal_edge_chap1_ex65b;NE
+# ::snt Rhonda may praise herself and Claudia certainly will .
+( CONJ-8 / and
+      :op1 ( EVENT-2 / praise
+             :domain-of ( MD-6 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-10 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( REF1-1 / herself))
+      :op2 ( EVENT-4 / praise
+             :domain-of ( MD-7 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-11 / name
+                           :op1 "Claudia"))
+             :ARG1 ( REF2-3 / herself)
+             :MOD ( mod-9 / certainly)))
+
+# ::id 112_textbook_BUFFALO;postal_edge_chap1_ex65c;NE
+# ::snt Rhonda may and Claudia certainly will praise herself .
+( CONJ-8 / and
+      :op1 ( EVENT-2 / praise
+             :domain-of ( MD-6 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-10 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( REF1-1 / herself))
+      :op2 ( EVENT-4 / praise
+             :domain-of ( MD-7 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-11 / name
+                           :op1 "Claudia"))
+             :ARG1 ( REF2-3 / herself)
+             :MOD ( mod-9 / certainly)))
+
+# ::id 113_textbook_BUFFALO;postal_edge_chap1_ex66a;NE
+# ::snt Rhonda may get Tom to praise her and Claudia certainly will get Tom to praise her .
+( CONJ-11 / and
+      :op1 ( EVENT-1 / get
+             :domain-of ( MD-8 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-13 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( ENTITY-Tom / ENTITY
+                    :name ( n-14 / name
+                           :op1 "Tom"))
+             :TOCOMP ( EVENT-3 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF1-2 / her)))
+      :op2 ( EVENT-4 / get
+             :domain-of ( MD-10 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-15 / name
+                           :op1 "Claudia"))
+             :ARG1 ENTITY-Tom
+             :TOCOMP ( EVENT-6 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF2-5 / her))
+             :MOD ( mod-12 / certainly)))
+
+# ::id 114_textbook_BUFFALO;postal_edge_chap1_ex66b;NE
+# ::snt Rhonda may get Tom to praise her and Claudia certainly will .
+( CONJ-11 / and
+      :op1 ( EVENT-1 / get
+             :domain-of ( MD-8 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-13 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( ENTITY-Tom / ENTITY
+                    :name ( n-14 / name
+                           :op1 "Tom"))
+             :TOCOMP ( EVENT-3 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF1-2 / her)))
+      :op2 ( EVENT-4 / get
+             :domain-of ( MD-10 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-15 / name
+                           :op1 "Claudia"))
+             :ARG1 ENTITY-Tom
+             :TOCOMP ( EVENT-6 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF2-5 / her))
+             :MOD ( mod-12 / certainly)))
+
+# ::id 115_textbook_BUFFALO;postal_edge_chap1_ex66c;NE
+# ::snt Rhonda may and Claudia certainly will get Tom to praise her .
+( CONJ-11 / and
+      :op1 ( EVENT-1 / get
+             :domain-of ( MD-8 / may)
+             :ARG0 ( ENTITY-Rhonda / ENTITY
+                    :name ( n-13 / name
+                           :op1 "Rhonda"))
+             :ARG1 ( ENTITY-Tom / ENTITY
+                    :name ( n-14 / name
+                           :op1 "Tom"))
+             :TOCOMP ( EVENT-3 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF1-2 / her)))
+      :op2 ( EVENT-4 / get
+             :domain-of ( MD-10 / will)
+             :ARG0 ( ENTITY-Claudia / ENTITY
+                    :name ( n-15 / name
+                           :op1 "Claudia"))
+             :ARG1 ENTITY-Tom
+             :TOCOMP ( EVENT-6 / praise
+                    :ARG0 ENTITY-Tom
+                    :ARG1 ( REF2-5 / her))
+             :MOD ( mod-12 / certainly)))
+
+# ::id 116_textbook_BUFFALO;takmi;NE
+# ::snt The straw was peeled off from the juice pack .
+( EVENT-5 / peeled_off
+      :MOD ( mod-1 / past)
+      :ARG1 ( ENTITY-1 / straw
+             :DEFINITE ( ATTRIB-2 / the))
+      :FROM ( ENTITY-3 / juice_pack
+             :DEFINITE ( ATTRIB-4 / the)))
+
+# ::id 117_textbook_BUFFALO;takmi;NE
+# ::snt I got some ice cream for my children , but there was something like a piece of thread inside the cup .
+( CONJ-15 / but
+      :op1 ( EVENT-6 / got
+             :MOD ( mod-16 / past)
+             :ARG0 ( REF1-1 / i)
+             :ARG1 ( ENTITY-2 / ice_cream
+                    :QUANTIFIER ( ATTRIB-3 / some))
+             :FOR ( GROUP-4 / children
+                    :POS ( REF2-5 / my)))
+      :op2 ( EVENT-14 / copula
+             :MOD ( mod-17 / past)
+             :ARG0 ( ENTITY-7 / ENTITY
+                    :ATTRIBUTE ( ATTRIB-9 / like
+                           :COMP ( ENTITY-10 / piece
+                                  :OF ( ENTITY-11 / thread)))
+                    :QUANTIFIER ( ATTRIB-8 / something))
+             :INSIDE ( ENTITY-12 / cup
+                    :DEFINITE ( ATTRIB-13 / the))))
+
+# ::id 118_textbook_BUFFALO;takmi;NE
+# ::snt I could only find 11 cups in the 12-pack .
+( EVENT-6 / find
+      :domain-of ( MD-8 / could)
+      :ARG0 ( REF1-3 / i)
+      :ARG1 ( GROUP-1 / cups
+             :CARDINAL ( ATTRIB-2 / 11))
+      :IN ( ENTITY-4 / 12-pack
+             :DEFINITE ( ATTRIB-5 / the))
+      :MOD ( mod-9 / only))
+
+# ::id 119_textbook_BUFFALO;takmi;NE
+# ::snt There was a stain on the package that seemed to be caused by a leak .
+( EVENT-8 / copula
+      :MOD ( mod-2 / past)
+      :ARG0 ( ENTITY-1 / stain
+             :ON ( ENTITY-2 / package
+                    :DEFINITE ( ATTRIB-3 / the))
+             :ARG0-of ( EVENT-5 / seemed
+                    :MOD ( mod-1 / past)
+                    :TOCOMP ( EVENT-7 / caused
+                           :ARG0 ( ENTITY-6 / leak)
+                           :ARG1 ENTITY-1))))
+
+# ::id 120_textbook_BUFFALO;takmi;NE
+# ::snt Is it safe to drink ?
+( EVENT-4 / copula
+      :domain-of ( QUEST-5 / QUEST)
+      :ATTRIBUTE ( ATTRIB-3 / safe)
+      :ARG0 ( EVENT-2 / drink))
+
+# ::id 121_textbook_BUFFALO;takmi;NE
+# ::snt I love the ads for the new milk chocolate .
+( EVENT-7 / love
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( GROUP-2 / ads
+             :DEFINITE ( ATTRIB-3 / the)
+             :FOR ( ENTITY-4 / milk_chocolate
+                    :DEFINITE ( ATTRIB-5 / the)
+                    :ATTRIBUTE ( ATTRIB-6 / new))))
+
+# ::id 122_textbook_BUFFALO;takmi;NE
+# ::snt Could you tell me the name of the actor in the commercial ?
+( EVENT-9 / tell
+      :domain-of ( QUEST-11 / QUEST)
+      :domain-of ( MD-10 / could)
+      :ARG0 ( REF1-1 / you)
+      :ARG1 ( ENTITY-3 / name
+             :DEFINITE ( ATTRIB-4 / the)
+             :OF ( ENTITY-5 / actor
+                    :DEFINITE ( ATTRIB-6 / the)
+                    :IN ( ENTITY-7 / commercial
+                           :DEFINITE ( ATTRIB-8 / the))))
+      :ARG2 ( REF2-2 / me))
+
+# ::id 123_textbook_BUFFALO;takmi;NE
+# ::snt The cup looked like it was already opened .
+( EVENT-7 / looked
+      :MOD ( mod-3 / past)
+      :ATTRIBUTE ( ATTRIB-3 / like
+             :THAT ( EVENT-5 / opened
+                    :MOD ( mod-2 / past)
+                    :ARG1 ( REF1-4 / it)
+                    :MOD ( mod-1 / already)))
+      :ARG0 ( ENTITY-1 / cup
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 124_textbook_BUFFALO;takmi;NE
+# ::snt Is it safe ?
+( EVENT-3 / copula
+      :domain-of ( QUEST-4 / QUEST)
+      :ATTRIBUTE ( ATTRIB-2 / safe)
+      :ARG0 ( REF1-1 / it))
+
+# ::id 125_textbook_BUFFALO;takmi;NE
+# ::snt It was a little more sour than when I ate it before .
+( EVENT-10 / copula
+      :MOD ( mod-4 / past)
+      :ATTRIBUTE ( ATTRIB-2 / msr_tolower_a_little_entitymore_sour)
+      :ARG0 ( REF1-1 / it)
+      :THAN ( TIME-3 / TIME
+             :TMP-of ( EVENT-7 / ate
+                    :MOD ( mod-3 / past)
+                    :ARG0 ( REF2-5 / i)
+                    :ARG1 ( REF3-6 / it)
+                    :MOD ( mod-2 / before))))
+
+# ::id 126_textbook_BUFFALO;takmi;NE
+# ::snt I like to buy juice made by ABCDE confectionary company , but this time there was some juice leaking from the bottom .
+( CONJ-17 / but
+      :op1 ( EVENT-2 / like
+             :ARG0 ( REF1-1 / i)
+             :TOCOMP ( EVENT-7 / buy
+                    :ARG0 REF1-1
+                    :ARG1 ( ENTITY-3 / juice
+                           :ARG1-of ( EVENT-6 / made
+                                  :ARG0 ( ENTITY-5 / ABCDE_confectionary_company)))))
+      :op2 ( EVENT-16 / copula
+             :MOD ( mod-18 / past)
+             :ARG0 ( ENTITY-10 / juice
+                    :QUANTIFIER ( ATTRIB-11 / some)
+                    :ARG0-of ( EVENT-15 / leaking
+                           :FROM ( ENTITY-13 / bottom
+                                  :DEFINITE ( ATTRIB-14 / the))))
+             :TMP ( TIME-8 / time
+                    :DETERMINER ( ATTRIB-9 / this))))
+
+# ::id 127_textbook_BUFFALO;takmi;NE
+# ::snt I bought some ice cream today , but it had a strange odor .
+( CONJ-10 / but
+      :op1 ( EVENT-5 / bought
+             :MOD ( mod-11 / past)
+             :ARG0 ( REF1-1 / i)
+             :ARG1 ( ENTITY-2 / ice_cream
+                    :QUANTIFIER ( ATTRIB-3 / some))
+             :TMP ( TIME-4 / today))
+      :op2 ( EVENT-9 / had
+             :MOD ( mod-12 / past)
+             :ARG0 ( REF2-6 / it)
+             :ARG1 ( ENTITY-7 / odor
+                    :ATTRIBUTE ( ATTRIB-8 / strange))))
+
+# ::id 128_textbook_BUFFALO;takmi;NE
+# ::snt The vanilla ice cream tasted bitter .
+( EVENT-4 / tasted
+      :MOD ( mod-1 / past)
+      :ATTRIBUTE ( ATTRIB-3 / bitter)
+      :ARG0 ( ENTITY-1 / vanilla_ice_cream
+             :DEFINITE ( ATTRIB-2 / the)))
+
+# ::id 129_textbook_BUFFALO;takmi;NE
+# ::snt I bought it the day before yesterday ,
+( EVENT-6 / bought
+      :MOD ( mod-1 / past)
+      :ARG0 ( REF1-1 / i)
+      :ARG1 ( REF2-2 / it)
+      :TMP ( TIME-3 / day
+             :DEFINITE ( ATTRIB-4 / the)
+             :BEFORE ( ENTITY-5 / yesterday)))
+
+# ::id 130_textbook_BUFFALO;takmi;NE
+# ::snt and the date has n't expired yet .
+( EVENT-3 / has_expired
+      :domain-of ( NEG-5 / NEG)
+      :ARG0 ( ENTITY-1 / date
+             :DEFINITE ( ATTRIB-2 / the))
+      :MOD ( mod-6 / yet))
+
+# ::id 131_textbook_BUFFALO;takmi;NE
+# ::snt When I was holding an unopened pack , the contents leaked from the bottom of the juice pack .
+( CND-12 / When
+      :op1 ( EVENT-4 / was_holding
+             :MOD ( mod-13 / past)
+             :ARG0 ( REF1-1 / i)
+             :ARG1 ( ENTITY-2 / pack
+                    :ATTRIBUTE ( ATTRIB-3 / unopened)))
+      :op2 ( EVENT-11 / leaked
+             :MOD ( mod-14 / past)
+             :ARG0 ( GROUP-5 / contents
+                    :DEFINITE ( ATTRIB-6 / the))
+             :FROM ( ENTITY-7 / bottom
+                    :DEFINITE ( ATTRIB-8 / the)
+                    :OF ( ENTITY-9 / juice_pack
+                           :DEFINITE ( ATTRIB-10 / the)))))
+
+# ::id 132_textbook_BUFFALO;chap4;NE
+# ::snt Cyrus was mentioned by name by Isaiah .
+( EVENT-2 / mentioned
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Isaiah / ENTITY
+             :name ( n-2 / name
+                    :op1 "Isaiah"))
+      :ARG1 ( ENTITY-Cyrus / ENTITY
+             :name ( n-3 / name
+                    :op1 "Cyrus"))
+      :BY ( ENTITY-1 / name))
+
+# ::id 133_textbook_BUFFALO;chap4;NE
+# ::snt Cyrus was mentioned by Isaiah by name .
+( EVENT-2 / mentioned
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-Isaiah / ENTITY
+             :name ( n-2 / name
+                    :op1 "Isaiah"))
+      :ARG1 ( ENTITY-Cyrus / ENTITY
+             :name ( n-3 / name
+                    :op1 "Cyrus"))
+      :BY ( ENTITY-1 / name))
+
+# ::id 134_textbook_BUFFALO;1411694268;NE
+# ::snt Last year , John smiled every day .
+( EVENT-5 / smiled
+      :MOD ( mod-1 / past)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-2 / name
+                    :op1 "John"))
+      :TMP ( TIME-3 / day
+             :QUANTIFIER ( ATTRIB-4 / every))
+      :TPC ( DATE-1 / year
+             :ATTRIBUTE ( ATTRIB-2 / last)))
+
+# ::id 135_textbook_BUFFALO;1411694268;NE
+# ::snt It rains .
+( EVENT-1 / rains)
+
+# ::id 136_textbook_BUFFALO;LSA-2013-06-28,42;NE
+# ::snt Thank you for your attention !
+( EVENT-5 / thank
+      :ARG0 ( REF1-1 / pro)
+      :ARG1 ( REF2-2 / you)
+      :FOR ( ENTITY-3 / attention
+             :POS ( REF3-4 / your)))
+
+# ::id 137_textbook_BUFFALO;NE
+# ::snt John is holy
+( EVENT-2 / copula
+      :ATTRIBUTE ( ATTRIB-1 / holy)
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John")))
+
+# ::id 138_textbook_BUFFALO;NE
+# ::snt John is without fault
+( EVENT-2 / copula
+      :ARG0 ( ENTITY-John / ENTITY
+             :name ( n-1 / name
+                    :op1 "John"))
+      :WITHOUT ( ENTITY-1 / fault))
+
+# ::id 139_textbook_BUFFALO;NE
+# ::snt John is holy and without fault
+( CONJ-4 / and
+      :op1 ( EVENT-3 / copula
+             :ATTRIBUTE ( ATTRIB-1 / holy)
+             :ARG0 ( ENTITY-John / ENTITY
+                    :name ( n-5 / name
+                           :op1 "John")))
+      :op2 ( EVENT-3 / copula
+             :ARG0 ENTITY-John
+             :WITHOUT ( ENTITY-2 / fault)))
+
+# ::id 140_textbook_BUFFALO;NE
+# ::snt John is without fault and holy
+( CONJ-4 / and
+      :op1 ( EVENT-3 / copula
+             :ARG0 ( ENTITY-John / ENTITY
+                    :name ( n-5 / name
+                           :op1 "John"))
+             :WITHOUT ( ENTITY-1 / fault))
+      :op2 ( EVENT-3 / copula
+             :ATTRIBUTE ( ATTRIB-2 / holy)
+             :ARG0 ENTITY-John))
+
+# ::id 141_textbook_BUFFALO;NE
+# ::snt John travels here and in Jerusalem
+( CONJ-2 / and
+      :op1 ( EVENT-1 / travels
+             :ARG0 ( ENTITY-John / ENTITY
+                    :name ( n-3 / name
+                           :op1 "John"))
+             :LOC ( ENTITY-Jerusalem / ENTITY
+                    :name ( n-4 / name
+                           :op1 "Jerusalem"))))
+
+# ::id 142_textbook_BUFFALO;NE
+# ::snt John expects a recent picture of himself to be displayed at the exhibition .
+( EVENT-5 / expects
+      :ARG0 ( PERSON-John / PERSON
+             :name ( n-1 / name
+                    :op1 "John"))
+      :ARG1 ( ENTITY-1 / picture
+             :ATTRIBUTE ( ATTRIB-3 / recent)
+             :OF PERSON-2
+             :POS ( PERSON-2 / PERSON
+                    :namely PERSON-John))
+      :TOCOMP ( EVENT-8 / displayed
+             :ARG1 ENTITY-1
+             :AT ( ENTITY-6 / exhibition
+                    :DEFINITE ( ATTRIB-7 / the))))
